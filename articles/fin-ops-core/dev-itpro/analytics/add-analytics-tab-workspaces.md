@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025847"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259625"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
@@ -84,7 +84,7 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 8. Klikněte pravým tlačítkem myši a poté vyberte **Stránka Nová karta**.
 9. Přejmenujte stránku karty, například na **Analýza**.
 10. V návrháři formuláře vyberte **Analýz (Stránka Karta)**.
-11. Nastavte vlastnost **Titulek** na **Analýza**.
+11. Nastavte vlastnost **Titulky** na možnost **Analýza** a nastavte vlastnost **Auto deklarace** na hodnotu **Ano**.
 12. Klepněte pravým tlačítkem myši na ovládací prvek a poté vyberte **Nová** \> **Skupina** pro přidání nové skupiny ovládacích prvků.
 13. Přejmenujte skupinu formuláře, například na **powerBIReportGroup**.
 14. V návrháři formuláře vyberte **PanoramaBody (karta)** a přetáhněte ovládací prvek na kartu **Pracovní prostor**.

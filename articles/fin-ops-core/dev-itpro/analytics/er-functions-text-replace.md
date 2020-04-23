@@ -3,7 +3,7 @@ title: Funkce elektronického výkaznictví REPLACE
 description: Toto téma obsahuje obecné informace o použití funkce REPLACE elektronického výkaznictví.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040979"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201059"
 ---
-# <a name="REPLACE">Funkce elektronického výkaznictví REPLACE</a>
+# <a name=""></a><a name="REPLACE">Funkce elektronického výkaznictví REPLACE</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Výsledná textová hodnota.
 
 Pokud má argument `regular expression flag` hodnotu **TRUE**, vrátí tato funkce zadaný řetězec poté, co byl změněn aplikováním regulárního výrazu, který je určen argumentem `pattern`. Regulární výraz slouží k vyhledání znaků, které je třeba nahradit.
 
-Pokud má argument `regular expression flag` hodnotu **NEPRAVDA**, chová se tato funkce stejně jako funkce [TRANSLATE](er-functions-text-translate.md). Znaky zadané argumentem `replacement` se použijí k nahrazení nalezených znaků. 
+Pokud má `regular expression flag` argument hodnotu **NEPRAVDA**, vrátí tato funkce zadaný řetězec po provedení sady znaků definovaných v argumentu `pattern`, které byly nahrazeny znaky argumentu `replacement`. 
 
 ## <a name="example-1"></a>Příklad 1
 

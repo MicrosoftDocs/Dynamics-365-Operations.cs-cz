@@ -2,14 +2,14 @@
 title: Domovská stránka modulu Zásobování a zdroje
 description: V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813379"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209207"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -58,7 +58,7 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Ukázkový skript příchozích zásob dodávky pro Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
 -   [Sledování zásob dodávky s použitím dodavatelské spolupráce](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md) (pouze verze Dynamics AX z února a května 2016)
--   [Zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z února a května 2016)
+-   [Zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z 2016 a května 2016)
 -   [Mobilní pracovní prostor dodavatelské spolupráce](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Správa produktů nákupu

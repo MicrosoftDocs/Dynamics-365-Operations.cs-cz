@@ -3,7 +3,7 @@ title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1748ec2a888a50af9b9260720dfd439adc4686f9
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008394"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198043"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
 
@@ -58,17 +58,21 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 9. Zvolte **Uložit**.
 
-## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
-
-Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## <a name="configure-leave-type-rules"></a>Konfigurace pravidel typů volna
 
 1. Nastavte možnosti zaokrouhlení pro typ pracovního volna. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
 
 2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, aplikace Human Resources použije počet svátků, které spadají do pracovního dne k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
 
    Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
+   
+## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
+
+Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Zvolte typ pracovního volna pro převod zůstatků, které mají být převedeny do. Můžete také vytvořit nový typ odchodu pro převedení. 
 
 ## <a name="see-also"></a>Viz také
 

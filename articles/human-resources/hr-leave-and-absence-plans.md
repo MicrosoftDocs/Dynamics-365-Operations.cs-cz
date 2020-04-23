@@ -3,7 +3,7 @@ title: Vytvoření plánu volna a absence
 description: Vytvářejte plány volna v Dynamics 365 Human Resources pro různé typy volna.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087293"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197352"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
 
@@ -42,6 +42,11 @@ Můžete také vytvářet zaměstnanecké výhody na základě pozice, napříkl
 1. Na stránce **Pracovní volno a absence** klikněte na **Vytvořit nový plán**.
 
 2. V části **Detaily** zadejte **název**, **počáteční datum**, **popis** a **typ pracovního volna** pro váš plán.
+
+Pokud funkce **Konfiguruje více typů pracovního volna pro jedno pracovní volno a plán absencí** povolena, jsou typy pracovního volna konfigurovány v **Plánu časového rozlišení** místo **Podrobností**. Pro každý záznam v tabulce rozvrhu časového rozlišení můžete definovat typ pracovního volna.
+
+ > [!IMPORTANT]
+   > Povolíte-li tuto funkci, nebude ji možné vypnout.
 
 3. Definujte časové rozlišení na kartě **Časová rozlišení**. Časové rozlišení určuje, kdy a jak často je zaměstnanci přiděleno volno. V tomto kroku definujete zásady, podle kterých by měla být zadávána časová rozlišení, a zásady týkající se hodnocení výhod odchodu.
 
@@ -95,8 +100,8 @@ Můžete také vytvářet zaměstnanecké výhody na základě pozice, napříkl
    Úrovně lze vytvořit tak, aby bylo volno udělováno podle různých úrovní.
 
    Pokud máte zaměstnance s hodinovou mzdou mohou přidělit volno na základě odpracovaných hodin, namísto odpracovaných let v organizaci. Data odpracovaných hodin se obvykle ukládají v systému času a docházky. Je možné importovat pravidelné a přesčasové hodiny odpracované ze systému času a docházky a použít je jako základ odměny zaměstnance.
-
-   1. Vyberte možnost z rozevíracího seznamu **Typ časového rozlišení**:
+   
+    1. Vyberte možnost z rozevíracího seznamu **Typ časového rozlišení**:
 
       - **Měsíce služby** – založení plánu časového rozlišení na měsících služby.
 
@@ -117,6 +122,13 @@ Můžete také vytvářet zaměstnanecké výhody na základě pozice, napříkl
       - **Maximální převod do dalšího období** -Proces časového rozlišení upravuje zůstatky dovolené, které překročí maximální zůstatek převedený do dalšího období k výročí počátečního data.
 
       - **Udělené množství** - Počáteční počet hodin nebo dní, udělených zaměstnancům při jejich prvním přihlášení do plánu dovolených. Částka není časové rozlišení pro každé období časového rozlišení.
+      
+Pokud je funkce **Konfiguruje více typů pracovního volna pro jedno pracovní volno a plán absencí** povolena, vyberte volbu z **Typu pracovního volna**. 
+
+   > [!IMPORTANT]
+   > Povolíte-li tuto funkci, nebude ji možné vypnout.
+
+Pokud povolíte funkci **Použití ekvivalentu plného úvazku**, aplikace Human Resources použije ekvivalent plného úvazku (FTE) definovaný pro pozici k časovému rozlišení zaměstnance. Je-li například FTE ,5 a částka časového rozlišení 10, zaměstnanec provede časové rozlišení 5. Tuto funkci lze použít pouze v případě, že povolíte více typů pracovního volna.  
 
 5. Zvolte **Uložit**.
 
@@ -357,19 +369,6 @@ Předpokládaný zůstatek (30) = časově rozlišené množství (10 × 1) + ak
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 1. 6. 2018        | 1. 6. 2018   | 1.00           | 1. 9. 2018        | 3.00    |
 | Jan Norman          | 0,00              | 15. 6. 2018       | 15. 6. 2018  | 1.00           | 1. 9. 2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
-
-Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Funkce Náhled: Konfigurace více typů pracovního volna pro jeden plán pracovního volna a absence**. Pro každý záznam v tabulce rozvrhu časového rozlišení můžete definovat typ pracovního volna.
-
-   > [!IMPORTANT]
-   > Povolíte-li tuto funkci, nebude ji možné vypnout.
-
-2. **Funkce Náhled: použití ekvivalentu plného úvazku**. Pokud povolíte funkci náhledu, aplikace Human Resources použije ekvivalent plného úvazku (FTE) definovaný pro pozici k časovému rozlišení zaměstnance. Je-li například FTE ,5 a částka časového rozlišení 10, zaměstnanec provede časové rozlišení 5. Tuto funkci lze použít pouze v případě, že povolíte více typů pracovního volna.
 
 ## <a name="see-also"></a>Viz také
 

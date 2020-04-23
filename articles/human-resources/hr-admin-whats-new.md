@@ -3,7 +3,7 @@ title: Co je nového a co se změnilo v Human Resources
 description: Každý týden poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedené články podávají podrobné informace o změnách provedených v jednotlivých týdnech.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ba311a3ab6ac482821e485186d81a5bcb91ab38
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 25a70b812af76fa420de69ed9b4e718991a21e43
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154452"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259602"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
-Každý týden poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Články v tomto oddílu podávají podrobné informace o změnách provedených v jednotlivých týdnech.
+Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Články v tomto oddílu podávají podrobné informace o změnách provedených v jednotlivých vydáních.
 
 Další informace o nadcházejících funkcích a procesu aktualizace pro Human Resources naleznete v následujících článcích:
 
@@ -39,8 +39,12 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 ## <a name="human-resources-weekly-releases"></a>Týdenní vydání Human Resources
 
-Chcete-li zjistit, co je nového nebo změněné v každém týdenním vydání aplikace Human Resources, naleznete to v následujících článcích:
+Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících článcích:
 
+[13. dubna 2020](hr-whats-new-2020-04-13.md)</br>
+[3. dubna 2020](hr-whats-new-2020-04-03.md)</br>
+[24. března 2020](hr-whats-new-2020-03-24.md)</br>
+[19. března 2020](hr-whats-new-2020-03-19.md)</br>
 [10. března 2020](hr-whats-new-2020-03-10.md)</br>
 [3. března 2020](hr-whats-new-2020-03-03.md)</br>
 [25. února 2020](hr-whats-new-2020-02-25.md)</br>

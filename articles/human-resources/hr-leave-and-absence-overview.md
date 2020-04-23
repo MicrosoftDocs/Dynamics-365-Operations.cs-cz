@@ -1,9 +1,9 @@
 ---
 title: Přehled
-description: V Dynamics 365 Human Resources poskytuje pracovní prostor **Pracovní volno a absence** flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno.
+description: V Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091741"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226223"
 ---
 # <a name="overview"></a>Přehled
 
@@ -31,7 +31,7 @@ Dynamics 365 Human Resources vám pomáhá poskytovat vašim pracovníkům skvě
 
 ## <a name="set-up-leave-and-absence"></a>Nastavení pracovního volna a absence
 
-Dříve než můžete vytvořit plány pro zaměstnance, je nutné provést několik kroků nastavení:
+Před vytvořením plánů pro zaměstnance, je nutné provést několik kroků nastavení:
 
 - [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md)
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
@@ -51,31 +51,35 @@ Před vytvořením plánů pracovního volna pro pracovníky je nutné vytvořit
 
 Zaměstnanci mohou odesílat žádosti o volno a spravovat je v pracovním prostoru **Samoobsluha zaměstnanců**.
 
-- [Požádat o volno](hr-employee-self-service-request-time-off.md)
+- [Požádat o volno](hr-employee-self-service-request-time-off.md)
 - [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
+
+## <a name="leave-and-absence-known-issues"></a>Známé problémy s pracovním volnem a absencí
+
+### <a name="rounding-precision"></a>Přesnost zaokrouhlování
+
+Nelze nastavit **Přesnost zaokrouhlení** při nastavení **Typu zaokrouhlení**. **Přesnost zaokrouhlení** lze nastavit pouze pomocí entity **Typ pracovního volna a absence**. 
+
+1. V **Typy pracovního volna a absence** vyberte **Otevřít v aplikaci Exce** pro otevření entity **Typ pracovního volna a absence**.
+
+2. Po otevření a povolení souboru vyberte **Návrh**.
+
+3. V tabulce **Typ pracovního volna a absence** vyberte možnost tužky pro úpravy.
+
+4. Vyberte **RoundingPrecision** a **RoundingType** a poté vyberte položku **Přidat** pro přidání do seznamu polí.
+
+5. Vyberte **Aktualizovat** a potom **Hotovo**.
+
+6. Zadejte nebo vyberte **Typ zaokrouhlení** pro každý typ pracovního volna, pokud ještě nebyl nastaven. 
+
+7. Zadejte **Přesnost zaokrouhlení** pro příslušné typy.
+
+8. Výběrem **Publikovat** odešlete změny do Human Resources.
 
 ## <a name="leave-and-absence-preview-features"></a>Funkce náhledu pracovního volna a absence
 
 V prostředí **izolovaného prostoru** můžete vyzkoušet nové funkce náhledu pracovního volna a absence. Informace o zapnutí funkcí náhledu naleznete v tématu [Správa funkcí](hr-admin-manage-features.md). Funkce náhledu zahrnují:
 
-- **Kalendář pracovního volna a absence** – parametry pracovního volna a absence budou přesunuty z **Parametrů Human Resources** na novou obrazovku nazvanou **Parametry pracovního volna a absence**. Nová obrazovka obsahuje novou kartu **Kalendář**. Tato funkce Preview umožňuje pouze podmnožinu parametrů. K nové obrazovce můžete přistupovat z karty **Odkazy** pracovního prostoru **Pracovní volno a absence**. Kalendáře zahrnují:
-  - **Kalendář společnosti** -zobrazí všechny žádosti zaměstnance o volno. Uživatelé s rolí **lidské zdroje** mají k tomuto kalendáři přístup z karty **Odkazy** v pracovním prostoru **Pracovní volno a absence**.
-  - **Kalendář týmu manažera** – zobrazí všechny žádosti podřízených o volno. Manažeři mohou získat přístup k kalendáři z karty **Můj tým** ve samoobsluze pro zaměstnance v nabídce **Pracovní volno a absence**. 
+- **Přerušení pracovního volna** - můžete přerušit pracovní volno a absenci v Human Resources pro zaměstnance. Pozastavením volna se zastaví časové rozlišení volna pro vybrané typy pracovního volna. Pokud k přerušení dojde po zpracování časového rozlišení, pozastavením volna se vytvoří průběžná Úprava zůstatku zaměstnance. 
 
-- **Kalendáře svátků pracovního vola a absence** – typy volna zahrnují novou možnost **svátků**, která se používá ve spojení s kalendářem pracovní doby. Dny definované svátky a zavíracími dny jsou nyní určeny jako **svátek** při generování pracovních dnů. Při zpracování časového rozlišení jsou úpravy prováděny u zaměstnanců přiřazených ke kalendáři s ohledem na svátky spadající na pracovní den.
-
-- **Audit časového rozlišení pracovního volna** – nová obrazovka umožňuje zkontrolovat, kdy byla časová rozlišení zpracována a odstraněna všemi zaměstnanci i jednotlivými zaměstnanci. K nové obrazovce můžete přistupovat z karty **Odkazy** pracovního prostoru **Pracovní volno a absence**.
-
-- **Odstranění časového rozlišení pracovního volna** – nyní můžete odstranit záznamy časového rozlišení pro konkrétní plány pracovního volna. K nové možnosti můžete přistupovat z karty **Odkazy** pracovního prostoru **Pracovní volno a absence**. U jednotlivých zaměstnanců se tato možnost zobrazí v seskupení **Pracovní volno a absence** v profilu zaměstnance. 
-
-- **Zaokrouhlování časového rozlišení pracovního volna** – nové možnosti pro **Typ pracovního volna** definují, jaký typ zaokrouhlení má časové rozlišení použít, a desetinnou přesnost zaokrouhlení v průběhu procesu časového rozlišení. Při zpracování časových rozlišení jsou zaokrouhlení a přesnost použity pro záznamy časového rozlišení. 
-
-- **Konfigurovat více typů pracovního volna u jednoho plánu pracovního volna** – nový sloupec v plánu časového rozlišení pracovního volna pro typy pracovního volna umožňuje definovat více typů pracovního volna v plánu pracovního volna a absence s různými plány časového rozlišení. Předchozí pole **Typ pracovního volna** je odstraněno. Při registraci zaměstnance se zůstatky pro typy pracovního volna nyní zobrazují v tabulce namísto na horním okraji obrazovky.
-
-  > [!IMPORTANT]
-  > Když tuto funkci povolíte, můžete ji poté vypnout.
-
-- **Použití ekvivalentu plného úvazku zaměstnance pro časové rozlišení** – nový sloupec v plánu časového rozlišení pracovního volna pomocí ekvivalentu plného úvazku pro časové rozlišení. Při zpracování časového rozlišení používá aplikace primární pozici zaměstnance a ekvivalent plného úvazku pro určení poměrné částky časového rozlišení.
-
-  > [!NOTE]
-  > Tato funkce je k dispozici pouze tehdy, když povolíte možnost **Konfigurovat více typů pracovního volna u jednoho plánu pracovního volna**. 
+- **Pravidla převodu do dalšího období** - můžete určit typ převodu pracovního volna do dalšího období pro převod zůstatků, kde byly převedeny úpravy převodu do dalšího období. Pokud například zaměstnanec přenese deset dní dopředu, můžete pro tyto 10 dny vybrat jiný typ pracovního volna. 

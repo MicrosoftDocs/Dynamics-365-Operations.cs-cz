@@ -1,9 +1,9 @@
 ---
-title: Konfigurace integrace Common Data Service
-description: Integraci mezi Common Data Service a instanci Microsoft Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
+title: Konfigurovat integraci se službou Common Data Service
+description: Integraci mezi Common Data Service a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,25 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008328"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198415"
 ---
-# <a name="configure-common-data-service-integration"></a>Konfigurace integrace Common Data Service
+# <a name="configure-common-data-service-integration"></a>Konfigurovat integraci se službou Common Data Service
 
-Integraci mezi Common Data Service a instanci Microsoft Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
+Integraci mezi Common Data Service a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
 
 Když vypnete integraci, uživatelé mohou provádět změny v Human Resources nebo Common Data Service, ale tyto změny se mezi oběma prostředími nesynchronizují.
 
-Ve výchozím nastavení je integrace mezi Human Resources a Common Data Service vypnuta nebo zapnuta, v závislosti na přítomnosti ukázkových dat v prostředí:
-
-- **Vypnuta** pro nová prostředí, která nezahrnují ukázková data
-- **Zapnuta** pro nová prostředí, která zahrnují ukázková data
-
-Nová prostředí, která zahrnují ukázková data, začnou synchronizovat data při jejich zřizování.
+Ve výchozím nastavení je integrace dat mezi Human Resources a Common Data Service vypnuta.
 
 V těchto situacích je vhodné vypnout integraci:
 
@@ -103,9 +98,17 @@ Chcete-li spustit úplnou synchronizaci entity po vymazání sledování, postup
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synchronizace entity mezi Human Resources a Common Data Service
 
-Tento postup použijte v případě, že změnám z Common Data Service trvá příliš dlouho, než se projeví v Human Resources, nebo pokud je nutné aktualizovat tabulku sledování po vymazání sledování.
+Tento postup použijte v následujících případech:
 
-- Chcete-li spustit úplnou synchronizaci entity mezi Human Resources a Common Data Service, vyberte entitu v poli **Název entity CDS** a pak vyberte **Synchronizovat nyní**.
+- Zobrazení změn Common Data Service v Human Resources trvá příliš dlouho.
+
+- Chcete-li sledování vymazat, je nutné aktualizovat sledovací tabulku.
+
+Chcete-li spustit úplnou synchronizaci entity mezi Human Resources a Common Data Service:
+
+1. V poli **Název entity CDS** vyberte entitu.
+
+2. Vyberte **Synchronizovat nyní**.
 
 [![Spuštění úplné synchronizace](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

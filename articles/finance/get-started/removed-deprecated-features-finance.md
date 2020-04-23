@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127970"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175101"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -47,6 +47,18 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 | **Ovlivněné oblasti produktu**         | Přihláška |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Od 1. července 2021 plánujeme již dále nepodporovat sestavy SSRS: **registr DPH na výstupu, registr DPH na vstupu, souhrnný registr DPH v EU – odkaz na funkci PL-00014**. Namísto toho bude zaveden příklad formátu aplikace Excel pro standardní soubor auditu s přiznáním k DPH (JPK_VDEK). |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.11
+
+### <a name="norwegian-standard-main-accounts"></a>Standardní hlavní účty pro Norsko
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Změnit návrh  |
+| **Nahrazeno jinou funkcí?**   | Ano (nahrazeno parametry specifickými pro aplikaci formátu ER) |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: od 1. dubna 2021 nebude možné podporovat funkce související se standardními hlavními účty: referenční pole, související tabulka, entita dat. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.7
 

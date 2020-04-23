@@ -2,15 +2,15 @@
 title: Zpoždění
 description: Toto téma obsahuje informace o zpožděných datech v hlavním plánování. Zpožděné datum je realistické datum splatnosti přidělené transakci, pokud je nejbližší datum plnění vypočítané hlavním plánováním pozdější než požadované datum.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522282"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203841"
 ---
 # <a name="delays"></a>Zpoždění
 
@@ -44,6 +44,12 @@ Na stránce **Parametry hlavního plánování** můžete nastavit čas zahájen
 
 > [!NOTE]
 > V předchozích verzích se vypočtená zpoždění nazývala *termínové zprávy*, datum zpoždění se nazývalo *datum termínu* a zpožděná transakce se označovala jako *transakce nastavená na budoucí datum*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Omezené zpoždění při nastavení výroby s více úrovněmi kusovníku
+Pokud pracujete se zpožděními v nastavení výroby, které má více úrovní kusovníku, je důležité poznamenat, že pouze položky, které způsobují zpoždění, přímo nad položkou (ve struktuře kusovníku), budou při spuštění hlavního plánování aktualizovány s prodlením. Ostatní položky ve struktuře kusovníku nebudou při schválení nebo potvrzení plánované objednávky pro nejvyšší úroveň použity zpoždění použité do prvního hlavního plánování. 
+
+Chcete-li toto známé omezení obejít, je možné schválit výrobní zakázky na vrcholu struktury kusovníku se zpožděními (nebo pevně) před dalším spuštěním hlavního plánování. Tímto způsobem se zachovají zpoždění z opožděné schválené plánované výrobní zakázky a všechny podřízené komponenty budou odpovídajícím způsobem aktualizovány.
+Zprávy akce lze rovněž použít k identifikaci plánovaných objednávek, které lze přesunout do pozdějšího data z důvodu jiných zpoždění ve struktuře kusovníku.
 
 ## <a name="desired-date"></a>Požadované datum
 

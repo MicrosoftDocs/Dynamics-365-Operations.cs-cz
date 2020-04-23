@@ -3,7 +3,7 @@ title: Vytvoření plánu zaměstnaneckých výhod
 description: Nastavení plánů zaměstnaneckých výhod v Dynamics 365 Human Resources
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008370"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230101"
 ---
 # <a name="create-a-benefits-plan"></a>Vytvoření plánu zaměstnaneckých výhod
-
-[!include [banner](includes/preview-feature.md)]
 
 V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výhod v aplikaci Dynamics 365 Human Resources.
 
@@ -39,16 +37,16 @@ V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výh
 
    | Pole | Popis |
    | --- | --- |
-   | Plán | Jedinečný identifikátor plánu. |
-   | Popis | Popis plánu. |
-   | Typ plánu | Při vytváření nového plánu je nutné zadat typ plánu. Typ plánu je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu určuje, zda může zaměstnanec zapsat do více plánů tohoto typu, určuje, zda kontakty jsou příjemci nebo následníci, a definují možnosti disponibility. Můžete vytvořit nové vlastní typy plánů, které budou vyhovovat potřebám nabídek zaměstnaneckých výhod. Hlavní typy plánů zaměstnaneckých výhod: <ul><li>401K</li><li>ADD</li><li>Zubní</li><li>Fitness</li><li>FSA</li><li>Životní</li><li>LTD</li><li>Zdravotní</li><li>PTO</li><li>STD</li><li>Pohled</li></ul> |
-   | Kód typu plánu | Kód typu plánu. |
-   | Program | Určuje program, který má volitelně přiřadit plán. |
-   | Sada | Určuje sadu, která má volitelně přiřadit plán. |
-   | Mistr | Určuje, zda je plán hlavním plánem v sadě, ke které je přiřazen. |
-   | Stav | Ukazuje aktuální stav plánu zaměstnaneckých výhod. Výchozí hodnota je Aktivní. Pokud změníte stav na neaktivní, plán nebude k dispozici pro výběr při registraci. |
-   | Platnost do data a času | Datum a čas začátku plánu. Výchozí hodnotou je aktuální systémové datum. |
-   | Platný do data a času | Datum a čas konce plánu (stav je nastaven na neaktivní). Výchozí hodnota je 12/31/2154, což znamená nikdy. |
+   | **Plán** | Jedinečný identifikátor plánu. |
+   | **Popis** | Popis plánu. |
+   | **Typ plánu** | Při vytváření nového plánu je nutné zadat typ plánu. Typ plánu je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu určuje, zda může zaměstnanec zapsat do více plánů tohoto typu, určuje, zda kontakty jsou příjemci nebo následníci, a definují možnosti disponibility. Můžete vytvořit nové vlastní typy plánů, které budou vyhovovat potřebám nabídek zaměstnaneckých výhod. Hlavní typy plánů zaměstnaneckých výhod: <ul><li>401K</li><li>ADD</li><li>Zubní</li><li>Fitness</li><li>FSA</li><li>Životní</li><li>LTD</li><li>Zdravotní</li><li>PTO</li><li>STD</li><li>Pohled</li></ul> |
+   | **Kód typu plánu** | Kód typu plánu. |
+   | **Program** | Určuje program, který má volitelně přiřadit plán. |
+   | **Sada** | Určuje sadu, která má volitelně přiřadit plán. |
+   | **Mistr** | Určuje, zda je plán hlavním plánem v sadě, ke které je přiřazen. |
+   | **Stav** | Ukazuje aktuální stav plánu zaměstnaneckých výhod. Výchozí hodnota je Aktivní. Pokud změníte stav na neaktivní, plán nebude k dispozici pro výběr při registraci. |
+   | **Platnost do data a času** | Datum a čas začátku plánu. Výchozí hodnotou je aktuální systémové datum. |
+   | **Platný do data a času** | Datum a čas konce plánu (stav je nastaven na neaktivní). Výchozí hodnota je 12/31/2154, což znamená nikdy. |
 
 4. Na kartě **Konfigurace** zadejte hodnoty následujících polí v závislosti na typu plánu, který vytváříte:
 
@@ -77,42 +75,42 @@ V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výh
 
    | Pole | Popis |
    | --- | --- |
-   | Povolit/pokračovat v zápisu | Určuje, zda se mohou zaměstnanci registrovat k plánu v případě, že splňují požadavky na způsobilost.</br></br>Pokud je tato možnost nastavena na hodnotu Ne, nebude k dispozici zaměstnancům při zpracování nároku. |
-   | Automatická registrace z předchozího roku | Určuje, zda automaticky registrovat do plánu způsobilého zaměstnance, pokud byl registrován v předchozím roce. |
-   | Automatická registrace ve výchozím nastavení | Určuje, zda se má ve výchozím nastavení vybrat plán pro registraci. Plán není povinný, takže zaměstnanec může změnit výchozí výběr. |
-   | Uzavřeno pro nové registrace | Určuje, zda má být plán omezen pouze na zaměstnance, kteří byli registrováni v plánu v předchozím roce. |
-   | Povinný plán | Určuje, zda mají být do plánu automaticky registrováni zaměstnanci. Zaměstnanci nemohou měnit výběr registrace. |
-   | Datum počátku | Datum, kdy byl plán vytvořen ve společnosti. |
-   | Účet dodavatele (dodavatel zaměstnaneckých výhod) | Dodavatel, kterému společnost zaplatí prémie pro plán. |
-   | Název (dodavatel zaměstnanecké výhody) | Název dodavatele Toto jméno je vytištěné na dokumentech odesílaných dodavateli, jako jsou např. |
-   | Reference dodavatele (dodavatel zaměstnaneckých výhod) | Odkaz dodavatele pro plán. Například číslo plánu skupiny společnosti. |
-   | Alternativní reference (dodavatel zaměstnaneckých výhod) | Alternativní reference dodavatele pro plán. Například číslo účtu společnosti. |
-   | Měna (dodavatel zaměstnaneckých výhod) | Měna, která se používá k vyplacení pojistného dodavateli. |
-   | Výdajový účet (dodavatel zaměstnaneckých výhod) | Účet hlavní knihy, který slouží jako výdajový účet pro plánované pojistné. |
-   | Účet dodavatele (správce zaměstnaneckých výhod) | Dodavatel, kterému společnost zaplatí za správu plánu. Jestliže dochází k samoobslužné správě plánu, ponechte toto pole prázdné. |
-   | Název (správce zaměstnaneckých výhod) | Název dodavatele správce zaměstnanecké výhody. |
-   | Reference dodavatele (správce zaměstnaneckých výhod) | Reference dodavatele správce pro plán. |
-   | Alternativní reference dodavatele (správce zaměstnaneckých výhod) | Alternativní reference dodavatele správce pro plán. |
-   | Měna (správce zaměstnaneckých výhod) | Měna, která se používá k vyplacení správci zaměstnaneckých výhod. |
-   | Účet výdajů (správce zaměstnaneckých výhod) | Účet hlavní knihy, který slouží jako výdajový účet pro náklady spojené se správou plánu. |
+   | **Povolit/pokračovat v zápisu** | Určuje, zda se mohou zaměstnanci registrovat k plánu v případě, že splňují požadavky na způsobilost.</br></br>Pokud je tato možnost nastavena na hodnotu Ne, nebude k dispozici zaměstnancům při zpracování nároku. |
+   | **Automatická registrace z předchozího roku** | Určuje, zda automaticky registrovat do plánu způsobilého zaměstnance, pokud byl registrován v předchozím roce. |
+   | **Automatická registrace ve výchozím nastavení** | Určuje, zda se má ve výchozím nastavení vybrat plán pro registraci. Plán není povinný, takže zaměstnanec může změnit výchozí výběr. |
+   | **Uzavřeno pro nové registrace** | Určuje, zda má být plán omezen pouze na zaměstnance, kteří byli registrováni v plánu v předchozím roce. |
+   | **Povinný plán** | Určuje, zda mají být do plánu automaticky registrováni zaměstnanci. Zaměstnanci nemohou měnit výběr registrace. |
+   | **Datum počátku** | Datum, kdy byl plán vytvořen ve společnosti. |
+   | **Účet dodavatele** (dodavatel zaměstnaneckých výhod) | Dodavatel, kterému společnost zaplatí prémie pro plán. |
+   | **Název** (dodavatel zaměstnanecké výhody) | Název dodavatele Toto jméno je vytištěné na dokumentech odesílaných dodavateli, jako jsou např. |
+   | **Reference dodavatele** (dodavatel zaměstnaneckých výhod) | Odkaz dodavatele pro plán. Například číslo plánu skupiny společnosti. |
+   | **Alternativní reference** (dodavatel zaměstnaneckých výhod) | Alternativní reference dodavatele pro plán. Například číslo účtu společnosti. |
+   | **Měna** (dodavatel zaměstnaneckých výhod) | Měna, která se používá k vyplacení pojistného dodavateli. |
+   | **Výdajový účet** (dodavatel zaměstnaneckých výhod) | Účet hlavní knihy, který slouží jako výdajový účet pro plánované pojistné. |
+   | **Účet dodavatele** (správce zaměstnaneckých výhod) | Dodavatel, kterému společnost zaplatí za správu plánu. Jestliže dochází k samoobslužné správě plánu, ponechte toto pole prázdné. |
+   | **Název** (správce zaměstnaneckých výhod) | Název dodavatele správce zaměstnanecké výhody. |
+   | **Reference dodavatele** (správce zaměstnaneckých výhod) | Reference dodavatele správce pro plán. |
+   | **Alternativní reference** (správce zaměstnaneckých výhod) | Alternativní reference dodavatele správce pro plán. |
+   | **Měna** (správce zaměstnaneckých výhod) | Měna, která se používá k vyplacení správci zaměstnaneckých výhod. |
+   | **Účet výdajů** (správce zaměstnaneckých výhod) | Účet hlavní knihy, který slouží jako výdajový účet pro náklady spojené se správou plánu. |
 
 6. Na kartě **filtry** podle potřeby proveďte filtrování. Můžete filtrovat podle následujících polí:
 
-   - Obchodní jednotka
-   - Oddělení
-   - Právnická osoba
-   - Umístění
-   - Pozice
+   - **Obchodní jednotka**
+   - **Oddělení**
+   - **Právnická osoba**
+   - **Umístění**
+   - **Pozice**
 
 7. Na kartě **Pravidla nároku** zadejte hodnoty pro následující pole:
 
    | Pole | Popis |
    | --- | --- |
-   | Číslo řádku | Číslo řádku smlouvy pravidla způsobilosti. |
-   | Pravidlo způsobilosti | Pravidlo způsobilosti, které má být použito pro plán zaměstnaneckých výhod. Toto pravidlo způsobilosti bude použito na odpovídající typ akce a přidruženo k zadanému období čekání na disponibilitu a odpočty. |
-   | Typ akce | Akce pro uplatnění pravidla způsobilosti pro: vypršení platnosti nebo nároků na zaměstnanecké výhody. |
-   | Čekací doby pokrytí | Hodnota z formuláře čekajících období. Období čekání na pokrytí určuje počet dní nebo měsíců, kdy zaměstnanec čeká na pokrytí zaměstnanecké výhody nebo vypršení zaměstnanecké výhody na základě kritérií v pravidlu a typu akce. |
-   | Čekací období srážek | Hodnota z formuláře čekajících období. Období čekání na srážku určuje počet dní nebo měsíců, kdy zaměstnanec čeká na srážku zaměstnanecké výhody z výplaty na základě kritérií v pravidlu a typu akce. |
+   | **Číslo řádku** | Číslo řádku smlouvy pravidla způsobilosti. |
+   | **Pravidlo způsobilosti** | Pravidlo způsobilosti, které má být použito pro plán zaměstnaneckých výhod. Toto pravidlo způsobilosti bude použito na odpovídající typ akce a přidruženo k zadanému období čekání na disponibilitu a odpočty. |
+   | **Typ akce** | Akce pro uplatnění pravidla způsobilosti pro: vypršení platnosti nebo nároků na zaměstnanecké výhody. |
+   | **Čekací doby pokrytí** | Hodnota z formuláře čekajících období. Období čekání na pokrytí určuje počet dní nebo měsíců, kdy zaměstnanec čeká na pokrytí zaměstnanecké výhody nebo vypršení zaměstnanecké výhody na základě kritérií v pravidlu a typu akce. |
+   | **Čekací období srážek** | Hodnota z formuláře čekajících období. Období čekání na srážku určuje počet dní nebo měsíců, kdy zaměstnanec čeká na srážku zaměstnanecké výhody z výplaty na základě kritérií v pravidlu a typu akce. |
 
 8. Zvolte **Uložit**.
 

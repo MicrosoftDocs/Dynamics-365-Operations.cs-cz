@@ -3,7 +3,7 @@ title: Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit ukázkové prostředí v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024629"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254741"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 
@@ -234,8 +234,6 @@ Pokud chcete inicializovat e-Commerce, postupujte takto.
 ## <a name="commerce-preview-environment-support"></a>Podora ukázkového prostředí služby Commerce
 
 Pokud při provádění kroků zajišťování dojde k problémům, o pomoc se obraťte na [skupinu náhledu Microsoft Dynamics 365 Commerce v aplikaci Yammer](https://aka.ms/Dynamics365CommercePreviewYammer).
-
-Pokud se při pokusu o přístup ke skupině Yammer vyskytnou problémy, můžete kontaktovat společnost Microsoft e-mailem na adrese <Dynamics365Commerce@microsoft.com>. Tato e-mailová adresa není aktivně monitorována. Proto očekávejte prodlevu v odpovědi.
 
 ## <a name="next-steps"></a>Další kroky
 

@@ -3,7 +3,7 @@ title: Přehled správy obchodních dokumentů
 description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117330"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258550"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -248,9 +248,18 @@ Následující postup slouží k šablon volných faktur v pracovním prostoru s
 1. Přihlaste se jako uživatel s přístupem do pracovního prostoru Řízení obchodního dokumentu.
 2. Otevřete pracovní prostor správy obchodních dokumentů.
 
+Pokud je funkce **Prostředí UI podobné systému Office pro správu obchodního dokumentu** vypnuta v pracovním prostoru **Správa funkcí**, hlavní mřížka v pracovním prostoru **Správa obchodních dokumentů** zobrazuje následující šablony:
+
+- Šablony, které vlastní váš poskytovatel konfigurace aplikace ER (tj. poskytovatel, který je aktuálně označen jako aktivní v pracovním prostoru **Elektronického vykazování**). Po vybrání jedné z těchto šablon můžete vybrat možnost **Upravit šablonu** a začít ji upravovat.
+- Šablony vlastněné ostatními poskytovateli konfugurace ER. Po vybrání jedné z těchto šablon můžete vybrat **Nový dokument**, abyste vytvořili jeho kopii, která je vlastněna vaším poskytovatelem konfigurace ER, a poté můžete začít upravovat jeho kopii.
+
 ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate1.png)
 
 Na kartě **Šablony** se zobrazí obsah vybrané šablony. Vyberte kartu **Podrobnosti**, na které si můžete prohlédnout podrobnosti o vybrané šabloně a podrobnosti o konfiguraci formátu elektronického výkaznictví, kde je tato šablona umístěna. Všimněte si, že všechny šablony mají stav **Publikováno**a neobsahují údaje ve sloupci **Revize**. To znamená, že tyto šablony aktuálně nejsou upravovány.
+
+Pokud je funkce **Prostředí UI podobné systému Office pro správu obchodního dokumentu** zapnuta v pracovním prostoru **Správa funkcí**, hlavní mřížka v pracovním prostoru **Správa obchodních dokumentů** zobrazuje šablony, které jsou vlastněny vaším poskytovatelem konfigurace ER (tj. poskytovatelem, který je aktuálně označen jako aktivní v pracovním prostoru **Elektronického vykazování**). Po vybrání jedné z těchto šablon můžete vybrat možnost **Upravit šablonu** a začít ji upravovat.
+
+Chcete-li pracovat se šablonami, které jsou vlastněny jinými zprostředkovateli konfigurace ER, vyberte možnost **Nový dokument** a vytvořte kopii šablony, která je vlastněna vaším poskytovatelem ER. Poté můžete začít upravovat kopii. Další informace naleznete v tématu [Nové uživatelské rozhraní dokumentu v modulu Správa obchodních dokumentů](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Zahájení úprav šablon vlastněných vaším poskytovatelem konfigurace
 

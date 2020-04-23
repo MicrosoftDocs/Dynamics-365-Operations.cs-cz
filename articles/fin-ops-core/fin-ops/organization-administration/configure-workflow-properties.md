@@ -3,7 +3,7 @@ title: Konfigurace vlastností workflow
 description: Toto téma vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190113"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199429"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurace vlastností workflow
 
@@ -75,9 +75,11 @@ Můžete zadat pokyny pro uživatele, kteří budou odesílat dokumenty ke zprac
     5. Text můžete přizpůsobit vložením zástupného textu. Pokyny, jak zadat zástupný text, naleznete v kroku 3.
     6. Klepněte na tlačítko **Zavřít**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Určete, kdy se má použít tento workflow.
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Určete, kdy se tento workflow používá v podmínkách aktivace
 
-Můžete vytvořit více workflowů založených na stejném typu. Můžete například vytvořit workflow nákupních požadavků, pro každou zemi nebo oblast, ve které působíte, například Nákupní požadavky – Dánsko a Nákupní požadavky – Španělsko. Pokud máte více workflowů založených na stejném typu, je nutné zadat, kdy má být který workflow použit. U předchozího příkladu zadáte následující podmínky:
+Můžete vytvořit více workflowů založených na stejném typu workflowu. Pokud máte více workflowů založených na stejném typu, je nutné zadat, kdy má být který workflow použit pomocí podmínek aktivace. Nejsou-li podmínky aktivace splněny, použije se výchozí Workflow. Podobně, pokud je pro typ workflowu definována pouze jedna konfigurace workflowu, bude tato konfigurace workflowu použita bez ohledu na podmínky aktivace.
+
+Můžete například vytvořit workflow nákupních požadavků, pro každou zemi nebo oblast, ve které působíte, například Nákupní požadavky – Dánsko a Nákupní požadavky – Španělsko s následujícími podmínkami:
 
 - Nákupní požadavky – Dánsko se má používat v případě, že země či oblast = DK
 - Nákupní požadavky – Španělsko se má používat v případě, že země či oblast = ES

@@ -3,7 +3,7 @@ title: Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commer
 description: V tomto tématu jsou odpovědi na časté otázky týkající se prostředí náhledu Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024745"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254717"
 ---
 # <a name="dynamics-365-commerce-preview-environment-faq"></a>Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce
 
@@ -78,9 +78,7 @@ Pro každý přijatý požadavek přidělíme kvótu jednoho prostředí pro ná
 
 Chcete-li kontaktovat Microsoft s otázkami nebo požadavky v souvislosti s prostředím náhledu Commerce, navštivte [skupinu Microsoft Dynamics 365 Commerce Preview ve službě Yammer](https://aka.ms/Dynamics365CommercePreviewYammer) a požádejte o pomoc.
 
-Pokud se při pokusu o přístup ke skupině Yammer vyskytnou problémy, můžete kontaktovat společnost Microsoft e-mailem na adrese <Dynamics365Commerce@microsoft.com>. Tato e-mailová adresa není aktivně monitorována. Proto očekávejte prodlevu v odpovědi.
-
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled prostředí Preview aplikace Dynamics 365 Commerce](cpe-overview.md)
 
