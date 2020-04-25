@@ -3,7 +3,7 @@ title: Konfigurace pravidel a možností nároků
 description: Nastavte pravidla a možnosti nároků ve správě zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008417"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229894"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace pravidel a možností nároků
-
-[!include [banner](includes/preview-feature.md)]
 
 Po nakonfigurování nezbytných parametrů pro správu výhod v Microsoft Dynamics 365 Human Resources můžete vytvářet pravidla způsobilosti, sady, období a programy, které budete přidružovat k plánům zaměstnaneckých výhod.
 
@@ -57,6 +55,7 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Kategorie zaměstnání** | Kategorie zaměstnání zaměstnance v případě, že je přepínač **Použít kategorii zaměstnání** nastaven na **Ano**. |
    | **Použít nové pravidlo náboru** | Určuje, zda má být jako součást pravidla nároku na zaměstnanecké výhody použita nová hodnota období nově přijatého zaměstnance. |
    | **Období registrace** | Časové období, kdy je povolena registrace nově přijatého zaměstnance. Pokud tuto hodnotu nastavíte také v parametrech, nastavení parametrů bude mít přednost před tímto nastavením. |
+   | **Použít bývalý stav zaměstnání** | Určuje, zda má být v rámci pravidla nároku na zaměstnanecké výhody použit předchozí stav zaměstnání zaměstnance. Můžete například zadat pravidlo způsobilosti, které odchýlí dobu čekání disponibility pro všechny zaměstnance, kteří přešli ze stavu **Propuštěn** na stav **Zaměstnán** do 90 dnů od jejich předchozího zaměstnání. |
 
 4. V části **Další kritéria** vyberte následující možnosti a podle potřeby přidejte informace:
 

@@ -3,7 +3,7 @@ title: Nastavení parametrů správy zaměstnaneckých výhod
 description: Nakonfigurujte parametry pro správu zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008363"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229756"
 ---
 # <a name="set-benefits-management-parameters"></a>Nastavení parametrů správy zaměstnaneckých výhod
 
-[!include [banner](includes/preview-feature.md)]
-
-Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resources je nutné konfigurovat parametry správy zaměstnaneckých výhod. Tyto parametry nastaví výchozí hodnoty, kódy důvodů a další možnosti.
+Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resources musíte konfigurovat parametry správy zaměstnaneckých výhod. Tyto parametry nastaví výchozí hodnoty, kódy důvodů a další možnosti.
 
 ## <a name="configure-general-parameters"></a>Konfigurace všeobecných parametrů
 
@@ -47,7 +45,6 @@ Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resou
    | **Kód důvodu změny sazby** | Kód důvodu, který má být použit při zrušení a opětovném otevření plánu zaměstnaneckých výhod během procesu aktualizace změny sazby. Informuje o tom, které záznamy byly změněny procesem aktualizace změny sazby. |
    | **Nově přijatý zaměstnanec je způsobilý** | Určuje, zda mají nově přijatí zaměstnanci nárok na podporu. |
    | **Období registrace nového zaměstnance** | Časové období, kdy je povolena registrace nově přijatého zaměstnance.</br></br>**Poznámka**: Toto nastavení přepíše jakékoli období registrace nově přijatého zaměstnance, které je nastaveno pro pravidlo nároku na plán. | 
-   | **Rozšíření roční výplaty** | Určuje, zda má být automaticky vypočtena částka **Roční výplaty zaměstnaneckých výhod** v poli **Podrobnosti o zaměstnanecké výhodě**. Je založena na **fixní sazbě kompenzace** zaměstnance, **průměrné pracovní době** a **frekvenci plateb**.</br></br>**Průměrný počet hodin** x **Fixní sazba platby** x **Frekvence plateb** (počet platebních období) = **Roční výplata zaměstnaneckých výhod** </br></br>Pokud se změní některá z hodnot v poli **Průměrný počet hodin**, **Fixní sazba platby kompenzace** nebo **Frekvence plateb**, systém automaticky přepočítá částku **roční výplaty zaměstnaneckých výhod** na základě změněných hodnot. Systém vytvoří záznam o **datu platnosti**, který určí přesné datum a čas, kdy došlo ke změně. V případě potřeby můžete v případě potřeby ručně upravit **roční výplatu zaměstnanecké výhody**. |
    | **Životní události povoleny** | Povolí životní události. |
    | **Skrýt staré formuláře zaměstnaneckých výhod** | Umožňuje skrýt starší formuláře zaměstnaneckých výhod. |
 

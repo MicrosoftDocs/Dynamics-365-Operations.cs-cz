@@ -3,7 +3,7 @@ title: Funkce el. výkaznictví TRANSLATE
 description: Toto téma obsahuje obecné informace o použití funkce TRANSLATE elektronického výkaznictví.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fe19c5f66c33e336f76f3a72d3bbda0c7e8d86
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 415444bda097c00522155d1b37988a79da836902
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040909"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201105"
 ---
-# <a name="TRANSLATE">Funkce el. výkaznictví TRANSLATE</a>
+# <a name=""></a><a name="TRANSLATE">Funkce el. výkaznictví TRANSLATE</a>
 
 [!include [banner](../includes/banner.md)]
 
-Funkce `TRANSLATE` vrátí zadaný textový řetězec jako hodnotu typu *řetězec* po nahrazení celého řetězce nebo jeho části jiným řetězcem.
+Funkce `TRANSLATE` vrací *řetězcovou* hodnotu, která obsahuje výsledek nahrazení znaku zadaného textu znaky jiné zadané sady.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -57,10 +57,24 @@ Text, který má být použit jako náhrada.
 
 Výsledná textová hodnota.
 
-## <a name="example"></a>Příklad
+## <a name="usage-notes"></a>Poznámky k použití
 
-`TRANSLATE ("abcdef", "cd", "GH")` nahradí vzor **"cd"** řetězcem **"GH"** a vrátí **"abGHef"**.
+Funkce `TRANSLATE` nahradí vždy jeden znak. Funkce nahradí první znak argumentu `text` prvním znakem argumentu `pattern` a poté druhým znakem a následuje stejný tok až do dokončení. Pokud se znak z argumentů `text` a `pattern` shoduje, je nahrazen znakem z argumentu `replacement`, který se nachází ve stejné pozici jako znak z argumentu `pattern`. Pokud se v argumentu `pattern` několikrát objevuje znak, použije se mapování argumentů `replacement`, které odpovídá prvnímu výskytu tohoto znaku.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="example-1"></a>Příklad 1
+
+`TRANSLATE ("abcdef", "cd", "GH")` nahradí znak **"c"** zadaného textu **“abcdef”** znakem **"G"** textu `replacement` z následujích důvodů:
+-   Znak **"c"** je uveden v textu `pattern` v první pozici.
+-   První pozice textu `replacement` obsahuje znak **"G"**.
+
+## <a name="example-2"></a>Příklad 2
+
+`TRANSLATE ("abcdef", "ccd", "GH")` vrátí **"abGdef"**.
+
+## <a name="example-3"></a>Příklad 3
+
+`TRANSLATE ("abccba", "abc", "123")` vrátí **"123321"**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Textové funkce](er-functions-category-text.md)

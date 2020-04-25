@@ -2,7 +2,7 @@
 title: Nábor dodavatelů
 description: Toto téma popisuje proces nabírání nových dodavatelů. Vysvětluje akce, které jsou vyžadovány různými rolemi v průběhu tohoto procesu.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250129"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203404"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ Následující tabulka zobrazuje kroky a role, které jsou zahrnuty v procesu.
 | Správce            | | | Vytvořte uživatele v aplikacích Supply Chain Management a Microsoft Azure. | | | |
 | Kontaktní osoba dodavatele    | | | Odešlete e-mail kontaktní osobě. | Zaregistruje informace o dodavateli. | | |
 
-Pro rychlou ukázku náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Příjem nového dodavatele v aplikaci Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Pro rychlou demonstraci náborového procesu dodavatele se podívejte na toto krátké video na YouTube [Jak na nábor nového dodavatele v Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import požadavků na registraci potenciálního dodavatele
 

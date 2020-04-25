@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42fcbeaadf0e8156cd72bee4328ca612c1abbaff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 058102b369ec7ed79874017e50a06d265b96b424
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008409"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198759"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definovat proces kompenzací a vypočítat výsledky
-
-
 
 Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro zaměstnance, které jsou přihlášené do plánů fixní i variabilní kompenzace. Procesy kompenzace mohou být spuštěny více než jednou k provedení analýzy „co když“ a ověření správnosti všech změn a nastavení. Tento postup vytvoří proces kompenzace, spustí proces a zobrazí výsledky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

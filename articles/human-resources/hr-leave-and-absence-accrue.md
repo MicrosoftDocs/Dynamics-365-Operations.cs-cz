@@ -3,7 +3,7 @@ title: Časově rozlišit plány pracovního volna a absence
 description: Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro více zaměstnanců nebo pro jednotlivce.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba60fc2e5b17ec32aa6ad7eb104e8ae55ddee3bb
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092331"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197306"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Časově rozlišit plány pracovního volna a absence
 
@@ -35,7 +35,7 @@ Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro v
 
 2. V nabídce **Správa pracovního volna** vyberte **časové rozlišení pracovního volna a plánů absencí**.
 
-3. V dialogovém okně **Časové rozlišení plánů pracovního volna a absence** v části **Časové rozlišení k** vyberte **Dnešní datum** nebo **Vlastní datum** a zadejte vlastní datum.
+3. Zobrazí se dialogové okno **Časové rozlišení plánů pracovního volna a absence**. V **Časové rozlišení k** vyberte **Dnešní datum** nebo vyberte **Vlastní datum** a zadejte vlastní datum.
 
 4. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
 
@@ -53,7 +53,7 @@ Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro v
 
 2. Vyberte **Časové rozlišení plánů pracovního volna a absence**.
 
-3. V dialogovém okně **Časové rozlišení plánů pracovního volna a absence** v části **Časové rozlišení k** vyberte **Dnešní datum** nebo **Vlastní datum** a zadejte vlastní datum.
+3. Zobrazí se dialogové okno **Časové rozlišení plánů pracovního volna a absence**. V **Časové rozlišení k** vyberte **Dnešní datum** nebo vyberte **Vlastní datum** a zadejte vlastní datum.
 
 4. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
 
@@ -65,15 +65,43 @@ Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro v
 
    4. Vyberte **OK**. Proces časového rozlišení bude spuštěn s nastavenými parametry.
 
-## <a name="preview-features-for-leave-and-absence"></a>Funkce náhledu pracovního volna a absence
+## <a name="delete-leave-and-absence-accruals-for-multiple-employees"></a>Odstranit časová rozlišení pracovního volna a absence pro více zaměstnanců
 
-[!include [banner](includes/preview-feature-leave-absence.md)]
+Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data časového rozlišení musí být datována dnes nebo v budoucnosti.
 
-Pro volno a absenci můžete povolit následující funkce náhledu:
+1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.
 
-- **Odstranit časové rozlišení plánů pracovního volna a absence**. Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data časového rozlišení musí být datována dnes nebo v budoucnosti.
+2. V nabídce **Správa pracovního volna** vyberte **Odstranit časová rozlišení pracovního volna a absence**.
 
-- **Audit časového rozlišení pracovního volna**. Zobrazí se při každém spuštění nebo odstranění časového rozlišení pro jednoho nebo všechny zaměstnance spolu s datem a uživatelem, který provedl akci.
+3. V dialogovém okně **Odstranit časová rozlišení pracovního volna a absence** vyberte **Plán pracovního volna**. 
+
+4. Pokud je to možné, zvolte **Odstranit vyrovnání zůstatků**.
+
+5. Zadejte nebo vyberte **Datum časového rozlišení volna**. Toto datum musí být buď dnešní, nebo v budoucnosti. 
+
+6. Vyberte **OK**. Proces časového rozlišení odstraní časová rozlišení s nastavenými parametry. 
+
+## <a name="delete-leave-and-absence-accruals-for-a-single-employee"></a>Odstranit časová rozlišení pracovního volna a absence pro jednoho zaměstnance
+
+1. V záznamu zaměstnance vyberte možnost **Pracovní volno**.
+
+2. Vyberte **Odstranit časové rozlišení plánů pracovního volna a absence**.
+
+3. V dialogovém okně **Odstranit časová rozlišení pracovního volna a absence** vyberte **Plán pracovního volna**. 
+
+4. Pokud je to možné, zvolte **Odstranit vyrovnání zůstatků**.
+
+5. Zadejte nebo vyberte **Datum časového rozlišení volna**. Toto datum musí být buď dnešní, nebo v budoucnosti. 
+
+6. Vyberte **OK**. Proces časového rozlišení odstraní časová rozlišení s nastavenými parametry. 
+
+## <a name="review-leave-accrual-and-deletion-processes"></a>Zkontrolovat procesy časového rozlišení a odstranění
+
+**Vynechávat audit časového rozlišení** se zobrazí pokaždé, když spustíte nebo odstraníte časové rozlišení pro jednoho nebo všechny zaměstnance. Zobrazí se také datum a osoba, která akci provedla.
+
+1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.
+
+2. V nabídce **Správa pracovního volna** vyberte **Odstranit audit časového rozlišení pracovního volna**.
 
 ## <a name="see-also"></a>Viz také
 

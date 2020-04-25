@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029355"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260499"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -80,7 +80,7 @@ Nejtypičtější a nejdůležitější změny, které lze na stránce provést,
 
 Kromě toho jsou k dispozici základní typy explicitního přizpůsobení kliknutím pravým tlačítkem myši a následným výběrem **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Použijete-li tuto metodu přizpůsobení, zobrazí se okno Vlastnosti prvku.
 
-![Přizpůsobení vlastností prvku](./media/personalization-element-properties.png)
+![Přizpůsobení vlastností prvku](./media/cli-element-property-window.png)
 
 Můžete použít okno vlastností pro individuální nastavení prvku následujícími způsoby:
 
@@ -89,6 +89,7 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 - Zahrňte informace v oddílu souhrnu pevné záložky (pokud je prvkem o pevná záložka).
 - Přeskočte pole, aby nikdy nezískalo výběr při přechodu na stránku.
 - Zabraňte úpravě data v poli (pro jakýkoliv záznam).
+- Určete pole, které má být požadováno pro zadávání dat. Pokud v tomto poli nebyla zadána žádná hodnota, zobrazí se s červeným ohraničením a hvězdičkou pro označení tohoto stavu. Tato možnost je k dispozici pouze při spuštění ve verzi 10.0.11, když jsou povoleny funkce [Uložená zobrazení](saved-views.md) a **Určit pole, které vyžadují individuální nastavení**.
 
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okno vlastnosti pro řídicí panel umožňuje vytvořit nový pracovní prostor na tomto řídicím panelu.
 
@@ -116,6 +117,7 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 - Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. Všimněte si, že prvek nelze přesunout mimo nadřazenou skupinu. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Přesunout** a pak vyberte požadovaný prvek k přesunutí. Při výběru prvku aplikace kontroluje stránku a určuje místa, do nichž lze prvek přesunout. Tato umístění se nazývají *zóny přetažení*. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
 - Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
+- Chcete-li určit prvek požadovaný pro zadávání dat, použijte nástroj **Vyžadovat**. Když na panelu nástrojů vyberete tlačítko **Vyžadovat**, všechny prvky, u kterých je vyžadováno individuální nastavení, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak můžete znovu uričt, aby nevyžadovaly individuální nastavení. Tato možnost je k dispozici pouze v budoucím vydání, když jsou povoleny funkce [Uložená zobrazení](saved-views.md) a **Určit pole, které vyžadují individuální nastavení**.
 - Zvolte nástroj **Zamknout**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když na panelu nástrojů vyberete tlačítko **Zamnkout**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
 - Pomocí tlačítka **Přidat aplikaci z Power Apps** vložte aplikaci, která byla vytvořena pomocí Microsoft Power Apps, na stránku. Podrobné informace o tom, jak vložit aplikaci z Power Apps na stránku, získáte v tématu [Vkládání aplikací z Power Apps](embed-power-apps.md). Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md).  
 - Pomocí tlačítka **Přidat aplikaci** vložte aplikaci, která byla vytvořena v Microsoft Power Apps nebo třetí stranou, na stránku.. Tato možnost je k dispozici pouze tehdy, je-li povolena funkce [uložená zobrazení](saved-views.md). 

@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154056"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261391"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -46,7 +46,7 @@ Na stránce s podrobnostmi o produktu je buy box rozdělen na dvě oblasti: obla
 Modul buy boxu vykreslí název, popis, cenu a hodnocení produktu. Dále odběratelům vybírá varianty produktu, které mají různé atributy produktu, například velikost, styl a barvu. Je-li vybrána varianta produktu, budou další vlastnosti v buy boxu (například popis a obrázky produktu) aktualizovány tak, aby odrážely informace o variantách. 
 
 Výběr množství je k dispozici, takže zákazníci mohou určit množství položek, které mají být zakoupeny. Maximální množství, které lze koupit, lze definovat v nastavení pracoviště.
- 
+
 Z buy boxu mohou zákazníci také provádět akce, jako je přidání produktu do nákupního košíku, přidání produktu do svého seznamu přání a výběr místa výdeje. Tyto akce lze provést u produktu nebo varianty produktu. Chcete-li přidat produkt do seznamu přání, je nutné, aby byl přihlášen zákazník.
 
 Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovládacích prvků akcí pro buy box. 
@@ -58,14 +58,15 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
 - **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Může podporovat jeden nebo mnoho obrázků. Podporuje také obrázky miniatur. Obrázky miniatur lze uspořádat vodorovně (jako řádek pod obrázkem) nebo svisle (jako sloupec vedle obrázku). Modul galerie médií lze přidat do pozice **Média** v modulu buy boxu. V současné době podporuje pouze obrázky. 
-- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v tématu [Modul Volič obchodů](store-selector.md).
+- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v tématu [Modul volič obchodů](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
 
 Moduly buy boxu mají tři nastavení, která lze konfigurovat na **Nastavení webu \> Rozšíření**:
 
 - **Maximální množství** – tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
-- **Kontrola zásob** – Je-li nastavena hodnota **Pravda**, položka se přidá do košíku pouze poté, co se modul buy boxu ověří, že je na skladě. Tato kontrola zásob se provádí pro scénáře, když má být položka expedována, a pro scénáře, kdy má být vyzvednuta v obchodě. Je-li tato hodnota nastavena na hodnotu **Nepravda**, před přidáním položky do nákupního košíku a podání objednávky není provedena kontrola zásob.
+- **Kontrola zásob** – Je-li nastavena hodnota **Pravda**, položka se přidá do košíku pouze poté, co se modul buy boxu ověří, že je na skladě. Tato kontrola zásob se provádí pro scénáře, když má být položka expedována, a pro scénáře, kdy má být vyzvednuta v obchodě. Je-li tato hodnota nastavena na hodnotu **Nepravda**, před přidáním položky do nákupního košíku a podání objednávky není provedena kontrola zásob. Informace o tom, jak konfigurovat nastavení zásob v administrativě, naleznete v tématu [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md).
+
 - **Zásboník zásob** – Tato vlastnost se používá k určení čísla zásobníku pro zásoby. Údržba zásob probíhá v reálném čase a když mnoho zákazníků podá objednávku, může být obtížné zajistit přesný počet zásob. Když je provedena kontrola zásob, pokud je množství na skladu nižší než množství zásobníku, produkt je brán, jakože není na skladu. Pokud se tedy prodej rychle točí prostřednictvím několika kanálů a zásoby nejsou plně synchronizovány, existuje menší riziko, že položka, která se nenachází na skladě, je v prodeji.
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
@@ -93,11 +94,13 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 [Přehled startovací sady](starter-kit-overview.md)
 
-[Modul Volič obchodů](store-selector.md)
+[Modul volby obchodu](store-selector.md)
 
 [Modul kontejneru](add-container-module.md)
 
 [Modul košíku](add-cart-module.md)
+
+[Ikona modulu košíku](cart-icon-module.md)
 
 [Modul pokladny](add-checkout-module.md)
 
@@ -106,3 +109,5 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+[Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)

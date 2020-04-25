@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260453"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -90,4 +90,23 @@ Chcete-li zrušit seskupení v mřížce, klikněte pravým tlačítkem na sloup
 ## <a name="evaluating-math-expressions"></a>Vyhodnocování matematických výrazů
 Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat matematické vzorce do číselných buněk v mřížce. Není nutné provádět výpočet v aplikaci mimo systém. Zadáte-li například hodnotu **=15\*4** a poté se stisknutím klávesy **Tab** přesunete mimo pole, systém vyhodnotí výraz a do pole zapíše hodnotu **60**.
 
-Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Časté dotazy
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 
+
+**10.0.9/Platform Update 33 a novější** Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Podobně jako jiné veřejné funkce náhledu je povolení této funkce v produkčním prostředí podmíněno [dodatečnou smlouvou o použití](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 a 10.0.7 / Platform update 31** Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1 (Dev/Test) a úrovně 2 (Sandbox), aby bylo možné poskytnout další změny testování a návrhu pomocí následujících kroků.
+
+1.  **Povolit let**: spustit následující příkaz SQL: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Obnovit IIS** pro vyprázdnění statickou mezipaměť testovací verze. 
+
+3.  **Najít funkci**: přejděte do pracovního prostoru **Správa funkcí**. Pokud se **Nový ovládací prvek mřížky** neobjeví v seznamu všech funkcí, vyberte **Vyhledat aktualizace**.   
+
+4.  **Povolit funkci**: vyhledejte funkci **Nový ovládací prvek mřížky** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**. Uvědomte si, že je požadována aktualizace prohlížeče. 
+
+Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.

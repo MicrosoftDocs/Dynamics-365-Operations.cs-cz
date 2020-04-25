@@ -3,7 +3,7 @@ title: Stavy dokumentu a životního cyklu
 description: V tomto tématu jsou popsány různé stavy dokumentu pro prvky stránky v řešení Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4f1c462f734b2d58843308f0f877fe18a4d9af7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002974"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261506"
 ---
 # <a name="document-states-and-lifecycle"></a>Stavy dokumentu a životního cyklu
 
@@ -37,15 +37,15 @@ V tématu [Prvky stránky](page-elements-overview.md) jsou uvedeny různé typy 
 
 V následující tabulce jsou uvedeny možné stavy dokumentu pro prvky stránky v řešení Commerce.
 
-| Stav dokumentu | Popis |
-|---|---|
-| Rezervováno | Je-li položka CMS rezervována pro vás, nemůže být upravována jinými ověřenými uživateli systému. Jakékoli změny položky, které provedete, budou viditelné pouze pro vás. |
-| Vráceno | Při vrácení položky CMS se změnami jsou všechny změny viditelné pro ostatní ověřené uživatele systému a tito uživatelé si pak mohou položku rezervovat a upravit. Při každém vrácení se změnami se vytvoří záznam verze dokumentu v historii položky. |
-| Publikováno | Je-li publikována položka CMS, je vložena na živý web a může být v Internetu zjistitelná neověřenými externími uživateli. Položky lze publikovat pouze v případě, že byly vráceny se změnami. |
-| Uloženo | Změny provedené u rezervované položky CMS lze uložit do CMS před tím, než je položka vrácena se změnami nebo publikována. Tyto uložené změny nejsou viditelné pro ostatní ověřené uživatele systému, dokud není položka vrácena se změnami. Nejsou viditelné pro externí uživatele, dokud není položka publikována. |
-| Zahozená rezervace | Pokud dojde k zahození rezervované položky CMS, budou odstraněny všechny uložené změny a položka bude vrácena na verzi, která byla naposledy vrácena se změnami. |
+| Stav dokumentu      | Akce konfigurátoru webu        | popis                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Rezervováno         | Vyberte možnost **Upravit**.           | Příslušný dokument je rezervován pro vás. V době, kdy je dokument v tomto stavu, nemůže být změněn jinými ověřenými uživateli systému a veškeré změny provedené v dokumentu jsou viditelné pouze pro vás. |
+| Uloženo               | Zvolte **Uložit**.           | Změny provedené v rezervovaném dokumentu budou uloženy do databáze, ale dokument ještě nebyl vrácen se změnami ani publikován. Tyto uložené změny nejsou viditelné pro ostatní ověřené uživatele systému, dokud autor nevybere **Dokončit úpravy**. Nejsou viditelné pro externí uživatele, dokud není položka publikována. |
+| Zahozená rezervace | Vyberte **Zrušit úpravy**.  | Všechny změny v rezervovaném dokumentu budou odstraněny a položka se vrátí k poslední verzi, která byla vrácena se změnami. |
+| Vráceno          | Vyberte **Dokončit úpravy**. | Upravený dokument je vrácen se změnami. Všechny změny jsou viditelné pro ostatní ověřené uživatele systému a tito uživatelé pak mohou dokument upravovat. Při každém vrácení se změnami se vytvoří záznam verze dokumentu v historii položky. |
+| Publikováno           | Zvolte **Publikovat**.        | Dokument je publikován a změny jsou vloženy do živého pracoviště a mohou být vyřízeny externími uživateli. Položky lze publikovat pouze v případě, že byly nejprve vráceny se změnami výběrem **Dokončit úpravy**. |
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Způsoby přidání obsahu](add-manage-content.md)
 

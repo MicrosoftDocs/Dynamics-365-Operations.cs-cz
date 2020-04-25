@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 51200a67a51097c438370866cb9d0ccbebe8392c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143942"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifikování a nasazení nástrojů pro výběr kandidáta
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností.  Avšak uchazeči s dovednostmi, které potřebujete, mohou již být zaměstnáni ve vaší organizaci. Můžete u stávajících zaměstnanců nebo nových uchazečů vyhledávat konkrétní sady dovedností. To umožňuje náborovým pracovníkům rychle shromažďovat a sledovat uchazeče, kteří se uchází o volnou pozici nyní nebo v minulosti, nebo najít potenciální uchazeče ze stávajícího fondu zaměstnanců. Tento záznam úloh vám usnadní zjistit, jak funkce mapování dovedností může pomoci najít pravou osobu pro volnou pozici. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

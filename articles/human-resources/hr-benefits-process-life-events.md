@@ -3,7 +3,7 @@ title: Zpracování životních událostí
 description: Během životního cyklu zaměstnance v aplikaci Microsoft Dynamics 365 Human Resources se může každý zaměstnanec setkat s různými změnami životních událostí.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008366"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229917"
 ---
 # <a name="process-life-events"></a>Zpracování životních událostí
-
-[!include [banner](includes/preview-feature.md)]
 
 Během životního cyklu zaměstnance v aplikaci Microsoft Dynamics 365 Human Resources se může každý zaměstnanec setkat s různými změnami životních událostí. Například sňatek, změna zaměstnání nebo změna závislé osoby / příjemce. Chcete-li používat životní události, je nutné povolit životní události ve formuláři Parametry zaměstnaneckých výhod, nastavit typy životních událostí a nastavit možnosti životních událostí pro typy plánu.
 
@@ -43,10 +41,10 @@ Pokud je například dnes 1. února a na 14. února je naplánována změna prá
 
    | Pole | Popis |
    | --- | --- |
-   | Období registrace | Období registrace pro zpracování životních událostí pro. |
-   | Právnická osoba | Právnická osoba pro zpracování životních událostí. |
-   | Datum životní události | Systém zpracuje všechny události během období registrace, ke kterému dojde do tohoto data. |
-   | Pracovní podproces | Pracovník, pro něhož mají být zpracovány životní události. Pokud toto pole ponecháte prázdné, budou životní události zpracovány pro všechny pracovníky. |
+   | **Období registrace** | Období registrace pro zpracování životních událostí pro. |
+   | **Právnická osoba** | Právnická osoba pro zpracování životních událostí. |
+   | **Datum životní události** | Systém zpracuje všechny události během období registrace, ke kterému dojde do tohoto data. |
+   | **Pracovní podproces** | Pracovník, pro něhož mají být zpracovány životní události. Pokud toto pole ponecháte prázdné, budou životní události zpracovány pro všechny pracovníky. |
 
 3. Chcete-li spustit proces na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
 

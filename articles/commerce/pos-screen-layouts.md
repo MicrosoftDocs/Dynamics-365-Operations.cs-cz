@@ -1,9 +1,9 @@
 ---
-title: Rozložení obrazovky pokladního místa (POS)
+title: Vizuální konfigurace uživatelského rozhraní POS
 description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Commerce.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021920"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261460"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Rozložení obrazovky pokladního místa (POS)
+# <a name="pos-user-interface-visual-configurations"></a>Vizuální konfigurace uživatelského rozhraní POS
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Commerce.
-
-Uživatelské rozhraní POS lze konfigurovat pomocí kombinace vizuálních profilů a rozložení obrazovky, které jsou přiřazeny k obchodům, registračním pokladnám nebo uživatelům.
+Uživatelské rozhraní Retail POS Microsoft Dynamics 365 Commerce lze konfigurovat pomocí kombinace vizuálních profilů a rozložení obrazovky, které jsou přiřazeny k obchodům, registračním pokladnám a uživatelům. V tomto tématu jsou uvedeny další informace o těchto konfiguračních možnostech.
 
 Následující obrázek ukazuje vztahy mezi různými entitami, které tvoří konfigurovatelné aspekty uživatelského rozhraní POS.
 
@@ -40,7 +39,7 @@ Následující obrázek ukazuje vztahy mezi různými entitami, které tvoří k
 
 ## <a name="visual-profile"></a>Vizuální profil
 
-Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, které jsou specifické pro registrační pokladnu a sdílené mezi uživateli. Každý uživatel, který se přihlásí k registrační pokladně, bude mít stejný motiv, barvy a obrázky.
+Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, které jsou specifické pro registrační pokladnu a sdílené mezi uživateli. Každý uživatel, který se přihlásí k registrační pokladně, bude mít stejný motiv, rozvržení, barvy a obrázky.
 
 ![Uvítací obrazovka POS se světlým motivem](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 
 - **Číslo profilu** -číslo profilu je jedinečný identifikátor vizuálního profilu.
 - **Popis** -můžete zadat smysluplný název, který vám pomůže identifikovat správný profil pro danou situaci.
-- **Motiv** -můžete zvolit mezi světlým nebo tmavým motivem aplikace. Motiv ovlivní barvu písma a pozadí napříč aplikací.
+- **Motiv** - můžete zvolit mezi **Světlým** a **Tmavým** motivem aplikace. Motiv ovlivní barvu písma a pozadí napříč aplikací.
 - **Barva zvýraznění** -barva zvýraznění v celém POS slouží k odlišení nebo zvýraznění konkrétních vizuálních prvků, jako jsou dlaždice, příkazová tlačítka a hypertextové odkazy. Tyto prvky typicky slouží k provádění akcí.
-- **Barva záhlaví** – lze konfigurovat barvu záhlaví stránky podle požadavků maloobchodníka týkajících se značky. Tato funkce je k dispozici pouze v aplikaci Retail verze 1611.
-- **Zobrazit datum a čas** – V případě povolení se v záhlaví POS zobrazí aktuální datum a čas.
-- **Pozadí přihlašování** - můžete zadat obrázek pozadí pro přihlašovací obrazovku. Velikost obrázků na pozadí je třeba uchovávat co nejmenší, protože ukládání a načítání velkých souborů může mít vliv na chování a výkon aplikace.
-- **Pozadí aplikace** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud jde o pozadí při přihlašování, velikost souboru by měla být co nejmenší.
+- **Barva záhlaví** – lze konfigurovat barvu záhlaví stránky podle požadavků maloobchodníka týkajících se značky.
+- **Schéma písem** – můžete vybrat mezi **standardním** a **velkým** schématem písem. Schéma písem má vliv na velikost písma v celé aplikaci. Implicitně je vybráno nastavení **Standardní**.
+- **Vždy zobrazit popisky čárových aplikací** – je-li tato možnost zapnuta, text popisku se vždy zobrazí pod tlačítky na panelu aplikace.
+- **Rozvržení** – můžete vybrat mezi rozvržením **uprostřed** a **vpravo**. Rozvržení ovlivňuje zarovnání přihlašovacího pole v přihlašovací obrazovce. Implicitně je vybráno nastavení **Uprostřed**.
+- **Zobrazit datum a čas** – je-li tato možnost zapnuta, bude aktuální datum a čas zobrazeno v záhlaví POS a na přihlašovací obrazovce.
+- **Klávesnice** – můžete vybrat **výchozí nastavení na klávesnici OS** a **zobrazit číselnou klávesnici**, která určuje výchozí klávesnici, která se použije pro vstup na přihlašovací obrazovce. Tato číselná klávesnice je virtuální klávesnicí, která se používá především pro dotyková zařízení. Výchozí nastavení je **výchozí nastavení na klávesnici OS**.
+- **Obrázek loga** – můžete určit obrázek loga, který se zobrazí v přihlašovací obrazovce. Doporučujeme použít obrázek, který má průhledné pozadí. Velikost obrázků je třeba uchovávat co nejmenší, protože ukládání a načítání velkých souborů může mít vliv na chování a výkon aplikace.
+- **Pozadí přihlašování** - můžete zadat obrázek pozadí pro přihlašovací obrazovku. Velikost souboru obrázku na pozadí by měla být co nejmenší.
+- **Pozadí** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud se jedná o obrázky pozadí pro přihlašovací obrazovku, měla by být velikost souboru udržována co nejmenší.
+
+> [!NOTE]
+> Na přihlašovací obrazovce v kompaktním zobrazení se nezobrazuje **správné** rozvržení a datum a čas.
 
 ## <a name="screen-layouts"></a>Rozložení obrazovky
 
-Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na úvodní obrazovce POS a obrazovce **Transakce**.
+Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na **ǘodní** obrazovce POS a obrazovce **Transakce**.
 
 ![Zobrazení rozložení obrazovky POS](../commerce/media/POS-Screen-Layout-View.png)
 

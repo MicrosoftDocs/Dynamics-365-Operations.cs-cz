@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b178f1c6a71b34b70db4dbcd1765117215a4d2a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 91f30d4d1b66e5b4b90f7df67d8f76a95a100338
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021861"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141308"
 ---
 # <a name="define-loyalty-programs"></a> Definování věrnostních programů
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tato procedura popisuje, jak nastavit věrnostní program pomocí dvou věrnostních úrovní. Tato procedura používá data ukázkové společnosti USRT.
 
@@ -73,7 +73,7 @@ Tato procedura popisuje, jak nastavit věrnostní program pomocí dvou věrnostn
 35. Klikněte na možnost Cenové skupiny.
     * Pokud chcete udělit věrnostní slevy odběratelům. je nutné přiřadit jednu nebo více cenových skupin do věrnostního programu a přiřadit cenové skupiny slevám. Je nejvhodnější pro různé entity typů slev nemíchat cenové skupiny.  Například nepoužívejte stejnou cenovou skupinu pro věrnostní slevy a slevu kanálu.  
 36. V poli Cenová skupina kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Propojení Cenové skupiny v horní části stránky je pro věrnostní program. Propojení Cenové skupiny na pevné záložce Úrovně programu je určeno pouze konkrétní věrnostní úroveň.  
+    * Propojení Cenové skupiny v horní části stránky je pro věrnostní program. Propojení Cenové skupiny na záložce s náhledem Úrovně programu je určeno pouze konkrétní věrnostní úroveň.  
 37. Klikněte na odkaz na vybraném řádku v seznamu.
 38. Klikněte na položku Uložit.
 39. Zavřete stránku.

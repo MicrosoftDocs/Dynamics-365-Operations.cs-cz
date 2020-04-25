@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa020f17a6f893fc1360bfdec80b478e6f5dd686
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 90ff703a22c77967bc37e8ec2ccd0e0e4d147b58
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176888"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143965"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Najmutí existujících zaměstnanců prostřednictvím náboru
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci. Tento postup vás provede kroky zařazení existujícího zaměstnance prostřednictvím procesu náboru. V tomto postupu je již nastaven náborový projekt a existující zaměstnanec již odeslal přihlášku týkající se daného náborového projektu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

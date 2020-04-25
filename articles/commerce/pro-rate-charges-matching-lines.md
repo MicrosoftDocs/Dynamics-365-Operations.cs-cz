@@ -3,7 +3,7 @@ title: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prod
 description: Toto téma popisuje další funkce pro výpočet a použití automatických nákladů pro objednávky kanálů Commerce pomocí funkce rozšířených automatických nákladů.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021915"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175124"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
 
@@ -169,3 +169,9 @@ Proto bude pro tento příklad k položce 81334 přiřazeno přepravné 5,62 USD
 ![Poměrně rozdělené náklady na řádku prodeje pro položku 81334](media/proratedlinecharge.png)
 
 Pokud je tento způsob výpočtu použit ve scénáři částečného vrácení, je-li kód nákladů vratný, bude vrácena pouze část nákladů, která je tomuto řádku přidělena.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Omnikanálové rozšířené automatické náklady](omni-auto-charges.md)
+
+[Povolení a konfigurace automatických nákladů podle kanálu](auto-charges-by-channel.md)

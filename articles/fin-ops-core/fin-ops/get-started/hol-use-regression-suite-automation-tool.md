@@ -1,7 +1,7 @@
 ---
 title: Použití kurzu pro nástroj Regression Suite Automation Tool
 description: Toto téma ukazuje, jak používat Regression Suite Automation Tool (RSAT). Popisuje různé funkce a poskytuje příklady, které používají pokročilé skriptování.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070813"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248729"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Použití kurzu pro Regression Suite Automation Tool
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070813"
 > [!NOTE]
 > Pomocí nástrojů internetového prohlížeče můžete tuto stránku stáhnout a uložit ve formátu PDF. 
 
-Tento kurz prochází některými rozšířenými funkcemi nástroje Regression Suite Automation Tool (RSAT), zahrnuje přiřazení ukázky a popisuje strategii a klíčové body učení.
+Tento kurz prochází některými rozšířenými funkcemi nástroje Regression Suite Automation Tool (RSAT), zahrnuje přiřazení ukázky a popisuje strategii a klíčové body učení. 
 
-## <a name="features-of-rsattask-recorder"></a>Funkce nástroje RSAT/Záznamník úloh
+## <a name="notable-features-of-rsat-and-task-recorder"></a>Významné funkce RSAT a Záznamník úloh
 
 ### <a name="validate-a-field-value"></a>Ověření hodnoty pole
 
-Další informace o této funkci naleznete v tématu [Vytvoření nového záznamu úkolu, který má funkci ověření](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### <a name="saved-variable"></a>Uložená proměnná
-
-Další informace o této funkci naleznete v tématu [Úprava existujícího záznamu úkolu pro vytvoření uložené proměnné](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Odvozený testovací případ
-
-1. Spusťte Regression Suite Automation Tool (RSAT) a vyberte oba testovací případy, které jste vytvořili v [kurzu Nastavení a instalace nástroje Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
-2. Vyberte **Nový \> Odložit testovací případ**.
-
-    ![Vytvoření příkazu odvozeného testovacího případu v nabídce Nový](./media/use_rsa_tool_01.png)
-
-3. Zobrazí se zpráva oznamující, že pro každý vybraný testovací případ v aktuální sadě testů bude vytvořen odvozený testovací případ a že každý odvozený testovací případ bude mít svou vlastní kopii souboru parametrů aplikace Excel. Vyberte **OK**.
-
-    > [!NOTE]
-    > Spustíte-li odvozený testovací případ, použije se záznam úloh jeho nadřazeného testovacího případu a jeho vlastní kopie souboru parametrů aplikace Excel. Tímto způsobem lze spustit stejný test s jinými parametry, aniž by bylo nutné udržovat více než jeden záznam úloh. Odvozený testovací případ nemusí být součástí stejné sady testů jako nadřazený testovací případ.
-
-    ![Okno se zprávou](./media/use_rsa_tool_02.png)
-
-    Jsou vytvořeny dva další odvozené testovací případy a je pro ně zaškrtnuto políčko **Odvozený?**.
-
-    ![Vytvořené odvozené testovací případy](./media/use_rsa_tool_03.png)
-
-    Odvozený testovací případ je automaticky vytvořen v Azure DevOps. Jedná se o podřízenou položku testovacího případu **Vytvoření nového produktu** a je označen speciálním klíčovým slovem: **RSAT:DerivedTestSteps**. Tyto testovací případy se také automaticky přidají do plánu testování v Azure DevOps.
-
-    ![Klíčové slovo RSAT: DerivedTestSteps](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Pokud z jakéhokoliv důvodu nejsou vytvořené odvozené testovací případy ve správném pořadí, přejděte do Azure DevOps a přeuspořádejte testovací případy v sadě testů, aby je mohl RSAT spustit ve správném pořadí.
-
-4. Vyberte odvozené testovací případy a poté výběrem možnosti **Upravit** otevřete odpovídající soubory parametrů aplikace Excel.
-5. Upravte tyto soubory parametrů aplikace Excel stejným způsobem, jakým jste upravili nadřazené soubory. Jinými slovy, ujistěte se, že je ID produktu nastaveno tak, aby bylo automaticky vygenerováno. Rovněž se ujistěte, že uložená proměnná je zkopírována do příslušných polí.
-6. Na kartě **Obecné** v obou souborech parametrů aplikace Excel aktualizujte hodnotu pole **Společnost** na **USSI**, takže odvozené testovací případy se spustí proti jiné právnické osobě, než je nadřazený testovací případ. Chcete-li testovací případy spustit proti konkrétnímu uživateli (nebo s rolí přidruženou k určitému uživateli), můžete aktualizovat hodnotu pole **Testovací uživatel**.
-7. Vyberte **Spustit** a ověřte, že je produkt vytvořen v právnické osobě USMF i v právnické osobě USSI.
-
-### <a name="validate-notifications"></a>Ověření oznámení
-
-Tuto funkci lze použít k ověření, zda došlo k akci. Je-li například vytvořena, odhadnuta a následně zahájena výrobní zakázka, aplikace zobrazí zprávu „Výroba - Zahájení“ a upozorní vás, že výrobní zakázka byla zahájena.
-
-![Oznámení Výroba - Zahájení](./media/use_rsa_tool_05.png)
-
-Tuto zprávu můžete ověřit prostřednictvím RSAT zadáním textu zprávy na kartě **Ověření zprávy** souboru parametrů aplikace Excel pro příslušný záznam.
-
-![Karta Ověření zprávy](./media/use_rsa_tool_06.png)
-
-Po spuštění testovacího případu se zpráva v souboru parametrů aplikace Excel porovná se zprávou zobrazenou. Pokud se zprávy neshodují, testovací případ se nezdaří.
-
-> [!NOTE]
-> Na kartě **Ověření zprávy** v souboru parametrů aplikace Excel můžete zadat více než jednu zprávu. Zprávy mohou být také chybové nebo varovné namísto informačních zpráv.
-
-### <a name="validate-values-by-using-operators"></a>Ověření hodnot pomocí operátorů
-
-V předchozích verzích RSAT bylo možné ověřit hodnoty pouze v případě, že se kontrolní hodnota rovnala očekávané hodnotě. Nová funkce umožňuje ověřit, že proměnná není rovna, je menší než nebo je větší než zadaná hodnota.
-
-- Chcete-li použít tuto funkci, otevřete soubor **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu v následujícím prvku z **false** na **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    V souboru parametrů aplikace Excel se zobrazí nový **Operátor**.
-
-    > [!NOTE]
-    > Pokud používáte starší verzi nástrojů RSAT, musíte vygenerovat nové soubory parametrů aplikace Excel.
-
-    ![Pole Operátor](./media/use_rsa_tool_07.png)
+Nástroje RSAT umožňují do testovacího případu zahrnout kroky ověření pro ověření očekávaných hodnot. Další informace o této funkci naleznete v článku [Ověření očekávaných hodnot](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 V následujícím příkladu je ukázáno, jak lze pomocí této funkce ověřit, zda je množství na skladě větší než 0 (nula).
 
@@ -115,7 +49,7 @@ V následujícím příkladu je ukázáno, jak lze pomocí této funkce ověřit
     5. Označte na seznamu vybraný řádek.
     6. Ověřte, zda hodnota pole **Celkem k dispozici** je **411.0000000000000000**.
 
-2. Uložte záznam úloh do knihovny BPM v LCS a synchronizujte ho do Azure DevOps.
+2. Uložte záznam úlohy a připojte jej k testovacímu případu v Azure Devops.
 3. Přidejte testovací případ do testovacího plánu a načtěte testovací případ do RSAT.
 4. Otevřete soubor parametrů aplikace Excel. Na kartě **InventOnhandItem** se zobrazí část **Ověřit InventOnhandItem**, která obsahuje pole **Operátor**.
 
@@ -130,28 +64,32 @@ V následujícím příkladu je ukázáno, jak lze pomocí této funkce ověřit
 
 Nyní, pokud je hodnota pole **Celkem k dispozici** pro určitou položku ve skladu větší než 0 (nula), testy budou úspěšné, bez ohledu na skutečnou hodnotu zásob na skladě.
 
-### <a name="generator-logs"></a>Protokoly generátoru
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Uložené proměnné a zřetězení testovacích případů
 
-Tato funkce vytvoří složku obsahující protokoly testovacích případů, které byly spuštěny.
+Jednou z klíčových funkcí nástroje RSAT je zřetězení testovacích případů, tj. schopnost testu předat hodnoty jiným testům. Další informace naleznete v článku [Kopie proměnných pro zřetězení testovacích případů](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- Chcete-li použít tuto funkci, otevřete soubor **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu v následujícím prvku z **false** na **true**.
+### <a name="derived-test-case"></a>Odvozený testovací případ
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+RSAT umožňuje používat stejný Záznam úloh s více testovacími případy, který umožňuje spuštění úlohy s různými konfiguracemi dat. Další informace naleznete v článku [Odvozené testovací případy](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md).
 
-Po spuštění testovacích případů můžete vyhledat soubory protokolů ve složce **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+### <a name="validate-notifications-and-messages"></a>Ověřit oznámení a zprávy
 
-![Složka GeneratorLogs](./media/use_rsa_tool_10.png)
+Tuto funkci lze použít k ověření, zda došlo k akci. Je-li například vytvořena, odhadnuta a následně zahájena výrobní zakázka, aplikace zobrazí zprávu „Výroba - Zahájení“ a upozorní vás, že výrobní zakázka byla zahájena.
+
+![Oznámení Výroba - Zahájení](./media/use_rsa_tool_05.png)
+
+Tuto zprávu můžete ověřit prostřednictvím RSAT zadáním textu zprávy na kartě **Ověření zprávy** souboru parametrů aplikace Excel pro příslušný záznam.
+
+![Karta Ověření zprávy](./media/use_rsa_tool_06.png)
+
+Po spuštění testovacího případu se zpráva v souboru parametrů aplikace Excel porovná se zprávou zobrazenou. Pokud se zprávy neshodují, testovací případ se nezdaří.
 
 > [!NOTE]
-> Pokud existovaly testovací případy před změnou hodnoty v souboru. config, nebudou protokoly generovány pro tyto testovací případy, dokud nevytvoříte nové soubory spuštění testu.
-> 
-> ![Příkaz Generovat pouze soubory spuštění testu v nabídce Nový](./media/use_rsa_tool_11.png)
+> Na kartě **Ověření zprávy** v souboru parametrů aplikace Excel můžete zadat více než jednu zprávu. Zprávy mohou být také chybové nebo varovné namísto informačních zpráv.
 
 ### <a name="snapshot"></a>Snímek
 
-Tato funkce pořídí snímky obrazovek kroků, které byly provedeny při záznamu úloh.
+Tato funkce pořídí snímky obrazovek kroků, které byly provedeny při záznamu úloh. Je užitečný pro účely auditu nebo ladění.
 
 - Chcete-li použít tuto funkci, otevřete soubor **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu následujícího prvku z **false** na **true**.
 
@@ -159,13 +97,7 @@ Tato funkce pořídí snímky obrazovek kroků, které byly provedeny při zázn
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Pro každý spuštěný testovací případ se vytvoří samostatná složka pod Under **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**.
-
-![Složka snímku pro testovací případ](./media/use_rsa_tool_12.png)
-
-V každé z těchto složek můžete vyhledat snímky kroků, které byly provedeny při spuštění testovacích případů.
-
-![Soubory snímků](./media/use_rsa_tool_13.png)
+Když spustíte testovací případ, RSAT bude generovat snímky (obrázky) kroků ve složce přehrávání v testovacích případech v pracovním adresáři. Používáte-li starší verzi nástroje RSAT, jsou obrázky uloženy do **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, pro každý spuštěný testovací případ je vytvořena samostatná složka.
 
 ## <a name="assignment"></a>Přiřazení
 
@@ -183,7 +115,7 @@ Následující ilustrace znázorňuje tok pro tento scénář.
 
 ![Tok ukázkového scénáře](./media/use_rsa_tool_14.png)
 
-Následující ilustrace znázorňuje obchodní procesy pro tento scénář v RSAT.
+Na následujícím obrázku je znázorněna hierarchie obchodních procesů pro tento scénář v modulu pro Modelování obchodních procesů LCS.
 
 ![Obchodní procesy pro ukázkový scénář](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné tes
 
 
 #### <a name="help"></a>nápověda
-Totožný s [?](####?) příkaz
+Totožný s [?](#section) příkaz
 
 
 #### <a name="list"></a>seznamu
@@ -512,6 +444,8 @@ Zobrazení dvou způsobů vyvolání této aplikace: jeden s použitím souboru 
 
 ### <a name="windows-powershell-examples"></a>Příklad Windows PowerShell
 
+[!IMPORTANT] Níže uvedené ukázkové skripty jsou poskytovány pro ilustrační účely a nejsou podporovány společností Microsoft.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Spuštění testovacího případu ve smyčce
 
 Máte testovací skript, který vytvoří nového odběratele. Pomocí skriptování lze tento testovací případ spustit ve smyčce tak, že před spuštěním každé iterace náhodně použijete následující data:
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

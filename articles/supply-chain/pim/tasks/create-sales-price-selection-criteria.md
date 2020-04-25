@@ -2,7 +2,7 @@
 title: Vytvoření kritérií pro výběr prodejní ceny
 description: Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro modely prodejní ceny podle atributů.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,22 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d1385a83da5b6448a9c753d7469979796043b60
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844482"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203761"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Vytvoření kritérií pro výběr prodejní ceny
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro modely prodejní ceny podle atributů. Spuštění této procedury vyžaduje, aby byl k dispozici nejméně jeden model prodejní ceny. Tento příklad používá cenový model pro model prodejních cen řešení Reproduktor ve společnosti ukázkových dat USMF. Manažer produktu obvykle používá tuto proceduru.
 
@@ -33,10 +33,10 @@ Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro mod
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Přidání nového kritéria pro existující model prodejní ceny
 1. Klepněte na Definice modelu varianty produktu.
 2. Klepněte na Modely konfigurace produktu.
-3. V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklepejte na odkaz pro název modelu.
+3. V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklikejte na odkaz pro název modelu.
 4. V podokně akcí klepněte na možnost Model.
 5. Klikněte na Kritéria cenového modelu.
-6. Klikněte na položku Nová.
+6. Klikněte na možnost Nový.
 7. Do pole Název zadejte hodnotu Skupina odběratelů 10.
     * Název kritéria cenového modelu se používá na pomoc při identifikaci základních kritérií výběru.  
 8. V poli Cenový model zadejte nebo vyberte hodnotu.

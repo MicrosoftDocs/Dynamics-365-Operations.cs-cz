@@ -3,7 +3,7 @@ title: Vytvoření typů plánu
 description: Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d9bb490326c6dbfafa0f186cd05185ac01bad30
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 06a36f9f3fef54e7e06d616c9179374db4ce7115
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092354"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229687"
 ---
 # <a name="create-plan-types"></a>Vytvoření typů plánu
-
-[!include [banner](includes/preview-feature.md)]
 
 Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu. Například typ základního životního plánu by měl mít kód typu plánu Životní, protože se jedná o druh plánu životního pojištění a musí vyhovovat pravidlům stanoveným pro kód typu plánu životního pojištění. Jiným typem plánu může být Doplňkové životní, rovněž s kódem typu plánu Životní.
 
@@ -45,23 +43,23 @@ Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definov�
 
    | Pole | Popis |
    | --- | --- |
-   | Typ plánu | Jedinečný název, který identifikuje typ plánu. |
-   | Popis | Popis typu plánu. |
-   | Kód typu plánu | Z rozevíracího seznamu hodnot vyberte kód typu plánu. V seznamu kódů typu plánu se zobrazí všechny typy plánů, které jsou podporovány v aktuální verzi. |
-   | Souběžná registrace | Určuje, zda může zaměstnanec registrovat více plánů zaměstnaneckých výhod stejného typu nebo pouze jeden plán zaměstnaneckých výhod na typ plánu. |
-   | Typ kontaktu | Určuje úlohu osobního kontaktu. Hodnoty jsou prázdné, závislá osoba a příjemce. Typ kontaktu lze ponechat prázdný, pokud jeho typ plánu nevyžaduje závislou osobu nebo příjemce na základě možnosti pokrytí. |
+   | **Typ plánu** | Jedinečný název, který identifikuje typ plánu. |
+   | **Popis** | Popis typu plánu. |
+   | **Kód typu plánu** | Z rozevíracího seznamu hodnot vyberte kód typu plánu. V seznamu kódů typu plánu se zobrazí všechny typy plánů, které jsou podporovány v aktuální verzi. |
+   | **Souběžná registrace** | Určuje, zda může zaměstnanec registrovat více plánů zaměstnaneckých výhod stejného typu nebo pouze jeden plán zaměstnaneckých výhod na typ plánu. |
+   | **Typ kontaktu** | Určuje úlohu osobního kontaktu. Hodnoty jsou prázdné, závislá osoba a příjemce. **Typ kontaktu** lze ponechat prázdný, pokud jeho typ plánu nevyžaduje závislou osobu nebo příjemce na základě možnosti pokrytí. |
 
 4. Chcete-li konfigurovat možnosti události životního cyklu, vyberte možnost **Akce** a pak vyberte možnost **Možnosti události životního cyklu**. Zadejte hodnoty pro zbývající pole:
 
    | Pole | Popis |
    | --- | --- |
-   | Typ plánu | Typ plánu pro konfiguraci možností životní události. |
-   | ID typu životních událostí | ID typu životní události. |
-   | Povolit zrušení | Určuje, zda zaměstnanec může během životní události zrušit plán zaměstnaneckých výhod. |
-   |Změnit možnost pokrytí | Určuje, zda zaměstnanec může během životní události změnit možnosti pokrytí. |
-   | Změnit na nový plán | Určuje, zda zaměstnanec může během životní události změnit plány. |
-   | Automaticky zrušit plán |Určuje, zda má být během životní události plán automaticky zrušen. |
-   | Automaticky znovu otevřít kontrolu způsobilosti | Určuje, zda se má automaticky znovu otevřít kontrola způsobilosti registrace k zaměstnaneckým výhodám během životní události. |
-   | Časový úsek pro vykazování | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
+   | **Typ plánu** | Typ plánu pro konfiguraci možností životní události. |
+   | **ID typu životních událostí** | ID typu životní události. |
+   | **Povolit zrušení** | Určuje, zda zaměstnanec může během životní události zrušit plán zaměstnaneckých výhod. |
+   | **Změnit možnost pokrytí** | Určuje, zda zaměstnanec může během životní události změnit možnosti pokrytí. |
+   | **Změnit na nový plán** | Určuje, zda zaměstnanec může během životní události změnit plány. |
+   | **Automaticky zrušit plán** | Určuje, zda má být během životní události plán automaticky zrušen. |
+   | **Automaticky znovu otevřít kontrolu způsobilosti** | Určuje, zda se má automaticky znovu otevřít kontrola způsobilosti registrace k zaměstnaneckým výhodám během životní události. |
+   | **Časový úsek pro vykazování** | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
 
 5. Zvolte **Uložit**. 

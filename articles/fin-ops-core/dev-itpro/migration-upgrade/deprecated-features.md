@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce v předchozích verzích
 description: Toto téma popisuje funkce, které byly odebrány, nebo byly plánovány pro odebrání z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124559"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225121"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -263,11 +263,11 @@ Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem model
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole. Tento problém je v současné době kategorizován jako *varování kompilátoru*, nikoli jako *chyba*, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému. Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS). Chcete-li vyřešit tento problém:<br><br>1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.<br><br>2. Proveďte kompilaci znovu.<br><br>3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění. |
-| **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti.  |
-| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Důvod pro zrušení/odstranění** | Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole. Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS). Tento problém je v současné době kategorizován jako *varování kompilátoru*, nikoli jako *chyba*, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému. Chcete-li vyřešit tento problém:<br><br>1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.<br><br>2. Proveďte kompilaci znovu.<br><br>3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění. |
+| **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci. Plánujeme to v aktualizaci Platform Update 30. |
+| **Stav**                         | Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci. Tato změna je určena pro aktualizace platformy pro verze 10.0.11 aplikací Finance and Operations. |
 
 #### <a name="complete-list"></a>Úplný seznam
 Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).

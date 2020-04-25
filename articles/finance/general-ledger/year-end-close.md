@@ -3,7 +3,7 @@ title: Roční uzávěrka
 description: Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175322"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259764"
 ---
 # <a name="year-end-close"></a>Roční uzávěrka
 
@@ -74,7 +74,7 @@ Možnost **Převést dimenze rozvahy** slouží k definování, zda finanční d
 Proces roční uzávěrky neodpovídá účetním strukturám. Důvodem je skutečnost, že účetní struktury se mohou změnit během fiskálního roku a z důvodu těchto změn není vždy možné identifikovat příslušnou účetní strukturu.  Při vytváření počátečních transakcí budou zůstatky posunuty dopředu s finančními dimenzemi, jak to je definováno v šabloně roční uzávěrky. Položky počátečních zůstatků mohou zahrnovat finanční dimenze, které již nejsou v aktuální účetní struktuře, a kombinace segmentů, které již nejsou platné v aktuální účetní struktuře. Pokud vaše organizace chce vyloučit finanční dimenzi pro počáteční zůstatek pozdržených příjmů, nastavte finanční dimenzi na hodnotu **Zavřít jedno** a ponechejte pole hodnoty dimenze prázdné.
 
 ## <a name="run-the-year-end-close-process"></a>Spuštění procesu roční uzávěrky
-Po vytvoření šablon roční uzávěrky je možné proces roční uzávěrky zahájit zvolením možnosti **Spustit fiskální rok** v podokně akcí. Vyberte buď všechny právnické osoby, nebo jejich podmnožinu ze šablony, pro kterou chcete roční uzávěrku spustit. Při spuštění roční uzávěrky v určitém fiskálním roce poprvé pravděpodobně zvolíte všechny právnické osoby, k vytvoření počátečních zůstatků pro všechny právnické osoby. Pokud budete spouštět roční uzávěrku znovu, můžete proces spustit pouze pro právnické osoby, pro které byly zaúčtovány položky úprav. 
+Po vytvoření šablon roční uzávěrky je možné proces roční uzávěrky zahájit zvolením možnosti **Uzavřít fiskální rok** v podokně akcí. Vyberte buď všechny právnické osoby, nebo jejich podmnožinu ze šablony, pro kterou chcete roční uzávěrku spustit. Při spuštění roční uzávěrky v určitém fiskálním roce poprvé pravděpodobně zvolíte všechny právnické osoby, k vytvoření počátečních zůstatků pro všechny právnické osoby. Pokud budete spouštět roční uzávěrku znovu, můžete proces spustit pouze pro právnické osoby, pro které byly zaúčtovány položky úprav. 
 
 Vyberte fiskální rok, pro který chcete proces roční uzávěrky spustit. Pokud existuje více období uzávěrky pro poslední období fiskálního roku, pole **Název období** bude k dispozici, abyste mohli vybrat, které období uzávěrky má zaúčtovat uzávěrkovou transakci, jestliže je v nastavení určeno, že se má vytvořit uzávěrková transakce. 
 

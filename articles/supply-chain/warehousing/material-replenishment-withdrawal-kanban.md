@@ -2,7 +2,7 @@
 title: Doplnění s kanbany odběru
 description: Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559824"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205545"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -50,7 +50,7 @@ Následující scénář zobrazuje systém doplňování na vyžádání, kde si
 7.  Sklad materiálu
 8.  Výrobní sklad
 
-V tomto scénáři výrobní proces (4) spotřebovává materiál ze vstupního místa výroby (3) ve výrobním skladu (8). Když se manipulační jednotka materiálu (kanban) spotřebovává, je registrována jako prázdná. Signál doplnění je vytvořen pro původní položku a je vytvořen nový kanban (1). V takovém případě původ položky sestává ze skladových míst ve skladu materiálu [7]. Materiál pro kanban je vydán a umístěn do skladovacího místa (2) ve stejném skladu. Při vyskladnění je materiál připraven pro převod z místa 2 do vstupního místa výroby (3) ve výrobním skladu (8).
+V tomto scénáři výrobní proces (4) spotřebovává materiál ze vstupního místa výroby (3) ve výrobním skladu (8). Když se manipulační jednotka materiálu (kanban) spotřebovává, je registrována jako prázdná. Signál doplnění je vytvořen pro původní položku a je vytvořen nový kanban (1). V takovém případě původ položky sestává ze skladových míst ve skladu materiálu (7). Materiál pro kanban je vydán a umístěn do skladovacího místa (2) ve stejném skladu. Při vyskladnění je materiál připraven pro převod z místa 2 do vstupního místa výroby (3) ve výrobním skladu (8).
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurace práce ve skladu pro vyzvednutí kanban u kanbanového odběru
 

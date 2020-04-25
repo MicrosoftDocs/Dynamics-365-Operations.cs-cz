@@ -3,7 +3,7 @@ title: Seznam funkcí ER v kategorii seznamu
 description: Toto téma obsahuje informace o funkcích seznamu, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9461d0afd75f421cf03ddefed5dac379f1369ec7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917757"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201036"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Seznam funkcí ER v kategorii seznamu
 
@@ -46,6 +46,7 @@ Funkce seznamu elektronického výkaznictví (ER) lze používat k extrahování
 | [Index](er-functions-list-index.md)                       | Tato funkce vrací hodnotu typu *kontejner (záznam)*, která je vybrána pomocí zadaného číselného indexu v zadaném seznamu. Pokud je index mimo rozsah záznamů v zadaném seznamu, vyvolá tato funkce výjimku. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Tato funkce vrací *logickou hodnotu* **TRUE**, pokud zadaný seznam neobsahuje žádné záznamy. V opačném případě výraz vrátí *logickou hodnotu* **FALSE**. |
 | [Seznam](er-functions-list-list.md)                         | Tato funkce vrací hodnotu typu *seznam záznamů*, která se skládá z nového seznamu záznamů vytvořeného ze zadaných argumentů.|
+| [ListJoin](er-functions-list-listjoin.md)                 | Tato funkce vrací hodnotu typu *seznam záznamů*, která představuje nový spojený seznam záznamů vytvořený ze zadaných argumentů.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Tato funkce vrací hodnotu typu *seznam záznamů*, která je vytvořena na základě struktury zadaného argumentu typu *výčet* nebo *kontejner (záznam)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Tato funkce vrací hodnotu typu *seznam záznamů*, která obsahuje pouze první záznam zadaného seznamu.|
 | [OrderBy](er-functions-list-orderby.md)                   | Tato funkce vrací vrátí zadaný seznam jako hodnotu typu *seznam záznamů* poté, co byl seřazen podle zadaných argumentů. Tyto argumenty lze definovat jako výrazy. |

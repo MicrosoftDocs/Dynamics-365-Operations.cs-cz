@@ -3,7 +3,7 @@ title: Povolení ADLS v prostředí Dynamics 365 Commerce
 description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage (ADLS) pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154429"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259741"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Povolení ADLS v prostředí Dynamics 365 Commerce
 
@@ -48,7 +48,8 @@ Další informace o ADLS naleznete v [oficiální dokumentaci ADLS](https://azur
   
 ## <a name="configuration-steps"></a>Kroky konfigurace
 
-V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení ADLS v prostředí.
+V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení ADLS v prostředí ve vztahu k doporučením produktu.
+Podrobnější přehled kroků potřebných k povolení ADLS naleznete v tématu [Nastavení úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>Povolení ADLS v prostředí
 
@@ -89,7 +90,9 @@ ADLS je nyní nakonfigurováno pro prostředí.
 
 Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporučení produktu a individuální nastavení](enable-product-recommendations.md) pro dané prostředí.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
+
+[Zpřístupnit úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
 
 [Přehled doporučení produktu](product-recommendations.md)
 
@@ -110,5 +113,3 @@ Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporuč
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
-
-

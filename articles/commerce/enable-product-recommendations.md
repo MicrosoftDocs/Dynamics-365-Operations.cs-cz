@@ -3,7 +3,7 @@ title: Povolit doporučení produktu
 description: V tomto tématu je vysvětleno, jak vytvořit doporučení produktu založená na strojovém učení na základě umělé inteligence (AI-ML) pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154406"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259787"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -34,12 +34,32 @@ V tomto tématu je vysvětleno, jak vytvořit doporučení produktu založená n
 
 ## <a name="recommendations-pre-check"></a>Předběžná kontrola doporučení
 
-Před povolením berte prosím na vědomí, že doporučení produktů jsou podporována pouze u zákazníků Commerce, kteří migrovali své úložiště pomocí Azure Data Lake Storage (ADLS). 
+Před povolením berte na vědomí, že doporučení produktů jsou podporována pouze u zákazníků Commerce, kteří migrovali své úložiště pomocí Azure Data Lake Storage (ADLS). 
 
-Postup při povolení ADLS naleznete v tématu [Jak povolit ADLS v prostředí Dynamics 365](enable-ADLS-environment.md).
+Před povolením doporučení musí být v administravě povoleny následující konfigurace:
 
-Dále zkontrolujte, zda byly povoleny ukazatele RetailSale. Další informace o tomto procesu nastavení naleznete [zde.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+1. Ujistěte se, že ADLS bylo zakoupeno a úspěšně ověřeno v prostředí. Další informace naleznete v tématu [Ujistěte se, že ADLS bylo zakoupeno a úspěšně ověřeno v prostředí](enable-ADLS-environment.md).
+2. Zkontrolujte, zda byla aktualizace úložiště entity automatizovaná. Další informace naleznete v tématu [Zajistěte, aby aktualizace úložiště entity byla automatizovaná](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Potvrďte, že konfigurace identity Azure AD obsahuje záznam pro doporučení. Další informace o tom, jak provést tuto akci, je následující.
 
+Dále zkontrolujte, zda byly povoleny ukazatele RetailSale. Další informace o tomto nastavení procesu naleznete v tématu [Práce s opatřeními](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+
+## <a name="azure-ad-identity-configuration"></a>Konfigurace identity Azure AD
+
+Tento krok je vyžadován pro všechny zákazníky, kteří provozují infrastrukturu jako konfiguraci služby (IaaS). U zákazníků, kteří provozují prostředky v rámci služby (SF), by tento krok měl být automaticky a doporučujeme ověřit, zda je nastavení nakonfigurováno očekávaným způsobem.
+
+### <a name="setup"></a>Nastavení
+
+1. V administrativě vyhledejte stránku **Aplikace Azure Active Directory**.
+2. Ověřte, zda existuje položka pro "RecommendationSystemApplication-1".
+
+Pokud položka neexistuje, přidejte novou položku s následujícími informacemi:
+
+- **ID klienta** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Název** -RecommendationSystemApplication-1
+- **ID uživatele** – RetailServiceAccount
+
+Uložit a zavřít stránku. 
 
 ## <a name="turn-on-recommendations"></a>Zapnutí doporučení
 
@@ -49,10 +69,10 @@ Chcete-li zapnout doporučení produktu, postupujte následujícím způsobem.
 1. V seznamu sdílených parametrů maloobchodního prodeje vyberte **Seznamy doporučení**.
 1. Nastavte možnost **Povolit doporučení** na **Ano**.
 
-![Povolení doporučení produktu](./media/enableproductrecommendations.png)
+![Zapnutí doporučení](./media/enablepersonalization.png)
 
 > [!NOTE]
-> Tento postup spustí proces generování seznamů doporučení produktů. Před tím, než jsou seznamy k dispozici, může uběhnou až několik hodin. Zobrazí se na pokladním místě (POS) nebo v řešení Dynamics 365 Commerce.
+> Tento postup spustí proces generování seznamů doporučení produktů. Mže trvat až několik hodin, než jsou seznamy k dispozici a lze je zobrazit na pokladním místě (POS) nebo v řešení Dynamics 365 Commerce.
 
 ## <a name="configure-recommendation-list-parameters"></a>Konfigurace parametrů seznamu doporučení
 
@@ -64,7 +84,9 @@ Po povolení doporučení v administrativě Commerce je nutné přidat panel dop
 
 ## <a name="enable-personalized-recommendations"></a>Povolení přizpůsobených doporučení
 
-Další informace o získání přizpůsobených doporučení získáte v tématu [Povolení přizpůsobených doporučení produktů](personalized-recommendations.md).
+V aplikaci Dynamics 365 Commerce mohou maloobchodní prodejci vytvářet přizpůsobená doporučení k produktu (označované také jako individuální nastavení). Tímto způsobem lze přičlenit individuální doporučení do online prostředí zákazníků a na pokladním místě. Je-li funkce přizpůsobení zapnuta, může systém přidružit nákup a informace o produktu uživatele ke generování doporučení pro jednotlivé produkty.
+
+Další informace o přizpůsobených doporučení získáte v tématu [Povolení přizpůsobených doporučení](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 

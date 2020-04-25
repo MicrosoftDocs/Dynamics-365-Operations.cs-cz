@@ -3,7 +3,7 @@ title: Omnikanálové rozšířené automatické náklady
 description: Toto téma popisuje funkce pro správu dalších nákladů objednávky pro objednávky velkoobchodní sítě pomocí funkcí rozšířených automatických nákladů.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021933"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175147"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o konfiguraci a nasazení funkce rozšířených automatických nákladů, která je k dispozici v aplikaci Dynamics 365 for Retail verze 10.0.
+Toto téma obsahuje informace o konfiguraci a nasazení funkce rozšířených automatických nákladů, které jsou k dispozici v aplikaci Dynamics 365 for Retail verze 10.0.
 
 Pokud jsou funkce rozšířených automatických nákladů povoleny, objednávky vytvořené v libovolném podporovaném kanálu Commerce (pokladní místo (POS), kontaktní středisko a online) mohou využít konfigurací [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) definovaných v aplikaci ERP pro související náklady záhlaví a úrovně řádku.
 
@@ -77,7 +77,7 @@ V této části jsou uvedeny ukázkové příklady použití, které vám pomoho
 
 #### <a name="use-case-scenario"></a>Příklad použití
 
-Maloobchodní prodejce chce automaticky přidávat náklady za dopravné při vytváření transakcí v jakémkoli velkoobchodním kanálu, který vyžaduje dodávku produktů zákazníkovi. Prodejce nabízí 2 způsoby dodání: po zemi a letecky. Pokud zákazník zvolí dodání po zemi a hodnota objednávky je menší než 100 USD, prodejce chce zpoplatnit odběratele za dopravné částkou 10 USD. Pokud je objednávka vyšší než 100 USD a zákazník si zvolí pozemní dopravu, zákazníkovi nebudou účtovány žádné dodatečné poplatky za dopravu. Pokud si zákazník zvolí způsob dodávky letecky pro všechny objednávky, bez ohledu na jejich celkovou hodnotu, bude účtován poplatek za dopravu ve výši 20 USD.
+Maloobchodní prodejce chce automaticky přidávat náklady za dopravné při vytváření transakcí v jakémkoli velkoobchodním kanálu, který vyžaduje dodávku produktů zákazníkovi. Prodejce nabízí dva způsoby dodání: po zemi a letecky. Pokud zákazník zvolí dodání po zemi a hodnota objednávky je menší než 100 USD, prodejce chce zpoplatnit odběratele za dopravné částkou 10 USD. Pokud je objednávka vyšší než 100 USD a zákazník si zvolí pozemní dopravu, zákazníkovi nebudou účtovány žádné dodatečné poplatky za dopravu. Pokud si zákazník zvolí způsob dodávky letecky pro všechny objednávky, bez ohledu na jejich celkovou hodnotu, bude účtován poplatek za dopravu ve výši 20 USD.
 
 #### <a name="setup-and-configuration"></a>Instalace a konfigurace
 
@@ -157,7 +157,7 @@ Tento proces lze použít v kontaktním středisku pomocí stávající funkce *
 
 #### <a name="use-case-scenario"></a>Příklad použití
 
-Odběratel požádal, aby 2 z 5 položek na jeho prodejní objednávce byly dárkově zabaleny. Prodejce poskytuje tuto volitelnou službu za poplatek 2 USD za položku. Osoba přebírající objednávku bude muset přidat tyto poplatky ke konkrétním položkám, které mají být dárkově zabaleny.
+Odběratel požádal, aby dvě z pěti položek na jeho prodejní objednávce byly dárkově zabaleny. Prodejce poskytuje tuto volitelnou službu za poplatek 2 USD za položku. Osoba přebírající objednávku bude muset přidat tyto poplatky ke konkrétním položkám, které mají být dárkově zabaleny.
 
 #### <a name="setup-and-configuration"></a>Instalace a konfigurace
 
@@ -215,3 +215,10 @@ Některé organizace mohou chtít počkat, než uživatel dokončí přidání v
 ### <a name="charges-override-reports"></a>Sestavy přepsání nákladů
 
 Pokud uživatelé ručně přepíší vypočtené náklady nebo přidají ruční náklady do transakce, budou tato data dostupná pro audit v sestavě **Historie přespání nákladů**. K sestavě lze získat přístup z: **Maloobchod a velkoobchod \> Dotazy a sestavy \> Historie přepsání nákladů**. Je důležité poznamenat, že data potřebná pro tuto sestavu se importují z databáze maloobchodní sítě do HQ prostřednictvím úloh plánování distribuce "P". Informace o přepsáních právě provedených v POS proto nemusí být okamžitě k dispozici v této sestavě, dokud tato úloha nenahraje data transakce obchodu do HQ.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Povolení a konfigurace automatických nákladů podle kanálu](auto-charges-by-channel.md)
+
+[Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje](pro-rate-charges-matching-lines.md)
+

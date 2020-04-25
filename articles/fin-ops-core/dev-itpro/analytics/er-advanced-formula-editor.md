@@ -3,7 +3,7 @@ title: Rozšířený editor vzorců elektronického výkaznictví
 description: V tomto tématu je popsáno, jak lze pomocí rozšířeného editoru vzorců konfigurovat výrazy v mapování modelu a komponentách formátu elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: df402bc20753d2ba14295592f4b40e20f9fdc7bf
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: d9911c858d6832aa70378d37e0fd5cf7d7831b1b
+ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138891"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3257054"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Rozšířený editor vzorců elektronického výkaznictví
 
@@ -157,7 +157,17 @@ V současné době se k zvýraznění následujících částí výrazů použí
 
 [![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="limitations"></a>Omezení
+
+Editor je aktuálně podporován v následujících webových prohlížečích:
+
+- Chrome
+- Edge
+- Firefox
+- Opera
+- Safari
+
+## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)

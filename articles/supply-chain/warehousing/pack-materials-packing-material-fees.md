@@ -2,7 +2,7 @@
 title: Obalové materiály a poplatky
 description: Toto téma obsahuje informace o poplatcích za obalový materiál, které jsou zaplaceny recyklačním společnostem v určitých intervalech.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2351cce9dc6e1a554800817f75591c4a4e24d43
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076240"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215693"
 ---
 # <a name="packing-materials-and-fees"></a>Obalové materiály a poplatky
 
@@ -39,7 +39,7 @@ Pro položku, skupinu položek balení (skupinu balení) nebo pro všechny polo�
 > [!NOTE]
 > I když vaše společnost neplatí poplatky za obalový materiál, lze funkci použít ke statistickým výpočtům hmotností obalového materiálu.
 
-## <a name="allocations"></a>Nastavení přidělení obalového materiálu
+## <a name="set-up-packing-material-allocation"></a><a name="allocations"></a>Nastavení přidělení obalového materiálu
 
 Než bude možné vypočítat hmotnosti balicího materiálu, poplatky za obalový materiál nebo obojí, je nutné tento výpočet zapnout a definovat, které materiály a poplatky se použijí pro položky.
 

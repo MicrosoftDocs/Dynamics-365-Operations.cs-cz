@@ -1,30 +1,30 @@
 ---
 title: Schválení a potvrzení nákupních objednávek
 description: Toto téma popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813424"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207987"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
@@ -69,9 +69,10 @@ V některých případech může být nutné změnit nákupní objednávku poté
 
 Pokud byla nákupní objednávka vytvořena pomocí procesu řízení změn, můžete provádět změny vyvoláním objednávky, nebo pokud objednávka již byla schválena, tak pomocí akce **Požadavek na změnu**. V takovém případě je stav schválení upraven zpět na **Návrh**, a vy pak můžete změnit pořadí. Po provedení změn bude pravděpodobně nutné předložit nákupní objednávku k opětovnému schválení. Můžete nakonfigurovat typy změn, které vyžadují opětovné schválení, pomocí pravidla zásad **Pravidlo opětovného schválení pro nákupní objednávky** na stránce **Zásady nákupu**.
 
-Pokud byla dodána část objednaného množství pro řádek nákupní objednávky, nelze již objednané množství změnit. Můžete však změnit množství **Zbývá dodat** na řádku. Poté můžete použít akci **Dokončit** ke zrušení řádků a zabránění dalšímu zpracování. 
+Pokud byla dodána část objednaného množství pro řádek nákupní objednávky, nelze již objednané množství změnit, když je nákupní objednávka ve stavu **Koncept**. Můžete však změnit množství **zbývající dodávky** na řádku pro nákupní objednávku ve stavu **koncept**.
 
-Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však zrušit celkové množství nebo libovolné zbývající množství na objednávce, a to za předpokladu, že množství nebylo přijato nebo fakturováno.
+Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však zrušit celkové množství nebo libovolné zbývající množství na objednávce, a to za předpokladu, že množství nebylo přijato nebo fakturováno. Poté můžete použít akci **Dokončit** k zabránění dalšímu zpracování. 
+
 
 ## <a name="canceling-purchase-orders"></a>Zrušení nákupních objednávek
 

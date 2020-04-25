@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897918"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197260"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (16. dubna 2019)
 
@@ -46,10 +46,6 @@ Změny popsané v této části se vztahují na číslo sestavení 8.1.2239. Č�
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Entity oblast kompenzace, úroveň kompenzace, možnost zaměstnaneckých výhod a typ dovedností v Common Data Service jsou aktualizovány a zahrnují podporu polí odběratelů
 
 V tomto vydání byly tyto entity Common Data Service aktualizovány tak, aby obsahovaly možnost zahrnout vlastní pole přidané prostřednictvím aplikace Talent: Core HR.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Nová entita Common Data Service podporuje: pravidla připsání kompenzace, plán variabilní kompenzace, variabilní kompenzaci
-
-V této verzi byly do Common Data Service přidány entity pravidla připsání kompenzace, plánu variabilní kompenzace a variabilní kompenzace. Tyto entity rovněž podporují vlastní pole přidaná prostřednictvím aplikace Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Problémy s aktualizací PowerBI (314342)
 
@@ -93,6 +89,6 @@ S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobra
 
 ### <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
 
-V aktualizaci Platform Update 25 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí.
+S aktualizací Platform Update 25 Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí.
 
 

@@ -3,7 +3,7 @@ title: Konfigurace srážek
 description: Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak často má být provedena srážka z výplaty zaměstnance u každé výhody.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5287161f352b386ae4e13067f40228d7c1bce62
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5e645c3f098163626cb686aba347897781d7ebc0
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092722"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230055"
 ---
 # <a name="configure-deductions"></a>Konfigurace srážek
-
-[!include [banner](includes/preview-feature.md)]
 
 Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak často má být provedena srážka z výplaty zaměstnance u každé výhody. Srážky jsou efektivní podle data, takže je možné uchovat historický záznam informací o srážce. 
 
@@ -39,17 +37,17 @@ Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak 
 
    | Pole | Popis |
    | --- | --- |
-   | Odpočet | Jedinečné ID, které se používá k identifikaci srážky ze zaměstnaneckých výhod. |
-   | Popis | Popis srážky. |
-   | Účinné: | Počáteční datum. Výchozí hodnotou je aktuální systémové datum. |
-   | Vypršení platnosti | Koncové datum. Výchozí hodnota je 12/31/2154, což znamená nikdy. |
-   | Záhlaví | Kód záhlaví ze systému mezd, který bude použit pro část srážky pro zaměstnance při zpracování zaměstnaneckých výhod. Používá se v případě, že používáte poskytovatele mezd od třetí strany. |
-   | Odkaz srážky ze mzdy zaměstnance | Kód srážky z mzdového systému, který tato srážka použije pro část zaměstnance srážky při zpracování zaměstnaneckých výhod do mzdy. |
-   | Záhlaví částky | Kód záhlaví ze systému mezd, který bude použit pro část srážky pro zaměstnance při zpracování zaměstnaneckých výhod. Běžně se používá v případě, že používáte poskytovatele mezd od třetí strany. |
-   | Lze odstranit | Určuje, zda může exportovaná hodnota z Dynamics 365 for Finance and Operations způsobit odstranění hodnoty v systému mezd. |
-   | Spárované sloupce | Určuje, zda má být exportována částka záhlaví a srážky ve spárováných sousedících sloupcích do mzdového systému. |
-   | Datum platnosti změny | Datum, kdy změna srážky zaměstnanecké výhody vstoupí v platnost. K tomuto datu systém automaticky změní srážku zaměstnanecké výhody a aktualizuje všechny plány zaměstnaneckých výhod spojené s touto srážkou, pokud spustíte zpracování aktualizace změny srážky. |
-   | Změna srážek dokončena | Jakmile budou dokončeny změny srážky v procesu aktualizace změny srážky, bude automaticky zaškrtnuto políčko Změna srážky dokončena. |
+   | **Odpočet** | Jedinečné ID, které se používá k identifikaci srážky ze zaměstnaneckých výhod. |
+   | **Popis** | Popis srážky. |
+   | **Účinné:** | Počáteční datum. Výchozí hodnotou je aktuální systémové datum. |
+   | **Vypršení platnosti** | Koncové datum. Výchozí hodnota je 12/31/2154, což znamená nikdy. |
+   | **Záhlaví** | Kód záhlaví ze systému mezd, který bude použit pro část srážky pro zaměstnance při zpracování zaměstnaneckých výhod. Používá se v případě, že používáte poskytovatele mezd od třetí strany. |
+   | **Odkaz srážky ze mzdy zaměstnance** | Kód srážky z mzdového systému, který tato srážka použije pro část zaměstnance srážky při zpracování zaměstnaneckých výhod do mzdy. |
+   | **Záhlaví částky** | Kód záhlaví ze systému mezd, který bude použit pro část srážky pro zaměstnance při zpracování zaměstnaneckých výhod. Běžně se používá v případě, že používáte poskytovatele mezd od třetí strany. |
+   | **Lze odstranit** | Určuje, zda může exportovaná hodnota z Dynamics 365 for Finance and Operations způsobit odstranění hodnoty v systému mezd. |
+   | **Spárované sloupce** | Určuje, zda má být exportována částka záhlaví a srážky ve spárováných sousedících sloupcích do mzdového systému. |
+   | **Datum platnosti změny** | Datum, kdy změna srážky zaměstnanecké výhody vstoupí v platnost. K tomuto datu systém automaticky změní srážku zaměstnanecké výhody a aktualizuje všechny plány zaměstnaneckých výhod spojené s touto srážkou, pokud spustíte zpracování **Aktualizace změny srážky**. |
+   | **Změna srážek dokončena** | Jakmile budou dokončeny změny srážky v procesu aktualizace změny srážky, bude automaticky zaškrtnuto políčko **Změna srážky dokončena**. |
    
 4. Chcete-li sledovat a spravovat změny v nastavení sazby zaměstnaneckých výhod, vyberte **Akce** a potom vyberte **Spravovat verze**.
 
