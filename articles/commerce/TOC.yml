@@ -44,6 +44,8 @@
                   href: provisioning-guide.md
                 - name: Konfigurace prostředí Preview aplikace Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
+                - name: 'Konfigurovat „Nákup online, vyzvednutí v obchodě“ (BOPIS) v prostředí Dynamics 365 Commerce'
+                  href: cpe-bopis.md
                 - name: Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce
                   href: cpe-optional-features.md
                 - name: Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce
@@ -86,6 +88,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.11 (červenec 2020)
+                      href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (květen 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (duben 2020)
@@ -206,6 +210,8 @@
                   href: retail-onprem.md
             - name: Nasazení a opravy hotfix
               items:
+                - name: Synchronizace samoobslužných instalačních programů v aplikaci Dynamics 365 Commerce
+                  href: dev-itpro/Synchronize-installers.md
                 - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
                 - name: Konfigurace a instalace Commerce Scale Unit
@@ -226,6 +232,8 @@
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Použití nasaditelného balíčku
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Inicializace počátečních dat v nových prostředích Commerce
+                  href: enable-configure-retail-functionality.md
             - name: Implementace správy životního cyklu
               items:
                 - name: Domovská stránka Implementace správy životního cyklu
@@ -378,7 +386,7 @@
                       items:
                         - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
                           href: demo-data.md
-                        - name: Rozložení obrazovky pro POS
+                        - name: Vizuální konfigurace uživatelského rozhraní POS
                           href: pos-screen-layouts.md
                         - name: Instalace návrháře rozložení POS
                           href: install-pos-layout-designer.md
@@ -906,6 +914,8 @@
                   href: cookie-compliance.md
                 - name: Přidání stránky se zásadami ochrany osobních údajů
                   href: add-privacy-page.md
+                - name: Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů
+                  href: replace-IDs-tracked-changes.md
             - name: Startovací sada
               items:
                 - name: Přehled startovací sady
@@ -942,12 +952,16 @@
                   items:
                     - name: Modul košíku
                       href: add-cart-module.md
+                    - name: Modul ikony košíku
+                      href: cart-icon-module.md
                     - name: Modul pokladny
                       href: add-checkout-module.md
                     - name: Modul potvrzení objednávky
                       href: order-confirmation-module.md
                     - name: Modul volby obchodu
                       href: store-selector.md
+                    - name: Modul dárkového poukazu
+                      href: add-giftcard.md
                 - name: Moduly správy obchodního vztahu
                   items:
                     - name: Moduly a stránky správy obchodního vztahu
@@ -1940,6 +1954,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurace nastavení motivu
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Rozšíření motivu
+                      href: e-commerce-extensibility/extend-theme.md
                 - name: Vložení skriptu
                   items:
                     - name: Injektory skriptu
@@ -1962,6 +1978,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Sloučení systémů sestavení pro Commerce a Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Migrace Retail SDK z Visual Studio 2015 do Visual Studio 2017
+                  href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Vzory rozšiřitelnosti sady Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Vytvoření nasaditelných balíčků
