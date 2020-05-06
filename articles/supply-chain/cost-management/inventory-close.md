@@ -3,7 +3,7 @@ title: Uzavřít zásoby
 description: Jako součást procesu vyrovnání výdejových transakcí s příjmovými transakcemi můžete rovněž aktualizovat hlavní knihu tak, aby došlo k promítnutí provedených úprav.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201622"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283983"
 ---
 # <a name="inventory-close"></a>Uzavřít zásoby
 
@@ -59,11 +59,10 @@ Některé úkoly, které lze provést pomocí stránky **Závěrka a oprava**, z
 
 Aktualizovány budou účty hlavní knihy, které jsou spojené s původní skladovou transakcí. Pokud je například prodejní objednávka vyrovnána s nákupní objednávkou, budou upraveny účty hlavní knihy, které byly použity pro původní prodejní objednávku. Toto chování platí i v případě, že účty hlavní knihy pro skupiny položek přiřazených dané položce se změnily po zaúčtování prodejní objednávky. Po uzávěrce skladu dojde k vytvoření částky vyrovnání, částka vyrovnání bude přesto zaúčtována k původním účtům hlavní knihy, nikoli na nové účty hlavní knihy přiřazených k dané položce. Hlavní kniha může být aktualizována také stornováním uzávěrka skladu. 
 
-**Poznámky:**
-
--   Uzávěrka skladu není vyžadována při použití oceňovací metody Standardní náklady.
--   Před spuštěním postupu uzávěrky se zobrazí seznam položek, které nelze vyrovnat v průběhu aktualizace.
--   Doporučujeme spustit uzávěrku skladu v době minimálního provozu, což umožní rovnoměrné vytížení výpočetních zdrojů.
+> [!NOTE] 
+> - Uzávěrka skladu je povinným krokem v procesu uzavírání měsíce pro všechny skladové modely. To zahrnuje standardní a klouzavý průměr nákladů. Dokud nebude provedeno uzavření skladu k datu ukončení období, nebude možné uzavřít finanční období.
+> - Před spuštěním postupu uzávěrky se zobrazí seznam položek, které nelze vyrovnat v průběhu aktualizace.
+> - Doporučujeme spustit uzávěrku skladu v době minimálního provozu, což umožní rovnoměrné vytížení výpočetních zdrojů.
 
 ## <a name="the-inventory-close-log"></a> Protokol uzávěrky skladu
 Po dokončení procesu uzávěrky skladu se může objevit zpráva ve středisku zpráv o nesprávné hodnotě jednotkové nákladové ceny, protože transakci nebylo možné úplně vyrovnat. 
@@ -85,7 +84,6 @@ V některých případech nemusí být možné provádět žádné akce pro uved
 ## <a name="reversing-a-completed-inventory-close"></a>Zrušení dokončené uzávěrky skladu
 V některých případech je nutné zrušit dokončenou uzávěrku skladu a vrátit vyrovnání do původního stavu před provedením úprav. Při zrušení dokončené uzávěrky skladu budou zásoby také znovu otevřeny, aby bylo možné účtovat do příslušného období, které pokrývá uzávěrku skladu. Související změny také mohou být udělány v hlavní knize. Po dokončení množství úprav můžete spustit znovu uzávěrku skladu pro období, ve kterém pracujete. 
 
-**Poznámka:** Znovu otevřít lze pouze poslední zásoby období, které bylo ukončeno. Pokud chcete stornovat předchozí skladové uzávěrky, je nutné stornovat postupně každou následnou skladovou uzávěrku, počínaje poslední uzávěrkou.
-
-
+> [!NOTE] 
+> Znovu otevřít lze pouze poslední zásoby období, které bylo ukončeno. Pokud chcete stornovat předchozí skladové uzávěrky, je nutné stornovat postupně každou následnou skladovou uzávěrku, počínaje poslední uzávěrkou.
 

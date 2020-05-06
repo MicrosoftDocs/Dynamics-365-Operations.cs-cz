@@ -3,7 +3,7 @@ title: Uložení, náhled a publikování stránky
 description: Toto téma popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002799"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269974"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Uložení, náhled a publikování stránky
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Toto téma popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplik
 
 ## <a name="save-a-page"></a>Uložení stránky
 
-Chcete-li stránku uložit, je nutné ji rezervovat pro sebe a otevřít v editoru stránek. Stránku byste měli uložit ihned po úpravě, aby bylo zaručeno, že jsou uloženy provedené změny.
+Chcete-li stránku uložit, je nutné ji rezervovat pro sebe a otevřít v editoru stránek. Chcete-li stránku odhlásit, vyberte možnost **Upravit** na řádku příkazů. Po dokončení úprav stránky byste ji měli ihned uložit, aby bylo zaručeno, že jsou uloženy provedené změny.
 
 Při uložení stránky se tyto změny zobrazí pouze pro vás. Operace uložení je určena především pro uložení změn, zatímco stránka ještě není připravena k vrácení se změnami. Po dokončení úprav stránky doporučujeme, abyste ji vrátili se změnami, aby byly změny viditelné i pro ostatní. V tomto okamžiku může být stránka také rezervována jinými uživateli, kteří je musí upravit.
 
@@ -50,7 +49,7 @@ Po dokončení úprav stránky můžete zobrazit náhled a zobrazit informace o 
 
 ## <a name="publish-a-page"></a>Publikování stránky
 
-Jakmile je stránka připravena, následujícím krokem bude publikování, aby mohli externí uživatelé zobrazit obsah. Před publikováním stránky je nutné ji vrátit se změnami.
+Jakmile je stránka připravena, následujícím krokem bude publikování, aby mohli externí uživatelé zobrazit obsah. Před publikováním stránky je nutné ji vrátit se změnami výběrem možnosti **dokončit úpravy** na panelu příkazů.
 
 Stránky můžete publikovat a zrušit jejich publikování pomocí inspektoru stránky nebo editoru stránek. Kontrola stránky zobrazuje seznam stránek a umožňuje hromadné operace. Editor stránek lze použít k publikování nebo zrušení publikování pouze jedné stránky, která je v ní otevřena.
 
@@ -70,9 +69,9 @@ Chcete-li uložit, zobrazit náhled a publikovat domovskou stránku, postupujte 
 1. V části **Weby** vyberte **Fabrikam** (nebo název vašeho webu).
 1. V navigačním podokně nalevo vyberte položku **Stránky**.
 1. Vyhledejte a vyberte domovskou stránku, kterou chcete otevřít v editoru stránek.
-1. Vyberte **Rezervovat**.
+1. Vyberte možnost **Upravit**.
 1. Změňte stránku podle potřeby.
-1. Vyberte **Uložit** a potom **Vrátit se změnami**.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
 1. Do pole **Poznámky** zadejte poznámku ohledně změn, které jste provedli, a poté vyberte **OK**.
 1. Chcete-li zobrazit náhled stránky, vyberte volbu **Náhled**. Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
 1. Zvolte **Publikovat**.

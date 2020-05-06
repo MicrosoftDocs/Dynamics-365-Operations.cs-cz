@@ -3,7 +3,7 @@ title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249053"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262642"
 ---
 # <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
@@ -83,13 +83,15 @@ Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel běhe
 ## <a name="report-deletions-and-expirations"></a>Odstranění a vypršení platnosti sestav
 Uživatelé, kteří vygenerovali sestavu, ji mohou i odstranit. Uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví** mohou odstranit sestavy jiných uživatelů. 
 
-Počínaje vydáním 10.0.7 byl zaveden koncept dat vypršení platnosti. V pracovním prostoru pro správu funkcí bude povolena nová povinná funkce. Tato funkce obsahuje následující změny:
+Ve verzi 10.0.8 byla zavedena koncepce dat vypršení platnosti. Nová požadovaná funkce bude povolena na stránce **Vše** v pracovním prostoru Správa funkcí. Funkce **Zásady uchovávání finančních sestav** obsahuje následující změny:
 * Nově generované sestavy budou automaticky označeny datem vypršení platnosti 90 dní od jejich vygenerování.
 * Všechny existující sestavy před instalací této funkce budou mít dobu platnosti 90 dní. Datum se může po krátkou dobu zobrazit jako prázdné, dokud není spuštěna služba finančního výkaznictví, vygeneruje se sestava a služba provede aktualizaci existujících sestav s prázdným datem vypršení platnosti. 
-* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav: 
-  * Vypršení platnosti za 90 dní
-  * Možnost nastavení nekonečné doby vypršení platnosti sestavy
-
+* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav. 
+  * Vypršení platnosti za 90 dní.
+  * Možnost nastavení nekonečné doby vypršení platnosti sestavy.
+  
+Další možnosti budou zváženy v budoucích funkcích. Doba vypršení 90 dnů bude výchozí a uživatelé s příslušnými oprávněními mohou přepsat výchozí nastavení na stránce se seznamem **finančních sestav**.    
+  
 Je-li vybráno vypršení platnosti 90 dnů, zaručuje platnost 90 dní ode dneška, což je odlišné chování, než 90 dnů od data původního generování nastaveného během generování sestavy. 
 
 ## <a name="default-reports"></a>Výchozí sestavy

@@ -3,7 +3,7 @@ title: Duální měna
 description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 Finance.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249004"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270305"
 ---
 # <a name="dual-currency"></a>Duální měna
 
@@ -174,10 +174,10 @@ Kromě toho byly provedeny zásadní změny procesu odpisování. Tyto změny vy
 
         | Dlouhodobý majetek | Rezervovat      | typ transakce | Datum transakce | Měna | Částka v měně transakce | Množství  | Sm. kurz | Částka v měně vykazování |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Pořizovací cena      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50,000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50,000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Pořizovací cena      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpisy     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpisy     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpisy     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Mnozí zákazníci sledovali podrobnosti o svých majetkových transakcích v sešitech. Tyto informace zahrnují směnné kurzy a částky. Pokud máte tato data v sešitu, můžete vytvořit vlastní typ směnného kurzu a aktualizovat ho směnnými kurzy ze sešitu. Tento typ směnného kurzu se pak použije k zadání výchozího směnného kurzu k datu pořízení a vypočítá částku v měně vykazování. Pokud není vybrán typ směnného kurzu, průvodce použije typ směnného kurzu, který byl definován v hlavní knize.
     - Směnný kurz a částky v měně vykazování nelze měnit. Pokud změníte směnný kurz, částka v měně vykazování se přepočítá s použitím nového kurzu.

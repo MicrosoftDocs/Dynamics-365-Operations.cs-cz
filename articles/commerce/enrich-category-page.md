@@ -3,7 +3,7 @@ title: Obohacení cílové stránky kategorie
 description: V tomto tématu je popsáno obohacování stránek kategorií v řešení Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003043"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269836"
 ---
 # <a name="enrich-a-category-landing-page"></a>Obohacení cílové stránky kategorie
 
@@ -39,7 +39,7 @@ Namísto použití výchozí stránky kategorie však můžete použít „oboha
 
 ![Obohacená cílová stránka kategorie](./media/CategoryLandingPages.png)
 
-Stránka **Produkt** v nástroji pro tvorbu obsahu zahrnuje seznam kategorií z daného kanálu, které jsou přiřazeny k danému webu. Je- li pro stránku kategorie vybrán stav **Obohaceno**, tato stránka kategorie byla obohacena. V opačném případě se pro kategorii použije výchozí stránka a obsah kategorie. Chcete-li zobrazit náhled obohacených i neobohacených stránek kategorie, vyberte název kategorie.
+V tvůrci webů Commerce se na stránce **Produkt** nachází seznam kategorií z daného kanálu, které jsou přiřazeny k danému webu. Je- li pro stránku kategorie vybrán stav **Obohaceno**, tato stránka kategorie byla obohacena. V opačném případě se pro kategorii použije výchozí stránka a obsah kategorie. Chcete-li zobrazit náhled obohacených i neobohacených stránek kategorie, vyberte název kategorie.
 
 Chcete-li obohatit stránku kategorie, postupujte podle následujících pokynů.
 
@@ -48,9 +48,7 @@ Chcete-li obohatit stránku kategorie, postupujte podle následujících pokynů
 3. Vyberte šablonu pro obohacenou stránku kategorie. Pokud provádíte pouze drobné změny, můžete vybrat výchozí stránku kategorie. Případně můžete vybrat některou ze šablon stránek kategorie. Když vyberete šablonu, otevře se editor stránek a vybraná šablona se použije k vytvoření nové stránky kategorie pro vybranou kategorii. Stránka je pro vás rezervována a nyní můžete provést změny.
 
 > [!NOTE]
-> Moduly, které používají data specifikace kategorie, používají data z vybrané kategorie.
->
-> Nastavení šablony, kterou vyberete, určuje změny, které lze provést.
+> Moduly, které používají data specifikace kategorie, používají data z vybrané kategorie. Nastavení šablony, kterou vyberete, určuje změny, které lze provést.
 
 ## <a name="additional-resources"></a>Další zdroje
 

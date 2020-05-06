@@ -3,7 +3,7 @@ title: Stavy životního cyklu požadavku na údržbu
 description: Toto téma popisuje, jak nastavit stavy životního cyklu požadavků na údržbu v modulu Správa majetku.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275619"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stavy životního cyklu požadavku na údržbu
 
@@ -47,7 +47,7 @@ Stavy životního cyklu požadavků údržby definují fáze, kterými může po
 6. Nastavte možnost **Nastavit skutečné ukončení** na **Ano**, pokud má být skutečné koncové datum a čas automaticky zadáno do požadavku údržby, který je v tomto stavu životního cyklu.
 7. Možnost **Vytvořit pracovní příkaz** nastavte na **Ano**, pokud lze pracovní příkaz vytvořit z požadavku na údržbu, který je v tomto stavu životního cyklu.
 8. Možnost **Odstranit** nastavte na **Ano**, pokud lze požadavek na údržbu odstranit v době, kdy je v tomto stavu životního cyklu.
-9. Na kartě **Aktualizace** jsou možnosti **Příchozí** a **Odchozí** v sekci **Majetek** relevantní, pokud použijete opravu skladu. Nastavte vhodnou volbu na **ANO**, pokud stav životního cyklu majetku vybraného v požadavku na údržbu by měl být automaticky aktualizován na **Příchozí** nebo **Odchozí**, pokud je stav životního cyklu tohoto požadavku na údržbu nastaven na **Příchozí** nebo **Odchozí**.
+9. Na pevné záložce **Aktualizace** jsou možnosti **Vstupní** a **Výstupní** v části **Majetek** relevantní, pokud použijete opravu skladu. Nastavte příslušnou možnost na hodnotu **Ano** v případě, že stav životního cyklu majetku vybraného v požadavku na údržbu by měl být automaticky aktualizován na **Příchozí** nebo **Odchozí**, pokud je stav cyklu životnosti požadavku na údržbu nastaven na **Příchozí** nebo **Odchozí**.
 
 Následující ilustrace znázorňuje příklad stránky **Stavy životního cyklu požadavků na údržbu**.
 

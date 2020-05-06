@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211714"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275595"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -102,14 +102,14 @@ Pokud je skóre úrovně služeb zvýšeno na 100 namísto 5, bude pořadí plá
 
 Skóre hodnocení, která se týkají výpočtu, kteří pracovníci údržby mají pracovat na pracovních příkazech, jsou nastavena jako čísla, která se přidávají ke kalkulacím pracovníka údržby při plánování pracovních příkazů. Pracovník údržby s nejvyšším skóre je vybrán na pracovní příkaz. Zde je stručný popis hodnocení pracovníků údržby:
 
-| Skóre pracovníka údržby       | Popis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Odpovědný pracovník | Pokud je pracovník údržby vybrán jako odpovědný pracovník na pracovní příkaz, skóre bude přidáno.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Odpovědná skupina pracovníků údržby | Pokud je pracovník údržby součástí skupiny odpovědných pracovníků na pracovním příkazu, skóre bude přidáno.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Preferovaný pracovník údržby         | Pokud je pracovník údržby vybrán jako preferovaný pracovník údržby majetku, skóre bude přidáno.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Preferovaná skupina pracovníků údržby   | Pokud je pracovník údržby součástí skupiny preferovaných pracovníků údržby majetku, skóre bude přidáno.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Umístění                 | Pokud vaše společnost používá funkční místa, pracovníci údržby dostanou plné skóre, pokud jsou umístěni na funkčním místě souvisejícím s majetkem. Pokud má funkční místo majetku nadřazené umístění, pracovníci údržby na tomto funkčním místě dostanou 1/2 skóre. Pokud má toto místo také nadřazenou položku, pracovníci údržby na tomto místě získají 1/3 skóre. Pokud má toto místo také nadřazenou položku, pracovníci údržby na tomto místě získají 1/4 skóre atd. Pokud vaše společnost používá místo majetku, které nedoporučujeme, místo, oblast a zóna se používají k výpočtu skóre místa. Pracovníci dostanou plné skóre, pokud jsou umístěni v místě a oblasti a zóně související s majetkem. Pokud se místo pracovníka shoduje pouze s místem a oblastí, je skóre hodnocení pro pracovníka údržby 2/3 plného skóre. Pokud se místo pracovníka údržby shoduje pouze s místem, je skóre hodnocení pro pracovníka údržby 1/3 plného skóre. |
-| Počáteční datum pracovníka               | U každého data, kdy je plánované datum zahájení pozdější než očekávané datum zahájení, bude skóre odečteno.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Skóre pracovníka údržby| Popis |
+|---|---|
+| Odpovědný pracovník | Pokud je pracovník údržby vybrán jako odpovědný pracovník na pracovní příkaz, skóre bude přidáno. |
+| Odpovědná skupina pracovníků údržby | Pokud je pracovník údržby součástí skupiny odpovědných pracovníků na pracovním příkazu, skóre bude přidáno. |
+| Preferovaný pracovník údržby         | Pokud je pracovník údržby vybrán jako preferovaný pracovník údržby majetku, skóre bude přidáno. |
+| Preferovaná skupina pracovníků údržby   | Pokud je pracovník údržby součástí skupiny preferovaných pracovníků údržby majetku, skóre bude přidáno.  |
+| Umístění  | Pokud vaše společnost používá funkční místa, pracovníci údržby dostanou plné skóre, pokud jsou umístěni na funkčním místě souvisejícím s majetkem. Pokud má funkční místo majetku nadřazené umístění, pracovníci údržby na tomto funkčním místě dostanou 1/2 skóre. Pokud má toto místo také nadřazenou položku, pracovníci údržby na tomto místě získají 1/3 skóre. Pokud má toto místo také nadřazenou položku, pracovníci údržby na tomto místě získají 1/4 skóre atd. Pokud vaše společnost používá místo majetku, které nedoporučujeme, místo, oblast a zóna se používají k výpočtu skóre místa. Pracovníci dostanou plné skóre, pokud jsou umístěni v místě a oblasti a zóně související s majetkem. Pokud se místo pracovníka shoduje pouze s místem a oblastí, je skóre hodnocení pro pracovníka údržby 2/3 plného skóre. Pokud se místo pracovníka údržby shoduje pouze s místem, je skóre hodnocení pro pracovníka údržby 1/3 plného skóre. |
+| Počáteční datum pracovníka  | U každého data, kdy je plánované datum zahájení pozdější než očekávané datum zahájení, bude skóre odečteno.  |
 
 >[!NOTE]
 >Je-li skóre nastaveno na hodnotu 0, hodnocení se nevypočítává. To je užitečné například v případě, že nechcete do plánování zahrnout odpovědného pracovníka.
@@ -120,3 +120,21 @@ Požadavky na dovednosti a certifikáty lze nastavit na typech prací údržby (
 
 Typ prací údržby a obory prací údržby se vybírají u úloh pracovních příkazů. Pokud byly pro práci údržby nebo na obor práce údržby vybrány dovednosti nebo certifikáty a v úloze pracovního příkazu je použit typ práce údržby nebo obor úloha údržby, jsou naplánováni pouze pracovníci s odpovídajícími dovednostmi a certifikáty na pracovní příkaz.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Práce s plánovanými pracovními příkazy pomocí Ganttova diagramu
+
+**Ganttův graf plánovaných pracovních objednávek** poskytuje grafické rozhraní, ve kterém můžete zobrazit a přeplánovat pracovní příkazy.
+
+Postup při zobrazení a práci s Ganttovým grafem:
+
+1. Přejděte na **Správa majetku > Pracovní příkazy > Ganttův graf plánovaných pracovních příkazů**.
+
+1. Pomocí rozevíracích seznamů a polí v části **Nastavení** můžete nastavit, jaké funkční umístění, časové období a časové měřítko se mají zobrazit v Ganttově diagramu.
+
+1. Zvolte **Použít**.
+
+    - Aktualizace Ganttova diagramu pro zobrazení plánovaných pracovních příkazů odpovídajících zadaným nastavením. Každá pracovní objednávka je zastoupena modrým obdélníkem.
+    - Chcete-li přeplánovat zobrazenou pracovní objednávku, vyberte položku a přetáhněte ji do příslušného nového data a času.
+
+1. Pokud jste provedli změny, vyberte **Uložit** v podokně akcí a uložte je.

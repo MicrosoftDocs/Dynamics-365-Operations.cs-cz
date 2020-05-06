@@ -3,7 +3,7 @@ title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124605"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278891"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -151,6 +151,18 @@ Podrobnosti o spuštění zobrazují stav každé datové entity, kterou úloha 
 Můžete stáhnout data fázování do souboru pro úlohy exportu, nebo je můžete stáhnout jako balíček pro úlohy importu a exportu.
 
 Chcete-li znát podrobnosti spuštění, můžete rovněž otevřít protokol provádění.
+
+## <a name="parallel-imports"></a>Souběžné importy
+Chcete-li urychlit import dat, lze souběžné zpracování importu povolit, pokud entita podporuje souběžné importy. Chcete-li konfigurovat paralelní import pro entitu, je nutné provést následující kroky.
+
+1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa dat**.
+2. V oddílu **Import/export** vyberte dlaždici **Parametry architektury**, která otevře stránku **Parametry platformy importu a exportu dat**.
+3. Na kartě **Nastavení entity** vyberte možnost **Konfigurovat parametry spuštění entity** a otevřete stránku **Parametry spuštění importu entity**.
+4. Nastavte následující pole pro konfiguraci paralelního importu pro entitu:
+
+    - V poli **Entita** zvolte entitu.
+    - Do pole **Počet záznamů prahové hodnoty pro import** zadejte počet záznamů prahové hodnoty pro import. Určuje počet záznamů, které mají být zpracovány podprocesem. Má-li soubor 10 000 záznamů, bude počet záznamů 2500 s počtem úkolů 4 znamenat, že v každém podprocesu bude zpracováno 2500 záznamů.
+    - Do pole **Počet úkolů importu** zadejte počet úkolů importu. Tato hodnota nesmí přesáhnout maximální počet dávkových podprocesů přidělených pro dávkové zpracování v **Správa systému \> Konfigurace serveru**.
 
 ## <a name="clean-up-the-staging-tables"></a>Vyčištění tabulek fázování
 Od aktualizace platformy 29 se tato funkce již nepoužívá. Je nahrazena novou verzí funkce Vyčištění historie úloh, která je vysvětlena níže.

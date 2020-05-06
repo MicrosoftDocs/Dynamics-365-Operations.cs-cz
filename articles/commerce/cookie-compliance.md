@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cfb1b4c8baa87f5d894d55c5a52180ae87801a86
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b25fd3fffe153e1a07a1f8b21f0cc96f633fb894
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002144"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275364"
 ---
 # <a name="cookie-compliance"></a>Shoda souborů cookie
 
@@ -41,6 +41,8 @@ Chcete-li získat další informace o základních principech, které společnos
 
 [Funkce a možnosti usnadnění přístupu](accessibility.md)
 
-[Dodržování předpisů](compliance-overview.md)
+[Přehled dodržování předpisů](compliance-overview.md)
 
-[Přidání stránky zásad ochrany soukromí](add-privacy-page.md)
+[Přidání stránky se zásadami ochrany osobních údajů](add-privacy-page.md)
+
+[Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů](replace-IDs-tracked-changes.md)

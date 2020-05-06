@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172661"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275434"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -39,7 +39,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Nemůžete propojit aplikaci Finance and Operations s Common Data Service
 
-**Požadovaná pověření pro nastavení dvojího zápisu:** správa klienta Azure AD
+**Požadovaná role pro nastavení dvojitého zápisu:** Správce systému v aplikacích Finance and Operations a prostředí Common Data Service.
 
 Chyby na stránce **Nastavení odkazu na Common Data Service** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Common Data Service**, jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
 

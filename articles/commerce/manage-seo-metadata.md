@@ -3,7 +3,7 @@ title: Správa metadat SEO
 description: Toto téma popisuje způsob správy metadat optimalizace vyhledávačů (SEO) v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003457"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270043"
 ---
 # <a name="manage-seo-metadata"></a>Správa metadat SEO
 
@@ -72,13 +72,10 @@ Chcete-li upravit metadata stránky, postupujte takto.
 1. V části **Weby** vyberte **Fabrikam** (nebo název vašeho webu).
 1. V navigačním podokně nalevo vyberte položku **Stránky**.
 1. Vyberte domovskou stránku, kterou chcete otevřít v editoru stránek.
-1. V podokně akcí vyberte možnost **Odhlášení**.
+1. Na příkazovém řádku vyberte možnost **Upravit**.
 1. V podokně vlastnosti vpravo rozbalte možnost **Výchozí metatagy**.
-1. Chcete-li přidat nový metatag, vyberte možnost **Přidat** a poté zadejte požadovanou značku do pole.
-
-    Chcete-li odebrat existující metatag, vyberte symbol odpadkového koše napravo od něj.
-
-1. Vyberte **Uložit** a potom **Vrátit se změnami**.
+1. Chcete-li přidat nový metatag, vyberte možnost **Přidat** a poté zadejte požadovanou značku do pole. Chcete-li odebrat existující metatag, vyberte symbol odpadkového koše napravo od něj.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
 1. Do pole **Poznámky** zadejte **Aktualizované MetaTagy** a pak vyberte **OK.**
 1. Chcete-li zobrazit náhled stránky, vyberte volbu **Náhled**. Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
 1. Zvolte **Publikovat**.

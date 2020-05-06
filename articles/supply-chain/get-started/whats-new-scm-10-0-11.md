@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 3ef4b77df29daefefaa775b7453db2137154c730
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 479a7edd456a1f4d121ceef292d2559c400c31a2
+ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261599"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3266316"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-june-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.11 (červen 2020)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.11 (červenec 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -33,7 +33,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 - **Verze Preview:** duben 2020
 - **Obecná dostupnost (automatická aktualizace):** květen 2020
-- **Automatická aktualizace:** červen 2020
+- **Automatická aktualizace:** červenec 2020
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 

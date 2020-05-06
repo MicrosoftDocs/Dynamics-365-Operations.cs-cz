@@ -3,7 +3,7 @@ title: Přidání uvítací zprávy
 description: V tomto tématu je popsán postup při přidání uvítací zprávy na webovou stránku Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca10b01268b5dcd4c6fe448d90cd0ebd65a2673b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d2a125b4e71016ad620f128af2e3c9f29aa04f4c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001247"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269606"
 ---
 # <a name="add-a-welcome-message"></a>Přidání uvítací zprávy
 
@@ -41,17 +41,14 @@ Uvítací zpráva, která je přidána do sdíleného fragmentu záhlaví, se zo
 
 Chcete-li na svůj web přidat uvítací zprávu, postupujte podle následujících kroků.
 
-1. V Dynamics 365 Commerce přejděte na web.
+1. V tvůrci webů Commerce přejděte na svůj web.
 1. Vyberte **Fragmenty**.
 1. Vyberte fragment záhlaví, do kterého chcete přidat zprávu.
 1. Ve stromové struktuře rozbalte **Chybové/informační zprávy**.
-1. Vyberte modul výstrahy.
-
-    Pokud modul výstrahy ještě neexistuje, vyberte tlačítko se třemi tečkami (**...**) vedle položky **Chybové/informační zprávy** a poté vyberte možnost **Přidat modul**. Vyberte modul výstrahy a poté klikněte na tlačítko **OK**.
-
+1. Vyberte modul výstrahy a poté klikněte na tlačítko **OK**. Pokud modul výstrahy ještě neexistuje, nejprve vyberte tlačítko se třemi tečkami (**...**) vedle položky **Chybové/informační zprávy** a poté vyberte možnost **Přidat modul**.
 1. V podokně vlastností vpravo na kartě **Data** vyberte možnost **Přidat zdroj dat** a pak vyberte možnost **Obsah**
 1. Do pole **Vstupní text** zadejte text uvítací zprávy.
-1. Uložte fragment záhlaví, vraťte jej se změnami a publikujte.
+1. Chcete-li vrátit fragment záhlaví se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte. 
 
 Uvítací zpráva se nyní zobrazuje v horní části každé stránky webu, která používá vybraný fragment záhlaví.
 

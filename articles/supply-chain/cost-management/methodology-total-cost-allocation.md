@@ -3,7 +3,7 @@ title: Metoda přidělení celkových nákladů
 description: Toto téma obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/15/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e621b76742a5a115ba2d77e03b47cd1aead8664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 758015c566e39df7306e1b34b8d3b42f1f1eba79
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214658"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262666"
 ---
 # <a name="total-cost-allocation-method"></a>Metoda přidělení celkových nákladů
 
 [!include [banner](../includes/banner.md)]
-
-Toto téma obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu.
 
 Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu. Tato metoda je dynamická. Vypočítává náklady jako vážený průměr mezi množstvím, která jsou hlášena jako dokončená pro položku receptury a vedlejší produkty. Při použití celkových přidělených nákladů nemusíte kontrolovat přidělení nákladů pro každou dávkovou objednávku. Pokud nejsou použity celkové přidělené náklady, kalkulace receptury používá existující funkce.
 
