@@ -1,9 +1,9 @@
 ---
 title: Příslib objednávky
-description: Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
+description: Tohle téma poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210040"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270020"
 ---
 # <a name="order-promising"></a>Příslib objednávky
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
+Tohle téma poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
 
 Při příslibu objednávky se na základě metody řízení data dodání a počtu přepravních dnů vypočítá nejdřívější datum expedice a příjmu. Vybírat lze ze čtyř metod řízení data dodání:
 
@@ -47,11 +47,13 @@ Výpočet ATP vzniká pomocí následujícího vzorce:
 
 ATP = ATP předchozího období + příjmy aktuálního období - výdeje aktuálního období – čisté vydané množství pro každé budoucí období až do období, kdy součet příjmů pro pro všechna budoucí období (včetně budoucího období) je větší než součet výdejů (včetně budoucího období).  
 
+Všimněte si, že výpočet ATP neobsahuje informace okolo data vypršení platnosti a mimo ochrannou dobu ATP, kterou systém očekává, když může být přislíbeno libovolné množství.
+
 Pokud neexistují další výdeje nebo příjmy, které lze vzít v úvahu, je množství ATP v dalších dnech stejné jako poslední vypočítané množství ATP.  
 
 Nejsou-li při kontrole hodnoty ATP dokončeny všechny dimenze pro položku, mohou být i přesto zadány na výdejích nebo příjmech. V takovém případě musí být při výpočtu hodnoty ATP kvůli snížení počtu řádků příjmu a výdeje, které jsou použity při výpočtu hodnoty ATP, přičteny příjmy a výdeje ke stávajícím dimenzím.  
 
-Zobrazené množství ATP je vždy větší než nebo rovno 0 (nule). Pokud výpočet vrátí záporné množství ATP (například když dříve přislíbené množství překročí dostupné množství), program automaticky nastaví množství na hodnotu **0**.
+Zobrazené množství ATP je vždy větší než nebo rovno 0 (nule). Pokud výpočet vrátí záporné množství ATP (například když dříve přislíbené množství překročí dostupné množství), množství je automaticky nastaveno na hodnotu 0.
 
 ### <a name="example"></a>Příklad
 

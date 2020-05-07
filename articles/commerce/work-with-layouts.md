@@ -3,7 +3,7 @@ title: Práce s přednastavenými rozloženími
 description: Toto téma popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002629"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269882"
 ---
 # <a name="work-with-preset-layouts"></a>Práce s přednastavenými rozloženími
 
@@ -44,7 +44,7 @@ Existují dva způsoby vytvoření přednastaveného rozvržení. Existující v
 Chcete-li vytvořit přednastavené rozvržení z existujícího vlastního rozložení, postupujte následovně.
 
 1. Otevře existující stránku, která aktuálně nepoužívá přednastavené rozvržení a má strukturu modulu, kterou chcete znovu použít pro ostatní stránky na webu.
-1. Vyberte **Rezervovat**.
+1. Stránku rezervujte výběrem možnosti **Upravit**.
 1. Vyberte **Uložit jako nové rozvržení**. Zobrazí se dialogové okno **Uložit jako nové rozvržení**.
 1. Zadejte název a popis vašeho přednastavevného rozložení. Hodnoty, které zadáte, se zobrazí ostatním autorům při vytváření nových stránek z vašeho rozvržení nebo při přepnutí na ni. Zadejte proto hodnoty, které budou užitečné pro autory stránek.
 1. Vyberte **OK**.
@@ -91,14 +91,14 @@ Chcete-li nastavit nebo změnit motiv pro všechny podřízené stránky, které
 Chcete-li uložit a vrátit vaše přednastavené rozvržení se změnami, postupujte podle následujících kroků.
 
 1. V horní části editoru rozvržení vyberte **Uložit**. Uložené změny nemají vliv na navazující stránky, dokud nejsou vráceny se změnami.
-1. Vyberte **Vrátit se změnami**. Vaše změny jsou nyní zjistitelné pro navazující workflowy.
+1. Vyberte **Dokončit úpravy**. Vaše změny jsou nyní zjistitelné pro navazující workflowy.
 
 Chcete-li zobrazit náhled změn, buď otevřete existující stránku, která používá přednastavené rozvržení, nebo vytvořte novou stránku z rozvržení.
 
 Po zobrazení náhledu změn v rozvržení přednastavených položek můžete publikovat rozvržení na aktivním webu podle jednoho z následujících kroků:
 
 * Přejděte na **Rozvržení**, vyberte rozvržení a pak vyberte **Publikovat.**
-* V editoru rozvržení vyberte možnost **Publikovat.**
+* Vyberte název rozvržení pro otevření editoru rozložení a pak vyberte **Publikovat**.
 * Publikujte stránku, která odkazuje na nepublikované rozvržení. Rozvržení bude automaticky publikováno.
 
 > [!WARNING]
