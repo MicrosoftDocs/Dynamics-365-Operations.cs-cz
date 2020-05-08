@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce v předchozích verzích
 description: Toto téma popisuje funkce, které byly odebrány, nebo byly plánovány pro odebrání z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225121"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284007"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -230,7 +230,7 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Nahrazeno jinou funkcí?**   | Č. |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech |
 | **Možnost nasazení**              | Vše  |
-| **Stav**                         | Odebráno od verze Finance and Operations 10.0.0 s aktualizací Platform Update 24. (Pokud potřebujete opravit poškození dat způsobené předchozím přejmenováním primárního klíče pro uvolněný produkt, obraťte se na podporu společnosti Microsoft a vyžádejte si dočasné odebrání tohoto omezení.) |
+| **Stav**                         | Odebráno od verze Finance and Operations 10.0.0 s aktualizací Platform Update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 s aktualizací Platform Update 23
@@ -267,7 +267,7 @@ Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem model
 | **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci. Tato změna je určena pro aktualizace platformy pro verze 10.0.11 aplikací Finance and Operations. |
+| **Stav**                         | Zastaralé: Upozornění představuje chybu času kompilace u aktualizací platformy pro verze 10.0.11 aplikací Finance and Operations. |
 
 #### <a name="complete-list"></a>Úplný seznam
 Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).

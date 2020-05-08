@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207826"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281502"
 ---
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
@@ -85,6 +85,9 @@ V tomto příkladu obsahuje proces workflowu pro řádky nákupní žádanky ná
 3.  Manažer žadatele pro řádky ověří a schválí řádky nákupního požadavku. Pokud například počet řádků nákupní žádanky překročí výdajový limit žadatele pro řádky nákupní žádanky, schválení může být směrováno na manažera žadatele. Manažer může schválit nebo zamítnout jeden nebo oba řádky nákupního požadavku.
 4.  Manažer oddělení marketingu posuzuje řádky nákupní žádanky z hlediska jak plakátů, tak i triček. Manažer oddělení prodeje posuzuje řádky nákupního požadavku pouze z hlediska plakátů, protože to jsou jediné náklady, které budou účtovány obchodnímu oddělení.
 5.  Manažer skupiny zkontroluje a schválí řádek nákupní žádanky pro trička pouze v případě, že je schválení od manažera skupiny povinné, například proto, že částka na řádku nákupní žádanky překročí limit ke schválení vedoucím oddělení. Správce skupiny nemusí schválit řádek nákupní žádanky pro plakáty.
+
+> [!NOTE]
+> Chcete-li, aby Workflow záhlaví pro nákupní požadavek vyžadoval schválení související s podpisovým limitem, je nutné nastavit měnu systému.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurace workflowu pro nákupní žádanky
 Pokud chcete směrovat nákupní žádanku ke kontrole, je nutné nakonfigurovat procesy workflowu pro nákupní žádanku. Proces workflowu, který definujete, řídí interakci mezi uživatelem, který si vyžádal položku (žadatel) a kontrolorem a schvalujícím ve workflowu. Postup nákupní žádanky závisí na podmínkách, které jsou uvedeny v konfiguraci workflowu. Například tyto podmínky určují, kdy je třeba směrovat nákupní žádanku, roli, na kterou roli má být nákupní žádanka směrována, a akce, které mohou uživatelé provést.  

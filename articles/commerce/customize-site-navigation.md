@@ -3,7 +3,7 @@ title: Přizpůsobení navigace na webu
 description: V tomto tématu je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001822"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269652"
 ---
 # <a name="customize-site-navigation"></a>Přizpůsobení navigace na webu
 
@@ -93,9 +93,9 @@ Chcete-li do navigační nabídky přidat vlastní možnosti navigace, postupujt
 1. Chcete-li vytvořit novou navigační položku systému správy obsahu (CMS), v podokně vlastností na kartě **Data** vyberte možnost **Přidat položku**.
 1. Zadejte text a adresu URL odkazu.
 1. Chcete-li přidat další vlastní možnosti navigace, opakujte kroky 2 a 3.
-1. Po dokončení uložte šablonu nebo fragment a proveďte vrácení se změnami.
+1. Po dokončení tlačítkem **Uložit** uložte šablonu nebo fragment a poté výběrem možnosti **Dokončit úpravy** ji vraťte se změnami.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 

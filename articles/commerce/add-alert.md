@@ -3,7 +3,7 @@ title: Modul propagačního banneru
 description: Tohle téma se zabývá moduly propagačního banneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025613"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269767"
 ---
 # <a name="promo-banner-module"></a>Modul propagačního banneru
 
@@ -64,16 +64,17 @@ Reklamní bannery mohou být použity v záhlaví pracoviště pro zobrazení pr
 
 Chcete-li přidat modul propagačního banneru na stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona propagačního banneru**.
+1. Zvolte **Nová** pro vytvoření šablony stránky.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona propagačního banneru** a poté klikněte na tlačítko **OK**.
 1. V části **Osnova stránky** přidejte modul **Výchozí stránka** do slotu **Hlavní část**. 
-1. Vraťte šablonu se změnami a publikujte ji. 
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
 1. Šablonu, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka propagačního banneru**. 
 1. V úseku **Hlavní** nové stránky přidejte modul kontejneru. 
 1. V podokně napravo nastavte hodnotu **šířka** na **Vyplnit kontejner**.
 1. V části **Osnova stránky** stránky přidejte do modulu kontejneru modul propgačního banneru.
 1. V nastavení pro modul propgačního banneru přidejte jednu nebo více zpráv banneru. Každá zpráva může obsahovat text spolu s odkazem. Chcete-li dále upravit modul propgačního banneru, můžete upravit ostatní vlastnosti.
-1. Uložte stránku a zobrazte náhled. V horní části stránky by se měla zobrazit výstraha zobrazující text, který jste přidali.
-1. Dokončete úpravy stránky a publikujte ji. 
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky. V horní části stránky by se měla zobrazit výstraha zobrazující text, který jste přidali.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
 
 > [!NOTE]
 > Propagační banner se obvykle používá v patici záhlaví stránky nebo v pozici dílčího hlavního záhlaví.

@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 679448255bd85aafb07270f4858d4b83d2fe643b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204026"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268786"
 ---
 # <a name="set-up-quality-orders"></a>Nastavení objednávek kvality
 
@@ -78,6 +78,9 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 8. Klikněte na možnost **Uložit**.
 9. Zavřete stránku.
 
+> [!NOTE]
+> Funkce *Správa kvality pro procesy skladu* poskytuje dodatečné možnosti vzorkování zboží. Přidá koncepci *rozsahu vzorkování položek* a možnost definovat plnou registrační značku jako specifikaci množství. Pokud jste tuto funkci povolili, další informace naleznete v tématu [Správa kvality pro procesy skladu](../quality-management-for-warehouses-processes.md).
+
 ## <a name="create-a-quality-group"></a>Vytvoření skupiny kvality
 1. Přejděte na **Řízení zásob > Nastavení > Řízení kvality > Skupiny kvality**.
 2. Klepněte na možnost **Nový**.
@@ -127,7 +130,9 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 12. Klikněte na odkaz na vybraném řádku v seznamu. To závisí na předchozích vybraných hodnotách. Určete, zda následující procesy musí být blokovány, zatímco jsou otevřené objednávky kvality připojeny k řádku zdrojového dokumentu.  
 13. Rozbalte nebo sbalte oddíl **Specifikace**.
 14. V poli **Testovací skupina** vyberte skupinu testu vytvořenou dříve.
-15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 16. Klikněte na možnost **Uložit**.
 17. Zavřete stránku.
 
+> [!NOTE]
+> Funkce *Správa kvality pro skladové procesy* poskytuje dodatečné možnosti pro nastavení přidružení kvality. Přidá novou podmínku (**Použitelný typ skladu**) a nové nastavení (**Zásady zpracování kvality**). Pokud jste tuto funkci povolili, další informace naleznete v tématu [Správa kvality pro procesy skladu](../quality-management-for-warehouses-processes.md).

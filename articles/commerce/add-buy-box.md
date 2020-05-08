@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261391"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269744"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -80,15 +80,15 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 1. Vytvořte fragment s názvem **Fragment buy boxu** a do něj přidejte modul buy boxu.
 1. Do pozice **Média** modulu buy boxu přidejte modul galerie médií.
 1. Do slotu **Výběr obchodu** v modulu buy boxu přidejte modul Selektor obchodu.
-1. Vraťte stránku se změnami a publikujte ji.
+1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 1. Vytvořte šablonu pro stránku s podrobnostmi o produktu a pojmenujte ji **Šablona POP**.
 1. Přidejte výchozí stránku.
 1. V pozici **Hlavní** na výchozí stránce přidejte fragment buy boxu.
-1. Uložte šablonu, dokončete úpravy a publikujte ji.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Šablonu, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka POP**.
 1. V pozici **Hlavní** nové stránky přidejte fragment buy boxu.
 1. Uložte stránku a zobrazte náhled. Do adresy URL stránky náhledu přidejte parametr řetězce dotazu **?productid=&lt;id produktu&gt;**. Tímto způsobem se pro načtení a vykreslení stránky náhledu použije kontext produktu.
-1. Uložte stránku, dokončete úpravy a publikujte ji. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
 
 ## <a name="additional-resources"></a>Další prostředky
 

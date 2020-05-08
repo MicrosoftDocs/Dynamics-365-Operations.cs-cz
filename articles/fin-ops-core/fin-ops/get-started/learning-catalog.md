@@ -3,20 +3,20 @@ title: Výukový katalog pro Finance and Operations
 description: Vyhledejte všechny možnosti školení pro Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077986"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278938"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Výukový katalog pro Finance and Operations
 
@@ -33,6 +33,10 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
     Rozhodujete se, zda investovat do nových technologií? 
 
     [Vzdělávací katalog pro osoby rozhodující v obchodní a technické oblasti](learning-catalog-bdm.md#)
+
+    [Začínáme](learning-catalog-bdm.md#get-started)
+
+    [Zkouška](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
 
     [Správa financí](learning-catalog-business-user.md#financial-management)
 
+    [Zkouška](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Správci projektu implementace
+    ### <a name="implementation-project-managers"></a>Správci projektu implementace
 
     Jste zodpovědni za bezproblémovou implementaci v rámci vaší společnosti?
 
@@ -73,6 +79,9 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
     [Výroba](learning-catalog-project-manager.md#manufacturing)
 
     [Správa dodavatelsko-odběratelského řetězce](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Zkoušky](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
 
     [Základní znalost platforem](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Klíčový vývoj](learning-catalog-administrator.md#core-development)
+
     [Migrace a upgrade](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Servis](learning-catalog-administrator.md#servicing)
 
     [Testování](learning-catalog-administrator.md#testing)
+
+    [Zkouška](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
 
     [Správa dodavatelsko-odběratelského řetězce](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Zkoušky](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
     Zodpovídáte za pomoc zákazníkům při koupi správného řešení? 
 
     [Katalog školení pro prodej a marketing pro Microsoft Partnery](learning-catalog-partner-sales.md)
+
+    [Začínáme](learning-catalog-partner-sales.md#get-started)
+
+    [Zkouška](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

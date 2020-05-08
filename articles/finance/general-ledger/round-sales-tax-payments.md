@@ -3,7 +3,7 @@ title: Platby DPH a pravidla zaokrouhlení
 description: Tento článek vysvětluje princip nastavení pravidla zaokrouhlování v rámci finančních DPH, a zaokrouhlení zůstatku DPH během úlohy Vyrovnat a zaúčtovat DPH.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771745"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275667"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Platby DPH a pravidla zaokrouhlení
 
@@ -43,26 +43,26 @@ Celková částka DPH pro období se zobrazí jako kreditní zůstatek -98 765,4
 
 Právnická osoba chce použít metodu zaokrouhlení, která zaokrouhluje zůstatek na nejbližší násobek 1,00. Uživatel odpovědný za účtování DPH musí provést následující akce.
 
-1.  Klikněte na Daň &gt; Nepřímé daně &gt; DPH &gt; Finanční úřady
-2.  Na pevné kartě Obecné vybere v poli Způsob zaokrouhlování možnost Normální.
-3.  V poli Zaokrouhlení zadejte číslo 1,00.
-4.  V době, kdy je nutné zaplatit DPH daňovému úřadu, otevře stránku Vyrovnat a zaúčtovat DPH. (Klikněte na Daň &gt; Přiznání &gt; DPH &gt; Vyrovnat a zaúčtovat DPH.)
-5.  V účtu pro vyrovnání DPH je částka daňové povinnosti 98 765,43 zaokrouhlena na 98 765.
+1. Klikne na **Daň** > **Nepřímé daně** > **DPH** > **Finanční úřady**.
+2. Na pevné kartě **Obecné** vybere v poli **Způsob zaokrouhlování** možnost **Normální**.
+3. V poli **Zaokrouhlení** zadejte číslo 1,00.
+4. V době, kdy je nutné zaplatit DPH daňovému úřadu, přejděte na **Daň** > **Deklarace** > **DPH** > **Vyrovnat a zaúčtovat DPH**. V účtu pro vyrovnání DPH můžete vidět, že částka daňové povinnosti **98 765,43** je zaokrouhlena na zaokrouhlena na **98 765**.
 
-Následující tabulka ukazuje, jak je zaokrouhlena částka 98 765,43 pomocí každé z metod zaokrouhlení, která je k dispozici v poli Způsob zaokrouhlování na stránce Finanční úřady.
+Následující tabulka ukazuje, jak je zaokrouhlena částka 98 765,43 pomocí každé z metod zaokrouhlení, která je k dispozici v poli **Způsob zaokrouhlování** na stránce **Finanční úřady**.
 
-| Možnost zaokrouhlování                | Zaokrouhlená hodnota = 0,01 | Zaokrouhlená hodnota = 0,10 | Zaokrouhlená hodnota = 1,00 | Zaokrouhlená hodnota = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normální                              | 98 765,43              | 98 765,40              | 98 765,00              | 98 800,00                |
-| Dolů                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Zaokrouhlení nahoru                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
-| Vlastní výhoda pro kreditní zůstatek | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Vlastní výhoda pro debetní zůstatek  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Je-li hodnota zaokrouhlení nastavena na 0,00, pak:
+>
+> - Pro normální zaokrouhlování je chování zaokrouhlení stejné jako při **zaokrouhlení = 0,01**.
+> - U možností **Způsob zaokrouhlování**, **dolů**, **Zaokrouhlení nahoru** a **Vlastní výhoda** je chování stejné jako při **Zaokrouhlení = 1.00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Žádné zaokrouhlování, protože zaokrouhlení je 0,00
-
-round(1,0151, 0.00) = 1,0151 round(1,0149, 0.00) = 1,0149
+| Možnost zaokrouhlování                | Zaokrouhlená hodnota = 0,01 | Zaokrouhlená hodnota = 0,10 | Zaokrouhlená hodnota = 1,00 | Zaokrouhlená hodnota = 100,00 | Zaokrouhlená hodnota = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normální                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Dolů                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Zaokrouhlení nahoru                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Vlastní výhoda pro kreditní zůstatek | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Vlastní výhoda pro debetní zůstatek  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normální zaokrouhlení a přesnost zaokrouhlení je 0,01
 

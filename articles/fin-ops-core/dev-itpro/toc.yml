@@ -22,32 +22,6 @@
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (únor 2020)
                   href: get-started/whats-new-platform-update-32.md
-                - name: Platform update 31 (leden 2020)
-                  href: get-started/whats-new-platform-update-31.md
-                - name: Platform update 30 (listopad 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
-                - name: Platform update 29 (říjen 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
-                - name: Platform update 28 (červenec 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
-                - name: Platform update 27 (červen 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
-                - name: Platform update 26 (květen 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
-                - name: Platform update 25 (duben 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-25.md
-                - name: Platform update 24 (březen 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
-                - name: Platform update 23 (leden 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
-                - name: Platform update 22 (prosinec 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
-                - name: Platform update 21 (listopad 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
-                - name: Platform update 20 (září 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
-                - name: Platform update 15 (březen 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce Platform
@@ -104,6 +78,8 @@
               href: dev-tools/exclude-test-packages.md
             - name: Správa modelů třetích stran a balíčků runtime pomocí ovládacího prvku zdroje
               href: dev-tools/manage-runtime-packages.md
+            - name: Nasaditelné balíčky „vše v jednom“
+              href: dev-tools/aio-deployable-packages.md
             - name: Aktualizace verzí modelu v automatizovaném sestavení
               href: dev-tools/version-models-build.md
         - name: Integrace dat
@@ -526,7 +502,7 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Opětovné nasazení místních nasazení
                       href: deployment/redeploy-on-prem.md
-                    - name: Odebrání a přeinstalace uzlu AOS
+                    - name: 'Odebrání, přeinstalace nebo přidání uzlu AOS'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md

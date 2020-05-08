@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: ef4465144155130087b078f9f96911df38b62c41
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173170"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270329"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Synchronizace s cenovým modulem Dynamics 365 Supply Chain Management na požádání
 
@@ -50,6 +50,12 @@ Microsoft Dynamics 365 Supply Chain Management obsahuje cenový modul, který zp
     + Částka s přepravným
     + Celková daň
     + Celková částka
+    
+5. Chcete-li zajistit, aby systém při výpočtu ceny přihlížel k obchodním a prodejním smlouvám, postupujte takto:
+    1. Přejděte k prostředí Supply Chain Management .
+    2. Přejděte na **Pohledávky \> Nastavení \> Parametry pohledávek**.
+    3. Na vedlejším navigačním panelu vyberte kartu **Ceny**.
+    4. Na pebné záložce **Hodnocení obchodní smlouvy** zrušte zaškrtnutí políčka **Ruční zadání**.
 
 ## <a name="how-it-works"></a>Jak to funguje
 

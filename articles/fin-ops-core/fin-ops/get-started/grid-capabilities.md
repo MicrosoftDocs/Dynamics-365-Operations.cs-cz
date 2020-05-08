@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260453"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284397"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -86,6 +86,23 @@ Pokud vyberete možnost **Seskupit podle tohoto sloupce** v jiném sloupci, bude
 
 Chcete-li zrušit seskupení v mřížce, klikněte pravým tlačítkem na sloupec seskupení a vyberte možnost **Zrušit seskupení**.  
 
+## <a name="typing-ahead-of-the-system"></a>Zadávání před systémem
+V mnoha obchodních situacích je schopnost rychlého zadávání dat do systému velmi důležitá. Než byl zaveden nový ovládací prvek mřížky, uživatelé mohli měnit data pouze v aktuálním řádku. Před vytvořením nového řádku nebo přepnutím na jiný řádek byli nuceni čekat, než systém úspěšně ověří provedené změny. Ve snaze o zkrácení doby, kdy uživatelé čekají na dokončení těchto ověření, a za účelem zvýšení produktivity uživatelů nová mřížka tato ověření upravuje, takže jsou asynchronní. Uživatel se proto může přesunout do jiných řádků a provést změny, zatímco ověřování předchozích řádků čekají na vyřízení. 
+
+Kvůli tomuto novému chování byl do horní části mřížky přidán nový sloupec se stavem řádku, pokud je mřížka v režimu úprav. Tento sloupec uvádí jeden z následujících stavů:
+
+- **Prázdné** – žádný stavový obrázek označuje, že byl řádek úspěšně uložen systémem.
+- **Čekání na zpracování** – tento stav znamená, že změny v řádku dosud nebyly uloženy serverem, ale jsou ve frontě změn, které je nutné zpracovat. Před provedením akce mimo mřížku je nutné počkat na zpracování všech čekajících změn. Dále je text v těchto řádcích kurzívou, aby označoval neuložený stav řádků. 
+- **Upozornění na ověření** – tento stav označuje, že systém nemůže uložit změny v řádku z důvodu nějakého problému s ověřením. Ve staré mřížce jste byli nuceni navrátit se do řádku a okamžitě problémy opravit. V nové mřížce se však zobrazí upozornění, že došlo k potížím s ověřením, ale můžete se rozhodnout, kdy chcete opravit problémy v řádku. Až budete připraveni problém vyřešit, můžete vrátit fokus ručně do řádku. Alternativně můžete vybrat akci **Opravit tento problém**. Tato akce okamžitě přesune fokus zpět do řádku s problémem a umožní vám provádět úpravy uvnitř nebo vně mřížky. Všimněte si, že zpracování následných čekajících řádků je zastaveno, dokud nebude toto upozornění na ověření vyřešeno. 
+- **Pozastaveno** – tento stav znamená, že zpracování bylo pozastaveno, protože ověření řádku aktivovalo překryvné dialogové okno, které vyžaduje vstup uživatele. Vzhledem k tomu, že uživatel může zadávat data v některém jiném řádku, místní dialogové okno se tomuto uživateli nezobrazí okamžitě. Namísto toho se zobrazí v případě, že uživatel zvolí obnovení zpracování. Tento stav je doprovázen oznámením, které uživatele informuje o situaci. Oznámení zahrnuje akci **Obnovit zpracování**, která aktivuje místní dialogové okno.  
+    
+Když uživatelé zadávají data v místě, kam zatím nedošlo zpracování serveru, mohou očekávat několik omezení při zadávání dat, jako je například nemožnost vyhledávání, ověřování na úrovni ovládacích prvků a zadávání výchozích hodnot. Uživatelé, kteří potřebují rozevírací seznam pro vyhledání hodnoty, by měli počkat, až server dojde k aktuálnímu řádku. Ověření na úrovni ovládacích prvků a zadání výchozích hodnot také proběhnou, když server zpracuje daný řádek.   
+
+### <a name="pasting-from-excel"></a>Vkládání z aplikace Excel
+Uživatelé vždy mohou exportovat data z mřížek v aplikacích Finance and Operations do aplikace Excel pomocí mechanismu **Exportu do aplikace Excel**. Nicméně možnost zadávání dat před systémem umožňuje, aby nová mřížka podporovala kopírování tabulek z aplikace Excel a jejich vložení přímo do mřížek v aplikacích Finance and Operations. Buňka mřížky, z níž je zahájena operace vložení, určuje, kde bude zkopírovaná tabulka vložena. Obsah mřížky je přepsán obsahem zkopírované tabulky s výjimkou dvou případů:
+
+- Pokud počet sloupců ve zkopírované tabulce překračuje počet sloupců, které zůstanou v mřížce, počínaje místem vložení, uživatel bude upozorněn, že nadbytečné sloupce byly ignorovány. 
+- Pokud počet řádků ve zkopírované tabulce překračuje počet řádků v mřížce, počínaje místem vložení, budou existující buňky přepsány vloženým obsahem a všechny další řádky z kopírované tabulky budou vloženy jako nové řádky v dolní části mřížky. 
 
 ## <a name="evaluating-math-expressions"></a>Vyhodnocování matematických výrazů
 Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat matematické vzorce do číselných buněk v mřížce. Není nutné provádět výpočet v aplikaci mimo systém. Zadáte-li například hodnotu **=15\*4** a poté se stisknutím klávesy **Tab** přesunete mimo pole, systém vyhodnotí výraz a do pole zapíše hodnotu **60**.
@@ -110,3 +127,64 @@ Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znam�
 4.  **Povolit funkci**: vyhledejte funkci **Nový ovládací prvek mřížky** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**. Uvědomte si, že je požadována aktualizace prohlížeče. 
 
 Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
+
+## <a name="known-issues"></a>Známé problémy
+V této části je uveden seznam známých problémů nového ovládacího prvku mřížky, zatímco je ve verzi Preview.  
+
+### <a name="open-issues"></a>Otevřené problémy
+
+- Seznamy karet, které byly vykresleny jako více sloupců, jsou nyní vykresleny jako jeden sloupec.
+- Seskupené seznamy nejsou vykresleny jako skupiny nebo v samostatných sloupcích.
+- Pro obrázky nejsou zobrazeny popisky.
+- Zobrazení mřížky nefunguje pro všechny typy polí.
+- Dočasně nemůžete-kliknout mimo mřížku, pokud vyberete více řádků.
+- Možnosti záznamníku úloh **Ověřit** a **Kopírovat** nejsou dostupné pro ovládací prvky data a čísla.
+
+### <a name="fixed-as-part-of-10012"></a>Opraveno jako součást verze 10.0.12
+
+> [!Note]
+> Následující informace máte k dispozici, abyste mohli odpovídajícím způsobem plánovat. Další informace o cíleném plánu vydání verze 10.0.12 naleznete v tématu [Dostupnost aktualizací služby](../../fin-ops/get-started/public-preview-releases.md).
+
+- [Problém 429126] Ovládací prvky mimo mřížku se po odstranění posledního záznamu neaktualizují.
+- [Problém 430575] Ovládací prvky tabulky neaktualizují obsah zobrazených položek.
+- [KB 4558570] Po odstranění záznamu jsou položky stále zobrazeny na stránce.
+- [KB 4558584] Záporná čísla nejsou správně vykreslena.
+- [KB 4558575] Po změně řádku nejsou aktualizována pole / Po odstranění řádku dojde k zablokování zpracování mřížky.
+- [Problém 436980] Styl, který je přidružen k panelu seznamu **ExtendedStyle**, není použit.
+- [KB 4558573] Chyby ověření nelze opravit, pokud je požadovaná změna mimo mřížku.
+    
+### <a name="quality-update-for-10011"></a>Aktualizace pro zvýšení kvality pro verzi 10.0.11
+
+- [KB 4558381] Záporná čísla nejsou správně vykreslena / Uživatelé jsou někdy zablokováni při vzniku problémů s ověřením.
+
+### <a name="fixed-as-part-of-10011"></a>Opraveno jako součást verze 10.0.11
+
+- [KB 4558374] Záznamy, které vyžadují dialogové okno s polymorfním selektorem, nelze vytvořit.
+- [KB 4558382] Dochází k neočekávaným chybám klienta.
+- [KB 4558375] Text nápovědy se nezobrazuje ve sloupcích v nové mřížce.
+- [KB 4558376] Mřížky panelů seznamů nejsou vykresleny ve správné výšce v aplikaci Internet Explorer.
+- [KB 4558377] Sloupce v poli se seznamem s šířkou **SizeToAvailable** nejsou na některých stránkách vykresleny.
+- [KB 4549711] Řádky v návrhu platby nelze po povolení nového ovládacího prvku mřížky správně odebrat.
+- [KB 4558378] Při procházení k podrobnostem je někdy zobrazen nesprávný záznam.
+- [KB 4558379] Při otevření vyhledávání dochází k chybě, pokud **ReplaceOnLookup**=**No**.
+- [KB 4558380] Volné místo v mřížce není po sbalení části stránky vyplněno ihned.
+- [Vystavení 432458] Na začátku některých podřízených kolekcí se zobrazí prázdné nebo duplicitní řádky.
+- [KB 4558587] Referenční skupiny s poli se seznamem pro náhradní pole nezobrazují hodnoty.
+
+### <a name="fixed-as-part-of-10010"></a>Opraveno jako součást verze 10.0.10
+
+- [Problém 414301] Při vytvoření nových řádků zmizí některá data z předchozích řádků.
+- [KB 4550367] Časové hodnoty nejsou správně naformátovány.
+- [KB 4549734] Pokud je označující sloupec skrytý, aktivní řádky nejsou považovány za označené.
+- [Chyba 417044] Pro mřížky ve stylu seznamu neexistuje žádná zpráva o prázdné mřížce.
+- [KB 4558367] Výběr textu není konzistentní při změně řádků.
+- [KB 4558372] Nová mřížka je zablokovaná v režimu zpracování, pokud počet sloupců ve vloženém obsahu přesahuje počet zbývajících sloupců v mřížce.
+- [KB 4558368] Vícenásobný výběr pomocí klávesnice je povolen v situacích výběru jedné položky.
+- [KB 4539058] Některé mřížky (obvykle na záložkách s náhledem) někdy nejsou vykresleny (ale budou vykresleny, pokud oddálíte zobrazení).
+- [KB 4558369] V hierarchické mřížce zmizí obrázky stavu.
+- [KB 4558370] Nový řádek není posunut do zobrazení.
+- [KB 4549796] Hodnoty nelze upravovat v mřížce v režimu zobrazení.
+
+### <a name="quality-update-for-1009platform-update-33"></a>Aktualizace pro zvýšení kvality pro verzi 10.0.9 / Platform update 33
+
+- [KB 4550367] Časové hodnoty nejsou správně naformátovány.

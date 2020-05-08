@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172870"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275457"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Poradce při potížích souvisejících s upgrady aplikací Finance and Operations
 
@@ -85,9 +85,8 @@ Pokud problém stále není opraven, postupujte podle následujících kroků.
 > Tento postup vás provede procesem odstranění entity a jejím opětovným přidáním. Chcete-li předejít problémům, postupujte přesně podle kroků.
 
 1. V aplikaci Finance and Operations přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Datové entity**.
-2. Vyhledejte entitu, u které chybí pole. Vytvořte si poznámku o cílové entitě, pracovní tabulce, názvu entity a dalších hodnotách sloupců.
-3. Pokud některá ze skupin zpracování závisí na této entitě, proveďte před odstraněním entity odpovídající akci pro skupiny zpracování.
-4. Odstraňte entitu, u které chybí pole.
-5. Vyberte **Nový** a entitu přidejte zpět. Zadejte hodnoty, které jste si poznamenejte v kroku 2.
-6. Otevřete stránku **Mapování entit** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
-7. Chcete-li vyplnit pole v mapování entit, vyberte možnost **Aktualizovat seznam entit** .
+2. Vyhledejte entitu, u které chybí atribut. V panelu nástrojů klikněte na možnost **Změnit mapování cíle**.
+3. V podokně **Mapovat fázování na cíl** klikněte na možnost **Generovat mapování**.
+4. Otevřete stránku **Mapování entit** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
+5. Není-li atribut automaticky naplněn na mapě, přidejte jej ručně kliknutím na tlačítko **Přidat atribut** a následným kliknutím na tlačítko **Uložit**. 
+6. Vyberte mapování a klikněte na tlačítko **Spustit**.

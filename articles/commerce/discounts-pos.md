@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116549"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265569"
 ---
 # <a name="show-discounts-in-pos"></a>Zobrazit slevy v POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Promoakce hrají důležitou roli při motivaci zákazníků, kteří provádějí nákupní rozhodnutí. Svátky mohou například zajistit nejvyšší počet prodejů maloobchodníkům, protože celý maloobchodní trh je zaplaven promoakcemi a slevami. Pokud členové obchodu informují informace o dostupných promoakcích a rozumíte jim, mohou tyto promoakce snadno využít k propagaci křížových a návazných položek. Toto téma vysvětluje, jak Microsoft Dynamics 365 Commerce pomáhá prodejcům získat informace o promoakcích a způsobu jejich použití pro křížové a návazné pohyby.
 

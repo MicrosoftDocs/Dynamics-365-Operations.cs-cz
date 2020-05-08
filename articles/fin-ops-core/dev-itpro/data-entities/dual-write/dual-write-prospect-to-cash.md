@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172801"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270281"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -66,6 +66,14 @@ Prodejní nabídky mohou být vytvořeny v aplikaci Sales nebo Supply Chain Mana
 + Na nabídku můžete přidat slevu. V takovém případě bude sleva synchronizována se Supply Chain Management. Pole **Slevy**, **Náklady**, a **Daň** v hlavičce jsou kontrolována nastavením v aplikaci Supply Chain Management. Toto nastavení nepodporuje mapování integrace. Místo toho jsou pole **Cena**, **Sleva**, **Účtování** a **Daň** ponechána a zpracována aplikací Supply Chain Management.
 + Pole **Sleva %**, **Sleva** a **Částka dopravného** jsou v záhlaví prodejní nabídk jen pro čtení.
 + Pole **Podmínky přepravy**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
+
+Používáte-li také řešení Field Service, ujistěte se, že jste znovu povolili parametr **Rychlé vytvoření řádky nabídky**. Opětovná aktivace parametru umožňuje pokračovat ve vytváření řádků nabídky pomocí funkce rychlého vytvoření.
+1. Přejděte k aplikaci Dynamics 365 Sales.
+2. V horním navigačním pruhu vyberte ikonu nastavení.
+3. Vyberte možnost **Rozšířená nastavení**.
+4. Zvolte možnost **Přizpůsobit systém**.
+5. V nabídce vyberte položku **Řádek nabídky**.
+6. Přejděte na oddíl **Datové služby** a zaškrtněte políčko **Povolit rychlé vytváření**.
 
 ## <a name="sales-orders"></a>Prodejní objednávky
 

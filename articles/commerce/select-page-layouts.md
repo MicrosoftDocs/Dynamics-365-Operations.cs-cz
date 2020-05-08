@@ -3,7 +3,7 @@ title: Výběr rozvržení stránky
 description: Toto téma vysvětluje, jak vytvořit a vybrat rozvržení stránky v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3e8efcdc236911ac79007c606d5d1da56f6c424
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002767"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269905"
 ---
 # <a name="select-page-layouts"></a>Výběr rozvržení stránky
 
@@ -39,7 +39,7 @@ Toto téma vysvětluje, jak vytvořit a vybrat rozvržení stránky v aplikaci M
 Chcete-li vytvořit rozvržení pro existující stránku, postupujte podle následujících kroků.
 
 1. Přejděte na **Stránky** a vyhledejte existující stránku v seznamu. Použijte funkci vyhledávání podle potřeby.
-1. Vyberte stránku, rezervujte ji a poté ji otevřete. Poznamenejte si pořadí modulu.
+1. Vyberte stránku, vyberte možnost **Upravit**, chcete-li ji rezervovat, a poté vyberte název stránky. Poznamenejte si pořadí modulu.
 1. Vyberte **Uložit jako nové rozvržení**.
 1. Zadejte název rozvržení a poté vyberte **OK**.
 1. Vyberte **Převést na vložené rozložení**.
@@ -47,6 +47,7 @@ Chcete-li vytvořit rozvržení pro existující stránku, postupujte podle nás
 1. Vyberte **Uložit jako nové rozvržení**.
 1. Zadejte název rozvržení a poté vyberte **OK**.
 1. Vyberte možnost **Změnit rozvržení**, vyberte první vytvořené rozvržení a poté klepněte na tlačítko **OK**. Poznamenejte si pořadí modulu. Změňte ji tak, aby odpovídala pořadí modulu, které bylo uloženo s rozvržením.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
 
 ## <a name="select-a-different-layout-for-an-existing-page"></a>Výběr jiného rozvržení pro existující stránku
 
@@ -56,11 +57,12 @@ Chcete-li vytvořit rozvržení pro existující stránku, postupujte podle nás
 Chcete-li vybrat jiné rozvržení pro existující stránku, postupujte podle následujících kroků.
 
 1. Přejděte na **Stránky** a vyhledejte existující stránku v seznamu. Použijte funkci vyhledávání podle potřeby.
-1. Vyberte stránku, rezervujte ji a poté ji otevřete.
+1. Vyberte stránku, vyberte možnost **Upravit**, chcete-li ji rezervovat, a poté vyberte název stránky.
 1. Vyberte **Změnit rozvržení**.
 1. Vyberte nové rozvržení stránky a pak vyberte **OK**. Editor stránek je aktualizován za účelem zobrazení nového rozvržení.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Úprava existující webové stránky](modify-existing-page.md)
 

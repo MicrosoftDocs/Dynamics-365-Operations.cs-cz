@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042704"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284349"
 ---
 # <a name="electronic-reporting-formula-language"></a>Jazyk receptur v elektronickém výkaznictví
 
 [!include [banner](../includes/banner.md)]
 
-Elektronické výkaznictví (ER) poskytuje výkonné možnosti transformace dat. Jazyk používaný k vyjádření potřebných manipulací s daty v Návrháři vzorců ER se podobá jazyku vzorců v aplikaci Microsoft Excel.
+Elektronické výkaznictví (ER) poskytuje výkonné možnosti transformace dat. Jazyk používaný k vyjádření potřebných manipulací s daty v [Návrháři vzorců ER](general-electronic-reporting-formula-designer.md) se podobá jazyku vzorců v aplikaci Microsoft Excel.
 
 ## <a name="basic-syntax"></a>Základní syntaxe
 
@@ -41,13 +41,13 @@ Výrazy elektronické výkaznictví mohou obsahovat jakékoli nebo všechny nás
 - [Cesty](#Paths)
 - [Funkce](#Functions)
 
-## <a name="Constants">Konstanty</a>
+## <a name=""></a><a name="Constants">Konstanty</a>
 
 Při návrhu výrazů lze použít text a numerické konstanty (hodnoty, které nejsou vypočteny). Například výraz `VALUE ("100") + 20` používá číselnou konstantu **20** a řetězcovou konstantu **"100"** a vrátí číselnou hodnotu **120**.
 
 Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence. Můžete tedy určit řetězec výrazu, se kterým má být zacházeno jinak. Výraz `"Leo Tolstoy ""War and Peace"" Volume 1"` například vrátí textový řetězec **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name="Operators">Operátory</a>
+## <a name=""></a><a name="Operators">Operátory</a>
 
 Následující tabulka ukazuje aritmetické operátory, které lze používat k provádění základních matematických operací, například sčítání, odčítání, dělení a násobení.
 
@@ -91,7 +91,7 @@ Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité.
 
 Pokud výraz obsahuje několik po sobě jdoucích operátorů, které mají stejnou prioritu, vyhodnocují se tyto operátory zleva doprava. Například výraz `1 + 6 / 2 \* 3 > 5` vrátí hodnotu **pravda**. Doporučujeme vám pomocí závorek explicitně určit požadované pořadí operátorů ve výrazech, usnadní se tím čtení a správa výrazů.
 
-## <a name="References">Odkazy</a>
+## <a name=""></a><a name="References">Odkazy</a>
 
 Všechny zdroje dat aktuální součásti elektronického výkaznictví, které jsou k dispozici během návrhu výrazu, lze použít jako pojmenované odkazy. Aktuální komponenta ER může být buď mapování modelu, nebo formát. Aktuální datový model elektronického výkaznictví například obsahuje zdroj dat **ReportingDate**, který vrací hodnotu datového typu *DateTime*. Abyste tuto hodnotu v generování dokumentu správně zformátovali, můžete odkazovat na zdroj dat ve výrazu, jako je `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
@@ -112,7 +112,7 @@ Je možné omezit způsob, jakým jsou hodnoty předány do parametrů tohoto ty
 - Lze předat pouze konstanty do metod tohoto typu. Hodnoty konstant jsou definovány v době návrhu.
 - Podporovány jsou pouze jednoduché (základní) datové typy pro parametry tohoto typu. Jednoduché datové typy jsou *celé číslo*, *reálné*, *logická hodnota* a *řetězec*.
 
-## <a name="Paths">Cesty</a>
+## <a name=""></a><a name="Paths">Cesty</a>
 
 Pokud výraz odkazuje na strukturovaný zdroj dat, můžete použít definici cesty k volbě určitého primitivního prvku daného zdroje dat. Znak tečky (.) se používá k oddělení jednotlivých prvků strukturovaného zdroje dat. Například aktuální model mapování elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů. Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty. Proto můžete pro výpočet fakturované částky navrhnout následující výraz: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstrukce `InvoiceTransactions.AmountDebit` v tomto výrazu je cesta, která se používá pro přístup k poli **AmountDebit** zdroje dat **InvoiceTransactions** typu *Seznam záznamů*.
 
@@ -130,7 +130,7 @@ Zbývající část absolutní cesty je také zobrazena v [editoru vzorců ER](g
 
 ![Zbývající část absolutní cesty na stránce návrháře vzorců ER](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Funkce</a>
+## <a name=""></a><a name="Functions">Funkce</a>
 
 Vestavěné funkce ER lze používat ve výrazech ER. Všechny zdroje dat kontextu výrazu (tj. aktuální mapování modelu nebo formát elektronického výkaznictví) mohou sloužit jako parametry funkcí volání, v souladu se seznamem argumentů pro funkce volání. Konstanty lze také použít jako parametry funkcí volání. Například aktuální model mapování elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů. Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty. Takže pokud chcete vypočítat fakturovanou částku, můžete navrhnout následující výraz využívající integrovanou funkci zaokrouhlování pro použití v elektronickém výkaznictví: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 

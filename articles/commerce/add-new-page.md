@@ -3,7 +3,7 @@ title: Přidání nové webové stránky
 description: Toto téma popisuje, jak přidat novou stránku webu v řešení Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001339"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269951"
 ---
 # <a name="add-a-new-site-page"></a>Přidání nové webové stránky
 
@@ -67,7 +67,7 @@ Chcete-li na svůj web přidat novou stránku webu, postupujte podle následují
 1. Vyberte **Blok s formátovaným obsahem**, vyberte tlačítko se třemi tečkami a poté vyberte možnost **Přidat modul**.
 1. Vyberte **Položka bloku s formátovaným obsahem** a pak klikněte na tlačítko **OK**.
 1. V podokně vlastností vpravo vyberte možnost **Odstavec**a pak v poli zadejte **Můj testovací text**.
-1. Vyberte **Uložit** a potom **Vrátit se změnami**.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
 1. Do pole **Poznámky** zadejte **Přidaná nová stránka** a pak vyberte **OK**.
 1. Chcete-li zobrazit náhled stránky, vyberte volbu **Náhled**. Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
 1. Zvolte **Publikovat**.

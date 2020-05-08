@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209897"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274158"
 ---
 # <a name="create-an-asset"></a>Vytvoření majetku
 
@@ -38,13 +38,13 @@ Toto téma popisuje, jak vytvořit majetek v modulu Správa majetku.
 3. V dialogovém okně **Vytvořit majetek** zadejte data týkající se **majetku** (ID majetku) a název majetku. V poli **Platnost** vyberte datum a čas majetku. Od tohoto data můžete majetek nainstalovat do funkčního umístění a také přesunout a nahradit majetek ve struktuře majetku.
 4. V poli **typ** majetku vyberte typ majetku pro majetek (povinné pole). V případě potřeby vyberte **výrobce majetku** a **model majetku**. Pokud byl nastaven pouze jeden produkt, je tento produkt automaticky vybrán v poli **výrobce majetku**. Výběry dostupné v polích **Výrobce majetku** a **Model majetku** závisí na nastavení v poli [Výrobci a modely majetku](../setup-for-objects/product-and-model.md).
 5. Ve skupině **Nadřazený majetek** je pole **Majetek** ve výchozím nastavení prázdné. V případě potřeby můžete vybrat nadřazený majetek a potom budou automaticky vyplněna všechna pole ve skupině **nadřazený majetek**.
->[!NOTE]  
->Když vyberete nadřazený majetek, jsou k dispozici dvě nebo tři karty: karta **Můj majetek** obsahuje majetek související s funkčními místy, do kterých můžete být přidělení (pracovník údržby, který je přihlášen k systému). Nejsou-li u pracovníka údržby ve formuláři [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md) nastavena žádná funkční umístění, nebude karta **Můj majetek** viditelná. Karta **Aktivní majetek** obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. Karta **Zobrazení majetku** zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
+    >[!NOTE]  
+    >Když vyberete nadřazený majetek, jsou k dispozici dvě nebo tři karty: karta **Můj majetek** obsahuje majetek související s funkčními místy, do kterých můžete být přidělení (pracovník údržby, který je přihlášen k systému). Nejsou-li u pracovníka údržby ve formuláři [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md) nastavena žádná funkční umístění, nebude karta **Můj majetek** viditelná. Karta **Aktivní majetek** obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. Karta **Zobrazení majetku** zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
 
 6. Výchozí funkční umístění, které jste nastavili, je navrženo pro majetek v poli **Skupina majetku** > **Funkční místo**. V případě potřeby vyberte jiné funkční místo.
 
->[!NOTE]
->Po vytvoření můžete majetek nainstalovat do jiného funkčního umístění, pokud je to vyžadováno. Do funkčního umístění lze nainstalovat pouze majetek nejvyšší úrovně (majetek bez aktuálního nadřazeného majetku). To znamená, že jste nainstalovali nejvyšší úroveň a také veškerý podřízený majetek ve vybraném funkčním místě. Přečtěte si další informace o instalaci majetku do funkčních míst v poli [Úvod do funkčních míst](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Po vytvoření můžete majetek nainstalovat do jiného funkčního umístění, pokud je to vyžadováno. Do funkčního umístění lze nainstalovat pouze majetek nejvyšší úrovně (majetek bez aktuálního nadřazeného majetku). To znamená, že jste nainstalovali nejvyšší úroveň a také veškerý podřízený majetek ve vybraném funkčním místě. Přečtěte si další informace o instalaci majetku do funkčních míst v poli [Úvod do funkčních míst](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klikněte na tlačítko **OK**.
 8. Vyberte majetek v seznamu **Všechen majetek** a kliknutím na tlačítko **Upravit** přidejte k majetku další informace.

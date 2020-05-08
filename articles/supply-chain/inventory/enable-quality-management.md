@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224902"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268809"
 ---
 # <a name="quality-management-overview"></a>Přehled správy kvality
 
@@ -43,7 +43,11 @@ Správa kvality je flexibilní a lze ji implementovat různými způsoby, aby by
 
 -   Automatické spuštění procesu řízení kvality na základě předem definovaných kritérií (při registraci nákupní objednávky od konkrétního dodavatele ve skladu).
 -   Blokování zásob při inventuře zabraňuje použití neschválených zásob (úplné blokování množství nákupní objednávky).
--   Použití vzorkování jako součásti přidružení k definici množství aktuálních fyzických zásob, které je nutné zkontrolovat. Vzorkování může být založeno na pevném množství nebo na procentuální hodnotě.
+-   Použití vzorkování jako součásti přidružení k definici množství aktuálních fyzických zásob, které je nutné zkontrolovat. Vzorkování může být založeno na pevném množství, procentuální hodnotě nebo celé licenční značky.
+
+> [!NOTE]
+> Funkce _Správa kvality pro procesy skladu_ rozšiřuje možnosti správy kvality. Používáte-li tuto funkci, přejděte do tématu [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md), kde najdete příklady, jak povolit správu kvality.
+
 -   Vytvořte objednávky kvality pro částečné příjmy. Abyste mohli vytvořit objednávku kvality, která je založena na množství fyzicky přijatém s objednávkou, je nutné zaškrtnout políčko **Na aktualizované množství** ve formuláři **Vzorkování položky**.
 -   Vytvoření typů testu, které zahrnují minimální, maximální a cílové hodnoty testu, a vykonání testu kvality vůči množství s předdefinovanými ověřovacími výsledky.
 -   Určení přijatelné úrovně kvality (AQL) pro řízení odchylek měření kvality.
@@ -428,6 +432,9 @@ Pokud ve výrobě nastavíte pole **Typ události** na hodnotu **Vykázat jako d
 </tbody>
 </table>
 
+> [!NOTE]
+> Funkce *Správa kvality pro procesy skladu* přidává možnosti zpracování objednávky kvality pro výrobu s atributem **Typ události** nastaveným jako *Oznámit jako dokončené* a atributem **Spuštění** nastaveným jako *Po dokončení*, a pro nákupy s atributem **Typem události** nastaveným jako *Registrace*. Další informace vizi [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Stránky modulu Správa kvality
 <table>
 <colgroup>
@@ -437,8 +444,8 @@ Pokud ve výrobě nastavíte pole **Typ události** na hodnotu **Vykázat jako d
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stránka</th>
-<th>Popis</th>
+<th>Strana</th>
+<th>popis</th>
 <th>Příklad</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Přiřazení kvality je nutné definovat pro každou variantu obchodního proces
 [Procesy správy kvality](quality-management-processes.md)
 
 [Řízení neshody](enable-nonconformance-management.md)
+
+[Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md)
