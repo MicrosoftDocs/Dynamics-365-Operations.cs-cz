@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (duben 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (únor 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce Platform
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Nastavení duálního zápisu z Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Počáteční synchronizace
-                              href: data-entities/dual-write/initial-sync.md
                             - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
                               items:
                                 - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Řízení verze, vyhledávání metadat a navigace'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Vytvoření automatizace pomocí Azure
+              items:
+                - name: Vytvoření automatizace pomocí agentů hostovaných společností Microsoft a Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Přidání licenčních souborů do nasaditelného balíčku v Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Vytvoření nasaditelných balíčků v Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: Verzování modelu X++ v Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Vzorová aplikace správy vozového parku
               items:
                 - name: Klient-server scénář pro vzorovou aplikaci správy vozového parku
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Přiřazení uživatelů k rolím zabezpečení
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Diagnostika zabezpečení pro záznamy úkolů
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Dávkové zpracování
               items:
                 - name: Přehled dávkového zpracování
