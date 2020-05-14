@@ -990,6 +990,8 @@
               href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: "Prognózy projektu a\_rozpočty"
               href: project-management/project-forecasts-budgets.md
+            - name: Vytvoření modelů prognózy pro rozpočty projektu
+              href: project-management/create-forecast-models-project-budgets.md
             - name: Převod rozpočtů projektu na konci fiskálního roku
               href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Prodejní objednávky projektu
@@ -1742,8 +1744,8 @@
               items:
                 - name: Maďarsko - přehled
                   href: localizations/hungary.md
-                - name: Výpočet směnného kurzu
-                  href: localizations/tasks/hu-00001-exchange-rate-calculation.md
+                - name: Výpočet průměrného a denního směnného kurzu
+                  href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: Metody odpisu dlouhodobého majetku
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
                 - name: Dlouhodobý majetek s nízkými náklady
@@ -2284,6 +2286,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
+                - name: 'Soubor auditu (XML Auditfile Financieel, XAF)'
+                  hred: localizations/emea-nl-audit-file.md
             - name: Norsko
               items:
                 - name: Norsko - přehled
@@ -2978,7 +2982,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                        - name: Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3026,6 +3030,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
+                        - name: Dnes
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
                     - name: Seznam
                       items:
                         - name: Funkce seznamu
@@ -3240,12 +3246,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Výběr definic datového modelu při vytváření formátů
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Rozšířené možnosti filtrování pro vyhledání konfigurací v globálním úložišti
-              href: ../finance/localizations/enhanced-filtering-global-repo.md
-            - name: Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-            - name: (Elektronické výkaznictví) Datové zdroje mezi společnostmi v elektronickém výkaznictví
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
             - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
               items:
                 - name: (Elektronické výkaznictví) Návrh konfigurace pro generování sestav ve formátu OPENXML
@@ -3270,44 +3270,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
             - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Návrh řešení elektronického výkaznictví k používání finančních dimenzí
-              items:
-                - name: Návrh datových modelů k používání finančních dimenzí jako zdrojů dat
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                - name: Mapování modelů k používání finančních dimenzí jako zdrojů dat
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                - name: Návrh sestav k používání finančních dimenzí jako zdrojů dat
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                - name: 'Spuštění sestav, které používají finanční dimenze jako zdroje dat'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-            - name: Návrh formátů elektronického výkaznictví pro provedení počítání a sčítání pomocí informací z generovaného výstupu
-              items:
-                - name: Vytvoření formátů pro provádění počítání a sčítání
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurace formátu pro provádění počítání a sčítání
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                - name: Použití výpočtů pro generování výstupu počítání a sčítání
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                - name: Spuštění formátů pro provádění počítání a sčítání
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
             - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
               items:
                 - name: Návrh formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                 - name: Spuštění formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-            - name: Použití souborů pro správu dokumentů ve výstupech formátu
-              items:
-                - name: Příprava datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                - name: Rozšíření datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                - name: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                - name: Spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace dat aplikace pomocí elektronického výkaznictví
               items:
                 - name: Generování elektronických dokumentů a aktualizace dat aplikace
@@ -3340,8 +3308,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Podpora parametrizovaných volání datových zdrojů elektronického výkaznictví typu vypočítaného pole
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: Životní cyklus konfigurace
               items:
                 - name: Správa životního cyklu konfigurace
@@ -3361,23 +3327,67 @@
                     - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Import konfigurací z RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: Kurzy
               items:
-                - name: Použití zdrojů dat JOIN k získání dat z více aplikačních tabulek
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                - name: Naučte se používat zdroje dat
+                  items:
+                    - name: Použití PŘIPOJIT pro získání dat z více tabulek
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Použití NEZPRACOVANÉHO XML pro přidání obsahu
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                    - name: Podpora parametrizovaných volání datových zdrojů POČÍTANÉHO POLE
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: Mezipodnikové zdroje dat elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Použití zdrojů dat PODROBNOSTÍ FINANČNÍCH DIMENZÍ
+                      items:
+                        - name: Návrh datových modelů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Mapování modelů pro použití finančních dimenzí
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Návrhy sestav
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Spuštění sestav
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Použít generovaný výstup jako zdroj dat k provádění počítání a sčítání
+                      items:
+                        - name: Vytvoření formátů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurace formátu pro provádění počítání a sčítání
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Generování výstupu pro počítání a sčítání
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Spuštění formátů pro provádění počítání a sčítání
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Použití vztahů DOKUMENTŮ pro přístup k souborům pro správu dokumentů
+                      items:
+                        - name: Příprava datových modelů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Rozšíření datových modelů k použití souborů pro správu dokumentů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Vytvoření formátů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Spuštění formátů k použití souborů pro správu dokumentů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                        - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                        - name: Ladění zdrojů dat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
                 - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
                 - name: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                 - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
                 - name: Odložení provádění prvků formátu elektronického výkaznictví
                   items:
                     - name: Odložení provádění prvku posloupnosti
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                     - name: Odložení provádění prvku XML
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                - name: Relativní cesta v datových vazbách
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
               items:
                 - name: Konfigurace architektury
@@ -3385,7 +3395,11 @@
                     - name: Konfigurace architektury elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Záloha a obnovení šablon elektronického výkaznictví
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: Úložiště záloh šablon elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                        - name: Vyčištění migrace elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
                     - name: Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Místa určení
