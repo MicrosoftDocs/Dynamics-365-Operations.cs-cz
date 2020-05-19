@@ -19,17 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7b6b4cb1c3035e8341928562c447b03affd40167
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e7775e797708668a339b6b02ed822261406c829
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213554"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323662"
 ---
 # <a name="set-up-master-planning"></a>Nastavení hlavního plánování
 
-
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování. Obsahuje přehled typů plánů, které jsou používány hlavním plánováním, a vysvětluje, jakou strategii plánování byste měli použít v závislosti na obchodních požadavcích. Popisuje také hlavní parametry ovlivňující plán a vysvětluje, jak tyto parametry ovlivňují navrhované plánované objednávky.

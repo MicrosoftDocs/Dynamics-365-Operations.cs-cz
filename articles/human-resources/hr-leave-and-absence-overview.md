@@ -3,7 +3,7 @@ title: Přehled
 description: V Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226223"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325758"
 ---
 # <a name="overview"></a>Přehled
 
@@ -78,8 +78,16 @@ Nelze nastavit **Přesnost zaokrouhlení** při nastavení **Typu zaokrouhlení*
 
 ## <a name="leave-and-absence-preview-features"></a>Funkce náhledu pracovního volna a absence
 
-V prostředí **izolovaného prostoru** můžete vyzkoušet nové funkce náhledu pracovního volna a absence. Informace o zapnutí funkcí náhledu naleznete v tématu [Správa funkcí](hr-admin-manage-features.md). Funkce náhledu zahrnují:
+V prostředí **izolovaného prostoru** můžete vyzkoušet nové funkce náhledu pracovního volna a absence. Informace o zapnutí funkcí náhledu naleznete v tématu [Správa funkcí](hr-admin-manage-features.md). 
 
-- **Přerušení pracovního volna** - můžete přerušit pracovní volno a absenci v Human Resources pro zaměstnance. Pozastavením volna se zastaví časové rozlišení volna pro vybrané typy pracovního volna. Pokud k přerušení dojde po zpracování časového rozlišení, pozastavením volna se vytvoří průběžná Úprava zůstatku zaměstnance. 
+[!include [banner](includes/preview-feature.md)]
+
+Funkce náhledu zahrnují:
+
+- **Přerušení pracovního volna** - můžete přerušit pracovní volno a absenci v Human Resources pro zaměstnance. Pozastavením volna se zastaví časové rozlišení volna pro vybrané typy pracovního volna. Pokud k přerušení dojde po zpracování časového rozlišení, pozastavením volna se vytvoří průběžná Úprava zůstatku zaměstnance. Při pozastavení dovolené zaměstnance můžete také uvést kódy důvodů. Uživatelské prostředí bylo aktualizováno, aby indikovalo pozastavení. 
 
 - **Pravidla převodu do dalšího období** - můžete určit typ převodu pracovního volna do dalšího období pro převod zůstatků, kde byly převedeny úpravy převodu do dalšího období. Pokud například zaměstnanec přenese deset dní dopředu, můžete pro tyto 10 dny vybrat jiný typ pracovního volna. 
+
+- **Uveďte kód důvodu a komentáře k úpravám** – Při úpravě zůstatku dovolené zaměstnance můžete uvést kód důvodu a komentář. 
+
+- **Parametry přechodu na dovolenou a nepřítomnost** – Nyní můžete místo použití parametrů Lidské zdroje používat pouze parametry Dovolená a absence. 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 479a7edd456a1f4d121ceef292d2559c400c31a2
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266316"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346346"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.11 (červenec 2020)
 
@@ -40,7 +40,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 - [Úložiště sestavy zásob na skladě](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Vylepšení příjmu registračních značek pro mobilní aplikaci Warehousing](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Další informace naleznete v tématu [Registrační značky přijímané prostřednictvím mobilní aplikace Warehousing](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Vylepšení příjmu registračních značek pro aplikaci skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Další informace naleznete v tématu [Registrační značky přijímané prostřednictvím aplikace skladu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Vylepšení rezervací řádků pro formulář rezervace čísla dávky](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - další informace naleznete v tématu [Rezervace stejné dávky pro prodejní objednávku](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Nové datové entity pro oblast výroby](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Příjem většího množství nákladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - Další informace naleznete v tématu [Zpracování příchozích nákladů ve skladu pro nákupní objednávky](../warehousing/inbound-load-handling.md).

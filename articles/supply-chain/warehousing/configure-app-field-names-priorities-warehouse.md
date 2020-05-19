@@ -1,6 +1,6 @@
 ---
 title: Konfigurace názvů polí aplikace v aplikaci Warehousing
-description: Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Dynamics 365 Supply Chain Management.
+description: Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace Warehousing a priority v aplikaci Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f9b02b93895757580b323a4cd891909d5551ea55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205752"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346392"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurace názvů polí aplikace v aplikaci Warehousing
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Dynamics 365 Supply Chain Management. 
+Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace Warehousing a priority v aplikaci Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace skladu a priority, a zároveň způsob jejich použití v aplikaci Warehousing. Podrobné informace o konfiguraci připojení k aplikaci Warehousing naleznete v kurzu [Přehled instalace a konfigurace aplikace Warehousing](install-configure-warehousing-app.md).
+> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace Warehousing a priority, a zároveň způsob jejich použití v aplikaci Warehousing. Podrobné informace o konfiguraci připojení k aplikaci Warehousing naleznete v kurzu [Přehled instalace a konfigurace aplikace Warehousing](install-configure-warehousing-app.md).
 
-## <a name="configure-warehouse-app-field-names"></a>Konfigurace názvů polí aplikace skladu
+## <a name="configure-warehousing-app-field-names"></a>Konfigurace názvů polí v aplikaci skladu
 
 Použijete-li aplikaci Warehousing na svém mobilním zařízení, můžete nakonfigurovat, jakým způsobem se zobrazí metadata na vašem zařízení na stránce **Názvy polí aplikace skladu**. V nové společnosti vyberte možnost **Vytvořit výchozí nastavení** pro vygenerování názvů všech polí, které budou použity ve workflow skladu na mobilním zařízení, přiřaďte jim upřednostňovaný vstupní režim a typ vstupu. Po vygenerování všech názvů polí můžete vybrat následující možnosti vstupu.
 
@@ -68,7 +68,7 @@ Použijete-li aplikaci Warehousing na svém mobilním zařízení, můžete nako
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Konfigurace priority pole aplikace skladu
+## <a name="configure-warehousing-app-field-priority"></a>Konfigurace priority polí v aplikaci skladu
 
 Na stránce **Priorita pole aplikace skladu** můžete umístit názvy polí do různých skupin priority. Díky tomu je možné se rozhodnout, jaké informace mají být zobrazeny na hlavní stránce úloh, když pracovníci skladu provádět úlohy pomocí této aplikace. Pokud klikněte na možnost **Vytvořit výchozí nastavení**, vygeneruje se výchozí sada skupin priority. Je možné vytvořit libovolný počet skupin priority podle potřeby, ale pouze tři skupiny priorit se zobrazí na stránce úloh. Když systém odesílá metadata do aplikace, přiřadí každému poli relativní prioritu v závislosti na skupině priority, a aplikace zobrazí první tři skupiny priority obsažené v metadatech na stránce úloh. Zbývající metadata se zobrazí na sekundární stránce podrobností. V následující tabulce je uveden příklad pěti skupin priority.
 
@@ -132,7 +132,7 @@ Například pokud pracovník skladu provádí úlohu na mobilním zařízení, s
 -   Popis položky
 -   Velikost a umístění
 
-Na základě nastavení priority pole aplikace skladu ve výše uvedené tabulce se zobrazí na stránce úloh následující 3 řádky informací:
+Na základě nastavení priority pole aplikace warehousing ve výše uvedené tabulce se zobrazí na stránce úloh následující 3 řádky informací:
 
 -   Řádek 1: Položka, množství a měrná jednotka
 -   Řádek 2: Popis položky

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
+ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275643"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340923"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -62,14 +62,14 @@ Po instalaci nástroje package deployer nainstalujte balíček řešení pomocí
 
 Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k aplikaci Finance and Operations, otevřete stránku **Nastavení** a v části **Systém** vyberte možnost **Správa**.
+1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Systém** vyberte **Správa**.
 2. Na stránce **Správa** zvolte **Nastavení systému**.
 3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
 
 
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k aplikaci Finance and Operations, otevřete stránku **Nastavení** a v části **vlastní nastavení** vyberte možnost **Protokol sledování modulu plug-in**.
+1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Přizpůsobení** vyberte **Protokol sledování modulu plug-in**.
 2. Najděte protokoly sledování, kde pole **Název typu** je nastaveno na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Chcete-li zobrazit úplný protokol, klikněte dvakrát na položku, a potom na pevné záložce **Spuštění** zkontrolujte text **Message Block**.
 

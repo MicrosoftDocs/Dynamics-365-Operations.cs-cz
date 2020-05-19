@@ -3,7 +3,7 @@ title: Použití zdrojů dat JOIN v mapování modelu ER k získání dat z víc
 description: Toto téma vysvětluje, jak je možné používat datové zdroje JOIN mezi více společnostmi v modulu Elektronické výkaznictví (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667947"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332315"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Použití zdrojů dat JOIN v mapování modelu elektrického vykazování (ER) k získání dat z více aplikačních tabulek
 
@@ -140,7 +140,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
 7.  Zavřete stránku.
 
-### <a name="review"></a> Kontrola mapování modelu ER (část 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Kontrola mapování modelu ER (část 2)
 
 Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigurována pro přístup k informacím o verzích konfigurací ER, podrobnostech konfigurace a poskytovatelů konfigurace s použitím datových zdrojů typu **Join**.
 
@@ -185,7 +185,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 9.  Zavřete stránku.
 10. Vyberte možnost **Zrušit**.
 
-### <a name="executeERformat"></a> Provést formát ER
+### <a name="execute-er-format"></a><a name="executeERformat"></a> Provést formát ER
 
 1.  Ve druhé relaci webového prohlížeče se přistupuje k financím nebo RCS pomocí stejných přihlašovacích údajů a společnosti jako při první relaci.
 2.  Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
@@ -240,7 +240,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     ![Stránka dialogového okna uživatele ER](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Analýza sledování spouštění formátu ER
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analýza sledování spouštění formátu ER
 
 1.  V první relaci Finance nebo RCS vyberte **Návrhář**.
 2.  Vyberte **Sledování výkonu**.
@@ -257,7 +257,34 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set2Run3.PNG)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="limitations"></a>Omezení
+
+Jak můžete vidět z příkladu v tomto tématu, **PROPOJENÝ** zdroj dat lze sestavit z několika zdrojů dat, které popisují jednotlivé datové sady záznamů, které musí být nakonec spojeny. Tyto zdroje dat můžete nakonfigurovat pomocí vestavěné funkce ER [FILTR](er-functions-list-filter.md). Když nakonfigurujete zdroj dat tak, aby byl volán i mimo **PROPOJENÝ** zdroj dat, můžete použít firemní rozsahy jako součást podmínky pro výběr dat. První implementace **PROPOJENÉHO** zdroje dat nepodporuje zdroje dat tohoto typu. Například když voláte zdroj dat založený na [FILTRU](er-functions-list-filter.md) v rámci rozsahu provedení zdroje dat **PROPOJIT**, platí, že pokud volaný zdroj dat obsahuje rozsahy společnosti v rámci podmínky výběru dat, dojde k výjimce.
+
+V Microsoft Dynamics 365 Finance verze 10.0.12 (srpen 2020) můžete použít firemní rozsahy jako součást podmínky pro výběr dat ve zdrojích dat založených na funkci [FILTR ](er-functions-list-filter.md), které jsou vyvolány v rámci provedení **PROPOJENÉHO** zdroje dat. Z důvodu omezení tvůrce [dotazů](../dev-ref/xpp-library-objects.md#query-object-model) aplikace jsou rozsahy společnosti podporovány pouze pro první zdroj dat **PROPOJENÉHO** zdroje dat.
+
+### <a name="example"></a>Příklad
+
+Například musíte provést jediné volání do databáze aplikací, abyste získali seznam transakcí zahraničního obchodu více společností a podrobnosti o položce inventáře, na kterou se v těchto transakcích odkazuje.
+
+V tomto případě nakonfigurujete v mapování modelu ER následující artefakty:
+
+- Kořenový zdroj dat **Intrastat**, který představuje tabulku **Intrastat**.
+- Kořenový zdroj dat **Položky**, který představuje tabulku **InventTable**.
+- Kořenový zdroj dat **Společnosti**, který vrací seznam společností (v tomto příkladu **DEMF** a **GBSI**), kde je nutné přistupovat k transakcím. Kód společnosti je k dispozici v poli **Companies.Code**.
+- **X1** kořenový zdroj dat, který má výraz `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. Jako součást podmínky pro výběr dat obsahuje tento výraz definici podnikových rozsahů `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2** zdroj dat jako vnořená položka zdroje dat **X1**. Zahrnuje výraz `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Nakonec můžete nakonfigurovat a **PŘIPOJIT** zdroj dat, kde **X1** je první zdroj dat a **X2** je druhý zdroj dat. Můžete zadat **Dotaz** jako možnost **Provést** pro vynucení spuštění zdroje dat na úrovni databázi v ER jako přímého volání SQL.
+
+Když je nakonfigurovaný zdroj dat spuštěn, zatímco je provádění ER [sledováno](trace-execution-er-troubleshoot-perf.md), je v návrháři mapování modelu ER jako součást sledování výkonu ER zobrazen následující návrh.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Pokud spustíte **PROPOJENý** zdroj dat, který byl nakonfigurován tak, aby obsahoval podmínky výběru dat, které mají rozsahy společností pro další zdroje dat prováděného **PROPOJENéHO** zdroje dat, dojde k chybě.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
