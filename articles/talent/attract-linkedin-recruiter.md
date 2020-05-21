@@ -42,7 +42,7 @@ Chcete-li začít pracovat s LinkedIn Recruiter prostřednictvím aplikace Attra
 2. Vyberte **Nastavení uživatele**.
 3. Na kartě **Připojení** vyberte možnost **Připojit** vedle **LinkedIn**. Postupujte podle pokynů, které jsou k dispozici službou LinkedIn.
 
-    ![[Nastavit připojení k LinkedIn Recruiter z Attract](./media/attract-setup-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Nastavit připojení k LinkedIn Recruiter z Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>Zobrazit kandidáty LinkedIn v aplikaci Attract
 
