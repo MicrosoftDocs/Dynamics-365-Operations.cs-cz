@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (duben 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Commerce 10.0.8 (únor 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: Odložené funkce AX 2012
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: Funkce neimplementované v místních nasazeních
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Práce se serializovanými položkami
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Práce se serializovanými položkami v POS
+                      href: pos-serialized-items.md
                     - name: "Zadání produktů z\_distribučního centra do obchodu pomocí metody buyer's push"
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: "Nastavení pravidel a\_parametrů pro cross-docking a\_metodu buyer's push"
@@ -1002,7 +1004,7 @@
               href: store-performance-information.md
             - name: 'Nastavení analýzy recency, frekvence a peněžního období'
               href: set-up-rfm-analysis.md
-        - name: Lokalizace a funkce týkající se předpisů
+        - name: Globalizace
           items:
             - name: Přehled fiskální integrace pro kanál Commerce
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Východní Evropa
               items:
-                - name: Zálohové faktury pro Commerce pro východní Evropu
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Správa pokladní hotovosti pro Commerce pro východní Evropu
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Vzor integrace fiskální tiskárny pro Polsko
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Ukázka integrace fiskální služby pro Českou republiku
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Společné
+                  items:
+                    - name: Zálohové faktury pro Commerce pro východní Evropu
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Správa pokladní hotovosti pro Commerce pro východní Evropu
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Česká republika
+                  items:
+                    - name: Ukázka integrace fiskální služby pro Českou republiku
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polsko
+                  items:
+                    - name: Vzor integrace fiskální tiskárny pro Polsko
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Správa informací o zákazníkovi pro Polsko
+                      href: localizations/emea-pol-customer-information.md
             - name: Francie
               items:
                 - name: Funkce registrační pokladny
@@ -1044,6 +1054,8 @@
               items:
                 - name: Vzor integrace fiskální tiskárny pro Itálii
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Správa informací o zákazníkovi pro Itálii
+                  href: localizations/emea-ita-customer-information.md
             - name: Mexiko
               items:
                 - name: Globální elektronické faktury CFDI pro Mexiko
@@ -1058,7 +1070,9 @@
               items:
                 - name: Funkce registrační pokladny
                   href: localizations/emea-swe-cash-registers.md
-                - name: Vzor pro integraci POS s kontrolními jednotkami
+                - name: Ukázka integrace kontrolní jednotky pro Švédsko
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Ukázka integrace Retail POS s kontrolními jednotkami (starší)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Vykazování a integrace Power BI
           items:
@@ -1186,7 +1200,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                        - name: (Elektronické výkaznictví) Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
@@ -1570,7 +1584,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Kurzy
               items:
-                - name: Použití zdrojů dat JOIN k získání dat z více aplikačních tabulek
+                - name: Použití zdrojů dat PŘIPOJIT k získání dat z více aplikačních tabulek
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json

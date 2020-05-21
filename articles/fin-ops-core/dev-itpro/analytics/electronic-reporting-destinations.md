@@ -3,7 +3,7 @@ title: Místa určení elektronického výkaznictví
 description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných typech cílů a o možnostech zabezpečení.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150808"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323685"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -52,7 +52,36 @@ Je zde také typ cíle [tisku](er-destination-type-print.md). Chcete-li ho použ
 
 ## <a name="overview"></a>Přehled
 
-Cíle můžete nastavit pouze pro konfigurace elektronického výkaznictví, které byly [importovány](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) do aktuální instance Finance, a u formátů, které jsou k dispozici na stránce **Konfigurace elektronického výkaznictví**. Funkce správy cílů elektronického výkaznictví je k dispozici v nabídce **Správa organizace** \> **Elektronické výkaznictví** \> **Cíl elektronického výkaznictví**. Na stránce **Cíl elektronického výkaznictví** můžete přepsat výchozí chování pro konfiguraci. Importované konfigurace na této stránce nejsou zobrazeny, dokud nezvolíte **Nový** a pak v poli **Odkaz** nevyberete konfiguraci, pro kterou chcete vytvořit nastavení cíle.
+Cíle můžete nastavit pouze pro konfigurace elektronického výkaznictví, které byly [importovány](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) do aktuální instance Finance, a u formátů, které jsou k dispozici na stránce **Konfigurace elektronického výkaznictví**. Funkce správy cílů elektronického výkaznictví je k dispozici v nabídce **Správa organizace** \> **Elektronické výkaznictví** \> **Cíl elektronického výkaznictví**.
+
+### <a name="default-behavior"></a>Výchozí chování
+
+Výchozí chování pro konfiguraci formátu ER závisí na typu provádění, který zadáte při spuštění formátu ER.
+
+Pokud v dialogovém okně **Zpráva Intrastat** na pevné záložce **Spustit na pozadí** nastavíte možnost **Dávkové zpracování** na **Ne**, formát ER se okamžitě spustí v interaktivním režimu. Po úspěšném dokončení tohoto spuštění je generovaný odchozí dokument zpřístupněn ke stažení.
+
+Pokud nastavíte možnost **Dávkové zpracování** na **Ano**, formát ER se spustí v [dávkovém](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) režimu. Příslušná dávková úloha je vytvořena na základě parametrů, které zadáte na kartě **Spustit na pozadí** dialogového okna **Parametry elektronického výkaznictví**.
+
+> [!NOTE]
+> Popis úlohy slouží k tomu, aby vás informoval o průběhu mapování formátu elektronického výkaznictví. Zahrnuje také název provedené komponenty ER.
+
+[![Spuštění formátu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Informace o této úloze najdete na několika místech:
+
+- V části **Společné** \> **Dotazy** \> **Dávkové úlohy** \> **Moje dávkové úlohy** ověřte stav naplánované úlohy.
+- Přejděte na **Organizační správa** \> **Elektronické výkaznictví** \> **Úlohy elektronického výkaznictví** a zkontrolujte stav naplánované úlohy a výsledky provedení u dokončené úlohy. Po úspěšném dokončení úlohy vyberte **Zobrazit soubory** na stránce **Úlohy elektronického výkaznictví** pro získání generovaného odchozího dokumentu.
+
+    > [!NOTE]
+    > Tento dokument je uložen jako příloha aktuálního záznamu úlohy a je řízen rámcem [Správa dokumentů](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), který se používá k ukládání artefaktů ER tohoto typu, je nakonfigurován v okně [Parametry ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- Na stránce **Úlohy elektronického výkaznictví** vyberte **Zobrazit souboru** k zobrazení seznamu případných chyb a varování generovaných v průběhu provádění úlohy.
+
+    [![Prohlížení seznamu úloh ER](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Uživatelem nakonfigurované chování
+
+Na stránce **Cíl elektronického výkaznictví** můžete přepsat výchozí chování pro konfiguraci. Importované konfigurace na této stránce nejsou zobrazeny, dokud nezvolíte **Nový** a pak v poli **Odkaz** nevyberete konfiguraci, pro kterou chcete vytvořit nastavení cíle.
 
 [![Výběr konfigurace v poli Odkaz](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se použ�
 >
 > Vtvořený soubor PDF je omezen na maximální počet 300 stránek.
 >
-> V současné době je v dokumentu PDF vytvořeném z výstupu z aplikace Excel podporována pouze orientace stránky na šířku.
+> V aplikaci Microsoft Dynamics 365 Finance verze 10.0.9 (duben 2020) je v současné době v dokumentu PDF vytvořeném z výstupu z aplikace Excel podporována pouze orientace stránky na šířku. S vydáním Dynamics 365 Finance verze 10.0.10 (květen 2020) můžete [určit orientaci stránky](#SelectPdfPageOrientation) v dokumentu PDF, který je vytvořen z výstupu aplikace Excel při konfiguraci cíle ER.
 >
 > Pro převod výstupu, který neobsahuje žádná vložená písma, se používají pouze běžná systémová písma operačního systému Windows.
 

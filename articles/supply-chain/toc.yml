@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Stav údržby
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Integrace správy majetku s Dynamics 365 Guides
+              href: asset-management/asset-management-guides-integration.md
             - name: Mobilní pracovní prostor správy majetku
               href: asset-management/asset-management-mobile-workspace.md
         - name: Správa dat
@@ -1135,7 +1137,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kurzy
               items:
-                - name: Použití zdrojů dat JOIN k získání dat z více aplikačních tabulek
+                - name: Použití zdrojů dat PŘIPOJIT k získání dat z více aplikačních tabulek
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Přehled optimalizace plánování
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Záporné zásoby na skladě jsou zpracovány jako nula na skladě
+                - name: Plánování se záporným množstvím na skladě
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Začínáme s optimalizací plánování
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Vytvoření procesu minimálního nebo maximálního doplňování
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Nastavení šablony práce pro nákupní objednávky
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Instalace a konfigurace skladové aplikace
               items:
                 - name: Přehled instalace a konfigurace
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Nastavení mobilních zařízení pro práci ve skladu
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Přijetí registrační značky s mobilní aplikací skladu
+                - name: Přijetí registrační značky s aplikací skladu
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
                   href: warehousing/tasks/set-up-mobile-device-menu.md

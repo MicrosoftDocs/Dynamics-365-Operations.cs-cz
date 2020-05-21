@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205660"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346461"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
@@ -233,7 +233,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v aplikaci Warehouse Mobile App (WMA) při zahájení práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v aplikaci skladu při zahájení práce výdeje.</li>
 <li>Vyberte <strong>Navrhnout</strong>.</li>
 <li>Potvrďte nové skladové místo navrhované na základě dostupnosti množství dávky.</li>
 </ol>
@@ -247,10 +247,10 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Nelze použít</td>
 </tr>
 <tr>
-<td>Ne</td>
+<td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> ve WMA při zahájení práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v aplikaci skladu při zahájení práce výdeje.</li>
 <li>Zadat ručně místo.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Nelze použít</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Úplný</strong> ve WMA při zpracování práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Úplný</strong> v aplikaci skladu při zpracování práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte částečné množství požadovaného výdeje, které označuje plnou kapacitu.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Ano</td>
 <td>
 <ol>
-<li>Zahajte přesun ve WMA.</li>
+<li>Zahajte přesun v aplikaci skladu.</li>
 <li>Zadejte místa z a do.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte <strong>0</strong> (nula).</li>
 <li>Do pole <strong>Důvod</strong> zadejte <strong>Žádné opakované přidělení</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte <strong>0</strong> (nula).</li>
 <li>Do pole <strong>Důvod</strong> zadejte <strong>Žádné opakované přidělení</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 <li>V seznamu vyberte umístění/registrační značku.</li>
@@ -545,10 +545,10 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 </tr>
 <tr>
 <td>Je nastavena výjimka práce typu <strong>krátkodobý výdej</strong>, kde <strong>Opakované přidělení zboží</strong> = <strong>Ruční</strong>, <strong>Úprava zásob</strong> = <strong>Ano</strong>, a <strong>Odstranit rezervace</strong> = <strong>Ne</strong>. Kromě toho je povolena možnost <strong>Povolit ruční opakované přidělení zboží</strong> u pracovníka.</td>
-<td>Ne</td>
+<td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 </tr>
 <tr>
 <td>Je nastavena výjimka práce typu <strong>krátkodobý výdej</strong>, kde <strong>Opakované přidělení zboží</strong> = <strong>Ruční</strong>, <strong>Úprava zásob</strong> = <strong>Ano</strong>, a <strong>Odstranit rezervace</strong> = <strong>Ano</strong>. Kromě toho je povolena možnost <strong>Povolit ruční opakované přidělení zboží</strong> u pracovníka.</td>
-<td>Ne</td>
+<td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 <li>V seznamu vyberte umístění/registrační značku.</li>
@@ -585,7 +585,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak�
 <td>Nelze použít</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> ve WMA při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s automaticky opakovaným přidělením</strong>.</li>
 </ol>

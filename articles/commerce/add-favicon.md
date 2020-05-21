@@ -3,7 +3,7 @@ title: Přidání ikony oblíbené položky
 description: Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001524"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295073"
 ---
 # <a name="add-a-favicon"></a>Přidání ikony oblíbené položky
-
 
 [!include [banner](includes/banner.md)]
 
@@ -41,25 +40,50 @@ Ačkoli lze na web přidat více ikon oblíbené položky různých velikostí a
 
 Chcete-li odeslat ikonu oblíbené položky do kolekce prostředků vašeho webu, postupujte následovně.
 
-1. Přejděte na **Prostředky \> Odeslat \> Odeslat prostředky**.
-1. Vyhledejte a vyberte ikonu oblíbené položky v místním systému souborů.
-1. Zadejte název a poté klikněte na tlačítko **OK**. 
-1. V podokně vlastností vpravo zkopírujte veřejnou adresu URL ikony oblíbené položky.
+1. V levém navigačním podokně vyberte položku **Knihovna médií**.
+1. Na panelu příkazů vyberte možnost **Odeslat \> Odeslání mediálních položek**.
+1. V okně Průzkumník souborů přejděte na obrazový soubor ikony oblíbené položky, který chcete nahrát, vyberte jej a poté vyberte **Otevřít**.
+1. V dialogovém okně **Odeslat mediální položku** zadejte požadovaný název a alternativní text.
+1. Chcete-li publikovat obrázky ihned po odeslání, zaškrtněte políčko **Publikovat mediální položky po odeslání**.
 
-> [!NOTE]
-> Pokud nevyberete možnost **Publikovat prostředky po odeslání**, je nutné vrátit se na stránku **Prostředky** a ručně publikovat ikonu oblíbené položky později.
+    > [!NOTE]
+    > Pokud nezaškrtnete políčko **Publikovat prostředky po odeslání**, je nutné vrátit se na stránku **Prostředky** a ručně publikovat ikonu oblíbené položky později.
 
-## <a name="create-the-html-for-the-favicon"></a>Vytvoření kódu HTML pro ikonu oblíbené položky
+1. Vyberte **OK**.
+1. V podokně vlastností vpravo zkopírujte veřejnou adresu URL ikony oblíbené položky. Tuto adresu URL budete později používat.
 
-Chcete-li vytvořit kód HTML pro ikonu oblíbené položky, použijte následující fragment kódu HTML. Pro atribut **href** nahraďte **"Public\_URL\_for\_your\_favicon"** veřejnou adresou URL, kterou jste dříve zkopírovali.
+## <a name="create-the-html-for-your-favicon"></a>Vytvoření kódu HTML pro ikonu oblíbené položky
+
+Chcete-li vytvořit kód HTML pro ikonu oblíbené položky, použijte následující řetězec HTML. Pro atribut **href** nahraďte **"Public\_URL\_for\_your\_favicon"** veřejnou adresou URL, kterou jste dříve zkopírovali.
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a>Přidání kódu HTML ikony oblíbené položky do prvků \<head\> na stránkách
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Vytvořte fragment stránky, který obsahuje metaznačku pro vaši ikonu oblíbené položky
 
-Chcete-li přidat ikonu oblíbené položky vašeho webu, použijte stejný postup, který se používá k přidání jakéhokoli typu kódu HTML nebo skriptu do prvku **\<head\>** na stránkách webu.
+Chcete-li vytvořit fragment stránky, který obsahuje metaznačku pro ikonu oblíbené položky, postupujte následovně.
 
-## <a name="additional-resources"></a>Další zdroje
+1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. V dialogovém okně **Nový fragment stránky** vyberte jako modul, na němž je založen fragment stránky **Metaznačky**.
+1. Zadejte název fragmentu stránky a poté vyberte **OK**.
+1. Ve stromu hierarchie fragmentů vyberte podřízenou položku **Výchozí metaznačky**.
+1. V pravém podokně pod **Metaznačky** vyberte **Přidat** a zadejte řetězec HTML, který jste pro oblíbenou položku vytvořili dříve. 
+1. Chcete-li publikovat fragment stránky, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
+
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Přidejte fragment stránky s metaznačkami do sekce HTML na vašich stránkách
+
+Pokud chcete přidat fragment stránky metaznačky do části **hlavička** stránek, proveďte následující postup.
+
+1. Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat ikonu oblíbené položky. Potom vyberte **Upravit**.
+1. Ve stromu hierarchie šablon vyberte tlačítko se třemi tečkami (**...**) napravo od kontejneru **Hlavička HTML** a vyberte **Přidat fragment stránky**.
+1. V dialogovém okně **Vybrat fragment stránky** vyberte fragment stránky metaznačky, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. Chcete-li publikovat šablonu, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
+
+> [!NOTE]
+> Pokud váš web používá více než jednu šablonu, musíte do každé z nich přidat fragment stránky s metaznačkami.
+
+Při náhledu stránek založených na šabloně, do které jste přidali fragment stránky metaznaček, byste nyní měli na kartě prohlížeče vidět ikonu oblíbené položky.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přidání loga](add-logo.md)
 

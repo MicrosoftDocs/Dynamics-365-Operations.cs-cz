@@ -3,7 +3,7 @@ title: Nastavení klienta B2C v Commerce
 description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270203"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295262"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -87,7 +87,7 @@ Chcete-li vytvořit aplikaci B2C, postupujte následovně.
 
 ### <a name="reply-urls"></a>Adresy URL pro odpovědi
 
-Adresy URL pro odpovědi jsou důležité, protože umožňují vytvořit seznam povolených návratových domén, když váš web volá Azure AD B2C pro ověření uživatele. To umožňuje vrátit ověřeného uživatele zpět do domény, ze které se přihlásí (doména vašeho webu). 
+Adresy URL pro odpovědi jsou důležité, protože poskytují seznam povolených návratových domén, když váš web volá Azure AD B2C pro ověření uživatele. To umožňuje vrátit ověřeného uživatele zpět do domény, ze které se přihlásí (doména vašeho webu). 
 
 V poli **Adresa URL odpovědi** na obrazovce **Azure AD B2C – aplikace \> Nová aplikace** je nutné přidat samostatné řádky pro doménu vašeho webu a (po zřízení vašeho prostředí) adresu URL generovanou řešením Commerce. Tyto adresy URL musí vždy používat platný formát adresy URL a musí to být pouze základní adresy URL (bez koncového lomítka nebo cesty). Řetězec ``/_msdyn365/authresp`` pak musí být přidán k základní adrese URL, jako v následujících příkladech.
 
@@ -121,9 +121,9 @@ Chcete-li vytvořit zásadu toku uživatele pro registraci a přihlášení, pos
 
     | **Získat atribut** | **Vrátit deklaraci identity** |
     | ---------------------- | ----------------- |
-    |                        | E-mailové adresy   |
+    | E-mailová adresa          | E-mailové adresy   |
     | Křestní jméno             | Křestní jméno        |
-    |                        | Zprostředkovatel identity |
+    |                        | Poskytovatel identity |
     | Příjmení                | Příjmení           |
     |                        | ID objektu uživatele  |
 
@@ -246,10 +246,6 @@ Chcete-li aktualizovat Headquarters o nové informace Azure AD B2C, postupujte t
     1. Do pole **Typ** zadejte **Veřejné**.
     1. Do pole **Typ uživatele** zadejte **Zákazník**.
 1. V podokně akcí vyberte **Uložit**.
-1. Ve vyhledávacím poli Commerce hledejte **Číselné řady** (Správa organizace > Číselné řady).
-1. V podokně akcí vyberte možnost **Upravit** v části **Údržba**.
-1. Na pevné záložce **Obecné** vyberte volbu **Ne** pro **Ručně**.
-1. V podokně akcí vyberte **Uložit**. 
 1. Ve vyhledávacím poli Commerce Search vyhledejte **Plán distribuce**.
 1. V levé navigační nabídce stránky **Plán distribuce** vyberte úlohu **1110 Globální konfigurace**.
 1. V podokně akcí zvolte **Spustit**.
@@ -304,13 +300,14 @@ Chcete-li do platformy Commerce přidat informace o aplikaci klienta AAD B2C, po
 1. Ve zobrazeném formuláři zadejte následující požadované položky s použitím hodnot z klienta a aplikace B2C. Pole, která nejsou vyžadována (bez hvězdičky), mohou být ponechána prázdná.
 
     - **Název aplikace**: název aplikace B2C, například „Fabrikam B2C“.
-    - **Název klienta**: název vašeho klienta B2C, například „Fabrikam“.
+    - **Název klienta**: Název klienta B2C (použijte například "fabrikam", pokud se doména pro klienta B2C zobrazuje jako "fabrikam.onmicrosoft.com"). 
     - **ID zásady zapomenutého hesla**: ID zásady toku uživatele pro zapomenuté heslo, například „B2C_1_ResetovaniHesla“.
     - **ID zásady registrace a přihlášení**: ID zásady toku uživatele pro registraci a přihlášení, například „B2C_1_registrace_prihlaseni“.
     - **GUID klienta**: ID aplikace B2C, například „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6“.
     - **ID zásady úpravy profilu**: ID zásady toku uživatele pro úpravu profilu, například „B2C_1A_UpravaProfilu“.
 
 1. Vyberte **OK**. Nyní by se měl zobrazit název vaší aplikace B2C v seznamu.
+1. Klepnutím na tlačítko **Uložit** uložte změny.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Přidružení aplikace B2C k webu a kanálu
 

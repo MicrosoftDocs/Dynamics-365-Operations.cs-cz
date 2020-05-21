@@ -1,6 +1,6 @@
 ---
-title: Příjem registračních značek prostřednictvím mobilní aplikace Warehousing
-description: V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Warehousing na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
+title: Přijetí registrační značky prostřednictvím aplikace warehousing
+description: V tomto tématu je vysvětleno, jak nastavit aplikaci skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261310"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346369"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Příjem registračních značek prostřednictvím mobilní aplikace Warehousing
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Přijetí registrační značky prostřednictvím aplikace warehousing
 
-V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Warehousing, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
+V tomto tématu je vysvětleno, jak nastavit aplikaci skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
 
 Pomocí této funkce můžete rychle zaznamenat příjem příchozích zásob, který souvisí s avízem expedice zboží (ASN). Systém při expedici převodního příkazu procesy správy skladu automaticky vytvoří avízo expedice zboží. U procesu nákupní objednávky lze ASN zaznamenat ručně nebo je lze automaticky importovat pomocí procesu příchozí datové entity ASN.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zobrazit nebo přeskočit stránku Souhrn přijetí
 
-Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehouse v rámci procesu získávání registrační značky.
+Můžete použít funkci *Určit, zda zobrazit stránku souhrnu příjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehousing v rámci procesu získávání registrační značky.
 
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 

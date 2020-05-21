@@ -3,7 +3,7 @@ title: Analýza přizpůsobení pro optimalizaci plánování
 description: V tomto tématu je vysvětleno, jak ověřit aktuální nastavení a data proti funkcím funkce optimalizace plánování.
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
-ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
+ms.openlocfilehash: 9bf19604d246988e05b91c8a41b1f57b523d2192
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277791"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346646"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Chcete-li zjistit, jakým způsobem jsou aktuální nastavení a data kompatibilní s funkcí Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Analýza shody optimalizace plánování** a vyberte **Spustit analýzu**. Pokud analýza nalezne nějaké nekonzistence, budou uvedeny na stejné stránce. (Provádění analýzy může trvat několik minut.)
@@ -73,6 +72,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Mezipodnikové | Hlavní plány zahrnující plánovanou navazující poptávku: _\#_ | Tato funkce čeká na implementaci. V současné době hlavní plánování nezahrnuje podřízenou plánovanou poptávku, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. Všimněte si, že objednávky vydané/potvrzené stále pracují s normální mezipodnikovou funkcí a budou zahrnovat většinu scénářů. |
 | Kanban | Záznamy disponibility položky s plánovaným typem objednávky kanban: _\#_ | Tato funkce čeká na implementaci. V současné době je disponibilita položky nastavená na Kanban ignorována, pokud je povolena optimalizace plánování. Typ kanbanové plánované objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. |
 | Kanban | Položky s výchozím typem objednávky kanban: _\#_ | V současné době je výchozí typ objednávky nastavený na Kanban ignorován, pokud je povolena optimalizace plánování. Výchozí typ kanbanové objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. |
+| Stav životního cyklu produktu   | Stavy životního cyklu produktu neaktivní pro plánování: _\#_ | Tato funkce čeká na implementaci. V současné době je stav životního cyklu produktu ignorován s aktivovanou optimalizací plánování. Filtr produktu na úrovni plánu můžete upravit tak, abyste se vyhnuli zahrnutí produktů, u nichž je pro plánování deaktivován stav životního cyklu produktu. |
 | Výrobní | Řádky kusovníku se zaokrouhlením nebo vícenásobným nastavením: _\#_ | Tato funkce čeká na implementaci. V současné době je zaokrouhlení a více nastavení ignorováno na řádcích kusovníku při povolení optimalizace plánování bez ohledu na toto nastavení. |
 | Výrobní | Řádky kusovníků/receptur s měřením receptury: _\#_ | Tato funkce čeká na implementaci. V současné době je měření receptury ignorováno na řádcích kusovníku a receptur při povolení optimalizace plánování bez ohledu na toto nastavení. |
 | Výrobní | Řádky kusovníků/receptur s nahrazením položky (skupiny plánu): _\#_ | Tato funkce čeká na implementaci. V současné době je nahrazení položky (skupiny plánu) ignorováno na řádcích kusovníku a receptur při povolení optimalizace plánování bez ohledu na toto nastavení. |
@@ -99,7 +99,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. |
 | Skladovatelnost | Hlavní plány s povolenou skladovatelností: _\#_ | Tato funkce čeká na implementaci. V současnosti není skladovatelnost brána v potaz, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. |
 
-## <a name="related-resources"></a>Související prostředky
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled optimalizace plánování](planning-optimization-overview.md)
 
