@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Domovská stránka Dynamics 365 Supply Chain Management
           href: index.md
         - name: Začínáme
           items:
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: "Připojení k\_systému nápovědy"
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Připojení vlastního webu nápovědy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přehled vlastní nápovědy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zobrazení a export popisů polí
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Záznamník úloh
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT Intelligence
+          items:
+            - name: Domovská stránka IoT Intelligence
+              href: iot/iot-intelligence-home-page.md
+            - name: Nastavení zdrojů Azure
+              href: iot/iot-azure-setup.md
+            - name: Formáty schémat zpráv pro centrum IoT
+              href: iot/iot-schema-format.md
+            - name: Instalace doplňku v LCS
+              href: iot/iot-lcs-setup.md
+            - name: Nastavení metrik
+              href: iot/iot-metrics-setup.md
+            - name: Nastavení scénáře
+              href: iot/iot-scenario-setup.md
+            - name: Sledování a správa
+              href: iot/iot-management.md
         - name: Hlavní plánování
           items:
             - name: Domovská stránka Hlavní plánování
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Zrušení plánovací úlohy
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Řešení potíží s optimalizací plánování
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Hlavní plány
               items:
                 - name: Přehled hlavních plánů
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: Instalace a konfigurace skladové aplikace
               items:
-                - name: Přehled instalace a konfigurace
+                - name: Instalace a připojení skladové aplikace
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Konfigurace názvů polí ve skladové aplikaci
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Nastavení šablony práce pro nákupní objednávky
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Zásady konsolidace dodávek
+              items:
+                - name: Zásady konsolidace dodávek
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Konfigurace zásad konsolidace dodávek
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: Scénář 1 - Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: 'Scénář 2 - Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu'
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: Scénář 3 - Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: Scénář 4 - Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
+                  href: warehousing/consolidate-shipments-manual-form.md
         - name: Vývoj aplikace Supply Chain Management
           items:
             - name: Průvodce vývojem Ganttova diagramu
