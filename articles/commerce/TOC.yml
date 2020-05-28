@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Domovská stránka Dynamics 365 Commerce
           href: index.md
         - name: Začínáme
           items:
@@ -79,7 +79,7 @@
                 - name: Instalace fázovaného nasazení (N-1) a přechod
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Upgrade rozšíření kanálu Retail na nejnovější Retail SDK
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Co je nového a co se změnilo
               items:
                 - name: Co je nového a co se změnilo v aplikacích Finance and Operations
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: "Připojení k\_systému nápovědy"
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Připojení vlastního webu nápovědy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Přehled vlastní nápovědy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Zobrazení a export popisů polí
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Záznamník úloh
@@ -499,7 +499,9 @@
                     - name: Konektor platby Adyen
                       href: dev-itpro/adyen-connector.md
                     - name: Úspora nástrojů online plateb s konektorem Adyen
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Silné ověření klienta pomocí (SCA) konektoru Adyen
+                      href: adyen_redirect.md
                     - name: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Nastavení scénářů plateb faktur
@@ -510,6 +512,8 @@
                       href: omni-channel-payments.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
+                - name: Správa map Bing pro vaši organizaci
+                  href: dev-itpro/manage-bing-maps.md
         - name: Podpora prodeje vašich produktů a služeb
           items:
             - name: 'Kategorie, produkty a sortimenty'
@@ -820,10 +824,12 @@
                   href: authoring-home-overview.md
                 - name: Správa uživatelů a rolí
                   href: manage-ecommerce-users-roles.md
-                - name: Zvažování optimalizace webového vyhledávače pro váš web
+                - name: Zvažování optimalizace webového vyhledávače (SEO) pro váš web
                   href: search-engine-optimization-considerations.md
                 - name: Správa zásad zabezpečení obsahu (CSP)
                   href: manage-csp.md
+                - name: Odhlášení z kolekce událostí webové aktivity
+                  href: web-activity-opt-out.md
             - name: Správa obsahu vašeho webu
               items:
                 - name: Způsoby přidání obsahu
@@ -1200,7 +1206,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Import konfigurací z RCS
+                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
@@ -1714,6 +1720,8 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurace a odeslání e-mailu
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Vytvoření e-mailových šablon pro transakční události
+              href: email-templates-transactions.md
             - name: Rozšíření zkušeností s e-mailem
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Řešení problémů s integrací s Office
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Předrozšířené sloupce v databázi kanálů
                   href: dev-itpro/extended-columns.md
+                - name: Rozšíření Commerce Data Exchange - Služba v reálném čase
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Rozšiřitelnost konektoru platby
               items:
                 - name: Vytvoření integrace plateb pro platební terminál

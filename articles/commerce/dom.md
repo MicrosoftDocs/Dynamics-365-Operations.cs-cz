@@ -3,7 +3,7 @@ title: Distribuovaná správa objednávek (DOM)
 description: Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004313"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396025"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -37,7 +37,7 @@ Distribuovaná správa objednávek optimalizuje plnění objednávek v rámci ko
 
 Následující příklad ilustruje životní cyklus prodejní objednávky v systému distribuované správy objednávek.
 
-![Životní cyklus prodejní objednávky v kontextu DOM](./media/flow.png "Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek")
+![![Životní cyklus prodejní objednávky v kontextu DOM](./media/flow.png "Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>Nastavit DOM
 
@@ -83,6 +83,15 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
     2. Zvolte **Nová** a zadejte název a popis nové skupiny.
     3. Zvolte **Uložit**.
     4. Zvolte **Přidat řádek** a přidejte ke skupině jedno místo. Popřípadě zvolte **Přidat řádky** a přidejte více míst.
+    
+    > [!NOTE]
+    > Ve verzi Commerce 10.0.12 musí být povolena volba **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění** v pracovním prostoru **Správa funkcí**.
+    >
+    > Tato funkce přidává nové konfigurace na stránce **Skupina plnění**, takže můžete definovat, zda lze sklad použít pro expedici, nebo zda lze kombinaci sklad/obchod použít pro expedici, výdej nebo obojí. 
+    >
+    > Pokud tuto funkci povolíte, možnosti dostupné pro výběr umístění při vytváření objednávek výdeje nebo expedice v POS budou aktualizovány.
+    >
+    > Povolení funkce také vede k aktualizaci stránek v POS, když jsou vybrány operace „expedovat vše“ nebo „expedovat vybrané“.
 
 9. Chcete-li definovat pravidla, přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Spravovat pravidla**. Jsou podporována následující pravidla distribuované správy objednávek:
 
@@ -134,8 +143,18 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
     2. Zvolte **Nové**.
     3. Zadejte hodnoty do polí **Profil** a **Popis**.
     4. Nastavte možnost **Automaticky použít výsledek**. Pokud nastavíte tuto možnost na **Ano**, výsledky spuštění distribuované správy objednávek pro profil budou automaticky použity na řádky prodejní objednávky. Pokud ji nastavíte na hodnotu **Ne**, lze zobrazit výsledky pouze v plánu plnění. Nebudou použity na řádky prodejní objednávky.
-    5. Pokud chcete, aby byl profil distribuované správy objednávek spuštěn pro objednávky, které mají původ u každé prodejní objednávky, i objednávky bez určeného původu prodejní objednávky, nastavte možnost **Zpracovat objednávky s prázdným původem prodeje** na **Ano**. Chcete-li spustit profil pouze pro několik původů prodejní objednávky, můžete je definovat na stránce **Původy prodeje**, jak bude vysvětleno později.
-    6. Na pevné záložce **Právnické osoby** zvolte **Přidat** a potom zvolte právnickou osobu.
+    5. Pokud chcete, aby byl profil distribuované správy objednávek spuštěn pro objednávky, které mají původ u každé prodejní objednávky, včetně objednávek bez určeného původu prodejní objednávky, nastavte možnost **Zpracovat objednávky s prázdným původem prodeje** na **Ano**. Chcete-li spustit profil pouze pro několik původů prodejní objednávky, můžete je definovat na stránce **Původy prodeje**, jak bude vysvětleno později.
+
+    > [!NOTE]
+    > Ve verzi Commerce 10.0.12 a vyšší musí být povolena volba **Možnost přiřadit skupinu plnění k profilu plnění** v pracovním prostoru **Správa funkcí**. 
+    >
+    > Tato funkce přidá novou konfiguraci na stránku **Profil plnění**, která může být přiřazena k jedné skupině plnění. 
+    >
+    > Pokud vyberete skupinu plnění, budou pravidla distribuované správy objednávek pro tento profil plnění efektivně probíhat proti skladům expedice zahrnutým do skupiny plnění. 
+    > 
+    > Chcete-li tuto funkci efektivně využít, zajistěte, aby existovala jedna skupina plnění, která obsahuje všechny expediční sklady, a poté tuto skupinu plnění přiřaďte k profilu plnění.
+    
+    6. Na záložce s náhledem **Právnické osoby** zvolte **Přidat** a potom zvolte právnickou osobu.
     7. Na pevné záložce **Pravidla** zvolte **Přidat** a potom zvolte pravidlo, které navážete na profil.
     8. Opakujte předchozí dva kroky, dokud nejsou všechna požadovaná pravidla přiřazena k profilu.
     9. Zvolte **Uložit**.
@@ -179,7 +198,7 @@ V průběhu zpracování bude distribuovaná správa objednávek zvažovat objed
 
 Poté, co použije pravidla, omezení zásob a optimalizaci, distribuovaná správa objednávek vybere místo, které je nejblíže adrese dodání odběrateli.
 
-![Kritéria prodejních objednávek](./media/ordercriteria.png "Kritéria prodejních objednávek")
+![![Kritéria prodejních objednávek](./media/ordercriteria.png "Kritéria prodejních objednávek")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Výsledky spuštění distribuované správy objednávek
 
