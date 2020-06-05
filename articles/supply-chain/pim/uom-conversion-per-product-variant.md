@@ -1,9 +1,9 @@
 ---
 title: Převod měrné jednotky pro variantu produktu
-description: Toto téma popisuje nastavení způsobu převodu měrné jednotky u variant produktu.
+description: Toto téma popisuje nastavení způsobu převodu měrné jednotky pro varianty produktu. Zahrnuje také příklad nastavení.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204486"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382790"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje nastavení způsobu převodu měrné jednotky u variant produktu. Zahrnuje také příklad nastavení.
+Toto téma popisuje nastavení způsobu převodu měrné jednotky pro různé varianty produktu.
 
-Tato funkce umožňuje společnostem definovat jiný převod jednotek mezi variantami stejného produktu. Následující příklad je použit v tomto tématu. Společnost prodává trička ve velikostech S, M, L a XL. Tričko je definováno jako produkt a jsou definovány různé velikosti variant produktu. Trička jsou zabalena v krabicích. Do krabice se vejde pět triček. V případě velikosti XL se však trička vlezou jen čtyři. Společnost chce sledovat různé varianty triček po **kusech**, nicméně trička prodává po **krabicích**. Převod mezi jednotkou zásob a prodejní jednotkou je 1 krabice = 5 kusů s výjimkou varianty XL, kde 1 krabice = 4 kusy.
+Místo vytváření více jednotlivých produktů, které je třeba udržovat, můžete pomocí variant produktu vytvořit variace jednoho produktu. Variantou produktu může být Například tričko dané velikosti a barvy.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Nastavení produktu pro převod jednotek pro variantu
+Dříve bylo možné provádět jednotkové převody pouze na základním produktu. Proto měly všechny varianty produktu stejná pravidla pro převod jednotek. Nicméně, když je funkce *Převody měrných jednotek pro varianty produktů* zapnutá, pokud se vaše trička prodávají v krabicích a počet triček, které lze zabalit do krabice, závisí na velikosti trička, můžete nyní nastavit jednotkové převody mezi různými velikostmi triček a krabic, do kterých se trička zabalí.
 
-Varianty produktu lze vytvořit pouze pro produkty **podtyp produktu**: **základní produkt**. Další informace naleznete v tématu [Vytvoření základního produktu](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
 
-Tato funkce není povolena pro produkty, které jsou nastaveny pro procesy skutečné hmotnosti. 
+Pokud tuto funkci ve vašem systému ještě nevidíte, přejděte na [Správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Převody měrných jednotek pro varianty produktů*.
 
-Po vytvoření základního produktu s variantami produktu lze nastavit převody jednotek pro varianty. Položku nabídky pro otevření stránky s převody naleznete v kontextu produktu nebo variantě produktu na následujících stránkách.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Nastavení produktu pro převod jednotek pro variantu
 
--   Strnka **Podrobnosti o produktu**
--   Strána **Zveřejněné informace o produktu**
--   Stránka **zveřejněné varianty produktu**
+Varianty produktu lze vytvořit pouze pro produkty, které jsou základními produkty. Další informace naleznete v tématu [Vytvoření základního produktu](tasks/create-product-master.md). funkce *Převody měrných jednotek pro varianty produktů* není k dispozici pro produkty, které jsou nastaveny pro procesy se skutečnou hmotnosti.
 
-Otevřete-li stránku **Převod jednotek** v kontextu základního produktu nebo zveřejněné varianty produktu, můžete vybrat, jestli chcete nastavit převod jednotky pro produkt nebo variantu produktu. To lze provést výběrem buď **varianty produktu**, nebo **produktu** v poli **Tvorba převodu pro**.
+Chcete-li nakonfigurovat předlohu produktu tak, aby podporovala převod jednotky pro každou variantu, postupujte takto.
 
-### <a name="product-variant"></a>Varianta produktu
+1. Přejděte do nabídky **Řízení informací o produktech \> Produkty \> Základní produkty**.
+1. Vytvořte nebo otevřete hlavní produkt a přejděte na jeho stránku **Detaily produktu**.
+1. Nastavte možnost **Povolit převody měrných jednotek** na *Ano*.
+1. V podokně akcí na kartě **Produkt** ve skupině **Nastavení** zvolte **Převody jednotek**.
+1. Otevře se stránka **Převody jednotek**. Vyberte jeden z následujících karet:
 
-Vyberete-li **Varianta produktu**, můžete si vybrat, pro kterou variantu si přejete nastavit převod jednotek v poli **varianta produktu**.
+    - **Převody uvnitř třídy** - Tuto kartu vyberte, chcete-li převádět jednotky, které patří do stejné třídy jednotek.
+    - **Převody vně třídy** - Tuto kartu vyberte, chcete-li převádět jednotky, které nepatří do stejné třídy jednotek.
 
-### <a name="product"></a>Produkt
+1. K přidání nového převodu jednotek klikněte na tlačítko **Nový**.
+1. Nastavte pole **Vytvořit převod pro** na jednu z následujících hodnot:
 
-Vyberete-li **Produkt**, potom můžete nastavit převod jednotky pro základní produkt. Tento převod jednotek bude použit pro všechny varianty produktu bez definovaného převodu jednotek.
+    - **Produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro základní produkt. Tento převod jednotek bude použit jako záložní pro všechny varianty produktů, pro které není definovaný žádný převod jednotek.
+    - **Varianta produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro určitou variantu produktu. Použijte pole **Varianta produktu** k výběru varianty.
 
-### <a name="example"></a>Příklad
+    ![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")
 
-Základní produkt, **tričko**, má čtyři varianty: S, M, L a XL. Trička jsou zabalena v krabicích. Do krabice se vejde pět triček. V případě velikosti XL se však trička vlezou jen čtyři.
+1. K nastavení převodu jednotek použijte další pole, která jsou k dispozici.
+1. Vyberte **OK** k uložení nového převodu jednotek.
 
-Nejprve otevřete stránku **Převod jednotek** ze stránky podrobnosti o zveřejnění produktu pro **tričko.**
+> [!TIP]
+> Otevřete stránku **Převody jednotek** pro produkt nebo variantu produktu z kterékoli z následujících stránek:
+> 
+> - Podrobnosti produktu
+> - Podrobnosti o uvolněných produktech
+> - Uvolněné varianty produktu
 
-Na stránce **Převod jednotek** nastavte převod jednotky pro variantu produktu XL.
+## <a name="example-scenario"></a>Příklad
 
-| **Pole**             | **Nastavení**             |
-|-----------------------|-------------------------|
-| Vytvoření převodu pro | Varianta produktu         |
-| Varianta produktu       | Tričko : : XL : : |
-| Z jednotky             | Krabice                   |
-| Koeficient                | 4                       |
-| Do jednotky               | Kusy                  |
+V tomto scénáři společnost prodává trička ve velikostech S, M, L a XL. Tričko je definováno jako produkt a jsou definovány různé velikosti variant produktu. Košile jsou baleny v krabicích. Pro S, M a L velikosti může být v každé krabici pět košil. Avšak pro velikost XL je v každé krabici místo pouze pro čtyři košile.
 
-Varianty zveřejněného produktu S, M a L mají stejný převod jednotek mezi jednotkou krabice a kusů, což znamená, že můžete definovat převod jednotky pro tyto varianty produktu pro základní produkt.
+Společnost chce sledovat různé varianty triček podle *kusů*, ale prodávat je po *krabicích*. U S, M a L velikostí je převod mezi jednotkou zásob a prodejní jednotkou 1 krabice = 5 kusů. U XL velikosti je převod 1 krabice = 4 kusy.
 
-| **Pole**             | **Nastavení** |
-|-----------------------|-------------|
-| Vytvoření převodu pro | Produkt     |
-| Produkt               | Tričko     |
-| Z jednotky             | Krabice       |
-| Koeficient                | 5           |
-| Do jednotky               | Kusy      |
+1. Ze stránky **Podrobnosti o zveřejnění produktu** pro **tričko** otevřete stránku **Převod jednotek**.
+1. Na stránce **Převod jednotek** nastavte převod jednotek pro variantu produktu **XL** takto.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Použití aplikace Excel pro aktualizaci převodů jednotek
+    | Pole                 | Nastavení                 |
+    |-----------------------|-------------------------|
+    | Vytvoření převodu pro | Varianta produktu         |
+    | Varianta produktu       | Tričko : : XL : : |
+    | Z jednotky             | Krabice                   |
+    | Koeficient                | 4                       |
+    | Do jednotky               | Kusy                  |
 
-Pokud má produkt mnoho variant s různými převody jednotek, je vhodné exportovat převody jednotek ze stránky **Převod jednotek** do tabulky aplikace Excel, aktualizovat převody a publikovat je zpět v aplikaci Supply Chain Mangement.
+1. Protože varianty zveřejněného produktu **S**, **M** a **L** mají stejný převod jednotek mezi jednotkou *krabice* a *kusů*, znamená to, že můžete definovat převod jednotky pro tyto varianty produktu pro základní produkt.
 
-Možnost exportovat do aplikace Excel a publikovat úpravy zpět do aplikace Supply Chain Mangement je povolena z nabídky **Otevřít v aplikaci Microsoft office** v podokně Akce na stránce **Převod jednotek**.
+    | Pole                 | Nastavení |
+    |-----------------------|---------|
+    | Vytvoření převodu pro | Produkt |
+    | Produkt               | Tričko |
+    | Z jednotky             | Krabice   |
+    | Koeficient                | 5       |
+    | Do jednotky               | Kusy  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Použití aplikace Excel pro aktualizaci převodů jednotek
+
+Pokud má produkt mnoho variant produktu, které mají různé jednotkové převody, je vhodné exportovat jednotkové převody do sešitu Microsoft Excel, aktualizovat je a poté je publikovat zpět do Dynamics 365 Supply Chain Management.
+
+Chcete-li exportovat jednotkové převody do Excelu, na stránce **Převody jednotek** v podokně akcí vyberte **Otevřít v Microsoft Office**.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Správa měrných jednotek](tasks/manage-unit-measure.md)

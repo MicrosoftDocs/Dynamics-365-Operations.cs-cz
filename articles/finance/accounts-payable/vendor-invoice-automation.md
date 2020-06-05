@@ -3,7 +3,7 @@ title: Automatizace faktur dodavatele
 description: Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176847"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396002"
 ---
 # <a name="vendor-invoice-automation"></a>Automatizace faktur dodavatele
 
@@ -61,7 +61,7 @@ Datový balík je jednotka práce, které musí být odeslána, aby bylo možné
 
 Příloha dokumentu faktury dodavatele je nová datová entita, která je zavedena jako součást této funkce. Entita v záhlaví faktury dodavatele byla upravena tak, aby podporovala přílohy. Entita řádku faktury dodavatele pro tuto funkci nebyla změněna.
 
-Toto téma neposkytuje podrobnou definici datového balíku. Také nevysvětluje, jak vytvářet datové balíčky. Tyto informace lze najít v tématu [Systém datových entit a balíčků](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Pro podrobné informace o datových balíčcích viz [Přehled správy dat](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Pro informace o tom, jak vytvořit datové balíčky pomocí pracovního prostoru pro správu dat, viz [Zpracování a spotřebování datových balíčků v řešení aplikací Dynamics 365 Finance and Operations](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy, postupujte takto.
 

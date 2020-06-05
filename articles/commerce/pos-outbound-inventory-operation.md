@@ -3,7 +3,7 @@ title: Odchozí skladová operace v POS
 description: Toto téma popisuje možnosti odchozí skladové operace v pokladním místě (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123915"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384122"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Odchozí skladová operace v POS
 
@@ -117,6 +117,18 @@ V zobrazení **Úplný seznam objednávek** můžete ručně vybrat řádek v se
 ### <a name="over-delivery-shipping-validations"></a>Ověření nadměrné dodávky
 
 Během procesu příjmu pro řádky dokumentu dochází k jejich ověření. To zahrnuje ověření pro navýšení dodávky. Pokud se uživatel pokusí přijmout více zásob, než bylo objednáno na nákupní objednávce, ale buď není konfigurována nadměrná dodávka, nebo přijaté množství překračuje toleranci nadměrné dodávky, která je konfigurována pro řádek nákupní objednávky, obdrží uživatel chybu a není povoleno obdržet nadměrné množství.
+
+### <a name="underdelivery-close-lines"></a>Snížení dodávky pro uzavřené řádky
+
+V Commerce verzi 10.0.12 byla přidána funkce, která umožňuje uživatelům POS uzavřít nebo zrušit zbývající množství během odeslání odchozí objednávky, pokud odchozí sklad zjistí, že nemůže odeslat celé požadované množství. Množství lze také uzavřít nebo zrušit později. Aby bylo možné tuto funkci využívat, musí být společnost nakonfigurována tak, aby umožňovala doručování snížených dodávek převodních příkazů. Kromě toho musí být pro řádek objednávky převodu definováno procento nedoručení.
+
+Chcete-li společnost nakonfigurovat tak, aby umožňovala doručování převodních příkazů pro snížené dodávky, přejděte v Commerce Headquarters na **Řízení zásob \> Založit \> Parametry řízení zásob a skladu**. Na stránce **Parametry řízení zásob a skladu**, v kartě **Převod objednávek**, zapněte **Přijmout doručení snížení dodávek** parametr. Pak spusťte **1070** úloha plánovače distribuce pro synchronizaci změn parametrů s kanálem obchodu.
+
+Procenta doručení snížených dodávek pro řádek objednávky lze předdefinovat u produktů jako součást konfigurace produktu v Commerce Headquarters. Alternativně mohou být nastaveny nebo přepsány na konkrétní řádce převodu přes obchodní ředitelství.
+
+Poté, co organizace dokončí konfiguraci příkazu edpedice pro snížené objednávky, uvidí uživatelé novou možnost **Zavřete zbývající množství** v **Podrobnostech**, když vyberou řádek odchozích přenosů přes operaci **Odchozí operace** v POS. Poté, když uživatelé dokončí zásilku pomocí **Dokončení plnění** operace, mohou poslat požadavek do Commerce Headquarters ke zrušení zbývajícího nevybaveného množství. Pokud se uživatel rozhodne uzavřít zbývající množství, Commerce provede ověření, aby ověřila, že množství, které je zrušeno, je v rámci procentuální tolerance podlimitu, který je definován na řádku objednávky přenosu. Je-li tolerance překročení dodávky překročena, uživatel obdrží chybovou zprávu a nemůže zbývající množství uzavřít, dokud dříve dodané množství a množství „expedovat nyní“ nesplní nebo nepřekročí toleranci doručení snížené dodávky.
+
+Poté, co je zásilka synchronizována na Commerce Headquarters, množství, která jsou definována v **Expedovat nyní** poli pro řádek objednávky převodu v POS jsou aktualizovány na stav odeslání definovaném v Commerce Headquarters. Veškerá neexpedovaná množství, která by dříve byla považována za „zbývající expedice“, tj. množství, která budou dodána později, se místo toho považují za zrušená množství. "Zbývající expedice" pro řádek převodního příkazu je nastaveno na **0** (nula) a řádek je považován za plně dodaný.
 
 ### <a name="shipping-location-controlled-items"></a>Expedice položek na základě umístění
 

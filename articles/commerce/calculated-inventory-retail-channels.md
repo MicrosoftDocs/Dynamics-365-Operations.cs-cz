@@ -3,7 +3,7 @@ title: Vypočítat dostupnost zásob pro maloobchodní kanály
 description: V tomto tématu jsou popsány možnosti, které jsou k dispozici pro zobrazení množství na skladě pro obchod a online kanály.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113913"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379229"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vypočítat dostupnost zásob pro maloobchodní kanály
 
@@ -50,12 +50,7 @@ Obě rozhraní API načítají data ze serveru Commerce a poskytují odhad množ
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Začínáme s vypočítanou dostupností zásob e-Commerce
 
-Před použitím dvou dříve zmíněných rozhraní API je nutné provést změnu parametru v Commerce Headquarters, aby se zajistilo, že snímek hodnot zásob, které program Commerce Headquarters vypočítá pomocí úlohy **Dostupnost produktu**, zadá data do správných tabulek.
-
-Chcete-li parametr nastavit, postupujte následujícím způsobem.
-
-1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**.
-1. Na kartě **Zásoby** v části **Úloha dostupnosti produktu** vyberte **Použít optimalizovaný proces pro úlohu dostupnosti produktu**. Toto nastavení zajišťuje, aby byla optimální sada funkcí použita k výpočtu dostupné zásoby kanálu prostřednictvím serveru Commerce.
+Než použijete dvě rozhraní API, která byla zmíněna výše, musíte povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v Commerce Headquarters.
 
 Předtím, než může rozhraní API vypočítat nejlepší odhad dostupnosti zásob pro určitou položku, musí být zpracován pravidelný snímek dostupnosti zásob ze služby Commerce Headquarters a odeslán do databáze kanálů, kterou používá jednotka elektronického obchodu Commerce Scale Unit. Snímek představuje informace, které má program Commerce Headquarters k dispozici na skladě pro určitou kombinaci produktu nebo varianty produktu a skladu. Může zahrnovat úpravy zásob nebo pohyby, které jsou způsobeny skladovými příjmy, nebo dodávkami či jinými procesy prováděnými v rámci služby Commerce Headquarters a že kanál elektronického obchodu obsahuje informace pouze kvůli synchronizaci.
 
@@ -85,20 +80,15 @@ Je-li výpočet na straně kanálu správně nakonfigurován a spravován, můž
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Začínáme s vypočítanou dostupností zásob na straně kanálu POS
 
-Chcete-li použít výpočetní logiku na straně kanálu a vypnout volání služby v reálném čase pro vyhledávání zásob z aplikace POS, musíte nejprve provést dva změny parametrů. Poté je nutné provést synchronizaci změn s kanálem pomocí procesu plánování distribuce.
+Chcete-li použít logiku výpočtu na straně kanálu a vypnout volání služeb v reálném čase pro vyhledávání zásob z aplikace POS, musíte nejprve povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v Commerce Headquarters. Kromě povolení této funkce musíte provést změny **funkčního profilu**.
 
-Chcete-li první parametr nastavit, postupujte následujícím způsobem.
-
-1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**.
-1. Na kartě **Zásoby** v části **Úloha dostupnosti produktu** vyberte **Použít optimalizovaný proces pro úlohu dostupnosti produktu**. Toto nastavení zajišťuje, aby byla optimální sada funkcí použita k výpočtu dostupné zásoby kanálu prostřednictvím serveru Commerce.
-
-Chcete-li nastavit druhý parametr, postupujte následujícím způsobem.
+Chcete-li změnit **funkční profil**, postupujte takto.
 
 1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**.
 1. Vyberte funkční profil.
 1. Na pevné záložce **Funkce** v části **výpočet dostupnosti zásob** změňte hodnotu pole **Režim výpočtu dostupnosti zásob** ze **Služby v reálném čase** na **Kanál**. Všechny funkční profily standardně používají volání služby v reálném čase. Chcete-li tedy použít výpočetní logiku na straně kanálu, je nutné změnit hodnotu tohoto pole. Tato změna ovlivní všechny maloobchodní obchody propojené s vybraným profilem funkčnosti.
 
-Chcete-li aktualizovat server, postupujte následujícím způsobem.
+Poté je nutné synchronizovat změny kanálu pomocí procesu plánu distribuce provedením následujících kroků:
 
 1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
 1. Spusťte úlohu **1070** (**konfigurace kanálu**).

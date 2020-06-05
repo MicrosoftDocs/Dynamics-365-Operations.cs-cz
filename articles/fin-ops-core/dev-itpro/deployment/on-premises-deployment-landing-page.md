@@ -3,7 +3,7 @@ title: Domovská stránka Místní nasazení
 description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
-ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
+ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3099723"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367051"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -41,7 +41,6 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 ## <a name="onboard"></a>Zaškolení
 - [Nastavení místních projektů ve službě Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Nastavení a nasazení místních prostředí (Platform update 12 a novější)](setup-deploy-on-premises-pu12.md)
-- [Nastavení a nasazení místních prostředí (aktualizace Platform 8 a 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Instalace zařízení síťové tiskárny v místních prostředích](../analytics/install-network-printer-onprem.md)
 - [Konfigurace služby SQL Server Reporting Services pro místní nasazení](../analytics/configure-ssrs-on-premises.md)
 - [Vývoj a nasazení vlastních modelů do místních prostředí](develop-deploy-custom-models-on-premises.md)

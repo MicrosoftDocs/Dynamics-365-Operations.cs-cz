@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b5ad1bdd91a2fb9109f29400f082e9a8af009ba
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216935"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383290"
 ---
 # <a name="set-up-containerization"></a>Nastavení vytváření kontejnerů
 
@@ -60,7 +60,7 @@ Toto téma popisuje postup automatizace vytváření kontejnerů vytížení v m
 
 ## <a name="set-up-a-container-group"></a>Nastavení skupin kontejneru
 1. V navigačním podokně přejděte na **Moduly > Řízení skladu > Nastavení > Kontejnery > Skupiny kontejnerů**.
-2. V podokně akcí vyberte **Nový**. Můžete nastavit skupiny kontejnerů logických skupin. Pro každou skupinu můžete určit pořadí, v němž mají být zabaleny kontejnery a procento zaplnění kontejnerů. Dimenze velikosti se používá k určení, zda bude pasovat do kontejneru. Použije se kontejner, který nejlépe odpovídá dimenzím velikosti. Pokud máte více typů kontejnerů ve skupině, doporučujeme, abyste uspořádali pořadí podle velikosti tak, aby největší kontejner byl první (číslo 1 v číselné řadě) a nejmenší kontejner byl poslední.    
+2. V podokně akcí zvolte **Nový**. Můžete nastavit skupiny kontejnerů logických skupin. Pro každou skupinu můžete určit pořadí, v němž mají být zabaleny kontejnery a procento zaplnění kontejnerů. Dimenze velikosti se používá k určení, zda bude pasovat do kontejneru. Použije se kontejner, který nejlépe odpovídá dimenzím velikosti. Pokud máte více typů kontejnerů ve skupině, doporučujeme, abyste uspořádali pořadí podle velikosti tak, aby největší kontejner byl první (číslo 1 v číselné řadě) a nejmenší kontejner byl poslední.    
 3. Do pole **ID skupiny kontejnerů** zadejte hodnotu, kterou jste vytvořili dříve.
 4. Zadejte hodnotu do pole **Popis**.
 5. Zopakujte kroky 2-4 pro všechny tři typy kontejnerů, které jste vytvořili dříve.

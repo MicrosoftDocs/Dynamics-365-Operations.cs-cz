@@ -1,5 +1,5 @@
 ---
-title: Začínáme se službou nákladového účetnictví
+title: Začínáme se službou nákladového účetnictví (privátní verze Preview)
 description: V tomto tématu jsou uvedeny podrobné informace o licencích a pokyny k instalaci služby nákladového účetnictví.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276896"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372729"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Začínáme se službou nákladového účetnictví
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Začínáme se službou nákladového účetnictví (privátní verze Preview)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Služba nákladového účetnictví je doplněk. Chcete-li zpřístupnit její f
 
 Služba nákladového účetnictví aktuálně nepodporuje všechny funkce správy nákladů, které jsou integrovány v aplikaci Dynamics 365 Supply Chain Management. Proto je důležité, abyste vyhodnotili, zda sada funkcí, která je aktuálně k dispozici, bude vyhovovat vašim požadavkům.
 
-## <a name="licensing"></a>Licence
-
-Služba nákladového účetnictví je licencována společně se standardními funkcemi skladového účetnictví, které jsou k dispozici pro řešení Supply Chain Management. Chcete-li používat službu nákladového účetnictví, nemusíte kupovat další licenci.
-
-## <a name="install-the-add-in"></a>Instalace doplňku
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Jak získat službu nákladového účetnictví (privátní verze Preview)
 
 > [!IMPORTANT]
 > Chcete-li použít službu nákladového účetnictví, je nutné mít prostředí LCS s vysokou dostupností (nikoli prostředí OneBox) a musíte používat Dynamics 365 Supply Chain Management verze 10.0.11 nebo novější.
 
+Chcete-li se zaregistrovat do privátní verze Preview služby nákladového účetnictví, zašlete prosím své ID prostředí LCS e-mailem do [služby nákladového účetnictví (privátní verze Preview)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Po vašem schválení pro program vám pošleme e-mail, který obsahuje klíč beta pro službu nákladového účetnictví. Po přijetí klíče beta můžete pokračovat [instalací doplňku](#install).
+
+## <a name="licensing"></a>Licence
+
+Služba nákladového účetnictví je licencována společně se standardními funkcemi skladového účetnictví, které jsou k dispozici pro řešení Supply Chain Management. Chcete-li používat službu nákladového účetnictví, nemusíte kupovat další licenci.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Instalace doplňku
+
 Chcete-li použít službu nákladového účetnictví, nainstalujte doplněk služby nákladového účetnictví pro Supply Chain Management, jak je popsáno v následujícím postupu.
+
+1. [Zaregistrujte se](#sign-up) pro službu nákladového účetnictví (privátní verze Preview).
 
 1. Přihlaste se do LCS.
 

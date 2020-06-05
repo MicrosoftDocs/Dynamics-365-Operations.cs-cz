@@ -1,9 +1,9 @@
 ---
-title: Připojení k systému nápovědy
-description: Toto téma popisuje součástí systému nápovědy pro aplikace Finance and Operations a poskytuje přehled o způsobu jejich propojení a shrnutí postupu pro vytvoření vlastní nápovědy.
+title: Konfigurace prostředí nápovědy pro aplikace Finance and Operations
+description: Toto téma poskytuje informace o součástech systému nápovědy pro některé aplikace Microsoft Dynamics 365. Vysvětluje také, jak tyto aplikace propojit, a poskytuje shrnutí procesu vytváření vlastní nápovědy.
 author: margoc
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,81 +18,85 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 827d4cd14f497b79c85fb084a6295af13c5eb0c7
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006165"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367377"
 ---
-# <a name="connect-the-help-system"></a>Připojení k systému nápovědy
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro aplikace Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsány komponenty systému nápovědy pro aplikace Finance and Operations, jako je Dynamics 365 Finance, Supply Chain Management, Commerce a Human Resources. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.
+V tomto tématu najdete přehled součástí systému nápovědy pro aplikace Finance and Operations, jako je Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Human Resources. Toto téma také vysvětluje, jak tyto komponenty propojit, a poskytuje shrnutí procesu vytváření vlastní nápovědy.
 
 ## <a name="help-architecture"></a>Architektura nápovědy
 
-Následující obrázek znázorňuje části systému nápovědy. Systém nápovědy v produktu přebírá články z webu https://docs.microsoft.com a také z průvodců záznamem úloh uložených v modulu Modelování podnikových procesů ve službě Lifecycle Services (LCS).
-
-> [!NOTE]
-> Funkce označené v diagramu hvězdičkou (\*) jsou plánované, ale nejsou zatím k dispozici.
+Aplikace Finance and Operations zahrnují koncepční přehledy a další témata, která jsou publikována na web internetu [https://docs.microsoft.com/dynamics365](/dynamics365/). K tomuto obsahu lze poté přistupovat z podokna **Nápověda** v produktu. Následující obrázek znázorňuje části systému nápovědy.
 
 [![Architektura nápovědy](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Připojení systému nápovědy
+Systém nápovědy v produktu stahuje články z docs.microsoft.com a dalších připojených webů. Načítá také průvodce záznamem úloh, které jsou uloženy v modelování podnikových procesů v Microsoft Dynamics Lifecycle Services (LCS).
+
+## <a name="adding-task-guides"></a>Přidání průvodců záznamem úloh
 
 > [!NOTE]
-> Karta **Průvodci záznamem** úloh není k dispozici v aplikacích Dynamics 365 Human Resources či Commerce. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Human Resources jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu docs.microsoft.com pro Human Resources a Commerce.
+> Karta **Průvodci záznamem úloh** není k dispozici v aplikacích Human Resources či Commerce. <!--We are currently working to enable this functionality in a future release.--> Nicméně průvodci záznamem úloh v prostředí Začínáme v aplikaci Human Resources jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu [https://docs.microsoft.com/dynamics365](/dynamics365/) pro Human Resources a Commerce.
 
-Pomocí stránky **Systémové parametry** správci systému připojí části systému nápovědy pro implementaci.
+Na stránce **Parametry systému** mohou správci systému nakonfigurovat přístup k příslušným knihovnám průvodců záznamem úloh pro implementaci.
+
+> [!NOTE]
+> - Chcete-li nakonfigurovat nápovědu, musíte se přihlásit pomocí účtu u stejného klienta jako je klient, ve kterém je aplikace umístěna.
+> - Knihovnu LCS nelze připojit z instance aplikace spuštěné na místním virtuálním pevném disku (VHD).
 
 [![Formulář Systémové parametry s nastavením nápovědy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
-Na stránce **Systémové parametry** proveďte následující kroky:
+Chcete-li nakonfigurovat průvodce záznamem úloh pro řešení, postupujte podle těchto kroků na stránce **Parametry systému**.
 
 > [!IMPORTANT]
-> Při prvním otevření karty **Nápověda** je nutné se připojit k službě Lifecycle Services. Klikněte na odkaz uprostřed formuláře, počkejte na připojení, zavřete dialogové okno a kliknutím na tlačítko **OK** otevřete stránku **Parametry** systému.
+> Při prvním otevření karty **Nápověda** je nutné se připojit k službě Lifecycle Services. Zvolte odkaz uprostřed formuláře, počkejte na připojení, zavřete dialogové okno a volbou tlačítka **OK** otevřete stránku **Parametry systému**.
 >
 > [![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png "Připojit k LCS")](./media/connect-to-lcs-crop.png)
 
 1. Vyberte projekt služby Lifecycle Services pro připojení.
 2. Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úkolů.
-3. Nastavte pořadí zobrazení knihoven BPM. Tato možnost určuje pořadí, ve kterém se záznamy úkolů z knihoven zobrazí v podokně **Nápověda**.
+3. Nastavte pořadí zobrazení knihoven BPM. Toto pořadí zobrazení určuje pořadí, ve kterém se záznamy úkolů z knihoven zobrazí v podokně **Nápověda**.
 
-Po dokončení těchto kroků můžete otevřít podokno **Nápověda** a kliknutí na kartu **Průvodci záznamem úloh**. Zobrazí se vám nyní průvodci záznamem úloh, které se vztahují ke stránce, na které se momentálně v aplikacích Finance and Operations nacházíte. Pokud nebyly nalezeny žádné průvodce úkolem, můžete zadat klíčová slova pro upřesnění hledání.
+Po dokončení těchto kroků můžete otevřít podokno **Nápověda** a zvolit kartu **Průvodci záznamem úloh**. Zobrazí se vám nyní průvodci záznamem úloh, které se vztahují ke stránce, na které se momentálně v aplikacích Finance and Operations nacházíte. Pokud nebyly nalezeny žádné průvodce úkolem, můžete zadat klíčová slova pro upřesnění hledání.
 
 ### <a name="showing-translated-task-guides"></a>Zobrazení přeložených průvodců úkoly
 
-Přeložení průvodci úkolem byli poprvé vydání v knihovně APQC Unified Library pro květen 2016 a v knihovně Začínáme. Aby bylo možné v aplikacích Finance and Operations zobrazit lokalizovanou nápovědu v podobě průvodce úkolem, ujistěte se, že jste připojeni ke knihovně pro květen. Jazyk, ve kterém se průvodce úkolem zobrazí, je řízen pro každého uživatele v jazykovém nastavení v části **Možnosti** &gt; **Předvolby**.
+Přeložení průvodci záznamem úloh byli poprvé vydáni v knihovně APQC Unified Library pro květen 2016 a v knihovně Začínáme. Chcete-li zobrazit lokalizovanou nápovědu pro průvodce záznamem úloh, ujistěte se, že je vaše řešení Dynamics 365 připojeno ke knihovně z května 2016. Uživatelé mohou změnit jazyk, ve kterém se průvodce úkolem zobrazí, změnou jazykového nastavení v části **Možnosti** &gt; **Preference**.
 
 > [!NOTE]
-> I když mnoho průvodců úkolem již bylo přeloženy, klient aktuálně nezobrazuje názvy přeložených průvodců úkolem. Stejně tak pouze průvodci úkolem vydaní v únoru jsou momentálně k dispozici v překladu v knihovně pro únor 2016. Aktualizovanou knihovnou s další překlady zpřístupníme později.
+> I když mnoho průvodců záznamem úloh již bylo přeloženo, klient aktuálně nezobrazuje názvy přeložených průvodců záznamem úloh. Kromě toho jsou v knihovně z května 2016 k dispozici překlady pouze pro průvodce úloh, které byly vydány v únoru 2016. Aktualizovanou knihovnu s další překlady zpřístupní Microsoft později.
 >
 > - Pokud průvodce úkolem byl přeložen, veškerý text průvodce úkolem se při otevření daného průvodce zobrazí ve vybraném jazyce.
 > - Pokud průvodce úkolem zatím nebyl přeložen, při otevření daného průvodce se zobrazí ve vybraném jazyce pouze některý text (text ovládacích prvků).
 
-## <a name="creating-custom-help"></a>Vytváření vlastních nápověd
+## <a name="adding-custom-help"></a>Přidání vlastní nápovědy
 
-Můžete použít průvodce záznamem úloh k vytvoření vlastní nápovědy, nebo připojit své webové stránky k panelu Nápověda.
+Můžete použít průvodce záznamem úloh k vytvoření vlastní nápovědy, nebo připojit vlastní webové stránky k podoknu **Nápověda**.
 
-### <a name="create-custom-help-with-task-guides"></a>Vytvoření vlastní nápovědy pomocí průvodců záznamem úloh
+### <a name="create-custom-help-by-using-task-guides"></a>Vytvoření vlastní nápovědy pomocí průvodců záznamem úloh
 
-Vlastní nápovědu pro aplikace Finance, Supply Chain Management a Commerce můžete vytvořit tak, že vytvoříte záznamy úloh, které odpovídají vaší implementaci, a uložíte je do knihovny obchodního procesu LCS. V aplikaci Human Resources nelze vytvářet vlastní průvodce záznamem úloh.
+Můžete si vytvořit vlastní nápovědu pro podporované aplikace vytvořením záznamů úloh, které odrážejí vaši implementaci, a poté je uložit do knihovny obchodních procesů v LCS. V aplikaci Human Resources nelze vytvářet vlastní průvodce záznamem úloh.
 
-Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené globální knihovny APQC a poté otevřít kopii z ní otevřít záznamy úloh, upravit je a uložit záznamy s provedenými změnami. Více informací viz [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md).
+Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené knihovny APQC a poté otevřít záznamy úloh v kopii, upravit je a uložit záznamy s provedenými změnami. Více informací viz [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md).
 
-### <a name="connect-a-custom-site"></a>Připojení vlastního webu
+### <a name="connect-a-custom-help-site"></a>Připojení vlastního webu nápovědy
 
-Společnost Microsoft poskytla dokument white paper a vzorový kód, které popisují způsob vytvoření a připojení vlastního webu nápovědy k panelu Nápověda. Další informace naleznete zde:
+Aplikace Finance and Operations se používají jen zřídka ve své výchozí formě. Místo toho je řešení přizpůsobeno a rozšířeno podle potřeb organizace. Můžete také přizpůsobit a rozšířit prostředí nápovědy. Například můžete přidat vlastní nápovědu do podokna **Nápověda** v produktu.
 
-- [Vytvoření vlastní nápovědy pro Finance and Operations (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
-- [Úložiště GitHub vlastní nápovědy](https://github.com/microsoft/dynamics356f-o-custom-help)
+Společnost Microsoft poskytla sadu nástrojů, která vám pomůže při nasazení a připojení vlastní nápovědy k podoknu **Nápověda**. Informace o tom, jak můžete nastavit vlastní řešení nápovědy připojené k podoknu **Nápověda** najdete v části [Přehled vlastní nápovědy](../../dev-itpro/help/custom-help-overview.md).
 
-## <a name="additional-resources"></a>Další zdroje
+Pokud chcete spolupracovat se společností Microsoft na nástrojích a procesech přizpůsobení nápovědy, vyplňte formulář na adrese [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 
-[Systém nápovědy](help-overview.md)
+## <a name="see-also"></a>Viz také
 
-[Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
-
-[Vytváření dokumentace nebo školení pomocí záznamníku úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Systém nápovědy](help-overview.md)  
+[Přehled vlastní nápovědy](../../dev-itpro/help/custom-help-overview.md)  
+[Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)  
+[Vytváření dokumentace nebo školení pomocí záznamníku úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
+[Úložiště GitHub vlastní nápovědy](https://github.com/microsoft/dynamics356f-o-custom-help)  

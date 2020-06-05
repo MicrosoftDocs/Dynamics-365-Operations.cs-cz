@@ -3,7 +3,7 @@ title: Správa skladových zásob
 description: Toto téma popisuje typy dokumentů, které můžete použít ke správě zásob.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,56 +18,54 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3f7f228bbf312a2ccdc96d3e95287898bee01de4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a3e6450c358d12dc62c2ffa20e7ff529be86bbe5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021839"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379252"
 ---
 # <a name="store-inventory-management"></a>Správa skladových zásob
 
 [!include [banner](includes/banner.md)]
 
-Při práci se zásobami v aplikaci Dynamics 365 Commerce a používání aplikace Retail POS je důležité poznamenat, že POS poskytuje omezenou podporu pro dimenze zásob a určité typy skladových položek.
+Při práci s inventářem v Microsoft Dynamics 365 Commerce a používání Point of Sale (POS) aplikací, je důležité si uvědomit, že POS poskytuje omezenou podporu pro některé dimenze inventáře a některé typy položek inventáře. Aplikace POS nepodporuje úplnou škálu možností konfigurace položek, které jsou k dispozici prostřednictvím možností konfigurace položek v Dynamics 365 Supply Chain Management.
 
-Řešení POS nepodporuje následující konfigurace položek:
+Řešení POS v současné době nepodporuje následující rozměry produktu a konfigurace položek:
 
-- Položky kusovníku (s výjimkou sady produktů, které používají některé součásti sady systému kusovníků)
+- Konfigurace rozměru produktu a položek kusovníku (kromě kusovníku, který používá některé součásti rozhraní kusovníku)
 - Položka se skutečnou hmotností
-- Položky řízené dávkou
+- Položky řízené rozměrem produktu
 
 Aplikace Retail POS v současné době nepodporuje následující sledovací dimenze v POS:
 
 - Dimenze dávkového sledování
 - Dimenze vlastníka
 
-Řešení POS poskytuje omezenou podporu následujících dimenzí. Omezená podpora označuje, že POS může nastavit některé z těchto dimenzí jako výchozí do skladových transakcí automaticky založených na konfiguraci nastavení skladu/úložiště. POS nebude plně podporovat dimenze způsobem, kterým jsou podporovány v případě ručního zadání prodejní transakce do ERP. 
+POS poskytuje omezenou podporu následujících dimenzí. Jinými slovy POS může nastavit některé z těchto dimenzí jako výchozí ve skladových transakcích podle na konfigurace skladu nebo úložiště. POS nebude plně podporovat dimenze způsobem, kterým jsou podporovány v případě ručního zadání prodejní transakce v Comerce Headquarters. 
 
-- **Skladové místo** – Uživatelé nebudou mít možnost spravovat přijímací skladové místo pro položky přijaté do skladu obchodu, pokud nebylo pro obchod nakonfigurováno použití procesu řízení skladu. Pro tyto položky bude použito výchozí přijímací skladové místo definované ve skladu obchodu. Pokud byl pro obchod povolen proces řízení skladu, bude spuštěna omezená podpora, která vyzve uživatele k výběru přijímacího místa pro celou příjemku. Položky prodávané z obchodu budou vždy vyprodány z výchozího umístění, jak je definováno v nastavení skladu obchodu. Místo pro správu zásob vrácení lze ovládat pomocí výchozí definice skladového místa pro vrácení ve skladu obchodu nebo na základě kódů důvodu vrácení, které jsou definovány v zásadě umístění pro vrácení.
-- **Registrační značka** - Registrační značky platí pouze v případě, když byla povolena možnost **Použít procesy řízení skladu** pro danou položku a sklad obchodu. Pokud jsou v POS přijaty zásoby do skladu obchodu, kde byl povolen proces řízení skladu, a skladové místo vybrané pro přijetí položky je navázáno na profil umístění, který vyžaduje řízení registrační značky, aplikace POS systematicky použije registrační značku na řádek příjmu. Uživatelé v POS nebudou mít možnost měnit ani spravovat data této registrační značky. Je-li vyžadována úplná správa registračních značek, navrhuje se, aby obchod použil mobilní aplikaci WMS nebo klienta ERP účetního systému ke správě příjmu těchto položek.
-- **Sériové číslo** – Aplikace POS má omezenou podporu pro jednotlivá sériová čísla, která mají být registrována na řádku prodejní transakce pro objednávky vytvořené v POS se serializovanými položkami. Toto sériové číslo není ověřováno proti registrovaným sériovým číslům, která jsou již v zásobách. Je-li prodejní objednávka vytvořena v kanálu kontaktního střediska nebo splněna prostřednictvím ERP a více sériových čísel je registrováno k jednomu řádku prodeje v průběhu procesu plnění v ERP, tato sériová čísla nebude možné použít nebo ověřit, pokud je pro tyto objednávky vrácení zpracováváno v POS.
+- **Umístění skladu** - Když používají nové POS operace [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) a [Odchozí operace ](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), uživatelé si mohou vybrat umístění inventáře skladu, ze kterého budou přijímat položky nebo odesílat položky odchozích objednávek. Pokud používají zastaralé operace **Vyzvednutí a příjem** pro příjem a odesílání odchozích převodů, je k dispozici omezená podpora správy polohy. Tato podpora je k dispozici pouze pokud **Použít procesy řízení skladu** byla pro položku a sklad obchodu zapnuta možnost. Místo inventáře nelze v současné době použít s operacemi **Počet na skladě** nebo **Vyhledávání zásob**.
+- **Registrační značka** - Registrační značky platí pouze v případě, když byla povolena možnost **Použít procesy řízení skladu** pro danou položku a sklad obchodu. V POS, pokud je inventář přijat do skladu pomocí operace **Příchozí operace** nebo **Výdej a příjem**, kde byl zapnut proces správy skladu, a pokud je místo, které bylo vybráno pro příjem položky, spojeno s profilem místa, který vyžaduje kontrolu poznávací značky, aplikace POS systematicky aplikuje poznávací značku na řádek příjmu. Uživatelé POS nemohou tato data poznávací značky změnit ani spravovat. Je-li vyžadována úplná správa registračních značek, doporučujeme, aby obchod použil [skladovací aplikaci](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) klienta účetního systému ke správě příjmu těchto položek.
+- **Sériové číslo** – Aplikace POS má omezenou podporu pro jednotlivá sériová čísla, která mají být registrována na řádku prodejní transakce pro objednávky vytvořené v POS a obsahují serializované položky. Toto sériové číslo není ověřováno proti registrovaným sériovým číslům, která jsou již v zásobách. Je-li prodejní objednávka vytvořena v kanálu kontaktního střediska nebo splněna prostřednictvím podnikových zdrojů plánování (ERP) a více sériových čísel je registrováno v jednom řádku prodeje v průběhu procesu plnění v ERP, tato sériová čísla nebude možné použít nebo ověřit, pokud je pro tuto objednávku zpracováváno vrácení v POS. Když je inventář přijat pomocí operace **Příchozí operace**, uživatelé mohou [zaregistrovat nebo potvrdit přijatá sériová čísla](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
 - **Stav zásob** - Pro položky, které používají proces řízení skladu a vyžadují stav zásob, nelze toto pole stavu v aplikaci POS nastavit nebo změnit. Výchozí stav zásob definovaný v konfiguraci skladu obchodu bude použit při příjmu položek do zásob.
 
 > [!NOTE]
-> Všechny organizace musí otestovat konfigurace položky prostřednictvím POS při vývoji nebo v testovacím prostředí před nasazením do výroby. Položky otestujte provedením pravidelných hotovostních prodejních transakcí a vytvořením zákaznických objednávek (v příslušných případech) pomocí POS s položkami. Testování musí zahrnovat spuštění úplných procesů zaúčtování výkazů v testovacím prostředí a ověření, že nedochází k potížím.
+> Všechny organizace musí otestovat konfigurace položky prostřednictvím POS při vývoji nebo v testovacím prostředí před nasazením těchto konfigurací položek do produkčních prostředí. Položky otestujte používáním jich pro pravidelné hotovostní prodejní transakce a vytvořením zákaznických objednávek (v příslušných případech) pomocí POS s položkami. Před nasazením jakékoli nové konfigurace položek byste také měli otestovat plnění POS a procesy inventáře (například operace přijímání zásob a plnění objednávek), abyste se ujistili, že je aplikace POS podporuje. Testování musí zahrnovat spuštění úplného procesu účtování výkazů v testovacím prostředí a ověření, že při vytváření objednávek na tyto položky a jejich zveřejňování v commerce Headquarters nedochází k problémům.
 >
-> Konfigurace položek způsobem, který aplikace POS nepodporuje, bez řádného testování, může způsobit neúspěch procesu zaúčtování ve výrobě bez jednoduchého způsobu opravy problémů. Přizpůsobení aplikace partnerem nebo zákazníkem může být volitelně považováno za umožnění úspěšného dokončení těchto procesů zaúčtování. Pokud nejsou potřeba přizpůsobení, musí organizace zajistit, že konfigurace produktu byla provedena způsobem, který podporují standardní procesy aplikace POS/vytvoření objednávky/zaúčtování výkazu.
+> Pokud jsou položky nakonfigurovány tak, že je aplikace POS nepodporuje a není provedeno odpovídající testování, může se během procesu vytváření objednávek vyskytnout selhání dat, které nelze snadno opravit nebo které nejsou pokryty standardní podporou produktu.
 
 ## <a name="purchase-orders"></a>Nákupní objednávky
 
-Nákupní objednávky se vytvářejí v ústředí. Pokud je sklad zahrnut v záhlaví nákupní objednávky, objednávku lze přijmout v obchodě pomocí řešení Modern POS (MPOS) nebo Cloud POS v aplikaci pomocí operace **Výdej/Příjem**. Po zadání množství přijatých v obchodě do pole **Přijmout nyní** v POS pro dokument nákupní objednávky mohou být tyto údaje uloženy místně nebo potvrzeny. Uložení těchto dat lokálně nemá žádný dopad na zásoby na skladě. Ukládání by mělo být provedeno pouze v případě, že uživatel není připraven zaúčtovat příjemku do HQ a pouze potřebuje způsob, jak dočasně uložit dříve zadaná **Přijmout nyní**. Tím se uloží data z přijetí místně do databáze kanálů uživatele. Po zpracování dokumentu s použitím možnosti **Potvrdit** budou data **Přijmout nyní** odeslána do HQ a bude zaúčtována příjemka nákupní objednávky. 
+Objednávky jsou vytvářeny v commerce Headquarters. Pokud je sklad zahrnut v záhlaví nákupní objednávky nebo v řádku nákupní objednávky, objednávku lze přijmout v obchodě pomocí operace [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) v POS. 
 
 ## <a name="transfer-orders"></a>Převodní příkazy
 
-Převodní příkaz může specifikovat, že konkrétní obchod je umístěním, ze kterého lze expedovat položky nebo do kterého budou zásoby přijaty. Pokud je uživatel POS expedičním skladem pro převodní příkaz, bude moci zadat množství **Expedovat nyní** z POS. Data zadaná expedičním obchodem lze uložit místně nebo je potvrdit. Při místním uložení nejsou provedeny žádné aktualizace dokumentu převodního příkazu v HQ. Ukládání by mělo být provedeno pouze v případě, že uživatel není připraven zaúčtovat dodávku do HQ a potřebuje způsob, jak dočasně uložit dříve zadaná **Expedovat nyní**. Jakmile bude obchod připraven k potvrzení dodávky, je třeba vybrat možnost **Potvrdit**. Tato možnost zaúčtuje dodávku převodního příkazu v HQ, takže přijímací sklad bude nyní schopen proti ní přijímat. 
-
-Pokud je uživatel POS přijímacím skladem pro převodní příkaz, bude moci zadat množství **Přijmout nyní** z POS. Data zadaná přijímajícím obchodem lze uložit místně nebo je potvrdit. Ukládání by mělo být provedeno pouze v případě, že uživatel není připraven zaúčtovat příjemku do HQ a potřebuje způsob, jak dočasně uložit dříve zadaná **Přijmout nyní**. Tím se uloží data z přijetí místně do databáze kanálů uživatele. Po zpracování dokumentu s použitím možnosti **Potvrdit** budou data **Přijmout nyní** odeslána do HQ a bude zaúčtována příjemka převodního příkazu. Je důležité si uvědomit, že přijímající obchod bude omezen pouze na schopnost potvrdit množství příjmu, která jsou rovna nebo menší než dodaná množství. Pokus o přijetí množství na převodních příkazech, která nebyla dříve expedována, bude mít za následek chyby a příjemka nebude potvrzena v HQ.
+Převodní příkazy lze vytvořit v Commerce Headquarters nebo prostřednictvím operací [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) nebo [Odchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) v POS. Použijte **Příchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán do obchodu z jiného skladu nebo umístění obchodu. Použijte **Odchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán z obchodu do jiného skladu nebo umístění obchodu. Po vytvoření příkazu k převodu do obchodu může tento obchod spravovat příjem inventáře pro příkaz k převodu prostřednictvím operace **Příchozí operace** v POS. Pokud je v obchodě dodávka zásob na jiné místo, operace **Odchozí operace** v POS se používá ke správě procesu odeslání tohoto obchodu.
 
 ## <a name="stock-counts"></a>Počty na skladě
 
-Inventury mohou být plánované nebo neplánované. Plánované inventury zahajuje ústředí, které také určuje, které položky musí být spočítány. Ústředí vytvoří dokument inventury skladu, který lze přijmout v obchodě, kde jsou množství skutečných zásob na skladě zadána v MPOS nebo Cloud POS. Neplánované maloobchodní inventury jsou zahájeny v obchodě a množství skutečných zásob na skladě jsou aktualizována v MPOS nebo Cloud POS. Na rozdíl od plánovaných maloobchodních inventur nemají neplánované maloobchodní inventury předdefinovaný seznam položek. Po dokončení obou typů inventury budou potvrzeny a odeslány do ústředí. V ústředí bude inventura ověřena a zaúčtována jako samostatný krok.
+Inventury mohou být plánované nebo neplánované. Plánované počty zásob se vytvářejí prostřednictvím centrály obchodu vytvořením dokumentu deníku Inventura, který je propojen se skladem obchodu. Tento deník určuje položky, které musí být spočítány. Obchod pak může přistupovat k těmto předdefinovaným inventurním deníkům a jednat podle nich pomocí operace **Počet na skladě** v POS. Uživatelé obchodu zahájí neplánovaný počet zásob, jak je požadováno, když použijí operaci **Počet na skladě** v POS. Na rozdíl od plánovaných maloobchodních inventur nemají neplánované maloobchodní inventury předdefinovaný seznam položek. Po dokončení obou typů inventury budou potvrzeny v POS a odeslány do ústředí. V ústředí musí být počet poté potvrzen a zaúčtován v Commerce Headquarters jako samostatný krok.
 
 ## <a name="inventory-lookup"></a>Vyhledávání zásob
 
-Na stránce **Vyhledávání zásob** lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Chcete-li tak učinit, vyberte obchod, pro který chcete zobrazit ATP, a klikněte na **Zobrazit dostupnost obchodu**.
+Na stránce **Vyhledávání zásob** lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Vyberte obchod, pro který chcete zobrazit množství dostupném pro slíbení, a pak vyberte **Zobrazit dostupnost obchodu**. Informace o dostupných konfiguračních možnostech naleznete v části [Výpočet dostupnosti zásob pro maloobchodní kanály](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).

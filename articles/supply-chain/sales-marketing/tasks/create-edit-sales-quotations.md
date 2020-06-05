@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ddad2814915e14821f03efda72858d9a57f2d4e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 44fe6589b43627f44e32fb728784c24c40b4261a
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204394"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383382"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Vytváření a úpravy prodejních nabídek
 
@@ -45,7 +45,7 @@ Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku. Tento pos
 12. Klepněte na možnost **Součet**.
 13. Klikněte na tlačítko **OK**.
 14. Vyberte řádek prodejní nabídky.
-15. V **podokně akcí** klikněte na možnost **Nabídka**.
+15. V **Podokně akcí** klikněte na možnost **Nabídka**.
 16. Klikněte na **Simulaci ceny**.
     - Na stránce **Spustit simulaci** ceny můžete vyzkoušet úpravami očekávané výnosy nebo ziskovost vaší nabídky na základě požadované jednotkové ceny, částku slevy, procento slevy, celkovou částku, marži nebo příspěvkový poměr. Pokud jste spokojeni s cílovými hodnotami, lze návrh použít pro daný řádek nabídky a její pole související s cenami bude odpovídajícím způsobem aktualizováno.  
     - Simulací cen můžete vytvářet, kolik chcete. Klepnete-li na **Nový**, cenové podmínky z aktuálního řádku nabídky se zkopírují na stránku. Můžete pak upravit hodnoty v jakémkoli poli souvisejícím s cenami do cílových hodnot. Změny v jednom z polí spustí přepočet ve všech ostatních polích. Aby systém vypočítal prodejní marže a příspěvkový poměr, musí znát pořizovací cenu produktu. Použijte kartu Simulované ceny pro podrobné zobrazení původních cen, navržených změn a jejich vlivu na celkové hodnoty nabídky. Obecně platí, že když simulace určuje nové množství pro daný řádek nabídky, systém přepočítá a zadá novou hodnotu v poli Jednotková cena. Pokud simulace vychází z nové marže nebo nového příspěvkového poměru, je aktualizováno pouze pole Čistá částka a pole Jednotková cena je prázdné. V obou případech budou odstraněny všechny slevy, které byly na řádku nabídky před simulací.

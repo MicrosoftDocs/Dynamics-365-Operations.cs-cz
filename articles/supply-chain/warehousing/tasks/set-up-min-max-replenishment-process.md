@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b99cac46ea33b018a3f67dd4bf0164b8a7f0e6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d2997a39311e371443de3bc11ace17ab36be20e8
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216866"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383566"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Vytvoření procesu minimálního nebo maximálního doplňování
 
@@ -43,7 +43,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 ## <a name="create-a-replenishment-location-directive"></a>Vytvoření směrnice pro doplnění místa
 1. Přejděte do nabídky **Řízení skladu > Nastavení > Směrnice skladového místa**. Směrnice skladového místa slouží k určení toho, kde mají být položky v procesu doplnění vydány.
 2. V poli **Typ pracovního příkazu** vyberte možnost Doplnění.
-3. V **podokně akcí** klikněte na možnost **Nový**.
+3. V **podokně akcí** klepněte na možnost **Nový**.
 4. Zadejte hodnotu do pole **Název**.
 5. V poli **Typ práce** vyberte „Vybrat“.
 6. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat pracoviště 2.  
@@ -65,7 +65,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 ## <a name="create-a-replenishment-work-template"></a>Vytvoření šablony doplnění
 1. Přejděte do nabídky **Řízení skladu > Nastavení > Práce > Pracovní šablony**. Šablona práce se používá jako vodítko pro určení toho, jak musí být doplnění metodou min/max vytvořeno. Jako základ musí existovat řádek šablony práce pro výdej a vložení. Šablona práce například stanoví, že je proces neplatný, až dokud nejsou uvedeny všechny potřebné informace. 
 2. V poli **Typ pracovního příkazu** vyberte možnost Doplnění.
-3. V **podokně akcí** klikněte na možnost **Nový**.
+3. V **podokně akcí** klepněte na možnost **Nový**.
 4. Zadejte hodnotu do pole **Šablona práce**.
 5. Klikněte na možnost **Uložit**.
 6. V části **Podrobnosti pracovní šablony** klikněte na **Nová**.
@@ -80,7 +80,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 
 ## <a name="create-a-new-replenishment-template"></a>Vytvoření nové šablony doplnění
 1. Přejděte na **Řízení skladu > Nastavení > Doplnění > Šablony doplnění**. Šablona doplnění se používá k definici položek, množství a místa pro doplnění.
-2. V **podokně akcí** klikněte na možnost **Nový**.
+2. V **podokně akcí** klepněte na možnost **Nový**.
 3. Zadejte hodnotu do pole **Šablona doplnění**. Pojmenujte šablonu tak, aby bylo jasné, že je určena pro doplnění metodou min/max.  
 4. Zadejte hodnotu do pole **Popis**.
 5. Zaškrtněte políčko **Povolit u vlny poptávky použití nerezervovaných množství**. Pokud vyberete tuto možnost, bude doplnění poptávky vlny mít možnost spotřebovat množství, která souvisejí s doplněním metodou min/max. To může být například užitečné, pokud doplnění metodou min/max není zpracováno okamžitě, a aby se tak zabránilo vytvoření nutnosti doplnění nadměrné poptávky.
