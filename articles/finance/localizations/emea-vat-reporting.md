@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a9b5bafb70883d9daf35a7d5a9107d7aee23469
+ms.sourcegitcommit: 98ef9178b28cd548f08f8c32255636e6e09b25f2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773443"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3395980"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 
@@ -265,13 +265,13 @@ Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů té
 | Belgie        |                                                                                 |
 | Česká republika |  [Výkaz DPH pro Českou republiku](emea-cze-vat-statement-details.md)   |
 | Estonsko        |  [Podrobnosti výkazu DPH pro Estonsko](emea-est-vat-statement-details.md) |
-| Finsko        |                                                                                 |
-| Německo        |                                                                                 |
+| Finsko        | [Sestava DPH pro Finsko](emea-fin-sales-tax-payment-report-finland.md)          |
+| Německo        | [Přiznání k DPH pro Německo](emea-de-vat-declaration.md)                       |
 | Itálie          | [Podrobnosti výkazu DPH pro Itálii](emea-ita-vat-statements-details.md)            |
 | Lotyšsko         | [Podrobnosti výkazu DPH pro Lotyšsko](emea-lva-vat-statement-details.md)           |
 | Litva      | [Podrobnosti výkazu DPH pro Litvu](emea-ltu-vat-statement-details.md)         |
-| Nizozemsko    |                                                                                 |
-| Švédsko         |                                                                                 |
+| Nizozemsko    | [Formát přiznání k DPH pro Nizozemsko](emea-nl-vat-declaration.md)           |
+| Švédsko         | [Sestava DPH pro Švédsko](emea-swe-sales-tax-payment-report-sweden.md)          |
 
 
 

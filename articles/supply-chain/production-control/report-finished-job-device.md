@@ -19,22 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: f5863202facc83afb91b380ba5666334783ccbcf
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 74e1e30f5afe51cd0ecec2530ffcb9a59eec5fee
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211162"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367238"
 ---
-[!include [banner](../includes/banner.md)]
+# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>Ohlášení za dokončené pro umístění bez řízení na základě registračních značek ze zařízení s kartou úlohy
 
-# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>Ohlášení za dokončené pro umístění bez řízení na základě registračních značek ze zařízení s kartou úlohy 
+[!include [banner](../includes/banner.md)]
 
 Proces s názvem Hlášení jako dokončené dokončuje dokončené produkty ve výrobní zakázce do skladu. Je-li dokončený produkt povolen pro rozšířené skladové procesy, produkt je hlášen jako dokončený do skladového místa s názvem výrobního výstupu. Další informace o nastavení skladového výstupu naleznete v tématu [místo výstupu ve výrobě](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location).
 
-Pokud je výstupní místo výroby řízeno registrační značkou, musí být při ohlášení dokončení k dispozici. Pole **Registrační značka** je zobrazeno na výzvě **Průběh sestavy** na stránce **Zařízení karty úlohy**. Toto pole je viditelné pouze na příznaku **Průběh sestavy**, pokud je pro procesy správy skladu povoleno vykazování na poslední operaci výrobní zakázky a zboží pro výrobní zakázku. 
+Pokud je výstupní místo výroby řízeno registrační značkou, musí být při ohlášení dokončení k dispozici. Pole **Registrační značka** je zobrazeno na výzvě **Průběh sestavy** na stránce **Zařízení karty úlohy**. Toto pole je viditelné pouze na příznaku **Průběh sestavy**, pokud je pro procesy správy skladu povoleno vykazování na poslední operaci výrobní zakázky a zboží pro výrobní zakázku.
 
-Existují dvě možnosti poskytnutí licenčního štítku
+Existují dvě možnosti poskytnutí licenčního štítku:
+
 - Uživatel vybere existující registrační značku v poli registrační značky.
 - Registrační značka se automaticky generuje z číselné řady a převezme se v poli regitrační značka.
 

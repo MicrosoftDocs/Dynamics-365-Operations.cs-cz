@@ -1,9 +1,9 @@
 ---
 title: Videa
-description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikacemi Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
+description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781843"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367122"
 ---
 # <a name="videos"></a>Videa 
 
 [!include [banner](../includes/banner.md)]
 
-V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro aplikace Dynamics 365 for Finance and Operations, které jsou v tomto informačním kanálu hostované.
+V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro aplikace Finance and Operations, která jsou v tomto informačním kanálu hostovaná.
 
 > [!Note]
 > Některá z uvedených videí byla publikována pod předchozím názvem produktu, ale stále jsou použitelná.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa o vvoji a správě pro aplikaci Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa pro vývoj a správu Finance and Operations
 
 ### <a name="data-integration"></a>Integrace dat
 
@@ -44,7 +44,7 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 - [Použití datových entit a balíčků dat](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
-### <a name="development"></a>Vývoj
+### <a name="development"></a>Rozvoj
 
 - [Jak řešit konflikty v aplikaci Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
@@ -55,11 +55,11 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Editace integrovaných sestav v analytickém pracovním prostoru](https://youtu.be/_8WlwmSggcQ)
-- [Jak vložit sestavy PowerBI.com v aplikacích Finance and Operations](https://youtu.be/gGWuNJDoi-M)
-- [Přinesení vlastní databáze (BYOD) do aplikací Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Postup při vkládání sestav PowerBI.com do aplikací Finance and Operations](https://youtu.be/gGWuNJDoi-M)
+- [Použití vlastní databáze (BYOD) do aplikací Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak používat obsah řízení nákladů Power BI v Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
-### <a name="lifecycle-services-lcs"></a>Služby  Lifecycle Services (LCS)
+### <a name="lifecycle-services-lcs"></a>Služby Lifecycle Services (LCS)
 
 - [Knihovna aktiv v Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Prostředí hostovaná v cloudu](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
@@ -76,6 +76,12 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 - [Aktualizace dat v produkčním prostředí](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Přijetí nové verze platformy po Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Sledování klíčových čítačů výkonu ve službě Dynamics Lifecycle Services pomocí telemetrie](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT)
+
+- [Jak použít záznamník úloh k vytvoření testovacího případu pro Regression Suite Automation Tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
+- [Jak vytvořit testovací plán pro Azure DevOps pro použití s Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
+- [Jak použít nástroj Regression Suite Automation Tool](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videa pro Dynamics 365 Finance

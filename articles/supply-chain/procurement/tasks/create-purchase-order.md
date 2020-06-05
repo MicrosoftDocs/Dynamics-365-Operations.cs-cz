@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26112a9d25c0097bdbf30003247ce6dd4b4fb634
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204877"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383221"
 ---
 # <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
 
@@ -68,7 +68,7 @@ Toto téma popisuje způsob ručního vytváření nákupní objednávky. Nákup
 ## <a name="review-order-totals"></a>Kontrola součtů objednávky
 1. Vyberte možnost **Součty**.
 
-    - Pokud akci **Celkem** nevidíte, zvolte kartu **Nákupní objednávka** na panelu akcí.  
+    - Pokud akci **Celkem** nevidíte, zvolte kartu **Nákupní objednávka** v podokně akcí.  
     - V tomto dialogovém jsou zobrazeny součty pro celou objednávku.  
     - Pole **Výběr** umožňuje změnit základ způsobu výpočtu součtů. Například můžete vybrat **Množství v příjemce produktu** a zobrazit tak celkové hodnoty, které se vztahují k množství produktů, které byly přijaty, nebo vybrat **Objednané množství** a zobrazit množství produktu, které byly objednány.  
 

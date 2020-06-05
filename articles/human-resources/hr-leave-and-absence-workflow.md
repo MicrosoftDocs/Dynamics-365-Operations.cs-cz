@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
+ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353681"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385541"
 ---
 # <a name="create-a-leave-request-workflow"></a>Vytvoření workflowu žádosti o pracovní volno
 
@@ -49,6 +49,7 @@ Workflow v Dynamics 365 Human Resources můžete vytvořit pro účely konzisten
 
 Následující datové prvky můžete použít k vytvoření podmíněných nebo automatických schválení v pracovních postupech pro žádosti o dovolenou a nepřítomnost:
 
+- **Částka**
 - **Komentář**
 - **Společnost**
 - **Vytvořil/a**

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c123ffbeb33cbc3ba01b4b2758208ed0c445f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204210"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383485"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrola dostupnosti zásob
 

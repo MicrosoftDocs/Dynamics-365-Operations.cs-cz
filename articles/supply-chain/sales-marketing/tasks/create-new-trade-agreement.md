@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aa46f959c35c209791457aa697ab829264b3275
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1642da7b06363d1f704e51276b5cb36823707231
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211944"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383407"
 ---
 # <a name="create-a-new-trade-agreement"></a>Vytvoření nové obchodní smlouvy
 
@@ -34,7 +34,7 @@ Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novo
 2. Klepněte na možnost **Nový**.
 3. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. V **podokně akcí** klikněte na možnost **Řádky**.
+5. V **podokně akcí** klikněte na možnost **Řádky**.
 6. V poli **Kód účtu** vyberte možnost Tabulka.
     
     V tomto příkladu aktualizujete cenu pro určitého odběratele, což znamená, že je nutné vybrat tabulku. Pokud byste aktualizovali katalogovou cenu produktu, vybrali byste Vše, aby nová cena platila pro všechny odběratele. Pokud byste používali různé ceny v různých segmentech odběratelů, vybrali byste možnost Skupina. Chcete-li vybrat skupinu, musíte nastavit možnost Cenové skupiny odběratele.  

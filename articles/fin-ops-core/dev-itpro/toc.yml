@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Řešení potíží s použitím balíčku
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Nasazení vlastní nápovědy
+              items:
+                - name: Přehled vlastní nápovědy
+                  href: help/custom-help-overview.md
+                - name: Příprava obsahu pro použití s podoknem nápovědy
+                  href: help/preparing-content.md
+                - name: Nasazení vlastní nápovědy do Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Připojení vlastní nápovědy do podokna nápovědy
+                  href: help/connect-help-pane.md
+                - name: Sada nástrojů vlastní nápovědy
+                  items:
+                    - name: Přehled
+                      href: help/custom-help-toolkit.md
+                    - name: Nástroj HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Nástroj Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Nástroj HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Převod vlastní nápovědy Dynamics AX pro použití v Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Popisovače jazyka a národního prostředí v rámci produktu a nápovědy
+                  href: help/language-locale.md
+                - name: 'Rozšíření, přizpůsobení a spolupráce na nápovědě'
+                  href: help/contributor-guide.md
         - name: Vývoj a přizpůsobení
           items:
             - name: Domovská stránka Vývoj a přizpůsobení
@@ -835,7 +861,7 @@
                     - name: Změny rozšiřitelnosti – verze 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Změny rozšiřitelnosti ve verzi 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Změny rozšiřitelnosti ve verzi 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Změny rozšiřitelnosti - červenec 2017

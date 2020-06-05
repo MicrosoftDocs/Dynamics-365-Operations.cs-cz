@@ -3,7 +3,7 @@ title: Zpracování příjemek výdajů
 description: Toto téma obsahuje informace o zpracování příjemky pomocí technologie OCR. Tato funkce je navržena pro zlepšení uživatelského prostředí při vytváření sestav výdajů v aplikaci Microsoft Dynamics 365 Finance.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248956"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378224"
 ---
 # <a name="expense-receipt-processing"></a>Zpracování příjemek výdajů
 
@@ -36,24 +36,24 @@ Zadání výdajů bylo rozšířeno o zavedení zpracování příjemky pomocí 
 
 ## <a name="usage-examples"></a>Příklady použití
 
-- **Automaticky připojte příjemky, které zahrnují transakce kreditních karet, při vytvoření vyúčtování výdajů.**
+Pro automatické připojení příjemek, které zahrnují transakce kreditních karet při vytvoření vyúčtování výdajů, proveďte následující:
 
-    1. Otevřete pracovní prostor **Správa výdajů**.
-    2. Na kartě **Příjemky** ověřte, zda existují nepřipojené příjemky. Na kartě **Příjemky** můžete také odesílat příjemky.
-    3. Na kartě **Výdaje** ověřte, zda existují nepřipojené výdaje. Správce výdajů obvykle importuje tyto výdaje od zprostředkovatele kreditních karet.
-    4. Vyberte **Nová sestava výdajů**. Všimněte si, že při vytváření vyúčtování výdajů lze nyní rovněž zahrnout výdaje a příjemky. Pokud přidáte výdaje i příjemky, bude spuštěno automatické párování příjemek oproti výdajům.
+  1. Otevřete pracovní prostor **Správa výdajů**.
+  2. Na kartě **Příjemky** ověřte, zda existují nepřipojené příjemky. Na kartě **Příjemky** můžete také odesílat příjemky.
+  3. Na kartě **Výdaje** ověřte, zda existují nepřipojené výdaje. Správce výdajů obvykle importuje tyto výdaje od zprostředkovatele kreditních karet.
+  4. Vyberte **Nová sestava výdajů**. Všimněte si, že při vytváření vyúčtování výdajů lze nyní rovněž zahrnout výdaje a příjemky. Pokud přidáte výdaje i příjemky, bude spuštěno automatické párování příjemek oproti výdajům.
 
-- **Vytvořte výdaje nebo spárujte výdaj z příjemky.**
+Pro vytvoření výdaje nebo spárování výdaje z příjemky proveďte následující:
 
-    1. Ve vyúčtování výdajů na kartě **Příjemky** připojte příjemku výběrem možnosti **Přidat příjemky**.
-    2. V části pod odeslaným obrázkem příjemky si povšimněte možností **Vytvořit** a **Spárovat**.
+  1. Ve vyúčtování výdajů na kartě **Příjemky** připojte příjemku výběrem možnosti **Přidat příjemky**.
+  2. V části pod odeslaným obrázkem příjemky si povšimněte možností **Vytvořit** a **Spárovat**.
 
-        - Chcete vytvořit ručně zadanou výdajovou transakci a vyplnit hodnoty extrahované z příjemky, vyberte možnost **Vytvořit**.
-        - Pokud vyberete možnost **Spárovat**, systém se pokusí spárovat existující výdaj s příjemkou.
+      - Chcete vytvořit ručně zadanou výdajovou transakci a vyplnit hodnoty extrahované z příjemky, vyberte možnost **Vytvořit**.
+      - Pokud vyberete možnost **Spárovat**, systém se pokusí spárovat existující výdaj s příjemkou.
 
 ## <a name="installation"></a>Instalace
 
-Tato funkce se používá v kombinaci s funkcí **Sestavy výdajů v nové podobě**, která usnadňuje práci s výdaji.
+Tato funkce se používá v kombinaci s funkcí **Sestavy výdajů v nové podobě**, která usnadňuje práci s výdaji. Tato funkce je k dispozici pouze v prostředích úrovně 2+, kterými jsou sandboxové a produkční.
 
 Chcete-li používat tyto pokročilé možnosti výdajů, nainstalujte doplněk služby správy výdajů pro Microsoft Dynamics 365 Finance a zapněte funkce ve vaší instanci. K doplňku můžete získat přístup z projektu v Microsoft Dynamics Lifecycle Services (LCS).
 

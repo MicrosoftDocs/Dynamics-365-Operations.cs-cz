@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: "Připojení k\_systému nápovědy"
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Připojení vlastního webu nápovědy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: Přehled vlastní nápovědy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Zobrazení a export popisů polí
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Záznamník úloh
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Přiznání k DPH pro Německo
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Sestava seznamu deníku
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Nastavit elektronická daňová přiznání
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Soubor auditu (XML Auditfile Financieel, XAF)'
+                - name: 'Soubor auditu - XML Auditfile Financieel, XAF'
                   hred: localizations/emea-nl-audit-file.md
             - name: Norsko
               items:
@@ -2398,6 +2400,8 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Obnovení DPH na vstupu
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Zpracování faktur pro vývozní obchod
+                      href: localizations/rus-export-trade.md
                 - name: Dlouhodobý majetek
                   items:
                     - name: Přehled dlouhodobého majetku
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Sestavy zásob
                       href: localizations/rus-inventory-reports.md
+                    - name: Přehled profilu zásob
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Nastavení profilu zásob
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Použití profilu zásob v dokumentech a dotazech
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
@@ -3248,34 +3258,40 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
               items:
-                - name: (Elektronické výkaznictví) Návrh konfigurace pro generování sestav ve formátu OPENXML
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (Elektronické výkaznictví) Návrh konfigurací pro generování sestav ve formátu Word
+                - name: Návrh konfigurací pro generování odchozích dokumentů ve formátu Excel
+                  items:
+                    - name: Návrh konfigurace pro generování dokumentů ve formátu Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Příklad generování sestav ve formátu OPENXML
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+                      items:
+                        - name: Návrh formátů pro dynamické přidávání sloupců do sestav aplikace Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Spuštění formátů pro dynamické přidávání sloupců do sestav aplikace Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh konfigurací pro generování sestav ve formátu Word
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Návrh konfigurací pro vyplnění šablon PDF
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Integrace obrázků a tvarů
-              items:
-                - name: (Elektronické výkaznictví) Integrace obrázků a tvarů v generovaných dokumentech
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Příklad integrace obrázků a tvarů
+                - name: Integrace obrázků a tvarů
                   items:
-                    - name: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: Kontrola konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Generování sestav ve formátech Office s integrovanými obrázky
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (Elektronické výkaznictví) Integrace obrázků a tvarů v generovaných dokumentech
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Příklad integrace obrázků a tvarů
+                      items:
+                        - name: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: Kontrola konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
-              items:
-                - name: Návrh formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Spuštění formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace dat aplikace pomocí elektronického výkaznictví
               items:
                 - name: Generování elektronických dokumentů a aktualizace dat aplikace
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace formátů elektronického výkaznictví pro import souborů ve formátu XML s volitelnými atributy
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Životní cyklus konfigurace
               items:
                 - name: Správa životního cyklu konfigurace
@@ -3327,12 +3341,16 @@
                     - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Import konfigurací z RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Vytvoření konfigurací elektronického výkaznictví v RCS a jejich odeslání do globálního úložiště
+                  href: localizations/rcs-global-repo-upload.md
+                - name: Sdílení konfigurací elektronického výkaznictví v RCS s externími organizacemi
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Kurzy
               items:
                 - name: Naučte se používat zdroje dat
                   items:
-                    - name: Použití PŘIPOJIT pro získání dat z více tabulek
+                    - name: Použití PROPOJENÍ TABULEK pro získání dat z více tabulek
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Použití NEZPRACOVANÉHO XML pro přidání obsahu
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json

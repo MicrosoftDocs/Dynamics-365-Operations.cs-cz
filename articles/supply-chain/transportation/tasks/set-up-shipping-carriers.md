@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6a29dce877a53d125c5a151da6cfbb13d46b29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0d157470527a986ea1c9fe0a9a02e2ba6ee8819e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201587"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382991"
 ---
 # <a name="set-up-shipping-carriers"></a>Nastavení dopravců
 
@@ -32,7 +32,7 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 
 ## <a name="create-a-new-shipping-carrier"></a>Vytvoření nového dopravce
 1. Přejděte na **Navigační > podokno Moduly > Správa přepravy > Nastavení > Dopravci > Dopravci.**
-2. V podokně akcí vyberte **Nový**.
+2. V podokně akcí zvolte **Nový**.
 3. Zadejte hodnotu do pole **Dopravce dodávky**.
 4. Zadejte hodnotu do pole **Název**.
 5. V poli **Režim** vyberte z rozevírací nabídky požadovanou možnost.

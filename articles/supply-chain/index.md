@@ -1,5 +1,5 @@
 ---
-title: Zdroje nápovědy pro Supply Chain Management
+title: Domovská stránka Supply Chain Management
 description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
 author: josaw1
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201518"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386380"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>Zdroje nápovědy pro Supply Chain Management
+# <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
@@ -42,8 +42,9 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Nákladové účetnictví](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Správa nákladů](cost-management/cost-management-home-page.md)  
 - [Řízení zásob](inventory/inventory-home-page.md)
+- [IoT Intelligence](iot/iot-intelligence-home-page.md)
 - [Hlavní plánování](master-planning/master-planning-home-page.md)
-- [Zásobování a zdroje](procurement/procurement-sourcing-overview.md)
+- [Zásobování a zdroje](procurement/procurement-sourcing-overview.md)
 - [Řízení informací o produktech](pim/product-information.md)
 - [Řízení výroby](production-control/production-process-overview.md)
 - [Prodej a marketing](sales-marketing/overview-sales-marketing.md)

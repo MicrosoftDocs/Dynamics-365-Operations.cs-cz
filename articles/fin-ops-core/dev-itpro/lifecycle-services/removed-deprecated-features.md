@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstraněníz Microsoft Dynamics Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 96ecd040ef8661765c0a3861d8e07fee3c241161
-ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
+ms.openlocfilehash: 5c5c525b403715ba8dfd3c1bc2dfac4dd69f4a3d
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027973"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367261"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 
@@ -53,9 +53,9 @@ Tento seznam je poskytnut, aby vám pomohl zvážit tyto odstraněné a zastaral
 </tr>
 <tr>
 <td><strong>Stav</strong></td>
-<td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna během roku 2020. Dojde k odebrání těchto funkcí:
+<td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna během roku 2020. Tyto funkce nebudou dostupné:
 <ul>
-<li>Existující vývojové diagramy nebudou k dispozici pro zobrazení nebo úpravy. Vlastnosti obrazce, které jsou přidruženy k aktivitám vývojového diagramu, nebudou také k dispozici, protože bude odebrána celá karta <strong>vývojového diagramu</strong>. Tyto vývojové diagramy zahrnují jak výchozí vývojové diagramy, které jsou automaticky generovány, a přizpůsobené vývojové diagramy, které jsou upraveny na základě těchto výchozích vývojových diagramů.</li>
+<li>Všechny vývojové diagramy budou pouze pro čtení a nebudou k dispozici pro úpravy. Rovněž nebudou k dispozici vlastnosti tvaru, které jsou spojeny s činnostmi vývojového diagramu. Tyto vývojové diagramy zahrnují jak výchozí vývojové diagramy, které jsou automaticky generovány, a přizpůsobené vývojové diagramy, které jsou upraveny na základě těchto výchozích vývojových diagramů.</li>
 <li>Tato funkce analýzy přizpůsobení a mezer nebude k dispozici. Proto nebude automaticky vytvořen nebo k dispozici pro export žádný seznam mezer.
 <p><strong>Poznámka:</strong> Tato funkce byla dříve zastaralá a nahrazena integracemi Microsoft Azure DevOps.</p>
 </li>

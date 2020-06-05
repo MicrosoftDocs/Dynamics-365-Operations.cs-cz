@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205775"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367285"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a>Potvrzení produktu pro výdej v seskupení
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a>Potvrzení produktu pro výdej v seskupení
 Výdej v seskupení umožňuje vyskladnění položek pro několik objednávek současně. Při použití výdeje v seskupení je velmi důležité potvrzení položek k ověření položek, které jsou přidány do seskupení. Při výdeji v seskupení můžete ověřit položky během procesu výdeje v seskupení.
 
 ## <a name="where-it-applies"></a>Kdy se to používá
+
 Ověření položek pro výdej v seskupení funguje stejně jako při ověření položek v procesu výdeje bez seskupení. Nastavení vychází z nastavení čárového kódu produktu.
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>Nastavení ověření položek s výdejem v seskupení
-1.  V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** > **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.
-2.  Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**.
+
+1. V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** > **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.
+1. Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**.
 
 |        Parametr        |                                    popis                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Potvrzení produktu | Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování. |
-
