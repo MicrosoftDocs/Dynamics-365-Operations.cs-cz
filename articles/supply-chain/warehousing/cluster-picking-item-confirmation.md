@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205775"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367285"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="fc0a8-103">Potvrzení produktu pro výdej v seskupení</span><span class="sxs-lookup"><span data-stu-id="fc0a8-103">Product confirmation for cluster picking</span></span>
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="269e4-103">Potvrzení produktu pro výdej v seskupení</span><span class="sxs-lookup"><span data-stu-id="269e4-103">Product confirmation for cluster picking</span></span>
-<span data-ttu-id="269e4-104">Výdej v seskupení umožňuje vyskladnění položek pro několik objednávek současně.</span><span class="sxs-lookup"><span data-stu-id="269e4-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="269e4-105">Při použití výdeje v seskupení je velmi důležité potvrzení položek k ověření položek, které jsou přidány do seskupení.</span><span class="sxs-lookup"><span data-stu-id="269e4-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="269e4-106">Při výdeji v seskupení můžete ověřit položky během procesu výdeje v seskupení.</span><span class="sxs-lookup"><span data-stu-id="269e4-106">You can verify items in cluster picking during the cluster picking process.</span></span>
+<span data-ttu-id="fc0a8-104">Výdej v seskupení umožňuje vyskladnění položek pro několik objednávek současně.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="fc0a8-105">Při použití výdeje v seskupení je velmi důležité potvrzení položek k ověření položek, které jsou přidány do seskupení.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="fc0a8-106">Při výdeji v seskupení můžete ověřit položky během procesu výdeje v seskupení.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-106">You can verify items in cluster picking during the cluster picking process.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="269e4-107">Kdy se to používá</span><span class="sxs-lookup"><span data-stu-id="269e4-107">Where it applies</span></span>
-<span data-ttu-id="269e4-108">Ověření položek pro výdej v seskupení funguje stejně jako při ověření položek v procesu výdeje bez seskupení.</span><span class="sxs-lookup"><span data-stu-id="269e4-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="269e4-109">Nastavení vychází z nastavení čárového kódu produktu.</span><span class="sxs-lookup"><span data-stu-id="269e4-109">The setup is based on the product bar code setup.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="fc0a8-107">Kdy se to používá</span><span class="sxs-lookup"><span data-stu-id="fc0a8-107">Where it applies</span></span>
 
-## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="269e4-110">Nastavení ověření položek s výdejem v seskupení</span><span class="sxs-lookup"><span data-stu-id="269e4-110">Set up item verification with cluster picking</span></span>
-1.  <span data-ttu-id="269e4-111">V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** > **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.</span><span class="sxs-lookup"><span data-stu-id="269e4-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
-2.  <span data-ttu-id="269e4-112">Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**.</span><span class="sxs-lookup"><span data-stu-id="269e4-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
+<span data-ttu-id="fc0a8-108">Ověření položek pro výdej v seskupení funguje stejně jako při ověření položek v procesu výdeje bez seskupení.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="fc0a8-109">Nastavení vychází z nastavení čárového kódu produktu.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-109">The setup is based on the product bar code setup.</span></span>
 
-|        <span data-ttu-id="269e4-113">Parametr</span><span class="sxs-lookup"><span data-stu-id="269e4-113">Option</span></span>        |                                    <span data-ttu-id="269e4-114">popis</span><span class="sxs-lookup"><span data-stu-id="269e4-114">Description</span></span>                                    |
+## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="fc0a8-110">Nastavení ověření položek s výdejem v seskupení</span><span class="sxs-lookup"><span data-stu-id="fc0a8-110">Set up item verification with cluster picking</span></span>
+
+1. <span data-ttu-id="fc0a8-111">V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** > **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
+1. <span data-ttu-id="fc0a8-112">Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
+
+|        <span data-ttu-id="fc0a8-113">Parametr</span><span class="sxs-lookup"><span data-stu-id="fc0a8-113">Option</span></span>        |                                    <span data-ttu-id="fc0a8-114">popis</span><span class="sxs-lookup"><span data-stu-id="fc0a8-114">Description</span></span>                                    |
 |----------------------|-----------------------------------------------------------------------------------|
-| <span data-ttu-id="269e4-115">Potvrzení produktu</span><span class="sxs-lookup"><span data-stu-id="269e4-115">Product confirmation</span></span> | <span data-ttu-id="269e4-116">Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování.</span><span class="sxs-lookup"><span data-stu-id="269e4-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |
-
+| <span data-ttu-id="fc0a8-115">Potvrzení produktu</span><span class="sxs-lookup"><span data-stu-id="fc0a8-115">Product confirmation</span></span> | <span data-ttu-id="fc0a8-116">Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování.</span><span class="sxs-lookup"><span data-stu-id="fc0a8-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |
