@@ -88,6 +88,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (srpen 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (červenec 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (květen 2020)
@@ -212,9 +214,9 @@
               items:
                 - name: Synchronizace samoobslužných instalačních programů v aplikaci Dynamics 365 Commerce
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (v místním prostředí)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Konfigurace a instalace Commerce Scale Unit
+                - name: Konfigurace a instalace Commerce Scale Unit (v místním prostředí)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Konfigurace a instalace Modern POS
                   href: retail-modern-pos-device-activation.md
@@ -604,9 +606,9 @@
               items:
                 - name: Přehled doporučení produktu
                   href: product-recommendations.md
-                - name: Povolení ADLS v prostředí Dynamics 365 Commerce
+                - name: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
                   href: enable-ADLS-environment.md
-                - name: Povolit doporučení produktu
+                - name: Povolení doporučení produktu
                   href: enable-product-recommendations.md
                 - name: Přizpůsobená doporučení
                   items:
@@ -646,8 +648,8 @@
                   items:
                     - name: Správa skladových zásob
                       href: work-with-store-inventory.md
-                    - name: Práce se serializovanými položkami
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurace rezervních zásob a úrovní zásob
+                      href: inventory-buffers-levels.md
                     - name: Práce se serializovanými položkami v POS
                       href: pos-serialized-items.md
                     - name: "Zadání produktů z\_distribučního centra do obchodu pomocí metody buyer's push"
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Správa uživatelů a rolí
                   href: manage-ecommerce-users-roles.md
+                - name: Použití nastavení zásob
+                  href: inventory-settings.md
                 - name: Zvažování optimalizace webového vyhledávače (SEO) pro váš web
                   href: search-engine-optimization-considerations.md
                 - name: Správa zásad zabezpečení obsahu (CSP)
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: Práce s CSS soubory přepisující výchozí styl
                       href: css-override-files.md
+                    - name: Práce s předvolbami stylu
+                      href: style-presets.md
                     - name: Přidání ikony oblíbené položky
                       href: add-favicon.md
                     - name: Přidání uvítací zprávy
@@ -932,6 +938,10 @@
                   items:
                     - name: Modul kontejneru
                       href: add-container-module.md
+                    - name: Modul ovládacího prvku Accordion
+                      href: add-accordion.md
+                    - name: Modul karty
+                      href: add-tab.md
                 - name: Marketingové moduly
                   items:
                     - name: Modul propagačního banneru
@@ -978,6 +988,10 @@
                   items:
                     - name: Moduly kolekce produktů
                       href: product-collection-module-overview.md
+                - name: Navigační moduly
+                  items:
+                    - name: Modul popisu cesty
+                      href: add-breadcrumb.md
             - name: Vyhledávání
               items:
                 - name: Výchozí cílová stránka kategorie a stránka výsledků hledání
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Pokyny k nasazení registračních pokladen
                   href: localizations/emea-fra-deployment.md
+            - name: Německo
+              items:
+                - name: Ukázka integrace fiskální služby pro Německo
+                  href: localizations/emea-deu-fi-sample.md
             - name: Indie
               items:
                 - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurace nastavení motivu
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Rozšíření motivu
+                    - name: Rozšíření motivu pro přidání rozšíření modulů
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Rozšíření motivu ze základního motivu
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Vložení skriptu
                   items:
@@ -2072,11 +2092,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Rozšiřitelnost serveru Retail Server
               items:
-                - name: Rozšíření kontroloru Retail Server OData
+                - name: Rozšíření kontroloru Commerce Scale Unit OData
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: API zákazníka a spotřebitel serveru Retail Server
+                - name: Zákazník Commerce Scale Unit s rozhraní API spotřebitele
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Rozšíření výchozího kontroloru metadat Retail Serveru
+                - name: Rozšíření výchozího kontroloru metadat Commerce Scale Unit
                   href: dev-itpro/extend-metadata.md
                 - name: "Volání služby CRT v\_režimu offline"
                   href: dev-itpro/call-crt-service-offline.md
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Správa tajných kódů pro kanály Retail
                   href: dev-itpro/manage-secrets.md
-                - name: Přidání vlastností do prodejních objednávek
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: Rozšiřitelnost a spouštění CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokování transakcí pomocí spouštění

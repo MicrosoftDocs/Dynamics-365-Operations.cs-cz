@@ -14,6 +14,8 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.12 (srpen 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform Update pro 10.0.11 (červenec 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform Update pro 10.0.10 (květen 2020)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrovaný pracovník, práce a pozice'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Dostupnost zásob
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Podpora dvojitého zápisu
                           items:
                             - name: Podpora pro řešení Field Service solutions a Project Service Automation
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Použití aktualizací na cloudová prostředí
                   href: deployment/apply-deployable-package-system.md
-                - name: Použití aktualizací a rozšíření na komponenty kanálu Retail hostované v cloudu
+                - name: Použití aktualizací a rozšíření na Commerce Scale Unit (cloud)
                   href: deployment/Update-retail-channel.md
-                - name: Inicializovat Retail Cloud Scale Unit
+                - name: Inicializace Commerce Scale Unit (cloud)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Umístění dat aplikace Retail
                   href: deployment/retail-data-residency.md
@@ -488,6 +492,8 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Připojení klienta k internetu
                       href: user-interface/client-disconnected.md
+                    - name: Konfigurace uzlů AOS pouze pro dávky a pouze interaktivního v místních nasazeních
+                      href: deployment/onprem-batchonly.md
                     - name: Konfigurace proxy pro místní prostředí
                       href: deployment/onprem-reverseproxy.md
                     - name: Místní diagnostika
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Uživatelská příručka Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
+            - name: Zaškolení do projektu
+              href: lifecycle-services/project-onboarding.md
             - name: Odhad předplatného
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurace zabezpečení
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Soubory překladové paměti
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Integrace Microsoft Power Platform
+          items:
+            - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
+              href: power-platform/overview.md
+            - name: Modelování entit
+              href: power-platform/entity-modeling.md
+            - name: Správa životního cyklu aplikace
+              href: power-platform/application-lifecycle-management.md
+            - name: Reference správce Finance and Operations a Common Data Service
+              href: power-platform/admin-reference.md
+            - name: Portály Power Apps s Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Často kladené dotazy k virtuálním entitám Finance and Operations
+              href: power-platform/faq.md
         - name: Mobilní platforma
           items:
             - name: Zdroje mobilní platformy
@@ -1160,7 +1182,7 @@
                   href: mobile-apps/platform/scenarios/client-api-design-overview.md
                 - name: API klienta
                   items:
-                    - name: Domovská stránka rozhraní APi klienta
+                    - name: Domovská stránka rozhraní API klienta
                       href: mobile-apps/platform/client-apis/client-apis-reference.md
                     - name: Výčet PageState
                       href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Instalace a konfigurace
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Testování nerozpoznaných pomocí Regression Suite Automation Tool
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Spouštění testovacích případů
+            - name: Použití nástroje Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
             - name: Ověření očekávaných hodnot
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Odvozené testovací případy
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Použití kurzu pro nástroj Regression Suite Automation Tool
+            - name: Kurz pro nástroj Regression Suite Automation Tool a další funkce
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Doporučené postupy
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Testování nerozpoznaných pomocí Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Řešení potíží
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Řešení vydávání pomocí služby Lifecycle Services
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: Aktivní období dávky
                   href: sysadmin/activeperiod.md
+                - name: Podpora letního času pro aktivní období dávek
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Role zabezpečení správce dávky
                   href: sysadmin/runby.md
                 - name: Dávková úloha pro zpracování defragmentace SQL indexu

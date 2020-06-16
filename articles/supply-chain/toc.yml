@@ -70,12 +70,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (srpen 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (červenec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (květen 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (duben 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Skupiny výpočtů kusovníku
                   href: cost-management/bom-calculation-groups.md
+                - name: Úroveň výpočtu nákladů
+                  href: cost-management/cost-calculation-level.md
                 - name: Zpětné účtování nákladů
                   href: cost-management/backflush-costing.md
                 - name: Běžné zdroje výrobních odchylek
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Použití filtrů na plán
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Hlavní plánování s obchodními smlouvami nákupu
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Zobrazení historie pánů a plánovacích protokolů
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatické potvrzení s optimalizací plánování
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Vykázání výrobních zakázek jako dokončených
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Ohlášení jako dokončené do skladového místa řízeného registrační značkou
+                    - name: Konfigurovat úkolový lístek pro zařízení
+                      href: production-control/config-job-card-device.md
+                    - name: Ohlášení jako dokončené ze zařízení úkolového lístku
                       href: production-control/report-finished-job-device.md
                     - name: Vrácení stavu výrobní zakázky
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Nastavení pravidel prodejních provizí
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Zákaznický portál pro Dynamics 365 Supply Chain Management
+              items:
+                - name: Přehled zákaznického portálu
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Instalace, nastavení a aktualizace zákaznického portálu'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Vytváření a správa uživatelů zákaznického portálu
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Přizpůsobení a použití zákaznického portálu
+                  href: sales-marketing/customer-portal-customize.md
             - name: Obchodní náhrady
               href: sales-marketing/trade-allowance.md
             - name: Vytvoření nové obchodní smlouvy
@@ -2655,7 +2671,9 @@
                   href: warehousing/partial-location-cycle-counting.md
                 - name: 'Definování procesu částečné cyklické inventury skladového místa '
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Deník inventáře
+                - name: Úloha vyčištění položek zásob na skladě v řízení skladu
+                  href: warehousing/onhand-cleanup.md
+                - name: Deník zásob
                   href: inventory/inventory-journals.md
                 - name: Skladové místo
                   href: inventory/inventory-locations.md
