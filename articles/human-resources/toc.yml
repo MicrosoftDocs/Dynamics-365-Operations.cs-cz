@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 28. května 2020
+          href: hr-whats-new-2020-05-28.md
         - name: 14. května 2020
           href: hr-whats-new-2020-05-14.md
         - name: 1. května 2020
@@ -505,10 +507,12 @@
               href: hr-leave-and-absence-plans.md
             - name: Přiřazení pracovníků k plánu pracovního volna
               href: hr-leave-and-absence-enroll.md
-            - name: Časové rozlišení plánů pracovního volna a absence
+            - name: Časově rozlišení plánů pracovního volna a absence
               href: hr-leave-and-absence-accrue.md
             - name: Přerušit pracovní volno
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Žádost o pracovní volno
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Správa pracovního volna zaměstnanců
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Zobrazení analýz pro pracovní volno a absenci
@@ -519,6 +523,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Zobrazení kalendáře týmu a společnosti
               href: hr-employee-self-service-calendar.md
+            - name: Správa zásad nákupu a prodeje pracovního volna
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Nákup a prodej pracovního volna
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Správa žádostí o dovolenou v aplikaci Teams
           href: hr-teams-leave-app.md
         - name: Rozvoj zaměstnanců
