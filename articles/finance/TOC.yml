@@ -2371,7 +2371,7 @@
                     - name: Přehled držitelů záloh pro Rusko
                       href: localizations/rus-advance-holders.md
                     - name: Vytvoření držitele zálohy
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Denní operace pro držitele záloh
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Sestavy záloh s kontrolou rozpočtu
@@ -3346,7 +3346,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Service (RCS) - funkce globalizace
+                    - name: Regulatory Configuration Services (RCS) - funkce globalizace
                       href: localizations/rcs-globalization-feature.md
                     - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
                       items:
