@@ -70,12 +70,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.12 (srpen 2020)
+                      href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (červenec 2020)
                       href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (květen 2020)
                       href: get-started/whats-new-changed-10-0-10.md
-                    - name: Finance 10.0.9 (duben 2020)
-                      href: get-started/whats-new-changed-10-0-9.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
@@ -232,6 +232,8 @@
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
             - name: Nastavení zásad faktur dodavatele
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Automatizace návrhů plateb dodavatele
+              href: accounts-payable/automate-vendor-payment-proposal.md
             - name: "Zaznamenání faktury dodavatele a\_spárování s\_přijatým množstvím"
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Přehled kladné platby
@@ -324,14 +326,6 @@
               href: accounts-receivable/copy-customer.md
             - name: Workflow odběratele
               href: accounts-receivable/customer-workflow.md
-            - name: Úvěr a inkasa v modulu Pohledávky
-              href: accounts-receivable/collections-credit-accounts-receivable.md
-            - name: Konfigurace modulu Pohledávky a kredit a inkasa
-              href: accounts-receivable/accounts-receivables-set-up-overview.md
-            - name: Nastavení kreditu a inkas
-              href: accounts-receivable/set-up-collections.md
-            - name: Kontrola inkasních informací
-              href: accounts-receivable/tasks/review-collections-information.md
             - name: Přehled uznání výnosů
               href: accounts-receivable/revenue-recognition-overview.md
             - name: Nastavení uznání výnosů
@@ -410,7 +404,15 @@
               items:
                 - name: Přehled kreditu a inkas
                   href: accounts-receivable/cm-credit-and-collections-overview.md
-                - name: Nastavení správy kreditu
+                - name: Inkasa v modulu Pohledávky
+                  href: accounts-receivable/collections-credit-accounts-receivable.md
+                - name: Konfigurace modulu Pohledávky a kredit a inkasa
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Nastavení kreditu a inkas
+                  href: accounts-receivable/set-up-collections.md
+                - name: Kontrola inkasních informací
+                  href: accounts-receivable/tasks/review-collections-information.md
+                - name: Nastavení správy úvěrů
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Informace o nastavení správy kreditu
                   href: accounts-receivable/cm-setup-information.md
@@ -448,6 +450,8 @@
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Vytvoření odpisového deníku pro odběratele
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: Správa rozšířených poznámek
+              href: localizations/emea-ita-exil-structured-notes.md
         - name: Rozpočtování
           items:
             - name: Domovská stránka Rozpočtování
@@ -978,6 +982,8 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: "Konfigurace standardních nákladů pro práci a\_výdaje"
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Vytvoření a použití podmínek zadržení plateb dodavatele
+              href: project-management/create-and-apply-vendor-payment-retention-terms.md
             - name: Nastavení a používání plateb dodavatelům způsobem „zaplatit při uhrazení“
               href: project-management/setup-manage-vendor-payments.md
             - name: Časové rozlišení nákladů projektu na nákupních příjemkách
@@ -1000,6 +1006,10 @@
               href: project-management/project-purchase-orders.md
             - name: Nabídky projektu
               href: project-management/project-quotations.md
+            - name: 'Potvrzení, aktualizace a odeslání nabídky projektu'
+              href: project-management/confirm-update-send-project-quotation.md
+            - name: Převod nabídky do projektu
+              href: project-management/transfer-quote-new-existing-project.md
             - name: Prostředky projektu
               href: project-management/project-resourcing.md
             - name: "Přijetí položek na nákupní objednávce z\_požadavku na položku"
@@ -1022,6 +1032,8 @@
                   href: project-management/custom-fields-mobile.md
             - name: Granty projektu
               href: project-management/project-grants.md
+            - name: Eliminace odhadu projektu
+              href: project-management/eliminate-project-estimate.md
         - name: Veřejný sektor
           items:
             - name: Domovská stránka veřejného sektoru
@@ -1758,6 +1770,8 @@
                   href: localizations/emea-hun-tax-reimbursement-docs.md
                 - name: Roční uzávěrka
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Online fakturační systém
+                  href: localizations/emea-hun-online-invoicing.md
             - name: Island
               items:
                 - name: Island - přehled
@@ -2008,8 +2022,6 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Vedlejší náklady za kilogram v prohlášení Intrastat
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
-                - name: Správa rozšířených poznámek
-                  href: localizations/emea-ita-exil-structured-notes.md
                 - name: Předběžné smlouvy – fakturace obvyklých vývozců
                   href: localizations/emea-ita-exil-intent-letter.md
                 - name: Daňová faktura za zboží dodané zdarma
@@ -2288,8 +2300,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Soubor auditu - XML Auditfile Financieel, XAF'
-                  hred: localizations/emea-nl-audit-file.md
+                - name: 'Soubor auditu (XML Auditfile Financieel, XAF)'
+                  href: localizations/emea-nl-audit-file.md
             - name: Norsko
               items:
                 - name: Norsko - přehled
@@ -2359,7 +2371,7 @@
                     - name: Přehled držitelů záloh pro Rusko
                       href: localizations/rus-advance-holders.md
                     - name: Vytvoření držitele zálohy
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Denní operace pro držitele záloh
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Sestavy záloh s kontrolou rozpočtu
@@ -2970,6 +2982,8 @@
               items:
                 - name: Vytvoření konfigurací
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+                - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Příprava komponent pro řešení elektronického výkaznictví
                   items:
                     - name: Návrh datového modelu specifického pro doménu
@@ -3252,10 +3266,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Výběr definic datového modelu při vytváření formátů
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
               items:
                 - name: Návrh konfigurací pro generování odchozích dokumentů ve formátu Excel
@@ -3290,8 +3300,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace dat aplikace pomocí elektronického výkaznictví
               items:
                 - name: Generování elektronických dokumentů a aktualizace dat aplikace
@@ -3321,31 +3329,41 @@
                     - name: Import souborů v XML formátu s volitelnými atributy
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace formátů elektronického výkaznictví pro import souborů ve formátu XML s volitelnými atributy
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Životní cyklus konfigurace
               items:
                 - name: Správa životního cyklu konfigurace
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: "Odeslání konfigurací do\_Lifecycle Services"
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: "Import konfigurací z\_Lifecycle Services"
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: "Stažení konfigurací z\_Lifecycle Services"
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                - name: Import konfigurací
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Rozšířené možnosti filtrování pro vyhledání konfigurací v globálním úložišti
-                  href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                - name: Stažení konfigurací elektronického výkaznictví z úložiště RCS
+                - name: Služby Lifecycle Services (LCS)
                   items:
-                    - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Import konfigurací z RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-                - name: Vytvoření konfigurací elektronického výkaznictví v RCS a jejich odeslání do globálního úložiště
-                  href: localizations/rcs-global-repo-upload.md
-                - name: Sdílení konfigurací elektronického výkaznictví v RCS s externími organizacemi
-                  href: localizations/rcs-global-repo-share-configuration.md
+                    - name: Odeslání konfigurací do LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Import konfigurací z LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Stažení konfigurací z LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Import konfigurací (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Regulatory Configuration Services (RCS) - funkce globalizace
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
+                      items:
+                        - name: Stažení konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Import konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globální úložiště
+                      items:
+                        - name: Import konfigurací z globálního úložiště
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Odeslání konfigurací do globálního úložiště
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Sdílení konfigurací v globálním úložišti
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: Kurzy
               items:
                 - name: Naučte se používat zdroje dat
@@ -3392,18 +3410,26 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                         - name: Ladění zdrojů dat
                           href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-                - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                - name: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-                - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                - name: Odložení provádění prvků formátu elektronického výkaznictví
+                - name: Konfigurace mapování modelu
                   items:
-                    - name: Odložení provádění prvku posloupnosti
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
-                    - name: Odložení provádění prvku XML
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                    - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurace formátů
+                  items:
+                    - name: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                    - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                    - name: Výběr definic modelu při vytváření formátů
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: Odložení provádění prvků formátu elektronického výkaznictví
+                      items:
+                        - name: Odložení provádění prvku posloupnosti
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                        - name: Odložení provádění prvku XML
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                 - name: Relativní cesta v datových vazbách
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
