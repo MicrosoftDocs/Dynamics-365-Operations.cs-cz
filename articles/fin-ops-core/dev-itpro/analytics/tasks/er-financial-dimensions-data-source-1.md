@@ -3,7 +3,7 @@ title: Elektronické výkaznictví – Používání finančních dimenzí jako 
 description: Následující postup popisuje, jak správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b02496ebb06e0c2eb644fc7ef3280ca4eca05923
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b951c9074c68a9f7592c17e0688498880397b223
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142000"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406536"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1 - návrh datového modelu)
 
@@ -104,6 +104,8 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 66. Kliknutím na možnost Nový otevřete dialogové okno.
 67. Do pole Název zadejte název.
 68. Klepněte na možnost Přidat.
-69. Klikněte na položku Uložit.
+69. Klepněte na tlačítko Uložit.
 70. Zavřete stránku.
+
+![Stránka Návrhář modelu dat ER](../media/er-financial-dimensions-guides-data-model.png)
 

@@ -3,7 +3,7 @@ title: Modul přehrávače videa
 description: Tohle téma se zabývá moduly přehrávače videa a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025636"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411152"
 ---
 # <a name="video-player-module"></a>Modul přehrávače videa
 
@@ -47,9 +47,13 @@ Modul přehrávače videa také podporuje sekundární zvukové stopy. Po nahrá
 - Reklamní videa a videa o zásadách na marketingové stránce
 - Marketingová videa se zvýrazněním charakteristik produktů na stránkách s podrobnostmi o produktech nebo na marketingových stránkách
 
+Následující obrázek znázorňuje příklad modulu přehrávače videa na domovské stránce.
+
+![Příklad modulu video přehrávače](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Vlastnosti modulu přehrávače videa
 
-| Název vlastnosti         | Hodnota                               | Popis |
+| Název vlastnosti         | Hodnota                               | popis |
 |-----------------------|-------------------------------------|-------------|
 | Automatické přehrání             | **Pravda** nebo **Nepravda**               | Je-li hodnota nastavena na **Pravda**, video se automaticky přehraje. |
 | Ztlumit                  | **Pravda** nebo **Nepravda**               | Je-li hodnota nastavena na **Pravda**, zvuk je ztlumen. Pro tento přehrávač je výchozí hodnota **Nepravda**. V prohlížeči Chrome je ve výchozím nastavení ztlumeno přehrávání videozáznamů a zvuk je přehráván pouze v případě, že uživatel video přehrává ručně. |
@@ -68,18 +72,30 @@ Modul přehrávače videa také podporuje sekundární zvukové stopy. Po nahrá
 
 Chcete-li přidat modul přehrávače videa na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona přehrávače videa**.
-1. V pozici **Hlavní** na výchozí stránce přidejte modul kontejneru.
-1. V modulu kontejneru přidejte moduly přehrávače videa a přehrávače ambientního videa.
-1. Dokončete úpravy šablony a publikujte ji.
-1. Šablonu přehrávače videa, kterou jste vytvořili, použijte pro vytvoření stránky s názvem **Stránka přehrávače videa**.
-1. V pozici **Hlavní** nové stránky přidejte modul přehrávače videa.
-1. V podokně vlastností modulu přehrávač videa vyberte možnost **Přidat video**.
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona video přehrávače** a poté klikněte na tlačítko **OK**.
+1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Video přehrávač** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
+1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
+1. V dialogovém okně **Zvolte šablonu** vyberte šablonu video přehrávače, kterou jste vytvořili. V části **Název stránky** zadejte **Stránka video přehrávače** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Video přehrávač** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu video přehrávače vyberte možnost **Přidat video**.
 1. V dialogovém okně **Výběr média** vyberte video a poté vyberte možnost **Odeslat novou mediální položku**.
-1. Uložte stránku a zobrazte náhled. Na stránce by měl být zobrazen modul videa. Chcete-li přizpůsobit chování modulu, můžete změnit další nastavení.
-1. Dokončete úpravy stránky a publikujte ji.
+1. V Průzkumníkovi souborů vyberte soubor videa a pak vyberte možnost **Otevřít**.
+1. V dialogovém okně **Odeslat mediální položku** zadejte podle potřeby název a další informace a poté vyberte **OK**.
+1. V dialogovém okně **Výběr média** vyberte možnost **Zavřít**.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky. Na stránce by měl být zobrazen modul videa. Chcete-li přizpůsobit chování modulu, můžete změnit další nastavení.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled startovací sady](starter-kit-overview.md)
 

@@ -3,12 +3,12 @@ title: Přehled
 description: V Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325758"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428960"
 ---
 # <a name="overview"></a>Přehled
 
@@ -84,10 +84,9 @@ V prostředí **izolovaného prostoru** můžete vyzkoušet nové funkce náhled
 
 Funkce náhledu zahrnují:
 
-- **Přerušení pracovního volna** - můžete přerušit pracovní volno a absenci v Human Resources pro zaměstnance. Pozastavením volna se zastaví časové rozlišení volna pro vybrané typy pracovního volna. Pokud k přerušení dojde po zpracování časového rozlišení, pozastavením volna se vytvoří průběžná Úprava zůstatku zaměstnance. Při pozastavení dovolené zaměstnance můžete také uvést kódy důvodů. Uživatelské prostředí bylo aktualizováno, aby indikovalo pozastavení. 
+- **Časové rozlišení pracovního volna dle společnosti nebo plánu** - Proces časového rozlišení můžete spustit pro všechny společnosti nebo pro jednu společnost. Můžete také spustit proces časového rozlišení pro konkrétní plán volna a nepřítomnosti pro konkrétní společnost. 
 
-- **Pravidla převodu do dalšího období** - můžete určit typ převodu pracovního volna do dalšího období pro převod zůstatků, kde byly převedeny úpravy převodu do dalšího období. Pokud například zaměstnanec přenese deset dní dopředu, můžete pro tyto 10 dny vybrat jiný typ pracovního volna. 
+- **Koupit volno** - Můžete zaměstnancům povolit a vytvořit zásady nákupu pracovního volna za účelem zadávání žádostí o nákup. Zaměstnanci mohou podávat žádosti o koupi a zůstatky automaticky aktualizovat, aby odrážely požadavek.  
 
-- **Uveďte kód důvodu a komentáře k úpravám** – Při úpravě zůstatku dovolené zaměstnance můžete uvést kód důvodu a komentář. 
+- **Přidejte přílohy ke schváleným žádostem o pracovní volno** - K žádosti o dovolenou, která již byla schválena, můžete přidat přílohu. 
 
-- **Parametry přechodu na dovolenou a nepřítomnost** – Nyní můžete místo použití parametrů Lidské zdroje používat pouze parametry Dovolená a absence. 

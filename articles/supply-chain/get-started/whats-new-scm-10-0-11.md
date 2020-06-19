@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346346"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413023"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.11 (červenec 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.11. Tato verze má číslo sestavení 10.0.464 a je k dispozici následujícím způsobem:
 
@@ -41,10 +40,10 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 
 - [Úložiště sestavy zásob na skladě](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 - [Vylepšení příjmu registračních značek pro aplikaci skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Další informace naleznete v tématu [Registrační značky přijímané prostřednictvím aplikace skladu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Vylepšení rezervací řádků pro formulář rezervace čísla dávky](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - další informace naleznete v tématu [Rezervace stejné dávky pro prodejní objednávku](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Vylepšení rezervací řádků pro formulář rezervace čísla dávky](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – další informace naleznete v tématu [Rezervace stejné dávky pro prodejní objednávku](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Nové datové entity pro oblast výroby](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Příjem většího množství nákladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - Další informace naleznete v tématu [Zpracování příchozích nákladů ve skladu pro nákupní objednávky](../warehousing/inbound-load-handling.md).
-- [Hlásit jako dokončené s čísly dávek na zařízení úkolového lístku](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
+- [Hlášení jako dokončené s čísly dávek na zařízení úkolového lístku](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) – další informace naleznete v tématu [Hlášení jako dokončené s čísly dávek na zařízení úkolového lístku](../production-control/report-finished-job-device.md)
 
 ## <a name="additional-resources"></a>Další prostředky
 

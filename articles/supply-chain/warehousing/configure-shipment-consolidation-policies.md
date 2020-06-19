@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383728"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403328"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -270,7 +270,7 @@ V tomto příkladu vytvoříte zásadu *Zákazníci umožňující konsolidaci*,
 
 - Zásady se budou dotazovat na konkrétní fond objednávek, aby bylo možné identifikovat zákazníky, kteří přijímají konsolidované dodávky.
 - Konsolidace s otevřenými dodávkami je vypnuta.
-- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci dřívějšího zaškrtávacího políčka **Sklad**).
+- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu**).
 
 - Pravidlo na prodejní objednávce můžete přepsat výběrem jiného fondu objednávek.
 
@@ -306,7 +306,7 @@ V tomto příkladu vytvoříte zásadu *Sklady umožňující konsolidaci*, kter
 
 - Zásady se budou dotazovat na konkrétní fond objednávek, aby bylo možné identifikovat sklady, které mohou konsolidovat dodávky.
 - Konsolidace s otevřenými dodávkami je vypnuta.
-- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci dřívějšího zaškrtávacího políčka **Sklad**).
+- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu**).
 
 Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které jste vytvořili ve [scénáři 1](#scenario-1). Podobné zásady však můžete vytvořit také ručně pomocí těchto kroků.
 

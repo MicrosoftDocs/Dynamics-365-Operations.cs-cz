@@ -3,7 +3,7 @@ title: Modul textového bloku
 description: Tohle téma se zabývá moduly textového bloku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025590"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411128"
 ---
 # <a name="text-block-module"></a>Modul textového bloku
 
@@ -46,9 +46,13 @@ Moduly tetových bloků lze používat následujícími způsoby:
 * Chcete-li přidat vlastní zprávy na stránce s podrobnostmi o produktu (například „Bezplatné poštovné u objednávek přes 1 000 Kč“).
 * K zobrazení informací o právních omezeních a kontaktech na stránce s podrobnostmi o produktu, stránce košíku, stránkách pokladny a dalších stránkách (například „Dodávky a refundace podléhají zásadám obchodu“).
 
+Následující obrázek ukazuje příklad modulu textového bloku použitého na domovské stránce.
+
+![Příklad modulu textového bloku](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Vlasstnosti modulu textového bloku
 
-| Název vlastnosti     | Value                                            | Popis |
+| Název vlastnosti     | Hodnota                                            | popis |
 |-------------------|--------------------------------------------------|-------------|
 | Formátovaný text         | Formátovaný text                                        | Text odstavce. Jsou podporovány některé základní funkce pro formát RTF, například tučné a podtržené písmo a kurzíva. |
 | Vlastní název třídy | Název třídy Cascading Style Sheets (CSS)        | Název vlastní CSS třídy, kterou vývojář poskytuje k formátování tohoto modulu. Název třídy by měl být definován v balíku motivů. |
@@ -58,17 +62,23 @@ Moduly tetových bloků lze používat následujícími způsoby:
 
 Chcete-li přidat modul textového bloku na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona obsahu**. 
-1. Do úseku **Tělo** přidejte modul **Výchozí stránka**.
-1. Dokončete úpravy šablony a publikujte ji.
-1. Šablonu obsahu, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka obsahu**.
-1. V úseku **Hlavní** nové stránky přidejte modul kontejneru.
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona obsahu**.
+1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
+1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona obsahu**. V části **Název stránky** zadejte **Stránka obsahu** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu kontejner nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
-1. Přidejte modul textového bloku do modulu kontejneru. 
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Textový blok** a poté klikněte na tlačítko **OK**. 
 1. V podokně vlastností modulu textového bloku přidejte text do pole **RTF**.
-1. Dokončete úpravy stránky a publikujte ji.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled startovací sady](starter-kit-overview.md)
 

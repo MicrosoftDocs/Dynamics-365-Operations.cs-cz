@@ -3,7 +3,7 @@ title: Elektronické výkaznictví – Používání finančních dimenzí jako 
 description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ae9f72df5d6ff6add4eb97836cf32509aebd511
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: a9a6f07d6c665097fabab4d3ec6d7fa5ba80b65d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141954"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406467"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 4 - spuštění sestavy)
 
@@ -37,13 +37,16 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 2. Ve stromovém zobrazení rozbalte Vzorový model finančních dimenzí.
 3. Ve stromovém zobrazení vyberte Vzorový model finančních dimenzí\Sestava deníku hlavní knihy.
 4. Klikněte na Spustit.
-5. V poli Název dimenze zadejte nebo vyberte hodnotu.
-    * Chcete-li vybrat všechny dimenze v aktuální společnosti, zadejte následující hodnoty:   BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-6. Rozbalte oddíl Záznamy k zahrnutí.
+![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run1.png)
+5. V poli Název dimenze zadejte nebo vyberte hodnotu.
+    * Chcete-li vybrat všechny dimenze v aktuální společnosti, zadejte následující informace: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
+![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run2.png)
+6. Rozbalte oddíl Záznamy k zahrnutí.
 7. Klepněte na tlačítko Filtr.
 8. Vyberte řádek v tabulce Deník hlavní knihy a v poli Číslo dávky deníku.
 9. Zadejte hodnotu 00057 do pole Kritéria.
-10. Klikněte na tlačítko OK.
-11. Klikněte na tlačítko OK.
-    * Prohlédněte si generovaný výstup. Všimněte si, že pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci.  
-
+10. Klepněte na tlačítko OK.
+11. Klepněte na tlačítko OK.
+![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run3.png)
+    * Prohlédněte si generovaný výstup. Pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci.  
+![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run4.png)

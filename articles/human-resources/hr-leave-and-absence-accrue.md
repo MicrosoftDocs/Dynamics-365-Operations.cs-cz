@@ -3,12 +3,12 @@ title: Časově rozlišit plány pracovního volna a absence
 description: Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro více zaměstnanců nebo pro jednotlivce.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197306"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429052"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Časově rozlišit plány pracovního volna a absence
 
@@ -103,7 +103,19 @@ Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data 
 
 2. V nabídce **Správa pracovního volna** vyberte **Odstranit audit časového rozlišení pracovního volna**.
 
+## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Časové rozlišení volna dle společnosti nebo plánu volna
+
+Při časovém rozlišení volna a nepřítomnosti si můžete vybrat, že se budou časové rozlišovat pro všechny společnosti. Pokud zvolíte všechny společnosti, nemůžete vybrat individuální plány dovolené. Pokud se rozhodnete, že se vám nebudou časově rozlišovat všechny společnosti, můžete časově rozlišovat konkrétní plán dovolené. 
+
+Tyto možnosti jsou k dispozici při časovém rozlišení pro všechny zaměstnance nebo jednotlivé zaměstnance. 
+
 ## <a name="see-also"></a>Viz také
 
-- [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
-- [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
+[Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
+[Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
