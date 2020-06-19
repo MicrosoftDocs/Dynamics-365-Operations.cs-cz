@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,66 +18,66 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
-ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
+ms.openlocfilehash: 209f0ec7236778cc0a828102e554b02206b45b73
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3385541"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428678"
 ---
-# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="30bf8-103">Vytvoření workflowu žádosti o pracovní volno</span><span class="sxs-lookup"><span data-stu-id="30bf8-103">Create a leave request workflow</span></span>
+# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="fe9de-103">Vytvoření workflowu žádosti o pracovní volno</span><span class="sxs-lookup"><span data-stu-id="fe9de-103">Create a leave request workflow</span></span>
 
-<span data-ttu-id="30bf8-104">Workflow v Dynamics 365 Human Resources můžete vytvořit pro účely konzistentní správy žádostí o pracovní volno a absenci.</span><span class="sxs-lookup"><span data-stu-id="30bf8-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="30bf8-105">Workflow **pracovní volno a absence** vám umožňuje:</span><span class="sxs-lookup"><span data-stu-id="30bf8-105">A **Leave and absence** workflow lets you:</span></span>
+<span data-ttu-id="fe9de-104">Workflow v Dynamics 365 Human Resources můžete vytvořit pro účely konzistentní správy žádostí o pracovní volno a absenci.</span><span class="sxs-lookup"><span data-stu-id="fe9de-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="fe9de-105">Workflow **pracovní volno a absence** vám umožňuje:</span><span class="sxs-lookup"><span data-stu-id="fe9de-105">A **Leave and absence** workflow lets you:</span></span>
 
-- <span data-ttu-id="30bf8-106">Definovat úkoly</span><span class="sxs-lookup"><span data-stu-id="30bf8-106">Define tasks</span></span>
-- <span data-ttu-id="30bf8-107">Určit, kdo musí dokončit úkoly</span><span class="sxs-lookup"><span data-stu-id="30bf8-107">Determine who must complete the tasks</span></span>
-- <span data-ttu-id="30bf8-108">Určit, kdo může schvalovat nebo zamítnout požadavky</span><span class="sxs-lookup"><span data-stu-id="30bf8-108">Specify who can approve or reject requests</span></span>
+- <span data-ttu-id="fe9de-106">Definovat úkoly</span><span class="sxs-lookup"><span data-stu-id="fe9de-106">Define tasks</span></span>
+- <span data-ttu-id="fe9de-107">Určit, kdo musí dokončit úkoly</span><span class="sxs-lookup"><span data-stu-id="fe9de-107">Determine who must complete the tasks</span></span>
+- <span data-ttu-id="fe9de-108">Určit, kdo může schvalovat nebo zamítnout požadavky</span><span class="sxs-lookup"><span data-stu-id="fe9de-108">Specify who can approve or reject requests</span></span>
 
-## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="30bf8-109">Vytvoření workflow žádosti o pracovní volno a absenci</span><span class="sxs-lookup"><span data-stu-id="30bf8-109">Create a Leave and absence request workflow</span></span>
+## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="fe9de-109">Vytvoření workflow žádosti o pracovní volno a absenci</span><span class="sxs-lookup"><span data-stu-id="fe9de-109">Create a Leave and absence request workflow</span></span>
 
-1. <span data-ttu-id="30bf8-110">Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.</span><span class="sxs-lookup"><span data-stu-id="30bf8-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
+1. <span data-ttu-id="fe9de-110">Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.</span><span class="sxs-lookup"><span data-stu-id="fe9de-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
 
-2. <span data-ttu-id="30bf8-111">V části **Nastavení** vyberte **Workflowy lidských zdrojů**.</span><span class="sxs-lookup"><span data-stu-id="30bf8-111">Under **Setup**, select **Human resource workflows**.</span></span>
+2. <span data-ttu-id="fe9de-111">V části **Nastavení** vyberte **Workflowy lidských zdrojů**.</span><span class="sxs-lookup"><span data-stu-id="fe9de-111">Under **Setup**, select **Human resource workflows**.</span></span>
 
-3. <span data-ttu-id="30bf8-112">Vyberte **Nový** a poté vyberte **Žádost o pracovní volno a absenci**.</span><span class="sxs-lookup"><span data-stu-id="30bf8-112">Select **New**, and then select **Leave and absence request**.</span></span> 
+3. <span data-ttu-id="fe9de-112">Vyberte **Nový** a poté vyberte **Žádost o pracovní volno a absenci**.</span><span class="sxs-lookup"><span data-stu-id="fe9de-112">Select **New**, and then select **Leave and absence request**.</span></span> 
 
-4. <span data-ttu-id="30bf8-113">Když se zobrazí pole se zprávou **Otevřít tento soubor?**, vyberte **Otevřít** a přihlaste se pomocí svých přihlašovacích údajů.</span><span class="sxs-lookup"><span data-stu-id="30bf8-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
+4. <span data-ttu-id="fe9de-113">Když se zobrazí pole se zprávou **Otevřít tento soubor?**, vyberte **Otevřít** a přihlaste se pomocí svých přihlašovacích údajů.</span><span class="sxs-lookup"><span data-stu-id="fe9de-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
 
-5. <span data-ttu-id="30bf8-114">Pomocí editoru workflowu vytvořte workflow žádosti o pracovní volno.</span><span class="sxs-lookup"><span data-stu-id="30bf8-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="30bf8-115">Další informace o práci s workflowy naleznete v tématu [Vytvoření přehledu workflowů](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="30bf8-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
+5. <span data-ttu-id="fe9de-114">Pomocí editoru workflowu vytvořte workflow žádosti o pracovní volno.</span><span class="sxs-lookup"><span data-stu-id="fe9de-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="fe9de-115">Další informace o práci s workflowy naleznete v tématu [Vytvoření přehledu workflowů](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="fe9de-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
 
-## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="30bf8-116">Vytvoření datových prvků workflow žádosti o pracovní volno a absenci</span><span class="sxs-lookup"><span data-stu-id="30bf8-116">Leave and absence request workflow data elements</span></span>
+## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="fe9de-116">Vytvoření datových prvků workflow žádosti o pracovní volno a absenci</span><span class="sxs-lookup"><span data-stu-id="fe9de-116">Leave and absence request workflow data elements</span></span>
 
-<span data-ttu-id="30bf8-117">Následující datové prvky můžete použít k vytvoření podmíněných nebo automatických schválení v pracovních postupech pro žádosti o dovolenou a nepřítomnost:</span><span class="sxs-lookup"><span data-stu-id="30bf8-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
+<span data-ttu-id="fe9de-117">Následující datové prvky můžete použít k vytvoření podmíněných nebo automatických schválení v pracovních postupech pro žádosti o dovolenou a nepřítomnost:</span><span class="sxs-lookup"><span data-stu-id="fe9de-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
 
-- <span data-ttu-id="30bf8-118">**Částka**</span><span class="sxs-lookup"><span data-stu-id="30bf8-118">**Amount**</span></span>
-- <span data-ttu-id="30bf8-119">**Komentář**</span><span class="sxs-lookup"><span data-stu-id="30bf8-119">**Comment**</span></span>
-- <span data-ttu-id="30bf8-120">**Společnost**</span><span class="sxs-lookup"><span data-stu-id="30bf8-120">**Company**</span></span>
-- <span data-ttu-id="30bf8-121">**Vytvořil/a**</span><span class="sxs-lookup"><span data-stu-id="30bf8-121">**Created by**</span></span>
-- <span data-ttu-id="30bf8-122">**Datum a čas vytvoření**</span><span class="sxs-lookup"><span data-stu-id="30bf8-122">**Created date and time**</span></span>
-- <span data-ttu-id="30bf8-123">**Datum ukončení**</span><span class="sxs-lookup"><span data-stu-id="30bf8-123">**End date**</span></span>
-- <span data-ttu-id="30bf8-124">**Typ volna**</span><span class="sxs-lookup"><span data-stu-id="30bf8-124">**Leave type**</span></span>
-- <span data-ttu-id="30bf8-125">**Změnil(a)**</span><span class="sxs-lookup"><span data-stu-id="30bf8-125">**Modified by**</span></span>
-- <span data-ttu-id="30bf8-126">**Datum a čas úpravy**</span><span class="sxs-lookup"><span data-stu-id="30bf8-126">**Modified date and time**</span></span>
-- <span data-ttu-id="30bf8-127">**Kód důvodu**</span><span class="sxs-lookup"><span data-stu-id="30bf8-127">**Reason code**</span></span>
-- <span data-ttu-id="30bf8-128">**ID požadavku**</span><span class="sxs-lookup"><span data-stu-id="30bf8-128">**Request ID**</span></span>
-- <span data-ttu-id="30bf8-129">**Datum zahájení**</span><span class="sxs-lookup"><span data-stu-id="30bf8-129">**Start date**</span></span>
-- <span data-ttu-id="30bf8-130">**Stav**</span><span class="sxs-lookup"><span data-stu-id="30bf8-130">**Status**</span></span> 
-- <span data-ttu-id="30bf8-131">**Datum odeslání**</span><span class="sxs-lookup"><span data-stu-id="30bf8-131">**Submission date**</span></span>
-- <span data-ttu-id="30bf8-132">**Odeslal**</span><span class="sxs-lookup"><span data-stu-id="30bf8-132">**Submitted by**</span></span>
-- <span data-ttu-id="30bf8-133">**Odesláno personálním oddělením**</span><span class="sxs-lookup"><span data-stu-id="30bf8-133">**Submitted by Human resources**</span></span>
-- <span data-ttu-id="30bf8-134">**Odesláno manažerem**</span><span class="sxs-lookup"><span data-stu-id="30bf8-134">**Submitted by Manager**</span></span>
-- <span data-ttu-id="30bf8-135">**Zadáno jménem**</span><span class="sxs-lookup"><span data-stu-id="30bf8-135">**Submitted on behalf**</span></span>
-- <span data-ttu-id="30bf8-136">**Pracovní podproces**</span><span class="sxs-lookup"><span data-stu-id="30bf8-136">**Worker**</span></span>
-- <span data-ttu-id="30bf8-137">**Typ pracovníka**</span><span class="sxs-lookup"><span data-stu-id="30bf8-137">**Worker type**</span></span>
+- <span data-ttu-id="fe9de-118">**Částka**</span><span class="sxs-lookup"><span data-stu-id="fe9de-118">**Amount**</span></span>
+- <span data-ttu-id="fe9de-119">**Komentář**</span><span class="sxs-lookup"><span data-stu-id="fe9de-119">**Comment**</span></span>
+- <span data-ttu-id="fe9de-120">**Společnost**</span><span class="sxs-lookup"><span data-stu-id="fe9de-120">**Company**</span></span>
+- <span data-ttu-id="fe9de-121">**Vytvořil/a**</span><span class="sxs-lookup"><span data-stu-id="fe9de-121">**Created by**</span></span>
+- <span data-ttu-id="fe9de-122">**Datum a čas vytvoření**</span><span class="sxs-lookup"><span data-stu-id="fe9de-122">**Created date and time**</span></span>
+- <span data-ttu-id="fe9de-123">**Datum ukončení**</span><span class="sxs-lookup"><span data-stu-id="fe9de-123">**End date**</span></span>
+- <span data-ttu-id="fe9de-124">**Typ volna**</span><span class="sxs-lookup"><span data-stu-id="fe9de-124">**Leave type**</span></span>
+- <span data-ttu-id="fe9de-125">**Změnil(a)**</span><span class="sxs-lookup"><span data-stu-id="fe9de-125">**Modified by**</span></span>
+- <span data-ttu-id="fe9de-126">**Datum a čas úpravy**</span><span class="sxs-lookup"><span data-stu-id="fe9de-126">**Modified date and time**</span></span>
+- <span data-ttu-id="fe9de-127">**Kód důvodu**</span><span class="sxs-lookup"><span data-stu-id="fe9de-127">**Reason code**</span></span>
+- <span data-ttu-id="fe9de-128">**ID požadavku**</span><span class="sxs-lookup"><span data-stu-id="fe9de-128">**Request ID**</span></span>
+- <span data-ttu-id="fe9de-129">**Datum zahájení**</span><span class="sxs-lookup"><span data-stu-id="fe9de-129">**Start date**</span></span>
+- <span data-ttu-id="fe9de-130">**Stav**</span><span class="sxs-lookup"><span data-stu-id="fe9de-130">**Status**</span></span> 
+- <span data-ttu-id="fe9de-131">**Datum odeslání**</span><span class="sxs-lookup"><span data-stu-id="fe9de-131">**Submission date**</span></span>
+- <span data-ttu-id="fe9de-132">**Odeslal**</span><span class="sxs-lookup"><span data-stu-id="fe9de-132">**Submitted by**</span></span>
+- <span data-ttu-id="fe9de-133">**Odesláno personálním oddělením**</span><span class="sxs-lookup"><span data-stu-id="fe9de-133">**Submitted by Human resources**</span></span>
+- <span data-ttu-id="fe9de-134">**Odesláno manažerem**</span><span class="sxs-lookup"><span data-stu-id="fe9de-134">**Submitted by Manager**</span></span>
+- <span data-ttu-id="fe9de-135">**Zadáno jménem**</span><span class="sxs-lookup"><span data-stu-id="fe9de-135">**Submitted on behalf**</span></span>
+- <span data-ttu-id="fe9de-136">**Pracovní podproces**</span><span class="sxs-lookup"><span data-stu-id="fe9de-136">**Worker**</span></span>
+- <span data-ttu-id="fe9de-137">**Typ pracovníka**</span><span class="sxs-lookup"><span data-stu-id="fe9de-137">**Worker type**</span></span>
 
-<span data-ttu-id="30bf8-138">Tyto příklady ukazují, jak lze pomocí různých datových prvků vytvořit různé typy podmínek pracovního postupu:</span><span class="sxs-lookup"><span data-stu-id="30bf8-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
+<span data-ttu-id="fe9de-138">Tyto příklady ukazují, jak lze pomocí různých datových prvků vytvořit různé typy podmínek pracovního postupu:</span><span class="sxs-lookup"><span data-stu-id="fe9de-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
 
-- <span data-ttu-id="30bf8-139">Použijte **Kód důvodu** v podmíněném prohlášení pro směrování žádostí o nemocenskou dovolenou s kódem důvodu **Chirurgická operace** pro předložení HR ke schválení. Všechny ostatní kódy důvodu předkládejte vedoucímu.</span><span class="sxs-lookup"><span data-stu-id="30bf8-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="30bf8-140">Další informace o podmíněných příkazech získáte v tématu [Konfigurace podmíněných rozhodnutí ve workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="30bf8-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
+- <span data-ttu-id="fe9de-139">Použijte **Kód důvodu** v podmíněném prohlášení pro směrování žádostí o nemocenskou dovolenou s kódem důvodu **Chirurgická operace** pro předložení HR ke schválení. Všechny ostatní kódy důvodu předkládejte vedoucímu.</span><span class="sxs-lookup"><span data-stu-id="fe9de-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="fe9de-140">Další informace o podmíněných příkazech získáte v tématu [Konfigurace podmíněných rozhodnutí ve workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="fe9de-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
 
-- <span data-ttu-id="30bf8-141">Volby **Předloženo personálním oddělením** a **Předloženo manažerem** v automatické akci použijte k automatickému schvalování žádostí o dovolenou, které tyto role předkládají jménem zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="30bf8-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="30bf8-142">Další informace o automatických akcích naleznete v tématu [Konfigurace procesů schvalování ve workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="30bf8-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
+- <span data-ttu-id="fe9de-141">Volby **Předloženo personálním oddělením** a **Předloženo manažerem** v automatické akci použijte k automatickému schvalování žádostí o dovolenou, které tyto role předkládají jménem zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="fe9de-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="fe9de-142">Další informace o automatických akcích naleznete v tématu [Konfigurace procesů schvalování ve workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="fe9de-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
 
-- <span data-ttu-id="30bf8-143">Pomocí příkazu **Typ dovolené** v podmíněném příkazu nebo automatické akci určete, jak workflow směruje požadavky u určitých typů dovolené.</span><span class="sxs-lookup"><span data-stu-id="30bf8-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
+- <span data-ttu-id="fe9de-143">Pomocí příkazu **Typ dovolené** v podmíněném příkazu nebo automatické akci určete, jak workflow směruje požadavky u určitých typů dovolené.</span><span class="sxs-lookup"><span data-stu-id="fe9de-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="30bf8-144">Viz také</span><span class="sxs-lookup"><span data-stu-id="30bf8-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe9de-144">Viz také</span><span class="sxs-lookup"><span data-stu-id="fe9de-144">See also</span></span>
 
-- [<span data-ttu-id="30bf8-145">Přehled pracovního volna a absencí</span><span class="sxs-lookup"><span data-stu-id="30bf8-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="fe9de-145">Přehled pracovního volna a absencí</span><span class="sxs-lookup"><span data-stu-id="fe9de-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
