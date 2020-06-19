@@ -3,7 +3,7 @@ title: Daňové předpisy pro Evropu
 description: Můžete určit, zda zahrnout vysvětlení kódů DPH na prodejních fakturách a fakturách projektu. Lze vytisknout referenční čísla na prodejních fakturách, volných fakturách a projektových fakturách.
 author: epodkolz
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,21 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d054a1bdcfb3d189b343b51de77b407335a7792
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
+ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183479"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3422986"
 ---
-# <a name="tax-directives-for-europe"></a><span data-ttu-id="ab5bb-104">Daňové předpisy pro Evropu</span><span class="sxs-lookup"><span data-stu-id="ab5bb-104">Tax directives for Europe</span></span>
+# <a name="tax-directives-for-europe"></a><span data-ttu-id="181ad-104">Daňové předpisy pro Evropu</span><span class="sxs-lookup"><span data-stu-id="181ad-104">Tax directives for Europe</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ab5bb-105">Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro fakturaci a informace, které je při vytváření faktur třeba uvést.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="ab5bb-106">Směrnice EU uvádí informace, které vyžadují dodavatelé pro své zákazníky v EU.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="ab5bb-107">Faktury mohou například obsahovat odkaz na právní důvody pro uplatnění nulové sazby DPH nebo osvobození od daně.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="ab5bb-108">Pokud faktura upravuje dříve vystavenou fakturu, například dobropis, je třeba uvést jednoznačný odkaz na původní fakturu.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
+<span data-ttu-id="181ad-105">Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro fakturaci a informace, které je při vytváření faktur třeba uvést.</span><span class="sxs-lookup"><span data-stu-id="181ad-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="181ad-106">Směrnice EU uvádí informace, které vyžadují dodavatelé pro své zákazníky v EU.</span><span class="sxs-lookup"><span data-stu-id="181ad-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="181ad-107">Faktury mohou například obsahovat odkaz na právní důvody pro uplatnění nulové sazby DPH nebo osvobození od daně.</span><span class="sxs-lookup"><span data-stu-id="181ad-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="181ad-108">Pokud faktura upravuje dříve vystavenou fakturu, například dobropis, je třeba uvést jednoznačný odkaz na původní fakturu.</span><span class="sxs-lookup"><span data-stu-id="181ad-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
 
-- <span data-ttu-id="ab5bb-109">Chcete-li na prodejní fakturu, volnou fakturu nebo sestavu faktur projektu vytisknout popis kódů DPH, nastavte u těchto kódů referenční text daňových předpisů.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-109">To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</span></span>
-- <span data-ttu-id="ab5bb-110">U dobropisů se tisknou čísla a data původních faktur společně s důvodem k opravě.</span><span class="sxs-lookup"><span data-stu-id="ab5bb-110">For credit notes, the number and date of the original invoice are printed along with the reason for correction.</span></span>
+- <span data-ttu-id="181ad-109">Chcete-li na prodejní fakturu, volnou fakturu nebo sestavu faktur projektu vytisknout popis kódů DPH, nastavte u těchto kódů referenční text daňových předpisů.</span><span class="sxs-lookup"><span data-stu-id="181ad-109">To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</span></span>
+- <span data-ttu-id="181ad-110">U dobropisů se tisknou čísla a data původních faktur společně s důvodem k opravě.</span><span class="sxs-lookup"><span data-stu-id="181ad-110">For credit notes, the number and date of the original invoice are printed along with the reason for correction.</span></span>
 
+> [!NOTE]
+> <span data-ttu-id="181ad-111">Ověřte na stránce **Nastavení formuláře** (**Pohledávky** > **Nastavení** > **Formuláře** > **Nastavení formuláře** na **Kartě Obecné**), že pole **Specifikace DPH** je nastaveno na **Měna registrace** nebo **Měna registrace a společnosti**.</span><span class="sxs-lookup"><span data-stu-id="181ad-111">Verify on the **Form setup** page (**Accounts receivable** > **Setup** > **Forms** > **Form setup**, on the **General tab**), that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency**.</span></span>
