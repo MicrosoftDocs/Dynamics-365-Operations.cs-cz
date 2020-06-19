@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388109"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431123"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -45,6 +45,7 @@ Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správ
 
 | Výdej | Stav |
 | --- | --- |
+| Chyba: Při hledání prostředí, ke kterému se lze připojit, došlo k problému. | Tato chyba se může zobrazit, i když jste ověřili, že uživatel má přístup k jednomu nebo více prostředím lidských zdrojů. Navíc možná neuvidíte všechna očekávaná prostředí. Dokud tento problém nevyřešíme, odstraňte uživatele a znovu jej importujte, abyste problém vyřešili. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
 | Při snižování počtu hodin obsažených ve stávající žádosti **Zůstatek účtu** klesá místo aby stoupal. | Budeme řešit tento známý problém v budoucnosti. Zobrazení je nesprávné, ale správná množství jsou upravena po odeslání. |
 | Pro stejná data se zobrazují dvě karty **Nadcházející volno**. | Karty představují jednotlivá odeslání. Budeme i nadále brát v potaz zpětnou vazbu a provádět úpravy. |

@@ -3,7 +3,7 @@ title: Natavení kupónů pro maloobchodní prodej
 description: Toto téma poskytuje přehled kupónů a vysvětluje postup při jejich nastavení.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057364"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431971"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
@@ -48,8 +48,10 @@ Kupóny lze konfigurovat jako kupóny na omezené použití. Limit použití lze
 
 Limite je vynucen na kód kupónu v kupónu. Jednorázový kupón, který má dva kódy, lze například použít dvakrát: jednou pro každý kód. Každý kód na kupónu může být nezávisle nastaven na aktivní.
 
+Poukazy lze používat napříč libovolným prodejním kanálem, u objednávek pro call centrum lze však použít omezený počet kupónů pouze pro ty objednávky call center, kde je povoleno nastavení **Dokončení objednávky** call centra. Pokud to není povoleno, lze v objednávkách call centra použít pouze kupóny typu neomezeného použití.
+
 > [!NOTE]
-> Jakmile kód kupónu dosáhl limitu počtu použití, systém *nezmění* automaticky stav kódu kupónu na Použitý. Systém však nepovoluje další použití kódu kupónu, který dosáhl svého limitu počtu použití. Je-li stav kódu kupónu ručně nastaven na jakýkoliv jiný stav než Aktivní, nelze tento kód kupónu použít v žádném kanálu.
+> Jakmile kód kupónu dosáhl limitu počtu použití, systém *nezmění* automaticky stav kódu kupónu na Použitý. Tento kód kuponu však dosáhl svého limitu využití a nelze jej použít. Je-li stav kódu kupónu ručně nastaven na jakýkoliv jiný stav než **Aktivní**, nelze tento kód kupónu použít v žádném kanálu.  
 
 ## <a name="managing-coupons"></a>Správa kupónů
 

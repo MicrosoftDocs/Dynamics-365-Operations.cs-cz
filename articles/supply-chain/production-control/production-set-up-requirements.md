@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212496"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428393"
 ---
 # <a name="production-setup-requirements"></a>Požadavky na nastavení výroby
 
@@ -71,7 +71,7 @@ Pokud pracujete s postupy, je nutné definovat operaci pro každý nastavený v�
 2.  **Nákladové skupiny** – Nastavením nákladových skupin můžete vytvořit a udržovat různé typy nákladů.
 3.  **Skupiny postupů** – Nastavením skupin postupů můžete definovat parametry týkající se skupin postupů. Skupiny postupů je nutné nastavit před vytvořením výrobních postupů.
 4.  **Postupy** – Nastavením výrobních postupů a definováním výchozích nastavení můžete řídit plánování, náklady a oceňování operací postupů a hlášení průběhu.
-5.  **Postupy** – Nastavením verzí postupů povolíte odchylky položek ve výrobě.
+5.  **Verze směrování** – Nastavením verzí postupů povolíte odchylky položek ve výrobě.
 
 ## <a name="optional-advanced-settings"></a>Volitelná rozšířená nastavení
 1.  **Skupiny výroby** – Nastavením skupin výroby vytvoříte vztahy mezi výrobní zakázkou a účty hlavní knihy. Účty hlavní knihy jsou používány k zaúčtování nebo seskupení objednávek pro vykazování.
