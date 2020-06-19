@@ -3,7 +3,7 @@ title: Co je nového a co se změnilo v Dynamics 365 Supply Chain Management
 description: Tohle téma odkazuje na témata, která popisují nové a změněné funkce v jednotlivých verzích aplikace Dynamics 365 Supply Chain Management.
 author: kamaybac
 manager: tfehr
-ms.date: 03/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 276924e67e0507847cfb4ca9cf0b077c36c084b5
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: ad8f01a27fde8525c09807a28ed980c335eb8d25
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261227"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417408"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Co je nového a co se změnilo v Dynamics 365 Supply Chain Management 
 
@@ -36,7 +36,6 @@ Chcete-li zjistit, co je nového nebo změněno v jednotlivých vydáních aplik
 |---|---|---|---|
 | 10.0.11 | 10.0.464 | 2020. června | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.11](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | 2020. květen | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.10](whats-new-scm-10-0-10.md) |
-| 10.0.9 | 10.0.383 | 2020. duben | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.9](whats-new-scm-10-0-9.md) |
 
 ## <a name="releases-before-march-2020"></a>Vydání před březnem 2020
 
@@ -44,6 +43,7 @@ Chcete-li zjistit, co je nového nebo co se změnilo ve vydáních před listopa
 
 | Uvolnit | Verze | Číslo sestavení | Dostupnost | Další informace |
 |---|---|---|---|---|
+| Dynamics 365 Supply Chain Management | 10.0.9  | 10.0.383   | 2020. duben | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.9](whats-new-scm-10-0-9.md) |
 | Dynamics 365 Supply Chain Management | 10.0.8  | 10.0.319   | 2020. únor | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.8](whats-new-scm-10-0-8.md) |
 | Dynamics 365 Supply Chain Management | 10.0.7  | 10.0.283   | 2020. leden | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.7](whats-new-scm-10-0-7.md) |
 | Dynamics 365 Supply Chain Management | 10.0.6 |   10.0.234   | Listopad 2019  | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.6](whats-new-scm-10-0-6.md) |

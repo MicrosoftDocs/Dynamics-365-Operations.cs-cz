@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260499"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412347"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -117,7 +117,11 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 - Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. Všimněte si, že prvek nelze přesunout mimo nadřazenou skupinu. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Přesunout** a pak vyberte požadovaný prvek k přesunutí. Při výběru prvku aplikace kontroluje stránku a určuje místa, do nichž lze prvek přesunout. Tato umístění se nazývají *zóny přetažení*. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
 - Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
-- Chcete-li určit prvek požadovaný pro zadávání dat, použijte nástroj **Vyžadovat**. Když na panelu nástrojů vyberete tlačítko **Vyžadovat**, všechny prvky, u kterých je vyžadováno individuální nastavení, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak můžete znovu uričt, aby nevyžadovaly individuální nastavení. Tato možnost je k dispozici pouze v budoucím vydání, když jsou povoleny funkce [Uložená zobrazení](saved-views.md) a **Určit pole, které vyžadují individuální nastavení**.
+- Chcete-li určit prvek požadovaný pro zadávání dat, použijte nástroj **Vyžadovat**. Když na panelu nástrojů vyberete tlačítko **Vyžadovat**, všechny prvky, u kterých je vyžadováno individuální nastavení, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak můžete znovu uričt, aby nevyžadovaly individuální nastavení. Tato možnost je k dispozici pouze při spuštění ve verzi 10.0.12 a pozdější, když je povolená funkce **Určit pole, které vyžadují individuální nastavení**.
+
+    > [!IMPORTANT]
+    > Verze 10.0.12 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Zvolte nástroj **Zamknout**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když na panelu nástrojů vyberete tlačítko **Zamnkout**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
 - Pomocí tlačítka **Přidat aplikaci z Power Apps** vložte aplikaci, která byla vytvořena pomocí Microsoft Power Apps, na stránku. Podrobné informace o tom, jak vložit aplikaci z Power Apps na stránku, získáte v tématu [Vkládání aplikací z Power Apps](embed-power-apps.md). Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md).  
 - Pomocí tlačítka **Přidat aplikaci** vložte aplikaci, která byla vytvořena v Microsoft Power Apps nebo třetí stranou, na stránku.. Tato možnost je k dispozici pouze tehdy, je-li povolena funkce [uložená zobrazení](saved-views.md). 
@@ -159,28 +163,21 @@ Chcete-li přizpůsobit řídicí panel, klikněte pravým tlačítkem na libovo
 - Pokud chcete přeuspořádat dlaždice pracovního prostoru, vyberte v okně vlastností možnost **Přizpůsobit tuto stránku** a otevřete panel nástrojů **Přizpůsobení**. Dlaždice můžete přeuspořádat pomocí nástroje **Přesun** podle vaší potřeby.
 - Chcete-li přidat novou dlaždici pracovního prostoru, v okně vlastností vyberte **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání seznamů, odkazů nebo dlaždic do pracovního prostoru](#adding-a-tile-list-or-link-to-a-workspace).
 
+
+## <a name="sharing-personalizations"></a>Sdílení individuálních nastavení
+Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Pak můžete požádat ostatní uživatele, aby otevřeli přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít váš soubor individuálního nastavení na mnoho uživatelů současně pomocí stránky pro správu **Individuální nastavení**.
+
 ## <a name="administration-of-personalizations"></a>Správa přizpůsobení
+Stránka **Individuální nastavení** je ústředním centrem pro správu individuálních nastavení na úrovni organizace. Obsah a možnosti na této stránce závisí na tom, zda byla povolena funkce**Uložená zobrazení**.  
 
-Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Pak můžete požádat ostatní uživatele, aby otevřeli přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít soubor personalizace pro mnoho uživatelů najednou.
+Zákazníci, kteří mají povolenou funkci **Uložená zobrazení**, by si měli přečíst téma Globální správa zobrazení v tématu [Uložená zobrazení](saved-views.md).  
 
-Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**.
-
-U zákazníků, kteří nezapnuli funkci [Uložená zobrazení](saved-views.md), má tato stránka čtyři karty:
+U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-views.md), má tato stránka čtyři karty:
 
 - **Použít** – můžete importovat nebo zvolit individuální nastavení pro jednoho nebo více uživatelů. Chcete-li použít přizpůsobení pro jednoho nebo více uživatelů, nejprve vyberte roli a uživatele, kteří tuto roli mají. Poté buď vyberte existující personalizaci, která se bude vztahovat na vybrané uživatele, nebo importovat soubor personalizace. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
 - **Vymazat** – Můžete vymazat všechna přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejprve vyberte stránku nebo pracovní prostor, aby se zobrazil seznam uživatelů, kteří u nich provedli individuální nastavení. Poté vyberte uživatele, kteří by měli mít individuální nastavení pro tuto stránku nebo pracovní prostor odstraněno, a vyberte **Vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud však byla personalizace uložena pro stránku nebo pracovní prostor, může být tato personalizace znovu importována.
 - **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
 - **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
-
-Pro zákazníky, kteří zapnuli funkci [Uložená zobrazení](saved-views.md), nabízí stránka **Individuální nastavení** pět karet:
-
-- **Publikovaná zobrazení** – tato zobrazení byla publikována ve vaší organizaci. Chcete-li změnit uživatele, kteří jsou cílem těchto zobrazení, můžete změnit role zabezpečení nebo právnické osoby, které jsou přidruženy k jednotlivým zobrazením. Můžete také exportovat nebo odstranit jedno nebo více publikovaných zobrazení.
-- **Nepublikovaná zobrazení** – tato zobrazení jsou náhledy šablon, které byly importovány do systému, ale ještě nebyly publikovány. Tato zobrazení můžete publikovat, exportovat nebo odstranit.
-- **Osobní zobrazení** – tato zobrazení byla vytvořena uživateli v systému. Do organizace můžete publikovat osobní zobrazení nebo je zkopírovat z jednoho či více těchto zobrazení do jiných uživatelů. Tato zobrazení můžete také exportovat nebo odstranit podle potřeby.
-- **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
-- **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
-
-Uživatelé, kteří mají přístup na stránku **Individuální nastavení**, mohou také importovat osobní zobrazení nebo zobrazení šablony pomocí tlačítka **Importovat zobrazení** v podokně akcí.
 
 ## <a name="personalizing-inventory-dimensions"></a>Individuální nastavení dimenzí zásob
 

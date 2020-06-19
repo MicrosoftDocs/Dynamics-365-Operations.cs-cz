@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933925"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421648"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -81,7 +81,7 @@ Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyt
 
 Pro každou doménu je určena komponenta datového modelu, kterou je třeba používat jako jednotný zdroj dat pro vykazování, který izoluje výkaznictví od fyzické implementace datových zdrojů. Představuje obchodní koncepce a funkce konkrétní domény ve formě, která zvyšuje efektivitu úvodní struktury formátu výkaznictví a usnadňuje jeho další údržbu.
 
-#### <a name="FormatComponentOutbound"></a>Komponenty formátu pro odchozí elektronické dokumenty
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Komponenty formátu pro odchozí elektronické dokumenty
 
 Komponenta formátu je schématem výstupu vykazování, který je generován při spuštění. Schéma se skládá z následujících prvků:
 
@@ -107,7 +107,7 @@ Následující obrázek znázorňuje tok dat u těchto formátů.
 
 Chcete-li spustit jednu konfiguraci formátu ER a vygenerovat odchozí elektronický dokument, je nutné určit mapování konfigurace formátu.
 
-#### <a name="FormatComponentInbound"></a>Komponenty formátu pro příchozí elektronické dokumenty
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Komponenty formátu pro příchozí elektronické dokumenty
 Komponenta formátu je schématem příchozího dokumentu, které se importuje při spuštění. Schéma se skládá z následujících prvků:
 
 - Formát, který definuje strukturu a obsah příchozího elektronického dokumentu obsahujícího data, která se importují při spuštění. Komponenta formátu, která slouží k analýze příchozích dokumentů v různých formátech (například text nebo XML).
@@ -144,7 +144,7 @@ Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/obl
 
 Různé verze součástí formátu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
 
-#### <a name="Configuration"></a>Konfigurace
+#### <a name="configuration"></a><a name="Configuration"></a>Konfigurace
 
 Konfigurace ER představuje obálku určité komponenty ER. Komponenta může být komponentou datového modelu nebo formátu. Konfigurace může obsahovat různé verze komponenty ER. Každá konfigurace je označena jako vlastněná určitou konfigurací poskytovatele. Verze **Návrh** komponent z konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení EV v aplikaci.
 
@@ -154,26 +154,26 @@ Vytvořená konfigurace formátu obsahuje komponentu formátu. Komponenta datov�
 
 Konfigurace EV je sdílená pro společnosti aplikace.
 
-#### <a name="Provider"></a>Zprostředkovatel
+#### <a name="provider"></a><a name="Provider"></a>Zprostředkovatel
 
 Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení Finance and Operations jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
 
 Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si průvodce záznamem úloh **Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního** (součást obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
-#### <a name="Repository"></a>Úložiště
+#### <a name="repository"></a><a name="Repository"></a>Úložiště
 
 Úložiště EV obsahuje konfigurace EV. Následující typy úložiště ER jsou aktuálně podporovány: 
 
 - Sdílená knihovna LCS
 - Projekt LCS
 - Systém souborů
-- Regulatory Configuration Services (RCS)
+- RCS
 - Prostředky aplikace Operations
-
+- Globální úložiště
 
 Úložiště **sdílené knihovny LCS** poskytuje přístup k seznamu konfigurací v rámci knihovny sdíleného majetku ve službě Lifecycle Services (LCS). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z knihovny sdíleného majetku LCS můžete importovat poslední verze konfigurace ER do aktuální instance.
 
-Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
+Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán při registraci úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
 
 Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance. 
 
@@ -184,9 +184,13 @@ Všimněte si, že tento typ úložiště je přístupný v následujících pro
 
 Další informace získáte v tématu [Import konfigurací elektronického výkaznictví](./electronic-reporting-import-ger-configurations.md).
 
-Úložiště **Instance RCS** poskytuje přístup k seznamu konfigurací určité instance RCS, která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance, abyste je mohli použít v elektronickém výkaznictví.
+Úložiště **RCS** poskytuje přístup k seznamu konfigurací určité instance [Služby konfigurace RCS](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance, abyste je mohli použít v elektronickém výkaznictví.
 
-Další informace získáte v tématu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](./rcs-download-configurations.md).
+Další informace získáte v tématu [Import konfigurací elektronického výkaznictví z RCS](./rcs-download-configurations.md).
+
+**Globální úložiště** poskytuje přístup k seznamu konfigurací v globálním úložišti v [Konfigurační službě](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z globálního úložiště můžete importovat poslední verze konfigurace ER do aktuální instance.
+
+Další informace získáte v tématu [Import konfigurací elektronického výkaznictví z globálního úložiště konfigurační služby](./er-download-configurations-global-repo.md).
 
 Úložiště typu **Provozní prostředky** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER původně vydává v rámci řešení aplikace. Tyto konfigurace lze importovat do aktuální instance aplikace a používat pro elektronické sestavy nebo přehrání vzorovými průvodci záznamem úloh. Můžete je používat i pro další lokalizace a přizpůsobení. Všimněte si, že nejnovější verze poskytované konfiguracemi elektronického výkaznictví musí být importovány z knihovny sdíleného majetku LCS s použitím odpovídajícího ER úložiště.
 

@@ -1,5 +1,5 @@
 ---
-title: Úvěr a inkasa v modulu Pohledávky
+title: Inkasa v modulu Pohledávky
 description: Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa Microsoft Dynamics 365 Finance. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189170"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426389"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Úvěr a inkasa v modulu Pohledávky
+# <a name="collections-in-accounts-receivable"></a>Inkasa v modulu Pohledávky
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ Záhlaví snímku sledování splatnosti obsahuje celkovou splatnou částku, li
 
 Pro každé období sledování splatnosti v definici období pro sledování splatnosti je vytvořen záznam podrobností pro snímek sledování splatnosti. Každý záznam podrobností o snímku pro sledování splatnosti obsahuje ID období sledování splatnosti a celkovou částku transakcí s daty, která jsou v období pro sledování splatnosti. Transakce jsou přidružené k období pro sledování splatnosti, jako je například 30 dnů po splatnosti. Datum se vztahuje ke sledování splatnosti k datu, které se stanoví během vytváření snímku sledování splatnosti. Tyto informace se zobrazí na stránce se seznamem Splatné zůstatky a v oknu s fakty Splatné zůstatky na stránce Kolekce.
 
-## <a name="collections-customer-pools"></a> Fond zákazníků inkasa 
+## <a name="collections-customer-pools"></a> Fond odběratelů inkasa 
 Fondy zákazníků představující dotazy, které definují skupinu odběratelských záznamů, které lze zobrazit a spravovat v rámci procesu inkasa nebo sledování splatnosti. Vyberte fondy zákazníků k filtrování informací pro stránku se seznamem Splatné zůstatky, Inkasní aktivity a Případy inkasa. Fondy zákazníků slouží také k filtrování účtů zákazníka, které budou zahrnuty při vytváření snímků pro sledování splatnosti.
 
 ## <a name="collections-agents"></a>Inkasní agenti
@@ -68,7 +68,7 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 
 > [!NOTE]
 > Snímek sledování splatnosti musí být vytvořen dříve, než je možné zobrazit informace na těchto stránkách se seznamem. Zobrazí se informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti. Záznamy, které se zobrazí na stránce seznamu, lze dále filtrovat následujícím způsobem:
-> <li>Podle výchozího nastavení uživatel aplikace Finance and Operations má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
+> <li>Podle výchozího nastavení mají uživatelé Finance and Operations přístup ke všem odběratelům, kteří mají snímek sledování splatnosti.</li>
 > <li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
 > <li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
 

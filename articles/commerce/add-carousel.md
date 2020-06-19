@@ -3,7 +3,7 @@ title: Karuselový modul
 description: Tohle téma se zabývá karuselovými moduly a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 35aaf35419a8c5b83b2a3e1136a02200bf347c6b
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269721"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411289"
 ---
 # <a name="carousel-module"></a>Karuselový modul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá karuselovými moduly a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
@@ -44,9 +44,13 @@ Do karuselového modulu můžete přidat modul bloku obsahu. Vlastnosti karuselo
 - Na stránce s podrobnostmi o produktu lze použít karusel s více propagačními moduly.
 - Karusel lze použít na libovolné marketingové stránce k propagaci promoakcí a produktů.
 
+Následující obrázek ukazuje příklad karuselového modulu použitého na domovské stránce. Tento karuselový model obsahuje několik položek bloku obsahu.
+
+![Příklad karuselového modulu](./media/Hero.PNG)
+
 ## <a name="carousel-module-properties"></a>Vlastnosti karuselového modulu
 
-| Název vlastnosti             | Hodnota                 | Popis |
+| Název vlastnosti             | Hodnota                 | popis |
 |---------------------------|-----------------------|-------------|
 | Přehrát automaticky                  | **Pravda** nebo **nepravda** | Je- li nastavena hodnota **Pravda**, dojde k automatickému přechodu mezi položkami v karuselu. Pokud je hodnota nastavena na **Nepravda**, nedochází k žádnému přechodu, pokud zákazník nepoužije klávesnici nebo myš k přechodu z jedné položky na další položku. |
 | Interval přechodu snímků | Hodnota v sekundách    | Interval pro přechody mezi položkami. |
@@ -58,7 +62,7 @@ Do karuselového modulu můžete přidat modul bloku obsahu. Vlastnosti karuselo
 
 Chcete-li přidat karuselový modul na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Zvolte **Nová** pro vytvoření šablony stránky.
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona karuselu** a poté klikněte na tlačítko **OK**.
 1. Do úseku **Tělo** přidejte modul **Výchozí stránka**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.  

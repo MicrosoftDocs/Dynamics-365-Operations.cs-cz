@@ -3,7 +3,7 @@ title: Modul kontejneru
 description: Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025498"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417339"
 ---
 # <a name="container-module"></a>Modul kontejneru
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Podporovány jsou tři moduly kontejneru: kontejner, kontejner se 2 pozicemi a k
 - Autor webu požaduje rozložení v šesti sloupcích, kde se šest modulů zobrazuje vedle sebe. Autor webu proto používá typ kontejneru, který má uvnitř šest sloupců.
 - Autor webu chce vložit modul na stránku, ale nechce, aby vyplnil obrazovku. Autor webu proto přidá do modulu kontejneru potřebný modul a nastaví vlastnost kontejneru **Šířka** na hodnotu **Přizpůsobit kontejneru**.
 
+Následující obrázek ukazuje příklad modulu kontejneru, který obsahuje karuselový modul ve tvůrci webů Commerce. V tomto příkladu je vlastnost **Šířka** modulu kontejneru nastavena na **Vyplnit obrazovku**.
+
+![Příklad modulu kontejneru](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Vlastnosti modulu kontejneru
 
-| Název vlastnosti     | Hodnoty | Popis |
+| Název vlastnosti     | Hodnoty | popis |
 |-------------------|--------|-------------|
 | Záhlaví           | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Pro kontejner lze zadat volitelný nadpis. Standardně se pro značku nadpisu používá označení **H2**. Značku však lze změnit tak, aby vyhovovala požadavkům na usnadnění. |
 | Šířka             | **Přizpůsobit kontejneru** nebo **Vyplnit obrazovku** | Je-li hodnota nastavena na **Přizpůsobit kontejneru** (výchozí hodnota), moduly uvnitř kontejneru jsou omezeny na šířku kontejneru. Je-li hodnota nastavena na **Vyplnit obrazovku**, moduly nejsou omezeny na šířku kontejneru, ale mohou vyplnit obrazovku. |
@@ -99,23 +102,32 @@ Další vlastnosti lze použít k optimalizaci rozložení pro různé porty zob
 
 Chcete-li přidat modul kontejneru na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona kontejneru**. 
-1. Do úseku **Tělo** přidejte modul **Výchozí stránka**.
-1. Dokončete úpravy šablony a publikujte ji.
-1. Šablonu kontejneru, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka kontejneru**.
-1. V úseku **Hlavní** nové stránky přidejte modul kontejneru.
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona kontejneru** a poté klikněte na tlačítko **OK**.
+1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
+1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
+1. V dialogovém okně **Zvolte šablonu** vyberte šablonu video přehrávače, kterou jste vytvořili. V části **Název stránky** zadejte **Stránka kontejneru** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu kontejneru nastavte vlastnost **Počet sloupců** na hodnotu **1** a vlastnost **Šířka** na hodnotu **Vyplnit kontejner**.
-1. Přidejte modul bloku obsahu v modulu kontejneru.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Blok obsahu** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností pro modul bloku obsahu nakonfigurujte záhlaví, obrázek a rozvržení.
-1. Uložte stránku a zobrazte náhled. Měli byste vidět jeden propagační modul, který pasuje na šířku modulu kontejneru.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky. Měli byste vidět jeden propagační modul, který pasuje na šířku modulu kontejneru.
 1. V podokně vlastností modulu kontejneru změňte hodnotu vlastnosti **Počet sloupců** na **3**.
-1. Do modulu kontejneru přidejte další dva moduly bloku obsahu.
-1. Uložte stránku a zobrazte náhled. Nyní by měly být zobrazeny tři moduly bloku obsahu vedle sebe.
-1. Poté, co jste dosáhli požadovaného rozložení, dokončete úpravy stránky a publikujte ji.
+1. Do modulu kontejneru přidejte další dva moduly bloku obsahu a nakonfigurujte je.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky. Nyní by měly být zobrazeny tři moduly bloku obsahu vedle sebe.
+1. Poté, co dosáhnete požadovaného rozložení, vyberte **Dokončit úpravy**, čímž stránku vrátíte se změnami, a pak zvolte **Publikovat**, čímž ji publikujete.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled startovací sady](starter-kit-overview.md)
+
+[Modul ovládacího prvku Accordion](add-accordion.md)
+
+[Modul karty](add-tab.md)
 
 [Karuselový modul](add-carousel.md)
 

@@ -3,24 +3,24 @@ title: Povolit ověřování Azure Active Directory pro přihlášení POS
 description: V tomto tématu je vysvětleno, jak nakonfigurovat přihlašovací prostředí pro Microsoft Dynamics 365 Commerce pokladní místo (POS) tak, aby používalo ověřování Azure Active Directory.
 author: boycezhu
 manager: annbe
-ms.date: 03/08/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: dfc49585434383385b6b993893d93b95ef888384
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248933"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410028"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Povolit ověřování Azure Active Directory pro přihlášení POS
 [!include [banner](includes/banner.md)]
@@ -42,11 +42,13 @@ Všechny funkční profily standardně používají jako metodu ověřování PO
 
 Chcete-li použít změny POS, postupujte podle následujících kroků.
 
-1. Přejděte na **Retail and Commerce** \> **IT pro Retail and Commerce** \> **Plán distribuce**.
+1. Přejděte na **Retail a Commerce** \> **IT pro Retail a Commerce** \> **Plán distribuce**.
 1. Spusťte plán distribuce **1070** (**Konfigurace kanálu**).
 
 > [!NOTE]
 > Ověření Azure AD vyžaduje připojení k Internetu. Pokud je POS v offline režimu, nebude fungovat.
+> 
+> V současné době funkce **Přepsání manažerem** nepodporuje Azure AD jako metodu ověřování. ID operátora a heslo jsou povinné, i když je řešení Azure AD nakonfigurováno jako metoda ověřování pro přihlášení do POS.
 
 ## <a name="associate-an-azure-ad-account-with-a-worker"></a>Přiřazení účtu Azure AD k pracovníkovi
 
@@ -54,7 +56,7 @@ Dříve, než může pracovník obchodu použít účet Azure AD pro přihláše
 
 Chcete-li účet Azure AD přidružit k pracovníkovi, postupujte podle následujících kroků.
 
-1. Přejděte na **Retail and Commerce** \> **Zaměstnanci** \> **Pracovníci**.
+1. Přejděte na **Retail a Commerce** \> **Zaměstnanci** \> **Pracovníci**.
 1. Otevře stránku podrobností pro pracovníka.
 1. V podokně akcí na kartě **Commerce** ve skupině **Externí identita** zvolte **Přidružit existující identitu**.
 1. V dialogovém okně **Použít existující externí identitu** vyberte možnost **Hledat pomocí e-mailu**, zadejte e-mailovou adresu Azure AD a pak vyberte možnost **Hledat**.

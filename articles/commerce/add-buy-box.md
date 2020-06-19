@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269744"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411335"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
@@ -38,6 +38,10 @@ Termín *buy box* se obvykle vztahuje k oblasti stránky s podrobnostmi o produk
 Modul buy boxu je speciální kontejner, který slouží k hostování všech modulů, které jsou zobrazeny v oblasti buy boxu na stránce podrobností produktu.
 
 Adresa URL stránky s podrobnostmi o produktu obsahuje ID produktu. Všechny informace, které jsou požadovány pro vygenerování modulu buy boxu, jsou odvozeny z tohoto ID produktu. Není-li zadáno ID produktu, nebude modul buy boxu na stránce správně vykreslen. Modul buy boxu lze proto použít pouze na stránkách, které mají kontext produktu. Chcete-li použít položku na stránce, která nemá kontext produktu (například domovskou stránku nebo marketingovou stránku), je nutné provést další úpravy.
+
+Následující obrázek ukazuje příklad modulu buy boxu na stránce s podrobnostmi o produktu.
+
+![Příklad modulu buy boxu](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Vlastnosti a pozice modulu buy boxu 
 
@@ -58,16 +62,19 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
 - **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Může podporovat jeden nebo mnoho obrázků. Podporuje také obrázky miniatur. Obrázky miniatur lze uspořádat vodorovně (jako řádek pod obrázkem) nebo svisle (jako sloupec vedle obrázku). Modul galerie médií lze přidat do pozice **Média** v modulu buy boxu. V současné době podporuje pouze obrázky. 
-- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v tématu [Modul volič obchodů](store-selector.md).
+- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v části [Modul volby obchodu](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
 
-Moduly buy boxu mají tři nastavení, která lze konfigurovat na **Nastavení webu \> Rozšíření**:
+Následující nastavení modulu buy boxu lze konfigurovat na **Nastavení webu \> Rozšíření**:
 
-- **Maximální množství** – tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
-- **Kontrola zásob** – Je-li nastavena hodnota **Pravda**, položka se přidá do košíku pouze poté, co se modul buy boxu ověří, že je na skladě. Tato kontrola zásob se provádí pro scénáře, když má být položka expedována, a pro scénáře, kdy má být vyzvednuta v obchodě. Je-li tato hodnota nastavena na hodnotu **Nepravda**, před přidáním položky do nákupního košíku a podání objednávky není provedena kontrola zásob. Informace o tom, jak konfigurovat nastavení zásob v administrativě, naleznete v tématu [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md).
+- **Limit množství na řádku košíku** – Tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
+- **Zásoby** – Informace, jak použít nastavení zásob, naleznete v části [Použití nastavení zásob](inventory-settings.md).
+- **Přidat do nákupního košíku** – Tato vlastnost se používá ke specifikaci chování po přidání položky do košíku. Možné hodnoty jsou **Přejít do nákupního košíku**, **Nepřecházet do nákupního košíku** a **Zobrazit oznámení**. Když je tato hodnota nastavena na **Přejít do nákupního košíku**, uživatelé jsou po přidání položky přesměrováni na stránku nákupního košíku. Když je tato hodnota nastavena na **Nepřecházet do nákupního košíku**, uživatelé nejsou po přidání položky přesměrováni na stránku nákupního košíku. Když je hodnota nastavena na **Zobrazit oznámení**, uživatelům se zobrazí potvrzovací oznámení a poté mohou nadále procházet stránku podrobností o produktu. 
 
-- **Zásboník zásob** – Tato vlastnost se používá k určení čísla zásobníku pro zásoby. Údržba zásob probíhá v reálném čase a když mnoho zákazníků podá objednávku, může být obtížné zajistit přesný počet zásob. Když je provedena kontrola zásob, pokud je množství na skladu nižší než množství zásobníku, produkt je brán, jakože není na skladu. Pokud se tedy prodej rychle točí prostřednictvím několika kanálů a zásoby nejsou plně synchronizovány, existuje menší riziko, že položka, která se nenachází na skladě, je v prodeji.
+    Následující obrázek ukazuje příklad potvrzovacího oznámení „přidáno do košíku“ na webu Fabrikam.
+
+    ![Příklad modulu oznámení](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 
@@ -77,16 +84,25 @@ Modul buy boxu načítá informace o produktu pomocí rozhraní API Commerce Sca
 
 Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte fragment s názvem **Fragment buy boxu** a do něj přidejte modul buy boxu.
-1. Do pozice **Média** modulu buy boxu přidejte modul galerie médií.
-1. Do slotu **Výběr obchodu** v modulu buy boxu přidejte modul Selektor obchodu.
+1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. V dialogovém okně **Nový fragment stránky** vyberte modul **Buybox**.
+1. V části **Název fragmentu stránky** zadejte název pro **Fragment buy boxu** a poté vyberte **OK**.
+1. V pozici **Galeria médií** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Galerie médií** a poté klikněte na tlačítko **OK**.
+1. V pozici **Volba obchodu** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Volba obchodu** a poté klikněte na tlačítko **OK**.
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
-1. Vytvořte šablonu pro stránku s podrobnostmi o produktu a pojmenujte ji **Šablona POP**.
-1. Přidejte výchozí stránku.
-1. V pozici **Hlavní** na výchozí stránce přidejte fragment buy boxu.
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona stránky podrobností o produktu** a poté klikněte na tlačítko **OK**.
+1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** na výchozí stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
+1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
-1. Šablonu, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka POP**.
-1. V pozici **Hlavní** nové stránky přidejte fragment buy boxu.
+1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
+1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona stránky podrobností o produktu**. V části **Název stránky** zadejte **Stránka podrobností o produktu** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
+1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Uložte stránku a zobrazte náhled. Do adresy URL stránky náhledu přidejte parametr řetězce dotazu **?productid=&lt;id produktu&gt;**. Tímto způsobem se pro načtení a vykreslení stránky náhledu použije kontext produktu.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
 

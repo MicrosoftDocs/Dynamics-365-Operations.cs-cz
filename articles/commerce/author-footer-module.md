@@ -3,7 +3,7 @@ title: Modul zápatí
 description: Toto téma popisuje moduly zápatí a způsob jejich vytváření v řešení Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 51f8d26d6223dcd1f6961058cd9d772a67c69670
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269624"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411189"
 ---
 # <a name="footer-module"></a>Modul zápatí  
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,6 +34,10 @@ Toto téma popisuje moduly zápatí a popisuje, jak je vytvořit v řešení Mic
 
 Modul zápatí je speciální kontejner, který se používá k hostování modulů, které se zobrazují v zápatí stránky. Může se například jednat o odkazy na různé stránky na webu, například **O nás** a **Zásady obchodu**.
 
+Následující obrázek znázorňuje příklad modulu zápatí na stránce webu.
+
+![Příklad modulu zápatí](./media/ecommerce-footer.PNG)
+
 ## <a name="footer-module-properties"></a>Vlastnosti modulu zápatí 
 
 Podobně jako většina kontejnerů, modul zápatí podporuje vlastnosti pro nadpis a šířku. Podporuje také přidání modulů kategorií s více zápatími. Přidaný modul kategorie zápatí je vykreslen jako sloupec v modulu zápatí.
@@ -43,27 +46,27 @@ Podobně jako většina kontejnerů, modul zápatí podporuje vlastnosti pro nad
 
 **Položky zápatí** – Modul položek zápatí může obsahovat nadpis, obrázek a odkaz. Nadpis lze použít samostatně nebo v kombinaci s obrázkem a odkazem. Každý odkaz v zápatí lze nakonfigurovat tak, aby obsahoval pouze text (například odkazy „Kontaktujte nás“ a „Ochrana osobních údajů“), nebo aby měl text i obrázek (například odkazy na sociální média).
 
-**Zpět na začátek** – Modul Zpět na začátek obsahuje odkaz pro rychlou navigaci na začátek stránky. Cíl je povinný. Výchozí hodnota cíle je #, která přesměruje uživatele na začátek stránky.
+**Zpět na začátek** – Modul Zpět na začátek obsahuje odkaz pro rychlou navigaci na začátek stránky. Cíl je povinný. Výchozí hodnota cíle je \#, která přesměruje uživatele na začátek stránky.
 
-## <a name="author-a-footer-module"></a>Vytvoření modulu zápatí
+## <a name="create-a-footer-module"></a>Vytvoření modulu zápatí
 
-1. V navigačním podokně vyberte **Fragmenty** a pak vyberte možnost **Nový fragment stránky**.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul zápatí, zadejte název fragmentu stránky a poté klepněte na tlačítko **OK**.
-1. Ve stromové struktuře vlevo vyberte pro modul zápatí tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul kategorie zápatí a poté klikněte na tlačítko **OK**.
-1. Ve stromové struktuře vyberte pro modul kategorie zápatí tlačítko se třemi tečkami a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul položky zápatí a poté klikněte na tlačítko **OK**.
-1. Ve stromové strukřutě vyberte modul položky zápatí. Poté v podokně vlastností napravo nakonfigurujte nadpis, odkaz a text odkazu a požadovaný obrázek.
+1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. V dialogovém okně **Nový fragment stránky** vyberte modul **Kontejner**, zadejte název fragmentu stránky a poté klepněte na tlačítko **OK**.
+1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kategorie zápatí** a poté klikněte na tlačítko **OK**.
+1. V pozici **Kategorie zápatí** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Položka zápatí** a poté klikněte na tlačítko **OK**.
+1. Vyberte pozici **Položka zápatí** a poté v podokně vlastností napravo dle potřeb nakonfigurujte nadpis, odkaz a text odkazu a obrázek.
 1. Chcete-li přidat další položky zápatí, opakujte kroky 5 až 7.
-1. Chcete-li přidat do zápatí odkaz „zpět na začátek“, ve stromové struktuře vyberte pro modul kategorie zápatí tlačítko se třemi tečkami a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul Zpět na začátek a poté klikněte na tlačítko **OK**.
-1. Ve stromové struktuře vyberte modul Zpět na začátek. Poté v podokně vlastností napravo nakonfigurujte modul Zpět na zaátek podle potřeby.
-1. Chcete-li vrátit fragment stránky se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
+1. Chcete-li přidat do zápatí odkaz „zpět na začátek“, v pozici **Kategorie zápatí** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Zpět na začátek** a poté klikněte na tlačítko **OK**.
+1. Vyberte pozici **Zpět na začátek** a poté v podokně vlastností napravo dle potřeb nakonfigurujte text a další vlastnosti modulu.
+1. Chcete-li vrátit fragment se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
-U každé šablony stránky, která byla pro web vytvořena, postupujte takto.
+Chcete-li zajistit, aby se záhlaví zobrazilo na každé stránce, postupujte podle následujících kroků pro všechny šablony stránek, které jsou pro daný web vytvořeny.
 
-1. V pozici **Hlavní** na výchozí stránce přidejte do modulu zápatí fragment zápatí, který jste vytvořili.
-1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. V pozici **Zápatí** modulu **Výchozí stránka** přidejte fragment zápatí, který jste vytvořili.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 Přidáním fragmentu stránky do šablon stránek pomůžete zaručit, že zápatí bude vykresleno na každé stránce.
 
