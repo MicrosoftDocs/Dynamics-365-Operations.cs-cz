@@ -20,11 +20,9 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform Update pro 10.0.10 (květen 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (duben 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Odstraněné nebo zastaralé funkce
               items:
-                - name: Odstraněné nebo zastaralé funkce Platform
+                - name: Odstraněné nebo zastaralé funkce platformy
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Odebrané nebo zastaralé funkce v předchozích verzích
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Povolení mapování entit pro duální zápis
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migrace datového typu měny pro duální zápis
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Správa duálního zápisu
                           items:
                             - name: Přizpůsobení mapování entit a polí
@@ -364,6 +364,8 @@
           items:
             - name: Přehled Azure Data Lake
               href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurace exportu do Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
             - name: Aplikace Finance and Operations v Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Zpřístupnění úložiště entit jako Data Lake
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Místní diagnostika
                       href: deployment/on-premises-diagnostics.md
+                    - name: Místní konfigurace zotavení po havárii
+                      href: deployment/onprem-dr.md
                     - name: Integrace PowerBI.com s místními prostředími
                       href: analytics/entity-store-on-prem.md
                     - name: Rekonfigurace prostředí
@@ -652,11 +656,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Psaní obchodní logiky pomocí zdrojového kódu C# a X++'
+                - name: Psaní obchodní logiky pomocí zdrojového kódu C# a X++
                   href: dev-tools/write-business-logic.md
                 - name: Změny v X++ a kompilátor X++
                   href: dev-tools/programming-language-support.md
-                - name: 'Poskytovatel LINQ pro C#'
+                - name: Poskytovatel LINQ pro C#
                   href: dev-tools/linq-provider-c.md
                 - name: Psaní pravidel osvědčených postupů
                   href: dev-tools/author-best-practice-rules.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++ třidy atributů
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Porovnání X++ a C#'
+                    - name: Porovnání X++ a C#
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Syntaxe X++
                       href: dev-ref/xpp-syntax.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Architektura zabezpečení
                   href: sysadmin/security-architecture.md
+                - name: Šifrování v aplikacích Finance and Operations
+                  href: sysadmin/encryption.md
                 - name: Nastavení časového limitu nečinné relace
                   href: sysadmin/session-idle-timeout.md
                 - name: Výchozí sestavy zabezpečení
