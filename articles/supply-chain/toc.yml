@@ -589,6 +589,8 @@
                   href: cost-management/inventory-value-report-storage.md
                 - name: Uložení sestavy stáří zásob
                   href: cost-management/inventory-aging-report-storage.md
+                - name: Příklady a logika sestavy stáří zásob
+                  href: cost-management/inventory-aging-report.md
             - name: Účetnictví pro výrobu
               items:
                 - name: Výpočty kusovníku
@@ -707,7 +709,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Přidání finančních dimenzí k měrným systémům agregace
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vytváření analytických sestav pomocí Power BI Desktop
+                - name: Vytváření analytických sestav pomocí PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
