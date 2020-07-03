@@ -3,7 +3,7 @@ title: Přehled zákaznického portálu pro Dynamics 365 Supply Chain Management
 description: Toto téma představuje zákaznický portál a vysvětluje, kdo by ho měl používat a jak to funguje.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413941"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456919"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Přehled zákaznického portálu pro Dynamics 365 Supply Chain Management
 
@@ -37,6 +37,12 @@ Zákaznický portál je šablona [portálů Power Apps](https://docs.microsoft.c
 
 > [!NOTE]
 > Dokumentace zákaznického portálu je určena administrátorům, přizpůsobitelům a systémovým integrátorům, kteří nastaví zákaznický portál pro instalaci Supply Chain Management. Používá výrazy _zákazník_ a _uživatel_, avy popsal lidi, kteří jsou zákazníky organizace provozující Supply Chain Management a kteří budou používat samotný finální portál.
+
+## <a name="video"></a>Video
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+Video [Přehled šablony zákaznického portálu v Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (viz výše) je součástí [seznamu skladeb Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) k dispozici na YouTube.
 
 ## <a name="who-should-use-it"></a>Kdo by to měl použít?
 
@@ -58,6 +64,6 @@ Zákaznický portál je poskytován jako šablona portálů Power Apps. Závisí
 
 [Dvojí zapisování](https://docs.microsoft.com/powerapps/maker/portals/overview) je předpřipravený produkt infrastruktury poskytující prakticky v reálném čase mezi aplikacemi řízených modelem v aplikacích Dynamics 365 a Finance and Operations. Dvojí zapisování poskytuje obousměrnou integraci mezi aplikacemi Finance and Operations a Common Data Service. Proto poskytuje integrované uživatelské prostředí pro celé aplikace. Zákaznický portál závisí na entitách, které jsou synchronizovány s duálním zápisem. Předtím, než se na zákaznickém portálu mohou objevit data z Supply Chain Management, musí být pro všechny příslušné entity povoleny duální zápisy.
 
-![![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")](media/customer-portal-elements.png "Customer portal dependencies")
+![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")
 
 Zákaznický portál slouží jako výchozí bod pro organizace, které chtějí používat portály Power Apps k vytvoření externě orientovaného webu, který používá data z instalace Supply Chain Management. Pomáhá organizacím propojit dvojí zápis, Supply Chain Management a portály Power Apps.

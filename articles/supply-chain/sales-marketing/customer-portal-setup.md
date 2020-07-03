@@ -3,7 +3,7 @@ title: Instalace, nastavení a aktualizace zákaznického portálu
 description: V tomto tématu jsou uvedeny podrobné informace o licencích a pokyny k nastavení zákaznického portálu.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413942"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435600"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalace, nastavení a aktualizace zákaznického portálu
 
@@ -35,7 +35,7 @@ Chcete-li implementovat zákaznický portál, musíte mít následující licenc
 
 Zákaznický portál závisí na portálech Power Apps a duálním zápisu, jak ukazuje následující obrázek.
 
-![![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")](media/customer-portal-elements.png "Customer portal dependencies")
+![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")
 
 Na rozdíl od jiných funkcí Supply Chain Management sídlí šablona zákaznického portálu v portálech Power Apps. Zákaznický portál je proto omezen funkcemi a možnostmi, které poskytují portály Power Apps a entity v dvojím zápisu.
 
@@ -59,7 +59,7 @@ Než začnete, ujistěte se, že jste již dokončili [požadované nastavení](
 
 1. Přejděte na [make.powerapps.com](https://make.powerapps.com/).
 2. Ujistěte se, že používáte prostředí, ve kterém jste povolili duální zápis.
-3. Na kartě **Vytvořit** přejděte dolů do sekce **Začít od šablony** a vyberte šablonu s názvem **Supply Chain Management Customer**.
+3. Na kartě **Vytvořit** přejděte dolů do sekce **Začít od šablony** a vyberte šablonu s názvem **Zákaznický portál**.
 4. Postupujte podle pokynů na obrazovce.
 
 Po dokončení zřizování máte přístup na zákaznický portál v části **Vaše aplikace** na **Domovské** stránce.
@@ -71,7 +71,7 @@ Po dokončení zřizování máte přístup na zákaznický portál v části **
 
 Další funkce mohou být přidány do zákaznického portálu později. Jakékoli změny, které společnost Microsoft provede u základních komponent řešení, se automaticky objeví ve vašem prostředí. Web poskytnutý ve vašem prostředí však nebude automaticky odrážet změny provedené v konfiguračních datech. Tyto změny budete muset použít ručně tak, že získáte kód z nové šablony a sloučíte jej s poskytnutým webem.
 
-## <a name="resources"></a>Prostředky
+## <a name="additional-resources"></a>Další prostředky
 
 Chcete-li se dozvědět, jak můžete nastavit a přizpůsobit zákaznický portál, měli byste začít prostudováním následující dokumentace pro základní technologie:
 

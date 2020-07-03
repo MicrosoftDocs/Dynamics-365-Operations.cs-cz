@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c386025843edef83d229a42d3f2314678fadae20
-ms.sourcegitcommit: beddfba095c23b3265f0004f5124c4e9dc6404cc
+ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411923"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443457"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
 
@@ -79,7 +79,10 @@ Funkce protokolování databáze umožňuje určit, které tabulky a pole mají 
 
 ## <a name="buy-and-sell-leave-in-preview-june-1"></a>Koupit a prodat volno (v náhledu 1. června)
 
-Některé organizace poskytují výhodu, která zaměstnancům umožňuje nakupovat nebo prodávat dovolenou. Tento proces je často řízen ručně. Tato funkce poskytuje automatizovanější způsob správy zásad a požadavků oddělení lidských zdrojů a pomáhá eliminovat chyby a zefektivnit proces správy dovolené.
+Některé organizace poskytují výhodu, která zaměstnancům umožňuje nakupovat nebo prodávat dovolenou. Tento proces je často řízen ručně. Tato funkce poskytuje automatizovanější způsob správy zásad a požadavků oddělení lidských zdrojů a pomáhá eliminovat chyby a zefektivnit proces správy dovolené. Další informace naleznete zde:
+
+- [Správa zásad nákupu a prodeje pracovního volna](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Nákup a prodej pracovního volna](hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Entity právy datových rámců (DMF) pro správu zaměstnaneckých výhod
  

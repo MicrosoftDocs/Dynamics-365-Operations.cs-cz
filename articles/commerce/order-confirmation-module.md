@@ -3,7 +3,7 @@ title: Modul Detaily objednávky
 description: Toto téma popisuje moduly pro detaily objednávek a popisuje, jak je používat v aplikaci Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026010"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464923"
 ---
 # <a name="order-details-module"></a>Modul Detaily objednávky
 
@@ -35,11 +35,11 @@ Toto téma popisuje moduly pro detaily objednávek a popisuje, jak je používat
 
 Po zadání objednávky lze pomocí modulu detailů objednávky zobrazit podrobnosti o potvrzení objednávky. Zobrazuje ID potvrzení objednávky, kontaktní informace z objednávky a další podrobnosti o objednávce, jako jsou například zakoupené položky, informace o platbách a způsob expedice.
 
-## <a name="order-confirmation-module-properties"></a>Vlastnosti modulu potvrzení objednávky
+## <a name="order-details-module-properties"></a>Vlastnosti modulu podrobností objednávky
 
-| Název vlastnosti  | Hodnoty | Popis |
+| Název vlastnosti  | Hodnoty | popis |
 |----------------|--------|-------------|
-| Záhlaví        | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | V modulu potvrzení objednávky může být k dispozici záhlaví. Standardně se pro značku nadpisu používá označení **H2**. Značku však lze změnit tak, aby vyhovovala požadavkům na usnadnění. |
+| Nadpis        | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | V modulu podrobností objednávky může být k dispozici záhlaví. Standardně se pro značku nadpisu používá označení **H2**. Značku však lze změnit tak, aby vyhovovala požadavkům na usnadnění. |
 | Kontaktní číslo | Text | Pro případ otázek souvisejících s objednávkami lze použít číslo kontaktní osoby. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduly, které lze použít na stránce potvrzení objednávky
@@ -49,24 +49,28 @@ Po vytvoření stránky s podrobnostmi objednávky můžete kromě modulu podrob
 - **Modul doporučení** – modul doporučení lze přidat na stránku detailů objednávky s cílem navrhovat ostatní produkty odběrateli.
 - **Marketingové moduly** – kterýkoliv marketingový modul lze přidat na stránku podrobnosti objednávky a zobrazit tak marketingový obsah.
 
-## <a name="create-an-order-details-page-module"></a>Vytvoření modulu stránky detailů objednávky
+## <a name="add-an-order-details-module-to-a-page"></a>Přidání modulu podrobností objednávky na stránku
 
-1. Vytvořte šablonu stránky s názvem **Šablona Detaily objednávky**.
-1. V úseku **Hlavní** výchozí stránky přidejte modul detailů objednávky.
-1. V modulu detailů objednávky přidejte modul doporučení.
-1. Uložení a náhled šablony. Modul detailů objednávky nebude zobrazen, protože vyžaduje kontext pro číslo potvrzení objednávky.
-1. Dokončete úpravy šablony a publikujte ji.
-1. Šablonu detailů objednávky, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **stránka detailů objednávky**.
-1. Přidejte výchozí stránku do osnovy stránky.
-1. V oblasti **Záhlaví** přidejte fragment záhlaví.
-1. V oblasti **Zápatí** přidejte fragment zápatí.
-1. V úseku **Hlavní** přidejte modul detailů objednávky.
-1. V podokně vlastností modulu detailů objednávky přidejte záhlaví **Detaily objednávky**.
-1. Pod modulem detailů objednávky přidejte modul doporučení a nakonfigurujte jej tak, aby používal nastavení **Nové** a **Nejlépe prodávané**.
-1. Uložte stránku a zobrazte náhled.
-1. Dokončete úpravy stránky a publikujte ji.
+Chcete-li přidat modul podrobností objednávky na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-## <a name="additional-resources"></a>Další zdroje
+1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
+1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte název **šablony podrobností objednávky** a vyberte **OK**.
+1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Podrobnosti objednávky** a poté klikněte na tlačítko **OK**.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** k zobrazení náhledu šablony. Modul detailů objednávky nebude zobrazen, protože vyžaduje kontext pro číslo potvrzení objednávky.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
+1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona podrobností objednávky**. V části **Název stránky** zadejte **Stránka podrobností objednávky** a poté klikněte na tlačítko **OK**.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Podrobnosti objednávky** a poté klikněte na tlačítko **OK**.
+1. V podokně podrobností modulu podrobností objednávky vyberte **Nadpis** vedle symbolu tužky.
+1. V poli **Text nadpisu** dialogového okna **Nadpis** zadejte text nadpisu **Podrobnosti o objednávce** a vyberte **OK**.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled startovací sady](starter-kit-overview.md)
 

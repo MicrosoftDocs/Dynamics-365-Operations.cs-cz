@@ -3,7 +3,7 @@ title: Přehled clientelingu
 description: Toto téma obsahuje přehled nových funkcí clientelingu dostupných v aplikaci obchodu.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4f045f8509a6b5027fd3cf8e5ca9e382457a5e83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021832"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456500"
 ---
 # <a name="clienteling-overview"></a>Přehled clientelingu
 
@@ -115,7 +115,7 @@ Pro nastavení integrace postupujte následujícím způsobem.
 3. Vytvořte úložiště klíčů Azure a uložte tajný klíč aplikace. Pokyny naleznete v tématu [Rychlý start: nastavení a načtení tajného klíče z Azure Key Vault pomocí portálu Azure](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Zapněte přístup k Azure Key Vault z aplikace Commerce. Chcete-li dokončit tento krok, musíte mít ID aplikace a tajný klíč. Může se jednat o stejnou aplikaci, kterou jste vytvořili v kroku 1, nebo se může jednat o novou aplikaci. (Jinak řečeno můžete použít aplikaci, kterou jste vytvořili v kroku 1, pro přístup ke úložišti klíčů i pro přístup ke službě Customer Insights, nebo můžete vytvořit jedinečnou aplikaci pro každý typ přístupu.) Pokyny naleznete v části [Základní pověření v Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. V programu Headquarters přejděte do **Správa systému \> Nastavení \> Parametry úložiště klíčů** a zadejte požadované informace o úložišti klíčů. Poté v poli **Klient úložiště klíčů** zadejte ID aplikace, které jste použili v kroku 4, aby aplikace Commerce mohla používat tajné klíče v úložišti klíčů.
-6. Chcete-li přidat aplikaci vytvořenou v kroku 1 do seznamu bezpečných aplikací (někdy označovaných jako seznam povolených), přejděte na Customer Insights a poskytněte přístup **Zobrazení** k aplikaci. Pokyny naleznete v tématu [Oprávnění](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Chcete-li přidat aplikaci vytvořenou v kroku 1 do seznamu bezpečných aplikací (někdy označovaných jako bezpečný seznam), přejděte na Customer Insights a poskytněte přístup **Zobrazení** k aplikaci. Pokyny naleznete v tématu [Oprávnění](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. V aplikaci Commerce na stránce **Parametry Commerce** na kartě **Clienteling** na záložce s náhledem **Dynamics 365 Customer Insights** proveďte následující kroky:
 
     1. V poli **ID aplikace** zadejte ID aplikace, kterou jste použili v kroku 1.

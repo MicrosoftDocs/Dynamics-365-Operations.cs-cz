@@ -3,7 +3,7 @@ title: Metoda FIFO s fyzickou hodnotou a označením
 description: Metoda (FIFO, First in, First out) představuje skladový model, ve kterém jsou nejprve vydávány první uskladněné položky. Finančně aktualizované výdeje ze skladu jsou vyrovnány oproti prvním finančně aktualizovaným příjmům do skladu na základě finančního data skladové transakce.
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201748"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454619"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>Metoda FIFO s fyzickou hodnotou a označením
 
@@ -49,8 +49,8 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 -   4a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
 -   4b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
 -   5a. Fyzický výdej 1 kusu za 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
--   5b. Finanční výdej 1 kusu za 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
--   6. Je provedena uzávěrka skladu. Podle metody FIFO bude první finančně zaúčtovaný výdej vyrovnán prvním finančně zaúčtovaným příjmem. K transakci výdeje bude vytvořena úprava ve výši 10 Kč.
+-   5b. Finanční výdej 1 kusu za nákladovou cenu 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
+-   6. Je provedena uzávěrka skladu. Podle metody FIFO bude první finančně zaúčtovaný výdej vyrovnán prvním finančně zaúčtovaným příjmem. Pro transakci výdeje bude provedena úprava 5,00 Kč.
 
 Nová průběžná průměrná nákladová cena představuje průměr finančně zaúčtovaných transakcí. Následující obrázky ukazují účinky skladového modelu FIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
 
