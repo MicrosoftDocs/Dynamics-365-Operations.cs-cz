@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268740"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457559"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -36,7 +36,55 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 > [!NOTE]
 > Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
+
+> [!NOTE]
+> Verze 10.0.13 ještě nebyla vydána. Tyto informace slouží pouze pro účely plánování. Obsah a funkce pro verzi 10.0.13 se mohou změnit. Další informace o verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Upgrade tří knihoven komponent jQuery 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Jsou aktualizovány tři knihovny komponent jQuery pro opravy zabezpečení a udržování měny.   
+| **Nahrazeno jinou funkcí?**   | Ovlivněny jsou následující knihovny: jQuery (do verze 3.5.0 od verze 2.1.4), jQuery UI (do verze 1.12.1 od verze 1.11.4), jQuery qTip (do verze 3.0.3 od verze 2.2.1). Pokyny pro migraci poskytuje online jQuery.  |
+| **Ovlivněné oblasti produktu**         | Rozšiřitelné ovládací prvky, konkrétně vlastní kód JavaScript využívající zastaralá nebo odstraněná rozhraní API. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | V aktualzaci 10.0.13/Platform update 37 mohou zákazníci volitelně přecházet k nejnovějším knihovnám povolením funkce Upgradovat tři knihovny komponent jQuery. Přechod na nové knihovny bude povinný s vydáním z dubna 2021, aby byl k dispozici čas na migraci příslušných rozhraní API.   |
+
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.12 aplikací Finance and Operations
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Rozšíření formuláře ovládacího prvku mřížky nebo skupiny obsahující neplatné odkazy na pole
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Vlastnost datové skupiny v mřížce nebo skupinových ovládacích prvcích se používá k automatickému zobrazení všech polí skupiny polí. Ovládací prvek mřížky nebo skupiny přidaný pomocí rozšíření může obsahovat pole, která již nejsou definována ve skupině polí, nebo to mohou být chybějící pole, která jsou definována ve skupině polí. To může způsobit nekonzistentní chování za běhu. Aktualizace platformy pro verze 10.0.12 aplikací Finance and Operations nyní kategorizují tento problém jako *varování* kompilátoru. Chcete-li tento problém vyřešit, otevřete rozšíření formuláře a uložte je.
+| **Nahrazeno jinou funkcí?**   | Toto varování kompilátoru bude v budoucí aktualizaci nahrazeno chybou kompilátoru. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Varování kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.12 aplikací Finance and Operations. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.11 aplikací Finance and Operations
+
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicitní bezpečné seznamy pro samoobslužná prostředí
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Proces přesunu IP do bezpečných seznamů se změnil. Samoobsluha již nepodporuje bezpečné seznamy IP. |
+| **Nahrazeno jinou funkcí?**   | Další informace získáte v tématu [Konfigurace podmíněného přístupu Azure Active Directory](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Ovlivněné oblasti produktu**         | Zabezpečení |
+| **Možnost nasazení**              | Cloud |
+| **Stav**                         | **Zastaralé:** Tato funkce je plně zastaralá pro samoobslužná nasazení. |
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Chcete-li podporovat nejnovější verze Visual Studio, je třeba provést určité změny v rozšířeních X ++ pro Visual Studio. Tyto změny nejsou kompatibilní s Visual Studio 2015. |
+| **Nahrazeno jinou funkcí?**   | Visual Studio 2017 nahradí Visual Studio 2015 jako nasazená a požadovaná verze. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Jakmile bude oznámena dostupnost nových virtuálních počítačů (VM) s Visual Studio 2017 ohlášena, stávající VM pouze s Visual Studio 2015 budou muset být znovu nasazeny pomocí vlny vydání 1 z roku 2021. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Skupiny polí obsahující neplatné odkazy na pole
 

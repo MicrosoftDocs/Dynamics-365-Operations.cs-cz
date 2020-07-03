@@ -1,6 +1,6 @@
 ---
-title: Povolení ADLS v prostředí Dynamics 365 Commerce
-description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage (ADLS) pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
+title: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
+description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 author: bebeale
 manager: AnnBe
 ms.date: 04/13/2020
@@ -19,57 +19,57 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 83b829306c2da2d10924e547fd3cac6ae6781db3
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259741"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404179"
 ---
-# <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Povolení ADLS v prostředí Dynamics 365 Commerce
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage (ADLS) pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
+V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 
 ## <a name="overview"></a>Přehled
 
-V řešení Dynamics 365 Commerce jsou všechny informace o produktech a transakcích sledovány v úložišti entit prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 (ADLS) vlastněnému zákazníkem.
+V řešení Dynamics 365 Commerce jsou všechny informace o produktech a transakcích sledovány v úložišti entit prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 vlastněnému zákazníkem.
 
-Protože ADLS je nakonfigurováno v prostředí, jsou všechna potřebná data zrcadlena z úložiště entit a přitom jsou stále chráněna a pod kontrolou odběratele.
+Protože Azure Data Lake Storage je nakonfigurováno v prostředí, jsou všechna potřebná data zrcadlena z úložiště entit a přitom jsou stále chráněna a pod kontrolou odběratele.
 
-Pokud jsou v prostředí také povolena doporučení produktu nebo přizpůsobená doporučení, bude mít zásobník doporučení produktu přístup k vyhrazené složce v ADLS, aby bylo možné načíst data odběratele a vypočítávat doporučení na jejich základě.
+Pokud jsou v prostředí také povolena doporučení produktu nebo přizpůsobená doporučení, bude mít zásobník doporučení produktu přístup k vyhrazené složce v Azure Data Lake Storage, aby bylo možné načíst data odběratele a vypočítávat doporučení na jejich základě.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Zákazníci musí mít ADLS nakonfigurované v předplatném Azure, které vlastní. Toto téma nezahrnuje nákup předplatného Azure nebo nastavení účtu úložiště s podporou ADLS.
+Zákazníci musí mít Azure Data Lake Storage nakonfigurované v předplatném Azure, které vlastní. Toto téma nezahrnuje nákup předplatného Azure nebo nastavení účtu úložiště s podporou Azure Data Lake Storage.
 
-Další informace o ADLS naleznete v [oficiální dokumentaci ADLS](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Další informace o Azure Data Lake Storage naleznete v [oficiální dokumentaci Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Kroky konfigurace
 
-V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení ADLS v prostředí ve vztahu k doporučením produktu.
-Podrobnější přehled kroků potřebných k povolení ADLS naleznete v tématu [Nastavení úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení Azure Data Lake Storage v prostředí ve vztahu k doporučením produktu.
+Podrobnější přehled kroků potřebných k povolení Azure Data Lake Storage naleznete v tématu [Nastavení úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
-### <a name="enable-adls-in-the-environment"></a>Povolení ADLS v prostředí
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Povolení Azure Data Lake Storage v prostředí
 
 1. Přihlaste se k portálu administrativního systému prostředí.
 1. Vyhledejte **Systémové parametry** a přejděte na kartu **Datová připojení**. 
 1. Nastavte možnost **Povolit integraci s Data Lake** na **Ano**.
 1. Nastavte možnost **Postupná aktualizace Data Lake** na **Ano**.
 1. Dále zadejte následující požadované informace:
-    1. **ID aplikace** // **Tajný klíč aplikace** // **Název DNS** - Je třeba se připojit ke KeyVault, kde je uložen tajný klíč ADLS.
-    1. **Název tajného klíče** - Název tajného klíče uloženého v KeyVault a použitého k ověření s ADLS.
+    1. **ID aplikace** // **Tajný klíč aplikace** // **Název DNS** - Je třeba se připojit ke KeyVault, kde je uložen tajný klíč Azure Data Lake Storage.
+    1. **Název tajného klíče** - Název tajného klíče uloženého v KeyVault a použitého k ověření s Azure Data Lake Storage.
 1. Uložte své změny v levém horním rohu stránky.
 
-Následující obrázek znázorňuje příklad konfigurace ADLS.
+Následující obrázek znázorňuje příklad konfigurace Azure Data Lake Storage.
 
-![Příklad konfigurace ADLS](./media/exampleADLSConfig1.png)
+![Příklad konfigurace Azure Data Lake Storage](./media/exampleADLSConfig1.png)
 
-### <a name="test-the-adls-connection"></a>Test ADLS připojení
+### <a name="test-the-azure-data-lake-storage-connection"></a>Test připojení Azure Data Lake Storage
 
 1. Otestujte připojení ke KeyVault pomocí odkazu **Testovat Azure Key Vault**.
-1. Otestujte připojení k ADLS pomocí odkazu **Testovat úložiště Azure**.
+1. Otestujte připojení k Azure Data Lake Storage pomocí odkazu **Testovat úložiště Azure**.
 
 > [!NOTE]
 > Pokud se testy nezdaří, zkontrolujte správnost výše popsaných informací o KeyVault a potom to zkuste znovu.
@@ -86,7 +86,7 @@ Následující obrázek znázorňuje příklad úložiště entit s povolenou au
 
 ![Příklad úložiště entit s povolenou automatickou aktualizací](./media/exampleADLSConfig2.png)
 
-ADLS je nyní nakonfigurováno pro prostředí. 
+Azure Data Lake Storage je nyní nakonfigurováno pro prostředí. 
 
 Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporučení produktu a individuální nastavení](enable-product-recommendations.md) pro dané prostředí.
 

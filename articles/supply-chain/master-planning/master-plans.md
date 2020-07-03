@@ -3,7 +3,7 @@ title: Přehled hlavních plánů
 description: Používání různých hlavních plánů na podporu každodenního provozu své společnosti, simulovat různé strategie plánování,které chcete monitorovat a zavádět podnikovou pravidla, týkající se například zásad interní výkonnosti nebo spokojenosti zákazníka.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56c9c3f910c5c5386cdab25566b43198288eb419
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
+ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213531"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409515"
 ---
 # <a name="master-plans-overview"></a>Přehled hlavních plánů
 
@@ -35,7 +35,7 @@ Používání různých hlavních plánů na podporu každodenního provozu své
 Hlavní plány můžete nakonfigurovat na stránce **Hlavní plány**.
 
 Existují dva typy plánů:
--   **Statický plán** – hlavní plánovací výpočet používá aktuální data pro vygenerování plánu čistých požadavků. Tento plán zůstává nezměněný do následujícího spuštění hlavního plánování. Jedná se o operační plán, který může používat různý personál společnosti, například nákupčí nebo plánovač výroby a zakládat na něm svá rozhodnutí a provádět každodenní úkoly a činnosti.
+-   **Statický plán** – hlavní plánovací výpočet používá aktuální data pro vygenerování plánu čistých požadavků. Tento plán zůstává nezměněný do následujícího spuštění hlavního plánování nebo ruční změny plánu. Jedná se o operační plán, který může používat různý personál společnosti, například nákupčí nebo plánovač výroby a zakládat na něm svá rozhodnutí a provádět každodenní činnosti.
 -   **Dynamický plán** – Tento plán začíná se stejným plánem čistých požadavků, který byl vygenerován hlavním plánováním. Dynamický plán však můžete aktualizovat vždy při změně hlavních dat. To může být například při vytvoření nové prodejní objednávky. To vám umožní sledovat síť změnových příkazů dostupnost položky bez narušení statického plánu, který používají ostatní pracovníci pro své pracovní procesy.
 
 Společnost si může vybrat práci pouze s dynamickým plánem nebo používat statický i dynamický plán. Kromě toho můžete nakonfigurovat jakýkoliv hlavní plán a zohlednit tak specifickou strategii nebo vyřešit problém. Příklady jsou následující:

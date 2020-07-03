@@ -3,7 +3,7 @@ title: Ručně vytvořit uspořádaná doporučení
 description: V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b00c83355850f6249068749096b011f805b37e3c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b866704b419fb07dcf1ddd386af2f7d6cfa02e2
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154311"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404109"
 ---
 # <a name="manually-create-curated-recommendations"></a>Ručně vytvořit uspořádaná doporučení
 
@@ -38,7 +38,7 @@ Seznamy vybraných produktů jsou kolekce jednotlivých položek obsahu vytvoře
 
 Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 
-1. Přejděte na **Retail and Commerce &gt; Doporučení produktů &gt; Seznamy doporučení**.
+1. Přejděte na **Retail a Commerce &gt; Doporučení produktů &gt; Seznamy doporučení**.
 1. Zvolte **Nové**.
 1. Zadejte hodnotu do pole **ID seznamu**.
 1. Zadejte hodnotu do pole **Název seznamu**.
@@ -56,7 +56,7 @@ Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 
 [Přehled doporučení produktu](product-recommendations.md)
 
-[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+[Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 

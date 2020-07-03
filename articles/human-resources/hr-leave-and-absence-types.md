@@ -3,12 +3,12 @@ title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198043"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428586"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
 
@@ -56,7 +56,9 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 8. V části **Omezit přístup k vybraným rolím** vyberte, zda chcete omezit přístup. Poté vyberte role zabezpečení v části **role zabezpečení pro tento typ pracovního volna**. Role zabezpečení jsou definovány ve workflowu vybraném pod položkou **ID workflowu** dříve v tomto postupu.
 
-9. Zvolte **Uložit**.
+9. V možnosti **Vztahy přerušení** zvolte, zda chcete, aby tento typ dovolené buď pozastavil jiný typ dovolené, nebo aby byl pozastaven jiným typem dovolené. Pokud je pro typ přerušení volna podán požadavek na pracovní volno, automaticky se pro tento typ dovolené vytvoří přerušení volna. 
+
+10. Zvolte **Uložit**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurace pravidel typů volna
 
@@ -66,16 +68,15 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
    Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
    
-## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
-
-Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. Zvolte typ pracovního volna pro převod zůstatků, které mají být převedeny do. Můžete také vytvořit nový typ odchodu pro převedení. 
-
+ 3. Nastavte **Typ převodu pracovního volna** pro typ volna. Pokud vyberete tuto možnost, veškeré zůstatky k převodu budou převedeny na zadaný typ volna. Do plánu volna a nepřítomnosti musí být rovněž zahrnut typ převodu volna. 
+ 
+ 4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Můžete také nastavit datum účinnosti pravidla vypršení platnosti. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené. 
+ 
+ 
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
+- [Přerušit pracovní volno](hr-leave-and-absence-suspend-leave.md)
+

@@ -3,7 +3,7 @@ title: Vytvoření e-mailových šablon pro transakční události
 description: Toto téma popisuje, jak vytvářet, odesílat a konfigurovat e-mailové šablony pro transakční události v aplikaci Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5cd928e90654cca639ed1e163be9192c0dffd9ad
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367168"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416572"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -40,7 +40,7 @@ Než budete moci mapovat konkrétní transakční událost na e-mailovou šablon
 
 Šablonu e-mailu vytvoříte takto:
 
-1. V Commerce Headquarters přejděte na **Retail and Commerce \> Nastavení Headquarters \> Šablony e-mailu organizace**.
+1. V Commerce Headquarters přejděte do nabídky **E-mailové šablony organizace**, která je v **Retail a Commerce \> Nastavení centrály \> E-mailové šablony organizace** nebo **Správa organizace \> Nastavení \> E-mailové šablony organizace**.
 1. Zvolte **Nové**.
 1. Pod možností **Obecné** nastavte následující pole:
 
@@ -182,7 +182,7 @@ Poté, co jste vytvořili a otestovali HTML pro tělo své zprávy, musí být o
 
 Chcete-li nahrát novou nebo upravenou HTML e-mailovou šablonu, postupujte takto.
 
-1. V Commerce Headquarters přejděte na **Retail and Commerce \> Nastavení Headquarters \> Šablony e-mailu organizace**.
+1. V Commerce Headquarters přejděte na **Retail a Commerce \> Nastavení Headquarters \> Šablony e-mailu organizace**.
 1. Vyberte řádek pro jazyk, pro který chcete přidat nebo nahradit HTML. Případně vyberte **Nový** pro vytvoření řádku pro nový jazyk.
 1. Vyberte možnost **Upravit**.
 1. V zobrazeném dialogovém okně vyberte **Procházet**. Vyhledejte dokument HTML, který chcete odeslat, vyberte ho a poté vyberte **Otevřít**.

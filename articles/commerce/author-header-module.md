@@ -3,7 +3,7 @@ title: Modul záhlaví
 description: Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261437"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411192"
 ---
 # <a name="header-module"></a>Modul záhlaví
-
 
 [!include [banner](includes/banner.md)]
 
@@ -36,6 +35,10 @@ Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví 
 V aplikaci Dynamics 365 Commerce se záhlaví stránky skládá z několika modulů, jako je například záhlaví, navigační nabídka, hledání, reklamní banner a moduly souhlasu se soubory cookie. 
 
 Modul záhlaví obsahuje logo webu, odkazy na navigační hierarchii, odkazy na další stránky na webu, symbol košíku, symbol požadovaných položek, přihlašovací možnosti a vyhledávací panel. Modul záhlaví je automaticky optimalizován pro zařízení, na kterém je stránka prohlížena (jinými slovy desktopové nebo mobilní zařízení). Například v mobilním zařízení je navigační panel sbalen do tlačítka **Nabídka** (což je někdy nazýváno *hamburgerová nabídka*).
+
+Následující obrázek znázorňuje příklad modulu záhlaví na domovské stránce.
+
+![Příklad modulu záhlaví](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Vlastnosti modulu záhlaví
 
@@ -50,31 +53,40 @@ Vlastnost **Odkazy na můj účet** lze použít k definování stránek účtů
 Následující moduly lze použít v modulu záhlaví:
 
 - **Navigační nabídka** – Navigační nabídka představuje hierarchii navigace kanálu a další statické navigační odkazy. Hierarchii navigace kanálu lze nakonfigurovat v aplikaci Dynamics 365 Commerce. Navigační nabídka obsahuje vlastnost **Zdroj navigace**, která se používá k určení položek navigační nabídky serveru Retail a statických položek nabídky jako zdroje. Jsou-li statické položky nabídky určeny jako zdroj, lze poskytnout relativní odkazy na jiné stránky na webu. Konfigurované položky jsou pak zobrazeny jako navigace v záhlaví. 
+
 - **Vyhledávání** – Vyhledávací modul umožňuje uživatelům zadat hledané termíny, aby mohli vyhledávat produkty. Adresa URL výchozí stránky pro vyhledávání a parametry vyhledávacího dotazu musí být zadány v **Nastavení webu \> Rozšíření**. Modul vyhledávání obsahuje vlastnosti, které umožňují potlačit tlačítko hledání nebo popis podle potřeby. Modul vyhledávání také podporuje možnosti automatického navrhování, například výsledky hledání produktů, klíčových slov a kategorií.
+
 - **Ikona košíku** – ikona košíku představuje ikonu nákupního košíku, která zobrazuje počet položek v košíku v kterémkoli daném okamžiku. Další informace naleznete v tématu [Modul s ikonou košíku](cart-icon-module.md).
 
 ## <a name="create-a-header-module-for-a-page"></a>Vytvoření modulu záhlaví stránky
 
 Chcete-li vytvořit modul záhlaví, postupujte následujícím způsobem.
 
-1. Vytvořte fragment s názvem **Fragment záhlaví** a do něj přidejte modul kontejneru.
-1. V podokně vlastností modulu kontejner nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
-1. Přidejte moduly propagačních bannnerů a souhlas se soubory cookie do modulu kontejneru.
-1. Do fragmentu přidejte další modul kontejneru a nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
-1. Přidejte modul záhlaví do druhého modulu kontejneru.
-1. Do pozice **Navigační nabídky** modulu záhlaví přidejte modul navigační nabídka. 
-1. V podokně vlastností modulu navigační nabídka konfigurujte vlastnosti modulu navigační nabídka.
-1. Do pozice **Vyhledávání** modulu záhlaví přidejte modul vyhledávání. 
-1. V podokně vlastností modulu vyhledávání konfigurujte vlastnosti modulu vyhledávání. 
-1. Ve slotu **Ikona nákupního košíku** modulu záhlaví přidejte modul ikony vozíku. 
-1. V podokně vlastností modulu ikony košíku konfigurujte vlastnosti modulu ikony košíku. Chcete-li, aby ikona košíku při přechodu myší zobrazila košík, vyberte **True** pro možnost **Zobrazit mini košík**.
-1. Uložte fragment stránky, dokončete úpravy a publikujte ji. 
-
+1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. V dialogovém okně **Nový fragment stránky** vyberte modul **Kontejner**, zadejte název fragmentu stránky a poté klepněte na tlačítko **OK**.
+1. Vyberte pozici **Výchozí kontejner** a poté v podokně vlastností napravo nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
+1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte moduly **Propagační banner** a **Souhlas se soubory cookie** a poté klikněte na tlačítko **OK**.
+1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. Vyberte pozici **Kontejner** a poté v podokně vlastností napravo nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Záhlaví** a poté klikněte na tlačítko **OK**.
+1. V pozici **Navigační nabídka** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Navigační nabídka** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu navigační nabídky dle potřeby nakonfigurujte vlastnosti.
+1. V pozici **Vyhledávání** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Vyhledávání** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu vyhledávání dle potřeby nakonfigurujte vlastnosti.
+1. V pozici **Ikona nákupního košíku** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Ikona nákupního košíku** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu ikony nákupního košíku dle potřeby nakonfigurujte vlastnosti. Pokud chcete, aby ikona nákupního košíku zobrazovala souhrn nákupního košíku (označovaný také jako mini košík), když na ni uživatelé umístí kurzor myši, vyberte **Zobrazit mini košík**.
+1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 
 Chcete-li zajistit, aby se záhlaví zobrazilo na každé stránce, postupujte podle následujících kroků pro všechny šablony stránek, které jsou pro daný web vytvořeny.
 
-1. Do pozice **Hlavní** na výchozí stránce přidejte do záhlaví fragment záhlaví stránky obsahující modul záhlaví.
-1. Uložte šablonu, dokončete úpravy a publikujte ji.
+1. V pozici **Záhlaví** modulu **Výchozí stránka** přidejte fragment zápatí, který jste vytvořili.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 ## <a name="additional-resources"></a>Další prostředky
 

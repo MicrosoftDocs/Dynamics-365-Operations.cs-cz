@@ -3,7 +3,7 @@ title: Elektronické výkaznictví – Používání finančních dimenzí jako 
 description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142517"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406490"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 3 - návrh sestavy)
 
@@ -94,7 +94,8 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 58. Klikněte na tlačítko OK.
 59. Klikněte na možnost Přidat atributy.
 60. Do pole Název zadejte Popis.
-61. Klikněte na tlačítko OK.
+61. Klepněte na tlačítko OK.
+![Stránka návrháře operací ER](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mapování prvků sestavy na zdroje dat
 1. Klikněte na kartu Mapování.
@@ -141,6 +142,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 42. Ve stromovém zobrazení vyberte 'Kořen: Prvek XML\Společnost: Atribut XML'.
 43. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Společnost: Řetězec'.
 44. Klikněte na možnost Vazba.
-45. Klikněte na položku Uložit.
+45. Klepněte na tlačítko Uložit.
 46. Zavřete stránku.
+![Stránka návrháře operací ER](../media/er-financial-dimensions-guides-format2.png)
 

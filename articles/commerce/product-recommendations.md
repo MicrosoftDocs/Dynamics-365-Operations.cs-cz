@@ -3,7 +3,7 @@ title: Přehled doporučení produktu
 description: V tomto tématu jsou obecné informace o doporučování produktů. Doporučení produktů umožňují zákazníkům snadno a rychle vyhledat produkty, které chtějí, a také produkty, které původně nechtěly nakupovat.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154219"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404341"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
@@ -40,7 +40,7 @@ V platformě e-Commerce doporučení produktů využívají technologie strojov�
 
 Služba doporučení produktů používá technologie umělé inteligence a strojového učení (AI-ML) následujícím způsobem:
 
-- Data ve formátu vyžadovaném službou doporučení jsou extrahována z pracovní databáze Commerce a odeslána do úložiště Azure Data Lake Storage (ADLS) nebo úložiště entit.
+- Data ve formátu vyžadovaném službami Recommendation jsou extrahována z pracovní databáze Commerce a odeslána do Azure Data Lake Storage nebo úložiště entit.
 - Služba doporučení používá tato uložená data k trénování modelů doporučení pro seznamy **Lidem se také líbí**, **Často zakoupené společně**, **Nový**, **Nejprodávanější** a **Trendující**.
 
 ## <a name="scenarios"></a>Scénáře
@@ -67,7 +67,7 @@ V následující tabulce jsou popsány různé typy automatických doporučení 
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+[Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 

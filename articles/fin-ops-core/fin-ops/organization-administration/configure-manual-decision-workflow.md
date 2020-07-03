@@ -3,7 +3,7 @@ title: Konfigurace ručních rozhodnutí ve workflow
 description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176880"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455026"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurace ručních rozhodnutí ve workflow
 
@@ -239,26 +239,6 @@ Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí př
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
     <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Fronta</td>
-    <td>Fronta pracovních položek</td>
-    <td>
-    <ol>
-    <li>Po výběru možnosti <strong>Fronta</strong> klepněte na kartu <strong>Založeno na frontě</strong>.</li>
-    <li>Chcete-li přiřadit rozhodnutí konkrétní frontě, postupujte následujícím způsobem: <ol>
-    <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Fronty pracovních položek</strong>.</li>
-    <li>V seznamu <strong>Název fronty</strong> vyberte frontu.</li>
-    </ol>
-    </li>
-    <li>Pokud by konkrétní podmínka měla určit frontu, které bude rozhodnutí přiřazeno, postupujte takto: <ol>
-    <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Podmíněné fronty pracovních položek</strong>.</li>
-    <li>V seznamu <strong>Název fronty</strong> vyberte <strong>Podmíněná fronta</strong>.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Tato možnost se používá pouze u několika workflowů, jako je například správa případů.</blockquote>
     </td>
     </tr>
     </tbody>

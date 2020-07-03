@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Upgrade a N-1 podpora
               items:
-                - name: Upgrade a N-1 podpora pro Retail
+                - name: Upgrade a N-1 podpora pro Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: Instalace fázovaného nasazení (N-1) a přechod
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (květen 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (duben 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -502,8 +500,10 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Úspora nástrojů online plateb s konektorem Adyen
                       href: dev-itpro/adyen-connector-listPI.md
-                    - name: Silné ověření klienta pomocí (SCA) konektoru Adyen
+                    - name: Silné ověření klienta (SCA) pomocí konektoru Adyen
                       href: adyen_redirect.md
+                    - name: Vyhrazené platební terminály a výzvy pro tiskárnu a zásuvku s hotovostí
+                      href: pos-multi-hws.md
                     - name: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Nastavení scénářů plateb faktur
@@ -572,6 +572,10 @@
                       href: set-up-bar-codes.md
                     - name: Nastavení masek čárových kódů
                       href: set-up-bar-code-masks.md
+                - name: Záruky
+                  items:
+                    - name: Vytváření a konfigurace rozšířených záruk
+                      href: extended-warranty.md
             - name: "Tvorba cen a\_slevy"
               items:
                 - name: Slevy
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Modul pokladny
                       href: add-checkout-module.md
-                    - name: Modul potvrzení objednávky
+                    - name: Modul podrobností objednávky
                       href: order-confirmation-module.md
                     - name: Modul volby obchodu
                       href: store-selector.md
@@ -1176,7 +1180,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Přidání finančních dimenzí k měrným systémům agregace
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Vytváření analytických sestav pomocí Power BI Desktop
+                - name: Vytváření analytických sestav pomocí PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurace souboru vývojového prostředí (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Ladění proti vývojovému prostředí Commerce úrovně 1
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Nastavení sdílení kódu Azure DevOps a vytvoření příležitosti
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Přehled platformy
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce
                   href: dev-itpro/cloud-dev-box.md
+                - name: Nastavení kanálu buildu Commerce SDK
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Rozšiřitelnost pokladních míst
               items:
                 - name: Rozložení obrazovky POS
@@ -2102,7 +2110,7 @@
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Vytvoření nového rozšíření Retail Serveru
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Retail Typescript a C# proxy'
+                - name: Retail Typescript a C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Rozšiřitelnost Commerce Runtime (CRT)
               items:

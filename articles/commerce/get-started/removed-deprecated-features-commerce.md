@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335269"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443911"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -35,6 +35,16 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 > [!NOTE]
 > Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.11
+### <a name="data-action-hooks"></a>Zavěšení datových akcí
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Funkce háčků datových akcí byla zastaralá kvůli problémům s výkonem. |
+| **Nahrazeno jinou funkcí?**   | Doporučuje se místo toho použít [přepisy akce dat](../e-commerce-extensibility/data-action-overrides.md) ke změně obchodní logiky ve vrstvě akce dat.|
+| **Ovlivněné oblasti produktu**         | Akce dat rozšiřitelnosti elektronického obchodování |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: k verzi 10.0.11 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>Operace POS 803 – Vyzvednutí a příjem

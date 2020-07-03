@@ -3,7 +3,7 @@ title: Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit ukázkové prostředí v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254741"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426458"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 
@@ -39,7 +39,7 @@ Než začnete, doporučujeme vám toto téma rychle prohledat, abyste získali p
 
 ## <a name="overview"></a>Přehled
 
-Chcete-li úspěšně zřídit prostředí pro náhled Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a commerce scale unit (CSU) také mají některé specifické parametry, které musíte použít ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
+Chcete-li úspěšně zřídit prostředí pro náhled Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 
 Po úspěšném zřízení ukázkového prostředí Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete vyhodnotit. Volitelné kroky můžete vždy dokončit později.
 
@@ -193,7 +193,7 @@ Pro nasazení prostředí postupujte takto.
 
 1. Než budete pokračovat, ujistěte se, že je stav prostředí **Nasazený**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Inicializace commerce scale unit (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Inicializace Commerce Scale Unit (cloud)
 
 Pokud chcete inicializovat CSU, postupujte takto.
 
@@ -215,7 +215,7 @@ Pokud chcete inicializovat e-Commerce, postupujte takto.
 
 1. Na kartě **e-Commerce** zkontrolujte souhlas s náhledem a pak vyberte **nastavení.**
 1. Zadejte název pro **Název klienta e-Commerce**. Uvědomte si však, že název bude viditelný u některých adres URL, které odkazují na vaši instanci e-Commerce.
-1. V poli **Název Commerce scale unit** vyberte položku CSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
+1. V poli **Název Commerce Scale Unit** vyberte položku CSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
 
     Pole **Geografie e-Commerce** je nastaveno automaticky a hodnota nemůže být změněna.
 
@@ -251,7 +251,7 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí náhledu 
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 

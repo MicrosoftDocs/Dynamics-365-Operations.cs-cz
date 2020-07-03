@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008309"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443411"
 ---
 # <a name="overview"></a>Přehled
 
@@ -51,6 +51,8 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 
 - [Správa funkcí](hr-admin-manage-features.md)
 
+- [Konfigurace a správa protokolování databáze](hr-admin-database-logging.md)
+
 - Prozkoumání uživatelského rozhraní
   - [Prvky uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Funkce usnadnění přístupu](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
@@ -75,7 +77,6 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 - Zdroje dokumentace
   - [Systém nápovědy](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [Připojení k systému nápovědy](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Připojení vlastního webu nápovědy](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [Zobrazení a export popisů polí](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Záznamník úloh](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Vytváření dokumentace nebo školení pomocí záznamníku úloh](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)

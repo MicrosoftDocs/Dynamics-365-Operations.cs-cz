@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248729"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410143"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Použití kurzu pro Regression Suite Automation Tool
+# <a name="regression-suite-automation-tool-tutorial"></a>Kurz pro nástroj Regression Suite Automation Tool
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,7 +97,7 @@ Tato funkce pořídí snímky obrazovek kroků, které byly provedeny při zázn
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Když spustíte testovací případ, RSAT bude generovat snímky (obrázky) kroků ve složce přehrávání v testovacích případech v pracovním adresáři. Používáte-li starší verzi nástroje RSAT, jsou obrázky uloženy do **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, pro každý spuštěný testovací případ je vytvořena samostatná složka.
+Když spustíte testovací případ, RSAT bude generovat snímky (obrázky) kroků ve složce přehrávání v testovacích případech v pracovním adresáři. Používáte-li starší verzi nástroje RSAT, jsou obrázky uloženy do **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** a pro každý spuštěný testovací případ je vytvořena samostatná složka.
 
 ## <a name="assignment"></a>Přiřazení
 
@@ -454,7 +454,7 @@ Máte testovací skript, který vytvoří nového odběratele. Pomocí skriptov�
 - Jméno zákazníka
 - Adresa odběratele
 
-ID zákazníka bude mít formát *ATCUS\<číslo\>*, kde \<číslo\> je hodnota mezi **000000001** a **999999999**.
+ID zákazníka bude mít formát *ATCUS\<number\>*, kde \<number\> je hodnota mezi **000000001** a **999999999**.
 
 V následujícím příkladu je použit jeden parametr **start** pro definování prvního použitého čísla. Aplikace používá k definování počtu odběratelů, které je nutné vytvořit, druhý parametr **nr**. Parametry v souboru parametrů aplikace Excel jsou pro každou iteraci změněny pomocí funkce UpdateCustomer. Poté bude příkazový řádek RSAT volán ve funkci RunTestCase.
 

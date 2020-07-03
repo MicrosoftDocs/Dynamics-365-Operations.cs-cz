@@ -1,9 +1,9 @@
 ---
 title: Přehled správy funkcí
 description: V tomto tématu je popsána funkce správy funkcí a její použití.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778698"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456590"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
@@ -144,3 +144,34 @@ Správa funkcí vám umožňuje ovládat funkce dodávané v jednotlivých verz�
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Použití správy funkcí k zapnutí funkcí ISV nebo vlastních funkcí
 
 Správa funkcí není aktuálně k dispozici pro funkce od nezávislých dodavatelů softwaru (ISV) a vlastních funkcí. Společnost Microsoft však přidává k vylepšení správy funkcí více funkcí. Po dokončení těchto zdokonalení společnost Microsoft zpřístupní správu funkcí pro všechny funkce a poskytne pokyny k aktualizaci funkcí, které chcete použít.
+
+## <a name="frequently-asked-questions-faq"></a>Časté dotazy
+
+### <a name="when-are-features-added-removed-or-changed"></a>Kdy jsou funkce přidány, odebrány nebo změněny? 
+Funkce jsou přidávány, odebírány a měněny prostřednictvím změn kódu. Prostředí musí být aktualizováno, aby tyto změny přijalo.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Stává se funkce povinnou automaticky? 
+Ne, to, že se funkce stane povinnou, není automatická akce. Týmy produktů musí provést změnu kódu.
+
+### <a name="when-do-features-become-mandatory"></a>Kdy se funkce stanou povinnými? 
+Zásadou je, že všechny nové funkce budou k dispozici po dobu 12 měsíců a nebudou vyžadovat žádné řízení změn, dokud tuto funkci nepovolíte. Týmy produktů si mohou vybrat, zda mají být funkce povinné po uplynutí této doby. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Proč neexistuje konkrétní „povinné povolené datum“? 
+Načasování vydání aktualizace je variabilní, načasování aktualizace prostředí je variabilní a zákazníci si mohou vybrat, že některé aktualizace přeskočí. V důsledku toho je obtížné určit konkrétní data. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Kde je dokumentace pro povinné funkce? 
+Tato dokumentace pochází od aplikačních týmů. Často budou zmiňovány v části [Odebrané nebo zastaralé funkce](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Existuje oznámení v rámci produktu nebo signál, že funkce bude povinně povolena? 
+V současné době neexistuje mechanismus oznamování týkající se povinné funkce.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Jsou funkce někdy povoleny, aniž by o tom zákazník věděl? 
+Ano, pokud funkce nemá funkční dopad, lze ji ve výchozím nastavení povolit.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Co je to testovací funkce a jak souvisí se správou prvků? 
+Testovací funkce jsou přepínače v reálném čase, které řídí společnost Microsoft. Jsou odděleny od zákaznické kontroly poskytované Správou funkcí. 
+- Funkce privátní verze Preview nebudou v seznamu správy funkcí uvedeny, dokud nebudou testovány. V provozním prostředí musí zákazník souhlasit, že bude součástí speciálního programu, aby k tomu došlo.
+- Funkce ve verzi Public Preview a již vydané (obecně dostupné) funkce budou uvedeny ve Správě funkcí, dokud nebudou otestovány. Testování funkce je pro týmy produktů považováno za poslední možnost, pokud je nalezen kritický problém a obvykle jde o operaci na zákazníka.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Jsou funkce někdy otestovány, aniž by o tom zákazník věděl? 
+Ano, pokud funkce ovlivňuje fungování prostředí, které nemá funkční dopad, lze je ve výchozím nastavení povolit.

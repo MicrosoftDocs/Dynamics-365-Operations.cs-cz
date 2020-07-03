@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstraněníz Microsoft Dynamics Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c5c525b403715ba8dfd3c1bc2dfac4dd69f4a3d
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: e571cc26f55e0bd7a1eef301e193921e0b3f8e31
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367261"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454688"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 
@@ -56,6 +56,7 @@ Tento seznam je poskytnut, aby vám pomohl zvážit tyto odstraněné a zastaral
 <td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna během roku 2020. Tyto funkce nebudou dostupné:
 <ul>
 <li>Všechny vývojové diagramy budou pouze pro čtení a nebudou k dispozici pro úpravy. Rovněž nebudou k dispozici vlastnosti tvaru, které jsou spojeny s činnostmi vývojového diagramu. Tyto vývojové diagramy zahrnují jak výchozí vývojové diagramy, které jsou automaticky generovány, a přizpůsobené vývojové diagramy, které jsou upraveny na základě těchto výchozích vývojových diagramů.</li>
+<li>Kroky procesu budou pouze pro čtení a nebudou k dispozici pro úpravy.</li>     
 <li>Tato funkce analýzy přizpůsobení a mezer nebude k dispozici. Proto nebude automaticky vytvořen nebo k dispozici pro export žádný seznam mezer.
 <p><strong>Poznámka:</strong> Tato funkce byla dříve zastaralá a nahrazena integracemi Microsoft Azure DevOps.</p>
 </li>

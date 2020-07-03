@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131724"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410406"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -34,7 +34,7 @@ Toto téma popisuje, jak vytvořit kanálu kontaktního střediska v řešení M
 ## <a name="overview"></a>Přehled
 
 
-V aplikaci Dynamics 365 Commerce je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Zatímco společnost může definovat více kanálů kontaktních center ve službě Commerce, je důležité si uvědomit, že jednotliví uživatelé mohou být spojeni pouze s jedním kanálem kontaktního centra. 
+V aplikaci Dynamics 365 Commerce je kontaktní středisko typem kanálu Commerce, který lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Zatímco společnost může definovat více kanálů kontaktních center ve službě Commerce, je důležité si uvědomit, že jednotliví uživatelé mohou být spojeni pouze s jedním kanálem kontaktního centra. 
 
 Před vytvořením nového kanálu kontaktního centra se ujistěte, že jste splnili [Požadavky pro zřízení kanálů](channels-prerequisites.md).
 
@@ -42,7 +42,7 @@ Před vytvořením nového kanálu kontaktního centra se ujistěte, že jste sp
 
 Chcete-li vytvořit a konfigurovat nový kanál kontaktního střediska, postupujte dle těchto kroků.
 
-1. V navigačním podokně přejděte na **Retail and Commerce \> Kanály \> Kontaktní střediska \> Všechna kontaktních střediska**.
+1. V navigačním podokně přejděte na **Retail a Commerce \> Kanály \> Kontaktní střediska \> Všechna kontaktních střediska**.
 1. V podokně akcí zvolte **Nový**.
 1. Do pole **Název** zadejte název nového kanálu.
 1. Vyberte patřičnou **Právnickou osobu** z rozevírací nabídky.
@@ -73,7 +73,7 @@ Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek** a
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
-Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto. Uživatelé budou muset vybírat z předdefinovaných metod platby a propojit je s kanálem kontaktního střediska. Před nastavením metod platby na kontaktních střediscích nejprve nastavte hlavní metody platby v **Retail and Commerce \> Nastavení kanállu \> Metody platby \> Metody platby**.
+Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto. Uživatelé budou muset vybírat z předdefinovaných metod platby a propojit je s kanálem kontaktního střediska. Před nastavením metod platby na kontaktních střediscích nejprve nastavte hlavní metody platby v **Retail a Commerce \> Nastavení kanállu \> Metody platby \> Metody platby**.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
 1. V podokně akcí zvolte **Nový**.
@@ -84,7 +84,7 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kan
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby](media/channel-setup-retail-5.png)
+![Příklad způsobů platby](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 

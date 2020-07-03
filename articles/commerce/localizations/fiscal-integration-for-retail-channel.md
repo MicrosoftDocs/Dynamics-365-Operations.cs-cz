@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057549"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403208"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
@@ -139,6 +139,7 @@ Následující ukázky fiskální integrace jsou v současné době k dispozici 
 - [Ukázka integrace fiskální služby pro Rakousko](emea-aut-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Českou republiku](emea-cze-fi-sample.md)
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
+- [Ukázka integrace fiskální služby pro Německo](./emea-deu-fi-sample.md)
 
 Následující funkce fiskální integrace je k dispozici také v sadě Retail SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
 

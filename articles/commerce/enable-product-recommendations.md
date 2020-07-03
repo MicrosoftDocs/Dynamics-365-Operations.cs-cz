@@ -3,7 +3,7 @@ title: Povolit doporučení produktu
 description: V tomto tématu je vysvětleno, jak vytvořit doporučení produktu založená na strojovém učení na základě umělé inteligence (AI-ML) pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259787"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404202"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -34,11 +34,11 @@ V tomto tématu je vysvětleno, jak vytvořit doporučení produktu založená n
 
 ## <a name="recommendations-pre-check"></a>Předběžná kontrola doporučení
 
-Před povolením berte na vědomí, že doporučení produktů jsou podporována pouze u zákazníků Commerce, kteří migrovali své úložiště pomocí Azure Data Lake Storage (ADLS). 
+Před povolením berte na vědomí, že doporučení produktů jsou podporována pouze u zákazníků Commerce, kteří migrovali své úložiště pomocí Azure Data Lake Storage. 
 
 Před povolením doporučení musí být v administravě povoleny následující konfigurace:
 
-1. Ujistěte se, že ADLS bylo zakoupeno a úspěšně ověřeno v prostředí. Další informace naleznete v tématu [Ujistěte se, že ADLS bylo zakoupeno a úspěšně ověřeno v prostředí](enable-ADLS-environment.md).
+1. Ujistěte se, že Azure Data Lake Storage bylo zakoupeno a úspěšně ověřeno v prostředí. Další informace naleznete v tématu [Ujistěte se, že Azure Data Lake Storage bylo zakoupeno a úspěšně ověřeno v prostředí](enable-ADLS-environment.md).
 2. Zkontrolujte, zda byla aktualizace úložiště entity automatizovaná. Další informace naleznete v tématu [Zajistěte, aby aktualizace úložiště entity byla automatizovaná](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Potvrďte, že konfigurace identity Azure AD obsahuje záznam pro doporučení. Další informace o tom, jak provést tuto akci, je následující.
 
@@ -92,7 +92,7 @@ Další informace o přizpůsobených doporučení získáte v tématu [Povolen�
 
 [Přehled doporučení produktu](product-recommendations.md)
 
-[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+[Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 

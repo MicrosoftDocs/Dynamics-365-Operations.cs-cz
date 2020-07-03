@@ -3,7 +3,7 @@ title: Přidání doporučení na obrazovku transakce
 description: Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a39389da0908953cbbc161f07d067ce3fc569a1b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 760e6e093dbe0ba6b2781f90af7fbb614c492b93
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154125"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454572"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Přidání doporučení na obrazovku transakce
 
@@ -38,7 +38,7 @@ Když používáte Commerce, můžete zobrazit na svém zařízení POS doporuč
 
 ## <a name="open-layout-designer"></a>Otevřete návrháře rozložení
 
-1. Přejděte do nabídky **Retail and Commerce** &gt; **Instalace kanálu** &gt; **Nastavení POS** &gt; **POS** &gt; **Rozložení obrazovky**.
+1. Přejděte do nabídky **Retail a Commerce** &gt; **Instalace kanálu** &gt; **Nastavení POS** &gt; **POS** &gt; **Rozložení obrazovky**.
 2. Pomocí rychlého filtru vyhledejte obrazovku, ke které chcete přidat ovládací prvek. Například použijte filtr na pole **ID rozvržení obrazovky** pomocí hodnoty **F2CP16:9M**.
 3. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Vyberte například **Název: F2CP16:9M ID rozvržení obrazovky: F2CP16:9M**.
 4. Klikněte na možnost **Návrhář rozložení**.
@@ -69,7 +69,7 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 
 3. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
-4. V aplikaci Commerce přejděte na **Retail and Commerce** &gt; **IT pro Retail and Commerce** &gt; **Plány distribuce**.
+4. V aplikaci Commerce přejděte na **Retail a Commerce** &gt; **IT pro Retail a Commerce** &gt; **Plány distribuce**.
 5. V seznamu vyberte možnost **1090, Pokladny**.
 6. Klikněte na možnost **Spustit**.
 
@@ -92,7 +92,7 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 7. V poli **Obrázek** zvolte obrázek, který se zobrazí na kartě.
 8. Klikněte na tlačítko **OK**. Nová karta se zobrazí v mřížce tlačítek.
 9. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
-10. V aplikaci Commerce přejděte na **Retail and Commerce** &gt; **IT pro Retail and Commerce** &gt; **Plány distribuce**.
+10. V aplikaci Commerce přejděte na **Retail a Commerce** &gt; **IT pro Retail a Commerce** &gt; **Plány distribuce**.
 11. V seznamu vyberte možnost **1090, Pokladny**.
 12. Klikněte na možnost **Spustit**.
 
@@ -100,7 +100,7 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 [Přehled doporučení produktu](product-recommendations.md)
 
-[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+[Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 

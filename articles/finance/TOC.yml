@@ -1408,7 +1408,7 @@
                       href: localizations/latam-bra-tax-payments.md
                     - name: "Daň v\_prodejní nabídce"
                       href: localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Srážkové daně '
+                    - name: Srážkové daně
                       href: localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: Srážkové daně pro platby odběratelů
                       href: localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -1820,6 +1820,32 @@
                   items:
                     - name: Přehled indické daně GST
                       href: localizations/apac-ind-gst.md
+                    - name: Co je nového a co se změnilo pro lokalizaci APAC indické daně GST
+                      items:
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.0
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.01
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.02
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.03
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.04
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.05
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.06
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.07
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.08
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.09
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.10
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.11
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: Referenční skupiny indické daně GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrace pro registrační pokladny
@@ -2346,6 +2372,8 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Výkaz obratu
                   href: localizations/emea-pol-turnover-balances-statement.md
+                - name: Rozdělení kurzového rozdílu závazků/pohledávek
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Rusko
               items:
                 - name: Rusko - přehled
@@ -2956,7 +2984,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Přidání finančních dimenzí k měrným systémům agregace
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Vytváření analytických sestav pomocí Power BI Desktop
+                - name: Vytváření analytických sestav pomocí PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3408,8 +3436,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Ladění zdrojů dat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Ladění zdrojů dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Použití BARCODE ke generování obrázků čárových kódů
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace mapování modelu
                   items:
                     - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
@@ -3418,18 +3448,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace formátů
                   items:
+                    - name: Výběr definic modelu při vytváření formátů
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Výběr definic modelu při vytváření formátů
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Odložení provádění prvků formátu elektronického výkaznictví
                       items:
                         - name: Odložení provádění prvku posloupnosti
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: Odložení provádění prvku XML
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Návrh vícejazyčných sestav
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Relativní cesta v datových vazbách
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
@@ -3792,7 +3824,7 @@
                   href: ../fin-ops-core/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language.md
                 - name: Vytvoření podpůrných tabulek použitelných jako finanční dimenze
                   href: ../fin-ops-core/dev-itpro/financial/dimensionable-entities.md
-                - name: Přidání hodnot vyhledávání pro finanční dimenze do šablon aplikace Microsoft Excel
+                - name: Přidání hodnot vyhledávání pro finanční dimenze do šablon aplikace Excel
                   href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
             - name: Ovládací prvek segmentovaného zadávání
               items:

@@ -3,7 +3,7 @@ title: Nastavení vlastních stránek pro přihlášení uživatelů
 description: V tomto tématu je popsán způsob vytváření vlastních stránek v řešení Microsoft Dynamics 365 Commerce, které zpracovávají přizpůsobená přihlášení uživatelů klientů B2C (business-to-consumer) služby Azure Active Directory (Azure AD).
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 71c0f0b6969985b04262b522dd2165eb1475878d
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096790"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456965"
 ---
-# <a name="set-up-custom-pages-for-user-logins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
+# <a name="set-up-custom-pages-for-user-sign-ins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
 
 [!include [banner](includes/banner.md)]

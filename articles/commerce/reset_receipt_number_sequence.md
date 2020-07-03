@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123939"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456566"
 ---
 # <a name="reset-receipt-numbers"></a>Resetování čísel příjemek 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> Požaduje se, abyste vybrali vlastnost **Nezávislé pořadí** pro všechny typy příjmu v profilu funkce před použitím této funkce. Časové pásmo systému zařízení, ve kterém se používá POS, by se také mělo shodovat s odpovídajícím časovým pásmem úložiště. Pracujeme na tom, abychom se v budoucnu zbavili těchto omezení. Před použitím této funkce ve výrobě se obraťte na podporu společnosti Microsoft.
 
 Maloobchodní prodejci generují čísla účtenek pro různé akce v obchodě, jako jsou například hotovostní transakce a realizované transakce, transakce vratek, objednávky zákazníků, nabídky a platby. Ačkoliv maloobchodní prodejci definují vlastní formáty účtenek, některé země nebo regiony mají právní předpisy, které omezují tyto formáty účtenek. Tato pravidla mohou například omezit počet znaků na příjemce, požadovat po sobě jdoucí čísla příjmu, omezit některé speciální znaky nebo požadovat obnovení čísel účtenek na začátku roku. Aplikace Microsoft Dynamics 365 Commerce usnadňuje správu čísel příjemek, aby maloobchodní prodejci plnili zákonné požadavky. Toto téma vysvětluje, jak používat funkci pro obnovení čísel účtenek.
 

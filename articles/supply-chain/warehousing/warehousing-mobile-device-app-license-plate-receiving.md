@@ -3,7 +3,7 @@ title: Přijetí registrační značky prostřednictvím aplikace warehousing
 description: V tomto tématu je vysvětleno, jak nastavit aplikaci skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
 author: perlynne
 manager: tfehr
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
+ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346369"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410878"
 ---
 # <a name="license-plate-receiving-via-the-warehousing-app"></a>Přijetí registrační značky prostřednictvím aplikace warehousing
 
@@ -33,58 +33,59 @@ Data ASN jsou spojena s náklady a zásilkami prostřednictvím *struktur balen�
 > [!NOTE]
 > Chcete-li snížit počet skladových transakcí v případě, že jsou použity struktury balení, které mají vnořené registrační značky, systém zaznamená fyzické množství na skladě na nadřízené registrační značce. Chcete-li aktivovat pohyb fyzického množství na skladě z nadřazené registrační značky na základě dat struktury balení, musí mobilní zařízení poskytnout položku nabídky, která je založena na procesu tvorby práce *Zabalit do vnořených registračních značek*.
 
-<!-- To be used later (will require further editing):
-## Warehousing mobile device app processing
+## <a name="warehousing-mobile-device-app-processing"></a>Zpracování skladových aplikací pro mobilní zařízení
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+Když pracovník skenuje příchozí ID registrační značky, systém inicializuje proces přijímání registrační značky. Na základě těchto informací se obsah registrační značky (data pocházející z ASN) fyzicky zaregistruje v místě příchozího doku. Následné toky budou záviset na potřebách vašeho obchodního procesu.
 
-## Work policies
+## <a name="work-policies"></a>Zásady práce
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+Stejně jako (například) proces položky mobilního zařízení *Nahlásit jako dokončené* podporuje i proces přijímání registrační značky několik pracovních postupů na základě definovaného nastavení.
 
-### Work policies with work creation
+### <a name="work-policies-with-work-creation"></a>Pracovní zásady s vytvářením práce
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (License plate receiving and put away) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+Když zaregistrujete příchozí položky pomocí pracovních zásad, které vytvářejí práci, systém generuje a ukládá odložené pracovní záznamy pro každou registraci. Pokud používáte pracovní proces *přijímání a odkládání registrační značky*, jsou registrace a odkládání zpracovány jako jediná operace pomocí jediné položky nabídky mobilního zařízení. Pokud používáte proces *Příjem poznávací značky*, pak jsou procesy přijímání a odkládání zpracovávány jako dvě různé skladové operace, každá s vlastní položkou nabídky mobilního zařízení.
 
-## Work policies without work creation
+### <a name="work-policies-without-work-creation"></a>Pracovní zásady bez vytváření práce
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+Můžete přijímat registrační značku bez vytváření práce. Pokud definujete pracovní zásady, které mají typ pracovního příkazu *Doklad o převodu* a/nebo *Nákupní objednávky* a tento proces použijete pro *Příjem (a odložení) registrační značky*, následující dva procesy mobilní aplikace Warehousing nebudou fungovat. Místo toho pouze zaregistrují příchozí fyzické zásoby v registrační značce v příchozím přijímajícím doku.
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+- *Přijetí registrační značky*
+- *Přijetí a odložení registrační značky*
 
-- License plate receiving
-- License plate receiving and put away
+> [!NOTE]
+> - Musíte definovat alespoň jedno umístění pro pracovní zásady v části **Místo zásob**. Nemůžete zadat stejné umístění pro více pracovních zásad.
+> - Možnost **Tisk štítku** pro mobilní zařízení s aplikací Warehousing nevytisknou štítek registrační značky bez vytvoření práce.
 
-will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
+Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Vylepšení příjmu registrační značky* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Příjem zásob na místě, které nesleduje registrační značky
 
--->
+Je možné použít umístění skladu, které je přiřazeno k profilu místa, i když není volba **Použít sledování registrační značky** zapnutá. Proto, když obdržíte zásoby, můžete přímo zaregistrovat zásoby na skladě bez vytvoření práce.
+
+## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Přidejte položky nabídky mobilního zařízení pro každé přijímací místo ve skladu
+
+Funkce *Vylepšení příjmu registrační značky* umožňuje příjem na jakémkoli místě ve skladu přidáním položek nabídky registrační značky (a odložení) do mobilní aplikace Warehousing. Dříve systém podporoval příjem pouze ve výchozím umístění, které je definováno pro každý sklad. Když je však tato funkce zapnutá, položky nabídky mobilního zařízení pro příjem (a odložení) registrační značky nyní poskytují volbu **Použít výchozí data**, která vám umožní vybrat vlastní umístění „do“ pro každou položku nabídky. (Tato možnost již byla k dispozici pro některé jiné typy položek nabídky.)
+
+Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Vylepšení příjmu registrační značky* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zobrazit nebo přeskočit stránku Souhrn přijetí
 
-Můžete použít funkci *Určit, zda zobrazit stránku souhrnu příjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehousing v rámci procesu získávání registrační značky.
-
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*
+Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehouse v rámci procesu získávání registrační značky.
 
 Je-li tato funkce zapnuta, položky nabídky mobilního zařízení pro příjem registračních značek nebo příjem a zaskladnění registračních značek poskytnou nastavení **Zobrazit stránku souhnu příjmu**. Toto nastavení má následující možnosti:
 
 - **Zobrazit podrobný souhrn** – během příjmu registrační značky se zaměstnanci zobrazí další stránka s úplnými informacemi o ASN.
 - **Přeskočit souhrn** – pracovníci nebudou moci zobrazit úplné informace o ASN. Pracovníci skladu také nebudou moci v průběhu procesu příjmu nastavovat dispoziční kód ani přidávat výjimky.
 
+Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Určete, zda se má zobrazit souhrnná stránka příjmu na mobilních zařízeních* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zabránit použití převodním příkazem expedovaných registračních značek v jiných skladech než je cílový Sklad
 
-Proces příjmu registrační značky je možné použít v případě, že ASN obsahuje ID registrační značky, které již existuje, a má fyzická data na skladě v jiném skladovém místě, než je skladové místo, kde se registrují registrační značky.
+Proces příjmu registrační značky je možné použít v případě, že ASN obsahuje ID registrační značky, které již existuje, a má fyzická data na skladě v jiném skladovém místě, než je skladové místo, kde dochází k registraci registrační značky.
 
 Pro scénáře převodního příkazu, u nichž tranzitní sklad nesleduje registrační značky (a proto nesleduje fyzické zásoby na skladě na registrační značku), můžete pomocí funkce *Zabránit použití převodním příkazem expedovaných registračních značek v jiných skladech než je cílový sklad*, aby se zabránilo fyzické aktualizaci množství na skladě u registračních značek, které jsou v tranzitu.
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkcee:** *Zabránit použití převodním příkazem expedovaných registračních značek v jiných skladech než je cílový sklad*
+Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Zabraňte tomu, aby byly registrační značky dodané v příkazu převodu použity v jiných skladech než v cílovém skladu* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Chcete-li spravovat funkce, když je tato funkce dostupná, postupujte podle následujících kroků.
 
@@ -96,6 +97,8 @@ Chcete-li spravovat funkce, když je tato funkce dostupná, postupujte podle ná
 
 ## <a name="more-information"></a>Další informace
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
-
 Další informace o položkách nabídky mobilního zařízení naleznete v tématu [Nastavení mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md).
+
+Více informací o scénáři výroby *Nahlásit jako hotovo* získáte v tématu [Přehled pracovních zásad skladu](warehouse-work-policies.md).
+
+Další informace o správě příchozího vytížení získáte v části [Skladová manipulace s příchozím zatížením pro nákupní objednávky](inbound-load-handling.md).

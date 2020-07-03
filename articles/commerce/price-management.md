@@ -3,7 +3,7 @@ title: Správa prodejní ceny v aplikaci Retail
 description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057480"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431994"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -53,7 +53,9 @@ Následující obrázek znázorňuje, jak se cenové skupiny používají. Na to
 
 Při vytvoření cenových skupin nepoužívejte jednu cenovou skupinu pro více typů entit Commerce. V opačném případě může být obtížné určit, proč se konkrétní cena nebo sleva použije na transakci.
 
-Jak ukazuje červená čárkovaná čára na obrázku, Commerce podporuje základní funkcionalitu Microsoft Dynamics 365 cenové skupiny, která je nastavena přímo na odběrateli. V takovém případě však dostanete pouze obchodní smlouvy s prodejní cenou. Pokud chcete použít ceny specifické pro odběratele, doporučujeme, abyste nenastavovali cenové skupiny přímo na odběrateli. Namísto toho bude vhodnější použít umístění.
+Jak ukazuje červená čárkovaná čára na obrázku, Commerce podporuje základní funkcionalitu Microsoft Dynamics 365 cenové skupiny, která je nastavena přímo na odběrateli. V takovém případě však dostanete pouze obchodní smlouvy s prodejní cenou. Pokud chcete použít ceny specifické pro odběratele, doporučujeme, abyste nenastavovali cenové skupiny přímo na odběrateli. Namísto toho bude vhodnější použít umístění. 
+
+Všimněte si, že pokud je skupina cen nastavena u zákazníka, pak se tato cenová skupina spojí se záhlavím prodejní objednávky u objednávek vytvořených pro tohoto zákazníka. Pokud uživatel změní skupinu cen v záhlaví objednávky, bude stará skupina cen nahrazena novou skupinou cen pouze pro aktuální objednávku. Například stará skupina cen nebude mít vliv na aktuální objednávku, ale bude stále spojena se zákazníkem pro budoucí objednávky.
 
 Následující části poskytují více informací o entitách Commerce, které můžete použít pro stanovení odlišných cen při používání cenových skupin. Konfigurace cen a slev pro všechny tyto entity je dvoustupňový proces. Tyto kroky lze provést v libovolném pořadí. Nicméně logické pořadí je nejprve nastavit cenové skupiny na entitách, protože tento krok je pravděpodobně jednorázové nastavení, které se provede během implementace. Poté, když se vytvoří ceny a slevy, můžete nastavit cenové skupiny na těchto cenách a slevách individuálně.
 
@@ -226,6 +228,7 @@ Cenový modul **nepodporuje** následující cenové funkce:
 - Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, bude cenový modul ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
 - Ocenění založené na atributech není podporováno.
 - Předávání slev dodavatelů není podporováno.
+- Standardní cenový modul Supply Chain Management podporuje výpočet ceny na základě požadovaného data expedice a požadovaného data příjmu spolu s aktuálním datem. Maloobchodní ceny však v současné době tyto hodnoty nepodporují. Důvodem je to, že u scénářů B2C zákazníci neočekávají, že požadované datum dodání ovlivní cenu položky. V některých případech mají maloobchodníci provoz B2B i B2C. U operací B2B je běžné měnit ceny na základě dodacích termínů. Tito maloobchodníci mohou pro svou firmu B2B použít ceny Supply Chain Management a maloobchodní cenu pro svou firmu B2C. Maloobchodní ceny se na začátku použití, pouze pokud je uživatel aplikace přidán jako uživatel call centra, takže maloobchodníci mohou přiřadit určité uživatele, kteří budou pracovat s cenou Supply Chain Management, a přiřadit několik uživatelů, kteří budou pracovat s maloobchodními cenami, tj. by tito uživatelé měli být přidáni jako uživatelé call centra. Dále platí, že musí být zapnutá vlastnost **Použít k výpočtu cen dnešní datum** v části **Parametry obchodu > ceny a slevy > Různé**. Tímto způsobem mohou udržovat použitou hodnotu parametru účtů pohledávek pro Požadované datum dodání nebo Požadované datum přijetí pro stanovení ceny Supply Chain Management, ale maloobchodní ceny budou pro výpočet ceny nadále používat dnešní datum.
 
 **Pouze** cenový modul podporuje následující cenové funkce:
 

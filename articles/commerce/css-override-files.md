@@ -3,7 +3,7 @@ title: Práce se soubory přepisu CSS
 description: Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3c40145ea76296c1b8df9284af820534e3c869d4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001845"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411240"
 ---
 # <a name="work-with-css-override-files"></a>Práce se soubory přepisu CSS
 
@@ -97,11 +97,13 @@ Chcete-li deaktivovat soubor přepisu CSS na vašem webu, postupujte následovn�
 > [!TIP]
 > Chcete-li získat přístup k dalším možnostem souborů přepisu CSS, vyberte tři tečky (**...**) vedle názvu souboru CSS. Možnosti **Stáhnout**, **Přejmenovat** a **Nahradit** jsou užitečné pro rychlé změny stávajícího souboru přepisu CSS.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přidání loga](add-logo.md)
 
 [Volba motivu webu](select-site-theme.md)
+
+[Práce s předvolbami stylu](style-presets.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 

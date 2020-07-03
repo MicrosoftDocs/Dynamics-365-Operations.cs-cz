@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276894"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413092"
 ---
 # <a name="inventory-value-storage-report"></a>Sestava úložiště hodnot zásob
 
@@ -50,7 +50,7 @@ Chcete-li vytvořit a uložit sestavu **Úložiště hodnot zásob**, postupujte
 1. Zvolte **Nové**.
 1. V dialogovém okně **Hodnota zásob**, které se zobrazí, nastavte následující hodnoty, které definují, které záznamy budou zahrnuty do sestavy:
 
-    - Na záložce s náhledem **Parametry** zadejte jedinečný název sestavy a pomocí polí v části **Časový interval** definujte, které záznamy budou do sestavy zahrnuty. Chcete-li definovat časový interval, můžete buď vybrat přednastavený rozsah (relativně k datu generování sestavy) v poli **Kód časového intervalu**, nebo vybrat konkrétní data v polích **Od data** a **Do data**. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - Na záložce s náhledem **Parametry** zadejte jedinečný název sestavy a pomocí polí v části **Časový interval** definujte, které záznamy budou do sestavy zahrnuty. Chcete-li definovat časový interval, můžete buď vybrat přednastavený rozsah (relativně k datu generování sestavy) v poli **Kód časového intervalu**, nebo vybrat konkrétní data v polích **Od data** a **Do data**.
     - Na pevné záložce **Záznamy, které mají být zahrnuty** nastavte filtry a omezení, která definují, která data mají být do sestavy zahrnuta.
     - N záložce s náhledem **Spustit na pozadí** určete, kdy a jak často bude sestava generována.
 

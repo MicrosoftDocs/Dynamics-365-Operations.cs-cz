@@ -3,7 +3,7 @@ title: Ikona modulu košíku
 description: Tohle téma se zabývá modulem ikony košiku a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8cc96e0476a9d8a46aed7011359dc65fbc678fbf
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261556"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411082"
 ---
 # <a name="cart-icon-module"></a>Ikona modulu košíku
 
@@ -33,6 +33,10 @@ Tohle téma se zabývá modulem ikony košiku a popisuje, jak jej přidat na str
 ## <a name="overview"></a>Přehled
 
 Ikona košíku – ikona košíku představuje košík v modulu záhlaví stránky a zobrazuje počet položek v košíku v kterémkoli daném okamžiku. Modul ikony košíku zobrazuje také souhrn nákupního košíku (označovaný také jako mini košík) při přechodu na ikonu košíku. Mini košík poskytuje uživateli souhrn položek v košíku, aniž by bylo nutné přejít na stránku košíku. Kromě toho umožňuje uživateli přímo přejít na stránku pokadny, pokud jsou spokojeni se souhrnem. Tato možnost snižuje počet navigačních stránek a provádí platbu rychleji. 
+
+Následující obrázek znázorňuje příklad modulu ikony vozíku, který zobrazuje mini vozík v záhlaví Fabrikam.
+
+![Příklad modulu ikony košíku](./media/ecommerce-Minicart.PNG)
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
