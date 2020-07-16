@@ -1,0 +1,948 @@
+- name: Třída AbsoluteFieldBinding
+  href: AbsoluteFieldBinding-class.md
+- name: Třída AdObject
+  href: AdObject-class.md
+- name: Třída AllowEncryptionKeyRetrievalPermission
+  href: AllowEncryptionKeyRetrievalPermission-class.md
+- name: Třída AOSLoadGen
+  href: AOSLoadGen-class.md
+- name: Třída AOSSessionInfo
+  href: AOSSessionInfo-class.md
+- name: Třída AOTTableFieldList
+  href: AOTTableFieldList-class.md
+- name: Třída ApplicationObjectTreeWindow
+  href: ApplicationObjectTreeWindow-class.md
+- name: Třída Array
+  href: Array-class.md
+- name: Třída AsciiIo
+  href: AsciiIo-class.md
+- name: Třída AssemblyDeployManager
+  href: AssemblyDeployManager-class.md
+- name: Třída AsyncTaskResult
+  href: AsyncTaskResult-class.md
+- name: Třída AxaptaCOMConnectorMonitor
+  href: AxaptaCOMConnectorMonitor-class.md
+- name: Třída Binary
+  href: Binary-class.md
+- name: Třída BinaryIo
+  href: BinaryIo-class.md
+- name: Třída BinData
+  href: BinData-class.md
+- name: Třída ClassNode
+  href: ClassNode-class.md
+- name: Třída ClientPrintJobSettings
+  href: ClientPrintJobSettings-class.md
+- name: Třída CLRInterop
+  href: CLRInterop-class.md
+- name: Třída CLRObject
+  href: CLRObject-class.md
+- name: Třída CodeAccessPermission
+  href: CodeAccessPermission-class.md
+- name: Třída COM
+  href: COM-class.md
+- name: Třída COMDispFunction
+  href: COMDispFunction-class.md
+- name: Třída COMError
+  href: COMError-class.md
+- name: Třída CommaIo
+  href: CommaIo-class.md
+- name: Třída CommaTextIo
+  href: CommaTextIo-class.md
+- name: Třída CompileOutputInfos
+  href: CompileOutputInfos-class.md
+- name: Třída COMVariant
+  href: COMVariant-class.md
+- name: Třída ConfigurationKeySet
+  href: ConfigurationKeySet-class.md
+- name: Třída Connection
+  href: Connection-class.md
+- name: Třída ContainerClass
+  href: ContainerClass-class.md
+- name: Třída ControlFilterValue
+  href: ControlFilterValue-class.md
+- name: Třída ControlNode
+  href: ControlNode-class.md
+- name: Třída CryptoAPI
+  href: CryptoAPI-class.md
+- name: Třída Cue
+  href: Cue-class.md
+- name: Třída CueGroup
+  href: CueGroup-class.md
+- name: Třída CueReference
+  href: CueReference-class.md
+- name: Třída DataEntityDataSourceRuntimeContext
+  href: DataEntityDataSourceRuntimeContext-class.md
+- name: Třída DataEntityPersister
+  href: DataEntityPersister-class.md
+- name: Třída DataEntityRuntimeContext
+  href: DataEntityRuntimeContext-class.md
+- name: Třída DataEventArgs
+  href: DataEventArgs-class.md
+- name: Třída DataImportExportManager
+  href: DataImportExportManager-class.md
+- name: Třída DataImportManager
+  href: DataImportManager-class.md
+- name: Třída DataImportSessionInfo
+  href: DataImportSessionInfo-class.md
+- name: Třída DataSet
+  href: DataSet-class.md
+- name: Třída DataSetRun
+  href: DataSetRun-class.md
+- name: Třída DataSourceMethodInfo
+  href: DataSourceMethodInfo-class.md
+- name: Třída DataSourceMethodInfoList
+  href: DataSourceMethodInfoList-class.md
+- name: Třída DataSourceNode
+  href: DataSourceNode-class.md
+- name: Třída DataSourceRuntimeMetadataChangedEvtArgs
+  href: DataSourceRuntimeMetadataChangedEvtArgs-class.md
+- name: Třída DateTimeUtil
+  href: DateTimeUtil-class.md
+- name: Třída DialogBox
+  href: DialogBox-class.md
+- name: Třída DictClass
+  href: DictClass-class.md
+- name: Třída DictCompositeChildDataEntity
+  href: DictCompositeChildDataEntity-class.md
+- name: Třída DictCompositeDataEntity
+  href: DictCompositeDataEntity-class.md
+- name: Třída DictConfigurationKey
+  href: DictConfigurationKey-class.md
+- name: Třída DictDataEntity
+  href: DictDataEntity-class.md
+- name: Třída DictDataEntityField
+  href: DictDataEntityField-class.md
+- name: Třída DictEnum
+  href: DictEnum-class.md
+- name: Třída DictField
+  href: DictField-class.md
+- name: Třída DictFieldGroup
+  href: DictFieldGroup-class.md
+- name: Třída DictFullTextIndex
+  href: DictFullTextIndex-class.md
+- name: Třída DictIndex
+  href: DictIndex-class.md
+- name: Třída Dictionary
+  href: Dictionary-class.md
+- name: Třída DictLicenseCode
+  href: DictLicenseCode-class.md
+- name: Třída DictMethod
+  href: DictMethod-class.md
+- name: Třída DictRelation
+  href: DictRelation-class.md
+- name: Třída DictTable
+  href: DictTable-class.md
+- name: Třída DictTableMap
+  href: DictTableMap-class.md
+- name: Třída DictType
+  href: DictType-class.md
+- name: Třída DictView
+  href: DictView-class.md
+- name: Třída DLL
+  href: DLL-class.md
+- name: Třída DLLFunction
+  href: DLLFunction-class.md
+- name: Třída DocNode
+  href: DocNode-class.md
+- name: Třída DynamicPropertyCallback
+  href: DynamicPropertyCallback-class.md
+- name: Třída DynamicPropertyManager
+  href: DynamicPropertyManager-class.md
+- name: Třída Editor
+  href: Editor-class.md
+- name: Třída Enumerator
+  href: Enumerator-class.md
+- name: Třída ExecutePermission
+  href: ExecutePermission-class.md
+- name: Třída FieldBinding
+  href: FieldBinding-class.md
+- name: Třída FieldFilterValue
+  href: FieldFilterValue-class.md
+- name: Třída FileIOPermission
+  href: FileIOPermission-class.md
+- name: Třída FilterValue
+  href: FilterValue-class.md
+- name: Třída Form
+  href: Form-class.md
+- name: Třída FormActionPaneControl
+  href: FormActionPaneControl-class.md
+- name: Třída FormActionPaneTabControl
+  href: FormActionPaneTabControl-class.md
+- name: Třída FormActiveXControl
+  href: FormActiveXControl-class.md
+- name: Třída FormAnimateControl
+  href: FormAnimateControl-class.md
+- name: Třída FormAutoLookupFactory
+  href: FormAutoLookupFactory-class.md
+- name: Třída FormBinding
+  href: FormBinding-class.md
+- name: Třída FormBuildActionPaneControl
+  href: FormBuildActionPaneControl-class.md
+- name: Třída FormBuildActionPaneTabControl
+  href: FormBuildActionPaneTabControl-class.md
+- name: Třída FormBuildActiveXControl
+  href: FormBuildActiveXControl-class.md
+- name: Třída FormBuildAnimateControl
+  href: FormBuildAnimateControl-class.md
+- name: Třída FormBuildButtonControl
+  href: FormBuildButtonControl-class.md
+- name: Třída FormBuildButtonGroupControl
+  href: FormBuildButtonGroupControl-class.md
+- name: Třída FormBuildButtonSeparatorControl
+  href: FormBuildButtonSeparatorControl-class.md
+- name: Třída FormBuildCheckBoxControl
+  href: FormBuildCheckBoxControl-class.md
+- name: Třída FormBuildComboBoxControl
+  href: FormBuildComboBoxControl-class.md
+- name: Třída FormBuildCommandButtonControl
+  href: FormBuildCommandButtonControl-class.md
+- name: Třída FormBuildContainerControl
+  href: FormBuildContainerControl-class.md
+- name: Třída FormBuildControl
+  href: FormBuildControl-class.md
+- name: Třída FormBuildDataSource
+  href: FormBuildDataSource-class.md
+- name: Třída FormBuildDateControl
+  href: FormBuildDateControl-class.md
+- name: Třída FormBuildDateTimeControl
+  href: FormBuildDateTimeControl-class.md
+- name: Třída FormBuildDesign
+  href: FormBuildDesign-class.md
+- name: Třída FormBuildDropDialogButtonControl
+  href: FormBuildDropDialogButtonControl-class.md
+- name: Třída FormBuildFastTabHeaderControl
+  href: FormBuildFastTabHeaderControl-class.md
+- name: Třída FormBuildFastTabSummarySeparator
+  href: FormBuildFastTabSummarySeparator-class.md
+- name: Třída FormBuildFilterPaneControl
+  href: FormBuildFilterPaneControl-class.md
+- name: Třída FormBuildFunctionButtonControl
+  href: FormBuildFunctionButtonControl-class.md
+- name: Třída FormBuildGridControl
+  href: FormBuildGridControl-class.md
+- name: Třída FormBuildGroupControl
+  href: FormBuildGroupControl-class.md
+- name: Třída FormBuildGuidControl
+  href: FormBuildGuidControl-class.md
+- name: Třída FormBuildHTMLControl
+  href: FormBuildHTMLControl-class.md
+- name: Třída FormBuildIntControl
+  href: FormBuildIntControl-class.md
+- name: Třída FormBuildListBoxControl
+  href: FormBuildListBoxControl-class.md
+- name: Třída FormBuildListControl
+  href: FormBuildListControl-class.md
+- name: Třída FormBuildManagedHostControl
+  href: FormBuildManagedHostControl-class.md
+- name: Třída FormBuildMenuButtonControl
+  href: FormBuildMenuButtonControl-class.md
+- name: Třída FormBuildObjectSet
+  href: FormBuildObjectSet-class.md
+- name: Třída FormBuildProgressControl
+  href: FormBuildProgressControl-class.md
+- name: Třída FormBuildRadioControl
+  href: FormBuildRadioControl-class.md
+- name: Třída FormBuildRealControl
+  href: FormBuildRealControl-class.md
+- name: Třída FormBuildReferenceControl
+  href: FormBuildReferenceControl-class.md
+- name: Třída FormBuildReferenceGroupControl
+  href: FormBuildReferenceGroupControl-class.md
+- name: Třída FormBuildRichTextControl
+  href: FormBuildRichTextControl-class.md
+- name: Třída FormBuildSegmentedEntryControl
+  href: FormBuildSegmentedEntryControl-class.md
+- name: Třída FormBuildStaticTextControl
+  href: FormBuildStaticTextControl-class.md
+- name: Třída FormBuildStringControl
+  href: FormBuildStringControl-class.md
+- name: Třída FormBuildTabControl
+  href: FormBuildTabControl-class.md
+- name: Třída FormBuildTableControl
+  href: FormBuildTableControl-class.md
+- name: Třída FormBuildTabPageControl
+  href: FormBuildTabPageControl-class.md
+- name: Třída FormBuildTimeControl
+  href: FormBuildTimeControl-class.md
+- name: Třída FormBuildTreeControl
+  href: FormBuildTreeControl-class.md
+- name: Třída FormBuildWindowControl
+  href: FormBuildWindowControl-class.md
+- name: Třída FormButtonControl
+  href: FormButtonControl-class.md
+- name: Třída FormButtonGroupControl
+  href: FormButtonGroupControl-class.md
+- name: Třída FormButtonSeparatorControl
+  href: FormButtonSeparatorControl-class.md
+- name: Třída FormChangeTracker
+  href: FormChangeTracker-class.md
+- name: Třída FormCheckBoxControl
+  href: FormCheckBoxControl-class.md
+- name: Třída FormComboBoxControl
+  href: FormComboBoxControl-class.md
+- name: Třída FormCommandButtonControl
+  href: FormCommandButtonControl-class.md
+- name: Třída FormContainer
+  href: FormContainer-class.md
+- name: Třída FormContainerControl
+  href: FormContainerControl-class.md
+- name: Třída FormControl
+  href: FormControl-class.md
+- name: Třída FormControlCancelableSuperEventArgs
+  href: FormControlCancelableSuperEventArgs-class.md
+- name: Třída FormControlCancelEventArgs
+  href: FormControlCancelEventArgs-class.md
+- name: Třída FormControlEventArgs
+  href: FormControlEventArgs-class.md
+- name: Třída FormDataObject
+  href: FormDataObject-class.md
+- name: Třída FormDataRow
+  href: FormDataRow-class.md
+- name: Třída FormDataSource
+  href: FormDataSource-class.md
+- name: Třída FormDateControl
+  href: FormDateControl-class.md
+- name: Třída FormDateTimeControl
+  href: FormDateTimeControl-class.md
+- name: Třída FormDesign
+  href: FormDesign-class.md
+- name: Třída FormDesignView
+  href: FormDesignView-class.md
+- name: Třída FormDropDialogButtonControl
+  href: FormDropDialogButtonControl-class.md
+- name: Třída FormEventArgs
+  href: FormEventArgs-class.md
+- name: Třída FormFastTabHeaderControl
+  href: FormFastTabHeaderControl-class.md
+- name: Třída FormFastTabSummarySeparator
+  href: FormFastTabSummarySeparator-class.md
+- name: Třída FormFilterPaneControl
+  href: FormFilterPaneControl-class.md
+- name: Třída FormFunctionButtonControl
+  href: FormFunctionButtonControl-class.md
+- name: Třída FormGridControl
+  href: FormGridControl-class.md
+- name: Třída FormGroupControl
+  href: FormGroupControl-class.md
+- name: Třída FormGuidControl
+  href: FormGuidControl-class.md
+- name: Třída FormHTMLControl
+  href: FormHTMLControl-class.md
+- name: Třída FormIntControl
+  href: FormIntControl-class.md
+- name: Třída FormListBoxControl
+  href: FormListBoxControl-class.md
+- name: Třída FormListColumn
+  href: FormListColumn-class.md
+- name: Třída FormListControl
+  href: FormListControl-class.md
+- name: Třída FormListItem
+  href: FormListItem-class.md
+- name: Třída FormManagedHostControl
+  href: FormManagedHostControl-class.md
+- name: Třída FormMenuButtonControl
+  href: FormMenuButtonControl-class.md
+- name: Třída FormNotifyEventArgs
+  href: FormNotifyEventArgs-class.md
+- name: Třída FormObject
+  href: FormObject-class.md
+- name: Třída FormObjectSet
+  href: FormObjectSet-class.md
+- name: Třída FormObjectSetCacheChangedEventArgs
+  href: FormObjectSetCacheChangedEventArgs-class.md
+- name: Třída FormObjectSetCurrentChangedEventArgs
+  href: FormObjectSetCurrentChangedEventArgs-class.md
+- name: Třída FormObjectSetLeaveEventArgs
+  href: FormObjectSetLeaveEventArgs-class.md
+- name: Třída FormObjectSetMarkingChangedEventArgs
+  href: FormObjectSetMarkingChangedEventArgs-class.md
+- name: Třída FormObjectSetNotify
+  href: FormObjectSetNotify-class.md
+- name: Třída FormObjectSetNotifyEvents
+  href: FormObjectSetNotifyEvents-class.md
+- name: Třída FormObjectSetPagingParamsChangedEvtArgs
+  href: FormObjectSetPagingParamsChangedEvtArgs-class.md
+- name: Třída FormObjectSetRequestCacheSizeEventArgs
+  href: FormObjectSetRequestCacheSizeEventArgs-class.md
+- name: Třída FormPart
+  href: FormPart-class.md
+- name: Třída FormProgressControl
+  href: FormProgressControl-class.md
+- name: Třída FormQueryMiner
+  href: FormQueryMiner-class.md
+- name: Třída FormRadioControl
+  href: FormRadioControl-class.md
+- name: Třída FormRealControl
+  href: FormRealControl-class.md
+- name: Třída FormReferenceControl
+  href: FormReferenceControl-class.md
+- name: Třída FormReferenceGroupControl
+  href: FormReferenceGroupControl-class.md
+- name: Třída FormReferenceObject
+  href: FormReferenceObject-class.md
+- name: Třída FormRichTextControl
+  href: FormRichTextControl-class.md
+- name: Třída FormRowDisplayOption
+  href: FormRowDisplayOption-class.md
+- name: Třída FormSegment
+  href: FormSegment-class.md
+- name: Třída FormSegmentedEntryControl
+  href: FormSegmentedEntryControl-class.md
+- name: Třída FormsPreloadingManager
+  href: FormsPreloadingManager-class.md
+- name: Třída FormStaticTextControl
+  href: FormStaticTextControl-class.md
+- name: Třída FormStringControl
+  href: FormStringControl-class.md
+- name: Třída FormTabControl
+  href: FormTabControl-class.md
+- name: Třída FormTableCell
+  href: FormTableCell-class.md
+- name: Třída FormTableControl
+  href: FormTableControl-class.md
+- name: Třída FormTabPageControl
+  href: FormTabPageControl-class.md
+- name: Třída FormTimeControl
+  href: FormTimeControl-class.md
+- name: Třída FormTreeControl
+  href: FormTreeControl-class.md
+- name: Třída FormTreeItem
+  href: FormTreeItem-class.md
+- name: Třída FormWindowControl
+  href: FormWindowControl-class.md
+- name: Třída Gac
+  href: Gac-class.md
+- name: Třída HeapCheck
+  href: HeapCheck-class.md
+- name: Třída HelpDocSetNode
+  href: HelpDocSetNode-class.md
+- name: Třída HelpDocumentManager
+  href: HelpDocumentManager-class.md
+- name: Třída HtmlFont
+  href: HtmlFont-class.md
+- name: Třída IDispatcherProxy
+  href: IDispatcherProxy-class.md
+- name: Třída IISApplicationObject
+  href: IISApplicationObject-class.md
+- name: Třída IISContextObject
+  href: IISContextObject-class.md
+- name: Třída IISPostedFile
+  href: IISPostedFile-class.md
+- name: Třída IISReadCookie
+  href: IISReadCookie-class.md
+- name: Třída IISRequest
+  href: IISRequest-class.md
+- name: Třída IISRequestDictionary
+  href: IISRequestDictionary-class.md
+- name: Třída IISResponse
+  href: IISResponse-class.md
+- name: Třída IISServer
+  href: IISServer-class.md
+- name: Třída IISSessionObject
+  href: IISSessionObject-class.md
+- name: Třída IISStringList
+  href: IISStringList-class.md
+- name: Třída IISVariantDictionary
+  href: IISVariantDictionary-class.md
+- name: Třída IISViewState
+  href: IISViewState-class.md
+- name: Třída IISWriteCookie
+  href: IISWriteCookie-class.md
+- name: Třída Image
+  href: Image-class.md
+- name: Třída Imagelist
+  href: Imagelist-class.md
+- name: Třída ImportTableDataInfo
+  href: ImportTableDataInfo-class.md
+- name: Třída ImportTableSchemaInfo
+  href: ImportTableSchemaInfo-class.md
+- name: Třída InfoPart
+  href: InfoPart-class.md
+- name: Třída InfoPartField
+  href: InfoPartField-class.md
+- name: Třída InfoPartGroup
+  href: InfoPartGroup-class.md
+- name: Třída InfoPartLayout
+  href: InfoPartLayout-class.md
+- name: Třída InitialQueryParameter
+  href: InitialQueryParameter-class.md
+- name: Třída InteropPermission
+  href: InteropPermission-class.md
+- name: Třída Io
+  href: Io-class.md
+- name: Třída Job
+  href: Job-class.md
+- name: Třída Keywords
+  href: Keywords-class.md
+- name: Třída Label
+  href: Label-class.md
+- name: Třída LabelBulkEditor
+  href: LabelBulkEditor-class.md
+- name: Třída LastAotSelection
+  href: LastAotSelection-class.md
+- name: Třída List
+  href: List-class.md
+- name: Třída ListEnumerator
+  href: ListEnumerator-class.md
+- name: Třída ListIterator
+  href: ListIterator-class.md
+- name: Třída ListPage
+  href: ListPage-class.md
+- name: Třída ListPageArgs
+  href: ListPageArgs-class.md
+- name: Třída ListPageInteraction
+  href: ListPageInteraction-class.md
+- name: Třída LoadAutoCompleteDataEventArgs
+  href: LoadAutoCompleteDataEventArgs-class.md
+- name: Třída LoginProperty
+  href: LoginProperty-class.md
+- name: Třída ManagedEventArgs
+  href: ManagedEventArgs-class.md
+- name: Třída ManagedEventDelegate
+  href: ManagedEventDelegate-class.md
+- name: Třída ManagedEventHandler
+  href: ManagedEventHandler-class.md
+- name: Třída Map
+  href: Map-class.md
+- name: Třída MapEnumerator
+  href: MapEnumerator-class.md
+- name: Třída Mapi
+  href: Mapi-class.md
+- name: Třída MapiEx
+  href: MapiEx-class.md
+- name: Třída MapiExAppointment
+  href: MapiExAppointment-class.md
+- name: Třída MapiExContact
+  href: MapiExContact-class.md
+- name: Třída MapiExMail
+  href: MapiExMail-class.md
+- name: Třída MapiExMessage
+  href: MapiExMessage-class.md
+- name: Třída MapiExTask
+  href: MapiExTask-class.md
+- name: Třída MapiFileDesc
+  href: MapiFileDesc-class.md
+- name: Třída MapiMessage
+  href: MapiMessage-class.md
+- name: Třída MapiRecipDesc
+  href: MapiRecipDesc-class.md
+- name: Třída MapIterator
+  href: MapIterator-class.md
+- name: Třída MemberFunction
+  href: MemberFunction-class.md
+- name: Třída Menu
+  href: Menu-class.md
+- name: Třída MenuItem
+  href: MenuItem-class.md
+- name: Třída MenuReference
+  href: MenuReference-class.md
+- name: Třída MessageWin
+  href: MessageWin-class.md
+- name: Třída MethodInfo
+  href: MethodInfo-class.md
+- name: Třída ModifyFieldEventArgs
+  href: ModifyFieldEventArgs-class.md
+- name: Třída ModifyFieldValueEventArgs
+  href: ModifyFieldValueEventArgs-class.md
+- name: Třída MultiSelectionContext
+  href: MultiSelectionContext-class.md
+- name: Třída NumberSequence
+  href: NumberSequence-class.md
+- name: Třída NumberSequenceSessionLessCache
+  href: NumberSequenceSessionLessCache-class.md
+- name: Třída Object
+  href: Object-class.md
+- name: Třída ObjectIdent
+  href: ObjectIdent-class.md
+- name: Třída ObjectRun
+  href: ObjectRun-class.md
+- name: Třída OciConnection
+  href: OciConnection-class.md
+- name: Třída OdbcConnection
+  href: OdbcConnection-class.md
+- name: Třída OleCommand
+  href: OleCommand-class.md
+- name: Třída OuputSection
+  href: OuputSection-class.md
+- name: Třída OutputAutoLabelField
+  href: OutputAutoLabelField-class.md
+- name: Třída OutputBitmapField
+  href: OutputBitmapField-class.md
+- name: Třída OutputBodySection
+  href: OutputBodySection-class.md
+- name: Třída OutputColumnHeadingsSection
+  href: OutputColumnHeadingsSection-class.md
+- name: Třída OutputDateField
+  href: OutputDateField-class.md
+- name: Třída OutputDateTimeField
+  href: OutputDateTimeField-class.md
+- name: Třída OutputEnumField
+  href: OutputEnumField-class.md
+- name: Třída OutputEpilogSection
+  href: OutputEpilogSection-class.md
+- name: Třída OutputField
+  href: OutputField-class.md
+- name: Třída OutputFooterSection
+  href: OutputFooterSection-class.md
+- name: Třída OutputHeaderSection
+  href: OutputHeaderSection-class.md
+- name: Třída OutputIntegerField
+  href: OutputIntegerField-class.md
+- name: Třída OutputLabelField
+  href: OutputLabelField-class.md
+- name: Třída OutputPage
+  href: OutputPage-class.md
+- name: Třída OutputPageFooterSection
+  href: OutputPageFooterSection-class.md
+- name: Třída OutputPageHeaderSection
+  href: OutputPageHeaderSection-class.md
+- name: Třída OutputProgrammableSection
+  href: OutputProgrammableSection-class.md
+- name: Třída OutputPrologSection
+  href: OutputPrologSection-class.md
+- name: Třída OutputRealField
+  href: OutputRealField-class.md
+- name: Třída OutputShapeField
+  href: OutputShapeField-class.md
+- name: Třída OutputStaticTextField
+  href: OutputStaticTextField-class.md
+- name: Třída OutputStringField
+  href: OutputStringField-class.md
+- name: Třída OutputSumField
+  href: OutputSumField-class.md
+- name: Třída OutputTimeField
+  href: OutputTimeField-class.md
+- name: Třída OverwriteSystemfieldsPermission
+  href: OverwriteSystemfieldsPermission-class.md
+- name: Třída Page
+  href: Page-class.md
+- name: Třída PageArgs
+  href: PageArgs-class.md
+- name: Třída PageInteraction
+  href: PageInteraction-class.md
+- name: Třída PartList
+  href: PartList-class.md
+- name: Třída Percentbar
+  href: Percentbar-class.md
+- name: Třída PerformanceMonitor
+  href: PerformanceMonitor-class.md
+- name: Třída PerformanceMonitorCounter
+  href: PerformanceMonitorCounter-class.md
+- name: Třída PerformanceMonitorInstance
+  href: PerformanceMonitorInstance-class.md
+- name: Třída PipeClient
+  href: PipeClient-class.md
+- name: Třída PipeServer
+  href: PipeServer-class.md
+- name: Třída PresenceInfo
+  href: PresenceInfo-class.md
+- name: Třída PrintJobSettings
+  href: PrintJobSettings-class.md
+- name: Třída profiler
+  href: profiler-class.md
+- name: Třída ProgressWindow
+  href: ProgressWindow-class.md
+- name: Třída ProjectGroupNode
+  href: ProjectGroupNode-class.md
+- name: Třída ProjectListNode
+  href: ProjectListNode-class.md
+- name: Třída ProjectNode
+  href: ProjectNode-class.md
+- name: Třída PropertiesWindow
+  href: PropertiesWindow-class.md
+- name: Třída Query
+  href: Query-class.md
+- name: Třída QueryBuildDataSource
+  href: QueryBuildDataSource-class.md
+- name: Třída QueryBuildDynalink
+  href: QueryBuildDynalink-class.md
+- name: Třída QueryBuildFieldList
+  href: QueryBuildFieldList-class.md
+- name: Třída QueryBuildLink
+  href: QueryBuildLink-class.md
+- name: Třída QueryBuildRange
+  href: QueryBuildRange-class.md
+- name: Třída QueryBuildStaticlink
+  href: QueryBuildStaticlink-class.md
+- name: Třída QueryFilter
+  href: QueryFilter-class.md
+- name: Třída QueryGroupByField
+  href: QueryGroupByField-class.md
+- name: Třída QueryHavingFilter
+  href: QueryHavingFilter-class.md
+- name: Třída QueryOrderByField
+  href: QueryOrderByField-class.md
+- name: Třída QueryRun
+  href: QueryRun-class.md
+- name: Třída Random
+  href: Random-class.md
+- name: Třída RecordInsertList
+  href: RecordInsertList-class.md
+- name: Třída RecordLinkList
+  href: RecordLinkList-class.md
+- name: Třída RecordSortedList
+  href: RecordSortedList-class.md
+- name: Třída RecordViewCache
+  href: RecordViewCache-class.md
+- name: Třída ReferenceNode
+  href: ReferenceNode-class.md
+- name: Třída RelationPath
+  href: RelationPath-class.md
+- name: Třída RelativeFieldBinding
+  href: RelativeFieldBinding-class.md
+- name: Třída Report
+  href: Report-class.md
+- name: Třída ReportAutoDesignSpecs
+  href: ReportAutoDesignSpecs-class.md
+- name: Třída ReportBitmapControl
+  href: ReportBitmapControl-class.md
+- name: Třída ReportControl
+  href: ReportControl-class.md
+- name: Třída ReportDateControl
+  href: ReportDateControl-class.md
+- name: Třída ReportDateTimeControl
+  href: ReportDateTimeControl-class.md
+- name: Třída ReportDesign
+  href: ReportDesign-class.md
+- name: Třída ReportEnumControl
+  href: ReportEnumControl-class.md
+- name: Třída ReportFieldGroup
+  href: ReportFieldGroup-class.md
+- name: Třída ReportGuidControl
+  href: ReportGuidControl-class.md
+- name: Třída ReportIntegerControl
+  href: ReportIntegerControl-class.md
+- name: Třída ReportLibraryNode
+  href: ReportLibraryNode-class.md
+- name: Třída ReportOutput
+  href: ReportOutput-class.md
+- name: Třída ReportOutputUser
+  href: ReportOutputUser-class.md
+- name: Třída ReportPrinter
+  href: ReportPrinter-class.md
+- name: Třída ReportPromptControl
+  href: ReportPromptControl-class.md
+- name: Třída ReportRealControl
+  href: ReportRealControl-class.md
+- name: Třída ReportRun
+  href: ReportRun-class.md
+- name: Třída ReportSection
+  href: ReportSection-class.md
+- name: Třída ReportSectionGroup
+  href: ReportSectionGroup-class.md
+- name: Třída ReportShapeControl
+  href: ReportShapeControl-class.md
+- name: Třída ReportStringControl
+  href: ReportStringControl-class.md
+- name: Třída ReportSumControl
+  href: ReportSumControl-class.md
+- name: Třída ReportTextControl
+  href: ReportTextControl-class.md
+- name: Třída ReportTimeControl
+  href: ReportTimeControl-class.md
+- name: Třída ReportViewer
+  href: ReportViewer-class.md
+- name: Třída ResultSet
+  href: ResultSet-class.md
+- name: Třída ResultSetMetaData
+  href: ResultSetMetaData-class.md
+- name: Třída RunAsPermission
+  href: RunAsPermission-class.md
+- name: Třída ScannerClass
+  href: ScannerClass-class.md
+- name: Třída SearchParm
+  href: SearchParm-class.md
+- name: Třída SecureNode
+  href: SecureNode-class.md
+- name: Třída SecurityContext
+  href: SecurityContext-class.md
+- name: Třída SecurityPolicy
+  href: SecurityPolicy-class.md
+- name: Třída SecurityRights
+  href: SecurityRights-class.md
+- name: Třída SecuritySkipFlush
+  href: SecuritySkipFlush-class.md
+- name: Třída SecurityTableRights
+  href: SecurityTableRights-class.md
+- name: Třída SecurityUtil
+  href: SecurityUtil-class.md
+- name: Třída SegmentEnteredEventArgs
+  href: SegmentEnteredEventArgs-class.md
+- name: Třída SegmentValueChangedEventArgs
+  href: SegmentValueChangedEventArgs-class.md
+- name: Třída Sequence
+  href: Sequence-class.md
+- name: Třída Set
+  href: Set-class.md
+- name: Třída SetEnumerator
+  href: SetEnumerator-class.md
+- name: Třída SetIterator
+  href: SetIterator-class.md
+- name: Třída SkipAOSValidationPermission
+  href: SkipAOSValidationPermission-class.md
+- name: Třída SqlDataDictionary
+  href: SqlDataDictionary-class.md
+- name: Třída SqlDataDictionaryPermission
+  href: SqlDataDictionaryPermission-class.md
+- name: Třída SqlStatementExecutePermission
+  href: SqlStatementExecutePermission-class.md
+- name: Třída SqlSyncPending
+  href: SqlSyncPending-class.md
+- name: Třída SqlSystem
+  href: SqlSystem-class.md
+- name: Třída SSRSReportAutoDesignNode
+  href: SSRSReportAutoDesignNode-class.md
+- name: Třída SSRSReportConceptNode
+  href: SSRSReportConceptNode-class.md
+- name: Třída SSRSReportDesignNode
+  href: SSRSReportDesignNode-class.md
+- name: Třída SSRSReportPrecisionDesignNode
+  href: SSRSReportPrecisionDesignNode-class.md
+- name: Třída Statement
+  href: Statement-class.md
+- name: Třída Struct
+  href: Struct-class.md
+- name: Třída SurrogateFKReplacementHelper
+  href: SurrogateFKReplacementHelper-class.md
+- name: Třída SysGlobalObjectCache
+  href: SysGlobalObjectCache-class.md
+- name: Třída SystemMonitor
+  href: SystemMonitor-class.md
+- name: Třída systemSequence
+  href: systemSequence-class.md
+- name: Třída TableExtension
+  href: TableExtension-class.md
+- name: Třída TextBuffer
+  href: TextBuffer-class.md
+- name: Třída TextIo
+  href: TextIo-class.md
+- name: Třída TileReference
+  href: TileReference-class.md
+- name: Třída TreeNode
+  href: TreeNode-class.md
+- name: Třída TreeNodeIterator
+  href: TreeNodeIterator-class.md
+- name: Třída TreeNodeType
+  href: TreeNodeType-class.md
+- name: Třída UnitofWork
+  href: UnitofWork-class.md
+- name: Třída UserConnection
+  href: UserConnection-class.md
+- name: Třída UserMenuList
+  href: UserMenuList-class.md
+- name: Třída UserSetup
+  href: UserSetup-class.md
+- name: Třída UtilFile
+  href: UtilFile-class.md
+- name: Třída ValidateEventArgs
+  href: ValidateEventArgs-class.md
+- name: Třída ValidateFieldEventArgs
+  href: ValidateFieldEventArgs-class.md
+- name: Třída ValidateFieldValueEventArgs
+  href: ValidateFieldValueEventArgs-class.md
+- name: Třída VirtualChannelManager
+  href: VirtualChannelManager-class.md
+- name: Třída VSItemNode
+  href: VSItemNode-class.md
+- name: Třída VSProjectFileNode
+  href: VSProjectFileNode-class.md
+- name: Třída VSProjectFolderNode
+  href: VSProjectFolderNode-class.md
+- name: Třída VSProjectLinkNode
+  href: VSProjectLinkNode-class.md
+- name: Třída VSProjectNode
+  href: VSProjectNode-class.md
+- name: Třída VSProjectsNode
+  href: VSProjectsNode-class.md
+- name: Třída VSProjectTypeNode
+  href: VSProjectTypeNode-class.md
+- name: Třída VSS
+  href: VSS-class.md
+- name: Třída VSSItem
+  href: VSSItem-class.md
+- name: Třída WebActionMenuFunction
+  href: WebActionMenuFunction-class.md
+- name: Třída WebContentItem
+  href: WebContentItem-class.md
+- name: Třída webControlNode
+  href: webControlNode-class.md
+- name: Třída WebDisplayContentItem
+  href: WebDisplayContentItem-class.md
+- name: Třída WebletItem
+  href: WebletItem-class.md
+- name: Třída webListDefNode
+  href: webListDefNode-class.md
+- name: Třída WebManagedContentItem
+  href: WebManagedContentItem-class.md
+- name: Třída WebMenu
+  href: WebMenu-class.md
+- name: Třída WebMenuFunction
+  href: WebMenuFunction-class.md
+- name: Třída WebMenuItem
+  href: WebMenuItem-class.md
+- name: Třída webModuleNode
+  href: webModuleNode-class.md
+- name: Třída WebOutputContentItem
+  href: WebOutputContentItem-class.md
+- name: Třída webPageDefNode
+  href: webPageDefNode-class.md
+- name: Třída webStaticFileNode
+  href: webStaticFileNode-class.md
+- name: Třída WebUrlMenuFunction
+  href: WebUrlMenuFunction-class.md
+- name: Třída WinAPINative
+  href: WinAPINative-class.md
+- name: Třída xApplication
+  href: xApplication-class.md
+- name: Třída xArgs
+  href: xArgs-class.md
+- name: Třída xAxaptaUserDetails
+  href: xAxaptaUserDetails-class.md
+- name: Třída xAxaptaUserManager
+  href: xAxaptaUserManager-class.md
+- name: Třída xBrowser
+  href: xBrowser-class.md
+- name: Třída xClassFactory
+  href: xClassFactory-class.md
+- name: Třída xClassTrace
+  href: xClassTrace-class.md
+- name: Třída xCompany
+  href: xCompany-class.md
+- name: Třída xCompilerOutput
+  href: xCompilerOutput-class.md
+- name: Třída XDSServices
+  href: XDSServices-class.md
+- name: Třída xDynamicVarSet
+  href: xDynamicVarSet-class.md
+- name: Třída xExportToExcelController
+  href: xExportToExcelController-class.md
+- name: Třída xFormRun
+  href: xFormRun-class.md
+- name: Třída xGlobal
+  href: xGlobal-class.md
+- name: Třída xInfo
+  href: xInfo-class.md
+- name: Třída xLanguage
+  href: xLanguage-class.md
+- name: Třída xMenuFunction
+  href: xMenuFunction-class.md
+- name: Třída xNavPane
+  href: xNavPane-class.md
+- name: Třída XppCompiler
+  href: XppCompiler-class.md
+- name: Třída XppPrePostArgs
+  href: XppPrePostArgs-class.md
+- name: Třída xRecord
+  href: xRecord-class.md
+- name: Třída xRef
+  href: xRef-class.md
+- name: Třída xResourceNode
+  href: xResourceNode-class.md
+- name: Třída xSession
+  href: xSession-class.md
+- name: Třída xSqlEnumerator
+  href: xSqlEnumerator-class.md
+- name: Třída xToastNotification
+  href: xToastNotification-class.md
+- name: Třída xVersionControl
+  href: xVersionControl-class.md
