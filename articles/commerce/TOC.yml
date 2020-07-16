@@ -92,8 +92,6 @@
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (červenec 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
-                    - name: Commerce 10.0.10 (květen 2020)
-                      href: get-started/whats-new-commerce-10-0-10.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -192,6 +190,8 @@
               items:
                 - name: Přehled architektury Dynamics 365 Commerce
                   href: commerce-architecture.md
+                - name: Toky ověřování Dynamics 365 Commerce
+                  href: arch-auth-flow.md
                 - name: Architektura Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Výběr topologie v obchodu
@@ -748,12 +748,12 @@
               href: edit-audit-retail-transactions.md
             - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
               href: tasks/create-calculate-post-statement-retail-store.md
-            - name: Vylepšení funkcionality zaúčtování výkazů
-              href: statement-posting-eod.md
             - name: Postupné vytváření objednávek pro maloobchodní transakce
               href: trickle-feed.md
             - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
               href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Finanční odsouhlasení v maloobchodních prodejnách
+              href: fin-recon.md
             - name: Vylepšení funkcionality zaúčtování výkazů
               href: statement-posting-eod.md
             - name: Vylepšené zpracování položek sledovaných dávkou
@@ -792,8 +792,6 @@
                   href: configure-your-domain-name.md
                 - name: Nasazení nového klienta elektronického obchodu
                   href: deploy-ecommerce-site.md
-                - name: Nastavení kanálu online obchodu
-                  href: online-stores.md
                 - name: Vytvoření webu elektronického obchodu
                   href: create-ecommerce-site.md
                 - name: Přiřazení webu elektronického obchodu k online kanálu
@@ -816,8 +814,6 @@
               items:
                 - name: Přehled domovské stránky
                   href: quick-tour-home-page.md
-                - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
-                  href: category-search-page-overview.md
                 - name: Přehled stránek s podrobnostmi o produktu
                   href: quick-tour-pdp.md
                 - name: Přehled stránek košíku a pokladny
@@ -996,9 +992,9 @@
                   items:
                     - name: Modul popisu cesty
                       href: add-breadcrumb.md
-            - name: Vyhledávání
+            - name: Hledání
               items:
-                - name: Výchozí cílová stránka kategorie a stránka výsledků hledání
+                - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
                   href: category-search-page-overview.md
                 - name: Přehled hledání využívajícího cloud
                   href: cloud-powered-search-overview.md
@@ -1228,7 +1224,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                        - name: (Elektronické výkaznictví) Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
@@ -1612,7 +1608,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Kurzy
               items:
-                - name: Použití zdrojů dat PŘIPOJIT k získání dat z více aplikačních tabulek
+                - name: Použití zdrojů dat PROPOJENÍ TABULEK k získání dat z více aplikačních tabulek
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
@@ -2000,6 +1996,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurace nastavení motivu
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Konfigurace předvoleb stylu motivu
+                      href: e-commerce-extensibility/theme-style-presets.md
                     - name: Rozšíření motivu pro přidání rozšíření modulů
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Rozšíření motivu ze základního motivu
@@ -2036,6 +2034,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Nastavení kanálu buildu Commerce SDK
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Časté dotazy k Retail SDK
+                  href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozšiřitelnost pokladních míst
               items:
                 - name: Rozložení obrazovky POS
@@ -2046,8 +2046,6 @@
                   href: install-pos-layout-designer.md
                 - name: Rozšíření zobrazení displeje POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: Rozšiřitelnost spouštění Modern POS a Cloud POS
-                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Přidání vlastních ovládacích prvků do POS zobrazení
                   href: dev-itpro/pos-custom-control.md
                 - name: Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek
@@ -2082,7 +2080,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: Volání API POS nebo operací z rozšíření POS
                   href: dev-itpro/pos-api-extension.md
-                - name: Spouštěče Modern POS a tisk
+                - name: Spouštěče Modern POS (MPOS) a tisk
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky
                   href: dev-itpro/pos-control-non-screen.md
