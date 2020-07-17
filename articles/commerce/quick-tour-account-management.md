@@ -1,9 +1,9 @@
 ---
 title: Přehled stránek správy účtů
-description: Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
+description: Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,26 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 722da2755734a85e915dd90e7868a5e1c7753f5a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002951"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527601"
 ---
-# <a name="overview-of-account-management-pages"></a>Přehled stránek správy účtů
-
+# <a name="account-management-pages-overview"></a>Přehled stránek správy účtů
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
+Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Stránky správy účtů umožňují odběratelům zobrazit informace související s jejich účtem a objednávkami. Stránky správy účtů zahrnují cílovou stránku správy účtu, stránky uživatelského profilu, adresy, stránku historie objednávek, stránku podrobností objednávky, věrnostní body a seznam přání.
+Stránky správy účtů umožňují odběratelům zobrazit informace související s jejich účtem a objednávkami. Stránky správy účtů zahrnují cílovou stránku správy účtu, stránky uživatelského profilu, adresy, stránku historie objednávek, stránku podrobností objednávky, věrnostní body a seznam přání.
 
 ### <a name="account-management-landing-page"></a>Cílová stránka správy obchodního vztahu
 
-Když se odběratel přihlásí a vybere **Můj účet**, otevře se úvodní stránka cílová účtu. Na této stránce je uveden rychlý souhrn všech informací souvisejících s účty, jako je například profil uživatele, objednávky, seznam požadovaných adres, adresy, věrnostní body. Na této stránce může odběratel získat přístup k více podrobnostem pro každou oblast.
+Když se odběratel přihlásí a vybere **Můj účet**, otevře se úvodní stránka cílová účtu. Na této stránce je uveden rychlý souhrn všech informací souvisejících s účty, jako je například profil uživatele, objednávky, seznam požadovaných adres, adresy, věrnostní body. Na této stránce může odběratel získat přístup k více podrobnostem pro každou oblast.
 
 Následující ilustrace znázorňuje příklad cílové stránky správy účtu.
 
@@ -45,11 +44,11 @@ Následující ilustrace znázorňuje příklad cílové stránky správy účtu
 
 ### <a name="my-profile-page"></a>Stránka profilu
 
-Stránka **Můj profil** zobrazuje informace o účtu zákazníka, jako je například jeho jméno a telefonní číslo. Zákazník může na této stránce aktualizovat své informace o profilu. Tato stránka může být upravena tak, aby zahrnovala další preference zákaznického účtu, například možnost přihlášení k marketingovému e-mailu.
+Stránka **Můj profil** zobrazuje informace o účtu zákazníka, jako je například jeho jméno a telefonní číslo. Zákazník může na této stránce aktualizovat své informace o profilu. Tato stránka může být upravena tak, aby zahrnovala další preference zákaznického účtu, například možnost přihlášení k marketingovému e-mailu.
 
 Následující ilustrace znázorňuje příklad stránky **Můj profil**, která byla sestavena pomocí Startovní sady.
 
-![Příklad stránky s mým profilem](./media/Account-Management-MyProfile.PNG)
+![Příklad stránky s mým profilem](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Stránka adres
 
@@ -73,7 +72,7 @@ Následující ilustrace znázorňuje příklad stránky **Podrobnosti objednáv
 
 ### <a name="loyalty-program-page"></a>Stránka Věrnostní program
 
-Stránka **Věrnostní program** umožňuje, aby se odběratel stal členem věrnostního programu. Poté, co se odběratel přihlásí k věrnostnímu programu, bude stránka **věrnostní program** obsahovat podrobnosti, jako je například počet získaných bodů a počet bodů, které byly uplatněny.
+Stránka **Věrnostní program** umožňuje, aby se odběratel stal členem věrnostního programu. Poté, co se odběratel přihlásí k věrnostnímu programu, bude stránka **věrnostní program** obsahovat podrobnosti, jako je například počet získaných bodů a počet bodů, které byly uplatněny.
 
 Následující obrázek znázorňuje příklad stránky **Věrnostní program**.
 
@@ -87,15 +86,13 @@ Následující obrázek znázorňuje příklad stránky **Seznam požadovaných 
 
 ![Příklad stránky Seznam požadovaných položek](./media/Account-Management-Wishlist.PNG)
 
-Další informace o modulech správy účtů a o jejich vytváření naleznete v tématu [Správa účtu](account-management.md).
+Další informace o modulech správy účtů a o jejich vytváření naleznete v tématu [Správa účtu](account-management.md).
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled domovské stránky](quick-tour-home-page.md)
 
-[Přehled výchozí kategorie cílové stránky a stránka výsledků hledání](category-search-page-overview.md)
+[Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
 
-[Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
-
-[Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
+[Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
 
