@@ -1,6 +1,6 @@
 ---
 title: Mobilní podpora čárového kódu
-description: Toto téma popisuje způsob nakládání s mobilní skenovací aplikací Warehouse na zařízeních kompatibilních se systémem Android.
+description: Toto téma popisuje způsob nakládání s mobilní skenovací aplikací Warehouse na zařízeních kompatibilních se systémem Android.
 author: Mirzaab
 manager: tfehr
 ms.date: 05/26/2017
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbaed4da3ccd17d83c002994f01829f76db0d36a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0612833391cf7690343b7180f11d49ba1ad92d24
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215739"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530436"
 ---
-# <a name="mobile-barcode-support"></a><span data-ttu-id="62bfe-103">Mobilní podpora čárového kódu</span><span class="sxs-lookup"><span data-stu-id="62bfe-103">Mobile barcode support</span></span>
+# <a name="mobile-barcode-support"></a><span data-ttu-id="57cd1-103">Mobilní podpora čárového kódu</span><span class="sxs-lookup"><span data-stu-id="57cd1-103">Mobile barcode support</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="62bfe-104">Vzhledem k tomu, že Android je otevřený software, každý výrobce hardwaru pro skenery čárového kódu ve skladech může vytvořit zařízení, na kterém lze spustit operační systém Android.</span><span class="sxs-lookup"><span data-stu-id="62bfe-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="62bfe-105">Zařízení je kompatibilní se systémem Android pouze tehdy, pokud na něm lze spustit aplikace napsané pro spouštěcí prostředí Android.</span><span class="sxs-lookup"><span data-stu-id="62bfe-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
-<span data-ttu-id="62bfe-106">Dodavatel hardwaru však může upravit a vytvořit překryvný prvek pro verzi Android, která běží na jeho hardwaru.</span><span class="sxs-lookup"><span data-stu-id="62bfe-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="62bfe-107">Společnost Microsoft nemůže nést žádnou odpovědnost, aby zajistila, že mobilní aplikace skenování čárových kódů pro systém Android je kompatibilní s hardwarem pro skenování čárových kódů výrobce a verzí systému Android, která se na něm spouští.</span><span class="sxs-lookup"><span data-stu-id="62bfe-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
+<span data-ttu-id="57cd1-104">Vzhledem k tomu, že Android je otevřený software, každý výrobce hardwaru pro skenery čárového kódu ve skladech může vytvořit zařízení, na kterém lze spustit operační systém Android.</span><span class="sxs-lookup"><span data-stu-id="57cd1-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="57cd1-105">Zařízení je kompatibilní se systémem Android pouze tehdy, pokud na něm lze spustit aplikace napsané pro spouštěcí prostředí Android.</span><span class="sxs-lookup"><span data-stu-id="57cd1-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
+<span data-ttu-id="57cd1-106">Dodavatel hardwaru však může upravit a vytvořit překryvný prvek pro verzi Android, která běží na jeho hardwaru.</span><span class="sxs-lookup"><span data-stu-id="57cd1-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="57cd1-107">Společnost Microsoft nemůže nést žádnou odpovědnost, aby zajistila, že mobilní aplikace skenování čárových kódů pro systém Android je kompatibilní s hardwarem pro skenování čárových kódů výrobce a verzí systému Android, která se na něm spouští.</span><span class="sxs-lookup"><span data-stu-id="57cd1-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
 
-<span data-ttu-id="62bfe-108">Aplikace Dynamics 365 Supply Chain Management – Sklady byla testována s výběrem zařízení se systémem Android pro skenování čárových kódů.</span><span class="sxs-lookup"><span data-stu-id="62bfe-108">The Dynamics 365 Supply Chain Management - Warehousing app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="62bfe-109">Tyto testy pokrývají pouze vzorek zařízení, která jsou dostupná na trhu.</span><span class="sxs-lookup"><span data-stu-id="62bfe-109">These tests only cover a sample of the devices that are available on the market.</span></span>
+<span data-ttu-id="57cd1-108">Aplikace Dynamics 365 Supply Chain Management – sklady byla testována s výběrem zařízení se systémem Android pro skenování čárových kódů.</span><span class="sxs-lookup"><span data-stu-id="57cd1-108">The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="57cd1-109">Tyto testy pokrývají pouze vzorek zařízení, která jsou dostupná na trhu.</span><span class="sxs-lookup"><span data-stu-id="57cd1-109">These tests only cover a sample of the devices that are available on the market.</span></span>
 
-<span data-ttu-id="62bfe-110">Jako zákazníkovi vám doporučujeme před rozhodnutím o hardwaru, který chcete koupit, vyzkoušet mobilní skenovací aplikaci Warehouse na vybraném hardwaru.</span><span class="sxs-lookup"><span data-stu-id="62bfe-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
+<span data-ttu-id="57cd1-110">Jako zákazníkovi vám doporučujeme před rozhodnutím o hardwaru, který chcete koupit, vyzkoušet mobilní skenovací aplikaci Warehouse na vybraném hardwaru.</span><span class="sxs-lookup"><span data-stu-id="57cd1-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
 
