@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform Update pro 10.0.11 (červenec 2020)
                   href: get-started/whats-new-platform-update-35.md
-                - name: Platform Update pro 10.0.10 (květen 2020)
-                  href: get-started/whats-new-platform-update-34.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce platformy
@@ -713,9 +711,29 @@
                         - name: Události
                           href: dev-ref/xpp-events.md
                     - name: X++ výběr dat a manipulace
-                      href: dev-ref/xpp-data-query.md
-                    - name: Přístup k datům pomocí SysDa API
-                      href: dev-ref/sysda.md
+                      items:
+                        - name: Přehled výběru a manipulace dat X++
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: Vybrat výkaz
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: Vybrat data
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: Vložení dat
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: Aktualizace dat
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: Odstranění dat
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: Příkaz While select
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: Psaní příkazu select jako výrazu
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: Transakční integrita
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: Převod operací z operací založených na sadě na operace záznam po záznamu
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: Přístup k datům pomocí SysDa API
+                          href: dev-ref/sysda.md
                     - name: X++ makra
                       href: dev-ref/xpp-macros.md
                     - name: X++ třidy atributů
@@ -754,76 +772,58 @@
                   href: dev-ref/system-tables.md
                 - name: Systémové třídy
                   items:
-                    - name: Třídy A
-                      href: dev-ref/a-classes.md
-                    - name: Třídy B
-                      href: dev-ref/b-classes.md
-                    - name: Třídy C
-                      href: dev-ref/c-classes.md
-                    - name: Třídy D
-                      href: dev-ref/d-classes.md
-                    - name: Třídy E
-                      href: dev-ref/e-classes.md
-                    - name: Třídy F (FieldBinding až po FormBuildAnimateControl)
-                      href: dev-ref/fieldbinding-classes.md
-                    - name: Třídy F (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-                      href: dev-ref/formbuildbuttoncontrol-classes.md
-                    - name: Třídy F (FormBuildFilterPaneControl až po FormBuildRealControl)
-                      href: dev-ref/formbuildfilterpanecontrol-classes.md
-                    - name: Třídy F (FormBuildReferenceControl až po FormButtonSeparatorControl)
-                      href: dev-ref/formbuildreferencecontrol-classes.md
-                    - name: Třídy F (FormChangeTracker až po FormControlEventArgs)
-                      href: dev-ref/formchangetracker-classes.md
-                    - name: Třídy F (FormDataObject až po FormFastTabHeaderControl)
-                      href: dev-ref/formdataobject-classes.md
-                    - name: Třídy F (FormFastTabSummarySeparator až po FormGridControl)
-                      href: dev-ref/formfasttabsummaryseparator-classes.md
-                    - name: Třídy F (FormGroupControl až po FormIntControl)
-                      href: dev-ref/formgroupcontrol-classes.md
-                    - name: Třídy F (FormListBoxControl až po FormNotifyEventArgs)
-                      href: dev-ref/formlistboxcontrol-classes.md
-                    - name: Třídy F (FormObject až po FormRealControl)
-                      href: dev-ref/formobject-classes.md
-                    - name: Třídy F (FormReferenceControl až po FormStringControl)
-                      href: dev-ref/formreferencecontrol-classes.md
-                    - name: Třídy F (FormTabControl až po FormWindowControl)
-                      href: dev-ref/formtabcontrol-classes.md
-                    - name: Třídy G
-                      href: dev-ref/g-classes.md
-                    - name: Třídy H
-                      href: dev-ref/h-classes.md
-                    - name: Třídy I
-                      href: dev-ref/i-classes.md
-                    - name: Třídy J
-                      href: dev-ref/j-classes.md
-                    - name: Třídy K
-                      href: dev-ref/k-classes.md
-                    - name: Třídy L
-                      href: dev-ref/l-classes.md
-                    - name: Třídy M
-                      href: dev-ref/m-classes.md
-                    - name: Třídy N
-                      href: dev-ref/n-classes.md
-                    - name: Třídy O
-                      href: dev-ref/o-classes.md
-                    - name: Třídy P
-                      href: dev-ref/p-classes.md
-                    - name: Třídy Q
-                      href: dev-ref/q-classes.md
-                    - name: Třídy R
-                      href: dev-ref/r-classes.md
-                    - name: Třídy S
-                      href: dev-ref/s-classes.md
-                    - name: Třídy T
-                      href: dev-ref/t-classes.md
-                    - name: Třídy U
-                      href: dev-ref/u-classes.md
-                    - name: Třídy V
-                      href: dev-ref/v-classes.md
-                    - name: Třídy W
-                      href: dev-ref/w-classes.md
-                    - name: Třídy X
-                      href: dev-ref/x-classes.md
+                    - name: Seznam systémových tříd
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Třídy systému seskupené abecedně
+                      items:
+                        - name: Třídy A
+                          href: dev-ref/a-classes.md
+                        - name: Třídy B
+                          href: dev-ref/b-classes.md
+                        - name: Třídy C
+                          href: dev-ref/c-classes.md
+                        - name: Třídy D
+                          href: dev-ref/d-classes.md
+                        - name: Třídy E
+                          href: dev-ref/e-classes.md
+                        - name: Třídy F
+                          href: dev-ref/f-classes.md
+                        - name: Třídy G
+                          href: dev-ref/g-classes.md
+                        - name: Třídy H
+                          href: dev-ref/h-classes.md
+                        - name: Třídy I
+                          href: dev-ref/i-classes.md
+                        - name: Třídy J
+                          href: dev-ref/j-classes.md
+                        - name: Třídy K
+                          href: dev-ref/k-classes.md
+                        - name: Třídy L
+                          href: dev-ref/l-classes.md
+                        - name: Třídy M
+                          href: dev-ref/m-classes.md
+                        - name: Třídy N
+                          href: dev-ref/n-classes.md
+                        - name: Třídy O
+                          href: dev-ref/o-classes.md
+                        - name: Třídy P
+                          href: dev-ref/p-classes.md
+                        - name: Třídy Q
+                          href: dev-ref/q-classes.md
+                        - name: Třídy R
+                          href: dev-ref/r-classes.md
+                        - name: Třídy S
+                          href: dev-ref/s-classes.md
+                        - name: Třídy T
+                          href: dev-ref/t-classes.md
+                        - name: Třídy U
+                          href: dev-ref/u-classes.md
+                        - name: Třídy V
+                          href: dev-ref/v-classes.md
+                        - name: Třídy W
+                          href: dev-ref/w-classes.md
+                        - name: Třídy X
+                          href: dev-ref/x-classes.md
             - name: Rozšiřitelnost
               items:
                 - name: Domovská stránka pro rozšiřitelnost
@@ -1434,6 +1434,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Export B2B uživatelů do Azure AD
               href: sysadmin/implement-b2b.md
+            - name: Automatizace procesů
+              href: sysadmin/process-automation.md
             - name: Zabezpečení
               items:
                 - name: Zabezpečení na základě rolí
@@ -1458,6 +1460,8 @@
                   href: sysadmin/tasks/assign-users-security-roles.md
                 - name: Diagnostika zabezpečení pro záznamy úkolů
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+            - name: Automatizace procesů
+              href: /sysadmin/process-automation.md
             - name: Dávkové zpracování
               items:
                 - name: Přehled dávkového zpracování
@@ -1518,6 +1522,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: Upgrade AX 2012 – Upgrade dat v prostředích sandbox
                   href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Upgrade AX 2012 - místní prostředí
+                  href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: Upgrade AX 2012 – Přechodové testování
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: Upgrade AX 2012 - Úlohy po upgradu

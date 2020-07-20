@@ -1,6 +1,6 @@
 ---
 title: Řízení pracovníků skladu
-description: Tento článek popisuje, jak aplikace Dynamics 365 Supply Chain Management - Sklady pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+description: Tento článek popisuje, jak aplikace skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205568"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530022"
 ---
 # <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak aplikace Dynamics 365 Supply Chain Management - Sklady pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+Tento článek popisuje, jak aplikace skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 
-Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
+Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
 
-Pro vytvoření nového uživatele práce na stránce **Pracovník** na kartě **Obecné** v části **Sklady** klepněte na položku **Pracovník**. Je nutné zadat ID uživatele, jméno uživatele, výchozí sklad a název nabídky. Tato nabídka se načte, když se uživatel přihlásí do portálu skladu pro mobilní zařízení a umožní vám definovat položky nabídky, ke kterým má uživatel přístup. 
+Pro vytvoření nového uživatele práce na stránce **Pracovník** na kartě **Obecné** v části **Sklady** klepněte na položku **Pracovník**. Je nutné zadat ID uživatele, jméno uživatele, výchozí sklad a název nabídky. Tato nabídka se načte, když se uživatel přihlásí do portálu skladu pro mobilní zařízení a umožní vám definovat položky nabídky, ke kterým má uživatel přístup. 
 
-Jako součást nastavení pro každého pracovního uživatele můžete také definovat určité workflow procesu. Můžete například použít pole **Je supervizorem cyklické inventury** a určíte tak, zda uživatel může provádět úpravy v nesrovnalostech cyklické inventury během operace inventury, nebo zda tyto úpravy je nejdříve nutné zkontrolovat jinou osobou.
+Jako součást nastavení pro každého pracovního uživatele můžete také definovat určité workflow procesu. Můžete například použít pole **Je supervizorem cyklické inventury** a určíte tak, zda uživatel může provádět úpravy v nesrovnalostech cyklické inventury během operace inventury, nebo zda tyto úpravy je nejdříve nutné zkontrolovat jinou osobou.
 
 ## <a name="defining-labor-standards"></a>Definování pracovních norem
 Na stránce **Mzdové standardy** můžete definovat metody výpočtu, které systém používá pro výpočet odhadovaného času, který vyžaduje určitý typ práce. Tuto definici lze nastavit na obecné úrovni nebo na určité úrovni. Můžete například definovat dobu, která má být vyžadována při zpracování výdeje prodejní objednávky podle hmotnosti pro určitou definici jednotky při použití konkrétního procesu výdeje. Současně můžete zaznamenat čas založený na metodě výpočtu, pro uložení operace vydávaných zásob na skladě. 
@@ -43,16 +43,16 @@ Na stránce **Mzdové standardy** můžete definovat metody výpočtu, které sy
 Chcete-li povolit používání pracovních norem, které jste definovali, je nutné vybrat možnost **Povolit pracovní normy** pro každý sklad, kde budou pracovní normy použity.
 
 ## <a name="monitoring-and-controlling-warehouse-work"></a>Sledování a řízení práce ve skladu
-Na stránce **Veškerá práce** můžete sledovat a spravovat všechny práce, které jsou plánovány, probíhají a jsou dokončeny. Na této stránce můžete aktualizovat různé procesy, například přiřazení pracovního uživatele skladu a priorita práce. Můžete také přejít dolů k podrobnostem, které se vztahují k záhlaví práce a řádkům práce pro získání pochopení očekávaných nebo dokončených pracovních procesů. 
+Na stránce **Veškerá práce** můžete sledovat a spravovat všechny práce, které jsou plánovány, probíhají a jsou dokončeny. Na této stránce můžete aktualizovat různé procesy, například přiřazení pracovního uživatele skladu a priorita práce. Můžete také přejít dolů k podrobnostem, které se vztahují k záhlaví práce a řádkům práce pro získání pochopení očekávaných nebo dokončených pracovních procesů. 
 
-Aktivujete-li možnost **Pracovní normy** zobrazí se vám vypočítaný odhadovaný čas pro práci. Poté při zpracování práce se také zobrazí skutečný čas pro každou pracovní operaci. Tímto způsobem můžete porovnat odhadovaný čas s výpočty skutečného času. 
+Aktivujete-li možnost **Pracovní normy** zobrazí se vám vypočítaný odhadovaný čas pro práci. Poté při zpracování práce se také zobrazí skutečný čas pro každou pracovní operaci. Tímto způsobem můžete porovnat odhadovaný čas s výpočty skutečného času. 
 
-Kromě toho můžete využít odhadovaného času v pravidlech pro automatické rozdělení práce při tvorbě práce. Tímto způsobem můžete načíst zůstatek práce na základě očekávaného času k dokončení úlohy. 
+Kromě toho můžete využít odhadovaného času v pravidlech pro automatické rozdělení práce při tvorbě práce. Tímto způsobem můžete načíst zůstatek práce na základě očekávaného času k dokončení úlohy. 
 
-Analýza času který se používá ke zpracování pracovních položek může pomoci zlepšit efektivitu pracovníka skladu. Následující sestavy jsou k dispozici pro pomoc s touto analýzou:
+Analýza času který se používá ke zpracování pracovních položek může pomoci zlepšit efektivitu pracovníka skladu. Následující sestavy jsou k dispozici pro pomoc s touto analýzou:
 
 -   **Práce podle uživatele** – Tato sestava zobrazuje produktivitu pracovníka, která vychází ze skutečného času proti očekávanému času.
--   **Práce podle typu transakce práce** – Pomocí této sestavy můžete analyzovat nedostatky v procesech určitého skladu. Například si všimněte, že vyskladnění pro převodní příkazy trvají delší dobu tento týden než v předchozích týdnech. Potom můžete použít tyto informace pro další analýzu.
+-   **Práce podle typu transakce práce** – Pomocí této sestavy můžete analyzovat nedostatky v procesech určitého skladu. Například si všimněte, že vyskladnění pro převodní příkazy trvají delší dobu tento týden než v předchozích týdnech. Potom můžete použít tyto informace pro další analýzu.
 
 
 

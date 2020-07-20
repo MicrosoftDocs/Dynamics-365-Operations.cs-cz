@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 25. června 2020
+          href: hr-whats-new-2020-06-23.md
         - name: 11. června 2020
           href: hr-whats-new-2020-06-11.md
         - name: 28. května 2020
@@ -141,6 +143,8 @@
           items:
             - name: Získání podpory
               href: hr-admin-troubleshooting-support.md
+            - name: Optimalizace výkonu naplánováním dávkových úloh po hodinách
+              href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimalizace výkonu pomocí úloh automatického vyčištění
               href: hr-admin-troubleshooting-batch-history.md
             - name: Analytické sestavy nejsou aktualizovány

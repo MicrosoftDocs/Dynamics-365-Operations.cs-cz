@@ -3,7 +3,7 @@ title: Přehled domovské stránky
 description: Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025964"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527570"
 ---
-# <a name="overview-of-the-home-page"></a>Přehled domovské stránky
-
+# <a name="home-page-overview"></a>Přehled domovské stránky
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce
 
 ## <a name="overview"></a>Přehled
 
-Domovská stránka je výchozí stránka, na kterou kupující přichází při návštěvě webu e-Commerce. Tato stránka obvykle předběžně obsahuje produkty a promoakce pomocí kombinace marketingových modulů. Domovská stránka by měla být bohatá s obrázky a textem, aby kupující zaujala.
+Domovská stránka je výchozí stránka, na kterou kupující přichází při návštěvě webu e-Commerce. Tato stránka obvykle předběžně obsahuje produkty a promoakce pomocí kombinace marketingových modulů. Domovská stránka by měla být bohatá s obrázky a textem, aby kupující zaujala.
 
 Následující ilustrace znázorňuje příklad domovské stránky, která byla sestavena pomocí Startovní sady a tématu "Fabrikam".
 
@@ -43,36 +42,34 @@ Horní okraj domovské stránky obsahuje záhlaví, ve kterém jsou zobrazeny v�
 
 Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo promoakce pomocí různých modulů Dynamics 365 Commerce:
 
-- **Hlavní** – první položka v horní části hlavního oddílu obvykle zobrazuje jeden nebo více hlavních obrázků, které v obchodě zvýrazní nové produkty a promoakce. Pokud existuje více hlavních obrázků, jsou hostovány v modulu karusel, aby je uživatelé mohli prohlížet.
+- **Hlavní** – první položka v horní části hlavního oddílu obvykle zobrazuje jeden nebo více hlavních obrázků, které v obchodě zvýrazní nové produkty a promoakce. Pokud existuje více hlavních obrázků, jsou hostovány v modulu karusel, aby je uživatelé mohli prohlížet.
 
-    Následující ilustrace znázorňuje příklad domovské stránky, kde první položka v hlavním oddílu je rozvržení Hero modulu bloku obsahu s názvem "nově dorazilo".
+    Následující ilustrace znázorňuje příklad domovské stránky, kde první položka v hlavním oddílu je rozvržení Hero modulu bloku obsahu s názvem "nově dorazilo".
 
     ![Příklad hlavního modulu](./media/Hero.PNG)
 
-- **Propagační** – Propagační modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Propagační rozvržení lze používat nezávisle nebo je lze hostovat v modulu karusel.
+- **Propagační** – Propagační modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Propagační rozvržení lze používat nezávisle nebo je lze hostovat v modulu karusel.
 
-    Na následujícím obrázku je znázorněn příklad rozvržení modulu bloku obsahu s propagačním rozvržením.
+    Na následujícím obrázku je znázorněn příklad rozvržení modulu bloku obsahu s propagačním rozvržením.
 
     ![Příklady propagačních modulů](./media/Feature.PNG)
 
-- **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
-- **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto tématu, zahrnuje modul přehrávače videa.
-- **Blok textu** – modul bloku s formátovaným obsahem lze použít k zobrazení textového obsahu na domovské stránce v rozložení s jedním sloupcem a více sloupci.
-- **Doporučení produktu** – moduly doporučení produktu slouží k zobrazení seznamů, například **Nový**, **Trendující** a **Nejlépe prodávané** na domovské stránce. Tyto seznamy předkládají produkty založené na nákupních trendech a lze je vybrat ručně nebo generovat algoritmem. Pomáhají zákazníkům rychle objevit nejlepší produkty a poté pokračovat v nákupu.
+- **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
+- **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto tématu, zahrnuje modul přehrávače videa.
+- **Blok textu** – modul bloku s formátovaným obsahem lze použít k zobrazení textového obsahu na domovské stránce v rozložení s jedním sloupcem a více sloupci.
+- **Doporučení produktu** – moduly doporučení produktu slouží k zobrazení seznamů, například **Nový**, **Trendující** a **Nejlépe prodávané** na domovské stránce. Tyto seznamy předkládají produkty založené na nákupních trendech a lze je vybrat ručně nebo generovat algoritmem. Pomáhají zákazníkům rychle objevit nejlepší produkty a poté pokračovat v nákupu.
 
     Následující obrázek znázorňuje příklad modulu doporučení produktu na domovské stránce.
 
     ![Příklady modulů doporučení produktu](./media/Recommendations.PNG)
 
 > [!NOTE]
-> Všechny moduly, které jsou zde uvedeny, lze použít na libovolné stránce webu. Jejich umístění na domovské stránce je však důležité, protože tato stránka nejprve komunikuje s vaším webem.
+> Všechny moduly, které jsou zde uvedeny, lze použít na libovolné stránce webu. Jejich umístění na domovské stránce je však důležité, protože tato stránka nejprve komunikuje s vaším webem.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Přehled výchozí kategorie cílové stránky a stránka výsledků hledání](category-search-page-overview.md)
+[Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
 
-[Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
-
-[Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
+[Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)

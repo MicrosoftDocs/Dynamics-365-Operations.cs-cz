@@ -74,8 +74,6 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (červenec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (květen 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -757,7 +755,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                        - name: (Elektronické výkaznictví) Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
@@ -1141,7 +1139,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kurzy
               items:
-                - name: Použití zdrojů dat PŘIPOJIT k získání dat z více aplikačních tabulek
+                - name: Použití zdrojů dat PROPOJENÍ TABULEK k získání dat z více aplikačních tabulek
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1307,7 +1305,7 @@
                   href: inventory/reserve-inventory-quantities.md
                 - name: Rezervace stejné dávky pro prodejní objednávku
                   href: sales-marketing/reserve-same-batch-sales-order.md
-            - name: Řízení skladu
+            - name: Řízení zásob
               items:
                 - name: Uzavřít zásoby
                   href: cost-management/inventory-close.md
@@ -2565,192 +2563,230 @@
           items:
             - name: Přehled řízení skladu
               href: warehousing/warehouse-management-overview.md
-            - name: Konfigurace skladu
+            - name: Příchozí skladové operace
               items:
-                - name: Přehled konfigurace skladu
-                  href: warehousing/warehouse-configuration.md
-                - name: Nastavení skladu pomocí šablony konfigurace skladu
-                  href: inventory/warehouse-template.md
-                - name: Řízení práce pomocí šablon práce a směrnice pro místa
-                  href: warehousing/control-warehouse-location-directives.md
-                - name: Kódy kroku vlny
-                  href: warehousing/wave-step-codes.md
-                - name: Konfigurace zpracování vlny
-                  href: warehousing/tasks/configure-wave-processing.md
-                - name: Automatická aktualizace dodávek
-                  href: warehousing/auto-update-shipment.md
-                - name: Vytvoření profilu skladového místa
-                  href: warehousing/tasks/create-location-profile.md
-                - name: "Konfigurace umístění ve skladu s\_povolenými procesy řízení skladu"
-                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-                - name: Naplánovat využití vytížení
-                  href: warehousing/schedule-load-utilization.md
-                - name: Plánování pracovního vytížení
-                  href: warehousing/schedule-workload-capacity.md
-                - name: Nastavení dispozičních kódů
-                  href: warehousing/tasks/set-up-dispositions-codes.md
-                - name: Měrná jednotka a zásady uskladnění
-                  href: warehousing/unit-measure-stocking-policies.md
-                - name: Obsah skladu v Power BI
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Systémové seskupení na otevřeném seznamu úkolů
-                  href: warehousing/system-group-on-open-work-list.md
-                - name: Rozvržení směrování dokumentu pro popisky registrační značky
-                  href: warehousing/document-routing-layout-for-license-plates.md
-                - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Mobilní podpora čárového kódu
-                  href: warehousing/mobile-barcode-support.md
-                - name: Nastavení skladu pro převodní příkazy
-                  href: warehousing/transfer-orders-warehouse.md
-            - name: Rezervace v řízení skladu
+                - name: Příjemky pro registraci a výdej
+                  items:
+                    - name: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
+                      href: warehousing/inbound-load-handling.md
+                    - name: "Registrace položek pro položky umožňující pokročilé uskladnění s\_použitím deníku doručení zboží"
+                      href: warehousing/tasks/register-items-advanced-warehousing.md
+                    - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
+                      href: warehousing/tasks/register-items-basic-warehousing.md
+                    - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
+                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                    - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
+                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                    - name: Nastavení šablony práce pro nákupní objednávky
+                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                    - name: Směšování dimenzí produktu na skladovém místě
+                      href: warehousing/location-product-dimension-mixing.md
+            - name: Odchozí skladové operace
               items:
-                - name: Flexibilní zásada rezervace dimenze na úrovni skladu
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-            - name: Zásady práce ve skladu
-              items:
-                - name: Přehled zásad práce ve skladu
-                  href: warehousing/warehouse-work-policies.md
-                - name: Nastavení zásad práce ve skladu
-                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                - name: "Pohyb zásob s\_přidruženou prací v řízení skladu"
-                  href: warehousing/move-inventory-associated-work.md
-                - name: Vytvoření pracovní třídy
-                  href: warehousing/tasks/create-work-class.md
-                - name: Řízení pracovníků skladu
-                  href: warehousing/manage-warehouse-workers.md
-                - name: Odložené zpracování práce skladu
-                  href: warehousing/deferred-put.md
-            - name: Cross-docking
-              items:
-                - name: Cross-docking z výrobních příkazů na výstupní překladiště
-                  href: production-control/cross-docking-opportunities.md
-                - name: Dodávka automatického uvolnění pro cross-docking
-                  href: warehousing/auto-release-shipment-for-cross-docking.md
-            - name: Částečné uvolnění a částečná dodávka
-              items:
-                - name: Částečná dodávka nákladu přepravy
-                  href: warehousing/partial-shipping-of-transport-loads.md
-                - name: Vydání dávky částečně rezervovaných převodních příkazů
-                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-            - name: "Výdej a\_balení"
-              items:
-                - name: Nastavení výdejů v seskupení
-                  href: warehousing/set-up-cluster-picking.md
-                - name: Nastavení vytváření kontejnerů
-                  href: warehousing/tasks/set-up-containerization.md
-                - name: Potvrzení dávky a poznávací značky
-                  href: warehousing/batch-and-license-plate-confirmation.md
-                - name: Povolení tisku popisku registrační značky
-                  href: warehousing/tasks/license-plate-label-printing.md
-                - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Potvrzení výdeje kusů
-                  href: warehousing/piece-picking-confirmation.md
-                - name: Obalové materiály a poplatky
-                  href: warehousing/pack-materials-packing-material-fees.md
-                - name: "Nastavení ručního balení (jen ve verzi z\_února 2016 a\_května 2016)"
-                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
-                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                - name: Zrušení práce skladu pro zpracování výjimek
-                  href: warehousing/cancel-warehouse-work.md
-                - name: Systémem řízený výdej v seskupení
-                  href: warehousing/system-directed-cluster-pick.md
-                - name: Seskupování řádků vyskladnění
-                  href: warehousing/pick-line-grouping.md
-            - name: Inventura skladu
-              items:
-                - name: Kódy důvodů pro inventury zásob
-                  href: warehousing/reason-codes-for-counting-journals.md
-                - name: Blokovat zásoby
-                  href: inventory/inventory-blocking.md
-                - name: Cyklická inventura
-                  href: warehousing/cycle-counting.md
-                - name: 'Definování cyklické inventury '
-                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Částečná cyklická inventura místa
-                  href: warehousing/partial-location-cycle-counting.md
-                - name: 'Definování procesu částečné cyklické inventury skladového místa '
-                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Úloha vyčištění položek zásob na skladě v řízení skladu
-                  href: warehousing/onhand-cleanup.md
-                - name: Deník zásob
-                  href: inventory/inventory-journals.md
-                - name: Skladové místo
-                  href: inventory/inventory-locations.md
-                - name: Stav skladu
-                  href: inventory/inventory-statuses.md
-                - name: Počet označení zásob
-                  href: inventory/inventory-tag-counting.md
-            - name: Doplnění
-              items:
-                - name: Přehled doplnění
-                  href: warehousing/replenishment.md
-                - name: Okamžité doplnění
-                  href: warehousing/immediate-replenishment.md
-                - name: Doplnění s kanbany odběru
-                  href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Vytvoření procesu minimálního nebo maximálního doplňování
-                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
-            - name: Instalace a konfigurace skladové aplikace
-              items:
-                - name: Instalace a připojení skladové aplikace
-                  href: warehousing/install-configure-warehousing-app.md
-                - name: Konfigurace názvů polí ve skladové aplikaci
-                  href: warehousing/configure-app-field-names-priorities-warehouse.md
-                - name: Nastavení mobilních zařízení pro práci ve skladu
-                  href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Přijetí registrační značky s aplikací skladu
-                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
-                  href: warehousing/tasks/set-up-mobile-device-menu.md
-                - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
-                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
-                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                - name: Přijetí smíšené registrační značky na mobilním zařízení
-                  href: warehousing/mixed-license-plate-receiving.md
-                - name: Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení
-                  href: warehousing/display-older-batches-within-warehouses.md
-                - name: Vyskladnění nejstarší dávky na mobilním zařízení
-                  href: warehousing/pick-oldest-batch.md
-                - name: Architektura průvodce procesem
-                  href: warehousing/process-guide-framework.md
-            - name: "Upgrade a\_migrace"
-              items:
-                - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
-                  href: warehousing/upgrade-migration-warehouse-management-processes.md
-            - name: Příjemky pro registraci a výdej
-              items:
-                - name: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
-                  href: warehousing/inbound-load-handling.md
-                - name: "Registrace položek pro položky umožňující pokročilé uskladnění s\_použitím deníku doručení zboží"
-                  href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
-                  href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
-                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
-                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Nastavení šablony práce pro nákupní objednávky
-                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
-            - name: Zásady konsolidace dodávek
-              items:
+                - name: Rezervace v řízení skladu
+                  items:
+                    - name: Flexibilní zásada rezervace dimenze na úrovni skladu
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Částečné uvolnění a částečná dodávka
+                  items:
+                    - name: Částečná dodávka nákladu přepravy
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: Vydání dávky částečně rezervovaných převodních příkazů
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                - name: "Výdej a\_balení"
+                  items:
+                    - name: Nastavení výdejů v seskupení
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: Nastavení vytváření kontejnerů
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Potvrzení dávky a poznávací značky
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: Povolení tisku popisku registrační značky
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Potvrzení výdeje kusů
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: Obalové materiály a poplatky
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: "Nastavení ručního balení (jen ve verzi z\_února 2016 a\_května 2016)"
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: Zrušení práce skladu pro zpracování výjimek
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: Systémem řízený výdej v seskupení
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: Pořadí práce řízené systémem
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: Seskupování řádků vyskladnění
+                      href: warehousing/pick-line-grouping.md
+                    - name: Skladový slotting
+                      href: warehousing/warehouse-slotting.md
+                - name: Doplnění
+                  items:
+                    - name: Přehled doplnění
+                      href: warehousing/replenishment.md
+                    - name: Okamžité doplnění
+                      href: warehousing/immediate-replenishment.md
+                    - name: Doplnění s kanbany odběru
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: Vytvoření procesu minimálního nebo maximálního doplňování
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: Doplnění prahu zóny
+                      href: warehousing/zone-threshold-replenishment.md
+                - name: Sestavení nákladu a dodávky
+                  items:
+                    - name: Potvrdit a převést
+                      href: warehousing/confirm-and-transfer.md
+                    - name: Rozšířené sestavení nákladu během vlny
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: Pravidlo uvolnění do skladu
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: Seskupení šablon vlny
+                      href: warehousing/wave-template-grouping.md
                 - name: Zásady konsolidace dodávek
-                  href: warehousing/about-shipment-consolidation-policies.md
-                - name: Konfigurace zásad konsolidace dodávek
-                  href: warehousing/configure-shipment-consolidation-policies.md
-                - name: Scénář 1 - Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
-                  href: warehousing/consolidate-shipments-automatic.md
-                - name: 'Scénář 2 - Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu'
-                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                - name: Scénář 3 - Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení
-                  href: warehousing/consolidate-shipments-load-planning-workbench.md
-                - name: Scénář 4 - Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
-                  href: warehousing/consolidate-shipments-manual-workbench.md
-                - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
-                  href: warehousing/consolidate-shipments-manual-form.md
+                  items:
+                    - name: Zásady konsolidace dodávek
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: Konfigurace zásad konsolidace dodávek
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: Scénář 1 - Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: 'Scénář 2 - Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu'
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: Scénář 3 - Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: Scénář 4 - Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
+                      href: warehousing/consolidate-shipments-manual-form.md
+            - name: Napříč operacemi skladu
+              items:
+                - name: Zásady práce ve skladu
+                  items:
+                    - name: Přehled zásad práce ve skladu
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Nastavení zásad práce ve skladu
+                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                    - name: "Pohyb zásob s\_přidruženou prací v řízení skladu"
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: Vytvoření pracovní třídy
+                      href: warehousing/tasks/create-work-class.md
+                    - name: Řízení pracovníků skladu
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: Odložené zpracování práce skladu
+                      href: warehousing/deferred-put.md
+                - name: Cross-docking
+                  items:
+                    - name: Cross-docking z výrobních příkazů na výstupní překladiště
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Dodávka automatického uvolnění pro cross-docking
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: Plánovaný cross docking
+                      href: warehousing/planned-cross-docking.md
+                - name: Inventura skladu
+                  items:
+                    - name: Kódy důvodů pro inventury zásob
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: Blokovat zásoby
+                      href: inventory/inventory-blocking.md
+                    - name: Cyklická inventura
+                      href: warehousing/cycle-counting.md
+                    - name: 'Definování cyklické inventury '
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: Částečná cyklická inventura místa
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: 'Definování procesu částečné cyklické inventury skladového místa '
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Úloha vyčištění položek zásob na skladě v řízení skladu
+                      href: warehousing/onhand-cleanup.md
+                    - name: Deník zásob
+                      href: inventory/inventory-journals.md
+                    - name: Skladové místo
+                      href: inventory/inventory-locations.md
+                    - name: Stav zásob
+                      href: inventory/inventory-statuses.md
+                    - name: Počet označení zásob
+                      href: inventory/inventory-tag-counting.md
+                - name: Práce skladu
+                  items:
+                    - name: Podrobnosti řádku práce
+                      href: warehousing/work-line-details.md
+                    - name: Umístění registrační značky místa
+                      href: warehousing/location-license-plate-positioning.md
+            - name: Nastavení skladu
+              items:
+                - name: Konfigurace skladu
+                  items:
+                    - name: Přehled konfigurace skladu
+                      href: warehousing/warehouse-configuration.md
+                    - name: Nastavení skladu pomocí šablony konfigurace skladu
+                      href: inventory/warehouse-template.md
+                    - name: Řízení práce pomocí šablon práce a směrnice pro místa
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: Kódy kroku vlny
+                      href: warehousing/wave-step-codes.md
+                    - name: Konfigurace zpracování vlny
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: Automatická aktualizace dodávek
+                      href: warehousing/auto-update-shipment.md
+                    - name: Vytvoření profilu skladového místa
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: "Konfigurace umístění ve skladu s\_povolenými procesy řízení skladu"
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: Stav umístění ve skladu
+                      href: warehousing/warehouse-location-status.md
+                    - name: Další zóna skladového místa
+                      href: warehousing/additional-location-zones.md
+                    - name: Naplánovat využití vytížení
+                      href: warehousing/schedule-load-utilization.md
+                    - name: Plánování pracovního vytížení
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: Nastavení dispozičních kódů
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: Měrná jednotka a zásady uskladnění
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: Obsah skladu v Power BI
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: Systémové seskupení na otevřeném seznamu úkolů
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: Rozvržení směrování dokumentu pro popisky registrační značky
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Mobilní podpora čárového kódu
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Nastavení skladu pro převodní příkazy
+                      href: warehousing/transfer-orders-warehouse.md
+                - name: Instalace a konfigurace aplikace skladu
+                  items:
+                    - name: Instalace a připojení aplikace skladu
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Konfigurace názvů polí v aplikaci skladu
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Nastavení mobilních zařízení pro práci ve skladu
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Přijetí registrační značky s aplikací skladu
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Přijetí smíšené registrační značky na mobilním zařízení
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Vyskladnění nejstarší dávky na mobilním zařízení
+                      href: warehousing/pick-oldest-batch.md
+                    - name: Architektura průvodce procesem
+                      href: warehousing/process-guide-framework.md
+                - name: "Upgrade a\_migrace"
+                  items:
+                    - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Vývoj aplikace Supply Chain Management
           items:
             - name: Průvodce vývojem Ganttova diagramu

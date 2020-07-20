@@ -1,9 +1,9 @@
 ---
 title: Nastavení online kanálu
-description: Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
+description: Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,46 +17,46 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002420"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533314"
 ---
 # <a name="set-up-an-online-channel"></a>Nastavení online kanálu
 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
+Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Dynamics 365 Commerce podporuje více maloobchodních sítí. Tyto maloobchodní kanály zahrnují online obchody, kontaktní střediska a maloobchody (neboli kamenné obchody). Online obchody nabízí zákazníkům možnost nákupu produktů prodejce online i v maloobchodě.
+Dynamics 365 Commerce podporuje více maloobchodních sítí. Tyto maloobchodní kanály zahrnují online obchody, kontaktní střediska a maloobchody (neboli kamenné obchody). Online obchody nabízí zákazníkům možnost nákupu produktů prodejce online i v maloobchodě.
 
-Chcete-li vytvořit online obchod v rámci služby Commerce, musíte nejprve vytvořit online kanál. 
+Chcete-li vytvořit online obchod v rámci služby Commerce, musíte nejprve vytvořit online kanál. Před vytvořením nového online kanálu se ujistěte, že jste splnili [Požadavky pro zřízení kanálů](channels-prerequisites.md).
 
-Před vytvořením nového online kanálu se ujistěte, že jste splnili [Požadavky pro zřízení kanálů](channels-prerequisites.md).
+Než bude možné vytvořit nový web, musí být v aplikaci Commerce vytvořen alespoň jeden online obchod. Další informace najdete v části [Vytvoření webu elektronického obchodu](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Vytvořit a konfigurovat nový online kanál
 
 Chcete-li vytvořit a konfigurovat nový online kanál, postupujte dle těchto kroků.
 
-1. V navigačním podokně přejděte na **Moduly \> Kanály \> Online obchody**.
-1. V podokně akcí zvolte **Nový**.
+1. V navigačním podokně přejděte na **Moduly \> Kanály \> Online obchody**.
+1. V podokně akcí zvolte **Nový**.
 1. Do pole **Název** zadejte název nového kanálu.
-1. V rozevíracím seznamu **Právnícká osoba** zadejte příslušnou právnickou osobu.
+1. V rozevíracím seznamu **Právnícká osoba** zadejte příslušnou právnickou osobu.
 1. Do rozevíracího seznamu **Sklad** zadejte příslušný sklad.
-1. V poli **Uložené časové pásmo** vyberte příslušné časové pásmo.
-1. V poli **Měna** vyberte příslušnou měnu.
+1. V poli **Uložené časové pásmo** vyberte příslušné časové pásmo.
+1. V poli **Měna** vyberte příslušnou měnu.
 1. Do pole **Výchozí odběratel** zadejte platného výchozího odběratele.
-1. V poli **Adresář odběratele** zadejte platný adresář.
-1. V poli **Funkční profil** vyberte funkční profil, pokud je k dispozici.
-1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
-1. V podokně akcí vyberte **Uložit**.
+1. V poli **Adresář odběratele** zadejte platný adresář.
+1. V poli **Funkční profil** vyberte funkční profil, pokud je k dispozici.
+1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
+1. V podokně akcí vyberte **Uložit**.
 
-V následujícím obrázku je znázorněno vytvoření nového online kanálu.
+V následujícím obrázku je znázorněno vytvoření nového online kanálu.
 
 ![Nvý online kanál](media/channel-setup-online-1.png)
 
@@ -70,7 +70,7 @@ Pokud váš web e-Commerce bude podporovat více jazyků, rozbalte část **Jazy
 
 ## <a name="set-up-payment-account"></a>Nastavit účet platby
 
-V části **Platební účet** můžete přidat poskytovatele plateb třetí strany. Informace o nastavení platebního konektoru Adyen naleznete v tématu [Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md).
+V části **Platební účet** můžete přidat poskytovatele plateb třetí strany. Informace o nastavení platebního konektoru Adyen naleznete v tématu [Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-set-up"></a>Nastavení dodatečného kanálu
 
@@ -82,14 +82,14 @@ Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek**, 
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
-Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
+Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
 
-1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
-1. V podokně akcí zvolte **Nový**.
-1. V navigačním podokně vyberte požadovaný způsob platby.
-1. V části **Obecné** zadejte **Název operace** a nakonfigurujte další požadovaná nastavení.
+1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
+1. V podokně akcí zvolte **Nový**.
+1. V navigačním podokně vyberte požadovaný způsob platby.
+1. V části **Obecné** zadejte **Název operace** a nakonfigurujte další požadovaná nastavení.
 1. Konfigurujte libovolná další nastavení, která jsou požadována pro typ platby.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
@@ -97,13 +97,13 @@ Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
-Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
+Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
 
 Chcete-li změnit nebo přidat způsob dodání, postupujte podle následujících kroků.
 
-1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
-1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
-1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
+1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
+1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
@@ -113,11 +113,11 @@ Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
 Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujících pokynů.
 
-1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Přiřazení skupiny plnění**.
-1. V podokně akcí zvolte **Nový**.
-1. V rozevíracím seznamu **Skupina plnění** vyberte skupinu plnění.
-1. V rozevíracím sezamu **Popis** zadejte popis.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Přiřazení skupiny plnění**.
+1. V podokně akcí zvolte **Nový**.
+1. V rozevíracím seznamu **Skupina plnění** vyberte skupinu plnění.
+1. V rozevíracím sezamu **Popis** zadejte popis.
+1. V podokně akcí vyberte **Uložit**.
 
 Následující obrázek znázorňuje příklad nastavení přiřazení skupiny plnění.
 
