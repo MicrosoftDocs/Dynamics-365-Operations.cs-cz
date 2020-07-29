@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Export B2B uživatelů do Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Automatizace procesů
-              href: sysadmin/process-automation.md
             - name: Zabezpečení
               items:
                 - name: Zabezpečení na základě rolí
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Přiřazení uživatelů k rolím zabezpečení
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Import nebo export přizpůsobené konfigurace zabezpečení pomocí správy dat
+                  href: sysadmin/import-export-customized-security.md
                 - name: Diagnostika zabezpečení pro záznamy úkolů
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Rozšiřitelné zásady zabezpečení dat
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Vytvoření zásad zabezpečení
+                  href: sysadmin/create-simple-security-policy.md
             - name: Automatizace procesů
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Dávkové zpracování
               items:
                 - name: Přehled dávkového zpracování
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Možnosti filtrování
                   href: user-interface/filtering.md
-                - name: Ovládací prvek hostitele PowerApps
+                - name: Ovládací prvek hostitele Power Apps
                   href: user-interface/powerapps-host-control.md
             - name: Správa okna
               items:
