@@ -3,7 +3,7 @@ title: Řízení výkonnosti
 description: Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430433"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609765"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
 
@@ -145,9 +145,9 @@ Na stránce měření můžete vytvářet standardní měření, která budou po
 
 ### <a name="performance-journal-source-types"></a>Typy zdrojů deníku výkonnosti
 
-Typy zdrojů deníků výkonnosti popisují, odkud pochází deníky výkonnosti. Můžete vidět, zda položka deníku bude ve výchozím nastavení zobrazována pouze pro manažera, pouze pro zaměstnance nebo pro manažera i zaměstnance. Můžete také povolit nebo zakázat funkci Udělit pochvalu tím, že změníte typ zdroje Pochvala. Jiné typy zdrojů nemůžete momentálně zakázat.
+Typy zdrojů deníků výkonnosti popisují, odkud pochází deníky výkonnosti. Můžete vidět, zda položka deníku bude ve výchozím nastavení zobrazována pouze pro manažera, pouze pro zaměstnance nebo pro manažera i zaměstnance. Typy zdrojů nemůžete momentálně zakázat.
 
-### <a name="review-types"></a>Typy přezkoumání
+### <a name="review-types"></a>Typy kontroly
 
 Typy přezkoumání výkonnosti vám pomáhají s řízením průběhu přezkoumání. Můžete povolit nebo zakázat pracovní postup přezkoumání. Pokud přezkoumání nepoužívá pracovní postup, můžete definovat výchozí stav, který bude používán při vytvoření přezkoumání. Můžete také rozhodnout, zda bude muset přezkoumání podepsat zaměstnanec, manažer nebo oba.
 

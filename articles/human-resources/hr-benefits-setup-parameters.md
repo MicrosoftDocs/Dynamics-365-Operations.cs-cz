@@ -3,7 +3,7 @@ title: Nastavení parametrů správy zaměstnaneckých výhod
 description: Nakonfigurujte parametry pro správu zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3e001c08751ea9c8bcab0e11a04b6cf639e51d1d
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429976"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599349"
 ---
 # <a name="set-benefits-management-parameters"></a>Nastavení parametrů správy zaměstnaneckých výhod
 
@@ -31,7 +31,7 @@ Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resou
 
 ## <a name="configure-general-parameters"></a>Konfigurace všeobecných parametrů
 
-1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Parametry**.
+1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Sdílené parametry lidských zdrojů**.
 
 2. Na kartě **Obecné** zadejte hodnoty pro následující pole:
 
@@ -43,8 +43,10 @@ Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resou
    | **Znovu otevřít kód důvodu** | Kód důvodu, který má být použit při zrušení plánu zaměstnaneckých výhod, se znovu otevře. V průběhu procesu stornování se zobrazí dialogové okno. Uživatelé jej mohou v případě potřeby změnit v okně **Znovu otevřít kód důvodu zrušení**. | 
    | **Kód důvodu životní události** | Kód důvodu, který má být použit při výskytu životní události. |
    | **Kód důvodu změny sazby** | Kód důvodu, který má být použit při zrušení a opětovném otevření plánu zaměstnaneckých výhod během procesu aktualizace změny sazby. Informuje o tom, které záznamy byly změněny procesem aktualizace změny sazby. |
+   | **Roční výplata zaměstnaneckých výhod** | Umožňuje nastavit a částku **Roční výplata benefitů** pro zaměstnance. Human Resources budou využívat částku **Roční výplata benefitů** při určování částek krytí, namísto pevné roční náhrady. |
    | **Nově přijatý zaměstnanec je způsobilý** | Určuje, zda mají nově přijatí zaměstnanci nárok na podporu. |
-   | **Období registrace nového zaměstnance** | Časové období, kdy je povolena registrace nově přijatého zaměstnance.</br></br>**Poznámka**: Toto nastavení přepíše jakékoli období registrace nově přijatého zaměstnance, které je nastaveno pro pravidlo nároku na plán. | 
+   | **Období registrace nového zaměstnance** | Časové období, kdy je povolena registrace nově přijatého zaměstnance.</br></br>**Poznámka**: Toto nastavení přepíše jakékoli období registrace nově přijatého zaměstnance, které je nastaveno pro pravidlo nároku na plán. |
+   | **Výchozí frekvence plateb** | Výchozí frekvence výplaty, která se použije při přidávání nových pracovníků. |
    | **Životní události povoleny** | Povolí životní události. |
    | **Skrýt staré formuláře zaměstnaneckých výhod** | Umožňuje skrýt starší formuláře zaměstnaneckých výhod. |
 
@@ -52,7 +54,7 @@ Před nastavením plánů pracovního volna v Microsoft Dynamics 365 Human Resou
 
 ## <a name="configure-employee-self-service-parameters"></a>Konfigurace parametrů samoobsluhy zaměstnance
 
-1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Parametry**.
+1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Parametry lidských zdrojů**.
 
 2. Na kartě **Samoobsluha zaměstnance** zadejte hodnoty pro následující pole:
 

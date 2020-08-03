@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a7a26d8c506a9e61f6e4319a33176b4e92fc30ad
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411405"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598077"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -42,48 +42,30 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 |Země|Plánované datum vydání|Verze vydání|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
-|      Brazílie         |   Duben 2020 – leden 2020      | 10,0,10, 10,0,9HF      |   DRCST SC – Nařízení SEF číslo 416    |
-|      Brazílie         |   2020. duben      | 10.0.10      |   SPED Contribuições (PIS/COFINS) – blokuje M115 a M515    |
-|      Brazílie         |   2020. duben      | 10.0.10      |   Sped příspěvky – záznam aktualizací C100 a D100, pokud nelze obnovit kredit    |
-|      Brazílie         |   Duben 2020 – leden 2020     | 10,0,10, 10,0,9HF      |   Příspěvek SPED – rozložení pro leden-2020    |
-|      Brazílie         |   2020. březen       | 10.0.9      |   SPED fiskální – změny v poli D100 záznamu COD_MUN_ORI    |
-|      Brazílie         |   Březen 2020 - leden 2020       | 10.0.9      |   DRCST SC – Nařízení SEF číslo 254/19    |
-|      Brazílie         |   Březen 2020 - leden 2020       | 10.0.9      |   Sped Fiscal Layout 014 |
-|      Brazílie         |   Březen 2020 - leden 2020       | 10.0.9      |   DRCST SC – Nařízení SEF číslo 343DR   |
-|      Brazílie         |   Květen 2020 - březen 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
-|      Brazílie         |   Květen 2020 - duben 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   Technická poznámka NT 2019.001 v1.40   |
-|      Brazílie         |   2020. květen      | 10.0.12, 10.0.11HF, 10.0.10HF,      |   Prohlášení ADCR ICMS-ST pro stát Parana   |
+|      Brazílie         |   2020. březen      | 10.0.11      |   SPED ECD layout 8   |
+|      Brazílie         |   2020. duben      | 10.0.11      |   Technická poznámka NT 2019.001 v1.40   |
+|      Brazílie         |   2020. květen      | 10.0.12, 10.0.11HF      |   Prohlášení ADCR ICMS-ST pro stát Parana   |
+|      Brazílie         |   Červenec 2020 - květen 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
+|      Brazílie         |   Červenec 2020      | 10.0.13, 10.0.12HF      |   SPED Fiscal - Záznam C176 - Stav RS   |
+|      Česká republika      |   Červenec 2020      | 10.0.13      |   Změny kontrolního výpisu DPH ve schématu XML (výpis faktur)   |
+|      Česká republika         |   Červenec 2020      | 10.0.13      |   Prohlášení o DPH v XML, náhled prohlášení o DPH v Excelu a formáty XML pro kontrolu DPH založené na modelu daňového přiznání   |
 |      Estonsko         |   2020. květen       | 10.0.11      |   Elektronická fakturace v Estonsku: export faktur zákazníkům v estonském specifickém formátu verze 1.2.  |
-|      Francie         |   2020. duben       | 10.0.10      |   Vykázání právních poplatků finančnímu úřadu pro samostatně výdělečně činné osoby (DAS2)    |
-|      Francie         |   2020. březen       | 10.0.9      |   Lokalizace do francouzštiny: ISO 20022 formát pro mezinárodní platbu a přenos pokladny    |
 |      Německo         |   2020. květen       | 10.0.12      |   Německo - maloobchod - požadavky na pokladnu    |
-|      Maďarsko         |   Květen 2020 - březen 2020       | 10.0.11, 10.0.10, 10.0.9HF     |   Fakturační systém online v.2.0 v řešení Finance and Operations    |
-|      Indie         |   2020. březen      | 10.0.9      |   Nový GSTR (ANX-1 & ANX-2) nástroj pro offline vracení    |
+|      Maďarsko         |   2020. březen       | 10.0.11     |   Fakturační systém online v.2.0 ve Finance and Operations    |
 |      Indie         |   2020. květen      | 10.0.12      |   Zlepšení manipulace s jednotkovou cenou a cenou v příkazech k převodu akcií  |
-|      Itálie         |   2020. březen      | 10.0.9      |   Maloobchod - správa informací o odběrateli v POS |
-|      Itálie         |   2020. březen      | 10.0.9      |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce |
-|      Itálie         |   2020. květen      | 10.0.12. 10.0.11      |   Změna formátu Modello 770/2019 |
-|      Japonsko          |   2020. březen     | 10.0.9     |   Japan Bankers Association nahrazující platební formáty JBA pevné délky s ISO20022 |
-|      Japonsko          |   2020. leden      | 10.0.8       |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba (Sestava spotřební daně) |
-|      Nizozemsko          |   2020. duben   | 10.0.10     |   Nová verze taxonomie pro Nizozemsko – NT14 |
-|      Norsko          |   2020. březen   | 10.0.9     |   Aktualizace SAF-T XSD do verze 1.1 pro Dynamics 365 for Finance and Operations |
-|      Norsko          |   2020. květen   | 10.0.12     |   Redesign výkazu SAF-T: Počáteční zůstatky podle typu „provozní“ transakce a daňových informací v měně daňového kódu v modulu Finance (v.10) |
+|      Indie         |   2020. květen      | 10.0.12      |   Převod akcií se stejnou použitelností daňové sazby v době odeslání a přijetí (včetně částečného příjmu)  |
+|      Itálie         |   2020. květen      | 10.0.12, 10.0.11      |   Změna formátu Modello 770/2019 |
+|      Itálie         |   Červenec 2020      | 10.0.13, 10.0.12HF      |   Změny ve formátu italských elektronických faktur - FatturaPA |
+|      Norsko          |   2020. květen   | 10.0.12     |   Redesign výkazu SAF-T: Počáteční zůstatky podle typu „provozní“ transakce a daňových informací v měně daňového kódu v modulu Finance (verze 10) |
 |      Norsko          |   2020. květen   | 10.0.12     |   Změna dialogového okna sestavy SAF-T: k poskytnutí možnosti výběru kontaktní osoby napříč společnostmi |
 |      Norsko          |   2020. květen   | 10.0.12     |   SAF-T Názvy mezer na každém řádku namísto pouze v záhlaví |
-|      Polsko          |   2020. březen    | 10.0.9     |   Registr DPH nákupu a SAF DPH: vlastní agentura z dokumentů SAD musí být nahrazena názvem třetí strany a číslem osvobození od daně |
-|      Polsko          |   Březen 2020 - leden 2020   | 10.0.9     |   Maloobchod - správa informací o odběrateli v POS |
-|      Polsko          |   Březen 2020 - leden 2020     | 10.0.9    |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce |
-|      Polsko          |   2020. březen     | 10.0.9     |   SAF faktury (JPK_FA) v.3 z 2. prosince 2019 |
-|      Polsko          |   2020. duben     | 10.0.10, 10.0.9     |   JPK_VDEK nahrazující JPK_VAT (SAF VAT) |
 |      Polsko          |   2020. květen     | 10.0.11     |   Rozdělit částku realizovaných kurzových rozdílů závazků/pohledávek na kurzový rozdíl netto hodnoty faktury a částky DPH  |
 |      Polsko          |   2020. květen     | 10.0.11     |   SAF účetní knihy – vylepšení filtrování vrstev pro zaúčtování |
-|      Polsko          |   2020. květen     | 10.0.11     |   JPK_VDEK dodatečná balení I |
+|      Polsko          |   2020. březen     | 10.0.11     |   JPK_VDEK dodatečná balení I |
 |      Polsko          |   2020. květen     | 10.0.12     |   JPK_VDEK dodatečná balení II |
-|      Polsko          |   2020. květen     | 10.0.11     |   Částečný dobropis na prodejní objednávku se zálohovou fakturou |
-|      Rusko          |   2020. březen     | 10.0.9     |   Formát daňového prohlášení o dani z majetku pro výkaznictví 2019 |
-|      Rusko          |   2020. březen     | 10.0.9     |   Aktualizace formátu daňového přiznání pro daň ze zisku |
-|      Švýcarsko           |   2020. březen     | 10.0.9      |   Platební poukázka pro švýcarskou platbu ISR má nový formát (QR kód) |
-|      Spojené království           |   2020. duben     | 10.0.10      |   Doplňující balík ochrany proti podvodům MTD |
+|      Polsko          |   2020. březen     | 10.0.11     |   Částečný dobropis na prodejní objednávku se zálohovou fakturou |
+|      Polsko          |   Červenec 2020     | 10.0.13     |   Povinná vylepšení rozdělené platby |
+|      Rusko          |   Červenec 2020     | 10.0.13    |   Výpočet odpisů na základě pořizovacích nákladů a velkých oprav s použitím odpisového bonusu v daňovém účetnictví  |
 
 
 

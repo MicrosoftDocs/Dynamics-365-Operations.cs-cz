@@ -3,7 +3,7 @@ title: Pracovní prostor plateb dodavatelů
 description: Toto téma obsahuje informace o pracovním prostoru Platby dodavatele. Pracovní prostor Platby dodavatele zobrazuje informace související se zpracováním dodavatelských plateb.
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225006"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598102"
 ---
 # <a name="vendor-payments-workspace"></a>Pracovní prostor plateb dodavatelů
 
@@ -34,9 +34,10 @@ Pracovní prostor **Platby dodavatele** zobrazuje informace související se zpr
 
 Následující nastavení je nutné dokončit, aby bylo možné zobrazit data ve vizuálech Power BI **Platby dodavatele**.
 1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
-2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**. 
-2. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
-3. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **VendPaymentBIMeasureV2**. 
+2. Přejděte na **Hlavní kniha > Kalendáře > Fiskální kalendáře** k ověření dat fiskálního kalendáře přiřazených k aktivnímu časovému období.
+3. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**. 
+4. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou a mezi zúčtovací měnou a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+5. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **VendPaymentBIMeasureV2**.
 
 ## <a name="my-work-view"></a>Zobrazení Moje práce
 

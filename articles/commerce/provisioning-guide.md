@@ -1,9 +1,9 @@
 ---
-title: Zřízení prostředí Preview aplikace Dynamics 365 Commerce
-description: Toto téma vysvětluje, jak zřídit ukázkové prostředí v Microsoft Dynamics 365 Commerce.
+title: Zřízení prostředí vyhodnocení Dynamics 365 Commerce
+description: Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 06/02/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,73 +18,48 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426458"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599843"
 ---
-# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Zřízení prostředí Preview aplikace Dynamics 365 Commerce
-
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak zřídit ukázkové prostředí v Dynamics 365 Commerce.
+Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 
 Než začnete, doporučujeme vám toto téma rychle prohledat, abyste získali představu o tom, co proces vyžaduje.
 
 > [!NOTE]
-> Pokud ještě nemáte přístup k Dynamics 365 Commerce Preview, můžete si vyžádat přístup k náhledu z webu [Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite).
+> Prostředí vyhodnocení Commerce nejsou obecně dostupná a jsou poskytována partnerům a zákazníkům na základě žádosti. Podrobnější informace získáte od kontaktu společnosti Microsoft.
 
 ## <a name="overview"></a>Přehled
 
-Chcete-li úspěšně zřídit prostředí pro náhled Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
+Chcete-li úspěšně zřídit prostředí pro hodnocení Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít, když se chystáte ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 
-Po úspěšném zřízení ukázkového prostředí Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete vyhodnotit. Volitelné kroky můžete vždy dokončit později.
+Po úspěšném zřízení prostředí vyhodnocení Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete vyhodnotit. Volitelné kroky můžete vždy dokončit později.
 
-Informace o konfiguraci prostředí pro náhled Commerce po jeho vytvoření najdete v části [konfigurace prostředí pro náhled Commerce](cpe-post-provisioning.md). Informace o konfiguraci volitelných funkcí prostředí pro náhled Commerce najdete v části [konfigurace volitelných funkcí prostředí pro náhled Commerce](cpe-optional-features.md).
-
-Pokud máte dotazy týkající se kroků zřizování nebo pokud se vyskytnou nějaké problémy, sdělte je společnosti Microsoft na [Microsoft Dynamics 365 Commerce, skupina náhledu Yammer](https://aka.ms/Dynamics365CommercePreviewYammer).
+Informace o konfiguraci prostředí vyhodnocení Commerce po jeho vytvoření najdete v části [konfigurace prostředí vyhodnocení Commerce](cpe-post-provisioning.md). Informace o konfiguraci volitelných funkcí prostředí vyhodnocení Commerce najdete v části [konfigurace volitelných funkcí prostředí vyhodnocení Commerce](cpe-optional-features.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Aby bylo možné zřídit prostředí pro náhled Commerce, musí být zavedeny následující předpoklady:
+Aby bylo možné zřídit prostředí vyhodnocení Commerce, musí být zavedeny následující předpoklady:
 
 - Máte přístup k portálu Microsoft Dynamics Lifecycle Services (LCS).
 - Jste stávajícím partnerem Microsoft Dynamics 365 nebo odběratelem a máte možnost vytvořit projekt Dynamics 365 Commerce.
-- Byli jste přijati do programu náhledu Dynamics 365 Commerce.
-- Máte požadovaná oprávnění k vytvoření projektu pro **migraci, vytvoření řešení a další informace**.
-- Máte roli **Správce prostředí** nebo **Vlastník projektu** v projektu, kde se chystáte zřídit prostředí.
-- Máte přístup pro správu ke svému předplatnému Microsoft Azure nebo jste v kontaktu se správcem předplatného, který může provést dva kroky, které pro vás vyžadují oprávnění správce.
+- Máte přístup správce k vašemu předplatnému Microsoft Azure nebo jste v kontaktu se správcem předplatného, který vám může v případě potřeby pomoci.
 - Máte k dispozici ID klienta Azure Active Directory (Azure AD).
 - Vytvořili jste Skupinu zabezpečení Azure AD, kterou lze použít jako skupinu správců systému e-Commerce a máte k dispozici její ID.
 - Vytvořili jste skupinu zabezpečení Azure AD, kterou lze použít jako skupinu pro moderátory hodnocení a recenzí a máte k dispozici její ID. (Tato skupina zabezpečení může být shodná se skupinou správců systému e-commerce.)
 
-## <a name="provision-your-commerce-preview-environment"></a>Zřizování ukázkového prostředí služby Commerce
+Tento seznam není vyčerpávající. Pokud se objeví nějaké problémy, měli byste se obrátit na svého partnera společnosti Microsoft s žádostí o pomoc.
 
-Tyto postupy vysvětlují, jak zřídit prostředí pro náhled Commerce. Po úspěšném dokončení těchto nastavení bude prostředí pro náhled Commerce připraveno na konfiguraci. Všechny popsané aktivity se objeví na portálu LCS.
+## <a name="provision-your-commerce-evaluation-environment"></a>Zřizování prostředí vyhodnocení služby Commerce
 
-> [!IMPORTANT]
-> Přístup k náhledu je svázán s účtem LCS a organizací, kterou jste určili v aplikaci Commerce pro náhled. K zajištění prostředí náhledu Commerce je nutné použít stejný účet. Pokud potřebujete použít jiný účet LCS nebo nájemce pro prostředí náhledu Commerce, musíte tyto podrobnosti poskytnout společnosti Microsoft. Kontaktní informace naleznete v části [Podpora ukázkového prostředí Commerce](#commerce-preview-environment-support) dále v tomto tématu.
-
-### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Zkontrolujte, zda jsou k dispozici funkce náhledu a zda jsou zapnuty v LCS.
-
-Chcete-li zkontrolovat, zda jsou k dispozici funkce náhledu a zda jsou zapnuty v LCS, postupujte náledovně.
-
-1. Přihlaste se k [portálu LCS](https://lcs.dynamics.com) pomocí stejného účtu LCS, který jste použili k vyžádání přístupu k náhledu.
-1. Na domovské stránce LCS posuňte se úplně doprava a vyberte dlaždici **Správa funkcí náhledu**.
-
-    ![Dlaždice správy verze Preview](./media/preview1.png)
-
-1. Posuňte se dolů k **Funkcím soukromého náhledu** a zkontrolujte, zda jsou dostupné a zapnuté následující funkce:
-
-    - Hodnocení e-Commerce
-    - Prostředí služby Commerce Preview
-
-    ![Funkce soukromé verze Preview](./media/preview2.png)
-
-1. Pokud se tyto funkce v seznamu neobjeví, obraťte se na společnost Microsoft a poskytněte své pracovní e-mailové adresy, účet LCS a podrobnosti o klientovi. Kontaktní informace naleznete v části [Podpora ukázkového prostředí Commerce](#commerce-preview-environment-support).
+Tyto postupy vysvětlují, jak zřídit prostředí vyhodnocení Commerce. Po úspěšném dokončení těchto nastavení bude prostředí vyhodnocení Commerce připraveno na konfiguraci. Všechny popsané aktivity se objeví na portálu LCS.
 
 ### <a name="create-a-new-project"></a>Vytvořit nový projekt
 
@@ -97,65 +72,15 @@ Chcete-li vytvořit nový projekt LCS pro projekt, postupujte následovně.
     - Pokud jste odběratel, vyberte možnost **Potenciální předprodeje**.
 
 1. Zadat název a popis šablony a odvětví.
-1. V poli **Název produktu** vyberte **Dynamics 365 Retail**.
-1. V poli **Verze produktu** vyberte **Dynamics 365 Retail**.
+1. V poli **Název produktu** vyberte **Dynamics 365 Commerce**.
+1. V poli **Verze produktu** vyberte **Dynamics 365 Commerce**.
 1. V poli **Metodologie** vyberte **Metodologie implementace Dynamics Retail**.
 1. Volitelné: Můžete importovat role a uživatele z existujícího projektu.
 1. Vyberte **Vytvořit**. Zobrazí se projekt.
 
 ### <a name="add-the-azure-connector"></a>Přidejte konektor Azure
 
-Chcete-li přidat Azure konektor do projektu LCS, postupujte následovně.
-
-1. Proveďte jeden z následujících kroků:
-
-    - Pokud jste partnerem, vyberte dlaždici **Nastavení projektu** zcela vpravo.
-    - Pokud jste odběratel, zvolte **Nastavení projektu** z horní nabídky.
-
-1. Vyberte **Konektory Azure**.
-1. Chcete-li přidat konektor Azure, klikněte na tlačítko **Přidat**.
-1. Zadejte název.
-1. Vložte své ID předplatného Azure.
-1. Zapněte možnost **Konfigurovat pro použití technologie ARM (Azure Resource Manager)**.
-1. Ověřte správnost hodnoty **Domény klienta předplatného služby Azure AAD ( nebo ID)**. V případě potřeby se obraťte na správce předplatného Azure.
-1. Zvolte **Další**.
-1. Podle pokynů na stránce udělte požadovaným aplikacím přístup k vašemu předplatnému. V případě potřeby se obraťte na správce předplatného Azure.
-
-    1. Přihlaste se do [portálu Azure](https://portal.azure.com/).
-    1. Přesvědčte se, zda je vybrán správný adresář, a v levé nabídce vyberte položku **odběry**.
-    1. Vyhledejte správné předplatné ze seznamu a vyberte je. Podle potřeby použijte funkci vyhledávání.
-    1. V nabídce vyberte příkaz **Řízení přístupu (IAM)**.
-    1. Napravo v sekci **Přidat přiřazení rolí** vyberte **Přidat**. Objeví se podokno **Přidat přiřazení role**.
-    1. V poli **Role** vyberte **Přispěvatel**.
-    1. V poli **Přiřadit přístup k** ponechejte výchozí hodnotu, uživatele **Azure AD, skupinu nebo hlavní název služby**.
-    1. V možnosti **Vybrat** vložte **b96b7e94-b82e-4e71-99a0-cf7fb188acea**.
-    1. Vyberte **Služba pro nasazení aplikace Dynamics \[wsfed-enabled\]** ze seznamu.
-    1. Zvolte **Uložit**.
-
-1. Zvolte **Další**.
-1. Podle pokynů na stránce udělte požadovaným aplikacím přístup k vašemu předplatnému. V případě potřeby se obraťte na správce předplatného Azure.
-1. Zvolte **Další**.
-1. V poli **Oblast Azure** zvolte **East US**, **East US 2**, **West US** nebo **West US 2**.
-1. Vyberte **Připojit**. V seznamu by se měl zobrazit konektor Azure.
-
-### <a name="import-the-commerce-preview-demo-base-extension"></a>Importovat Náhled rozšíření ukázky Commerce
-
-Chcete-li importovat Náhled rozšíření ukázky Commerce do projektu, postupujte následovně.
-
-1. Otevřete domovskou stránku projektu výběrem názvu projektu v horní části.
-1. Proveďte jeden z následujících kroků:
-
-    - Pokud jste partnerem, vyberte dlaždici **Knihovna prostředků** zcela vpravo.
-    - Pokud jste odběratel, zvolte **Knihovna prostředků** z horní nabídky.
-
-1. Ze seznamu vlevo vyberte **Balíček nasazení softwaru**.
-1. Vyberte **Import**.
-1. V **Knihovně sdílených prostředků** vyberte **Náhled rozšíření ukázky Commerce** v knihovně prostřeků.
-1. Vyberte **Zvolit**. Vrátíte se do knihovny majetku a toto rozšíření se zobrazí v seznamu.
-
-Následující ilustrace znázorňuje akce, které je třeba provést na stránce **Knhovna prostředků** LCS.
-
-![Import Náhled rozšíření ukázky Commerce](./media/import.png)
+Chcete-li přidat Azure Connector do svého projektu LCS, postupujte podle kroků v části [Dokončení procesu integrace Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### <a name="deploy-the-environment"></a>Nasazení prostředí
 
@@ -175,10 +100,6 @@ Pro nasazení prostředí postupujte takto.
 1. Výberte **Demo** jako topologii prostředí.
 
     ![Výběr topologie prostředí 1](./media/project2.png)
-
-1. Jako topologii prostředí vyberte **Dynamics 365 Commerce - ukázka**. Pokud jste dříve nakonfigurovali jeden konektor Azure Connector, bude se používat pro toto prostředí. Pokud jste nakonfigurovali více konektorů Azure, můžete vybrat, kterou spojnici chcete použít: **:Východ USA**, **Východ USA 2**, **Západ USA** nebo **Západ USA 2**. (Pro dosažení nejlepšího výkonu doporučujeme vybrat **Západ USA 2**.)
-
-    ![Výběr topologie prostředí 2](./media/project3.png)
 
 1. Na stránce **Nasadit prostředí** zadejte název prostředí. Ponechte Upřesňující nastavení, jak je.
 
@@ -201,53 +122,51 @@ Pokud chcete inicializovat CSU, postupujte takto.
 1. V zobrazení prostředí napraco vyberte **úplné podrobnosti**. Zobrazí se podrobnosti o prostředí.
 1. V části **Funkce prostředí** vyberte **Spravovat**.
 1. Na kartě **Velkoobchod** vyberte **Inicializovat**. Zobrazí se zobrazení inicializačních parametrů CSU.
-1. V poli **Oblast** zvolte **East US**, **East US 2**, **West US** nebo **West US 2**.
-1. V poli **Verze** vyberte možnost **Určit verzi** v seznamu a pak zadejte **9.18.20014.4** do zobrazeného pole. Je třeba zadat přesnou verzi, která je zde uvedena. V opačném případě bude nutné RCSU aktualizovat na správnou verzi později.
-1. Zapněte možnost **použít rozšíření**.
-1. V seznamu přípon vyberte možnost **Náhled rozšíření ukázky Commerce**.
+1. V poli **Oblast** vyberte oblast, která je stejná nebo blízká oblasti, do které jste prostředí nasadili.
+1. Nechte pole **Verze** tak, jak je.
 1. Vyberte **Inicializovat**.
 1. Na stráncee s potvrzením nasazení ověřte správnost podrobností klikněte vyberte **Ano**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **Commerce**. Vaše CSU byla zařazena do fronty pro zřizování.
 1. Než budete pokračovat, ujistěte se, že je stav CSU **Úspěch**. Inicializace trvá přibližně dvě až pět hodin.
+
+Pokud nemůžete najít odkaz **Správa** odkaz v zobrazení podrobností o prostředí, požádejte o pomoc kontaktní osobu společnosti Microsoft.
 
 ### <a name="initialize-e-commerce"></a>Inicializace e-Commerce
 
 Pokud chcete inicializovat e-Commerce, postupujte takto.
 
-1. Na kartě **e-Commerce** zkontrolujte souhlas s náhledem a pak vyberte **nastavení.**
-1. Zadejte název pro **Název klienta e-Commerce**. Uvědomte si však, že název bude viditelný u některých adres URL, které odkazují na vaši instanci e-Commerce.
+1. Na kartě **e-Commerce** zkontrolujte souhlas s vyhodnocením a pak vyberte **Nastavení**.
+1. V poli **Název prostředí e-Commerce** zadejte název. Uvědomte, že název bude viditelný u některých adres URL, které odkazují na vaši instanci e-Commerce.
 1. V poli **Název Commerce Scale Unit** vyberte položku CSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
 
-    Pole **Geografie e-Commerce** je nastaveno automaticky a hodnota nemůže být změněna.
+    Pole **Geografie elektronického obchodování** je nastaveno automaticky.
 
 1. Pokračujte výběrem tlačítka **Další**.
 1. Do pole **Podporované názvyhostitelů** zadejte libovolnou platnou doménu, například `www.fabrikam.com`.
-1.  Ve skupině **Skupina zabezpečení AAD pro správce systému** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. V seznamu vyberte správnou skupinu zabezpečení.
-2.  Ve skupině **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. V seznamu vyberte správnou skupinu zabezpečení.
-1. Ponechte možnost **Povolit službu hodnocení a recenzí** povolenou.
+1. V poli **Skupina zabezpečení AAD pro správce systému** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít, a poté zobrazte výsledky hledání výběrem symbolu lupy. V seznamu vyberte správnou skupinu zabezpečení.
+1.  V poli **Skupina zabezpečení AAD pro moderátora hodnocení a recenzování** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít, a poté zobrazte výsledky hledání výběrem symbolu lupy. V seznamu vyberte správnou skupinu zabezpečení.
+1. Možnost **Povolit službu hodnocení a recenzování** nechte nastavenou na hodnotu **Ano**.
 1. Vyberte **Inicializovat**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **e-Commerce**. Vaše inicializace e-Commerce byla zahájena.
 1. Než budete pokračovat, počkejte, dokud nebude inicializační stav e-Commerce **Inicializace úspěšná**.
 1. V **Odkazech** v pravém dolním roku si poznamenejte adresy URL následujících odkazů:
 
     * **Web e-Commerce** – odkaz na kořenový adresář webu e-Commerce.
-    * **Nástroj pro správu webu e-Commerce** – odkaz na nástroj pro správu webu.
-
-## <a name="commerce-preview-environment-support"></a>Podora ukázkového prostředí služby Commerce
-
-Pokud při provádění kroků zajišťování dojde k problémům, o pomoc se obraťte na [skupinu náhledu Microsoft Dynamics 365 Commerce v aplikaci Yammer](https://aka.ms/Dynamics365CommercePreviewYammer).
+    * **Nástroj pro správu webu Commerce** – odkaz na nástroj pro správu webu.
 
 ## <a name="next-steps"></a>Další kroky
 
-Chcete-li pokračovat v procesu zřizování a konfigurace prostředí náhledu Commerce, viz [Konfigurace prostředí pro náhled Commerce](cpe-post-provisioning.md).
+Chcete-li pokračovat v procesu zřizování a konfigurace prostředí vyhodnocení Commerce, přečtěte si část [Konfigurace prostředí pro náhled Commerce](cpe-post-provisioning.md).
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Přehled prostředí Preview aplikace Dynamics 365 Commerce](cpe-overview.md)
+[Přehled prostředí vyhodnocení Dynamics 365 Commerce](cpe-overview.md)
 
-[Konfigurace prostředí Preview aplikace Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurace prostředí vyhodnocení Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](cpe-bopis.md)
 
-[Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
+
+[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -256,4 +175,3 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí náhledu 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
