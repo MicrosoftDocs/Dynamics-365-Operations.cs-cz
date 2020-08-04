@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (červenec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Supply Chain Management 10.0.10 (květen 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -1355,6 +1357,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Zrušení plánovací úlohy
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Rozšiřitelnost optimalizace plánování
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Řešení potíží s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Hlavní plány
@@ -1511,6 +1515,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nastavení číselných řad pomocí průvodce
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace číselných řad pro toky skladu
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: "Organizace a\_organizační hierarchie"
               items:
                 - name: "Přehled organizací a\_organizačních hierarchií"
@@ -1817,6 +1823,10 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Vyjmutí produktů z hlavního plánu
                       href: pim/tasks/exclude-products-master-planning.md
+                - name: Zboží dvojího užití
+                  href: pim/dual-use.md
+                - name: Země původu
+                  href: pim/country-of-origin.md
                 - name: Vytvoření čárového kódu pro produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Zadání kódu GTIN pro produkt
@@ -2565,22 +2575,20 @@
               href: warehousing/warehouse-management-overview.md
             - name: Příchozí skladové operace
               items:
-                - name: Příjemky pro registraci a výdej
-                  items:
-                    - name: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
-                      href: warehousing/inbound-load-handling.md
-                    - name: "Registrace položek pro položky umožňující pokročilé uskladnění s\_použitím deníku doručení zboží"
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Nastavení šablony práce pro nákupní objednávky
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Směšování dimenzí produktu na skladovém místě
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
+                  href: warehousing/inbound-load-handling.md
+                - name: "Registrace položek pro položky umožňující pokročilé uskladnění s\_použitím deníku doručení zboží"
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Nastavení šablony práce pro nákupní objednávky
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Směšování dimenzí produktu na skladovém místě
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Odchozí skladové operace
               items:
                 - name: Rezervace v řízení skladu
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Nastavení výdejů v seskupení
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Systémem řízený výdej v seskupení
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Nastavení vytváření kontejnerů
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Potvrzení dávky a poznávací značky
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Povolení tisku popisku registrační značky
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Potvrzení výdeje kusů
                       href: warehousing/piece-picking-confirmation.md
                     - name: Obalové materiály a poplatky
@@ -2615,14 +2623,18 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Zrušení práce skladu pro zpracování výjimek
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Systémem řízený výdej v seskupení
-                      href: warehousing/system-directed-cluster-pick.md
                     - name: Pořadí práce řízené systémem
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Seskupování řádků vyskladnění
                       href: warehousing/pick-line-grouping.md
                     - name: Skladový slotting
                       href: warehousing/warehouse-slotting.md
+                    - name: Stáří vyskladnění zásob směrnice skladového místa
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Odchozí třídění
+                      href: warehousing/outbound-sorting.md
+                    - name: Umístění na zeď - umístění do obchodu
+                      href: warehousing/put-to-wall-put-to-store.md
                 - name: Doplnění
                   items:
                     - name: Přehled doplnění
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Seskupení šablon vlny
                       href: warehousing/wave-template-grouping.md
+                    - name: Opakovaný tisk a anulování štítků vlny
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Zásady konsolidace dodávek
                   items:
                     - name: Zásady konsolidace dodávek
@@ -2715,6 +2729,10 @@
                       href: warehousing/work-line-details.md
                     - name: Umístění registrační značky místa
                       href: warehousing/location-license-plate-positioning.md
+                    - name: Změna fondu práce u práce
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Využití skladového místa - konsolidaci zboží
+                      href: warehousing/item-consolidation-location-utilization.md
             - name: Nastavení skladu
               items:
                 - name: Konfigurace skladu
@@ -2729,6 +2747,8 @@
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurace zpracování vlny
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Nastavení a použití tisku štítků vlny
+                      href: warehousing/configure-wave-label-printing.md
                     - name: Automatická aktualizace dodávek
                       href: warehousing/auto-update-shipment.md
                     - name: Vytvoření profilu skladového místa
@@ -2753,8 +2773,6 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Rozvržení směrování dokumentu pro popisky registrační značky
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Mobilní podpora čárového kódu
                       href: warehousing/mobile-barcode-support.md
                     - name: Nastavení skladu pro převodní příkazy
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: "Skenování čárových kódů pomocí fotoaparátu v\_aplikaci skladu"
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Přijetí registrační značky s aplikací skladu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"

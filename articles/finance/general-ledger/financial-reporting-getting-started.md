@@ -3,7 +3,7 @@ title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262642"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609582"
 ---
 # <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
@@ -34,7 +34,7 @@ Toto téma popisuje, kde získat přístup k účetnímu výkaznictví a jak pou
 <a name="accessing-financial-reporting"></a>Přístup k finančnímu výkaznictví
 -----------------------------
 
-Nabídku **Finanční vykazování** lze najít na následujících místech:
+Nabídku **Finanční výkaznictví** lze najít v následujících umístěních:
 
 -   **Hlavní kniha** &gt; **Dotazy a sestavy**
 -   **Rozpočet** &gt; **Dotazy a sestavy** &gt; **Základní rozpočtování**
@@ -45,10 +45,11 @@ Nabídku **Finanční vykazování** lze najít na následujících místech:
 Chcete-li vytvořit a generovat finanční sestavy pro právnickou osobu, nastavte následující informace pro tuto právnickou osobu:
 
 -   Fiskální kalendář
--   Hlavní kniha
+-   Ledger
 -   Účtová osnova
 -   Měna
 
+## <a name="granting-security-access-to-financial-reporting"></a>Poskytnutí bezpečnostního přístupu k Financial Reporting
 Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení. Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.
 
 ### <a name="duties"></a>Funkční oprávnění
@@ -78,15 +79,26 @@ Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají 
 | Generovat finanční sestavy            | Generovat finanční sestavy            | CEO, CFO, Účetní                                                            |
 | Zobrazit finanční sestavy                | Posoudit finanční výkonnost          | Nepřiřazeno                                                                   |
 
-Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví. **Poznámka:** Role sysadmin je přidána do všech rolí ve finančních výkazech.
+Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví. 
+
+> [!NOTE]
+> Role sysadmin je přidána do všech rolí ve financial reporting.
 
 ## <a name="report-deletions-and-expirations"></a>Odstranění a vypršení platnosti sestav
 Uživatelé, kteří vygenerovali sestavu, ji mohou i odstranit. Uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví** mohou odstranit sestavy jiných uživatelů. 
 
-Ve verzi 10.0.8 byla zavedena koncepce dat vypršení platnosti. Nová požadovaná funkce bude povolena na stránce **Vše** v pracovním prostoru Správa funkcí. Funkce **Zásady uchovávání finančních sestav** obsahuje následující změny:
+Počínaje vydáním 10.0.7 byl zaveden koncept dat vypršení platnosti. V pracovním prostoru pro správu funkcí bude povolena nová povinná funkce. Tato funkce obsahuje následující změny:
+
 * Nově generované sestavy budou automaticky označeny datem vypršení platnosti 90 dní od jejich vygenerování.
 * Všechny existující sestavy před instalací této funkce budou mít dobu platnosti 90 dní. Datum se může po krátkou dobu zobrazit jako prázdné, dokud není spuštěna služba finančního výkaznictví, vygeneruje se sestava a služba provede aktualizaci existujících sestav s prázdným datem vypršení platnosti. 
-* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav. 
+* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav:
+   * Vypršení platnosti za 90 dní
+   * Možnost nastavení nekonečné doby vypršení platnosti sestavy
+
+Je-li vybráno vypršení platnosti 90 dnů, použije se platnost 90 dní ode dneška, což je odlišné chování, než 90 dnů od data původního generování nastaveného během generování sestavy. Ve vydání 10.0.8 byla zavedena koncepce dat vypršení platnosti. Nová požadovaná funkce je povolena na stránce **Vše** v pracovním prostoru Správa funkcí. Funkce **Zásady uchovávání finančních sestav** obsahuje následující změny:
+* Nově generované sestavy budou automaticky označeny datem vypršení platnosti 90 dní od jejich vygenerování.
+* Všechny existující sestavy před instalací této funkce budou mít dobu platnosti 90 dní. Datum se může po krátkou dobu zobrazit jako prázdné, dokud není spuštěna služba finančního výkaznictví, vygeneruje se sestava a služba provede aktualizaci existujících sestav s prázdným datem vypršení platnosti. 
+* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav: 
   * Vypršení platnosti za 90 dní.
   * Možnost nastavení nekonečné doby vypršení platnosti sestavy.
   
@@ -125,16 +137,36 @@ Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každá 
 | Dostupné rozpočtové prostředky – výchozí                         | Zobrazení podrobného porovnání revidovaného rozpočtu, skutečných výdajů, rezervací rozpočtu a rozpočtových prostředků, které jsou k dispozici pro všechny účty                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Otevření finančních výkazů
-Po kliknutí na nabídku **Finanční vykazování** se zobrazí seznam výchozí finančních výkazů pro danou společnost. Poté můžete otevřít nebo upravit sestavu. Chcete-li otevřít jednu z výchozích sestav, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2016, je sestava generována pro 31. července 2016. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
+Po výběru nabídky **Finanční výkaznictví** se zobrazí seznam výchozích finančních výkazů pro danou společnost. Poté můžete otevřít nebo upravit sestavu. Chcete-li otevřít jednu z výchozích sestav, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2019, je sestava generována pro 31. července 2019. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Vytváření a úpravy finančních výkazů
-Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu. Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu klepnutím na **Nové** v podokně akcí. Program Sestava návrháře se stáhne do zařízení. Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu. Po uložení nové sestavy se zobrazí v seznamu finančních výkazů. V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v aplikaci Finance. 
+Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu. Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu výběrem **Nové** v podokně akcí. Program Sestava návrháře se stáhne do zařízení. Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu. Po uložení nové sestavy se zobrazí v seznamu finančních výkazů. V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v Dynamics 365 Finance. 
 
-> [!NOTE] 
-> Počítač, do kterého stahujete klienta návrháře sestav musí mít nainstalovanou verzi 4.6.2 rozhraní Microsoft .NET Framework. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Také lze upravit sestavu, která se zobrazí v seznamu finančních výkazů. Jakmile se vybere oblast kolem názvu sestavy, klikněte na tlačítko **Upravit** v podokně akcí. Spustí se program Návrhář sestav.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Problémy při otevírání Návrháře sestav
+Při otevírání Návrháře sestav může dojít k několika běžným problémům. Tyto problémy a kroky k jejich vyřešení jsou následující.
 
-## <a name="additional-resources"></a>Další zdroje
-- [Zobrazení finančních sestav](view-financial-reports.md)
+Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upravit**.
 
+* V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery a poté vyberte **Weby**. V **Přidejte tento web do zóny** zadejte "\*\.dynamics.com" (bez uvozovek) a poté vyberte **Přidat**. 
+* V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká**.
+* Zakažte blokování vyskakovacích oken v prohlížeči.
+* K instalaci jsou vyžadovány pracovní stanice Visual Studio.NET 4.6.2 nebo vyšší.
 
+Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Pokud se nemůžete přihlásit pomocí Chromu, zkuste použít kroky nastavení popsané v 1. vydání Internet Explorer nebo Edge. 
 
+Problém 2: Uživateli nebyla přidělena požadovaná oprávnění k používání Financial Reporting. 
+
+* Chcete-li ověřit, zda uživatel nemá oprávnění, vyberte **Ano** u chyby „Nelze se připojit k serveru Financial Reporting. Zvolte Ano, pokud chcete pokračovat a zadejte jinou adresu serveru." Pak vyberte **Test připojení**. Pokud nemáte povolení, zobrazí se zpráva „Pokus o připojení selhal. Uživatel nemá příslušná oprávnění pro připojení k serveru. Obraťte se na vašeho správce systému."
+* Požadovaná oprávnění jsou uvedena výše v [Poskytnutí bezpečnostního přístupu k Financial Reporting](#granting-security-access-to-financial-reporting). Zabezpečení ve Financial Reporting je založeno na těchto oprávněních. Nebudete mít přístup, dokud vám tato oprávnění (nebo jiná role zabezpečení, která tato oprávnění zahrnují) nebudou přiřazena. 
+* Integrační úloha **Poskytovatel uživatelských služeb společnosti** (která je také odpovědná a známá jako integrace uživatelů) běží v 5minutovém intervalu. Změny oprávnění se ve Financial Reporting projeví až po 10 minutách. 
+  Pokud jiný uživatel může otevřít Návrháře sestav, vyberte **Nástroje** a poté vyberte **Stav integrace**. Ověřte, zda integrační mapa „Poskytovatel firemních uživatelů pro společnost“ úspěšně fungovala, protože vám bylo uděleno oprávnění k používání Financial Reporting. 
+* Je možné, že další chyba zabránila **Integrace uživatele Dynamics do Financial Reporting** v dokončení. Nebo je možné, že reset datamartu byl zahájen a ještě nebyl dokončen, nebo že došlo k jiné systémové chybě. Zkuste proces spustit znovu později. Pokud problém přetrvává, kontaktujte správce systému.
+
+Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Report Designer, ale nemůžete dokončit přihlášení v návrháři sestav. 
+
+* Čas nastavený v místním počítači po zadání přihlašovacích údajů musí být do pěti minut od času na serveru Financial Reporting. Pokud je rozdíl delší než pět minut, systém neumožní přihlášení. 
+* V tomto případě doporučujeme povolit možnost Windows pro automatické nastavení času vašeho počítače. 
+
+## <a name="additional-resources"></a>Další prostředky
+- [Zobrazit finanční sestavy](view-financial-reports.md)

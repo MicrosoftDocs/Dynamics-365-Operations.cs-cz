@@ -3,7 +3,7 @@ title: Delegování pracovních položek ve workflowu
 description: Pokud plánujete být mimo kancelář nebo nemůžete reagovat na pracovní položku, můžete předat nebo znovu přiřadit své pracovní položky jinému uživateli.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 96777b66645453bc909bd4053e2724a37771d5d6
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515757"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541078"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegování položek práce ve workflow
 
@@ -49,13 +49,15 @@ Pokud plánujete absenci v kanceláři nebo nejste jinak schopní u pracovních
 1. Přejděte na **Společné > Nastavení > Možnosti uživatelů**.
 2. Klikněte na kartu **Workflow**. Zkontrolujte, zda je rozbalen oddíl Delegování. Chcete-li nakonfigurovat systém tak, aby automaticky delegoval vaše pracovní položky ostatním uživatelům, je nutné vytvořit pravidla delegování, která určí, kdy se budou delegovat určité typy pracovních položek. Při vytváření pravidla delegování postupujte takto:  
 3. Klikněte na tlačítko **Přidat**.
-4. Vyberte volbu v poli **Rozsah**.
+4. Vyberte volbu v poli **Rozsah**:
     - Vše - Delegování všech pracovních položek, které máte přiřazeny.
-    - Modul – Delegování pouze pracovních položek, které máte přiřazeny pro specifický typ workflowu. Pokud vyberete tuto možnost, je nutné vybrat typ workflowu v poli Název.
-    - Workflow – Delegování pouze pracovních položek, které máte přiřazeny pro specifický workflow. Pokud vyberete tuto možnost, je nutné vybrat workflow v poli Název.  
-5. V poli **Delegovat** vyberte uživatele, kterému chcete pracovní položku delegovat. Použijte pole Počáteční datum a čas a Koncové datum a čas k určení, kdy mají být pracovní položky automaticky delegovány.  
-6. Do pole **Počáteční datum a čas** zadejte datum a čas.
-7. Do pole **Koncové datum a čas** zadejte datum a čas.
-8. Zaškrtnutím políčka **Povoleno** můžete aktivovat pravidlo delegování. Pokud jste vybrali **Modul** jako Rozsah, je nutné v poli Název vybrat modul. Pokud jste vybrali **Workflow** jako Rozsah, je nutné v poli Název vybrat specifické workflow k delegování.  
-9. Do pole **Komentář** zadejte komentář s vysvětlením, proč delegujete pracovní položky.
-
+    - Modul – Delegování pouze pracovních položek, které máte přiřazeny pro specifický typ workflowu. Pokud vyberete tuto možnost, je nutné vybrat typ workflowu v poli **Název**.
+    - Workflow – Delegování pouze pracovních položek, které máte přiřazeny pro specifický workflow. Pokud vyberete tuto možnost, je nutné vybrat workflow v poli **Název**.  
+5. V poli **Název**:
+    - Pro rozsah **Modul** vyberte cílový modul.
+    - Pro rozsah **Workflow** vyberte cílový workflow.
+6. V poli **Delegovat** vyberte uživatele, kterému chcete pracovní položku delegovat. Použijte pole **Počáteční datum a čas** a **Koncové datum a čas** k určení, kdy mají být pracovní položky automaticky delegovány.  
+7. Do pole **Počáteční datum a čas** zadejte datum a čas.
+8. Do pole **Koncové datum a čas** zadejte datum a čas.
+9. Zaškrtnutím políčka **Povoleno** můžete aktivovat pravidlo delegování. 
+10. Do pole **Komentář** zadejte komentář s vysvětlením, proč delegujete pracovní položky.

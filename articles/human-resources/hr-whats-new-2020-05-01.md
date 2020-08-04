@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1a0cfd1c1b0dcc9defaad7e4cce22ebe1e91fae
-ms.sourcegitcommit: cc5dc0bd90277f1ba684dd310da3274886ce573c
+ms.openlocfilehash: e4da626ce3412fba6f90dd7f953c1cbc79ab60c3
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3320912"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555116"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (1. května 2020)
 
@@ -102,3 +102,10 @@ Pokud nefunguje náhled dokumentů uložených ve službě SharePoint, postupujt
 3. Ve službě SharePoint přistupte k příloze a zobrazte náhled dokumentu.
 
 4. Přihlaste se s jiným uživatelským účtem, který má přístup k přílohám, a ověřte, že náhled funguje očekávaným způsobem.
+
+## <a name="see-also"></a>Viz také
+
+[Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)</br>
+[Správa funkcí](hr-admin-manage-features.md)

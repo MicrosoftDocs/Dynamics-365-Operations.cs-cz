@@ -3,7 +3,7 @@ title: Obsah správy úvěru a inkasa v Power BI
 description: Toto téma popisuje, co je součástí obsahu správy úvěru a inkasa v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278867"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598051"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
@@ -47,9 +47,10 @@ Ve výchozím nastavení se zobrazují data úvěrů a inkas pro aktuální spol
 Následující nastavení je nutné dokončit, aby bylo možné zobrazit data ve vizuálech **Obrázky a kolekce kreditů** Power BI .
 
 1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
-2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** a nastavte **Měna účtování** a **Typ směnného kurzu**.
-3. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
-4. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **CustCollectionsBIMeasurementsV2**.
+2. Přejděte na **Hlavní kniha > Kalendáře > Fiskální kalendáře** k ověření dat fiskálního kalendáře přiřazených k aktivnímu časovému období.
+3. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** a nastavte **Měna účtování** a **Typ směnného kurzu**.
+4. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+5. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **CustCollectionsBIMeasurementsV2**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 

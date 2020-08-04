@@ -2,7 +2,7 @@
 title: Nastavení zdrojů Azure pro IoT Intelligence
 description: Toto téma vysvětluje, jak vytvořit a konfigurovat zdroje Microsoft Azure, které potřebujete pro IoT Intelligence.
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ''
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1f05f597f86df602c0e00af006b7ccf804f50929
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: 431ad6766f1e7f2035d6d5ed87bed4856e58e098
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386495"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597257"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Nastavení zdrojů Azure pro IoT Intelligence
 

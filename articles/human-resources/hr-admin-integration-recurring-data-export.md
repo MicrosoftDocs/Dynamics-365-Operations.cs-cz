@@ -41,7 +41,7 @@ V jednom typickém obchodním scénáři pro integrace Microsoft Dynamics 365 je
 Tento výukový kurz používá následující technologie:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Hlavní zdroj dat pro pracovníky, kteří budou exportováni.
-- **[logic app Azure](https://azure.microsoft.com/services/logic-apps/)** – technologie, která poskytuje orchestraci a plánování opakovaného exportu.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – technologie, která poskytuje orchestraci a plánování opakovaného exportu.
 
     - **[Konektory](https://docs.microsoft.com/azure/connectors/apis-list)** – technologie, která se používá k propojení logic app s požadovanými koncovými body.
 
@@ -83,7 +83,7 @@ Sada cvičení zahrnuje vytvoření logic app.
 
     ![Stránka vytvoření logic app](media/integration-logic-app-creation-1.png)
 
-2. V návrháři Logic Apps začněte s prázdnou logic app.
+2. V aplikaci Logic Apps Designer začněte s prázdnou logic app.
 3. Přidejte [aktivační událost plánu opakování](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) pro spuštění logic app každých 24 hodin (nebo podle zvoleného plánu).
 
     ![Dialogové okno opakování](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Chcete-li testovat logic app, vyberte v návrháři tlačítko **Spustit**. Uvid
 
 Pokud je u některého kroku hlášeno selhání, vyberte v návrháři neúspěšný krok a zkontrolujte pole **Vstupy** a **Výstupy**. Proveďte ladění a upravte krok podle potřeby, aby se chyby opravily.
 
-Následující obrázek ukazuje, jak vypadá návrhář Logic Apps, když jsou všechny kroky logic app úspěšně spuštěny.
+Následující obrázek ukazuje, jak vypadá aplikace Logic Apps Designer, když jsou všechny kroky logic app úspěšně spuštěny.
 
 ![Úspěšné spuštění logic app](media/integration-logic-app-successful-run.png)
 

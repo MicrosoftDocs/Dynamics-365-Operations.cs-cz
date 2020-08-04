@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cc1931cee0f3da15e07908f221282ad6b57e1681
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: 8d83268292ac65d62cbe8fa9a4c146bf4af36b50
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500430"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555020"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (23. června 2020)
 
@@ -119,3 +119,10 @@ V **parametrech lidských zdrojů** bude k dispozici nová možnost aktualizace
 ## <a name="checklist-entities-included-in-common-data-service"></a>Položky kontrolního seznamu zahrnuté do Common Data Service
 
 Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Common Data Service k dispozici již brzy.
+
+## <a name="see-also"></a>Viz také
+
+[Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)</br>
+[Správa funkcí](hr-admin-manage-features.md)

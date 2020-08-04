@@ -2540,12 +2540,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Sestavy zásob
                       href: localizations/rus-inventory-reports.md
-                    - name: Přehled profilu zásob
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Nastavení profilu zásob
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Použití profilu zásob v dokumentech a dotazech
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Profil zásob
+                      items:
+                        - name: Přehled profilu zásob
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Nastavení profilu zásob
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Použití profilu zásob v dokumentech a dotazech
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
@@ -2700,7 +2702,7 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formulář 1099 pro veřejný sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Lidské zdroje
+        - name: Human Resources
           items:
             - name: Přehled Human Resources
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md

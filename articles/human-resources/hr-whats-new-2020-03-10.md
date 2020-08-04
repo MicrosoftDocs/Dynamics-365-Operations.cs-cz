@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124009"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555239"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (10. března 2020)
 
@@ -97,3 +97,10 @@ Od 3. února 2020 jsou k dispozici následující funkce náhledu:
 - Doporučená pole – Uživatelé často potřebují přidávat pole do mřížky nebo na stránku. To může být obtížné s tolika dostupnými poli. Tato funkce místo prohledávání rozsáhlého seznamu umožňuje systému vytáhnout sadu doporučených polí podle toho, co jiní uživatelé nejčastěji přidávají v podobných situacích.
 
 - Výchozí akce jedním prstem v mřížkách – Touto funkcí je zajištěno, že výchozí akce v mřížce je propojena s určitým sloupcem v mřížce bez ohledu na to, zda je tento sloupec přesunut nebo skryt.
+
+## <a name="see-also"></a>Viz také
+
+[Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)</br>
+[Správa funkcí](hr-admin-manage-features.md)

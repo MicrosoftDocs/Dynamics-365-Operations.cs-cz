@@ -3,7 +3,7 @@ title: Odchozí skladová operace v POS
 description: Toto téma popisuje možnosti odchozí skladové operace v pokladním místě (POS).
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384122"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551618"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Odchozí skladová operace v POS
 
@@ -58,6 +58,9 @@ Chcete-li konfigurovat asynchronní architekturu dokumentu, postupujte podle ná
 7. Na pevé záložce **Obecné** v sekci **Nastavení** nastavte možnost **Souvislé** na hodnotu **Ne**, aby se předešlo jakýmkoli problémům s výkonem.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Vytvoření a naplánování dvou dávkových úloh pro zpracování a sledování dokumentů
+
+> [!NOTE]
+> V Commerce verze 10.0.13 a novějších nemusíte dávkové úlohy konfigurovat prostřednictvím rámce dávkových úloh. Dávkové procesy lze konfigurovat z nabídky **Retail a Commerce > IT pro Retail a Commerce**. Ke konfiguraci dávkových úloh použijte možnosti nabídky **Sledování operace maloobchodního dokumentu** a **Zpracování operace maloobchodního dokumentu**
 
 Dávkové úlohy, které vytvoříte, budou použity ke zpracování dokumentů, které selhaly nebo jejichž časový limit vypršel. Použijí se také v případě, že počet aktivních skladových dokladů, které jsou zpracovávány z POS, přesahuje hodnotu konfigurovanou systémem.
 

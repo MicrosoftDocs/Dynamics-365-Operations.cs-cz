@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: aa18e7446a72a907fcad70f92ea529088b6cecbd
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443911"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539872"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -31,18 +31,45 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
+Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.11
 ### <a name="data-action-hooks"></a>Zavěšení datových akcí
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce háčků datových akcí byla zastaralá kvůli problémům s výkonem. |
-| **Nahrazeno jinou funkcí?**   | Doporučuje se místo toho použít [přepisy akce dat](../e-commerce-extensibility/data-action-overrides.md) ke změně obchodní logiky ve vrstvě akce dat.|
+| **Nahrazeno jinou funkcí?**   | Doporučujeme použít [přepisy akce dat](../e-commerce-extensibility/data-action-overrides.md) ke změně obchodní logiky ve vrstvě akce dat.|
 | **Ovlivněné oblasti produktu**         | Akce dat rozšiřitelnosti elektronického obchodování |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: k verzi 10.0.11 |
+
+### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Maloobchodní podpora SDK pro Visual Studio 2015, msbuild 14.0 a Retail SDK\Referenční knihovny a nástroje
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Maloobchodní podpora SDK pro Visual Studio 2015 byla vyřazena a aktualizována tak, aby podporovala VS 2017, msbuild 15.0 a všechny referenční knihovny a nástroje komerčního generátoru proxy ve složce RetailSDK\References přesunuty do balíčků NuGet ke zjednodušení modelu rozšíření a procesu upgradu SDK.|
+| **Nahrazeno jinou funkcí?**   | Doporučujeme vám řídit se při aktualizaci systému řídit informacemi v části [Migrace sady Retail SDK z Visual Studio 2015 na Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md). |
+| **Ovlivněné oblasti produktu**         | Maloobchodní rozšíření SDK |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: k verzi 10.0.11 |
+
+### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Maloobchodní rozšíření serveru pomocí IEdmModelExtender a CommerceController
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Rozšíření Retail serveru pomocí IEdmModelExtender a CommerceController bylo vyřazeno, aby poskytovalo zjednodušený model rozšíření. Nová implementace bude mít pouze třídu kontrolerů bez další implementace třídy IEdmModelExtender. Tím se také vyhnete závislosti na konkrétní verzi OData (pokud je aktualizována verze OData, může to poškodit rozšíření). |
+| **Nahrazeno jinou funkcí?**   |  Doporučujeme použít model rozšíření třídy IController importováním balíčku NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Ovlivněné oblasti produktu**         | Rozšíření serveru Retail Server |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: k verzi 10.0.11 |
+
+### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Rozšíření hardwarové stanice pomocí IHardwareStationController
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Rozšíření hardwarové stanice pomocí IHardwareStationController bylo vyřazeno, aby se získal zjednodušený model rozšíření. Nová implementace bude mít pouze třídu IController bez jakékoli další implementace třídy a aby se předešlo závislosti na knihovnách základních hardwarových stanic, musí předchozí rozšíření odkazovat na více knihoven.) |
+| **Nahrazeno jinou funkcí?**   | Doporučuje se použít model rozšíření třídy IController importováním balíčku NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Ovlivněné oblasti produktu**         | Rozšíření hardwarové stanice |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: k verzi 10.0.11 |
 

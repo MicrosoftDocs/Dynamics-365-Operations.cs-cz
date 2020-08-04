@@ -1,9 +1,9 @@
 ---
-title: Přehled prostředí Preview aplikace Dynamics 365 Commerce
-description: Toto téma poskytuje přehled o prostředí náhledu v řešení Microsoft Dynamics 365 Commerce.
+title: Přehled prostředí vyhodnocení Dynamics 365 Commerce
+description: Toto téma poskytuje přehled o prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,45 +17,50 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024676"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599743"
 ---
-# <a name="dynamics-365-commerce-preview-environment-overview"></a>Přehled prostředí Preview aplikace Dynamics 365 Commerce
-
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Přehled prostředí vyhodnocení Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled o prostředí náhledu v řešení Microsoft Dynamics 365 Commerce.
+Toto téma poskytuje přehled o prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
+
+> [!NOTE]
+> Prostředí vyhodnocení Commerce nejsou obecně dostupná a jsou poskytována partnerům a zákazníkům na základě žádosti. Podrobnější informace získáte od kontaktu společnosti Microsoft.
 
 ## <a name="overview"></a>Přehled
 
-Prostředí náhledu produktu Commerce je volitelné komplexní prostředí pro zobrazení náhledu produktu Dynamics 365 Commerce, které potenciálním zákazníkům umožňuje vyzkoušet produkt Commerce před jeho veřejným vydáním.
+Prostředí vyhodnocení Commerce je volitelné komplexní prostředí Dynamics 365 Commerce, které partnerům a potenciálním zákazníkům umožňuje vyzkoušet produkt Commerce.
 
-Kromě menších omezení, která neovlivňují funkce nebo funkčnost, poskytuje prostředí náhledu produktu Commerce kompletní zkušenost s tímto produktem a mohou je používat zákazníci a partneři k implementaci pro vyhodnocení produktu, poskytnutí zpětné vazby a analýze přizpůsobení nebo nedostatků.
+Vyhodnocovací prostředí jsou částečně předkonfigurována, aby se snížily požadované kroky po poskytnutí.
 
-## <a name="limitations-of-the-commerce-preview-environment"></a>Omezení prostředí náhledu Commerce
+Kromě menších omezení, která neovlivňují funkce nebo funkčnost, poskytuje prostředí vyhodnocení Commerce kompletní zkušenost s tímto produktem a mohou je používat zákazníci a partneři k implementaci pro vyhodnocení produktu, poskytnutí zpětné vazby a analýze přizpůsobení nebo nedostatků.
 
-I když prostředí náhledu Commerce nabízí úplnou sadu funkcí a funkčnosti Commerce, existuje několik menších omezení:
+## <a name="limitations-of-the-commerce-evaluation-environment"></a>Omezení prostředí vyhodnocení Commerce
 
-- Přestože prostředí náhledu Commerce nemá žádná zeměpisná omezení, součásti prostředí, jako například aplikace Retail Cloud Scale Unit (rcsu) a e-commerce, lze zřizovat pouze ve Spojených státech.
-- Použití prostředí náhledu Commerce je omezeno na 30 dní od data, kdy je zřízeno prostředí e-Commerce.
-- Prostředí náhledu Commerce je možné úspěšně nasadit a inicializovat pouze v prostředí, ve kterém je použita ukázková topologie, kde jsou všechny součásti prostředí nasazeny na jednom virtuálním počítači (VM). Hlavní omezení této topologie OneBox VM je počet uživatelů, které může prostředí náhledu současně podporovat.
-- Prostředí náhledu Commerce je možné posoudit pouze do doby, kdy bude produkt Commerce dostupný široké veřejnosti. Nová ukázková prostředí budou k dispozici po vydání pro širokou veřejnost.
+I když prostředí vyhodnocení Commerce nabízí úplnou sadu funkcí a funkčnosti Commerce, existuje několik menších omezení:
+
+- Přestože prostředí vyhodnocení Commerce nemá žádná zeměpisná omezení, součásti prostředí, jako například aplikace Retail Cloud Scale Unit (rcsu) a e-commerce, by se měly zřizovat pouze ve Spojených státech.
+- Použití prostředí vyhodnocení Commerce je omezeno na 30 dní od data, kdy je zřízeno prostředí e-Commerce.
+- Prostředí vyhodnocení Commerce je možné úspěšně nasadit a inicializovat pouze v prostředí, ve kterém je použita ukázková topologie, kde jsou všechny součásti prostředí nasazeny na jednom virtuálním počítači (VM) hostovaném v cloudu. Hlavní omezení této topologie je počet uživatelů, které může prostředí současně podporovat.
 
 ## <a name="get-started"></a>Začínáme
 
-Chcete-li zřizovat prostředí pro náhled Commerce, získáte informace v části [Zřízení prostředí náhledu Commerce](provisioning-guide.md).
+Chcete-li zřizovat prostředí vyhodnocení Commerce, získáte informace v části [Zřízení prostředí vyhodnocení Commerce](provisioning-guide.md).
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Zřízení prostředí Preview aplikace Dynamics 365 Commerce](provisioning-guide.md)
+[Zřízení prostředí vyhodnocení Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurace prostředí Preview aplikace Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurace prostředí vyhodnocení Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](cpe-bopis.md)
 
-[Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
+
+[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)

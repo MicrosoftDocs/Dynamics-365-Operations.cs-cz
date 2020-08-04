@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 8. července 2020
+          href: hr-whats-new-2020-07-08.md
         - name: 25. června 2020
           href: hr-whats-new-2020-06-23.md
         - name: 11. června 2020
@@ -577,5 +579,7 @@
           items:
             - name: Přehled samoobsluhy pro zaměstnance a manažera
               href: hr-employee-manager-self-service-overview.md
+            - name: Změna názvu samoobslužného pracovního prostoru zaměstnance
+              href: hr-employee-self-service-workspace-name.md
             - name: Úprava osobních informací
               href: hr-employee-manager-self-service-edit-personal-information.md

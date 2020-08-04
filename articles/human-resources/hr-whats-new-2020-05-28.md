@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 7664afbd0b1fd4e2c9686053fa102d85809c0411
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443457"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555308"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
 
@@ -102,4 +102,11 @@ V této verzi může HR vytvořit pravidlo pro pozastavení přírůstků dovole
 
 ## <a name="dmf-entity-available-for-accrual-suspensions-june-1"></a>Entita DMF je k dispozici pro akruální pozastavení (1. červen)
 
-Entita DMF je nyní k dispozici pro akruální pozastavení
+Entita DMF je nyní k dispozici pro akruální pozastavení
+
+## <a name="see-also"></a>Viz také
+
+[Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)</br>
+[Správa funkcí](hr-admin-manage-features.md)

@@ -3,7 +3,7 @@ title: Obsah přehledu hotovosti v Power BI
 description: Toto téma popisuje obsah přehledu hotovosti v Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553133"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598126"
 ---
 # <a name="cash-overview-power-bi-content"></a>Obsah přehledu hotovosti v Power BI
 
@@ -38,10 +38,11 @@ Obsah **Přehled hotovosti** v Power BI byl vytvořen pro jednotlivce, kteří z
 Následující nastavení musí být dokončeno, aby bylo možné zobrazit data ve vizuálech **Přehled hotovosti** a **Bankovní správa** Power BI.
 
 1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
-2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**.
-2. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou a zúčtovací měnou a bankovními měnami. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
-3. Nakonfigurujte a spusťte prognózu cashflow. Další informace o nastavení prognózy cashflow naleznete v tématu [Prognóza cashflow](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
-4. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **LedgerCovLiquidityMeasurement**.
+2. Přejděte na **Hlavní kniha > Kalendáře > Fiskální kalendáře** k ověření dat fiskálního kalendáře přiřazených k aktivnímu časovému období.
+3. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**.
+4. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou a zúčtovací měnou a bankovními měnami. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+5. Nakonfigurujte a spusťte prognózu cashflow. Další informace o nastavení prognózy cashflow naleznete v tématu [Prognóza cashflow](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+6. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 

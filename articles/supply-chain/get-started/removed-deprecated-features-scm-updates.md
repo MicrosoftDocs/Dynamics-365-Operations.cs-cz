@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění v Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: AnnBe
+manager: tfehr
 ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7502cd16129431d41d152508fb3b49ff85a5a9f8
-ms.sourcegitcommit: f1db998ecfccca660eb15cc2739b12c8463fa54d
+ms.openlocfilehash: 07f37488747766dcca96884e204339b425bbd201
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331241"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597109"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -31,10 +31,10 @@ Toto téma bude aktualizováno podle nově odebraných nebo zastaralých funkcí
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování.
+Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování.
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.11
 

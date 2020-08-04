@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431238"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554318"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
@@ -68,11 +68,11 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
 4. V podokně úloh **Kopírovat instanci** vyberte instanci, kterou chcete přepsat, a poté vyberte možnost **kopírovat**. Počkejte, až bude hodnota pole **Kopírovat stav** aktualizována na hodnotu **dokončeno**.
 
-   ![[Výběr instance, kterou chcete přepsat](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Výběr instance, která má být přepsána](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vyberte **Power Platform** a přihlaste se do centra pro správu Microsoft Power Platform.
 
-   ![[Výběr Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Vyberte Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vyberte prostředí PowerApps, ke zkopírování a pak vyberte **Kopírovat**.
 
@@ -108,6 +108,6 @@ Při kopírování instance se dále mění následující stavy:
 
 ## <a name="environment-admin"></a>Správce prostředí
 
-Všichni uživatelé v cílovém prostředí izolovaného prostoru (sandbox) včetně správců budou nahrazeni uživateli zdrojového prostředí. Před kopírováním instance se ujistěte, zda jste správcem cílového prostředí. Pokud ne, nebudete se moci po dokončení kopírování přihlásit k cílovému prostředí izolovaného prostoru (sandbox).
+Všichni uživatelé v cílovém prostředí izolovaného prostoru (sandbox) včetně správců budou nahrazeni uživateli zdrojového prostředí. Před kopírováním instance se ujistěte, zda jste správcem zdrojového prostředí. Pokud ne, nebudete se moci po dokončení kopírování přihlásit k cílovému prostředí izolovaného prostoru (sandbox).
 
 Všichni uživatelé, kteří nejsou správci v cílovém prostředí izolovaného prostoru (sandbox), jsou zakázáni, aby zabránili nechtěným přihlášením v prostředí karantény. Správci mohou v případě potřeby znovu povolit uživatele.
