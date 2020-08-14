@@ -70,6 +70,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.13 (říjen 2020)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (srpen 2020)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (červenec 2020)
@@ -107,23 +109,23 @@
             - name: Výukový katalog
               items:
                 - name: Domovská stránka Výukový katalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Obchodníci s rozhodovací pravomocí
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Obchodní uživatelé
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Správci projektu implementace
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Správci
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Vývojáři
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: "Partnerství prodeje a\_marketingu"
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funkční poradci
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Architekti řešení
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Prozkoumání uživatelského rozhraní
               items:
                 - name: Prvky uživatelského rozhraní
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Zpracování přidělení
                   href: general-ledger/process-allocations.md
+                - name: Podmínky přidělení
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Finanční dimenze
                   href: general-ledger/financial-dimensions.md
                 - name: Skupiny konsolidačních účtů a další konsolidační účty
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Vytvoření pokročilého zadávání do hlavní knihy ve veřejném sektoru
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Předvaha se sestavou transakčních podrobností
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Použití limitů kontroly hotovosti
                   href: public-sector/cash-control.md
                 - name: Zpracování na konci roku ve veřejném sektoru
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: "Přidání typu certifikátu k\_dodavateli ve veřejném sektoru"
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Výpočet kanadské harmonizované DPH
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Finanční výkaznictví
           items:
             - name: Přehled finančního výkaznictví
@@ -1846,6 +1854,8 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.11
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.12
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: Referenční skupiny indické daně GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrace pro registrační pokladny
@@ -2632,10 +2642,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: Sestava 340
                   href: localizations/emea-esp-report-340.md
+                - name: Sestava prohlášení 347
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Prodejní a nákupní cykly
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Speciální záznamy a počáteční stavy
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Okamžité poskytnutí informací o DPH
+                  href: localizations/emea-esp-sii.md
             - name: Švédsko
               items:
                 - name: Švédsko - přehled

@@ -90,6 +90,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (říjen 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (srpen 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (červenec 2020)
@@ -127,23 +129,23 @@
             - name: Výukový katalog
               items:
                 - name: Domovská stránka Výukový katalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Obchodníci s rozhodovací pravomocí
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Obchodní uživatelé
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Správci projektu implementace
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Správci
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Vývojáři
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: "Partnerství prodeje a\_marketingu"
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funkční poradci
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Architekti řešení
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Prozkoumání uživatelského rozhraní
               items:
                 - name: Prvky uživatelského rozhraní
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Výpočet osvobození od daně
+                          href: tax-exempt-price-inclusive.md
                     - name: Nastavení profilu oznámení e-mailem
                       href: email-notification-profiles.md
                     - name: Číselné řady
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Kontrola stavu pro periferní zařízení a služby POS
                           href: pos-healthcheck.md
+                        - name: Podpora síťových periferních zařízení
+                          href: dev-itpro/network-peripherals.md
                     - name: Rozložení obrazovky
                       items:
                         - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: Modul karty
                       href: add-tab.md
+                    - name: Modul iFrame
+                      href: iframe-module.md
                 - name: Marketingové moduly
                   items:
                     - name: Modul propagačního banneru
@@ -968,6 +976,8 @@
                   items:
                     - name: Modul buy boxu
                       href: add-buy-box.md
+                    - name: Modul galerie médií
+                      href: media-gallery-module.md
                     - name: Moduly hodnocení a recenzí
                       href: ratings-reviews-modules.md
                 - name: Nákupní moduly
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Modul podrobností objednávky
                       href: order-confirmation-module.md
-                    - name: Modul volby obchodu
-                      href: store-selector.md
                     - name: Modul dárkového poukazu
                       href: add-giftcard.md
+                - name: Moduly vyhledávání obchodu
+                  items:
+                    - name: Modul mapy
+                      href: map-module.md
+                    - name: Modul volby obchodu
+                      href: store-selector.md
                 - name: Moduly správy obchodního vztahu
                   items:
                     - name: Moduly a stránky správy obchodního vztahu
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Náhled a ladění modulů
                       href: e-commerce-extensibility/test-module.md
-                    - name: Testování modulů pomocí napodobenin
+                    - name: Testování modulů pomocí napodobenin modulů
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Testování modulů pomocí napodobenin stránek
                       href: e-commerce-extensibility/test-page-mock.md
