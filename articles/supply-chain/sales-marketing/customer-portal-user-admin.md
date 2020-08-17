@@ -3,7 +3,7 @@ title: Vytváření a správa uživatelů zákaznického portálu
 description: Toto téma vysvětluje, jak vytvořit uživatelské účty zákaznického portálu a nastavit pro ně oprávnění.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413943"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645306"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
@@ -30,11 +30,16 @@ Než může uživatel používat web, musí být pro něj vytvořen záznam kont
 
 Když se uživatelé zaregistrují, automaticky se pro ně vytvoří záznamy kontaktů. Proto nemůžete zajistit, aby si uživatel vybral správný zákaznický účet a právnickou osobu. Na druhé straně proces pozvání umožňuje správci přiřadit správný zákaznický účet a právnickou osobu k záznamu kontaktu před odesláním pozvání. Pokud přemýšlíte o přizpůsobení řešení, aby se uživatelé mohli zaregistrovat, nezapomeňte zvážit možné důsledky.
 
+## <a name="video"></a>Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Video [POzvěte zákazníky k registraci a používání vašeho zákaznického portálu](https://youtu.be/drGUYHX9QIQ) (zobrazené výše) je zahrnuto do playlistu [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupného na YouTube.
+
 ## <a name="prerequisite-setup"></a>Nastavení předpokladů
 
 Kontakty v portálech Power Apps jsou uloženy jako záznamy v entitě **Kontakty** v Common Data Service. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
 
-![![Systémový diagram pro kontakty zákaznického portálu](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Systémový diagram pro kontakty zákaznického portálu](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
 
 Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování entit **Kontakt** dvojitým zápisem.
 

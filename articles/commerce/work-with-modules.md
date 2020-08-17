@@ -3,7 +3,7 @@ title: Práce s moduly
 description: V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,19 +17,19 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025872"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646008"
 ---
 # <a name="work-with-modules"></a>Práce s moduly
 
-V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
-
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
@@ -42,8 +42,10 @@ Ve výchozím nastavení váš web Dynamics 365 Commerce obsahuje knihovnu modul
 Jak bylo zmíněno dříve, některé moduly jsou navrženy pro uchovávání podřízených modulů. Tyto moduly jsou označovány jako *kontejnery* a umožňují hierarchie vnořených modulů. Kontejnerové moduly obsahují *sloty*. Sloty se používají k obsluze rozvržení a účelu podřízených modulů v kontejneru. Příkladem může být základní modul kontejneru stránky (modul nejvyšší úrovně pro libovolnou stránku), který definuje několik důležitých slotů:
 
 - Slot záhlaví
-- Slot obsahu
+- Slot dílčího záhlaví
+- Hlavní slot
 - Slot zápatí
+- Slot dílčího zápatí
 
 Vývojář modulu definuje tyto sloty a určuje, které podřízené moduly a kolik podřízených modulů je možné přímo do ní vložit. Například slot záhlaví může podporovat pouze jeden modul typu **Modulu záhlaví**, zatímco slot obsahu může podporovat neomezený počet modulů typu (kromě jiných modulů kontejneru stránky).
 
@@ -51,7 +53,7 @@ V nástrojích pro vytváření obsahu nemusí autoři stránek předem vědět,
 
 ## <a name="content-modules"></a>Moduly obsahu
 
-Moduly obsahu obsahují obsah a multimediální prvky, například text (například nadpisy, odstavce a odkazy) nebo odkazy na materiály (například obrázky, video a PDF). Příklady typických typů modulů obsahu jsou **Hero**, **Funkce** a **Banner**. Moduly těchto tří typů mohou obsahovat text nebo média a nevyžadují žádné podřízené moduly, aby je bylo možné zobrazit na stránce.
+Moduly obsahu obsahují obsah a multimediální prvky, například text (například nadpisy, odstavce a odkazy) nebo odkazy na materiály (například obrázky, video a PDF). Typické typy modulů obsahu zahrnují moduly obsahu, blok textu a propagační bannerové moduly. Moduly těchto tří typů mohou obsahovat text nebo média a nevyžadují žádné podřízené moduly, aby je bylo možné zobrazit na stránce.
 
 Většina typických, každodenních aktivit vytváření stránek a obsahu zahrnuje moduly obsahu, především proto, že tyto moduly definují skutečný obsah, který je vykreslený v nadřazených modulech kontejnerů. K dispozici je mnoho modulů obsahu a tyto moduly jsou obvykle posledními částmi, které přidáte do hierarchie vnořených modulů.
 
@@ -67,20 +69,20 @@ Následující postupy popisují způsob přidávání a odebírání modulů.
 
 Chcete-li přidat modul do slotu nebo kontejneru na stránce, postupujte podle následujících kroků.
 
-1. V podokně osnovy vlevo vyberte kontejner nebo slot, do kterých lze přidávat podřízený modul.
+1. V podokně obrysu vlevo nebo přímo na hlavním plátně vyberte kontejner nebo slot, do kterých lze přidat podřízený modul.
 
     > [!NOTE]
-    > Návrhář modulů definuje seznam typů modulů, které lze přidat do určitého slotu modulu. Autoři šablon pak mohou vylepšit povolené možnosti modulu, aby zajistily konzistentní optimalizaci vyhledávače (SEO) a efektivitu vytváření pro všechny stránky, které jsou vytvořeny z určité šablony.
+    > Návrhář modulů definuje seznam typů modulů, které lze přidat do určitého slotu modulu. Autoři šablon pak mohou vylepšit povolené možnosti modulu, aby zajistily konzistentní optimalizaci vyhledávače (SEO) a efektivitu vytváření pro všechny stránky, které jsou vytvořeny z určité šablony. Při přidání modulu do slotu je automaticky filtrováno dialogové okno **Přidat modul**, takže zobrazuje pouze moduly, které jsou podporovány ve vybraném kontejneru nebo slotu. Tento seznam povolených modulů je určen šablonou stránky nebo definicí modulu kontejneru.
 
-1. Vyberte tlačítko se třemi tečkami (**...**) pro modul a poté vyberte možnost **Přidat modul**. Zobrazí se dialogové okno **Přidat modul**. Toto dialogové okno je automaticky filtrováno, takže zobrazuje pouze moduly, které jsou podporovány ve vybraném kontejneru nebo slotu. Seznam modulů je určen šablonou stránky nebo definicí modulu kontejneru.
+1. Pokud používáte podokno obrysu, vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu a poté vyberte **Přidat modul**. Pokud používáte ovládací prvky přímo na plátně, vyberte symbol plus (**+**) v prázdném slotu nebo v sousedství aktuálně vybraného modulu a poté vyberte **Přidat modul**.
 
     > [!NOTE]
     > Pokud kontejner nebo slot nepodporuje nové podřízené moduly, nebude možnost **Přidat modul** k dispozici.
 
-1. V dialogovém okně vyhledejte a vyberte modul, který chcete přidat na svoji stránku.
+1. V dialogovém okně **Přidat modul** vyhledejte a vyberte modul, který chcete přidat na svoji stránku.
 
     > [!TIP]
-    > **Funkce** a **Hero** jsou dobrými typy modulů pro začátečníky.
+    > **Blok obsahu** je dobrým typem modulu pro začátečníky.
 
 1. Výběrem tlačítka **OK** přidáte vybraný modul do vybraného kontejneru nebo slotu na stránce.
 
@@ -88,8 +90,35 @@ Chcete-li přidat modul do slotu nebo kontejneru na stránce, postupujte podle n
 
 Chcete-li odebrat modul ze slotu nebo kontejneru na stránce, postupujte podle následujících kroků.
 
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami vedle názvu modulu, který chcete odebrat, a pak vyberte tlačítko odpadkového koše.
+1. V podokně obrysu vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu, který chcete odebrat, a pak vyberte symbol odpadkového koše. Alternativně můžete na hlavním plátně vybrat symbol koše na panelu nástrojů vybraného modulu.
 1. Až budete vyzváni k potvrzení odebrání modulu, vyberte **OK.**
+
+## <a name="move-a-module-to-a-new-position"></a>Přesunutí modulu na novou pozici
+
+Chcete-li přesunout modul na nové místo na stránce, použijte některou z následujících metod.
+
+### <a name="move-a-module-using-the-outline-pane"></a>Přesuňte modul pomocí podokna obrysu
+
+Chcete-li přesunout modul pomocí podokna obrysu, postupujte takto.
+
+1. Vyberte a podržte modul, který chcete přesunout, v podokně obrysu, a poté modul přetáhněte na nové místo v obrysu. Modrá čára v obrysu a na plátně označuje, kam lze modul umístit.
+1. Uvolněte modul a přemístěte jej do nové polohy.
+
+### <a name="move-a-module-directly-within-the-canvas"></a>Přesuňte modul přímo na plátno
+
+Chcete-li přesunout modul přímo v rámci plátna, postupujte následovně.
+
+1. Vyberte modul, který chcete na plátně přesunout. 
+1. Na panelu nástrojů modulu vyberte buď symbol šipky směřující nahoru nebo dolů a potom přetáhněte šipku na nové místo na stránce. Modrá čára v obrysu a na plátně označuje, kam lze modul umístit. Pokud nelze modul posunout nahoru nebo dolů, bude symbol šipky zobrazen šedě. 
+1. Uvolněte modul a přemístěte jej do nové polohy.
+
+### <a name="move-a-module-using-the-ellipsis-menu"></a>Přesuňte modul pomocí nabídky se třemi tečkami
+
+Chcete-li přesunout modul pomocí nabídky se třemi tečkami, postupujte takto.
+
+1. Vyberte modul v obrysu nebo na plátně.
+1. Vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu v podokně obrysu nebo na panelu nástrojů vybraného modulu na plátně.
+1. Pokud lze modul pohybovat nahoru nebo dolů v kontejneru nebo slotu, zobrazí se možnosti pro **Posunout nahoru** nebo **Posunout dolů**. Vyberte požadovanou možnost přesunu pro přesun modulu nahoru nebo dolů vzhledem k jeho sourozencům.
 
 ## <a name="configure-modules"></a>Konfigurace modulů
 
@@ -99,10 +128,28 @@ Následující postupy popisují způsob konfigurace modulů obsahu a kontejneru
 
 Chcete-li konfigurovat modul obsahu na stránce, postupujte podle následujících kroků.
 
-1. V podokně osnovy vlevo rozbalte stromovou strukturu a vyberte libovolný modul obsahu (například **Funkce**, **Hero** nebo **Banner**).
-1. V podokně vlastností vpravo vyhledejte ovládací prvky s obsahem a nastavením modulu.
-1. Zadejte vlastnosti pro jakékoli požadované ovládací prvky modulu.
+1. V podokně osnovy vlevo rozbalte stromovou strukturu a vyberte libovolný modul obsahu (například **Blok obsahu**). Případně vyberte modul, který chcete na hlavním plátně přesunout.
+1. V podokně vlastností modulu vpravo zadejte vlastnosti pro všechny požadované ovládací prvky modulu.
 1. Na příkazovém řádku vyberte možnost **Uložit**. Tím se také obnoví plátno náhledu.
+
+### <a name="edit-module-text-properties"></a>Úprava textových vlastností modulu
+
+Vlastnosti textu modulu, které nejsou jen pro čtení, lze upravovat přímo na plátně.
+
+Chcete-li upravit vlastnosti textu modulu, postupujte takto.
+
+1. Vyberte ovládací prvek textu na plátně a umístěte kurzor na místo, kde chcete text upravit.
+1. Zadejte obsah textu.
+1. Chcete-li pokračovat v úpravách jiného obsahu, vyberte místo kdekoli mimo textový obsah.
+
+### <a name="inline-image-selection"></a>Výběr vloženého obrázku
+
+Vlastnosti obrázku modulu, které nejsou jen pro čtení, lze měnit přímo na plátně.
+
+Chcete-li zvolit nový obrázek pro modul obsahu, postupujte podle následujících kroků.
+
+1. Na plátně dvakrát klikněte na obrázek. Otevře se okno pro výběr média.
+1. Vyhledejte a vyberte nový obrázek, který chcete použít, a poté vyberte **OK**. Nový obrázek je nyní vykreslen na plátně.
 
 ### <a name="configure-a-container-module"></a>Konfigurace modulu kontejneru
 

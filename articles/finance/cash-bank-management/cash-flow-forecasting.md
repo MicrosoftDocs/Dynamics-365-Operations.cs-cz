@@ -3,7 +3,7 @@ title: Prognóza cashflow
 description: Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188411"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653769"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
@@ -104,6 +104,13 @@ Vypočítejte prognózu cashflow pomocí stránky **Vypočítat prognózy cashfl
 
 Pro své prognózy cashflow můžete také použít dávkové zpracování. K zajištění pravidelných aktualizací analýz prognóz nastavte opakované dávkové zpracování pro výpočet prognózy cashflow.
 
+Ve verzi 10.0.13 bylo vydáno vylepšení procesu výpočtu, které používá rámec automatizace procesů k naplánování úlohy výpočtu cash flow. Toto je povoleno pomocí funkce **Automatizace prognózy peněžních toků** v pracovním prostoru **Správa funkcí**. Po aktivaci vyberte odkaz **Automatizace prognózy peněžních toků** pro zobrazení nové stránky automatizace, kde můžete naplánovat proces výpočtu cash flow. Chcete-li vytvořit nový plán prognózy peněžních toků, vyberte **Vytvořit novou automatizaci procesů** a poté vyberte **Automatizace prognózy peněžních toků** v rozbalovací nabídce **Typ plánu**. Musíte nastavit plán pro každou společnost, pro kterou aktualizujete údaje o prognóze peněžních toků.  Na této stránce je také uvedeno, které úlohy automatizace prognózy peněžních toků čekají a kdy byla dokončena poslední úloha.  
+
+> [!NOTE] 
+> Pokud jsou již existující dávkové úlohy naplánovány pro prognózy peněžních toků, zobrazí se chybová zpráva a tuto funkci nebudete moci povolit. Aby bylo možné tuto funkci povolit, bude nutné vymazat stávající dávkové úlohy. 
+
+Další informace naleznete v tématu [Automatizace procesu](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
 ### <a name="reporting"></a>Vykazování
 
 Po výpočtu prognózy cashflow je nutné obnovit informace o přidružené entitě pro sestavy analýz. Na stránce **Úložiště entit** vyberte měření **Agregace LedgerCovLiquidityMeasurement** a klikněte na **Aktualizovat**.
@@ -128,7 +135,7 @@ Pracovní prostor **Přehled hotovosti – všechny společnosti** zobrazuje ana
 
 Pracovní prostor **Přehled hotovosti – aktuální společnost** zobrazuje analýzu prognózy cashflow v definované zúčtovací měně společnosti. Zúčtovací měna, která se používá pro analýzu, se definuje na stránce **Hlavní kniha**. Tento pracovní prostor zobrazuje přehled prognóz cashflow a zůstatky bankovního účtu pro aktuální společnost. Graf přírůstků a úbytků hotovosti poskytuje přehled pohybů budoucí hotovosti a zůstatky v zúčtovací měně, včetně podrobných informací o předpokládaných transakcích. Také můžete zobrazit předpokládané zůstatky měny.
 
-Další informace týkající se analýzy prognózy cashflow naleznete v tématu Obsah přehledu hotovosti v Power BI.
+Další informace týkající se analýzy prognózy cashflow naleznete v tématu [Obsah přehledu hotovosti Power BI](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Dále můžete zobrazit data prognózy cashflow pro konkrétní účty, objednávky a položky na následujících stránkách:
 

@@ -3,7 +3,7 @@ title: Řízení výkonnosti
 description: Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
-ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
+ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "3609765"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628446"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
 
@@ -37,6 +37,7 @@ Dle následujícího diagramu máte k dispozici tři stránky, které vám pomoh
 Následující diagram znázorňuje vzájemnou souvislost primárních komponent řízení výkonnosti. [![Přehled procesu výkonnosti](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Deník výkonnosti
+
 Jako zaměstnanec často před provedením svého přezkoumání hledáte informace o aktivitách nebo událostech, které přispěly k vašemu úspěchu v období přezkoumání. Deník výkonnosti je místo, kde můžete tyto aktivity a události dokumentovat. Kromě toho můžete vytvářet budoucí aktivity, které je třeba provést k dosažení cíle, ke splnění požadavků plánu rozvoje nebo ke splnění závazku výkonnosti. Deníky výkonnosti nejsou vyžadovány k vytváření cílů nebo přezkoumání výkonnosti. 
 
 Existují dvě verze deníku výkonnosti: verze pro zaměstnance, která je přístupná prostřednictvím pracovního prostoru **samoobsluhy pro zaměstnance** (**ESS**), a verze pro manažery, která je přístupná prostřednictvím pracovního prostoru **samoobsluhy pro manažery**(**MSS**). Zaměstnanci si mohou sami vytvářet své deníky a mohou se rozhodnout je sdílet se svým manažerem. Manažeři si mohou vytvářet deníky pro svůj tým a mohou se rozhodnout je sdílet se svými zaměstnanci. 
@@ -58,6 +59,7 @@ Deník výkonnosti můžete také propojit s externím webem uložením adresy U
 Deník výkonnosti obsahuje další funkci s názvem Zpětná vazba. Po kliknutí na tlačítko **Odeslat zpětnou vazbu** můžete vybrat zaměstnance a poskytnout tomuto zaměstnanci zpětnou vazbu prostřednictvím e-mailu. Zpráva bude odeslána zaměstnanci, který je adresátem zpětné vazby, manažerovi daného zaměstnance, zaměstnanci, který odesílá zpětnou vazbu, a manažerovi daného zaměstnance. Pro každou osobu, která obdrží zpětnou vazbu, se vytvoří položka deníku výkonnosti.
 
 ## <a name="goals"></a>Cíle
+
 Stránka **cílů výkonnosti** umožňuje sledovat cíle, které jste si spolu s vaším manažerem vytvořili. Můžete vytvářet libovolný počet cílů a tyto cíle mohou být rozloženy do různých období a přezkoumání výkonnosti. Dále můžete vytvářet jednoduché nebo komplexní cíle v závislosti na množství informací, které chcete pro daný cíl zadat. Cíle nejsou vyžadovány k přezkoumání výkonnosti. 
 
 Základní cíl musí obsahovat následující informace:
@@ -80,6 +82,7 @@ Pokud chcete k cíli přiložit dokument, např. certifikát o dokončení, mů�
 Z cíle můžete vytvořit šablonu a poté ji použít k vytváření nových cílů, které ze šablony vycházejí. Při vytváření šablony z cíle se ukládá popis, témata a cílová měření. Všechna skutečná měření, data dokončení a komentáře k tématu však budou odebrány.
 
 ## <a name="performance-reviews"></a>Přezkoumání výkonnosti
+
 Přezkoumáním výkonnosti se formálně říká diskuse. Ty jsou v současné době dostatečně flexibilní, aby podporovaly průběžnou zpětnou vazbu, plány rozvoje a formálnější přezkoumání. Můžete rychle vytvářet malé schůzky pro dvě osoby, např. schůzku „jeden na jednoho“, nebo můžete vytvořit komplexnější přezkoumání, které odpovídá procesu přezkoumání vaší společnosti. 
 
 Schůzka „jeden na jednoho“ představuje jednoduché přezkoumání a vyžaduje zkrácený název, delší popis obsahu schůzky a její datum. Jednoduché přezkoumání zahrnuje stejné informace a navíc období přezkoumání, o kterém se diskutuje. Manažeři také uvidí jméno osoby, pro kterou je přezkoumání vytvářeno. 
@@ -92,7 +95,11 @@ Můžete vytvářet nová přezkoumání vycházející ze šablon, které jste 
 
 Chcete-li vytisknout recenze, vyberte tlačítko **Tisk recenze**. Pokud se tlačítko na stránce **Recenze** nezobrazí, ujistěte se, že jste povolili tuto funkci v pracovním prostoru **Správa funkcí**. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
+> [!NOTE]
+> Schopnost tisknout recenze výkonu je k dispozici pouze v Human Resources. Není k dispozici v Dynamics 365 Finance.
+
 ## <a name="components-you-can-include-in-performance-reviews"></a>Komponenty, které lze zahrnout do přezkoumání výkonnosti
+
 Do přezkoumání výkonnosti můžete zahrnout různé typy informací. Patří k nim podrobnosti přezkoumání, měření, aktivity, hodnocení, podpisy a přílohy.
 
 ### <a name="review-detail"></a>Podrobnosti přezkoumání
@@ -119,24 +126,30 @@ Zaměstnanec nebo manažer bude uveden u přezkoumání podle parametrů přezko
 
 Dokument můžete k přezkoumání připojit v části **Přílohy** stránky **přezkoumání**. Abyste mohli rychle zobrazit obsah jakéhokoli přiloženého dokumentu, je k dispozici prohlížeč dokumentů.
 
-### 
-
 ## <a name="workflow-for-performance-management"></a>Pracovní postup řízení výkonnosti
+
 Ke kontrole schválení přezkoumání můžete použít pracovní postup přezkoumání pracovníka. Také je možné přeskočit automatizovaný pracovní postup a ručně změnit stav přezkoumání, což umožňuje vytvářet jednodušší dokumenty, např. „jeden na jednoho“, bez nutnosti použít proces daného pracovního postupu. Přístup k přezkoumání je řízen stavem přezkoumání.
 
 1.  Při vytváření přezkoumání je počátečním stavem **Nezahájeno**. Přezkoumání může upravovat kdokoli.
+
 2.  Jakmile zaměstnanec stiskne tlačítko **Zahájit přezkoumání**, přezkoumání přejde do stavu **Probíhá**. Zaměstnanec poté začne přidávat obsah. V tomto okamžiku již manažer nemůže zobrazit dokument přezkoumání.
+
 3.  Zaměstnanec změní stav na **Připraveno k přezkoumání**.
+
 4.  Manažer může přidávat komentáře a hodnocení. V tomto bodě může přezkoumání zobrazit pouze manažer.
+
 5.  Manažer změní stav na **Konečné přezkoumání**, aby mohl manažer i zaměstnanec přezkoumání zobrazit a vést o něm diskusi. V parametrech můžete určit, zda lze v tomto bodě přezkoumání upravovat. Tento krok je také volitelný, pokud chce manažer jednoduše sdílet přezkoumání se zaměstnancem a označit ho jako **Dokončeno** v okamžiku, kdy je dokončeno.
+
 6.  Po získání podpisů se stav změní na **Dokončeno**. V tomto bodě nelze přezkoumání změnit.
 
 Pracovní postup přezkoumání pracovníka má dva prvky:
 
 1.  Schválení přezkoumání. Tento prvek přidejte pro řízení změny stavu z **Probíhá** na **Připraveno k přezkoumání**. Přiřazení změňte, chcete-li použít manažerskou hierarchii v případě, že úroveň úsekového manažera zaměstnance = 1.
+
 2.  Konečné přezkoumání. Tento prvek přidejte pro řízení změny stavu z **Připraveno k přezkoumání** na **Konečná kontrola**. Změňte přiřazení tak, aby používalo manažerskou hierarchii, kde úroveň správce Employee.line = 1, pokud chcete, aby manažer schválil závěrečné přezkoumání. Změňte přiřazení uživateli pracovního postupu, pokud chcete, aby ho zaměstnanec schválil. Pokud chcete, aby ho schválil manažer i zaměstnanec, přidejte do pracovního postupu dva kroky a proveďte pro každý krok odpovídající přiřazení v pořadí, v jakém chcete následná schválení.
 
 ## <a name="setup"></a>Nastavení
+
 Máte k dispozici tři stránky, které vám pomohou nastavit informace požadované pro dokončení procesu výkonnosti: stránku **měření**, stránku **typů zdrojů deníků výkonnosti** a stránku **typů přezkoumání**.
 
 ### <a name="measurements"></a>Měření
@@ -150,6 +163,3 @@ Typy zdrojů deníků výkonnosti popisují, odkud pochází deníky výkonnosti
 ### <a name="review-types"></a>Typy kontroly
 
 Typy přezkoumání výkonnosti vám pomáhají s řízením průběhu přezkoumání. Můžete povolit nebo zakázat pracovní postup přezkoumání. Pokud přezkoumání nepoužívá pracovní postup, můžete definovat výchozí stav, který bude používán při vytvoření přezkoumání. Můžete také rozhodnout, zda bude muset přezkoumání podepsat zaměstnanec, manažer nebo oba.
-
-
-

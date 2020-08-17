@@ -3,7 +3,7 @@ title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
 description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 Commerce ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021816"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628902"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -95,6 +95,9 @@ V případě vyhledávání vzdáleného zákazníka se ID zákazníka nezobrazu
 
 Hledání, které jsou založeny na telefonním čísle, byla zjednodušena. Tato hledání nyní ignorují speciální znaky, například mezery, pomlčky nebo hranaté závorky, které mohly být přidané při vytvoření odběratele. Pokladníci si tak nemusí dělat starosti s formátem telefonního čísla při hledání. Mohou také vyhledávat zákazníky zadáním částečného telefonního čísla. Pokud telefonní číslo zahrnuje speciální znaky, lze je najít také hledáním čísel, která se zobrazí za těmito znaky. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **123**, **456**, **7890**, nebo **1234567890**, nebo zadáním několika počátečních čísel telefonního čísla.
 
+> [!NOTE]
+> Zákazník může mít více telefonních čísel a více e-mailů. Algoritmus vyhledávání zákazníků také prochází těmito sekundárními e-maily a telefonními čísly, ale stránka s výsledky vyhledávání zákazníků zobrazuje pouze primární e-mail a telefonní číslo. To může způsobit určitý zmatek, protože vrácené výsledky zákazníka nezobrazí hledaný e-mail nebo telefonní číslo. V příštím vydání plánujeme vylepšit obrazovku výsledků vyhledávání zákazníků tak, aby se tyto informace zobrazovaly.
+
 Tradiční vyhledávání zákazníků může být časově náročné, protože vyhledává mezi více poli. Místo toho mohou pokladníci nyní hledat v jedné vlastnosti zákazníka, jako je jméno, e-mailová adresa nebo telefonní číslo. Vlastnosti, které používá algoritmus hledání odběratele, jsou souhrnně označovány jako *kritéria hledání odběratele*. Správce systému může snadno konfigurovat jedno nebo více kritérií jako zástupce, který se zobrazí v POS. Vzhledem k tomu, že je hledání omezeno na jediné kritérium, jsou zobrazeny pouze relevantní výsledky hledání a výkon je mnohem lepší než výkon standardního hledání odběratele. Následující obrázek znázorňuje zkratky hledání odběratele v POS.
 
 ![Klávesové zkratky vyhledávání zákazníků](./media/SearchShortcutsPOS.png "Klávesové zkratky vyhledávání zákazníků")
@@ -114,3 +117,4 @@ Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky
 V nadcházející verzi aplikace Commerce budou maloobchodní prodejci moci nastavit výchozí režim vyhledávání odběratelů v aplikaci POS pro možnost **Prohledat všechny obchody**. Tato konfigurace může být užitečná ve scénářích, ve kterých je nutné, aby zákazníci, kteří byli vytvořeni mimo POS, byli vyhledání okamžitě (například před spuštěním úlohy distribuce). Ve funkčním profilu POS bude k dispozici nová možnost **Výchozí režim vyhledávání odběratelů**. Nastavením této možnosti na **Zapnuto** nastavíte výchozí režim vyhledávání pro možnost **Prohledat všechny obchody**. Každý pokus o hledání odběratele poté provede volání do centrály v reálném čase.
 
 Aby se zabránilo neočekávaným problémům s výkonem, je tato konfigurace skryta za testovacím příznakem s názvem **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Chcete-li tedy zobrazit možnost **Výchozí režim vyhledávání odběratelů** nastavující uživatelské rozhraní (UI), měl by maloobchodní prodejce vytvořit lístek podpory pro akceptační testování uživatele a výrobní prostředí. Po obdržení lístku bude tým inženýrů spolupracovat s maloobchodním prodejcem, aby se ujistil, že prodejce provádí testování v nevýrobním prostředí, aby zhodnotil výkonnost a implementoval požadované optimalizace.
+

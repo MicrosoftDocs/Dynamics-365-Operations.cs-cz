@@ -1,9 +1,9 @@
 ---
-title: Fakturování projektu
-description: V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
-author: ShylaThompson
+title: Fakturace projektu
+description: V tomto tématu najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
+author: TaylorVH
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
-ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
+ms.search.validFrom: 2020-07-06
+ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: eab7523296996709dfe7407c582e61e28b7d4f23
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331365"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651585"
 ---
-# <a name="project-invoicing"></a>Fakturování projektu
+# <a name="project-invoicing"></a>Fakturace projektu
 
 [!include [banner](../includes/banner.md)]
 
-V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
+V tomto tématu najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
 
 Typ projektu stanoví, který fakturační postup by měl být použit. Fakturovat lze pouze dva typy externích projektů – časový a materiálový projekt nebo projekt s pevnou cenou. Časové a materiálové projekty a projekty s pevnou cenou jsou vždy připojeny k projektové smlouvě.
 
@@ -47,7 +47,7 @@ Před vytvořením faktury odběratele pro projekt můžete vytvořit předběž
 
 ### <a name="creating-invoice-proposals"></a>Vytváření návrhů faktur
 
-Návrhy faktur můžete vytvořit ručním výběrem ze seznamu transakcí pro zadaný projekt. Můžete také nastavit pravidla účtování, která určují, kdy chcete automaticky vytvořit návrh faktury. Například můžete vytvořit pravidlo účtování k vytvoření návrhu faktury při dokončení 25, 50, 75 nebo 100 procent práce na projektu. 
+Návrhy faktur můžete vytvořit ručním výběrem transakce ze seznamu transakcí pro zadaný projekt. Můžete také nastavit pravidla účtování, která určují, kdy chcete automaticky vytvořit návrh faktury. Například můžete vytvořit pravidlo účtování k vytvoření návrhu faktury při dokončení 25, 50, 75 nebo 100 procent práce na projektu. 
 
 Návrhy faktury mohou být vytvořeny pro následující transakce:
 
@@ -57,7 +57,7 @@ Návrhy faktury mohou být vytvořeny pro následující transakce:
 -   Částky, které jsou vám zaplaceny odběratelem před zahájením projektu
 
 > [!NOTE]
-> Funkce **Povolit řazení podle zdroje během funkce vytvoření návrhu faktury projektu** umožňuje účetním projektu řadit transakce projektu, které jsou k dispozici pro účtování zdroje při vytváření nového návrhu faktury projektu. Mřížka zobrazující dostupné projektové transakce bude mít samostatné pole pro ID prostředku a prostředek, což uživateli umožňuje filtrovat a řadit podle názvu prostředku. Tato funkce je ve výchozím nastavení zakázána a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
+> Funkce **Povolit řazení podle zdroje během funkce vytvoření návrhu faktury projektu** umožňuje účetním projektu řadit transakce projektu, které jsou k dispozici pro účtování zdroje při vytváření nového návrhu faktury projektu. Mřížka zobrazující dostupné transakce projektu bude mít samostatná pole pro **ID zdroje** a **Zdroj**. Tato pole umožňují filtrovat a třídit podle názvu zdroje. Ve výchozím nastavení je tato funkce vypnutá. Lze ji povolit pomocí stránky **Správa funkcí** (**Pracovní prostory > Správa funkcí**). Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 V návrhu faktury lze vytvořit transakce poplatků. Můžete také změnit prodejní cenu za hodinu, výdaj, položku a transakce poplatků. Při zaúčtování návrhu faktury jsou přidány aktualizované ceny a transakce do sestav projektů a historie transakcí. 
 
@@ -71,20 +71,23 @@ Po vytvoření a zaúčtování návrhu faktury bude automaticky vytvořena fakt
 
 Před zaúčtováním návrhu faktury lze přidat nebo odstranit transakce. Například můžete odebrat výdajové transakce, které byly zaúčtovány v projektu, ale nejsou fakturovatelné odběrateli. 
 
-Pokud vaše organizace vyžaduje, aby byly návrhy faktury před zaúčtováním zkontrolovány, může být před zaúčtováním návrhu faktury vyžadováno schválení pomocí workflowu "Zkontrolovat návrhy faktury projektu".
+Pokud vaše organizace vyžaduje, aby byly návrhy faktury před zaúčtováním zkontrolovány, může být před jejich zaúčtováním vyžadováno schválení pomocí workflowu "Zkontrolovat návrhy faktury projektu".
+
+### <a name="view-grant-information-on-project-invoice-list-pages"></a>Zobrazení informací o grantu na stránkách seznamu faktur projektu
+
+Uživatelé z veřejného sektoru mohou přidat **ID grantu** a **Název grantu** na stránky se seznamem **Návrhy na fakturu projektu** a **Faktury projektu**. Tyto sloupce jsou povoleny pomocí funkce **Přidejte informace o grantu na stránky se seznamem faktur na projektu**. Tato funkce je ve výchozím nastavení vypnutá a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 ## <a name="on-account-invoicing"></a>Faktura akontace
 Částka, kterou zadáte do faktury na účet pro projekt, je založena na časovém období, procentuální hodnotě dokončení a dalších podmínkách fakturace, které jsou zadány v související projektové smlouvě. Částka není založena na hodinách, položkách, výdajích ani poplatcích, které jsou zaúčtovány do projektu. 
 
-Je nutné nejprve vytvořit transakci na účet pro časový a materiálový projekt nebo projekt s pevnou cenou, abyste mohli přidat transakci na účet pro fakturu projektu. V transakci na účet zadejte částku faktury odběratele. Chcete-li vytvořit fakturu projektu pro částku, vytvořte předběžnou fakturu (návrh faktury). V návrhu faktury vyberte transakci na účet. Můžete zkontrolovat informace na účet v návrhu faktury, než pro ni vytvoříte fakturu projektu.
+Je nutné nejprve vytvořit transakci na účet pro časový a materiálový projekt nebo projekt s pevnou cenou, abyste mohli přidat transakci na účet pro fakturu projektu. V transakci na účet zadejte částku faktury odběratele. Chcete-li vytvořit fakturu projektu pro částku, vytvořte předběžnou fakturu (návrh faktury). V návrhu faktury vyberte transakci na účet. Můžete zkontrolovat informace na účet v návrhu faktury, než pro ni vytvoříte fakturu projektu. 
 
 ### <a name="fixed-price-projects"></a>Projekty s pevnou cenou
-
 Pro projekty s pevnou cenou jsou transakce na účet založeny na dohodnutém milníku, jednotce dodání nebo průběžném účtování, které jsou zadány ve smlouvě projektu. Pro každou platbu bude vytvořen jeden řádek, který musí být přijat od odběratele projektu. Nejsou vyžadovány srážky.
 
 ### <a name="time-and-material-projects"></a>Časové a materiálové projekty
 
-U časových a materiálových projektů je možné účtovat odběratele nebo jiný zdroj financování pro částku zálohy pomocí návrhu faktury na účet. Zadejte transakce na účet jako jeden řádek. Volitelně můžete zadat další řádky jako odpočty pro vyrovnání všech záloh, které již zákazník provedl. K vytvoření řádků odpočtu před částku uveďte záporné znaménko.
+U časových a materiálových projektů je možné účtovat odběratele nebo jiný zdroj financování pro částku zálohy pomocí návrhu faktury na účet. Zadejte transakce na účet jako jeden řádek. Volitelně můžete zadat další řádky jako odpočty pro vyrovnání všech záloh, které již zákazník provedl. K vytvoření řádků odpočtu před částku zadejte záporné znaménko.
 
 ## <a name="invoice-control"></a>Řízení faktury
 Řízení faktury slouží ke sledování fakturovaných a nefakturovaných transakcí a k analýze těchto transakcí vzhledem k nabídkám pro kompletní zobrazení projektů od fáze nabídky až po dokončení. Lze zobrazit, které transakce byly vyúčtovány u určitého projektu a které řádky byly fakturovány. Můžete rovněž zobrazit jednotlivé transakce, abyste je mohli upravit po zaúčtování.
@@ -108,10 +111,10 @@ Můžete vytvářet například následující plán účtování:
 Když jsou milníkové platby připraveny k fakturaci, použijte postup fakturace částek na účet.
 
 ## <a name="vendor-invoicing"></a>Fakturace dodavatele
-Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Pokud jste nastavili výchozí vlastnosti řádku, jsou zobrazeny pro položku na řádku nákupní objednávky (Podrobnosti řádku &gt; Projekt &gt; Vlastnost řádku). Existují dva způsoby, jak změnit vlastnost řádku:
+Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Pokud jste nastavili výchozí vlastnosti řádku, jsou zobrazeny pro položku na řádku nákupní objednávky (**Podrobnosti řádku > Projekt > Vlastnost řádku**). Existují dva způsoby, jak změnit vlastnost řádku:
 
--   Fakturovat odběrateli projektu za zboží: Nastavte vlastnost řádku pro položku na fakturovatelnou hodnotu na nákupní objednávce a následně fakturujte odběrateli pomocí správného způsobu fakturace projektu.
--   Nefakturovat odběrateli projektu za zboží: Nevybírejte vlastnost řádku **Fakturovatelné** na řádku nákupní objednávky pro položku. Poté lze nákupní objednávku vyfakturovat a není třeba provádět další akce.
+-   Fakturovat odběrateli projektu za zboží. Postup: Nastavte vlastnost řádku pro položku na fakturovatelnou hodnotu na nákupní objednávce a následně fakturujte odběrateli pomocí správného způsobu fakturace projektu.
+-   Nefakturovat odběrateli projektu za zboží. Chcete-li to provést, nevybírejte vlastnost řádku na řádku objednávky za zboží **Účtovatellné**. Poté lze nákupní objednávku vyfakturovat a není třeba provádět další akce.
 
 > [!NOTE] 
 > Ve výchozím nastavení nejsou řádky pro zachování verze účtovány. To znamená, že není možné vytvořit návrh faktury pro uvolněné zadržení.
@@ -119,7 +122,7 @@ Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje
 ## <a name="credit-notes"></a>Dobropisy
 Je-li na faktuře odběratele uvedena záporná částka, považuje se takový doklad za dobropis. Při tisku dokumentu nese název "Dobropis". 
 
-Když vytváříte dobropis na částku, která byla v minulosti fakturována, musíte nejprve vybrat fakturovanou částku, kterou chcete dobropisovat. Potom vytvořte dobropis úplně stejným způsobem, jaký používáte k vytvoření běžné faktury odběratele. Jinými slovy musíte vybrat transakce, které byly dříve zaúčtovány pro fakturu odběratele a pak vytvořit a zaúčtovat návrh dobropisu. 
+Když vytváříte dobropis na částku, která byla v minulosti fakturována, musíte nejprve vybrat fakturovanou částku, kterou chcete dobropisovat. Potom vytvořte dobropis úplně stejným způsobem, jaký používáte k vytvoření běžné faktury odběratele. Vybíráte transakce, které byly dříve zaúčtovány pro fakturu odběratele a pak vytvořit a zaúčtovat návrh dobropisu. 
 
 Stejný dokument může obsahovat transakce, které jsou vybrané k dobropisování, transakce dobropisu i transakce, které byly zaúčtovány. Dokument je klasifikován jako faktura nebo dobropis, v závislosti na znaménku celkové částky. 
 

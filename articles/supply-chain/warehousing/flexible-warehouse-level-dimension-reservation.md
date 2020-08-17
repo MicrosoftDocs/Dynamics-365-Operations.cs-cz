@@ -1,9 +1,9 @@
 ---
 title: Flexibilní zásada rezervace dimenze na úrovni skladu
 description: V tomto tématu jsou popsány zásady rezervace zásob, které umožňují společnostem prodávat produkty sledované podle dávky a spustit jejich logistiku, protože operace s povoleným WMS rezervují konkrétní dávky pro prodejní objednávky zákazníka, a to i v případě, že hierarchie rezervací, přidružená k produktům, neumožňuje rezervaci specifických dávek.
-author: omulvad
+author: perlynne
 manager: tfehr
-ms.date: 02/07/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,25 +13,29 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530298"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652172"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
 [!include [banner](../includes/banner.md)]
 
-Pokud je hierarchie rezervací zásob typu Batch-below\[location\] spojena s produkty, podniky, které prodávají produkty sledované podle dávky a spouštějí své logistiku jako operace, které jsou povoleny pro Microsoft Dynamics 365 Warehouse Management System (WMS), nemohou rezervovat konkrétní dávky těchto produktů pro prodejní objednávky odběratele. V tomto tématu jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací Batch-below\[location\].
+Pokud je hierarchie rezervací zásob typu Batch-below\[location\] spojena s produkty, podniky, které prodávají produkty sledované podle dávky a spouštějí své logistiku jako operace, které jsou povoleny pro Microsoft Dynamics 365 Warehouse Management System (WMS), nemohou rezervovat konkrétní dávky těchto produktů pro prodejní objednávky odběratele.
+
+Podobně nemohou být vyhrazeny konkrétní registrační značky pro produkty na prodejních objednávkách, pokud jsou tyto produkty spojeny s výchozí hierarchií rezervace.
+
+V tomto tématu jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky nebo registrační značky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací Batch-below\[location\].
 
 ## <a name="inventory-reservation-hierarchy"></a>Hierarchie rezervací zásob
 
-V tomto oddílu je shrnuta existující hierarchie rezervací zásob. Zaměřuje se na způsob, jakým je nakládáno s položkami sledovanými dávkou a sériovým číslem.
+V tomto oddílu je shrnuta existující hierarchie rezervací zásob.
 
 Hierarchie rezervace zásob určuje, že pokud se jedná o dimenze uskladnění, objednávka poptávky nese povinné dimenze pracoviště, skladu a stavu zásob, zatímco logika skladu je odpovědná za přiřazení skladového místa k požadovanému množství a rezervaci skladového místa. Jinak řečeno, v interakcích mezi objednávkou poptávky a skladovými operacemi se očekává, že objednávka poptávky indikuje, odkud musí být objednávka expedována (tj. pracoviště a sklad). Sklad pak spoléhá na svou logiku k nalezení požadovaného množství v skladových prostorách.
 
@@ -64,7 +68,7 @@ Je- li vybrána úroveň **čísla dávky** v hierarchii, budou automaticky vyb
 > [!NOTE]
 > Zaškrtávací políčko **Povolit rezervaci na objednávce poptávky** se vztahuje pouze na úrovně hierarchie rezervací, které jsou pod dimenzí skladového místa.
 >
-> **Číslo dávky** je jediná úroveň v hierarchii, která je otevřená pro zásadu pružné rezervace. Jinými slovy, pro úroveň **umístění**, **registrační značky** nebo **sériového čísla** nelze zaškrtnout políčko **Povolit rezervaci na objednávce poptávky**.
+> **Číslo dávky** a **Registrační značka** je jediná úroveň v hierarchii, která je otevřená pro zásadu pružné rezervace. Jinými slovy, pro úroveň **umístění** nebo **sériového čísla** nelze zaškrtnout políčko **Povolit rezervaci na objednávce poptávky**.
 >
 > Pokud hierarchie rezervace obsahuje dimenzi sériového čísla (která musí vždy být nižší než úroveň **Číslo dávky**) a pokud jste pro číslo dávky aktivovali rezervaci specifickou pro dávku, systém bude pokračovat ve zpracování rezervací sériových čísel a operací výdeje na základě pravidel, která platí pro zásadu rezervace Serial-below\[location\].
 
@@ -90,11 +94,11 @@ Následující sada pravidel je platná při zpracování množství a číslo d
 
 Následující příklad ukazuje celý tok.
 
-## <a name="example-scenario"></a>Příklad
+## <a name="example-scenario-batch-number-allocation"></a>Příklad scénáře: Přidělení čísla dávky
 
 Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít ukázkovou společnosti **USMF**.
 
-### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a>Nastavení hierarchie rezervací zásob, aby byla povolena rezervace specifická pro dávku
+### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Nastavení hierarchie rezervací zásob, aby byla povolena rezervace specifická pro dávku
 
 1. Přejděte na **Řízení skladu** \> **Nastavení** \> **Zásoby \> Hierarchie rezervací**.
 2. Zvolte **Nové**.
@@ -122,7 +126,7 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### <a name="enter-sales-order-details"></a>Zadání podrobností prodejní objednávky
+### <a name="enter-sales-order-details"></a><a name="sales-order-details"></a>Zadání podrobností prodejní objednávky
 
 1. Přejděte na **Prodej a marketing** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**.
 2. Zvolte **Nové**.
@@ -186,6 +190,176 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
 
     Množství **10** pro číslo dávky **B11** je nyní vyskladněno pro řádek prodejní objednávky a je vloženo do umístění **Portál**. V tomto okamžiku je vše připraveno k naložení na nákladní vůz a odesláno na adresu odběratele.
 
+## <a name="flexible-license-plate-reservation"></a>Flexibilní rezervace registrační značky
+
+### <a name="business-scenario"></a>Scénáře obchodu
+
+V tomto scénáři společnost používá řízení skladu a zpracování práce a zpracovává plánování nákladu na úrovni jednotlivých palet / kontejnerů mimo Supply Chain Management před vytvořením práce. Tyto kontejnery jsou reprezentovány registračními značkami v rozměrech inventáře. Proto pro tento přístup musí být před objednáním předběžně přiřazeny řádky prodejních objednávek specifické registrační značky. Společnost hledá flexibilitu ve způsobu zacházení s pravidly rezervace registračních značek, aby došlo k následujícímu chování:
+
+- Registrační značku lze zaznamenat a rezervovat, když je objednávka provedena, zpracovatelem prodeje, a nelze ji pořídit jinými požadavky. Toto chování pomáhá zaručit, že plánovaná registrační značka je expedována odběrateli.
+- Pokud registrační značka ještě není přiřazena k řádku prodejní objednávky, pracovníci skladu mohou při vyskladnění po dokončení registrace a rezervace prodejní objednávky vybrat poznávací značku.
+
+### <a name="turn-on-flexible-license-plate-reservation"></a>Zapnutí flexibilní rezervace registrační značky
+
+Než můžete použít flexibilní rezervaci registrační značky, musíte v systému zapnout dvě funkce. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Funkce musíte zapnout v následujícím pořadí:
+
+1. **Název funkce:** *Flexibilní rezervace dimenze na úrovni skladu*
+1. **Název funkce:** *Flexibilní rezervace registrační značky dle objednávky*
+
+### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Na prodejní objednávce si rezervujte konkrétní registrační značku
+
+Chcete-li v objednávce povolit rezervaci registrační značky, musíte zaškrtnout políčko **Povolit rezervaci na objednávce poptávky** pro úroveň **Registrační značka** na stránce **Hierarchie rezervace zásob** pro hierarchii, která je spojena s příslušnou položkou.
+
+![Stránka hierarchií rezervace zásob pro flexibilní hierarchii rezervace poznávacích značek](media/Flexible-LP-reservation-hierarchy.png)
+
+Rezervace registrační značky můžete v objednávce povolit kdykoli v místě nasazení. Tato změna neovlivní žádné rezervace nebo otevřené práce skladu, které byly vytvořeny před provedením změny. Nemůžete vša zrušit zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky**, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují otevřené odchozí transakce zásob typů výdeje, které mají stav *Na objednávce*, *Rezervováno objednáno* nebo *Rezervováno fyzicky*.
+
+I když je zaškrtnuto políčko **Povolit rezervaci na objednávku poptávky** pro úroveň **Registrační značka**, je to stále možné *nerezervovat* konkrétní registrační značku na objednávce. V tomto případě se použije výchozí logika operací skladu, která je platná pro hierarchii rezervace.
+
+Chcete-li rezervovat konkrétní registrační značku, musíte použít proces [Otevřený datový protokol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). V aplikaci můžete provést tuto rezervaci přímo z prodejní objednávky pomocí možnosti **Rezervace vázaná na objednávku dle registrační značky** v příkazu **Otevřít v Excelu**. V datech entity, která se otevírají v doplňku Excel, musíte zadat následující data související s rezervací a poté vybrat **Publikovat**, chcete-li poslat data zpět do Supply Chain Management:
+
+- Reference (Pouze hodnota *Prodejní objednávka* je podporována.)
+- Číslo objednávky (Hodnota může být odvozena ze šarže.)
+- ID šarže
+- Poznávací značka
+- Množství
+
+Pokud musíte vyhradit konkrétní registrační značku pro dávkově sledovanou položku, použijte stránku **Dávková rezervace**, jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
+
+Když je řádek prodejní objednávky, který používá rezervaci registrační značky potvrzené objednávkou, zpracován operacemi skladu, nebudou použity direktivy o umístění.
+
+Pokud se pracovní položka ve skladu skládá z řádků, které se rovnají celé paletě a mají množství potvrzené registrační značkou, můžete optimalizovat proces vyskladnění pomocí položky nabídky mobilního zařízení, kde je možnost **Manipulovat pomocí registrační značky** nastavena na *Ano*. Pracovník skladu pak může naskenovat poznávací značku, aby dokončil výběr, aniž by musel skenovat položky z práce jednu po druhé.
+
+![Položka nabídky mobilního zařízení, kde je volba Zpracovat podle registrační značky nastavena na Ano](media/Handle-by-LP-menu-item.png)
+
+Protože funkce **Zpracovat podle registrační značky** nepodporuje práci, která pokrývá více palet, je lepší mít samostatnou pracovní položku pro různé registrační značky. Chcete-li použít tento přístup, přidejte pole **ID poznávací značky vázané na objednávku** jako konec pracovní hlavičky na stránce **Pracovní šablona**.
+
+## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Příklad scénáře: Nastavte a zpracujte rezervaci registrační značky vázané na objednávku
+
+Tento scénář ukazuje, jak nastavit a zpracovat rezervaci registrační značky vázané na objednávku.
+
+### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
+
+Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro Supply Chain Management. Chcete-li s tímto scénářem pracovat pomocí hodnot zde poskytnutých, musíte používat prostředí, ve kterém jsou nainstalována ukázková data. Kromě toho musíte dříve, než začnete, nastavit právnickou osobu na **USMF**.
+
+### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Vytvořte hierarchii rezervace inventáře, která umožňuje rezervaci poznávací značky
+
+1. Přejděte na **Řízení skladu \> Nastavení \> Zásoby \> Hierarchie rezervací.**
+1. Zvolte **Nové**.
+1. Do pole **Název** zadejte hodnotu (například *FlexibleLP*).
+1. Do pole **Popis** zadejte hodnotu (například *Flexibilní rezervace registrační značky*).
+1. V seznamu **Vybraný** vyberte **Číslo šarže**, **Sériové číslo** a **Vlastník**.
+1. Vyberte tlačítko **Odebrat** ![šipka zpět](media/backward-button.png) a přesuňte vybrané záznamy do seznamu **K dispozici**.
+1. Vyberte **OK**.
+1. V řádku pro úroveň dimenze **Registrační značka** zaškrtněte políčko **Povolit rezervaci na objednávce poptávky**. Úroveň **Umístění** je vybrána automaticky a nelze u ní zrušit zaškrtávací políčko.
+1. Zvolte **Uložit**.
+
+### <a name="create-two-released-products"></a>Vytvoření dvou uvolněných produktů
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. V podokně akcí zvolte **Nový**.
+1. V dialogovém okně **Nový uvolněný produkt** nastavte následující hodnoty:
+
+    - **Číslo produktu:** *Item1*
+    - **Číslo položky:** *Item1*
+    - **Skupina modelů položek:** *FIFO*
+    - **Skupina položek:** *Audio*
+    - **Skupina dimenze úložiště:** *Ware*
+    - **Skupina sledovací dimenze:** *Žádná*
+    - **Hierarchie rezervace:** *FlexibleLP*
+
+1. Vyberte **OK**, produkt se vytvoří a dialogové okno se zavře.
+1. Nový produkt je otevřen. Na záložce s náhledem **Sklad** nastavte pole **ID skupiny pořadí jednotek** na hodnotu *ks*.
+1. Opakujte předchozí kroky a vytvořte druhý produkt, který má stejná nastavení, ale nastavte **Číslo produktu** a **Číslo položky** na *Item2*.
+1. V podokně Akce na kartě **Správa zásob** ve skupině **Zobrazit** vyberte **Zásoby na skladě**. Poté vyberte **Úprava množství**.
+1. Upravte zásoby na skladě nových položek podle pokynů v následující tabulce.
+
+    | Zboží  | Sklad | Skl. místo | Poznávací značka | Množství |
+    |-------|-----------|----------|---------------|----------|
+    | Item1 | 24        | FL-010   | LP01          | 10       |
+    | Item1 | 24        | FL-011   | LP02          | 10       |
+    | Item2 | 24        | FL-010   | LP01          | 5        |
+    | Item2 | 24        | FL-011   | LP02          | 5        |
+
+    > [!NOTE]
+    > Musíte vytvořit dvě poznávací značky a použít umístění, která umožňují smíšené položky, například *FL-010* a *FL-011*.
+
+### <a name="create-a-sales-order-and-reserve-a-specific-license-plate"></a>Vytvořte prodejní objednávku a rezervujte konkrétní registrační značku
+
+1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky**.
+1. Zvolte **Nové**.
+1. V dialogovém okně **Vytvoření prodejní objednávky** nastavte následující hodnoty:
+
+    - **Účet zákazníka:** *US-001*
+    - **Sklad:** *24*
+
+1. Stisknutím **OK** zavřete dialogové okno **Vytvoření nákupní objednávky** a otevřete novou prodejní objednávku.
+1. Na pevné záložce **Řádky prodejní objednávky** přidejte řádek s následujícím nastavením:
+
+    - **Číslo položky:** *Item1*
+    - **Množství:** *10*
+
+1. Přidejte druhý řádek prodejní objednávky, který má následující nastavení:
+
+    - **Číslo položky:** *Item2*
+    - **Množství:** *5*
+
+1. Zvolte **Uložit**.
+1. Na pevné záložce **Podrobnosti řádku** na kartě **Nastavení** si poznamenejte **ID šarže** pro každý řádek. Tyto hodnoty budou vyžadovány při rezervaci konkrétních poznávacích značek.
+
+    > [!NOTE]
+    > Chcete-li rezervovat konkrétní poznávací značku, musíte použít datovou entitu **Rezervace vázaná na objednávku dle registrační značky**. Chcete-li rezervovat dávkově sledovanou položku na konkrétní registrační značce, můžete také použít stránku **Dávková rezervace**, jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
+    >
+    > Pokud zadáte poznávací značku přímo na řádku prodejní objednávky a potvrdíte ji do systému, nebude pro tuto linku použito řízení skladu.
+
+1. Vyberte **Otevřít v Microsoft Office**, vyberte **Rezervace vázaná na objednávku dle registrační značky** a stáhněte si soubor.
+1. V aplikaci Excel otevřete stažený soubor a zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel.
+1. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
+1. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Supply Chain Management.
+1. Chcete-li rezervovat položku na konkrétní registrační značce, v doplňku Excel vyberte **Nový** a přidejte řádek rezervace, Poté nastavte následující hodnoty:
+
+    - **ID šarže:** Zadejte **ID šarže**, kterou jste našli pro řádek prodejní objednávky *Item1*.
+    - **Registrační značka:** *LP02*
+    - **ReservedInventoryQuantity:** *10*
+
+1. Chcete-li přidat další řádek rezervace, klikněte na **Nový** a zadejte následující hodnoty:
+
+    - **ID šarže:** Zadejte **ID šarže**, kterou jste našli pro řádek prodejní objednávky *Item2*.
+    - **Registrační značka:** *LP02*
+    - **ReservedInventoryQuantity:** *5*
+
+1. V doplňku Excel vyberte **Publikovat** a pošlete data zpět do Supply Chain Management.
+
+    > [!NOTE]
+    > Rezervační řádek se v systému objeví, pouze pokud je publikování dokončeno bez chyb.
+
+1. Přejděte zpět na Supply Chain Management. 
+1. Chcete-li zkontrolovat rezervaci položky, na pevné záložce **Řádky prodejních objednávek** v nabídce **Zásoby** vyberte **Udržovat \> Rezervace**. Všimněte si, že pro řádek prodejní objednávky pro *Item1* jsou rezervovány zásoby v množství *10* a pro řádek prodejní objednávky pro *Item2* je vyhrazeno množství *5* zásob.
+1. Chcete-li zkontrolovat transakce inventáře, které souvisejí s rezervací řádku prodejní objednávky, na pevné záložce **Řádky prodejních objednávek** v nabídce **Zásoby** vyberte **zobrazit \> Transakce**. Všimněte si, že existují dvě transakce, které se vztahují k rezervaci: jedna, kde je pole **Odkaz** nastaveno na *Prodejní objednávka* a jedna, kde je pole **Odkaz** nastaveno na *Rezervace vázaná na objednávku*.
+
+    > [!NOTE]
+    > Transakce, ve které je pole **Odkaz** nastaveno na *Prodejní objednávka* představuje rezervaci řádku objednávky pro dimenze zásob nad úrovní **skladového místa** (site, sklad a stav zásob). Transakce, kde pole **Odkaz** je nastaveno na *Rezervace vázaná na objednávku*, představuje rezervaci řádku objednávky pro konkrétní registrační značku a umístění.
+
+1. Chcete-li uvolnit prodejní objednávku, v pododokně akcí na kartě **Sklad** ve skupině **Akce** vyberte **Uvolnit do skladu**.
+
+### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Zkontrolujte a zpracujte práci ve skladu s přiřazenými registračními značkami
+
+1. Na záložce s náhledem **Řádky prodejních objednávek** v nabídce **Sklad** vyberte možnost **Podrobnosti práce**.
+
+    Jako když se provádí rezervace pro konkrétní dávku, systém nepoužívá směrnice o umístění, když vytváří práci pro prodejní objednávku, která používá rezervaci poznávací značky. Protože rezervace vázaná na objednávku specifikuje všechny dimenze zásob, včetně umístění, nemusí být použity direktivy o umístění, protože tyto dimenze zásob jsou právě zadány v práci. Jsou uvedeny v sekci **Z dimenzí zásob** na stránce **Transakce pracovních zásob**.
+
+    > [!NOTE]
+    > Po vytvoření práce se skladová transakce položky, kde je pole **Odkaz** nastaveno na *Rezervace potvrzená objednávkou*, odstraní. Skladová transakce, kde je pole **Odkaz** nastaveno na *Práce*, nyní ukládá fyzickou rezervaci ve všech dimenzích zásob.
+
+1. Na mobilním zařízení dokončete výběr a umístěte práci pomocí položky nabídky, kde je zaškrtnuto políčko **Zpracovat podle registrační značky**.
+
+    > [!NOTE]
+    > Funkce **Zpracovat podle registrační značky** vám pomůže zpracovat celou registrační značku. Pokud musíte zpracovat část registrační značky, tuto funkci nemůžete použít.
+    >
+    > Doporučujeme, abyste pro každou registrační značku vygenerovali samostatnou práci. K dosažení tohoto výsledku použijte funkci **Konce pracovních hlaviček** na stránce **Pracovní šablona**.
+
+    Registrační značka *LP02* je nyní vyskladněna pro řádky prodejní objednávky a vložena do umístění *Baydoor*. V tomto okamžiku je vše připraveno k naložení a odeslání odběrateli.
+
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Zpracování výjimky práce skladu s čísly dávek potvrzených objednávkou
 
 Práce na skladě pro výdej čísel dávek potvrzených objednávkou podléhá stejnému standardnímu zpracování výjimek a akcím při běžné práci. Obecně platí, že otevřenou práci nebo řádek práce lze zrušit, lze je přerušit, protože skladovací místo uživatele je plné, může být krátkodobě vyskladněno a je aktualizovat z důvodu přesunu. Stejně tak lze snížit vyskladněné množství práce, které již bylo dokončeno, nebo lze stornovat práci.
@@ -194,7 +368,7 @@ Následující pravidlo klíče se použije na všechny tyto akce zpracování v
 
 ### <a name="example-scenario"></a>Příklad
 
-Příkladem tohoto scénáře je situace, kdy je dříve dokončená práce vyzvednuta pomocí funkce **Snížit vyskladněné množství**. Tento příklad pokračuje v předchozím příkladu v tomto tématu.
+Příkladem tohoto scénáře je situace, kdy je dříve dokončená práce vyzvednuta pomocí funkce **Snížit vyskladněné množství**. Tento příklad předpokládá, že jste již provedli kroky popsané v části [Příklad scénáře: Přidělení čísla šarže](#Example-batch-allocation). Z tohoto příkladu to pokračuje.
 
 1. Přejděte na **Řízení skladu** \> **Nakládky** \> **Aktivní nakládky**.
 2. Vyberte nakládku, která byla vytvořena v souvislosti s dodávkou prodejní objednávky.

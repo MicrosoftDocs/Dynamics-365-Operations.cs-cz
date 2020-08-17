@@ -3,7 +3,7 @@ title: Odebrání instance
 description: Tento článek vás provede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431192"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621373"
 ---
 # <a name="remove-an-instance"></a>Odebrání instance
 
@@ -67,8 +67,21 @@ Chcete-li odebrat prostředí Human Resources z existujícího prostředí Power
 1. Požádejte podporu o zahájení požadavku na odebrání.
 2. Tým podpory iniciuje požadavek na odebrání s týmem Human Resources DevOps. 
 3. Pokračujte po zobrazení informace, že bylo prostředí odebráno.
-4.  Přihlaste se do LCS pomocí účtu, který jste použili pro přihlášení k odběru aplikace Human Resources. 
+4. Přihlaste se do LCS pomocí účtu, který jste použili pro přihlášení k odběru aplikace Human Resources. 
 5. Vyberte projekt Human Resources obsahující prostředí. 
 6. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Human Resources**. 
 7. Vyberte instanci, kterou chcete odebrat. Ta by měla být označena stavem nasazení **Neúspěšný**.
 8. Vyberte **Odebrat instanci** a potvrďte vaše rozhodnutí. 
+
+## <a name="recover-a-soft-deleted-environment"></a>Obnovte prostředí s logickým odstraněním
+
+Pokud odstraníte prostředí Power Apps, ke kterému je vaše prostředí Human Resources připojeno, bude stav prostředí Human Resources ve službě Lifecycle Services **Logicky odstraněno**. V tomto případě se uživatelé nemohou připojit k Human Resources.
+
+Postup obnovení prostředí:
+
+1. Postupujte podle pokynů v [Obnovení prostředí Power Apps](/power-platform/admin/recover-environment.md).
+
+2. Chcete-li obnovit prostředí Human Resources, kontaktujte podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Prostředí Power Apps jsou uložena pouze po dobu sedmi dnů po odstranění. Prostředí musíte obnovit do sedmi dnů.

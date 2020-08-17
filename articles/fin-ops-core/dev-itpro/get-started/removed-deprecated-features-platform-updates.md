@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606815"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651659"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -38,8 +38,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
 
 > [!NOTE]
-> Verze 10.0.13 ještě nebyla vydána. Tyto informace slouží pouze pro účely plánování. Obsah a funkce pro verzi 10.0.13 se mohou změnit. Další informace o verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-ops/get-started/public-preview-releases.md).
-
+> Verze 10.0.13 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Upgrade tří knihoven komponent jQuery 
 
@@ -50,6 +49,27 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Ovlivněné oblasti produktu**         | Rozšiřitelné ovládací prvky, konkrétně vlastní kód JavaScript využívající zastaralá nebo odstraněná rozhraní API. |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | V aktualzaci 10.0.13/Platform update 37 mohou zákazníci volitelně přecházet k nejnovějším knihovnám povolením funkce Upgradovat tři knihovny komponent jQuery. Přechod na nové knihovny bude povinný s vydáním z dubna 2021, aby byl k dispozici čas na migraci příslušných rozhraní API.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Existující API pro ovládací prvek mřížky / forceLegacyGrid ()
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Stávající ovládací prvek mřížky se nahrazuje novým ovládacím prvkem mřížky. |
+| **Nahrazeno jinou funkcí?**   | [Nový ovládací prvek mřížky](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Ve verzi 10.0.13 je nový ovládací prvek mřížky obecně k dispozici a zákazníci mohou tuto funkci volitelně zapnout. Nový ovládací prvek mřížky začne být povinný od vydání z října 2021. Jakmile bude nový ovládací prvek mřížky povinný, rozhraní API **forceLegacyGrid()** přestane být respektováno. |
+
+### <a name="personalization-without-saved-views"></a>Přizpůsobení bez uložených pohledů 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Podsystém personalizace byl přepracován funkcí uložených pohledů, takže má lepší výkon a nabízí další možnosti. |
+| **Nahrazeno jinou funkcí?**   | Uložená zobrazení |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Ve verzi 10.0.13 / Platform Update 37 je funkce uložených pohledů obecně k dispozici a zákazníci ji mohou volitelně zapnout. Funkce uložených pohledů začne být povinný od vydání z října 2021. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.12 aplikací Finance and Operations
 

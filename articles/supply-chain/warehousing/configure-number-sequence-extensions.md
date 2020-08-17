@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546413"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640392"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Nakonfigurujte sekvence čísel pro toky skladu
 
@@ -36,7 +36,7 @@ Ta přidává následující funkce:
 - ID přepravního dokladu (BOL) lze vygenerovat předem.
 - Pro čísla sériových přepravních kontejnerů (SSCC) lze vygenerovat jedinečnou sekvenci čísel.
 - Pro čísla BOL a SSCC lze vytvořit číselné sekvence kompatibilní s GS1. Tato funkce přidává podporu pro identifikační čísla poznávacích značek, ID kontejnerů, ID popisků vlny a ID BOL.
-- Konfigurace identifikačních čísel poznávacích značek je flexibilní. Například můžete zahrnout nebo vyloučit umělou inteligenci (AI), jako jsou například počáteční nuly (00).
+- Konfigurace identifikačních čísel poznávacích značek je flexibilní. Například můžete zahrnout nebo vyloučit identifikátory aplikace (AI), jako jsou například počáteční nuly (00).
 
 Tato funkce zefektivňuje podporu označování kartonů a úpravu nových čísel generovaných systémem.
 

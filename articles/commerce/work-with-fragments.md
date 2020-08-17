@@ -3,7 +3,7 @@ title: Práce s fragmenty
 description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124352"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645984"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 
@@ -62,9 +62,10 @@ Můžete vytvořit nový fragment nebo uložit existující konfiguraci modulu j
 Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný fragment, postupujte následujícím způsobem.
 
 1. Otevřete stránku nebo šablonu obsahující modul, který chcete převést na fragment.
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu. 
-1. Vyberte možnost **Sdílet jako fragment**. 
-1. Zobrazí se dialogové okno. Zadejte název a metadata fragmentu.
+1. V podokně osnovy vlevo nebo přímo na hlavním plátně vyberte dříve nakonfigurovaný modul.
+1. Vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu v podokně osnovy nebo na panelu nástrojů vybraného modulu na plátně. 
+1. Vyberte možnost **Sdílet jako fragment stránky**. 
+1. V dialogovém okně **Uložit jako fragment stránky** zadejte název fragmentu.
 1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
 
 Následující obrázek ukazuje, jak uložit konfiguraci modulu jako fragment.
@@ -94,15 +95,16 @@ Následující postupy popisují způsob přidávání, odebírání a úprav fr
 
 Chcete-li přidat fragment na stránku, postupujte takto:
 
-1. V podokně osnovy vlevo vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
-1. Vyberte tlačítko se třemi tečkami názvu kontejneru nebo slotu a poté vyberte možnost **Přidat fragment**. Zobrazí se dialogové okno.
+1. V podokně osnovy vlevo nebo přímo na hlavním plátně vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
+1. V online podokně vyberte tlačítko se třemi tečkami (**...**) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte hlavní plátno, vyberte symbol plus (**+**).  
+1. Vyberte **Přidat fragment**.
 
     ![Snímek obrazovky s postupem přidání existujícího fragmentu do patice nebo do kontejneru.](./media/add-fragment.png)
  
     > [!NOTE]
     > Pokud kontejner nebo slot nepodporuje nové podřízené moduly, nebude možnost **Přidat fragment** k dispozici.
     
-1. V dialogovém okně vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
+1. V dialogovém okně **Přidat fragment** vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
 1. Výběrem přidáte požadovaný fragment do vybraného kontejneru nebo slotu na stránce.
 
     ![Zachycení obrazovky pro výběr modálního okna fragmentu](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Chcete-li přidat fragment na stránku, postupujte takto:
 
 Chcete-li odebrat fragment ze slotu nebo kontejneru na stránce, postupujte podle následujících kroků.
 
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami vedle názvu modulu, který chcete odebrat, a pak vyberte tlačítko odpadkového koše.
+1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu fragmentu, který chcete odebrat, a pak vyberte symbol odpadkového koše.  Alternativně můžete vybrat fragment na plátně a vybrat symbol koše na panelu nástrojů fragmentu.
 1. Až budete vyzváni k potvrzení odebrání fragmentu, vyberte **OK.**
 
 > [!NOTE]

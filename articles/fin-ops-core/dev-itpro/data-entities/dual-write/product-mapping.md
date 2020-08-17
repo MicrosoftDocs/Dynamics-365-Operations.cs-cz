@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173193"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621321"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -86,7 +86,7 @@ V tomto modelu je produkt reprezentován kombinací dvou entit v Common Data Ser
 Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty jedinečných produktů, základních produktů a variant produktů lze zaznamenat v Common Data Service následujícím způsobem:
 
 - **Produkty s podtypem** jsou produkty definované samy sebou. Není nutné definovat žádné dimenze. Příkladem je určitá kniha. Pro tyto produkty je vytvořen jeden záznam v entitě **Produkt** a jeden záznam je vytvořen v entitě **msdyn\_sharedproductdetails**. Není vytvořen žádný záznam produktové řady.
-- **Základní produkty** se používají jako obecné výrobky, které obsahují definici a pravidla určující chování obchodních procesů. Na základě těchto definic mohou být vygenerovány jedinečné produkty, které jsou známy jako varianty produktu. Například tričko je základní produkt a může mít barvu a velikost jako dimenze. Varianty lze uvolnit s různými kombinacemi těchto dimenzí, jako je například malé modré triko nebo středně velké zelené triko. V rámci integrace je v tabulce produktů vytvořen jeden záznam na variantu. Tento záznam obsahuje specifické informace o variantách, jako jsou například různé dimenze. Obecné informace o produktu jsou uloženy v entitě **msdyn\_sharedproductdetails**. (Tyto obecné informace se uchovávají v základním produktu.) Kromě toho je pro každý základní produkt vytvořen záznam produktové řady. Informace základního produktu se synchronizují s Common Data Service, jakmile je vytvořen uvolněný hlavní produkt (před uvolněním variant).
+- **Základní produkty** se používají jako obecné výrobky, které obsahují definici a pravidla určující chování obchodních procesů. Na základě těchto definic mohou být vygenerovány jedinečné produkty, které jsou známy jako varianty produktu. Například tričko je základní produkt a může mít barvu a velikost jako dimenze. Varianty lze uvolnit s různými kombinacemi těchto dimenzí, jako je například malé modré triko nebo středně velké zelené triko. V rámci integrace je v tabulce produktů vytvořen jeden záznam na variantu. Tento záznam obsahuje specifické informace o variantách, jako jsou například různé dimenze. Obecné informace o produktu jsou uloženy v entitě **msdyn\_sharedproductdetails**. (Tyto obecné informace se uchovávají v základním produktu.) Informace základního produktu se synchronizují s Common Data Service, jakmile je vytvořen uvolněný hlavní produkt (před uvolněním variant).
 - **Jedinečné produkty** odkazují na všechny produkty podtypu produktu a všechny varianty produktu. 
 
 ![Datový model pro produkty](media/dual-write-product.png)
