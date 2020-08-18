@@ -3,7 +3,7 @@ title: Ohlášení jako dokončené ze zařízení úkolového lístku
 description: Toto téma popisuje, jak nakonfigurovat systém tak, aby uživatelé zařízení úkolového lístku mohli vykazovat hotové produkty z výrobní zakázky do zásob.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/18/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,24 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403255"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651609"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ohlášení jako dokončené ze zařízení úkolového lístku
 
 [!include [banner](../includes/banner.md)]
 
-Pracovníci používají stránku **Zpráva o pokroku** v zařízení úkolového lístku k vykazování množství, která byla dokončena pro výrobní úlohu.
+Pracovníci používají stránku **Zpráva o pokroku** v zařízení úkolového lístku k vykazování množství, která byla dokončena pro výrobní úlohu. Toto téma popisuje, jak nastavit různé možnosti, které určují, jak mohou pracovníci nahlásit, že dokončili používání stránky, a co se stane dále. K dispozici jsou následující možnosti:
+
+- Kontrola, zda a jak jsou do zásob přidána množství, která jsou hlášena jako hotová.
+- Určete, zda a jak budou generována a používána čísla dávek, když jsou hlášení dokončena.
+- Určete, zda a jak budou generována a používána sériová čísla, když jsou hlášení dokončena.
+- Řízení, zda a jak vykazovat jako dokončené do registrační značky.
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Kontrola, zda jsou do zásob přidána množství, která jsou hlášena jako hotová
 
@@ -54,7 +59,17 @@ Zařízení úkolového lístku podporuje tři scénáře pro vykazování polo�
 - **Předdefinovaná čísla dávek:** Pracovníci vyberou číslo dávky ze seznamu čísel dávek, které systém automaticky vygeneruje před uvolněním výrobního příkazu do zařízení úkolového lístku.
 - **Opravená čísla dávek:** Pracovníci nezadají ani nevyberou číslo dávky. Místo toho systém automaticky přiřadí číslo dávky pracovnímu příkazu před vydáním.
 
-Pokud chcete jednotlivé scénáře povolit, postupujte následovně.
+
+### <a name="enable-the-feature-on-your-system"></a>Zapnutí funkce ve vašem systému
+
+Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala číslo dávky během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí (v tomto pořadí):
+
+1. Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku
+1. Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku (Preview)
+
+### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurace produktů, které vyžadují hlášení dávek
+
+Chcete-li, aby produkt podporoval některý z dostupných scénářů řízených dávek, postupujte takto:
 
 1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
 1. Vyberte produkt ke konfiguraci.
@@ -63,14 +78,7 @@ Pokud chcete jednotlivé scénáře povolit, postupujte následovně.
 > [!NOTE]
 > Pokud není ve výchozím nastavení číslu kontrolovanému podle dávek přiřazená žádná skupina čísel dávek, poskytne zařízení úkolového lístku ruční zadání čísla dávky během vykazování jako dokončené.
 
-Následující podkapitoly popisují, jak nastavit skupiny sledovacích čísel na podporu každého ze tří scénářů pro vykazování položek dávek.
-
-### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Povolení vykazování čísel dávek v zařízení úkolového lístku
-
-Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala číslo dávky během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí (v tomto pořadí):
-
-1. Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku
-1. Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku (Preview)
+Následující kapitoly popisují, jak nastavit skupiny sledovacích čísel na podporu každého ze tří scénářů pro vykazování položek dávek.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Nastavení skupiny čísel sledování, která pracovníkům umožňuje ruční přiřazení čísla dávky
 
@@ -80,7 +88,7 @@ Při nastavení skupiny čísel tak, aby vyžadovalo od pracovníků ruční př
 1. Vytvořte nebo vyberte skupinu sledovacích čísel, kterou chcete nastavit.
 1. Na pevné záložce **Obecné** nastavte možnost **Ruční** na **Ano**.
 
-    ![Stránka skupin sledovacích čísel](media/tracking-number-group-manual.png "Stránka skupin sledovacích čísel")
+    ![Skupina sledovacích čísel pro ruční čísla dávek](media/tracking-number-group-manual.png "Skupina sledovacích čísel pro ruční čísla dávek")
 
 1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu čísel dávek vydaných produktů, pro které chcete tento scénář použít.
 
@@ -97,7 +105,7 @@ Pokud chcete poskytnout seznam předdefinovaných čísel dávky, nastavte skupi
 1. Na pevné záložce **Obecné** nastavte možnost **Pouze pro transakce zásob** na **Ano**.
 1. Pomocí pole **Na množství** rozdělte čísla dávky na množství na základě zadané hodnoty. Například máte výrobní zakázku na deset kusů a v poli **Na množství** je nastavena hodnota *2*. V takovém případě bude výrobní zakázce při vytvoření přiřazeno pět čísel dávky.
 
-    ![Stránka skupin sledovacích čísel](media/tracking-number-group-predefined.png "Stránka skupin sledovacích čísel")
+    ![Skupina sledovacích čísel pro předdefinovaná čísla dávek](media/tracking-number-group-predefined.png "Skupina sledovacích čísel pro předdefinovaná čísla dávek")
 
 1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu čísel dávek vydaných produktů, pro které chcete tento scénář použít.
 
@@ -114,13 +122,96 @@ Pokud mají být čísla dávky přidělována automaticky beze vstupu pracovní
 1. Na pevné záložce **Obecné** nastavte možnost **Pouze pro transakce zásob** na **Ne**.
 1. Nastavte možnost **Ruční** na **Ne**.
 
-    ![Stránka skupin sledovacích čísel](media/tracking-number-group-fixed.png "Stránka skupin sledovacích čísel")
+    ![Skupina sledovacích čísel pro pevná čísla dávek](media/tracking-number-group-fixed.png "Skupina sledovacích čísel pro pevná čísla dávek")
 
 1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu čísel dávek vydaných produktů, pro které chcete tento scénář použít.
 
 Při použití tohoto scénáře pole **Číslo dávky**, které poskytuje stránka **Nahlásit pokrok** na kartě zařízení úkolového lístku, zobrazuje hodnotu, kterou však pracovníci nemohou upravovat.
 
 ![Stránka hlášení pokroku s polem pro pevná čísla dávky](media/job-card-device-batch-fixed.png "Stránka hlášení pokroku s polem pro pevná čísla dávky")
+
+## <a name="report-serial-controlled-items-as-finished"></a>Hlášení sériově kontrolovaných položek jako dokončených
+
+Zařízení úkolového lístku podporuje tři scénáře pro vykazování sériově kontrolovaných položek. Tyto scénáře platí jak pro položky, které jsou povoleny pro pokročilé skladové procesy, tak pro položky, které nejsou povoleny pro pokročilé skladové procesy.
+
+- **Ručně přiřazená sériová čísla:** Pracovníci zadají vlastní sériové číslo. Toto sériové číslo může pocházet z externího zdroje, který systém nezná.
+- **Předdefinovaná sériová čísla:** Pracovníci vyberou sériové číslo ze seznamu sériových čísel, které systém automaticky vygeneruje před uvolněním výrobního příkazu do zařízení úkolového lístku.
+- **Opravené sériové číslo:** Pracovníci nezadají ani nevyberou sériové číslo. Místo toho systém automaticky přiřadí sériové číslo pracovnímu příkazu před vydáním.
+
+### <a name="enable-the-feature-on-your-system"></a>Zapnutí funkce ve vašem systému
+
+Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala sériové číslo během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí (v tomto pořadí):
+
+1. Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku
+1. Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku (Preview)
+
+### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurace produktů, které vyžadují hlášení sériového čísla
+
+Chcete-li, aby produkt podporoval některý z dostupných scénářů řízených sériovým číslem, postupujte takto:
+
+Pokud chcete jednotlivé scénáře povolit, postupujte následovně.
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. Vyberte produkt ke konfiguraci.
+1. Na pevné záložce **Správa zásob** v poli **Skupina sériových čísel** vyberte skupinu čísla sledování, která je nastavená na podporu vašeho scénáře.
+
+> [!NOTE]
+> Pokud není ve výchozím nastavení číslu kontrolovanému podle sériového čísla přiřazená žádná skupina sériových čísel, poskytne zařízení úkolového lístku ruční zadání čísla dávky během vykazování jako dokončené.
+
+Následující kapitoly popisují, jak nastavit skupiny sledovacích čísel na podporu každého ze tří scénářů pro vykazování položek kontrolovaných podle sériových čísel.
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Nastavení skupiny čísel sledování, která pracovníkům umožňuje ruční přiřazení sériového čísla
+
+Při nastavení skupiny čísel tak, aby vyžadovalo od pracovníků ruční přiřazení sériových čísel, postupujte následovně.
+
+1. Přejděte na **Správa zásob \> Nastavení \> Dimenze \> Skupiny čísel sledování**.
+1. Vytvořte nebo vyberte skupinu sledovacích čísel, kterou chcete nastavit.
+1. Na pevné záložce **Obecné** nastavte možnost **Ruční** na **Ano**.
+
+    ![Stránka skupin sledovacích čísel, sériová čísla](media/tracking-number-group-manual-serial.png "Stránka skupin sledovacích čísel, sériová čísla")
+
+1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu sériových čísel vydaných produktů, pro které chcete tento scénář použít.
+
+Při použití tohoto scénáře pole **Sériové číslo**, které poskytuje stránka **Nahlásit pokrok** na kartě zařízení úkolového lístku, poskytuje textové pole, do něhož mohou pracovníci zadat libovolnou hodnotu sériového čísla. Po zadání hodnoty se přidá do seznamu sériových čísel. V tomto seznamu mohou pracovníci provádět následující akce:
+
+- Chcete-li označit sériové číslo jako vyřazené, vyberte tlačítko **Vyřadit** pro příslušný řádek. Pracovník bude vyzván, aby poskytl **Příčinu chyby**.
+- Chcete-li odstranit sériové číslo, vyberte tlačítko **Odstranit** pro příslušný řádek.
+
+![Stránka hlášení pokroku s polem pro ruční sériová čísla](media/job-card-device-serial-manual.png "Stránka hlášení pokroku s polem pro ruční sériová čísla")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Nastavte skupinu sledovacích čísel, která poskytuje seznam předdefinovaných sériových čísel
+
+Pokud chcete poskytnout seznam předdefinovaných sériových čísel, nastavte skupinu sledovacích čísel následovně.
+
+1. Přejděte na **Správa zásob \> Nastavení \> Dimenze \> Skupiny čísel sledování**.
+1. Vytvořte nebo vyberte skupinu sledovacích čísel, kterou chcete nastavit.
+1. Na pevné záložce **Obecné** nastavte možnost **Pouze pro transakce zásob** na **Ano**.
+1. Použijte pole **Na množství** pro rozdělení sériových čísel na množství jednoho.
+
+    ![Skupina sledovacích čísel pro předdefinovaná sériová čísla](media/tracking-number-group-predefined-sn.png "Skupina sledovacích čísel pro předdefinovaná sériová čísla")
+
+1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu sériových čísel vydaných produktů, pro které chcete tento scénář použít.
+
+Při použití tohoto scénáře pole **Sériové číslo**, které poskytuje stránka **Nahlásit pokrok** na zařízení úkolového lístku, představuje rozevírací seznam, kde pracovníci musí vybrat předdefinovanou hodnotu.
+
+![Stránka hlášení pokroku se seznamem předdefinovaných sériových čísel](media/job-card-device-serial-predefined.png "Stránka hlášení pokroku se seznamem předdefinovaných sériových čísel")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Nastavení skupiny čísel sledování, která automaticky přiřazuje sériová čísla
+
+Pokud mají být sériová čísla přidělována automaticky bez vstupu pracovníka, nastavte skupinu čísel sledování podle následujících kroků.
+
+1. Přejděte na **Správa zásob \> Nastavení \> Dimenze \> Skupiny čísel sledování**.
+1. Vytvořte nebo vyberte skupinu sledovacích čísel, kterou chcete nastavit.
+1. Na pevné záložce **Obecné** nastavte možnost **Pouze pro transakce zásob** na **Ne**.
+1. Nastavte možnost **Ruční** na **Ne**.
+
+    ![Skupina sledovacích čísel pro pevná sériová čísla](media/tracking-number-group-fixed-sn.png "Skupina sledovacích čísel pro pevná sériová čísla")
+
+1. Nastavte další hodnoty podle potřeby a poté vyberte tuto skupinu sledovacích čísel jako skupinu sériových čísel vydaných produktů, pro které chcete tento scénář použít.
+
+Při použití tohoto scénáře pole **Sériové číslo**, které poskytuje stránka **Nahlásit pokrok** na kartě zařízení úkolového lístku, zobrazuje hodnotu, kterou však pracovníci nemohou upravovat. Tento scénář je relevantní pouze v případě, že je výrobní objednávka vytvořena pro množství jednoho kusu položky řízené sériovým číslem.
+
+![Stránka hlášení pokroku s polem pro pevná sériová čísla](media/job-card-device-serial-fixed.png "Stránka hlášení pokroku s polem pro pevná sériová čísla")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Nahlášení jako dokončené do registrační značky
 

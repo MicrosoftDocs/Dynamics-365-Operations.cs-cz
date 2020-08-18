@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e06a0e0289e8c0c718aff4beab2c7a6ceb0a8cb1
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 1097289d339b84aa477752934afe8192e56c5ce5
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417247"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621077"
 ---
 # <a name="accordion-module"></a>Modul ovládacího prvku Accordion
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly ovládacího prvku Accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.

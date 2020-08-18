@@ -3,7 +3,7 @@ title: Přidání podpory pro síť CDN
 description: V tomto tématu je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533337"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646032"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory pro síť CDN
 
@@ -35,7 +35,7 @@ V tomto tématu je popsán postup při přidání sítě pro doručování obsa
 
 Pokud zřídíte prostředí elektronického obchodu v řešení Dynamics 365 Commerce, můžete jej nakonfigurovat tak, aby spolupracovalo se službou CDN. 
 
-Vaši vlastní doménu lze povolit během procesu zřízení pro vaše prostředí elektronického obchodu. Další možností je k jejímu nastavení použít servisní požadavek až po dokončení procesu zřízení. Proces zřízení pro prostředí elektronického obchodu generuje název hostitele, který je přidružen k prostředí. Tento název hostitele má následující formát, kde *název-klienta-prostředí-elektronického-obchodu* je název vašeho prostředí:
+Vaši vlastní doménu lze povolit během procesu zřízení pro vaše prostředí elektronického obchodu. Další možností je k jejímu nastavení použít servisní požadavek až po dokončení procesu zřízení. Proces zřízení pro prostředí elektronického obchodu generuje název hostitele, který je přidružen k prostředí. Tento název hostitele má následující formát, kde \<*e-commerce-tenant-name*\> je název vašeho prostředí:
 
 &lt;název-klienta-prostředí-elektronického-obchodu&gt;commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Je možné použít libovolnou službu CDN, ale v příkladu v tomto tématu s
 
 Informace, jak nastavit službu Azure Front Door Service, naleznete v tématu [Rychlý start: Vytvoření služby Front Door pro vysoce dostoupnou globální webovou aplikaci](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Konfigurace back-endového fondu ve službě Azure Front Door Service
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurace backendového fondu ve službě Azure Front Door Service
 
-Chcete-li konfigurovat back-endový fond ve službě Azure Front Door Service, postupujte následovně.
+Chcete-li konfigurovat backendový fond ve službě Azure Front Door Service, postupujte následovně.
 
-1. Přidejte **&lt;název-klienta-prostředí-elektronického-obchodování&gt;.commerce.dynamics.com** do back-endového fondu jako vlastního hostitele s prázdným záhlavím.
-1. V části **Sondy stavu** v poli **Cesta** zadejte **/keepalive**.
-1. Do pole **Intervaly (sekundy)** zadejte **255**.
+1. Přidejte **&lt;název-klienta-prostředí-elektronického-obchodování&gt;.commerce.dynamics.com** do backendového fondu jako vlastního hostitele s prázdným záhlavím.
 1. V části **Vyrovnávání zátěže** ponechte výchozí hodnoty.
 
-Následující ilustrace znázorňuje dialogové okno **Přidat back-endový fond** služby Azure Front Door Service.
+Následující ilustrace znázorňuje dialogové okno **Přidat backend** služby Azure Front Door Service s vloženým názvem hostitele backendu.
 
 ![Dialogové okno Přidat back-endový fond](./media/CDN_BackendPool.png)
+
+Následující ilustrace znázorňuje dialogové okno **Přidat backendový pool** služby Azure Front Door Service s výchozími hodnotami vyrovnávání zatížení.
+
+![Pokračování dialogového okna Přidat back-endový fond](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Nastavení pravidel ve službě Azure Front Door Service
 
@@ -121,20 +123,22 @@ Následující ilustrace znázorňuje dialogové okno **Přidat pravidlo** služ
 
 ![Dialogové okno Přidat pravidlo](./media/CDN_CachingRule.png)
 
-Po nasazení této počáteční konfigurace je nutné přidat vlastní doménu do konfigurace služby Azure Front Door Service. Chcete-li přidat vlastní doménu (například `www.fabrikam.com`), je nutné pro doménu nakonfigurovat kanonický název (CNAME).
+> [!WARNING]
+> Pokud je doména, kterou budete používat, již aktivní a živá, vytvořte lístek podpory z dlaždice **Podpora** v [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) a získejte pomoc při dalších krocích. Další informace viz [Získejte podporu pro aplikace Finance and Operations nebo Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Pokud je vaše doména nová a nejedná se o dříve existující živou doménu, můžete svou vlastní doménu přidat do konfigurace služby Azure Front Door Service. To umožní, aby se webový provoz přesměroval na váš web prostřednictvím instance Azure Front Door. Chcete-li přidat vlastní doménu (například `www.fabrikam.com`), je nutné pro doménu nakonfigurovat kanonický název (CNAME).
 
 Následující ilustrace znázorňuje dialogové okno **Konfigurace CNAME** služby Azure Front Door Service.
 
 ![Dialogové okno Konfigurace CNAME](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Pokud je doména, kterou budete používat, aktivní a živá, kontaktujte podporu, abyste tuto doménu povolili ve službě Azure Front Door Service, abyste mohli provést test.
 
 Službu Azure Front Door Service můžete použít ke správě certifikátu, nebo můžete pro vlastní doménu použít vlastní certifikát.
 
 Následující ilustrace znázorňuje dialogové okno **HTTPS vlastní domény** služby Azure Front Door Service.
 
 ![Dialogové okno HTTPS vlastní domény](./media/Custom_Domain_HTTPS.png)
+
+Podrobné pokyny pro přidání vlastní domény do vašich Azure Front Door najdete na stránce [Přidejte do Front Door vlastní doménu](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné používat s webem Commerce.
 

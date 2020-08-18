@@ -3,7 +3,7 @@ title: Přehled věrnostního programu
 description: Toto téma popisuje funkce věrnostního programu v aplikaci Dynamics 365 Commerce odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021908"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613196"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
@@ -55,7 +55,7 @@ V následující tabulce jsou popsány jednotlivé komponenty a jejich použití
 | Nastavení slev (předpoklad)                  | Nastavte slevy, které nabízíte věrným zákazníkům. Například můžete nabídnout 5 % z ceny všech oděvů. | Slevy musí být přidány do cenových skupin, aby je bylo možné zahrnout do věrnostního programu. Cenové skupiny jsou jsou přiřazeny věrnostním programům a úrovním věrnostních programů. |
 | Nastavit cenové skupiny (předpoklady)               | Cenové skupiny se používají k vytváření a správě cen a slev velkoobchodních produktů. Nastavte cenové skupiny, které zahrnují slevy pro vaše věrnostní programy. | Cenové skupiny jsou přiřazeny k věrnostním programům a úrovním věrnostních programů. |
 | Nastavení kanálů (předpoklad)                   | Velkoobchodní kanály jsou obchody, které jsou zapojeny do věrnostních programů, například kamenné obchody, online obchody nebo kontaktní střediska. Prodejní kanály je třeba nastavit, než je bude možné přiřadit věrnostním programům. | Prodejní kanály přiřaďte věrnostnímu programu, pokud je kanál zapojen do věrnostního programu. |
-| Nastavení platební metody věrnostního programu (předpoklad) | Předtím, než je možné věrnostní kartu použít u pokladny a věrnostní body uplatnit jako součást věrnostního schématu, musíte nastavit způsob platby. Platební metodu věrnostního programu je třeba přidat také do prodejního kanálu, aby mohli odběratelé uplatnit své věrnostní body jako platbu za produkty. | Nastavte způsob platby věrnostního programu a poté přiřaďte způsob platby věrnostního programu prodejním kanálům, které jsou do věrnostního programu zapojeny. |
+| Nastavení platební metody věrnostního programu (předpoklad) | Chcete-li zajistit, aby věrnostní body mohly být uplatněny na jakémkoli kanálu, například v kamenných obchodech, online obchodech nebo call centrech, musíte nastavit oblast přihrádky pro věrnostní karty na straně **Čísla karet**. | Nastavte způsob platby věrnostního programu a poté přiřaďte způsob platby věrnostního programu prodejním kanálům, které jsou do věrnostního programu zapojeny. |
 | Nastavit časové intervaly                            | Časové intervaly umožňují pružné nastavení časového intervalu, který se vztahuje na úrovně věrnostního programu. Použijte časové intervaly k určení, jak dlouho odběratel může zůstat na úrovni nebo za jakou dobu musí odběratel dokončit aktivitu pro získání nároku na určitou úroveň. | Časové intervaly platí, pouze pokud ve věrnostních programech používáte úrovně. Vyberte časový interval vztahující se k úrovni programu a časové intervaly, které se týkají pravidel úrovně programu. |
 | Nastavení bodů odměn                             | Body odměn jsou typy odměn, které odběratelům nabízíte. Body odměny lze uplatnit nebo neuplatnit. Uplatnitelné body odměny lze vyměnit za výrobky. Neuplatnitelné body odměny se používají pro účely sledování a k tomu, aby odběratel mohl přejít na další úroveň ve věrnostním programu. | Na body odměn odkazují pravidla úrovně a slouží ke kvalifikaci zákazníka pro určitou úroveň. Body odměn jsou odkazovány také ve schématech věrnostních programů v pravidech získávání a využití. V pravidlech získávání určete odměny, které může odběratel za určité aktivity získat. V pravidlech využití určete odměny, které může odběratel uplatnit. |
 | Nastavení věrnostních programů                          | Věrnostní programy jsou základní věrnostní entitou, kterou nabízíte. Každý věrnostní program může mít také přiřazené úrovně věrnostního programu. Slevy a cenové skupiny jsou přiřazeny k věrnostním programům na úrovni programu nebo na úrovni vrstvy (úrovně). | Věrnostní schémata vytvořte pro věrnostní programy. Přiřaďte věrnostní karty pro věrnostní programy. Věrnostní karty lze přiřadit odběrateli. Prodejní kanály se mohou zapojit do věrnostních programů přiřazených věrnostním schématům. Zákazník, který je držitelem věrnostní karty, se může zapojit do věrnostních programů, které jsou k dané kartě přiřazeny. |

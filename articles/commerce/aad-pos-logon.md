@@ -3,7 +3,7 @@ title: Povolit ověřování Azure Active Directory pro přihlášení POS
 description: V tomto tématu je vysvětleno, jak nakonfigurovat přihlašovací prostředí pro Microsoft Dynamics 365 Commerce pokladní místo (POS) tak, aby používalo ověřování Azure Active Directory.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410028"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641026"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Povolit ověřování Azure Active Directory pro přihlášení POS
 [!include [banner](includes/banner.md)]
@@ -63,6 +63,9 @@ Chcete-li účet Azure AD přidružit k pracovníkovi, postupujte podle následu
 1. Vyberte požadovaný účet Azure AD a poté vyberte tlačítko **OK**.
 
 Pole **Alias**, **UPN** a **Externí dílčí identifikátor** na kartě **Commerce** na stránce Podrobnosti pracovníka budou vyplněna.
+
+> [!NOTE]
+> Po aktualizaci záznamu pracovníka, například pokud je nový Azure AD účet přidružen, změněno heslo nebo aktualizován adresář zaměstnance, doporučujeme spustit rozvrh distribuce **1060** (**Personál**) pro synchronizaci nejnovějších informací o personálu s kanálem. Aplikace POS tak může načíst správná data pro ověření uživatele a kontrolu autorizace.
 
 ## <a name="additional-resources"></a>Další prostředky
 

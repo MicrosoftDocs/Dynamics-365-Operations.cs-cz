@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411335"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645332"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -61,7 +61,7 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
-- **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Může podporovat jeden nebo mnoho obrázků. Podporuje také obrázky miniatur. Obrázky miniatur lze uspořádat vodorovně (jako řádek pod obrázkem) nebo svisle (jako sloupec vedle obrázku). Modul galerie médií lze přidat do pozice **Média** v modulu buy boxu. V současné době podporuje pouze obrázky. 
+- **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Další informace o tomto modulu naleznete v části [Modul galerie médií](mediagallery-module.md).
 - **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v části [Modul volby obchodu](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
@@ -112,11 +112,13 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 [Modul volby obchodu](store-selector.md)
 
+[Modul galerie médií](media-gallery-module.md)
+
 [Modul kontejneru](add-container-module.md)
 
 [Modul košíku](add-cart-module.md)
 
-[Ikona modulu košíku](cart-icon-module.md)
+[Modul ikony košíku](cart-icon-module.md)
 
 [Modul pokladny](add-checkout-module.md)
 

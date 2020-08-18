@@ -3,7 +3,7 @@ title: Přehled omnikanálových plateb
 description: Toto téma poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021932"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613170"
 ---
 # <a name="omni-channel-payments-overview"></a>Přehled omnikanálových plateb
 
@@ -68,11 +68,13 @@ Jsou požadovány následující součásti a kroky nastavení:
 
 - **integrace eCommerce:** Podpora scénářů, jejichž pořadí pochází z online výlohy, vyžaduje integraci s aplikací Commerce. Další informace o sadě Retail e-Commerce SDK naleznete v tématu [sada SDK (Software Development Kit) platformy elektronického obchodování](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). V ukázkovém prostředí podporuje referenční výkladní skříň scénáře omniplateb. 
 - **Konfigurace online plateb:** nastavení online kanálu musí obsahovat platební konektor, který byl aktualizován pro podporu omniplateb. Případně lze použít konektor pro platby po vybalení. Informace o konfiguraci konektoru plateb Adyen pro online obchody naleznete v tématu [Konektor plateb Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Kromě kroků nastavení eCommerce popsaných v tomto tématu musí být nastaven parametr **Povolit nastavení informací o platbě v elektronickém obchododování** na hodnotu **Pravda** v nastavení konektoru Adyen. 
-- **Konfigurace omnikanálových plateb:** V účetním systému přejděte na **Maloobchod a velkoobchod \> Nastavení centrály \> Parametry \> Sdílené parametry velkoobchodu**. Pak na kartě **Omnikanálové platby** nastavte možnost **Použít omnikanálové platby** na **Ano**.
+- **Konfigurace omnikanálových plateb:** V účetním systému přejděte na **Maloobchod a velkoobchod \> Nastavení centrály \> Parametry \> Sdílené parametry velkoobchodu**. Pak na kartě **Omnikanálové platby** nastavte možnost **Použít omnikanálové platby** na **Ano**. Ve verzích Commerce 10.0.12 a novějších je toto nastavení v pracovním prostoru **Správa funkcí**. Vyberte **Omnikanálové platby** a klikněte na **Povolit hned**. 
 - **Platební služby:** Kontaktní centrum používá výchozí platební konektor na stránce **Platební služby** ke zpracování plateb. Chcete-li podporovat scénáře jako například "koupit pomocí call centra, vyzvednout v obchodě", musí být tento výchozí konektor platby musí být konektor Adyen platby nebo platební konektor splňující požadavky na implementaci pro platby pomocí Omni kanálu.
 - **Služba EFT:** platby prostřednictvím platebního terminálu je nutné nastavit na pevné záložce **Služba EFT** hardwarového profilu. Konektor Adyen podporuje scénáře omnikanálových plateb ihned po vybalení. Ostatní platební konektory, které **podporují** rozhraní iNamedRequestHandler, mohou být použity také v případě, že podporují omnikanálové platby.
 - **Dostupnost platebního konektoru**: Pokud je objednávka odvolána, řádky úhrady plateb, které jsou odvolány spolu s objednávkou, obsahují název platebního konektoru, který byl použit k vytvoření autorizací přiřazených k dané objednávce. Po splnění objednávky se sada SDK Platby pokusí použít stejný konektor, který byl použit k vytvoření původního povolení. Proto musí být pro záznam k dispozici platební konektor, který má stejné vlastnosti obchodníka. 
 - **Typy karet:** pro správné fungování omni kanálů musí mít každý kanál stejné nastavení pro typy úhrad, které lze použít pro omni kanál. Toto nastavení zahrnuje ID metod plateb a ID typů karet. Pokud má například typ úhrady **Karty** ID **2** v nastavení online obchodu, měl by mít stejné ID v nastavení maloobchodu. Stejný požadavek se vztahuje na ID typů karet. Pokud je číslo karty **12** v online obchodu nastaveno na **VISA**, stejné ID by mělo být nastaveno pro maloobchod. 
+- Retail Modern POS pro Windows nebo Android se zabudovanou hardwarovou stanicí   -nebo-
+- Modern POS pro iOS nebo Cloud POS s připojenou sdílenou hardwarovou stanicí. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Základní princip podporující omnikanálové platby
 
@@ -100,8 +102,10 @@ V následujících oddílech jsou popsány kroky pro jednotlivé scénáře a uk
 Než začnete, musíte se ujistit, že jsou splněny následující předpoklady:
 
 - Máte referenční výkladní skříň, kde je konfigurován konektor Adyen.
-- Možnost **Omnikanálové platby** na stránce **Sdílené parametry velkoobchodu** je nastavená na **Pravda**.
+- Možnost **Omnikanálové platby** na stránce **Sdílené parametry velkoobchodu** je nastavená na **Pravda**. V novějších verzích je toto nastavení přesunuto do pracovního prostoru **Správa funkcí**, kde si můžete vybrat funkci **Omnikanálové platby** a kliknout na **Povolit hned**. 
 - Platební konektor Adyen je nakonfigurován pro registrační pokladnu Houston POS.
+- Retail Modern POS pro Windows nebo Android se zabudovanou hardwarovou stanicí   -nebo-
+- Modern POS pro iOS nebo Cloud POS s připojenou sdílenou hardwarovou stanicí. 
 
 Pokud chcete spustit tento scénář, postupujte takto:
 
@@ -229,3 +233,5 @@ Když má objednávka více nabídek a je vybráno více řádků, pokladník ne
 
 - [Časté dotazy k platbám](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Platební konektor Dynamics 365 pro Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

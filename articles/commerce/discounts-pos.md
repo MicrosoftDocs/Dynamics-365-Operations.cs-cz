@@ -3,7 +3,7 @@ title: Zobrazit slevy v POS
 description: Toto téma vysvětluje, jak Microsoft Dynamics 365 Commerce pomáhá prodejcům získat informace o promoakcích a způsobu jejich použití pro křížové a návazné pohyby.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334701"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3638175"
 ---
 # <a name="show-discounts-in-pos"></a>Zobrazit slevy v POS
 
@@ -54,7 +54,7 @@ Na stránce **Všechny slevy** mohou prodejci tyto slevy vyhledávat také podle
 
 Víceřádkové slevy, jako například množstevní slevy, kombinační slevy a mezní slevy, jsou skvělým způsobem, jak motivovat zákazníky při nákupu více produktů za účelem získání větších slev. Proto také pomohou zvýšit výnosy z košíku odběratele a maloobchodního prodeje. Tyto slevy lze zveřejnit na webech e-commerce, na sociálních médiích a na bannerech v obchodě.
 
-I když jsou však všechny tyto metody propagace použity, mohou zákazníci vymezit možnost využívat promoakce. Chcete-li pro prodejce usnadnit získání informací o promoakcích, které lze použít pro vybraný řádek, nebo dokonce na celý nákupní košík, mohou maloobchodní prodejci přidat tlačítko pro operaci "Zobrazit dostupné slevy" do libovolné mřížky na stránce **Transakce**. V takovém případě může prodejní sdružení vybrat řádek transakce a poté vybrat tlačítko pro zobrazení všech slev, které jsou k dispozici pro vybraný řádek. Prodejci mohou také vybrat jinou kartu zobrazující slevy, které se vztahují na celou transakci.
+I když jsou však všechny tyto metody propagace použity, mohou zákazníci vymezit možnost využívat promoakce. Chcete-li pro prodejce usnadnit získání informací o promoakcích, které lze použít pro vybraný řádek, nebo dokonce na celý nákupní košík, mohou maloobchodní prodejci přidat tlačítko pro operaci **"Zobrazit dostupné slevy"** do libovolné mřížky na stránce **Transakce**. V důsledku toho může prodejní sdružení vybrat řádek transakce a poté vybrat tlačítko pro zobrazení všech slev, které jsou k dispozici pro vybraný řádek. Prodejci mohou také vybrat jinou kartu zobrazující slevy, které se vztahují na celou transakci. Je důležité si uvědomit, že **Zobrazit dostupné slevy** neukazuje slevy, které jsou již použity na prodejní lince, protože informace o slevách jsou již uvedeny na prodejní lince. Účelem tohoto scénáře je pouze ukázat slevy, které ještě nebyly uplatněny. Výjimkou jsou slevy, které se uplatňují na základě kupónu označeného jako „Použít bez kódu kupónu“. To usnadňuje prodejnímu partnerovi snadno odstranit kupón, který použili.
 
 Na stránce **Všechny slevy** jsou zobrazeny pouze slevy, které neodpovídají žádné z použitých slev. Toto chování pomáhá zajistit, že v případě, že prodávající informuje odběratele o slevě a odběratel provede požadovanou akci (například odběratel nakoupí jednu další položku pro získání 10 procent), sleva bude uplatněna na transakci. Slevy založené na kupónech jsou zobrazeny pouze v případě, že je zapnuta možnosti **Použít bez kódu kupónu**.
 

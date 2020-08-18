@@ -3,7 +3,7 @@ title: Příchozí skladová operace v POS
 description: Toto téma popisuje možnosti příchozí skladové operace v pokladním místě (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551594"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627531"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Příchozí skladová operace v POS
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551594"
 V Microsoft Dynamics 365 Commerce verze 10.0.10 a novějších nahrazují příchozí a odchozí operace v pokladním místě (POS) operace výdeje a příjmu.
 
 > [!NOTE]
-> Ve verzi 10.0.10 a novějších budou jakékoli nové funkce aplikace POS související s příjmem skladových zásob podle nákupních objednávek a převodních příkazů přidány do operace POS **Příchozí operace**. Pokud právě používáte operace výdeje a příjmu v aplikaci POS, doporučujeme, abyste vytvořili strategii pro přechod od těchto operací k novým příchozím a odchozím operacím. Ačkoli operace výdeje a příjmu nebudou z produktu odebrány, po verzi 10.0.9 do nich nebude nic investováno z hlediska funkčního nebo výkonnostního výhledu.
+> Ve verzi Commerce 10.0.10 a novějších budou jakékoli nové funkce aplikace POS související s příjmem skladových zásob podle nákupních objednávek a převodních příkazů přidány do operace POS **Příchozí operace**. Pokud právě používáte operace výdeje a příjmu v aplikaci POS, doporučujeme, abyste vytvořili strategii pro přechod od těchto operací k novým příchozím a odchozím operacím. Ačkoli operace výdeje a příjmu nebudou z produktu odebrány, po verzi 10.0.9 do nich nebude nic investováno z hlediska funkčního nebo výkonnostního výhledu.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Předpoklad: Konfigurace asynchronní architektury dokumentu
 
@@ -153,6 +153,20 @@ Funkci **Zrušit příjem** na panelu aplikací použijte pouze v případě, ž
 Pokud přijímáte zásoby, můžete použít funkci **Pozastavit příjem**, pokud chcete pozastavit proces přijímání. Můžete například chtít provést další operaci z POS, jako například zavolat na oddělení prodeje zákazníkům nebo zpozdit zaúčtování příjmu.
 
 Pokud vyberete možnost **Pozastavit příjem**, bude stav dokumentu změněn na **Pozastaveno**. Uživatelé proto budou vědět, že byla zadána data pro daný dokument, ale dokument ještě nebyl potvrzen. Až budete připraveni pokračovat v procesu příjmu, vyberte pozastavený dokument a pak vyberte **Podrobnosti objednávky**. Všechna dříve uložená množství **Probíhá příjem** jsou zachována a lze je zobrazit ze zobrazení **Úplný seznam objednávek**.
+
+### <a name="review"></a>Přehled
+
+Před konečným potvrzením o přijetí do centrály Commerce (HQ) můžete pomocí funkce kontroly ověřit příchozí dokument. Přezkum vás upozorní na chybějící nebo nesprávná data, která mohou způsobit selhání zpracování, a poskytne vám možnost opravit problémy před odesláním žádosti o potvrzení. Chcete-li povolit funkci **Recenze** na panelu aplikací, povolte funkci **Povolit ověření v příchozích a odchozích skladových operacích POS** prostřednictvím pracovního prostoru **Správa funkcí** v centrále Commerce (HQ).
+
+Funkce **Recenze** ověřuje následující problémy v příchozím dokumentu:
+
+- **Nadměrný příjem** - nyní přijímané množství je větší než objednané množství. Závažnost tohoto problému je dána konfigurací navýšení dodávky v centrále Commerce (HQ).
+- **Příjem menšího množství** - nyní přijímané množství je menší než objednané množství. Závažnost tohoto problému je dána konfigurací snížení dodávky v centrále Commerce (HQ).
+- **Sériové číslo** - sériové číslo není poskytnuto ani ověřeno pro serializovanou položku, která vyžaduje, aby bylo sériové číslo zapsáno do zásob.
+- **Místo není nastaveno** - místo není určeno pro položku na základě polohy, kde není povoleno prázdné místo.
+- **Odstraněné řádky** - v objednávce jsou odstraněny řádky uživatelem centrály Commerce (HQ), které nejsou POS aplikaci známy.
+
+Nastavte parametr **Povolit automatické ověření** na **Ano** v **Parametry obchodu** > **Zásoby** > **Skladové zásoby**, aby bylo ověření provedeno automaticky, když je vybrána volba **Dokončit příjem**.
 
 ### <a name="finish-receiving"></a>Dokončit příjem
 

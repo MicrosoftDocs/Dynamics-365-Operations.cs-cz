@@ -1,9 +1,9 @@
 ---
 title: Videa
 description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
-author: josaw1
+author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: e4756e4d1697fdba40ad8a71a5d33594583a219a
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: c620e5e75ba1c547f0a1ee6830a5cf1b7fa58377
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456942"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645358"
 ---
 # <a name="videos"></a>Videa 
 
@@ -124,7 +124,8 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 - [Používání aplikace Excel pro analýzu nákladů](https://youtu.be/-HKHYdClvx8)
 
 ### <a name="customer-portal"></a>Zákaznický portál
-- [Přehled šablony zákaznického portálu v Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)
+- [Přehled šablony zákaznického portálu](https://youtu.be/nPrqoLuHfV8)
+- [Pozvěte zákazníky, aby se zaregistrovali a používali váš zákaznický portál](https://youtu.be/drGUYHX9QIQ)
 
 ### <a name="help-system"></a>Systém nápovědy
 

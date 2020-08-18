@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431353"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651683"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -128,20 +128,47 @@ Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znam�
 
 Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
+Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání s metodou `super()`formuláře`run()`.
+
+        this.forceLegacyGrid();
+
+Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Nahlaste všechny problémy společnosti Microsoft, které vyžadují použití tohoto rozhraní API. 
+
 ## <a name="known-issues"></a>Známé problémy
 V této části je uveden seznam známých problémů nového ovládacího prvku mřížky, zatímco je ve verzi Preview.  
 
 ### <a name="open-issues"></a>Otevřené problémy
+-  Po aktivaci funkce **Nový ovládací prvek mřížky** budou některé stránky i nadále využívat existující ovládací prvek mřížky. To se stane v následujících situacích:  
+    -  Na stránce existuje seznam karet, který je vykreslen ve více sloupcích.
+    -  Na stránce existuje seskupený seznam karet.
+    -  Mřížkový sloupec s nereaktivním rozšiřitelným ovládacím prvkem.
 
-- Seznamy karet, které byly vykresleny jako více sloupců, jsou nyní vykresleny jako jeden sloupec.
-- Seskupené seznamy nejsou vykresleny jako skupiny nebo v samostatných sloupcích.
+    Když se uživatel poprvé setká s jednou z těchto situací, zobrazí se zpráva o aktualizaci stránky. Po zobrazení této zprávy bude stránka nadále využívat stávající mřížku pro všechny uživatele až do další aktualizace produktu. Pro budoucí aktualizaci bude zváženo lepší zacházení s těmito scénáři, aby bylo možné využít novou mřížku.     
 
 ### <a name="fixed-as-part-of-10013"></a>Opraveno jako součást verze 10.0.13
 
-> [!NOTE]
-> Následující informace máte k dispozici, abyste mohli odpovídajícím způsobem plánovat. Další informace o cíleném plánu vydání verze 10.0.13 naleznete v tématu [Dostupnost aktualizací služby](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Pro obrázky nejsou zobrazeny popisky.
+-  [Chyba 470173] Zaškrtávací políčka v neaktivních řádcích se přepínají po kliknutí na mezeru v buňce
+-  [Chyba 474848] Rozšířené náhledy s mřížkami se nezobrazí
+-  [Chyba 474851] Hypertextové odkazy v ovládacích prvcích referenční skupiny nefungují 
+-  [Chyba 471777] Nelze vybrat pole v mřížce pro úpravy nebo vytvoření mobilní aplikace
+-  [KB 4569441] Problémy s vykreslováním vícesloupcových seznamů karet, popisů obrázků a možností zobrazení v některých polích
+-  [KB 4575279] Ne všechny označené řádky se v General Journal odstraní
+-  [KB 4575233] Možnosti zobrazení se po přesunutí do jiného řádku neobnoví
+-  [KB 4571095] K zaúčtování příjemky produktu dochází při náhodném stisknutí klávesy Enter (správné zpracování výchozí akce stránky)
+-  [KB 4575437] Vyhledávání s upravitelnými ovládacími prvky se neočekávaně uzavírají
+-  [KB 4569418] Duplicitní řádek vytvořený ve formuláři harmonogramu doručení
+-  [KB 4575435] Rozšířený náhled někdy přetrvává, i když ukazatel myši není poblíž pole
+-  [KB 4575434] Vyhledávání není filtrováno, když bylo pole změněno
+-  [KB 4575430] Hodnoty v polích pro hesla nejsou v mřížce maskovány
+-  [KB 4569438] "Zpracování se zastavilo kvůli problému s ověřením" se zobrazí po označení řádků při vyřizování dodavatelských transakcí
+-  [KB 4569434] Obnovení formuláře právnických osob má za následek méně záznamů
+-  [KB 4575297] Při úpravách a tabulování v mřížce se fokus neustále pohybuje na podokně záznamníku úloh
+-  [KB 4566773] Korekční transakce se na dotazu na transakce s poukázkami nezobrazují jako negativní 
+-  [KB 4575288] Při výběru hranice mezi řádky v jednoduchém seznamu se fokus resetuje na aktivní řádek
+-  [KB 4575287] Zaostření se nevrátí do prvního sloupce, když pomocí šipky dolů vytvoříte nový řádek v denících
+-  [KB 4564819] Nelze odstranit řádky ve faktuře s volným textem (protože zdroj dat ChangeGroupMode = ImplicitInnerOuter)
+-  [KB 4563317] Pro obrázky nejsou zobrazeny popisky/rozšířené náhledy
 
 ### <a name="fixed-as-part-of-10012"></a>Opraveno jako součást verze 10.0.12
 
@@ -158,6 +185,7 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 - [KB 4562647] Fokus je resetován na první ovládací prvek v dialogovém okně **Publikovat** po přidání nového řádku do mřížky bezpečnostních rolí.
 - [KB 4563310] Rozšířený náhled není po změně řádku uzavřen.
 - [KB 4563313] "Neočekávaná chyba klienta" se objeví v Internet Explorer, když je při vyhledávání vybrána hodnota.
+- [KB 4564557] Vyhledávací a rozbalovací nabídky se neotevřou v Internet Explorer
 - [KB 4563324] Navigace nefunguje po otevření pracovního prostoru **Personální management**.
 
 ### <a name="fixed-as-part-of-10011"></a>Opraveno jako součást verze 10.0.11
