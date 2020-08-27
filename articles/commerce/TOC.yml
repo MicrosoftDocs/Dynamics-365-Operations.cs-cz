@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Obrázky klienta v POS
                           href: pos-image.md
-                    - name: Objednávky odběratele
-                      items:
-                        - name: Objednávky zákazníka v MPOS
-                          href: customer-orders-overview.md
-                        - name: Hybridní objednávky zákazníka
-                          href: hybrid-customer-orders.md
                     - name: Zaměstnanci obchodu
                       items:
                         - name: Sledování provizí v POS pomocí prodejních skupin
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Odhlášení přizpůsobených doporučení
                       href: personalization-gdpr.md
+                - name: Povolení doporučení „nákupu podobného vzhledu“
+                  href: shop-similar-looks.md
                 - name: Zkušenosti s POS
                   items:
                     - name: Přidání doporučení produktu v POS
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Správa objednávek
           items:
+            - name: Objednávky zákazníka
+              items:
+                - name: Objednávky zákazníka v MPOS
+                  href: customer-orders-overview.md
+                - name: Hybridní objednávky zákazníka
+                  href: hybrid-customer-orders.md
             - name: Prodejní objednávky
               items:
                 - name: Vytvoření objednávky kontaktního střediska
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Modul pokladny
                       href: add-checkout-module.md
+                    - name: Platební modul
+                      href: payment-module.md
+                    - name: Modul dodací adresy
+                      href: ship-address-module.md
+                    - name: Modul možností doručení
+                      href: delivery-options-module.md
                     - name: Modul podrobností objednávky
                       href: order-confirmation-module.md
                     - name: Modul dárkového poukazu
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Přehled API rozhraní souborů cookie
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Přehled interaktivních součástí
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Globalizace modulů pomocí třídy CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Vývoj datových akcí
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Injektory skriptu
                       href: e-commerce-extensibility/script-injector.md
+                - name: Konektory
+                  items:
+                    - name: Konfigurace a povolení konektorů
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetrie a analýzy
                   items:
                     - name: Protokolovací nástroj telemetrie
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Nadcházející změny v Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Důležitý vývoj a změny ALM z verze 10.0.10 na 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Sloučení systémů sestavení pro Commerce a Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Migrace Retail SDK z Visual Studio 2015 do Visual Studio 2017
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Rozšiřitelnost serveru Retail Server
               items:
-                - name: Rozšíření kontroloru Commerce Scale Unit OData
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Zákazník Commerce Scale Unit s rozhraní API spotřebitele
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Rozšíření výchozího kontroloru metadat Commerce Scale Unit
-                  href: dev-itpro/extend-metadata.md
-                - name: "Volání služby CRT v\_režimu offline"
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Vytvoření nového rozšíření Retail Serveru
+                - name: "Vytvoření nového rozhraní API rozšíření Retail Serveru (Retail SDK verze 10.0.11\_a novější)"
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: "Vytvoření nového rozhraní API rozšíření Retail Serveru (Retail SDK verze 10.0.11\_a starší)"
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript a C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: Rozšiřitelnost CRT a serveru Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Přidání preferenčních dat zákazníka do databází kanálů
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Správa tajných kódů pro kanály Retail
                   href: dev-itpro/manage-secrets.md
                 - name: Rozšiřitelnost a spouštění CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokování transakcí pomocí spouštění
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Implementace zásad vracení pomocí spouštění
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Rozšíření věrnostního programu
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Body rozšíření pro dodací listy
