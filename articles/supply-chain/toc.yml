@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: Řízení práce pomocí šablon práce a směrnice pro místa
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: Vytvoření směrnic skladového místa
+                      href: warehousing/create-location-directive.md
                     - name: Kódy kroku vlny
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurace zpracování vlny
@@ -2821,6 +2823,8 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Vytvoření nového modulu správy přepravy
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rozšíření datových entit zásob na skladě
+              href: inventory/extend-on-hand-entities.md
     - name: Vývoj a správa aplikací Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

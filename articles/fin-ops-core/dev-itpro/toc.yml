@@ -156,6 +156,8 @@
                           items:
                             - name: Přizpůsobení mapování entit a polí
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Zpracování více map entit
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Úprava právnické osoby po nastavení duálního zápisu
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Správa chyb a oznámení výstrah

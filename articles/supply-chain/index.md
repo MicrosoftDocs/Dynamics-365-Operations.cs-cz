@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530252"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696123"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -89,8 +89,6 @@ Následující záznamy technické konference se zabývají funkcemi správy dod
   - [Konfigurátor produktu v Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Řízení skladu:**
   - [Co nejefektivnější využívání systému řízení skladu](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Pokročilé řízení skladu ve verzi R3 – zpracování příchozích položek a minimální/maximální doplňování](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Pokročilé řízení skladu ve verzi R3 – běžný pracovní den, zpracování odchozích položek a doplňování poptávky](https://youtu.be/Og0gLlVp7jA)
   - [Štítky v novém modulu řízení skladu ve verzi Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: pokročilé řízení skladu – běžný pracovní den procesní výroby](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videa o řízení výroby:**
