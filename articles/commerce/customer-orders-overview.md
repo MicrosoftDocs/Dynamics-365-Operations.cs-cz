@@ -3,7 +3,7 @@ title: Objednávky zákazníka v Modern POS (MPOS)
 description: Toto téma obsahuje informace o objednávkách odběratele v Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021829"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699362"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Objednávky zákazníka v Modern POS (MPOS)
 
@@ -53,6 +53,8 @@ Zde jsou některé parametry, které lze nastavit na stránce **Parametry Commer
 
     - Poplatky jsou použity na úrovni záhlaví prodejní objednávky a při vrácení určitého množství produktu nelze určit maximální refundaci dopravného povolenou pro produkty a množství takovým způsobem, který by byl použitelný pro všechny zákazníky.
     - Pro každou instanci expedice vzniká dopravné. Pokud zákazník vrací produkty vícekrát a zásady prodejce určují, že prodejce ponese náklady dopravného za vrácení, budou poplatky za dopravné vratek vyšší než skutečné dopravné.
+    
+- **Chování při výpočtu daně** - **Přepočítat** je výchozí a tradiční nastavení způsobu přepočtu daní při importu objednávky do administrativní podpory. **Nepočítat** zakáže přepočet daně až do doby, než bude příkaz upraven v administrativní podpoře, když je přepočet proveden. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Toky transakcí pro objednávky odběratele
 

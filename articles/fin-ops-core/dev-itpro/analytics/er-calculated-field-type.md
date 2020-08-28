@@ -3,7 +3,7 @@ title: Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného p
 description: Toto téma obsahuje informace o způsobu použití typu vypočítaného pole pro zdroje dat ER.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771322"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665603"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
@@ -45,14 +45,14 @@ Pro dokončení příkladů v tomto tématu musíte mít následující přístu
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-Z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) stáhněte soubor zip (komprimovaný) **Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole**. Obsahuje následující konfigurace ER, které je nutné extrahovat a uložit místně.
+Je také nutné stáhnout a lokálně uložit následující soubory.
 
 | **Obsah**                           | **Název souboru**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Vzorová konfigurace datového modelu elektronického výkaznictví    | Model pro informace o volání s parametry calls.version.1.xml     |
-| Vzorová konfigurace metadat elektronického výkaznictví      | Metadata pro informace o volání s parametry calls.version.1.xml  |
-| Vzorová konfigurace mapování elektronického výkaznictví | Mapování pro informace o volání s parametry calls.version.1.1.xml |
-| Vzorová konfigurace formátu elektronického výkaznictví        | Formát pro informace o volání s parametry calls.version.1.1.xml  |
+| Vzorová konfigurace datového modelu elektronického výkaznictví    | [Model pro informace o volání s parametry calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Vzorová konfigurace metadat elektronického výkaznictví      | [Metadata pro informace o volání s parametry calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Vzorová konfigurace mapování elektronického výkaznictví | [Mapování pro informace o volání s parametry calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Vzorová konfigurace formátu elektronického výkaznictví        | [Formát pro informace o volání s parametry calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Přihlaste se k instanci RCS.
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Nejprve musíte v RCS dokončit krok v proceduře [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411192"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686615"
 ---
 # <a name="header-module"></a>Modul záhlaví
 
@@ -62,7 +62,7 @@ Následující moduly lze použít v modulu záhlaví:
 
 Chcete-li vytvořit modul záhlaví, postupujte následujícím způsobem.
 
-1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
 1. V dialogovém okně **Nový fragment stránky** vyberte modul **Kontejner**, zadejte název fragmentu stránky a poté klepněte na tlačítko **OK**.
 1. Vyberte pozici **Výchozí kontejner** a poté v podokně vlastností napravo nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
 1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.

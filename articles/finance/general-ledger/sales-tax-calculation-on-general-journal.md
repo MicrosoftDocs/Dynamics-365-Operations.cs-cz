@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570187"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665835"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Výpočet DPH na řádcích hlavního deníku
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 Pokud má doklad řádek deníku, u kterého je typ účtu **Dodavatel**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty dodavatele. 
 
-•   Pokud je kód DPH Osvobození od daně, je směr Nákup bez daně.
-
-•   Pokud je kód DPH vnitřní DPH, je směr DPH Pohledávka DPH.
-
-•   Pokud je kód DPH stornované účtování, je směr DPH Pohledávka DPH.
-
-
-V opačném případě je směr DPH Splatná DPH.
-
-V následujícím diagramu je pravidlo znázorněno graficky.
-
-![Možnosti daňových směrů pro účty dodavatele](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Typ účtu je Zákazník.
-
-Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty zákazníka.
-
 •   Pokud je kód DPH importní DPH, je směr DPH Importní DPH.
 
 •   Pokud je kód DPH Osvobození od daně, je směr Nákup bez daně.
@@ -90,6 +73,22 @@ Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou
 •   Pokud je kód DPH stornované účtování, je směr DPH Splatná DPH.
 
 V opačném případě je směr DPH pohledávka DPH.
+
+V následujícím diagramu je pravidlo znázorněno graficky.
+
+![Možnosti daňových směrů pro účty dodavatele](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Typ účtu je Zákazník.
+
+Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty zákazníka.
+
+•   Pokud je kód DPH Osvobození od daně, je směr Nákup bez daně.
+
+•   Pokud je kód DPH vnitřní DPH, je směr DPH Pohledávka DPH.
+
+•   Pokud je kód DPH stornované účtování, je směr DPH Pohledávka DPH.
+
+V opačném případě je směr DPH Splatná DPH.
 
 V následujícím diagramu je pravidlo znázorněno graficky.
 

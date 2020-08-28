@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411105"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661235"
 ---
 # <a name="gift-card-module"></a>Modul dárkového poukazu
 
@@ -63,8 +63,18 @@ Pokyny k přidání modulu dárkového poukazu na stránku pokladny a nastavení
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Modul košíku](add-cart-module.md)
+
+[Modul ikony košíku](cart-icon-module.md)
 
 [Modul pokladny](add-checkout-module.md)
+
+[Modul platby](payment-module.md)
+
+[Modul dodací adresy](ship-address-module.md)
+
+[Modul možností doručení](delivery-options-module.md)
+
+[Modul podrobností objednávky](order-confirmation-module.md)
 
 [Podpora pro externí dárkové poukazy](./dev-itpro/gift-card.md)

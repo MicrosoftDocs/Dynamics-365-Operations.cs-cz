@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a159f5fd811ee80c0ac45ca1b582f2f46fcb2c61
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 250b214372a12f99d2ababc97c5edf4456cadcad
+ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008316"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3688265"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Použití workflow ke správě informací o zaměstnanci
 
@@ -67,6 +67,9 @@ Chcete-li konfigurovat základní workflow, který je spuštěn, když zaměstna
 11. Vyberte **Matice**.
 12. Přidejte na seznam položku **Identifikační číslo pracovníka**.
 
+## <a name="additional-resources"></a>Další prostředky
+
+[Zobrazení a správa změn adres](hr-personnel-view-address-changes.md) 
 
 
 

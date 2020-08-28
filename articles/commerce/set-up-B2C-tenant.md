@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497161"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677897"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -77,7 +77,7 @@ Po vytvoření klienta B2C vytvoříte aplikaci B2C s klientem pro interakci s�
 
 Chcete-li vytvořit aplikaci B2C, postupujte následovně.
 
-1. Na portálu Azure vyberte možnost **Aplikace** a pak vyberte možnost **Přidat**.
+1. Na portálu Azure vyberte možnost **Aplikace (starší verze)** a pak vyberte možnost **Přidat**.
 1. V poli **Název** zadejte název požadované aplikace AAD B2C.
 1. V části **Webová aplikace/webové rozhraní API** vyberte pro **Zahrnout webovou aplikaci/webové rozhraní API** možnost **Ano**.
 1. Pro **Povolit implicitní tok** vyberte možnost **Ano** (výchozí hodnota).

@@ -3,7 +3,7 @@ title: Modul košíku
 description: Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f21268ed4cffed1d5c789f722796cdf05e965819
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621029"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686759"
 ---
 # <a name="cart-module"></a>Modul košíku
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -42,9 +43,17 @@ Následující obrázek ukazuje příklad stránky nákupního košíku na webu 
 
 ![Příklad modulu nákupního košíku](./media/cart2.PNG)
 
+Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam. V tomto příkladu je za řádkovou položku účtován manipulační poplatek.
+
+![Příklad modulu nákupního košíku](./media/ecommerce-handling-fee.png)
+
 ## <a name="cart-module-properties-and-slots"></a>Vlastnosti a pozice modulu košíku
 
-Modul košíku má vlastnost **Záhlaví**, kterou lze nastavit na hodnoty, jako je **Nákupní taška** a **Položky v košíku**. 
+| Vlastnost | Hodnoty | popis |
+|----------------|--------|-------------|
+| Záhlaví | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Nadpis košíku, jako "Nákupní taška" nebo "Položky v nákupním košíku". |
+| Zobrazit chybu vyprodanosti | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, na stránce košíku se zobrazí chyby související s akciemi. Doporučujeme nastavit tuto vlastnost na **Pravda** pokud jsou na webu prováděny kontroly zásob. |
+| Zobrazit přepravní poplatky u řádkových položek | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, řádkové položky košíku zobrazí přepravné, jsou-li tyto informace k dispozici. Tato funkce není v motivu Fabrikam podporována, protože uživatelé vyberou dopravu pouze v pokladně. Tuto funkci však lze zapnout v jiných workflowech, pokud je to možné. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduly, které lze použít v modulu košíku
 
@@ -67,7 +76,7 @@ Modul košíku načítá informace o produktu pomocí rozhraní API Commerce Sca
 
 Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
 1. V dialogovém okně **Nový fragment stránky** vyberte modul **Nákupní košík**.
 1. V části **Název fragmentu stránky** zadejte název pro **Fragment nákupního košíku** a poté vyberte **OK**.
 1. Vyberte pozici **Nákupní košík**.
@@ -77,7 +86,7 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte název šablony.
-1. Ve stromové struktuře vyberte pozici **Obsah**, vyberte tři tečky (**...**) a vyberte možnost **Přidat modul**.
+1. Ve stromové struktuře vyberte pozici **Obsah**, vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
 1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment nákupního košíku** a pak vyberte tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
@@ -87,22 +96,18 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
-
-[Modul kontejneru](add-container-module.md)
-
-[Modul volby obchodu](store-selector.md)
-
-[Modul buy boxu](add-buy-box.md)
-
-[Ikona modulu košíku](cart-icon-module.md)
+[Modul ikony košíku](cart-icon-module.md)
 
 [Modul pokladny](add-checkout-module.md)
 
-[Modul potvrzení objednávky](order-confirmation-module.md)
+[Modul platby](payment-module.md)
 
-[Modul záhlaví](author-header-module.md)
+[Modul dodací adresy](ship-address-module.md)
 
-[Modul zápatí](author-footer-module.md)
+[Modul možností doručení](delivery-options-module.md)
+
+[Modul podrobností objednávky](order-confirmation-module.md)
+
+[Modul dárkového poukazu](add-giftcard.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)

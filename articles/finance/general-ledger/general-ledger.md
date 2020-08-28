@@ -3,7 +3,7 @@ title: Přehled hlavní knihy a finančního výkaznictví
 description: Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771792"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696657"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>Přehled hlavní knihy a finančního výkaznictví
+# <a name="general-ledger-home-page"></a>Domovská stránka hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,7 +55,10 @@ Kromě toho pravidla musí být aktualizována pravidelně, když finanční ú�
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+
+#### <a name="financial-reporting"></a>Finanční výkaznictví
+Přejděte na [Přehled Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) téma pro informace o finančních zprávách.
 
 #### <a name="blogs"></a>Blogy
 

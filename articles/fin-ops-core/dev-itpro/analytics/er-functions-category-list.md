@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 6e51d9a1d68c48391a223fe48f396c63c206580e
+ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201036"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3687951"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Seznam funkcí ER v kategorii seznamu
 
@@ -46,6 +46,7 @@ Funkce seznamu elektronického výkaznictví (ER) lze používat k extrahování
 | [Index](er-functions-list-index.md)                       | Tato funkce vrací hodnotu typu *kontejner (záznam)*, která je vybrána pomocí zadaného číselného indexu v zadaném seznamu. Pokud je index mimo rozsah záznamů v zadaném seznamu, vyvolá tato funkce výjimku. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Tato funkce vrací *logickou hodnotu* **TRUE**, pokud zadaný seznam neobsahuje žádné záznamy. V opačném případě výraz vrátí *logickou hodnotu* **FALSE**. |
 | [Seznam](er-functions-list-list.md)                         | Tato funkce vrací hodnotu typu *seznam záznamů*, která se skládá z nového seznamu záznamů vytvořeného ze zadaných argumentů.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | Tato funkce vypočítá zadaný výraz jako selektor pro každý záznam zadaného seznamu. Vrací novou hodnotu *Seznam záznamů*, která obsahuje jeden záznam pro každou jedinečnou hodnotu selektoru.|
 | [ListJoin](er-functions-list-listjoin.md)                 | Tato funkce vrací hodnotu typu *seznam záznamů*, která představuje nový spojený seznam záznamů vytvořený ze zadaných argumentů.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Tato funkce vrací hodnotu typu *seznam záznamů*, která je vytvořena na základě struktury zadaného argumentu typu *výčet* nebo *kontejner (záznam)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Tato funkce vrací hodnotu typu *seznam záznamů*, která obsahuje pouze první záznam zadaného seznamu.|

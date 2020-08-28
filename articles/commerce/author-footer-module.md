@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411189"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686711"
 ---
 # <a name="footer-module"></a>Modul zápatí  
 
@@ -50,7 +50,7 @@ Podobně jako většina kontejnerů, modul zápatí podporuje vlastnosti pro nad
 
 ## <a name="create-a-footer-module"></a>Vytvoření modulu zápatí
 
-1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
 1. V dialogovém okně **Nový fragment stránky** vyberte modul **Kontejner**, zadejte název fragmentu stránky a poté klepněte na tlačítko **OK**.
 1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Kategorie zápatí** a poté klikněte na tlačítko **OK**.

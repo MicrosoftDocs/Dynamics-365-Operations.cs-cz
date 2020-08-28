@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154079"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686807"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Přidání kódu skriptu na webové stránky pro podporu telemetrie
 
@@ -45,7 +45,7 @@ Fragment stránky umožňuje opakované použití vloženého nebo vnějšího k
 
 Chcete-li vytvořit opakovaně použitelný fragment stránky pro vložený kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.
 
-1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. Přejděte na **Fragmenty** a pak vyberte **Nový**.
 1. V dialogovém okně **Nový fragment stránky** vyberte **vložený skript**.
 1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
 1. V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí vložený skript**.
@@ -57,7 +57,7 @@ Chcete-li vytvořit opakovaně použitelný fragment stránky pro vložený kód
 
 Chcete-li vytvořit opakovaně použitelný fragment stránky pro externí kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.
 
-1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. Přejděte na **Fragmenty** a pak vyberte **Nový**.
 1. V dialogovém okně **Nový fragment stránky** vyberte **Externí skript**.
 1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
 1. V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí externí skript**.

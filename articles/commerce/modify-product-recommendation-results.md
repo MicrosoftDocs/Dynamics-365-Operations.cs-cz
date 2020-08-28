@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404364"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664947"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
@@ -109,6 +109,8 @@ Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupuj
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
+
+[Povolit doporučení typu „podobný vzhled“](shop-similar-looks.md)
 
 [Přidání doporučení produktu v POS](product.md)
 

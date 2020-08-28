@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025676"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686639"
 ---
 # <a name="add-a-logo"></a>Přidání loga
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,7 +50,7 @@ Před přidáním loga na všechny stránky webu je nutné tyto úkoly dokončit
 
 Chcete-li přidat logo do fragmentu záhlaví webu, postupujte takto:
 
-1. V navigačním podokně nalevo vyberte položku **Fragmenty stránky**.
+1. V navigačním podokně nalevo vyberte položku **Fragmenty**.
 1. Vyberte záhlaví, které jste vytvořili dříve, a poté vyberte možnost **Upravit**.
 1. Rozbalte modul záhlaví.
 1. V podokně vlastností modulu záhlaví zadejte obrázek a odkaz na logo. 
