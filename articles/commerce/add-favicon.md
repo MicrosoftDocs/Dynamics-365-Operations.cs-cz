@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295073"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686783"
 ---
 # <a name="add-a-favicon"></a>Přidání ikony oblíbené položky
 
@@ -62,7 +62,7 @@ Chcete-li vytvořit kód HTML pro ikonu oblíbené položky, použijte následuj
 
 Chcete-li vytvořit fragment stránky, který obsahuje metaznačku pro ikonu oblíbené položky, postupujte následovně.
 
-1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. Přejděte na **Fragmenty** a pak vyberte **Nový**.
 1. V dialogovém okně **Nový fragment stránky** vyberte jako modul, na němž je založen fragment stránky **Metaznačky**.
 1. Zadejte název fragmentu stránky a poté vyberte **OK**.
 1. Ve stromu hierarchie fragmentů vyberte podřízenou položku **Výchozí metaznačky**.

@@ -3,7 +3,7 @@ title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431123"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666353"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -45,10 +45,10 @@ Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správ
 
 | Výdej | Stav |
 | --- | --- |
+| Horizontální posouvání nefunguje na Android telefonech | Horizontální posouvání není problém na zařízeních iOS nebo počítačích. Pracujeme na opravě pro Android. |
 | Chyba: Při hledání prostředí, ke kterému se lze připojit, došlo k problému. | Tato chyba se může zobrazit, i když jste ověřili, že uživatel má přístup k jednomu nebo více prostředím lidských zdrojů. Navíc možná neuvidíte všechna očekávaná prostředí. Dokud tento problém nevyřešíme, odstraňte uživatele a znovu jej importujte, abyste problém vyřešili. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
 | Při snižování počtu hodin obsažených ve stávající žádosti **Zůstatek účtu** klesá místo aby stoupal. | Budeme řešit tento známý problém v budoucnosti. Zobrazení je nesprávné, ale správná množství jsou upravena po odeslání. |
-| Pro stejná data se zobrazují dvě karty **Nadcházející volno**. | Karty představují jednotlivá odeslání. Budeme i nadále brát v potaz zpětnou vazbu a provádět úpravy. |
 | Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
 | Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
 

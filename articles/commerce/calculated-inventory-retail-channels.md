@@ -3,7 +3,7 @@ title: Vypočítat dostupnost zásob pro maloobchodní kanály
 description: V tomto tématu jsou popsány možnosti, které jsou k dispozici pro zobrazení množství na skladě pro obchod a online kanály.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379229"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694915"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vypočítat dostupnost zásob pro maloobchodní kanály
 
@@ -66,7 +66,7 @@ Po dokončení úlohy **Dostupnost produktu** musí být zachycená data přesun
 1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
 1. Spusťte úlohu **1130** (**Dostupnost produktu**), která synchronizuje data úlohy **Dostupnost produktu** vytvořená z Commerce Headquarters do databází vašeho kanálu.
 
-Je-li vyžadována dostupnost zásob z API **GetEstimatedAvailabilty** nebo **ProductWarehouseInventoryAvailabilities**, je proveden výpočet, který se pokusí získat nejlepší možný odhad zásob produktu. Výpočet odkazuje na všechny objednávky odběratele e-Commerce, které jsou v databázi kanálů, ale nebyly zahrnuty do dat snímku, které poskytla úloha 1130. Tato logika se provádí sledováním poslední zpracované skladové transakce z služby Commerce Headquarters a jejím porovnáním s transakcemi v databázi kanálů. Poskytuje základ pro výpočetní logiku na straně kanálu, takže další pohyby zásob, které se vyskytly pro prodejní transakce objednávky odběratele v databázi kanálů elektronického obchodu, lze rozdělit na odhadovanou hodnotu zásob, kterou rozhraní API jišťují.
+Je-li vyžadována dostupnost zásob z API **GetEstimatedAvailability** nebo **GetEstimatedProductWarehouseAvailability**, je proveden výpočet, který se pokusí získat nejlepší možný odhad zásob produktu. Výpočet odkazuje na všechny objednávky odběratele e-Commerce, které jsou v databázi kanálů, ale nebyly zahrnuty do dat snímku, které poskytla úloha 1130. Tato logika se provádí sledováním poslední zpracované skladové transakce z služby Commerce Headquarters a jejím porovnáním s transakcemi v databázi kanálů. Poskytuje základ pro výpočetní logiku na straně kanálu, takže další pohyby zásob, které se vyskytly pro prodejní transakce objednávky odběratele v databázi kanálů elektronického obchodu, lze rozdělit na odhadovanou hodnotu zásob, kterou rozhraní API jišťují.
 
 Logika výpočtu na straně kanálu vrací odhadovanou fyzicky dostupnou hodnotu a celkovou dostupnou hodnotu pro požadovaný produkt a sklad. Hodnoty lze v případě potřeby zobrazit na webu e-Commerce nebo je lze použít k aktivaci jiné obchodní logiky na vašem webu e-Commerce. Můžete například zobrazit zprávu "nedostatek zásob" namísto skutečného množství na skladě, které rozhraní API předalo.
 
@@ -107,6 +107,8 @@ Chcete-li zajistit nejlepší možný odhad zásob, je důležité, abyste použ
 - **Zaúčtovat transakční příkazy v dávce** – Tato úloha je také vyžadována pro postupné zaúčtování kanálu. Následuje po úloze **Vypočítat transakční výpisy v dávce**. Tato úloha systematicky zaúčtuje vypočtené výkazy, takže prodejní objednávky pro prodeje cash-and-carry jsou vytvořeny v Commerce Headquarters a Commerce Headquarters přesněji odráží zásoby vašeho obchodu.
 - **Dostupnost produktu** – Tato úloha vytvoří snímek zásob z služby Commerce Headquarters.
 - **1130 (dostupnost produktu)** – Tato úloha se nachází na stránce **Plány distribuce** a měla by být spuštěna bezprostředně po úloze **Dostupnosti produktu**. Tato úloha přepravuje data snímku zásob z Commerce Headquarters do databází kanálů.
+
+Doporučuje se, abyste tyto dávkové úlohy nespouštěli příliš často (každých několik minut). Časté běhy přetěžují ředitelství Commerce (HQ) a mohou potenciálně ovlivnit výkon. Obecně je dobrou praxí spouštět dostupnost produktu a 1130 úloh každou hodinu a naplánovat P-úlohu, synchronizovat objednávky a úlohy související s postupným účtováním se stejnou nebo vyšší frekvencí.
 
 > [!NOTE]
 > Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob**. Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.

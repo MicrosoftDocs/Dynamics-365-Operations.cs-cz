@@ -3,7 +3,7 @@ title: Výchozí nastavení objednávky pro dimenze a varianty produktů
 description: Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek.
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637749"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657333"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637749"
 
 Výchozí nastavení objednávky v Dynamics 365 Supply Chain Management definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Výchozí nastavení objednávek se používají při vytváření nákupních objednávek, prodejních objednávek, převodních příkazů, deníků zásob a na základě hlavního plánování pro generování plánovaných objednávek. Výchozích nastavení objednávek může být specifické podle položky, pracovišť, variant produktu nebo dimenze produktu.
 
-Výchozí nastavení objednávky můžete definovat na stránce **Výchozí nastavení objednávky**. Chcete-li otevřít tuto stránku, přejděte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty** &gt; **Vyberte uvolněný produkt** &gt; v sekci **Plán**. Můžete také přejít na **Spravovat zásoby** &gt; **Nastavení objednávky** &gt; **Výchozí nastavení objednávky**.
+Chcete-li definovat výchozí nastavení objednávky pro produkt, postupujte takto.
+
+1. Přejděte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty**.
+1. Vyberte relevantní produkt v mřížce.
+1. Na podokně akcí otevřete soubor pomocí jednoho z těchto kroků stránku **Výchozí nastavení objednávky** pro vybraný produkt:
+
+    - Na **Plán** kartě, ve skupině **Nastavení objednávky**, vyberte **Výchozí nastavení objednávky**.
+    - Na **Spravovat sklad** kartě, ve skupině **Nastavení objednávky**, vyberte **Výchozí nastavení objednávky**.
+
+1. Nakonfigurujte nastavení podle popisu ve zbytku tohoto tématu.
 
 ## <a name="default-order-settings"></a>Výchozí nastavení objednávky
 
@@ -74,7 +83,7 @@ Výchozí nastavení objednávky pro zásoby se dále používá při vytvářen
 
 ## <a name="full-definition-of-a-released-product"></a>Úplná definice uvolněného produktu
 
-Při vytváření transakce je třeba zadat úplnou definici uvolněného produktu na řádku, aby se aplikace Supply Chain Management pokusila zjistit výchozí nastavení objednávky. Úplné definování uvolněného produktu znamená, že se číslo položky a všechny aktivní dimenze produktu, například konfigurace, velikost, styl a barva zadají v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
+Při vytváření transakce je třeba zadat úplnou definici uvolněného produktu na řádku, aby se aplikace Supply Chain Management pokusila zjistit výchozí nastavení objednávky. Úplné definování uvolněného produktu znamená, že se číslo položky a všechny aktivní dimenze produktu, například konfigurace, velikost, styl, verze a barva zadají v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
 
 Ne všechny parametry výchozí nastavení objednávky jsou použity při vytváření řádků objednávky nebo deníku. Ve výchozím nastavení budou zobrazeny pouze množství a doby realizace v případě potřeby. Například při výpočtu řádky deníku se zobrazí ve výchozím nastavení při vytvoření řádku pouze pracoviště a sklad. Z tohoto důvodu neprobíhají žádná výchozí nastavení množství nebo kontroly na násobcích a minimech při vytváření řádku nebo účtování deníku. 
 
@@ -96,7 +105,7 @@ Pro různé uvolněné produkty můžete definovat obecné nastavení objednávk
 
 ### <a name="site-specific-order-settings"></a>Nastavení příkazu specifického pro pracoviště.
 
-Pro vytvoření nastavení objednávky specifické pro pracoviště vyberte **Nový**. V **Zobrazení podrobností** vyplňte pracoviště do pole **Nastavení je použitelné pro** &gt; **Pracoviště**. V **Zobrazení mřížky** vyplňte pracoviště ve sloupci **Pracoviště**. Nové pravidlo získá automaticky novou hodnotu kategorie vyšší než nula. Můžete vytvořit tolik pravidel specifických podle pracovišť, kolik potřebujete a můžete přiřadit všechna specifická pravidla podle pracovišť, abyste vymodelovali, že jsou stejně důležitá. 
+Pro vytvoření nastavení objednávky specifické pro pracoviště vyberte **Nový**. V **Zobrazení podrobností** vyplňte pracoviště do pole **Pracoviště** v sekci **Nastavení je použitelné pro**. V **Zobrazení mřížky** vyplňte pracoviště ve sloupci **Pracoviště**. Nové pravidlo je automaticky přiřazeno nové hodnotě kategorie, která je větší než 0 (nula). Můžete vytvořit tolik pravidel specifických podle pracovišť, kolik potřebujete. Chcete-li označit, že jsou stejně důležité, můžete všem pravidlům pro konkrétní web přiřadit stejnou hodnotu kategorie.
 
 Pokud jste v **Zobrazení podrobností** nemůžete získat přehled pravidel, které jsou vytvořena pro položku. Použijte tlačítko **Zobrazit seznam** pro zobrazení informací o přehledu. Při vytváření řádku objednávky libovolného typu, pokud nemá zadané žádné pracoviště, hledá Supply Chain Management pravidlo bez určeného pracoviště. To pomůže určit výchozí pracoviště na řádku objednávky. Toto pracoviště se pak používá k vyhledávání pravidla specifického pro pracoviště, pokud může být nastaven výchozí sklad. Tento sklad je použit pro daný řádek objednávky.
 
@@ -111,41 +120,41 @@ Představte si následující vzorový produkt:
 | **Název produktu**                                    | Fotoelektrický snímač                    |
 | **Číslo položky**                                     | XW56                                    |
 | **Konfigurace** (používá se k modelaci typu osvětlení) | C1 - viditelné červené světlo, C2 - infračervené světlo |
-| **Styl** (slouží k modelování strojní revize)  | R1, R2, R3                              |
+| **Verze** | V1, V2, V3                              |
 
 V tomto příkladu předpokládejme, že produkt je pořízeny a ne vyrobený. Také předpokládejme, že konfigurace C1 se běžně používá, takže má kratší dobu realizace. 
 
 Vytvořte následující výchozí nastavení objednávky k modelování této situace.
 
-| Rozsah | Pracoviště | Konfigurace | Styl | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
+| Rozsah | Lokalita | Konfigurace | Verze | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Ano                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Při vytváření řádku nákupní objednávky nebo plánované nákupní objednávky pro XW56, konfigurace C1 bez ohledu na revize nebo pracoviště, k němuž se přiřazuje řádek, bude doba realizace 2. Předpokládejme, že budou zastaveny všechny revize kromě R3.
+Při vytváření řádku nákupní objednávky nebo plánované nákupní objednávky pro zboží XW56, konfigurace C1 bez ohledu na verzi nebo pracoviště, k němuž se přiřazuje řádek, bude doba realizace 2. Předpokládejme, že budou zastaveny všechny verze kromě V3.
 
 Můžete vytvořit následující výchozí pravidla nastavení objednávky.
 
-| Rozsah | Pracoviště | Konfigurace | Styl | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
+| Rozsah | Lokalita | Konfigurace | Verze | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Ano                                  |                    | Ano                | Ano                               | Ano             |
-| 20   |      |               | R1    | Ano                                  |                    | Ano                | Ano                               | Ano             |
+| 20   |      |               | V2    | Ano                                  |                    | Ano                | Ano                               | Ano             |
+| 20   |      |               | V1    | Ano                                  |                    | Ano                | Ano                               | Ano             |
 | 10   |      | C1            |       | Ano                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Obě pravidla pro ukončení starých revizí mají stejnou kategorii, což znamená, že jsou stejně důležitá. Obě mají vyšší kategorii než pravidla konfigurace C1, což znamená, že mají přednost před pravidly konfigurace C1. 
+Dvě pravidla pro zastavení starých verzí mají stejné pořadí. Proto jsou stejně důležité. Protože obě mají vyšší kategorii než pravidla konfigurace C1, mají přednost před pravidly konfigurace C1. 
 
-Tento příklad vysvětluje potřebu kategorií. Když vzniká nákupní objednávka pro konfiguraci C1 a revizi R2, bez kategorií, budou obě pravidla pro R2 a C1 nejednoznačná. Pro vyřešení nejednoznačnosti bude Supply Chain Management hledat pravidla v sestupném pořadí kategorií a použije první vhodné pravidlo. V tomto příkladu, když se tvoří řádku nákupní objednávky pro konfiguraci C1 a revizi R2, získá uživatel zprávu s upozorněním, že položka je blokována a že je to způsobeno hodnotou revize. Pokud má pravidlo pro konfiguraci a vyšší kategorii než pro revize, potom bude následovat vytvoření řádku nákupní objednávky pro konfiguraci C1 a revizi R2 a žádná zpráva o 'blokování položky' nebude uživateli odeslána. 
+Tento příklad vysvětluje potřebu kategorií. Když hodnota není použitá při vzniku nákupní objednávky pro konfiguraci C1 a verzi V2, bez kategorií, budou obě pravidla pro V2 a C1 nejednoznačná. Pro vyřešení nejednoznačnosti bude Supply Chain Management hledat pravidla v sestupném pořadí kategorií a použije první vhodné pravidlo. V tomto příkladu, když se tvoří řádku nákupní objednávky pro konfiguraci C1 a verzi V2, získá uživatel zprávu s upozorněním, že položka je blokována a že je to způsobeno hodnotou verze. Pokud má pravidlo pro konfiguraci a vyšší kategorii než pro verzi, potom bude následovat vytvoření řádku nákupní objednávky pro konfiguraci C1 a verzi V2 a žádná zpráva o 'blokování položky' nebude uživateli odeslána. 
 
 Zvažte následující výchozí pravidla nastavení objednávky.
 
-| Rozsah | Pracoviště | Konfigurace | Styl | Výchozí pracoviště | Výchozí sklad | Nákup - Přepsat výchozí dimenze úložiště | Nákupní sklad |
+| Rozsah | Lokalita | Konfigurace | Verze | Výchozí pracoviště | Výchozí sklad | Nákup - Přepsat výchozí dimenze úložiště | Nákupní sklad |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Ano                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systém překročí sady pravidel dvakrát za účelem stanovení pracovišť a skladů. Při vytvoření řádku nákupní objednávky pro konfiguraci C1, styl R2, je určeno pracoviště na základě pravidla s kategorií 10. Poté systém hledá pravidlo pro pracoviště 2 s cílem určit sklad. Je nalezeno pravidlo 20 a vzhledem k tomu, že má vyšší kategorii, sklad na řádku nákupní objednávky bude 22 a ne 21.
+Systém překročí sady pravidel dvakrát za účelem stanovení pracovišť a skladů. Při vytvoření řádku nákupní objednávky pro konfiguraci C1, verzi V2, je určeno pracoviště na základě pravidla s hodnotou 10. Poté systém hledá pravidlo pro pracoviště 2 s cílem určit sklad. Je nalezeno pravidlo 20 a vzhledem k tomu, že má vyšší kategorii, sklad na řádku nákupní objednávky bude 22, ne 21.
 
 Jako hlavní pokyny slouží specifická pravidla a pravidla pro dimenze, které jsou důležitější než jiné dimenze, získávají vyšší kategorie, zatímco obecnější pravidla získávají nižší kategorie. 
 
@@ -159,14 +168,14 @@ Pravidel vytvořených pro uvolněný produkt může být více. Chcete-li získ
 
 Pokud systém pravidel pro výchozí nastavení objednávky je příliš těžkopádný, je možné definovat výchozí nastavení objednávek pro každou variantu produktu. Následující příklad ukazuje, jak to vypadá pro produkt a výše popsané případy.
 
-| Rozsah | Pracoviště | Konfigurace | Styl | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
+| Rozsah | Lokalita | Konfigurace | Verze | Nákup - Přepsat výchozí nastavení | Doba realizace nákupu | Zastavený nákup | Prodej - Přepsat výchozí nastavení | Prodeje – zastaveno |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Ano                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Ano                                  | 5                  | Ano                | Ano                               | Ano             |
-| 10   |      | C2            | R1    | Ano                                  | 5                  | Ano                | Ano                               | Ano             |
-| 10   |      | C1            | R3    | Ano                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Ano                                  | 2                  | Ano                | Ano                               | Ano             |
-| 10   |      | C1            | R1    | Ano                                  | 2                  | Ano                | Ano                               | Ano             |
+| 10   |      | C2            | V3    | Ano                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Ano                                  | 5                  | Ano                | Ano                               | Ano             |
+| 10   |      | C2            | V1    | Ano                                  | 5                  | Ano                | Ano                               | Ano             |
+| 10   |      | C1            | V3    | Ano                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Ano                                  | 2                  | Ano                | Ano                               | Ano             |
+| 10   |      | C1            | V1    | Ano                                  | 2                  | Ano                | Ano                               | Ano             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Na kategorii v tomto případě příliš nezáleží, proto ji můžete zakrýt. Toto řešení může uvádět problém s údržbou. Můžete však zvážit použití tohoto nastavení, pokud berete v úvahu integraci systémů správy životního cyklu produktu (PLM).

@@ -1,9 +1,9 @@
 ---
 title: Přehled finančního výkaznictví
-description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
+description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618031"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696681"
 ---
-# <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
+# <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -134,6 +134,12 @@ Po výběru nabídky **Finanční výkaznictví** se zobrazí seznam výchozích
 ## <a name="creating-and-modifying-financial-reports"></a>Vytváření a úpravy finančních výkazů
 Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu. Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu výběrem **Nové** v podokně akcí. Program Sestava návrháře se stáhne do zařízení. Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu. Po uložení nové sestavy se zobrazí v seznamu finančních výkazů. V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v Dynamics 365 Finance. 
 
+## <a name="reporting-tree-definitions"></a>Definice stromu výkaznictví 
+Jednou ze součástí, která se používá k sestavování finančních výkazů, je definice stromu výkaznictví. Definice stromu výkaznictví pomáhá definovat strukturu a hierarchii organizace. Jedná se o strukturu hierarchie s více dimenzemi na základě vztahů mezi dimenzemi ve finančních datech. Poskytuje informace na úrovni výkazové jednotky a na souhrnné úrovni pro všechny jednotky ve stromu.
+
+Můžete vytvořit neomezený počet stromů výkaznictví k zobrazování dat vaší organizace různými způsoby. Každý strom výkaznictví může obsahovat libovolnou kombinaci oddělení a souhrnných jednotek, ale definice sestavy může najednou odkazovat pouze na jeden strom hlášení. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Problémy při otevírání Návrháře sestav
 Při otevírání Návrháře sestav může dojít k několika běžným problémům. Tyto problémy a kroky k jejich vyřešení jsou následující.
 
@@ -162,3 +168,4 @@ Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Repor
 
 ## <a name="additional-resources"></a>Další prostředky
 - [Zobrazit finanční sestavy](view-financial-reports.md)
+- [Definice organizačního stromu ve finančních sestavách](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

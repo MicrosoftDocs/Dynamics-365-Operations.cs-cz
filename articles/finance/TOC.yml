@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Finanční výkaznictví
           items:
-            - name: Přehled finančního výkaznictví
+            - name: Začínáme s finančním výkaznictvím
               href: general-ledger/financial-reporting-getting-started.md
             - name: Přehled finančního výkaznictví
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Vykazování pro časově rozlišené položky
                       href: localizations/rus-reporting-deferrals.md
+                - name: Daňové účetnictví
+                  items:
+                    - name: Kódy výdajů a příjmů
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Daňové registry majetku
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saúdská Arábie
               items:
                 - name: Saúdská Arábie - přehled
@@ -2754,7 +2760,7 @@
                   href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
                 - name: Zapůjčení položek pracovníkům
                   href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-                - name: Vytváření položek výpůjček
+                - name: Vytvoření položek výpůjček
                   href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
                 - name: Správa položek výpůjček
                   href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
@@ -3114,7 +3120,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
                         - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                        - name: Filtr
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
                         - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
@@ -3124,8 +3130,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                        - name: Seznam
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3134,7 +3142,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                        - name: Stornování
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
                         - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
@@ -3413,7 +3421,9 @@
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh nového řešení elektronického výkaznictví pro tisk vlastní sestavy
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Kurzy
               items:
                 - name: Naučte se používat zdroje dat

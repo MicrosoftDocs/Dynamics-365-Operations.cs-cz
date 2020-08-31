@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 6. srpna 2020
+          href: hr-whats-new-2020-08-06.md
         - name: 23. července 2020
           href: hr-whats-new-2020-07-23.md
         - name: 8. července 2020
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 3. dubna 2020
           href: hr-whats-new-2020-04-03.md
-        - name: 24. března 2020
-          href: hr-whats-new-2020-03-24.md
-        - name: 19. března 2020
-          href: hr-whats-new-2020-03-19.md
-        - name: 10. března 2020
-          href: hr-whats-new-2020-03-10.md
-        - name: 3. března 2020
-          href: hr-whats-new-2020-03-03.md
         - name: Archivy novinek 2020
           items:
+            - name: 24. března 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. března 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. března 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. března 2020
+              href: hr-whats-new-2020-03-03.md
             - name: 25. února 2020
               href: hr-whats-new-2020-02-25.md
             - name: 18. února 2020
@@ -225,8 +227,6 @@
               href: hr-setup-parameters.md
             - name: Konfigurace sdílených parametrů Human Resources
               href: hr-setup-shared-parameters.md
-            - name: Nastavení workflow Human Resources
-              href: hr-setup-workflows.md
             - name: Pochopení polí data a času
               href: hr-setup-date-time-fields.md
         - name: Konfigurace nastavení organizace
@@ -383,20 +383,20 @@
               href: hr-personnel-actions-faq.md
             - name: Použití workflow ke správě informací o zaměstnanci
               href: hr-workflow-manage-employee-information.md
+            - name: Zobrazení a správa změn adres
+              href: hr-personnel-view-address-changes.md
             - name: Úprava vztahů podřízenosti pro určitou pozici
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: "Zadávání informací o\_pracovnících"
               href: hr-personnel-enter-worker-information.md
             - name: Zapůjčení položek pracovníkům
               href: hr-personnel-loan-item-worker.md
-            - name: Vytváření položek výpůjček
+            - name: Vytvoření položek výpůjček
               href: hr-personnel-create-loan-items.md
             - name: Správa položek výpůjček
               href: hr-personnel-loan-items.md
             - name: Vypracování plánu kariérního postupu
               href: hr-personnel-develop-succession-plan.md
-            - name: Zadávání časových rozvrhů projektů
-              href: hr-personnel-enter-project-timesheets.md
             - name: Projekty hromadného zařazení
               href: hr-personnel-mass-hire-projects.md
             - name: Vytvoření projektu hromadného zařazení

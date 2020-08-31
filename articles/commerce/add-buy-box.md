@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645332"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686663"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -61,7 +61,7 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
-- **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Další informace o tomto modulu naleznete v části [Modul galerie médií](mediagallery-module.md).
+- **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Další informace o tomto modulu naleznete v části [Modul galerie médií](media-gallery-module.md).
 - **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v části [Modul volby obchodu](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
@@ -84,7 +84,7 @@ Modul buy boxu načítá informace o produktu pomocí rozhraní API Commerce Sca
 
 Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Přejděte na **Fragmenty stránky** a volbou **Nový** vytvořte nový fragment.
+1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
 1. V dialogovém okně **Nový fragment stránky** vyberte modul **Buybox**.
 1. V části **Název fragmentu stránky** zadejte název pro **Fragment buy boxu** a poté vyberte **OK**.
 1. V pozici **Galeria médií** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.

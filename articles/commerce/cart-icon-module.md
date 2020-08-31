@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411082"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661140"
 ---
 # <a name="cart-icon-module"></a>Ikona modulu košíku
 
@@ -42,22 +42,22 @@ Následující obrázek znázorňuje příklad modulu ikony vozíku, který zobr
 
 - **Zobrazit Mini košík** – je-li nastavena hodnota true, umožňuje tato vlastnost zobrazit souhrn nákupního košíku (mini košík) při přechodu na ikonu košíku. Tato funkce je podporována pouze pro porty zobrazení na ploše.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Přidání modulu ikony košíku na stránku
 
 Chcete-li přidat modul ikony nákupního košíku, přečtěte si [Modul záhlaví](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Další prostředky
-
-[Modul buy boxu](add-buy-box.md)
 
 [Modul košíku](add-cart-module.md)
 
 [Modul pokladny](add-checkout-module.md)
 
-[Modul potvrzení objednávky](order-confirmation-module.md)
+[Modul platby](payment-module.md)
 
-[Modul záhlaví](author-header-module.md)
+[Modul dodací adresy](ship-address-module.md)
 
-[Modul zápatí](author-footer-module.md)
+[Modul možností doručení](delivery-options-module.md)
+
+[Modul podrobností objednávky](order-confirmation-module.md)
+
+[Modul dárkového poukazu](add-giftcard.md)

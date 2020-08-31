@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59b4dd7a29af739d92a20f6fe55eff9f201fcb6d
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454549"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664899"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Vytvoření doporučení s ukázkovými daty
 
@@ -79,9 +79,11 @@ Přípona obsahuje datový objekt s názvem 'RecoMockDataset.csv', který vám u
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
-[Přidat doporučení produktu v POS](product.md)
+[Povolit doporučení typu „podobný vzhled“](shop-similar-looks.md)
 
-[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+[Přidání doporučení produktu v POS](product.md)
+
+[Přidání doporučení na obrazovku transakcí](add-recommendations-control-pos-screen.md)
 
 [Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
 

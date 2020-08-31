@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651659"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678215"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -39,6 +39,16 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 > [!NOTE]
 > Verze 10.0.13 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>Vlastní kód definovaný ve vlastnostech sestavy SSRS 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Obecně lze říci, že vlastní kód nabízí omezené výhody a zároveň vyžaduje značné zdroje a podporu pro výpočet. Vlastní kód je primárně používán autory sestav k volání veřejných metod z vlastní sestavy kódu. Služba hostovaná v cloudu však nepodporuje odkazy na vlastní sestavení pro zprávy SSRS. |
+| **Nahrazeno jinou funkcí?**   | Autoři sestav se mohou rozhodnout pokračovat v odkazování na veřejná rozhraní .NET API pro operace Math, Převod a Formát z libovolného výrazu textového pole. Další informace naleznete v tématu [Přidání kódu do sestavy (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Ovlivněné oblasti produktu**         | Podmnožina návrhů sestav aplikací definovaných v RDL, kterě obsahují vlastní kód. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | U verzí novějších než 10.0.13 kompilátor začne vydávat varování pro případy, kdy je v definici sestavy SSRS detekován vlastní kód. Chcete-li problém vyřešit, otevřete definici návrhu sestavy a odeberte všechny artefakty vlastního kódu. Toto varování bude v budoucí aktualizaci nahrazeno chybou kompilátoru.   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Upgrade tří knihoven komponent jQuery 
 

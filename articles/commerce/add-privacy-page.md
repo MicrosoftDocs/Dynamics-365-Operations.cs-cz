@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274204"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686688"
 ---
 # <a name="add-a-privacy-policy-page"></a>Přidání stránky se zásadami ochrany osobních údajů
 
@@ -88,7 +88,7 @@ Do fragmentu můžete přidat odkaz na stránku zásad ochrany osobních údajů
 
 Chcete-li přidat odkaz na fragment zápatí, postupujte takto.
 
-1. Přejděte na **Fragmenty stránky** a pak volbou **Nový** vytvořte fragment stránky.
+1. Přejděte na **Fragmenty** a pak volbou **Nový** vytvořte fragment stránky.
 1. V dialogovém okně **Nový fragment stránky** vyberte modul **Zápatí**.
 1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
 1. Do úseku **Kategorie zápatí** přidejte modul **Položka zápatí**.
