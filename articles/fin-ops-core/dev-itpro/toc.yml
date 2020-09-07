@@ -130,6 +130,8 @@
                       items:
                         - name: Domovská stránka dvojitého zápisu
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Co je nového a co se změnilo v duálním zápisu
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Přehled dvojitého zápisu
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Nastavení dvojitého zápisu
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Vytvoření zásad zabezpečení
                   href: sysadmin/create-simple-security-policy.md
+            - name: Zůstaňte v souladu s požadavky na licencování uživatelů
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Automatizace procesů
               href: sysadmin/process-automation.md
             - name: Dávkové zpracování
