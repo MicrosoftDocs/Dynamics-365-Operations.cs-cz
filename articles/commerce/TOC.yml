@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Zakoupení Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Průvodce implementací Commerce Data Exchange
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: Aplikace Finance and Operations provozované společností 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikace Finance and Operations ve Francii
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Integrace aplikací PowerApps
+                - name: Vložení Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Výběr topologie v obchodu
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange a komunikace obchodní sítě
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Osvědčené postupy Commerce Data Exchange
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchange a komunikace obchodní sítě
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Řešení potíží Commerce Data Exchange
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Architektura Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Architektura publikování online obchodu
@@ -516,6 +524,8 @@
                       href: duplicate-payment-protection.md
                     - name: Přehled omnikanálových plateb
                       href: omni-channel-payments.md
+                    - name: Platby objednávky omnikanálového obchodu
+                      href: dev-itpro/commerce-payments.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
                 - name: Správa map Bing pro vaši organizaci
@@ -536,7 +546,7 @@
                       href: create-product-hierarchy.md
                     - name: Správa kategorií produktů a produktů
                       href: category-management-product-creation.md
-                    - name: Změna pořadí řazení pro entity podpory prodeje
+                    - name: Změna pořadí řazení pro maloobchodní entity
                       href: custom-order-categories-nav-retail-prod-hierarchy.md
                 - name: Dimenze produktu
                   items:
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Úprava a audit transakcí maloobchodu
               href: edit-audit-retail-transactions.md
-            - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Postupné vytváření objednávek pro maloobchodní transakce
               href: trickle-feed.md
             - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Přístup k informacím a vykazování
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Možnosti individuálního nastavení s PowerBI.com
+            - name: Možnosti individuálního nastavení s Power BI
               items:
-                - name: Funkce dostupné prostřednictvím integrace PowerBI.com
+                - name: Funkce dostupné prostřednictvím integrace Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Připnutí obsahu PowerBI.com
+                - name: Připnutí obsahu Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Volba analytických pracovních prostorů z PowerBI.com
+                - name: Volba analytických pracovních prostorů z Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Obsah Power BI
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Řešení problémů po údržbě úložiště entit
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurace integrace PowerBI.com
+                - name: Konfigurace integrace s Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Použití vlastní databáze
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1202,7 +1210,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Přidání finančních dimenzí k měrným systémům agregace
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Vytváření analytických sestav pomocí PowerBI Desktop
+                - name: Vytváření analytických sestav pomocí Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Konfigurace balíčků a jejich nasazení do online prostředí
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK a základní aktualizace knihovny
+                    - name: Aktualizace SDK a startovací sady obchodu
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Nasazení konektorů platby
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Přírůstkové zachycení pro fakturaci administrativy
+                  href: dev-itpro/incremental-capture.md
                 - name: Vytvoření vlastních lokalizovaných chybových zpráv pro rozšíření platebních terminálů
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Vytvoření instalační služby systému Windows pro konektory platby
