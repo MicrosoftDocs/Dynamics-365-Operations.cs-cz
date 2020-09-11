@@ -3,7 +3,7 @@ title: Funkce el. výkaznictví VALUEIN
 description: Toto téma obsahuje obecné informace o použití funkce VALUEIN elektronického výkaznictví.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041692"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705112"
 ---
-# <a name="VALUEIN">Funkce el. výkaznictví VALUEIN</a>
+# <a name=""></a><a name="VALUEIN">Funkce el. výkaznictví VALUEIN</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Výsledná *logická hodnota*.
 
 ## <a name="usage-notes"></a>Poznámky k použití
 
-Obecně platí, že funkce `VALUEIN` je převedena do sady podmínek **OR**.
+Obecně platí, že funkce `VALUEIN` je převedena do sady podmínek **OR**. Pokud je seznam podmínek **OR** velký a může být překročena maximální celková délka příkazu SQL, zvažte použití funkce [`VALUEINLARGE`](er-functions-logical-valueinlarge.md).
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ Když je zdroj dat volán, pokud byl nakonfigurován jako výraz `VALUEIN ("B", 
 
 Maximální počet znaků v textu takové podmínky je 32 768 znaků. Proto byste neměli vytvářet zdroje dat, které mohou překročit tento limit za běhu. Při přesažení limitu se aplikace zastaví a je vyvolána výjimka. Například k této situaci může dojít, pokud je datový zdroj nakonfigurován jako `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, a seznamy **List1** a **List2** obsahují velké množství záznamů.
 
-V některých případech je funkce `VALUEIN` přeložena do výkazu databázi pomocí operátoru `EXISTS JOIN`. K tomuto chování dochází, když se používá funkce [FILTER](er-functions-list-filter.md) a jsou splněny následující podmínky:
+V některých případech je funkce `VALUEIN` přeložena do výkazu databázi pomocí operátoru `EXISTS JOIN`. K tomuto chování dochází, když se používá funkce [`FILTER`](er-functions-list-filter.md) a jsou splněny následující podmínky:
 
 - Možnost **ASK FOR QUERY** je vypnuta pro datový zdroj funkce `VALUEIN`, která se odkazuje na seznam záznamů. Žádné další podmínky nebudou použity na tento zdroj dat za běhu.
 - Žádné vnořené výrazy nejsou nakonfigurovány pro datový zdroj funkce `VALUEIN`, která se odkazuje na seznam záznamů.
 - Položka seznamu funkce `VALUEIN` odkazuje na pole zadaného zdroje dat, nikoliv na výraz nebo metodu tohoto zdroje dat.
 
-Zvažte použití této možnosti místo funkce [WHERE](er-functions-list-where.md), jak je popsáno výše v tomto příkladu.
+Zvažte použití této možnosti místo funkce [`WHERE`](er-functions-list-where.md), jak je popsáno výše v tomto příkladu.
 
 ## <a name="example-2"></a>Příklad 2
 
@@ -115,6 +115,8 @@ Pokud je volán zdroj dat nakonfigurovaný jako výraz `FILTER (In, VALUEIN (In.
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Logické funkce](er-functions-category-logical.md)
+
+[Funkce VALUEINLARGE](er-functions-logical-valueinlarge.md)

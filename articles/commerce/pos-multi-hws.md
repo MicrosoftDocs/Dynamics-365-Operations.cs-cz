@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658351"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719207"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Vyhrazené platební terminály a výzvy pro tiskárnu a zásuvku s hotovostí
 
@@ -78,8 +78,8 @@ Chcete-li nastavit hardwarový profil přiřazený k registru, postupujte násle
 
     | Zařízení | Typ | Název zařízení | Další údaje |
     |---|---|---|---|
-    | Tiskárna | Záloha | **Epson** nebo **Star** | U názvu zařízení je rozlišována velikost písmen. **ID profilu účtenky** by mělo být stejné jako **ID profilu účtenky**, které je mapováno na síťovou tiskárnu nastavenou v hardwarovém profilu, který je přiřazen hardwarové stanici na úrovni kanálu. |
-    | Zásuvka s hotovostí | Záloha | **Epson** nebo **Star** | U názvu zařízení je rozlišována velikost písmen. Nastavte hodnotu možnosti **Použít sdílenou směnu** na **Ano**. |
+    | Tiskárna | Záloha | *Libovolná* | U názvu zařízení je rozlišována velikost písmen. **ID profilu účtenky** by mělo být stejné jako **ID profilu účtenky**, které je mapováno na síťovou tiskárnu nastavenou v hardwarovém profilu, který je přiřazen hardwarové stanici na úrovni kanálu. |
+    | Zásuvka s hotovostí | Záloha | *Libovolná* | U názvu zařízení je rozlišována velikost písmen. Nastavte hodnotu možnosti **Použít sdílenou směnu** na **Ano**. |
     | Služba EFT | Adyen | Nelze použít | Informace o nastavení předem integrovaného konektoru plateb Adyen pro online obchody naleznete v tématu [Konektor plateb Dynamics 365 pro Ayden](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) Jiné platební konektory však mohou být pro platby podporovány prostřednictvím sady [Commerce software development kit (SDK) pro platby](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | Klávesnice pro kód PIN | Síť | **MicrosoftAdyenDeviceV001** | Žádný. |
 
@@ -103,7 +103,7 @@ Chcete-li nastavit hardwarový profil, který se používá k seskupení síťov
     | Zařízení | Typ | popis | Další údaje |
     |---|---|---|---|
     | Tiskárna | Síť | **Epson** nebo **Star** | U názvu zařízení je rozlišována velikost písmen. **ID profilu účtenky** by mělo být stejné jako **ID profilu účtenky**, které je namapováno na síťovou tiskárnu nastavenou v hardwarovém profilu, který je přiřazen k registru. |
-    | Zásuvka s hotovostí | Záloha | **Epson** nebo **Star** | U názvu zařízení je rozlišována velikost písmen. nastavte hodnotu možnosti **Použít sdílenou směnu** na **Ano**. |
+    | Zásuvka s hotovostí | Síť | **Epson** nebo **Star** | U názvu zařízení je rozlišována velikost písmen. nastavte hodnotu možnosti **Použít sdílenou směnu** na **Ano**. |
 
 5. Zvolte **Uložit**.
 

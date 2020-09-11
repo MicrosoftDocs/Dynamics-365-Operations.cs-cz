@@ -3,7 +3,7 @@ title: Koncept společnosti v Common Data Service
 description: Toto téma popisuje integraci dat společností mezi aplikacemi Finance and Operations a Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172893"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728406"
 ---
 # <a name="company-concept-in-common-data-service"></a>Koncept společnosti v Common Data Service
 
@@ -72,3 +72,32 @@ Integrace Common Data Service přináší paritu společnosti použitím identif
 + U záznamů se po přidání a uložení společnosti hodnota změní na jen pro čtení. Uživatelé by proto měli zajistit, aby vybrali správnou firmu.
 + Pouze záznamy s daty společnosti jsou způsobilé pro duální zápis mezi aplikací a Common Data Service.
 + Pro existující data Common Data Service bude brzy k dispozici zaváděcí praxe vedená správcem.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Automatické vyplnění názvu společnosti v aplikacích pro zapojení zákazníků
+
+Existuje několik způsobů, jak automaticky vyplnit název společnosti v aplikacích pro zapojení zákazníků.
+
++ Pokud jste správcem systému, můžete výchozí společnost nastavit přechodem na **Pokročilé nastavení > Systém > Zabezpečení > Uživatelé**. Otevřete formulář **Uživatel** a v sekci **Informace o organizaci** nastavte hodnotu **Výchozí společnost ve Forms**.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Nastavení výchozí společnosti v sekci Informace o organizaci.":::
+
++ Pokud máte oprávnění pro **zápis** v entitě **Systémový uživatel** pro úroveň **Obchodní jednotka**, můžete výchozí společnost změnit v libovolném formuláři výběrem společnosti z rozevírací nabídky **Společnost**.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Změna názvu společnosti pro nový účet.":::
+
++ Pokud máte oprávnění pro **zápis** v datech více než jedné společnosti, můžete výchozí společnost změnit výběrem záznamu, který patří jiné společnosti.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Výběr záznamu změní výchozí společnost.":::
+
++ Pokud jste konfigurátor nebo správce systému a chcete automaticky vyplnit data společnosti do vlastního formuláře, můžete použít [události formuláře](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Přidejte odkaz na JavaScript do **msdyn_ / DefaultCompany.js** a použijte následující události. Můžete použít jakýkoli předpřipravný formulář, například formulář **Účet**.
+
+    + Událost **OnLoad** pro formulář: Nastavte pole **defaultCompany**.
+    + Událost **OnChange** pro pole **Společnost**: Nastavte pole **updateDefaultCompany**.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Použití filtrování na základě kontextu společnosti
+
+Chcete-li použít filtrování na základě kontextu společnosti ve vlastních formulářích nebo ve vlastních vyhledávacích polích přidaných do standardních formulářů, otevřete formulář a použijte sekci **Filtrování souvisejících záznamů** pro použití filtru společnosti. Tohle musíte pro každé vyhledávací pole, které vyžaduje filtrování na základě nejnižší společnosti v daném záznamu. Nastavení je zobrazeno pro **Účet** na následujícím obrázku.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Použití kontextu společnosti":::
+

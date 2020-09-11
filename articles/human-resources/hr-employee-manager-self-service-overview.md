@@ -3,7 +3,7 @@ title: Přehled samoobsluhy pro zaměstnance a manažery
 description: Tento článek obsahuje přehled o pracovním prostoru samoobsluhy pro zaměstnance a manažery.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429789"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712225"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Přehled samoobsluhy pro zaměstnance a manažery
 
@@ -32,6 +32,25 @@ Tento článek obsahuje přehled o pracovním prostoru samoobsluhy pro zaměstna
 ## <a name="edit-personal-details"></a>Upravit osobní detaily
 
 Chcete-li přidat nebo změnit osobní údaje, viz [Úpravy osobních údajů](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Uživatel není přiřazen k záznamu pracovníka
+
+Pokud jste nepropojili uživatele se záznamem **Pracovník** na stránce **Uživatelé**, zobrazí se následující zpráva:
+
+**Vaše ID uživatele není přidruženo k vašemu záznamu zaměstnance v systému. Před přidružením nebudete moci zobrazit nebo upravit své údaje. Požádejte o asistenci svého manažera nebo tým podpory.**
+
+Chcete-li přidružit uživatele k záznamu **Pracovník**, přejděte na stránku **Uživatelé** a vyberte uživatele. Vyberte možnost **Upravit**, přidejte příslušného pracovníka do pole **Osoba** ve formuláři a vyberte **Uložit**. Nyní byste měli mít přístup k samoobsluze zaměstnanců.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Bezpečnostní požadavky pro samoobslužnou službu zaměstnanců a manažerů
+
+Samoobslužná služba zaměstnanců a manažerů vyžaduje dvě role zabezpečení:
+
+- Zaměstnanci vyžadují roli Zaměstnanec.
+- Manažeři vyžadují roli Zaměstnanec i Manažer.
+
+>[!NOTE]
+>Můžete také použít vlastní role pro přístup k samoobslužné službě zaměstnanců a manažerů, pokud jim byl udělen přístup k pracovním prostorům zaměstnanců a manažerů.<br>
+>Přístup manažera k informacím o zaměstnancích je založen na hierarchii řádků aktuální pozice v aplikaci Human Resources.
 
 ## <a name="employee-self-service"></a>Samoobsluha pro zaměstnance
 

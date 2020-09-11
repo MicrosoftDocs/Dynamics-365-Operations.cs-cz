@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources.
+description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 28. květnu 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/28/2020
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7664afbd0b1fd4e2c9686053fa102d85809c0411
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 00a5881ea88749c8553e4c810fb57070f217b01c
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555308"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712005"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3287. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Lifecycle Services (LCS) pro referenci.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3287. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Lifecycle Services (LCS) pro referenci.
 
 ## <a name="leaverequest-entity-doesnt-work-when-you-enable-multiple-types-per-leave-plan-447498"></a>Entita LeaveRequest nefunguje, když povolíte více typů plánů volna (447498)
 

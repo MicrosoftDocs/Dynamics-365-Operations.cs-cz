@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources.
+description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 6. srpnu 2020.
 author: darinkramer
 manager: AnnBe
 ms.date: 8/06/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c0903be5ead66e09a3e571b523ad4bc20bf92eeb
-ms.sourcegitcommit: 6cb0fb3f6fcffa872b855cffa11105f8e3ce074b
+ms.openlocfilehash: 94d8291190b6c08c6e0e5241513989354df7939d
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698571"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711835"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
 
@@ -100,7 +100,7 @@ Některé organizace poskytují výhodu, která zaměstnancům umožňuje nakupo
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Časové rozlišení pracovního volna pro jednu společnost nebo jeden plán
 
-Zákazníci mohou zpracovat časové rozlišení pro jednu společnost nebo jeden plán dovolené a nepřítomnosti. Tato schopnost objasňuje proces časového rozlišení pro zákazníky s různými roky dovolené nebo zásadami časového rozlišení dovolené. Další informace získáte v části [Časové rozlišení dovolené podle společnosti nebo plánu dovolených](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Zákazníci mohou zpracovat časové rozlišení pro jednu společnost nebo jeden plán dovolené a nepřítomnosti. Tato schopnost objasňuje proces časového rozlišení pro zákazníky s různými roky dovolené nebo zásadami časového rozlišení dovolené. Další informace získáte v části [Časové rozlišení dovolené podle společnosti nebo plánu dovolených](hr-leave-and-absence-accrue.md).
 
 ## <a name="add-attachments-to-time-off-requests"></a>Přidání příloh k požadavkům na volno
 

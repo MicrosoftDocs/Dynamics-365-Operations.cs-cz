@@ -3,7 +3,7 @@ title: Kalendáře a hlavní plánování
 description: Toto téma obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213485"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710326"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
@@ -105,28 +105,28 @@ Datum objednávky na plánované nákupní objednávce určuje datum, kdy byla o
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Datum dodání plánované nákupní objednávky
 Datum příjmu nákupu označuje datum, kdy obdržíte zboží. Bude to otevřené datum v kalendáři. Kalendář, který bude vzat do úvahy k označení, které dny lze nákupní objednávku přijmout, jsou následující, v pořadí od nejvyšší k nejnižší priority: 
-    1. Kalendář dodavatele
-    2. Kalendář pro skupinu disponibility
-    3. Skladový kalendář pro přijímající sklad
+1. Kalendář dodavatele
+1. Kalendář pro skupinu disponibility
+1. Skladový kalendář pro přijímající sklad
 
 Kalendáři skupiny disponibility lze nastavit na různé stránky a bude mít prioritu v následujícím pořadí:
-    1. Skupina disponibility položky na stránce **Detaily uvolněného produktu**
-    2. Skupiny disponibility položky na stránce **Disponibilita položky**
-    3. Výchozí skupina disponibility položky v **parametrech hlavního plánování**
+1. Skupiny disponibility položky na stránce **Disponibilita položky**
+1. Skupina disponibility položky na stránce **Detaily uvolněného produktu**
+1. Výchozí skupina disponibility položky v **parametrech hlavního plánování**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Datum dodání plánované objednávky převodu
 Při vytváření objednávky převodu mezi dvěma sklady jsou datum expedice a datum příjmu zahrnuty v záhlaví objednávky přenosu spolu s hodnotou Ze skladu a Do skladu. Rozdíl mezi těmito dvěma daty je očekávaná doba přepravy (ve dnech) mezi sklady.
 
 Plánovaný převodní příkaz označuje datum, kdy je zboží expedováno z odchozího skladu. Kalendáře používané k určení dostupného data expedice jsou seřazeny podle priority: 
-    1. Kalendář odchozího skladu
-    2. Kalendář skupiny disponibility (viz záložní objednávka pro tento kalendář výše) Pokud je nastavený skladový kalendář, bude datum expedice otevřené datum v kalendáři. Pokud není nastaven skladový kalendář, převezme kalendář skupiny disponibility. 
+1. Kalendář odchozího skladu
+1. Kalendář skupiny disponibility (viz záložní objednávka pro tento kalendář výše) Pokud je nastavený skladový kalendář, bude datum expedice otevřené datum v kalendáři. Pokud není nastaven skladový kalendář, převezme kalendář skupiny disponibility. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Datum přijetí plánované objednávky převodu
 Datum přijetí objednávky převodu označuje datum přijetí zboží v příchozím skladu.
 
 Kalendáře používané k určení dostupného data příjmu jsou seřazeny podle priority: 
-    1. Kalendář pro skupinu disponibility 
-    2. Kalendář přijímajícího skladu Pokud je nastavený kalendář disponibility, bude datum příjmu otevřené datum v kalendáři. Jestliže není nastaven kalendář skupiny disponibility, použije se skladový kalendář. 
+1. Kalendář pro skupinu disponibility 
+1. Kalendář přijímajícího skladu Pokud je nastavený kalendář disponibility, bude datum příjmu otevřené datum v kalendáři. Jestliže není nastaven kalendář skupiny disponibility, použije se skladový kalendář. 
 
 Při hledání data expedice a příjmu plánovaného převodu budou zohledněny také marže vystavené uživatelem pro expedici a příjem. 
 

@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (14. května 2020)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources.
+description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 14. květnu 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/14/2020
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: d68647508c70a20b7ecba3358c7e3ebccd8d71ef
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555164"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712031"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (14. května 2020)
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3244. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3244. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
 
 ## <a name="platform-changes"></a>Změny platformy
 

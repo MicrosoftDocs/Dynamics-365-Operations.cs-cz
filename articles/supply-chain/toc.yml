@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Integrace aplikací PowerApps
+                - name: Vložení Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Přístup k informacím a vykazování
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Možnosti individuálního nastavení s PowerBI.com
+            - name: Možnosti individuálního nastavení s Power BI
               items:
-                - name: Funkce dostupné prostřednictvím integrace PowerBI.com
+                - name: Funkce dostupné prostřednictvím integrace Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Připnutí obsahu PowerBI.com
+                - name: Připnutí obsahu Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Volba analytických pracovních prostorů z PowerBI.com
+                - name: Volba analytických pracovních prostorů z Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Obsah Power BI
               items:
@@ -1827,10 +1827,6 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Vyjmutí produktů z hlavního plánu
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Zboží dvojího užití
-                  href: pim/dual-use.md
-                - name: Země původu
-                  href: pim/country-of-origin.md
                 - name: Vytvoření čárového kódu pro produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Zadání kódu GTIN pro produkt
@@ -1839,6 +1835,20 @@
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: "Přidání obrázku k\_produktu"
                   href: pim/tasks/add-image-product.md
+                - name: Země původu
+                  href: pim/country-of-origin.md
+                - name: Zboží dvojího užití
+                  href: pim/dual-use.md
+                - name: Nebezpečné materiály
+                  items:
+                    - name: Přehled nebezpečných materiálů
+                      href: pim/hazmat-overview.md
+                    - name: Nastavení nebezpečných materiálů
+                      href: pim/hazmat-setup.md
+                    - name: 'Nebezpečné materiály v produktech, objednávkách, dodávkách a nákladech'
+                      href: pim/hazmat-items.md
+                    - name: Dotazy a sestavy o nebezpečných látkách
+                      href: pim/hazmat-reports.md
                 - name: Nejčastější otázky o překladech produktových informací
                   href: pim/translations-product-related-information.md
                 - name: Vyhledávání produktu během zadání objednávky

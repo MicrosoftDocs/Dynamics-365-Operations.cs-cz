@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443888"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719257"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -79,7 +79,7 @@ Používáte-li také řešení Field Service, ujistěte se, že jste znovu povo
 
 Prodejní obědnávky mohou být vytvořeny v aplikaci Sales nebo Supply Chain Management. Pokud vytvoříte prodejní objednávku v Sales, bude synchronizována se Supply Chain Management v reálném čase. Stejným způsobem, pokud vytvoříte prodejní objednávku v Supply Chain Management, bude synchronizována se Sales v reálném čase. Mějte na paměti následující body:
 
-+ Objednávky můžete aktivovat a synchronizovat pouze z Sales, pokud všechny produkty v objednávce pocházení z aplikací Finance and Operations. Z tohoto důvodu může existovat žádný zápis produktů.
++ Produkty nezahrnuté do katalogu v Dynamics 365 Sales se zobrazí jako kategorie produktů v Dynamics 365 Supply Chain Management.
 + Výpočet slevy a zaokrouhlení:
 
     - Model výpočtu slevy v aplikaci Sales se liší od modelu výpočtu slevy v aplikaci Supply Chain Management. V aplikaci Supply Chain Management konečná částka slevy na řádku prodeje může být výsledkem kombinace částky slevy a procent slevy. Pokud je tato celková částka slevy podělená množstvím na řádku, může dojít k zaokrouhlení. Toto zaokrouhlení však není bráno v potaz, pokud je zaokrouhlená částka slevy na jednotku synchronizována do aplikace Sales. Chcete-li zaručit, že celková částka slevy z řádku prodeje v aplikaci Supply Chain Management je správně synchronizována do aplikace Sales, musí být celá částka synchronizována, aniž by byla podělena množstvím řádku. Proto je nutné definovat v aplikaci Sales možnost Metoda výpočtu slevy jako **Položku řádku**.

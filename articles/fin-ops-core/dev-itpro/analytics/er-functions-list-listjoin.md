@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b5b82917e3083b5ffe4546a6a15fd14938383a
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
+ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249028"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "3740656"
 ---
 # <a name=""></a><a name="LISTJOIN">Funkce elektronického výkaznictví LISTJOIN</a>
 
@@ -69,8 +69,18 @@ Zadáte pak zdroj dat **Záznam 2** typu `Container`. Tento zdroj dat obsahuje n
 - **Množství**: Toto pole obsahuje výraz, který vrací hodnotu typu `Real`.
 - **IsValid**: Toto pole obsahuje výraz, který vrací hodnotu typu `Boolean`.
 
-V tomto případě výraz `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` vrátí nový seznam, který obsahuje dva záznamy. Struktura tohoto seznamu se skládá z jednoho pole **Množství** typu `Real`, protože toto pole je jediné pole, které je přítomno v každém argumentu volané funkce.
+![Stránka Návrhář mapování modelu ER](./media/er-functions-list-listjoin-image1.gif)
 
-## <a name="additional-resources"></a>Další zdroje
+V tomto případě výraz `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` vrátí nový seznam, který obsahuje dva záznamy.
+
+![Stránka Návrhář mapování modelu ER](./media/er-functions-list-listjoin-image2.gif)
+
+Struktura tohoto seznamu se skládá z jednoho pole **Množství** typu `Real`, protože toto pole je jediné pole, které je přítomno v každém argumentu volané funkce.
+
+![Stránka Návrhář mapování modelu ER](./media/er-functions-list-listjoin-image3.gif)
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Funkce seznamu](er-functions-category-list.md)
+
+[Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace](er-debug-data-sources.md)

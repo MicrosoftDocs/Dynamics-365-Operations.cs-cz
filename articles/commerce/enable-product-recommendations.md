@@ -3,7 +3,7 @@ title: Povolit doporučení produktu
 description: V tomto tématu je vysvětleno, jak vytvořit doporučení produktu založená na strojovém učení na základě umělé inteligence (AI-ML) pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2dacd4a94f706be5aa65947c0b6a92e281733ca
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665019"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700835"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -65,11 +65,13 @@ Uložit a zavřít stránku.
 
 Chcete-li zapnout doporučení produktu, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail a Commerce &gt; Doporučení produktů &gt; Parametry doporučení**.
-1. V seznamu sdílených parametrů maloobchodního prodeje vyberte **Seznamy doporučení**.
-1. Nastavte možnost **Povolit doporučení** na **Ano**.
+1. V centrále Commerce vyhledejte **Správa funkcí**.
+1. Volbou **Vše** zobrazíte seznam dostupných funkcí. 
+1. Do vyhledávacího pole zadejte **Doporučení**.
+1. Vyberte funkci **Doporučení k produktu**.
+1. V podokně vlastností **Doporučení produktů** vyberte **Ihned povolit**.
 
-![Zapnutí doporučení](./media/enablepersonalization.png)
+![Zapnutí doporučení](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Tento postup spustí proces generování seznamů doporučení produktů. Mže trvat až několik hodin, než jsou seznamy k dispozici a lze je zobrazit na pokladním místě (POS) nebo v řešení Dynamics 365 Commerce.

@@ -1,9 +1,9 @@
 ---
 title: Nastavení pravidel párování pro odsouhlasení banky
 description: Toto téma vysvětluje, jak lze nastavit odpovídající pravidla vyrovnání a sady odpovídajících pravidel vyrovnání pro usnadnění procesu bankovního odsouhlasení. Odpovídající pravidla odsouhlasení představují sadu kritérií, které se používají k filtru řádků bankovního výpisu a řádků dokladu banky během odsouhlasení.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39f0f750cf63efacc3619526cc713d07f96b74df
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e2dcff7abfaf71c9e5e73ec2ffbdc1b377babdb2
+ms.sourcegitcommit: 1daa297b0c09090a9c30c5f84bd7000e5b948a26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176811"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "3720686"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Nastavení pravidel párování pro odsouhlasení banky
 
@@ -38,6 +38,8 @@ Můžete nastavit odpovídající pravidla vyrovnání a sady odpovídajících 
 
 Na stránce **Pravidla párování pro odsouhlasení** můžete vybrat, které akce a kritéria výběru jsou použity při spuštění pravidla pro porovnání. Ve skupině polí **Akce** vyberte akci, která bude provedena při spuštění pravidla porovnání během odsouhlasení.  
 
+Ve výchozím nastavení se pravidla párování shodují s prvním bankovním dokumentem, který splňuje kritéria pravidel párování. Pokud více bankovních dokumentů splňuje kritéria pravidla, lze parametr vyžadující ruční párování zapnout přechodem na **Pokladna a banka > Nastavení > Parametry pokladny a banky > Odsouhlasení banky > Vyžadovat ruční párování, když pokročilá pravidla párování odsouhlasení banky najdou více dokumentů, které odpovídají částce**.
+
 > [!NOTE] 
 > Možnost, kterou vyberete, určuje pole, které se zobrazí.
 
@@ -46,12 +48,4 @@ Na stránce **Pravidla párování pro odsouhlasení** můžete vybrat, které a
 | **Akce**                         |                                                                                                                                                                                                                                                                                                               | **Kritéria výběru, která jsou k dispozici, když je vybrána akce**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **Spárovat s bankovním dokumentem**       | Vytvořte kritéria k určení, jak se bankovní doklady a řádky výkazu banky shodují při spuštění pravidla porovnání ze stránky **List odsouhlasení banky**. Řádky transakce se volí podle dalších kritérií nastavených na pevných záložkách.                                | **Krok 1: definování pravidla párování** – vyberte kritéria k určení, které bankovních výpisy mají být spárovány s bankovními transakcemi aplikace Finance. **Krok 2 (volitelný): vyberte řádky výkazu, na které se mají pravidla párování spustit:** Použijte filtr k určení, na které řádky výkazu se mají pravidla spustit.                                                                                                                                                                                                                                                                                                               |
 | **Vymažte řádky výpisu s položkou storno** | Vytvořte kritéria k určení, jak se řádky výpisu s položkou storno mají odebrat ze stránky **List odsouhlasení banky** při spuštění pravidla porovnání. Tato možnost se používá, když chyba banky způsobí, že dva řádky bankovního výpisu jsou uvedené v importovaném bankovním výpisu a řádky musí být odsouhlaseny. | **Krok 1**:**Najděte řádky výpisu s položkou storno**– Přidejte výběr kritérií pro výběr řádků bankovního výpisu s položkou storno. Například chcete-li vybrat pouze šeky, vyberte možnost **Kód bankovní transakce** v poli Pole, vyberte symbol plus (+) v poli **Operátor** a zapište **Šeky** do pole Hodnota. **Krok 2: nalezení původních řádků výpisu** – Můžete přidat kritéria výběru odpovídajících řádkům dokladu banky do řádků bankovního výpisu. **Krok 3: nalezení bankovních transakcí aplikace Finance** – Můžete přidat kritéria výběru odpovídajících bankovním transakcím aplikace Finance do řádků bankovního výpisu. |
-| **Označit nové transakce**          | Vytvořte kritéria k určení, jak se nové transakce mají označit na stránce **List odsouhlasení banky** při spuštění pravidla porovnání.                                                                                                                                                                 | **Krok 1: nalezení řádků výpisu**– přidejte pole výběru, abyste upřesnili, které řádky bankovního výpisu se mají vybrat na stránce **List odsouhlasení banky**. **Krok 2: nalezení bankovních transakcí aplikace Finance and Operations** – Můžete přidat kritéria výběru pro hledání řádků dokumentů. Není-li nalezen žádný bankovní dokument, bude označen řádek výpisu jako nová transakce.                                                                                                                                                                                                                                             |
-
-
-
-
-
-
-
-
+| **Označit nové transakce**          | Vytvořte kritéria k určení, jak se nové transakce mají označit na stránce **List odsouhlasení banky** při spuštění pravidla porovnání.                                                                                                                                                                 | **Krok 1: nalezení řádků výpisu**– přidejte pole výběru, abyste upřesnili, které řádky bankovního výpisu se mají vybrat na stránce **List odsouhlasení banky**. **Krok 2: vyhledání aplikace Finance and Operations** – Můžete přidat kritéria výběru pro hledání řádků dokumentů. Není-li nalezen žádný bankovní dokument, bude označen řádek výpisu jako nová transakce.                                                                                                                                                                                                                                             |

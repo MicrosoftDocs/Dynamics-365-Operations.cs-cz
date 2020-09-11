@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (13. dubna 2020)
-description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 13. dubnu 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 4/13/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4f61283f3bab26f54d55ffe7cbea21b1201ed234
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 729490e7516d8c7aef7232c9f5c227d3207dcd68
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555140"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712417"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (13. dubna 2020)
 

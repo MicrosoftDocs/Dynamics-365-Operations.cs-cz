@@ -3,7 +3,7 @@ title: Seznam funkcí ER v logické kategorii
 description: Toto téma obsahuje informace o logických funkcích, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916630"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705088"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Seznam funkcí ER v logické kategorii
 
@@ -41,6 +41,8 @@ Logické funkce elektronického výkaznictví (ER) lze použít pro práci s log
 | [Ne](er-functions-logical-not.md)                       | Tato funkce vrací stornovanou logickou hodnotu zadané podmínky jako *logickou* hodnotu. |
 | [Or](er-functions-logical-or.md)                         | Tato funkce vrátí *logickou* hodnotu **NEPRAVDA**, pokud nejsou splněny všechny zadané podmínky. Tato funkce vrátí *logickou* hodnotu **PRAVDA**, pokud je splněna libovolná uvedená podmínka. |
 | [ValueIn](er-functions-logical-valuein.md)               | Tato funkce určuje, zda uvedený vstup odpovídá jakékoli hodnotě zadané položky v zadaném seznamu. Vrátí *logickou hodnotu* **TRUE**, pokud zadaný vstup odpovídá výsledku spuštění zadaného výrazu pro alespoň jeden záznam zadaného seznamu. V opačném případě výraz vrátí *logickou hodnotu* **FALSE**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Tato funkce určuje, zda uvedený vstup typu *Int64* nebo *Integer* odpovídá jakékoli hodnotě zadané položky v zadaném seznamu. Vrátí *logickou hodnotu* **TRUE**, pokud zadaný vstup odpovídá výsledku spuštění zadaného výrazu pro alespoň jeden záznam zadaného seznamu. V opačném případě výraz vrátí *logickou hodnotu* **FALSE**. |
+
 
 ## <a name="additional-resources"></a>Další zdroje
 
