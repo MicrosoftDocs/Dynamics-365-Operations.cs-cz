@@ -3,7 +3,7 @@ title: Příchozí skladová operace v POS
 description: Toto téma popisuje možnosti příchozí skladové operace v pokladním místě (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627531"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710302"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Příchozí skladová operace v POS
 
@@ -143,6 +143,20 @@ Operace ctí konfiguraci **Povolen prázdný příjem** v dimenzi úložiště *
 ### <a name="receive-all"></a>Přijmout vše
 
 Podle potřeby můžete výběrem možnosti **Přijmout vše** na panelu aplikací rychle aktualizovat množství pole **Probíhá příjem** pro všechny řádky dokumentu na maximální hodnotu, která je k dispozici pro příjem pro tyto řádky.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Příjem neplánovaných položek na nákupních objednávkách
+
+V aplikaci Commerce verze 10.0.14 a novější mohou uživatelé obdržet produkt, který původně nebyl součástí nákupní objednávky. Chcete-li tuto funkci povolit, zapněte volbu **Přidat řádky na nákupní objednávku během příjmu pokladního místa**.  
+
+Tato funkce funguje pouze pro příjem nákupní objednávky. Není možné přijímat položky proti převodním příkazům, pokud položky nebyly dříve objednány a odeslány z odchozího skladu.
+
+Uživatelé nemohou do nákupní objednávky přidávat nové produkty během přijímání POS, pokud není zapnut [pracovní postup správy změn](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) nákupní objednávky v centrále Commerce. Chcete-li povolit správu změn, musí být všechny změny nákupní objednávky nejprve schváleny, než bude povoleno přijetí. Protože tento proces umožňuje příjemci přidávat do objednávky nové řádky, přijímání se nezdaří, pokud je povolen pracovní postup správy změn. Pokud je povolena správa změn pro všechny nákupní objednávky nebo pro dodavatele propojeného s aktivní objednávkou objednávky v POS, nemůže uživatel během přijímání v POS přidat do objednávky nové produkty.
+
+Funkci, která umožňuje přidávání řádků, nelze použít jako řešení pro příjem dalších množství produktů, které jsou již na nákupní objednávce. Nadměrný příjem je spravován standardním nastavením [nadměrného příjmu](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) produktové řady na nákupní objednávce.
+
+Pokud je povolena volba **Přidat řádky na nákupní objednávku během příjmu pokladního místa** a uživatel přijímá pomocí **Příchozí operace** v POS, pokud uživatel naskenuje čárový kód produktu nebo číslo produktu, které není rozpoznáno jako položka v aktuální nákupní objednávce, ale je rozpoznáno jako platná položka, obdrží uživatel zprávu o přidání položky do nákupní objednávky. Pokud uživatel přidá položku do nákupní objednávky, zadané množství v poli **Probíhá příjem** se považuje za objednané množství pro řádek nákupní objednávky.
+
+Když je dokončen příjem nákupní objednávky a odeslán do centrály ke zpracování, přidané řádky se vytvoří v hlavním dokumentu nákupní objednávky. Na řádku nákupní objednávky v centrále bude příznak **Přidalo POS** na kartě **Obecné** na řádku nákupní objednávky. Příznak **Přidalo POS** označuje, že řádek nákupní objednávky byl přidán procesem přijímání POS a nejedná se o řádek, který byl na nákupní objednávce před přijetím.
 
 ### <a name="cancel-receiving"></a>Zrušit příjem
 

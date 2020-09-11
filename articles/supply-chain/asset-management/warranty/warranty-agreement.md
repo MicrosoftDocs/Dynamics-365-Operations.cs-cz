@@ -3,7 +3,7 @@ title: Záruční smlouvy
 description: Toto téma popisuje záruční smlouvy v modulu Správa majetku.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215371"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719231"
 ---
 # <a name="warranty-agreements"></a>Záruční smlouvy
 
@@ -42,12 +42,12 @@ Záruční smlouva může zahrnovat několik řádků smlouvy, které pokryjí z
 
 1. Vyberte **Správa majetku** \> **Nastavení** \> **Majetek** \> **Záruka**.
 2. Zvolte **Nový** pro vytvoření produktu.
-3. V poli **Záruka** zadejte ID záruky.
+3. V poli **Záruka** zadejte ID záruky. 
 4. Do pole **Název** zadejte popis.
 
     Na pevné záložce **Podrobnosti** pole **Majetek** zobrazuje množství aktivního majetku, který používá záruční smlouvu.
 
-5. Na pevných záložkách **Hodinová záruka** a **Položková záruka** přidejte řádky, které mají být zahrnuty do záruční smlouvy týkající se hodin nebo položek, pomocí následujících kroků:
+5. Na pevné záložce **Řádky záruky** postupujte podle těchto kroků a přidejte řádky, které by měly být součástí záruční smlouvy:
 
     1. Zvolte **Přidat řádek** a přidejte k záruce novou podmínku. Do pole **Řádek** se automaticky zadá pořadové číslo řádku.
     2. V poli **Období** vyberte typ období záruky.

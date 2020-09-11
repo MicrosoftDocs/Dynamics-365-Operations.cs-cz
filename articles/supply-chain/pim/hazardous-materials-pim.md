@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208450"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699529"
 ---
 # <a name="hazardous-materials"></a>Nebezpečné materiály
 
@@ -35,7 +35,7 @@ Informace o nebezpečných materiálech se nastavují ve správě informací o p
 Při expedici materiálů, které jsou klasifikovány jako nebezpečné, musí být do dodávek zahrnuty další dokumenty. Funkce nebezpečných materiálů umožňuje zákazníkům ukládat informace o klasifikaci a vzájemně je propojit s položkami výdeje. Tyto informace lze poté použít k přípravě dokumentace o dodávce.
 
 > [!IMPORTANT]
-> V zájmu usnadnění správy zásilek nebezpečného zboží vám Microsoft Dynamics 365 Supply Chain Management umožňuje nastavit další referenční informace související s produkty. Můžete také nastavit další dokumenty dodávky. Systém však není automaticky kompatibilní s předpisy vaší země nebo oblasti. Namísto toho je to nástroj, který může pomoci celkovému programu.
+> Funkce nebezpečných materiálů v Microsoft Dynamics 365 Supply Chain Management poskytují kolekci užitečných polí s informacemi o produktu a souvisejících funkcích, které vám mohou pomoci zaznamenat a odkazovat na informace související s vašimi nebezpečnými produkty. Tyto funkce vám také mohou pomoci navrhnout a vytisknout dodací doklady, které obsahují některé totožné informace o všech nebezpečných materiálech, které přepravujete. Systém však automaticky nezajistí vaši plnou kompatibilitu se všemi platnými regulacemi vaší země nebo oblasti. Ačkoli jsou tyto nástroje určeny k tomu, aby vám pomohly dodržovat společné předpisy, nejsou samy o sobě dostatečné ani zaručené. Vaše organizace je odpovědná za to, že si je vědoma všech příslušných předpisů a že podniká všechny kroky nezbytné k jejich dodržování.
 
 Před použitím této funkce je nutné provést následující nastavení:
 

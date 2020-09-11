@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed663a8b602e1d3f43a429ba18f515dc84d6d3e3
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428563"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712441"
 ---
 # <a name="suspend-leave"></a>Přerušit pracovní volno
-
-[!include [banner](includes/preview-feature.md)]
 
 Můžete pozastavit pracovní volno pro zaměstnance, abyste zastavili zpracování časového rozlišení pracovního volna u vybraných typů pracovního volna. 
 
@@ -39,7 +37,7 @@ Můžete pozastavit pracovní volno pro zaměstnance, abyste zastavili zpracová
 
 3. Zvolte **Nové**.
 
-4. V dialogovém okně ***Přerušit časové rozlišení pracovního volna** vyberte **Typ pracovního volna** spolu s **Počátečním datem** a **Koncovým datem** přerušení.
+4. V dialogovém okně **Přerušit časové rozlišení pracovního volna** vyberte **Typ pracovního volna** spolu s **Počátečním datem** a **Koncovým datem** přerušení.
 
 5. Volitelně můžete přidat **Komentář** k přerušení. 
 

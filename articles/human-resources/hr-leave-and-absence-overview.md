@@ -1,6 +1,6 @@
 ---
-title: Přehled
-description: V Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno.
+title: Přehled pracovního volna a absencí
+description: V aplikaci Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní rámec pro vytváření nových plánů pracovního volna. Poskytuje také pracovní postupy pro správu požadavků a intuitivní samoobslužnou stránku pro zaměstnance, kteří požadují pracovní volno.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/01/2020
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428960"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712393"
 ---
-# <a name="overview"></a>Přehled
+# <a name="leave-and-absence-overview"></a>Přehled pracovního volna a absencí
 
-Dynamics 365 Human Resources vám pomáhá poskytovat vašim pracovníkům skvělé benefity ve formě pracovního volna. Pracovní prostor **Pracovní volno a absence** poskytuje flexibilní prostředí pro vytváření nových plánů pracovního volna, workflowů pro správu požadavků a intuitivní samoobslužné stránky pro zaměstnance, kteří žádají o pracovní volno. Analýza pomáhá organizaci měřit a monitorovat zůstatky pracovního volna a využití plánů pracovního volna.
+Dynamics 365 Human Resources vám pomáhá poskytovat vašim pracovníkům skvělé benefity ve formě pracovního volna. Pracovní prostor **Pracovní volno a absence** poskytuje flexibilní rámec pro vytváření nových plánů pracovního volna. Poskytuje také pracovní postupy pro správu požadavků a intuitivní samoobslužnou stránku pro zaměstnance, kteří požadují pracovní volno. Analýza pomáhá organizaci měřit a monitorovat zůstatky pracovního volna a využití plánů pracovního volna.
 
 ## <a name="set-up-leave-and-absence"></a>Nastavení pracovního volna a absence
 
@@ -51,42 +51,6 @@ Před vytvořením plánů pracovního volna pro pracovníky je nutné vytvořit
 
 Zaměstnanci mohou odesílat žádosti o volno a spravovat je v pracovním prostoru **Samoobsluha zaměstnanců**.
 
-- [Požádat o volno](hr-employee-self-service-request-time-off.md)
-- [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
-
-## <a name="leave-and-absence-known-issues"></a>Známé problémy s pracovním volnem a absencí
-
-### <a name="rounding-precision"></a>Přesnost zaokrouhlování
-
-Nelze nastavit **Přesnost zaokrouhlení** při nastavení **Typu zaokrouhlení**. **Přesnost zaokrouhlení** lze nastavit pouze pomocí entity **Typ pracovního volna a absence**. 
-
-1. V **Typy pracovního volna a absence** vyberte **Otevřít v aplikaci Exce** pro otevření entity **Typ pracovního volna a absence**.
-
-2. Po otevření a povolení souboru vyberte **Návrh**.
-
-3. V tabulce **Typ pracovního volna a absence** vyberte možnost tužky pro úpravy.
-
-4. Vyberte **RoundingPrecision** a **RoundingType** a poté vyberte položku **Přidat** pro přidání do seznamu polí.
-
-5. Vyberte **Aktualizovat** a potom **Hotovo**.
-
-6. Zadejte nebo vyberte **Typ zaokrouhlení** pro každý typ pracovního volna, pokud ještě nebyl nastaven. 
-
-7. Zadejte **Přesnost zaokrouhlení** pro příslušné typy.
-
-8. Výběrem **Publikovat** odešlete změny do Human Resources.
-
-## <a name="leave-and-absence-preview-features"></a>Funkce náhledu pracovního volna a absence
-
-V prostředí **izolovaného prostoru** můžete vyzkoušet nové funkce náhledu pracovního volna a absence. Informace o zapnutí funkcí náhledu naleznete v tématu [Správa funkcí](hr-admin-manage-features.md). 
-
-[!include [banner](includes/preview-feature.md)]
-
-Funkce náhledu zahrnují:
-
-- **Časové rozlišení pracovního volna dle společnosti nebo plánu** - Proces časového rozlišení můžete spustit pro všechny společnosti nebo pro jednu společnost. Můžete také spustit proces časového rozlišení pro konkrétní plán volna a nepřítomnosti pro konkrétní společnost. 
-
-- **Koupit volno** - Můžete zaměstnancům povolit a vytvořit zásady nákupu pracovního volna za účelem zadávání žádostí o nákup. Zaměstnanci mohou podávat žádosti o koupi a zůstatky automaticky aktualizovat, aby odrážely požadavek.  
-
-- **Přidejte přílohy ke schváleným žádostem o pracovní volno** - K žádosti o dovolenou, která již byla schválena, můžete přidat přílohu. 
+[Žádost o volno](hr-employee-self-service-request-time-off.md)
+[Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
 

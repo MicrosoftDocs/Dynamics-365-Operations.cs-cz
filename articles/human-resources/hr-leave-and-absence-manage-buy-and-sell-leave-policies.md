@@ -3,7 +3,7 @@ title: Správa zásad nákupu a prodeje pracovního volna
 description: Zaměstnancům můžete povolit, aby kupovali a prodávali pracovní volno v Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429006"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712103"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Správa zásad nákupu a prodeje pracovního volna
 
-[!include [banner](includes/preview-feature.md)]
-
-Zaměstnancům můžete povolit koupi volna vytvořením zásad nákupu volna.  
+Zaměstnancům můžete povolit koupi a prodej pracovního volna vytvořením zásad nákupu a prodeje pracovního volna. Tyto zásady můžete nakonfigurovat tak, aby používaly pracovní postup pro schvalování, nastavení maximálních částek a sazeb a nastavení sazeb pro nákup a prodej. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Povolit zaměstnancům, aby kupovali a prodávali pracovní volno
 
-1. Na stránce **Parametry volna a nepřítomnosti** vyberte **Ano** pro **Umožněte zaměstnancům koupit pracovní volno**. 
+1. Na stránce **Parametry volna a absence** vyberte **Ano** pro **Umožnit zaměstnancům koupi pracovního volna** a **Umožnit zaměstnancům prodej pracovního volna**.
 
-## <a name="create-a-buy-leave-policy"></a>Vytvoření zásad nákupu volna
+## <a name="create-a-buy-and-sell-leave-policy"></a>Vytvoření zásady nákupu a prodeje pracovního volna
 
 1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**. 
 
@@ -51,19 +49,23 @@ Zaměstnancům můžete povolit koupi volna vytvořením zásad nákupu volna.
 
 6. Vyberte **počáteční datum** a **koncové datum** pro zásady. Žádosti o koupi nebo prodej vona budou k dispozici pouze v tomto časovém rámci. 
 
-7. V **Zásadách nákupu** vyberte **Ekvivalent plného úvazku** (FTE) k rozdělení maximální částky na základě FTE definovaného na pozici zaměstnance. Pokud je typ zásad **Množství**, vložte **Maximální pevné množství**. 
+7. Vyberte **ID pracovního postupu** pro zásadu. Veškeré požadavky na nákup a prodej použijí tento pracovní postup ke kontrole a schválení. 
 
-8. Vyberte **Přidat**, chcete-li přidat typy pracovního volna pro zaměstnance, aby si mohli koupit volno. Do zásad můžete přidat více typů volna. 
+8. V **Zásadách nákupu** vyberte **Ekvivalent plného úvazku** (FTE) k rozdělení maximální částky na základě FTE definovaného na pozici zaměstnance. Pokud je typ zásad **Množství**, vložte **Maximální pevné množství**. 
 
-9. Zadejte **Měsíce služby** pro typ volna, chcete-li povolit různé měsíce služby pro určení maximálního množství, které může zaměstnanec koupit. 
+9. Vyberte **Přidat**, chcete-li přidat typy pracovního volna pro zaměstnance, aby si mohli koupit volno. Do zásad můžete přidat více typů volna. 
 
-10. Zadejte **maximální množství** pro typ volna. 
+10. Zadejte **Měsíce služby** pro typ volna, chcete-li povolit různé měsíce služby pro určení maximálního množství, které může zaměstnanec koupit. 
 
-11. Zadejte **Sazbu**, za kterou si zaměnstnanec koupí pracovní volno. 
+11. Zadejte **maximální množství** pro typ volna. 
 
-12. Volitelně zadejte **Kód příjmů** pro použití při nákupu volna. 
+12. Zadejte **Sazbu**, za kterou si zaměnstnanec koupí pracovní volno. 
 
-13. Volitelně lze nastavit, zda použít FTE ke stanovení maximálního množství pro typ volna. 
+13. Volitelně zadejte **Kód příjmů** pro použití při nákupu volna. 
+
+14. Volitelně lze nastavit, zda použít FTE ke stanovení maximálního množství pro typ volna. 
+
+15. Chcete-li vytvořit zásadu prodeje, postupujte podle kroků 8 až 14 pod částí **Zásada prodeje**. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Přidejte do plánu volna a nepřítomnosti zásady nákupu a prodeje volna
 

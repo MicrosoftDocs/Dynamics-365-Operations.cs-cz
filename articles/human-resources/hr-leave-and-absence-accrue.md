@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429052"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712152"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Časově rozlišit plány pracovního volna a absence
 
@@ -37,7 +37,9 @@ Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro v
 
 3. Zobrazí se dialogové okno **Časové rozlišení plánů pracovního volna a absence**. V **Časové rozlišení k** vyberte **Dnešní datum** nebo vyberte **Vlastní datum** a zadejte vlastní datum.
 
-4. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
+4. Pokud chcete spustit časové rozlišení pro všechny společnosti, vyberte **Všechny společnosti**. Pokud chcete zpracovat časové rozlišení pro jediný plán pracovního volna, vyberte **Ne** pro **Všechny plány** a potom vyberte a **Plán pracovního volna**. Pokud vyberete všechny společnosti, nemůžete vybrat individuální plán pracovního volna. 
+
+5. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
 
    1. Zadejte informace pro proces časového rozlišení.
 
@@ -55,7 +57,9 @@ Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro v
 
 3. Zobrazí se dialogové okno **Časové rozlišení plánů pracovního volna a absence**. V **Časové rozlišení k** vyberte **Dnešní datum** nebo vyberte **Vlastní datum** a zadejte vlastní datum.
 
-4. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
+4. Pokud chcete spustit časové rozlišení pro všechny společnosti, vyberte **Všechny společnosti**. Pokud chcete zpracovat časové rozlišení pro jediný plán pracovního volna, vyberte **Ne** pro **Všechny plány** a potom vyberte a **Plán pracovního volna**. Pokud vyberete všechny společnosti, nemůžete vybrat individuální plán pracovního volna. 
+
+5. Chcete-li spustit proces časového rozlišení na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:
 
    1. Zadejte informace pro proces časového rozlišení.
 
@@ -102,18 +106,6 @@ Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data 
 1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.
 
 2. V nabídce **Správa pracovního volna** vyberte **Odstranit audit časového rozlišení pracovního volna**.
-
-## <a name="configure-preview-features"></a>Konfigurace funkcí náhledu
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Pokud jste povolili funkce náhledu pro pracovní volno a absenci, musíte pro ně také nakonfigurovat nastavení.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Časové rozlišení volna dle společnosti nebo plánu volna
-
-Při časovém rozlišení volna a nepřítomnosti si můžete vybrat, že se budou časové rozlišovat pro všechny společnosti. Pokud zvolíte všechny společnosti, nemůžete vybrat individuální plány dovolené. Pokud se rozhodnete, že se vám nebudou časově rozlišovat všechny společnosti, můžete časově rozlišovat konkrétní plán dovolené. 
-
-Tyto možnosti jsou k dispozici při časovém rozlišení pro všechny zaměstnance nebo jednotlivé zaměstnance. 
 
 ## <a name="see-also"></a>Viz také
 

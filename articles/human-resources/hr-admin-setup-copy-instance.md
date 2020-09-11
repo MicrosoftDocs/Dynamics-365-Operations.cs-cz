@@ -3,7 +3,7 @@ title: Kopírovat instanci
 description: Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox).
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554318"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706221"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
 Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox). Máte-li jiné prostředí izolovaného prostoru (sandbox), můžete také zkopírovat databázi z prostředí do cíleného prostředí sandbox.
 
-Chcete-li zkopírovat instanci, je nutné zajistit následující:
+Při kopírování instance mějte na paměti následující tipy:
 
 - Instance aplikace Human Resources, kterou chcete přepsat, musí být prostředí izolovaného prostoru (sandbox).
 
-- Prostředí, ze kterých kopírujete, musí být ve stejné oblasti. Nelze kopírovat mezi oblastmi.
+- Prostředí, ze kterých a do kterých kopírujete, musí být ve stejné oblasti. Nelze kopírovat mezi oblastmi.
 
 - Musíte být správcem cílového prostředí, abyste se k němu mohli po zkopírování instance přihlásit.
 
-- Při kopírování databáze aplikace Human Resources nejsou zkopírovány prvky (aplikace nebo data), které jsou obsaženy v prostředí Microsoft PowerApps. Informace o tom, jak kopírovat prvky do prostředí PowerApps, naleznete v tématu [kopírování prostředí](https://docs.microsoft.com/power-platform/admin/copy-environment). Prostředí PowerApps, které chcete přepsat, musí být prostředí izolovaného prostoru (sandbox). Chcete-li změnit produkční prostředí PowerApps na prostředí s izolovaným prostorem, musíte být globálním správcem klienta. Další informace o změně prostředí PowerApps naleznete v tématu [přepnutí instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- Při kopírování databáze aplikace Human Resources nejsou zkopírovány prvky (aplikace nebo data), které jsou obsaženy v prostředí Microsoft Power Apps. Informace o tom, jak kopírovat prvky do prostředí Power Apps, naleznete v tématu [kopírování prostředí](https://docs.microsoft.com/power-platform/admin/copy-environment). Prostředí Power Apps, které chcete přepsat, musí být prostředí izolovaného prostoru (sandbox). Chcete-li změnit produkční prostředí Power Apps na prostředí s izolovaným prostorem, musíte být globálním správcem klienta. Další informace o změně prostředí Power Apps naleznete v tématu [přepnutí instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Common Data Service, musíte znovu použít vlastní pole na entity Common Data Service. Viz [Použití vlastních polí na Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Vliv kopírování databáze aplikace Human Resources
 
@@ -47,15 +49,15 @@ Při kopírování databáze aplikace Human Resources dojde k následujícím ud
 
 - Cílové prostředí nebude k dispozici, dokud nebude proces kopírování dokončen.
 
-- Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Proto nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
+- Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Ve výsledku nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
 
-- Všichni uživatelé, kromě správce a ostatních interních uživatelských účtů služby budou nedostupní. Správce tedy může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
+- Všichni uživatelé, kromě správce a ostatních interních uživatelských účtů služby budou nedostupní. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
 
 - Uživatel s oprávněními správce musí provést požadované změny konfigurace, například opětovné připojení koncových bodů integrace pro určité služby nebo adresy URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopírování databáze aplikace Human Resources
 
-Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihlaste do centra pro správu Microsoft Power Platform a zkopírujte vaše prostředí PowerApps.
+Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihlaste do centra pro správu Microsoft Power Platform a zkopírujte vaše prostředí Power Apps.
 
 > [!WARNING]
 > Při kopírování instance je databáze vymazána v cílové instanci. Cílová instance není během tohoto procesu k dispozici.
@@ -74,7 +76,7 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
    ![[Vyberte Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Vyberte prostředí PowerApps, ke zkopírování a pak vyberte **Kopírovat**.
+6. Vyberte prostředí Power Apps, ke zkopírování a pak vyberte **Kopírovat**.
 
 7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Common Data Service. Další informace a pokyny naleznete v části [Konfigurace integrace Common Data Service](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,7 +100,13 @@ Při kopírování instance Human Resources nejsou zkopírovány následující 
 
 - Připojovací řetězec v tabulce **PersonnelIntegrationConfiguration**
 
-Některé z těchto prvků nebyly zkopírovány, protože jsou specifické pro prostředí. Příklady zahrnují záznamy **BatchServerConfig** a **SysCorpNetPrinters**. Ostatní prvky nebudou zkopírovány z důvodu objemu lístků podpory. Je například možné, že duplicitní e-maily budou odeslány, protože v prostředí pro testování přijetí uživatele (sandbox) je stále povolen protokol SMTP, mohou být odeslány neplatné integrační zprávy, protože jsou stále povoleny dávkové úlohy a uživatelé mohou být povoleni předtím, než mohou správci provést akce čištění po aktualizaci.
+Některé z těchto prvků nebyly zkopírovány, protože jsou specifické pro prostředí. Příklady zahrnují záznamy **BatchServerConfig** a **SysCorpNetPrinters**. Ostatní prvky nebudou zkopírovány z důvodu objemu lístků podpory. Například:
+
+- Mohou být odesílány duplicitní e-maily, protože v prostředí sandbox pro testování přijetí uživatele je stále povolen protokol SMTP.
+
+- Mohou být odesílány neplatné integrační zprávy, protože dávkové úlohy jsou stále povoleny.
+
+- Uživatelé mohou být povoleni, než mohou správci provádět akce čištění po aktualizaci.
 
 Při kopírování instance se dále mění následující stavy:
 
@@ -108,6 +116,35 @@ Při kopírování instance se dále mění následující stavy:
 
 ## <a name="environment-admin"></a>Správce prostředí
 
-Všichni uživatelé v cílovém prostředí izolovaného prostoru (sandbox) včetně správců budou nahrazeni uživateli zdrojového prostředí. Před kopírováním instance se ujistěte, zda jste správcem zdrojového prostředí. Pokud ne, nebudete se moci po dokončení kopírování přihlásit k cílovému prostředí izolovaného prostoru (sandbox).
+Všichni uživatelé v cílovém prostředí izolovaného prostoru (sandbox) včetně správců budou nahrazeni uživateli zdrojového prostředí. Před kopírováním instance se ujistěte, zda jste správcem zdrojového prostředí. Pokud ne, nebudete se moci po dokončení kopírování přihlásit k cílovému prostředí sandbox.
 
 Všichni uživatelé, kteří nejsou správci v cílovém prostředí izolovaného prostoru (sandbox), jsou zakázáni, aby zabránili nechtěným přihlášením v prostředí karantény. Správci mohou v případě potřeby znovu povolit uživatele.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Použití vlastních polí na Common Data Service
+
+Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Common Data Service, musíte znovu použít vlastní pole na entity Common Data Service.
+
+Pro každé vlastní pole, které je vystaveno v entitách Common Data Service, proveďte následující kroky:
+
+1. Přejděte do vlastního pole a vyberte **Upravit**.
+
+2. Zrušte výběr pole **Povoleno** pro každou entitu cdm_*, pro kterou je povoleno vlastní pole.
+
+3. Vyberte **Použít změny**.
+
+4. Znovu vyberte **Upravit**.
+
+5. Vyberte pole **Povoleno** pro každou entitu cdm_*, pro kterou je povoleno vlastní pole.
+
+6. Znovu vyberte **Použít změny**.
+
+Proces zrušení výběru, použití změn, opětovného výběru a opětovného použití změn vyzve schéma k aktualizaci v Common Data Service pro zahrnutí vlastních polí.
+
+Další informace o vlastních polích naleznete v tématu [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Viz také
+
+[Zřízení Human Resources](hr-admin-setup-provision.md)</br>
+[Odebrání instance](hr-admin-setup-remove-instance.md)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)
+

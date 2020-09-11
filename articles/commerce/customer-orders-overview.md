@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699362"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710252"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Objednávky zákazníka v Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Zde jsou některé parametry, které lze nastavit na stránce **Parametry Commer
     - Poplatky jsou použity na úrovni záhlaví prodejní objednávky a při vrácení určitého množství produktu nelze určit maximální refundaci dopravného povolenou pro produkty a množství takovým způsobem, který by byl použitelný pro všechny zákazníky.
     - Pro každou instanci expedice vzniká dopravné. Pokud zákazník vrací produkty vícekrát a zásady prodejce určují, že prodejce ponese náklady dopravného za vrácení, budou poplatky za dopravné vratek vyšší než skutečné dopravné.
     
-- **Chování při výpočtu daně** - **Přepočítat** je výchozí a tradiční nastavení způsobu přepočtu daní při importu objednávky do administrativní podpory. **Nepočítat** zakáže přepočet daně až do doby, než bude příkaz upraven v administrativní podpoře, když je přepočet proveden. 
+
+## <a name="disable-option-to-pay-later"></a>Zákaz možnost platit později
+
+V aplikaci Commerce verze 10.0.12 a novější mohou obchodníci odebrat možnost platit později, když je na POS vytvořena objednávka zákazníka. Chcete-li tuto možnost deaktivovat, otevřete **Funkční profil** pro kanál, ve kterém není platba později povolena, a poté vyberte **Upravit**. Na kartě **Obecné** vyberte rozevírací seznam pro **Požadovat platbu za plnění**. Pokud platby na POS nejsou povoleny později, vyberte **Vyžaduje se karta** a vyberte **Uložit**. Spusťte plán distribuce **1070** k synchronizování této změny s kanálem. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Toky transakcí pro objednávky odběratele
 

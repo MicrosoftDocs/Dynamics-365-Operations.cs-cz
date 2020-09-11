@@ -1,9 +1,9 @@
 ---
 title: Koupit a prodat pracovní volno
-description: Můžete odeslat žádost o koupi a prodej volna.
+description: V aplikaci Dynamics 365 Human Resources můžete odesílat žádosti o nákup a prodej pracovního volna na základě zásad nákupu a prodeje pracovního volna stanovených vaší společností.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b765544dcca02ff629e4cc88e3b34d1d3b3e85dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429674"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711811"
 ---
 # <a name="buy-and-sell-leave"></a>Koupit a prodat pracovní volno
 
-[!include [banner](includes/preview-feature.md)]
-
-Můžete odeslat žádost o koupi volna.  
+V aplikaci Dynamics 365 Human Resources můžete odesílat žádosti o nákup a prodej pracovního volna na základě zásad nákupu a prodeje pracovního volna stanovených vaší společností.  
 
 ## <a name="request-to-buy-leave"></a>Žádost o koupi volna
 
@@ -39,7 +37,17 @@ Můžete odeslat žádost o koupi volna.
 
 3. Jakmile budete připravení žádost odeslat, vyberte **Odeslat**. 
 
-Po odeslání žádosti budou vaše zůstatky automaticky aktualizovány o částku dovolené, kterou jste požadovali ke koupi. 
+Vaše zůstatky se před aktualizací buď automaticky aktualizují, nebo projdou schvalovacím procesem. To záleží na tom, jak byla nakonfigurována zásada nákupu.
+
+## <a name="request-to-sell-leave"></a>Žádost o prodej pracovního volna
+
+1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Žádost o prodej pracovního volna** v dlaždici **Zůstatky volna**. 
+
+2. Přejte **Typ pracovního volna** a zadejte **Množství** pracovního volna, které chcete prodat. 
+
+3. Jakmile budete připravení žádost odeslat, vyberte **Odeslat**.
+
+Vaše zůstatky se před aktualizací buď automaticky aktualizují, nebo projdou schvalovacím procesem. To záleží na tom, jak byla nakonfigurována zásada nákupu.
 
 ## <a name="see-also"></a>Viz také
 

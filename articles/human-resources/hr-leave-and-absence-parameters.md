@@ -3,7 +3,7 @@ title: Konfigurace parametrů pracovního volna a absence
 description: Definujte parametry lidských zdrojů pro pracovní volno a absenci v Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e4d3b3e4b373631bed5e2d7e3c3a4e14f0c5c98
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428937"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712369"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurace parametrů pracovního volna a absence
 
@@ -46,8 +46,6 @@ Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Reso
 
 5. Na kartě **Samoobsluha zaměstnance** určete, zda manažeři mohou zadat žádosti o pracovní volno a absenci jménem svých zaměstnanců.
 
-6. Na kartě **Pracovní volno a absence** ověřte nastavení FMLA a podle potřeby je změňte.
-
 7. Zvolte **Uložit**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Zobrazen a zmena parametrů pracovního volna a absence
@@ -63,6 +61,10 @@ Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Reso
     - Vyberte **Datum platnost měsíců služby**, pokud chcete nastavit, kdy se časové rozlišení uplatní pro plány volna za použití měsíců služby.
 
     - Vyberte **Výpočet zůstatku**, chcete-li zobrazit zůstatky k dnešnímu dni nebo k období časového rozlišení. Vyberete-li **Zůstatek k dnešnímu dni**, zůstatek zobrazí součet všech časově rozlišených položek, úprav a požadavků k dnešnímu dni. Pokud vyberete možnost **Zůstatek k období časového rozlišení**, zůstatek zobrazí součet všech časově rozlišených položek, úprav a požadavků k období časového rozlišení, které je definováno frekvencí plánu volna. 
+
+    - Nastavte čas zahájení dávkové úlohy vypršení platnosti převodu do dalšího období.  
+    
+    - Vyberte **Ano** pro **Umožnit zaměstnancům koupi pracovního volna** a **Umožnit zaměstnancům prodej pracovního volna**. Pokud vyberete **Ano** pro tyto možnosti, můžete vytvořit zásady koupi a prodeje pracovního volna a umožnit zaměstnancům odesílat žádosti o koupi a prodej pracovního volna.
 
 ## <a name="configure-calendar-parameters"></a>Konfigurace parametrů kalendáře
 
