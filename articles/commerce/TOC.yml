@@ -92,6 +92,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (listopad 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (říjen 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (srpen 2020)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Hromadné nasazení samoobslužných komponent
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Události komponent Retail pro diagnostiku a řešení potíží
+                - name: Události komponent Commerce pro diagnostiku a řešení potíží
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Použití nasaditelného balíčku
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -422,7 +424,7 @@
                           href: pos-sales-groups-track-commissions.md
                     - name: Aktivace zařízení
                       items:
-                        - name: 'Konfigurace, Instalace a aktivace MPOS'
+                        - name: 'Konfigurace, instalace a aktivace MPOS'
                           href: retail-modern-pos-device-activation.md
                         - name: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
                           href: extended-logon.md
@@ -524,8 +526,10 @@
                       href: duplicate-payment-protection.md
                     - name: Přehled omnikanálových plateb
                       href: omni-channel-payments.md
-                    - name: Platby objednávky omnikanálového obchodu
+                    - name: Omnikanálové platby objednávek Commerce
                       href: dev-itpro/commerce-payments.md
+                    - name: Zpracování kreditních karet bez hardwarové stanice
+                      href: dev-itpro/cnp-pos.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
                 - name: Správa map Bing pro vaši organizaci
@@ -700,7 +704,7 @@
           items:
             - name: Objednávky zákazníka
               items:
-                - name: Objednávky zákazníka v MPOS
+                - name: Objednávky zákazníků v pokladním místě (POS)
                   href: customer-orders-overview.md
                 - name: Hybridní objednávky zákazníka
                   href: hybrid-customer-orders.md
@@ -826,7 +830,9 @@
                   href: custom-pages-user-logins.md
                 - name: Konfigurace více klientů B2C v prostředí Commerce
                   href: configure-multi-B2C-tenants.md
-                - name: Přidání podpory pro síť pro doručování obsahu
+                - name: Domény v Dynamics 365 Commerce
+                  href: domains-commerce.md
+                - name: Přidání podpory pro síť pro doručování obsahu (CDN)
                   href: add-cdn-support.md
                 - name: Povolení zjišťování obchodu na základě polohy
                   href: enable-store-detection.md
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Moduly hodnocení a recenzí
                       href: ratings-reviews-modules.md
+                    - name: Modul sdílení na sociálních sítích
+                      href: social-share-module.md
                 - name: Nákupní moduly
                   items:
                     - name: Modul košíku
@@ -1026,6 +1034,12 @@
                   items:
                     - name: Modul popisu cesty
                       href: add-breadcrumb.md
+                    - name: Modul navigační nabídky
+                      href: nav-menu-module.md
+                - name: Moduly shody s předpisy
+                  items:
+                    - name: Modul souhlasu se soubory cookie
+                      href: cookie-consent-module.md
             - name: Hledání
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Odložení provádění prvků formátu elektronického výkaznictví
                   items:
-                    - name: Odložení provádění prvku posloupnosti
+                    - name: Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Odložení provádění prvku XML
+                    - name: Odložení provádění prvků XML ve formátech elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
               items:

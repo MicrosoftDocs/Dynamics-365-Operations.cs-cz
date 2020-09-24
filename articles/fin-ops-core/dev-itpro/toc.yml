@@ -14,12 +14,12 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.14 (listopad 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform Update pro 10.0.13 (říjen 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platform Update pro 10.0.12 (srpen 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Platform Update pro 10.0.11 (červenec 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce platformy
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: Verzování modelu X++ v Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Stažení prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Odeslání prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Nasazení prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Vytvoření připojení Lifecycle Services (LCS) v Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Vzorová aplikace správy vozového parku
               items:
                 - name: Klient-server scénář pro vzorovou aplikaci správy vozového parku
