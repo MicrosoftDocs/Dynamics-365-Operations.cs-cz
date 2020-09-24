@@ -70,12 +70,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (listopad 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (říjen 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (srpen 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (červenec 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Kontrolní seznamy údržby
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Prostoj údržby
+                - name: Prostoj údržby pro pracovní příkazy
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Přidání chyby do pracovního příkazu
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Vytvořit pracovní příkazy
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Prostoj údržby
+                - name: Aktivity prostoje údržby
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Plánování kapacity
               items:
@@ -1345,8 +1345,6 @@
               items:
                 - name: Přehled optimalizace plánování
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Plánování se záporným množstvím na skladě
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Začínáme s optimalizací plánování
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analýza přizpůsobení pro optimalizaci plánování
@@ -1355,16 +1353,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hlavní plánování s obchodními smlouvami nákupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Zobrazení historie pánů a plánovacích protokolů
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Pojistné doby
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Schválit plánované objednávky
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatické potvrzení s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Plánování se záporným množstvím na skladě
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Zobrazení historie pánů a plánovacích protokolů
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Zrušení plánovací úlohy
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Rozšiřitelnost optimalizace plánování
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Řešení potíží s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Rozšiřitelnost optimalizace plánování
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Hlavní plány
               items:
                 - name: Přehled hlavních plánů
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Nastavení výdejů v seskupení
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Pozice seskupení plná
+                      href: warehousing/cluster-position-full.md
                     - name: Systémem řízený výdej v seskupení
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Nastavení vytváření kontejnerů

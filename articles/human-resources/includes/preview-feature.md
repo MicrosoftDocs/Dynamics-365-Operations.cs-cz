@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Funkce uvedená v tomto článku je k dispozici jako veřejná verze Preview v jakémkoli sandboxovém nebo zkušebním prostředí. Není k dispozici v provozních prostředích. Obsah a funkce se mohou změnit. Další informace o funkcích verze Preview naleznete v tématu [Správa funkcí](../hr-admin-manage-features.md).
+> Některé nebo všechny tyto funkce jsou k dispozici jako veřejná verze Preview v jakémkoli sandboxovém nebo zkušebním prostředí. Není k dispozici v provozních prostředích. Obsah a funkce se mohou změnit. Další informace o funkcích verze Preview naleznete v tématu [Správa funkcí](../hr-admin-manage-features.md).
