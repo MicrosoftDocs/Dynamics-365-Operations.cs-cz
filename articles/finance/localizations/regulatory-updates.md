@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: b01162f034a948a94139aed66b7ec8d2e861ee9b
+ms.sourcegitcommit: 4b63e71fb031d8f47bd9e72dd9cdfb9bc7ef2efc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598077"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789741"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -42,6 +42,12 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 |Země|Plánované datum vydání|Verze vydání|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
+|      Rakousko         |   2020. září      | 10.0.15      |   Formát přiznání k DPH U30 byl aktualizován pro vykazování 2020   |
+|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Přenesená daňová povinnost   |
+|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Termín vystavení faktury (GCC)   |
+|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Přiznání k DPH pro Bahrajn   |
+|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Prodejní faktury pro Bahrajn   |
+|      Brazílie         |   Srpen 2020      | 10.0.14, 10.0.13, 10.0.12      |   Prohlášení PR ADRCST   |
 |      Brazílie         |   2020. březen      | 10.0.11      |   SPED ECD layout 8   |
 |      Brazílie         |   2020. duben      | 10.0.11      |   Technická poznámka NT 2019.001 v1.40   |
 |      Brazílie         |   2020. květen      | 10.0.12, 10.0.11HF      |   Prohlášení ADCR ICMS-ST pro stát Parana   |
@@ -50,21 +56,35 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      Česká republika      |   Červenec 2020      | 10.0.13      |   Změny kontrolního výpisu DPH ve schématu XML (výpis faktur)   |
 |      Česká republika         |   Červenec 2020      | 10.0.13      |   Prohlášení o DPH v XML, náhled prohlášení o DPH v Excelu a formáty XML pro kontrolu DPH založené na modelu daňového přiznání   |
 |      Estonsko         |   2020. květen       | 10.0.11      |   Elektronická fakturace v Estonsku: export faktur zákazníkům v estonském specifickém formátu verze 1.2.  |
+|      Evropa        |   Srpen 2020       | 10.0.14      |   Převod DIČ partnera do Intrastatu  |
+|      Finsko         |   Červenec 2020       | 10.0.13      |   Podpora elektronických faktur pro Finsko  |
 |      Německo         |   2020. květen       | 10.0.12      |   Německo - maloobchod - požadavky na pokladnu    |
 |      Maďarsko         |   2020. březen       | 10.0.11     |   Fakturační systém online v.2.0 ve Finance and Operations    |
+|      Indie         |   Srpen 2020, červenec 2020      | 10.0.3, 10.0.12HF      |   TCS z prodeje zboží podle oddílu 206C (1H) – prahová hodnota podle akumulace transakcí na bázi PAN.  |
+|      Indie         |   Srpen 2020, červen 2020      | 10.0.13, 10.0.12HF      |   Dobropis/dluhopis proti faktuře za export  |
+|      Indie         |   Srpen 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Elektronická faktura pod GST  |
+|      Indie         |   2020. květen      | 10.0.13, 10.0.12      |   Nový formát vratek GSTR-1 a GSTR-2  |
+|      Indie         |   Červenec 2020      | 10.0.13      |   Nový offline nástroj GSTR (ANX-1 a ANX-2) (beta verze)  |
 |      Indie         |   2020. květen      | 10.0.12      |   Zlepšení manipulace s jednotkovou cenou a cenou v příkazech k převodu akcií  |
 |      Indie         |   2020. květen      | 10.0.12      |   Převod akcií se stejnou použitelností daňové sazby v době odeslání a přijetí (včetně částečného příjmu)  |
 |      Itálie         |   2020. květen      | 10.0.12, 10.0.11      |   Změna formátu Modello 770/2019 |
 |      Itálie         |   Červenec 2020      | 10.0.13, 10.0.12HF      |   Změny ve formátu italských elektronických faktur - FatturaPA |
+|      Kuvajt         |   Červenec 2020      | 10.0.12      |   Přenesená daňová povinnost |
+|      Malajsie         |   Červenec 2020      | 10.0.13      |   Sestava SST |
+|      Mexiko         |   2020. září      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   Umístění schématu adresy URL pro CFDI na základě dokumentu Anexo 20 |
 |      Norsko          |   2020. květen   | 10.0.12     |   Redesign výkazu SAF-T: Počáteční zůstatky podle typu „provozní“ transakce a daňových informací v měně daňového kódu v modulu Finance (verze 10) |
 |      Norsko          |   2020. květen   | 10.0.12     |   Změna dialogového okna sestavy SAF-T: k poskytnutí možnosti výběru kontaktní osoby napříč společnostmi |
 |      Norsko          |   2020. květen   | 10.0.12     |   SAF-T Názvy mezer na každém řádku namísto pouze v záhlaví |
+|      Omán         |   Červenec 2020      | 10.0.12H      |   Přenesená daňová povinnost |
+|      Polsko          |   2020. září     | 10.0.14     |   Polsko: Formát Excel JPK-V7M (VDEK) jako náhrada sestavy SSRS  |
 |      Polsko          |   2020. květen     | 10.0.11     |   Rozdělit částku realizovaných kurzových rozdílů závazků/pohledávek na kurzový rozdíl netto hodnoty faktury a částky DPH  |
 |      Polsko          |   2020. květen     | 10.0.11     |   SAF účetní knihy – vylepšení filtrování vrstev pro zaúčtování |
 |      Polsko          |   2020. březen     | 10.0.11     |   JPK_VDEK dodatečná balení I |
 |      Polsko          |   2020. květen     | 10.0.12     |   JPK_VDEK dodatečná balení II |
 |      Polsko          |   2020. březen     | 10.0.11     |   Částečný dobropis na prodejní objednávku se zálohovou fakturou |
 |      Polsko          |   Červenec 2020     | 10.0.13     |   Povinná vylepšení rozdělené platby |
+|      Katar         |   Červenec 2020      | 10.0.12H      |   Přenesená daňová povinnost |
+|      Rusko          |   Srpen 2020     | 10.0.14    |   Formát účetního vykazování se mění počínaje rokem 2020  |
 |      Rusko          |   Červenec 2020     | 10.0.13    |   Výpočet odpisů na základě pořizovacích nákladů a velkých oprav s použitím odpisového bonusu v daňovém účetnictví  |
 
 

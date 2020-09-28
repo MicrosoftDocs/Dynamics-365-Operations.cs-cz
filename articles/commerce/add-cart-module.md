@@ -3,7 +3,7 @@ title: Modul košíku
 description: Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686759"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761122"
 ---
 # <a name="cart-module"></a>Modul košíku
 
@@ -77,8 +77,8 @@ Modul košíku načítá informace o produktu pomocí rozhraní API Commerce Sca
 Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul **Nákupní košík**.
-1. V části **Název fragmentu stránky** zadejte název pro **Fragment nákupního košíku** a poté vyberte **OK**.
+1. V dialogovém okně **Nový fragment** vyberte modul **Košík**.
+1. V části **Název fragmentu** zadejte název pro **Fragment košíku** a poté vyberte **OK**.
 1. Vyberte pozici **Nákupní košík**.
 1. V podokně vlastností vpravo vyberte symbol tužky, do pole zadejte text záhlaví a poté zaškrtněte symbol zaškrtnutí.
 1. V pozici **Nákupní košík** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
@@ -86,8 +86,8 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte název šablony.
-1. Ve stromové struktuře vyberte pozici **Obsah**, vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
-1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment nákupního košíku** a pak vyberte tlačítko **OK**.
+1. Ve stromové struktuře vyberte pozici **Obsah**, vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Vybrat fragment** vyberte **Fragment košíku** a pak vyberte tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
 1. V dialogovém okně **Zvolte šablonu** vyberte šablonu, kterou jste vytvořili, zadejte název stránky a pak vyberte tlačítko **OK**.

@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208010"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803156"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy. 
 
@@ -42,8 +41,13 @@ Chcete-li zabránit použití a potvrzení nákupní smlouvy, označte stav smlo
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Odpovědní pracovníci v nákupních smlouvách
 
-Podle klasifikace nákupní smlouvy můžete určit primárního zodpovědného pracovníka a sekundárního odpovědného pracovníka. Tyto hodnoty budou zděděny výslednou nákupní smlouvou. Není nutné přidávat zodpovědné pracovníky do nákupní smlouvy a mohou být upraveny přímo pro jednotlivé případy na základě nákupní smlouvy. Nemůžete určit sekundárního zodpovědného pracovníka bez primárního odpovědného pracovníka, i když nemusíte mít sekundárního zodpovědného pracovníka. Stejného pracovníka nelze určit jako primárního i sekundárního odpovědného pracovníka. 
+Podle klasifikace nákupní smlouvy můžete určit primárního zodpovědného pracovníka a sekundárního odpovědného pracovníka. Tyto hodnoty budou zděděny výslednou nákupní smlouvou. Není nutné přidávat zodpovědné pracovníky do nákupní smlouvy a mohou být upraveny přímo pro jednotlivé případy na základě nákupní smlouvy. Nemůžete určit sekundárního zodpovědného pracovníka bez primárního odpovědného pracovníka, i když nemusíte mít sekundárního zodpovědného pracovníka. Stejného pracovníka nelze určit jako primárního i sekundárního odpovědného pracovníka.
 
+> [!IMPORTANT]
+> Než můžete použít funkci zodpovědné strany, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+> 
+> - **Modul:** *Zásobování a zdroje*
+> - **Název funkce:** *Odpovědná strana nákupní smlouvy*
 
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat řádky z více nákupních objednávek (NO), abyste splnili závazek. Existují čtyři typy závazků:

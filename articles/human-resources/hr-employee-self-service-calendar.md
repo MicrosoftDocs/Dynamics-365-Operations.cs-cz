@@ -3,7 +3,7 @@ title: Vytvoření kalendáře týmu
 description: Zobrazte a vytvořte kalendáře týmu v Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712201"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796462"
 ---
 # <a name="view-team-and-company-calendars"></a>Zobrazení kalendáře týmu a společnosti
 
@@ -50,6 +50,22 @@ Uživatelé, kteří jsou v rolích lidských zdrojů, mohou zobrazit kalendář
 2. Vyberte **Kalendář pracovního volna a absence**.
 
 Role lidských zdrojů mají také přístup k kalendáři společnosti z **Žádosti o pracovní volno a absenci**, **Schválené volno** a **Žádosti o volno**. 
+
+[!include [banner](includes/preview-feature.md)]
+
+Kalendáře nyní obsahují další filtry a možnosti. Všechny kalendáře obsahují možnosti zobrazení pro:
+
+- Schválené požadavky
+- Žádosti čekající na vyřízení
+- Zaměstnance s žádostmi o pracovní volno
+- Zaměstnance bez žádostí o pracovní volno
+- Narozeniny zaměstnanců
+- Žádosti o volno 
+- Žádosti o pracovní volno
+
+Konfigurace kalendáře v parametrech Pracovní volno a absence určuje dostupné možnosti zobrazení.
+
+Můžete také filtrovat kalendáře podle manažera nebo oddělení. Přiřazení primární pozice určuje zaměstnance zobrazené při nastavení těchto filtrů. 
 
 Informace o nastavení kalendáře naleznete v tématu [Konfigurace parametrů kalendáře](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

@@ -3,7 +3,7 @@ title: Stažení konfigurace elektronického vykazování ze služby Lifecycle S
 description: Toto téma popisuje postup, jak stáhnout konfigurace elektronických sestav (ER) ze služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934647"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810612"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje postup, jak stáhnout konfigurace elektronických sestav (ER) ze služby Microsoft Dynamics Lifecycle Services (LCS).
-
-Tento kurz vás provede stahováním nejnovější verze konfigurací elektronických sestav (ER) v rámci Microsoft Dynamics Lifecycle Services (LCS).
+Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronického výkaznictví](general-electronic-reporting.md#Configuration) z [knihovny sdíleného majetku](../lifecycle-services/asset-library.md) v Microsoft Dynamics Lifecycle Services (LCS).
 
 1. Přihlaste se k aplikaci použitím některé z následující role:
 
@@ -41,36 +39,41 @@ Tento kurz vás provede stahováním nejnovější verze konfigurací elektronic
 
 2. Přejděte do části **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví**.
 3. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Microsoft**.
-4. Na dlaždici **Microsoft** klepněte na tlačítko **Úložiště**.
+4. Na dlaždici **Microsoft** vyberte **Úložiště**.
 
-    [![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Dlaždice Microsoft na stránce Konfigurace lokalizace](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. Na stránce **Úložiště konfigurací** v mřížce vyberte existující úložiště typu **LCS**. Pokud se toto úložiště nezobrazí v mřížce, postupujte následovně:
 
-    1. Kliknutím na **Přidat** přidejte nové úložiště.
+    1. Volbou **Přidat** přidejte úložiště.
     2. Vyberte možnost **LCS** jako typ úložiště.
-    3. Klikněte na **Vytvořit úložiště**.
-    4. Po výzvy postupujte podle pokynů k autorizaci.
+    3. Zvolte **Vytvořit úložiště**.
+    4. Pokud se zobrazí výzva k autorizaci, postupujte podle pokynů na obrazovce.
     5. Zadejte název a popis úložiště.
-    6. Kliknutím na **OK** potvrďte nový záznam úložiště.
+    6. Volbou **OK** potvrďte nový záznam úložiště.
     7. V mřížce vyberte nové úložiště typu **LCS**.
 
-6. Klepněte na tlačítko **Otevřít** a zobrazte tak seznam konfigurací ER pro vybrané úložiště.
+6. Vyberte **Otevřít** a zobrazte tak seznam konfigurací ER pro vybrané úložiště.
 
-    [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Stránka úložišť konfigurace](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
-7. Ve stromu konfigurací v levém podokně vyberte konfiguraci ER, kterou potřebujete.
+    > [!TIP]
+    > Pokud máte potíže s přístupem do úložiště LCS ke stažení konfigurací ze sdílené knihovny majetku v LCS, můžete si konfigurace stánout také z [globálního úložiště](er-download-configurations-global-repo.md).
+
+7. Ve stromu konfigurací v levém podokně vyberte požadovanou konfiguraci elektronického výkaznictví.
 8. Na pevné záložce **Verze** vyberte požadovanou verzi vybrané konfigurace ER.
-9. Kliknutím na tlačítko **Importovat** stáhnete vybranou verzi ze LCS do aktuální instance.
+9. Volbou **Importovat** stáhnete vybranou verzi ze LCS do aktuální instance.
 
     > [!NOTE]
     > Tlačítko **Import** nebude k dispozici u verzí konfigurace ER, které jsou již v aktuální instanci přítomny.
 
-    [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Stránka úložiště konfigurace](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> V závislosti na nastavení ER jsou konfigurace ověřeny po jejich importu. Můžete být upozorněni na potíže se zjištěnou nekonzistencí. Tyto potíže je nutné před importováním verze konfigurace odstranit. Další informace naleznete v seznam souvisejících článků pro toto téma.
+> V závislosti na nastavení ER jsou konfigurace ověřeny po jejich importu. Můžete být upozorněni na potíže se zjištěnou nekonzistencí. Tyto potíže je nutné před importováním verze konfigurace odstranit. Další informace naleznete v seznam souvisejících témat pro toto téma.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+[Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)

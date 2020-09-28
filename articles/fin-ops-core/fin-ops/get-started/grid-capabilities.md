@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,26 +16,25 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651683"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760392"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Nový ovládací prvek mřížky poskytuje řadu užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
 
--  Výpočet součtů
--  Seskupování dat
+-  Vypočet součtů
 -  Zadávání před systémem
 -  Vyhodnocování matematických výrazů 
+-  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **(Preview) Seskupení do mřížek**)
 
-## <a name="calculating-totals"></a>Výpočet součtů
+## <a name="calculating-totals"></a>Vypočet součtů
 V aplikacích Finance and Operations mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
 
 ### <a name="showing-the-grid-footer"></a>Zobrazení zápatí mřížky
@@ -71,21 +70,6 @@ Pokud výpočet trvá příliš dlouho, můžete operaci zrušit kliknutím na t
 
 Součty se aktualizují automaticky při aktualizaci, odstranění nebo vytvoření řádků v sadě dat.  
 
-## <a name="grouping-data"></a>Seskupování dat
-Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, možnost **Seskupení** v tabulkových mřížkách umožňuje uživatelům organizovat svá data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** také umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
-
-Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, který chcete seskupit a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá nový sloupec Seskupit podle na začátek mřížky a vloží "řádky záhlaví" na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
--  Hodnota dat pro skupinu 
--  Popisek sloupce (tyto informace budou obzvlášť užitečné po podporování více úrovní seskupení.)
--  Počet datových řádků v této skupině
--  Mezisoučty pro všechny sloupce konfigurované pro zobrazení součtů
-
-Pokud jsou povolena [uložená zobrazení](saved-views.md), lze toto seskupení uložit přizpůsobením jako součást zobrazení pro rychlý přístup při další návštěvě stránky.  
-
-Pokud vyberete možnost **Seskupit podle tohoto sloupce** v jiném sloupci, bude nahrazeno původní seskupení, protože v aktualizaci 10.0.9 s Platform Update 33 je podporována pouze úroveň seskupení.
-
-Chcete-li zrušit seskupení v mřížce, klikněte pravým tlačítkem na sloupec seskupení a vyberte možnost **Zrušit seskupení**.  
-
 ## <a name="typing-ahead-of-the-system"></a>Zadávání před systémem
 V mnoha obchodních situacích je schopnost rychlého zadávání dat do systému velmi důležitá. Než byl zaveden nový ovládací prvek mřížky, uživatelé mohli měnit data pouze v aktuálním řádku. Před vytvořením nového řádku nebo přepnutím na jiný řádek byli nuceni čekat, než systém úspěšně ověří provedené změny. Ve snaze o zkrácení doby, kdy uživatelé čekají na dokončení těchto ověření, a za účelem zvýšení produktivity uživatelů nová mřížka tato ověření upravuje, takže jsou asynchronní. Uživatel se proto může přesunout do jiných řádků a provést změny, zatímco ověřování předchozích řádků čekají na vyřízení. 
 
@@ -109,6 +93,32 @@ Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat 
 
 Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## <a name="grouping-tabular-data"></a>Seskupení tabulkových dat
+[!include [preview banner](../includes/preview-banner.md)]
+
+Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **(Preview) Seskupení do mřížek**, která je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
+
+Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle kterého chcete provést seskupení, a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá novou funkci **Seskupit podle sloupce** na začátek mřížky a vloží „řádky záhlaví“ na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
+-  Hodnota dat pro skupinu 
+-  Název sloupce (tyto informace budou obzvlášť užitečné po podporování více úrovní seskupení.)  
+-  Počet datových řádků v této skupině
+-  Mezisoučty pro všechny sloupce konfigurované pro zobrazení součtů
+
+Pokud jsou povolena [uložená zobrazení](saved-views.md), lze toto seskupení uložit přizpůsobením jako součást zobrazení pro rychlý přístup při další návštěvě stránky.  
+
+Pokud vyberete možnost **Seskupit podle tohoto sloupce** v jiném sloupci, bude nahrazeno původní seskupení, protože od verze 10.0.9 / Platform Update 33 je podporována pouze úroveň seskupení.
+
+Chcete-li zrušit seskupení v mřížce, klikněte pravým tlačítkem na sloupec seskupení a vyberte možnost **Zrušit seskupení**.  
+
+### <a name="expanding-and-collapsing-groups"></a>Rozbalení a sbalení skupin
+V počátečním seskupení dat budou všechny skupiny rozbaleny. Můžete vytvořit souhrnná zobrazení dat sbalením jednotlivých skupin, nebo si můžete rozbalením a sbalením skupiny usnadnit navigaci v datech. Chcete-li skupinu rozbalit nebo sbalit, vyberte tlačítko se znakem > v příslušném řádku záhlaví skupiny. Všimněte si, že stav rozbalení/sbalení jednotlivých skupin **není** uložen v individuálním nastavení.
+
+### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Výběr a zrušení výběru řádků na úrovni skupiny
+Stejně jako můžete vybrat (nebo zrušit výběr) všech řádků v mřížce zaškrtnutím políčka v horní části prvního sloupce v mřížce, můžete také rychle vybrat (nebo zrušit výběr) všechny řádky ve skupině výběrem zaškrtávacího políčka v příslušném řádku záhlaví skupiny. Zaškrtávací políčko v řádku záhlaví skupiny bude vždy odrážet aktuální stav výběru řádků v této skupině, bez ohledu na to, zda jsou vybrány všechny řádky, nejsou vybrány žádné řádky nebo jsou vybrány pouze některé řádky.
+
+### <a name="hiding-column-names"></a>Skrytí názvů sloupců
+Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Počínaje verzí 10.0.14 / Platform Update 38 můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
+
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 
 
@@ -131,7 +141,7 @@ Všechny následující uživatelské relace budou povoleným Novým ovládacím
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
 Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání s metodou `super()`formuláře`run()`.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
 Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Nahlaste všechny problémy společnosti Microsoft, které vyžadují použití tohoto rozhraní API. 
 

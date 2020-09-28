@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651950"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801451"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.8. (únor 2020)
 
@@ -41,10 +41,10 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 - [Další zóna skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [Správa majetku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Další informace naleznete v tématu [Přehled správy majetku](../asset-management/index.md).
 - [Zrušit práci](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Další informace viz [Zrušení práce skladu pro zpracování výjimek](../warehousing/cancel-warehouse-work.md)
-- [Změnit fond práce u práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [Pozice seskupení plná](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [Potvrdit a převést](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [Stáří vyskladnění zásob směrnice skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Změnit fond práce u práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Další informace viz [Změna fondu práce u práce](../warehousing/change-work-pool-on-work.md) .
+- [Plná pozice seskupení](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) – Další informace viz [Plná pozice seskupení](../warehousing/cluster-position-full.md).
+- [Potvrdit a převést](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Další informace viz [Potvrdit a převést](../warehousing/confirm-and-transfer.md) .
+- [Stáří vyskladnění zásob směrnice skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Další informace viz [Stáří vyskladnění zásob směrnice skladového místa](../warehousing/location-directive-inventory-picking-aging.md).
 - [Stav umístění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [Seskupování řádků vyskladnění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Další informace viz [výběr seskupení řádků](../warehousing/pick-line-grouping.md).
 - [Automatická aktualizace dodávek](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Další informace viz [Automatické aktualizace dodávek](../warehousing/auto-update-shipment.md).
@@ -54,9 +54,9 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 - [Ověření úlohy aplikace skladu pomocí RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Pravidlo uvolnění do skladu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Vizualizace stavu vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Seskupení šablon vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Podrobnosti řádku práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Další informace viz video [Podrobnosti řádku práce](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
-- [Doplnění prahu zóny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [Seskupení šablon vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Další informace viz [Seskupení šablon vlny](../warehousing/wave-template-grouping.md).
+- [Podrobnosti řádku práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Další informace viz [Podrobnosti řádku práce](../warehousing/work-line-details.md) a video [Podrobnosti řádku práce](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Doplnění prahu zóny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Další informace viz [Zónové doplňování podle mezních hodnot](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 

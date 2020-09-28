@@ -3,7 +3,7 @@ title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444614"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810660"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
@@ -33,7 +33,7 @@ ms.locfileid: "3444614"
 
 Jako podnikový uživatel můžete používat [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty, které musí být generovány v souladu s právními požadavky různých zemí či oblastí. Pokud tyto požadavky vyžadují, aby odchozí dokumenty byly generovány v různých jazycích pro různé země nebo regiony, můžete nakonfigurovat jeden [formát](general-electronic-reporting.md#FormatComponentOutbound) ER, který obsahuje zdroje závislé na jazyce. Tímto způsobem můžete znovu použít formát ke generování odchozích dokumentů pro různé země nebo regiony. Možná budete také chtít použít jediný formát ER k vygenerování odchozího dokumentu v různých jazycích pro odpovídající zákazníky, prodejce, dceřiné společnosti nebo jiné strany.
 
-Datové modely a mapování modelů ER můžete nakonfigurovat jako zdroje dat konfigurovaných formátů ER a definovat tok dat, který určuje, jaká aplikační data se vkládají do generovaných dokumentů. Jako [poskytovatel](general-electronic-reporting.md#Provider) konfigurace ER můžete [publikovat](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) nakonfigurované [datové modely](general-electronic-reporting.md#data-model-and-model-mapping-components), [modelování map](general-electronic-reporting.md#data-model-and-model-mapping-components) a [formáty](general-electronic-reporting.md#FormatComponentOutbound) jako komponenty řešení ER pro generování specifických odchozích dokumentů. Můžete také dovolit zákazníkům [nahrát](general-electronic-reporting-manage-configuration-lifecycle.md) publikované řešení ER tak, aby mohlo být použito a přizpůsobeno. Pokud očekáváte, že zákazníci budou mluvit jinými jazyky, můžete nakonfigurovat komponenty ER tak, aby obsahovaly prostředky závislé na jazyce. Tímto způsobem může být obsah editovatelné komponenty ER prezentován v uživatelsky preferovaném jazyce zákazníka v době návrhu.
+Datové modely a mapování modelů ER můžete nakonfigurovat jako zdroje dat konfigurovaných formátů ER a definovat tok dat, který určuje, jaká aplikační data se vkládají do generovaných dokumentů. Jako [poskytovatel](general-electronic-reporting.md#Provider) konfigurace ER můžete [publikovat](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) nakonfigurované [datové modely](general-electronic-reporting.md#data-model-and-model-mapping-components), [modelování map](general-electronic-reporting.md#data-model-and-model-mapping-components) a [formáty](general-electronic-reporting.md#FormatComponentOutbound) jako komponenty řešení ER pro generování specifických odchozích dokumentů. Můžete také dovolit zákazníkům [nahrát](general-electronic-reporting-manage-configuration-lifecycle.md) publikované řešení ER tak, aby mohlo být použito a přizpůsobeno. Pokud očekáváte, že zákazníci budou mluvit jinými jazyky, můžete nakonfigurovat komponenty ER tak, aby obsahovaly prostředky závislé na jazyce. Tímto způsobem může být obsah editovatelné komponenty ER prezentován v uživatelsky preferovaném jazyce zákazníka v době návrhu.
 
 Zdroje závislé na jazyce můžete nakonfigurovat jako štítky ER. Tyto štítky pak můžete použít ke konfiguraci součástí ER pro následující účely:
 

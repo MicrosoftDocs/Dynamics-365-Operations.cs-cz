@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209207"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813827"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -55,7 +55,7 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md)
 -   [Nastavení a správa dodavatelské spolupráce](set-up-maintain-vendor-collaboration.md)
--   [Ukázkový skript příchozích zásob dodávky pro Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
+-   [Ukázkový skript příchozích zásob dodávky pro Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
 -   [Sledování zásob dodávky s použitím dodavatelské spolupráce](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md) (pouze verze Dynamics AX z února a května 2016)
 -   [Zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z 2016 a května 2016)
@@ -98,7 +98,7 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md)
 -   [Zaznamenání příjmu zboží na nákupní objednávce](tasks/record-receipt-goods-purchase-order.md)
 -   [Workflow nákupního požadavku](purchase-requisitions-workflow.md)
--   [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (dokumentace)
+-   [Definování workflowů pracovních postupů pro nákupní žádanky](https://www.microsoft.com/download/details.aspx?id=101821) (dokumentace)
 -   [Přehled zásad nákupu](purchase-policies.md)
 -   [Vytvoření zásad nákupu](tasks/create-purchasing-policies.md)
 

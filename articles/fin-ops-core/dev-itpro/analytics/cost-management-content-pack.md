@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771510"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759249"
 ---
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
@@ -176,7 +176,7 @@ Data z aplikace se používají k naplnění stránek sestav v obsahu **Správa 
 
 Klíčová agregovaná opatření následujících objektů se používají jako základ obsahu Power BI.
 
-| Objekt                          | Klíčová opatření agregace | Datový zdroj pro Finance and Operations | Pole               |
+| Objekt                          | Klíčová opatření agregace | Zdroj dat pro Finance and Operations | Pole               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Množství                     | CostObjectStatementCache               | Množství              |
 | CostObjectStatementCacheMonthly | Množství                   | CostObjectStatementCache               | Množství                 |
@@ -193,10 +193,10 @@ Následující tabulka zobrazuje klíčová vypočítaná měření v obsahu Pow
 | Množství Konečný zůstatek                | Množství koncového zůstatku = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Změna netto                         | Čistá změna = SUM(\[AMOUNT\]) |
 | Změna čistého množství                    | Množství čisté změny = SUM(\[QTY\]) |
-| Ukazatel obratu zásob podle částky | Ukazatel obratu zásob podle částky = if(OR(\[Průměrný zůstatek zásob\] \<= 0, \[Prodané zásoby nebo spotřebované zboží\] \>= 0), 0, ABS(\[Prodané zásoby nebo spotřebované zboží\])/\[Průměrný zůstatek zásob\]) |
+| Ukazatel obratu zásob podle částky | Ukazatel obratu zásob podle částky = if(OR(\[Průměrný zůstatek zásob\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Prodané zásoby nebo spotřebované zboží\])/\[Průměrný zůstatek zásob\]) |
 | Průměrný zůstatek zásob          | Průměrný zůstatek zásob = ((\[konečný zůstatek\] + \[počáteční zůstatek\]) / 2) |
 | Dny zásob na skladě             | Denní zásoby množství na skladě = 365 / CostObjectStatementEntries\[Ukazatel obratu zásob podle částky\] |
-| Přesnost zásob                 | Přesnost zásob podle částky = IF(\[Konečný zůstatek\] \<= 0, IF(OR(\[Spočítaná částka zásob\] \<\> 0, \[Konečný zůstatek\] \< 0), 0, 1), MAX(0, (\[Konečný zůstatek\] - ABS(\[Spočítaná částka zásob\]))/\[Konečný zůstatek\])) |
+| Přesnost zásob                 | Přesnost zásob podle částky = IF(\[Konečný zůstatek\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Konečný zůstatek\] \< 0), 0, 1), MAX(0,(\[Konečný zůstatek\] - ABS(\[Spočítaná částka zásob\]))/\[Konečný zůstatek\])) |
 
 Následující tabulka uvádí klíčové dimenze, které se používají jako filtry k rozdělení agregovaných měření, aby bylo možné dosáhnout většího odstupňování a získat hlubší analytický přehled.
 

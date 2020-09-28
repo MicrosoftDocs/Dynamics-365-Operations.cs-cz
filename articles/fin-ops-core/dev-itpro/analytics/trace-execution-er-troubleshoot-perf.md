@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550641"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760024"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -101,7 +101,7 @@ Předpokládejme, že jste začali navrhovat nové řešení elektronického vý
 
 Předpokládejme, že jste dokončili návrh první verze řešení elektronického výkaznictví. Nyní ji chcete vyzkoušet ve své instanci a analyzovat výkon provedení.
 
-### <a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do Finance and Operations
 
 1. Přihlaste se k instanci aplikace.
 2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
@@ -146,7 +146,7 @@ Odpovídající verze konfigurací datových modelů a mapování modelů jsou a
 
     ![Dialogové okno Parametry uživatele](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>Spuštění formátu elektronického výkaznictví
+### <a name="run-the-er-format"></a><a id='run-format'></a>Spuštění formátu elektronického výkaznictví
 
 1. Vyberte společnost **DEMF**.
 2. Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
@@ -157,7 +157,7 @@ Povšimněte si, že vygenerovaný soubor uvádí informace o 265 transakcích p
 
 ## <a name="review-the-execution-trace"></a>Kontrola sledování provádění
 
-### <a id='export-trace'></a>Export generovaného trasovacího programu z aplikace
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a>Export generovaného trasovacího programu z aplikace
 
 Sledování výkonu je odděleno od zdrojového formátu elektronického výkaznictví a lze ho serializovat do externího souboru ZIP.
 
@@ -176,7 +176,7 @@ Sledování výkonu je odděleno od zdrojového formátu elektronického výkazn
 
 Všimněte si, že přidružení mezi sledováním výkonu, které bylo vygenerováno pro spuštěný formát elektronického výkaznictví, a mapováním modelu elektronického výkaznictví, je založeno na použitém kořenovém popisovači a na společném datovém modelu. Číslování verzí formátu a mapování modelu není zvažováno. Nastavení příznaku **Výchozí pro mapování modelu** pro mapování modelu se také nebere v úvahu.
 
-### <a id='import-trace'></a>Import generovaného sledování do RCS
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a>Import generovaného sledování do RCS
 
 1. V RCS v pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 2. Na stránce **Konfigurace** ve stromové struktuře konfigurací rozbalte položku **Model sledování výkonu** a vyberte položku **Formát sledování výkonu**.
@@ -201,7 +201,7 @@ Všimněte si, že přidružení mezi sledováním výkonu, které bylo vygenero
 
 2. Zavřete stránku **návrháře formátu**.
 
-### <a id='use-trace'></a>Použití sledování výkonu pro analýzu v RCS – mapování modelu
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>Použití sledování výkonu pro analýzu v RCS – mapování modelu
 
 1. V RCS na stránce **Konfigurace** ve stromové struktuře konfigurace vyberte položku **Mapování sledování výkonu**.
 2. V podokně akcí zvolte **Návrhář**.
@@ -301,7 +301,7 @@ Opakujte kroky z části [Import konfigurace elektronického výkaznictví z RCS
 
 Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
 
-## <a name="review-the-execution-trace"></a>Kontrola sledování provádění
+## <a name="work-with-the-execution-trace"></a>Práce se sledováním spuštění
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Export generovaného trasovacího programu z aplikace
 
@@ -347,7 +347,7 @@ Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#r
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví.
 
-![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informace o sledování výkonu ve formátu PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Použití externích nástrojů ke kontrole sledování provádění, které obsahuje databázové dotazy
 
@@ -363,7 +363,7 @@ Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronické
     - Nastavte možnost **Shromáždit statistiky dotazů** na **Ano**.
     - Nastavte možnost **Dotaz na sledování** na **Ano**.
 
-    ![Dialogové okno Parametry uživatele](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Sekce sledování spuštění, dialogové okno Parametry uživatelů](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
 
@@ -372,3 +372,8 @@ Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#r
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví. Sledování nyní zahrnuje podrobné informace o přístupu k databázi SQL během provádění formátu elektronického výkaznictví.
 
 ![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>Další prostředky
+
+- [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+- [Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE](er-calculated-field-ds-performance.md)

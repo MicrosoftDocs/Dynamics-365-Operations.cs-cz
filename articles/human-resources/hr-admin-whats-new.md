@@ -1,9 +1,9 @@
 ---
-title: Co je nového a co se změnilo v Human Resources
-description: Každý týden poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedené články podávají podrobné informace o změnách provedených v jednotlivých týdnech.
+title: Co je nového a co se změnilo v Human Resources
+description: Každý týden poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedená témata podávají podrobné informace o změnách provedených v jednotlivých týdnech.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f814395405003464e9f101fb0f46b64e64971b68
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712159"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760294"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
+# <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
-Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Články v tomto oddílu podávají podrobné informace o změnách provedených v jednotlivých vydáních.
+Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedená témata podávají podrobné informace o změnách provedených v jednotlivých vydáních.
 
-Další informace o nadcházejících funkcích a procesu aktualizace pro Human Resources naleznete v následujících článcích:
+>[!NOTE]
+>Kvůli svátkům je plán vydání pro listopad a prosinec 2020 následující:
+>
+>- Vydání v listopadu: 2. listopadu – 13. listopadu
+>- Vydání v prosinci: 30. listopadu – 11. prosince
+> 
+>Kadence dvoutýdenního vydání bude obnovena jako obvykle 11. ledna 2021.
+
+Další informace o nadcházejících funkcích a procesu aktualizace pro Human Resources naleznete v následujících článcích: 
 
 - [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -41,6 +49,7 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících článcích:
 
+[3. září 2020](hr-whats-new-2020-09-03.md)</br>
 [20. srpna 2020](hr-whats-new-2020-08-20.md)</br>
 [6. srpna 2020](hr-whats-new-2020-08-06.md)</br>
 [23. července 2020](hr-whats-new-2020-07-23.md)</br>

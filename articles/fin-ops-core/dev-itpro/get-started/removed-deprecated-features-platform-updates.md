@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678215"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803132"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -33,12 +33,10 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
 
-> [!NOTE]
-> Verze 10.0.13 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Vlastní kód definovaný ve vlastnostech sestavy SSRS 
 

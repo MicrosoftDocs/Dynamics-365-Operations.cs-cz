@@ -3,7 +3,7 @@ title: Aktualizace procesu
 description: Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace při změnách aplikací a platforem.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431169"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759952"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako 
 
 Aktualizace jsou vydávány v pravidelných intervalech pro všechna prostředí. Aplikace Human Resources je podporována podle [Zásad životního cyklu společnosti Microsoft](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), které poskytují konzistentní a předpověditelné pokyny pro dostupnost podpory.
 
-## <a name="release-cadence"></a>Interval vydávání
+## <a name="release-cadence"></a>Interval vydávání 
 
 Aktualizace aplikace Human Resources se automaticky použijí na všechna prostředí. Aplikace Human Resources poskytuje dva typy vydání:
 
@@ -56,14 +56,12 @@ Vydání jsou kontrolována, testována a ověřována v interním prostředí.
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Uvolnit výjimky frekvence v 2020
 
-Následující data představují výjimky z plánu pravidelných vydání:
+Kvůli svátkům je plán vydání pro listopad a prosinec 2020 následující:
 
-| Datum | popis |
-| --- | --- |
-| Týden zahrnující 23. listopad | Žádné aktualizace |
-| Týden zahrnující 14. prosinec | Pouze menší aktualizace |
-| Týden zahrnující 21. prosinec | Žádné aktualizace |
-| Týden zahrnující 28. prosinec | Žádné aktualizace |
+- Vydání v listopadu: 2. listopadu – 13. listopadu
+- Vydání v prosinci: 30. listopadu – 11. prosince
+ 
+Kadence dvoutýdenního vydání bude obnovena jako obvykle 11. ledna 2021.
 
 ## <a name="communications"></a>Sdělení
 

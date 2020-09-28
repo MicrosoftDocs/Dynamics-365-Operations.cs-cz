@@ -1,9 +1,9 @@
 ---
-title: Odeslání konfigurace ER do služby Lifecycle Services
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS).
+title: Odeslání konfigurace do služby Lifecycle Services
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci elektronického výkaznictví a odeslat ji do služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143272"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810684"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a>Odeslání konfigurace ER do služby Lifecycle Services
+# <a name="upload-a-configuration-into-lifecycle-services"></a>Odeslání konfigurace do služby Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS).
+Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou [konfiguraci elektronického výkaznictví](../general-electronic-reporting.md#Configuration) a odeslat ji do [knihovny majetku na úrovni projektu](../../lifecycle-services/asset-library.md) ve službě Microsoft Dynamics Lifecycle Services (LCS).
 
-V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc a odešlete ji do LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace ER se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". K dokončení tohoto postupu je nutný také přístup k LCS.
+V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Litware, Inc a odešlete ji do služby LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace elektronického výkaznictví se sdílí mezi společnostmi. K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Je rovněž vyžadován přístup k LCS.
 
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Vyberte 'Litware, Inc.' a nastavte ji jako aktivní.
-3. Klikněte na Konfigurace.
+1. Přihlaste se k aplikaci použitím některé z následující role:
+
+    - Návrhář elektronického výkaznictví
+    - Správce systému
+
+2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+3. Vyberte **Litware, Inc.** a označte ji jako **Aktivní**.
+4. Vyberte **Konfigurace**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Ujistěte se, že aktuální uživatel Dynamics 365 Finance je členem projektu LCS, který obsahuje [knihovnu majetku](../../lifecycle-services/asset-library.md#asset-library-support), která slouží k importu konfigurací elektronického výkaznictví.
+>
+> K projektu LCS nemůžete přistupovat z úložiště elektronického výkaznictví, které představuje jinou doménu, než je doména použitá v aplikaci Finance. Pokud to zkusíte, zobrazí se prázdný seznam projektů LCS a nebudete moci importovat konfigurace elektronického výkaznictví z knihovny majetku na úrovni projektu v LCS. Chcete-li získat přístup ke knihovnám majektu na úrovni projektu z úložiště elektronického výkaznictví, které slouží k importu konfigurací elektronického výkaznictví, přihlaste se do aplikace Finance pomocí přihlašovacích údajů uživatele, který patří ke klientovi (doméně), pro který byla zřízena aktuální instance Finance.
 
 ## <a name="create-a-new-data-model-configuration"></a>Vytvoření nové konfigurace datového modelu
-1. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-    * Vytvoříte konfiguraci, která obsahuje vzorový model dat pro elektronické doklady. Tato konfigurace modelu dat bude odeslána do LCS později.  
-2. V poli Název zadejte Vzorová konfigurace modelu.
-    * Vzorová konfigurace modelu  
-3. V poli Popis zadejte „Vzorová konfigurace modelu“.
-    * Vzorová konfigurace modelu  
-4. Klepněte na možnost Vytvořit konfiguraci.
-5. Klikněte na Návrhář modelů.
-6. Klikněte na položku Nová.
-7. Do pole Název zadejte Vstupní bod.
-    * Vstupní bod  
-8. Klepněte na možnost Přidat.
-9. Klikněte na položku Uložit.
-10. Zavřete stránku.
-11. Klikněte na položku Změnit stav.
-12. Klikněte na tlačítko Dokončit.
-13. Klikněte na tlačítko OK.
 
-## <a name="register-a-new--repository"></a>Registrace nového úložiště
-1. Zavřete stránku.
-2. Klikněte na možnost Úložiště.
-    * To umožňuje otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.  
-3. Klepnutím na možnost Přidat otevřete dialogové okno.
-    * Tímto způsobem můžete přidat nové úložiště.  
-4. V poli Typ úložiště konfigurace vyberte LCS.
-5. Klikněte na Vytvořit úložiště.
-6. V poli Projekt zadejte nebo vyberte hodnotu.
-    * Vyberte příslušný projekt LCS. Musíte mít přístup k tomuto projektu.  
-7. Klikněte na tlačítko OK.
-    * Vytvořte nový záznam v úložišti.  
-8. Označte v seznamu vybraný řádek.
-    * Vybrat záznam úložiště LCS.  
-    * Všimněte si, registrované úložiště je označeno aktuálním poskytovatelem, tj. pouze konfigurace ve vlastnictví daného poskytovatele mohou být umístěny do tohoto úložiště a následně odeslány do vybraného projektu LCS.  
-9. Klikněte na možnost Otevřít.
-    * Otevřete úložiště a prohlédněte si seznam konfigurací ER. Bude prázdný, pokud tento projekt nebyl dosud použit pro sdílení konfigurací ER.  
-10. Zavřete stránku.
+1. Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
+2. Na stránce **Konfigurace** výběrem možnosti **Vytvořit konfiguraci** otevřete rozevírací dialogové okno.
+
+    V tomto příkladu vytvoříte konfiguraci, která obsahuje vzorový model dat pro elektronické doklady. Tato konfigurace modelu dat bude odeslána do LCS později.
+
+3. V poli **Název** zadejte **Vzorová konfigurace modelu**.
+4. V poli **Popis** zadejte **Vzorová konfigurace modelu**.
+5. Vyberte **Vytvořit konfiguraci**.
+6. Vyberte **Návrhář modelů**.
+7. Zvolte **Nové**.
+8. Do pole **Název** zadejte **Vstupní bod**.
+9. Vyberte **přidat**.
+10. Zvolte **Uložit**.
 11. Zavřete stránku.
+12. Vyberte **Změnit stav**.
+13. Zvolte **Dokončit**.
+14. Vyberte **OK**.
+15. Zavřete stránku.
 
-## <a name="upload-configuration-into-lcs"></a>Odeslání konfigurace do LCS
-1. Klikněte na Konfigurace.
-2. Ve stromovém zobrazení vyberte možnost Vzorová konfigurace modelu.
-    * Vyberte vytvořenou konfiguraci, která již byla dokončena.  
+## <a name="register-a-new-repository"></a>Registrace nového úložiště
+
+1. Přejděte do části **Správa organizace \> Pracovní prostory \> Elektronické výkaznictví**.
+
+2. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Litware Inc.**
+
+3. Na dlaždici **Litware, Inc.** vyberte **Úložiště**.
+
+    Nyní můžete otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.
+
+4. Výběrem možnosti **Přidat** otevřete rozevírací dialogové okno.
+
+    Nyní můžete přidat nové úložiště.
+
+5. V poli **Typ úložiště konfigurace** vyberte **LCS**.
+6. Zvolte **Vytvořit úložiště**.
+7. V poli **Projekt** zadejte nebo vyberte hodnotu.
+
+    V tomto příkladu vyberte požadovaný projekt LCS. Musíte mít [přístup](#accessconditions) k tomuto projektu.
+
+8. Vyberte **OK**.
+
+    Vytvořte nový záznam v úložišti.
+
+9. Označte na seznamu vybraný řádek.
+
+    V tomto příkladu vyberte záznam úložiště **LCS**.
+
+    Všimněte si, že registrované úložiště je označeno aktuálním poskytovatelem. Jinými slovy, do tohoto úložiště lze umístit pouze konfigurace, které vlastní tento poskytovatel, a proto je možné je odeslat do vybraného projektu LCS.
+
+10. Zvolte **Otevřít**.
+
+    Tím otevřete úložiště se seznamem konfigurací elektronického výkaznictví. Pokud vybraný projekt zatím nebyl použit pro sdílení konfigurací elektronického výkaznictví, seznam bude prázdný.
+
+11. Zavřete stránku.
+12. Zavřete stránku.
+
+## <a name="upload-a-configuration-into-lcs"></a>Odeslání konfigurace do LCS
+
+1. Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
+2. Na stránce **Konfigurace** ve stromové struktuře konfigurací vyberte položku **Vzorová konfigurace modelu**.
+
+    Muíte vybrat vytvořenou konfiguraci, která již byla dokončena.
+
 3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte verzi vybrané konfigurace se stavem "Dokončeno".  
-4. Klikněte na položku Změnit stav.
-5. Klepněte na Sdílet.
-    * Stav konfigurace se změní z "Dokončeno" na 'Sdíleno' během publikování v LCS.  
-6. Klepněte na tlačítko OK.
-7. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte verzi konfigurace se stavem „Sdílena“.  
-    * Všimněte si, že stav vybrané verze se změnil z "Dokončeno" na 'Sdíleno'.  
-8. Zavřete stránku.
-9. Klikněte na možnost Úložiště.
-    * To umožňuje otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.  
-10. Klikněte na možnost Otevřít.
-    * Vyberte úložiště LCS a otevřete je.  
-    * Všimněte si, že vybraná konfigurace je uvedena jako aktiva vybraného projektu LCS.  
-    * Otevřete LCS pomocí https://lcs.dynamics.com. Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete 'Knihovnu majetku' pro tento projekt a rozbalte obsah s typem majetku 'Konfigurace GER' – odeslané konfigurace ER budou nyní k dispozici. Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.  
 
+    Pro tento příklad vyberte verzi vybrané konfigurace ve stavu **Dokončeno**.
+
+4. Vyberte **Změnit stav**.
+5. Vyberte **Sdílet**.
+
+    Stav konfigurace se změní z **Dokončeno** na **Sdíleno**, když je konfigurace publikována v LCS.
+
+6. Vyberte **OK**.
+7. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+
+    Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.
+
+    Všimněte si, že stav vybrané verze se změnil z **Dokončeno** na **Sdíleno**.
+
+8. Zavřete stránku.
+9. Vyberte **Úložiště**.
+
+    Nyní můžete otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.
+
+10. Zvolte **Otevřít**.
+
+    V tomto příkladu vyberte úložiště **LCS** a otevřete jej.
+
+    Všimněte si, že vybraná konfigurace je zobrazena jako majetek vybraného projektu LCS.
+
+11. Otevřete LCS přechodem na <https://lcs.dynamics.com>.
+12. Otevřete projekt, který byl dříve použit pro registraci úložiště.
+13. Otevřete knihovnu majetku projektu.
+14. Vyberte typ majetku **Konfigurace GER**.
+
+    V seznamu by měla být uvedena konfigurace elektronického výkaznictví, kterou jste nahráli.
+
+    Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.

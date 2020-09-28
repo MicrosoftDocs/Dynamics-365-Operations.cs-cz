@@ -3,7 +3,7 @@ title: Vytvoření plánu volna a absence
 description: Vytvářejte plány volna v Dynamics 365 Human Resources pro různé typy volna.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428702"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796490"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
 
@@ -43,7 +43,15 @@ Můžete také vytvářet zaměstnanecké výhody na základě pozice, napříkl
 
 2. V části **Detaily** zadejte **název**, **počáteční datum**, **popis** a **typ pracovního volna** pro váš plán.
 
-Pokud funkce **Konfiguruje více typů pracovního volna pro jedno pracovní volno a plán absencí** povolena, jsou typy pracovního volna konfigurovány v **Plánu časového rozlišení** místo **Podrobností**. Pro každý záznam v tabulce rozvrhu časového rozlišení můžete definovat typ pracovního volna.
+Pokud funkce **Konfiguruje více typů pracovního volna pro jedno pracovní volno a plán absencí** povolena, jsou typy pracovního volna konfigurovány v **Plánu časového rozlišení** místo **Podrobností**. Pro každý záznam v tabulce rozvrhu časového rozlišení můžete definovat typ pracovního volna. Kromě toho, když je tato funkce povolená, budete muset použít nové datové entity pro integraci nebo jiné scénáře, kde potřebujete použít entity. 
+
+Nové entity jsou:
+
+- Transakce fondu pracovního volna a absence V2
+- Registrace k pracovnímu volnu a absenci V2
+- Úroveň plánu pracovního volna a absence V2
+- Plán pracovního volna a absence V2
+- Žádost o pracovní volno V2
 
  > [!IMPORTANT]
    > Povolíte-li tuto funkci, nebude ji možné vypnout.

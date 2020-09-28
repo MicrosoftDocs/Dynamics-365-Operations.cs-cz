@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628902"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759928"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -93,7 +93,7 @@ V případě vyhledávání vzdáleného zákazníka se ID zákazníka nezobrazu
 
 ### <a name="enhancements-to-local-customer-search"></a>Vylepšení vyhledávání místních zákazníků
 
-Hledání, které jsou založeny na telefonním čísle, byla zjednodušena. Tato hledání nyní ignorují speciální znaky, například mezery, pomlčky nebo hranaté závorky, které mohly být přidané při vytvoření odběratele. Pokladníci si tak nemusí dělat starosti s formátem telefonního čísla při hledání. Mohou také vyhledávat zákazníky zadáním částečného telefonního čísla. Pokud telefonní číslo zahrnuje speciální znaky, lze je najít také hledáním čísel, která se zobrazí za těmito znaky. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **123**, **456**, **7890**, nebo **1234567890**, nebo zadáním několika počátečních čísel telefonního čísla.
+Hledání, které jsou založeny na telefonním čísle, byla zjednodušena. Tato hledání nyní ignorují speciální znaky, například mezery, pomlčky nebo hranaté závorky, které mohly být přidané při vytvoření odběratele. Pokladníci si tak nemusí dělat starosti s formátem telefonního čísla při hledání. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **1234567890**, nebo zadáním několika počátečních čísel telefonního čísla.
 
 > [!NOTE]
 > Zákazník může mít více telefonních čísel a více e-mailů. Algoritmus vyhledávání zákazníků také prochází těmito sekundárními e-maily a telefonními čísly, ale stránka s výsledky vyhledávání zákazníků zobrazuje pouze primární e-mail a telefonní číslo. To může způsobit určitý zmatek, protože vrácené výsledky zákazníka nezobrazí hledaný e-mail nebo telefonní číslo. V příštím vydání plánujeme vylepšit obrazovku výsledků vyhledávání zákazníků tak, aby se tyto informace zobrazovaly.

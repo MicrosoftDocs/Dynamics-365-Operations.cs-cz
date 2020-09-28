@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686663"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761290"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -59,10 +59,13 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 
 - **Značka záhlaví** – Tato vlastnost definuje značku nadpisu produktu. Je-li buy box v horní části stránky, měla by být tato vlastnost nastavena na **H1**, aby vyhovovala standardům usnadnění. 
 
+- **Povolit doporučení typu „podobný vzhled“** – Tato vlastnost umožňuje zobrazit v buy boxu odkazy na produkty, které vypadají podobně jako aktuálně zobrazená položka. Tato funkce je k dispozici v aplikaci Commerce verze 10.0.13 a novější.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
 - **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Další informace o tomto modulu naleznete v části [Modul galerie médií](media-gallery-module.md).
 - **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v části [Modul volby obchodu](store-selector.md).
+- **Sdílení na sociálních sítích** – Tento modul lze přidat do buy boxu, aby uživatelé mohli sdílet informace o produktu na sociálních médiích. Další informace naleznete v tématu [Modul pro sdílení na sociálních sítích](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
 
@@ -85,8 +88,8 @@ Modul buy boxu načítá informace o produktu pomocí rozhraní API Commerce Sca
 Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul **Buybox**.
-1. V části **Název fragmentu stránky** zadejte název pro **Fragment buy boxu** a poté vyberte **OK**.
+1. V dialogovém okně **Nový fragment** vyberte modul **Buybox**.
+1. V části **Název fragmentu** zadejte název pro **Fragment buy boxu** a poté vyberte **OK**.
 1. V pozici **Galeria médií** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Galerie médií** a poté klikněte na tlačítko **OK**.
 1. V pozici **Volba obchodu** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
@@ -96,13 +99,13 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona stránky podrobností o produktu** a poté klikněte na tlačítko **OK**.
 1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
-1. V pozici **Hlavní** na výchozí stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
-1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. V pozici **Hlavní** na výchozí stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
 1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona stránky podrobností o produktu**. V části **Název stránky** zadejte **Stránka podrobností o produktu** a poté klikněte na tlačítko **OK**.
-1. V pozici **Hlavní** na nové stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment stránky**.
-1. V dialogovém okně **Vybrat fragment stránky** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Uložte stránku a zobrazte náhled. Do adresy URL stránky náhledu přidejte parametr řetězce dotazu **?productid=&lt;id produktu&gt;**. Tímto způsobem se pro načtení a vykreslení stránky náhledu použije kontext produktu.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
 
@@ -118,8 +121,6 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 [Modul košíku](add-cart-module.md)
 
-[Modul ikony košíku](cart-icon-module.md)
-
 [Modul pokladny](add-checkout-module.md)
 
 [Modul potvrzení objednávky](order-confirmation-module.md)
@@ -127,5 +128,7 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+[Modul pro sdílení na sociálních sítích](social-share-module.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
