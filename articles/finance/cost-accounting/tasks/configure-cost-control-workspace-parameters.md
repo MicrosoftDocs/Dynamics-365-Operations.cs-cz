@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
@@ -15,46 +16,46 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46d77a632b0d2939d9a9f561e7c761845169629
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 11e1edc435cac100bfef15299251c1863103b568
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144466"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759201"
 ---
-# <a name="configure-cost-control-workspace-parameters"></a><span data-ttu-id="d9e11-103">Konfigurace parametrů pracovního prostoru řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="d9e11-103">Configure cost control workspace parameters</span></span>
+# <a name="configure-cost-control-workspace-parameters"></a><span data-ttu-id="8e0a0-103">Konfigurace parametrů pracovního prostoru řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="8e0a0-103">Configure cost control workspace parameters</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d9e11-104">Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby vedoucí pracovníci na různých úrovních v rámci organizace mohli získat přehled o svých objektech nákladů, jako jsou nákladová střediska nebo skupiny produktů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-104">Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups.</span></span> <span data-ttu-id="d9e11-105">K vytvoření tohoto záznamu jsou použita ukázková data společnosti USP2.</span><span class="sxs-lookup"><span data-stu-id="d9e11-105">The USP2 demo company was used to create this recording.</span></span>
+<span data-ttu-id="8e0a0-104">Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby vedoucí pracovníci na různých úrovních v rámci organizace mohli získat přehled o svých objektech nákladů, jako jsou nákladová střediska nebo skupiny produktů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-104">Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups.</span></span> <span data-ttu-id="8e0a0-105">K vytvoření tohoto záznamu jsou použita ukázková data společnosti USP2.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-105">The USP2 demo company was used to create this recording.</span></span>
 
-1. <span data-ttu-id="d9e11-106">Přejděte na Nákladové účetnictví > Nastavení > Konfigurace pracovního prostoru pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-106">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
-2. <span data-ttu-id="d9e11-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d9e11-107">Click New.</span></span>
-3. <span data-ttu-id="d9e11-108">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d9e11-108">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="d9e11-109">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="d9e11-109">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="d9e11-110">Vyberte možnost Ano v poli Publikováno.</span><span class="sxs-lookup"><span data-stu-id="d9e11-110">Select Yes in the Published field.</span></span>
-    * <span data-ttu-id="d9e11-111">Pokud tuto možnost nastavíte na Ano, uživatelé s přiřazenou některou z těchto rolí si mohou zobrazit sestavu v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní, úředník na pozici nákladového účetního nebo kontrolor objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-111">If you set this option to Yes, users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, or cost object controller.</span></span> <span data-ttu-id="d9e11-112">Pokud tuto možnost nastavíte na Ne, pouze uživatelé s přiřazenou některou z těchto rolí si mohou zobrazit sestavu v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní nebo úředník na pozici nákladového účetního.</span><span class="sxs-lookup"><span data-stu-id="d9e11-112">If you set this option to No, only users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, or cost accountant clerk.</span></span>  
-6. <span data-ttu-id="d9e11-113">Rozbalte oddíl Filtrování dat.</span><span class="sxs-lookup"><span data-stu-id="d9e11-113">Expand the Data filtering section.</span></span>
-7. <span data-ttu-id="d9e11-114">V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-114">In the Cost control unit field, enter or select a value.</span></span>
-8. <span data-ttu-id="d9e11-115">V poli Původní verze rozpočtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-115">In the Budget original version field, enter or select a value.</span></span>
-9. <span data-ttu-id="d9e11-116">V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-116">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
-10. <span data-ttu-id="d9e11-117">V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-117">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-11. <span data-ttu-id="d9e11-118">Rozbalte část Přiřazení záznamů výpočtů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-118">Expand the Assign calculation records section.</span></span>
-12. <span data-ttu-id="d9e11-119">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="d9e11-119">Click New.</span></span>
-13. <span data-ttu-id="d9e11-120">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d9e11-120">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="d9e11-121">V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-121">In the Fiscal calendar period field, enter or select a value.</span></span>
-15. <span data-ttu-id="d9e11-122">V poli Aktuální verze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-122">In the Actual version field, enter or select a value.</span></span>
-16. <span data-ttu-id="d9e11-123">Rozbalte část Fiskální období dle sloupce.</span><span class="sxs-lookup"><span data-stu-id="d9e11-123">Expand the Fiscal periods per column section.</span></span>
-17. <span data-ttu-id="d9e11-124">Vyberte možnost Ano v poli Aktuální období.</span><span class="sxs-lookup"><span data-stu-id="d9e11-124">Select Yes in the Current period field.</span></span>
-18. <span data-ttu-id="d9e11-125">Rozbalte část Sloupce k zobrazení nákladů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-125">Expand the Columns to display for costs section.</span></span>
-19. <span data-ttu-id="d9e11-126">Vyberte možnost Ano v poli Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="d9e11-126">Select Yes in the Fixed cost field.</span></span>
-20. <span data-ttu-id="d9e11-127">Vyberte možnost Ano v poli Proměnné náklady.</span><span class="sxs-lookup"><span data-stu-id="d9e11-127">Select Yes in the Variable cost field.</span></span>
-21. <span data-ttu-id="d9e11-128">Vyberte možnost Ano v poli Celkové náklady.</span><span class="sxs-lookup"><span data-stu-id="d9e11-128">Select Yes in the Total cost field.</span></span>
-22. <span data-ttu-id="d9e11-129">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d9e11-129">Click Save.</span></span>
-23. <span data-ttu-id="d9e11-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d9e11-130">Close the page.</span></span>
-24. <span data-ttu-id="d9e11-131">Přejděte do části Nákladové účetnictví > Pracovní prostory > Řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="d9e11-131">Go to Cost accounting > Workspaces > Cost control.</span></span>
-25. <span data-ttu-id="d9e11-132">Vyberte výpis podle toho, zda chcete zobrazit pevné, proměnné, celkové nebo nezatříděné náklady pro vybraná fiskální období.</span><span class="sxs-lookup"><span data-stu-id="d9e11-132">Select a statement to see fixed, variable, total, and unclassified costs for the selected fiscal periods.</span></span>
-26. <span data-ttu-id="d9e11-133">V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-133">In the Fiscal calendar period field, enter or select a value.</span></span>
-27. <span data-ttu-id="d9e11-134">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d9e11-134">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="d9e11-135">Po výběru hierarchie dimenzí objektu nákladů rozbalte hierarchii dimenzí prvku nákladů a prohlédněte si požadované nákladové hodnoty.</span><span class="sxs-lookup"><span data-stu-id="d9e11-135">After you've selected a Cost object dimension hierarchy, expand the Cost element dimension hierarchy to see the desired cost values.</span></span> <span data-ttu-id="d9e11-136">Můžete například rozbalit hierarchii Výrobní režie a zjistit z ní hodnoty.</span><span class="sxs-lookup"><span data-stu-id="d9e11-136">For example, you can expand the hierarchy to Manufacturing overhead to see the value.</span></span>  
+1. <span data-ttu-id="8e0a0-106">Přejděte na Nákladové účetnictví > Nastavení > Konfigurace pracovního prostoru pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-106">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
+2. <span data-ttu-id="8e0a0-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-107">Click New.</span></span>
+3. <span data-ttu-id="8e0a0-108">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-108">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="8e0a0-109">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-109">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="8e0a0-110">Vyberte možnost Ano v poli Publikováno.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-110">Select Yes in the Published field.</span></span>
+    * <span data-ttu-id="8e0a0-111">Pokud tuto možnost nastavíte na Ano, uživatelé s přiřazenou některou z těchto rolí si mohou zobrazit sestavu v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní, úředník na pozici nákladového účetního nebo kontrolor objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-111">If you set this option to Yes, users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, or cost object controller.</span></span> <span data-ttu-id="8e0a0-112">Pokud tuto možnost nastavíte na Ne, pouze uživatelé s přiřazenou některou z těchto rolí si mohou zobrazit sestavu v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní nebo úředník na pozici nákladového účetního.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-112">If you set this option to No, only users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, or cost accountant clerk.</span></span>  
+6. <span data-ttu-id="8e0a0-113">Rozbalte oddíl Filtrování dat.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-113">Expand the Data filtering section.</span></span>
+7. <span data-ttu-id="8e0a0-114">V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-114">In the Cost control unit field, enter or select a value.</span></span>
+8. <span data-ttu-id="8e0a0-115">V poli Původní verze rozpočtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-115">In the Budget original version field, enter or select a value.</span></span>
+9. <span data-ttu-id="8e0a0-116">V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-116">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+10. <span data-ttu-id="8e0a0-117">V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-117">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+11. <span data-ttu-id="8e0a0-118">Rozbalte část Přiřazení záznamů výpočtů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-118">Expand the Assign calculation records section.</span></span>
+12. <span data-ttu-id="8e0a0-119">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-119">Click New.</span></span>
+13. <span data-ttu-id="8e0a0-120">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-120">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="8e0a0-121">V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-121">In the Fiscal calendar period field, enter or select a value.</span></span>
+15. <span data-ttu-id="8e0a0-122">V poli Aktuální verze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-122">In the Actual version field, enter or select a value.</span></span>
+16. <span data-ttu-id="8e0a0-123">Rozbalte část Fiskální období dle sloupce.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-123">Expand the Fiscal periods per column section.</span></span>
+17. <span data-ttu-id="8e0a0-124">Vyberte možnost Ano v poli Aktuální období.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-124">Select Yes in the Current period field.</span></span>
+18. <span data-ttu-id="8e0a0-125">Rozbalte část Sloupce k zobrazení nákladů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-125">Expand the Columns to display for costs section.</span></span>
+19. <span data-ttu-id="8e0a0-126">Vyberte možnost Ano v poli Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-126">Select Yes in the Fixed cost field.</span></span>
+20. <span data-ttu-id="8e0a0-127">Vyberte možnost Ano v poli Proměnné náklady.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-127">Select Yes in the Variable cost field.</span></span>
+21. <span data-ttu-id="8e0a0-128">Vyberte možnost Ano v poli Celkové náklady.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-128">Select Yes in the Total cost field.</span></span>
+22. <span data-ttu-id="8e0a0-129">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-129">Click Save.</span></span>
+23. <span data-ttu-id="8e0a0-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-130">Close the page.</span></span>
+24. <span data-ttu-id="8e0a0-131">Přejděte do části Nákladové účetnictví > Pracovní prostory > Řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-131">Go to Cost accounting > Workspaces > Cost control.</span></span>
+25. <span data-ttu-id="8e0a0-132">Vyberte výpis podle toho, zda chcete zobrazit pevné, proměnné, celkové nebo nezatříděné náklady pro vybraná fiskální období.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-132">Select a statement to see fixed, variable, total, and unclassified costs for the selected fiscal periods.</span></span>
+26. <span data-ttu-id="8e0a0-133">V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-133">In the Fiscal calendar period field, enter or select a value.</span></span>
+27. <span data-ttu-id="8e0a0-134">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-134">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="8e0a0-135">Po výběru hierarchie dimenzí objektu nákladů rozbalte hierarchii dimenzí prvku nákladů a prohlédněte si požadované nákladové hodnoty.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-135">After you've selected a Cost object dimension hierarchy, expand the Cost element dimension hierarchy to see the desired cost values.</span></span> <span data-ttu-id="8e0a0-136">Můžete například rozbalit hierarchii Výrobní režie a zjistit z ní hodnoty.</span><span class="sxs-lookup"><span data-stu-id="8e0a0-136">For example, you can expand the hierarchy to Manufacturing overhead to see the value.</span></span>  
 

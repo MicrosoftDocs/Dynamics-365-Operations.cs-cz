@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e684a8e063cb3c049d13005cbcf6ebbe688af00
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 95e90289f43896b83ba98a6edefe0cd6028f4043
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041485"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744184"
 ---
-# <span data-ttu-id="c0cdf-103"><a name="CURCREDREF">Funkce elektronického výkaznictví CURCREDREF</a></span><span class="sxs-lookup"><span data-stu-id="c0cdf-103"><a name="CURCREDREF">CURCREDREF ER function</a></span></span>
+# <a name="curcredref-er-function"></a><span data-ttu-id="448ae-103">Funkce elektronického výkaznictví CURCREDREF</span><span class="sxs-lookup"><span data-stu-id="448ae-103">CURCREDREF ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c0cdf-104">Funkce `CURCREDREF` vrátí hodnotu typu *řetězec*, která představuje referenční údaj věřitele na základě číslic zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="c0cdf-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="448ae-104">Funkce `CURCREDREF` vrátí hodnotu typu *řetězec*, která představuje referenční údaj věřitele na základě číslic zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="448ae-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c0cdf-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="c0cdf-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="448ae-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="448ae-105">Syntax</span></span>
 
 ```vb
 CURCREDREF (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="c0cdf-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="c0cdf-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="448ae-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="448ae-106">Arguments</span></span>
 
-<span data-ttu-id="c0cdf-107">`invoice number digits`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="c0cdf-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="448ae-107">`invoice number digits`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="448ae-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="c0cdf-108">Textová hodnota, která představuje číslice čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="c0cdf-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="448ae-108">Textová hodnota, která představuje číslice čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="448ae-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="c0cdf-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="c0cdf-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="448ae-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="448ae-109">Return values</span></span>
 
-<span data-ttu-id="c0cdf-110">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="c0cdf-110">*String*</span></span>
+<span data-ttu-id="448ae-110">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="448ae-110">*String*</span></span>
 
-<span data-ttu-id="c0cdf-111">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="c0cdf-111">The resulting text value.</span></span>
+<span data-ttu-id="448ae-111">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="448ae-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c0cdf-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="c0cdf-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="448ae-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="448ae-112">Example</span></span>
 
-<span data-ttu-id="c0cdf-113">`CURCredRef ("VEND-200002")` vrátí **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="c0cdf-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
+<span data-ttu-id="448ae-113">`CURCredRef ("VEND-200002")` vrátí **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="448ae-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c0cdf-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="c0cdf-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="448ae-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="448ae-114">Additional resources</span></span>
 
-[<span data-ttu-id="c0cdf-115">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="c0cdf-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="448ae-115">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="448ae-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

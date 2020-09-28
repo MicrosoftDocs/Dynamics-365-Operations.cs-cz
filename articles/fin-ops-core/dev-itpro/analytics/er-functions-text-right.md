@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7169d9d3d2cdfb9f36bb77c1688922549e79ff32
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: dd53ece77b08fc9723c838da5ba08bf3825b5e56
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040864"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743704"
 ---
-# <span data-ttu-id="676c4-103"><a name="RIGHT">Funkce elektronického výkaznictví RIGHT</a></span><span class="sxs-lookup"><span data-stu-id="676c4-103"><a name="RIGHT">RIGHT ER function</a></span></span>
+# <a name="right-er-function"></a><span data-ttu-id="6e6fa-103">Funkce elektronického výkaznictví RIGHT</span><span class="sxs-lookup"><span data-stu-id="6e6fa-103">RIGHT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="676c4-104">Funkce `RIGHT` vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků od konce zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="676c4-104">The `RIGHT` function returns a *String* value that presents the specified number of characters from the end of the specified string.</span></span>
+<span data-ttu-id="6e6fa-104">Funkce `RIGHT` vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků od konce zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="6e6fa-104">The `RIGHT` function returns a *String* value that presents the specified number of characters from the end of the specified string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="676c4-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="676c4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6e6fa-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="6e6fa-105">Syntax</span></span>
 
 ```vb
 RIGHT (text, number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="676c4-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="676c4-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="6e6fa-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="6e6fa-106">Arguments</span></span>
 
-<span data-ttu-id="676c4-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="676c4-107">`text`: *String*</span></span>
+<span data-ttu-id="6e6fa-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="6e6fa-107">`text`: *String*</span></span>
 
-<span data-ttu-id="676c4-108">Hodnota typu *řetězec*, která představuje původní text.</span><span class="sxs-lookup"><span data-stu-id="676c4-108">A *String* value that represents the original text.</span></span>
+<span data-ttu-id="6e6fa-108">Hodnota typu *řetězec*, která představuje původní text.</span><span class="sxs-lookup"><span data-stu-id="6e6fa-108">A *String* value that represents the original text.</span></span>
 
-<span data-ttu-id="676c4-109">`number`: *celé číslo*</span><span class="sxs-lookup"><span data-stu-id="676c4-109">`number`: *Integer*</span></span>
+<span data-ttu-id="6e6fa-109">`number`: *celé číslo*</span><span class="sxs-lookup"><span data-stu-id="6e6fa-109">`number`: *Integer*</span></span>
 
-<span data-ttu-id="676c4-110">Počet znaků, které mají být vráceny od konce původního textu.</span><span class="sxs-lookup"><span data-stu-id="676c4-110">The number of characters that must be returned from the end of the original text.</span></span>
+<span data-ttu-id="6e6fa-110">Počet znaků, které mají být vráceny od konce původního textu.</span><span class="sxs-lookup"><span data-stu-id="6e6fa-110">The number of characters that must be returned from the end of the original text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="676c4-111">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="676c4-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="6e6fa-111">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="6e6fa-111">Return values</span></span>
 
-<span data-ttu-id="676c4-112">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="676c4-112">*String*</span></span>
+<span data-ttu-id="6e6fa-112">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="6e6fa-112">*String*</span></span>
 
-<span data-ttu-id="676c4-113">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="676c4-113">The resulting text value.</span></span>
+<span data-ttu-id="6e6fa-113">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="6e6fa-113">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="676c4-114">Příklad</span><span class="sxs-lookup"><span data-stu-id="676c4-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6e6fa-114">Příklad</span><span class="sxs-lookup"><span data-stu-id="6e6fa-114">Example</span></span>
 
-<span data-ttu-id="676c4-115">`RIGHT ("Sample", 3)` vrátí **"ple"**.</span><span class="sxs-lookup"><span data-stu-id="676c4-115">`RIGHT ("Sample", 3)` returns **"ple"**.</span></span>
+<span data-ttu-id="6e6fa-115">`RIGHT ("Sample", 3)` vrátí **"ple"**.</span><span class="sxs-lookup"><span data-stu-id="6e6fa-115">`RIGHT ("Sample", 3)` returns **"ple"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="676c4-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="676c4-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="6e6fa-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="6e6fa-116">Additional resources</span></span>
 
-[<span data-ttu-id="676c4-117">Textové funkce</span><span class="sxs-lookup"><span data-stu-id="676c4-117">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="6e6fa-117">Textové funkce</span><span class="sxs-lookup"><span data-stu-id="6e6fa-117">Text functions</span></span>](er-functions-category-text.md)

@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a518f255a4488c5ed6e007b1787e678fd88aff36
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: af588c3714069040fa339d3121e6eb404b9be979
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041715"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744640"
 ---
-# <span data-ttu-id="c2df3-103"><a name="NOT">Funkce el. výkaznictví NOT</a></span><span class="sxs-lookup"><span data-stu-id="c2df3-103"><a name="NOT">NOT ER function</a></span></span>
+# <a name="not-er-function"></a><span data-ttu-id="00162-103">Funkce el. výkaznictví NOT</span><span class="sxs-lookup"><span data-stu-id="00162-103">NOT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c2df3-104">Funkce `NOT` vrací stornovanou logickou hodnotu zadané podmínky jako *logickou hodnotu*.</span><span class="sxs-lookup"><span data-stu-id="c2df3-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
+<span data-ttu-id="00162-104">Funkce `NOT` vrací stornovanou logickou hodnotu zadané podmínky jako *logickou hodnotu*.</span><span class="sxs-lookup"><span data-stu-id="00162-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c2df3-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="c2df3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="00162-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="00162-105">Syntax</span></span>
 
 ```vb
 NOT (condition)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="c2df3-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="c2df3-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="00162-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="00162-106">Arguments</span></span>
 
-<span data-ttu-id="c2df3-107">`condition`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="c2df3-107">`condition`: *Boolean*</span></span>
+<span data-ttu-id="00162-107">`condition`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="00162-107">`condition`: *Boolean*</span></span>
 
-<span data-ttu-id="c2df3-108">Platný podmíněný výraz, který má být stornován.</span><span class="sxs-lookup"><span data-stu-id="c2df3-108">A valid conditional expression that must be reversed.</span></span>
+<span data-ttu-id="00162-108">Platný podmíněný výraz, který má být stornován.</span><span class="sxs-lookup"><span data-stu-id="00162-108">A valid conditional expression that must be reversed.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="c2df3-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="c2df3-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="00162-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="00162-109">Return values</span></span>
 
-<span data-ttu-id="c2df3-110">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="c2df3-110">*Boolean*</span></span>
+<span data-ttu-id="00162-110">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="00162-110">*Boolean*</span></span>
 
-<span data-ttu-id="c2df3-111">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="c2df3-111">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="00162-111">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="00162-111">The resulting *Boolean* value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2df3-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="c2df3-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="00162-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="00162-112">Example</span></span>
 
-<span data-ttu-id="c2df3-113">`NOT (TRUE)` vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="c2df3-113">`NOT (TRUE)` returns **FALSE**.</span></span>
+<span data-ttu-id="00162-113">`NOT (TRUE)` vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="00162-113">`NOT (TRUE)` returns **FALSE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c2df3-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="c2df3-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="00162-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="00162-114">Additional resources</span></span>
 
-[<span data-ttu-id="c2df3-115">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="c2df3-115">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="00162-115">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="00162-115">Logical functions</span></span>](er-functions-category-logical.md)

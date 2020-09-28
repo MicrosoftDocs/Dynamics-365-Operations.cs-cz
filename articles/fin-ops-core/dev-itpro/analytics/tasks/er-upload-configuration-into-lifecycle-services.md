@@ -1,9 +1,9 @@
 ---
-title: Odeslání konfigurace ER do služby Lifecycle Services
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS).
+title: Odeslání konfigurace do služby Lifecycle Services
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci elektronického výkaznictví a odeslat ji do služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143272"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810684"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="087ec-103">Odeslání konfigurace ER do služby Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="087ec-103">ER Upload a configuration into Lifecycle Services</span></span>
+# <a name="upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="343dd-103">Odeslání konfigurace do služby Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="343dd-103">Upload a configuration into Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="087ec-104">Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="087ec-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="343dd-104">Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou [konfiguraci elektronického výkaznictví](../general-electronic-reporting.md#Configuration) a odeslat ji do [knihovny majetku na úrovni projektu](../../lifecycle-services/asset-library.md) ve službě Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="343dd-104">This topic explains how a user in the System administrator or Electronic reporting developer role can create a new [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="087ec-105">V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc a odešlete ji do LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace ER se sdílí mezi společnostmi.</span><span class="sxs-lookup"><span data-stu-id="087ec-105">In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="087ec-106">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".</span><span class="sxs-lookup"><span data-stu-id="087ec-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span> <span data-ttu-id="087ec-107">K dokončení tohoto postupu je nutný také přístup k LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="343dd-105">V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Litware, Inc a odešlete ji do služby LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace elektronického výkaznictví se sdílí mezi společnostmi.</span><span class="sxs-lookup"><span data-stu-id="343dd-105">In this example, you will create a configuration and upload it into LCS for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="343dd-106">K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md).</span><span class="sxs-lookup"><span data-stu-id="343dd-106">To complete these steps, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).</span></span> <span data-ttu-id="343dd-107">Je rovněž vyžadován přístup k LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="087ec-108">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="087ec-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="087ec-109">Vyberte 'Litware, Inc.'</span><span class="sxs-lookup"><span data-stu-id="087ec-109">Select 'Litware, Inc.'</span></span> <span data-ttu-id="087ec-110">a nastavte ji jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="087ec-110">and set it as active.</span></span>
-3. <span data-ttu-id="087ec-111">Klikněte na Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="087ec-111">Click Configurations.</span></span>
+1. <span data-ttu-id="343dd-108">Přihlaste se k aplikaci použitím některé z následující role:</span><span class="sxs-lookup"><span data-stu-id="343dd-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="087ec-112">Vytvoření nové konfigurace datového modelu</span><span class="sxs-lookup"><span data-stu-id="087ec-112">Create a new data model configuration</span></span>
-1. <span data-ttu-id="087ec-113">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="087ec-113">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="087ec-114">Vytvoříte konfiguraci, která obsahuje vzorový model dat pro elektronické doklady.</span><span class="sxs-lookup"><span data-stu-id="087ec-114">You will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="087ec-115">Tato konfigurace modelu dat bude odeslána do LCS později.</span><span class="sxs-lookup"><span data-stu-id="087ec-115">This data model configuration will be uploaded into LCS later.</span></span>  
-2. <span data-ttu-id="087ec-116">V poli Název zadejte Vzorová konfigurace modelu.</span><span class="sxs-lookup"><span data-stu-id="087ec-116">In the Name field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="087ec-117">Vzorová konfigurace modelu</span><span class="sxs-lookup"><span data-stu-id="087ec-117">Sample model configuration</span></span>  
-3. <span data-ttu-id="087ec-118">V poli Popis zadejte „Vzorová konfigurace modelu“.</span><span class="sxs-lookup"><span data-stu-id="087ec-118">In the Description field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="087ec-119">Vzorová konfigurace modelu</span><span class="sxs-lookup"><span data-stu-id="087ec-119">Sample model configuration</span></span>  
-4. <span data-ttu-id="087ec-120">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="087ec-120">Click Create configuration.</span></span>
-5. <span data-ttu-id="087ec-121">Klikněte na Návrhář modelů.</span><span class="sxs-lookup"><span data-stu-id="087ec-121">Click Model designer.</span></span>
-6. <span data-ttu-id="087ec-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="087ec-122">Click New.</span></span>
-7. <span data-ttu-id="087ec-123">Do pole Název zadejte Vstupní bod.</span><span class="sxs-lookup"><span data-stu-id="087ec-123">In the Name field, type 'Entry point'.</span></span>
-    * <span data-ttu-id="087ec-124">Vstupní bod</span><span class="sxs-lookup"><span data-stu-id="087ec-124">Entry point</span></span>  
-8. <span data-ttu-id="087ec-125">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="087ec-125">Click Add.</span></span>
-9. <span data-ttu-id="087ec-126">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="087ec-126">Click Save.</span></span>
-10. <span data-ttu-id="087ec-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="087ec-127">Close the page.</span></span>
-11. <span data-ttu-id="087ec-128">Klikněte na položku Změnit stav.</span><span class="sxs-lookup"><span data-stu-id="087ec-128">Click Change status.</span></span>
-12. <span data-ttu-id="087ec-129">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="087ec-129">Click Complete.</span></span>
-13. <span data-ttu-id="087ec-130">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="087ec-130">Click OK.</span></span>
+    - <span data-ttu-id="343dd-109">Návrhář elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="343dd-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="343dd-110">Správce systému</span><span class="sxs-lookup"><span data-stu-id="343dd-110">System administrator</span></span>
 
-## <a name="register-a-new--repository"></a><span data-ttu-id="087ec-131">Registrace nového úložiště</span><span class="sxs-lookup"><span data-stu-id="087ec-131">Register a new  repository</span></span>
-1. <span data-ttu-id="087ec-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="087ec-132">Close the page.</span></span>
-2. <span data-ttu-id="087ec-133">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="087ec-133">Click Repositories.</span></span>
-    * <span data-ttu-id="087ec-134">To umožňuje otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="087ec-134">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-3. <span data-ttu-id="087ec-135">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="087ec-135">Click Add to open the drop dialog.</span></span>
-    * <span data-ttu-id="087ec-136">Tímto způsobem můžete přidat nové úložiště.</span><span class="sxs-lookup"><span data-stu-id="087ec-136">This allows you to add a new repository.</span></span>  
-4. <span data-ttu-id="087ec-137">V poli Typ úložiště konfigurace vyberte LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-137">In the Configuration repository type field, select LCS.</span></span>
-5. <span data-ttu-id="087ec-138">Klikněte na Vytvořit úložiště.</span><span class="sxs-lookup"><span data-stu-id="087ec-138">Click Create repository.</span></span>
-6. <span data-ttu-id="087ec-139">V poli Projekt zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="087ec-139">In the Project field, enter or select a value.</span></span>
-    * <span data-ttu-id="087ec-140">Vyberte příslušný projekt LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-140">Select the desired LCS project.</span></span> <span data-ttu-id="087ec-141">Musíte mít přístup k tomuto projektu.</span><span class="sxs-lookup"><span data-stu-id="087ec-141">You must have access to the project.</span></span>  
-7. <span data-ttu-id="087ec-142">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="087ec-142">Click OK.</span></span>
-    * <span data-ttu-id="087ec-143">Vytvořte nový záznam v úložišti.</span><span class="sxs-lookup"><span data-stu-id="087ec-143">Complete a new repository entry.</span></span>  
-8. <span data-ttu-id="087ec-144">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="087ec-144">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="087ec-145">Vybrat záznam úložiště LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-145">Select the LCS repository record.</span></span>  
-    * <span data-ttu-id="087ec-146">Všimněte si, registrované úložiště je označeno aktuálním poskytovatelem, tj. pouze konfigurace ve vlastnictví daného poskytovatele mohou být umístěny do tohoto úložiště a následně odeslány do vybraného projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-146">Note that a registered repository is marked by the current provider meaning that the only configurations owned by that provider can be placed to this repository and, consequently, uploaded into the selected LCS project.</span></span>  
-9. <span data-ttu-id="087ec-147">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="087ec-147">Click Open.</span></span>
-    * <span data-ttu-id="087ec-148">Otevřete úložiště a prohlédněte si seznam konfigurací ER.</span><span class="sxs-lookup"><span data-stu-id="087ec-148">Open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="087ec-149">Bude prázdný, pokud tento projekt nebyl dosud použit pro sdílení konfigurací ER.</span><span class="sxs-lookup"><span data-stu-id="087ec-149">It will be empty if this project has not yet been used for ER configurations sharing.</span></span>  
-10. <span data-ttu-id="087ec-150">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="087ec-150">Close the page.</span></span>
-11. <span data-ttu-id="087ec-151">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="087ec-151">Close the page.</span></span>
+2. <span data-ttu-id="343dd-111">Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.</span><span class="sxs-lookup"><span data-stu-id="343dd-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="343dd-112">Vyberte **Litware, Inc.** a označte ji jako **Aktivní**.</span><span class="sxs-lookup"><span data-stu-id="343dd-112">Select **Litware, Inc.**, and mark it as **Active**.</span></span>
+4. <span data-ttu-id="343dd-113">Vyberte **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="343dd-113">Select **Configurations**.</span></span>
 
-## <a name="upload-configuration-into-lcs"></a><span data-ttu-id="087ec-152">Odeslání konfigurace do LCS</span><span class="sxs-lookup"><span data-stu-id="087ec-152">Upload configuration into LCS</span></span>
-1. <span data-ttu-id="087ec-153">Klikněte na Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="087ec-153">Click Configurations.</span></span>
-2. <span data-ttu-id="087ec-154">Ve stromovém zobrazení vyberte možnost Vzorová konfigurace modelu.</span><span class="sxs-lookup"><span data-stu-id="087ec-154">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="087ec-155">Vyberte vytvořenou konfiguraci, která již byla dokončena.</span><span class="sxs-lookup"><span data-stu-id="087ec-155">Select a created configuration that has been already completed.</span></span>  
-3. <span data-ttu-id="087ec-156">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="087ec-156">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="087ec-157">Vyberte verzi vybrané konfigurace se stavem "Dokončeno".</span><span class="sxs-lookup"><span data-stu-id="087ec-157">Select the version of the selected configuration with the status of 'Completed'.</span></span>  
-4. <span data-ttu-id="087ec-158">Klikněte na položku Změnit stav.</span><span class="sxs-lookup"><span data-stu-id="087ec-158">Click Change status.</span></span>
-5. <span data-ttu-id="087ec-159">Klepněte na Sdílet.</span><span class="sxs-lookup"><span data-stu-id="087ec-159">Click Share.</span></span>
-    * <span data-ttu-id="087ec-160">Stav konfigurace se změní z "Dokončeno" na 'Sdíleno' během publikování v LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-160">The configuration status will change from 'Completed' to 'Shared' when it is published in LCS.</span></span>  
-6. <span data-ttu-id="087ec-161">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="087ec-161">Click OK.</span></span>
-7. <span data-ttu-id="087ec-162">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="087ec-162">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="087ec-163">Vyberte verzi konfigurace se stavem „Sdílena“.</span><span class="sxs-lookup"><span data-stu-id="087ec-163">Select the configuration version with the status of 'Shared'.</span></span>  
-    * <span data-ttu-id="087ec-164">Všimněte si, že stav vybrané verze se změnil z "Dokončeno" na 'Sdíleno'.</span><span class="sxs-lookup"><span data-stu-id="087ec-164">Note that the status of the selected version has changed from 'Completed' to 'Shared'.</span></span>  
-8. <span data-ttu-id="087ec-165">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="087ec-165">Close the page.</span></span>
-9. <span data-ttu-id="087ec-166">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="087ec-166">Click Repositories.</span></span>
-    * <span data-ttu-id="087ec-167">To umožňuje otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="087ec-167">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-10. <span data-ttu-id="087ec-168">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="087ec-168">Click Open.</span></span>
-    * <span data-ttu-id="087ec-169">Vyberte úložiště LCS a otevřete je.</span><span class="sxs-lookup"><span data-stu-id="087ec-169">Select the LCS repository and open it.</span></span>  
-    * <span data-ttu-id="087ec-170">Všimněte si, že vybraná konfigurace je uvedena jako aktiva vybraného projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-170">Note that the selected configuration is shown as an asset of the selected LCS project.</span></span>  
-    * <span data-ttu-id="087ec-171">Otevřete LCS pomocí https://lcs.dynamics.com.</span><span class="sxs-lookup"><span data-stu-id="087ec-171">Open LCS using https://lcs.dynamics.com.</span></span> <span data-ttu-id="087ec-172">Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete 'Knihovnu majetku' pro tento projekt a rozbalte obsah s typem majetku 'Konfigurace GER' – odeslané konfigurace ER budou nyní k dispozici.</span><span class="sxs-lookup"><span data-stu-id="087ec-172">Open a project that was used earlier for repository registration, open the 'Asset library' of this project, and expand the content of the 'GER configuration' asset type – the uploaded ER configuration will be available.</span></span> <span data-ttu-id="087ec-173">Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="087ec-173">Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.</span></span>  
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="343dd-114">Ujistěte se, že aktuální uživatel Dynamics 365 Finance je členem projektu LCS, který obsahuje [knihovnu majetku](../../lifecycle-services/asset-library.md#asset-library-support), která slouží k importu konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="343dd-114">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [Asset library](../../lifecycle-services/asset-library.md#asset-library-support) that is used to import ER configurations.</span></span>
+>
+> <span data-ttu-id="343dd-115">K projektu LCS nemůžete přistupovat z úložiště elektronického výkaznictví, které představuje jinou doménu, než je doména použitá v aplikaci Finance.</span><span class="sxs-lookup"><span data-stu-id="343dd-115">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="343dd-116">Pokud to zkusíte, zobrazí se prázdný seznam projektů LCS a nebudete moci importovat konfigurace elektronického výkaznictví z knihovny majetku na úrovni projektu v LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-116">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="343dd-117">Chcete-li získat přístup ke knihovnám majektu na úrovni projektu z úložiště elektronického výkaznictví, které slouží k importu konfigurací elektronického výkaznictví, přihlaste se do aplikace Finance pomocí přihlašovacích údajů uživatele, který patří ke klientovi (doméně), pro který byla zřízena aktuální instance Finance.</span><span class="sxs-lookup"><span data-stu-id="343dd-117">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
 
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="343dd-118">Vytvoření nové konfigurace datového modelu</span><span class="sxs-lookup"><span data-stu-id="343dd-118">Create a new data model configuration</span></span>
+
+1. <span data-ttu-id="343dd-119">Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="343dd-119">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="343dd-120">Na stránce **Konfigurace** výběrem možnosti **Vytvořit konfiguraci** otevřete rozevírací dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="343dd-120">On the **Configurations** page, select **Create configuration** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="343dd-121">V tomto příkladu vytvoříte konfiguraci, která obsahuje vzorový model dat pro elektronické doklady.</span><span class="sxs-lookup"><span data-stu-id="343dd-121">In this example, you will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="343dd-122">Tato konfigurace modelu dat bude odeslána do LCS později.</span><span class="sxs-lookup"><span data-stu-id="343dd-122">This data model configuration will be uploaded into LCS later.</span></span>
+
+3. <span data-ttu-id="343dd-123">V poli **Název** zadejte **Vzorová konfigurace modelu**.</span><span class="sxs-lookup"><span data-stu-id="343dd-123">In the **Name** field, enter **Sample model configuration**.</span></span>
+4. <span data-ttu-id="343dd-124">V poli **Popis** zadejte **Vzorová konfigurace modelu**.</span><span class="sxs-lookup"><span data-stu-id="343dd-124">In the **Description** field, enter **Sample model configuration**.</span></span>
+5. <span data-ttu-id="343dd-125">Vyberte **Vytvořit konfiguraci**.</span><span class="sxs-lookup"><span data-stu-id="343dd-125">Select **Create configuration**.</span></span>
+6. <span data-ttu-id="343dd-126">Vyberte **Návrhář modelů**.</span><span class="sxs-lookup"><span data-stu-id="343dd-126">Select **Model designer**.</span></span>
+7. <span data-ttu-id="343dd-127">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="343dd-127">Select **New**.</span></span>
+8. <span data-ttu-id="343dd-128">Do pole **Název** zadejte **Vstupní bod**.</span><span class="sxs-lookup"><span data-stu-id="343dd-128">In the **Name** field, enter **Entry point**.</span></span>
+9. <span data-ttu-id="343dd-129">Vyberte **přidat**.</span><span class="sxs-lookup"><span data-stu-id="343dd-129">Select **Add**.</span></span>
+10. <span data-ttu-id="343dd-130">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="343dd-130">Select **Save**.</span></span>
+11. <span data-ttu-id="343dd-131">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="343dd-131">Close the page.</span></span>
+12. <span data-ttu-id="343dd-132">Vyberte **Změnit stav**.</span><span class="sxs-lookup"><span data-stu-id="343dd-132">Select **Change status**.</span></span>
+13. <span data-ttu-id="343dd-133">Zvolte **Dokončit**.</span><span class="sxs-lookup"><span data-stu-id="343dd-133">Select **Complete**.</span></span>
+14. <span data-ttu-id="343dd-134">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="343dd-134">Select **OK**.</span></span>
+15. <span data-ttu-id="343dd-135">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="343dd-135">Close the page.</span></span>
+
+## <a name="register-a-new-repository"></a><span data-ttu-id="343dd-136">Registrace nového úložiště</span><span class="sxs-lookup"><span data-stu-id="343dd-136">Register a new repository</span></span>
+
+1. <span data-ttu-id="343dd-137">Přejděte do části **Správa organizace \> Pracovní prostory \> Elektronické výkaznictví**.</span><span class="sxs-lookup"><span data-stu-id="343dd-137">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="343dd-138">V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Litware Inc.**</span><span class="sxs-lookup"><span data-stu-id="343dd-138">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="343dd-139">Na dlaždici **Litware, Inc.** vyberte **Úložiště**.</span><span class="sxs-lookup"><span data-stu-id="343dd-139">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="343dd-140">Nyní můžete otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="343dd-140">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="343dd-141">Výběrem možnosti **Přidat** otevřete rozevírací dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="343dd-141">Select **Add** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="343dd-142">Nyní můžete přidat nové úložiště.</span><span class="sxs-lookup"><span data-stu-id="343dd-142">You can now add a new repository.</span></span>
+
+5. <span data-ttu-id="343dd-143">V poli **Typ úložiště konfigurace** vyberte **LCS**.</span><span class="sxs-lookup"><span data-stu-id="343dd-143">In the **Configuration repository enter** field, select **LCS**.</span></span>
+6. <span data-ttu-id="343dd-144">Zvolte **Vytvořit úložiště**.</span><span class="sxs-lookup"><span data-stu-id="343dd-144">Select **Create repository**.</span></span>
+7. <span data-ttu-id="343dd-145">V poli **Projekt** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="343dd-145">In the **Project** field, enter or select a value.</span></span>
+
+    <span data-ttu-id="343dd-146">V tomto příkladu vyberte požadovaný projekt LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-146">For this example, select the desired LCS project.</span></span> <span data-ttu-id="343dd-147">Musíte mít [přístup](#accessconditions) k tomuto projektu.</span><span class="sxs-lookup"><span data-stu-id="343dd-147">You must have [access](#accessconditions) to the project.</span></span>
+
+8. <span data-ttu-id="343dd-148">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="343dd-148">Select **OK**.</span></span>
+
+    <span data-ttu-id="343dd-149">Vytvořte nový záznam v úložišti.</span><span class="sxs-lookup"><span data-stu-id="343dd-149">Complete a new repository entry.</span></span>
+
+9. <span data-ttu-id="343dd-150">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="343dd-150">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="343dd-151">V tomto příkladu vyberte záznam úložiště **LCS**.</span><span class="sxs-lookup"><span data-stu-id="343dd-151">For this example, select the **LCS** repository record.</span></span>
+
+    <span data-ttu-id="343dd-152">Všimněte si, že registrované úložiště je označeno aktuálním poskytovatelem.</span><span class="sxs-lookup"><span data-stu-id="343dd-152">Note that a registered repository is marked by the current provider.</span></span> <span data-ttu-id="343dd-153">Jinými slovy, do tohoto úložiště lze umístit pouze konfigurace, které vlastní tento poskytovatel, a proto je možné je odeslat do vybraného projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-153">In other words, only configurations that are owned by that provider can be put in this repository and therefore uploaded into the selected LCS project.</span></span>
+
+10. <span data-ttu-id="343dd-154">Zvolte **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="343dd-154">Select **Open**.</span></span>
+
+    <span data-ttu-id="343dd-155">Tím otevřete úložiště se seznamem konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="343dd-155">You open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="343dd-156">Pokud vybraný projekt zatím nebyl použit pro sdílení konfigurací elektronického výkaznictví, seznam bude prázdný.</span><span class="sxs-lookup"><span data-stu-id="343dd-156">If the selected project hasn't yet been used for ER configurations sharing, the list will be empty.</span></span>
+
+11. <span data-ttu-id="343dd-157">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="343dd-157">Close the page.</span></span>
+12. <span data-ttu-id="343dd-158">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="343dd-158">Close the page.</span></span>
+
+## <a name="upload-a-configuration-into-lcs"></a><span data-ttu-id="343dd-159">Odeslání konfigurace do LCS</span><span class="sxs-lookup"><span data-stu-id="343dd-159">Upload a configuration into LCS</span></span>
+
+1. <span data-ttu-id="343dd-160">Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="343dd-160">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="343dd-161">Na stránce **Konfigurace** ve stromové struktuře konfigurací vyberte položku **Vzorová konfigurace modelu**.</span><span class="sxs-lookup"><span data-stu-id="343dd-161">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="343dd-162">Muíte vybrat vytvořenou konfiguraci, která již byla dokončena.</span><span class="sxs-lookup"><span data-stu-id="343dd-162">You must select a created configuration that has been already completed.</span></span>
+
+3. <span data-ttu-id="343dd-163">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="343dd-163">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="343dd-164">Pro tento příklad vyberte verzi vybrané konfigurace ve stavu **Dokončeno**.</span><span class="sxs-lookup"><span data-stu-id="343dd-164">For this example, select the version of the selected configuration that has a status of **Completed**.</span></span>
+
+4. <span data-ttu-id="343dd-165">Vyberte **Změnit stav**.</span><span class="sxs-lookup"><span data-stu-id="343dd-165">Select **Change status**.</span></span>
+5. <span data-ttu-id="343dd-166">Vyberte **Sdílet**.</span><span class="sxs-lookup"><span data-stu-id="343dd-166">Select **Share**.</span></span>
+
+    <span data-ttu-id="343dd-167">Stav konfigurace se změní z **Dokončeno** na **Sdíleno**, když je konfigurace publikována v LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-167">The status of the configuration is changed from **Completed** to **Shared** when the configuration is published in LCS.</span></span>
+
+6. <span data-ttu-id="343dd-168">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="343dd-168">Select **OK**.</span></span>
+7. <span data-ttu-id="343dd-169">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="343dd-169">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="343dd-170">Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.</span><span class="sxs-lookup"><span data-stu-id="343dd-170">For this example, select the configuration version that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="343dd-171">Všimněte si, že stav vybrané verze se změnil z **Dokončeno** na **Sdíleno**.</span><span class="sxs-lookup"><span data-stu-id="343dd-171">Note that the status of the selected version was changed from **Completed** to **Shared**.</span></span>
+
+8. <span data-ttu-id="343dd-172">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="343dd-172">Close the page.</span></span>
+9. <span data-ttu-id="343dd-173">Vyberte **Úložiště**.</span><span class="sxs-lookup"><span data-stu-id="343dd-173">Select **Repositories**.</span></span>
+
+    <span data-ttu-id="343dd-174">Nyní můžete otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="343dd-174">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+10. <span data-ttu-id="343dd-175">Zvolte **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="343dd-175">Select **Open**.</span></span>
+
+    <span data-ttu-id="343dd-176">V tomto příkladu vyberte úložiště **LCS** a otevřete jej.</span><span class="sxs-lookup"><span data-stu-id="343dd-176">For this example, select the **LCS** repository, and open it.</span></span>
+
+    <span data-ttu-id="343dd-177">Všimněte si, že vybraná konfigurace je zobrazena jako majetek vybraného projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-177">Notice that the selected configuration is shown as an asset of the selected LCS project.</span></span>
+
+11. <span data-ttu-id="343dd-178">Otevřete LCS přechodem na <https://lcs.dynamics.com>.</span><span class="sxs-lookup"><span data-stu-id="343dd-178">Open LCS by going to <https://lcs.dynamics.com>.</span></span>
+12. <span data-ttu-id="343dd-179">Otevřete projekt, který byl dříve použit pro registraci úložiště.</span><span class="sxs-lookup"><span data-stu-id="343dd-179">Open a project that was used earlier for repository registration.</span></span>
+13. <span data-ttu-id="343dd-180">Otevřete knihovnu majetku projektu.</span><span class="sxs-lookup"><span data-stu-id="343dd-180">Open the Asset library of the project.</span></span>
+14. <span data-ttu-id="343dd-181">Vyberte typ majetku **Konfigurace GER**.</span><span class="sxs-lookup"><span data-stu-id="343dd-181">Select the **GER configuration** asset type.</span></span>
+
+    <span data-ttu-id="343dd-182">V seznamu by měla být uvedena konfigurace elektronického výkaznictví, kterou jste nahráli.</span><span class="sxs-lookup"><span data-stu-id="343dd-182">The ER configuration that you uploaded should be listed.</span></span>
+
+    <span data-ttu-id="343dd-183">Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.</span><span class="sxs-lookup"><span data-stu-id="343dd-183">Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.</span></span>

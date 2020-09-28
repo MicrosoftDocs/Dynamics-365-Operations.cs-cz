@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86c8a0ae21ffeb6268efbbd198f7c709c2ad54f6
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e360812c5b0dbfb8df4ab279bf3e0050acebbb25
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042106"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745189"
 ---
-# <span data-ttu-id="f6f07-103"><a name="FIRSTORNULL">Funkce elektronického výkaznictví FIRSTORNULL</a></span><span class="sxs-lookup"><span data-stu-id="f6f07-103"><a name="FIRSTORNULL">FIRSTORNULL ER function</a></span></span>
+# <a name="firstornull-er-function"></a><span data-ttu-id="ead2f-103">Funkce elektronického výkaznictví FIRSTORNULL</span><span class="sxs-lookup"><span data-stu-id="ead2f-103">FIRSTORNULL ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f6f07-104">Funkce `FIRSTORNULL` vrátí první záznam zadaného seznamu jako hodnotu typu *kontejner (záznam)*, pokud tento záznam není prázdný.</span><span class="sxs-lookup"><span data-stu-id="f6f07-104">The `FIRSTORNULL` function returns the first record of the specified list as a *Container (record)* value, if that record isn't empty.</span></span> <span data-ttu-id="f6f07-105">Je-li záznam prázdný, vrátí tato funkce hodnotu typu *kontejner (záznam)* s hodnotou null.</span><span class="sxs-lookup"><span data-stu-id="f6f07-105">If the record is empty, this function returns a null *Container (record)* value.</span></span>
+<span data-ttu-id="ead2f-104">Funkce `FIRSTORNULL` vrátí první záznam zadaného seznamu jako hodnotu typu *kontejner (záznam)*, pokud tento záznam není prázdný.</span><span class="sxs-lookup"><span data-stu-id="ead2f-104">The `FIRSTORNULL` function returns the first record of the specified list as a *Container (record)* value, if that record isn't empty.</span></span> <span data-ttu-id="ead2f-105">Je-li záznam prázdný, vrátí tato funkce hodnotu typu *kontejner (záznam)* s hodnotou null.</span><span class="sxs-lookup"><span data-stu-id="ead2f-105">If the record is empty, this function returns a null *Container (record)* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f6f07-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="f6f07-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ead2f-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="ead2f-106">Syntax</span></span>
 
 ```vb
 FIRSTORNULL (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="f6f07-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="f6f07-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="ead2f-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="ead2f-107">Arguments</span></span>
 
-<span data-ttu-id="f6f07-108">`list`: *seznam záznamů*</span><span class="sxs-lookup"><span data-stu-id="f6f07-108">`list`: *Record list*</span></span>
+<span data-ttu-id="ead2f-108">`list`: *seznam záznamů*</span><span class="sxs-lookup"><span data-stu-id="ead2f-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="f6f07-109">Platná cesta ke zdroji dat typu *seznam záznamů*.</span><span class="sxs-lookup"><span data-stu-id="f6f07-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="ead2f-109">Platná cesta ke zdroji dat typu *seznam záznamů*.</span><span class="sxs-lookup"><span data-stu-id="ead2f-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="f6f07-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="f6f07-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="ead2f-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="ead2f-110">Return values</span></span>
 
-<span data-ttu-id="f6f07-111">*Kontejner (záznam)*</span><span class="sxs-lookup"><span data-stu-id="f6f07-111">*Container (record)*</span></span>
+<span data-ttu-id="ead2f-111">*Kontejner (záznam)*</span><span class="sxs-lookup"><span data-stu-id="ead2f-111">*Container (record)*</span></span>
 
-<span data-ttu-id="f6f07-112">Výsledná hodnota atributu.</span><span class="sxs-lookup"><span data-stu-id="f6f07-112">The resulting record value.</span></span>
+<span data-ttu-id="ead2f-112">Výsledná hodnota atributu.</span><span class="sxs-lookup"><span data-stu-id="ead2f-112">The resulting record value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6f07-113">Příklad</span><span class="sxs-lookup"><span data-stu-id="f6f07-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ead2f-113">Příklad</span><span class="sxs-lookup"><span data-stu-id="ead2f-113">Example</span></span>
 
-<span data-ttu-id="f6f07-114">Výraz `FIRSTORNULL(SPLIT("",1)).Value` vrátí prázdný řetězec (**""**).</span><span class="sxs-lookup"><span data-stu-id="f6f07-114">The expression `FIRSTORNULL(SPLIT("",1)).Value` returns an empty string (**""**).</span></span>
+<span data-ttu-id="ead2f-114">Výraz `FIRSTORNULL(SPLIT("",1)).Value` vrátí prázdný řetězec (**""**).</span><span class="sxs-lookup"><span data-stu-id="ead2f-114">The expression `FIRSTORNULL(SPLIT("",1)).Value` returns an empty string (**""**).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="f6f07-115">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="f6f07-115">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ead2f-115">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="ead2f-115">Additional resources</span></span>
 
-[<span data-ttu-id="f6f07-116">Funkce seznamu</span><span class="sxs-lookup"><span data-stu-id="f6f07-116">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="ead2f-116">Funkce seznamu</span><span class="sxs-lookup"><span data-stu-id="ead2f-116">List functions</span></span>](er-functions-category-list.md)

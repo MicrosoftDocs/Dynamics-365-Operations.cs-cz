@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08b9727fb34210fecff31826cc1f2b8da022156b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 998cf2c0dac67040814d4a32e433b465ec51f88c
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042451"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743368"
 ---
-# <span data-ttu-id="74b3e-103"><a name="ADDDAYS">Funkce el. výkaznictví ADDDAYS</a></span><span class="sxs-lookup"><span data-stu-id="74b3e-103"><a name="ADDDAYS">ADDDAYS ER function</a></span></span>
+# <a name="adddays-er-function"></a><span data-ttu-id="dd65e-103">Funkce el. výkaznictví ADDDAYS</span><span class="sxs-lookup"><span data-stu-id="dd65e-103">ADDDAYS ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="74b3e-104">Funkce `ADDDAYS` vypočítá hodnotu *datum a čas*, která představuje zadaný počet dní před nebo po zadaném počátečním datu.</span><span class="sxs-lookup"><span data-stu-id="74b3e-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
+<span data-ttu-id="dd65e-104">Funkce `ADDDAYS` vypočítá hodnotu *datum a čas*, která představuje zadaný počet dní před nebo po zadaném počátečním datu.</span><span class="sxs-lookup"><span data-stu-id="dd65e-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="74b3e-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="74b3e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="dd65e-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="dd65e-105">Syntax</span></span>
 
 ```vb
 ADDDAYS (datetime, days)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="74b3e-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="74b3e-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="dd65e-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="dd65e-106">Arguments</span></span>
 
-<span data-ttu-id="74b3e-107">`datetime`: *datum a čas*</span><span class="sxs-lookup"><span data-stu-id="74b3e-107">`datetime`: *DateTime*</span></span>
+<span data-ttu-id="dd65e-107">`datetime`: *datum a čas*</span><span class="sxs-lookup"><span data-stu-id="dd65e-107">`datetime`: *DateTime*</span></span>
 
-<span data-ttu-id="74b3e-108">Hodnota data a času, která představuje počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="74b3e-108">A date/time value that represents the start date.</span></span>
+<span data-ttu-id="dd65e-108">Hodnota data a času, která představuje počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="dd65e-108">A date/time value that represents the start date.</span></span>
 
-<span data-ttu-id="74b3e-109">`days`: *celé číslo*</span><span class="sxs-lookup"><span data-stu-id="74b3e-109">`days`: *Integer*</span></span>
+<span data-ttu-id="dd65e-109">`days`: *celé číslo*</span><span class="sxs-lookup"><span data-stu-id="dd65e-109">`days`: *Integer*</span></span>
 
-<span data-ttu-id="74b3e-110">Počet dnů před nebo po `datetime`.</span><span class="sxs-lookup"><span data-stu-id="74b3e-110">The number of days before or after `datetime`.</span></span>
+<span data-ttu-id="dd65e-110">Počet dnů před nebo po `datetime`.</span><span class="sxs-lookup"><span data-stu-id="dd65e-110">The number of days before or after `datetime`.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="74b3e-111">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="74b3e-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="dd65e-111">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="dd65e-111">Return values</span></span>
 
-<span data-ttu-id="74b3e-112">*Datum a čas*</span><span class="sxs-lookup"><span data-stu-id="74b3e-112">*DateTime*</span></span>
+<span data-ttu-id="dd65e-112">*Datum a čas*</span><span class="sxs-lookup"><span data-stu-id="dd65e-112">*DateTime*</span></span>
 
-<span data-ttu-id="74b3e-113">Výsledná hodnota data a času.</span><span class="sxs-lookup"><span data-stu-id="74b3e-113">The resulting date/time value.</span></span>
+<span data-ttu-id="dd65e-113">Výsledná hodnota data a času.</span><span class="sxs-lookup"><span data-stu-id="dd65e-113">The resulting date/time value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="74b3e-114">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="74b3e-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="dd65e-114">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="dd65e-114">Usage notes</span></span>
 
-<span data-ttu-id="74b3e-115">Kladná hodnota pro `days` znamená datum v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="74b3e-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="74b3e-116">Záporná hodnota znamená datum v minulosti.</span><span class="sxs-lookup"><span data-stu-id="74b3e-116">A negative value yields a past date.</span></span>
+<span data-ttu-id="dd65e-115">Kladná hodnota pro `days` znamená datum v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="dd65e-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="dd65e-116">Záporná hodnota znamená datum v minulosti.</span><span class="sxs-lookup"><span data-stu-id="dd65e-116">A negative value yields a past date.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="74b3e-117">Příklad 1</span><span class="sxs-lookup"><span data-stu-id="74b3e-117">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="dd65e-117">Příklad 1</span><span class="sxs-lookup"><span data-stu-id="dd65e-117">Example 1</span></span>
 
-<span data-ttu-id="74b3e-118">`ADDDAYS (NOW(), 7)` vrátí datum a čas sedm dní v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="74b3e-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
+<span data-ttu-id="dd65e-118">`ADDDAYS (NOW(), 7)` vrátí datum a čas sedm dní v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="dd65e-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="74b3e-119">Příklad 2</span><span class="sxs-lookup"><span data-stu-id="74b3e-119">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="dd65e-119">Příklad 2</span><span class="sxs-lookup"><span data-stu-id="dd65e-119">Example 2</span></span>
 
-<span data-ttu-id="74b3e-120">`ADDDAYS (NOW(), -3)` vrátí datum a čas tři dny v minulosti.</span><span class="sxs-lookup"><span data-stu-id="74b3e-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
+<span data-ttu-id="dd65e-120">`ADDDAYS (NOW(), -3)` vrátí datum a čas tři dny v minulosti.</span><span class="sxs-lookup"><span data-stu-id="dd65e-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="74b3e-121">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="74b3e-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="dd65e-121">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="dd65e-121">Additional resources</span></span>
 
-[<span data-ttu-id="74b3e-122">Funkce data a času</span><span class="sxs-lookup"><span data-stu-id="74b3e-122">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="dd65e-122">Funkce data a času</span><span class="sxs-lookup"><span data-stu-id="dd65e-122">Date and time functions</span></span>](er-functions-category-datetime.md)

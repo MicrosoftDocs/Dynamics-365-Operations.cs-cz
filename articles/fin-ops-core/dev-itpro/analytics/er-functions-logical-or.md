@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a850b1cbe7224ab1a7b2bd39ac4667304781cbb
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: faf07c5d8b30cd3babe8a6a55ae7effe5ce457a0
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041669"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744616"
 ---
-# <span data-ttu-id="10cd5-103"><a name="OR">Funkce el. výkaznictví OR</a></span><span class="sxs-lookup"><span data-stu-id="10cd5-103"><a name="OR">OR ER function</a></span></span>
+# <a name="or-er-function"></a><span data-ttu-id="58206-103">Funkce el. výkaznictví OR</span><span class="sxs-lookup"><span data-stu-id="58206-103">OR ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="10cd5-104">Funkce `OR` vrátí *logickou hodnotu* **FALSE**, pokud nejsou splněny všechny zadané podmínky.</span><span class="sxs-lookup"><span data-stu-id="10cd5-104">The `OR` function returns a *Boolean* value of **FALSE** if all the specified conditions are false.</span></span> <span data-ttu-id="10cd5-105">Tato funkce vrátí *logickou* hodnotu **PRAVDA**, pokud je splněna libovolná uvedená podmínka.</span><span class="sxs-lookup"><span data-stu-id="10cd5-105">If any specified condition is true, the function returns a *Boolean* value of **TRUE**.</span></span>
+<span data-ttu-id="58206-104">Funkce `OR` vrátí *logickou hodnotu* **FALSE**, pokud nejsou splněny všechny zadané podmínky.</span><span class="sxs-lookup"><span data-stu-id="58206-104">The `OR` function returns a *Boolean* value of **FALSE** if all the specified conditions are false.</span></span> <span data-ttu-id="58206-105">Tato funkce vrátí *logickou* hodnotu **PRAVDA**, pokud je splněna libovolná uvedená podmínka.</span><span class="sxs-lookup"><span data-stu-id="58206-105">If any specified condition is true, the function returns a *Boolean* value of **TRUE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="10cd5-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="10cd5-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="58206-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="58206-106">Syntax</span></span>
 
 ```vb
 OR (condition 1[, condition 2, …, condition N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="10cd5-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="10cd5-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="58206-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="58206-107">Arguments</span></span>
 
-<span data-ttu-id="10cd5-108">`condition 1`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="10cd5-108">`condition 1`: *Boolean*</span></span>
+<span data-ttu-id="58206-108">`condition 1`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="58206-108">`condition 1`: *Boolean*</span></span>
 
-<span data-ttu-id="10cd5-109">Platný podmíněný výraz, který má být testován.</span><span class="sxs-lookup"><span data-stu-id="10cd5-109">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="10cd5-110">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="10cd5-110">This argument is required.</span></span>
+<span data-ttu-id="58206-109">Platný podmíněný výraz, který má být testován.</span><span class="sxs-lookup"><span data-stu-id="58206-109">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="58206-110">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="58206-110">This argument is required.</span></span>
 
-<span data-ttu-id="10cd5-111">`condition N`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="10cd5-111">`condition N`: *Boolean*</span></span>
+<span data-ttu-id="58206-111">`condition N`: *logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="58206-111">`condition N`: *Boolean*</span></span>
 
-<span data-ttu-id="10cd5-112">Platný podmíněný výraz, který má být testován.</span><span class="sxs-lookup"><span data-stu-id="10cd5-112">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="10cd5-113">Tyto další argumenty jsou nepovinné.</span><span class="sxs-lookup"><span data-stu-id="10cd5-113">These additional arguments are optional.</span></span>
+<span data-ttu-id="58206-112">Platný podmíněný výraz, který má být testován.</span><span class="sxs-lookup"><span data-stu-id="58206-112">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="58206-113">Tyto další argumenty jsou nepovinné.</span><span class="sxs-lookup"><span data-stu-id="58206-113">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="10cd5-114">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="10cd5-114">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="58206-114">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="58206-114">Return values</span></span>
 
-<span data-ttu-id="10cd5-115">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="10cd5-115">*Boolean*</span></span>
+<span data-ttu-id="58206-115">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="58206-115">*Boolean*</span></span>
 
-<span data-ttu-id="10cd5-116">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="10cd5-116">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="58206-116">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="58206-116">The resulting *Boolean* value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10cd5-117">Příklad</span><span class="sxs-lookup"><span data-stu-id="10cd5-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="58206-117">Příklad</span><span class="sxs-lookup"><span data-stu-id="58206-117">Example</span></span>
 
-<span data-ttu-id="10cd5-118">`OR (1=2, "a"="a")` vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="10cd5-118">`OR (1=2, "a"="a")` returns **TRUE**.</span></span>
+<span data-ttu-id="58206-118">`OR (1=2, "a"="a")` vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="58206-118">`OR (1=2, "a"="a")` returns **TRUE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="10cd5-119">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="10cd5-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="58206-119">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="58206-119">Additional resources</span></span>
 
-[<span data-ttu-id="10cd5-120">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="10cd5-120">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="58206-120">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="58206-120">Logical functions</span></span>](er-functions-category-logical.md)
