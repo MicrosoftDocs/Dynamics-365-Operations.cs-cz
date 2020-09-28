@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
-ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
+ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3281502"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813881"
 ---
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
@@ -113,7 +113,7 @@ Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve work
 
 [Vytvoření žádanky pro spotřebu](tasks/create-requisition-consumption.md)
 
-[Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+[Definování workflowů pracovních postupů pro nákupní žádanky](https://www.microsoft.com/download/details.aspx?id=101821)
 
 [Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md)
 

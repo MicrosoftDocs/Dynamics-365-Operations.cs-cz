@@ -3,7 +3,7 @@ title: Přehled – Česká republika
 description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Czech Republic
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6dd5b4602ee70fc627391b30b7d468f56975bb7a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a41f2bd99cdc1ac3edd66ae789748a14add76413
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773406"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760069"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -38,7 +38,7 @@ Následující témata poskytují informace týkající se dlouhodobého majetku
 -   [Zaúčtování předpořízení dlouhodobého majetku](emea-pre-acquisition-acquisition-fixed-asset.md)
 
 ## <a name="vat-reporting"></a>Vykazování DPH
-Informace o nastavení a generování výkazu DPH pro právnické osoby, které jsou umístěny v České republice, naleznete v tématu [Výkaz DPH pro Českou republiku](emea-cze-vat-statement-details.md).
+Informace o nastavení a generování výkazu DPH pro právnické osoby, které jsou umístěny v České republice, naleznete v tématu [Výkaz DPH pro Českou republiku](emea-cze-vat-statement-details.md). Informace o přiznání k DPH viz [Přiznání k DPH (Česká republika)](emea-cze-vat-declaration-tax-declaration-model.md)
 
 ### <a name="intra-community-vat"></a>DPH intrakomunitárního plnění
 Tato část uvádí informace o tom, jak se vypočítává a zaúčtovává daň z přidané hodnoty (DPH) pro Českou republiku. 

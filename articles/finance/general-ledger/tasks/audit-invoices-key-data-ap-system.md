@@ -1,6 +1,6 @@
 ---
-title: Auditování faktur a klíčových dat v systému závazků
-description: Pokud od dodavatele obdržíte fakturu za zboží nebo služby na nákupní objednávce, mohou obchodní procesy vyžadovat, aby zboží nebo služby byly před schválením této faktury k platbě skutečně přijaty.
+title: Auditování faktur a klíčových dat pro závazky
+description: Tohle téma popisuje, jako auditovat faktury a klíčová data pro závazky.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139929"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761542"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>Auditování faktur a klíčových dat v systému závazků
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Auditování faktur a klíčových dat pro závazky
 
 [!include [banner](../../includes/banner.md)]
 
 Pokud od dodavatele obdržíte fakturu za zboží nebo služby na nákupní objednávce, mohou obchodní procesy vyžadovat, aby zboží nebo služby byly před schválením této faktury k platbě skutečně přijaty. Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur. 
 
-Na stránce Parametry závazků zajistěte, že je vybrána možnost Povolit ověření párování faktur, pole Zaúčtovat fakturu s odchylkami je nastaveno na Vyžadovat schválení a pole Zásady párování řádků je nastaveno na Třícestné párování.
+Na stránce **Parametry závazků** zajistěte, že je vybrána možnost Povolit ověření párování faktur, pole **Zaúčtovat fakturu s odchylkami** je nastaveno na **Vyžadovat schválení** a pole **Zásady párování řádků** je nastaveno na **Třícestné párování**.
 
 Tato procedura používá ukázkovou společnost USMF. Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky.
 

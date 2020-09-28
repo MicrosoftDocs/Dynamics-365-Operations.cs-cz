@@ -3,7 +3,7 @@ title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446906"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761314"
 ---
 # <a name="cookie-compliance"></a>Shoda souborů cookie
 
@@ -56,6 +56,10 @@ Následující tabulka ukazuje aktuální referenční seznam souborů cookie, k
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        |
 | x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Souhlas uživatele webu se soubory cookie na webu elektronického obchodu 
+
+Pokud funkce nebo modul webu elektronického obchodu používá nepodstatný soubor cookie, je nutné před sledováním souboru cookie získat souhlas uživatele webu. Aby uživatelé webu mohli poskytovat souhlas se soubory cookie na webu elektronického obchodu, musí autor webu přidat a nakonfigurovat modul souhlasu se soubory cookie v modulu záhlaví stránky, aby bylo zajištěno zobrazení a přijetí souhlasu. Před vykreslením funkce nebo modulu používajícího nepodstatný soubor cookie na stránce webu musí být udělen souhlas uživatele webu.
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Funkce a možnosti usnadnění přístupu](accessibility.md)
@@ -65,3 +69,7 @@ Následující tabulka ukazuje aktuální referenční seznam souborů cookie, k
 [Přidání stránky se zásadami ochrany osobních údajů](add-privacy-page.md)
 
 [Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů](replace-IDs-tracked-changes.md)
+
+[Modul souhlasu se soubory cookie](cookie-consent-module.md) 
+ 
+[Modul záhlaví](author-header-module.md)

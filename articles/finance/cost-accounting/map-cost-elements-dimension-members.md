@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMDimension, CAMDimensionMember
+ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: deb9b5aab9cd69270c78d4e1ea0e2a6cac6ac370
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 835a542ad5f7606f76805e54fda9f49ecc79205f
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759273"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze
 
@@ -43,7 +43,7 @@ Následující příklad ukazuje, jak vy, coby správce nákladů, můžete vytv
 | 5030: Reklama                                                     | 6390: Skladový nákup\*                                                    | 7000: náklady na úklid                                                 |
 | 7001: náklady na úklid                                               | 7001: Cestovní výdaje                                                      | 7001: Cestovné a výdaje                                                   |
 
-\**Skladový nákup francouzského prvku dimenze prvku nákladů není zmapován.
+\*Skladový nákup francouzského prvku dimenze prvku nákladů není zmapován.
 
 ## <a name="currency-conversion"></a>Převod měny
 Různé účtové osnovy, které používáte, jsou pravděpodobně nastaveny pro použití v různých měnách. V takovém případě je nutné zadat převod měny tak, aby data nákladů byla zpracovávána ve správné měně do hlavní knihy nákladového účetnictví, kde se používají členy dimenze prvku nákladů. V předcházejícím příkladu, pokud by se používaly americké dolary (USD) v hlavní knize nákladového účetnictví, museli byste vytvořit převod měny z USD do euro (EUR), aby mohlo dojít ke zpracování transakcí pro mapování členů dimenze prvku nákladů.

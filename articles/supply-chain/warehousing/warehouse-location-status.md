@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597499"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775167"
 ---
 # <a name="warehouse-location-status"></a>Stav umístění ve skladu
 
@@ -76,6 +76,9 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
     Tyto volby určují, zda jsou ve skladovém místě aktivní referenční pole.
 
 1. Kroky 3 až 4 zopakujte i pro profil **VÝDEJ-06**.
+
+> [!NOTE]
+> Když jsou parametry profilu skladového místa (**Povolit položku na skladovém místě**, **Povolit aktivitu skladového místa**, **Povolit stav skladového místa**) nastaveny na *Ano*, systém okamžitě aktualizuje příslušná skladová místa spuštěním úlohy *Kontrola konzistence stavu umístění skladu*.
 
 ### <a name="scenario"></a>Scénář
 

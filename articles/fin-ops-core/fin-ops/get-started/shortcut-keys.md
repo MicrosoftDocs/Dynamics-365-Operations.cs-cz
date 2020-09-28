@@ -1,6 +1,6 @@
 ---
 title: Klávesové zkratky
-description: Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data.
+description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811548"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761614"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
 
-Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data.
+Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data v aplikacích Finance and Operations.
 
 > [!NOTE]
 > Klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
@@ -236,6 +236,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod nahoru a dolů o řádek ve vyhledávání                                                                                        | Šipka nahoru nebo šipka dolů            |
 | Přechod nahoru a dolů o stránku ve vyhledávání                                                                                       | Page up / Page down              |
 | Přechod na začátek/konec vyhledávání                                                                                    | Home/End                       |
+
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

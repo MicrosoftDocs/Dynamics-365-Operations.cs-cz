@@ -3,7 +3,7 @@ title: Modul pokladny
 description: Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686735"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761098"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
@@ -97,8 +97,8 @@ Většina informací o pokladně, například dodací adresa a způsob dodání,
 Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul **Pokladna**.
-1. V části **Název fragmentu stránky** zadejte název pro **Fragment pokladny** a poté vyberte **OK**.
+1. V dialogovém okně **Nový fragment** vyberte modul **Pokladna**.
+1. V části **Název fragmentu** zadejte název pro **Fragment pokladny** a poté vyberte **OK**.
 1. Vyberte pozici **Modul pokladny**.
 1. V podokně vlastností vpravo vyberte symbol tužky, do pole zadejte text záhlaví a poté zaškrtněte symbol zaškrtnutí.
 1. V pozici **Informace o pokladně** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.

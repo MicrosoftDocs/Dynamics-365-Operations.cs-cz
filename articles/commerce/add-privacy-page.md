@@ -3,7 +3,7 @@ title: Přidání stránky se zásadami ochrany osobních údajů
 description: Toto téma popisuje, jak přidat stránku se zásadami ochrany osobních údajů na web v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686688"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761266"
 ---
 # <a name="add-a-privacy-policy-page"></a>Přidání stránky se zásadami ochrany osobních údajů
 
@@ -89,8 +89,8 @@ Do fragmentu můžete přidat odkaz na stránku zásad ochrany osobních údajů
 Chcete-li přidat odkaz na fragment zápatí, postupujte takto.
 
 1. Přejděte na **Fragmenty** a pak volbou **Nový** vytvořte fragment stránky.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul **Zápatí**.
-1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
+1. V dialogovém okně **Nový fragment** vyberte modul **Zápatí**.
+1. V části **Název fragmentu** zadejte název fragmentu a poté vyberte **OK**.
 1. Do úseku **Kategorie zápatí** přidejte modul **Položka zápatí**.
 1. V podokně vlastností vpravo vyberte možnost **Text odkazu**.
 1. V dialogovém okně **Text odkazu** zadejte text odkazu a cíl odkazu na stránce Zásady ochrany osobních údajů a klikněte na tlačítko **OK.**

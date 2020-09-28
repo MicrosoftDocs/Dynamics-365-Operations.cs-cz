@@ -1,14 +1,14 @@
 ---
-title: Import konfigurace ER ze služby Lifecycle Services
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace formátu pro elektronické výkaznictví ze služby Microsoft Lifecycle Services (LCS).
+title: Import konfigurace ze služby Lifecycle Services
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace elektronického výkaznictví ze služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142379"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810636"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a>Import konfigurace ER ze služby Lifecycle Services
+# <a name="import-a-configuration-from-lifecycle-services"></a>Import konfigurace ze služby Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace formátu pro elektronické výkaznictví ze služby Microsoft Lifecycle Services (LCS).
+Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi [konfigurace elektronického výkaznictví](../general-electronic-reporting.md#Configuration) z [knihovny majetku na úrovni projektu](../../lifecycle-services/asset-library.md) ve službě Microsoft Dynamics Lifecycle Services (LCS).
 
-V tomto příkladu zvolíte požadovanou verzi konfiguraci ER a importujete ji pro vzorovou společnost Litware, Inc a odešlete ji do LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace ER se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Odeslání konfigurace ER do služby Lifecycle Services". K dokončení tohoto postupu je nutný také přístup k LCS.
+V tomto příkladu zvolíte požadovanou verzi konfigurace elektronického výkaznictví a importujete ji pro vzorovou společnost s názvem Litware, Inc. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace elektronického výkaznictví se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu [Odeslání konfigurace elektronického výkaznictví do služby Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Je rovněž vyžadován přístup k LCS.
 
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Klikněte na Konfigurace.
+1. Přihlaste se k aplikaci použitím některé z následující role:
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Odstranění sdílené verze konfigurace modelu dat
-1. Ve stromovém zobrazení vyberte možnost Vzorová konfigurace modelu.
-    * První verze vzorové konfigurace modelu dat byla vytvořena a publikována do LCS během procesu "Odeslání konfigurace ER do služby Lifecycle Services". V tomto postupu tuto verzi konfigurace ER odstraníte. Tato verze vzorové konfigurace datového modelu bude importována ze LCS později.  
+    - Návrhář elektronického výkaznictví
+    - Správce systému
+
+2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+3. Vyberte **Konfigurace**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Ujistěte se, že aktuální uživatel Dynamics 365 Finance je členem projektu LCS, který obsahuje knihovnu majetku, ke které chce uživatel [přístup](../../lifecycle-services/asset-library.md#asset-library-support) kvůli importu konfigurací elektronického výkaznictví.
+>
+> K projektu LCS nemůžete přistupovat z úložiště elektronického výkaznictví, které představuje jinou doménu, než je doména použitá v aplikaci Finance. Pokud to zkusíte, zobrazí se prázdný seznam projektů LCS a nebudete moci importovat konfigurace elektronického výkaznictví z knihovny majetku na úrovni projektu v LCS. Chcete-li získat přístup ke knihovnám majektu na úrovni projektu z úložiště elektronického výkaznictví, které slouží k importu konfigurací elektronického výkaznictví, přihlaste se do aplikace Finance pomocí přihlašovacích údajů uživatele, který patří ke klientovi (doméně), pro který byla zřízena aktuální instance Finance.
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Odstranění sdílené verze konfigurace modelu dat
+
+1. Na stránce **Konfigurace** ve stromové struktuře konfigurací vyberte položku **Vzorová konfigurace modelu**.
+
+    Vytvořili jste první verzi vzorové konfigurace modelu dat a publikovali ji v LCS po provedení kroků v části [Odeslání konfigurace do služby Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). V tomto postupu tuto verzi konfigurace elektronického výkaznictví odstraníte. Danou verzi poté importujete z LCS dále v tomto tématu.
+
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte verzi této konfigurace se stavem „Sdíleno“. Tento stav označuje, že byla konfigurace publikována do LCS.  
-3. Klikněte na položku Změnit stav.
-4. Klikněte na Ukončit.
-    * Změňte stav vybrané verze ze "Sdíleno" na „Ukončeno“ a umožněte tak její odstranění.  
-5. Klepněte na tlačítko OK.
+
+    Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**. Tento stav označuje, že byla konfigurace publikována do LCS.
+
+3. Vyberte **Změnit stav**.
+4. Vyberte **Ukončit**.
+
+    Změnou stavu vybrané verze ze **Sdíleno** na **Ukončeno** umožníte její odstranění.
+
+5. Vyberte **OK**.
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte verzi této konfigurace se stavem „Ukončeno“.  
-7. Klikněte na tlačítko Odstranit.
-8. Klepněte na tlačítko Ano.
-    * Všimněte si, že pouze 2. verze návrhu vybrané konfigurace modelu dat je k dispozici.  
+
+    Pro tento příklad vyberte verzi této konfigurace ve stavu **Ukončeno**.
+
+7. Zvolte **Odstranit**.
+8. Vyberte **Ano**.
+
+    Všimněte si, že pouze 2. verze návrhu vybrané konfigurace modelu dat je k nyní dispozici.
+
 9. Zavřete stránku.
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Import sdílené verze konfigurace modelu dat z LCS
-1. Označte na seznamu vybraný řádek.
-    * Otevřete seznam úložišť pro poskytovatele konfigurace 'Litware, Inc.'    
-2. Klikněte na možnost Úložiště.
-3. Klikněte na možnost Otevřít.
-    * Vyberte úložiště LCS a otevřete je.  
-4. Označte v seznamu vybraný řádek.
-    * Vyberte první verzi vzorové konfigurace modelu v seznamu verzí.  
-5. Klepněte na tlačítko Importovat.
-6. Klepněte na tlačítko Ano.
-    * Potvrďte import vybrané verze z LCS.  
-    * Všimněte si, že informační zpráva (nad formulářem) potvrzuje úspěšné dokončení importu vybrané verze.  
-7. Zavřete stránku.
-8. Zavřete stránku.
-9. Klikněte na Konfigurace.
-10. Ve stromovém zobrazení vyberte možnost Vzorová konfigurace modelu.
-11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte verzi této konfigurace se stavem „Sdíleno“.  
-    * Všimněte si, že nově je také sdílená 1. verze vybrané konfigurace modelu dat k dispozici.  
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a>Import sdílené verze konfigurace modelu dat z LCS
 
+1. Přejděte do části **Správa organizace \> Pracovní prostory \> Elektronické výkaznictví**.
+
+2. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Litware Inc.**
+
+3. Na dlaždici **Litware, Inc.** vyberte **Úložiště**.
+
+    Nyní můžete otevřít seznam úložišť pro poskytovatele konfigurace Litware, Inc.
+
+4. Zvolte **Otevřít**.
+
+    V tomto příkladu vyberte úložiště **LCS** a otevřete jej. Musíš mít [přístup](#accessconditions) k projektu LCS a knihovně majetku, ke které má přístup vybrané úložiště elektronického výkaznictví.
+
+5. Označte na seznamu vybraný řádek.
+
+    V tomto případě vyberte první verzi **vzorové konfigurace modelu** v seznamu verzí.
+
+6. Vyberte **Import**.
+7. Volbou **Ano** potvrďte import vybrané verze z LCS.
+
+    Informační zpráva potvrzuje, že vybraná verze byla úspěšně importována.
+
+8. Zavřete stránku.
+9. Zavřete stránku.
+10. Vyberte **Konfigurace**.
+11. Ve stromovém zobrazení vyberte možnost **Vzorová konfigurace modelu**.
+12. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+
+    Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.
+
+    Všimněte si, že nyní je k dispozici také sdílená 1. verze vybrané konfigurace datového modelu.

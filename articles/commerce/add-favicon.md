@@ -3,7 +3,7 @@ title: Přidání ikony oblíbené položky
 description: Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686783"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761146"
 ---
 # <a name="add-a-favicon"></a>Přidání ikony oblíbené položky
 
@@ -58,30 +58,30 @@ Chcete-li vytvořit kód HTML pro ikonu oblíbené položky, použijte následuj
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Vytvořte fragment stránky, který obsahuje metaznačku pro vaši ikonu oblíbené položky
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Vytvořte fragment, který obsahuje metaznačku pro vaši ikonu oblíbené položky
 
-Chcete-li vytvořit fragment stránky, který obsahuje metaznačku pro ikonu oblíbené položky, postupujte následovně.
+Chcete-li vytvořit fragment, který obsahuje metaznačku pro ikonu oblíbené položky, postupujte následovně.
 
 1. Přejděte na **Fragmenty** a pak vyberte **Nový**.
-1. V dialogovém okně **Nový fragment stránky** vyberte jako modul, na němž je založen fragment stránky **Metaznačky**.
-1. Zadejte název fragmentu stránky a poté vyberte **OK**.
+1. V dialogovém okně **Nový fragment** vyberte jako modul, na němž je založen fragment **Metaznačky**.
+1. Zadejte název fragmentu a poté vyberte **OK**.
 1. Ve stromu hierarchie fragmentů vyberte podřízenou položku **Výchozí metaznačky**.
 1. V pravém podokně pod **Metaznačky** vyberte **Přidat** a zadejte řetězec HTML, který jste pro oblíbenou položku vytvořili dříve. 
-1. Chcete-li publikovat fragment stránky, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
+1. Chcete-li publikovat fragment, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Přidejte fragment stránky s metaznačkami do sekce HTML na vašich stránkách
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Přidejte fragment s metaznačkami do sekce HTML na vašich stránkách
 
-Pokud chcete přidat fragment stránky metaznačky do části **hlavička** stránek, proveďte následující postup.
+Pokud chcete přidat fragment metaznačky do části **hlavička** stránek, proveďte následující postup.
 
 1. Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat ikonu oblíbené položky. Potom vyberte **Upravit**.
-1. Ve stromu hierarchie šablon vyberte tlačítko se třemi tečkami (**...**) napravo od kontejneru **Hlavička HTML** a vyberte **Přidat fragment stránky**.
-1. V dialogovém okně **Vybrat fragment stránky** vyberte fragment stránky metaznačky, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. Ve stromu hierarchie šablon vyberte tlačítko se třemi tečkami (**...**) napravo od kontejneru **Hlavička HTML** a vyberte **Přidat fragment**.
+1. V dialogovém okně **Vybrat fragment** vyberte fragment metaznačky, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Chcete-li publikovat šablonu, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
 
 > [!NOTE]
-> Pokud váš web používá více než jednu šablonu, musíte do každé z nich přidat fragment stránky s metaznačkami.
+> Pokud váš web používá více než jednu šablonu, musíte do každé z nich přidat fragment s metaznačkami.
 
-Při náhledu stránek založených na šabloně, do které jste přidali fragment stránky metaznaček, byste nyní měli na kartě prohlížeče vidět ikonu oblíbené položky.
+Při náhledu stránek založených na šabloně, do které jste přidali fragment metaznaček, byste nyní měli na kartě prohlížeče vidět ikonu oblíbené položky.
 
 ## <a name="additional-resources"></a>Další prostředky
 

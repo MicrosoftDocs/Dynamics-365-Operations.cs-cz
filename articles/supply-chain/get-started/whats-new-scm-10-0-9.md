@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a127fcf2bf429299dc73e338cbfc3fbf8f5f2d9f
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 936bd88faad0d24c8cd72bc153cf55c38b4a4825
+ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651974"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763424"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.9 (duben 2020)
 
@@ -38,7 +38,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Některé z těchto funkcí mohou být také zahrnuty do předchozího přírůstkového vydání, ale nebyly ohlášeny v předchozím tématu *Novinky*, tak je uvádíme zde. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
-- [Rozšířené sestavení vytížení během vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
+- [Rozšířené sestavení vytížení během vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Další informace viz [Rozšířené sestavení nákladu během vlny](../warehousing/advanced-load-building-during-wave.md).
 - [Dodávka automatického uvolnění pro cross docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Další informace viz [Zásilka s automatickým uvolňováním pro cross-docking](../warehousing/auto-release-shipment-for-cross-docking.md).
 - [Výpočet data dodání prodejní objednávky na základě doby realizace a pracovních dnů (veřejný sektor)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 - [Zpracování produktu se skutečnou hmotností s řízením skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Další informace viz video [Zachycení zpracování produktů pomocí řízení skladu](../warehousing/catch-weight-processing.md) a [Vylepšení hmotnosti produktu](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
@@ -51,21 +51,21 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 - [Vylepšené zařízení úkolového lístku](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - Další informace viz [Hlášení průběhu na mobilním pracovním zařízení a Hlášení o dokončení ze zařízení úkolového lístku](../production-control/tasks/report-progress-mobile-job-device.md) a [Ohlášení jako dokončené ze zařízení úkolového lístku](../production-control/report-finished-job-device.md).
 - [Kontrola příchozí kvality](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [Uložení sestavy stáří zásob](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
-- [Úložiště sestavy hodnot zásob](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
-- [Ganttův diagram hlavního procesu plánování]](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Další informace viz [Sledování běhu hlavního plánování](../master-planning/tasks/monitor-master-planning-run.md) a také video [Výkonnost MRP a vylepšení použitelnosti](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Úložiště sestavy hodnot zásob](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Další informace viz [Sestava úložiště hodnot zásob](../cost-management/inventory-value-report-storage.md)
+- [Ganttův diagram hlavního procesu plánování](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Další informace viz [Sledování běhu hlavního plánování](../master-planning/tasks/monitor-master-planning-run.md) a také video [Výkonnost MRP a vylepšení použitelnosti](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 - [Nové datové entity pro oblast výroby](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Odchozí třídění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
+- [Odchozí třídění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Další informace viz [Odchozí třídění](../warehousing/outbound-sorting.md).
 - [Dimenze balení a uskladnění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 - [Paralelizované potvrzení plánovaných objednávek](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Další informace viz [Paralelizovat potvrzení](../master-planning/maintain-planned-orders.md#parallelize-firming) a také video [Výkonnost MRP a vylepšení použitelnosti](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 - [Optimalizace plánování pro distribuci](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Další informace naleznete v tématu [Přehled optimalizace plánování](../master-planning/planning-optimization/planning-optimization-overview.md).
 - [Rozšíření nákupní smlouvy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Další informace naleznete v tématu [Nákupní smlouvy](../procurement/purchase-agreements.md)
 - [Seskupení vyskladnění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Další informace viz video [Seskupení vyskladnění](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
-- [Umístění na zeď / umístění do obchodu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)
+- [Umístění na zeď / umístění do obchodu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Další informace viz [Umístění na zeď - umístění do obchodu](../warehousing/put-to-wall-put-to-store.md).
 - [Třídění příjmu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Expedice malých balíků (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Nabídky dodavatele – otázky od dodavatelů a souhrnné odpovědi](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 - [Vizuální plánování pro pracovní příkazy ve správě majetku](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Další informace viz [Práce s plánovanými pracovními příkazy pomocí Ganttova diagramu](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
-- [Skladový slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
+- [Skladový slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Další informace viz [Skladový slotting](../warehousing/warehouse-slotting.md).
 - [Vylepšení tisku štítků vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Kód kroku vlny](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - Další informace získáte v části [Kódy kroku vlny](../warehousing/wave-step-codes.md).
 

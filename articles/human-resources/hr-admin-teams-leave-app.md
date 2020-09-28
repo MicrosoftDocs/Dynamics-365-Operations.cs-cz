@@ -3,7 +3,7 @@ title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
-ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
+ms.openlocfilehash: a022f8297066793080d254baa01410884a3fafd9
+ms.sourcegitcommit: 55b729361ea852e38531c51972c6730e3d9c2b45
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3666353"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3776301"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -41,6 +41,45 @@ Aplikaci Human Resources najdete v obchodě Teams. Informace o instalaci aplikac
 
 Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správa zásad povolení k aplikaci v Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Povolení oznámení pro aplikaci Human Resources v Teams
+
+Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní volno v aplikaci Teams, musíte povolit oznámení v aplikaci Human Resources.
+
+>[!NOTE]
+>Oznámení dostanou pouze uživatelé, kteří jsou přihlášeni k Teams a používají aplikaci Human Resources Teams.
+
+1. V modulu Human Resources vyberte **Správa systému**.
+
+2. Vybrerte **Odkazy**.
+
+3. V části **Nastavení** vyberte **Systémové parametry**.
+
+4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**.
+
+   ![Povolení oznámení aplikace Teams v systémových parametrech](./media/hr-admin-teams-leave-app-enable-notifications.png)
+
+5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano**.
+
+   ![Povolení oznámení Teams pro všechny uživatele](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+
+### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Zapnutí nebo vypnutí oznámení aplikace Teams pro jednotlivé uživatele
+
+Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznámení zapnout nebo vypnout pro jednotlivé uživatele.
+
+1. V modulu Human Resources vyberte **Správa systému**.
+
+2. Vybrerte **Odkazy**.
+
+3. V části **Uživatelé** vyberte **Možnosti uživatele**.
+
+4. Vyberte kartu **Pracovní postup**.
+
+5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**, čímž povolíte oznámení pro uživatele nebo **Ne**, čímž deaktivujete oznámení pro uživatele.
+
+   ![Povolte oznámení aplikace Teams na kartě Možnosti uživatele na kartě Pracovní postup.](./media/hr-admin-teams-leave-app-notifications.png)
+
+6. Zvolte **Uložit**.
+
 ## <a name="known-issues"></a>Známé problémy
 
 | Výdej | Stav |
@@ -48,19 +87,24 @@ Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správ
 | Horizontální posouvání nefunguje na Android telefonech | Horizontální posouvání není problém na zařízeních iOS nebo počítačích. Pracujeme na opravě pro Android. |
 | Chyba: Při hledání prostředí, ke kterému se lze připojit, došlo k problému. | Tato chyba se může zobrazit, i když jste ověřili, že uživatel má přístup k jednomu nebo více prostředím lidských zdrojů. Navíc možná neuvidíte všechna očekávaná prostředí. Dokud tento problém nevyřešíme, odstraňte uživatele a znovu jej importujte, abyste problém vyřešili. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
-| Při snižování počtu hodin obsažených ve stávající žádosti **Zůstatek účtu** klesá místo aby stoupal. | Budeme řešit tento známý problém v budoucnosti. Zobrazení je nesprávné, ale správná množství jsou upravena po odeslání. |
 | Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
 | Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
-S robotem Dynamics 365 Human Resources v aplikaci Microsoft Teams jsou textové vstupy uživatele analyzovány pro porozumění základním dotazům/záměrům. Vstup uživatele, například „Vyhledat účet Contoso“, je přesměrován na jednu ze služeb Cognitive Services společnosti Microsoft nazvanou Language Understanding Intelligent Service (LUIS). Přečtěte si více o LUIS  [zde](https://www.luis.ai/). Služba LUIS ujasňuje nebo chápe záměr vstupu uživatele (v tomto případě je záměrem najít informace) a cílovou entitu (v tomto případě je zamýšlenou entitou účet s názvem Contoso). Tyto informace jsou poté předány do  [rámce robota Azure](https://azure.microsoft.com/services/bot-service/)  společnosti Microsoft, který interaguje s daty z Dynamics 365 Human Resources a načte požadované informace pro uživatelský dotaz. 
+### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
+
+S robotem Dynamics 365 Human Resources v aplikaci Microsoft Teams jsou textové vstupy uživatele analyzovány pro porozumění základním dotazům/záměrům. Vstup uživatele, například „Vyhledat účet Contoso“, je přesměrován na jednu ze služeb Cognitive Services společnosti Microsoft nazvanou Language Understanding Intelligent Service (LUIS). Přečtěte si více o LUIS  [zde](https://www.luis.ai/). Služba LUIS ujasňuje nebo chápe záměr vstupu uživatele (v tomto případě je záměrem najít informace) a cílovou entitu (v tomto případě je zamýšlenou entitou účet s názvem Contoso). Tyto informace jsou poté předány do řešení  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) společnosti Microsoft, které interaguje s daty z Dynamics 365 Human Resources a načte požadované informace pro uživatelský dotaz. 
 
 Instalací a umožněním přístupu k používání robota souhlasíte s tím, že umožníte službě LUIS a rámci robota Azure zpracovat záměr za vstupem, což má za následek vylepšenou konverzační uživatelskou zkušenost. Služba LUIS a rámec robota Azure mohou mít ve srovnání s Dynamics 365 Human Resources různé úrovně shody. Zatímco služba LUIS má přístup pouze k uživatelským dotazům a není určena k připojení k datům nebo účtu uživatele Dynamics 365 Human Resources, uživatel robota Dynamics 365 Human Resources může dobrovolně zadat dotaz obsahující zákaznická data, osobní údaje nebo jiná data a takový obsah dotazu by mohl být zaslán do služby LUIS a do rámce robota Azure. 
 
 Obsah dotazů a zpráv uživatele je v systému LUIS uchováván maximálně 30 dní, je šifrován a nepoužívá se pro školení ani zlepšení služeb. Přečtěte si více o Cognitive Services  [zde](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-Chcete-li spravovat nastavení administrátora pro aplikace v Microsoft Teams, přejděte do [centra pro správu Microsoft Teams](https://admin.teams.microsoft.com/). 
+Chcete-li spravovat nastavení administrátora pro aplikace v Microsoft Teams, přejděte do [centra pro správu Microsoft Teams](https://admin.teams.microsoft.com/).
+
+### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid a Microsoft Teams
+
+Při použití funkce oznámení pro aplikaci Dynamics 365 Human Resources v Teams budou některá data zákazníků téct mimo geografickou oblast, kde je nasazena služba Human Resources vašeho klienta. Dynamics 365 Human Resources přenáší podrobnosti o žádosti o pracovní volno a úkolu pracovního postupu do Microsoft Azure Event Grid a Microsoft Teams. Tato data mohou být uložena až 24 hodin a zpracována ve Spojených státech, jsou šifrována během přenosu a v klidu a nejsou používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb.
 
 ## <a name="see-also"></a>Viz také 
 

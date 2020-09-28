@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
-ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
+ms.openlocfilehash: 95cf53cbbd7863590f08afa72143effaa80ba8de
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696123"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813802"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -103,7 +103,7 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blog
 ## <a name="white-papers"></a>Dokumenty white paper
 
 - [Lean Manufacturing: příslib na základě ověření dostupné kapacity a plánování kanbanové úlohy](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
-- [Výpočet kusovníku pomocí nákladového formuláře](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
+- [Výpočet kusovníku pomocí nákladového formuláře](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 

@@ -3,7 +3,7 @@ title: Postupné vytváření objednávek pro maloobchodní transakce
 description: V tomto tématu je popsáno postupné vytváření objednávek pro transakce obchodu v Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710276"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766729"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Postupné vytváření objednávek pro maloobchodní transakce
 
@@ -36,22 +36,20 @@ Díky postupnému vytváření objednávek, funkci představené ve verzi 10.0.5
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Jak používat postupné účtování
   
-1. Chcete-li povolit postupné účtování transakcí, přejděte na **Správa systému > Nastavení > Konfigurace licence** a zakažte klíč **Výkazy**.
+1. Chcete-li povolit postupné účtování maloobchodních transakcí, povolte funkci s názvem **Výkazy maloobchodu – Postupné** pomocí správy funkcí.
 
-2. Na stejné stránce povolte licenční klíč **Výkazy (postupné) – Preview**. Když povolíte tento klíč, ujistěte se, že neexistují žádné nevyřízené výkazy čekající na zaúčtování. 
+    > [!IMPORTANT]
+    > Než povolíte tuto funkci, ujistěte se, že na zaúčtování nečekají žádné nevyřízené výkazy.
 
-    > [!Important]
-    > Před povolením licenčního klíče **Výkazy (postupné) – Preview** se ujistěte, že neexistují žádné nevyřízené výkazy čekající na zaúčtování.
-
-3. Aktuální dokument výkazu bude rozdělen na dva různé typy. transakční výkaz a finanční výkaz.
+2. Aktuální dokument výkazu bude rozdělen na dva typy: transakční výkaz a finanční výkaz.
 
       - Transakční výkaz vybere všechny nezaúčtované a ověřené transakce a bude vytvářet prodejní objednávky, prodejní faktury, deníky slev a plateb a transakce příjmů a výdajů ve frekvenci, kterou nakonfigurujete. Tento proces byste měli nakonfigurovat ke spouštění v časté frekvenci, aby dokumenty byly vytvářeny při odesílání transakcí do centrály prostřednictvím úlohy P. U transakčního výkazu, který již vytváří prodejní objednávky a prodejní faktury, není třeba konfigurovat dávkovou úlohu **Zaúčtovat zásoby**. Lze ji však stále použít k uspokojení specifických obchodních požadavků, které můžete mít.  
       
      - Finanční výkaz je určen k tomu, aby byl vytvořen na konci dne, a podporuje pouze metodu uzávěrky **Směna**. Tento výkaz bude omezen na finanční odsouhlasení a bude vytvářet pouze deníky pro rozdílné částky mezi spočtenou částkou a částkou transakce pro různé úhrady, společně s deníky pro ostatní transakce řízení hotovosti.   
 
-4. Chcete-li vypočítat transakční výkaz, klikněte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat transakční výkazy v dávce**. Chcete-li zaúčtovat transakční výkazy v dávce, klikněte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat transakční výkazy v dávce**.
+3. Chcete-li vypočítat transakční výkaz, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat transakční výkazy v dávce**. Chcete-li zaúčtovat transakční výkazy v dávce, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat transakční výkazy v dávce**.
 
-5. Chcete-li vypočítat finanční výkaz, klikněte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat finanční výkazy v dávce**. Chcete-li zaúčtovat finanční výkazy v dávce, klikněte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat finanční výkazy v dávce**.
+4. Chcete-li vypočítat finanční výkaz, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat finanční výkazy v dávce**. Chcete-li zaúčtovat finanční výkazy v dávce, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat finanční výkazy v dávce**.
 
 > [!NOTE]
 > Položky nabídky **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat výkazy v dávce** a **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat výkazy v dávce** jsou s touto novou funkcí odebrány.

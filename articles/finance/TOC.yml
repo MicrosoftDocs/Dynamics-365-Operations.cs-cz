@@ -70,6 +70,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.14 (listopad 2020)
+                      href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (říjen 2020)
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (srpen 2020)
@@ -412,6 +414,8 @@
                   href: accounts-receivable/set-up-collections.md
                 - name: Kontrola inkasních informací
                   href: accounts-receivable/tasks/review-collections-information.md
+                - name: Automatizace procesů inkasa
+                  href: accounts-receivable/collections-process-automate.md
                 - name: Nastavení správy úvěrů
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Informace o nastavení správy kreditu
@@ -756,6 +760,8 @@
                   href: fixed-assets/175-percent-reducing-balance-depreciation.md
                 - name: Degresivní odpis 200 %
                   href: fixed-assets/200-percent-reducing-balance-depreciation.md
+                - name: Pololetní metodologie způsobů odpisu
+                  href: fixed-assets/half-year-depreciation-methodology.md
                 - name: Počáteční mimořádný odpis
                   href: fixed-assets/bonus-depreciation.md
                 - name: Nastavení počátečních mimořádných odpisů
@@ -1012,8 +1018,28 @@
               href: project-management/confirm-update-send-project-quotation.md
             - name: Převod nabídky do projektu
               href: project-management/transfer-quote-new-existing-project.md
-            - name: Prostředky projektu
-              href: project-management/project-resourcing.md
+            - name: Zdroje projektu
+              items:
+                - name: Přehled zdrojů projektu
+                  href: project-management/project-resourcing.md
+                - name: Nastavení zdrojů projektu
+                  href: project-management/set-up-project-resources.md
+                - name: Správa kompetencí zdrojů
+                  href: project-management/manage-resource-competencies.md
+                - name: Vytvoření nového projektu
+                  href: project-management/create-new-project.md
+                - name: Nastavení cen na základě role
+                  href: project-management/set-up-role-based-pricing.md
+                - name: Vytvoření projektového týmu
+                  href: project-management/create-project-team.md
+                - name: Synchronizace kapacity zdrojů
+                  href: project-management/synchronize-resource-capacity.md
+                - name: Výkonnost plánování projektových zdrojů
+                  href: project-management/project-scheduling-performance.md
+                - name: Nastavení rolí v šablonách strukturovaného rozpisu práce
+                  href: project-management/set-up-roles-wbs-template.md
+                - name: Plnění zdrojů pro plánované zdroje
+                  href: project-management/resource-fulfillment-planned-resources.md
             - name: "Přijetí položek na nákupní objednávce z\_požadavku na položku"
               href: project-management/tasks/receive-items-purchase-order-item-requirement.md
             - name: Strukturované rozpisy prací
@@ -1224,6 +1250,16 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Výkaz DPH
                   href: localizations/emea-aut-vat-statement-details.md
+            - name: Bahrajn
+              items:
+                - name: Bahrajn - přehled
+                  href: localizations/bahrain.md
+                - name: Konfigurace rozložení faktur pro Bahrajn
+                  href: localizations/emea-bhr-invoice-layout.md
+                - name: Přiznání k DPH pro Bahrajn
+                  href: localizations/emea-bhr-vat-declaration.md
+                - name: Termín vystavení faktury
+                  href: localizations/gcc-invoice-issue-deadline.md
             - name: Belgie
               items:
                 - name: Belgie - přehled
@@ -1496,6 +1532,8 @@
                   href: localizations/emea-amount-printing-forms.md
                 - name: Výkaz DPH
                   href: localizations/emea-cze-vat-statement-details.md
+                - name: Přiznání k DPH (Česká republika)
+                  href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Roční uzávěrka
                   href: localizations/emea-cze-hun-year-end.md
             - name: Dánsko
@@ -1780,6 +1818,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Online fakturační systém
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Výpočty odložené DPH
+                  href: localizations/emea-hun-deferred-vat.md
             - name: Island
               items:
                 - name: Island - přehled
@@ -2238,6 +2278,10 @@
                   href: localizations/tasks/use-assemble-list-fixed-asset.md
                 - name: Použití seznamu rozložení pro dlouhodobý majetek
                   href: localizations/tasks/use-disassemble-list-fixed-assets.md
+            - name: Kuvajt
+              items:
+                - name: Kuvajt - přehled
+                  href: localizations/kuwait.md
             - name: Lotyšsko
               items:
                 - name: Lotyšsko - přehled
@@ -2288,6 +2332,8 @@
                   href: localizations/tasks/my-00007-self-billed-invoices.md
                 - name: Nastavení klauzulí úlevy daně GST
                   href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+                - name: SST-02 prohlášení pro Malajsii
+                  href: localizations/apac-mys-sst-declaration.md
             - name: Mexiko
               items:
                 - name: Mexiko- přehled
@@ -2328,6 +2374,10 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: ID registrace dodavatele
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
+            - name: Omán
+              items:
+                - name: Omán - přehled
+                  href: localizations/oman.md
             - name: Nizozemsko
               items:
                 - name: Nizozemí - přehled
@@ -2386,6 +2436,10 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Rozdělení kurzového rozdílu závazků/pohledávek
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+            - name: Katar
+              items:
+                - name: Katar - přehled
+                  href: localizations/qatar.md
             - name: Rusko
               items:
                 - name: Rusko - přehled
@@ -2724,6 +2778,8 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formulář 1099 pro veřejný sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
+                - name: "Nastavení dodavatelů pro vykazování\_1099"
+                  href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
         - name: Human Resources
           items:
             - name: Přehled Human Resources
@@ -2970,6 +3026,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Výchozí prostředí vykazování v prostředí IaaS
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+                - name: Možnosti náhledu vykazování dokumentů
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
                 - name: Tisk
                   items:
                     - name: Přehled tisku dokumentu
@@ -3437,7 +3495,11 @@
                     - name: Použití NEZPRACOVANÉHO XML pro přidání obsahu
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                     - name: Podpora parametrizovaných volání datových zdrojů POČÍTANÉHO POLE
-                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: Vylepšení uživatelského prostředí a údržby použitelnosti
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                        - name: Vylepšení výkonu přístupu k datům
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
                     - name: Mezipodnikové zdroje dat elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Použití zdrojů dat PODROBNOSTÍ FINANČNÍCH DIMENZÍ

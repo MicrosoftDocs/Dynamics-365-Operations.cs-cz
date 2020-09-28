@@ -1,5 +1,5 @@
 ---
-title: Funkce Preview v Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.13.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dae936ea9a72b865096cdda54d767f3e44816e20
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652218"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802936"
 ---
-# <a name="preview-features-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Funkce Preview v Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.13. Tato verze má číslo sestavení 10.0.569 a je k dispozici následujícím způsobem: 
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.13. Tato verze má číslo sestavení 10.0.569 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** srpen 2020
 - **Obecná dostupnost (automatická aktualizace):** září 2020
@@ -61,7 +60,7 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.13 aplikací Finance and Operations (říjen 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.13 aplikací Finance and Operations (říjen 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
