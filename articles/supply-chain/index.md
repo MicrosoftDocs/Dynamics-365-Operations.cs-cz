@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 95cf53cbbd7863590f08afa72143effaa80ba8de
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813802"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887081"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -107,4 +107,4 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blog
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
-Ohledně online kurzů a školení se podívejte na [Dynamics 365 na Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Supply Chain Management na Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).

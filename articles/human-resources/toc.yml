@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 16. září 2020
+          href: hr-whats-new-2020-09-16.md
         - name: 3. září 2020
           href: hr-whats-new-2020-09-03.md
         - name: 20. srpna 2020
@@ -201,7 +203,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Vytvoření vlastních polí a práce s nimi
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: Integrace aplikací PowerApps
+            - name: Vložení aplikace plátna z Power Apps
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Nalezení informací pomocí vyhledávání
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json

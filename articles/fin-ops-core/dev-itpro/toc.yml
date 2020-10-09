@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: Omezování na základě priority
               hreF: data-entities/priority-based-throttling.md
+            - name: Nejčastější dotazy k omezování na základě priority
+              href: data-entities/throttling-faq.md
             - name: Rozhraní API integrace dat
               items:
                 - name: REST API balíčku správy dat
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Migrace datového typu měny pro duální zápis
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Nastavení mapování pro pole stavu prodejní objednávky
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Správa duálního zápisu
                           items:
                             - name: Přizpůsobení mapování entit a polí
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Místní agent
                   items:
-                    - name: Kompatibilita AD FS Office 365
+                    - name: Kompatibilita AD FS Microsoft 365
                       href: deployment/onprem-adfscompatibility.md
                     - name: Předběžné nasazení místního agenta a skripty po nasazení
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: Kurz vývojových nástrojů
                   href: dev-tools/introduction-visual-studio.md
                 - name: Kontrola aplikací
-                  items:
-                    - name: Instalace BaseX pro kontrolu aplikací
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Průzkumník aplikací
                   href: dev-tools/application-explorer.md
                 - name: Sestavení a ladění projektů
@@ -1360,14 +1362,32 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
                     - name: Typ PartMetadata
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
-                    - name: Typ Row
+                    - name: Typ řádku
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
-                    - name: Typ Value
+                    - name: Typ hodnoty
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
                     - name: Typ ValueDesign
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: Typ ValueMetadata
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Rámec automatizace procesů
+          items:
+            - name: Vývoj rámce automatizace procesů
+              href: process-automation/process-automation-framework.md
+            - name: Registrace typu
+              href: process-automation/type-registration.md
+            - name: Registrace série
+              href: process-automation/series-registration.md
+            - name: Parametry zpracování
+              href: process-automation/process-parameters.md
+            - name: Uživatelem konfigurovatelné dotazy
+              href: process-automation/user-queries.md
+            - name: Spuštění procesu
+              href: process-automation/run-process.md
+            - name: Výsledky a zprávy protokolu
+              href: process-automation/log-results.md
+            - name: Přizpůsobení uživatelského rozhraní
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Přehled nástroje Regression Suite Automation Tool
@@ -1395,7 +1415,7 @@
             - name: Vývoj a vydávání
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Fáze a uveřejnění
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Přidání metodologií
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Nastavení knihovny Modelování podnikových procesů
