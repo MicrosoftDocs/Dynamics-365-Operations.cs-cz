@@ -150,7 +150,7 @@
           href: modular-app-tech-faq.md
         - name: Export data z aplikací Attract a Onboard
           href: attract-onboard-export-data.md
-        - name: Vložení Microsoft Power Apps
+        - name: Vložení aplikace plátna z Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Získání podpory pro Talent
           href: talent-support.md
@@ -252,3 +252,5 @@
           href: user-access-core-hr.md
         - name: Uživatelé Azure Active Directory nenalezení v nástroji pro výběr osob
           href: people-picker-user-not-found.md
+        - name: Uživatelé aplikace Attract nemohou žádat o zaměstnání z kariérního portálu
+          href: attract-troubleshoot-career-portal.md

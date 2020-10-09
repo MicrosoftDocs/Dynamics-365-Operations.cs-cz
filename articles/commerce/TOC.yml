@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (srpen 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Commerce 10.0.11 (červenec 2020)
-                      href: get-started/whats-new-commerce-10-0-11.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Vložení Microsoft Power Apps
+                - name: Vložení aplikace plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů
                   href: replace-IDs-tracked-changes.md
-            - name: Startovací sada
+            - name: Knihovna modulů
               items:
-                - name: Přehled startovací sady
+                - name: Přehled knihovny modulů
                   href: starter-kit-overview.md
                 - name: Moduly kontejneru
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: Vytvoření nového modulu
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klonování modulu startovací sady
+                    - name: Klonování modulu knihovny modulu
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Přidání polí konfigurace modulu
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,7 +2068,7 @@
                   items:
                     - name: Konfigurace balíčků a jejich nasazení do online prostředí
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Aktualizace SDK a startovací sady obchodu
+                    - name: SDK a aktualizace knihovny modulů
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2148,6 +2146,8 @@
                   href: implementation-considerations-devices.md
                 - name: Události a obslužné rutiny zobrazení košíku POS
                   href: dev-itpro/cart-view-handlers.md
+                - name: Přidání vlastních tlačítek do panelu záhlaví POS
+                  href: dev-itpro/pos-header-bar.md
             - name: Rozšiřitelnost Hardware Station
               items:
                 - name: Hardware Station a rozšiřitelnost
