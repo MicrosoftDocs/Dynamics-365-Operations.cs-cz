@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383083"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837256"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -399,6 +399,9 @@ Následující tabulka obsahuje popis těchto možností.
 <tr class="odd">
 <td>Kód šablony práce</td>
 <td>Vyberte šablonu práce, která v procesu vytvoří práci. Pokud například obdržíte položku pro nákupní objednávku, práce vyskladnění se vytvoří na základě šablony práce. Pokud nevyberete šablonu práce, aplikace Supply Chain Management přiřadí šablonu na základě kritérií dotazu. Další informace týkající se šablon práce naleznete v tématu <a href="control-warehouse-location-directives.md">Řízení práce ve skladu pomocí šablon práce a směrnic umístění</a>.</td>
+<tr class="even">
+<td>Zobrazit seznam řádků práce</td>
+<td>Vyberte možnost, jak budou pracovníci moci zobrazit a pracovat s řádky pro aktuálně vybranou práci výdeje. Další informace o této možnosti najdete v části <a href="pick-line-overview.md">Nastavit položku nabídky mobilního zařízení a poskytnout přehled řádků výdeje</a>.</td>
 </tr>
 </tbody>
 </table>

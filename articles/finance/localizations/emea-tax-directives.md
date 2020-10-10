@@ -3,7 +3,7 @@ title: Daňové předpisy pro Evropu
 description: Můžete určit, zda zahrnout vysvětlení kódů DPH na prodejních fakturách a fakturách projektu. Lze vytisknout referenční čísla na prodejních fakturách, volných fakturách a projektových fakturách.
 author: epodkolz
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
-ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
+ms.openlocfilehash: 2f0da36e2be20d5ae8c838ed73c6e8aa1c19b621
+ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3422986"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819098"
 ---
 # <a name="tax-directives-for-europe"></a>Daňové předpisy pro Evropu
 
@@ -32,4 +32,4 @@ Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro faktu
 - U dobropisů se tisknou čísla a data původních faktur společně s důvodem k opravě.
 
 > [!NOTE]
-> Ověřte na stránce **Nastavení formuláře** (**Pohledávky** > **Nastavení** > **Formuláře** > **Nastavení formuláře** na **Kartě Obecné**), že pole **Specifikace DPH** je nastaveno na **Měna registrace** nebo **Měna registrace a společnosti**.
+> Ověřte, že pole **Specifikace DPH** je nastaveno na **Měna registrace** nebo **Měna registrace a společnosti** na stránce **Nastavení formuláře** na kartě **Obecné** (**Pohledávky > Nastavení > Formuláře > Nastavení formuláře** nebo **SPráva a účetnictví projektu > Nastavení > Formuláře > Nastavení formuláře**).

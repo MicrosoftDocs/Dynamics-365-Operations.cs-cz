@@ -3,7 +3,7 @@ title: Přehled stránek košíku a pokladny
 description: Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527555"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817771"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
 
@@ -40,7 +40,7 @@ Stránka rezervace na webu e-Commerce představuje krok za krokem, podle kteréh
 
 Stránka košíku slouží jako nákupní sáček a zahrnuje všechny položky, které byly přidány do nákupního košíku.
 
-Následující ilustrace znázorňuje příklad stránky košíku, která byla sestavena pomocí Startovní sady a tématu "Fabrikam".
+Následující ilustrace znázorňuje příklad stránky košíku, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
 ![Příklad stránky košíku](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Informace o tom, jak vytvořit stránku nákupního košíku, naleznete v téma
 
 Na stránce pokladny jsou umístěny informace vyžadované k zadání objednávky.
 
-Následující ilustrace znázorňuje příklad stránky pokladny, která byla sestavena pomocí online startovní sady.
+Následující ilustrace znázorňuje příklad stránky pokladny, která byla sestavena pomocí knihovny modulů.
 
 ![Příklad stránky pokladny](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Hlavní část stránky pokladny, v níž jsou shromážděny všechny informac
 
 Pokud musí být zboží expedováno, je požadováno dodání adresy. Formát adres pro dodání jednotlivých národních prostředí lze konfigurovat v aplikaci Dynamics 365 Commerce. Pokud budou například položky expedovány do Spojených států, musí doručovací adresa obsahovat ulici, stát a PSČ. Některé základní ověření vstupu se provádí pro pole adresy expedice, jako je například ověření alfanumerických znaků, maximální délka a počet. Ačkoli platnost samotné adresy není ověřena, toto ověření lze provést pomocí přizpůsobených služeb třetích stran.
 
-Dodací adresa je použita pro všechny položky v vozíku, pro který je vybrána možnost "expedice". Pokud používáte tok rezervace, který je poskytováný v online startovní sadě, jednotlivé položky nákupního košíku nelze odeslat na jiné adresy. Pokud tuto funkci požadujete, lze ji implementovat pomocí vlastního nastavení modulů rezervace.
+Dodací adresa je použita pro všechny položky v vozíku, pro který je vybrána možnost "expedice". Pokud používáte tok rezervace, který je poskytován v knihovně modulů, jednotlivé položky nákupního košíku nelze odeslat na jiné adresy. Pokud tuto funkci požadujete, lze ji implementovat pomocí vlastního nastavení modulů rezervace.
 
 Po dodání adresy expedice jsou zobrazeny metody expedice, které jsou k dispozici v online obchodu Dynamics 365 Commerce. Způsoby expedice a adresy, které podporují, lze konfigurovat v aplikaci Commerce.
 
@@ -80,7 +80,7 @@ Během toku pokladny může odběratel, který je členem věrnostního programu
 
 #### <a name="gift-cards"></a>Dárkové poukazy
 
-Online startovní sada umožňuje, aby byly pro objednávku uplatněny interní dárkové poukazy. Chcete-li použít interní dárkový poukaz, je nutné, aby byl zákazník přihlášen. Pro zvýšení zabezpečení doporučujeme tok přizpůsobit pomocí osobního identifikačního čísla (PIN) pro interní dárkové poukazy.
+Knihovna modulů umožňuje, aby byly pro objednávku uplatněny interní dárkové poukazy. Chcete-li použít interní dárkový poukaz, je nutné, aby byl zákazník přihlášen. Pro zvýšení zabezpečení doporučujeme tok přizpůsobit pomocí osobního identifikačního čísla (PIN) pro interní dárkové poukazy.
 
 ### <a name="signed-in-and-guest-users"></a>Přihlášení a uživatelé typu Host
 

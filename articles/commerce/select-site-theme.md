@@ -3,7 +3,7 @@ title: Volba motivu webu
 description: Toto téma popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002744"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817699"
 ---
 # <a name="select-a-site-theme"></a>Volba motivu webu
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ Toto téma popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft D
 
 Rozvržení a styl webu (například písma, velikosti a barvy) jsou definovány motivem, který vyberete a použijete na webu. Motiv je vytvořen a nasazen vývojářem ve vaší společnosti. Přehled motivů naleznete v tématu [Přehled motivů](http://). Další informace o tom, jak vytvářet a nasazovat motivy, naleznete v tématu [Vytvoření nového motivu](http://).
 
-Ve výchozím nastavení je při prvním vytvoření webu použit motiv s názvem **Fabrikam**. Tento výchozí motiv je poskytován jako součást startovní sady. Po nasazení dalších motivů webu můžete nakonfigurovat web tak, aby používal jeden z nich.
+Ve výchozím nastavení je při prvním vytvoření webu použit motiv s názvem **Fabrikam**. Tento výchozí motiv je poskytován jako součást knihovny modulů Commerce. Po nasazení dalších motivů webu můžete nakonfigurovat web tak, aby používal jeden z nich.
 
 ## <a name="select-the-site-theme"></a>Volba motivu webu
 

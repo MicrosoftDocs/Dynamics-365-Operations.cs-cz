@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823448"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -103,6 +103,7 @@ Chcete-li zobrazit výsledky konsolidace, máte několik možností:
     ![Transakce konsolidace na stránce konsolidace](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
 
 Pokud chcete spustit konsolidaci znovu, můžete zpracovat pouze konsolidaci. Případně vyberte nejprve **Odebrat transakce** na stránce **Konsolidace**.
+V případě, že zůstatky na vašem konsolidovaném účtu nejsou přesné, lze tyto zůstatky opravit pomocí stránky **Úpravy v dpbě uzávěrky**.
 
 ## <a name="consolidate-with-import"></a>Konsolidovat s importem
 Konsolidace pomocí funkce importu pracuje stejně jako funkce konsolidace online. Když vyberete právnické osoby, budete procházet zdrojový soubor, který obsahuje data.
@@ -156,6 +157,7 @@ Další informace o tom, jak funguje přecenění měny v modulu **Hlavní kniha
 - Deníky eliminace lze zaúčtovat pouze na aktuální vrstvě.
 - Pouze provozní zůstatky jsou konsolidovány. Z toho vyplývá, že chcete-li zobrazit počáteční zůstatky, musíte stále spustit uzávěrku na konci roku v konsolidační společnosti.
 - Můžete zaúčtovat denní deník ve společnosti eliminace, ale nikoliv v konsolidační společnosti.
+- Úpravy zůstatků v konsolidační společnosti lze provádět pouze pomocí stránky **Úpravy v době uzávěrky**. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Výhody používání finančního výkaznictví pro finanční konsolidace a převod měny, nebo pro doplnění online konsolidace pro konsolidované vykazování
 Zákazníci, kteří používají finanční výkaznictví pro finanční konsolidace a převod měny, nebo pro doplnění online konsolidace pro konsolidované vykazování, získají různé výhody:

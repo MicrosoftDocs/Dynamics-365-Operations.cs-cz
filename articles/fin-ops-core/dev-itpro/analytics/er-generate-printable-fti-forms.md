@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771276"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893356"
 ---
 # <a name="generate-printable-fti-forms"></a>Generovat formulářů FTI k tisku
 
@@ -111,7 +111,7 @@ Můžete také generovat formuláře FTI při zaúčtování FTI zapnutím možn
 Architektura elektronického výkaznictví aktuálně podporuje následující cílová umístění pro vygenerované dokumenty:
 
 - **Stažený soubor** – vygenerované formuláře jsou k dispozici jako stažené soubory, které můžete uložit pomocí prohlížeče.
-- **Obrazovka** – Použije se Microsoft Office 365 k zobrazení náhledu generovaných formulářů FTI ve formátu aplikace Excel.
+- **Obrazovka** – Použije se Microsoft 365 Excel k zobrazení náhledu generovaných formulářů FTI ve formátu aplikace Excel.
 - **Složka SharePoint** – vygenerované formuláře jsou uloženy na základě nastavení architektury správy dokumentů.
 - **Archiv aplikace** – vygenerované formuláře jsou uloženy jako přílohy záznamů protokolů provádění v úložišti Microsoft Azure.
 - **E-mail** – vygenerované formuláře jsou odeslány jako e-mailové přílohy.
@@ -174,7 +174,7 @@ Jsou-li k dispozici údaje o platebních slevách, jako je částka platební sl
 - Možnost **U faktury je použita platební sleva** je pro fakturu zapnuta (**Parametry hlavní knihy** \> **Sekce DPH**).
 
 #### <a name="italy"></a>Itálie
-Značka slev na zboží je uvedena na řádcích faktur vygenerované faktury, když je zpracovávána pro právnickou osobu, která je konfigurována podle kontextu země/regionu pro Itálii.
+Značka slev na zboží je uvedena na řádcích faktur vygenerované faktury, když je zpracovávána pro právnickou osobu, která je konfigurována podle kontextu země/oblasti pro Itálii.
 
 #### <a name="finland"></a>Finsko
 Kromě vygenerovaného formuláře faktury lze vygenerovat převodní poukázky žira následujícím způsobem:

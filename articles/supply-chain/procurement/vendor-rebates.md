@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834253"
 ---
 # <a name="vendor-rebates"></a>Rabaty dodavatele
+
 [!include [banner](../includes/banner.md)]
 
 Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
@@ -50,6 +51,7 @@ Osoby na těchto pozicích hledají způsoby, jak dosáhnout různých cílů. N
 - Mít kvantifikovaný základ pro probíhající a budoucí jednání s dodavateli o rabatech.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Revidovat podrobnosti smlouvy o rabatu dodavatele.
+
 Smlouva o rabatu dodavatele je záznamem dohody s dodavatelem, který určuje vyjednané smluvní podmínky, při jejichž splnění má společnost nárok na peněžní odměnu za to, že dosáhla přednastavených nákupních cílů. Smlouvy o rabatech dodavatele se zaznamenávají na stránce **Smlouvy o rabatu**.
 
 Chcete-li o stránku **Smlouvy o rabatech dodavatele**, vyberte **Zásobování a zdroje** &gt; **Rabaty dodavatele** &gt; **Smlouvy o rabatu**.
@@ -60,7 +62,9 @@ Na stránce **Smlouvy o rabatu dodavatele** můžete zobrazit podrobnosti o vyje
 
 Záhlaví smlouvy určuje obecné podmínky, které kvalifikují společnost pro rabaty. V důsledku toho informace záhlaví určuje, že dodavatel zaručuje rabat při nákupu konkrétního produktu v konkrétním množství. V záhlaví také určíte možnost jednotky měření rabatu a typ data výpočtu.
 
-- Na kartě **Obecné** v poli **Měrná jednotka (možnost rabatu)** můžete určit, zda měrná jednotka má být podmínkou pro řádek nákupní objednávky, aby došlo k nároku na rabat. 
+- Na kartě **Přehled**, pokud máte řádky s **kódem zboží** nastaveny na *tabulka* pro určení položky, pak smlouva je pro tuto konkrétní položku. Pokud máte řádky s **kódem zboží** nastaveny na *Skupina* nebo *Všech* pro upřesnění položek, bude smlouva o rabatu dodavatele zpracována jednotlivě pro každou položku, která splňuje podmínky pro kód položky, nikoli pro všechny položky, které jsou způsobilé pro kód položky.
+
+- Na kartě **Obecné** v poli **Měrná jednotka (možnost rabatu)** můžete určit, zda měrná jednotka má být podmínkou pro řádek nákupní objednávky, aby došlo k nároku na rabat.
 
     - **Převést** – Řádek nákupní objednávky vytváří nárok na rabat dodavatele podle smlouvy o rabatu. Získáte rabat bez ohledu na jednotku měření, která je použita na řádku.
     - **Přesná shoda** – Pro získání nároku na rabat musí mít řádek nákupu stejnou jednotky měření, která je určena ve smlouvě.
@@ -97,6 +101,7 @@ Na řádcích smlouvy lze určit smlouvu o rabatu dodavatele podrobněji.
 Když jsou vytvořeny nákupní objednávky s dodavatelem, se kterým má společnost smlouvu o rabatu, program identifikuje všechny budoucí kreditní platby dodavatele. Pokud nákupní objednávky splňují nárok na rabat, nárok na rabat je generován pro každý řádek objednávky okamžitě při zaúčtování nákupní faktury. Jedná se o automatický proces. Později můžete zkontrolovat očekávané rabaty a zobrazit dopad těchto rabatů na náklady na produkt a marži.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Zobrazení podrobností o rabatech, které se použijí na řádek nákupní objednávky podle smlouvy o rabatu dodavatele
+
 1. Na stránce **Nákupní objednávka** vyberte řádek objednávky a poté vyberte **Řádek nákupní objednávky** &gt; **Zobrazit** &gt; **Podrobnosti o ceně**.
 2. Na stránce **Podrobnosti o ceně** vyberte pevnou záložku **Rabaty**.
 
@@ -106,15 +111,18 @@ Informace o rabatu je rovněž zobrazeny v poli **Rabat dodavatele** v části *
 > Na stránce **Parametry modulu Zásobování a zdroje** na kartě **Ceny** ověřte, zda je možnost **Povolit podrobnosti o ceně** nastavena na **Ano**. Pokud je možnost nastavena na **Ne**, nebudete moci zobrazit rabaty.
 
 ## <a name="review-and-approve-claims"></a>Kontrola a schválení nároků
+
 Nároky na rabat, které jsou generovány, představují budoucí platby, které lze očekávat od dodavatele. Před vystavením dobropisu dodavateli obvykle vlastník smlouvy chce zkontrolovat nároky a schválit je. Všimněte si však, že stav nároku určuje, zda je nárok připraven projít schvalovacím procesem.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Stav nároků a vliv na schvalovací proces
+
 Když je nárok vygenerován, je jeho stav nastaven na **K výpočtu**, pokud je rabat zaručen na kumulativním základu, nebo **Vypočteno**, pokud je rabat zaručen podle faktury. Pokud je stav nároku **K výpočtu**, musí projít procesem výpočtu, který provádí funkce Kumulovat. Pouze nároky se stavem **Vypočteno** lze zahrnout do schvalovacího procesu.
 
 > [!NOTE]
 > Pokud je možnost **Vyžadováno schválení** na smlouvě o rabatu dodavatele nastavena na **Ne**, žádné vygenerované nároky nebudou mít stav **Schváleno**. Schválení je povinné pro nároky, které jsou garantovány na kumulativním základu.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Schválení pohledávek a zobrazení zaúčtování a podrobností o fakturách
+
 Po schválení nároků je lze zpracovat podle závazků. Je automaticky vygenerován dobropis (faktura dodavatele) pro částku nároku na rabat. K zůstatku dodavatele lze poté přidat kredit a tým pohledávek ho může zahrnout do procesu pravidelných vyrovnání.
 
 1. Vyberte **Zásobování a zdroje** &gt; **Rabaty dodavatele** &gt; **Nároky na rabat** a otevřete nárok na rabat.
@@ -153,6 +161,7 @@ Po schválení nároků je lze zpracovat podle závazků. Je automaticky vygener
 9. Na stránce **Všichni dodavatelé** vyberte dodavatele, od kterého obdržíte rabat, a poté vyberte v podokně akcí **Transakce**. Najděte řádek pro fakturu. Částka rabatu byla nyní přidána k zůstatku dodavatele.
 
 ## <a name="summary"></a>Souhrn
+
 Proces zpracování rabatů dodavatele zahrnuje více úloh ručního sledování, což je často únavné. Díky automatizaci těchto úloh vám může funkce správy rabatů dodavatele pomoci procházet následujícími procesy:
 
 - Generování přesných nároků na rabat

@@ -3,7 +3,7 @@ title: Funkce el. výkaznictví GETENUMVALUEBYNAME
 description: Toto téma obsahuje obecné informace o použití funkce GETENUMVALUEBYNAME elektronického výkaznictví.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743848"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885220"
 ---
 # <a name="getenumvaluebyname-er-function"></a>Funkce el. výkaznictví GETENUMVALUEBYNAME
 
@@ -61,11 +61,11 @@ Výsledná výčtová hodnota.
 
 Není vyvolána žádná výjimka, pokud není nalezena hodnota typu *výčet* za použití názvu výčtové hodnoty, která je zadána jako hodnota typu *řetězec*.
 
-## <a name="example"></a>Příklad
+## <a name="example-1"></a>Příklad 1
 
 Na následujícím obrázku je výčet **ReportDirection** uveden v datovém modelu. Všimněte si, že pro výčtové hodnoty jsou definovány popisky.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Dostupné hodnoty pro výčet datového modelu](./media/ER-data-model-enumeration-values.PNG)
 
 Následující obrázek znázorňuje tyto podrobnosti:
 
@@ -73,8 +73,48 @@ Následující obrázek znázorňuje tyto podrobnosti:
 - Výraz `$IsArrivals` je určený k použití zdroje dat **$Direction** výčtu modelů jako parametr této funkce.
 - Hodnota tohoto porovnávacího výrazu je **TRUE**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Příklad výčtu mapování modelu dat](./media/ER-data-model-enumeration-usage.PNG)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="example-2"></a>Příklad 2
+
+Funkce `GETENUMVALUEBYNAME` a [`LISTOFFIELDS`](er-functions-list-listoffields.md) vám umožňují načíst hodnoty a štítky podporovaných výčtů jako textové hodnoty. (Podporované výčty jsou výčty aplikací, výčty datových modelů a výčty formátů.)
+
+Na následujícím obrázku je datový zdroj **TransType** uveden v mapování modelu. Tento zdroj dat odkazuje na výčet aplikace **LedgerTransType**.
+
+![Zdroj dat mapování modelu, který odkazuje na výčet aplikace](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+Následující obrázek je datový zdroj **TransTypeList**, který je konfigurován v mapování modelu. Tento zdroj dat je konfigurován na základě výčtu aplikace **TransType**. Funkce `LISTOFFIELDS` se používá k vrácení všech hodnot výčtu jako seznam záznamů, které obsahují pole. Tímto způsobem jsou vystaveny podrobnosti každé hodnoty výčtu.
+
+> [!NOTE]
+> Pole **EnumValue** je nakonfigurováno pro zdroj dat **TransTypeList** pomocí výrazu `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. Toto pole vrací hodnotu výčtu pro každý záznam v tomto seznamu.
+
+![Zdroj dat mapování modelu, který vrací všechny hodnoty výčtu vybraného výčtu jako seznam záznamů](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+Následující obrázek je datový zdroj **VendTrans**, který je konfigurován v mapování modelu. Tento zdroj dat vrací záznamy transakcí dodavatele z aplikační tabulky **VendTrans**. Typ typ registru každé transakce je definován hodnotou pole **TransType**.
+
+> [!NOTE]
+> Pole **TransTypeTitle** je nakonfigurováno pro zdroj dat **VendTrans** pomocí výrazu `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label`. Toto pole vrací štítek hodnoty výčtu aktuální transakce jako text, pokud je tato hodnota výčtu k dispozici. Jinak bude vrácena hodnota prázdného řetězce.
+>
+> Pole **TransTypeTitle** je vázáno na pole **LedgerType** datového modelu, které umožňuje použití těchto informací v každém formátu ER, který používá datový model jako zdroj dat.
+
+![Zdroj dat mapování modelu, který vrací transakce dodavatele](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+Následující ilustrace ukazuje, jak můžete použít [ladicí program zdroje dat](er-debug-data-sources.md) a otestovat nakonfigurované mapování modelu.
+
+![Pomocí ladicího programu zdroje dat otestujte nakonfigurované mapování modelu](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Pole **LedgerType** datového modelu vystavuje popisky typů transakcí podle očekávání.
+
+Pokud plánujete použít tento přístup pro velké množství transakčních dat, musíte zvážit výkon provádění. Více informací viz [Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md).
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Textové funkce](er-functions-category-text.md)
+
+[Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md)
+
+[Funkce elektronického výkaznictví LISTOFFIELDS](er-functions-list-listoffields.md)
+
+[Funkce elektronického výkaznictví FIRSTORNULL](er-functions-list-firstornull.md)
+
+[Funkce elektronického výkaznictví WHERE](er-functions-list-where.md)

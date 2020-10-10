@@ -1,7 +1,7 @@
 ---
 title: Platební slevy u přeplatků
 description: Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
-ms.author: kweekley
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2fafe2fba9dd71fc09c60bfa20d72fa59510b7f
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154149"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899510"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Platební slevy u přeplatků
 
@@ -46,7 +46,7 @@ V tomto scénáři se částka přeplatku nachází mezi hodnotami 0,00 a maxim�
 
 | Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| 105,00 USD        | 10.50                   | 94.50                                               |
 
 Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
 
@@ -67,9 +67,9 @@ Pro platby a vyrovnání jsou generovány následující účetní položky. **P
 
 | Účet                                                                                                          | Částka Má dáti | Částka kreditu |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**).                 | 10,50 USD        |               |
-| Pohledávky                                                                                              |              | 10,50 USD         |
-| Platební slevy pro odběratele (pole **Platební slevy pro odběratele** na stránce **Účty pro automatické transakce**. |              | 0,50          |
+| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**).                 | 10.50        |               |
+| Pohledávky                                                                                              |              | 10.50         |
+| Platební slevy pro odběratele (pole **Platební slevy pro odběratele** na stránce **Účty pro automatické transakce**). |              | 0,50          |
 | Pohledávky                                                                                              | 0,50         |               |
 
 ### <a name="scenario-2"></a>Scénář 2
@@ -78,7 +78,7 @@ V tomto scénáři částka přeplatku přesahuje maximální přeplatek nebo ne
 
 | Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| 105,00 USD        | 10.50                   | 94.50                                               |
 
 Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
 
@@ -99,8 +99,8 @@ Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je p
 
 | Účet                                                                                          | Částka Má dáti | Částka kreditu |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce**Platební slevy**). | 10,50 USD        |               |
-| Pohledávky                                                                              |              | 10,50 USD         |
+| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce**Platební slevy**). | 10.50        |               |
+| Pohledávky                                                                              |              | 10.50         |
 
 ## <a name="cash-discount-administration--unspecific"></a>Správa platební slevy = nespecifická
 Při výběru možnosti **Nespecifické** v poli **Správa platební slevy** na stránce **Účty pro automatické transakce** je částka platební slevy snížena částkou přeplatku. Toto chování se vždy používá bez ohledu na to, zda je částka přeplatku větší nebo menší než částka zadaná v poli **Maximální přeplatek či nedoplatek**.
@@ -111,7 +111,7 @@ V tomto scénáři je faktura zaplacena v rámci sedmi dní, faktura bude zadán
 
 | Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| 105,00 USD        | 10.50                   | 94.50                                               |
 
 Odběratel odešle platbu za 95,00 v rámci data platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
 
@@ -132,8 +132,8 @@ Odběratel odešle platbu za 95,00 v rámci data platební slevy. Platba je pot�
 
 | Účet                                                                                          | Částka Má dáti | Částka kreditu |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**). | 10,50 USD        |               |
-| Pohledávky                                                                              |              | 10,50 USD         |
+| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**). | 10.50        |               |
+| Pohledávky                                                                              |              | 10.50         |
 
 
 
