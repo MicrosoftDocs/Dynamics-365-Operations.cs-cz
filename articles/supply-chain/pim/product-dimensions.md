@@ -1,14 +1,14 @@
 ---
 title: Dimenze produktu
 description: Existuje pět dimenzí produktu – barva, konfigurace, velikost, styl a verze. Kombinujte dimenze produktu ve skupinách dimenzí a přiřazujte skupiny dimenzí k základním produktům. Kombinace dimenzí produktu určuje způsob definování variant produktu.
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657309"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895442"
 ---
 # <a name="product-dimensions"></a>Dimenze produktu
 
@@ -107,7 +107,7 @@ Při testování kompatibility řešení s dimenzí verze hledejte následujíc�
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Mapy:** Pokud některé mapy používají dimenze zásob, musí být odpovídající mapování relací k těmto mapám aktualizováno tak, aby obsahovaly dimenzi verze. V rozšířeném modelu nebo rozšíření tabulky hledejte tabulky, kde pole obsahují rozměry inventáře.
-1. **Microsoft Dynamics 365 Commerce funkčnost:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikací v místě prodeje (POS). Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
+1. **Microsoft Dynamics 365 Commerce funkčnost:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikacích POS nebo elektronického obchodování. Tyto aplikace specifické pro obchod nebudou podporovat uživatele, kteří prodávají / odesílají nebo vracejí / přijímají zásoby podle dimenze verze. Funkce vyhledávání dostupnosti zásob nerozlišují zásoby podle dimenze verze v obchodních aplikacích. Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
 
 #### <a name="turn-on-the-version-dimension"></a>Zapnout dimenzi verze
 

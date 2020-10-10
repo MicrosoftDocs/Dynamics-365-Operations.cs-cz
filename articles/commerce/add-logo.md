@@ -3,7 +3,7 @@ title: Přidání loga
 description: Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686639"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817323"
 ---
 # <a name="add-a-logo"></a>Přidání loga
 
@@ -34,7 +34,7 @@ Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 
 
 ## <a name="overview"></a>Přehled
 
-Když vytváříte web, jedna z prvních věcí, kterou pravděpodobně uděláte, je přidání loga vaší společnosti nebo značky do záhlaví webu. Online startovací sada řešení Dynamics 365 Commerce poskytuje modul, který tuto úlohu usnadňuje.
+Když vytváříte web, jedna z prvních věcí, kterou pravděpodobně uděláte, je přidání loga vaší společnosti nebo značky do záhlaví webu. Online knihovna modulů Dynamics 365 Commerce poskytuje modul, který tuto úlohu usnadňuje.
 
 Logo můžete přidat přímo do šablony, rozložení nebo stránky. Tímto způsobem můžete snadno změnit logo, které se zobrazí na určitých stránkách nebo skupinách stránek. Toto téma však popisuje nejčastější scénář, ve kterém přidáte logo do fragmentu záhlaví, který lze znovu použít na všech stránkách webu.
 
