@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,56 +18,56 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb491b1c3eced52f6cfc69e3da028dfed36b823b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a7239bf5f8e53e61c4259abbcbf2ff740f4cef55
+ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205177"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3889930"
 ---
-# <a name="inbound-and-outbound-assets"></a><span data-ttu-id="34741-103">Příchozí a odchozí majetek</span><span class="sxs-lookup"><span data-stu-id="34741-103">Inbound and outbound assets</span></span>
+# <a name="inbound-and-outbound-assets"></a><span data-ttu-id="01916-103">Příchozí a odchozí majetek</span><span class="sxs-lookup"><span data-stu-id="01916-103">Inbound and outbound assets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="34741-104">Pokud vaše společnost provádí úlohy oprav nebo údržby u majetku, který byl přijat z jiných míst nebo od jiných zákazníků, může správa majetku sledovat jak vstupní majetek, který je na cestě do vaší firmy, a příchozí majetek, který se vrací.</span><span class="sxs-lookup"><span data-stu-id="34741-104">If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.</span></span>
+<span data-ttu-id="01916-104">Pokud vaše společnost provádí úlohy oprav nebo údržby u majetku, který byl přijat z jiných míst nebo od jiných zákazníků, může správa majetku sledovat jak vstupní majetek, který je na cestě do vaší firmy, a příchozí majetek, který se vrací.</span><span class="sxs-lookup"><span data-stu-id="01916-104">If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="34741-105">Pokud chcete použít příchozí a odchozí stavy životního cyklu pro správu majetku, který přichází nebo se vrací, musíte pro podporu těchto akcí nastavit stavy životního cyklu požadavků na údržbu a modely životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="34741-105">If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions.</span></span> <span data-ttu-id="34741-106">Další informace naleznete v tématu [Požadavky na údržbu](../setup-for-maintenance-requests/requests.md).</span><span class="sxs-lookup"><span data-stu-id="34741-106">For more information, see [Maintenance requests](../setup-for-maintenance-requests/requests.md).</span></span>
+> <span data-ttu-id="01916-105">Pokud chcete použít příchozí a odchozí stavy životního cyklu pro správu majetku, který přichází nebo se vrací, musíte pro podporu těchto akcí nastavit stavy životního cyklu požadavků na údržbu a modely životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="01916-105">If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions.</span></span> <span data-ttu-id="01916-106">Další informace naleznete v tématu [Požadavky na údržbu](../setup-for-maintenance-requests/requests.md).</span><span class="sxs-lookup"><span data-stu-id="01916-106">For more information, see [Maintenance requests](../setup-for-maintenance-requests/requests.md).</span></span>
 
-<span data-ttu-id="34741-107">Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo odchozím majetkem.</span><span class="sxs-lookup"><span data-stu-id="34741-107">The setup of Asset Management determines whether you can work with inbound and outbound assets.</span></span>
+<span data-ttu-id="01916-107">Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo odchozím majetkem.</span><span class="sxs-lookup"><span data-stu-id="01916-107">The setup of Asset Management determines whether you can work with inbound and outbound assets.</span></span>
 
-## <a name="register-assets-as-inbound"></a><span data-ttu-id="34741-108">Registrace majetku jako příchozího</span><span class="sxs-lookup"><span data-stu-id="34741-108">Register assets as inbound</span></span>
+## <a name="register-assets-as-inbound"></a><span data-ttu-id="01916-108">Registrace majetku jako příchozího</span><span class="sxs-lookup"><span data-stu-id="01916-108">Register assets as inbound</span></span>
 
-1. <span data-ttu-id="34741-109">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="34741-109">Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.</span></span>
-2. <span data-ttu-id="34741-110">Zvolte požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="34741-110">Select the maintenance request.</span></span>
-3. <span data-ttu-id="34741-111">Zvolte **Aktualizovat stav požadavku na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="34741-111">Select **Update maintenance request state**.</span></span>
-4. <span data-ttu-id="34741-112">Vyberte **Příchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro příchozí majetek) a pak zvolte **OK**.</span><span class="sxs-lookup"><span data-stu-id="34741-112">Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.</span></span>
+1. <span data-ttu-id="01916-109">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="01916-109">Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.</span></span>
+2. <span data-ttu-id="01916-110">Zvolte požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="01916-110">Select the maintenance request.</span></span>
+3. <span data-ttu-id="01916-111">Zvolte **Aktualizovat stav požadavku na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="01916-111">Select **Update maintenance request state**.</span></span>
+4. <span data-ttu-id="01916-112">Vyberte **Příchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro příchozí majetek) a pak zvolte **OK**.</span><span class="sxs-lookup"><span data-stu-id="01916-112">Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.</span></span>
 
 ![Registrace majetku jako příchozího](media/07-manage-maintenance-requests.png)
 
-## <a name="register-inbound-assets-as-received"></a><span data-ttu-id="34741-114">Registrace příchozího majetku jako přijatého</span><span class="sxs-lookup"><span data-stu-id="34741-114">Register inbound assets as received</span></span>
+## <a name="register-inbound-assets-as-received"></a><span data-ttu-id="01916-114">Registrace příchozího majetku jako přijatého</span><span class="sxs-lookup"><span data-stu-id="01916-114">Register inbound assets as received</span></span>
 
-1. <span data-ttu-id="34741-115">Vyberte **Správa majektu** \> **Společné** \> **Příchozí/odchozí** \> **Příchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-115">Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Inbound assets**.</span></span>
-2. <span data-ttu-id="34741-116">Zvolte majetek nebo požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="34741-116">Select the asset or maintenance request.</span></span>
-3. <span data-ttu-id="34741-117">Zvolte **Přijmout majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-117">Select **Receive assets**.</span></span>
-4. <span data-ttu-id="34741-118">V poli **Přijato** zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="34741-118">In the **Received** field, enter the date and time.</span></span> <span data-ttu-id="34741-119">Pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="34741-119">Then select **OK**.</span></span> <span data-ttu-id="34741-120">Záznam bude odebrán ze stránky se seznamem **Příchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-120">The record is removed from the **Inbound assets** list page.</span></span>
+1. <span data-ttu-id="01916-115">Vyberte **Správa majektu** \> **Společné** \> **Příchozí/odchozí** \> **Příchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-115">Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Inbound assets**.</span></span>
+2. <span data-ttu-id="01916-116">Zvolte majetek nebo požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="01916-116">Select the asset or maintenance request.</span></span>
+3. <span data-ttu-id="01916-117">Zvolte **Přijmout majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-117">Select **Receive assets**.</span></span>
+4. <span data-ttu-id="01916-118">V poli **Přijato** zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="01916-118">In the **Received** field, enter the date and time.</span></span> <span data-ttu-id="01916-119">Pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="01916-119">Then select **OK**.</span></span> <span data-ttu-id="01916-120">Záznam bude odebrán ze stránky se seznamem **Příchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-120">The record is removed from the **Inbound assets** list page.</span></span>
 
 ![Registrace příchozího majetku jako přijatého](media/08-manage-maintenance-requests.png)
 
-## <a name="register-assets-as-outbound"></a><span data-ttu-id="34741-122">Registrace majetku jako odchozího</span><span class="sxs-lookup"><span data-stu-id="34741-122">Register assets as outbound</span></span>
+## <a name="register-assets-as-outbound"></a><span data-ttu-id="01916-122">Registrace majetku jako odchozího</span><span class="sxs-lookup"><span data-stu-id="01916-122">Register assets as outbound</span></span>
 
-<span data-ttu-id="34741-123">Po dokončení úlohy údržby nebo opravy můžete majetek zaregistrovat jako vrácený.</span><span class="sxs-lookup"><span data-stu-id="34741-123">When you've completed the maintenance or repair job, you can register the asset as returned.</span></span>
+<span data-ttu-id="01916-123">Po dokončení úlohy údržby nebo opravy můžete majetek zaregistrovat jako vrácený.</span><span class="sxs-lookup"><span data-stu-id="01916-123">When you've completed the maintenance or repair job, you can register the asset as returned.</span></span>
 
-1. <span data-ttu-id="34741-124">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="34741-124">Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.</span></span>
-2. <span data-ttu-id="34741-125">Zvolte požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="34741-125">Select the maintenance request.</span></span>
-3. <span data-ttu-id="34741-126">Zvolte **Aktualizovat stav požadavku na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="34741-126">Select **Update maintenance request state**.</span></span>
-4. <span data-ttu-id="34741-127">Vyberte **Odchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro odchozí majetek) a pak zvolte **OK**.</span><span class="sxs-lookup"><span data-stu-id="34741-127">Select **Outbound** (or another lifecycle state that you've created for outbound assets), and then select **OK**.</span></span>
+1. <span data-ttu-id="01916-124">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="01916-124">Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.</span></span>
+2. <span data-ttu-id="01916-125">Zvolte požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="01916-125">Select the maintenance request.</span></span>
+3. <span data-ttu-id="01916-126">Zvolte **Aktualizovat stav požadavku na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="01916-126">Select **Update maintenance request state**.</span></span>
+4. <span data-ttu-id="01916-127">Vyberte **Odchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro odchozí majetek) a pak zvolte **OK**.</span><span class="sxs-lookup"><span data-stu-id="01916-127">Select **Outbound** (or another lifecycle state that you've created for outbound assets), and then select **OK**.</span></span>
 
-## <a name="register-outbound-assets-as-delivered"></a><span data-ttu-id="34741-128">Registrace odchozího majetku jako doručeného</span><span class="sxs-lookup"><span data-stu-id="34741-128">Register outbound assets as delivered</span></span>
+## <a name="register-outbound-assets-as-delivered"></a><span data-ttu-id="01916-128">Registrace odchozího majetku jako doručeného</span><span class="sxs-lookup"><span data-stu-id="01916-128">Register outbound assets as delivered</span></span>
 
-1. <span data-ttu-id="34741-129">Vyberte **Správa majektu** \> **Společné** \> **Příchozí/odchozí** \> **Odchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-129">Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Outbound assets**.</span></span>
-2. <span data-ttu-id="34741-130">Zvolte majetek nebo požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="34741-130">Select the asset or maintenance request.</span></span>
-3. <span data-ttu-id="34741-131">Vyberte **Doručit majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-131">Select **Deliver assets**.</span></span>
-4. <span data-ttu-id="34741-132">V poli **Doručeno** zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="34741-132">In the **Delivered** field, enter the date and time.</span></span> <span data-ttu-id="34741-133">Pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="34741-133">Then select **OK**.</span></span> <span data-ttu-id="34741-134">Záznam bude odebrán ze stránky se seznamem **Odchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="34741-134">The record is removed from the **Outbound assets** list page.</span></span>
+1. <span data-ttu-id="01916-129">Vyberte **Správa majektu** \> **Společné** \> **Příchozí/odchozí** \> **Odchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-129">Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Outbound assets**.</span></span>
+2. <span data-ttu-id="01916-130">Zvolte majetek nebo požadavek na údržbu.</span><span class="sxs-lookup"><span data-stu-id="01916-130">Select the asset or maintenance request.</span></span>
+3. <span data-ttu-id="01916-131">Vyberte **Doručit majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-131">Select **Deliver assets**.</span></span>
+4. <span data-ttu-id="01916-132">V poli **Doručeno** zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="01916-132">In the **Delivered** field, enter the date and time.</span></span> <span data-ttu-id="01916-133">Pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="01916-133">Then select **OK**.</span></span> <span data-ttu-id="01916-134">Záznam bude odebrán ze stránky se seznamem **Odchozí majetek**.</span><span class="sxs-lookup"><span data-stu-id="01916-134">The record is removed from the **Outbound assets** list page.</span></span>
