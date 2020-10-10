@@ -3,7 +3,7 @@ title: Časté dotazy k workflow
 description: Toto téma poskytuje odpovědi na časté otázky týkající se systému workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076079"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826183"
 ---
 # <a name="workflow-faq"></a>Workflow – Často kladené otázky
 
@@ -58,3 +58,5 @@ Při spuštění v rámci služby AD FS (Active Directory Federation Services) v
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Proč se při zpracování workflowu vyskytla zablokování SQL? 
 Výchozí hodnota pole **Počet položek workflowu na dávkový úkol** na stránce **Parametry workflowu** je 0. Hodnota 0 způsobí, že se výchozí nastavení změní na 20 položek na dávku. Při úpravě této hodnoty buďte opatrní, protože vysoký počet položek na dávku (> 40) může vést k zablokování SQL.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co je funkce Rozšířená chyba pracovního postupu?
+Funkce Rozšířená chyba pracovního postupu ve verzi 10.0.13 přidává chybové kódy k rozlišení různých tříd chyb pracovního postupu. Hlášené chybové zprávy budou většinou podobné, s menšími rozdíly, aby byly jasnější.

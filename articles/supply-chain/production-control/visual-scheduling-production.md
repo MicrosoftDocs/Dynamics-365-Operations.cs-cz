@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210150"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887233"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Ganttův diagram pro plánování úloh
 
@@ -38,7 +38,7 @@ Ganttův diagram je vizuální znázornění naplánovaných aktivit v rámci de
 -   Úlohy z plánovaných výrobních zakázek.
 -   Naplánované aktivity projektu podle úlohy typu Hodinová prognóza.
 
-Ganttův graf lze otevřít dvěma různými způsoby, **Zobrazení objednávky** a **Zobrazení zdrojů**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). V **Zobrazení objednávky** jsou aktivity seskupeny pod výrobními zakázkami. To může být užitečné, například pokud chcete mít přehled o všech úlohách náležejících do stejné objednávky. V **Zobrazení zdrojů** jsou všechny úlohy seskupeny podle jednotlivých zdrojů. Toto zobrazení je vhodné při optimalizaci plánu na úrovni zdroje, například stroje nebo skupiny strojů. Ganttův diagram na následujícím obrázku ukazuje **zobrazení objednávky** a **zobrazení zdrojů** s těmito klíčovými prvky:
+Ganttův graf lze otevřít dvěma různými způsoby, **Zobrazení objednávky** a **Zobrazení zdrojů**. V **Zobrazení objednávky** jsou aktivity seskupeny pod výrobními zakázkami. To může být užitečné, například pokud chcete mít přehled o všech úlohách náležejících do stejné objednávky. V **Zobrazení zdrojů** jsou všechny úlohy seskupeny podle jednotlivých zdrojů. Toto zobrazení je vhodné při optimalizaci plánu na úrovni zdroje, například stroje nebo skupiny strojů. Ganttův diagram na následujícím obrázku ukazuje **zobrazení objednávky** a **zobrazení zdrojů** s těmito klíčovými prvky:
 
 1.  Aktivita Ganttova diagramu
 2.  Ikona nedostatku materiálu

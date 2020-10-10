@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
-ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
+ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
+ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "3719257"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3829205"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -99,29 +99,7 @@ Pokud provádíte synchronizaci ze Supply Chain Management do Sales, dostanete n
 
 ## <a name="dual-write-solution-for-sales"></a>Řešení dvojího zapisování pro Sales
 
-Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Většina z těchto polí je zobrazena na kartě **Integrace** v modulu Sales. Existuje několik zvláštních polí:
-
-+ Pole **Stav zpracování** ukazuje stav zpracování objednávky v aplikaci Supply Chain Management. Toto pole je uzamčeno a zobrazuje pouze stav objednávky ze Supply Chain Management. K dispozici jsou následující hodnoty:
-
-    + **Aktivní** – Stav po aktivaci objednávky v aplikaci Sales s použitím tlačítka **Aktivovat**.
-    + **Potvrzeno**
-    + **Dodáno**
-    + **Fakturováno**
-    + **Částečně dodáno**
-    + **Částečně fakturováno**
-    + **Vydáno**
-    + **Zrušeno**
-
-    V následující tabulce je uvedeno, jak je stav zpracování mapován na hodnotu **stavového kódu CRM**.
-
-    | Stav zpracování           | kód stavu CRM    |
-    |-----------------------------|--------------------|
-    | Aktivní                      | Nové/čekající/pozastavené |
-    | Potvrzeno/vydáno            | Probíhá        |
-    | Částečně dodáno         | Částečné            |
-    | Dodáno                   | Dokončit           |
-    | Fakturováno/částečně fakturováno | Fakturováno           |
-    | Zrušeno                    | Žádné peníze           |
+Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Většina z těchto polí je zobrazena na kartě **Integrace** v modulu Sales. Další informace o tom, jak jsou mapována stavová pole, najdete v tématu dokumentace [Nastavte mapování pro pole stavu prodejní objednávky](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
 
 + Tlačítka **Vytvořit fakturu** a **Storno objednávky** na stránce **Prodejní objednávka** jsou v Sales skryta.
 + Hodnota **Stav prodejní objednávky** zůstane **Aktivní**, aby se zajistilo, že změny z aplikace Supply Chain Management mohou být odeslány do prodejní objednávky v aplikaci Sales. Chcete-li kontrolovat toto chování, nastavte hodnotu **Statecode \[Stav\]** na **Aktivní**.

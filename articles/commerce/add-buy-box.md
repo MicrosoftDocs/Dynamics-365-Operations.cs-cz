@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761290"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817078"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -75,9 +75,12 @@ Následující nastavení modulu buy boxu lze konfigurovat na **Nastavení webu 
 - **Zásoby** – Informace, jak použít nastavení zásob, naleznete v části [Použití nastavení zásob](inventory-settings.md).
 - **Přidat do nákupního košíku** – Tato vlastnost se používá ke specifikaci chování po přidání položky do košíku. Možné hodnoty jsou **Přejít do nákupního košíku**, **Nepřecházet do nákupního košíku** a **Zobrazit oznámení**. Když je tato hodnota nastavena na **Přejít do nákupního košíku**, uživatelé jsou po přidání položky přesměrováni na stránku nákupního košíku. Když je tato hodnota nastavena na **Nepřecházet do nákupního košíku**, uživatelé nejsou po přidání položky přesměrováni na stránku nákupního košíku. Když je hodnota nastavena na **Zobrazit oznámení**, uživatelům se zobrazí potvrzovací oznámení a poté mohou nadále procházet stránku podrobností o produktu. 
 
-    Následující obrázek ukazuje příklad potvrzovacího oznámení „přidáno do košíku“ na webu Fabrikam.
+> [!IMPORTANT]
+> Nastavení webu **Přidat do košíku** jsou k dispozici ve vydání Dynamics 365 Commerce 10.0.11. Pokud provádíte aktualizaci ze starší verze Dynamics 365 Commerce, musíte ručně aktualizovat soubor appsettings.json. Pokyny k aktualizaci souboru appsettings.json najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Příklad modulu oznámení](./media/ecommerce-addtocart-notifications.PNG)
+Následující obrázek ukazuje příklad potvrzovacího oznámení „přidáno do košíku“ na webu Fabrikam.
+
+![Příklad modulu oznámení](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 
@@ -111,7 +114,7 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul volby obchodu](store-selector.md)
 
@@ -129,6 +132,8 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 [Modul zápatí](author-footer-module.md)
 
-[Modul pro sdílení na sociálních sítích](social-share-module.md)
+[Modul sdílení na sociálních sítích](social-share-module.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
+
+[SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)

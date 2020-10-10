@@ -3,7 +3,7 @@ title: Přehled domovské stránky
 description: Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527570"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817747"
 ---
 # <a name="home-page-overview"></a>Přehled domovské stránky
 
@@ -34,7 +34,7 @@ Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce
 
 Domovská stránka je výchozí stránka, na kterou kupující přichází při návštěvě webu e-Commerce. Tato stránka obvykle předběžně obsahuje produkty a promoakce pomocí kombinace marketingových modulů. Domovská stránka by měla být bohatá s obrázky a textem, aby kupující zaujala.
 
-Následující ilustrace znázorňuje příklad domovské stránky, která byla sestavena pomocí Startovní sady a tématu "Fabrikam".
+Následující ilustrace znázorňuje příklad domovské stránky, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
 ![Příklad domovské stránky](./media/Homepage2.PNG)
 

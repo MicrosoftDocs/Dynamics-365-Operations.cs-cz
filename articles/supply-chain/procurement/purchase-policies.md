@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207895"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830742"
 ---
 # <a name="purchasing-policies-overview"></a>Přehled zásad nákupu
 
@@ -102,9 +102,9 @@ Pravidlo požadavku na nabídku nákupní žádanky definujte kritéria pro vyž
 
 ### <a name="purchase-requisition-control-rule"></a>Pravidlo řízení nákupní žádanky
 
-Pravidlo řízení nákupní žádanky je volitelné pravidlo. Při vytváření pravidla tohoto typu lze na různých kartách nastavit možnosti:
+Pravidlo kontroly nákupní žádanky pro žádanky typu **spotřeba** je volitelné pravidlo. Při vytváření pravidla tohoto typu lze na různých kartách nastavit možnosti:
 
--   Na kartě **Odeslání workflowu** můžete konfigurovat pole, které je třeba zadat na řádku žádanky pro odeslání žádanky ke schválení, pokud je účelem žádanky **Spotřeba**.
+-   Na kartě **Odeslání workflowu** můžete konfigurovat pole, které je třeba zadat na řádku žádanky pro odeslání žádanky ke schválení.
 -   Na kartě **Množství objednávek** lze konfigurovat pole, která jsou za určitých podmínek požadována nákupní žádanku. Můžete také vynutit objednané množství.
 -   Na kartě **Data** můžete nastavit, zda je datum účetnictví stejné jako požadované datum.
 -   Na kartě **Adresa** můžete definovat, zda uživatel může vytvářet nové adresy v systému k použití do nákupního žádanky.

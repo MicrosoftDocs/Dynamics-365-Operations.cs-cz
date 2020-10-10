@@ -3,7 +3,7 @@ title: Modul volby obchodu
 description: Tohle téma se zabývá modulem výběru obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646128"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818243"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá modulem výběru obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +64,7 @@ Aby scénář BOPIS fungoval, měly by být produkty konfigurovány se způsobem
 
 Následující obrázek znázorňuje příklad modulu volby obchodu použitého na stránce s podrobnostmi o produktu.
 
-![Příklad modulu volby obchodu](./media/BOPIS.PNG)
+![Příklad modulu volby obchodu používaného u PDP](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Najít režim obchodů
 
@@ -73,7 +72,7 @@ Modul pro výběr obchodu také podporuje režim **Najít obchody**. Tento reži
 
 Následující obrázek ukazuje příklad modulu pro výběr obchodu, který se používá společně s mapovým modulem na stránce umístění obchodu.
 
-![Příklad modulu volby obchodu](./media/ecommerce-Storelocator.PNG)
+![Příklad modulu pro výběr obchodu a modulu mapování na stránce umístění obchodu](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Vykreslit mapu
 
@@ -127,7 +126,7 @@ Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dost
  
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul buy boxu](add-buy-box.md)
 

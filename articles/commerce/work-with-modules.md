@@ -1,9 +1,9 @@
 ---
 title: Práce s moduly
 description: V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,20 +14,19 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646008"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818415"
 ---
 # <a name="work-with-modules"></a>Práce s moduly
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
 
@@ -35,7 +34,7 @@ V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Mi
 
 Moduly jsou logické stavební bloky, které tvoří strukturu stránek a mají různé účely a zaměření. Některé moduly jsou kontejnery vysoké úrovně a jejich jediným účelem je obsahování a uspořádání dalších modulů (podřízených modulů). Ostatní moduly, jako je například jednoduchý modul umístění obrázku, mají velmi specifický účel. Mezi těmito dvěma kategoriemi patří i jiné moduly, například karuselový modul.
 
-Ve výchozím nastavení váš web Dynamics 365 Commerce obsahuje knihovnu modulů startovní sady, která umožňuje dosáhnout většiny základních scénářů e-Commerce. Pomocí pouze těchto modulů by mělo být možné vytvořit komplexní web e-Commerce. Můžete však také přizpůsobit tyto moduly nebo sestavit nové, vlastní moduly pro specifické potřeby. Chcete-li vytvořit vlastní moduly, je k dispozici sada SDK (Software Development Kit), která usnadňuje vytvoření vlastní knihovny modulů.
+Ve výchozím nastavení váš web Dynamics 365 Commerce obsahuje knihovnu modulů, která umožňuje dosáhnout většiny základních scénářů e-Commerce. Pomocí pouze těchto modulů by mělo být možné vytvořit komplexní web e-Commerce. Můžete však také přizpůsobit tyto moduly nebo sestavit nové, vlastní moduly pro specifické potřeby. Chcete-li vytvořit vlastní moduly, je k dispozici sada SDK (Software Development Kit), která usnadňuje vytvoření vlastní knihovny modulů.
 
 ## <a name="container-modules-and-slots"></a>Moduly a sloty kontejneru
 

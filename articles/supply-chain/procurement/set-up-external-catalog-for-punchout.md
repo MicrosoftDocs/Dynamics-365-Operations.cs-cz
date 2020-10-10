@@ -1,6 +1,6 @@
 ---
 title: Nastavení externího katalogu pro funkci PunchOut eProcurement
-description: Toto téma popisuje použití externího katalogu nebo katalogu funkce punchout ke shromažďování informací o nabídce od dodavatele a jejich přidání do žádanky.
+description: Toto téma popisuje použití externího katalogu nebo katalogu funkce PunchOut ke shromažďování informací o nabídce od dodavatele a jejich přidání do žádanky.
 author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207800"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826821"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,12 +81,13 @@ Níže naleznete popis štítků, které jsou zahrnuty do šablony:
 |< Header >< Sender >< Credential >< Identity >< /Identity> | Identita společnosti odběratele.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Tajný pro společnost odběratele.|
 |< Request deploymentMode=”” >|Testovací nebo výrobní nasazení.|
-|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adresa URL konečného bodu punchout společnosti dodavatele.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adresa URL konečného bodu PunchOut společnosti dodavatele.|
 
 ### <a name="extrinsic-elements"></a>Externí prvky
 
-Externí prvek představuje další informace jako uživatelské jméno uživatele, který provedl punchout. Je nastaven, když je provedena funkce punchout a může být zaslán ve zprávě o nastavení požadavku.
-Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastavení požadavku. V takovém případě byste měli přidat externí prvek do seznamu externích prvků v části **Formát zprávy** na stránce **Externí katalog**. Zadejte název pro externí prvek, který dodavatel rozpozná, a namapujte ho na hodnotu. Možnosti hodnot jsou: uživatelského jméno, uživatelský e-mail nebo náhodná hodnota.
+Externí prvek představuje další informace jako uživatelské jméno uživatele, který provedl punchout. Je nastaven, když je provedena funkce PunchOut a může být zaslán ve zprávě o nastavení požadavku.
+Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastavení požadavku. V takovém případě byste měli přidat externí prvek do seznamu externích prvků v části **Formát zprávy** na stránce **Externí katalog**.
+Zadejte název pro externí prvek, který dodavatel rozpozná, a namapujte ho na hodnotu. Možnosti hodnot jsou: uživatelského jméno, uživatelský e-mail nebo náhodná hodnota.
 Další informace o protokolu cXML protokolu naleznete na webu [cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Zpráva zaslaná zpět
@@ -109,3 +110,7 @@ Odstraňte externí katalog s akcí odstranění na stránce.
 
 Pokud byl požadován produkt z externího katalogu dodavatele, nelze katalog odstranit, protože uživatel požaduje zboží či službu z tohoto katalogu. Místo toho se stav dodavatel externího katalogu nastaví na neaktivní. Pokud chcete odebrat přístup k webu externího dodavatele katalogu, ale ne ho odstranit, změňte stav externího katalogu na Neaktivní.
 
+## <a name="additional-resources"></a>Další prostředky
+
+- [cXML vylepšení nákupu](purchasing-cxml-enhancements.md)
+- [Použití externích katalogů pro funkci PunchOut eProcurement](use-external-catalogs-for-punchout.md)
