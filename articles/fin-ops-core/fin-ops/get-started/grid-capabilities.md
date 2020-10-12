@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760392"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835079"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -33,6 +33,7 @@ Nový ovládací prvek mřížky poskytuje řadu užitečných a výkonných fun
 -  Zadávání před systémem
 -  Vyhodnocování matematických výrazů 
 -  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **(Preview) Seskupení do mřížek**)
+-  Připnuté systémové sloupce
 
 ## <a name="calculating-totals"></a>Vypočet součtů
 V aplikacích Finance and Operations mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
@@ -119,12 +120,19 @@ Stejně jako můžete vybrat (nebo zrušit výběr) všech řádků v mřížce 
 ### <a name="hiding-column-names"></a>Skrytí názvů sloupců
 Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Počínaje verzí 10.0.14 / Platform Update 38 můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
 
+## <a name="pinned-system-columns"></a>Připnuté systémové sloupce
+Sloupec pro výběr řádku a stavový sloupec řádku v nové mřížce jsou připnuty nebo zmrazeny v levé části mřížky. Proto, když jsou tyto sloupce zahrnuty do mřížky, budou vždy viditelné pro uživatele, bez ohledu na polohu vodorovného posouvání v mřížce.   
+
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 
 
-**10.0.9/Platform Update 33 a novější** Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Podobně jako jiné veřejné funkce náhledu je povolení této funkce v produkčním prostředí podmíněno [dodatečnou smlouvou o použití](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / Platform update 33 a novější**
 
-**10.0.8 / Platform update 32 a 10.0.7 / Platform update 31** Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1 (Dev/Test) a úrovně 2 (Sandbox), aby bylo možné poskytnout další změny testování a návrhu pomocí následujících kroků.
+Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Podobně jako jiné veřejné funkce náhledu je povolení této funkce v produkčním prostředí podmíněno [dodatečnou smlouvou o použití](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 a 10.0.7 / Platform update 31**
+
+Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1 (Dev/Test) a úrovně 2 (Sandbox), aby bylo možné poskytnout další změny testování a návrhu pomocí následujících kroků.
 
 1.  **Povolit let**: spustit následující příkaz SQL: 
 
@@ -139,11 +147,14 @@ Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku
 Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
-Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání s metodou `super()`formuláře`run()`.
+Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, od verze 10.0.13/Platform update 37 je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
 
  ```this.forceLegacyGrid();```
 
-Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Nahlaste všechny problémy společnosti Microsoft, které vyžadují použití tohoto rozhraní API. 
+Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Pokud nějaké problémy vyžadují použití tohoto rozhraní API, nahlaste je společnosti Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Vývojář] Sloupce velikosti k dostupné šířce
+Pokud vývojář nastaví vlastnost **WidthMode** na **SizeToAvailable** pro sloupce uvnitř nové mřížky mají tyto sloupce zpočátku stejnou šířku, jakou by měli, kdyby byla vlastnost nastavena na **SizeToContent**. Roztahují se však, aby uvnitř mřížky využili jakoukoli další dostupnou šířku. Pokud je vlastnost nastavena na **SizeToAvailable** pro více sloupců sdílejí všechny tyto sloupce jakoukoli další dostupnou šířku uvnitř mřížky. Pokud však uživatel ručně změní velikost jednoho z těchto sloupců, sloupec se stane statickým. Zůstane na této šířce a již se nebude natahovat, aby zabírala další dostupnou šířku mřížky.  
 
 ## <a name="known-issues"></a>Známé problémy
 V této části je uveden seznam známých problémů nového ovládacího prvku mřížky, zatímco je ve verzi Preview.  

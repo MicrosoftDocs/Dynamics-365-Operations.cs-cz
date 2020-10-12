@@ -3,7 +3,7 @@ title: Modul ovládacího prvku Accordion
 description: Tohle téma se zabývá moduly ovládacího prvku Accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1097289d339b84aa477752934afe8192e56c5ce5
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621077"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817127"
 ---
 # <a name="accordion-module"></a>Modul ovládacího prvku Accordion
 
@@ -80,7 +80,7 @@ Chcete-li přidat modul ovládacího prvku Accordion na stránku často kladený
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul kontejneru](add-container-module.md)
 

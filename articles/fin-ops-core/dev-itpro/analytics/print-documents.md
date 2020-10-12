@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772551"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893272"
 ---
 # <a name="document-printing-overview"></a>Přehled tisku dokumentu
 
@@ -52,10 +52,10 @@ V následující tabulce jsou popsány tři hlavní scénáře tisku.
 Protože se řešení liší, v závislosti na scénáři poskytují aplikace vestavěné služby a nástroje, které uživatelům pomáhají dosáhnout svých cílů:
 
 - **Scénář 1** je podporován vykreslováním prohlížeče HTML5 klienta.
-- **Scénář 2** používá aplikace klienta a služeb Microsoft Office 365.
+- **Scénář 2** používá aplikace klienta a služeb Microsoft 365.
 - **Scénář 3** vyžaduje podporu od aplikací klienta a služeb, které jsou hostovány v Microsoft Azure.
 
-Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance a Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
+Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance and Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
 
 ## <a name="service-overview"></a>Přehled služby
 Zatímco dokumenty vytvořené hostovanými aplikacemi čekají na tisk na zařízení připojeném k síti, jsou uloženy v úložišti objektu blob Azure. [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](install-document-routing-agent.md) používá ověřování Azure k vytvoření zabezpečeného kanálu do služeb Azure.

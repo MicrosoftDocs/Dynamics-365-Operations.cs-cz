@@ -3,7 +3,7 @@ title: Modul popisu cesty
 description: Tohle téma se zabývá moduly popisu cesty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 38efc3a60ae0ba49db2036dc84c49e4896727d94
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621053"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817103"
 ---
 # <a name="breadcrumb-module"></a>Modul popisu cesty
 
@@ -37,6 +37,9 @@ Moduly popisu cesty se používají k zajištění sekundární navigace na str�
 
 Na stránkách, které mají kontext kategorie produktu, jako jsou stránky podrobností o produktu a stránky kategorií, ukazují moduly popisu cesty hierarchii kategorií. Na stránkách, které nemají kontext kategorie, zobrazí moduly popisu cesty standardně **&lt;Kořen webu&gt; / &lt;Aktuální stránka&gt;**. Moduly popisu cesty lze také ručně konfigurovat na jiných typech webových stránek, aby zobrazovaly odkazy na konkrétní stránky na webu.
 
+> [!NOTE]
+> Modul popisu cesty je k dispozici v Dynamics 365 Commerce vydání 10.0.12.
+
 Následující obrázek znázorňuje příklad modulu popisu cesty, který zobrazuje hierarchii kategorií na stránce podrobností o produktu.
 
 ![Příklad modulu popisu cesty](./media/ecommerce-breadcrumb.PNG)
@@ -48,6 +51,9 @@ Modul popisu cesty řídí nastavení **Typ zobrazení popisu cesty na stránce 
 - **Zobrazit hierarchii kategorií** – Je-li tato hodnota vybrána, modul popisu cesty zobrazí hierarchii celé kategorie produktu, který je zobrazen na stránce s podrobnostmi o produktu.
 - **Zobrazit odkaz Zpět na výsledky** – Když je tato hodnota vybrána, modul popisu cesty zobrazí na stránce podrobností o produktu odkaz „Zpět na výsledky“, pokud uživatel otevřel stránku podrobností o produktu z modulu, který podporuje odkaz „Zpět na výsledky“. Tato funkce je k dispozici, když uživatelé přecházejí ze stránek kategorií, vyhledávání, seznamu a seznamů doporučení. Pro podporu této funkce mají moduly kolekce produktů a výsledků vyhledávání vlastnost, která je pojmenována **Povolit odkaz Zpět na výsledky na stránce podrobností o produktu**. Tato vlastnost vám poskytuje flexibilitu při definování, které moduly by měly podporovat funkci odkazu „Zpět na výsledky“ na stránce podrobností o produktu. Například když je vybrána možnost **Zobrazit odkaz Zpět na výsledky** pro nastavení **Typ zobrazení popisu cesty na stránce podrobností o produktu** a možnost **Povolit odkaz Zpět na výsledky na stránce podrobností o produktu** pro modul výsledků vyhledávání na stránce vyhledávání, odkaz „Zpět na výsledky“ se zobrazí, když uživatelé přejdou ze stránky vyhledávání na stránku podrobností o produktu.
 - **Zobrazit hierarchii kategorií a odkaz Zpět na výsledky** – Tato hodnota je kombinací předchozích dvou. Když je tato hodnota vybrána, modul popisu cesty zobrazí na stránce podrobností o produktu jak hierarchii celé kategorie, tak i odkaz „Zpět na výsledky“ (pokud je nakonfigurován).
+
+> [!IMPORTANT]
+> Tato nastavení jsou k dispozici ve vydání Dynamics 365 Commerce 10.0.12. Pokud provádíte aktualizaci ze starší verze Dynamics 365 Commerce, musíte ručně aktualizovat soubor appsettings.json. Pokyny k aktualizaci souboru appsettings.json najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="breadcrumb-module-properties"></a>Vlastnosti modulu popisu cesty
 
@@ -76,10 +82,12 @@ Chcete-li přidat modul popisu cesty na stránku podrobností o produktu a nasta
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Přehled výchozí cílové stránky kategorie a stránky výsledků hledání](category-search-page-overview.md)
 
 [Moduly kolekce produktů](product-collection-module-overview.md)
 
 [Modul buy boxu](add-buy-box.md)
+
+[SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)

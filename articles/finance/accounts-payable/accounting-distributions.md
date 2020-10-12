@@ -1,9 +1,9 @@
 ---
 title: Rozúčtování
-description: Tento článek obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování. Rozúčtování se používá k přidělení peněžních částek pro zdrojový dokument konkrétním účtům hlavní knihy.
+description: Toto téma obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772253"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819832"
 ---
 # <a name="accounting-distributions"></a>Rozúčtování
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování. Rozúčtování se používá k přidělení peněžních částek pro zdrojový dokument konkrétním účtům hlavní knihy. 
+Toto téma obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování. Rozúčtování se používá k přidělení peněžních částek pro zdrojový dokument konkrétním účtům hlavní knihy. 
 
 Rozúčtování je funkce dostupná v celé aplikaci, kterou používá a rozšiřuje každý zdrojový dokument, například nákupní objednávka, faktura dodavatele, sestava vyúčtování nebo volná faktura. Ve výchozím nastavení se výchozí rozúčtování generuje pro každý řádek zdrojového dokumentu a peněžní částku a jsou u něj podmíněně povoleny úpravy. 
 
-> [!Note] 
+> [!NOTE] 
 > Některé dokumenty podporují také peněžní částky záhlaví dokumentu, například poplatky za objednávky a faktury. 
 
 Obecné možnosti rozúčtování poskytují následující možnosti zpracování rozúčtování:
@@ -47,14 +47,13 @@ Obecné možnosti rozúčtování poskytují následující možnosti zpracován
     -   Tlačítko **Smazat** může být povoleno pro nadřazené distribuce, pokud existuje více než jedna distribuce. Volba **Smazat** stornuje ruční úpravy rozdělení tím, že odstraní všechny existující distribuce a znovu vygeneruje výchozí distribuce.
     -   Podřízená distribuce, například sleva, náklady a prodejní daň, se řídí vždy nadřazenou distribucí. Pomocí volby **Odkaz** &gt; **Nadřazená informace** lze zobrazit vztah mezi nadřazenými a podřízenými.
     -   Hlavní účet a finanční dimenzi může být možné upravit i u podřízených.
-    -   Finanční dimenze na rozúčtování se řídí výchozím vzorcem, který může dokument rozšířit. Další informace naleznete v souvisejících článcích.
+    -   Finanční dimenze na rozúčtování se řídí výchozím vzorcem, který může dokument rozšířit.
     -   Odchylky distribuce mohou být vygenerovány v odpovídajících scénářích, například mezi dodavatelskou fakturou a nákupní objednávkou. Pomocí volby **Odkaz** &gt; **Informace o dokumentu** můžete zobrazit odpovídající vztahy mezi rozúčtováním.
     -   Tlačítko **Opravit** je aktivní u dokumentů, které podporují opravy. **Opravit** vytvoří nové distribuce. Nejprve jsou vytvořeny distribuce, které stornují původní distribuce. Tyto distribuce nelze změnit. Dále se vytvoří nová správná rozúčtování. Tato rozúčtování lze upravit, pokud lze upravit původní rozúčtování.
     -   Tlačítko**Podrobnosti o projektu** je aktivní jako rozšíření v případě, že se řádek vztahuje k určitému projektu. Rozúčtování projektu umožňují úpravy podrobných informací, jako je například financování zdroje a vlastnost řádku.
     -   Můžete zobrazit účetní stav aktuálního dokumentu v položce **Odkaz**. Stav se týká celého dokumentu a určuje, zda je dokument nedokončený nebo dokončený.
 -   **Zobrazit distribuce** – zobrazení rozúčtování pro všechny řádky a peněžní částky v dokumentu. V tomto zobrazení nelze rozúčtování upravit.
 
+Ve verzi 10.0.13 byla přidána funkce, která ověřuje distribuční tabulku účetnictví, aby bylo zajištěno, že jsou nová pole správně nastavena. Tato funkce se nazývá **Povolit další ověření dat pro dokumenty pomocí rámce účetnictví zdrojových dokumentů**. Chcete-li tuto funkci používat, musíte ji povolit pomocí pracovního prostoru **Správa funkcí**. Chcete-li funkci povolit, vyhledejte její název v poli **Vyhledávání** na stránce **Správa funkcí** a poté vyberte **Povolit hned**.
 
 Více informací naleznete v části [Rozúčtování a záznamy v dílčí hlavní knize pro faktury dodavatele](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
-
-

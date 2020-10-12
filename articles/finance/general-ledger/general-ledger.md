@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: 53d37d0a02b6771957e2516ef7e3b0bb277014a6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696657"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888125"
 ---
 # <a name="general-ledger-home-page"></a>Domovská stránka hlavní knihy
 
@@ -64,7 +64,7 @@ Přejděte na [Přehled Financial reporting](../../fin-ops-core/dev-itpro/analyt
 
 Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [Microsoft Dynamics 365 Finance and Operations - Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
+[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
 ### <a name="videos"></a>Videa
 

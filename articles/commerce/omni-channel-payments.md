@@ -3,7 +3,7 @@ title: Přehled omnikanálových plateb
 description: Toto téma poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613170"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819806"
 ---
 # <a name="omni-channel-payments-overview"></a>Přehled omnikanálových plateb
 
@@ -92,6 +92,9 @@ Podporovány jsou následující scénáře omnikanálových plateb:
 - Nákup v kontaktním středisku a vyzvednutí v obchodě
 - Nákup v obchodě A, vyzvednutí v obchodě B
 - Nákup v obchodě A, odeslání zákazníkovi
+
+    > [!NOTE]
+    > Platby provedené v call centru, které se mapují na platební funkci „Normální“, musí být označeny jako **Zaplatit předem** = **Ano**, aby se promítly do splatné částky při odvolání objednávky v POS. Platby nezaplacené předem typu „Normální“ nebudou při odvolání objednávky v POS rozpoznány. 
 
 Jsou podporovány i varianty těchto scénářů. Například online objednávka může obsahovat jak řádky, které budou expedovány zákazníkovi, tak řádky, které budou v obchodě vydány. Všechny možnosti plnění objednávky jsou podporovány prostřednictvím omnikanálových plateb. 
 
@@ -190,8 +193,8 @@ Pokud chcete spustit tento scénář, postupujte takto:
 2. Na stránce **Transakce** přidejte do transakce Karen Berg pomocí číselného panelu a zadejte **2001.**
 3. Přidejte do transakce jeden nebo více řádků.
 4. Pokud chcete zobrazit možnosti objednávky, vyberte **Objednávky**.
-5. Vyberte **Vyzvednout vše** a až budete vyzváni, vyberte volbu **Objednávka zákazníka**.
-6. Do vyhledávacího panelu zadejte **Seattle**a pak vyberte obchod v **Seattlu** pro výdej. 
+5. Vyberte **Odeslat vše** a až budete vyzváni, vyberte volbu **Objednávka zákazníka**.
+6. Na stránce způsobu dopravy vyberte **Standardní přes noc** a potom vyberte **OK** přijmout dnešní datum jako datum odeslání. 
 7. Kliknutím na **OK** přijměte aktuální datum jako datum výdeje.
 8. Vyberte **Platba kartou** pro zahájení platby.
 9. Uhraďte kartou částku, která je splatná jako záloha. 
@@ -233,5 +236,5 @@ Když má objednávka více nabídek a je vybráno více řádků, pokladník ne
 
 - [Časté dotazy k platbám](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Platební konektor Dynamics 365 pro Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

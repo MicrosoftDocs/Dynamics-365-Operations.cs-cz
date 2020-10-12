@@ -1,12 +1,12 @@
 ---
 title: Získání podpory pro Finance and Operations nebo Lifecycle Services (LCS)
 description: Toto téma vysvětluje, jak získat nápovědu s aplikacemi Finance and Operations nebo Microsoft Dynamics Lifecycle Services (LCS).
-author: kfend
+author: EricMoos
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: sericks
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e839c6e29a76d7f08f23e007c1e7b8c4699c7580
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005509"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817891"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Získání podpory pro Finance and Operations nebo Lifecycle Services (LCS)
 
@@ -30,66 +30,42 @@ ms.locfileid: "3005509"
 
 Toto téma vysvětluje, jak získat nápovědu s aplikacemi Finance and Operations nebo Microsoft Dynamics Lifecycle Services (LCS). 
 
-## <a name="contact-support"></a>Kontaktovat podporu
-
-Použijte informace v tomto článku ke kontaktu společnosti Microsoft, pokud máte technické dotazy, nebo pokud budete potřebovat pomoc s přístupem ke službě Microsoft Dynamics Lifecycle Services.
-
-### <a name="finance-and-operations-apps-support"></a>Podpora aplikací Finance and Operations
-
-Chcete-li získat podporu, použijte zdroje v následující tabulce. Tyto zdroje jsou uvedeny v pořadí, podle kterého vám doporučujeme postupovat při řešení potíží.
-
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Úkol</th>
 <th>Další informace</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Zeptejte se komunity.</td>
-<td>Přejděte na <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">stránku komunity</span></a> a vyhledejte odpovědi na své otázky od komunity Dynamics.</td>
+<td>Přejděte na stránku komunity <a href="https://community.dynamics.com/">Komunita Dynamics 365</a> a vyhledejte odpovědi na své otázky od komunity Microsoft Dynamics.</td>
 </tr>
-<tr class="even">
-<td>Použijte nástroj Hledání problému.</td>
-<td>V <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> použijte Hledání problémů k rychlému vyhledání článků ve znalostní bázi Microsoft, oprav hotfix a postupů pro hlášený problém s aplikací Retail. Lze zjistit, které nahlášené problémy pro konkrétní funkční oblast se právě opravují nebo již byly opraveny. Další informace naleznete v tématu <a href="issue-search-lcs.md"><span style="color: #0066cc;">Hledání problému (Lifecycle Services, LCS)</span></a>.</td>
+<tr>
+<td>Získejte nápovědu k dotazům týkajících se licencí.</td>
+<td>Obraťte na partnera nebo prodejce společnosti Microsoft.</td>
 </tr>
-<tr class="odd">
-<td>Použijte nástroj cloudové podpory.</td>
-<td>V <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, je dlaždice <strong>Podpora</strong>, která představuje nástroj pomáhající spravovat incidenty podpory. Chcete-li odeslat problémy přímo do společnosti Microsoft, přejděte na dlaždici <strong>Podpora</strong> ve svém projektu LCS. Odsud můžete odeslat problémy dvěma způsoby:
+<tr>
+<td>Použijte nástroj <strong>Hledání problému</strong>.</td>
+<td>V <a href="https://lcs.dynamics.com/">LCS</a> použijte <strong>Hledání problémů</strong> k rychlému vyhledání článků ve znalostní bázi Microsoft, oprav hotfix a postupů pro hlášený problém s aplikací Retail. Lze zjistit, které nahlášené problémy pro konkrétní funkční oblast se právě opravují a které již byly opraveny. Další informace naleznete v tématu <a href="issue-search-lcs.md">IHledání problému (Lifecycle Services, LCS).</a>.</td>
+</tr>
+<tr>
+<td>Získejte podporu v aplikaci.</td>
+<td>V pravém horním rohu aplikace vyberte tlačítko <strong>Nápověda</strong> (<strong>?</strong>) a poté vyberte možnost <strong>Podpora</strong>. Problémy jsou nahlášeny na kartě <strong>Aktivní problémy</strong> v LCS. Zde mohou správci určit, zda by měli poskytovat interní podporu nebo odesílat problémy společnosti Microsoft.</td>
+</tr>
+<tr>
+<td>Otevřete lístek podpory u týmu podpory Microsoftu.</td>
+<td>V <a href="https://lcs.dynamics.com/">LCS</a> dlaždice <strong>Podpora</strong> otevře nástroj pomáhající spravovat incidenty podpory. Chcete-li odeslat problémy přímo do společnosti Microsoft, vyberte dlaždici <strong>Podpora</strong> ve svém projektu LCS. Pak můžete odeslat problémy dvěma způsoby:
 <ul>
-<li>Na kartě <strong>Aktivní problém</strong> vyberte problém a poté klikněte na tlačítko <strong>Odeslat do společnosti Microsoft</strong>.</li>
-<li>Na kartě <strong>Odesláno do společnosti Microsoft</strong> klikněte na možnost <strong>Odeslat nový incident</strong> k odeslání problému.</li>
+<li>Na kartě <strong>Aktivní problém</strong> vyberte problém a poté vyberte <strong>Odeslat do společnosti Microsoft</strong>.</li>
+<li>Na kartě <strong>Odesláno společnosti Microsoft</strong> vyberte <strong>Odešlete incident</strong> a poté podle pokynů na obrazovce odešlete incident. Po odeslání incidentu obdržíte e-mailovou zprávu od technika podpory společnosti Microsoft, který je přiřazen k vašemu případu.</li>
 </ul>
-Poznámka: Partneři a zákaznici s podporou Microsoft Premier mohou také odeslat lístky podpory Premier pomocí výše uvedených kroků.</td>
+</td>
 </tr>
-<tr class="even">
-<td>Otevřete lístek podpory u týmu podpory.</td>
-<td>Pokud máte problémy při pokusu o odeslání lístku do společnosti Microsoft pomocí dlaždice <strong>Podpora</strong> v LCS, použijte téma <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Kontaktování podpory Microsoft Business Solutions</span></a> ohledně informací o kontaktování regionálního operačního centra Microsoft Dynamics. Tým podpory můžete pomoci s vyřešením následujících typů technických problémů:
-<ul>
-<li>Chyby, ke kterým dochází při použití LCS, nebo problémy s přístupem k LCS.</li>
-<li>Chyby, ke kterým dochází při použití aplikace Finance and Operations.</li>
-</ul>
-Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CustomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web podpory</span></a>.</td>
-</tr>
-<tr class="odd">
-<td>Získejte nápovědu k dotazům týkajících se licencí aplikací Finance and Operations.</td>
-<td>Obraťte na partnera, prodejce pro velké zákazníky nebo prodejce společnosti Microsoft.</td>
-</tr>
-<tr class="even">
-<td>Použijte řídicí panel monitorování událostí LCS.</td>
-<td>Chcete-li zobrazit aktuálního stav zdraví platformy a služeb, přejděte do části <strong>Prostředí</strong> vašeho LCS projektu.</td>
+<tr>
+<td>Požadavek na nové funkce a funkcionality.</td>
+<td>Navštivte <a href="https://experience.dynamics.com/ideas/">Nápady k aplikaci Dynamics 365</a>, které vám pomohou zobrazit, vyhledat nebo hlasovat pro existující nápady nebo přidat nové nápady.</td>
 </tr>
 </tbody>
 </table>
-
-
-## <a name="additional-resources"></a>Další zdroje
-- [Získání podpory pro Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Získání podpory pro Microsoft Dynamics 365 Human Resources](../../../human-resources/hr-admin-troubleshooting-support.md)
-- Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Správa funkce podpory pro aplikace Finance and Operations](cloud-powered-support-lcs.md).
-

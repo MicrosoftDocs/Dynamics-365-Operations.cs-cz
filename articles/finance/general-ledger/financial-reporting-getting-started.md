@@ -3,7 +3,7 @@ title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696681"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835103"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
@@ -148,10 +148,8 @@ Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upra
 * V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery a poté vyberte **Weby**. V **Přidejte tento web do zóny** zadejte "\*\.dynamics.com" (bez uvozovek) a poté vyberte **Přidat**. 
 * V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká**.
 * Zakažte blokování vyskakovacích oken v prohlížeči.
-* K instalaci jsou vyžadovány pracovní stanice Visual Studio.NET 4.6.2 nebo vyšší.
-
-Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Pokud se nemůžete přihlásit pomocí Chromu, zkuste použít kroky nastavení popsané v 1. vydání Internet Explorer nebo Edge. 
+* K instalaci jsou vyžadovány pracovní stanice Microsoft .NET Framework 4.6.2 nebo vyšší. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Pokud se nemůžete přihlásit pomocí Chromu, zkuste použít kroky nastavení popsané v 1. vydání Internet Explorer nebo Microsoft Edge. 
 
 Problém 2: Uživateli nebyla přidělena požadovaná oprávnění k používání Financial Reporting. 
 

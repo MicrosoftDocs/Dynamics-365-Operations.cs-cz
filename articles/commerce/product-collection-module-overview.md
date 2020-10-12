@@ -3,7 +3,7 @@ title: Moduly kolekce produktů
 description: V tomto tématu je uveden přehled modulů kolekcí produktů v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464946"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817566"
 ---
 # <a name="product-collection-modules"></a>Moduly kolekce produktů
 
@@ -96,9 +96,9 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 | Lidem se též líbí           | Seznam. který používá strojní učení k analýze zákaznických vzorků a doporučí položky, které souvisí s daným produktem. | Tento typ seznamu se používá v PDPs k zobrazení produktů zakoupených jinými zákazníky. | Kontext produktu ze stránky | Produkt poskytnutý autorem webu. | Podporováno |
 | Výběry pro vás              | Seznam, který používá strojové učení k určení preferencí zákazníka. | Tento typ seznamu lze použít na libovolné stránce. | Nelze použít| Nelze použít | Podporováno | 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Karuselový modul](add-carousel.md)
 

@@ -18,22 +18,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a022f8297066793080d254baa01410884a3fafd9
-ms.sourcegitcommit: 55b729361ea852e38531c51972c6730e3d9c2b45
+ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3776301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828907"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace.
+Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější information. Navíc, mohou lidem posílat informace o nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
 ![Robot aplikace pracovního volna Human Resources Teams](./media/hr-admin-teams-leave-app-bot.png)
 
 ![Karta volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+
+![Karta s žádostí o volno v Human Resources](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Instalace a nastavení
 
@@ -85,7 +87,6 @@ Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznám
 | Výdej | Stav |
 | --- | --- |
 | Horizontální posouvání nefunguje na Android telefonech | Horizontální posouvání není problém na zařízeních iOS nebo počítačích. Pracujeme na opravě pro Android. |
-| Chyba: Při hledání prostředí, ke kterému se lze připojit, došlo k problému. | Tato chyba se může zobrazit, i když jste ověřili, že uživatel má přístup k jednomu nebo více prostředím lidských zdrojů. Navíc možná neuvidíte všechna očekávaná prostředí. Dokud tento problém nevyřešíme, odstraňte uživatele a znovu jej importujte, abyste problém vyřešili. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
 | Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
 | Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
@@ -102,9 +103,15 @@ Obsah dotazů a zpráv uživatele je v systému LUIS uchováván maximálně 30 
 
 Chcete-li spravovat nastavení administrátora pro aplikace v Microsoft Teams, přejděte do [centra pro správu Microsoft Teams](https://admin.teams.microsoft.com/).
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid a Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams  Azure Event Grid a Azure Cosmos DB
 
-Při použití funkce oznámení pro aplikaci Dynamics 365 Human Resources v Teams budou některá data zákazníků téct mimo geografickou oblast, kde je nasazena služba Human Resources vašeho klienta. Dynamics 365 Human Resources přenáší podrobnosti o žádosti o pracovní volno a úkolu pracovního postupu do Microsoft Azure Event Grid a Microsoft Teams. Tato data mohou být uložena až 24 hodin a zpracována ve Spojených státech, jsou šifrována během přenosu a v klidu a nejsou používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb.
+Při použití aplikace Dynamics 365 Human Resources v Microsoft Teams mohou některá data zákazníků téct mimo geografickou oblast, kde je nasazena služba Human Resources vašeho klienta.
+
+Dynamics 365 Human Resources přenáší podrobnosti o žádosti o pracovní volno a úkolu pracovního postupu do Microsoft Azure Event Grid a Microsoft Teams. Tato data mohou být uložena v Event Grid Microsoft Azure až 24 hodin a budou zpracována ve Spojených státech, jsou šifrována během přenosu a v klidu a nejsou používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb. Chcete-li zjistit, kde jsou vaše data uložena v Teams, přečtěte si [Umístění dat v Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Při konverzaci s chatovacím robotem v aplikaci Human Resources může být obsah konverzace uložen v Azure Cosmos DB a přenesen do Microsoft Teams. Tato data mohou být uložena v Azure Cosmos DB po dobu až 24 hodin a mohou být zpracovávána mimo geografickou oblast, kde je nasazena služba Human Resources vašeho nájemce, je šifrována během přenosu a v klidu a není používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb. Chcete-li zjistit, kde jsou vaše data uložena v Teams, přečtěte si [Umístění dat v Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Chcete-li omezit přístup k aplikaci Human Resources v Microsoft Teams pro vaši organizaci nebo uživatele ve vaší organizaci, přečtěte si [Spravujte zásady oprávnění aplikace v Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Viz také 
 

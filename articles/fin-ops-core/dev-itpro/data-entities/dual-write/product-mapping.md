@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621321"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835847"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -91,7 +91,7 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 
 ![Datový model pro produkty](media/dual-write-product.png)
 
-V případě povolené funkce dvojího zápisu budou aplikace z Finance and Operations syncronizovány v dalších aplikacích Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. 
+V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. 
 
 Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní**, aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**. 
 

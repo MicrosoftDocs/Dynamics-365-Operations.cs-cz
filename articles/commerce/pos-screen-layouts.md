@@ -3,7 +3,7 @@ title: Vizuální konfigurace uživatelského rozhraní POS
 description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Commerce.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505627"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834202"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Vizuální konfigurace uživatelského rozhraní POS
 
@@ -62,6 +62,8 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 > [!NOTE]
 > Na přihlašovací obrazovce v kompaktním zobrazení se nezobrazuje **správné** rozvržení a datum a čas.
 
+Musíte spustit úlohu distribučního plánu **1090** (**Registry**) pro synchronizaci nejnovějších konfigurací vizuálního profilu s databází kanálů.
+
 ## <a name="screen-layouts"></a>Rozložení obrazovky
 
 Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na **ǘodní** obrazovce POS a obrazovce **Transakce**.
@@ -81,6 +83,8 @@ Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacíc
 ### <a name="assignment"></a>Přiřazení
 
 Rozložení obrazovky mohou být přiřazena na úrovni obchodu, registrační pokladny nebo uživatele. Přiřazení uživatele přepíše přiřazení registrační pokladny a obchodu a přiřazení registrační pokladny přepíše přiřazení obchodu. V jednoduchém případě, kde všichni uživatelé používají stejné rozvržení bez ohledu na registr nebo roli, lze rozvržení obrazovky nastavit pouze na úrovni obchodu. V případech, kde konkrétní registrační pokladny nebo uživatelé vyžadují speciální rozložení, lze jim je přiřadit.
+
+V závislosti na tom, které úrovni je přiřazeno rozložení obrazovky, musíte spustit úlohy distribučního plánu **1070** (**Konfigurace kanálu**), **1090** (**Registry**) a / nebo **1060** (**Personál**) pro synchronizaci nejnovějších konfigurací rozložení obrazovky s databází kanálů.
 
 ### <a name="layout-sizes"></a>Velikosti rozvržení
 

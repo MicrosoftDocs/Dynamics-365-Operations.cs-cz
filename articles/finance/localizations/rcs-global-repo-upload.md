@@ -3,7 +3,7 @@ title: Vytvoření konfigurací elektronického výkaznictví v RCS a jejich ode
 description: Toto téma vysvětluje, jak vytvořit konfiguraci elektronického vykazování (ER) ve službě Microsoft Regulatory Configuration Services (RCS) a odeslat ji do globálního úložiště.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371235"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834226"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Vytvoření konfigurací v Regulatory Configuration Services (RCS) a jejich odeslání do globálního úložiště
 
@@ -54,7 +54,7 @@ Pokud již bylo pro vaši společnost zřízeno prostředí RCS, přistupte k n�
 5. Zadejte jméno a popis a poté vyberte **Vytvořit konfiguraci** k vytvoření nové odvozené verze.
 6. Vyberte nově odvozenou konfiguraci, přidejte popis verze a poté vyberte **OK**. Stav konfigurace na se změní na **Dokončeno**.
 
-![Nová verze konfigurace v RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Nová verze konfigurace v RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Při změně stavu konfigurace se může zobrazit chybová zpráva o ověření související s připojenými aplikacemi. Chcete-li validaci vypnout, v podokně Akce na kartě **Konfigurace** vyberte **Uživatelské parametry**, a poté nastavte **Přeskočit ověření při změně stavu konfigurace a přeskládat** možnost na **Ano** 
@@ -66,7 +66,7 @@ Chcete-li s organizací sdílet novou nebo odvozenou konfiguraci, nahrajte ji do
 1. Vyberte dokončenou verzi konfigurace a poté vyberte **Nahrát do úložiště**.
 2. Vyberte **Globální (Microsoft)** a poté vyberte **Nahrát**.
 
-    ![Nahrání do možností úložiště](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Nahrání do možností úložiště](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. V dialogovém okně pro potvrzení vyberte **Ano**. 
 4. Podle potřeby aktualizujte popis verze a poté vyberte **OK**. 
@@ -74,6 +74,27 @@ Chcete-li s organizací sdílet novou nebo odvozenou konfiguraci, nahrajte ji do
 Stav konfigurace je aktualizován na **Sdílení** a konfigurace se nahraje do globálního úložiště. Odtud můžete s konfigurací pracovat následujícími způsoby:
 
 - Importujte jej do instance Dynamics 365. Další informace získáte v tématu [(ER) Import konfigurací z RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Pro sdílení s třetí stranou nebo externí organizací, viz [RCS sdílení konfigurací elektronického výkaznictví (ER) s externími organizacemi](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Pro sdílení s třetí stranou nebo externí organizací, viz [RCS sdílení konfigurací elektronického výkaznictví (ER) s externími organizacemi](rcs-global-repo-share-configuration.md)
 
-![Odvozená verze konfigurace Intrastat Contoso v globálním úložišti](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Odvozená verze konfigurace Intrastat Contoso v globálním úložišti](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Odstranění konfigurace z globálního úložiště
+Pomocí následujících kroků odstraňte konfiguraci, kterou vaše organizace vytvořila.
+
+1. V pracovním prostoru **Elektronické výkaznictví** ověřte, že váš poskytovatel konfigurace je **Aktivní**. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. U vašeho aktivního poskytovatele konfigurace vyberte **úložiště**.
+3. Vyberte typ úložiště **Globální** a vyberte **Otevřít**.
+4. Na záložce s náhledem **Filtr** vyhledejte konfiguraci, kterou chcete odstranit, pomocí funkce **Filtr**.
+5. Na záložce s náhledem **Verze** vyberte verzi konfigurace, kterou chcete odstranit, a poté vyberte **Odstranit**:
+
+    ![Odstranění konfigurace z globálního úložiště](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. V dialogovém okně pro potvrzení vyberte **Ano**.
+
+    ![Odstranění zprávy s potvrzením o verzi konfigurace](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Verze konfigurace je odstraněna a zobrazí se potvrzovací zpráva. 
+
+> [!NOTE]
+> Konfigurace mohou být odstraněny pouze poskytovatelem konfigurace, který je vytvořil. Pokud byla konfigurace sdílena s jinou organizací, bude nutné ji před odstraněním zrušit.
+ 

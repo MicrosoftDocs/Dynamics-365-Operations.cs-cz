@@ -3,7 +3,7 @@ title: Odhlášení přizpůsobených doporučení
 description: V tomto tématu je vysvětleno, jak můžete zákazníkům vymezit přijetí individuálních doporučení v Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51c8c0e2743b67df9d66a8c45ab7a69597f4002
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664923"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817516"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Odhlášení přizpůsobených doporučení
 
@@ -74,7 +74,7 @@ V následujícím příkladu je ukázáno, jak může maloobchodník provést te
 1. Maloobchodní prodejce vytváří vlastní rozšíření, které vybírá data osobních doporučení jménem uživatele. Informace o tom, jak vytvářet moduly, klonovat existující moduly, volat rozhraní API maloobchodního serveru a volat akce s daty, naleznete v tématu [Rozšiřitelnost online kanálu](e-commerce-extensibility/overview.md).
 2. Vlastní rozšíření uskuteční volání do klíčové akce s daty **get-recommendations** a předá do ní požadované informace na základě požadavků seznamu. V případě seznamu **Výběr pro vás** je nutné, aby rozšíření předávalo správný název seznamu a ID odběratele k akci dat.
 
-    Jedním ze způsobů, jak vytvořit vlastní rozšíření, je klonování existujícího modulu shromažďování produktů, který slouží k vrácení výsledků doporučení. Naklonováním tohoto existujícího modulu může maloobchodní prodejce změnit existující kód a přidat nové tlačítko, které exportuje výsledky doporučení do souboru CSV. Další informace naleznete v tématu [klonování modulu startovní sady](e-commerce-extensibility/clone-starter-module.md) a [Moduly kolekcí produktů](product-collection-module-overview.md).
+    Jedním ze způsobů, jak vytvořit vlastní rozšíření, je klonování existujícího modulu shromažďování produktů, který slouží k vrácení výsledků doporučení. Naklonováním tohoto existujícího modulu může maloobchodní prodejce změnit existující kód a přidat nové tlačítko, které exportuje výsledky doporučení do souboru CSV. Další informace naleznete v tématu [Klonování modulu knihovny modulů](e-commerce-extensibility/clone-starter-module.md) a [Moduly kolekcí produktů](product-collection-module-overview.md).
 
     Chcete-li zobrazit úplné zobrazení knihovny rozhraní API maloobchodního serveru, naleznete informace v tématu [Rozhraní API zákazníka a spotřebitele maloobchodního serveru](dev-itpro/retail-server-customer-consumer-api.md).
 

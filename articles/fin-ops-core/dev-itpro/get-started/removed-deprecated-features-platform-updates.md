@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803132"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819882"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -34,6 +34,22 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.14 aplikací Finance and Operations
+
+> [!NOTE]
+> Verze 10.0.14 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### <a name="online-users-page"></a>Stránka online uživatelů 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Toto je starší stránka, která byla vytvořena pro předchozí architekturu klient/server. Informace na této stránce nejsou vždy přesné, což může být matoucí a zavádějící. |
+| **Nahrazeno jinou funkcí?**   | V budoucí aktualizaci poskytneme novou stránku.|
+| **Ovlivněné oblasti produktu**         | Správa systému |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Do října 2021 bude tento formulář odstraněn.   |
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
 

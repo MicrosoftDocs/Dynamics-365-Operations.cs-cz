@@ -1,6 +1,6 @@
 ---
 title: Katalog kurzů pro správce Dynamics 365 Commerce
-description: Vyhledejte všechny možnosti školení pro Dynamics 365 Commerce.
+description: Vyhledejte všechny možnosti školení pro roli správce v Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821197"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Katalog kurzů pro správce Dynamics 365 Commerce
 
@@ -39,7 +39,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 | Obsah  | popis  | Formát  | Délka    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Nasazení Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | Tato vzdělávací cesta popisuje, jak nasadit prostředí Dynamics 365 Commerce a provádět kroky po nasazení, pro úspěšné implementace Commerce pomocí správné topologie pro potřeby každého maloobchodníka.                               | Libovolná online školení vlastním tempem | 5 hodin   |
+| [Nasazení a rozšíření Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Tato vzdělávací cesta popisuje, jak nasadit prostředí Dynamics 365 Commerce a provádět kroky po nasazení, pro úspěšné implementace Commerce pomocí správné topologie pro potřeby každého maloobchodníka. | Libovolná online školení vlastním tempem | 5 hodin   |
 | [Konfigurace a použití pokladních míst (POS) v Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transakční data se vytvoří v pokladním místě (POS) a poté se nahrají do Dynamics 365 Commerce Headquarters pro zpracování. Tato učební cesta popisuje, jak nainstalovat a aktivovat POS a jak vytvořit denní transakce v POS. | Libovolná online školení vlastním tempem | 4.5 hodin |
 | [Konfigurace a práce s kontaktními středisky v Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce je omnikanálové řešení, které poskytuje kanál call centra s možností výchozího nastavení specifického zpracování objednávek a výchozích dat pro prodejní objednávky vytvořené uživateli call centra.                                  | Libovolná online školení vlastním tempem | 2 hodin   |
 

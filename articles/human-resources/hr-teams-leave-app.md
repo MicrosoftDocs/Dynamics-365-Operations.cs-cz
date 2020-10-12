@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766753"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828937"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams vám umožňuje rychle požádat o volno a zobrazit informace o svém zůstatku volna přímo v Microsoft Teams. Můžete komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace.
+Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams vám umožňuje rychle požádat o volno a zobrazit informace o svém zůstatku volna přímo v Microsoft Teams. Můžete komunikovat s robotem a požádat o informace a zahájit žádost o dovolenou. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžete lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
 ## <a name="install-the-app"></a>Instalace aplikace
 
@@ -56,8 +56,8 @@ Pokud vás aplikace nepřihlásí automaticky, vyberte kartu **Nastavení** pro 
 
 Pokud máte přístup k více než jedné instanci aplikace Human Resources, můžete vybrat prostředí, ke kterému se chcete připojit, na kartě **Nastavení**.
 
-> [!WARNING]
-> Aplikace aktuálně nepodporuje roli zabezpečení správce systému a zobrazí chybovou zprávu, pokud se přihlásíte pomocí účtu správce systému. Chcete-li se přihlásit pomocí jiného účtu, na kartě **Nastavení** vyberte tlačítko **Přepnout účty** a poté se přihlaste pomocí uživatelského účtu, který nemá oprávnění správce systému.
+> [!NOTE]
+> Aplikace nyní podporuje roli zabezpečení správce systému.
  
 ## <a name="use-the-bot"></a>Použití robota
 
@@ -130,13 +130,33 @@ Karta **Volno** umožňuje zobrazit:
 
    ![Úprava konceptu aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
-### <a name="teams-notifications"></a>Oznámení aplikace Teams
+### <a name="respond-to-teams-notifications"></a>Odpovídejte na oznámení týmů
 
 Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li oznámení zobrazit, vyberte jej. Oznámení se také zobrazují v oblasti **Chat**.
 
 Pokud jste schvalovatel, můžete v oznámení zvolit možnosti **Schválit** nebo **Odmítnout**. Můžete také zadat volitelnou zprávu.
 
 ![Oznámení o žádosti o pracovní volno v aplikaci Human Resources Teams](./media/hr-teams-leave-app-notification.png)
+
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Pošlete nadcházející informace o volném čase vašim spolupracovníkům
+
+Po instalaci aplikace Human Resources pro Teams můžete snadno poslat informace o svém nadcházejícím volnu svým spolupracovníkům v týmech nebo chatech.
+
+1. V týmu nebo chatu v Teams vyberte tlačítko Human Resources pod oknem chatu.
+
+   ![Tlačítko Human Resources pod oknem chatu](./media/hr-teams-leave-app-chat-button.png)
+
+2. Vyberte žádost o dovolenou, kterou chcete sdílet. Pokud chcete sdílet koncept žádosti o dovolenou, nejprve vyberte **Koncepty**.
+
+   ![Vyberte nadcházející žádost o dovolenou ke sdílení](./media/hr-teams-leave-app-chat-search.png)
+
+Vaše žádost o dovolenou se zobrazí v chatu.
+
+![Karta s žádostí o volno v Human Resources](./media/hr-teams-leave-app-chat-card.png)
+
+Pokud jste sdíleli koncept žádosti, zobrazí se jako koncept:
+
+![Karta s konceptem žádosti o volno v Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>Zobrazení kalendáře pracovního volna týmu
 
@@ -164,9 +184,15 @@ Obsah dotazů a zpráv uživatele je v systému LUIS uchováván maximálně 30 
 
 Chcete-li spravovat nastavení administrátora pro aplikace v Microsoft Teams, přejděte do [centra pro správu Microsoft Teams](https://admin.teams.microsoft.com/).
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid a Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams  Azure Event Grid a Azure Cosmos DB
 
-Při použití funkce oznámení pro aplikaci Dynamics 365 Human Resources v Teams budou některá data zákazníků téct mimo geografickou oblast, kde je nasazena služba Human Resources vašeho klienta. Dynamics 365 Human Resources přenáší podrobnosti o žádosti o pracovní volno a úkolu pracovního postupu do Microsoft Azure Event Grid a Microsoft Teams. Tato data mohou být uložena až 24 hodin a zpracována ve Spojených státech, jsou šifrována během přenosu a v klidu a nejsou používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb.
+Při použití aplikace Dynamics 365 Human Resources v Microsoft Teams mohou některá data zákazníků téct mimo geografickou oblast, kde je nasazena služba Human Resources vašeho klienta.
+
+Dynamics 365 Human Resources přenáší podrobnosti o žádosti o pracovní volno a úkolu pracovního postupu do Microsoft Azure Event Grid a Microsoft Teams. Tato data mohou být uložena v Event Grid Microsoft Azure až 24 hodin a budou zpracována ve Spojených státech, jsou šifrována během přenosu a v klidu a nejsou používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb. Chcete-li zjistit, kde jsou vaše data uložena v Teams, přečtěte si [Umístění dat v Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Při konverzaci s chatovacím robotem v aplikaci Human Resources může být obsah konverzace uložen v Azure Cosmos DB a přenesen do Microsoft Teams. Tato data mohou být uložena v Azure Cosmos DB po dobu až 24 hodin a mohou být zpracovávána mimo geografickou oblast, kde je nasazena služba Human Resources vašeho nájemce, je šifrována během přenosu a v klidu a není používána společností Microsoft nebo jejími subprocesory pro školení nebo vylepšení služeb. Chcete-li zjistit, kde jsou vaše data uložena v Teams, přečtěte si [Umístění dat v Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Chcete-li omezit přístup k aplikaci Human Resources v Microsoft Teams pro vaši organizaci nebo uživatele ve vaší organizaci, přečtěte si [Spravujte zásady oprávnění aplikace v Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Viz také
 

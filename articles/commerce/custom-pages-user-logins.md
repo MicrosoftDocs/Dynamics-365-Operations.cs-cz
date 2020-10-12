@@ -3,7 +3,7 @@ title: Nastavení vlastních stránek pro přihlášení uživatelů
 description: V tomto tématu je popsán způsob vytváření vlastních stránek v řešení Microsoft Dynamics 365 Commerce, které zpracovávají přizpůsobená přihlášení uživatelů klientů B2C (business-to-consumer) služby Azure Active Directory (Azure AD).
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533452"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817299"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
@@ -181,19 +181,19 @@ Chcete-li aktualizovat zásadu „Resetování hesla“ o informace o vlastní s
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Přizpůsobení výchozích textových řetězců pro popisky a popisy
 
-V startovní sadě jsou moduly přihlášení předvyplněny výchozími textovými řetězci pro popisky a popisy. Tyto řetězce můžete upravit v sadě SDK (Software Development Kit) tak, že aktualizujete hodnoty v souboru global.json pro modul přihlášení.
+V knihovně modulů jsou moduly přihlášení předvyplněny výchozími textovými řetězci pro popisky a popisy. Tyto řetězce můžete upravit v sadě SDK (Software Development Kit) tak, že aktualizujete hodnoty v souboru global.json pro modul přihlášení.
 
 Například výchozí text odkazu zapomenutého hesla je **Zapomenuté heslo?**. Tento výchozí text je zobrazen na přihlašovací stránce.
 
 ![Výchozí text odkazu zapomenutého hesla na přihlašovací stránce](./media/B2C_SignUp_ModuleFace.png)
 
-V souboru global.json pro modul přihlášení ve startovní sadě je však možné upravit text na **Zapomněli jste heslo?**, jak je znázorněno na následujícím obrázku.
+V souboru global.json pro modul přihlášení v knihovně modulů je však možné upravit text na **Zapomněli jste heslo?**, jak je znázorněno na následujícím obrázku.
 
 ![Aktualizovaný text odkazu v souboru global.json v modulu přihlášení](./media/B2C_CustomizingStringsForModule.png)
 
 Po aktualizaci souboru global.json a publikování změn se nový text odkazu zobrazí v modulu přihlášení, a to jak v řešení Commerce, tak na aktivní přihlašovací stránce.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 

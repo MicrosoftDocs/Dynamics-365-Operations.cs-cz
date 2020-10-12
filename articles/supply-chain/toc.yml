@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vložení Microsoft Power Apps
+                - name: Vložení aplikace plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Workflow zásobování a zdrojů
               href: procurement/procurement-sourcing-workflows.md
+            - name: Řešení problému s pracovními postupy zásobování a zdrojů
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Zásobovací katalogy
               items:
                 - name: Přehled zásobovacích katalogů
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Zaznamenání příjmu zboží na nákupní objednávce
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Řešení problémů s nákupními objednávkami
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Vytvoření nákupní objednávky
               items:
                 - name: Ruční vytvoření nákupních objednávek
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Rabaty dodavatele
                   href: procurement/vendor-rebates.md
+                - name: 'Řešení problémů s cenami, slevami, smlouvami a rabaty'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Zásady nákupu
               items:
                 - name: Přehled zásad nákupu
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Přehled faktur dodavatele
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Řešení problémů s příjemkami produktů a fakturací
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Správa a spolupráce dodavatelů
               items:
                 - name: Nastavení a správa dodavatelské spolupráce
@@ -1763,9 +1771,11 @@
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
                 - name: Import katalogů dodavatele
                   href: procurement/vendor-catalogs-import.md
-                - name: Nastavení externího katalogu pro funkci PunchOut eProcurement
+                - name: Nastavení externího katalogu pro funkci PunchOut e-procurement
                   href: procurement/set-up-external-catalog-for-punchout.md
-                - name: Použití externích katalogů pro funkci PunchOut eProcurement
+                - name: cXML vylepšení nákupu
+                  href: procurement/purchasing-cxml-enhancements.md
+                - name: Použití externích katalogů pro funkci PunchOut e-procurement
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobilní pracovní prostor dodavatelské spolupráce
                   href: procurement/vendor-collaboration-mobile-workspace.md
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Potvrzení prodejních objednávek
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Řešení problémů s prodejními objednávkami
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Prodejní smlouvy
               items:
                 - name: Přehled prodejních smluv
@@ -2279,11 +2291,13 @@
               items:
                 - name: Simulace ceny
                   href: sales-marketing/price-simulation.md
-                - name: Hromadné vytváření prodejních nabídek
+                - name: Hromadné vytvoření prodejních nabídek
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: "Vytváření a\_úpravy prodejních nabídek"
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Vratky
+                - name: Řešení problémů s prodejními nabídkami
+                  href: sales-marketing/troubleshooting-salesquotation.md
+            - name: Vrácení
               items:
                 - name: Prodejní vratky
                   href: warehousing/sales-returns.md
@@ -2807,18 +2821,20 @@
                   items:
                     - name: Instalace a připojení aplikace skladu
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: "Skenování čárových kódů pomocí fotoaparátu v\_aplikaci skladu"
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Konfigurace názvů polí v aplikaci skladu
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: "Skenování čárových kódů pomocí fotoaparátu v\_aplikaci skladu"
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Přijetí registrační značky s aplikací skladu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Nastavení položky nabídky mobilního zařízení pro poskytnutí přehledu řádku výdeje
+                      href: warehousing/pick-line-overview.md
                     - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Přijetí smíšené registrační značky na mobilním zařízení

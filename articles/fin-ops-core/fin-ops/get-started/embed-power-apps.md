@@ -1,9 +1,9 @@
 ---
-title: Integrace Power Apps
-description: Toto téma popisuje způsob vložení Power Apps do klienta pro zvýšení funkčnosti produktu.
+title: Vložit aplikace plátna z Power Apps
+description: Toto téma popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,36 +16,39 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042935"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893100"
 ---
-# <a name="embed-microsoft-power-apps"></a>Integrace Microsoft Power Apps
+# <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations podporuje integraci s Microsoft Power Apps, službou pro vývojáře a netechnické uživatele pro vytváření vlastních obchodních aplikací pro mobilní zařízení, tablety a web bez zápisu kódu. Power Apps, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze poté vložit do aplikací Finance and Operations, aby bylo možné vylepšit funkce produktu. Například může vytvořit aplikaci z Power Apps pro doplněí aplikace Finance and Operations s informacemi získanými z jiného systému.
+Microsoft Power Apps je službou umožňující vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web bez psaní kódu. Aplikace Finance and Operations podporují integraci s Power Apps. Aplikace plátna, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze vložit do aplikací Finance and Operations, aby bylo možné vylepšit funkce produktu. Například můžete vytvořit aplikaci plátna z Power Apps pro doplnění aplikace Finance and Operations o informace získané z jiného systému.
 
 Další informace o začlenění Power Apps se dozvíte v krátkém videu [Jak začlenit PowerApps do Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Přidání vložené aplikace Power Apps na stránku
+## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Přidání vložené aplikace plátna Power Apps na stránku
 
 ### <a name="overview"></a>Přehled
 
-Před vložením aplikace z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Nepopíšeme zde podrobný proces vytváření aplikací. Téma [Úvod do Power Apps](https://docs.microsoft.com/powerapps/getting-started) je ideálním výchozím bodem, pokud s Power Apps začínáte.
+Před vložením aplikace plátna z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Toto téma neobsahuje podrobný popis procesu vytváření aplikací. Pokud jsou pro vás Power Apps novinkou, přečtěte si [dokumentaci Power Apps](https://docs.microsoft.com/powerapps/).
 
-Až budete připraveni integrovat konkrétní aplikaci, můžete si vybrat mezi dvěma způsoby přístupu k aplikaci na stránce, podle toho, který postup lépe vyhovuje vašim potřebám. První způsob je pomocí tlačítka Power Apps, které bylo přidáno do standardního podokna akcí. Aplikace přidané pomocí tohoto mechanismu se budou zobrazovat jako položky nabídky uvnitř tlačítka nabídky Power Apps. Jsou-li vybrané, otevřou všechny tyto položky nabídky podokno obsahující vloženou aplikaci. Alternativně se můžete rozhodnout vložit aplikaci přímo na stránce jako novou kartu, záložku s náhledem, list nebo nový oddíl v pracovním prostoru.
+Když jste připraveni aplikaci vložit, můžete se ke konkrétní aplikaci plátna na stránce dostat dvěma způsoby. Můžete si vybrat, který přístup lépe vyhovuje vašemu scénáři. První způsob je pomocí tlačítka **Power Apps**, které bylo přidáno do standardního podokna akcí. Aplikace, které přidáte pomocí tohoto postupu, se zobrazí jako položky na tlačítku nabídky **Power Apps**. Když vyberte jednu z těchto položek, objeví se postranní podokno obsahující vloženou aplikaci. Alternativně můžete vložit aplikaci přímo na stránce jako novou kartu, záložku s náhledem, list nebo nový oddíl v pracovním prostoru.
 
-Při konfiguraci vaší integrované aplikace můžete vybrat jednoho pole, které má být odesláno jako kontext do aplikace. To umožňuje, aby aplikace reagovala na základě dat, které se aktuálně zobrazují.
+Při konfiguraci vaší integrované aplikace plátna můžete vybrat jednoho pole, které má být odesláno jako kontext do aplikace. Tento krok umožňuje, aby aplikace reagovala na základě dat, které se aktuálně zobrazují.
+
+> [!NOTE]
+> Tento mechanismus aktuálně nemůžete použít k vložení modelovaných aplikací.  
 
 ### <a name="details"></a>Podrobnosti
 
-Následující pokyny popisují postup integrace aplikace z Power Apps do webového klienta.
+Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps do webového klienta.
 
-1. Přejděte na stránku, kam chcete vložit aplikaci. Bude se jednat o stejnou stránku, která obsahuje všechna data potřebná k předání do aplikace jako vstup.
+1. Přejděte na stránku, kam chcete vložit aplikaci plátna. Bude se jednat o stránku, která obsahuje všechna data nutná k předání do aplikace jako vstup.
 2. Otevřete podokno **Přidat aplikaci z Power Apps**:
 
     - Klepněte na tlačítko **možnosti** a poté vyberte **Přizpůsobit tuto stránku**. V nabídce **Vložit** zvolte **Power Apps**. Nakonec vyberte oblast, kam chcete přidat aplikaci. Pokud se má vložit aplikace pod tlačítkem nabídky Power Apps, vyberte podokno akcí. Pokud se má vložit aplikace přímo na stránku, zvolte příslušnou kartu, pevnou záložku, list nebo oddíl (pokud jste v pracovním prostoru).
@@ -54,8 +57,8 @@ Následující pokyny popisují postup integrace aplikace z Power Apps do webov�
 3. Konfigurace vložené aplikace:
 
     - Pole **Název** označuje text zobrazený pro tlačítko nebo kartu, které budou obsahovat integrovanou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
-    - **ID aplikace** je identifikátor GUID pro aplikaci, která má být vložena. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na [web.powerapps.com](https://web.powerapps.com) a vyhledejte pole **ID aplikace** pod položkou **Podrobnosti**.
-    - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Dále v pozdější části tohoto tématu [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) získáte podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations.
+    - Pole **ID aplikace** označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na [web.powerapps.com](https://web.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
+    - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Dále v pozdější části tohoto tématu [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) získáte podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations.
     - Zvolte **velikost aplikace** odpovídající typu aplikace, kterou vkládáte. Vyberte **Tenký** pro aplikace vytvořené pro mobilní zařízení a **Široký** pro aplikace vytvořené pro tablety. To zajišťuje, že je pro integrovanou aplikaci vyhrazeno dostatečné množství místa.
     - Pevná záložka **Právnické osoby** poskytuje možnost zvolit, pro jaké právnické osoby je aplikace dostupná. Výchozí nastavení je učinit aplikaci přístupnou všem právnickým osobám. Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md). 
 
@@ -63,16 +66,23 @@ Následující pokyny popisují postup integrace aplikace z Power Apps do webov�
 
 ## <a name="sharing-an-embedded-app"></a>Sdílení integrované aplikace
 
-Po vložení aplikace na stránku a ověření, že pracuje správně v jakémkoli kontextu dat předaném ze stránky můžete sdílet tuto vloženou aplikaci s ostatními uživateli v systému. Toho lze dosáhnout dvěma různými způsoby pomocí možností individuálního nastavení produktu:
+Po vložení aplikace plátna na stránku a ověření, že pracuje správně v jakémkoli kontextu dat předaném ze stránky můžete sdílet tuto vloženou aplikaci s ostatními uživateli v systému. Chcete-li sdílet vloženou aplikaci plátna, postupujte takto.
 
-- Doporučený scénář je prostřednictvím správce systému, který může individuální nastavení předat všem uživatelům nebo podmnožině uživatelů.
-- Případně můžete exportovat přizpůsobení své stránky, zaslat je jednomu nebo více uživatelům a nechat tyto jednotlivé uživatelé importovat vaše změny. Panel nástrojů individuálního nastavení obsahuje akce, které vám umožní exportovat a importovat individuální nastavení.
+1. [Sdílejte aplikaci plátna](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) s příslušnými uživateli, aby měli přístup k aplikaci v Power Apps. 
+
+2. Ujistěte se, že cíloví uživatelé mají příslušná přizpůsobení, aby se vložená aplikace zobrazila, když tito uživatelé zobrazí stránku. Můžete použít některý z následujících způsobů.
+
+    - Doporučeno: Použijte funkci [Uložená zobrazení](saved-views.md) pro vytvoření a publikování zobrazení, které obsahuje vloženou aplikaci. Tento způsob zajišťuje, že aplikaci uvidí všichni uživatelé, kteří mají role zabezpečení, na které se cílí publikované zobrazení aplikace Finance and Operations. 
+    - Pokud nemáte zapnutou funkci Uložená zobrazení, můžete nechat správce systému odeslat personalizaci, která zahrnuje vloženou aplikaci všem uživatelům nebo podmnožině uživatelů. Případně můžete exportovat přizpůsobení své stránky a odeslat je jednomu nebo více uživatelům. Každý z těchto uživatelů pak může importovat personalizace. Panel nástrojů individuálního nastavení obsahuje akce, které vám umožní exportovat a importovat individuální nastavení. 
+    
+> [!NOTE]
+> Pokud byla aplikace plátna sdílena s externími uživateli, nemohou tito uživatelé použít vloženou aplikaci uvnitř aplikace Finance and Operations. Mohou však přistupovat k aplikaci přímo uvnitř Power Apps. Externí uživatelé zahrnují hosty a uživatele, kteří nepatří do Microsoft 365 Azure Directory, kde je aplikace Finance and Operations nasazena.
 
 Podrobnější informace o možnostech přizpůsobení v produktu a jejich použití naleznete v tématu [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
-## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Vytváření aplikace, která využívá data odesílaná z aplikací Finance and Operations
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Vytváření aplikace plátna, která používá data odesílaná z aplikací Finance and Operations
 
-Důležitou součástí vytváření aplikace z Power Apps, které jsou vloženy do aplikace Finance and Operations, je využití vstupních dat z této aplikace. Z vývojového prostředí Power Apps lze vstupní data předaná z Finance and Operations otevřít pomocí proměnné Param("EntityId").
+Když vytvoříte aplikaci plátna, která bude vložena do aplikace Finance and Operations, jednou důležitou součástí procesu je použití vstupních dat z této aplikace Finance and Operations. Z vývojového prostředí Power Apps lze vstupní data předaná z Finance and Operations otevřít pomocí proměnné **Param("EntityId")**.
 
 Například ve funkci Při spuštění aplikace můžete nastavit vstupní data z aplikací Finance and Operations do proměnné následujícím způsobem:
 
@@ -80,9 +90,9 @@ Například ve funkci Při spuštění aplikace můžete nastavit vstupní data 
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-app"></a>Zobrazení aplikace
+## <a name="viewing-a-canvas-app"></a>Prohlížení aplikace plátna
 
-Chcete-li zobrazit integrovanou aplikaci na stránce v aplikacích Finance and Operations, jednoduše přejděte na stránku s integrovanou aplikací. Vzpomeňte si. že k aplikacím lze přistupovat prostřednictvím tlačítka Power Apps ve standardním podokně akcí, nebo se mohou zobrazit přímo na stránce jako nová karta, pevná záložka nebo jako nová část v pracovním prostoru. Když se uživatel pokusí načíst aplikaci na stránce poprvé, bude vyzván k přihlášení do , aby se zajistilo, že má příslušná oprávnění k použití aplikace.
+Chcete-li zobrazit vloženou aplikaci plátna na stránce v aplikacích Finance and Operations, jednoduše přejděte na stránku s vloženou aplikací. Nezapomeňte, že k aplikacím lze přistupovat pomocí tlačítka **Power Apps** ve standardním podokně akcí. Alternativně se mohou objevit přímo na stránce jako nová karta, záložku s náhledem, okno nebo nový oddíl v pracovním prostoru. Když se uživatelé poprvé pokusí načíst aplikaci na stránku, budou vyzváni k přihlášení. Tento krok zajišťuje, že uživatelé mají příslušná oprávnění k používání aplikace.
 
 ## <a name="editing-an-embedded-app"></a>Úprava integrované aplikace
 
@@ -106,7 +116,7 @@ Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji ode
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Vývojář může kontrolovat, kam lze aplikaci vložit.
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit.
 
 Podle výchozího nastavení uživatel může vložit aplikace na každou stránku pod tlačítkem nabídky Power Apps nebo přímo na stránku jako kartu, pevnou záložku, list nebo jako nový oddíl v pracovním prostoru. Avšak v případě potřeby vývojáři také mohou konfigurovat tuto funkci, aby povolila vložení aplikace pouze na některé stránky pomocí následujících metod:
 

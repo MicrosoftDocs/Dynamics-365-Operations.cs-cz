@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141515"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899342"
 ---
 # <a name="base-price-and-trade-agreements"></a> Základní cena a obchodní smlouvy
 
@@ -58,7 +58,7 @@ Tato procedura vás provede postupem vytváření obchodních smluv prodejních 
 26. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 27. V seznamu vyberte **Commerce**. V ukázkových datech má deník s názvem **Commerce** výchozí vztah **Cena (prodej)**. To znamená, že všechny vytvořené nové řádky budou přednastaveny jako výchozí prodejní ceny obchodních smluv.  
 28. V **Podokně akcí** klikněte na **Řádky**.
-29. V poli **Kód účtu** vyberte možnost „Skupina“.
+29. V poli **Typ kódu strany** vyberte „Skupina“.
 30. V poli **Výběr účtu** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 31. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Tím dokončíte propojení kanálu se skupinou cen pro obchodní smlouvu.  
 32. Zadejte hodnotu do pole **Vztah položky**.

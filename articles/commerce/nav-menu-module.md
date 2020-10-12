@@ -3,7 +3,7 @@ title: Modul navigační nabídky
 description: Tohle téma se zabývá moduly navigační nabídky a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9f66bbe7bf436ab6360dda7d92d6d51e47eedf16
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761373"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817867"
 ---
 # <a name="navigation-menu-module"></a>Modul navigační nabídky
 
@@ -58,7 +58,7 @@ Podrobnosti, jak přidat modul navigační nabídky do modulu záhlaví, viz [Mo
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul buy boxu](add-buy-box.md)
 

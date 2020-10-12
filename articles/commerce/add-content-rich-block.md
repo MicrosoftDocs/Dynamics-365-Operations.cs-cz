@@ -3,7 +3,7 @@ title: Modul textového bloku
 description: Tohle téma se zabývá moduly textového bloku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411128"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817371"
 ---
 # <a name="text-block-module"></a>Modul textového bloku
-
 
 [!include [banner](includes/banner.md)]
 
@@ -80,7 +79,7 @@ Chcete-li přidat modul textového bloku na novou stránku a nastavit požadovan
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled startovací sady](starter-kit-overview.md)
+[Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul propagačního banneru](add-alert.md)
 

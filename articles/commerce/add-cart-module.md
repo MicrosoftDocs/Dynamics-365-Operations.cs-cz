@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761122"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818268"
 ---
 # <a name="cart-module"></a>Modul košíku
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -41,11 +40,11 @@ Modul košíku vykresluje data založená na ID košíku, což je soubor cookie 
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam.
 
-![Příklad modulu nákupního košíku](./media/cart2.PNG)
+![Příklad modulu nákupního košíku na webu Fabrikam](./media/cart2.PNG)
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam. V tomto příkladu je za řádkovou položku účtován manipulační poplatek.
 
-![Příklad modulu nákupního košíku](./media/ecommerce-handling-fee.png)
+![Příklad modulu nákupního košíku s manipulačním poplatkem za řádkovou položku](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Vlastnosti a pozice modulu košíku
 

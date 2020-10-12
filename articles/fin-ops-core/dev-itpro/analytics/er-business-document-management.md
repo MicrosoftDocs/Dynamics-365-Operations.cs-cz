@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258550"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893128"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258550"
 
 Podnikový uživatelé používají [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
 
-**Správa obchodních dokumentů** je vytvořena na vrcholu systému architektury elektronického výkaznictví a umožňuje podnikovým uživatelům upravovat šablony obchodních dokumentů pomocí služby Microsoft Office 365 nebo příslušné desktopové aplikace Microsoft Office. Úpravy dokumentů mohou zahrnovat změny návrhů obchodních dokumentů a přidávání zástupných symbolů pro další data bez změn zdrojových kódů a nových nasazení. K aktualizaci šablon obchodních dokumentů nejsou vyžadovány žádné znalosti architektury elektronického vykazování.
+**Správa obchodních dokumentů** je vytvořena na vrcholu systému architektury elektronického výkaznictví a umožňuje podnikovým uživatelům upravovat šablony obchodních dokumentů pomocí služby Microsoft 365 nebo příslušné desktopové aplikace Microsoft Office. Úpravy dokumentů mohou zahrnovat změny návrhů obchodních dokumentů a přidávání zástupných symbolů pro další data bez změn zdrojových kódů a nových nasazení. K aktualizaci šablon obchodních dokumentů nejsou vyžadovány žádné znalosti architektury elektronického vykazování.
 
 > [!NOTE]
 > Berte na vědomí, že správa obchodních dokumentů umožňuje měnit šablony, které se používají k vytváření obchodních dokumentů, jako jsou objednávky, faktury atd. Zatímco byla šablona upravena a byla publikována její nová verze, tato verze se použije k vygenerování požadovaných obchodních dokumentů. Správu obchodních dokumentů nelze použít k úpravě již generovaných obchodních dokumentů.
@@ -170,7 +170,7 @@ Pomocí následujícího postupu nastavíte základní parametry pro všechny pr
 Vybraný typ dokumentu je specifický pro společnost a bude použit, pokud uživatel pracuje se správou obchodních dokumentů ve společnosti, pro kterou je nastaven vybraný typ dokumentu. Pokud uživatel pracuje se správou obchodních dokumentů v jiné společnosti, bude použit stejný vybraný typ dokumentu, pokud nebyl pro tuto společnost konfigurován jiný. Pokud byl typ dokumentu konfigurován, bude použit namísto typu vybraného v poli **Typ dokumentu SharePoint**.
 
 > [!NOTE]
-> Parametr **Typ dokumentu SharePoint** definuje složku SharePoint jako dočasné úložiště pro šablony, které lze upravovat pomocí aplikací Microsoft Excel nebo Word. Tento parametr je nutné nastavit, pokud chcete používat tyto desktopové aplikace Office pro úpravy šablon. Další informace naleznete v tématu [Úprava šablony v desktopové aplikaci Office](#EditInOfficeDesktopApp). Chcete-li upravit šablonu pouze pomocí funkce v aplikaci Office 365, můžete tento parametr ponechat prázdný. Další informace naleznete v tématu [Úprava šablony v Office 365](#EditInOffice365).
+> Parametr **Typ dokumentu SharePoint** definuje složku SharePoint jako dočasné úložiště pro šablony, které lze upravovat pomocí aplikací Microsoft Excel nebo Word. Tento parametr je nutné nastavit, pokud chcete používat tyto desktopové aplikace Office pro úpravy šablon. Další informace naleznete v tématu [Úprava šablony v desktopové aplikaci Office](#EditInOfficeDesktopApp). Chcete-li upravit šablonu pouze pomocí funkce v aplikaci Microsoft 365, můžete tento parametr ponechat prázdný. Další informace naleznete v tématu [Úprava šablony v Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurace přístupových oprávnění
 
@@ -295,13 +295,13 @@ Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci form
 
 5. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
-Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici pro online úpravy pomocí Office 365.
+Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici pro online úpravy pomocí Microsoft 365.
 
 ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Úprava šablony v Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Úprava šablony pomocí Microsoft 365</a>
 
-Šablonu můžete upravit pomocí aplikace Office 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží v upravitelné šabloně, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure). To je konfigurováno pro rámec elektronického výkaznictví.
+Šablonu můžete upravit pomocí aplikace Microsoft 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží v upravitelné šabloně, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure). To je konfigurováno pro rámec elektronického výkaznictví.
 
 ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Při úpravě šablony z formátu elektronického výkaznictví, který vlastní
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Vybral jsem možnost **Upravit dokument**, ale namísto otevření stránky **Editor šablon BDM** v aplikaci Finance and Operations jsem byl přesměrován na webovou stránku Office 365.
-Jedná se o známý problém s přesměrováním Office 365. To se stává při prvním přihlášení k Office 365. Chcete-li tento problém vyřešit, v prohlížeči vyberte tlačítko **Zpět**, čímž přejdete zpět.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Vybral jsem možnost **Upravit dokument**, ale namísto otevření stránky **Editor šablon BDM** v aplikaci Finance and Operations jsem byl přesměrován na webovou stránku Microsoft 365.
+Jedná se o známý problém s přesměrováním Microsoft 365. To se stává při prvním přihlášení k Microsoft 365. Chcete-li tento problém vyřešit, v prohlížeči vyberte tlačítko **Zpět**, čímž přejdete zpět.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Rozumím, jak upravit šablonu pomocí Office 365 v první relaci aplikace a jak používat šablonu v druhé relaci aplikace upravením šablony tak, abych mohl vidět, jaký vliv mají změny na vygenerovaný obchodní dokument. Mohu to provést pomocí desktopové aplikace Office?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Rozumím, jak upravit šablonu pomocí Microsoft 365 v první relaci aplikace a jak používat šablonu v druhé relaci aplikace upravením šablony tak, abych mohl vidět, jaký vliv mají změny na vygenerovaný obchodní dokument. Mohu to provést pomocí desktopové aplikace Office?
 Ano, můžete. V první relaci aplikace vyberte možnost **Otevřít v desktopové aplikaci**. Šablona bude uložena do dočasného úložiště souborů a bude otevřena v desktopové aplikaci Office. Nyní, když chcete-zobrazit náhled změn šablony ve vygenerovaném obchodním dokumentu, proveďte následující kroky:
 
 1. Upravte šablonu pomocí desktopové aplikace Office.

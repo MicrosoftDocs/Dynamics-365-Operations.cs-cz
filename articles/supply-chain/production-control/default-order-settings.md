@@ -3,12 +3,12 @@ title: Výchozí nastavení objednávky pro dimenze a varianty produktů
 description: Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657333"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895589"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -51,8 +51,11 @@ Existují tři typy výchozího nastavení objednávky pro nákupy, prodeje a z�
 - Řádky nákupní smlouvy
 - Řádky požadavku na nabídku
 - Řádky nákupní žádanky
-- Řádky doplnění stavu zásob dodávky
+- Řádky doplnění stavu zásob dodávky (částečně podporováno, viz poznámka)
 - Plánované nákupní objednávky
+
+> [!NOTE]
+> U řádků objednávky doplnění stavu zásob dodávky je jediným nastavením z pevné záložky **Nákupní objednávka** na stránce **Výchozí nastavení objednávky**, které platí, pole **Výchozí web**, **Výchozí sklad** a zaškrtávací políčko **Zastaveno**.
 
 Výchozí nastavení objednávky pro prodej se používá při vytváření:
 

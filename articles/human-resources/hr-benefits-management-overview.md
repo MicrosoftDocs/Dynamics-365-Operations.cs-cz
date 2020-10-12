@@ -3,7 +3,7 @@ title: Přehled správy zaměstnaneckých výhod
 description: Přehled funkce správy zaměstnaneckých výhod v Dynamics 365 Human Resources. Nabídněte svým zaměstnancům rozšířené možnosti zaměstnaneckých výhod pomocí snadno použitelného online prostředí.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599373"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819758"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -41,15 +41,9 @@ Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zam
 
 Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolované testovací prostředí (sandbox).
 
-## <a name="benefits-management-known-issues"></a>Známé problémy se správou zaměstnaneckých výhod
-
-### <a name="flex-credit-programs"></a>Programy flexibilních kreditů
-
-Celková hodnota kreditu definovaná pro program pružného kreditu není zobrazena ve formuláři **Plány zaměstnaneckých výhod**. Pokud nastavíte program pružného kreditu na možnost **žádný**, zobrazí se při výběru a potvrzení plánů chyba ve formuláři **Plán zaměstnaneckých výhod**.
-
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 
-Tento článek popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také sděluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí nebo jsou zakázány po zapnutí správy zaměstnaneckých výhod.
+Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také sděluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí nebo jsou zakázány po zapnutí správy zaměstnaneckých výhod.
 
 > [!IMPORTANT]
 > Po povolení Správy zaměstnaneckých výhod v **Produkčním** prostředí ji již nelze zakázat. Doporučujeme povolit a otestovat Správu zaměstnaneckých výhod v prostředí **Sandbox** před jejím povolením v **Produkčním** prostředí. Existují významné rozdíly mezi staršími funkcemi výhod a novými funkcemi pro správu výhod, které vyžadují další nastavení a měly by být testovány před uvedením do produkce.
