@@ -14,6 +14,8 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.15 (leden 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform Update pro 10.0.14 (listopad 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform Update pro 10.0.13 (říjen 2020)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Obecné řešení potíží
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Časté dotazy k duálnímu zápisu
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integrace s Power Platform
                       items:
                         - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
@@ -386,6 +390,8 @@
           items:
             - name: Přehled
               href: database/dbmovement-operations.md
+            - name: Sada nástrojů pro přesun databáze
+              href: database/database-movement-toolkit.md
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Obnovení databáze
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Upgrade AX 2012 - Kontrolní seznam před upgradem dat
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: Upgrade AX 2012 - Upgrade dat v sandboxových prostředích pomocí procesu dacpac
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Upgrade AX 2012 – Upgrade dat v prostředích sandbox
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: Upgrade AX 2012 - místní prostředí

@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikace Finance and Operations ve Francii
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Získání podpory pro Dynamics 365 Commerce
-              href: retail-support.md
+            - name: Získání podpory
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Upgrade a N-1 podpora
               items:
                 - name: Upgrade a N-1 podpora pro Commerce
@@ -92,6 +92,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (leden 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (listopad 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (říjen 2020)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Přesune projektů implementace LCS z místního nasazení do cloudu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementace projektů Finance and Operations Commerce
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Hybridní objednávky zákazníka
                   href: hybrid-customer-orders.md
+                - name: Vyvolání operace objednávky v POS
+                  href: enhancedorderrecall.md
             - name: Prodejní objednávky
               items:
                 - name: Vytvoření objednávky kontaktního střediska
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Vylepšené zpracování položek sledovaných dávkou
               href: batch.md
-            - name: 'Konfigurace parametrů Commerce, které ovlivňují výkazy'
-              href: tasks/parameter-configurations-retail-statements.md
             - name: 'Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu'
               href: tasks/payment-configurations-retail-statements.md
             - name: "Konfigurace a\_spuštění úlohy pro výpočet výkazů"
@@ -866,8 +870,10 @@
                   href: page-elements-overview.md
                 - name: Stavy dokumentu a životního cyklu
                   href: document-states-overview.md
-                - name: Práce s publikovacími skupinami
+                - name: Práce se skupinami publikování
                   href: publish-groups.md
+                - name: Povolení a použití sdílení napříč kanály
+                  href: cross-channel-sharing.md
                 - name: Označení vašeho webu a přidání podrobností obchodu
                   items:
                     - name: Přidání loga
@@ -1048,6 +1054,24 @@
               items:
                 - name: Generování sestav online kanálu
                   href: generate-reports.md
+            - name: Experimentování
+              items:
+                - name: Experimentování v Dynamics 365 Commerce
+                  href: experimentation-overview.md
+                - name: Identifikace hypotézy a určení metriky pro experiment
+                  href: experimentation-identify.md
+                - name: Nastavení experimentu
+                  href: experimentation-setup.md
+                - name: Připojení a úprava experimentu
+                  href: experimentation-connect-edit.md
+                - name: Náhled a publikování experimentu
+                  href: experimentation-preview-publish.md
+                - name: Spuštění a monitorování experimentu
+                  href: experimentation-run-monitor.md
+                - name: Propagace varianty a dokončení experimentu
+                  href: experimentation-review-complete.md
+                - name: Kontrola stavu experimentu
+                  href: experimentation-status.md
             - name: Zpracování chyb
               items:
                 - name: Vytvoření stránek s vlastní odpovědí pro chyby kódu stavu 4xx/5xx
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Nastavení fiskální integrace pro kanál Commerce
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Profily certifikátů definované uživatelem pro maloobchodní prodejny
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Rakousko
               items:
                 - name: Ukázka integrace fiskální služby pro Rakousko
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brazílie
+              items:
+                - name: Lokalizace Commerce pro Brazílii
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Východní Evropa
               items:
                 - name: Společné
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Rozšíření motivu ze základního motivu
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Přidání vlastních zdrojů do kódu přizpůsobení
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Vložení skriptu
                   items:
                     - name: Injektory skriptu
@@ -2164,6 +2196,8 @@
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript a C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Spotřeba rozhraní API Retail Serveru v externích aplikacích
+                  href: dev-itpro/consume-retail-server-api
             - name: Rozšiřitelnost Commerce Runtime (CRT)
               items:
                 - name: "Architektura a\_konfigurace CRT"
