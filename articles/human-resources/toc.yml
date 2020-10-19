@@ -75,6 +75,8 @@
               href: hr-admin-integration-common-data-service.md
             - name: Entity Common Data Service
               href: hr-developer-entities.md
+            - name: Konfigurace virtuálních entit Common Data Service
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurace integrace s aplikací Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurace integrace s aplikací Dayforce
@@ -232,7 +234,7 @@
         - name: Řešení problémů s Human Resources
           items:
             - name: Získání podpory
-              href: hr-admin-troubleshooting-support.md
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
             - name: Optimalizace výkonu naplánováním dávkových úloh po hodinách
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimalizace výkonu pomocí úloh automatického vyčištění
