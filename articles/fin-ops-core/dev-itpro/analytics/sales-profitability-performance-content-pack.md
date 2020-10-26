@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f7929aeed9a1f1e334d8c75ef941b601d8c6b664
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 490a4f6d1bd9f3bdb0af09bd4e6f7f8fb2c92a1b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769917"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984267"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Obsah výkonu prodeje a ziskovosti Power BI
 
@@ -49,7 +49,7 @@ Ziskovost lze analyzovat následujícími způsoby:
 - Ziskovost zákazníků (podle výnosů versus hrubá marže)
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **Výkon prodeje a ziskovosti** Power BI se zobrazí na stránce **Výkon prodeje a ziskovosti** (**Prodej a marketing** \> **Dotazy a sestavy** \> **Analýza prodejních výsledků** \> **Výkon prodeje a ziskovosti**).
+Obsah **Výkon prodeje a ziskovosti** Power BI se zobrazí na stránce **Výkon prodeje a ziskovosti** ( **Prodej a marketing** \> **Dotazy a sestavy** \> **Analýza prodejních výsledků** \> **Výkon prodeje a ziskovosti** ).
 
 ## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah **Výkon prodeje** a ziskovosti Power BI obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v obsahu.
@@ -93,8 +93,8 @@ Následující tabulka zobrazuje, jak se používají klíčová agregovaná opa
 
 | Výměra           | Výpočet                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| Hrubý zisk      | SUM(Výnos – COGS – Provize – (DPH (zahrnutá v částce na řádku faktury dodavatele))          |
-| Hrubá marže      | SUMA(Hrubý zisk / (Výnos – (DPH (zahrnutá v částce na řádku faktury dodavatele)))             |
+| Hrubý zisk      | SUM(Výnos – COGS – Provize – DPH (zahrnutá v částce na řádku faktury dodavatele))          |
+| Hrubá marže      | SUMA(Hrubý zisk / (Výnos – DPH (zahrnutá v částce na řádku faktury dodavatele)))             |
 | Výnosy z minulého roku | Výnos za minulý rok = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
 
 Následující tabulka uvádí klíčové dimenze v prodejní krychli, které se používají jako filtry k rozdělení agregovaných měření, aby bylo možné dosáhnout většího odstupňování a získat hlubší analytický přehled.

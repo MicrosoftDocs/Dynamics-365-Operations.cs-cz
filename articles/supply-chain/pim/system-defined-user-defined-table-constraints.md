@@ -16,15 +16,15 @@ ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 014a12c16e60d980fdd4726e05a06d3f3e8950e5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 3fb1395859b5abd06539e07ada3d968b2e9c9147
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209322"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986520"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Omezení tabulek definovaná uživatelem nebo systémem
 
@@ -40,7 +40,7 @@ Omezení tabulek představují matice kombinací atributů, které jsou povoleny
 Tento článek popisuje omezení tabulky definovaná uživatelem a systémem pro komponenty v modelu konfigurace produktu.
 
 ## <a name="user-defined-table-constraints"></a>Omezení tabulky definované uživatelem
-Omezení tabulky definované uživatelem je typ matice, který se používá k popisu kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například pokud se vyrobí reproduktory, můžete v omezení tabulky definované uživatelem použít sloupce pro povrchovou úpravu skříně a přední mřížku. Typ atributu pro povrchovou úpravu skříně má čtyři hodnoty a typ atributu pro přední mřížku má tři hodnoty. Takže pokud omezení nejsou použita, je k dispozici 4 x 3 = 12 možných kombinací. Avšak v tomto příkladu je dovoleno pouze šest kombinací, jak je vidět v následující tabulce. Tyto informace se zobrazí na kartě **Povolené kombinace** na stránce **Upravit omezení tabulky**.
+Omezení tabulky definované uživatelem je typ matice, který se používá k popisu kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například pokud se vyrobí reproduktory, můžete v omezení tabulky definované uživatelem použít sloupce pro povrchovou úpravu skříně a přední mřížku. Typ atributu pro povrchovou úpravu skříně má čtyři hodnoty a typ atributu pro přední mřížku má tři hodnoty. Takže pokud omezení nejsou použita, je k dispozici 4 x 3 = 12 možných kombinací. Avšak v tomto příkladu je dovoleno pouze šest kombinací, jak je vidět v následující tabulce. Tyto informace se zobrazí na kartě **Povolené kombinace** na stránce **Upravit omezení tabulky** .
 
 | Povrch skříňky | Přední mřížka |
 |----------------|-------------|

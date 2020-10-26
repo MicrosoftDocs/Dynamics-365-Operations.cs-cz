@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3595f896afb991f0161764fd6ca6c9891767865b
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: ec8ec7bc7785b1ddec58b78bd14ce164ad1ce032
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759297"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976324"
 ---
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Členy statistické dimenze a šablony poskytovatelů statistických měření
 
@@ -118,7 +118,7 @@ Například šablonu zprostředkovatele statistických měření lze nastavit n�
 
 Můžete také přidat jeden nebo více rozsahů k omezení měření ze zdrojové tabulky.
 
-V tomto příkladu, pokud chcete pouze přidat počet zaměstnanců na plný úvazek (FTE), stačí přidat rozsah do pole **Typ pracovníka**. V poli **Kritéria** vyberte **Zaměstnanec** k omezení výstupního rozsahu následujícím způsobem.
+V tomto příkladu, pokud chcete pouze přidat počet zaměstnanců na plný úvazek (FTE), stačí přidat rozsah do pole **Typ pracovníka** . V poli **Kritéria** vyberte **Zaměstnanec** k omezení výstupního rozsahu následujícím způsobem.
 
 **Rozsahy**
 
@@ -129,9 +129,9 @@ V tomto příkladu, pokud chcete pouze přidat počet zaměstnanců na plný úv
 Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je nutné vytvořit vztah mezi šablonou poskytovatele statistických měření a členem statistické dimenze. Tento vztah je vytvořen pro hlavní knihu nákladového účetnictví a verzi. Vztah sestává z konektoru dat a poskytovatele dat. Můžete mít několik datových konektorů a zprostředkovatelů na pro člena statistické dimenze.
 
 > [!NOTE]
-> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
+> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi** .
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 Finance – Statistická měření**, protože chceme extrahovat data z aplikace Finance.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření** . V tomto scénáři vyberte datový konektor **Dynamics 365 Finance – Statistická měření** , protože chceme extrahovat data z aplikace Finance.
 
 **Zdroj dat**
 
@@ -206,7 +206,7 @@ Při vytváření záznamu **Šablona zprostředkovatele statistických měřen�
 
 Můžete také přidat rozsahy k omezení měření ze zdrojové tabulky.
 
-Pokud v tomto příkladu potřebujete pouze součet hodin, které se vztahují k nákladovému středisku balení CC010, je možné přidat rozsah do pole **Operace**. V poli **Kritéria** vyberte **Balení** k omezení výstupního rozsahu následujícím způsobem.
+Pokud v tomto příkladu potřebujete pouze součet hodin, které se vztahují k nákladovému středisku balení CC010, je možné přidat rozsah do pole **Operace** . V poli **Kritéria** vyberte **Balení** k omezení výstupního rozsahu následujícím způsobem.
 
 **Rozsahy**
 
@@ -217,9 +217,9 @@ Pokud v tomto příkladu potřebujete pouze součet hodin, které se vztahují k
 Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je nutné vytvořit vztah mezi šablonou poskytovatele statistických měření a členem statistické dimenze. Tento vztah je vytvořen pro hlavní knihu nákladového účetnictví a verzi. Vztah sestává z konektoru dat a poskytovatele dat. Můžete mít několik datových konektorů a zprostředkovatelů na pro člena statistické dimenze.
 
 > [!NOTE]
-> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
+> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi** .
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 Finance – Statistická měření**, protože chceme extrahovat data z aplikace Finance.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření** . V tomto scénáři vyberte datový konektor **Dynamics 365 Finance – Statistická měření** , protože chceme extrahovat data z aplikace Finance.
 
 **Zdroj dat**
 
@@ -283,7 +283,7 @@ Spotřeba elektrické energie je zaznamenána v aplikaci Microsoft Excel pomocí
 
 Po importu dat prostřednictvím správy dat budou data uložena v tabulce Fázování nákladového účetnictví. Z toho vyplývá, že importovaná data lze použít ve více hlavních knihách nákladového účetnictví. Nové načtení dat není požadováno.
 
-Pokud chcete importovat data, přejděte na **Importovaná data** \> **Datová entita** \> **Importovaná statistická měření**.
+Pokud chcete importovat data, přejděte na **Importovaná data** \> **Datová entita** \> **Importovaná statistická měření** .
 
 | Identifikátor zdroje | Datum účtování | Hodnota  | Název 1 člena dimenze | Název 2 člena dimenze | Název 5 člena dimenze |
 |-------------------|-----------------|------------|------------------------|------------------------|------------------------|
@@ -294,9 +294,9 @@ Pokud chcete importovat data, přejděte na **Importovaná data** \> **Datová e
 Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je nutné vytvořit vztah mezi identifikátorem zdroje a členem statistické dimenze. Tento vztah je vytvořen pro hlavní knihu nákladového účetnictví a verzi. Vztah sestává z konektoru dat a poskytovatele dat. Můžete mít několik datových konektorů a zprostředkovatelů na pro člena statistické dimenze.
 
 > [!NOTE]
-> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
+> V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi** .
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. Pro tento scénář vyberte datový konektor **Importovaná statistická měření**, protože data byla importována ze systému třetí strany do nákladového účetnictví z aplikace Excel.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření** . Pro tento scénář vyberte datový konektor **Importovaná statistická měření** , protože data byla importována ze systému třetí strany do nákladového účetnictví z aplikace Excel.
 
 **Zdroj dat**
 

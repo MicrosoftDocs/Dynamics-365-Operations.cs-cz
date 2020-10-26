@@ -16,15 +16,15 @@ ms.custom: 53201
 ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f772dbd1d559e7438e328729ad5333ec9f6863dc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759609"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979250"
 ---
 # <a name="costing-sheets"></a>Nákladové formuláře
 
@@ -44,7 +44,7 @@ Pro nákladové verze existují dvě zásady blokování, které určují, zda m
 
 Po definování formátu nákladového formuláře a výpočtu nepřímých nákladů je nutné provést samostatný krok, ve kterém informace ověříte a uložíte. Nákladový formulář představuje celopodnikový formát pro konzistentní zobrazení informací o nákladech na prodané zboží. 
 
-Nákladový formulář je zobrazen jako součást stránky **Vypočítat náklady na zboží**. Nákladový formulář lze zobrazit pro záznam o vypočtených nákladech na vyrobenou položku na stránce **Cena položky** nebo pro záznam o výpočtu pro určitou zakázku na stránce **Výsledky výpočtu kusovníku**. Lze jej také zobrazit jako součást stránky **Kalkulace ceny** pro výrobní zakázku.
+Nákladový formulář je zobrazen jako součást stránky **Vypočítat náklady na zboží** . Nákladový formulář lze zobrazit pro záznam o vypočtených nákladech na vyrobenou položku na stránce **Cena položky** nebo pro záznam o výpočtu pro určitou zakázku na stránce **Výsledky výpočtu kusovníku** . Lze jej také zobrazit jako součást stránky **Kalkulace ceny** pro výrobní zakázku.
 
 
 

@@ -16,15 +16,15 @@ ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1e101473c5b6958c7e0fb5c5fa80dccd3d9b467
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 29fd7afdd032e5d3afbe90a1883783b0f2dd83e2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216015"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982154"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezervace stejné dávky pro prodejní objednávku
 
@@ -36,12 +36,12 @@ Rezervace stejné dávky umožňuje rezervovat zásoby pro řádek prodejní obj
 
 - **Skupiny modelů položek** – Skupina modelů položek musí mít skupinu vybrána pole **Výběr ze stejné dávky** a **Požadavek na konsolidaci** ve skupině polí **Rezervace** pro zásady skladu.
 - **Skupiny sledovací dimenze** – Skupina sledovací dimenze musí mít vybráno pole **Plán disponibility podle dimenzí** pro číslo dávky.
-- **Skupiny dimenze úložiště** – Skupina dimenze úložiště musí mít vybráno pole **Plán disponibility podle dimenzí** pro pole **Lokalita** a **Sklad**.
+- **Skupiny dimenze úložiště** – Skupina dimenze úložiště musí mít vybráno pole **Plán disponibility podle dimenzí** pro pole **Lokalita** a **Sklad** .
 
-Když rezervujete zásoby pro produkt na řádku prodejní objednávky, který je nastaven pro výběr ze stejné dávky, systém se pokusí rezervovat objednané množství z jediné dávky zásob. Dále jsou zvažovány jakékoli požadavky atributů dávek. Pokud nelze množství vyplnit z jedné dávky, zobrazí se strana **Konflikt rezervací stejné dávky**. Tato stránka popisuje problémy a také akce, které lze provést, chcete-li pokračovat v rezervaci. Následující podmínky mohou bránit rezervaci dávky:
+Když rezervujete zásoby pro produkt na řádku prodejní objednávky, který je nastaven pro výběr ze stejné dávky, systém se pokusí rezervovat objednané množství z jediné dávky zásob. Dále jsou zvažovány jakékoli požadavky atributů dávek. Pokud nelze množství vyplnit z jedné dávky, zobrazí se strana **Konflikt rezervací stejné dávky** . Tato stránka popisuje problémy a také akce, které lze provést, chcete-li pokračovat v rezervaci. Následující podmínky mohou bránit rezervaci dávky:
 
-- Dispoziční kód dávky má možnost **Blokovat rezervaci** pro prodej označenu jako **Blokováno**.
+- Dispoziční kód dávky má možnost **Blokovat rezervaci** pro prodej označenu jako **Blokováno** .
 - Platnost dávky vypršela, na základě data vypršení platnosti a všech dnů prodejnosti příslušného odběratele. Položky lze stále ještě považována za rezervaci, pokud se skupina modelu zboží pro položku „nejdříve končící platnost – nejdříve ze skladu“ (FEFO) – řízenou podle data a pokud je jako kritérium pro výdej vybráno datum doporučené spotřeby.
 - Dávka neobsahuje dostatek zbývajících dní skladovatelnosti na základě data vypršení platnosti a data doporučené spotřeby, a navíc žádné dny prodejnosti odběratele.
 
-U položek přidružených ke skupině dimenzí úložiště, která má povolenu možnost **Použít procesy řízení skladu**, lze vyhradit specifická čísla dávek pomocí hierarchie rezervací s danou dimenzí zásob čísla dávky definovanou nad dimenzí skladového místa. Stránka **Rezervace dávky** pro řádky prodejního a převodního příkazu umožňuje také vybrat a rezervovat více řádků na základě dostupných čísel dávek. Další informace, jak postupovat v případě, že používáte hierarchii rezervací s dimenzí čísla dávky pod skladovým místem, naleznete [Flexibilní zásada rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+U položek přidružených ke skupině dimenzí úložiště, která má povolenu možnost **Použít procesy řízení skladu** , lze vyhradit specifická čísla dávek pomocí hierarchie rezervací s danou dimenzí zásob čísla dávky definovanou nad dimenzí skladového místa. Stránka **Rezervace dávky** pro řádky prodejního a převodního příkazu umožňuje také vybrat a rezervovat více řádků na základě dostupných čísel dávek. Další informace, jak postupovat v případě, že používáte hierarchii rezervací s dimenzí čísla dávky pod skladovým místem, naleznete [Flexibilní zásada rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md).

@@ -16,15 +16,15 @@ ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d85d10113e7cc4e95a25efe7fee6d1f23990694
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208454"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979821"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
@@ -42,14 +42,14 @@ Omezení tabulky jsou seznam kombinací hodnoty, které jsou povoleny pro atribu
 
 ### <a name="example-of-a-table-constraint"></a>Příklad omezení tabulky
 
-Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro typy atributů **Povrch skříňky** a **Přední mřížka**.
+Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro typy atributů **Povrch skříňky** a **Přední mřížka** .
 
 | Typ atributu | Hodnoty                      |
 |----------------|-----------------------------|
 | Povrch skříňky | Černá, dub, palisandr, bílá |
 | Přední mřížka    | Černá, kov, bílá         |
 
-Následující tabulka zobrazuje kombinace, které jsou definovány omezením tabulky **Barva a povrch**. Pomocí tohoto omezení tabulky lze konfigurovat reproduktor, který má dubový povrch a černou mřížku, palisandrový povrch a bílou mřížku a tak dále.
+Následující tabulka zobrazuje kombinace, které jsou definovány omezením tabulky **Barva a povrch** . Pomocí tohoto omezení tabulky lze konfigurovat reproduktor, který má dubový povrch a černou mřížku, palisandrový povrch a bílou mřížku a tak dále.
 
 | Dokončit         | Mřížka                       |
 |----------------|-----------------------------|
@@ -86,7 +86,7 @@ Při konfiguraci produktu pomocí následujícího nastavení omezení jsou povo
 (Barva == "Black" & (size == "30" | size == "50")) | (color == "Red" & size = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Mám používat operátory nebo infixový zápis při psaní omezení výrazu?
-Můžete napsat omezení výrazu buď pomocí dostupných prefixových operátorů, nebo pomocí infixového zápisu. U operátorů **Min**, **Max** a **Abs** nelze použít infixový zápis. Tyto operátory jsou k dispozici jako standardní operátory ve většině programovacích jazyků.
+Můžete napsat omezení výrazu buď pomocí dostupných prefixových operátorů, nebo pomocí infixového zápisu. U operátorů **Min** , **Max** a **Abs** nelze použít infixový zápis. Tyto operátory jsou k dispozici jako standardní operátory ve většině programovacích jazyků.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Které operátory a infixový zápis můžu používat při psaní omezení výrazu?
 V následujících tabulkách jsou uvedeny operátory a infixový zápis, které lze použít při zápisu omezení výrazu pro komponentu v modelu konfigurace produktu. V příkladech v první tabulce můžete vidět způsob zápisu výrazu pomocí infixového zápisu nebo operátorů.

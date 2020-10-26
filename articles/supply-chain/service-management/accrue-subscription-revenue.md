@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe535f9646600ce60a5cfc39c11777a712175531
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 90054b17283a9e081f9993e76a6860404dadac0f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203128"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978838"
 ---
 # <a name="accrue-subscription-revenue"></a>Časově rozlišit výnosy z předplatného 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Pravidelné** \> **Servisní odběry** \> **Všechna předplatná služby**.
+1.  Klikněte na uzel **Řízení služeb** \> **Pravidelné** \> **Servisní odběry** \> **Všechna předplatná služby** .
 
 2.  V poli **Kód období** vyberte kód období. Výnos je zaúčtován pro všechny transakce poplatků předplatného s vybraným kódem období.
 
-3.  V poli **Datum zaúčtování** zadejte datum zaúčtování a poté klepněte na tlačítko **OK**.
+3.  V poli **Datum zaúčtování** zadejte datum zaúčtování a poté klepněte na tlačítko **OK** .
 
 
 > [!NOTE]

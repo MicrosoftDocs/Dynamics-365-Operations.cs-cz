@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5766d8ce1fa382f3f014e160d311b2dfab2bf774
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216268"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979129"
 ---
 # <a name="service-intervals"></a>Intervaly servisu
 
@@ -41,12 +41,12 @@ Tento příklad ukazuje, jaký vliv má interval servisu na řádky servisní sm
 
 ### <a name="create-a-service-agreement"></a>Vytvoření servisní smlouvy
 
-Nejprve vytvořte servisní smlouvu a nastavte možnost **Kombinace servisních zakázek** na **Podle servisní smlouvy**.
+Nejprve vytvořte servisní smlouvu a nastavte možnost **Kombinace servisních zakázek** na **Podle servisní smlouvy** .
 
 1. Klikněte na **Servisní smlouvy**
-2. V **podokně akcí**na kartě **Servisní smlouva** ve skupině **Nová** klikněte na **Servisní smlouva** a vytvořte novou servisní smlouvu.
-3. Zadejte popis, vyberte projekt v poli **ID projektu** a zadejte datum do pole **Počáteční datum**.
-4. V poli **Kombinace servisních zakázek** vyberte **Podle servisní smlouvy**.
+2. V **podokně akcí** na kartě **Servisní smlouva** ve skupině **Nová** klikněte na **Servisní smlouva** a vytvořte novou servisní smlouvu.
+3. Zadejte popis, vyberte projekt v poli **ID projektu** a zadejte datum do pole **Počáteční datum** .
+4. V poli **Kombinace servisních zakázek** vyberte **Podle servisní smlouvy** .
 
 Nyní jste vytvořili následující servisní smlouvu:
 
@@ -56,13 +56,13 @@ Nyní jste vytvořili následující servisní smlouvu:
 
 ### <a name="create-a-service-agreement-line"></a>Vytvoření řádku servisní smlouvy
 
-Dále vytvoříte řádek servisní smlouvy s typem transakce **Hodina**.
+Dále vytvoříte řádek servisní smlouvy s typem transakce **Hodina** .
 
-Pro dokončení této části příkladu musíte vytvořit interval servisu 10 dní na stránce **Servisní intervaly**. 
+Pro dokončení této části příkladu musíte vytvořit interval servisu 10 dní na stránce **Servisní intervaly** . 
 
 1. Vyberte servisní smlouvu, kterou jste právě vytvořili. 
-2. Na pevné záložce **Řádky** klikněte na tlačítko **Přidat** a vytvořte nový řádek v dolním podokně stránky **Servisní smlouvy**.
-3. V poli **Typ transakce** zvolte **Hodina**.
+2. Na pevné záložce **Řádky** klikněte na tlačítko **Přidat** a vytvořte nový řádek v dolním podokně stránky **Servisní smlouvy** .
+3. V poli **Typ transakce** zvolte **Hodina** .
 4. V poli **Pracovník** vyberte pracovníka, který dodá servis.
 5. V poli **Interval servisu** vyberte interval 10 dní.
 
@@ -79,16 +79,16 @@ Pro řádek není určené žádné časové okno.
 
 Nyní můžete vytvořit plánované servisní zakázky nebo řádky servisních zakázek nadcházející měsíc.
 
-1. Na stránce **Servisní smlouvy** v **podokně akcí** na kartě **Dodat** klikněte na **Plánované servisní zakázky**.
-2. Na stránce **Vytváření servisních zakázek** zadejte aktuální datum do pole **Od data** a datum, které je od aktuálního data za měsíc zadejte do pole **Do data**.
-3. Nastavte posuvník **Hodina** na **Ano**. 
-4. Klikněte na tlačítko **OK**.
+1. Na stránce **Servisní smlouvy** v **podokně akcí** na kartě **Dodat** klikněte na **Plánované servisní zakázky** .
+2. Na stránce **Vytváření servisních zakázek** zadejte aktuální datum do pole **Od data** a datum, které je od aktuálního data za měsíc zadejte do pole **Do data** .
+3. Nastavte posuvník **Hodina** na **Ano** . 
+4. Klikněte na tlačítko **OK** .
 
-Vzhledem k tomu, že servisní zakázka neobsahuje žádné seskupení (definováno možností **Podle servisní smlouvy** v poli **Kombinace servisních zakázek**), pro jednu servisní zakázku je vytvořený jeden řádek.
+Vzhledem k tomu, že servisní zakázka neobsahuje žádné seskupení (definováno možností **Podle servisní smlouvy** v poli **Kombinace servisních zakázek** ), pro jednu servisní zakázku je vytvořený jeden řádek.
 
 ### <a name="service-orders-created"></a>Vytvořené servisní zakázky
 
-Tři řádky servisních zakázek byly vytvořeny v tomto časovém rozsahu, který jste zadali v dialogovém okně **Vytváření servisních zakázek**. Můžete zobrazit řádky servisní zakázky na stránce **Servisní smlouvy** (**Podokno akcí** \> karta **Dodat** tlačítko \>**Zobrazit**).
+Tři řádky servisních zakázek byly vytvořeny v tomto časovém rozsahu, který jste zadali v dialogovém okně **Vytváření servisních zakázek** . Můžete zobrazit řádky servisní zakázky na stránce **Servisní smlouvy** ( **Podokno akcí** \> karta **Dodat** tlačítko \>**Zobrazit** ).
 
 ## <a name="related-topics"></a>Související témata
 

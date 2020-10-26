@@ -3,7 +3,7 @@ title: Vytváření pravidel výstrah
 description: Toto téma obsahuje informace o výstrahách a vysvětluje postup při vytvoření pravidla výstrahy, abyste byli upozorněni na události, jako je například následné datum nebo nastalá specifická změna.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075917"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970672"
 ---
 # <a name="create-alert-rules"></a>Vytváření pravidel výstrah
 
@@ -35,13 +35,13 @@ Když vytváříte pravidlo výstrahy, je třeba definovat kritéria, která je 
 
 ## <a name="ensure-the-alert-batch-jobs-are-running"></a>Zkontrolujte, zda jsou spuštěny dávkové úlohy výstrah
 
-Dávkové úlohy pro změnu dat a výstrahy s datem splatnosti musí být spuštěny, aby bylo možné zpracovat podmínky výstrah a odesílat upozornění. Chcete-li spustit dávkové úlohy, přejděte na **Správa systému** > **Periodické úkoly** > **Výstrahy** a přidejte novou dávkovou úlohu pro **Výstrahy na základě změn** a/nebo **Výstrahy založené na datu plnění**. Je-li vyžadována dlouhodobá a často spuštěná dávková úloha, vyberte **Opakování** a nastavte **Bez koncového data** se **Vzorcem opakování** **Minuty** a **Počet** **1**.
+Dávkové úlohy pro změnu dat a výstrahy s datem splatnosti musí být spuštěny, aby bylo možné zpracovat podmínky výstrah a odesílat upozornění. Chcete-li spustit dávkové úlohy, přejděte na **Správa systému** > **Periodické úkoly** > **Výstrahy** a přidejte novou dávkovou úlohu pro **Výstrahy na základě změn** a/nebo **Výstrahy založené na datu plnění** . Je-li vyžadována dlouhodobá a často spuštěná dávková úloha, vyberte **Opakování** a nastavte **Bez koncového data** se **Vzorcem opakování** **Minuty** a **Počet** **1** .
 
 ## <a name="events"></a>Události
 
-Událost, která spouští pravidlo výstrahy, může být datum nebo nastalá specifická změna, ke které dochází. Spouštěče událostí jsou definovány na pevné záložce **Upozornit mě při** dialogového okna **Vytvořit pravidlo výstrahy**. Dostupné události pro konkrétní pole závisí na zvoleném spouštěči.
+Událost, která spouští pravidlo výstrahy, může být datum nebo nastalá specifická změna, ke které dochází. Spouštěče událostí jsou definovány na pevné záložce **Upozornit mě při** dialogového okna **Vytvořit pravidlo výstrahy** . Dostupné události pro konkrétní pole závisí na zvoleném spouštěči.
 
-Například když nastavujete pravidlo výstrahy pro pole **počáteční datum**, události po termínu splnění jsou vhodné. Proto je typ události **je splatno za** pro toto pole k dispozici. Pro pole, jako je například **Nákladové středisko** například není událost data splatnosti vhodná. Proto není typ události **je splatno za** k dispozici. Namísto toho je k dispozici typ události **Došlo ke změně**.
+Například když nastavujete pravidlo výstrahy pro pole **počáteční datum** , události po termínu splnění jsou vhodné. Proto je typ události **je splatno za** pro toto pole k dispozici. Pro pole, jako je například **Nákladové středisko** například není událost data splatnosti vhodná. Proto není typ události **je splatno za** k dispozici. Namísto toho je k dispozici typ události **Došlo ke změně** .
 
 ## <a name="event-types"></a>Typy událostí
 
@@ -57,11 +57,11 @@ Uživatel může provést změny. Například uživatel změní datum dodání n
 
 Na pevné záložce **Upozornit mě na** v dialogovém okně **Vytvořit pravidlo výstrahy** můžete použít podmínky k řízení, kdy budete upozorňováni na události.
 
-Můžete například určit, že systém by vás měl upozornit na změnu stavu nákupní objednávky změny, ale pouze v případě, že stav odpovídá konkrétní sadě podmínek. Konkrétně předpokládejme, že chcete být upozorněni na okamžik, kdy je stav nákupní objednávky nastaven na **Přijato**. Tato změna stavu je událostí, která spouští výstrahu.
+Můžete například určit, že systém by vás měl upozornit na změnu stavu nákupní objednávky změny, ale pouze v případě, že stav odpovídá konkrétní sadě podmínek. Konkrétně předpokládejme, že chcete být upozorněni na okamžik, kdy je stav nákupní objednávky nastaven na **Přijato** . Tato změna stavu je událostí, která spouští výstrahu.
 
 Dále je nutné určit, na které nákupní objednávky chcete být upozorněni. Můžete například vybrat jednu z následujících možností: Tyto možnosti je definují podmínky pravidel výstrah.
 
-- **Aktuální vybraný záznam** – obdržíte výstrahu, když se změní stav určité nákupní objednávky na **přijato**.
+- **Aktuální vybraný záznam** – obdržíte výstrahu, když se změní stav určité nákupní objednávky na **přijato** .
 - **Všechny záznamy** – obdržíte výstrahu při změně stavu nákupní objednávky pro položku v aktivním zobrazení stránky. Můžete použít rozšířené filtrování dostupné na stránce k vytvoření pravidel pro konkrétní sadu záznamů. Můžete například vytvořit upozornění, které je spouštěno pro všechny nákupní objednávky pro odběratele ve skupině specifického odběratele.
     
 ## <a name="expiry-of-rule"></a>Uplynutí platnosti pravidla
@@ -78,17 +78,28 @@ Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit prav
 
 ## <a name="alerts-as-business-events"></a>Výstrahy jako obchodní události
 
-Výstrahy lze externě odesílat pomocí architektury obchodních událostí. Při vytváření výstrahy nastavte **Pro celou organizaci** na **Ne** a **Odeslat externě** na **Ano**. Po aktivaci obchodní události pomocí výstrahy můžete spustit tok vestavěný v Power Automate pomocí spouštěče **Při výskytu obchodní události** v konektoru Finance and Operations nebo explicitně odeslat událost do koncového bodu obchodních událostí prostřednictvím **Katalogu obchodních událostí**.
+Výstrahy lze externě odesílat pomocí architektury obchodních událostí. Při vytváření výstrahy nastavte **Pro celou organizaci** na **Ne** a **Odeslat externě** na **Ano** . Po aktivaci obchodní události pomocí výstrahy můžete spustit tok vestavěný v Power Automate pomocí spouštěče **Při výskytu obchodní události** v konektoru Finance and Operations nebo explicitně odeslat událost do koncového bodu obchodních událostí prostřednictvím **Katalogu obchodních událostí** .
 
 ## <a name="create-an-alert-rule"></a>Vytvoření pravidla výstrahy
 
 0. Zkontrolujte, zda jsou spuštěny dávkové úlohy výstrah (viz výše).
 1. Otevřete stránku obsahující data, která chcete sledovat.
-2. V podokně akcí na kartě **Možnosti** ve skupině **Sdílení** vyberte **vytvořit pravidlo výstrahy**.
-3. V dialogovém okně **Vytvořit pravidlo výstrahy**, v poli **Pole** vyberte pole, které chcete sledovat.
+2. V podokně akcí na kartě **Možnosti** ve skupině **Sdílení** vyberte **vytvořit pravidlo výstrahy** .
+3. V dialogovém okně **Vytvořit pravidlo výstrahy** , v poli **Pole** vyberte pole, které chcete sledovat.
 4. V poli **Událost** vyberte typ události.
-5. Na pevné záložce **Upozornit mě na** vyberte požadovanou možnost. Chcete-li odeslat výstrahu jako obchodní událost, zkontrolujte, že je možnost **Pro celou organizaci** nastavena na **Ne**.
+5. Na pevné záložce **Upozornit mě na** vyberte požadovanou možnost. Chcete-li odeslat výstrahu jako obchodní událost, zkontrolujte, že je možnost **Pro celou organizaci** nastavena na **Ne** .
 6. Pokud by se pravidlo výstrahy mělo deaktivovat v určité datum, vyberte na pevné záložce **Upozornit mě do** koncové datum.
-7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha. Chcete-li odeslat výstrahu jako obchodní událost, nastavte možnost **Odeslat externě** na **Ano**.
+7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha. Chcete-li odeslat výstrahu jako obchodní událost, nastavte možnost **Odeslat externě** na **Ano** .
 8. Do pole **Zpráva** zadejte libovolnou zprávu. Text, který bude používán jako zpráva, kterou dostanete při spuštění výstrahy.
-9. Zvolte **OK**, chcete-li uložit nastavení a vytvořit pravidlo výstrahy.
+9. Zvolte **OK** , chcete-li uložit nastavení a vytvořit pravidlo výstrahy.
+
+## <a name="limitations-and-workarounds"></a>Omezení a zástupná řešení
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Řešení pro vytváření výstrah pro sekundární zdroje dat formuláře
+Výstrahy nelze vytvořit pro některé sekundární zdroje dat ve formulářích. Například při vytváření výstrah ve formuláři účetních profilů odběratelů nebo dodavatelů jsou k dispozici pouze pole v záhlaví (CustLedger nebo VendLedger) a nikoli účty dimenzí. Řešením tohoto omezení je pomocí **SysTableBrowser** otevřít tuto tabulku jako primární zdroj dat. 
+1. Otevřete tabulku ve formuláři **SysTableBrowser** .
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Vytvořte výstrahu z formuláře SysTableBrowser.
+

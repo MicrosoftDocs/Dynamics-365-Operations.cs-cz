@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Czech Republic
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a41f2bd99cdc1ac3edd66ae789748a14add76413
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 87ad5b8f6a0daabcd3fd44c966ef0b56186fa1f7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760069"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983955"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -50,13 +50,13 @@ Když právnické osoby, které mají primární adresu v České republice, nak
 
 Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automaticky. Při zaúčtování faktury dodavatele v Evropské unii (EU) jsou vytvořeny dvě transakce DPH ve stejné výši. Jedna transakce DPH je vytvořena pro závazek prodejní daně a druhá pro pohledávku prodejní daně. Aby se tento požadavek projevil, je třeba nastavit následující položky:
 
--   Zaškrtněte políčko **DPH intrakomunitárního plnění** na stránce **Parametry závazků** (**Závazky** > **Nastavení** > **Parametry závazků**).
--   Zaškrtněte políčko **Datum dokumentu pro intrakomunitární DPH** na stránce **Parametry závazků**.
+-   Zaškrtněte políčko **DPH intrakomunitárního plnění** na stránce **Parametry závazků** ( **Závazky** > **Nastavení** > **Parametry závazků** ).
+-   Zaškrtněte políčko **Datum dokumentu pro intrakomunitární DPH** na stránce **Parametry závazků** .
 -   Vytvořte dva kódy daně z prodeje: jeden, který má kladné procento daně z prodeje a druhý, který má záporné procento daně z prodeje.
--   Vytvořte skupinu daně z prodeje obsahující kladné i záporné kódy daně z prodeje. Pro záporný kód daně z prodeje vyberte parametr **DPH intrakomunitárního plnění**.
--   V denících vyberte parametr **Datum dokumentu pro intrakomunitární DPH**.
+-   Vytvořte skupinu daně z prodeje obsahující kladné i záporné kódy daně z prodeje. Pro záporný kód daně z prodeje vyberte parametr **DPH intrakomunitárního plnění** .
+-   V denících vyberte parametr **Datum dokumentu pro intrakomunitární DPH** .
 
-Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účtovány ve stejnou dobu. V případě kladných transakcí daně z prodeje je datum registru DPH nastaveno na datum registru DPH ze stránky zaúčtování faktury a směrování daně z prodeje je **DPH na vstupu**. V případě záporných transakcí daně z prodeje je datum registru DPH nastaveno na datum dokumentu a směrování daně z prodeje je **DPH na výstupu**.
+Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účtovány ve stejnou dobu. V případě kladných transakcí daně z prodeje je datum registru DPH nastaveno na datum registru DPH ze stránky zaúčtování faktury a směrování daně z prodeje je **DPH na vstupu** . V případě záporných transakcí daně z prodeje je datum registru DPH nastaveno na datum dokumentu a směrování daně z prodeje je **DPH na výstupu** .
 
 ## <a name="credit-note-on-cash-discount"></a>Dobropis na platební slevu
 Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Dobropis na platební slevu](emea-cze-credit-note-cash-discount.md).
@@ -73,14 +73,14 @@ Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsk
 Můžete aktualizovat zobrazení částek v sestavách a jiných dokumentech pro Estonsko, Lotyšsko, Litvu, Polsko, Českou republiku, Maďarsko a Rusko. Můžete nastavit úplný a krátký název pro měnové jednotky a podjednotky. Další informace viz [Aktualizace způsobu zobrazování částek v sestavách a dokumentech](emea-amount-printing-forms.md)
 
 > [!NOTE]
-> Prodejní daň v místní měně můžete prohlížet v sestavě **Deník faktur odběratele** a sestavě **Deník faktur dodavatele**.
+> Prodejní daň v místní měně můžete prohlížet v sestavě **Deník faktur odběratele** a sestavě **Deník faktur dodavatele** .
 
 ## <a name="specify-bank-symbols-for-bank-accounts"></a> Určete symboly banky pro bankovní účty 
 Konstantní symboly jsou přiřazeny bankovním účtům a použity v prodejních objednávkách, nákupních objednávkách, na fakturách odběratelů a volných fakturách. Pomocí stránky **Bankovní konstatní symboly** můžete nastavit seznam konstantních symbolů. Ve výchozím nastavení, pokud nastavíte konstantní symbol pro konkrétní bankovní účet společnosti, bude symbol zkopírován do prodejních objednávek a volného textu. Z prodejní objednávky nebo volného textu faktury je konstantní symbol převeden do faktury odběratele. 
 > [!NOTE]
 > Ve výchozím nastavení, pokud nastavíte specifický symbol pro bankovní účet, je zkopírován do výtisku formuláře faktury dodavatele. Konstantní symbol je také zobrazen na výtiscích faktur. 
 
-Bankovní symboly můžete nastavit na stránce **Bankovní konstantní symboly** (**Pokladna a banka** > **Nastavení** > **Konstantní symboly**). 
+Bankovní symboly můžete nastavit na stránce **Bankovní konstantní symboly** ( **Pokladna a banka** > **Nastavení** > **Konstantní symboly** ). 
 
 ## <a name="year-end-close"></a>Roční uzávěrka
 Existují jedinečné aspekty procesu roční uzávěrky a počátečních transakcí pro Českou republiku. Proces roční uzávěrky můžete nastavit následujícím způsobem: 

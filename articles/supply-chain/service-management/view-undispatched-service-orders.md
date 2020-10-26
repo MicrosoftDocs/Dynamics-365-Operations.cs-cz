@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ade723a41428a01d0e4afe7b556a752b1f22f3d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540c0079a9fca8158ed507ce2bc50839bd585fc1
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211990"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986689"
 ---
 # <a name="view-undispatched-service-orders"></a>Zobrazení neexpedovaných servisních zakázek 
 
@@ -32,7 +32,7 @@ ms.locfileid: "3211990"
 
 Toto téma popisuje způsob zobrazení aktivit v servisní zakázce, které nemají přiřazeného pracovníka z expedičního týmu.
 
-1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.
+1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .
 
 2.  V okně **Expediční vývěska** zadejte počáteční datum a koncové datum období, pro které chcete zobrazit expediční aktivitu.
 
@@ -46,7 +46,7 @@ Toto téma popisuje způsob zobrazení aktivit v servisní zakázce, které nema
 
 
 
-5.  Pokud chcete zobrazit seznam servisních zakázek, které nemají přiřazen expediční tým, klepněte na kartu **Neexpedováno**.
+5.  Pokud chcete zobrazit seznam servisních zakázek, které nemají přiřazen expediční tým, klepněte na kartu **Neexpedováno** .
 
 ## <a name="see-also"></a>Viz také
 

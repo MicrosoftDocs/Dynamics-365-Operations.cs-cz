@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 13611
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 118c4464bf4fc86ecb7eee59bf3611f6f8f2cbaf
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811293"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981709"
 ---
 # <a name="electronic-signatures-overview"></a>Přehled elektronických podpisů
 
@@ -52,20 +52,20 @@ Tři druhy uživatelů obvykle vyžadují zabezpečení přístupu k elektronick
 
 ### <a name="electronic-signature-administrator"></a>Administrátoři elektronických podpisů
 
-Administrátor elektronických podpisů určuje požadavky na podpisy, nastavuje obecné parametry a schvalovatele a přijímá výstrahy v případě, že podpisy nelze ověřit. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Manažer informačních technologií**, má oprávnění ke správě elektronických podpisů.
+Administrátor elektronických podpisů určuje požadavky na podpisy, nastavuje obecné parametry a schvalovatele a přijímá výstrahy v případě, že podpisy nelze ověřit. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Manažer informačních technologií** , má oprávnění ke správě elektronických podpisů.
 
 ### <a name="signer"></a>Podepisující uživatel
 
-Podepisující uživatel připojuje elektronické podpisy k dokumentům a procesům, které vyžadují podepsání. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Uživatel systému**, má oprávnění k elektronickému podepisování dokumentů.
+Podepisující uživatel připojuje elektronické podpisy k dokumentům a procesům, které vyžadují podepsání. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Uživatel systému** , má oprávnění k elektronickému podepisování dokumentů.
 
 > [!NOTE]
 > Podepisující uživatel může vyžadovat další oprávnění pro přístup k datům souvisejícím s podepisovaným dokumentem nebo procesem. Uživatel, který mění data a musí provedené změny pak podepsat, musí mít oprávnění ke změnám těchto dat. Uživatel, který podepisuje jménem jiného uživatele nevyžaduje přístup k datům. Příkladem tohoto typu uživatele je nadřízený, který podepisuje změny zaměstnance.
 
 ### <a name="electronic-signature-auditor"></a>Auditor elektronických podpisů
 
-Auditor elektronických podpisů kontroluje databázový protokol a kontrolní protokol podpisů, který je k dispozici prostřednictvím databázového protokolu. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Manažer informačních technologií**, má oprávnění k auditu elektronických podpisů.
+Auditor elektronických podpisů kontroluje databázový protokol a kontrolní protokol podpisů, který je k dispozici prostřednictvím databázového protokolu. Ve výchozím nastavení uživatel, který patří do role zabezpečení **Manažer informačních technologií** , má oprávnění k auditu elektronických podpisů.
 
-Pokud má uživatel jinou roli, než **Manažer informačních technologií**, ujistěte se, že jsou roli přiřazena následující oprávnění:
+Pokud má uživatel jinou roli, než **Manažer informačních technologií** , ujistěte se, že jsou roli přiřazena následující oprávnění:
 
 - Zobrazit chyby elektronických podpisů
 - Zobrazit protokol databáze
@@ -81,22 +81,22 @@ Před elektronickým podepsáním dokumentů si musí každý podepisující už
 
 Vyžádáte-li si certifikát, bude pro vás vytvořen veřejný a soukromý klíč. Soukromý klíč je zašifrován s použitím hesla, které znáte pouze vy. Při elektronickém podepsání dokumentu proběhne ověření vaší totožnosti podle hesla, které zadáte.
 
-Pro zažádání o certifikát klikněte na stránce **Možnosti** na kartě **Účty** na tlačítko **Získat certifikát**.
+Pro zažádání o certifikát klikněte na stránce **Možnosti** na kartě **Účty** na tlačítko **Získat certifikát** .
 
 Zadejte a potvrďte heslo, které budete používat pro podepisování. Heslo slouží k ochraně soukromého klíče a k autorizaci použití vašeho certifikátu. Heslo se neukládá do databáze a nemá k němu přístup nikdo jiný než vy, tj. ani administrátor.
 
-Jestliže zapomenete heslo připojené k vašemu certifikátu, musíte tento certifikát vynulovat. Vynulování certifikátu neovlivní dokumenty, které jste podepsali s použitím původního certifikátu. Chcete-li obnovit certifikát, na stránce **Možnosti** klepněte na tlačítko **Obnovit certifikát**.
+Jestliže zapomenete heslo připojené k vašemu certifikátu, musíte tento certifikát vynulovat. Vynulování certifikátu neovlivní dokumenty, které jste podepsali s použitím původního certifikátu. Chcete-li obnovit certifikát, na stránce **Možnosti** klepněte na tlačítko **Obnovit certifikát** .
 
 ### <a name="sign-a-document-electronically"></a>Elektronické podepsání dokumentu
 
-Když provedete změnu, která vyžaduje elektronický podpis, zobrazí se stránka **Podepsat dokument**.
+Když provedete změnu, která vyžaduje elektronický podpis, zobrazí se stránka **Podepsat dokument** .
 
 1. Na stránce **Podepsat dokument** klepněte na kartu **Dokument** a zkontrolujte provedené změny.
 2. Na kartě **Podpis** vyberte kód důvodu.
 3. Zadejte komentář, pokud je vyžadován.
 4. Není-li v poli **Podepisující uživatel** zobrazeno vaše ID uživatele, vyberte je ze seznamu.
 5. Zadejte umístění, pokud jsou tyto informace požadovány.
-6. Klepněte na tlačítko **OK**.
+6. Klepněte na tlačítko **OK** .
 
 ### <a name="sign-for-another-users-changes"></a>Podepsat změny jiného uživatele
 
@@ -107,6 +107,6 @@ V určitých situacích je třeba, aby změny provedené jedním uživatelem pod
 
 Chcete-li určit schvalovatele, postupujte takto.
 
-1. Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele**.
+1. Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele** .
 2. V poli **ID schvalujícího uživatele** vyberte ID uživatele, který musí podepsat změny provedené jiným uživatelem.
 3. V poli **Podepsat pro ID uživatele** vyberte ID uživatele, jehož změny musí být podepsány.

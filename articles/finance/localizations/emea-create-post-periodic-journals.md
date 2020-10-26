@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 261354
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 750822708c5cae443aa92dfdde56b30590b0a06e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5ea11e94c188c04c6d3d8ab0173fcc2ba56335c3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772862"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979060"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
 
@@ -30,7 +30,7 @@ ms.locfileid: "2772862"
 
 Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém zaúčtování deníku. Při vytváření deníku zadáte interval pro opakování, například dny nebo měsíce. Můžete také určit počet období, pro které bude deník účtován.
 
-Pro opakované načtení a zaúčtování řádků transakcí můžete použít stránku **Periodické deníky**. Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku je stránka **Periodické deníky** rozšířena o funkci rozdělení na období. Další informace naleznete v tématu [Zaúčtování periodických deníků](../general-ledger/tasks/post-periodic-journals.md)
+Pro opakované načtení a zaúčtování řádků transakcí můžete použít stránku **Periodické deníky** . Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku je stránka **Periodické deníky** rozšířena o funkci rozdělení na období. Další informace naleznete v tématu [Zaúčtování periodických deníků](../general-ledger/tasks/post-periodic-journals.md)
 
 ### <a name="example-split-for-periods-in-periodic-journals"></a>Příklad: Rozdělení na období do periodických deníků
 
@@ -44,7 +44,7 @@ Pojišťovna nabízí organizaci slevu při předplacení pojistného za celý r
 | **Jednotka**              | Vyberte měrnou jednotku pro dané období.                                                                                                                                                                  |
 | **Interval období**   | Určete interval mezi účetními obdobími.                                                                                                                                                              |
 
-Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4** do pole **Počet období**, vyberte možnost **Měsíce** v poli **Jednotka** a zadejte hodnotu **3** do pole **Interval období**. Systém generuje čtyři řádky deníku, každý pro jednu čtvrtinu částky řádku deníku, který jste zadali ve 3měsíčních intervalech. Podobná funkce je také k dispozici pro hlavní deník. Při zobrazení řádků hlavního deníku vyberte **Periodický deník**&gt;**Uložit deník**.
+Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4** do pole **Počet období** , vyberte možnost **Měsíce** v poli **Jednotka** a zadejte hodnotu **3** do pole **Interval období** . Systém generuje čtyři řádky deníku, každý pro jednu čtvrtinu částky řádku deníku, který jste zadali ve 3měsíčních intervalech. Podobná funkce je také k dispozici pro hlavní deník. Při zobrazení řádků hlavního deníku vyberte **Periodický deník**&gt;**Uložit deník** .
 
 
 

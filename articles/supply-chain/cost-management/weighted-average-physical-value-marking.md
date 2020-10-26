@@ -16,15 +16,15 @@ ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f10f75b9ce6038e5e7e1216fa04b0ff8662cc119
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205085"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983043"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vážený průměr s fyzickou hodnotou a označením
 
@@ -78,7 +78,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem Uzávěrka skladu.
 - Vyrovnání vytvořená při uzávěrce skladu znázorňují červené tečkované šipky směřující šikmo od příjmu k výdeji.
 
@@ -112,7 +112,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem Uzávěrka skladu.
 - Vyrovnání vytvořená při uzávěrce skladu znázorňují červené tečkované šipky směřující šikmo od příjmu k výdeji.
 - Červené šipky znázorňují vyrovnání transakcí příjmu transakcí výdeje vytvořenou systémem.
@@ -141,7 +141,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem Uzávěrka skladu.
 - Vyrovnání vytvořená při uzávěrce skladu znázorňují červené tečkované šipky směřující šikmo od příjmu k výdeji.
 
@@ -222,7 +222,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem Uzávěrka skladu.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
 

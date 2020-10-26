@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 904d0e026cf05ab70a245546e41977de0a42a721
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 496608dc0175dd9f396b6b135cc8f7d692b4d6c7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202990"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978052"
 ---
 # <a name="cancel-a-return-order"></a>Zrušení vratky 
 
@@ -37,15 +37,15 @@ Když chcete uložit záznam plánované vratky, můžete vratku také zrušit, 
 > <P>Zrušeny mohou být pouze vratky se stavem <STRONG>Vytvořeno</STRONG>. Pokud jsou vratky ve stavu <STRONG>Otevřeno</STRONG> nebo <STRONG>Zavřeno</STRONG>, nelze je zrušit.</P>
 
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
+1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky** .
     
     - nebo -
     
-    Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Vytvořené objednávky vratky**.
+    Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Vytvořené objednávky vratky** .
 
 2.  Vyberte vratku, kterou chcete zrušit.
 
-3.  Klikněte na **Zrušit objednávku**.
+3.  Klikněte na **Zrušit objednávku** .
 
 
 

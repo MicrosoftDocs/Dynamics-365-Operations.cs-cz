@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b3f6f601d2d48ede2c4db198ac5438aa32e056d
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.openlocfilehash: 28446e32c8f126e76b13f41f379ecf994a7b7a0d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829770"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980759"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrola dostupnosti zásob
 
@@ -31,32 +31,32 @@ Tento postup popisuje způsob kontroly množství na skladě a zásob fyzicky k 
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Kontrola zásob na skladě pro konkrétní položku
-1. Přejděte na **Navigační podokno > Moduly > Řízení zásob > Dotazy a sestavy > Zásoby na skladě**.
-2. Vyberte řádek **Číslo položky**. Pokud chcete vytvořit dotaz na množství na skladě podle čísla položky, vyberte řádek, kde je Tabulka nastavena na **Množství na skladě**, a Pole je nastaveno na číslo **Položky**.
+1. Přejděte na **Navigační podokno > Moduly > Řízení zásob > Dotazy a sestavy > Zásoby na skladě** .
+2. Vyberte řádek **Číslo položky** . Pokud chcete vytvořit dotaz na množství na skladě podle čísla položky, vyberte řádek, kde je Tabulka nastavena na **Množství na skladě** , a Pole je nastaveno na číslo **Položky** .
 3. V poli **Kritéria** vyberte položku, pro kterou chcete vytvořit dotaz. V případě, že používáte ukázková data společnosti USMF, můžete vybrat 'M9201'.  
-4. Klikněte na tlačítko **OK**.
-5. V **podokně akcí** klikněte na možnost **Dimenze**. Karta **Dimenze** umožňuje vybrat způsob, jak podrobné údaje chcete zobrazit o množství na skladě. Pokud potřebujete data související s rezervací, musíte zobrazit všechny dimenze zásob pro položky používající procesy rozšířené skladu (řízení skladu).
-6. Klikněte na tlačítko **OK**.
-7. V **podokně akcí** klikněte na možnost **Související informace**. Pokud tuto možnost nevidíte, klikněte na tlačítko se třemi tečkami (...) a otevřete tak další možnosti v podokně.
-8. Klikněte na **Přehled dodávek**. Karta **Přehled dodávek** obsahuje informace o zásobách pro určitou položku, jako je například množství na skladě, doba realizace a informace o dodavateli.  
-9. Rozbalte sekci **Na skladě**.
-10. Rozbalte sekci **Dodavatelé**.
+4. Klikněte na tlačítko **OK** .
+5. V  **podokně akcí** klikněte na možnost **Dimenze** . Karta **Dimenze** umožňuje vybrat způsob, jak podrobné údaje chcete zobrazit o množství na skladě. Pokud potřebujete data související s rezervací, musíte zobrazit všechny dimenze zásob pro položky používající procesy rozšířené skladu (řízení skladu).
+6. Klikněte na tlačítko **OK** .
+7. V **podokně akcí** klikněte na možnost **Související informace** . Pokud tuto možnost nevidíte, klikněte na tlačítko se třemi tečkami (...) a otevřete tak další možnosti v podokně.
+8. Klikněte na **Přehled dodávek** . Karta **Přehled dodávek** obsahuje informace o zásobách pro určitou položku, jako je například množství na skladě, doba realizace a informace o dodavateli.  
+9. Rozbalte sekci **Na skladě** .
+10. Rozbalte sekci **Dodavatelé** .
 11. Zavřete stránku.
 12. Zavřete stránku.
 
 ## <a name="check-physical-on-hand-inventory"></a>Kontrola fyzického množství na skladě
-1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Dotazy a sestavy > Fyzické zásoby na skladě**.
-2. Zadejte hodnotu do pole **Číslo zboží**. Chcete-li filtrovat seznam položek, můžete použít pole Pracoviště a Sklad. 
+1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Dotazy a sestavy > Fyzické zásoby na skladě** .
+2. Zadejte hodnotu do pole **Číslo zboží** . Chcete-li filtrovat seznam položek, můžete použít pole Pracoviště a Sklad. 
 3. Aktualizujte stránku.
-4. V **podokně akcí** klikněte na možnost **Zobrazit dimenze**. Karta Zobrazit dimenze umožňuje vybrat způsob, jak podrobné údaje chcete zobrazit o množství na skladě.
-5. Klikněte na tlačítko **OK**.
+4. V **podokně akcí** klikněte na možnost **Zobrazit dimenze** . Karta Zobrazit dimenze umožňuje vybrat způsob, jak podrobné údaje chcete zobrazit o množství na skladě.
+5. Klikněte na tlačítko **OK** .
 6. Zavřete stránku.
 
 ## <a name="check-on-hand-inventory-by-location"></a>Kontrola množství na skladě podle skladového místa
-1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Dotazy a sestavy > Množství na skladě podle místa**.
-2. Zadejte hodnotu do pole **Sklad**. V případě, že používáte ukázková data společnosti USMF, můžete použít „51“.  
+1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Dotazy a sestavy > Množství na skladě podle místa** .
+2. Zadejte hodnotu do pole **Sklad** . V případě, že používáte ukázková data společnosti USMF, můžete použít „51“.  
 3. Aktualizujte stránku.
-4. Klikněte na **Zobrazit dimenze**.
-5. Klikněte na tlačítko **OK**.
+4. Klikněte na **Zobrazit dimenze** .
+5. Klikněte na tlačítko **OK** .
 6. Zavřete stránku.
 

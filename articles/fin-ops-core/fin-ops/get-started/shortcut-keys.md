@@ -3,7 +3,7 @@ title: Klávesové zkratky
 description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761614"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962513"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -33,9 +33,11 @@ Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadáva
 > [!NOTE]
 > Klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
+Některé zkratky na této stránce představují *klávesové akordy* , což znamená, že zahrnují dvě po sobě jdoucí kombinace kláves (oddělené čárkou), které je třeba nezávisle stisknout, aby se spustila požadovaná akce. Například zkratka „Alt + M, A“ vyžaduje, aby uživatel nejprve stiskl „Alt + M“, uvolnil klávesy a poté stiskl „A“. 
+
 ## <a name="finding-a-shortcut"></a>Nalezení klávesových zkratek
 
-Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
+Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky** . Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
 
@@ -193,21 +195,21 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přesun na obsah hlavní stránky (se zaměřením v jiném podokně)                    | Alt+M,M                    |
 | Přesun do okna s fakty (může zahrnovat jeho otevření)                       | Alt+M,B nebo Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Individuální nastavení klávesových zkratek
+## <a name="personalization-shortcuts"></a>Klávesové zkratky pro [přizpůsobení](personalize-user-experience.md) 
 
 | Akce                                                                                                             | Stisknout                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Převedení stránky do režimu přizpůsobení                                                                          | Ctrl+Shift+P                        |
 | Použití nástroje Výběr (v režimu přizpůsobení)                                                                     | s                                   |
 | Otevření vybraného dialogového okna rychlého přizpůsobení ovládacího prvku (při použití nástroje Výběr)                              | Mezerník nebo Enter                      |
-| Použití nástroje Přesun (v režimu přizpůsobení)                                                                       | mil.                                   |
+| Použití nástroje Přesun (v režimu přizpůsobení)                                                                       | M                                   |
 | Vyberte aktuální ovládací prvek, který chcete přesunout (při použití nástroje Přesun a bez prozatímního výběru ovládacího prvku k přesunu)  | Mezerník nebo Enter                      |
 | Vymazat ovládací prvek k přesunutí (při použití nástroje Přesun)                                                                   | Esc                                 |
 | Přesunout na další pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                          | Tabulátor nebo šipka doprava nebo šipka dolů    |
 | Přesunout na předchozí pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                      | Shift+Tabulátor nebo šipka doleva nebo šipka nahoru |
 | Použití nástroje Skrytí (v režimu přizpůsobení)                                                                       | H.                                   |
 | Přepnout mezi zobrazením a skrytím aktuálního ovládacího prvku (při použití nástroje Skrytí)                                     | Mezerník nebo Enter                      |
-| Použití nástroje Přeskočení (v režimu přizpůsobení)                                                                       | tis.                                   |
+| Použití nástroje Přeskočení (v režimu přizpůsobení)                                                                       | K                                   |
 | Přepnout, zda je či není aktuální ovládací prvek v posloupnosti karet (při použití nástroje Přeskočení)                                   | Mezerník nebo Enter                      |
 | Použití nástroje Úprava (v režimu přizpůsobení)                                                                       | E                                   |
 | Přepnout, zda lze aktuální ovládací prvek upravit nebo zda je pouze ke čtení (při použití nástroje Úprava)                                 | Mezerník nebo Enter                      |
@@ -237,7 +239,20 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod nahoru a dolů o stránku ve vyhledávání                                                                                       | Page up / Page down              |
 | Přechod na začátek/konec vyhledávání                                                                                    | Home/End                       |
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="task-recordershortcuts"></a>Zkratky pro [Záznamník úloh](../../dev-itpro/user-interface/task-recorder.md) 
 
-- [Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+| Akce                                                                    | Stiskněte tlačítko .                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| Zastavení nahrávání (během nahrávání)                                          | Alt+R,S                    |
+| Přepnutí viditelnosti podokna Záznamník úloh (během nahrávání)             | Alt+R,T                    |
+| Přepnutí režimu Rails (při přehrávání Průvodce záznamem úloh)                                | Alt+R,L                    |
+| Přechod na předchozí krok (při přehrávání Průvodce záznamem úloh)                          | Alt+R,P                    |
+| Přechod na další krok (při přehrávání Průvodce záznamem úloh)                              | Alt+R,N                    |
+| Přepnutí fokusu mezi stránkou a animovaným automaticky otevíraným oknem (při přehrávání Průvodce záznamem úloh) | Alt+R,F               |
+| Rozbalení/sbalení animovaného automaticky otevíraného okna (při přehrávání Průvodce záznamem úloh)              | Alt+R,C                    |
+| Zobrazení více / méně informací v animovaném automaticky otevíraném okně (při přehrávání Průvodce záznamem úloh) | Alt+R,M                    |
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

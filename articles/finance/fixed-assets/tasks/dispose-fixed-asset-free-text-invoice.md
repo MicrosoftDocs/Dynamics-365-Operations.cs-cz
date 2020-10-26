@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: knelson
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 09a0c8087f610e7ff19bc2da66036e248ecfd637
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7014e3a4384e08b0c218585a3c2110243360ec08
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142770"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980785"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Vyřazení dlouhodobého majetku s použitím volné faktury
 
@@ -29,15 +29,15 @@ ms.locfileid: "3142770"
 
 Toto téma vysvětluje vyřazení dlouhodobého majetku pomocí volné faktury.
 
-1. V podokně navigace přejděte na **Moduly > Pohledávky > Faktury > Všechny otevřené faktury**.
-2. Zvolte **Nové**.
+1. V podokně navigace přejděte na **Moduly > Pohledávky > Faktury > Všechny otevřené faktury** .
+2. Zvolte **Nové** .
 3. V poli **Účet odběratele** zadejte nebo vyberte hodnotu.
 4. Ověřte výchozí datum **faktury** a podle potřeby ho upravte.
-5. Ověřte zbývající výchozí pole záhlaví, jako je například **Měna**, a podle potřeby ho upravte.
-6. V části **Řádky faktury** ověřte pole **Popis** a **Hlavní účet**.
-7. Ověřte výchozí pole **Skupina DPH** a **Skupina DPH položky**.
+5. Ověřte zbývající výchozí pole záhlaví, jako je například **Měna** , a podle potřeby ho upravte.
+6. V části **Řádky faktury** ověřte pole **Popis** a **Hlavní účet** .
+7. Ověřte výchozí pole **Skupina DPH** a **Skupina DPH položky** .
 8. Zadejte **jednotkovou cenu** nebo **množství** prodeje dlouhodobého majetku.
-9. Zvolte sekci **Podrobnosti řádku**.  
-10. Zadejte nebo vyberte hodnotu v poli **Dlouhodobý majetek**.
-11. Zvolte **Zaúčtovat**. 
+9. Zvolte sekci **Podrobnosti řádku** .  
+10. Zadejte nebo vyberte hodnotu v poli **Dlouhodobý majetek** .
+11. Zvolte **Zaúčtovat** . 
 

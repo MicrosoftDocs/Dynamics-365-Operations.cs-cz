@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e31f58cf8782c715b97bdae0e89f684b15a76d2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8866d8a4d6ad879f2c43b470af98457cb7c75721
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215072"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985733"
 ---
 # <a name="service-order-item-requirements"></a>Požadavků na položku servisní objednávky   
 
@@ -36,13 +36,13 @@ Použitím požadavků zboží namísto transakcí zboží můžete naplánovat 
 
 Požadavky zboží pro objednávky služeb jsou zpracovávány prostřednictvím projektu. Chcete-li vytvořit pro objednávku služeb požadavek zboží, objednávka musí být přiřazena k projektu.
 
-Pokud je pro servisní zakázku vytvořen požadavek na položku, lze jej zobrazit v okně **Projekt** v rámci jednotlivé servisní zakázky nebo prostřednictvím formuláře **Prodejní objednávka**.
+Pokud je pro servisní zakázku vytvořen požadavek na položku, lze jej zobrazit v okně **Projekt** v rámci jednotlivé servisní zakázky nebo prostřednictvím formuláře **Prodejní objednávka** .
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Zobrazení požadavku na položku ze servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
-2.  Klikněte na **Expedice** a pak kliknutím na **Požadavek na položku** otevřete formulář **Požadavky na položku**.
+2.  Klikněte na **Expedice** a pak kliknutím na **Požadavek na položku** otevřete formulář **Požadavky na položku** .
 
 3.  Klepněte na kartu **Projekt** a zkontrolujte, zda jsou v poli **Servisní zakázka** uvedeny servisní zakázky požadavků zboží.
 
@@ -50,21 +50,21 @@ Pokud je pro servisní zakázku vytvořen požadavek na položku, lze jej zobraz
 
 Pokud je pro určitou servisní zakázku vytvořen požadavek na položku, nelze danou servisní zakázku odstranit. Požadavek na servisní zakázku je nutné nejprve odstranit a teprve poté lze odstranit i servisní zakázku.
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
-2.  Klikněte na **Expedice** a pak kliknutím na **Požadavek na položku** otevřete formulář **Požadavky na položku**. V tomto formuláři jsou všechny požadavky na zboží, které jsou pro danou servisní zakázku vytvořeny.
+2.  Klikněte na **Expedice** a pak kliknutím na **Požadavek na položku** otevřete formulář **Požadavky na položku** . V tomto formuláři jsou všechny požadavky na zboží, které jsou pro danou servisní zakázku vytvořeny.
 
-3.  Vyberte řádek požadavku na zboží, který má být odebrán, a klepněte na možnost **Odstranit**.
+3.  Vyberte řádek požadavku na zboží, který má být odebrán, a klepněte na možnost **Odstranit** .
 
 - nebo -
 
-1.  Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.
+1.  Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty** .
 
 2.  Otevřete projekt se servisní zakázkou, v níž je vytvořen požadavek na zboží.
 
-3.  Ve formuláři **Projekty**, v pravém podokně, klikněte na možnost **požadavky položky**. Zobrazí se formulář **Požadavky položky** se seznamem požadavků na položky asociovanými s vybraným projektem.
+3.  Ve formuláři **Projekty** , v pravém podokně, klikněte na možnost **požadavky položky** . Zobrazí se formulář **Požadavky položky** se seznamem požadavků na položky asociovanými s vybraným projektem.
 
-4.  Vyberte řádek požadavku na zboží, který má být odebrán, a klepněte na možnost **Odstranit**.
+4.  Vyberte řádek požadavku na zboží, který má být odebrán, a klepněte na možnost **Odstranit** .
 
 ## <a name="see-also"></a>Viz také
 

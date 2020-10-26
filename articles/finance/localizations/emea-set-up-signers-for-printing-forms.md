@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b26ec55f8ee5fe43e7f6cd6d42c78f0c0a49114f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 64868aa08201fa3df99cd86fa6ef5231a9347151
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183480"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983081"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Nastavení podepisujících uživatelů pro tiskové formuláře
 
@@ -32,7 +32,7 @@ Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsk
 <a name="set-up-default-values"></a>Nastavení výchozích hodnot
 ---------------------
 
-K nastavení podepisujících dokumentů, které společnost tiskne, použijte stránku **Úředníci**. Pro firmu i pro zákazníky nebo dodavatele můžete nastavit podepisující osoby a jejich jména, v závislosti na typu dokumentu. Následující tabulka popisuje karty na stránce **Úředníci**.
+K nastavení podepisujících dokumentů, které společnost tiskne, použijte stránku **Úředníci** . Pro firmu i pro zákazníky nebo dodavatele můžete nastavit podepisující osoby a jejich jména, v závislosti na typu dokumentu. Následující tabulka popisuje karty na stránce **Úředníci** .
 
 <table>
 <colgroup>
@@ -97,7 +97,7 @@ K nastavení podepisujících dokumentů, které společnost tiskne, použijte s
 </tbody>
 </table>
 
-\* Tento typ dokumentu je k dispozici pouze pro právnické osoby, které mají primární adresu v Rusku. Následující tabulka popisuje pole na stránce **Úředníci**.
+\* Tento typ dokumentu je k dispozici pouze pro právnické osoby, které mají primární adresu v Rusku. Následující tabulka popisuje pole na stránce **Úředníci** .
 
 <table>
 <colgroup>
@@ -151,7 +151,7 @@ K nastavení podepisujících dokumentů, které společnost tiskne, použijte s
 </table>
 
 ## <a name="set-up-a-number-sequence-code-for-officials"></a>Nastavení kódu číselného pořadí pro státní úředníky
-Můžete přiřadit kód číselné řady pro úředníky v části **Číselné řady** stránky **Právnické osoby**. Vyberte kód číselné řady reference **ID relace úředních osob**.
+Můžete přiřadit kód číselné řady pro úředníky v části **Číselné řady** stránky **Právnické osoby** . Vyberte kód číselné řady reference **ID relace úředních osob** .
 
 ## <a name="modify-signers-in-primary-documents"></a>Změna podepisujících osob v primárních dokumentech
 Funkce Úředníci zobrazuje výchozí předdefinované podepisující z tabulky úředníků. Na stránce **Zaúčtování faktury** na kartě **Úředníci** můžete změnit jméno podepisující osoby a název primárního dokladu pro následující typy dokumentů:

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
-ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
+ms.openlocfilehash: 5e84130ff2b1cf83b7d2b95eefc72175dc57743c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435577"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982495"
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
@@ -38,21 +38,21 @@ Správci systému mohou [přiřazovat licence uživatelům](https://docs.microso
 Uživatelé, kteří jsou externí vůči klientovi, do kterého bylo prostředí nasazeno, je třeba reprezentovat v adresáři hostitelského klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="add-a-new-user"></a>Přidat nového uživatele
-1. Přejděte do nabídky **Správa systému \> Uživatelé \> Uživatelé**.
-2. V podokně akcí zvolte **Nový**.
+1. Přejděte do nabídky **Správa systému \> Uživatelé \> Uživatelé** .
+2. V podokně akcí zvolte **Nový** .
 3. Do pole **ID uživatele** zadejte jedinečný identifikátor uživatele. ID uživatele je povinné.  
 4. Do pole **Jméno uživatele** zadejte jméno uživatele.  
 5. Do pole **Doména** zadejte doménu daného uživatele.  
 6. Do pole **Alias** zadejte alias uživatele.  
 7. V poli **Společnost** zvolte požadovanou společnost. 
-8. Na pevné kartě **Role uživatele** vyberte možnost **Přiřadit role**, chcete-li uživatelům přiřadit role zabezpečení. Další informace viz [Přiřadit uživatelům role zabezpečení](assign-users-security-roles.md).
-9. Vyberte **OK**.
-10. Zvolte **Uložit**.
+8. Na pevné kartě **Role uživatele** vyberte možnost **Přiřadit role** , chcete-li uživatelům přiřadit role zabezpečení. Další informace viz [Přiřadit uživatelům role zabezpečení](assign-users-security-roles.md).
+9. Vyberte **OK** .
+10. Zvolte **Uložit** .
 
 ## <a name="import-users"></a>Importovat uživatele
-1. Přejděte do nabídky **Správa systému \> Uživatelé \> Uživatelé**.
-2. V podokně akcí klikněte na možnost **Import uživatele**.
+1. Přejděte do nabídky **Správa systému \> Uživatelé \> Uživatelé** .
+2. V podokně akcí klikněte na možnost **Import uživatele** .
 3. Označte na seznamu vybraný řádek.
-4. Vybrat **Importovat uživatele**.
-5. Vyberte **Zavřít**.
+4. Vybrat **Importovat uživatele** .
+5. Vyberte **Zavřít** .
 

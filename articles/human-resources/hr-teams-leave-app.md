@@ -3,7 +3,7 @@ title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828937"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3929986"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -39,7 +39,7 @@ Aplikaci Human Resources najdete v obchodě Teams.
 
    ![Tři tečky aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-ellipses.png)
  
-2. Vyhledejte Dynamics 365 Human Resources a poté vyberte dlaždici **Human Resources**.
+2. Vyhledejte Dynamics 365 Human Resources a poté vyberte dlaždici **Human Resources** .
 
    ![Dlaždice HR aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-human-resources-tile.png)
 
@@ -54,7 +54,7 @@ Pokud vás aplikace nepřihlásí automaticky, vyberte kartu **Nastavení** pro 
 > [!NOTE]
 > Pokud nevidíte přihlašovací dialogové okno, zkontrolujte nastavení prohlížeče a povolte automaticky otevíraná okna. 
 
-Pokud máte přístup k více než jedné instanci aplikace Human Resources, můžete vybrat prostředí, ke kterému se chcete připojit, na kartě **Nastavení**.
+Pokud máte přístup k více než jedné instanci aplikace Human Resources, můžete vybrat prostředí, ke kterému se chcete připojit, na kartě **Nastavení** .
 
 > [!NOTE]
 > Aplikace nyní podporuje roli zabezpečení správce systému.
@@ -106,11 +106,11 @@ Karta **Volno** umožňuje zobrazit:
  
 ### <a name="create-a-new-request"></a>Vytvoření nové žádosti
 
-1. Chcete-li vytvořit novou žádost o volno, zvolte **Nová žádost**.
+1. Chcete-li vytvořit novou žádost o volno, zvolte **Nová žádost** .
 
    ![Nová žádost aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
 
-2. Zadejte den nebo dny, na které chcete volno, a poté vyberte **Přidat**.
+2. Zadejte den nebo dny, na které chcete volno, a poté vyberte **Přidat** .
 
    ![Přidání volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
 
@@ -120,7 +120,7 @@ Karta **Volno** umožňuje zobrazit:
 
 ### <a name="manage-draft-requests"></a>Správa konceptů žádostí
 
-1. Zvolte kartu **Koncepty**.
+1. Zvolte kartu **Koncepty** .
 
    ![Karta konceptů aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-drafts-tab.png)
 
@@ -132,9 +132,9 @@ Karta **Volno** umožňuje zobrazit:
    
 ### <a name="respond-to-teams-notifications"></a>Odpovídejte na oznámení týmů
 
-Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li oznámení zobrazit, vyberte jej. Oznámení se také zobrazují v oblasti **Chat**.
+Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li oznámení zobrazit, vyberte jej. Oznámení se také zobrazují v oblasti **Chat** .
 
-Pokud jste schvalovatel, můžete v oznámení zvolit možnosti **Schválit** nebo **Odmítnout**. Můžete také zadat volitelnou zprávu.
+Pokud jste schvalovatel, můžete v oznámení zvolit možnosti **Schválit** nebo **Odmítnout** . Můžete také zadat volitelnou zprávu.
 
 ![Oznámení o žádosti o pracovní volno v aplikaci Human Resources Teams](./media/hr-teams-leave-app-notification.png)
 
@@ -146,7 +146,7 @@ Po instalaci aplikace Human Resources pro Teams můžete snadno poslat informace
 
    ![Tlačítko Human Resources pod oknem chatu](./media/hr-teams-leave-app-chat-button.png)
 
-2. Vyberte žádost o dovolenou, kterou chcete sdílet. Pokud chcete sdílet koncept žádosti o dovolenou, nejprve vyberte **Koncepty**.
+2. Vyberte žádost o dovolenou, kterou chcete sdílet. Pokud chcete sdílet koncept žádosti o dovolenou, nejprve vyberte **Koncepty** .
 
    ![Vyberte nadcházející žádost o dovolenou ke sdílení](./media/hr-teams-leave-app-chat-search.png)
 
@@ -162,15 +162,31 @@ Pokud jste sdíleli koncept žádosti, zobrazí se jako koncept:
 
 Pokud jste manažer s přímými podřízenými, můžete si prohlédnout schválené a nevyřízené pracovní volno vašeho týmu.
 
-1. V aplikaci Human Resources v Teams vyberte **Volno**.
+1. V aplikaci Human Resources v Teams vyberte **Volno** .
 
-2. Vyberte **Kalendář týmu**.
+2. Vyberte **Kalendář týmu** .
 
    ![Zobrazení kalendáře v aplikaci Human Resources Teams](./media/hr-teams-leave-app-view-calendar.png)
 
 Kalendář zobrazuje schválené a nevyřízené volno vašich přímých podřízených.
 
 ![Kalendář volna v aplikaci Human Resources Teams](./media/hr-teams-leave-app-calendar.png)
+
+## <a name="troubleshooting"></a>Řešení potíží
+
+Pokud máte potíže s přihlášením nebo používáním aplikace Human Resources Teams, zkuste problémy vyřešit podle těchto pokynů. Pokud problémy přetrvávají i po pokusu o vyřešení, obraťte se na podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nelze se přihlásit do aplikace Human Resources v Teams
+
+Pokud se nemůžete do aplikace přihlásit, je možné, že účet, pomocí kterého se přihlašujete do Microsoft Teams není spojen se záznamem zaměstnance v Dynamics 365 Human Resources. Požádejtea správce systému o ověření, jestli je váš záznam zaměstnance správně přidružen.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Chyba při schvalování žádostí o dovolenou v aplikaci Human Resources v Teams
+
+Pokud se vám při pokusu o schválení žádostí o dovolenou v aplikaci Teams zobrazí chyba, proveďte v rámci řešení potíží následující kroky:
+
+1. Ověřte, že účet, který používáte k přihlášení k Microsoft Teams, je stejný, jaký používáte pro přístup k Dynamics 365 Human Resources.
+
+2. Ověřte, jestli jste platným schvalovatelem požadavku, a to kontrolou nastavení pracovního postupu pro schválení dovolené. Další informace o pracovních postupech žádostí o dovolenou najdete v tématu [Vytvoření pracovního postupu žádosti o dovolenou](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 

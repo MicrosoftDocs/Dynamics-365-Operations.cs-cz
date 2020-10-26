@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25ca62466c00b038e0d7e1758fd4f13f776cb2f0
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811963"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982545"
 ---
 # <a name="optimization-advisor-overview"></a>Přehled poradce při optimalizaci
 
@@ -40,11 +40,11 @@ Pracovní prostor **Poradce při optimalizaci** je nástroj, který umožňuje u
 
 Poradce při optimalizaci pravidelně spouští sadu pravidel doporučených postupů. K dispozici je výchozí sada pravidel, uživatelé však mohou vytvářet také pravidla, která jsou specifická pro svá vlastní nastavení, řešení od nezávislých dodavatelů softwaru (ISV) a o zaměstnání. Další informace o tom, jak vytvářet pravidla, naleznete v tématu [Vytvoření pravidel pro poradce optimalizací](./create-rules-optimization-advisor.md).
 
-Při zjištění narušení pravidla se vygeneruje příležitost optimalizace a zobrazí se v pracovním prostoru **Poradce při optimalizaci**. Uživatel může provést odpovídající opravnou akci přímo z pracovního prostoru **poradce pro optimalizaci**.
+Při zjištění narušení pravidla se vygeneruje příležitost optimalizace a zobrazí se v pracovním prostoru **Poradce při optimalizaci** . Uživatel může provést odpovídající opravnou akci přímo z pracovního prostoru **poradce pro optimalizaci** .
 
 Příležitosti mohou být specifické pro společnost nebo mezi různými společnostmi, v závislosti na typu nastavení a ověřovaných dat. Příležitosti mezi více společnostmi lze zobrazit ze všech společností. Chcete-li zobrazit příležitosti pro určitou společnost, musíte nejprve vybrat společnost.
 
-Na příležitosti optimalizace se vztahují standardní zásady zabezpečení. Například příležitosti optimalizace, které souvisejí s konfigurací modulu **řízení skladu**, jsou zobrazeny pouze pro uživatele, kteří mají přístup k řízení skladu a mohou změnit jeho nastavení.
+Na příležitosti optimalizace se vztahují standardní zásady zabezpečení. Například příležitosti optimalizace, které souvisejí s konfigurací modulu **řízení skladu** , jsou zobrazeny pouze pro uživatele, kteří mají přístup k řízení skladu a mohou změnit jeho nastavení.
 
 Pokud provedete akci týkající se některých možností optimalizace, systém vypočítá dopad příležitosti z hlediska snížení času spuštění obchodních procesů. Bohužel tato funkce není dostupná pro všechny příležitosti optimalizace.
 
@@ -52,9 +52,9 @@ Další informace o poradci při optimalizaci naleznete v krátkém videu [Porad
 
 ## <a name="optimization-rules"></a>Pravidla optimalizace
 
-Chcete-li zobrazit úplný seznam pravidel poradce při optimalizaci a zjistit, jak často jsou pravidla vyhodnocována, přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Udržovat pravidlo ověření diagnostiky**. Jsou vyhodnocována pouze pravidla, která se nacházejí ve stavu **Aktivní**. Četnost hodnocení lze nastavit na **Denní**, **Týdenní**, **Měsíční**, nebo **Nenaplánováno**.
+Chcete-li zobrazit úplný seznam pravidel poradce při optimalizaci a zjistit, jak často jsou pravidla vyhodnocována, přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Udržovat pravidlo ověření diagnostiky** . Jsou vyhodnocována pouze pravidla, která se nacházejí ve stavu **Aktivní** . Četnost hodnocení lze nastavit na **Denní** , **Týdenní** , **Měsíční** , nebo **Nenaplánováno** .
 
-Chcete-li spustit hodnocení neplánovaných pravidel nebo přehodnotit periodická pravidla mimo jejich určený plán, přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Naplánovat pravidlo ověření diagnostiky**. Potom zvolte v dialogovém okně **Ověření pravidla diagnostiky** frekvenci vyhodnocení. Znovu se vyhodnotí všechna pravidla, která mají zadaný interval.
+Chcete-li spustit hodnocení neplánovaných pravidel nebo přehodnotit periodická pravidla mimo jejich určený plán, přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Naplánovat pravidlo ověření diagnostiky** . Potom zvolte v dialogovém okně **Ověření pravidla diagnostiky** frekvenci vyhodnocení. Znovu se vyhodnotí všechna pravidla, která mají zadaný interval.
 
 Aktuální sada pravidel optimalizace může být rozdělena do následujících kategorií.
 
@@ -62,11 +62,11 @@ Aktuální sada pravidel optimalizace může být rozdělena do následujících
 
 Nastavení správy skladu je složitý proces. K usnadnění procesu byla zavedena některá pravidla umožňující ověřit správnost nastavení. Jedno pravidlo například ověřuje nastavení směrnice skladového místa pro pevné produkt varianty umístění pro prodejní objednávky a převodní příkazy.
 
-Dále některá pravidla kontrolují, zda jsou skutečně použity funkce, které byly povoleny. Například jedno pravidlo určuje, zda chcete používat modul **hlavní plánování**. Pokud pravidlo určuje, zda nepoužíváte modul, je generována příležitost optimalizace navrhující, abyste procesy plánování vypli.
+Dále některá pravidla kontrolují, zda jsou skutečně použity funkce, které byly povoleny. Například jedno pravidlo určuje, zda chcete používat modul **hlavní plánování** . Pokud pravidlo určuje, zda nepoužíváte modul, je generována příležitost optimalizace navrhující, abyste procesy plánování vypli.
 
 ### <a name="system-configuration"></a>Konfigurace systému
 
-Pokud není použita konkrétní funkce, která je řízena konfiguračním klíčem, je generována příležitost optimalizace naznačující, abyste zakázali konfigurační klíč. Příklady konfiguračních klíčů: **Skutečná hmotnost**, **Plánování rozpočtu**, **Projektu** a **Seznam schválených dodavatelů**.
+Pokud není použita konkrétní funkce, která je řízena konfiguračním klíčem, je generována příležitost optimalizace naznačující, abyste zakázali konfigurační klíč. Příklady konfiguračních klíčů: **Skutečná hmotnost** , **Plánování rozpočtu** , **Projektu** a **Seznam schválených dodavatelů** .
 
 ### <a name="business-data-consistency-and-cleanup"></a>Konzistence a čištění obchodních dat
 
@@ -80,15 +80,15 @@ Pokud nepoužíváte některé obchodní procesy podle doporučených postupů (
 
 ## <a name="optimization-opportunities"></a>Příležitosti optimalizace
 
-Chcete-li zobrazit příležitosti optimalizace, které jsou generovány během vyhodnocení pravidel optimalizace, otevřete pracovní prostor **Poradce při optimalizaci**.
+Chcete-li zobrazit příležitosti optimalizace, které jsou generovány během vyhodnocení pravidel optimalizace, otevřete pracovní prostor **Poradce při optimalizaci** .
 
-V tomto pracovním prostoru lze zobrazit další informace o příležitosti výběrem **Další informace**. Jestliže má systém provést akci a opravit nastavení, vyčistěte data a tak dále tak, abyste nemuseli otevírat odpovídající stránky sami, vyberte **provést akci**.
+V tomto pracovním prostoru lze zobrazit další informace o příležitosti výběrem **Další informace** . Jestliže má systém provést akci a opravit nastavení, vyčistěte data a tak dále tak, abyste nemuseli otevírat odpovídající stránky sami, vyberte **provést akci** .
 
 Neexistuje žádné workflow pro příležitosti optimalizace. Po výběru možnosti **Provést akci** nebo použití navigační cesty, která je k dispozici v dialogovém okně **Další informace** je příležitost optimalizace odebrána ze seznamu. Pokud opravná akce problém zcela nevyřeší, příležitost bude vygenerována znovu při dalším vyhodnocení tohoto pravidla.
 
-Jestli se možnost nevztahuje na vaši roli, můžete vybrat **skrýt z mého seznamu**. I v případě, že pravidlo za tuto příležitost je spuštěno později, se nezobrazí příležitosti v tomto seznamu.
+Jestli se možnost nevztahuje na vaši roli, můžete vybrat **skrýt z mého seznamu** . I v případě, že pravidlo za tuto příležitost je spuštěno později, se nezobrazí příležitosti v tomto seznamu.
 
-Chcete-li deaktivovat vyhodnocení konkrétních pravidel, zvolte příležitost vygenerovanou pravidlem a poté zvolte **Deaktivovat analýzy**.
+Chcete-li deaktivovat vyhodnocení konkrétních pravidel, zvolte příležitost vygenerovanou pravidlem a poté zvolte **Deaktivovat analýzy** .
 
 ## <a name="additional-resources"></a>Další zdroje
 

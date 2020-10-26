@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6314b26bd73e6b6f6147c90ecfdfa71e7105d48f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fe7f93782ff52797a6978a2490aab992bed065de
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211783"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975745"
 ---
 # <a name="reassign-activities"></a>Opětovné přiřazení aktivit 
 
@@ -34,11 +34,11 @@ Toto téma popisuje, jak změnit přiřazení aktivit služeb z jednoho pracovn�
 
 Pomocí následujícího postupu přiřadíte aktivity jinému pracovníkovi:
 
-1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.
+1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .
 
 2.  V polích **Od data** a **Do data** zadejte data definující časové období, pro které chcete zobrazit aktivity.
 
-3.  Vyberte, zda chcete zobrazit uzavřené aktivity a informace o expedici pro související týmy, a klepněte na tlačítko **OK**.
+3.  Vyberte, zda chcete zobrazit uzavřené aktivity a informace o expedici pro související týmy, a klepněte na tlačítko **OK** .
 
 4.  Ve formuláři **Expediční vývěska** klikněte na položku **Upřesnit** a otevřete tak pouze Ganttův diagram na horním okraji stránky. Klepnutím na položku **Jednoduchý** otevřete Ganttův diagram a karty ve formuláři.
 
@@ -48,7 +48,7 @@ Pomocí následujícího postupu přiřadíte aktivity jinému pracovníkovi:
     
       - Vyberte barevně vyznačenou grafiku, která reprezentuje servisní aktivitu, kterou chcete přeřadit. Stiskněte klávesu SHIFT a přesuňte barevný obrázek na řádek jiného zaměstnance.
     
-      - Na kartě **Vše**, **Tým**, **Neodeslané** nebo **Související** v poli **Pracovník** zadejte jméno pracovníka, který nahradí aktuálního pracovníka v aktivitě.
+      - Na kartě **Vše** , **Tým** , **Neodeslané** nebo **Související** v poli **Pracovník** zadejte jméno pracovníka, který nahradí aktuálního pracovníka v aktivitě.
 
 ## <a name="see-also"></a>Viz také
 

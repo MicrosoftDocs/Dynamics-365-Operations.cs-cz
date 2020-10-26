@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Czech Republic
 ms.search.industry: Retail
-ms.author: v-dmpere
+ms.author: josaw
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 5129fa32d21bfb02693849ff1a04cbae2c17f447
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 4a6a9f182c28e6f256d4cd8629bcada0d60f5140
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057579"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979318"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -124,7 +124,7 @@ Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte
 Na stránce **Všechny obchody** aktualizujte podrobnosti o obchodu. Je nutné konkrétně nastavit následující parametry.
 
 - V poli **Skupina DPH** zadejte skupinu DPH, kterou chcete použít pro prodeje výchozímu odběrateli.
-- Nastavte možnost **Ceny jsou včetně DPH** na **Ano**.
+- Nastavte možnost **Ceny jsou včetně DPH** na **Ano** .
 - V poli **název** zadejte název společnosti. Tato změna pomáhá zajistit, že se název společnosti zobrazí na dokladu o prodeji. Případně můžete přidat název společnosti na prodejní doklad jako volný text.
 - Nastavte **daňové identifikační číslo (DIČ)** na identifikační číslo společnosti. Tato změna pomáhá zajistit, že se identifikační číslo společnosti zobrazí na dokladu o prodeji. Případně můžete přidat identifikační číslo společnosti na prodejní doklad jako volný text.
 
@@ -132,23 +132,23 @@ Na stránce **Všechny obchody** aktualizujte podrobnosti o obchodu. Je nutné k
 
 Nastavte funkční profily POS.
 
-- Na pevné záložce **Číslování dokladů** nastavte číslování dokladů vytvořením nebo aktualizací záznamů pro typy příjmových transakcí **Prodej**, **Prodejní objednávka** a **Vrácení**.
+- Na pevné záložce **Číslování dokladů** nastavte číslování dokladů vytvořením nebo aktualizací záznamů pro typy příjmových transakcí **Prodej** , **Prodejní objednávka** a **Vrácení** .
 
 ### <a name="set-up-registration-numbers"></a>Nastavení registračních čísel
 
-1. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Typy registrace**. Vytvořte nový typ registrace. Určete pole **Země/oblast** na **CZE** (Česká republika) a omezte je na organizaci.
-2. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Kategorie registrace**. Vytvořte novou kategorii registrace. Vyberte typ registrace z předchozího kroku a nastavte **kategorii registrace** na **ID místa obchodu**.
-3. Přejděte do nabídky **Správa organizace \> Organizace \> Provozní jednotky**. Pro každý obchod v rámci České republiky vyberte jednotku vztahující se k obchodu. Na pevné záložce **Adresa** rozbalte rozevírací seznam **Další možnosti** a vyberte **Upřesnit**. 
+1. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Typy registrace** . Vytvořte nový typ registrace. Určete pole **Země/oblast** na **CZE** (Česká republika) a omezte je na organizaci.
+2. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Kategorie registrace** . Vytvořte novou kategorii registrace. Vyberte typ registrace z předchozího kroku a nastavte **kategorii registrace** na **ID místa obchodu** .
+3. Přejděte do nabídky **Správa organizace \> Organizace \> Provozní jednotky** . Pro každý obchod v rámci České republiky vyberte jednotku vztahující se k obchodu. Na pevné záložce **Adresa** rozbalte rozevírací seznam **Další možnosti** a vyberte **Upřesnit** . 
 4. Na otevřené stránce **spravovat adresy** je nutné zadat následující nastavení.
 
-    - Na pevné záložce **Adresa** nastavte pole **země/oblast** na **CZE**.
+    - Na pevné záložce **Adresa** nastavte pole **země/oblast** na **CZE** .
     - Na pevné záložce **ID registrace** vytvořte nový záznam. Vyberte dříve vytvořený typ registrace a nastavte registrační číslo.
 
 ### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Nakonfigurujte vlastní pole tak, aby bylo možné použít je ve formátech příjemky pro prodejní příjemky
 
 Můžete konfigurovat jazykový text a vlastní pole, která se používají ve formátech příjemky POS. Výchozí společnost uživatele, který vytvoří nastavení příjmu, musí být stejná právnická osoba, pro kterou se vytváří nastavení text jazyka. Alternativně lze vytvořit texty ve stejném jazyce, které mají být vytvořeny ve výchozí společnosti uživatele a právnické osobě prodejny, pro kterou se nastavení vytváří.
 
-Na stránce **jazykový text** přidejte následující záznamy popisků vlastního pole rozvržení účtenky. Upozorňujeme, že hodnoty **ID jazyka**, **ID textu** a **Text**, které jsou zobrazeny v tabulce, jsou jenom příklady. Lze je změnit tak, aby splňovaly vaše požadavky. Hodnoty **ID textu**, které budete používat, však musí být jedinečné a musí být rovny nebo větší než 900001.
+Na stránce **jazykový text** přidejte následující záznamy popisků vlastního pole rozvržení účtenky. Upozorňujeme, že hodnoty **ID jazyka** , **ID textu** a **Text** , které jsou zobrazeny v tabulce, jsou jenom příklady. Lze je změnit tak, aby splňovaly vaše požadavky. Hodnoty **ID textu** , které budete používat, však musí být jedinečné a musí být rovny nebo větší než 900001.
 
 Přidejte následující štítky POS do oddílu **POS** v poli **Jazykový text** z tabulky:
 
@@ -161,7 +161,7 @@ Přidejte následující štítky POS do oddílu **POS** v poli **Jazykový text
 | cs       | 900005  | Informace                   |
 | cs       | 900006  | Pořadové číslo        |
 
-Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastního pole rozvržení účtenky. Upozorňujeme, že hodnoty **ID textu titulku** musí odpovídat hodnotám **ID textu**, které jste zadali na stránce **jazykový text**:
+Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastního pole rozvržení účtenky. Upozorňujeme, že hodnoty **ID textu titulku** musí odpovídat hodnotám **ID textu** , které jste zadali na stránce **jazykový text** :
 
 | Název                 | Typ    | ID textu titulku |
 |----------------------|---------|-----------------|
@@ -174,15 +174,15 @@ Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastn�
 
 ### <a name="configure-receipt-formats"></a>Konfigurace formátů příjemky
 
-Pro každý požadovaný formát příjemky změňte hodnotu pole **Chování tisku** na **vždy tisknout**.
+Pro každý požadovaný formát příjemky změňte hodnotu pole **Chování tisku** na **vždy tisknout** .
 
 V Návrháři formátu příjemky přidejte následující vlastní pole do příslušných oddílů příjemky. Všimněte si, že názvy polí odpovídají jazykovým textům, které jste definovali v předchozím oddílu.
 
 - **Záhlaví:** Přidejte následující pole.
 
-    - **Název obchodu** a **daňové identifikační číslo**: tato pole umožňují vytisknout na účtenky název a identifikační číslo společnosti. Případně můžete přidat název společnosti a číslo identity do rozvržení jako volný text.
-    - **Adresa obchodu**, **datum**, **čas 24H**, **čísla účtenky**, a **číslo registrační pokladny**.
-    - **Číselná řada**: Toto pole identifikuje počet hotovostních transakcí daňové registrace služby.
+    - **Název obchodu** a **daňové identifikační číslo** : tato pole umožňují vytisknout na účtenky název a identifikační číslo společnosti. Případně můžete přidat název společnosti a číslo identity do rozvržení jako volný text.
+    - **Adresa obchodu** , **datum** , **čas 24H** , **čísla účtenky** , a **číslo registrační pokladny** .
+    - **Číselná řada** : Toto pole identifikuje počet hotovostních transakcí daňové registrace služby.
 
 - **Řádky:** Přidejte následující pole.
 
@@ -193,11 +193,11 @@ V Návrháři formátu příjemky přidejte následující vlastní pole do př�
 - **Zápatí:** Přidejte následující pole.
 
     - Pole platby, aby se vytiskly částky platby pro každou metodu platby. Například přidejte pole **název úhrady** a **Částka úhrady** na jeden řádek rozvržení.
-    - **ID provozovny/pokladny**: toto pole vytiskne identifikátory obchodních prostorů a registrační pokladny.
-    - **BKP**: Toto pole vytiskne bezpečnostní kód plátce daně, který přiřazuje služba daňové registrace.
-    - **FIK**: toto pole vytiskne daňový identifikační kód transakce, který přiděluje webová služba daňového úřadu v případě úspěšné online registrace.
-    - **PKP**: Toto pole vytiskne kód podpisu správce daně, který je generován v případě offline registrace u služby daňové registrace.
-    - **Informace**: Toto pole vytiskne doplňkové informace ze služby daňové registrace.
+    - **ID provozovny/pokladny** : toto pole vytiskne identifikátory obchodních prostorů a registrační pokladny.
+    - **BKP** : Toto pole vytiskne bezpečnostní kód plátce daně, který přiřazuje služba daňové registrace.
+    - **FIK** : toto pole vytiskne daňový identifikační kód transakce, který přiděluje webová služba daňového úřadu v případě úspěšné online registrace.
+    - **PKP** : Toto pole vytiskne kód podpisu správce daně, který je generován v případě offline registrace u služby daňové registrace.
+    - **Informace** : Toto pole vytiskne doplňkové informace ze služby daňové registrace.
 
 Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu [Nastavení a návrh formátů příjmu](../receipt-templates-printing.md).
 
@@ -219,12 +219,12 @@ Tento postup slouží k nastavení vývojového prostředí, abyste mohli testov
 
 ### <a name="enable-commerce-runtime-extensions"></a>Povolit rozšíření služby Commerce runtime
 
-Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení následujících postupů otevřete řešení CRT, **CommerceRuntimeSamples.sln**, v části **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení následujících postupů otevřete řešení CRT, **CommerceRuntimeSamples.sln** , v části **RetailSdk\\SampleExtensions\\CommerceRuntime** .
 
 #### <a name="documentproviderefrsample-component"></a>Komponenta DocumentProvider.EFRSample
 
 1. Najděte projekt **Runtime.Extensions.DocumentProvider.EFRSample** a vytvořte ho.
-2. Ve složce **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll**.
+2. Ve složce **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** .
 3. Zkopírujte soubor sestavení do složky rozšíření CRT:
 
     - **Commerce Scale Unit::** Zkopírujte sestavení do složky **\\bin\\ext** v umístění serveru Microsoft Internet Information Services (IIS) Commerce Scale Unit.
@@ -244,7 +244,7 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
 #### <a name="documentproviderdatamodelefr-component"></a>Komponenta DocumentProvider.DataModelEFR
 
 1. Najděte projekt **Runtime.Extensions.DocumentProvider.DataModelEFR** a vytvořte ho.
-2. Ve složce **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**.
+2. Ve složce **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** .
 3. Zkopírujte soubor sestavení do složky rozšíření CRT:
 
     - **Commerce Scale Unit::** Zkopírujte sestavení do složky **\\bin\\ext** v umístění serveru Commerce Scale Unit.
@@ -276,7 +276,7 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
 
 ### <a name="enable-hardware-station-extensions"></a>Povolení rozšíření hardwarové stanice
 
-Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarové stanice. Pro dokončení následujících postupů otevřete řešení CRT, **HardwareStationSamples.sln** v části **RetailSdk\\SampleExtensions\\HardwareStation**.
+Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarové stanice. Pro dokončení následujících postupů otevřete řešení CRT, **HardwareStationSamples.sln** v části **RetailSdk\\SampleExtensions\\HardwareStation** .
 
 #### <a name="efrsample-component"></a>Komponenta EFRSample
 
@@ -291,7 +291,7 @@ Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarov�
     - **Sdílená hardwarové stanice:** Zkopírujte složku **bin** pod umístění webu hardwarové stanice IIS.
     - **Vyhrazená hardwarová stanice pro Modern POS:** Zkopírujte soubory do stanice zprostředkovatele klienta Modern POS.
 
-4. Najděte konfigurační soubor rozšíření hardwarová stanice. Název souboru je **HardwareStation.Extension.config**.
+4. Najděte konfigurační soubor rozšíření hardwarová stanice. Název souboru je **HardwareStation.Extension.config** .
 
     - **Sdílená hardwarové stanice:** Soubor se nachází pod umístěním webu hardwarové stanice IIS.
     - **Vyhrazená hardwarová stanice pro Modern POS:** Soubor se nachází ve stanici zprostředkovatele klienta Modern POS.
@@ -306,24 +306,24 @@ Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarov�
 
 Pokud chcete povolit registrační proces, postupujte pomocí následujících kroků pro nastavení Headquarters. Další informace naleznete v tématu [Nastavení fiskálního registračního procesu](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**. Na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.
-2. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory** a vyhledejte konfiguraci konektoru. Umístění souboru je **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
-3. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a vyhledejte konfiguraci poskytovatele dokumentu. Konfigurační soubor je **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml**.
-4. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Funkční profily Connector**. Vytvořte nový funkční profil konektoru. Vyberte poskytovatele dokumentu a dříve načtený konektor. Aktualizujte nastavení mapování dat podle potřeby.
-5. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily Connector**. Vytvořte nový technický profil konektoru a vyberte konektor, který jste načetli předtím. Aktualizujte nastavení připojení podle potřeby.
-6. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálního konektoru**. Vytvořte novou skupinu fiskálního konektoru pro funkční profil konektoru, který jste vytvořili předtím.
-7. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace**. Vytvořte nový procesu daňové registrace, krok procesu fiskální registrace a vyberte skupinu fiskálního konektoru, kterou jste předtím vytvořili.
-8. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**. Vyberte funkční profil, který je připojena k obchodu, kde by měl být aktivován proces registrace. Na pevné záložce **Proces fiskální registrace** vyberte proces fiskální registrace, který jste předtím vytvořili.
-9. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**. Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální tiskárna. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
-10. Spusťte plán distribuce (**Retail a Commerce \> IT Retail a Commerce \> plán distribuce**) a vyberte úlohy **1070** a **1090** k přenosu dat do databáze kanálů.
+1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu** . Na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano** .
+2. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory** a vyhledejte konfiguraci konektoru. Umístění souboru je **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml** .
+3. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a vyhledejte konfiguraci poskytovatele dokumentu. Konfigurační soubor je **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml** .
+4. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Funkční profily Connector** . Vytvořte nový funkční profil konektoru. Vyberte poskytovatele dokumentu a dříve načtený konektor. Aktualizujte nastavení mapování dat podle potřeby.
+5. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily Connector** . Vytvořte nový technický profil konektoru a vyberte konektor, který jste načetli předtím. Aktualizujte nastavení připojení podle potřeby.
+6. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálního konektoru** . Vytvořte novou skupinu fiskálního konektoru pro funkční profil konektoru, který jste vytvořili předtím.
+7. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace** . Vytvořte nový procesu daňové registrace, krok procesu fiskální registrace a vyberte skupinu fiskálního konektoru, kterou jste předtím vytvořili.
+8. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily** . Vyberte funkční profil, který je připojena k obchodu, kde by měl být aktivován proces registrace. Na pevné záložce **Proces fiskální registrace** vyberte proces fiskální registrace, který jste předtím vytvořili.
+9. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily** . Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální tiskárna. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
+10. Spusťte plán distribuce ( **Retail a Commerce \> IT Retail a Commerce \> plán distribuce** ) a vyberte úlohy **1070** a **1090** k přenosu dat do databáze kanálů.
 
 ### <a name="production-environment"></a>Produkční prostředí
 
 Předchozí postup umožňuje rozšíření, která jsou součástí ukázky integraci vzorku služby daňové registrace. Kromě toho musíte provést následující postup k vytvoření balíčků pro nasazení, které obsahují komponenty Commerce a použití těchto balíčků v produkčním prostředí.
 
-1. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets**.
+1. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets** .
 
-    - V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádky do části **composition**.
+    - V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádky do části **composition** .
 
         ``` xml 
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
@@ -331,13 +331,13 @@ Předchozí postup umožňuje rozšíření, která jsou součástí ukázky int
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
         ```
 
-    - V konfiguračním souboru **HardwareStation.Extension.config** přidejte následující řádek do oddílu **composition**.
+    - V konfiguračním souboru **HardwareStation.Extension.config** přidejte následující řádek do oddílu **composition** .
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
         ```
 
-2. Proveďte následující změny v konfiguračním souboru balíčku přizpůsobení **BuildTools\\Customization.settings**.
+2. Proveďte následující změny v konfiguračním souboru balíčku přizpůsobení **BuildTools\\Customization.settings** .
 
     - Přidejte následující řádky pro zahrnutí rozšíření CRT do nasaditelných balíčků.
 
@@ -363,7 +363,7 @@ Předchozí postup umožňuje rozšíření, která jsou součástí ukázky int
 
 Účelem rozšíření je, ab poskytovatel daňového dokumentu generoval dokumenty specifické pro službu a zpracovával odpovědi z daňové registrační služby.
 
-Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EFRSample**.
+Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EFRSample** .
 
 Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -371,7 +371,7 @@ Podrobnější informace o návrhu řešení fiskální integrace získáte v č
     
 Existuje jedna obslužná rutina požadavku **DocumentProviderEFRFiscalCZE** pro zprostředkovatele dokumentu, která slouží ke generování fiskálních dokumentů pro službu daňové registrace.
 
-Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu zprostředkovatele, zadanému v Headquarters.
+Tato rutina je zděděna z rozhraní **INamedRequestHandler** . Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu zprostředkovatele, zadanému v Headquarters.
 
 Konektor podporuje následující požadavky.
 
@@ -392,13 +392,13 @@ Tento soubor slouží k povolení nastavení pro zprostředkovatele dokumentu ke
 
 Účelem rozšíření je fiskální konektor určený ke komunikaci se službou daňové registrace.
 
-Rozšíření hardwarové stanice je **HardwareStation.Extension.EFRSample**. Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření  CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
+Rozšíření hardwarové stanice je **HardwareStation.Extension.EFRSample** . Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření  CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 
 Obslužná rutina požadavku **EFRHandler** je vstupní bod pro práci s požadavky služby daňové registrace.
 
-Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v Headquarters.
+Tato rutina je zděděna z rozhraní **INamedRequestHandler** . Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v Headquarters.
 
 Konektor podporuje následující požadavky.
 

@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a19a138cceb7db08216e1151eb92442691bc58d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 578e4b9fe5ef487e999fd0de28d7566bad21fd89
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202323"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985576"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integrace pro servisní smlouvy a projekty 
 
 [!include [banner](../includes/banner.md)]
 
 
-Při práci se servisními smlouvami a řádky servisních smluv používáte data, která byla nastavená v následujících oblastech **řízení a účtování projektu**.
+Při práci se servisními smlouvami a řádky servisních smluv používáte data, která byla nastavená v následujících oblastech **řízení a účtování projektu** .
 
 ## <a name="project-prices"></a>Projektové ceny
 
@@ -38,13 +38,13 @@ Náklady a prodejní cena transakce servisní smlouvy jsou odvozeny z nastavení
 
 ## <a name="project-validation"></a>Ověření projektu
 
-Projekty, zaměstnanci a kategorie, ze kterých lze vybírat na řádku servisní smlouvy, mohou být omezeny nastavením ověření v části **Řízení a účtování projektu**. Pomocí nastavení ověřování zaměstnanců, projektů a kategorií v nastavení ověření můžete řídit přístup. 
+Projekty, zaměstnanci a kategorie, ze kterých lze vybírat na řádku servisní smlouvy, mohou být omezeny nastavením ověření v části **Řízení a účtování projektu** . Pomocí nastavení ověřování zaměstnanců, projektů a kategorií v nastavení ověření můžete řídit přístup. 
 
 ## <a name="project-line-properties"></a>Vlastnosti řádku projektu
 
 Pro řádek servisní smlouvy se vlastnost řádku zadává automaticky.
 
-Vlastnosti řádku se vytvářejí ve formuláři **vlastnosti řádku** v **řízení a účetnictví projektu**. Vlastnost řádku, která je zadána v servisní smlouvě, je připojena k projektu, který je vybrán pro servisní smlouvu a poté dědí řádek servisní smlouvy. 
+Vlastnosti řádku se vytvářejí ve formuláři **vlastnosti řádku** v **řízení a účetnictví projektu** . Vlastnost řádku, která je zadána v servisní smlouvě, je připojena k projektu, který je vybrán pro servisní smlouvu a poté dědí řádek servisní smlouvy. 
 
 ## <a name="default-offset-accounts"></a>Výchozí protiúčty
 
@@ -52,28 +52,28 @@ Zadáte-li transakci nákladů, vybere se pro tuto transakci automaticky výchoz
 
 ## <a name="project-categories"></a>Kategorie projektů
 
-Kategorie, které jsou dostupné pro řádky servisní smlouvy, se nastavují ve formuláři **Kategorie projektu** v části **Řízení a účtování projektu**. 
+Kategorie, které jsou dostupné pro řádky servisní smlouvy, se nastavují ve formuláři **Kategorie projektu** v části **Řízení a účtování projektu** . 
 
 > [!NOTE]
 > <P>Lze vybrat kategorie, které mají zaškrtnuté políčko <STRONG>Aktivní v denících</STRONG> na kartě <STRONG>Projekt</STRONG> ve formuláři <STRONG>Kategorie projektu</STRONG>. Pokud je však zaškrtnuté políčko <STRONG>Neaktivní kategorie</STRONG> na kartě <STRONG>Deníky</STRONG> ve formuláři <STRONG>Parametry řízení projektu a účetnictví</STRONG>, lze vybrat všechny kategorie.</P>
 
 ## <a name="project-parameters"></a>Parametry projektu
 
-Pokud je zaškrtnuté políčko **Propuštění pracovníci** na kartě **Deníky** v okně **Parametry řízení a účetnictví projektu**, můžete vybrat neaktivní zaměstnance a aktivní zaměstnance ve formulářích **servisní smlouvy** a **servisní zakázky**.
+Pokud je zaškrtnuté políčko **Propuštění pracovníci** na kartě **Deníky** v okně **Parametry řízení a účetnictví projektu** , můžete vybrat neaktivní zaměstnance a aktivní zaměstnance ve formulářích **servisní smlouvy** a **servisní zakázky** .
 
 Dále můžete zpřístupnit pole **Počáteční čas** a **Koncový čas** na kartě **Projekt** ve formuláři **Servisní zakázky** a umožnit tak zadávání času zahájení a ukončení v řádcích servisní zakázky.
 
 ## <a name="enable-the-starting-and-ending-time-feature-for-service-orders"></a>Povolení zadávání času zahájení a ukončení v servisních zakázkách
 
-1.  Klikněte na **Řízení a účetnictví projektů** \> **Nastavení** \> **Parametry modulu Řízení a účetnictví projektu**.
+1.  Klikněte na **Řízení a účetnictví projektů** \> **Nastavení** \> **Parametry modulu Řízení a účetnictví projektu** .
 
-2.  Klepněte na tlačítko **deníky** a zaškrtněte políčko **zobrazit časy zahájení a ukončení**.
+2.  Klepněte na tlačítko **deníky** a zaškrtněte políčko **zobrazit časy zahájení a ukončení** .
 
-3.  Klikněte na uzel **Řízení a účtování projektů** \> **Nastavení** \> **Deníky** \> **Názvy deníku**.
+3.  Klikněte na uzel **Řízení a účtování projektů** \> **Nastavení** \> **Deníky** \> **Názvy deníku** .
 
 4.  Vyberte název deníku připojeného k servisní zakázce.
 
-5.  Klepněte na kartu **Obecné** a zaškrtněte políčko **zobrazit časy zahájení a ukončení**.
+5.  Klepněte na kartu **Obecné** a zaškrtněte políčko **zobrazit časy zahájení a ukončení** .
 
 
 > [!NOTE]

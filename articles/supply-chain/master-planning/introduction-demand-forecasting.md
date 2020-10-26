@@ -16,15 +16,15 @@ ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
-ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
+ms.openlocfilehash: 62ee31b7931c6e7d8f54c1efb556a2ba01eb7746
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3550033"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981443"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -47,7 +47,7 @@ Zde jsou uvedeny některé z hlavních charakteristik vytváření prognózy pop
 ## <a name="major-themes-in-demand-forecasting"></a>Hlavní motivy v prognóze poptávky
 Do prognózy poptávky jsou implementovány tři hlavní motivy:
 
--   **Modulární struktura** – prognóza poptávky je modulární a lze ji snadno konfigurovat. Funkci lze zapnout nebo vypnout změnou konfiguračního klíče v nabídce **Obchod** &gt; **Prognóza zásob** &gt; **Prognóza poptávky**.
+-   **Modulární struktura** – prognóza poptávky je modulární a lze ji snadno konfigurovat. Funkci lze zapnout nebo vypnout změnou konfiguračního klíče v nabídce **Obchod** &gt; **Prognóza zásob** &gt; **Prognóza poptávky** .
 -   **Opakované použití Microsoft stack** - Strojové učení, které je nyní součástí Microsoft Cortana Analytics Suite, umožňuje rychle a snadno vytvářet experimenty prediktivní analýzy, jako jsou pokusy o odhad poptávky, pomocí programovacích jazyků algoritmů R nebo Python a jednoduché rozhraní přetažení.
     -   Pokusy prognózy poptávky můžete stáhnout, změnit je tak, aby odpovídaly obchodním požadavkům, publikovat je jako webové služby pro platformu Azure, a použít je pro generování prognóz poptávky. Pokud jste si zakoupili předplatné aplikace Supply Chain Management pro plánovač výroby na úrovni podnikového uživatele, jsou experimenty dostupné ke stažení.
     -   Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Proto nejsou pokusy z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) nejsou tak přímočaré jako pokusy prognózy poptávky aplikace Finance and Operations. Je třeba upravit kód pokusů tak, aby používaly programovací rozhraní (API) aplikace Finance and Operations.
@@ -75,9 +75,9 @@ Vytváření prognózy poptávky je nástroj, který usnadňuje odběratelům ve
 
 Měrná jednotka (UOM) na konverzi varianty není plně podporována při generování prognózy poptávky, pokud je UOM inventáře odlišná od UOM prognózy poptávky.
 
-Generování prognózy (**Zásoby UOM > Předpověď poptávky UOM**) používá konverzi UOM produktu. Při načítání historických dat pro generování prognózy poptávky bude vždy použita konverze UOM na úrovni produktu při převodu z inventáře UOM na UOM prognózy poptávky, i když jsou na úrovni varianty definovány konverze.
+Generování prognózy ( **Zásoby UOM > Předpověď poptávky UOM** ) používá konverzi UOM produktu. Při načítání historických dat pro generování prognózy poptávky bude vždy použita konverze UOM na úrovni produktu při převodu z inventáře UOM na UOM prognózy poptávky, i když jsou na úrovni varianty definovány konverze.
 
-První část schvalování prognózy (**Prognóza poptávky UOM > UOM inventáře**) používá konverzi UOM produktu. Druhá část schvalování prognózy (**UOM inventáře > UOM prodeje**) používá variantu konverze UOM. Když je vygenerovaná prognóza poptávky autorizovaná, převede se na UOM inventury z UOM prognózy poptávky pomocí konverze UOM na úrovni produktu. Současně bude převod mezi jednotkou inventáře a prodejním UOM respektovat převody definované na úrovni varianty.
+První část schvalování prognózy ( **Prognóza poptávky UOM > UOM inventáře** ) používá konverzi UOM produktu. Druhá část schvalování prognózy ( **UOM inventáře > UOM prodeje** ) používá variantu konverze UOM. Když je vygenerovaná prognóza poptávky autorizovaná, převede se na UOM inventury z UOM prognózy poptávky pomocí konverze UOM na úrovni produktu. Současně bude převod mezi jednotkou inventáře a prodejním UOM respektovat převody definované na úrovni varianty.
 
 Upozorňujeme, že UOM prognózy poptávky nemusí mít žádný konkrétní význam. Lze ji definovat jako „Jednotka prognózy poptávky“. U každého z produktů můžete pomocí převodu zásob UOM definovat převod 1:1.
 

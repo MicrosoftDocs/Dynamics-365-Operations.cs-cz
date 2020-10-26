@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2864b481c67c078df73436d752069a6b6c78640
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206028"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987298"
 ---
 # <a name="service-tasks-overview"></a>Přehled servisních úloh
 
@@ -44,7 +44,7 @@ Pokud na základě servisní smlouvy generujete servisní zakázky, můžete pou
 
 ## <a name="create-a-service-task"></a>Vytvoření servisní úlohy
 
-1. Klikněte **Správa servisu** \> **Nastavení** \> **Servisní úlohy**.
+1. Klikněte **Správa servisu** \> **Nastavení** \> **Servisní úlohy** .
 2. Vytvořit nový řádek.
 3. Zadejte ID servisu a popis.
 
@@ -86,7 +86,7 @@ Při automatickém vytváření servisních zakázek můžete použít servisní
 
 **Seskupení podle servisní úlohy**
 
-1. Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
-2. Na kartě **Nastavení** zvolte **Podle servisní úlohy** v poli **Kombinace servisních zakázek**.
+1. Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
+2. Na kartě **Nastavení** zvolte **Podle servisní úlohy** v poli **Kombinace servisních zakázek** .
 
 

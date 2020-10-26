@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af6ddc86bb6313387aa9c6ccc347d2a1c5fac50a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: fd1ed875e5c6e3f8ada3b13ea8cc05f98526691d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154475"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977736"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Přístupová práva kontrolorů objektu nákladů
 
@@ -41,9 +41,9 @@ Existují čtyři jedinečné role v nákladovém účetnictví.
 | Úředník na pozici nákladového účetního   | Operations   |
 | Kontrolor objektu nákladů  | Členové týmu |
 
-Toto téma vysvětluje, jak přiřadit manažerovi roli **Kontrolor objektu nákladů**.
+Toto téma vysvětluje, jak přiřadit manažerovi roli **Kontrolor objektu nákladů** .
 
-Když je manažerovi přiřazena role **Kontrolor objektu nákladů**, může manažer provádět následující úkoly:
+Když je manažerovi přiřazena role **Kontrolor objektu nákladů** , může manažer provádět následující úkoly:
 
 - Přistupovat k pracovnímu prostoru **Řízení nákladů** (v klientovi).
 
@@ -80,7 +80,7 @@ Můžete použít pevnou záložku **Uživatelé** v návrháři hierarchie, aby
 > [!NOTE]
 > Nákladoví účetní musí být přiřazeni do hierarchie nejvyšší úrovně, aby mohli nahlížet do všech položek nákladového účetnictví.
 
-Než bude možné použít hierarchii přístupového seznamu a jeho bezpečnostní nastavení, musí být možnost **Povolit přístup k zobrazení pro členy dimenze objektu nákladů** nastavena na **Ano** na kartě **Obecné** na stránce **Parametry nákladového účetnictví** (**Nákladové účetnictví** > **Nastavení** > **Parametry**).
+Než bude možné použít hierarchii přístupového seznamu a jeho bezpečnostní nastavení, musí být možnost **Povolit přístup k zobrazení pro členy dimenze objektu nákladů** nastavena na **Ano** na kartě **Obecné** na stránce **Parametry nákladového účetnictví** ( **Nákladové účetnictví** > **Nastavení** > **Parametry** ).
 
 Nastavení pro hierarchii přístupového seznamu se používají ke kontrole dat, zobrazených v následujících oblastech:
 
@@ -99,7 +99,7 @@ Nastavení pro hierarchii přístupového seznamu se používají ke kontrole da
 
 > [!IMPORTANT]
 > - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - Toto téma popisuje požadavky, které musí být splněny před použitím pracovního prostoru **Řízení nákladů**.
+> - Toto téma popisuje požadavky, které musí být splněny před použitím pracovního prostoru **Řízení nákladů** .
 
 Další zdroje
 

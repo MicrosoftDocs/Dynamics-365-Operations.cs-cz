@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d4533211e7f64635c9523c177aa569b6a2f8a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 52a4082f6e201bcd2820f3d11a61929d8f906840
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202944"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977017"
 ---
 # <a name="change-the-service-order-stage"></a>Změna fáze servisní zakázky 
 
@@ -32,11 +32,11 @@ ms.locfileid: "3202944"
 
 Tento postup slouží k přesunutí servisní zakázky na další fázi v servisním workflowu nebo ji vrátit zpět do předchozí fáze.
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
-2.  Vyberte servisní zakázku a potom klepněte na kartu **Expedice**.
+2.  Vyberte servisní zakázku a potom klepněte na kartu **Expedice** .
 
-3.  V **podokně akcí** klepněte na položku **další fáze** nebo **předchozí fáze**.
+3.  V **podokně akcí** klepněte na položku **další fáze** nebo **předchozí fáze** .
 
 4.  Ve formuláři **změnit fázi servisu** vyberte do požadované fáze.
 

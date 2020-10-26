@@ -16,15 +16,15 @@ ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: cc6ad48ef80aa01739129b59cc1133d0a1930f24
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759465"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976468"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
@@ -80,7 +80,7 @@ Ve finančním účetnictví se některé náklady, jako je například elektři
 
 ### <a name="step-1-process-the-cost-behavior-calculation"></a>Krok 1: Zpracování výpočtu chování nákladů
 
-Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované**. Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady**.
+Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované** . Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady** .
 
 #### <a name="define-the-cost-behavior-rule"></a>Definice pravidel chování nákladů
 

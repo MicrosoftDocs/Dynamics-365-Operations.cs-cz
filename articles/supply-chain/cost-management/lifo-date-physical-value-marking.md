@@ -16,15 +16,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f11870d6271fa3635b7be9dabb3999e78c0e8b6c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1fed3de8741b375cf4992578db3e57d6e5a35a93
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201679"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980623"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>Datum LIFO s fyzickou hodnotou a označením
 
@@ -39,7 +39,7 @@ Pokud používáte skladový model data LIFO, doporučujeme provádět periodick
 Následující příklady ilustrují dopad použití metody Datum LIFO ve třech různých konfiguracích:
 
 -   Metoda Datum LIFO bez použití volby **Zahrnout fyzickou hodnotu**
--   Metoda Datum LIFO s použitím volby**Zahrnout fyzickou hodnotu**
+-   Metoda Datum LIFO s použitím volby **Zahrnout fyzickou hodnotu**
 -   Metoda Datum LIFO s označením
 
 ## <a name="lifo-date-without-the-include-physical-value-option"></a>Metoda Datum LIFO bez použití volby Zahrnout fyzickou hodnotu
@@ -58,7 +58,7 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. 
 
-Následující obrázek ukazuje účinek skladového modelu Datum LIFO, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithoutincludephysicalvalue.gif) 
+Následující obrázek ukazuje účinek skladového modelu Datum LIFO, když není použita možnost **Zahrnovat fyzickou hodnotu** . ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -69,12 +69,12 @@ Následující obrázek ukazuje účinek skladového modelu Datum LIFO, když ne
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>Metoda Datum LIFO s použitím volby Zahrnout fyzickou hodnotu
-Můžete vybrat políčko **Zahrnout fyzickou hodnotu** pro položku na stránce **Skupiny modelů zboží**. V tomto případě systém použije pro výpočet průběžné průměrné ceny použity transakce fyzického i finančního příjmu. V případě potřeby budou v systému také provedeny úpravy fyzicky aktualizované transakce výdeje. Pokud je zaškrtnutí políčka **Zahrnovat fyzickou hodnotu** odstraněno, budou při uzávěrce skladu s použitím skladového modelu Datum LIFO provedena vyrovnání pouze pro finančně aktualizované transakce. 
+Můžete vybrat políčko **Zahrnout fyzickou hodnotu** pro položku na stránce **Skupiny modelů zboží** . V tomto případě systém použije pro výpočet průběžné průměrné ceny použity transakce fyzického i finančního příjmu. V případě potřeby budou v systému také provedeny úpravy fyzicky aktualizované transakce výdeje. Pokud je zaškrtnutí políčka **Zahrnovat fyzickou hodnotu** odstraněno, budou při uzávěrce skladu s použitím skladového modelu Datum LIFO provedena vyrovnání pouze pro finančně aktualizované transakce. 
 
 V tomto příkladu je skupina modelů položek označena, aby obsahovala fyzickou hodnotu. 
 
@@ -93,7 +93,7 @@ Následující obrázek znázorňuje tyto transakce:
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 20,00 USD. 
 
-Následující obrázek ukazuje účinek skladového modelu LIFO, když je použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithincludephysicalvalue.gif) 
+Následující obrázek ukazuje účinek skladového modelu LIFO, když je použita možnost **Zahrnovat fyzickou hodnotu** . ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -104,8 +104,8 @@ Následující obrázek ukazuje účinek skladového modelu LIFO, když je použ
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="lifo-date-with-marking"></a>Metoda Datum LIFO s označením
@@ -119,7 +119,7 @@ I před provedením uzávěrky skladu lze tyto dvě transakce vzájemně propoji
 
 Například příjmová transakce je propojena s transakcí výdeje. V tomto případě metoda ocenění definovaná pro skupinu modelů položky nebude brána v úvahu. Systém vyrovná tyto transakce navzájem. 
 
-Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky**. Můžete zobrazit otevřené transakce příjmu na stránce **Označení**. 
+Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky** . Můžete zobrazit otevřené transakce příjmu na stránce **Označení** . 
 
 Po zaúčtování transakce je možné také označit transakci výdeje s příjmem. Můžete spárovat nebo označit transakci výdeje pro transakci otevřených příjmů u naskladněné položky z deníku úpravy zaúčtované inventury. 
 
@@ -150,8 +150,8 @@ Následující obrázek ukazuje účinek skladového modelu LIFO, když je použ
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 

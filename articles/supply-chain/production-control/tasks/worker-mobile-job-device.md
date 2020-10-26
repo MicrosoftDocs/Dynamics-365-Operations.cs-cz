@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1086a88c341b95d6af03adc81c4e3e5d76adc69
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ada42a98a8a87e377f939d063b17f9904f6b3408
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210196"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978227"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Konfigurace pracovníka s použitím mobilního pracovního zařízení
 
@@ -34,18 +34,18 @@ Toto téma popisuje způsob přiřazení správných rolí uživatelskému účt
 
 V tomto příkladu ověřte, zda je uživateli "SHANNON" přiřazena role operátora stroje před konfigurací účtu pracovníka.
 
-1. Přejděte na **Navigační podokno > Moduly > Správa systému > Uživatelé > Uživatelé**.
+1. Přejděte na **Navigační podokno > Moduly > Správa systému > Uživatelé > Uživatelé** .
 2. Vyhledejte uživatele v rychlém filtru. V tomto příkladu zadejte `shannon`.
 3. Vyberte odkaz ve sloupci **ID uživatele** uživatelského účtu, který se zobrazí.
-4. Ve stromovém zobrazení **Uživatelské role** vyberte **Role > Operátor stroje**.
+4. Ve stromovém zobrazení **Uživatelské role** vyberte **Role > Operátor stroje** .
 5. Zavřete **Podrobnosti uživatele** a stránky **uživatelů** a vraťte se na domovskou stránku.
 
 ## <a name="configure-worker-account"></a>Nastavte konfiguraci účtu pracovníka
-1. Přejděte na **Navigační podokno > Moduly > Lidské zdroje > Pracovníci > Pracovníci**.
+1. Přejděte na **Navigační podokno > Moduly > Lidské zdroje > Pracovníci > Pracovníci** .
 2. Vyhledejte uživatele v rychlém filtru. V tomto příkladu zadejte `shannon`.
 3. Vyberte odkaz ve sloupci **Název** uživatelského účtu, který se zobrazí.
-4. Vyberte záložku **Registrace času**.
-5. Vyberte **Aktivovat na terminálech registrace**.
+4. Vyberte záložku **Registrace času** .
+5. Vyberte **Aktivovat na terminálech registrace** .
 6. V následujících polích zadejte hodnoty:  
 
     - **Skupina výpočtu**  
@@ -54,17 +54,17 @@ V tomto příkladu ověřte, zda je uživateli "SHANNON" přiřazena role operá
     - **Standardní profil**  
     - **Skupina profilu**  
 
-7. Vyberte **OK**.
+7. Vyberte **OK** .
 8. Vyberte tlačítko **Upravit** zadejte číslo znaku pro novou registraci pracovníka. V poli **ID znaku** zadejte hodnotu.
-9. Zvolte **Uložit**.
-10. Zavřete stránky **Podrobnosti o pracovníkovi** a **Pracovníci**.
+9. Zvolte **Uložit** .
+10. Zavřete stránky **Podrobnosti o pracovníkovi** a **Pracovníci** .
 
 ## <a name="assign-worker-to-device-group"></a>Přiřaďte pracovníka ke skupině zařízení
-1. Přejděte do nabídky **Řízení výroby > Nastavení > Provádění výroby > Konfigurovat úkolový lístek pro zařízení**.
-2. Vyberte **přidat**.
-3. Vyberte požadovaného pracovníka v seznamu. V tomto příkladu vyberte **SHANNON**.
-4. Vyberte **OK**.
-5. Vyberte možnost **Upravit**.
+1. Přejděte do nabídky **Řízení výroby > Nastavení > Provádění výroby > Konfigurovat úkolový lístek pro zařízení** .
+2. Vyberte **přidat** .
+3. Vyberte požadovaného pracovníka v seznamu. V tomto příkladu vyberte **SHANNON** .
+4. Vyberte **OK** .
+5. Vyberte možnost **Upravit** .
 6. V poli **Výrobní jednotka** lze nastavit výchozí filtr pro pracovníka. Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení. Zadejte požadovanou hodnotu.
 7. Zavřete stránku.
 

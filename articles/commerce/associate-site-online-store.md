@@ -1,7 +1,7 @@
 ---
 title: Přidružení webu elektronického obchodu k online kanálu
 description: V tomto tématu je vysvětleno, jak svázat váš web Microsoft Dynamics 365 Commerce s jedním nebo více online obchody.
-author: stuharg
+author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
-ms.author: bicyclingfool
+ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af63fc8e32d82cff9e46510da9b30110ac8f0f2c
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: b7c393ec2f716c7057a77d0f3c3c1a9f79ee8c68
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533360"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975361"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Přidružení webu elektronického obchodu k online kanálu
 
@@ -34,9 +34,9 @@ V tomto tématu je vysvětleno, jak svázat váš web Microsoft Dynamics 365 Co
 
 Po zřízení elektronického obchodování pomocí portálu Microsoft Dynamics Lifecycle Services (LCS) jste připraveni na vytvoření prvního webu elektronického obchodování. V rámci počátečního vytváření webu přidružíte web k online obchodu, který byl dříve vytvořen. Tento krok sváže web s online kanálem a umožní webu zobrazit hierarchii navigace, produkty, kategorie, ceny, možnosti expedice a vše, co jste definovali v online obchodě.
 
-Chcete-li vytvořit nový web a přidružit k němu online obchod, v poli LCS vyberte odkaz na vývojové prostředí webu. Poté na stránce vývojového prostředí webu vyberte možnost **Nový web**. V dialogovém okně **Nový web** je nutné zadat určité základní informace o vašem webu. Úplné vysvětlení informací, které je třeba zadat, naleznete v tématu [Vytvoření nového webu elektronického obchodu](create-ecommerce-site.md).
+Chcete-li vytvořit nový web a přidružit k němu online obchod, v poli LCS vyberte odkaz na vývojové prostředí webu. Poté na stránce vývojového prostředí webu vyberte možnost **Nový web** . V dialogovém okně **Nový web** je nutné zadat určité základní informace o vašem webu. Úplné vysvětlení informací, které je třeba zadat, naleznete v tématu [Vytvoření nového webu elektronického obchodu](create-ecommerce-site.md).
 
-Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty**. Měli byste vidět sortiment produktů, které byly přiděleny online obchodu. Chcete-li přistupovat k produktům podle kategorie, můžete použít také rozevírací pole v levé horní části stránky.
+Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty** . Měli byste vidět sortiment produktů, které byly přiděleny online obchodu. Chcete-li přistupovat k produktům podle kategorie, můžete použít také rozevírací pole v levé horní části stránky.
 
 ## <a name="additional-resources"></a>Další zdroje
 

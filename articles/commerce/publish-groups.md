@@ -3,7 +3,7 @@ title: Práce se skupinami publikování
 description: Toto téma popisuje funkci skupin publikování v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 374a6c7dd33440903babbc8232f580ac2b68df82
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003158"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973949"
 ---
 # <a name="work-with-publish-groups"></a>Práce se skupinami publikování
 
@@ -54,29 +54,29 @@ Funkce skupin publikování je volitelná a musí být pro váš web zapnuta.
 Chcete-li zapnout funkci skupin publikování pro web v nástrojích pro vytváření obchodních dokumentů, postupujte takto.
 
 1. V levém navigačním podokně vyberte **Nastavení webu** a rozbalte je.
-1. V části **nastavení webu** vyberte **Funkce**.
-1. Nastavte možnost **Skupiny publikování** na **Zapnuto**.
+1. V části **nastavení webu** vyberte **Funkce** .
+1. Nastavte možnost **Skupiny publikování** na **Zapnuto** .
 
 ## <a name="create-a-publish-group"></a>Vytvoření skupiny publikování
 
 Chcete-li vytvořit skupinu publikování pro web ve vývojových nástrojech Commerce, postupujte takto.
 
-1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování**.
-1. Na horním příkazovém řádku vyberte možnost **Nový**.
-1. V dialogovém okně **Vytvořit skupinu publikování** v části **název skupiny publikování** zadejte popisný název. Pak vyberte **OK**.
+1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování** .
+1. Na horním příkazovém řádku vyberte možnost **Nový** .
+1. V dialogovém okně **Vytvořit skupinu publikování** v části **název skupiny publikování** zadejte popisný název. Pak vyberte **OK** .
 
 ## <a name="set-the-publish-group-authoring-context"></a>Nastavit kontext vytváření skupin publikování
 
-V Commerce je výchozím vývojovým kontextem kontext živého webu. Aktivní kontext pro vytváření webů je výchozí zobrazení, ve kterém můžete zobrazit a provádět změny přímo na webu bez použití skupiny publikování. Představuje nejnovější přímé aktualizace publikované verze webu. Pokud ovládací prvek kontextu v **Skupiny publikování** v levém navigačním podokně zobrazuje název **Aktivní web**, pracujete v kontextu vytváření živého webu. **Aktivní web** je výchozí název kontextového ovládacího prvku. V opačném případě zobrazí ovládací prvek kontextu název skupiny publikování.
+V Commerce je výchozím vývojovým kontextem kontext živého webu. Aktivní kontext pro vytváření webů je výchozí zobrazení, ve kterém můžete zobrazit a provádět změny přímo na webu bez použití skupiny publikování. Představuje nejnovější přímé aktualizace publikované verze webu. Pokud ovládací prvek kontextu v **Skupiny publikování** v levém navigačním podokně zobrazuje název **Aktivní web** , pracujete v kontextu vytváření živého webu. **Aktivní web** je výchozí název kontextového ovládacího prvku. V opačném případě zobrazí ovládací prvek kontextu název skupiny publikování.
 
 Chcete-li pracovat ve skupině publikování, musíte pro ni přepnout na kontext vytváření. Chcete-li nastavit kontext skupiny publikování, postupujte podle jednoho z následujících kroků.
 
 - V levém navigačním podokně vyberte kontextový ovládací prvek přímo v části **Skupiny publikování** a pak vyberte název skupiny publikování v seznamu možností, které se zobrazí. Ovládací prvek kontextu je přejmenován a zobrazí název skupiny publikování.
-- V levém navigačním podokně vyberte položku **Skupiny publikování**a potom v části **Skupiny publikování** vyberte název skupiny publikování. Ovládací prvek kontextu je přejmenován a zobrazí název skupiny publikování.
+- V levém navigačním podokně vyberte položku **Skupiny publikování** a potom v části **Skupiny publikování** vyberte název skupiny publikování. Ovládací prvek kontextu je přejmenován a zobrazí název skupiny publikování.
 
 Po nastavení kontextu vytváření skupiny publikování pracujete v tomto kontextu skupiny publikování při zobrazení náhledu a úpravě obsahu webu.
 
-Chcete-li se vrátit k výchozímu kontextu pro vytváření živého webu, vyberte ovládací prvek kontextu a pak vyberte **Aktivní web**.
+Chcete-li se vrátit k výchozímu kontextu pro vytváření živého webu, vyberte ovládací prvek kontextu a pak vyberte **Aktivní web** .
 
 ## <a name="add-pages-or-other-items-to-a-publish-group"></a>Přidání stránek nebo jiných položek do skupiny publikování
 
@@ -84,10 +84,10 @@ Jakmile vyberete kontext pro vytváření skupin publikování a ovládací prve
 
 Chcete-li zkopírovat existující stránky do skupiny publikování, postupujte následovně.
 
-1. Vyberte vývojový kontext, ze kterého chcete kopírovat, a pak v levém navigačním podokně vyberte **Stránky**.
+1. Vyberte vývojový kontext, ze kterého chcete kopírovat, a pak v levém navigačním podokně vyberte **Stránky** .
 1. Vyberte stránku, kterou chcete přidat do skupiny publikování.
-1. Na panelu příkazů vyberte možnost **Kopírovat do skupiny publikování**.
-1. V dialogovém okně **Vybrat skupinu publikování** vyberte skupinu publikování, do které chcete stránku přidat, a pak vyberte **OK**.
+1. Na panelu příkazů vyberte možnost **Kopírovat do skupiny publikování** .
+1. V dialogovém okně **Vybrat skupinu publikování** vyberte skupinu publikování, do které chcete stránku přidat, a pak vyberte **OK** .
 
 Stejné základní kroky můžete použít k vytvoření přizpůsobených stránek produktu, adres URL, šablon, rozložení, fragmentů a datových zdrojů knihovny médií nebo k přidání existujících položek těchto typů do skupiny publikování.
 
@@ -97,9 +97,9 @@ Chcete-li zajistit, aby všechny závislosti v obsahu skupiny publikování byly
 
 Chcete-li ověřit skupinu publikování před jejím naplánovali, postupujte takto:
 
-1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování**.
+1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování** .
 1. Vyberte skupinu publikování k ověření.
-1. Na příkazovém řádku vyberte možnost **Ověřit**.
+1. Na příkazovém řádku vyberte možnost **Ověřit** .
 
 Ověřování je spuštěno u veškerého obsahu ve skupině publikování. Všechny problémy, které zabrání úspěšnému přijetí akce publikování, jsou zobrazeny v oznamovací oblasti, která se zobrazí v pravém horním rohu okna.
 
@@ -110,12 +110,12 @@ Ověřování je spuštěno u veškerého obsahu ve skupině publikování. Vše
 
 Chcete-li naplánovat, aby skupina publikování na vašem webu přešla do ostrého provozu, postupujte takto.
 
-1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování**.
+1. V levém navigačním podokně nalevo vyberte položku **Skupiny publikování** .
 1. V sekci **Skupiny publikování** vyberte skupinu publikování, kterou chcete naplánovat.
-1. Na příkazovém řádku vyberte možnost **Upravit plán**. Zobrazí se dialogové okno **Upravit plán**.
-1. Vyberte datum a čas, kdy má skupina publikování přejít na ostrý provoz, a pak klepněte na **OK**.
+1. Na příkazovém řádku vyberte možnost **Upravit plán** . Zobrazí se dialogové okno **Upravit plán** .
+1. Vyberte datum a čas, kdy má skupina publikování přejít na ostrý provoz, a pak klepněte na **OK** .
 
-Chcete-li zrušit naplánování skupiny publikování, postupujte podle stejných kroků, ale vyberte **Zrušit plánování skupiny publikování** v dialogovém okně **Upravit plán**.
+Chcete-li zrušit naplánování skupiny publikování, postupujte podle stejných kroků, ale vyberte **Zrušit plánování skupiny publikování** v dialogovém okně **Upravit plán** .
 
 > [!NOTE]
 > Velké skupiny publikování mohou trvat až dvě minuty, než budou publikovány. Uvědomte si, že akce publikování není okamžitá a že menší skupiny publikování budou publikovány rychleji.
@@ -145,6 +145,8 @@ Funkce skupin publikování v současné době podporuje pouze obsah webu. Spole
 [Glosář modelu stránky](page-elements-overview.md)
 
 [Stavy dokumentu a životního cyklu](document-states-overview.md)
+
+[Povolení a používání sdílení napříč kanály](cross-channel-sharing.md)
 
 [Práce s moduly](work-with-modules.md)
 

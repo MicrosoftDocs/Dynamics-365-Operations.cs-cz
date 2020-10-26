@@ -3,7 +3,7 @@ title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828907"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3930010"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější information. Navíc, mohou lidem posílat informace o nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
+Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžou lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
 ![Robot aplikace pracovního volna Human Resources Teams](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -50,17 +50,17 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 >[!NOTE]
 >Oznámení dostanou pouze uživatelé, kteří jsou přihlášeni k Teams a používají aplikaci Human Resources Teams.
 
-1. V modulu Human Resources vyberte **Správa systému**.
+1. V modulu Human Resources vyberte **Správa systému** .
 
-2. Vybrerte **Odkazy**.
+2. Vybrerte **Odkazy** .
 
-3. V části **Nastavení** vyberte **Systémové parametry**.
+3. V části **Nastavení** vyberte **Systémové parametry** .
 
-4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**.
+4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano** .
 
    ![Povolení oznámení aplikace Teams v systémových parametrech](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
-5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano**.
+5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano** .
 
    ![Povolení oznámení Teams pro všechny uživatele](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
@@ -68,19 +68,19 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 
 Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznámení zapnout nebo vypnout pro jednotlivé uživatele.
 
-1. V modulu Human Resources vyberte **Správa systému**.
+1. V modulu Human Resources vyberte **Správa systému** .
 
-2. Vybrerte **Odkazy**.
+2. Vybrerte **Odkazy** .
 
-3. V části **Uživatelé** vyberte **Možnosti uživatele**.
+3. V části **Uživatelé** vyberte **Možnosti uživatele** .
 
-4. Vyberte kartu **Pracovní postup**.
+4. Vyberte kartu **Pracovní postup** .
 
-5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**, čímž povolíte oznámení pro uživatele nebo **Ne**, čímž deaktivujete oznámení pro uživatele.
+5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano** , čímž povolíte oznámení pro uživatele nebo **Ne** , čímž deaktivujete oznámení pro uživatele.
 
    ![Povolte oznámení aplikace Teams na kartě Možnosti uživatele na kartě Pracovní postup.](./media/hr-admin-teams-leave-app-notifications.png)
 
-6. Zvolte **Uložit**.
+6. Zvolte **Uložit** .
 
 ## <a name="known-issues"></a>Známé problémy
 
@@ -88,8 +88,24 @@ Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznám
 | --- | --- |
 | Horizontální posouvání nefunguje na Android telefonech | Horizontální posouvání není problém na zařízeních iOS nebo počítačích. Pracujeme na opravě pro Android. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
-| Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
+| Nelze zrušit požadavek ve stavu **Probíhá kontrola** . | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
 | Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
+
+## <a name="troubleshooting"></a>Řešení potíží
+
+Pokud má uživatel potíže s přihlášením nebo používáním aplikace Human Resources Teams, zkuste problémy vyřešit podle těchto pokynů. Pokud problémy přetrvávají i po pokusu o vyřešení, obraťte se na podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nelze se přihlásit do aplikace Human Resources v Teams
+
+Pokud vás uživatel kontaktuje, protože se nemůže přihlásit do aplikace, ověřte, zda má přidružený záznam zaměstnance v Human Resources.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Chyba při schvalování žádostí o dovolenou v aplikaci Human Resources v Teams
+
+Pokud se uživateli při pokusu o schválení žádostí o dovolenou v aplikaci Teams zobrazí chyba, proveďte v rámci řešení potíží následující kroky:
+
+1. Ověřte, že jeho účet Teams je stejný, jaký používá pro přístup k Human Resources.
+
+2. Ověřte, zda je platným schvalovatelem požadavku, a to kontrolou nastavení pracovního postupu pro schválení dovolené. Další informace o pracovních postupech žádostí o dovolenou najdete v tématu [Vytvoření pracovního postupu žádosti o dovolenou](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 

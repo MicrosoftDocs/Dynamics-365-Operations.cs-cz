@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: hhainesms
+ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
-ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
+ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3694915"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975985"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vypočítat dostupnost zásob pro maloobchodní kanály
 
@@ -54,19 +54,19 @@ Než použijete dvě rozhraní API, která byla zmíněna výše, musíte povoli
 
 Předtím, než může rozhraní API vypočítat nejlepší odhad dostupnosti zásob pro určitou položku, musí být zpracován pravidelný snímek dostupnosti zásob ze služby Commerce Headquarters a odeslán do databáze kanálů, kterou používá jednotka elektronického obchodu Commerce Scale Unit. Snímek představuje informace, které má program Commerce Headquarters k dispozici na skladě pro určitou kombinaci produktu nebo varianty produktu a skladu. Může zahrnovat úpravy zásob nebo pohyby, které jsou způsobeny skladovými příjmy, nebo dodávkami či jinými procesy prováděnými v rámci služby Commerce Headquarters a že kanál elektronického obchodu obsahuje informace pouze kvůli synchronizaci.
 
-Ve snímku databáze, který vytvořila úloha **Dostupnost produktu**, budou v době pořízení snímku vypočteny pouze skladové transakce, které byly zpracovány a zaúčtovány do služby Commerce Headquarters. Pokud byly zásoby prodávány pro produkt ve skladovém skladu prostřednictvím hotovostního a mezipodnikového prodeje odběratele v aplikaci POS, nebude služba Commerce Headquarters okamžitě obsahovat informace o související transakci výdeje zásob pro daný prodej. Bude obsahovat informace o zásobách, které jsou prodány pro tyto typy prodeje obchodu pouze poté, co úloha P nahraje související transakci z databáze kanálů obchodu do služby Commerce Headquarters a související prodejní objednávka je vytvořena prostřednictvím výpisu. zaúčtování nebo dávkové zpracování trickleho informačního kanálu. Proces vytvoření objednávky v modulu Commerce Headquarters vytvoří související skladové transakce. U kanálů s kanály elektronického obchodování obsahuje Commerce Headquarters informace o skladových transakcích pouze po odeslání transakcí do služby Commerce Headquarters prostřednictvím úlohy P a dokončení procesu synchronizace objednávky. Proto je důležité, abyste si vědomi, že hodnota snímku zásob, která je k dispozici v úloze **Dostupnost produktu**, nemusí být 100% přesná v reálném čase, protože se jedná o stálé zpracování prodeje, ke kterému dochází v rámci distribuovaných serverů.
+Ve snímku databáze, který vytvořila úloha **Dostupnost produktu** , budou v době pořízení snímku vypočteny pouze skladové transakce, které byly zpracovány a zaúčtovány do služby Commerce Headquarters. Pokud byly zásoby prodávány pro produkt ve skladovém skladu prostřednictvím hotovostního a mezipodnikového prodeje odběratele v aplikaci POS, nebude služba Commerce Headquarters okamžitě obsahovat informace o související transakci výdeje zásob pro daný prodej. Bude obsahovat informace o zásobách, které jsou prodány pro tyto typy prodeje obchodu pouze poté, co úloha P nahraje související transakci z databáze kanálů obchodu do služby Commerce Headquarters a související prodejní objednávka je vytvořena prostřednictvím výpisu. zaúčtování nebo dávkové zpracování trickleho informačního kanálu. Proces vytvoření objednávky v modulu Commerce Headquarters vytvoří související skladové transakce. U kanálů s kanály elektronického obchodování obsahuje Commerce Headquarters informace o skladových transakcích pouze po odeslání transakcí do služby Commerce Headquarters prostřednictvím úlohy P a dokončení procesu synchronizace objednávky. Proto je důležité, abyste si vědomi, že hodnota snímku zásob, která je k dispozici v úloze **Dostupnost produktu** , nemusí být 100% přesná v reálném čase, protože se jedná o stálé zpracování prodeje, ke kterému dochází v rámci distribuovaných serverů.
 
 Chcete-li vytvořit snímek zásob v rámci služby Commerce Headquarters, postupujte podle následujících kroků.
 
-1. Přejděte na **Retail and Commerce \> Retail and Commerce IT \> Produkty a zásoby \> Dostupnost produktu**.
-1. Klepnutím na tlačítko **OK** spustíte úlohu **Dostupnost produktu**. Tuto úlohu lze rovněž naplánovat tak, aby byla spuštěna v dávce.
+1. Přejděte na **Retail and Commerce \> Retail and Commerce IT \> Produkty a zásoby \> Dostupnost produktu** .
+1. Klepnutím na tlačítko **OK** spustíte úlohu **Dostupnost produktu** . Tuto úlohu lze rovněž naplánovat tak, aby byla spuštěna v dávce.
 
 Po dokončení úlohy **Dostupnost produktu** musí být zachycená data přesunuta do databází kanálů elektronického obchodu tak, aby poslední snímek zásob služby Commerce Headquarters mohl být zvážen při výpočtu odhadovaných zásob na skladě.
 
-1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
-1. Spusťte úlohu **1130** (**Dostupnost produktu**), která synchronizuje data úlohy **Dostupnost produktu** vytvořená z Commerce Headquarters do databází vašeho kanálu.
+1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce** .
+1. Spusťte úlohu **1130** ( **Dostupnost produktu** ), která synchronizuje data úlohy **Dostupnost produktu** vytvořená z Commerce Headquarters do databází vašeho kanálu.
 
-Je-li vyžadována dostupnost zásob z API **GetEstimatedAvailability** nebo **GetEstimatedProductWarehouseAvailability**, je proveden výpočet, který se pokusí získat nejlepší možný odhad zásob produktu. Výpočet odkazuje na všechny objednávky odběratele e-Commerce, které jsou v databázi kanálů, ale nebyly zahrnuty do dat snímku, které poskytla úloha 1130. Tato logika se provádí sledováním poslední zpracované skladové transakce z služby Commerce Headquarters a jejím porovnáním s transakcemi v databázi kanálů. Poskytuje základ pro výpočetní logiku na straně kanálu, takže další pohyby zásob, které se vyskytly pro prodejní transakce objednávky odběratele v databázi kanálů elektronického obchodu, lze rozdělit na odhadovanou hodnotu zásob, kterou rozhraní API jišťují.
+Je-li vyžadována dostupnost zásob z API **GetEstimatedAvailability** nebo **GetEstimatedProductWarehouseAvailability** , je proveden výpočet, který se pokusí získat nejlepší možný odhad zásob produktu. Výpočet odkazuje na všechny objednávky odběratele e-Commerce, které jsou v databázi kanálů, ale nebyly zahrnuty do dat snímku, které poskytla úloha 1130. Tato logika se provádí sledováním poslední zpracované skladové transakce z služby Commerce Headquarters a jejím porovnáním s transakcemi v databázi kanálů. Poskytuje základ pro výpočetní logiku na straně kanálu, takže další pohyby zásob, které se vyskytly pro prodejní transakce objednávky odběratele v databázi kanálů elektronického obchodu, lze rozdělit na odhadovanou hodnotu zásob, kterou rozhraní API jišťují.
 
 Logika výpočtu na straně kanálu vrací odhadovanou fyzicky dostupnou hodnotu a celkovou dostupnou hodnotu pro požadovaný produkt a sklad. Hodnoty lze v případě potřeby zobrazit na webu e-Commerce nebo je lze použít k aktivaci jiné obchodní logiky na vašem webu e-Commerce. Můžete například zobrazit zprávu "nedostatek zásob" namísto skutečného množství na skladě, které rozhraní API předalo.
 
@@ -80,18 +80,18 @@ Je-li výpočet na straně kanálu správně nakonfigurován a spravován, můž
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Začínáme s vypočítanou dostupností zásob na straně kanálu POS
 
-Chcete-li použít logiku výpočtu na straně kanálu a vypnout volání služeb v reálném čase pro vyhledávání zásob z aplikace POS, musíte nejprve povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v Commerce Headquarters. Kromě povolení této funkce musíte provést změny **funkčního profilu**.
+Chcete-li použít logiku výpočtu na straně kanálu a vypnout volání služeb v reálném čase pro vyhledávání zásob z aplikace POS, musíte nejprve povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v Commerce Headquarters. Kromě povolení této funkce musíte provést změny **funkčního profilu** .
 
-Chcete-li změnit **funkční profil**, postupujte takto.
+Chcete-li změnit **funkční profil** , postupujte takto.
 
-1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**.
+1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily** .
 1. Vyberte funkční profil.
-1. Na pevné záložce **Funkce** v části **výpočet dostupnosti zásob** změňte hodnotu pole **Režim výpočtu dostupnosti zásob** ze **Služby v reálném čase** na **Kanál**. Všechny funkční profily standardně používají volání služby v reálném čase. Chcete-li tedy použít výpočetní logiku na straně kanálu, je nutné změnit hodnotu tohoto pole. Tato změna ovlivní všechny maloobchodní obchody propojené s vybraným profilem funkčnosti.
+1. Na pevné záložce **Funkce** v části **výpočet dostupnosti zásob** změňte hodnotu pole **Režim výpočtu dostupnosti zásob** ze **Služby v reálném čase** na **Kanál** . Všechny funkční profily standardně používají volání služby v reálném čase. Chcete-li tedy použít výpočetní logiku na straně kanálu, je nutné změnit hodnotu tohoto pole. Tato změna ovlivní všechny maloobchodní obchody propojené s vybraným profilem funkčnosti.
 
 Poté je nutné synchronizovat změny kanálu pomocí procesu plánu distribuce provedením následujících kroků:
 
-1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
-1. Spusťte úlohu **1070** (**konfigurace kanálu**).
+1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce** .
+1. Spusťte úlohu **1070** ( **konfigurace kanálu** ).
 
 Po dokončení konfigurace již informace o fyzicky dostupných zásobách nepoužívají volání služby v reálném čase, pokud uživatel v aplikaci POS používá operaci **Vyhledávání zásob** (standardní a maticová zobrazení). Místo toho jsou data o fyzicky dostupných zásobách pro aktuální obchod a všech obchodech ve skupině plnění vypočítána na základě posledního známého snímku, který byl dodán do databáze kanálů ze služby Commerce Headquarters. Hodnota snímku je dále upřesněna výpočtem na straně kanálu za účelem nastavení fyzicky dostupné hodnoty na základě dalších transakcí prodeje nebo vrácení, které existují pro vybraný produkt v databázi kanálů, které nebyly zahrnuty do posledního synchronizovaný snímek z úlohy 1130. Pokud databáze kanálu neobsahuje transakční data pro žádný ze skladů nebo obchodů ve skupině plnění, neobsahuje žádné další transakce, které lze rozlišit do přepočtu hodnoty. Nejlepším odhadem množství na skladě, které lze zobrazit pro tyto sklady nebo obchody, jsou data z posledního snímku služby Commerce Headquarters.
 
@@ -104,13 +104,13 @@ Chcete-li zajistit nejlepší možný odhad zásob, je důležité, abyste použ
 - **Úloha P** – úlohu P lze najít na stránce **Plány distribuce** a měla by být spouštěna často. Tato úloha přináší objednávky e-Commerce, asynchronní objednávky odběratele, které vytvořil POS, a objednávky v hotovosti vytvořené z databází kanálů do služby Commerce Headquarters, aby mohly být dále zpracovány. Dokud nebudou tato data synchronizována z kanálu do služby Commerce Headquarters, nemá obchodní ústředí žádné informace o úpravách zásob pro produkty v skladech, které jsou výsledkem těchto transakcí.
 - **Synchronizovat objednávky** – Tato úloha zpracuje neformátovaná transakční data ve službě Commerce Headquarters, která úloha P poskytuje a převádí transakce e-Commerce a asynchronní objednávky odběratele do prodejních objednávek v Commerce Headquarters. Dokud nebude tato úloha zpracována a nebudou vytvořeny prodejní objednávky, nebudou vytvořeny žádné skladové transakce. To znamená, že množství na skladě v Commerce Headquarters tyto transakce nebere v úvahu.
 - **Výpočet transakčních výpisů v dávce** – pro transakce cash-and-carry, které jsou vytvořeny v obchodě, proces postupného zaúčtování informačního kanálu zajišťuje efektivní aktualizaci skladů, které souvisejí s prodejem. Chcete-li získat nejúčinnější zpracování skladových transakcí pro objednávky cash-and-carry, nezapomeňte nakonfigurovat systém tak, aby používal [postupné zaúčtování kanálu](https://docs.microsoft.com/dynamics365/commerce/trickle-feed).
-- **Zaúčtovat transakční příkazy v dávce** – Tato úloha je také vyžadována pro postupné zaúčtování kanálu. Následuje po úloze **Vypočítat transakční výpisy v dávce**. Tato úloha systematicky zaúčtuje vypočtené výkazy, takže prodejní objednávky pro prodeje cash-and-carry jsou vytvořeny v Commerce Headquarters a Commerce Headquarters přesněji odráží zásoby vašeho obchodu.
+- **Zaúčtovat transakční příkazy v dávce** – Tato úloha je také vyžadována pro postupné zaúčtování kanálu. Následuje po úloze **Vypočítat transakční výpisy v dávce** . Tato úloha systematicky zaúčtuje vypočtené výkazy, takže prodejní objednávky pro prodeje cash-and-carry jsou vytvořeny v Commerce Headquarters a Commerce Headquarters přesněji odráží zásoby vašeho obchodu.
 - **Dostupnost produktu** – Tato úloha vytvoří snímek zásob z služby Commerce Headquarters.
-- **1130 (dostupnost produktu)** – Tato úloha se nachází na stránce **Plány distribuce** a měla by být spuštěna bezprostředně po úloze **Dostupnosti produktu**. Tato úloha přepravuje data snímku zásob z Commerce Headquarters do databází kanálů.
+- **1130 (dostupnost produktu)** – Tato úloha se nachází na stránce **Plány distribuce** a měla by být spuštěna bezprostředně po úloze **Dostupnosti produktu** . Tato úloha přepravuje data snímku zásob z Commerce Headquarters do databází kanálů.
 
 Doporučuje se, abyste tyto dávkové úlohy nespouštěli příliš často (každých několik minut). Časté běhy přetěžují ředitelství Commerce (HQ) a mohou potenciálně ovlivnit výkon. Obecně je dobrou praxí spouštět dostupnost produktu a 1130 úloh každou hodinu a naplánovat P-úlohu, synchronizovat objednávky a úlohy související s postupným účtováním se stejnou nebo vyšší frekvencí.
 
 > [!NOTE]
-> Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob**. Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.
+> Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob** . Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.
 
 Pokud Váš obchodní scénář vyžaduje menší čas v mezipaměti, požádejte o pomoc pracovníka technické podpory.

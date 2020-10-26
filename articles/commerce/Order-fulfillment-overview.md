@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubencdelgado
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74347e06dec8517145e79f77f553970324757128
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021819"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975140"
 ---
 # <a name="store-order-fulfillment"></a>Plnění objednávek obchodu
 
@@ -42,11 +42,11 @@ Operace plnění objednávky nemá momentálně vlastní oprávnění, ale v bud
 
 Na úrovni obchodu je k dispozici nastavení konfigurace k určení, zda řádek objednávky musí být přijat ručně z pokladního místa. Pokud tato možnost konfigurace není nastavena, řádky objednávky budou přijaty ve výchozím nastavení. Pokud je tato možnost konfigurace zapnuta, uživatelé budou muset na pokladním místě zvolit oprávnění **Povolit přijetí objednávky** pro příjem objednávek z pokladního místa.
 
-Řádky objednávky mohou být také odmítnuty z pokladního místa. Zamítnutí řádku objednávky znamená, že nebude plněna v obchodě, a odešle řádek objednávky zpět pro opětovné přiřazení do jiného obchodu nebo skladu. Oprávnění pro odmítnutí řádku objednávky, je udělováno prostřednictvím oprávnění **Povolit odmítnutí objednávky**.
+Řádky objednávky mohou být také odmítnuty z pokladního místa. Zamítnutí řádku objednávky znamená, že nebude plněna v obchodě, a odešle řádek objednávky zpět pro opětovné přiřazení do jiného obchodu nebo skladu. Oprávnění pro odmítnutí řádku objednávky, je udělováno prostřednictvím oprávnění **Povolit odmítnutí objednávky** .
 
 ## <a name="order-fulfillment-operation-parameters"></a>Parametry operace plnění objednávky
 
-Plnění objednávky poskytuje okamžité parametry, které lze použít na operaci, když je volána na pokladním místě. Když je nakonfigurován parametr **Všechny objednávky**, všechny objednávky se zobrazí při použití operace. Parametr **Objednávky k expedici** zobrazuje jen objednávky, které musí být expedovány z obchodu, a parametr **Objednávky k výdeji** zobrazí objednávky, které budou vyzvednuty v obchodě.
+Plnění objednávky poskytuje okamžité parametry, které lze použít na operaci, když je volána na pokladním místě. Když je nakonfigurován parametr **Všechny objednávky** , všechny objednávky se zobrazí při použití operace. Parametr **Objednávky k expedici** zobrazuje jen objednávky, které musí být expedovány z obchodu, a parametr **Objednávky k výdeji** zobrazí objednávky, které budou vyzvednuty v obchodě.
 
 ## <a name="orders-for-fulfillment"></a>Objednávky k plnění
 
@@ -54,7 +54,7 @@ Operace plnění objednávky zobrazí pouze objednávky, které budou buď vyzve
 
 ## <a name="line-selection"></a>Výběr řádku
 
-Řádky lze vybrat pomocí funkce **Vybrat** v podokně akcí. Když je povolena funkce **Vybrat**, lze vybrat ke zpracování několik řádků. Opětovným kliknutím na tentýž řádek můžete zvolené řádky vymazat.
+Řádky lze vybrat pomocí funkce **Vybrat** v podokně akcí. Když je povolena funkce **Vybrat** , lze vybrat ke zpracování několik řádků. Opětovným kliknutím na tentýž řádek můžete zvolené řádky vymazat.
 
 ## <a name="line-details"></a>Detaily řádku
 
@@ -64,11 +64,11 @@ Pokud je vybráno více řádků, nabídka plovoucího panelu podrobností řád
 
 ## <a name="pending-order-lines"></a>Čekající řádky objednávky
 
-Sjednocené plnění objednávky zahrnuje možnost ručního přijetí objednávky. Standardně jsou objednávky k plnění v obchodě již přijaty. Pokud však obchodní procesy určují, že pracovník na úrovni obchodu musí přijmout objednávky, lze ruční přijetí zapnout na úrovni maloobchodu. Chcete-li povolit přijetí objednávky, přejděte na **Maloobchod a velkoobchod** \> **Kanály** \> **Obchody** \> **Všechny maloobchody**. Otevřete požadovaný obchod a na kartě **Obecné** vyhledejte dílčí záhlaví **Plnění objednávky**. Toto dílčí záhlaví má možnost **Ruční přijetí**, která je nastavena na **Ne** ve výchozím nastavení. Nastavením této možnosti na **Ano** a synchronizací změn do databáze kanálů mohou řádky objednávky projít procesem přijetí.
+Sjednocené plnění objednávky zahrnuje možnost ručního přijetí objednávky. Standardně jsou objednávky k plnění v obchodě již přijaty. Pokud však obchodní procesy určují, že pracovník na úrovni obchodu musí přijmout objednávky, lze ruční přijetí zapnout na úrovni maloobchodu. Chcete-li povolit přijetí objednávky, přejděte na **Maloobchod a velkoobchod** \> **Kanály** \> **Obchody** \> **Všechny maloobchody** . Otevřete požadovaný obchod a na kartě **Obecné** vyhledejte dílčí záhlaví **Plnění objednávky** . Toto dílčí záhlaví má možnost **Ruční přijetí** , která je nastavena na **Ne** ve výchozím nastavení. Nastavením této možnosti na **Ano** a synchronizací změn do databáze kanálů mohou řádky objednávky projít procesem přijetí.
 
-Pracovníci s oprávněním **Povolit přijetí objednávky** mohou otevřít plnění objednávky a vybrat řádky k přijetí. Po přijetí řádků se jejich stav změní z **Čekající** na **Přijato** a zbývající část procesu plnění objednávky může pokračovat. Když je zapnuto **Ruční přijetí**, objednávky nebudou zpracovány, dokud nebudou přijaty.
+Pracovníci s oprávněním **Povolit přijetí objednávky** mohou otevřít plnění objednávky a vybrat řádky k přijetí. Po přijetí řádků se jejich stav změní z **Čekající** na **Přijato** a zbývající část procesu plnění objednávky může pokračovat. Když je zapnuto **Ruční přijetí** , objednávky nebudou zpracovány, dokud nebudou přijaty.
 
-Objednávky pro vyzvednutí v obchodě nemají nikdy stav **Čekající**. To proto, aby nedošlo ke scénáři, ve kterém odběratel dorazí do obchodu a řádek objednávky nelze zpracovat, protože není k dispozici pracovník s dostatečným oprávněním.
+Objednávky pro vyzvednutí v obchodě nemají nikdy stav **Čekající** . To proto, aby nedošlo ke scénáři, ve kterém odběratel dorazí do obchodu a řádek objednávky nelze zpracovat, protože není k dispozici pracovník s dostatečným oprávněním.
 
 ## <a name="accepted-order-lines"></a>Přijaté řádky objednávky
 
@@ -87,7 +87,7 @@ Kategorie akcí **Vyskladnit** je poskytnuta pro usnadnění procesu výdeje ř�
 - **Výsledný stav POS:** výdej
 - **Výsledný stav účetního systému:** beze změny
 
-Po přijetí objednávky lze vybrat řádky a označit je jako **Výdej**. Označení řádku jako **Výdej** slouží k označení, že práce výdeje již probíhá na řádku. Tím zabráníte dvěma pracovníků v pokusu vydat stejné řádky objednávky současně.
+Po přijetí objednávky lze vybrat řádky a označit je jako **Výdej** . Označení řádku jako **Výdej** slouží k označení, že práce výdeje již probíhá na řádku. Tím zabráníte dvěma pracovníků v pokusu vydat stejné řádky objednávky současně.
 
 **Akce: Tisk výdejky**
 
@@ -98,20 +98,20 @@ Výdejky lze vytisknout na pokladním místě, aby se pomohlo pracovníkům při
 
 Formát výdejky je nakonfigurován v aplikaci Commerce a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-Jestliže jsou vybrané řádky a u těchto řádků se vytiskne výdejka, jsou automaticky aktualizovány se stavem **Výdej**.
+Jestliže jsou vybrané řádky a u těchto řádků se vytiskne výdejka, jsou automaticky aktualizovány se stavem **Výdej** .
 
 **Akce: Označit jako vyskladněno**
 
 - **Výsledný stav:** Vyskladněno nebo částečně vyskladněno
 - **Výsledný stav v účetním systému:** Vyskladněno nebo částečně vyskladněno
 
-Poté, co bylo provedeno fyzické vyskladnění, lze řádky označit jako **Vyskladněno**. Výběrem řádku a jeho označením stavem **Vyskladněno** provedete volání v reálném čase k aktualizaci řádku objednávky. Poté, co byl řádek označen jako **Vyskladněno** na pokladním místě, je také aktualizován stav v účetním systému na **Vyskladněno** a skladové transakce budou odrážet to, že určené množství bylo sníženo.
+Poté, co bylo provedeno fyzické vyskladnění, lze řádky označit jako **Vyskladněno** . Výběrem řádku a jeho označením stavem **Vyskladněno** provedete volání v reálném čase k aktualizaci řádku objednávky. Poté, co byl řádek označen jako **Vyskladněno** na pokladním místě, je také aktualizován stav v účetním systému na **Vyskladněno** a skladové transakce budou odrážet to, že určené množství bylo sníženo.
 
-Při zpracování objednávek v čase můžete pro konkrétní řádek zpracovat částečná množství. Pokud je vybrán řádek a je provedena akce **Označit jako vyskladněné**, a množství jě větší než jedna, bude uživatel vyzván k množství. Zbývající množství k výdeji je vyplněno automaticky. Je-li určeno množství menší než zbývající, stav řádku se změní na **Částečně vyskladněno**. Když je v účetním systému aktualizován řádek objednávky, bude to také odrážet stav částečného vyskladnění, a množství zadané uživatelem se použije pro aktualizaci skladu.
+Při zpracování objednávek v čase můžete pro konkrétní řádek zpracovat částečná množství. Pokud je vybrán řádek a je provedena akce **Označit jako vyskladněné** , a množství jě větší než jedna, bude uživatel vyzván k množství. Zbývající množství k výdeji je vyplněno automaticky. Je-li určeno množství menší než zbývající, stav řádku se změní na **Částečně vyskladněno** . Když je v účetním systému aktualizován řádek objednávky, bude to také odrážet stav částečného vyskladnění, a množství zadané uživatelem se použije pro aktualizaci skladu.
 
 Pokud je řádek objednávky vyskladněn s chybou, je nutné provést na řádku objednávky v účetním systému proces naskladnění. Pokladní místo momentálně nepodporuje žádnou akci naskladnění.
 
-Řádky objednávky z jiné objednávky lze vybrat a označit jako **Výdej**, vytisknout je na stejnou výdejku nebo označit jako **Vyskladněno**.
+Řádky objednávky z jiné objednávky lze vybrat a označit jako **Výdej** , vytisknout je na stejnou výdejku nebo označit jako **Vyskladněno** .
 
 ### <a name="pack"></a>Balení
 
@@ -158,7 +158,7 @@ Současně lze vydat pouze řádky na stejné objednávce a se stejným způsobe
 
 ### <a name="shipping"></a>Expedice
 
-Řádky objednávky, které mají být expedovány z obchodu, mohou být zpracovány prostřednictvím sjednoceného plnění objednávky pomocí akce **Expedovat**. Je-li ruční přijetí řádku objednávky nakonfigurováno na úrovni kanálu, objednávky musí být přijaty před odesláním. Jakmile je řádek objednávky přijat a má stav **Čekající** nebo jiný stav, lze řádky expedovat.
+Řádky objednávky, které mají být expedovány z obchodu, mohou být zpracovány prostřednictvím sjednoceného plnění objednávky pomocí akce **Expedovat** . Je-li ruční přijetí řádku objednávky nakonfigurováno na úrovni kanálu, objednávky musí být přijaty před odesláním. Jakmile je řádek objednávky přijat a má stav **Čekající** nebo jiný stav, lze řádky expedovat.
 
 **Akce: Expedovat**
 
@@ -180,7 +180,7 @@ Pouze řádky ze stejné objednávky lze expedovat současně. Pokud mají řád
 - **Výsledný stav:** Odmítnuto
 - **Výsledný stav účetního systému:** beze změny
 
-Odmítnuté řádky objednávky lze zobrazit z pracovního prostoru **Zpracování a dotaz na prodejní objednávku**. Vymažte osobní filtr v pracovním prostoru, abyste zobrazili všechny odmítnuté řádky objednávky mezi obchody. Karta **Odmítnuté řádky objednávky** pod částí **Objednávky a oblíbené** zobrazuje podrobnosti řádku objednávky. Uživatelé mohou také kliknout na tlačítko **Odmítnuté řádky objednávky** pod částí **Souhrn** a přejít na zobrazení prodejní objednávky. Zobrazí se všechny objednávky, které mají nejméně jeden odmítnutý řádek. Jestliže je povolena distribuovaná správa objednávky, budou tyto odmítnuté objednávky automaticky znovu přiřazeny do příslušných obchodů pro plnění. Tyto řádky objednávky lze však též znovu přiřadit ručně. To provedete výběrem řádku, který zobrazuje **Stav plnění** jako **Odmítnuto** a změnou pracoviště/skladu podle potřeby. Klikněte na rozevírací nabídku **Aktualizovat řádek** a klikněte na **Resetovat stav plnění** ke změně stavu plnění z **Odmítnuto** na **Přijato** nebo **Čekající**, v závislosti na nastavení plnění objednávky. Po resetování stavu plnění budou moci pracovníci obchodu zobrazit řádky objednávky v POS.
+Odmítnuté řádky objednávky lze zobrazit z pracovního prostoru **Zpracování a dotaz na prodejní objednávku** . Vymažte osobní filtr v pracovním prostoru, abyste zobrazili všechny odmítnuté řádky objednávky mezi obchody. Karta **Odmítnuté řádky objednávky** pod částí **Objednávky a oblíbené** zobrazuje podrobnosti řádku objednávky. Uživatelé mohou také kliknout na tlačítko **Odmítnuté řádky objednávky** pod částí **Souhrn** a přejít na zobrazení prodejní objednávky. Zobrazí se všechny objednávky, které mají nejméně jeden odmítnutý řádek. Jestliže je povolena distribuovaná správa objednávky, budou tyto odmítnuté objednávky automaticky znovu přiřazeny do příslušných obchodů pro plnění. Tyto řádky objednávky lze však též znovu přiřadit ručně. To provedete výběrem řádku, který zobrazuje **Stav plnění** jako **Odmítnuto** a změnou pracoviště/skladu podle potřeby. Klikněte na rozevírací nabídku **Aktualizovat řádek** a klikněte na **Resetovat stav plnění** ke změně stavu plnění z **Odmítnuto** na **Přijato** nebo **Čekající** , v závislosti na nastavení plnění objednávky. Po resetování stavu plnění budou moci pracovníci obchodu zobrazit řádky objednávky v POS.
 
 ## <a name="line-quantity-tracking"></a>Sledování množství řádku
 
@@ -192,19 +192,19 @@ Pokračujeme-li v uvedeném příkladu, tak pokud je 200 desek je označeno jako
 
 ## <a name="line-statuses"></a>Stavy řádku 
 
-Řádky objednávky v pokladním místě mají několik stavů, aby odrážely stav řádků objednávky. Ve všech případech se neshodují stavy v pokladním místě a v účetním systému. Stav řádku objednávky lze zobrazit prostřednictvím pokladního místa pomocí operací plnění objednávky. V účetním systému lze zobrazit řádky objednávky z podrobností o objednávce. K podrobnostem objednávky lze přistupovat prostřednictvím možností **Maloobchod a velkoobchod** \> **Odběratelé** \> **Všechny objednávky odběratele**. Pro zobrazení podrobností o objednávce vyberte **ID objednávky**. Z podrobností o objednávce vyberte kartu **Prodejní objednávka** a potom vyberte **Podrobný stav** pod dílčím záhlavím **Zobrazit**.
+Řádky objednávky v pokladním místě mají několik stavů, aby odrážely stav řádků objednávky. Ve všech případech se neshodují stavy v pokladním místě a v účetním systému. Stav řádku objednávky lze zobrazit prostřednictvím pokladního místa pomocí operací plnění objednávky. V účetním systému lze zobrazit řádky objednávky z podrobností o objednávce. K podrobnostem objednávky lze přistupovat prostřednictvím možností **Maloobchod a velkoobchod** \> **Odběratelé** \> **Všechny objednávky odběratele** . Pro zobrazení podrobností o objednávce vyberte **ID objednávky** . Z podrobností o objednávce vyberte kartu **Prodejní objednávka** a potom vyberte **Podrobný stav** pod dílčím záhlavím **Zobrazit** .
 
-- **Čekající** - Řádky objednávky, které byly přiřazeny k obchodu, ale dosud nebyla přijaty, mají stav **Čekající** při zobrazení v pokladním místě. Řádky čekající na přijetí na pokladním místě budou mít v účetním systému stav **Zpracování objednávky**.
-- **Přijato** – Řádky objednávky, které byly přijaty ručně nebo automaticky, budou mít stav **Přijato** při zobrazení v pokladním místě. Řádky se stavem **Přijato** se zobrazí v účetním systému jako **Zpracování objednávky**.
-- **Výdej** – Řádky, které jsou aktuálně vyzvedávány na úrovni obchodu, mají stav **Výdej**. Tytéž řádky při zobrazení v účetním systému se zobrazují jako **Zpracování objednávky**.
-- **Vyskladněno** a **Částečně vyskladněno** – řádky, které byly vyskladněny nebo částečně vyskladněny na pokladním místě, budou mít stav **Vyskladněno** nebo **Částečně vyskladněno**. Stejné řádky v účetním systému se zobrazí také jako **Vyskladněno** nebo **Částečně vyskladněno**.
-- **Zabaleno** a **Částečně zabaleno** – řádky, které byly zabaleny nebo částečně zabaleny na pokladním místě, budou mít stav **Zabaleno** nebo **Částečně zabaleno**. Stejné řádky v účetním systému se zobrazí také jako **Dodáno** nebo **Částečně dodáno**.
+- **Čekající** - Řádky objednávky, které byly přiřazeny k obchodu, ale dosud nebyla přijaty, mají stav **Čekající** při zobrazení v pokladním místě. Řádky čekající na přijetí na pokladním místě budou mít v účetním systému stav **Zpracování objednávky** .
+- **Přijato** – Řádky objednávky, které byly přijaty ručně nebo automaticky, budou mít stav **Přijato** při zobrazení v pokladním místě. Řádky se stavem **Přijato** se zobrazí v účetním systému jako **Zpracování objednávky** .
+- **Výdej** – Řádky, které jsou aktuálně vyzvedávány na úrovni obchodu, mají stav **Výdej** . Tytéž řádky při zobrazení v účetním systému se zobrazují jako **Zpracování objednávky** .
+- **Vyskladněno** a **Částečně vyskladněno** – řádky, které byly vyskladněny nebo částečně vyskladněny na pokladním místě, budou mít stav **Vyskladněno** nebo **Částečně vyskladněno** . Stejné řádky v účetním systému se zobrazí také jako **Vyskladněno** nebo **Částečně vyskladněno** .
+- **Zabaleno** a **Částečně zabaleno** – řádky, které byly zabaleny nebo částečně zabaleny na pokladním místě, budou mít stav **Zabaleno** nebo **Částečně zabaleno** . Stejné řádky v účetním systému se zobrazí také jako **Dodáno** nebo **Částečně dodáno** .
 - **Částečně fakturováno** – řádky, které bylo částečně vyzvednuty nebo částečně vyexpedovány, budou mít stav **Částečně fakturováno** na pokladním místě a v účetním systému.
-- **Fakturováno** – řádky, které byly plně vyfakturovány na pokladním místě, se již nebudou zobrazovat k plnění. V účetním systému je stav pro tyto řádky **Fakturováno**.
+- **Fakturováno** – řádky, které byly plně vyfakturovány na pokladním místě, se již nebudou zobrazovat k plnění. V účetním systému je stav pro tyto řádky **Fakturováno** .
 
 ## <a name="order-fulfillment-filtering"></a>Filtrování plnění objednávek
 
-Plnění objednávky na pokladním místě obsahuje filtrování umožňující uživateli snadné vyhledávání podle potřeb. Filtry lze změnit ve spodní části podokna akcí na obrazovce **Pokladní místo**. Ve výchozím nastavení je použit filtr **Typ dodání**, podle nastavení operace. Je-li operaci nastavena s parametrem **Všechny objednávky**, pak se daný filtr použije při přístupu k plnění objednávky. To platí i pro parametry **Vyzvednutí v obchodě** a **Expedovat z obchodu**. Jiné filtry, které lze použít k zobrazení plnění objednávky, zahrnují:
+Plnění objednávky na pokladním místě obsahuje filtrování umožňující uživateli snadné vyhledávání podle potřeb. Filtry lze změnit ve spodní části podokna akcí na obrazovce **Pokladní místo** . Ve výchozím nastavení je použit filtr **Typ dodání** , podle nastavení operace. Je-li operaci nastavena s parametrem **Všechny objednávky** , pak se daný filtr použije při přístupu k plnění objednávky. To platí i pro parametry **Vyzvednutí v obchodě** a **Expedovat z obchodu** . Jiné filtry, které lze použít k zobrazení plnění objednávky, zahrnují:
 
 - Název zákazníka
 - Jméno zákazníka

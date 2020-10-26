@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b60d5cf5ebae2386e7d9dc3d25833524044672d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202967"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980404"
 ---
 # <a name="cancel-service-orders"></a>Zrušit servisní zakázky   
 
@@ -39,13 +39,13 @@ Servisní zakázku nebo řádek servisní zakázky můžete zrušit z dané serv
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Zrušení servisní zakázky ve formuláři Servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**. Vyberte webovou servisní zakázku a v podokně akcí klikněte na **Zrušit objednávku**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** . Vyberte webovou servisní zakázku a v podokně akcí klikněte na **Zrušit objednávku** .
 
 ## <a name="cancel-a-service-order-line"></a>Zrušení řádku servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**. V dolním podokně dvakrát klikněte na řádek servisní zakázky, který chcete zrušit.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** . V dolním podokně dvakrát klikněte na řádek servisní zakázky, který chcete zrušit.
 
-2.  Vyberte řádek servisní zakázky, kterou chcete zrušit, a klepněte na tlačítko **Zrušit řádek objednávky** ke změně stavu řádku na **zrušeno**.
+2.  Vyberte řádek servisní zakázky, kterou chcete zrušit, a klepněte na tlačítko **Zrušit řádek objednávky** ke změně stavu řádku na **zrušeno** .
 
 
 > [!TIP]
@@ -54,21 +54,21 @@ Servisní zakázku nebo řádek servisní zakázky můžete zrušit z dané serv
 
 ## <a name="cancel-multiple-service-orders"></a>Zrušení více servisních zakázek
 
-1.  Klepněte na tlačítko **řízení servisu** \> **Periodicky** \> **servisní zakázky** \> **Zrušit servisní zakázky**.
+1.  Klepněte na tlačítko **řízení servisu** \> **Periodicky** \> **servisní zakázky** \> **Zrušit servisní zakázky** .
 
-2.  Klikněte na tlačítko **Vybrat**.
+2.  Klikněte na tlačítko **Vybrat** .
 
 3.  Ve formuláři **Dotaz** ve sloupci **Kritéria** vyberte servisní zakázky, které chcete zrušit.
 
-4.  Klepnutím na tlačítko **OK** zavřete formulář **Dotaz**.
+4.  Klepnutím na tlačítko **OK** zavřete formulář **Dotaz** .
 
-5.  Jestliže chcete generovat informační protokol, který zobrazí zrušené servisní zakázky, zaškrtněte políčko **Zobrazit informační protokol**.
+5.  Jestliže chcete generovat informační protokol, který zobrazí zrušené servisní zakázky, zaškrtněte políčko **Zobrazit informační protokol** .
 
-6.  Chcete-li odvolat stav **Zrušené** servisní zakázky, zaškrtněte políčko **Odvolat storno**.
+6.  Chcete-li odvolat stav **Zrušené** servisní zakázky, zaškrtněte políčko **Odvolat storno** .
 
-7.  Klikněte na tlačítko **OK**.
+7.  Klikněte na tlačítko **OK** .
 
-Vybrané servisní zakázky budou buď zrušeny, nebo bude jejich stav **Zrušeno** odvolán na stav **Zpracovává se**.
+Vybrané servisní zakázky budou buď zrušeny, nebo bude jejich stav **Zrušeno** odvolán na stav **Zpracovává se** .
 
 
 > [!NOTE]

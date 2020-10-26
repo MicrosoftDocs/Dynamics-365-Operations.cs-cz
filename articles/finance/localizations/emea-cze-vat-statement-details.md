@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 263614
 ms.search.region: Czech Republic
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: da404783d1d83ebe830e385b082597989a222f4e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 68708a486987def359f5a5638aefb50c80a31298
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773403"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978931"
 ---
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
@@ -36,7 +36,7 @@ Toto téma obsahuje informace o nastavení výkazu DPH pro uživatele ve funkcí
 Pokud chcete generovat deklaraci DPH v požadovaném formátu pro konkrétní daňový úřad, je nutné nastavit rozložení sestavy pro daňové úřady.
 
 - Na stránce <strong>Finanční úřady</strong> v části <strong>Obecné</strong> nastavte <strong>Rozložení sestavy **na **Výchozí</strong>.
-- Vyberte **Finanční úřad** pro **Období vyrovnání DPH**, které použijete pro kódy DPH.
+- Vyberte **Finanční úřad** pro **Období vyrovnání DPH** , které použijete pro kódy DPH.
 
 ## <a name="set-up-sales-tax-reporting-codes"></a>Nastavit kódy vykazování DPH
 Následující příklad uvádí, jak by bylo možné nastavit kódy vykazování DPH pro generování výkazu DPH.
@@ -142,10 +142,10 @@ Pro uživatele ve funkci právnických osob v České republice je na základě 
 | 8151                         | ř.815 - Dodání zboží prostřední osobou                  |
 
 ## <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurace modelu ER a formátu výkazu
-Ke kontrole nebo změně konfigurace výkazu DPH můžete použít pracovní prostor **Elektronické podání**. Přejděte na stránku **Konfigurace** a v seznamu modelů vyberte **Model prohlášení DPH**. Tento model je společný pro Rakousko, Českou republiku, Estonsko, Finsko, Lotyšsko a Litvu a agreguje daňové údaje potřebné pro přiznání DPH. Chcete-li zkontrolovat nebo změnit formát výkazu DPH pro uživatele ve funkci právnických osob v České republice, vyberte **Přiznání k DPH (CZ)**, což je podřízená položka **modelu prohlášení DPH** ve stromu modelu. Vyberte ji a klikněte na **Návrhář** v podokně akcí k zobrazení nebo změně formátu. Další informace získáte v tématu [Elektronické vykazování.](../../dev-itpro/analytics/general-electronic-reporting.md)
+Ke kontrole nebo změně konfigurace výkazu DPH můžete použít pracovní prostor **Elektronické podání** . Přejděte na stránku **Konfigurace** a v seznamu modelů vyberte **Model prohlášení DPH** . Tento model je společný pro Rakousko, Českou republiku, Estonsko, Finsko, Lotyšsko a Litvu a agreguje daňové údaje potřebné pro přiznání DPH. Chcete-li zkontrolovat nebo změnit formát výkazu DPH pro uživatele ve funkci právnických osob v České republice, vyberte **Přiznání k DPH (CZ)** , což je podřízená položka **modelu prohlášení DPH** ve stromu modelu. Vyberte ji a klikněte na **Návrhář** v podokně akcí k zobrazení nebo změně formátu. Další informace získáte v tématu [Elektronické vykazování.](../../dev-itpro/analytics/general-electronic-reporting.md)
 
 ## <a name="generate-the-vat-statement"></a>Generování výkazu DPH
-Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH**, vyberte doklady a klikněte na **Export DPH do souboru XML**.
+Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH** , vyberte doklady a klikněte na **Export DPH do souboru XML** .
 
 
 

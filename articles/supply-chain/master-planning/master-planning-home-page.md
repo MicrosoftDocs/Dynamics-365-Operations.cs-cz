@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdf83c3595691937a3c0f3863cf28753f12b957
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7ec7203506d7fa3e71211bd1547dc8474f5d17dc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209828"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984219"
 ---
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
@@ -39,7 +39,7 @@ Hlavní plánování používá informace k výpočtu požadavků a vygenerován
 
 Tři hlavní procesy plánování jsou:
 
--  **Hlavní plánování** - Hlavní plán vypočítá čisté požadavky. To je založeno na skutečných aktuálních objednávkách a umožňuje společnostem řídit každodenního a každodenní doplňování skladu. Můžeme použít i termín *Plán čistých požadavků*. Další informace o hlavních plánech naleznete v tématu [Přehled hlavních plánů](master-plans.md). 
+-  **Hlavní plánování** - Hlavní plán vypočítá čisté požadavky. To je založeno na skutečných aktuálních objednávkách a umožňuje společnostem řídit každodenního a každodenní doplňování skladu. Můžeme použít i termín *Plán čistých požadavků* . Další informace o hlavních plánech naleznete v tématu [Přehled hlavních plánů](master-plans.md). 
 
 -  **Plánování prognóz** - Plánu prognózy vypočítá hrubé požadavky. To je založeno na budoucích odhadech (prognózách) a umožňuje společnostem provádět dlouhodobé plánování materiálů a kapacity. Další informace viz [Přehled prognózy poptávky](introduction-demand-forecasting.md). 
 

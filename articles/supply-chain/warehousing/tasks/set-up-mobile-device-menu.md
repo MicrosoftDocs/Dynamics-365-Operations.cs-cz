@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 905094ae4e76fadbebea1892ec20427f32e3e71d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86ccc39cb243354db337a5747701e9731c5ad775
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216811"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986919"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka
 
@@ -33,39 +33,39 @@ Toto téma ukazuje způsob nastavení položky nabídky Mobilní zařízení. V 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Vytvoření položky nabídky mobilních zařízení
 1. Přejděte na **Položky nabídky mobilního zařízení** zadáním do vyhledávacího panelu.
-2. Zvolte **Nové**.
+2. Zvolte **Nové** .
 3. Do pole **Název položky nabídky** zadejte hodnotu. Zadejte jedinečnou hodnotu. Můžete například zadat `POMove`. Zapamatujte si hodnotu – budete ji potřebovat později.  
-4. Zadejte hodnotu do pole **Nadpis**. Toto je název, který se zobrazí na mobilním zařízení. Můžete například zadat `PO Move`.  
-5. V poli **Režim** vyberte **Práce**.
-6. V poli **Použít stávající práci** vyberte možnost **Ano**.
-    - Tato položka nabídky v mobilním zařízení se používá k provedení stávající práce. Proto je nutné nastavit tuto hodnotu na hodnotu **Ano**.  
-    - Pole **Zobrazit stav zásob určuje**, zda se stav zásob na skladě zobrazí pracovníkovi skladu na mobilním zařízení.  
-7. V poli **Řídí** vyberte **Systémové seskupení**. Pokud vyberete jinou možnost v poli **Řídí**, v části **Obecné** na této stránce se zobrazí další pole. Zobrazená pole závisí na vašem výběru. Při výběru možnosti **Systémové seskupení** budou přidána dvě nová pole. Ty jsou vysvětleny níže.  
-8. V poli **Systémové seskupení** vyberte **WorkPoolId**. Když pracovníci skladu otevřou tuto položku nabídky, budou vyzváni ke kontrole ID fondu práce. Uživateli budou předloženy všechny pracovní objednávky s tímto ID fondu práce a otevřené řádky pracovního příkazu, do kterých byla k této položce nabídky přidána některá z pracovních tříd.  
-9. Zadejte hodnotu do pole **Popisek systémového seskupení**. Tento textový popisek se zobrazí uživateli mobilního zařízení. Můžete například zadat **Fond práce**.  
-10. Vyberte možnost **Ano** v poli **Přepsat registrační značku během vložení**. Tato možnost umožňuje pracovníkům skladu přepsat cílové registrační značky, když jsou položky odloženy do umístění řízeného registračními značkami.  
-11. Vyberte možnost **Ano** v poli **Odložená skupina**.
+4. Zadejte hodnotu do pole **Nadpis** . Toto je název, který se zobrazí na mobilním zařízení. Můžete například zadat `PO Move`.  
+5. V poli **Režim** vyberte **Práce** .
+6. V poli **Použít stávající práci** vyberte možnost **Ano** .
+    - Tato položka nabídky v mobilním zařízení se používá k provedení stávající práce. Proto je nutné nastavit tuto hodnotu na hodnotu **Ano** .  
+    - Pole **Zobrazit stav zásob určuje** , zda se stav zásob na skladě zobrazí pracovníkovi skladu na mobilním zařízení.  
+7. V poli **Řídí** vyberte **Systémové seskupení** . Pokud vyberete jinou možnost v poli **Řídí** , v části **Obecné** na této stránce se zobrazí další pole. Zobrazená pole závisí na vašem výběru. Při výběru možnosti **Systémové seskupení** budou přidána dvě nová pole. Ty jsou vysvětleny níže.  
+8. V poli **Systémové seskupení** vyberte **WorkPoolId** . Když pracovníci skladu otevřou tuto položku nabídky, budou vyzváni ke kontrole ID fondu práce. Uživateli budou předloženy všechny pracovní objednávky s tímto ID fondu práce a otevřené řádky pracovního příkazu, do kterých byla k této položce nabídky přidána některá z pracovních tříd.  
+9. Zadejte hodnotu do pole **Popisek systémového seskupení** . Tento textový popisek se zobrazí uživateli mobilního zařízení. Můžete například zadat **Fond práce** .  
+10. Vyberte možnost **Ano** v poli **Přepsat registrační značku během vložení** . Tato možnost umožňuje pracovníkům skladu přepsat cílové registrační značky, když jsou položky odloženy do umístění řízeného registračními značkami.  
+11. Vyberte možnost **Ano** v poli **Odložená skupina** .
     - Pokud všechny řádky vložení v pracovní objednávce sdílí stejné umístění, uživatel obdrží jednu kombinovanou instrukci pro vložení pro všechny řádky. 
     - ID šablony auditu: šablona auditu práce umožňuje určit, zda je třeba pracovní proces pro položku nabídky přerušit, aby mohla být provedena jiná operace. Pokud je tedy například tato položka nabídky určena pro vstupní práci, šablona auditu může vyžadovat, aby pracovník ověřil teplotu. Bod, ve kterém bude proces přerušen, je určen v šabloně auditu, a může se například jednat o zahájení nebo dokončení práce, nebo o okamžik, kdy dojde ke změně stavu.  
-12. Rozbalte sekci **Pracovní třídy**.
-13. Zvolte **Nové**.
-14. Zadejte `Purchase` do pole **ID pracovní třídy**. Pracovní fond omezuje práci, pro kterou lze používat položku nabídky. V tomto případě se použije pro otevřené řádky pracovního příkazu, které mají ID třídy pro práci u nákupu.  
-15. Zvolte **Uložit**.
+12. Rozbalte sekci **Pracovní třídy** .
+13. Zvolte **Nové** .
+14. Zadejte `Purchase` do pole **ID pracovní třídy** . Pracovní fond omezuje práci, pro kterou lze používat položku nabídky. V tomto případě se použije pro otevřené řádky pracovního příkazu, které mají ID třídy pro práci u nákupu.  
+15. Zvolte **Uložit** .
 
 ## <a name="set-up-work-confirmation"></a>Potvrzení nastavení práce
-1. Vyberte **Nastavení potvrzení práce**.
-2. V poli **Typ práce** vyberte **Vybrat**.
-3. Zaškrtněte políčko **Potvrdit automaticky**. Pracovní instrukce s typem práce „vyskladnění“ bude automaticky potvrzena. Tento pokyn není prezentován uživateli.  
-4. Zvolte **Nové**.
+1. Vyberte **Nastavení potvrzení práce** .
+2. V poli **Typ práce** vyberte **Vybrat** .
+3. Zaškrtněte políčko **Potvrdit automaticky** . Pracovní instrukce s typem práce „vyskladnění“ bude automaticky potvrzena. Tento pokyn není prezentován uživateli.  
+4. Zvolte **Nové** .
 5. V poli **Typ práce** vyberte „Vložit“.
-6. Zaškrtněte políčko **Potvrzení umístění**. Pracovník skladu, bude požádán, aby provedl kontrolní skenování v umístění, ve kterém je zboží odloženo.  
-7. Zvolte **Uložit**.
+6. Zaškrtněte políčko **Potvrzení umístění** . Pracovník skladu, bude požádán, aby provedl kontrolní skenování v umístění, ve kterém je zboží odloženo.  
+7. Zvolte **Uložit** .
 
 ## <a name="add-the-menu-item-to-a-mobile-device-menu"></a>Přidání položky nabídky do nabídky mobilního zařízení
 1. Přejděte do nabídky **Mobilní zařízení** jeho zadáním do vyhledávacího panelu.
-2. Vyberte možnost **Upravit**.
-3. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli **Jméno** pomocí hodnoty **inbound**. Chcete najít nabídku, kterou lze použít pro vstupní položky nabídky. V USMF se tato položka nazývá **Příchozí**.  
-4. Ve stromu vyberte **hodnotu**.
+2. Vyberte možnost **Upravit** .
+3. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli **Jméno** pomocí hodnoty **inbound** . Chcete najít nabídku, kterou lze použít pro vstupní položky nabídky. V USMF se tato položka nazývá **Příchozí** .  
+4. Ve stromu vyberte **hodnotu** .
 5. Vyberte šipku ukazující napravo.
-6. Zvolte **Uložit**.
+6. Zvolte **Uložit** .
 7. Zavřete stránku.

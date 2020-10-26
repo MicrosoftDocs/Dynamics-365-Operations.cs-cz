@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28f1d8db23f30017adf76bcee3e7f77db9ab387c
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: bc25ff113291b2a8a0a7ba15637e4d094feb9aae
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829948"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978935"
 ---
 # <a name="delivery-schedules"></a>Plány dodávek
 
@@ -43,7 +43,7 @@ Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku 
 
 V této situaci zákazník požaduje dodání 600 židlí v dávkách 100 židlí po dobu šesti měsíců. Ke sledování požadavků na dodání vytvoříte plán dodávek. Na stránce plánu dodávek vytvoříte šest samostatných řádků dodávky. Každý řádek dodávky obsahuje 100 židlí a označuje datum dodání těchto 100 židlí. V tomto případě se každý řádek posune u prvního dne měsíce po šest po sobě následujících měsíců.  
 
-Při vytváření plánu dodávek se typ původního řádku objednávky automaticky změní na **Řádek objednávky s více dodávkami**. Řádek tohoto typu je označován jako obchodní řádek a je označen ikonou. Řádek dodávky je označen jinou ikonou. Pokud změníte množství na řádku dodávky, aktualizuje se obchodní řádek na celkové množství plánu dodávek. Pokud obchodní smlouva definuje celkovou slevu pro objednávku, plán dodávek zajistí, že objednávka bude splňovat požadavky na slevu celkové objednávky, a to i v případě, že objednávka bude rozdělena na samostatné dodávky.  
+Při vytváření plánu dodávek se typ původního řádku objednávky automaticky změní na **Řádek objednávky s více dodávkami** . Řádek tohoto typu je označován jako obchodní řádek a je označen ikonou. Řádek dodávky je označen jinou ikonou. Pokud změníte množství na řádku dodávky, aktualizuje se obchodní řádek na celkové množství plánu dodávek. Pokud obchodní smlouva definuje celkovou slevu pro objednávku, plán dodávek zajistí, že objednávka bude splňovat požadavky na slevu celkové objednávky, a to i v případě, že objednávka bude rozdělena na samostatné dodávky.  
 
 Objednávky, které mají plán dodávek, se zpracují proti řádkům dodávky. Zpracování zahrnuje zaúčtování dodacích listů, příjemek produktů a fakturaci.  
 

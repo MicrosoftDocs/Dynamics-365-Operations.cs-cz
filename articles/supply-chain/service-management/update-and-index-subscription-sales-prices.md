@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7db18fdbdabe93a72094bbb104adf6e08e6002ee
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206489"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978959"
 ---
 # <a name="update-and-index-subscription-sales-prices"></a>Aktualizace a indexování prodejních cen předplatného 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky** .
 
 2.  Vyberte předplatné, u něhož chcete aktualizovat index nebo základní cenu.
 
-3.  Klepněte na tlačítko **Index**. V poli **Změnit** uveďte, zda chcete aktualizovat základní cenu nebo index a zda se při aktualizaci musí použít procento nebo nová hodnota. Vyberte některou z následujících možností:
+3.  Klepněte na tlačítko **Index** . V poli **Změnit** uveďte, zda chcete aktualizovat základní cenu nebo index a zda se při aktualizaci musí použít procento nebo nová hodnota. Vyberte některou z následujících možností:
     
       - **Index podle procenta**
     
@@ -44,7 +44,7 @@ ms.locfileid: "3206489"
     
       - **Základní cena**
 
-4.  Klikněte na tlačítko **OK**.
+4.  Klikněte na tlačítko **OK** .
 
 Základní cena nebo index předplatného byly aktualizovány pomocí zadané hodnoty.
 

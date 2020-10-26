@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35c7237bd84aeb13f6c24626a6aaa722f8ad5756
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206696"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981786"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Vytvoření šablony představující objekty u odběratele 
 
@@ -32,17 +32,17 @@ ms.locfileid: "3206696"
 
 Pomocí tohoto postupu nastavte šablonu, která představuje objekty u zákazníka.
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
 
 2.  Dvakrát klikněte na servisní smlouvu nebo kliknutím na možnost **Servisní smlouva** vytvořte novou servisní smlouvu.
 
-3.  Klepněte na kartu **Nastavení**.
+3.  Klepněte na kartu **Nastavení** .
 
-4.  Chcete-li k servisní smlouvě připojit šablonu kusovníku, klikněte na položku **Objekty služby**.
+4.  Chcete-li k servisní smlouvě připojit šablonu kusovníku, klikněte na položku **Objekty služby** .
 
-5.  Ve formuláři **Objekty servisu** klikněte na možnost Nový a klikněte na **Funkce** \> **Připojit kusovník šablony**.
+5.  Ve formuláři **Objekty servisu** klikněte na možnost Nový a klikněte na **Funkce** \> **Připojit kusovník šablony** .
 
-6.  Ve formuláři **Vybrat kusovník šablony** vyberte kusovník šablony v poli **Kusovník šablony** a klikněte na **OK**.
+6.  Ve formuláři **Vybrat kusovník šablony** vyberte kusovník šablony v poli **Kusovník šablony** a klikněte na **OK** .
 
 7.  Ve formuláři **Objekty servisu** klepněte na možnost **Návrhář** a upravte řádky šablony kusovníku tak, aby kusovník odpovídal požadovaným předmětům.
 

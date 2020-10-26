@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02965eac83d34f6b560e43538f745b215c7c3ee7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ec8a318561663f4a1b2cfd7735b5c1a5d18e8c0f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211829"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975769"
 ---
 # <a name="reason-codes-for-service-orders"></a>Kódy důvodů pro servisní zakázky   
 
@@ -38,7 +38,7 @@ Chcete-li zobrazit informace o kódech důvodu používaných ke sledování pr�
 
 Kódy důvodů jsou volitelné. Můžete se rozhodnout, zda má být požadován kód důvodu při aktualizaci servisní zakázky na určitou servisní fázi.
 
-1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **Fáze servisu**.
+1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **Fáze servisu** .
 
 2.  Ve formuláři **Fáze servisu** vyberte servisní fázi a poté zaškrtněte políčko **Důvod** pro servisní fázi.
 

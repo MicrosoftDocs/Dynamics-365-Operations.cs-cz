@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4c101f6d52366898492b6c9c70fb6cd12edfb9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206627"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983174"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Zahájení a ukončení záznamu času v servisní zakázce 
 
@@ -34,17 +34,17 @@ Tento postup můžete použít ke spuštění a zastavení nahrávání pro serv
 
 ## <a name="start-time-recording"></a>Zahájení záznamu času
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
-2.  Klepněte na kartu **servisní zakázka**. V **podokně akcí**ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Spustit**.
+2.  Klepněte na kartu **servisní zakázka** . V **podokně akcí** ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Spustit** .
 
 3.  Zadejte datum a čas, kdy by záznam času měl být zahájen.
 
 ## <a name="stop-time-recording"></a>Ukončit časový záznam
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
-2.  Klepněte na kartu **servisní zakázka**. V **podokně akcí**ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Konec**.
+2.  Klepněte na kartu **servisní zakázka** . V **podokně akcí** ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Konec** .
 
 3.  Zadejte datum a čas, kdy by záznam času měl být ukončen.
 

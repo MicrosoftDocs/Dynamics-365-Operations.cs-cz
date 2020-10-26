@@ -16,15 +16,15 @@ ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff3a21e87b9cb0bb371b0772c948cb62a4cb36b1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: daa36dad4009cc25b89363dcff6b4496205522e3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214612"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981480"
 ---
 # <a name="inventory-object-values"></a>Hodnoty objektu zásob
 
@@ -36,7 +36,7 @@ Nová funkce **„fyzické množství“** umožňuje zobrazit hodnoty určitéh
 
 Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob. Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md). 
 
-Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**. Zde je způsob výpočtu hodnoty objektu zásob: 
+Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů** . Zde je způsob výpočtu hodnoty objektu zásob: 
 
 Objekt zásob.Hodnota = Objektu nákladů.Průměrné náklady na jednotku x Objekt zásob.Množství 
 
@@ -45,7 +45,7 @@ Následující příklad ukazuje způsob výpočtu hodnot objektu zásob a objek
 -   Příjemka produktu 1: Množství = 100 kusů., Množství = 1 000,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B1
 -   Příjemka produktu 2: Množství = 50 kusů., Množství = 800,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B2
 
-Následující tabulka zobrazuje výsledek výpočtu nákladového objektu. Výsledky lze zobrazit na stránce **Nákladový objekt**.
+Následující tabulka zobrazuje výsledek výpočtu nákladového objektu. Výsledky lze zobrazit na stránce **Nákladový objekt** .
 
 <table style="width:100%;">
 <colgroup>
@@ -81,7 +81,7 @@ Následující tabulka zobrazuje výsledek výpočtu nákladového objektu. Výs
 </tbody>
 </table>
 
-Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky lze zobrazit kliknutím na možnost **Fyzické množství** na stránce **Nákladový objekt**.
+Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky lze zobrazit kliknutím na možnost **Fyzické množství** na stránce **Nákladový objekt** .
 
 <table style="width:100%;">
 <colgroup>

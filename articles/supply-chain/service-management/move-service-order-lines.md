@@ -15,32 +15,32 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5911a3c48d7ddd7dc705cb90fd72b821a2ae1921
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5aef889641a677838dcebe97451e057f2bfbeada
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202208"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978203"
 ---
 # <a name="move-service-order-lines"></a>Přesunout řádky servisní zakázky 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
 2.  Dvakrát klikněte na servisní zakázku, která obsahuje řádky, jež chcete přesunout do jiné servisní zakázky.
 
-3.  Ve formuláři **servisní zakázky** v podokně akcí klepněte na tlačítko **přesunout řádky**.
+3.  Ve formuláři **servisní zakázky** v podokně akcí klepněte na tlačítko **přesunout řádky** .
 
 4.  Ve formuláři **Přesunout řádky servisní zakázky** v poli **Servisní zakázka** vyberte servisní zakázku, do které chcete přesunout řádky.
 
-5.  Chcete-li odstranit prázdnou servisní zakázku, z níž jste přesunuli řádky servisní zakázky, zaškrtněte políčko **Odstranit prázdnou servisní zakázku**.
+5.  Chcete-li odstranit prázdnou servisní zakázku, z níž jste přesunuli řádky servisní zakázky, zaškrtněte políčko **Odstranit prázdnou servisní zakázku** .
 
-6.  Klikněte na tlačítko **OK**.
+6.  Klikněte na tlačítko **OK** .
 
 
 > [!NOTE]

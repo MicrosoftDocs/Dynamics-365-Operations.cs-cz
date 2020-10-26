@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e324edd4053699cc3c947c38ecd52a50c830928
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 5f7d4a99166af112abe26220a700fcf4be79223b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830373"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981683"
 ---
 # <a name="order-entry-deadlines"></a>Konečné termíny zadání objednávek
 
@@ -37,14 +37,14 @@ Konečné termíny zadání objednávky se používají jako vstup pro příslib
 
 Na stránce **Konečné termíny zadání objednávek** jsou uvedeny termíny zadání objednávky pro všechny dny v týdnu. Všechny objednávky, které byly přijaty po uplynutí této doby, jsou považovány za přijaté v následující den. Výchozí nastavení času těchto termínů je 23:59, jednu minutu před půlnocí na konci příslušného dne. Výchozí časy lze změnit tak, aby odpovídaly skutečným časům expedice nebo příjmu.  
 
-Konečné termíny podání objednávky můžete definovat pro konkrétní skupinu odběratelů. Můžete například chtít, aby určitá skupina zákazníků měla termíny podání objednávky, které jsou novější, než ty od jiných odběratelů. V takovém případě nejprve definujete skupiny pro konečné termíny zadání objednávek na stránce **Skupiny konečných termínů zadání objednávek**. Potom přiřadíte skupiny odběratelům na stránce **Odběratelé**.  
+Konečné termíny podání objednávky můžete definovat pro konkrétní skupinu odběratelů. Můžete například chtít, aby určitá skupina zákazníků měla termíny podání objednávky, které jsou novější, než ty od jiných odběratelů. V takovém případě nejprve definujete skupiny pro konečné termíny zadání objednávek na stránce **Skupiny konečných termínů zadání objednávek** . Potom přiřadíte skupiny odběratelům na stránce **Odběratelé** .  
 
-Jestliže má vaše společnost pobočky na více místech, můžete nastavit termíny zadání objednávky pro každou pobočku. Jestliže jsou pobočky v různých časových pásmech, je termín zadání objednávky nastaven v časovém pásmu pobočky. Avšak při práci s prodejními objednávkami a prodejními nabídkami je termín zadání objednávky převeden na vaše časové pásmo na stránce **Dostupná data expedice a příjmu**.  
+Jestliže má vaše společnost pobočky na více místech, můžete nastavit termíny zadání objednávky pro každou pobočku. Jestliže jsou pobočky v různých časových pásmech, je termín zadání objednávky nastaven v časovém pásmu pobočky. Avšak při práci s prodejními objednávkami a prodejními nabídkami je termín zadání objednávky převeden na vaše časové pásmo na stránce **Dostupná data expedice a příjmu** .  
 
 Na stránce **Aktivovat kombinace konečných termínů zadání objednávek** lze definovat kombinace konečných termínů pracovišť a zadání objednávky, které jsou povoleny.
 
 ## <a name="example-order-entry-deadline"></a>Příklad: Konečný termín zadání objednávky
-Konečný termín pro zadání objednávky v úterý byl nastaven na 16:00. K určitému úterý v 17:00 se pokusíte nastavit aktuální datum jako datum dodání. (Pro tento příklad neexistuje žádná doba realizace.)Pokud označíte pole **Řízení data dodání**, zobrazí se varovná zpráva oznamující, že datum není platné. Toto upozornění se zobrazí na stránce **Dostupná data expedice a příjmu**, kde můžete vybrat alternativní data.
+Konečný termín pro zadání objednávky v úterý byl nastaven na 16:00. K určitému úterý v 17:00 se pokusíte nastavit aktuální datum jako datum dodání. (Pro tento příklad neexistuje žádná doba realizace.)Pokud označíte pole **Řízení data dodání** , zobrazí se varovná zpráva oznamující, že datum není platné. Toto upozornění se zobrazí na stránce **Dostupná data expedice a příjmu** , kde můžete vybrat alternativní data.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Příklad: Různé termíny zadání objednávky pro různé pobočky
 Vaši společnost tvoří dvě pobočky. Pobočky se nachází v různých časových pásmech, jak je uvedeno v následující tabulce.

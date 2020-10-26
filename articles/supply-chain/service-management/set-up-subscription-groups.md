@@ -15,30 +15,30 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0333950525c4e05a63f0dc99fec7d2d52e4477
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7a98d096c0eec6b1d585856b63113fd6dd60c0a4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206719"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984888"
 ---
 # <a name="set-up-subscription-groups"></a>Nastavit skupiny předplatného 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
+1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného** .
 
 2.  Stisknutím kláves CTRL+N nebo klepnutím na možnost **Nový** na panelu nástrojů vytvořte novou skupinu předplatného.
 
 3.  V poli **skupina předplatného** zadejte název nové skupiny předplatného.
 
-4.  V poli **fakturace** vyberte četnost fakturace předplatného. Četnost fakturace je určena kódem období, který je nastaven ve formuláři **Typy období**.
+4.  V poli **fakturace** vyberte četnost fakturace předplatného. Četnost fakturace je určena kódem období, který je nastaven ve formuláři **Typy období** .
 
-5.  Pokud chcete časově rozlišit výnosy u transakcí předplatného, zaškrtněte políčko **Časově rozlišené výnosy** a v poli **Časové rozlišení** vyberte požadovanou četnost. Stejně jako četnost fakturace je i četnost časového rozlišení založena na kódu období nastaveném ve formuláři **Období**.
+5.  Pokud chcete časově rozlišit výnosy u transakcí předplatného, zaškrtněte políčko **Časově rozlišené výnosy** a v poli **Časové rozlišení** vyberte požadovanou četnost. Stejně jako četnost fakturace je i četnost časového rozlišení založena na kódu období nastaveném ve formuláři **Období** .
 
 ## <a name="see-also"></a>Viz také
 

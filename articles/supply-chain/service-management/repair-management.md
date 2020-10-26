@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0098decb7132fe5c3e6b28c309365e130c068914
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202162"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975601"
 ---
 # <a name="repair-management"></a>Správa oprav       
 
@@ -38,15 +38,15 @@ Můžete nastavit příznaky, diagnózu a řešení. Všechny můžete později 
 
 Formuláře pro nastavení slouží k zadávání informací, které budou použity k zadání symptomů, diagnózy a rozhodnutí opravy.
 
-1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **podmínky**.
+1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **podmínky** .
 
-2.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků**.
+2.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků** .
 
-3.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy**.
+3.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy** .
 
-4.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Řešení**.
+4.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Řešení** .
 
-5.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Fáze oprav**.
+5.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Fáze oprav** .
 
 ## <a name="symptoms-and-conditions"></a>Příznaky a podmínky
 
@@ -72,7 +72,7 @@ Oblast diagnózy popisuje operace, které je třeba podniknout s cílem vyřeše
 
 ## <a name="repair-stages"></a>Fáze opravy
 
-Fáze opravy popisují průběh procesu opravy. Fáze opravy obsahuje parametr **Dokončeno**, který udává, že zpracování řádku opravy bylo dokončeno a datum a čas dokončení byl zaznamenán.
+Fáze opravy popisují průběh procesu opravy. Fáze opravy obsahuje parametr **Dokončeno** , který udává, že zpracování řádku opravy bylo dokončeno a datum a čas dokončení byl zaznamenán.
 
 ## <a name="applying-repair-management"></a>Použití správy oprav
 
@@ -82,11 +82,11 @@ Chcete-li pro určitou položku použít správu oprav, musí být tato položka
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Vytvoření řádku opravy pro servisní zakázku
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
 2.  Vyberte servisní zakázku s předmětem servisu, který vyžaduje opravu.
 
-3.  Klepněte na tlačítko **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav**.
+3.  Klepněte na tlačítko **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav** .
 
 4.  Stisknutím kombinace kláves CTRL+N vytvořte nový řádek.
 
@@ -100,15 +100,15 @@ Chcete-li pro určitou položku použít správu oprav, musí být tato položka
 
 Chcete-li sledovat průběh opravy problému, můžete pro řádek opravy definovat fáze opravy.
 
-Po vyřešení problému s opravou můžete řádek opravy zavřít. Nastavte fázi opravy na fázi s aktivovanou vlastností **dokončeno**. Jako čas dokončení zpracování řádku bude zaregistrováno aktuální datum a čas.
+Po vyřešení problému s opravou můžete řádek opravy zavřít. Nastavte fázi opravy na fázi s aktivovanou vlastností **dokončeno** . Jako čas dokončení zpracování řádku bude zaregistrováno aktuální datum a čas.
 
 ## <a name="close-a-repair-line-for-a-resolved-issue"></a>Zavřete řádek opravy pro vyřešený problém
 
-1.  Otevřete formulář **Řádky opravy**. Pomocí postupu popsaného dříve v tomto tématu vytvořte řádek opravy.
+1.  Otevřete formulář **Řádky opravy** . Pomocí postupu popsaného dříve v tomto tématu vytvořte řádek opravy.
 
 2.  Vyberte řádek opravy s položkou opravy, kterou chcete uzavřít.
 
-3.  V poli **Fáze opravy** vyberte fázi s aktivovanou vlastností **Dokončeno**.
+3.  V poli **Fáze opravy** vyberte fázi s aktivovanou vlastností **Dokončeno** .
 
   
 

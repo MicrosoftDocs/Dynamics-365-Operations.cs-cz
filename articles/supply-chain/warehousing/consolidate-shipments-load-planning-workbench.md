@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 396a038dbf2f4b6835ecbb5fd8cb39a3a3608af7
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383730"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986833"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení
 
@@ -31,7 +31,7 @@ Toto téma představuje scénář, ve kterém je více objednávek uvolněno do 
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
+Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Nastavení zásad konsolidace dodávek a filtry produktů
 
@@ -54,7 +54,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -68,7 +68,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -82,13 +82,13 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -104,13 +104,13 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)
+    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý* )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)
+    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní* )
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -127,7 +127,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -141,7 +141,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -156,7 +156,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -169,7 +169,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -185,7 +185,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -201,7 +201,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -210,10 +210,10 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 Chcete-li vytvořit náklad pro každou sadu objednávek, kterou jste vytvořili pro tento scénář, a poté ji uvolnit do skladu, postupujte takto.
 
-1. Přejděte do **Řízení skladu \> Náklady \> Pracovní plocha plánování nákladu**.
+1. Přejděte do **Řízení skladu \> Náklady \> Pracovní plocha plánování nákladu** .
 1. Na kartě **Řádky prodeje** najděte a vyberte všechny řádky prodejních objednávek z jedné ze sad objednávek, které jste pro tento scénář vytvořili.
 1. V podokně akcí na kartě **Nabídka a poptávka** vyberte **Přidat \> Do nového nákladu** a přidejte vybrané řádky prodejní objednávky do nového nákladu.
-1. V dialogovém okně **Přiřazení šablony nákladu** v poli **ID šablony nákladu** vyberte šablonu nákladu, například *Standardní šablona nákladu*.
+1. V dialogovém okně **Přiřazení šablony nákladu** v poli **ID šablony nákladu** vyberte šablonu nákladu, například *Standardní šablona nákladu* .
 1. Zvolte **OK** a zavřete dialogové okno. 
 1. V části **Náklady** vyhledejte a vyberte náklad, který jste právě vytvořili.
 1. Vyberte **Uvolnění \> Uvolnění do skladu** pro uvolnění vybraného nákladu do skladu.
@@ -223,39 +223,39 @@ Chcete-li vytvořit náklad pro každou sadu objednávek, kterou jste vytvořili
 
 Následující postup umožňuje ověřit dodávky, které byly vytvořeny nebo aktualizovány v důsledku konsolidace dodávky. Použijte ho ke kontrole každé sady objednávek, kterou jste vytvořili pro tento scénář, a poté zkontrolujte následující pododdíly, abyste se ujistili, že jste dosáhli očekávaných výsledků.
 
-1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.
+1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky** .
 1. Najděte a vyberte požadovanou dodávku.
-1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.
+1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek** .
 
 ### <a name="release-order-set-1-in-one-load"></a>Uvolněte sadu objednávek 1 v jednom nákladu
 
 Měly být vytvořeny dvě dodávky:
 
-- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.
-- Druhá dodávka, která nepoužívá způsob dopravy *Airways*, byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
+- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode* .
+- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo* .
 
 ### <a name="release-order-set-2-in-one-load"></a>Uvolněte sadu objednávek 2 v jednom nákladu
 
 Měly být vytvořeny tři dodávky:
 
-- První dodávka obsahuje položky *Hořlavý*.
-- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.
+- První dodávka obsahuje položky *Hořlavý* .
+- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní* .
 
 ### <a name="release-order-set-3-in-one-load"></a>Uvolněte sadu objednávek 3 v jednom nákladu
 
 Měly být vytvořeny dvě dodávky:
 
-- První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1*.
-- Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2*.
+- První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1* .
+- Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2* .
 
 ### <a name="release-order-set-4-in-one-load"></a>Uvolněte sadu objednávek 4 v jednom nákladu
 
 Měly být vytvořeny čtyři dodávky:
 
-- Řádky ze dvou objednávek pro účet zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky ze dvou objednávek pro účet zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky z objednávek 4-5 a 4-6 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky z objednávek 4-7 a 4-8 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.
+- Řádky ze dvou objednávek pro účet zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky ze dvou objednávek pro účet zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky z objednávek 4-5 a 4-6 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky z objednávek 4-7 a 4-8 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder* .
 
 ## <a name="additional-resources"></a>Další prostředky
 
