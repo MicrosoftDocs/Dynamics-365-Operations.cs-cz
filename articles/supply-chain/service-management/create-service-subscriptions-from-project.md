@@ -15,42 +15,42 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ab02faeed49a43fa30a2db771bc3e1fe7717589
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202668"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978694"
 ---
-# <a name="create-service-subscriptions-from-a-project"></a><span data-ttu-id="186c1-103">Vytvoření předplatného služby z projektu</span><span class="sxs-lookup"><span data-stu-id="186c1-103">Create service subscriptions from a project</span></span>    
+# <a name="create-service-subscriptions-from-a-project"></a><span data-ttu-id="8c102-103">Vytvoření předplatného služby z projektu</span><span class="sxs-lookup"><span data-stu-id="8c102-103">Create service subscriptions from a project</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="186c1-104">Předplatné servisu můžete vytvořit z projektu v **řízení a účetnictví projektu**.</span><span class="sxs-lookup"><span data-stu-id="186c1-104">You can create a service subscription from a project in **Project management and accounting**.</span></span>
+<span data-ttu-id="8c102-104">Předplatné servisu můžete vytvořit z projektu v **řízení a účetnictví projektu** .</span><span class="sxs-lookup"><span data-stu-id="8c102-104">You can create a service subscription from a project in **Project management and accounting** .</span></span>
 
-1.  <span data-ttu-id="186c1-105">Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="186c1-105">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span> <span data-ttu-id="186c1-106">Otevřete projekt, pro který chcete vytvořit předplatné.</span><span class="sxs-lookup"><span data-stu-id="186c1-106">Open the project that you want to create a subscription for.</span></span>
+1.  <span data-ttu-id="8c102-105">Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty** .</span><span class="sxs-lookup"><span data-stu-id="8c102-105">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects** .</span></span> <span data-ttu-id="8c102-106">Otevřete projekt, pro který chcete vytvořit předplatné.</span><span class="sxs-lookup"><span data-stu-id="8c102-106">Open the project that you want to create a subscription for.</span></span>
 
-2.  <span data-ttu-id="186c1-107">Ve formuláři **projekty** v **podokně akcí** na kartě **Správa** klikněte na **Servis** \> **Předplatné servisu**.</span><span class="sxs-lookup"><span data-stu-id="186c1-107">On the **Projects** form, on the **Action Pane**, on the **Manage** tab, click **Service** \> **Service subscription**.</span></span>
+2.  <span data-ttu-id="8c102-107">Ve formuláři **projekty** v **podokně akcí** na kartě **Správa** klikněte na **Servis** \> **Předplatné servisu** .</span><span class="sxs-lookup"><span data-stu-id="8c102-107">On the **Projects** form, on the **Action Pane** , on the **Manage** tab, click **Service** \> **Service subscription** .</span></span>
 
-3.  <span data-ttu-id="186c1-108">Ve formuláři **předplatné** v poli **předplatné servisu** zadejte jedinečné identifikační číslo.</span><span class="sxs-lookup"><span data-stu-id="186c1-108">On the **Subscription** form, in the **Service subscription** field, enter a unique identification number.</span></span> <span data-ttu-id="186c1-109">Číslo projektu je automaticky zadáno do předplatného pro vybraný projekt.</span><span class="sxs-lookup"><span data-stu-id="186c1-109">The project number is entered automatically into the subscription for the selected project.</span></span>
+3.  <span data-ttu-id="8c102-108">Ve formuláři **předplatné** v poli **předplatné servisu** zadejte jedinečné identifikační číslo.</span><span class="sxs-lookup"><span data-stu-id="8c102-108">On the **Subscription** form, in the **Service subscription** field, enter a unique identification number.</span></span> <span data-ttu-id="8c102-109">Číslo projektu je automaticky zadáno do předplatného pro vybraný projekt.</span><span class="sxs-lookup"><span data-stu-id="8c102-109">The project number is entered automatically into the subscription for the selected project.</span></span>
 
-4.  <span data-ttu-id="186c1-110">Do formuláře zadejte ostatní údaje.</span><span class="sxs-lookup"><span data-stu-id="186c1-110">Enter the remaining information in the form.</span></span>
+4.  <span data-ttu-id="8c102-110">Do formuláře zadejte ostatní údaje.</span><span class="sxs-lookup"><span data-stu-id="8c102-110">Enter the remaining information in the form.</span></span>
 
-<span data-ttu-id="186c1-111">Nyní můžete pro předplatné vytvořit transakce předplatného.</span><span class="sxs-lookup"><span data-stu-id="186c1-111">You can now create subscription transactions for the subscription.</span></span>
+<span data-ttu-id="8c102-111">Nyní můžete pro předplatné vytvořit transakce předplatného.</span><span class="sxs-lookup"><span data-stu-id="8c102-111">You can now create subscription transactions for the subscription.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="186c1-112">Pokud jste nastavili číselnou řadu pro skupinu předplatného, je po nastavení skupiny předplatného automaticky vygenerováno ID předplatného.</span><span class="sxs-lookup"><span data-stu-id="186c1-112">If you have set up a number sequence for the subscription group, a subscription ID is generated automatically for the subscription when you specify the subscription group.</span></span></P>
+> <P><span data-ttu-id="8c102-112">Pokud jste nastavili číselnou řadu pro skupinu předplatného, je po nastavení skupiny předplatného automaticky vygenerováno ID předplatného.</span><span class="sxs-lookup"><span data-stu-id="8c102-112">If you have set up a number sequence for the subscription group, a subscription ID is generated automatically for the subscription when you specify the subscription group.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="186c1-113">Viz také</span><span class="sxs-lookup"><span data-stu-id="186c1-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8c102-113">Viz také</span><span class="sxs-lookup"><span data-stu-id="8c102-113">See also</span></span>
 
-[<span data-ttu-id="186c1-114">Prodejní cena předplatného</span><span class="sxs-lookup"><span data-stu-id="186c1-114">Subscription sales prices</span></span>](subscription-sales-prices.md)
+[<span data-ttu-id="8c102-114">Prodejní cena předplatného</span><span class="sxs-lookup"><span data-stu-id="8c102-114">Subscription sales prices</span></span>](subscription-sales-prices.md)
 
   
 

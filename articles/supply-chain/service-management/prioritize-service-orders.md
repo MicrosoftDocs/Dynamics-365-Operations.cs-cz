@@ -15,38 +15,38 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ae39ffac183194b5a4b969a4031e8a816f1b839
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 55f0f625f48df57ab5b86c524841815c717d2bdd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211852"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978380"
 ---
-# <a name="prioritize-service-orders"></a><span data-ttu-id="ef930-103">Určení priorit servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="ef930-103">Prioritize service orders</span></span> 
+# <a name="prioritize-service-orders"></a><span data-ttu-id="c8feb-103">Určení priorit servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="c8feb-103">Prioritize service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="ef930-104">Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.</span><span class="sxs-lookup"><span data-stu-id="ef930-104">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="c8feb-104">Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .</span><span class="sxs-lookup"><span data-stu-id="c8feb-104">Click **Service management** \> **Periodic** \> **Dispatch board** .</span></span>
 
-2.  <span data-ttu-id="ef930-105">Klepnutím na položku **Pokročilé** zobrazte v horní části formuláře Ganttův diagram a v dolním podokně zobrazte karty.</span><span class="sxs-lookup"><span data-stu-id="ef930-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
+2.  <span data-ttu-id="c8feb-105">Klepnutím na položku **Pokročilé** zobrazte v horní části formuláře Ganttův diagram a v dolním podokně zobrazte karty.</span><span class="sxs-lookup"><span data-stu-id="c8feb-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
 
-3.  <span data-ttu-id="ef930-106">Rozbalte jednotlivé seznamy expedičních týmů.</span><span class="sxs-lookup"><span data-stu-id="ef930-106">Expand each dispatch team list.</span></span>
+3.  <span data-ttu-id="c8feb-106">Rozbalte jednotlivé seznamy expedičních týmů.</span><span class="sxs-lookup"><span data-stu-id="c8feb-106">Expand each dispatch team list.</span></span>
 
-4.  <span data-ttu-id="ef930-107">Vyberte barevně vyznačenou grafiku, která reprezentuje servisní aktivitu.</span><span class="sxs-lookup"><span data-stu-id="ef930-107">Select the color-coded graphic that represents a service activity.</span></span>
+4.  <span data-ttu-id="c8feb-107">Vyberte barevně vyznačenou grafiku, která reprezentuje servisní aktivitu.</span><span class="sxs-lookup"><span data-stu-id="c8feb-107">Select the color-coded graphic that represents a service activity.</span></span>
 
-5.  <span data-ttu-id="ef930-108">Na kartě **Vše**, **Tým**, **Neexpedováno** nebo **Související** proveďte změnu výběru v poli **Priorita**.</span><span class="sxs-lookup"><span data-stu-id="ef930-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
+5.  <span data-ttu-id="c8feb-108">Na kartě **Vše** , **Tým** , **Neexpedováno** nebo **Související** proveďte změnu výběru v poli **Priorita** .</span><span class="sxs-lookup"><span data-stu-id="c8feb-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
 
-6.  <span data-ttu-id="ef930-109">Klikněte na tlačítko **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="ef930-109">Click **Save**.</span></span>
+6.  <span data-ttu-id="c8feb-109">Klikněte na tlačítko **Uložit** .</span><span class="sxs-lookup"><span data-stu-id="c8feb-109">Click **Save** .</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ef930-110">Viz také</span><span class="sxs-lookup"><span data-stu-id="ef930-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8feb-110">Viz také</span><span class="sxs-lookup"><span data-stu-id="c8feb-110">See also</span></span>
 
-[<span data-ttu-id="ef930-111">Expediční vývěska</span><span class="sxs-lookup"><span data-stu-id="ef930-111">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="c8feb-111">Expediční vývěska</span><span class="sxs-lookup"><span data-stu-id="c8feb-111">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="ef930-112">Zobrazení stavu servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="ef930-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
+[<span data-ttu-id="c8feb-112">Zobrazení stavu servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="c8feb-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
 
   
 

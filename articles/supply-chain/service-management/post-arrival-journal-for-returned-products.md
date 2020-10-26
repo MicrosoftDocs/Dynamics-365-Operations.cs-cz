@@ -15,45 +15,45 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c96f1499cf9ef93a56a636f990aa5d0d183f9627
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e07542a369506b810704012bd1b07557b79f50d7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202117"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983788"
 ---
-# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="8e911-103">Zaúčtování deník doručení u vrácených produktů</span><span class="sxs-lookup"><span data-stu-id="8e911-103">Post arrival journal for returned products</span></span> 
+# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="04d40-103">Zaúčtování deník doručení u vrácených produktů</span><span class="sxs-lookup"><span data-stu-id="04d40-103">Post arrival journal for returned products</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8e911-104">Chcete-li zpracovat vrácení, nejprve ověřte vracené množství, aktualizujte pole množství v deníku doručení zboží.</span><span class="sxs-lookup"><span data-stu-id="8e911-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="8e911-105">Vyberte kód dispozice nebo označte, že vrácené zboží musí být prohlédnuto.</span><span class="sxs-lookup"><span data-stu-id="8e911-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="8e911-106">Po provedení těchto kroků můžete pro vratku zaúčtovat deník doručení položek.</span><span class="sxs-lookup"><span data-stu-id="8e911-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
+<span data-ttu-id="04d40-104">Chcete-li zpracovat vrácení, nejprve ověřte vracené množství, aktualizujte pole množství v deníku doručení zboží.</span><span class="sxs-lookup"><span data-stu-id="04d40-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="04d40-105">Vyberte kód dispozice nebo označte, že vrácené zboží musí být prohlédnuto.</span><span class="sxs-lookup"><span data-stu-id="04d40-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="04d40-106">Po provedení těchto kroků můžete pro vratku zaúčtovat deník doručení položek.</span><span class="sxs-lookup"><span data-stu-id="04d40-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
 
-1.  <span data-ttu-id="8e911-107">Klikněte na **Řízení skladů** \> **Pravidelné** \> **Přehled příjezdů**.</span><span class="sxs-lookup"><span data-stu-id="8e911-107">Click **Inventory management** \> **Periodic** \> **Arrival overview**.</span></span>
+1.  <span data-ttu-id="04d40-107">Klikněte na **Řízení skladů** \> **Pravidelné** \> **Přehled příjezdů** .</span><span class="sxs-lookup"><span data-stu-id="04d40-107">Click **Inventory management** \> **Periodic** \> **Arrival overview** .</span></span>
 
-2.  <span data-ttu-id="8e911-108">Ve filtru **Název nastavení** vyberte **vratka**.</span><span class="sxs-lookup"><span data-stu-id="8e911-108">In the **Setup name** filter, select **Return order**.</span></span>
+2.  <span data-ttu-id="04d40-108">Ve filtru **Název nastavení** vyberte **vratka** .</span><span class="sxs-lookup"><span data-stu-id="04d40-108">In the **Setup name** filter, select **Return order** .</span></span>
 
-3.  <span data-ttu-id="8e911-109">Je-li seznam příjmů příliš dlouhý, můžete jej omezit pomocí polí v oblasti **Rozsah**.</span><span class="sxs-lookup"><span data-stu-id="8e911-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
+3.  <span data-ttu-id="04d40-109">Je-li seznam příjmů příliš dlouhý, můžete jej omezit pomocí polí v oblasti **Rozsah** .</span><span class="sxs-lookup"><span data-stu-id="04d40-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
 
-4.  <span data-ttu-id="8e911-110">Vyhledejte řádek vratky, který chcete zaúčtovat, zaškrtněte u něj políčko **Vybrat pro doručení** a poté klepněte na položku **Zahájit doručení**.</span><span class="sxs-lookup"><span data-stu-id="8e911-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival**.</span></span>
+4.  <span data-ttu-id="04d40-110">Vyhledejte řádek vratky, který chcete zaúčtovat, zaškrtněte u něj políčko **Vybrat pro doručení** a poté klepněte na položku **Zahájit doručení** .</span><span class="sxs-lookup"><span data-stu-id="04d40-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival** .</span></span>
 
-5.  <span data-ttu-id="8e911-111">Klepněte na tlačítko **deníky** \> **Zobrazit doručení z příjemek** k otevření formuláře **deník skladového místa**.</span><span class="sxs-lookup"><span data-stu-id="8e911-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
+5.  <span data-ttu-id="04d40-111">Klepněte na tlačítko **deníky** \> **Zobrazit doručení z příjemek** k otevření formuláře **deník skladového místa** .</span><span class="sxs-lookup"><span data-stu-id="04d40-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
     
 
     > [!TIP]
-    > <P><span data-ttu-id="8e911-112">Chcete-li zobrazit podrobné informace, vyberte deník a poté klepněte na položku <STRONG>Řádky</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="8e911-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
+    > <P><span data-ttu-id="04d40-112">Chcete-li zobrazit podrobné informace, vyberte deník a poté klepněte na položku <STRONG>Řádky</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="04d40-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
 
 
-6.  <span data-ttu-id="8e911-113">Proveďte nutné aktualizace a poté klepněte na položku **Zaúčtovat**.</span><span class="sxs-lookup"><span data-stu-id="8e911-113">Make any necessary updates, and then click **Post**.</span></span>
+6.  <span data-ttu-id="04d40-113">Proveďte nutné aktualizace a poté klepněte na položku **Zaúčtovat** .</span><span class="sxs-lookup"><span data-stu-id="04d40-113">Make any necessary updates, and then click **Post** .</span></span>
 
-<span data-ttu-id="8e911-114">Po zaúčtování deníku budou vrácené položky registrovány na skladě a ve formuláři **Vratky** bude uvedeno, že byly dodány položky na sklad.</span><span class="sxs-lookup"><span data-stu-id="8e911-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
+<span data-ttu-id="04d40-114">Po zaúčtování deníku budou vrácené položky registrovány na skladě a ve formuláři **Vratky** bude uvedeno, že byly dodány položky na sklad.</span><span class="sxs-lookup"><span data-stu-id="04d40-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8e911-115">Viz také</span><span class="sxs-lookup"><span data-stu-id="8e911-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="04d40-115">Viz také</span><span class="sxs-lookup"><span data-stu-id="04d40-115">See also</span></span>
 
-<span data-ttu-id="8e911-116">[Deník skl. míst (formulář)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="8e911-116">[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span></span>
+<span data-ttu-id="04d40-116">[Deník skl. míst (formulář)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="04d40-116">[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span></span>
 
   
 

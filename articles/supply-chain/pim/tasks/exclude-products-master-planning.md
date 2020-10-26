@@ -12,35 +12,35 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 999702b9a14965271b1ed350cda752e715a22a25
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5f9573fd220cd8b6a58f81e4d17ca65234f41beb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203588"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985334"
 ---
-# <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a><span data-ttu-id="6cbeb-103">Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování</span><span class="sxs-lookup"><span data-stu-id="6cbeb-103">Create a product lifecycle state to exclude products from Master planning</span></span>
+# <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a><span data-ttu-id="25845-103">Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování</span><span class="sxs-lookup"><span data-stu-id="25845-103">Create a product lifecycle state to exclude products from Master planning</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6cbeb-104">Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyloučením produktů z hlavního plánování a výpočtu úrovně Kusovníku.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-104">This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation.</span></span>
+<span data-ttu-id="25845-104">Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyloučením produktů z hlavního plánování a výpočtu úrovně Kusovníku.</span><span class="sxs-lookup"><span data-stu-id="25845-104">This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation.</span></span>
 
 
-## <a name="create-an-obsolete-state"></a><span data-ttu-id="6cbeb-105">Vytvoření zastaralého stavu</span><span class="sxs-lookup"><span data-stu-id="6cbeb-105">Create an obsolete state</span></span>
-1. <span data-ttu-id="6cbeb-106">Přejděte na Řízení informací o produktech > Nastavení > Stav životnosti produktu.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
-2. <span data-ttu-id="6cbeb-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-107">Click New.</span></span>
-3. <span data-ttu-id="6cbeb-108">Zadejte hodnotu do pole Stav.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-108">In the State field, type a value.</span></span>
-4. <span data-ttu-id="6cbeb-109">Vyberte možnost Ne v poli Je aktivní pro plánování.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-109">Select No in the Is active for planning field.</span></span>
-5. <span data-ttu-id="6cbeb-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-110">In the Description field, type a value.</span></span>
+## <a name="create-an-obsolete-state"></a><span data-ttu-id="25845-105">Vytvoření zastaralého stavu</span><span class="sxs-lookup"><span data-stu-id="25845-105">Create an obsolete state</span></span>
+1. <span data-ttu-id="25845-106">Přejděte na Řízení informací o produktech > Nastavení > Stav životnosti produktu.</span><span class="sxs-lookup"><span data-stu-id="25845-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
+2. <span data-ttu-id="25845-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="25845-107">Click New.</span></span>
+3. <span data-ttu-id="25845-108">Zadejte hodnotu do pole Stav.</span><span class="sxs-lookup"><span data-stu-id="25845-108">In the State field, type a value.</span></span>
+4. <span data-ttu-id="25845-109">Vyberte možnost Ne v poli Je aktivní pro plánování.</span><span class="sxs-lookup"><span data-stu-id="25845-109">Select No in the Is active for planning field.</span></span>
+5. <span data-ttu-id="25845-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="25845-110">In the Description field, type a value.</span></span>
 
-## <a name="associate-the-obsolete-state-to-a-released-product"></a><span data-ttu-id="6cbeb-111">Přidružení zastaralého stavu k uvolněnému produktu</span><span class="sxs-lookup"><span data-stu-id="6cbeb-111">Associate the obsolete state to a released product</span></span>
-1. <span data-ttu-id="6cbeb-112">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-112">Close the page.</span></span>
-2. <span data-ttu-id="6cbeb-113">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-113">Go to Product information management > Products > Released products.</span></span>
-3. <span data-ttu-id="6cbeb-114">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="6cbeb-115">Můžete například filtrovat v poli Hledat jméno pomocí hodnoty M00.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-115">For example, filter on the Search name field with a value of 'M00'.</span></span>
-4. <span data-ttu-id="6cbeb-116">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-116">Click Edit.</span></span>
-5. <span data-ttu-id="6cbeb-117">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-117">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="6cbeb-118">V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6cbeb-118">In the Product lifecycle state field, enter or select a value.</span></span>
+## <a name="associate-the-obsolete-state-to-a-released-product"></a><span data-ttu-id="25845-111">Přidružení zastaralého stavu k uvolněnému produktu</span><span class="sxs-lookup"><span data-stu-id="25845-111">Associate the obsolete state to a released product</span></span>
+1. <span data-ttu-id="25845-112">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="25845-112">Close the page.</span></span>
+2. <span data-ttu-id="25845-113">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="25845-113">Go to Product information management > Products > Released products.</span></span>
+3. <span data-ttu-id="25845-114">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="25845-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="25845-115">Můžete například filtrovat v poli Hledat jméno pomocí hodnoty M00.</span><span class="sxs-lookup"><span data-stu-id="25845-115">For example, filter on the Search name field with a value of 'M00'.</span></span>
+4. <span data-ttu-id="25845-116">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="25845-116">Click Edit.</span></span>
+5. <span data-ttu-id="25845-117">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="25845-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="25845-118">V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="25845-118">In the Product lifecycle state field, enter or select a value.</span></span>
 

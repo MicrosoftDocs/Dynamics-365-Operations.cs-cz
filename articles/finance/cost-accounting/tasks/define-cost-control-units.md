@@ -13,31 +13,31 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efb08c60121fa0210003ea92c8cfa27b2882450b
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 698989d55994660fa7566cf473cf3fa1ae1d9a83
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759177"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977616"
 ---
-# <a name="define-cost-control-units"></a><span data-ttu-id="567ae-103">Definování jednotek řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="567ae-103">Define cost control units</span></span>
+# <a name="define-cost-control-units"></a><span data-ttu-id="b41ca-103">Definování jednotek řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="b41ca-103">Define cost control units</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="567ae-104">Tento postup popisuje, jak definovat jednotky řízení nákladů ve hlavní knize nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="567ae-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="567ae-105">Lze vybrat dimenzi objektu nákladů, pro který chcete řídit náklady v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="567ae-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="567ae-106">Členové dimenze nákladového objektu jsou proměněni na nákladové objekty jednotky řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="567ae-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="567ae-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USP2.</span><span class="sxs-lookup"><span data-stu-id="567ae-107">The demo data company used to create this procedure is USP2.</span></span>
+<span data-ttu-id="b41ca-104">Tento postup popisuje, jak definovat jednotky řízení nákladů ve hlavní knize nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b41ca-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="b41ca-105">Lze vybrat dimenzi objektu nákladů, pro který chcete řídit náklady v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="b41ca-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="b41ca-106">Členové dimenze nákladového objektu jsou proměněni na nákladové objekty jednotky řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="b41ca-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="b41ca-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USP2.</span><span class="sxs-lookup"><span data-stu-id="b41ca-107">The demo data company used to create this procedure is USP2.</span></span>
 
-1. <span data-ttu-id="567ae-108">Přejděte na Nákladové účetnictví > Nastavení hlavní knihy > Hlavní knihy nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="567ae-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="567ae-109">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="567ae-109">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="567ae-110">Klikněte na Kontrolní jednotky.</span><span class="sxs-lookup"><span data-stu-id="567ae-110">Click Control units.</span></span>
-4. <span data-ttu-id="567ae-111">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="567ae-111">Click New.</span></span>
-5. <span data-ttu-id="567ae-112">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="567ae-112">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="567ae-113">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="567ae-113">In the Dimension field, enter or select a value.</span></span>
-7. <span data-ttu-id="567ae-114">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="567ae-114">Click Save.</span></span>
-8. <span data-ttu-id="567ae-115">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="567ae-115">Click New.</span></span>
-9. <span data-ttu-id="567ae-116">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="567ae-116">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="567ae-117">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="567ae-117">In the Dimension field, enter or select a value.</span></span>
-11. <span data-ttu-id="567ae-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="567ae-118">Click Save.</span></span>
+1. <span data-ttu-id="b41ca-108">Přejděte na Nákladové účetnictví > Nastavení hlavní knihy > Hlavní knihy nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b41ca-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="b41ca-109">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="b41ca-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="b41ca-110">Klikněte na Kontrolní jednotky.</span><span class="sxs-lookup"><span data-stu-id="b41ca-110">Click Control units.</span></span>
+4. <span data-ttu-id="b41ca-111">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="b41ca-111">Click New.</span></span>
+5. <span data-ttu-id="b41ca-112">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="b41ca-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="b41ca-113">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="b41ca-113">In the Dimension field, enter or select a value.</span></span>
+7. <span data-ttu-id="b41ca-114">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="b41ca-114">Click Save.</span></span>
+8. <span data-ttu-id="b41ca-115">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="b41ca-115">Click New.</span></span>
+9. <span data-ttu-id="b41ca-116">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="b41ca-116">In the Name field, type a value.</span></span>
+10. <span data-ttu-id="b41ca-117">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="b41ca-117">In the Dimension field, enter or select a value.</span></span>
+11. <span data-ttu-id="b41ca-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="b41ca-118">Click Save.</span></span>
 

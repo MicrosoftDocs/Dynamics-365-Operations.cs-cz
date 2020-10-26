@@ -13,76 +13,76 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f52133df2d374d6dc0f1efb33ffc85eb7d11fa9
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: cfdff9b1af9183d21e988dd53559e749eed077eb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759225"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976227"
 ---
-# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="4316a-103">Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="4316a-103">Create and assign a cost behavior policy to a cost control unit</span></span>
+# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="8aebe-103">Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="8aebe-103">Create and assign a cost behavior policy to a cost control unit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4316a-104">Chování nákladů je klasifikace nákladů jako fixních nebo variabilních.</span><span class="sxs-lookup"><span data-stu-id="4316a-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="4316a-105">Zásady a odpovídající pravila musí být přiděleny jednotce řízení nákladů, aby mohly zásady vstoupit v platnost.</span><span class="sxs-lookup"><span data-stu-id="4316a-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="4316a-106">Tento postup slouží k vytváření zásady a její přidělení k jednotce pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
+<span data-ttu-id="8aebe-104">Chování nákladů je klasifikace nákladů jako fixních nebo variabilních.</span><span class="sxs-lookup"><span data-stu-id="8aebe-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="8aebe-105">Zásady a odpovídající pravila musí být přiděleny jednotce řízení nákladů, aby mohly zásady vstoupit v platnost.</span><span class="sxs-lookup"><span data-stu-id="8aebe-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="8aebe-106">Tento postup slouží k vytváření zásady a její přidělení k jednotce pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
 
 
-## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="4316a-107">Vytvoření hierarchie chování nákladů</span><span class="sxs-lookup"><span data-stu-id="4316a-107">Create a cost behavior hierarchy</span></span>
-1. <span data-ttu-id="4316a-108">Přejděte na Nákladové účetnictví > Dimenze > Hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="4316a-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="4316a-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-109">Click New.</span></span>
-3. <span data-ttu-id="4316a-110">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="4316a-110">Click Create.</span></span>
-4. <span data-ttu-id="4316a-111">V poli Název hierarchie dimenzí zadejte Hierarchie chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
-5. <span data-ttu-id="4316a-112">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-112">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-113">Vyberte Prvky nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-113">Select Cost elements.</span></span>  
-6. <span data-ttu-id="4316a-114">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4316a-114">Click Save.</span></span>
-7. <span data-ttu-id="4316a-115">Klikněte na Zobrazit hierarchii.</span><span class="sxs-lookup"><span data-stu-id="4316a-115">Click View hierarchy.</span></span>
-8. <span data-ttu-id="4316a-116">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-116">Click New.</span></span>
-9. <span data-ttu-id="4316a-117">Do pole Název uzlu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-117">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="4316a-118">Zadejte Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="4316a-118">Enter Fixed cost.</span></span>  
-10. <span data-ttu-id="4316a-119">Ve stromové struktuře vyberte Hierarchie chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
-11. <span data-ttu-id="4316a-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-120">Click New.</span></span>
-12. <span data-ttu-id="4316a-121">Do pole Název uzlu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-121">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="4316a-122">Zadejte variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="4316a-122">Enter Variable cost.</span></span>  
-13. <span data-ttu-id="4316a-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4316a-123">Click Save.</span></span>
-14. <span data-ttu-id="4316a-124">Ve stromové struktuře vyberte Hierarchie chování nákladů\Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="4316a-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
-15. <span data-ttu-id="4316a-125">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-125">Click New.</span></span>
-16. <span data-ttu-id="4316a-126">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4316a-126">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="4316a-127">V poli Od členu dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-127">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-128">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="4316a-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-18. <span data-ttu-id="4316a-129">V poli Po člen dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-129">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-130">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="4316a-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-19. <span data-ttu-id="4316a-131">Ve stromové struktuře vyberte Hierarchie chování nákladů\Variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="4316a-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
-20. <span data-ttu-id="4316a-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-132">Click New.</span></span>
-21. <span data-ttu-id="4316a-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4316a-133">In the list, mark the selected row.</span></span>
-22. <span data-ttu-id="4316a-134">V poli Od členu dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-134">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-135">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="4316a-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-23. <span data-ttu-id="4316a-136">V poli Po člen dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-136">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-137">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="4316a-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-24. <span data-ttu-id="4316a-138">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4316a-138">Click Save.</span></span>
+## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="8aebe-107">Vytvoření hierarchie chování nákladů</span><span class="sxs-lookup"><span data-stu-id="8aebe-107">Create a cost behavior hierarchy</span></span>
+1. <span data-ttu-id="8aebe-108">Přejděte na Nákladové účetnictví > Dimenze > Hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="8aebe-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="8aebe-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-109">Click New.</span></span>
+3. <span data-ttu-id="8aebe-110">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-110">Click Create.</span></span>
+4. <span data-ttu-id="8aebe-111">V poli Název hierarchie dimenzí zadejte Hierarchie chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
+5. <span data-ttu-id="8aebe-112">V poli Dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-112">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-113">Vyberte Prvky nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-113">Select Cost elements.</span></span>  
+6. <span data-ttu-id="8aebe-114">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-114">Click Save.</span></span>
+7. <span data-ttu-id="8aebe-115">Klikněte na Zobrazit hierarchii.</span><span class="sxs-lookup"><span data-stu-id="8aebe-115">Click View hierarchy.</span></span>
+8. <span data-ttu-id="8aebe-116">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-116">Click New.</span></span>
+9. <span data-ttu-id="8aebe-117">Do pole Název uzlu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-117">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="8aebe-118">Zadejte Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="8aebe-118">Enter Fixed cost.</span></span>  
+10. <span data-ttu-id="8aebe-119">Ve stromové struktuře vyberte Hierarchie chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
+11. <span data-ttu-id="8aebe-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-120">Click New.</span></span>
+12. <span data-ttu-id="8aebe-121">Do pole Název uzlu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-121">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="8aebe-122">Zadejte variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="8aebe-122">Enter Variable cost.</span></span>  
+13. <span data-ttu-id="8aebe-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-123">Click Save.</span></span>
+14. <span data-ttu-id="8aebe-124">Ve stromové struktuře vyberte Hierarchie chování nákladů\Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="8aebe-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
+15. <span data-ttu-id="8aebe-125">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-125">Click New.</span></span>
+16. <span data-ttu-id="8aebe-126">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8aebe-126">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="8aebe-127">V poli Od členu dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-127">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-128">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="8aebe-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+18. <span data-ttu-id="8aebe-129">V poli Po člen dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-129">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-130">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="8aebe-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+19. <span data-ttu-id="8aebe-131">Ve stromové struktuře vyberte Hierarchie chování nákladů\Variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="8aebe-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
+20. <span data-ttu-id="8aebe-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-132">Click New.</span></span>
+21. <span data-ttu-id="8aebe-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8aebe-133">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="8aebe-134">V poli Od členu dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-134">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-135">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="8aebe-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+23. <span data-ttu-id="8aebe-136">V poli Po člen dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-136">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-137">Rozsah členů dimenze může obsahovat mezery, ale členové se nesmí překrývat.</span><span class="sxs-lookup"><span data-stu-id="8aebe-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+24. <span data-ttu-id="8aebe-138">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-138">Click Save.</span></span>
 
-## <a name="create-the-policy-and-rules"></a><span data-ttu-id="4316a-139">Vytvoření zásad a pravidel</span><span class="sxs-lookup"><span data-stu-id="4316a-139">Create the policy and rules</span></span>
-1. <span data-ttu-id="4316a-140">Přejděte na Nákladové účetnictví > Zásady > Zásady chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
-2. <span data-ttu-id="4316a-141">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-141">Click New.</span></span>
-3. <span data-ttu-id="4316a-142">Do pole Název zásady zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-142">In the Policy name field, type a value.</span></span>
-4. <span data-ttu-id="4316a-143">V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-144">Vyberte hierarchii zásady, kterou jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="4316a-144">Select the policy hierarchy that you just created.</span></span>  
-5. <span data-ttu-id="4316a-145">V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-146">Vyberte organizaci.</span><span class="sxs-lookup"><span data-stu-id="4316a-146">Select Organization.</span></span>  
-6. <span data-ttu-id="4316a-147">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4316a-147">Click Save.</span></span>
-7. <span data-ttu-id="4316a-148">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-148">Click New.</span></span>
-8. <span data-ttu-id="4316a-149">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4316a-149">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="4316a-150">V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-151">Rozbalte hierarchii a vyberte Variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="4316a-151">Expand the hierarchy to select Variable cost.</span></span>  
-10. <span data-ttu-id="4316a-152">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="4316a-153">Výchozí procentuální hodnota proměnné je 100 procent.</span><span class="sxs-lookup"><span data-stu-id="4316a-153">By default, the variable percentage is 100 percent.</span></span>  
-11. <span data-ttu-id="4316a-154">Klikněte na Přiřazení zásady pro kontrolní jednotky nákladů.</span><span class="sxs-lookup"><span data-stu-id="4316a-154">Click Policy assignments for cost control unit.</span></span>
-12. <span data-ttu-id="4316a-155">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4316a-155">Click New.</span></span>
-13. <span data-ttu-id="4316a-156">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4316a-156">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="4316a-157">Zadejte datum do pole Platné od data účtování.</span><span class="sxs-lookup"><span data-stu-id="4316a-157">In the Valid from accounting date field, enter a date.</span></span>
-    * <span data-ttu-id="4316a-158">Pravidla jsou platná od data a platnost pravidla může ukončit uživatel nebo systém v případě vytvoření novější verze.</span><span class="sxs-lookup"><span data-stu-id="4316a-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
-15. <span data-ttu-id="4316a-159">V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4316a-159">In the Cost control unit field, enter or select a value.</span></span>
-16. <span data-ttu-id="4316a-160">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4316a-160">Click Save.</span></span>
+## <a name="create-the-policy-and-rules"></a><span data-ttu-id="8aebe-139">Vytvoření zásad a pravidel</span><span class="sxs-lookup"><span data-stu-id="8aebe-139">Create the policy and rules</span></span>
+1. <span data-ttu-id="8aebe-140">Přejděte na Nákladové účetnictví > Zásady > Zásady chování nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
+2. <span data-ttu-id="8aebe-141">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-141">Click New.</span></span>
+3. <span data-ttu-id="8aebe-142">Do pole Název zásady zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-142">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="8aebe-143">V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-144">Vyberte hierarchii zásady, kterou jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="8aebe-144">Select the policy hierarchy that you just created.</span></span>  
+5. <span data-ttu-id="8aebe-145">V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-146">Vyberte organizaci.</span><span class="sxs-lookup"><span data-stu-id="8aebe-146">Select Organization.</span></span>  
+6. <span data-ttu-id="8aebe-147">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-147">Click Save.</span></span>
+7. <span data-ttu-id="8aebe-148">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-148">Click New.</span></span>
+8. <span data-ttu-id="8aebe-149">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8aebe-149">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="8aebe-150">V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-151">Rozbalte hierarchii a vyberte Variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="8aebe-151">Expand the hierarchy to select Variable cost.</span></span>  
+10. <span data-ttu-id="8aebe-152">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="8aebe-153">Výchozí procentuální hodnota proměnné je 100 procent.</span><span class="sxs-lookup"><span data-stu-id="8aebe-153">By default, the variable percentage is 100 percent.</span></span>  
+11. <span data-ttu-id="8aebe-154">Klikněte na Přiřazení zásady pro kontrolní jednotky nákladů.</span><span class="sxs-lookup"><span data-stu-id="8aebe-154">Click Policy assignments for cost control unit.</span></span>
+12. <span data-ttu-id="8aebe-155">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8aebe-155">Click New.</span></span>
+13. <span data-ttu-id="8aebe-156">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8aebe-156">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="8aebe-157">Zadejte datum do pole Platné od data účtování.</span><span class="sxs-lookup"><span data-stu-id="8aebe-157">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="8aebe-158">Pravidla jsou platná od data a platnost pravidla může ukončit uživatel nebo systém v případě vytvoření novější verze.</span><span class="sxs-lookup"><span data-stu-id="8aebe-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
+15. <span data-ttu-id="8aebe-159">V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8aebe-159">In the Cost control unit field, enter or select a value.</span></span>
+16. <span data-ttu-id="8aebe-160">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8aebe-160">Click Save.</span></span>
 

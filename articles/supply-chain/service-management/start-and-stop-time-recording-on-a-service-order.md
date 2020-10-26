@@ -15,52 +15,52 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4c101f6d52366898492b6c9c70fb6cd12edfb9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206627"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983174"
 ---
-# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="82107-103">Zahájení a ukončení záznamu času v servisní zakázce</span><span class="sxs-lookup"><span data-stu-id="82107-103">Start and stop time recording on a service order</span></span> 
+# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="9e2ed-103">Zahájení a ukončení záznamu času v servisní zakázce</span><span class="sxs-lookup"><span data-stu-id="9e2ed-103">Start and stop time recording on a service order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="82107-104">Tento postup můžete použít ke spuštění a zastavení nahrávání pro servisní objednávku, pro niž jsou definovány úrovně servisní smlouvy.</span><span class="sxs-lookup"><span data-stu-id="82107-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
+<span data-ttu-id="9e2ed-104">Tento postup můžete použít ke spuštění a zastavení nahrávání pro servisní objednávku, pro niž jsou definovány úrovně servisní smlouvy.</span><span class="sxs-lookup"><span data-stu-id="9e2ed-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
 
-## <a name="start-time-recording"></a><span data-ttu-id="82107-105">Zahájení záznamu času</span><span class="sxs-lookup"><span data-stu-id="82107-105">Start time recording</span></span>
+## <a name="start-time-recording"></a><span data-ttu-id="9e2ed-105">Zahájení záznamu času</span><span class="sxs-lookup"><span data-stu-id="9e2ed-105">Start time recording</span></span>
 
-1.  <span data-ttu-id="82107-106">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="82107-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="9e2ed-106">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .</span><span class="sxs-lookup"><span data-stu-id="9e2ed-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders** .</span></span>
 
-2.  <span data-ttu-id="82107-107">Klepněte na kartu **servisní zakázka**. V **podokně akcí**ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Spustit**.</span><span class="sxs-lookup"><span data-stu-id="82107-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
+2.  <span data-ttu-id="9e2ed-107">Klepněte na kartu **servisní zakázka** . V **podokně akcí** ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Spustit** .</span><span class="sxs-lookup"><span data-stu-id="9e2ed-107">Click the **Service order** tab. On the **Action Pane** , in the **Service level agreement** group, click **Start** .</span></span>
 
-3.  <span data-ttu-id="82107-108">Zadejte datum a čas, kdy by záznam času měl být zahájen.</span><span class="sxs-lookup"><span data-stu-id="82107-108">Enter the date and time that the time recording should be started.</span></span>
+3.  <span data-ttu-id="9e2ed-108">Zadejte datum a čas, kdy by záznam času měl být zahájen.</span><span class="sxs-lookup"><span data-stu-id="9e2ed-108">Enter the date and time that the time recording should be started.</span></span>
 
-## <a name="stop-time-recording"></a><span data-ttu-id="82107-109">Ukončit časový záznam</span><span class="sxs-lookup"><span data-stu-id="82107-109">Stop time recording</span></span>
+## <a name="stop-time-recording"></a><span data-ttu-id="9e2ed-109">Ukončit časový záznam</span><span class="sxs-lookup"><span data-stu-id="9e2ed-109">Stop time recording</span></span>
 
-1.  <span data-ttu-id="82107-110">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="82107-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="9e2ed-110">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .</span><span class="sxs-lookup"><span data-stu-id="9e2ed-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders** .</span></span>
 
-2.  <span data-ttu-id="82107-111">Klepněte na kartu **servisní zakázka**. V **podokně akcí**ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Konec**.</span><span class="sxs-lookup"><span data-stu-id="82107-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
+2.  <span data-ttu-id="9e2ed-111">Klepněte na kartu **servisní zakázka** . V **podokně akcí** ve skupině **Smlouva o úrovni služeb** klepněte na tlačítko **Konec** .</span><span class="sxs-lookup"><span data-stu-id="9e2ed-111">Click the **Service order** tab. On the **Action Pane** , in the **Service level agreement** group, click **Stop** .</span></span>
 
-3.  <span data-ttu-id="82107-112">Zadejte datum a čas, kdy by záznam času měl být ukončen.</span><span class="sxs-lookup"><span data-stu-id="82107-112">Enter the date and time that the time recording should be stopped.</span></span>
+3.  <span data-ttu-id="9e2ed-112">Zadejte datum a čas, kdy by záznam času měl být ukončen.</span><span class="sxs-lookup"><span data-stu-id="9e2ed-112">Enter the date and time that the time recording should be stopped.</span></span>
 
-4.  <span data-ttu-id="82107-113">Chcete-li uvést důvod pro ukončení záznamu času, vyberte položku **Přidat důvod odvolání** a pak v seznamu **Kód důvodu fáze** vyberte kód důvodu.</span><span class="sxs-lookup"><span data-stu-id="82107-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
+4.  <span data-ttu-id="9e2ed-113">Chcete-li uvést důvod pro ukončení záznamu času, vyberte položku **Přidat důvod odvolání** a pak v seznamu **Kód důvodu fáze** vyberte kód důvodu.</span><span class="sxs-lookup"><span data-stu-id="9e2ed-113">Select **Add a revocation reason** , and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="82107-114">Pokud jste ve formuláři <STRONG>Parametry servisu</STRONG> vybrali možnost <STRONG>Kód důvodu při překročení času</STRONG>, musíte uvést kód důvodu, jinak nebude možné záznam času ukončit.</span><span class="sxs-lookup"><span data-stu-id="82107-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
+> <P><span data-ttu-id="9e2ed-114">Pokud jste ve formuláři <STRONG>Parametry servisu</STRONG> vybrali možnost <STRONG>Kód důvodu při překročení času</STRONG>, musíte uvést kód důvodu, jinak nebude možné záznam času ukončit.</span><span class="sxs-lookup"><span data-stu-id="9e2ed-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="82107-115">Viz také</span><span class="sxs-lookup"><span data-stu-id="82107-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e2ed-115">Viz také</span><span class="sxs-lookup"><span data-stu-id="9e2ed-115">See also</span></span>
 
-<span data-ttu-id="82107-116">[Spustit záznam času SLA (formulář)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="82107-116">[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span></span>
+<span data-ttu-id="9e2ed-116">[Spustit záznam času SLA (formulář)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e2ed-116">[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span></span>
 
-<span data-ttu-id="82107-117">[Zastavit záznam času SLA (formulář)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="82107-117">[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span></span>
+<span data-ttu-id="9e2ed-117">[Zastavit záznam času SLA (formulář)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e2ed-117">[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span></span>
 
   
 

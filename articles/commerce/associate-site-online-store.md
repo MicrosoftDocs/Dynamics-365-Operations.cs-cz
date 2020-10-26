@@ -1,7 +1,7 @@
 ---
 title: Přidružení webu elektronického obchodu k online kanálu
 description: V tomto tématu je vysvětleno, jak svázat váš web Microsoft Dynamics 365 Commerce s jedním nebo více online obchody.
-author: stuharg
+author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,47 +15,47 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
-ms.author: bicyclingfool
+ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af63fc8e32d82cff9e46510da9b30110ac8f0f2c
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: b7c393ec2f716c7057a77d0f3c3c1a9f79ee8c68
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533360"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975361"
 ---
-# <a name="associate-an-e-commerce-site-with-an-online-channel"></a><span data-ttu-id="e0a01-103">Přidružení webu elektronického obchodu k online kanálu</span><span class="sxs-lookup"><span data-stu-id="e0a01-103">Associate an e-Commerce site with an online channel</span></span>
+# <a name="associate-an-e-commerce-site-with-an-online-channel"></a><span data-ttu-id="eac8c-103">Přidružení webu elektronického obchodu k online kanálu</span><span class="sxs-lookup"><span data-stu-id="eac8c-103">Associate an e-Commerce site with an online channel</span></span>
 
 [!include [banner](includes/banner.md)]
 
 
-<span data-ttu-id="e0a01-104">V tomto tématu je vysvětleno, jak svázat váš web Microsoft Dynamics 365 Commerce s jedním nebo více online obchody.</span><span class="sxs-lookup"><span data-stu-id="e0a01-104">This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.</span></span> 
+<span data-ttu-id="eac8c-104">V tomto tématu je vysvětleno, jak svázat váš web Microsoft Dynamics 365 Commerce s jedním nebo více online obchody.</span><span class="sxs-lookup"><span data-stu-id="eac8c-104">This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.</span></span> 
 
-<span data-ttu-id="e0a01-105">Po zřízení elektronického obchodování pomocí portálu Microsoft Dynamics Lifecycle Services (LCS) jste připraveni na vytvoření prvního webu elektronického obchodování.</span><span class="sxs-lookup"><span data-stu-id="e0a01-105">After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-Commerce website.</span></span> <span data-ttu-id="e0a01-106">V rámci počátečního vytváření webu přidružíte web k online obchodu, který byl dříve vytvořen.</span><span class="sxs-lookup"><span data-stu-id="e0a01-106">As part of the initial site creation, you associate the site with an online store that was previously created.</span></span> <span data-ttu-id="e0a01-107">Tento krok sváže web s online kanálem a umožní webu zobrazit hierarchii navigace, produkty, kategorie, ceny, možnosti expedice a vše, co jste definovali v online obchodě.</span><span class="sxs-lookup"><span data-stu-id="e0a01-107">This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.</span></span>
+<span data-ttu-id="eac8c-105">Po zřízení elektronického obchodování pomocí portálu Microsoft Dynamics Lifecycle Services (LCS) jste připraveni na vytvoření prvního webu elektronického obchodování.</span><span class="sxs-lookup"><span data-stu-id="eac8c-105">After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-Commerce website.</span></span> <span data-ttu-id="eac8c-106">V rámci počátečního vytváření webu přidružíte web k online obchodu, který byl dříve vytvořen.</span><span class="sxs-lookup"><span data-stu-id="eac8c-106">As part of the initial site creation, you associate the site with an online store that was previously created.</span></span> <span data-ttu-id="eac8c-107">Tento krok sváže web s online kanálem a umožní webu zobrazit hierarchii navigace, produkty, kategorie, ceny, možnosti expedice a vše, co jste definovali v online obchodě.</span><span class="sxs-lookup"><span data-stu-id="eac8c-107">This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.</span></span>
 
-<span data-ttu-id="e0a01-108">Chcete-li vytvořit nový web a přidružit k němu online obchod, v poli LCS vyberte odkaz na vývojové prostředí webu.</span><span class="sxs-lookup"><span data-stu-id="e0a01-108">To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment.</span></span> <span data-ttu-id="e0a01-109">Poté na stránce vývojového prostředí webu vyberte možnost **Nový web**.</span><span class="sxs-lookup"><span data-stu-id="e0a01-109">Then, on the page for the site authoring environment, select **New site**.</span></span> <span data-ttu-id="e0a01-110">V dialogovém okně **Nový web** je nutné zadat určité základní informace o vašem webu.</span><span class="sxs-lookup"><span data-stu-id="e0a01-110">In the **New site** dialog box, you must provide some basic information about your site.</span></span> <span data-ttu-id="e0a01-111">Úplné vysvětlení informací, které je třeba zadat, naleznete v tématu [Vytvoření nového webu elektronického obchodu](create-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="e0a01-111">For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).</span></span>
+<span data-ttu-id="eac8c-108">Chcete-li vytvořit nový web a přidružit k němu online obchod, v poli LCS vyberte odkaz na vývojové prostředí webu.</span><span class="sxs-lookup"><span data-stu-id="eac8c-108">To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment.</span></span> <span data-ttu-id="eac8c-109">Poté na stránce vývojového prostředí webu vyberte možnost **Nový web** .</span><span class="sxs-lookup"><span data-stu-id="eac8c-109">Then, on the page for the site authoring environment, select **New site** .</span></span> <span data-ttu-id="eac8c-110">V dialogovém okně **Nový web** je nutné zadat určité základní informace o vašem webu.</span><span class="sxs-lookup"><span data-stu-id="eac8c-110">In the **New site** dialog box, you must provide some basic information about your site.</span></span> <span data-ttu-id="eac8c-111">Úplné vysvětlení informací, které je třeba zadat, naleznete v tématu [Vytvoření nového webu elektronického obchodu](create-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="eac8c-111">For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).</span></span>
 
-<span data-ttu-id="e0a01-112">Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty**. Měli byste vidět sortiment produktů, které byly přiděleny online obchodu.</span><span class="sxs-lookup"><span data-stu-id="e0a01-112">After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store.</span></span> <span data-ttu-id="e0a01-113">Chcete-li přistupovat k produktům podle kategorie, můžete použít také rozevírací pole v levé horní části stránky.</span><span class="sxs-lookup"><span data-stu-id="e0a01-113">You can also use the drop-down field in the upper left of the page to access the products by category.</span></span>
+<span data-ttu-id="eac8c-112">Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty** . Měli byste vidět sortiment produktů, které byly přiděleny online obchodu.</span><span class="sxs-lookup"><span data-stu-id="eac8c-112">After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store.</span></span> <span data-ttu-id="eac8c-113">Chcete-li přistupovat k produktům podle kategorie, můžete použít také rozevírací pole v levé horní části stránky.</span><span class="sxs-lookup"><span data-stu-id="eac8c-113">You can also use the drop-down field in the upper left of the page to access the products by category.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="e0a01-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="e0a01-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="eac8c-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="eac8c-114">Additional resources</span></span>
 
-[<span data-ttu-id="e0a01-115">Konfigurace názvu domény</span><span class="sxs-lookup"><span data-stu-id="e0a01-115">Configure your domain name</span></span>](configure-your-domain-name.md)
+[<span data-ttu-id="eac8c-115">Konfigurace názvu domény</span><span class="sxs-lookup"><span data-stu-id="eac8c-115">Configure your domain name</span></span>](configure-your-domain-name.md)
 
-[<span data-ttu-id="e0a01-116">Nasazení nového webu elektronického obchodu</span><span class="sxs-lookup"><span data-stu-id="e0a01-116">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
+[<span data-ttu-id="eac8c-116">Nasazení nového webu elektronického obchodu</span><span class="sxs-lookup"><span data-stu-id="eac8c-116">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
 
-[<span data-ttu-id="e0a01-117">Vytvoření webu elektronického obchodu</span><span class="sxs-lookup"><span data-stu-id="e0a01-117">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
+[<span data-ttu-id="eac8c-117">Vytvoření webu elektronického obchodu</span><span class="sxs-lookup"><span data-stu-id="eac8c-117">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
 
-[<span data-ttu-id="e0a01-118">Správa souborů robots.txt</span><span class="sxs-lookup"><span data-stu-id="e0a01-118">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
+[<span data-ttu-id="eac8c-118">Správa souborů robots.txt</span><span class="sxs-lookup"><span data-stu-id="eac8c-118">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
 
-[<span data-ttu-id="e0a01-119">Hromadné odeslání přesměrování URL adresy</span><span class="sxs-lookup"><span data-stu-id="e0a01-119">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
+[<span data-ttu-id="eac8c-119">Hromadné odeslání přesměrování URL adresy</span><span class="sxs-lookup"><span data-stu-id="eac8c-119">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
 
-[<span data-ttu-id="e0a01-120">Nastavení klienta B2C v Commerce</span><span class="sxs-lookup"><span data-stu-id="e0a01-120">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
+[<span data-ttu-id="eac8c-120">Nastavení klienta B2C v Commerce</span><span class="sxs-lookup"><span data-stu-id="eac8c-120">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
 
-[<span data-ttu-id="e0a01-121">Nastavení vlastních stránek pro přihlášení uživatelů</span><span class="sxs-lookup"><span data-stu-id="e0a01-121">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
+[<span data-ttu-id="eac8c-121">Nastavení vlastních stránek pro přihlášení uživatelů</span><span class="sxs-lookup"><span data-stu-id="eac8c-121">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
 
-[<span data-ttu-id="e0a01-122">Konfigurace několika klientů B2C v prostředí Commerce</span><span class="sxs-lookup"><span data-stu-id="e0a01-122">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
+[<span data-ttu-id="eac8c-122">Konfigurace několika klientů B2C v prostředí Commerce</span><span class="sxs-lookup"><span data-stu-id="eac8c-122">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
 
-[<span data-ttu-id="e0a01-123">Přidání podpory pro síť CDN</span><span class="sxs-lookup"><span data-stu-id="e0a01-123">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
+[<span data-ttu-id="eac8c-123">Přidání podpory pro síť CDN</span><span class="sxs-lookup"><span data-stu-id="eac8c-123">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
 
-[<span data-ttu-id="e0a01-124">Povolení zjišťování obchodu na základě polohy</span><span class="sxs-lookup"><span data-stu-id="e0a01-124">Enable location-based store detection</span></span>](enable-store-detection.md)
+[<span data-ttu-id="eac8c-124">Povolení zjišťování obchodu na základě polohy</span><span class="sxs-lookup"><span data-stu-id="eac8c-124">Enable location-based store detection</span></span>](enable-store-detection.md)
