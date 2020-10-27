@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a45d305f7229a2411770a38da8fbd349944e42a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211507"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986991"
 ---
 # <a name="formula-designer"></a>Návrhář receptur
 
@@ -39,7 +39,7 @@ Po kliknutí na možnost **Nastavení** můžete vybrat různé konfigurace a u
 Kliknutím na tlačítko **Filtr** změňte počáteční výběr v zobrazení. Nastavením principu zobrazení na možnost **Vybrané/Aktivní** nebo **Vybrané** můžete vybrat jednotlivé verze receptury nebo postupu pro použití v zobrazení. Můžete vybrat neschválené a neaktivní verze receptury pro účely zobrazení či správy v návrháři receptur.  
 
 > [!NOTE]
-> Otevřete-li **Návrhář receptur** ze stránky seznamu **Kusovníky**, nezobrazí se informace o postupu. Výběr verze postupu nebo receptury se v současnosti vztahuje na všechny instance návrháře receptur.  
+> Otevřete-li **Návrhář receptur** ze stránky seznamu **Kusovníky** , nezobrazí se informace o postupu. Výběr verze postupu nebo receptury se v současnosti vztahuje na všechny instance návrháře receptur.  
 
 V následujících částech najdete popis funkcí, které jsou k dispozici na různých kartách návrháře.
 
@@ -52,10 +52,10 @@ Návrhář receptur má dvě části:
     -   **Data položky** – zobrazí podrobnosti hlavní položky nebo položky, která se používá ve vybraném uzlu. Můžete kliknout na **Upravit uvolněný produkt** a upravit vybranou položku.
     -   **Receptura** – zobrazí záhlaví receptury, která souvisí s vybraným uzlem.
     -   **Postup** – zobrazí záhlaví postupu, který souvisí s vybraným uzlem.
-    -   **Operace postupu** – zobrazuje přehled operací daného postupu. Pokud je vybrán řádek kusovníku, který je přiřazen k určité operaci, operace je označena jako **Komponenta potřebná v operacích**.
+    -   **Operace postupu** – zobrazuje přehled operací daného postupu. Pokud je vybrán řádek kusovníku, který je přiřazen k určité operaci, operace je označena jako **Komponenta potřebná v operacích** .
 
 ## <a name="select-a-formula-and-route"></a>Výběr receptury a postupu
-Filtr, který je použit pro recepturu a postup, se zobrazí v záhlaví návrháře receptury. Filtr lze změnit pomocí dialogového okna **Filtr**. Pole tohoto dialogového pole jsou popsána v následující tabulce.
+Filtr, který je použit pro recepturu a postup, se zobrazí v záhlaví návrháře receptury. Filtr lze změnit pomocí dialogového okna **Filtr** . Pole tohoto dialogového pole jsou popsána v následující tabulce.
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Filtr, který je použit pro recepturu a postup, se zobrazí v záhlaví návr
 </tbody>
 </table>
 
-Použijete-li návrhář receptur ke kontrole nebo úpravě receptur, které se skládají z jedné nebo více úrovní fiktivních položek, pak postup, který je přidružen k nejvyšší položce, obvykle zahrnuje celou hierarchii receptur. Pro zjednodušení přehledu můžete uzamknout postup nejvyšší úrovně v zobrazení kliknutím na tlačítko **Zobrazení** &gt; **Uzamknout postup**. Postup můžete odemknout kliknutím na položky **Zobrazení** &gt; **Odemknout postup**.
+Použijete-li návrhář receptur ke kontrole nebo úpravě receptur, které se skládají z jedné nebo více úrovní fiktivních položek, pak postup, který je přidružen k nejvyšší položce, obvykle zahrnuje celou hierarchii receptur. Pro zjednodušení přehledu můžete uzamknout postup nejvyšší úrovně v zobrazení kliknutím na tlačítko **Zobrazení** &gt; **Uzamknout postup** . Postup můžete odemknout kliknutím na položky **Zobrazení** &gt; **Odemknout postup** .
 
 ## <a name="add-and-edit-formulas-and-formula-lines"></a>Přidání a úprava receptur a řádků receptur
 Pomocí funkcí **Řádky receptury** nebo **Receptura** můžete upravit řádky receptur nebo receptury samotné. Když vyberete uzel ze stromu, typ uzlu určí, které z funkcí budou k dispozici.
@@ -108,7 +108,7 @@ Pomocí funkcí **Řádky receptury** nebo **Receptura** můžete upravit řádk
 | Řádky kusovníku &gt; Přidat před řádek      | Zobrazí dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí před vybraným řádkem receptury.     | Tato funkce je k dispozici, pokud je vybrán uzel řádku receptury. |
 | Řádky kusovníku &gt; Přidat do kusovníku komponent | Zobrazí dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí na konci vybrané receptury.   | Tato funkce je k dispozici, pokud má vybraný uzel zvolenou recepturu. Pokud tato funkce není dostupná, pro vybranou variantu položky možná chybí verze receptury. V takovém případě lze kliknutím na položky **Receptura** &gt; **Vytvořit verzi** vytvořit chybějící verzi pro vybraný uzel. |
 | Řádky kusovníku &gt; Přidat za řádek       | Zobrazí dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí za vybraným řádkem receptury.      | Tato funkce je k dispozici, pokud je vybrán uzel řádku receptury. |
-| Receptura &gt; Vytvořit verzi         | Vytvoří novou recepturu nebo verzi receptury pro variantu produktu vybraného uzlu.                     | Tato funkce je k dispozici, pokud je vybraný uzel řádku receptury spojen s položkou, která má typ výroby **Kusovník** nebo **Receptura**. |
+| Receptura &gt; Vytvořit verzi         | Vytvoří novou recepturu nebo verzi receptury pro variantu produktu vybraného uzlu.                     | Tato funkce je k dispozici, pokud je vybraný uzel řádku receptury spojen s položkou, která má typ výroby **Kusovník** nebo **Receptura** . |
 | Receptura &gt; Výpočet            | Otevře dialogové okno, ve kterém můžete provést výpočet nákladů nebo prodejní ceny pro vybranou variantu produktu. | Tato funkce je k dispozici, pokud vybraný uzel souvisí s verzí receptury. |
 | Receptura &gt; Zkontrolovat                  | Ověří a zkontroluje vybranou recepturu.                                                                  | Tato funkce je k dispozici, pokud vybraný uzel souvisí s verzí receptury. |
 
