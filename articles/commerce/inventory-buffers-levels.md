@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8a07e951aadaa1cc44b637ef9fd77f5f4e84cbda
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621160"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982593"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurace rezervních zásob a úrovní zásob
 
@@ -38,16 +38,16 @@ Namísto zobrazování skutečných hodnot zásob v poutačích elektronického 
 
 Funkce pro rezervní zásoby a úrovně zásob je řízena pomocí správy funkcí v centrále Commerce. Chcete-li funkci zapnout, postupujte následujícím způsobem.
 
-1. Přejděte do nabídky **Správa systému** \> **Pracovní prostory** \> **Správa funkcí**.
-1. Vyhledejte **Povolit rezervní zásoby a úrovně zásob**, vyberte jeho řádek a poté vyberte **Povolit hned**.
+1. Přejděte do nabídky **Správa systému** \> **Pracovní prostory** \> **Správa funkcí** .
+1. Vyhledejte **Povolit rezervní zásoby a úrovně zásob** , vyberte jeho řádek a poté vyberte **Povolit hned** .
 
-Po zapnutí funkce najdete úrovně zásob na **Retail a Commerce \> Řízení zásob**.
+Po zapnutí funkce najdete úrovně zásob na **Retail a Commerce \> Řízení zásob** .
 
 ## <a name="create-and-configure-an-inventory-level-profile"></a>Vytvořte a nakonfigurujte profil úrovně zásob
 
-*Profil úrovně zásob* určuje, zda je daný stav množství produktu považován na skladě, vyprodán nebo v jiném vlastním stavu. Můžete vytvořit a konfigurovat více profilů úrovně zásob na právnickou osobu. Každý profil se skládá ze sady úrovní zásob a každá úroveň je definována pomocí *rozsahu*, *kódu* a *popisku*.
+*Profil úrovně zásob* určuje, zda je daný stav množství produktu považován na skladě, vyprodán nebo v jiném vlastním stavu. Můžete vytvořit a konfigurovat více profilů úrovně zásob na právnickou osobu. Každý profil se skládá ze sady úrovní zásob a každá úroveň je definována pomocí *rozsahu* , *kódu* a *popisku* .
 
-- **Rozsah** - Každý rozsah je definován a *počátečním množstvím* a *konečným množstvím*. Hodnota množství spadá do rozsahu, pokud je větší než počáteční množství tohoto rozsahu a ne více než konečné množství.
+- **Rozsah** - Každý rozsah je definován a *počátečním množstvím* a *konečným množstvím* . Hodnota množství spadá do rozsahu, pokud je větší než počáteční množství tohoto rozsahu a ne více než konečné množství.
 - **Kód** - Kód je vnitřní zkratka, která představuje úroveň. Zákazníci, kteří se přímo integrují s rozhraními API pro zásoby, mohou pomocí kódů vytvořit další logiku pro danou úroveň zásob. Například mohou vypnout funkci nákupu produktu, když je jeho kód úrovně zásob **OOS** ("vyprodáno").
 - **Popisek** - Popisek je smysluplná zpráva zaměřená na zákazníka, která zákazníkům zprostředkovává úroveň inventáře na webu elektronického obchodu.
 
@@ -55,10 +55,10 @@ Po zapnutí funkce najdete úrovně zásob na **Retail a Commerce \> Řízení z
 
 Chcete-li vytvořit profil úrovně zásob, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail a Commerce** \> **Řízení zásob** \> **Úrovně zásob**.
-1. Na podokně Akce vyberte **Nový** a poté zadejte hodnoty do polí **ID profilu** a **Popis**.
-1. Na pevné záložce **Rozsahy** vyberte **Přidat** a přidejte novou úroveň a poté zadejte hodnoty do slouců **Počáteční množství**, **Konečné množství**, **Kód** a **Popisek** pro tuto úroveň. Zopakujte tento krok, chcete-li přidat další úrovně. Podle potřeby můžete upravit hodnoty v datové mřížce, nebo můžete vybrat **Odstranit** a odstranit úroveň.
-1. V podokně akcí vyberte **Uložit**.
+1. Přejděte na **Retail a Commerce** \> **Řízení zásob** \> **Úrovně zásob** .
+1. Na podokně Akce vyberte **Nový** a poté zadejte hodnoty do polí **ID profilu** a **Popis** .
+1. Na pevné záložce **Rozsahy** vyberte **Přidat** a přidejte novou úroveň a poté zadejte hodnoty do slouců **Počáteční množství** , **Konečné množství** , **Kód** a **Popisek** pro tuto úroveň. Zopakujte tento krok, chcete-li přidat další úrovně. Podle potřeby můžete upravit hodnoty v datové mřížce, nebo můžete vybrat **Odstranit** a odstranit úroveň.
+1. V podokně akcí vyberte **Uložit** .
 
 Po vytvoření nového profilu se automaticky inicializují dvě úrovně zásob:
 
@@ -68,7 +68,7 @@ Po vytvoření nového profilu se automaticky inicializují dvě úrovně zásob
 > [!NOTE]
 > V definici profilu nemohou být mezery ani překrývání mezi rozsahy.
 
-Můžete použít tlačítko **Překlady** v podokně Akce pro konfiguraci lokalizovaných řetězců pro zprávu se štítkem. Poté musíte spustit distribuční rozvrhovací úlohu **1110** (**Globální konfigurace**) pro synchronizaci lokalizovaných řetězců s kanály.
+Můžete použít tlačítko **Překlady** v podokně Akce pro konfiguraci lokalizovaných řetězců pro zprávu se štítkem. Poté musíte spustit distribuční rozvrhovací úlohu **1110** ( **Globální konfigurace** ) pro synchronizaci lokalizovaných řetězců s kanály.
 
 ### <a name="configure-an-inventory-level-profile"></a>Konfigurujte profil úrovně zásob
 
@@ -76,7 +76,7 @@ Profil úrovně zásob můžete nakonfigurovat buď na úrovni kategorie produkt
 
 Chcete-li konfigurovat profil úrovně zásob pro kategorii, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail a Commerce** \> **Produkty a kategorie** \> **Hierarchie produktů Commerce**.
+1. Přejděte na **Retail a Commerce** \> **Produkty a kategorie** \> **Hierarchie produktů Commerce** .
 1. Chcete-li konfigurovat profil úrovně zásob pro kategorii, vyberte kategorii.
 1. Na pevné záložce **Vlastnosti prodávaného produktu** vyberte právnickou osobu.
 1. V sekci **Zásoby Commerte** v poli **Profil úrovně zásob** vyberte jeden z předdefinovaných profilů úrovně zásob.
@@ -85,19 +85,19 @@ Můžete použít tlačítko **Aktualizovat produkty** v podokně akcí, chcete-
 
 Chcete-li konfigurovat profil úrovně zásob pro uvolněný produkt, postupujte následujícím způsobem.
 
-1. Přejděte do nabídky **Retail a Commerce** \> **Produkty a kategorie** \> **Uvolněné produkty podle kategorie**.
+1. Přejděte do nabídky **Retail a Commerce** \> **Produkty a kategorie** \> **Uvolněné produkty podle kategorie** .
 1. Vyberte produkt a poté otevřete stránku s podrobnostmi o produktu.
-1. Na pevné záložce **Prodej**, v sekci **Zásoby Commerce** v poli **Profil úrovně zásob** vyberte jeden z předdefinovaných profilů úrovně zásob.
+1. Na pevné záložce **Prodej** , v sekci **Zásoby Commerce** v poli **Profil úrovně zásob** vyberte jeden z předdefinovaných profilů úrovně zásob.
 
-Když je vytvořen nový produkt, pole **Profil úrovně zásob**, stejně jako mnoho dalších atributů na úrovni produktu, bude nastaveno na hodnotu nakonfigurovanou pro kategorii, ke které je produkt přidružen.
+Když je vytvořen nový produkt, pole **Profil úrovně zásob** , stejně jako mnoho dalších atributů na úrovni produktu, bude nastaveno na hodnotu nakonfigurovanou pro kategorii, ke které je produkt přidružen.
 
 > [!NOTE]
 > Profil úrovně zásob je atribut specifický pro právnickou osobu. U stejné kategorie nebo produktu se hodnota profilu úrovně zásob může u právnických osob lišit.
 
 Chcete-li synchronizovat konfigurace profilů úrovně zásob s kanály, postupujte takto.
 
-1. Přejděte na **Retail a Commerce** \> **IT pro Retail a Commerce** \> **Plán distribuce**.
-1. Spusťte plán distribuce **1040** (**Produkt**).
+1. Přejděte na **Retail a Commerce** \> **IT pro Retail a Commerce** \> **Plán distribuce** .
+1. Spusťte plán distribuce **1040** ( **Produkt** ).
 
 ## <a name="configure-an-inventory-buffer"></a>Nakonfigurujte rezervní zásoby
 
@@ -105,7 +105,7 @@ Chcete-li synchronizovat konfigurace profilů úrovně zásob s kanály, postupu
 
 Chcete-li konfigurovat rezervní zásoby pro kategorii, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail a Commerce** \> **Produkty a kategorie** \> **Hierarchie produktů Commerce**.
+1. Přejděte na **Retail a Commerce** \> **Produkty a kategorie** \> **Hierarchie produktů Commerce** .
 1. Chcete-li konfigurovat rezervní zásoby pro kategorii, vyberte kategorii.
 1. Na pevné záložce **Vlastnosti prodávaného produktu** vyberte právnickou osobu.
 1. V sekci **Zásoby Commerce** v poli **Rezervní zásoby** zadejte kladnou hodnotu.
@@ -114,9 +114,9 @@ Můžete použít tlačítko **Aktualizovat produkty** v podokně akcí, chcete-
 
 Chcete-li konfigurovat rezervní zásoby pro uvolněný produkt, postupujte následujícím způsobem.
 
-1. Přejděte do nabídky **Retail a Commerce** \> **Produkty a kategorie** \> **Uvolněné produkty podle kategorie**.
+1. Přejděte do nabídky **Retail a Commerce** \> **Produkty a kategorie** \> **Uvolněné produkty podle kategorie** .
 1. Vyberte produkt a poté otevřete stránku s podrobnostmi o produktu.
-1. Na pevné záložce **Prodej**, v sekci **Zásoby Commerce** v poli **Rezervní zásoby** zadejte kladnou hodnotu.
+1. Na pevné záložce **Prodej** , v sekci **Zásoby Commerce** v poli **Rezervní zásoby** zadejte kladnou hodnotu.
 
 Když je vytvořen nový produkt, pole **Rezervní zásoby** bude nastaveno na hodnotu nakonfigurovanou pro kategorii, ke které je produkt přidružen.
 
@@ -125,8 +125,8 @@ Když je vytvořen nový produkt, pole **Rezervní zásoby** bude nastaveno na h
 
 Chcete-li synchronizovat konfigurace rezervních zásob s kanály, postupujte takto.
 
-1. Přejděte na **Retail a Commerce** \> **IT pro Retail a Commerce** \> **Plán distribuce**.
-1. Spusťte plán distribuce **1040** (**Produkt**).
+1. Přejděte na **Retail a Commerce** \> **IT pro Retail a Commerce** \> **Plán distribuce** .
+1. Spusťte plán distribuce **1040** ( **Produkt** ).
 
 ## <a name="use-inventory-buffers-and-inventory-levels-in-e-commerce-scenario"></a>Použijte rezervní zásoby a úrovně zásob ve scénáři elektronického obchodování
 
@@ -138,9 +138,9 @@ Zavedení rezerv zásob a úrovní zásob umožňuje těmto API vrátit kódy ú
 
 Chcete-li nakonfigurovat odpověď API dostupnosti produktu, postupujte takto.
 
-1. Přejděte na možnost **Retail a Commerce** \> **Nastavení centrály** \> **Parametry** \> **Parametry obchodu**.
+1. Přejděte na možnost **Retail a Commerce** \> **Nastavení centrály** \> **Parametry** \> **Parametry obchodu** .
 1. V sekci **Zásoby vy skladu** na kartě **Zásoby** v poli **Rozhraní API pro dostupnost produktů pro elektronický obchod** vyberte hodnotu.
-1. Chcete-li použít nastavení na kanály, spusťte úlohu distribučního plánu **1110** (**Globální konfigurace**).
+1. Chcete-li použít nastavení na kanály, spusťte úlohu distribučního plánu **1110** ( **Globální konfigurace** ).
 
 ## <a name="additional-resources"></a>Další prostředky
 

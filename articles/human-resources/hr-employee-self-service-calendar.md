@@ -3,7 +3,7 @@ title: Vytvoření kalendáře týmu
 description: Zobrazte a vytvořte kalendáře týmu v Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 10/7/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
-ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
+ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3796462"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968991"
 ---
 # <a name="view-team-and-company-calendars"></a>Zobrazení kalendáře týmu a společnosti
 
@@ -31,27 +31,25 @@ Můžete zobrazit kalendáře týmu a společnosti v Dynamics 365 Human Resource
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Zobrazení týmového kalendáře jako zaměstnanec
 
-1. V pracovní prostoru **Zaměstnanecká samoobsluha** vyberte **Kalendář absence týmu** v **Souhrnu**.
+1. V pracovní prostoru **Zaměstnanecká samoobsluha** vyberte **Kalendář absence týmu** v **Souhrnu** .
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Zobrazení týmového kalendáře jako vedoucí
 
-1. V pracovním prostoru **Samoobsluha zaměstnance** vyberte **Můj tým**.
+1. V pracovním prostoru **Samoobsluha zaměstnance** vyberte **Můj tým** .
 
-2. Vyberte **Pracovní volno a absence** a poté vyberte **Zobrazit kalendář absence vedoucího**.
+2. Vyberte **Pracovní volno a absence** a poté vyberte **Zobrazit kalendář absence vedoucího** .
 
-Manažeři také mohou přistupovat k týmovému kalendáři z **Nedokončených požadavků od mého týmu**, **Schváleného volna** a **Požadavků na volno**. 
+Manažeři také mohou přistupovat k týmovému kalendáři z **Nedokončených požadavků od mého týmu** , **Schváleného volna** a **Požadavků na volno** . 
 
 ## <a name="view-a-company-calendar"></a>Zobrazit kalendář společnosti
 
-Uživatelé, kteří jsou v rolích lidských zdrojů, mohou zobrazit kalendáře společnosti. V kalendářích společnosti jsou zobrazeni všichni zaměstnanci. Ve výchozím nastavení zobrazuje kalendář dnešní datum plus 28 dní, ale rozsah dat lze změnit. Můžete také filtrovat kalendář podle **názvu**, **čísla pracovníka** a **typu** pracovního volna.
+Uživatelé, kteří jsou v rolích lidských zdrojů, mohou zobrazit kalendáře společnosti. V kalendářích společnosti jsou zobrazeni všichni zaměstnanci. Ve výchozím nastavení zobrazuje kalendář dnešní datum plus 28 dní, ale rozsah dat lze změnit. Můžete také filtrovat kalendář podle **názvu** , **čísla pracovníka** a **typu** pracovního volna.
 
-1. V pracovním prostoru **Pracovní volno a absence** vyberte kartu **Odkazy**.
+1. V pracovním prostoru **Pracovní volno a absence** vyberte kartu **Odkazy** .
 
-2. Vyberte **Kalendář pracovního volna a absence**.
+2. Vyberte **Kalendář pracovního volna a absence** .
 
-Role lidských zdrojů mají také přístup k kalendáři společnosti z **Žádosti o pracovní volno a absenci**, **Schválené volno** a **Žádosti o volno**. 
-
-[!include [banner](includes/preview-feature.md)]
+Role lidských zdrojů mají také přístup k kalendáři společnosti z **Žádosti o pracovní volno a absenci** , **Schválené volno** a **Žádosti o volno** . 
 
 Kalendáře nyní obsahují další filtry a možnosti. Všechny kalendáře obsahují možnosti zobrazení pro:
 

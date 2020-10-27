@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 815b6b726e9a76a9294995bc5689b030cf623ec0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b2e06283f3b95c5ff6b4376bba63cf5a42d5feeb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202576"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981810"
 ---
 # <a name="create-a-template-bom"></a>Vytvoření šablony kusovníku   
 
@@ -34,29 +34,29 @@ ms.locfileid: "3202576"
 
 ## <a name="create-a-template-bom-manually"></a>Ruční vytvoření šablony kusovníku
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku** .
 
 2.  Formulář **Vytvořit šablonu kusovníku** otevřete stisknutím kombinace kláves CTRL+N.
 
-3.  Ve skupinovém rámečku **Kopírovat řádky kusovníku z odkazu** vyberte možnost **ruční**.
+3.  Ve skupinovém rámečku **Kopírovat řádky kusovníku z odkazu** vyberte možnost **ruční** .
 
-4.  Do pole **Číslo položky** zadejte položku typu **Kusovník**.
+4.  Do pole **Číslo položky** zadejte položku typu **Kusovník** .
 
 5.  Do pole **Název** zadejte název šablony.
 
 6.  Do polí **Od data** a **Do data** zadejte datový interval platnosti této šablony kusovníku.
 
-7.  Klepněte na tlačítko **OK**.
+7.  Klepněte na tlačítko **OK** .
 
 Je vytvořena nová prázdná šablona kusovníku.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Vytvoření šablony kusovníku na základě jiné šablony kusovníku
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku** .
 
 2.  Formulář **Vytvořit šablonu kusovníku** otevřete stisknutím kombinace kláves CTRL+N.
 
-3.  Ve skupinovém rámečku **Kopírovat řádky kusovníku z odkazu** vyberte možnost **Šablona kusovníku**.
+3.  Ve skupinovém rámečku **Kopírovat řádky kusovníku z odkazu** vyberte možnost **Šablona kusovníku** .
 
 4.  V poli **Referenční číslo** vyberte stávající šablonu kusovníku, kterou chcete zkopírovat do nové šablony kusovníku.
 
@@ -64,35 +64,35 @@ Je vytvořena nová prázdná šablona kusovníku.
 
 6.  Do polí **Od data** a **Do data** zadejte datový interval platnosti této šablony kusovníku.
 
-7.  Klepněte na tlačítko **OK**.
+7.  Klepněte na tlačítko **OK** .
 
 Je vytvořena nová šablona kusovníku pomocí řádků odpovídajících řádkům původní šablony kusovníku.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Vytvoření šablony kusovníku na základě kusovníku položky
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku** .
 
 2.  Formulář **Vytvořit šablonu kusovníku** otevřete stisknutím kombinace kláves CTRL+N.
 
-3.  Ve skupinovém rámečku **Kopírování řádků kusovníku z odkazu**vyberte **Kusovník**.
+3.  Ve skupinovém rámečku **Kopírování řádků kusovníku z odkazu** vyberte **Kusovník** .
 
-4.  V poli **referenční číslo** vyberte verzi Kusovníku. Položka typu kusovníku je zkopírována do **číslo položky**.
+4.  V poli **referenční číslo** vyberte verzi Kusovníku. Položka typu kusovníku je zkopírována do **číslo položky** .
 
 5.  Do pole **Název** zadejte název šablony.
 
 6.  Do polí **Od data** a **Do data** zadejte datový interval platnosti této šablony kusovníku.
 
-7.  Klepněte na tlačítko **OK**.
+7.  Klepněte na tlačítko **OK** .
 
-Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících řádkům kusovníku uvedeného v poli **Kusovník**.
+Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících řádkům kusovníku uvedeného v poli **Kusovník** .
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Vytvoření šablony kusovníku na základě kusovníku výroby
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku** .
 
 2.  Formulář **Vytvořit šablonu kusovníku** otevřete stisknutím kombinace kláves CTRL+N.
 
-3.  Ve skupinovém rámečku **Kopírování řádků kusovníku z odkazu**vyberte **Výroba**.
+3.  Ve skupinovém rámečku **Kopírování řádků kusovníku z odkazu** vyberte **Výroba** .
 
 4.  V poli **referenční číslo** vyberte kusovník výroby.
 
@@ -100,9 +100,9 @@ Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících 
 
 6.  Do polí **Od data** a **Do data** zadejte datový interval platnosti této šablony kusovníku.
 
-7.  Klepněte na tlačítko **OK**.
+7.  Klepněte na tlačítko **OK** .
 
-Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících řádkům kusovníku uvedeného v poli **BOM**.
+Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících řádkům kusovníku uvedeného v poli **BOM** .
 
 ## <a name="see-also"></a>Viz také
 

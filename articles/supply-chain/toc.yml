@@ -70,12 +70,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (prosinec 2020)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (listopad 2020)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (říjen 2020)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (srpen 2020)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přesune projektů implementace LCS z místního nasazení do cloudu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalizace
@@ -202,6 +204,10 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: Povinné aktualizace
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Indie
+              items:
+                - name: Převodní příkazy skladu
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Rusko
               items:
                 - name: Rusko - přehled
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Vylepšení výkonu hlavního plánování
                   href: master-planning/master-planning-performance.md
+                - name: Zlepšení výkonu modulu plánování
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Hlavní plány a funkce více pracovišť
                   items:
                     - name: Přehled hlavního plánování a funkce více pracovišť
@@ -1939,6 +1947,8 @@
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: Udržování postupu pro model produktu
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: Prodejní ceny založené na atributech pro konfiguraci produktu založeného na omezeních
+                      href: pim/attribute-based-product-configurator.md
                     - name: Schválení modelu konfigurace produktu
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Převedení dat pro modely produktu
@@ -2035,6 +2045,8 @@
                       href: production-control/config-job-card-device.md
                     - name: Ohlášení jako dokončené ze zařízení úkolového lístku
                       href: production-control/report-finished-job-device.md
+                    - name: Poskytnutí průvodce hybridní reality pro pracovníky ve výrobě
+                      href: production-control/instruction-guides-in-production-overview.md
                     - name: Vrácení stavu výrobní zakázky
                       href: production-control/reverse-production-order-status.md
                     - name: Viditelnost výjimek materiálu
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Povolení tisku popisku registrační značky
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Vytvoření převodních příkazů z aplikace skladu
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Zpracování události aplikace skladu
+                      href: warehousing/warehouse-app-events.md
                     - name: Potvrzení výdeje kusů
                       href: warehousing/piece-picking-confirmation.md
                     - name: Obalové materiály a poplatky
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Architektura průvodce procesem
                       href: warehousing/process-guide-framework.md
+                    - name: Řešení problémů s připojením aplikace skladu
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: "Upgrade a\_migrace"
                   items:
                     - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations

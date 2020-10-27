@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ee8d70e8d7c11513ff067847577285f10bb9bcb
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 87d61203d36722194b98a247609fa126b71b846c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887209"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981151"
 ---
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 
@@ -122,7 +122,7 @@ Systémem definované omezení tabulek představuje mapování mezi typem atribu
 </tr>
 <tr class="odd">
 <td>Výpočty</td>
-<td>Výpočty představují doplněk k omezením. Výpočet můžete použít k provedení aritmetické operace na atributech typu <strong>Desetinné číslo</strong> a <strong>Celé číslo</strong>nebo logických operací zahrnujících atributy typu <strong>Text</strong> s pevným seznamem a <strong>Logická hodnota</strong>. Výpočet má cílový atribut, do kterého bude zapsán výsledek výpočetního výrazu. Výpočetní výraz se vytváří pomocí editoru výrazu.</td>
+<td>Výpočty představují doplněk k omezením. Výpočet můžete použít k provedení aritmetické operace na atributech typu <strong>Desetinné číslo</strong> a <strong>Celé číslo</strong> nebo logických operací zahrnujících atributy typu <strong>Text</strong> s pevným seznamem a <strong>Logická hodnota</strong>. Výpočet má cílový atribut, do kterého bude zapsán výsledek výpočetního výrazu. Výpočetní výraz se vytváří pomocí editoru výrazu.</td>
 </tr>
 <tr class="even">
 <td>Dílčí komponenty</td>

@@ -70,6 +70,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (leden 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (listopad 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (říjen 2020)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: Přesune projektů implementace LCS z místního nasazení do cloudu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Závazky
@@ -226,6 +230,16 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Nastavení ověření párování faktur závazků
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Automatizace faktur dodavatele
+              items:
+                - name: Přehled automatizovaných procesů fakturace dodavatele
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Možnosti nastavení pro automatizaci faktur dodavatele
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Odesílání faktur do systému pracovních postupů a spárování řádků příjemek produktů
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Zobrazení výsledků automatizace faktur dodavatele
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Rozúčtování a položky dílčí hlavní knihy pro faktury dodavatele
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Párování faktur a mezipodnikové nákupní objednávky
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Pracovní prostor fakturace dodavatelské spolupráce
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Automatizace faktur dodavatele
+            - name: Automatizace faktur pro naskenované dokumenty
               href: accounts-payable/vendor-invoice-automation.md
             - name: Správa smlouvy zprostředkovatele
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Sestava sledování prodlení odběratele
+              href: accounts-receivable/customer-aging.md
             - name: Vytvoření odpisového deníku pro odběratele
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Správa rozšířených poznámek
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Lineární odpisování
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Leasing majetku
+          items:
+            - name: Úvod do leasingu majetku
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Hlavní kniha
           items:
             - name: Přehled hlavní knihy
@@ -1884,7 +1904,7 @@
                   items:
                     - name: Přehled indické daně GST
                       href: localizations/apac-ind-gst.md
-                    - name: Co je nového a co se změnilo pro lokalizaci APAC indické daně GST
+                    - name: Co je nového a co se změnilo pro lokalizaci indické daně GST
                       items:
                         - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: Referenční skupiny indické daně GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrace pro registrační pokladny
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Skladová transakce
                       items:
+                        - name: Převodní příkazy skladu
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: Skladové převodní příkazy s daní na mezipodnikové ceně
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Transakce plateb odběratelů
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Často kladené dotazy týkající se prahových hodnot daní
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Skladové převody
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Itálie
               items:
                 - name: Itálie - přehled

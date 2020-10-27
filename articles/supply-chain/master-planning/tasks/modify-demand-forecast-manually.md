@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ddb14968bee06dd26b6584fab3d88445cd926cbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 105cf50698889e81804155cdac3a8b484cbf87d7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209575"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987159"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ruční úprava prognózy poptávky
 
@@ -31,10 +31,10 @@ Tento postup popisuje postup úpravy prognózy pro položku. K vytvoření tohot
 
 
 ## <a name="modify-the-forecast-for-an-item"></a>Upravení prognózy pro zboží
-1. V **Navigačním podokně** přejděte na **Moduly > Řízení informací o produktech > Produkty > Vydané produkty**.
+1. V **Navigačním podokně** přejděte na **Moduly > Řízení informací o produktech > Produkty > Vydané produkty** .
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Vyberte položku, u které chcete změnit typ prognózu. Můžete vybrat zboží D0001.  
-3. V **podokně akcí** klikněte na možnost **Plán**.
-4. Klikněte na položku **Prognóza poptávky**.
+3. V **podokně akcí** klikněte na možnost **Plán** .
+4. Klikněte na položku **Prognóza poptávky** .
 5. Označte na seznamu vybraný řádek. Pokud neexistují žádné řádky prognózy, vytvořte nový řádek klepnutím na Nový na panelu aplikace.  
 6. V poli **Prod. množství** zadejte číslo. Toto číslo představuje předpovídané množství položky.  
 7. Klikněte na položku Uložit.

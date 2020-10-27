@@ -3,7 +3,7 @@ title: Kontrola konzistence maloobchodních transakcí
 description: Toto téma popisuje funkci kontroly konzistence transakcí v aplikaci Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265611"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968765"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
@@ -47,12 +47,12 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 
 - **Účet odběratele** - Ověřuje, že účet odběratele existuje v tabulce transakcí v HQ hlavních datech odběratele.
 - **Počet řádků** - Ověřuje, že počet řádků, jak je zaznamenaný v tabulce záhlaví transakcí, odpovídá počtu řádků v tabulce prodejních transakcí.
-- **Cena zahrnuje daň** – Ověřuje, zda je parametr **Cena zahrnuje daň** konzistentní napříč řádky transakce.
-- **Částka platby** - Ověřuje, že se záznamy platby shodují s částkou platby na záhlaví.
-- **Hrubá částka** – Ověřuje, že je hrubá částka v záhlaví součtem čistých částek na řádcích a částky daně.
-- **Čistá částka** – Ověřuje, že je čistá částka v záhlaví součtem čistých částek na řádcích.
-- **Nedoplatek/přeplatek** – Ověřuje, že rozdíl mezi hrubou částkou v záhlaví a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku.
-- **Částka slevy** – Ověřuje, že částka slevy v tabulkách slev a částka slevy v tabulkách řádků transakcí jsou konzistentní a že částka slevy v záhlaví je součtem částek slev na řádcích.
+- **Cena zahrnuje daň** - Potvrzuje, že parametr **Cena zahrnuje daň** je konzistentní napříč řádky transakcí a cena na řádku prodeje je v souladu s konfigurací ceny zahrnující daň a osvobození od daně.
+- **Částka platby** - Ověří, že záznamy o platbách odpovídají částce platby v záhlaví, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Hrubá částka** - Ověří, že hrubá částka v záhlaví je součtem čistých částek na řádcích plus částka daně, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Čistá částka** - Ověří, že čistá částka v záhlaví je součtem čistých částek na řádcích, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Nedoplatek/přeplatek** – Ověřuje, že rozdíl mezi hrubou částkou v záhlaví a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Částka slevy** – Ověřuje, že částka slevy v tabulkách slev a částka slevy v tabulkách řádků transakcí jsou konzistentní a že částka slevy v záhlaví je součtem částek slev na řádcích, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
 - **Řádková sleva** - Ověřuje, že řádková sleva na řádku transakce je součtem všech řádků v tabulce slev, která odpovídá řádku transakce.
 - **Položka dárkového poukazu** – Commerce nepodporuje vrácení položek dárkového poukazu. Nicméně zůstatek na dárkovém poukazu lze vyplatit v hotovosti. U jakékoliv položky dárkového poukazu, která je zpracována jako řádek vrácení namísto řádku vyplacení v hotovosti, se proces zaúčtování výkazů nezdaří. Proces ověřování pro položky dárkového poukazu pomáhá zaručit, že jediné položky řádku vrácení dárkového poukazu v tabulce transakcí jsou řádky vyplacení dárkového poukazu.
 - **Záporná cena** – Ověřuje, že neexistují žádné řádky transakce s negativní cenou.
@@ -61,10 +61,11 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 - **Sériové číslo** - Ověřuje, že se sériové číslo nachází v řádcích transakce pro položky řízené sériovým číslem.
 - **Podepsat** - Ověřuje, že znaménko množství a čistá částka budou stejné ve všech řádcích transakce.
 - **Obchodní datum** – Ověřuje, zda jsou finanční období pro všechna obchodní data pro transakce otevřená.
+- **Poplatky** - Ověřuje, že částka poplatku záhlaví a řádku odpovídá ceně, včetně konfigurace daně a osvobození od daně.
 
 ## <a name="set-up-the-consistency-checker"></a>Nastavení kontroly konzistence
 
-Nakonfigurujte dávkové zpracování „Ověřit transakce obchodu“ pro periodická spuštění pomocí možností **Maloobchodní a velkoobchodní prodej \> IT pro maloobchod a velkoobchod \> Zaúčtování POS**. Dávkovou úlohu lze naplánovat na základě hierarchie organizace obchodu, podobným způsobem, jakým se nastavují zpracování „Vypočítat příkazy v dávkách“ a „Zaúčtovat příkazy v dávkách“. Doporučujeme, abyste nakonfigurovali toto dávkové zpracování tak, aby se spouštělo několikrát denně, a naplánovali jeho spuštění na konec každého provedení úlohy P.
+Nakonfigurujte dávkové zpracování „Ověřit transakce obchodu“ pro periodická spuštění pomocí možností **Retail a Commerce \> IT pro Retail a Commerce \> Zaúčtování POS**. Dávkovou úlohu lze naplánovat na základě hierarchie organizace obchodu, podobným způsobem, jakým se nastavují zpracování „Vypočítat příkazy v dávkách“ a „Zaúčtovat příkazy v dávkách“. Doporučujeme, abyste nakonfigurovali toto dávkové zpracování tak, aby se spouštělo několikrát denně, a naplánovali jeho spuštění na konec každého provedení úlohy P.
 
 ## <a name="results-of-validation-process"></a>Výsledky procesu ověření
 

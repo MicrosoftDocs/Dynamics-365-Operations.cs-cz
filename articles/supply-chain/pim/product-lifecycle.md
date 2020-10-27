@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7889f1d21bf38a9063fff6a64da50febd15df5d6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 20d472c399c75dbbef5e197e8f7f495e81b14ca2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209437"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980857"
 ---
 # <a name="product-lifecycle-state-overview"></a>Přehled životního cyklu produktu
 
@@ -36,38 +36,38 @@ Uvolněný produkt nebo variantu produktu lze přidružit ke stavu životního c
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Vytvoření nového stavu životního cyklu produktu 
 
-- Chcete-li vytvořit nový stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření nového stavu životního cyklu produktu**. 
+- Chcete-li vytvořit nový stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření nového stavu životního cyklu produktu** . 
 
--  Chcete-li vytvořit výchozí stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření výchozího stavu životního cyklu produktu**.   
+-  Chcete-li vytvořit výchozí stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření výchozího stavu životního cyklu produktu** .   
 
 ## <a name="associate-product-lifecycle-states-to-released-products"></a>Přidružení stavů životního cyklu produktu k uvolněným produktům  
 
 Existuje více způsobů, jak přidružit stav životního cyklu produktu k uvolněným produktům nebo variantám produktu.
 
--  Při vytvoření nového uvolněného produktu je automaticky přiřazen výchozí **Stav životního cyklu produktu**. 
--  Při uvolnění produktu do právnické osoby je automaticky přiřazen výchozí **Stav životního cyklu produktu**. 
+-  Při vytvoření nového uvolněného produktu je automaticky přiřazen výchozí **Stav životního cyklu produktu** . 
+-  Při uvolnění produktu do právnické osoby je automaticky přiřazen výchozí **Stav životního cyklu produktu** . 
 -  Při uvolnění varianty produktu do právnické osoby je automaticky nové variantě přiřazen **Stav životního cyklu produktu** přidružený k uvolněnému základnímu produktu v této právnické osobě. 
 
 Stav životního cyklu produktu lze aktualizovat ručně pomocí: 
 
--    Stránky se seznamem **Uvolněné produkty** nebo **Zobrazení podrobností**. 
--  Stránky se seznamem **Uvolněné varianty produkty** nebo **Zobrazení podrobností**. 
+-    Stránky se seznamem **Uvolněné produkty** nebo **Zobrazení podrobností** . 
+-  Stránky se seznamem **Uvolněné varianty produkty** nebo **Zobrazení podrobností** . 
 -  Najděte zastaralé produkty nebo varianty produktu na základě poptávky a přidružte stav životního cyklu.  
 
 Podrobné informace o přidružení stavů životního cyklu produktu získáte přehráním nebo přečtením následujících dvou záznamů průvodcem úloh.
 
--  Chcete-li přidružit stav životního cyklu produktu k uvolněnému základnímu produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému hlavnímu produktu**. 
+-  Chcete-li přidružit stav životního cyklu produktu k uvolněnému základnímu produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému hlavnímu produktu** . 
 
--  Chcete-li přidružit stav životního cyklu produktu k uvolněnému produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému produktu**. 
+-  Chcete-li přidružit stav životního cyklu produktu k uvolněnému produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému produktu** . 
 
 ## <a name="impact-on-master-planning"></a>Dopad na hlavní plánování 
 
-Stav životního cyklu produktu má pouze jeden kontrolní příznak: **Je aktivní pro plánování**. Ve výchozím nastavení je tato hodnota nastavena na **Ano** pro všechny vytvořené stavy životního cyklu produktu, ale lze ji změnit na **Ne**. Pokud je nastavena na **Ne**, přiřazené uvolněné produkty nebo uvolněné varianty produktu jsou: 
+Stav životního cyklu produktu má pouze jeden kontrolní příznak: **Je aktivní pro plánování** . Ve výchozím nastavení je tato hodnota nastavena na **Ano** pro všechny vytvořené stavy životního cyklu produktu, ale lze ji změnit na **Ne** . Pokud je nastavena na **Ne** , přiřazené uvolněné produkty nebo uvolněné varianty produktu jsou: 
 
 -  Vyloučeno z hlavního plánování. 
 -  Vyloučeno z výpočtu úrovně kusovníku. 
 
-Podrobné informace o použití stavu životního cyklu produktu k vyloučení produktů z hlavního plánování a výpočtu úrovně kusovníku získáte přehráním nebo přečtením průvodce záznamem úloh **Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování**.
+Podrobné informace o použití stavu životního cyklu produktu k vyloučení produktů z hlavního plánování a výpočtu úrovně kusovníku získáte přehráním nebo přečtením průvodce záznamem úloh **Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování** .
 
 > [!NOTE]
 > Z důvodu výkonu doporučujeme přidružit všechny zastaralé uvolněné produkty nebo varianty produktu, zejména při práci s opětovně nepoužitelnými variantami konfigurace produktu ke stavu životního cyklu produktu, který je deaktivován pro hlavní plánování.  
@@ -78,7 +78,7 @@ Stavy životního cyklu produktu jsou podporovány datovými entitami a stav ži
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Nalezení zastaralých produktů a variant produktů 
 
-Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu. Chcete-li nalézt zastaralé produkty, přehrajte si nebo si přečtěte průvodce záznamem úloh **Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu**. Tento průvodce záznamem ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.  
+Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu. Chcete-li nalézt zastaralé produkty, přehrajte si nebo si přečtěte průvodce záznamem úloh **Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu** . Tento průvodce záznamem ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.  
 
 Spuštěním analýzy v režimu simulace se zobrazí produkty a varianty produktů identifikované jako zastaralé v konkrétním formuláři, kde je lze snadno zkontrolovat. Analýza vyhledá transakce a konkrétní hlavní data k určení produktů, které nemají žádnou poptávku v rámci proměnného období a žádná hlavní data, která mohou mít za následek poptávku. Nové uvolněné produkty v rámci proměnného období lze vyloučit z analýzy. Když simulace analýzy vrátí očekávaný výsledek, může uživatel spustit analýzu a nastavit nový stav životního cyklu produktu pro všechny produkty identifikované analýzou jako zastaralé.  
 

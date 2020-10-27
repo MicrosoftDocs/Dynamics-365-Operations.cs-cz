@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c5ca3c1e74c642de117c708c039614da9e0ec15
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 18484b637723cef43cad288c08ddfe53cddf9e03
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202852"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978476"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Vytvoření požadavků položky pro servisní zakázky 
 
@@ -38,31 +38,31 @@ Požadavky zboží pro objednávky služeb jsou zpracovávány prostřednictvím
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Vytvoření požadavku položky pro servisní zakázku
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
 
 2.  Vyberte servisní zakázku, pro kterou chcete vytvořit požadavek na položky.
 
-3.  V **podokně akcí** na kartě **Expedice** klikněte na **Požadavek na položku**.
+3.  V **podokně akcí** na kartě **Expedice** klikněte na **Požadavek na položku** .
 
 4.  Ve formuláři **Požadavky na položku** zadejte informace pro požadovanou položku. Další informace o daných polích ve formuláři lze najít v tématu [Požadavky na položku (formulář)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Vytvoření požadavku položky pro servisní smlouvu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
 
 2.  Otevřete servisní smlouvu, pro kterou chcete vytvořit požadavek na položky.
 
 3.  Na pevné záložce **Řádky** kliknutím na tlačítko **Přidat** vytvořte nový řádek.
 
-4.  V poli **Typ transakce** vyberte **Položka**.
+4.  V poli **Typ transakce** vyberte **Položka** .
 
-5.  V poli **Nastavení položky** vyberte **Požadavek na položku**.
+5.  V poli **Nastavení položky** vyberte **Požadavek na položku** .
 
 6.  V poli **Číslo položky** vyberte položku, která je vyžadována pro servisní smlouvu.
 
 7.  Na pevné záložce **podrobnosti řádku** na kartě **dimenze produktu** v poli **pracoviště** vyberte skladové pracoviště pro položku.
 
-8.  Chcete-li vytvořit servisní zakázku z řádku smlouvy, na pevné záložce **Řádky** klepněte na možnost **Vytvořit servisní příkazy** a poté zadejte relevantní informace do formuláře **Vytvořit servisní příkazy**. 
+8.  Chcete-li vytvořit servisní zakázku z řádku smlouvy, na pevné záložce **Řádky** klepněte na možnost **Vytvořit servisní příkazy** a poté zadejte relevantní informace do formuláře **Vytvořit servisní příkazy** . 
 
 
 ## <a name="see-also"></a>Viz také

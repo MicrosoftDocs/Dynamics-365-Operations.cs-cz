@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 373b6bf6219ef76bacef3c67a816aec4c084c405
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383727"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987111"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
 
@@ -33,7 +33,7 @@ Během scénáře vytvoříte sady prodejních objednávek a uvolníte každou s
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
+Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Nastavení zásad konsolidace dodávek a filtry produktů
 
@@ -56,7 +56,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-order-1-2"></a>Prodejní objednávka 1-2
@@ -68,7 +68,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-order-1-3"></a>Prodejní objednávka 1-3
@@ -80,12 +80,12 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -99,12 +99,12 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)
+    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý* )
     - **Množství:** *1.00*
 
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)
+    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní* )
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -118,12 +118,12 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)
+    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý* )
     - **Množství:** *1.00*
 
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)
+    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní* )
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -141,7 +141,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 ### <a name="create-order-set-5"></a>Vytvoření sady objednávek 5
@@ -155,7 +155,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-order-5-3"></a>Prodejní objednávka 5-3
@@ -167,7 +167,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 ### <a name="create-order-set-6"></a>Vytvoření sady objednávek 6
@@ -181,7 +181,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Prodejní objednávky 6-3 a 6-4
@@ -193,7 +193,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Prodejní objednávky 6-5 a 6-6
@@ -207,7 +207,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Prodejní objednávky 6-7 a 6-8
@@ -221,7 +221,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatické uvolnění prodejních objednávek do skladu
@@ -234,16 +234,16 @@ U každé sady prodejních objednávek, které jste vytvořili dříve, dokonč�
 
 #### <a name="update-the-wave-template-that-will-be-used-during-release"></a>Aktualizace šablony vln, která bude použita během uvolnění
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
-1. Nastavte pole **Typ šablony vln** na *Expedice*.
-1. Najděte a vyberte šablonu vlny přidruženou ke skladu, který jste použili v sadách objednávek, které jste pro tento scénář vytvořili. Pokud jste například použili sklad *24*, vybere šablonu vlny **Výchozí expedice 24**. Pokud jste použili sklad *61*, vybere šablonu vlny **Expedice 61**.
-1. V podokně akcí vyberte **Upravit**.
-1. Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na *Ne*.
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** .
+1. Nastavte pole **Typ šablony vln** na *Expedice* .
+1. Najděte a vyberte šablonu vlny přidruženou ke skladu, který jste použili v sadách objednávek, které jste pro tento scénář vytvořili. Pokud jste například použili sklad *24* , vybere šablonu vlny **Výchozí expedice 24** . Pokud jste použili sklad *61* , vybere šablonu vlny **Expedice 61** .
+1. V podokně akcí vyberte **Upravit** .
+1. Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na *Ne* .
 
 #### <a name="release-to-the-warehouse"></a>Uvolnění do skladu
 
-1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Automatické uvolnění prodejních objednávek**.
-1. Nastavte pole **Množství k uvolnění** na *Vše*.
+1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Automatické uvolnění prodejních objednávek** .
+1. Nastavte pole **Množství k uvolnění** na *Vše* .
 1. Na záložce s náhledem **Záznamy k zahrnutí** vyberte **Filtr** a otevřete dialogové okno dotazu.
 1. Na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
@@ -253,13 +253,13 @@ U každé sady prodejních objednávek, které jste vytvořili dříve, dokonč�
     - **Kritéria:** Zadejte čárkami oddělený seznam čísel prodejních objednávek z požadované sady objednávek.
 
 1. Vyberte **OK** a uložte dotaz.
-1. Vyberte **OK** a zahajte postup *Automatické uvolnění do skladu*.
+1. Vyberte **OK** a zahajte postup *Automatické uvolnění do skladu* .
 
 #### <a name="review-the-shipment-that-is-created-or-updated"></a>Kontrola dodávky, která je vytvořena nebo aktualizována
 
-1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.
+1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky** .
 1. Najděte a vyberte požadovanou dodávku.
-1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.
+1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek** .
 
 ### <a name="release-sales-orders-from-order-set-1"></a>Uvolnění prodejních objednávek ze sady objednávek 1
 
@@ -267,8 +267,8 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny dvě dodávky:
 
-- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.
-- Druhá dodávka, která nepoužívá způsob dopravy *Airways*, byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
+- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode* .
+- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo* .
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Uvolnění prodejních objednávek ze sady objednávek 2
 
@@ -276,8 +276,8 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny tři dodávky:
 
-- První dodávka obsahuje položky *Hořlavý*.
-- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.
+- První dodávka obsahuje položky *Hořlavý* .
+- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní* .
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Uvolnění prodejních objednávek ze sady objednávek 3
 
@@ -285,14 +285,14 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že došlo k následujícím akcím:
 
-- Byla aktualizována jedna existující dodávka (dodávka, která byla vytvořena při uvolnění sady objednávek 2 do skladu). Byl přidán řádek s položkou *Hořlavý*.
-- Byla vytvořena jedna nová dodávka, která obsahuje položku *Explozivní*.
+- Byla aktualizována jedna existující dodávka (dodávka, která byla vytvořena při uvolnění sady objednávek 2 do skladu). Byl přidán řádek s položkou *Hořlavý* .
+- Byla vytvořena jedna nová dodávka, která obsahuje položku *Explozivní* .
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Uvolnění prodejních objednávek ze sady objednávek 4
 
 Následujte [základní postup uvolnění do skladu](#release-procedure) a uvolněte prodejní objednávky ze sady objednávek 4.
 
-Až skončíte, měli byste vidět, že jedna existující dodávka (kde je pole **Žádost zákazníka** nastaveno na *1*) byla aktualizována. Byl k ní přidán jeden nový řádek.
+Až skončíte, měli byste vidět, že jedna existující dodávka (kde je pole **Žádost zákazníka** nastaveno na *1* ) byla aktualizována. Byl k ní přidán jeden nový řádek.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Uvolnění prodejních objednávek ze sady objednávek 5
 
@@ -300,7 +300,7 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že došlo k následujícím akcím:
 
-- Jedna existující dodávka (kde je pole **Žádost zákazníka** nastaveno na *1*) byla aktualizována. Řádek z prodejní objednávky 5-3 (kde je pole **Žádost zákazníka** nastaveno na *1*) byl k ní přidán.
+- Jedna existující dodávka (kde je pole **Žádost zákazníka** nastaveno na *1* ) byla aktualizována. Řádek z prodejní objednávky 5-3 (kde je pole **Žádost zákazníka** nastaveno na *1* ) byl k ní přidán.
 - Byla vytvořena jedna nová dodávka, kde řádky z prodejních objednávek 5-1 a 5-2 jsou seskupeny do jedné dodávky.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Uvolnění prodejních objednávek ze sady objednávek 6
@@ -309,10 +309,10 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny čtyři dodávky:
 
-- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky z objednávek 6-5 a 6-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
-- Řádky z objednávek 6-7 a 6-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.
+- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky z objednávek 6-5 a 6-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
+- Řádky z objednávek 6-7 a 6-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder* .
 
 ## <a name="additional-resources"></a>Další prostředky
 

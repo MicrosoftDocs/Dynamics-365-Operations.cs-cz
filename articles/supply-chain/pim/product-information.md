@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e5983fa7272a89d28699eb10bb9c5e0d79490ae
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: c118bc37a26d6d3a65905f2fd955ceb3554e9557
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895565"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980881"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
@@ -63,7 +63,7 @@ Všimněte si, že v dynamických a pružných organizacích se informace o prod
 
 ## <a name="product-masters-and-product-variants"></a>Hlavní produkty a varianty produktů
 
-V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Supply Chain Management se tyto obecné produkty označují jako *základní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
+V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Supply Chain Management se tyto obecné produkty označují jako *základní produkty* . Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu* .
 
 Hlavní produkt je přidružen ke skupině dimenzí produktu a technologii konfigurace k určení obchodních pravidel. Dimenze produktu (barva, velikost, styl a konfigurace) jsou konkrétní sada atributů, které lze použít v celé aplikaci k definování a sledování konkrétního chování souvisejících produktů. Tyto dimenze také pomáhají uživatelům vyhledat a určit produkty.
 
@@ -72,7 +72,7 @@ Hlavní produkt je přidružen ke skupině dimenzí produktu a technologii konfi
 Můžete vybírat mezi třemi technologiemi konfigurace:
 
 - Předdefinované varianty definují předem definované dimenze produktu. Definice variant obsahuje definici specifické platné kombinace dimenzí, jako je barva, styl a velikost. Každá kombinace vytváří různé varianty produktu.
-- Konfigurace založené na dimenzích se obvykle používají ve scénářích výroby a umožňují používání dimenze konfigurace v definici kusovníků (BOM). Po výběru konkrétní konfigurace systém použije podmnožinu řádků kusovníku, které jsou platné pro danou konfiguraci plánování a výroby. Tento koncept je známý také jako *globální kusovníku*, protože se jeden sdílený kusovník používá pro všechny konfigurace produktu.
+- Konfigurace založené na dimenzích se obvykle používají ve scénářích výroby a umožňují používání dimenze konfigurace v definici kusovníků (BOM). Po výběru konkrétní konfigurace systém použije podmnožinu řádků kusovníku, které jsou platné pro danou konfiguraci plánování a výroby. Tento koncept je známý také jako *globální kusovníku* , protože se jeden sdílený kusovník používá pro všechny konfigurace produktu.
 - Konfigurace založená na omezeních používá k popisu všech možných atributů a součástí, které jsou požadovány pro všechny možné varianty produktu, jeden modul konfigurace produktu. Omezení kombinací atributů lze popsat pomocí regulárních výrazů nebo omezení na základě tabulky. Modely konfigurace a konfigurátory začnou být důležitější v modulu řízení informací o produktu a používají se ve všech odvětvích.
 
 Při plánování implementace aplikace Supply Chain Management je velmi důležité zvolit správnou technologii konfigurace pro obchodní proces. Produkt nelze převést z jednoho modelu na jiný po implementaci.
@@ -83,14 +83,14 @@ Pracovní prostor **Definice variant modelu produktu** poskytuje přehled hlavn�
 
 ## <a name="released-products"></a>Uvolněné produkty
 
-Produkty, které budou uvolněny pro určitou právnickou osobu, se označují jako *uvolněné produkty*. Produkty lze uvolňovat hromadně pro jednu právnickou osobu nebo mnoho právnických osob vždy po jednom. Vzhledem k tomu, že různé vlastnosti a atributy produktu mohou být přidávány podle právnických osob, pracovní prostor **Údržba uvolněného produktu** vám umožní sledovat a dokončit naposledy uvolněné produkty v každé právnické osobě nebo v dílčích organizacích právnické osoby.
+Produkty, které budou uvolněny pro určitou právnickou osobu, se označují jako *uvolněné produkty* . Produkty lze uvolňovat hromadně pro jednu právnickou osobu nebo mnoho právnických osob vždy po jednom. Vzhledem k tomu, že různé vlastnosti a atributy produktu mohou být přidávány podle právnických osob, pracovní prostor **Údržba uvolněného produktu** vám umožní sledovat a dokončit naposledy uvolněné produkty v každé právnické osobě nebo v dílčích organizacích právnické osoby.
 
 ### <a name="released-product-maintenance-workspace"></a>Pracovní prostor Údržba uvolněného produktu
 
-Pracovní prostor **Údržba uvolněného produktu** lze konfigurovat z položky nabídky **Nakonfigurovat můj pracovní prostor**. Vyberte hierarchii kategorií a kategorii pro filtrování pracovního prostoru. Chcete-li upravit příslušná data produktu v pracovním prostoru, můžete také definovat časové limity pro **naposledy uvolněné produkty** a **zastavené uvolněné produkty** ve dnech.
+Pracovní prostor **Údržba uvolněného produktu** lze konfigurovat z položky nabídky **Nakonfigurovat můj pracovní prostor** . Vyberte hierarchii kategorií a kategorii pro filtrování pracovního prostoru. Chcete-li upravit příslušná data produktu v pracovním prostoru, můžete také definovat časové limity pro **naposledy uvolněné produkty** a **zastavené uvolněné produkty** ve dnech.
 
-Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevřené případy** zobrazuje případy změny produktu, které mají produkty ve vybrané hierarchii kategorie produktů, které nejsou dokončeny a uzavřeny. Seznam **Naposledy uvolněné** zobrazuje produkty, které byly uvolněny v rámci časového limitu nastaveného v konfiguraci pracovního prostoru. Pro každou položku v seznamu se spustí ověření a zobrazí stav ověření. Tento stav by mohl naznačovat, že požadované konfigurace pro právnickou osobu nebyly dokončeny. Ze seznamu lze přejít přímo na stránky **Podrobnosti o uvolnění produktu**, **Údržba atributu produktu**, **Údržba kategorie produktu**, **Výchozí nastavení objednávky** a **Překlady textu** k dokončení nutných konfigurací produktu.
+Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevřené případy** zobrazuje případy změny produktu, které mají produkty ve vybrané hierarchii kategorie produktů, které nejsou dokončeny a uzavřeny. Seznam **Naposledy uvolněné** zobrazuje produkty, které byly uvolněny v rámci časového limitu nastaveného v konfiguraci pracovního prostoru. Pro každou položku v seznamu se spustí ověření a zobrazí stav ověření. Tento stav by mohl naznačovat, že požadované konfigurace pro právnickou osobu nebyly dokončeny. Ze seznamu lze přejít přímo na stránky **Podrobnosti o uvolnění produktu** , **Údržba atributu produktu** , **Údržba kategorie produktu** , **Výchozí nastavení objednávky** a **Překlady textu** k dokončení nutných konfigurací produktu.
 
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 
-Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt**.
+Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt** .

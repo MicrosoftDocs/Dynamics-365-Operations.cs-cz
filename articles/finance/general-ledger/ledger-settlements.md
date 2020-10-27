@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 01764db27eb7061deeddc01997f16a43f9cb00c6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186433"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977112"
 ---
 # <a name="ledger-settlements"></a>Vyrovnání hlavní knihy
 
@@ -33,15 +33,15 @@ Vyrovnání hlavní knihy vám umožňují spárovat transakce Má dáti a Dal v
 
 Stránka pokročilých vyrovnání hlavní knihy poskytuje další možnosti filtrování a výběru transakcí. Chcete-li povolit pokročilá vyrovnání hlavní knihy, postupujte takto.
 
-1. Zvolte **Hlavní kniha** \> **Nastavení hlavní knihy** \> **Parametry hlavní knihy**. 
-2. Na kartě **Vyrovnání hlavní knihy** nastavte možnost **Rozšířené vyrovnání hlavní knihy** na **Ano**, čímž zapnete funkci rozšířeného vyrovnání hlavní knihy Stránka **Pokročilé vyrovnání hlavní knihy** se použije tehdy, když zvolíte **Vyrovnání hlavní knihy** v možnosti **Periodické úlohy**. 
-3. Je nutné zadat seznam účtů, které se použijí pro vyrovnání hlavní knihy pro každou účtovou osnovu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**. V seznamu **Účtové osnovy** vyberte účtovou osnovu a poté vyberte **Nový** pro přidání nových účtů do seznamu.
+1. Zvolte **Hlavní kniha** \> **Nastavení hlavní knihy** \> **Parametry hlavní knihy** . 
+2. Na kartě **Vyrovnání hlavní knihy** nastavte možnost **Rozšířené vyrovnání hlavní knihy** na **Ano** , čímž zapnete funkci rozšířeného vyrovnání hlavní knihy Stránka **Pokročilé vyrovnání hlavní knihy** se použije tehdy, když zvolíte **Vyrovnání hlavní knihy** v možnosti **Periodické úlohy** . 
+3. Je nutné zadat seznam účtů, které se použijí pro vyrovnání hlavní knihy pro každou účtovou osnovu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy** . V seznamu **Účtové osnovy** vyberte účtovou osnovu a poté vyberte **Nový** pro přidání nových účtů do seznamu.
 
 ## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Vyrovnání transakcí pomocí stránky pokročilého vyrovnání hlavní knihy
 
 Chcete-li vyrovnat transakce, postupujte takto.
 
-1. Zvolte **Hlavní kniha** \> **Periodické úlohy** \> **Vyrovnání hlavní knihy**.
+1. Zvolte **Hlavní kniha** \> **Periodické úlohy** \> **Vyrovnání hlavní knihy** .
 2. Nastavte filtry v horní části stránky:
 
     - Vyberte rozsah dat nebo zvolte **Kód časového intervalu** pro automatické vyplnění časového rozsahu.
@@ -50,8 +50,8 @@ Chcete-li vyrovnat transakce, postupujte takto.
 
 3. Vyberte **Zobrazit transakce** k zobrazení všech transakcí, které odpovídají nastaveným filtrům a seznamu účtů, které jste uvedli při nastavení účtové osnovy v předchozí části. Pokud změníte jakýkoliv z filtrů nebo sad dimenzí, je nutné vybrat možnost **Zobrazit transakce** znovu.
 4. Vyberte jeden nebo více řádků, které máte v plánu vyrovnat. Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.
-5. Po dokončení výběru transakcí vyberte **Označit vybrané**. Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** nad mřížkou zvyšuje nebo snižuje o celkovou částku na označených řádcích.
-6. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Vyrovnat označené transakce**. Stav označených transakcí je aktualizován na **Vyrovnáno**.
+5. Po dokončení výběru transakcí vyberte **Označit vybrané** . Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** nad mřížkou zvyšuje nebo snižuje o celkovou částku na označených řádcích.
+6. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Vyrovnat označené transakce** . Stav označených transakcí je aktualizován na **Vyrovnáno** .
 
 ## <a name="make-transactions-easier-to-find"></a>Snadnější vyhledání transakcí
 
@@ -59,7 +59,7 @@ Stránka **Vyrovnání hlavní knihy** obsahuje možnosti, které usnadňují zo
 
 - Tlačítko **Zrušit označení vybraných** vymaže pole **Označené** pro všechny řádky, které jsou vybrány.
 - Filtr **Označené** vám umožňuje filtrovat transakce podle toho, zda je pole **Označené** pro danou položku vybráno nebo odznačeno.
-- Filtr **Stav** vám umožňuje filtrovat transakce podle toho, zda je jejich stav **Vyrovnáno** nebo **Nevyrovnáno**.
+- Filtr **Stav** vám umožňuje filtrovat transakce podle toho, zda je jejich stav **Vyrovnáno** nebo **Nevyrovnáno** .
 - Tlačítko **Třídit podle absolutní částky** umožňuje seřadit částky podle absolutní hodnoty, abyste mohli seskupit dohromady položky Má dáti a Dal, které mají stejnou částku.
 
 ## <a name="reverse-a-settlement"></a>Stornování vyrovnání
@@ -67,11 +67,11 @@ Stránka **Vyrovnání hlavní knihy** obsahuje možnosti, které usnadňují zo
 Omylem provedené vyrovnání lze stornovat.
 
 1. Proveďte kroky 1 až 3 v části „Vyrovnání transakcí pomocí stránky pokročilých vyrovnání hlavní knihy“ k zobrazení transakcí, které hledáte.
-2. Ve filtru **Stav** vyberte možnost **Vyrovnáno**.
+2. Ve filtru **Stav** vyberte možnost **Vyrovnáno** .
 3. Vyberte jeden nebo více řádků, které máte v plánu stornovat. Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.
-4. Po dokončení výběru transakcí vyberte **Označit vybrané**. Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** v horní části stránky zvyšuje nebo snižuje o celkovou částku na označených řádcích.
-5. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Stornovat označené transakce**. Stav označených transakcí je aktualizován na **Nevyrovnáno**.
+4. Po dokončení výběru transakcí vyberte **Označit vybrané** . Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** v horní části stránky zvyšuje nebo snižuje o celkovou částku na označených řádcích.
+5. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Stornovat označené transakce** . Stav označených transakcí je aktualizován na **Nevyrovnáno** .
 
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualizace seznamů účtů, které jsou zahrnuty v seznamu transakcí
 
-Vyberte **Účty vyrovnání hlavní knihy** pro otevření dialogového okna, ve kterém můžete upravit účty zahrnuté v seznamu transakcí. Zvolte **Nový** pro přidání nových účtů do seznamu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**.
+Vyberte **Účty vyrovnání hlavní knihy** pro otevření dialogového okna, ve kterém můžete upravit účty zahrnuté v seznamu transakcí. Zvolte **Nový** pro přidání nových účtů do seznamu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy** .

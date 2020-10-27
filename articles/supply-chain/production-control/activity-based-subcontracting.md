@@ -16,15 +16,15 @@ ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2681c5db757ffb916520222e3062964937b1aef5
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 48a1943833408767fe77456f66bbe109170a29e2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826615"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985650"
 ---
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
@@ -41,7 +41,7 @@ Na základě těchto schopností nevyžaduje lean manufacturing žádné zvláš
 
 Například subdodavatel vychází ze zásobníku materiálu, který je umístěn na straně subdodavatele. Když jsou manipulační jednotky vyprázdněny na straně subdodavatele, kanbanové karty jsou vráceny do buňky sestavení společně s další dodávkou. Zásobník materiálu na straně subdodavatele je poté doplněn. Převody k subdodavateli a od něj je možné modelovat jako explicitní aktivity převodu na podporu procesu dodávky a vyskladnění. Pokud není explicitní registrace vyžadována k podpoře fyzické přepravy, aktivity převodu lze vynechat.  
 
-K vyrovnání zatížení celkové kapacity výrobního toku lze použít subdodavatele. Například výrobní tok je modelován pomocí plánových pravidel kanbanu. Plánovač používá desku kanbanového plánování pro naplánování a vyrovnání zátěže obou pracovních buněk poptávky. Plánovač také sleduje plán konsolidované dodávky pro zásobník materiálu na stránce **Plán dodávek**. Více subdodavatelů lze modelovat v jednom nebo více výrobních tocích a může existovat více kanbanových pravidel, která lze použít k dodání stejného produktu do stejného umístění prostřednictvím různých aktivit. Plánovač může převést kanbany na alternativní kanbanové pravidlo, aby došlo k přeplánování kanbanu, který byl původně vytvořen pro interní výrobu, na alternativní proces. Ve skutečnosti nemá subdodavatelská povaha pracovní buňky žádný vliv na výrobní tok. Stejné pracovní principy platí pro dvě paralelní interní pracovní buňky nebo pro dvě subdodavatelské buňky.   
+K vyrovnání zatížení celkové kapacity výrobního toku lze použít subdodavatele. Například výrobní tok je modelován pomocí plánových pravidel kanbanu. Plánovač používá desku kanbanového plánování pro naplánování a vyrovnání zátěže obou pracovních buněk poptávky. Plánovač také sleduje plán konsolidované dodávky pro zásobník materiálu na stránce **Plán dodávek** . Více subdodavatelů lze modelovat v jednom nebo více výrobních tocích a může existovat více kanbanových pravidel, která lze použít k dodání stejného produktu do stejného umístění prostřednictvím různých aktivit. Plánovač může převést kanbany na alternativní kanbanové pravidlo, aby došlo k přeplánování kanbanu, který byl původně vytvořen pro interní výrobu, na alternativní proces. Ve skutečnosti nemá subdodavatelská povaha pracovní buňky žádný vliv na výrobní tok. Stejné pracovní principy platí pro dvě paralelní interní pracovní buňky nebo pro dvě subdodavatelské buňky.   
 
 Stejně jako jakékoli jiné aktivity ve výrobním toku mohou subdodavatelské aktivity spotřebovávat a dodávat materiály a výrobky, které jsou uvedeny v zásobách, nejsou uvedeny v zásobách (nedokončená výroba \[NV\]) nebo mají podobu polotovarů. Postupy pro plánování a provádění subdodavatelských aktivit jsou ve všech případech stejné. Navíc jsou tyto procesy stejné jako procesy pro interní práci.
 
@@ -74,16 +74,16 @@ Tento požadavek zajišťuje použití modelu zásob FIFO. **Poznámka:** Výpo�
 Chcete-li konfigurovat aktivitu procesu jako subdodavatelskou aktivitu, postupujte takto.
 
 1.  Nakonfigurujte subdodavatelskou pracovní buňku. Ke konfiguraci pracovní buňky jako subdodavatelské je nutné vytvořit prostředek typu **Dodavatel** a přidružit ho k pracovní buňce (skupině prostředků). Nákladová kategorie typu nákladové skupiny **Přímý outsourcing** musí být přiřazena k pracovní buňce. Nákladové kategorie pro nastavení a množství nejsou povinné.
-2.  Po vytvoření aktivity procesu a navázání na subdodavatelskou pracovní buňku je nutné nakonfigurovat službu pro aktivitu před tím, než můžete aktivovat verzi výrobního toku. Tento krok dokončíte na stránce **Podrobnosti o** **aktivitě**. U činností, které jsou přidruženy k subdodavatelské pracovní buňce, se zobrazí pevná záložka **Podmínky služby**. Na této pevné záložce přidejte výchozí službu, která je platná pro všechny výstupní položky. Vyžadují-li konkrétní výstupní položky různé služby nebo různé parametry výpočtu služby (například poměr různých služeb), můžete přidat další služby k aktivitě.
+2.  Po vytvoření aktivity procesu a navázání na subdodavatelskou pracovní buňku je nutné nakonfigurovat službu pro aktivitu před tím, než můžete aktivovat verzi výrobního toku. Tento krok dokončíte na stránce **Podrobnosti o** **aktivitě** . U činností, které jsou přidruženy k subdodavatelské pracovní buňce, se zobrazí pevná záložka **Podmínky služby** . Na této pevné záložce přidejte výchozí službu, která je platná pro všechny výstupní položky. Vyžadují-li konkrétní výstupní položky různé služby nebo různé parametry výpočtu služby (například poměr různých služeb), můžete přidat další služby k aktivitě.
 
 ## <a name="subcontracted-transfer-activities"></a>Aktivity subdodavatelského převodu
-Aktivita převodu je nakonfigurován jako subdodavatelská aktivita, v závislosti na nastavení aktivity převodu **Dopravce**. Existují tyto možnosti:
+Aktivita převodu je nakonfigurován jako subdodavatelská aktivita, v závislosti na nastavení aktivity převodu **Dopravce** . Existují tyto možnosti:
 
 -   **Přepravce** – Aktivita je subdodavatelská, pokud je převod ze skladu řízen dodavatelem (jak je definováno vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
 -   **Příjemce** – Aktivita je subdodavatelská, pokud je převod do skladu řízen dodavatelem (jak je definováno vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
 -   **Dopravce** – Aktivita je zadána dodavateli, který poskytuje službu. Aby byl dopravce platný, musí být vytvořen pro řízení skladu a musí mít přiřazený dodavatelský účet.
 
-Pokud jde o aktivity procesu, je nutné nakonfigurovat výchozí službu pro aktivity subdodavatelského převodu na pevné záložce **Podmínky služby** stránky **Podrobnosti o** **aktivitě**.
+Pokud jde o aktivity procesu, je nutné nakonfigurovat výchozí službu pro aktivity subdodavatelského převodu na pevné záložce **Podmínky služby** stránky **Podrobnosti o** **aktivitě** .
 
 ## <a name="service-quantity-calculation"></a>Výpočet množství služby
 Celý nákupní proces je založen na odkazu položky pro službu. Tento odkaz položky se měří v měrné jednotce služby. Služby se obvykle měří buď v počtu služeb (jednotky) nebo v čase. Pro výpočet množství služeb na základě registrovaných dokončení kanbanových úloh můžete použít následující metody:

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30b06e537b010b6b32799f76964cb85af892bc3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 01cdfe519e55ca2a9aa17f4ac181ee675b2793cf
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216130"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982348"
 ---
 # <a name="service-level-agreements-overview"></a>Přehled smluv o úrovni služeb       
 
@@ -38,9 +38,9 @@ Odběratelům služeb lze nabídnout různé úrovně služeb, pro které lze vy
 
 ## <a name="create-a-service-level-agreement"></a>Vytvoření smlouvy o úrovni služeb (SLA)
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Smlouva o úrovni služeb**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Smlouva o úrovni služeb** .
 
-2.  Zadejte název smlouvy o úrovni služeb do pole **Smlouva o úrovni služeb**.
+2.  Zadejte název smlouvy o úrovni služeb do pole **Smlouva o úrovni služeb** .
 
 3.  Zadejte čas, který chcete povolit pro dokončení servisních volání, která jsou připojena ke smlouvě o úrovni služeb. Poté vyberte kalendář, pokud chcete založit smlouvu o úrovni služeb na konkrétním kalendáři.
 
@@ -54,13 +54,13 @@ Servisní zakázky, které jsou vytvořeny automaticky, nejsou připojeny ke sml
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a>Použití smlouvy o úrovni služeb na servisní smlouvu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, pro kterou chcete použít SLA, a klepněte na tlačítko **upravit** v **podokně akcí**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** . Vyberte servisní smlouvu, pro kterou chcete použít SLA, a klepněte na tlačítko **upravit** v **podokně akcí** .
 
 2.  V poli **smlouva o úrovni služeb** vyberte smlouvy o úrovni služeb, které chcete přiřadit.
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement-group"></a>Použití smlouvy o úrovni služeb na skupinu servisních smluv
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Skupiny servisních smluv**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Skupiny servisních smluv** .
 
 2.  V poli **smlouva o úrovni služeb** vyberte smlouvy o úrovni služeb, které chcete přiřadit.
 

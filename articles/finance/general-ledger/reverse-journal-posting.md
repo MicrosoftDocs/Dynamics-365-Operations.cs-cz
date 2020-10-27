@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5d1c58463c24dc6a40b036f0bb803316bbb65c2
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: e3244d857a9135249130672501f8b766ff9a0680
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091892"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980931"
 ---
 # <a name="reverse-journal-posting"></a>Stornování zaúčtování deníků
 
@@ -38,10 +38,10 @@ Toto téma popisuje funkce schopnosti Microsoft Dynamics 365 Finance, které umo
 - Otevřete finanční deník a filtrujte podle zaúčtovaných deníků.
 - Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
-- Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
-- Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 
+- Vyberte možnost **Ano** , chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
+- Pokud vyberete možnost **Ne** , zadejte datum transakce pro stornování. 
 - Zadejte poznámku, kterou chcete přidat k transakci storna.
-- Zvolte tlačítko **Stornovat**.
+- Zvolte tlačítko **Stornovat** .
 
 Transakce budou stornovány. 
 
@@ -57,10 +57,10 @@ Chcete-li stornovat jeden nebo více dokladů, postupujte takto:
 
 - Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
-- Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
-- Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 
+- Vyberte možnost **Ano** , chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
+- Pokud vyberete možnost **Ne** , zadejte datum transakce pro stornování. 
 - Zadejte komentář popisující transakci stornování.
-- Zvolte tlačítko **Stornovat**.
+- Zvolte tlačítko **Stornovat** .
 
 Transakce budou stornovány. 
 

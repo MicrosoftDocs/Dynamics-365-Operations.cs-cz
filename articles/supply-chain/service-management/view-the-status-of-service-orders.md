@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f9132479bac8a6bfd632a91e0acb94b9bde4e5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5d81b33a9f30143891da6c7f21dc728e6e4fe7b8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206351"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983764"
 ---
 # <a name="view-the-status-of-service-orders"></a>Zobrazení stavu servisních zakázek 
 
 [!include [banner](../includes/banner.md)]
 
 
-Stav servisních aktivit v servisních objednávkách můžete zobrazit ve formuláři **expediční vývěska**.
+Stav servisních aktivit v servisních objednávkách můžete zobrazit ve formuláři **expediční vývěska** .
 
 ## <a name="more-information-about-service-orders"></a>Více informací o servisních objednávkách
 

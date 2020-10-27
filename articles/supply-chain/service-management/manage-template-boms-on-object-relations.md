@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d597a698d0a2c953761c5985fdb6c3f2f1e1c383
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3571640ff9854b70d1c9bd41971aca88e0b1a02
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202277"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983664"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Správa šablon kusovníku pro vztahy předmětu 
 
@@ -32,51 +32,51 @@ ms.locfileid: "3202277"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Připojení kusovníku šablony k předmětu servisu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
 
 2.  Dvakrát klikněte na servisní smlouvu, v níž chcete připojit šablonu kusovníku ke vztahu předmětu.
 
-3.  Klikněte na **Nastavení** \> **Předměty servisu**.
+3.  Klikněte na **Nastavení** \> **Předměty servisu** .
 
-4.  Ve formuláři **Předměty servisu** vyberte objekt, kterému chcete přiřadit kusovník šablony, a klikněte na **Funkce** \> **Připojit kusovník šablony**.
+4.  Ve formuláři **Předměty servisu** vyberte objekt, kterému chcete přiřadit kusovník šablony, a klikněte na **Funkce** \> **Připojit kusovník šablony** .
 
-5.  V dialogovém okně **Vybrat kusovník šablony** vyberte kusovník šablony a pak klepněte na tlačítko **OK**.
+5.  V dialogovém okně **Vybrat kusovník šablony** vyberte kusovník šablony a pak klepněte na tlačítko **OK** .
 
 6.  Uložte změny zavřením formulářů.
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Odstranění servisního kusovníku z předmětu servisu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
 
 2.  Dvakrát klikněte na servisní smlouvu, u níž chcete odstranit kusovník služby ze vztahu předmětu.
 
-3.  Klikněte na **Nastavení** \> **Předměty servisu**.
+3.  Klikněte na **Nastavení** \> **Předměty servisu** .
 
-4.  Ve formuláři **Předměty servisu** vyberte předmět se servisním kusovníkem, který chcete odstranit, a klikněte na **Funkce** \> **Odstranit kusovník servisu**.
+4.  Ve formuláři **Předměty servisu** vyberte předmět se servisním kusovníkem, který chcete odstranit, a klikněte na **Funkce** \> **Odstranit kusovník servisu** .
 
 5.  Uložte změny zavřením formulářů.
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>Přesun historie servisního kusovníku do jiné servisní smlouvy
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
 
 2.  Poklepáním na servisní smlouvu proveďte přesun z kusovníku služby.
 
-3.  Klikněte na **Nastavení** \> **Předměty servisu**.
+3.  Klikněte na **Nastavení** \> **Předměty servisu** .
 
-4.  Ve formuláři **Předměty servisu** vyberte předmět se servisním kusovníkem, který chcete přesunout, a klikněte na **Funkce** \> **Přesunout kusovník servisu**.
+4.  Ve formuláři **Předměty servisu** vyberte předmět se servisním kusovníkem, který chcete přesunout, a klikněte na **Funkce** \> **Přesunout kusovník servisu** .
 
-5.  Ve formuláři **Vybrat vztah předmětu servisu** vyberte vztah předmětu servisu, k němuž chcete přesunout servisní kusovník a klikněte na tlačítko **OK**.
+5.  Ve formuláři **Vybrat vztah předmětu servisu** vyberte vztah předmětu servisu, k němuž chcete přesunout servisní kusovník a klikněte na tlačítko **OK** .
 
 6.  Uložte změny zavřením formulářů.
 
 ## <a name="modify-the-information-displayed-for-a-bom-line"></a>Změna informací zobrazených v řádku kusovníku
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku**.
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Šablony kusovníku** .
 
-2.  Vyberte kusovník šablony a pak klepněte na položku **Návrhář**.
+2.  Vyberte kusovník šablony a pak klepněte na položku **Návrhář** .
 
-3.  Klikněte na kartu **Nastavení**. V oblasti **kusovník** zaškrtněte políčka pro informace, které chcete zobrazit v řádcích kusovníku servisních kusovníků a šablon kusovníků.
+3.  Klikněte na kartu **Nastavení** . V oblasti **kusovník** zaškrtněte políčka pro informace, které chcete zobrazit v řádcích kusovníku servisních kusovníků a šablon kusovníků.
 
 4.  Uložte změny zavřením formulářů.
 

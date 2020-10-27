@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5026cf0ba71b756b44aa4813f7988195096de4fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ea7993312434a25805bd7d22ade2c7b772a5c1d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183486"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978291"
 ---
 # <a name="exchange-rate-adjustments"></a>Úpravy kurzů
 
@@ -36,7 +36,7 @@ Funkce pro vyrovnání kurzových rozdílů pro Estonsko, Maďarsko, Českou rep
 -   Při zaúčtování po sobě jdoucích nerealizovaných úprav se používá stejný typ zúčtovacího účtu a transakce bez ohledu na to, zda úpravy představují zisk nebo ztrátu.
 -   Vypočtené kurzové zisky se vždy zaúčtovávají na účty zisků a vypočítané kurzové ztráty na účty ztrát.
 
-Právnické osoby, které mají primární adresu v rámci České republiky, mohou využít zvláštní metodu vyrovnání kurzových rozdílů. Tato metoda se nazývá přírůstková metoda. Po zapnutí této metody změny nejsou použity změny které aktuální funkce zavedla. Nerealizované a realizované zisky nebo ztráty se počítají na základě posledního použitého směnného kurzu. Opravená částka se použije namísto původní částky jako základ pro výpočet. Pokud chcete přejít na metodu úpravy přírůstkového směnného kurzu, na stránce **Parametry hlavní knihy** v části **Přecenění cizí měny** v poli **Metoda výpočtu** vyberte **Přírůstkové**. Následující příklad ukazuje, jak funkce úpravy směnného kurzu funguje pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko. Tady je obchodní scénář pro tento příklad:
+Právnické osoby, které mají primární adresu v rámci České republiky, mohou využít zvláštní metodu vyrovnání kurzových rozdílů. Tato metoda se nazývá přírůstková metoda. Po zapnutí této metody změny nejsou použity změny které aktuální funkce zavedla. Nerealizované a realizované zisky nebo ztráty se počítají na základě posledního použitého směnného kurzu. Opravená částka se použije namísto původní částky jako základ pro výpočet. Pokud chcete přejít na metodu úpravy přírůstkového směnného kurzu, na stránce **Parametry hlavní knihy** v části **Přecenění cizí měny** v poli **Metoda výpočtu** vyberte **Přírůstkové** . Následující příklad ukazuje, jak funkce úpravy směnného kurzu funguje pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko. Tady je obchodní scénář pro tento příklad:
 
 -   Faktura v cizí měně je zaúčtována 1. prosince 2012.
 -   Platba v cizí měně je zaúčtována 3. ledna 2013
@@ -73,7 +73,7 @@ Zde jsou směnné kurzy pro kanadské dolary (CAD) americké dolary (USD) pro te
 
 
 ### <a name="revaluation--standard-method-date--december-31-2012"></a>Přecenění (standardní metodou, datum = 31. prosince 2012)
-Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 je přímým stornem položky z 31. prosince 2012. Dokonce účty hlavní knihy a typy zaúčtování jsou shodné. Dále si všimněte, že byl nastaven příznak **Oprava**.
+Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 je přímým stornem položky z 31. prosince 2012. Dokonce účty hlavní knihy a typy zaúčtování jsou shodné. Dále si všimněte, že byl nastaven příznak **Oprava** .
 
 | Datum                             | Má dáti / Dal | Částky               | Účet hlavní knihy (HK)    | typ transakce             | Typ zaúčtování       | Kreditní | Oprava |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
@@ -84,7 +84,7 @@ Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 j
 
 
 ### <a name="revaluation-invoice-date-method-date--january-1-2013"></a>Přecenění (metoda data faktury, datum = 1. ledna 2013)
-Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 je přímým stornem položky z 3. ledna 2013. Dokonce účty hlavní knihy a typy zaúčtování jsou shodné. Dále si všimněte, že byl nastaven příznak **Oprava**.
+Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 je přímým stornem položky z 3. ledna 2013. Dokonce účty hlavní knihy a typy zaúčtování jsou shodné. Dále si všimněte, že byl nastaven příznak **Oprava** .
 
 | Datum   | Má dáti / Dal | Částky | Účet hlavní knihy (HK)| typ transakce| Typ zaúčtování| Kreditní | Oprava |
 |--------|--------------|---------|----------------------------|----------------|--------|------------|--------------|
@@ -93,7 +93,7 @@ Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 j
 |3-led-13 | Má Dáti  | 0 CAD/5,000 USD | Pohledávky                             | Přecenění cizí měny | Zisk ze směnného kurzu |   |   |
 |3-led-13 | Kreditní | 0 CAD/5,000 USD | Zisk po úpravě v nerealizované měně | Přecenění cizí měny | Zisk ze směnného kurzu | X |   |
 
-Chování systému je stejné bez ohledu na to, zda je volba **Oprava** v části **Storno transakce** na stránce **Parametry hlavní knihy** nastavená na **Ano** nebo **Ne**.
+Chování systému je stejné bez ohledu na to, zda je volba **Oprava** v části **Storno transakce** na stránce **Parametry hlavní knihy** nastavená na **Ano** nebo **Ne** .
 
 
 

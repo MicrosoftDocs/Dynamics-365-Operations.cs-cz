@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cb8b86ef0e2a1bd90590c8cc2a20e18e82ef9c6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f023ddd8d6f9350702f687763b53b057baa9aed8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206581"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985808"
 ---
 # <a name="subscription-workflow-overview"></a>Přehled workflowu odběru 
 
@@ -40,11 +40,11 @@ Po vytvoření skupiny předplatného můžete vytvořit předplatné. Další i
 
 ## <a name="create-and-modify-subscription-transactions"></a>Vytvoření a úprava transakcí předplatného
 
-Po nastavení předplatného vytvoříte transakci poplatku předplatného pro první fakturační období, což je jeden rok. Transakce jsou typu **Běžné**. To znamená, že lze vytvořit pouze transakce předplatného, u nichž hodnoty Od data a Do data odpovídají existujícím obdobím vytvořeným ve formuláři **Typy období**. Další informace o transakcích poplatků naleznete v tématu [Vytvoření transakcí poplatků předplatného](create-subscription-fee-transactions.md).
+Po nastavení předplatného vytvoříte transakci poplatku předplatného pro první fakturační období, což je jeden rok. Transakce jsou typu **Běžné** . To znamená, že lze vytvořit pouze transakce předplatného, u nichž hodnoty Od data a Do data odpovídají existujícím obdobím vytvořeným ve formuláři **Typy období** . Další informace o transakcích poplatků naleznete v tématu [Vytvoření transakcí poplatků předplatného](create-subscription-fee-transactions.md).
 
 Po nastavení předplatného pro určitého odběratele si vzpomenete, že tento odběratel si s vámi dojednal slevu ve výši 10 procent na všechny ceny z ceníku nabízených služeb. Z tohoto důvodu budete muset snížit vytvořenou cenu poplatku transakce.
 
-Později ve stejný den se s vámi telefonicky spojí kontaktní osoba zákazníka a sdělí vám, že nadále požadují servisní smlouvu pro systém osvětlení, avšak že později v průběhu roku plánují instalaci nového systému osvětlení. Z tohoto důvodu je požadován rozsah smlouvy jen do října 2013. S cílem snížení počtu měsíců pro předplatné zákazníka vytvoříte novou transakci poplatku předplatného typu **Dny omezení**. Další informace o tom, jak snížit počet dní, lze najít v tématu [snížení počtu dnů u poplatků za odběr](reduce-the-days-on-subscription-fees.md).
+Později ve stejný den se s vámi telefonicky spojí kontaktní osoba zákazníka a sdělí vám, že nadále požadují servisní smlouvu pro systém osvětlení, avšak že později v průběhu roku plánují instalaci nového systému osvětlení. Z tohoto důvodu je požadován rozsah smlouvy jen do října 2013. S cílem snížení počtu měsíců pro předplatné zákazníka vytvoříte novou transakci poplatku předplatného typu **Dny omezení** . Další informace o tom, jak snížit počet dní, lze najít v tématu [snížení počtu dnů u poplatků za odběr](reduce-the-days-on-subscription-fees.md).
 
 ## <a name="invoice-and-accrue-subscription-transactions"></a>Fakturace a časové rozlišení pro transakce předplatného
 

@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 273063
 ms.search.region: Czech Republic
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4e65de358d5635e5fac138123f14644712385aae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 09a4f68d933aa2fc00e53cd3957b436fbe5d4ef2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175694"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979058"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
@@ -41,7 +41,7 @@ Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní
 
 ### <a name="set-up-number-sequences"></a>Nastavit číselné řady
 
-Vytvořte souvislou číselnou řadu pro právnickou osobu. Další informace naleznete v tématu [Přehled číselných řad](../../fin-and-ops/organization-administration/number-sequence-overview.md). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis**. Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu**. Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis**.
+Vytvořte souvislou číselnou řadu pro právnickou osobu. Další informace naleznete v tématu [Přehled číselných řad](../../fin-and-ops/organization-administration/number-sequence-overview.md). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis** . Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu** . Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis** .
 
 ### <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
 
@@ -49,34 +49,34 @@ Další informace naleznete v tématu [Přehled o DPH](../general-ledger/indire
 
 ### <a name="set-up-report-formats-for-documents"></a>Nastavení formátů sestavy pro dokumenty
 
-1.  Přejděte do nabídky **Pohledávky** \> **Nastavení** \> **Formuláře** \> **Nastavení formuláře**.
+1.  Přejděte do nabídky **Pohledávky** \> **Nastavení** \> **Formuláře** \> **Nastavení formuláře** .
 
-2.  Na kartě **Obecné** v části **Nastavit možnosti pro formuláře odběratelů** klikněte na **Správa tisku**.
+2.  Na kartě **Obecné** v části **Nastavit možnosti pro formuláře odběratelů** klikněte na **Správa tisku** .
 
-3.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Faktura odběratele**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+3.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Faktura odběratele** . V poli **Název sestavy** zadejte nebo vyberte hodnotu.
 
-4.  Ve stromové struktuře pod uzlem **Faktura odběratele** vyberte **Původní**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+4.  Ve stromové struktuře pod uzlem **Faktura odběratele** vyberte **Původní** . V poli **Název sestavy** zadejte nebo vyberte hodnotu.
 
-5.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Volné faktury**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+5.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Volné faktury** . V poli **Název sestavy** zadejte nebo vyberte hodnotu.
 
-6.  Ve stromové struktuře pod uzlem **Volná faktura** vyberte **Původní**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+6.  Ve stromové struktuře pod uzlem **Volná faktura** vyberte **Původní** . V poli **Název sestavy** zadejte nebo vyberte hodnotu.
 
 ### <a name="set-up-customer-reason-codes"></a>Nastavte kódy důvodů odběratele.
 
-Na stránce **Kódy důvodů odběratele** (**Pohledávky** \> **Nastavení** \> **Kódy důvodů odběratele**) vytvořte nebo upravte kódy důvodů, které se používají pro opravné daňové doklady.
+Na stránce **Kódy důvodů odběratele** ( **Pohledávky** \> **Nastavení** \> **Kódy důvodů odběratele** ) vytvořte nebo upravte kódy důvodů, které se používají pro opravné daňové doklady.
 
 ### <a name="set-up-accounts-receivable-parameters"></a>Nastavení parametrů pohledávek
 
-Na stránce **Parametry pohledávek** (**Pohledávky** \> **Nastavení** \> **Parametry pohledávek**) na kartě **Vyrovnání** na pevné záložce **Možnosti** nastavte následující parametry:
+Na stránce **Parametry pohledávek** ( **Pohledávky** \> **Nastavení** \> **Parametry pohledávek** ) na kartě **Vyrovnání** na pevné záložce **Možnosti** nastavte následující parametry:
 
--   Zaškrtněte políčko **Vyžadovat kódy důvodu pro dobropisy**.
+-   Zaškrtněte políčko **Vyžadovat kódy důvodu pro dobropisy** .
 
--   Zaškrtněte políčko **Zaúčtovat dobropis pro platební slevu**.
+-   Zaškrtněte políčko **Zaúčtovat dobropis pro platební slevu** .
 
 V poli **Kód důvodu pro platební slevy** vyberte výchozí kód důvodu pro opravné daňové doklady.
 
 ## <a name="credit-notes-for-cash-discounts"></a>Dobropisy pro platební slevy
 
 Dobropisy pro hotovostní slevy se automaticky zaúčtují při vyrovnání otevřených transakcí odběratele (faktury odběratele a platbu odběratele). Při zaúčtování dobropisů pro hotovostní slevy jsou zahrnuty kódy důvodů, které nastavíte v parametrech pohledávek, a odkaz na původní fakturu.
-Dobropisy pro platební slevy jsou číslovány podle číselné řady nastavené pro dobropisy. Výtisk dokumentu je nazván **Opravný dokument daně**. Obsahuje původní číslo faktury, základ a částku DPH a důvod, proč byla vytištěna oprava.
+Dobropisy pro platební slevy jsou číslovány podle číselné řady nastavené pro dobropisy. Výtisk dokumentu je nazván **Opravný dokument daně** . Obsahuje původní číslo faktury, základ a částku DPH a důvod, proč byla vytištěna oprava.
 

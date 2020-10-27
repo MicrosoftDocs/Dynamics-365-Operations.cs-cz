@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83cea952f4883d49621a9f7d16440927a8eddb98
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 57e3b95cb1f4a13b49ddcd336efaeabb12e5defc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830547"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979519"
 ---
 # <a name="register-sales-commissions"></a>Registrace prodejních provizí
 
@@ -33,14 +33,14 @@ Poznamenejte si čísla odběratele a zboží, které jste zvolili pro proces pr
 
 
 ## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a>Faktura prodejní objednávky, která opravňuje prodejce získat provizi
-1. V navigačním podokně přejděte na **Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.
-2. Zvolte **Nové**.
+1. V navigačním podokně přejděte na **Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky** .
+2. Zvolte **Nové** .
 3. V poli **Účet odběratele** vyberte požadovaný záznam v rozevírací nabídce.
-4. Vyberte **OK**.
-5. V podokně akcí vyberte **Možnosti**.
-6. Vyberte **Změnit zobrazení**.
-7. Vyberte **Zobrazení záhlaví**.
-8. Rozbalte sekci **Nastavení**.
+4. Vyberte **OK** .
+5. V podokně akcí vyberte **Možnosti** .
+6. Vyberte **Změnit zobrazení** .
+7. Vyberte **Zobrazení záhlaví** .
+8. Rozbalte sekci **Nastavení** .
 
     - Hodnota v poli **Prodejní skupina** představuje skupinu s jedním nebo více přiřazenými prodejními zástupci. Uživatelé ve skupině jsou ti, kteří po vyfakturování objednávky podle předdefinované sazby a distribuce obdrží provizi.   
     - Hodnota se zkopíruje z karty zákazníka, ale pokud chcete, lze ji změnit.  
@@ -48,26 +48,26 @@ Poznamenejte si čísla odběratele a zboží, které jste zvolili pro proces pr
     - Hodnota v poli **Skupina provize** představuje skupinu, kterou jste vytvořili pro jednoho nebo více odběratelů za účelem sledování provizí.   
     - Hodnota se zkopíruje z karty zákazníka, ale pokud chcete, lze ji změnit.   
 
-9. V podokně akcí vyberte **Možnosti**.
-10. Vyberte **Změnit zobrazení**.
-11. Vyberte **Zobrazení řádku**.
+9. V podokně akcí vyberte **Možnosti** .
+10. Vyberte **Změnit zobrazení** .
+11. Vyberte **Zobrazení řádku** .
 12. V rozevírací nabídce pole **Číslo položky** vyberte položku, kterou jste nastavili pro provize. 
-13. Zadejte číslo do pole **Množství**. Udělejte si poznámku o řádku Čistá částka. Ta představuje výnosy z prodeje, které v tomto příkladu jsou základem pro výpočet provize.  
-14. Zvolte **Uložit**.
-15. V podokně akcí vyberte možnost **Faktura**.
-16. Vyberte možnost **Faktura**.
-17. Rozbalte sekci **Parametry**.
-18. V poli **Množství** vyberte možnost **Vše**.
-19. Vyberte možnost **Ano** v poli **Účtování**.
+13. Zadejte číslo do pole **Množství** . Udělejte si poznámku o řádku Čistá částka. Ta představuje výnosy z prodeje, které v tomto příkladu jsou základem pro výpočet provize.  
+14. Zvolte **Uložit** .
+15. V podokně akcí vyberte možnost **Faktura** .
+16. Vyberte možnost **Faktura** .
+17. Rozbalte sekci **Parametry** .
+18. V poli **Množství** vyberte možnost **Vše** .
+19. Vyberte možnost **Ano** v poli **Účtování** .
 20. Vyberte **OK** a poté vyberte **OK** v dalším podokně. Zaúčtování transakce může trvat kolem minuty. K dokončení povolte zpracování a nezavírejte stránku.  
 
 ## <a name="review-the-registered-sales-commissions"></a>Zobrazení registrovaných provizí z prodeje
-1. V podokně akcí zvolte **Faktura** a poté opět vyberte **Faktura**.
-2. V podokně akcí zvolte **Faktura** a poté vyberte **Transakce provizí**.
+1. V podokně akcí zvolte **Faktura** a poté opět vyberte **Faktura** .
+2. V podokně akcí zvolte **Faktura** a poté vyberte **Transakce provizí** .
 
     - Na kartě **Přehled** jsou zobrazeny řádky představující částky provize vyplacené prodejním zástupcům, kteří jsou přiřazeni k vyfakturované prodejní objednávce. Zkontrolujme si podrobnosti.  
-    - Pokud jste použili průvodce „Nastavení pravidel prodejní provize“ k nastavení skupiny **Prodejní provize**, existují dva prodejci, kteří obdrží provizi, a provize bude mezi nimi rozdělena stejnoměrně.  
+    - Pokud jste použili průvodce „Nastavení pravidel prodejní provize“ k nastavení skupiny **Prodejní provize** , existují dva prodejci, kteří obdrží provizi, a provize bude mezi nimi rozdělena stejnoměrně.  
     - V tomto příkladu se vypočítává celková částka provize jako procento výnosu z prodeje (čistá částka řádku objednávky).  
 3. Zavřete stránku.
-4. Vyberte **Doklad**. Transakce dokladu můžete zkontrolovat pro částky provize, které byly zaúčtované do předdefinovaných výdajů a účtů vyplacené provize.  
+4. Vyberte **Doklad** . Transakce dokladu můžete zkontrolovat pro částky provize, které byly zaúčtované do předdefinovaných výdajů a účtů vyplacené provize.  
 

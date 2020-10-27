@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ae39ffac183194b5a4b969a4031e8a816f1b839
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 55f0f625f48df57ab5b86c524841815c717d2bdd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211852"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978380"
 ---
 # <a name="prioritize-service-orders"></a>Určení priorit servisních zakázek 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.
+1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .
 
 2.  Klepnutím na položku **Pokročilé** zobrazte v horní části formuláře Ganttův diagram a v dolním podokně zobrazte karty.
 
@@ -38,9 +38,9 @@ ms.locfileid: "3211852"
 
 4.  Vyberte barevně vyznačenou grafiku, která reprezentuje servisní aktivitu.
 
-5.  Na kartě **Vše**, **Tým**, **Neexpedováno** nebo **Související** proveďte změnu výběru v poli **Priorita**.
+5.  Na kartě **Vše** , **Tým** , **Neexpedováno** nebo **Související** proveďte změnu výběru v poli **Priorita** .
 
-6.  Klikněte na tlačítko **Uložit**.
+6.  Klikněte na tlačítko **Uložit** .
 
 ## <a name="see-also"></a>Viz také
 

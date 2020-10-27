@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
-ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
+ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665835"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983590"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Výpočet DPH na řádcích hlavního deníku
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ Způsob, jakým je určen směr DPH, závisí na typu účtu v dokladu. Směr DP
 
 ### <a name="account-type-is-project"></a>Typ účtu je Projekt.
 
-Pokud má doklad řádek deníku, u kterého je typ účtu **Projekt**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující obrázek znázorňuje pravidlo. Následující body znázorňují možné daňové pokyny pro účty projektu.
+Pokud má doklad řádek deníku, u kterého je typ účtu **Projekt** , budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující obrázek znázorňuje pravidlo. Následující body znázorňují možné daňové pokyny pro účty projektu.
 
 •   Pokud je kód DPH importní DPH, je směr DPH Importní DPH.
 
@@ -62,7 +62,7 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 ### <a name="account-type-is-vendor"></a>Typ účtu je Dodavatel
 
-Pokud má doklad řádek deníku, u kterého je typ účtu **Dodavatel**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty dodavatele. 
+Pokud má doklad řádek deníku, u kterého je typ účtu **Dodavatel** , budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty dodavatele. 
 
 •   Pokud je kód DPH importní DPH, je směr DPH Importní DPH.
 
@@ -80,7 +80,7 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 ### <a name="account-type-is-customer"></a>Typ účtu je Zákazník.
 
-Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty zákazníka.
+Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník** , budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty zákazníka.
 
 •   Pokud je kód DPH Osvobození od daně, je směr Nákup bez daně.
 
@@ -96,7 +96,7 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 ### <a name="account-type-is-ledger"></a>Typ účtu je Hlavní kniha
 
-Na následujícím obrázku je znázorněno pravidlo, které platí, pokud má doklad pouze řádky deníku, u nichž je typem účtu **Hlavní kniha**. Následující body znázorňují možné daňové pokyny pro účty hlavní knihy.
+Na následujícím obrázku je znázorněno pravidlo, které platí, pokud má doklad pouze řádky deníku, u nichž je typem účtu **Hlavní kniha** . Následující body znázorňují možné daňové pokyny pro účty hlavní knihy.
 
 •   Pokud je kód DPH importní DPH, je směr DPH Importní DPH.
 
@@ -110,9 +110,9 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 #### <a name="override-the-sales-tax-direction"></a>Přepis směru DPH
 
-Směr DPH lze přepsat, pokud doklad obsahuje pouze řádky s typem účtu **hlavní kniha**.
+Směr DPH lze přepsat, pokud doklad obsahuje pouze řádky s typem účtu **hlavní kniha** .
 
-Přejděte na **Hlavní kniha \> Účtová osnova \> Účty \> Hlavní účty** a vyberte pevnou záložku **Přepisy právnické osoby**.
+Přejděte na **Hlavní kniha \> Účtová osnova \> Účty \> Hlavní účty** a vyberte pevnou záložku **Přepisy právnické osoby** .
 
 ## <a name="determine-the-sales-tax-amount"></a>Určení částky DPH
 
@@ -129,7 +129,7 @@ V následující tabulce je uvedeno obecné pravidlo pro určení znaménka čá
 | Záporné            | Pohledávky DPH | Záporné              |
 | Záporné            | Splatná DPH    | Kladné              |
 
-Pro doklady, které mají pouze řádky **Projekt** nebo **Hlavní kniha**, existuje zvláštní pravidlo, když je na řádku **Hlavní kniha** vybrána skupina DPH nebo skupina DPH položky. Toto pravidlo je řízeno povolením funkce nezávislého výpočtu DPH pro hlavní deníky. Když je tato funkce vypnutá, částka daně na řádku **hlavní knihy** použije stranu má dáti/dal řádku **projektu**. Když je tato funkce zapnutá, částka daně na řádku **hlavní knihy** použije vlastní směr má dáti/dal. V následujících tabulkách jsou uvedena pravidla pro jednotlivé scénáře. 
+Pro doklady, které mají pouze řádky **Projekt** nebo **Hlavní kniha** , existuje zvláštní pravidlo, když je na řádku **Hlavní kniha** vybrána skupina DPH nebo skupina DPH položky. Toto pravidlo je řízeno povolením funkce nezávislého výpočtu DPH pro hlavní deníky. Když je tato funkce vypnutá, částka daně na řádku **hlavní knihy** použije stranu má dáti/dal řádku **projektu** . Když je tato funkce zapnutá, částka daně na řádku **hlavní knihy** použije vlastní směr má dáti/dal. V následujících tabulkách jsou uvedena pravidla pro jednotlivé scénáře. 
 
 **Pravidlo, když je funkce zapnutá**
 

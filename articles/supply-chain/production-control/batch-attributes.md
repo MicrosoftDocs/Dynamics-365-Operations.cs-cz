@@ -16,15 +16,15 @@ ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e49785a6921879e387537b933b78baf7dca73c4c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f7e94fb630afbe12a7fe3e791f59dca0bd38a0fc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203312"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985626"
 ---
 # <a name="batch-attributes"></a>Atributy dávky
 
@@ -42,11 +42,11 @@ Pro zjednodušení správy počtu a typů atributů můžete použít skupiny at
 ## <a name="assign-batch-attributes"></a>Přiřazení atributů dávky
 Atributy dávky se přiřazují k jednotlivým produktům, které jsou zahrnuty do skladových dávek nebo jsou přiřazeny k produktům, které jsou asociovány s konkrétními odběrateli. Před přiřazením atributu dávky na úrovni odběratelů je nutné přiřadit je na úrovni produktu. Výrobek musí mít dimenze dávky nastavené na **Aktivní** ve skupině sledování dimenze. Pokud chcete přiřadit atribut dávky k jednotlivým produktům, použijte stránku specifickou pro produkt. Je-li atribut specifický pro produkt odběratele, použijte stránku specifickou pro odběratele. Po přidání atributu k produktu se také definují další parametry. Několik příkladů:
 
--   Minimální a maximální rozsah pro atribut typu **Celé číslo** nebo **Zlomek**.
--   Akce tolerance pro atribut typu **Celé číslo** nebo **Zlomek**. Pokud hodnota atributu spadá mimo rozsah minima a maxima, akce může být upozornění nebo chybová zpráva.
+-   Minimální a maximální rozsah pro atribut typu **Celé číslo** nebo **Zlomek** .
+-   Akce tolerance pro atribut typu **Celé číslo** nebo **Zlomek** . Pokud hodnota atributu spadá mimo rozsah minima a maxima, akce může být upozornění nebo chybová zpráva.
 -   Cílová hodnota základního atributu. Tato hodnota je optimální hodnota atributu a platí pro všechny typy atributů.
 
-Lze otevřít stránky pro produkty, které vyberete na stránce **Uvolněné produkty** v modulu Řízení informací o produktu. Po přiřazení atributů dávky k produktu můžete přiřadit specifické hodnoty k atributům na stránce **Atributy skladové dávky**.
+Lze otevřít stránky pro produkty, které vyberete na stránce **Uvolněné produkty** v modulu Řízení informací o produktu. Po přiřazení atributů dávky k produktu můžete přiřadit specifické hodnoty k atributům na stránce **Atributy skladové dávky** .
 
 ## <a name="reserve-batches"></a>Rezervace dávek
 Atribut dávky můžete vyhledat, pokud rezervujete dávku pro prodejní objednávku s cílem naplnit objednávku odběratele, nebo vydáváte dávky pro výrobní zakázku. Hledání pomáhá vyhledat skladovou dávku, která obsahuje produkt, který má požadovaný atribut dávky. Po nalezení jedné nebo více dávek je možné rezervovat produkt pro původní řádek skladové transakce.

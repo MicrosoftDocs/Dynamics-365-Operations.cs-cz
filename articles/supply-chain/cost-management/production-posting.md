@@ -16,15 +16,15 @@ ms.custom: 54591
 ms.assetid: 0917fe64-f643-46ae-98ff-5013b266a067
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20a94ed3c64e81013edfa10e060dd32e04d12577
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b7214575e1eb3289224446ae5dd9d40221f054f8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214474"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978500"
 ---
 # <a name="production-posting"></a>Zaúčtování výroby
 
@@ -35,7 +35,7 @@ Tento článek obsahuje informace o různých typech účetních zápisů ve vý
 Činnosti zaúčtování výroby následují po výrobních procesech, které jsou popsány v následujících částech.
 
 ## <a name="material-consumption"></a>Spotřeba materiálu
-Materiály jsou při výrobě registrovány jako spotřebované, když je zaúčtován deník výrobních výdejek. Tento proces generuje výdajové transakce, které se odečtou ze zásob na skladě. V parametrech výroby můžete určit, zda hodnota surovin, které jsou v procesu (v nedokončené výrobě \[NV\]) ) mají být zaúčtovány do hlavní knihy. Hodnota surovin, které jsou ve výrobě (NV) je pak zaúčtována do vyhrazeného účtu výdejek a stržena z protiúčtu výdejky.
+Materiály jsou při výrobě registrovány jako spotřebované, když je zaúčtován deník výrobních výdejek. Tento proces generuje výdajové transakce, které se odečtou ze zásob na skladě. V parametrech výroby můžete určit, zda hodnota surovin, které jsou v procesu (v nedokončené výrobě \[NV\]) mají být zaúčtovány do hlavní knihy. Hodnota surovin, které jsou ve výrobě (NV) je pak zaúčtována do vyhrazeného účtu výdejek a stržena z protiúčtu výdejky.
 
 ## <a name="time-consumption"></a>Spotřeba času
 Čas, který pracovníci stráví na výrobních úlohách, je zaznamenán v deníku karet postupů nebo deníku úkolových lístků. Když tyto deníky jsou zaúčtovány, účtování hlavní knihy do vyhrazeného účtu pro prostředky, které jsou ve výrobě (NV). Toto zaúčtování představuje hodnota času stráveného na výrobní zakázce. Poté, co je výrobní zakázka registrována jako dokončená, jsou vyrovnány účty nedokončené výroby.
@@ -44,10 +44,10 @@ Materiály jsou při výrobě registrovány jako spotřebované, když je zaúč
 Je-li výrobní zakázka vykázána jako dokončená, jsou v Řízení zásob prostřednictvím Deníku dokončené výroby aktualizována množství dokončeného zboží. Pokud používáte účtování nedokončení výroby (NV), která může být nastavena v parametrech výroby, deník hlavní knihy sníží účty NV a zvýší sklad dokončeného zboží.. Deník používá standardní náklady, které jsou pro produkt definovány.
 
 ## <a name="ending-the-production-order"></a>Ukončení výrobní zakázky
-Před dokončením výrobní zakázky jsou vypočteny skutečné náklady pro vyrobené množství. Všechny odhadované náklady na materiál, práci a režii jsou stornovány a nahrazeny skutečnými náklady. Celkové náklady na dokončenou položku se zapíší na stranu MD skladového účtu Příjem a na stranu Dal skladového účtu Výdej. Pokud při spuštění výpočtu nákladů zaškrtnete políčko **Koncová práce**, bude stav výrobní zakázky změněn na **Ukončeno**. Nastavení tohoto stavu zabrání tomu, aby k dokončené výrobní zakázce byly nechtěně zaúčtovány další náklady. Můžete určit, že hodnota množství chyb, které jsou hlášeny během vykazování jako dokončené, by měla být přidělena správným množstvím, která jsou hlášena jako dokončená. Zadáte také, že hodnota množství chyb by měla být účtována do vyhrazeného účtu odpadu.
+Před dokončením výrobní zakázky jsou vypočteny skutečné náklady pro vyrobené množství. Všechny odhadované náklady na materiál, práci a režii jsou stornovány a nahrazeny skutečnými náklady. Celkové náklady na dokončenou položku se zapíší na stranu MD skladového účtu Příjem a na stranu Dal skladového účtu Výdej. Pokud při spuštění výpočtu nákladů zaškrtnete políčko **Koncová práce** , bude stav výrobní zakázky změněn na **Ukončeno** . Nastavení tohoto stavu zabrání tomu, aby k dokončené výrobní zakázce byly nechtěně zaúčtovány další náklady. Můžete určit, že hodnota množství chyb, které jsou hlášeny během vykazování jako dokončené, by měla být přidělena správným množstvím, která jsou hlášena jako dokončená. Zadáte také, že hodnota množství chyb by měla být účtována do vyhrazeného účtu odpadu.
 
 ## <a name="controlling-the-level-of-ledger-posting"></a>Řízení úrovně účtování do hlavní knihy
-V nabídce **Parametry modulu řízení výroby**, lze použít pole **Zaúčtování do hlavní knihy** pro nastavení úrovně zaúčtování do hlavní knihy pro výrobní procesy. K dispozici jsou následující hodnoty:
+V nabídce **Parametry modulu řízení výroby** , lze použít pole **Zaúčtování do hlavní knihy** pro nastavení úrovně zaúčtování do hlavní knihy pro výrobní procesy. K dispozici jsou následující hodnoty:
 
 -   **Zboží a prostředek** – Použijte účty hlavní knihy, které se nastavují pro skupiny položek pro suroviny a hotové výrobky. NV pro spotřebu času je převzata z prostředků nebo skupiny prostředků z operací postupů.
 -   **Zboží a kategorie** – Použijte účty hlavní knihy, které se nastavují pro skupiny položek pro suroviny a hotové výrobky. NV spotřeby času je převzata z kategorií nákladů, které jsou přiřazeny k operacím postupů.

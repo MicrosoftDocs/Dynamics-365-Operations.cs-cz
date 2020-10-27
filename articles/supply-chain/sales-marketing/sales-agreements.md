@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf54254b38a8bc6e1f0aa70cc090f59734203896
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829924"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982130"
 ---
 # <a name="sales-agreements-overview"></a>Přehled prodejních smluv
 
@@ -35,15 +35,15 @@ Prodejní smlouva je smlouva, která umožní odběrateli zakoupit produkty v ur
 
 Období platnosti řádku prodejní smlouvy je definováno v poli **Datum platnosti** a **Datum vypršení platnosti** ve smlouvě. Prodejní objednávky odběratele opravňují používat dohody podmínky, pokud požadované datum expedice objednávky je v rámci doby platnosti. Všechny řádky prodejní objednávky, které jsou spojeny s prodejní smlouvou, přispívají k plnění prodejní smlouvy.  
 
-Můžete vytvořit prodejní objednávku přímo z prodejní smlouvy pomocí akce **Uvolnit zakázku**. Případně můžete vybrat platnou prodejní smlouvu při podávání objednávek (viz "Použití prodejní smlouvy v procesu objednávky“ v tomto článku).  
+Můžete vytvořit prodejní objednávku přímo z prodejní smlouvy pomocí akce **Uvolnit zakázku** . Případně můžete vybrat platnou prodejní smlouvu při podávání objednávek (viz "Použití prodejní smlouvy v procesu objednávky“ v tomto článku).  
 
 > [Poznámka!] V předchozích verzích byly prodejní smlouvy označovány jako paušální prodejní objednávky.
 
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek prodejní smlouvy vyjadřuje závazek prodat. Obecně existují dvě kategorie závazku:
 
--   **Závazek ohledně hodnoty**– odběratel souhlasí se zakoupením produktů za určitou částku.
--   **Závazek ohledně množství**– odběratel souhlasí se zakoupením určitého množství produktu.
+-   **Závazek ohledně hodnoty** – odběratel souhlasí se zakoupením produktů za určitou částku.
+-   **Závazek ohledně množství** – odběratel souhlasí se zakoupením určitého množství produktu.
 
 Smlouva kromě toho můžete umožnit odběrateli zakoupit určitý produkt nebo produkty v kategorii produktu. Kombinováním těchto dvou faktorů (hodnota a množství a specifických produktů a kategorií produktu) získáme čtyři typy závazků:
 
@@ -95,13 +95,13 @@ Pokud jste vytvořili (vydali) prodejní objednávku proti prodejní smlouvě, n
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Požadované datum expedice                                               | Pokud změníte požadované datum expedice na datum starší než je hodnota **Datum začátku platnosti** na řádku prodejní smlouvy, je třeba nejprve odebrat odkaz na řádek prodejní smlouvy, než bude možné uložit změny data expedice. Pokud změníte požadované datum expedice na datum novější než je hodnota **Datum vypršení platnosti** na řádku prodejní smlouvy, je třeba nejprve odebrat odkaz na řádek prodejní smlouvy, než bude možné uložit změny data expedice. |
 | Hodnota CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet | Jestliže změníte hodnotu v některém z těchto polí a označíte pole **Cena a sleva je pevná** u řádku související prodejní smlouvy, zobrazí se zpráva s dotazem, zda chcete uložit změny. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                                   |
-| Čistá částka                                                        | Pokud zadáte částku přesahující částku, která je specifikována na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno**, zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                                 |
-| Množství                                                          | Pokud zadáte množství přesahující množství, které je specifikováno na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno**, zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                            |
+| Čistá částka                                                        | Pokud zadáte částku přesahující částku, která je specifikována na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno** , zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                                 |
+| Množství                                                          | Pokud zadáte množství přesahující množství, které je specifikováno na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno** , zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Vrácení zboží objednaného z prodejní smlouvy
 Když odběratel vrací produkt, který byl objednán z prodejní smlouvy, aplikace Supply Chain Management může vyhledat a automaticky aktualizovat závazek prodejní smlouvy tak, aby odrážel změny v množství nebo částce. Vytvořením vratky na základě původní prodejní objednávky, která je propojena s prodejní smlouvou, vytvoříte vztah mezi závazkem prodejní smlouvy, řádkem prodejní objednávky a fakturou vratky.  
 
-Pokud nechcete odečíst množství vrácených položek ze závazku prodejní smlouvy, můžete použít ovládací prvek **Odebrat odkaz** na stránce **Vratka** k odebrání propojení mezi vratkou a závazkem prodejní smlouvy. Pokud budete muset obnovit propojení později, klepněte na tlačítko **Vytvořit odkaz**.  
+Pokud nechcete odečíst množství vrácených položek ze závazku prodejní smlouvy, můžete použít ovládací prvek **Odebrat odkaz** na stránce **Vratka** k odebrání propojení mezi vratkou a závazkem prodejní smlouvy. Pokud budete muset obnovit propojení později, klepněte na tlačítko **Vytvořit odkaz** .  
 
 **Poznámka:** Vratku lze propojit pouze s jednou prodejní smlouvou. Pokud odběratel vrací více než jeden produkt, který byl objednán z více než jedné prodejní smlouvy, musíte vytvořit novou vratku pro každý produkt a vytvořit odkaz na odpovídající prodejní smlouvy.
 

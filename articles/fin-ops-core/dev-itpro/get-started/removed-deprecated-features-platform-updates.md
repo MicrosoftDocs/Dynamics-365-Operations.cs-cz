@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819882"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971438"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -34,6 +34,22 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.15 aplikací Finance and Operations
+
+> [!NOTE]
+> Verze 10.0.15 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Doplněk sady Visual Studio pro použití oprav hotfix metadat
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Opravy hotfix metadat už nejsou podporovány u aktualizací služeb [One Version](../../fin-ops/get-started/one-version.md), které byly zavedeny v červenci 2018 s verzí 8.1. |
+| **Nahrazeno jinou funkcí?**   | Pro podporované verze nejsou k dispozici jednotlivé opravy hotfix metadat. Místo toho se použijí kumulativní aktualizace pro zvýšení kvality. |
+| **Ovlivněné oblasti produktu**         | Doplňky sady Visual Studio |
+| **Možnost nasazení**              | Virtuální počítae pro vývoj |
+| **Stav**                         | Od verzei 10.0.15 už tento doplněk není součástí nástrojů sady Visual Studio. |
+
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.14 aplikací Finance and Operations
 
@@ -50,6 +66,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Ovlivněné oblasti produktu**         | Správa systému |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Do října 2021 bude tento formulář odstraněn.   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
 

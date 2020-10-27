@@ -16,15 +16,15 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 698ffc05823a796c63646d18036a23464c275815
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c8ef901afacd4ae191f2d01114bbf4bac38b9cd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209046"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984987"
 ---
 # <a name="backflush-costing"></a>Zpětné účtování nákladů
 
@@ -51,8 +51,8 @@ Pokud chcete povolit výpočet nákladů, musíte dokončit následující nasta
 Nákladový formulář modeluje strukturu nákladů pro společnost a je tvořen nákladovými skupinami ke klasifikaci nákladů. V nákladovém formuláři jsou různé formuláře. Zobrazuje informace o nákladech podle struktury, která je v něm určena. V nákladovém formuláři můžete také definovat vzorec, který se použije pro výpočet nepřímých nákladů. Výpočetní vzorec může být založen na množství, hmotnosti, objemu nebo hodnotě.
 
 -   **Definujte verzi pro výpočet nákladů.** V této verzi společnost definuje, jakým způsobem by měly být udržovány náklady. Nákladová verze může obsahovat sadu záznamů o standardních nákladech nebo sadu záznamů o plánovaných nákladech v závislosti na nákladovém typu, který je přiřazený nákladové verzi. Nákladová verze, která se používá pro výpočet nákladů pro Lean manufacturing, musí být založena na standardních nákladech.
--   **Přiřaďte k uvolněným produktům skupinu skladových modelů.** Všechny produkty související s výrobním tokem musí být přiřazeny skupině skladového modelu, která používá skupinu modelu zásob **Standardní náklady**. Standardní náklady jsou uchovávány podle pracoviště a data aktivace. Pro základní produkty lze vybrat skupinu skladových modelů, pokud jsou náklady uchovávány podle varianty nebo hlavního produktu.
--   **Z definice jsou služby subdodavatele služby bez zásob.** Subdodavatelské aktivity nemají žádnou skupinu skladových modelů. Abyste správně stanovili náklady na subdodavatelské aktivity, ujistěte se, že aktivita služby patří do skupiny skladových modelů, kde je zásada zásob nastavena na **Produkt na skladě = False**.
+-   **Přiřaďte k uvolněným produktům skupinu skladových modelů.** Všechny produkty související s výrobním tokem musí být přiřazeny skupině skladového modelu, která používá skupinu modelu zásob **Standardní náklady** . Standardní náklady jsou uchovávány podle pracoviště a data aktivace. Pro základní produkty lze vybrat skupinu skladových modelů, pokud jsou náklady uchovávány podle varianty nebo hlavního produktu.
+-   **Z definice jsou služby subdodavatele služby bez zásob.** Subdodavatelské aktivity nemají žádnou skupinu skladových modelů. Abyste správně stanovili náklady na subdodavatelské aktivity, ujistěte se, že aktivita služby patří do skupiny skladových modelů, kde je zásada zásob nastavena na **Produkt na skladě = False** .
 
 U výsledných produktů vyžaduje výpočet nákladů založený na výrobním toku udržování standardních nákladů pro služby, které se vztahují k subdodavatelským aktivitám. Nákladová skupina, která je přiřazena ke službám, slouží k určení odchylek nákladů subdodavatelské aktivity.
 
@@ -65,7 +65,7 @@ Lean manufacturing pro Dynamics 365 Supply Chain Management je nezávislý na po
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Výpočet založený na postupu
 
-Výpočet, který vychází z postupu má stejnou platnost jako výpočet založený na výrobním toku. Výpočet, který je založen na postupu, však nepoužívá také výpočet nákladů pro funkci Lean manufacturing. Postup by měl používat požadavky na prostředek pro skupiny prostředků. Abyste se vyhnuli systematickým odchylkám, měl by také použít stejné pracovní buňky a alespoň stejné nákladové kategorie. Opět platí že byste se měli vyhnout nákladovým kategoriím pro nastavení a množství. Nepomáhají při výpočtu nákladů v podrobnějším rozdělení než zpětný odpočet nákladů v Lean manufacturing. Chcete-li zjistit, která možnost (výrobní tok nebo postup) je vhodnější při výpočtu nákladů, zvažte výsledky rozúčtování nákladů. Verze, která se více blíží realitě a vytváří celkově méně odchylek, je lepší možnost. V prostředí Lean manufacturing, kde je produkt poskytnutý z jednoho výrobního toku a jednoho kanbanového pravidla, je pravděpodobně přesnější výpočet založený na výrobním toku. U produktu, který může dodat Lean manufacturing a výrobní zakázky na stejném pracovišti nebo který má více výrobních toků nebo více kanbanových pravidel, může být výpočet přesnější, pokud je založen na verzi postupu, která je vytvořena pro výpočet ceny, nikoli pro výrobu. Výpočet výrobního toku musí být použit pro výpočet produktů, které se týkají subdodávky. Používají se dva různé přístupy pro subdodávky prostřednictvím výrobních zakáze-k a subdodávky v Lean manufacturing. Lean manufacturing zavádí nový typ skupiny nákladů, **Přímý outsourcing**, k výpočtu subdodavatelských služeb.
+Výpočet, který vychází z postupu má stejnou platnost jako výpočet založený na výrobním toku. Výpočet, který je založen na postupu, však nepoužívá také výpočet nákladů pro funkci Lean manufacturing. Postup by měl používat požadavky na prostředek pro skupiny prostředků. Abyste se vyhnuli systematickým odchylkám, měl by také použít stejné pracovní buňky a alespoň stejné nákladové kategorie. Opět platí že byste se měli vyhnout nákladovým kategoriím pro nastavení a množství. Nepomáhají při výpočtu nákladů v podrobnějším rozdělení než zpětný odpočet nákladů v Lean manufacturing. Chcete-li zjistit, která možnost (výrobní tok nebo postup) je vhodnější při výpočtu nákladů, zvažte výsledky rozúčtování nákladů. Verze, která se více blíží realitě a vytváří celkově méně odchylek, je lepší možnost. V prostředí Lean manufacturing, kde je produkt poskytnutý z jednoho výrobního toku a jednoho kanbanového pravidla, je pravděpodobně přesnější výpočet založený na výrobním toku. U produktu, který může dodat Lean manufacturing a výrobní zakázky na stejném pracovišti nebo který má více výrobních toků nebo více kanbanových pravidel, může být výpočet přesnější, pokud je založen na verzi postupu, která je vytvořena pro výpočet ceny, nikoli pro výrobu. Výpočet výrobního toku musí být použit pro výpočet produktů, které se týkají subdodávky. Používají se dva různé přístupy pro subdodávky prostřednictvím výrobních zakáze-k a subdodávky v Lean manufacturing. Lean manufacturing zavádí nový typ skupiny nákladů, **Přímý outsourcing** , k výpočtu subdodavatelských služeb.
 
 ## <a name="material-consumption"></a>Spotřeba materiálu
 Když se materiál spotřebovává ze skladu pro nedokončenou výrobu, náklady na materiál jsou přidány do nedokončené výroby při skutečných standardních nákladech pro nákladovou skupinu. Tato operace se provádí při splnění následujících podmínek:
@@ -76,7 +76,7 @@ Když se materiál spotřebovává ze skladu pro nedokončenou výrobu, náklady
 ## <a name="receiving-products-from-the-production-flow"></a>Přijetí produktů z výrobního toku
 Produkty jsou z výrobního toku přijímány při splnění následujících podmínek:
 
--   Jsou dokončeny úlohy procesu, které mají možnost **Aktualizovat zásoby při příjmu** nastavenou na **Ano**.
+-   Jsou dokončeny úlohy procesu, které mají možnost **Aktualizovat zásoby při příjmu** nastavenou na **Ano** .
 -   Úlohy převodu jsou dokončeny, které aktualizují zásoby na příjemce, ale mají možnost **Aktualizovat zásoby na sadě vyskladnění** nastavenou na **Ne** (převod z nedokončené výroby). Tato možnost umožňuje přijmout jakékoli produkty z výrobního toku bez ohledu na konfiguraci kusovníku a postupu. Proces sleduje pouze fyzické toky. Tato možnost je obzvlášť vhodná pro příjem vedlejších produktů, produktů nebo vyřazených produktů z výrobního toku a pro opravy zůstatku nákladů nedokončené výroby výrobního toku odpovídajícím způsobem.
 
 Produkty, které jsou přijaty z výrobního toku, jsou odečteny z nedokončené výroby.
@@ -85,7 +85,7 @@ Produkty, které jsou přijaty z výrobního toku, jsou odečteny z nedokončen�
 Model NV pro Lean manufacturing umožňuje využití stavu manipulační jednotky kanbanu ke správě materiálu, polotovarů a dokončených produktů, které jsou součástí nedokončené výroby.
 
 -   **Přiřazeno** – kanban může mít spotřebovaný materiály, který je zaúčtován v nedokončené výrobě.
--   **Přijaté** - Pokud kanban odkazuje na poslední aktivitu, kde je možnost **Aktualizovat zásoby při příjmu nastavena na** **Ne**, představuje plnou manipulační jednotku produktu nebo polotovaru, který není zaregistrován v zásobách.
+-   **Přijaté** - Pokud kanban odkazuje na poslední aktivitu, kde je možnost **Aktualizovat zásoby při příjmu nastavena na** **Ne** , představuje plnou manipulační jednotku produktu nebo polotovaru, který není zaregistrován v zásobách.
 
 Všimněte si, že materiál v nedokončené výrobě není viditelný v přehledu zásob na skladě. Je však vidět v přehledech kanbanového množství.
 
@@ -104,7 +104,7 @@ Závěrem – lze přiřadit manipulační jednotky kanbanu (v procesu =), přij
 ## <a name="backflush-costing"></a>Zpětné účtování nákladů
 Je třeba spustit zpětné účtování nákladů pro pravidelné ocenění nedokončené výroby a výrobu stavu konce období pro výpočet odchylky materiálu, práce a nepřímých nákladů pro výrobu. Vypočtené odchylky jsou zaúčtovány na účty odchylek. V procesu zpětného účtování nákladů se používají všechny výrobní toky právnické osoby v rámci stejné dávky spuštění. Když je zpětné účtování nákladů v dávce, zpracování může mít více podprocesů ve výrobním toku. Období zpětného účtování je definováno koncovým datem. Nelze zaúčtovat nové transakce k datu, kdy již byl proveden výpočet zpětného účtování nákladů. Nikdy byste neměli spouštět zpětné účtování nákladů pro aktuální datum předtím, než tento den skutečně uplyne. Výpočet zpětného účtování nákladů provede následující kroky.
 
-1.  Určete nevyužité množství ve výrobním toku jako koncové datum období. Po spuštění zpětného účtování nákladů můžete zobrazit nevyužitá množství k datu spuštění nákladů v dialogovém okně **Nevyužité množství**.
+1.  Určete nevyužité množství ve výrobním toku jako koncové datum období. Po spuštění zpětného účtování nákladů můžete zobrazit nevyužitá množství k datu spuštění nákladů v dialogovém okně **Nevyužité množství** .
 2.  Vypočítejte čistou realizovanou spotřebu výroby za období.
 3.  Vymažte nedokončenou výrobu z realizované spotřeby prostředků a produktů.
 4.  Výpočet výrobních odchylek standardních nákladů pro období. **Pro komponenty spotřebované za období:**

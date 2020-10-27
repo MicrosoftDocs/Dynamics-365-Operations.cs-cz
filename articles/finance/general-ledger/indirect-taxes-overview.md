@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124490"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975020"
 ---
 # <a name="sales-tax-overview"></a>Přehled DPH
 
@@ -67,10 +67,10 @@ Následující tabulka popisuje entity a posloupnosti nastavení daně.
 ## <a name="sales-tax-on-transactions"></a>Daň z prodeje v transakcích
 Pro každou transakci (řádky dokumentu k prodeji/nákupu, deníky a tak dále) je nutné zadat skupinu daně z prodeje a skupinu daně z prodeje zboží pro výpočet daně z prodeje. Výchozí skupiny jsou uvedeny v hlavních datech (například kategorie odběratel, dodavatel, položky nebo zásobování), ale je-li nutné, lze skupiny v transakcích ručně změnit. Obě skupiny obsahují seznam kódů daně z prodeje a průnik těchto dvou seznamů kódů daně z prodeje určuje seznam platných kódů daně z prodeje pro transakci. 
 
-U každé transakce můžete vyhledat vypočítanou daň z prodeje otevřením stránky **Transakce DPH**. Můžete vyhledávat daň z prodeje pro řádek dokumentu nebo pro celý dokument. U některých dokumentů (například faktura dodavatele a hlavní deníky) můžete upravit vypočítanou daň z prodeje, pokud původní dokument vykazuje odchylky částky.
+U každé transakce můžete vyhledat vypočítanou daň z prodeje otevřením stránky **Transakce DPH** . Můžete vyhledávat daň z prodeje pro řádek dokumentu nebo pro celý dokument. U některých dokumentů (například faktura dodavatele a hlavní deníky) můžete upravit vypočítanou daň z prodeje, pokud původní dokument vykazuje odchylky částky.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Vyrovnání a vykazování daně z prodeje
-Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Můžete vyrovnat účty daní pro interval a vyrovnat zůstatky na účet vyrovnání daně, jak je uvedeno ve skupinách pro zaúčtování do hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
+Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Můžete vyrovnat účty daní pro interval a vyrovnat zůstatky na účet vyrovnání daně, jak je uvedeno ve skupinách pro zaúčtování do hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH** . Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
 
 Poté, co byla daň z prodeje zaplacena, zůstatky na účtu vyrovnání daně z prodeje by měly být srovnány dle bankovního účtu. Pokud úřad pro kontrolu daně z prodeje, který je uveden v období vyrovnání daně z prodeje, souvisí s účtem dodavatele, zůstatek daně z prodeje bude zaúčtován jako otevřená faktura dodavatele a lze jej zahrnout do návrhu běžné platby.
 
@@ -94,6 +94,6 @@ Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finanční
 
 ### <a name="postdated-check"></a>Postdatovaný šek
 
-Pokud použijete postdatovaný šek jako způsob platby, dojde při vytvoření platby k vymazání bankovního účtu. V některých zemích se DPH stane "realizovanou" odpovědností, když se platba zúčtuje v bance, což znamená, že postdatovaný šek je vyrovnán. Můžete ho povolit výběrem možnosti **Realizovat podmíněnou DPH při zaúčtování postdatovaných šeků** v části **Správa hotovosti a banky > Nastavení > Parametry správy hotovosti a banky > Postdatované šeky**.
+Pokud použijete postdatovaný šek jako způsob platby, dojde při vytvoření platby k vymazání bankovního účtu. V některých zemích se DPH stane "realizovanou" odpovědností, když se platba zúčtuje v bance, což znamená, že postdatovaný šek je vyrovnán. Můžete ho povolit výběrem možnosti **Realizovat podmíněnou DPH při zaúčtování postdatovaných šeků** v části **Správa hotovosti a banky > Nastavení > Parametry správy hotovosti a banky > Postdatované šeky** .
 
 Další informace naleznete v tématu [Nastavení srážkové daně](tasks/set-up-withholding-tax.md).

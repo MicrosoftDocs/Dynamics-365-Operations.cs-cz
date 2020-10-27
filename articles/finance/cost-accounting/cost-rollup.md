@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f07483d0ccb8593f0e7ce8dbd3c83f63ce60d457
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759369"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976372"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -186,7 +186,7 @@ Hierarchie dimenzí **Výkaz zisků a ztrát** musí být aktualizována novými
 | &nbsp;&nbsp;&nbsp;&nbsp;Primární náklady                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundární náklady                         | **SC-CC001**            | **SC-CC004**        |
 
-Vytvořte **Zásady shrnutí nákladů**, kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární**.
+Vytvořte **Zásady shrnutí nákladů** , kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární** .
 
 **Zásady shrnutí nákladů**
 
@@ -211,7 +211,7 @@ Vytvořte **Zásady shrnutí nákladů**, kde je každé nákladové středisko 
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Deník přidělení nákladů | Fiskální                 | 2017    | Období 1 | Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1 |
 
-Systém nyní použije **Zásady shrnutí nákladů** při vytváření **položek deníku pro zůstatek objektu nákladů**.
+Systém nyní použije **Zásady shrnutí nákladů** při vytváření **položek deníku pro zůstatek objektu nákladů** .
 
 **Položky deníku pro zůstatek objektu nákladů**
 
@@ -223,9 +223,9 @@ Systém nyní použije **Zásady shrnutí nákladů** při vytváření **polož
 | 31. 01. 2017      | CC004       | Balení    | SC-CC004 | Balení | 15.717,25 |
 
 > [!NOTE]
-> Položky deníku jsou vytvořeny na základě pravidel v možnosti **Zásady shrnutí nákladů**, pokud zásady existují. Zobrazený zůstatek je zůstatek výpočtu režijních nákladů.
+> Položky deníku jsou vytvořeny na základě pravidel v možnosti **Zásady shrnutí nákladů** , pokud zásady existují. Zobrazený zůstatek je zůstatek výpočtu režijních nákladů.
 
-Stránka **Podrobnosti položky deníku zůstatku nákladů objektu nákladů**, ke které je přístup z položek deníku, zobrazuje, jakým způsobem se získá zůstatek.
+Stránka **Podrobnosti položky deníku zůstatku nákladů objektu nákladů** , ke které je přístup z položek deníku, zobrazuje, jakým způsobem se získá zůstatek.
 
 **Příklad: Položka deníku pro objekt nákladů CC002 Finance**
 
@@ -272,9 +272,9 @@ Následuje příklad výkazu Power Pivot v aplikaci Excel.
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC004                             | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
 | **Celkem**                   | **0,00**        | **0,00**       | **31.082,75** | **15.717,25** | **46.800,00** |
 
-Pomocí **zásad shrnutí nákladů** a **prvků nákladů sekundárního typ** můžete ponechat primární náklady na objektu nákladů pro interní sestavy jako primární náklady, které zbývají po **výpočtu režijních nákladů**.
+Pomocí **zásad shrnutí nákladů** a **prvků nákladů sekundárního typ** můžete ponechat primární náklady na objektu nákladů pro interní sestavy jako primární náklady, které zbývají po **výpočtu režijních nákladů** .
 
-Pokud byste provedli stejný příklad bez vytvoření **zásad shrnutí nákladů**, výsledek vykazování by byl takový, jak je zobrazeno níže. Tok nákladů je správný, ale sledovatelnost a vhled do toku nákladů mezi nákladovými středisky se ztratí.
+Pokud byste provedli stejný příklad bez vytvoření **zásad shrnutí nákladů** , výsledek vykazování by byl takový, jak je zobrazeno níže. Tok nákladů je správný, ale sledovatelnost a vhled do toku nákladů mezi nákladovými středisky se ztratí.
 
 | **Výkaz zisků a ztrát** | **Objekt nákladů** |           |               |               |          **Celkem**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

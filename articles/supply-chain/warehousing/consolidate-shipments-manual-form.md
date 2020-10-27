@@ -13,25 +13,25 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: acc6e1d09894b57d2bb063bacbcddef239c1a8bd
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: ac60bef797d8e0bbe0d20f1585d5c3c0163f8788
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383726"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986785"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma představuje scénář, ve kterém je více objednávek uvolněno do skladu a později konsolidováno pomocí stránky **Konsolidace dodávek**.
+Toto téma představuje scénář, ve kterém je více objednávek uvolněno do skladu a později konsolidováno pomocí stránky **Konsolidace dodávek** .
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
+Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Nastavení zásad konsolidace dodávek a filtry produktů
 
@@ -52,7 +52,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -66,7 +66,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -75,23 +75,23 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 Chcete-li uvolnit každou prodejní objednávku, kterou jste vytvořili pro tento scénář, do skladu, postupujte takto.
 
-1. Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky**.
+1. Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** .
 1. Vyhledejte a vyberte prodejní objednávku, kterou chcete uvolnit.
 1. V podokně akcí na kartě **Sklad** vyberte **Akce \> Uvolnit do skladu** pro uvolnění vybrané prodejní objednávky.
 1. Tento postup opakujte pro každou další prodejní objednávku, kterou jste vytvořili pro tento scénář.
 
 ## <a name="consolidate-shipments"></a>Konsolidovat dodávky
 
-1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.
+1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky** .
 1. Najděte a vyberte dodávku, která byla vytvořena při uvolnění prodejní objednávky 1 do skladu. (Její pole **Zásada konsolidace dodávky** by mělo být nastaveno na *Fond objednávek* .)
-1. V podokně akcí na kartě **Dodávky** zvolte **Dodávky \> Konsolidovat dodávky**.
+1. V podokně akcí na kartě **Dodávky** zvolte **Dodávky \> Konsolidovat dodávky** .
 1. Ověřte dodávky, které jsou navrženy pro konsolidaci. Ke konsolidaci by měla být navržena pouze jedna dodávka, která má stejnou zásadu.
-1. Zavřete stránku **Konsolidace dodávek**.
+1. Zavřete stránku **Konsolidace dodávek** .
 1. Najděte a vyberte dodávku, která byla vytvořena při uvolnění prodejní objednávky 3 do skladu. (Její pole **Zásada konsolidace dodávky** by mělo být nastaveno na *Výchozí* .)
-1. V podokně akcí na kartě **Dodávky** zvolte **Dodávky \> Konsolidovat dodávky**.
+1. V podokně akcí na kartě **Dodávky** zvolte **Dodávky \> Konsolidovat dodávky** .
 1. Ověřte, že nejsou navrženy žádné dodávky pro konsolidaci.
-1. Vyberte **Zobrazit filtry**.
-1. V podokně **Filtry** odeberte filtr **Číslo objednávky** a poté vyberte **Použít**.
+1. Vyberte **Zobrazit filtry** .
+1. V podokně **Filtry** odeberte filtr **Číslo objednávky** a poté vyberte **Použít** .
 1. Ověřte dodávky, které jsou navrženy pro konsolidaci. Ke konsolidaci by měla být navržena pouze jedna dodávka, která má stejnou zásadu.
 
 ## <a name="additional-resources"></a>Další prostředky

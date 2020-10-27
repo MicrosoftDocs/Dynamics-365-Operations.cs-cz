@@ -16,15 +16,15 @@ ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd84e6c01c3942bd72e174cdb818ae5afda18bf1
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 9119655384cd05e5aa3622712e699b346a43f492
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826231"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981321"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
@@ -57,7 +57,7 @@ Existují dvě metody pro modelování subdodavatelské práce pro výrobní či
     -   Řízení nákladů přiděluje subdodavatelskou práci ve vlastním bloku rozdělení nákladů.
 
 ## <a name="subcontracting-of-route-operations"></a>Subdodávky operací postupu
-Abyste mohli používat operace postupu pro výrobu nebo dávkové objednávky subdodávky, musí být servisní produkt, který se používá pro zadávání zakázek na služby, být definován jako produkt typu **Služba**. Kromě toho musí mít skupinu modelů zboží, která má možnost **Výrobek na skladě** v části **Zásada zásob** nastavenou na **Ano**. Tato možnost definuje, zda je produkt účtován jako příjem zásob v produktu (**Výrobek na skladě** = **Ano**), nebo zda je produkt zanesen do výdajů na účtu zisků a ztrát (**výrobek na skladě** = **Ne**). Ačkoli se toto chování může jevit jako sporné, je založeno na skutečnosti, že pouze produkty, u kterých platí tyto zásady, vytvoří skladové transakce, které lze použít v řízení nákladů pro výpočet plánovaných nákladů a určení skutečných nákladů po ukončení výrobní zakázky.  
+Abyste mohli používat operace postupu pro výrobu nebo dávkové objednávky subdodávky, musí být servisní produkt, který se používá pro zadávání zakázek na služby, být definován jako produkt typu **Služba** . Kromě toho musí mít skupinu modelů zboží, která má možnost **Výrobek na skladě** v části **Zásada zásob** nastavenou na **Ano** . Tato možnost definuje, zda je produkt účtován jako příjem zásob v produktu ( **Výrobek na skladě** = **Ano** ), nebo zda je produkt zanesen do výdajů na účtu zisků a ztrát ( **výrobek na skladě** = **Ne** ). Ačkoli se toto chování může jevit jako sporné, je založeno na skutečnosti, že pouze produkty, u kterých platí tyto zásady, vytvoří skladové transakce, které lze použít v řízení nákladů pro výpočet plánovaných nákladů a určení skutečných nákladů po ukončení výrobní zakázky.  
 
 Aby byla služba zohledněna při výpočtu plánování a nákladů, musí být přidána ke kusovníku. Řádek kusovníku musí být typu **Dodavatel** typu a musí být přidělen k operaci postupu, ke které je přidělená služba. Tato operace postupu musí mít prostředek výpočtu nákladů a požadavek na zdroj, který odkazuje na typ **dodavatele** typu, který se připojuje k operaci a související službě odpovídajícího účtu dodavatele.  
 
@@ -74,7 +74,7 @@ Kanbanová pravidla mohou být velmi dynamická, můžete modelovat různé vari
 
 V [štíhlém výrobním toku](lean-manufacturing-modeling-lean-organization.md) lze aktivitu procesu definovat jako subdodávku při přidělení jedné pracovní buňce (skupině zdrojů), která má jeden dodavatelský zdroj. Pokud je subdodávána pracovní buňka, související procesní aktivity musí být spojeny s nákupním řádkem aktivní smlouvy obsahující předmět služby a cenu za službu. Servisní smlouva aktivity definuje také poměr výpočtu mezi množstvím produktu kanbanové úlohy a výsledným množstvím služeb. Můžete určit, zda bude množství služby vypočítáno na základě počtu úloh, dobrého množství produktu, které je vykázáno u práce nebo celkového množství produktu (toto množství zahrnuje vyřazené produkty).  
 
-Aktivity přenosu lze také definovat jako subdodávky. Tato definice se objevuje implicitně když vyberete odpovědnou stranu pro expedici v aktivitě přenosu. Pokud vyberete **dopravce** nebo **příjemce** a zdrojový nebo cílový sklad spravuje dodavatel, je tato aktivita považována za subdodávku. Pokud vyberete **dopravce**, aktivita je vždy zadána jako subdodavatelská. Jako u aktivit subdodavatelského procesu musí být subdodavatelská aktivita přenosu připojena k servisní smlouvě před aktivací výrobního toku.
+Aktivity přenosu lze také definovat jako subdodávky. Tato definice se objevuje implicitně když vyberete odpovědnou stranu pro expedici v aktivitě přenosu. Pokud vyberete **dopravce** nebo **příjemce** a zdrojový nebo cílový sklad spravuje dodavatel, je tato aktivita považována za subdodávku. Pokud vyberete **dopravce** , aktivita je vždy zadána jako subdodavatelská. Jako u aktivit subdodavatelského procesu musí být subdodavatelská aktivita přenosu připojena k servisní smlouvě před aktivací výrobního toku.
 
 ### <a name="backflush-costing"></a>Zpětné účtování nákladů
 
@@ -94,7 +94,7 @@ K doplnění materiálu v tomto skladu, můžete použít více strategií:
 
 Polotovary jsou výjimkou z tohoto pravidla. K přenosu polotovarů jste omezeni na tyto možnosti:
 
--   Pokud jde o výrobu a dávkové objednávky, rozpracované výrobky mohou být přenášeny pouze logicky pomocí deníku výdejek ze stránky se seznamem **subdodávka prací**. Tento deník vytvoří dokument dodacího listu, který lze použít k přenosu polotovarů a surovin dodavateli.
+-   Pokud jde o výrobu a dávkové objednávky, rozpracované výrobky mohou být přenášeny pouze logicky pomocí deníku výdejek ze stránky se seznamem **subdodávka prací** . Tento deník vytvoří dokument dodacího listu, který lze použít k přenosu polotovarů a surovin dodavateli.
 -   Pro operace subdodávek ve výrobních tocích je převod polotovarů doložen příjmem odvolání nebo výrobních kanbanů v místě dodavatele. Pokud chcete modelovat explicitní aktivitu převodu, můžete ukončit výrobní kanban s další aktivitou přenosu.
 
 **Poznámka:** Postup výroby pro jednu výrobní zakázku nemůže přesahovat více míst. Toto pravidlo platí také pro práci subdodavatele. Proto sklady představující umístění materiálu spravovaného dodavatelem musí být definovány ve stejné síti jako interní zdroje, které jsou použity v postupu. Přestože výrobní toky mohou zahrnovat více pracovišť, nemohou převádět polotovary z jednoho pracoviště na jiné, protože operace implikuje změnu kontextu nákladů.  

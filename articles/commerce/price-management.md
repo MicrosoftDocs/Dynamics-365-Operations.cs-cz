@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
-ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
+ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431994"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980809"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -38,7 +38,7 @@ V tomto tématu se používají následující termíny:
 |---|---|
 | Cena | Jednoduchá jednotková částka, za kterou se prodává podukt v klientovi pokladního místa nebo na prodejní objednávce. V tomto tématu se termín *cena* vždy vztahuje na prodejní cenu, nikoliv cenu zásob nebo nákladovou cenu. |
 | Základní cena | Cena, která se nastavuje v poli **Cena** na uvolněném produktu. |
-| Cena na základě obchodních smluv | Cena, která je nastavena na produkt nebo variantu pomocí obchodní smlouvy typu **Cena (prodej)**. |
+| Cena na základě obchodních smluv | Cena, která je nastavena na produkt nebo variantu pomocí obchodní smlouvy typu **Cena (prodej)** . |
 | Nejlepší cena | Pokud se na produkt může uplatnit více než jedna cena nebo sleva, nejmenší částka ceny a/nebo největší částka slevy, která produkuje nejnižší možnou čistou částku, kterou musí zákazník zaplatit. V tomto tématu se koncept nejlepší ceny vždy vztahuje na „nejlepší cenu“. Tato nejlepší cena se liší od výčtové hodnoty **Nejlepší cena** pro souběžný režim slevy a neměla by se s tímto pojmem zaměňovat. |
 
 ## <a name="price-groups"></a>Cenové skupiny
@@ -112,7 +112,7 @@ Národní maloobchodník nastavuje nejvíce cen podle regionu a má čtyři regi
 
 V tomto příkladu přejdeme na podrobnosti severovýchodní oblasti. Obchod 1 je v Bostonu a obchod dva se nalézá na Manhattanu. Pro obchod v Bostonu jsou na kanál napojeny dvě cenové skupiny: severovýchod a obchod 1. Pro obchod na Manhattanu jsou na kanál napojeny tři cenové skupiny: severovýchod, NYC a obchod 2.
 
-Prodejce nastaví dvě cenové priority: vysoké náklady mají prioritu 5 a ceny obchodů mají prioritu 10. (Nezapomeňte, že ve výchozím nastavení je cenová priorita \[nula\], a cena nebo sleva, která má vyšší prioritu, se použije před cenou nebo slevou, která má nižší prioritu.) Pro severovýchodní cenovou skupinu je cenová priorita ponechána na výchozí hodnotě **0** (nula). Pro cenovou skupinu NYC je cenová priorita nastavena na **5**, protože New York City je trh s vysokými náklady. U cenových skupin obchod 1 a obchod 2 je cenová priorita nastavena na **10**.
+Prodejce nastaví dvě cenové priority: vysoké náklady mají prioritu 5 a ceny obchodů mají prioritu 10. (Nezapomeňte, že ve výchozím nastavení je cenová priorita \[nula\], a cena nebo sleva, která má vyšší prioritu, se použije před cenou nebo slevou, která má nižší prioritu.) Pro severovýchodní cenovou skupinu je cenová priorita ponechána na výchozí hodnotě **0** (nula). Pro cenovou skupinu NYC je cenová priorita nastavena na **5** , protože New York City je trh s vysokými náklady. U cenových skupin obchod 1 a obchod 2 je cenová priorita nastavena na **10** .
 
 Dva výrobky, které prodejce prodává, jsou výrobek 1, komodita tričko, a produkt 2, módní značkové džíny
 
@@ -140,9 +140,9 @@ Základní cena a cena obchodní smlouvy jsou součástí základní aplikace Dy
 
 ### <a name="base-price"></a>Základní cena
 
-Nejjednodušší místo pro nastavení ceny produktu je přímo na výrobku. Hodnota, kterou nastavíte přímo na výrobku, se často označuje jako základní cena výrobku. Základní cenu nastavíte v poli **Cena** na kartě **Prodej** stránky **Podrobnosti o uvolněném produktu**. Zadaná hodnota je v měně společnosti. Ve výchozím nastavení je cena pro množství 1 měrné jednotky nastavené v poli **Jednotka** na kartě **Prodej**. Skutečná cena za jednotku výrobku je založena na měrné jednotce, množství ceny a měně.
+Nejjednodušší místo pro nastavení ceny produktu je přímo na výrobku. Hodnota, kterou nastavíte přímo na výrobku, se často označuje jako základní cena výrobku. Základní cenu nastavíte v poli **Cena** na kartě **Prodej** stránky **Podrobnosti o uvolněném produktu** . Zadaná hodnota je v měně společnosti. Ve výchozím nastavení je cena pro množství 1 měrné jednotky nastavené v poli **Jednotka** na kartě **Prodej** . Skutečná cena za jednotku výrobku je založena na měrné jednotce, množství ceny a měně.
 
-Pokud má výrobek pro každého jednu cenu, základní cena nabízí nejúčinnější způsob, jak spravovat cenu tohoto výrobku. Dokonce i když používáte obchodní smlouvy k nastavení cen, můžete také nastavit základní cenu na výrobku. Pokud pak nepoužijete obchodní smlouvu **Vše**, máte záložní cenu, která se používá, když se neaplikuje žádná obchodní smlouva.
+Pokud má výrobek pro každého jednu cenu, základní cena nabízí nejúčinnější způsob, jak spravovat cenu tohoto výrobku. Dokonce i když používáte obchodní smlouvy k nastavení cen, můžete také nastavit základní cenu na výrobku. Pokud pak nepoužijete obchodní smlouvu **Vše** , máte záložní cenu, která se používá, když se neaplikuje žádná obchodní smlouva.
 
 Pokud se měna kanálu liší od měny společnosti, základní cena v tomto velkoobchodním kanálu se určuje použitím převodu měny na cenu, která je nastavena na výrobku.
 
@@ -150,7 +150,7 @@ Přestože cenová jednotka není běžným velkoobchodním scénářem, velkoob
 
 ### <a name="sales-price-trade-agreement"></a>Obchodní smlouva s prodejní cenou
 
-Pomocí deníku obchodních dohod můžete pro každý produkt vytvářet obchodní smlouvy s prodejními cenami. V aplikaci Microsoft Dynamics 365 existují tři rozsahy odběratele pro obchodní smlouvy s prodejní cenou: **Tabulka**, **Skupina** a **Vše**. Rozsah odběratele určuje odběratele, na které se vztahuje daná obchodní smlouva s prodejní cenou.
+Pomocí deníku obchodních dohod můžete pro každý produkt vytvářet obchodní smlouvy s prodejními cenami. V aplikaci Microsoft Dynamics 365 existují tři rozsahy odběratele pro obchodní smlouvy s prodejní cenou: **Tabulka** , **Skupina** a **Vše** . Rozsah odběratele určuje odběratele, na které se vztahuje daná obchodní smlouva s prodejní cenou.
 
 Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, velkoobchodní cenový modul použije při určování ceny **Tabulku** obchodní smlouvy.
 
@@ -175,7 +175,7 @@ Cenový modul vrátí tři ceny pro každý produkt: základní cenu, cenu obcho
 
 Základní cena je pouze vlastnost produktu a je stejná pro všechny všude.
 
-Pokud je na obchodní smlouvě s prodejní cenou možnost **Najít další** nastavena na **Ano**, použije se jako cena obchodní smlouvy nejnižší cena nalezená pro použitelné obchodní smlouvy s prodejní cenou. Obchodní smlouvy lze nalézt pomocí cenových skupin nebo kódu účtu **VŠE**. Obchodní smlouvy lze také přiřadit přímo k odběrateli. Pokud je možnost **Najít další** nastavena na **Ne**, použije se první cena obchodní smlouvy, která je nalezena. Pokud nebyly nalezeny žádné obchodní smlouvy s prodejní cenou, nastaví se cena obchodní smlouvy na stejnou hodnotu jako je základní cena.
+Pokud je na obchodní smlouvě s prodejní cenou možnost **Najít další** nastavena na **Ano** , použije se jako cena obchodní smlouvy nejnižší cena nalezená pro použitelné obchodní smlouvy s prodejní cenou. Obchodní smlouvy lze nalézt pomocí cenových skupin nebo kódu účtu **VŠE** . Obchodní smlouvy lze také přiřadit přímo k odběrateli. Pokud je možnost **Najít další** nastavena na **Ne** , použije se první cena obchodní smlouvy, která je nalezena. Pokud nebyly nalezeny žádné obchodní smlouvy s prodejní cenou, nastaví se cena obchodní smlouvy na stejnou hodnotu jako je základní cena.
 
 Aktivní cena se vypočítá tak, že se vezme cena obchodní dohody a uplatní se největší cenová úprava, která se vztahuje na výrobek. Pokud nebudou nalezeny úpravy cen, nebo pokud vypočítaná aktivní cena je vyšší než cena obchodní smlouvy, je aktivní cena nastavena na shodnou s cenou obchodní smlouvy. Mějte na paměti, že cenu produktu nelze zvýšit pomocí úpravy ceny. Použitelné úpravy cen lze nalézt pouze pomocí cenových skupin, které jsou přiřazeny ke kanálu, katalogu, umístění nebo věrnostnímu programu.
 
@@ -228,7 +228,7 @@ Cenový modul **nepodporuje** následující cenové funkce:
 - Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, bude cenový modul ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
 - Ocenění založené na atributech není podporováno.
 - Předávání slev dodavatelů není podporováno.
-- Standardní cenový modul Supply Chain Management podporuje výpočet ceny na základě požadovaného data expedice a požadovaného data příjmu spolu s aktuálním datem. Maloobchodní ceny však v současné době tyto hodnoty nepodporují. Důvodem je to, že u scénářů B2C zákazníci neočekávají, že požadované datum dodání ovlivní cenu položky. V některých případech mají maloobchodníci provoz B2B i B2C. U operací B2B je běžné měnit ceny na základě dodacích termínů. Tito maloobchodníci mohou pro svou firmu B2B použít ceny Supply Chain Management a maloobchodní cenu pro svou firmu B2C. Maloobchodní ceny se na začátku použití, pouze pokud je uživatel aplikace přidán jako uživatel call centra, takže maloobchodníci mohou přiřadit určité uživatele, kteří budou pracovat s cenou Supply Chain Management, a přiřadit několik uživatelů, kteří budou pracovat s maloobchodními cenami, tj. by tito uživatelé měli být přidáni jako uživatelé call centra. Dále platí, že musí být zapnutá vlastnost **Použít k výpočtu cen dnešní datum** v části **Parametry obchodu > ceny a slevy > Různé**. Tímto způsobem mohou udržovat použitou hodnotu parametru účtů pohledávek pro Požadované datum dodání nebo Požadované datum přijetí pro stanovení ceny Supply Chain Management, ale maloobchodní ceny budou pro výpočet ceny nadále používat dnešní datum.
+- Standardní cenový modul Supply Chain Management podporuje výpočet ceny na základě požadovaného data expedice a požadovaného data příjmu spolu s aktuálním datem. Maloobchodní ceny však v současné době tyto hodnoty nepodporují. Důvodem je to, že u scénářů B2C zákazníci neočekávají, že požadované datum dodání ovlivní cenu položky. V některých případech mají maloobchodníci provoz B2B i B2C. U operací B2B je běžné měnit ceny na základě dodacích termínů. Tito maloobchodníci mohou pro svou firmu B2B použít ceny Supply Chain Management a maloobchodní cenu pro svou firmu B2C. Maloobchodní ceny se na začátku použití, pouze pokud je uživatel aplikace přidán jako uživatel call centra, takže maloobchodníci mohou přiřadit určité uživatele, kteří budou pracovat s cenou Supply Chain Management, a přiřadit několik uživatelů, kteří budou pracovat s maloobchodními cenami, tj. by tito uživatelé měli být přidáni jako uživatelé call centra. Dále platí, že musí být zapnutá vlastnost **Použít k výpočtu cen dnešní datum** v části **Parametry obchodu > ceny a slevy > Různé** . Tímto způsobem mohou udržovat použitou hodnotu parametru účtů pohledávek pro Požadované datum dodání nebo Požadované datum přijetí pro stanovení ceny Supply Chain Management, ale maloobchodní ceny budou pro výpočet ceny nadále používat dnešní datum.
 
 **Pouze** cenový modul podporuje následující cenové funkce:
 

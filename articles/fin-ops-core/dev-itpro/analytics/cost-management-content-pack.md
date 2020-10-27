@@ -16,15 +16,15 @@ ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: b4e12abceeef59d05fa21cb030b8aa738842cafb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759249"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982790"
 ---
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
@@ -37,17 +37,17 @@ Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové úče
 > [!NOTE]
 > Obsah **Řízení nákladů** v Power BI popsaný v tomto tématu se vztahuje na Dynamics 365 Finance and Operations 8.0.
 > 
-> Sada obsahu **Řízení nákladů**v Power BI, dostupná na webu AppSource se již nepoužívá. Další informace o tomto zastarání naleznete v tématu [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Sada obsahu **Řízení nákladů** v Power BI, dostupná na webu AppSource se již nepoužívá. Další informace o tomto zastarání naleznete v tématu [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
-Obsah Power BI je vystavěn na souhrnném měření **CostObjectStatementCacheMonthly**, které má jako primární datový zdroj tabulku **CostObjectStatementCache**. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete změnit četnost aktualizací nebo povolit ruční aktualizace v konfiguraci mezipaměti datové sady. Ruční aktualizace lze spustit v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**.
+Obsah Power BI je vystavěn na souhrnném měření **CostObjectStatementCacheMonthly** , které má jako primární datový zdroj tabulku **CostObjectStatementCache** . Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete změnit četnost aktualizací nebo povolit ruční aktualizace v konfiguraci mezipaměti datové sady. Ruční aktualizace lze spustit v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů** .
 
-Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizovat souhrnné měření **CostObjectStatementCacheMonthly**, než bude možné aktualizovat data ve vizualizacích Power BI.
+Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizovat souhrnné měření **CostObjectStatementCacheMonthly** , než bude možné aktualizovat data ve vizualizacích Power BI.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Obsah **Řízení nákladů** v Power BI se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů**.
+Obsah **Řízení nákladů** v Power BI se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů** .
 
 Pracovní prostor **Správa nákladů** obsahuje následující karty:
 

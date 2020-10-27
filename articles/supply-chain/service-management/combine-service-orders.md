@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2a27e0476ba0b4868d713d87248941dfc3579ff
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 17fbed59b1fe7bec80f25f74451872efd61bed62
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202898"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976993"
 ---
 # <a name="combine-service-orders"></a>Kombinace servisních zakázek   
 
@@ -42,7 +42,7 @@ Při vytváření řádků servisní zakázky automaticky ve formuláři **servi
 
 ## <a name="example"></a>Příklad
 
-Vytvoříte servisní smlouvu s počátečním datem 31. 3. 2007. V poli **Kombinace servisních zakázek** vyberte **Podle předmětu servisu**. Poté vytvoříte následující řádky servisní zakázky:
+Vytvoříte servisní smlouvu s počátečním datem 31. 3. 2007. V poli **Kombinace servisních zakázek** vyberte **Podle předmětu servisu** . Poté vytvoříte následující řádky servisní zakázky:
 
 <table style="width:100%;">
 <colgroup>
@@ -96,7 +96,7 @@ Pro žádný z řádků servisní zakázky nevytvoříte časová okna. Řádky 
 
 Poté vygenerujete řádky servisní zakázky z formuláře **Vytvořit servisní zakázky** od 01.04.2007 do 30.04.2007.
 
-Celkem vytvoříte 10 servisních zakázek. Vzhledem k tomu, že jste vybrali nastavení kombinace **Podle předmětu servisu**, budou všechny vytvořené servisní zakázky obsahovat pouze řádky servisní zakázky, které se vztahují k jednomu konkrétnímu předmětu servisu. Do jedné servisní zakázky budou zkombinovány řádky servisní zakázky vygenerované ze servisní smlouvy, které mají stejné datum servisu a stejný předmět.
+Celkem vytvoříte 10 servisních zakázek. Vzhledem k tomu, že jste vybrali nastavení kombinace **Podle předmětu servisu** , budou všechny vytvořené servisní zakázky obsahovat pouze řádky servisní zakázky, které se vztahují k jednomu konkrétnímu předmětu servisu. Do jedné servisní zakázky budou zkombinovány řádky servisní zakázky vygenerované ze servisní smlouvy, které mají stejné datum servisu a stejný předmět.
 
 
 > [!NOTE]
