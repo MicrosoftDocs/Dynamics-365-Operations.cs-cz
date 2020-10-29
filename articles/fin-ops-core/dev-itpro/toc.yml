@@ -142,8 +142,10 @@
                           items:
                             - name: Systémové požadavky pro dvojitý zápis
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Podporované scénáře pro nastavení dvojitého zápisu
+                            - name: Pokyny pro nastavení duálního zápisu
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Úvahy o počáteční synchronizaci
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Nastavení duálního zápisu z Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
                             - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
@@ -404,6 +406,8 @@
                   href: database/database-point-in-time-restore.md
                 - name: "Obnovení produkční databáze k\_určitému bodu v\_čase do prostředí sandbox"
                   href: database/database-pitr-prod-sandbox.md
+                - name: Povolení přístupu k databázi just-in-time
+                  href: database/database-just-in-time-jit-access.md
             - name: Kurzy
               items:
                 - name: Obnovení pro účely školení
@@ -480,6 +484,8 @@
                   href: deployment/Update-retail-channel.md
                 - name: Inicializace Commerce Scale Unit (cloud)
                   href: deployment/Initialize-Retail-Channels.md
+                - name: Migrace kanálu do jiné Commerce Scale Unit
+                  href: deployment/Reassign-CSU.md
                 - name: Umístění dat aplikace Retail
                   href: deployment/retail-data-residency.md
             - name: Místní nasazení
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
               href: lifecycle-services/21vianet-support.md
-            - name: Nastavení technické podpory pro Finance and Operations
+            - name: Nastavení technické podpory pro aplikace Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Správa zkušeností s podporou Finance and Operations
+            - name: Správa zkušeností s podporou pro aplikace Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Správa systému
           items:
