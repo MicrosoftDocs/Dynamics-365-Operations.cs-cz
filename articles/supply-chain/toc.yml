@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Vytvoření nákupní smlouvy
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatické přidělování poplatků
+                  href: procurement/automatic-charges-allocation.md
                 - name: Rabaty dodavatele
                   href: procurement/vendor-rebates.md
                 - name: 'Řešení problémů s cenami, slevami, smlouvami a rabaty'
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: Vykázání výrobních zakázek jako dokončených
                       href: production-control/report-production-orders-as-finished.md
+                    - name: Nastavení a použití rozhraní pro provádění výrobního provozu
+                      items:
+                        - name: Konfigurace rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-use.md
                     - name: Konfigurovat úkolový lístek pro zařízení
                       href: production-control/config-job-card-device.md
                     - name: Ohlášení jako dokončené ze zařízení úkolového lístku
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Expedování prodejních objednávek bez skladování
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Automatické přidělování poplatků
+                  href: procurement/automatic-charges-allocation.md
                 - name: Vytvoření nákupní objednávky z prodejní objednávky
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Vytvářet prodejní objednávky
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Vytvoření převodních příkazů z aplikace skladu
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Zpracování události aplikace skladu
-                      href: warehousing/warehouse-app-events.md
                     - name: Potvrzení výdeje kusů
                       href: warehousing/piece-picking-confirmation.md
                     - name: Obalové materiály a poplatky
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Zpracování události aplikace skladu
+                      href: warehousing/warehouse-app-events.md
                     - name: Přijetí registrační značky s aplikací skladu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"

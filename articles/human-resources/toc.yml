@@ -5,6 +5,12 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 22. října 2002
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. října 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. září 2020
+          href: hr-whats-new-2020-09-26.md
         - name: 16. září 2020
           href: hr-whats-new-2020-09-16.md
         - name: 3. září 2020
@@ -83,6 +89,8 @@
               href: hr-admin-integration-dayforce.md
             - name: Vytvoření aplikace pro export opakujících se dat
               href: hr-admin-integration-recurring-data-export.md
+            - name: Integrace s LinkedIn Talent Hub
+              href: hr-admin-integration-linkedin.md
             - name: Integrace s Office
               items:
                 - name: Kurz integrace s Office
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Aplikace Human Resources v Teams
           href: hr-admin-teams-leave-app.md
+        - name: Příprava pro ostré nasazení
+          href: hr-admin-go-live-prepare.md
+        - name: Často kladené dotazy týkající se ostrého nasazení
+          href: hr-admin-go-live-faq.md
         - name: Zdroje dokumentace
           items:
             - name: Systém nápovědy
@@ -669,6 +681,8 @@
           items:
             - name: Přehled samoobsluhy pro zaměstnance a manažera
               href: hr-employee-manager-self-service-overview.md
+            - name: Vytváření vlastních odkazů v samoobsluze pro manažery
+              href: hr-employee-manager-self-service-custom-links.md
             - name: Změna názvu samoobslužného pracovního prostoru zaměstnance
               href: hr-employee-self-service-workspace-name.md
             - name: Úprava osobních informací
