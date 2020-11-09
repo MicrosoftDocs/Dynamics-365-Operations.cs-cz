@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997367"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Poradce při potížích s modulem dvojitého zápisu v aplikacích Finance and Operations
 
@@ -37,7 +36,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>V aplikaci Finance and Operations nelze načíst modul dvojitého zápisu
 
-Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždice **Dvojího zapisování** v pracovním prostoru **Správa dat**, služba integrace dat je pravděpodobně mimo provoz. Vytvořte lístek podpory pro vyžádání restartu služby Data Integration Service.
+Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždice **Dvojího zapisování** v pracovním prostoru **Správa dat** , služba integrace dat je pravděpodobně mimo provoz. Vytvořte lístek podpory pro vyžádání restartu služby Data Integration Service.
 
 ## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Chyba při pokusu o vytvoření nového mapování entity
 
@@ -62,7 +61,7 @@ Chcete-li tento problém vyřešit, přihlaste se pomocí okna InPrivate v aplik
 
 Při připojování nebo vytváření map se může objevit následující chyba:
 
-*Stavový kód odpovědi neoznačuje úspěch: 403 (tokenexchange).<br> ID relace: \<ID vaší relace\><br> ID kořenové aktivity: \<ID vaší kořenové aktivity\>*
+*Stavový kód odpovědi neoznačuje úspěch: 403 (tokenexchange).<br> ID relace: \<your session id\><br> ID kořenové aktivity: \<your root activity id\>*
 
 K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Common Data Service bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v aplikacích Finance and Operations a prostředí Common Data Service může obě prostředí propojit. Přidávat nové mapy entit může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
 

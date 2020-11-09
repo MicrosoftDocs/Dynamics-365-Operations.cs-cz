@@ -3,7 +3,7 @@ title: Úvod k leasingu majetku
 description: Toto téma popisuje schopnost leasingu majteku a prochází jednotlivými kroky pro vytvoření leasingu majetku a zobrazení informací o těchto leasinzích.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970001"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022560"
 ---
 # <a name="asset-leasing-get-started"></a>Úvod k leasingu majetku
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje schopnost leasingu majteku a prochází jednotlivými kroky pro vytvoření leasingu majetku a zobrazení informací o těchto leasinzích. Toto téma také definuje terminologii použitou v uživatelském rozhraní a dokumentaci. Leasing majetku je pokročilou schopností pro správu, sledování a automatizaci finančních transakcí pro pronajaté majetky (aktiva) v Microsoft Dynamics 365 Finance. Leasingu majetku vyhovuje mezinárodním účetním standardům (IFRS 16) a normám US GAAP (ASC 842). Leasing majetku zachycuje a zpracovává informace o leasinzích a pomáhá vygenerovat položky deníku v rámci celého životní cyklu leasingu od počátečního uznání, přes měsíční položky deníku, po snížení hodnoty a ukončení leasingu. Leasing majetku je možné bezproblémově integrovat s dalšími komponentami Dynamics 365 Finance, včetně Dlouhodobého majetku, Závazků a Hlavní knihy.
 
@@ -209,8 +208,8 @@ To představuje přenesení snížení zůstatku používaného majetku. Určete
 ## <a name="create-an-asset-lease"></a>Vytvoření leasingu majetku
 Pomocí následujících kroků vytvoříte nový leasing. 
 
-1. Chcete-li používat **Leasing majetku** , musíte ho povolit v pracovním prostoru **Správa funkcí** . Z pracovního prostoru **Správa funkcí** vyberte **Vše** , aby se na stránce ukázaly všechny funkce. Vyberte **Leasing majetku** a poté vyberte **Povolit nyní** .
-2. Přejděte na **Leasing majetku > Společné > Shrnutí leasingu** . Na pevné záložce **Obecné** zadejte povinná pole. 
+1. Chcete-li používat **Leasing majetku** , musíte ho povolit v pracovním prostoru **Správa funkcí**. Z pracovního prostoru **Správa funkcí** vyberte **Vše** , aby se na stránce ukázaly všechny funkce. Vyberte **Leasing majetku** a poté vyberte **Povolit nyní**.
+2. Přejděte na **Leasing majetku > Společné > Shrnutí leasingu**. Na pevné záložce **Obecné** zadejte povinná pole. 
    - **Podrobnosti leasingu**
    - **Očekávaná doba použitelnosti majetku (měsíce)**
    - **Skupina leasingu**
@@ -222,17 +221,17 @@ Pomocí následujících kroků vytvoříte nový leasing.
 
 3. Přejděte na pevnou záložku **Řádky platebního kalendáře** a zadejte platební řádek, poté vyberte **Vytvořit plány** (kalendáře).
 
-4. Vyberte **Knihy** . 
+4. Vyberte **Knihy**. 
 
-5. Přepněte na pevnou záložku **Obecné** . Vypočítají se hodnoty **Počáteční používaný majetek** a **Leasingový závazek** . 
+5. Přepněte na pevnou záložku **Obecné**. Vypočítají se hodnoty **Počáteční používaný majetek** a **Leasingový závazek**. 
 
-6. Přejděte na pevnou záložku **Klasifikační test leasingu** a zkontrolujte hodnotu v poli **Typ leasingu** . 
+6. Přejděte na pevnou záložku **Klasifikační test leasingu** a zkontrolujte hodnotu v poli **Typ leasingu**. 
 
-   Automatický **Typ leasingu** je klasifikován na základě kritérií, která jsou definována na stránce **Knihy** .
+   Automatický **Typ leasingu** je klasifikován na základě kritérií, která jsou definována na stránce **Knihy**.
 
-7.  Přejděte na **Platební kalendář** pod oddílem **Funkce** .  
+7.  Přejděte na **Platební kalendář** pod oddílem **Funkce**.  
 
-   Stránka **Platební kalendář** uvádí budoucí platební kalendáře pro ID leasingu. Vyberte **Potvrdit kalendář** , abyste mohli zaúčtovávat transakce **Počáteční uznání** . 
+   Stránka **Platební kalendář** uvádí budoucí platební kalendáře pro ID leasingu. Vyberte **Potvrdit kalendář** , abyste mohli zaúčtovávat transakce **Počáteční uznání**. 
 
 [![Funkce Počáteční uznání](./media/overview-13.png)](./media/overview-13.png)
 
@@ -244,7 +243,7 @@ Pomocí následujících kroků vytvoříte nový leasing.
  
    **Plán amortizace leasingového závazku** zobrazuje částku úroku vypočítanou pro každé období.
    
-10. Vytvořte deník a přejděte na **Deníky leasingu majetku** . **Plán amortizace leasingového závazku** se také zobrazuje v úrokových transakcích.
+10. Vytvořte deník a přejděte na **Deníky leasingu majetku**. **Plán amortizace leasingového závazku** se také zobrazuje v úrokových transakcích.
 
    Stránka **Plán odpisu majetku** zobrazuje odpisové transakce pro vybrané ID leasingu. 
 

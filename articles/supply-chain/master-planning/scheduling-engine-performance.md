@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989261"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015060"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -238,11 +238,7 @@ Pokud je například pracovní doba skupiny zdrojů v konkrétní den od 8:00 do
 
 Při výpočtu dostupné kapacity pro skupinu zdrojů v daný den se zohlední zatížení z naplánovaných úloh u všech zdrojů zahrnutých do této skupiny v tentýž den. Pro každé datum probíhá výpočet takto:
 
-> Dostupná kapacita skupiny zdrojů =  
-> (kapacita zdrojů ve skupině na základě jejich kalendáře) –  
-> (naplánované zatížení z úloh u zdrojů ve skupině) –  
-> (naplánované zatížení z operací u zdrojů ve skupině) –  
-> (naplánované zatížení z operací ve skupině zdrojů)
+*Dostupná kapacita skupiny prostředků = kapacita zdrojů ve skupině na základě jejich kalendáře &ndash; Naplánované zatížení z úloh u zdrojů ve skupině &ndash; Naplánované zatížení z operací u zdrojů ve skupině &ndash; Naplánované zatížení z operací ve skupině zdrojů*
 
 Na kartě **Požadavky na zdroj** u operace postupu lze požadavky na zdroj zadat buď jako konkrétní zdroj (v takovém případě bude operace naplánována s použitím tohoto zdroje), jako skupinu zdrojů, jako typ zdroje, nebo jako jednu či více schopností (dovednost, kurz či certifikát). Použití všech těchto možností poskytuje velkou flexibilitu při návrhu trasy, zároveň však komplikuje plánování na modulu, protože u kapacity musí být zohledněna každá „vlastnost“ (abstraktní název používaný v modulu pro schopnosti, dovednosti atd.).
 
@@ -252,11 +248,7 @@ V plánování operací se dostupná kapacita pro určitou schopnost ve skupinu 
 
 Pro každé datum probíhá požadovaný výpočet takto:
 
-> Dostupná kapacita pro schopnost =  
-> (kapacita pro tuto schopnost) –  
-> (naplánované zatížení z úloh u zdrojů, které tuto konkrétní schopnost mají, ve skupině zdrojů) –  
-> (naplánované zatížení z operací u zdrojů, které tuto konkrétní schopnost mají, ve skupině zdrojů) –  
-> (naplánované zatížení z operací, které tuto schopnost vyžadují, u samotné skupiny zdrojů)
+*Dostupná kapacita pro schopnost = Kapacita pro schopnost &ndash; Naplánované zatížení z úloh u zdrojů, které tuto konkrétní schopnost mají, ve skupině zdrojů &ndash; Naplánované zatížení z operací u zdrojů, které tuto konkrétní schopnost mají, ve skupině zdrojů &ndash; Naplánované zatížení z operací, které tuto schopnost vyžadují, u samotné skupiny zdrojů*
 
 To znamená, že pokud existuje zatížení konkrétního zdroje, zohlední se při výpočtu dostupné kapacity skupiny zdrojů, pokud jde o konkrétní schopnost, protože zatížení konkrétního zdroje snižuje jeho příspěvek k její kapacitě, pokud jde o danou schopnost, a to bez ohledu na to, zda toto zatížení s touto konkrétní schopností souvisí. Pokud existuje zatížení na úrovni skupiny zdrojů, zohlední se to při výpočtu její dostupné kapacity, pokud jde o konkrétní schopnost, jen v případě, že zatížení pochází z operace, která tuto konkrétní schopnost vyžaduje.
 
@@ -264,7 +256,7 @@ Výše uvedená logika je komplikovaná, protože je stejná pro každý typ „
 
 ## <a name="viewing-scheduling-engine-input-and-output"></a>Zobrazení vstupu a výstupu plánovacího modulu
 
-Chcete-li získat konkrétní podrobnosti o vstupu a výstupu procesu plánování, povolte protokolování přechodem na **Správa organizace \> Nastavení \> Plánování \> Kokpit pro trasování plánování** .
+Chcete-li získat konkrétní podrobnosti o vstupu a výstupu procesu plánování, povolte protokolování přechodem na **Správa organizace \> Nastavení \> Plánování \> Kokpit pro trasování plánování**.
 
 Na této stránce nejprve vyberte **Povolit protokolování** v podokně akcí. Pak určete plánování výrobní zakázky. Po dokončení se vraťte na stránku **Kokpit pro trasování plánování** a vyberte **Zakázat protokolování** v podokně akcí. Obnovte stránku a v mřížce se objeví nový řádek. Vyberte nový řádek a pak **Stáhnout** v podokně akcí. Získáte tím komprimovanou složku ZIP obsahující následující soubory:
 
@@ -329,7 +321,7 @@ Protože modul pracuje tak, že prozkoumává jednotlivé časové sloty z hledi
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Velké (nebo žádné) časové limity plánování
 
-Výkon plánovacího modulu lze optimalizovat pomocí parametrů na stránce **Parametry plánování** . Nastavení **Časový limit plánování povolen** a **Časový limit optimalizace plánování povolen** by mělo být vždy nastaveno na **Ano** . Pokud je nastaveno na **Ne** , plánování může potenciálně běžet nekonečně dlouho, pokud byla vytvořena neproveditelná trasa s mnoha možnostmi.
+Výkon plánovacího modulu lze optimalizovat pomocí parametrů na stránce **Parametry plánování**. Nastavení **Časový limit plánování povolen** a **Časový limit optimalizace plánování povolen** by mělo být vždy nastaveno na **Ano**. Pokud je nastaveno na **Ne** , plánování může potenciálně běžet nekonečně dlouho, pokud byla vytvořena neproveditelná trasa s mnoha možnostmi.
 
 Hodnota **Maximální čas plánování na sekvenci** určuje, kolik sekund lze nanejvýš strávit pokusem najít řešení pro jednu sekvenci (ve většině případů sekvence odpovídá jedné zakázce). Hodnota, která se zde použije, velmi závisí na složitosti trasy a nastaveních, jako je konečná kapacita – dobrým výchozím bodem je maximálně asi 30 sekund.
 

@@ -3,7 +3,7 @@ title: Zpracování fakturace
 description: Toto téma obsahuje informace o zpracování faktur pro východní Evropu.
 author: v-kikozl
 manager: AnnBe
-ms.date: 07/21/2017
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,22 +12,22 @@ ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 945b082528109f6f8c9292d2388749bebd4cfba4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 87a06e1b17e9c0bdb4147f49b2dacb74236360fa
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175687"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039805"
 ---
 # <a name="invoice-processing"></a>Zpracování fakturace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma stručně popisuje některé scénáře specifické pro určité země, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
+Toto téma stručně popisuje některé scénáře specifické pro určité země či oblasti, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
 <table>
 <thead>
 <tr>
@@ -68,9 +68,10 @@ Toto téma stručně popisuje některé scénáře specifické pro určité zem�
 </tr>
 <tr>
 <td>Datum dokumentu pro směnné kurzy</td>
-<td>Polsko, Maďarsko, Česká republika,</td>
+<td>Polsko, Maďarsko, Česká republika, Itálie</td>
 <td>
 <p>Legislativa obsahuje různá pravidla pro výběr platných směnných kurzů pro obchodní transakce. V poli <strong>Datum směnného kurzu</strong> na stránkách <strong>Parametry pohledávek</strong> a <strong>Parametry závazků</strong> můžete vybrat datum, které má být použito pro částky ve výpočtu zúčtovací měny na nákupních a prodejních dokumentech. Při zadávání dat systém načte směnný kurz pro transakci na základě tohoto parametru.</p>
+<blockquote>[!NOTE]<br>V Itálii je tato funkce použitelná pouze v modulu Závazky. V parametrech Závazků může uživatel vybrat <strong>Datum zaúčtování</strong> nebo <strong>Datum dokumentu</strong> v poli <strong>Datum směnného kurzu</strong>.   </blockquote>
 <blockquote>[!NOTE]<br>Když nastavíte pole <strong>Datum směnného kurzu</strong> na <strong>Datum dokumentu (pouze pro obchod EU)</strong>, systém použije skupinu DPH. Pro skupinu DPH existuje parametr <strong>Obchod EU</strong> na kartě <strong>Hlavní</strong>. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ano</strong> pro skupinu DPH a pokud je tato skupina DPH v záhlaví dokumentu, systém načte směnný kurz, který je založený na datu dokumentu. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ne</strong> pro tuto skupinu DPH, systém načte směnný kurz podle data zaúčtování dokladu.</blockquote>
 </td>
 </tr>

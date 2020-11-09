@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 10eb32f75ccfe1521af9ebfe1e73ef08ea4238f7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597529"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017821"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umístění na zeď - umístění do obchodu
 
@@ -34,12 +35,12 @@ Tato skladovací funkce je také označována jinými jmény, jako je umístěn�
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Zapnutí funkce Odchozí třídění
 
-Než budete moci použít funkci *Umístění na zeď - umístění do obchodu*, musí být v systému zapnutá funkce *Odchozí třídění*. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+Než budete moci použít funkci *Umístění na zeď - umístění do obchodu* , musí být v systému zapnutá funkce *Odchozí třídění*. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Odchozí třídění*
 
-Funkci *Odchozí třídění* lze použít ve spojení s funkcí *Krokový kód široké vlny organizace*, pokud je zapnutá. Tuto funkci musíte zapnout také v případě, že budete používat předdefinované kódy, které jsou nastaveny v kódech kroků vlny. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Funkci *Odchozí třídění* lze použít ve spojení s funkcí *Krokový kód široké vlny organizace* , pokud je zapnutá. Tuto funkci musíte zapnout také v případě, že budete používat předdefinované kódy, které jsou nastaveny v kódech kroků vlny. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Kód kroků vlny napříč organizací*
@@ -51,7 +52,7 @@ Pro tuto ukázku jsou použita standardní data a sklad Contoso *62*. Používaj
 ### <a name="location-type"></a>Typ umístění
 
 1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Typy umístění**.
-1. V podokně Akce vyberte možnost **Nová**, vytvoří se typ místa k třídění.
+1. V podokně Akce vyberte možnost **Nová** , vytvoří se typ místa k třídění.
 1. Nastavte následující hodnoty:
 
     - **Typ umístění:** *SORT*
@@ -68,7 +69,7 @@ Pro tuto ukázku jsou použita standardní data a sklad Contoso *62*. Používaj
 ### <a name="location-profile"></a>Profil umístění
 
 1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Profily skladových míst**.
-1. V podokně Akce vyberte možnost **Nová**, vytvoří se typ profilu umístění pro umístění třídění.
+1. V podokně Akce vyberte možnost **Nová** , vytvoří se typ profilu umístění pro umístění třídění.
 1. V záhlaví nastavte následující hodnoty:
 
     - **ID profilu umístění:** *Třídění*
@@ -112,7 +113,7 @@ Pro tuto ukázku jsou použita standardní data a sklad Contoso *62*. Používaj
 
 ### <a name="wave-step-codes"></a>Kódy kroku vlny
 
-Pokud jste zapnuli funkci *Kód širokého kroku vln organizace*, nastavte následující kód.
+Pokud jste zapnuli funkci *Kód širokého kroku vln organizace* , nastavte následující kód.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Kódy kroku vlny**.
 1. V podokně Akce klikněte na **Nový** a nastavte následující hodnoty:
@@ -155,7 +156,7 @@ Pokud jste zapnuli funkci *Kód širokého kroku vln organizace*, nastavte násl
 
     - **Vytvořit práci při uzavření pozice:** *Ano*
 
-        Když je tato možnost nastavená na *Ano* a pozice uzavřená, práce bude vytvořena, aby se přesunuly zásoby do konečného místa doručení. Když je nastavená na *Ne*, zásoby budou ihned přiděleny do objednávky při zavření pozice.
+        Když je tato možnost nastavená na *Ano* a pozice uzavřená, práce bude vytvořena, aby se přesunuly zásoby do konečného místa doručení. Když je nastavená na *Ne* , zásoby budou ihned přiděleny do objednávky při zavření pozice.
 
     - **Přiřazení pozice:** *Ruční*
 
@@ -173,11 +174,11 @@ Pokud jste zapnuli funkci *Kód širokého kroku vln organizace*, nastavte násl
 
     - **Kód kroku vlny:** *Třídění*
 
-        Pokud je zapnutá funkce *Kód kroku vlny pro celou organizaci*, musí být nastaven také kód vlnového kroku *Seřadit* v kódech vlnových kroků.
+        Pokud je zapnutá funkce *Kód kroku vlny pro celou organizaci* , musí být nastaven také kód vlnového kroku *Seřadit* v kódech vlnových kroků.
 
     - **Automaticky zavřít pozici třídění:** *Ano*
 
-        Pokud je tato možnost nastavená na *Ano*, bude pozice při řazení automaticky zavřena po dokončení veškeré práce přicházející do pozice.
+        Pokud je tato možnost nastavená na *Ano* , bude pozice při řazení automaticky zavřena po dokončení veškeré práce přicházející do pozice.
 
     - **Počet pozic třídění:** *3*
 
@@ -189,7 +190,7 @@ Pokud jste zapnuli funkci *Kód širokého kroku vln organizace*, nastavte násl
 
     - **Automaticky zabalit pozici třídění:** *Ano*
 
-        Je-li tato možnost nastavená na *Ano*, budou zásoby na pozici třídění po uzavření pozice zabaleny do kontejneru.
+        Je-li tato možnost nastavená na *Ano* , budou zásoby na pozici třídění po uzavření pozice zabaleny do kontejneru.
 
     - **ID profilu balení:** *Třídění*
 
@@ -235,7 +236,7 @@ Upravte vlnovou šablonu, která se používá pro třídění požadavků na vl
     - Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na *Ne*.
     - Nastavte možnost **Přiřadit k otevřeným vlnám** na *Ano*.
 
-1. Na pevné záložce **Metody** nastavte metodu **třídění**:
+1. Na pevné záložce **Metody** nastavte metodu **třídění** :
 
     1. V mřížce **Zbývající metody** vyberte **třídění**.
     2. Tlačítkem s šipkou doprava přesuňte metodu **třídění** do mřížky **Vybrané metody**.
@@ -268,7 +269,7 @@ Upravte vlnovou šablonu, která se používá pro třídění požadavků na vl
 1. Přejděte do **Řízení skladu \> Nastavení \> Mobilní zařízení \> Nabídka mobilního zařízení**.
 1. V seznamu nabídek vyberte možnost **Odchozí**.
 1. V podokně akcí vyberte **Upravit**.
-1. V mřížce **Dostupné nabídky a položky nabídky** najděte a vyberte položku nabídky **Třídění**, kterou jste právě vytvořili.
+1. V mřížce **Dostupné nabídky a položky nabídky** najděte a vyberte položku nabídky **Třídění** , kterou jste právě vytvořili.
 1. Stisknutím tlačítka se šipkou doprava přesuňte **Třídění** do mřížky **Struktura nabídky**. Tímto způsobem se přidá nová položka nabídky do nabídky **Odchozí**.
 1. Zvolte **Uložit**.
 
@@ -292,20 +293,20 @@ Musíte vytvořit směrnice o umístění, které budou řídit práci vytvořen
     - **Kód směrnice:** Toto pole nechte prázdné.
     - **Více skladových jednotek:** *Ne*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky**, klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky** , klikněte na **Uložit**.
 1. Na pevné záložce **Řádky** vyberte **Nový** a pak nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Pořadové číslo:** *1*
     - **Od množství:** *0*
     - **Do množství:** *1000000*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa**, klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa** , klikněte na **Uložit**.
 1. Na pevné záložce **Akce směrnice místa** vyberte **Nový** a pak nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Pořadové číslo:** *1*
     - **Název:** *Portál*
 
-1. Vyberte možnost **Uložit**, chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na pevné záložce **Akce směrnice skladového místa**.
+1. Vyberte možnost **Uložit** , chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na pevné záložce **Akce směrnice skladového místa**.
 1. Na záložce s náhledem **Akce směrnic skladového místa** vyberte možnost **Upravit dotaz**.
 1. V dialogovém okně dotazu na kartě **Rozsah** vyhledejte řádek, kde je hodnota v poli **Pole** nastavena na *Umístění*. Nastavte pole **Kritéria** pro tento řádek na *nákladová brána*.
 1. Úpravu potvrďte výběrem tlačítka **OK**.
@@ -326,7 +327,7 @@ Musíte vytvořit směrnice o umístění, které budou řídit práci vytvořen
 
 1. Přejděte do nabídky Řízení skladu **Nastavení \> Práce \> Pracovní šablony**.
 1. V poli **Typ pracovního příkazu** vyberte možnost *Prodejní objednávky*.
-1. V mřížce vyberte pracovní šablonu ***62 výdejů do balení**.
+1. V mřížce vyberte pracovní šablonu **62 výdejů do balení**.
 1. V podokně akcí vyberte **Zalomení pracovních hlaviček**.
 1. V podokně akcí vyberte **Upravit**.
 1. Na řádku, kde je pole **Název pole** nastaveno na *ID dodávky* zrušte zaškrtnutí políčka **Seskupit podle tohoto pole**.
@@ -338,17 +339,17 @@ Musíte vytvořit směrnice o umístění, které budou řídit práci vytvořen
     - **Šablona práce:** *Seřazený výběr*
     - **Popis šablony práce:** *Seřazený výběr*
 
-1. Chcete-li, aby byla dostupná část **Podrobnosti šablony práce**, klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná část **Podrobnosti šablony práce** , klikněte na **Uložit**.
 1. V části **Podrobnosti pracovní šablony** vytvoříte dva řádky. Klikněte na **Nový** a poté nastavte následující hodnoty pro řádek 1:
 
     - **Typ práce:** *Výdej*
-    - **Povinné:** Vybráno (= *Ano*)
+    - **Povinné:** Vybráno (= *Ano* )
     - **ID pracovní třídy:** *Třídění*
 
 1. Znovu klikněte na **Nový** a poté nastavte následující hodnoty pro řádek 2:
 
     - **Typ práce:** *Vložit*
-    - **Povinné:** Vybráno (= *Ano*)
+    - **Povinné:** Vybráno (= *Ano* )
     - **ID pracovní třídy:** *Třídění*
 
 1. Zvolte **Uložit**.
@@ -471,7 +472,7 @@ Bylo vytvořeno jedno ID práce pro přenesení zásob z míst výběru do míst
 
 1. Potvrďte zadání.
 
-    Mobilní aplikace nyní představují řadu stránek **Výběr**, které vás nasměrují na místo výdeje a na položku a množství, které je třeba vybrat. Po přidání vybrané položky do poznávací značky potvrdíte výběr. Poslední stránkou bude práce umístění vybraných položek do místa třídění.
+    Mobilní aplikace nyní představují řadu stránek **Výběr** , které vás nasměrují na místo výdeje a na položku a množství, které je třeba vybrat. Po přidání vybrané položky do poznávací značky potvrdíte výběr. Poslední stránkou bude práce umístění vybraných položek do místa třídění.
 
 1. Potvrďte první práci vyskladnění.
 1. Zobrazí se další práce vyskladnění. Potvrďte vyskladnění.
@@ -493,7 +494,7 @@ Nyní, když byly veškeré zásoby vloženy do místa třídění, musí být r
 1. Potvrďte zadání.
 1. Nejprve zadejte číslo položky k třídění.
 1. Systém určuje první polohu řazení, která by měla být zobrazena. Potvrďte polohu třídění.
-1. Budete vyzváni k přiřazení registrační značky k pozici třídění. Vyberte pole **RZ**, zadejte číslo registrační značky a potvrďte zadání.
+1. Budete vyzváni k přiřazení registrační značky k pozici třídění. Vyberte pole **RZ** , zadejte číslo registrační značky a potvrďte zadání.
 
     Protože pozice třídění souvisí s ID dodávky, roztřídíte vybrané položky seřadíte do registrační značky, která je specifická pro odchozí zásilku a prodejní objednávku.
 
@@ -529,7 +530,7 @@ Pokud by se měly pozice třídění uzavřít ručně, musí být možnost **Au
     - Uživatel může naskenovat jednu z položek, které jsou již na dané pozici, a poté vybrat **Zavřít** pro uzavření pozice.
     - Pokud uživatel prohledá kontejner, který již byl roztříděn, zobrazí se chybová zpráva. Uživatel však stále může pokračovat k zavření pozice.
 
-- Ze stránky Microsoft Dynamics 365 Supply Chain Management **Přiřazení pozice odchozího třídění**:
+- Ze stránky Microsoft Dynamics 365 Supply Chain Management **Přiřazení pozice odchozího třídění** :
 
     - Uživatel si může vybrat záznam pozice odchozího třídění a poté vybrat **Zavřít pozici** v podokně akcí.
 

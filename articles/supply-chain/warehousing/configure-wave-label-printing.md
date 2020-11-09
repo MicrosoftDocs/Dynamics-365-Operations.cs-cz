@@ -8,7 +8,7 @@ ms.topic: configure-wave-label-printing
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e3b04eea7bd7dd689f8a918820ffdb4a72d813dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986016"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016947"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Nastavte a použijte tisk popisků vlny
 
@@ -69,38 +69,38 @@ Tento scénář ukazuje průběh toku.
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF** .
+Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF**.
 
 ### <a name="make-sure-that-the-wave-label-method-is-available"></a>Ujistěte se, že je k dispozici metoda popisku vlny
 
 Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou metodu tisku popisků vlny.
 
-1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny** .
+1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny**.
 1. Potvrďte, že **waveLabelPrinting** je v seznamu. Pokud není, vyberte **Obnovit metody** v podokně Akce, abyste ji přidali.
 
 ### <a name="configure-a-wave-template"></a>Konfigurujte šablonu vlny
 
 Šablony vln vám umožní propojit konkrétní příklady vlnových metod s odpovídající šablonou vlnových štítků.
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** .
-1. Vyberte šablonu, např. **Vychozí dodávka 62** .
-1. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody** .
-1. V sloupci **Vybrané metody** vyberte metodu **Tisk popisků vlny** a nastavte její pole **Kód kroku vlny** na *PrintLabel* . Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+1. Vyberte šablonu, např. **Vychozí dodávka 62**.
+1. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody**.
+1. V sloupci **Vybrané metody** vyberte metodu **Tisk popisků vlny** a nastavte její pole **Kód kroku vlny** na *PrintLabel*. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Vytvořte rozvržení vlnového štítku
 
 Rozvržení štítku řídí, jaké informace jsou na štítku vytištěny a jak jsou rozloženy. Zde zadáte kód ZPL, který je odeslán do tiskárny.
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny**.
 1. Vytvořte záznam, který má následující nastavení:
 
     - **ID rozložení štítku:** *Kartón*
     - **Popis:** *Karton (SSCC)*
 
-1. V podokně akcí vyberte **Uložit** .
-1. V podokně Akce vyberte **Nastavení řádku popisku vlny** .
+1. V podokně akcí vyberte **Uložit**.
+1. V podokně Akce vyberte **Nastavení řádku popisku vlny**.
 
-    Zobrazí se stránka **Nastavení řádku popisku vlny** . Zde můžete nakonfigurovat dynamickou část štítku.
+    Zobrazí se stránka **Nastavení řádku popisku vlny**. Zde můžete nakonfigurovat dynamickou část štítku.
 
 1. Přidejte řádek, který má následující nastavení:
 
@@ -122,7 +122,7 @@ Rozvržení štítku řídí, jaké informace jsou na štítku vytištěny a jak
         > Toto nastavení způsobí, že se pro každý záznam v tabulce vlnových štítků vytiskne samostatný štítek ZPL.
 
 1. Zavřete stránku.
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Řádky práce*
@@ -132,9 +132,9 @@ Rozvržení štítku řídí, jaké informace jsou na štítku vytištěny a jak
 
     Tento dotaz zajišťuje, že na štítek budou vytištěny pouze pracovní řádky typu pick, nikoli pracovní řádky typu put.
 
-1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky** .
+1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí** . V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -200,7 +200,7 @@ Rozvržení štítku řídí, jaké informace jsou na štítku vytištěny a jak
     ```
 
     > [!NOTE]
-    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4** .
+    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4**.
 
 Váš štítek je nyní připraven k použití.
 
@@ -208,7 +208,7 @@ Váš štítek je nyní připraven k použití.
 
 Typy vlnových štítků se používají k propojení šablon vlnových štítků s jednotkou na řádcích skupin sekvencí jednotek.
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Typy popisků vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Typy popisků vlny**.
 1. Přidejte typ popisku vlny, který má následující nastavení:
 
     - **Typ štítku:** *Kartón*
@@ -218,15 +218,15 @@ Typy vlnových štítků se používají k propojení šablon vlnových štítk�
 
 Dále nastavte skupinu sekvencí jednotek pro typ vlnového štítku.
 
-1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skupiny sekvenci jednotek** .
-1. Vyberte skupinu **Ea Box PL** .
-1. Pro řádek **Krabice** nastavte **Typ úrovně vlny** na *Kartón* .
+1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skupiny sekvenci jednotek**.
+1. Vyberte skupinu **Ea Box PL**.
+1. Pro řádek **Krabice** nastavte **Typ úrovně vlny** na *Kartón*.
 
 ### <a name="create-a-wave-label-template"></a>Vytvoření šablony vlnového štítku
 
 Dále vytvořte šablonu vlnového štítku pro typ vlnového štítku.
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny**.
 1. Přidejte šsblonu úrovně vlnx a nastavte následující hodnoty v záhlaví:
 
     - **Název šablony štítku:** *Štítky kartonu*
@@ -234,15 +234,15 @@ Dále vytvořte šablonu vlnového štítku pro typ vlnového štítku.
     - **Kód kroku vlny:** *PrintLabel*
     - **Sklad:** *62*
 
-1. Na pevné záložce **Všeobecné** nastavte pole **Typ vlnového štítku** na *Karton* .
+1. Na pevné záložce **Všeobecné** nastavte pole **Typ vlnového štítku** na *Karton*.
 1. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** přidejte nový řádek, který má následující nastavení:
 
     - **ID rozložení štítku:** *Kartón*
     - **Název tiskárny:** Vyberte vhodnou tiskárnu ZPL.
     - **Spustit dotaz:** *Ano* (Toto nastavení je volitelné, ale pro optimální výkon se doporučuje.)
 
-1. V podokně akcí vyberte **Uložit** .
-1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz** . Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
+1. V podokně akcí vyberte **Uložit**.
+1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz**. Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Dodávky*
     - **Odvozená tabulka:** *Dodávky*
@@ -260,8 +260,8 @@ Dále vytvořte šablonu vlnového štítku pro typ vlnového štítku.
     - **Směr hledání:** *Vzestupně*
 
 1. Vyberte **OK** a dialogové okno editor dotazu zavřete.
-1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano** .
-1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny** .
+1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano**.
+1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny**.
 1. V dialogovém okně **Skupina šablon úrovně vlny** vyberte řádek, ve kterém je pole **Název referenčního pole** nastaveno na *ID referenčního nákladového řádku* a poté zaškrtněte **ID sestavení štítku** pro tento řádek.
 
     > [!NOTE]
@@ -273,7 +273,7 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Vytvořte prodejní objednávku a uvolněte ji do skladu
 
-1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky** .
+1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky**.
 1. Vytvořte prodejní objednávku, která má následující nastavení:
 
     - **Účet zákazníka:** *US-001*
@@ -294,20 +294,20 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
         - **Jednotka:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > Položky a množství, které jsou zde uvedeny, jsou pouze příklady. Musí používat skupinu sekvencí jednotek, kterou jste definovali dříve, vhodné převody jednotek *ea* na *Box* na *PL* musí být pro ně definovány a musí mít zásoby ve skladu *62* . Další informace viz [Měrná jednotka a politika skladování](unit-measure-stocking-policies.md).
+    > Položky a množství, které jsou zde uvedeny, jsou pouze příklady. Musí používat skupinu sekvencí jednotek, kterou jste definovali dříve, vhodné převody jednotek *ea* na *Box* na *PL* musí být pro ně definovány a musí mít zásoby ve skladu *62*. Další informace viz [Měrná jednotka a politika skladování](unit-measure-stocking-policies.md).
 
-1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace** .
+1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace**.
 1. Na stránce **Rezervace** vyberte v podokně Akce možnost **Rezervovat šarži** a zavřete stránku.
 1. Opakujte kroky 4 a 5 pro řádek 2 prodejní objednávky.
-1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu** .
+1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu**.
 
     Dojde k následujícím událostem:
 
     - Systém zpracovává vytvořenou zásilku pomocí šablony, která zahrnuje krok tisku štítků. Rozvržení štítků se použije k definování formátu štítků a výsledkem bude štítek, který se vytiskne na tiskárně vybrané v šabloně štítků.
     - Štítky vlny se generují a tisknou. Počet štítků se bude rovnat počtu kartonů (v tomto příkladu 376 štítků pro řádek 1 a 322 štítků pro řádek 2).
-    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18** . 
+    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18**. 
 
-vlnové štítky můžete zobrazit a znovu vytisknout z následujících stránek. V podokně akcí každé ze stránek **Dodávky** ve skupině **Související informace** vyberte **vlnové štítky** .
+vlnové štítky můžete zobrazit a znovu vytisknout z následujících stránek. V podokně akcí každé ze stránek **Dodávky** ve skupině **Související informace** vyberte **vlnové štítky**.
 
 - Všechny zásilky \> Podrobnosti o zásilce
 - Všechny náklady \> Načíst podrobnosti
@@ -322,7 +322,7 @@ Tento scénář umožňuje tisknout štítky vln, když pomocí kontejnerizace a
 Zde jsou hlavní rozdíly mezi tímto scénářem a scénářem 1:
 
 - **Šablony vlnových štítků:** Nevyberete typ vlnového štítku v šabloně vlnového štítku a nebudete vyžadovat seskupení sestavení štítků. V opačném případě nakonfigurujete šablonu popisku vlny a odkaz na šablonu vlny stejným způsobem, jaký je popsán ve scénáři 1. Chcete-li zabránit generování štítků vlny, musíte ponechat typ vlnového štítku prázdný.
-- **Rozvržení vlnových štítků:** Nakonfigurujete nastavení řádků rozvržení vlnových štítků pro pracovní řádky namísto záznamů vlnových štítků. Nastavení řádků pro rozvržení štítků musíte nakonfigurovat pomocí tabulky **WHSWorkLine** místo tabulky **WHSWaveLabel** . Nastavení **Řádky na stránce** řídí počet řádků, které bude mít sekce text. 
+- **Rozvržení vlnových štítků:** Nakonfigurujete nastavení řádků rozvržení vlnových štítků pro pracovní řádky namísto záznamů vlnových štítků. Nastavení řádků pro rozvržení štítků musíte nakonfigurovat pomocí tabulky **WHSWorkLine** místo tabulky **WHSWaveLabel**. Nastavení **Řádky na stránce** řídí počet řádků, které bude mít sekce text. 
 
 Tato konfigurace je také vhodná pro obchodní scénáře, kde je více různých položek zabaleno do jednoho označeného pole nebo do palety, a tento proces balení lze definovat vytvořením práce (například práce, která je seskupena podle zásilky).
 
@@ -330,36 +330,36 @@ Tento scénář ukazuje průběh toku.
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF** .
+Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF**.
 
 ### <a name="make-sure-that-the-wave-label-method-is-available"></a>Ujistěte se, že je k dispozici metoda popisku vlny
 
 Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou metodu tisku popisků vlny.
 
-1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny** .
+1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny**.
 1. Potvrďte, že **waveLabelPrinting** je v seznamu. Pokud není, vyberte **Obnovit metody** v podokně Akce, abyste ji přidali.
 
 ### <a name="set-up-a-wave-template"></a>Nastavení šablony vlny
 
 Šablony vln vám umožní propojit konkrétní příklady vlnových metod s odpovídající šablonou vlnových štítků.
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** .
-1. Vyberte šablonu, např. **Kontejnerizace 63** .
-1. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody** .
-1. V sloupci **Vybrané metody** vyberte metodu **Tisk popisků vlny** a nastavte její pole **Kód kroku vlny** na *PrintLabel* . Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+1. Vyberte šablonu, např. **Kontejnerizace 63**.
+1. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody**.
+1. V sloupci **Vybrané metody** vyberte metodu **Tisk popisků vlny** a nastavte její pole **Kód kroku vlny** na *PrintLabel*. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Vytvořte rozvržení vlnového štítku
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny**.
 1. Vytvořte záznam, který má následující nastavení:
 
     - **ID rozložení štítku:** *Kartón*
     - **Popis:** *Karton (SSCC)*
 
-1. V podokně akcí vyberte **Uložit** .
-1. V podokně Akce vyberte **Nastavení řádku popisku vlny** .
+1. V podokně akcí vyberte **Uložit**.
+1. V podokně Akce vyberte **Nastavení řádku popisku vlny**.
 
-    Zobrazí se stránka **Nastavení řádku popisku vlny** . Zde můžete nakonfigurovat dynamickou část štítku.
+    Zobrazí se stránka **Nastavení řádku popisku vlny**. Zde můžete nakonfigurovat dynamickou část štítku.
 
 1. Přidejte řádek, který má následující nastavení:
 
@@ -378,10 +378,10 @@ Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou meto
         Toto pole definuje počet řádků, které lze vytisknout na každý štítek.
 
         > [!NOTE]
-        > Toto nastavení vytiskne několik štítků ZPL na dílo, kde každá stránka pojme až pět pracovních řádků. Pokud je například štítek vytištěn pro kontejner, který má 12 řádků, vytisknou se tři štítky. Pokud chcete vytisknout samostatný štítek pro každý řádek výběru, nastavte tuto hodnotu na *1* .
+        > Toto nastavení vytiskne několik štítků ZPL na dílo, kde každá stránka pojme až pět pracovních řádků. Pokud je například štítek vytištěn pro kontejner, který má 12 řádků, vytisknou se tři štítky. Pokud chcete vytisknout samostatný štítek pro každý řádek výběru, nastavte tuto hodnotu na *1*.
 
 1. Zavřete stránku.
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Řádky práce*
@@ -389,9 +389,9 @@ Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou meto
     - **Pole:** *Typ práce*
     - **Kritéria:** *Výdej*
 
-1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky** .
+1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí** . V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -423,13 +423,13 @@ Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou meto
     ```
 
     > [!NOTE]
-    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4** .
+    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4**.
 
 Váš štítek je nyní připraven k použití.
 
 ### <a name="create-a-wave-label-template"></a>Vytvoření šablony vlnového štítku
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny**.
 1. Přidejte šsblonu úrovně vlnx a nastavte následující hodnoty v záhlaví:
 
     - **Název šablony štítku:** *Štítky kontejneru*
@@ -443,8 +443,8 @@ Váš štítek je nyní připraven k použití.
     - **Název tiskárny:** Vyberte vhodnou tiskárnu ZPL.
     - **Spustit dotaz:** *Ano* (Toto nastavení je volitelné, ale pro optimální výkon se doporučuje.)
 
-1. V podokně akcí vyberte **Uložit** .
-1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz** . Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
+1. V podokně akcí vyberte **Uložit**.
+1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz**. Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Dodávky*
     - **Odvozená tabulka:** *Dodávky*
@@ -459,7 +459,7 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Vytvořte prodejní objednávku a uvolněte ji do skladu
 
-1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky** .
+1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky**.
 1. Vytvořte prodejní objednávku, která má následující nastavení:
 
     - **Účet zákazníka:** *US-001*
@@ -495,17 +495,17 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
     > [!NOTE]
     > Položky a množství, které jsou zde uvedeny, jsou pouze příklady. Musí mít zásoby v určeném skladu.
 
-1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace** .
+1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace**.
 1. Na stránce **Rezervace** vyberte v podokně Akce možnost **Rezervovat šarži** a zavřete stránku.
 1. Opakujte kroky 4 a 5 pro každý další řádek prodejní objednávky.
-1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu** .
+1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu**.
 
     Dojde k následujícím událostem:
 
     - Systém zpracovává vytvořenou zásilku pomocí šablony, která zahrnuje krok tisku štítků. Rozvržení štítků se použije k definování formátu štítků a konečným výsledkem bude štítek, který má pět řádků a vytiskne se na tiskárně vybrané v šabloně štítků.
-    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18** . 
+    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18**. 
 
-Tyto štítky vln můžete znovu vytisknout tak, že přejdete na **Správa skladu \> Dotazy a sestavy \> Historie vlnových štítků** .
+Tyto štítky vln můžete znovu vytisknout tak, že přejdete na **Správa skladu \> Dotazy a sestavy \> Historie vlnových štítků**.
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Scénář 3: Tisk vlnových štítků pro vícevrstvé štítky
 
@@ -521,35 +521,35 @@ Tento scénář ukazuje průběh toku.
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF** .
+Pokud chcete provést tento scénář, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu **USMF**.
 
 ### <a name="set-up-a-wave-process-method"></a>Nastavení metody vlnového procesu
 
-1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny** .
+1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny**.
 1. Potvrďte, že **waveLabelPrinting** je v seznamu. Pokud není, vyberte **Obnovit metody** v podokně Akce, abyste ji přidali.
-1. Pro metodu **waveLabelPrinting** zaškrtněte **Zajistit opakovatelnost metody** .
+1. Pro metodu **waveLabelPrinting** zaškrtněte **Zajistit opakovatelnost metody**.
 
 ### <a name="set-up-a-wave-template"></a>Nastavení šablony vlny
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** .
-2. Vyberte šablonu, např. **Vychozí dodávka 62** .
-3. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody** .
-4. V sloupci **Vybrané metody** přiřaďte hodnotu **Kód kroku vlny** , například *Karton* , k metodě **Tisk štítků vlny** . Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+2. Vyberte šablonu, např. **Vychozí dodávka 62**.
+3. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody**.
+4. V sloupci **Vybrané metody** přiřaďte hodnotu **Kód kroku vlny** , například *Karton* , k metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 5. Přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody** podruhé.
-6. V sloupci **Vybrané metody** přiřaďte jinou hodnotu **Kód kroku vlny** , například *Paleta* , k druhé metodě **Tisk štítků vlny** . Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+6. V sloupci **Vybrané metody** přiřaďte jinou hodnotu **Kód kroku vlny** , například *Paleta* , k druhé metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Vytvořte tři rozvržení vlnového štítku
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Rozložení popisku vlny**.
 1. Vytvořte záznam, který má následující nastavení:
 
     - **ID rozložení štítku:** *Kartón*
     - **Popis:** *Karton (SSCC)*
 
-1. V podokně akcí vyberte **Uložit** .
-1. V podokně Akce vyberte **Nastavení řádku popisku vlny** .
+1. V podokně akcí vyberte **Uložit**.
+1. V podokně Akce vyberte **Nastavení řádku popisku vlny**.
 
-    Zobrazí se stránka **Nastavení řádku popisku vlny** . Zde můžete nakonfigurovat dynamickou část štítku.
+    Zobrazí se stránka **Nastavení řádku popisku vlny**. Zde můžete nakonfigurovat dynamickou část štítku.
 
 1. Přidejte řádek, který má následující nastavení:
 
@@ -571,7 +571,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
         > Toto nastavení způsobí, že se pro každý záznam v tabulce vlnových štítků vytiskne samostatný štítek ZPL.
 
 1. Zavřete stránku.
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Řádky práce*
@@ -581,9 +581,9 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
     Tento dotaz zajišťuje, že na štítek budou vytištěny pouze pracovní řádky typu pick, nikoli pracovní řádky typu put.
 
-1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky** . 
+1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**. 
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí** . V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
 
     ```plaintext
@@ -650,7 +650,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     ```
 
     > [!NOTE]
-    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4** .
+    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4**.
 
 1. První štítek je nyní připraven k použití.
 1. Vytvořte druhý záznam rozvržení, který má následující nastavení:
@@ -658,10 +658,10 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **ID rozložení štítku:** *Paleta*
     - **Popis:** *Paleta*
 
-1. V podokně akcí vyberte **Uložit** .
-1. V podokně Akce vyberte **Nastavení řádku popisku vlny** .
+1. V podokně akcí vyberte **Uložit**.
+1. V podokně Akce vyberte **Nastavení řádku popisku vlny**.
 
-    Zobrazí se stránka **Nastavení řádku popisku vlny** . Zde můžete nakonfigurovat dynamickou část štítku.
+    Zobrazí se stránka **Nastavení řádku popisku vlny**. Zde můžete nakonfigurovat dynamickou část štítku.
 
 1. Přidejte řádek, který má následující nastavení:
 
@@ -683,7 +683,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
         > Toto nastavení způsobí, že se pro každý záznam v tabulce vlnových štítků vytiskne samostatný štítek ZPL.
 
 1. Zavřete stránku.
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Řádky práce*
@@ -693,9 +693,9 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
     Tento dotaz zajišťuje, že na štítek budou vytištěny pouze pracovní řádky typu pick, nikoli pracovní řádky typu put.
 
-1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky** .
+1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí** . V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -724,7 +724,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     ```
 
     > [!NOTE]
-    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4** .
+    > Toto nastavení vytiskne jednu kopii každého štítku. Pokud potřebujete více kopií (například jednu kopii pro každou stranu palety), nastavte hodnotu **n** pro sekci **\^PQn** v zápatí na požadovaný počet kopií. Chcete-li například vytisknout čtyři kopie každého štítku, zadejte **\^PQ4**.
 
 1. Druhý štítek je nyní připraven k použití.
 1. Vytvořte třetí záznam rozvržení, který má následující nastavení:
@@ -732,8 +732,8 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **ID rozložení štítku:** *Přerušení*
     - **Popis:** *Štítek přerušení*
 
-1. V podokně akcí vyberte **Uložit** .
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí** . V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód ZPL pro požadovanou hlavičku. Následuje příklad.
+1. V podokně akcí vyberte **Uložit**.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód ZPL pro požadovanou hlavičku. Následuje příklad.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -742,7 +742,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     ^FO0,0 ^AT ^FD$WHSWorkLine.ShipmentId$ ^FS
     ```
 
-1. Tentokrát není nutný nžádný text. Proto jednoduše zadejte požadovaný text do **Sekce zápatí** . Následuje příklad.
+1. Tentokrát není nutný nžádný text. Proto jednoduše zadejte požadovaný text do **Sekce zápatí**. Následuje příklad.
 
     ```plaintext
     ^XZ
@@ -755,7 +755,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
 ### <a name="create-two-wave-label-types"></a>Vytvořte dva typy vlnového štítku
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Typy popisků vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Typy popisků vlny**.
 1. Vytvořte záznam, který má následující nastavení:
 
     - **Typ štítku:** *Karton*
@@ -768,14 +768,14 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
 ### <a name="set-up-unit-sequence-groups"></a>Nastavit skupiny klasifikace jednotek
 
-1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skupiny sekvenci jednotek** .
-1. Vyberte nebo vytvořte skupinu **Ea Box PL** .
-1. Pro řádek **Krabice** nastavte **Typ úrovně vlny** na *Kartón* .
-1. Pro řádek **PL** nastavte **Typ úrovně vlny** na *Paletu* .
+1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skupiny sekvenci jednotek**.
+1. Vyberte nebo vytvořte skupinu **Ea Box PL**.
+1. Pro řádek **Krabice** nastavte **Typ úrovně vlny** na *Kartón*.
+1. Pro řádek **PL** nastavte **Typ úrovně vlny** na *Paletu*.
 
 ### <a name="create-wave-label-templates"></a>Vytvoření šablon vlnového štítku
 
-1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny** .
+1. Přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Šablony popisku vlny**.
 1. Vytvořte šablonu popisku, která má následující nastavení:
 
     - **Název šablony štítku:** *Štítky kartonu*
@@ -783,15 +783,15 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **Kód kroku vlny:** *Karton*
     - **Sklad:** *62*
 
-1. Na záložce s náhledem **Obecné** v poli **Typ popisků vlny** vyberte hodnotu, např. *Karton* .
+1. Na záložce s náhledem **Obecné** v poli **Typ popisků vlny** vyberte hodnotu, např. *Karton*.
 1. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** přidejte řádek, který má následující nastavení:
 
     - **ID rozložení štítku:** *Kartón*
     - **Název tiskárny:** Vyberte vhodnou tiskárnu ZPL.
     - **Spustit dotaz:** *Ano* (Toto nastavení je volitelné, ale pro optimální výkon se doporučuje.)
 
-1. V podokně akcí vyberte **Uložit** .
-1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz** . Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
+1. V podokně akcí vyberte **Uložit**.
+1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz**. Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Dodávky*
     - **Odvozená tabulka:** *Dodávky*
@@ -816,20 +816,20 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **Směr hledání:** *Vzestupně*
 
 1. Vyberte **OK** a dialogové okno editor dotazu zavřete.
-1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano** .
-1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny** .
+1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano**.
+1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny**.
 1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky* , nastavte následující hodnoty:
 
     - **Tisk štítku přerušení:** Zaškrtněte toto políčko.
     - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení* , který jste vytvořili dříve v tomto scénáři.)
-    - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku** . Jsou však možné i jiné scénáře.)
+    - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku**. Jsou však možné i jiné scénáře.)
 
-1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku** .
+1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku**.
 
     > [!NOTE]
     > Toto nastavení vytvoří jednu sekvenci štítků („Karton 1 z X“) na řádek zatížení po celé vlně, bez ohledu na nastavení pracovní skupiny. Tuto sekvenci štítků lze vytisknout na rozvržení štítků. Štítky pro různé zásilky budou navíc odděleny vybraným štítkem přerušení.
 
-1. Vyberte **OK** , chcete-li zavřít dialogové okno **Skupina šablon popisku vlny** .
+1. Vyberte **OK** , chcete-li zavřít dialogové okno **Skupina šablon popisku vlny**.
 1. Vytvořte druhou šablonu popisku, která má následující nastavení:
 
     - **Název šablony štítku:** *Štítky palet*
@@ -837,15 +837,15 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **Kód kroku vlny:** *Paleta*
     - **Sklad:** *62*
 
-1. Na záložce s náhledem **Obecné** v poli **Typ popisků vlny** vyberte hodnotu, např. *Paleta* .
+1. Na záložce s náhledem **Obecné** v poli **Typ popisků vlny** vyberte hodnotu, např. *Paleta*.
 1. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** přidejte řádek, který má následující nastavení:
 
     - **ID rozložení štítku:** *Paleta*
     - **Název tiskárny:** Vyberte vhodnou tiskárnu ZPL.
     - **Spustit dotaz:** *Ano* (Toto nastavení je volitelné, ale pro optimální výkon se doporučuje.)
 
-1. V podokně akcí vyberte **Uložit** .
-1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz** . Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
+1. V podokně akcí vyberte **Uložit**.
+1. Volitelné: Pokud nastavujete design štítků specifických pro zákazníka, musíte vytvořit dotaz, abyste našli účet zákazníka. Na pevné záložce **Podrobnosti o šabloně vlnového štítku** vyberte **Upravit dotaz**. Pak v dialogovém okně Editor dotazů na kartě **Oblast** přidejte řádek, který má nasledující nastavení:
 
     - **Tabulka:** *Dodávky*
     - **Odvozená tabulka:** *Dodávky*
@@ -870,15 +870,15 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **Směr hledání:** *Vzestupně*
 
 1. Vyberte **OK** a dialogové okno editor dotazu zavřete.
-1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano** .
-1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny** .
+1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano**.
+1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny**.
 1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky* , nastavte následující hodnoty:
 
     - **Tisk štítku přerušení:** Zaškrtněte toto políčko.
     - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení* , který jste vytvořili dříve v tomto scénáři.)
-    - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku** . Jsou však možné i jiné scénáře.)
+    - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku**. Jsou však možné i jiné scénáře.)
 
-1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku** .
+1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku**.
 
     > [!NOTE]
     > Toto nastavení vytvoří jednu sekvenci štítků („Karton 1 z X“) na řádek zatížení po celé vlně, bez ohledu na nastavení pracovní skupiny. Tuto sekvenci štítků lze vytisknout na rozvržení štítků. Štítky pro různé zásilky budou navíc odděleny vybraným štítkem přerušení.
@@ -889,7 +889,7 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Vytvořte prodejní objednávku a uvolněte ji do skladu
 
-1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky** .
+1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky**.
 1. Vytvořte prodejní objednávku, která má následující nastavení:
 
     - **Účet zákazníka:** *US-001*
@@ -910,18 +910,18 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
         - **Jednotka:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > Položky a množství, které jsou zde uvedeny, jsou pouze příklady. Musí používat skupinu sekvencí jednotek, kterou jste definovali dříve, vhodné převody jednotek *ea* na *Box* na *PL* musí být pro ně definovány a musí mít zásoby ve skladu *62* . Další informace viz [Měrná jednotka a politika skladování](unit-measure-stocking-policies.md).
+    > Položky a množství, které jsou zde uvedeny, jsou pouze příklady. Musí používat skupinu sekvencí jednotek, kterou jste definovali dříve, vhodné převody jednotek *ea* na *Box* na *PL* musí být pro ně definovány a musí mít zásoby ve skladu *62*. Další informace viz [Měrná jednotka a politika skladování](unit-measure-stocking-policies.md).
 
-1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace** .
+1. Vyberte řádek prodejní objednávky 1. Pak v sekci **Řádek prodejní objednávky** v nabídce **Zásoby** vyberte možnost **Rezervace**.
 1. Na stránce **Rezervace** vyberte v podokně Akce možnost **Rezervovat šarži** a zavřete stránku.
 1. Opakujte kroky 4 a 5 pro řádek 2 prodejní objednávky.
-1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu** .
+1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu**.
 
     Dojde k následujícím událostem: 
 
     - Systém zpracovává vytvořenou zásilku pomocí šablony, která zahrnuje krok tisku štítků. Rozvržení štítků se použije k definování formátu štítků a výsledkem bude štítek, který se vytiskne na tiskárně vybrané v šabloně štítků.
     - Štítky vlny se generují a tisknou. Počet štítků se bude rovnat počtu kartonů (v tomto příkladu 376 štítků pro řádek 1, 322 štítků krabic pro řádek 2, 47 štítků palet pro řádek 1, 47 štítků PL pro řádek 2 a dva štítky přerušení, které mají ID zásilky).
-    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18** . 
+    - Pro zásilky je vygenerován nový přepravní doklad. Pokud jste nakonfigurovali rozšíření číselných sekvencí, budou ID popisků vlny sledovat formát čísla **SSCC-18**. 
 
 Štítky vln můžete zobrazit a znovu vytisknout z následujících stránek:
 

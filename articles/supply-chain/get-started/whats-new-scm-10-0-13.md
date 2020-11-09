@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 49b90037c182e10d0cc9d449649e8501537fdc4f
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802936"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012383"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.13. Tato verze má číslo sestavení 10.0.569 a je k dispozici následujícím způsobem:
+Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.13. Tato verze má číslo sestavení 10.0.569 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** srpen 2020
 - **Obecná dostupnost (automatická aktualizace):** září 2020
@@ -49,8 +49,6 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 - [Nové dimenze zásob pro sledování verze produktu a vylepšenou rozšiřitelnost](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Další informace naleznete v tématu [Dimenze produktu](../pim/product-dimensions.md).
 
 - [Rezervace potvrzená objednávkou na základě registračních značek](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Další informace naleznete v tématu [Flexibilní rezervace registrační značky](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
-
-- [Vizualizace odchozího pracovní vytížení](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
 - [Přehled řádku výdeje práce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 

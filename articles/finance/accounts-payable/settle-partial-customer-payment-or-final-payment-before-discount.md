@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176855"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006108"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
 
@@ -34,7 +34,7 @@ Tento článek popisuje scénáře, které zobrazují způsob záznamu částeč
 Fabrikam prodává zboží zákazníkovi 4028. Fabrikam nabízí platební slevu 1 %, pokud je faktura splacena do 14 dní. Faktury je nutné zaplatit do 30 dnů. Společnost Fabrikam nabízí také platební slevy pro částečné platby. Parametry vyrovnání se nacházejí na stránce **Parametry pohledávek**.
 
 ## <a name="customer-invoice"></a>Faktura odběratele
-25. června Arnold zadá a zaúčtuje fakturu na 1 000,00 pro zákazníka 4028. Arnold tyto transakce můžete zobrazit na stránce**Transakce odběratele**.
+25. června Arnold zadá a zaúčtuje fakturu na 1 000,00 pro zákazníka 4028. Arnold tyto transakce můžete zobrazit na stránce **Transakce odběratele**.
 
 | Doklad   | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek  | Měna |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -48,7 +48,7 @@ Na stránce **Odběratel** nebo **Transakce odběratele** Arnie může otevřít
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce** pro označenou fakturu.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 10,00     |
@@ -71,7 +71,7 @@ Zákazník 4028 odešle platbu za 500,00 1. června. Při zadávání této plat
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Částečná platba pomocí řádků deníku
-Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie může kliknout na **Řádky** a zadat platbu. Zobrazí se platební deník, kam může Arnold zadat řádek pro zákazníka 4028. Arnold otevře stránku **Vyrovnat transakce**, aby mohl označit fakturu k vyrovnání. Arnie označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **5,05**. Proto Arnie vyrovnává u této faktury částku 505,05.
+Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie může kliknout na **Řádky** a zadat platbu. Zobrazí se platební deník, kam může Arnold zadat řádek pro zákazníka 4028. Arnold otevře stránku **Vyrovnat transakce** , aby mohl označit fakturu k vyrovnání. Arnie označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **5,05**. Proto Arnie vyrovnává u této faktury částku 505,05.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -79,7 +79,7 @@ Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie m
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 10,00     |
@@ -95,7 +95,7 @@ Pokud si zákazník přeje vyrovnat přesně polovinu faktury, odešle platbu na
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 10,00     |
@@ -112,9 +112,9 @@ Arnie zavře stránku **Vyrovnat transakce**. Řádky plateb pro 495,00 se vytvo
 | SLEV-10010 |  Platební sleva   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Platba zbývající částky
-Odběratel 4028 zaplatí zbývající částku 495,00 dne 8. července, tedy v rámci období platební slevy. Arnie vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **5,00**, protože sleva 5,00 nebyla dříve využita.
+Odběratel 4028 zaplatí zbývající částku 495,00 dne 8. července, tedy v rámci období platební slevy. Arnie vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **5,00** , protože sleva 5,00 nebyla dříve využita.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Celkem označeno            | 495,00 |
 | Odhadovaná platební sleva | 5,00   |
@@ -127,7 +127,7 @@ Informace o označených transakcích se zobrazí v mřížce na stránce **Vyro
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 10,00     |

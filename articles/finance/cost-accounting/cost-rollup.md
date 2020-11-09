@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976372"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006159"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -76,7 +76,7 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 **Hierarchie dimenzí**
 
-|              | Rozsahy členu dimenze |                     |
+|    &nbsp;    | Rozsahy členu dimenze | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Uzly**        | **Od členu dimenze**   | **Po člen dimenze** |
 | Organizace |                         |                     |
@@ -97,7 +97,7 @@ Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit následují
 
 **Hierarchie dimenzí**
 
-|                         | Rozsahy členu dimenze |                     |
+|      &nbsp;             | Rozsahy členu dimenze |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Uzly                   | Od členu dimenze   | Po člen dimenze |
 | Výkaz zisků a ztrát |                         |                     |
@@ -105,7 +105,7 @@ Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit následují
 
 Po zpracování položky hlavní knihy vypadá položka zůstatku nákladů podle objektu nákladů takto.
 
-|                      | **Objekt nákladů** |           |           |           | **Celkem**     |
+|      &nbsp;          | **Objekt nákladů** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Celkem**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Prvek nákladů**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Elektřina** | 100,00          | 200,00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Pokud chcete zjistit, jaký je tok nákladů mezi nákladovými středisky v org
 
 Členy dimenze prvku nákladů můžete nastavit následujícím způsobem.
 
-| Prvky nákladů | Typ          |               |
+| Prvky nákladů | Typ          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1 001          | Elektrické energie   | Primární       |
 | 1 002          | Platy      | Primární       |
@@ -179,14 +179,14 @@ Hierarchie dimenzí **Výkaz zisků a ztrát** musí být aktualizována novými
 
 **Hierarchie dimenzí**
 
-|                         | Rozsahy členu dimenze |                     |
+|      &nbsp;             | Rozsahy členu dimenze |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Uzly                   | Od členu dimenze   | Po člen dimenze |
 | Výkaz zisků a ztrát |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Primární náklady                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundární náklady                         | **SC-CC001**            | **SC-CC004**        |
 
-Vytvořte **Zásady shrnutí nákladů** , kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární** .
+Vytvořte **Zásady shrnutí nákladů** , kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární**.
 
 **Zásady shrnutí nákladů**
 
@@ -211,7 +211,7 @@ Vytvořte **Zásady shrnutí nákladů** , kde je každé nákladové středisko
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Deník přidělení nákladů | Fiskální                 | 2017    | Období 1 | Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1 |
 
-Systém nyní použije **Zásady shrnutí nákladů** při vytváření **položek deníku pro zůstatek objektu nákladů** .
+Systém nyní použije **Zásady shrnutí nákladů** při vytváření **položek deníku pro zůstatek objektu nákladů**.
 
 **Položky deníku pro zůstatek objektu nákladů**
 
@@ -258,7 +258,7 @@ Hierarchie dimenzí umožňuje zobrazit data v různých úrovních agregace.
 
 Následuje příklad výkazu Power Pivot v aplikaci Excel.
 
-| **Výkaz zisků a ztrát** | **Objekt nákladů** |                |               |               |  **Celkem**    |
+| **Výkaz zisků a ztrát** | **Objekt nákladů** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Celkem**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primární náklady**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -272,11 +272,11 @@ Následuje příklad výkazu Power Pivot v aplikaci Excel.
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC004                             | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
 | **Celkem**                   | **0,00**        | **0,00**       | **31.082,75** | **15.717,25** | **46.800,00** |
 
-Pomocí **zásad shrnutí nákladů** a **prvků nákladů sekundárního typ** můžete ponechat primární náklady na objektu nákladů pro interní sestavy jako primární náklady, které zbývají po **výpočtu režijních nákladů** .
+Pomocí **zásad shrnutí nákladů** a **prvků nákladů sekundárního typ** můžete ponechat primární náklady na objektu nákladů pro interní sestavy jako primární náklady, které zbývají po **výpočtu režijních nákladů**.
 
 Pokud byste provedli stejný příklad bez vytvoření **zásad shrnutí nákladů** , výsledek vykazování by byl takový, jak je zobrazeno níže. Tok nákladů je správný, ale sledovatelnost a vhled do toku nákladů mezi nákladovými středisky se ztratí.
 
-| **Výkaz zisků a ztrát** | **Objekt nákladů** |           |               |               |          **Celkem**  |
+| **Výkaz zisků a ztrát** | **Objekt nákladů** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Celkem**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primární náklady**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

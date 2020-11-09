@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8352df2de5daf994895eb7ef40866490a7619652
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830493"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015980"
 ---
 # <a name="cycle-counting"></a>Cyklická inventura
 
@@ -110,7 +110,7 @@ Cyklickou inventuru lze vytvořit, pokud počet položek klesne pod určitou pra
 Plány cyklické inventury lze nastavit pro vytvoření páce cyklické inventury okamžitě nebo pravidelně. Nastavením plánů cyklické inventury můžete řídit fond práce, pro který je práce cyklické inventury vytvořena, maximální počet cyklických inventur, které jsou vytvořeny pro položky v různých místech, a počet dní před opětovnou inventurou skladového místa. Například položka je k dispozici ve třech umístěních ve skladu, a maximální počet cyklických inventur je nastaven na **2**. V takovém případě když spustíte plán cyklické inventury, vytvoří se dvě práce cyklické inventury pro dvě místa, ve kterých je položka přítomna. Například nastavíte počet dní mezi cyklickou inventurou na **5**. V takovém případě je vytvořena cyklická inventura každých 5 dní. Pokud je však práce cyklické inventury zpracovávána třetího dne, další práce cyklické inventury bude vytvořen pět dnů po zpracování poslední cyklické inventury, osmého dne.
 
 ## <a name="create-cycle-counting-work-manually"></a>Vytvoření cyklické inventury ručně
-Chcete-li vytvořit práci cyklické inventury ručně, můžete použít stránku **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**. Můžete určit maximální počet cyklických inventur, které lze vytvořit současně. Například pokud vedoucí skladu určí hodnotu **5**, cyklická inventura se vytvoří pro pět umístění i v případě, že se položka nachází v 10 místech. Můžete také vybrat ID fondu práce , do kterého můžete přiřadit ID vytvořené cyklické inventury. Po zpracování ID fondu práce v rámci cyklické inventury se ID cyklické inventury přiřazené k tomuto fondu práce zpracují jako skupina.
+Chcete-li vytvořit práci cyklické inventury ručně, můžete použít stránku **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**. Můžete určit maximální počet cyklických inventur, které lze vytvořit současně. Například pokud vedoucí skladu určí hodnotu **5** , cyklická inventura se vytvoří pro pět umístění i v případě, že se položka nachází v 10 místech. Můžete také vybrat ID fondu práce , do kterého můžete přiřadit ID vytvořené cyklické inventury. Po zpracování ID fondu práce v rámci cyklické inventury se ID cyklické inventury přiřazené k tomuto fondu práce zpracují jako skupina.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Provedení cyklické inventury pomocí mobilního zařízení
 Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace Supply Chain Management v mobilním zařízení:
@@ -118,7 +118,7 @@ Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace 
 -   **Řízené uživatelem** ─ pracovník může zadat ID cyklické inventury uvedené ve stavu **Otevřeno**.
 -   **Řízené systémem** ─ aplikace Supply Chain Management pracovníkovi přiřadí ID cyklické inventury.
 -   **Seskupení cyklické inventury** ─ pracovník může seskupit ID cyklické inventury specifické pro určité místo, zónu nebo fond práce.
--   **Místní cyklická inventura**: pracovník může provádět cyklickou inventuru v umístění ve skladu kdykoliv, aniž by vytvořil cyklickou inventuru. Pokud chcete provádět cyklickou inventuru v daném místě, pracovník musí zadat ID tohoto místa.
+-   **Místní cyklická inventura** : pracovník může provádět cyklickou inventuru v umístění ve skladu kdykoliv, aniž by vytvořil cyklickou inventuru. Pokud chcete provádět cyklickou inventuru v daném místě, pracovník musí zadat ID tohoto místa.
 
 Následující postup je uveden jako příklad způsobu provedení místní cyklické inventury pomocí mobilního zařízení. Pokyny, které pracovník uvidí v zařízení, se liší v závislosti na nastavení položky nabídky pro místní cyklickou inventuru.
 

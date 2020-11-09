@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence
+ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2997a39311e371443de3bc11ace17ab36be20e8
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383566"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016717"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Vytvoření procesu minimálního nebo maximálního doplňování
 
@@ -90,7 +90,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 9. Označte v seznamu vybraný řádek.
 10. V poli **Jednotka doplnění** zadejte nebo vyberte hodnotu. Vyberte například ks. Zadání tohoto nastavení je povinné. Umožňuje zadat jiné měrné jednotky pro doplnění ve srovnání s jednotkou zadanou pro minimální a maximální úroveň zásob v této šabloně.
 11. V poli **Šablona práce** zadejte nebo vyberte hodnotu. Vyberte šablonu práce, kterou jste vytvořili dříve.  
-12. V poli **Minimální množství** zadejte číslo. Výběr minimální množství, které spustí proces doplnění. Nastavte například hodnotu 50. Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost D**oplnit prázdná pevná skladová místa** nastavena na hodnotu „Ano“. Rovněž kvůli efektivitě doporučujeme vybrat možnost **Doplnit pouze pevná skladová místa**.
+12. V poli **Minimální množství** zadejte číslo. Výběr minimální množství, které spustí proces doplnění. Nastavte například hodnotu 50. Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost D **oplnit prázdná pevná skladová místa** nastavena na hodnotu „Ano“. Rovněž kvůli efektivitě doporučujeme vybrat možnost **Doplnit pouze pevná skladová místa**.
 13. V poli **Maximální množství** zadejte číslo. Nastavte například hodnotu 100.  
 14. V poli **Jednotka** zadejte nebo vyberte hodnotu. Přiřadíte jednotku pro minimální a maximální množství. Nastavte například ks.  
 15. Zaškrtněte políčko **Doplnit prázdná pevná skladová místa**. Zaškrtnutím tohoto políčka doplníte pevná skladovací místa, jsou-li prázdná. V opačném případě budou doplněna pouze místa, kde je množství na skladě.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 816bfc8b93f52fe91192874bcc1c8e605e41b582
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7091e8ba7940e358d77c69c63e26c8f3d9337713
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021837"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107249"
 ---
 # <a name="call-center-sales-functionality"></a>Funkce prodeje kontaktního střediska
 
@@ -35,7 +35,7 @@ V aplikaci Dynamics 365 Commerce je kontaktní středisko typu kanálu, který l
 
 Kontaktní středisko, které zahrnuje moderní ceny a promoakce, katalogy, dárkové poukazy, věrnostní programy a kupóny. Objednávky kontaktního střediska jsou rovněž využity aplikací pokladních míst (POS) na podporu scénáře splnění objednávky mezi více kanály.
 
-Je důležité poznamenat, zatímco modul kontaktního střediska lze využít v jiných odvětvích mimo Commerce, aktuální verze call centra aplikace  nebyla optimalizována pro použití ve zpracování – business-to-business (B2B) scénáři nebo scénáři, kde mají objednávky velký počet řádků prodeje. Doporučujeme, aby uživatelé, kteří chtějí využívat funkce call center pro zpracování objednávek mimo typické zpracování přímých transakcí zákazníka, vynaložili dostatečný čas na testování a ověření, že povolení funkce kontaktního střediska splní funkční požadavky a požadavky na výkon.
+Je důležité poznamenat, zatímco modul kontaktního střediska lze využít v jiných odvětvích mimo Commerce, aktuální verze call centra aplikace nebyla optimalizována pro použití ve zpracování – business-to-business (B2B) scénáři nebo scénáři, kde mají objednávky velký počet řádků prodeje. Doporučujeme, aby uživatelé, kteří chtějí využívat funkce call center pro zpracování objednávek mimo typické zpracování přímých transakcí zákazníka, vynaložili dostatečný čas na testování a ověření, že povolení funkce kontaktního střediska splní funkční požadavky a požadavky na výkon.
 
 Kromě podpory vytvoření objednávky modul kontaktního střediska také obsahuje praktickou aplikaci zákaznického servisu, která umožňuje uživatelům ověřit všechny příslušné zákaznické účty a zkontrolovat všechny související objednávky zákazníků a atributy. Servisní obrazovka odběratele je navržena tak, aby uživateli umožnila rychlý přístup k souvisejícím datům objednávky, která umožní odpovídat na nejčastější dotazy související s objednávkami přijatými od odběratelů.
 

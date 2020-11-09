@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207987"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018806"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
@@ -51,7 +51,7 @@ Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy s
 | Finalizováno       | Nákupní objednávka byla dokončena. Nyní je finančně uzavřena a nemůže již být změněna. | Ne                        |
 
 ## <a name="confirming-purchase-orders"></a>Potvrzení nákupních objednávek
-Nákupní objednávky, které mají stav schválení **Schváleno**, mohou projít dalšími kroky před jejich potvrzením. Například může být nutné odeslat dotaz na nákup dodavateli s dotazem na cenu, slevy nebo data dodání. V takovém případě můžete nastavit nákupní objednávku na stav **Na externí kontrole** pomocí akce **Nákupní dotaz**.
+Nákupní objednávky, které mají stav schválení **Schváleno** , mohou projít dalšími kroky před jejich potvrzením. Například může být nutné odeslat dotaz na nákup dodavateli s dotazem na cenu, slevy nebo data dodání. V takovém případě můžete nastavit nákupní objednávku na stav **Na externí kontrole** pomocí akce **Nákupní dotaz**.
 
 Dodavatelé, kteří jsou nastaveni pro použití portálu pro dodavatele, mohou kontrolovat objednávky z portálu, a zde je také schválit nebo zamítnout. Během tohoto procesu kontroly mají nákupní objednávky stav **Na externí kontrole**. Je možné nakonfigurovat portál pro dodavatele tak, aby potvrzení od dodavatele automaticky potvrdilo objednávku v aplikaci Supply Chain Management. Případně můžete ručně ověřit nákupní objednávku po obdržení potvrzení od dodavatele. Jestliže dodavatel odmítne nákupní objednávku, odmítnutí je přijato společně s důvodem zamítnutí a návrhy na změny. V tomto případě zůstává stav nákupní objednávky **Na externí kontrole**.
 
@@ -67,7 +67,7 @@ Dodavatel může požádat o nějaký typ záruky toho, že bude odeslána platb
 ## <a name="changing-purchase-orders"></a>Změna nákupních objednávek
 V některých případech může být nutné změnit nákupní objednávku poté, co dosáhne stavu schválení **Schváleno** nebo **Potvrzeno**.
 
-Pokud byla nákupní objednávka vytvořena pomocí procesu řízení změn, můžete provádět změny vyvoláním objednávky, nebo pokud objednávka již byla schválena, tak pomocí akce **Požadavek na změnu**. V takovém případě je stav schválení upraven zpět na **Návrh**, a vy pak můžete změnit pořadí. Po provedení změn bude pravděpodobně nutné předložit nákupní objednávku k opětovnému schválení. Můžete nakonfigurovat typy změn, které vyžadují opětovné schválení, pomocí pravidla zásad **Pravidlo opětovného schválení pro nákupní objednávky** na stránce **Zásady nákupu**.
+Pokud byla nákupní objednávka vytvořena pomocí procesu řízení změn, můžete provádět změny vyvoláním objednávky, nebo pokud objednávka již byla schválena, tak pomocí akce **Požadavek na změnu**. V takovém případě je stav schválení upraven zpět na **Návrh** , a vy pak můžete změnit pořadí. Po provedení změn bude pravděpodobně nutné předložit nákupní objednávku k opětovnému schválení. Můžete nakonfigurovat typy změn, které vyžadují opětovné schválení, pomocí pravidla zásad **Pravidlo opětovného schválení pro nákupní objednávky** na stránce **Zásady nákupu**.
 
 Pokud byla dodána část objednaného množství pro řádek nákupní objednávky, nelze již objednané množství změnit, když je nákupní objednávka ve stavu **Koncept**. Můžete však změnit množství **zbývající dodávky** na řádku pro nákupní objednávku ve stavu **koncept**.
 
@@ -80,7 +80,7 @@ Nákupní objednávku lze zrušit pomocí akce **Storno** v záhlaví.
 
 Pokud bylo množství částečně registrováno, přijato nebo fakturováno, můžete zrušit pouze zbývající množství, které nebylo zaregistrováno, přijato nebo fakturováno. Objednané množství se pak sníží odpovídajícím způsobem. Po aktualizaci množství na řádku se také aktualizuje stav řádku. Původní množství na řádku je například 5 a je přijato množství 3. V takovém případě lze zrušit pouze dvě. Řádek bude poté aktualizován na stav **Přijato**.
 
-Pokud je do řádku objednávky přidán zůstatek k dodání, který překračuje množství na řádku objednávky, akce **stornování** neodstraní nadbytečné množství. Místo toho zůstane řádek ve stavu **Otevřená objednávka**, protože má zbývající množství. Původní množství na řádku je například 5 a zbývající část dodávky je 7. Pokud je objednávka zrušena, pět se zruší a množství 2 zůstane, jak lze zobrazit ve skladových transakcích.
+Pokud je do řádku objednávky přidán zůstatek k dodání, který překračuje množství na řádku objednávky, akce **stornování** neodstraní nadbytečné množství. Místo toho zůstane řádek ve stavu **Otevřená objednávka** , protože má zbývající množství. Původní množství na řádku je například 5 a zbývající část dodávky je 7. Pokud je objednávka zrušena, pět se zruší a množství 2 zůstane, jak lze zobrazit ve skladových transakcích.
 
 Chcete-li zrušit celé množství na řádku NO, zrušte v řádku zbývající množství dodání. Řádek bude poté aktualizován na stav **Zrušeno**.
 

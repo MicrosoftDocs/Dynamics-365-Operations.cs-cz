@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533314"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107223"
 ---
 # <a name="set-up-an-online-channel"></a>Nastavení online kanálu
 
@@ -72,11 +72,11 @@ Pokud váš web e-Commerce bude podporovat více jazyků, rozbalte část **Jazy
 
 V části **Platební účet** můžete přidat poskytovatele plateb třetí strany. Informace o nastavení platebního konektoru Adyen naleznete v tématu [Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md).
 
-## <a name="additional-channel-set-up"></a>Nastavení dodatečného kanálu
+## <a name="additional-channel-setup"></a>Nastavení dodatečného kanálu
 
 Další úkoly požadované pro nastavení online kanálu zahrnují nastavení způsobů plateb, způsobů dodání a přiřazení skupiny plnění.
 
-Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek**, **Způsobů platby** a **Přiřazení skupiny plnění** na kartě **Nastavení**.
+Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek** , **Způsobů platby** a **Přiřazení skupiny plnění** na kartě **Nastavení**.
 
 ![Další akce nastavení online kanálu](media/channel-setup-online-3.png)
 
@@ -103,7 +103,7 @@ Chcete-li změnit nebo přidat způsob dodání, postupujte podle následující
 
 1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
 1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
-1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek** , chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 

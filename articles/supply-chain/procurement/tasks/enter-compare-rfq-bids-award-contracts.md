@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fbbae2f097f812e1eefd8a095d72aa1c284c757
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ae7c43516fc90224439f6f7cfd5fd0a6058e8b39
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207641"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018415"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
@@ -47,14 +47,14 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 10. Chcete-li zobrazit rozšířené informace o řádku, vyberte záložku s náhledem **Podrobnosti řádku**.
 11. Vyberte **Resetovat z požadavku na nabídku** pouze v případě, že je nutné obnovit hodnoty zadané do původních hodnot požadavku na nabídku.
 12. Nabídku můžete kdykoli uložit a později provést další zpracování za předpokladu, že nevypršelo datum a čas platnosti. V takovém případě můžete najít nabídku v seznamu **Probíhající nabídky** v pracovním prostoru **Nabídky dodavatele**.
-13. Jakmile je nabídka připravena k odeslání, vyberte možnost **Odeslat.** Vyberte **Odmítnout**, pokud se nechcete nabídky účastnit. Odeslané nabídky jsou k dispozici v seznamu **Odeslané nabídky** v pracovním prostoru **Nabídky dodavatele**.  
+13. Jakmile je nabídka připravena k odeslání, vyberte možnost **Odeslat.** Vyberte **Odmítnout** , pokud se nechcete nabídky účastnit. Odeslané nabídky jsou k dispozici v seznamu **Odeslané nabídky** v pracovním prostoru **Nabídky dodavatele**.  
 14. Po odeslání nabídky ji lze kdykoli znovu vyvolat před datem a časem vypršení platnosti. Všimněte si, že když je nabídka odvolána, není považována za odeslanou. Když je nabídka akceptována nebo zamítnuta oddělením zásobování, objeví se buď v seznamu **Přidělené nabídky** nebo **Ztracené nabídky** v pracovním prostoru **Nabídky dodavatele**.  
 
 ## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Zadání odpovědi od dodavatele jako nákupčího
 
 1. Zkontrolujte, zda je nastaveno oprávnění k úpravám nabídek dodavatelů. Přejděte na **Zásobování a zdroje \> Nastavení \> Parametry modulu Zásobování a zdroje**. Na kartě **Požadavky na nabídky** nastavte možnost **Nákupčí může upravit nabídku dodavatelů** na **Ano**.
 2. Přejděte na **Zásobování a zdroje \> Požadavky na nabídky \> Všechny požadavky na nabídky**.
-3. Vyberte požadavek na nabídku, který má stav **Odesláno**, a zvolte odkaz v poli **Případ požadavku na nabídku**.
+3. Vyberte požadavek na nabídku, který má stav **Odesláno** , a zvolte odkaz v poli **Případ požadavku na nabídku**.
 4. Zvolte **Spravovat odpovědi**. Zobrazí se stránka požadavku na nabídku pro každého dodavatele, který byl pozván k nabídce.
 5. Vyberte požadavek na nabídku, na který nebylo odpovězeno. (Pole **Průběh odpovědi** by mělo být nastaveno na **Nezahájeno**.)
 6. Vyberte **Upravit \> Upravit odpověď na požadavek na nabídku**. Zobrazí se stránka **Odpověď na požadavek na nabídku**. Jako nákupčí můžete nyní zadat odpověď jménem dodavatele. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Nákupčí aktualizuje**.  
@@ -65,7 +65,7 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 1. Na stránce **Všechny požadavky na nabídky** vyberte případ požadavku na nabídku, pro který chcete vyhodnotit odpovědi.
 2. Zvolte **Spravovat odpovědi**.
 3. Vyberte odpověď na skóre.
-4. Vyberte **Záhlaví**, aby bylo možné zobrazit hodnocení nabídky.
+4. Vyberte **Záhlaví** , aby bylo možné zobrazit hodnocení nabídky.
 5. Na záložce s náhledem **Hodnocení nabídky** zadejte číslo do pole **Skóre** pro jedno z kritérií hodnocení. Pokud umístíte kurzor myši na jedno z kritérií hodnocení, zobrazí se popisek pole s požadovaným rozsahem skóre. V této ukázce můžete zadat číslo v rozmezí 1 až 5 pro libovolné kritérium hodnocení.  
 6. Zopakujte krok 5 pro jiné kritérium hodnocení.
 7. Má-li případ požadavku na nabídku dotazník, který byl odeslán dodavatelům, můžete zadat odpovědi dodavatele na záložce s náhledem **Dotazník**.
@@ -97,7 +97,7 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 
 ## <a name="accept-a-bid"></a>Přijetí nabídky
 
-1. Vyberte nabídku, kterou chcete přijmout, a zvolte odkaz v poli **Požadavek na nabídku**. Pokud se nacházíte na stránce **Porovnat odpovědi na požadavky na nabídku**, je zvýrazněná nabídka tou nabídkou, kterou systém bude při akci přijetí brát v úvahu. Řádky lze přijímat pouze z jedné nabídky najednou.  
+1. Vyberte nabídku, kterou chcete přijmout, a zvolte odkaz v poli **Požadavek na nabídku**. Pokud se nacházíte na stránce **Porovnat odpovědi na požadavky na nabídku** , je zvýrazněná nabídka tou nabídkou, kterou systém bude při akci přijetí brát v úvahu. Řádky lze přijímat pouze z jedné nabídky najednou.  
 2. V podokně akcí zvolte **Odpovědět**.
 3. Zvolte **Přijmout**. Pokud jste označili pouze určité řádky, bude akce přijetí zahrnovat pouze tyto řádky. Pokud chcete přijmout všechny řádky v nabídce, řádky nemusíte označit.  
 4. Vyberte **Parametry** a pak v poli **Důvod přijetí** zadejte nebo vyberte důvod přijetí nabídky. Důvod je uložen v nabídce.  

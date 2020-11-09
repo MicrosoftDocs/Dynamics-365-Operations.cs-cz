@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate
+ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3bc82c3af2b99303a650f672f2b2ccd48c9889a9
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fb47498cfb3756b0e180fe9e5500255c7312a92
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677427"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016325"
 ---
 # <a name="advanced-load-building-during-wave"></a>Rozšířené sestavení nákladu během vlny
 
@@ -33,8 +33,8 @@ Během zpracování vlny systém obvykle vytvoří nový náklad pro každou dod
 
 Chcete-li používat tuto funkci, musíte systém nastavit takto:
 
-- Vytvořte *šablony vlny*, které zahrnují novou metodu **buildLoads**. Tato metoda zpřístupňuje rozšířené sestavení nákladu během vlny pro vlny, které tyto šablony využívají.
-- Vytvořte *šablony sestavení nákladu*, každou je třeba propojit s konkrétní šablonou vlny a metodou. Šablony sestavení nákladu řídí, ke kterému nákladu (existujícímu nebo novému) budou přidány řádky nákladu, které jsou zařazovány do vlny. Zásady můžete spojovat nebo rozdělovat dodávky na základě kritérií jako šablona nákladu, vybavení a dalších hodnot polí na řádku nákladu.
+- Vytvořte *šablony vlny* , které zahrnují novou metodu **buildLoads**. Tato metoda zpřístupňuje rozšířené sestavení nákladu během vlny pro vlny, které tyto šablony využívají.
+- Vytvořte *šablony sestavení nákladu* , každou je třeba propojit s konkrétní šablonou vlny a metodou. Šablony sestavení nákladu řídí, ke kterému nákladu (existujícímu nebo novému) budou přidány řádky nákladu, které jsou zařazovány do vlny. Zásady můžete spojovat nebo rozdělovat dodávky na základě kritérií jako šablona nákladu, vybavení a dalších hodnot polí na řádku nákladu.
 - Definujte *skupiny pro spojování nákladů*. S jejich pomocí můžete určovat, které položky lze, případně nelze kombinovat v jednom nákladu. Můžete také určit, zda má omezení vyvolat varování nebo chybu případně zda se má vyhodnocovat objemové omezení šablony nákladu.
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>Zapnutí funkce Rozšířené sestavení nákladu během vlny v systému
@@ -59,7 +59,7 @@ Tuto ukázku můžete také použít jako vodítko pro použití této funkce p�
 
 ### <a name="make-sure-that-the-scenario-setup-includes-enough-available-inventory"></a>Ujistěte se, že nastavení scénáře obsahuje dostatečné dostupné zásoby
 
-Pokud pracujete s ukázkovými daty **USMF**, musíte se nejprve ujistit, že je váš systém nastaven tak, aby na každém relevantním skladovém místě bylo k dispozici dost zásob. V rámci této ukázky se očekává, že jsou následující zásoby k dispozici ve skladu *62*:
+Pokud pracujete s ukázkovými daty **USMF** , musíte se nejprve ujistit, že je váš systém nastaven tak, aby na každém relevantním skladovém místě bylo k dispozici dost zásob. V rámci této ukázky se očekává, že jsou následující zásoby k dispozici ve skladu *62* :
 
 - **Položka A0001:** 10 ks
 - **Položka A0002:** 10 ks
@@ -116,10 +116,10 @@ Položka **M9200** musí být do skladu přidána. Pro přidání zásob polože
 
 ### <a name="regenerate-wave-process-methods"></a>Obnova metod zpracování vln
 
-Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou metodu sestavení nákladu (**buildLoads**).
+Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou metodu sestavení nákladu ( **buildLoads** ).
 
 1. Přejděte do **Řízení skladu** \> **Nastavení** \> **Vlny** \> **Metody zpracování vlny**.
-2. Ověřte, že je metoda **buildLoads** v seznamu. Pokud není, vyberte v podokně Akce příkaz **Obnovit metody**, abyste ji přidali.
+2. Ověřte, že je metoda **buildLoads** v seznamu. Pokud není, vyberte v podokně Akce příkaz **Obnovit metody** , abyste ji přidali.
 
 ### <a name="set-up-wave-templates"></a>Nastavení šablon vlny
 
@@ -128,12 +128,12 @@ Chcete-li využít výhody rozšířeného sestavení nákladu během vlny, mus�
 1. Přejděte do **Řízení skladu** \> **Nastavení** \> **Vlny** \> **Šablony vlny**.
 1. Vyberte šablonu vlny.
 
-    Pokud pracujete s ukázkovými daty **USMF**, vyberte šablonu **Výchozí expedice 62**.
+    Pokud pracujete s ukázkovými daty **USMF** , vyberte šablonu **Výchozí expedice 62**.
 
-1. V podokně Akce vyberte možnost **Upravit**, tím přepnete stránku režimu úprav.
+1. V podokně Akce vyberte možnost **Upravit** , tím přepnete stránku režimu úprav.
 1. Na záložce s náhledem **Metody** v mřížce **Zbývající metody** vyberte metodu **buildLoads**.
 1. Tlačítkem s šipkou doprava přesuňte metodu **buildLoads** do mřížky **Vybrané metody**.
-1. Chcete-li metodě **buildLoads** přiřadit hodnotu **Kód kroku vlny**, musíte příslušný kód nejprve vytvořit na stránce **Kódy kroků vlny**. Můžete použít libovolnou hodnotu, kterou chcete, ale nezapomeňte si ji poznamenat, protože ji budete později potřebovat znát. Podle následujícího postupu vytvořte kód **WSC2112**:
+1. Chcete-li metodě **buildLoads** přiřadit hodnotu **Kód kroku vlny** , musíte příslušný kód nejprve vytvořit na stránce **Kódy kroků vlny**. Můžete použít libovolnou hodnotu, kterou chcete, ale nezapomeňte si ji poznamenat, protože ji budete později potřebovat znát. Podle následujícího postupu vytvořte kód **WSC2112** :
 
     1. V řádku metody **buildLoads** klikněte pravým tlačítkem myši na šipku dolů v poli **Kód kroku vlny** a vyberte možnost **Zobrazit podrobnosti**.
     1. Na stránce **Kódy kroků vlny** v podokně Akce vyberte **Nový**.
@@ -142,7 +142,7 @@ Chcete-li využít výhody rozšířeného sestavení nákladu během vlny, mus�
     1. V poli **Typ kroku vlny** vyberte hodnotu *Sestavení nákladu*.
 
 1. Zvolte **Uložit** a zavřete stránku.
-1. V řádku metody **buildLoads** v poli **Kód kroku vlny** vyberte právě vytvořený kód (**WSC2112**).
+1. V řádku metody **buildLoads** v poli **Kód kroku vlny** vyberte právě vytvořený kód ( **WSC2112** ).
 1. V podokně akcí vyberte **Uložit**.
 
 > [!NOTE]
@@ -160,7 +160,7 @@ Skupiny pro spojování nákladů určují pravidla pro typy položek, jež lze 
 1. V podokně Akce vyberte možnost **Nová** a vytvořte novou skupinu nákladů.
 1. V poli **ID skupiny pro spojování nákladů** zadejte název nové skupiny.
 
-    Pokud pracujete s ukázkovými daty **USMF**, nastavte následující hodnoty:
+    Pokud pracujete s ukázkovými daty **USMF** , nastavte následující hodnoty:
 
     - **ID skupiny pro spojování nákladů:** *TV*
     - **Popis:** *TV*
@@ -169,20 +169,20 @@ Skupiny pro spojování nákladů určují pravidla pro typy položek, jež lze 
 1. Na záložce s náhledem **Kritéria skupiny pro spojování nákladů** přidejte nový řádek mřížky kliknutím na **Nový**.
 1. V novém řádku nastavte ve všech polích požadované hodnoty. Tyto hodnoty určují skupiny položek, které budou zvažovány pro účely spojování nákladů.
 
-    Pokud pracujete s ukázkovými daty **USMF**, vyberte *TV a video* v poli **Skupina položek**.
+    Pokud pracujete s ukázkovými daty **USMF** , vyberte *TV a video* v poli **Skupina položek**.
 
 1. V podokně Akce vyberte možnost **Uložit**. Tím se zpřístupní záložka s náhledem **Omezení skupiny pro spojování nákladů**.
 1. Na záložce s náhledem **Omezení skupiny pro spojování nákladů** přidejte nový řádek mřížky kliknutím na **Nový**.
 1. V novém řádku nastavte ve všech polích požadované hodnoty.
 
-    Pokud pracujete s ukázkovými daty **USMF**, nastavte následující hodnoty:
+    Pokud pracujete s ukázkovými daty **USMF** , nastavte následující hodnoty:
 
     - **Skupina položek:** *CarAudio*
     - **Akce při sestavování nákladu:** *Omezit* (Tato hodnota zabrání, aby byly položky patřící do skupiny položek **CarAudio** umístěny do stejného nákladu jako položky ze skupiny položek **TV a video**.)
 
 1. Pokračujte v práci s pravidly, dokud nepřidáte všechna kritéria a omezení, jež pro skupinu pro spojování nákladů potřebujete.
 
-Pokud pracujete s ukázkovými daty **USMF**, máte nyní nastavení hotové.
+Pokud pracujete s ukázkovými daty **USMF** , máte nyní nastavení hotové.
 
 ### <a name="set-up-load-build-templates"></a>Nastavení šablon sestavení nákladu
 
@@ -196,14 +196,14 @@ Můžete nastavit tolik šablon sestavení nákladu, kolik potřebujete. Chcete-
     |---|---|---|
     | Pořadové číslo | Pořadí, v jakém bude šablona vyhodnocována. | *1* |
     | Název šablony sestavení vytížení | Zadejte jedinečný identifikátor šablony sestavení nákladu. V tomto nastavení byste měli zadat název šablony, kterou jste předtím vytvořili nebo aktualizovali. | *Výchozí expedice 62* |
-    | Kód kroku vlny | Zadejte kód kroku vlny k použití pro účely propojení šablony s metodou vlny. Měli byste zadat kód, který jste vybrali pro metodu **buildLoads**, když jste při tomto nastavování předtím vytvářeli šablonu vlny. | *WSC2112* |
+    | Kód kroku vlny | Zadejte kód kroku vlny k použití pro účely propojení šablony s metodou vlny. Měli byste zadat kód, který jste vybrali pro metodu **buildLoads** , když jste při tomto nastavování předtím vytvářeli šablonu vlny. | *WSC2112* |
     | ID šablony nákladu | Vyberte šablonu nákladu, která se má použít, když se vytvářejí nové náklady, proti které se má párovat při přiřazování ke stávajícím nákladům. Šablona nákladu definuje maximální přípustnou hmotnost a objem celého nákladu. | *Stand. šablona nákladu* |
     | Vybavení | Vybavení, proti kterému má být dosažena shoda při přiřazení ke stávajícím nákladům a pro zadání nových vytvářených nákladů. | Pole ponechejte prázdné. |
     | ID skupiny kombinace vytížení | Vyberte skupinu pro spojování nákladů, jež se má použít, pokud je položka v nákladu povolena. Skupina pro spojování určuje pravidla pro typy položek, jež lze kombinovat do jednoho nákladu. Měli byste vybrat jednu ze skupin pro spojování, které jste vytvořili dříve během tohoto nastavování. | *TV* |
     | Použít otevřená vytížení | Vyberte, zda mají být přidány stávající otevřené náklady. Existují tyto možnosti:<ul><li>**Žádný** – nepřidávat žádné otevřené náklady ke stávajícím nákladům.</li><li>**Jakýkoli** – přidávat otevřené náklady ke stávajícím nákladům, jež jsou pro daný řádek platné.</li><li>**Přiřazený** – přidat otevřené náklady k nákladu, který je přiřazen k vlně.</li></ul> | *Libovolná* |
-    | Vytvořit vytížení | Určete, zda by měly být vytvořeny nové náklady, pokud žádné stávající náklady nesplňují zadaná kritéria. | Vybráno (= *Ano*) |
-    | Povolit dělení řádků dodávky | Určete, zda může být řádek nákladu dělen na více nákladů, pokud úplný řádek překračuje maximální kapacitu šablony nákladu. | Nezaškrtnuto (= *Ne*) |
-    | Ověřit objem | Určete, zda by sestavení nákladu mělo kontrolovat hmotnost při přidání každého řádku nákladu, aby bylo zajištěno, že budou dodrženy volumetrické limity šablony nákladu. | Nezaškrtnuto (= *Ne*) |
+    | Vytvořit vytížení | Určete, zda by měly být vytvořeny nové náklady, pokud žádné stávající náklady nesplňují zadaná kritéria. | Vybráno (= *Ano* ) |
+    | Povolit dělení řádků dodávky | Určete, zda může být řádek nákladu dělen na více nákladů, pokud úplný řádek překračuje maximální kapacitu šablony nákladu. | Nezaškrtnuto (= *Ne* ) |
+    | Ověřit objem | Určete, zda by sestavení nákladu mělo kontrolovat hmotnost při přidání každého řádku nákladu, aby bylo zajištěno, že budou dodrženy volumetrické limity šablony nákladu. | Nezaškrtnuto (= *Ne* ) |
 
 1. V podokně Akce zvolte možnost **Uložit**. Tím se zpřístupní možnost **Upravit dotaz**.
 1. V podokně Akce zvolte **Upravit dotaz** a otevřete dialogové okno pro editaci dotazu.
@@ -215,8 +215,8 @@ Můžete nastavit tolik šablon sestavení nákladu, kolik potřebujete. Chcete-
     - **Pole:** *Číslo objednávky*
     - **Směr hledání:** *Vzestupně*
 
-1. Stiskněte **OK**, uložte změny a zavřete dialogové okno.
-1. Na záložce s náhledem **Dělit podle** nastavte pravidla řídící, jak budou náklady děleny. Obvykle můžete dělit podle vlastních polí, jež platí pro řádek nákladu, například **Trasa**, **Prohlídka** nebo **Spuštění**. Chcete-li například vytvořit jeden náklad na číslo objednávky, zaškrtněte políčko **Dělit podle** u řádku, v němž jsou následující hodnoty:
+1. Stiskněte **OK** , uložte změny a zavřete dialogové okno.
+1. Na záložce s náhledem **Dělit podle** nastavte pravidla řídící, jak budou náklady děleny. Obvykle můžete dělit podle vlastních polí, jež platí pro řádek nákladu, například **Trasa** , **Prohlídka** nebo **Spuštění**. Chcete-li například vytvořit jeden náklad na číslo objednávky, zaškrtněte políčko **Dělit podle** u řádku, v němž jsou následující hodnoty:
 
     - **Název referenční tabulky:** *Podrobnosti nákladu*
     - **Název referenčního pole:** *Číslo objednávky*
@@ -234,19 +234,19 @@ Tento scénář ukazuje, jak nastavení, jež bylo popsáno výše v tomto tém
     - Na záložce s náhledem **Odběratel** zadejte do pole **Účet odběratele** hodnotu *US-007*.
     - Na záložce s náhledem **Obecné** zadejte do pole **Sklad** hodnotu *62*.
 
-1. Vyberte **OK**, prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK** , prodejní objednávka se vytvoří a dialogové okno se zavře.
 1. Otevře se nová prodejní objednávka. Měla by obsahovat nový prázdný řádek v mřížce na záložce s náhledem **Řádky prodejní objednávky**. Na tomto novém řádku nastavte v poli **Číslo položky** hodnotu *A0001* a v poli **Množství** hodnotu *1*.
 1. V nabídce **Zásoby** nad mřížkou vyberte možnost **Rezervace**.
 1. Na stránce **Rezervace** vyberte v podokně Akce možnost **Rezervovat šarži**.
-1. Chcete-li se vrátit na prodejní objednávku, zavřete stránku kliknutím na tlačítko **Zavřít** (**X**) v pravém horním rohu stránky.
+1. Chcete-li se vrátit na prodejní objednávku, zavřete stránku kliknutím na tlačítko **Zavřít** ( **X** ) v pravém horním rohu stránky.
 1. V podokně akcí na kartě **Sklad** ve skupině **Akce** vyberte možnost **Uvolnit do skladu.** Systém vytvoří dodávku a přidá ji k novému nákladu, protože žádný stávající náklad neobsahuje řádky nákladu s tímto číslem objednávky.
 
     Zobrazí se informační zprávy určující práci, vlnu a dodávku, jež byly vytvořeny pro tuto objednávku.
 
-1. Chcete-li potvrdit údaje o nákladu, dodávce a práci z řádku prodejní objednávky, vyberte řádek a poté v nabídce **Sklad** nad mřížkou vyberte **Podrobnosti nákladu**, **Podrobnosti dodávky** nebo **Podrobnosti práce**.
+1. Chcete-li potvrdit údaje o nákladu, dodávce a práci z řádku prodejní objednávky, vyberte řádek a poté v nabídce **Sklad** nad mřížkou vyberte **Podrobnosti nákladu** , **Podrobnosti dodávky** nebo **Podrobnosti práce**.
 1. V prodejní objednávce, kterou jste právě vytvořili, vyberte na záložce s náhledem **Řádky prodejní objednávky** možnost **Přidat řádek**. Přidá se další řádek.
 1. Na novém řádku nastavte v poli **Číslo položky** hodnotu *A0002* a v poli **Množství** hodnotu *1*.
 1. Opakujte kroky 6 až 9, až provedete rezervaci řádku a uvolněte jej do skladu. Systém vytvoří **novou** dodávku pro přidaný řádek. Protože však používáte rozšířené sestavení nákladu během vlny, přidá systém tuto dodávku a řádek nákladu k existující vlně. Pokud byste nepoužívali rozšířené sestavení nákladu během vlny, systém by pro zásilku vytvořil nový náklad.
 1. V prodejní objednávce, kterou jste právě vytvořili, vyberte na záložce s náhledem **Řádky prodejní objednávky** možnost **Přidat řádek**. Přidá se další řádek.
 1. Na novém řádku nastavte v poli **Číslo položky** hodnotu *M9200* a v poli **Množství** hodnotu *1*.
-1. Opakujte kroky 6 až 9, až provedete rezervaci řádku a uvolněte jej do skladu. Stejně jako předtím, vytvoří systém **novou** dodávku pro přidaný řádek. Protože je však položka ze skupiny položek **CarAudio**, **neprojde přes omezení, která jste nastavili pro skupinu pro spojování nákladů**. Proto se **přidá do nového nákladu**. Pokud jste nezadali skupinu pro spojování nákladů v šabloně sestavení nákladu, byla by tato dodávka přidána k prvnímu nákladu.
+1. Opakujte kroky 6 až 9, až provedete rezervaci řádku a uvolněte jej do skladu. Stejně jako předtím, vytvoří systém **novou** dodávku pro přidaný řádek. Protože je však položka ze skupiny položek **CarAudio** , **neprojde přes omezení, která jste nastavili pro skupinu pro spojování nákladů**. Proto se **přidá do nového nákladu**. Pokud jste nezadali skupinu pro spojování nákladů v šabloně sestavení nákladu, byla by tato dodávka přidána k prvnímu nákladu.

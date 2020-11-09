@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: 46a6ed9763781de8e05cff7adadf75fe2a931fdc
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728406"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997519"
 ---
 # <a name="company-concept-in-common-data-service"></a>Koncept společnosti v Common Data Service
 
@@ -33,7 +32,7 @@ ms.locfileid: "3728406"
 
 Koncept *společnosti* v Finance and Operations je právní i obchodní konstrukt. Je to také hranice pro zabezpečení a viditelnost dat. Uživatelé pracují vždy v kontextu jedné společnosti a většina dat je rozdělena podle společnosti.
 
-Common Data Service nemá ekvivalentní koncepci. Nejbližší koncept je *organizační jednotka*, která je primárně hranicí zabezpečení a viditelnosti pro uživatelská data. Tento koncept nemá stejné právní nebo obchodní důsledky jako koncepce společnosti.
+Common Data Service nemá ekvivalentní koncepci. Nejbližší koncept je *organizační jednotka* , která je primárně hranicí zabezpečení a viditelnosti pro uživatelská data. Tento koncept nemá stejné právní nebo obchodní důsledky jako koncepce společnosti.
 
 Vzhledem k tomu, že organizační jednotka a společnost nejsou rovnocennými koncepty, není možné vynutit mapování mezi nimi (1:1) pro účely integrace Common Data Service. Protože však uživatelé musí mít ve výchozím nastavení možnost zobrazit stejné záznamy v aplikaci a Common Data Service, společnost Microsoft zavedla novou entitu v aplikaci Common Data Service s názvem cdm\_Company. Tato entita je ekvivalentní s entitou společnosti v aplikaci. Chcete-li zajistit, aby viditelnost záznamů byla ekvivalentní mezi aplikací a Common Data Service, doporučujeme následující nastavení dat v aplikaci Common Data Service:
 
@@ -82,7 +81,7 @@ Existuje několik způsobů, jak automaticky vyplnit název společnosti v aplik
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Nastavení výchozí společnosti v sekci Informace o organizaci.":::
 
-+ Pokud máte oprávnění pro **zápis** v entitě **Systémový uživatel** pro úroveň **Obchodní jednotka**, můžete výchozí společnost změnit v libovolném formuláři výběrem společnosti z rozevírací nabídky **Společnost**.
++ Pokud máte oprávnění pro **zápis** v entitě **Systémový uživatel** pro úroveň **Obchodní jednotka** , můžete výchozí společnost změnit v libovolném formuláři výběrem společnosti z rozevírací nabídky **Společnost**.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Změna názvu společnosti pro nový účet.":::
 
@@ -93,7 +92,7 @@ Existuje několik způsobů, jak automaticky vyplnit název společnosti v aplik
 + Pokud jste konfigurátor nebo správce systému a chcete automaticky vyplnit data společnosti do vlastního formuláře, můžete použít [události formuláře](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Přidejte odkaz na JavaScript do **msdyn_ / DefaultCompany.js** a použijte následující události. Můžete použít jakýkoli předpřipravný formulář, například formulář **Účet**.
 
     + Událost **OnLoad** pro formulář: Nastavte pole **defaultCompany**.
-    + Událost **OnChange** pro pole **Společnost**: Nastavte pole **updateDefaultCompany**.
+    + Událost **OnChange** pro pole **Společnost** : Nastavte pole **updateDefaultCompany**.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Použití filtrování na základě kontextu společnosti
 

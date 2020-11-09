@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b8e39539f767cc2944a9a7fdda09121921c64763
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835921"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039762"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Vytvořte účet úložiště Azure a trezor klíčů
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 
 Doplňková služba elektronické fakturace přebírá odpovědnost za ukládání všech vašich obchodních údajů v prostředcích Microsoft Azure, které vlastní vaše společnost. Abyste zajistili, že služba funguje správně a že ke všem obchodním datům, která jsou potřebná a generovaná doplňkem elektronické fakturace, přistupuje pouze doplněk, musíte vytvořit dva hlavní zdroje Azure:
@@ -59,7 +59,7 @@ V tomto tématu provedete dva hlavní kroky:
 2. Přejděte na **Služba Blob** \> **Kontejnery** a vytvořte nový kontejner.
 3. Zadejte název kontejneru a nastavte pole **Úroveň veřejného přístupu** na **Soukromé (bez anonymního přístupu)**.
 4. Otevřete kontejner a přejděte na **Nastavení \> Zásady přístupu**.
-5. Vyberte **Přidat zásady**, chcete-li přidat uloženou zásadu přístupu.
+5. Vyberte **Přidat zásady** , chcete-li přidat uloženou zásadu přístupu.
 6. Nastavte pole **Identifikátor** a **Oprávnění** dle potřeby. V poli **Oprávnění** byste měli vybrat všechna oprávnění.
 
     ![Udělení oprávnění úložiště blob](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)

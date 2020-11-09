@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3801451"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012314"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.8. (únor 2020)
 
@@ -36,13 +36,14 @@ Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Některé z těchto funkcí mohou být také zahrnuty do předchozího přírůstkového vydání, ale nebyly ohlášeny v předchozím tématu *Novinky*, tak je uvádíme zde. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
+Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Některé z těchto funkcí mohou být také zahrnuty do předchozího přírůstkového vydání, ale nebyly ohlášeny v předchozím tématu *Novinky* , tak je uvádíme zde. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 - [Další zóna skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+
 - [Správa majetku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Další informace naleznete v tématu [Přehled správy majetku](../asset-management/index.md).
 - [Zrušit práci](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Další informace viz [Zrušení práce skladu pro zpracování výjimek](../warehousing/cancel-warehouse-work.md)
 - [Změnit fond práce u práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Další informace viz [Změna fondu práce u práce](../warehousing/change-work-pool-on-work.md) .
-- [Plná pozice seskupení](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) – Další informace viz [Plná pozice seskupení](../warehousing/cluster-position-full.md).
+- [Pozice seskupení plná](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Další informace viz [Plná pozice seskupení](../warehousing/cluster-position-full.md).
 - [Potvrdit a převést](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Další informace viz [Potvrdit a převést](../warehousing/confirm-and-transfer.md) .
 - [Stáří vyskladnění zásob směrnice skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Další informace viz [Stáří vyskladnění zásob směrnice skladového místa](../warehousing/location-directive-inventory-picking-aging.md).
 - [Stav umístění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)

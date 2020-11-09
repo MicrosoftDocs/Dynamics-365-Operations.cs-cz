@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4df62d7b2c8b0463ca6e9564e167f9060e811a24
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975409"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016210"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -58,14 +58,14 @@ Když spustíte tento postup, funkce *Zásady konsolidace dodávek* by měla bý
 
 Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek v prostředí, ve kterém jsou již sklady nakonfigurovány pro konsolidaci mezi objednávkami.
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady** .
+1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
 1. V seznamu vyhledejte a otevřete požadovaný záznam skladu (například sklad *24* v ukázkových datech **USMF** ).
-1. V podokně akcí vyberte **Upravit** .
-1. Na záložce s náhledem **Sklad** nastavte možnost **Konsolidovat dodávku při uvolnění do skladu** na *Ano* .
+1. V podokně akcí vyberte **Upravit**.
+1. Na záložce s náhledem **Sklad** nastavte možnost **Konsolidovat dodávku při uvolnění do skladu** na *Ano*.
 1. Opakujte kroky 2 až 4 pro všechny ostatní sklady, kde je vyžadována konsolidace.
 1. Zavřete stránku.
-1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek* . V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek* .
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** . Možná budete muset obnovit svůj prohlížeč, abyste mohli zobrazit novou položku **Zásad konsolidace dodávek** po zapnutí funkce.
+1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek*. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**. Možná budete muset obnovit svůj prohlížeč, abyste mohli zobrazit novou položku **Zásad konsolidace dodávek** po zapnutí funkce.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 
     - Zásada **CrossOrder** pro typ zásady *Prodejní objednávky* (za předpokladu, že máte alespoň jeden sklad, který je nastaven pro použití funkce dřívější konsolidace)
@@ -77,15 +77,15 @@ Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodáve
     > - Obě zásady **CrossOrder** považují stejnou sadu polí za dřívější logiku, s výjimkou pole pro číslo objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je sklad, způsob dopravy dodávky a adresa.)
     > - Obě zásady **Výchozí** považují stejnou sadu polí za dřívější logiku, včetně pole pro číslo objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je číslo objednávky, sklad, způsob dopravy dodávky a adresa.)
 
-1. Vyberte zásady **CrossOrder** pro typ zásady *Prodejní objednávky* a poté na podokně akcí vyberte **Upravit dotaz** .
-1. V dialogovém okně editoru dotazů si všimněte skladů, u kterých je možnost **Konsolidovat dodávku při uvolnění do skladu** nastavena na *Ano* . Proto jsou zahrnuty v dotazu.
+1. Vyberte zásady **CrossOrder** pro typ zásady *Prodejní objednávky* a poté na podokně akcí vyberte **Upravit dotaz**.
+1. V dialogovém okně editoru dotazů si všimněte skladů, u kterých je možnost **Konsolidovat dodávku při uvolnění do skladu** nastavena na *Ano*. Proto jsou zahrnuty v dotazu.
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Vytvoření výchozích zásad pro nové prostředí
 
 Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek ve zcela novém prostředí.
 
-1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek* , pokud jste ji již nezapnuli. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek* .
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
+1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek* , pokud jste ji již nezapnuli. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 
     - **Výchozí** zásada pro typ zásady *Prodejní objednávky*
@@ -120,19 +120,19 @@ Použijte správu funkcí pro zapnutí funkce, pokud jste ji ještě nezapnuli, 
         - **Kód filtru:** *Explozivní*
         - **Název filtru:** *Kód 4*
 
-1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty** .
-1. Otevřete produkt s číslem položky *M9200* . (Produkt, který vyberete, musí být povolen pro rozšířené procesy skladu \[WMS\] a tento produkt je předem povolen pro procesy WMS v ukázkových datech **USMF** .)
-1. Na záložce s náhledem **Sklad** nastavte pole **Kód 4** na *Hořlavý* .
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. Otevřete produkt s číslem položky *M9200*. (Produkt, který vyberete, musí být povolen pro rozšířené procesy skladu \[WMS\] a tento produkt je předem povolen pro procesy WMS v ukázkových datech **USMF**.)
+1. Na záložce s náhledem **Sklad** nastavte pole **Kód 4** na *Hořlavý*.
 1. Zavřete stránku.
-1. Otevřete produkt s číslem položky *M9201* . (Tento produkt je také předem povolen pro procesy WMS v ukázkových datech **USMF** .)
-1. Na záložce s náhledem **Sklad** nastavte pole **Kód 4** na *Explozivní* .
+1. Otevřete produkt s číslem položky *M9201*. (Tento produkt je také předem povolen pro procesy WMS v ukázkových datech **USMF**.)
+1. Na záložce s náhledem **Sklad** nastavte pole **Kód 4** na *Explozivní*.
 1. Zavřete stránku.
 
 #### <a name="create-a-new-transportation-mode-of-delivery"></a>Vytvoření způsobu dopravy dodávky
 
-1. Přejděte do **Správa přepravy \> Nastavení \> Dopravci \> Způsob** .
-1. Vytvořte způsob dopravy, který bude použit v dotazech konsolidace, a pojmenujte ho *Airways* .
-1. Přejděte do nabídky **Správa přepravy \> Nastavení \> Dopravci \> Dopravci dodávky** .
+1. Přejděte do **Správa přepravy \> Nastavení \> Dopravci \> Způsob**.
+1. Vytvořte způsob dopravy, který bude použit v dotazech konsolidace, a pojmenujte ho *Airways*.
+1. Přejděte do nabídky **Správa přepravy \> Nastavení \> Dopravci \> Dopravci dodávky**.
 1. Vytvořte dopravce, který má následující nastavení:
 
     - **Dopravce dodávky:** *Airways*
@@ -144,23 +144,23 @@ Použijte správu funkcí pro zapnutí funkce, pokud jste ji ještě nezapnuli, 
     - **Služba dopravce:** *Air*
     - **Způsob přepravy:** *Air*
 
-1. V podokně akcí vyberte **Uložit** .
+1. V podokně akcí vyberte **Uložit**.
 
     > [!NOTE]
-    > Když uložíte nového dopravce, pole **Způsob doručení** pro nový řádek v mřížce **Služby** je automaticky nastaveno na *Airwa-Air* . Když používáte způsob dodání *Airwa-Air* pro prodejní objednávku, způsob přepravy *Airways* bude použit pro související dodávky.
+    > Když uložíte nového dopravce, pole **Způsob doručení** pro nový řádek v mřížce **Služby** je automaticky nastaveno na *Airwa-Air*. Když používáte způsob dodání *Airwa-Air* pro prodejní objednávku, způsob přepravy *Airways* bude použit pro související dodávky.
 
 #### <a name="create-an-order-pool"></a>Vytvoření fondu objednávek
 
-1. Přejděte na **Prodej a marketing \> Nastavení \> Prodejní objednávky \> Fondy objednávek** .
+1. Přejděte na **Prodej a marketing \> Nastavení \> Prodejní objednávky \> Fondy objednávek**.
 1. Vytvořte fond objednávek, který bude použit pro dotaz konsolidace. Tento fond objednávek by měl mít následující nastavení:
 
     - **Fond:** Zadejte celé číslo, které ještě nepoužívá žádný jiný fond.
     - **Název:** *ShipCons*
 
-1. Přejděte na **Prodej a marketing \> Odběratelé \> Všichni odběratelé** .
-1. Otevřete zákazníka, který má číslo účtu *US-003* .
+1. Přejděte na **Prodej a marketing \> Odběratelé \> Všichni odběratelé**.
+1. Otevřete zákazníka, který má číslo účtu *US-003*.
 1. Na záložce s náhledem **Výchozí nastavení prodejních objednávek** nastavte pole **Fond prodejních objednávek** na fond objednávek, který jste právě vytvořili.
-1. Zavřete stránku a opakujte kroky 4 a 5 pro zákazníka, který má číslo účtu *US-004* .
+1. Zavřete stránku a opakujte kroky 4 a 5 pro zákazníka, který má číslo účtu *US-004*.
 
 ### <a name="create-example-policy-1"></a>Vytvoření vzorové zásady 1
 
@@ -172,19 +172,19 @@ V tomto příkladu vytvoříte zásadu *Zákazník+Způsob* , kterou lze použí
 
 Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro tento obchodní případ.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. V podokně akcí vyberte **Nový** a vytvořte zásadu, která má následující nastavení:
 
     - **Název zásady:** *CustomerMode*
     - **Popis zásady:** *Účet zákazníka a způsob doručení*
 
-1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne* .
-1. V podokně akcí vyberte **Uložit** .
-1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V podokně akcí vyberte **Upravit dotaz** .
-1. V dialogovém okně editoru dotazů na kartě **Rozsah** v mřížce vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001* .
+1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
+1. V podokně akcí vyberte **Uložit**.
+1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V podokně akcí vyberte **Upravit dotaz**.
+1. V dialogovém okně editoru dotazů na kartě **Rozsah** v mřížce vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001*.
 1. Vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
     - **Tabulka:** *Řádky objednávek*
@@ -207,21 +207,21 @@ V tomto příkladu vytvoříte zásadu *Nebezpečné zboží* , kterou lze použ
 
 Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro tento obchodní případ.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. V podokně akcí vyberte **Nový** a vytvořte zásadu, která má následující nastavení:
 
     - **Název zásady:** *Typ položky*
     - **Popis zásady:** *Konsolidace stejného typu položky napříč objednávkami*
 
-1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano* .
-1. V podokně akcí vyberte **Uložit** .
-1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V podokně akcí vyberte **Upravit dotaz** .
-1. V dialogovém okně editoru dotazů na kartě **Propojení tabulek** rozbalte a vyberte ve stromu **Tabulky \> Načíst podrobnosti** .
-1. Zvolte **Přidat propojení tabulek** .
-1. V mřížce vztahů, která se zobrazí, najděte a vyberte řádek, ve kterém je pole **Vztah** nastaveno na *Číslo položky skladu (číslo položky)* a poté zvolte **Vybrat** . 
+1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano*.
+1. V podokně akcí vyberte **Uložit**.
+1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V podokně akcí vyberte **Upravit dotaz**.
+1. V dialogovém okně editoru dotazů na kartě **Propojení tabulek** rozbalte a vyberte ve stromu **Tabulky \> Načíst podrobnosti**.
+1. Zvolte **Přidat propojení tabulek**.
+1. V mřížce vztahů, která se zobrazí, najděte a vyberte řádek, ve kterém je pole **Vztah** nastaveno na *Číslo položky skladu (číslo položky)* a poté zvolte **Vybrat**. 
 1. Na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
     - **Tabulka:** *Číslo položky skladu*
@@ -244,21 +244,21 @@ V tomto příkladu vytvoříte zásadu *Požadavky zákazníků* , kterou lze po
 
 Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro tento obchodní případ.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. V podokně akcí vyberte **Nový** a vytvořte zásadu, která má následující nastavení:
 
     - **Název zásady:** *CustomerOrderNo*
     - **Popis zásady:** *Konsolidace řádek na základě nákupní objednávky zákazníka*
 
-1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano* .
-1. V podokně akcí vyberte **Uložit** .
-1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Požadavek zákazníka* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V podokně akcí vyberte **Upravit dotaz** .
-1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001* .
+1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano*.
+1. V podokně akcí vyberte **Uložit**.
+1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Požadavek zákazníka*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V podokně akcí vyberte **Upravit dotaz**.
+1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001*.
 1. Zvolte **OK** a zavřete dialogové okno.
 
 > [!NOTE]
@@ -276,18 +276,18 @@ V tomto příkladu vytvoříte zásadu *Zákazníci umožňující konsolidaci* 
 
 Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro tento obchodní případ.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. V podokně akcí vyberte **Nový** a vytvořte zásadu, která má následující nastavení:
 
     - **Název zásady:** *Fond objednávek*
     - **Popis zásady:** *Konsolidace napříč objednávkami na základě fondu objednávek*
 
-1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne* .
-1. V podokně akcí vyberte **Uložit** .
-1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
+1. V podokně akcí vyberte **Uložit**.
+1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
     - **Tabulka:** *Prodejní objednávky*
@@ -310,27 +310,27 @@ V tomto příkladu vytvoříte zásadu *Sklady umožňující konsolidaci* , kte
 
 Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které jste vytvořili ve [scénáři 1](#scenario-1). Podobné zásady však můžete vytvořit také ručně pomocí těchto kroků.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. V podokně akcí vyberte **Nový** a vytvořte zásadu, která má následující nastavení:
 
     - **Název zásady:** *Napříč objednávkami*
     - **Popis zásady:** *Konsolidace napříč objednávkami pro konkrétní sklady*
 
-1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne* .
-1. V podokně akcí vyberte **Uložit** .
-1. Na záložce s náhledem **Pole konsolidace** v poli **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení* .
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole** .
-1. V podokně akcí vyberte **Upravit dotaz** .
-1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Sklad* a nastavte pole **Kritéria** pro tento řádek na *61, 63* .
+1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
+1. V podokně akcí vyberte **Uložit**.
+1. Na záložce s náhledem **Pole konsolidace** v poli **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
+1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. V podokně akcí vyberte **Upravit dotaz**.
+1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Sklad* a nastavte pole **Kritéria** pro tento řádek na *61, 63*.
 1. Zvolte **OK** a zavřete dialogové okno.
 
 ### <a name="set-the-order"></a>Nastavení objednávky
 
 Nyní, když jste vytvořili všechny své zásady, musíte stanovit pořadí, v jakém budou použity. Chcete-li použít přístup podobný pyramidám, kde jsou zásady, které mají nejvíce podmínek, vyhodnoceny jako zásady s nejvyšší prioritou, postupujte podle těchto kroků.
 
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek** .
-1. Nastavte pole **Typ zásady** na *Prodejní objednávky* .
+1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
+1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
 1. Vyberte všechny zásady, které jsou uvedeny v levém sloupci, a poté použijte tlačítka **Nahoru** a **Dolů** v podokně akcí k uspořádání zásad v následujícím pořadí:
 
     1. CustomerMode

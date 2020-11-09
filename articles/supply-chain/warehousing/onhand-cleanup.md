@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f6d1f8a4c85c2161d1b79246d437bb3b4d223d1d
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410932"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015934"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Úloha vyčištění položek zásob na skladě v řízení skladu
 
@@ -49,7 +50,7 @@ Při spuštění úlohy má velikost potvrzení 100. Jinými slovy, bude se sna�
 
 ## <a name="possible-user-impact"></a>Možný dopad na uživatele
 
-Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. (Tato funkce kontroluje stav **Množství \<\> 0** v nastavení **Zobrazení rozměrů**, když uživatelé zobrazují informace na skladě.) Nicméně zlepšení výkonu, které poskytuje úloha vyčištění, by mělo tuto malou ztrátu funkčnosti nahradit.
+Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. (Tato funkce kontroluje stav **Množství \<\> 0** v nastavení **Zobrazení rozměrů** , když uživatelé zobrazují informace na skladě.) Nicméně zlepšení výkonu, které poskytuje úloha vyčištění, by mělo tuto malou ztrátu funkčnosti nahradit.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Zpřístupněte nastavení Maximální doba provedení
 

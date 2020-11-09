@@ -3,7 +3,7 @@ title: Srovnání funkcí cloudu a on-premises
 description: Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100275"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040092"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
@@ -58,10 +58,10 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | ER: Integrace s LCS                                                                  | Ano       | Ne              |
 |                                      | ER: Integrace se službou SharePoint                                                           | Ano       | Ne              |
 |                                      | ER: Integrace se službou Regulatory Configuration Services (RCS)                              | Ano       | Ne              |
-|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Ne        | Ano             |
-|                                      | Integrace s PowerBI.com                                                              | Ano       | Ne              |
-|                                      | Integrace s aplikací PowerBI Desktop                                                          | Ne        | Ano             |
-|                                      | Analytické pracovní prostory                                                                     | Ano       | Ne              |
+|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Žádný        | Ano             |
+|                                      | Integrace s PowerBI.com                                                              | Ano       | Žádný              |
+|                                      | Integrace s PowerBI Desktop                                                          | Žádný        | Ano             |
+|                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
 |                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
 |                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
 |                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ne              |
@@ -85,8 +85,9 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 
 ## <a name="dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management 
 
-| **Oblast**                | **Funkce**             | **Cloud** | **Místní** |
+| **Plošný**                | **Funkce**             | **Cloud** | **Místní** |
 |-------------------------|-------------------|-----------|-----------------|
+| Správa majetku                     |                                                                                           | Ano       | Žádný |
 | Dodržování předpisů a certifikáty        |                                                                                           | Ano       | Ano             |
 |                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Žádný              |
 | Nákladové účetnictví                      |                                                                                           | Ano       | Ano             |
@@ -106,10 +107,10 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | ER: Integrace s LCS                                                                  | Ano       | Ne              |
 |                                      | ER: Integrace se službou SharePoint                                                           | Ano       | Ne              |
 |                                      | ER: Integrace se službou Regulatory Configuration Services (RCS)                              | Ano       | Ne              |
-|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Ne        | Ano             |
-|                                      | Integrace s PowerBI.com                                                              | Ano       | Ne              |
-|                                      | Integrace s aplikací PowerBI Desktop                                                          | Ne        | Ano             |
-|                                      | Analytické pracovní prostory                                                                     | Ano       | Ne              |
+|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Žádný        | Ano             |
+|                                      | Integrace s PowerBI.com                                                              | Ano       | Žádný              |
+|                                      | Integrace s PowerBI Desktop                                                          | Žádný        | Ano             |
+|                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
 |                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
 |                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
 |                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Žádný              |
