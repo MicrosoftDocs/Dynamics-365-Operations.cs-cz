@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,26 +17,26 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc0eb4c0a6397164d068b5dd44a0807dfdf65814
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979592"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016049"
 ---
-# <a name="create-a-work-class"></a><span data-ttu-id="e54cb-103">Vytvoření pracovní třídy</span><span class="sxs-lookup"><span data-stu-id="e54cb-103">Create a work class</span></span>
+# <a name="create-a-work-class"></a><span data-ttu-id="bb71c-103">Vytvoření pracovní třídy</span><span class="sxs-lookup"><span data-stu-id="bb71c-103">Create a work class</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e54cb-104">Tento postup popisuje nastavení pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="e54cb-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="e54cb-105">Pracovní třídy se používají k nasměrování a/nebo omezení typu řádků pracovních příkazů, které pracovník skladu může v mobilním zařízení zpracovat.</span><span class="sxs-lookup"><span data-stu-id="e54cb-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="e54cb-106">Řádky, které může pracovník zpracovat, se určují na základě pracovních tříd pro položky nabídky mobilního zařízení, k nimž má pracovník skladu přístup, a pro pracovní třídu specifikovanou na řádcích práce.</span><span class="sxs-lookup"><span data-stu-id="e54cb-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="e54cb-107">Pracovní třídy lze také použít k ověření skladového místa pro řádek pracovního příkazu.</span><span class="sxs-lookup"><span data-stu-id="e54cb-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="e54cb-108">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="e54cb-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="e54cb-109">Tento postup je určen pro vedoucího skladu.</span><span class="sxs-lookup"><span data-stu-id="e54cb-109">This procedure is intended for the warehouse manager.</span></span>
+<span data-ttu-id="bb71c-104">Tento postup popisuje nastavení pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="bb71c-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="bb71c-105">Pracovní třídy se používají k nasměrování a/nebo omezení typu řádků pracovních příkazů, které pracovník skladu může v mobilním zařízení zpracovat.</span><span class="sxs-lookup"><span data-stu-id="bb71c-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="bb71c-106">Řádky, které může pracovník zpracovat, se určují na základě pracovních tříd pro položky nabídky mobilního zařízení, k nimž má pracovník skladu přístup, a pro pracovní třídu specifikovanou na řádcích práce.</span><span class="sxs-lookup"><span data-stu-id="bb71c-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="bb71c-107">Pracovní třídy lze také použít k ověření skladového místa pro řádek pracovního příkazu.</span><span class="sxs-lookup"><span data-stu-id="bb71c-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="bb71c-108">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="bb71c-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="bb71c-109">Tento postup je určen pro vedoucího skladu.</span><span class="sxs-lookup"><span data-stu-id="bb71c-109">This procedure is intended for the warehouse manager.</span></span>
 
-1. <span data-ttu-id="e54cb-110">Přejděte do nabídky Řízení skladu > Nastavení > Práce > Pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="e54cb-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
-2. <span data-ttu-id="e54cb-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e54cb-111">Click New.</span></span>
-3. <span data-ttu-id="e54cb-112">Zadejte hodnotu do pole ID pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="e54cb-112">In the Work class ID field, type a value.</span></span>
-4. <span data-ttu-id="e54cb-113">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e54cb-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e54cb-114">V poli Typ pořadí pracovních činností vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="e54cb-114">In the Work order type field, select an option.</span></span>
-6. <span data-ttu-id="e54cb-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e54cb-115">Click New.</span></span>
-7. <span data-ttu-id="e54cb-116">Zadejte hodnotu do pole Typ místa.</span><span class="sxs-lookup"><span data-stu-id="e54cb-116">In the Location type field, type a value.</span></span>
-    * <span data-ttu-id="e54cb-117">Pokud vyberete typ umístění, nastaví se omezení s ohledem na to, kde je možné položky umístit poté, co byly vyskladněny.</span><span class="sxs-lookup"><span data-stu-id="e54cb-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="e54cb-118">Toto nastavení se používá, když se směrnice umístění pokusí o překlad umístění nebo když pracovník skladu ručně zadá umístění pro položku nabídky mobilního zařízení.</span><span class="sxs-lookup"><span data-stu-id="e54cb-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
-8. <span data-ttu-id="e54cb-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e54cb-119">Close the page.</span></span>
+1. <span data-ttu-id="bb71c-110">Přejděte do nabídky Řízení skladu > Nastavení > Práce > Pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="bb71c-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
+2. <span data-ttu-id="bb71c-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bb71c-111">Click New.</span></span>
+3. <span data-ttu-id="bb71c-112">Zadejte hodnotu do pole ID pracovní třídy.</span><span class="sxs-lookup"><span data-stu-id="bb71c-112">In the Work class ID field, type a value.</span></span>
+4. <span data-ttu-id="bb71c-113">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="bb71c-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="bb71c-114">V poli Typ pořadí pracovních činností vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="bb71c-114">In the Work order type field, select an option.</span></span>
+6. <span data-ttu-id="bb71c-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bb71c-115">Click New.</span></span>
+7. <span data-ttu-id="bb71c-116">Zadejte hodnotu do pole Typ místa.</span><span class="sxs-lookup"><span data-stu-id="bb71c-116">In the Location type field, type a value.</span></span>
+    * <span data-ttu-id="bb71c-117">Pokud vyberete typ umístění, nastaví se omezení s ohledem na to, kde je možné položky umístit poté, co byly vyskladněny.</span><span class="sxs-lookup"><span data-stu-id="bb71c-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="bb71c-118">Toto nastavení se používá, když se směrnice umístění pokusí o překlad umístění nebo když pracovník skladu ručně zadá umístění pro položku nabídky mobilního zařízení.</span><span class="sxs-lookup"><span data-stu-id="bb71c-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
+8. <span data-ttu-id="bb71c-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="bb71c-119">Close the page.</span></span>
 
