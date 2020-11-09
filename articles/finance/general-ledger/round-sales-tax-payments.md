@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: yijialuan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275667"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014952"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Platby DPH a pravidla zaokrouhlení
 
@@ -54,7 +54,7 @@ Následující tabulka ukazuje, jak je zaokrouhlena částka 98 765,43 pomocí k
 > Je-li hodnota zaokrouhlení nastavena na 0,00, pak:
 >
 > - Pro normální zaokrouhlování je chování zaokrouhlení stejné jako při **zaokrouhlení = 0,01**.
-> - U možností **Způsob zaokrouhlování**, **dolů**, **Zaokrouhlení nahoru** a **Vlastní výhoda** je chování stejné jako při **Zaokrouhlení = 1.00**.
+> - U možností **Způsob zaokrouhlování** , **dolů** , **Zaokrouhlení nahoru** a **Vlastní výhoda** je chování stejné jako při **Zaokrouhlení = 1.00**.
 
 | Možnost zaokrouhlování                | Zaokrouhlená hodnota = 0,01 | Zaokrouhlená hodnota = 0,10 | Zaokrouhlená hodnota = 1,00 | Zaokrouhlená hodnota = 100,00 | Zaokrouhlená hodnota = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

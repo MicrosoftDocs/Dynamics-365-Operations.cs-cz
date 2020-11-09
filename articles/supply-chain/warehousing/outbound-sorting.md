@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e72249e26fb8f291f804cf5f2e4ce98bf88cd5bf
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596208"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017683"
 ---
 # <a name="outbound-sorting"></a>Odchozí třídění
 
@@ -69,7 +70,7 @@ Balicí stanice se považuje za místo. Pracovníci skladu, kteří se přihlás
     - **Název nabídky:** *Hlavní*
 
 1. V podokně akcí vyberte **Uložit**.
-1. Zobrazí se dialogové okno **Nastavit heslo**, ve kterém můžete vytvořit jednoduché heslo, pomocí něhož se uživatel může přihlásit k mobilní aplikaci. Nastavte následující hodnoty:
+1. Zobrazí se dialogové okno **Nastavit heslo** , ve kterém můžete vytvořit jednoduché heslo, pomocí něhož se uživatel může přihlásit k mobilní aplikaci. Nastavte následující hodnoty:
 
     - **Heslo:** Zadejte jednoduché heslo.
     - **Potvrdit heslo:** Znovu zadejte stejné heslo.
@@ -108,7 +109,7 @@ Balicí stanice se považuje za místo. Pracovníci skladu, kteří se přihlás
     - **Formát umístění:** *ASRB* (ulička, stojan, police a přihrádka)
     - **Typ umístění:** *SORT*
     - **Použít sledování registrační značky:** *Ano*
-    - **Povolit smíšené položky:** *Ano* (Když tuto možnost nastavíte na *Ano*, možnost **Povolit smíšené dávky zásob** se automaticky nastaví na *Ano* a nelze ji změnit samostatně.)
+    - **Povolit smíšené položky:** *Ano* (Když tuto možnost nastavíte na *Ano* , možnost **Povolit smíšené dávky zásob** se automaticky nastaví na *Ano* a nelze ji změnit samostatně.)
 
 1. Zvolte **Uložit**.
 
@@ -145,11 +146,11 @@ Pro tento scénář vytvoříte odchozí šablonu třídění pro sestavení pal
     - **Ověření řazení:** *Kontrola pozice*.
     - **Vytvořit práci při uzavření pozice:** *Ano*
 
-        Když je tato možnost nastavená na *Ano* a pozice uzavřená, práce bude vytvořena, aby se přesunuly zásoby do konečného místa doručení. Když je nastavená na *Ne*, zásoby budou ihned přiděleny do objednávky při zavření pozice.
+        Když je tato možnost nastavená na *Ano* a pozice uzavřená, práce bude vytvořena, aby se přesunuly zásoby do konečného místa doručení. Když je nastavená na *Ne* , zásoby budou ihned přiděleny do objednávky při zavření pozice.
 
     - **Přiřazení pozice:** *Automaticky*
 
-        Pokud je pole nastaveno na *Ruční*, uživatel musí vždy označit, do jaké pozice mají být zásoby setříděny. Pokud je nastavená na *Automaticky*, systém automaticky navede zásoby do pozice, kdykoli je to možné, na základě přestávek šablony třídění.
+        Pokud je pole nastaveno na *Ruční* , uživatel musí vždy označit, do jaké pozice mají být zásoby setříděny. Pokud je nastavená na *Automaticky* , systém automaticky navede zásoby do pozice, kdykoli je to možné, na základě přestávek šablony třídění.
 
 1. V podokně akcí zvolte možnost **Uložit**. Tím se zpřístupní možnost **Upravit dotaz**.
 1. V podokně Akce vyberte možnost **Upravit dotaz**.
@@ -208,7 +209,7 @@ Vytvořte nový profil balení, který bude použit spolu s funkcí třídění.
     - **Zásady balení kontejnerů:** *Třídit*
     - **Režim ID kontejneru:** *Automatický*
     - **Typ kontejneru:** *Velká krabice*
-    - **Automatické vytvoření kontejneru při uzavření kontejneru:** Vymazáno (= *Ne*)
+    - **Automatické vytvoření kontejneru při uzavření kontejneru:** Vymazáno (= *Ne* )
 
 1. Zvolte **Uložit**.
 
@@ -244,11 +245,11 @@ Vytvořte položku nabídky mobilního zařízení pro vtvoření palet během t
 
     - **Kód aktivity:** *Odchozí třídění*
 
-        Když je toto pole nastaveno na *Odchozí třídění*, zobrazí se pole **ID šablony odchozího třídění**.
+        Když je toto pole nastaveno na *Odchozí třídění* , zobrazí se pole **ID šablony odchozího třídění**.
 
     - **Použít průvodce procesem:** *Ano*
 
-        Když je hodnota v poli **Kód aktivity** nastavená na *Odchozí třídění*, je tato možnost automaticky nastavena na *Ano*.
+        Když je hodnota v poli **Kód aktivity** nastavená na *Odchozí třídění* , je tato možnost automaticky nastavena na *Ano*.
 
     - **ID odchozí šablony třídění:** *AutoWork*
 
@@ -309,14 +310,14 @@ Nyní musíte nové položky nabídky přidat do nabídky mobilního zařízení
     - **Sklad:** *62*
     - **Více skladových jednotek:** *Ne*
 
-1. Chcete-li, aby byl dostupný panel nástrojů na pevné záožce **Řádky**, klikněte na **Uložit**.
+1. Chcete-li, aby byl dostupný panel nástrojů na pevné záožce **Řádky** , klikněte na **Uložit**.
 1. Na pevné záložce **Řádky** vyberte **Nový** a pak na novém řádku nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Posloupnost:** *1*
     - **Od:** *0*
     - **Do:** *1,000,000*
 
-1. Chcete-li, aby byl dostupný panel nástrojů na pevné záložce **Akce směrnice skladového místa**, klikněte na **Uložit**.
+1. Chcete-li, aby byl dostupný panel nástrojů na pevné záložce **Akce směrnice skladového místa** , klikněte na **Uložit**.
 1. Na pevné záložce **Akce směrnice místa** vyberte **Nový** a pak na novém řádku nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Posloupnost:** *1*
@@ -344,14 +345,14 @@ Nyní musíte nové položky nabídky přidat do nabídky mobilního zařízení
     - **Sklad:** *62*
     - **Více SKU:** *Ano*
 
-1. Chcete-li, aby byl dostupný panel nástrojů na pevné záožce **Řádky**, klikněte na **Uložit**.
+1. Chcete-li, aby byl dostupný panel nástrojů na pevné záožce **Řádky** , klikněte na **Uložit**.
 1. Na pevné záložce **Řádky** vyberte **Nový** a pak na novém řádku nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Posloupnost:** *1*
     - **Od:** *0*
     - **Do:** *1,000,000*
 
-1. Chcete-li, aby byl dostupný panel nástrojů na pevné záložce **Akce směrnice skladového místa**, klikněte na **Uložit**.
+1. Chcete-li, aby byl dostupný panel nástrojů na pevné záložce **Akce směrnice skladového místa** , klikněte na **Uložit**.
 1. Na pevné záložce **Akce směrnice místa** vyberte **Nový** a pak na novém řádku nastavte následující hodnoty. Potvrďte výchozí hodnoty ve všech ostatních polích.
 
     - **Posloupnost:** *1*
@@ -373,8 +374,8 @@ Nyní musíte nové položky nabídky přidat do nabídky mobilního zařízení
     - **Šablona práce:** *Třídění*
     - **Popis šablony práce:** *Třídění*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Podrobnosti šablony práce**, klikněte na **Uložit**.
-1. Na pevné záložce **Podrobnosti pracovní šablony** vyberte **Nový**, chcete-li přidat řádek a poté pro něj nastavit následující hodnoty:
+1. Chcete-li, aby byla dostupná záložka s náhledem **Podrobnosti šablony práce** , klikněte na **Uložit**.
+1. Na pevné záložce **Podrobnosti pracovní šablony** vyberte **Nový** , chcete-li přidat řádek a poté pro něj nastavit následující hodnoty:
 
     - **Typ práce:** *Výdej*
     - **ID pracovní třídy:** *SORT*
@@ -418,7 +419,7 @@ Tento scénář simuluje situaci, kdy by se balené kontejnery měly automaticky
     - **Číslo položky:** *A0001*
     - **Množství:** *2*
 
-1. V době, kdy je vybrán nový řádek na pevné záložce **Řádky prodejní objednávky**, vyberte v nabídce **Zásoby** nad mřížkou možnost **Rezervace**.
+1. V době, kdy je vybrán nový řádek na pevné záložce **Řádky prodejní objednávky** , vyberte v nabídce **Zásoby** nad mřížkou možnost **Rezervace**.
 1. Na stránce **Rezervace** klikněte na **Rezervovat šarži**. Ve skladu se provede rezervace celého množství vybraného řádku.
 1. Zavřete stránku **Rezervace** a vraťte se k prodejní objednávce.
 1. V podokně akcí na kartě **Sklad** ve skupině **Akce** vyberte možnost **Uvolnit do skladu.**
@@ -469,7 +470,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
 1. V nabídce **Odchozí** vyberte **Prodejní výdej**.
 1. V poli **ID** zadejte ID práce, které bylo vytvořeno pro prodejní objednávku 1.
 1. Vyberte **OK**.
-1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku, která byla vytvořena pro prodejní objednávku 1. Všimněte si, že se zobrazí místo výběru (*hromadně-001*), položka (*A0001*) a množství (*2 ks*).
+1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku, která byla vytvořena pro prodejní objednávku 1. Všimněte si, že se zobrazí místo výběru ( *hromadně-001* ), položka ( *A0001* ) a množství ( *2 ks* ).
 1. Vyberte **OK**.
 1. Zkontrolujte informace na stránce **prodejní objednávky: vložení**. V poli **Loc** by mělo být uvedeno, že vybrané položky jdou do umístění *Balíček*.
 1. Vyberte **OK**.
@@ -480,7 +481,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
 
 1. V poli **ID** zadejte ID práce, které bylo vytvořeno pro prodejní objednávku 2, kde na řádku 1 je položka *A0001*.
 1. Vyberte **OK**.
-1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku. Všimněte si, že se zobrazí místo výběru (*hromadně-001*), položka (*A0001*) a množství (*1 ks*).
+1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku. Všimněte si, že se zobrazí místo výběru ( *hromadně-001* ), položka ( *A0001* ) a množství ( *1 ks* ).
 1. Vyberte **OK**.
 1. Zkontrolujte informace na stránce **prodejní objednávky: vložení**. V poli **Loc** by mělo být uvedeno, že vybrané položky jdou do umístění *Balíček*.
 1. Vyberte **OK**.
@@ -489,7 +490,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
 
 1. V poli **ID** zadejte ID práce, které bylo vytvořeno pro prodejní objednávku 2, kde na řádku 2 je položka *A0002*.
 1. Vyberte **OK**.
-1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku. Všimněte si, že se zobrazí místo výběru (*hromadně-002*), položka (*A0001*) a množství (*1 ks*).
+1. Na stránce **Prodejní objednávky - výběr** zadejte cílovou registrační značku. Všimněte si, že se zobrazí místo výběru ( *hromadně-002* ), položka ( *A0001* ) a množství ( *1 ks* ).
 1. Vyberte **OK**.
 1. Zkontrolujte informace na stránce **prodejní objednávky: vložení**. V poli **Loc** by mělo být uvedeno, že vybrané položky jdou do umístění *Balíček*.
 1. Vyberte **OK**.
@@ -521,7 +522,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
     - **Identifikátor:** Položka *A0001*
 
 1. V podokně akcí zvolte **Zavřít kontejner**.
-1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost**, aby systém aktualizoval pole **Celková hmotnost**.
+1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost** , aby systém aktualizoval pole **Celková hmotnost**.
 1. Vyberte **OK**. Kontejner se přesune do skladového místa *SORT* a je připraven k třídění.
 1. Vytvořte druhý kontejner a přidejte druhou položku z registrační značky pro prodejní objednávku 1 do nového kontejneru.
 1. V podokně akcí zvolte **Nový kontejner**.
@@ -532,7 +533,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
     - **Identifikátor:** Položka *A0001*
 
 1. V podokně akcí zvolte **Zavřít kontejner**.
-1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost**, aby systém aktualizoval pole **Celková hmotnost**.
+1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost** , aby systém aktualizoval pole **Celková hmotnost**.
 1. Vyberte **OK**. Kontejner se přesune do skladového místa *SORT* a je připraven k třídění.
 
 #### <a name="pack-sales-order-2-into-containers"></a>Balení prodejní objednávky 2 do kontejnerů
@@ -546,7 +547,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
     - **Identifikátor:** Položka *A0001*
 
 1. V podokně akcí zvolte **Zavřít kontejner**.
-1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost**, aby systém aktualizoval pole **Celková hmotnost**.
+1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost** , aby systém aktualizoval pole **Celková hmotnost**.
 1. Vyberte **OK**. Kontejner se přesune do skladového místa *SORT* a je připraven k třídění.
 1. V poli **Registrační značka nebo zásilka** zadejte cílovou registrační značku řádek 2 prodejní objednávky 2. Pak na klávesnici použijte klávesu **Tab** nebo **Enter** pro přesun mimo pole.
 1. V podokně akcí zvolte **Nový kontejner**.
@@ -557,7 +558,7 @@ Vytvořené dílo dokončete pomocí mobilního zařízení k přesunutí polož
     - **Pole identifikátoru:** Položka *A0002*
 
 1. V podokně akcí zvolte **Zavřít kontejner**.
-1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost**, aby systém aktualizoval pole **Celková hmotnost**.
+1. V dialogovém okně **zavřít kontejner** vyberte **Získat systémovou hmotnost** , aby systém aktualizoval pole **Celková hmotnost**.
 1. Vyberte **OK**. Kontejner se přesune do skladového místa *SORT* a je připraven k třídění.
 
 Chcete-li zobrazit podrobnosti o kontejneru, přejděte na **Řízení skladu \> Balení a kontejnerizace \> Kontejnery** a vyhledejte ID kontejnerů, které byly vytvořeny během balení.
@@ -577,7 +578,7 @@ Chcete-li zobrazit podrobnosti o kontejneru, přejděte na **Řízení skladu \>
 1. Do pole **Registrační značka/kontejner** zadejte ID prvního kontejneru spojeného s prodejní objednávkou 1.
 1. Vyberte **OK**.
 1. Protože v současné době neexistují žádné pozice řazení, musíte nějakou zadat. Do pole **ID pozice třídění** zadejte *SP01*.
-1. Protože k pozici řazení není aktuálně přiřazen žádná RZ *SP01*, musíte ji zadat. Do pole **LP** zadejte hodnotu *PLP01*.
+1. Protože k pozici řazení není aktuálně přiřazen žádná RZ *SP01* , musíte ji zadat. Do pole **LP** zadejte hodnotu *PLP01*.
 1. Vyberte **OK**.
 1. Protože je zapnuto ověření pozice řazení, musíte znovu zadat ID pozice řazení. Do pole **ID pozice třídění** zadejte *SP01*.
 1. Vyberte **OK**.
@@ -649,18 +650,18 @@ Musíte dokončit práci výběru tříděných zásob. Po dokončení budou zá
 1. V nabídce **Odchozí** vyberte **Načíst z třídění**.
 1. Zadejte cílové ID LP z první pozice třídění, *SP01*. Nastavte pole **ID** na *PLP01*.
 1. Vyberte **OK**.
-1. Na stránce **Výběr seřazených zásob: Vybrat** se zobrazuje práce výběru, kterou je potřeba provést. Vyberte z umístění *SORT* a cílového RZ *PLP01*, který má více položek a množství *3*.
+1. Na stránce **Výběr seřazených zásob: Vybrat** se zobrazuje práce výběru, kterou je potřeba provést. Vyberte z umístění *SORT* a cílového RZ *PLP01* , který má více položek a množství *3*.
 1. Vyberte **OK**.
-1. Na stránce **Výběr seřazených zásob: Vložit** se zobrazuje práce vložení, kterou je potřeba provést. Vložte do umístění *Nákladová brána* a cílového RZ *PLP01*, který má více položek a množství *3*.
+1. Na stránce **Výběr seřazených zásob: Vložit** se zobrazuje práce vložení, kterou je potřeba provést. Vložte do umístění *Nákladová brána* a cílového RZ *PLP01* , který má více položek a množství *3*.
 1. Vyberte **OK**.
 
     Práce je dokončena.
 
 1. Zadejte cílové ID registrační značky ze druhé pozice třídění, *SP02*. Nastavte pole **ID** na *PLP02*.
 1. Vyberte **OK**.
-1. Na stránce **Výběr seřazených zásob: Vybrat** se zobrazuje práce výběru, kterou je potřeba provést. Vyberte z umístění *SORT* a cílového RZ *PLP02*, který má více položek a množství *1*.
+1. Na stránce **Výběr seřazených zásob: Vybrat** se zobrazuje práce výběru, kterou je potřeba provést. Vyberte z umístění *SORT* a cílového RZ *PLP02* , který má více položek a množství *1*.
 1. Vyberte **OK**.
-1. Na stránce **Výběr seřazených zásob: Vložit** se zobrazuje práce vložení, kterou je potřeba provést. Vložte do umístění *Nákladová brána* a cílového RZ *PLP02*, který má více položek a množství *1*.
+1. Na stránce **Výběr seřazených zásob: Vložit** se zobrazuje práce vložení, kterou je potřeba provést. Vložte do umístění *Nákladová brána* a cílového RZ *PLP02* , který má více položek a množství *1*.
 1. Vyberte **OK**.
 
     Práce je dokončena.

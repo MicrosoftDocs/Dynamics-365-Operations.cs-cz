@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203404"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018645"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -102,7 +103,7 @@ Další informace o nastavení konfiguraci požadavku na dodavatele naleznete v 
 | Informace o dodavateli         | Tato stránka obsahuje jméno dodavatele, které se automaticky zadá z původního požadavku na registraci potenciálního dodavatele. Také obsahuje číslo organizace, telefonní číslo dodavatele, číslo faxu, e-mailovou adresu a adresy dodavatele pro různé účely. |
 | Informace o kontaktní osobě | Tato stránka obsahuje jméno kontaktní osoby, které se automaticky zadá z původního požadavku na registraci potenciálního dodavatele. Obsahuje také telefonní číslo kontaktní osoby a e-mailovou adresu a adresy kontaktní osoby pro různé účely. |
 | Obchodní informace       | Tato stránka obsahuje DIČ (pro různé země nebo regiony) a počet zaměstnanců. Rovněž udává, zda se jedná o firmu s menšinovými vlastníky. |
-| Kategorie zásobování     | Tato stránka obsahuje kategorie zásobování, pro které vyžaduje dodavatel schválení. Uživatel může vybrat kategorie v hierarchii kategorií zásobování. Počet úrovní, které jsou zobrazeny v hierarchii, lze konfigurovat v možnostech **Parametry modulu Zásobování a zdroje** &gt; **Dodavatelská spolupráce**pod položkami **Zásobování a zdroje** &gt; **Nastavení**. |
+| Kategorie zásobování     | Tato stránka obsahuje kategorie zásobování, pro které vyžaduje dodavatel schválení. Uživatel může vybrat kategorie v hierarchii kategorií zásobování. Počet úrovní, které jsou zobrazeny v hierarchii, lze konfigurovat v možnostech **Parametry modulu Zásobování a zdroje** &gt; **Dodavatelská spolupráce** pod položkami **Zásobování a zdroje** &gt; **Nastavení**. |
 | Dotazníky             | Průvodce může obsahovat sadu dotazníků pro dodavatele. Dotazníky, které se zobrazí v průvodci, jsou konfigurovány buď na požadavku na dodavatele nebo podle kategorie zásobování. Pokud jsou dotazníky konfigurovány podle kategorie zásobování, kategorie zásobování, pro které dodavatel požaduje schválení, určují dotazníky, které se zobrazí v průvodci. Na stránce **Kategorie zásobování** můžete přidat dotazník pod příslušnou kategorií a nastavit typ aktivity na **Nábor dodavatele**. |
 
 Když potenciální dodavatelský uživatel dokončí průvodce registrací dodavatele, vytvoří se požadavek na dodavatele.
@@ -119,7 +120,7 @@ Požadavky na dodavatele jsou k dispozici na stránce **Uživatelské žádosti 
 
 Požadavek na dodavatele obsahuje informace zadané uživatelem potenciálního dodavatele v průvodci registrací dodavatele.
 
-Požadavek vám umožní zkontrolovat informace o dodavateli a rozhodnout, zda by se měl dodavatel stát registrovaným dodavatelem.
+Požadavek vám umožní zkontrolovat informace o dodavateli a rozhodnout, zda by neměl být registrovaným dodavatelem.
 
 Požadavek na dodavatele má být odeslán do workflowu a měl by být směrován k příslušné kontrolorům a schvalovatelům. Další základní informace o způsobu nastavení workflowů naleznete v části [Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md).
 
@@ -139,11 +140,11 @@ Následující tabulka ukazuje stavy, které mohou mít požadavky na dodavatele
 
 Když je požadavek na dodavatele schválen, je vytvořen účet dodavatele a stav **Schváleno** se objeví na počátečním požadavku na registraci potenciálního dodavatele i na požadavku na dodavatele.
 
-Před schválením požadavku na dodavatele na stránce **Nový dodavatel**, na pevné záložce **Obecné** vyberte **Skupina dodavatelů** a vyberte skupinu dodavatelů.
+Před schválením požadavku na dodavatele na stránce **Nový dodavatel** , na pevné záložce **Obecné** vyberte **Skupina dodavatelů** a vyberte skupinu dodavatelů.
 
 Pokud má mít potenciální dodavatelský uživatel přístup k aplikaci Supply Chain Management jako uživatel dodavatelské spolupráce představující dodavatele, nastavte oprávnění k přístupu dodavatelské spolupráce na **Ano**. Chcete-li deaktivovat uživatelský účet, který potenciální dodavatele použil k registraci, nastavte toto oprávnění na **Ne**.
 
-Je-li oprávnění pro přístup k dodavatelské spolupráci nastaven na **Ano**, je po schválení požadavku na dodavatele odeslána žádost na úpravu role uživatele, aby měl uživatel role, které jsou definovány pro typ **Dodavatel** v položce **Externí role**. Je-li toto oprávnění nastaveno na **Ne**, je po schválení požadavku na dodavatele odeslána žádost na deaktivaci uživatele. V takovém případě musí být nastaveno workflow k deaktivaci požadavku uživatele.
+Je-li oprávnění pro přístup k dodavatelské spolupráci nastaven na **Ano** , je po schválení požadavku na dodavatele odeslána žádost na úpravu role uživatele, aby měl uživatel role, které jsou definovány pro typ **Dodavatel** v položce **Externí role**. Je-li toto oprávnění nastaveno na **Ne** , je po schválení požadavku na dodavatele odeslána žádost na deaktivaci uživatele. V takovém případě musí být nastaveno workflow k deaktivaci požadavku uživatele.
 
 Pro účet dodavatele, který má být vytvořen při schválení požadavku na dodavatele, číselná řada pro vytváření dodavatelů z požadavků na dodavatele musí být nastavena na **Automaticky**.
 

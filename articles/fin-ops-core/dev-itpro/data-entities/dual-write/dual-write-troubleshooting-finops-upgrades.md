@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275457"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997911"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Poradce při potížích souvisejících s upgrady aplikací Finance and Operations
 
@@ -67,15 +66,15 @@ Chcete-li opravit problém, postupujte následovně.
 
 Na stránce **Dvojího zápisu** se může zobrazit chybová zpráva podobná následujícímu příkladu:
 
-*Chybějící zdrojové pole \<název pole\> ve schématu.*
+*Chybějící zdrojové pole \<field name\> ve schématu.*
 
 ![Příklad chybové zprávy chybějícího zdrojového pole](media/error_missing_field.png)
 
 Chcete-li tento problém vyřešit, zkontrolujte nejprve následující kroky a ujistěte se, že pole jsou v entitě.
 
 1. Přihlaste se k modulu VM pro aplikaci Finance and Operations.
-2. Přejděte na **Pracovní prostory \> Správa dat**, vyberte dlaždici **Parametry architektury** a pak na kartě **Nastavení entity** vyberte **Aktualizovat seznam entit** pro aktualizaci entit.
-3. Přejděte na **Pracovní prostory \> Správa dat**, vyberte kartu **Datové entity** a zkontrolujte, zda je daná entita uvedena v seznamu. Není-li entita v seznamu uvedena, přihlaste se k virtuálnímu počítači pro aplikaci Finance and Operations a ujistěte se, že je daná entita dostupná.
+2. Přejděte na **Pracovní prostory \> Správa dat** , vyberte dlaždici **Parametry architektury** a pak na kartě **Nastavení entity** vyberte **Aktualizovat seznam entit** pro aktualizaci entit.
+3. Přejděte na **Pracovní prostory \> Správa dat** , vyberte kartu **Datové entity** a zkontrolujte, zda je daná entita uvedena v seznamu. Není-li entita v seznamu uvedena, přihlaste se k virtuálnímu počítači pro aplikaci Finance and Operations a ujistěte se, že je daná entita dostupná.
 4. Otevřete stránku **Mapování entit** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
 5. Chcete-li vyplnit pole v mapování entit, vyberte možnost **Aktualizovat seznam entit** .
 

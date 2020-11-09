@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
+ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803156"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018829"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -93,7 +93,7 @@ Nákupní smlouvu můžete vybrat pouze, když vytváříte nákupní objednávk
 V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikaceSupply Chain Management automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Zásady párování na nákupních smlouvách
-V záhlavní nákupní smlouvy můžete definovat zásady párování řádku. Tyto zásady párování řádků budou respektovat parametry závazků jako parametry párování řádků, když je pole **Povolit přepis zásad párování** na stránce **Parametry závazků** (na pevné záložce **Párování ceny a množství**) nastaveno na **Vyšší než zásady společnosti**. Dokumenty, které odkazují na nákupní smlouvu, budou používat zásady párování řádků, které jsou definovány v záhlaví nákupní smlouvy, pokud není pro odpovídající zásady nákupu položek, položek a dodavatelů nebo kategorie definováno jinak.
+V záhlavní nákupní smlouvy můžete definovat zásady párování řádku. Tyto zásady párování řádků budou respektovat parametry závazků jako parametry párování řádků, když je pole **Povolit přepis zásad párování** na stránce **Parametry závazků** (na pevné záložce **Párování ceny a množství** ) nastaveno na **Vyšší než zásady společnosti**. Dokumenty, které odkazují na nákupní smlouvu, budou používat zásady párování řádků, které jsou definovány v záhlaví nákupní smlouvy, pokud není pro odpovídající zásady nákupu položek, položek a dodavatelů nebo kategorie definováno jinak.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Nákupní smlouvy a mezipodnikový obchod
 Mezipodnikové obchodní vztahy lze vytvořit mezi účty dodavatele a účty zákazníků, které se u různých právnických osob liší. Po vytvoření prodejní objednávky nebo nákupní objednávky pro jednu ze stran se vytvoří mezipodnikový řetězec objednávek. V řetězci objednávek se prodejní objednávka a nákupní objednávka vytváří v příslušných právnických osobách.  

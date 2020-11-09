@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b7ac243a04309a41ab0e06c1b2d4843ae8ac0e22
-ms.sourcegitcommit: 7c32e4739c07d825a8562564ea9e78922db2ce38
+ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406374"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016026"
 ---
 # <a name="system-directed-cluster-picking"></a>Systémem řízený výdej v seskupení
 
@@ -69,9 +69,9 @@ Profily seskupení řídí způsob, jakým systém vytváří jednotlivá seskup
 5. Na pevné záložce **Obecné** zadejte následující informace:
 
     - **Generovat ID clusteru** - Vyberte **Ano**. Tato možnost určuje, zda je ID seskupení automaticky vytvořeno systémem nebo zda jej uživatel vytvoří na začátku výdeje. 
-    - **Aktivovat pozice** - Vyberte **Ano**. Tato možnost určuje, zda jsou názvy pozic automaticky generovány na základě nastavení názvu pozice. Pokud tato možnost nastavena na **Ne**, použije se ID registrační značky pro pozici.
+    - **Aktivovat pozice** - Vyberte **Ano**. Tato možnost určuje, zda jsou názvy pozic automaticky generovány na základě nastavení názvu pozice. Pokud tato možnost nastavena na **Ne** , použije se ID registrační značky pro pozici.
     - **Počet pozic** - Vyberte **2**. Toto pole určuje maximální počet pozic, které může seskupení mít (to znamená maximální počet polí, totů atd.).
-    - **Název pozice:** Vyberte **Numerická**, aby pozice byly pojmenovány pomocí souvislých čísel. Pokud vyberete **Abecední**, budou pozice pojmenovány v abecedním pořadí.
+    - **Název pozice:** Vyberte **Numerická** , aby pozice byly pojmenovány pomocí souvislých čísel. Pokud vyberete **Abecední** , budou pozice pojmenovány v abecedním pořadí.
     - **Přerušit seskupení v-** vyberte **Vložit**. Toto pole určuje, kdy je seskupení přerušené. 
     - **Typ ověření řazení-** vyberte **Skenování umístění**. Toto pole určuje, zda je ověřen krok zaskladnění.
         
@@ -125,11 +125,11 @@ Chcete-li vytvořit novou položku nabídky mobilního zařízení pro výdej v 
 ### <a name="set-up-a-mobile-device-menu"></a>Vytvořit nabídku mobilního zařízení
 
 1. Přejděte do nabídky **Řízení skladu > Nastavení > Mobilní zařízení > Nabídka mobilního zařízení**.
-1. Přidejte položku nabídky **Seskupení SD**, kterou jste právě vytvořili, do nabídky Mobilní zařízení.
+1. Přidejte položku nabídky **Seskupení SD** , kterou jste právě vytvořili, do nabídky Mobilní zařízení.
 1. Vyberte nabídku **Odchozí**.
 1. V podokně akcí vyberte **Upravit**.
 1. Rolujte, dokud nenajdete **Seskupení SD**.
-1. Vyberte **Seskupení SD**, šipka směřující na seznam **Struktura nabídky** se aktivuje.
+1. Vyberte **Seskupení SD** , šipka směřující na seznam **Struktura nabídky** se aktivuje.
 1. Výběrem tlačítka se **šipkou** přesuňte položku nabídky **Seskupení SD** do struktury nabídky **Odchozí**.
 1. Vyberte **Seskupení SD** ze seznamu **Struktura nabídky** a pak pomocí šipky **NAHORU** nebo **DOLů** přesuňte položku nabídky do požadované pozice v nabídce mobilního zařízení.
 
@@ -141,14 +141,14 @@ Dříve než můžete nastavit systémem řízený výdej v seskupení, musíte 
 
 1. Přejděte na **Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.
 1. V podokně akcí vyberte **Nový** k vytvoření první prodejní objednávky.
-    - Otevře se nabídka **Vytvořte prodejní objednávku**, zadejte následující informace:
+    - Otevře se nabídka **Vytvořte prodejní objednávku** , zadejte následující informace:
         - Na pevné záložce **Zákazník** zadejte **Účet zákazníka** - **US-004**.
         - Na pevné záložce **Obecné** zadejte **Sklad** - **62**.
         - Vyberte **OK** k zavření nabídky a vytvoření prodejní objednávky.
-    - Na pevné záložce **Řádky prodejní objednávky** vyberte **Přidat řádek**, pokud není automaticky přidán nový řádek, a zadejte následující:
+    - Na pevné záložce **Řádky prodejní objednávky** vyberte **Přidat řádek** , pokud není automaticky přidán nový řádek, a zadejte následující:
         - **Číslo položky** - A0001
         - **Množství** - 1
-        - Vyberte **Přidat řádek**, chcete-li přidat druhý řádek.
+        - Vyberte **Přidat řádek** , chcete-li přidat druhý řádek.
         - **Číslo položky** - A0002
         - **Množství** - 3
     - Rezervujte zásoby pro oba řádky, které jste právě vytvořili.
@@ -158,14 +158,14 @@ Dříve než můžete nastavit systémem řízený výdej v seskupení, musíte 
         - Po dokončení rezervace zavřete formulář **Rezervace**.
         - Opakujte tyto kroky, abyste rezervovali zásoby pro **Řádek 2**.
 1. V podokně akcí vyberte **Nový** k vytvoření druhé prodejní objednávky.
-    - Otevře se nabídka **Vytvořte prodejní objednávku**, zadejte následující informace:
+    - Otevře se nabídka **Vytvořte prodejní objednávku** , zadejte následující informace:
         - Na pevné záložce **Zákazník** zadejte **Účet zákazníka** - **US-005**.
         - Na pevné záložce **Obecné** zadejte **Sklad** - **62**.
         - Vyberte **OK** k zavření nabídky a vytvoření prodejní objednávky
-    - Na pevné záložce **Řádky prodejní objednávky** vyberte **Přidat řádek**, pokud není automaticky přidán nový řádek, a zadejte následující informace:
+    - Na pevné záložce **Řádky prodejní objednávky** vyberte **Přidat řádek** , pokud není automaticky přidán nový řádek, a zadejte následující informace:
         - **Číslo položky** - A0001
         - **Množství** - 4
-        - Vyberte **Přidat řádek**, chcete-li přidat druhý řádek.
+        - Vyberte **Přidat řádek** , chcete-li přidat druhý řádek.
         - **Číslo položky** - A0002
         - **Množství** - 2
     - Rezervujte zásoby pro oba řádky, které jste právě vytvořili.
@@ -182,11 +182,11 @@ Dříve než můžete nastavit systémem řízený výdej v seskupení, musíte 
     - Pro každou prodejní objednávku budou vytvořeny zásilky.
     - Bude vytvořena vlna a obě zásilky budou přiřazeny vlně. Poznamenejte si **ID vlny**.
 1. Přejděte na **Řízení skladu > Výstupní vlny > Vlny dodávek > Všechny vlny**.
-    - V seznamu **Všechny vlny** najděte a vyberte **ID vlny**, které jste vytvořili v předchozím kroku.
+    - V seznamu **Všechny vlny** najděte a vyberte **ID vlny** , které jste vytvořili v předchozím kroku.
     - Vyberte tlačítko **Vlna** v podokně akcí.
     - Ve skupině **Vlna** vyberte **Zpracovat** ke zpracování vlny, a vyberte **Práce**.
     - Informační zprávy budou generovány po dokončení zpracování, což znamená, že práce byla vytvořena a vlna byla zaúčtována.
-1. **Volitelné**: Přejděte na **Řízení skladu > Práce > Detaily práce** pro zobrazení vytvořené práce. Vytvoří se dvě různé ID práce. Každé ID práce má dva řádky výdeje.
+1. **Volitelné** : Přejděte na **Řízení skladu > Práce > Detaily práce** pro zobrazení vytvořené práce. Vytvoří se dvě různé ID práce. Každé ID práce má dva řádky výdeje.
 
 ### <a name="run-the-mobile-device-flow"></a>Spustit tok mobilního zařízení
 

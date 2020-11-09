@@ -3,7 +3,7 @@ title: Náhled a publikování experimentu
 description: Toto téma popisuje, jak zobrazit náhled a publikovat experiment z Dynamics 365 Commerce.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 91e2e4840a2d53f195d881279050b6415d48b070
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930157"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097109"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Náhled a publikování experimentu
 
@@ -34,9 +34,11 @@ Toto téma popisuje, jak můžete zobrazit náhled a publikovat experiment v Dyn
 ## <a name="preview-your-experiment-variations"></a>Náhled variant experimentu
 Můžete si prohlédnout náhled svých variant a dál je upravovat, dokud nebudou vypadat tak, jak chcete.
 
-1. V konfigurátoru webů vyberte v rozevírací nabídce variant pod panelem příkazů obsah, jehož náhled chcete zobrazit. 
-1. Na horním panelu vyberte **Náhled** . Zobrazí se náhled, jak bude obsah po publikování vypadat.
-1. Když budete chtít zobrazit jinou variantu, vyberte ji z rozevíracího seznamu variant a pak znovu vyberte **Náhled** .
+Chcete-li zobrazit náhled variací experimentu v nástroji pro tvorbu obchodních webů, postupujte takto.
+
+1. V rozevírací nabídce variant pod panelem příkazů obsah, jehož náhled chcete zobrazit. 
+1. Na příkazovém řádku vyberte možnost **Náhled**. Zobrazí se náhled, jak bude obsah po publikování vypadat.
+1. Když budete chtít zobrazit jinou variantu, vyberte ji z rozevíracího seznamu variant a pak znovu vyberte **Náhled**.
 
 ## <a name="publish-your-experiment"></a>Publikování experimentu
 Pokud k publikování experimentů na živý web nepoužíváte skupinu publikování a chcete experiment publikovat okamžitě, vyberte **Publikovat** na panelu příkazů. Budou publikovány všechny varianty, které patří k danému experimentu.
@@ -45,7 +47,7 @@ Pokud k publikování experimentů na živý web nepoužíváte skupinu publikov
 > Pokud má stránka nepublikovanou adresu URL, musíte nejprve publikovat adresu URL, jinak nebude pro uživatele vašeho webu viditelná. Podrobnosti najdete v tématu [Uložení, náhled a publikování stránky](save-preview-publish-page.md).
     
 ### <a name="use-publish-groups-to-schedule-when-your-experiment-goes-live"></a>Naplánování publikování experimentu na živý web pomocí skupin publikování
-Publikování variant vytvořených v konfigurátoru webů můžete naplánovat pomocí skupiny publikování. V rámci skupiny publikování můžete připojit stránku nebo fragment ke svému experimentu tak, že přejdete na kartu **Experimenty** nebo **Stránky** nebo **Fragmenty** . Další informace najdete v tématu [Připojení experimentu a úpravy variant](experimentation-connect-edit.md). Informace o skupinách publikování najdete v tématu [Práce se skupinami publikování](publish-groups.md).
+Publikování variant vytvořených v konfigurátoru webů můžete naplánovat pomocí skupiny publikování. V rámci skupiny pro publikování můžete k experimentu připojit stránku nebo fragment výběrem **Experimenty** v levém navigačním podokně. Můžete to také provést výběrem **Stránky** nebo **Fragmenty** a podle pokynů v [Připojte experiment a upravte varianty](experimentation-connect-edit.md). Informace o skupinách publikování najdete v tématu [Práce se skupinami publikování](publish-groups.md).
 
 Při používání skupin publikování s experimenty je třeba brát v úvahu několik důležitých aspektů.
 - Když do skupiny publikování přidáte stránku nebo fragment se spuštěným experimentem, bude ve skupině publikování tento experiment ze stránky nebo fragmentu odebrán.

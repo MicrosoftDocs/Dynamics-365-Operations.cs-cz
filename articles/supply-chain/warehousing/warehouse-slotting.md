@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597451"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017407"
 ---
 # <a name="warehouse-slotting"></a>Skladový slotting
 
 [!include [banner](../includes/banner.md)]
 
-Skladový slotting umožňuje konsolidovat poptávku podle položek a měrných jednotek z objednávek, jež jsou ve stavu *Objednáno*, *Rezervováno* nebo *Uvolněno*. Vygenerovanou poptávku je pak možné aplikovat na skladová místa, jež budou použita k výdeji, na základě množství, měrných jednotek, fyzických rozměrů, pevných skladových míst a dalších parametrů. Poté, co byl vytvořen slottingový plán, je možné vytvořit práce doplňování, aby bylo do každého skladového místa dodáno vhodné množství zásob.
+Skladový slotting umožňuje konsolidovat poptávku podle položek a měrných jednotek z objednávek, jež jsou ve stavu *Objednáno* , *Rezervováno* nebo *Uvolněno*. Vygenerovanou poptávku je pak možné aplikovat na skladová místa, jež budou použita k výdeji, na základě množství, měrných jednotek, fyzických rozměrů, pevných skladových míst a dalších parametrů. Poté, co byl vytvořen slottingový plán, je možné vytvořit práce doplňování, aby bylo do každého skladového místa dodáno vhodné množství zásob.
 
 Tato funkce pomáhá skladovým manažerům inteligentně plánovat výdejová skladová místa, než uvolní objednávky do skladu a vytvoří výdejní práce.
 
@@ -158,7 +159,7 @@ Pro každou vytvořenou šablonu přidejte pro každou specifikaci slottingu ř�
 
     - **Povolit přerušení:** _Ano_
 
-        Je-li u této možnosti nastavena hodnota *Ano*, v případě, že u určité poptávky nelze provést slotting, se vytvoří pohyb, kterým budou zásoby odebrány ze skladových míst, kde se nacházejí zásoby, ale kde nic nebylo zpracováno pomocí slottingu. Šablona se poté spustí znovu. Tentokrát bude ignorovat zásoby v daných skladových místech. Tato funkce funguje nejlépe, když je v poli **Kritéria přiřazení slotu** zadána hodnota _Zvážit množství_.
+        Je-li u této možnosti nastavena hodnota *Ano* , v případě, že u určité poptávky nelze provést slotting, se vytvoří pohyb, kterým budou zásoby odebrány ze skladových míst, kde se nacházejí zásoby, ale kde nic nebylo zpracováno pomocí slottingu. Šablona se poté spustí znovu. Tentokrát bude ignorovat zásoby v daných skladových místech. Tato funkce funguje nejlépe, když je v poli **Kritéria přiřazení slotu** zadána hodnota _Zvážit množství_.
 
     - **Použití pevného skladového místa:** _Pouze pevná skladová místa pro produkt_
 
@@ -216,7 +217,7 @@ Musí se nastavit alespoň jedna směrnice skladového místa, jež bude podporo
     - **Sklad:** _61_
     - **Kód předpisu:** _Slotting_
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky**, klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky** , klikněte na **Uložit**.
 
 ##### <a name="configure-the-lines-fasttab"></a>Konfigurace záložky s náhledem Řádky
 
@@ -226,7 +227,7 @@ Musí se nastavit alespoň jedna směrnice skladového místa, jež bude podporo
     - **Od množství:** _0_
     - **Do množství:** _1000000_
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa**, klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa** , klikněte na **Uložit**.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Konfigurace záložky s náhledem pro Akce směrnice skladového místa
 
@@ -304,7 +305,7 @@ Když jsou splněny všechny nezbytné předpoklady, jak se popisuje v předcho
 
 *Poptávka na slotting* ukazuje výsledky generování poptávky na základě nastavení šablony slottingu.
 
-- V podokně Akce vyberte **poptávka na slotting**, zobrazí se výsledky příkazu **Generovat poptávku**. Řádky poptávky na slotting lze upravovat. Můžete smazat řádek, přidat nový řádek nebo upravit podrobnosti řádku.
+- V podokně Akce vyberte **poptávka na slotting** , zobrazí se výsledky příkazu **Generovat poptávku**. Řádky poptávky na slotting lze upravovat. Můžete smazat řádek, přidat nový řádek nebo upravit podrobnosti řádku.
 
 > [!NOTE]
 > Poptávku lze upravit ručně nebo ji můžete importovat z externího systému pomocí správy dat. Ať už je v poptávce na slotting cokoli, bude to použito v dalším kroku, bez ohledu na to, odkud to bylo získáno.
@@ -319,7 +320,7 @@ Po vygenerování poptávky musíte použít příkaz **Vyhledat poptávku** k 
 
 Plán slottingu ukazuje skladová místa, k nimž byly přiřazeny jednotlivé položky a jednotlivá množství, zda bylo použito přeplnění, zda byla vytvořena práce s přerušením a jaká šablona bylo pro daný řádek použita. **Jakákoli poptávka, která nemohla být zpracována formou slottingu, se zvýrazní červeně.**
 
-- V podokně Akce vyberte **Plán slottingu**, zobrazí se výsledky.
+- V podokně Akce vyberte **Plán slottingu** , zobrazí se výsledky.
 
 #### <a name="create-replenishment"></a>Vytvoření doplnění
 
@@ -343,7 +344,7 @@ Po přípravě všech povinných prvků můžete nastavit automatizaci slottingu
     - Vytvořit práci doplnění
 
     > [!NOTE]
-    > Kroky slottingu jsou progresivní. Pokud chcete vybrat krok *Vyhledat poptávku*, musíte nejprve vybrat *Generovat poptávku*.
+    > Kroky slottingu jsou progresivní. Pokud chcete vybrat krok *Vyhledat poptávku* , musíte nejprve vybrat *Generovat poptávku*.
 
 1. Určete šablonu slottingu, kterou chcete použít.
 1. Pokud chcete spouštět běh automaticky, nastavte opakování.

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 0ecc401706911f8b92146b95bb6415185df8b451
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173032"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997545"
 ---
 # <a name="switch-between-vendor-designs"></a>Přepínání mezi návrhy dodavatele
 
@@ -34,7 +33,7 @@ ms.locfileid: "3173032"
 
 ## <a name="vendor-data-flow"></a>Tok dat dodavatele 
 
-Pokud se rozhodnete použít entitu **Účet** k ukládání dodavatelů typu **Organizace** a entitu **Kontakt** k ukládání dodavatelů typu **Osoba**, nakonfigurujte následující workflowy. V opačném případě není tato konfigurace nutná.
+Pokud se rozhodnete použít entitu **Účet** k ukládání dodavatelů typu **Organizace** a entitu **Kontakt** k ukládání dodavatelů typu **Osoba** , nakonfigurujte následující workflowy. V opačném případě není tato konfigurace nutná.
 
 ## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>Použití rozšířeného návrhu dodavatele pro dodavatele typu Organizace
 
@@ -58,7 +57,7 @@ Pro vytvoření nových procesů workflowu pomocí šablon procesů workflowu po
 
     ![Tlačítko Převést na workflow na pozadí](media/background_workflow.png)
 
-6. Aktivujte workflowy, které jste vytvořili pro entity **Účet** a **Dodavatel**, abyste mohli začít používat entitu **Účet** k ukládání informací pro dodavatele typu **Organizace**.
+6. Aktivujte workflowy, které jste vytvořili pro entity **Účet** a **Dodavatel** , abyste mohli začít používat entitu **Účet** k ukládání informací pro dodavatele typu **Organizace**.
 
 ## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a>Použití rozšířeného návrhu dodavatele pro dodavatele typu Osoba
 
@@ -76,4 +75,4 @@ Pro vytvoření nových procesů workflowu pomocí šablon procesů workflowu po
 3. Vytvořte proces workflowu pro entitu **Kontakt** a vyberte šablonu **Vytvoření dodavatelů typu Osoba v entitě Dodavatelé**.
 4. Vytvořte proces workflowu pro entitu **Kontakt** a vyberte šablonu **Aktualizace dodavatelů typu Osoba v entitě Dodavatelé**.
 5. Pracovní postupy můžete konfigurovat buď jako workflowy v reálném čase nebo na pozadí v závislosti na vašich požadavcích. Chcete-li nakonfigurovat workflow jako workflow na pozadí, vyberte možnost **Převést na workflow na pozadí**.
-6. Aktivujte workflowy, které jste vytvořili v entitách **Kontakt** a **Dodavatel**, abyste mohli začít používat entitu **Kontakt** k ukládání informací pro dodavatele typu **Osoba**.
+6. Aktivujte workflowy, které jste vytvořili v entitách **Kontakt** a **Dodavatel** , abyste mohli začít používat entitu **Kontakt** k ukládání informací pro dodavatele typu **Osoba**.

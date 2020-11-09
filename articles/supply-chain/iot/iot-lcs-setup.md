@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae6b36c40d2f2f9e5266dfb3e2d1cbbb57755222
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803084"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014928"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Instalace doplňku IoT Intelligence v LCS
 
@@ -52,7 +52,7 @@ Nastavení LCS je nyní dokončeno. Dalším krokem je [nastavení scénáře](i
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Odinstalace doplňku
 
-1. V aplikaci Supply Chain Management [zakažte scénáře](iot-scenario-setup.md#how-to-disable-a-scenario).
+1. V aplikaci Supply Chain Management [zakažte scénáře](iot-scenario-setup.md#disable-a-scenario).
 2. V LCS přejděte k podrobnostem prostředí Supply Chain Management .
 3. Přejděte do části **Doplňky prostředí**.
 4. Vyberte **Odinstalovat** pro doplněk IoT Intelligence.

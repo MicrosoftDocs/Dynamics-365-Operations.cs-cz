@@ -240,6 +240,8 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Zobrazení výsledků automatizace faktur dodavatele
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Pracovní prostor pro zadávání faktur dodavatele
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Rozúčtování a položky dílčí hlavní knihy pro faktury dodavatele
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Párování faktur a mezipodnikové nákupní objednávky
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Zobrazení položek a transakcí
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Předvaha se sestavou transakčních podrobností
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Zapsání zaúčtovaných položek deníku do deníku
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Přecenění měny v konsolidační společnosti
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Vytvoření pokročilého zadávání do hlavní knihy ve veřejném sektoru
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Předvaha se sestavou transakčních podrobností
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Použití limitů kontroly hotovosti
                   href: public-sector/cash-control.md
                 - name: Zpracování na konci roku ve veřejném sektoru
@@ -1398,6 +1400,8 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: Certifikáty NF-e
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: Ověření vlastního certifikátu NF-e
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'Nastavení, import a ověření dokumentů NF-e XML a DANFE'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Nastavení federálních parametrů NF-e
@@ -2080,6 +2084,8 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Daňový dotaz
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: Vyčištění tabulky TaxDocumentJSON
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Daňový modul
                   items:
                     - name: Přehled daňového modulu
@@ -2651,7 +2657,7 @@
                         - name: Přehled profilu zásob
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Nastavení profilu zásob
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Použití profilu zásob v dokumentech a dotazech
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Vykazování

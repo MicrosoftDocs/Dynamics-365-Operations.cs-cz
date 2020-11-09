@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6472672f5d618cc6d100298dd35939afa4c0066d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835922"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039862"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Začněte s doplňkem elektronické fakturace pro Brazílii 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > Doplněk elektronické fakturace pro Brazílii aktuálně nepodporuje všechny funkce, které jsou k dispozici v integraci fiskálních dokumentů zabudovaných do Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
@@ -58,7 +58,7 @@ Během instalace RCS dokončíte tyto úlohy:
 
 1. Přihlaste se k účtu RCS.
 2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **elektronická fakturace**.
-3. Na stránce **Funkce elektronické fakturace** vyberte **Import**, chcete-li importovat funkci elektronické fakturace fiskálních dokumentů NF-e z globálního úložiště.
+3. Na stránce **Funkce elektronické fakturace** vyberte **Import** , chcete-li importovat funkci elektronické fakturace fiskálních dokumentů NF-e z globálního úložiště.
 
     ![Tlačítko Importovat](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
 
@@ -89,11 +89,11 @@ Během instalace RCS dokončíte tyto úlohy:
 
         - formát exportu zrušení NFe
 
-2. V seznamu vyberte verzi konfigurace a poté vyberte **Upravit** nebo **Zobrazit**, chcete-li otevřít stránku **Návrhář formátů**, kde můžete upravit nebo zobrazit konfiguraci.
+2. V seznamu vyberte verzi konfigurace a poté vyberte **Upravit** nebo **Zobrazit** , chcete-li otevřít stránku **Návrhář formátů** , kde můžete upravit nebo zobrazit konfiguraci.
 
     ![Otevření stránky Návrhář formátu](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
-3. Použijte stránku **Návrhář formátů**, chcete-li upravovat nebo prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Použijte stránku **Návrhář formátů** , chcete-li upravovat nebo prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
     ![Stránka návrháře formátu](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
 
@@ -135,9 +135,9 @@ Chcete-li odeslat zrušení NF-e, je vyžadováno nastavení funkce **Zrušení*
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Nastavte adresu URL pro webové služby SEFAZ 
 
-1. Na stránce **Nastavení verze funkce** na kartě **Akce** na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **3**).
+1. Na stránce **Nastavení verze funkce** na kartě **Akce** na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **3** ).
 2. Na pevné záložce **Parametry** v poli **Parametr adresy URL** zadejte adresu URL webové služby SEFAZ pro odeslání NF-e.
-3. Na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **7**).
+3. Na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **7** ).
 4. Na pevné záložce **Parametry** v poli **Parametr adresy URL** zadejte adresu URL webové služby SEFAZ pro odeslání NF-e.
 
 #### <a name="configure-the-cancellation-feature-setup"></a>Nakonfigurujte nastavení funkce Zrušení
@@ -156,7 +156,7 @@ Chcete-li odeslat zrušení NF-e, je vyžadováno nastavení funkce **Zrušení*
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Nastavte adresu URL pro webové služby SEFAZ
 
-1. Na stránce **Nastavení verze funkce** na kartě **Akce** na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **3**).
+1. Na stránce **Nastavení verze funkce** na kartě **Akce** na pevné záložce **Akce** vyberte **Volejte brazilskou službu SEFAZ** (ID akce **3** ).
 2. Na pevné záložce **Parametry** v poli **Parametr adresy URL** zadejte adresu URL webové služby SEFAZ pro zrušení schváleného NF-e.
 
 ### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a>Zpřístupněte prostředí elektronické fakturace a přiřaďte verzi Koncept
@@ -206,7 +206,7 @@ Během instalace dokončíte tyto úlohy:
 1. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**.
 2. Vyberte **Úložiště**.
 3. Vyberte **Globální prostředek \> Otevřít**.
-4. Importujte **Import protokolu chyb NF-e (BR)**, **Formát importu dat odpovědí NF-e (BR)** a **Import zpráv odpovědi NF-e (BR)**.
+4. Importujte **Import protokolu chyb NF-e (BR)** , **Formát importu dat odpovědí NF-e (BR)** a **Import zpráv odpovědi NF-e (BR)**.
 5. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
 6. Na kartě **Elektronický dokument** vyberte **Přidat**.
 6. V poli **Název tabulky** zadejte **Záhlaví fiskálního dokumentu**.
@@ -231,14 +231,14 @@ Během zpracování ve Finance dokončíte tyto úlohy:
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Odešlete fiskální dokumenty NF-e k autorizaci SEFAZ 
 
-Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** již neluze používat starý postup pro odesílání fiskálních dokumentů NF-e k autorizaci (**Proces exportu / importu NF-e**). Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
+Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** již neluze používat starý postup pro odesílání fiskálních dokumentů NF-e k autorizaci ( **Proces exportu / importu NF-e** ). Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
 
 > [!NOTE]
 > Než budete pokračovat, ujistěte se, že máte jeden nebo více fiskálních dokumentů zákazníka model 55, které byly vystaveny fiskálním zřízením zákazníka. Směr pro tyto fiskální dokumenty musí být nastaven na **Odchozí** a stav musí být **Vytvořeno**. Další informace viz [Vydat fiskální dokument zákazníka (Brazílie)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu vždy nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
-3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
+3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz** , kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
 4. Na kartě **Rozsah** vyberte možnost **Přidat**.
 5. V poli **Tabulka** vyberte **Záhlaví fiskálního dokumentu**.
 6. V poli **Odvozená tabulka** vyberte **Záhlaví fiskálního dokumentu**.
@@ -301,7 +301,7 @@ Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturac
     ![Zobrazení podrobností protokolu odeslání zrušení](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Povolení funkce BR-00053 (NF-e Federal) může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkci BR-00053 (NF-e Federal) přechodem na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**. Vyberte kartu **Funkce**, vyberte řádek obsahující funkci BR-00053 a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
+Povolení funkce BR-00053 (NF-e Federal) může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkci BR-00053 (NF-e Federal) přechodem na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**. Vyberte kartu **Funkce** , vyberte řádek obsahující funkci BR-00053 a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
 
 
 ## <a name="additional-resources"></a>Další prostředky

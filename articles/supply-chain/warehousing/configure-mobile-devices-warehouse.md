@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f1c405566561661fe7c13db5bfca70114b1618
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016187"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -32,13 +32,13 @@ ms.locfileid: "3988339"
 Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
 > [!NOTE]
-> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení** . Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
+> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení**. Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
 
 - Zpracování dotazu nebo provedení aktivity, jako je tisk štítku, generování registrační značky vozidla, spuštění výrobní zakázky nebo rychlé vyhledání informací o položkách ve skladovém místě.
 - Vytvořte práci, která se provede prostřednictvím jiného procesu. Například přijetím položky pro nákupní objednávku můžete vytvořit pracovní vyskladnění pro jiného pracovníka.
 - Provedení práce, která byla vytvořena jiným procesem (existující práce), jako je například vyskladnění, které bylo vytvořeno při přijetí položky pro nákupní objednávku.
 
-Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole **Režim** na **Nepřímý** . Seznam možností **Kód aktivity** potom bude zpřístupněn a vy tak můžete vybrat typ dotazu nebo aktivity, pro kterou je položka nabídky určena. Pokud chcete vytvořit položku nabídky ke generování skladu, nastavte pole **Režim** na **Práce** . Seznam možností **Proces pro vytvoření práce** bude k dispozici. Pokud chcete vytvořit položku nabídky ke zpracování existující skladové práce, nastavte pole **Režim** na **Práce** a nastavte možnost **Použít stávající práci** na **Ano** . 
+Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole **Režim** na **Nepřímý**. Seznam možností **Kód aktivity** potom bude zpřístupněn a vy tak můžete vybrat typ dotazu nebo aktivity, pro kterou je položka nabídky určena. Pokud chcete vytvořit položku nabídky ke generování skladu, nastavte pole **Režim** na **Práce**. Seznam možností **Proces pro vytvoření práce** bude k dispozici. Pokud chcete vytvořit položku nabídky ke zpracování existující skladové práce, nastavte pole **Režim** na **Práce** a nastavte možnost **Použít stávající práci** na **Ano**. 
 
 > [!NOTE]
 > Další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto tématu.
@@ -55,12 +55,12 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé** , mů
 | Dotaz na registrační značku vozidla | Prohlédněte si množství položek na registrační značce a umístění registrační značky. |
 | Spustit výrobní zakázku | Spusťte výrobní zakázku. |
 | Výrobní odpad | Zadejte množství odpadu, který byl vytvořen během výroby pro každý řádek kusovníku. |
-| Poslední paleta výroby | Uveďte, že byla vyrobena poslední paleta zboží pro výrobní zakázku, a že je nutné aktualizovat stav výrobní zakázky tak, aby byl **hlášen jako dokončený** . Stav surovin, které nebyly při výrobě spotřebovávají, se vrátí z kategorie **Vyskladněno** na **Na objednávce** , a položky se mohou vrátit mezi zásoby. |
+| Poslední paleta výroby | Uveďte, že byla vyrobena poslední paleta zboží pro výrobní zakázku, a že je nutné aktualizovat stav výrobní zakázky tak, aby byl **hlášen jako dokončený**. Stav surovin, které nebyly při výrobě spotřebovávají, se vrátí z kategorie **Vyskladněno** na **Na objednávce** , a položky se mohou vrátit mezi zásoby. |
 | Dotaz na zboží | Naskenujte položku a určete, kde se ve skladě nachází. Dotaz vrátí všechna umístění a množství pro skenovanou položku. |
 | Znovu vytisknout štítek | Znovu vytiskněte štítek registrační značky. |
 | Sestavení registrační značky vozidla | Vytvořte nadřazenou registrační značku kombinací více registračních značek ve stejném skladovém místě. Tato možnost je užitečná, pokud přesouváte více registračních značek současně. Poté, co je nadřazená registrační značka přesunuta, je nutné provést změnu registračních značek předtím, než je možné vybrat položky pro každou z registračních značek. <p></p>**Tip:** Pro přesun nadřazené registrační značky je nutné použít mobilní zařízení konfigurováno pro vytváření přesouvané práce. |
 | Seskupení registračních značek | Změňte sestavení registrační značky tak, že bude možné vyzvednout položky ze sestavených registračních značek. |
-| Přihlášení řidiče | Pokud používáte aplikaci Správa přepravy, zaregistrujte naskenováním ID odchozího nákladu, ID události a ID dodávky skutečnost, že se dostavil řidič. Pro tuto možnost je zapotřebí přiřazení vytížení k události a nastavení stavu vytížení na **Naloženo** . |
+| Přihlášení řidiče | Pokud používáte aplikaci Správa přepravy, zaregistrujte naskenováním ID odchozího nákladu, ID události a ID dodávky skutečnost, že se dostavil řidič. Pro tuto možnost je zapotřebí přiřazení vytížení k události a nastavení stavu vytížení na **Naloženo**. |
 | Odhlášení řidiče | Zaregistrujte, že řidič ukončil svoji schůzku. |
 | Vymazat mezipaměť číselných řad | Odstraňte čísla z číselné řady z mezipaměti pro pořadová čísla. Tuto aktivitu většinou provádí správce systému a řeší tak potíže při ukládání do mezipaměti během používání mobilních zařízení. |
 | Změnit dispozici dávky | Pracovníkovi povolte zadat dispoziční kód dávky pro položky a dávky. Tato volba aktualizuje dispoziční kód, který je určen pro dávku. |
@@ -69,7 +69,7 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé** , mů
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurace položek nastavení k vytvoření práce pro jiného pracovníka nebo proces
-Po provedení počáteční akce pro mobilním zařízení můžete nastavit položku nabídky, která vytvoří práci pro jiného pracovníka. Pokud například jeden pracovník používá mobilního zařízení pro příjem položky, pro jiného zaměstnance se vytvoří pracovní vyskladnění. K nastavení položky nabídky, která vytvoří práci, vyberte na stránce **Položky nabídky mobilního zařízení** v poli **Režim** možnost **Práce** . V následující tabulce jsou možnosti v poli **Proces vytvoření práce** uspořádány podle typu pořadí pracovních činností.
+Po provedení počáteční akce pro mobilním zařízení můžete nastavit položku nabídky, která vytvoří práci pro jiného pracovníka. Pokud například jeden pracovník používá mobilního zařízení pro příjem položky, pro jiného zaměstnance se vytvoří pracovní vyskladnění. K nastavení položky nabídky, která vytvoří práci, vyberte na stránce **Položky nabídky mobilního zařízení** v poli **Režim** možnost **Práce**. V následující tabulce jsou možnosti v poli **Proces vytvoření práce** uspořádány podle typu pořadí pracovních činností.
 
 
 <table>
@@ -207,7 +207,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurace položek nabídky ke zpracování existující práce
-Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci** . Některé další možnosti poté budou k dispozici na kartě **Hlavní** . Můžete řídit přístup k položce nabídky přiřazením některé pracovní třídy na pevné záložce **Pracovní třída** . Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici. Možnost lze vybrat pod polem **Řídí** na stránce **Položky nabídky mobilního zařízení** . 
+Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci**. Některé další možnosti poté budou k dispozici na kartě **Hlavní**. Můžete řídit přístup k položce nabídky přiřazením některé pracovní třídy na pevné záložce **Pracovní třída**. Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici. Možnost lze vybrat pod polem **Řídí** na stránce **Položky nabídky mobilního zařízení**. 
 
 <table>
 
@@ -270,7 +270,7 @@ Tato možnost je užitečná například po připravení více palet k nákladu.
 </table>
 
 ## <a name="additional-menu-item-options"></a>Další možnosti pro položky nabídky
-Další možnosti položek nabídky jsou k dispozici na stránce **Položky nabídky mobilního zařízení** . Možnosti se liší v závislosti na tom, pro který proces konfigurujete položku nabídky. 
+Další možnosti položek nabídky jsou k dispozici na stránce **Položky nabídky mobilního zařízení**. Možnosti se liší v závislosti na tom, pro který proces konfigurujete položku nabídky. 
 
 Následující tabulka obsahuje popis těchto možností.
 

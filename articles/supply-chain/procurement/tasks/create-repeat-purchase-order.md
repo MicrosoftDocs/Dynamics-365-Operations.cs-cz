@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b478e4cd5cf1eb88517bb923c377c6121d92fd0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204762"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018022"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Vytvoření opakované nákupní objednávky
 
@@ -43,9 +43,9 @@ Toto téma popisuje, jak vytvořit opakující se nákupní objednávky zkopíro
     - Pole **Opačné znaménko** podporuje také změnu objednaného množství změnou znaménka u množství na přidaných řádcích v objednávce. To může být užitečné v případě, že je nutné stornovat transakci vytvořením řádků objednávky, které negují transakci. Tato možnost je vybrána automaticky při otevření stránky akcí **Vytvoření dobropisu**.  
     - Možnost **Kopírovat náklady** umožňuje kopírovat náklady do nové objednávky z dokumentu, ze kterého kopírujete řádky objednávky.  
     - Možnost **Přepočítat ceny** používá aktuální ceny a slevy namísto jejich kopírování z dokumentu, ze kterého kopírujete ostatní informace.  
-    - Možnost **Přesná kopie** vytvoří přesnou kopii hodnot ve všech polích v záhlaví a na řádcích objednávkového dokumentu. Pokud toto políčko nezaškrtnete, výchozí hodnoty budou použity pro mnoho polí týkajících se dodavatele a produktů, stejně jako byste vytvářeli novou objednávku ručně. Například pokud objednávka, ze které kopírujete, má přepsaný výchozí účet faktury pro dodavatele, tento samý účet faktury bude zkopírován do vaší objednávky. Pokud jste nevybrali možnost **Přesná kopie**, použije se ve vaší objednávce namísto toho výchozí účet faktury pro dodavatele.  
+    - Možnost **Přesná kopie** vytvoří přesnou kopii hodnot ve všech polích v záhlaví a na řádcích objednávkového dokumentu. Pokud toto políčko nezaškrtnete, výchozí hodnoty budou použity pro mnoho polí týkajících se dodavatele a produktů, stejně jako byste vytvářeli novou objednávku ručně. Například pokud objednávka, ze které kopírujete, má přepsaný výchozí účet faktury pro dodavatele, tento samý účet faktury bude zkopírován do vaší objednávky. Pokud jste nevybrali možnost **Přesná kopie** , použije se ve vaší objednávce namísto toho výchozí účet faktury pro dodavatele.  
     - Možnost **Odstranit řádky nákupu** odstraní všechny řádky nákupní objednávky, které již existují v nákupní objednávce, do které kopírujete, a to před použitím nových řádků. Tuto možnost použijte opatrně, protože odstraní všechny stávající řádky bez dalšího upozornění.  
-    - Pokud použijete možnost **Kopírovat záhlaví objednávky**, nemusíte ručně vytvářet informace o záhlaví v nové objednávce. Všimněte si, že tato možnost bude mít za následek použití výchozích hodnot pro pole související s dodavatelem. Pokud dokument, ze kterého kopírujete, má jiné než výchozí hodnoty, které chcete zkopírovat, použijte také možnost **Přesná kopie**.   
+    - Pokud použijete možnost **Kopírovat záhlaví objednávky** , nemusíte ručně vytvářet informace o záhlaví v nové objednávce. Všimněte si, že tato možnost bude mít za následek použití výchozích hodnot pro pole související s dodavatelem. Pokud dokument, ze kterého kopírujete, má jiné než výchozí hodnoty, které chcete zkopírovat, použijte také možnost **Přesná kopie**.   
     - Existují různé zdroje dokumentů, ze kterých lze kopírovat, a každý má určenou samostatnou část na této stránce. Například část **Nákupní objednávky** umožňují kopírovat z existujících nákupních objednávek.  
 
 8. V části **Nákupní objednávky** vyberte řádky, které chcete zkopírovat do schránky. Je možné vybrat další řádky nákupní objednávky z jiných nákupních objednávek a zkopírovat je také do objednávky. Také je možné přidat řádky z jiných typů dokumentů pro nákup. Dalších několik kroků umožňuje prohlédnout různé možnosti.  

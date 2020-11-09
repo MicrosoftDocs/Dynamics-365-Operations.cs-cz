@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987111"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016855"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
 
@@ -234,16 +234,16 @@ U každé sady prodejních objednávek, které jste vytvořili dříve, dokonč�
 
 #### <a name="update-the-wave-template-that-will-be-used-during-release"></a>Aktualizace šablony vln, která bude použita během uvolnění
 
-1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** .
-1. Nastavte pole **Typ šablony vln** na *Expedice* .
-1. Najděte a vyberte šablonu vlny přidruženou ke skladu, který jste použili v sadách objednávek, které jste pro tento scénář vytvořili. Pokud jste například použili sklad *24* , vybere šablonu vlny **Výchozí expedice 24** . Pokud jste použili sklad *61* , vybere šablonu vlny **Expedice 61** .
-1. V podokně akcí vyberte **Upravit** .
-1. Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na *Ne* .
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+1. Nastavte pole **Typ šablony vln** na *Expedice*.
+1. Najděte a vyberte šablonu vlny přidruženou ke skladu, který jste použili v sadách objednávek, které jste pro tento scénář vytvořili. Pokud jste například použili sklad *24* , vybere šablonu vlny **Výchozí expedice 24**. Pokud jste použili sklad *61* , vybere šablonu vlny **Expedice 61**.
+1. V podokně akcí vyberte **Upravit**.
+1. Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na *Ne*.
 
 #### <a name="release-to-the-warehouse"></a>Uvolnění do skladu
 
-1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Automatické uvolnění prodejních objednávek** .
-1. Nastavte pole **Množství k uvolnění** na *Vše* .
+1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Automatické uvolnění prodejních objednávek**.
+1. Nastavte pole **Množství k uvolnění** na *Vše*.
 1. Na záložce s náhledem **Záznamy k zahrnutí** vyberte **Filtr** a otevřete dialogové okno dotazu.
 1. Na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
@@ -253,13 +253,13 @@ U každé sady prodejních objednávek, které jste vytvořili dříve, dokonč�
     - **Kritéria:** Zadejte čárkami oddělený seznam čísel prodejních objednávek z požadované sady objednávek.
 
 1. Vyberte **OK** a uložte dotaz.
-1. Vyberte **OK** a zahajte postup *Automatické uvolnění do skladu* .
+1. Vyberte **OK** a zahajte postup *Automatické uvolnění do skladu*.
 
 #### <a name="review-the-shipment-that-is-created-or-updated"></a>Kontrola dodávky, která je vytvořena nebo aktualizována
 
-1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky** .
+1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.
 1. Najděte a vyberte požadovanou dodávku.
-1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek** .
+1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.
 
 ### <a name="release-sales-orders-from-order-set-1"></a>Uvolnění prodejních objednávek ze sady objednávek 1
 
@@ -267,8 +267,8 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny dvě dodávky:
 
-- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode* .
-- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo* .
+- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.
+- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Uvolnění prodejních objednávek ze sady objednávek 2
 
@@ -276,8 +276,8 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny tři dodávky:
 
-- První dodávka obsahuje položky *Hořlavý* .
-- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní* .
+- První dodávka obsahuje položky *Hořlavý*.
+- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Uvolnění prodejních objednávek ze sady objednávek 3
 
@@ -285,8 +285,8 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že došlo k následujícím akcím:
 
-- Byla aktualizována jedna existující dodávka (dodávka, která byla vytvořena při uvolnění sady objednávek 2 do skladu). Byl přidán řádek s položkou *Hořlavý* .
-- Byla vytvořena jedna nová dodávka, která obsahuje položku *Explozivní* .
+- Byla aktualizována jedna existující dodávka (dodávka, která byla vytvořena při uvolnění sady objednávek 2 do skladu). Byl přidán řádek s položkou *Hořlavý*.
+- Byla vytvořena jedna nová dodávka, která obsahuje položku *Explozivní*.
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Uvolnění prodejních objednávek ze sady objednávek 4
 
@@ -309,10 +309,10 @@ Následujte [základní postup uvolnění do skladu](#release-procedure) a uvoln
 
 Po dokončení byste měli vidět, že byly vytvořeny čtyři dodávky:
 
-- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky z objednávek 6-5 a 6-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky z objednávek 6-7 a 6-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder* .
+- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky z objednávek 6-5 a 6-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky z objednávek 6-7 a 6-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.
 
 ## <a name="additional-resources"></a>Další prostředky
 

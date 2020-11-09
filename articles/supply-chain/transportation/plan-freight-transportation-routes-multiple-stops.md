@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
+ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b76a6530517ec9e2e513cda7477f271558632650
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 04346363070fff4dc3110a620c3d9bc9b1016d1e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206258"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017844"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plánování tras nákladní dopravy s více zastávkami
 
@@ -43,7 +43,7 @@ Plán cesty obsahuje segmenty trasy, které poskytují informace o zastávkách,
 Každý plán trasy musí být přidružen k průvodci trasy.
 
 ## <a name="route-guides"></a>Průvodce trasou
-Průvodci trasy definují kritéria pro párování nákladu s konkrétním plánem trasy. Můžete například zadat původní centrum a cílové centrum, omezení pro objem hmotnost kontejneru a dopravce, službu nebo skupinu. Průvodci trasy jsou k dispozici na stránce **Pracovní plocha sazeb trasy**, kde lze náklady přiřadit k trasám, a to buď ručně nebo automaticky. Pokud je průvodce trasy určen pro naplánovanou trasu, je také k dispozici na stránce **Pracovní plocha sestavení vytížení**.
+Průvodci trasy definují kritéria pro párování nákladu s konkrétním plánem trasy. Můžete například zadat původní centrum a cílové centrum, omezení pro objem hmotnost kontejneru a dopravce, službu nebo skupinu. Průvodci trasy jsou k dispozici na stránce **Pracovní plocha sazeb trasy** , kde lze náklady přiřadit k trasám, a to buď ručně nebo automaticky. Pokud je průvodce trasy určen pro naplánovanou trasu, je také k dispozici na stránce **Pracovní plocha sestavení vytížení**.
 
 ## <a name="scheduled-routes"></a>Plánované trasy
 Naplánovaná trasa je předdefinovaný plán cesty, který obsahuje plán pro data expedice. Plánované trasy a neplánované trasy se liší způsobem, kterým jsou k nim náklady přiřazeny. Pokud přiřadíte neplánovanou trasu pomocí stránky Pracovní plocha sazeb trasy, jsou ověřeny pouze náklady a průvodce trasy. Pokud přiřadíte naplánovanou trasu, data a adresy z objednávky a center a datum pro plán trasy jsou také zohledněny. Není potřeba použít stránku Pracovní plocha sazeb trasy pro ruční přiřazení nákladů o naplánované trase. Místo toho můžete použít stránku Pracovní plocha sestavení vytížení a navrhnout tak sestavení nákladů na základě adres odběratele a datech dodání z prodejních objednávek pro danou plánovanou trasu. Pro plánované trasy bude plán trasy mít pevné původní a cílové centrum. Obvykle bude dopravce a služba stejná pro všechny segmenty, ale může se také lišit. Cílová centra jsou vytvářena pomocí PSČ odběratelů, kteří jsou po trase navštíveni. Několik schémat trasy lze definovat pro jeden plán trasy. Plán trasy musí být přidružen k průvodci trasy. Pro plánované trasy však může lze přidružit plán pouze k jednomu průvodci trasy. Plán trasy se používá pouze k vytvoření samotných tras na stránce **Plán trasy**. Při návrhu nákladů na stránce Pracovní plocha sestavení vytížení můžete použít výchozí šablonu nákladu.

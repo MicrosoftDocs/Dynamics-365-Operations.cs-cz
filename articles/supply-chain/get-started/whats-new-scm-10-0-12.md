@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 22ebe1640f17163351b63710534052ce3d810986
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: a210af5e37e12d883054d46719602604870213b4
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652052"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012406"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.12. (srpen 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.12. Tato verze má číslo sestavení 10.0.507 a je k dispozici následujícím způsobem:
+Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.12. Tato verze má číslo sestavení 10.0.507 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** květen 2020
 - **Obecná dostupnost (automatická aktualizace):** červenec 2020
@@ -39,13 +39,21 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 - [Umožnění uzamknutí dotykové obrazovky karty úlohy pro sanitaci](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Další informace naleznete v části [Konfigurace úkolového lístku pro zařízení](../production-control/config-job-card-device.md).
+
 - [Zachyťte varianty produktu a sledujte rozměry v aplikaci skladu během přijímání položky nákladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Další informace naleznete v tématu [Nastavení mobilních zařízení na práci ve skladu](../warehousing/configure-mobile-devices-warehouse.md).
+
 - Úroveň výpočtu nákladů (nová úroveň kusovníku)<br> - Další informace naleznete v tématu [Úroveň výpočtu nákladů](../cost-management/cost-calculation-level.md).
+
 - [Zákaznický portál pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - Další informace naleznete v tématu [Přehled zákaznického portálu pro Dynamics 365 Supply Chain Management](../sales-marketing/customer-portal-overview.md).
+
 - [Přehledy jádra inteligence IoT](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Další informace naleznete v tématu [Domovská stránka inteligence IoT](../iot/iot-intelligence-home-page.md).
+
 - [Vylepšení přijetí registrační značky pro aplikaci skladu (pokračování)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Další informace naleznete v části [Příjem registrační značky prostřednictvím aplikace skladu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+
 - [Hromadné nasazení Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Další informace naleznete v části [Instalace a konfigurace přehledu aplikace skladu](../warehousing/install-configure-warehousing-app.md).
+
 - [Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Další informace naleznete v části [Úloha vyčištění položek zásob na skladě v řízení skladu](../warehousing/onhand-cleanup.md).
+
 - [Podpora optimalizace plánování pro nákupní obchodní smlouvy](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Další informace naleznete v části [Hlavní plánování s obchodními smlouvami nákupu](../master-planning/planning-optimization/purchase-trade-agreement.md).
 
 ## <a name="additional-resources"></a>Další prostředky

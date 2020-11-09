@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4792cf982b9d5be3b30755483a5185a6d5a5a21
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207918"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018760"
 ---
 # <a name="purchase-order-overview"></a>Přehled nákupních objednávek
 
@@ -33,11 +33,11 @@ Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy
 
 Nákupní objednávka je dokument, který představuje dohodu s dodavatelem k nákupu zboží nebo služeb. Dokument také pomáhá udržet přehled o příjemkách produktu, které byly vytvořeny pro objednávku, a později o účtování faktur dodavatele, které dodavatel fakturuje pro objednávku.  
 
-Stránka **Nákupní objednávky** obsahuje přehled dostupných objednávek a umožňuje tyto objednávky měnit. Po otevření nákupní objednávky můžete vybrat zobrazení **Záhlaví**, které obsahuje informace, které jsou určeny pouze jednou pro každou nákupní objednávku, jako jsou podrobnosti o dodavateli. Případně můžete vybrat zobrazení **Řádky**, kde můžete měnit řádky objednávky. Obvykle budete přepínat mezi těmito dvěma zobrazeními při změnách nákupních objednávek. Poplatky nejsou uvedeny přímo na stránce **Nákupní objednávky**, ale jsou přístupné prostřednictvím nabídek v záhlaví a na řádkách objednávky.  
+Stránka **Nákupní objednávky** obsahuje přehled dostupných objednávek a umožňuje tyto objednávky měnit. Po otevření nákupní objednávky můžete vybrat zobrazení **Záhlaví** , které obsahuje informace, které jsou určeny pouze jednou pro každou nákupní objednávku, jako jsou podrobnosti o dodavateli. Případně můžete vybrat zobrazení **Řádky** , kde můžete měnit řádky objednávky. Obvykle budete přepínat mezi těmito dvěma zobrazeními při změnách nákupních objednávek. Poplatky nejsou uvedeny přímo na stránce **Nákupní objednávky** , ale jsou přístupné prostřednictvím nabídek v záhlaví a na řádkách objednávky.  
 
 Existuje mnoho sestav, kde můžete zobrazit informace o nákupních objednávkách, příjemkách produktu a fakturách dodavatele. Tyto zprávy jsou součástí modulů **Zásobování a zdroje** a **Závazky**.  
 
-Pracovní prostory **Příprava nákupní objednávky** a **Příjem a zpracování nákupní objednávky** umožňují zobrazit seznamy nákupních objednávek v různých stavech, do kterých dospěly. Poskytují také souhrn akcí, které je třeba provést. Pracovní prostor **Příprava nákupní objednávky** se zaměřuje na vytváření nákupních objednávek a jejich přezkoumání, zpracování objednávky prostřednictvím schválení a potvrzení u dodavatele. Pracovní prostor **Příjemka a zpracování nákupní objednávky** se zaměřuje na zpracování příjmu zboží nebo služeb proti nákupním objednávkám. Obsahuje seznamy, které umožňují pohled na příjmy, které jsou zpožděné nebo které budou brzy určené pro dodání dodavatelem. Tyto pracovní prostory nejsou používány k souvisejícím činnostem pro příjem, které jsou prováděny ve skladu. Tyto činnosti jsou prováděny prostřednictvím stránek v modulu **Řízení zásob** a **Řízení skladu**. Zpracování faktur dodavatele by mělo být provedeno pomocí pracovního prostoru **Záznamy faktury dodavatele**, a platby by se měly provést pomocí pracovního prostoru **Platby dodavatele**.  
+Pracovní prostory **Příprava nákupní objednávky** a **Příjem a zpracování nákupní objednávky** umožňují zobrazit seznamy nákupních objednávek v různých stavech, do kterých dospěly. Poskytují také souhrn akcí, které je třeba provést. Pracovní prostor **Příprava nákupní objednávky** se zaměřuje na vytváření nákupních objednávek a jejich přezkoumání, zpracování objednávky prostřednictvím schválení a potvrzení u dodavatele. Pracovní prostor **Příjemka a zpracování nákupní objednávky** se zaměřuje na zpracování příjmu zboží nebo služeb proti nákupním objednávkám. Obsahuje seznamy, které umožňují pohled na příjmy, které jsou zpožděné nebo které budou brzy určené pro dodání dodavatelem. Tyto pracovní prostory nejsou používány k souvisejícím činnostem pro příjem, které jsou prováděny ve skladu. Tyto činnosti jsou prováděny prostřednictvím stránek v modulu **Řízení zásob** a **Řízení skladu**. Zpracování faktur dodavatele by mělo být provedeno pomocí pracovního prostoru **Záznamy faktury dodavatele** , a platby by se měly provést pomocí pracovního prostoru **Platby dodavatele**.  
 
 Následující články poskytují přehled o různých fázích, kterými prochází nákupní objednávky:
 
@@ -73,7 +73,7 @@ Pole **Stav dokumentu** umožňuje rychle zkontrolovat průběh objednávky, pok
 
 Pole **Stav schválení** se používá, když nákupní objednávka prochází procesem kontroly nebo pracovním postupem. K dispozici jsou následující hodnoty:
 
--   **Návrh**, **Probíhá kontrola** a **Odmítnuto** – tyto stavy jsou použity pouze v případě, že se pro nákupní objednávku používá pracovní postup schválení.
+-   **Návrh** , **Probíhá kontrola** a **Odmítnuto** – tyto stavy jsou použity pouze v případě, že se pro nákupní objednávku používá pracovní postup schválení.
 -   **Schváleno** – tento stav je přiřazen k objednávkám, které mají dokončen pracovní postup schválení. Objednávky vytvořené bez použití pracovního postupu schválení obdrží stav **Schváleno** okamžitě.
 -   **Na externí kontrole** – tento stav se používá v případech, kde je nákupní žádanka odeslána dodavateli, aby dodavatel mohl potvrdit podmínky nákupní objednávky. Tento stav se také používá v procesu, který je spouštěn akcí **Žádost o potvrzení**. Pro tento proces je dodavatel požádán o potvrzení podmínek nákupní objednávky připojením do vašeho systému a zaregistrováním toho, zda je objednávka potvrzena nebo odmítnuta.
 -   **Potvrzeno** – tento stav je přiřazen poté, co objednávka byla potvrzena. Tento stav je obvykle poslední stav schválení přiřazený k objednávce.

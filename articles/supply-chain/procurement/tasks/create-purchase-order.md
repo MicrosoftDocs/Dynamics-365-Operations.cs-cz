@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383221"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018140"
 ---
 # <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
 
@@ -45,7 +45,7 @@ Toto téma popisuje způsob ručního vytváření nákupní objednávky. Nákup
 ## <a name="add-a-purchase-order-line"></a>Přidání řádku nákupní objednávky
 1. Vyberte **Řádek nákupní objednávky**.
 2. Vyberte **Dimenze**. Produkty mohou existovat ve více variantách, které se liší podle dimenzí, jako je barva, velikost nebo styl. Produkty lze také nastavit pro použití dimenzí úložiště, jako je například pracoviště nebo sklad. Existují také volitelné sledovací dimenze, jako například dávka nebo sériová čísla. Chcete-li zvýšit efektivitu zadání objednávek, můžete přidat nejčastěji používaná pole dimenzí přímo do mřížky objednávky.  
-3. Označte pole **Barva**. Volitelné: Označíte-li pole **Uložit nastavení**, vybrané dimenze se při příštím otevření stránky nákupní objednávku zobrazí také v mřížce řádků objednávky.  
+3. Označte pole **Barva**. Volitelné: Označíte-li pole **Uložit nastavení** , vybrané dimenze se při příštím otevření stránky nákupní objednávku zobrazí také v mřížce řádků objednávky.  
 4. Vyberte **OK**.
 5. V poli **Číslo položky** zvolte **T0004**.
 
@@ -60,7 +60,7 @@ Toto téma popisuje způsob ručního vytváření nákupní objednávky. Nákup
     - Pole **Cena jednotky** obvykle obsahuje hodnotu z nákupní smlouvy nebo obchodní smlouvy. Je možné změnit jednotkovou cenu na jednotlivých řádcích objednávky, například pokud je nasmlouvána jedinečná cena s dodavatelem.  
     - Pole **Sleva** obsahuje částku slevy za každou jednotku. Tato sleva proto snižuje jednotkovou cenu o výši slevy. Tato sleva je zpravidla dodávána automaticky z obchodních nebo nákupních smluv, ale je možné ji přepsat pro jednotlivé řádky v případě, že byla s dodavatelem vyjednána jedinečná sleva.  
     - Je možné zadat procento slevy, které odpovídajícím způsobem snižuje čistou částku pro řádek. Toto procento slevy je zpravidla dodáváno automaticky z obchodních nebo nákupních smluv, ale je možné je přepsat pro jednotlivé řádky v případě, že byla s dodavatelem vyjednána jedinečná procentuální sleva.  
-    - Hodnotu v poli **Čistá částka** se počítá z dalších polí na řádku, včetně množství, jednotkové ceny, slevy a procenta slevy. Čistou částku lze změnit, ale poté pole **Jednotková cena**, **Sleva** a **Procento slevy** zůstanou nevyplněné a při zaúčtování k řádku bude zaúčtována částka přiměřená s ohledem na čistou částku. Pole **Čistá částka** se obvykle používá pouze pro zobrazení čisté částky na řádku.  
+    - Hodnotu v poli **Čistá částka** se počítá z dalších polí na řádku, včetně množství, jednotkové ceny, slevy a procenta slevy. Čistou částku lze změnit, ale poté pole **Jednotková cena** , **Sleva** a **Procento slevy** zůstanou nevyplněné a při zaúčtování k řádku bude zaúčtována částka přiměřená s ohledem na čistou částku. Pole **Čistá částka** se obvykle používá pouze pro zobrazení čisté částky na řádku.  
 
 8. Rozbalte sekci **Podrobnosti řádku**.
 9. Zvolte kartu **Doručení**. Jedinečné datum doručení, které lze přiřadit ke každému řádku objednávky. Datum pochází z pole v záhlaví nákupní objednávky, ale lze je změnit.  

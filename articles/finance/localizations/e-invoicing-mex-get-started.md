@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d719c3ba68458130d415c50319fdcdeafcfc783e
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: a30f5a9b585c826222108563ea10ac4194ee441c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835918"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039815"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Začněte s doplňkem elektronické fakturace pro Mexiko
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Doplněk elektronické fakturace pro Mexiko aktuálně nepodporuje všechny funkce, které jsou k dispozici v dokumentu Comprobante Fiscal Digital por Internet (CFDI) a v související integraci zabudované do Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management.
@@ -55,7 +54,7 @@ Během instalace RCS dokončíte tyto úlohy:
 
 1. Přihlaste se k účtu RCS.
 2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **elektronická fakturace**.
-3. Na stránce **Funkce elektronické fakturace** vyberte **Import**, chcete-li importovat funkci **Faktury CFDI (MX)** z globálního úložiště.
+3. Na stránce **Funkce elektronické fakturace** vyberte **Import** , chcete-li importovat funkci **Faktury CFDI (MX)** z globálního úložiště.
 
     > [!NOTE]
     > Pokud nevidíte funkci v seznamu, vyberte **Synchronizovat** a potom opakujte krok 3.
@@ -86,17 +85,17 @@ Můžete vytvořit novou verzi, pokud je třeba například aktualizovat adresy 
     - Žádost o zrušení CFDI (MX) (BusinessDocumentService)
     - Faktura CFDI (BusinessDocumentService)
 
-2. V seznamu vyberte verzi konfigurace a poté vyberte **Upravit** nebo **Zobrazit**, chcete-li otevřít stránku **Návrhář formátů**, kde můžete upravit nebo zobrazit konfiguraci.
+2. V seznamu vyberte verzi konfigurace a poté vyberte **Upravit** nebo **Zobrazit** , chcete-li otevřít stránku **Návrhář formátů** , kde můžete upravit nebo zobrazit konfiguraci.
 
     ![Otevření stránky Návrhář formátu](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Použijte stránku **Návrhář formátů**, chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Použijte stránku **Návrhář formátů** , chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](../../dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Stránka návrháře formátu](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Spravujte nastavení funkce elektronické fakturace
 
-- Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat**, **Odebrat** nebo **Upravit** ke správě nastavení funkcí elektronické fakturace.
+- Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat** , **Odebrat** nebo **Upravit** ke správě nastavení funkcí elektronické fakturace.
 
 ![Správa nastavení funkce elektronické fakturace](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
@@ -107,7 +106,7 @@ Chcete-li odeslat zrušení faktury CFDI, jsou vyžadována nastavení funkcí *
 ### <a name="configure-the-sales-invoice-feature-setup"></a>Nakonfigurujte nastavení funkce prodejní faktury
 
 1. Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** ve sloupci **Nastavení funkce** vyberte **Prodejní faktura**.
-2. Vyberte **Upravit**, chcete-li konfigurovat akce, pravidla použitelnosti a proměnné.
+2. Vyberte **Upravit** , chcete-li konfigurovat akce, pravidla použitelnosti a proměnné.
 
     ![Úprava nastavení funkce elektronické fakturace](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
@@ -150,7 +149,7 @@ Chcete-li odeslat zrušení faktury CFDI, jsou vyžadována nastavení funkcí *
 
 ## <a name="publish-the-e-invoicing-feature"></a>Publikovat funkci elektronické fakturace
 
-1. Na stránce **Funkce elektronické fakturace** vyberte kartu **Verze**, chcete-li spravovat stav funkce **Faktury CFDI (MX)**.
+1. Na stránce **Funkce elektronické fakturace** vyberte kartu **Verze** , chcete-li spravovat stav funkce **Faktury CFDI (MX)**.
 2. Vyberte **Změnit stav** ke změně stavu funkce.
 
 ![Změna stavu funkce elektronické fakturace](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
@@ -168,7 +167,7 @@ Chcete-li nastavit doplněk Elektronická fakturace v aplikaci Finance, dokonč�
 2. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**. Ujistěte se, že je tento poskytovatel konfigurace nastaven na **Aktivní**. Další informace o tom, jak nastavit poskytovatele jako **Aktivní** naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Vyberte **Úložiště**.
 4. Vyberte **Globální prostředek \> Otevřít**.
-5. Importujte **Model faktury**, **Mapování modelu faktury**, **Formát faktury CFDI (MX)**, **Formát žádosti o zrušení faktury CFDI (MX)** a **Formát zrušení faktury CFDI (MX)**.
+5. Importujte **Model faktury** , **Mapování modelu faktury** , **Formát faktury CFDI (MX)** , **Formát žádosti o zrušení faktury CFDI (MX)** a **Formát zrušení faktury CFDI (MX)**.
 
 ### <a name="turn-on-the-feature-for-processing-cfdi-invoices"></a>Zapněte funkci pro zpracování faktur CFDI
 
@@ -184,7 +183,7 @@ Chcete-li nastavit doplněk Elektronická fakturace v aplikaci Finance, dokonč�
 1. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**.
 3. Vyberte **Úložiště**.
 4. Vyberte **Globální prostředek \> Otevřít**.
-5. Importujte **Model zprávy s odpovědí**, **Import protokolu chyb CFDI (MX)**, **Import protokolu chyb CFDI (MX)** a **Import zpráv CFDI s odpovědí (MX)**.
+5. Importujte **Model zprávy s odpovědí** , **Import protokolu chyb CFDI (MX)** , **Import protokolu chyb CFDI (MX)** a **Import zpráv CFDI s odpovědí (MX)**.
 
 #### <a name="set-up-the-response-types"></a>Nastavte typy odpovědí
 
@@ -196,7 +195,7 @@ Chcete-li nastavit doplněk Elektronická fakturace v aplikaci Finance, dokonč�
     - Pro **Deník faktury zákazníka** zadejte **Kontext faktury zákazníka**.
     - Pro **Faktura projektu** zadejte **Kontext faktury projektu**.
 
-4. Vyberte **Typy odpovědí**, chcete-li konfigurovat typy odpovědí, které lze vrátit z doplňku elektronické fakturace a zahrnout do deníku faktury zákazníka nebo faktury projektu.
+4. Vyberte **Typy odpovědí** , chcete-li konfigurovat typy odpovědí, které lze vrátit z doplňku elektronické fakturace a zahrnout do deníku faktury zákazníka nebo faktury projektu.
 5. Vyberte **Nový** a pak v poli **Typ odpovědí** vyberte **Odpověď**.
 6. V poli **Stav odeslání** vyberte **Čeká na zpracování**.
 7. V poli **Mapování modelů** vyberte **Formát importu zprávy odpovědi - mapování modelu ze zprávy odpovědi**.
@@ -216,14 +215,14 @@ Během zpracování CFDI faktur ve Finance prostřednictvím doplňku Elektronic
 
 ### <a name="submit-cfdi-invoices"></a>Odesílat faktury CFDI
 
-Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** již nelze používat postup pro **Export/import elektronické faktury** pro odesílání faktur CFDI (**Pohledávky \> Faktury \> Elektronické faktury)**. Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
+Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** již nelze používat postup pro **Export/import elektronické faktury** pro odesílání faktur CFDI ( **Pohledávky \> Faktury \> Elektronické faktury)**. Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
 
 > [!NOTE]
 > Před použitím nového procesu **Odeslat elektronické dokumenty** ověřte, že bylo dokončeno nastavení požadované pro mexické e-faktury. Další informace naleznete v tématu [Rozložení CFDI verze 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu vždy nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
-3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
+3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz** , kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
 
 ![Odeslání dokumentu CFDI](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
@@ -239,7 +238,7 @@ Můžete si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty
 Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** je k dispozici nová stránka, která vám umožní sledovat proces odesílání dokumentů. Můžete tuto stránku použít, chcete-li si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty.
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
-2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka**, chcete-li filtrovat požadované elektronické dokumenty.
+2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka** , chcete-li filtrovat požadované elektronické dokumenty.
 
     ![Výběr typu dokumentu pro zobrazení protokolů odeslání](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
@@ -266,14 +265,14 @@ Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturac
 ![Zobrazit protokoly o odeslání z faktur CFDI](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> U faktur CFDI, které byly odeslány před zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace**, je k dispozici tlačítko **Historie**. U faktur CFDI, které byly odeslány po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace**, tlačítko **Historie** není k dispozici.
+> U faktur CFDI, které byly odeslány před zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** , je k dispozici tlačítko **Historie**. U faktur CFDI, které byly odeslány po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** , tlačítko **Historie** není k dispozici.
 
 ### <a name="submit-cancellation-of-cfdi-invoices"></a>Zrušení odeslání faktury CFDI
 
 Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** již nelze používat starý postup pro zrušení faktur CFDI. Je nahrazen novým procesem zrušení, který je vložen do stránky **Elektronický protokol pro odesílání dokumentů**.
 
 1. Přejděte na **Pohledávky \> Dotazy a sestavy \> CFDI (elektronické faktury)**.
-2. Pokud má faktura CFDI stav **Schváleno**, vyberte **Funkce \> Zrušit CFDI**.
+2. Pokud má faktura CFDI stav **Schváleno** , vyberte **Funkce \> Zrušit CFDI**.
 3. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
 4. Vyberte fakturu CFDI a poté vyberte **Funkce \> Odeslat související příspěvky**.
 5. Zadejte popis souvisejícího příspěvku a poté vyberte **OK**.
@@ -281,7 +280,7 @@ Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturac
 #### <a name="view-cancellation-submission-logs"></a>Zobrazit protokoly zrušení
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
-2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka**, chcete-li filtrovat pouze dikumenty deníku zákaznických faktur.
+2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka** , chcete-li filtrovat pouze dikumenty deníku zákaznických faktur.
 3. Vyberte fakturu CFDI a poté na stránce Akce vyberte **Dotazy \> Související příspěvky**.
 
     Stránka **Související odeslání** zobrazuje všechna související odeslání a jejich stav odeslání pro danou fakturu CFDI. Na následujícím obrázku představuje první řádek odeslání, které požadovalo schválení faktury CFDI. Druhý řádek představuje odeslání, které zrušilo danou fakturu CFDI.
@@ -293,7 +292,7 @@ Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturac
     ![Zobrazení podrobností protokolu odeslání zrušení](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Povolení funkcí MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) může vyžadovat zasílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkce MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) přechodem na **Správa organizace \> Nastavení \> Parametry elektronckého dokumentu**. Vyberte kartu **Funkce**, vyberte řádky obsahující funkce MX-00010 a MX-00016 a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
+Povolení funkcí MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) může vyžadovat zasílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkce MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) přechodem na **Správa organizace \> Nastavení \> Parametry elektronckého dokumentu**. Vyberte kartu **Funkce** , vyberte řádky obsahující funkce MX-00010 a MX-00016 a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829278"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997667"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Nastavení mapování pro pole stavu prodejní objednávky
 
@@ -45,7 +44,7 @@ Výčet **Stav** má následující hodnoty:
 - Fakturováno
 - Zrušeno
 
-Výčet **Stav dokumentu** určuje nejnovější dokument, který byl vygenerován pro objednávku. Například pokud je objednávka potvrzena, tento dokument je potvrzením prodejní objednávky. Pokud je prodejní objednávka částečně vyfakturována a poté je potvrzen zbývající řádek, zůstane stav dokladu **Faktura**, protože faktura je generována později v procesu.
+Výčet **Stav dokumentu** určuje nejnovější dokument, který byl vygenerován pro objednávku. Například pokud je objednávka potvrzena, tento dokument je potvrzením prodejní objednávky. Pokud je prodejní objednávka částečně vyfakturována a poté je potvrzen zbývající řádek, zůstane stav dokladu **Faktura** , protože faktura je generována později v procesu.
 
 Výčet **Stav dokumentu** má následující hodnoty:
 
@@ -98,7 +97,7 @@ Následující tabulka ukazuje mapování **stavu zpracování** mezi aplikacemi
 
 Chcete-li nastavit mapování pro pole stavu prodejní objednávky, musíte povolit atributy **IsSOPIntegrationEnabled** a **isIntegrationUser**.
 
-Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následujícím způsobem.
+Chcete-li povolit atribut **IsSOPIntegrationEnabled** , postupujte následujícím způsobem.
 
 1. Přejděte v prohlížeči na `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Nahraďte **\<test-name\>** odkazem vaší společnosti na aplikaci Prodej.
 2. Na otevřené stránce najděte **organizationid** a poznamenejte si hodnotu.
@@ -128,9 +127,9 @@ Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následující
 
     ![IsSOPIntegrationEnabled nastaveno na true](media/sales-map-integration-enabled.png)
 
-Chcete-li povolit atribut **isIntegrationUser**, postupujte následujícím způsobem.
+Chcete-li povolit atribut **isIntegrationUser** , postupujte následujícím způsobem.
 
-1. V aplikaci Sales přejděte na **Nastavení \> Přizpůsobení \> Přizpůsobit systém**, vyberte **Entita uživatele** a poté otevřete **Formulář \> Uživatel**.
+1. V aplikaci Sales přejděte na **Nastavení \> Přizpůsobení \> Přizpůsobit systém** , vyberte **Entita uživatele** a poté otevřete **Formulář \> Uživatel**.
 
     ![Otevření formuláře uživatele](media/sales-map-user.png)
 

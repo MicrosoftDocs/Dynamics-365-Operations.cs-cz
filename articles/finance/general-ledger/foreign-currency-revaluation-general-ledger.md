@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf61aa839d4d59b2c93eee9931eef0e6c51d4ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176745"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006206"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
@@ -67,7 +67,7 @@ Proces přecenění lze spustit pro jednu nebo více právnických osob. Vyhled�
 
 Přecenění lze spustit pro jednu nebo více cizích měn. Vyhledávání bude obsahovat všechny měny, které byly zaúčtovány v rozsahu data relevantním pro daný typ hlavního účtu právnické osoby, které jsou vybrány k přecenění (rozvaha nebo zisk a ztráta). Zúčtovací měna bude zařazena do seznamu, ale nic nebude oceněno, pokud je vybrána zúčtovací měna. 
 
-Nastavte **Náhled před zaúčtováním** na **Ano**, pokud chcete zkontrolovat výsledek přecenění hlavní knihy. Náhled v hlavní knize se liší od simulace v přecenění cizí měny pohledávek a závazků. Simulace v AR a AP je sestava, ale hlavní kniha má náhled, který lze zaúčtovat, aniž by bylo nutné znovu spustit proces přecenění. Náhled výsledků lze exportovat do aplikace Microsoft Excel, chcete-li uchovat historii způsobu výpočtu částek. Nelze použít dávkové zpracování, pokud chcete zobrazit výsledky přecenění. Z náhledu má uživatel možnost zaúčtovat výsledky všech právnických osob pomocí tlačítka **Zaúčtovat**. Pokud existuje problém s výsledky pro právnickou osobu, uživatel má možnost zaúčtovat dílčí sadu právnických osob pomocí tlačítka **Vybrat právnické osoby k zaúčtování**. 
+Nastavte **Náhled před zaúčtováním** na **Ano** , pokud chcete zkontrolovat výsledek přecenění hlavní knihy. Náhled v hlavní knize se liší od simulace v přecenění cizí měny pohledávek a závazků. Simulace v AR a AP je sestava, ale hlavní kniha má náhled, který lze zaúčtovat, aniž by bylo nutné znovu spustit proces přecenění. Náhled výsledků lze exportovat do aplikace Microsoft Excel, chcete-li uchovat historii způsobu výpočtu částek. Nelze použít dávkové zpracování, pokud chcete zobrazit výsledky přecenění. Z náhledu má uživatel možnost zaúčtovat výsledky všech právnických osob pomocí tlačítka **Zaúčtovat**. Pokud existuje problém s výsledky pro právnickou osobu, uživatel má možnost zaúčtovat dílčí sadu právnických osob pomocí tlačítka **Vybrat právnické osoby k zaúčtování**. 
 
 Po dokončení procesu přecenění cizí měny bude vytvořen záznam, který bude sledovat historii každé spuštění.  Bude vytvořen samostatný záznam pro každou právnickou osobu a účtovací vrstvu.
 
@@ -76,38 +76,33 @@ Transakce nerealizovaných zisků/ztrát jsou vytvořeny odlišně mezi přecen�
 
 **Příklad** Pro hlavní účet 110110 existují následující zůstatky.
 
-|            |                    |                        |                       |
+| Datum   | Účet hlavní knihy| Částka transakce | Účetní částka |
 |------------|--------------------|------------------------|-----------------------|
-| **Datum**   | **Účet hlavní knihy** | **Částka transakce** | **Účetní částka** |
 | 20. leden | 110110 (hotovost)      | 500 EUR (Má dáti)        | 1000 USD (Dal)      |
 
 Hlavní účet je přeceněn dne 31. ledna  Nerealizovaný zisk nebo ztráta se vypočte takto:
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuální zůsatek v měně transakce** | **Aktuální zůstatek v zúčtovací měně** | **Směnný kurz při přecenění** | **Nová částka v zúčtovací měně** | **Nerealizovaný zisk/ztráta**    |
 | 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
 
 Bude vytvořena následující účetní položka.
 
-|            |                          |           |            |
+| Datum   | Účet hlavní knihy       | Debet | Kredit |
 |------------|--------------------------|-----------|------------|
-| **Datum**   | **Účet hlavní knihy**       | **Má Dáti** | **Kreditní** |
 | 31. leden | 110110 (hotovost)            |           | 166.67     |
 | 31. leden | 801400 (Nerealizovaná ztráta) | 166.67    |            |
 
 Žádné nové transakce nejsou zaúčtovány v měsíci únoru.  Hlavní účet je přeceněn dne 28. února.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuální zůsatek v měně transakce** | **Aktuální zůstatek v zúčtovací měně** | **Směnný kurz při přecenění** | **Nová částka v zúčtovací měně** | **Nerealizovaný zisk/ztráta**    |
 | 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | Zisk 416,67 (1250 – 833.33) |
 
 Bude vytvořena následující účetní položka.
 
-|             |                          |           |            |
+| Datum    | Účet hlavní knihy       | Debet | Kredit |
 |-------------|--------------------------|-----------|------------|
-| **Datum**    | **Účet hlavní knihy**       | **Má Dáti** | **Kreditní** |
 | 28. únor | 110110 (hotovost)            | 416.67    |            |
 | 28. únor | 801600 (Nerealizovaný zisk) |           | 416.67     |
 

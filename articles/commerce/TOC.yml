@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (říjen 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Commerce 10.0.12 (srpen 2020)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -1040,11 +1038,13 @@
                       href: add-breadcrumb.md
                     - name: Modul navigační nabídky
                       href: nav-menu-module.md
+                    - name: Modul volby lokality
+                      href: site-selector.md
                 - name: Moduly shody s předpisy
                   items:
                     - name: Modul souhlasu se soubory cookie
                       href: cookie-consent-module.md
-            - name: Hledání
+            - name: Vyhledat
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
                   href: category-search-page-overview.md
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Anatomie modulu
                   items:
+                    - name: Přehled modulů
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Soubor definice modulu
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: Soubor komponenty React modulu
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Přehled interaktivních součástí
                       href: e-commerce-extensibility/interactive-components.md
+                    - name: Napodobení stavu přihlášení během místního vývoje
+                      href: e-commerce-extensibility/mock-sign-in.md
                     - name: Globalizace modulů pomocí třídy CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: Nastavení Azure Key Vault pro zabezpečenou správu klíčů
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Vývoj datových akcí
                   items:
                     - name: Přehled datových akcí
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Možnosti mezipaměti datových akcí
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Testování datových akcí pomocí napodobenin
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Datové akce načtení stránky
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Rozšíření motivu pro přidání rozšíření modulů
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Přepsat komponentu knihovny modulu v motivu
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Rozšíření motivu ze základního motivu
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Přidání vlastních zdrojů do kódu přizpůsobení
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK a aktualizace knihovny modulů
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Doporučené postupy
+                  items:
+                    - name: Osvědčené postupy pro vývoj Dynamics 365 Commerce
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: Retail SDK
               items:
                 - name: Architektura Retail SDK
@@ -2197,7 +2211,7 @@
                 - name: Retail Typescript a C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Spotřeba rozhraní API Retail Serveru v externích aplikacích
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Rozšiřitelnost Commerce Runtime (CRT)
               items:
                 - name: "Architektura a\_konfigurace CRT"

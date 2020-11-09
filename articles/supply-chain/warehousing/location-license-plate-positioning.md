@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6810753c10d03999c38a6163687effd771076c15
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530045"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017109"
 ---
 # <a name="location-license-plate-positioning"></a>Umístění registrační značky místa
 
@@ -59,11 +60,11 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
 
     - **Povolit určení polohy registrační značky:** *Ano*
 
-        Když je u této možnosti vybrána hodnota *Ano*, pozice registrační značky bude zachována pro registrační značky na daném skladovém místě.
+        Když je u této možnosti vybrána hodnota *Ano* , pozice registrační značky bude zachována pro registrační značky na daném skladovém místě.
 
     - **Zobrazit pozici LP mobilního zařízení:** *Ano*
 
-        Pokud je u této možnost vybrána hodnota *Ano*, bude se uživatelům mobilních zařízení během úprav a inventur pozice registrační značky zobrazovat. Nastavení této možnosti můžete změnit, pouze když je funkce zapnutá.
+        Pokud je u této možnost vybrána hodnota *Ano* , bude se uživatelům mobilních zařízení během úprav a inventur pozice registrační značky zobrazovat. Nastavení této možnosti můžete změnit, pouze když je funkce zapnutá.
 
 1. Zvolte **Uložit**.
 
@@ -75,7 +76,7 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
 1. V podokně akcí vyberte **Upravit**.
 1. Na záložce s náhledem **Řádky** vyberte řádek, který má v poli **Pořadové číslo** hodnotu *2*.
 1. Na záložce s náhledem **Akce směrnice skladového místa** vyberte řádek, který má hodnotu **Název** u možnosti *Výdej méně než palety* (mělo by se jednat o jediný takový řádek) a změnit u něj hodnotu v poli **Pořadové číslo** na *2*.
-1. Klikněte nad mřížkou na **Nový**, přidá se řádek pro novou akci směrnice skladového místa.
+1. Klikněte nad mřížkou na **Nový** , přidá se řádek pro novou akci směrnice skladového místa.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Pořadové číslo:** *1*
@@ -83,11 +84,11 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
 
 1. Dokud je ještě nový řádek vybrán, klikněte na **Upravit dotaz** nad mřížkou.
 1. V editoru dotazů klikněte na kartu **Spojení**.
-1. Rozbalte spojení tabulky **Skladová místa**, zobrazí se spojení tabulky **Dimenze zásob**.
-1. Rozbalte spojení tabulky **Dimenze zásob**, zobrazí se spojení tabulky **Zásoby na skladě**.
+1. Rozbalte spojení tabulky **Skladová místa** , zobrazí se spojení tabulky **Dimenze zásob**.
+1. Rozbalte spojení tabulky **Dimenze zásob** , zobrazí se spojení tabulky **Zásoby na skladě**.
 1. Vyberte **Dimenze zásob** a poté možnost **Přidat spojení tabulek**.
 1. V zobrazeném seznamu tabulek vyberte ve sloupci **Vztah** hodnotu **Registrační značka (registrační značka)**. Poté vyberte možnost **Vybrat** a přidejte **Registrační značku** do spojení tabulek **Dimenze zásob**.
-1. Dokud ještě máte vybranou **Registrační značku**, vyberte možnost **Přidat spojení tabulek**.
+1. Dokud ještě máte vybranou **Registrační značku** , vyberte možnost **Přidat spojení tabulek**.
 1. V zobrazeném seznamu tabulek vyberte ve sloupci **Vztah** hodnotu **Určení pozice registrační značky (registrační značka)**. Poté vyberte možnost **Vybrat** a přidejte **Určení pozice registrační značky** do spojení tabulek **Dimenze zásob**.
 
     ![Spojení tabulek](media/LpTableJoin.png "Spojení tabulek")
@@ -121,7 +122,7 @@ Protože funkce *Určení pozice registrační značky na skladovém místě* p�
 
     Na stránce se zobrazuje zadané skladové místo. Zobrazuje se zde také následující zpráva: „Skladové místo je dokončeno, přidat novou LP nebo položku?“
 
-1. Vyberte **Obnovit**, chcete-li přidat pro dané skladové místo množství.
+1. Vyberte **Obnovit** , chcete-li přidat pro dané skladové místo množství.
 1. Na stránce **Cyklická inventura: přidání nové LP nebo položky** vyberte pole **Položka** a zadejte hodnotu *A0001*.
 1. Vyberte **OK**.
 1. Na stránce **Cyklická inventura: Přidání nové LP nebo položky** zadejte do pole **LP** hodnotu *LP1001* (nebo jakékoli jiné číslo registrační značky podle vaší volby).
@@ -137,7 +138,7 @@ Protože funkce *Určení pozice registrační značky na skladovém místě* p�
 
     Na stránce se zobrazuje zadané skladové místo. Zobrazuje se zde také následující zpráva: „Skladové místo je dokončeno, přidat novou LP nebo položku?“
 
-1. Vyberte **Obnovit**, chcete-li přidat pro dané skladové další místo množství.
+1. Vyberte **Obnovit** , chcete-li přidat pro dané skladové další místo množství.
 1. Na stránce **Cyklická inventura: přidání nové LP nebo položky** vyberte pole **Položka** a zadejte hodnotu *A0002*.
 1. Vyberte **OK**.
 1. Na stránce **Cyklická inventura: Přidání nové LP nebo položky** vyberte pole **LP** a zadejte hodnotu *LP1002* (nebo jakékoli jiné číslo registrační značky dle vašeho výběru. Podmínkou je, že se číslo musí lišit od čísla registrační značky, které jste zadali dříve).
@@ -159,7 +160,7 @@ Práce je nyní dokončena.
 
     Na stránce se zobrazuje zadané skladové místo. Zobrazuje se zde také následující zpráva: „Skladové místo je dokončeno, přidat novou LP nebo položku?“
 
-1. Vyberte **Obnovit**, chcete-li přidat pro dané skladové místo množství.
+1. Vyberte **Obnovit** , chcete-li přidat pro dané skladové místo množství.
 1. Na stránce **Cyklická inventura: přidání nové LP nebo položky** vyberte pole **Položka** a zadejte hodnotu *A0002*.
 1. Vyberte **OK**.
 1. Na stránce **Cyklická inventura: Přidání nové LP nebo položky** vyberte pole **LP** a zadejte hodnotu *LP1003* (nebo jakékoli jiné číslo registrační značky dle vašeho výběru. Podmínkou je, že se číslo musí lišit od obou čísel registračních značek z předchozí procedury).
@@ -194,11 +195,11 @@ Práce je nyní dokončena.
 1. V mřížce vyberte první ID práce pro typ pracovního příkazu *Cyklická inventura*.
 1. V podokně Akce na kartě **Práce** ve skupině **Práce** vyberte **Cyklická inventura**.
 
-    Zobrazí se dva řádky, jeden pro každou položku a registrační značku. Hodnoty v polích **Napočítané množství**, **Skladové místo**, **Registrační značka** a **Položka** by měly odpovídat položkám množství vytvořeným na mobilním zařízení. Pokud kterékoli z těchto polí nevidíte, vyberte možnost **Zobrazit dimenze** v podokně Akce a přidejte je do mřížky.
+    Zobrazí se dva řádky, jeden pro každou položku a registrační značku. Hodnoty v polích **Napočítané množství** , **Skladové místo** , **Registrační značka** a **Položka** by měly odpovídat položkám množství vytvořeným na mobilním zařízení. Pokud kterékoli z těchto polí nevidíte, vyberte možnost **Zobrazit dimenze** v podokně Akce a přidejte je do mřížky.
 
 1. Vyberte oba řádky.
 1. V podokně Akce klikněte na možnost **Přijmout množství**.
-1. Zobrazí se zpráva „Zaúčtování – deník“. Vybrat **Podrobnosti zprávy**, zobrazí se číslo, pod kterým proběhlo zaúčtování do deníku.
+1. Zobrazí se zpráva „Zaúčtování – deník“. Vybrat **Podrobnosti zprávy** , zobrazí se číslo, pod kterým proběhlo zaúčtování do deníku.
 1. Zavřete podrobnosti zprávy.
 1. Obnovte stránku **Práce**.
 
@@ -212,11 +213,11 @@ Práce je nyní dokončena.
 1. Na kartě **Přehled** vyberte druhé ID práce pro typ pracovního příkazu *Cyklická inventura*.
 1. V podokně Akce na kartě **Práce** ve skupině **Práce** vyberte **Cyklická inventura**.
 
-    Je zobrazen jeden řádek pro položku a registrační značku. Hodnoty v polích **Napočítané množství**, **Skladové místo**, **Registrační značka** a **Položka** by měly odpovídat položkám množství vytvořeným na mobilním zařízení.
+    Je zobrazen jeden řádek pro položku a registrační značku. Hodnoty v polích **Napočítané množství** , **Skladové místo** , **Registrační značka** a **Položka** by měly odpovídat položkám množství vytvořeným na mobilním zařízení.
 
 1. Vyberte řádek.
 1. V podokně Akce klikněte na možnost **Přijmout množství**.
-1. Zobrazí se zpráva „Zaúčtování – deník“. Vybrat **Podrobnosti zprávy**, zobrazí se číslo, pod kterým proběhlo zaúčtování do deníku.
+1. Zobrazí se zpráva „Zaúčtování – deník“. Vybrat **Podrobnosti zprávy** , zobrazí se číslo, pod kterým proběhlo zaúčtování do deníku.
 1. Zavřete podrobnosti zprávy.
 1. Obnovte stránku **Práce**.
 
@@ -236,12 +237,12 @@ Práce je nyní dokončena.
 
 1. Všimněte si, že skladové místo *01A01R1S1B* má dvě registrační značky:
 
-    - **A0001**, kde je v poli **Pozice LP** zadána hodnota *1*
-    - **A0002**, kde je v poli **Pozice LP** zadána hodnota *2*
+    - **A0001** , kde je v poli **Pozice LP** zadána hodnota *1*
+    - **A0002** , kde je v poli **Pozice LP** zadána hodnota *2*
 
 1. Všimněte si, že skladové místo *01A01R1S2B* má jednu registrační značku:
 
-    - **A0002**, kde je v poli **Pozice LP** zadána hodnota *1*
+    - **A0002** , kde je v poli **Pozice LP** zadána hodnota *1*
 
 ### <a name="sales-order-scenario"></a>Scénář prodejní objednávky
 
@@ -268,7 +269,7 @@ Po nastavení funkce *Určení pozice registrační značky na skladovém míst�
     Zobrazí se informační zpráva indikující ID vlny a ID dodávky, jež byly vytvořeny pro tuto objednávku.
 
 1. Na záložce s náhledem **Řádky prodejních objednávek** v nabídce **Sklad** vyberte nad mřížkou možnost **Podrobnosti práce**.
-1. Zobrazí se stránka **Práce**, na níž je zobrazena práce, která byla vytvořena pro řádek prodeje. Poznamenejte si ID zobrazené práce.
+1. Zobrazí se stránka **Práce** , na níž je zobrazena práce, která byla vytvořena pro řádek prodeje. Poznamenejte si ID zobrazené práce.
 
 ### <a name="sales-picking-scenario"></a>Scénář výdeje pro prodej
 

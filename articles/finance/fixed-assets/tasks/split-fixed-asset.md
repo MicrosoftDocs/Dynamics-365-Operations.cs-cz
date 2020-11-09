@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 85ccf187e77faf338ac29452d823c3652b806a21
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
+ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138108"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4000286"
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
@@ -29,17 +29,20 @@ ms.locfileid: "3138108"
 
 Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku. Používá účetní roli a vzorová data USMF.
 
-
 ## <a name="create-a-new-fixed-asset"></a>Vytvořit nový dlouhodobý majetek
-1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
+
+1. V navigačním podokně přejděte na **Moduly \> Dlouhodobý majetek \> Dlouhodobý majetek \> Dlouhodobý majetek**.
 2. Zvolte **Nové**.
-3. Zadejte nebo vyberte hodnotu v poli **Skupina dlouhodobého majetku**. Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.  
+3. Zadejte nebo vyberte hodnotu v poli **Skupina dlouhodobého majetku**. Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.
 4. Zadejte hodnotu do pole **Název**.
 5. Zavřete formulář.
 
 ## <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
+
+Před rozdělením plně odepsaného majetku je třeba ručně změnit stav rezervace majetku ze **Zavřeno** na **Otevřeno**. Tento krok je nutný, protože stav rezervace musí být **Otevřeno** , pokud musíte pro majetek zaúčtovat transakce (například při odprodeji po vyřazení). Po změně stavu rezervace majetku rozdělte majetek podle těchto pokynů.
+
 1. V seznamu najděte a vyberte odkaz na dlouhodobý majetek, který chcete rozdělit.
-2. Vyberte **Knihy**. Vyberte knihu určenou pro rozdělení na nový majetek.  
+2. Vyberte **Knihy**. Vyberte knihu určenou pro rozdělení na nový majetek.
 3. Vyberte **Funkce**.
 4. Vyberte **Rozdělit dlouhodobý majetek**.
 5. Zadejte nebo vyberte hodnotu v poli **Do dlouhodobého majetku**.
@@ -50,13 +53,13 @@ Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou kni
 10. Vyberte **OK**.
 
 ## <a name="post-the-journal-transaction"></a>Zaúčtování transakce deníku
-1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku**.
+
+1. V navigačním podokně přejděte na **Moduly \> Dlouhodobý majetek \> Položky deníku \> Deník dlouhodobého majetku**.
 2. V seznamu vyberte deník vytvořený pomocí procesu rozdělení.
 3. Vybrat **řádky**.
 
-    - Ověřte, že byly vytvořeny řádky deníku.  
-    - Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.  
-    - Je vytvořena transakce pořízení pro nový majetek na stejnou částku.  
+    - Ověřte, že byly vytvořeny řádky deníku.
+    - Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.
+    - Je vytvořena transakce pořízení pro nový majetek na stejnou částku.
 
 4. Zvolte **Zaúčtovat**.
-

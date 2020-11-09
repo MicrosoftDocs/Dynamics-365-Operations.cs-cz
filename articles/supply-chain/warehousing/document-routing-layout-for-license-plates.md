@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLicensePlateLabel
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 9af077022ab0759534d2c1da5f39997712e6a354
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763448"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017706"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rozvržení směrování dokumentu pro popisky poznávací značky
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Zde je vysvětlení tohoto formátu:
 
-- `FieldName` je název datového pole (například **množství**).
+- `FieldName` je název datového pole (například **množství** ).
 - `FormatString` definuje způsob tisku dat.
 
-Následující příklady ukazují, jak lze upravit pole pracovní množství (**množství**):
+Následující příklady ukazují, jak lze upravit pole pracovní množství ( **množství** ):
 
 - Chcete-li vždy zobrazit čtyři číslice (pomocí nul jako zástupné symboly), použijte `$Qty:0000$`. Pokud je například množství 10, štítek zobrazí "0010".
 - Chcete-li vždy zobrazit dvě desetinná místa, použijte možnost `$Qty:0.00$`. Pokud je například množství 10, štítek zobrazí "10.00".

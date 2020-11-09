@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 20847ea4651b816fc95135ca03667ae297cde5be
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188480"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097179"
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 
@@ -43,7 +43,7 @@ Karta rovněž zobrazuje, kdy byl naposledy bankovní účet odsouhlasen. Tyto i
 
 ### <a name="balance"></a>Rozvaha
 
-Graf **Zůstatek** zobrazuje buď historické informace o zůstatku pro účet zvolený v části **Bankovní účty**, nebo souhrn historických informací o zůstatku pro všechny bankovní účty právnické osoby. Tyto informace jsou k dispozici pro různá období: aktuální týden, aktuální měsíc, aktuální rok, posledních pět let a všechna období (úplná historie bankovního účtu). 
+Graf **Zůstatek** zobrazuje buď historické informace o zůstatku pro účet zvolený v části **Bankovní účty** , nebo souhrn historických informací o zůstatku pro všechny bankovní účty právnické osoby. Tyto informace jsou k dispozici pro různá období: aktuální týden, aktuální měsíc, aktuální rok, posledních pět let a všechna období (úplná historie bankovního účtu). 
 
 Pokud zobrazíte graf **Zůstatek** pro jeden bankovní účet, historické zůstatky jsou zobrazeny v měně bankovního účtu. Pokud zobrazíte graf pro všechny bankovní účty právnické osoby, historické zůstatky jsou zobrazeny v zúčtovací měně.
 
@@ -63,4 +63,4 @@ Stránka **Analýza** poskytuje důležité metriky o bankovních účtech v akt
 -   Zůstatek podle bankovního účtu
 -   Zůstatek podle měny
 
-Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**.
+Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).

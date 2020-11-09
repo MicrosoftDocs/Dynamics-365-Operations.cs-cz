@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997247"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -64,7 +63,7 @@ Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
 1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Systém** vyberte **Správa**.
 2. Na stránce **Správa** zvolte **Nastavení systému**.
-3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
+3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše** , chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
 
 
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
@@ -84,7 +83,7 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
 2. Nastavte vlastnost **IsDebugMode** na **Ano** pro projekt.
 3. Spuštění scénáře generujících chyby.
-4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX**):
+4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX** ):
 
     `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
 
@@ -108,7 +107,7 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**.
 3. Vyberte všechna spuštěná mapování a pak vyberte **Zastavit**.
 4. Zvolte **Odpojit prostředí**.
-5. Vyberte **Ano**, chcete-li potvrdit operaci.
+5. Vyberte **Ano** , chcete-li potvrdit operaci.
 
 Nyní můžete propojit nové prostředí.
 
@@ -116,7 +115,7 @@ Nyní můžete propojit nové prostředí.
 
 Po vytvoření prodejní objednávky v produktu Dynamics 365 Sales se můžete kliknutím na možnost **+ Přidat produkty** přesměrovat do formuláře řádku objednávky Dynamics 365 Project Operations. Neexistuje žádný způsob, jak z tohoto formuláře zobrazit formulář **Informace** pro řádek prodejní objednávky. Možnost pro **informace** není zobrazena v rozevírací nabídce pod položkou **Nový řádek objednávky**. K tomu dojde, protože operace projektu byly nainstalovány ve vašem prostředí.
 
-Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následujícím způsobem:
+Chcete-li znovu povolit možnost formuláře **Informace** , postupujte následujícím způsobem:
 1. Přejděte na entitu **Řádek** objednávky.
 2. Vyhledejte formulář **Informace** v uzlu formulářů. 
 3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 

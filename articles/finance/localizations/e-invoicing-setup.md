@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835919"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039885"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Nastavení doplňku Elektronická fakturace
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Nastavení funkce doplňku elektronické fakturace je proces vytváření požadované konfigurace prostřednictvím prostředí Regulatory Configuration Services (RCS) a publikování této konfigurace na server doplňku elektronické fakturace. Nastavení umožňuje vytvořit konfigurovatelná pravidla, která doplňku elektronické fakturace umožňují používat zabezpečený protokol přes internet ke komunikaci a výměně dat s entitou třetí strany prostřednictvím webových služeb.
 
@@ -50,7 +50,7 @@ Proces instalace musí být dokončen ve vašem prostředí RCS. Podle těchto p
 
 1. Přihlaste se k prostředí RCS.
 2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **doplňek elektronická fakturace**.
-3. Na stránce **Funkce doplňku elektronické fakturace** vyberte **Import**, chcete-li importovat konfiguraci datového modelu ER z globálního úložiště.
+3. Na stránce **Funkce doplňku elektronické fakturace** vyberte **Import** , chcete-li importovat konfiguraci datového modelu ER z globálního úložiště.
 4. Vyberte **Přidat** k vytvoření funkce doplňku elektronické fakturace. Funkci můžete vytvořit buď úplně od začátku, nebo ji odvodit ze stávající funkce doplňku elektronické fakturace.
 
     ![Přidání funkce Elektronická fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
@@ -64,21 +64,21 @@ Konfigurace obsahují konfigurace formátu ER, které jsou vyžadovány pro tran
 
 Podle těchto pokynů přidejte formáty ER k funkci doplňku elektronické fakturace.
 
-1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Konfigurace** vyberte **Přidat**, chcete-li přidat konfigurace formátu souboru ER pro funkci doplňku elektronické fakturace.
+1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Konfigurace** vyberte **Přidat** , chcete-li přidat konfigurace formátu souboru ER pro funkci doplňku elektronické fakturace.
 
     ![Přidání konfigurace funkce doplňku Elektronická fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Když vytvoříte funkci doplňku elektronické fakturace úplně od začátku, musíte ručně přidat všechny konfigurace formátu souboru ER. Když odvodíte funkci doplňku elektronické fakturace z existujícího prvku, automaticky se vytvoří konfigurace formátu souboru ER, protože se dědí z původní funkce doplňku elektronické fakturace.
 
-2. Vyberte **Upravit** pro otevření stránky **Návrhář formátů**, kde můžete upravit konfiguraci formátu souboru ER.
+2. Vyberte **Upravit** pro otevření stránky **Návrhář formátů** , kde můžete upravit konfiguraci formátu souboru ER.
 
     ![Úprava konfigurace funkce doplňku Elektronická fakturace](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Při úpravách formátu je stav konfigurační verze nastaven na **Koncept**.
 
-3. Použijte stránku **Návrhář formátů**, chcete-li změnit konfiguraci formátu souborů. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Použijte stránku **Návrhář formátů** , chcete-li změnit konfiguraci formátu souborů. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
     ![Stránka návrháře formátu](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
@@ -88,14 +88,14 @@ Nastavení funkcí zapouzdřují pravidla pro komunikaci a zabezpečení s webov
 
 Podle těchto pokynů přidejte nastavení funkce k funkci doplňku elektronické fakturace.
 
-1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Nastavení** vyberte **Přidat**, chcete-li přidat nastavení funkcí pro funkci doplňku elektronické fakturace.
+1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Nastavení** vyberte **Přidat** , chcete-li přidat nastavení funkcí pro funkci doplňku elektronické fakturace.
 
     ![Přidání nastavení funkce Elektronická fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Když vytvoříte funkci doplňku elektronické fakturace úplně od začátku, musíte ručně přidat všechny požadované nastavení funcí. Když odvodíte funkci doplňku elektronické fakturace z existujícího prvku, automaticky se vytvoří všechna nastavení funkcí, protože se dědí z původní funkce doplňku elektronické fakturace.
 
-2. Vyberte **Upravit**, chcete-li upravit nastavení verze funkce.
+2. Vyberte **Upravit** , chcete-li upravit nastavení verze funkce.
 
     ![Úprava nastavení funkce Elektronická fakturace](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
@@ -113,8 +113,8 @@ Každá akce obsahuje předdefinovaný seznam parametrů, které jsou vyžadová
 
 Na stránce **Nastavení verzí funkcí** na kartě **Akce** na pevné záložce **Akce** při správě akcí postupujte podle jednoho nebo obou z těchto kroků:
 
-- Vyberte **Nový** nebo **Vymazat**, chcete-li přidat nové akce nebo odstranit stávající akce.
-- Vyberte **Nahoru** nebo **Dolů**, chcete-li přesunout vybrané akce nahoru nebo dolů v mřížce, a proto změnit pořadí, ve kterém jsou spuštěny. Akce se spouštějí v pořadí, v jakém se zobrazují v mřížce, zeshora dolů.
+- Vyberte **Nový** nebo **Vymazat** , chcete-li přidat nové akce nebo odstranit stávající akce.
+- Vyberte **Nahoru** nebo **Dolů** , chcete-li přesunout vybrané akce nahoru nebo dolů v mřížce, a proto změnit pořadí, ve kterém jsou spuštěny. Akce se spouštějí v pořadí, v jakém se zobrazují v mřížce, zeshora dolů.
 
 ![Správa akcí](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
@@ -194,7 +194,7 @@ Dostupné parametry se liší v závislosti na akci, která je vybrána na pevn�
 |-----------------------------|-------------|
 | Adresa URL webové služby             | Adresa URL, na kterou se mají odesílat požadavky. |
 | Časový limit webového požadavku         | Maximální doba (v milisekundách) čekání na odpověď webové služby. |
-| Vyžádejte si typ operace      | Typ operace požadavku HTTP (například **GET**, **POST** nebo **DELETE**). |
+| Vyžádejte si typ operace      | Typ operace požadavku HTTP (například **GET** , **POST** nebo **DELETE** ). |
 | Názvy certifikátu           | Názvy certifikátu. |
 | Kódování textu odpovědi      | Očekávané kódování textu odpovědi HTTP, aby bylo možné správně dekódovat. |
 | Typ obsahu požadavku HTTP   | Vstup záhlaví typu obsahu požadavku HTTP. |
@@ -260,7 +260,7 @@ Pravidla použitelnosti vám umožňují vytvářet logická pravidla, která ur
 
 #### <a name="set-up-applicability-rules"></a>Nastavit pravidla použitelnosti
 
-1. Na stránce **Nastavení verze funkce** na kartě **Pravidla použitelnosti** vyberte **Nový**, chcete-li přidat pravidlo použitelnosti.
+1. Na stránce **Nastavení verze funkce** na kartě **Pravidla použitelnosti** vyberte **Nový** , chcete-li přidat pravidlo použitelnosti.
 
     ![Správa pravidel použitelnosti](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
@@ -295,7 +295,7 @@ Můžete vytvořit proměnné a poté je použít jako vstupní hodnotu pro para
 
 #### <a name="set-up-variables"></a>Nastavit proměnné
 
-- Na stránce **Nastavení verze funkce** na kartě **Proměnné** vyberte **Nový** nebo **Vymazat**, chcete-li spravovat proměnné.
+- Na stránce **Nastavení verze funkce** na kartě **Proměnné** vyberte **Nový** nebo **Vymazat** , chcete-li spravovat proměnné.
 
     ![Správa proměnných](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
@@ -323,7 +323,7 @@ Prostředí doplňku elektronické fakturace musí být přidruženo k funkci do
 
 Pomocí těchto kroků povolte prostředí doplňku elektronické fakturace pro funkci doplňku elektronické fakturace.
 
-1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Prostředí** vyberte **Povolit**, chcete-li přidat prostředí doplňku elektronické fakturace.
+1. Na stránce **Funkce doplňku elektronické fakturace** na kartě **Prostředí** vyberte **Povolit** , chcete-li přidat prostředí doplňku elektronické fakturace.
 2. V poli **Platí od** zadejte datum, kdy má začít platnost nového prostředí.
 
 ![Povolení prostředí doplňku elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
@@ -332,7 +332,7 @@ Pomocí těchto kroků povolte prostředí doplňku elektronické fakturace pro 
 
 Funkci doplňku elektronické fakturace lze sdílet mezi více organizacemi.
 
-- Na stránce **Funkce doplňku elektronické fakturace** na kartě **Organizace** vyberte **Sdílet s**, chcete-li přidat organizaci, se kterou chcete sdílet funkci doplňku elektronické fakturace.
+- Na stránce **Funkce doplňku elektronické fakturace** na kartě **Organizace** vyberte **Sdílet s** , chcete-li přidat organizaci, se kterou chcete sdílet funkci doplňku elektronické fakturace.
 
 Chcete-li zastavit sdílení funkce doplňku elektronické fakturace s organizací, vyberte **Ukončit sdílení**.
 
@@ -343,7 +343,7 @@ Verze pomáhají řídit životní cyklus funkce doplňku elektronické fakturac
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Vytvořte novou verzi existující funkce doplňku elektronické fakturace
 
 1. Na stránce **Funkce doplňku elektronické fakturace** v mřížce vlevo vyberte funkci doplňku elektronické fakturace.
-2. Na kartě **Verze** vyberte **Nový**, chcete-li přidat novou verzi funkce doplňku Elektronická fakturace.
+2. Na kartě **Verze** vyberte **Nový** , chcete-li přidat novou verzi funkce doplňku Elektronická fakturace.
 
 ### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Změňte stav funkce doplňku elektronické fakturace
 
@@ -354,10 +354,10 @@ Podle těchto pokynů spravujte životní cyklus funkce doplňku elektronické f
 3. Zobrazí se výzva k potvrzení, že chcete dokončit funkci doplňku elektronické fakturace a všech jejích komponent. Vyberte **Ano** k potvrzení akce nebo **Ne** k jejímu zrušení.
 
     > [!NOTE]
-    > Pokud vyberete **Ano**, automaticky se změní stav konfiguračních verzí, které jsou součástí funkce doplňku elektronické fakturace z **Koncept** na **Dokončeno**.
+    > Pokud vyberete **Ano** , automaticky se změní stav konfiguračních verzí, které jsou součástí funkce doplňku elektronické fakturace z **Koncept** na **Dokončeno**.
 
 4. Vyberte **Změnit stav** a poté změňte stav z **Dokončeno** na **Publikovat**.
 5. Zobrazí se výzva k potvrzení, že chcete publikovat funkci doplňku elektronické fakturace a všech jejích komponent v globálním úložišti. Vyberte **Ano** k potvrzení akce nebo **Ne** k jejímu zrušení.
 
     > [!NOTE]
-    > Když vyberete **Ano**, stav konfiguračních verzí se automaticky změní z **Dokončeno** na **Sdílené**.
+    > Když vyberete **Ano** , stav konfiguračních verzí se automaticky změní z **Dokončeno** na **Sdílené**.

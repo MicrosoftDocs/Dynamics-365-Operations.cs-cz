@@ -3,7 +3,7 @@ title: Modul platby
 description: Toto téma popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818319"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055374"
 ---
 # <a name="payment-module"></a>Modul platby
 
@@ -42,6 +42,9 @@ Platební modul pokrývá veškeré poplatky za objednávky, které již nejsou 
 
 Konektor platby Adyen také podporuje silné ověření klienta (SCA). Část směrnice Evropské unie (EU) o platebních službách 2.0 (PSD2.0) vyžaduje, aby nakupující byli autentizováni mimo online obchod, když používají elektronickou platební metodu. Během procesu platby jsou zákazníci přesměrováni na své bankovní stránky. Poté se po ověření přesměrují zpět do toku plateb Commerce. Během tohoto přesměrování budou uloženy informace, které zákazník zadal v pokladně (například dodací adresa, možnosti doručení, informace o dárkových kartách a informace o věrnostním programu). Před zapnutím této funkce musí být platební konektor nakonfigurován pro SCA v centrále Commerce. Další informace naleznete v článku [Silná autentizace zákazníků pomocí Adyen](adyen_redirect.md).
 
+> [!NOTE]
+> U platebního konektoru Adyen lze modul iframe v platebním modulu vykreslit pouze v případě, že přidáte adresu Adyen URL do seznamu povolených stránek. Chcete-li tento krok provést , přidejte **\*.adyen.com** do směrnic **child-src** , **connect-src** , **img-src** , **script-src** a **style-src** pro zásady zabezpečení obsahu webu. Další informace viz [Správa zásad zabezpečení obsahu](manage-csp.md). 
+
 Následující obrázek ukazuje příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny.
 
 ![Příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny](./media/ecommerce-payments.PNG)
@@ -52,12 +55,12 @@ Následující obrázek ukazuje příklad modulů dárkové karty, věrnostních
 |---------------|--------|-------------|
 | Záhlaví | Text nadpisu | Volitelný nadpis pro modul platby. |
 | Výška prvku iframe. | Pixely | Výška prvku iframe v pixelech. Velikost lze upravit podle potřeby. |
-| Zobrazit fakturační adresu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, fakturační adresu doručí Adyen uvnitř prvku iframe platebního modulu. Pokud je nastaveno na **Nepravda**, fakturační adresu nebude Adyen zobrazovat a uživatel Commerce bude muset nakonfigurovat modul tak, aby zobrazoval fakturační adresu na stránce pokladny. |
+| Zobrazit fakturační adresu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda** , fakturační adresu doručí Adyen uvnitř prvku iframe platebního modulu. Pokud je nastaveno na **Nepravda** , fakturační adresu nebude Adyen zobrazovat a uživatel Commerce bude muset nakonfigurovat modul tak, aby zobrazoval fakturační adresu na stránce pokladny. |
 | Přepsání stylu platby | Kód kaskádových stylů (CSS) | Protože je platební modul hostován v prvku iframe, existuje omezená schopnost stylování. Pomocí této vlastnosti můžete dosáhnout určitého stylu. Chcete-li přepsat styly webů, musíte vložit CSS kód jako hodnotu této vlastnosti. Přepsání a styly CSS tvůrce stránek se na tento modul nevztahují. |
 
 ## <a name="billing-address"></a>Fakturační adresa
 
-Platební modul umožňuje zákazníkům poskytnout fakturační adresu pro své platební informace. Rovněž jim umožňuje použít jako fakturační adresu svou dodací adresu, aby usnadnili a urychlili tok plateb. Pokud je **Zobrazit fakturační adresu** vlastnost nastavena na **Nepravda**, platební modul by měl být nakonfigurován na stránce pokladny.
+Platební modul umožňuje zákazníkům poskytnout fakturační adresu pro své platební informace. Rovněž jim umožňuje použít jako fakturační adresu svou dodací adresu, aby usnadnili a urychlili tok plateb. Pokud je **Zobrazit fakturační adresu** vlastnost nastavena na **Nepravda** , platební modul by měl být nakonfigurován na stránce pokladny.
 
 ## <a name="add-a-payment-module-to-a-checkout-page-and-set-the-required-properties"></a>Na stránku pokladny přidejte modul platby a nastavte požadované vlastnosti.
 

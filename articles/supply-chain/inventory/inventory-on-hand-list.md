@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventOnhandItem, InventOnHandItemListPage
+ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 275a37cd76715ab9909e057ec759c66c4f9c617b
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829842"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017384"
 ---
 # <a name="inventory-on-hand-list"></a>Seznam zásob na skladě
 
@@ -39,7 +39,7 @@ K vyhledání sady produktů, které hledáte, použijte následující nástroj
 
 - Na podokně akcí vyberte [**Dimenze**](#dimensions) a otevřete dialogové okno, ve kterém můžete přidat nebo odebrat sloupce, které jsou zobrazeny v mřížce **Na skladě**.
 - V [podokně **Filtry**](#filters-pane) zadejte hodnoty pro konkrétní pole, aby se zobrazovaly pouze záznamy, které odpovídají těmto hodnotám. Filtry, které zde definujete, se vztahují na zdrojové tabulky, které mohou být později agregovány podle rozměrů, které jste vybrali k zobrazení. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
-- V podokně **Filtry** vyberte **Použít**, chcete-li vygenerovat seznam odpovídajících zásob na skladě v mřížce **Na skladě**.
+- V podokně **Filtry** vyberte **Použít** , chcete-li vygenerovat seznam odpovídajících zásob na skladě v mřížce **Na skladě**.
 - V mřížce **Na skladě** vyberte libovolný nadpis sloupce, který chcete seřadit nebo filtrovat podle hodnot v tomto sloupci. QuickFilter v horní části mřížky poskytuje další možnosti filtrování. Tyto filtry se vztahují na výsledky, nikoli na zdrojové tabulky. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
 
 Pro každou odpovídající položku mřížka **Na skladě** poskytuje následující sloupce informací o zásobách.
@@ -53,15 +53,15 @@ Pro každou odpovídající položku mřížka **Na skladě** poskytuje následu
 | Celkem objednáno | Celkové množství, které je zahrnuto v příchozích objednávkách nebo které má kladné množství v různých denících zásob. |
 | Na objednávce | Celkové množství, které je zahrnuto v odchozích objednávkách nebo které má záporné množství v různých denících zásob. |
 | Rezervováno k objednání | Celkové množství, které je rezervováno na objednaných příjmech. Hodnota v tomto poli představuje celkové množství položek v odchozích transakcích, které mají stav _Objednáno rezervováno_. Položky, které jsou rezervovány jako objednané, nejsou v inventáři fyzicky dostupné. Proto je nelze přímo vyzvednout a doručit. |
-| K dispozici pro rezervaci | Celkové množství zásob na skladě, které lze rezervovat.<p>**Poznámka:** Pokud je zaškrtnuto políčko **Rezervujte objednané položky** na stránce **Parametry řízení zásob a skladu**, hodnota v tomto poli zahrnuje očekávané příjmy. Pokud je zaškrtávací políčko zrušeno, hodnota nezahrnuje očekávané příjmy.</p> |
+| K dispozici pro rezervaci | Celkové množství zásob na skladě, které lze rezervovat.<p>**Poznámka:** Pokud je zaškrtnuto políčko **Rezervujte objednané položky** na stránce **Parametry řízení zásob a skladu** , hodnota v tomto poli zahrnuje očekávané příjmy. Pokud je zaškrtávací políčko zrušeno, hodnota nezahrnuje očekávané příjmy.</p> |
 | Dostupné celkem | Celkové dostupné množství<p>**Celkové dostupné** je vypočítané pole. Hodnota se rovná hodnotě **Dostupné fyzické** plus hodnota **Celkem objednáno** mínus hodnota **Na objednávce**.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Použijte filtry k nalezení záznamů, které hledáte
 
-Použijte podokno **Filtry**, chcete-li filtrovat seznam zásob na skladě tak, aby obsahoval pouze záznamy, kde hodnoty pole odpovídají kritériím filtrování. Chcete-li definovat filtr, postupujte takto.
+Použijte podokno **Filtry** , chcete-li filtrovat seznam zásob na skladě tak, aby obsahoval pouze záznamy, kde hodnoty pole odpovídají kritériím filtrování. Chcete-li definovat filtr, postupujte takto.
 
 1. V podokně **Filtry** vyhledejte pole, dle kterého chcete filtrovat.
-2. V poli pod názvem cílového pole vyberte logický operátor (například *začíná na*, *rovná se*, nebo *větší než*).
+2. V poli pod názvem cílového pole vyberte logický operátor (například *začíná na* , *rovná se* , nebo *větší než* ).
 3. Zadejte nebo vyberte hledanou hodnotu.
 
 > [!IMPORTANT]
@@ -73,8 +73,8 @@ Použijte podokno **Filtry**, chcete-li filtrovat seznam zásob na skladě tak, 
 
 Můžete upravit sadu filtrů, které jsou k dispozici v podokně **Filtry** pomocí následujících kroků.
 
-- Chcete-li odebrat filtr z podokna, vyberte jeho tlačítko **Zavřít** (**X**).
-- Chcete-li přidat filtr, vyberte **Přidat** v horní části podokna **Filtry**. Dialogové okno **Přidejte pole filtru**, které se objeví, zobrazí seznam dostupných polí. Zobrazí také informace o datovém typu a tabulce pro každé pole. Použijte záhlaví sloupců k filtrování a třídění seznamu podle potřeby a poté zaškrtněte políčko u každého pole, které chcete přidat do podokna **Filtr**. Po dokončení vyberte **Vložit** pro použití změn.
+- Chcete-li odebrat filtr z podokna, vyberte jeho tlačítko **Zavřít** ( **X** ).
+- Chcete-li přidat filtr, vyberte **Přidat** v horní části podokna **Filtry**. Dialogové okno **Přidejte pole filtru** , které se objeví, zobrazí seznam dostupných polí. Zobrazí také informace o datovém typu a tabulce pro každé pole. Použijte záhlaví sloupců k filtrování a třídění seznamu podle potřeby a poté zaškrtněte políčko u každého pole, které chcete přidat do podokna **Filtr**. Po dokončení vyberte **Vložit** pro použití změn.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Vyberte, které rozměry chcete zobrazit
 
@@ -87,8 +87,8 @@ Chcete-li přizpůsobit výběr zobrazených rozměrů, postupujte takto.
     Dialogové okno **Zobrazení rozměrů** ,které se objeví, zobrazuje každou dimenzi.
 
 2. Zaškrtněte políčko pro každou dimenzi, kterou chcete do mřížky zahrnout.
-3. Pokud chcete, aby se váš výběr použil standardně při příštím otevření stránky **Seznam na skladě**, nastavte možnost **Uložit nastavení** na **Ano**. Pokud nastavíte tuto možnost na **Ne**, bude váš výběr použit pouze během aktuální relace. Proto při příštím otevření stránky bude použit aktuální výchozí výběr.
-4. Vyberte **OK**, pokud chcete změny použít a zavřít dialogové okno.
+3. Pokud chcete, aby se váš výběr použil standardně při příštím otevření stránky **Seznam na skladě** , nastavte možnost **Uložit nastavení** na **Ano**. Pokud nastavíte tuto možnost na **Ne** , bude váš výběr použit pouze během aktuální relace. Proto při příštím otevření stránky bude použit aktuální výchozí výběr.
+4. Vyberte **OK** , pokud chcete změny použít a zavřít dialogové okno.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrujte na výstupu seznamu zásob na skladě
 
@@ -145,4 +145,4 @@ Zde je výsledný výstup.
 |---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
 
-Všimněte si, že nastavení v podokně **Filtry** se vztahuje na podrobnou (neagregovanou) tabulku zásob, která je zobrazena na začátku této sekce. Proto kritérium **Dostupné fyzicky** \| **menší nebo rovno** \| _1_ najde z této tabulky dva řádky (první a třetí řádek, z nichž každý zobrazuje hodnotu **Dostupné fyzicky** _1_). V tomto scénáři však stránka **Seznam na skladě** není nastavena pro zobrazení dimenze **Sklad**. Proto agreguje dva původní řádky do jednoho výsledného řádku, protože oba řádky mají stejné hodnoty ve všech zobrazených rozměrech. Zdá se, že tento řádek porušuje kritérium filtrování, protože hodnota **Dostupné fyzicky** je zobrazena jako _2_. Výsledek je však správný, protože nastavení v podokně **Filtry** se vztahuje na zdrojovou tabulku, nikoli na agregovanou tabulku, která je zobrazena na stránce **Seznam na skladě**.
+Všimněte si, že nastavení v podokně **Filtry** se vztahuje na podrobnou (neagregovanou) tabulku zásob, která je zobrazena na začátku této sekce. Proto kritérium **Dostupné fyzicky** \| **menší nebo rovno** \| _1_ najde z této tabulky dva řádky (první a třetí řádek, z nichž každý zobrazuje hodnotu **Dostupné fyzicky** _1_ ). V tomto scénáři však stránka **Seznam na skladě** není nastavena pro zobrazení dimenze **Sklad**. Proto agreguje dva původní řádky do jednoho výsledného řádku, protože oba řádky mají stejné hodnoty ve všech zobrazených rozměrech. Zdá se, že tento řádek porušuje kritérium filtrování, protože hodnota **Dostupné fyzicky** je zobrazena jako _2_. Výsledek je však správný, protože nastavení v podokně **Filtry** se vztahuje na zdrojovou tabulku, nikoli na agregovanou tabulku, která je zobrazena na stránce **Seznam na skladě**.

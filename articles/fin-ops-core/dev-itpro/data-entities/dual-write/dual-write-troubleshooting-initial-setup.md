@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997343"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -41,7 +40,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 **Požadovaná role pro nastavení dvojitého zápisu:** Správce systému v aplikacích Finance and Operations a prostředí Common Data Service.
 
-Chyby na stránce **Nastavení odkazu na Common Data Service** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Common Data Service**, jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
+Chyby na stránce **Nastavení odkazu na Common Data Service** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Common Data Service** , jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
 
 ![Úspěšná kontrola stavu](media/health_check.png)
 
@@ -70,7 +69,7 @@ Chcete-li poskytnout souhlas s aplikací, postupujte podle následujících krok
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Ověřte, zda jsou při propojování správně nastaveny data společnosti a týmy s duálním zápisem
 
-Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Common Data Service vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu**Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
+Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Common Data Service vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu **Společnosti (CDM\_Společnost)** , postupujte podle následujících kroků.
 
 1. V aplikaci řízené modelem v produktu Dynamics 365 vyberte filtr v pravém horním rohu.
 2. V rozevíracím seznamu vyberte **Společnost**.

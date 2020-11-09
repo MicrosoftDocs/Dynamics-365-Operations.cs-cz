@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652216"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016601"
 ---
 # <a name="replenishment-over-location-capacity"></a>Doplnění nad kapacitu místa
 
@@ -97,7 +98,7 @@ Povolte funkci doplňování přes kapacitu v profilu místa.
         Při výpočtu procenta pracovního množství se berou v úvahu limity místního skladování. Pokud nejsou definovány žádné limity pro místo uskladnění, procento množství práce bude vypočteno podle objemu, pokud jsou v profilu místa definována omezení objemu.
 
 > [!IMPORTANT]
-> Pokud používáte ukázková data pro právnickou osobu **USMF** právnická osoba a dříve jste zapnuli funkci *Umístění poznávací značky*, musíte vypnout nastavení **Povolit umístění poznávací značky** pro profil místa **BULK-06** k dokončení mobilních kroků v příkladu scénáře.
+> Pokud používáte ukázková data pro právnickou osobu **USMF** právnická osoba a dříve jste zapnuli funkci *Umístění poznávací značky* , musíte vypnout nastavení **Povolit umístění poznávací značky** pro profil místa **BULK-06** k dokončení mobilních kroků v příkladu scénáře.
 
 ### <a name="wave-step-code"></a>Kód kroku vlny
 
@@ -160,7 +161,7 @@ Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžet
     - **Účet zákazníka:** *US-007*
     - **Sklad:** *61*
 
-1. Vyberte **OK**, prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK** , prodejní objednávka se vytvoří a dialogové okno se zavře.
 1. Otevře se nová prodejní objednávka. Zahrnuje nový prázdný řádek na pevné záložce **Řádky prodejní objednávky**. Na tomto řádku nastavte následující hodnoty:
 
     - **Číslo položky:** *T0100*
@@ -183,7 +184,7 @@ Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžet
     - **Účet zákazníka:** *US-001*
     - **Sklad:** *61*
 
-1. Vyberte **OK**, prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK** , prodejní objednávka se vytvoří a dialogové okno se zavře.
 1. Otevře se nová prodejní objednávka. Zahrnuje nový prázdný řádek na pevné záložce **Řádky prodejní objednávky**. Na tomto řádku nastavte následující hodnoty:
 
     - **Číslo položky:** *T0100*
@@ -206,7 +207,7 @@ Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžet
     - **Účet zákazníka:** *US-004*
     - **Sklad:** *61*
 
-1. Vyberte **OK**, prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK** , prodejní objednávka se vytvoří a dialogové okno se zavře.
 1. Otevře se nová prodejní objednávka. Zahrnuje nový prázdný řádek na pevné záložce **Řádky prodejní objednávky**. Na tomto řádku nastavte následující hodnoty:
 
     - **Číslo položky:** *T0100*
@@ -228,7 +229,7 @@ Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžet
 1. Měli byste vidět, že pro tři prodejní objednávky bylo vytvořeno sedm ID práce.
 
     - Tři ze sedmi ID práce mají hodnotu **Typ pracovního příkazu** *Doplnění* a čtyři mají hodnotu **Typ pracovního příkazu** *Prodejní objednávky*.
-    - Všechna tři ID práce, která mají hodnotu **Typ pracovního příkazu** *Doplnění*, mají stejná místa *Výběr* a *Vložení* v sekci **Řádky**:
+    - Všechna tři ID práce, která mají hodnotu **Typ pracovního příkazu** *Doplnění* , mají stejná místa *Výběr* a *Vložení* v sekci **Řádky** :
 
         - **Výběr:** *02A01R5S1B*
         - **Vložení:** *06A01R2S1B*
@@ -360,7 +361,7 @@ Prodejní objednávka 2 je zablokována, protože úkol doplňování, ke které
 
 Jakmile je součet množství na skladě v místě vychystávání a množství doplňování pod prahem, budete moci zpracovat zbývající práci doplňování.
 
-Vraťte se na stránku **Podrobnosti o práci** a všimněte si, že je dostupnost práce doplnění pro poslední kus doplnění (pro prodejní objednávku 2) *Otevřeno*, protože nyní je v místě dostatek prostoru na přijetí doplnění.
+Vraťte se na stránku **Podrobnosti o práci** a všimněte si, že je dostupnost práce doplnění pro poslední kus doplnění (pro prodejní objednávku 2) *Otevřeno* , protože nyní je v místě dostatek prostoru na přijetí doplnění.
 
 Nyní můžete tuto práci na doplňování zpracovat prostřednictvím mobilního zařízení.
 

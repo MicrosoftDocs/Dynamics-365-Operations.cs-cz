@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173101"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997640"
 ---
 # <a name="integrated-vendor-master"></a>Integrovaná hlavní data dodavatelů
 
@@ -42,7 +41,7 @@ Pokud nechcete uložit data dodavatele v entitě **Účet/kontakt** v Common Dat
 
 ![Tok dat dodavatele](media/dual-write-vendor-data-flow.png)
 
-Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt**, můžete použít rozšířený návrh dodavatele. Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu. Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).
+Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt** , můžete použít rozšířený návrh dodavatele. Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu. Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).
 
 ![Rozšířený tok dat dodavatele](media/dual-write-vendor-detail.jpg)
 

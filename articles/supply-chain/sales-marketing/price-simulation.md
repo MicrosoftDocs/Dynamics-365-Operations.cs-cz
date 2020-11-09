@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 336fb51dc5fb66dfbe14091d121e0a4471b9662b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978886"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006252"
 ---
 # <a name="price-simulation"></a>Simulace ceny
 
@@ -74,7 +74,7 @@ Vytvoříte nabídku s následujícími řádky:
 
 Následující tabulka zobrazuje řádky nabídky.
 
-|                            | Výpočet                          | Výsledek   |
+|    &nbsp;                  | Výpočet                          | Výsledek   |
 |----------------------------|--------------------------------------|----------|
 | Prod. množství             | 10 jednotek + 12 jednotek                  | 22 jednotek |
 | Prodejní hodnota v USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
@@ -84,7 +84,7 @@ Následující tabulka zobrazuje řádky nabídky.
 
 Spusťte simulaci ceny a uplatněte 15procentní celkovou slevu pro celou nabídku nebo záhlaví nabídky. Následující tabulka ukazuje nové součty nabídky po spuštění simulace ceny.
 
-|                                                      | Výpočet                               | Výsledek   |
+|     &nbsp;                                           | Výpočet                               | Výsledek   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Prod. množství                                       | 10 jednotek + 12 jednotek                       | 22 jednotek |
 | Původní prodejní hodnota v USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
@@ -105,7 +105,7 @@ Vytvoříte nabídku s následujícími řádky:
 
 Následující tabulka zobrazuje řádky nabídky.
 
-|                                      | Výpočet                          | Výsledek   |
+|      &nbsp;                          | Výpočet                          | Výsledek   |
 |--------------------------------------|--------------------------------------|----------|
 | Prod. množství                       | 10 jednotek + 12 jednotek                  | 22 jednotek |
 | Prodejní hodnota v USD pro BR-12         | 10 × 15,32                           | 153,20   |
@@ -123,7 +123,7 @@ Následující tabulka zobrazuje řádky nabídky.
 
 Spusťte simulaci ceny a uplatněte 10procentní celkovou slevu na jednotky BR-12. Následující tabulka ukazuje nové součty nabídky po spuštění simulace ceny pro jednořádkové zboží.
 
-|                                                   | Výpočet                             | Výsledek   |
+|    &nbsp;                                         | Výpočet                             | Výsledek   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Prod. množství                                    | 10 jednotek + 12 jednotek                     | 22 jednotek |
 | Původní prodejní hodnota v USD pro BR-12                  | 10 × 15,32                              | 153,20   |

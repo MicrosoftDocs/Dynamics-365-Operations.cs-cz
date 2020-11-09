@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997569"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Často kladené dotazy ke zavádění s daty společnosti
  
@@ -57,7 +56,7 @@ Po rozbalení a otevření řešení v aplikaci Visual Studio a obnovení balí�
 Ukázkový kód zobrazuje pouze jeden z mnoha způsobů, jak můžete kategorizovat záznamy entit podle společnosti. Změnou logiky v částech **TODO** můžete vytvořit vlastní kategorizaci. 
  
 ## <a name="what-should-i-expect"></a>Co mám očekávat?
-Ve výchozím nastavení umožňuje ukázková aplikace poskytnout slovník mapování kódů obchodní jednotky na společnost. Každá entita, kterou zavádíte pomoc pole **OwningBusinessUnit**, je automaticky nastavena k použití určené společnosti. Jakákoliv entita bez pole **OwningBusinessUnit**, například produkt, nastaví společnost na základě mapování s prázdnou hodnotou obchodní jednotky.
+Ve výchozím nastavení umožňuje ukázková aplikace poskytnout slovník mapování kódů obchodní jednotky na společnost. Každá entita, kterou zavádíte pomoc pole **OwningBusinessUnit** , je automaticky nastavena k použití určené společnosti. Jakákoliv entita bez pole **OwningBusinessUnit** , například produkt, nastaví společnost na základě mapování s prázdnou hodnotou obchodní jednotky.
 
 Aplikace konzoly očekává jeden parametr, buď **–simulate** nebo **–apply**. Pokud použijete parametr příkazového řádku **-simulovat** , nebudou aktualizována žádná data. Pouze soubory **simulation_<entityname>.csv** jsou generovány ve stejném adresáři jako nástroj, jeden pro každou entitu, která by byla aktualizována. Tyto soubory můžete při práci iterativně zkontrolovat, abyste zajistili, že kód bude aktualizovat hodnoty společnosti očekávaným způsobem. 
 

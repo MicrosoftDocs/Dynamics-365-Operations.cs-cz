@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b3445157efce6349b3febafb6c860260052f7d6c
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835916"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039739"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Přehled doplňku Elektronická fakturace
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Doplněk elektronické fakturace pro Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management je hyperškálovatelná multiklientová služba, která umožňuje konfigurovatelné zpracování dokumentů elektronických faktur a konfigurovatelnou výměnu dokumentů. Pravidla zpracování a integrace jsou plně konfigurovatelná a logika je spuštěna mimo Finance a Supply Chain Management. Služba je zaměřena hlavně na zpracování eleltronických faktur ve scénářích podniky-vláda, ale lze ji přizpůsobit i pro jiné účely.
 

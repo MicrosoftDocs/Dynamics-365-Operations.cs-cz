@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997319"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Poradce při potížích s počáteční synchronizací
 
@@ -37,7 +36,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Zkontrolovat chyby počáteční synchronizace v aplikaci Finance and Operations
 
-Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn**, došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
+Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn** , došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
 
 ![Chyba na kartě Počáteční podrobnosti synchronizace](media/initial_sync_status.png)
 
@@ -97,7 +96,7 @@ Můžou se zobrazit chybové zprávy podobné následujícímu příkladu v př�
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>Řešení chyb v mapování entit Vendors V2–to–msdyn_vendors
 
-Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Vendors V2** na **msdyn\_vendors**, pokud entity mají existující záznamy s hodnotami v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber**. Tyto chyby se vyskytují proto, že **InvoiceVendorAccountNumber** je pole s vlastním odkazem a **PrimaryContactPersonId** je kruhový odkaz v mapování dodavatele.
+Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Vendors V2** na **msdyn\_vendors** , pokud entity mají existující záznamy s hodnotami v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber**. Tyto chyby se vyskytují proto, že **InvoiceVendorAccountNumber** je pole s vlastním odkazem a **PrimaryContactPersonId** je kruhový odkaz v mapování dodavatele.
 
 Chybové zprávy, které obdržíte, budou mít následující formulář.
 
@@ -112,7 +111,7 @@ Pokud mají libovolné záznamy v entitě dodavatele hodnoty v polích **Primary
 
 1. V aplikaci Finance and Operations odstraňte pole **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** z mapování a pak mapování uložte.
 
-    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)**, na kartě **Mapování entit**, v levém filtru vyberte **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
+    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)** , na kartě **Mapování entit** , v levém filtru vyberte **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
     2. Vyhledejte **primarycontactperson** a najděte zdrojové pole **PrimaryContactPersonId**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
@@ -144,7 +143,7 @@ Pokud mají libovolné záznamy v entitě dodavatele hodnoty v polích **Primary
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-entity-mapping"></a><a id="error-customer-map"></a>Vyřešte chyby v mapování entit Customers V3–to–Accounts
 
-Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Customers V3** na **Accounts**, pokud entity mají existující záznamy s hodnotami v polích **ContactPersonID** a **InvoiceAccount**. Tyto chyby se vyskytují proto, že **InvoiceAccount** je pole s vlastním odkazem a **ContactPersonID** je kruhový odkaz v mapování dodavatele.
+Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Customers V3** na **Accounts** , pokud entity mají existující záznamy s hodnotami v polích **ContactPersonID** a **InvoiceAccount**. Tyto chyby se vyskytují proto, že **InvoiceAccount** je pole s vlastním odkazem a **ContactPersonID** je kruhový odkaz v mapování dodavatele.
 
 Chybové zprávy, které obdržíte, budou mít následující formulář.
 
@@ -187,7 +186,7 @@ Pokud mají libovolné záznamy v entitě zákazníka hodnoty v polích **Contac
 4. Spusťte počáteční synchronizaci pro mapování **CDS Contacts V2 (contacts)**.
 
     > [!NOTE]
-    > Existují dvě mapy se stejným názvem. Vyberte mapu, která má následující popis na kartě **Podrobnosti**: **Šablona s dvojím zápisem pro synchronizaci mezi kontakty dodavatele FO.CDS V2 a CDS.Contacts. Vyžaduje nový balíček \[Dynamics365SupplyChainExtended\].**
+    > Existují dvě mapy se stejným názvem. Vyberte mapu, která má následující popis na kartě **Podrobnosti** : **Šablona s dvojím zápisem pro synchronizaci mezi kontakty dodavatele FO.CDS V2 a CDS.Contacts. Vyžaduje nový balíček \[Dynamics365SupplyChainExtended\].**
 
 5. Přidejte pole **InvoiceAccount** a **ContactPersonId** zpět do mapování **Customers V3 (Accounts)** a mapování uložte. Pole **InvoiceAccount** i **ContactPersonId** jsou opět součástí živého synchronizačního režimu. V dalším kroku dokončíte počáteční synchronizaci těchto polí.
 6. Spusťte opět počáteční synchronizaci pro mapování **Customers V3 (Accounts)**. Protože sledování změn je vypnuto, data pro **InvoiceAccount** a **ContactPersonId** budou synchronizována z aplikace Finance and Operations do Common Data Service.
@@ -203,7 +202,7 @@ Pokud mají libovolné záznamy v entitě zákazníka hodnoty v polích **Contac
 
         > [POZNÁMKA] Pokud tlačítko filtru není k dispozici, vytvořte podpůrný ticket a požádejte tým pro integraci dat o povolení filtrování u klienta.
 
-        Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value**, budou všechny záznamy synchronizovány.
+        Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value** , budou všechny záznamy synchronizovány.
 
         ![Přidání dotazu filtru](media/cust_selfref7.png)
 

@@ -3,7 +3,7 @@ title: Kontrola stavu experimentu
 description: Toto téma vysvětluje, jaký stav má experiment v životním cyklu experimentování v Dynamics 365 Commerce.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 097206c0aa487e14499bdf3907465e17b7d337e2
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930153"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097063"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kontrola stavu experimentu
 Nastavení a spuštění experimentu v Dynamics 365 Commerce zahrnuje mnoho kroků. Informace o životním cyklu experimentování najdete v tématu [Experimentování v Dynamics 365 Commerce](experimentation-overview.md).
 
-Pokud se chcete dozvědět, kde v životním cyklu se experiment nachází, přejděte na kartu **Experimenty** v konfigurátoru webů. Zobrazí se seznam experimentů se stavem každého experimentu v Commerce i ve službě třetí strany, která se používá k povolení vytváření experimentů, přiřazování variant a analýze dat.
+Pokud se chcete dozvědět, kde v životním cyklu se experiment nachází, vyberte **Experimenty** v levém navigačním okně konfigurátoru webů Commerce. Zobrazí se seznam experimentů se stavem každého experimentu v Commerce i ve službě třetí strany, která se používá k povolení vytváření experimentů, přiřazování variant a analýze dat.
 
 Ve sloupci **Stav Commerce** se mohou zobrazit následující hodnoty. 
 - **Koncept** – Experiment je připojen ke stránce nebo fragmentu v Commerce a je upravován.

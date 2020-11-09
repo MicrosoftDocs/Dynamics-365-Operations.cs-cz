@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826328"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017223"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
 
@@ -46,7 +46,7 @@ Pro rychlou ukázku, jak uvolnit kusovník a řádky receptury do výroby pomoc�
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Uvolnění řádků kusovníku a receptury pomocí dávkové úlohy
 
-Dávková úloha **Automaticky uvolnit řádky kusovníku a receptury** prochází přes vybrané řádky kusovníku a receptury, které mají zbývající množství pro uvolnění. Úloha bere v úvahu pouze objednávky, které mají stav **Uvolněno**, **Zahájeno** nebo **Hlášeno jako dokončené**. Pokud má řádek kusovníku nebo receptury zbývající množství k uvolnění, úloha se uvolní až do množství, které lze pokrýt množstvím, které již bylo fyzicky rezervováno, a množstvím, které je fyzicky k dispozici.
+Dávková úloha **Automaticky uvolnit řádky kusovníku a receptury** prochází přes vybrané řádky kusovníku a receptury, které mají zbývající množství pro uvolnění. Úloha bere v úvahu pouze objednávky, které mají stav **Uvolněno** , **Zahájeno** nebo **Hlášeno jako dokončené**. Pokud má řádek kusovníku nebo receptury zbývající množství k uvolnění, úloha se uvolní až do množství, které lze pokrýt množstvím, které již bylo fyzicky rezervováno, a množstvím, které je fyzicky k dispozici.
 
 ### <a name="example-of-a-batch-job-release"></a>Příklad uvolnění dávkové úlohy
 
@@ -77,7 +77,7 @@ Pokud uvolníte materiály pomocí nastavení parametru **Uvolnění na výrobn�
 
 Chcete-li kontrolovat operace, ke kterým má být uvolněn materiál, použijte stránku **Uvolnit do skladu**.
 
-- Vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky**, vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Poté použijte pole **Od operace č.** a **Do operace č.** k určení rozsahu čísel operací.
+- Vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky** , vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Poté použijte pole **Od operace č.** a **Do operace č.** k určení rozsahu čísel operací.
 
 Následující obrázek znázorňuje výrobní zakázku, která má dvě operace, 10 a 20. Pokud v tomto příkladu omezíte uvolnění na operaci 10, pouze materiál M9203 bude uvolněn.
 
@@ -89,11 +89,11 @@ Pro rychlou ukázku vydání materiálu v poměru k množství dokončených vý
 
 Můžete uvolnit surovinu pro částečné množství dokončeného zboží nebo ve specifické jednotce.
 
-- Chcete-li uvolnit surovinu pro částečné množství dokončeného zboží, vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky**, vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Poté zadejte množství v poli **Množství**.
+- Chcete-li uvolnit surovinu pro částečné množství dokončeného zboží, vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky** , vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Poté zadejte množství v poli **Množství**.
 
     Například výrobní zakázka je vytvořena a naplánována na 1 000 kusů Vedoucí dílny plánuje výrobu 100 kusů. pro další směnu a chce uvolnění materiálů pouze pro tuto směnu. V takovém případě může vedoucí použít pole **Množství** pro uvolnění materiálů pro 100 kusů, který jsou plánovány pro další směnu.
 
-- Chcete-li uvolnit surovinu v konkrétní jednotce, vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky**, vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Pak použijte pole **Jednotka** a vyberte jednotku dokončeného zboží, ve které se má materiál uvolnit.
+- Chcete-li uvolnit surovinu v konkrétní jednotce, vyberte **Řízení výroby** \> **Výrobní zakázky** \> **Všechny výrobní zakázky** , vyberte výrobní zakázku a pak na kartě **Sklad** zvolte **Uvolnit do skladu**. Pak použijte pole **Jednotka** a vyberte jednotku dokončeného zboží, ve které se má materiál uvolnit.
 
     Jednotky, které jsou k dispozici, jsou definovány v ID skupiny klasifikace jednotek dokončeného zboží.
 

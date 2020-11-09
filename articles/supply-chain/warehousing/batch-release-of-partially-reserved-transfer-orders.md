@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLoadPlanningWorkbench
+ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0707731caaf9b4852e3c19be899ad92f5b84e29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201288"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016279"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Vydání dávky částečně rezervovaných převodních příkazů
 
@@ -47,11 +47,11 @@ Zásady plnění pro převodní příkazy a prodejní objednávky jsou určené 
 
 -   Chcete-li vytvořit zásady plnění pro převodní příkazy a prodejní objednávky, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a pak vytvořte zásadu plnění zadáním názvu a popisu.
 
--   Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění**a následně nastavte pole **Sazba plnění**, **Typ hodnoty** a **Zprávy porušení plnění**.
+-   Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a následně nastavte pole **Sazba plnění** , **Typ hodnoty** a **Zprávy porušení plnění**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Nastavení zásad plnění pro převodní příkazy a prodejní objednávky
 
--   Chcete-li nastavit zásady plnění pro převodní příkazy, klikněte **Řízení zásob** \> **Nastavení** \> **Parametry modulu Řízení zásob a skladu** \> **Převodní příkazy** \> **Řízení skladu**a poté vyberte zásadu plnění převodních příkazů.
+-   Chcete-li nastavit zásady plnění pro převodní příkazy, klikněte **Řízení zásob** \> **Nastavení** \> **Parametry modulu Řízení zásob a skladu** \> **Převodní příkazy** \> **Řízení skladu** a poté vyberte zásadu plnění převodních příkazů.
 
 -   Chcete-li nastavit zásady plnění pro prodejní objednávky, klikněte na **Pohledávky** \> **Nastavení** \> **Parametry pohledávek** \> **Řízení skladu** a poté vyberte zásadu plnění prodejní objednávky.
 

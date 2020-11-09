@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: 7ed2c50b28fdbd1baf4caa0a8a7f2f05d6a53fd6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338301"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018576"
 ---
 # <a name="import-vendor-catalogs"></a>Import katalogů dodavatele
 
@@ -63,7 +63,7 @@ Soubor šablony pro import katalogu je soubor průmyslového standardu XSD, kter
 
 1. Vyberte **Zásobování a zdroje** \> **Katalogy** \> **Katalogy dodavatele** a dvakrát klikněte na katalog, se kterým chcete pracovat.
 
-2. Stáhněte aktuální šablonu importu katalogu (soubor XSD). Na stránce **Aktualizovat katalog** v **podokně akcí**na kartě **Katalogy** ve skupině **Související informace** klikněte na **Generovat šablonu katalogu** a vyberte **Kategorie zásobování**.
+2. Stáhněte aktuální šablonu importu katalogu (soubor XSD). Na stránce **Aktualizovat katalog** v **podokně akcí** na kartě **Katalogy** ve skupině **Související informace** klikněte na **Generovat šablonu katalogu** a vyberte **Kategorie zásobování**.
 
     - S možností **Kategorie zásobování** můžete generovat šablonu katalogu, která obsahuje kategorie zásobování, ve které je dodavatel oprávněn poskytovat produkty.
 

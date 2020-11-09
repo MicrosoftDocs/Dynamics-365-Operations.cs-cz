@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835847"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000757"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Pokud se obchodní ekosystém skládá z aplikace Dynamics 365, jako je například finance, Supply Chain Management a Sales, firmy tyto aplikace často používají ke zdrojování údajů o produktů. Důvodem je skutečnost, že tyto aplikace poskytují robustní produktovou infrastrukturu doplněnou sofistikovanými koncepty ocenění a přesnými daty o zásobách. Firmy, které používají externí systém správy životního cyklu produktu (PLM) pro výrobu dat produktu, mohou sdílet produkty z aplikací Finance and Operations do jiných aplikací Dynamics 365. Sjednocené prostředí produktu přináší integrovaný model dat produktu do Common Data Service, takže všichni uživatelé aplikace včetně uživatelů Power Platform mohou využívat obsáhlá data o produktech přicházející z aplikací Finance and Operations.
 
@@ -93,7 +90,7 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 
 V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. 
 
-Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní**, aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**. 
+Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní** , aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**. 
 
 Mějte na paměti, že synchronizace produktů se děje aplikací Finance and Operations do Common Data Service. To znamená, že hodnoty polí entit produktu lze změnit v Common Data Service, ale při spuštění synchronizace (při změně pole produktu v aplikaci Finance and Operations) dojde k přepsání hodnot v Common Data Service. 
 
@@ -109,7 +106,7 @@ Mějte na paměti, že synchronizace produktů se děje aplikací Finance and Op
 
 Dimenze produktu jsou vlastnosti, které identifikují variantu produktu. K definování variant produktu jsou mapovány do Common Data Service také čtyři dimenze produktu (barva, velikost, styl a konfigurace). Následující ilustrace znázorňuje datový model pro dimenzi produktu Barva. Stejný model se použije pro Velikosti, Styly a Konfigurace. 
 
-![Datový model pro produkty](media/dual-write-product-two.png)
+![Datový model pro dimenze produktu](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházej�
 
 Měrné jednotky a odpovídající převod jsou k dispozici v Common Data Service podle datového modelu zobrazeného v diagramu.
 
-![Datový model pro produkty](media/dual-write-product-three.png)
+![Datový model pro měrnou jednotku](media/dual-write-product-three.png)
 
 Pojem měrné jednotky je integrován mezi aplikacemi Finance and Operations a jinými aplikacemi Dynamics 365. Pro každou třídu jednotek v Finance and Operations se v aplikaci Dynamics 365 vytvoří skupina jednotek, která obsahuje jednotky náležející ke třídě jednotek. Výchozí základní jednotka je také vytvořena pro každou skupinu jednotek. 
 
@@ -203,9 +200,9 @@ Zásady produktu jsou sady zásad, které se používají pro definování produ
 
 Pro jednoznačnou identifikaci produktů mezi Dynamics 365 for Finance and Operations a produktů v Common Data Service se používá klíč integrace. U produktů je **(productnumber)** jedinečným klíčem, který identifikuje produkt v Common Data Service. Je tvořen zřetězením: **(company, msdyn_productnumber)**. **Company** označuje právnickou osobu v Finance and Operations a **msdyn_productnumber** označuje číslo produktu pro specifický produkt v aplikaci Finance and Operations. 
 
-Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
+Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu** ). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
 
-Pokud vytváříte aplikace v Common Data Service, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber**, protože není jedinečné. 
+Pokud vytváříte aplikace v Common Data Service, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber** , protože není jedinečné. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Počáteční synchronizace produktů a migrace dat z Common Data Service do Finance and Operations
 

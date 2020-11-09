@@ -1,7 +1,7 @@
 ---
 title: Přehled informací o produktech
 description: Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy.
-author: benebotg
+author: t-benebo
 manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c118bc37a26d6d3a65905f2fd955ceb3554e9557
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980881"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015122"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
@@ -63,7 +63,7 @@ Všimněte si, že v dynamických a pružných organizacích se informace o prod
 
 ## <a name="product-masters-and-product-variants"></a>Hlavní produkty a varianty produktů
 
-V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Supply Chain Management se tyto obecné produkty označují jako *základní produkty* . Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu* .
+V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Supply Chain Management se tyto obecné produkty označují jako *základní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
 
 Hlavní produkt je přidružen ke skupině dimenzí produktu a technologii konfigurace k určení obchodních pravidel. Dimenze produktu (barva, velikost, styl a konfigurace) jsou konkrétní sada atributů, které lze použít v celé aplikaci k definování a sledování konkrétního chování souvisejících produktů. Tyto dimenze také pomáhají uživatelům vyhledat a určit produkty.
 
@@ -83,14 +83,14 @@ Pracovní prostor **Definice variant modelu produktu** poskytuje přehled hlavn�
 
 ## <a name="released-products"></a>Uvolněné produkty
 
-Produkty, které budou uvolněny pro určitou právnickou osobu, se označují jako *uvolněné produkty* . Produkty lze uvolňovat hromadně pro jednu právnickou osobu nebo mnoho právnických osob vždy po jednom. Vzhledem k tomu, že různé vlastnosti a atributy produktu mohou být přidávány podle právnických osob, pracovní prostor **Údržba uvolněného produktu** vám umožní sledovat a dokončit naposledy uvolněné produkty v každé právnické osobě nebo v dílčích organizacích právnické osoby.
+Produkty, které budou uvolněny pro určitou právnickou osobu, se označují jako *uvolněné produkty*. Produkty lze uvolňovat hromadně pro jednu právnickou osobu nebo mnoho právnických osob vždy po jednom. Vzhledem k tomu, že různé vlastnosti a atributy produktu mohou být přidávány podle právnických osob, pracovní prostor **Údržba uvolněného produktu** vám umožní sledovat a dokončit naposledy uvolněné produkty v každé právnické osobě nebo v dílčích organizacích právnické osoby.
 
 ### <a name="released-product-maintenance-workspace"></a>Pracovní prostor Údržba uvolněného produktu
 
-Pracovní prostor **Údržba uvolněného produktu** lze konfigurovat z položky nabídky **Nakonfigurovat můj pracovní prostor** . Vyberte hierarchii kategorií a kategorii pro filtrování pracovního prostoru. Chcete-li upravit příslušná data produktu v pracovním prostoru, můžete také definovat časové limity pro **naposledy uvolněné produkty** a **zastavené uvolněné produkty** ve dnech.
+Pracovní prostor **Údržba uvolněného produktu** lze konfigurovat z položky nabídky **Nakonfigurovat můj pracovní prostor**. Vyberte hierarchii kategorií a kategorii pro filtrování pracovního prostoru. Chcete-li upravit příslušná data produktu v pracovním prostoru, můžete také definovat časové limity pro **naposledy uvolněné produkty** a **zastavené uvolněné produkty** ve dnech.
 
 Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevřené případy** zobrazuje případy změny produktu, které mají produkty ve vybrané hierarchii kategorie produktů, které nejsou dokončeny a uzavřeny. Seznam **Naposledy uvolněné** zobrazuje produkty, které byly uvolněny v rámci časového limitu nastaveného v konfiguraci pracovního prostoru. Pro každou položku v seznamu se spustí ověření a zobrazí stav ověření. Tento stav by mohl naznačovat, že požadované konfigurace pro právnickou osobu nebyly dokončeny. Ze seznamu lze přejít přímo na stránky **Podrobnosti o uvolnění produktu** , **Údržba atributu produktu** , **Údržba kategorie produktu** , **Výchozí nastavení objednávky** a **Překlady textu** k dokončení nutných konfigurací produktu.
 
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 
-Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt** .
+Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt**.

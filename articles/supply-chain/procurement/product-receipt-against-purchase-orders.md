@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5868b9ef02bdbca33c9e155af3bf7540f0522f86
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208033"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018852"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Příjemka produktu proti nákupním objednávkám
 
@@ -42,7 +42,7 @@ K registraci příjmu produktu často dochází na vstupním přepravišti ve sk
 Produkty, které jsou přijaty ve skladu, mohou projít kontrolu kvality předtím, než dojde k jejich zaskladnění do zásob. Při kontrole kvality lze použít jak objednávky kvality, tak karanténní příkazy. Pokud jsou použity objednávky kvality, můžete nakonfigurovat proces tak, že dojde k dočasnému zablokování produktů skrze rezervaci, zatímco bude probíhat jejich inspekce. Pokud jsou použity karanténní příkazy, produkty jsou přesunuty do jiného skladu pro kontrolu. Tento sklad je označován jako karanténní sklad. V obou procesech kontroly kvality může být některé zboží vyřazeno, protože neodpovídá očekávané kvalitě, nebo protože kontrola kvality zahrnuje destruktivní testování vzorku výrobku.
 
 ## <a name="product-receipt"></a>Příjemka produktu
-Nejčastěji se používá akce **Příjemka produktu** na stránce **Nákupní objednávky** k označení produktů jako **Přijato** v nákupní objednávce. Stránka **Zaúčtování příjemky produktu** má různé možnosti pro množství, které je zaúčtováno jako přijaté. Například můžete nastavit pole **Množství** na **Objednané množství** nebo **Množství nynějšího příjmu**. Případně pokud byl použit proces příjezdu do skladu, často se toto pole nastaví na hodnotu **Registrované množství**. Můžete upravit množství na každém řádku objednávky, který bude označen jako **Přijato**, a zohlednit tak případné nesrovnalosti, jako je nadměrná/nedostatečná dodávka. Během příjmu produktu je nutné zadat identifikátor příjemky produktu, což je obvykle odkaz na dodací list od dodavatele. Tento identifikátor je vyžadován pro účetnictví, protože umožňuje kontrolu a audity dodacích listů dodavatel proti přijatému zboží a zaúčtovaným zásobám nebo nákladům.  
+Nejčastěji se používá akce **Příjemka produktu** na stránce **Nákupní objednávky** k označení produktů jako **Přijato** v nákupní objednávce. Stránka **Zaúčtování příjemky produktu** má různé možnosti pro množství, které je zaúčtováno jako přijaté. Například můžete nastavit pole **Množství** na **Objednané množství** nebo **Množství nynějšího příjmu**. Případně pokud byl použit proces příjezdu do skladu, často se toto pole nastaví na hodnotu **Registrované množství**. Můžete upravit množství na každém řádku objednávky, který bude označen jako **Přijato** , a zohlednit tak případné nesrovnalosti, jako je nadměrná/nedostatečná dodávka. Během příjmu produktu je nutné zadat identifikátor příjemky produktu, což je obvykle odkaz na dodací list od dodavatele. Tento identifikátor je vyžadován pro účetnictví, protože umožňuje kontrolu a audity dodacích listů dodavatel proti přijatému zboží a zaúčtovaným zásobám nebo nákladům.  
 
 Nákupní objednávky lze vytvářet pro produkty, které nejsou určeny jako zásoby, ale jsou považovány za výdaje. Tato kategorie obsahuje řádky objednávky, kde jsou výrobky označeny jako **Není na skladě** podle jejich skupiny skladového modelu, a také řádků, které používají kategorie zásobování. V tomto případě zboží nemusí procházet registrací doručení a přijetím ve skladu. Místo toho se používá akce **Příjemka produktu** k zaznamenání příjmu přímo v nákupní objednávce, a příjem je založen na objednaném množství, nikoli na zaznamenaném množství.  
 
@@ -52,7 +52,7 @@ Můžete vybrat více objednávek a zpracovat příjem u všech těchto objedná
 
 Nákupní objednávky můžete vytvořit z prodejní objednávky, kde byla vybrána možnost **Přímá dodávka**. Při použití přímé dodávky nejsou produkty nikdy doručeny do skladu, ale jsou dodány přímo od dodavatele k zákazníkovi. V tomto případě je příjem obvykle zaznamenán přímo v nákupní objednávce. Příjem může probíhat automaticky, například pomocí integrace EDI s dodavatelem. Případně pokud je nákupní objednávka mezipodnikovou nákupní objednávkou, aplikace Supply Chain Management automatizuje příjem v mezipodnikové prodejní objednávce, když dojde k dodávce. Při použití přímého dodání jsou výrobky i nadále zpracovány jako zásoby, i když nejsou fyzicky přijaty ve skladu. Proto při registraci příjemky produktu z nákupní objednávky je prodejní objednávka automaticky aktualizována v dodacím listu tak, aby celkové změny zásob byly 0 (nulové). V případech využívajících přímé doručení byste neměly vyžadovat předběžnou registraci. Pokud používáte sklady, které jsou povoleny pro řízení skladu, můžete obejít požadavek na registraci registrační značky zadáním virtuálního skladu. Tento sklad určíte v poli **Sklad pro přímé dodávky** u produktu. 
 
-Po zpracování příjemky produktu na nákupní objednávce je stav nákupní objednávky nastaven na **Přijato**, což označuje, že lze fakturu zpracovat pro objednávku. Můžete zkontrolovat podrobnosti o produktech, které již byly přijaty, pomocí stránky **Deníky příjemek produktu**.  
+Po zpracování příjemky produktu na nákupní objednávce je stav nákupní objednávky nastaven na **Přijato** , což označuje, že lze fakturu zpracovat pro objednávku. Můžete zkontrolovat podrobnosti o produktech, které již byly přijaty, pomocí stránky **Deníky příjemek produktu**.  
 
 Přístup k této stránce je pomocí skupiny akci **Příjem** na stránce **Nákupní objednávka**. Informace v denících zahrnují podrobné informace o množství, datech a rozměrech.
 

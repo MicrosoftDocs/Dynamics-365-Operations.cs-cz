@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974854"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013046"
 ---
 # <a name="customer-aging-report"></a>Sestava sledování prodlení odběratele 
 
@@ -115,8 +115,9 @@ Při generování této sestavy se zobrazují následující výchozí parametry
 <tr class="even">
 <td><p><strong>Pokyn pro tisk</strong></p></td>
 <td><p>Vyberte, zda chcete vypočítat zůstatky a vytisknout sestavu sledování prodlení za minulá nebo budoucí období. Kalendářní data se vyhodnocují vzhledem k datu, které je vybráno v poli <strong>Zůstatek ke dni</strong>. Výběrem položky <strong>Vzad</strong> zobrazíte informace o minulých obdobích. Výběrem položky <strong>Vpřed</strong> zobrazíte informace o budoucích obdobích.</p>
-
-**Poznámka:** Informace zadané v tomto poli se použijí jen tehdy, když nebyla vybrána definice období pro sledování splatnosti.</P>
+<div class="alert">
+  
+<STRONG>Poznámka:</STRONG> Informace zadané v tomto poli se použijí jen tehdy, když nebyla vybrána definice období pro sledování splatnosti.</P>
 
 
 </div></td>

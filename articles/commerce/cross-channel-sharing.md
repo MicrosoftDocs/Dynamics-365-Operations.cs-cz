@@ -3,7 +3,7 @@ title: Povolení a používání sdílení napříč kanály
 description: Toto téma popisuje, jak povolit a používat funkci sdílení napříč kanály v konfigurátoru webů Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974072"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019511"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Povolení a používání sdílení napříč kanály
 
@@ -50,8 +50,8 @@ Sdílení napříč kanály se povoluje na úrovni webu. Tato operace je jednosm
 
 Sdílení napříč kanály povolíte v konfigurátoru webů Commerce tímto postupem.
 
-1. Přejděte na **Nastavení webu \> Funkce** .
-1. Možnost **Napříč kanály** nastavte na **Zapnuto** .
+1. Přejděte na **Nastavení webu \> Funkce**.
+1. Možnost **Napříč kanály** nastavte na **Zapnuto**.
 
     ![Možnost Napříč kanály nastavená na Zapnuto v konfigurátoru webů Commerce](./media/enabling-cross-channel-sharing.png)
 
@@ -72,9 +72,9 @@ Obsah pro více kanálů můžete vytvářet a používat několika způsoby. M�
 Fragment pro více kanálů vytvoříte v konfigurátoru webů Commerce tímto postupem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment stránky** vyberte modul **Propagační banner** a pak v oblasti **Název fragmentu stránky** zadejte název (například **Banner pro více kanálů** ). Pak vyberte **OK** .
-1. V podokně vlastností modulu **Propagační banner** vyberte **Přidat zprávu** a potom vyberte **Zpráva** .
-1. V dialogovém okně **Zpráva** v oblasti **Text** zadejte **Pro více kanálů** a pak vyberte **OK** . 
+1. V dialogovém okně **Nový fragment** vyberte modul **Propagační banner** a pak v oblasti **Název fragmentu** zadejte název (například **Banner pro více kanálů** ). Pak vyberte **OK**.
+1. V podokně vlastností modulu **Propagační banner** vyberte **Přidat zprávu** a potom vyberte **Zpráva**.
+1. V dialogovém okně **Zpráva** v oblasti **Text** zadejte **Pro více kanálů** a pak vyberte **OK**. 
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 Tento fragment pro více kanálů lze použít na stránkách pro více kanálů nebo specifických pro kanál, které jsou vytvořeny na libovolném kanálu webu.
@@ -86,11 +86,11 @@ Stránky pro více kanálů lze použít v jakémkoli kanálu vašeho webu. Str�
 Pokud chcete v konfigurátoru webů Commerce vytvořit stránku pro více kanálů, která používá obsah pro více kanálů, použijte následující postup.
 
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte některou šablonu, například **Marketing** .
+1. V dialogovém okně **Zvolte šablonu** vyberte některou šablonu, například **Marketing**.
 1. V poli **Název stránky** zadejte název stránky (například **Stránka pro více kanálů** ).
-1. V poli **Adresa URL stránky** zadejte adresu URL stránky (například **examplepage** ) a pak vyberte **OK** .
-1. V pozici **Hlavní** na nové stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment** .
-1. V dialogovém okně **Přidat fragment** vyberte fragment pro více kanálů s propagačním bannerem, který jste vytvořili dříve, a vyberte **OK** .
+1. V poli **Adresa URL stránky** zadejte adresu URL stránky (například **examplepage** ) a pak vyberte **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Přidat fragment** vyberte fragment pro více kanálů s propagačním bannerem, který jste vytvořili dříve, a vyberte **OK**.
 1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky. Měli byste vidět propagační banner s textem „Pro více kanálů“.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
@@ -101,11 +101,11 @@ Při použití obsahu pro více kanálů na stránkách specifických pro kanál
 Pokud chcete v konfigurátoru webů Commerce vytvořit stránku specifickou pro kanál, která používá obsah pro více kanálů, použijte následující postup.
 
 1. Z konkrétního kanálu, například **Rozšířený online obchod Fabrikam** , přejděte na **Stránky** a výběrem možnosti **Nový** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte některou šablonu, například **Marketing** .
+1. V dialogovém okně **Zvolte šablonu** vyberte některou šablonu, například **Marketing**.
 1. V poli **Název stránky** zadejte název stránky (například **Stránka specifická pro kanál** ).
-1. V poli **Adresa URL stránky** zadejte adresu URL stránky (například **channelspecificpage** ) a pak vyberte **OK** .
-1. V pozici **Hlavní** na nové stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment** .
-1. V dialogovém okně **Přidat fragment** v oblasti **Kanál** vyberte **Online obchod s více kanály** . V seznamu by se měl objevit fragment pro více kanálů, který jste vytvořili dříve. Vyberte ho a pak vyberte **OK** .
+1. V poli **Adresa URL stránky** zadejte adresu URL stránky (například **channelspecificpage** ) a pak vyberte **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Přidat fragment** v oblasti **Kanál** vyberte **Online obchod s více kanály**. V seznamu by se měl objevit fragment pro více kanálů, který jste vytvořili dříve. Vyberte ho a pak vyberte **OK**.
 1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky. Měli byste vidět propagační banner s textem „Pro více kanálů“.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
@@ -115,14 +115,14 @@ Sdílení napříč kanály podporuje přepsání obsahu pro více kanálů. Vš
 
 Pokud chcete v konfigurátoru webů Commerce vytvořit verzi stránky pro více kanálů specifickou pro kanál, použijte následující postup.
 
-1. V poli **Kanál** v pravém horním rohu vyberte **Online obchod s více kanály** .
+1. V poli **Kanál** v pravém horním rohu vyberte **Online obchod s více kanály**.
 1. Otevřete stránku pro více kanálů, kterou jste vytvořili dříve.
 1. V poli **Kanál** v pravém horním rohu vyberte kanál, který má mít specifický obsah. Editor stránky zobrazí zprávu, která vás vyzve k vytvoření nové varianty stránky.
-1. Vyberte **Vytvořit variantu stránky** .
-1. V pozici **Hlavní** na variantě stránky vyberte tlačítko se třemi tečkami ( **...** ) a vyberte možnost **Přidat modul** .
-1. V dialogovém okně **Přidat modul** vyberte modul **Propagační banner** a pak vyberte **OK** .
-1. V podokně vlastností modulu **Propagační banner** vyberte **Přidat zprávu** a potom vyberte **Zpráva** .
-1. V dialogovém okně **Zpráva** v oblasti **Text** zadejte **Specifické pro kanál** a vyberte **OK** .
+1. Vyberte **Vytvořit variantu stránky**.
+1. V pozici **Hlavní** na variantě stránky vyberte tlačítko se třemi tečkami ( **...** ) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Propagační banner** a pak vyberte **OK**.
+1. V podokně vlastností modulu **Propagační banner** vyberte **Přidat zprávu** a potom vyberte **Zpráva**.
+1. V dialogovém okně **Zpráva** v oblasti **Text** zadejte **Specifické pro kanál** a vyberte **OK**.
 1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky. Měli byste vidět propagační banner s textem „Specifické pro kanál“.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 

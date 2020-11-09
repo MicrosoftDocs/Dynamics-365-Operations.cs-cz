@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66611e2d8a88269fe727c46ef4aa6aa809cc7836
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214037"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018346"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
 
@@ -33,7 +33,7 @@ Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávk
 ## <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
 1. V navigačním podokně přejděte na **Moduly > Zásobování a zdroje > Stav zásob dodávky > Zakázky na doplnění stavu zásob dodávky**.
 2. Zvolte **Nové**.
-3. V poli **Účet dodavatele** vyberte dodavatele **US-104** (musíte vybrat dodavatele, který je zaregistrován jako vlastník na stránce **Vlastníci zásob**). 
+3. V poli **Účet dodavatele** vyberte dodavatele **US-104** (musíte vybrat dodavatele, který je zaregistrován jako vlastník na stránce **Vlastníci zásob** ). 
 4. Vyberte **OK**.
 5. Vyberte **Přidat řádek**.
 6. Do pole **Číslo položky** zadejte `M9211CI` (je nutné vybrat položku, která je nastavena pro zásoby dodávky).
@@ -42,7 +42,7 @@ Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávk
 9. Zadejte datum do pole **Potvrzené datum dodání**.
 10. Rozbalte sekci **Podrobnosti řádku**.
 11. Vyberte kartu **Dimenze zásob**.
-12. Chcete-li zobrazit vlastníka v poli **Vlastník dimenze zásob**, aktualizujte stránku. Dodavatel US-104 je nyní uveden jako vlastník.  
+12. Chcete-li zobrazit vlastníka v poli **Vlastník dimenze zásob** , aktualizujte stránku. Dodavatel US-104 je nyní uveden jako vlastník.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Zkontrolujte stav transakce zásob.
 1. Vyberte **skladový model**.

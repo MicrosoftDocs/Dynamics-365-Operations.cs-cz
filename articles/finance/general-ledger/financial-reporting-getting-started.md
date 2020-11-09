@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999542"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
@@ -90,13 +90,13 @@ Uživatelé, kteří vygenerovali sestavu, ji mohou i odstranit. Uživatelé s p
 Ve vydání 10.0.8 byla zavedena koncepce dat vypršení platnosti. Nová požadovaná funkce je povolena na stránce **Vše** v pracovním prostoru Správa funkcí. Funkce **Zásady uchovávání finančních sestav** obsahuje následující změny:
 * Nově generované sestavy budou automaticky označeny datem vypršení platnosti 90 dní od jejich vygenerování.
 * Všechny existující sestavy před instalací této funkce budou mít dobu platnosti 90 dní. Datum se může po krátkou dobu zobrazit jako prázdné, dokud není spuštěna služba finančního výkaznictví, vygeneruje se sestava a služba provede aktualizaci existujících sestav s prázdným datem vypršení platnosti. 
-* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví** . Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav: 
+* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav: 
   * Vypršení platnosti za 90 dní.
   * Možnost nastavení nekonečné doby vypršení platnosti sestavy.
   
 Pokud je vybrána doba platnosti, například 90 dní, použije se 90 dní ode dneška. Toto chování je jiné než 90 dnů od původního data generování, které bylo nastaveno při vygenerování sestavy. 
   
-Další možnosti budou zváženy v budoucích funkcích. Doba vypršení 90 dnů bude výchozí a uživatelé s příslušnými oprávněními mohou přepsat výchozí nastavení na stránce se seznamem **finančních sestav** .    
+Další možnosti budou zváženy v budoucích funkcích. Doba vypršení 90 dnů bude výchozí a uživatelé s příslušnými oprávněními mohou přepsat výchozí nastavení na stránce se seznamem **finančních sestav**.    
 
 ## <a name="default-reports"></a>Výchozí sestavy
 Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každá sestava používá výchozí kategorie hlavního účtu. Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování. Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit. 
@@ -143,25 +143,25 @@ Můžete vytvořit neomezený počet stromů výkaznictví k zobrazování dat v
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Problémy při otevírání Návrháře sestav
 Při otevírání Návrháře sestav může dojít k několika běžným problémům. Tyto problémy a kroky k jejich vyřešení jsou následující.
 
-Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upravit** .
+Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upravit**.
 
-* V Internet Explorer vyberte **Nastavení** , poté vyberte **Možnosti internetu** . Vyberte kartu **Zabezpečení** . Vyberte Důvěryhodné servery a poté vyberte **Weby** . V **Přidejte tento web do zóny** zadejte "\*\.dynamics.com" (bez uvozovek) a poté vyberte **Přidat** . 
-* V Internet Explorer vyberte **Nastavení** , poté vyberte **Možnosti internetu** . Vyberte kartu **Zabezpečení** . Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká** .
+* V Internet Explorer vyberte **Nastavení** , poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery a poté vyberte **Weby**. V **Přidejte tento web do zóny** zadejte "\*\.dynamics.com" (bez uvozovek) a poté vyberte **Přidat**. 
+* V Internet Explorer vyberte **Nastavení** , poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká**.
 * Zakažte blokování vyskakovacích oken v prohlížeči.
 * K instalaci jsou vyžadovány pracovní stanice Microsoft .NET Framework 4.6.2 nebo vyšší. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
 * Pokud používáte Microsoft Edge s prohlížečem Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. 
      1. Otevřete nový prohlížeč v prohlížeči Microsoft Edge.
-     2. Zadejte **edge://flags** a vyberte **Enter** .
-     3. Vyhledejte možnost **Podpora ClickOnce** nebo použijte tento přímý odkaz:  **edge://flags/#edge-click-once** .
-     4. Nastavte možnost rozevírací nabídky na **Povoleno** .
-     5. Vyberte **Restartovat prohlížeč** .
+     2. Zadejte **edge://flags** a vyberte **Enter**.
+     3. Vyhledejte možnost **Podpora ClickOnce** nebo použijte tento přímý odkaz:  **edge://flags/#edge-click-once**.
+     4. Nastavte možnost rozevírací nabídky na **Povoleno**.
+     5. Vyberte **Restartovat prohlížeč**.
 
 Problém 2: Uživateli nebyla přidělena požadovaná oprávnění k používání Financial Reporting. 
 
-* Chcete-li ověřit, zda uživatel nemá oprávnění, vyberte **Ano** u chyby „Nelze se připojit k serveru Financial Reporting. Zvolte Ano, pokud chcete pokračovat a zadejte jinou adresu serveru." Pak vyberte **Test připojení** . Pokud nemáte povolení, zobrazí se zpráva „Pokus o připojení selhal. Uživatel nemá příslušná oprávnění pro připojení k serveru. Obraťte se na vašeho správce systému."
+* Chcete-li ověřit, zda uživatel nemá oprávnění, vyberte **Ano** u chyby „Nelze se připojit k serveru Financial Reporting. Zvolte Ano, pokud chcete pokračovat a zadejte jinou adresu serveru." Pak vyberte **Test připojení**. Pokud nemáte povolení, zobrazí se zpráva „Pokus o připojení selhal. Uživatel nemá příslušná oprávnění pro připojení k serveru. Obraťte se na vašeho správce systému."
 * Požadovaná oprávnění jsou uvedena výše v [Poskytnutí bezpečnostního přístupu k Financial Reporting](#granting-security-access-to-financial-reporting). Zabezpečení ve Financial Reporting je založeno na těchto oprávněních. Nebudete mít přístup, dokud vám tato oprávnění (nebo jiná role zabezpečení, která tato oprávnění zahrnují) nebudou přiřazena. 
 * Integrační úloha **Poskytovatel uživatelských služeb společnosti** (která je také odpovědná a známá jako integrace uživatelů) běží v 5minutovém intervalu. Změny oprávnění se ve Financial Reporting projeví až po 10 minutách. 
-  Pokud jiný uživatel může otevřít Návrháře sestav, vyberte **Nástroje** a poté vyberte **Stav integrace** . Ověřte, zda integrační mapa „Poskytovatel firemních uživatelů pro společnost“ úspěšně fungovala, protože vám bylo uděleno oprávnění k používání Financial Reporting. 
+  Pokud jiný uživatel může otevřít Návrháře sestav, vyberte **Nástroje** a poté vyberte **Stav integrace**. Ověřte, zda integrační mapa „Poskytovatel firemních uživatelů pro společnost“ úspěšně fungovala, protože vám bylo uděleno oprávnění k používání Financial Reporting. 
 * Je možné, že další chyba zabránila **Integrace uživatele Dynamics do Financial Reporting** v dokončení. Nebo je možné, že reset datamartu byl zahájen a ještě nebyl dokončen, nebo že došlo k jiné systémové chybě. Zkuste proces spustit znovu později. Pokud problém přetrvává, kontaktujte správce systému.
 
 Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Report Designer, ale nemůžete dokončit přihlášení v návrháři sestav. 
