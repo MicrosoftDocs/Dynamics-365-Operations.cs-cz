@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962513"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013173"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -37,7 +37,7 @@ Některé zkratky na této stránce představují *klávesové akordy* , což zn
 
 ## <a name="finding-a-shortcut"></a>Nalezení klávesových zkratek
 
-Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky** . Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
+Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
 
@@ -239,7 +239,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod nahoru a dolů o stránku ve vyhledávání                                                                                       | Page up / Page down              |
 | Přechod na začátek/konec vyhledávání                                                                                    | Home/End                       |
 
-## <a name="task-recordershortcuts"></a>Zkratky pro [Záznamník úloh](../../dev-itpro/user-interface/task-recorder.md) 
+## <a name="task-recorder-shortcuts"></a>Zkratky pro [Záznamník úloh](../../dev-itpro/user-interface/task-recorder.md) 
 
 | Akce                                                                    | Stiskněte tlačítko .                      |
 |-------------------------------------------------------------------------------|----------------------------|

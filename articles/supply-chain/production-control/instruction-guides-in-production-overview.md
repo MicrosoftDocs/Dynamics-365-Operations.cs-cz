@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: d8c2da17d4e3df37c55844f0aad00f883725f741
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
+ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989262"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000971"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Poskytování příruček v hybridní realitě pro pracovníky ve výrobě
 
@@ -111,21 +111,21 @@ Abyste mohli tuto funkci používat, musí váš systém obsahovat:
 Chcete-li tuto funkci ve svém systému zpřístupnit, musíte povolit její konfigurační klíče. Stačí, když to uděláte jen jednou. Jako správce musíte provést následující postup:
 
 1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence** .
-1. Rozbalte oddíl **Hybridní realita** a zaškrtněte políčko **Příručka v hybridní realitě** .
-1. Rozbalte oddíl **Řízení výroby** a zaškrtněte políčko **Výrobní pokyny** .
+1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
+1. Rozbalte oddíl **Hybridní realita** a zaškrtněte políčko **Příručka v hybridní realitě**.
+1. Rozbalte oddíl **Řízení výroby** a zaškrtněte políčko **Výrobní pokyny**.
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
   
 ## <a name="configure-how-guides-appear-on-the-shop-floor"></a>Konfigurace způsobu, jakým se aplikace Guides zobrazuje v dílně
 
-Chcete-li nakonfigurovat, jak se aplikace Guides bude zobrazovat v dílně, přejděte na **Hybridní realita \>Dynamics 365 Guides\> Konfigurovat integraci aplikace Guides** .
+Chcete-li nakonfigurovat, jak se aplikace Guides bude zobrazovat v dílně, přejděte na **Hybridní realita \>Dynamics 365 Guides\> Konfigurovat integraci aplikace Guides**.
 
 ![Konfigurace integrace aplikace Guides ve výrobě](media/instruction-guides-configure-integration.png "Konfigurace integrace aplikace Guides ve výrobě")
 
 Nastavte následující pole:
 
-- **Subdoména prostředí CDS** – toto pole by už mělo obsahovat hodnotu. Toto pole obsahuje subdoménu prostředí Common Data Service, ve kterém vytváříte příručky. Tato subdoména je první částí adresy URL a zpravidla je pojmenována po vaší organizaci. Pokud je například vaše adresa URL Common Data Service „contoso.crm4.dynamics.com“, měli byste sem zadat *contoso* . Tato hodnota se používá k vytvoření adres vašich příruček a bude zakódována do kódů QR.
-- **Velikost kódu QR** – nastavte velikost vykresleného kódu QR. Doporučujeme zvolit velikost, která vyplní většinu vaší obrazovky, ale ne více. Vhodná hodnota je zpravidla *15* .
+- **Subdoména Common Data Service** – toto pole by už mělo obsahovat hodnotu. Toto pole obsahuje subdoménu prostředí Common Data Service, ve kterém vytváříte příručky. Tato subdoména je první částí adresy URL a zpravidla je pojmenována po vaší organizaci. Pokud je například vaše adresa URL Common Data Service „contoso.crm4.dynamics.com“, měli byste sem zadat *contoso*. Tato hodnota se používá k vytvoření adres vašich příruček a bude zakódována do kódů QR.
+- **Velikost kódu QR** – nastavte velikost vykresleného kódu QR. Doporučujeme zvolit velikost, která vyplní většinu vaší obrazovky, ale ne více. Vhodná hodnota je zpravidla *15*.
 - **Úroveň opravy chyb kódu QR** – nastavte členitost kódu QR. Vyšší členitost pomáhá zvýšit spolehlivost kódu, ale **Velikost kódu QR** musí být dostatečně velká, aby podporovala detaily vyžadované vámi vybranou úrovní opravy.
 
 
@@ -136,7 +136,7 @@ Nastavte následující pole:
 
 ## <a name="get-an-overview-of-all-guide-assignments"></a>Získání přehledu přiřazení všech příruček
 
-Na stránce **Všechny příručky** si můžete prohlédnout seznam všech dostupných příruček ve vaší organizaci a jejich přiřazení k výrobním procesům a prostředkům. Otevřete ji tak, že přejdete na **Hybridní realita \> Příručky \> Všechny příručky** . V horní části seznamu se zobrazují všechny dostupné příručky a pole, které můžete použít k filtrování seznamu. V dolní části seznamu se zobrazují všechna přiřazení příručky a panel nástrojů pro jejich správu.
+Na stránce **Všechny příručky** si můžete prohlédnout seznam všech dostupných příruček ve vaší organizaci a jejich přiřazení k výrobním procesům a prostředkům. Otevřete ji tak, že přejdete na **Hybridní realita \> Příručky \> Všechny příručky**. V horní části seznamu se zobrazují všechny dostupné příručky a pole, které můžete použít k filtrování seznamu. V dolní části seznamu se zobrazují všechna přiřazení příručky a panel nástrojů pro jejich správu.
 
 ![Správa příruček](media/instruction-guides-allguides.png "Správa příruček")
 
@@ -154,10 +154,10 @@ K nějakému stroji můžete například připojit příručku s obecnými pokyn
 
 Příručku přidáte k prostředku takto:
 
-1. Přejděte na **Řízení výroby \> Nastavení \> Prostředky \> Prostředky** .
+1. Přejděte na **Řízení výroby \> Nastavení \> Prostředky \> Prostředky**.
 1. V podokně seznamu vyberte prostředek, ke kterému chcete přiřadit příručku.
-1. Rozbalte pevnou záložku **Přidružené příručky** .
-1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat** . Do mřížky je přidán nový řádek.
+1. Rozbalte pevnou záložku **Přidružené příručky**.
+1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Pokud máte velký počet příruček, můžete filtrováním seznamu najít tu, kterou hledáte.
     ![Správa příruček](media/instruction-guides-allguides.png "Správa příruček")
 
@@ -175,10 +175,10 @@ Příručky můžete přidat ke [skupinám prostředků](tasks/define-discrete-m
 
 Příručku přidáte ke skupině prostředků takto:
 
-1. Přejděte na **Řízení výroby \> Nastavení \> Prostředky \> Skupiny prostředků** .
+1. Přejděte na **Řízení výroby \> Nastavení \> Prostředky \> Skupiny prostředků**.
 1. V podokně seznamu vyberte skupinu prostředků, ke které chcete přiřadit příručku.
-1. Rozbalte pevnou záložku **Přidružené příručky** .
-1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat** . Do mřížky je přidán nový řádek.
+1. Rozbalte pevnou záložku **Přidružené příručky**.
+1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Pokud máte velký počet příruček, můžete filtrováním seznamu najít tu, kterou hledáte.
     ![Přidání příručky ke skupině prostředků](media/instruction-guides-resourcegroup.png "Přidání příručky ke skupině prostředků")
 
@@ -194,9 +194,9 @@ Příručky na úrovni produktu poskytují pracovníkům v dílně pokyny týkaj
 
 Příručku přidáte k uvolněnému produktu takto:
 
-1. Přejděte na **Řízení informací o výrobě \> Produkty \> Uvolněné produkty** .
+1. Přejděte na **Řízení informací o výrobě \> Produkty \> Uvolněné produkty**.
 1. Otevřete produkt, ke kterému chcete přiřadit příručku.
-1. V podokně akcí otevřete kartu **Inženýr** a ve skupině **Zobrazení** vyberte **Přidružené příručky** .
+1. V podokně akcí otevřete kartu **Inženýr** a ve skupině **Zobrazení** vyberte **Přidružené příručky**.
 1. Otevře se stránka **Přidružené příručky** pro vybraný produkt.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky. 
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
@@ -219,11 +219,11 @@ Příručky na úrovni receptury poskytují pracovníkům v dílně pokyny pro m
 
 Příručku přidáte k receptuře takto:
 
-1. Přejděte na **Řízení informací o produktech \> Kusovníky a receptury \> Receptury** .
+1. Přejděte na **Řízení informací o produktech \> Kusovníky a receptury \> Receptury**.
 1. Otevřete recepturu, ke které chcete přiřadit příručku.
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
-1. Rozbalte pevnou záložku **Přidružené příručky** .
-1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat** . Do mřížky je přidán nový řádek.
+1. Rozbalte pevnou záložku **Přidružené příručky**.
+1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
     ![Přidání příručky k receptuře](media/instruction-guides-Formula.png "Přidání příručky k receptuře")
 
@@ -245,11 +245,11 @@ Příručky připojené k individuální verzi receptury poskytují pracovníků
 
 Příručku přidáte k verzi receptury takto:
 
-1. Přejděte na **Řízení informací o produktech \> Kusovníky a receptury \> Receptury** .
+1. Přejděte na **Řízení informací o produktech \> Kusovníky a receptury \> Receptury**.
 1. Otevřete recepturu obsahující verzi, ke které chcete přiřadit příručku.
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
 1. Na pevné záložce **Verze receptury** vyberte verzi, ke které chcete přiřadit příručku.
-1. Na panelu nástrojů **Verze receptury** vyberte **Přidružené příručky** .
+1. Na panelu nástrojů **Verze receptury** vyberte **Přidružené příručky**.
     ![Otevření příruček přidružených k vybrané verzi receptury](media/instruction-guides-FormulaVersion.png "Otevření příruček přidružených k vybrané verzi receptury")
 1. Otevře se stránka **Přidružené příručky** pro verzi receptury.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky. 
@@ -271,11 +271,11 @@ Příručky připojené ke kusovníku poskytují pracovníkům v dílně pokyny,
 
 Příručku přidáte ke kusovníku takto:
 
-1. Přejděte na **Řízení informací o výrobě \> Kusovníky a receptury \> Kusovníky** .
+1. Přejděte na **Řízení informací o výrobě \> Kusovníky a receptury \> Kusovníky**.
 1. Otevřete kusovník, ke kterému chcete přiřadit příručku.
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
-1. Rozbalte pevnou záložku **Přidružené příručky** .
-1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat** . Do mřížky je přidán nový řádek.
+1. Rozbalte pevnou záložku **Přidružené příručky**.
+1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
     ![Přidání příručky ke kusovníku](media/instruction-guides-BOM.png "Přidání příručky ke kusovníku")
 
@@ -294,11 +294,11 @@ Příručky připojené k individuální verzi kusovníku poskytují pracovník�
 
 Příručku přidáte k verzi kusovníku takto:
 
-1. Přejděte na **Řízení informací o výrobě \> Kusovníky a receptury \> Kusovníky** .
+1. Přejděte na **Řízení informací o výrobě \> Kusovníky a receptury \> Kusovníky**.
 1. Otevřete kusovník obsahující verzi, ke které chcete přiřadit příručku.
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
 1. Na pevné záložce **Verze kusovníku** vyberte verzi, ke které chcete přiřadit příručku.
-1. Na panelu nástrojů **Verze kusovníku** vyberte **Přidružené příručky** .
+1. Na panelu nástrojů **Verze kusovníku** vyberte **Přidružené příručky**.
     ![Otevření příruček přidružených k vybrané verzi kusovníku](media/instruction-guides-BOMVersion.png "Otevření příruček přidružených k vybrané verzi kusovníku")
 1. Otevře se stránka **Přidružené příručky** pro verzi kusovníku.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky.
@@ -319,10 +319,10 @@ Přiřazením příručky k postupu poskytnete podrobné pokyny pro příslušn�
 
 Příručku přidáte k postupu takto:
 
-1. Přejděte na **Řízení výroby \> Všechny postupy** .
+1. Přejděte na **Řízení výroby \> Všechny postupy**.
 1. Otevřete postup, ke kterému chcete přiřadit příručku.
-1. Rozbalte pevnou záložku **Přidružené příručky** .
-1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat** . Do mřížky je přidán nový řádek.
+1. Rozbalte pevnou záložku **Přidružené příručky**.
+1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
     ![Přidání příručky k postupu](media/instruction-guides-Route.png "Přidání příručky k postupu")
 
@@ -338,10 +338,10 @@ Verze postupů se obvykle používají k určení variant výrobních procesů z
 
 Příručku přidáte k verzi postupu takto:
 
-1. Přejděte na **Řízení výroby \> Všechny postupy** .
+1. Přejděte na **Řízení výroby \> Všechny postupy**.
 1. Otevřete postup, ke kterému chcete přiřadit příručku.
 1. Na pevné záložce **Verze** vyberte verzi, ke které chcete přiřadit příručku.
-1. Na panelu nástrojů **Verze** vyberte **Přidružené příručky** .
+1. Na panelu nástrojů **Verze** vyberte **Přidružené příručky**.
     ![Otevření příruček přidružených k vybrané verzi postupu](media/instruction-guides-RouteVersion.png "Otevření příruček přidružených k vybrané verzi postupu")
 1. Otevře se stránka **Přidružené příručky** pro verzi kusovníku.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky.
@@ -363,14 +363,14 @@ Vztahy operací představují nejkonkrétnější způsob přidání pokynů k p
 
 Příručku přidáte ke vztahu operace postupu takto:
 
-1. Přejděte na **Řízení výroby \> Všechny postupy** .
+1. Přejděte na **Řízení výroby \> Všechny postupy**.
 1. Otevřete postup, ke kterému chcete přiřadit příručku.
-1. V podokně akcí otevřete kartu **Postup** a ve skupině **Údržba** vyberte **Podrobnosti postupu** .
+1. V podokně akcí otevřete kartu **Postup** a ve skupině **Údržba** vyberte **Podrobnosti postupu**.
 1. Otevře se stránka **Podrobnosti postupu** pro vybraný postup.
 1. V horní mřížce vyberte operaci, ke které chcete poskytnout pokyny.
 1. V dolní mřížce vyberte konkrétní vztah (nebo obecný vztah **Vše** ).
     ![Výběr operace a následně vztahu](media/instruction-guides-RouteOperationRelation.png "Výběr operace a následně vztahu")
-1. Nad dolní mřížkou otevřete kartu **Přidružené příručky** . ![Karta Přidružené příručky](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Přidružené příručky")
+1. Nad dolní mřížkou otevřete kartu **Přidružené příručky**. ![Karta Přidružené příručky](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Přidružené příručky")
 1. Výběrem možnosti **Přidat** na panelu nástrojů v horní části dolní mřížky přidejte do mřížky nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Ve zbytku řádku zaškrtněte políčko pro každý kontext, ve kterém má být vybraná příručka dostupná.
 

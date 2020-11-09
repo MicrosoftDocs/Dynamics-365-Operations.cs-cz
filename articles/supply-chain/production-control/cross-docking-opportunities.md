@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCrossDockOpportunityPolicy
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c47cb24e8fb14a46ee663ab9cf75679acdb6384
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211554"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016832"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
@@ -36,7 +36,7 @@ Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který
 
 Cross docking z výroby do výstupního skladového místa je relevantní pro výrobce, kteří produkují velké množství a v ideálním případě chtějí expedovat dokončené produkt při jejich prohlášení za dokončené z výrobních linek. Účelem je dodat produkty do distribučních center, které se fyzicky nacházejí blízko poptávky odběratele, namísto vytváření zásob na výrobním pracovišti.
 
-V případě, že neexistuje okamžitá poptávka po produktu, musí být produkt umístěn do skladových míst na výrobním pracovišti. Tento proces se nazývá také *příležitostný cross-docking*, což znamená, že pokud existuje poptávka po dodání produktu, je třeba tuto příležitost využít, namísto odkládání produktu do interního úložiště.
+V případě, že neexistuje okamžitá poptávka po produktu, musí být produkt umístěn do skladových míst na výrobním pracovišti. Tento proces se nazývá také *příležitostný cross-docking* , což znamená, že pokud existuje poptávka po dodání produktu, je třeba tuto příležitost využít, namísto odkládání produktu do interního úložiště.
 
 Následující příklad ukazuje tři odchylky toku, který začíná na konci výrobní linky (2).
 
@@ -97,7 +97,7 @@ V zásadách cross dockingu můžete nastavit kritérium pro vyžádání, aby o
 Po vykázání produktu jako dokončeného na výrobní lince je produkt dopraven k nákladové bráně, kde je naložen na nákladní vozidlo a přepraven do distribučního centra. Použijte společnost USMF.
 
 1.  Povolte novou číselnou řadu pro cross docking. Přejděte na stránku **Číselné řady** a vyberte tlačítko **Generovat**. Procesem vás provede průvodce.
-2.  Vytvořte zásadu cross dockingu. Přejděte na stránku **Zásady cross dockingu** a vytvořte novou zásadu s názvem **Cross docking pro objednávku transferu**. Všimněte si, že typ pracovního příkazu, který můžete vybrat, je **Vydání transferu**, a jediná dostupná strategie cross dockingu je **Datum a čas**.
+2.  Vytvořte zásadu cross dockingu. Přejděte na stránku **Zásady cross dockingu** a vytvořte novou zásadu s názvem **Cross docking pro objednávku transferu**. Všimněte si, že typ pracovního příkazu, který můžete vybrat, je **Vydání transferu** , a jediná dostupná strategie cross dockingu je **Datum a čas**.
 3.  Vytvoření zásadu práce. Přejděte na stránku **Zásady práce** a vytvořte novou zásadu práce s názvem **Cross Dock L0101**.
 4.  Nastavte náklady tak, aby se vytvářely pro objednávky transferu automaticky. V parametrech skladu nastavte náklady tak, aby se vytvářely automaticky při vytváření objednávek transferu. Náklad je předpokladem pro vytváření objednávky transferu oprávněné pro cross docking.
 5.  Nastavte mapování nákladu položek. Přejděte na stránku **Mapování nákladu položek** a nastavte standardní šablonu nákladu na skupinu položek **CarAudio**. Toto mapování automaticky při vytvoření objednávky transferu vloží šablonu nákladu.

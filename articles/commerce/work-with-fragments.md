@@ -3,7 +3,7 @@ title: Práce s fragmenty
 description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961651"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019557"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
@@ -58,31 +58,27 @@ Můžete vytvořit nový fragment nebo uložit existující konfiguraci modulu j
 
 ### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Uložit existující konfiguraci modulu jako fragment
 
-Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný fragment, postupujte následujícím způsobem.
+Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný fragment v tvůrci webů Commerce, postupujte následujícím způsobem.
 
 1. Otevřete stránku nebo šablonu obsahující modul, který chcete převést na fragment.
 1. V podokně osnovy vlevo nebo přímo ve vizuálním tvůrci stránek vyberte dříve nakonfigurovaný modul.
 1. Vyberte tlačítko se třemi tečkami ( **...** ) vedle názvu modulu v podokně osnovy nebo na panelu nástrojů vybraného modulu ve vizuálním tvůrci stránek. 
-1. Vyberte možnost **Sdílet jako fragment stránky** . 
-1. V dialogovém okně **Uložit jako fragment stránky** zadejte název fragmentu.
-1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK** .
-
-Následující obrázek ukazuje, jak uložit konfiguraci modulu jako fragment.
-
-![Obrazovka, která popisuje uložení konfigurace modulu jako fragment](./media/save-as-fragment.png)
+1. Vyberte možnost **Sdílet jako fragment**. 
+1. V dialogovém okně **Uložit jako fragment** zadejte název fragmentu.
+1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Vytvořit nový fragment
 
-Při vytváření nového fragmentu postupujte takto:
+Nový fragment vytvoříte v konfigurátoru webů Commerce tímto postupem.
 
-1. V navigačním podokně nalevo vyberte položku **Fragmenty** .
-1. Zvolte **Nový fragment stránky** . Zobrazí se dialogové okno s informacemi o všech dostupných typech modulů. Jak bylo zmíněno dříve, fragmenty mohou být vytvořeny z libovolného typu modulu.
+1. V navigačním podokně nalevo vyberte položku **Fragmenty**.
+1. Zvolte **Nové**. Zobrazí se dialogové okno **Nový fragment** s informacemi o všech dostupných typech modulů. Jak bylo zmíněno dříve, fragmenty mohou být vytvořeny z libovolného typu modulu.
 1. Vyberte typ modulu pro váš fragment.
 
-Na následujícím obrázku je znázorněno, kde je možné vytvořit nový fragment.
-
-![Obrazovka, na které se má vytvořit nový fragment](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Výběrem generického typu kontejnerového modulu získáte maximální pružnost při aktualizaci a konfiguraci fragmentu později.
 
@@ -92,28 +88,26 @@ Následující postupy popisují způsob přidávání, odebírání a úprav fr
 
 ### <a name="add-a-fragment"></a>Přidat fragment
 
-Chcete-li přidat fragment na stránku, postupujte takto:
+Fragment přidáte na stránku v konfigurátoru webů Commerce tímto postupem.
 
 1. V podokně osnovy vlevo nebo přímo ve vizuálním tvůrci stránek vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
-1. V online podokně vyberte tlačítko se třemi tečkami ( **...** ) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte vizuální tvůrce stránek, vyberte symbol plus ( **+** ).  
-1. Vyberte **Přidat fragment** .
-
-    ![Snímek obrazovky s postupem přidání existujícího fragmentu do patice nebo do kontejneru.](./media/add-fragment.png)
+1. Vyberte tři tečky ( **...** ) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte vizuální tvůrce stránek, vyberte symbol plus ( **+** ).  
+1. Vyberte **Přidat fragment**.
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Pokud kontejner nebo slot nepodporuje nové podřízené moduly, nebude možnost **Přidat fragment** k dispozici.
     
-1. V dialogovém okně **Přidat fragment** vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
+1. V dialogovém okně **Vybrat fragment** vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
 1. Výběrem přidáte požadovaný fragment do vybraného kontejneru nebo slotu na stránce.
-
-    ![Zachycení obrazovky pro výběr modálního okna fragmentu](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Moduly, které jsou povoleny v kontejneru nebo slotu, jsou definovány šablonou stránky nebo vlastními definicemi modulů.
 
 ### <a name="remove-a-fragment"></a>Odebrání fragmentu
 
-Chcete-li odebrat fragment ze slotu nebo kontejneru na stránce, postupujte podle následujících kroků.
+Chcete-li odebrat fragment ze slotu nebo kontejneru na stránce v tvůrci webů Commerce, postupujte podle následujících kroků.
 
 1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami ( **...** ) vedle názvu fragmentu, který chcete odebrat, a pak vyberte symbol odpadkového koše.  Alternativně můžete vybrat fragment ve vizuálním tvůrci stránek a vybrat symbol koše na panelu nástrojů fragmentu.
 1. Až budete vyzváni k potvrzení odebrání fragmentu, vyberte **OK.**
@@ -125,9 +119,9 @@ Chcete-li odebrat fragment ze slotu nebo kontejneru na stránce, postupujte podl
 
 Chcete-li upravit fragmenty, je nutné použít uživatelské rozhraní editoru fragmentů. Toto omezení je záměrné. Pomáhá zajistit, aby autoři neměnili proces úpravy modulů pro konkrétní stránku s procesem úprav fragmentů, které mohou být sdíleny na více stránkách.
 
-Při editaci fragmentu postupujte takto:
+Fragment upravíte v konfigurátoru webů Commerce tímto postupem.
 
-1. V navigačním podokně nalevo vyberte položku **Fragmenty** .
+1. V navigačním podokně nalevo vyberte položku **Fragmenty**.
 1. Mezi **Fragmenty** vyberte fragment, který chcete upravit.
 1. Upravte vlastnosti a strukturu modulu fragmentu podle potřeby. Proces se podobá procesu úpravy modulů v zobrazení editoru stránek.
 

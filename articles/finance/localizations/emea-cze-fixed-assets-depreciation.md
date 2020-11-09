@@ -17,12 +17,12 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 15e267c49b43e1cc770b21cedf5e6c4705e70728
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ba00b4eb31f6bd5523ec39a4063151a74afa5e5d
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979059"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006128"
 ---
 # <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a>Metody odpisu dlouhodobého majetku pro Českou republiku
 
@@ -38,9 +38,8 @@ Odpis dlouhodobého majetku pro požadavky právních předpisů v České repub
 ## <a name="depreciation-percentages-and-coefficients"></a>Procenta odpisu a koeficienty
 Podle právních předpisů České republiky je dlouhodobý majetek seskupen do odpisových skupin. Pro každou odpisovou skupinu definují právní předpisy specifické hodnoty pro odpisovou sazbu za první rok, odpisovou sazbu za další roky a upravenou pořizovací cenu. Pro splnění právních požadavků v České republice je třeba nastavit různé hodnoty odpisové sazby za první rok, za další roky a za upravenou pořizovací cenu v různých odpisových skupinách. Stránka **Odpisové skupiny** obsahuje následující volby.
 
-| |  |
+| Pole                                | popis |
 |-----|------|
-| **Pole**                                | **Popis**|
 | **Počáteční datum**                           | Zadejte datum, kdy začne odpisová skupina|
 | **Míra odpisu za první rok** | Zadejte procento odpisu pro běžnou českou odpisovou metodu nebo koeficient odpisu pro zrychlenou českou odpisovou metodu používané v prvním roce odpisování této skupiny. |
 | **Odpisová sazba pro další roky**     | Zadejte procento odpisu pro běžnou českou odpisovou metodu nebo koeficient odpisu pro zrychlenou českou odpisovou metodu používané v dalších letech po roce pořízení.|
@@ -64,9 +63,8 @@ Běžná česká metoda odpisování vypočítá odpisy s použitím následují
 
 Následující příklad ukazuje výpočet běžné české metody odpisu.
 
-|                                                      |                     |
+| Pole                                                | Hodnota           |
 |------------------------------------------------------|---------------------|
-| **Pole**                                            | **Hodnota**           |
 | Pořizovací hodnota                                    | 100 000             |
 | Oprava pořizovací ceny                               | 50 000 (ve třetím roce) |
 | Procento odpisu za první rok           | 14,2 %               |
@@ -75,9 +73,8 @@ Následující příklad ukazuje výpočet běžné české metody odpisu.
 
 Tento příklad ukazuje odpis vypočítaný pomocí běžné české metody odpisu.
 
-|                     |                           |
+| Počet roků     | Výpočet               |
 |---------------------|---------------------------|
-| **Počet roků** | **Výpočet**           |
 | 1                   | 100 000 \* 14 2 % = 14 200 |
 | 2                   | 100 000 \* 28,6 % = 28 600 |
 | 3                   | 150 000 \* 25 % = 37 500   |
@@ -93,9 +90,8 @@ Zrychlená česká metoda odpisu používá koeficienty pro výpočet odpisů po
 
 Následující příklad ukazuje výpočet zrychlené české metody odpisu.
 
-|                                                       |           |
+| Pole                                                 | Hodnota     |
 |-------------------------------------------------------|-----------|
-| **Pole**                                             | **Hodnota** |
 | Pořizovací hodnota                                     | 100 000   |
 | Úpravy pořizovací ceny (ve třetím roce)                    | 50 000    |
 | Úpravy pořizovací ceny (ve pátém roce)                    | 60 000    |
@@ -105,9 +101,8 @@ Následující příklad ukazuje výpočet zrychlené české metody odpisu.
 
 Tento příklad ukazuje odpis vypočítaný pomocí zrychlené české metody odpisu.
 
-|                     |                                  |
+| Počet roků     | Výpočet                      |
 |---------------------|----------------------------------|
-| **Počet roků** | **Výpočet**                  |
 | 1                   | 100 000 /4 = 25 000              |
 | 2                   | (2 \* 75 000) / (5 - 1) = 37 500 |
 | 3                   | (2 \* 87 500) / (4 - 0) = 43 750 |

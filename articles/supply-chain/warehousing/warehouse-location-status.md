@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 31216c24f54f22ec928eb143d4a913aabcd50cf8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775167"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016003"
 ---
 # <a name="warehouse-location-status"></a>Stav umístění ve skladu
 
@@ -45,7 +45,7 @@ Následující čtyři pole na stránce **Skladová místa** sledují údaje o a
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>Zapnutí funkce Stav skladového místa
 
-Než můžete použít funkci *Stav skladového místa*, musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než můžete použít funkci *Stav skladového místa* , musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Stav skladového místa*
@@ -65,7 +65,7 @@ Chcete-li s příkladovým scénářem pracovat pomocí zde specifikovaných uk
 Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
 
 1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Profily skladových míst**.
-1. Vyberte možnost **Upravit**, tím přepnete stránku do režimu úprav.
+1. Vyberte možnost **Upravit** , tím přepnete stránku do režimu úprav.
 1. Vyberte profil **HROMADNÝ-06**.
 1. Na záložce s náhledem **Obecné** nastavte následující hodnoty:
 
@@ -78,7 +78,7 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
 1. Kroky 3 až 4 zopakujte i pro profil **VÝDEJ-06**.
 
 > [!NOTE]
-> Když jsou parametry profilu skladového místa (**Povolit položku na skladovém místě**, **Povolit aktivitu skladového místa**, **Povolit stav skladového místa**) nastaveny na *Ano*, systém okamžitě aktualizuje příslušná skladová místa spuštěním úlohy *Kontrola konzistence stavu umístění skladu*.
+> Když jsou parametry profilu skladového místa ( **Povolit položku na skladovém místě** , **Povolit aktivitu skladového místa** , **Povolit stav skladového místa** ) nastaveny na *Ano* , systém okamžitě aktualizuje příslušná skladová místa spuštěním úlohy *Kontrola konzistence stavu umístění skladu*.
 
 ### <a name="scenario"></a>Scénář
 
@@ -95,31 +95,31 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
 1. V podokně Akce na kartě **Nákup** ve skupině **Akce** klikněte na tlačítko **Potvrdit**. Nákupní objednávka se potvrdí.
 1. Na mobilním zařízení přejděte na **Vstupní \> Příjem nákupu**.
 1. Vyberte pole **ČÍSLOPO** a zadejte číslo PO a potvrďte.
-1. Vyberte pole **POLOŽKA**, zadejte jako číslo položky hodnotu *A0002* a potvrďte.
+1. Vyberte pole **POLOŽKA** , zadejte jako číslo položky hodnotu *A0002* a potvrďte.
 1. Na stránce **MNOŽ.** zadejte jako množství hodnotu *5* a potvrďte.
 
     Množství můžete měřit některým z následujících způsobů:
 
-    - Tlačítkem se znaménkem plus (**+**) nebo mínus (**–**) můžete číselnou hodnotu přičíst nebo odečíst.
-    - Výběrem prázdného pole mezi znaménkem plus (**+**) a znaménkem mínus (**–**) otevřete numerickou klávesnici.
+    - Tlačítkem se znaménkem plus ( **+** ) nebo mínus ( **–** ) můžete číselnou hodnotu přičíst nebo odečíst.
+    - Výběrem prázdného pole mezi znaménkem plus ( **+** ) a znaménkem mínus ( **–** ) otevřete numerickou klávesnici.
 
 1. Potvrďte výběr čísla položky *A0002* a množství *5*. Ve spodní části stránky se zobrazí zpráva „Práce dokončena“.
-1. V pravém horním rohu klikněte na tlačítko Nabídka (někdy se označuje jako „hamburgerové tlačítko“ nebo „hamburger“) a poté vyberte **Storno**, chcete-li stránku **Příjem nákupu** opustit a vrátit se do nabídky **Vstupní**.
+1. V pravém horním rohu klikněte na tlačítko Nabídka (někdy se označuje jako „hamburgerové tlačítko“ nebo „hamburger“) a poté vyberte **Storno** , chcete-li stránku **Příjem nákupu** opustit a vrátit se do nabídky **Vstupní**.
 1. Na stránce nákupní objednávky vyberte položku **Podrobnosti práce** nad mřížkou **Řádky nákupní objednávky**.
 1. Na kartě **Všeobecné** si všimněte hodnot ve vytvořených polích **ID práce** a **ID cílové registrační značky**.
 1. V sekci **Řádky** si všimněte hodnot **Skladové místo** pro typy práce *Výdej* a *Zaskladnění*.
 1. Na mobilním zařízení přejděte na **Vstupní \> Vyskladnění nákupu**.
-1. Vyberte pole **ID**, zadejte ID práce a potvrďte.
+1. Vyberte pole **ID** , zadejte ID práce a potvrďte.
 1. Potvrďte ještě jednou, dokončí se zadávání *Výdeje*.
 1. Klikněte na tlačítko nabídky v pravém horním rohu a poté dokončete práci *Výdeje* kliknutím na tlačítko **Hotovo**.
 1. Poznamenejte si vyskladňovací skladové místo a potvrďte. Ve spodní části stránky se zobrazí zpráva „Práce dokončena“.
-1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno**, chcete-li opustit **Vyskladnění nákupu** a vrátit se do nabídky **Vstupní**.
+1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno** , chcete-li opustit **Vyskladnění nákupu** a vrátit se do nabídky **Vstupní**.
 1. Chcete-li se vrátit do hlavní nabídky, vyberte **Zpět**.
 1. V systému Dynamics 365 Supply Chain Management přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skladová místa**.
-1. Filtrujte podle **Skladového místa**, zadejte místo vyskladnění z práce nákupní objednávky. Měly by se vám zobrazit následující výsledky:
+1. Filtrujte podle **Skladového místa** , zadejte místo vyskladnění z práce nákupní objednávky. Měly by se vám zobrazit následující výsledky:
 
-    - Sloupec **Stav skladového místa** zobrazuje hodnotu *Skladování*, protože poslední transakce na tomto skladovém místě byla zaskladnění.
-    - Sloupec **Číslo položky** zobrazuje hodnotu *A0002*, protože tato položka byla přijata a zaskladněna na dané skladové místo.
+    - Sloupec **Stav skladového místa** zobrazuje hodnotu *Skladování* , protože poslední transakce na tomto skladovém místě byla zaskladnění.
+    - Sloupec **Číslo položky** zobrazuje hodnotu *A0002* , protože tato položka byla přijata a zaskladněna na dané skladové místo.
     - Sloupec **Datum a čas poslední aktivity** ukazuje časové razítko (datum a čas) dokončení poslední práce na skladovém místě.
 
 1. Na mobilním zařízení přejděte na **Kvalita \> Pohyb**.
@@ -127,7 +127,7 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
 1. Potvrďte informace, které se zobrazí. Poznamenejte si vygenerované číslo registrační značky.
 1. Na obrazovce **K informacím** vyberte pole **LOC/LP** a zadejte jako skladové místo, do něhož chcete položku přesunout, *06A07R2S1B*.
 1. Na obrazovce **K informacím** potvrďte hodnotu **LP** (ID cílové registrační značky), je se generuje automaticky. Ve spodní části stránky se zobrazí zpráva „Práce dokončena“.
-1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno**, chcete-li opustit **Pohyb** a vrátit se do nabídky **Správa kvality**.
+1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno** , chcete-li opustit **Pohyb** a vrátit se do nabídky **Správa kvality**.
 1. Chcete-li se vrátit do hlavní nabídky, vyberte **Zpět**.
 1. V systému Dynamics 365 Supply Chain Management přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skladová místa**.
 1. Obnovte stránku **Skladová místa** a znovu si prohlédněte původní místo vyskladnění. Všimněte si, že pole **Stav skladového místa** má nyní hodnotu *Prázdné* a sloupec **Číslo položky** je prázdný.
@@ -143,29 +143,29 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
     - **Množství:** _1_
 
 1. Na záložce s náhledem **Řádky prodejních objednávek** v nabídce **Zásoby** vyberte možnost **Rezervace**.
-1. Na stránce **Rezervace** vyberte **Rezervovat šarži**, pokud chcete rezervovat řádek objednávky. Zavřete stránku kliknutím na tlačítko **Zavřít** (**X**) v pravém horním rohu.
+1. Na stránce **Rezervace** vyberte **Rezervovat šarži** , pokud chcete rezervovat řádek objednávky. Zavřete stránku kliknutím na tlačítko **Zavřít** ( **X** ) v pravém horním rohu.
 1. V podokně akcí na kartě **Sklad** ve skupině **Akce** vyberte možnost **Uvolnit do skladu.**
 1. V sekci **Řádky prodejní objednávky** zvolte nabídku **Sklad** a v ní vyberte **Podrobnosti práce**.
 1. Zkopírujte vytvořenou hodnotu **ID práce**.
 1. Na mobilním zařízení přejděte na **Výstupní \> Prodejní výdej**.
-1. Vyberte pole **ID**, zadejte ID práce, jež jste předtím zkopírovali, a potvrďte.
+1. Vyberte pole **ID** , zadejte ID práce, jež jste předtím zkopírovali, a potvrďte.
 1. Na stránce **Prodejní objednávky: výdej** najdete v poli **LOC** jako výdejní skladové místo předtím vytvořené místo vyskladnění. Poznamenejte si toto místo.
-1. Vyberte pole **LOC**, zadejte skladové místo a potvrďte.
-1. Vyberte pole **LP**, zadejte číslo registrační značky, jež jste si poznamenali během aktivity pohybu, a potvrďte.
-1. Vyberte pole **Položka**, zadejte jako číslo položky hodnotu *A0002* a potvrďte.
+1. Vyberte pole **LOC** , zadejte skladové místo a potvrďte.
+1. Vyberte pole **LP** , zadejte číslo registrační značky, jež jste si poznamenali během aktivity pohybu, a potvrďte.
+1. Vyberte pole **Položka** , zadejte jako číslo položky hodnotu *A0002* a potvrďte.
 1. Na stránce **MNOŽ.** zadejte jako množství hodnotu *1* a potvrďte.
 
     Množství můžete měřit některým z následujících způsobů:
 
-    - Tlačítkem se znaménkem plus (**+**) nebo mínus (**–**) můžete číselnou hodnotu přičíst nebo odečíst.
-    - Výběrem prázdného pole mezi znaménkem plus (**+**) a znaménkem mínus (**–**) otevřete numerickou klávesnici.
+    - Tlačítkem se znaménkem plus ( **+** ) nebo mínus ( **–** ) můžete číselnou hodnotu přičíst nebo odečíst.
+    - Výběrem prázdného pole mezi znaménkem plus ( **+** ) a znaménkem mínus ( **–** ) otevřete numerickou klávesnici.
 
-1. Vyberte pole **CÍLOVÁ LP**, zadejte uživatelsky definované ID cílové registrační značky a potvrďte.
+1. Vyberte pole **CÍLOVÁ LP** , zadejte uživatelsky definované ID cílové registrační značky a potvrďte.
 1. Potvrďte ještě jednou, práce výdeje se dokončí. Ve spodní části stránky se zobrazí zpráva „Práce dokončena“.
-1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno**, chcete-li dokončit aktivitu výdeje a vrátit se do nabídky **Výstupní**.
+1. Stiskněte v pravém horním rohu tlačítko nabídky, poté vyberte **Storno** , chcete-li dokončit aktivitu výdeje a vrátit se do nabídky **Výstupní**.
 1. V systému Dynamics 365 Supply Chain Management přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Skladová místa**.
-1. Filtrujte podle **Skladového místa**, zadejte místo výdeje z práce prodejní objednávky.
-1. Všimněte si, že v poli **Stav skladového místa**, z něhož byl prováděn výdej prodejní objednávky, je nyní hodnota *Výdej* a že bylo též aktualizováno pole **Datum a čas poslední aktivity**.
+1. Filtrujte podle **Skladového místa** , zadejte místo výdeje z práce prodejní objednávky.
+1. Všimněte si, že v poli **Stav skladového místa** , z něhož byl prováděn výdej prodejní objednávky, je nyní hodnota *Výdej* a že bylo též aktualizováno pole **Datum a čas poslední aktivity**.
 
 > [!NOTE]
 > Pole skladového místa se aktualizují pouze skladovými transakcemi. Pokud provedete přesun zásob pomocí deníku nebo procesů jiných než skladových, aktualizace těchto polí se neprovede.

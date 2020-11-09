@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8320c8aab82a39a8a5565e6b3e805e1065c67453
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986808"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016809"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
 
@@ -206,15 +206,15 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 Chcete-li uvolnit každou prodejní objednávku, kterou jste vytvořili pro tento scénář, do skladu, postupujte takto.
 
-1. Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** .
+1. Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky**.
 1. Vyhledejte a vyberte prodejní objednávku, kterou chcete uvolnit.
 1. V podokně akcí na kartě **Sklad** vyberte **Akce \> Uvolnit do skladu** pro uvolnění vybrané prodejní objednávky.
 1. Tento postup opakujte pro každou další prodejní objednávku, kterou jste vytvořili pro tento scénář.
 
 ## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidace dodávek pomocí pracovní plochy konsolidace dodávek
 
-1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Pracovní plocha konsolidace dodávek** .
-1. V podokně akcí vyberte **Upravit dotaz** .
+1. Přejděte na **Řízení skladu \> Uvolnění do skladu \> Pracovní plocha konsolidace dodávek**.
+1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
     - **Tabulka:** *Prodejní objednávky*
@@ -222,46 +222,46 @@ Chcete-li uvolnit každou prodejní objednávku, kterou jste vytvořili pro tent
     - **Kritéria:** Zadejte čárkami oddělený seznam čísel prodejních objednávek pro každou sadu objednávek, kterou jste vytvořili pro tento scénář.
 
 1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
-1. V podokně akcí klikněte na možnost **Konsolidovat dodávky** .
-1. Vyberte všechny dodávky a poté vyberte v podokně akcí možnost **Konsolidovat** .
+1. V podokně akcí klikněte na možnost **Konsolidovat dodávky**.
+1. Vyberte všechny dodávky a poté vyberte v podokně akcí možnost **Konsolidovat**.
 
 ## <a name="verify-the-shipments"></a>Ověření dodávek
 
 Následující postup umožňuje ověřit dodávky, které byly vytvořeny nebo aktualizovány v důsledku konsolidace dodávky. Použijte ho ke kontrole každé sady objednávek, kterou jste vytvořili pro tento scénář, a poté zkontrolujte následující pododdíly, abyste se ujistili, že jste dosáhli očekávaných výsledků.
 
-1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky** .
+1. Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.
 1. Najděte a vyberte požadovanou dodávku.
-1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek** .
+1. Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.
 
 ### <a name="related-shipments-for-order-set-1"></a>Související dodávky pro sadu objednávek 1
 
 Měly být vytvořeny dvě dodávky:
 
-- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode* .
-- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo* .
+- První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.
+- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
 
 ### <a name="related-shipments-for-order-set-2"></a>Související dodávky pro sadu objednávek 2
 
 Měly být vytvořeny tři dodávky:
 
-- První dodávka obsahuje položky *Hořlavý* .
-- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní* .
+- První dodávka obsahuje položky *Hořlavý*.
+- Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.
 
 ### <a name="related-shipments-for-order-set-3"></a>Související dodávky pro sadu objednávek 3
 
 Měly být vytvořeny dvě dodávky:
 
-- První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1* .
-- Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2* .
+- První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1*.
+- Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2*.
 
 ### <a name="related-shipments-for-order-set-4"></a>Související dodávky pro sadu objednávek 4
 
 Měly být vytvořeny čtyři dodávky:
 
-- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky z objednávek 4-5 a 4-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek* .
-- Řádky z objednávek 4-7 a 4-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder* .
+- Řádky ze dvou objednávek pro zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky ze dvou objednávek pro zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky z objednávek 4-5 a 4-6 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.
+- Řádky z objednávek 4-7 a 4-8 pro zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.
 
 ## <a name="additional-resources"></a>Další prostředky
 

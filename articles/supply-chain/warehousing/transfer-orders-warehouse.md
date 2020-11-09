@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa5786df72f87da992f1020bbaaa1c2185adf043
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216705"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017476"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Nastavení skladů pro převodní příkazy 
 
@@ -50,5 +51,5 @@ Pomocí úrovní skladů můžete vytvořit hierarchii podporující převodní 
 Je také nutné nastavit dobu realizace přepravy mezi sklady na stránce **Dny přepravy**. 
 1. Přejděte na **Řízení zásob > Nastavení > Distribuce > Dny přepravy**.
 2. V poli **Místo příjmu** vyberte **sklad**.
-3. Vyberte **odesílající sklad**, **přijímající sklad** a **Počet dnů přepravy**. 
+3. Vyberte **odesílající sklad** , **přijímající sklad** a **Počet dnů přepravy**. 
 4. (Volitelné) Můžete také nastavit dobu přepravy v závislosti na režimu doručení na kartě **Dny dopravy podle způsobu doručení**.

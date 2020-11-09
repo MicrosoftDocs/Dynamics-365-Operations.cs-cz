@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456807"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997471"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrace datového typu měny pro dvojitý zápis
 
@@ -81,13 +80,13 @@ Existují některá omezení:
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systémová nastavení: Přesnost měny pro stanovení ceny
 
-Po dokončení migrace mohou správci nastavit přesnost měny. Přejděte na **Nastavení \> Správa** a vyberte **Nastavení systému**. Pak na kartě **Obecné** změňte hodnotu pole **Nastavit přesnost měny, která se používá pro stanovení cen v celém systému**, jak je znázorněno na následujícím obrázku.
+Po dokončení migrace mohou správci nastavit přesnost měny. Přejděte na **Nastavení \> Správa** a vyberte **Nastavení systému**. Pak na kartě **Obecné** změňte hodnotu pole **Nastavit přesnost měny, která se používá pro stanovení cen v celém systému** , jak je znázorněno na následujícím obrázku.
 
 ![Systémová nastavení měny](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Řízení podniku: měny
 
-Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přesnosti měny použité pro stanovení ceny, můžete ji změnit. Přejděte na **Nastavení \> Řízení podniku**, vyberte **Měny** a vyberte měnu, kterou chcete změnit. Pak nastavte pole **Přesnost měny** a zadejte požadovaný počet desetinných míst, jak je znázorněno na následujícím obrázku.
+Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přesnosti měny použité pro stanovení ceny, můžete ji změnit. Přejděte na **Nastavení \> Řízení podniku** , vyberte **Měny** a vyberte měnu, kterou chcete změnit. Pak nastavte pole **Přesnost měny** a zadejte požadovaný počet desetinných míst, jak je znázorněno na následujícím obrázku.
 
 ![Nastavení měny pro konkrétní národní prostředí](media/specific-currency.png)
 

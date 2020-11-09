@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383244"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018229"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Vytvoření nákupní objednávky s plánem dodávek
 
@@ -46,7 +46,7 @@ Toto téma ukazuje, jak vytvořit plán dodávek pro nákupní objednávku. Plá
 - V poli Datum dodání vyberte datum, které je týden po datu z prvního řádku dodávky.  
 - Je možné sledovat celkové množství, která je přiděleno na řádky plánu dodávek tím, že si prohlédnete pole **Součet** a **Zbývající**. Pokud je zbývající množství nulové, bylo do plánu přiděleno celé množství z původního řádku.  
 12. Rozbalte část **Převod nákladů**.
-- Možnosti zde umožňují řídit způsob, jakým se náklady distribuují na řádcích plánu dodávek. Pokud vyberete **Kopírovat hrubé částky**, částka nákladů v původním řádku objednávky se zkopíruje do každého dodacího řádku. Možnost **Přidělit řádkům dodávek** rozděluje náklady z původního řádku podle množství na každém řádku dodávky.  
+- Možnosti zde umožňují řídit způsob, jakým se náklady distribuují na řádcích plánu dodávek. Pokud vyberete **Kopírovat hrubé částky** , částka nákladů v původním řádku objednávky se zkopíruje do každého dodacího řádku. Možnost **Přidělit řádkům dodávek** rozděluje náklady z původního řádku podle množství na každém řádku dodávky.  
 13. Sbalte část **Převod nákladů**.
 14. Vyberte **OK**.
 - Plán dodávek nyní byl použit v objednávce.  

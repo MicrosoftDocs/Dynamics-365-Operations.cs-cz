@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817078"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022022"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -57,7 +56,7 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
-- **Značka záhlaví** – Tato vlastnost definuje značku nadpisu produktu. Je-li buy box v horní části stránky, měla by být tato vlastnost nastavena na **H1**, aby vyhovovala standardům usnadnění. 
+- **Značka záhlaví** – Tato vlastnost definuje značku nadpisu produktu. Je-li buy box v horní části stránky, měla by být tato vlastnost nastavena na **H1** , aby vyhovovala standardům usnadnění. 
 
 - **Povolit doporučení typu „podobný vzhled“** – Tato vlastnost umožňuje zobrazit v buy boxu odkazy na produkty, které vypadají podobně jako aktuálně zobrazená položka. Tato funkce je k dispozici v aplikaci Commerce verze 10.0.13 a novější.
 
@@ -69,11 +68,11 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
 
-Následující nastavení modulu buy boxu lze konfigurovat na **Nastavení webu \> Rozšíření**:
+Následující nastavení modulu buy boxu lze konfigurovat na **Nastavení webu \> Rozšíření** :
 
 - **Limit množství na řádku košíku** – Tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
 - **Zásoby** – Informace, jak použít nastavení zásob, naleznete v části [Použití nastavení zásob](inventory-settings.md).
-- **Přidat do nákupního košíku** – Tato vlastnost se používá ke specifikaci chování po přidání položky do košíku. Možné hodnoty jsou **Přejít do nákupního košíku**, **Nepřecházet do nákupního košíku** a **Zobrazit oznámení**. Když je tato hodnota nastavena na **Přejít do nákupního košíku**, uživatelé jsou po přidání položky přesměrováni na stránku nákupního košíku. Když je tato hodnota nastavena na **Nepřecházet do nákupního košíku**, uživatelé nejsou po přidání položky přesměrováni na stránku nákupního košíku. Když je hodnota nastavena na **Zobrazit oznámení**, uživatelům se zobrazí potvrzovací oznámení a poté mohou nadále procházet stránku podrobností o produktu. 
+- **Přidat do nákupního košíku** – Tato vlastnost se používá ke specifikaci chování po přidání položky do košíku. Možné hodnoty jsou **Přejít do nákupního košíku** , **Nepřecházet do nákupního košíku** a **Zobrazit oznámení**. Když je tato hodnota nastavena na **Přejít do nákupního košíku** , uživatelé jsou po přidání položky přesměrováni na stránku nákupního košíku. Když je tato hodnota nastavena na **Nepřecházet do nákupního košíku** , uživatelé nejsou po přidání položky přesměrováni na stránku nákupního košíku. Když je hodnota nastavena na **Zobrazit oznámení** , uživatelům se zobrazí potvrzovací oznámení a poté mohou nadále procházet stránku podrobností o produktu. 
 
 > [!IMPORTANT]
 > Nastavení webu **Přidat do košíku** jsou k dispozici ve vydání Dynamics 365 Commerce 10.0.11. Pokud provádíte aktualizaci ze starší verze Dynamics 365 Commerce, musíte ručně aktualizovat soubor appsettings.json. Pokyny k aktualizaci souboru appsettings.json najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
@@ -93,24 +92,24 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
 1. V dialogovém okně **Nový fragment** vyberte modul **Buybox**.
 1. V části **Název fragmentu** zadejte název pro **Fragment buy boxu** a poté vyberte **OK**.
-1. V pozici **Galeria médií** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V pozici **Galeria médií** modulu buy boxu vyberte tři tečky ( **...** ) a poté vyberte **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Galerie médií** a poté klikněte na tlačítko **OK**.
-1. V pozici **Volba obchodu** modulu buy boxu vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V pozici **Volba obchodu** modulu buy boxu vyberte tři tečky ( **...** ) a poté vyberte **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Volba obchodu** a poté klikněte na tlačítko **OK**.
-1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
+1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona stránky podrobností o produktu** a poté klikněte na tlačítko **OK**.
-1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V pozici **Tělo** vyberte tři tečky ( **...** ) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
-1. V pozici **Hlavní** na výchozí stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
-1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
-1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. V pozici **Hlavní** na výchozí stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu** , který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
 1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona stránky podrobností o produktu**. V části **Název stránky** zadejte **Stránka podrobností o produktu** a poté klikněte na tlačítko **OK**.
-1. V pozici **Hlavní** na nové stránce vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
-1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu**, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
+1. V pozici **Hlavní** na nové stránce vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment**.
+1. V dialogovém okně **Výběr fragmentu** vyberte **Fragment buy boxu** , který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Uložte stránku a zobrazte náhled. Do adresy URL stránky náhledu přidejte parametr řetězce dotazu **?productid=&lt;id produktu&gt;**. Tímto způsobem se pro načtení a vykreslení stránky náhledu použije kontext produktu.
-1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
 
 ## <a name="additional-resources"></a>Další prostředky
 

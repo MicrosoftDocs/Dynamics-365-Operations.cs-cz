@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57081b9e737373641cd9d884919d03dcf62a2ffe
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140648"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107391"
 ---
 # <a name="store-configurations-for-retail-statements"></a> Konfigurace obchodů pro maloobchodní výkazy
 
@@ -36,7 +36,7 @@ Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způso
 4. Klikněte na možnost **Upravit**.
 5. Nastavení v pevné záložce **Výkaz/uzávěrka** ovlivní vytvoření ověření a zaúčtování výkazu pro obchod. Rozbalte pevnou záložku **Výkaz/uzávěrka**.  
 6. V poli **Metoda výkazu** vyberte metodu, podle které chcete seskupit řádky výpisu.  
-7. Vyberte „Ano“ v možnosti **Jeden výkaz denně**, pokud má existovat pouze jeden výkaz vytvořený denně při vytváření výpisů z výkazu vytvoření dávkové úlohy.  
+7. Vyberte „Ano“ v možnosti **Jeden výkaz denně** , pokud má existovat pouze jeden výkaz vytvořený denně při vytváření výpisů z výkazu vytvoření dávkové úlohy.  
 8. Pole **Výpočet výkazu úhrad** definuje, zda je třeba společně přidat výkazy úhrad, nebo zda má být použit poslední.  
 9. V poli **Zaokrouhlení** vyberte účet hlavní knihy pro zaúčtování haléřových rozdílů.  
 10. V poli **Maximální rozdíl zaokrouhlení** můžete zadat maximální povolený rozdíl zaokrouhlení.
@@ -45,7 +45,7 @@ Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způso
 13. V poli **Transakce** můžete zadat maximální celkový rozdíl v řádku výkazu.  
 14. V poli **Metoda uzávěrky** můžete definovat, zda transakce, které budou zahrnuty do výkazu, by měly být součástí uzavřené směny, nebo zda se může jednat o libovolné transakce v rámci definovaného data a času.  
 15. V poli **Konec pracovního dne** můžete zadat čas, pokud mají být transakce, ke kterým dojde po půlnoci, zaúčtovány v rámci předchozího dne.  
-16. Vyberte „Ano“ v možnosti **Zaúčtovat jako pracovní den**, pokud mají být transakce, ke kterým dojde po půlnoci, zaúčtovány jako součást předchozího dne.  
-17. Vyberte možnost „Ano“ v možnosti **Metoda rozdělení podle výpisu**, chcete-li získat výkazy vytvořené pro každou definovanou metodu výkazu. To je užitečné v případě, že výkon při účtování je třeba zlepšit pro obchody s vysokými objemy transakcí, protože vytvoří mnoho menších výkazů, které lze zpracovat současně.  
-18. Na pevné záložce **Obecné**, v poli **Výchozí odběratel** můžete vybrat účet odběratele, který se má použít pro prodeje příchozím odběratelům.  
+16. Vyberte „Ano“ v možnosti **Zaúčtovat jako pracovní den** , pokud mají být transakce, ke kterým dojde po půlnoci, zaúčtovány jako součást předchozího dne.  
+17. Vyberte možnost „Ano“ v možnosti **Metoda rozdělení podle výpisu** , chcete-li získat výkazy vytvořené pro každou definovanou metodu výkazu. Tato akce je užitečná v případě, že výkon při účtování je třeba zlepšit pro obchody s vysokými objemy transakcí, protože vytvoří mnoho menších výkazů, které lze zpracovat současně.  
+18. Na pevné záložce **Obecné** , v poli **Výchozí odběratel** můžete vybrat účet odběratele, který se má použít pro prodeje příchozím odběratelům.  
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598051"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040046"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
@@ -50,7 +50,10 @@ Následující nastavení je nutné dokončit, aby bylo možné zobrazit data ve
 2. Přejděte na **Hlavní kniha > Kalendáře > Fiskální kalendáře** k ověření dat fiskálního kalendáře přiřazených k aktivnímu časovému období.
 3. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** a nastavte **Měna účtování** a **Typ směnného kurzu**.
 4. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
-5. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **CustCollectionsBIMeasurementsV2**.
+5. Přejděte na **Správa systému > Nastavení > Úložiště Entit** , pokud chcete aktualizovat agregované měření **CustCollectionsBIMeasurementsV2**.
+
+>[!NOTE] 
+> Definice období stárnutí musí být nastaveny v **Parametrech pohledávek > Kolekce > Výchozí kolekce** , chcete-li umožnit data stárnutí v obsahu Power BI.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 

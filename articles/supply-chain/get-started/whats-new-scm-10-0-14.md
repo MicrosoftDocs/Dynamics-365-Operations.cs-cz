@@ -1,5 +1,5 @@
 ---
-title: Funkce Preview v Dynamics 365 Supply Chain Management 10.0.14 (říjen 2020)
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.14 (říjen 2020)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.14.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 22d0dfb44bb999f466eca216e7390488fef33618
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 584ea00c64df5e31d47e40aa32d7b266ff842de6
+ms.sourcegitcommit: de159549da9ff8cbcdb69ae0e3131cd1726bc323
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763566"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4038102"
 ---
-# <a name="preview-features-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Funkce Preview v aplikaci Dynamics 365 Supply Chain Management 10.0.14 (listopad 2020)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.14. (listopad 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.14. Tato verze má číslo sestavení 10.0.605 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.14. Tato verze má číslo sestavení 10.0.605 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** listopad 2020
 - **Obecná dostupnost (automatická aktualizace):** říjen 2020

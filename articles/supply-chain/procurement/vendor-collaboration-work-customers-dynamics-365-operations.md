@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207340"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018141"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
@@ -59,9 +59,9 @@ Pro práci s nákupními objednávkami můžete použít následující stránky
 
 Nákupní objednávky, které vám odběratel poslal ke kontrole, se zobrazují v pracovním prostoru **Potvrzení nákupní objednávky** a na stránce **Nákupní objednávky ke kontrole**. Po otevření objednávky ji můžete přijmout, odmítnout nebo přijmout se změnami. V záhlaví nákupní objednávky nebo na jednotlivých řádcích mohou být přílohy. Je také možné do odpovědi připojit informace na jednotlivých řádcích nebo v záhlaví nákupní objednávky. Například můžete navrhnout náhradní položku pro jeden z řádků.
 
-Nákupní objednávky můžete zobrazit jako náhled a vytisknout jako soubor PDF pomocí možnosti **Náhled/Tisk**. Můžete také použít akci **Zobrazit dimenze** pro skrytí nebo zobrazení následujících sloupců dimenzí: **Pracoviště**, **Sklad**, **Barva**, **Velikost**, **Styl** a **Konfigurace**. 
+Nákupní objednávky můžete zobrazit jako náhled a vytisknout jako soubor PDF pomocí možnosti **Náhled/Tisk**. Můžete také použít akci **Zobrazit dimenze** pro skrytí nebo zobrazení následujících sloupců dimenzí: **Pracoviště** , **Sklad** , **Barva** , **Velikost** , **Styl** a **Konfigurace**. 
 
-Pokud vyberete možnost **Přijmout se změnami**, můžete přijmout nebo odmítnout jednotlivé řádky. U řádků můžete provádět také tyto změny:
+Pokud vyberete možnost **Přijmout se změnami** , můžete přijmout nebo odmítnout jednotlivé řádky. U řádků můžete provádět také tyto změny:
 
 - Změna dat nebo množství. Pokud chcete aktualizovat potvrzené datum dodání na všech řádcích, použijte možnost **Aktualizovat data dodání** v záhlaví nákupní objednávky.
 - Rozdělení řádků pro jiná data dodání nebo množství.
@@ -92,7 +92,7 @@ Otevřete pracovní prostor **Nabídky dodavatele** pro přístup k následujíc
 - Vyberte **Pozvánky k nové nabídce** pro zobrazení požadavků na nabídku, ke kterým byla vaše společnost přizvána s odpovědí. Zde lze zobrazit požadavky na nabídku a spustit proces nabídky. Zobrazí se také změněné požadavky na nabídku, na které je třeba odeslat novou nabídku.
 - Vyberte **Vrácené nabídky** pro zobrazení požadavků na nabídku, které vám odběratel vrátil, abyste poskytli více informací nebo aktualizovali nabídku.
 - Vyberte **Probíhající nabídky** pro zobrazení požadavků na nabídku, na kterých pracujete vy nebo kontaktní osoba zastupující společnost, ale která ještě nebyla odeslána.
-- Vyberte **Přidělené nabídky**, když chcete zobrazit, zda vám odběratel přidělil alespoň jednu položku řádku ve vaší nabídce.
+- Vyberte **Přidělené nabídky** , když chcete zobrazit, zda vám odběratel přidělil alespoň jednu položku řádku ve vaší nabídce.
 - Vyberte **Ztracené nabídky** pro zobrazení nabídek, kde všechny řádky byly odmítnuty.
 - Vyberte odkaz **Požadavky na nabídky** pro zobrazení seznamu všech pozvánek požadavků na nabídku dodavatelů a všech nabídek, které byly odeslány. Stránka **Požadavky na nabídky** uvádí seznam všech požadavků na nabídku, kterých se dodavatel účastnil. Můžete hledat podle stavu.
 - Vyberte odkaz **Odmítnuté nabídky** pro zobrazení seznamu všech požadavků na nabídku, kde kontaktní osoba dodavatele odmítla nabídku.
@@ -124,13 +124,13 @@ Osoby pracující ve veřejném sektoru mohou zobrazit otevřené a vypršené p
 - Vyberte **Resetovat z požadavku na nabídku** k resetování dat zadaných pro nabídku a návratu k původnímu požadavku na nabídku. Můžete resetovat záhlaví nebo řádek.
 - Vyberte **Přidat alternativu** nebo **Odebrat alternativu** v mřížce řádku, abyste mohli pracovat s alternativami.
 
-    Některé požadavky na nabídku umožňují alternativní nabídky. Můžete zadat alternativní nabídky pouze pro řádky typu **Kategorie**, protože určité položky nelze přidat jako alternativy. 
+    Některé požadavky na nabídku umožňují alternativní nabídky. Můžete zadat alternativní nabídky pouze pro řádky typu **Kategorie** , protože určité položky nelze přidat jako alternativy. 
 
 - Vyberte **Příloha požadavku na nabídku** nebo **Příloha řádků požadavku na nabídku** a otevřete jakoukoliv přílohu, kterou odběratel přidal do požadavku na nabídku. Vyberte **Přílohy nabídky** nebo **Přílohy řádku nabídky** k odeslání příloh spolu s nabídkou.
 
     Mohou existovat dotazníky, na které musí odpovědět předtím, než můžete odeslat nabídku.
 
-- Vyberte **Odmítnout**, pokud se nechcete nabídky účastnit. Po zvolení možnosti **Odmítnout** nelze opětovně vyvolat akci a zadat nabídku.
+- Vyberte **Odmítnout** , pokud se nechcete nabídky účastnit. Po zvolení možnosti **Odmítnout** nelze opětovně vyvolat akci a zadat nabídku.
 
 Pokud je požadavek na nabídku změněn, je nutné zadat novou nabídku. Informace o změně naleznete na kartě **Dodatky** na stránce požadavku na nabídku. Změněné požadavky na nabídku se zobrazí na stránce **Pozvánky k nové nabídce**.
 

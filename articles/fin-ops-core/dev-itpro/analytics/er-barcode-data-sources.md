@@ -3,7 +3,7 @@ title: Ke generování obrázků čárových kódů použijte zdroje dat čárov
 description: Toto téma vysvětluje, jak používat zdroje dat čárového kódu pro generování obrázků čárových kódů.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: fdb70c7e72647de4c6cd977b286c19c906559438
-ms.sourcegitcommit: a56b22729fbbb941471e927e2f932acaf624cf5e
+ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
+ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435458"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4088190"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Ke generování obrázků čárových kódů použijte zdroje dat čárového kódu
 
@@ -54,16 +54,17 @@ Použitím zdroje dat typu **čárový kód** můžete generovat čárové kódy
     - EAN-8
     - EAN-13
     - ITF-14
+    - Inteligentní pošta
+    - MSI
+    - Plessey
     - PDF417
     - UPC-A
     - UPC-E
-    - MSI
-    - Plessey
 
 - Dvojrozměrné čárové kódy:
 
     - Aztec
-    - DataMatrix
+    - Datová matice
     - QR kód
 
 Při konfiguraci zdroje dat **čárového kódu** můžete definovat specifické parametry vykreslování, které se používají ke generování obrazu:
@@ -75,7 +76,7 @@ Při konfiguraci zdroje dat **čárového kódu** můžete definovat specifické
 - **Kódování** - Určete typ znaků, které jsou kódovány ve vygenerovaném obrázku čárového kódu. Ve výchozím nastavení je použito kódování **UTF-8**.
 
 > [!IMPORTANT]
-> Když přidáte nový zdroj dat **čárového kódu**, musíte jej umístit pod jinou položku (kontejner) jako vnořený prvek.
+> Když přidáte nový zdroj dat **čárového kódu** , musíte jej umístit pod jinou položku (kontejner) jako vnořený prvek.
 >
 > Když vážete zdroj dat **čárový kód** do buněčného prvku ve formátu a buněčný prvek představuje buď ovládací prvek obsahu Word nebo obrázek Excel, zdroj dat je prezentován v této vazbě jako funkce, která má jediný parametr typu **Řetězec**. Tento parametr musíte použít k určení textu, který by měl být převeden na obrázek čárového kódu, a číst při skenování vygenerovaného čárového kódu.
 
@@ -138,7 +139,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Konfigurace** vyberte dlaždici **Konfigurace výkaznictví**.
-3. Na stránce **Konfigurace**, pokud konfigurace **Model pro šeky** není ve stromu konfigurací k dispozici, pomocí následujících kroků importujte konfiguraci datového modelu elektronického výkaznictví:
+3. Na stránce **Konfigurace** , pokud konfigurace **Model pro šeky** není ve stromu konfigurací k dispozici, pomocí následujících kroků importujte konfiguraci datového modelu elektronického výkaznictví:
 
     1. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
     2. V dialogovém okně vyberte **Procházet** najděte a vyberte soubor **Model for cheques.xml** a poté vyberte **OK**.
@@ -158,7 +159,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 3. Na stránce s podrobnostmi o bankovním účtu v podokně akcí na kartě **Nastavení** ve skupině **Rozložení** vyberte **Kontrola**.
 4. Na stránce **Kontrola rozložení** vyberte **Upravit**.
 5. Na pevné záložce **Obecné** nastavte volbu **Obecný formát elektronického exportu** na **Ano**.
-6. V poli **Exportovat konfiguraci formátu** vyberte formát elektronického výkaznictví **Formát tisku šeků**, který jste dříve importovali.
+6. V poli **Exportovat konfiguraci formátu** vyberte formát elektronického výkaznictví **Formát tisku šeků** , který jste dříve importovali.
 7. V podokně akcí klikněte na možnost **Test tisku**.
 8. V dialogovém okně nastavte **Dohodnutelný formát kontroly** na **Ano** a poté vyberte **OK**.
 
@@ -175,7 +176,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 
 #### <a name="apply-a-new-check-template"></a><a name="ExampleModifyFormatApplyTemplate"></a>Použijte novou šekovou šablonu
 
-Aplikací na ploše Excel můžete otevřít soubor **Cheque template Excel.xlsx**, který jste importovali dříve. Všimněte si, že se tato šablona liší od šablony, kterou jste použili ke generování platebního šeku v dodávaném řešení ER. Kromě toho obsahuje prvek **AmountBarcode** pro obrázek čárového kódu.
+Aplikací na ploše Excel můžete otevřít soubor **Cheque template Excel.xlsx** , který jste importovali dříve. Všimněte si, že se tato šablona liší od šablony, kterou jste použili ke generování platebního šeku v dodávaném řešení ER. Kromě toho obsahuje prvek **AmountBarcode** pro obrázek čárového kódu.
 
 ![Prvek AmountBarcode v šabloně Excel](./media/er-barcode-data-source-cheque2.png)
 
@@ -191,11 +192,11 @@ Nyní musíte upravit řešení ER a poté [znovu použít](modify-electronic-re
     ![Vazba prvků buněčného formátu na zdroje dat v návrháři operací ER](./media/er-barcode-data-source-cells-bound.png)
 
 7. Vyberte kartu **Formát** na pravé straně stránky.
-8. V podokně akcí vyberte tři tečky (**...**) a poté vyberte **Import**.
+8. V podokně akcí vyberte tři tečky ( **...** ) a poté vyberte **Import**.
 9. Ve skupině **Import** vyberte **Aktualizace z Excelu** a poté vyberte **Aktualizovat šablonu**.
 10. V dialogovém okně přejděte na soubor **Cheque template Excel.xlsx** uložený v počítači, vyberte jej a poté vyberte **OK** k potvrzení, že by se měla vybraná šablona použít.
 11. Vyberte kartu **Mapování** na pravé straně stránky a poté v podokně stromu formátu vlevo vyberte **Rozbalit / sbalit**.
-12. Všimněte si, že prvek buňky **AmountBarcode** byl přidán do formátu. Tento prvek je spojen s prvkem **AmountBarcode**, který byl přidán do upravené šablony Excel jako zástupný symbol pro obrázek čárového kódu.
+12. Všimněte si, že prvek buňky **AmountBarcode** byl přidán do formátu. Tento prvek je spojen s prvkem **AmountBarcode** , který byl přidán do upravené šablony Excel jako zástupný symbol pro obrázek čárového kódu.
 
     ![Prvek buňky AmountBarcode přidaný do formátu v návrháři operací ER](./media/er-barcode-data-source-cell-added.png)
 
@@ -228,7 +229,7 @@ Dále musíte nový prvek formátu svázat se zdrojem dat, který jste právě p
 
 5. Vyberte **Upravit vzorec** a upravte vazbu.
 
-    Nechcete, aby se vrátil název prvku buňky. Proto musíte nakonfigurovat výraz, který vrací text, který obsahuje splatnou částku aktuální kontroly. Protože nadřazený rozsah **ChequeLines** je vázán na zdroj dat **model.cheques**, splatná částka aktuálního šeku je k dispozici v poli **model.cheques.attributes.amount** zdroje dat **Reálný**.
+    Nechcete, aby se vrátil název prvku buňky. Proto musíte nakonfigurovat výraz, který vrací text, který obsahuje splatnou částku aktuální kontroly. Protože nadřazený rozsah **ChequeLines** je vázán na zdroj dat **model.cheques** , splatná částka aktuálního šeku je k dispozici v poli **model.cheques.attributes.amount** zdroje dat **Reálný**.
 
 6. V poli **Vzorec** zadejte **print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
 7. Vyberte **Uložit** a potom zavřete [Návrhář operací ER](general-electronic-reporting-formula-designer.md).
@@ -240,7 +241,7 @@ Dále musíte nový prvek formátu svázat se zdrojem dat, který jste právě p
 
 #### <a name="make-the-modified-version-available-for-test-runs"></a><a name="ExampleModifyFormatMakeVersionAvailable"></a>Zpřístupněte upravenou verzi pro zkušební spuštění
 
-Ve výchozím nastavení se používají pouze verze, které mají stav **Dokončeno** a **Sdíleno**, když spustíte formát ER.
+Ve výchozím nastavení se používají pouze verze, které mají stav **Dokončeno** a **Sdíleno** , když spustíte formát ER.
 
 Pokud jste dokončili své změny, můžete dokončit svou práci s aktuální verzí pracovní verze a zpřístupnit změny pro použití. Pokyny viz část [Dokončete verzi upraveného formátu](#CompleteToRun), která následuje.
 
