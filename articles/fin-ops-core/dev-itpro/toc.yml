@@ -1,0 +1,1906 @@
+- name: Vývoj a správa pro aplikace Finance and Operations
+  items:
+    - name: Vývoj a správa pro aplikace Finance and Operations
+      items:
+        - name: Dokumentaci k aplikaci Finance and Operations
+          href: ../fin-ops/index.md
+        - name: Vývoj a správa pro aplikace Finance and Operations
+          href: index.md
+        - name: Co je nového a co se změnilo
+          items:
+            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Co je nového a co se změnilo v aktualizacích Platform Update
+              items:
+                - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
+                  href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.16 (únor 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
+                - name: Platform Update pro 10.0.15 (leden 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
+                - name: Platform Update pro 10.0.14 (listopad 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
+            - name: Odstraněné nebo zastaralé funkce
+              items:
+                - name: Odstraněné nebo zastaralé funkce platformy
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Odložené funkce AX 2012
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+        - name: Obchodní události
+          items:
+            - name: Přehled obchodních událostí
+              href: business-events/home-page.md
+            - name: Obchodní události aplikace
+              href: business-events/app-business-events.md
+            - name: Obchodní události workflow
+              href: business-events/business-events-workflow.md
+            - name: Výstrahy jako obchodní události
+              href: business-events/alerts-business-events.md
+            - name: Obchodní události v Microsoft Flow
+              href: business-events/business-events-flow.md
+            - name: Dokumentace pro vývojáře obchodních událostí
+              href: business-events/business-events-dev-doc.md
+            - name: Řešení problémů obchodních událostí
+              href: business-events/troubleshooting.md
+            - name: Případy použití pro obchodní události
+              href: business-events/potential-use-cases.md
+            - name: Kurzy
+              items:
+                - name: Obchodní události a Microsoft Flow
+                  href: business-events/how-to/how-to-flow.md
+                - name: Obchodní události a Azure Event Grid
+                  href: business-events/how-to/how-to-eventgrid.md
+                - name: Obchodní události a Azure Service Bus
+                  href: business-events/how-to/how-to-servicebus.md
+                - name: Obchodní události a schválení workflow
+                  href: business-events/how-to/how-to-workflow.md
+                - name: Obchodní události a Microsoft Forms Pro
+                  href: business-events/how-to/FormsPro.md
+                - name: Obchodní události a Azure Event Hubs
+                  href: business-events/how-to/event-hub.md
+                - name: Obchodní události v uzávěrce finančního období
+                  href: business-events/how-to/period-close.md
+        - name: Průběžné doručování
+          items:
+            - name: Domovská stránka Průběžné doručování
+              href: dev-tools/continuous-delivery-home-page.md
+            - name: "Časté otázky k\_vývoji a průběžnému doručování"
+              href: dev-tools/continuous-delivery-faq.md
+            - name: Vyloučení testovacích balíčků z výstupu sestavení
+              href: dev-tools/exclude-test-packages.md
+            - name: Správa modelů třetích stran a balíčků runtime pomocí ovládacího prvku zdroje
+              href: dev-tools/manage-runtime-packages.md
+            - name: Nasaditelné balíčky „vše v jednom“
+              href: dev-tools/aio-deployable-packages.md
+            - name: Aktualizace verzí modelu v automatizovaném sestavení
+              href: dev-tools/version-models-build.md
+        - name: Integrace dat
+          items:
+            - name: Zvolení strategie integrace dat (import/export)
+              href: data-entities/integration-overview.md
+            - name: Omezování na základě priority
+              hreF: data-entities/priority-based-throttling.md
+            - name: Nejčastější dotazy k omezování na základě priority
+              href: data-entities/throttling-faq.md
+            - name: Rozhraní API integrace dat
+              items:
+                - name: REST API balíčku správy dat
+                  href: data-entities/data-management-api.md
+                - name: Koncové body služeb
+                  items:
+                    - name: Přehled koncových bodů služeb
+                      href: data-entities/services-home-page.md
+                    - name: Řešení problému s ověřením služby
+                      href: data-entities/troubleshoot-service-authentication.md
+                - name: OData
+                  href: data-entities/odata.md
+                - name: Vlastní nasazení služby
+                  href: data-entities/custom-services.md
+                - name: Opakované integrace
+                  href: data-entities/recurring-integrations.md
+                - name: Testovací služby pomocí nástrojů třetích stran
+                  href: data-entities/third-party-service-test.md
+            - name: Konektor Finance and Operations
+              href: data-entities/fin-ops-connector.md
+            - name: Vývoj pro integraci
+              items:
+                - name: "Integrace dat s\_použitím datových entit"
+                  items:
+                    - name: "Přehled integrace dat s\_použitím datových entit"
+                      href: data-entities/data-management-integration-data-entity.md
+                    - name: Vývoj entity pro migraci dat
+                      href: data-entities/develop-entity-for-data-migration.md
+                    - name: Vývoj kombinovaných datových entit
+                      href: data-entities/develop-composite-data-entities.md
+                    - name: Konfigurace sdílení finančních dat mezi společnostmi
+                      href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
+                    - name: Vytvoření šablon záznamu pro usnadnění zadávání dat
+                      href: data-entities/tasks/create-record-template-facilitate-data-entry.md
+                    - name: "Vytvoření záznamů s\_použitím šablon záznamu"
+                      href: data-entities/tasks/use-record-template-new-record.md
+                - name: Integrace dat pomocí Common Data Service
+                  items:
+                    - name: Přehled integrace dat pomocí Common Data Service
+                      href: data-entities/data-integration-cds.md
+                    - name: Integrace dvojitého zápisu
+                      items:
+                        - name: Domovská stránka dvojitého zápisu
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Co je nového a co se změnilo v duálním zápisu
+                          href: data-entities/dual-write/whats-new-dual-write.md
+                        - name: Přehled dvojitého zápisu
+                          href: data-entities/dual-write/dual-write-overview.md
+                        - name: Nastavení dvojitého zápisu
+                          items:
+                            - name: Systémové požadavky pro dvojitý zápis
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Pokyny pro nastavení duálního zápisu
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Úvahy o počáteční synchronizaci
+                              href: data-entities/dual-write/initial-sync-guidance.md
+                            - name: Nastavení duálního zápisu z Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                            - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                              items:
+                                - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Systémové požadavky a předpoklady
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Jak použít průvodce duálním zápisem k propojení vašeho prostředí
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Povolení mapování entit pro duální zápis
+                                  href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migrace datového typu měny pro duální zápis
+                              href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Nastavení mapování pro pole stavu prodejní objednávky
+                              href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrování mezipodnikových objednávek pro zabránění synchronizace objednávek a řádků objednávek
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
+                        - name: Správa duálního zápisu
+                          items:
+                            - name: Přizpůsobení mapování entit a polí
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Zpracování více map entit
+                              href: data-entities/dual-write/multiple-entity-maps.md
+                            - name: Úprava právnické osoby po nastavení duálního zápisu
+                              href: data-entities/dual-write/edit-legal-entity.md
+                            - name: Správa chyb a oznámení výstrah
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Správa životního cyklu aplikace
+                              href: data-entities/dual-write/app-lifecycle-management.md
+                        - name: Mapování konceptů mezi aplikacemi
+                          items:
+                            - name: Integrovaná hlavní data odběratelů
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Integrace dodavatele
+                              items:
+                                - name: Integrovaná hlavní data dodavatelů
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Přepínání mezi návrhy dodavatele
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Věrnostní karty a odměny zákazníka
+                              href: data-entities/dual-write/loyalty-mapping.md
+                            - name: Integrace produktu
+                              items:
+                                - name: Sjednocené prostředí produktu
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrované sklady a pracoviště
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Integrace společnosti
+                              items:
+                                - name: Koncept společnosti v Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Spuštění s daty společnosti
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organizační hierarchie na Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Finanční a daňové údaje
+                              items:
+                                - name: Přístup k finančním datům a daňovým referenčním datům
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrovaná hlavní kniha
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrovaná hlavní data daní
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Zpeněžení potenciálního zákazníka v duálním zápisu
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synchronizace s cenovým modulem Dynamics 365 Supply Chain Management na požádání
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Použití cenového modulu Dynamics 365 Commerce s Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
+                            - name: Interní majetek pro údržbu
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrovaný pracovník, práce a pozice'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Dostupnost zásob
+                              href: data-entities/dual-write/inventory-availability.md
+                        - name: Podpora dvojitého zápisu
+                          items:
+                            - name: Podpora pro řešení Field Service solutions a Project Service Automation
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Řešení potíží
+                              items:
+                                - name: 'Ověření, zda je v aplikacích Finance and Operations a Common Data Service nakonfigurován duální zápis'
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Poradce při potížích s počáteční instalací
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Poradce při potížích s počáteční synchronizací
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Poradce při potížích s modulem duálního zápisu v aplikacích Finance and Operations
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Poradce při potížích se synchronizací v ostrém provozu
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Poradce při potížích souvisejících s připraveností řešení
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Poradce při potížích souvisejících s upgrady aplikací Finance and Operations
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Obecné řešení potíží
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Časté dotazy k duálnímu zápisu
+                          href: data-entities/dual-write/dual-write-faq.md
+                    - name: Integrace s Power Platform
+                      items:
+                        - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
+                          items:
+                            - name: Zpeněžení potenciálního zákazníka
+                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                            - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
+                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                            - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
+                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                            - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
+                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                            - name: "Synchronizace hlaviček a\_řádků prodejních nabídek přímo z\_aplikace Sales do aplikace Finance and Operations"
+                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                            - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
+                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                            - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
+                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                        - name: Konfigurace integrace se službou Field Service
+                          items:
+                            - name: Přehled konfigurace integrace se službou Field Service
+                              href: ../../supply-chain/sales-marketing/field-service.md
+                            - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
+                              href: ../../supply-chain/sales-marketing/field-service-product.md
+                            - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci\_Finance and Operations"
+                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                            - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci\_Finance and Operations"
+                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                            - name: Synchronizace převodů a úprav zásob ze služby Field Service do Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                            - name: Synchronizace informací o úrovni zásob z aplikace Finance and Operations do služby Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                            - name: Synchronizace produktů ve skladové jednotce z aplikace Finance and Operations do služby Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                            - name: Synchronizace seznamu projektů z aplikace Finance and Operations do služby Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                            - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                            - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                        - name: Konfigurace integrace Project Service Automation
+                          items:
+                            - name: Přehled Project Service Automation
+                              href: ../../finance/project-management/PSA-integration.md
+                            - name: Parametry integrace Project Service Automation
+                              href: ../../finance/project-management/PSA-parameters.md
+                            - name: Synchronizace projektových smluv a projektů
+                              href: ../../finance/project-management/project-contracts-templates.md
+                            - name: Synchronizace projektových úloh
+                              href: ../../finance/project-management/project-tasks-template.md
+                            - name: Synchronizace kategorií výdajů projektu
+                              href: ../../finance/project-management/project-categories-templates.md
+                            - name: Synchronizace odhadů projektu do prognóz projektu
+                              href: ../../finance/project-management/project-estimates-templates.md
+                            - name: Synchronizace skutečných hodnot projektu do deníku integrace projektu
+                              href: ../../finance/project-management/project-actuals-templates.md
+            - name: Využití externích webových služeb
+              href: data-entities/consume-external-web-service.md
+            - name: Elektronické zprávy
+              href: ../../finance/general-ledger/electronic-messaging.md
+        - name: Správa dat
+          items:
+            - name: Přehled správy dat
+              href: data-entities/data-entities-data-packages.md
+            - name: Datové entity
+              items:
+                - name: Přehled datových entit
+                  href: data-entities/data-entities.md
+                - name: Konfigurace datových projektů
+                  href: data-entities/configuration-data-projects.md
+                - name: Zkopírování dat konfigurace mezi společnostmi nebo právnickými osobami
+                  items:
+                    - name: Přehled kopírování konfiguračních dat
+                      href: data-entities/copy-configuration.md
+                    - name: Balíčky dat konfigurace
+                      href: data-entities/configuration-data-packages.md
+                    - name: Balíčky dat konfigurace (pouze vydání z července 2017)
+                      href: data-entities/configuration-data-packages.md
+                - name: Šablony dat konfigurací
+                  href: data-entities/configuration-data-templates.md
+                - name: Sledování změn entity
+                  href: data-entities/entity-change-track.md
+                - name: Hledání informací o standardních datových entitách
+                  href: data-entities/data-entities-report.md
+                - name: Šablony dat s více listy
+                  href: data-entities/excel-template-multiple.md
+                - name: Povolení sledování změn pro entity
+                  href: data-entities/entity-change-track.md
+                - name: Konfigurační klíče a datové entity
+                  href: data-entities/config-key-entities.md
+                - name: Balíčky dat konfigurace
+                  href: data-entities/configuration-data-packages.md
+            - name: "Úlohy importu a\_exportu dat"
+              items:
+                - name: "Přehled úloh importu a\_exportu dat"
+                  href: data-entities/data-import-export-job.md
+                - name: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
+                  href: data-entities/tips-tricks-import-general-journal-entity.md
+            - name: Vývoj pro datové entity
+              items:
+                - name: Návrh principů a osvědčených postupů pro datové entity
+                  href: dev-tools/design-best-practices.md
+                - name: Vytváření nových datových entit
+                  href: data-entities/build-consuming-data-entities.md
+                - name: Vlastnosti datových entit
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: Vytváření vypočtených sloupců a virtuálních polí
+                  href: data-entities/data-entity-computed-columns-virtual-fields.md
+                - name: Chování napříč společnostmi
+                  href: data-entities/cross-company-behavior.md
+                - name: Zpracování kódů zemí/oblastí
+                  href: data-entities/countryregion-codes-configuration-keys.md
+                - name: Vzory dědičnosti
+                  href: data-entities/support-super-type-sub-type.md
+                - name: Pravidla průvodce datovými entitami
+                  href: data-entities/data-entity-wizard-rules.md
+                - name: Vlastnosti metadat
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: 'Ověření, výchozí hodnoty a nemapovaná pole'
+                  href: data-entities/validations-defaults-unmapped-fields.md
+                - name: "Zabezpečení a\_datové entity"
+                  href: data-entities/security-data-entities.md
+                - name: Použití testovacích nástrojů služeb třetí strany
+                  href: data-entities/third-party-service-test.md
+                - name: 'Vytvoření entit pouze ke čtení, které zveřejňují pouze finanční dimenze'
+                  href: financial/read-only-entity-financial.md
+            - name: Použití vlastní databáze
+              href: analytics/export-entities-to-your-own-database.md
+            - name: Automatizované obnovení úložiště entit
+              href: analytics/automated-entity-store-refresh.md
+            - name: Automatizace datové úlohy
+              href: data-entities/data-task-automation.md
+            - name: Pracovní prostor kontrolního seznamu ověřování dat
+              href: user-interface/data-validation-workspace.md
+            - name: Popisy chyb správy dat
+              href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Přehled Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurace exportu do Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
+            - name: Aplikace Finance and Operations v Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Zpřístupnění úložiště entit jako Data Lake
+              href: data-entities/entity-store-data-lake.md
+        - name: Operace přesunu databáze
+          items:
+            - name: Přehled
+              href: database/dbmovement-operations.md
+            - name: Sada nástrojů pro přesun databáze
+              href: database/database-movement-toolkit.md
+            - name: Průvodci pro rychlé zahájení práce
+              items:
+                - name: Obnovení databáze
+                  href: database/database-refresh.md
+                - name: Export databáze
+                  href: database/export-database.md
+                - name: Import databáze
+                  href: database/import-database.md
+                - name: "Obnovení databáze k\_určitému bodu v\_čase"
+                  href: database/database-point-in-time-restore.md
+                - name: "Obnovení produkční databáze k\_určitému bodu v\_čase do prostředí sandbox"
+                  href: database/database-pitr-prod-sandbox.md
+                - name: Povolení přístupu k databázi just-in-time
+                  href: database/database-just-in-time-jit-access.md
+            - name: Kurzy
+              items:
+                - name: Obnovení pro účely školení
+                  href: database/dbmovement-scenario-general-refresh.md
+                - name: Ladění kopie produkční databáze
+                  href: database/dbmovement-scenario-debugdiag.md
+                - name: Export kopie standardní databáze akceptačního testování uživatele
+                  href: database/dbmovement-scenario-exportuat.md
+                - name: Propagace zlaté konfigurace
+                  href: database/dbmovement-scenario-goldenconfig.md
+                - name: Destruktivní testování
+                  href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful API
+              items:
+                - name: Přehled
+                  href: database/api/dbmovement-api-overview.md
+                - name: Správa verzí a podpora
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Ověřování
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Omezování
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Odkaz
+                  items:
+                    - name: Odkaz na rozhraní API v1
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Uvedení seznamů záloh databáze
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Vytvoření obnovení databáze
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Vytvoření exportu databáze
+                      href: database/api/v1/reference-create-export.md
+                    - name: Získání stavu aktivity operace
+                      href: database/api/v1/reference-get-status.md
+        - name: Ukázková data
+          items:
+            - name: Přehled ukázkových dat
+              href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+            - name: Generování ukázkových pomocí datových balíčků
+              href: data-entities/generate-demo-data-packages.md
+        - name: Nasazení
+          items:
+            - name: Nasazení ukázkových prostředí
+              href: deployment/deploy-demo-environment.md
+            - name: Cloudové nasazení
+              items:
+                - name: Přehled cloudového nasazení
+                  href: deployment/cloud-deployment-overview.md
+                - name: Samoobslužné nasazení
+                  items:
+                    - name: Přehled samoobslužného nasazení
+                      href: deployment/infrastructure-stack.md
+                    - name: Nasazení nového prostředí
+                      href: deployment/deployenvironment-newinfrastructure.md
+                    - name: Často kladené dotazy k nasazení
+                      href: deployment/deploymentFAQ.md
+                    - name: Známé problémy se samoobslužným nasazením
+                      href: deployment/known-issues-new-deployment-experience.md
+                    - name: Operace údržby pro nasazení
+                      href: deployment/maintenanceoperationsguide-newinfrastructure.md
+                    - name: Aktualizace prostředí
+                      href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Řešení potíží s prostředím nasazeným pomocí samoobslužného nasazení
+                      href: deployment/troubleshoot-newinfrastructure.md
+                - name: Dokončení zprovoznění služby Azure Resource Manager
+                  href: deployment/arm-onboarding.md
+                - name: Azure ExpressRoute a Finance and Operations
+                  href: deployment/expressroute.md
+                - name: Architektura Finance and Operations
+                  href: ../fin-ops/imp-lifecycle/architecture-overview.md
+                - name: Použití aktualizací na cloudová prostředí
+                  href: deployment/apply-deployable-package-system.md
+                - name: Použití aktualizací a rozšíření na Commerce Scale Unit (cloud)
+                  href: deployment/Update-retail-channel.md
+                - name: Inicializace Commerce Scale Unit (cloud)
+                  href: deployment/Initialize-Retail-Channels.md
+                - name: Migrace kanálu do jiné Commerce Scale Unit
+                  href: deployment/Reassign-CSU.md
+                - name: Umístění dat aplikace Retail
+                  href: deployment/retail-data-residency.md
+            - name: Místní nasazení
+              items:
+                - name: Domovská stránka Místní nasazení
+                  href: deployment/on-premises-deployment-landing-page.md
+                - name: Příprava pro místní nasazení
+                  items:
+                    - name: Přehled místního nasazení
+                      href: deployment/on-premises-overview.md
+                    - name: Plán a příprava pro místní nasazení
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Požadavky na rozsah hardwaru
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Ověření v Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/authentication-onprem.md
+                - name: Nastavení a nasazení místních prostředí
+                  items:
+                    - name: Nastavení místních projektů v LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Nastavení a nasazení místních prostředí
+                      href: deployment/setup-deploy-on-premises-pu12.md
+                    - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
+                      href: deployment/deploy-retail-onprem.md
+                    - name: Vývoj a nasazení vlastních modelů do místních prostředí
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Údržba prostředí
+                  items:
+                    - name: Použití aktualizací na místní nasazení
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Rotace certifikátů
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Připojení klienta k internetu
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurace uzlů AOS pouze pro dávky a pouze interaktivního v místních nasazeních
+                      href: deployment/onprem-batchonly.md
+                    - name: Konfigurace proxy pro místní prostředí
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Místní diagnostika
+                      href: deployment/on-premises-diagnostics.md
+                    - name: Místní konfigurace zotavení po havárii
+                      href: deployment/onprem-dr.md
+                    - name: Integrace PowerBI.com s místními prostředími
+                      href: analytics/entity-store-on-prem.md
+                    - name: Rekonfigurace prostředí
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Opětovné nasazení místních nasazení
+                      href: deployment/redeploy-on-prem.md
+                    - name: 'Odebrání, přeinstalace nebo přidání uzlu AOS'
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
+                    - name: Opětovné použití stejné instance AD FS pro více prostředí
+                      href: deployment/onprem-reuseadfs.md
+                - name: Místní agent
+                  items:
+                    - name: Kompatibilita AD FS Microsoft 365
+                      href: deployment/onprem-adfscompatibility.md
+                    - name: Předběžné nasazení místního agenta a skripty po nasazení
+                      href: lifecycle-services/pre-post-scripts.md
+                    - name: Aktualizace místního agenta
+                      href: lifecycle-services/update-local-agent.md
+                - name: Řešení potíží
+                  items:
+                    - name: Řešení problémů s místním nasazením
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skripty pro řešení problémů v místních prostředích
+                      href: deployment/onprem-tsg-implementations.md
+            - name: Nasazení vlastního kódu
+              items:
+                - name: Vytvoření nasaditelných balíčků modelů
+                  href: deployment/create-apply-deployable-package.md
+                - name: Instalace nasaditelných balíčků z příkazového řádku
+                  href: deployment/install-deployable-package.md
+                - name: Odinstalace balíčku
+                  href: deployment/uninstall-deployable-package.md
+                - name: Řešení potíží s použitím balíčku
+                  href: deployment/deployable-package-troubleshooting.md
+            - name: Nasazení vlastní nápovědy
+              items:
+                - name: Přehled vlastní nápovědy
+                  href: help/custom-help-overview.md
+                - name: Příprava obsahu pro použití s podoknem nápovědy
+                  href: help/preparing-content.md
+                - name: Nasazení vlastní nápovědy do Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Připojení vlastní nápovědy do podokna nápovědy
+                  href: help/connect-help-pane.md
+                - name: Sada nástrojů vlastní nápovědy
+                  items:
+                    - name: Přehled
+                      href: help/custom-help-toolkit.md
+                    - name: Nástroj HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Nástroj Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Nástroj HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Převod vlastní nápovědy Dynamics AX pro použití v Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Popisovače jazyka a národního prostředí v rámci produktu a nápovědy
+                  href: help/language-locale.md
+                - name: 'Rozšíření, přizpůsobení a spolupráce na nápovědě'
+                  href: help/contributor-guide.md
+        - name: Vývoj a přizpůsobení
+          items:
+            - name: Domovská stránka Vývoj a přizpůsobení
+              href: dev-tools/developer-home-page.md
+            - name: Zásobník aplikace a architektura serveru
+              href: dev-tools/application-stack-server-architecture.md
+            - name: Získání zkušebních kopií
+              href: dev-tools/get-evaluation-copy.md
+            - name: Registrace ukázkového předplatného
+              href: dev-tools/sign-up-preview-subscription.md
+            - name: Nasazení a přístup k vývojovým prostředím
+              items:
+                - name: Vývojová prostředí
+                  href: dev-tools/access-instances.md
+                - name: Konfigurace samostatných vývojových prostředí
+                  href: dev-tools/configure-developer-vm.md
+                - name: Vytvoření nových uživatelů na vývojových počítačích
+                  href: dev-tools/enable-development-machine.md
+                - name: 'Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce'
+                  href: sysadmin/VMs-no-admin-access.md
+                - name: Přejmenování místních prostředí pro přístup k Azure DevOps
+                  href: migration-upgrade/vso-machine-renaming.md
+                - name: Systémové požadavky na vývoj
+                  href: dev-tools/development-system-requirements.md
+            - name: 'Řízení verze, vyhledávání metadat a navigace'
+              href: dev-tools/version-control-metadata-navigation.md
+            - name: Vytvoření automatizace pomocí Azure
+              items:
+                - name: Vytvoření automatizace pomocí agentů hostovaných společností Microsoft a Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Přidání licenčních souborů do nasaditelného balíčku v Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Vytvoření nasaditelných balíčků v Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: Verzování modelu X++ v Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
+                - name: Stažení prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Odeslání prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Nasazení prostředků pomocí Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Vytvoření připojení Lifecycle Services (LCS) v Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
+                - name: Aktualizace starých kanálů v Azure Pipelines
+                  href: dev-tools/pipeline-msbuild-update.md
+            - name: Vzorová aplikace správy vozového parku
+              items:
+                - name: Klient-server scénář pro vzorovou aplikaci správy vozového parku
+                  href: dev-tools/fleet-management-sample.md
+                - name: Vzorová aplikace správy vozového parku
+                  href: dev-tools/introduction-fleet-management-sample.md
+            - name: Nástroje Visual Studio
+              items:
+                - name: Vývojové nástroje
+                  href: dev-tools/development-tools-overview.md
+                - name: Kurz vývojových nástrojů
+                  href: dev-tools/introduction-visual-studio.md
+                - name: Kontrola aplikací
+                  href: dev-tools/application-checker.md
+                - name: Průzkumník aplikací
+                  href: dev-tools/application-explorer.md
+                - name: Sestavení a ladění projektů
+                  href: dev-tools/build-debug-project.md
+                - name: Operace sestavení
+                  href: dev-tools/build-operations.md
+                - name: Funkce editoru kódu
+                  href: dev-tools/code-editor.md
+                - name: Vytvoření modelů a prvků datového modelu
+                  items:
+                    - name: Přehled vytvoření modelů a prvků datového modelu
+                      href: dev-tools/create-data-model-elements.md
+                    - name: "Pokyny k\_názvům pro rozšíření"
+                      href: extensibility/NamingGuidelines.md
+                    - name: Vypnutí přizpůsobení modelu a neschválení funkce
+                      href: dev-tools/lock-models.md
+                - name: Sestava analýz úprav
+                  href: dev-tools/customization-analysis-report.md
+                - name: Návrháři prvků
+                  href: dev-tools/element-designers.md
+                - name: Příkazy pro určení použití prvku
+                  href: dev-tools/element-usage.md
+                - name: Export a import modelů
+                  href: dev-tools/models-export-import.md
+                - name: Vyhledávání metadat v aplikaci Visual Studio
+                  href: dev-tools/metadata-search-visual-studio.md
+                - name: Modely a balíčky
+                  href: dev-tools/models.md
+                - name: Typ projektu Finance and Operations
+                  href: dev-tools/projects.md
+                - name: Doplňky nástrojů pro Visual Studio
+                  href: dev-tools/developer-tools-add-ins.md
+                - name: Aktualizace vývojových nástrojů Visual Studio
+                  href: dev-tools/update-development-tools.md
+            - name: Programovací jazyk X++
+              items:
+                - name: X++ a funkce ladicího programu
+                  href: dev-tools/new-x-debugger-features.md
+                - name: Ladění kódu X++
+                  href: dev-tools/debug-xpp.md
+                - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
+                  href: dev-tools/event-handler-result-class.md
+                - name: Psaní obchodní logiky pomocí zdrojového kódu C# a X++
+                  href: dev-tools/write-business-logic.md
+                - name: Změny v X++ a kompilátor X++
+                  href: dev-tools/programming-language-support.md
+                - name: Poskytovatel LINQ pro C#
+                  href: dev-tools/linq-provider-c.md
+                - name: Psaní pravidel osvědčených postupů
+                  href: dev-tools/author-best-practice-rules.md
+                - name: Vlastnosti průzkumníka aplikací
+                  href: dev-ref/application-explorer-aot-properties.md
+                - name: Jazykové reference pro X++
+                  items:
+                    - name: Přehled jazykové reference pro X++
+                      href: dev-ref/xpp-language-reference.md
+                    - name: Proměnné a datové typy
+                      items:
+                        - name: Proměnné
+                          href: dev-ref/xpp-variables-data-types.md
+                        - name: Typy primitivních dat
+                          href: dev-ref/xpp-data-primitive.md
+                        - name: Typy složených dat
+                          href: dev-ref/xpp-data-composite.md
+                        - name: Třídy kolekcí
+                          href: dev-ref/xpp-data-collection.md
+                        - name: Rozšířené datové typy
+                          href: dev-ref/xpp-data-edt.md
+                    - name: 'Příkazy, cykly a ošetření výjimek'
+                      items:
+                        - name: 'Komentáře, použití a tisk'
+                          href: dev-ref/xpp-statements-loops.md
+                        - name: Podmínkové příkazy
+                          href: dev-ref/xpp-conditional.md
+                        - name: Cyklické příkazy
+                          href: dev-ref/xpp-loops.md
+                        - name: Ošetření výjimek
+                          href: dev-ref/xpp-exceptions.md
+                    - name: Chyba připojení SQL - výjimka X++
+                      href: dev-ref/sql-connection-error.md
+                    - name: X++ operátory
+                      href: dev-ref/xpp-operators.md
+                    - name: X++ priorita operátorů
+                      href: dev-ref/xpp-operator-precedence.md
+                    - name: X++ třídy a metody
+                      items:
+                        - name: Třídy a metody
+                          href: dev-ref/xpp-classes-methods.md
+                        - name: Dědičnost
+                          href: dev-ref/xpp-inheritance.md
+                        - name: Statické členy třídy
+                          href: dev-ref/xpp-static-classes.md
+                        - name: Rozhraní
+                          href: dev-ref/xpp-interfaces.md
+                        - name: Knihovny
+                          href: dev-ref/xpp-library-objects.md
+                        - name: Události
+                          href: dev-ref/xpp-events.md
+                    - name: X++ výběr dat a manipulace
+                      items:
+                        - name: Přehled výběru a manipulace dat X++
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: Vybrat výkaz
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: Vybrat data
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: Vložení dat
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: Aktualizace dat
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: Odstranění dat
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: Příkaz While select
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: Psaní příkazu select jako výrazu
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: Transakční integrita
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: Převod operací z operací založených na sadě na operace záznam po záznamu
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: Přístup k datům pomocí SysDa API
+                          href: dev-ref/sysda.md
+                        - name: Omezení útoku prostřednictvím injektáže SQL
+                          href: dev-ref/query-with-parameters.md
+                    - name: X++ makra
+                      href: dev-ref/xpp-macros.md
+                    - name: X++ třidy atributů
+                      href: dev-ref/xpp-attribute-classes.md
+                    - name: Porovnání X++ a C#
+                      href: dev-ref/xpp-cs-comparison.md
+                    - name: Syntaxe X++
+                      href: dev-ref/xpp-syntax.md
+            - name: 'API, třída a odkazy na tabulku'
+              items:
+                - name: 'API, třída a zdroje tabulky'
+                  href: dev-ref/api-reference.md
+                - name: Funkce X++ za kompilace
+                  href: dev-ref/xpp-compile-time-functions.md
+                - name: Funkce X++ za běhu
+                  items:
+                    - name: Zdroje funkce runtime X++
+                      href: dev-ref/xpp-run-time-functions.md
+                    - name: Funkce X++ za běhu obchodu
+                      href: dev-ref/xpp-business-run-time-functions.md
+                    - name: Funkce X++ za běhu kontejneru
+                      href: dev-ref/xpp-container-run-time-functions.md
+                    - name: Funkce X++ za běhu konverze
+                      href: dev-ref/xpp-conversion-run-time-functions.md
+                    - name: Funkce X++ za běhu data
+                      href: dev-ref/xpp-date-run-time-functions.md
+                    - name: Funkce X++ za běhu výpočtu
+                      href: dev-ref/xpp-math-run-time-functions.md
+                    - name: Funkce X++ za běhu reflexe
+                      href: dev-ref/xpp-reflection-run-time-functions.md
+                    - name: Funkce X++ za běhu relace
+                      href: dev-ref/xpp-session-run-time-functions.md
+                    - name: Funkce X++ za běhu řetězce
+                      href: dev-ref/xpp-string-run-time-functions.md
+                - name: Systémové tabulky
+                  href: dev-ref/system-tables.md
+                - name: Systémové třídy
+                  items:
+                    - name: Seznam systémových tříd
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Třídy systému seskupené abecedně
+                      items:
+                        - name: Třídy A
+                          href: dev-ref/a-classes.md
+                        - name: Třídy B
+                          href: dev-ref/b-classes.md
+                        - name: Třídy C
+                          href: dev-ref/c-classes.md
+                        - name: Třídy D
+                          href: dev-ref/d-classes.md
+                        - name: Třídy E
+                          href: dev-ref/e-classes.md
+                        - name: Třídy F
+                          href: dev-ref/f-classes.md
+                        - name: Třídy G
+                          href: dev-ref/g-classes.md
+                        - name: Třídy H
+                          href: dev-ref/h-classes.md
+                        - name: Třídy I
+                          href: dev-ref/i-classes.md
+                        - name: Třídy J
+                          href: dev-ref/j-classes.md
+                        - name: Třídy K
+                          href: dev-ref/k-classes.md
+                        - name: Třídy L
+                          href: dev-ref/l-classes.md
+                        - name: Třídy M
+                          href: dev-ref/m-classes.md
+                        - name: Třídy N
+                          href: dev-ref/n-classes.md
+                        - name: Třídy O
+                          href: dev-ref/o-classes.md
+                        - name: Třídy P
+                          href: dev-ref/p-classes.md
+                        - name: Třídy Q
+                          href: dev-ref/q-classes.md
+                        - name: Třídy R
+                          href: dev-ref/r-classes.md
+                        - name: Třídy S
+                          href: dev-ref/s-classes.md
+                        - name: Třídy T
+                          href: dev-ref/t-classes.md
+                        - name: Třídy U
+                          href: dev-ref/u-classes.md
+                        - name: Třídy V
+                          href: dev-ref/v-classes.md
+                        - name: Třídy W
+                          href: dev-ref/w-classes.md
+                        - name: Třídy X
+                          href: dev-ref/x-classes.md
+            - name: Rozšiřitelnost
+              items:
+                - name: Domovská stránka pro rozšiřitelnost
+                  href: extensibility/extensibility-home-page.md
+                - name: "Úvod a\_informace, jak začít"
+                  items:
+                    - name: Plán rozšíření aplikací
+                      href: extensibility/extensibility-roadmap.md
+                    - name: Požadavky na rozšiřitelnost
+                      href: extensibility/extensibility-requests.md
+                    - name: Často kladené dotazy o rozšiřitelnosti
+                      href: extensibility/app-sealing-faq.md
+                    - name: "Přechod z\_překrývání vrstev na rozšíření"
+                      href: extensibility/migrate-overlayer-extension.md
+                    - name: "Přizpůsobení prvků modelu s\_použitím rozšíření (kurz)"
+                      href: extensibility/customize-model-elements-extensions.md
+                    - name: Přizpůsobení pomocí rozšíření a překrývání vrstev
+                      href: extensibility/customization-overlayering-extensions.md
+                - name: Co je nového
+                  items:
+                    - name: Co je nového a co se změnilo pro rozšiřitelnost
+                      href: extensibility/extensibility-new.md
+                    - name: Změny rozšiřitelnosti – verze 10.0.3
+                      href: extensibility/extensibility-changes-10-3.md
+                    - name: Změny rozšiřitelnosti – verze 10.0.2
+                      href: extensibility/extensibility-changes-10-2.md
+                    - name: Změny rozšiřitelnosti – verze 10.0.1
+                      href: extensibility/extensibility-changes-10-1.md
+                    - name: Změny rozšiřitelnosti – verze 10.0
+                      href: extensibility/extensibility-changes-10.md
+                    - name: Změny rozšiřitelnosti – verze 8.1.3
+                      href: extensibility/extensibility-changes-813.md
+                    - name: Změny rozšiřitelnosti – verze 8.1.2
+                      href: extensibility/extensibility-changes-812.md
+                    - name: Změny rozšiřitelnosti – verze 8.1.1
+                      href: extensibility/extensibility-changes-811.md
+                    - name: Změny rozšiřitelnosti – verze 8.1
+                      href: extensibility/extensibility-changes-81.md
+                    - name: Změny rozšiřitelnosti – verze 8.0.4
+                      href: extensibility/extensibility-changes-804.md
+                    - name: Změny rozšiřitelnosti – verze 8.0.3
+                      href: extensibility/extensibility-changes-803.md
+                    - name: Změny rozšiřitelnosti – verze 8.0.2
+                      href: extensibility/extensibility-changes-802.md
+                    - name: Změny rozšiřitelnosti – verze 8.0.1
+                      href: extensibility/extensibility-changes-801.md
+                    - name: Změny rozšiřitelnosti ve verzi 8.0
+                      href: extensibility/Changes-80.md
+                    - name: Změny rozšiřitelnosti ve verzi 7.3
+                      href: extensibility/extensibility-changes-73.md
+                    - name: Změny rozšiřitelnosti - červenec 2017
+                      href: extensibility/changes-july-2017.md
+                - name: Základy
+                  items:
+                    - name: Narušující přizpůsobení
+                      href: extensibility/intrusive-customizations.md
+                    - name: Model rozšíření tříd
+                      href: extensibility/class-extensions.md
+                    - name: Rozšíření tříd prostřednictvím method wrapping a Chain of Command
+                      href: extensibility/method-wrapping-coc.md
+                    - name: "Pokyny k\_názvům pro rozšíření"
+                      href: extensibility/naming-guidelines-extensions.md
+                    - name: 'Rozvolnění omezení modelu, aby bylo možné provést refactoring nadměrných vrstev do rozšíření'
+                      href: extensibility/refactoring-over-layering.md
+                - name: Vytvoření rozšíření
+                  items:
+                    - name: Přidání hodnoty do výčtů
+                      href: extensibility/add-enum-value.md
+                    - name: Úprava rozšířených datových typů
+                      href: extensibility/modify-edt.md
+                    - name: Registrace podtříd pro metody factory
+                      href: extensibility/register-subclass-factory-methods.md
+                    - name: "Reakce s\_použitím parametru EventHandlerResult"
+                      href: extensibility/respond-event-handler-result.md
+                    - name: Rozšíření třídy RunBase
+                      href: extensibility/extend-runbase-class.md
+                    - name: Přizpůsobení spuštění aplikace pomocí delegátů
+                      href: extensibility/startup-customizations.md
+                    - name: "Úprava existujících polí v\_tabulce"
+                      href: extensibility/modify-existing-field.md
+                    - name: Přidání polí do tabulek
+                      href: extensibility/add-field-extension.md
+                    - name: Přidání indexů do tabulek
+                      href: extensibility/add-index.md
+                    - name: Přidání vztahů do tabulek
+                      href: extensibility/add-relation.md
+                    - name: Úprava vlastností tabulky
+                      href: extensibility/modify-properties.md
+                    - name: Přidání metod do tabulek
+                      href: extensibility/add-method-table.md
+                    - name: "Provádění obchodních akcí v\_průběhu životního cyklu záznamů tabulky"
+                      href: extensibility/subscribe-table-events.md
+                    - name: Přidání datových zdrojů do formulářů
+                      href: extensibility/add-datasource.md
+                    - name: Změna popisků na formuláři
+                      href: extensibility/change-caption-form.md
+                    - name: Úprava vlastností ovládacího prvku formuláře
+                      href: extensibility/modify-control-properties.md
+                    - name: Rozšíření rozsahu číselných řad
+                      href: extensibility/extend-number-sequence-scope.md
+                    - name: Přidání nových dimenzí zásob
+                      href: extensibility/inventory-dimensions.md
+                    - name: Rozšiřitelnost ceny a slev
+                      href: extensibility/pricing-app73.md
+                    - name: Rozšíření mapy tabulek
+                      href: extensibility/map-extensions.md
+                    - name: Rozšíření map tabulek používaných jako rozhraní
+                      href: extensibility/maps-as-interfaces.md
+                    - name: Rozšíření map tabulek používaných pro správu verzí
+                      href: extensibility/maps-with-versioning.md
+                    - name: Rozšíření přesnosti na desetinná místa pro zvolené datové typy
+                      href: extensibility/decimal-point-precision.md
+                - name: Vytvoření rozšiřitelných řešení
+                  items:
+                    - name: "Zápis rozšiřitelného\_kódu"
+                      href: extensibility/writing-extensible-code.md
+                    - name: Třídy
+                      href: extensibility/extensible-classes.md
+                    - name: Metody
+                      href: extensibility/extensible-methods.md
+                    - name: Formuláře
+                      href: extensibility/extensible-forms.md
+                    - name: Rozšířené datové typy
+                      href: extensibility/extensible-edts.md
+                    - name: Rozšiřitelné výčty
+                      href: extensibility/extensible-enums.md
+                    - name: Delegáti
+                      href: extensibility/extensible-code-delegates.md
+                    - name: Tabulky
+                      href: extensibility/extensible-tables.md
+                    - name: Atributy rozšiřitelnosti pro metody
+                      href: extensibility/extensibility-attributes.md
+                    - name: Přerušení změn
+                      href: extensibility/breaking-changes.md
+                    - name: Nástroj kontroly kompatibility
+                      href: extensibility/compatibility-checker-tool.md
+            - name: Výkonnost
+              items:
+                - name: Sledování pomocí Trace parser
+                  href: perf-test/trace-trace-tutorial.md
+                - name: Testování jednoho uživatele se záznamníkem úloh a výkonovým SDK
+                  href: perf-test/single-user-test-perf-sdk.md
+                - name: Testování více uživatelů s výkonovým SDK a místním kontrolorem testů
+                  href: perf-test/multi-user-testing-local-test-controller.md
+                - name: Testování více uživatelů s výkonovým SDK a Azure DevOps
+                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Průvodce řešením potíží pro testování jednoho uživatele nebo více uživatelů s výkonovým SDK
+                  href: perf-test/troubleshoot-perf-sdk-user-testing.md
+                - name: Výkonové SDK a testování více uživatelů v místních prostředích
+                  href: perf-test/perfsdk-tutorial-lbd.md
+                - name: Diagnostika problémů a analýza výkonnosti pomocí Trace parser
+                  href: perf-test/trace-parser.md
+                - name: Časovač výkonu
+                  href: perf-test/performance-timer.md
+            - name: Podpora testování v aplikaci Visual Studio
+              items:
+                - name: Testování a ověřování
+                  href: perf-test/testing-validation.md
+                - name: Testovací projekty v aplikaci Visual Studio
+                  href: perf-test/testing-support.md
+                - name: Nasazení prostředí podporujících průběžné sestavování a automatizace testování
+                  href: perf-test/continuous-build-test-automation.md
+                - name: Filtrování SysTest pomocí třídy a atributů metody
+                  href: perf-test/systest-filtering.md
+                - name: Knihovna akceptačních testů
+                  items:
+                    - name: Zdroje knihovny akceptačních testů
+                      href: perf-test/acceptance-test-library.md
+                    - name: Navigační koncepty
+                      href: perf-test/concepts-navigation.md
+                    - name: Metody testování dat
+                      href: perf-test/test-data-methods.md
+                    - name: Entity v knihovně akceptačních testů
+                      href: perf-test/concepts-entities.md
+                    - name: Příkazy knihovny akceptačních testů
+                      href: perf-test/concepts-commands.md
+                    - name: Autoři v knihovně akceptačních testů
+                      href: perf-test/concepts-creators.md
+                    - name: Dotazy v knihovně akceptačních testů
+                      href: perf-test/concepts-queries.md
+                    - name: Třídy specifikace
+                      href: perf-test/concepts-specifications.md
+                    - name: Průvodce generováním kódu knihovny akceptačních testů
+                      href: perf-test/code-generation-wizard.md
+                    - name: Osvědčené postupy pro knihovnu akceptačních testů
+                      href: perf-test/atl-best-practices.md
+                    - name: Časté dotazy
+                      href: perf-test/atl-faq.md
+            - name: Platnost od
+              href: dev-tools/date-effectivity.md
+            - name: Licencování nezávislých výrobců softwaru
+              href: dev-tools/isv-licensing.md
+            - name: Licencování nezávislých výrobců pro nasazení on-premises
+              href: dev-tools/isv-licensing-on-prem.md
+        - name: Obecné nařízení o ochraně osobních údajů (GDPR)
+          items:
+            - name: Přehled obecného nařízení o ochraně osobních údajů (GDPR)
+              href: gdpr/gdpr-guide.md
+            - name: Odpovědi na požadavky na data GDPR
+              items:
+                - name: Odpovědi na zdroje požadavků na data GDPR
+                  href: gdpr/gdpr-home-page.md
+                - name: Klasifikace majetku
+                  href: gdpr/gdpr-asset-classification-values.md
+                - name: Sestava vyhledávání osob
+                  href: gdpr/gdpr-person-search-report.md
+                - name: Rozšíření sestavy vyhledávání osob
+                  href: gdpr/gdpr-extend-person-search-report.md
+                - name: Správa přístupu k citlivým datům
+                  href: gdpr/gdpr-auditing-sensitive-data.md
+                - name: Odpověď na požadavky personálních dat pomocí aplikace Human Resources
+                  href: gdpr/respond-dsr-request-talent.md
+                - name: Odpověď na požadavky personálních dat v AX 2012
+                  href: gdpr/gdpr-ax2012.md
+                - name: Požadavky na data GDPR pro LCS
+                  href: gdpr/gdpr-lcs.md
+        - name: Lifecycle Services
+          items:
+            - name: Zdroje pro Lifecycle Services
+              items:
+                - name: Zdroje pro Lifecycle Services
+                  href: lifecycle-services/lcs.md
+                - name: LCS pro zákazníky
+                  href: lifecycle-services/lcs-works-lcs.md
+                - name: LCS pro partnery
+                  href: lifecycle-services/getting-started-lcs.md
+                - name: Co je nového a co se změnilo v Lifecycle Services
+                  href: lifecycle-services/whats-new-lcs.md
+                - name: Známé problémy
+                  href: lifecycle-services/known-issues.md
+                - name: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
+            - name: Uživatelská příručka Lifecycle Services
+              href: lifecycle-services/lcs-user-guide.md
+            - name: Zaškolení do projektu
+              href: lifecycle-services/project-onboarding.md
+            - name: Odhad předplatného
+              href: lifecycle-services/subscription-estimator.md
+            - name: Konfigurace zabezpečení
+              href: lifecycle-services/configure-lcs-security.md
+            - name: Hledání problémů
+              href: lifecycle-services/issue-search-lcs.md
+            - name: Správce konfigurace
+              items:
+                - name: Přehled správce konfigurace
+                  href: lifecycle-services/configuration-manager-lcs.md
+                - name: Nastavení správce konfigurace
+                  href: lifecycle-services/set-up-configuration-manager-lcs.md
+            - name: Konfigurace služby upgradu kódu
+              href: lifecycle-services/configure-execute-code-upgrade.md
+            - name: Vytvoření nebo aktualizace metodologií
+              href: lifecycle-services/create-methodology.md
+            - name: Modelování podnikových procesů
+              items:
+                - name: Přehled modelování podnikových procesů
+                  href: lifecycle-services/bpm-overview.md
+                - name: Knihovny podnikových procesů v Modelování podnikových procesů
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Vytvoření, úprava a procházení knihoven modelování podnikových procesů'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Dokončení úloh v modelování podnikových procesů
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Práce s diagramy aktivit v knihovnách BPM
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: Synchronizace knihoven BPM s Azure DevOps
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Vytvoření knihoven akceptačního testování pomocí průvodců záznamem úloh a BPM
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Vývojové diagramy v modelování podnikových procesů
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Odeslání vlastních podnikových procesů do modelování podnikových procesů
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Servisní požadavky
+              items:
+                - name: Cloudové operace a obsluha
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Odeslání požadavků na službu týmu Dynamics Service Engineering
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Často kladené dotazy k oknu plánované údržby
+                  href: lifecycle-services/planned-maintenance-window-faq.md
+            - name: Monitorování a diagnostika
+              href: lifecycle-services/monitoring-diagnostics.md
+            - name: Sestava analýzy dopadů
+              href: lifecycle-services/impact-analysis-report.md
+            - name: Restart služeb prostředí
+              href: lifecycle-services/restart-environment-services.md
+            - name: Nahlášení výpadku výroby
+              href: lifecycle-services/report-production-outage.md
+            - name: Sledování přihlášení uživatelů
+              href: lifecycle-services/user-logins.md
+            - name: Knihovna prostředků
+              href: lifecycle-services/asset-library.md
+            - name: Řešení problémů s výkonností pomocí nástrojů v LCS
+              href: lifecycle-services/performancetroubleshooting.md
+            - name: Návod pro dotazy
+              href: lifecycle-services/querycookbook.md
+            - name: Microsoft Dynamics 365 Translation Service
+              items:
+                - name: Přehled služby Dynamics 365 Translation Service
+                  href: lifecycle-services/translation-service-overview.md
+                - name: Překlad souborů uživatelské rozhraní
+                  href: lifecycle-services/use-translation-service.md
+                - name: Překlad souborů dokumentace
+                  href: lifecycle-services/use-translation-service-ua.md
+                - name: Soubory překladové paměti
+                  href: lifecycle-services/use-translation-service-tm.md
+        - name: Integrace Microsoft Power Platform
+          items:
+            - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
+              href: power-platform/overview.md
+            - name: Modelování entit
+              href: power-platform/entity-modeling.md
+            - name: Správa životního cyklu aplikace
+              href: power-platform/application-lifecycle-management.md
+            - name: Reference správce Finance and Operations a Common Data Service
+              href: power-platform/admin-reference.md
+            - name: Portály Power Apps s Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Často kladené dotazy k virtuálním entitám Finance and Operations
+              href: power-platform/faq.md
+        - name: Mobilní platforma
+          items:
+            - name: Zdroje mobilní platformy
+              href: mobile-apps/platform/mobile-platform-home-page.md
+            - name: Začínáme
+              items:
+                - name: Začínáme s mobilní platformou
+                  href: mobile-apps/platform/mobile-platform-getting-started.md
+                - name: Informace o architektuře a návrhu
+                  href: mobile-apps/platform/mobile-platform-architecture.md
+                - name: Události obchodní logiky
+                  href: mobile-apps/platform/business-logic-events-overview.md
+                - name: Pokyny k navrhování stránek
+                  href: mobile-apps/platform/page-design-guidelines.md
+                - name: Pokyny k navrhování akcí
+                  href: mobile-apps/platform/action-design-guidelines.md
+                - name: Požadavky k navrhování formulářů
+                  href: mobile-apps/platform/form-design-requirements.md
+            - name: Společné úlohy
+              items:
+                - name: Konfigurace pracovních prostorů pomocí třídy SysAppWorkspace
+                  href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
+                - name: Vytvoření polí na stránkách mobilních aplikací pro kliknutí
+                  href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
+                - name: Zobrazení počtů v polích
+                  href: mobile-apps/platform/scenarios/display-count-workspace.md
+                - name: Pomoc se zabezpečením mobilního pracovního prostoru
+                  href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
+                - name: Lokalizace mobilních pracovních prostorů
+                  href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
+                - name: Jak udělat pole povinnými pomocí tříd pracovního prostoru
+                  href: mobile-apps/platform/scenarios/make-field-mandatory.md
+            - name: Odkaz na vývoj na straně serveru
+              items:
+                - name: Vývoj na straně serveru (pracovní prostor X++ API)
+                  href: mobile-apps/platform/mobile-workspace-server-apis.md
+            - name: Odkaz na vývoj na straně klienta
+              items:
+                - name: API návrhy na straně klienta
+                  href: mobile-apps/platform/scenarios/client-api-design-overview.md
+                - name: API klienta
+                  items:
+                    - name: Domovská stránka rozhraní API klienta
+                      href: mobile-apps/platform/client-apis/client-apis-reference.md
+                    - name: Výčet PageState
+                      href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
+                    - name: Modul aplikace
+                      href: mobile-apps/platform/client-apis/modules/services-application.md
+                    - name: Modul odložení
+                      href: mobile-apps/platform/client-apis/modules/defer.md
+                    - name: Modul události
+                      href: mobile-apps/platform/client-apis/modules/event-ievent.md
+                    - name: Modul kontroly
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
+                    - name: Modul kontejneru
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
+                    - name: Modul pole
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md
+                    - name: Module File Uploader
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md
+                    - name: Modul skupiny
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md
+                    - name: Modul hypertextového odkazu
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md
+                    - name: Modul obrázku
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md
+                    - name: Modul zadání
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md
+                    - name: Modul seznamu
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md
+                    - name: Modul vyhledávání
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md
+                    - name: Modul vícenásobného vyhledávání
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md
+                    - name: Modul stránky
+                      href: mobile-apps/platform/client-apis/modules/view-model-ipage.md
+                    - name: Modul Pagelink
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
+                    - name: Modul části
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
+                    - name: Modul služeb
+                      href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
+                    - name: Modul hodnoty
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
+                    - name: Typ aplikace
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md
+                    - name: Typ ApplicationMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md
+                    - name: Typ AsyncService
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md
+                    - name: Typ CacheService
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md
+                    - name: Typ CompleteEventArgs
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md
+                    - name: Typ ContainerControl
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md
+                    - name: Typ ContainerControlDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md
+                    - name: Typ ContainerControlMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md
+                    - name: Typ ControlMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
+                    - name: Typ DataService
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
+                    - name: Typ Deferred<T>
+                      href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
+                    - name: Typ Design
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
+                    - name: Typ EventHook<T>
+                      href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
+                    - name: Typ pole
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
+                    - name: Typ FieldDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md
+                    - name: Typ FieldMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md
+                    - name: Typ FileUploader
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md
+                    - name: Typ FileUploaderDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md
+                    - name: Typ FileUploaderMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md
+                    - name: Typ GenericValue
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
+                    - name: Typ getDataSource
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
+                    - name: Typ Group
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
+                    - name: Typ GroupDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md
+                    - name: Typ GroupMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md
+                    - name: Typ HyperLink
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md
+                    - name: Typ HyperLinkDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md
+                    - name: Typ HyperLinkMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md
+                    - name: Typ Image
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md
+                    - name: Typ ImageDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md
+                    - name: Typ ImageMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md
+                    - name: Typ InputControl
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md
+                    - name: Typ InputControlDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md
+                    - name: Typ InputControlMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md
+                    - name: Typ List
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md
+                    - name: Typ ListDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md
+                    - name: Typ ListMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md
+                    - name: Typ Lookup
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md
+                    - name: Typ LookupDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md
+                    - name: Typ LookupMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md
+                    - name: Typ MetadataService
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md
+                    - name: Typ MultiLookup
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md
+                    - name: Typ MultiLookupDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md
+                    - name: Typ MultiLookupMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md
+                    - name: Typ NavigationArgs
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md
+                    - name: Typ NumberSequenceConfig
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md
+                    - name: Typ Page
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md
+                    - name: Typ PageData
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md
+                    - name: Typ PageLink
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md
+                    - name: Typ PageLinkDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md
+                    - name: Typ PageLinkMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md
+                    - name: Typ PageMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md
+                    - name: Typ PageOptions
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md
+                    - name: Typ PageSubmitArgs
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md
+                    - name: Typ PageTarget
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md
+                    - name: Typ Part
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md
+                    - name: Typ PartDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
+                    - name: Typ PartMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
+                    - name: Typ řádku
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
+                    - name: Typ hodnoty
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
+                    - name: Typ ValueDesign
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
+                    - name: Typ ValueMetadata
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Rámec automatizace procesů
+          items:
+            - name: Vývoj rámce automatizace procesů
+              href: process-automation/process-automation-framework.md
+            - name: Registrace typu
+              href: process-automation/type-registration.md
+            - name: Registrace série
+              href: process-automation/series-registration.md
+            - name: Parametry zpracování
+              href: process-automation/process-parameters.md
+            - name: Uživatelem konfigurovatelné dotazy
+              href: process-automation/user-queries.md
+            - name: Spuštění procesu
+              href: process-automation/run-process.md
+            - name: Výsledky a zprávy protokolu
+              href: process-automation/log-results.md
+            - name: Přizpůsobení uživatelského rozhraní
+              href: process-automation/ui-customization.md
+        - name: Regression Suite Automation Tool
+          items:
+            - name: Přehled nástroje Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-overview.md
+            - name: Instalace a konfigurace
+              href: perf-test/rsat/rsat-install-configure.md
+            - name: Použití nástroje Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-run.md
+            - name: Ověření očekávaných hodnot
+              href: perf-test/rsat/rsat-validate-expected.md
+            - name: Řetězcové testovací případy
+              href: perf-test/rsat/rsat-chain-test-cases.md
+            - name: Odvozené testovací případy
+              href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Kurz pro nástroj Regression Suite Automation Tool a další funkce
+              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Doporučené postupy
+              href: perf-test/rsat/rsat-best-practices.md
+            - name: Testování nerozpoznaných pomocí Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Řešení potíží
+              href: perf-test/rsat/rsat-troubleshooting.md
+        - name: Řešení vydávání pomocí služby Lifecycle Services
+          items:
+            - name: Vývoj a vydávání
+              href: lcs-solutions/lcs-solutions-app-source.md
+            - name: Fáze a uveřejnění
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
+            - name: Přidání metodologií
+              href: lcs-solutions/methodologies-lcs-solutions.md
+            - name: Nastavení knihovny Modelování podnikových procesů
+              href: lcs-solutions/business-process-modeler-libraries-lcs-solutions.md
+            - name: Migrace kódu
+              href: lcs-solutions/code-migration-lcs-solutions.md
+            - name: Ověření aplikací
+              href: lcs-solutions/app-validation-lcs-solutions.md
+            - name: Zpracování a spotřeba datových balíčků
+              href: lcs-solutions/process-data-packages-lcs-solutions.md
+            - name: Zálohování databází řešení
+              href: lcs-solutions/database-backup-lcs-solutions.md
+            - name: Lokalizace a funkce týkající se předpisů
+              items:
+                - name: Zdroje globalizace
+                  href: lcs-solutions/country-region.md
+                - name: Klasifikace lokalizačních funkcí
+                  href: lcs-solutions/classify-localization-features.md
+                - name: Použití kontextu země nebo oblasti
+                  href: lcs-solutions/apply-country-context.md
+                - name: Informace o regulační certifikaci v názvech funkcí
+                  href: lcs-solutions/regulatory-certifications.md
+                - name: Povinné aktualizace
+                  href: lcs-solutions/regulatory-watch-communication.md
+                - name: Oddělení lokalizačních modelů
+                  href: lcs-solutions/separate-localization-models.md
+                - name: Odeslání regulačních výstrah
+                  href: lcs-solutions/submit-localization-alerts.md
+        - name: Podpora
+          items:
+            - name: Získání podpory pro Finance and Operations a Lifecycle Services
+              href: lifecycle-services/lcs-support.md
+            - name: Přehled podpory Dynamics 365
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+            - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
+              href: lifecycle-services/21vianet-support.md
+            - name: Nastavení technické podpory pro aplikace Finance and Operations
+              href: lifecycle-services/support-experience.md
+            - name: Správa zkušeností s podporou pro aplikace Finance and Operations
+              href: lifecycle-services/cloud-powered-support-lcs.md
+        - name: Správa systému
+          items:
+            - name: Domovská stránka Správa systému
+              href: sysadmin/system-administration-home-page.md
+            - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů
+              href: sysadmin/legal-terms-privacy-statement.md
+            - name: Licenční kódy a sestava konfiguračních klíčů
+              href: sysadmin/license-codes-configuration-keys-report.md
+            - name: Sdílení dat mezi společnostmi
+              href: sysadmin/cross-company-data-sharing.md
+            - name: Režim údržby
+              href: sysadmin/maintenance-mode.md
+            - name: Předkonfigurované systémové účty
+              href: sysadmin/pre-configured-system-accounts.md
+            - name: Export B2B uživatelů do Azure AD
+              href: sysadmin/implement-b2b.md
+            - name: Zabezpečení
+              items:
+                - name: Zabezpečení na základě rolí
+                  href: sysadmin/role-based-security.md
+                - name: Architektura zabezpečení
+                  href: sysadmin/security-architecture.md
+                - name: Šifrování v aplikacích Finance and Operations
+                  href: sysadmin/encryption.md
+                - name: Nastavení časového limitu nečinnosti
+                  href: sysadmin/session-idle-timeout.md
+                - name: Výchozí sestavy zabezpečení
+                  href: sysadmin/security-reports.md
+                - name: Vytvoření nových uživatelů
+                  href: sysadmin/tasks/create-new-users.md
+                - name: Správa relace uživatele
+                  href: sysadmin/user-session-management.md
+                - name: Hromadné importování uživatelů
+                  href: sysadmin/tasks/import-bulk-users.md
+                - name: Nastavení dělení zodpovědnosti
+                  href: sysadmin/tasks/set-up-segregation-duties.md
+                - name: Identifikace a vyřešení konfliktů v dělení zodpovědnosti
+                  href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
+                - name: Přiřazení uživatelů k rolím zabezpečení
+                  href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Import nebo export přizpůsobené konfigurace zabezpečení pomocí správy dat
+                  href: sysadmin/import-export-customized-security.md
+                - name: Diagnostika zabezpečení pro záznamy úkolů
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Rozšiřitelné zásady zabezpečení dat
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Vytvoření zásad zabezpečení
+                  href: sysadmin/create-simple-security-policy.md
+            - name: Zůstaňte v souladu s požadavky na licencování uživatelů
+              href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: Automatizace procesů
+              href: sysadmin/process-automation.md
+            - name: Dávkové zpracování
+              items:
+                - name: Přehled dávkového zpracování
+                  href: sysadmin/batch-processing-overview.md
+                - name: "Dávkové zpracování a\_dávkové servery"
+                  href: sysadmin/batch-server-overview.md
+                - name: Vytvoření dávkových úloh
+                  href: sysadmin/tasks/create-batch-job.md
+                - name: Kopírování dávkové úlohy
+                  href: sysadmin/copy-batch-job.md
+                - name: Aktivní období dávky
+                  href: sysadmin/activeperiod.md
+                - name: Podpora letního času pro aktivní období dávek
+                  href: sysadmin/batch-active-period-dst.md
+                - name: Role zabezpečení správce dávky
+                  href: sysadmin/runby.md
+                - name: Dávková úloha pro zpracování defragmentace SQL indexu
+                  href: sysadmin/batch-job-SQL-defragmentation.md
+                - name: Konfigurace dávkových výstrah
+                  href: sysadmin/alerts.md
+                - name: Vylepšené dávkové formuláře
+                  href: sysadmin/enhanced-forms.md
+                - name: Vyčištění historie dávek
+                  href: sysadmin/batch-history-cleanup.md
+                - name: Přerušení provádění dávkové úlohy
+                  href: sysadmin/batch-abort.md
+            - name: Poradce při optimalizaci
+              items:
+                - name: Přehled poradce při optimalizaci
+                  href: sysadmin/optimization-advisor-overview.md
+                - name: Vytvoření pravidel pro poradce při optimalizaci
+                  href: sysadmin/create-rules-optimization-advisor.md
+            - name: Nahlášení výpadku výroby
+              href: lifecycle-services/report-production-outage.md
+            - name: Konfigurace a správa protokolování databáze
+              href: sysadmin/configure-manage-database-log.md
+            - name: Vytvoření mezipaměti metadat OData při spuštění AOS
+              href: sysadmin/odata-warmup.md
+            - name: Nastavení klienta Azure Key Vault
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Vyčištění rutin
+              href: sysadmin/cleanuproutines.md
+        - name: 'Upgrady, aktualizace a opravy hotfix'
+          items:
+            - name: 'Zdroje upgradů, aktualizací a oprav hotfix'
+              href: migration-upgrade/upgrade-home-page.md
+            - name: Upgrade z AX 2012
+              items:
+                - name: Upgrade z AX 2012 na Finance and Operations
+                  href: migration-upgrade/upgrade-overview-2012.md
+                - name: Upgrade AX 2012 – Plánování pomocí nástroje Upgrade Analyzer
+                  href: migration-upgrade/upgrade-analyzer-tool.md
+                - name: Upgrade AX 2012 – Odhad úsilí pomocí služby upgradu kódu
+                  href: migration-upgrade/analyze-code-upgrade.md
+                - name: Upgrade AX 2012 – Nasazení ukázkového prostředí pro analýzu
+                  href: migration-upgrade/analysis-sandbox.md
+                - name: Upgrade AX 2012 – Upgrade dat ve vývojových prostředích
+                  href: migration-upgrade/data-upgrade-2012.md
+                - name: Upgrade AX 2012 - Kontrolní seznam před upgradem dat
+                  href: migration-upgrade/prepare-data-upgrade.md
+                - name: Upgrade AX 2012 - Upgrade dat v sandboxových prostředích pomocí procesu dacpac
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Upgrade AX 2012 – Upgrade dat v prostředích sandbox
+                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Upgrade AX 2012 - místní prostředí
+                  href: migration-upgrade/on-prem-upgrade-2012.md
+                - name: Upgrade AX 2012 – Přechodové testování
+                  href: migration-upgrade/upgrade-cutover-testing.md
+                - name: Upgrade AX 2012 - Úlohy po upgradu
+                  href: migration-upgrade/app-validation-process.md
+                - name: Upgrade AX 2012 – Úspěšné funkční testy
+                  href: migration-upgrade/upgrade-functional-validation.md
+                - name: Upgrade AX 2012 – Příprava pro ostré nasazení
+                  href: migration-upgrade/upgrade-go-live-prep.md
+                - name: Upgrade AX 2012 – Ostré nasazení
+                  href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Změny ovlivňující upgrade z aplikace AX 2012
+                  items:
+                    - name: Jak vytvořit jedinečný oddělovač účtové osnovy
+                      href: migration-upgrade/chart-accounts-delimiter-unique.md
+                    - name: Upgrade deníků jednoho dokladu a přecenění měny
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
+                    - name: Datový model plánování projektových zdrojů
+                      href: migration-upgrade/data-model-changes-resource-management.md
+                    - name: Změny podsystému workflowu
+                      href: migration-upgrade/workflow-subsystem.md
+                    - name: Agregace modelů použitých namísto krychlí pro analýzu
+                      href: migration-upgrade/in-memory-real-time-aggregate-models.md
+                    - name: Migrace upgradovaných krychlí prodeje do úložiště entit
+                      href: migration-upgrade/migrate-upgraded-cube-entity-store.md
+                    - name: Upgrade plánování rozpočtu
+                      href: migration-upgrade/upgrade-budget-planning.md
+            - name: Migrace dat z AX 2009
+              items:
+                - name: Migrace dat z AX 2009 do Finance and Operations
+                  href: migration-upgrade/data-migration-tool.md
+                - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
+                  href: migration-upgrade/install-dmt.md
+                - name: Migrace AX 2009 - Generování map
+                  href: migration-upgrade/generate-maps.md
+                - name: Migrace AX 2009 - Vytváření šablon
+                  href: migration-upgrade/create-package-templates-dmt.md
+                - name: Migrace AX 2009 - Vytváření skupin migrace
+                  href: migration-upgrade/create-definition.md
+                - name: Migrace AX 2009 - Export balíčků
+                  href: migration-upgrade/ax2009-upgrade-export-package.md
+                - name: Migrace AX 2009 - Import balíčků
+                  href: migration-upgrade/ax2009-upgrade-import-package.md
+            - name: "Migrace a\_upgrade kódu"
+              items:
+                - name: "Domovská stránka Migrace a\_upgrade kódu"
+                  href: migration-upgrade/code-migration-home-page.md
+                - name: Příprava na migraci kódu
+                  href: migration-upgrade/prepare-migration.md
+                - name: Konfigurace mapování Azure DevOps
+                  href: migration-upgrade/configure-vso-solution.md
+                - name: Rozdělení modelů
+                  href: dev-tools/model-split.md
+                - name: Vyřešení závislostí mezi modely pomocí delegátů
+                  href: migration-upgrade/delegates-migration.md
+            - name: Upgrade na nejnovější aktualizaci (cloud)
+              items:
+                - name: Proces přechodu na nejnovější aktualizaci
+                  href: migration-upgrade/upgrade-latest-update.md
+                - name: Cesty k One Version
+                  items:
+                    - name: Samoobslužný upgrade na nejnovější verzi
+                      href: migration-upgrade/self-service-upgrade.md
+                    - name: Opětovné sestavení a aktualizace na nejnovější verzi
+                      href: migration-upgrade/appupdate-80-81.md
+                - name: Zásady životního cyklu softwaru a cloudová vydání
+                  href: migration-upgrade/versions-update-policy.md
+                - name: Použití nejnovější aktualizace platformy na prostředí
+                  href: migration-upgrade/upgrade-latest-platform-update.md
+                - name: Upgrade dat ve vývojovém nebo ukázkovém prostředí
+                  href: migration-upgrade/upgrade-data-to-latest-update.md
+                - name: Aktualizace vývojových nástrojů
+                  href: dev-tools/update-development-tools.md
+                - name: Plánování a příprava pro kompilování kódu proti nejnovější aktualizaci
+                  href: migration-upgrade/compile-considerations.md
+            - name: Upgrade na nejnovější aktualizaci (místní)
+              items:
+                - name: Použití aktualizací na místní nasazení
+                  href: deployment/apply-updates-on-premises.md
+                - name: Opětovné nasazení místního nasazení
+                  href: deployment/redeploy-on-prem.md
+                - name: Proces místního upgradu pro místní prostředí
+                  href: migration-upgrade/on-prem-upgrade.md
+            - name: Opravy hotfix
+              items:
+                - name: Získání aktualizací z Lifecycle Services
+                  href: migration-upgrade/download-hotfix-lcs.md
+                - name: Použití aktualizací na cloudová prostředí
+                  href: deployment/apply-deployable-package-system.md
+                - name: Instalace oprav hotfix metadat ve vývojových prostředích
+                  href: migration-upgrade/install-metadata-hotfix-package.md
+                - name: Služba Patch Reporting Services v samostatných prostředích
+                  href: migration-upgrade/patch-reporting-service-environment.md
+                - name: Aktualizace vývojových nástrojů Visual Studio
+                  href: dev-tools/update-development-tools.md
+            - name: Zastaralé
+              items:
+                - name: Odstraněné nebo zastaralé funkce
+                  href: migration-upgrade/deprecated-features.md
+                - name: Zastarání metod a prvků metadat
+                  href: migration-upgrade/deprecation-deletion-apis.md
+                - name: Zastaralá API
+                  href: migration-upgrade/deprecated-apis.md
+        - name: Vývoj uživatelského rozhraní
+          items:
+            - name: Domovská stránka Vývoj uživatelského rozhraní
+              href: user-interface/user-interface-development-home-page.md
+            - name: Kurzy
+              items:
+                - name: Vytvoření formuláře Typ nákladů na vypůjčení
+                  href: user-interface/build-rental-charge-type-form.md
+                - name: Vytvoření formuláře Zákazník
+                  href: user-interface/build-customer-form.md
+                - name: Vytvoření navigace
+                  href: user-interface/build-navigation.md
+                - name: Úprava pracovního prostoru
+                  href: user-interface/build-workspace.md
+            - name: Formuláře
+              items:
+                - name: Navigační koncepty
+                  href: user-interface/page-navigation.md
+                - name: Rozvržení stránky ve webovém klientovi
+                  href: user-interface/page-layout.md
+                - name: Font symbolů Dynamics
+                  href: user-interface/symbol-font.md
+                - name: Uložená zobrazení
+                  href: ../fin-ops/get-started/saved-views.md
+                - name: 'Vytváření formulářů, které plně využívají uložená zobrazení'
+                  href: user-interface/understanding-saved-views.md
+                - name: Testovací formuláře používající vlastní vzory
+                  href: user-interface/testing-forms-custom-patterns.md
+                - name: 'Vytvoření zabezpečených URL adres, které lze sdílet (hluboký odkaz)'
+                  href: user-interface/create-deep-links.md
+                - name: 'Dostupnost ve formulářích, produktech a ovládacích prvcích'
+                  href: user-interface/enable-accessibility.md
+                - name: Přizpůsobení popisů pole
+                  href: user-interface/customize-field-help.md
+            - name: Ovládací prvky
+              items:
+                - name: Ovládací prvky akcí
+                  href: user-interface/action-controls.md
+                - name: Vstupní ovládací prvky a velikosti sloupců mřížky
+                  href: user-interface/sizing-input-controls-grid-columns.md
+                - name: Podpora zaškrtávacích políček ve stromových ovládacích prvcích
+                  href: user-interface/check-box-tree-controls.md
+                - name: Možnosti filtrování
+                  href: user-interface/filtering.md
+                - name: Ovládací prvek hostitele Power Apps
+                  href: user-interface/powerapps-host-control.md
+            - name: Správa okna
+              items:
+                - name: Migrace kódu kontextové nabídky
+                  href: migration-upgrade/code-migration-context-menus.md
+                - name: Migrace logiky dvojitého kliknutí myší
+                  href: migration-upgrade/code-migration-double-click.md
+                - name: Zadávání kontextových dat pro vyhledávání
+                  href: user-interface/contextual-data-entry-lookups.md
+                - name: Ovládací prvek HierarchyViewer
+                  href: user-interface/hierarchy-viewer-control.md
+                - name: Ovládací prvky vyhledávání
+                  href: user-interface/lookups-controls.md
+                - name: Ovládací prvek odeslání souboru
+                  href: user-interface/file-upload-control.md
+                - name: Systémem definovaná tlačítka
+                  href: user-interface/system-defined-buttons.md
+                - name: Obrázky na stránce nebo v mřížce
+                  href: user-interface/images-form-grid.md
+                - name: 'Písmo a barvy pozadí pro ovládací prvky zadávání, tabulek a mřížek'
+                  href: user-interface/specify-color-font-background-controls.md
+                - name: Podpora jazyků s psaním zprava doleva a obousměrný text
+                  href: user-interface/bidirectional-support.md
+                - name: Vytvoření ikon pro dlaždice pracovního prostoru
+                  href: user-interface/create-icons-workspace-tiles.md
+                - name: Veřejné JavaScript API pro rozšířitelné ovládací prvky
+                  href: user-interface/public-javascript-apis.md
+                - name: Kontrolní seznam
+                  href: user-interface/control-checklist.md
+            - name: Zprávy
+              items:
+                - name: Popisky funkcí
+                  href: user-interface/feature-callouts.md
+                - name: Dialogová okna posuvníku a MessageBox
+                  href: user-interface/slider-messagebox.md
+                - name: 'API pro centrum zpráv, panel zpráv a podrobnosti o zprávách'
+                  href: user-interface/messaging-api-center-bar-details.md
+                - name: 'Časté dotazy pro centrum zpráv, panel zpráv a podrobnosti o zprávách'
+                  href: user-interface/messaging-user.md
+            - name: Pokyny pro vzor formuláře
+              items:
+                - name: Vzory formuláře pro migrované formuláře
+                  href: user-interface/select-form-pattern.md
+                - name: "Styly a\_vzory formulářů"
+                  href: user-interface/form-styles-patterns.md
+                - name: Doplňky Visual Studio podporující vzory formulářů
+                  href: user-interface/form-pattern-add-ins.md
+            - name: Vzory formulářů
+              items:
+                - name: Pokyny k obecným formulářům
+                  href: user-interface/general-form-guidelines.md
+                - name: Vzor formuláře Hlavní podrobnosti
+                  href: user-interface/details-master-form-pattern.md
+                - name: Vzor formuláře Podrobnosti transakce
+                  href: user-interface/details-transaction-form-pattern.md
+                - name: Vzory formuláře Seznam částí
+                  href: user-interface/section-list-form-pattern.md
+                - name: Vzor formuláře Stránka seznamu
+                  href: user-interface/list-page-form-pattern.md
+                - name: Vzor formuláře Jednoduché podrobnosti
+                  href: user-interface/simple-details-form-pattern.md
+                - name: Vzor formuláře Jednoduchý seznam a podrobnosti
+                  href: user-interface/simple-list-details-form-pattern.md
+                - name: Vzor formuláře Jednoduchý seznam
+                  href: user-interface/simple-list-form-pattern.md
+                - name: Vzor formuláře Obsah
+                  href: user-interface/table-of-contents-form-pattern.md
+                - name: Vzor formuláře Dvojitá úloha
+                  href: user-interface/task-double-form-pattern.md
+                - name: Vzor formuláře Jedna úloha
+                  href: user-interface/task-single-form-pattern.md
+                - name: Vzor formuláře Průvodce
+                  href: user-interface/wizard-form-pattern.md
+                - name: Vzor formuláře Pracovní prostor
+                  href: user-interface/workspace-form-pattern.md
+            - name: Vzory sekundárních formulářů
+              items:
+                - name: Vzor formuláře Rozšířený výběr
+                  href: user-interface/advanced-selection-form-pattern.md
+                - name: Vzor formuláře Dialogové okno
+                  href: user-interface/dialog-form-pattern.md
+                - name: Vzor formuláře Zrušení dialogového okna
+                  href: user-interface/drop-dialog-form-pattern.md
+                - name: Vzor formuláře Vyhledávání
+                  href: user-interface/lookup-form-pattern.md
+                - name: Vzory formuláře okna s fakty
+                  href: user-interface/factbox-form-patterns.md
+            - name: Podvzory
+              items:
+                - name: Podvzor vlastní skupiny filtrů
+                  href: user-interface/custom-filter-group-subpattern.md
+                - name: Podvzor ovládacího prvku zadávání dimenze
+                  href: financial/dimension-entry-control-subpattern.md
+                - name: Podvzor tvůrce výrazů dimenze
+                  href: financial/dimension-expression-builder-subpattern.md
+                - name: Podvzor polí a skupin polí
+                  href: user-interface/fields-field-groups-subpattern.md
+                - name: Podvzory filtrů a panelů nástrojů
+                  href: user-interface/filters-toolbar-subpattern.md
+                - name: Podvzor vyplnění textu
+                  href: user-interface/fill-text-subpattern.md
+                - name: Podvzor vodorovných polí a skupin tlačítek
+                  href: user-interface/horizontal-fields-buttons-group-subpattern.md
+                - name: Podvzor náhledu obrázku
+                  href: user-interface/image-preview-subpattern.md
+                - name: Podvzor panelu seznamu
+                  href: user-interface/list-panel-subpattern.md
+                - name: Podvzor vnořeného jednoduchého seznamu a podrobnosti
+                  href: user-interface/nested-simple-list-details-subpattern.md
+                - name: Vzor formuláře grafu sekcí
+                  href: user-interface/section-chart-form-pattern.md
+                - name: Podvzor části Power BI
+                  href: user-interface/section-powerbi-subpattern.md
+                - name: Podvzor odkazů souvisejících se sekcí
+                  href: user-interface/section-related-links-subpattern.md
+                - name: Podvzor skládaného grafu sekce
+                  href: user-interface/section-stacked-chart-subpattern.md
+                - name: Podvzor části seznamu s kartami
+                  href: user-interface/section-tabbed-list-subpattern.md
+                - name: Podvzor části Dlaždice
+                  href: user-interface/section-tiles-subpattern.md
+                - name: Podvzor tabulkových polí
+                  href: user-interface/tabular-fields-subpattern.md
+                - name: Podvzor panelů nástrojů a polí
+                  href: user-interface/toolbar-fields-subpattern.md
+                - name: Podvzor panelů nástrojů a seznamu
+                  href: user-interface/toolbar-list-subpattern.md
+                - name: Podvzor skupiny filtrů stránky pracovního prostoru
+                  href: user-interface/workspace-filter-group-subpattern.md
+            - name: Rozšiřitelnost ovládacích prvků
+              items:
+                - name: Vytvoření rozšířitelných ovládacích prvků
+                  href: user-interface/build-extensible-control.md
+                - name: Klávesové zkratky pro rozšířitelné ovládací prvky
+                  href: user-interface/keyboard-shortcuts-controls.md
+                - name: Odkaz na programování rozšířitelných ovládacích prvků
+                  href: user-interface/extensible-control-programming-reference.md
+                - name: Rozšiřitelnost ovládacích prvků
+                  href: user-interface/control-extensibility.md
+                - name: Vytvoření lokalizovatelných štítků
+                  href: user-interface/create-localizable-labels-client.md
+                - name: Pokyny pro rozložení rozšířitelných ovládacích prvků
+                  href: user-interface/extensible-controls-layout.md
+                - name: 'Kontrola textu, který generuje záznamník úloh ke kontrole'
+                  href: user-interface/task-recorder-control-text.md
+            - name: Vytvoření pracovních prostorů
+              items:
+                - name: Vytvoření provozních pracovních prostorů
+                  href: user-interface/build-workspaces.md
+                - name: Ukládání seznamů a dlaždic do mezipaměti pro pracovní prostory
+                  href: user-interface/tile-list-caching-workspaces.md
+            - name: Záznamník úloh
+              items:
+                - name: Zdroje záznamníku úloh
+                  href: user-interface/task-recorder.md
+                - name: Rychlý odkaz na záznamník úloh
+                  href: user-interface/task-recorder-quick-reference.md
+                - name: Vytváření dokumentace nebo školení pomocí záznamů úloh
+                  href: user-interface/task-recorder-training-docs.md
+    - name: Dynamics 365 Supply Chain Management
+      href: ../../supply-chain/index.md
+    - name: Dynamics 365 Finance
+      href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md

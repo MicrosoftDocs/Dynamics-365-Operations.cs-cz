@@ -1,0 +1,695 @@
+- name: Dynamics 365 Human Resources
+  href: hr-welcome.md
+  items:
+    - name: Co je nového
+      items:
+        - name: Co je nového a co se změnilo v Human Resources
+          href: hr-admin-whats-new.md
+        - name: 2. prosince 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. října 2020
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. října 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. září 2020
+          href: hr-whats-new-2020-09-26.md
+        - name: 16. září 2020
+          href: hr-whats-new-2020-09-16.md
+        - name: 3. září 2020
+          href: hr-whats-new-2020-09-03.md
+        - name: 20. srpna 2020
+          href: hr-whats-new-2020-08-20.md
+        - name: 6. srpna 2020
+          href: hr-whats-new-2020-08-06.md
+        - name: 23. července 2020
+          href: hr-whats-new-2020-07-23.md
+        - name: 8. července 2020
+          href: hr-whats-new-2020-07-08.md
+        - name: 25. června 2020
+          href: hr-whats-new-2020-06-23.md
+        - name: 11. června 2020
+          href: hr-whats-new-2020-06-11.md
+        - name: 28. května 2020
+          href: hr-whats-new-2020-05-28.md
+        - name: 14. května 2020
+          href: hr-whats-new-2020-05-14.md
+        - name: 1. května 2020
+          href: hr-whats-new-2020-05-01.md
+        - name: Archivy novinek 2020
+          items:
+            - name: 13. dubna 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3. dubna 2020
+              href: hr-whats-new-2020-04-03.md
+            - name: 24. března 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. března 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. března 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. března 2020
+              href: hr-whats-new-2020-03-03.md
+            - name: 25. února 2020
+              href: hr-whats-new-2020-02-25.md
+            - name: 18. února 2020
+              href: hr-whats-new-2020-02-18.md
+            - name: 12. února 2020
+              href: hr-whats-new-2020-02-12.md
+            - name: 7. února 2020
+              href: hr-whats-new-2020-02-07.md
+            - name: 3. února 2020
+              href: hr-whats-new-2020-02-03.md
+    - name: Průvodce správce
+      items:
+        - name: Přehled
+          href: hr-admin-overview.md
+        - name: Systémové požadavky
+          href: hr-admin-system-requirements.md
+        - name: Nastavení a správa instancí
+          items:
+            - name: Zřízení Human Resources
+              href: hr-admin-setup-provision.md
+            - name: Kopírovat instanci
+              href: hr-admin-setup-copy-instance.md
+            - name: Odebrání instance
+              href: hr-admin-setup-remove-instance.md
+            - name: Aktualizace procesu
+              href: hr-admin-setup-update-process.md
+        - name: Nastavení integrace dat
+          items:
+            - name: Volba technologie integrace dat
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurovat integraci se službou Common Data Service
+              href: hr-admin-integration-common-data-service.md
+            - name: Entity Common Data Service
+              href: hr-developer-entities.md
+            - name: Konfigurace virtuálních entit Common Data Service
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Konfigurace integrace s aplikací Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurace integrace s aplikací Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Vytvoření aplikace pro export opakujících se dat
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integrace s LinkedIn Talent Hub
+              href: hr-admin-integration-linkedin.md
+            - name: Integrace s Office
+              items:
+                - name: Kurz integrace s Office
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aktualizace dat entity v aplikaci Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření zkušeností s otevíráním v Excelu
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+                - name: Řešení problémů s integrací s Office
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Konfigurace správy dat
+          items:
+            - name: Přehled Data Management Framework
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datové entity
+              items:
+                - name: Přehled datových entit
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace datových projektů
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Zkopírování dat konfigurace mezi společnostmi nebo právnickými osobami
+                  items:
+                    - name: Přehled kopírování konfiguračních dat
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Balíčky dat konfigurace
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Balíčky dat konfigurace (pouze vydání z července 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Šablony dat konfigurací
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sledování změn entity
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Hledání informací o standardních datových entitách
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Šablony dat s více listy
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Povolení sledování změn pro entity
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurační klíče a datové entity
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Balíčky dat konfigurace
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: "Úlohy importu a\_exportu dat"
+              items:
+                - name: "Přehled úloh importu a\_exportu dat"
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vývoj pro datové entity
+              items:
+                - name: Návrh principů a osvědčených postupů pro datové entity
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytváření nových datových entit
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vlastnosti datových entit
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytváření vypočtených sloupců a virtuálních polí
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Chování napříč společnostmi
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Zpracování kódů zemí/oblastí
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vzory dědičnosti
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Pravidla průvodce datovými entitami
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vlastnosti metadat
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Ověření, výchozí hodnoty a nemapovaná pole'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: "Zabezpečení a\_datové entity"
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Použití testovacích nástrojů služeb třetí strany
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Vytvoření entit pouze ke čtení, které zveřejňují pouze finanční dimenze'
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Použití vlastní databáze
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimalizace dávkových úloh přinesení vlastního zařízení
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Automatizované obnovení úložiště entit
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Automatizace datové úlohy
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Pracovní prostor kontrolního seznamu ověřování dat
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Popisy chyb správy dat
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Správa funkcí
+          href: hr-admin-manage-features.md
+        - name: Konfigurace a správa protokolování databáze
+          href: hr-admin-database-logging.md
+        - name: Prozkoumání uživatelského rozhraní
+          items:
+            - name: Prvky uživatelského rozhraní
+              href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Funkce usnadnění přístupu
+              href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
+            - name: Přehled správy funkcí
+              href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Často kladené dotazy ke klientovi
+              href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vyhledání akce
+              href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Pokročilé filtrování a syntaxe dotazu
+              href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurace a filtrování pracovních prostorů
+              href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
+            - name: Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně
+              href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
+            - name: Klávesové zkratky
+              href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
+            - name: Změna bannerů a obrázků s logem pro právnické osoby
+              href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
+            - name: Hledání za účelem navigace
+              href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Přizpůsobení uživatelského prostředí
+              href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
+            - name: Uložená zobrazení
+              href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vytvoření vlastních polí a práce s nimi
+              href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vložení aplikace plátna z Power Apps
+              href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
+            - name: Nalezení informací pomocí vyhledávání
+              href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
+            - name: Změna data pro relaci
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
+            - name: Nastavení upřednostňovaného časového pásma uživatele
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vysvětlení služeb Lifecycle Services
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Aplikace Human Resources v Teams
+          href: hr-admin-teams-leave-app.md
+        - name: Příprava pro ostré nasazení
+          href: hr-admin-go-live-prepare.md
+        - name: Často kladené dotazy týkající se ostrého nasazení
+          href: hr-admin-go-live-faq.md
+        - name: Zdroje dokumentace
+          items:
+            - name: Systém nápovědy
+              href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: "Připojení k\_systému nápovědy"
+              href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+            - name: Přehled vlastní nápovědy
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Zobrazení a export popisů polí
+              href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Záznamník úloh
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vytváření dokumentace nebo školení pomocí záznamníku úloh
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Řešení problémů s Human Resources
+          items:
+            - name: Získání podpory
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimalizace výkonu naplánováním dávkových úloh po hodinách
+              href: hr-admin-troubleshooting-batch-jobs.md
+            - name: Optimalizace výkonu pomocí úloh automatického vyčištění
+              href: hr-admin-troubleshooting-batch-history.md
+            - name: Analytické sestavy nejsou aktualizovány
+              href: hr-admin-troubleshooting-analytic-reports.md
+            - name: Nelze vytvořit prostředí v centru pro správu Power Apps
+              href: hr-admin-troubleshooting-power-apps.md
+            - name: Odpojení klienta
+              href: hr-admin-troubleshooting-disconnect.md
+            - name: Zabránění zkrácení textu v hierarchii pozic
+              href: hr-admin-troubleshooting-truncate.md
+            - name: Spuštění procesu kompenzace
+              href: hr-admin-troubleshooting-compensation.md
+            - name: Uložení průvodce záznamem úloh do LCS
+              href: hr-admin-troubleshooting-task-guide.md
+            - name: Přístup k soukromým adresám podle role zabezpečení
+              href: hr-admin-troubleshooting-private-addresses.md
+            - name: Human Resources se nezobrazují v aplikacích Dynamics 365
+              href: hr-admin-troubleshooting-not-in-apps.md
+            - name: Možnosti vykazování
+              href: hr-admin-troubleshooting-reporting.md
+            - name: Často kladené otázky k integraci
+              href: hr-admin-troubleshooting-integration.md
+    - name: Průvodce vývojáře
+      items:
+        - name: Přehled
+          href: hr-developer-overview.md
+        - name: Rozšíření o Power Apps a Power Automate
+          href: hr-developer-power-apps.md
+        - name: Entity Common Data Service
+          href: hr-developer-entities.md
+        - name: Vlastní pole
+          href: hr-developer-custom-fields.md
+        - name: Nastavení integrace dat
+          items:
+            - name: Volba technologie integrace dat
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurovat integraci se službou Common Data Service
+              href: hr-admin-integration-common-data-service.md
+            - name: Konfigurace integrace s aplikací Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurace integrace s aplikací Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Vytvoření aplikace pro export opakujících se dat
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integrace s Office
+              items:
+                - name: Kurz integrace s Office
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Aktualizace dat entity v aplikaci Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Vytvoření zkušeností s otevíráním v Excelu
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Řešení problémů s integrací s Office
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Odkaz na API rozhraní entity
+          items:
+            - name: Ověřování
+              href: hr-developer-api-authentication.md
+            - name: Entity
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: Přehled MyLeaveRequests
+                      href: hr-developer-api-myleaverequests-overview.md
+                    - name: Odeslání žádosti o volno do workflow
+                      href: hr-developer-api-myleaverequests-submit.md
+    - name: Uživatelská příručka
+      items:
+        - name: Přehled
+          href: hr-hrpro-overview.md
+        - name: Nastavení Human Resources
+          items:
+            - name: Konfigurace parametrů Human Resources
+              href: hr-setup-parameters.md
+            - name: Konfigurace sdílených parametrů Human Resources
+              href: hr-setup-shared-parameters.md
+            - name: Pochopení polí data a času
+              href: hr-setup-date-time-fields.md
+        - name: Konfigurace nastavení organizace
+          items:
+            - name: Domovská stránka Správa organizace
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+            - name: Číselné řady
+              items:
+                - name: Přehled číselných řad
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Nastavení číselných řad na jednotlivém základě
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+                - name: Nastavení číselných řad pomocí průvodce
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+            - name: "Organizace a\_organizační hierarchie"
+              items:
+                - name: "Přehled organizací a\_organizačních hierarchií"
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+                - name: Plánování organizační hierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření organizační hierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvořit právnické osoby
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření provozních jednotek
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+            - name: Globální adresář
+              items:
+                - name: Přehled globálního adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Plán pro globální adresář a další adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace globálního adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Často kladené dotazy o adresáři
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace adresářů
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+            - name: Systém workflow
+              items:
+                - name: Přehled systému workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+                - name: Architektura systému workflowu
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+                - name: Prvky workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+                - name: Akce workflowu
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření workflow
+                  items:
+                    - name: Přehled vytvoření workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace vlastností workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace ručních úkolů
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace automatizovaných úkolů
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace procesu schválení
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace kroků schválení
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace ručních rozhodnutí
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace podmíněných rozhodnutí
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace paralelních aktivit
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace paralelních větví
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurace workflow položky řádku
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace dávkových úloh zpracování zprávy workflowu jako kritických
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+                - name: Delegování položek práce ve workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Zobrazení historie workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace systému pro odeslání e-mailů souvisejících s workflow uživatelům
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Typy workflow
+                  items:
+                    - name: Vytvoření typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Kontrolní seznam typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Vytvoření kategorie workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Vytvoření dotazu pro typ workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Vytvoření nového typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Vytvoření třídy dokumentu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Vytvoření třídy SubmitToWorkflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Přidružení třídy dokumentu workflow k typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sestava typů workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Workflow – Často kladené otázky
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+            - name: Výstrahy
+              items:
+                - name: Přehled výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytváření pravidel výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+                - name: Dávkové zpracování výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+                - name: Emailové oznámení výstrah klientovi
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+            - name: Elektronické podpisy
+              items:
+                - name: Přehled elektronických podpisů
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Nastavení elektronických podpisů
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
+            - name: Správa případů
+              items:
+                - name: Přehled správy případů
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Plánování bezpečnosti případu, procesů a kategorií'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Šablony záznamu
+              items:
+                - name: Přehled šablon záznamu
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření šablony záznamů
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+                - name: "Vytvoření nového záznamu s\_použitím šablony záznamu"
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurace správy dokumentů
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurace a odeslání e-mailu
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+            - name: Údaje data a času a časová pásma
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+        - name: Správa zaměstnanců
+          items:
+            - name: Organizování zaměstnanců
+              href: hr-personnel-departments-jobs-positions.md
+            - name: Nastavení komponent práce
+              href: hr-personnel-jobs.md
+            - name: Definování oddělení
+              href: hr-personnel-define-departments.md
+            - name: Přidání oddělení do hierarchie
+              href: hr-personnel-add-department-hierarchy.md
+            - name: Definování prací
+              href: hr-personnel-define-jobs.md
+            - name: Vytvoření kalendáře pracovní doby
+              href: hr-personnel-create-working-time-calendar.md
+            - name: Nábor uchazečů o práci
+              href: hr-personnel-recruit.md
+            - name: Často kladené dotazy k akcím personálu
+              href: hr-personnel-actions-faq.md
+            - name: Použití pracovního postupu ke správě informací o zaměstnanci
+              href: hr-workflow-manage-employee-information.md
+            - name: Zobrazení a správa změn adres
+              href: hr-personnel-view-address-changes.md
+            - name: Úprava vztahů podřízenosti pro určitou pozici
+              href: hr-personnel-modify-reporting-relationships-position.md
+            - name: "Zadávání informací o\_pracovnících"
+              href: hr-personnel-enter-worker-information.md
+            - name: Zapůjčení položek pracovníkům
+              href: hr-personnel-loan-item-worker.md
+            - name: Vytvoření položek výpůjček
+              href: hr-personnel-create-loan-items.md
+            - name: Správa položek výpůjček
+              href: hr-personnel-loan-items.md
+            - name: Vypracování plánu kariérního postupu
+              href: hr-personnel-develop-succession-plan.md
+            - name: Projekty hromadného zařazení
+              href: hr-personnel-mass-hire-projects.md
+            - name: Vytvoření projektu hromadného zařazení
+              href: hr-personnel-create-mass-hire-project.md
+            - name: Nastavení pozic
+              href: hr-personnel-set-up-positions.md
+            - name: Nastavení informací o zraněních a onemocněních
+              href: hr-personnel-set-up-injury-illness-information.md
+            - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
+              href: hr-personnel-maintain-employee-injury-illness-information.md
+        - name: Nastavení plánů kompenzace
+          items:
+            - name: Přehled plánů kompenzací
+              href: hr-compensation-overview.md
+            - name: Nastavení kompenzačních mřížek
+              href: hr-compensation-grids.md
+            - name: Vývoj struktury a plánu kompenzace
+              href: hr-compensation-structure.md
+            - name: Vytvoření plánů fixní kompenzace
+              href: hr-compensation-fixed-plans.md
+            - name: Vytvoření plánů variabilní kompenzace
+              href: hr-compensation-variable-plans.md
+            - name: "Přihlášení zaměstnanců k\_plánu fixní kompenzace"
+              href: hr-compensation-enroll-employees-fixed.md
+            - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
+              href: hr-compensation-enroll-employees-variable.md
+            - name: Definování procesu kompenzací a výpočet výsledků
+              href: hr-compensation-define-process.md
+            - name: Zpracování plánů kompenzace
+              href: hr-compensation-process.md
+        - name: Správa zaměstnaneckých výhod
+          items:
+            - name: Správa zaměstnaneckých výhod
+              items:
+                - name: Přehled správy zaměstnaneckých výhod
+                  href: hr-benefits-management-overview.md
+                - name: Konfigurace správy zaměstnaneckých výhod
+                  items:
+                    - name: Konfigurace parametrů správy zaměstnaneckých výhod podle společnosti
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Nastavení parametrů správy zaměstnaneckých výhod a samoobslužných parametrů zaměstnanců pro všechny společnosti
+                      href: hr-benefits-setup-parameters.md
+                    - name: Konfigurace možností a pravidel způsobilosti
+                      href: hr-benefits-setup-eligibility-rules.md
+                    - name: Konfigurace možností způsobilosti osobních kontaktů
+                      href: hr-benefits-setup-contact-eligibility-options.md
+                    - name: Vytvoření možností pokrytí
+                      href: hr-benefits-setup-coverage-options.md
+                    - name: Nastavení frekvencí platby
+                      href: hr-benefits-setup-payment-frequencies.md
+                    - name: Konfigurace typů životních událostí
+                      href: hr-benefits-setup-life-event-types.md
+                    - name: Vytvoření typů plánu
+                      href: hr-benefits-setup-plan-types.md
+                    - name: Nastavení kódů důvodů
+                      href: hr-benefits-setup-reason-codes.md
+                    - name: Nastavení kódů úrovně
+                      href: hr-benefits-setup-tier-codes.md
+                    - name: Konfigurace sazeb
+                      href: hr-benefits-setup-rates.md
+                    - name: Konfigurace srážek
+                      href: hr-benefits-setup-deductions.md
+                    - name: Konfigurace dnů čekání
+                      href: hr-benefits-setup-waiting-days.md
+                    - name: Konfigurace období čekání
+                      href: hr-benefits-setup-waiting-periods.md
+                    - name: Nastavení pravidel zaokrouhlování
+                      href: hr-benefits-setup-rounding-rules.md
+                    - name: Vytvoření kategorií zaměstnání
+                      href: hr-benefits-setup-employment-categories.md
+                    - name: Nastavení typů zaměstnání
+                      href: hr-benefits-setup-employment-types.md
+                    - name: Konfigurace samoobsluhy pro zaměstnance
+                      href: hr-benefits-setup-employee-self-service.md
+                - name: Vytvoření plánů zaměstnaneckých výhod
+                  items:
+                    - name: Nastavení plánů zaměstnaneckých výhod
+                      href: hr-benefits-plans-setup.md
+                    - name: Nastavení programů flexibilních kreditů
+                      href: hr-benefits-plans-flex-credit-programs.md
+                - name: Zpracování plánů zaměstnaneckých výhod
+                  items:
+                    - name: Zpracování způsobilosti k registraci
+                      href: hr-benefits-process-enrollment-eligibility.md
+                    - name: Zpracování životních událostí
+                      href: hr-benefits-process-life-events.md
+                    - name: Zpracování změn životních událostí
+                      href: hr-benefits-process-life-event-changes.md
+                    - name: Zpracování způsobilosti k životním událostem
+                      href: hr-benefits-process-life-event-eligibility.md
+                    - name: Zpracování změn sazby
+                      href: hr-benefits-process-rate-changes.md
+            - name: Definování a správa programu zaměstnaneckých výhod
+              href: hr-benefits-manage-program.md
+            - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
+              href: hr-benefits-eligibility-policies.md
+            - name: Proces nároku na zaměstnaneckou výhodu
+              href: hr-benefits-eligibility-process.md
+            - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
+              href: hr-benefits-define-eligibility-rules.md
+            - name: Definování programu zaměstnaneckých výhod
+              href: hr-benefits-deliver-employee-benefits-program.md
+            - name: Vytvoření nových zaměstnaneckých výhod
+              href: hr-benefits-create.md
+            - name: Registrace pracovníků k zaměstnaneckým výhodám
+              href: hr-benefits-enroll-workers.md
+            - name: Správa dat vypršení platnosti zaměstnaneckých výhod
+              href: hr-benefits-expiration-dates.md
+            - name: Generování ACA sestav
+              href: hr-benefits-aca-reports.md
+        - name: Správa pracovního volna a absencí
+          items:
+            - name: Přehled
+              href: hr-leave-and-absence-overview.md
+            - name: Konfigurace parametrů pracovního volna a absence
+              href: hr-leave-and-absence-parameters.md
+            - name: Vytvoření kalendáře pracovní doby
+              href: hr-leave-and-absence-working-time-calendar.md
+            - name: Vytvoření workflow žádosti o pracovní volno
+              href: hr-leave-and-absence-workflow.md
+            - name: Konfigurace typů pracovního volna a absence
+              href: hr-leave-and-absence-types.md
+            - name: Vytvoření plánu pracovního volna a absence
+              href: hr-leave-and-absence-plans.md
+            - name: Přiřazení pracovníků k plánu pracovního volna
+              href: hr-leave-and-absence-enroll.md
+            - name: Časově rozlišení plánů pracovního volna a absence
+              href: hr-leave-and-absence-accrue.md
+            - name: Přerušit pracovní volno
+              href: hr-leave-and-absence-suspend-leave.md
+            - name: Žádost o pracovní volno
+              href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Správa pracovního volna zaměstnanců
+              href: hr-leave-and-absence-manage-employee-leave.md
+            - name: Zobrazení analýz pro pracovní volno a absenci
+              href: hr-leave-and-absence-analytics.md
+            - name: Správa žádostí o pracovní volno a absenci
+              href: hr-employee-self-service-manage-requests.md
+            - name: Žádost o volno
+              href: hr-employee-self-service-request-time-off.md
+            - name: Zobrazení kalendáře týmu a společnosti
+              href: hr-employee-self-service-calendar.md
+            - name: Správa zásad nákupu a prodeje pracovního volna
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Vytvoření pracovních postupů nákupu a prodeje pracovního volna
+              href: hr-leave-and-absence-buy-sell-workflow.md
+            - name: Nákup a prodej pracovního volna
+              href: hr-employee-self-service-buy-sell-leave.md
+        - name: Správa žádostí o dovolenou v aplikaci Teams
+          href: hr-teams-leave-app.md
+        - name: Rozvoj zaměstnanců
+          items:
+            - name: Přehled řízení výkonnosti
+              href: hr-develop-performance-management-overview.md
+            - name: Vyrovnání dovedností zaměstnanců
+              href: hr-develop-skills.md
+            - name: Přidání do deníku výkonnosti
+              href: hr-develop-add-performance-journal.md
+            - name: Vytvoření cíle
+              href: hr-develop-create-goal.md
+            - name: Vytvoření kontroly výkonnosti
+              href: hr-develop-create-performance-review.md
+        - name: Vytvořit kurzy
+          items:
+            - name: Nastavení školicích kurzů
+              href: hr-learning-courses.md
+            - name: Přehled dotazníků
+              href: hr-learning-questionnaires.md
+            - name: Návrh dotazníků
+              href: hr-learning-design-questionnaires.md
+            - name: Distribuce a plánování dotazníků
+              href: hr-learning-distribute-questionnaires.md
+            - name: "Distribuce dotazníků s\_použitím plánování"
+              href: hr-learning-distribute-questionnaires-scheduling.md
+            - name: Zobrazit výsledky dotazníku
+              href: hr-learning-evaluate-questionnaire-results.md
+            - name: Analýza výsledků dotazníku
+              href: hr-learning-analyze-questionnaire-results.md
+            - name: "Vytvoření dotazu s\_otevřeným koncem"
+              href: hr-learning-create-open-ended-question.md
+            - name: "Vytvoření dotazu s\_uzavřeným koncem"
+              href: hr-learning-create-closed-ended-question.md
+            - name: Vytvoření závislé otázky
+              href: hr-learning-depending-question.md
+        - name: Nastavení samoobsluhy pro zaměstnance a manažera
+          items:
+            - name: Přehled samoobsluhy pro zaměstnance a manažera
+              href: hr-employee-manager-self-service-overview.md
+            - name: Vytváření vlastních odkazů v samoobsluze pro manažery
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: Změna názvu samoobslužného pracovního prostoru zaměstnance
+              href: hr-employee-self-service-workspace-name.md
+            - name: Úprava osobních informací
+              href: hr-employee-manager-self-service-edit-personal-information.md

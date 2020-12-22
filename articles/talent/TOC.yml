@@ -1,0 +1,256 @@
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
+  items:
+    - name: Začínáme
+      items:
+        - name: Začínáme s aplikací Talent
+          href: talent-get-started.md
+        - name: Co je nového a co se změnilo v aplikaci Talent
+          href: whats-new.md
+          items:
+            - name: 1. září 2020
+              href: whats-new-talent-september-01-2020.md
+            - name: 21. ledna 2020
+              href: whats-new-talent-january-21-2020.md
+            - name: 14. ledna 2020
+              href: whats-new-talent-january-14-2020.md
+            - name: 7. ledna 2020
+              href: whats-new-talent-january-7-2020.md
+            - name: 17. prosince 2019
+              href: whats-new-talent-december-17-2019.md
+            - name: 12. prosince 2019
+              href: whats-new-talent-december-12-2019.md
+            - name: 3. prosince 2019
+              href: whats-new-talent-december-3-2019.md
+            - name: 19. listopadu 2019
+              href: whats-new-talent-november-19-2019.md
+            - name: 12. listopadu 2019
+              href: whats-new-talent-november-12-2019.md
+            - name: 5. listopadu 2019
+              href: whats-new-talent-november-5-2019.md
+            - name: 29. října 2019
+              href: whats-new-talent-oct-29-2019.md
+            - name: 23. října 2019
+              href: whats-new-talent-october-23-2019.md
+            - name: 8. října 2019
+              href: whats-new-talent-october-8-2019.md
+            - name: 1. října 2019
+              href: whats-new-talent-october-1-2019.md
+            - name: Archivy novinek 2019
+              items:
+                - name: 17. září 2019
+                  href: whats-new-talent-september-17-2019.md
+                - name: 10. září 2019
+                  href: whats-new-talent-september-12-2019.md
+                - name: 27. srpna 2019
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22. srpna 2019
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13. srpna 2019
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6. srpna 2019
+                  href: whats-new-talent-august-7-2019.md
+                - name: 30. července 2019
+                  href: whats-new-talent-july-31-2019.md
+                - name: 23. července 2019
+                  href: whats-new-talent-july-24-2019.md
+                - name: 16. července 2019
+                  href: whats-new-talent-july-16-2019.md
+                - name: 9. července 2019
+                  href: whats-new-talent-july-9-2019.md
+                - name: 2. července 2019
+                  href: whats-new-talent-july-2-2019.md
+                - name: 25. června 2019
+                  href: whats-new-talent-june-25-2019.md
+                - name: 18. června 2019
+                  href: whats-new-talent-june-18-2019.md
+                - name: 11. června 2019
+                  href: whats-new-talent-june-11-2019.md
+                - name: 4. června 2019
+                  href: whats-new-talent-june-4-2019.md
+                - name: 28. května 2019
+                  href: whats-new-talent-may-28-2019.md
+                - name: 21. května 2019
+                  href: whats-new-talent-may-21-2019.md
+                - name: 13. května 2019
+                  href: whats-new-talent-may-13-2019.md
+                - name: 6. května 2019
+                  href: whats-new-talent-may-6-2019.md
+                - name: 30. dubna 2019
+                  href: whats-new-talent-april-30-2019.md
+                - name: 25. dubna 2019
+                  href: whats-new-talent-april-25-2019.md
+                - name: 16. dubna 2019
+                  href: whats-new-talent-april-16-2019.md
+                - name: 9. dubna 2019
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2. dubna 2019
+                  href: whats-new-talent-april-2-2019.md
+                - name: 26. března 2019
+                  href: whats-new-talent-march-26-2019.md
+                - name: 20. března 2019
+                  href: whats-new-talent-march-20.md
+                - name: 14. března 2019
+                  href: whats-new-talent-march-14.md
+                - name: 5. března 2019
+                  href: whats-new-talent-march-5.md
+                - name: 27. února 2019
+                  href: whats-new-talent-feb-27.md
+                - name: 14. února 2019
+                  href: whats-new-talent-feb14.md
+                - name: 7. února 2019
+                  href: whats-new-talent-february-7.md
+                - name: 31. ledna 2019
+                  href: whats-new-talent-january-29.md
+                - name: 23. ledna 2019
+                  href: whats-new-talent-january-23.md
+                - name: 17. ledna 2019
+                  href: whats-new-talent-january-17.md
+                - name: 11. ledna 2019
+                  href: whats-new-talent-january-11.md
+            - name: Archivy novinek 2018
+              items:
+                - name: 14. prosince 2018
+                  href: whats-new-talent-december-14.md
+                - name: 6. prosince 2018
+                  href: whats-new-talent-december-6.md
+                - name: 27. listopadu 2018
+                  href: whats-new-talent-november-27.md
+                - name: 15. listopadu 2018
+                  href: whats-new-talent-november-15.md
+                - name: 31. října 2018
+                  href: whats-new-talent-october-31.md
+                - name: 19. října 2018
+                  href: whats-new-talent-october-19.md
+                - name: 15. října 2018
+                  href: whats-new-talent-october-11.md
+                - name: 8. října 2018
+                  href: whats-new-talent-october-8.md
+                - name: 1. října 2018
+                  href: whats-new-talent-october-01.md
+                - name: 24. září 2018
+                  href: whats-new-talent-september-24.md
+                - name: 17. září 2018
+                  href: whats-new-talent-september-17-2018.md
+                - name: 10. září 2018
+                  href: whats-new-talent-september-10.md
+                - name: Srpen 2018
+                  href: whats-new-talent-august2018.md
+                - name: Červenec 2018
+                  href: whats-new-talent-july2018.md
+        - name: Systémové požadavky
+          href: talent-versions-update-policy.md
+        - name: Aktualizace aplikace Talent
+          href: talent-updates.md
+        - name: Zřízení aplikace Talent
+          href: provisioning-talent.md
+        - name: Správa funkcí
+          href: access-preview-feature.md
+        - name: Zřízení aplikace Onboard
+          href: modular-app-tech-faq.md
+        - name: Export data z aplikací Attract a Onboard
+          href: attract-onboard-export-data.md
+        - name: Vložení aplikace plátna z Power Apps
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Získání podpory pro Talent
+          href: talent-support.md
+    - name: Nabírání zaměstnanců do vaší organizace s aplikací Attract
+      items:
+        - name: Volba verze aplikace Attract
+          href: attract-comprehensive-hiring.md
+        - name: Funkce a možnosti aplikace Attract
+          href: attract-overview.md
+        - name: Konfigurace nastavení systému
+          items:
+            - name: Konfigurace informací o společnosti
+              href: admin-settings-attract.md
+            - name: Nastavení oprávnění uživatele
+              href: security-attract.md
+            - name: Nastavení kariérního webu
+              href: career-site.md
+            - name: Povolit integraci s Broadbean
+              href: attract-admin-job-board-settings.md
+            - name: Konfigurace nastavení e-mailu
+              href: attract-configure-email-settings.md
+            - name: Nastavení integrace se službou LinkedIn
+              href: attract-admin-linkedin.md
+            - name: Integrace se službou LinkedIn - Často kladené dotazy
+              href: attract-linkedin-faq.md
+        - name: Vytvoření náborového procesu
+          items:
+            - name: Vytvoření šablony procesu náboru
+              href: process-templates-attract.md
+            - name: Přidání aktivit do procesu náboru
+              href: activities-attract.md
+            - name: Vytvoření šablon e-mailu
+              href: email-templates.md
+            - name: Použití analytických sestav
+              href: analytic-reports.md
+        - name: Vytvoření a publikování pracovních míst
+          items:
+            - name: Vytvoření práce
+              href: creating-jobs-attract.md
+            - name: Publikování pracovních míst na LinkedIn
+              href: attract-post-jobs-to-linkedin.md
+            - name: Publikování pracovních míst na Broadbean
+              href: posting-jobs-external.md
+            - name: Uzavření práce
+              href: attract-close-job.md
+        - name: Zazdrojování kandidátů
+          items:
+            - name: Zazdrojování kandidátů se skupinami talentů
+              href: attract-talent-pools.md
+            - name: Zazdrojování kandidátů s využitím LinkedIn Recruiter
+              href: attract-linkedin-recruiter.md
+            - name: Sledování zdrojů kandidátů
+              href: source-tracking.md
+            - name: Chytrá doporučení
+              href: intelligent-recommendations.md
+        - name: Nastavení pohovorů
+          items:
+            - name: Plánování pohovorů
+              href: interview-scheduling-feedback.md
+        - name: Vytvoření nabídky
+          items:
+            - name: Nastavení správy nabídek
+              href: offer-setup.md
+            - name: 'Vytvoření, schválení a podpis nabídek'
+              href: creating-offers.md
+        - name: Rozšiřitelnost v aplikaci Attract
+          href: extensibility-attract.md
+    - name: Uvítání nových zaměstnanců s aplikací Onboard
+      items:
+        - name: Začínáme s aplikací Onboard
+          href: create-onboarding-experience.md
+        - name: Získání aplikace Onboard
+          href: onboard-get-app.md
+        - name: Vytvoření a odeslání průvodce zaškolením
+          href: onboard-create-guide.md
+        - name: Vytvoření šablony zaškolení
+          href: onboard-create-template.md
+        - name: Úprava průvodců a šablon
+          href: onboard-edit-guides-templates.md
+        - name: Sdílení obsahu
+          href: onboard-share-template.md
+        - name: Zobrazení stavu
+          href: onboard-view-status.md
+        - name: Vytvoření náborového týmu
+          href: onboard-create-team.md
+    - name: Rozšiřitelnost
+      items:
+        - name: Sledování změn v náborových datech
+          href: process-auditing.md
+        - name: Rozšiřitelnost v aplikaci Attract
+          href: extensibility-attract.md
+        - name: Rozšíření aplikace Talent o Power Apps a Power Automate
+          href: extensibility-examples.md
+    - name: Řešení problémů s aplikacemi Attract a Onboard
+      items:
+        - name: Řešení potíží s publikováním pracovních míst v řešení LinkedIn
+          href: attract-troubleshoot-linkedin.md
+        - name: 'Uživatel má přístup k Human Resources, ale nikoliv k aplikacím Onboard nebo Attract'
+          href: user-access-core-hr.md
+        - name: Uživatelé Azure Active Directory nenalezení v nástroji pro výběr osob
+          href: people-picker-user-not-found.md
+        - name: Uživatelé aplikace Attract nemohou žádat o zaměstnání z kariérního portálu
+          href: attract-troubleshoot-career-portal.md
