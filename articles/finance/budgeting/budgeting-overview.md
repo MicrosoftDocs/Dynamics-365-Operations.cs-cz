@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975261"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528538"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 
@@ -64,7 +64,7 @@ Informace o přenesení dat plánování z jiných modulů do plánů rozpočtu 
 ## <a name="user-interface-and-reporting-capabilities"></a>Uživatelské rozhraní a možnosti vykazování
 Uživatelé mohou vytvářet plány rozpočtu buď přímo v klientovi (pomocí přizpůsobitelné stránky dokumentu plánu rozpočtu) nebo prostřednictvím aplikace Excel. Excel obsahuje několik dalších funkcí. Můžete například použít externí data jako zdroj pro plán rozpočtu, provádět vlastní výpočty a používat kontingenční tabulky a grafy společnosti Microsoft. Většinu proměnných v procesu plánování rozpočtu lze konfigurovat. 
 
-Například můžete definovat, kdo provádí rozpočtování, co se rozpočtuje a jak proces vypadá. Přestože lze pro plánování rozpočtu použít Excel, aplikace zůstává zachována jako autoritativní zdroj a pomáhá zabránit problémům kontroly rozpočtu. Periodické procesy lze použít k přenosu počátečních dat pro rozpočtování do plánu rozpočtu. Pro vytváření sestav nabízí aplikace standardní sadu stránek s dotazy, které umožňují zobrazení a analýzu dat rozpočtování. K datům plánu rozpočtu lze přistupovat prostřednictvím aplikace Management Reporter a samostatné scénáře plánu rozpočtu lze zobrazit jako sloupce v sestavě aplikace Management Reporter.
+Například můžete definovat, kdo provádí rozpočtování, co se rozpočtuje a jak proces vypadá. Přestože lze pro plánování rozpočtu použít Excel, aplikace zůstává zachována jako autoritativní zdroj a pomáhá zabránit problémům kontroly rozpočtu. Periodické procesy lze použít k přenosu počátečních dat pro rozpočtování do plánu rozpočtu. Pro vytváření sestav nabízí aplikace standardní sadu stránek s dotazy, které umožňují zobrazení a analýzu dat rozpočtování. K datům plánu rozpočtu lze přistupovat prostřednictvím [finančního výkaznictví](../general-ledger/financial-reporting-getting-started.md) a samostatné scénáře plánu rozpočtu lze zobrazit jako sloupce ve finanční sestavě.
 
 
 

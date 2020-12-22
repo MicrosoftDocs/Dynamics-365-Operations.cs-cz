@@ -16,6 +16,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Často kladené dotazy k aktualizacím služby One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Správa aktualizace a životní cyklus vlastního kódu, včetně Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zásady životního cyklu softwaru - Cloud
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zásady životního cyklu softwaru - On-premises
@@ -70,12 +72,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.15 (prosinec 2020)
+                    - name: Supply Chain Management 10.0.16 (únor 2021)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (leden 2021)
                       href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (listopad 2020)
                       href: get-started/whats-new-scm-10-0-14.md
-                    - name: Supply Chain Management 10.0.13 (říjen 2020)
-                      href: get-started/whats-new-scm-10-0-13.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -84,8 +86,6 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Odložené funkce AX 2012
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Funkce neimplementované v místních nasazeních
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zdroje dokumentace
@@ -216,6 +216,14 @@
                   items:
                     - name: Přepravované zboží od dodavatele
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Cloud a hraniční síť
+          items:
+            - name: Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
+              href: cloud-edge/cloud-edge-workload-warehousing.md
         - name: Správa majetku
           items:
             - name: Přehled správy majetku
@@ -230,9 +238,9 @@
                 - name: Stavy životního cyklu funkčních míst
                   href: asset-management/setup-for-functional-locations/functional-location-stages.md
                 - name: Typy atributů údržby
-                  href: asset-management/setup-for-functional-locations/functional-location-types.md
-                - name: Typy funkčních míst
                   href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: Typy funkčních míst
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
             - name: Funkční místa
               items:
                 - name: Úvod do funkčních míst
@@ -633,6 +641,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Balíček obsahu Power BI správy nákladů
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Řešení potíží se správou nákladů
+              href: cost-management/troubleshoot-costmanagement.md
         - name: Vykazování a integrace Power BI
           items:
             - name: Vytváření sestav a analýzy s Power BI
@@ -1327,6 +1337,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Doplněk viditelnosti zásob
+              href: inventory/inventory-visibility.md
         - name: IoT Intelligence
           items:
             - name: Domovská stránka IoT Intelligence
@@ -1347,6 +1359,8 @@
           items:
             - name: Domovská stránka Hlavní plánování
               href: master-planning/master-planning-home-page.md
+            - name: Migrace na optimalizaci plánování pro hlavní plánování
+              href: master-planning/new-master-planning-engine.md
             - name: Optimalizace plánování
               items:
                 - name: Přehled optimalizace plánování
@@ -1357,10 +1371,18 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Použití filtrů na plán
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Hlavní plánování s prognózou poptávky
+                  href: master-planning/planning-optimization/demand-forecast.md
                 - name: Hlavní plánování s obchodními smlouvami nákupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Značení zásob s optimalizací plánování
+                  href: master-planning/planning-optimization/marking.md
+                - name: Mezipodnikové plánování
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: Vyloučení produktů s určitými stavy životního cyklu produktu
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
                 - name: Schválit plánované objednávky
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatické potvrzení s optimalizací plánování
@@ -1463,6 +1485,8 @@
                   href: master-planning/tasks/create-baseline-forecast.md
                 - name: Ruční úprava prognózy poptávky
                   href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: Řešení potíží s hlavním plánováním
+              href: master-planning/troubleshoot-masterplanning.md
         - name: Aplikace pro mobilní zařízení
           items:
             - name: Domovská stránka mobilní aplikace
@@ -1895,6 +1919,8 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Výpočty kusovníku
                   href: cost-management/bom-calculations.md
+                - name: Řešení potíží s informacemi o produktu
+                  href: pim/troubleshooting-productinformation.md
             - name: Konfigurace produktu
               items:
                 - name: Přehled konfigurace produktu
@@ -1955,6 +1981,34 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Převedení dat pro modely produktu
                       href: pim/tasks/transfer-data-product-models.md
+                - name: Řešení potíží s konfigurátorem produktu
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: Správa technických změn
+          items:
+            - name: Přehled správy technických změn
+              href: engineering-change-management/product-engineering-overview.md
+            - name: Návod k funkci správy technických změn
+              href: engineering-change-management/engineering-scenarios.md
+            - name: Parametry správy technické změny
+              href: engineering-change-management/engineering-parameters.md
+            - name: Stanovení společných hodnot pro správu technických změn
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: Technické organizace a pravidla vlastnictví dat
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: Vlastník produktu
+              href: engineering-change-management/product-owner.md
+            - name: Technické atributy a vyhledávání technických atributů
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: Technické verze a kategorie technických produktů
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: Stav životního cyklu produktu a transakce
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: Správa změn technických produktů
+              href: engineering-change-management/engineering-change-management.md
+            - name: Připravenost produktu
+              href: engineering-change-management/product-readiness.md
+            - name: Uvolnit strukturu produktu
+              href: engineering-change-management/release-product-structure.md
         - name: Řízení výroby
           items:
             - name: Přehled výrobního procesu
@@ -2047,6 +2101,8 @@
                       items:
                         - name: Konfigurace rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-configure.md
+                        - name: Návrh rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-tabs.md
                         - name: Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-setup.md
                         - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
@@ -2105,6 +2161,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Pružné skupiny
                       href: production-control/time-attendance-flex-groups.md
+                - name: Řešení potíží s diskrétní výrobou
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean manufacturing
               items:
                 - name: Lean manufacturing – přehled
@@ -2257,7 +2315,9 @@
                       href: production-control/consumption.md
                     - name: Zaúčtování výroby
                       href: cost-management/production-posting.md
-        - name: Prodej a marketing
+                - name: Řešení potíží s procesní výrobou
+                  href: production-control/troubleshoot-processmanufacturing.md
+        - name: "Prodej a\_marketing"
           items:
             - name: Přehled prodeje a marketingu
               href: sales-marketing/overview-sales-marketing.md
@@ -2589,6 +2649,8 @@
               href: transportation/create-new-transportation-management-engine.md
             - name: "Přidružení indexu paliva k\_dopravci jako nákladů na dodatečné služby"
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Osvědčení o původu USMCA
+              href: transportation/usmca-certification-of-origin.md
             - name: Vytvoření přepravního dokladu
               href: transportation/create-bill-of-lading.md
             - name: Plánování tras přepravy s dopravným
@@ -2607,6 +2669,26 @@
               href: transportation/reconcile-freight-transportation-management.md
             - name: "Registrace přihlášení a\_odhlášení řidiče k\_události"
               href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Slevy
+              href: transportation/transportation-management-discount.md
+            - name: Vedlejší náklady
+              href: transportation/transportation-management-misc-charge.md
+            - name: Režimy a metody
+              href: transportation/transportation-management-modes-methods.md
+            - name: Číselné řady
+              href: transportation/transportation-management-number-sequence.md
+            - name: Stav
+              href: transportation/transportation-management-status.md
+            - name: Hlavní zóna
+              href: transportation/transportation-management-zone-master.md
+            - name: Skupiny dopravců
+              href: transportation/tasks/carrier-groups.md
+            - name: Pracovní plocha sestavení vytížení
+              href: transportation/tasks/load-building-workbench.md
+            - name: Šablony vytížení
+              href: transportation/tasks/load-template.md
+            - name: Profily sazeb
+              href: transportation/tasks/setup-a-rating-profile.md
             - name: Nastavení indexu paliva dopravce
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Nastavení úhrady přepravy
@@ -2645,20 +2727,28 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Směšování dimenzí produktu na skladovém místě
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Seskupení vyskladnění
+                  href: warehousing/putaway-clusters.md
                 - name: Kontrola kvality
                   href: warehousing/quality-check.md
+                - name: Řešení potíží s příchozími skladovými operacemi
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Odchozí skladové operace
               items:
                 - name: Rezervace v řízení skladu
                   items:
                     - name: Flexibilní zásada rezervace dimenze na úrovni skladu
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: Řešení potíží s rezervacemi v řízení skladu
+                      href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: Částečné uvolnění a částečná dodávka
                   items:
                     - name: Částečná dodávka nákladu přepravy
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Vydání dávky částečně rezervovaných převodních příkazů
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: Řešení potíží s částečnými uvolněními a částečnými dodávkami
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: "Výdej a\_balení"
                   items:
                     - name: Nastavení výdejů v seskupení
@@ -2691,12 +2781,16 @@
                       href: warehousing/pick-line-grouping.md
                     - name: Skladový slotting
                       href: warehousing/warehouse-slotting.md
-                    - name: Stáří vyskladnění zásob směrnice skladového místa
+                    - name: Prodlení výdeje zásob směrnice místa
                       href: warehousing/location-directive-inventory-picking-aging.md
                     - name: Odchozí třídění
                       href: warehousing/outbound-sorting.md
                     - name: Umístění na zeď - umístění do obchodu
                       href: warehousing/put-to-wall-put-to-store.md
+                    - name: Vizualizace odchozího pracovní vytížení
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: Řešení potíží s výdejem a balením
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: Doplnění
                   items:
                     - name: Přehled doplnění
@@ -2709,8 +2803,12 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Doplnění prahu zóny
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Strategie doplňování
+                      href: warehousing/replenishment-strategies.md
                     - name: Doplnění nad kapacitu místa
                       href: warehousing/replenishment-over-location-capacity.md
+                    - name: Řešení potíží s doplňováním skladu
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Sestavení nákladu a dodávky
                   items:
                     - name: Potvrdit a převést
@@ -2725,6 +2823,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: Opakovaný tisk a anulování štítků vlny
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Řešení potíží se sestavením nákladu a dodávkami
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Zásady konsolidace dodávek
                   items:
                     - name: Zásady konsolidace dodávek
@@ -2741,6 +2841,8 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Řešení potíží s odchozími skladovými operacemi
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: Napříč operacemi skladu
               items:
                 - name: Zásady práce ve skladu
@@ -2797,6 +2899,10 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: Využití skladového místa - konsolidaci zboží
                       href: warehousing/item-consolidation-location-utilization.md
+                    - name: Řešení potíží s prací skladu
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: Rozdělení práce
+                      href: warehousing/work-split.md
             - name: Nastavení skladu
               items:
                 - name: Konfigurace skladu
@@ -2807,8 +2913,10 @@
                       href: inventory/warehouse-template.md
                     - name: Řízení práce pomocí šablon práce a směrnice pro místa
                       href: warehousing/control-warehouse-location-directives.md
-                    - name: Vytvoření směrnic skladového místa
+                    - name: Práce se směrnicemi skladového místa
                       href: warehousing/create-location-directive.md
+                    - name: Limity pro místo uskladnění
+                      href: warehousing/location-stocking-limits.md
                     - name: Kódy kroku vlny
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurace zpracování vlny
@@ -2843,6 +2951,8 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: Nastavení skladu pro převodní příkazy
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: Řešení potíží s konfigurací skladu
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Instalace a konfigurace aplikace skladu
                   items:
                     - name: Instalace a připojení aplikace skladu
@@ -2879,6 +2989,10 @@
                   items:
                     - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: Řešení potíží s upgradem a migrací na pokročilou správu skladů
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: Řešení potíží s nastavením skladu
+                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Vývoj aplikace Supply Chain Management
           items:
             - name: Průvodce vývojem Ganttova diagramu

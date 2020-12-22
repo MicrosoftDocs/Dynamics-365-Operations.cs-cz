@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: cb8519db2f5d52d4e317b485d6ecc910956788cb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975309"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4458642"
 ---
 # <a name="customer-workflow"></a>Workflow odběratele
 
@@ -60,4 +60,4 @@ Jakmile máte alespoň jednu navrhovanou změnu, zobrazí se další dvě nabíd
 
     Stav na stránce se změní na **Změny čekající na schválení**.
 
-Workflow postupuje podle standardního procesu workflow v aplikaci. Schvalovatel je přesměrován na stránku **Odběratel**, kde může zkontrolovat změny na stránce **Navrhované změny** a poté zvolit **Workflow \> Schválit** pro schválení workflow. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.
+Pracovní postup následuje standardní procesu pracovního postupu v aplikaci. Schvalovatel je přesměrován na stránku **Zákazník**, kde může zkontrolovat změny na stránce **Navrhované změny** a poté zvolit **Workflow \> Schválit** pro schválení pracovního postupu. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.

@@ -5,7 +5,9 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
-        - name: 22. října 2002
+        - name: 2. prosince 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. října 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6. října 2020
           href: hr-whats-new-2020-10-06.md
@@ -477,9 +479,11 @@
               href: hr-personnel-define-jobs.md
             - name: Vytvoření kalendáře pracovní doby
               href: hr-personnel-create-working-time-calendar.md
+            - name: Nábor uchazečů o práci
+              href: hr-personnel-recruit.md
             - name: Často kladené dotazy k akcím personálu
               href: hr-personnel-actions-faq.md
-            - name: Použití workflow ke správě informací o zaměstnanci
+            - name: Použití pracovního postupu ke správě informací o zaměstnanci
               href: hr-workflow-manage-employee-information.md
             - name: Zobrazení a správa změn adres
               href: hr-personnel-view-address-changes.md
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Konfigurace správy zaměstnaneckých výhod
                   items:
-                    - name: Nastavení parametrů správy zaměstnaneckých výhod
+                    - name: Konfigurace parametrů správy zaměstnaneckých výhod podle společnosti
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Nastavení parametrů správy zaměstnaneckých výhod a samoobslužných parametrů zaměstnanců pro všechny společnosti
                       href: hr-benefits-setup-parameters.md
                     - name: Konfigurace možností a pravidel způsobilosti
                       href: hr-benefits-setup-eligibility-rules.md

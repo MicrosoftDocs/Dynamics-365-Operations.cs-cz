@@ -14,14 +14,12 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.16 (únor 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platform Update pro 10.0.15 (leden 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform Update pro 10.0.14 (listopad 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Platform Update pro 10.0.13 (říjen 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platform Update pro 10.0.12 (srpen 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce platformy
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Odložené funkce AX 2012
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Funkce neimplementované v místních nasazeních
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Obchodní události
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: Nastavení mapování pro pole stavu prodejní objednávky
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrování mezipodnikových objednávek pro zabránění synchronizace objednávek a řádků objednávek
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Správa duálního zápisu
                           items:
                             - name: Přizpůsobení mapování entit a polí
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integrovaná hlavní data daní
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Synchronizace s cenovým modulem Dynamics 365 Supply Chain Management na požádání
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Zpeněžení potenciálního zákazníka v duálním zápisu
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synchronizace s cenovým modulem Dynamics 365 Supply Chain Management na požádání
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Použití cenového modulu Dynamics 365 Commerce s Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Interní majetek pro údržbu
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrovaný pracovník, práce a pozice'
@@ -500,6 +500,8 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: Požadavky na rozsah hardwaru
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Ověření v Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/authentication-onprem.md
                 - name: Nastavení a nasazení místních prostředí
                   items:
                     - name: Nastavení místních projektů v LCS
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Vytvoření připojení Lifecycle Services (LCS) v Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Aktualizace starých kanálů v Azure Pipelines
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Vzorová aplikace správy vozového parku
               items:
                 - name: Klient-server scénář pro vzorovou aplikaci správy vozového parku
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Přístup k datům pomocí SysDa API
                           href: dev-ref/sysda.md
+                        - name: Omezení útoku prostřednictvím injektáže SQL
+                          href: dev-ref/query-with-parameters.md
                     - name: X++ makra
                       href: dev-ref/xpp-macros.md
                     - name: X++ třidy atributů
@@ -1492,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Šifrování v aplikacích Finance and Operations
                   href: sysadmin/encryption.md
-                - name: Nastavení časového limitu nečinné relace
+                - name: Nastavení časového limitu nečinnosti
                   href: sysadmin/session-idle-timeout.md
                 - name: Výchozí sestavy zabezpečení
                   href: sysadmin/security-reports.md
                 - name: Vytvoření nových uživatelů
                   href: sysadmin/tasks/create-new-users.md
+                - name: Správa relace uživatele
+                  href: sysadmin/user-session-management.md
                 - name: Hromadné importování uživatelů
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Nastavení dělení zodpovědnosti
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Nastavení klienta Azure Key Vault
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Vyčištění rutin
+              href: sysadmin/cleanuproutines.md
         - name: 'Upgrady, aktualizace a opravy hotfix'
           items:
             - name: 'Zdroje upgradů, aktualizací a oprav hotfix'
@@ -1696,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: Vytvoření navigace
                   href: user-interface/build-navigation.md
-                - name: Vytvoření pracovních prostorů
+                - name: Úprava pracovního prostoru
                   href: user-interface/build-workspace.md
             - name: Formuláře
               items:

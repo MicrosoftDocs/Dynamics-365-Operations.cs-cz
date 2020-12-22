@@ -14,6 +14,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Často kladené dotazy k aktualizacím služby One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Správa aktualizace a životní cyklus vlastního kódu, včetně Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
                 - name: Zásady životního cyklu softwaru - Cloud
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
                 - name: Zásady životního cyklu softwaru - On-premises
@@ -92,12 +94,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.16 (únor 2021)
+                      href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (leden 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (listopad 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
-                    - name: Commerce 10.0.13 (říjen 2020)
-                      href: get-started/whats-new-commerce-10-0-13.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -106,8 +108,6 @@
                       href: get-started/removed-deprecated-features-commerce.md
                 - name: Odložené funkce AX 2012
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: Funkce neimplementované v místních nasazeních
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Zdroje dokumentace
@@ -320,10 +320,12 @@
                           href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
                         - name: "Přiřazení a\_přepsání DPH"
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-                        - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+                        - name: Možnosti výpočtu celé částky a intervalu pro kódy DPH
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
                         - name: Výpočet osvobození od daně
                           href: tax-exempt-price-inclusive.md
+                        - name: Konfigurace DPH pro online objednávky
+                          href: sales-tax-config.md
                     - name: Nastavení profilu oznámení e-mailem
                       href: email-notification-profiles.md
                     - name: Číselné řady
@@ -366,8 +368,6 @@
                       href: dev-itpro/retail-POS-activation-changes.md
                     - name: Povolení ověření Azure Active Directory pro přihlášení do POS
                       href: aad-pos-logon.md
-                    - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
-                      href: demo-data.md
                     - name: Vyhledávání produktu a zákazníka v POS
                       href: POS-search-improvements.md
                     - name: "Vyhledávání produktů a\_variant produktu během zadávání objednávky"
@@ -506,10 +506,12 @@
                       href: work-with-payments.md
                     - name: 'Nastavení platební karty, autorizace a záznam'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurace nominálních hodnot hotovosti pro pokladní místo
+                    - name: Konfigurace nominálních hodnot hotovosti pro POS
                       href: cash-denominations.md
                     - name: Konfigurace zpracování platební karty
                       href: tasks/configure-credit-card-processing.md
+                    - name: Přeskočení dialogového okna „vrátit částku“ v POS
+                      href: dev-itpro/skip-change-due.md
                     - name: Konektor platby Adyen
                       href: dev-itpro/adyen-connector.md
                     - name: Úspora nástrojů online plateb s konektorem Adyen
@@ -530,10 +532,16 @@
                       href: dev-itpro/commerce-payments.md
                     - name: Zpracování kreditních karet bez hardwarové stanice
                       href: dev-itpro/cnp-pos.md
+                    - name: Dynamics 365 Payment Connector pro PayPal
+                      href: paypal.md
+                    - name: Podpora plateb peněženkou
+                      href: wallets.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
                 - name: Správa map Bing pro vaši organizaci
                   href: dev-itpro/manage-bing-maps.md
+                - name: Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem
+                  href: dev-itpro/pickup-timeslots.md
         - name: Podpora prodeje vašich produktů a služeb
           items:
             - name: 'Kategorie, produkty a sortimenty'
@@ -710,10 +718,14 @@
                   href: hybrid-customer-orders.md
                 - name: Vyvolání operace objednávky v POS
                   href: enhancedorderrecall.md
+                - name: Povolení více režimů doručení a vyzvednutí
+                  href: multiple-pickup-modes.md
             - name: Prodejní objednávky
               items:
-                - name: Vytvoření objednávky kontaktního střediska
+                - name: "Vytváření objednávek v\_kontaktním středisku"
                   href: tasks/create-call-center-orders.md
+                - name: Přizpůsobení transakčních e-mailů podle způsobu doručení
+                  href: customize-email-delivery-mode.md
                 - name: Změna způsobu dodání v POS
                   href: POS-change-delivery-mode.md
             - name: Distribuovaná správa objednávek
@@ -773,7 +785,17 @@
             - name: Zákaz pravidel v kontrole konzistence maloobchodních transakcí
               href: disable-consistency-check-rule.md
             - name: Úprava a audit transakcí maloobchodu
-              href: edit-audit-retail-transactions.md
+              items:
+                - name: Úpravy a audit transakcí cash and carry a řízení hotovosti
+                  href: edit-cash-trans.md
+                - name: Úprava a audit online objednávky a asynchronních transakcí objednávek zákazníků
+                  href: edit-order-trans.md
+                - name: Úprava finančních dimenzí pro maloobchodní transakce
+                  href: edit-financial-dim.md
+                - name: Vytvoření sešitu aplikace Excel pro úpravu maloobchodních transakcí
+                  href: create-excel-edit.md
+                - name: Přidání polí do sešitu aplikace Excel pro úpravu maloobchodních transakcí
+                  href: add-fields-excel.md
             - name: Postupné vytváření objednávek pro maloobchodní transakce
               href: trickle-feed.md
             - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
@@ -806,9 +828,9 @@
               href: task-mgmt-assign-lists.md
             - name: Správa úkolů v POS
               href: task-mgmt-pos.md
-        - name: Správa webu s elektronickým obchodem
+        - name: Správa webu s elektronického obchodu
           items:
-            - name: Přehled online obchodu
+            - name: Přehled webu elektronického obchodu
               href: online-store-overview.md
             - name: Vytvoření webu elektronického obchodu
               items:
@@ -818,7 +840,7 @@
                   href: deploy-ecommerce-site.md
                 - name: Vytvoření webu elektronického obchodu
                   href: create-ecommerce-site.md
-                - name: Přiřazení webu elektronického obchodu k online kanálu
+                - name: Přidružení webu Dynamics 365 Commerce k online kanálu
                   href: associate-site-online-store.md
                 - name: Správa souborů robots.txt
                   href: manage-robots-txt-files.md
@@ -946,6 +968,8 @@
                   href: dam-crop-images.md
                 - name: Přizpůsobení ohniska obrázku
                   href: dam-custom-focal-point.md
+                - name: Odeslání a obsluha statických souborů
+                  href: upload-serve-static-files.md
             - name: 'Ujištění se, že stránka dodržuje předpisy'
               items:
                 - name: Přehled dodržování předpisů
@@ -1014,6 +1038,8 @@
                       href: ship-address-module.md
                     - name: Modul možností doručení
                       href: delivery-options-module.md
+                    - name: Modul informací o vyzvednutí
+                      href: pickup-info-module.md
                     - name: Modul podrobností objednávky
                       href: order-confirmation-module.md
                     - name: Modul dárkového poukazu
@@ -1966,21 +1992,23 @@
                   href: e-commerce-extensibility/overview.md
                 - name: Začínáme
                   items:
+                    - name: Začněte s online vývojem rozšiřitelnosti elektronického obchodu
+                      href: e-commerce-extensibility/sdk-getting-started.md
                     - name: Systémové požadavky
                       href: e-commerce-extensibility/system-requirements.md
                     - name: Nastavení vývojové prostředí
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurace souboru vývojového prostředí (.env)
                       href: e-commerce-extensibility/configure-env-file.md
-                    - name: Ladění proti vývojovému prostředí Commerce úrovně 1
+                    - name: Konfigurace vývojové prostředí elektronického obchodu proti cloudovému prostředí Commerce
                       href: e-commerce-extensibility/debug-tier-1.md
                     - name: Nastavení sdílení kódu Azure DevOps a vytvoření příležitosti
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Přehled platformy
                   items:
-                    - name: Přehled architektury
+                    - name: Přehled architektury elektronického obchodu
                       href: e-commerce-extensibility/architectural-overview.md
-                    - name: Online komponenty
+                    - name: Komponenty elektronického obchodu
                       href: e-commerce-extensibility/ecommerce-components.md
                     - name: Odkaz na příkaz CLI
                       href: e-commerce-extensibility/cli-command-reference.md
@@ -2112,10 +2140,12 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK a aktualizace knihovny modulů
                       href: e-commerce-extensibility/sdk-updates.md
-                - name: Doporučené postupy
+                - name: Osvědčené postupy a nejčastější dotazy
                   items:
                     - name: Osvědčené postupy pro vývoj Dynamics 365 Commerce
                       href: e-commerce-extensibility/best-practices-dev.md
+                    - name: Nejčastější dotazy k online SDK Dynamics 365 Commerce
+                      href: e-commerce-extensibility/sdk-faq.md
             - name: Retail SDK
               items:
                 - name: Architektura Retail SDK
@@ -2136,6 +2166,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Nastavení kanálu buildu Commerce SDK
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Stažení ukázek a balíčků z GitHub a NuGet
+                  href: dev-itpro/retail-sdk/sdk-github.md
                 - name: Časté dotazy k Retail SDK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozšiřitelnost pokladních míst
@@ -2156,6 +2188,8 @@
                   href: dev-itpro/POS-APIs.md
                 - name: Rozšíření POS plateb
                   href: dev-itpro/pos-payment-extension.md
+                - name: Podpora spropitného v SDK plateb v POS
+                  href: dev-itpro/tipping.md
                 - name: Podpora pro externí dárkové poukazy
                   href: dev-itpro/gift-card.md
                 - name: Vytvoření a použití brandingu na aplikaci Retail Experience
@@ -2218,7 +2252,7 @@
                   href: dev-itpro/commerce-runtime-overview.md
                 - name: Služby CRT
                   href: dev-itpro/crt-services.md
-                - name: Rozšiřitelnost CRT a serveru Retail Server
+                - name: Vzorec rozšíření CRT
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Správa tajných kódů pro kanály Retail
                   href: dev-itpro/manage-secrets.md

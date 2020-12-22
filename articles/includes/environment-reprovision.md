@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458595"
+---
 Při kopírování databáze mezi prostředími budete muset spustit nástroj opětovného zřízení prostředí předtím, než bude kopírovaná databáze plně funkční, abyste se ujistili, že jsou všechny komponenty Commerce aktuální.
 
 > [!IMPORTANT]

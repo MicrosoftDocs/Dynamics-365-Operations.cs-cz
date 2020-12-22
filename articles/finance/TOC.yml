@@ -16,6 +16,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Často kladené dotazy k aktualizacím služby One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+                - name: 'Správa aktualizace a životní cyklus vlastního kódu, včetně Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
                 - name: Zásady životního cyklu softwaru - Cloud
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: Zásady životního cyklu softwaru - On-premises
@@ -70,14 +72,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.16 (únor 2021)
+                      href: get-started/whats-new-changed-10-0-16.md
                     - name: Finance 10.0.15 (leden 2021)
                       href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (listopad 2020)
                       href: get-started/whats-new-changed-10-0-14.md
-                    - name: Finance 10.0.13 (říjen 2020)
-                      href: get-started/whats-new-changed-10-0-13.md
-                    - name: Finance 10.0.12 (srpen 2020)
-                      href: get-started/whats-new-changed-10-0-12.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
             - name: Odložené funkce AX 2012
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Funkce neimplementované v místních nasazeních
-              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
             - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Zdroje dokumentace
@@ -724,6 +722,8 @@
               href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
             - name: Účtování s odvozenými knihami
               href: fixed-assets/post-derived-value-models.md
+            - name: Počet knih na deník
+              href: fixed-assets/number-books-per-journal.md
             - name: Zaúčtování transakcí dlouhodobého majetku do účtovacích vrstev
               href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Možnosti transakce dlouhodobého majetku
@@ -732,6 +732,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Rozdělení dlouhodobého majetku
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Snížení odpisu zůstatku po rozdělení
+              href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Nastavení skupin dlouhodobého majetku
               href: fixed-assets/tasks/set-up-fixed-asset-groups.md
             - name: Změna skupiny dlouhodobého majetku
@@ -812,8 +814,72 @@
                   href: fixed-assets/straight-line-service-life-depreciation.md
         - name: Leasing majetku
           items:
+            - name: Domovská stránka leasingu majetku
+              href: asset-leasing/asset-leasing-homepage.md
             - name: Úvod do leasingu majetku
               href: asset-leasing/asset-leasing-quick-start.md
+            - name: Nastavení leasingu majetku
+              items:
+                - name: Konfigurace parametrů leasingu majetku
+                  href: asset-leasing/config-lease-parameters.md
+                - name: Nastavení leasingových knih
+                  href: asset-leasing/set-up-lease-books.md
+                - name: Vytvoření skupiny leasingu
+                  href: asset-leasing/create-lease-group.md
+                - name: Nastavení indexových sazeb
+                  href: asset-leasing/set-up-index-rate-types.md
+                - name: Nastavení typů výdajů
+                  href: asset-leasing/set-up-expense-types.md
+                - name: Nastavení názvů deníků leasingu
+                  href: asset-leasing/set-up-lease-journal-names.md
+                - name: Nastavení účtů pro zaúčtování leasingu
+                  href: asset-leasing/set-up-lease-posting-accts.md
+                - name: Přiřazení číselných řad
+                  href: asset-leasing/leasing-number-sequences.md
+                - name: Přiřadit role uživatele
+                  href: asset-leasing/lease-user-roles.md
+            - name: Správa leasingů majetku
+              items:
+                - name: Přidání nebo kopírování leasingu
+                  href: asset-leasing/add-lease.md
+                - name: Vytvoření platební faktury
+                  href: asset-leasing/create-payment-invoice.md
+                - name: Záznam odpisu používaného majetku
+                  href: asset-leasing/record-rou-asset-depreciation.md
+                - name: Stornování zaúčtované leasingové transakce
+                  href: asset-leasing/reverse-posted-lease-trans.md
+                - name: Úprava leasingu
+                  href: asset-leasing/adjust-lease.md
+                - name: Snížení hodnoty používaného majetku
+                  href: asset-leasing/impair-rou-asset.md
+                - name: Přidružení leasingu k dlouhodobému majetku
+                  href: asset-leasing/associate-lease-with-fixed-asset.md
+                - name: Záznam leasingů v cizích měnách
+                  href: asset-leasing/record-leases-foreign-currency.md
+                - name: Přecenění leasingových splátek vázaných na indexovou sazbu
+                  href: asset-leasing/revalue-payments-tied-2-index-rate.md
+                - name: Přeřazení krátkodobé části leasingového závazku
+                  href: asset-leasing/reclassify-st-lease-liability.md
+                - name: 'Zobrazení transakcí závazků, majetku a nákladů'
+                  href: asset-leasing/view-asset-transactions.md
+                - name: Funkce složeného intervalu
+                  href: asset-leasing/compound-interval-functionality.md
+                - name: Potvrzení plánu plateb v dávce
+                  href: asset-leasing/confirm-payment-schedules-in-batch.md
+                - name: Vytvoření měsíčních položek deníku v dávce
+                  href: asset-leasing/create-monthly-journals-batch.md
+                - name: Typy zaúčtování leasingu
+                  href: asset-leasing/lease-posting-types.md
+                - name: Duální vykazování
+                  href: asset-leasing/dual-reporting.md
+                - name: Nastavení pracovního postupu leasingu
+                  href: asset-leasing/set-up-lease-wrkflw.md
+                - name: Použití pracovních postupů schvalování leasingu
+                  href: asset-leasing/use-create-lease-wrkflw.md
+                - name: Správa leasingů prostřednictvím rámce importu leasingu
+                  href: asset-leasing/manage-leases-thru-imprt-framewrk.md
+            - name: Sestavy leasingu majetku
+              href: asset-leasing/asset-leasing-rprts.md
         - name: Hlavní kniha
           items:
             - name: Přehled hlavní knihy
@@ -908,6 +974,8 @@
                   href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                 - name: Typy deníku hlavní knihy
                   href: general-ledger/ledger-journal-types.md
+                - name: Konfigurace účetních knih
+                  href: general-ledger/configure-ledger.md
                 - name: "Vytváření a\_ověřování deníků"
                   href: general-ledger/tasks/create-validate-journals.md
                 - name: Zobrazení položek nebo transakcí deníku
@@ -1002,6 +1070,44 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definování zásad auditu pro zdrojové dokumenty
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Finanční přehledy
+          items:
+            - name: Domovská stránka finančních přehledů
+              href: finance-insights/finance-insights-home-page.md
+            - name: Konfigurace a správa
+              items:
+                - name: Konfigurace finančních přehledů
+                  href: finance-insights/configure-for-fin-insites.md
+                - name: Povolení předpovědí plateb zákazníka
+                  href: finance-insights/enable-cust-paymnt-prediction.md
+                - name: Povolení prognózy cashflow
+                  href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Povolení návrhů rozpočtu
+                  href: finance-insights/enable-budget-proposal.md
+                - name: Vytvoření projektu integrátoru dat
+                  href: finance-insights/create-data-integrate-project.md
+            - name: Použití finančních přehledů
+              items:
+                - name: Návrhy rozpočtu
+                  href: finance-insights/budget-proposals.md
+                - name: Pozice hotovosti
+                  href: finance-insights/cash-position.md
+                - name: Prognóza cashflow
+                  href: finance-insights/cash-flow-forecast-intro.md
+                - name: Použití externích dat v prognózách cashflow
+                  href: finance-insights/external-data-in-cash-flow.md
+                - name: Předpovědi plateb zákazníka
+                  href: finance-insights/payment-insights-overview.md
+                - name: Použití předpovědí plateb zákazníka
+                  href: finance-insights/use-customer-payment-predictions.md
+                - name: Přehled snímků
+                  href: finance-insights/payment-snapshots.md
+                - name: Výsledky modelů strojového učení
+                  href: finance-insights/confusion-matrix.md
+                - name: Vyhodnocení modelu predikce plateb počátečního zákazníka
+                  href: finance-insights/evaluate-payment-prediction.md
+                - name: Vylepšit model předpovědi
+                  href: finance-insights/improve-model.md
         - name: "Řízení projektů a\_účetnictví"
           items:
             - name: Přehled řízení a účetnictví projektu
@@ -1408,6 +1514,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Nastavení parametrů NF-e pro fiskální subjekt
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2019.001 - Pravidla daňových výhod a výjimek pro NF-e / NFC-e
+                      href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
                 - name: Daňový výkaz SPED-Reinf
@@ -1506,7 +1614,7 @@
               items:
                 - name: Čína - přehled
                   href: localizations/china.md
-                - name: Finance and Operations provozované společností 21Vianet v Číně
+                - name: Finance and Operations provozovaná společností 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Porovnání kusovníků
                   href: localizations/apac-chn-bom-comparison.md
@@ -1686,11 +1794,11 @@
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Koncová data vystavení faktury
                   href: localizations/emea-invoice-issue-deadline.md
-                - name: Zpracování faktury
+                - name: Zpracování fakturace
                   href: localizations/emea-invoice-processing.md
                 - name: Vystavení vstupního certifikátu EU
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-                - name: Normy OIOUBL
+                - name: Podporované standardy pro elektronickou fakturaci
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
                 - name: Odkaz na původní fakturu (východní Evropa)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
@@ -1836,6 +1944,8 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Přiznání k DPH pro Německo
                   href: localizations/emea-de-vat-declaration.md
+                - name: Sestava elektronických faktur zákazníka
+                  href: localizations/emea-deu-e-invoices.md
                 - name: Sestava seznamu deníku
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Nastavit elektronická daňová přiznání
@@ -1938,6 +2048,8 @@
                           href: localizations/apac-ind-news-letter-10-0-12.md
                         - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.13
                           href: localizations/ind-news-letter-10-0-13.md
+                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.14
+                          href: localizations/apac-ind-news-letter-10-0-14.md
                     - name: Referenční skupiny indické daně GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrace pro registrační pokladny
@@ -2164,6 +2276,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronické faktury zákazníka
                   href: localizations/emea-ita-e-invoices.md
+                - name: Roční daňová komunikace
+                  href: localizations/emea-ita-yearly-tax-communication.md
             - name: Japonsko
               items:
                 - name: Japonsko - přehled
@@ -2450,6 +2564,8 @@
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Soubor standardního auditu pro daň (SAF-T) pro Norsko
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
+                - name: Elektronické faktury zákazníka v Norsku
+                  href: localizations/emea-nor-e-invoices.md
             - name: Polsko
               items:
                 - name: Polsko - přehled
@@ -2482,6 +2598,8 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Rozdělení kurzového rozdílu závazků/pohledávek
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: 'Přiznání k DPH s registry (JPK_V7M, VDEK)'
+                  href: localizations/emea-pol-vdek.md
             - name: Katar
               items:
                 - name: Katar - přehled
@@ -2716,6 +2834,8 @@
                   href: localizations/apac-sau-sales-tax.md
                 - name: Vykazování zakátu pro Saúdskou Arábii
                   href: localizations/emea-sau-zakat-reporting.md
+                - name: Přiřazení poplatků za bankovní doklady k dodávce
+                  href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
             - name: Singapur
               items:
                 - name: Singapur - přehled
@@ -2994,6 +3114,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Přístup k informacím a vykazování
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Možnosti individuálního nastavení s Power BI.com
+              items:
+                - name: Funkce dostupné prostřednictvím integrace Power BI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Připnutí obsahu Power BI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Volba analytických pracovních prostorů z Power BI.com
             - name: Možnosti individuálního nastavení s Power BI
               items:
                 - name: Funkce dostupné prostřednictvím integrace Power BI
@@ -3112,7 +3239,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Přidání finančních dimenzí k měrným systémům agregace
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Vytváření analytických sestav pomocí PowerBI Desktop
+                - name: Vytváření analytických sestav pomocí Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3532,6 +3659,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
                 - name: Návrh nového řešení elektronického výkaznictví pro tisk vlastní sestavy
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+                - name: Úprava řešení elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
             - name: Kurzy
               items:
                 - name: Naučte se používat zdroje dat
@@ -3608,6 +3737,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Komprimace velkých odchozích dokumentů
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+                - name: Kontrola nakonfigurovaných komponent elektronického výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
                 - name: Relativní cesta v datových vazbách
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
@@ -3662,24 +3793,36 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
                 - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                - name: Správa obchodních dokumentů
+                - name: Správa obchodních dokumentů (BDM)
                   items:
-                    - name: Přehled správy obchodních dokumentů
+                    - name: Přehled BDM
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Nové uživatelské rozhraní dokumentu v modulu Správa obchodních dokumentů
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-                    - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Nové uživatelské rozhraní dokumentu v BDM
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+                    - name: Úprava šablon obchodních dokumentů v BDM
+                      items:
+                        - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                        - name: Aktualizace struktury šablony obchodního dokumentu
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
             - name: API rozhraní architektury elektronického výkaznictví
               items:
                 - name: Rozšíření seznamu vestavěných funkcí
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-                - name: Změny rozhraní API pro aktualizaci aplikace 10.0.11
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                - name: Změny rozhraní API pro aktualizaci aplikace 7.3
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                - name: Změny API rozhraní
+                  items:
+                    - name: Application Update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                    - name: Delegování vytvoření cíle elektronického výkaznictví do vlastního cílového objektu pro vytváření
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Aplikace pro mobilní zařízení
           items:
             - name: Domovská stránka mobilní aplikace

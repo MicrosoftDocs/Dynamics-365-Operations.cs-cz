@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013150"
+ms.locfileid: "4458639"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -41,16 +41,16 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
 
 ## <a name="set-up-dom"></a>Nastavit DOM
 
-1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence** .
-2. Na kartě **Konfigurační klíče** rozbalte uzel **Commerce** a poté vyberte zaškrtávací políčko **Distribuovaná správa objednávek** .
-3. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek** .
+1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
+2. Na kartě **Konfigurační klíče** rozbalte uzel **Commerce** a poté vyberte zaškrtávací políčko **Distribuovaná správa objednávek**.
+3. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek**.
 4. Na kartě **Obecné** natavte následující hodnoty:
 
-    - **Povolit distribuovanou správu objednávek** – Nastavte tuto možnost **Ano** .
-    - **Potvrdit použití map Bing pro distribuovanou správu objednávek** – Nastavte tuto možnost na **Ano** .
+    - **Povolit distribuovanou správu objednávek** – Nastavte tuto možnost **Ano**.
+    - **Potvrdit použití map Bing pro distribuovanou správu objednávek** – Nastavte tuto možnost na **Ano**.
 
         > [!NOTE]
-        > Tuto možnost můžete nastavit na **Ano** pouze tehdy, pokud je možnost **Povolit mapy Bing** na kartě **mapy Bing** stránky **Sdílené parametry obchodu** ( **Maloobchod \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu** ) rovněž nastavena na **Ano** a pokud byl zadán platný klíč do pole **Klíč map Bing** .
+        > Tuto možnost můžete nastavit na **Ano** pouze tehdy, pokud je možnost **Povolit mapy Bing** na kartě **mapy Bing** stránky **Sdílené parametry obchodu** (**Maloobchod \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**) rovněž nastavena na **Ano** a pokud byl zadán platný klíč do pole **Klíč map Bing**.
 
     - **Období zadržení ve dnech** – Určete, jak dlouho budou v systému zachovány plány, které spuštění distribuované správy objednávek generuje. Dávková úloha **Nastavení úlohy odstranění dat plnění DOM** odstraní všechny plány plnění, které jsou starší než počet dní, které zde zadáte.
     - **Období zamítnutí (v dnech)** – Určete, kolik musí uplynout času, než může být přiřazen zamítnutý řádek objednávky ke stejnému místu.
@@ -58,50 +58,50 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
 5. Na kartě **Řešitel** natavte následující hodnoty:
 
     - **Maximální počet pokusů automatického plnění** – Určete, kolikrát se modul distribuované správy objednávek pokusí zprostředkovat řádek objednávky do místa. Pokud nemůže modul distribuované správy objednávek zprostředkovat řádek objednávky do místa v určeném množství pokusů, označí řádek objednávky jako výjimku. Poté přeskočí tento řádek při dalších spuštěních, dokud nebude stav resetován ručně.
-    - **Rádius oblasti místního obchodu** – Zadejte hodnotu. Toto pole pomáhá určit, jakým způsobem jsou místa seskupena a považována za stejná, pokud jde o vzdálenost. Pokud například zadáte **100** , každý obchod nebo distribuční centrum v okruhu 100 km adresy plnění bude považován za rovnocenný, co se týká vzdálenosti.
-    - **Typ řešitele** - Vyberte typ hodnoty. S aplikací Commerce jsou vydány dva typy řešitelů: **Řešitel výroby** a **Zjednodušitelný řešitel** . Pro všechna zařízení, která budou spouštět distribuovanou správu objednávek (to znamená všechny servery, které jsou součástí skupiny DOMBatch), musí být zvolen **Řešitel výroby** . Řešitel výroby vyžaduje speciální licenční klíč, který je ve výchozím nastavení licencován a nasazován v produkčních prostředích. U neprodukčních prostředí je třeba tento licenční klíč nasadit ručně. Pokud chcete nasadit licenční klíč ručně, postupujte takto:
+    - **Rádius oblasti místního obchodu** – Zadejte hodnotu. Toto pole pomáhá určit, jakým způsobem jsou místa seskupena a považována za stejná, pokud jde o vzdálenost. Pokud například zadáte **100**, každý obchod nebo distribuční centrum v okruhu 100 km adresy plnění bude považován za rovnocenný, co se týká vzdálenosti.
+    - **Typ řešitele** - Vyberte typ hodnoty. S aplikací Commerce jsou vydány dva typy řešitelů: **Řešitel výroby** a **Zjednodušitelný řešitel**. Pro všechna zařízení, která budou spouštět distribuovanou správu objednávek (to znamená všechny servery, které jsou součástí skupiny DOMBatch), musí být zvolen **Řešitel výroby**. Řešitel výroby vyžaduje speciální licenční klíč, který je ve výchozím nastavení licencován a nasazován v produkčních prostředích. U neprodukčních prostředí je třeba tento licenční klíč nasadit ručně. Pokud chcete nasadit licenční klíč ručně, postupujte takto:
 
-        1. Ve službě Microsoft Dynamics Lifecycle Services otevřete knihovnu sdíleného majetku, zvolte **Model** jako typ majetku a stáhněte soubor **DOM license** .
-        2. Spusťte správce internetové informační služby společnosti Microsoft, klikněte pravým tlačítkem na **Web AOSService** a poté zvolte **Prozkoumat** . Otevře se okno průzkumníka Windows na **\<AOS service root\>\\webroot** . Poznamenejte si cestu \<AOS Service root\>, protože ji budete muset použít v dalším kroku.
-        3. Zkopírujte konfigurační soubor do adresáře **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** .
-        4. Přejděte do klienta Headquarters a otevřete stránku **Parametry distribuované správy objednávek** . Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
+        1. Ve službě Microsoft Dynamics Lifecycle Services otevřete knihovnu sdíleného majetku, zvolte **Model** jako typ majetku a stáhněte soubor **DOM license**.
+        2. Spusťte správce internetové informační služby společnosti Microsoft, klikněte pravým tlačítkem na **Web AOSService** a poté zvolte **Prozkoumat**. Otevře se okno průzkumníka Windows na **\<AOS service root\>\\webroot**. Poznamenejte si cestu \<AOS Service root\>, protože ji budete muset použít v dalším kroku.
+        3. Zkopírujte konfigurační soubor do adresáře **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Přejděte do klienta Headquarters a otevřete stránku **Parametry distribuované správy objednávek**. Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
 
         > [!NOTE]
         > Zjednodušený řešitel je poskytnut proto, aby maloobchodníci mohli vyzkoušet funkci distribuované správy objednávek bez nasazení speciální licence. Organizace by neměly používat zjednodušeného řešitele v produkčních prostředích.
         >
         > Přestože zjednodušený řešitel poskytuje stejnou sadu funkcí jako řešitel výroby, existují limitace, týkající se výkonnosti (počet objednávek a řádků objednávek, které lze zpracovat při jednom spuštění) a konvergence výsledků (dávka objednávek nemusí v některých scénářích vytěžit nejlepší výsledky).
      
-6. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek** .
+6. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek**.
 7. Na kartě **Číselné řady** přiřaďte požadované číselné řady různým entitám distribuované správy objednávek.
 
     > [!NOTE]
-    > Než mohou být číselné řady přiřazené entitám, musí být definovány na stránce **Číselné řady** ( **Správa organizace \> Číselné řady \> Číselné řady** ).
+    > Než mohou být číselné řady přiřazené entitám, musí být definovány na stránce **Číselné řady** (**Správa organizace \> Číselné řady \> Číselné řady**).
 
 8. Funkce distribuované správy objednávek podporuje definici různé typy pravidel distribuované správy objednávek a organizace mohou konfigurovat mnoho pravidel, v závislosti na svých obchodních potřebách. Pravidla distribuované správy objednávek lze definovat pro skupinu míst nebo individuální místa, a pro specifickou kategorii produktu, produkt nebo variantu. Chcete-li vytvořit seskupení míst, která se musí použít pro pravidla distribuované správy objednávek, postupujte podle těchto kroků:
 
-    1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Skupiny plnění** .
+    1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Skupiny plnění**.
     2. Zvolte **Nová** a zadejte název a popis nové skupiny.
-    3. Zvolte **Uložit** .
+    3. Zvolte **Uložit**.
     4. Zvolte **Přidat řádek** a přidejte ke skupině jedno místo. Popřípadě zvolte **Přidat řádky** a přidejte více míst.
     
     > [!NOTE]
-    > Ve verzi Commerce 10.0.12 musí být povolena volba **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění** v pracovním prostoru **Správa funkcí** .
+    > Ve verzi Commerce 10.0.12 musí být povolena volba **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění** v pracovním prostoru **Správa funkcí**.
     >
-    > Tato funkce přidává nové konfigurace na stránce **Skupina plnění** , takže můžete definovat, zda lze sklad použít pro expedici, nebo zda lze kombinaci sklad/obchod použít pro expedici, výdej nebo obojí. 
+    > Tato funkce přidává nové konfigurace na stránce **Skupina plnění**, takže můžete definovat, zda lze sklad použít pro expedici, nebo zda lze kombinaci sklad/obchod použít pro expedici, výdej nebo obojí. 
     >
     > Pokud tuto funkci povolíte, možnosti dostupné pro výběr umístění při vytváření objednávek výdeje nebo expedice v POS budou aktualizovány.
     >
     > Povolení funkce také vede k aktualizaci stránek v POS, když jsou vybrány operace „expedovat vše“ nebo „expedovat vybrané“.
 
-9. Chcete-li definovat pravidla, přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Spravovat pravidla** . Jsou podporována následující pravidla distribuované správy objednávek:
+9. Chcete-li definovat pravidla, přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Spravovat pravidla**. Jsou podporována následující pravidla distribuované správy objednávek:
 
     - **Pravidlo skladového minima** – Tento typ pravidla umožňuje organizacím vyčlenit konkrétní množství produktu pro účely jiné než plnění objednávky. Například organizace nemusí chtít, aby distribuovaná správa objednávek zvažovala všechny zásoby dostupné v obchodě pro plnění objednávek. Místo toho mohou chtít rezervovat některé zásoby pro příchozí zákazníky. Při použití tohoto typu pravidla můžete definovat minimální zásoby, které mají být zachovány, pro kategorii produktů, jednotlivý produkt nebo produktovou variantu podle místa nebo skupiny míst.
     - **Pravidlo priority místa plnění** – Tento typ pravidla umožňuje organizacím definovat hierarchii míst pro zřízení priority, kterou modul distribuované správy objednávek zvažuje při pokusu o identifikaci míst plnění pro specifické produkty. Platný rozsah priorit je 1 až 10, kde 1 je nejvyšší prioritou a 10 je nejnižší priorita. Místa, která mají vyšší prioritu, jsou zvažována dříve než místa s nižší prioritou. Pokud je pravidlo definováno jako vážné omezení, objednávky jsou zprostředkovány pouze na místa, pro která jsou definovány priority.
     - **Pravidlo částečných objednávek** – Toto pravidlo umožňuje organizacím definovat, zda lze objednávku nebo řádky objednávek splnit částečně. K dispozici jsou následující parametry:
 
-        - **Plnit částečné objednávky?** – Pokud je tato možnost nastavena na **Ano** , distribuovaná správa objednávek může plnit pouze část množství na řádku objednávky. Toto částečné plnění je dosaženo rozdělením řádku objednávky.
-        - **Plnit částečné řádky?** – Pokud je tato možnost nastavena na **Ano** , distribuovaná správa objednávek může plnit částečné množství řádků objednávky. Toto částečné plnění je dosaženo rozdělením řádku objednávky.
-        - **Plnit objednávku pouze z jednoho místa** – Pokud je tato možnost nastavena na **Ano** , distribuovaná správa objednávek se ujistí, že všechny řádky na objednávce jsou plněny z jednoho místa.
+        - **Plnit částečné objednávky?** – Pokud je tato možnost nastavena na **Ano**, distribuovaná správa objednávek může plnit pouze část množství na řádku objednávky. Toto částečné plnění je dosaženo rozdělením řádku objednávky.
+        - **Plnit částečné řádky?** – Pokud je tato možnost nastavena na **Ano**, distribuovaná správa objednávek může plnit částečné množství řádků objednávky. Toto částečné plnění je dosaženo rozdělením řádku objednávky.
+        - **Plnit objednávku pouze z jednoho místa** – Pokud je tato možnost nastavena na **Ano**, distribuovaná správa objednávek se ujistí, že všechny řádky na objednávce jsou plněny z jednoho místa.
 
 
         V následující tabulce je vysvětleno chování, kdy je definována kombinace těchto parametrů.
@@ -113,15 +113,15 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
         | 3    | Ano                    | Ano                   | Ne                                   | Několik řádků objednávky lze plnit, jednotlivé řádky lze plnit částečně a každý řádek může být plněn z více než jednoho místa v instanci spuštění distribuované správy objednávek. |
         | 4\*  | Ne                     | Nelze použít        | Ne                                   | Všechny řádky objednávky musí být plněny, jednotlivé řádky nelze plnit částečně a každý řádek objednávky může být plněn z jiného místa. |
         | 5\*  | Ne                     | Nelze použít        | Ano                                  | Všechny řádky objednávky musí být plněny, jednotlivé řádky nelze plnit částečně a všechny řádky objednávky lze doručit pouze z jednoho místa. |
-        | 6\*  | Ne                     | Nelze použít        | Ne                                   | Tato kombinace funguje stejně jako kombinace 4, protože možnost **Plnit částečné řádky** nelze nastavit na **Ano** , když je možnost **Plnit částečné objednávky** nastavena na **Ne** . |
-        | 7\*  | Ne                     | Nelze použít        | Ano                                  | Tato kombinace funguje stejně jako kombinace 5, protože možnost **Plnit částečné řádky** nelze nastavit na **Ano** , když je možnost **Plnit částečné objednávky** nastavena na **Ne** . |
+        | 6\*  | Ne                     | Nelze použít        | Ne                                   | Tato kombinace funguje stejně jako kombinace 4, protože možnost **Plnit částečné řádky** nelze nastavit na **Ano**, když je možnost **Plnit částečné objednávky** nastavena na **Ne**. |
+        | 7\*  | Ne                     | Nelze použít        | Ano                                  | Tato kombinace funguje stejně jako kombinace 5, protože možnost **Plnit částečné řádky** nelze nastavit na **Ano**, když je možnost **Plnit částečné objednávky** nastavena na **Ne**. |
         | 8    | Ano                    | Ne                    | Ne                                   | Několik řádků objednávky lze plnit, ale jednotlivé řádky nelze plnit částečně a různé řádky objednávky mohou být plněny z více než jednoho místa v instanci spuštění distribuované správy objednávek. |
         | 9\*  | Ne                     | Nelze použít        | Ano                                  | Všechny řádky objednávky musí být plněny a všechny řádky objednávky musí být plněny pouze z jednoho místa. |
 
-        \* Pokud je možnost **Plnit částečné objednávky** nastavena na **Ne** , možnost **Plnit částečné řádky** je vždy považována za nastavenou na **Ne** , bez ohledu na to, jak je ve skutečnosti nastavena.
+        \* Pokud je možnost **Plnit částečné objednávky** nastavena na **Ne**, možnost **Plnit částečné řádky** je vždy považována za nastavenou na **Ne**, bez ohledu na to, jak je ve skutečnosti nastavena.
 
         > [!NOTE]
-        > Ve verzi 10.0.5 aplikace Retail byl změněn parametr **Plnění objednávky pouze z jednoho místa** na **Maximální počet míst plnění** . Namísto toho, aby uživatel mohl konfigurovat, zda lze objednávky plnit pouze z jednoho místa nebo zda lze plnit z libovolného počtu skladových míst, mohou uživatelé nyní určit, zda má být plnění z dané sady míst (nejvýše 5) nebo z libovolného počtu míst. To poskytuje větší flexibilitu ohledně toho, z kolika míst lze objednávku plnit.
+        > Ve verzi 10.0.5 aplikace Retail byl změněn parametr **Plnění objednávky pouze z jednoho místa** na **Maximální počet míst plnění**. Namísto toho, aby uživatel mohl konfigurovat, zda lze objednávky plnit pouze z jednoho místa nebo zda lze plnit z libovolného počtu skladových míst, mohou uživatelé nyní určit, zda má být plnění z dané sady míst (nejvýše 5) nebo z libovolného počtu míst. To poskytuje větší flexibilitu ohledně toho, z kolika míst lze objednávku plnit.
 
    - **Pravidlo místa plnění offline** – Toto pravidlo umožňuje organizacím určit místo nebo skupinu míst jako offline nebo nedostupné pro distribuovanou správu objednávek, aby objednávky nemohly být přiřazeny k těmto místům pro plnění.
     - **Pravidlo maximálního počtu zamítnutí** – Toto pravidlo umožňuje organizacím určit prahovou hodnotu zamítnutí. Když je dosažena prahová hodnota, proces distribuované správy objednávek označí objednávku nebo řádek objednávky jako výjimku a vyloučí je z dalšího zpracování.
@@ -135,20 +135,20 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
 
    - **Počáteční datum** a **Koncové datum** – Každé pravidlo může být účinné podle data použitím těchto polí.
    - **Zakázáno** – Pouze pravidla, která mají hodnotu **Ne** pro toto pole, jsou zvažována při spuštění distribuované správy objednávek.
-   - **Vážné omezení** – Pravidlo lze definovat buď jako vážné omezení, nebo bez vážného omezení. Každé spuštění distribuované správy objednávek prochází dvěma iteracemi. V první iteraci je každé pravidlo považováno jako pravidlo s vážným omezením, bez ohledu na nastavení tohoto pole. Jinými slovy, je použito každé pravidlo. Jedinou výjimkou je pravidlo **Priorita místa** . V druhé iteraci jsou pravidla, která nebyla definována jako pravidla s vážným omezením, odstraněna, a objednávka nebo řádky objednávky nepřiřazené k místům, když byla použita všechna pravidla, jsou přiřazeny k místům.
+   - **Vážné omezení** – Pravidlo lze definovat buď jako vážné omezení, nebo bez vážného omezení. Každé spuštění distribuované správy objednávek prochází dvěma iteracemi. V první iteraci je každé pravidlo považováno jako pravidlo s vážným omezením, bez ohledu na nastavení tohoto pole. Jinými slovy, je použito každé pravidlo. Jedinou výjimkou je pravidlo **Priorita místa**. V druhé iteraci jsou pravidla, která nebyla definována jako pravidla s vážným omezením, odstraněna, a objednávka nebo řádky objednávky nepřiřazené k místům, když byla použita všechna pravidla, jsou přiřazeny k místům.
 
 10. Profily plnění se použijí k seskupení kolekce pravidel, právnických osob, původů prodejní objednávky a způsobů dodání. Každé spuštění distribuované správy objednávek je pro konkrétní profil plnění. Tímto způsobem organizace mohou určit a spustit sadu pravidel pro sadu právnických osob na objednávkách, které mají specifické původy prodejní objednávky a způsoby dodání. Proto když musí být spuštěna různá sada pravidel na různé sady původů prodejní objednávky nebo způsoby dodání, profily plnění lze definovat odpovídajícím způsobem. Chcete-li nastavit profily plnění, postupujte následujícím způsobem:  
 
-    1. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Profily plnění** .
-    2. Zvolte **Nové** .
-    3. Zadejte hodnoty do polí **Profil** a **Popis** .
-    4. Nastavte možnost **Automaticky použít výsledek** . Pokud nastavíte tuto možnost na **Ano** , výsledky spuštění distribuované správy objednávek pro profil budou automaticky použity na řádky prodejní objednávky. Pokud ji nastavíte na hodnotu **Ne** , lze zobrazit výsledky pouze v plánu plnění. Nebudou použity na řádky prodejní objednávky.
-    5. Pokud chcete, aby byl profil distribuované správy objednávek spuštěn pro objednávky, které mají původ u každé prodejní objednávky, včetně objednávek bez určeného původu prodejní objednávky, nastavte možnost **Zpracovat objednávky s prázdným původem prodeje** na **Ano** . Chcete-li spustit profil pouze pro několik původů prodejní objednávky, můžete je definovat na stránce **Původy prodeje** , jak bude vysvětleno později.
+    1. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Profily plnění**.
+    2. Zvolte **Nové**.
+    3. Zadejte hodnoty do polí **Profil** a **Popis**.
+    4. Nastavte možnost **Automaticky použít výsledek**. Pokud nastavíte tuto možnost na **Ano**, výsledky spuštění distribuované správy objednávek pro profil budou automaticky použity na řádky prodejní objednávky. Pokud ji nastavíte na hodnotu **Ne**, lze zobrazit výsledky pouze v plánu plnění. Nebudou použity na řádky prodejní objednávky.
+    5. Pokud chcete, aby byl profil distribuované správy objednávek spuštěn pro objednávky, které mají původ u každé prodejní objednávky, včetně objednávek bez určeného původu prodejní objednávky, nastavte možnost **Zpracovat objednávky s prázdným původem prodeje** na **Ano**. Chcete-li spustit profil pouze pro několik původů prodejní objednávky, můžete je definovat na stránce **Původy prodeje**, jak bude vysvětleno později.
 
     > [!NOTE]
-    > Ve verzi Commerce 10.0.12 a vyšší musí být povolena volba **Možnost přiřadit skupinu plnění k profilu plnění** v pracovním prostoru **Správa funkcí** . 
+    > Ve verzi Commerce 10.0.12 a vyšší musí být povolena volba **Možnost přiřadit skupinu plnění k profilu plnění** v pracovním prostoru **Správa funkcí**. 
     >
-    > Tato funkce přidá novou konfiguraci na stránku **Profil plnění** , která může být přiřazena k jedné skupině plnění. 
+    > Tato funkce přidá novou konfiguraci na stránku **Profil plnění**, která může být přiřazena k jedné skupině plnění. 
     >
     > Pokud vyberete skupinu plnění, budou pravidla distribuované správy objednávek pro tento profil plnění efektivně probíhat proti skladům expedice zahrnutým do skupiny plnění. 
     > 
@@ -157,31 +157,31 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
     6. Na záložce s náhledem **Právnické osoby** zvolte **Přidat** a potom zvolte právnickou osobu.
     7. Na pevné záložce **Pravidla** zvolte **Přidat** a potom zvolte pravidlo, které navážete na profil.
     8. Opakujte předchozí dva kroky, dokud nejsou všechna požadovaná pravidla přiřazena k profilu.
-    9. Zvolte **Uložit** .
-    10. V podokně akcí na kartě **Nastavení** zvolte **Způsoby dodání** .
-    11. Na stránce **Způsoby dodání** zvolte **Nový** .
+    9. Zvolte **Uložit**.
+    10. V podokně akcí na kartě **Nastavení** zvolte **Způsoby dodání**.
+    11. Na stránce **Způsoby dodání** zvolte **Nový**.
     12. V poli **Společnost** zvolte právnickou osobu. Seznam společností je omezen na právnické osoby, které jste přidali dříve.
     13. V poli **Způsob dodání** zvolte způsob dodání, který má být přiřazen k tomuto profilu. Způsob dodání nelze přiřadit k více aktivním profilům.
     14. Opakujte předchozí dva kroky, dokud nejsou všechny požadované způsoby dodání přiřazeny k profilu.
-    15. Zavřete stránku **Způsoby dodání** .
-    16. V podokně akcí na kartě **Nastavení** zvolte **Původy prodejní objednávky** .
-    17. Na stránce **Původy prodeje** zvolte **Nový** .
+    15. Zavřete stránku **Způsoby dodání**.
+    16. V podokně akcí na kartě **Nastavení** zvolte **Původy prodejní objednávky**.
+    17. Na stránce **Původy prodeje** zvolte **Nový**.
     18. V poli **Společnost** zvolte právnickou osobu. Seznam společností je omezen na právnické osoby, které jste přidali dříve.
     19. V poli **Původ prodeje** zvolte původ prodeje, který má být přiřazen k tomuto profilu. Původ prodeje nelze přiřadit k více aktivním profilům.
     20. Opakujte předchozí dva kroky, dokud nejsou všechny požadované původy prodeje přiřazeny k profilu.
-    21. Zavřete stránku **Původy prodeje** .
-    22. Nastavte možnost **Povolit profil** na **Ano** . Při dojde při nastavení k jakýmkoliv chybám, obdržíte zprávu s upozorněním.
+    21. Zavřete stránku **Původy prodeje**.
+    22. Nastavte možnost **Povolit profil** na **Ano**. Při dojde při nastavení k jakýmkoliv chybám, obdržíte zprávu s upozorněním.
 
 ## <a name="dom-processing"></a>Zpracování distribuované správy objednávek
 
 Distribuovaná správa objednávek se spustí pouze v dávkové úloze. Chcete-li konfigurovat dávkovou úlohu pro spuštění distribuované správy objednávek, postupujte takto.
 
-1. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Dávkové zpracování \> Nastavení procesoru úlohy DOM** .
+1. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Dávkové zpracování \> Nastavení procesoru úlohy DOM**.
 1. Na pevné záložce **Parametry** v poli **Profil plnění** zvolte profil, pro který musí být spuštěna distribuovaná správa objednávek.
 1. Na pevné záložce **Spustit na pozadí** v poli **Skupina dávek** zvolte nakonfigurovanou skupinu dávek.
 1. V poli **Popis úlohy** zadejte název dávkové úlohy.
 1. Zvolte **Opakování** a nadefinujte opakování dávkové úlohy.
-1. Vyberte **OK** .
+1. Vyberte **OK**.
 
 V průběhu zpracování bude distribuovaná správa objednávek zvažovat objednávku a řádky objednávky níže popsaným způsobem:
 
@@ -202,12 +202,12 @@ Poté, co použije pravidla, omezení zásob a optimalizaci, distribuovaná spr�
 
 ## <a name="results-of-dom-runs"></a>Výsledky spuštění distribuované správy objednávek
 
-Pokud je profil plnění nastaven na **Automaticky použít** , výsledky spuštění budou automaticky použity na řádky prodejní objednávky a plán plnění lze zobrazit samostatně. Pokud však profil plnění není nastaven na **Automaticky použít** , výsledky spuštění lze zobrazit pouze ze zobrazení plánu plnění. 
+Pokud je profil plnění nastaven na **Automaticky použít**, výsledky spuštění budou automaticky použity na řádky prodejní objednávky a plán plnění lze zobrazit samostatně. Pokud však profil plnění není nastaven na **Automaticky použít**, výsledky spuštění lze zobrazit pouze ze zobrazení plánu plnění. 
 
 Chcete-li zobrazit vygenerované plány plnění, postupujte podle těchto kroků.
 
-1. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Distribuovaná správa objednávek** .
-2. V pracovním prostoru **Distribuovaná správa objednávek** zvolte dlaždici **Plány plnění** .
+1. Přejděte na **Retail a Commerce \> Distribuovaná správa objednávek \> Distribuovaná správa objednávek**.
+2. V pracovním prostoru **Distribuovaná správa objednávek** zvolte dlaždici **Plány plnění**.
 3. Zvolte ID příslušného plánu plnění objednávek pro zobrazení plánu plnění.
 
     Část podrobností objednávek plánu plnění zobrazuje řádky původní prodejní objednávky, které byly součástí spuštění. Kromě standardních polí řádků prodejní objednávky zahrnuje část podrobností objednávky také následující tři pole související s distribuovanou správou objednávek:
@@ -220,8 +220,8 @@ Chcete-li zobrazit vygenerované plány plnění, postupujte podle těchto krok�
 
 ## <a name="order-line-actions-and-statuses"></a>Akce a stavy řádku objednávky
 
-Následující část popisuje nastavení na řádku objednávky. Chcete-li otevřít řádek objednávky, přejděte na **Retail a Commerce \> Zákazníci \> Všechny prodejní objednávky** .
-- Pokud nastavíte možnost **Vyloučit ze zpracování DOM** na kartě **Obecné** řádku prodejní objednávky na **Ano** , objednávka nebo řádek objednávky budou vyloučeny ze zpracování distribuované správy objednávek.
+Následující část popisuje nastavení na řádku objednávky. Chcete-li otevřít řádek objednávky, přejděte na **Retail a Commerce \> Zákazníci \> Všechny prodejní objednávky**.
+- Pokud nastavíte možnost **Vyloučit ze zpracování DOM** na kartě **Obecné** řádku prodejní objednávky na **Ano**, objednávka nebo řádek objednávky budou vyloučeny ze zpracování distribuované správy objednávek.
 - Pole **Stav DOM** na kartě **Obecné** řádku prodejní objednávky lze nastavit na jednu z následujících hodnot:
 
     - **Žádný** -Řádek objednávky nebyl nikdy zprostředkován.
@@ -233,22 +233,22 @@ Následující část popisuje nastavení na řádku objednávky. Chcete-li otev
         - **Konflikt úpravy dat** – Řádek prodejní objednávky byl změněn od doby, kdy byla zprostředkována objednávka. Proto nelze použít plán plnění na objednávku.
         - **Výjimka specifická pro řádek objednávky** – Na řádku objednávky existuje mnoho výjimek.
 
-- Během zadání prodejní objednávky lze spustit distribuovanou správu objednávek v interaktivním režimu. Když zadáváte řádek objednávky, můžete po určení produktu a množství zvolit možnost **Aktualizovat řádek** a poté v části **DOM** zvolit **Navrhnout místo plnění** . Poté uvidíte seznam míst, založený na pravidlech distribuované správy objednávek, která mohou plnit množství na řádku objednávky. Tento seznam je roztříděn podle vzdálenosti. Zvolte místo pro nastavení příslušného pracoviště a skladu na řádku prodejního objednávky. Aby tato funkce fungovala, musí existovat aktivní profil plnění, který odpovídá původu prodeje a způsobu doručení na řádku prodeje.
-- Chcete-li zobrazit protokoly spuštění distribuované správy objednávek pro řádek prodejní objednávky, zvolte **Řádek prodejní objednávky** a poté v části **DOM** zvolte **Zobrazit protokoly DOM** . Protokoly DOM zobrazují všechny události a protokoly, které byly vygenerovány spuštěním distribuované správy objednávek. Protokoly vám pomohou pochopit, proč bylo specifické místo přiřazeno k řádku objednávky a jaká pravidla a omezení byla zvažována jako součást tohoto přiřazení. Na kartě **Spravovat** jsou rovněž k dispozici protokoly distribuované správy objednávek na úrovni záhlaví prodejní objednávky.
+- Během zadání prodejní objednávky lze spustit distribuovanou správu objednávek v interaktivním režimu. Když zadáváte řádek objednávky, můžete po určení produktu a množství zvolit možnost **Aktualizovat řádek** a poté v části **DOM** zvolit **Navrhnout místo plnění**. Poté uvidíte seznam míst, založený na pravidlech distribuované správy objednávek, která mohou plnit množství na řádku objednávky. Tento seznam je roztříděn podle vzdálenosti. Zvolte místo pro nastavení příslušného pracoviště a skladu na řádku prodejního objednávky. Aby tato funkce fungovala, musí existovat aktivní profil plnění, který odpovídá původu prodeje a způsobu doručení na řádku prodeje.
+- Chcete-li zobrazit protokoly spuštění distribuované správy objednávek pro řádek prodejní objednávky, zvolte **Řádek prodejní objednávky** a poté v části **DOM** zvolte **Zobrazit protokoly DOM**. Protokoly DOM zobrazují všechny události a protokoly, které byly vygenerovány spuštěním distribuované správy objednávek. Protokoly vám pomohou pochopit, proč bylo specifické místo přiřazeno k řádku objednávky a jaká pravidla a omezení byla zvažována jako součást tohoto přiřazení. Na kartě **Spravovat** jsou rovněž k dispozici protokoly distribuované správy objednávek na úrovni záhlaví prodejní objednávky.
 
 ## <a name="run-a-clean-up-job-for-dom-fulfillment-plans"></a>Spuštění úlohy pro vyčištění pánů plnění distribuované správy objednávek
 
-Když je spuštěno zpracování distribuované správy objednávek, jsou vytvořeny plány plnění. V průběhu času bude systém obsahovat mnoho plánů plnění. Chcete-li spravovat počet plánů plnění, které systém obsahuje, můžete nakonfigurovat dávkovou úlohu, která odstraní starší plány plnění na základě hodnoty **Období zadržení ve dnech** .
+Když je spuštěno zpracování distribuované správy objednávek, jsou vytvořeny plány plnění. V průběhu času bude systém obsahovat mnoho plánů plnění. Chcete-li spravovat počet plánů plnění, které systém obsahuje, můžete nakonfigurovat dávkovou úlohu, která odstraní starší plány plnění na základě hodnoty **Období zadržení ve dnech**.
 
-1. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Dávkové zpracování \> Nastavení úlohy odstranění dat plnění DOM** . 
+1. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Dávkové zpracování \> Nastavení úlohy odstranění dat plnění DOM**. 
 1. V poli **Skupina dávek** vyberte nakonfigurovanou skupinu dávek.
 1. Zvolte **Opakování** a nadefinujte opakování dávkové úlohy.
-1. Vyberte **OK** .
+1. Vyberte **OK**.
 
 ## <a name="more-information"></a>Další informace
 
 Při používání funkce distribuované správy objednávek je nutné vzít v úvahu následující:
 
-- Momentálně se distribuovaná správa objednávek dívá pouze na objednávky vytvořené z obchodní sítě. Prodejní objednávky jsou identifikovány jako prodejní objednávky, když je možnost **Obchodní prodej** nastavena na **Ano** .
+- Momentálně se distribuovaná správa objednávek dívá pouze na objednávky vytvořené z obchodní sítě. Prodejní objednávky jsou identifikovány jako prodejní objednávky, když je možnost **Obchodní prodej** nastavena na **Ano**.
 - Společnost Microsoft netestovala distribuovanou správu objednávek s rozšířenými funkcemi správy skladu. Zákazníci a partneři musí být obezřetní při určení toho, zda je distribuovaná správa objednávek kompatibilní s rozšířenými funkcemi správy skladu a jejich relevantními procesy.
 - Distribuovaná správa objednávek je k dispozic pouze v cloudové verzi aplikace Commerce. Není podporována v místních nasazeních.
