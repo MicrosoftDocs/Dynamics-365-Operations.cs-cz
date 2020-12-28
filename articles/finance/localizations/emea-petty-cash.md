@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984673"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407624"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Pokladní hotovost pro východní Evropu a Rusko
 
@@ -61,7 +61,7 @@ Pokud chcete nastavit hotovost, otevřete složku **Pokladna a banka** &gt; **Ba
 | Více měn       | Zaškrtněte toto políčko k povolení měn, které se liší od zúčtovací měny k zaúčtování.                     |
 | Záporná hotovost         | Zaškrtněte toto políčko, pokud chcete povolit záporné peněžní zůstatky v jakékoliv měně.                                               |
 
-Pokud chcete nastavit pravidla pro kontrolu zůstatku na pokladním účtu, vyberte pokladní účet a poté v podokně akcí na kartě **Pokladní účet** klepněte ve skupině **Limit zůstatku** na **Limit zůstatku** . Zadejte následující informace.
+Pokud chcete nastavit pravidla pro kontrolu zůstatku na pokladním účtu, vyberte pokladní účet a poté v podokně akcí na kartě **Pokladní účet** klepněte ve skupině **Limit zůstatku** na **Limit zůstatku**. Zadejte následující informace.
 
 <table>
 <colgroup>
@@ -149,11 +149,11 @@ Další informace o procesu schvalování pokladních dokladů naleznete v čás
 
 ### <a name="set-up-number-sequences-for-cash-documents"></a>Nastavení číselných řad pro pokladní doklady
 
-Chcete-li nastavit číselné řady pro pokladní doklady, přejděte na **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky** . Na kartě **Číselná řada** zadejte kódy číselných řad pro tyto doklady: **Hotovostní refundační doklady** , **Hotovostní výdajové doklady** , **Opravný hotovostní doklad** , **Vyrovnání kurzových rozdílů** a **Číslo výpisu hotovosti** .
+Chcete-li nastavit číselné řady pro pokladní doklady, přejděte na **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky**. Na kartě **Číselná řada** zadejte kódy číselných řad pro tyto doklady: **Hotovostní refundační doklady**, **Hotovostní výdajové doklady**, **Opravný hotovostní doklad**, **Vyrovnání kurzových rozdílů** a **Číslo výpisu hotovosti**.
 
 ### <a name="set-up-default-values-for-cash-and-bank-management-parameters"></a>Nastavení výchozích hodnot a parametrů pro parametry pokladny a banky
 
-Chcete-li nastavit výchozí hodnoty pro parametry Pokladna a banka pro funkci pokladní hotovosti, přejděte na **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky** . Na kartě **Hotovost** zadejte následující informace:
+Chcete-li nastavit výchozí hodnoty pro parametry Pokladna a banka pro funkci pokladní hotovosti, přejděte na **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky**. Na kartě **Hotovost** zadejte následující informace:
 
 <table>
 <colgroup>
@@ -223,10 +223,10 @@ Chcete-li nastavit výchozí hodnoty pro parametry Pokladna a banka pro funkci p
 
 ### <a name="set-up-cash-journal-names-in-general-ledger"></a>Nastavení názvů hotovostních deníků v hlavní knize
 
-Chcete-li vytvořit deník pro zaúčtování platební transakce, přejděte na **Hlavní kniha** &gt; **Nastavení deníku** &gt; **Názvy deníku** a vytvořte nový záznam. V poli **Typ deníku** zadejte **Hotovost** . Definujte další výchozí parametry deníku podle potřeby.
+Chcete-li vytvořit deník pro zaúčtování platební transakce, přejděte na **Hlavní kniha** &gt; **Nastavení deníku** &gt; **Názvy deníku** a vytvořte nový záznam. V poli **Typ deníku** zadejte **Hotovost**. Definujte další výchozí parametry deníku podle potřeby.
 
 ## <a name="daily-cash-operations-via-a-slip-journal"></a>Denní pokladní operace prostřednictvím deníku dokladů
-Chcete-li vytvořit pokladní doklad prostřednictvím deníku dokladu, přejděte na **Řízení hotovosti a banky** &gt; **Platební transakce** &gt; **Deník** a vytvořte nový deník. V podokně akcí klikněte na **Řádky** . Přidejte nový řádek a zadejte následující informace.
+Chcete-li vytvořit pokladní doklad prostřednictvím deníku dokladu, přejděte na **Řízení hotovosti a banky** &gt; **Platební transakce** &gt; **Deník** a vytvořte nový deník. V podokně akcí klikněte na **Řádky**. Přidejte nový řádek a zadejte následující informace.
 
 <table>
 <colgroup>
@@ -358,10 +358,10 @@ Chcete-li vytvořit pokladní doklad prostřednictvím deníku dokladu, přejdě
 </tbody>
 </table>
 
-Při kontrole položky deníku v podokně akcí klepněte na **Ověřit** .
+Při kontrole položky deníku v podokně akcí klepněte na **Ověřit**.
 
 ## <a name="daily-cash-operations-via-a-general-journal"></a>Denní pokladní operace prostřednictvím hlavního deníku
-Chcete-li vytvořit platební transakce prostřednictvím hlavního deníku, přejděte na **Hlavní kniha** &gt; **Položky deníku** &gt; **Hlavní deníky** a vytvořte nový deník. V podokně akcí klikněte na **Řádky** . Přidejte nový řádek a zadejte následující informace.
+Chcete-li vytvořit platební transakce prostřednictvím hlavního deníku, přejděte na **Hlavní kniha** &gt; **Položky deníku** &gt; **Hlavní deníky** a vytvořte nový deník. V podokně akcí klikněte na **Řádky**. Přidejte nový řádek a zadejte následující informace.
 
 <table>
 <colgroup>
@@ -410,21 +410,21 @@ Chcete-li vytvořit platební transakce prostřednictvím hlavního deníku, př
 </tbody>
 </table>
 
-Na kartě **Fakturace** můžete zadat účetní profily pro vybraný účet a protiúčet. Pokud je registrovaná transakce placením zálohy, vyberte zaškrtávací políčko **Zálohy** na kartě **Platba** . Ve skupině polí **Zástupce** vyplňte pole stejně jako u řádků deníku dodacích listů, které chcete vytisknout v sestavě **Hotovost** . Při kontrole položky deníku v podokně akcí klepněte na **Ověřit** .
+Na kartě **Fakturace** můžete zadat účetní profily pro vybraný účet a protiúčet. Pokud je registrovaná transakce placením zálohy, vyberte zaškrtávací políčko **Zálohy** na kartě **Platba**. Ve skupině polí **Zástupce** vyplňte pole stejně jako u řádků deníku dodacích listů, které chcete vytisknout v sestavě **Hotovost**. Při kontrole položky deníku v podokně akcí klepněte na **Ověřit**.
 
 ## <a name="cash-transaction-approval-and-posting"></a>Schválení a zaúčtování hotovostní transakce
-Pro hotovostní transakce mohou být použity následující stavy: **žádný** , **potvrzeno** , **schváleno** a **odmítnuto** . Parametr **použít stav potvrzení** na pevné záložce **Schválení** karty **Hotovost** v okně **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky** umožňuje aktivovat další dva stavy: **Potvrzeno** a **Odmítnuto** . Potvrzení je vhodné, když jsou vydávány pokladní doklady a hotovostní příjmy a výdaje, které jsou sdíleny mezi dvěma zaměstnanci: účetní a pokladní. Funkce **Resetovat stav** změní stav aktuální transakce. Z možnosti **Schválené** se stane **potvrzeno** a z možnosti **potvrzeno** se stane **žádný** . Položky pokladního deníku lze upravit, pouze pokud je stav **žádný** . Hotovostní transakce mohou být odmítnuty pouze v případě, že je stav transakce **potvrzeno** . Odmítnuté platební doklady jsou k dispozici v sestavě **Deník registrace pokladních dokladů** , ale neprojeví se v sestavě **Pokladní kniha** . K potvrzení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **potvrzení** . Číslo objednávky je generováno podle určené číselné řady. Stav transakce se změní na **potvrzeno** a již nemůžete upravit řádek deníku. Pokladní zůstatek účtu se nezmění. Pokud chcete pokladní doklad odmítnout, klepněte na tlačítko **Schválení dokumentů** &gt; **odmítnout** . Tato možnost je k dispozici pouze pro dokumenty, které mají stav **potvrzeno** . Ke schválení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **Schválit** . Stav **Schváleno** znamená, že peněžní prostředky byly přijaty nebo použity. Zůstatek hotovosti se změní. Platební transakci lze zaúčtovat. Pokud chcete zrušit stav **schváleno** obnovit stav na **žádný** , klepněte na tlačítko **schválení dokumentů** &gt; **resetovat stav** . Zaúčtovat lze pouze schválené hotovostní transakce. Když chcete zaúčtovat deník, klepněte na **Zaúčtovat** &gt; **Zaúčtovat** .
+Pro hotovostní transakce mohou být použity následující stavy: **žádný**, **potvrzeno**, **schváleno** a **odmítnuto**. Parametr **použít stav potvrzení** na pevné záložce **Schválení** karty **Hotovost** v okně **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky** umožňuje aktivovat další dva stavy: **Potvrzeno** a **Odmítnuto**. Potvrzení je vhodné, když jsou vydávány pokladní doklady a hotovostní příjmy a výdaje, které jsou sdíleny mezi dvěma zaměstnanci: účetní a pokladní. Funkce **Resetovat stav** změní stav aktuální transakce. Z možnosti **Schválené** se stane **potvrzeno** a z možnosti **potvrzeno** se stane **žádný**. Položky pokladního deníku lze upravit, pouze pokud je stav **žádný**. Hotovostní transakce mohou být odmítnuty pouze v případě, že je stav transakce **potvrzeno**. Odmítnuté platební doklady jsou k dispozici v sestavě **Deník registrace pokladních dokladů**, ale neprojeví se v sestavě **Pokladní kniha**. K potvrzení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **potvrzení**. Číslo objednávky je generováno podle určené číselné řady. Stav transakce se změní na **potvrzeno** a již nemůžete upravit řádek deníku. Pokladní zůstatek účtu se nezmění. Pokud chcete pokladní doklad odmítnout, klepněte na tlačítko **Schválení dokumentů** &gt; **odmítnout**. Tato možnost je k dispozici pouze pro dokumenty, které mají stav **potvrzeno**. Ke schválení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **Schválit**. Stav **Schváleno** znamená, že peněžní prostředky byly přijaty nebo použity. Zůstatek hotovosti se změní. Platební transakci lze zaúčtovat. Pokud chcete zrušit stav **schváleno** obnovit stav na **žádný**, klepněte na tlačítko **schválení dokumentů** &gt; **resetovat stav**. Zaúčtovat lze pouze schválené hotovostní transakce. Když chcete zaúčtovat deník, klepněte na **Zaúčtovat** &gt; **Zaúčtovat**.
 
 ## <a name="print-a-cash-order"></a>Tisk platební slevy
-Pokud chcete vytisknout pokladní doklad, vyberte řádek deníku dokladů a v podokně akcí klepněte na tlačítko **tisk** &gt; **Sestava pokladního dokladu** . Systém generuje tiskový formulář pro hotovostní refundační doklad nebo hotovostní výdajový doklad, podle toho, zda je zadána částka v poli **MD** nebo **Dal** pro vybraný řádek:
+Pokud chcete vytisknout pokladní doklad, vyberte řádek deníku dokladů a v podokně akcí klepněte na tlačítko **tisk** &gt; **Sestava pokladního dokladu**. Systém generuje tiskový formulář pro hotovostní refundační doklad nebo hotovostní výdajový doklad, podle toho, zda je zadána částka v poli **MD** nebo **Dal** pro vybraný řádek:
 
--   Pokud je částka v poli **MD** : pokladní refundační doklad
--   Pokud je částka v poli **Dal** : hotovostní výdajový doklad
+-   Pokud je částka v poli **MD**: pokladní refundační doklad
+-   Pokud je částka v poli **Dal**: hotovostní výdajový doklad
 
-Řádky deníku dokladů, které mají stav **potvrzeno** , **schváleno** nebo **odmítnuto** lze vytisknout. Můžete také vytisknout pokladní doklady objednávek na v **řízení hotovosti a banky** &gt; **Dotazy a sestavy** &gt; **Pokladní doklad** .
+Řádky deníku dokladů, které mají stav **potvrzeno**, **schváleno** nebo **odmítnuto** lze vytisknout. Můžete také vytisknout pokladní doklady objednávek na v **řízení hotovosti a banky** &gt; **Dotazy a sestavy** &gt; **Pokladní doklad**.
 
 ## <a name="periodic-tasks"></a>Periodické úlohy
-Následující úkoly lze provést v okně **Řízení hotovosti a banky** &gt; **Pravidelné úlohy** .
+Následující úkoly lze provést v okně **Řízení hotovosti a banky** &gt; **Pravidelné úlohy**.
 
 <table>
 <colgroup>
@@ -471,7 +471,7 @@ Vyrovnaná částka se projeví v poli <strong>Měna vyrovnání</strong> na str
 | Dotaz nebo sestava                             | popis                                                                                                                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Zobrazení hotovostních transakcí                        | Pro řádek listu deníku použijte tlačítko **dotazy** v podokně akcí k zobrazení transakcí hlavní knihy, zůstatek hotovosti a dalších informací.                                                                                  |
-| Hotovostní transakce                              | Pokud chcete zobrazit platební transakce, přejděte na **řízení hotovosti a banky** &gt; **Dotazy a sestavy** &gt; **Platební transakce** . Pomocí funkce **Filtr** na kartě Záznamy pro zahrnutí zadejte další kritéria omezující výběr hotovostních transakcí. |
+| Hotovostní transakce                              | Pokud chcete zobrazit platební transakce, přejděte na **řízení hotovosti a banky** &gt; **Dotazy a sestavy** &gt; **Platební transakce**. Pomocí funkce **Filtr** na kartě Záznamy pro zahrnutí zadejte další kritéria omezující výběr hotovostních transakcí. |
 | Registrační deník (pro Estonsko, Rusko) | Sestava v okně **řízení hotovosti a banky** &gt; **dotazy a sestavy** &gt; **deník registrace** odráží všechny hotovostní refundační a hotovostní výdajové doklady, které byly vydány.                                   |
 | Pokladní kniha (pro Lotyšsko, Litvu, Rusko)     | Sestava v okně **řízení hotovosti a banky** &gt; **dotazy a sestavy** &gt; **pokladní kniha sestavy** odráží skutečné peněžní fond pohyby (příjmy a výdaje).                                                            |
 

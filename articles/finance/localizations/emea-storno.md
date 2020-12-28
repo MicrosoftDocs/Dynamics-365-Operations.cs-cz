@@ -17,11 +17,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5ee8f3f5c850ad0ae519c83a689d12b9a1471712
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983090"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407620"
 ---
 # <a name="storno-accounting"></a>Záporné storno
 
@@ -29,7 +29,7 @@ ms.locfileid: "3983090"
 
 Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
 
-*Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno* . Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.
+*Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*. Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.
 
 ## <a name="example"></a>Příklad
 Účetní zaúčtuje fakturu dodavatele s částkou 120 USD. Během procesu platby se zjistí, že účetní omylem zadal 120 USD, namísto 102 USD. Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 102 USD. Další informace naleznete v tématu  [Přehled faktur dodavatele](../accounts-payable/vendor-invoices-overview.md). Následující tabulka uvádí obecné záznamy pro Storno.

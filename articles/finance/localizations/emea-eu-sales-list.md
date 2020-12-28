@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183487"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407603"
 ---
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
@@ -152,11 +152,11 @@ Transakce je považována za intrakomunitární obchodní transakci, pokud je do
 
 ### <a name="generating-the-eu-sales-list-report"></a>Vygenerování sestavy Souhrnné hlášení (EU)
 
-Můžete generovat sestavu **Souhrnné hlášení (EU)** pomocí funkce **Vykazování**na stránce **Souhrnné hlášení (EU)**. Funkce umožňuje vybrat období vykazování a pomocí filtrů definovat záznamy ESL, které mají být zahrnuty. Kromě toho můžete použít další parametry, které jsou specifické pro jednotlivé země/oblasti. Dále je možné generovat náhled sestavy, elektronický soubor nebo obojí. Funkce **Vykazování**použije nastaveními sestavy a formátu souboru uvedené na stránce **Parametry zahraničního obchodu**. Obecně platí, že sestava **Souhrnné hlášení (EU)** se skládá ze samostatných řádků, které uvádí celkové částky dodávek podle země/oblasti protistrany, čísla osvobození od daně a typ vykazování (budou zahrnuty trojstranné obchodní transakce). Po vytvoření sestavy **Souhrnné hlášení (EU)** za určité období můžete označit záznamy ESL, které jsou zahrnuty do sestavy nastavením položky **Stav vykazování** na hodnotu **Hlášeno**. Tento stav lze nastavit použitím funkce **Označit jako ohlášené**na stránce **Souhrnné hlášení (EU)**.
+Můžete generovat sestavu **Souhrnné hlášení (EU)** pomocí funkce **Vykazování** na stránce **Souhrnné hlášení (EU)**. Funkce umožňuje vybrat období vykazování a pomocí filtrů definovat záznamy ESL, které mají být zahrnuty. Kromě toho můžete použít další parametry, které jsou specifické pro jednotlivé země/oblasti. Dále je možné generovat náhled sestavy, elektronický soubor nebo obojí. Funkce **Vykazování** použije nastaveními sestavy a formátu souboru uvedené na stránce **Parametry zahraničního obchodu**. Obecně platí, že sestava **Souhrnné hlášení (EU)** se skládá ze samostatných řádků, které uvádí celkové částky dodávek podle země/oblasti protistrany, čísla osvobození od daně a typ vykazování (budou zahrnuty trojstranné obchodní transakce). Po vytvoření sestavy **Souhrnné hlášení (EU)** za určité období můžete označit záznamy ESL, které jsou zahrnuty do sestavy nastavením položky **Stav vykazování** na hodnotu **Hlášeno**. Tento stav lze nastavit použitím funkce **Označit jako ohlášené** na stránce **Souhrnné hlášení (EU)**.
 
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Uzavření období vykazování souhrnného hlášení EU
 
-Po dokončení procesu vykazování za určité období (například pokud finanční úřady přijaly sestavu **Souhrnné hlášení (EU)**), lze označit záznamy ESL, které jsou zahrnuty do sestavy za dané období, nastavením položky **Stav vykazování** na hodnotu **Uzavřené**. Tento stav lze nastavit použitím funkce **Označit jako uzavřené**na stránce **Souhrnné hlášení (EU)**. Pokud vrátíte uzávěrku období, můžete označit záznamy ESL nastavením položky **Stav vykazování** na hodnotu **Zahrnuto**. Tyto záznamy pak mohou být znovu zahrnuty v sestavě **Souhrnné hlášení (EU)**. Tento stav lze nastavit použitím funkce **Označit jako** **zahrnuto**na stránce **Souhrnné hlášení (EU)**.
+Po dokončení procesu vykazování za určité období (například pokud finanční úřady přijaly sestavu **Souhrnné hlášení (EU)**), lze označit záznamy ESL, které jsou zahrnuty do sestavy za dané období, nastavením položky **Stav vykazování** na hodnotu **Uzavřené**. Tento stav lze nastavit použitím funkce **Označit jako uzavřené** na stránce **Souhrnné hlášení (EU)**. Pokud vrátíte uzávěrku období, můžete označit záznamy ESL nastavením položky **Stav vykazování** na hodnotu **Zahrnuto**. Tyto záznamy pak mohou být znovu zahrnuty v sestavě **Souhrnné hlášení (EU)**. Tento stav lze nastavit použitím funkce **Označit jako** **zahrnuto** na stránce **Souhrnné hlášení (EU)**.
 
 
 

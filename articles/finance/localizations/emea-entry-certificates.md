@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175690"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407612"
 ---
 # <a name="eu-entry-certificates"></a>Vstupní certifikáty EU
 
@@ -84,7 +84,7 @@ Vstupní certifikát EU můžete vytvořit automaticky pomocí dodacího listu n
 
 ### <a name="registering-an-eu-entry-certificate"></a>Registrace vstupního certifikátu EU
 
-Pokud je registrace povinná, můžete vstupní certifikát EU vystavený třetí stranou registrovat na stránce**Deník vstupního certifikátu**.
+Pokud je registrace povinná, můžete vstupní certifikát EU vystavený třetí stranou registrovat na stránce **Deník vstupního certifikátu**.
 
 ### <a name="uploading-a-received-eu-entry-certificate"></a>Odeslání přijatého vstupního certifikátu EU
 

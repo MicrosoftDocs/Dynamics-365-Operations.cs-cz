@@ -1,9 +1,9 @@
 ---
-title: DPH stornovacího poplatku
+title: Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 description: Toto téma popisuje určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí, v Saúdské Arábii a Singapuru.
 author: epodkolz
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,21 +15,28 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760226"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515044"
 ---
-# <a name="reverse-charge-vat"></a>DPH stornovacího poplatku
+# <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obecný postup pro nastavení přenesení daňové povinnosti k DPH pro země EU, GCC a Singapur.
+Toto téma popisuje obecný přístup k nastavení funkce přenesení daňové povinnosti pro země / regiony, které přijímají režimy DPH nebo GST.
+                                                                                 
+Dostupnost funkce v zemi / oblasti je řízena následujícími funkcemi v pracovním prostoru **Správa funkcí**.
 
-> [!NOTE]                                                                                  
-> Pro Bahrajn, Kuvajt, Omán a Katar by měla být povolena funkce **Dostupnost přenesení daňové povinnosti pro další země** v pracovním prostoru **Správa funkcí**. 
+| Funkce                                              | Země nebo oblast                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Žádná konkrétní funkce                                | Rakousko </br>Belgie </br>Bulharsko </br>Chorvatsko </br>Kypr </br>Česká republika </br>Dánsko  </br>Estonsko  </br>Finsko  </br>Francie  </br>Německo  </br>Maďarsko  </br>Island  </br>Irsko  </br>Itálie  </br>Lotyšsko  </br>Lichtenštejnsko  </br>Litva  </br>Lucembursko  </br>Nizozemsko  </br>Norsko Polsko </br>Portugalsko </br>Rumunsko  </br>Saúdská Arábie </br>Singapur  </br>Slovensko  </br>Slovinsko  </br>Španělsko  </br>Švédsko  </br>Švýcarsko  </br>Spojené království  </br>Spojené arabské emiráty |
+| Zpětný poplatek za další země            | Bahrajn  </br>Kuvajt  </br>Omán  </br>Katar                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Povolit mechanismus přenesení daňové povinnosti pro schéma DPH/GST | Všechny ostatní země / regiony kromě:  </br>Brazílie  </br>Indie  </br>Rusko                                                                                                                                                                                                                                                                                                                                                                                         |
+ 
+ Další informace viz [Povolení mechanismu zpětného účtování pro funkci schématu DPH / GST](#enable-reverse-charge) dále v tomto tématu.
 
 Mechanismus reverse charge znamená přenesení odpovědnosti za účetnictví a vykazování DPH z prodávajícího na kupujícího. Příjemce tedy do výkazu DPH uvádí DPH na výstupu (v roli prodávajícího) i DPH na vstupu (v roli kupujícího).
 
@@ -61,7 +68,7 @@ Skupině DPH položek je třeba přiřadit tento záporný kód DPH a pak při�
 </tbody>
 </table>
 
-## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Nastavení skupin DPH a skupin DPH položky
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Nastavení skupin DPH a skupin DPH položky
 Doporučujeme používat pro nákupní a prodejní operace samostatné skupiny DPH.
 
 <table>
@@ -79,10 +86,10 @@ Doporučujeme používat pro nákupní a prodejní operace samostatné skupiny 
 </tr>
 </table>
 
-## <a name="set-up-reverse-charge-groups"></a>Nastavení skupin pro reverse charge
+## <a name="set-up-reverse-charge-item-groups"></a><a name="reverse-charge-item-group"></a>Nastavení skupin položek přenesení daňové povinnosti
 Na stránce **Stornovací poplatek – skupiny položek** (**Daň** &gt; **Nastavení** &gt; **DPH** &gt; **Stornovací poplatek – skupiny položek**) je možné definovat skupiny produktů nebo služeb (případně jednotlivé produkty či služby), pro které má mechanismus reverse charge platit. U každé skupiny položek pro reverse charge definujte seznam položek, skupin položek a kategorií pro prodej nebo nákup.
 
-## <a name="set-up-reverse-charge-rules"></a>Nastavení pravidel pro reverse charge
+## <a name="set-up-reverse-charge-rules"></a><a name="reverse-charge-rules"></a>Nastavení pravidel pro reverse charge
 Na stránce **Pravidla pro stornovací poplatek** (**Daň** &gt; **Nastavení** &gt; **DPH** &gt; **Pravidla pro stornovací poplatek**) je možné definovat pravidla pro účely nákupu a prodeje. Je možné nakonfigurovat sadu pravidel pro platnost mechanismu reverse charge. U každého pravidla je třeba nastavit tato pole:
 
 - **Typ dokumentu** – vyberte možnost **Nákupní objednávka**, **Deník faktur dodavatele**, **Prodejní objednávka**, **Volná faktura**, **Deník faktur odběratele** a/nebo **Faktura dodavatele**.
@@ -99,18 +106,18 @@ Je také možné určit, zda se má zobrazit oznámení a zda se má a řádek
 - **Výzva** – zobrazí se oznámení s potvrzením o použitelnosti mechanismu reverse charge.
 - **Nastavit** – řádek dokumentu se aktualizuje bez oznámení.
 
-## <a name="set-up-countryregion-properties"></a>Nastavení vlastností země/oblasti
+## <a name="set-up-countryregion-properties"></a><a name="Set-up-Country/region-properties"></a>Nastavení vlastností země/oblasti
 Na stránce **Parametry zahraničního obchodu** (**Daň** &gt; **Nastavení** &gt; **Prodejní daň** &gt; **Zahraniční obchod** &gt; **Parametry zahraničního obchodu**) na kartě **Vlastnosti země/oblasti** nastavte zemi/oblast aktuální právnické osoby na *Domácí*. Nastavte **Typ země/oblasti** zemí EU, které se účastní obchodu v rámci EU, s aktuální právnickou osobou na hodnotu *EU*. Nastavte **Typ země/oblasti** zemí GCC, které se účastní obchodu v rámci GCC, s aktuální právnickou osobou na hodnotu *GCC*.
 
 ## <a name="set-up-default-parameters"></a>Nastavení výchozích parametrů
 Funkci reverse charge VAT aktivujete tak, že na stránce **Parametry hlavní knihy** na kartě **Stornovací poplatek** nastavíte možnost **Povolit stornovací poplatek** na **Ano**. V polích **Nákupní objednávka – skupina DPH** a **Prodejní objednávka – skupina DPH** vyberte výchozí skupiny DPH. Při splnění podmínky použitelnosti přenesení daňové povinnosti se u řádku nákupní nebo prodejní objednávky aktualizují tyto skupiny DPH.
 
-## <a name="reverse-charge-on-a-sales-invoice"></a>Reverse charge u prodejní faktury
+## <a name="reverse-charge-on-a-sales-invoice"></a><a name="reverse-charge-sale"></a>Reverse charge u prodejní faktury
 U prodeje s mechanismem reverse charge prodávající neúčtuje DPH. Místo toho jsou na faktuře uvedeny položky, na které se vztahuje reverse charge, a celková částka DPH pro reverse charge.
 
 Při zaúčtování prodejní faktury s přenesením daňové povinnosti mají transakce DPH směr **DPH na výstupu** a nulové DPH a jsou zaškrtnuta políčka **Přenesení daňové povinnosti** a **Osvobození od daně**.
 
-## <a name="reverse-charge-on-a-purchase-invoice"></a>Reverse charge u nákupní faktury
+## <a name="reverse-charge-on-a-purchase-invoice"></a><a name="reverse-charge-purchase"></a>Reverse charge u nákupní faktury
 U nákupů s mechanismem reverse charge funguje kupující, který přijímá fakturu s reverse charge, pro účely účetnictví DPH jako kupující i prodávající.
 
 Při zaúčtování nákupní faktury s reverse charge se vytvoří dvě transakce DPH. Jedna transakce má směr **DPH na vstupu**. Druhá transakce má směr **DPH na výstupu** a je u ní zaškrtnuto políčko **Stornovací poplatek**.
@@ -118,3 +125,15 @@ Při zaúčtování nákupní faktury s reverse charge se vytvoří dvě transa
 Následující snímek obrazovky má jedna transakce směr **DPH na vstupu** směru a druhá **DPH na výstupu**. 
 
 ![Zaúčtování DPH](media/apac-sau-posted-sales-tax.png)
+
+## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Povolit mechanismus přenesení daňové povinnosti pro funkci schématu DPH/GST
+V pracovním prostoru **Správa funkcí** najděte funkci a vyberte **Povolit**.
+
+Po povolení funkce bude karta **Zpětné náklady** dostupná u všech právnických osob. Povolte funkci stornovacího poplatku pro právnickou osobu nastavením možnosti **Povolit přenesení poplatků** na **Ano**.
+
+K dispozici budou následující stránky a položky nabídky související s nastavením funkce:
+ - **Skupiny položek stornovacího poplatku** (**Daň** > **Nastavení** > **DPH** > **Skupiny položek stornovacího poplatku**). Další informace naleznete v části [Nastavení skupin položek přenesení daňové povinnosti](#reverse-charge-item-group).
+ - **Pravidla stornovacího poplatku** (**Daň** > **Nastavení** > **DPH** > **Pravidla stornovacího poplatku**). Viz [Nastavení pravidel stornovacího poplatku](#reverse-charge-rules).
+ - **Parametry zahraničního obchodu** (**Daň** > **Nastavení** > **DPH** > **Zahraniční obchod** > **Parametry zahraničního obchodu**). Viz [Nastavení vlastností země/oblasti](#Set-up-Country/region-properties).
+
+Zaškrtávací políčko **Stornovací poplatek** bude k dispozici na stránkách **Skupina DPH** a **Zaúčtovaná DPH**. Další informace najdete v částech [Nastavení skupin DPH a skupin DPH položek](#sales-tax-item-sales-tax-groups), [Stornovací poplatek na prodejní faktuře](#reverse-charge-sale) a [Stornovací poplatek na nákupní faktuře](#reverse-charge-purchase).

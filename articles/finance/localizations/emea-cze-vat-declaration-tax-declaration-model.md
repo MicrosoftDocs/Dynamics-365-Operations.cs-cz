@@ -18,11 +18,11 @@ ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: a3482e9ab2dbdcf068ebfeb381ad98080733b318
-ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821218"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407614"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
