@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896914"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528212"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (2. dubna 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
@@ -54,8 +56,8 @@ V aplikacích Attract a Onboard problémy zaznamenané koncovými uživateli pom
 ## <a name="changes-in-core-hr"></a>Změny v Core HR
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2216.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Ajtzakuzace Platform Update 25 for Finance and Operations
-Další informace o aktualizaci Platform Update 25 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 25 aplikace Dynamics 365 for Finance and Operations (duben 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Aktualizace Platform 25 pro Finance and Operations
+Další informace o aktualizaci Platform Update 25 pro Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 25 aplikace Dynamics 365 for Finance and Operations (duben 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Rozšířené zabezpečení kompenzace (fixní a variabilní)
 V mnoha organizacích mohou mít manažeři kompenzací a zaměstnaneckých výhod přístup pouze k určitým záznamům o kompenzacích. To může zahrnovat záznamy pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně může oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Můžete přiřadit role zabezpečení fixním i variabilním plánům. Tyto role zabezpečení určují přístup k plánům a souvisejícím zaměstnaneckým datům, jako jsou záznamy o platech nebo bonusech, takže pouze tyto role mohou zpracovávat kompenzace pro skupiny zaměstnanců.
@@ -77,4 +79,4 @@ Organizace mohou vyžadovat kódy důvodu pro konkrétní typy pracovního volna
 S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobrazí počet nalezených duplicit. Chcete-li otevřít novou stránku, můžete vybrat poskytnutý odkaz a vyhodnotit, zda chcete použít detekovanou shodu. Aby nedošlo k přerušení zadávání dat, formulář duplicit se neotevře automaticky.
 
 ###  <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
-V aktualizaci Platform Update 25 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí. 
+S aktualizací Platform Update 25 Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí. 

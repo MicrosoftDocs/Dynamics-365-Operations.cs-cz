@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646032"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517201"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory pro síť CDN
 
@@ -97,8 +97,8 @@ Chcete-li nastavit pravidlo směrování ve službě Azure Front Door Service, p
 1. Do pole **Název** zadejte **výchozí**.
 1. V poli **Přijatý protokol** vyberte možnost **HTTP a HTTPS**.
 1. Do pole **Hostitelé front-endu** zadejte **název-klienta-elektronického-obchodování-dynamics.azurefd.net**.
-1. V části **Vzory, které se mají vyhledat** zadejte do horního pole položku **/\***.
-1. V části **Podrobnostipostupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
+1. V části **Vzory, které se mají vyhledat** zadejte do horního pole položku **/\** _.
+1. V části _*Podrobnosti postupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
 1. V poli **Back-endový fond** vyberte **ecom-backend**.
 1. Ve skupině polí **Předávací protokol** vyberte možnost **Požadavek na shodu**. 
 1. Nastavte možnost **Přepis adresy URL** na hodnotu **Zakázáno**.
@@ -110,8 +110,8 @@ Chcete-li nastavit pravidlo použití mezipaměti ve službě Azure Front Door S
 1. Do pole **Název** zadejte **statické objekty**.
 1. V poli **Přijatý protokol** vyberte možnost **HTTP a HTTPS**.
 1. Do pole **Hostitelé front-endu** zadejte **název-klienta-elektronického-obchodování-dynamics.azurefd.net**.
-1. V části **Vzory, které se mají vyhledat** zadejte do horního pole **/\_msdyn365/\_scnr/\***.
-1. V části **Podrobnostipostupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
+1. V části **Vzory, které se mají vyhledat** zadejte do horního pole **/\_msdyn365/\_scnr/\** _.
+1. V části _*Podrobnosti postupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
 1. V poli **Back-endový fond** vyberte **ecom-backend**.
 1. Ve skupině polí **Předávací protokol** vyberte možnost **Požadavek na shodu**.
 1. Nastavte možnost **Přepis adresy URL** na hodnotu **Zakázáno**.
@@ -142,19 +142,19 @@ Podrobné pokyny pro přidání vlastní domény do vašich Azure Front Door naj
 
 Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné používat s webem Commerce.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
-[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+[Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

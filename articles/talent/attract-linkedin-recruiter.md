@@ -3,7 +3,7 @@ title: Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Attract
 description: Použijte integraci LinkedIn poskytovanou aplikací Microsoft Dynamics 365 Talent - Attract ke zdrojování uchazečů o zaměstnání pomocí LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833039"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528262"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Attract
 
@@ -34,6 +34,9 @@ LinkedIn je nejvyšší světová síť profesionálů, která poskytuje příst
 
 Pokud tuto funkcinemáte, obraťte se na správce. Dříve než budete moci využít výhod LinkedIn Recruiter z Attract, je nutné, aby váš správce [nastavil integraci s LinkedIn](./attract-admin-linkedin.md). Poté můžete nastavit připojení LinkedIn Recruiter a začít vyhledávat kandidáty.
 
+>[!IMPORTANT]
+>Od 1. července 2020 již LinkedIn nepodporuje Internet Explorer 11. Uživatelé mohou stále používat LinkedIn s Internet Explorer 11, ale zobrazí se výzva k upgradu nebo použití jiného prohlížeče. Další informace viz [Podporované internetové prohlížeče pro LinkedIn](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
+
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>Nastavit připojení pomocí LinkedIn Recruiter
 
 Chcete-li začít pracovat s LinkedIn Recruiter prostřednictvím aplikace Attract, je nutné vytvořit připojení pomocí LinkedIn Recruiter. V tomto kroku budete potřebovat své přihlašovací údaje do LinkedIn Recruiter.
@@ -42,19 +45,35 @@ Chcete-li začít pracovat s LinkedIn Recruiter prostřednictvím aplikace Attra
 2. Vyberte **Nastavení uživatele**.
 3. Na kartě **Připojení** vyberte možnost **Připojit** vedle **LinkedIn**. Postupujte podle pokynů, které jsou k dispozici službou LinkedIn.
 
-    ![[Nastavit připojení k LinkedIn Recruiter z Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Nastavení připojení k LinkedIn Recruiter z aplikace Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>Zobrazit kandidáty LinkedIn v aplikaci Attract
 
 Po připojení LinkedIn Recruiter můžete zobrazit linkedinové profily kandidátů v aplikaci Attract.
 
+>[!NOTE]
+>Pokud vám byla přidělena licence Recruiter (Náborář), můžete zobrazit úplné informace o kandidátech.<br><br>
+>Pokud máte licenci Hiring Manager (Náborový manažer) nebo žádnou licenci, nezapomeňte se odhlásit z LinkedIn nebo LinkedIn Recruiter před přechodem na kartu LinkedIn pro kandidáta v aplikaci Attract. Budete moci zobrazit základní údaje veřejného profilu kandidáta, například jeho křestní jméno a příjmení.
+
 1. V aplikaci Attract vyberte **Pracovní pozice** nebo **Skupiny talentů** v levé části a poté vyberte uchazeče.
 
-    ![[Zobrazit kandidáty LinkedIn v aplikaci Attract] (./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
+    ![[Zobrazit kandidáty LinkedIn v aplikaci Attract](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. V profilu kandidáta vyberte kartu **LinkedIn**. Můžete zobrazit profil uchazeče spolu s historií InMail a s historií poznámek LinkedIn.
+2. V profilu kandidáta vyberte kartu **LinkedIn**. Můžete zobrazit profil kandidáta a historii InMail.
 
-Odtud můžete uložit kandidáta do projektu LinkedIn Recruiter, odeslat inMail nebo použijte Update Me pro nastavení výstrahy v aplikaci LinkedIn Recruiter.
+   ![Zobrazení informací o kandidátovi na LinkedIn](./media/attract-candidate-linkedin-tab.png)
+
+Odtud můžete provést následující akce:
+
+- Vyberte kartu **Náborové aktivity** k zobrazení následujících:
+   
+   - Poznámky o náboráři (veřejné i soukromé). Ve výchozím nastavení jsou poznámky soukromé a viditelné pouze pro vlastníka poznámek.
+   - Aktivita InMail (mimo obsah InMail). Posunutím do dolní části stránky zobrazíte výměnu InMail s vaším potenciálním zákazníkem a další uživatele ve vaší organizaci, kteří s vaším potenciálním zákazníkem interagují.
+   - Aktivita odmítnutí kandidátů
+
+- Volbou **Odeslat InMail** pošlete InMail, aniž byste museli opustit aplikaci Attract.
+
+- Volbou **Uložit do úlohy** uložíte úlohu, aniž byste opustili Attract.
 
 > [!NOTE]
 > LinkedIn profil uchazeče se zobrazí v Attract, když se informace o uživateli kandidáta shodují s informacemi LinkedIn. Používají se následující pravidla párování:
@@ -87,7 +106,7 @@ Pomocí LinkedIn Recruiter můžete sledovat, zda uchazeč žádal o jiná praco
     - **Zpětná vazba z pohovoru** – zobrazení zpětné vazby, kterou vedoucí pohovorů zaslali do systému Attract.
     - **Poznámky** – zobrazí se poznámky, které byly pro tohoto kandidáta zadány v Attract.
 
-    ![[Zobrazit informace Attract z LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[Zobrazení informací o aplikaci Attract v LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Údaje o uchazeči a žádosti se nebudou synchronizovat s programem LinkedIn Recruiter, pokud se uchazeč nedostal za fázi potenciálního uchazeče.

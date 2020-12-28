@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e37777b8000fb3afbc72ff9c61347085816e36c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431215"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527783"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tento článek vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. Tento článek předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto článku, kontaktujte podporu.
 
@@ -96,7 +98,7 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
    
     - **Zkušební prostředí** – tato prostředí jsou vytvářena s datem vypršení platnosti. Po vypršení platnosti bude automaticky odebráno vaše prostředí a všechny instance Human Resources, které jsou v něm obsaženy.
    
-    - **Nepodporované oblasti** – Aplikace Human Resources je v současné době podporována pouze v následujících oblastech: Spojené státy, Evropa, Velká Británie, Austrálie, Kanada a Asie.
+    - **Nepodporované oblasti** – Aplikace Human Resources je v současné době podporována pouze v následujících oblastech: Spojené státy, Evropa, Spojené království, Austrálie, Kanada a Asie.
 
     > [!NOTE]
     > Prostředí Human Resources je zajišťováno ve stejné oblasti, v níž je prostředí Power Apps zajišťováno. Migrace prostředí Human Resources do jiné oblasti není podporována.

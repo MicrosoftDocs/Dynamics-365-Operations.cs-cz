@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3c2a644fd7096668fcefc73c67068fccde6894b0
-ms.sourcegitcommit: 472f8bfc02acf80b07caf7c53bbb397411e946cc
+ms.openlocfilehash: 0bf37453740d1c2b09b5bd7ae4841f23da20a3ec
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3040226"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687530"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Snadný offline přepínač pro operace dárkového poukazu a dobropisu
 
@@ -35,7 +34,7 @@ Pokud zařízení pokladního místa (POS) ztratí spojení s databází kanálu
 
 Interní dárkové poukazy vyžadují službu v reálném čase, protože zůstatek pro dárkové poukazy musí být centrálně udržován v Microsoft Dynamics 365 Commerce Headquarters. Aby se zabránilo podvodům nebo jiným problémům se synchronizací, dárkové poukazy jsou uzamčeny okamžitě po přidání do transakce. Funkce uzamknutí zajišťuje, že dárkový poukaz nelze použít na více terminálech současně. Po dokončení transakce je dárkový poukaz automaticky aktualizován a odemknut.
 
-Pokud však POS ztratí spojení po přidání dárkového poukazu do transakce, může se dárkový poukaz stát nepoužitelným. Chcete-li předejít této situaci, Dynamics 365 Commerce obsahuje parametr, který umožňuje dokončit transakce zahrnující řádek dárkového poukazu v době, kdy je POS v režimu offline. Je-li tento parametr zapnut, budou transakce dárkových poukazů, které jsou vynuceny offline, uloženy společně s offline transakcemi a budou synchronizovány s Commerce Headquarters při synchronizaci offline transakcí. Synchronizace také odemkne dárkový poukaz, takže jej bude možné použít na jiném terminálu.
+Pokud však POS ztratí spojení po přidání dárkového poukazu do transakce, může být dárkový poukaz nepoužitelný. Chcete-li předejít této situaci, Dynamics 365 Commerce obsahuje parametr, který umožňuje dokončit transakce zahrnující řádek dárkového poukazu v době, kdy je POS v režimu offline. Je-li tento parametr zapnut, budou transakce dárkových poukazů, které jsou vynuceny offline, uloženy společně s offline transakcemi a budou synchronizovány s Commerce Headquarters při synchronizaci offline transakcí. Synchronizace také odemkne dárkový poukaz, takže jej bude možné použít na jiném terminálu.
 
 Chcete-li povolit funkci uzavření transakcí dárkového poukazu po přepnutí do režimu offline, přejděte na kartu **Zaúčtování** na stránce **Parametry Commerce**. Na dané kartě vyhledejte pevnou záložku **Dárkový poukaz** a nastavte možnost **Povolit uzavření transakcí dárkového poukazu v offline režimu** na hodnotu **Ano**.
 

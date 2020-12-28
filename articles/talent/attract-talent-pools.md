@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078036"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527686"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Zazdrojování kandidátů se skupinami talentů v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Náboráři a manažeři náboru mohou organizovat uchazeče pomocí funkce fondů talentů v aplikaci Attract. Fondy talentů vám mohou pomoci sledovat a spojovat se se všemi uchazeči, kteří se ucházejí o práci ve vaší organizaci.
 
@@ -113,7 +115,7 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Na kartě **
 
 - Karta **Dokumenty** zobrazuje všechny dokumenty, které uchazeč přidal ze svého profilu nebo v průběhu žádosti o práci. Tato karta slouží ke správě životopisů, průvodních dopisů, pracovního portfolia atd. uchazeče. Na této kartě můžete také přidat dokumenty.
 
-    Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
+    Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
 
 - Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu LinkedIn Recruiter. Další informace naleznete v tématu [Zazdrojování kandidátů s LinkedIn Recruiter v aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107345"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594229"
 ---
 # <a name="create-call-center-orders"></a> Vytváření objednávek v kontaktním středisku
 
@@ -55,4 +55,10 @@ Tato procedura vás provede vyhledáním odběratele vytvořením nové objedná
     * V této proceduře zadejte částku odpovídající výši zůstatku objednávky, který lze zobrazit na stránce Souhrn prodejní objednávky vlevo od pole Částka. Díky této akci budete moci ukončit objednávku jako plně zaplacenou.  
 17. Vyberte **OK**.
 18. Vyberte **Odeslat**.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Přizpůsobení transakčních e-mailů podle způsobu doručení](../customize-email-delivery-mode.md)
+
+[Změna způsobu dodání v POS](../pos-change-delivery-mode.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
+ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930010"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476070"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -50,17 +50,17 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 >[!NOTE]
 >Oznámení dostanou pouze uživatelé, kteří jsou přihlášeni k Teams a používají aplikaci Human Resources Teams.
 
-1. V modulu Human Resources vyberte **Správa systému** .
+1. V modulu Human Resources vyberte **Správa systému**.
 
-2. Vybrerte **Odkazy** .
+2. Vybrerte **Odkazy**.
 
-3. V části **Nastavení** vyberte **Systémové parametry** .
+3. V části **Nastavení** vyberte **Systémové parametry**.
 
-4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano** .
+4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**.
 
    ![Povolení oznámení aplikace Teams v systémových parametrech](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
-5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano** .
+5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano**.
 
    ![Povolení oznámení Teams pro všechny uživatele](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
@@ -68,27 +68,26 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 
 Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznámení zapnout nebo vypnout pro jednotlivé uživatele.
 
-1. V modulu Human Resources vyberte **Správa systému** .
+1. V modulu Human Resources vyberte **Správa systému**.
 
-2. Vybrerte **Odkazy** .
+2. Vybrerte **Odkazy**.
 
-3. V části **Uživatelé** vyberte **Možnosti uživatele** .
+3. V části **Uživatelé** vyberte **Možnosti uživatele**.
 
-4. Vyberte kartu **Pracovní postup** .
+4. Vyberte kartu **Pracovní postup**.
 
-5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano** , čímž povolíte oznámení pro uživatele nebo **Ne** , čímž deaktivujete oznámení pro uživatele.
+5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**, čímž povolíte oznámení pro uživatele nebo **Ne**, čímž deaktivujete oznámení pro uživatele.
 
    ![Povolte oznámení aplikace Teams na kartě Možnosti uživatele na kartě Pracovní postup.](./media/hr-admin-teams-leave-app-notifications.png)
 
-6. Zvolte **Uložit** .
+6. Zvolte **Uložit**.
 
 ## <a name="known-issues"></a>Známé problémy
 
 | Výdej | Stav |
 | --- | --- |
-| Horizontální posouvání nefunguje na Android telefonech | Horizontální posouvání není problém na zařízeních iOS nebo počítačích. Pracujeme na opravě pro Android. |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
-| Nelze zrušit požadavek ve stavu **Probíhá kontrola** . | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
+| Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
 | Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
 
 ## <a name="troubleshooting"></a>Řešení potíží

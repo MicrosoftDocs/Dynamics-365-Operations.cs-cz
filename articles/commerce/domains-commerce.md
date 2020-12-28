@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3764994"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517348"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -47,13 +47,13 @@ Pokud již došlo ke zřízení, můžete vytvořit požadavek na službu a při
 
 ## <a name="commerce-generated-urls"></a>Adresy URL generované řešením Commerce
 
-Při zřizování prostředí elektronického obchodování vygeneruje Commerce adresu URL, která bude pracovní adresou prostředí. Tuto adresu URL obsahuje odkaz na web elektronického obchodu zobrazeném v LCS po zřízení prostředí. Adresa URL generovaná řešením Comerce je ve formátu `https://<e-Commerce tenant name>.commerce.dynamics.com`, kde název klienta elektronického obchodu je název zadaný v LCS pro prostředí Commerce.
+Při zřizování prostředí elektronického obchodu Dynamics 365 Commerce vygeneruje Commerce adresu URL, která bude pracovní adresou prostředí. Tuto adresu URL obsahuje odkaz na web elektronického obchodu zobrazeném v LCS po zřízení prostředí. Adresa URL generovaná řešením Comerce je ve formátu `https://<e-commerce tenant name>.commerce.dynamics.com`, kde název klienta elektronického obchodu je název zadaný v LCS pro prostředí Commerce.
 
 Můžete také použít názvy hostitelů výrobního webu v prostředí sandbox. Tato možnost je ideální, když budete kopírovat web z prostředí sandbox do produkčního prostředí.
 
 ## <a name="site-setup"></a>Nastavení webu
 
-Po zřízení prostředí elektronického obchodování musíte nastavit svůj web v konfigurátoru webů Commerce a přidružit jej k pracovní adrese URL.
+Po zřízení prostředí elektronického obchodu musíte nastavit svůj web v konfigurátoru webů Commerce a přidružit jej k pracovní adrese URL.
 
 Při prvním nastavení webu v konfigurátoru webů se zobrazí dialogové okno **Nastavte svůj web**.
 
@@ -102,9 +102,9 @@ Pokud není řetězec dotazu na doménu zadán v prostředí s více doménami, 
 
 ## <a name="traffic-forwarding-in-production"></a>Přesměrování provozu ve výrobě
 
-Můžete simulovat více domén pomocí parametrů řetězce dotazu na doménu na samotném koncovém bodě commerce.dynamics.com. Ale pokud potřebujete začít fungovat ve výrobě, musíte přesměrovat provoz pro vlastní doménu na koncový bod `<e-Commerce tenant name>.commerce.dynamics.com`.
+Můžete simulovat více domén pomocí parametrů řetězce dotazu na doménu na samotném koncovém bodě commerce.dynamics.com. Ale pokud potřebujete začít fungovat ve výrobě, musíte přesměrovat provoz pro vlastní doménu na koncový bod `<e-commerce tenant name>.commerce.dynamics.com`.
 
-Koncový bod `<e-Commerce tenant name>.commerce.dynamics.com` nepodporuje vlastní domény Secure Sockets Layers (SSL), takže musíte nastavit vlastní domény pomocí služby front door nebo sítě pro doručování obsahu (CDN). 
+Koncový bod `<e-commerce tenant name>.commerce.dynamics.com` nepodporuje vlastní domény Secure Sockets Layers (SSL), takže musíte nastavit vlastní domény pomocí služby front door nebo sítě pro doručování obsahu (CDN). 
 
 Chcete-li nastavit vlastní domény pomocí služby front door nebo CDN, máte dvě možnosti:
 
@@ -152,17 +152,17 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
 
   ## <a name="additional-resources"></a>Další prostředky
 
-  [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+  [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
   [Nastavení kanálu online obchodu](online-stores.md)
 
   [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-  [Přiřazení online webu ke kanálu](associate-site-online-store.md)
+  [Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
   [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-  [Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+  [Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
   [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

@@ -17,17 +17,17 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8bf49a8eb78d0557ef105b40dd4cb5f0d24ce4
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 75edc1b683c4ea6c2bac8e509e6f6da8c56c5e6a
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973926"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665240"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profily certifikátů definované uživatelem pro maloobchodní prodejny
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## <a name="overview"></a>Přehled
 
@@ -59,38 +59,38 @@ Funkce profilů certifikátů podporuje následující scénáře v kanálech Co
 
 Následující postup vysvětluje, jak nastavit profily certifikátů. Před použitím profilů certifikátů v kanálech Commerce nakonfigurujte nastavení podle těchto pokynů.
 
-1. V pracovním prostoru **Správa funkcí** zapněte funkci **Profily certifikátů definované uživatelem pro maloobchodní prodejny** .
-2. Přejděte do nabídky **Správa systému \> Nastavení \> Profily certifikátů** .
-3. Vytvořte záznam a nastavte pro něj pole **Profil certifikátu** , **Název** a **Popis** .
+1. V pracovním prostoru **Správa funkcí** zapněte funkci **Profily certifikátů definované uživatelem pro maloobchodní prodejny**.
+2. Přejděte do nabídky **Správa systému \> Nastavení \> Profily certifikátů**.
+3. Vytvořte záznam a nastavte pro něj pole **Profil certifikátu**, **Název** a **Popis**.
 
     > [!NOTE]
     > Profil certifikátu je jedinečný identifikátor certifikátu ve všech společnostech a komponentách Commerce.
 
 3. Na kartě **Právnické osoby** přidejte řádek a vyberte právnickou osobu (společnost), pro kterou by se měl aktuální profil certifikátu používat. Pokud by se měl profil certifikátu používat pro více právnických osob, opakujte tento krok a přidejte řádek pro každou další právnickou osobu.
-4. Vyberte **Nastavení** a otevře se stránka **Nastavení profilu certifikátu** , kde můžete pro profil certifikátu zadat nastavení specifické pro společnost.
+4. Vyberte **Nastavení** a otevře se stránka **Nastavení profilu certifikátu**, kde můžete pro profil certifikátu zadat nastavení specifické pro společnost.
 
 ### <a name="certificate-profile-settings"></a>Nastavení profilů certifikátů
 
-Když vyberete **Nastavení** pro řádky profilu certifikátu, zobrazí se stránka **Nastavení profilu certifikátu** . Na této stránce můžete určit, které certifikáty lze použít, když se v kanálech Commerce volá aktuální profil certifikátu. Můžete také určit pořadí, ve kterém mají být certifikáty prohledávány.
+Když vyberete **Nastavení** pro řádky profilu certifikátu, zobrazí se stránka **Nastavení profilu certifikátu**. Na této stránce můžete určit, které certifikáty lze použít, když se v kanálech Commerce volá aktuální profil certifikátu. Můžete také určit pořadí, ve kterém mají být certifikáty prohledávány.
 
 > [!NOTE]
-> Pole **Priorita** se nastaví automaticky. Hodnota **1** představuje nejvyšší prioritu. Když je na stránku **Nastavení profilu certifikátu** přidán nový řádek, jeho priorita je nastavena na číslo, které je o jednu větší než priorita předchozího řádku. Chcete-li změnit prioritu konkrétního řádku, vyberte ho a poté vyberte buď možnost **Posunout nahoru** , která prioritu zvýší, nebo možnost **Posunout dolů** , která priorita sníží.
+> Pole **Priorita** se nastaví automaticky. Hodnota **1** představuje nejvyšší prioritu. Když je na stránku **Nastavení profilu certifikátu** přidán nový řádek, jeho priorita je nastavena na číslo, které je o jednu větší než priorita předchozího řádku. Chcete-li změnit prioritu konkrétního řádku, vyberte ho a poté vyberte buď možnost **Posunout nahoru**, která prioritu zvýší, nebo možnost **Posunout dolů**, která priorita sníží.
 
-Když přidáte nový řádek na stránku **Nastavení profilu certifikátu** , nastavte následující pole:
+Když přidáte nový řádek na stránku **Nastavení profilu certifikátu**, nastavte následující pole:
 
-- **Typ umístění** – Vyberte umístění, kde je certifikát uložen. Toto pole má dvě možné hodnoty: **Místní certifikát** a **Key Vault** .
-- **Certifikát Key Vault** – Toto pole je povinné, pokud nastavíte pole **Typ umístění** na **Key Vault** . Slouží k určení tajného kódu certifikátu Key Vault.
+- **Typ umístění** – Vyberte umístění, kde je certifikát uložen. Toto pole má dvě možné hodnoty: **Místní certifikát** a **Key Vault**.
+- **Certifikát Key Vault** – Toto pole je povinné, pokud nastavíte pole **Typ umístění** na **Key Vault**. Slouží k určení tajného kódu certifikátu Key Vault.
 
     > [!NOTE]
     > Před použitím certifikátu Key Vault v profilech certifikátů nahrajte certifikát do úložiště trezoru klíčů a postupujte podle pokynů v článku [Nastavení klienta Azure Key Vault](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
-- **Název obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát** . Slouží k určení výchozího názvu obchodu, který by se měl použít k hledání v místních certifikátech.
-- **Umístění obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát** . Slouží k určení výchozího místa obchodu, který by se měl použít k hledání v místních certifikátech.
+- **Název obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího názvu obchodu, který by se měl použít k hledání v místních certifikátech.
+- **Umístění obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího místa obchodu, který by se měl použít k hledání v místních certifikátech.
 
     > [!NOTE]
     > Výchozí název obchodu a umístění obchodu se přidávají proto, aby se zjednodušil proces hledání místních certifikátů v modulu Commerce Runtime. X509StoreProvider má seznam složek, kde jsou certifikáty uloženy. Pokud není zadán výchozí název obchodu a výchozí umístění obchodu, pokusí se X509StoreProvider najít certifikát v ostatních složkách ve svém seznamu.
 
-- **Kryptografický otisk** – Toto pole je povinné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát** . Slouží k zadání kryptografického otisku certifikátu.
+- **Kryptografický otisk** – Toto pole je povinné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k zadání kryptografického otisku certifikátu.
 - **Komentáře** – Toto pole je volitelné a umožňuje uživatelům zadávat poznámky.
 
 ### <a name="workflow-searching-certificates-in-the-commerce-runtime"></a>Pracovní postup: Hledání certifikátů v modulu Commerce Runtime
@@ -98,15 +98,15 @@ Když přidáte nový řádek na stránku **Nastavení profilu certifikátu** , 
 Tady je základní pracovní postup, který se používá k vyhledání certifikátu, když je v modulu Commerce Runtime volán profil certifikátu.
 
 1. Systém identifikuje, zda má profil certifikátu specifické nastavení společnosti pro aktuální právnickou osobu.
-1. Systém se pokusí najít certifikát pomocí hodnot na stránce **Nastavení profilu certifikátu** pro řádek, kde je pole **Priorita** nastaveno na **1** .
+1. Systém se pokusí najít certifikát pomocí hodnot na stránce **Nastavení profilu certifikátu** pro řádek, kde je pole **Priorita** nastaveno na **1**.
 
-    - Pokud je pole **Typ umístění** nastaveno na **Key Vault** , použije se k vyhledání certifikátu na stránce **Parametry trezoru klíčů** hodnota pole **Tajný kód certifikátu Key Vault** . Certifikát se poté vyhledá v úložišti trezoru klíčů.
-    - Pokud je pole **Typ umístění** nastaveno na **Místní certifikát** , X509StoreProvider nejprve vyhledá certifikát pomocí výchozího názvu obchodu a umístění obchodu, pokud jsou tyto parametry zadány. Poté prohledá všechny ostatní složky ve svém seznamu složek.
+    - Pokud je pole **Typ umístění** nastaveno na **Key Vault**, použije se k vyhledání certifikátu na stránce **Parametry trezoru klíčů** hodnota pole **Tajný kód certifikátu Key Vault**. Certifikát se poté vyhledá v úložišti trezoru klíčů.
+    - Pokud je pole **Typ umístění** nastaveno na **Místní certifikát**, X509StoreProvider nejprve vyhledá certifikát pomocí výchozího názvu obchodu a umístění obchodu, pokud jsou tyto parametry zadány. Poté prohledá všechny ostatní složky ve svém seznamu složek.
 
 1. Pokud certifikát nebyl nalezen, proces se opakuje pro řádek, kde je pole **Priorita** nastaveno na **2** a tak dále.
 
 > [!NOTE]
-> Pokud profil certifikátu nemá žádná nastavení pro aktuální právnickou osobu, nebo pokud je vyhledávání certifikátu neúspěšné pro všechny řádky na stránce **Nastavení profilu certifikátu** , certifikát nebyl nalezen.
+> Pokud profil certifikátu nemá žádná nastavení pro aktuální právnickou osobu, nebo pokud je vyhledávání certifikátu neúspěšné pro všechny řádky na stránce **Nastavení profilu certifikátu**, certifikát nebyl nalezen.
 
 #### <a name="caching-the-results-of-certificate-searches"></a>Ukládání výsledků vyhledávání certifikátů do mezipaměti
 
@@ -116,7 +116,7 @@ Výsledky vyhledávání certifikátů se ukládají do mezipaměti. Výchozí d
 
 Pokud je zavedena nová verze certifikátu, ale nelze ho aktualizovat ve všech obchodech současně, funkce profilů certifikátů umožní postupnou aktualizaci certifikátu.
 
-1. Najděte profil certifikátu a řádek, který by měl být aktualizován, a poté vyberte **Nastavení** .
+1. Najděte profil certifikátu a řádek, který by měl být aktualizován, a poté vyberte **Nastavení**.
 1. Přidejte řádek a určete nastavení, která souvisí s nejnovější verzí certifikátu.
 1. Zvyšte hodnotu **Priorita** nového řádku. Pomocí tlačítka **Posunout nahoru** přesuňte řádek tak, aby byl nad řádkem pro předchozí verzi stejného certifikátu.
 

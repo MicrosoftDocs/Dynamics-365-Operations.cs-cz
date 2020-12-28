@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529701"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (6. května 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
@@ -43,9 +45,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2282. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-26-for-finance-and-operations"></a>Ajtzakuzace Platform Update 26 for Finance and Operations
+### <a name="platform-update-26-for-finance-and-operations"></a>Aktualizace Platform 26 pro Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 26 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 26 aplikace Dynamics 365 Finance and Operations (květen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Další podrobnosti o aktualizaci Platform Update 26 pro Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 26 aplikace Dynamics 365 Finance and Operations (květen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Podpora entity Common Data Service pro vlastní pole
 

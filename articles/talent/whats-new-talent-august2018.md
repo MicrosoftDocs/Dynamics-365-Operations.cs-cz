@@ -1,7 +1,7 @@
 ---
 title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (srpen 2018)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897757"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690093"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (srpen 2018)
 
@@ -33,7 +33,7 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynami
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Zobrazení záznamů s vypršením platnosti v samoobsluze pro manažery
 
-Nyní můžete zobrazit záznamy s vypršením platnosti v samoobsluze pro manažery. Nové možnosti vám umožní nakonfigurovat, jaké informace budou k dispozici pro zobrazení manažerům. Patří mezi ně:
+Nyní můžete zobrazit záznamy s vypršením platnosti v samoobsluze pro manažery. Nové možnosti vám umožní nakonfigurovat, jaké informace budou k dispozici pro zobrazení manažerům. Tyto možnosti zahrnují:
 
 -   Certifikáty
 
@@ -51,7 +51,7 @@ Tato funkce také umožňuje možnost určit rozsah dní, ve kterém mají být 
 
 Podle role lze konfigurovat možnosti, které budou dostupné při zadání požadavku na převod. Tato funkce umožňuje další flexibilitu napříč rolemi v organizaci.
 
-Například manažeři, kteří žádají o převody zaměstnanců, nemusí mít přístup k navrhování nebo zadávání částek kompenzací nebo k výběru seznamů úkolů, které budou přidruženy k žádosti o převod. V takovém případě mohou manažeři vytvořit a odeslat požadavky na převod, ale nemohou zadávat kompenzace nebo přiřazení k seznamu úkolů. V této stejné konfiguraci bude oddělení lidských zdrojů schopno přiřadit nové hodnoty kompenzací, stejně jako další kontrolní seznamy k dokončení v důsledku dokončení převodu.
+Například manažeři, kteří žádají o převody zaměstnanců, nemusí mít přístup k navrhování nebo zadávání částek kompenzací nebo k výběru seznamů úkolů, které budou přidruženy k žádosti o převod. Manažeři mohou vytvořit a odeslat požadavky na převod, ale nemohou zadávat kompenzace nebo přiřazení k seznamu úkolů. V této stejné konfiguraci bude oddělení personalistiky moci přiřadit nové hodnoty kompenzací a další kontrolní seznamy k dokončení v důsledku dokončení převodu.
 
 Ve výchozím nastavení jsou nové možnosti konfigurace nastaveny tak, aby nezměnily možnosti před touto aktualizací.
 
@@ -59,7 +59,7 @@ Ve výchozím nastavení jsou nové možnosti konfigurace nastaveny tak, aby nez
 
 V modulu Pracovní volno a absence jsou nyní k dispozici další datová pole.
 
-Pomocí této funkce můžete nastavit základ období časového rozlišení na úrovni plánu pro použití konkrétních dat zaměstnance. To umožňuje použít data jiná než počáteční datum plánu během procesu časového rozlišení pracovního volna. Možnosti pro specifická data zaměstnance zahrnují následující hodnoty:
+Pomocí této funkce můžete nastavit základ období časového rozlišení na úrovni plánu pro použití konkrétních dat zaměstnance. Data jiná než počáteční datum plánu mohou být použita během procesu časového rozlišení pracovního volna. Možnosti pro specifická data zaměstnance zahrnují následující hodnoty:
 
 -   Vlastní (k dispozici před touto aktualizaci)
 

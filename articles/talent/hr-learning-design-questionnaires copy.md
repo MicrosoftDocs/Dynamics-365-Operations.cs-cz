@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.openlocfilehash: 7559a986c1a112eb1ccc6069ba5b8eb5c6e5b72b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3007884"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460522"
 ---
 # <a name="design-questionnaires"></a>Návrh dotazníků
 
@@ -104,7 +104,7 @@ Respondenti mohou na otázku odpovědět dvěma způsoby v závislosti na předm
 
 Chcete-li poskytnout seznam možných odpovědí pro uzavřené otázky, můžete vytvořit odpovědi na stránce **Skupiny odpovědí**. 
 
-Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí**na stránce **Otázky**. 
+Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí** na stránce **Otázky**. 
 
 Skupinu odpovědí lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
 

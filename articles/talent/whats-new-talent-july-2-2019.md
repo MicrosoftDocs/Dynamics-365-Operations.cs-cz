@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2aaf64fe1ebdaad8ec9b84615dbb8d48616f9a3a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899005"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460623"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-02-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (02. července 2019)
 

@@ -18,21 +18,23 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897688"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529155"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (6. prosince 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Sestavení 8.1.2071**
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core HR.
 
 
-## <a name="platform-update-22-for-finance-and-operations"></a>Ajtzakuzace Platform Update 22 for Finance and Operations
+## <a name="platform-update-22-for-finance-and-operations"></a>Aktualizace Platform 22 pro Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Export až 1 milionu řádků do aplikace Excel
 
@@ -40,7 +42,7 @@ Funkci Export do aplikace Excel lze nyní konfigurovat, aby uživatelům umožni
 
 ### <a name="restyled-personalization-toolbar"></a>Upravený Panel nástrojů
 
-Panel nástrojů byl upraven v rámci aktualizace platformy 22 for Finance and Operations, aby uživatelům pomohl snadněji si přizpůsobit prostředí aplikace Talent. Byly provedeny tyto změny: 
+Panel nástrojů byl upraven v rámci aktualizace Platform update 22 pro aplikaci Finance and Operations, aby uživatelům pomohl snadněji si přizpůsobit prostředí aplikace Talent. Byly provedeny tyto změny: 
 
 -  Název každého nástroje přizpůsobení je nyní zobrazen s ikonou, která uživatelům pomáhá rychle rozpoznat nástroj, o který mají zájem.
 -  Popis způsobu použití nástroje je odteď také zobrazen a pomáhá uživatelům pochopit, jak potřebné změny provést.  
@@ -48,13 +50,13 @@ Panel nástrojů byl upraven v rámci aktualizace platformy 22 for Finance and O
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimalizované filtrování "je jeden z“
 
-Filtr "je jeden z“ lze použít pro většinu polí, když používáte podokno filtru a rozevírací seznamy záhlaví mřížky. Tento operátor umožňuje filtrovat pole podle vícera hodnot. Novinka operátoru "je jeden z" je k dispozici s aktualizací platformy 22 for Finance and Operations. Pro více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Filtr "je jeden z“ lze použít pro většinu polí, když používáte podokno filtru a rozevírací seznamy záhlaví mřížky. Tento operátor umožňuje filtrovat pole podle vícera hodnot. Novinka operátoru "je jeden z" je k dispozici s aktualizací Platform update 22 pro aplikaci Finance and Operations. Pro více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"
 
 U některých úkolů mohou uživatelé pracovat se seznamem hodnot v Excelu, který si přejít použít k filtrování dat v aplikaci Talent. Například může uživatel lidských zdrojů identifikovat sadu zaměstnanců ze sestavy, kteří vyžadují další průzkum v systému a bylo by vhodné pro tohoto uživatele, aby bylo možné zkopírovat seznam přímo z Excelu do pole filtru v aplikaci Talent.
 
-S aktualizací platformy 22 for Finance and Operations nyní operátor "je jeden z" v podokně filtru a sloupci mřížky filtrování nyní rozpozná seznamy zkopírované z aplikace Excel, aby je bylo možné přímo vložit do pole filtr. To zahrnuje řadu hodnot zkopírovaných z různých řádků a sloupců v Excelu. Další informace o této funkci naleznete v tématu [Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+S aktualizací Platform update 22 pro aplikaci Finance and Operations nyní operátor „je jeden z“ v podokně filtru a sloupci mřížky filtrování nyní rozpozná seznamy zkopírované z aplikace Excel, aby je bylo možné přímo vložit do pole filtr. To zahrnuje řadu hodnot zkopírovaných z různých řádků a sloupců v Excelu. Další informace o této funkci naleznete v tématu [Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Náhled
 
@@ -133,7 +135,7 @@ Aktualizované mapování by mělo vypadat takto.
 
 Transformace pole pohlaví je rovněž třeba aktualizovat. Vyberte typ mapy **fn** (funkce) pro pohlaví a aktualizujte následující mapování hodnot.
 
-|Hodnota Common Data Service   | Hodnota aplikace Finance and Operations | ------------|------------------ -----------| | 75440000 | Muž                         | | 75440001    | Žena                       | | 75440002    | Žádná                         | | 75440003 | NonSpecific                  |
+| Hodnota Common Data Service   | Hodnota Finance and Operations | | ------------|------------------ -----------| | 75440000    | Muž                         | | 75440001    | Žena                       | | 75440002    | Není                         | | 75440003    | Nezadáno                  |
 
 Aktualizované mapování by mělo vypadat takto.
 

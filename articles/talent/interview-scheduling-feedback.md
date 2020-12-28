@@ -15,11 +15,11 @@ ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
 ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832738"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460596"
 ---
 # <a name="schedule-interviews-in-attract"></a>Plánování pohovorů v aplikaci Attract
 
@@ -44,7 +44,7 @@ Když kandidát obdrží e-mail, aby odpověděl na požadavek, může se přihl
 ### <a name="schedule"></a>Plán
 Existuje několik konfigurací, které jsou k dispozici pro plánovač pohovoru pro použití a rychlé vytvoření a odeslání cyklu pohovorů tazatelům a kandidátovi.
 
-1. Klikněte na **Vytvořit plán**a v poli **Přidat tazatele** uveďte všechny tazatele, kteří budou součástí cyklu pohovoru.
+1. Klikněte na **Vytvořit plán** a v poli **Přidat tazatele** uveďte všechny tazatele, kteří budou součástí cyklu pohovoru.
 [![Zobrazení náborového pracovníka v aplikaci Attract pro zahájení plánování cyklu pohovoru](./media/schedule-start-over.png)](./media/schedule-start-over.png)   
     Pokud kandidát odpověděl na požadavek na dostupnost k pohovoru, pole **Datum pohovoru** bude předvyplněno s jeho výběrem. V případě potřeby můžete vybrat jiné datum.
     
