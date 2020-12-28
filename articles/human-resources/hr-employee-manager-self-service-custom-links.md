@@ -3,7 +3,7 @@ title: Vytváření vlastních odkazů v samoobsluze pro manažery
 description: Tohle téma popisuje, jak vytvořit vlastní odkazy v samoobsluze pro manažery v Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/21/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,22 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8f6f0d2d8de2e74060cc86143a91620f42810e3
-ms.sourcegitcommit: ee643d651d57560bccae2f99238faa39881f5c64
+ms.openlocfilehash: 4c9197ee124f53ff8d4acc90cb490113d35e80b4
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088550"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654282"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Vytváření vlastních odkazů v samoobsluze pro manažery
 
-[!include [banner](includes/preview-feature.md)]
-
 V samoobsluze pro manažery můžete na kartu **Můj tým** přidat vlastní odkazy. Tato funkce umožňuje rychlý přístup k důležitým informacím. Je to podobné jako přidávání vlastních odkazů na kartě **Moje informace** v samoobsluze pro zaměstnance.
 
-## <a name="enable-the-preview-feature"></a>Povolení funkce Preview
+## <a name="enable-the--feature"></a>Povolení funkce
 
-Chcete-li použít tuto funkci, povolte **(Preview) Vlastní odkazy v samoobsluze pro manažery** v pracovním prostoru **Správa funkcí**. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+Chcete-li použít tuto funkci, povolte **Vlastní odkazy v samoobsluze pro manažery** v pracovním prostoru **Správa funkcí**. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
 ## <a name="set-up-custom-links"></a>Zřízení vlastních odkazů
 

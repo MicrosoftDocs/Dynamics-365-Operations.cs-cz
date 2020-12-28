@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055397"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517153"
 ---
 # <a name="breadcrumb-module"></a>Modul popisu cesty
 
@@ -46,7 +46,7 @@ Následující obrázek znázorňuje příklad modulu popisu cesty, který zobra
 
 ## <a name="breadcrumb-module-settings"></a>Nastavení modulu popisu cesty
 
-Modul popisu cesty řídí nastavení **Typ zobrazení popisu cesty na stránce podrobností o produktu** , které je definováno v **Nastavení webu \> Rozšíření** v tvůrci webů. Toto nastavení má tři mezi možné hodnoty:
+Modul popisu cesty řídí nastavení **Typ zobrazení popisu cesty na stránce podrobností o produktu**, které je definováno v **Nastavení webu \> Rozšíření** v tvůrci webů. Toto nastavení má tři mezi možné hodnoty:
 
 - **Zobrazit hierarchii kategorií** – Je-li tato hodnota vybrána, modul popisu cesty zobrazí hierarchii celé kategorie produktu, který je zobrazen na stránce s podrobnostmi o produktu.
 - **Zobrazit odkaz Zpět na výsledky** – Když je tato hodnota vybrána, modul popisu cesty zobrazí na stránce podrobností o produktu odkaz „Zpět na výsledky“, pokud uživatel otevřel stránku podrobností o produktu z modulu, který podporuje odkaz „Zpět na výsledky“. Tato funkce je k dispozici, když uživatelé přecházejí ze stránek kategorií, vyhledávání, seznamu a seznamů doporučení. Pro podporu této funkce mají moduly kolekce produktů a výsledků vyhledávání vlastnost, která je pojmenována **Povolit odkaz Zpět na výsledky na stránce podrobností o produktu**. Tato vlastnost vám poskytuje flexibilitu při definování, které moduly by měly podporovat funkci odkazu „Zpět na výsledky“ na stránce podrobností o produktu. Například když je vybrána možnost **Zobrazit odkaz Zpět na výsledky** pro nastavení **Typ zobrazení popisu cesty na stránce podrobností o produktu** a možnost **Povolit odkaz Zpět na výsledky na stránce podrobností o produktu** pro modul výsledků vyhledávání na stránce vyhledávání, odkaz „Zpět na výsledky“ se zobrazí, když uživatelé přejdou ze stránky vyhledávání na stránku podrobností o produktu.
@@ -66,18 +66,18 @@ Modul popisu cesty řídí nastavení **Typ zobrazení popisu cesty na stránce 
 
 Chcete-li přidat modul popisu cesty na stránku podrobností o produktu a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Přejděte na **Nastavení webu /> Rozšíření** a pak pro nastavení **Typ zobrazení popisu cesty na stránce podrobností o produktu** vyberte **Zobrazit hierarchii kategorií a odkaz Zpět na výsledky**.
+1. Přejděte na **Nastavení webu \> Rozšíření** a pak pro nastavení **Typ zobrazení popisu cesty** na stránce podrobností o produktu vyberte **Zobrazit hierarchii kategorií**.
 1. Přejděte na **Šablony** a vyberte šablonu stránky podrobností o produktu.
-1. V pozici **Kontejner** , který obsahuje modul buy box, vyberte tři tečky ( **...** ) a poté vyberte **Přidat modul**.
+1. V pozici **Kontejner**, který obsahuje modul buy box, vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Popis cesty** a poté klikněte na tlačítko **OK**.
-1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a otevřete stránku podrobností o produktu, která používá šablonu stránky podrobností o produktu. Pokud stránka podrobností o produktu ještě neexistuje, vytvořte ji.
-1. V pozici **Kontejner** , který obsahuje modul buy box, vyberte tři tečky ( **...** ) a poté vyberte **Přidat modul**.
+1. V pozici **Kontejner**, který obsahuje modul buy box, vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Popis cesty** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností pozice **Popis cesty** v sekci **Kořen** vyberte **Text odkazu**.
 1. V dialogovém okně **Text odkazu** zadejte **Domů** a poté v sekci **Cíl odkazu** vyberte **Přidat odkaz**.
 1. V dialogovém okně **Přidat odkaz** vyberte odkaz pro kořen popisu cesty a poté klepněte na tlačítko **OK**.
-1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 ## <a name="additional-resources"></a>Další prostředky

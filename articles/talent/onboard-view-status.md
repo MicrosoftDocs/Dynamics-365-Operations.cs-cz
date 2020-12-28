@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460613"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Zobrazení stavu úkolů zaškolení zaměstnanců a vašich úkolů
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboard umožňuje zobrazit pokrok, kterého dosa
 
 1. V levé nabídce vyberte možnost **Průvodci**. Zobrazí se přehled o pokroku všech průvodců zaškolováním, které jste odeslali.
 
-    ![[Zobrazení stavu průvodců zaškolováním] (./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Zobrazení stavu průvodců zaškolováním](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Pokud chcete dále procházet, vyberte průvodce, kterého chcete zobrazit.
 3. Výběrem karty **Aktivity** zjistíte, které aktivity nově přijatý zaměstnanec dokončil.
 
-    ![[Zobrazení aktivit, které nově přijatý zaměstnanec dokončil] (./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Zobrazení aktivit, které nově přijatý zaměstnanec dokončil](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Zobrazení úkolů zaškolování, které jsou vám přiřazeny
 

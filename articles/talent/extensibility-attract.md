@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: ddc6593431585ed79cc15f7ede5daf856f11b959
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832854"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527235"
 ---
 # <a name="extensibility-in-attract"></a>Rozšiřitelnost v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Aplikace Microsoft Dynamics 365 Talent je vytvořena na Common Data Service a lze ji rozšířit mnoha způsoby pomocí Microsoft Power Platform a možností, které nabízí Common Data Service. Proto můžete konfigurovat a přizpůsobit systém pomocí Microsoft Power Apps a Microsoft Power Automate. Můžete rovněž získat další analýzy o osobách pomocí Microsoft Power BI. Kromě toho je díky novým vlastním aktivitám, jako jsou například Power Apps a Webový obsah (iframe), proces náboru přizpůsobitelní více, než kdy dříve. Díky těmto aktivitám můžete proces náboru přizpůsobit potřebám a procesům vaší firmy a zajistit, aby náborový tým i kandidáti měli bezproblémový a přizpůsobený zážitek
 
@@ -45,7 +47,7 @@ V následujícím seznamu jsou uvedeny kroky k aktualizaci pole **Důvod zamítn
 3. Na kartě **Prostředí** vyberte prostředí, které chcete spravovat, a dvakrát klikněte, abyste se dostali na kartu **Podrobnosti**.
 4. Na kartě **Podrobnosti** zvolte **Centrum pro správu Dynamics 365**.
 5. Vyberte instanci, kterou chcete změnit, a zvolte **Otevřít**.
-6. Přejděte na **Nastavení**a pak **Přizpůsobení** a zvolte **Přizpůsobit systém**.
+6. Přejděte na **Nastavení** a pak **Přizpůsobení** a zvolte **Přizpůsobit systém**.
 7. Vyhledejte entitu, pro kterou chcete rozbalit sadu možností, výběrem možnosti **Entity** a rozbalením skupiny. V tomto příkladu to bude **entita žádosti o práci**.
 8. Přejděte na pole, pro které chcete rozšířit sadu možností, výběrem možnosti **Pole**. V tomto příkladu to bude **msdyn_rejectionreason**. Dvakrát klikněte na pole.
 9. V poli **Sada možností** vyberte **Upravit**.

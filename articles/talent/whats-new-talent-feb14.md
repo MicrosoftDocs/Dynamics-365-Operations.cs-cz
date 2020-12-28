@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-02-14
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 32f3bab38233833498ed566fa1558a023b3bc0dd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899213"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460577"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-14-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (14. února 2019)
 
@@ -44,7 +44,7 @@ S touto změnou bude nyní entita **Fixní kompenzace zaměstnance** exportovat 
 ### <a name="employment-end-date-doesnt-honor-employee-preferred-time-zone-settings"></a>Koncové datum zaměstnání nedodržuje upřednostňované časové pásmo zaměstnance
 Koncové datum zaměstnání nyní ctí uživatelem upřednostňované časové pásmo při vytváření nebo ukončení zaměstnání se společností.
  
-### <a name="uk-addresses-display-in-analytics-as-eastern-switzerland-addresses"></a>Adresy Velké Británie se zobrazují v analytice jako adresy východního Švýcarska
+### <a name="uk-addresses-display-in-analytics-as-eastern-switzerland-addresses"></a>Adresy Spojeného království se zobrazují v analytice jako adresy východního Švýcarska
 V této verzi byla provedena změna za účelem opravy nesprávného uspořádání adres v sestavě **Správy zaměstnanců** „počet osob podle umístění“.
  
 ### <a name="termination-code-is-not-populated-on-the-worker-position-assignment-record-when-ending-the-position"></a>Kód ukončení není vyplněn na záznamu přiřazení pozice pracovníka při ukončení pozice

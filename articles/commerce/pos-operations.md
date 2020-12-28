@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081332"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594106"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -197,6 +197,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 500 | Anulovat transakci | Anulujte aktuální transakci. | Ano | Ano | Ne | Ano | Ne |
 | 916 | Programovací model Windows Workflow Foundation | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 924 | Sestava X pro bankovní karty | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ano |
+| 311 | Odebrání systémové slevy z transakcí | Odeberte z transakce všechny slevy uplatněné systémem, včetně slev založených na kupónech. Tím se neodstraní ruční slevy. | Ano | Ano | Ano | Ano | Žádný |
+| 312 | Opětovné použití systémových slev | Opětovné použití systémových slev na transakci, pokud byly odstraněny pomocí operace **Odebrání systémové slevy z transakcí**. | Ano | Ano | Ano | Ano | Žádný |
 
 \* Operace je k dispozici v offline režimu pouze v případě, že vytváříte objednávku odběratele nebo prodejní nabídku, a pouze v případě, že v profilu funkce POS je nakonfigurováno offline vytvoření objednávky odběratele a prodejní nabídky. Operaci nelze provést při vytváření objednávek pomocí služby Real-time Service, nebo pokud jsou objednávky stronovány nebo upravovány.
 

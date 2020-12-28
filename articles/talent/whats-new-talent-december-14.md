@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad677d1c36ac5159111afdcb5c31aed215d7b0a1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9887d22a513e820c35c51b6c702e2d9d34ab1214
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897734"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529749"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-14-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (14. prosince 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Sestavení 8.1.2085**
 
@@ -137,11 +139,11 @@ Aktualizované mapování by mělo vypadat jako obrázek níže.
 
 Transformace pole pohlaví je rovněž třeba aktualizovat. Vyberte typ mapy **fn** (funkce) pro pohlaví a aktualizujte následující mapování hodnot.
 
-| Hodnota Common Data Service                   | Hodnota aplikace Finance and Operations                     |
+| Hodnota Common Data Service                   | Hodnota Finance and Operations                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Muž                                             |
 | 75440001                    | Žena                                           |
-| 75440002                    | Neomezeno                                             | 
+| 75440002                    | Není                                             | 
 | 75440003                    | Nespecifické                                      |
 
 Aktualizované mapování by mělo vypadat jako následující obrázky.

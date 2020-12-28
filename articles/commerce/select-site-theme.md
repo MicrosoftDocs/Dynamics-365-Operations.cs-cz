@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817699"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556422"
 ---
 # <a name="select-a-site-theme"></a>Volba motivu webu
 
@@ -32,7 +32,7 @@ Toto téma popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft D
 
 ## <a name="overview"></a>Přehled
 
-Rozvržení a styl webu (například písma, velikosti a barvy) jsou definovány motivem, který vyberete a použijete na webu. Motiv je vytvořen a nasazen vývojářem ve vaší společnosti. Přehled motivů naleznete v tématu [Přehled motivů](http://). Další informace o tom, jak vytvářet a nasazovat motivy, naleznete v tématu [Vytvoření nového motivu](http://).
+Rozvržení a styl webu (například písma, velikosti a barvy) jsou definovány motivem, který vyberete a použijete na webu. Motiv je vytvořen a nasazen vývojářem ve vaší společnosti. Přehled motivů naleznete v tématu [Přehled motivů](e-commerce-extensibility/theming.md). Další informace o tom, jak vytvářet a nasazovat motivy, naleznete v tématu [Vytvoření nového motivu](e-commerce-extensibility/create-theme.md).
 
 Ve výchozím nastavení je při prvním vytvoření webu použit motiv s názvem **Fabrikam**. Tento výchozí motiv je poskytován jako součást knihovny modulů Commerce. Po nasazení dalších motivů webu můžete nakonfigurovat web tak, aby používal jeden z nich.
 
@@ -63,3 +63,8 @@ Chcete-li vybrat motiv, který je pro web použit, postupujte podle následujíc
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
+
+[Přehled motivů](e-commerce-extensibility/theming.md)
+
+[Vytvoření nového tématu](e-commerce-extensibility/create-theme.md)
+

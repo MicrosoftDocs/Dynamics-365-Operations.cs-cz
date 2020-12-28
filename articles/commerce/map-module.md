@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817199"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665413"
 ---
 # <a name="map-module"></a>Modul mapy
 
@@ -58,7 +58,7 @@ Následující obrázek ukazuje příklad modulu mapy bloku použitého na strá
 
 ## <a name="add-allowed-mapping-urls-to-a-sites-content-security-policy-directives"></a>Přidejte povolené mapovací adresy URL do směrnic zásad zabezpečení obsahu webu
 
-Aby modul map pracoval s mapami Bing, musíte zajistit, aby byly povoleny následující adresy URL maování (známé také jako „whitelisted“) podle zásad zabezpečení obsahu vašeho webu (CSP). Toto nastavení se provádí v nástroji Commerce site Builder přidáním povolených adres URL do různých směrnic CSP webu (například **img-src**). Další informace viz [Zásady zabezpečení obsahu](manage-csp.md). 
+Aby modul map pracoval s mapami Bing, musíte zajistit, aby byly povoleny následující adresy URL maování podle zásad zabezpečení obsahu vašeho webu (CSP). Toto nastavení se provádí v nástroji Commerce site Builder přidáním povolených adres URL do různých směrnic CSP webu (například **img-src**). Další informace viz [Zásady zabezpečení obsahu](manage-csp.md). 
 
 - Do směrnice **connect-src** přidejte **&#42;.bing.com**.
 - Do směrnice **img-src** přidejte **&#42;.virtualearth.net**.

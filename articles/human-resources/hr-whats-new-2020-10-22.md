@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529975"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (22. října 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -56,14 +58,14 @@ Tato verze obsahuje následující opravy chyb.
 | --- | --- | --- |
 | 437922 | Import hodin FMLA pomocí entity DMF má za následek chybu jen pro čtení. | Použití entity Hodiny FMLA k importu hodin přidružených k případu FMLA se nezdařilo. Přidali jsme logiku, abychom zajistili, že importované hodiny nepřekročí zbývající hodiny pro případ. |
 | 512019 | Nesprávné množství **Poslední převod do dalšího období**. | Na stránce **Volno** se při změně hodnoty **K datu** na první den následujícího fiskálního období zobrazila nesprávná částka **Poslední převod do dalšího období** pro typ **Řádná dovolená**. Nyní zobrazuje správnou částku. |
-| 458639 | Entita **Kontakty na pracovníky** nepodporuje režim sledování změn. | Aktualizovali jsme entitu **Kontakty na pracovníky** , abyste ji mohli použít při vytváření scénářů vlastní databáze (BYOD).|
+| 458639 | Entita **Kontakty na pracovníky** nepodporuje režim sledování změn. | Aktualizovali jsme entitu **Kontakty na pracovníky**, abyste ji mohli použít při vytváření scénářů vlastní databáze (BYOD).|
 | 505347 | Manažeři školení mohli odeslat žádost o pracovní volno pro zaměstnance, když byla povolena funkce Efektivní pracovník. | Jiné role než personální asistent a manažer lidských zdrojů nemají povoleno odesílat žádosti o volno pro zaměstnance. |
 | 513490 | Protokolování správy zaměstnaneckých výhod: přidejte protokolování pro plány bez možností pokrytí. | Povolili jsme výsledky protokolování pro **Plán bez možností pokrytí**. Nyní se zobrazují v tabulce **Výsledky zpracování** a jsou seřazeny správně, aby se zobrazily nahoře. |
-| 517021 | Nelze vybrat více plánů se stejným kódem **Typ plánu** , pokud **Typ plánu** má pro každý typ jednu registraci. | Změnili jsme omezení pro výběr plánů, kde je povolena pouze jedna registrace. Omezení jsou nyní na úrovni **Kód typu plánu** místo **Typ plánu**. Tato změna umožňuje plány jako HSA a FSA, které jsou stejného typu, ale můžete jim dát samostatný **Kód typu plánu**. Tímto způsobem můžete vybrat oba pro stejné období registrace. |
+| 517021 | Nelze vybrat více plánů se stejným kódem **Typ plánu**, pokud **Typ plánu** má pro každý typ jednu registraci. | Změnili jsme omezení pro výběr plánů, kde je povolena pouze jedna registrace. Omezení jsou nyní na úrovni **Kód typu plánu** místo **Typ plánu**. Tato změna umožňuje plány jako HSA a FSA, které jsou stejného typu, ale můžete jim dát samostatný **Kód typu plánu**. Tímto způsobem můžete vybrat oba pro stejné období registrace. |
 | 444791 | Nelze zobrazit kompenzaci v samoobsluze zaměstnanců, když je možnost **Omezit přístup** zapnuta v plánu kompenzace. | V samoobsluze pro zaměstnance na kartě **Kompenzace** se aktuální výše kompenzace a procento zvýšení zobrazovaly jako „0“, pokud byl zaměstnanec registrován v plánu se zapnutou možností **Omezit přístup** a přiřazen ke konkrétním rolím. Tento problém jsme vyřešili, takže zaměstnanec a manažer mohou vždy vidět podrobnosti kompenzace pro sebe a své přímé podřízené. |
 | 457542 | Při aktualizaci podrobností po ukončení kurzu se neaktualizují také stejné informace pro zaměstnance, který se kurzu zúčastnil. | Informace o zaměstnanci se nyní správně aktualizují, když změníte podrobnosti kurzu po jeho uzavření a opětovném otevření. |
 | 515342 | Nelze vložit data pomocí **CDSLeaveRequestDetailEntity**. Společnost nebyla nalezena nebo neexistuje. | Pro vložení dat nyní můžete použít **CDSLeaveRequestDetailEntity**. |
-| 514743 | Chyba ve formuláři **Parametr e-mailu** při použití Microsoft Exchange. | Zpráva „Nelze načíst soubory nebo sestavení...“ zobrazená na stránce **Parametry e-mailu** , když byl poskytovatel e-mailu nastaven na **Exchange**. Tato oprava také umožňuje stránce **Parametry e-mailu** načítat a ukládat podle očekávání. |
+| 514743 | Chyba ve formuláři **Parametr e-mailu** při použití Microsoft Exchange. | Zpráva „Nelze načíst soubory nebo sestavení...“ zobrazená na stránce **Parametry e-mailu**, když byl poskytovatel e-mailu nastaven na **Exchange**. Tato oprava také umožňuje stránce **Parametry e-mailu** načítat a ukládat podle očekávání. |
 
 
 ## <a name="in-preview"></a>Náhled

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022208"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529821"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (6. října 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -77,11 +79,11 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 Následující nové funkce jsou naplánovány do budoucích vydání:
 
-- **Entity kontrolního seznamu zahrnuté v Common Data Service** : Položky kontrolního seznamu pro zprovoznění, zrušení zprovoznění, převody a obchodní procesy budou v Common Data Service k dispozici již brzy.
+- **Entity kontrolního seznamu zahrnuté v Common Data Service**: Položky kontrolního seznamu pro zprovoznění, zrušení zprovoznění, převody a obchodní procesy budou v Common Data Service k dispozici již brzy.
 
-- **Kódy důvodů správy zaměstnaneckých výhod** : Kódy důvodů správy zaměstnaneckých výhod budou brzy kombinovány se stávajícími kódy důvodů v aplikaci Human Resources. Pokud jste ve správě zaměstnaneckých výhod vytvořili kódy důvodů, které mají více než 15 znaků, musíte ve správě zaměstnaneckých výhod změnit název kódu důvodu. Formulář **Kódy důvodů** může mít 15 znaků nebo méně. Po aktualizaci názvu se kód důvodu zobrazí pod existujícím formulářem kódu důvodu ve správě personálu. Tato změna bude k dispozici v budoucnu a nebude mít vliv na stávající funkčnost.
+- **Kódy důvodů správy zaměstnaneckých výhod**: Kódy důvodů správy zaměstnaneckých výhod budou brzy kombinovány se stávajícími kódy důvodů v aplikaci Human Resources. Pokud jste ve správě zaměstnaneckých výhod vytvořili kódy důvodů, které mají více než 15 znaků, musíte ve správě zaměstnaneckých výhod změnit název kódu důvodu. Formulář **Kódy důvodů** může mít 15 znaků nebo méně. Po aktualizaci názvu se kód důvodu zobrazí pod existujícím formulářem kódu důvodu ve správě personálu. Tato změna bude k dispozici v budoucnu a nebude mít vliv na stávající funkčnost.
 
-- **Vlastní odkazy v samoobsluze pro manažery** : Abychom podpořili manažery, rozšiřujeme možnosti samoobsluhy pro manažery. Přidáváme možnost přidat vlastní odkazy na kartě **Můj tým**. Tato funkce je podobná funkci vlastních odkazů na kartě **Moje informace** v samoobsluze pro zaměstnance. Další informace naleznete v tématu [Vlastní odkazy v samoobsluze pro manažery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Vlastní odkazy v samoobsluze pro manažery**: Abychom podpořili manažery, rozšiřujeme možnosti samoobsluhy pro manažery. Přidáváme možnost přidat vlastní odkazy na kartě **Můj tým**. Tato funkce je podobná funkci vlastních odkazů na kartě **Moje informace** v samoobsluze pro zaměstnance. Další informace naleznete v tématu [Vlastní odkazy v samoobsluze pro manažery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 Úplný seznam plánovaných funkcí a plánovaných verzí najdete v části [Přehled o 2. vlně vydání Dynamics 365 Human Resources v roce 2019](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

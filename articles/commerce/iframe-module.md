@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818191"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665389"
 ---
 # <a name="iframe-module"></a>Modul iframe
 
@@ -35,7 +35,7 @@ Tohle téma se zabývá modulem iframe a popisuje, jak jej přidat na stránky w
 
 Modul iframe poskytuje prvek iframe (vložený rámec), který hostuje externí obsah na webu. Například může být použit k hostování videa YouTube nebo prohlížeče souborů PDF na jakékoli stránce webu. 
 
-Modul iframe vyžaduje cílovou adresu URL. Poté je hostitelem obsahu cílové stránky uvnitř prvku HTML **iframe**. Externí adresy URL musí být na seznamu povolených (také známý jako „whitelist“) podle směrnic o zásadách zabezpečení obsahu webu (CSP). U obsahu prvku iframe by měly být adresy URL povoleny pomocí směrnice **frame-ancestor**. Další informace viz [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md).
+Modul iframe vyžaduje cílovou adresu URL. Poté je hostitelem obsahu cílové stránky uvnitř prvku HTML **iframe**. Externí adresy URL musí být na seznamu povolených podle směrnic o zásadách zabezpečení obsahu webu (CSP). U obsahu prvku iframe by měly být adresy URL povoleny pomocí směrnice **frame-ancestor**. Další informace viz [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md).
 
 > [!NOTE]
 > Modul iframe je k dispozici v Dynamics 365 Commerce vydání 10.0.13.

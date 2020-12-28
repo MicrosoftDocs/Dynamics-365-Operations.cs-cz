@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011406"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668938"
 ---
 # <a name="go-live-faq"></a>Často kladené dotazy týkající se ostrého nasazení 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma uvádí často kladené otázky o tom, jak převést projekt implementace Dynamics 365 Human Resources do živého provozu. 
 
@@ -76,7 +78,7 @@ Databáze jsou chráněny automatickým zálohováním na následujících frekv
 | Rozdílová záloha databáze | Každých 12-24 hodin |
 | Záloha protokolu transakcí | Každých 5 až 10 minut |
 
-Microsoft si ponechává dostatečné zálohy, aby umožnil Point in Time Restore (PITR) během posledních sedmi dnů. 
+Microsoft si ponechává dostatečné zálohy, aby umožnil Point in Time Restore (PITR) během posledních 14 dnů. 
 
 Další informace naleznete v tématu  [Další informace týkající se automatické zálohy databáze SQL](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

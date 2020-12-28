@@ -1,6 +1,6 @@
 ---
 title: Vytvoření webu elektronického obchodu
-description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu e-Commerce v Konfigurátoru webu Dynamics 365 Commerce.
+description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
@@ -19,20 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533429"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517177"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu e-Commerce v Konfigurátoru webu Dynamics 365 Commerce.
+V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 
-Když si pořídíte licenci na funkce elektronického obchodu, bude konfigurátor webu obsahovat startovací web, který můžete použít jako základ pro svůj vlastní web. Pokud však chcete začít úplně od začátku nebo pokud si chcete vytvořit druhý web, budete si muset ve vývojovém prostředí webu založit nový web. 
+Když si pořídíte licenci na funkce Dynamics 365 Commerce, bude konfigurátor webu obsahovat startovací web, který můžete použít jako základ pro svůj vlastní web. Pokud však chcete začít úplně od začátku nebo pokud si chcete vytvořit druhý web, budete si muset ve vývojovém prostředí webu založit nový web. 
 
 ## <a name="set-up-your-site"></a>Zřízení webu
 
@@ -54,17 +54,17 @@ Při zřízení webu postupujte takto.
 
 Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty**. Měli byste vidět sortiment produktů, které byly přiděleny online obchodu. Chcete-li přistupovat k přiděleným produktům podle kategorie, můžete použít také rozevírací nabídku v levé horní části stránky.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
-[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+[Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
-[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

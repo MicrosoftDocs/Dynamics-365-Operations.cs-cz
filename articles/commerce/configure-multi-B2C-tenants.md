@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976009"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517109"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurace několika klientů typu B2C v prostředí obchodu
 
@@ -72,32 +72,32 @@ Chcete-li do prostředí přidat klienta B2C Azure AD, postupujte podle následu
 
 1. Přihlaste se ke konfigurátoru webů Commerce pro vaše prostředí jako správce systému. Chcete-li konfigurovat klienta B2C Azure AD, musíte být správcem systému pro prostředí Commerce.
 1. V levém navigačním podokně vyberte **Nastavení klienta** a rozbalte je.
-1. Vyberte **Nastavení B2C** a poté vyberte **Spravovat** .
+1. Vyberte **Nastavení B2C** a poté vyberte **Spravovat**.
 1. Vyberte **Přidat aplikaci B2C** a poté zadejte následující informace:
 
-    - **Název aplikace** : zadejte název, který má být použit pro aplikaci v kontextu jeho správy ve službě Commerce. Doporučujeme, abyste používali název aplikace, který jste zvolili při nastavení aplikace Azure AD B2C na portálu Azure. Tímto způsobem lze omezit záměnu při správě B2C klientů ve službě Commerce.
-    - **Název klienta** : zadejte název klienta B2C, jak se objevuje na portálu Azure.
-    - **Zapomenout ID zásad hesla** : Zadejte ID zásad (název zásady na portálu Azure).
-    - **ID zásady registrace a přihlášení** : Zadejte ID zásad (název zásady na portálu Azure).
-    - **GUID klienta** : zadejte ID klienta B2C Azure AD tak, jak se objevuje na portálu Azure (ne v ID aplikace pro klienta B2C).
-    - **ID zásad úprav profilu** : Zadejte ID zásad (název zásady na portálu Azure).
+    - **Název aplikace**: zadejte název, který má být použit pro aplikaci v kontextu jeho správy ve službě Commerce. Doporučujeme, abyste používali název aplikace, který jste zvolili při nastavení aplikace Azure AD B2C na portálu Azure. Tímto způsobem lze omezit záměnu při správě B2C klientů ve službě Commerce.
+    - **Název klienta**: zadejte název klienta B2C, jak se objevuje na portálu Azure.
+    - **Zapomenout ID zásad hesla**: Zadejte ID zásad (název zásady na portálu Azure).
+    - **ID zásady registrace a přihlášení**: Zadejte ID zásad (název zásady na portálu Azure).
+    - **GUID klienta**: zadejte ID klienta B2C Azure AD tak, jak se objevuje na portálu Azure (ne v ID aplikace pro klienta B2C).
+    - **ID zásad úprav profilu**: Zadejte ID zásad (název zásady na portálu Azure).
 
 1. Až tyto informace dokončíte, výběrem **OK** uložte provedené změny.
 
 > [!NOTE]
-> Pole **Rozsah** , **ID neinteraktivních zásad** , **ID neinteraktivních klientů** , **Vlastní doména přihlašování** a **ID zásad registrace** ponechte prázdná, pokud vám tým Dynamics 365 Commerce neřekne, abyste je nastavili.
-Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **Spravovat aplikace B2C** .
+> Pole **Rozsah**, **ID neinteraktivních zásad**, **ID neinteraktivních klientů**, **Vlastní doména přihlašování** a **ID zásad registrace** ponechte prázdná, pokud vám tým Dynamics 365 Commerce neřekne, abyste je nastavili.
+Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **Spravovat aplikace B2C**.
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Správa nebo odstranění klienta B2C Azure AD
 
 1. Přihlaste se ke konfigurátoru webů Commerce pro vaše prostředí jako správce systému. Chcete-li konfigurovat klienta B2C Azure AD, musíte být správcem systému pro prostředí Commerce.
 1. V levém navigačním podokně vyberte **Nastavení klienta** a rozbalte je.
-1. Vyberte **Nastavení B2C** a poté vyberte **Spravovat** .
+1. Vyberte **Nastavení B2C** a poté vyberte **Spravovat**.
 1. Chcete-li upravit B2C klienta, vyberte symbol tužky vedle něj. Chcete-li odstranit klienta B2C, vyberte symbol odpadkového koše.
 1. Vyberte **Uložit** a potom **Publikovat** pro aktivaci svých změn.
 
 > [!WARNING]
-> Pokud je klient B2C nakonfigurován pro aktivní nebo publikovaný web, mohou se uživatelé přihlásili pomocí účtů, které jsou k dispozici v klientovi. Odstraníte-li nakonfigurovaného klienta v nabídce **Nastavení klienta \> Klient B2C** , odeberte přidružení tohoto klienta B2C z webů, které jsou přidruženy ke všem kanálům klienta. V takovém případě se může stát, že uživatelé již nebudou schopni přihlásit se ke svým účtům. Proto při odstraňování nakonfigurovaného klienta buďte velmi opatrní.
+> Pokud je klient B2C nakonfigurován pro aktivní nebo publikovaný web, mohou se uživatelé přihlásili pomocí účtů, které jsou k dispozici v klientovi. Odstraníte-li nakonfigurovaného klienta v nabídce **Nastavení klienta \> Klient B2C**, odeberte přidružení tohoto klienta B2C z webů, které jsou přidruženy ke všem kanálům klienta. V takovém případě se může stát, že uživatelé již nebudou schopni přihlásit se ke svým účtům. Proto při odstraňování nakonfigurovaného klienta buďte velmi opatrní.
 >
 > Po odstranění nakonfigurovaného klienta budou i nadále udržovat klienta B2C a záznamy, ale konfigurace systému Commerce pro daného klienta bude změněna nebo odebrána. Uživatelé, kteří se pokusí zaregistrovat nebo se přihlásit k webu, vytvoří nový záznam účtu ve výchozím nebo nově přidruženém klientovi B2C, který je nakonfigurován pro kanál webu.
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Nakonfigurujte kanál pomocí klienta B2C
@@ -114,15 +114,15 @@ Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **S
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
-[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+[Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

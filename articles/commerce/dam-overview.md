@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fd2ec16ec441174485a9cc70f41a83337264f53b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096984"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594349"
 ---
 # <a name="digital-asset-management-overview"></a>Přehled správy digitálního majetku
 
@@ -51,10 +51,12 @@ Funkce digitálních materiálů a správy jsou umístěny v konfigurátoru webu
 
 [Odeslat obrázky](dam-upload-images.md)
 
-[Odeslat video](dam-upload-video.md)
+[Odeslání videa](dam-upload-video.md)
 
 [Odeslat soubory](dam-upload-files.md)
 
-[Oříznout obrázky](dam-crop-images.md)
+[Oříznutí obrázků](dam-crop-images.md)
 
-[Přizpůsobit fokální místa obrázku](dam-custom-focal-point.md)
+[Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
+
+[Nahrání a obsloužení statických souborů](upload-serve-static-files.md)

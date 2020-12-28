@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897665"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529131"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (27. února 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 
@@ -53,7 +55,7 @@ V současné době nelze vytvořit nové mobilní aplikace v aplikaci Talent. Mo
 
 V této verzi je nyní pro export k dispozici entita **Odměna variabilní kompenzace** Data Management Framework (DMF).
 
-### <a name="uk-addresses-appear-in-the-personnel-management-analytics-page-as-swiss-addresses"></a>Adresy Velké Británie se zobrazují v analytice správy zaměstnanců jako švýcarské adresy
+### <a name="uk-addresses-appear-in-the-personnel-management-analytics-page-as-swiss-addresses"></a>Adresy Spojeného království se zobrazují v analytice správy zaměstnanců jako švýcarské adresy
 
 V této verzi se zobrazují adresy podle města. Tato verze opravuje problémy, kde vizualizace špatně představovaly umístění zaměstnance.
 
@@ -75,7 +77,7 @@ Tato verze obsahuje jiné menší opravy chyb.
 
 V mnoha organizacích mohou manažeři kompenzací a zaměstnaneckých výhod mít přístup pouze k určitým záznamům o kompenzacích. Tyto záznamy mohou být pro vedoucí pracovníky nebo regionální zaměstnance. Tato změna umožní oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Fixním a variabilním plánům lze přiřadit role zabezpečení, které určí přístup k plánům a údajům zaměstnance souvisejících s těmito plány (jako jsou například informace o mzdě a záznamy o bonusech). Kompenzace pro tyto zaměstnance budou moci zpracovávat pouze role s určeným přístupem.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Ajtzakuzace Platform Update 24 for Finance and Operations
+### <a name="platform-update-24-for-finance-and-operations"></a>Aktualizace Platform 24 pro Finance and Operations
 
 Další informace o aktualizaci Platform Update 24 aplikace Microsoft Dynamics 365 Finance and Operations (březen 2019) naleznete v části [Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
@@ -110,7 +112,7 @@ Chcete-li aktualizovat svou stávající šablonu, postupujte takto.
 
         [![Mapování Pracovní pozice na Trvání pozice](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Pracovní pozice na hierarchie pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Hierarchie pozice** Finance and Operations. Vyberte **Rozšířený dotazu** pro zpřístupnění rozšířeného dotazu pro váš projekt.
+    - **Pracovní pozice na hierarchii pozic:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Hierarchie pozic** Finance and Operations. Vyberte **Rozšířený dotazu** pro zpřístupnění rozšířeného dotazu pro váš projekt.
 
        [![Tlačítko Rozšířený dotaz](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Chcete-li aktualizovat svou stávající šablonu, postupujte takto.
         [![Příkaz přidání podmíněného sloupce](./media/Add-column.png)](./media/Add-column.png)
 
     6. V dialogovém okně **Přidat podmíněný sloupec** zadejte **HIERARCHYTYPENAME** jako název nového sloupce.
-    7. V části podmínky **If** vyberte libovolné pole, použijte **je rovno** jako vztah a zadejte libovolnou hodnotu. V částech podmínky **Then** a **Otherwise** určete, jaká by měla být výchozí hodnota. V takovém případě zadejte **Řádek** do obou částí.
+    7. V části podmínky **If** vyberte libovolné pole, použijte **je rovno** jako vztah a zadejte libovolnou hodnotu. V částech podmínky **_Then_* a **Otherwise** určete, jaká by měla být výchozí hodnota. V takovém případě zadejte **Řádek** do obou částí.
 
         [![Dialogové okno přidání podmíněného sloupce](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

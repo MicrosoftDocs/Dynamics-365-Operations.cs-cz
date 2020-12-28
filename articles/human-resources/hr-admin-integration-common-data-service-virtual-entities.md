@@ -3,7 +3,7 @@ title: Konfigurace virtuálních entit Common Data Service
 description: Toto téma ukazuje, jak konfigurovat virtuální entity pro Dynamics 365 Human Resources. Můžete generovat a aktualizovat existující virtuální entity a analyzovat vygenerované a dostupné entity.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
-ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
+ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4058147"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645594"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurace virtuálních entit Common Data Service
 
-[!include [banner](includes/preview-feature.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources je virtuální zdroj dat v Common Data Service. Poskytuje úplné operací vytváření, čtení, aktualizace a mazání (CRUD) z Common Data Service a Microsoft Power Platform. Data pro virtuální entity nejsou uloženy v Common Data Service, ale v databázi aplikace. 
 
@@ -50,11 +50,23 @@ Virtuální entity pro Human Resources nejsou totéž jako přirozené entity Co
 
 ## <a name="setup"></a>Nastavení
 
-Povolte virtuální entity ve vašem prostředí provedením těchto kroků nastavení. 
+Povolte virtuální entity ve vašem prostředí provedením těchto kroků nastavení.
+
+### <a name="enable-virtual-entities-in-human-resources"></a>Povolení virtuálních entit v Human Resources
+
+Nejprve musíte povolit virtuální entity v pracovním prostoru **Správa funkcí**.
+
+1. V modulu Human Resources vyberte **Správa systému**.
+
+2. Vyberte dlaždici **Správa funkcí**.
+
+3. Vyberte **Podpora virtuálních entit v HR/CDS** a potom vyberte **Povolit**.
+
+Další informace o povolení a zákazu funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrace aplikace v Microsoft Azure
 
-Nejprve musíte zaregistrovat aplikaci na webu Azure Portal, aby platforma identit od Microsoftu mohla poskytovat ověřovací a autorizační služby pro tuto aplikaci a uživatele. Další informace o registraci aplikací v Azure najdete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Musíte registrovat instanci Human Resources v portálu Azure, aby platforma identit od Microsoftu mohla poskytovat ověřovací a autorizační služby pro tuto aplikaci a uživatele. Další informace o registraci aplikací v Azure najdete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Otevřete [Microsoft Azure Portal](https://portal.azure.com).
 
@@ -121,16 +133,28 @@ Dalším krokem je konfigurace zdroje dat virtuálních entit v prostředí Powe
 
 7. Vyberte záznam **Zdroj dat Microsoft HR**.
 
-8. Zadejte požadované informace pro konfiguraci zdroje dat.
+8. Zadejte požadované informace pro konfiguraci zdroje dat:
 
-   - **Cílová adresa URL** : URL vašeho oboru názvů pro Human Resources.
-   - **ID tenanta** : ID tenanta Azure Active Directory (Azure AD).
-   - **ID aplikace AAD** : ID aplikace (klienta) vytvořené pro aplikaci registrovanou přes Microsoft Azure Portal. Tyto informace jste obdrželi dříve v rámci kroku [Registrace aplikace v Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **Tajný klíč aplikace AAD** : Tajný klíč klienta vytvořený pro aplikaci registrovanou přes Microsoft Azure Portal. Tyto informace jste obdrželi dříve v rámci kroku [Registrace aplikace v Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Cílová adresa URL**: URL vašeho oboru názvů pro Human Resources. Formát cílové adresy URL je:
+     
+     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>/
 
-9. Zvolte **Uložit a zavřít**.
+     Například:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Nezapomeňte uvést znak „**/**“ na konci adresy URL, aby nedošlo k chybě.
+
+   - **ID tenanta**: ID tenanta Azure Active Directory (Azure AD).
+
+   - **ID aplikace AAD**: ID aplikace (klienta) vytvořené pro aplikaci registrovanou přes Microsoft Azure Portal. Tyto informace jste obdrželi dříve v rámci kroku [Registrace aplikace v Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+
+   - **Tajný klíč aplikace AAD**: Tajný klíč klienta vytvořený pro aplikaci registrovanou přes Microsoft Azure Portal. Tyto informace jste obdrželi dříve v rámci kroku [Registrace aplikace v Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    ![Zdroj dat Microsoft HR](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Zvolte **Uložit a zavřít**.
 
 ### <a name="grant-app-permissions-in-human-resources"></a>Udělení oprávnění aplikací v Human Resources
 
@@ -149,8 +173,8 @@ Udělte oprávnění těmto dvěma aplikacím Azure AD v oblasti Human Resources
 
 3. Zvolte **Nový** pro vytvoření druhého záznamu aplikace:
 
-    - **ID klienta** : f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Název** : Dynamics 365 HR Virtual Entity
+    - **ID klienta**: f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Název**: Dynamics 365 HR Virtual Entity
     - V poli **ID uživatele** vyberte ID uživatele s oprávněními správce v Human Resources a prostředí Power Apps.
 
 ## <a name="generate-virtual-entities"></a>Generování virtuálních entit
@@ -162,7 +186,7 @@ Po dokončení instalace můžete vybrat virtuální entity, které chcete vygen
 2. Vyberte kartu **Virtuální entity**.
 
 > [!NOTE]
-> Přepínač **Povolte virtuální entitu** bude nastaven na **Ano** automaticky po dokončení všech požadovaných nastavení. Pokud je přepínač nastaven na **Ne** , zkontrolujte kroky v předchozích částech tohoto dokumentu a ujistěte se, že jsou dokončeny všechny nezbytné předpoklady.
+> Přepínač **Povolte virtuální entitu** bude nastaven na **Ano** automaticky po dokončení všech požadovaných nastavení. Pokud je přepínač nastaven na **Ne**, zkontrolujte kroky v předchozích částech tohoto dokumentu a ujistěte se, že jsou dokončeny všechny nezbytné předpoklady.
 
 3. Vyberte entitu nebo entity, které chcete generovat v Common Data Service.
 

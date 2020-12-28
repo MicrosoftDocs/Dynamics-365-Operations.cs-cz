@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8571c52b98a87751400dab9482168ee370834bcc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: f562d3376fde6a24e6a1e1a3f7f4192cf290ae90
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096983"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594277"
 ---
 # <a name="upload-images"></a>Odeslat obrázky
 
@@ -88,10 +88,12 @@ Chcete-li hromadně odeslat složku obrázků v rámci konfigurátoru webu, post
 
 [Přehled správy digitálního majetku](dam-overview.md)
 
-[Odeslat video](dam-upload-video.md)
+[Odeslání videa](dam-upload-video.md)
 
 [Odeslat soubory](dam-upload-files.md)
 
-[Oříznout obrázky](dam-crop-images.md)
+[Oříznutí obrázků](dam-crop-images.md)
 
-[Přizpůsobit fokální místa obrázku](dam-custom-focal-point.md)
+[Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
+
+[Nahrání a obsloužení statických souborů](upload-serve-static-files.md)

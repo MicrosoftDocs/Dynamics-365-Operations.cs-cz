@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818243"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665265"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
@@ -47,7 +47,7 @@ Modul pro výběr obchodu umožňuje uživatelům zadat umístění (město, st�
 
 Modul pro výběr obchodu je integrován do [Rozhraní pro programování aplikací Bing Maps REST (API)](https://docs.microsoft.com/bingmaps/rest-services/), aby bylo možné používat funkce Geocoding a Autosuggestu společnosti Bing. Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Geocoding API se používá k převodu polohy na hodnoty zeměpisné šířky a délky. Integrace s rozhraním Autosuggest API se používá k zobrazení návrhů vyhledávání, když uživatelé zadají umístění do vyhledávacího pole.
 
-U rozhraní AUTOSuggest REST API musíte zajistit, aby byly povoleny následující adresy URL (známé také jako „whitelisted“) podle zásad zabezpečení obsahu vašeho webu (CSP). Toto nastavení se provádí v nástroji Commerce site Builder přidáním povolených adres URL do různých směrnic CSP pro web (například **img-src**). Další informace viz [Zásady zabezpečení obsahu](manage-csp.md). 
+U rozhraní AUTOSuggest REST API musíte zajistit, aby byly povoleny následující adresy URL podle zásad zabezpečení obsahu vašeho webu (CSP). Toto nastavení se provádí v nástroji Commerce site Builder přidáním povolených adres URL do různých směrnic CSP pro web (například **img-src**). Další informace viz [Zásady zabezpečení obsahu](manage-csp.md). 
 
 - Do směrnice **connect-src** přidejte **&#42;.bing.com**.
 - Do směrnice **img-src** přidejte **&#42;.virtualearth.net**.
@@ -65,6 +65,9 @@ Aby scénář BOPIS fungoval, měly by být produkty konfigurovány se způsobem
 Následující obrázek znázorňuje příklad modulu volby obchodu použitého na stránce s podrobnostmi o produktu.
 
 ![Příklad modulu volby obchodu používaného u PDP](./media/BOPIS.PNG)
+
+> [!NOTE]
+> Ve verzi 10.0.16 a novější lze povolit novou funkci, která organizaci umožňuje definovat více způsobů vyzvednutí zásilky pro zákazníky.  Pokud je tato funkce povolena, bude nástroj pro výběr obchodů a další moduly elektronického obchodování rozšířen, aby umožnil nakupujícímu vybrat si z potenciálně více možností vyzvednutí zásilky, pokud jsou nakonfigurovány.  Další informace o této funkci najdete v [této dokumentaci](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Najít režim obchodů
 

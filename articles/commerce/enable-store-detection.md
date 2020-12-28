@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533383"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517299"
 ---
 # <a name="enable-location-based-store-detection"></a>Povolení zjišťování obchodu na základě polohy
 
@@ -48,19 +48,19 @@ Chcete-li zapnout zjišťování obchodu na základě polohy, postupujte podle n
 1. Vyberte **Nastavení webu**.
 1. Nastavte možnost **Povolit zjišťování obchodu na základě polohy** na hodnotu **Zapnuto**.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
-[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+[Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

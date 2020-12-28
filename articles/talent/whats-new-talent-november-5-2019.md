@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 48de07178acfaccf11e0a02b2848bf24e6ccc117
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c4068cf81782d2f9559179b91da31e049c006059
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896766"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527113"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-5-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (5. listopadu 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
@@ -69,9 +71,9 @@ Tato verze opravuje problém při požadavku na změny kompenzace prostřednictv
 
 S touto změnou budou v aplikaci Common Data Service aktualizovány kódy důvodů s více než 30 znaky. Změny provedené v Common Data Service se také odrazí v aplikaci Talent.
 
-### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Řešení integrace z aplikace Talent do Finance and Operations (351961)
+### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Integrace adres z aplikace Talent s aplikací Finance and Operations (351961)
 
-Tato verze opravuje problém, kdy adresy aktualizované v aplikaci Talent nebyly aktualizovány v modulu Finance and Operations. Změny v blocích adresy budou nyní aktualizovány.
+Tato verze opravuje problém, kdy adresy aktualizované v aplikaci Talent nebyly aktualizovány v aplikaci Finance and Operations. Změny v blocích adresy budou nyní aktualizovány.
 
 ## <a name="coming-soon"></a>Již brzy
 

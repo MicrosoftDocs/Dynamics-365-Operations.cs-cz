@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 88ed678cdd37b4bd3d1a7ae92b505b2cfdea4fc8
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa984a01e9da30e6da07516fa2986833366a882b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896720"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527137"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-19-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (19. listopadu 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
@@ -41,9 +43,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2621. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-31-for-finance-and-operations-apps"></a>Ajtzakuzace Platform Update 31 for aplikace Finance and Operations
+### <a name="platform-update-31-for-finance-and-operations-apps"></a>Aktualizace platformy 31 pro aplikace Finance and Operations
 
-Další informace naleznete v tématu [Funkce náhledu v aktualizaci platformy 31 pro aplikace Finance and Operations (leden 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
+Další informace naleznete v tématu [Funkce Preview v aktualizaci Platform update 31 pro aplikace Finance and Operations (leden 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
 
 ### <a name="feature-management-workspace-383856"></a>Pracovní prostor Správa funkcí (383856)
 

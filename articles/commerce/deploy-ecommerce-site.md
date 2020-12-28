@@ -1,6 +1,6 @@
 ---
 title: Nasazení nového klienta elektronického obchodu
-description: V tomto tématu je popsán způsob nasazení nového klienta elektronického obchodu pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
+description: V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu Dynamics 365 Commerce pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533268"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517275"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
+V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu Dynamics 365 Commerce pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Přehled
 
@@ -82,26 +82,26 @@ Po shromáždění požadovaných informací proveďte následující kroky pro 
     
 Při inicializaci elektronického obchodu z LCS systém zřizuje několik součástí, které jsou potřebné pro elektronický obchod a přidruží je k prostředí. Po zřízení je karta **Elektronické obchodování** na stránce **Řízení maloobchodu** aktualizována tak, aby reagovala na zřízení. Na stránce jsou zobrazena nejnovější nasazení vlastních nastavení a stav všech dalších probíhajících nasazení. Obsahuje také odkazy na web elektronického obchodu a nástroj pro konfigurátor webu elektronického obchodu, kde se weby vytváří.
 
-## <a name="access-site-builder"></a>Přístup ke konfigurátoru webů
+## <a name="access-commerce-site-builder"></a>Přístup ke konfigurátoru webů Commerce
 
-Chcete-li získat přístup k konfigurátoru webu, přejděte na kartu **Elektronické obchodování** na stránce **Řízení maloobchodu** v LCS a zvolte odkaz **Nástroj pro správu webu e-Commerce**. Cílová stránka konfigurátoru webu ukazuje zobrazení na úrovni klienta. Z této stránky můžete:
+Chcete-li získat přístup k konfigurátoru webů Commerce, přejděte na kartu **Elektronické obchodování** na stránce **Řízení maloobchodu** v LCS a zvolte odkaz **Nástroj pro správu webu e-Commerce**. Cílová stránka konfigurátoru webu ukazuje zobrazení na úrovni klienta. Z této stránky můžete:
 
 - Upravit nastavení na úrovni klienta.
 - Přejít na libovolný web, který jste vytvořili a k němuž máte oprávnění k zobrazení. 
 - Získat přístup k funkcím,recenzí, jako je moderování a vykazování.
 - Vytvořit nový web. Další informace o tom, jak vytvářet nový web, naleznete v tématu [Vytvoření webu elektronického obchodování](create-ecommerce-site.md). 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 

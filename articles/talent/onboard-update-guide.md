@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551949"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460614"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Aktualizace průvodců zaškolením v Dynamics 365 Talent - Onboard
+# <a name="update-onboarding-guides"></a>Aktualizace průvodců zaškolením
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Pokud je nutné provést změny v průvodcích zaškolením Microsoft Dynamics 3
 2. Vyberte průvodce, kterého chcete upravit.
 3. Proveďte všechny požadované změny a pak vyberte tlačítko **Uložit** (symbol disku).
 
-    ![[Uložení změn do průvodce zaškolením] (./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Uložení změn do průvodce zaškolením](./media/onboard-save.png)](./media/onboard-save.png)
 
 Aplikace Onboard automaticky nově přijatému zaměstnanci odešle e-mail s vyznačenými změnami. Pro snadnější identifikaci se vedle každé změny zobrazí červená značka **Nová**.
 

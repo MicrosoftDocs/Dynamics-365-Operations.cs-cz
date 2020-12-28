@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 5bcdb50475fb341a538211cb122eb7c13067d86a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124697"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527211"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Talent. Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Talent, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
 
@@ -96,7 +98,7 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
    
     - **Zkušební prostředí** Tato prostředí jsou vytvářena s dobou platnosti a vyprší po uplynutí této doby, což způsobí, že prostředí a všechny obsažené instance aplikace Talent budou odebrány automaticky.
    
-    - **Nepodporované oblasti** - Talent je v současné době podporován pouze v následujících oblastech: Spojené státy, Evropa, Velká Británie, Austrálie, Kanada a Asie.
+    - **Nepodporované oblasti** - Talent je v současné době podporován pouze v následujících oblastech: Spojené státy, Evropa, Spojené království, Austrálie, Kanada a Asie.
   
 6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
  

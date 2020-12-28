@@ -17,16 +17,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a3389d6ce5f1985f7515e777a2bafae4eae5f0c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
+ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431100"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4589056"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Human Resources s Dynamics 365 Finance.
+
+## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Mohu upravit uživatele aplikace Dynamics 365 Talent v Power Apps?
+
+Č. Pokud upravíte uživatele aplikace Talent, integrace mezi Human Resources a Common Data Service může selhat. V následující tabulce jsou uvedena výchozí nastavení pro uživatele aplikace Talent.
+
+| Celé jméno | ID přihlášky | ID objektu Azure AD | Identifikátor URI ID přihlášky |
+| --- | --- | --- | --- |
+| Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
+
+![Výchozí nastavení pro uživatele aplikace Talent](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Jsou synchronizovaná všechna data nebo jenom některé datové entity?
 
@@ -71,7 +83,7 @@ Prostřednictvím Power Apps lze naplnit další data.
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Mám nastavenou integraci jako dávkovou úlohu, ale aplikace Human Resources ztratila připojení do cílového systému. Jak se dá odeslat stejná sada změny do cílového systému?
 
-Není potřeba žádné speciální nastavení pro zpracování výjimek. Integrátor dat automaticky zachytí a zaznamená chyby, které se objevují ve zdroji a cíli a umožní ruční opakování. Avšak nepovoluje ruční opravy dat. Pokud je nutné provést aktualizace dat, mělo by se tak stát ve zdroji nebo v cíli.
+Není potřeba žádné speciální nastavení pro zpracování výjimek. Integrátor dat automaticky zachytí a zaznamená chyby, které se objevují ve zdroji a cíli a umožní ruční opakování. Avšak nepovoluje ruční opravy dat. Pokud je nutné provést aktualizace dat, mělo by tak být provedeno ve zdroji nebo v cíli.
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Můžu nastavit integraci obousměrně?
 
