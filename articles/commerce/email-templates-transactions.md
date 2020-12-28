@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: ea484bfc1e9b293c53d7293c50630c4955000131
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983150"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410695"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -40,8 +40,8 @@ Než budete moci mapovat konkrétní transakční událost na e-mailovou šablon
 
 Šablonu e-mailu vytvoříte takto:
 
-1. V Commerce Headquarters přejděte do nabídky **E-mailové šablony organizace** , která je v **Retail a Commerce \> Nastavení centrály \> E-mailové šablony organizace** nebo **Správa organizace \> Nastavení \> E-mailové šablony organizace** .
-1. Zvolte **Nové** .
+1. V Commerce Headquarters přejděte do nabídky **E-mailové šablony organizace**, která je v **Retail a Commerce \> Nastavení centrály \> E-mailové šablony organizace** nebo **Správa organizace \> Nastavení \> E-mailové šablony organizace**.
+1. Zvolte **Nové**.
 1. Pod možností **Obecné** nastavte následující pole:
 
     - **ID e-mailu** - ID e-mailu je jedinečný identifikátor pro šablonu a je to hodnota, která se zobrazí, když vyberete šablonu pro mapování na událost.
@@ -50,14 +50,14 @@ Než budete moci mapovat konkrétní transakční událost na e-mailovou šablon
     - **E-mail odesílatele** - Zadejte e-mailovou adresu, která má být použita pro e-maily odeslané pomocí této šablony.
     - **Výchozí kód jazyka** - Toto pole určuje lokalizovanou verzi e-mailu, který je odeslán ve výchozím nastavení, pokud kanál, který vyvolává tuto šablonu, neposkytuje žádný jazyk.
 
-1. V části **Obsah e-mailové zprávy** vyberte **Nový** .
+1. V části **Obsah e-mailové zprávy** vyberte **Nový**.
 1. V poli **Jazyk** zadejte jazyk šablony e-mailu. Později můžete přidat další jazyky a lokalizované šablony.
 1. V poli **Předmět** zadejte předmět e-mailu, který by se měl objevit v poli předmětu e-mailu.
 1. Vyberte **Upravit** a odešlete svou e-mailovou šablonu.
 
 ## <a name="create-an-email-message-body-by-using-html"></a>Vytvoření těla e-mailové zprávy pomocí HTML
 
-Tělo zprávy vašeho e-mailu je vytvořeno v HTML. Můžete použít libovolné rozvržení, styl a značky, které HTML a vložené šablony stylů CSS umožňují. Můžete také použít obrázky, pokud je hostujete na veřejně dostupném webovém koncovém bodu. Chcete-li přidat obrázek, zadejte adresu URL obrázku do atributu **src** značky HTML **&lt;img&gt;** .
+Tělo zprávy vašeho e-mailu je vytvořeno v HTML. Můžete použít libovolné rozvržení, styl a značky, které HTML a vložené šablony stylů CSS umožňují. Můžete také použít obrázky, pokud je hostujete na veřejně dostupném webovém koncovém bodu. Chcete-li přidat obrázek, zadejte adresu URL obrázku do atributu **src** značky HTML **&lt;img&gt;**.
 
 > [!NOTE]
 > E-mailoví klienti mají omezení rozložení a stylu, která mohou vyžadovat úpravy HTML a CSS stylů, které používáte pro tělo zprávy. Doporučujeme vám seznámit se s osvědčenými postupy vytváření HTML, které budou podporovat nejoblíbenější e-mailoví klienti.
@@ -111,15 +111,15 @@ Následující zástupné texty získávají a zobrazují data pro jednotlivé p
 | productid                      | ID produktu pro řádek. |
 | lineproductname                | Název produktu. |
 | lineproductdescription         | Popis produktu. |
-| linequantity                   | Počet jednotek, které byly objednány pro řádek, plus měrná jednotka (například **ks** , nebo **pár** ). |
+| linequantity                   | Počet jednotek, které byly objednány pro řádek, plus měrná jednotka (například **ks**, nebo **pár**). |
 | lineunit                       | Měrná jednotka řádku. |
 | linequantity_withoutunit       | Počet jednotek, které byly objednány pro řádek, bez měrné jednotky. |
-| linequantitypicked             | Když je použita událost **PickOrder** , počet jednotek, které byly vydány. V opačném případě **0** (nula). |
-| linequantitypicked_withoutunit | Když je použita událost **PickOrder** , počet jednotek, které byly vydány, bez měrné jednotky. V opačném případě **0** (nula). |
-| linequantitypacked             | Když jsou použity události **PackOrder** a **Objednávka připravena k vyzvednutí** , počet jednotek, které byly zabaleny. V opačném případě **0** (nula). |
-| linequantitypacked_withoutuom  | Když jsou použity události **PackOrder** a **Objednávka připravena k vyzvednutí** , počet jednotek, které byly zabaleny, bez měrné jednotky. V opačném případě **0** (nula). |
-| linequantityshipped            | Vždy **0** , s výjimkou případů, kdy jsou použity konkrétní události, jak je popsáno v dalším řádku. |
-| linequantityshipped_withoutuom | Když je použita událost **ShipOrder** , počet jednotek, které byly vydány, bez měrné jednotky. V opačném případě **0** (nula). |
+| linequantitypicked             | Když je použita událost **PickOrder**, počet jednotek, které byly vydány. V opačném případě **0** (nula). |
+| linequantitypicked_withoutunit | Když je použita událost **PickOrder**, počet jednotek, které byly vydány, bez měrné jednotky. V opačném případě **0** (nula). |
+| linequantitypacked             | Když jsou použity události **PackOrder** a **Objednávka připravena k vyzvednutí**, počet jednotek, které byly zabaleny. V opačném případě **0** (nula). |
+| linequantitypacked_withoutuom  | Když jsou použity události **PackOrder** a **Objednávka připravena k vyzvednutí**, počet jednotek, které byly zabaleny, bez měrné jednotky. V opačném případě **0** (nula). |
+| linequantityshipped            | Vždy **0**, s výjimkou případů, kdy jsou použity konkrétní události, jak je popsáno v dalším řádku. |
+| linequantityshipped_withoutuom | Když je použita událost **ShipOrder**, počet jednotek, které byly vydány, bez měrné jednotky. V opačném případě **0** (nula). |
 | lineprice                      | Cena za jednotku. |
 | linenetamount                  | Cena řádku po použití počtu jednotek a slevy. |
 | linediscount                   | Sleva na jednotlivou jednotku. |
@@ -170,9 +170,9 @@ Následuje příklad.
 
 Účtenky lze zaslat e-mailem zákazníkům, kteří nakupují v maloobchodním pokladním místě (POS). Obecně jsou kroky pro vytvoření šablony účtenky odeslané e-mailem stejné jako kroky pro vytvoření šablon pro jiné transakční události. Jsou však nutné následující změny:
 
-- ID e-mailu e-mailové šablony musí být **emailRecpt** .
-- Text účtenky se vloží do e-mailu pomocí zástupného textu **%message%** . Aby bylo zajištěno, že tělo účtenky je správně vykresleno, obklopte zástupný text **%message%** HTML značkami **&lt;pre&gt;** a **&lt;/pre&gt;** .
-- Konce řádků v HTML pro záhlaví a zápatí e-mailu jsou převedeny na HTML značky **&lt;br /&gt;** , aby bylo tělo účtenky vykresleno správně. Chcete-li vyloučit nežádoucí vertikální prostor v e-mailech s účtenkou, odstraňte konce řádků z jakéhokoli místa v HTML, kde vertikální prostor není vyžadován.
+- ID e-mailu e-mailové šablony musí být **emailRecpt**.
+- Text účtenky se vloží do e-mailu pomocí zástupného textu **%message%**. Aby bylo zajištěno, že tělo účtenky je správně vykresleno, obklopte zástupný text **%message%** HTML značkami **&lt;pre&gt;** a **&lt;/pre&gt;**.
+- Konce řádků v HTML pro záhlaví a zápatí e-mailu jsou převedeny na HTML značky **&lt;br /&gt;**, aby bylo tělo účtenky vykresleno správně. Chcete-li vyloučit nežádoucí vertikální prostor v e-mailech s účtenkou, odstraňte konce řádků z jakéhokoli místa v HTML, kde vertikální prostor není vyžadován.
 
 Další informace o způsobu konfigurace e-mailových účtenek naleznete v tématu [Nastavení účtenek e-mailem](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
 
@@ -182,13 +182,13 @@ Poté, co jste vytvořili a otestovali HTML pro tělo své zprávy, musí být o
 
 Chcete-li nahrát novou nebo upravenou HTML e-mailovou šablonu, postupujte takto.
 
-1. V Commerce Headquarters přejděte na **Retail a Commerce \> Nastavení Headquarters \> Šablony e-mailu organizace** .
+1. V Commerce Headquarters přejděte na **Retail a Commerce \> Nastavení Headquarters \> Šablony e-mailu organizace**.
 1. Vyberte řádek pro jazyk, pro který chcete přidat nebo nahradit HTML. Případně vyberte **Nový** pro vytvoření řádku pro nový jazyk.
-1. Vyberte možnost **Upravit** .
-1. V zobrazeném dialogovém okně vyberte **Procházet** . Vyhledejte dokument HTML, který chcete odeslat, vyberte ho a poté vyberte **Otevřít** .
-1. Vyberte **Odeslat** .
-1. Poté, co se v okně náhledu zobrazí vaše HTML e-mail, vyberte **OK** .
-1. Ujistěte se, že je pro řádek zaškrtnuto políčko **Má tělo** .
+1. Vyberte možnost **Upravit**.
+1. V zobrazeném dialogovém okně vyberte **Procházet**. Vyhledejte dokument HTML, který chcete odeslat, vyberte ho a poté vyberte **Otevřít**.
+1. Vyberte **Odeslat**.
+1. Poté, co se v okně náhledu zobrazí vaše HTML e-mail, vyberte **OK**.
+1. Ujistěte se, že je pro řádek zaškrtnuto políčko **Má tělo**.
 
 Pokud jste již nakonfigurovali Commerce Headquarters pro odesílání e-mailu, váš nový nebo aktualizovaný e-mail bude zaslán všem zákazníkům, kteří provedou transakci, která vyvolá událost mapovanou na šablonu.
 

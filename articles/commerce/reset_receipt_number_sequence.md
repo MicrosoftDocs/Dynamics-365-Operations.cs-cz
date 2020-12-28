@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
 ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410715"
 ---
 # <a name="reset-receipt-numbers"></a>Resetování čísel příjemek 
 
@@ -46,25 +46,25 @@ V aplikaci Commerce mohou být formáty účtenek alfanumerické. Do nich může
 | MM         | Znaky **MM** se používají pro měsíc vyjádřený dvěma číslicemi. Například pro leden zobrazuje formát **MM** na příjemce "01". |
 | DD         | Znaky **DD** se používají pro den v měsíci vyjádřený dvěma číslicemi. Například pro 15. ledna zobrazuje formát **DD** na příjemce "15". |
 | RR         | Znaky **RR** se používají pro rok vyjádřený dvěma číslicemi. Například v kterémkoli měsíci v roce 2020 je formát **RR** pro účtenku označen znakem "20". |
-| \#         | Pro sekvenční číslování se používá číselný znak ( **\#** ). Například formát **####** ukazuje na příjmu hodnoty "0001," "0002," "0003," atd. |
+| \#         | Pro sekvenční číslování se používá číselný znak (**\#**). Například formát **####** ukazuje na příjmu hodnoty "0001," "0002," "0003," atd. |
 
 Postupné číslování příjemky lze resetovat k určitému datu. Pro první transakci, která se objeví po 12:00 dopoledne k vybranému datu resetování, pak systém znovu nastaví číselnou řadu příjemky na 1. Můžete také určit, zda má být vynulován pouze jeden čas, nebo zda se bude opakovat každý rok. Je-li zadáno roční opakování, dojde k automatickému obnovení každého roku, dokud se jej maloobchodní prodejce nerozhodne zastavit. 
 
 Chcete-li zapnout resetování, postupujte následujícím způsobem.
 
-1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily** .
-1. Na pevné záložce **Číslování příjemky** vyberte **Obnovit datum resetování čísel** .
+1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**.
+1. Na pevné záložce **Číslování příjemky** vyberte **Obnovit datum resetování čísel**.
 1. V rozevíracím dialogovém okně v poli **Resetovat datum** vyberte budoucí datum, kdy má dojít k vymazání.
-1. V poli **Resetovat typ příjemky** vyberte **pouze jednorázově** nebo **Ročně** .
-1. Vyberte **OK** .
+1. V poli **Resetovat typ příjemky** vyberte **pouze jednorázově** nebo **Ročně**.
+1. Vyberte **OK**.
 
 ![Výběr data obnovení účtenky](media/Enable_receipt_reset.png "Výběr data obnovení účtenky")
 
-Poté, co vyberete datum, bude zobrazeno ve sloupci **další datum resetování čísla příjemky** . Datum resetování lze použít pro všechny typy transakcí příjemky. Proto bude číselná řada příjmu vynulována pro všechny typy příjemek.
+Poté, co vyberete datum, bude zobrazeno ve sloupci **další datum resetování čísla příjemky**. Datum resetování lze použít pro všechny typy transakcí příjemky. Proto bude číselná řada příjmu vynulována pro všechny typy příjemek.
 
-Po obdržení nového data je vynulováno číslo příjemky pro první transakci každého typu. Kromě toho ve funkčním profilu je datum přesunuto ze sloupce **Datum resetování čísla příjemky** do sloupce **Datum resetování aktuálního čísla příjemky** . Tato změna znamená, že pokud není registrační pokladna pro datum resetování použita, bude číslo účtenky vynulováno při příštím použití *registru* . Například 3. prosince 2019, vyberte jako datum resetování **1. ledna 2020** . 1. ledna, když registr provede první transakci, bude číslo příjemky vynulováno. Jeden registr se však během prosince a ledna vůbec nepoužívá, ale začne se používat v únoru. V tomto případě, protože byla definována akce resetování, bude číslo příjmu pro tento registr vynulováno, jakmile registr provede první transakci v únoru.
+Po obdržení nového data je vynulováno číslo příjemky pro první transakci každého typu. Kromě toho ve funkčním profilu je datum přesunuto ze sloupce **Datum resetování čísla příjemky** do sloupce **Datum resetování aktuálního čísla příjemky**. Tato změna znamená, že pokud není registrační pokladna pro datum resetování použita, bude číslo účtenky vynulováno při příštím použití *registru*. Například 3. prosince 2019, vyberte jako datum resetování **1. ledna 2020**. 1. ledna, když registr provede první transakci, bude číslo příjemky vynulováno. Jeden registr se však během prosince a ledna vůbec nepoužívá, ale začne se používat v únoru. V tomto případě, protože byla definována akce resetování, bude číslo příjmu pro tento registr vynulováno, jakmile registr provede první transakci v únoru.
 
 Chcete-li vymazat budoucí data resetování, můžete použít funkci **Vymazat datum resetování** k vymazání budoucích dat resetování. Pokud však k datu resetování došlo v minulosti, nelze je vrátit zpět. V důsledku toho bude obnovení přesto probíhat u všech registrů, u nichž dosud nedošlo k resetování.
 
 > [!NOTE]
-> V závislosti na zvoleném datu resetování a na formátu účtenky mohou být k dispozici duplicitní čísla příjmu. Ačkoli systém Retail POS může tyto situace zpracovat, zvyšují dobu potřebnou ke zpracování vratek, protože prodejci musí vybírat mezi duplicitními příjmy. Další komplikace související s čištěním dat mohou nastat v případě, že duplicitní příjemky nebyly naplánovány. Proto doporučujeme, abyste používali dynamické datové znaky (například **DDD** , **mm** , **DD** a **RR** ), aby se zabránilo výskytu duplicitních čísel příjmu po resetování.
+> V závislosti na zvoleném datu resetování a na formátu účtenky mohou být k dispozici duplicitní čísla příjmu. Ačkoli systém Retail POS může tyto situace zpracovat, zvyšují dobu potřebnou ke zpracování vratek, protože prodejci musí vybírat mezi duplicitními příjmy. Další komplikace související s čištěním dat mohou nastat v případě, že duplicitní příjemky nebyly naplánovány. Proto doporučujeme, abyste používali dynamické datové znaky (například **DDD**, **mm**, **DD** a **RR**), aby se zabránilo výskytu duplicitních čísel příjmu po resetování.

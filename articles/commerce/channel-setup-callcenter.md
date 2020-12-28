@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107177"
+ms.locfileid: "4410935"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -94,7 +94,7 @@ Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k k
 
 1. Ve formuláři způsoby dodání na základě kontaktního střediska vyberte **Spravovat způsoby dodání**
 1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
-1. V oddílu **Maloobchodní kanály** klikněte na **Přidat řádek** , chcete-li přidat kanál kontaktního centra. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. V oddílu **Maloobchodní kanály** klikněte na **Přidat řádek**, chcete-li přidat kanál kontaktního centra. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
 1. Zajistěte, aby byl způsob dodání konfigurován daty na pevné záložce **Produkty** a **Adresy**. Nejsou-li pro způsob dodání platné žádné produkty nebo dodací adresy, při výběru objednávky dojde k chybám.
 1. Po provedení změn v režimu kontaktní středisko pro konfiguraci dodání je nutné spustit úlohu **Zpracovat způsoby dodání** a rozbalit tak matici změn. Tato úloha se nachází v **Maloobchodní a velkoobchodní prodej \> IT pro maloobchod a velkoobchod \> Zpracovat způsoby dodání**.
 

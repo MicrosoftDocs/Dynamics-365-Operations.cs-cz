@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113821"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410745"
 ---
 # <a name="set-up-a-retail-channel"></a>Nastavení maloobchodního kanálu
 
@@ -51,7 +51,7 @@ Před vytvořením maloobchodního kanálu se ujistěte, že splňujete [předpo
 1. V poli **Adresář odběratele** zadejte platný adresář.
 1. Do pole **Výchozí odběratel** zadejte platného výchozího odběratele.
 1. V poli **Funkční profil** vyberte funkční profil, pokud je k dispozici.
-1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
+1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
 1. V podokně akcí vyberte **Uložit**.
 
 V následujícím obrázku je znázorněno vytvoření nového maloobchodního kanálu.
@@ -86,12 +86,12 @@ Následující obrázek ukazuje další možnosti nastavení maloobchodních kan
 
 Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
 
-1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
-1. V podokně akcí zvolte **Nový**.
-1. V navigačním podokně vyberte požadovaný způsob platby.
-1. V části **Obecné** zadejte **Název operace** a nakonfigurujte další požadovaná nastavení.
+1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
+1. V podokně akcí zvolte **Nový**.
+1. V navigačním podokně vyberte požadovaný způsob platby.
+1. V části **Obecné** zadejte **Název operace** a nakonfigurujte další požadovaná nastavení.
 1. Konfigurujte libovolná další nastavení, která jsou požadována pro typ platby.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
@@ -112,9 +112,9 @@ Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z kar
 
 Chcete-li změnit nebo přidat způsob dodání, postupujte podle následujících kroků.
 
-1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
-1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
-1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
+1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
+1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
@@ -153,9 +153,9 @@ Chcete-li nastavit sekce, postupujte následujícím způsobem.
 
 Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujících pokynů.
 
-1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Přiřazení skupiny plnění**.
-1. V podokně akcí zvolte **Nový**.
-1. V rozevíracím seznamu **Skupina plnění** vyberte skupinu plnění.
+1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Přiřazení skupiny plnění**.
+1. V podokně akcí zvolte **Nový**.
+1. V rozevíracím seznamu **Skupina plnění** vyberte skupinu plnění.
 1. V rozevíracím sezamu **Popis** zadejte popis.
 1. V podokně akcí vyberte **Uložit**
 

@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097132"
+ms.locfileid: "4410922"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentování v Dynamics 365 Commerce
 Pomocí experimentování v Dynamics 365 Commerce můžete ověřovat hypotézy o efektivnosti vašich stránek elektronického obchodování a rozhodovat se na základě dat. Commerce podporuje testování A/B na stránkách, v modulech a fragmentech a umožňuje vám měřit dopad navrhovaných změn na váš web.
@@ -33,9 +33,9 @@ V konfigurátoru webů Commerce můžete vytvářet, upravovat a spravovat zprac
 ## <a name="set-up-prerequisites"></a> Nastavení předpokladů
 1. **Získejte správnou verzi Commerce** – Upgradujte knihovnu modulů, sadu software development kit (SDK) pro rozšiřitelnost online kanálů a Commerce Scale Unit na verzi Commerce 10.0.13 nebo novější.
 1. **Nastavte konektor pro experimentování** – Konektor pro experimentování umožňuje propojit Commerce se službami třetích stran, aby bylo možné načítat seznam experimentů a určovat, kdy se má experiment zobrazit uživateli. Konektor třetí strany si můžete zakoupit na webu [AppSource](https://appsource.microsoft.com). Postupujte podle pokynů k nastavení poskytnutých vydavatelem. Jako alternativu můžete použít ukázkový testovací konektor z Commerce a otestovat pracovní postup experimentování, aniž byste museli konfigurovat externí službu. Další informace najdete v tématu [Konfigurace a povolení konektorů](e-commerce-extensibility/connectors.md). 
-1. **Zapněte v Commerce příznaky funkce experimentování** – Experimentování můžete povolit na úrovni tenanta tak, že přejdete na **Nastavení tenanta > Funkce** , nebo na úrovni webu v **Nastavení webu > Funkce**.
-    - Když povolíte příznak **Experimentování** , můžete v experimentech vytvářet varianty modulů na stránce bez ovlivnění nebo kopírování dalšího obsahu, který není součástí experimentu. Tím je zajištěno, že průběžné aktualizace obsahu mimo experiment zůstanou synchronizované během celého životního cyklu experimentu. Když tento příznak zakážete, zastaví se zobrazování všech experimentů uživatelům a odeberou se všechny funkce pro úpravy v konfigurátoru webů.
-    - Když povolíte příznak **Experimentovat na stránkách nebo ve fragmentech** , můžete spouštět experimenty na stránce nebo ve fragmentu. Tím se vytvoří kopie úplné instance celé stránky nebo fragmentu pro všechny moduly v rámci stránky nebo fragmentu. Tento režim použijte, pokud chcete otestovat komplexní změny obsahu nebo v případě, že synchronizace průběžných změn obsahu napříč instancemi není problém. Zakázání tohoto příznaku zabrání vytváření a úpravám nových experimentů na stránkách a ve fragmentech.
+1. **Zapněte v Commerce příznaky funkce experimentování** – Experimentování můžete povolit na úrovni tenanta tak, že přejdete na **Nastavení tenanta > Funkce**, nebo na úrovni webu v **Nastavení webu > Funkce**.
+    - Když povolíte příznak **Experimentování**, můžete v experimentech vytvářet varianty modulů na stránce bez ovlivnění nebo kopírování dalšího obsahu, který není součástí experimentu. Tím je zajištěno, že průběžné aktualizace obsahu mimo experiment zůstanou synchronizované během celého životního cyklu experimentu. Když tento příznak zakážete, zastaví se zobrazování všech experimentů uživatelům a odeberou se všechny funkce pro úpravy v konfigurátoru webů.
+    - Když povolíte příznak **Experimentovat na stránkách nebo ve fragmentech**, můžete spouštět experimenty na stránce nebo ve fragmentu. Tím se vytvoří kopie úplné instance celé stránky nebo fragmentu pro všechny moduly v rámci stránky nebo fragmentu. Tento režim použijte, pokud chcete otestovat komplexní změny obsahu nebo v případě, že synchronizace průběžných změn obsahu napříč instancemi není problém. Zakázání tohoto příznaku zabrání vytváření a úpravám nových experimentů na stránkách a ve fragmentech.
     > [!NOTE]
     > Aby funkce **Experimentovat na stránkách nebo ve fragmentech** fungovala, musí být povolen také příznak **Experimentování**.
     

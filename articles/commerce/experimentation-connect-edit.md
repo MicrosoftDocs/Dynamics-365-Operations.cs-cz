@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4096960"
+ms.locfileid: "4410923"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Připojení experimentu a úpravy variant
 
@@ -60,7 +60,7 @@ Když budete chtít experiment připojit, spustíte průvodce **Připojení expe
 
 Chcete-li zahájit připojení experimentu v nástroji pro tvorbu obchodních webů, postupujte takto.
 
-1. Chcete-li spustit průvodce **Připojte experiment** , vyberte **Experimenty** v levém navigačním podokně a poté vyberte **Připojit**. Alternativně můžete průvodce otevřít ze editoru stránky nebo fragmentu jeho úpravou a výběrem **Připojte experiment** na panelu příkazů.
+1. Chcete-li spustit průvodce **Připojte experiment**, vyberte **Experimenty** v levém navigačním podokně a poté vyberte **Připojit**. Alternativně můžete průvodce otevřít ze editoru stránky nebo fragmentu jeho úpravou a výběrem **Připojte experiment** na panelu příkazů.
 
     > [!NOTE]
     > Stránka může být připojená vždy jen k jednomu experimentu. Když budete chtít stránku připojit k jinému experimentu, nejprve odstraňte experiment, ke kterému je stránka aktuálně připojená.
@@ -84,7 +84,7 @@ Podle těchto kroků postupujte, pokud jste rozsah experimentu definovali jako *
 1. Vyberte modul, u kterého má být experiment spuštěn, vyberte tři tečky (...) a pak vyberte **Přidat do experimentu**.
 
 ### <a name="edit-variations-for-experiments-with-entire-scope"></a>Úprava variant experimentů s úplným rozsahem
-Pokud jste rozsah experimentu definovali jako **úplný** v průvodci **Připojení experimentu** , pak v zobrazení editoru použijte rozevírací nabídku variant pod panelem příkazů a upravte každou variantu podle vaší původní hypotézy. 
+Pokud jste rozsah experimentu definovali jako **úplný** v průvodci **Připojení experimentu**, pak v zobrazení editoru použijte rozevírací nabídku variant pod panelem příkazů a upravte každou variantu podle vaší původní hypotézy. 
 
 > [!NOTE]
 > V obou případech můžete také vytvořit kontrolní nebo základní variantu tak, že jednu z variant ponecháte beze změny.

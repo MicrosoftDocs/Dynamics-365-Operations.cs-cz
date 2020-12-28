@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022068"
+ms.locfileid: "4410913"
 ---
 # <a name="social-share-module"></a>Modul pro sdílení na sociálních sítích
 
@@ -53,7 +53,7 @@ Následující obrázek znázorňuje příklad modulu pro sdílení na sociáln�
 ## <a name="social-share-item-module-properties"></a>Vlastnosti modulu položky pro sdílení na sociálních sítích
 | Název vlastnosti             | Hodnota                 | popis |
 |---------------------------|-----------------------|-------------|
-| Sociální média              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **Mail** | Rozbalovací nabídka se seznamem platforem sociálních médií. |
+| Sociální média              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | Rozbalovací nabídka se seznamem platforem sociálních médií. |
 | Ikona |Obrázek    | Toto bude obrázek, který se zobrazí pro příslušné sociální médium. Doporučujeme použít SDK platformy sociálních médií pro výběr doporučeného obrázku jednotlivých platforem. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Přidání modulu pro sdílení na sociálních sítích do modulu buy boxu
@@ -61,18 +61,18 @@ Následující obrázek znázorňuje příklad modulu pro sdílení na sociáln�
 Chcete-li přidat modul pro sdílení na sociálních sítích do modulu buy boxu, postupujte takto.
 
 1. Na webu Fabrikam vyberte **Stránky** a potom vyberte stránku **DefaultPDP** pro otevření stránky s podrobnostmi o produktu. 
-1. V pozici **Buybox (povinné)** vyberte tři tečky ( **...** ) a poté vyberte možnost **Přidat modul**.
+1. V pozici **Buybox (povinné)** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Sdílení na sociálních sítích** a poté klikněte na tlačítko **OK**.
-1. V pozici **Sdílení na sociálních sítích** vyberte tři tečky ( **...** ) a poté vyberte možnost **Přidat modul**.
+1. V pozici **Sdílení na sociálních sítích** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **SocialShare** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu **SocialShare** v sekci **Orientace** vyberte **Horizontální** . Podle potřeby přidejte titulek.
-1. V pozici **SocialShare** vyberte tři tečky ( **...** ) a poté vyberte možnost **Přidat modul**.
+1. V pozici **SocialShare** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **SocialShareItem** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu **SocialShareItem** v sekci **SocialMedia** vyberte **Facebook**.
 1. V podokně vlastností modulu **SocialShareItem** v sekci **Ikona** vyberte **+ Přidat obrázek**.
 1. V dialogovém okně **Výběr média** vyberte obrázek loga Facebook a poté klikněte na tlačítko **OK**. Jestli není dostupný obrázek s logem Facebook, volbou **Odeslat novou mediální položku** jej nahrajte.
 1. Přidejte a nakonfigurujte další moduly **SocialShareItem** podle potřeby.
-1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky. Na stránce se zobrazí modul pro sdílení na sociálních sítích.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky. Na stránce se zobrazí modul pro sdílení na sociálních sítích.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 ## <a name="additional-resources"></a>Další prostředky

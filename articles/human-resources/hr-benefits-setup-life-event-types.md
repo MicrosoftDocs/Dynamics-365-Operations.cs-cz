@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 9723b5ff40c84677316d71e185cf862556b32cf9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3741479"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417618"
 ---
 # <a name="configure-life-event-types"></a>Konfigurace typů životních událostí
 
@@ -73,7 +73,7 @@ Při vytváření typu životní události můžete vybrat některou z následuj
 | **Narození nebo adopce (závislá osoba)** | <ul><li>Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě</li><li>Samoobsluha pro zaměstnance</li></ul> | Zadány hodnoty do pole **Datum přijetí**. Je požadováno datum narození dítěte. |
 | **Ztráta pokrytí (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> ztráta pokrytí | **Ztráta pokrytí** vybraná pro osobní kontakt spolu s **datem platnosti** |
 | Změna zaměstnání druha/družky | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě >Zaměstnaná. | <ul><li>Záznam podrobností o závislé osobě vytvořen a pole **Zaměstnaný osobní kontakt** = Ano</li><li>Pole **Zaměstnaný osobní kontakt** změněno (Ano nebo Ne)</li></ul> |
-| **Pracovní volno (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Pracovní volno | <ul><li>Záznam podobností o závislé úrovni vytvořen a pole**EhrLOAEffectiveDate** vyplněno</li><li>**personPrivateDetails.EhrIsLOA** změněno (ano nebo ne)</li><li>**personPrivateDetails. EhrLOAEffectiveDate** je změněno.</li></ul> |
+| **Pracovní volno (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Pracovní volno | <ul><li>Záznam podobností o závislé úrovni vytvořen a pole **EhrLOAEffectiveDate** vyplněno</li><li>**personPrivateDetails.EhrIsLOA** změněno (ano nebo ne)</li><li>**personPrivateDetails. EhrLOAEffectiveDate** je změněno.</li></ul> |
 | **Změna pokrytí (pozice)** | <ul><li>Pracovník -> Přiřazení pozice > Přiřazení pozic pracovníka</li><li>Pozice > Pozice</li></ul> | <ul><li>Změna na pozici v záznamech přiřazení pozice pracovníka</li><li>Změna přiřazení pracovníka na pozici</li></ul> |
 | **Zdravotní péče (zaměstnanec / závislá osoba)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Datum účinnosti zdravotní péče | Není automaticky spuštěno, pokud osobní kontakt zadá datum platnosti. |
 | **Soudně nařízená podpora** | Pracovník > Profil > osobní údaje > Osobní kontakty > Závislá osoba > Podpora nařízená soudem (QMSCO/QDRO a data platnosti | Neaktivuje automatické aktualizace. Neovlivňuje způsobilost; zaznamenává životní událost. |

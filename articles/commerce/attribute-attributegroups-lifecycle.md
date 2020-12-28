@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895346"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410764"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Správa atributů a skupin atributů
 
@@ -68,10 +68,10 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 
 1. Přihlaste se ke klientovi účetního systému jako manažer prodeje.
 2. Přejděte do nabídky **Řízení informací o produktech** &gt; **Nastavení** &gt; **Kategorie a atributy** &gt; **Typy atributů**.
-3. Vytvořte dva typy atributů typu **Text** typu, nastavte možnost **Pevný seznam** na **Yes**a poté přidejte seznam hodnot:
+3. Vytvořte dva typy atributů typu **Text** typu, nastavte možnost **Pevný seznam** na **Yes** a poté přidejte seznam hodnot:
 
-    - Pojmenujte typ atributu **Tvar čočky**a přidejte následující hodnoty: **Ovál**, **Čtverec** a **Obdélník**.
-    - Pojmenujte druhý typ atributu **Značka slunečních brýlí**a přidejte následující hodnoty: **Ray ban**, **Aviator** a **Oakley**.
+    - Pojmenujte typ atributu **Tvar čočky** a přidejte následující hodnoty: **Ovál**, **Čtverec** a **Obdélník**.
+    - Pojmenujte druhý typ atributu **Značka slunečních brýlí** a přidejte následující hodnoty: **Ray ban**, **Aviator** a **Oakley**.
 
 ![Typy atributů](media/AttributeType.png)
 
@@ -189,7 +189,7 @@ Jednu nebo více skupin atributů lze přiřadit k jedné nebo více prodejnám 
 3. Přiřazení skupin atributů ke kanálu Houston:
 
     1. Vyberte kanál **Houston**.
-    2. Na pevné záložce **Skupina atributů** vyberte **Přidat**a pak v poli **Název** vyberte **SharePointProvisionedProductAttributeGroup**.
+    2. Na pevné záložce **Skupina atributů** vyberte **Přidat** a pak v poli **Název** vyberte **SharePointProvisionedProductAttributeGroup**.
     3. Vyberte znovu **Přidat** a poté v poli **Název** vyberte **Pánské pásky**.
     4. Vyberte znovu **Přidat** a poté v poli **Název** vyberte **Módní sluneční brýle**.
 

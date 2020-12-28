@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107272"
+ms.locfileid: "4410930"
 ---
 # <a name="call-center-catalogs"></a>Katalogy kontaktního střediska
 
@@ -52,7 +52,7 @@ Klepnutím na horní uzel hierarchie katalogu se vrátíte zpět k zobrazení z�
 
 Katalog musí být publikován předtím, než bude k dispozici pro používání. Klepněte na tlačítko **ověřit katalog** v nabídce **katalogy** ke zpracování ověření. To je požadovaná akce a ověří, zda je požadované nastavení přesné. Chcete-li zobrazit detaily ověření, klikněte na **Zobrazit výsledky**. Pokud budou nalezeny chyby, musíte opravit data a znovu spustit ověření, dokud nebude úspěšné.
 
-Po potvrzení ověření klepněte na tlačítko **Workflow** v nabídce ke spuštění workflow schválení. Klepněte na tlačítko **odeslat** v nabídce **workflow** ke spuštění procesu. Nakonfigurujte kroky a oprávněné uživatele workflowu z karty **Retail and Commerce** \> **Nastavení centrály** \> **Workflowy Commerce**. Workflow definuje postup potřebný k přesunutí katalogu do stavu **schváleno**. Když je katalog ve stavu **schváleno** , můžete klepnout na možnost **publikovat** v nabídce **katalogy** a proces dokončit. Jakmile je katalog ve stavu **publikován** , lze jej použít k zadávání objednávek call centra a procesy odeslání katalogu.
+Po potvrzení ověření klepněte na tlačítko **Workflow** v nabídce ke spuštění workflow schválení. Klepněte na tlačítko **odeslat** v nabídce **workflow** ke spuštění procesu. Nakonfigurujte kroky a oprávněné uživatele workflowu z karty **Retail and Commerce** \> **Nastavení centrály** \> **Workflowy Commerce**. Workflow definuje postup potřebný k přesunutí katalogu do stavu **schváleno**. Když je katalog ve stavu **schváleno**, můžete klepnout na možnost **publikovat** v nabídce **katalogy** a proces dokončit. Jakmile je katalog ve stavu **publikován**, lze jej použít k zadávání objednávek call centra a procesy odeslání katalogu.
 
 ## <a name="use-catalogs-to-drive-sales-order-pricing-and-promotions"></a>Použití katalogů k urychlení nacenění a propagace prodejní objednávky
 
@@ -92,7 +92,7 @@ Při konfiguraci produktů v katalogu, použijte akci **rozložení stránky pro
 
 ## <a name="catalog-requests"></a>Požadavky na katalog
 
-Při konfiguraci a publikování katalogů v aplikaci Commerce lze využít funkci **Odeslat katalog**. Tato funkce je k dispozici na stránce **Hledat zákazníka** a **odběratelský servis**. Po výběru záznamu odběratele pomocí možnosti **Hledat zákazníka** nebo při zobrazení vybraného účtu odběratele vybraný z pole **odběratelský servis** , uživatelé mohou vybrat možnost **odeslání katalogu** , kterou se otevře dialogové okno umožňující uživateli zvolit ze seznamu všech publikovaných a aktivních katalogů. Uživatel může vybrat katalog a množství a konkrétní ID zdrojového kódu k odeslání. Po klepnutí na tlačítko **odeslat** se uloží požadavek, který lze poté spravovat vytištěním sestavy **požadavky na katalogu**. Tuto sestavu lze najít po přechodu do **Retail and Commerce** \> **Sestavy kontaktního střediska** \> **Sestava požadavků katalogu**. Zobrazuje seznam všech požadavků na katalog, včetně názvu a adresy zákazníka, který si vyžádal katalog. Tuto sestavu lze použít interně nebo je možné přenést data třetí straně podporující externí procesy pro fyzické odeslání katalogu odběrateli.
+Při konfiguraci a publikování katalogů v aplikaci Commerce lze využít funkci **Odeslat katalog**. Tato funkce je k dispozici na stránce **Hledat zákazníka** a **odběratelský servis**. Po výběru záznamu odběratele pomocí možnosti **Hledat zákazníka** nebo při zobrazení vybraného účtu odběratele vybraný z pole **odběratelský servis**, uživatelé mohou vybrat možnost **odeslání katalogu**, kterou se otevře dialogové okno umožňující uživateli zvolit ze seznamu všech publikovaných a aktivních katalogů. Uživatel může vybrat katalog a množství a konkrétní ID zdrojového kódu k odeslání. Po klepnutí na tlačítko **odeslat** se uloží požadavek, který lze poté spravovat vytištěním sestavy **požadavky na katalogu**. Tuto sestavu lze najít po přechodu do **Retail and Commerce** \> **Sestavy kontaktního střediska** \> **Sestava požadavků katalogu**. Zobrazuje seznam všech požadavků na katalog, včetně názvu a adresy zákazníka, který si vyžádal katalog. Tuto sestavu lze použít interně nebo je možné přenést data třetí straně podporující externí procesy pro fyzické odeslání katalogu odběrateli.
 
 ## <a name="additional-features"></a>Další funkce
 
@@ -100,4 +100,4 @@ Na kartě **katalogy** kartě Možnosti konfigurace jsou k dispozici možnosti p
 
 ## <a name="additional-notes"></a>Další poznámky
 
-V současné době platí, že když je použito ID zdrojového kódu pro všechny prodejní objednávky v call centru, použije se pro generování cen, promoakcí, skriptů a návazného/křížového prodeje specifických pro katalog. Systém nebude zakazovat ani zabraňovat objednání produktu, který není v katalogu, v prodejní objednávce. Pokud je objednaná položka, která není součástí katalogu, systém použije nejprve **Cenovou skupinu** definovanou v kanálu kontaktního střediska ( **Retail and Commerce** \> **Kanály** \> **kontaktní střediska** \> **šechna kontaktní střediska** ) pro ceny zboží nebo promoakcí. Pokud žádná konkrétní kanálová cena není nalezena, použije se základní prodejní cena zboží.
+V současné době platí, že když je použito ID zdrojového kódu pro všechny prodejní objednávky v call centru, použije se pro generování cen, promoakcí, skriptů a návazného/křížového prodeje specifických pro katalog. Systém nebude zakazovat ani zabraňovat objednání produktu, který není v katalogu, v prodejní objednávce. Pokud je objednaná položka, která není součástí katalogu, systém použije nejprve **Cenovou skupinu** definovanou v kanálu kontaktního střediska (**Retail and Commerce** \> **Kanály** \> **kontaktní střediska** \> **šechna kontaktní střediska**) pro ceny zboží nebo promoakcí. Pokud žádná konkrétní kanálová cena není nalezena, použije se základní prodejní cena zboží.

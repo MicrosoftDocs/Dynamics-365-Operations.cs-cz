@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 85e64c4186c7782391a3db6dc4deb3fab0ea9f4f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417573"
 ---
 # <a name="create-variable-compensation-plans"></a>Vytvoření plánů variabilní kompenzace
 
@@ -34,7 +34,7 @@ Výpočet částek variabilní kompenzace pro zaměstnance lze založit na něko
 ## <a name="variable-compensation-components"></a>Komponenty variabilní kompenzace
 ### <a name="create-compensation-types"></a>Vytvoření typů kompenzaci
 
-**Typy variabilních kompenzací**jsou požadovaný komponent. Typy variabilních kompenzací vám umožňují popsat typy variabilní kompenzace, které vaše organizace odměňuje. Také vám umožňují určit, zda proběhne kompenzace v hotovosti nebo v nepeněžní formě, například jako zásoba.
+**Typy variabilních kompenzací** jsou požadovaný komponent. Typy variabilních kompenzací vám umožňují popsat typy variabilní kompenzace, které vaše organizace odměňuje. Také vám umožňují určit, zda proběhne kompenzace v hotovosti nebo v nepeněžní formě, například jako zásoba.
 
 ### <a name="describe-vesting-rules"></a>Popis pravidel připsání
 
@@ -51,7 +51,7 @@ V případě potřeby mohou společnosti nastavit **pravidla připsání**. Prav
 -   Vyberte možnost **Procento základu**, zadejte výchozí procento a určete, zda má být základ pevná mzdová sazba zaměstnance nebo kontrolní bod úrovně kompenzace zaměstnance. Úroveň kompenzace se nastavuje u pozice zaměstnance. Jeden z referenčních bodů ze struktury kompenzace můžete nastavit jako kontrolní bod v plánu fixní kompenzace. Systém použije úroveň kompenzace z pozice zaměstnance a vytvoří křížový odkaz s kontrolním bodem, který je uveden v zaměstnancově plánu fixní kompenzace, aby zjistil částku kontrolního bodu pro úroveň kompenzace zaměstnance. Částka kontrolního bodu se pak použije namísto pevné mzdové sazby zaměstnance jako základ pro odměnu.
 -   Vyberte možnost **Počet jednotek** a zadejte výchozí počet jednotek, hodnotu každé jednotky a měnu jednotkové hodnoty v případě, že plán kompenzace je pro bezhotovostní odměnu (například 200 jednotek zásob je oceněno na 40 USD), nebo pouze počet jednotek, pokud je plán kompenzace pro finanční odměnu. Pro finanční odměnu zaměstnanec obdrží určený počet jednotek měny, který je použitý pro jeho plán fixní kompenzace (například 500 jednotek po 1 USD). Ovládací prvek vztahu jedna ku jedné lze použít k určení, zda je přímé mapování jedna ku jedné mezi počtem jednotek a jednotkovou hodnotou. Při vytváření plánu variabilní kompenzace pro plán hotovosti na základě počtu jednotek je tato možnost automaticky nastavená na **Ano** a jednotková hodnota je **1.0000**.
 
-Nastavení položky **Pravidlo zařazení** umožňuje určit, zda mají všichni zaměstnanci získat stejné zvýšení bez ohledu na datum, kdy byli přijati (**Pravidlo** = **Žádné**), nebo zda mají získat procentuální odměnu podle toho, jak dlouho jsou v cyklu zaměstnáni **Pravidlo zařazení** = **Procento**). 
+Nastavení položky **Pravidlo zařazení** umožňuje určit, zda mají všichni zaměstnanci získat stejné zvýšení bez ohledu na datum, kdy byli přijati (**Pravidlo** = **Žádné**), nebo zda mají získat procentuální odměnu podle toho, jak dlouho jsou v cyklu zaměstnáni (**Pravidlo zařazení** = **Procento**). 
 
 **Účinek** umožňuje upravit odměnu zaměstnance na základě výkonnosti jeho oddělení. Měřítka výkonnosti lze nastavit pro každé oddělení na stránce **Oddělení** v části **Související formuláře** &gt; **Kompenzace** &gt; **Výkonnost**. Odměna, kterou zaměstnanci oddělení získají, závisí na hodnotě v poli **Dosažená procentuální část cíle**, která označuje výkonnost oddělení:
 
@@ -59,7 +59,7 @@ Nastavení položky **Pravidlo zařazení** umožňuje určit, zda mají všichn
 -   Pokud je výkonnost oddělení více než 100 %, systém přidá sazbu, která se nastavuje v poli **Na procento nad cílem**, k procentům v poli **Výběr na 100 %**, dokud se nedosáhne hodnoty v poli **Nejvyšší povolený výběr**.
 -   Pokud je výkonnost oddělení méně než 100 %, systém odečte sazbu, která se nastavuje v poli **Na procento pod cílem**, od procent v poli **Výběr na 100 %**, dokud se nedosáhne hodnoty v poli **Nejnižší povolený výběr**.
 
-Můžete nastavit**úrovně tolerance** na prahovou hodnotu procent, takže se zobrazí varovná zpráva, pokud účinek dosadí procentuální hodnotu mimo prahovou procentuální hodnota. 
+Můžete nastavit **úrovně tolerance** na prahovou hodnotu procent, takže se zobrazí varovná zpráva, pokud účinek dosadí procentuální hodnotu mimo prahovou procentuální hodnota. 
 
 Ve výchozím nastavení systém vyhledá oddělení, které je nastaveno u pozice zaměstnance. Odměny pro některé zaměstnance však mohou záviset na výkonnosti více oddělení. V takovém případě lze různá oddělení a procentuální odměny přidělené k výkonnosti každého oddělení nastavit na přihlášení variabilní kompenzace zaměstnance. Další informace naleznete v části „Přihlášení variabilní kompenzace" v následujícím oddílu. 
 

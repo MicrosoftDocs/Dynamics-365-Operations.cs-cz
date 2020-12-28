@@ -20,11 +20,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021882"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410857"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Správa směn a zásuvky s hotovostí
 
@@ -153,7 +153,7 @@ Způsob, jakým se používají odsouhlasení směn a zásuvek s hotovostí, se 
 
 Ačkoli každý prodejce má jiné obchodní požadavky, doporučujeme nastavit váš systém následujícím způsobem, abyste se vyhnuli situacím, kdy může k tomuto rozdíku dojít:
 
-Přejděte na **Maloobchod a velkoobchod \> Kanály \> Obchody \> Všechny obchody \> Výkaz/uzávěrka**a pro každý obchod nastavte obě pole **Metoda výkazu** a **Metoda uzávěrky** na **Směna**.
+Přejděte na **Maloobchod a velkoobchod \> Kanály \> Obchody \> Všechny obchody \> Výkaz/uzávěrka** a pro každý obchod nastavte obě pole **Metoda výkazu** a **Metoda uzávěrky** na **Směna**.
 
 Toto nastavení pomáhá zajistit, aby výkazy administrativy zahrnovaly stejné transakce jako směny v POS a aby se data sčítala podle této směny.
 

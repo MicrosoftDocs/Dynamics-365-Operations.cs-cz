@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599789"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410680"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce
 
@@ -84,7 +84,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 5. Na **uvítací** stránce se přesuňte doprava a vyberte operaci **Vybrat hardwarovou stanici**.
 6. Vyberte **Spravovat**, nastavte možnost **Použít hardwarovou stanici** do polohy **Zapnuto** a poté klikněte na tlačítko **OK**.
 7. Odhlaste se ze systému POS a znovu se přihlaste.
-8. Po přihlášení vyberte možnost **Otevřít novou směnu**a pak vyberte možnost **Zásuvka**.
+8. Po přihlášení vyberte možnost **Otevřít novou směnu** a pak vyberte možnost **Zásuvka**.
 
 ## <a name="complete-a-bopis-scenario"></a>Dokončení scénáře BOPIS
 
@@ -126,7 +126,7 @@ Informace o synchronizaci online objednávek naleznete v tématu [Zaúčtování
 
     Položka řádku se přidá na obrazovku transakce a **$0,00** se zobrazí jako splatný zůstatek.
 
-5. Vyberte splatný zůstatek **$0,00**nebo vyberte libovolný způsob platby k uzavření transakce.
+5. Vyberte splatný zůstatek **$0,00** nebo vyberte libovolný způsob platby k uzavření transakce.
 
 ## <a name="troubleshooting"></a>Řešení potíží
 

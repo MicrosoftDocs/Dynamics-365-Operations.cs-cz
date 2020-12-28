@@ -19,11 +19,11 @@ ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621186"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410674"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Vytvoření a konfigurace rozšířených záruk
 
@@ -75,7 +75,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
 1. V poli **Kategorie maloobchodu** vyberte hodnotu z rozevíracího seznamu a pak vyberte **OK**.
 1. Do pole **Číslo produktu** zadejte číslo produktu.
 1. Vyberte **OK**.
-1. Na stránce **Detaily produktu** na pevné záložce **Záruka**nastavte hodnoty polí **Jednotka času** a **Doba**.
+1. Na stránce **Detaily produktu** na pevné záložce **Záruka** nastavte hodnoty polí **Jednotka času** a **Doba**.
 
     | Název pole | Hodnota | popis |
     |------------|-------|-------------|
@@ -93,7 +93,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
     | Název pole | Hodnota | popis |
     |------------|-------|-------------|
     | Základ cenového rozsahu | **Žádná**, **Základní cena** nebo **Prodejní cena** | <ul><li>**Žádná** - Hodnoty **Dolní limit** a **Horní limit** hodnoty cenových rozsahů nejsou aplikovatelné.</li><li>**Základní cena** – Daná záruka bude uplatněna, pokud bude základní cena (tj. cena bez slev) u zboží spadajícího do záruky mezi hodnotami **Dolní limit** a **Horní limit**, které jsou zde specifikovány, na základě ceny zboží spadajícího do záruky.</li><li>**Prodejní cena** - Tato hodnota je vyhrazena pro budoucí použití.</li></ul> |
-    | Dolní limit, Horní limit | Kladné celé číslo | Tato pole definují horní a dolní cenové limity zboží spadajícího do záruky a způsob, jakým je aktuální záruční zboží aplikovatelné na zboží spadající do záruky. Tyto limity mohou být založeny na základní ceně zboží spadajícího do záruky (známé také jako maloobchodní cena doporučená výrobcem) \[MSRP\]). Pokud je hodnota v poli **Základ cenového rozpětí** nastavena na **Základní cena**, bude pouze zboží spadající do záruky (produkt) se základní cenou mezi hodnotou **Dolní limit** a **Horní limit** vyvolávat výzvu k přidání záručního zboží do POS. |
+    | Dolní limit, Horní limit | Kladné celé číslo | Tato pole definují horní a dolní cenové limity zboží spadajícího do záruky a způsob, jakým je aktuální záruční zboží aplikovatelné na zboží spadající do záruky. Tyto limity mohou být založeny na základní ceně zboží spadajícího do záruky (známé také jako maloobchodní cena doporučená výrobcem \[MSRP\]). Pokud je hodnota v poli **Základ cenového rozpětí** nastavena na **Základní cena**, bude pouze zboží spadající do záruky (produkt) se základní cenou mezi hodnotou **Dolní limit** a **Horní limit** vyvolávat výzvu k přidání záručního zboží do POS. |
 
     Například následující obrázek ukazuje pole **Základ cenového rozpětí** nastavené na hodnotu **Základní cena**, pole **Dolní limit** nastavené na $500 a pole **Horní limit** nastavené na $1000.
     

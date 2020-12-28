@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057045"
+ms.locfileid: "4417712"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Přehled samoobsluhy pro zaměstnance a manažery
 
@@ -35,11 +35,11 @@ Chcete-li přidat nebo změnit osobní údaje, viz [Úpravy osobních údajů](h
 
 ## <a name="user-not-assigned-to-a-worker-record"></a>Uživatel není přiřazen k záznamu pracovníka
 
-Pokud jste nepropojili uživatele se záznamem **Pracovník** na stránce **Uživatelé** , zobrazí se následující zpráva:
+Pokud jste nepropojili uživatele se záznamem **Pracovník** na stránce **Uživatelé**, zobrazí se následující zpráva:
 
 **Vaše ID uživatele není přidruženo k vašemu záznamu zaměstnance v systému. Před přidružením nebudete moci zobrazit nebo upravit své údaje. Požádejte o asistenci svého manažera nebo tým podpory.**
 
-Chcete-li přidružit uživatele k záznamu **Pracovník** , přejděte na stránku **Uživatelé** a vyberte uživatele. Vyberte možnost **Upravit** , přidejte příslušného pracovníka do pole **Osoba** ve formuláři a vyberte **Uložit**. Nyní byste měli mít přístup k samoobsluze zaměstnanců.
+Chcete-li přidružit uživatele k záznamu **Pracovník**, přejděte na stránku **Uživatelé** a vyberte uživatele. Vyberte možnost **Upravit**, přidejte příslušného pracovníka do pole **Osoba** ve formuláři a vyberte **Uložit**. Nyní byste měli mít přístup k samoobsluze zaměstnanců.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Bezpečnostní požadavky pro samoobslužnou službu zaměstnanců a manažerů
 
@@ -80,7 +80,7 @@ Karta **Certifikáty** zobrazuje certifikát a datum vypršení platnosti certif
 
 Karta **Příští plánované přezkoumání** zobrazuje příští přezkoumání výkonu. Z této karty můžete začít nové přezkoumání. Přezkoumání může iniciovat také vedoucí nebo manažer lidských zdrojů. V závislosti na nastavení organizace můžete také zobrazit, aktualizovat a odesílat výstupní přezkoumání z této karty.
 
-Své cíle můžete spravovat na kartě **Cíle výkonnosti**. Na této kartě je zobrazen počet cílů, které se týkají všech stavů( **Nezahájeno** , **Podle plánu** a **Je třeba zlepšit** ). Můžete vytvářet, aktualizovat a odebírat cíle v závislosti na přiřazené roli zabezpečení. Chcete-li, můžete přidat nové cíle ze skupin nebo šablon. Manažeři a oddělení lidských zdrojů mohou rovněž vytvářet cíle místo zaměstnanců a určit, jak podrobné budou jednotlivé cíle. Manažeři a zaměstnanci mohou spolupracovat na cílech a aktualizovat aktivity, měrné systémy a stav. Můžete také zahrnout přílohy.
+Své cíle můžete spravovat na kartě **Cíle výkonnosti**. Na této kartě je zobrazen počet cílů, které se týkají všech stavů(**Nezahájeno**, **Podle plánu** a **Je třeba zlepšit**). Můžete vytvářet, aktualizovat a odebírat cíle v závislosti na přiřazené roli zabezpečení. Chcete-li, můžete přidat nové cíle ze skupin nebo šablon. Manažeři a oddělení lidských zdrojů mohou rovněž vytvářet cíle místo zaměstnanců a určit, jak podrobné budou jednotlivé cíle. Manažeři a zaměstnanci mohou spolupracovat na cílech a aktualizovat aktivity, měrné systémy a stav. Můžete také zahrnout přílohy.
 
 Své stávající dovednosti si můžete prohlédnout na kartě **Dovednosti**. Můžete aktualizovat dovednosti, přidávat nové nebo odebrat položky, které již nejsou relevantní. V závislosti na nastavení organizace mohou změny dovedností projít schvalovacím procesem.
 
@@ -96,7 +96,7 @@ K zaměstnaneckým výhodám se můžete registrovat prostřednictvím odkazu **
 
 V sekci **Výkon** můžete výběrem možnosti **Deníky výkonnosti** vytvořit položky deníku výkonnosti, které se mají používat pro cíle i přezkoumání výkonu. Chcete-li poskytnout zpětnou vazbu ostatním zaměstnancům v rámci organizace, můžete vybrat možnost **Odeslat názor**. V závislosti na nastavení organizace mohou být příjemci, odesilateli a manažerům odesílány e-mailové zprávy. Zpětná vazba může být odeslána všem zaměstnancům v rámci organizace. Odeslání zpětné vazby není omezeno společností.
 
-V části **Kompetence** můžete provádět změny pro **Kurzy** , **Vzdělání** , **Pozice důvěry** a **Profesionální zkušenosti**. V závislosti na nastavení organizace mohou aktualizace těchto kompetencí projít schvalovacím procesem.
+V části **Kompetence** můžete provádět změny pro **Kurzy**, **Vzdělání**, **Pozice důvěry** a **Profesionální zkušenosti**. V závislosti na nastavení organizace mohou aktualizace těchto kompetencí projít schvalovacím procesem.
 
 Informace o úloze si můžete prohlédnout v části **Organizace**. Podrobnosti o práci zahrnují dovednosti, certifikáty a oblasti odpovědnosti pro primární pozici. Můžete zde také zobrazit vámi vypůjčené vybavení. V závislosti na nastavení organizace mohou změny vypůjčeného vybavení projít schvalovacím procesem.
 
@@ -112,7 +112,7 @@ Na kartě **Můj tým** jsou zobrazeny následující informace pro samoobsluhu 
 
 ### <a name="personnel-actions"></a>Akce personálu
 
-Akce personálu jsou zobrazeny na základě možností konfigurace v částech **Sdílené parametry lidských zdrojů** a **Parametry lidských zdrojů**. Jsou-li povoleny pro **Pracovníky** , mohou akce personálu umožnit nové možnosti nabídky, včetně následujících možností:
+Akce personálu jsou zobrazeny na základě možností konfigurace v částech **Sdílené parametry lidských zdrojů** a **Parametry lidských zdrojů**. Jsou-li povoleny pro **Pracovníky**, mohou akce personálu umožnit nové možnosti nabídky, včetně následujících možností:
 
 - **Požádat o nového zaměstnance**
 - **Požádat o nového dodavatele**
@@ -165,7 +165,7 @@ Informace mého týmu umožňují manažerům zobrazit a aktualizovat přímé a
 
 Karta **Souhrn** poskytuje rychlý přehled o přímých podřízených. Pokud má přímý podřízený také pracovníky, kteří se jim zodpovídají, karta zobrazí počet přímých podřízených v horní části spolu s tlačítkem **Zobrazit tým**. Možnosti nad každou kartou se vztahují k vybranému zaměstnanci. Chcete-li například zadat žádost o volno jménem zaměstnance, vyberte zaměstnance a pak nad kartami zvolte **Požádat o volno**. 
 
-Vyberete-li po výběru zaměstnance tlačítko **Podrobnosti** , zobrazí se následující možnosti:
+Vyberete-li po výběru zaměstnance tlačítko **Podrobnosti**, zobrazí se následující možnosti:
 
 - **Certifikáty**
 - **Kompenzace**
@@ -211,6 +211,6 @@ Manažeři mohou zobrazit všechny cíle pro svůj tým prostřednictvím dlažd
 
 #### <a name="reviews-tab"></a>Karta Přezkoumání
 
-Na kartě **Přezkoumání** je uveden přehled přezkoumání zaměstnance v příslušných stavech: **Probíhá** , **Připraveno k přezkoumání** a **Konečné přezkoumání**. Chcete-li získat přístup k přezkoumání zaměstnance, vyberte tlačítko **Podrobnosti** a pak vyberte přezkoumání, na nichž se chcete podílet. Na základě toho, kde je přezkoumání v rámci procesu workflowu, můžete zjistit, zda je přezkoumání k dispozici pro aktualizaci. 
+Na kartě **Přezkoumání** je uveden přehled přezkoumání zaměstnance v příslušných stavech: **Probíhá**, **Připraveno k přezkoumání** a **Konečné přezkoumání**. Chcete-li získat přístup k přezkoumání zaměstnance, vyberte tlačítko **Podrobnosti** a pak vyberte přezkoumání, na nichž se chcete podílet. Na základě toho, kde je přezkoumání v rámci procesu workflowu, můžete zjistit, zda je přezkoumání k dispozici pro aktualizaci. 
 
 Všechna přezkoumání pro svůj tým můžete zobrazit prostřednictvím dlaždice **Přezkoumání výkonnosti týmu** v části **Souhrn** pro **Můj tým**.

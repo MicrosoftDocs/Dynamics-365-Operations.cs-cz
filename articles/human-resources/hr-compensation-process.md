@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958710"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417628"
 ---
 # <a name="process-compensation"></a>Proces kompenzace
 
@@ -40,17 +40,17 @@ Datum procesní události **Bod v čase** se používá pouze pro zpracování u
 
 Po uložení parametrů procesní události můžete klepnutím na tlačítko **Nastavení** označit spuštění plánů, které mají být zahrnuty do daného procesu a které fixní kompenzace akce mají být provedeny pro jednotlivé plány.
 
-Klepněte na tlačítko **Přidat** na kartě **Plány** pro přidání plánu kompenzace do procesní události. Sloupce **Použít jiný účinek** , **Koeficient účinku** a **Popis účinku** slouží pouze pro variabilní plány kompenzace a nejsou uvedené v tomto článku.
+Klepněte na tlačítko **Přidat** na kartě **Plány** pro přidání plánu kompenzace do procesní události. Sloupce **Použít jiný účinek**, **Koeficient účinku** a **Popis účinku** slouží pouze pro variabilní plány kompenzace a nejsou uvedené v tomto článku.
 
-Uložte záznam a klepněte na tlačítko **Přidat** na kartě **Akce** pro přidání akcí fixní kompenzace pro vybraný plán. Použijte volbu **Povolit doporučení** , pokud chcete zadat jiné množství než vypočtené zvýšení směrnice pro akci. Pokud chcete vypočítat akci, která je založena na výsledku předchozí akce, která má propojit více akcí kompenzace, označte možnost **Použít předchozí výsledek** , akce fixní kompenzace jsou typy kompenzační logiky, které můžete přidělit popisné názvy. Pro plány Platová třída a Pásmo můžete přidat pouze akce fixní kompenzace následujících typů:
+Uložte záznam a klepněte na tlačítko **Přidat** na kartě **Akce** pro přidání akcí fixní kompenzace pro vybraný plán. Použijte volbu **Povolit doporučení**, pokud chcete zadat jiné množství než vypočtené zvýšení směrnice pro akci. Pokud chcete vypočítat akci, která je založena na výsledku předchozí akce, která má propojit více akcí kompenzace, označte možnost **Použít předchozí výsledek**, akce fixní kompenzace jsou typy kompenzační logiky, které můžete přidělit popisné názvy. Pro plány Platová třída a Pásmo můžete přidat pouze akce fixní kompenzace následujících typů:
 
 | Typ akce fixní kompenzace | Funkce                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jmění                        | Akce jmění porovnají mzdovou sazbu zaměstnance mezd ke koncovému datu cyklu s nejnižším referenčním bodem pro úroveň určenou v úloze zaměstnance. Pokud je mzdová sazba zaměstnance menší než minimální referenční bod, bude vypočítáno zvýšení potřebné k získání zaměstnance na minimální bod v rozsahu.                                                                                |
 | Zásluha                         | Akce zásluh vypočítá zvýšení založen na mzdové sazbě zaměstnance ke koncovému datu cyklu a procento zvýšení uvedené v rozpočtu fixního navýšení pro oddělení, odbor a umístění zaměstnance.                                                                                                                                                                                         |
-| Obecné                       | Hlavní akce vypočítají navýšení na základě procenta nebo přidělí zaměstnanci paušální částku. To závisí na nastavení **fixní kompenzace** na kartě **Obecné** .                                                                                                                                                                                                                        |
+| Obecné                       | Hlavní akce vypočítají navýšení na základě procenta nebo přidělí zaměstnanci paušální částku. To závisí na nastavení **fixní kompenzace** na kartě **Obecné**.                                                                                                                                                                                                                        |
 | Povýšení                     | Propagační akce obsahují pojmenované místo, kde můžete zadat zvýšení, proto je nutné vybrat volbu **Povolit doporučení** abyste mohli zadat doporučení pro zaměstnance, kteří obdrží promoakce.  Zaměstnanci bez doporučeného zvýšení nebudou mít **promoakce** přidané ke svým záznamům fixních kompenzací.                                                                       |
-| Změna jiné úrovně            | V předcházejícím příkladu označuje pojem **snížení** název akce **fixní kompenzace** typu **Změna na jinou úroveň** . Tím se vygeneruje nárůst 0 (nulová změna) zvýšení, takže lze zadat doporučenou částku pro účely úpravy mzdové sazby zaměstnance. (Je třeba označit možnost **povolit doporučení** .) Zaměstnanci bez doporučení nemají tuto akci přidanou ve svých záznamech fixní kompenzace. |
+| Změna jiné úrovně            | V předcházejícím příkladu označuje pojem **snížení** název akce **fixní kompenzace** typu **Změna na jinou úroveň**. Tím se vygeneruje nárůst 0 (nulová změna) zvýšení, takže lze zadat doporučenou částku pro účely úpravy mzdové sazby zaměstnance. (Je třeba označit možnost **povolit doporučení**.) Zaměstnanci bez doporučení nemají tuto akci přidanou ve svých záznamech fixní kompenzace. |
 
 Do plánu Krok je možné přidat pouze akce **Fixní kompenzace** typu Krok.
 
@@ -62,18 +62,18 @@ Do plánu Krok je možné přidat pouze akce **Fixní kompenzace** typu Krok.
 |                                | **2 kroky** -systém přesune zaměstnance o dva kroky na jejich aktuální úrovni. Systém může přesouvat zaměstnance pouze o jeden nebo nula kroků, pokud dosáhnou posledního referenčního bodu pro svou úroveň. |
 
 ## <a name="run-the-compensation-process"></a>Spustit proces kompenzace
-Po nastavení procesní události s nezbytnými datovými poli, plány a akcemi můžete klepnout na **Spustit proces** na stránce **Událost procesu** . Tím se otevře dialogové okno **Spustit události procesu kompenzace** . V rámci tohoto dialogového okna můžete klepnout na možnost **Zobrazit výsledky zpracování** a podívat se, jak velké částky kompenzace byly vypočteny pro jednotlivé zaměstnance. Klepnutím na tlačítko **OK** se spustí proces kompenzace pro všechny zaměstnance, kteří jsou ve vybraných plánech kompenzací ke koncovému datu.
+Po nastavení procesní události s nezbytnými datovými poli, plány a akcemi můžete klepnout na **Spustit proces** na stránce **Událost procesu**. Tím se otevře dialogové okno **Spustit události procesu kompenzace**. V rámci tohoto dialogového okna můžete klepnout na možnost **Zobrazit výsledky zpracování** a podívat se, jak velké částky kompenzace byly vypočteny pro jednotlivé zaměstnance. Klepnutím na tlačítko **OK** se spustí proces kompenzace pro všechny zaměstnance, kteří jsou ve vybraných plánech kompenzací ke koncovému datu.
 
 ## <a name="view-the-process-results"></a>Zobrazení výsledků procesu
-Chcete-li zobrazit výsledky procesu, otevřete stránku **výsledky procesu** . Při každém spuštění procesní události se vytvoří událost kompenzace. Tímto způsobem proveďte zkušební spuštění, proveďte úpravy a spusťte události kompenzace několikrát, abyste viděli dopad různých změn na kompenzace zaměstnance.
+Chcete-li zobrazit výsledky procesu, otevřete stránku **výsledky procesu**. Při každém spuštění procesní události se vytvoří událost kompenzace. Tímto způsobem proveďte zkušební spuštění, proveďte úpravy a spusťte události kompenzace několikrát, abyste viděli dopad různých změn na kompenzace zaměstnance.
 
 Na stránce **Výsledky procesu** jsou uvedeny informace o běhu procesu včetně toho, kdy k němu došlo, který uživatel spustil proces a zda při spuštění procesu nedošlo k chybám. Můžete také označit volbu **uzamčeno** pro zakázání tlačítka **Načíst kompenzaci** a zabránění jakémukoli uživateli načítat události kompenzace do záznamů zaměstnance. Kliknutím na tlačítko **Výsledky zaměstnanců** zobrazíte seznam zaměstnanců zahrnutých v spuštění.
 
-Možnost **Výsledky zaměstnance** zobrazuje informace o procesu jako takovém a jakékoli akce kompenzace prováděné v procesu. Oddíl **Fixní kompenzace** bude obsahovat záznam pro každou akci, zahrnutou do události procesu pro plán kompenzace. Sloupce **Aktuální pokyny** a **Doporučení** budou zobrazovat více informací pro akci vybranou v oddílu **Fixní kompenzace** . Pokud byla pro akci označena možnost **Povolit doporučení** , budou pole Doporučení upravitelná. To umožňuje ručně upravit částky podle zaměstnance. Pokud byla označena možnost **Použít předchozí výsledek** pro akci v procesní události, je nutné ručně aktualizovat částky pro všechny závislé akce.
+Možnost **Výsledky zaměstnance** zobrazuje informace o procesu jako takovém a jakékoli akce kompenzace prováděné v procesu. Oddíl **Fixní kompenzace** bude obsahovat záznam pro každou akci, zahrnutou do události procesu pro plán kompenzace. Sloupce **Aktuální pokyny** a **Doporučení** budou zobrazovat více informací pro akci vybranou v oddílu **Fixní kompenzace**. Pokud byla pro akci označena možnost **Povolit doporučení**, budou pole Doporučení upravitelná. To umožňuje ručně upravit částky podle zaměstnance. Pokud byla označena možnost **Použít předchozí výsledek** pro akci v procesní události, je nutné ručně aktualizovat částky pro všechny závislé akce.
 
-Po zkontrolování částek kompenzace pro zaměstnance a provedení úprav doporučených hodnot můžete změnit **stav** na řádku **událost zaměstnance** a označit tak, zda byla událost schválena nebo by měla být ignorována. V případě potřeby můžete vymazat jakékoli změny provedené na doporučení zaměstnance klepnutím na tlačítko **přepočítat** . Tím se existující událost zaměstnance označí stavem Ignorovat a vytvoří nová událost zaměstnance s přepočítanými hodnotami.
+Po zkontrolování částek kompenzace pro zaměstnance a provedení úprav doporučených hodnot můžete změnit **stav** na řádku **událost zaměstnance** a označit tak, zda byla událost schválena nebo by měla být ignorována. V případě potřeby můžete vymazat jakékoli změny provedené na doporučení zaměstnance klepnutím na tlačítko **přepočítat**. Tím se existující událost zaměstnance označí stavem Ignorovat a vytvoří nová událost zaměstnance s přepočítanými hodnotami.
 
 ## <a name="loading-approved-compensation-changes"></a>Načítání schválených změn kompenzace
 Jakmile má jedna nebo více událostí zaměstnance aktualizován stav na Schváleno, mohou být události nahrány do záznamů fixní kompenzace zaměstnance. To lze provést postupným výběrem jednotlivých událostí zaměstnance a klepnutím na tlačítko **Nahrát kompenzaci zaměstnance** na stránce **Výsledky zaměstnance** nebo klepnutím na tlačítko **Načíst kompenzaci** na stránce **Výsledky procesu** k načtení stránky všech schválených událostí zaměstnance najednou.
 
-Klepnutím na tlačítko **OK** v dialogovém okně **Načíst kompenzaci** přidáte řádky akce kompenzace na stránku **Fixní kompenzace zaměstnance** .
+Klepnutím na tlačítko **OK** v dialogovém okně **Načíst kompenzaci** přidáte řádky akce kompenzace na stránku **Fixní kompenzace zaměstnance**.

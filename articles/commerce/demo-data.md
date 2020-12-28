@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014879"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4410939"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Rozložení obrazovky ukázkových dat Modern POS (MPOS) a Cloud POS
 
@@ -64,6 +64,7 @@ ID rozložení obrazovky může obsahovat maximálně 10 znaků. ID je řetězec
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Základní verze, která podporuje více velikostí obrazovky pro různá zařízení a poměry stran |
 | 3.1            | Základní verze, která obsahuje další podporu pro panel **Doporučené produkty**        |
+| 4              | Rozšířená verze pro rozšířené aktualizované rozložení Fabrikam                                  |
 
 ### <a name="persona"></a>Osoba
 
@@ -75,9 +76,9 @@ ID rozložení obrazovky může obsahovat maximálně 10 znaků. ID je řetězec
 
 ### <a name="example-layout"></a>Příklad rozvržení
 
-Následuje příklad ID rozvržení obrazovky pro společnost Fabrikam, verze rozvržení 3, a osobu manažera obchodu:
+Následuje příklad ID rozvržení obrazovky pro společnost Fabrikam, verze rozvržení 4, a osobu manažera obchodu:
 
-F3MGR
+F4MGR
 
 Následující obrázek znázorňuje příklad uvítací obrazovky manažera obchodu Fabrikam.
 
@@ -103,6 +104,7 @@ Následující tabulka zobrazuje velikosti rozvržení, které jsou k dispozici 
 | Plné\*      | 1280 × 720 | 16:9         | Tablety                 |
 | Plné        | 1366 × 768 | 16:9         | Tablety, větší obrazovky |
 | Plné        | 1440 × 960 | 3:2          | Tablety, větší obrazovky |
+| Plné\*      | 1536 × 864 | 16:9         | Tablety, větší obrazovky |
 
 \* Tyto dodatečné velikosti rozvržení jsou k dispozici pouze v rozvrženích Fabrikam a Adventure Works.
 
@@ -120,7 +122,7 @@ Každá fiktivní společnost je zacílena na jiný maloobchodní segment a obsa
 | Společnost         | Skl. místo | Segment         | Zvýraznění | Motiv |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Sportovní zboží | Modrá   | Tmavý  |
-| Fabrikam        | Houston  | Móda        | Zelená  | Light |
+| Fabrikam        | San Francisco  | Fashion        | Zelená  | Světlý |
 | Contoso         | Boston   | Elektronika    | Červená    | Tmavý  |
 
 > [!NOTE]
@@ -153,7 +155,7 @@ Pro různá rozvržení obrazovky byli zadáni uživatelé. Pomocí následujíc
 | Adventure Works | A3MGR            | Manažer obchodu | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Pokladník       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Pracovník skladu   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Manažer obchodu | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Manažer obchodu | 000160, 000713         |
 | Fabrikam        | F3CSH            | Pokladník       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Pracovník skladu   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Manažer obchodu | 000100, 000111         |

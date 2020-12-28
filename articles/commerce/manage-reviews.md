@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973999"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410805"
 ---
 # <a name="manage-ratings-and-reviews"></a>Správa hodnocení a recenzí
 
@@ -43,7 +43,7 @@ Dynamics 365 Commerce použije Microsoft Azure Cognitive Service k automatickém
 
 Pokud si chcete přečíst recenzi v konfigurátoru webu v Commerce, postupujte následovně.
 
-1. Přejděte na **Domů \> Recenze \> Moderování** .
+1. Přejděte na **Domů \> Recenze \> Moderování**.
 1. Pomocí vyhledávacího pole v pravém horním rohu stránky můžete filtrovat recenze, které jsou zobrazeny podle ID produktu, názvu produktu nebo textu recenze.
 
 Další filtry umožňují omezit recenze podle období, hodnocení, kanálu nebo stavu sledování (přijaté, zodpovězené nebo nahlášené).
@@ -56,11 +56,11 @@ V některých případech zákazníci, kteří nakoupili produkt, vyjádřili po
 
 Pokud chcete odpovědět na recenzi v konfigurátoru webu v Commerce, postupujte následovně.
 
-1. Přejděte na **Domů \> Recenze \> Moderování** .
+1. Přejděte na **Domů \> Recenze \> Moderování**.
 1. Najít a vybrat revizi, která vyžaduje odpověď.
 1. V podokně vlastnosti vpravo vyberte možnost **přidat odpověď.**
-1. Zadejte text odpovědi a název, který má být zobrazen pro respondenta. Výchozí název respondenta je **Moderátor** .
-1. Po dokončení zvolte **Odeslat odpověď** .
+1. Zadejte text odpovědi a název, který má být zobrazen pro respondenta. Výchozí název respondenta je **Moderátor**.
+1. Po dokončení zvolte **Odeslat odpověď**.
 
 ![Odpověď na recenzi](media/rnr-moderation-response.png) 
 
@@ -70,9 +70,9 @@ Někdy existuje důvod, proč moderátoři z obchodních důvodů odstraní rece
 
 Pokud chcete odstranit recenzi v konfigurátoru webu v Commerce, postupujte následovně.
 
-1. Přejděte na **Domů \> Recenze \> Moderování** .
+1. Přejděte na **Domů \> Recenze \> Moderování**.
 1. Vyhledejte a vyberte recenzi, kterou je třeba odstranit.
-1. V podokně vlastnosti napravo vyberte důvod odstranění v části **Odstranění recenze** a poté vyberte možnost **Odebrat** .
+1. V podokně vlastnosti napravo vyberte důvod odstranění v části **Odstranění recenze** a poté vyberte možnost **Odebrat**.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Odstranění recenzí zákazníka na žádost zákazníka. 
 
@@ -80,16 +80,16 @@ Někdy si zákazníci přejí, aby jejich hodnocení a recenze byly trvale smaz�
 
 Chcete-li vyhledat a odstranit data o odběrateli v konfigurátoru webu v Commerce, postupujte následujícím způsobem.
 
-1. Přejděte na **Domů \> Recenze \> Odstranit** .
-1. V okně **Hledat uživatele podle e-mailové adresy** zadejte e-mailovou adresu odběratele a pak vyberte **hledat** .
+1. Přejděte na **Domů \> Recenze \> Odstranit**.
+1. V okně **Hledat uživatele podle e-mailové adresy** zadejte e-mailovou adresu odběratele a pak vyberte **hledat**.
 1. Pokud má zákazník nějakou aktivitu týkající se recenzí (např. podání recenze, hlasování o užitečnosti recenzí jiného zákazníka nebo komentáře o recenzi jiného zákazníka), zobrazí se výsledky. Pro každou položku existuje tlačítko **odstranit.**
-1. Pro každou položku, kterou je třeba odstranit, vyberte možnost **Odstranit** . Po zobrazení výzvy k potvrzení vyberte možnost **Ano.** 
+1. Pro každou položku, kterou je třeba odstranit, vyberte možnost **Odstranit**. Po zobrazení výzvy k potvrzení vyberte možnost **Ano.** 
     
 ![Odstranění dat zákazníků](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Může trvat až sedm dní, než budou data zcela odstraněna ze systému. Moderátoři by měli informovat zákazníky o této prodlevě.
-> - Pokud uživatelé změnili své jméno v nastavení účtu, může se ve výsledcích hledání zobrazit více položek. V takovém přípdě, chcete-li data zákazníka zcela odstranit, musí moderátor pro každou položku vybrat možnost **Odstranit** . 
+> - Pokud uživatelé změnili své jméno v nastavení účtu, může se ve výsledcích hledání zobrazit více položek. V takovém přípdě, chcete-li data zákazníka zcela odstranit, musí moderátor pro každou položku vybrat možnost **Odstranit**. 
 
 ## <a name="download-ratings-and-reviews-data"></a>Stáhnout data hodnocení a recenzí
 
@@ -97,8 +97,8 @@ Konfigurátor webu v Commerce umožňuje moderátorům importovat hodnocení a r
 
 Chcete-li stáhnout data hodnocení a recenzí v konfigurátoru webu v Commerce, postupujte následujícím způsobem.
 
-1. Přejděte na **Domů \> Recenze \> Vykazování** .
-1. Chcete-li stáhnout data hodnocení a recenzí hromadně ve formátu hodnot oddělených čárkou (CSV), vyberte možnost **Stáhnout data recenzí** .
+1. Přejděte na **Domů \> Recenze \> Vykazování**.
+1. Chcete-li stáhnout data hodnocení a recenzí hromadně ve formátu hodnot oddělených čárkou (CSV), vyberte možnost **Stáhnout data recenzí**.
 
 ## <a name="view-ratings-and-reviews-trends"></a>Zobrazení trendů hodnocení a recenzí
 
@@ -106,20 +106,20 @@ Moderátoři mohou stáhnout šablonu Power BI, aby mohli sledovat trendy v ří
 
 Chcete-li si zobrazit trendy hodnocení a recenzí v konfigurátoru webu v Commerce, postupujte následujícím způsobem.
 
-1. Přejděte na **Domů \> Recenze \> Vykazování** .
+1. Přejděte na **Domů \> Recenze \> Vykazování**.
 1. Vyberte **Šablonu PowerBI** ke stažení šablony.
 
     ![Stáhnout šablonu Power BI](media/rnr-moderation-reports.png) 
 
-1. Otevře staženou šablonu pomocí aplikace Power BI. Zavřete dialogové okno **Přístup k webovému obsahu** , které se zobrazí, a poté zavřete zobrazenou chybovou zprávu "Obnovit".
-1. Přejděte na **Domovskou stránku** , vberte **Upravit dotazy** a pak vyberte **Nastavení zdroje dat** .
-1. V dialogovém okně **Nastavení zdroje dat** vyberte možnost **Změnit zdroj** .
-1. V poli **Adresa URL** zadejte cestu k datům recenzí, která jste stáhli v předchozím postupu (například **c:\\reviews\\ReviewsData.csv** ).
+1. Otevře staženou šablonu pomocí aplikace Power BI. Zavřete dialogové okno **Přístup k webovému obsahu**, které se zobrazí, a poté zavřete zobrazenou chybovou zprávu "Obnovit".
+1. Přejděte na **Domovskou stránku**, vberte **Upravit dotazy** a pak vyberte **Nastavení zdroje dat**.
+1. V dialogovém okně **Nastavení zdroje dat** vyberte možnost **Změnit zdroj**.
+1. V poli **Adresa URL** zadejte cestu k datům recenzí, která jste stáhli v předchozím postupu (například **c:\\reviews\\ReviewsData.csv**).
 
     ![Pole Adresa URL v dialogovém okně hodnot oddělených čárkou](media/rnr-powerbi-datasource-settings.png) 
 
-1. Vyberte možnost **OK** a pak zvolte **Použít změny** . Použijete-li změny ve zdroji dat, bude provedena za jednu až dvě minuty.
-1. Chcete-li zobrazit hodnocení a recenze trendů, vyberte volbu **List trendů** .
+1. Vyberte možnost **OK** a pak zvolte **Použít změny**. Použijete-li změny ve zdroji dat, bude provedena za jednu až dvě minuty.
+1. Chcete-li zobrazit hodnocení a recenze trendů, vyberte volbu **List trendů**.
 
     ![Trendy hodnocení a recenzí](media/rnr-powerbi-dashboard-template.png) 
     

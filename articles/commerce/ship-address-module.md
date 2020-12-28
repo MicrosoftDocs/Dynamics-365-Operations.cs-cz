@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7233b23020e6c82f39981d530095642902461807
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818391"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4410944"
 ---
 # <a name="shipping-address-module"></a>Modul dodací adresy
 
@@ -63,9 +63,11 @@ Modul dodací adresy lze přidat pouze do modulu pokladny. Další informace o k
 
 [Modul pokladny](add-checkout-module.md)
 
-[Modul platby](payment-module.md)
+[Platební modul](payment-module.md)
 
 [Modul možností doručení](delivery-options-module.md)
+
+[Modul informací o vyzvednutí](pickup-info-module.md)
 
 [Modul podrobností objednávky](order-confirmation-module.md)
 

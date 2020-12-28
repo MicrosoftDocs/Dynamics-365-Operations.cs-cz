@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 8a9b0c33d2e0c47b351463b4b3630a91c6bd9999
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429858"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417662"
 ---
 # <a name="set-up-rounding-rules"></a>Nastavení pravidel zaokrouhlování
 
@@ -33,6 +33,6 @@ Pravidla zaokrouhlení můžete nastavit v aplikaci Dynamics 365 Human Resources
 
 2. Zvolte **Nové**.
 
-3. Určete **hodnoty zaokrouhlení na nejbližší**, **scénář**a **způsob zaokrouhlení**.
+3. Určete **hodnoty zaokrouhlení na nejbližší**, **scénář** a **způsob zaokrouhlení**.
 
 4. Zvolte **Uložit**. 

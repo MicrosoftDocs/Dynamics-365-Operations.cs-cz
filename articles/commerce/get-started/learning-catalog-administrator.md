@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
-ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821197"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410806"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Katalog kurzů pro správce Dynamics 365 Commerce
 

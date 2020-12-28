@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971538"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410669"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Odchozí skladová operace v POS
 
@@ -49,26 +49,26 @@ Chcete-li konfigurovat asynchronní architekturu dokumentu, postupujte podle ná
 
 ### <a name="create-and-configure-a-number-sequence"></a>Vytvoření a konfigurace číselné řady
 
-1. Přejděte na **Správa organizace \> Číselné řady \> Číselné řady** .
+1. Přejděte na **Správa organizace \> Číselné řady \> Číselné řady**.
 2. Na stránce **Číselné řady** vytvořte číselnou řadu.
 3. V polích **Kód číselné řady** a **Název** zadejte hodnoty definované uživatelem.
-4. Na pevné záložce **Odkazy** vyberte **Přidat** .
-5. V poli **Oblast** vyberte možnost **Parametry Commerce** .
-6. V poli **Odkaz** vyberte možnost **Identifikátoroperace maloobchodního dokladu** .
-7. Na pevé záložce **Obecné** v sekci **Nastavení** nastavte možnost **Souvislé** na hodnotu **Ne** , aby se předešlo jakýmkoli problémům s výkonem.
+4. Na pevné záložce **Odkazy** vyberte **Přidat**.
+5. V poli **Oblast** vyberte možnost **Parametry Commerce**.
+6. V poli **Odkaz** vyberte možnost **Identifikátoroperace maloobchodního dokladu**.
+7. Na pevé záložce **Obecné** v sekci **Nastavení** nastavte možnost **Souvislé** na hodnotu **Ne**, aby se předešlo jakýmkoli problémům s výkonem.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Vytvoření a naplánování dvou dávkových úloh pro zpracování a sledování dokumentů
 
 > [!NOTE]
-> V Commerce verze 10.0.13 a novějších nemusíte dávkové úlohy konfigurovat prostřednictvím rámce dávkových úloh. Dávkové procesy lze konfigurovat z nabídky **Retail a Commerce > IT pro Retail a Commerce** . Ke konfiguraci dávkových úloh použijte možnosti nabídky **Sledování operace maloobchodního dokumentu** a **Zpracování operace maloobchodního dokumentu**
+> V Commerce verze 10.0.13 a novějších nemusíte dávkové úlohy konfigurovat prostřednictvím rámce dávkových úloh. Dávkové procesy lze konfigurovat z nabídky **Retail a Commerce > IT pro Retail a Commerce**. Ke konfiguraci dávkových úloh použijte možnosti nabídky **Sledování operace maloobchodního dokumentu** a **Zpracování operace maloobchodního dokumentu**
 
 Dávkové úlohy, které vytvoříte, budou použity ke zpracování dokumentů, které selhaly nebo jejichž časový limit vypršel. Použijí se také v případě, že počet aktivních skladových dokladů, které jsou zpracovávány z POS, přesahuje hodnotu konfigurovanou systémem.
 
-1. Přejděte na **Správa systému \> Dotazy \> Dávkové úlohy** .
+1. Přejděte na **Správa systému \> Dotazy \> Dávkové úlohy**.
 2. Na stránce **Dávková úloha** vytvořte dvě dávkové úlohy:
 
-    - Nakonfigurujte jednu úlohu pro spuštění třídy **RetailDocumentOperationMonitorBatch** .
-    - Nakonfigurujte další úlohu pro spuštění třídy **RetailDocumentOperationProcessingBatch** .
+    - Nakonfigurujte jednu úlohu pro spuštění třídy **RetailDocumentOperationMonitorBatch**.
+    - Nakonfigurujte další úlohu pro spuštění třídy **RetailDocumentOperationProcessingBatch**.
 
 3. Naplánujte nové dávkové úlohy, aby se opakovaně spouštěly. Nastavte například plán tak, aby byly úlohy spouštěny každých pět minut.
 
@@ -88,7 +88,7 @@ Při spuštění odchozí operace z aplikace POS se zobrazí stránka seznamu. T
 
 Seznam dokumentů odchozích zásob obsahuje tři karty.
 
-- **Aktivní** – na této kartě jsou zobrazeny převodní příkazy, které mají stav **Požadováno** nebo **Částečně expedováno** . Příkazy obsahují řádky nebo množství na řádcích, které musí být expedovány aktuálním obchodem uživatele. Na této kartě jsou zobrazeny také objednávky ve stavu **Zpracování v HQ** (to znamená, že čekají na potvrzení úspěšného zaúčtování z centrály Commerce (HQ)) nebo **Zpracování selhalo** (to znamená, že zaúčtování do centrály Commerce (HQ) bylo neúspěšné a uživatel musí data opravit a pokusit se znovu odeslat příkazy).
+- **Aktivní** – na této kartě jsou zobrazeny převodní příkazy, které mají stav **Požadováno** nebo **Částečně expedováno**. Příkazy obsahují řádky nebo množství na řádcích, které musí být expedovány aktuálním obchodem uživatele. Na této kartě jsou zobrazeny také objednávky ve stavu **Zpracování v HQ** (to znamená, že čekají na potvrzení úspěšného zaúčtování z centrály Commerce (HQ)) nebo **Zpracování selhalo** (to znamená, že zaúčtování do centrály Commerce (HQ) bylo neúspěšné a uživatel musí data opravit a pokusit se znovu odeslat příkazy).
 - **Koncept** – Tato karta zobrazuje nové požadavky na odchozí převodní příkazy, které byly vytvořeny v obchodě uživatele. Dokumenty však jsou uloženy pouze místně. Dosud nebyly odeslány do centrály Commerce (HQ) ke zpracování.
 - **Dokončeno** – Na této kartě je zobrazen seznam dokumentů převodních příkazů, které obchod plně expedoval během posledních sedmi dnů. Tato karta je určena pouze pro informaci. Všechny informace o dokumentech jsou pro daný obchod určeny pouze pro čtení.
 
@@ -100,10 +100,10 @@ Při zobrazení dokumentů na kterékoli z těchto karet vám pole **Stav** mů�
 - **Expedováno v plném rozsahu** – všechny řádky a celá množství na řádcích převodního příkazu byly zaúčtovány jako expedované výstupním skladem.
 - **Probíhá** – tento stav slouží k informování uživatelů zařízení o tom, že dokument aktivně zpracovává jiný uživatel.
 - **Pozastaveno** – tento stav se zobrazí po zaškrtnutí políčka **Pozastavit příjem** pro dočasné zastavení procesu příjmu.
-- **Zpracování v HQ** – dokument byl odeslán do centrály Commerce (HQ) z aplikace POS, ale dosud nebyl úspěšně zaúčtován do centrály Commerce (HQ). Dokument prochází procesem asynchronního zaúčtování dokumentů. Po úspěšném zaúčtování dokumentu do centrály Commerce (HQ) by měl být jeho stav aktualizován na **Plně přijato** nebo **Částečně přijato** .
+- **Zpracování v HQ** – dokument byl odeslán do centrály Commerce (HQ) z aplikace POS, ale dosud nebyl úspěšně zaúčtován do centrály Commerce (HQ). Dokument prochází procesem asynchronního zaúčtování dokumentů. Po úspěšném zaúčtování dokumentu do centrály Commerce (HQ) by měl být jeho stav aktualizován na **Plně přijato** nebo **Částečně přijato**.
 - **Zpracování selhalo** – dokument byl zaúčtován do centrály Commerce (HQ) a odmítnut. V podokně **Podrobnosti** se zobrazuje důvod selhání zaúčtování. Chcete-li opravit problémy s daty, je nutné upravit dokument a poté jej znovu odeslat do centrály Commerce (HQ) ke zpracování.
 
-Pokud vyberete řádek dokumentu v seznamu, zobrazí se podokno **Podrobnosti** . V tomto podokně jsou zobrazeny další informace o daném dokumentu, například informace o dodávce a datu. Indikátor průběhu ukazuje, kolik položek musí být ještě zpracováno. Pokud dokument nebyl úspěšně zpracován do centrály Commerce (HQ), zobrazí se v podokně **Podrobnosti** také chybové zprávy související s chybou.
+Pokud vyberete řádek dokumentu v seznamu, zobrazí se podokno **Podrobnosti**. V tomto podokně jsou zobrazeny další informace o daném dokumentu, například informace o dodávce a datu. Indikátor průběhu ukazuje, kolik položek musí být ještě zpracováno. Pokud dokument nebyl úspěšně zpracován do centrály Commerce (HQ), zobrazí se v podokně **Podrobnosti** také chybové zprávy související s chybou.
 
 Chcete-li zobrazit podrobnosti dokumentu, můžete v zobrazení stránky se seznamem dokumentů vybrat **Podrobnosti objednávky** na panelu aplikací. Zpracování příjmu lze rovněž aktivovat na vhodných řádcích dokladu.
 
@@ -111,11 +111,11 @@ V zobrazení stránky se seznamem dokumentů lze rovněž vytvořit nový odchoz
 
 ## <a name="transfer-order-shipping-process"></a>Proces expedice převodního příkazu
 
-Po výběru dokumentu převodního příkazu na kartě **Aktivní** můžete vybrat **Podrobnosti objednávky** a zahájit tak proces plnění. Zobrazí se **Úplný seznam objednávek** . Na této stránce jsou zobrazeny všechny řádky dokumentu, které tuto položku obsahují. Dále jsou zde uvedeny podrobnosti objednaného množství.
+Po výběru dokumentu převodního příkazu na kartě **Aktivní** můžete vybrat **Podrobnosti objednávky** a zahájit tak proces plnění. Zobrazí se **Úplný seznam objednávek**. Na této stránce jsou zobrazeny všechny řádky dokumentu, které tuto položku obsahují. Dále jsou zde uvedeny podrobnosti objednaného množství.
 
 Každé skenování čárového kódu aktualizuje množství v poli **Probíhá expedice** o jednu jednotku. Expedované množství můžete také zadat výběrem možnosti **Dodat produkt** na panelu aplikací, zadáním ID položky a zadáním množství. Je-li položka řízena dle umístění, můžete potvrdit nebo nastavit místo expedice pro řádek dokumentu.
 
-V zobrazení **Úplný seznam objednávek** můžete ručně vybrat řádek v seznamu a poté aktualizovat množství **Probíhá expedice** pro vybraný řádek v podokně **Podrobnosti** .
+V zobrazení **Úplný seznam objednávek** můžete ručně vybrat řádek v seznamu a poté aktualizovat množství **Probíhá expedice** pro vybraný řádek v podokně **Podrobnosti**.
 
 ### <a name="over-delivery-shipping-validations"></a>Ověření nadměrné dodávky
 
@@ -125,11 +125,11 @@ Během procesu příjmu pro řádky dokumentu dochází k jejich ověření. To 
 
 V Commerce verzi 10.0.12 byla přidána funkce, která umožňuje uživatelům POS uzavřít nebo zrušit zbývající množství během odeslání odchozí objednávky, pokud odchozí sklad zjistí, že nemůže odeslat celé požadované množství. Množství lze také uzavřít nebo zrušit později. Aby bylo možné tuto funkci využívat, musí být společnost nakonfigurována tak, aby umožňovala doručování snížených dodávek převodních příkazů. Kromě toho musí být pro řádek objednávky převodu definováno procento nedoručení.
 
-Chcete-li společnost nakonfigurovat tak, aby umožňovala doručování převodních příkazů pro snížené dodávky, přejděte v centrále Commerce (HQ) na **Řízení zásob \> Založit \> Parametry řízení zásob a skladu** . Na stránce **Parametry řízení zásob a skladu** , v kartě **Převod objednávek** , zapněte **Přijmout doručení snížení dodávek** parametr. Pak spusťte **1070** úloha plánovače distribuce pro synchronizaci změn parametrů s kanálem obchodu.
+Chcete-li společnost nakonfigurovat tak, aby umožňovala doručování převodních příkazů pro snížené dodávky, přejděte v centrále Commerce (HQ) na **Řízení zásob \> Založit \> Parametry řízení zásob a skladu**. Na stránce **Parametry řízení zásob a skladu**, v kartě **Převod objednávek**, zapněte **Přijmout doručení snížení dodávek** parametr. Pak spusťte **1070** úloha plánovače distribuce pro synchronizaci změn parametrů s kanálem obchodu.
 
 Procenta doručení snížených dodávek pro řádek objednávky lze předdefinovat u produktů jako součást konfigurace produktu v Commerce Headquarters. Alternativně mohou být nastaveny nebo přepsány na konkrétní řádce převodu přes centrálu Commerce (HQ).
 
-Poté, co organizace dokončí konfiguraci příkazu edpedice pro snížené objednávky, uvidí uživatelé POS novou možnost **Zavřete zbývající množství** v **Podrobnostech** , když vyberou řádek odchozích přenosů přes funkci **Odchozí operace** v POS. Poté, co uživatel dokončí zásilku pomocí **Dokončení plnění** operace, mohou poslat požadavek do centrály Commerce (HQ) ke zrušení zbývajícího nevybaveného množství. Pokud uživatel uzavře zbývající množství, Commerce provede ověření, aby ověřila, že množství, které je zrušeno, je v rámci procentuální tolerance podlimitu, který je definován na řádku objednávky přenosu. Je-li tolerance překročení dodávky překročena, uživatel obdrží chybovou zprávu a nebude moci zbývající množství uzavřít, dokud dříve dodané množství a množství „expedovat nyní“ nesplní nebo nepřekročí toleranci doručení snížené dodávky.
+Poté, co organizace dokončí konfiguraci příkazu edpedice pro snížené objednávky, uvidí uživatelé POS novou možnost **Zavřete zbývající množství** v **Podrobnostech**, když vyberou řádek odchozích přenosů přes funkci **Odchozí operace** v POS. Poté, co uživatel dokončí zásilku pomocí **Dokončení plnění** operace, mohou poslat požadavek do centrály Commerce (HQ) ke zrušení zbývajícího nevybaveného množství. Pokud uživatel uzavře zbývající množství, Commerce provede ověření, aby ověřila, že množství, které je zrušeno, je v rámci procentuální tolerance podlimitu, který je definován na řádku objednávky přenosu. Je-li tolerance překročení dodávky překročena, uživatel obdrží chybovou zprávu a nebude moci zbývající množství uzavřít, dokud dříve dodané množství a množství „expedovat nyní“ nesplní nebo nepřekročí toleranci doručení snížené dodávky.
 
 Poté, co je zásilka synchronizována v centrále Commerce (HQ), množství, která jsou definována v **Expedovat nyní** poli pro řádek objednávky převodu v POS jsou aktualizovány na stav odeslání definovaném v centrále Commerce (HQ). Veškerá neexpedovaná množství, která by dříve byla považována za „zbývající expedice“, tj. množství, která budou dodána později, se místo toho považují za zrušená množství. "Zbývající expedice" pro řádek převodního příkazu je nastaveno na **0** (nula) a řádek je považován za plně dodaný.
 
@@ -149,9 +149,9 @@ Funkci **Zrušit plnění** na panelu aplikací použijte pouze v případě, ž
 
 ### <a name="pause-fulfillment"></a>Pozastavit plnění
 
-Pokud plníte převodní příkaz, můžete použít funkci **Pozastavit plnění** , pokud chcete pozastavit tento proces. Můžete například chtít provést další operaci z POS, jako například zavolat na oddělení prodeje zákazníkům nebo zpozdit zaúčtování expedice do centrály Commerce (HQ).
+Pokud plníte převodní příkaz, můžete použít funkci **Pozastavit plnění**, pokud chcete pozastavit tento proces. Můžete například chtít provést další operaci z POS, jako například zavolat na oddělení prodeje zákazníkům nebo zpozdit zaúčtování expedice do centrály Commerce (HQ).
 
-Pokud vyberete možnost **Pozastavit plnění** , bude stav dokumentu změněn na **Pozastaveno** . Uživatel proto bude vědět, že byla zadána data v daném dokumentu, ale dokument ještě nebyl potvrzen. Až budete připraveni pokračovat v procesu plnění, vyberte pozastavený dokument a pak vyberte **Podrobnosti objednávky** . Všechna dříve uložená množství **Probíhá expedice** budou zachována a lze je zobrazit ze zobrazení **Úplný seznam objednávek** .
+Pokud vyberete možnost **Pozastavit plnění**, bude stav dokumentu změněn na **Pozastaveno**. Uživatel proto bude vědět, že byla zadána data v daném dokumentu, ale dokument ještě nebyl potvrzen. Až budete připraveni pokračovat v procesu plnění, vyberte pozastavený dokument a pak vyberte **Podrobnosti objednávky**. Všechna dříve uložená množství **Probíhá expedice** budou zachována a lze je zobrazit ze zobrazení **Úplný seznam objednávek**.
 
 ### <a name="review"></a>Přehled
 
@@ -164,31 +164,31 @@ Funkce **Recenze** ověřuje následující problémy v odchozím dokumentu:
 - **Místo není nastaveno** - místo není určeno pro položku na základě polohy, kde není povoleno prázdné místo.
 - **Odstraněné řádky** - v objednávce jsou odstraněny řádky uživatelem centrály Commerce (HQ), které nejsou POS aplikaci známy.
 
-Nastavte parametr **Povolit automatické ověření** na **Ano** v **Parametry obchodu** > **Zásoby** > **Operace skladových zásob** , aby bylo ověření provedeno automaticky, když je vybrána volba **Dokončit plnění** .
+Nastavte parametr **Povolit automatické ověření** na **Ano** v **Parametry obchodu** > **Zásoby** > **Operace skladových zásob**, aby bylo ověření provedeno automaticky, když je vybrána volba **Dokončit plnění**.
 
 ### <a name="finish-fulfillment"></a>Dokončit plnění
 
 Po dokončení zadávání všech množství **Probíhá expedice** je nutné vybrat možnost **Dokončit plnění** na panelu aplikací.
 
-Při použití asynchronního zpracování dokumentu je příjem odeslán prostřednictvím asynchronní architektury dokumentu. Doba potřebná pro zaúčtování dokumentu závisí na velikosti dokumentu (počtu řádků) a na obecném provozu zpracování na serveru. Obvykle k tomuto zpracování dojde v průběhu několika sekund. Pokud se zaúčtování dokumentu nezdaří, bude uživatel upozorněn prostřednictvím seznamu dokumentů **Odchozí operace** na kartě **Aktivní** , kde se stav dokumentu aktualizuje na **Zpracování selhalo** . Uživatel pak může vybrat neúspěšný dokument v POS, aby zobrazil chybové zprávy a důvod selhání v podokně **Podrobnosti** . Neúspěšný dokument zůstane nezaúčtovaný a vyžaduje, aby se uživatel vrátil k řádkům dokumentu výběrem možnosti **Podrobnosti objednávky** v POS. Uživatel musí poté na základě chyb opravit dokument. Po opravě dokumentu se uživatel může pokusit jej znovu zpracovat výběrem možnosti **Dokončit plnění** na panelu aplikací.
+Při použití asynchronního zpracování dokumentu je příjem odeslán prostřednictvím asynchronní architektury dokumentu. Doba potřebná pro zaúčtování dokumentu závisí na velikosti dokumentu (počtu řádků) a na obecném provozu zpracování na serveru. Obvykle k tomuto zpracování dojde v průběhu několika sekund. Pokud se zaúčtování dokumentu nezdaří, bude uživatel upozorněn prostřednictvím seznamu dokumentů **Odchozí operace** na kartě **Aktivní**, kde se stav dokumentu aktualizuje na **Zpracování selhalo**. Uživatel pak může vybrat neúspěšný dokument v POS, aby zobrazil chybové zprávy a důvod selhání v podokně **Podrobnosti**. Neúspěšný dokument zůstane nezaúčtovaný a vyžaduje, aby se uživatel vrátil k řádkům dokumentu výběrem možnosti **Podrobnosti objednávky** v POS. Uživatel musí poté na základě chyb opravit dokument. Po opravě dokumentu se uživatel může pokusit jej znovu zpracovat výběrem možnosti **Dokončit plnění** na panelu aplikací.
 
 ## <a name="create-an-outbound-transfer-order"></a>Vytvoření odchozího převodního příkazu
 
-V aplikaci POS mohou uživatelé vytvářet nové dokumenty převodních příkazů. Chcete-li zahájit proces, vyberte možnost **Nový** na panelu aplikací, zatímco se nacházíte v hlavním seznamu dokumentů **Odchozí operace** . Poté budete vyzváni k výběru skladu nebo obchodu pro možnost **Převést do** , do kterého váš aktuální obchod odešle zásoby. Hodnoty jsou omezeny na výběr, který je definován v konfiguraci skupiny plnění obchodu. V požadavku na odchozí převod bude váš aktuální obchod pro převodní příkaz vždy sklad **Převést z** . Tuto hodnotu nelze změnit.
+V aplikaci POS mohou uživatelé vytvářet nové dokumenty převodních příkazů. Chcete-li zahájit proces, vyberte možnost **Nový** na panelu aplikací, zatímco se nacházíte v hlavním seznamu dokumentů **Odchozí operace**. Poté budete vyzváni k výběru skladu nebo obchodu pro možnost **Převést do**, do kterého váš aktuální obchod odešle zásoby. Hodnoty jsou omezeny na výběr, který je definován v konfiguraci skupiny plnění obchodu. V požadavku na odchozí převod bude váš aktuální obchod pro převodní příkaz vždy sklad **Převést z**. Tuto hodnotu nelze změnit.
 
-V případě potřeby můžete zadat hodnoty do polí **Datum expedice** , **Datum příjmu** a **Způsob dodání** . Můžete také přidat poznámku, která bude uložena spolu se záhlavím převodního příkazu jako příloha dokumentu v centrále Commerce (HQ).
+V případě potřeby můžete zadat hodnoty do polí **Datum expedice**, **Datum příjmu** a **Způsob dodání**. Můžete také přidat poznámku, která bude uložena spolu se záhlavím převodního příkazu jako příloha dokumentu v centrále Commerce (HQ).
 
-Po vytvoření informací v záhlaví můžete do převodního příkazu přidávat produkty. Chcete-li zahájit proces přidávání položek a požadovaných množství, skenujte čárové kódy nebo vyberte možnost **Přidat produkt** .
+Po vytvoření informací v záhlaví můžete do převodního příkazu přidávat produkty. Chcete-li zahájit proces přidávání položek a požadovaných množství, skenujte čárové kódy nebo vyberte možnost **Přidat produkt**.
 
-Po zadání řádků na odchozí převodní příkaz je nutné vybrat možnost **Uložit** pro uložení dokumentu v místním počítači nebo možnost **Odeslat požadavek** pro odeslání podrobností objednávky do centrály Commerce (HQ) za účelem dalšího zpracování. Pokud vyberete možnost **Uložit** , dokument konceptu je uložen v databázi kanálů a výstupní sklad nemůže dokument spustit, dokud není úspěšně zpracován prostřednictvím funkce **Odeslat požadavek** . Možnost **Uložit** vyberte pouze v případě, že nejste připraveni potvrdit zpracování požadavku v centrále Commerce (HQ).
+Po zadání řádků na odchozí převodní příkaz je nutné vybrat možnost **Uložit** pro uložení dokumentu v místním počítači nebo možnost **Odeslat požadavek** pro odeslání podrobností objednávky do centrály Commerce (HQ) za účelem dalšího zpracování. Pokud vyberete možnost **Uložit**, dokument konceptu je uložen v databázi kanálů a výstupní sklad nemůže dokument spustit, dokud není úspěšně zpracován prostřednictvím funkce **Odeslat požadavek**. Možnost **Uložit** vyberte pouze v případě, že nejste připraveni potvrdit zpracování požadavku v centrále Commerce (HQ).
 
-Pokud je dokument uložen místně, lze jej najít na kartě **Koncepty** v seznamu dokumentů **Vstupní operace** . Když je dokument ve stavu **Koncept** , můžete jej upravit výběrem možnosti **Upravit** . Řádky můžete podle potřeby aktualizovat, přidávat nebo odstraňovat. Můžete také odstranit celý dokument, který je ve stavu **Koncept** , výběrem možnosti **Odstranit** na kartě **Koncepty** .
+Pokud je dokument uložen místně, lze jej najít na kartě **Koncepty** v seznamu dokumentů **Vstupní operace**. Když je dokument ve stavu **Koncept**, můžete jej upravit výběrem možnosti **Upravit**. Řádky můžete podle potřeby aktualizovat, přidávat nebo odstraňovat. Můžete také odstranit celý dokument, který je ve stavu **Koncept**, výběrem možnosti **Odstranit** na kartě **Koncepty**.
 
-Po úspěšném odeslání dokumentu konceptu do centrály Commerce (HQ) se tento dokument zobrazí na kartě **Aktivní** ve stavu **Požadováno** . V tuto chvíli mohou dokument upravit pouze uživatelé v odchozím skladu výběrem možnosti **Odchozí operace** v aplikaci POS. Uživatelé ve vstupním skladu mohou zobrazit převodní příkaz na kartě **Aktivní** v seznamu dokumentů **Příchozí operace** , ale nemohou jej upravit ani odstranit. Zámek pro úpravy zajišťuje, že nedojde k žádnému konfliktu, kdyby příchozí žadatel změnil převodní příkaz současně s tím, když odchozí přepravce aktivně vyskladňuje a expeduje objednávku. Pokud jsou v příchozím obchodě nebo skladu vyžadovány změny po odeslání převodního příkazu, je třeba se spojit s odchozím přepravcem a požádat jej o zadání změn.
+Po úspěšném odeslání dokumentu konceptu do centrály Commerce (HQ) se tento dokument zobrazí na kartě **Aktivní** ve stavu **Požadováno**. V tuto chvíli mohou dokument upravit pouze uživatelé v odchozím skladu výběrem možnosti **Odchozí operace** v aplikaci POS. Uživatelé ve vstupním skladu mohou zobrazit převodní příkaz na kartě **Aktivní** v seznamu dokumentů **Příchozí operace**, ale nemohou jej upravit ani odstranit. Zámek pro úpravy zajišťuje, že nedojde k žádnému konfliktu, kdyby příchozí žadatel změnil převodní příkaz současně s tím, když odchozí přepravce aktivně vyskladňuje a expeduje objednávku. Pokud jsou v příchozím obchodě nebo skladu vyžadovány změny po odeslání převodního příkazu, je třeba se spojit s odchozím přepravcem a požádat jej o zadání změn.
 
-Jakmile je dokument ve stavu **Požadováno** , je připraven pro zpracování plnění výstupním skladem. Během zpracování expedice s použitím odchozí operace je stav dokumentů převodního příkazu aktualizován ze stavu **Požadováno** na **Expedováno v plném rozsahu** nebo **Částečně expedováno** . Jakmile jsou dokumenty ve stavu **Expedováno v plném rozsahu** nebo **Částečně expedováno** , může příchozí obchod nebo sklad podle nich účtovat příjemky pomocí procesu příjmu příchozí operace.
+Jakmile je dokument ve stavu **Požadováno**, je připraven pro zpracování plnění výstupním skladem. Během zpracování expedice s použitím odchozí operace je stav dokumentů převodního příkazu aktualizován ze stavu **Požadováno** na **Expedováno v plném rozsahu** nebo **Částečně expedováno**. Jakmile jsou dokumenty ve stavu **Expedováno v plném rozsahu** nebo **Částečně expedováno**, může příchozí obchod nebo sklad podle nich účtovat příjemky pomocí procesu příjmu příchozí operace.
 
-Plně expedované převodní příkazy jsou přesunuty na kartu **Dokončeno** v seznamu dokumentů **Odchozí operace** . Tam po sedm dní zůstanou v režimu pouze pro čtení viditelné uživatelům ve výstupním obchodu nebo skladu.
+Plně expedované převodní příkazy jsou přesunuty na kartu **Dokončeno** v seznamu dokumentů **Odchozí operace**. Tam po sedm dní zůstanou v režimu pouze pro čtení viditelné uživatelům ve výstupním obchodu nebo skladu.
 
 ## <a name="related-topics"></a>Související témata
 

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417695"
 ---
 # <a name="design-questionnaires"></a>Návrh dotazníků
 
@@ -91,7 +91,7 @@ Kódy číselných řad se používají k uspořádání otázek a odpovědí. N
 Dříve než začnete definovat vaše data, měli byste definovat veškeré parametry. Vaše parametrů dotazníku můžete kdykoliv upravit.
 
 ## <a name="questionnaire-components"></a>Komponenty dotazníku
-Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový.Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
+Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový. Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
 
 [![Komponenty dotazníku](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -104,7 +104,7 @@ Respondenti mohou na otázku odpovědět dvěma způsoby v závislosti na předm
 
 Chcete-li poskytnout seznam možných odpovědí pro uzavřené otázky, můžete vytvořit odpovědi na stránce **Skupiny odpovědí**. 
 
-Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí**na stránce **Otázky**. 
+Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí** na stránce **Otázky**. 
 
 Skupinu odpovědí lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
 

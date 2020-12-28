@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019557"
+ms.locfileid: "4410911"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
@@ -62,7 +62,7 @@ Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný frag
 
 1. Otevřete stránku nebo šablonu obsahující modul, který chcete převést na fragment.
 1. V podokně osnovy vlevo nebo přímo ve vizuálním tvůrci stránek vyberte dříve nakonfigurovaný modul.
-1. Vyberte tlačítko se třemi tečkami ( **...** ) vedle názvu modulu v podokně osnovy nebo na panelu nástrojů vybraného modulu ve vizuálním tvůrci stránek. 
+1. Vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu v podokně osnovy nebo na panelu nástrojů vybraného modulu ve vizuálním tvůrci stránek. 
 1. Vyberte možnost **Sdílet jako fragment**. 
 1. V dialogovém okně **Uložit jako fragment** zadejte název fragmentu.
 1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
@@ -91,7 +91,7 @@ Následující postupy popisují způsob přidávání, odebírání a úprav fr
 Fragment přidáte na stránku v konfigurátoru webů Commerce tímto postupem.
 
 1. V podokně osnovy vlevo nebo přímo ve vizuálním tvůrci stránek vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
-1. Vyberte tři tečky ( **...** ) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte vizuální tvůrce stránek, vyberte symbol plus ( **+** ).  
+1. Vyberte tři tečky (**...**) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte vizuální tvůrce stránek, vyberte symbol plus (**+**).  
 1. Vyberte **Přidat fragment**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Fragment přidáte na stránku v konfigurátoru webů Commerce tímto postupem.
 
 Chcete-li odebrat fragment ze slotu nebo kontejneru na stránce v tvůrci webů Commerce, postupujte podle následujících kroků.
 
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami ( **...** ) vedle názvu fragmentu, který chcete odebrat, a pak vyberte symbol odpadkového koše.  Alternativně můžete vybrat fragment ve vizuálním tvůrci stránek a vybrat symbol koše na panelu nástrojů fragmentu.
+1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu fragmentu, který chcete odebrat, a pak vyberte symbol odpadkového koše.  Alternativně můžete vybrat fragment ve vizuálním tvůrci stránek a vybrat symbol koše na panelu nástrojů fragmentu.
 1. Až budete vyzváni k potvrzení odebrání fragmentu, vyberte **OK.**
 
 > [!NOTE]

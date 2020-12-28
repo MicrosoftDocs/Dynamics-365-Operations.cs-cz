@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 588cbedb077fab0663d3d62fc4a8b8ed915635b3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001914"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410740"
 ---
 # <a name="create-a-page-url"></a>Vytvoření URL adresy stránky
 
@@ -88,7 +88,7 @@ Chcete-li přesměrovat adresu URL na jinou adresu URL, postupujte podle násled
 1. V podokně vlastností vpravo vyberte vlastnost **Přesměrovat**.
 1. Vyberte cíl přesměrování:
 
-    - Chcete-li odkázat na jinou stránku na webu, **vyberte volbu**Interní adresa URL, vyberte tlačítkose třemi tečkami (**...**) a vyberte adresu URL, na kterou chcete přesměrovat.
+    - Chcete-li odkázat na jinou stránku na webu, **vyberte volbu** Interní adresa URL, vyberte tlačítkose třemi tečkami (**...**) a vyberte adresu URL, na kterou chcete přesměrovat.
     - Chcete-li odkázat na stránku na externím webu, vyberte volbu **Externí adresa URL** a poté zadejte úplnou adresu URL pro tuto stránku. Nezapomeňte zadat i protokol. Zadejte například `https://domain.com/new/page`. Pokud již adresa URL přesměrovává na interní adresu URL, je nutné před zadáním externí adresy URL vybrat možnost **Vymazat výběr**.
 
 1. Vyberte typ přesměrování:

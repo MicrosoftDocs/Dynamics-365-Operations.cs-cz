@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665073"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410667"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Přidání doporučení na obrazovku transakce
 
@@ -78,7 +78,7 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 1. Klikněte pravým tlačítkem myši do prázdného místa pod poslední kartou na mřížce tlačítek umístěné na pravé straně stránky.
 
-2. Klikněte na tlačítko**přizpůsobit**.
+2. Klikněte na tlačítko **přizpůsobit**.
 
     [![Přizpůsobení – dialogové okno ovládacího prvku karty](./media/pic-5.png)](./media/pic-5.png)
 

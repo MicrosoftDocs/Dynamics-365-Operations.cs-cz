@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428890"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417565"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Vytvoření oddělení a jejich přidružení k hierarchii oddělení
 
@@ -46,8 +46,8 @@ Oddělení mohou obsahovat i skupinu nákladových středisek. Pozice lze přiř
 Pro přidání oddělení do hierarchie oddělení postupujte takto:
 
 1.  Klikněte na nabídku **Lidské zdroje** &gt; **Oddělení** &gt; **Hierarchie oddělení**.
-2.  Klepněte na tlačítko **Upravit**a poté vyberte organizaci, pod kterou má oddělení spadat.
-3.  Klepněte na tlačítko **Vložit**a v seznamu vyberte **Oddělení**.
+2.  Klepněte na tlačítko **Upravit** a poté vyberte organizaci, pod kterou má oddělení spadat.
+3.  Klepněte na tlačítko **Vložit** a v seznamu vyberte **Oddělení**.
 4.  V zobrazeném seznamu oddělení vyberte oddělení, které chcete přidat do hierarchie.
 5.  Uložte změny. Obdržíte zprávu, že byla vytvořena pracovní verzi hierarchie.
 6.  Po dokončení práce klikněte v návrháři hierarchie na tlačítko **Publikovat**. Můžete zadat datum začátku platnosti, které určuje, kdy má být hierarchie publikována. Například chcete-li přidat nové oddělení na začátku dalšího kalendářního roku, nastavte platné datum od 1. ledna nového kalendářního roku. Změny hierarchie se projeví k tomuto datu.

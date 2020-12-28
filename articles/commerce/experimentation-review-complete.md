@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: c7da601323663d4c1ea76f7cad7bdab8e7632d1c
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097086"
+ms.locfileid: "4410926"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Povýšení varianty a dokončení experimentu
 
@@ -43,7 +43,7 @@ Chcete-li propagovat vítěznou variantu, postupujte takto.
 1. V nabídce dialogového okna **Dokončení experimentu** vyberte **Zkontrolovat data experimentu**. Otevře se služba třetí strany, ve které můžete ověřit metriku a určit, která varianta fungovala nejlépe.
 1. V nabídce dialogového okna **Dokončení experimentu** vyberte vítěznou variantu a pak vyberte **Další**.
 1. Otevřete službu třetí strany a experiment zastavte.
-1. V konfigurátoru webů vyberte **Dokončit** , pokud chcete přepsat původní živou stránku a publikovat vítěznou variantu tak, aby byla dostupná všem uživatelům vašeho webu. 
+1. V konfigurátoru webů vyberte **Dokončit**, pokud chcete přepsat původní živou stránku a publikovat vítěznou variantu tak, aby byla dostupná všem uživatelům vašeho webu. 
 
 > [!NOTE]
 > Pokud se rozhodnete zachovat aktuální aktivní živou stránku a žádnou variantu nepublikovat, vyberte **Znovu publikovat původní stránku**.
