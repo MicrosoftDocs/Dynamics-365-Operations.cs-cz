@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
 ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819806"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410904"
 ---
 # <a name="omni-channel-payments-overview"></a>Přehled omnikanálových plateb
 
@@ -167,7 +167,7 @@ Pokud chcete spustit tento scénář, postupujte takto:
 3. Přidejte do transakce jeden nebo více řádků.
 4. Pokud chcete zobrazit možnosti objednávky, vyberte **Objednávky**.
 5. Vyberte **Vyzvednout vše** a až budete vyzváni, vyberte volbu **Objednávka zákazníka**.
-6. Do vyhledávacího panelu zadejte **Seattle**a pak vyberte obchod v **Seattlu** pro výdej. 
+6. Do vyhledávacího panelu zadejte **Seattle** a pak vyberte obchod v **Seattlu** pro výdej. 
 7. Kliknutím na **OK** přijměte aktuální datum jako datum výdeje.
 9. Vyberte **Platba kartou** pro zahájení platby.
 10. Uhraďte kartou částku, která je splatná jako záloha. 

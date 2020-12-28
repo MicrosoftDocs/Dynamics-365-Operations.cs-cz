@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055420"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4410940"
 ---
 # <a name="cart-module"></a>Modul košíku
 
@@ -50,9 +50,9 @@ Následující obrázek ukazuje příklad stránky nákupního košíku na webu 
 
 | Vlastnost | Hodnoty | popis |
 |----------------|--------|-------------|
-| Záhlaví | Text a značka nadpisu ( **H1** , **H2** , **H3** , **H4** , **H5** nebo **H6** ) | Nadpis košíku, jako "Nákupní taška" nebo "Položky v nákupním košíku". |
-| Zobrazit chybu vyprodanosti | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda** , na stránce košíku se zobrazí chyby související s akciemi. Doporučujeme nastavit tuto vlastnost na **Pravda** pokud jsou na webu prováděny kontroly zásob. |
-| Zobrazit přepravní poplatky u řádkových položek | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda** , řádkové položky košíku zobrazí přepravné, jsou-li tyto informace k dispozici. Tato funkce není v motivu Fabrikam podporována, protože uživatelé vyberou dopravu pouze v pokladně. Tuto funkci však lze zapnout v jiných workflowech, pokud je to možné. |
+| Záhlaví | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Nadpis košíku, jako "Nákupní taška" nebo "Položky v nákupním košíku". |
+| Zobrazit chybu vyprodanosti | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, na stránce košíku se zobrazí chyby související s akciemi. Doporučujeme nastavit tuto vlastnost na **Pravda** pokud jsou na webu prováděny kontroly zásob. |
+| Zobrazit přepravní poplatky u řádkových položek | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, řádkové položky košíku zobrazí přepravné, jsou-li tyto informace k dispozici. Tato funkce není v motivu Fabrikam podporována, protože uživatelé vyberou dopravu pouze v pokladně. Tuto funkci však lze zapnout v jiných workflowech, pokud je to možné. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduly, které lze použít v modulu košíku
 
@@ -61,7 +61,7 @@ Následující obrázek ukazuje příklad stránky nákupního košíku na webu 
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
-Následující nastavení modulu nákupního košíku lze konfigurovat na **Nastavení webu \> Rozšíření** :
+Následující nastavení modulu nákupního košíku lze konfigurovat na **Nastavení webu \> Rozšíření**:
 
 - **Maximální množství** – tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
 - **Zásoby** – Informace, jak použít nastavení zásob, naleznete v části [Použití nastavení zásob](inventory-settings.md).
@@ -83,17 +83,17 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 1. V části **Název fragmentu** zadejte název pro **Fragment košíku** a poté vyberte **OK**.
 1. Vyberte pozici **Nákupní košík**.
 1. V podokně vlastností vpravo vyberte symbol tužky, do pole zadejte text záhlaví a poté zaškrtněte symbol zaškrtnutí.
-1. V pozici **Nákupní košík** vyberte tři tečky ( **...** ) a poté vyberte možnost **Přidat modul**.
+1. V pozici **Nákupní košík** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte modul **Volba obchodu** a poté klikněte na tlačítko **OK**.
-1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
+1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte název šablony.
-1. Ve stromové struktuře vyberte pozici **Obsah** , vyberte tři tečky ( **...** ) a vyberte možnost **Přidat fragment**.
+1. Ve stromové struktuře vyberte pozici **Obsah**, vyberte tři tečky (**...**) a vyberte možnost **Přidat fragment**.
 1. V dialogovém okně **Vybrat fragment** vyberte **Fragment košíku** a pak vyberte tlačítko **OK**.
-1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit** , pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
 1. V dialogovém okně **Zvolte šablonu** vyberte šablonu, kterou jste vytvořili, zadejte název stránky a pak vyberte tlačítko **OK**.
-1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled** , chcete-li zobrazit náhled stránky.
+1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled stránky.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 ## <a name="additional-resources"></a>Další prostředky
@@ -102,11 +102,13 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 
 [Modul pokladny](add-checkout-module.md)
 
-[Modul platby](payment-module.md)
+[Platební modul](payment-module.md)
 
 [Modul dodací adresy](ship-address-module.md)
 
 [Modul možností doručení](delivery-options-module.md)
+
+[Modul s informacemi o vyzvednutí](pickup-info-module.md)
 
 [Modul podrobností objednávky](order-confirmation-module.md)
 

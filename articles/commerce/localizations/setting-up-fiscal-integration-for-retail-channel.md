@@ -18,11 +18,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: b221bfede5d1db8d7970e1efede85e8dba7fe017
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124375"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410663"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
@@ -158,7 +158,7 @@ V některých případech musí být vytištěn speciální text na fiskálním 
 
 - Pro ruční slevy, které jsou použity v POS, je třeba nastavit fiskální text pro informační kód nebo skupinu informačních kódů, která je určena jako informační kód **sleva na produkt** v profilu funkce POS.
 
-    1. Na stránce**Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
+    1. Na stránce **Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
     2. Na kartě **Informační kódy** vyberte **Přidat** a vyberte informační kód nebo skupinu informačních kódů.
     3. V poli **číslo informačního kódu** vyberte požadovanou hodnotu.
     4. V poli **Číslo podkódu** vyberte hodnotu, pokud je vyžadován pro vybraný informační kód.
@@ -170,7 +170,7 @@ V některých případech musí být vytištěn speciální text na fiskálním 
 
 - Pro specifické slevy pro kanál byste měli definovat fiskální text pro ID slevy.
 
-    1. Na stránce**Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
+    1. Na stránce **Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
     2. Na kartě **Slevy** vyberte **Přidat** a vyberte ID slevy.
     3. V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.
 
@@ -196,7 +196,7 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
     > [!NOTE]
     > Funkce spouštění **Produkt** není podporována pro informační kódy používané pro volby **Přeskočit** a **Označit jako registrované** ve skupinách fiskálního konektoru.
 
-    - Na stránce **Skupiny fiskálního konektoru** na kartě**Informační kódy** vyberte informační kódy nebo skupiny informačních kódů v polích **přeskočit** a **Označit jako registrované**.
+    - Na stránce **Skupiny fiskálního konektoru** na kartě **Informační kódy** vyberte informační kódy nebo skupiny informačních kódů v polích **přeskočit** a **Označit jako registrované**.
 
     > [!NOTE]
     > Jeden fiskální dokument a jeden nefiskální dokument lze generovat v jakémkoli kroku procesu daňové registrace. Rozšíření poskytovatele fiskálního dokumentu identifikuje všechny typy transakcí nebo událostí jako související s fiskálními nebo nefiskálními dokumenty. Funkce zpracování chyb platí pouze pro fiskální dokumenty.

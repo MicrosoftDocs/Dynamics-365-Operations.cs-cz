@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011405"
+ms.locfileid: "4417707"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Příprava pro ostré nasazení Human Resources
 
@@ -57,7 +57,7 @@ Hlavním milníkem v každém implementačním projektu je přechod do produkčn
 
 Abychom zajistili, že se produkční prostředí používá pro živé operace, Microsoft zřídí produkční instanci pouze v případě, že se implementace blíží do fáze **Provoz** po dokončení požadovaných činností v metodice LCS. Další informace o prostředích ve vašem předplatném najdete v části  [Průvodce licencováním Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Zákazníci musí dokončit fáze **Analýza** , **Design a vývoj** a **Test** v metodice LCS před tím, než je k dispozici tlačítko **Konfigurovat**  pro vyžádání produkčního prostředí. Chcete-li dokončit fázi v LCS, musíte nejprve dokončit všechny požadované kroky v této fázi. Když jsou dokončeny všechny kroky ve fázi, můžete dokončit celou fázi. Fázi můžete kdykoli znovu otevřít, pokud musíte provést změny. Další informace viz  [Lifecycle Services (LCS) pro zákazníky aplikací Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Zákazníci musí dokončit fáze **Analýza**, **Design a vývoj** a **Test** v metodice LCS před tím, než je k dispozici tlačítko **Konfigurovat**  pro vyžádání produkčního prostředí. Chcete-li dokončit fázi v LCS, musíte nejprve dokončit všechny požadované kroky v této fázi. Když jsou dokončeny všechny kroky ve fázi, můžete dokončit celou fázi. Fázi můžete kdykoli znovu otevřít, pokud musíte provést změny. Další informace viz  [Lifecycle Services (LCS) pro zákazníky aplikací Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Proces dokončení kroku má dvě části: 
 

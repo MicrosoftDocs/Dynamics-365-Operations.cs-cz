@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410863"
 ---
 # <a name="modify-an-existing-site-page"></a>Úprava existující webové stránky
 
@@ -38,13 +38,13 @@ Pokud je nutné upravit stránku, otevřete ji nejprve v editoru stránek. Přej
 > [!TIP]
 > Je-li stránka viditelná v inspektoru stránky, můžete vybrat možnost **Upravit** a před otevřením stránky v editoru stránek ji zkontrolovat. Tímto způsobem lze zkontrolovat více stránek najednou.
 
-Po otevření stránky v editoru stránek se ujistěte, že je rezervována vám. Panel příkazů v redakčním nástroji je dynamický, kontextový a stavový. Z toho vyplývá, že se zobrazí pouze akce, které lze aktuálně provádět na stránce. Není-li například stránka pro vás zarezervována, v panelu příkazů se nezobrazí tlačítka **Uložit** a **Dokončit úpravy** . Stav stránky se také zobrazuje na pravé straně okna.
+Po otevření stránky v editoru stránek se ujistěte, že je rezervována vám. Panel příkazů v redakčním nástroji je dynamický, kontextový a stavový. Z toho vyplývá, že se zobrazí pouze akce, které lze aktuálně provádět na stránce. Není-li například stránka pro vás zarezervována, v panelu příkazů se nezobrazí tlačítka **Uložit** a **Dokončit úpravy**. Stav stránky se také zobrazuje na pravé straně okna.
 
 Pokud stránka dosud není rezervována, vyberte **Upravit** na panelu příkazů. Panel příkazů se změní, aby odrážel nový stav stránky. Obdržíte také oznámení o tom, že pro vás byla stránka rezervována.
 
 Chcete-li provést vlastní změny, proveďte následující kroky. Často použijete stromovou strukturu osnovy stránky vlevo k vyhledání a výběru modulu, který chcete změnit, a poté proveďte změny v podokně vlastnosti vpravo. 
 
-Vaše změna však může někdy zahrnovat přidání nebo odebrání modelů nebo fragmentů. Chcete-li přidat fragment nebo modul, vyhledejte úsek, do něhož chcete přidat modul nebo fragment, pomocí stromu osnovy stránek, a pak vyberte tlačítko se třemi tečkami ( **...** ) pro tento úsek. Zobrazí se nabídka obsahující příkazy pro přidání modulu nebo fragmentu. Chcete-li odebrat modul nebo fragment, vyhledejte jej a vyberte ve stromu osnovy stránek, vyberte tlačítko se třemi tečkami a pak vyberte příkaz pro odstranění modulu nebo fragmentu.
+Vaše změna však může někdy zahrnovat přidání nebo odebrání modelů nebo fragmentů. Chcete-li přidat fragment nebo modul, vyhledejte úsek, do něhož chcete přidat modul nebo fragment, pomocí stromu osnovy stránek, a pak vyberte tlačítko se třemi tečkami (**...**) pro tento úsek. Zobrazí se nabídka obsahující příkazy pro přidání modulu nebo fragmentu. Chcete-li odebrat modul nebo fragment, vyhledejte jej a vyberte ve stromu osnovy stránek, vyberte tlačítko se třemi tečkami a pak vyberte příkaz pro odstranění modulu nebo fragmentu.
 
 > [!TIP]
 > Můžete také zobrazit a upravit vlastnosti libovolného modulu, který je viditelný v náhledu vizuálního tvůrce stránek, výběrem volby přímo.
@@ -58,19 +58,19 @@ Chcete-li změny publikovat ihned, vyberte možnost **Publikovat** na panelu př
 Následující příklad ukazuje, jak upravit domovskou stránku změnou videa, které se zobrazí v modulu přehrávač videa.
 
 1. V části **Weby** vyberte **Fabrikam** (nebo název vašeho webu).
-1. V navigačním podokně nalevo vyberte položku **Stránky** .
+1. V navigačním podokně nalevo vyberte položku **Stránky**.
 1. Vyhledejte a vyberte domovskou stránku, kterou chcete otevřít v editoru stránek.
-1. Na příkazovém řádku vyberte možnost **Upravit** .
-1. V osnově stránky vyberte úsek **Hlavní** .
+1. Na příkazovém řádku vyberte možnost **Upravit**.
+1. V osnově stránky vyberte úsek **Hlavní**.
 1. V úseku **Hlavní** rozbalte všechny moduly plovoucího obsahu.
 1. Vyhledejte a vyberte modul přehrávače videa.
-1. V podokně vlastnosti vpravo vyberte vlastnost **video** . Zobrazí se okno pro výběr zdroje.
+1. V podokně vlastnosti vpravo vyberte vlastnost **video**. Zobrazí se okno pro výběr zdroje.
 1. V okně peo výběr zdroje vyberte dostupný zdroj videa nebo vyberte možnost **Odeslat nový zdroj** a odešlete nový zdroj videa.
-1. Vyberte **OK** .
-1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy** .
+1. Vyberte **OK**.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
 1. Do pole **Poznámky** zadejte **Změněné video** a pak vyberte **OK.**
-1. Chcete-li zobrazit náhled aktualizované stránky, vyberte volbu **Náhled** . Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
-1. Zvolte **Publikovat** .
+1. Chcete-li zobrazit náhled aktualizované stránky, vyberte volbu **Náhled**. Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
+1. Zvolte **Publikovat**.
 
 ## <a name="additional-resources"></a>Další zdroje
 

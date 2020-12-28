@@ -20,11 +20,11 @@ ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022464"
+ms.locfileid: "4410915"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Vizuální konfigurace uživatelského rozhraní POS
 
@@ -54,7 +54,7 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 - **Vždy zobrazit popisky čárových aplikací** – je-li tato možnost zapnuta, text popisku se vždy zobrazí pod tlačítky na panelu aplikace.
 - **Rozvržení** – můžete vybrat mezi rozvržením **uprostřed** a **vpravo**. Rozvržení ovlivňuje zarovnání přihlašovacího pole v přihlašovací obrazovce. Implicitně je vybráno nastavení **Uprostřed**.
 - **Zobrazit datum a čas** – je-li tato možnost zapnuta, bude aktuální datum a čas zobrazeno v záhlaví POS a na přihlašovací obrazovce.
-- **Klávesnice** – můžete vybrat **výchozí nastavení na klávesnici OS** a **zobrazit číselnou klávesnici** , která určuje výchozí klávesnici, která se použije pro vstup na přihlašovací obrazovce. Tato číselná klávesnice je virtuální klávesnicí, která se používá především pro dotyková zařízení. Výchozí nastavení je **výchozí nastavení na klávesnici OS**.
+- **Klávesnice** – můžete vybrat **výchozí nastavení na klávesnici OS** a **zobrazit číselnou klávesnici**, která určuje výchozí klávesnici, která se použije pro vstup na přihlašovací obrazovce. Tato číselná klávesnice je virtuální klávesnicí, která se používá především pro dotyková zařízení. Výchozí nastavení je **výchozí nastavení na klávesnici OS**.
 - **Obrázek loga** – můžete určit obrázek loga, který se zobrazí v přihlašovací obrazovce. Doporučujeme použít obrázek, který má průhledné pozadí. Velikost obrázků je třeba uchovávat co nejmenší, protože ukládání a načítání velkých souborů může mít vliv na chování a výkon aplikace.
 - **Pozadí přihlašování** - můžete zadat obrázek pozadí pro přihlašovací obrazovku. Velikost souboru obrázku na pozadí by měla být co nejmenší.
 - **Pozadí** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud se jedná o obrázky pozadí pro přihlašovací obrazovku, měla by být velikost souboru udržována co nejmenší.
@@ -62,7 +62,7 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 > [!NOTE]
 > Na přihlašovací obrazovce v kompaktním zobrazení se nezobrazuje **správné** rozvržení a datum a čas.
 
-Musíte spustit úlohu distribučního plánu **1090** ( **Registry** ) pro synchronizaci nejnovějších konfigurací vizuálního profilu s databází kanálů.
+Musíte spustit úlohu distribučního plánu **1090** (**Registry**) pro synchronizaci nejnovějších konfigurací vizuálního profilu s databází kanálů.
 
 ## <a name="screen-layouts"></a>Rozložení obrazovky
 
@@ -84,7 +84,7 @@ Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacíc
 
 Rozložení obrazovky mohou být přiřazena na úrovni obchodu, registrační pokladny nebo uživatele. Přiřazení uživatele přepíše přiřazení registrační pokladny a obchodu a přiřazení registrační pokladny přepíše přiřazení obchodu. V jednoduchém případě, kde všichni uživatelé používají stejné rozvržení bez ohledu na registr nebo roli, lze rozvržení obrazovky nastavit pouze na úrovni obchodu. V případech, kde konkrétní registrační pokladny nebo uživatelé vyžadují speciální rozložení, lze jim je přiřadit.
 
-V závislosti na tom, které úrovni je přiřazeno rozložení obrazovky, musíte spustit úlohy distribučního plánu **1070** ( **Konfigurace kanálu** ), **1090** ( **Registry** ) a / nebo **1060** ( **Personál** ) pro synchronizaci nejnovějších konfigurací rozložení obrazovky s databází kanálů.
+V závislosti na tom, které úrovni je přiřazeno rozložení obrazovky, musíte spustit úlohy distribučního plánu **1070** (**Konfigurace kanálu**), **1090** (**Registry**) a / nebo **1060** (**Personál**) pro synchronizaci nejnovějších konfigurací rozložení obrazovky s databází kanálů.
 
 ### <a name="layout-sizes"></a>Velikosti rozvržení
 
@@ -153,7 +153,7 @@ Návrhář úplného rozložení umožňuje uživatelům přetáhnout ovladací 
     - **Ovládací prvek karty** - ovládací prvek karty můžete přidat k rozvržení obrazovky a poté do ní přidat další ovládací prvky, jako je číselná klávesnice, karta zákazníka nebo tlačítka mřížky. Ovládací prvek karty je kontejner, který vám umožňuje přidat více obsahu na obrazovku. Ovládací prvek karty je dostupný pouze pro úplná rozložení.
     - **Obrázek** - můžete použít ovládací prvek obrázku k zobrazení loga obchodu nebo jiného obrázku značky na obrazovce **Transakce**. Ovládací prvek obrázku je dostupný pouze v úplném rozložení.
     - **Doporučené produkty** - Je-li nakonfigurován doporučený ovládací prvek produktu pro prostředí, zobrazuje návrhy produktu založené na strojovém učení.
-    - **Vlastní ovládací prvek** - vlastní ovládací prvek funguje jako zástupce v rozvržení obrazovky a umožňuje vám rezervovat místo pro vlastní obsah. Vlastní ovládací prvek je dostupný pouze pro úplné rozložení.
+    - **Vlastní ovládací prvek**- vlastní ovládací prvek funguje jako zástupce v rozvržení obrazovky a umožňuje vám rezervovat místo pro vlastní obsah. Vlastní ovládací prvek je dostupný pouze pro úplné rozložení.
 
 ### <a name="compact-layout-designer"></a>Návrhář kompaktního rozložení
 
@@ -192,8 +192,8 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 
         ![Velikosti tlačítek POS v řádcích a sloupcích](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
-    - **Vlastní písma** – když vyberete zaškrtávací políčko **Povolit vlastní písmo pro POS** , můžete zadat jiné písmo, než je součástí výchozího systému POS.
-    - **Vlastní motiv** – standardně používají tlačítka POS barvu zvýraznění z vizuálního profilu. Když vyberete zaškrtávací políčko **Použít vlastní motiv** , můžete určit další barvy.
+    - **Vlastní písma** – když vyberete zaškrtávací políčko **Povolit vlastní písmo pro POS**, můžete zadat jiné písmo, než je součástí výchozího systému POS.
+    - **Vlastní motiv** – standardně používají tlačítka POS barvu zvýraznění z vizuálního profilu. Když vyberete zaškrtávací políčko **Použít vlastní motiv**, můžete určit další barvy.
 
         > [!NOTE]
         > Modern POS a Cloud POS používají pouze hodnoty **Barva pozadí** a **Barva písma**.

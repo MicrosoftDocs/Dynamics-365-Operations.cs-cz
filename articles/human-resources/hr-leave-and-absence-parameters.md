@@ -2,8 +2,8 @@
 title: Konfigurace parametrů pracovního volna a absence
 description: Definujte parametry lidských zdrojů pro pracovní volno a absenci v Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712369"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417721"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurace parametrů pracovního volna a absence
 
@@ -47,6 +47,19 @@ Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Reso
 5. Na kartě **Samoobsluha zaměstnance** určete, zda manažeři mohou zadat žádosti o pracovní volno a absenci jménem svých zaměstnanců.
 
 7. Zvolte **Uložit**.
+
+>[!IMPORTANT]
+>Zobrazení pracovního volna a absencí napříč společnostmi je aktuálně ve verzi Preview. Tuto funkci budete muset povolit v prostředí **Sandbox**, aby se vám zobrazila možnost pracovního volna a absencí. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Zobrazení a změna sdílených parametrů Human Resources
+
+1. Na stránce **Správa zaměstnanců** vyberte kartu **Odkazy**.
+
+2. V části **Nastavení** vyberte **Sdílené parametry Human Resources**.
+
+3. Na kartě **Rozšířený přístup** vyberte **Ano** pro **Povolit zobrazení pracovního volna mezi společnostmi**, abyste umožnili prohlížet pracovní volno napříč společností.
+
+4. Zvolte **Uložit**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Zobrazen a zmena parametrů pracovního volna a absence
 

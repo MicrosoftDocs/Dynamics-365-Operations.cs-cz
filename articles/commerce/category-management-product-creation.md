@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 9d47a866703b830e84e3f2e37a02d9d58f73987b
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895418"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410750"
 ---
 # <a name="manage-product-categories-and-products"></a>Správa kategorií produktů a produktů
 
@@ -54,6 +54,6 @@ Dále pak ve vylepšené kategorii produktů může ve srovnání s předchozím
 
 ## <a name="selecting-properties-to-update-products-on-the-commerce-product-hierarchy-page"></a>Výběr vlastností pro aktualizaci produktů ze stránky hierarchie produktů Commerce
 
-Tuto novou rozšířenou strukturu vlastností produktu můžete použít pro výběr aktualizovaných vlastností produktu, které je třeba odeslat k přiřazeným produktům. Na stránce **Hierarchie produktů Commerce** v podokně akcí vyberte **kategorie**a poté vyberte **aktualizovat produkty** k otevření dialogového okna **Aktualizace produktů**.
+Tuto novou rozšířenou strukturu vlastností produktu můžete použít pro výběr aktualizovaných vlastností produktu, které je třeba odeslat k přiřazeným produktům. Na stránce **Hierarchie produktů Commerce** v podokně akcí vyberte **kategorie** a poté vyberte **aktualizovat produkty** k otevření dialogového okna **Aktualizace produktů**.
 
 ![Dialogové okno Aktualizovat produkty](media/NewUpdateProductsEnhancedView.PNG)

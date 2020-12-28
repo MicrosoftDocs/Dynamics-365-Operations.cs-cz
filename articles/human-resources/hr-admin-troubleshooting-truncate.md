@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430906"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417638"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 
@@ -54,11 +54,11 @@ Tento postup slouží k exportu do aplikace Visio.
 
     ![Export do dialogového okna Excelu](media/export-excel.png)
 
-4. V aplikaci Visio vyberte **Visio – Vytvořit novou**a vyberte kategorii šablony **Obchodní**.
+4. V aplikaci Visio vyberte **Visio – Vytvořit novou** a vyberte kategorii šablony **Obchodní**.
 
     ![Nový diagram](media/new.png)
 
-5. Vyberte **Průvodce grafem organizace**a poté vyberte **Vytvořit**.
+5. Vyberte **Průvodce grafem organizace** a poté vyberte **Vytvořit**.
 
     ![Dialogové okno průvodce grafem organizace](media/orgchart-wizard.png)
 

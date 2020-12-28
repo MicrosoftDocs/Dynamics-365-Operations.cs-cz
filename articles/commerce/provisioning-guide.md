@@ -3,7 +3,7 @@ title: Zřízení prostředí vyhodnocení Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599843"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4410938"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení Dynamics 365 Commerce
 
@@ -48,6 +48,7 @@ Informace o konfiguraci prostředí vyhodnocení Commerce po jeho vytvoření na
 
 Aby bylo možné zřídit prostředí vyhodnocení Commerce, musí být zavedeny následující předpoklady:
 
+- Byli jste přijati do programu hodnocení a byla vám udělena kapacita pro prostředí hodnocení.
 - Máte přístup k portálu Microsoft Dynamics Lifecycle Services (LCS).
 - Jste stávajícím partnerem Microsoft Dynamics 365 nebo odběratelem a máte možnost vytvořit projekt Dynamics 365 Commerce.
 - Máte přístup správce k vašemu předplatnému Microsoft Azure nebo jste v kontaktu se správcem předplatného, který vám může v případě potřeby pomoci.
@@ -91,7 +92,7 @@ Pro nasazení prostředí postupujte takto.
 
 1. V horní nabídce vyberte možnost **Prostředí hostovaná v cloudu**.
 1. Prostředí přidáte výběrem tlačítka **Přidat**.
-1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.8**.
+1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.14**.
 1. V poli **verze platformy** použijte verzi platformy, která je automaticky vybrána pro vybranou verzi aplikace. 
 
     ![Vyběr verze aplikace a platformy](./media/project1.png)

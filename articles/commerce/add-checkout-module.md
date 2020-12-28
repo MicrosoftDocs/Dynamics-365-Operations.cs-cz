@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8439b88ccda3f72e5a9b918c6c89bd406599b516
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818219"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4410941"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
@@ -116,11 +116,13 @@ Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlast
 
 [Modul ikony košíku](cart-icon-module.md)
 
-[Modul platby](payment-module.md)
+[Platební modul](payment-module.md)
 
 [Modul dodací adresy](ship-address-module.md)
 
 [Modul možností doručení](delivery-options-module.md)
+
+[Modul s informacemi o vyzvednutí](pickup-info-module.md)
 
 [Modul podrobností objednávky](order-confirmation-module.md)
 

@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 250b214372a12f99d2ababc97c5edf4456cadcad
-ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3688265"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417679"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Použití workflow ke správě informací o zaměstnanci
 
@@ -55,9 +55,9 @@ Chcete-li konfigurovat základní workflow, který je spuštěn, když zaměstna
 3.  Klikněte na tlačítko **Spustit** a spusťte Návrháře workflowů. Potom na výzvu zadejte uživatelské jméno a heslo.
 4.  Přetáhněte prvek **Schválit identifikační číslo** ze seznamu prvků workflowu na plátno návrháře.
 5.  Připojte prvek schválení k položkám **Začátek** a **Konec**.
-6.  Dvakrát klikněte na **Schválit prvek**a potom klikněte pravým tlačítkem myši a vyberte **Vlastnosti**.
+6.  Dvakrát klikněte na **Schválit prvek** a potom klikněte pravým tlačítkem myši a vyberte **Vlastnosti**.
 7.  Postupujte podle těchto kroků a přidejte pokyny pro pracovní položku:
-    1.  Vyberte **Přiřazení**a potom vyberte **Hierarchie** pro typ přiřazení.
+    1.  Vyberte **Přiřazení** a potom vyberte **Hierarchie** pro typ přiřazení.
     2.  Pod výběrem **Hierarchie** vyberte **Konfigurovatelná hierarchie**.
     3.  Přidejte podmínku ukončení a zavřete stránku.
 

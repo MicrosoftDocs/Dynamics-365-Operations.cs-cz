@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428655"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417651"
 ---
 # <a name="define-new-jobs"></a>Definování nových pracovních míst
 
@@ -57,7 +57,7 @@ Tato úloha se zaměřuje na vytváření nové úlohy. Ta bude dokončena pomoc
 21. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 22. Klikněte na odkaz na vybraném řádku v seznamu.
 23. Přepněte rozšíření oddílu Kvalifikace.
-    * Všimněte si, že pole na pevné záložce Kvalifikace, Vzdělání a Certifikáty jsou prázdná. Po zkopírování informací ze šablony pozice budou informace v těchto polích zadány v jediném kroku.   
+    * Všimněte si, že pole na pevné záložce Kvalifikace, Vzdělání a Certifikáty jsou prázdná. Po zkopírování informací ze šablony pozice budou informace v těchto polích zadány v jediném kroku.   
 24. Klikněte na položku Uložit.
 25. Klikněte na tlačítko Kopírovat z.
 26. Klikněte na Kopírovat ze šablony.

@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961579"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410866"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Zvažování optimalizace webového vyhledávače pro váš web
 
@@ -43,11 +43,11 @@ Během "předběžných spuštění" je webová stránka k dispozici pro omezeno
 
 Pokud je web ve výrobě, ujistěte se, že jsou všechny stránky webu správně označeny. Microsoft Dynamics 365 Commerce používá informace zadané pro stránku k vykreslení všech informací SEO na dané stránce. Následující moduly poskytují tuto funkci: souhrn stránek kategorií, souhrn stránek seznamů a souhrn stránky produktu.
 
-Chcete-li optimalizovat indexování vyhledávače, vykreslovací systém používá obě informace z vlastností SEO, které jsou konfigurovány v Dynamics 365 Commerce a v informacích specifických pro modul. U webu, které je ve výrobě, se ujistěte, že soubor robots.txt umožňuje indexovat celý web a obsahuje odkazy na váš publikovaný dokument mapy webu. Měli byste zapnout funkci generování mapy webu na **Nastavení webu \> Mapy webů povoleny** .
+Chcete-li optimalizovat indexování vyhledávače, vykreslovací systém používá obě informace z vlastností SEO, které jsou konfigurovány v Dynamics 365 Commerce a v informacích specifických pro modul. U webu, které je ve výrobě, se ujistěte, že soubor robots.txt umožňuje indexovat celý web a obsahuje odkazy na váš publikovaný dokument mapy webu. Měli byste zapnout funkci generování mapy webu na **Nastavení webu \> Mapy webů povoleny**.
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Nastavení SEO stránky pro interní náhled, omezené cílové skupiny a všechny cílové skupiny
 
-Vzhledem k tomu, že aplikace Dynamics 365 Commerce podporuje ověřené náhledy (WYSIWYG) ve vizuálním tvůrci stránek, autoři můžou připravovat obsah stránky, aniž by se museli obávat, že tyto informace budou návštěvníkům webu viditelné. Pokud musí být stránka publikována, ale je nutné omezit její expozici, měla by mít metaznačku **NOINDEX** , aby nebyla indexována vyhledávacími moduly. Poté, co je stránka připravena pro všechny cílové skupiny, by měla být k dispozici všechna základní metadata SEO, aby se maximalizovala efektivita indexování vyhledávacího modulu. Kromě toho by měla být odebrána metaznačka **NOLIMIT** .
+Vzhledem k tomu, že aplikace Dynamics 365 Commerce podporuje ověřené náhledy (WYSIWYG) ve vizuálním tvůrci stránek, autoři můžou připravovat obsah stránky, aniž by se museli obávat, že tyto informace budou návštěvníkům webu viditelné. Pokud musí být stránka publikována, ale je nutné omezit její expozici, měla by mít metaznačku **NOINDEX**, aby nebyla indexována vyhledávacími moduly. Poté, co je stránka připravena pro všechny cílové skupiny, by měla být k dispozici všechna základní metadata SEO, aby se maximalizovala efektivita indexování vyhledávacího modulu. Kromě toho by měla být odebrána metaznačka **NOLIMIT**.
 
 ## <a name="additional-resources"></a>Další zdroje
 

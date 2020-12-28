@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002029"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410679"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace sítě
 
@@ -75,7 +75,7 @@ Následující obrázek znázorňuje příklad dokončené navigační hierarchi
 Chcete-li přidat produkty do uzlů kategorií, postupujte podle následujících kroků.
 
 1. Vyberte uzel kategorií.
-1. Ve volbě **Produkty**vyberte **Přidat**.
+1. Ve volbě **Produkty** vyberte **Přidat**.
 1. Vyhledejte nové produkty, které chcete přidat pomocí čísla produktu nebo názvu produktu, a poté vyberte **OK**.
 1. V podokně akcí vyberte **Uložit**.
 

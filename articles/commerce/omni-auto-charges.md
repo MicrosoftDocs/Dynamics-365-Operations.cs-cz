@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107368"
+ms.locfileid: "4410933"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
@@ -38,7 +38,7 @@ Ve verzích aplikace Retail starších než 10.0 bývaly konfigurace [automatick
 
 Používáte-li verze starší než je verze 10.0, uživatel POS je vyzván k ručnímu zadání dopravného během vytváření transakcí POS „expedovat vše“ nebo „expedovat vybrané“. Zatímco funkce vedlejších nákladů v aplikaci se používají s ohledem na to, jak jsou náklady zapsány do objednávky, není poskytován systematický výpočet - výpočet se opírá o vstup uživatele, který určuje hodnotu nákladů. Náklady lze přidat pouze jako jeden kód nákladů souvisejících s expedicí a nelze je snadno upravit ani změnit v POS po jejich vytvoření.
 
-Použití ruční výzvy k přidání nákladů na expedici je stále k dispozici ve verzi 10.0 a starších. Pokud organizace nepovolí parametr **rozšířené automatické náklady** , výzvy POS k ručnímu zadání nákladů zůstanou stejné.
+Použití ruční výzvy k přidání nákladů na expedici je stále k dispozici ve verzi 10.0 a starších. Pokud organizace nepovolí parametr **rozšířené automatické náklady**, výzvy POS k ručnímu zadání nákladů zůstanou stejné.
 
 Díky funkci rozšířených automatických nákladů mohou mít uživatelé POS systematické výpočty pro všechny definované vedlejší náklady založené na tabulkách nastavení automatických nákladů. Navíc uživatelé budou mít možnost přidávat nebo upravovat neomezené množství dodatečných nákladů a poplatků do jakékoli prodejní transakci POS na záhlaví nebo na úrovni řádku (pro „cash and carry“ nebo objednávku odběratele).
 
@@ -149,9 +149,9 @@ Operace **Přidat náklady záhlaví** musí být nakonfigurována ve vašem [ro
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Zpracování prodeje ručních nákladů záhlaví
 
-Pro provedení scénáře v aplikaci POS uživatel POS vytvoří obvyklou prodejní transakci a do prodeje přidá produkty a další konfigurace. Před inkasováním platby by měl uživatel provést operaci platbu **Přidat náklady záhlaví** , která vyzve uživatele k výběru kódu nákladů a zadání hodnoty nákladů. Jakmile uživatel dokončí proces, náklad bude přidán do prodejní objednávky jako náklad na úrovni záhlaví.
+Pro provedení scénáře v aplikaci POS uživatel POS vytvoří obvyklou prodejní transakci a do prodeje přidá produkty a další konfigurace. Před inkasováním platby by měl uživatel provést operaci platbu **Přidat náklady záhlaví**, která vyzve uživatele k výběru kódu nákladů a zadání hodnoty nákladů. Jakmile uživatel dokončí proces, náklad bude přidán do prodejní objednávky jako náklad na úrovni záhlaví.
 
-Tento proces lze použít v kontaktním středisku pomocí stávající funkce **Náklady** , která se nalézá na kartě **Prodej** na panelu nástrojů. Na stránce **Spravovat náklady** může uživatel přidat nový řádek nákladů do záhlaví objednávky.
+Tento proces lze použít v kontaktním středisku pomocí stávající funkce **Náklady**, která se nalézá na kartě **Prodej** na panelu nástrojů. Na stránce **Spravovat náklady** může uživatel přidat nový řádek nákladů do záhlaví objednávky.
 
 ### <a name="manual-line-charges-example"></a>Příklad ručních řádků záhlaví
 
@@ -173,7 +173,7 @@ Operace **Přidat náklady řádku** musí být nakonfigurována ve vašem [rozv
 
 Pro provedení scénáře v aplikaci POS uživatel POS vytvoří obvyklou prodejní transakci a do prodeje přidá produkty a další konfigurace. Před inkasováním platby by měl uživatel vybrat konkrétní řádek, kde se použijí náklady ze zobrazení seznamu položek POS, a provést operaci **Přidat náklady** řádku. Uživatel bude vyzván ke zvolení kódu nákladů a zadání hodnoty nákladů. Jakmile uživatel dokončí proces, náklad bude propojen na řádek a přidán k součtu objednávky jako náklad na úrovni řádku. Uživatel může opakovat proces pro přidání dalších nákladů řádku k dalším řádkům položek na transakci v případě potřeby.
 
-Stejný proces lze použít v kontaktním středisku pomocí funkce Udržovat náklady, která se nalézá pod rozevírací nabídkou **Finance** v části **Řádky prodejní objednávky** na stránce **Prodejní objednávka**. Výběrem této možnosti se otevře stránka **Udržovat náklady** , kde může uživatel přidat nový náklad specifický pro řádek k transakci.
+Stejný proces lze použít v kontaktním středisku pomocí funkce Udržovat náklady, která se nalézá pod rozevírací nabídkou **Finance** v části **Řádky prodejní objednávky** na stránce **Prodejní objednávka**. Výběrem této možnosti se otevře stránka **Udržovat náklady**, kde může uživatel přidat nový náklad specifický pro řádek k transakci.
 
 ## <a name="additional-features"></a>Další funkce
 
@@ -183,13 +183,13 @@ Operace **Správa nákladů** (142) by měla být přidána do [rozvržení obra
 
 Na stránce **Spravovat náklady** v POS může uživatel zobrazit podrobnosti nákladů na úrovni záhlaví a řádku. Uživatel může použít funkci **Upravit** dostupnou na této stránce pro provedení změn částky účtované na konkrétní řádek nákladů. Jakmile je řádek nákladů ručně přepisován, nebude systematicky přepočítáván, pokud uživatel neinicializuje operaci **Přepočítat náklady**.
 
-Pokud byl **Kód důvodu přepsání nákladů** nakonfigurován na stránce nastavení **Parametry velkoobchodu** , uživatel bude vyzván k zadání kódu důvodu, když byly upraveny náklady v aplikaci POS.
+Pokud byl **Kód důvodu přepsání nákladů** nakonfigurován na stránce nastavení **Parametry velkoobchodu**, uživatel bude vyzván k zadání kódu důvodu, když byly upraveny náklady v aplikaci POS.
 
 Pokud byly kódy důvodů zaznamenány pro přepsané náklady, přepsán, bude k dispozic též nová sestava pro kontrolu a audit těchto přepsání. Sestava se nalézá v možnostech **Maloobchod a velkoobchod \> Dotazy a sestavy \> Historie přepsání nákladů**.
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Refundace nákladů na transakci vrácení POS
 
-Pokud je parametr **Použít rozšířené automatické náklady** nastaven na hodnotu **Ano** , existující parametr velkoobchodu pro možnost **Refundovat dopravné** již není k dispozici. Chcete-li uvést, které poplatky by měly být zákazníkovi systematicky refundovány při použití rozšířených automatických nákladů, zkontrolujte, zda je příslušný kód nákladů nakonfigurován **Vratný** na stránce nastavení **Kód nákladů**. Ujistěte se, že nastavení byla synchronizována do databází velkoobchodní sítě prostřednictvím zpracování plánu distribuce.
+Pokud je parametr **Použít rozšířené automatické náklady** nastaven na hodnotu **Ano**, existující parametr velkoobchodu pro možnost **Refundovat dopravné** již není k dispozici. Chcete-li uvést, které poplatky by měly být zákazníkovi systematicky refundovány při použití rozšířených automatických nákladů, zkontrolujte, zda je příslušný kód nákladů nakonfigurován **Vratný** na stránce nastavení **Kód nákladů**. Ujistěte se, že nastavení byla synchronizována do databází velkoobchodní sítě prostřednictvím zpracování plánu distribuce.
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Refundace nákladů na transakci vratky
 

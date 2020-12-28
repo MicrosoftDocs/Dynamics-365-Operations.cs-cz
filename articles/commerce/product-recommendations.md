@@ -20,11 +20,11 @@ ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664875"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410656"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
@@ -47,7 +47,7 @@ Služba doporučení produktů používá technologie umělé inteligence a stro
 
 Doporučení produktu jsou dostupná pro následující scénáře:
 
-- **Na libovolné stránce obchodu pro procházení nebo cílovou stránku v e-Commerce:** Pokud zákazníci nebo pracovníci obchodu navštíví stránku obchodu, může modul doporučení navrhovat produkty v seznamech **Nový**, **Nejprodávanější**a **Trendující**.
+- **Na libovolné stránce obchodu pro procházení nebo cílovou stránku v e-Commerce:** Pokud zákazníci nebo pracovníci obchodu navštíví stránku obchodu, může modul doporučení navrhovat produkty v seznamech **Nový**, **Nejprodávanější** a **Trendující**.
 - **Na stránce Podrobnosti produktu:** Pokud zákaznící nebo pracovníci obchodu navštíví stránku **Podrobnosti produktu**, nabídne modul doporučení další položky, které se také mohou nakoupit. Tyto položky se zobrazí v seznamu **Lidem se také líbí**.
 - **Na stránce transakce nebo na stránce s pokladnou:** modul doporučení navrhuje položky na základě celého seznamu položek v nákupním košíku. Tyto položky se zobrazí v seznamu **Často zakoupené společně**.
 - **Přizpůsobená doporučení:** Maloobchodníci mohou poskytnout přihlášeným zákazníkům seznam **přizpůsobených možností** a také nové funkce, které umožňují, aby byly existující scénáře seznamu přizpůsobeny na základě tohoto odběratele. Chcete-li zjistit více, přečtěte si téma [Povolení přizpůsobených doporučení](personalized-recommendations.md).

@@ -1,9 +1,9 @@
 ---
 title: Správa pracovního volna zaměstnanců
-description: Definujte parametry lidských zdrojů pro pracovní volno a absenci v Dynamics 365 Human Resources.
+description: Správa pracovního volna zaměstnanců v Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c45d2c57d89929ac9c423ab58aee4cbfa213509
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712116"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417720"
 ---
 # <a name="manage-employee-leave"></a>Správa pracovního volna zaměstnanců
 
@@ -44,6 +44,13 @@ Dovolenou zaměstnance můžete spravovat podle typu. Patří sem vypršení reg
 6. Můžete také vybrat **datum**. 
 
 Při úpravě zůstatku dovolené zaměstnance můžete uvést kód příčiny a komentář. 
+
+>[!IMPORTANT]
+>Zobrazení dalších informací o zůstatcích pracovního volna je ve verzi Preview. Budete to muset povolit ve svém prostředí **Sandbox**. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br>
+>Když umístíte ukazatel myši nad jakýkoli zůstatek pracovního volna, zobrazí se:<br>
+>- **K dispozici**: Celkem tento rok – pro výběr tento rok
+>- **Celkem tento rok**: Veškeré časové rozlišení, úpravy a převod do dalšího období pro tento rok
+>- **Vybráno tento rok**: Veškeré schválené volno
 
 ## <a name="see-also"></a>Viz také
 

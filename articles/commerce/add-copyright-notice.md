@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019534"
+ms.locfileid: "4410910"
 ---
 # <a name="add-a-copyright-notice"></a>Přidání oznámení o vlastnických právech
 
@@ -44,14 +44,14 @@ Chcete-li přidat oznámení o autorských právech do dolní části každé st
 1. Přejděte na **Fragmenty** a pak vyberte **Nový**.
 1. V dialogovém okně **Nový fragment** vyberte modul **Zápatí** a pojmenujte fragment. Zadejte například **Zápatí–autorská práva**.
 1. Vyberte **OK**.
-1. V navigačním podokně vyberte tlačítko se třemi tečkami ( **...** ) vedle **Zápatí** a vyberte možnost **Přidat modul**.
+1. V navigačním podokně vyberte tlačítko se třemi tečkami (**...**) vedle **Zápatí** a vyberte možnost **Přidat modul**.
 1. V dialogovém okně vyberte **Kategorie zápati** a pak vyberte možnost **OK**.
 1. V navigačním podokně vyberte tlačítko se třemi tečkami vedle **Kategorie zápatí** a vyberte možnost **Přidat modul**.
 1. V dialogovém okně vyberte **Textový blok** a pak vyberte možnost **OK**.
 1. V navigačním podokně vyberte položku **Textový blok**.
 1. V podokně vlastností vpravo v poli **Odstavec** přidejte zprávu o autorských právech. Zadejte například **(C) Fabrikam 2019**.
-1. Vyberte možnost **Uložit** , pak vyberte možnost **Dokončit úpravy** a pak vyberte možnost **Publikovat**.
-1. Přejděte na **Šablony** , vyberte šablonu a poté vyberte možnost **Upravit**.
+1. Vyberte možnost **Uložit**, pak vyberte možnost **Dokončit úpravy** a pak vyberte možnost **Publikovat**.
+1. Přejděte na **Šablony**, vyberte šablonu a poté vyberte možnost **Upravit**.
 1. V části **Osnova stránky** rozbalte možnost **Text** a pak rozbalte možnost **Výchozí stránka**.
 1. Vyberte tlačítko se třemi tečkami vedle **Pozice zápatí** a poté vyberte možnost **Přidat fragment**.
 1. Vyberte fragment, který jste vytvořili dříve, a poté vyberte možnost **Vybrat**.

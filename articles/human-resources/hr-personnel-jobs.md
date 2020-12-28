@@ -19,11 +19,11 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 69759c0488563a904f6e80afacb1802611ab1930
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430249"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417621"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Nastavení komponent práce
 
@@ -46,7 +46,7 @@ Používáte typy prací pro seskupení podobných pozic do kategorií. Typy pr�
 -   **Nelze použít** – pokrytí zákonem FLSA není možné.
 
 ## <a name="job-functions"></a>Pracovní funkce
-Křižovatky prací popisují funkční kategorie vysoké úrovně a vztahují se k povinnostem vysoké úrovně. Pracovní funkce nejsou vyžadovány. Pracovní funkce můžete používat spolu s typy práce k filtrování plánů kompenzace pro konkrétní práce. Přiřazení pracovních funkcí a typů práce k plánům kompenzace se provádí nastavením pravidel nároku na stránce **Pravidla způsobilosti**. K plánu kompenzace lze také přiřadit sadu úrovní, které se uplatní pro určité kombinace typu úlohy a pracovní funkce, které jste definovali v pravidlu nároku. (Tyto funkce platí jak pro fixní, tak pro variabilní kompenzační plány. Pokud však chcete použít pracovní funkce při nastavování pravidel nároku pro správu kompenzací, doporučujeme nastavit pracovní funkce ještě před nastavením prací. V následující tabulce jsou uvedeny některé příklady pracovních funkcí.
+Křižovatky prací popisují funkční kategorie vysoké úrovně a vztahují se k povinnostem vysoké úrovně. Pracovní funkce nejsou vyžadovány. Pracovní funkce můžete používat spolu s typy práce k filtrování plánů kompenzace pro konkrétní práce. Přiřazení pracovních funkcí a typů práce k plánům kompenzace se provádí nastavením pravidel nároku na stránce **Pravidla způsobilosti**. K plánu kompenzace lze také přiřadit sadu úrovní, které se uplatní pro určité kombinace typu úlohy a pracovní funkce, které jste definovali v pravidlu nároku. (Tyto funkce platí jak pro fixní, tak pro variabilní kompenzační plány.) Pokud však chcete použít pracovní funkce při nastavování pravidel nároku pro správu kompenzací, doporučujeme nastavit pracovní funkce ještě před nastavením prací. V následující tabulce jsou uvedeny některé příklady pracovních funkcí.
 
 | Práce           | Pracovní funkce         |
 |---------------|----------------------|

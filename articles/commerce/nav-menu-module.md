@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055730"
+ms.locfileid: "4410919"
 ---
 # <a name="navigation-menu-module"></a>Modul navigační nabídky
 
@@ -44,12 +44,12 @@ Následující obrázek ukazuje příklad navigační nabídky pro web Fabrikam 
 
 | Název vlastnosti             | Hodnota                 | popis |
 |---------------------------|-----------------------|-------------|
-| Zdroj                  | **Maloobchod** , **Ruční vytváření** , **Maloobchod a ruční vytváření** | Hodnota **Maloobchod** umožňuje v navigační nabídce zobrazit hierarchii navigace sítě z centrály Commerce. Hodnota **Ruční vytváření** umožňuje doporučovat statické položky nabídky. Hodnota **Maloobchod a ruční vyváření** umožňuje kombinaci obou. |
+| Zdroj                  | **Maloobchod**, **Ruční vytváření**, **Maloobchod a ruční vytváření** | Hodnota **Maloobchod** umožňuje v navigační nabídce zobrazit hierarchii navigace sítě z centrály Commerce. Hodnota **Ruční vytváření** umožňuje doporučovat statické položky nabídky. Hodnota **Maloobchod a ruční vyváření** umožňuje kombinaci obou. |
 | Zobrazení obrázků kategorií | **Pravda** nebo **nepravda**    | Je-li povolena, tato vlastnost zobrazuje obrázky kategorií v navigační nabídce, jak je definováno v centrále Commerce pro každou kategorii. Přidáno v Comerce verze 10.0.14. |
 | Povolení navigační nabídky s více úrovněmi | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, navigační nabídka může zobrazit více úrovní navigační hierarchie. Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.15. |
 | Počet úrovní | Celé číslo | Tato vlastnost definuje počet úrovní, které se mají zobrazit, pokud je vlastnost **Povolit navigační nabídku s více úrovněmi** je nastavena na **Pravda**. |
 | Statická položka nabídky| Pole hodnot| Statické položky nabídky, které přidružují název položky nabídky s odkazem na stránku statického webu. Položky nabídky můžete vytvořit pod dalšími položkami nabídky. Ve výchozím nastavení se statické nabídky zobrazují na kořenové úrovni a budou přidány do hierarchie navigace sítě, pokud existuje. |
-| Zobrazení kořenové nabídky | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, lze navigační nabídku definovat pod vlastním kořenem (například **Koupit** ). Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.15. |
+| Zobrazení kořenové nabídky | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, lze navigační nabídku definovat pod vlastním kořenem (například **Koupit**). Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.15. |
 | Kořenová nabídka | řetězec | Tuto vlastnost lze použít k definování textu pro vlastní kořen, pokud je vlastnost **Zobrazit kořenovou nabídku** nastavena na **Pravda**. |
 
 Následující obrázek ukazuje příklad obrázku kategorie zobrazeného v navigační nabídce pro web Fabrikam.
