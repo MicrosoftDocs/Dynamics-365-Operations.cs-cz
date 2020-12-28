@@ -1,0 +1,51 @@
+---
+title: Vytvoření plánů zaměstnaneckých výhod pracovníka
+description: Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Human Resources vytvořit pro výběr plánů zaměstnaneckých výhod pro zaměstnance a potvrzení výběrů plánu zaměstnaneckých výhod.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-human-resources
+ms.technology: ''
+ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: 7521
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417583"
+---
+# <a name="create-worker-benefit-plans"></a><span data-ttu-id="cb59e-103">Vytvoření plánů zaměstnaneckých výhod pracovníka</span><span class="sxs-lookup"><span data-stu-id="cb59e-103">Create worker benefit plans</span></span>
+
+<span data-ttu-id="cb59e-104">Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Human Resources vytvořit pro výběr plánů zaměstnaneckých výhod pro zaměstnance a potvrzení výběrů plánu zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="cb59e-104">You can create worker benefit plans in Microsoft Dynamics 365 Human Resources to select benefit plans for employees and to confirm benefit plan selections.</span></span> <span data-ttu-id="cb59e-105">Zaměstnanci obvykle vybírají plány zaměstnaneckých výhod sami pomocí samoobsluhy zaměstnanců a potom výběr potvrdí správce zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="cb59e-105">Typically, employees select benefit plans themselves by using Employee self service, and then a benefits administrator confirms the selections.</span></span> 
+
+1. <span data-ttu-id="cb59e-106">V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **Plán zaměstnaneckých výhod**.</span><span class="sxs-lookup"><span data-stu-id="cb59e-106">In the **Benefits management** workspace, under **Plans**, select **Worker benefit plans**.</span></span>
+
+2. <span data-ttu-id="cb59e-107">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="cb59e-107">Select **New**.</span></span>
+
+3. <span data-ttu-id="cb59e-108">Zadejte hodnoty pro zbývající pole:</span><span class="sxs-lookup"><span data-stu-id="cb59e-108">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="cb59e-109">Pole</span><span class="sxs-lookup"><span data-stu-id="cb59e-109">Field</span></span> | <span data-ttu-id="cb59e-110">Popis</span><span class="sxs-lookup"><span data-stu-id="cb59e-110">Description</span></span> |
+   | --- | --- |
+   | <span data-ttu-id="cb59e-111">Období</span><span class="sxs-lookup"><span data-stu-id="cb59e-111">Period</span></span> | <span data-ttu-id="cb59e-112">Určuje období zaměstnaneckých výhod, které se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-112">Specifies a benefits period to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> <span data-ttu-id="cb59e-113">Vyberte například období, které jste vytvořili, s názvem 2015, a potvrďte všechny výběry pro přihlášení zaměstnaneckých výhod pro rok 2015.</span><span class="sxs-lookup"><span data-stu-id="cb59e-113">For example, select a period you created called 2015 to confirm all the benefit enrollment selections for 2015.</span></span> |
+   | <span data-ttu-id="cb59e-114">Pracovní podproces</span><span class="sxs-lookup"><span data-stu-id="cb59e-114">Worker</span></span> | <span data-ttu-id="cb59e-115">Určuje pracovníka, který se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-115">Specifies a worker to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-116">Právnická osoba</span><span class="sxs-lookup"><span data-stu-id="cb59e-116">Legal entity</span></span> | <span data-ttu-id="cb59e-117">Určuje právnickou osobu, která se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-117">Specifies a legal entity to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-118">Možnost pokrytí</span><span class="sxs-lookup"><span data-stu-id="cb59e-118">Coverage option</span></span> | <span data-ttu-id="cb59e-119">Určuje možnost krytí, která se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-119">Specifies a coverage option to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-120">Výchozí</span><span class="sxs-lookup"><span data-stu-id="cb59e-120">Default</span></span> | <span data-ttu-id="cb59e-121">Filtruje plány zaměstnaneckých výhod podle toho, zda se jedná o výchozí plán.</span><span class="sxs-lookup"><span data-stu-id="cb59e-121">Filters the benefit plans based on whether they are a default plan.</span></span> <span data-ttu-id="cb59e-122">Filtrováním plánů usnadníte výběr dílčích záznamů plánu tak, abyste mohli potvrdit dílčí sadu.</span><span class="sxs-lookup"><span data-stu-id="cb59e-122">Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-123">Stav</span><span class="sxs-lookup"><span data-stu-id="cb59e-123">Status</span></span> | <span data-ttu-id="cb59e-124">Filtruje plány zaměstnaneckých výhod na základě jejich stavu.</span><span class="sxs-lookup"><span data-stu-id="cb59e-124">Filters benefit plans based on their status.</span></span> <span data-ttu-id="cb59e-125">Filtrováním plánů usnadníte výběr dílčích záznamů plánu tak, abyste mohli potvrdit dílčí sadu.</span><span class="sxs-lookup"><span data-stu-id="cb59e-125">Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-126">Potvrzení</span><span class="sxs-lookup"><span data-stu-id="cb59e-126">Confirmation</span></span> | <span data-ttu-id="cb59e-127">Určuje stav potvrzení, který se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-127">Specifies the confirmation status to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-128">Zrušení</span><span class="sxs-lookup"><span data-stu-id="cb59e-128">Cancellation</span></span> | <span data-ttu-id="cb59e-129">Určuje stav zrušení, který se použije k filtrování plánů na pevné záložce Plány. Plány filtrujte, což vám pomůže vybrat dílčí sadu všech záznamů plánu, abyste mohli dílčí sadu potvrdit.</span><span class="sxs-lookup"><span data-stu-id="cb59e-129">Specifies the cancellation status to use to filter the plans in the Plans fast tab. Filter the plans to help you select a subset of all the plan records so that you can confirm the subset.</span></span> |
+   | <span data-ttu-id="cb59e-130">Filtr data platnosti</span><span class="sxs-lookup"><span data-stu-id="cb59e-130">Effective date filter</span></span> | <span data-ttu-id="cb59e-131">Filtruje plány podle toho, zda vyprší, jsou aktivní, nebo budou aktivní v budoucnu.</span><span class="sxs-lookup"><span data-stu-id="cb59e-131">Filters the plans based on whether they’re expired, active, or will be active in the future.</span></span> <span data-ttu-id="cb59e-132">Zaškrtněte políčka, která odpovídají plánům, které chcete zobrazit na pevné záložce Plány.</span><span class="sxs-lookup"><span data-stu-id="cb59e-132">Select the check boxes that correspond to the plans you want to see in the Plans fast tab.</span></span> |
+   | <span data-ttu-id="cb59e-133">Plány</span><span class="sxs-lookup"><span data-stu-id="cb59e-133">Plans</span></span> | <span data-ttu-id="cb59e-134">Pevná záložka plány obsahuje plány, které vyhovují zadanému kritériu filtru.</span><span class="sxs-lookup"><span data-stu-id="cb59e-134">The Plans fast tab contains the plans that meet the filter criteria you specified.</span></span> <span data-ttu-id="cb59e-135">Na každém řádku jsou zahrnuty odpovídající možnosti konfigurace, které byly nastaveny zaměstnancem HR a vybranými zaměstnanci.</span><span class="sxs-lookup"><span data-stu-id="cb59e-135">The relevant configuration options that were set by HR staff and the enrollment selections that were chosen by employees are included on each line.</span></span> <span data-ttu-id="cb59e-136">Pole Oprávněný určuje, zda existuje konflikt ověření s výběrem plánu.</span><span class="sxs-lookup"><span data-stu-id="cb59e-136">The Qualified field specifies whether there is a validation conflict with the plan selection.</span></span> |
+
+4. <span data-ttu-id="cb59e-137">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="cb59e-137">Select **Save**.</span></span>
