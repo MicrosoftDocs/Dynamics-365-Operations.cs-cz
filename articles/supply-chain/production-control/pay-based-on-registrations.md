@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 8e92759bd567a973a0d3bce7b8b99be1edbc0e1e
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826424"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423799"
 ---
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
@@ -169,7 +169,7 @@ Chcete-li nakonfigurovat systém tak, aby jasně rozlišoval standardní pracovn
 
 ### <a name="exclude-overtime-from-the-standard-time"></a>Vyloučit přesčas ze standardního času
 
-Na stránce **Parametry výpočtu** vyberte **Přesčas** jako typ specifikace profilu a nastavte možnost **Placený čas**na **Ne**, jak je uvedeno v tomto poli.
+Na stránce **Parametry výpočtu** vyberte **Přesčas** jako typ specifikace profilu a nastavte možnost **Placený čas** na **Ne**, jak je uvedeno v tomto poli.
 
 | Reg. určení | Typ specifikace profilu | Výpočet   |     | Placeno         |     |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
@@ -363,7 +363,7 @@ V tomto poli jsou registrace pracovníka za daný den.
 | Přestávka (placená)              | 12:00 odp. | 12:30 odp. | 0.5  |
 | Registrace odchodu                 | 03:00 odp. | 03:00 odp. |      |
 
-V tomto příkladu je typ mzdy pro běžný čas nastaven na hodnotu **1201**a mzdová sazba **10** ve smlouvě o platbě. Placená přestávka má typ mzdy **1301** a mzdovou sazbu **8**. Po převodu registrací se vygenerují následující položky platby.
+V tomto příkladu je typ mzdy pro běžný čas nastaven na hodnotu **1201** a mzdová sazba **10** ve smlouvě o platbě. Placená přestávka má typ mzdy **1301** a mzdovou sazbu **8**. Po převodu registrací se vygenerují následující položky platby.
 
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz |
 |---------------|----------|-----------|------|
@@ -375,7 +375,7 @@ V tomto příkladu je typ mzdy pro běžný čas nastaven na hodnotu **1201**a m
 
 Hodinové náklady na aktivity projektu a výrobní úlohy lze nastavit tak, aby byly určeny buď podle mzdových sazeb, které jsou vypočteny v modulu Čas a docházka, nebo podle kategorií nákladů, které jsou definovány pro aktivity.
 
-Chcete-li nastavit nákladovou kategorii, vyberte **Řízení výroby** &gt; **Nastavení** &gt; **Provádění výroby** &gt; **Výchozí nastavení výrobní zakázky**a nastavte pole **Nákladová kategorie** buď na **Ano** nebo **Ne**.
+Chcete-li nastavit nákladovou kategorii, vyberte **Řízení výroby** &gt; **Nastavení** &gt; **Provádění výroby** &gt; **Výchozí nastavení výrobní zakázky** a nastavte pole **Nákladová kategorie** buď na **Ano** nebo **Ne**.
 
 - **Ne** – náklady se vypočítávají na základě mzdových sazeb, které jsou definovány pro typy registrace času a docházky.
 - **Ano** – náklady se vypočítávají na základě kategorií nákladů pro aktivity výroby a projektu.
@@ -406,7 +406,7 @@ Po převodu registrací, dojde ke generování následujících přenesených re
 | Přestávka (placená)          | 0,50 | 0,00                |
 | Registrace odchodu             | 0,00 | 0,00                |
 
-Výpočet nákladové ceny za hodinu pro placenou přestávku závisí na nastavení pro přímé mzdové náklady. Vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Parametry času a docházky**. Na kartě **nákladová cena** v části **přímé mzdové náklady**v poli **standardní čas** můžete vybrat **Ano**, **ne** nebo **přidělení**.
+Výpočet nákladové ceny za hodinu pro placenou přestávku závisí na nastavení pro přímé mzdové náklady. Vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Parametry času a docházky**. Na kartě **nákladová cena** v části **přímé mzdové náklady** v poli **standardní čas** můžete vybrat **Ano**, **ne** nebo **přidělení**.
 
 - **Ano** – tato hodnota se používá pro předchozí příklad. Náklady jsou přiděleny na výrobu nebo aktivitu projektu, která běží současně s aktivitou placené přestávky. V tomto příkladu je tato aktivita výrobní zakázka pro objednávku 4712. Jak vidíte, nákladová cena za hodinu placené přestávky je 0 (nula) a je přidělena úloze, která se spouští současně s přestávkou.
 
@@ -444,7 +444,7 @@ Můžete vytvořit plánovanou absenci pro pracovníky na stránce **Vytvořit p
 
 Úloha je založena na dotazu. Můžete tedy vytvořit plánovanou absenci u více pracovníků, jako jsou například pracovníci, kteří patří do stejné skupiny výpočtu. Pokud je plánovaná absence pro jednoho zaměstnance, lze zadat registrace ze stránky **Docházka** nebo **Pracovníci s registrací času**.
 
-- Chcete-li zadat registrace absencí ze stránky **Docházka**, vyberte **Čas a docházka** &gt; **Dotazy a sestavy** &gt; **Docházka** &gt; **Docházka**a poté vyberte **Registrace absencí**.
+- Chcete-li zadat registrace absencí ze stránky **Docházka**, vyberte **Čas a docházka** &gt; **Dotazy a sestavy** &gt; **Docházka** &gt; **Docházka** a poté vyberte **Registrace absencí**.
 - Chcete-li zadat registrace absencí ze stránky *<strong><em>Pracovníci registrace času</em></strong>*, vyberte <strong>Čas a docházka</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Pracovníci registrace času</strong> a poté na kartě <strong>Čas</strong> pod položkou <strong>Přiřazení času</strong> vyberte <strong>Registrace absencí</strong>.
 
 Můžete použít sestavu **Plánované absence** pro získání přehledu o plánovaných absencích pracovníků. Chcete-li otevřít tuto sestavu, vyberte **Čas a docházka** &gt; **Dotazy a sestavy** &gt; **Sestavy absencí** &gt; **Plánované absence**.
@@ -473,7 +473,7 @@ Pracovník označí příchod v 08:30. Vzhledem k tomu, že jeho plánovaný ča
 
 V časovém profilu lze konfigurovat typ registrace **Příchod** tak, aby existovala tolerance při pozdním příchodu zaměstnanců do práce. Například pokud nastavíte toleranci 5, bude pracovník vyzván k zadání kódu absence pouze v případě, že se přihlásí později než v 07:05 dop.
 
-V takovém případě vzhledem k tomu, že pracovník nemá správný důvod pro pozdní příchod do práce, vybere kód absence, definovaný pro nelegální absenci. Kód absence je považován za platný pro nelegální absenci, pokud nastavení pro srážku přesčasu je povoleno pro skupinu absencí, do níž náleží kód absence. Pro toto nastavení vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí**a vyberte zaškrtávací políčko **Odečíst přesčas**.
+V takovém případě vzhledem k tomu, že pracovník nemá správný důvod pro pozdní příchod do práce, vybere kód absence, definovaný pro nelegální absenci. Kód absence je považován za platný pro nelegální absenci, pokud nastavení pro srážku přesčasu je povoleno pro skupinu absencí, do níž náleží kód absence. Pro toto nastavení vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí** a vyberte zaškrtávací políčko **Odečíst přesčas**.
 
 V tomto poli se zobrazují registrace pracovníka pro daný den na stránce **Schválit** po výpočtu.
 
@@ -531,7 +531,7 @@ V tomto poli je výsledná položka mzdy po převodu registrací.
 
 Pracovník označí pozdní příchod v 09:30 a pak, aby vykompenzoval svůj pozdní příchod, pracuje přesčas a označí odchod v 17:00. Vzhledem k tomu, že pracovník přišel pozdě a dostal zaplaceno za delší práci, společnost nechce udělit pracovníkovi platbu za přesčas pro hodiny, které odpracoval mezi plánovaným odchodem v 03:30 odp. a jeho skutečným odepsáním odchodu v 05:00 odpoledne, i v případě, že toto období je definováno jako přesčas v časovém profilu.
 
-Chcete-li zpracovat tento scénář, lze nastavit kód absence pro snížení přesčasovéých hodin o hodiny neplatné absence, které má pracovník tentýž den. Vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí**a vyberte zaškrtávací políčko **Odečíst přesčas** pro odečtení přesčasu od hodin neplatné absence.
+Chcete-li zpracovat tento scénář, lze nastavit kód absence pro snížení přesčasovéých hodin o hodiny neplatné absence, které má pracovník tentýž den. Vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí** a vyberte zaškrtávací políčko **Odečíst přesčas** pro odečtení přesčasu od hodin neplatné absence.
 
 V tomto poli se zobrazují registrace pracovníka pro daný den na stránce **Schválit** po výpočtu.
 

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975457"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423498"
 ---
 # <a name="service-orders"></a>Servisní zakázky   
 
@@ -48,7 +48,7 @@ Servisní zakázky lze také vytvořit samostatně jejich přidružení ke smlou
 
 Následující scénář popisuje jinou situaci, kdy je užitečné nejdříve vytvořit servisní zakázku, která není přidružena k servisní smlouvě.
 
-Dispečerka společnosti přijme telefonickou žádost o servis výtahu. Neexistuje žádný čas nastavení servisní smlouvy a projektu služby. Proto dispečerka vytvoří servisní zakázku přímo ve formuláři **servisní zakázky** , připojí servisní zakázku ke stávajícímu projektu a vytvoří řádky servisní zakázky. Kvůli zaznamenání práce, která nesouvisí se servisní smlouvou, může dispečerka vytvořit vztah s úkolem nebo předmětem stávající servisní zakázky. Další informace naleznete v tématu [ruční vytvoření servisních zakázek](create-service-orders-manually.md) a [vytvoření vztahů servisních úloh](create-service-task-relations.md).
+Dispečerka společnosti přijme telefonickou žádost o servis výtahu. Neexistuje žádný čas nastavení servisní smlouvy a projektu služby. Proto dispečerka vytvoří servisní zakázku přímo ve formuláři **servisní zakázky**, připojí servisní zakázku ke stávajícímu projektu a vytvoří řádky servisní zakázky. Kvůli zaznamenání práce, která nesouvisí se servisní smlouvou, může dispečerka vytvořit vztah s úkolem nebo předmětem stávající servisní zakázky. Další informace naleznete v tématu [ruční vytvoření servisních zakázek](create-service-orders-manually.md) a [vytvoření vztahů servisních úloh](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Sledování průběhu servisních zakázek
 

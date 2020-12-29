@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979225"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423501"
 ---
 # <a name="service-object-groups"></a>Skupiny předmětů servisu 
 
@@ -53,7 +53,7 @@ Vytvoření skupin, kterým lze přiřazovat předměty servisu. Servisní před
 
 Pro vytvoření skupin předmětů servisu postupujte takto:
 
-1. Klikněte na **Správa servisu > Nastavení > Předměty servisu > Skupiny předmětů servisu** .
+1. Klikněte na **Správa servisu > Nastavení > Předměty servisu > Skupiny předmětů servisu**.
 
 2. Kliknutím na možnost **Nový** vytvořte novou skupinu předmětů servisu.
 

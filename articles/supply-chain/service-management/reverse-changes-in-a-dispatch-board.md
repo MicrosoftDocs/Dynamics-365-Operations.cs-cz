@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2d6593d0eb1949140b23bc1ea6bcb87b12193aa7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975553"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424033"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Stornovací změn na expediční vývěsce 
 
@@ -34,13 +34,13 @@ Toto téma popisuje způsob stornování neuložených změn, které provedete n
 
 Stornovat neuložené změny na expediční vývěsce můžete pomocí následujících kroků:
 
-1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .
+1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.
 
-2.  Ve formuláři **Expediční vývěska** zadejte relevantní informace v polích a klepněte na tlačítko **OK** . 
+2.  Ve formuláři **Expediční vývěska** zadejte relevantní informace v polích a klepněte na tlačítko **OK**. 
 
-3.  Chcete-li vrátit zpět poslední změnu, která není uložena, klepněte na tlačítko **Zpět** .
+3.  Chcete-li vrátit zpět poslední změnu, která není uložena, klepněte na tlačítko **Zpět**.
 
-4.  Chcete-li odvolat sérii změn, které ještě nebyly uloženy, klepejte na tlačítko **Zpět** , dokud nedojde k odvolání všech změn, které chcete zrušit.
+4.  Chcete-li odvolat sérii změn, které ještě nebyly uloženy, klepejte na tlačítko **Zpět**, dokud nedojde k odvolání všech změn, které chcete zrušit.
 
 ## <a name="see-also"></a>Viz také
 

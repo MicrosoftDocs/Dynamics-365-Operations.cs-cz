@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889068"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423795"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
 
@@ -192,7 +192,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
     > Chcete-li zkopírovat nastavení prognózy z jiného typu práce údržby, vyberte možnost **Kopírovat prognózu** a poté vyberte typ práce údržby, ze kterého se má nastavení zkopírovat.
 
 11. Klepnutím na tlačítko **Uložit** uložte změny.
-12. Zavřením stránky **Výchozí prognóza typu práce údržby**se vraťte na stránku **Výchozí nastavení typu práce údržby**.
+12. Zavřením stránky **Výchozí prognóza typu práce údržby** se vraťte na stránku **Výchozí nastavení typu práce údržby**.
 13. Vyberte **Kontrolní seznam údržby**.
 14. Na stránce **Kontrolní seznam výchozích nastavení typu práce údržby** můžete přidat řádky kontrolního seznamu údržby do vybraného výchozího typu práce údržby. Na záložce s náhledem **Řádky kontrolního seznamu údržby** možností **Nový** přidejte řádek kontrolního seznamu údržby.
 

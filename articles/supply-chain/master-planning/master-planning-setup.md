@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958786"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423627"
 ---
 # <a name="set-up-master-planning"></a>Nastavení hlavního plánování
 
@@ -72,22 +72,22 @@ Pro strategii s dvěma plány lze kontrolu data dodání použít s CTP. Při po
 
 ### <a name="setting-up-the-plans"></a>Nastavení plánů
 
-Plány můžete vytvářet na stránce **Hlavní plány** ( **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** ).
+Plány můžete vytvářet na stránce **Hlavní plány** (**Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**).
 
-Můžete určit, které plány budou použity pro statický plán a dynamický plán nastavením polí **Aktuální statický hlavní plán** a **Aktuální dynamický hlavní plán** na stránce **Parametry hlavního plánování** ( **Hlavní plánování \> Nastavení \> Parametry hlavního plánování** ). Chcete-li použít strategii s jedním plánem, vyberte stejný plán v polích **Aktuální statický hlavní plán** a **Aktuální dynamický hlavní plán** .
+Můžete určit, které plány budou použity pro statický plán a dynamický plán nastavením polí **Aktuální statický hlavní plán** a **Aktuální dynamický hlavní plán** na stránce **Parametry hlavního plánování** (**Hlavní plánování \> Nastavení \> Parametry hlavního plánování**). Chcete-li použít strategii s jedním plánem, vyberte stejný plán v polích **Aktuální statický hlavní plán** a **Aktuální dynamický hlavní plán**.
 
 ## <a name="types-of-planning-methods"></a>Typy metod plánování
 
 Ke spuštění hlavního plánování lze použít tři metody výpočtu: regeneraci a čistou změnu. Každá metoda vytváří při spuštění jiný plán.
 
-Metodu plánování lze zadat v dialogovém okně **Spuštění hlavního plánování** . Chcete-li otevřít toto dialogové okno, přejděte na **Hlavní plánování \> Hlavní plánování \> Spuštění \> Hlavní plánování** nebo vyberte **Spustit** v pracovním prostoru **Hlavní plánování** .
+Metodu plánování lze zadat v dialogovém okně **Spuštění hlavního plánování**. Chcete-li otevřít toto dialogové okno, přejděte na **Hlavní plánování \> Hlavní plánování \> Spuštění \> Hlavní plánování** nebo vyberte **Spustit** v pracovním prostoru **Hlavní plánování**.
 
 ### <a name="regeneration"></a>Obnovení
 
 Metoda plánování regenerace odstraní existující plánované objednávky, pokud nejsou potvrzeny. Generuje nové plánované objednávky na základě všech požadavků. Regenerace je jediná metoda plánování, která je k dispozici pro statické plány.
 
 - Změny v dodávce se vezmou v úvahu. Tyto změny zahrnují změny v prognóze.
-- Tato metoda respektuje kód disponibility **období** .
+- Tato metoda respektuje kód disponibility **období**.
 - Tato metoda podporuje funkci náhradního produktu (PI).
 
 ### <a name="net-change"></a>Čistá změna
@@ -95,7 +95,7 @@ Metoda plánování regenerace odstraní existující plánované objednávky, p
 Metoda plánování čisté změny generuje plánované objednávky za účelem pokrytí požadavků, které byly vytvořeny nebo změněny od posledního spuštění hlavního plánování. Při spuštění této metody nejsou změny v dodávce zvažovány. Systém nebere v úvahu žádné nové zásoby a dříve vytvořené plánované objednávky nejsou odstraněny, pokud již nejsou vyžadovány. Metoda plánování čisté změny běží rychleji než metoda regenerace. Je k dispozici pouze pro dynamické plány.
 
 - Data akcí a termíny budou aktualizovány pro všechny požadavky.
-- Tato metoda nerespektuje kód disponibility **období** .
+- Tato metoda nerespektuje kód disponibility **období**.
 - Tato metoda nesplňuje prognózu, a to ani v případě, že je vybrána v plánu.
 - Tato metoda nepodporuje funkci náhradního produktu (PI).
 
@@ -105,7 +105,7 @@ Minimalizovaná metoda plánování čisté změny generuje plánované objedná
 
 ## <a name="types-of-scheduling-methods"></a>Typy metod plánování
 
-U každého plánu na záložce s náhledem **Obecné** stránky **Hlavní plány** ( **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** ) je nutné vybrat metodu plánování, která se použije pro výrobní zakázky. Můžete naplánovat výrobu na úrovni operací a pracovního zařazení.
+U každého plánu na záložce s náhledem **Obecné** stránky **Hlavní plány** (**Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**) je nutné vybrat metodu plánování, která se použije pro výrobní zakázky. Můžete naplánovat výrobu na úrovni operací a pracovního zařazení.
 
 ### <a name="operations-scheduling"></a>Plánování operací
 
@@ -117,7 +117,7 @@ Plánování práce je podrobnější metodou plánování, kde každá operace 
 
 ## <a name="time-fences-in-days"></a>Ochranné doby ve dnech
 
-Pro každý plán můžete vybrat, jak daleko v budoucnosti musí být různé požadavky a další ohledy vypočítány podle hlavního plánování. Období je označováno jako *ochranná doba* . Chcete-li dosáhnout nejlepšího výkonu v hlavním plánování, doporučujeme upravit různá ochranná období tak, aby vyhovovala vašim obchodním požadavkům. Pro každý plán můžete na záložce s náhledem **Ochranná doba v dnech** na stránce **Hlavní plány** ( **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** ) najít ochranné doby.
+Pro každý plán můžete vybrat, jak daleko v budoucnosti musí být různé požadavky a další ohledy vypočítány podle hlavního plánování. Období je označováno jako *ochranná doba*. Chcete-li dosáhnout nejlepšího výkonu v hlavním plánování, doporučujeme upravit různá ochranná období tak, aby vyhovovala vašim obchodním požadavkům. Pro každý plán můžete na záložce s náhledem **Ochranná doba v dnech** na stránce **Hlavní plány** (**Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**) najít ochranné doby.
 
 > [!NOTE]
 > Ochranné doby určují, jak daleko v budoucnosti jsou vypočteny hlavním plánováním různé požadavky a další ohledy. Ochranná doba vybraná na této stránce přepíše ochrannou dobu definovanou ve skupině disponibility. To znamená, že nastavení možnosti ochranné doby na Ano a definování dnů přepíše ochrannou dobu definovanou ve skupině disponibility. Při nastavení na Ne se ochranná doba definuje ve skupině disponibility. Pokud nechcete nebo nepotřebujete použít možnost (například nechcete používat zprávy akcí), nastavte ji na hodnotu **Ano** a nastavte ochrannou dobu na **0** (nula) dní.
@@ -139,7 +139,7 @@ Nastavením možnosti **Zablokovat** na **Ano** můžete přepsat ochrannou dobu
 
 ### <a name="firming"></a>Potvrzení
 
-Ochranná doba potvrzení označuje časový horizont, ve kterém jsou plánované objednávky automaticky převedeny na nákupní objednávky a výrobní zakázky. Tento proces se také nazývá *automatické potvrzení plánovaných objednávek* .
+Ochranná doba potvrzení označuje časový horizont, ve kterém jsou plánované objednávky automaticky převedeny na nákupní objednávky a výrobní zakázky. Tento proces se také nazývá *automatické potvrzení plánovaných objednávek*.
 
 Nastavením možnosti **Potvrzení** na **Ano** můžete přepsat ochrannou dobu potvrzení definovanou pro položku během hlavního plánování. V tomto případě, zadejte počet dní, po kterých budou plánované nákupní objednávky a výrobní zakázky automaticky potvrzeny. Ochranná doba potvrzení se počítá od data hlavního plánování. K automatickému potvrzení plánované nákupní objednávky může dojít pouze tehdy, pokud je položka přidružena k dodavateli.
 
@@ -174,7 +174,7 @@ Pokud nemůže být plánovaná objednávka pro požadované datum splněna, je 
 
 ### <a name="approved-requisitions-time-fence"></a>Ochranná doba schválených žádanek
 
-Chcete-li vytvořit plánované objednávky pro poptávku žádanky, můžete nastavit hlavní plánování. Nastavte možnost **Zahrnout žádanky** na **Ano** na záložce s náhledem **Obecné** stránky **Hlavní plány** . Poté, když je účelem schválené žádanky doplnění, hlavní plánování vytvoří automaticky odpovídající plánovanou objednávku, která ho splní. Ke stanovení metody doplnění slouží zásady dodávek, které byly nastaveny pro položky ve vaší organizaci. Po vytvoření a schválení žádanky o doplnění nejsou vyžadovány žádné další akce.
+Chcete-li vytvořit plánované objednávky pro poptávku žádanky, můžete nastavit hlavní plánování. Nastavte možnost **Zahrnout žádanky** na **Ano** na záložce s náhledem **Obecné** stránky **Hlavní plány**. Poté, když je účelem schválené žádanky doplnění, hlavní plánování vytvoří automaticky odpovídající plánovanou objednávku, která ho splní. Ke stanovení metody doplnění slouží zásady dodávek, které byly nastaveny pro položky ve vaší organizaci. Po vytvoření a schválení žádanky o doplnění nejsou vyžadovány žádné další akce.
 
 Nastavením možnosti **Ochranná doba schválené žádanky** na **Ano** na záložce s náhledem dny **Ochranné doby ve dnech** můžete přepsat ochrannou dobu schválených žádanek, které je definováno pro položku během hlavního plánování. V tomto případě zadejte počet dnů v minulosti, po které má být poptávka ze schválených žádanek s účelem doplnění zahrnuta v hlavním plánování. Například můžete určit, aby byly uvažovány a plánovány pouze nesplněné poptávky po termínu ze schválených žádanek, které byly vytvořeny za posledních 10 dnů.
 
@@ -188,21 +188,21 @@ Nastavením možnosti **Klasifikace** na hodnotu **Ano** můžete určit, jak da
 
 Možnosti zpoždění pomáhají zaručit, že objednávky mají proveditelná plánovaná data. Na záložce s náhledem **Vypočtená zpoždění** stránky **Hlavní plány** jsou k dispozici následující možnosti:
 
-- **Zajistiti, aby plánované objednávky nebyly vytvořeny před datem spuštění hlavního plánování.** – tuto možnost nastavte na **Ano** , chcete-li zaručit, aby objednávky nebylo možné plánovat pro data v minulosti.
-- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných nákupních objednávek** ) – tuto možnost nastavte na **Ano** , chcete-li do požadavků přidat vypočítané zpoždění.
-- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných výrobních zakázek** ) – tuto možnost nastavte na **Ano** , chcete-li do požadavků přidat vypočítané zpoždění.
-- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných převodů** ) – tuto možnost nastavte na **Ano** , chcete-li do požadavků přidat vypočítané zpoždění.
-- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných kanbanů** ) – tuto možnost nastavte na **Ano** , chcete-li do požadavků přidat vypočítané zpoždění.
+- **Zajistiti, aby plánované objednávky nebyly vytvořeny před datem spuštění hlavního plánování.** – tuto možnost nastavte na **Ano**, chcete-li zaručit, aby objednávky nebylo možné plánovat pro data v minulosti.
+- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných nákupních objednávek**) – tuto možnost nastavte na **Ano**, chcete-li do požadavků přidat vypočítané zpoždění.
+- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných výrobních zakázek**) – tuto možnost nastavte na **Ano**, chcete-li do požadavků přidat vypočítané zpoždění.
+- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných převodů**) – tuto možnost nastavte na **Ano**, chcete-li do požadavků přidat vypočítané zpoždění.
+- **Přidat vypočtené zpoždění k požadovanému datu** (v rámci **plánovaných kanbanů**) – tuto možnost nastavte na **Ano**, chcete-li do požadavků přidat vypočítané zpoždění.
 
-Nastavíte-li možnost **Přidat vypočtené zpoždění k požadovanému datu** na **Ano** pro přidání zpoždění k požadavkům, bude systém zohledňovat kapacitu zdrojů a vytvoří proveditelné plánované objednávky. Přepočet dat plánované objednávky zvýší čas spuštění hlavního plánování. Pokud tedy nepotřebujete používat zpoždění, nastavte možnosti na **Ne** .
+Nastavíte-li možnost **Přidat vypočtené zpoždění k požadovanému datu** na **Ano** pro přidání zpoždění k požadavkům, bude systém zohledňovat kapacitu zdrojů a vytvoří proveditelné plánované objednávky. Přepočet dat plánované objednávky zvýší čas spuštění hlavního plánování. Pokud tedy nepotřebujete používat zpoždění, nastavte možnosti na **Ne**.
 
 ## <a name="positive-and-negative-days"></a>Kladné a záporné dny
 
-Kladné a záporné dny ovlivňují způsob, jakým hlavní plánování navrhuje plánované objednávky a akce. Kladné a záporné dny se nastavují na skupině disponibility položky pro danou položku. Můžete definovat různé skupiny disponibility a nastavit jejich parametry na stránce **Skupiny disponibility** ( **Hlavní plánování \> Nastavení \> Disponibilita \> Skupiny disponibility** ).
+Kladné a záporné dny ovlivňují způsob, jakým hlavní plánování navrhuje plánované objednávky a akce. Kladné a záporné dny se nastavují na skupině disponibility položky pro danou položku. Můžete definovat různé skupiny disponibility a nastavit jejich parametry na stránce **Skupiny disponibility** (**Hlavní plánování \> Nastavení \> Disponibilita \> Skupiny disponibility**).
 
 ### <a name="positive-days"></a>Kladné dny
 
-Kladné dny naznačují, jak daleko v budoucnu hlavní plánování zvažuje aktuální zásoby nebo příjmy ke splnění budoucí poptávky. Jsou-li například kladné dny nastaveny na **100** , lze aktuální zásoby použít k plnění poptávky v příštích 100 dnech. Pokud existuje objednávka 150 dní od aktuálního data, hlavní plánování vytvoří plánovanou objednávku pro splnění poptávky, i když množství na skladě pro položku může objednávku splnit. U položek s rychlým pohybem, které mají krátkou dobu realizace, pravděpodobně nebudete chtít použít množství na skladě pro objednávku, která je daleko v budoucnosti. V tomto rychlém případě bude aktuální množství na skladě rychle pryč a další objednávky lze provést do budoucna, aby splnily budoucí poptávku včas. což by bylo možné kvůli krátké době realizace položky.
+Kladné dny naznačují, jak daleko v budoucnu hlavní plánování zvažuje aktuální zásoby nebo příjmy ke splnění budoucí poptávky. Jsou-li například kladné dny nastaveny na **100**, lze aktuální zásoby použít k plnění poptávky v příštích 100 dnech. Pokud existuje objednávka 150 dní od aktuálního data, hlavní plánování vytvoří plánovanou objednávku pro splnění poptávky, i když množství na skladě pro položku může objednávku splnit. U položek s rychlým pohybem, které mají krátkou dobu realizace, pravděpodobně nebudete chtít použít množství na skladě pro objednávku, která je daleko v budoucnosti. V tomto rychlém případě bude aktuální množství na skladě rychle pryč a další objednávky lze provést do budoucna, aby splnily budoucí poptávku včas. což by bylo možné kvůli krátké době realizace položky.
 
 Kladné dny také ovlivní zprávy akce. Systém může například doporučit, abyste zvýšili plánovanou nákupní objednávku tak, aby zahrnovala poptávku, která spadá do počtu kladných dnů v budoucnosti. Pokud jsou kladné dny nastaveny na **100** a pokud pro položku existuje poptávka za 30 dní od aktuálního data, systém vytvoří plánovanou objednávku, která splní danou poptávku. Pokud existuje poptávka pro stejnou položku za 90 dnů od aktuálního data, systém doporučí, abyste zvýšili množství objednávky za 30 dnů od aktuálního data, takže objednávka též pokryje požadavek za 90 dnů. Pokud však existuje poptávka pro položku za 150 dní od aktuálního data, systém nedoporučí, abyste zvýšili množství objednávky, které bylo již naplánováno. Namísto toho bude vytvořena nová plánovaná objednávka.
 
@@ -212,7 +212,7 @@ Jako pravidlo jsou kladné dny nastaveny na číslo, které je mezi nejdelší d
 
 Záporné dny označují, jak budou povoleny opožděné příjmy položek. Představují počet dní, které jste ochotni čekat před objednáním nového doplnění v případě záporného množství zásob nebo nedostatku zásob. Záporné dny odpovídají na otázku: Máme vytvořit novou nákupní objednávku pro položku nebo máme použít existující nákup, přestože víme, že položka bude opožděná?
 
-Například máte prodejní objednávku pro položku 15 dní od aktuálního data. Máte také nákupní objednávku pro stejnou položku. Tato nákupní objednávka bude přijata za 20 dnů od aktuálního data. Chcete, aby systém vytvořil nákupní objednávku pro tuto prodejní objednávku nebo chcete použít existující objednávku, i když nemůžete splnit prodejní objednávku včas? Pokud jsou záporné dny nastaveny na méně než **5** , což znamená, že položka může být zpožděna maximálně o pět dní, systém vytvoří novou plánovanou nákupní objednávku pro splnění prodejní objednávky. Jsou-li záporné dny nastaveny na hodnotu vyšší než **5** , systém použije pro danou položku stávající objednávku.
+Například máte prodejní objednávku pro položku 15 dní od aktuálního data. Máte také nákupní objednávku pro stejnou položku. Tato nákupní objednávka bude přijata za 20 dnů od aktuálního data. Chcete, aby systém vytvořil nákupní objednávku pro tuto prodejní objednávku nebo chcete použít existující objednávku, i když nemůžete splnit prodejní objednávku včas? Pokud jsou záporné dny nastaveny na méně než **5**, což znamená, že položka může být zpožděna maximálně o pět dní, systém vytvoří novou plánovanou nákupní objednávku pro splnění prodejní objednávky. Jsou-li záporné dny nastaveny na hodnotu vyšší než **5**, systém použije pro danou položku stávající objednávku.
 
 Záporné dny také ovlivňují výkon hlavního plánování. Pokud jsou záporné dny nastaveny na vysoké číslo, bude vygenerováno mnoho zpráv akce.
 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6c16cf5bf1346cad7d5310a74b84c199ae2c71a4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986881"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423658"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Kombinovaný režim plánování – Kombinování zdrojů samostatné výroby, zpracování a štíhlé výroby
 
@@ -41,9 +41,9 @@ Rozlišovací schopnost zásad dodávek, které jsou použity při hlavním plá
 ## <a name="supply-policies"></a>Zásady zásobování
 Smíšený způsob plánování řídí způsob dodávání výrobku na základě toho, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\]). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  
 
-Zásady dodávek lze definovat na úrovni produktu nebo na libovolné rozlišovací schopnosti, která podporuje vaše požadavky. Rozlišovací schopnost zásady dodávek jsou definovány na stránce **Výchozí nastavení objednávky** .  
+Zásady dodávek lze definovat na úrovni produktu nebo na libovolné rozlišovací schopnosti, která podporuje vaše požadavky. Rozlišovací schopnost zásady dodávek jsou definovány na stránce **Výchozí nastavení objednávky**.  
 
-Zásady dodávek mohou být řízeny produktem, dimenzemi položek (konfigurace, barva a velikost), pracovištěm a skladem. Toto nastavení se provádí na stránce **Disponibilita položky** .  
+Zásady dodávek mohou být řízeny produktem, dimenzemi položek (konfigurace, barva a velikost), pracovištěm a skladem. Toto nastavení se provádí na stránce **Disponibilita položky**.  
 
 Výchozí typ objednávky určuje, jaké objednávky vygeneruje hlavní plánování.  
 
@@ -65,7 +65,7 @@ Spotřeba prostředků vyžaduje, aby sklad, jehož materiály se vybírají ze 
 Pro práci, která je nezávislá na zásadách zásobování, není nutné změnit informace v Kusovníku, pokud dojde ke změně dodávky. Pro změny ad hoc se aplikace Supply Chain Management ujistí, že materiály pocházejí ze správného skladu.
 
 ## <a name="process-manufacturing--the-production-type"></a>Procesní výroba – typ výroby
-Pro zajištění plné flexibility v kombinovaném režimu doporučujeme použít kusovníky výrobního typu pro všechny produkty. Potom můžete použít výrobní zakázky, kanbany, objednávky přenosu nebo nákupní objednávky k dodání produktu. Pro výrobní proces je nutné použít typ výroby **vzorce** , **souběžného produktu** , **vedlejšího produktu** nebo **položky plánování** . Kanbany a výrobní zakázky nelze použít pro tyto typy výroby.
+Pro zajištění plné flexibility v kombinovaném režimu doporučujeme použít kusovníky výrobního typu pro všechny produkty. Potom můžete použít výrobní zakázky, kanbany, objednávky přenosu nebo nákupní objednávky k dodání produktu. Pro výrobní proces je nutné použít typ výroby **vzorce**, **souběžného produktu**, **vedlejšího produktu** nebo **položky plánování**. Kanbany a výrobní zakázky nelze použít pro tyto typy výroby.
 
 
 

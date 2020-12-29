@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88e732f64b389acafee23427594225dfacda71cc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985761"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423766"
 ---
 # <a name="template-boms"></a>Kusovníky šablony    
 
@@ -111,9 +111,9 @@ Chcete-li používat kusovníky šablony, je nutné nastavit dvě číselné řa
 
 1.  Na stránce se seznamem **číselné řady** vytvořte číselné řady pro kusovníky šablony a čísla řádků historie Kusovníku. 
 
-2.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu** .
+2.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.
 
-3.  Klepněte na tlačítko **číselné řady** a vyberte kód číselné řady pro reference číselné řady, které jste vytvořili ve formuláři **číselné řady** .
+3.  Klepněte na tlačítko **číselné řady** a vyberte kód číselné řady pro reference číselné řady, které jste vytvořili ve formuláři **číselné řady**.
 
 4.  Uložte změny zavřením formuláře.
 

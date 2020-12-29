@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85e590322c75cfb2ad21236af56656061037a4b7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983518"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423954"
 ---
 # <a name="cost-objects"></a>Nákladové objekty
 
@@ -41,7 +41,7 @@ Stránka **Nákladové objekty** obsahuje všechny nákladové objekty, které j
 -   Skupina dimenze úložiště
 -   Skupina sledovací dimenze
 
-**Poznámka:** Nákladový objekt představuje nákladový prvek pouze typu **Přímý materiál** . Nákladový objekt a objektu zásob se liší způsobem, že nákladový objekt je definován podle dimenzí zásob, které jsou vybrány pro finanční zásoby. Například zboží má následující konfiguraci:
+**Poznámka:** Nákladový objekt představuje nákladový prvek pouze typu **Přímý materiál**. Nákladový objekt a objektu zásob se liší způsobem, že nákladový objekt je definován podle dimenzí zásob, které jsou vybrány pro finanční zásoby. Například zboží má následující konfiguraci:
 
 -   **Web:** Fyzické zásoby = Ano, Finanční zásoby = Ano
 -   **Sklad:** Fyzické zásoby = Ano, Finanční zásoby = Ne
@@ -63,7 +63,7 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
     -   Přijato
     -   Odečteno
     -   Zaúčtované mn.
--   Pole **Průměrné náklady na jednotku** je vypočítané. Hodnota se vypočítá jako podíl hodnoty pole **Hodnota** a hodnoty pole **Množství** .
+-   Pole **Průměrné náklady na jednotku** je vypočítané. Hodnota se vypočítá jako podíl hodnoty pole **Hodnota** a hodnoty pole **Množství**.
 
 **Poznámka:** Parametr **Zahrnovat fyzickou hodnotu** nemá žádný vliv na předchozí výpočty.
 

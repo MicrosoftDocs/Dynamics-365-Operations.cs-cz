@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5ebd65655db56ee1169f24dbc79fbfb5130f06a5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978814"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423767"
 ---
 # <a name="accruing-subscriptions"></a>Časové rozlišení předplatného 
 
@@ -52,23 +52,23 @@ Chcete-li časově rozlišovat výnosy, ověřte, zda jsou splněny následujíc
 
 ## <a name="account-setup"></a>Nastavení účtu
 
-V modulu **Project** musí být nastaveny účty **Časově rozlišený výnos – předplatné** a **NV – předplatné** .
+V modulu **Project** musí být nastaveny účty **Časově rozlišený výnos – předplatné** a **NV – předplatné**.
 
-Při zaúčtování časově rozlišeného výnosu se časově rozlišená částka připíše na stranu MD účtu **Nedokončená výroba - předplatné** a časově rozlišená částka na stranu Dal účtu **Časově rozlišené výnosy – předplatné** .
+Při zaúčtování časově rozlišeného výnosu se časově rozlišená částka připíše na stranu MD účtu **Nedokončená výroba - předplatné** a časově rozlišená částka na stranu Dal účtu **Časově rozlišené výnosy – předplatné**.
 
 ## <a name="set-up-accounts-for-accrual-of-subscription-revenue"></a>Nastavení účtů pro časové rozlišení výnosu předplatného
 
-1.  Klepněte na tlačítko **Řízení a účetnictví projektu** \> **Nastavení** \> **Zaúčtování** \> **Nastavení zaúčtování v hlavní knize** .
+1.  Klepněte na tlačítko **Řízení a účetnictví projektu** \> **Nastavení** \> **Zaúčtování** \> **Nastavení zaúčtování v hlavní knize**.
 
 2.  Klepněte na kartu **Výnosové účty** a vyberte **nedokončená výroba – předplatné** nebo **časově rozlišené výnosy – předplatné** k nastavení účtů.
 
 ## <a name="subscription-group-setup"></a>Nastavení skupiny předplatného
 
-Aby bylo možné časově rozlišovat výnosy předplatného, musí být zaškrtnuto políčko **časově rozlišené výnosy** . Nachází se ve formuláři **skupiny předplatného** skupiny, která je připojena k předplatnému. Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného** .
+Aby bylo možné časově rozlišovat výnosy předplatného, musí být zaškrtnuto políčko **časově rozlišené výnosy**. Nachází se ve formuláři **skupiny předplatného** skupiny, která je připojena k předplatnému. Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Povolení časového rozlišení výnosů u skupiny předplatného
 
-1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného** .
+1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
 
 ## <a name="periods"></a>Období
 
@@ -127,7 +127,7 @@ V následující tabulce získáte přehled o možných obdobích časového roz
 </tbody>
 </table>
 
-Nastavení fakturačního období je povinnou součástí celého nastavení skupiny předplatného. Můžete se rozhodnout, zda chcete také nastavit období časového rozlišení pro skupinu předplatného. Pokud nastavíte období časového rozlišení pro skupinu předplatného ,je toto období navrženo v poli **Kód období** . Toto pole se nachází ve formuláři **časově rozlišené výnosy předplatného** při časovém rozlišení výnosů předplatného. Období časového rozlišení je však nepovinná informace o skupině předplatného.
+Nastavení fakturačního období je povinnou součástí celého nastavení skupiny předplatného. Můžete se rozhodnout, zda chcete také nastavit období časového rozlišení pro skupinu předplatného. Pokud nastavíte období časového rozlišení pro skupinu předplatného ,je toto období navrženo v poli **Kód období**. Toto pole se nachází ve formuláři **časově rozlišené výnosy předplatného** při časovém rozlišení výnosů předplatného. Období časového rozlišení je však nepovinná informace o skupině předplatného.
 
 
 > [!NOTE]
@@ -140,9 +140,9 @@ Můžete určit počet transakcí hlavní knihy, které jsou vytvořeny při za�
 
 ## <a name="specify-the-level-of-posting-details-to-display-for-accrued-transactions"></a>Určení úrovně zobrazovaných podrobností o zaúčtování pro časově rozlišené transakce
 
-1.  Klikněte na **Řízení a účetnictví projektů** \> **Nastavení** \> **Parametry modulu Řízení a účetnictví projektu** .
+1.  Klikněte na **Řízení a účetnictví projektů** \> **Nastavení** \> **Parametry modulu Řízení a účetnictví projektu**.
 
-2.  Na kartě **Finanční** v poli **Faktura** vyberte **Celkem** nebo **řádek** .
+2.  Na kartě **Finanční** v poli **Faktura** vyberte **Celkem** nebo **řádek**.
 
 
 ## <a name="see-also"></a>Viz také

@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 73cdede298375bf61899babb41b1444afe3f20ff
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214405"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423894"
 ---
 # <a name="running-average-cost-price"></a>Průběžná průměrná nákladová cena
 
@@ -70,7 +70,7 @@ Pokud zobrazíte odhadovanou průběžnou průměrnou nákladovou cenu pro polo�
 Použití následujících postupů však pomáhá zabránit negativním množstvím, která umožňují scénář cenového nadhodnocení, pokud obchodní model tyto postupy povoluje:
 
 -   Pokud vyberete možnost **Zahrnovat fyzickou hodnotu** pro určitou položku, zrušte označení pole **Záporný fyzický sklad** na stránce **Skupiny modelů položek**.
--   Pokud *ne*vyberete možnost **Zahrnovat fyzickou hodnotu** pro určitou položku, zrušte označení možnosti **Záporný finanční sklad** na stránce **Skupiny modelů položek**.
+-   Pokud *ne* vyberete možnost **Zahrnovat fyzickou hodnotu** pro určitou položku, zrušte označení možnosti **Záporný finanční sklad** na stránce **Skupiny modelů položek**.
 
 Dále mějte dále na paměti, že maximální vyrovnání hodnoty fyzických zásob je omezeno počtem fyzických transakcí a rozdílem mezi fyzickými a finančními cenami. Dokud jsou všechny fyzické transakce dodatečně finančně aktualizovány, fyzická hodnota nemůže stoupnout na extrémní úroveň. A konečně, efekt nadhodnocení se dále výrazně snižuje v případě, že je kumulované vyrovnání rozprostřeno na více kusů na skladě namísto jednoho kusu.
 

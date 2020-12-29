@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 352d3b790da340102b7dbe116d9deeb2f3cbfc4e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424002"
 ---
 # <a name="create-service-object-relations"></a>Vytvoření vztahů předmětů servisu 
 
@@ -36,29 +36,29 @@ Toto téma popisuje postup vytvoření vztahů předmětů servisu pro servisní
 
 Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro servisní smlouvu:
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  V seznamu **Servisní smlouvy** vyberte existující servisní smlouvu nebo klepněte na tlačítko **Nová** a vytvořte novou servisní smlouvu.
 
-3.  Ve formuláři **Servisní smlouvy** v **podokně akcí** na kartě **Servisní smlouva** ve skupině **Vztahy** klikněte na **Objekty servisu** .
+3.  Ve formuláři **Servisní smlouvy** v **podokně akcí** na kartě **Servisní smlouva** ve skupině **Vztahy** klikněte na **Objekty servisu**.
 
 4.  Ve formuláři **Objekty servisu** klikněte na možnost **Nový** a vyberte předmět servisu pro tuto servisní smlouvu.
 
-5.  Chcete-li k servisní smlouvě připojit šablony kusovníku, klepněte na položku **Funkce** a vyberte **Připojit kusovník šablony** . Ve formuláři **Vybrat kusovník šablony** v poli **Kusovník šablony** vyberte šablonu. 
+5.  Chcete-li k servisní smlouvě připojit šablony kusovníku, klepněte na položku **Funkce** a vyberte **Připojit kusovník šablony**. Ve formuláři **Vybrat kusovník šablony** v poli **Kusovník šablony** vyberte šablonu. 
 
 ## <a name="create-a-service-object-relation-for-a-service-order"></a>Vytvoření vztahu předmětů služeb pro servisní objednávku
 
 Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro servisní objednávku:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  V seznamu **Servisní zakázky** vyberte existující servisní zakázku nebo vytvořte novou zakázku.
 
-3.  Ve formuláři **Servisní zakázky** v **podokně akcí** na kartě **Servisní zakázka** ve skupině **Vztahy** klikněte na **Objekty servisu** .
+3.  Ve formuláři **Servisní zakázky** v **podokně akcí** na kartě **Servisní zakázka** ve skupině **Vztahy** klikněte na **Objekty servisu**.
 
 4.  Ve formuláři **Objekty servisu** klikněte na možnost **Nový** a vyberte předmět servisu pro tuto servisní zakázku.
 
-5.  Chcete-li k servisní smlouvě připojit šablony kusovníku, klepněte na položku **Funkce** a vyberte **Připojit kusovník šablony** . Ve formuláři **Vybrat kusovník šablony** v poli **Kusovník šablony** vyberte šablonu. 
+5.  Chcete-li k servisní smlouvě připojit šablony kusovníku, klepněte na položku **Funkce** a vyberte **Připojit kusovník šablony**. Ve formuláři **Vybrat kusovník šablony** v poli **Kusovník šablony** vyberte šablonu. 
 
 
 ## <a name="see-also"></a>Viz také

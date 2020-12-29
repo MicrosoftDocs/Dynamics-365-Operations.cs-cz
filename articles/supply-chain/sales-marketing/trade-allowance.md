@@ -17,11 +17,11 @@ ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423769"
 ---
 # <a name="trade-allowance-management"></a>Správa obchodních náhrad
 
@@ -60,15 +60,15 @@ Smlouva o obchodních náhradách je motivační program, kdy jsou za výkonnost
 
 ### <a name="promotional-fund"></a>Finanční prostředky na promoakce
 
-Finanční prostředky přiřazené ke smlouvám o obchodních náhradách se zaznamenávají na stránce **Finanční prostředky** . Otevřete stránku **Finanční prostředky** , vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Finanční prostředky** \> **Finanční prostředky** .
+Finanční prostředky přiřazené ke smlouvám o obchodních náhradách se zaznamenávají na stránce **Finanční prostředky**. Otevřete stránku **Finanční prostředky**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Finanční prostředky** \> **Finanční prostředky**.
 
 ![Stránka Finanční prostředky](./media/trade-allowance-management-funds-page.png "Stránka Finanční prostředky")
 
 Na stránce **Finanční prostředky** můžete zobrazit podrobnosti o finančních prostředcích na promoakce.
 
-Na pevné záložce **Obecné** vidíte období, pro které jsou finanční prostředky platné, a její rozpočtovanou částku. Aby byly finanční prostředky přiděleny ke smlouvě na promoakci, pole **Stav** musí mít hodnotu **Schváleno** .
+Na pevné záložce **Obecné** vidíte období, pro které jsou finanční prostředky platné, a její rozpočtovanou částku. Aby byly finanční prostředky přiděleny ke smlouvě na promoakci, pole **Stav** musí mít hodnotu **Schváleno**.
 
-Pevná záložka **Odběratele** zobrazuje hierarchii odběratelů. Vyberte odběratele, kterým jsou určeny finanční prostředky, a přetáhněte je pod **Finanční prostředky odběratelů** . Tato pevná záložka rovněž zobrazuje, jak je rozdělena celková částka finančních prostředků.
+Pevná záložka **Odběratele** zobrazuje hierarchii odběratelů. Vyberte odběratele, kterým jsou určeny finanční prostředky, a přetáhněte je pod **Finanční prostředky odběratelů**. Tato pevná záložka rovněž zobrazuje, jak je rozdělena celková částka finančních prostředků.
 
 Pevná záložka **Položky** zobrazuje položky, které jsou součástí promoakce.
 
@@ -76,7 +76,7 @@ Pevná záložka **Položky** zobrazuje položky, které jsou součástí promoa
 
 Jakmile je hotova definici finančních prostředků, dalším krokem v plánování promoakce je registrace smluv na promoakce (známých jako smlouvy o obchodních náhradách), přidělení finančních prostředků a definování cílů výkonnosti pro jednotlivé výrobní události.
 
-Smlouvy o obchodních náhradách se zaznamenávají na stránce **Smlouvy o obchodních náhradách** . Chcete-li otevřít stránku **Smlouvy o obchodních náhradách** , vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách** .
+Smlouvy o obchodních náhradách se zaznamenávají na stránce **Smlouvy o obchodních náhradách**. Chcete-li otevřít stránku **Smlouvy o obchodních náhradách**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**.
 
 ![Stránka Smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-page.png "Stránka Smlouvy o obchodních náhradách")
 
@@ -84,17 +84,17 @@ Smlouvy o obchodních náhradách se zaznamenávají na stránce **Smlouvy o obc
 
 Výběrem **Záhlaví** přepnete na zobrazení Záhlaví.
 
-Na pevné záložce **Obecné** se nachází pole **Objednat do** a **Objednat od** , která definují období platnosti smlouvy. Stav schválení **Interní schválené** pro smlouvu označuje, že smlouva ještě není platná a nelze ji použít při zpracování prodejní objednávky.
+Na pevné záložce **Obecné** se nachází pole **Objednat do** a **Objednat od**, která definují období platnosti smlouvy. Stav schválení **Interní schválené** pro smlouvu označuje, že smlouva ještě není platná a nelze ji použít při zpracování prodejní objednávky.
 
 Část **Analýza** na pevné záložce **Obecné** obsahuje důležitá pole definující množství a náklady, které se použijí k vyhodnocení promoakce:
 
 - Pole **Základní jednotky** udávají množství produktů, které je nutno prodat vybraným odběratelům před použitím promoakce.
-- Hodnota **Vypočítané množství k expedici** se vypočítá na základě hodnoty **Procento zvednutí** , která představuje plánovaný cílový nárůst pro tuto promoakci.
+- Hodnota **Vypočítané množství k expedici** se vypočítá na základě hodnoty **Procento zvednutí**, která představuje plánovaný cílový nárůst pro tuto promoakci.
 - Pole **Náklady na obchodní náhrady** je vypočteno na základě množství různých událostí ve smlouvě o obchodních náhradách.
 
 Na pevné záložce **Odběratelé** v seznamu vlevo můžete vybrat a zobrazit skupiny odběratelů, které jsou uspořádány jako předdefinované hierarchie. Poté je možné vybrat celou hierarchii nebo konkrétní účty jako cíle pro smlouvu o náhradách.
 
-Na pevné záložce **Položky** , stejně jako na pevné záložce **Položky** na stránce **Finanční prostředky** , jsou do smlouvy přidány produkty za účelem přiřazení jejich prodejů k dohodnuté náhradě.
+Na pevné záložce **Položky**, stejně jako na pevné záložce **Položky** na stránce **Finanční prostředky**, jsou do smlouvy přidány produkty za účelem přiřazení jejich prodejů k dohodnuté náhradě.
 
 Na pevné záložce **Finanční prostředky** můžete zobrazit finanční prostředky na promoakce přidružené k této smlouvě. Můžete také zobrazit přidělení nákladů na událost smlouvy. Přidělení nákladů na událost ze 100 % znamená, že tato promoakce bude financována pouze z jednoho finančního prostředku. Eventuálně může smlouva na promoakci čerpat z několika finančních prostředků a použít stejné nebo rozdílové procento přidělení.
 
@@ -104,7 +104,7 @@ Dále volbou **Řádky** přepnete na zobrazení Řádky.
 
 Karta **Výrobní události** zobrazují typy událostí pokrytých smlouvou. Existují tři typy: zpětná fakturace, paušál a mimo fakturaci.
 
-Pokud vyberete výrobní událost a poté kartu **Částky** , vyhledají se podrobnosti události.
+Pokud vyberete výrobní událost a poté kartu **Částky**, vyhledají se podrobnosti události.
 
 ![Řádky smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-lines.png "Řádky smlouvy o obchodních náhradách")
 
@@ -112,26 +112,26 @@ V části **řádky obchodních náhrad** určíte rozsahy množství nebo čás
 
 V případě výrobní události pro typ **Zpětná fakturace** definuje horní část karty **Částky** pravidla, která se použijí na zpětnou fakturaci a podle kterých bude vygenerována a zaplacena. Pravidla mohou například vytyčit následující podmínky pro nárok na zpětnou fakturaci:
 
-- Je založena na datu vytvoření prodejní objednávky (hodnota **Typ data výpočtu** je **Vytvořeno** ).
-- Je vypočítána na základě částky řádky prodejní objednávky před slevou, nikoli na základě čisté částky, která zahrnuje slevy (Hodnota **Zdroj převzetí** je **Brutto** ).
-- Je založena na množství prodaných produktů, nikoli částce (hodnota **Typ zalomení řádku rabatu** je **Množství** ).
-- Je vypočítána pro období v měsíci (hodnota **Kumulovat prodeje za** je **Měsíc** ). 
-- Je vypořádána jako srážka, nikoli pomocí pohledávky (hodnota **Typ platby** je **Srážky u odběratele** ).
+- Je založena na datu vytvoření prodejní objednávky (hodnota **Typ data výpočtu** je **Vytvořeno**).
+- Je vypočítána na základě částky řádky prodejní objednávky před slevou, nikoli na základě čisté částky, která zahrnuje slevy (Hodnota **Zdroj převzetí** je **Brutto**).
+- Je založena na množství prodaných produktů, nikoli částce (hodnota **Typ zalomení řádku rabatu** je **Množství**).
+- Je vypočítána pro období v měsíci (hodnota **Kumulovat prodeje za** je **Měsíc**). 
+- Je vypořádána jako srážka, nikoli pomocí pohledávky (hodnota **Typ platby** je **Srážky u odběratele**).
 
 V případě výrobní události typu **Paušál** zobrazí karta **Částky** množství, které bude zaplaceno odběrateli ve formě odpočtu, když odběratel dosáhne konkrétní výkonnosti. Stav schválení **Otevřeno** označuje, že ještě nebyl vyplacen paušál.
 
-Aby bylo možné smlouvu použít pro prodejní objednávky, které vyhovují podmínkám smlouvy, musí být stav smlouvy **Potvrzeno** . 
+Aby bylo možné smlouvu použít pro prodejní objednávky, které vyhovují podmínkám smlouvy, musí být stav smlouvy **Potvrzeno**. 
 
 ## <a name="perform-sales-under-the-planned-merchandising-event-and-generate-bill-back-claims"></a>Realizace prodeje v rámci plánované výrobní události a generování nároků na zpětnou fakturaci
 
-Při vytvoření prodejní objednávky, která obsahuje řádky odpovídající požadavkům smlouvy můžete zobrazit související informace na stránce **Prodejní objednávka** výběrem položek **Řádka prodejní objednávky** \> **Zobrazit** \> **Podrobnosti o ceně** .
+Při vytvoření prodejní objednávky, která obsahuje řádky odpovídající požadavkům smlouvy můžete zobrazit související informace na stránce **Prodejní objednávka** výběrem položek **Řádka prodejní objednávky** \> **Zobrazit** \> **Podrobnosti o ceně**.
 
-Na stránce **Podrobnosti o ceně** a na pevné záložce **Rabaty** může úředník prodeje vidět zpětnou fakturaci z platné smlouvy o obchodních náhradách (je zobrazeno ID rabatového programu) a celkovou částku, která se použije na řádku. Tato částka je rovněž zobrazena v poli **Částka rabatu** v části **Odhad marže** stránky **Podrobnosti o ceně** .
+Na stránce **Podrobnosti o ceně** a na pevné záložce **Rabaty** může úředník prodeje vidět zpětnou fakturaci z platné smlouvy o obchodních náhradách (je zobrazeno ID rabatového programu) a celkovou částku, která se použije na řádku. Tato částka je rovněž zobrazena v poli **Částka rabatu** v části **Odhad marže** stránky **Podrobnosti o ceně**.
 
 Při zaúčtování prodejní faktury je generován odpovídající nárok na zpětnou fakturaci pro každý řádek faktury.
 
 > [!NOTE]
-> Chcete li zobrazit stránku **Podrobností o ceně** , na stránce **Parametry pohledávek** na kartě **Ceny** zaškrtněte políčko **Povolit podrobnosti o ceně** . I
+> Chcete li zobrazit stránku **Podrobností o ceně**, na stránce **Parametry pohledávek** na kartě **Ceny** zaškrtněte políčko **Povolit podrobnosti o ceně**. I
 
 ## <a name="process-claims-and-pass-them-as-deductions-to-ar"></a>Zpracování nároků a jejich předání mezi pohledávky jako odpočty
 
@@ -139,19 +139,19 @@ Další kroky procesu zpracování zpětné fakturace jsou kontrola, výpočet a
 
 Pracovní plocha zpětné fakturace označuje místo, kde vlastník smlouvy na promoakci pravidelně kontroluje a zpracovává generované pohledávky. Dále zde správce pohledávek převádí schválené nároky na odpočty nebo pravidelné platby, v závislosti na způsobu platby pohledávky.
 
-Na stránce **Pracovní plocha zpětné fakturace** můžete zkontrolovat řádky nároku. Pokud jsou nároky ve stavu **Přepočítat** , kvůli kumulativnímu účinku musí být přepočítány.
+Na stránce **Pracovní plocha zpětné fakturace** můžete zkontrolovat řádky nároku. Pokud jsou nároky ve stavu **Přepočítat**, kvůli kumulativnímu účinku musí být přepočítány.
 
 ### <a name="recalculate-claims"></a>Přepočítání nároků
 
-Chcete-li přepočítat nároky, v podokně akcí vyberte možnost **Kumulovat** . Potom v dialogovém okně **Kumulovat rabaty** vyberte odběratele.
+Chcete-li přepočítat nároky, v podokně akcí vyberte možnost **Kumulovat**. Potom v dialogovém okně **Kumulovat rabaty** vyberte odběratele.
 
 V důsledku přepočtu program vytvoří nové nároky pro částky, pomocí kterých upraví původní nároky na odpovídající částky pro jednotlivé jednotky. Jeden opravný nárok je generován pro každou jedinečnou kombinaci odběratele, položky, měny, měrné jednotky, dimenzí zásob, finančních dimenzí a skupiny DPH. Tyto opravné nároky mají stejnou referenci na prodejní objednávku a číslo faktury, jako nároky, které jsou upravovány (tzn. nároky, které byly původně vytvořeny z prodejního dokladu). Na rozdíl od původního nároku nemá opravný nárok hodnoty v polích, které popisují částky a množství na řádce prodejní objednávky.
 
-Po dokončení přepočtu se stav nároků změní na **Vypočteno** . Chcete-li schválit nároky, v podokně akcí vyberte možnost **Schválit** .
+Po dokončení přepočtu se stav nároků změní na **Vypočteno**. Chcete-li schválit nároky, v podokně akcí vyberte možnost **Schválit**.
 
 ### <a name="process-claims-and-pass-them-to-ar"></a>Zpracování nároků a jejich předání mezi pohledávky
 
-Nároky jsou nyní připraveny pro zpracování pohledávek. Chcete-li je zpracovat, v podokně akcí vyberte **Zpracovat** . 
+Nároky jsou nyní připraveny pro zpracování pohledávek. Chcete-li je zpracovat, v podokně akcí vyberte **Zpracovat**. 
 
 Při zpracování nároků se jejich stav změnil na **Označit** a to znamená, že díky zaúčtování deníku (deník, který je zaúčtován, je deník časového rozlišení rabatu, jak je uvedeno v parametrech pohledávek) došlo k následujícím událostem: 
 
@@ -161,30 +161,30 @@ Při zpracování nároků se jejich stav změnil na **Označit** a to znamená,
 
 Pro dokončení procesu musí úředník pro pohledávky zpracovat časové rozlišené odpočty jejich převedením do zůstatku odběratele jako dobropis (závazek). 
 
-Chcete-li zahájit úkol, v podokně akcí na stránce **Odběratel** vyberte **Shromáždit** \> **Vyrovnat transakce** . Poté na stránce **Vyrovnat transakce** vyberte **Funkce** \> **Program zpětné fakturace** . Tato stránka rabatu zobrazuje všechny dříve zpracované nároky na zpětnou fakturaci.
+Chcete-li zahájit úkol, v podokně akcí na stránce **Odběratel** vyberte **Shromáždit** \> **Vyrovnat transakce**. Poté na stránce **Vyrovnat transakce** vyberte **Funkce** \> **Program zpětné fakturace**. Tato stránka rabatu zobrazuje všechny dříve zpracované nároky na zpětnou fakturaci.
 
-Pokud chcete vytvořit dobropis, u všech řádek zaškrtněte políčko **Označit** a pak vyberte **Funkce** \> **Vytvořit dobropis** .
+Pokud chcete vytvořit dobropis, u všech řádek zaškrtněte políčko **Označit** a pak vyberte **Funkce** \> **Vytvořit dobropis**.
 
 Při vytvoření dobropisu je zaúčtován deník. (Zaúčtovaný deník je deník spotřeby pohledávek, jak je zadáno v parametrech pohledávek.) V důsledku byla skutečná částka závazku (Dal) přesunuta do zůstatku odběratele. Finančně tato situace znamená, že došlo k následujícím událostem:
 
 - Byl provedeno připsání na účet pohledávek odběratele.
 - Bylo provedeno odepsání z účtu časového rozlišení rabatu.
 
-Pokud chcete schválit výrobní událost typu **Paušál** , vyberte událost na stránce **Smlouvy o obchodních náhradách** a poté na kartě **Částka** vyberte **Schválit** .
+Pokud chcete schválit výrobní událost typu **Paušál**, vyberte událost na stránce **Smlouvy o obchodních náhradách** a poté na kartě **Částka** vyberte **Schválit**.
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>Vyrovnání splatného odpočtu a částečné platby odběratele pomocí pracovní plochy odpočtu
 
 Často v očekávání zpětných fakturací odběratel zvolí vybrané faktury s částečnou platbou. Chcete-li zabránit problémům s odsouhlasením plateb v budoucnu, úředník pro pohledávky zaregistruje tyto částečné platby jako odpočty během záznamu skutečných plateb odběratele. Poté lze na pracovní ploše odpočtu tyto odpočty odběratele snadno vyrovnat vůči částkám nároku, které jsou splatné ze strany společnosti.
 
-Pokud chcete částečnou platbu odběratele registrovat v deníku plateb, vyberte položky **Pohledávky** \> **Platby** \> **Deník plateb** a vytvořte nový deník plateb. Poté v podokně akcí zvolte **Odpočty** . Na stránce **Odpočet** stránce můžete vytvořit a sledovat částku, která byla zaplacena částečně.
+Pokud chcete částečnou platbu odběratele registrovat v deníku plateb, vyberte položky **Pohledávky** \> **Platby** \> **Deník plateb** a vytvořte nový deník plateb. Poté v podokně akcí zvolte **Odpočty**. Na stránce **Odpočet** stránce můžete vytvořit a sledovat částku, která byla zaplacena částečně.
 
 Manažer kolekce je nyní zodpovědný za vyrovnání otevřené transakce dobropisu a transakce částečné platby vůči sobě, což provede na pracovní ploše odpočtu.
 
-Pro správu odpočtů vyberte položky **Prodej a marketing** \> **Obchodní náhrady** \> **Odpočty** \> **Pracovní plocha odpočtu** . Horní část stránky obsahuje řádky, které představují částečné platby odběratele. Dolní části stránky obsahuje otevřené kreditní transakce odběratele. 
+Pro správu odpočtů vyberte položky **Prodej a marketing** \> **Obchodní náhrady** \> **Odpočty** \> **Pracovní plocha odpočtu**. Horní část stránky obsahuje řádky, které představují částečné platby odběratele. Dolní části stránky obsahuje otevřené kreditní transakce odběratele. 
 
 Pokud chcete vyrovnat odpočet vůči otevřené transakci, označte řádku odpočtu a poté na kartě Otevřené transakce označte stejnou řádku. V podokně akcí klikněte na položku Zachování > Spárovat.
 
-Stav původních nároků se nyní změní na **Dokončeno** .
+Stav původních nároků se nyní změní na **Dokončeno**.
 
 ## <a name="analyze-the-effectiveness-of-the-promotion-and-fund-consumption"></a>Analýza efektivity promoakcí a spotřeba finančních prostředků
 
@@ -196,7 +196,7 @@ Karta **Souhrn** zobrazuje celkové množství produktů, které byly prodány v
 
 Karta **Kredity zpětné fakturace** obsahuje podrobnosti o jednotlivých zpětných fakturacích připsaných ve prospěch odběratele.
 
-Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách** . V podokně akcí klikněte na položku **Analýza** .  
+Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**. V podokně akcí klikněte na položku **Analýza**.  
 
-Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách** . V podokně akcí klikněte na položku **Analýza** . 
+Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**. V podokně akcí klikněte na položku **Analýza**. 
 

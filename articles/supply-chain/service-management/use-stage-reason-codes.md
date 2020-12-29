@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 74594871e9eeed86ae2914d1e5a08c0af28ab643
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985087"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423967"
 ---
 # <a name="use-stage-reason-codes"></a>Použití kódů důvodu fáze 
 
@@ -44,7 +44,7 @@ Pokud jste určili, že má být kód důvodu vyžadován, je třeba zadat kód 
 
 ## <a name="set-up-reason-codes"></a>Nastavení kódů důvodů
 
-1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **kódy důvodu fáze** .
+1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **kódy důvodu fáze**.
 
 2.  Ve formuláři **Kódy důvodu fáze** klepněte na možnost **nový** k vytvoření nového kódz důvodu fáze.
 
@@ -56,15 +56,15 @@ Pokud jste určili, že má být kód důvodu vyžadován, je třeba zadat kód 
 
 ## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a>Vyžadování kódů důvodů při zrušení smlouvy o úrovni služeb
 
-1.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu** .
+1.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.
 
-2.  Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu zrušení** .
+2.  Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu zrušení**.
 
 ## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a>Vyžadování kódu důvodu při překročení časového limitu nastaveného smlouvou o úrovni služeb
 
-1.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu** .
+1.  Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.
 
-2.  Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu při překročení času** .
+2.  Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu při překročení času**.
 
 ## <a name="see-also"></a>Viz také
 

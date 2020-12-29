@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888898"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423916"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -88,7 +88,7 @@ V níže uvedených příkladech je skóre kritičnosti "2" a skóre úrovně sl
 | WO-00010817   | Dva dny od teď   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | Dva dny od teď   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Pracovní příkazy budou naplánovány v následujícím pořadí: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Pracovní příkazy budou naplánovány v následujícím pořadí: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Příklad 2:**
 
@@ -98,7 +98,7 @@ Pracovní příkazy budou naplánovány v následujícím pořadí: WO-000108**1
 | WO-00010817   | Dva dny od teď   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | Dva dny od teď   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Pokud je skóre úrovně služeb zvýšeno na 100 namísto 5, bude pořadí plánování následující: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Pokud je skóre úrovně služeb zvýšeno na 100 namísto 5, bude pořadí plánování následující: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Skóre hodnocení, která se týkají výpočtu, kteří pracovníci údržby mají pracovat na pracovních příkazech, jsou nastavena jako čísla, která se přidávají ke kalkulacím pracovníka údržby při plánování pracovních příkazů. Pracovník údržby s nejvyšším skóre je vybrán na pracovní příkaz. Zde je stručný popis hodnocení pracovníků údržby:
 

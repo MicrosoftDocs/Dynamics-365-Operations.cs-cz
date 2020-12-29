@@ -17,11 +17,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826687"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423882"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
@@ -72,7 +72,7 @@ Záložka s náhledem **Obecné** umožňuje konfigurovat každou z různých mo
 - **Použít skutečný čas registrace** – Nastavením na **Ano** nastavíte čas pro každou novou registraci tak, aby odpovídal přesnému času, kdy pracovník podal registraci. Nastavením na **Ne** se místo toho použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na **Ano**, pokud jste povolili možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník**, kde pracovníci často zůstávají přihlášeni delší dobu.
 - **Jeden pracovník** – Nastavte tuto možnost na **Ano**, pouze pokud jeden pracovník používá každé zařízení úkolového lístku, kde je tato konfigurace aktivní. Pokud je vybrána tato možnost, možnost **Zamknout zaměstnance** je automaticky nastavena na **Ano**. Tato možnost navíc odstraní požadavek (a schopnost) pracovníka přihlásit se pomocí ID znaku (nebo podobného ID). Místo toho se pracovník přihlásí do Supply Chain Management pomocí systémového uživatelského účtu propojeného s účtem *časově registrovaný pracovník* (z tabulky *pracovníci*) a současně se přihlásí k zařízení úkolového lístku jako tento pracovník.  Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](#assigned-users).
 - **Povolit pracovníkům nastavení osobních filtrů** – Nastavením této možnosti na **Ano** povolíte pracovníkům filtrovat práce, které se jim zobrazují v zařízení. Pracovník může upravit hodnoty pro kterékoli ze tří kritérií filtru: **Výrobní jednotka**, **Skupina prostředků** a **Prostředek**. V zařízení se zobrazí pouze práce naplánované na prostředcích, které odpovídají vybraným kritériím filtru. Můžete také přiřadit výchozí hodnoty kterémukoli nebo všem těmto kritériím a ty budou platit, i když tato možnost nebude vybrána.
-- **Povolit uzamčení dotykové obrazovky** – Nastavte tuto možnost na **Ano**, aby pracovníci mohli zamknout dotykovou obrazovku zařízení úkolového lístku, aby ji mohli dezinfikovat. Pokud je možnost povoleno, na přihlašovací stránku zařízení je přidáno tlačítko**Zamknout obrazovku kvůli dezinfekci**. Když pracovník vybere toto tlačítko, dotykový displej se dočasně zamkne, aby se zabránilo neúmyslnému zadání, a zobrazí se odpočítávání. Pracovník může nyní bezpečně vyčistit zařízení a obrazovku. Po skončení odpočítávání se dotykový displej automaticky znovu odemkne.
+- **Povolit uzamčení dotykové obrazovky** – Nastavte tuto možnost na **Ano**, aby pracovníci mohli zamknout dotykovou obrazovku zařízení úkolového lístku, aby ji mohli dezinfikovat. Pokud je možnost povoleno, na přihlašovací stránku zařízení je přidáno tlačítko **Zamknout obrazovku kvůli dezinfekci**. Když pracovník vybere toto tlačítko, dotykový displej se dočasně zamkne, aby se zabránilo neúmyslnému zadání, a zobrazí se odpočítávání. Pracovník může nyní bezpečně vyčistit zařízení a obrazovku. Po skončení odpočítávání se dotykový displej automaticky znovu odemkne.
 - **Doba trvání uzamčení obrazovky** – Když je povolena možnost **Povolit uzamčení dotykové obrazovky**, použijte tuto možnost pro zadání počtu sekund, po které by měla být dotyková obrazovka uzamčena pro dezinfekci. Doba trvání musí být mezi 5 a 120 sekundami.
 - **Výrobní jednotka** – Vyberte výrobní jednotku, která bude použita jako výchozí kritérium filtru pro seznam prací zobrazovaných každému pracovníkovi. Zařízení zpočátku zobrazí pouze práce naplánované na prostředky seskupené pod vybranou výrobní jednotkou. Pokud je povolena možnost **Povolit pracovníkům nastavení osobních filtrů**, pracovníci budou moci tuto hodnotu upravit, jinak bude tento filtr použit vždy, když je tato konfigurace zařízení aktivní.
 - **Skupina prostředků** – Vyberte skupinu prostředků, která bude použita jako výchozí kritérium filtru pro seznam prací zobrazovaných každému pracovníkovi. Zařízení zpočátku zobrazí pouze práce naplánované na prostředky seskupené pod vybranou skupinou prostředků. Pokud je povolena možnost **Povolit pracovníkům nastavení osobních filtrů**, pracovníci budou moci tuto hodnotu upravit, jinak bude tento filtr použit vždy, když je tato konfigurace zařízení aktivní.

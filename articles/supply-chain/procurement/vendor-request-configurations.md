@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: d78aa7c14ed2a2a5097f6f80c946c6ae4ed8bb94
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208079"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424027"
 ---
 # <a name="vendor-request-configurations"></a>Konfigurace oslovení dodavatele
 [!include [banner](../includes/banner.md)]
@@ -38,7 +38,7 @@ Ve výchozím nastavení je konfigurace dodavatele k dispozici ve formuláři Ko
 
 Nelze vybrat země/oblasti pro výchozí konfiguraci, takže nelze změnit část **Země/oblasti**.
 
-1. Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.
+1. Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée** a klikněte na **Konfigurace oslovení dodavatele**.
 2. Klikněte na kartu **Pole** pro nastavení stavu uvedených polích.
 3. Skryté (není viditelné)
 4. Zobrazené (viditelné, ale nepovinné)
@@ -48,7 +48,7 @@ Nelze vybrat země/oblasti pro výchozí konfiguraci, takže nelze změnit čás
 Lze také zadat potvrzovací zprávu, která se zobrazí po dokončení průvodce, a můžete přidat jeden nebo více dotazníků.
 
 ### <a name="create-a-vendor-configuration-for-a-specific-countryregion"></a>Vytvoření konfigurace dodavatele pro určitou zemi/oblast
-1.  Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.
+1.  Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée** a klikněte na **Konfigurace oslovení dodavatele**.
 2.  Klikněte na tlačítko **Nový** pro vytvoření nové konfigurace a zadejte název konfigurace.
 3.  Klikněte na tlačítko **Uložit**.
 4.  Otevřete kartu **Země/oblasti** a vyberte zemi nebo oblast, pro kterou má být použita konfigurace.

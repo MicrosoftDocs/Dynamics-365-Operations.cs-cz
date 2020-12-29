@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 778aec1dc5a819a2f5903aa48d12670c0d0b6694
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983640"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423639"
 ---
 # <a name="create-service-objects"></a>Tvorba předmětů servisu  
 
@@ -31,8 +31,8 @@ ms.locfileid: "3983640"
    
 Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony. 
 
-1. Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Servisní objekty** .
-2. Na panelu nástrojů klepněte na tlačítko **Nové** .
+1. Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Servisní objekty**.
+2. Na panelu nástrojů klepněte na tlačítko **Nové**.
 3. Do pole **Popis** zadejte popis objektu. 
 4. V poli **Skupina předmětů servisu** vyberte skupinu, do které předmět patří. 
 5. Volitelné: Vyberte položku pro řádek objektu služby nebo vyberte šablonu kusovníku (BOM).

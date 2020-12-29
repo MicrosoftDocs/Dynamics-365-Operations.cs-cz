@@ -16,11 +16,11 @@ ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3346415"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423549"
 ---
 # <a name="subcontracting"></a>Subdodávka
 
@@ -74,7 +74,7 @@ Tento postup vás provede nastavením uvolněného produktu D8100, „Nalakovan�
 
     ![Pole typ postupu nastavené na Dodavatel na kartě Obecné](./media/subcontract05_general-tab.png)
 
-7. Zvolte kartu**Požadavky na zdroj**.
+7. Zvolte kartu **Požadavky na zdroj**.
 
     Možnosti budou použity pro vyhledání použitelného zdroje během plánování výroby. U operace 20 (Cbnt CtSc) 20 si všimněte, že je nutný zdroj s dvěma možnostmi **Lakování** a **Lakované skříňky**.
 

@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dcc155a7fe5ca16e7543bf5917dbedadef987b62
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826711"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423899"
 ---
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
@@ -49,7 +49,7 @@ V následujícím diagramu jsou uvedeny tyto čtyři odchylky, které způsobuj�
 Výrobní odchylky lze analyzovat prostřednictvím stránky **Odchylka** nebo sestavy **Výrobní odchylka**. Uvedené možnosti umožňují prohlédnout si podrobné odchylky podle položek a provozních prostředků, nebo podle nákladové skupiny. Zásady pro rozúčtování nákladů v parametrech zásob určují, zda budou odchylky sledovány podle nákladových skupin. Můžete také použít možnost zobrazení **jediná**, **více** a **celkem** umožňující zobrazení souhrnných odchylek. Informace o podrobných odchylkách představují způsob, jak porozumět zdroji každé odchylky. Chcete-li předjímat odchylky před dokončením výrobní zakázky, analyzujte podrobné informace, které jsou k dispozici v sestavě **Odhad a výpočet nákladů**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Analýza nákladů pro aktuální výrobní zakázky
-Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomocí těchto sestav můžete analyzovat náklady pro výrobní aktivity se sestavou. Informace jsou zobrazeny pouze pro aktuální výrobní zakázky se stavem **Spuštěno** nebo**Ohlášeno jako dokončené**.
+Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomocí těchto sestav můžete analyzovat náklady pro výrobní aktivity se sestavou. Informace jsou zobrazeny pouze pro aktuální výrobní zakázky se stavem **Spuštěno** nebo **Ohlášeno jako dokončené**.
 
 -   **Materiály v procesu**− V této sestavě jsou uvedeny transakce výdejky, které jsou uvedeny v sestavě v porovnání s aktuálními výrobními zakázkami k aktuálnímu datu transakce. Sestava uvádí vydané množství komponenty a částku nákladů pro každou transakci. Použijte kritéria výběru pro jednu položku komponenty. Například chcete-li vytisknout údaje o vydaném množství komponenty v porovnání s odpovídajícími výrobními zakázkami. Vydané množství není aktualizováno podle množství, které je hlášeno jako dokončené pro nadřazenou položku. Z tohoto důvodu mohou být skutečná množství surovin v daném procesu nadhodnocena.
 -   **Nedokončená práce**− V této sestavě jsou uvedeny transakce postupu (nebo transakce úloh), které jsou uvedeny v sestavě v porovnání s aktuálními výrobními zakázkami k aktuálnímu datu transakce. Sestava udává hodiny, částku a množství (množství bez závad i chybové množství), které je uvedeno pro jednotlivé transakce. Také obsahuje informace, jako je například číslo operace, ID operace nebo provozní prostředek. V sestavě je také uvedena celková doba a částka pro všechny transakce oproti výrobní zakázce a množství označené jako dokončené.

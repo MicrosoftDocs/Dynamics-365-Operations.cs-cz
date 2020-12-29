@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 41497eacae8bcc0e57df8062f7f318a39c2b4909
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978766"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423996"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Přidání adresy do servisní zakázky    
 
@@ -38,13 +38,13 @@ Můžete také vytvořit adresy nové. Ve výchozím stavu je nová adresa přev
 
 Pro přidání adresy do servisní zakázky postupujte takto:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Otevřete servisní zakázku, pro kterou chcete vytvořit adresu.
 
-3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví** .
+3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.
 
-4.  Na pevné záložce **adresy** klepněte na tlačítko **přidání adresy** .
+4.  Na pevné záložce **adresy** klepněte na tlačítko **přidání adresy**.
 
 5.  Ve formuláři **Nová adresa** zadejte jedinečný název adresy a vyplňte zbývající pole. 
     
@@ -59,15 +59,15 @@ Pro přidání adresy do servisní zakázky postupujte takto:
 
 Pro přidání alternativní adresy do servisní zakázky postupujte takto:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Otevřete servisní zakázku, pro kterou chcete zadat alternativní adresu.
 
-3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví** .
+3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.
 
-4.  Na pevné záložce **adresy** klepněte na tlačítko **Jiná adresa** .
+4.  Na pevné záložce **adresy** klepněte na tlačítko **Jiná adresa**.
 
-5.  Ve formuláři **výběr adresy** v poli **typ záznamu** vyberte **servisní zakázky** .
+5.  Ve formuláři **výběr adresy** v poli **typ záznamu** vyberte **servisní zakázky**.
 
 6.  Vyberte adresu a klepnutím na tlačítko **OK** ji zkopírujete do servisní zakázky.
 

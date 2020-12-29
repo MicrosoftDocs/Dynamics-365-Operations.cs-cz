@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a94f2df6a4ddb71a29ff951dfe38618ac7762783
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975481"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423504"
 ---
 # <a name="service-status-and-progress-field-interaction"></a>Interakce stavu služby a pole postupu 
 
@@ -88,9 +88,9 @@ Ve formuláři **Servisní zakázky** je v poli **Postup** v záhlaví servisní
 </table>
 
 
-Pokud mají všechny řádky stav **Vytvořeno** , bude servisní zakázka ve stavu zpracování. Pokud mají některé řádky stav nebo , bude servisní zakázka nadále ve stavu **Zrušeno** nebo **Zaúčtováno** .
+Pokud mají všechny řádky stav **Vytvořeno**, bude servisní zakázka ve stavu zpracování. Pokud mají některé řádky stav nebo , bude servisní zakázka nadále ve stavu **Zrušeno** nebo **Zaúčtováno**.
 
-Pokud jsou všechny řádky servisní zakázky označeny hodnotou **Zaúčtováno** , bude průběžným stavem zakázky stav **Zaúčtováno** . Pokud mají některé řádky stav **Zaúčtováno** a jiné stav **Zrušeno** , bude průběžným stavem nadále stav **Zaúčtováno** .
+Pokud jsou všechny řádky servisní zakázky označeny hodnotou **Zaúčtováno**, bude průběžným stavem zakázky stav **Zaúčtováno**. Pokud mají některé řádky stav **Zaúčtováno** a jiné stav **Zrušeno**, bude průběžným stavem nadále stav **Zaúčtováno**.
 
   
 

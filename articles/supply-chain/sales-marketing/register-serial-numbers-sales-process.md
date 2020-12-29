@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982178"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423740"
 ---
 # <a name="working-with-serialized-items"></a>Práce se serializovanými položkami
 
@@ -34,9 +34,9 @@ Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listec
 
 Mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání. V těchto situacích můžete registrovat sériová čísla v dodacích listech nebo fakturách při prodeji produktu. Při pozdějším vrácení produktu lze trasovat produkt k faktuře k určení, zda jste produkt prodali a zda jsou služby nebo záruční povinnosti platné.
 
-Je nutné povolit sériová čísla pro prodejní proces ve skupině sledovací dimenze výběrem možnosti **Aktivní v prodejním procesu** na stránce **Sledování – skupiny dimenze** . V modulu Supply Chain Management jsou následně provedeny následující události:
--   Na pevné kartě **Sériová čísla** se vybere možnost **Kontrola sériového čísla** . Je-li tato možnost vybrána, je nutné zaregistrovat jedno sériové číslo pro každou položku dodacího listu nebo faktury.
--   Všechny vybrané položky ve skupině sledovací dimenze pro sériová čísla jsou prázdná s výjimkou možnosti **Povolen prázdný výdej** . Můžete vybrat možnost **Povolen prázdný výdej** pro obejití kontroly sériového čísla a povolit produktům balení a fakturaci bez registrace sériových čísel.
+Je nutné povolit sériová čísla pro prodejní proces ve skupině sledovací dimenze výběrem možnosti **Aktivní v prodejním procesu** na stránce **Sledování – skupiny dimenze**. V modulu Supply Chain Management jsou následně provedeny následující události:
+-   Na pevné kartě **Sériová čísla** se vybere možnost **Kontrola sériového čísla**. Je-li tato možnost vybrána, je nutné zaregistrovat jedno sériové číslo pro každou položku dodacího listu nebo faktury.
+-   Všechny vybrané položky ve skupině sledovací dimenze pro sériová čísla jsou prázdná s výjimkou možnosti **Povolen prázdný výdej**. Můžete vybrat možnost **Povolen prázdný výdej** pro obejití kontroly sériového čísla a povolit produktům balení a fakturaci bez registrace sériových čísel.
 
 ## <a name="when-do-i-register-serial-numbers-during-the-sales-process"></a>Kdy zaregistruju sériová čísla v prodejním procesu?
 Registrovat sériová čísla můžete na dodacím listu prodejní objednávky nebo na faktuře. Při přípravě faktury serializovanou položku dodávané společně s dodacím listem můžete vybrat, která sériová čísla dodacího listu vyfakturovat. Počet zaregistrovaných sériových čísel nesmí překročit množství dodávaných položek. Pokud vytváříte dílčí fakturu, můžete vybrat méně serializovaných položek, než bylo zaregistrováno na dodacím listu. Při tisku dodacího listu nebo faktury budou zahrnuta sériová čísla, které byla zaregistrována.
@@ -51,7 +51,7 @@ Nastavení pro skupinu sledování dimenze, která je přiřazena k produktu ur�
 Můžete vytvořit dílčí faktury a dodací listy pro prodejní objednávky a zaregistrovat sériová pouze čísla položek, které tyto faktury a dodací listy obsahují. Pokud chcete vytvořit dílčí fakturu a máte více než jeden dodací list pro prodejní objednávku, můžete vytvořit sériová čísla z více než jednoho dodacího listu. Může však existovat pouze jeden dodací list, kde nejsou uvedena žádná sériová čísla. Například pokud máte tři dodací listy a každý dodací list obsahuje dvě serializované položky, nelze vytvořit dílčí fakturu pro jednu položku z každého dodacího listu.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Co dělat, když je sériové číslo nečitelné?
-Jestliže sériové číslo nelze přečíst nebo skenovat, můžete vytvořit prázdný řádek pro položku klepnutím na tlačítko **Nečitelné** na stránce **Sériová čísla** . Jakmile pořadové číslo bude k dispozici později, můžete aktualizovat fakturu nebo dodací list. Další informace naleznete v části "Je možné opravit nebo změnit sériová čísla, která jsou zaregistrována pro prodejní objednávku?".
+Jestliže sériové číslo nelze přečíst nebo skenovat, můžete vytvořit prázdný řádek pro položku klepnutím na tlačítko **Nečitelné** na stránce **Sériová čísla**. Jakmile pořadové číslo bude k dispozici později, můžete aktualizovat fakturu nebo dodací list. Další informace naleznete v části "Je možné opravit nebo změnit sériová čísla, která jsou zaregistrována pro prodejní objednávku?".
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Mohu opravit nebo změnit sériová čísla registrovaná pro prodejní objednávku?
 Ano, sériová čísla můžete opravit, pokud jsou splněny následující podmínky:

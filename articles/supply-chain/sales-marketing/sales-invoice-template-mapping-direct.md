@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423688"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synchronizace záhlaví a řádků prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales
 
@@ -40,7 +40,7 @@ Toto téma se věnuje šablonám a základní úloze, které se používají k s
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty** a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 K synchronizaci hlaviček a řádků prodejních faktur z aplikace Supply Chain Management do aplikace Sales slouží následující šablona a základní úkoly:
 
@@ -83,7 +83,7 @@ Před synchronizací prodejních faktur je důležité aktualizovat následujíc
 
 ### <a name="setup-in-sales"></a>Nastavení v aplikaci Sales
 
-Přejděte na **Nastavení** > **Správa** > **Nastavení systému** > **Prodej**a ujistěte se, že se používají následující nastavení:
+Přejděte na **Nastavení** > **Správa** > **Nastavení systému** > **Prodej** a ujistěte se, že se používají následující nastavení:
 
 - Možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
 - Pole **Metoda výpočtu slevy** je nastaveno na **Položka řádku**.
@@ -105,7 +105,7 @@ Přejděte na **Nastavení** > **Správa** > **Nastavení systému** > **Prodej*
 - Ujistěte se, že existuje požadované mapování pro položku **Měrná jednotka**.
 - Ujistěte se, že existuje požadovaná mapa hodnot pro **SalesUnitSymbol** v aplikaci Supply Chain Management.
 
-    Hodnota šablony, která má mapu hodnoty, je definována pro o**SalesUnitSymbol** do **Quantity\_UOM**.
+    Hodnota šablony, která má mapu hodnoty, je definována pro o **SalesUnitSymbol** do **Quantity\_UOM**.
 
 ## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 

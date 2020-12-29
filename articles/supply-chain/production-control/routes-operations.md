@@ -20,11 +20,11 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989234"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423624"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -38,7 +38,7 @@ Toto téma obsahuje obecné informace o postupech a operacích. Postup definuj
 Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Supply Chain Management se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 
 - **Postup** – definuje strukturu výrobního procesu. Jinými slovy určuje pořadí operací.
-- **Operace** – určuje konkrétní pojmenovaný krok v postupu, například **Sestavení** . Stejná operace se může vyskytovat v několika různých postupech a může mít přiřazena různá čísla.
+- **Operace** – určuje konkrétní pojmenovaný krok v postupu, například **Sestavení**. Stejná operace se může vyskytovat v několika různých postupech a může mít přiřazena různá čísla.
 - **Vztah operace** – definuje provozní vlastnosti operace, například čas nutný k přípravě a provedení operace, nákladové kategorie, parametry spotřeby a požadavky na prostředky. Pomocí vztahů operací lze provozní vlastnosti operací měnit podle postupu, ve kterém se operace používá, nebo produktů, které se vyrábějí.
 - **Verze postupu** – definuje postup, který se používá k výrobě produktu nebo varianty produktu. Verze postupů umožňují průběžné úpravy nebo opakované používání postupů u různých produktů. Umožňují také použití různých postupů k výrobě stejného produktu. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je místo nebo vyráběné množství.
 
@@ -106,7 +106,7 @@ Ve vztahu operace se uchovávají následující provozní vlastnosti operace:
 - Požadavky na prostředek
 - Poznámky a pokyny
 
-Pro jednu operaci můžete definovat více vztahů operace. Každý vztah operace však platí pro jednu konkrétní operaci a obsahuje vlastnosti, které jsou specifické pro postup, uvolněný produkt nebo sadu uvolněných produktů, které se vztahují ke skupině položek. Stejné operace lze tedy použít v několika postupech, které mají různé provozní vlastnosti. Pokud použijete standardní operace, které mají stejné provozní vlastnosti, budete moci snáze udržovat hlavní data (bez ohledu na používaný postup a vyráběný produkt). Rozsah vztahu operace je definován pomocí vlastností **Kód položky** , **Vztah položky** , **Kód postupu** a  **Vztah postupu** , jak je znázorněno v následující tabulce.
+Pro jednu operaci můžete definovat více vztahů operace. Každý vztah operace však platí pro jednu konkrétní operaci a obsahuje vlastnosti, které jsou specifické pro postup, uvolněný produkt nebo sadu uvolněných produktů, které se vztahují ke skupině položek. Stejné operace lze tedy použít v několika postupech, které mají různé provozní vlastnosti. Pokud použijete standardní operace, které mají stejné provozní vlastnosti, budete moci snáze udržovat hlavní data (bez ohledu na používaný postup a vyráběný produkt). Rozsah vztahu operace je definován pomocí vlastností **Kód položky**, **Vztah položky**, **Kód postupu** a **Vztah postupu**, jak je znázorněno v následující tabulce.
 
 | Kód položky | Vztah položky         | Kód postupu | Vztah postupu   | Rozsah vztahu operace                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,24 +126,24 @@ Vztahy operací zajišťují při definici postupů velkou flexibilitu. Možnost
 
 ### <a name="modifying-product-specific-routes"></a>Změna postupů u konkrétních produktů
 
-Po otevření stránky **Postup** na stránce **Podrobnosti o uvolněném produktu** se zobrazí verze postupu spojené s vybraným uvolněným produktem. V tomto kontextu zobrazuje aplikace Supply Chain Management u každé operace provozní vlastnosti ze vztahu operace, který co nejlépe odpovídá verzi postupu. Seznam operací obsahuje vlastnosti **Kód položky** a  **Kód postupu** ze vztahu operace. Je tedy možné určit, který vztah operace se zobrazuje.  
+Po otevření stránky **Postup** na stránce **Podrobnosti o uvolněném produktu** se zobrazí verze postupu spojené s vybraným uvolněným produktem. V tomto kontextu zobrazuje aplikace Supply Chain Management u každé operace provozní vlastnosti ze vztahu operace, který co nejlépe odpovídá verzi postupu. Seznam operací obsahuje vlastnosti **Kód položky** a **Kód postupu** ze vztahu operace. Je tedy možné určit, který vztah operace se zobrazuje.  
 
-Na stránce **Postup** můžete změnit provozní vlastnosti operace, například operační čas nebo nákladové kategorie. Provedené změny se uloží do vztahu operace specifického pro postup a uvolněný produkt, na které se aktuální verze postupu odkazuje. Pokud zobrazený vztah operace není specifický pro daný postup a uvolněný produkt, systém před uložením změn vytvoří jeho kopii. Tato kopie *je* specifická pro daný postup a uvolněný produkt. Její změny tedy neovlivní jiné postupy nebo uvolněné produkty. Chcete-li si ověřit, který vztah operace se na stránce **Postup** upravuje, podívejte se na pole **Kód položky** a  **Kód postupu** .  
+Na stránce **Postup** můžete změnit provozní vlastnosti operace, například operační čas nebo nákladové kategorie. Provedené změny se uloží do vztahu operace specifického pro postup a uvolněný produkt, na které se aktuální verze postupu odkazuje. Pokud zobrazený vztah operace není specifický pro daný postup a uvolněný produkt, systém před uložením změn vytvoří jeho kopii. Tato kopie *je* specifická pro daný postup a uvolněný produkt. Její změny tedy neovlivní jiné postupy nebo uvolněné produkty. Chcete-li si ověřit, který vztah operace se na stránce **Postup** upravuje, podívejte se na pole **Kód položky** a **Kód postupu**.  
 
-Operaci, která je specifická pro daný postup a uvolněný produkt, můžete také ručně vytvořit pomocí funkce **Kopírovat a upravit vztah** .  
+Operaci, která je specifická pro daný postup a uvolněný produkt, můžete také ručně vytvořit pomocí funkce **Kopírovat a upravit vztah**.  
 
 > [!NOTE]
-> Pokud k postupu přidáte novou operaci na stránce **Postup** , vztah operace se vytvoří pouze pro aktuální uvolněný produkt. Jestliže tedy postup slouží také k výrobě jiných uvolněných produktů, nebude pro ně existovat žádný platný vztah operace a postup nebude pro tyto uvolněné produkty možné dále používat.
+> Pokud k postupu přidáte novou operaci na stránce **Postup**, vztah operace se vytvoří pouze pro aktuální uvolněný produkt. Jestliže tedy postup slouží také k výrobě jiných uvolněných produktů, nebude pro ně existovat žádný platný vztah operace a postup nebude pro tyto uvolněné produkty možné dále používat.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Udržování vztahů operací u jednotlivých postupů
 
 Při otevření stránky **Podrobnosti postupu** ze stránky seznamu **Postupy** se zobrazí seznam všech vztahů operací, které platí pro vybraný postup. Pomocí něj lze snadno ověřit, které provozní vlastnosti se používají pro jednotlivé produkty. Můžete upravit výchozí hodnoty vlastností i hodnoty vlastností specifické pro daný produkt.  
 
-Když přidáte nový vztah operace na stránce **Podrobnosti postupu** , pole **Kód postupu** se automaticky nastaví na hodnotu **Postup** a pole **Vztah postupu** pole se nastaví na číslo aktuálního postupu.
+Když přidáte nový vztah operace na stránce **Podrobnosti postupu**, pole **Kód postupu** se automaticky nastaví na hodnotu **Postup** a pole **Vztah postupu** pole se nastaví na číslo aktuálního postupu.
 
 ### <a name="maintaining-operation-relations-per-operation"></a>Udržování vztahů operací u jednotlivých operací
 
-Na stránce **Operace** můžete otevřít stránku **Vztahy operací** . Na této stránce můžete upravit všechny vztahy určité operace. Je možné upravit i vztahy operací, které obsahují výchozí hodnoty.  
+Na stránce **Operace** můžete otevřít stránku **Vztahy operací**. Na této stránce můžete upravit všechny vztahy určité operace. Je možné upravit i vztahy operací, které obsahují výchozí hodnoty.  
 
 Pokud váš podnik používá standardní operace a provozní parametry jsou u všech produktů a procesů stejné, můžete pomocí stránky **Vztahy operací** pohodlně spravovat výchozí provozní vlastnosti těchto operací.
 
@@ -153,10 +153,10 @@ V některých případech musí aplikace Supply Chain Management najít provozn
 
 Když aplikace Supply Chain Management hledá nejrelevantnější vztah operace u uvolněného produktu, upřednostňuje přitom vztah, který odpovídá ID položky uvolněného produktu, před vztahem, který odpovídá ID skupiny položek. Vztah operace, který odpovídá ID skupiny položek, má zase přednost před výchozím vztahem operace. Hledání se provádí v tomto pořadí:
 
-1.  **Kód položky**=**Tabulka** a  **Vztah položky**=&lt;ID položky&gt;
-2.  **Kód položky**=**Skupina** a  **Vztah položky**=&lt;ID skupiny položek&gt;
+1.  **Kód položky**=**Tabulka** a **Vztah položky**=&lt;ID položky&gt;
+2.  **Kód položky**=**Skupina** a **Vztah položky**=&lt;ID skupiny položek&gt;
 3.  **Kód položky**=**Vše**
-4.  **Kód postupu**=**Postup** a  **Vztah postupu**=&lt;ID postupu&gt;
+4.  **Kód postupu**=**Postup** a **Vztah postupu**=&lt;ID postupu&gt;
 5.  **Kód postupu**=**Vše**
 6.  **Konfigurace**=&lt;ID konfigurace&gt;
 7.  **Konfigurace**=
@@ -202,7 +202,7 @@ Podle toho, jaké jsou požadavky vašeho podnikání, se vám může podařit z
 
 U mnoha systémů je v postupu nutné určit provozní prostředek nebo skupinu prostředků, které mají provádět operace. V aplikaci Supply Chain Management však lze definovat požadavky, které musí provozní prostředek splňovat, aby ho bylo možné při operaci použít. Konkrétní provozní prostředky nebo skupiny prostředků, které se mají použít, tedy není nutné určovat, dokud nebude operace ve skutečnosti naplánována. Tato funkce je užitečná zvláště v případě, že máte k dispozici mnoho strojů pracovníků, kteří mohou provádět stejnou operaci.  
 
-Můžete například určit, že operace vyžaduje provozní prostředek typu **Stroj** , který má funkci **Lisování** s kapacitou 20 tun. Plánovací modul pak při plánování operace podle těchto požadavků vybere konkrétní provozní prostředek nebo skupinu prostředků. Díky tomu, že stačí zadat pouze tyto požadavky a není nutné spojovat celou operaci s konkrétním strojem, máte mnohem větší flexibilitu. Údržba při přesouvání nebo přidávání nových prostředků je navíc snazší.  
+Můžete například určit, že operace vyžaduje provozní prostředek typu **Stroj**, který má funkci **Lisování** s kapacitou 20 tun. Plánovací modul pak při plánování operace podle těchto požadavků vybere konkrétní provozní prostředek nebo skupinu prostředků. Díky tomu, že stačí zadat pouze tyto požadavky a není nutné spojovat celou operaci s konkrétním strojem, máte mnohem větší flexibilitu. Údržba při přesouvání nebo přidávání nových prostředků je navíc snazší.  
 
 Další informace o různých typech požadavků na prostředky a jejich použití naleznete v tématu Požadavky na prostředky u operací a [Schopnosti prostředku](resource-capabilities.md).
 
@@ -220,20 +220,20 @@ Pokud váš podnik používá při výrobě standardizované operace a parametr
 
 Pokud navíc vyjádříte požadavky na prostředky ve smyslu schopností a dovedností a vytvoříte postupy nezávislé na pracovištích, budete moci snížit množství práce spojené s údržbou podnikových procesů na minimum.  
 
-Při použití tohoto přístupu budete operační časy a další vlastnosti sledovat a nastavovat především na stránce **Vztahy operací** .
+Při použití tohoto přístupu budete operační časy a další vlastnosti sledovat a nastavovat především na stránce **Vztahy operací**.
 
 ### <a name="resource-specific-process-times"></a>Časy zpracování u konkrétních prostředků
 
 Pokud v rámci požadavků na prostředky u operace nezadáte provozní prostředek nebo skupinu prostředků, mohou použitelné prostředky pracovat při různých rychlostech. Čas nutný ke zpracování operace se tedy může lišit. Tento problém můžete vyřešit tak, že způsob výpočtu času zpracování určíte pomocí pole **Vzorec** ve vztahu operace. Existují tyto možnosti:
 
 - **Standardní** – (výchozí možnost) výpočet použije pouze pole ze vztahu operace a vynásobí zadaný operační čas objednaným množstvím.
-- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita** .
+- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita**.
 - **Dávka** – kapacita dávky se počítá s využitím informací ze vztahu operace. Počet dávek (a tím i čas zpracování) lze pak vypočítat na základě objednaného množství.
-- **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka** . Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
+- **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka**. Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
 
 ### <a name="set-up-route-groups"></a>Nastavit skupiny postupů
 
-Můžete definovat skupiny postupů a nastavení pro typy postupu nebo práce v části **Řízení výroby > Nastavení > Postupy > Skupiny postupu** . Pro každý typ postupu/práce ve skupině postupů můžete zvolit nebo vyčistit následující možnosti:
+Můžete definovat skupiny postupů a nastavení pro typy postupu nebo práce v části **Řízení výroby > Nastavení > Postupy > Skupiny postupu**. Pro každý typ postupu/práce ve skupině postupů můžete zvolit nebo vyčistit následující možnosti:
 
 - **Aktivace** - Tuto možnost vyberte pro povolení výpočtů a k plánování pro vybraný typ úlohy a přijetí zpětné vazby na práci, když spustíte plánování úloh. Chcete-li povolit typ práce, musíte vybrat tuto možnost a poté vybrat další možnosti pro daný typ práce. Pokud není aktivace zvolena, tento typ práce nebude povolen bez ohledu na výběr dalších možností. 
 - **Správa práce** - Zaškrtnutím tohoto políčka zahrnete typ práce do správy práce při spuštění plánování práce. 
@@ -246,7 +246,7 @@ Mezi typy prací lze najít Překrytí. Překrytí umožňuje, aby různé prác
 Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa práce, Pracovní doba a Kapacita) nemá žádný vliv na skupinu postupů. 
 
 > [!NOTE]
-> Při upgradu verze může dojít k následující chybě: **V průběhu vyvolání modulu plánování došlo k chybě modulu CLR.** . Zobrazí-li se tato chyba, přejděte na stránku **Skupiny postupu** a pro všechny postupy, u kterých jste aktivovali **Překrytí** , zrušte možnosti **Správa práce** , **Pracovní doba** a **Kapacita** . 
+> Při upgradu verze může dojít k následující chybě: **V průběhu vyvolání modulu plánování došlo k chybě modulu CLR.**. Zobrazí-li se tato chyba, přejděte na stránku **Skupiny postupu** a pro všechny postupy, u kterých jste aktivovali **Překrytí**, zrušte možnosti **Správa práce**, **Pracovní doba** a **Kapacita**. 
 
 ## <a name="additional-resources"></a>Další zdroje
 

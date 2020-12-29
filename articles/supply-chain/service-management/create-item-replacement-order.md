@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e63c175d12cac91648cb57a3f41d1769e81d57af
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830092"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424005"
 ---
 # <a name="create-an-item-replacement-order"></a>Vytvoření objednávky náhrady položky 
 
@@ -38,7 +38,7 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
 
 2.  Vytvořte novou objednávku vratky nebo vyberte objednávku vratky ze seznamu a otevřete formulář **Vratka - číslo RMA: %1, %2**.
 
-3.  Klepněte na tlačítko **řádek vratky**a poté vyberte **náhradní součást**.
+3.  Klepněte na tlačítko **řádek vratky** a poté vyberte **náhradní součást**.
 
 4.  Vyberte položku, kterou chcete nahradit vrácené zboží. Zadejte specifikace položky a klikněte na tlačítko **Použít**.
 

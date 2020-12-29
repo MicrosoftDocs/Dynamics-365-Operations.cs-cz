@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f7fac3ec6df53dcc6e459f62f76d856a11d294b6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423479"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Výpočty pro modely konfigurace produktu - často kladené dotazy
 
@@ -48,7 +48,7 @@ V následujícím výrazu je cílový atribut měření ubrusu:
 
 **Výraz:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
 
-**DecimalAttribute1** je délka stolu a **decimalAttribute2** je délka ubrusu. Výraz vrací hodnotu **True** do cílového atributu, pokud je **decimalAttribute2** větší nebo roven **decimalAttribute1** . V opačném případě se výraz vrací hodnotu **Nepravda** . Měření ubrusu je tedy přípustné, pokud je délka ubrusu rovná nebo překračuje délku stolu.
+**DecimalAttribute1** je délka stolu a **decimalAttribute2** je délka ubrusu. Výraz vrací hodnotu **True** do cílového atributu, pokud je **decimalAttribute2** větší nebo roven **decimalAttribute1**. V opačném případě se výraz vrací hodnotu **Nepravda**. Měření ubrusu je tedy přípustné, pokud je délka ubrusu rovná nebo překračuje délku stolu.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Které typy atributů lze nastavit jako cílové atributy?
 Všechny typy atributů, které jsou podporovány pro konfigurátor výrobku lze nastavit jako cílové atributy kromě textu bez pevného seznamu.
@@ -62,7 +62,7 @@ V následujícím výrazu je cíl pro výpočet délka napájecího kabelu a vst
 
 **Výraz:** \[If Color == "Green", 1.5, 1.0\]  
 
-Při konfiguraci položky je délka napájecího kabelu nastavena na **1.5** , zadáte-li **Green** jako hodnotu atributu barvy. Pokud zadáte libovolnou jinou barvu, délka je nastavena na **1,0** . Vzhledem k tomu, že jsou výpočty jednosměrné, však výpočet nenastaví hodnotu atributu barva na **Zelená** při zadání délky **1,5** .
+Při konfiguraci položky je délka napájecího kabelu nastavena na **1.5**, zadáte-li **Green** jako hodnotu atributu barvy. Pokud zadáte libovolnou jinou barvu, délka je nastavena na **1,0**. Vzhledem k tomu, že jsou výpočty jednosměrné, však výpočet nenastaví hodnotu atributu barva na **Zelená** při zadání délky **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Co se stane, má-li výpočet cílový atribut typu celé číslo, ale výpočet poskytne desetinné číslo?
 Pokud cílový atribut je celé číslo, ale výpočet vygeneruje desetinné číslo, bude vrácena pouze část „celé číslo“ z výsledného výpočtu. Desetinná část bude odebrána, a výsledek nebude zaokrouhlen. Například výsledek 12,70 se zobrazí jako 12.
@@ -76,10 +76,10 @@ Můžete přepsat hodnotu, která byla vypočtena pro cílový atribut, ledaže 
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Jak nastavím cílový atribut jako skrytý nebo jen pro čtení?
 Pokud chcete nastavit atribut jako skrytý nebo jen pro čtení, postupujte takto.
 
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu** .
-2.  Vyberte model konfigurace produktu a klepněte na panelu akcí na **Upravit** .
+1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu**.
+2.  Vyberte model konfigurace produktu a klepněte na panelu akcí na **Upravit**.
 3.  Na stránce **Podrobnosti modelu produktu s konfigurací založenou na omezeních** vyberte atribut, který má být použit jako cílový atribut.
-4.  Na pevné záložce **Atributy** vyberte **Skrytý** nebo **Jen pro čtení** .
+4.  Na pevné záložce **Atributy** vyberte **Skrytý** nebo **Jen pro čtení**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Může výpočet hodnoty přepsat mnou nastavené hodnoty?
 Č. Hodnoty, které jste nastavili při konfiguraci produktu, jsou hodnoty, které budou použity. Výpočet, ke kterému dochází při změně vstupních hodnot ve výpočtu, nemůže přepsat hodnoty, které zadáte pro konkrétní atribut.
@@ -99,8 +99,8 @@ Tato zpráva se zobrazí, když výpočet obsahuje chybu nebo v jedné nebo víc
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Proč se zobrazila chybová zpráva i v případě, že tento model výrobku byl úspěšně ověřen?
 Výpočty nejsou zahrnuty do ověření. Je nutné vyzkoušet model konfigurace produktu pro nalezení chyb při výpočtech. Následující postup umožňuje otestovat model konfigurace produktu.
 
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu** .
-2.  Vyberte model konfigurace produktu a klepněte na panelu akcí ve skupině **Spustit** klikněte na **Test** .
+1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu**.
+2.  Vyberte model konfigurace produktu a klepněte na panelu akcí ve skupině **Spustit** klikněte na **Test**.
 
 
 

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dd17cc0304d58d27afe2cededa5bc0b96557b5e9
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981980"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423902"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>Přehled přípravy a zřízení servisních smluv
 
@@ -50,11 +50,11 @@ Ze záhlaví servisní smlouvy lze dále kopírovat řádky servisní smlouvy ne
 
 Je možné pozastavit platnost servisních smluv a zastavit jednotlivé řádky servisní smlouvy.
 
-Jestliže v servisní smlouvě zaškrtnete políčko **Pozastavený** , nebude možné provádět následující akce:
+Jestliže v servisní smlouvě zaškrtnete políčko **Pozastavený**, nebude možné provádět následující akce:
 
 -    Vytvořit servisní zakázky automaticky nebo ručně ze servisní smlouvy.
 
-Jestliže na řádku servisní smlouvy zaškrtnete políčko **Zastaveno** , nebude možné provádět následující akce:
+Jestliže na řádku servisní smlouvy zaškrtnete políčko **Zastaveno**, nebude možné provádět následující akce:
 
 -    Vytvořit servisní zakázky automaticky nebo ručně z řádku servisní smlouvy.
 -    Kopírovat řádek servisní smlouvy do jiné servisní smlouvy nebo zakázky.

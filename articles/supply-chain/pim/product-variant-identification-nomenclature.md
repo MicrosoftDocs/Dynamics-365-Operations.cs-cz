@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 90c01e4281246d890ef888c56ca137f83e83741c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980476"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423583"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
@@ -32,7 +32,7 @@ ms.locfileid: "3980476"
 
 Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]. Nové názvosloví má cílený formát, který zahrnuje číslo základního produktu, rozměry aktivního produktu a textové oddělovače podle vašeho výběru. Můžete také vytvořit názvosloví pro názvy produktů. A konečně můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru.
 
-Nová názvosloví pro čísla variant produktu a názvy variant produktu umožňují zahrnout segmenty do identifikátorů variant produktu. Tyto segmenty mohou obsahovat číslo a název základního produktu, ID a názvy dimenzí produktu, číselné řady, konstanty textu a atributy. Tato funkce umožňuje rychle najít konkrétní variantu produktu, když vytváříte nákupní nebo prodejní objednávku. Názvosloví pro čísla variant produktu i názvy variant produktu se vytváří na stránce **Názvosloví produktu** . Tuto stránku otevřete tak, že kliknete na **Správa informací o produktu** &gt; **Nastavení** .
+Nová názvosloví pro čísla variant produktu a názvy variant produktu umožňují zahrnout segmenty do identifikátorů variant produktu. Tyto segmenty mohou obsahovat číslo a název základního produktu, ID a názvy dimenzí produktu, číselné řady, konstanty textu a atributy. Tato funkce umožňuje rychle najít konkrétní variantu produktu, když vytváříte nákupní nebo prodejní objednávku. Názvosloví pro čísla variant produktu i názvy variant produktu se vytváří na stránce **Názvosloví produktu**. Tuto stránku otevřete tak, že kliknete na **Správa informací o produktu** &gt; **Nastavení**.
 
 ## <a name="nomenclature-of-predefined-product-variants"></a>Názvosloví předdefinovaných variant produktu
 Varianty produktu jsou generovány pro hlavní produkty podle jedné ze tří technologií konfigurace:
@@ -41,7 +41,7 @@ Varianty produktu jsou generovány pro hlavní produkty podle jedné ze tří te
 -   Založené na omezeních
 -   Založené na dimenzi
 
-Každá varianta produktu má číslo a název a názvosloví identifikace variant produktu umožňuje vybrat segmenty, které budou zahrnuty do každého čísla nebo názvu varianty produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu** :
+Každá varianta produktu má číslo a název a názvosloví identifikace variant produktu umožňuje vybrat segmenty, které budou zahrnuty do každého čísla nebo názvu varianty produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**:
 
 -   Číslo základního produktu
 -   Název základního produktu
@@ -70,7 +70,7 @@ Tričko (TS1234) se vyrábí ve třech velikostech (S, M, L), čtyřech barvách
 V tomto případě bude číslo varianty produktu pro červené, malé polo tričko: TS1234-Red-Small-Polo.
 
 ## <a name="nomenclature-of-constraint-based-configurations"></a>Názvosloví konfigurací založených na dimenzích
-Pro konfigurace založené na omezeních můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu** :
+Pro konfigurace založené na omezeních můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**:
 
 -   Hodnota číselné řady
 -   Textová konstanta
@@ -94,7 +94,7 @@ Vytvoříte názvosloví konfigurace, které obsahuje následující segmenty:
 V takovém případě bude ID konfigurace dřevěného materiálu, který má délku 78, WoodAAA78.
 
 ## <a name="nomenclature-of-dimension-based-configurations"></a>Názvosloví konfigurací založených na dimenzích
-Pro konfigurace založené na dimenzích můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu** :
+Pro konfigurace založené na dimenzích můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**:
 
 -   Hodnota číselné řady
 -   Textová konstanta
@@ -185,7 +185,7 @@ Pokud se pokusíte automaticky nebo ručně vytvořit varianty produktu, kde jed
 
 ### <a name="constraint-based-configurations"></a>Konfigurace založené na omezeních
 
-V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné číslo varianty produktu ke konfiguraci. V takovém případě systém používá číselnou řadu pro konfigurační dimenzi jako číslo varianty produktu. V takovém případě bude zobrazena varovná zpráva. Této situaci se lze vyhnout tak, že do názvosloví zahrnete dostatek produktů, které pomohou zaručit jedinečná čísla variant produktu. Měli byste také zajistit, že je pro komponentu zapnutá možnost **Opakované použití** .
+V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné číslo varianty produktu ke konfiguraci. V takovém případě systém používá číselnou řadu pro konfigurační dimenzi jako číslo varianty produktu. V takovém případě bude zobrazena varovná zpráva. Této situaci se lze vyhnout tak, že do názvosloví zahrnete dostatek produktů, které pomohou zaručit jedinečná čísla variant produktu. Měli byste také zajistit, že je pro komponentu zapnutá možnost **Opakované použití**.
 
 ### <a name="dimension-based-configurations"></a>Konfigurace založené na dimenzích
 

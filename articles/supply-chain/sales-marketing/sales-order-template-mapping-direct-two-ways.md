@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424007"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management
 
@@ -40,7 +40,7 @@ Toto téma se věnuje šablonám a základním úlohám, které se používají 
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty** a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 Ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management slouží následující šablony a základní úkoly:
 
@@ -145,7 +145,7 @@ Před synchronizací prodejních objednávek je důležité aktualizovat násled
 
 ### <a name="setup-in-supply-chain-management"></a>Nastavení v Supply Chain Management
 
-- Přejděte na **Prodej a marketing** &gt; **Periodické úlohy** &gt; **Vypočítat celkové tržby**a nastavte úlohu, aby se spustila jako dávková úloha. Nastavte možnost **Vypočítat celkové částky prodejních objednávek** na **Ano**. Tento krok je důležitý, protože pouze prodejní objednávky s vypočítanými celkovými tržbami budou synchronizovány do aplikace Sales. Frekvence dávkové úlohy musí být ve shodě s frekvencí synchronizace prodejní objednávky.
+- Přejděte na **Prodej a marketing** &gt; **Periodické úlohy** &gt; **Vypočítat celkové tržby** a nastavte úlohu, aby se spustila jako dávková úloha. Nastavte možnost **Vypočítat celkové částky prodejních objednávek** na **Ano**. Tento krok je důležitý, protože pouze prodejní objednávky s vypočítanými celkovými tržbami budou synchronizovány do aplikace Sales. Frekvence dávkové úlohy musí být ve shodě s frekvencí synchronizace prodejní objednávky.
 
 Pokud také používáte integraci s pracovními příkazy, je nutné nastavit původ prodeje. Původ prodej slouží k odlišení prodejních objednávek v Supply Chain Management, které byly vytvořeny z pracovních objednávek v modulu Field Service. Když má prodejní objednávka původ typu **Integrace pracovního příkazu**, v záhlaví prodejní objednávky se zobrazí pole **Stav externí pracovní objednávky**. Původ prodeje zajišťuje, aby během synchronizace prodejní objednávky ze Supply Chain Management do Field Service byly odfiltrovány prodejních objednávek, které byly vytvořeny z pracovních příkazů ve Field Service.
 

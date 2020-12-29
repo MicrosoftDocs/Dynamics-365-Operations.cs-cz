@@ -19,24 +19,24 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984123"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423731"
 ---
 # <a name="delete-a-service-bom"></a>Odstranění servisního kusovníku 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** . Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).
 
-2.  V  **podokně akcí** klikněte na položku **předměty servisu** .
+2.  V **podokně akcí** klikněte na položku **předměty servisu**.
 
-3.  Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník. Klepněte na tlačítko **funkce** a poté vyberte **odstranit servisní Kusovník** .
+3.  Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník. Klepněte na tlačítko **funkce** a poté vyberte **odstranit servisní Kusovník**.
 
-4.  Klepněte na tlačítko **Ano** .
+4.  Klepněte na tlačítko **Ano**.
 
 
 > [!NOTE]

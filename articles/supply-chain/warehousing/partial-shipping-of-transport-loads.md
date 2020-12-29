@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: e92a15cf4e2694eba1804184a02a7fd13159799e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215647"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423695"
 ---
 # <a name="partial-shipment-of-a-transport-load"></a>Částečná dodávka nákladu přepravy
 
@@ -55,7 +55,7 @@ Je nutné povolit částečnou nakládku nastavením strategie nakládky. Po vyt
 Je nutné vytvořit novou položku nabídky, která umožňuje dopravovat náklady, které mají být naloženy. Nakládka pro přepravu umožňuje seskupit pracovní řádky z jedné nebo několika nakládek. Vše, co je přidáno k přepravní nakládce, pak lze expedovat pomocí mobilního skeneru.
 
 1. Přejděte do nabídky **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
-2. Vyberte **Nový**a poté v poli **Režim** vyberte **Práce**.
+2. Vyberte **Nový** a poté v poli **Režim** vyberte **Práce**.
 3. Nastavte hodnotu možnosti **Použít stávající práci** na **Ano**.
 4. Na kartě **Obecné** v poli **Směřuje** vyberte **Nakládka pro přepravu**.
 5. Pro povolení potvrzení expedice na snímače mobilního zařízení v poli **Povolený typ potvrzení expedice** vyberte **Přeprava nákladu**.

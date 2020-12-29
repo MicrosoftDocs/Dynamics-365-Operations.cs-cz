@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979495"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423859"
 ---
 # <a name="bom-designer-functionality"></a>Funkce návrháře kusovníku
 
@@ -32,11 +32,11 @@ ms.locfileid: "3979495"
 
 Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu.
 
-Otevřete-li stránku **Návrhář Kusovníku** ze stránky **Uvolněné produkty** , zobrazí se na ní hierarchie kusovníků (BOM), které jsou aktivní a schválené pro vybranou položku, výchozí objednací web položky a skutečné datum.  
+Otevřete-li stránku **Návrhář Kusovníku** ze stránky **Uvolněné produkty**, zobrazí se na ní hierarchie kusovníků (BOM), které jsou aktivní a schválené pro vybranou položku, výchozí objednací web položky a skutečné datum.  
 
 Kliknutím na tlačítko **Filtr** změňte počáteční výběr v zobrazení. Nastavením principu zobrazení na možnost **Vybrané/Aktivní nebo Vybrané** můžete vybrat jednotlivé verze kusovníku nebo postupu pro použití v zobrazení. Můžete vybrat neschválené a neaktivní verze kusovníku pro zobrazení či správu v návrháři kusovníku.  
 
-**Poznámka:** Otevřete-li návrhář kusovníku ze stránky seznamu **Kusovníky** , nezobrazí se informace o postupu. V současné době je výběr verze kusovníku nebo postupu vlastností verze kusovníku a postupu a platí pro všechny instance návrháře kusovníku.  
+**Poznámka:** Otevřete-li návrhář kusovníku ze stránky seznamu **Kusovníky**, nezobrazí se informace o postupu. V současné době je výběr verze kusovníku nebo postupu vlastností verze kusovníku a postupu a platí pro všechny instance návrháře kusovníku.  
 
 V následujících částech naleznete popis funkcí, které jsou k dispozici na různých kartách návrháře kusovníku.
 
@@ -49,10 +49,10 @@ Návrhář kusovníku má dvě části:
     -   **Data položky** – zobrazí podrobnosti hlavní položky nebo položky, která se používá ve vybraném uzlu. Můžete kliknout na **Upravit uvolněný produkt** a upravit vybranou položku.
     -   **Kusovník** – zobrazí záhlaví kusovníku, který souvisí s vybraným uzlem.
     -   **Postup** – zobrazí záhlaví postupu, který souvisí s vybraným uzlem.
-    -   **Operace postupu** – zobrazuje přehled operací daného postupu. Pokud je vybrán řádek kusovníku, který je přiřazen k určité operaci, operace je označena jako **Komponenta potřebná v operacích** .
+    -   **Operace postupu** – zobrazuje přehled operací daného postupu. Pokud je vybrán řádek kusovníku, který je přiřazen k určité operaci, operace je označena jako **Komponenta potřebná v operacích**.
 
 ## <a name="selecting-a-bom-and-route"></a>Výběr kusovníku a postupu
-Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrháře kusovníku. Filtr lze změnit pomocí dialogového okna **Filtr** . Pole tohoto dialogového pole jsou popsána v následující tabulce.
+Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrháře kusovníku. Filtr lze změnit pomocí dialogového okna **Filtr**. Pole tohoto dialogového pole jsou popsána v následující tabulce.
 
 <table>
 <thead>
@@ -93,7 +93,7 @@ Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrhá
 </tbody>
 </table>
 
-Použijete-li návrhář kusovníku ke kontrole nebo úpravě kusovníků, které se skládají z jedné nebo více úrovní fiktivních kusovníků, pak postup, který je přidružen k nejvyšší položce, obvykle zahrnuje celou hierarchii kusovníku. Pro zjednodušení přehledu můžete uzamknout postup nejvyšší úrovně v zobrazení kliknutím na tlačítko **Zobrazení** &gt; **Uzamknout postup** . Postup můžete odemknout kliknutím na položky **Zobrazení** &gt; **Odemknout postup** .
+Použijete-li návrhář kusovníku ke kontrole nebo úpravě kusovníků, které se skládají z jedné nebo více úrovní fiktivních kusovníků, pak postup, který je přidružen k nejvyšší položce, obvykle zahrnuje celou hierarchii kusovníku. Pro zjednodušení přehledu můžete uzamknout postup nejvyšší úrovně v zobrazení kliknutím na tlačítko **Zobrazení** &gt; **Uzamknout postup**. Postup můžete odemknout kliknutím na položky **Zobrazení** &gt; **Odemknout postup**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Přidávání a úprava kusovníků a řádků kusovníku
 Použijte funkce **Řádky kusovníku** nebo **Kusovník** k úpravě kusovníku nebo řádků kusovníku. Když vyberete uzel ze stromu, typ uzlu určí, které z funkcí budou k dispozici.
@@ -105,7 +105,7 @@ Použijte funkce **Řádky kusovníku** nebo **Kusovník** k úpravě kusovníku
 | Řádky kusovníku &gt; Přidat před řádek      | Otevře dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí před vybraným řádkem kusovníku.         | Tato funkce je k dispozici, pokud je vybrán uzel řádku kusovníku.                                                                                                                                                                                                                                   |
 | Řádky kusovníku &gt; Přidat do kusovníku komponent | Otevře dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí na konci vybraného kusovníku.       | Tato funkce je k dispozici, pokud má vybraný uzel zvolený kusovník. Pokud tato funkce není dostupná, verze kusovníku možná chybí pro vybranou variantu položky. V takovém případě lze kliknutím na položky **Kusovník** &gt; **Vytvořit verzi** vytvořit chybějící verzi pro vybraný uzel. |
 | Řádky kusovníku &gt; Přidat za řádek       | Otevře dialogové okno, ve kterém můžete vybrat variantu produktu k zahrnutí za vybraným řádkem kusovníku.          | Tato funkce je k dispozici, pokud je vybrán uzel řádku kusovníku.                                                                                                                                                                                                                                   |
-| Kusovník &gt; Vytvořit verzi             | Vytvoří nový kusovník nebo verzi kusovníku pro variantu produktu vybraného uzlu.                             | Tato funkce je k dispozici, pokud je vybraný uzel řádku kusovníku spojen s položkou, která má typ výroby **Kusovník** nebo **Receptura** .                                                                                                                                                  |
+| Kusovník &gt; Vytvořit verzi             | Vytvoří nový kusovník nebo verzi kusovníku pro variantu produktu vybraného uzlu.                             | Tato funkce je k dispozici, pokud je vybraný uzel řádku kusovníku spojen s položkou, která má typ výroby **Kusovník** nebo **Receptura**.                                                                                                                                                  |
 | Kusovník &gt; Výpočet                | Otevře dialogové okno, ve kterém můžete provést výpočet nákladů nebo prodejní ceny pro vybranou variantu produktu. | Tato funkce je k dispozici, pokud vybraný uzel souvisí s verzí kusovníku.                                                                                                                                                                                                         |
 | Kusovník &gt; Zkontrolovat                      | Ověří a zkontroluje vybraný kusovník.                                                                      | Tato funkce je k dispozici, pokud vybraný uzel souvisí s verzí kusovníku.                                                                                                                                                                                                         |
 

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c4cbc3cd5deff709ac0818358dcc87fa69a7d872
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983470"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423932"
 ---
 # <a name="credit-subscription-transactions"></a>Zápis transakcí předplatného na stranu Dal 
 
@@ -32,23 +32,23 @@ ms.locfileid: "3983470"
 
 ## <a name="credit-subscription-transactions"></a>Zápis transakcí předplatného na stranu Dal
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky**.
 
 2.  Vyberte předplatné připojené k transakci předplatného, pro kterou chcete vytvořit dobropis.
 
-3.  V podokně akcí vyberte kartu **Analýza** a poté klikněte na tlačítko **transakce poplatků** .
+3.  V podokně akcí vyberte kartu **Analýza** a poté klikněte na tlačítko **transakce poplatků**.
 
 4.  Ve formuláři **Transakce poplatku** vyberte transakci, pro kterou chcete vytvořit dobropis.
 
-5.  Klikněte na **Funkce** \> **Vybrat pro dobropis** .
+5.  Klikněte na **Funkce** \> **Vybrat pro dobropis**.
 
-6.  Ve formuláři **Výběr pro dobropis** vyberte transakci, kterou chcete připsat, a klepněte na tlačítko **OK** .
+6.  Ve formuláři **Výběr pro dobropis** vyberte transakci, kterou chcete připsat, a klepněte na tlačítko **OK**.
 
 
 > [!NOTE]
 > <P>Při vytváření dobropisu vyberte <STRONG>Dobropisy</STRONG>. Nachází se v seznamu <STRONG>způsob fakturace</STRONG> v dialogovém okně <STRONG>Vytvořit fakturu</STRONG>.</P>
 
-Pokud je pole **Stornovat časové rozlišení při připsání na stranu Dal** ve formuláři **Parametry správy servisu** nastaveno na možnost **Ruční** , musíte před vytvořením návrhu dobropisu pro transakci stornovat jednotlivé transakce časově rozlišených výnosů.
+Pokud je pole **Stornovat časové rozlišení při připsání na stranu Dal** ve formuláři **Parametry správy servisu** nastaveno na možnost **Ruční**, musíte před vytvořením návrhu dobropisu pro transakci stornovat jednotlivé transakce časově rozlišených výnosů.
 
 ## <a name="see-also"></a>Viz také
 

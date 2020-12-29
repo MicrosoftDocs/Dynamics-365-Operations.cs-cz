@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b7214575e1eb3289224446ae5dd9d40221f054f8
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978500"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423897"
 ---
 # <a name="production-posting"></a>Zaúčtování výroby
 
@@ -44,10 +44,10 @@ Materiály jsou při výrobě registrovány jako spotřebované, když je zaúč
 Je-li výrobní zakázka vykázána jako dokončená, jsou v Řízení zásob prostřednictvím Deníku dokončené výroby aktualizována množství dokončeného zboží. Pokud používáte účtování nedokončení výroby (NV), která může být nastavena v parametrech výroby, deník hlavní knihy sníží účty NV a zvýší sklad dokončeného zboží.. Deník používá standardní náklady, které jsou pro produkt definovány.
 
 ## <a name="ending-the-production-order"></a>Ukončení výrobní zakázky
-Před dokončením výrobní zakázky jsou vypočteny skutečné náklady pro vyrobené množství. Všechny odhadované náklady na materiál, práci a režii jsou stornovány a nahrazeny skutečnými náklady. Celkové náklady na dokončenou položku se zapíší na stranu MD skladového účtu Příjem a na stranu Dal skladového účtu Výdej. Pokud při spuštění výpočtu nákladů zaškrtnete políčko **Koncová práce** , bude stav výrobní zakázky změněn na **Ukončeno** . Nastavení tohoto stavu zabrání tomu, aby k dokončené výrobní zakázce byly nechtěně zaúčtovány další náklady. Můžete určit, že hodnota množství chyb, které jsou hlášeny během vykazování jako dokončené, by měla být přidělena správným množstvím, která jsou hlášena jako dokončená. Zadáte také, že hodnota množství chyb by měla být účtována do vyhrazeného účtu odpadu.
+Před dokončením výrobní zakázky jsou vypočteny skutečné náklady pro vyrobené množství. Všechny odhadované náklady na materiál, práci a režii jsou stornovány a nahrazeny skutečnými náklady. Celkové náklady na dokončenou položku se zapíší na stranu MD skladového účtu Příjem a na stranu Dal skladového účtu Výdej. Pokud při spuštění výpočtu nákladů zaškrtnete políčko **Koncová práce**, bude stav výrobní zakázky změněn na **Ukončeno**. Nastavení tohoto stavu zabrání tomu, aby k dokončené výrobní zakázce byly nechtěně zaúčtovány další náklady. Můžete určit, že hodnota množství chyb, které jsou hlášeny během vykazování jako dokončené, by měla být přidělena správným množstvím, která jsou hlášena jako dokončená. Zadáte také, že hodnota množství chyb by měla být účtována do vyhrazeného účtu odpadu.
 
 ## <a name="controlling-the-level-of-ledger-posting"></a>Řízení úrovně účtování do hlavní knihy
-V nabídce **Parametry modulu řízení výroby** , lze použít pole **Zaúčtování do hlavní knihy** pro nastavení úrovně zaúčtování do hlavní knihy pro výrobní procesy. K dispozici jsou následující hodnoty:
+V nabídce **Parametry modulu řízení výroby**, lze použít pole **Zaúčtování do hlavní knihy** pro nastavení úrovně zaúčtování do hlavní knihy pro výrobní procesy. K dispozici jsou následující hodnoty:
 
 -   **Zboží a prostředek** – Použijte účty hlavní knihy, které se nastavují pro skupiny položek pro suroviny a hotové výrobky. NV pro spotřebu času je převzata z prostředků nebo skupiny prostředků z operací postupů.
 -   **Zboží a kategorie** – Použijte účty hlavní knihy, které se nastavují pro skupiny položek pro suroviny a hotové výrobky. NV spotřeby času je převzata z kategorií nákladů, které jsou přiřazeny k operacím postupů.

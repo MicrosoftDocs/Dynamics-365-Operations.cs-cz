@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978983"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423909"
 ---
 # <a name="credit-limits-for-customers"></a>Limity úvěru pro odběratele
 
@@ -59,9 +59,9 @@ Použijte formulář **Parametry pohledávek** pro určení dokumentů, u který
 
 Limity úvěru se automaticky zkontrolují, pokud je nastavena jedna ze dvou následujících možností:
 
--   Ve formuláři **Parametry pohledávek** je nastaveno pole **Typ limitu úvěru** na jakoukoliv možnost jinou než **Žádný** . Limity úvěrů budou kontrolovány pro všechny odběratele.
+-   Ve formuláři **Parametry pohledávek** je nastaveno pole **Typ limitu úvěru** na jakoukoliv možnost jinou než **Žádný**. Limity úvěrů budou kontrolovány pro všechny odběratele.
 
--   Ve formuláři **Parametry pohledávek** je nastaveno pole **Typ limitu úvěru** na **Žádný** , ale je zvolen **Povinný limit úvěru** pro odběratele ve formuláři **Odběratelé** . Limity úvěrů budou kontrolovány pouze pro konkrétní odběratele.
+-   Ve formuláři **Parametry pohledávek** je nastaveno pole **Typ limitu úvěru** na **Žádný**, ale je zvolen **Povinný limit úvěru** pro odběratele ve formuláři **Odběratelé**. Limity úvěrů budou kontrolovány pouze pro konkrétní odběratele.
 
 Abyste mohli zkontrolovat limity úvěru pro následující dokumenty, musíte provést další nastavení.
 
@@ -83,7 +83,7 @@ Můžete nakonfigurovat Dynamics 365 tak, aby vypočítal zbývající kredit od
 
 Použijte formulář **Parametry pohledávek** k zadání informací, vůči kterým bude probíhat srovnání. Abyste mohli v tomto formuláři provádět změny, musíte být členem role zabezpečení systému správce (- SYSADMIN –). V poli **Typ limitu úvěru** vyberte, zda se mají provést kontroly limitů úvěru a jaké informace o transakci mají být zahrnuty při kontrole limitu úvěru. Vyberte některou z následujících možností:
 
--   **Žádný** – Nekontrolují se limity úvěrů. Tuto možnost pro určitého odběratele můžete přepsat výběrem zaškrtávacího políčka **Povinný limit úvěru** ve formuláři **Odběratelé** . Pokud tak učiníte, limit úvěru se kontroluje vůči zůstatku odběratele.
+-   **Žádný** – Nekontrolují se limity úvěrů. Tuto možnost pro určitého odběratele můžete přepsat výběrem zaškrtávacího políčka **Povinný limit úvěru** ve formuláři **Odběratelé**. Pokud tak učiníte, limit úvěru se kontroluje vůči zůstatku odběratele.
 
 -   **Zůstatek** – limit úvěru se kontroluje vůči zůstatku odběratele.
 
@@ -93,7 +93,7 @@ Použijte formulář **Parametry pohledávek** k zadání informací, vůči kte
 
 **Kde naleznu informace o použitém zbývajícím úvěru odběratele?**
 
-Informace o zůstatku odběratele a částce úvěru se vypočítají a uloží při vytvoření snímku sledování splatnosti a zobrazí se ve formuláři **Inkasa** . Částky, které jsou zobrazeny ve formuláři **Inkasa** nemusí zahrnovat všechny aktivity transakce, dokud není vytvořen snímek sledování splatnosti. Další informace naleznete v tématu [Inkasa a úvěr v modulu Pohledávky](https://technet.microsoft.com/library/hh209221.aspx).
+Informace o zůstatku odběratele a částce úvěru se vypočítají a uloží při vytvoření snímku sledování splatnosti a zobrazí se ve formuláři **Inkasa**. Částky, které jsou zobrazeny ve formuláři **Inkasa** nemusí zahrnovat všechny aktivity transakce, dokud není vytvořen snímek sledování splatnosti. Další informace naleznete v tématu [Inkasa a úvěr v modulu Pohledávky](https://technet.microsoft.com/library/hh209221.aspx).
 
 V závislosti na zvolených dokumentech se vypočítá informace o zůstatku odběratele a zbývající částka úvěru při aktualizaci prodejních objednávek, dodacích listů a faktur odběratele. Pokud by částka dokumentu, se kterým pracujete, způsobila překročení limitu úvěru, zobrazí se zpráva.
 
@@ -120,21 +120,21 @@ Použijte formulář **Parametry pohledávek** k určení, zda chcete při přek
 
 Použijte formulář **Odběratelé** k určení částky limitu úvěru pro určitého odběratele. Musíte být členem role zabezpečení, která má k sobě přiřazené funkční oprávnění Spravovat hlavní data odběratele (CustCustomersMaintain), abyste v tomto formuláři mohli provádět změny.
 
-1.  Klikněte na **Pohledávky** \> **Společné** \> **Odběratelé** \> **Všichni odběratelé** . Klikněte dvakrát na účet odběratele.
+1.  Klikněte na **Pohledávky** \> **Společné** \> **Odběratelé** \> **Všichni odběratelé**. Klikněte dvakrát na účet odběratele.
 
-2.  Ve formuláři **Odběratelé** v podokně akcí klikněte na **Upravit** .
+2.  Ve formuláři **Odběratelé** v podokně akcí klikněte na **Upravit**.
 
 3.  Do pole **Limit úvěru** zadejte částku měny. Tato hodnota musí být větší než nula (0) a použije se jako částka limitu úvěru.
 
-4.  V případě potřeby zadejte licenční číslo nebo jinou identifikaci vydané státní správou do pole **Identifikační údaje pro státní správu** .
+4.  V případě potřeby zadejte licenční číslo nebo jinou identifikaci vydané státní správou do pole **Identifikační údaje pro státní správu**.
 
 > [!NOTE]
-> Ve formuláři **Parametry pohledávek** obvykle zvolíte typ limitu úvěru. Pokud je však typ limitu úvěru nastaven na **Žádný** , je nutné vybrat také zaškrtávací políčko **Povinný limit úvěru** ve formuláři **Odběratelé** s cílem zkontrolovat limit úvěru vůči zůstatku odběratele. Další informace týkající se typů limitu úvěru naleznete v části Jaké dokumenty a procesy mohu zkontrolovat pro limity úvěru? tohoto tématu. 
+> Ve formuláři **Parametry pohledávek** obvykle zvolíte typ limitu úvěru. Pokud je však typ limitu úvěru nastaven na **Žádný**, je nutné vybrat také zaškrtávací políčko **Povinný limit úvěru** ve formuláři **Odběratelé** s cílem zkontrolovat limit úvěru vůči zůstatku odběratele. Další informace týkající se typů limitu úvěru naleznete v části Jaké dokumenty a procesy mohu zkontrolovat pro limity úvěru? tohoto tématu. 
 
 **Jak ověřím limity úvěru ručně na prodejních objednávkách?**
 
-V některých případech je třeba ručně zkontrolovat limit úvěru odběratele. Například může ručně zkontrolovat limit úvěru odběratele před zahájením zadávání prodejní objednávky. K ruční kontrole limit úvěru lze použít formulář **Prodejní objednávka** . Musíte být členem role zabezpečení, která má k sobě přiřazené funkční oprávnění Spravovat prodejní objednávku (SalesOrderMaintain), abyste v tomto formuláři mohli provádět změny.
+V některých případech je třeba ručně zkontrolovat limit úvěru odběratele. Například může ručně zkontrolovat limit úvěru odběratele před zahájením zadávání prodejní objednávky. K ruční kontrole limit úvěru lze použít formulář **Prodejní objednávka**. Musíte být členem role zabezpečení, která má k sobě přiřazené funkční oprávnění Spravovat prodejní objednávku (SalesOrderMaintain), abyste v tomto formuláři mohli provádět změny.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky** . Dvakrát klikněte na prodejní objednávku.
+1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**. Dvakrát klikněte na prodejní objednávku.
 
-2.  Ve formuláři **Prodejní objednávka** v podokně akcí na kartě **Spravovat** , klikněte na **Zkontrolovat limit úvěru** .
+2.  Ve formuláři **Prodejní objednávka** v podokně akcí na kartě **Spravovat**, klikněte na **Zkontrolovat limit úvěru**.

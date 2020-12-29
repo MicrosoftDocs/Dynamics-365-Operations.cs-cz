@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 165c1c89af52aac0b540cb6aee577d717d12b0f6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979725"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423484"
 ---
 # <a name="subscription-groups"></a>Skupiny předplatného    
 
@@ -34,7 +34,7 @@ Předplatná sdílejí následující informace, které se definují pro skupinu
 
   - Kód číselné řady předplatného, pokud se používá.
 
-  - Fakturační období, pro které jsou vytvořené transakce předplatného. Pokud je například ve formuláři **Fakturace** nastaven kód období **Skupiny předplatného** na možnost **čtvrtletně** , budou transakce všech předplatných připojených ke skupině předplatného vytvořena čtvrtletně.
+  - Fakturační období, pro které jsou vytvořené transakce předplatného. Pokud je například ve formuláři **Fakturace** nastaven kód období **Skupiny předplatného** na možnost **čtvrtletně**, budou transakce všech předplatných připojených ke skupině předplatného vytvořena čtvrtletně.
 
   - Informaci o tom, jak často se má předplatné časově rozlišovat, pokud vůbec.
 

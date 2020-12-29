@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec07913e217cb3e33d5b58623643f02593c1eeae
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203358"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423550"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Přidělení času k úlohám ve skupině prací
 
@@ -99,7 +99,7 @@ Pokud mají být výrobní náklady vypočítány na základě skutečných nák
 | Úloha 2 | 3 hodiny     |
 | Úloha 3 | 5 hodin     |
 
-Zvažte 3 úlohy, které provádí pracovník, který má hodinovou mzdou 12,00 USD. Během času stráveného na úlohu nebyly získány žádné bonusy ani prémie. pracovník na těchto 3 úlohách ve svazku pracoval celkem 6 hodin. Náklady na mzdu tedy 6 × 12,00 USD = 72,00 USD. Pokud použijete přidělení mezd, náklady na hodinu jsou přepočteny se součinitelem na základě vzorce Čistý čas. Skutečný čas vynaložený na každou úlohu je přenesen společně s korigovanou cenou za hodinové náklady. Na příkladu jej vynaloženo 6 hodin, i když přiděleno bylo hodin 10. V následující tabulce je znázorněn vzorec pro výpočet nákladů. Zde je vzorec: Náklady na hodinu = celkový čas pro svazek úloh (čistý čas) / skutečný čas na úlohu) * standardní náklady na hodinu
+Zvažte 3 úlohy, které provádí pracovník, který má hodinovou mzdou 12,00 USD. Během času stráveného na úlohu nebyly získány žádné bonusy ani prémie. pracovník na těchto 3 úlohách ve svazku pracoval celkem 6 hodin. Náklady na mzdu tedy 6 × 12,00 USD = 72,00 USD. Pokud použijete přidělení mezd, náklady na hodinu jsou přepočteny se součinitelem na základě vzorce Čistý čas. Skutečný čas vynaložený na každou úlohu je přenesen společně s korigovanou cenou za hodinové náklady. Na příkladu jej vynaloženo 6 hodin, i když přiděleno bylo hodin 10. V následující tabulce je znázorněn vzorec pro výpočet nákladů. Zde je vzorec: Náklady na hodinu = (celkový čas pro svazek úloh (čistý čas) / skutečný čas na úlohu) * standardní náklady na hodinu
 
 | Úloha   | Výpočet korigovaných nákladů za hodinu | Korigované náklady na hodinu | Přidělený čas | Celkové náklady na úlohu |
 |-------|----------------------------------------|-------------------------|----------------|-------------------|

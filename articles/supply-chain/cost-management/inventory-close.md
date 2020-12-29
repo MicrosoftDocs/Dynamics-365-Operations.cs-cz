@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980651"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423789"
 ---
 # <a name="inventory-close"></a>Uzavřít zásoby
 
@@ -52,10 +52,10 @@ Když vytvoříte nákupní objednávku z prodejní objednávky, aktualizují s
 Po dokončení aktualizace můžete zkontrolovat doklad hlavní knihy, který byl zaúčtován kvůli některému z těchto úkolů.
 
 1.  Na kartě **Přehled** na stránce **Závěrka a oprava** vyberte aktualizace ke kontrole.
-2.  Klikněte na tlačítko **Podrobnosti** a poté vyberte možnost **Doklad** .
+2.  Klikněte na tlačítko **Podrobnosti** a poté vyberte možnost **Doklad**.
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>Účinky procesu uzávěrky skladu na hlavní knihu
-Některé úkoly, které lze provést pomocí stránky **Závěrka a oprava** , způsobí aktualizaci hlavní knihy. Hlavní kniha se například aktualizuje, pokud provedete úpravy množství na skladě, úpravy skladových transakcí, spouštění přepočtu skladu nebo spouštění uzávěrky skladu. 
+Některé úkoly, které lze provést pomocí stránky **Závěrka a oprava**, způsobí aktualizaci hlavní knihy. Hlavní kniha se například aktualizuje, pokud provedete úpravy množství na skladě, úpravy skladových transakcí, spouštění přepočtu skladu nebo spouštění uzávěrky skladu. 
 
 Aktualizovány budou účty hlavní knihy, které jsou spojené s původní skladovou transakcí. Pokud je například prodejní objednávka vyrovnána s nákupní objednávkou, budou upraveny účty hlavní knihy, které byly použity pro původní prodejní objednávku. Toto chování platí i v případě, že účty hlavní knihy pro skupiny položek přiřazených dané položce se změnily po zaúčtování prodejní objednávky. Po uzávěrce skladu dojde k vytvoření částky vyrovnání, částka vyrovnání bude přesto zaúčtována k původním účtům hlavní knihy, nikoli na nové účty hlavní knihy přiřazených k dané položce. Hlavní kniha může být aktualizována také stornováním uzávěrka skladu. 
 

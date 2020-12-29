@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 08fb7363ab87fd6a7f3d38406e72b1f542dc2c2a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423992"
 ---
 # <a name="automatically-create-service-orders"></a>Automaticky vytvářené servisní zakázky 
 
@@ -38,7 +38,7 @@ Servisní objednávky jsou automaticky generovány z následujících nastavení
 
   - Jedná se o interval servisní smlouvy nastavený na řádcích servisní smlouvy. Interval servisní smlouvy indikuje frekvenci, s jakou jsou vytvářeny řádky servisní zakázky. Další informace o servisních intervalech naleznete v tématu [servisní intervaly](service-intervals.md).
 
-  - Jedná se o období zadané za účelem definování servisního období v polích **Od data** a **Do data** ve formuláři **Vytvořit servisní zakázky** . Další informace naleznete v tématu [Automatické vytváření servisních zakázek](create-service-orders-automatically.md).
+  - Jedná se o období zadané za účelem definování servisního období v polích **Od data** a **Do data** ve formuláři **Vytvořit servisní zakázky**. Další informace naleznete v tématu [Automatické vytváření servisních zakázek](create-service-orders-automatically.md).
 
   - Možnost **Kombinovat servisní zakázky** v záhlaví servisní smlouvy. Tato možnost definuje, zda jsou řádky servisní zakázky generovány v servisní smlouvě, a slučuje servisní zakázky podle zaměstnance, servisní úlohy, předmětu servisu nebo servisní smlouvy. Další informace o kombinování servisních zakázek naleznete v tématu [Kombinování servisních zakázek](combine-service-orders.md).
 

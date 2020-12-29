@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e79526dd43f516f2f4abf31276f314cb2498458e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978790"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423995"
 ---
 # <a name="attach-templates-to-service-objects"></a>Připojení šablon k předmětům servisu    
 
@@ -32,13 +32,13 @@ ms.locfileid: "3978790"
 
 Šablonu kusovníku lze připojit ke vztahu předmětu servisu. Tento vztah předmětu servisu lze následně spojit se servisními zakázkami nebo smlouvami.
 
-1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Servisní objekty** .
+1.  Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní objekty** \> **Servisní objekty**.
 
 2.  Vyberte předmět servisu.
 
 3.  Klepnutím na položku **Servisní smlouvy** nebo **Servisní zakázky** zobrazíte servisní smlouvy nebo servisní zakázky, se kterými je spojen předmět servisu.
 
-4.  Vyberte servisní smlouvu nebo zakázku, klepněte na tlačítko **Funkce** a potom klepněte na příkaz **Připojit šablonu kusovníku** .
+4.  Vyberte servisní smlouvu nebo zakázku, klepněte na tlačítko **Funkce** a potom klepněte na příkaz **Připojit šablonu kusovníku**.
 
 5.  Vyberte šablonu kusovníku, kterou chcete připojit k předmětu.
 

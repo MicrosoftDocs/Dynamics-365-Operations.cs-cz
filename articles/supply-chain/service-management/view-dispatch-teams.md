@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0e83e7008c2547ba0d9e7061772db825e69469a0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985061"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423965"
 ---
 # <a name="view-dispatch-teams"></a>Zobrazit expediční týmy   
 
@@ -32,9 +32,9 @@ ms.locfileid: "3985061"
 
 Ve formuláři **Expediční vývěska** jsou servisní zakázky seskupeny podle expedičního týmu.
 
-1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska** .
+1.  Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.
 
-2.  Vyberte rozsah dat a potom klikněte na tlačítko **OK** .
+2.  Vyberte rozsah dat a potom klikněte na tlačítko **OK**.
 
 3.  Rozbalte ve formuláři **Expediční vývěska** v Ganttově diagramu v jeho horní části seznam týmu pro kontrolu zaměstnanců v týmu. Můžete také zobrazit podrobnosti o servisních činnostech, které jsou přiřazeny jednotlivým pracovníkům.
 

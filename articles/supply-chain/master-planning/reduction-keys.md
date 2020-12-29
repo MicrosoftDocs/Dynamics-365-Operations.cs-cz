@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981419"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423685"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
@@ -36,7 +36,7 @@ Toto téma obsahuje informace o různých metodách používaných ke snížení
 
 Pokud do hlavního plánu zahrnete prognózu, můžete zvolit, jak budou požadavky na prognózu sníženy, pokud bude zahrnuta skutečná poptávka. Všimněte si, že hlavní plánování vyloučí požadavky prognózy z minulosti, což znamená všechny požadavky prognózy před dnešním datem.
 
-Chcete-li zahrnout prognózu do hlavního plánu a vybrat metodu, která se používá ke snížení požadavků na prognózu, přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** . Zvolte model prognózy v poli **Model prognózy** . V poli **Způsob používaný ke snížení požadavků na prognózy** vyberte metodu. Existují tyto možnosti:
+Chcete-li zahrnout prognózu do hlavního plánu a vybrat metodu, která se používá ke snížení požadavků na prognózu, přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**. Zvolte model prognózy v poli **Model prognózy**. V poli **Způsob používaný ke snížení požadavků na prognózy** vyberte metodu. Existují tyto možnosti:
 
 - Žádný
 - Procento – redukční klíč
@@ -47,11 +47,11 @@ Další části poskytují více informací o každé možnosti.
 
 ### <a name="none"></a>Žádný
 
-Pokud zvolíte možnost **Žádná** , požadavky na prognózu nebudou během hlavního plánování sníženy. V tomto případě hlavní plánování vytvoří plánované objednávky, které budou dodávat předpokládanou poptávku (požadavky prognózy). Tyto plánované objednávky udržují navržené množství, bez ohledu na jiné typy poptávky. Pokud jsou například zadány prodejní objednávky, hlavní plánování vytvoří dodatečné plánované objednávky pro dodání prodejních objednávek. Množství požadavků prognózy se nesníží.
+Pokud zvolíte možnost **Žádná**, požadavky na prognózu nebudou během hlavního plánování sníženy. V tomto případě hlavní plánování vytvoří plánované objednávky, které budou dodávat předpokládanou poptávku (požadavky prognózy). Tyto plánované objednávky udržují navržené množství, bez ohledu na jiné typy poptávky. Pokud jsou například zadány prodejní objednávky, hlavní plánování vytvoří dodatečné plánované objednávky pro dodání prodejních objednávek. Množství požadavků prognózy se nesníží.
 
 ### <a name="percent--reduction-key"></a>Procento – redukční klíč
 
-Pokud zvolíte **Procento – redukční klíč** , požadavky na prognózu jsou sníženy podle procenta a časového období, které jsou definovány podle redukčního klíče. V tomto případě hlavní plánování vytvoří plánované objednávky, kde se množství vypočítá jako předpokládané množství × redukční klíč v každém období. Pokud existují jiné typy poptávky, hlavní plánování také vytváří plánované objednávky pro dodání této poptávky.
+Pokud zvolíte **Procento – redukční klíč**, požadavky na prognózu jsou sníženy podle procenta a časového období, které jsou definovány podle redukčního klíče. V tomto případě hlavní plánování vytvoří plánované objednávky, kde se množství vypočítá jako předpokládané množství × redukční klíč v každém období. Pokud existují jiné typy poptávky, hlavní plánování také vytváří plánované objednávky pro dodání této poptávky.
 
 #### <a name="example-percent--reduction-key"></a>Příklad: Procento – redukční klíč
 
@@ -75,9 +75,9 @@ Na stránce **Redukční klíče** nastavte následující řádky.
 | 3      | Měsíc | 50      |
 | 4      | Měsíc | 25      |
 
-Přiřaďte redukční klíč ke skupině disponibility položky. Poté na stránce **Hlavní plány** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberete **Procento – redukční klíč** .
+Přiřaďte redukční klíč ke skupině disponibility položky. Poté na stránce **Hlavní plány** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberete **Procento – redukční klíč**.
 
-V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky prognózy poptávky se spotřebují podle procentuálních hodnot, které se nastavují na stránce **Redukční klíče** . Do hlavního plánu se přenesou následující požadované objemy.
+V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky prognózy poptávky se spotřebují podle procentuálních hodnot, které se nastavují na stránce **Redukční klíče**. Do hlavního plánu se přenesou následující požadované objemy.
 
 | Měsíc                | Množství plánované objednávky | Výpočet    |
 |----------------------|------------------------|----------------|
@@ -89,13 +89,13 @@ V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky 
 
 ### <a name="transactions--reduction-key"></a>Transakce – redukční klíč
 
-Pokud zvolíte **Transakce – redukční klíč** , požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
+Pokud zvolíte **Transakce – redukční klíč**, požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
 
 #### <a name="example-transactions--reduction-key"></a>Příklad: Transakce – redukční klíč
 
 Tento příklad ukazuje, jak jsou skutečné objednávky prováděné v období definovány podle redukčního klíče pro snížení požadavků prognózy poptávky.
 
-V tomto příkladu zvolte **Transakce - redukční klíč** v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány** .
+V tomto příkladu zvolte **Transakce - redukční klíč** v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány**.
 
 Následující prodejní objednávky existují k 1. lednu.
 
@@ -118,7 +118,7 @@ Pokud použijete stejnou prognózu poptávky pro 1000 kusů za měsíc, která b
 
 ### <a name="transactions--dynamic-period"></a>Transakce – dynamické období
 
-Vyberete-li **Transakce – dynamické období** , požadavky prognózy jsou sníženy podle skutečných transakcí objednávky, ke kterým došlo během dynamického období. Dynamické období pokrývá aktuální data prognózy a končí na začátku další prognózy. V tomto případě hlavní plánování vytvoří plánované objednávky, které budou dodávat předpokládanou poptávku (požadavky prognózy). Pokud jsou však zadány skutečné transakce objednávky, požadavky na prognózu se sníží. Skutečné transakce spotřebují část požadavků prognózy.
+Vyberete-li **Transakce – dynamické období**, požadavky prognózy jsou sníženy podle skutečných transakcí objednávky, ke kterým došlo během dynamického období. Dynamické období pokrývá aktuální data prognózy a končí na začátku další prognózy. V tomto případě hlavní plánování vytvoří plánované objednávky, které budou dodávat předpokládanou poptávku (požadavky prognózy). Pokud jsou však zadány skutečné transakce objednávky, požadavky na prognózu se sníží. Skutečné transakce spotřebují část požadavků prognózy.
 
 Použití této možnosti způsobí následující jevy:
 
@@ -131,7 +131,7 @@ Použití této možnosti způsobí následující jevy:
 
 #### <a name="example-1-transactions--dynamic-period"></a>Příklad 1: Transakce – dynamické období
 
-Zde je jednoduchý příklad zobrazující způsob fungování metody **Transakce – dynamické období** .
+Zde je jednoduchý příklad zobrazující způsob fungování metody **Transakce – dynamické období**.
 
 V tomto příkladu zahrnete následující prognózu poptávky do hlavního plánu.
 
@@ -198,12 +198,12 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
-1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče** .
+1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
 2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 
-    - Pole **Datum platnosti** určuje datum, kdy začíná vytvoření období. Když je možnost **Použít datum účinnosti** nastavena na **Ano** , období začíná v den účinnosti. Když je nastavena na **ne** , období začínají k datu při spuštění hlavního plánování.
+    - Pole **Datum platnosti** určuje datum, kdy začíná vytvoření období. Když je možnost **Použít datum účinnosti** nastavena na **Ano**, období začíná v den účinnosti. Když je nastavena na **ne**, období začínají k datu při spuštění hlavního plánování.
     - Definujte období, během kterého má dojít ke snížení prognózy.
     - Pro konkrétní období uveďte procenta, o která by měly být požadavky prognózy sníženy. Můžete zadat kladné hodnoty a požadavky tak snížit nebo záporné hodnoty a požadavky zvýšit.
 
@@ -211,18 +211,18 @@ Redukční klíč prognózy se používá v metodách **Transakce – redukční
 
 Redukční klíče prognózy musí být přiřazen ke skupině disponibility položky. Postupujte podle následujícího postupu pro přiřazení redukčního klíče ke skupině disponibility položky.
 
-1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Skupiny disponibility** .
+1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Skupiny disponibility**.
 2. Na záložce s náhledem **Jiné** v poli **Redukční klíč** vyberte redukční klíč, který chcete přiřadit ke skupině disponibility. Redukční klíč se pak použije na všechny položky, které patří do skupiny disponibility.
 3. Chcete-li použít redukční klíč pro výpočet snížení prognózy během hlavního plánování, musíte toto nastavení definovat v nastavení plánu prognózy nebo hlavního plánu. Přejděte na jedno z následujících míst:
 
     - Hlavní plánování \> Nastavení \> Plány \> Plány prognózy
     - Hlavní plánování \> Nastavení \> Plány \> Hlavní plány
 
-4. Na stránce **Plány prognózy** nebo **Hlavní plány** na záložce s náhledem **Obecné** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberte buď **Procento – redukční klíč** nebo **Transakce – redukční klíč** .
+4. Na stránce **Plány prognózy** nebo **Hlavní plány** na záložce s náhledem **Obecné** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberte buď **Procento – redukční klíč** nebo **Transakce – redukční klíč**.
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Snížení prognózy podle transakcí
 
-Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamické období** jako metodu pro snížení požadavků prognózy, můžete určit, které transakce sníží prognózu. Na stránce **Skupiny krytí** na záložce s náhledem **Jiné** v poli **Snížit prognózu podle** vyberte **Všechny transakce** , pokud mají všechny transakce snížit prognózu, nebo **Objednávky** , pokud mají prognózu snížit pouze prodejní objednávky.
+Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamické období** jako metodu pro snížení požadavků prognózy, můžete určit, které transakce sníží prognózu. Na stránce **Skupiny krytí** na záložce s náhledem **Jiné** v poli **Snížit prognózu podle** vyberte **Všechny transakce**, pokud mají všechny transakce snížit prognózu, nebo **Objednávky** , pokud mají prognózu snížit pouze prodejní objednávky.
 
 ## <a name="additional-resources"></a>Další zdroje
 

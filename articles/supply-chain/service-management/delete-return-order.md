@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 08384bd5241c934b2f56ab2b482f5d06f24f0926
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985832"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423732"
 ---
 # <a name="delete-a-return-order"></a>Odstranění vratky 
 
@@ -32,13 +32,13 @@ ms.locfileid: "3985832"
 
 Formulář **Odstranit objednávku vratky** slouží k odstranění několika vratek.
 
-1.  Klikněte na **Prodej a marketing** \> **Periodické** \> **Vymazat** \> **Odstranit objednávky vratky** .
+1.  Klikněte na **Prodej a marketing** \> **Periodické** \> **Vymazat** \> **Odstranit objednávky vratky**.
 
-2.  Kliknutím na tlačítko **Vyberat** otevřete formulář **Aktualizace prodejů** .
+2.  Kliknutím na tlačítko **Vyberat** otevřete formulář **Aktualizace prodejů**.
 
-3.  Zadejte kritéria a kliknutím na tlačítko **OK** se vraťte do formuláře **Odstranit objednávku vratky** . Vratky, které byly vytvořeny v právnické osobě, jsou zobrazeny podle zadaných kritérií.
+3.  Zadejte kritéria a kliknutím na tlačítko **OK** se vraťte do formuláře **Odstranit objednávku vratky**. Vratky, které byly vytvořeny v právnické osobě, jsou zobrazeny podle zadaných kritérií.
 
-4.  Vyberte řádek vratky, který chcete odstranit, a pak klikněte na tlačítko **OK** .
+4.  Vyberte řádek vratky, který chcete odstranit, a pak klikněte na tlačítko **OK**.
 
 5.  Kliknutím na tlačítko **Ano** odstraňte vratky.
 

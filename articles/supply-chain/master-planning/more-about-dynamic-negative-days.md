@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987015"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423788"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Záporné dny a dynamické záporné dny
 
@@ -56,7 +56,7 @@ Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
-Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP vyhledá příjemky pro položku DemoProduct v ochranném období záporných dnů. Protože nenalezne žádné příjemky, vytvoří MRP novou plánovanou nákupní objednávku. Tato plánovaná objednávka je okamžitě odložena o šest dní (doba realizace). Bude tedy doručena 7. ledna. Existující nákupní objednávka dostane zprávu akce **Zrušit** , protože vytvoření nové plánované nákupní objednávky ji učinilo nadbytečnou.
+Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP vyhledá příjemky pro položku DemoProduct v ochranném období záporných dnů. Protože nenalezne žádné příjemky, vytvoří MRP novou plánovanou nákupní objednávku. Tato plánovaná objednávka je okamžitě odložena o šest dní (doba realizace). Bude tedy doručena 7. ledna. Existující nákupní objednávka dostane zprávu akce **Zrušit**, protože vytvoření nové plánované nákupní objednávky ji učinilo nadbytečnou.
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
@@ -74,11 +74,11 @@ Chcete-li zlepšit výkonnost MRP, můžete nastavit záporné dny na číslo, k
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Případ C: Automatická korelace doby realizace položky na ochrannou dobu záporných dnů
 
-Pro automatickou korelaci doby realizace položky na ochrannou dobu záporných dnů použijte dynamické záporné dny. Chcete-li použít dynamické záporné dny, přejděte na **Hlavní plánování \> Nastavení \> Parametry hlavního plánování** a poté na kartě **Obecné** v části **Disponibilita** nastavte možnost **Použít dynamické záporné dny** na **Ano** . MRP poté vyhledá příjemky v ochranné době dynamických záporných dnů. Ochranná doba se vypočte podle následujícího vzorce:
+Pro automatickou korelaci doby realizace položky na ochrannou dobu záporných dnů použijte dynamické záporné dny. Chcete-li použít dynamické záporné dny, přejděte na **Hlavní plánování \> Nastavení \> Parametry hlavního plánování** a poté na kartě **Obecné** v části **Disponibilita** nastavte možnost **Použít dynamické záporné dny** na **Ano**. MRP poté vyhledá příjemky v ochranné době dynamických záporných dnů. Ochranná doba se vypočte podle následujícího vzorce:
 
 Ochranná doba dynamických záporných dnů = doba realizace nákupu + ochranná doba záporných dnů + (aktuální datum – datum požadavku)
 
-(Pokud výchozí typ objednávky položky DemoProduct je **Výroba** nebo **Převod** , doba realizace je dobou realizace **skladu** .)
+(Pokud výchozí typ objednávky položky DemoProduct je **Výroba** nebo **Převod**, doba realizace je dobou realizace **skladu** .)
 
 Když se použijí dynamické záporné dny, je ochranná doba, po kterou se MRP dívá na příjemky, 6 + 2 + 0 = 8 dní. MRP vyhledá existující nákupní objednávku a naváže na ní prodejní objednávku. Nejsou vytvořeny žádné nové plánované objednávky. Operační čas pro MRP je tedy kratší. Následující obrázek zobrazuje čisté požadavky pro položku DemoProduct.
 
@@ -119,7 +119,7 @@ Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
-Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP vyhledá příjemky pro položku DemoProduct v ochranném období záporných dnů. Vzhledem k tomu, že se nenaleznou žádné příjemky, vytvoří MRP novou plánovanou nákupní objednávku, která jako datum objednávky použije aktuální datum. Tato plánovaná objednávka je okamžitě odložena o šest dní (doba realizace). Bude tedy doručena 7. ledna. Existující nákupní objednávka dostane zprávu akce **Zrušit** , protože vytvoření nové plánované nákupní objednávky ji učinilo nadbytečnou.
+Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP vyhledá příjemky pro položku DemoProduct v ochranném období záporných dnů. Vzhledem k tomu, že se nenaleznou žádné příjemky, vytvoří MRP novou plánovanou nákupní objednávku, která jako datum objednávky použije aktuální datum. Tato plánovaná objednávka je okamžitě odložena o šest dní (doba realizace). Bude tedy doručena 7. ledna. Existující nákupní objednávka dostane zprávu akce **Zrušit**, protože vytvoření nové plánované nákupní objednávky ji učinilo nadbytečnou.
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
@@ -168,7 +168,7 @@ Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
-Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP se dívá dva dny dopředu před datum požadavku prodejní objednávky. Protože nenalezne nic, vytvoří MRP novou plánovanou nákupní objednávku na 2. ledna. Tato plánovaná nákupní objednávka bude expedována právě včas ke splnění poptávky prodejní objednávky. Existující nákupní objednávka získá zprávu akce **Zrušit** , protože není povinná.
+Nastavíte-li záporné dny na číslo, které je menší než doba realizace položky, MRP se dívá dva dny dopředu před datum požadavku prodejní objednávky. Protože nenalezne nic, vytvoří MRP novou plánovanou nákupní objednávku na 2. ledna. Tato plánovaná nákupní objednávka bude expedována právě včas ke splnění poptávky prodejní objednávky. Existující nákupní objednávka získá zprávu akce **Zrušit**, protože není povinná.
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
@@ -224,7 +224,7 @@ Záporné dny můžete chtít nastavit na dlouhou ochrannou dobu a poté pracova
 - V den nula (1. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
 - V den 10 (10. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
 - V den 12 (12. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
-- Záporné dny jsou nastaveny na **20** , což je mnohem více, než doba realizace položky.
+- Záporné dny jsou nastaveny na **20**, což je mnohem více, než doba realizace položky.
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane.
 

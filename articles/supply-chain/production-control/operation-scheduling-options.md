@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c3865bfc3b66c018f836e21bbddf658de0351e57
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211369"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423657"
 ---
 # <a name="operations-scheduling-options"></a>Možnosti plánování operací
 
@@ -97,7 +97,7 @@ Když reference závisejí na výrobních zakázkách, jsou známé také jako d
 
 ### <a name="synchronize-references"></a>Synchronizovat odkazy
 
-Reference mohou být také synchronizovány s výrobní zakázkou. Vyberete-li tuto možnost, budou při změně plánu výrobní zakázky posunuta a vyrovnána i data dílčích výrob. Pokud výrobní zakázka obsahuje jednu nebo více dílčích výrob, můžete naplánovat dílčí výroby společně s hlavní výrobou. V takovém případě hlavní výrobu nelze zahájit až do dokončení souvisejících dílčích výrob. Proto pokud má být plánování dílčích výrob založeno na počátečním a koncovém datu vybrané výroby, zaškrtněte toto políčko. Zaškrtnete toto políčko, jen když není zaškrtnuto také políčko**Plánovat odkazy**.
+Reference mohou být také synchronizovány s výrobní zakázkou. Vyberete-li tuto možnost, budou při změně plánu výrobní zakázky posunuta a vyrovnána i data dílčích výrob. Pokud výrobní zakázka obsahuje jednu nebo více dílčích výrob, můžete naplánovat dílčí výroby společně s hlavní výrobou. V takovém případě hlavní výrobu nelze zahájit až do dokončení souvisejících dílčích výrob. Proto pokud má být plánování dílčích výrob založeno na počátečním a koncovém datu vybrané výroby, zaškrtněte toto políčko. Zaškrtnete toto políčko, jen když není zaškrtnuto také políčko **Plánovat odkazy**.
 
 ## <a name="cancellation"></a>Zrušení
 ### <a name="cancel-queue-time"></a>Zrušit čas čekání před operací

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979821"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424011"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
@@ -42,14 +42,14 @@ Omezení tabulky jsou seznam kombinací hodnoty, které jsou povoleny pro atribu
 
 ### <a name="example-of-a-table-constraint"></a>Příklad omezení tabulky
 
-Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro typy atributů **Povrch skříňky** a **Přední mřížka** .
+Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro typy atributů **Povrch skříňky** a **Přední mřížka**.
 
 | Typ atributu | Hodnoty                      |
 |----------------|-----------------------------|
 | Povrch skříňky | Černá, dub, palisandr, bílá |
 | Přední mřížka    | Černá, kov, bílá         |
 
-Následující tabulka zobrazuje kombinace, které jsou definovány omezením tabulky **Barva a povrch** . Pomocí tohoto omezení tabulky lze konfigurovat reproduktor, který má dubový povrch a černou mřížku, palisandrový povrch a bílou mřížku a tak dále.
+Následující tabulka zobrazuje kombinace, které jsou definovány omezením tabulky **Barva a povrch**. Pomocí tohoto omezení tabulky lze konfigurovat reproduktor, který má dubový povrch a černou mřížku, palisandrový povrch a bílou mřížku a tak dále.
 
 | Dokončit         | Mřížka                       |
 |----------------|-----------------------------|
@@ -86,7 +86,7 @@ Při konfiguraci produktu pomocí následujícího nastavení omezení jsou povo
 (Barva == "Black" & (size == "30" | size == "50")) | (color == "Red" & size = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Mám používat operátory nebo infixový zápis při psaní omezení výrazu?
-Můžete napsat omezení výrazu buď pomocí dostupných prefixových operátorů, nebo pomocí infixového zápisu. U operátorů **Min** , **Max** a **Abs** nelze použít infixový zápis. Tyto operátory jsou k dispozici jako standardní operátory ve většině programovacích jazyků.
+Můžete napsat omezení výrazu buď pomocí dostupných prefixových operátorů, nebo pomocí infixového zápisu. U operátorů **Min**, **Max** a **Abs** nelze použít infixový zápis. Tyto operátory jsou k dispozici jako standardní operátory ve většině programovacích jazyků.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Které operátory a infixový zápis můžu používat při psaní omezení výrazu?
 V následujících tabulkách jsou uvedeny operátory a infixový zápis, které lze použít při zápisu omezení výrazu pro komponentu v modelu konfigurace produktu. V příkladech v první tabulce můžete vidět způsob zápisu výrazu pomocí infixového zápisu nebo operátorů.
@@ -126,7 +126,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nebo</td>
+<td>nebo</td>
 <td>To platí při splnění libovolné podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nepravda</strong>.</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
@@ -135,7 +135,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kladný</td>
+<td>Plus</td>
 <td>Sečte podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>0</strong>.</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
@@ -144,7 +144,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Záporný</td>
+<td>Minus</td>
 <td>Argumenty se negují. Musí mít právě jednu podmínku.</td>
 <td>Minus[expr], infix: -expr</td>
 <td><ul>
@@ -153,47 +153,47 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Funkce ABS</td>
+<td>Abs</td>
 <td>Vezme absolutní hodnotu podmínky. Musí mít právě jednu podmínku.</td>
-<td>ABS [výraz]</td>
+<td>Abs[expr]</td>
 <td><strong>Operátor:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>Časy</td>
 <td>Vezme násobek podmínek. Pokud je počet podmínek 0 (nula), výsledkem je <strong>1</strong>.</td>
-<td>Krát[args], infix: a * b * ... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Doby[x, y, 2] == z</li>
+<li><strong>Operátor:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infixový zápis:</strong> x * y * 2 == z</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Výkon</td>
-<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
+<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní k <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Výkon[x, 2] == y</li>
+<li><strong>Operátor:</strong> Power[x, 2] == y</li>
 <li><strong>Infixový zápis:</strong> x ^ 2 == y</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Maximum</td>
 <td>Výsledkem je největší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Max[argumenty]</td>
+<td>Max[args]</td>
 <td><strong>Operátor:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>Minimum</td>
 <td>Výsledkem je nejmenší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Min[argumenty]</td>
+<td>Min[args]</td>
 <td><strong>Operátor:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>Ne</td>
 <td>Výsledkem logický opak podmínky. Musí mít právě jednu podmínku.</td>
-<td>Ne[expr], infix: !expr</td>
+<td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operátor:</strong> Ne[x] &amp; Ne[y == 3]</li>
+<li><strong>Operátor:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixový zápis:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
