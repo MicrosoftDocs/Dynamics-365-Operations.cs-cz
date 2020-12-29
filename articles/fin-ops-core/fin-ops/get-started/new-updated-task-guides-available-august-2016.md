@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fb43be5e57758664c5e17e48db5b9c38630b2ded
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812525"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694982"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
 
@@ -32,7 +31,7 @@ Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knih
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
 
-Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics AX aktualizace Platform Update 2 (srpen 2016), aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto vydáních naleznete v tématu [Co je nového nebo změněné na domovské stránce Finance and Operations](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Systém nápovědy](help-overview.md).
+Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics AX aktualizace Platform Update 2 (srpen 2016), aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo na domovské stránce Finance and Operations](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Systém nápovědy](help-overview.md).
 
 ### <a name="data-access"></a>Přístup k datům
 

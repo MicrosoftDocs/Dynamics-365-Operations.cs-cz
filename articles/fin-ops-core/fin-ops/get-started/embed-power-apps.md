@@ -3,7 +3,7 @@ title: Vložit aplikace plátna z Power Apps
 description: Toto téma popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893100"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693476"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
@@ -57,7 +56,7 @@ Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps do webo
 3. Konfigurace vložené aplikace:
 
     - Pole **Název** označuje text zobrazený pro tlačítko nebo kartu, které budou obsahovat integrovanou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
-    - Pole **ID aplikace** označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na [web.powerapps.com](https://web.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
+    - Pole **ID aplikace** označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na webu [make.powerapps.com](https://make.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
     - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Dále v pozdější části tohoto tématu [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) získáte podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations.
     - Zvolte **velikost aplikace** odpovídající typu aplikace, kterou vkládáte. Vyberte **Tenký** pro aplikace vytvořené pro mobilní zařízení a **Široký** pro aplikace vytvořené pro tablety. To zajišťuje, že je pro integrovanou aplikaci vyhrazeno dostatečné množství místa.
     - Pevná záložka **Právnické osoby** poskytuje možnost zvolit, pro jaké právnické osoby je aplikace dostupná. Výchozí nastavení je učinit aplikaci přístupnou všem právnickým osobám. Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md). 
@@ -116,7 +115,7 @@ Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji ode
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit.
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit
 
 Podle výchozího nastavení uživatel může vložit aplikace na každou stránku pod tlačítkem nabídky Power Apps nebo přímo na stránku jako kartu, pevnou záložku, list nebo jako nový oddíl v pracovním prostoru. Avšak v případě potřeby vývojáři také mohou konfigurovat tuto funkci, aby povolila vložení aplikace pouze na některé stránky pomocí následujících metod:
 

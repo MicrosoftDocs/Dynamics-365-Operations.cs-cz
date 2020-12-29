@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835079"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693767"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Nový ovládací prvek mřížky poskytuje řadu užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
 
@@ -95,21 +95,23 @@ Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat 
 Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Seskupení tabulkových dat
-[!include [preview banner](../includes/preview-banner.md)]
+Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **Seskupení do mřížek**, která je obecně dostupná ve verzi 10.0.16/Platform update 40 a je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
 
-Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **(Preview) Seskupení do mřížek**, která je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
-
-Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle kterého chcete provést seskupení, a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá novou funkci **Seskupit podle sloupce** na začátek mřížky a vloží „řádky záhlaví“ na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
+Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle kterého chcete provést seskupení, a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá nový sloupec **Seskupit podle** na začátek mřížky a vloží „řádky záhlaví“ na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
 -  Hodnota dat pro skupinu 
--  Název sloupce (tyto informace budou obzvlášť užitečné po podporování více úrovní seskupení.)  
+-  Název sloupce (tyto informace budou obzvlášť užitečné, když máte více úrovní seskupení)  
 -  Počet datových řádků v této skupině
 -  Mezisoučty pro všechny sloupce konfigurované pro zobrazení součtů
 
 Pokud jsou povolena [uložená zobrazení](saved-views.md), lze toto seskupení uložit přizpůsobením jako součást zobrazení pro rychlý přístup při další návštěvě stránky.  
 
-Pokud vyberete možnost **Seskupit podle tohoto sloupce** v jiném sloupci, bude nahrazeno původní seskupení, protože od verze 10.0.9 / Platform Update 33 je podporována pouze úroveň seskupení.
+### <a name="multiple-levels-of-grouping"></a>Více úrovní seskupení
+Poté, co seskupíte data podle jednoho sloupce, můžete data seskupit podle jiného sloupce výběrem možnosti **Seskupit podle tohoto sloupce** na požadovaném sloupci. Tento proces lze opakovat, dokud nemáte 5 vnořených úrovní seskupení, což je maximální podporovaná hloubka. V tomto okamžiku již nebudete moci seskupovat podle dalších sloupců.  
 
-Chcete-li zrušit seskupení v mřížce, klikněte pravým tlačítkem na sloupec seskupení a vyberte možnost **Zrušit seskupení**.  
+Seskupení podle libovolného sloupce můžete kdykoli odebrat kliknutím pravým tlačítkem na daný sloupec a výběrem příkazu **Zrušit seskupení**. Seskupení můžete také odebrat ze všech sloupců výběrem **Možností mřížky** a následně příkazu **Oddělit vše**.   
+
+Před verzí 10.0.16/Platform update 40 je podporována pouze jedna úroveň seskupení. V těchto verzích, pokud jsou data seskupena a vyberete možnost **Seskupit podle tohoto sloupce** pro jiný sloupec, se původní seskupení nahradí.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Rozbalení a sbalení skupin
 V počátečním seskupení dat budou všechny skupiny rozbaleny. Můžete vytvořit souhrnná zobrazení dat sbalením jednotlivých skupin, nebo si můžete rozbalením a sbalením skupiny usnadnit navigaci v datech. Chcete-li skupinu rozbalit nebo sbalit, vyberte tlačítko se znakem > v příslušném řádku záhlaví skupiny. Všimněte si, že stav rozbalení/sbalení jednotlivých skupin **není** uložen v individuálním nastavení.
@@ -146,7 +148,7 @@ Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1
 
 Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlášení jednotlivých stránek z používání nové mřížky 
 Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, od verze 10.0.13/Platform update 37 je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
 
  ```this.forceLegacyGrid();```
@@ -165,10 +167,26 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
     -  Na stránce existuje seskupený seznam karet.
     -  Mřížkový sloupec s nereaktivním rozšiřitelným ovládacím prvkem.
 
-    Když se uživatel poprvé setká s jednou z těchto situací, zobrazí se zpráva o aktualizaci stránky. Po zobrazení této zprávy bude stránka nadále využívat stávající mřížku pro všechny uživatele až do další aktualizace produktu. Pro budoucí aktualizaci bude zváženo lepší zacházení s těmito scénáři, aby bylo možné využít novou mřížku.     
+    Když se uživatel poprvé setká s jednou z těchto situací, zobrazí se zpráva o aktualizaci stránky. Po zobrazení této zprávy bude stránka nadále využívat stávající mřížku pro všechny uživatele až do další aktualizace produktu. Pro budoucí aktualizaci bude zváženo lepší zacházení s těmito scénáři, aby bylo možné využít novou mřížku.    
+    
+-  [KB 4582758] Záznamy jsou rozmazané, když změníte velikost písma ze 100 na jakékoli jiné procento
+    
+### <a name="fixed-as-part-of-10015"></a>Opraveno jako součást verze 10.0.15    
+
+-  [KB 4582723] Možnosti zobrazení se nezobrazí, když je voláte později v životním cyklu formuláře
+
+### <a name="fixed-as-part-of-10014"></a>Opraveno jako součást verze 10.0.14
+
+-  (Aktualizace kvality) [KB 4584752] Neočekávaná chyba klienta ve stránce Návrhy faktury projektu
 
 ### <a name="fixed-as-part-of-10013"></a>Opraveno jako součást verze 10.0.13
 
+-  (Aktualizace kvality) [KB 4583880] Testy Regression Suite Automation Tool (RSAT) selhaly při akci OpenLookup se zprávou "Cannot read property RowIndex of undefined"
+-  (Aktualizace kvality) [KB 4583847] Neočekávaná chyba klienta při procházení jednotlivými vyhledáváními 
+-  (Aktualizace kvality) [Chyba 471777] Nelze vybrat pole v mřížce pro úpravy nebo vytvoření mobilní aplikace
+-  [Chyba 474851] Hypertextové odkazy v ovládacích prvcích referenční skupiny nefungují 
+-  [Chyba 474848] Rozšířené náhledy s mřížkami se nezobrazí
+-  [KB 4582726] Vlastnost RotateSign není respektována  
 -  [Chyba 470173] Zaškrtávací políčka v neaktivních řádcích se přepínají po kliknutí na mezeru v buňce
 -  [Chyba 474848] Rozšířené náhledy s mřížkami se nezobrazí
 -  [Chyba 474851] Hypertextové odkazy v ovládacích prvcích referenční skupiny nefungují 
@@ -176,6 +194,7 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 -  [KB 4569441] Problémy s vykreslováním vícesloupcových seznamů karet, popisů obrázků a možností zobrazení v některých polích
 -  [KB 4575279] Ne všechny označené řádky se v General Journal odstraní
 -  [KB 4575233] Možnosti zobrazení se po přesunutí do jiného řádku neobnoví
+-  [Chyba 477884] Vyhledávání vrátí nesprávnou hodnotu / záznam, pokud je aktivována nová kontrola mřížky
 -  [KB 4571095] K zaúčtování příjemky produktu dochází při náhodném stisknutí klávesy Enter (správné zpracování výchozí akce stránky)
 -  [KB 4575437] Vyhledávání s upravitelnými ovládacími prvky se neočekávaně uzavírají
 -  [KB 4569418] Duplicitní řádek vytvořený ve formuláři harmonogramu doručení
@@ -205,13 +224,13 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 - [KB 4562646] Někdy nemůžete-kliknout mimo mřížku, pokud vyberete více řádků v mřížce.
 - [KB 4562647] Fokus je resetován na první ovládací prvek v dialogovém okně **Publikovat** po přidání nového řádku do mřížky bezpečnostních rolí.
 - [KB 4563310] Rozšířený náhled není po změně řádku uzavřen.
-- [KB 4563313] "Neočekávaná chyba klienta" se objeví v Internet Explorer, když je při vyhledávání vybrána hodnota.
-- [KB 4564557] Vyhledávací a rozbalovací nabídky se neotevřou v Internet Explorer
+- [KB 4563313] V aplikaci Internet Explorer se objeví "Neočekávaná chyba klienta", když je při vyhledávání vybrána hodnota.
+- [KB 4564557] V aplikaci Internet Explorer se neotevřou vyhledávací a rozbalovací nabídky
 - [KB 4563324] Navigace nefunguje po otevření pracovního prostoru **Personální management**.
 
 ### <a name="fixed-as-part-of-10011"></a>Opraveno jako součást verze 10.0.11
 
-- [Vystavení 432458] Na začátku některých podřízených kolekcí se zobrazí prázdné nebo duplicitní řádky.
+- [Problém 432458] Na začátku některých podřízených kolekcí se zobrazí prázdné nebo duplicitní řádky.
 - [KB 4549711] Řádky v návrhu platby nelze po povolení nového ovládacího prvku mřížky správně odebrat.
 - [KB 4558374] Záznamy, které vyžadují dialogové okno s polymorfním selektorem, nelze vytvořit.
 - [KB 4558375] Text nápovědy se nezobrazuje ve sloupcích v nové mřížce.
@@ -225,7 +244,7 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 - [KB 4558383] Ovládací prvky mimo mřížku se po odstranění posledního záznamu neaktualizují.
 - [KB 4558587] Referenční skupiny s poli se seznamem pro náhradní pole nezobrazují hodnoty.
 - [KB 4562143] Po změně řádku nejsou aktualizována pole / Po odstranění řádku dojde k zablokování zpracování mřížky.
-- [KB 4562645] Výjimka nastane, když je vyhledávání otevřeno, zatímco jsou spuštěny testy Remote Administration Administration Tools (RSAT).
+- [KB 4562645] Nastane výjimka, když je vyhledávání otevřeno, zatímco jsou spuštěny testy Regression Suite Automation Tool (RSAT).
 
 ### <a name="fixed-as-part-of-10010"></a>Opraveno jako součást verze 10.0.10
 

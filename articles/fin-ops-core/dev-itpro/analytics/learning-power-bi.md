@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8f97d4f59765840e215710e666079df3d4ecb878
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005772"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685242"
 ---
 # <a name="learning-power-bi-content"></a>Obsah učení v Power BI
 
@@ -35,7 +34,7 @@ Sestavy, které jsou součástí obsahu **učení** v Power BI, mají grafy a ta
 | Sestava                | Obsah |
 |-----------------------|----------|
 | Přehled výuky     | Souhrn dalších sestav |
-| Analýza kurzu       | Registrace podle umístění, účastníci podle stavu, kurzy podle typu u každé společnosti a účast na kurzu podle práce |
+| Analýza kurzu       | Registrace podle umístění, účastníci podle stavu, kurzy podle typu u každé společnosti a účast na kurzu podle práce |
 | Analýza registrace | Seznam registrací |
 | Typy kurzů          | Typy kurzů podle dovednosti |
 | Analýza instruktora   | Poměr kurzů k počtu instruktorů, počet instruktorů, počet kurzů od instruktora, počet kurzů na instruktora a program kurzu od instruktora |

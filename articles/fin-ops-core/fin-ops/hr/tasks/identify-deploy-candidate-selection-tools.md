@@ -3,7 +3,7 @@ title: Identifikování a nasazení nástrojů pro výběr kandidáta
 description: Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143942"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693057"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifikování a nasazení nástrojů pro výběr kandidáta
 
@@ -38,23 +37,23 @@ Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst 
     * Pomocí možnosti Načíst profil vložte data Certifikát, vzdělání a dovednosti vybrané osoby, práce nebo kurzu jako základ pro vyhledávání.   Potom můžete přidávat a odebírat kritéria, uvést, jsou-li kritéria volitelné a určit pořadí důležitosti kritérií.  
 7. Klikněte na možnost Úloha.
 8. V poli Úloha zadejte nebo vyberte hodnotu.
-9. Klikněte na tlačítko OK.
-10. Rozbalte pevnou záložku rozsahu a zadejte veškeré doplňkové informace, jako jsou například oddělení.
-11. Rozbalte pevnou záložku certifikátů pro zobrazení nebo úpravu certifikátů.
-12. Rozbalte pevnou záložku dovedností pro zobrazení nebo úpravu dovedností.
+9. Klepněte na tlačítko OK.
+10. Rozbalte pevnou záložku Rozsah a zadejte veškeré doplňkové informace, jako jsou například oddělení.
+11. Rozbalte pevnou záložku Certifikáty pro zobrazení nebo úpravu certifikátů.
+12. Rozbalte pevnou záložku Dovednosti pro zobrazení nebo úpravu dovedností.
 13. Rozbalte pevnou záložku Vzdělání pro zobrazení nebo úpravu vzdělání.
 14. Klikněte na tlačítko Spustit.
-15. Klikněte na tlačítko OK.
+15. Klepněte na tlačítko OK.
 16. Klikněte na možnost Výsledky.
 17. Klikněte na možnost Výsledky.
 18. Klepněte na možnost Obnovit.
 19. Klikněte na Certifikáty.
-    * Je možné přejít dále na každou uvedenou osobu a zobrazit podrobnosti o jejich vzdělání, dovednostech, profesionálních zkušenostech atd.  
+    * Je možné přejít dále na každou uvedenou osobu a zobrazit podrobnosti o jejich vzdělání, dovednostech a profesionálních zkušenostech.  
 20. Zavřete stránku.
 21. Zavřete stránku.
 22. Vyberte znovu výsledek.
 23. Klikněte na možnost Sestava.
-    * Sestava zobrazí seznam doporučených spárování v horní části sestavy.  Můžete vidět, že je zde uveden element „mezera“.  To je rozdíl mezi úrovní, která byla uvedena v mapování dovedností a úrovní dovednosti, která je přiřazena dané osobě.  
+    * Sestava zobrazí seznam doporučených spárování v horní části sestavy.  Vidíte, že element „mezera“ je zde uveden.  To je rozdíl mezi úrovní, která byla uvedena v mapování dovedností a úrovní dovednosti, která je přiřazena dané osobě.  
 24. Zavřete stránku.
 25. Klikněte na položku Uložit.
 

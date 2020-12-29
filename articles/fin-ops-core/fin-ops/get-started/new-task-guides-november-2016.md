@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811594"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695030"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811594"
 
 Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 
-Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations, aktualizace Platform Update 3, Microsoft Dynamics AX aktualizace Platform Update 2, aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto vydáních naleznete v tématu [Co je nového nebo změněné na domovské stránce Finance and Operations](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Systém nápovědy](help-overview.md).
+Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations, aktualizace Platform Update 3, Microsoft Dynamics AX aktualizace Platform Update 2, aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo na domovské stránce Finance and Operations](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Systém nápovědy](help-overview.md).
 
 > [!NOTE]
 > Hvězdička (\*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics 365 for Operations listopad 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.

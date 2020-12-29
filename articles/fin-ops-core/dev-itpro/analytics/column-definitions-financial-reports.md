@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3a92970f2e3639090f51cf9e59ffcb148e210494
-ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
+ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4011626"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687223"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
@@ -112,7 +111,7 @@ Následující tabulka popisuje kódy omezení sloupce.
 
 | Kód omezení sloupce | Popis |
 |-------------------------|-------------|
-| SU                      | Potlačí podtržení sloupce, kde je zadán příkaz podtržení ( **---** ) nebo příkaz dvojitého podtržení ( **===** ) v definici řádku. Nemusí být vhodné například podtrhovat částky, které jsou vytvářeny podle výpočtu procentuální hodnoty. |
+| SU                      | Potlačí podtržení sloupce, kde je zadán příkaz podtržení (**---**) nebo příkaz dvojitého podtržení (**===**) v definici řádku. Nemusí být vhodné například podtrhovat částky, které jsou vytvářeny podle výpočtu procentuální hodnoty. |
 | ST                      | Potlačí součty, aby se zobrazily v tomto sloupci pouze podrobnosti (například statistický sloupec). |
 | SD                      | Potlačí podrobnosti, takže se ve sloupci zobrazí pouze řádky **TOT** a **CAL** (z definice řádku). |
 | DR                      | Omezí částky ve sloupci **FD** na částky Má dáti. |
@@ -170,10 +169,10 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 ### <a name="create-an-automatically-generated-header"></a>Vytvoření automaticky generovaného záhlaví
 
-Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC** a **FD**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. V sestavě se proto text se zobrazí velkými i malými písmeny. Například u standardního kalendářního roku **\@CalMonthLong** převede měsíc **7** na **červenec**. Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC** ), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **\@CALMONTHLONG**. Kódy lze používat společně s textem. Například zadejte následující text záhlaví: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
+Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC** a **FD**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. V sestavě se proto text se zobrazí velkými i malými písmeny. Například u standardního kalendářního roku **\@CalMonthLong** převede měsíc **7** na **červenec**. Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **\@CALMONTHLONG**. Kódy lze používat společně s textem. Například zadejte následující text záhlaví:**Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
 
 > [!NOTE]
-> Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru. Tato nastavení můžete změnit, kliknutím na tlačítko **Start** , na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.
+> Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.
 
 
 | Možnost a kód automatického textu                | Popis |
@@ -195,10 +194,10 @@ Návrhář sestav může automaticky generovat záhlaví sloupců na základě k
 
 Podmíněná překlenovací záhlaví mohou na základě zadaného data období zasahovat do více sloupců. Pokud máte například sestavu rozpočtu na fiskální rok a chcete zobrazit skutečné rozpočty za minulé měsíce s předpokládanými rozpočty na budoucí měsíce, můžete pomocí podmíněných překlenovacích záhlaví automaticky aktualizovat záhlaví sestavy. Při vytváření podmíněných překlenovacích záhlaví dávejte pozor na následující situace:
 
-- Jakákoli podmínka zastavení (pole **Pokrýt k** ) vyhovující před podmínkou začátku (pole **Pokrýt od** ) bude ignorována. Pokud má například sloupec B podmínku rozšíření definovánu jako BASE+1 až BASE, hodnota BASE je ve sloupci C a BASE+1 ve sloupci D. V takovém případě podmínka konce ve sloupci C je ignorována a tisk záhlaví začíná sloupcem D.
-- Zadáte-li záhlaví sloupců, která se překrývají, budou se překrývat při vytištění v sestavě. estava bude vygenerována, ale zobrazí se následující upozornění v poli **Stav fronty sestav** : „Záhlaví sloupců používající základ se překrývají s jinými záhlavími sloupců a mohou způsobit překrývání textu.“ Například definice záhlaví sloupce B je B až BASE+1 a definice záhlaví ve sloupci D je BASE+1 až F. V takovém případě se záhlaví tisknou na sebe a jsou nečitelná. Vždy při použití funkce BASE v definici **Pokrýt od / Pokrýt k** si prohlédněte vygenerovanou sestavu a zkontrolujte, zda se záhlaví nepřekrývají.
-- Pokud v definici pokrytí zadáte hodnotu BASE ve sloupci Netisknout ( **NP** ), bude ignorována bez ohledu na to, co je definováno v definici sloupce. Tento scénář je v podstatě stejný, jako když nevytvoříte definici záhlaví sloupce.
-- V případě sloupců s podmíněným tiskem ( **P&lt;B** , **P&gt;=B** ) se záhlaví s podmíněným pokrytím chová jako jakákoli běžná definice záhlaví sloupce. Pokud je například výsledkem podmínky hodnota Nepravda, bude tisk záhlaví začínat na každém dalším sloupci odpovídajícím podmínce rozšíření.
+- Jakákoli podmínka zastavení (pole **Pokrýt k**) vyhovující před podmínkou začátku (pole **Pokrýt od**) bude ignorována. Pokud má například sloupec B podmínku rozšíření definovánu jako BASE+1 až BASE, hodnota BASE je ve sloupci C a BASE+1 ve sloupci D. V takovém případě podmínka konce ve sloupci C je ignorována a tisk záhlaví začíná sloupcem D.
+- Zadáte-li záhlaví sloupců, která se překrývají, budou se překrývat při vytištění v sestavě. estava bude vygenerována, ale zobrazí se následující upozornění v poli **Stav fronty sestav**: „Záhlaví sloupců používající základ se překrývají s jinými záhlavími sloupců a mohou způsobit překrývání textu.“ Například definice záhlaví sloupce B je B až BASE+1 a definice záhlaví ve sloupci D je BASE+1 až F. V takovém případě se záhlaví tisknou na sebe a jsou nečitelná. Vždy při použití funkce BASE v definici **Pokrýt od / Pokrýt k** si prohlédněte vygenerovanou sestavu a zkontrolujte, zda se záhlaví nepřekrývají.
+- Pokud v definici pokrytí zadáte hodnotu BASE ve sloupci Netisknout (**NP**), bude ignorována bez ohledu na to, co je definováno v definici sloupce. Tento scénář je v podstatě stejný, jako když nevytvoříte definici záhlaví sloupce.
+- V případě sloupců s podmíněným tiskem (**P&lt;B**, **P&gt;=B**) se záhlaví s podmíněným pokrytím chová jako jakákoli běžná definice záhlaví sloupce. Pokud je například výsledkem podmínky hodnota Nepravda, bude tisk záhlaví začínat na každém dalším sloupci odpovídajícím podmínce rozšíření.
 
 #### <a name="create-a-conditional-spanning-header"></a>Vytvoření podmíněného překlenovacího záhlaví
 
@@ -206,13 +205,13 @@ Podmíněná překlenovací záhlaví mohou na základě zadaného data období 
 2. Klikněte dvakrát na buňku záhlaví.
 3. V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce. Případně klikněte na tlačítko **Vložit automatický text** a vyberte možnost.
 4. V poli **Možnosti formátu** vyberte styl formátování pro záhlaví.
-5. Zadejte období vztahující se k základnímu období, které je zadáno při generování sestavy. V polích **Pokrýt od** a **Pokrýt k** zadejte některou z následujících hodnot: **BASE** , **BASE-X** nebo **BASE+X** , kde X je počet období od základního období. Zadáte-li například **BASE** do pole **Pokrýt od** , text záhlaví sloupce s podmíněným pokrytím začíná v záhlaví sloupce, kde se hodnota definice sestavy **Základní období** rovná hodnotě definice sloupce **Období**. Končí ve sloupci, který je určen v poli **Pokrýt k**. Proto pokud je pokrytí od BASE k M a hodnota definice sestavy **Základní období** je **4** , záhlaví začne ve sloupci, ve kterém je období nastaveno na hodnotu **4** a končí ve sloupci M. Záhlaví končí a začínají pouze v tisknutých sloupcích.
+5. Zadejte období vztahující se k základnímu období, které je zadáno při generování sestavy. V polích **Pokrýt od** a **Pokrýt k** zadejte některou z následujících hodnot: **BASE**, **BASE-X** nebo **BASE+X**, kde X je počet období od základního období. Zadáte-li například **BASE** do pole **Pokrýt od**, text záhlaví sloupce s podmíněným pokrytím začíná v záhlaví sloupce, kde se hodnota definice sestavy **Základní období** rovná hodnotě definice sloupce **Období**. Končí ve sloupci, který je určen v poli **Pokrýt k**. Proto pokud je pokrytí od BASE k M a hodnota definice sestavy **Základní období** je **4**, záhlaví začne ve sloupci, ve kterém je období nastaveno na hodnotu **4** a končí ve sloupci M. Záhlaví končí a začínají pouze v tisknutých sloupcích.
 6. V části **Zarovnání** vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.
-7. Klepněte na tlačítko **OK**.
+7. Klikněte na tlačítko **OK**.
 
 #### <a name="example-of-a-conditional-spanning-header"></a>Příklad podmíněného překlenovacího záhlaví
 
-Petra vytváří sestavu pro dynamickou šestiměsíční prognózu. Chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“. Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu. Přestože Petra může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy. Pavla otevře Návrhář sestav, klikne na tlačítko **Definice sloupce** v navigačním podokně a otevře definici sloupce pro sestavu. Zadá potom následující informace. Základní období v definici sestavy je 4.
+Uživatel vytváří sestavu pro dynamickou šestiměsíční prognózu. Uživatel chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“. Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu. Přestože uživatel může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy. Uživatel otevře Návrhář sestav, klikne na tlačítko **Definice sloupce** v navigačním podokně a otevře definici sloupce pro sestavu. Uživatel potom zadá následující informace. Základní období v definici sestavy je 4.
 
 |      Formát         |  A   | mld.             | K             | D             | E             | F             | G             | H             | I             | J             | tis.             | L             | mil.             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
@@ -227,7 +226,7 @@ Petra vytváří sestavu pro dynamickou šestiměsíční prognózu. Chce, aby s
 | Šířka sloupce        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Řízení tisku       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Pavla kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno **Záhlaví sloupce** , kam zadá následující informace.
+Uživatel kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno **Záhlaví sloupce** a zadá následující informace.
 
 | Pole              | Hodnota                 |
 |--------------------|-----------------------|
@@ -235,11 +234,11 @@ Pavla kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno 
 | Vložit automatický text    | Nebyla vybrána žádná možnost. |
 | Možnosti formátu     | Pole                   |
 | Zarovnání      | Nebyla vybrána žádná možnost. |
-| Rozšířit z        | B                     |
+| Rozšířit z        | mld.                     |
 | Rozšířit do          | ZÁKLAD                  |
 | Záhlaví rozpočtu      | BASE+1 až koncový sloupec  |
 
-Poté, co dokončí zadávání informací, Pavla klikne na tlačítko **OK**. Poté kliknutím dvakrát na buňku záhlaví sloupce C otevřete dialogové okno **Záhlaví sloupce** , kam zadá následující informace.
+Po zadání informací uživatel klikne na **OK**. Poté uživatel kliknutím dvakrát na buňku záhlaví sloupce C otevře dialogové okno **Záhlaví sloupce** a zadá následující informace.
 
 | Pole              | Hodnota                 |
 |--------------------|-----------------------|
@@ -265,7 +264,7 @@ Buňka **Zarovnání** se používá k formátování zarovnání sloupce popisu
     - **Vpravo** – popisy sloupců se zarovnají doprava.
 
 ## <a name="add-special-formatting-options"></a>Přidání speciálních možností formátování
-Řádky podrobností ve sloupci formátování v definici sloupců umožňují uplatnit speciální formátování na vybrané sloupce. I když jsou některé možnosti **Řízení tisku** a možnosti **Omezení sloupce** specifické pro sloupce **FD** , většina možnosti platí pro všechny typy sloupců. Formátování zadané v definici řádku přepíše formátování, které je zadáno v definici sloupce a v definici sestavy. Formátování zadané v definici řádku však přepíše formátování, které je zadáno v definici sloupce. Následující řádky se považují za řádky formátování:
+Řádky podrobností ve sloupci formátování v definici sloupců umožňují uplatnit speciální formátování na vybrané sloupce. I když jsou některé možnosti **Řízení tisku** a možnosti **Omezení sloupce** specifické pro sloupce **FD**, většina možnosti platí pro všechny typy sloupců. Formátování zadané v definici řádku přepíše formátování, které je zadáno v definici sloupce a v definici sestavy. Formátování zadané v definici řádku však přepíše formátování, které je zadáno v definici sloupce. Následující řádky se považují za řádky formátování:
 
 - Šířka sloupce
 - Mezery navíc před sloupcem
@@ -274,7 +273,7 @@ Buňka **Zarovnání** se používá k formátování zarovnání sloupce popisu
 
 ### <a name="changing-the-column-width"></a>Změna šířky sloupce
 
-Buňka **Šířka sloupce** určí počet znaků, které mají být použity pro šířku tohoto sloupce v tištěné sestavě. Šířka sloupců je důležitá pro sloupce, které obsahují částky (sloupce typu **CALC** , **WKS** nebo **FD** ), popisy (sloupce typu **DESC** ) nebo vyplnění (sloupce typu **FILL** ). Ve výchozím nastavení je zvolena možnost **Automaticky přizpůsobit** , takže každý sloupec je automaticky upraven podle obsahu.
+Buňka **Šířka sloupce** určí počet znaků, které mají být použity pro šířku tohoto sloupce v tištěné sestavě. Šířka sloupců je důležitá pro sloupce, které obsahují částky (sloupce typu **CALC**, **WKS** nebo **FD**), popisy (sloupce typu **DESC**) nebo vyplnění (sloupce typu **FILL**). Ve výchozím nastavení je zvolena možnost **Automaticky přizpůsobit**, takže každý sloupec je automaticky upraven podle obsahu.
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Zadání šířky sloupce v sestavě
 
@@ -313,7 +312,7 @@ Buňka **Řízení tisku** může obsahovat kódy, které upraví zobrazení neb
 | X0                 | Potlačit sloupec v případě, že obsahuje pouze nuly nebo prázdné hodnoty          | Vyloučí sloupec **FD** ze sestavy, pokud jsou všechny buňky ve sloupci prázdné nebo obsahují nuly. |
 | SR                 | Potlačit zaokrouhlování                               | Zabrání zaokrouhlení částek v tomto sloupci. |
 | XR                 | Potlačit zahrnutí                                 | Potlačí zahrnutí. Pokud sestava používá organizační strom, nebudou částky v tomto sloupci zahrnuty do následných nadřazených uzlů. |
-| RP                 | Opakovat sloupec na každé stránce                      | Opakuje zadaný sloupec na všech stránkách sestavy. Například můžete použít kontrolní kód **RP** k zahrnutí sloupce typu **ROW** , který shromáždí kódy řádků na každé stránce. |
+| RP                 | Opakovat sloupec na každé stránce                      | Opakuje zadaný sloupec na všech stránkách sestavy. Například můžete použít kontrolní kód **RP** k zahrnutí sloupce typu **ROW**, který shromáždí kódy řádků na každé stránce. |
 | WT                 |  Zalamovat text                                      |  Pokud je text příliš dlouhý na místo ve sloupci, zalomí tato možnost text tak, aby se celý text vešel do sloupce. |
 
 #### <a name="conditional-print-control-codes"></a>Podmíněné kódy řízení tisku
@@ -339,7 +338,7 @@ Buňka **Řízení tisku** může obsahovat kódy, které upraví zobrazení neb
 > Můžete také zadat tiskové kódy přímo do buňky **Řízení tisku**. Jednotlivé kódy řízení tisku oddělte čárkou.
 
 ## <a name="column-types"></a>Typy sloupce
-Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v řádku **Typ sloupce** v definici sloupce. Každá definice sloupce musí obsahovat minimálně jeden sloupec popisu ( **DESC** ) a jeden sloupec částky ( **FD** , **WKS** nebo **CALC** ).
+Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v řádku **Typ sloupce** v definici sloupce. Každá definice sloupce musí obsahovat minimálně jeden sloupec popisu (**DESC**) a jeden sloupec částky (**FD**, **WKS** nebo **CALC**).
 
 > [!NOTE]
 > Kódy typu sloupce se nevztahují na všechny účetní systémy. Vyberete-li typ, který není pro daný účetním systémem platný, zobrazí se daný sloupec v sestavě jako prázdný.
@@ -462,7 +461,7 @@ Buňka **Pokrytá období** identifikuje částku, kterou má sloupec zobrazit. 
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Filtr atributů v definici sloupce
 
-Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci. Atributy účtu zahrnují položky **Majetek** , **Závazky** , **Výnosy** a **Výdaje**. Atributy transakce zahrnují položky **Popis transakce** a **Datum použití transakce**. Podpora atributů se v systémech Microsoft Microsoft Dynamics ERP může lišit. Buňka **Filtr atributů** omezuje data ve sloupcích **FD** na konkrétní hodnoty nebo rozsahy pro kategorie atributů. Ačkoli lze tuto funkci použít spolu se sloupcem **ATTR** , sloupec **ATTR** není požadován. Ve sloupci **FD** existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.
+Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci. Atributy účtu zahrnují položky **Majetek**, **Závazky**, **Výnosy** a **Výdaje**. Atributy transakce zahrnují položky **Popis transakce** a **Datum použití transakce**. Podpora atributů se v systémech Microsoft Microsoft Dynamics ERP může lišit. Buňka **Filtr atributů** omezuje data ve sloupcích **FD** na konkrétní hodnoty nebo rozsahy pro kategorie atributů. Ačkoli lze tuto funkci použít spolu se sloupcem **ATTR**, sloupec **ATTR** není požadován. Ve sloupci **FD** existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.
 
 > [!NOTE]
 > Pokud chcete zjistit, jaké atributy váš systém ERP podporuje, prostudujte příručku pro integraci svého systému.
@@ -524,22 +523,22 @@ Chcete-li určit zúčtovací měnu společnosti, postupujte takto.
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Zadání měny v sestavě s více měnami
 
 1. V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.
-2. Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Zúčtovací měna pro hlavní knihu** , **Vykazování hlavní knihy** , měnu transakce nebo vyberte možnost převodu na jinou měnu vykazování.
+2. Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Zúčtovací měna pro hlavní knihu**, **Vykazování hlavní knihy**, měnu transakce nebo vyberte možnost převodu na jinou měnu vykazování.
 3. Klikněte dvakrát na buňku **Filtr měny** v odpovídajícím sloupci **FD** a poté vyberte odpovídající kód měny v seznamu. V sestavě jsou zobrazeny pouze transakce, které byly zadány v této měně.
 
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Příklad pro buňky Zobrazení měny a Filtr měny
 
-Petra ve své definici sloupce vybrala následující měny:
+Uživatel ve své definici sloupce vybral následující měny:
 
 - **Filtr měny:** Jen
 - **Zobrazení měny:** Zúčtovací měna z hlavní knihy (USD)
 
-Vzhledem k filtru měny, který Petra vybrala, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY). Vzhledem k zobrazení měny, které vybrala, se v sestavě zobrazí tyto transakce v zúčtovací měně (americké dolary – USD).
+Vzhledem k filtru měny, který uživatel vybral, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY). Vzhledem k zobrazení měny, které uživatel vybral, se v sestavě zobrazí tyto transakce v zúčtovací měně (americké dolary – USD).
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinace filtru měny a zobrazení měny
 
-Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různé kombinace možností v buňkách **Zobrazení měny** a **Filtr měny** z důvodu voleb, které Pavla učinila. Funkční měna je USD.
+Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různé kombinace možností v buňkách **Zobrazení měny** a **Filtr měny** z důvodu voleb, které uživatel provedl. Funkční měna je USD.
 
 
 | Buňka Zobrazení měny                        | Buňka Filtr měny | Výsledek sestavy |
@@ -551,7 +550,7 @@ Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různ
 
 ### <a name="calculation-column-in-a-column-definition"></a>Sloupec Výpočet v definici sloupců
 
-Typ sloupce **CALC** v definici sloupce podporuje složité výpočty v buňce **Vzorec** a může obsahovat operátory **+** , **-** , **\*** a **/** , a také výrazy **IF/THEN/ELSE**. Sloupec výpočtu může také odkazovat na libovolný sloupec, dokonce i následující sloupce. Kromě toho výpočet sloupce můžete zahrnout také fiskální rok a období k podpoře záhlaví sloupce. Vzorec výpočtu může mít délku až 1 024 znaků. Pokud chcete výsledek výpočtu vyjádřit procentuální hodnotou, použijte formát přepisu.
+Typ sloupce **CALC** v definici sloupce podporuje složité výpočty v buňce **Formula** a může obsahovat operátory **+**, **-**, **\**_ a _*/**, a také příkazy **IF/THEN/ELSE**. Sloupec výpočtu může také odkazovat na libovolný sloupec, dokonce i následující sloupce. Kromě toho výpočet sloupce můžete zahrnout také fiskální rok a období k podpoře záhlaví sloupce. Vzorec výpočtu může mít délku až 1 024 znaků. Pokud chcete výsledek výpočtu vyjádřit procentuální hodnotou, použijte formát přepisu.
 
 > [!NOTE]
 > Ve výsledcích výpočetních vzorců nejsou zahrnuty hodnoty v netisknutelných rozsazích sloupců. Například hodnota **A:D** vytiskne hodnotu **0** (nula), zatímco hodnota **A+B+C** pro netisknuté hodnoty vypočítá hodnotu.

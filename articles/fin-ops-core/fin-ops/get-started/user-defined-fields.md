@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 5f74397bcdd59a1fe24f5b6046081cbd2bed461b
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112329"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693538"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Vytvoření vlastních polí a práce s nimi
 
@@ -40,7 +39,7 @@ Poté, co jste identifikovali doplňující informace, které chcete v aplikaci 
 Proces vytváření vlastního pole a umístění daného pole ve formuláři je popsán v následujících krocích.
 
 1. Přejděte na formulář, ve kterém chcete mít nové pole.
-2. Vzhledem k tomu, že cílem je mít vlastní pole ve formuláři, vstupní bod pro vytváření vlastního pole existuje v rámci infividuálního nastavení. Otevřete panel nástrojů individuálního nastavení výběrem položky **Možnosti**a pak **Přizpůsobit tento formulář**.
+2. Vzhledem k tomu, že cílem je mít vlastní pole ve formuláři, vstupní bod pro vytváření vlastního pole existuje v rámci infividuálního nastavení. Otevřete panel nástrojů individuálního nastavení výběrem položky **Možnosti** a pak **Přizpůsobit tento formulář**.
 3. Klikněte na **Vložit** a pak **Pole**.
 4. Vyberte oblast formuláře, ve kterém chcete zveřejnit nové pole. Po výběru možnosti **Vložit pole** zobrazí dialogové okno seznam existujících polí, která lze vložit do vybrané oblasti formuláře.
 5. Ověřte, že pole, které vás zajímá, již v seznamu neexistuje. Pokud ano, můžete jednoduše toto pole vybrat v seznamu a kliknout na **Vložit**.

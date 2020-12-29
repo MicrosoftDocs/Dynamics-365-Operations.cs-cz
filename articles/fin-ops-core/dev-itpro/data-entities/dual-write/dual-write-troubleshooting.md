@@ -1,6 +1,6 @@
 ---
 title: Obecné řešení potíží
-description: Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service.
+description: Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688252"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service.
+
+Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -51,11 +53,11 @@ Po instalaci nástroje package deployer nainstalujte balíček řešení pomocí
     ![Obsah složky Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
 
 3. Vložte všechny zkopírované soubory do složky **Nástroje** v nástroji Package Deployer. 
-4. Spuštěním **PackageDeployer.exe** vyberte prostředí Common Data Service a nainstalujte řešení.
+4. Spuštěním **PackageDeployer.exe** vyberte prostředí Dataverse a nainstalujte řešení.
 
     ![Obsah složky Nástroje](media/paste_copied_files.png)
 
-## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Chcete-li zobrazit podrobnosti chyby, povolte a zobrazte protokol sledování modulů plug-in v Common Data Service
+## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Chcete-li zobrazit podrobnosti chyby, povolte a zobrazte protokol sledování modulů plug-in v Dataverse
 
 **Požadovaná role pro zapnutí protokolu sledování a zobrazení chyb:** správce systému
 
@@ -63,7 +65,7 @@ Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
 1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Systém** vyberte **Správa**.
 2. Na stránce **Správa** zvolte **Nastavení systému**.
-3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše** , chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
+3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
 
 
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
@@ -74,7 +76,7 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v aplikacích Finance and Operations
 
-**Požadovaná role pro zobrazení chyb:** Chyby duálního zápisu správce systému, které vznikly v Common Data Service, se mohou objevit v aplikaci Finance and Operations. V některých případech není úplný text chybové zprávy k dispozici, protože zpráva je příliš dlouhá nebo obsahuje osobní identifikační údaje (PII). Pomocí následujících kroků můžete zapnout podrobné protokolování chyb.
+**Požadovaná role pro zobrazení chyb:** Chyby duálního zápisu správce systému, které vznikly v Dataverse, se mohou objevit v aplikaci Finance and Operations. V některých případech není úplný text chybové zprávy k dispozici, protože zpráva je příliš dlouhá nebo obsahuje osobní identifikační údaje (PII). Pomocí následujících kroků můžete zapnout podrobné protokolování chyb.
 
 1. Všechny konfigurace projektu v aplikacích Finance and Operations mají vlastnost **IsDebugMode** v entitě **DualWriteProjectConfiguration**. Otevřete entitu **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel.
 
@@ -83,9 +85,9 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
 2. Nastavte vlastnost **IsDebugMode** na **Ano** pro projekt.
 3. Spuštění scénáře generujících chyby.
-4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX** ):
+4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX**):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro aplikaci Finance and Operations
 
@@ -99,15 +101,15 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 6. Vyberte **Protokoly aplikací a služeb \> Microsoft \> Dynamics \> AX -DualWriteSync \> Provozní**.
 7. Prohlédněte si seznam posledních chyb.
 
-## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Zrušte propojení a propjte jiné prostředí Common Data Service z aplikace Finance and Operations
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Zrušte propojení a propjte jiné prostředí Dataverse z aplikace Finance and Operations
 
-**Požadovaná role pro zrušení propojení prostředí:** Správce systému buď pro aplikaci Finance and Operations nebo Common Data Service.
+**Požadovaná role pro zrušení propojení prostředí:** Správce systému buď pro aplikaci Finance and Operations nebo Dataverse.
 
 1. Přihlášení do aplikace Finance and Operations.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**.
 3. Vyberte všechna spuštěná mapování a pak vyberte **Zastavit**.
 4. Zvolte **Odpojit prostředí**.
-5. Vyberte **Ano** , chcete-li potvrdit operaci.
+5. Vyberte **Ano**, chcete-li potvrdit operaci.
 
 Nyní můžete propojit nové prostředí.
 
@@ -115,7 +117,7 @@ Nyní můžete propojit nové prostředí.
 
 Po vytvoření prodejní objednávky v produktu Dynamics 365 Sales se můžete kliknutím na možnost **+ Přidat produkty** přesměrovat do formuláře řádku objednávky Dynamics 365 Project Operations. Neexistuje žádný způsob, jak z tohoto formuláře zobrazit formulář **Informace** pro řádek prodejní objednávky. Možnost pro **informace** není zobrazena v rozevírací nabídce pod položkou **Nový řádek objednávky**. K tomu dojde, protože operace projektu byly nainstalovány ve vašem prostředí.
 
-Chcete-li znovu povolit možnost formuláře **Informace** , postupujte následujícím způsobem:
+Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následujícím způsobem:
 1. Přejděte na entitu **Řádek** objednávky.
 2. Vyhledejte formulář **Informace** v uzlu formulářů. 
 3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 

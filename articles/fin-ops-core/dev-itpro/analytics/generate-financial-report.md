@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181834"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688310"
 ---
 # <a name="generate-financial-reports"></a>Generovat finanční sestavy
 
@@ -98,7 +97,7 @@ Abyste mohli odstranit plán sestavy, musíte být vlastníkem plánu sestavy ne
 
 Pokud nezadáte přihlašovací údaje, které jsou vyžadovány u všech společností zahrnutých do sestav, při uložení plánu sestav obdržíte následující zprávu: „Je nutné zadat vaše přihlašovací údaje pro společnosti, které jsou obsaženy v tomto plánu sestavy. Klikněte na tlačítko Oprávnění a zadejte přihlašovací údaje.“
 
-Petra se například přihlásí ke společnosti A pomocí svého přihlašovacího jména a hesla. Vytvoří plán pro sestavu, která používá definici stromu výkaznictví ke shromažďování dat z více společností. Při uložení tohoto plánu sestavy je Petra vyzvána k zadání přihlašovacích údajů ostatních společností, které jsou zadány v definici organizačního stromu. Po vypršení platnosti vašich přihlašovacích údajů nebudou ovlivněné sestavy v plánu sestav generovány, dokud nebudou přihlašovací údaje aktualizovány. Zobrazí se zpráva ve frontě sestav informující o tom, že je nutné aktualizovat oprávnění. Provedená plánu sestavy se nezdaří, pokud nastane některá z následujících situací (kvůli vyžadovaným přihlašovacím údajům):
+Uživatel se například přihlásí ke společnosti A pomocí svého přihlašovacího jména a hesla. Uživatel vytvoří plán pro sestavu, která používá definici stromu výkaznictví ke shromažďování dat z více společností. Při uložení tohoto plánu sestavy je uživatel vyzván k zadání přihlašovacích údajů ostatních společností, které jsou zadány v definici organizačního stromu. Po vypršení platnosti vašich přihlašovacích údajů nebudou ovlivněné sestavy v plánu sestav generovány, dokud nebudou přihlašovací údaje aktualizovány. Zobrazí se zpráva ve frontě sestav informující o tom, že je nutné aktualizovat oprávnění. Provedená plánu sestavy se nezdaří, pokud nastane některá z následujících situací (kvůli vyžadovaným přihlašovacím údajům):
 
 - byla přidána nová společnost do stromu sestav pro jednotlivou sestavu;
 - Některá sestava ve skupině sestav byla změněna

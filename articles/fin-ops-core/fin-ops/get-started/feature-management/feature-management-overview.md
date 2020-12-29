@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015036"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692959"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
@@ -43,7 +42,7 @@ Seznam funkcí obsahuje následující informace:
 - **Přidaná funkce** – Datum, kdy byla funkce přidána do vašeho prostředí. Toto datum je automaticky zadáno při aktualizaci prostředí během měsíčního vydání verze.
 - **Modul** – Modul, který je touto novou funkcí ovlivněn.
 
-Vyberete-li funkci, zobrazí se v podokně podrobností vpravo od seznamu funkcí další informace. V horní části podokna se zobrazí název funkce, datum, kdy byla funkce přidána, modul ovlivněný funkcí a odkaz na **Další informace**. Tento odkaz vyberte, chcete-li zobrazit dokumentaci k dané funkci. Není-li dokumentace k dispozici, budete navedeni na dočasnou stránku. Podokno podrobností rovněž obsahuje pole **Komentáře** , do kterého můžete přidat vlastní komentáře k funkci.
+Vyberete-li funkci, zobrazí se v podokně podrobností vpravo od seznamu funkcí další informace. V horní části podokna se zobrazí název funkce, datum, kdy byla funkce přidána, modul ovlivněný funkcí a odkaz na **Další informace**. Tento odkaz vyberte, chcete-li zobrazit dokumentaci k dané funkci. Není-li dokumentace k dispozici, budete navedeni na dočasnou stránku. Podokno podrobností rovněž obsahuje pole **Komentáře**, do kterého můžete přidat vlastní komentáře k funkci.
 
 V pracovním prostoru **Správa funkcí** je také k dispozici několik karet, z nichž každá ukazuje seznam funkcí.
 
@@ -58,7 +57,7 @@ Není-li funkce zapnutá, zobrazí se v podokně podrobností tlačítko **Povo
 
 - Vyberte funkci, kterou chcete zapnout, a poté v podokně podrobností vyberte možnost **Povolit nyní.** Funkce se zapne.
 
-Některé funkce nelze po zapnutí vypnout. Pokud nelze vypnout funkci, kterou se pokoušíte zapnout, zobrazí se upozornění. V tomto okamžiku můžete vybrat možnost **Zrušit** , chcete-li operaci zrušit a ponechat funkci vypnutou. Pokud však vyberete možnost **Povolit** a povolíte funkci, nebude možné ji později vypnout.
+Některé funkce nelze po zapnutí vypnout. Pokud nelze vypnout funkci, kterou se pokoušíte zapnout, zobrazí se upozornění. V tomto okamžiku můžete vybrat možnost **Zrušit**, chcete-li operaci zrušit a ponechat funkci vypnutou. Pokud však vyberete možnost **Povolit** a povolíte funkci, nebude možné ji později vypnout.
 
 Před zapnutím některých funkcí se zobrazí zpráva, která obsahuje další informace. Tyto funkce jsou označeny symbolem žlutého upozornění. Pozorně si přečtěte další informace, abyste lépe pochopili, co se stane, když je funkce povolena. Chcete-li však funkci zapnout, můžete také vybrat možnost **Povolit**.
 
@@ -92,7 +91,7 @@ Někdy je doručena kritická funkce, která musí být povolena automaticky př
 
 Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty. Chcete-li povolit všechny funkce, zvolte tlačítko **Povolit vše**. 
 
-Vyberete-li možnost **Povolit vše** , zobrazí se možnost, kde je třeba zadat následující informace:
+Vyberete-li možnost **Povolit vše**, zobrazí se možnost, kde je třeba zadat následující informace:
 - Seznam všech funkcí, které vyžadují potvrzení před tím, než mohou být povoleny. Chcete-li povolit funkce v seznamu, vyberte možnost **Ano** pro tlačítko **Povolit funkce vyžadující potvrzení**.
 - Zobrazí se seznam všech funkcí, které nelze povolit. Tyto funkce nebudou povoleny.
 
@@ -126,16 +125,16 @@ Pokud konfigurační klíč vypnete, funkce nebude ze seznamu funkcí odebrána.
 
 ## <a name="data-entities"></a>Datové entity
 
-Datová entita, která je nazvaná **Správa funkcí** , umožňuje exportovat nastavení správy funkcí z jednoho prostředí a poté je importovat do jiného prostředí. Tato entita aktualizuje pouze existující funkce. Obchodní logika v entitě také pomáhá zaručit, že při importu budou použita stejná pravidla, která se používají v pracovním prostoru **Správa funkcí**. Například nelze přepsat povinné nastavení funkce odebráním data během importu.
+Datová entita, která je nazvaná **Správa funkcí**, umožňuje exportovat nastavení správy funkcí z jednoho prostředí a poté je importovat do jiného prostředí. Tato entita aktualizuje pouze existující funkce. Obchodní logika v entitě také pomáhá zaručit, že při importu budou použita stejná pravidla, která se používají v pracovním prostoru **Správa funkcí**. Například nelze přepsat povinné nastavení funkce odebráním data během importu.
 
 Následující příklady popisují, co se děje při importu dat pomocí entity **Správa funkcí**.
 
-- Pokud změníte hodnotu pole **Povoleno** na **Ano** , funkce se zapne a v poli **Datum povolení** se nastaví aktuální datum.
+- Pokud změníte hodnotu pole **Povoleno** na **Ano**, funkce se zapne a v poli **Datum povolení** se nastaví aktuální datum.
 - Pokud změníte hodnotu pole **Povoleno** na **Ne** nebo bude v poli **EnableDate** prázdná hodnota, funkce se vypne a pole **Datum povolení** se vymaže. Nelze vypnout povinnou funkci nebo funkci, kterou po zapnutí nelze vypnout.
 - Změníte-li hodnotu pole **EnableDate** na budoucí datum, bude pro toto datum naplánována funkce.
 - Pokud změníte hodnotu pole **Povoleno** na **Ano** a změníte hodnotu v poli **Datum povolení** na budoucí datum, funkce se naplánuje na toto datum. 
-- Pokud změníte hodnotu pole **Povoleno** na **Ne** , ale změníte také hodnotu v poli **Datum povolení** na budoucí datum, funkce se naplánuje na toto datum.
-- Je-li funkce zapnuta a přidáte-li pole **EnableDate** , které je nastaveno na budoucí datum, funkce zůstane zapnutá. Chcete-li přeplánovat funkci, musíte změnit pole **Povoleno** na hodnotu **Ne**.
+- Pokud změníte hodnotu pole **Povoleno** na **Ne**, ale změníte také hodnotu v poli **Datum povolení** na budoucí datum, funkce se naplánuje na toto datum.
+- Je-li funkce zapnuta a přidáte-li pole **EnableDate**, které je nastaveno na budoucí datum, funkce zůstane zapnutá. Chcete-li přeplánovat funkci, musíte změnit pole **Povoleno** na hodnotu **Ne**.
 
 ## <a name="feature-management-and-flighting"></a>Správa funkcí a testovací funkce
 

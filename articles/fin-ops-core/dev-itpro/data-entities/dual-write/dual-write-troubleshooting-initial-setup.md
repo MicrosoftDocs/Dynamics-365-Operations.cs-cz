@@ -1,6 +1,6 @@
 ---
 title: Poradce při potížích s počáteční instalací
-description: Toto téma obsahuje informace o řešení potíží, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service.
+description: Toto téma obsahuje informace o řešení potíží, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,39 +18,41 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997343"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685579"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Nemůžete propojit aplikaci Finance and Operations s Common Data Service
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nemůžete propojit aplikaci Finance and Operations s Dataverse
 
-**Požadovaná role pro nastavení dvojitého zápisu:** Správce systému v aplikacích Finance and Operations a prostředí Common Data Service.
+**Požadovaná role pro nastavení dvojitého zápisu:** Správce systému v aplikacích Finance and Operations a prostředí Dataverse.
 
-Chyby na stránce **Nastavení odkazu na Common Data Service** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Common Data Service** , jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
+Chyby na stránce **Nastavení odkazu na Dataverse** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Dataverse**, jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
 
 ![Úspěšná kontrola stavu](media/health_check.png)
 
-Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance and Operations a Common Data Service. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu entit.
+Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance and Operations a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
 
-## <a name="error-when-you-open-the-link-to-common-data-service-page"></a>Chyba při otevření odkazu na stránku Common Data Service
+## <a name="error-when-you-open-the-link-to-dataverse-page"></a>Chyba při otevření odkazu na stránku Dataverse
 
 **Požadovaná pověření pro opravu problému:** Správce klienta Azure AD
 
-Může se zobrazit následující chybová zpráva při otevření stránky **Odkaz na Common Data Service** v aplikaci Finance and Operations:
+Může se zobrazit následující chybová zpráva při otevření stránky **Odkaz na Dataverse** v aplikaci Finance and Operations:
 
 *Stavový kód odpovědi neoznačuje úspěch: 404 (Nenalezeno).*
 
@@ -65,11 +67,11 @@ Chcete-li poskytnout souhlas s aplikací, postupujte podle následujících krok
 2. Výběrem **Přijmout** označíte, že udělujete souhlas s instalací aplikace, která má ID **33976c19-1db5-4c02-810e-c243db79efde** ve vašem klientovi.
 
     > [!TIP]
-    > Tato aplikace je požadována pro propojení aplikací Common Data Service a Finance and Operations. Pokud máte s tímto krokem potíže, otevřete prohlížeč v anonymním režimu (v aplikaci Google Chrome) nebo v režimu InPrivate (v Microsoft Edge).
+    > Tato aplikace je požadována pro propojení aplikací Dataverse a Finance and Operations. Pokud máte s tímto krokem potíže, otevřete prohlížeč v anonymním režimu (v aplikaci Google Chrome) nebo v režimu InPrivate (v Microsoft Edge).
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Ověřte, zda jsou při propojování správně nastaveny data společnosti a týmy s duálním zápisem
 
-Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Common Data Service vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu **Společnosti (CDM\_Společnost)** , postupujte podle následujících kroků.
+Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Dataverse vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu **Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
 
 1. V aplikaci řízené modelem v produktu Dynamics 365 vyberte filtr v pravém horním rohu.
 2. V rozevíracím seznamu vyberte **Společnost**.
@@ -79,7 +81,7 @@ Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí C
 
     ![Ověřování výchozího vlastnícího týmu](media/default_owning_team.png)
 
-## <a name="find-the-limit-on-the-number-of-legal-entities-or-companies-that-can-be-linked-for-dual-write"></a>Najít limit počtu právnických osob nebo společností, které lze propojit s dvojím zapisováním
+## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Najít limit počtu právnických osob nebo společností, které lze propojit s dvojím zapisováním
 
 Při pokusu o povolení map se může zobrazit následující chybová zpráva:
 

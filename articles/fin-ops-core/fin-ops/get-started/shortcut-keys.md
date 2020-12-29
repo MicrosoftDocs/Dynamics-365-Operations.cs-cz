@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013173"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693718"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -33,7 +32,7 @@ Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadáva
 > [!NOTE]
 > Klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
-Některé zkratky na této stránce představují *klávesové akordy* , což znamená, že zahrnují dvě po sobě jdoucí kombinace kláves (oddělené čárkou), které je třeba nezávisle stisknout, aby se spustila požadovaná akce. Například zkratka „Alt + M, A“ vyžaduje, aby uživatel nejprve stiskl „Alt + M“, uvolnil klávesy a poté stiskl „A“. 
+Některé zkratky na této stránce představují *klávesové akordy*, což znamená, že zahrnují dvě po sobě jdoucí kombinace kláves (oddělené čárkou), které je třeba nezávisle stisknout, aby se spustila požadovaná akce. Například zkratka „Alt + M, A“ vyžaduje, aby uživatel nejprve stiskl „Alt + M“, uvolnil klávesy a poté stiskl „A“. 
 
 ## <a name="finding-a-shortcut"></a>Nalezení klávesových zkratek
 

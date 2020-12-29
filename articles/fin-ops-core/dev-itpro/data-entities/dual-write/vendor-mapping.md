@@ -1,6 +1,6 @@
 ---
 title: Integrovaná hlavní data dodavatelů
-description: Toto téma popisuje integraci dat dodavatele mezi aplikacemi Finance and Operations a Common Data Service.
+description: Toto téma popisuje integraci dat dodavatele mezi aplikacemi Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997640"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685478"
 ---
 # <a name="integrated-vendor-master"></a>Integrovaná hlavní data dodavatelů
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -37,11 +39,11 @@ U obou přístupů jsou data dodavatele integrována mezi Dynamics 365 Supply Ch
 
 ## <a name="vendor-data-flow"></a>Tok dat dodavatele
 
-Pokud nechcete uložit data dodavatele v entitě **Účet/kontakt** v Common Data Service, můžete použít nový návrh dodavatele.
+Pokud nechcete uložit data dodavatele v entitě **Účet/kontakt** v Dataverse, můžete použít nový návrh dodavatele.
 
 ![Tok dat dodavatele](media/dual-write-vendor-data-flow.png)
 
-Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt** , můžete použít rozšířený návrh dodavatele. Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu. Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).
+Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt**, můžete použít rozšířený návrh dodavatele. Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu. Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).
 
 ![Rozšířený tok dat dodavatele](media/dual-write-vendor-detail.jpg)
 
@@ -50,12 +52,12 @@ Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt** , m
 
 ## <a name="templates"></a>Šablony
 
-Data dodavatele zahrnují všechny informace o dodavateli, například skupinu dodavatelů, adresy, kontaktní informace, platební profil a profil faktury. Kolekce mapování entit pracují společně během interakce s daty dodavatele, jak je uvedeno v následující tabulce.
+Data dodavatele zahrnují všechny informace o dodavateli, například skupinu dodavatelů, adresy, kontaktní informace, platební profil a profil faktury. Kolekce mapování tabulek pracují společně během interakce s daty dodavatele, jak je uvedeno v následující tabulce.
 
 Aplikace Finance and Operations | Jiné aplikace Dynamics 365     | Popis
 ----------------------------|-----------------------------|------------
 Dodavatel V2                   | Účet                     | Firmy, které používají entitu obchodní vztah k ukládání informací o dodavateli, jí mohou nadále používat stejným způsobem. Mohou také využít explicitní funkce dodavatele, které přicházejí z důvodu integrace s aplikacemi Finance and Operations.
-Dodavatel V2                   | Msdyn\_vendors              | Firmy, které používají vlastní řešení pro dodavatele, mohou využít výhod integrované koncepce dodavatele, která je zaváděna v Common Data Service z důvodu integrace s aplikacemi Finance and Operations. 
+Dodavatel V2                   | Msdyn\_vendors              | Firmy, které používají vlastní řešení pro dodavatele, mohou využít výhod integrované koncepce dodavatele, která je zaváděna v Dataverse z důvodu integrace s aplikacemi Finance and Operations. 
 Skupiny dodavatelů               | msdyn\_vendorgroups         | Tato šablona slouží k synchronizaci informací o skupinách dodavatele.
 Platební metoda dodavatele       | msdyn\_vendorpaymentmethods | Tato šablona slouží k synchronizaci informací o způsobu platby dodavatele.
 CDS kontakty V2             | kontakty                    | Šablona [kontakty](customer-mapping.md#cds-contacts-v2-to-contacts) synchronizuje všechny primární, sekundární a terciární kontaktní informace pro odběratele i dodavatele.

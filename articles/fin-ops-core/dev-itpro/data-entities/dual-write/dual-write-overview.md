@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 961e6a167d4fe48c96bffcff1e54acde0ad5d805
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997417"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685606"
 ---
 # <a name="dual-write-overview"></a>Přehled dvojího zapisování
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ ms.locfileid: "3997417"
 
 Dvojí zapisování je předpřipravená infrastruktura poskytující prakticky v reálném čase mezi aplikacemi pro zapojení zákazníků a aplikacemi Finance and Operations. Při zpracování dat o zákaznících, produktech, osobách a operacích mimo hranice aplikací jsou všechna oddělení v organizaci oprávněna.
 
-Dvojí zapisování poskytuje pevně spojenou obousměrnou integraci mezi aplikacemi Finance and Operations a Common Data Service. Jakákoli změna dat v aplikacích Finance and Operations způsobí zápis do aplikace Common Data Service a jakákoli změna dat v Common Data Service způsobí zápis do aplikací Finance and Operations. Tento automatizovaný tok dat poskytuje integrované uživatelské prostředí pro celé aplikace.
+Dvojí zapisování poskytuje pevně spojenou obousměrnou integraci mezi aplikacemi Finance and Operations a Dataverse. Jakákoli změna dat v aplikacích Finance and Operations způsobí zápis do aplikace Dataverse a jakákoli změna dat v Dataverse způsobí zápis do aplikací Finance and Operations. Tento automatizovaný tok dat poskytuje integrované uživatelské prostředí pro celé aplikace.
 
 ![Datový vztah mezi aplikacemi](media/dual-write-overview.jpg)
 
@@ -52,7 +54,7 @@ Infrastruktura dvojího zapisování je rozšiřitelná a spolehlivá a obsahuje
 + Možnost konfigurovat vlastní výstrahy a prahové hodnoty a přihlásit se k odběru oznámení
 + Intuitivní uživatelské rozhraní (UI) pro filtrování a transformace
 + Schopnost nastavit a zobrazit závislosti a vztahy entity
-+ Rozšiřitelnost pro standardní i pro vlastní entity a mapy
++ Rozšiřitelnost pro standardní i pro vlastní tabulky a mapy
 + Spolehlivé řízení životního cyklu aplikací
 + Přednastavené možnosti nastavení pro nové odběratele
 
@@ -85,23 +87,23 @@ Duální zápis vytvoří mapování mezi koncepty v aplikacích Finance and Ope
 Dvojí zapisování poskytuje integraci dat mezi aplikacemi Microsoft Dynamics 365. Toto robustní rozhraní spojuje prostředí a umožňuje různým obchodním aplikacím vzájemnou spolupráci. Zde jsou uvedeny hlavní důvody, proč byste měli používat dvojí zápis:
 
 + Dvojí zapisování poskytuje úzce spojenou, prakticky v reálném čase a obousměrnou integraci mezi aplikacemi Finance and Operations a aplikacemi řízenými modelem v aplikaci Dynamics 365. Tato integrace činí z Microsoft Dynamics 365 univerzální nástroj pro všechna vaše obchodní řešení. Zákazníci, kteří používají Dynamics 365 Finance a Dynamics 365 Supply Chain Management, ale používají řešení pro řízení vztahů se zákazníky (CRM) jiného typu než nabízí společnost Microsoft, přecházení k Dynamics 365 díky podpoře dvojího zapisování.
-+ Data od odběratelů, produktů, operací, projektů a Internetu věcí (IoT) automaticky proudí do Common Data Service pomocí dvojího zapisování. Toto připojení je užitečné pro podniky, které se zajímaní o rozšíření Power Platform.
++ Data od odběratelů, produktů, operací, projektů a Internetu věcí (IoT) automaticky proudí do Dataverse pomocí dvojího zapisování. Toto připojení je užitečné pro podniky, které se zajímaní o rozšíření Power Platform.
 + Infrastruktura dvojího zapisování se řídí podle principu "bez kódu/nízký kód". Chcete-li rozšířit standardní mapy tabulek a tabulek a zahrnout vlastní mapy, je nezbytné pouze minimální úsilí.
 + Dvojí zapisování podporuje režim online i režim offline. Společnost Microsoft je jediná společnost nabízející podporu pro režimy online a offline.
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co znamená duální zápis pro vývojáře a architekty aplikací pro zapojení zákazníků?
 
-Duální zápis automatizuje tok dat mezi aplikacemi Finance and Operations a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Common Data Service. Tato řešení rozšiřují schéma entity, moduly plugin a pracovní postupy v Common Data Service, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance and Operations.
+Duální zápis automatizuje tok dat mezi aplikacemi Finance and Operations a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Dataverse. Tato řešení rozšiřují schéma entity, moduly plugin a pracovní postupy v Dataverse, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance and Operations.
 
-Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální zápis některé zásadní změny ve schématu Common Data Service. Pokud plánu rozumíte, můžete se v budoucnu vyhnout úpravám návrhu a vývoje.
+Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální zápis některé zásadní změny ve schématu Dataverse. Pokud plánu rozumíte, můžete se v budoucnu vyhnout úpravám návrhu a vývoje.
 
-+ Když je instalován balíček duálního zápisu AppSource, Common Data Service bude mít nové koncety, jako je společnost nebo zainteresovaná strana. Tyto koncepty pomáhají aplikacím postaveným na Common Data Service, včetně Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service a Dynamics 365 Field Service, bezproblémově komunikovat s aplikacemi Finance and Operations.
++ Když je instalován balíček duálního zápisu AppSource, Dataverse bude mít nové koncety, jako je společnost nebo zainteresovaná strana. Tyto koncepty pomáhají aplikacím postaveným na Dataverse, včetně Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service a Dynamics 365 Field Service, bezproblémově komunikovat s aplikacemi Finance and Operations.
 
 + Aktivity a poznámky jsou sjednoceny a rozšířeny tak, aby podporovaly C1 (uživatelé systému) i C2 (zákazníci v systému).
 
-+ Aby se zabránilo ztrátě dat při přenosu měny mezi aplikacemi Finance and Operations a Common Data Service, budete moci rozšířit počet desetinných míst v datovém typu měny aplikací pro zapojení zákazníků. Tato funkce automaticky přenese existující záznamy do nového rozšířeného stavu ve vrstvě metadat. Během tohoto procesu je hodnota měny převedena na desítková data, nikoli na peněžní, a hodnota měny podporuje 10 desetinných míst. Pro tuto funkci je třeba se registrovat a organizace, které nepotřebují více než 4 desetinná místa přesnosti, se registrovat nemusí. Další informace viz [Migrace datového typu měny pro duální zápis](currrency-decimal-places.md).
++ Aby se zabránilo ztrátě dat při přenosu měny mezi aplikacemi Finance and Operations a Dataverse, budete moci rozšířit počet desetinných míst v datovém typu měny aplikací pro zapojení zákazníků. Tato funkce automaticky přenese existující řádky do nového rozšířeného stavu ve vrstvě metadat. Během tohoto procesu je hodnota měny převedena na desítková data, nikoli na peněžní, a hodnota měny podporuje 10 desetinných míst. Pro tuto funkci je třeba se registrovat a organizace, které nepotřebují více než 4 desetinná místa přesnosti, se registrovat nemusí. Další informace viz [Migrace datového typu měny pro duální zápis](currrency-decimal-places.md).
 
-+ [Platnost od](../../dev-tools/date-effectivity.md) bude přidán do Common Data Service. Bude podporovat minulá, současná a budoucí data ve stejné entitě.
++ [Platnost od](../../dev-tools/date-effectivity.md) bude přidán do Dataverse. Bude podporovat minulá, současná a budoucí data ve stejné entitě.
 
 + [Převody jednotek](../../../../supply-chain/pim/tasks/manage-unit-measure.md) produktu jsou podporovány pro produkty, nabídky, objednávky a faktury.
 

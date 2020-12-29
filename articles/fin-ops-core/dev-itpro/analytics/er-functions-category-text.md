@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 228620afc81e154eced572f3b6024d6836d00d66
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201082"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686020"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Seznam funkcí elektronického výkaznictví textové kategorie
 
@@ -37,7 +36,7 @@ Textové funkce elektronického výkaznictví (ER) lze použít k provádění o
 |----------|-------------|
 | [Char](er-functions-text-char.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje jeden znak odkazovaný zadaným číslem Unicode. |
 | [Sloučit](er-functions-text-concatenate.md) | Tato funkce vrací všechny zadané textové řetězce jako hodnotu typu *řetězec* poté, co byly spojeny do jednoho řetězce. |
-| [Formát](er-functions-text-format.md) | Tato funkce vrací zadaný řetězec jako hodnotu typu *řetězec* po zformátování nahrazením všech výskytů hodnoty **%N** argumentem *N*tý. |
+| [Formát](er-functions-text-format.md) | Tato funkce vrací zadaný řetězec jako hodnotu typu *řetězec* po zformátování nahrazením všech výskytů hodnoty **%N** argumentem *N* tý. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Tato funkce vyhledá určitou hodnotu typu *výčet* v zadaném zdroji dat výčtu pomocí názvu výčtu, který je zadán jako hodnota typu *řetězec*. Pokud je nalezena hodnota *výčet*, funkce ji vrátí. |
 | [GuidValue](er-functions-text-guidvalue.md) | Tato funkce převede zadaný vstup datového typu *String* na datovou položku datového typu *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Tato funkce analyzuje data ve formátu notace objektu JavaScript (JSON), který je přístupný ze zadané cesty, a extrahuje skalární hodnotu založenou na zadaném ID. Poté vrátí extrahovanou skalární hodnotu jako *řetězcovou* hodnotu. |

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771299"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688118"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -105,7 +104,7 @@ Nakonec je nutné stáhnout následující soubory z [CustomerSource](https://go
     > [!NOTE]
     > Aktivní poskytovatel konfigurace se zadá automaticky. Tento zprostředkovatel bude moci udržovat tuto konfiguraci. I když jiní poskytovatelé mohou použít tuto konfiguraci, nebudou ji moci spravovat.
 
-7. Volitelné: V poli **Typ formátu** můžete vybrat konkrétní formát elektronického dokumentu. Pokud vyberete **PDF** v době návrhu, návrhář operací ER nabídne pouze prvky formátu, které jsou použitelné pouze pro dokumenty generované ve formátu PDF (**PDF\File**, **PDF\PDF Merger** atd.). Pokud toto pole ponecháte prázdné, bude v době návrhu určen formát elektronického dokumentu v návrháři operací ER, když je přidán první prvek formátu. Přidáte-li například **Excel\Soubor** jako první prvek formátu, návrhář operací ER vám nabídne pouze prvky formátu, které jsou použitelné pouze pro dokumenty generované ve formátu aplikace Excel (**Excel\Cell,**, **Excel\Range**atd.). formát.
+7. Volitelné: V poli **Typ formátu** můžete vybrat konkrétní formát elektronického dokumentu. Pokud vyberete **PDF** v době návrhu, návrhář operací ER nabídne pouze prvky formátu, které jsou použitelné pouze pro dokumenty generované ve formátu PDF (**PDF\File**, **PDF\PDF Merger** atd.). Pokud toto pole ponecháte prázdné, bude v době návrhu určen formát elektronického dokumentu v návrháři operací ER, když je přidán první prvek formátu. Přidáte-li například **Excel\Soubor** jako první prvek formátu, návrhář operací ER vám nabídne pouze prvky formátu, které jsou použitelné pouze pro dokumenty generované ve formátu aplikace Excel (**Excel\Cell,**, **Excel\Range** atd.). formát.
 8. Vyberte **Vytvořit konfiguraci**.
 
 Vytvoří se nová konfigurace formátu elektronického výkaznictví. Můžete použít verzi konceptu této konfigurace pro uložení komponenty formátu elektronického výkaznictví, která je určena pro generování elektronických dokumentů ve formátu PDF.

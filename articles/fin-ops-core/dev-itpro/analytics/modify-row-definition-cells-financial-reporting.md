@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182984"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685852"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
@@ -107,7 +106,7 @@ Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro ob
     |-------------------------------|-----------------------------------|--------|
     | (Žádné)                        |                                   | Vymaže buňku **Kód formátu**. |
     | TOT                           | Celkem                             | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**. |
-    | CAL                           | Výpočet                       | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\***, **/** a **IF/THEN/ELSE**. |
+    | CAL                           | Výpočet                       | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\**_, _*/**, a příkazy **IF/THEN/ELSE**. |
     | DES                           | popis                       | Identifikuje řádek záhlaví nebo prázdný řádek v sestavě. |
     | LFT RGT CEN                   | Vlevo Na střed Vpravo                 | Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce. |
     | CBR                           | Změna základního řádku                   | Označuje řádek, který nastavuje základní řádek pro výpočty sloupce. |
@@ -165,7 +164,7 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Spojení řádku formátu s řádkem částky
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom vyberte definici řádku ke změně.
+1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2. Do řádku formátování v buňce **Související vzorce/řádky/jednotky** zadejte kód řádku částky k potlačení.
 
     > [!NOTE]
@@ -175,7 +174,7 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Příklad potlačení tisku řádků
 
-V následujícím příkladu Pavla chce zabránit vytištění záhlaví a podtržení v řádku **Hotovost celkem** ve své sestavě, protože nebyla zaznamenána žádná aktivita v žádném z pokladních účtů. Proto se v řádku 220 (který je podle kódu formátu **---** řádkem formátování) v buňce **Související vzorce/řádky/jednotky** zadá **250**, což je kód řádku s částkou, který chce potlačit.
+V následujícím příkladu chce uživatel zabránit vytištění záhlaví a podtržení v řádku **Hotovost celkem** ve své sestavě, protože nebyla zaznamenána žádná aktivita v žádném z pokladních účtů. Proto uživatel v řádku 220 (který je podle kódu formátu **---** řádkem formátování) v buňce **Související vzorce/řádky/jednotky** zadá **250**, což je kód řádku s částkou, který chce potlačit.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Ve výchozím nastavení návrhář sestav netiskne řádky, které nemají odpo
 3. Chcete-li uložit změny, klikněte v nabídce **Soubor** na tlačítko **Uložit**.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Používání zástupných znaků a rozsahů v definici řádku
-Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** můžete použít zástupný znak (? nebo \*) na jakékoli pozici segmentu. Aplikace Návrhář sestav extrahuje všechny hodnoty definovaných pozic bez zohlednění zástupných znaků. Například definice řádku obsahuje pouze přirozené hodnoty segmentu a přirozené segmenty mají čtyři znaky. Zadáním hodnoty **6???** na řádku dáte Návrháři sestav pokyn k zahrnutí všech účtů, které mají hodnotu přirozeného segmentu začínající 6. Pokud zadáte **6\***, budou vráceny stejné výsledky, ale výsledky budou obsahovat také hodnoty proměnné šířky, jako je například **60** a **600000**. Návrhář sestav nahradí každý zástupný znak (?) úplným rozsahem možných hodnot, které zahrnují písmena a speciální znaky. Například v rozsahu od **12?0** do **12?4** bude zástupný znak v hodnotě **12?0** nahrazen nejnižší hodnotou ve znakové sadě a zástupný znak v hodnotě **12?4** bude nahrazen nejvyšší hodnotou ve znakové sadě.
+Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** můžete použít zástupný znak (? nebo \*) na jakékoli pozici segmentu. Aplikace Návrhář sestav extrahuje všechny hodnoty definovaných pozic bez zohlednění zástupných znaků. Například definice řádku obsahuje pouze přirozené hodnoty segmentu a přirozené segmenty mají čtyři znaky. Zadáním hodnoty **6???** na řádku dáte Návrháři sestav pokyn k zahrnutí všech účtů, které mají hodnotu přirozeného segmentu začínající 6. Pokud zadáte **6\**_, budou vráceny stejné výsledky, ale výsledky budou obsahovat také hodnoty proměnné šířky, jako je například _* 60** a **600000**. Návrhář sestav nahradí každý zástupný znak (?) úplným rozsahem možných hodnot, které zahrnují písmena a speciální znaky. Například v rozsahu od **12?0** do **12?4** bude zástupný znak v hodnotě **12?0** nahrazen nejnižší hodnotou ve znakové sadě a zástupný znak v hodnotě **12?4** bude nahrazen nejvyšší hodnotou ve znakové sadě.
 
 > [!NOTE]
 > Měli byste se vyhnout používání zástupných znaků pro počáteční a koncové účty v rozsazích. Pokud použijete zástupné znaky u počátečního nebo koncového účtu, mohly by být vráceny neočekávané výsledky.
@@ -527,6 +526,6 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
 4. Vyberte sadu, kterou chcete odstranit, a klikněte na příkaz **Odstranit**. Kliknutím na tlačítko **Ano** se tato sada hodnot dimenze trvale odstraní.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)

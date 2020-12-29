@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
-ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
+ms.openlocfilehash: 0d7df12026d6d668b1f48a48cd12bf4b12e0f94e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3332315"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686409"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Použití zdrojů dat JOIN v mapování modelu elektrického vykazování (ER) k získání dat z více aplikačních tabulek
 
@@ -38,7 +37,7 @@ V současné době jsou podporovány následující typy spojení:
 - Vnitřní (pravé) spojení:
     - Spojte pouze záznamy prvního (nejvíce vlevo) zdroje dat a pak pouze záznamy druhého (pravého) zdroje dat vzájemně si odpovídající podle konfigurovaných podmínek.
 
-V konfigurovaném zdroji dat **připojení**, když jsou všechny zdroje dat typu **Záznamy tabulky**, lze spuštění zdroje dat Připojení [provést na úrovni databáze](#analyze) pomocí jediného příkazu SQL. To snižuje počet volání databáze, což zlepšuje výkon mapování modelu. V opačném případě se spuštění zdroje **propojení dat** provádí v paměti.
+V konfigurovaném zdroji dat **připojení**, když jsou všechny zdroje dat typu **Záznamy tabulky**, lze spuštění zdroje dat Připojení [provést na úrovni databáze](#analyze) pomocí jediného příkazu SQL. Tento příkaz snižuje počet volání databáze, což zlepšuje výkon mapování modelu. V opačném případě se spuštění zdroje **propojení dat** provádí v paměti.
 
 > [!NOTE]
 > Použití funkce **VALUEIN** ve výrazech ER, které určují podmínky pro spojení záznamů ve zdrojích dat typu spojení ještě není podporováno. Pro více podrobností o této funkci navštivte stránku [Návrhář receptury v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md).
@@ -79,7 +78,7 @@ Předem je nutné také stáhnout ze [služby Microsoft Download Center](https:/
 
 1. Přístup k financím nebo RCS v první relaci vašeho webového prohlížeče.
 2. Přejděte do části **Správa organizace \> Pracovní prostory \> Elektronické výkaznictví**.
-3. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden poskytovatel konfigurace ukázkové společnosti Litware, Inc. (http://www.litware.com) a že je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, proveďte kroky v proceduře [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+3. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden poskytovatel konfigurace ukázkové společnosti [Litware, Inc.](http://www.litware.com) a že je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, proveďte kroky v proceduře [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Pracovní prostor elektronického vykazování](./media/GER-JoinDS-ActiveProvider.PNG)
 
@@ -96,20 +95,21 @@ Předem je nutné také stáhnout ze [služby Microsoft Download Center](https:/
     2. Vyberte **Načíst ze souboru XML**.
     3. Vyberte **Procházet** a najděte soubor **Mapping to learn JOIN data sources.version.1.1.xml**.
     4. Vyberte **OK**.
-4.  Importujte soubor konfigurace formátu ER.
+4. Importujte soubor konfigurace formátu ER.
     1. Vyberte **Exchange**.
     2. Vyberte **Načíst ze souboru XML**.
     3. Vyberte **Procházet** a najděte soubor **Format to learn JOIN data sources.version.1.1.xml**.
     4. Vyberte **OK**.
-5.  Ve stromu konfigurací rozbalte položku **Model k učení zdrojů dat JOIN** item další položky modelu (když jsou k dispozici).
-6.  Sledujte seznam konfigurací ER ve stromové struktuře a podrobnosti o verzi na pevné záložce **Verze** – budou použity jako zdroj dat pro ukázkovou sestavu.
+5. Ve stromu konfigurací rozbalte položku **Model k učení zdrojů dat JOIN** item další položky modelu (když jsou k dispozici).
+6. Sledujte seznam konfigurací ER ve stromové struktuře a podrobnosti o verzi na pevné záložce **Verze** – budou použity jako zdroj dat pro ukázkovou sestavu.
 
     ![Stránka Konfigurace elektronického výkaznictví](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Zapnutí možností sledování spuštění
-1.  Vyberte **KONFIGURACE**.
-2.  Vyberte **Uživatelské parametry**.
-3.  Nastavte parametry sledování spuštění, jak je uvedeno na snímku obrazovky dole.
+
+1. Vyberte **KONFIGURACE**.
+2. Vyberte **Uživatelské parametry**.
+3. Nastavte parametry sledování spuštění, jak je uvedeno na snímku obrazovky dole.
 
     ![Stránka parametrů uživatele elektronického výkaznictví](./media/GER-JoinDS-Parameters.PNG)
 
@@ -119,11 +119,11 @@ Předem je nutné také stáhnout ze [služby Microsoft Download Center](https:/
 
 Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigurována pro přístup k informacím o verzích konfigurací ER, podrobnostech konfigurace a poskytovatelů konfigurace bez použití datových zdrojů typu **Join**.
 
-1.  Vyberte konfiguraci **Mapování k učení se zdrojů dat JOIN**.
-2.  Výběrem možnosti **Návrhář** otevřete seznam mapování.
-3.  Chcete-li zkontrolovat podrobnosti mapování, vyberte možnost **Návrhář**. 
-4.  Vyberte **Zobrazit podrobnosti**.
-5.  Ve stromu konfigurací rozbalte položky datového modelu **Set1** a **Set1. Details**:
+1. Vyberte konfiguraci **Mapování k učení se zdrojů dat JOIN**.
+2. Výběrem možnosti **Návrhář** otevřete seznam mapování.
+3. Chcete-li zkontrolovat podrobnosti mapování, vyberte možnost **Návrhář**.
+4. Vyberte **Zobrazit podrobnosti**.
+5. Ve stromu konfigurací rozbalte položky datového modelu **Set1** a **Set1. Details**:
 
     1. Vázba **Details: Record list = Versions** označuje, že položka **Set1.Details** je vázaná na zdroj dat **Versions** vracející záznamy tabulky **ERSolutionVersionTable**. Každý záznam této tabulky představuje jedinou verzi konfigurace ER. Obsah této tabulky je zobrazen na pevné záložce **Verze** na stránce **Konfigurace**.
     2. Vazba **ConfigurationVersion: String = @.PublicVersionNumber**  znamená, že hodnota veřejné verze jednotlivých konfigurací ER je provedena z pole **PublicVersionNumber** tabulky **ERSolutionVersionTable** a umístěna do položky **ConfigurationVersion**.
@@ -132,19 +132,19 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set1Review.PNG)
 
-6.  Ve stromu konfigurací rozbalte položky datového modelu **Set1.Summary**:
+6. Ve stromu konfigurací rozbalte položky datového modelu **Set1.Summary**:
 
     1. Vazba **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** označuje, že položka **Set1.Summary.VersionsNumber** je vázaná na souhrnné pole **VersionsNumber** zdroje dat **VersionsSummary** typu **GroupBy**, který byl konfigurován na vracení počtu záznamů tabulky **ERSolutionVersionTable** prostřednictvím zdroje dat **Versions**.
 
     ![Stránka parametrů zdroje dat GROUPBY](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
-7.  Zavřete stránku.
+7. Zavřete stránku.
 
 ### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Kontrola mapování modelu ER (část 2)
 
 Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigurována pro přístup k informacím o verzích konfigurací ER, podrobnostech konfigurace a poskytovatelů konfigurace s použitím datových zdrojů typu **Join**.
 
-1.  Ve stromu konfigurací rozbalte položky datového modelu **Set2** a **Set2. Details**. Všimněte si, že vazba **Details: Record list = Details** označuje, že je položka **Set2.Details** vázaná na zdroj dat **Details** konfigurovaný jako zdroj dat typu **Join**.
+1. Ve stromu konfigurací rozbalte položky datového modelu **Set2** a **Set2. Details**. Vazba **Details: Record list = Details** naznačuje, že je položka **Set2.Details** vázaná na zdroj dat **Details** konfigurovaný jako zdroj dat typu **Join**.
 
     ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set2Review.PNG)
 
@@ -152,16 +152,16 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-AddJoinDS.PNG)
 
-2.  Vyberte zdroj dat **Detail**s.
-3.  V podokně **Zdroje dat** vyberte **Upravit**.
-4.  Vyberte možnost **Upravit spojení**.
-5.  Vyberte **Zobrazit podrobnosti**.
+2. Vyberte zdroj dat **Detail** s.
+3. V podokně **Zdroje dat** vyberte **Upravit**.
+4. Vyberte možnost **Upravit spojení**.
+5. Vyberte **Zobrazit podrobnosti**.
 
     ![Stránka parametrů zdroje dat JOIN](./media/GER-JoinDS-JoinDSEditor.PNG)
 
-    Tato stránka slouží k navrhování požadovaného zdroje dat **typu Join**. Při spuštění tento zdroj dat vytvoří jediný sloučený seznam záznamů ze zdrojů dat v mřížce **Připojený seznam**. Spojování záznamů začíná u zdroje dat **ConfigurationProviders**, který je v mřížce jako první (sloupec **Typ** je pro ně prázdný). Záznamy o každém dalším zdroji dat budou následně připojeny k záznamům nadřazeného zdroje dat na základě jeho pořadí v této mřížce. Každý připojující se zdroj dat musí být nakonfigurován jako zdroj dat vnořený pod cílovým zdrojem dat (zdroj dat **1Versions** je vnořený pod zdrojem dat **1Configurations**; zdroj dat **1Configurations** je vnořený pod zdrojem **ConfigurationProviders**). Každý nakonfigurovaný zdroj dat musí obsahovat podmínky pro spojení. Ve zdroji dat pro toto konkrétní **spojení**jsou definována následující spojení:
+    Tato stránka slouží k navrhování požadovaného zdroje dat **typu Join**. Při spuštění tento zdroj dat vytvoří jediný sloučený seznam záznamů ze zdrojů dat v mřížce **Připojený seznam**. Spojování záznamů začíná u zdroje dat **ConfigurationProviders**, který je v mřížce jako první (sloupec **Typ** je pro ně prázdný). Záznamy o každém dalším zdroji dat budou následně připojeny k záznamům nadřazeného zdroje dat na základě jeho pořadí v této mřížce. Každý připojující se zdroj dat musí být nakonfigurován jako zdroj dat vnořený pod cílovým zdrojem dat (zdroj dat `1Versions` je vnořený pod zdrojem dat `1Configurations`; zdroj dat `1Configurations` je vnořený pod zdrojem **ConfigurationProviders**). Každý nakonfigurovaný zdroj dat musí obsahovat podmínky pro spojení. Ve zdroji dat pro toto konkrétní **spojení** jsou definována následující spojení:
 
-    - Každý záznam ve zdroji dat **ConfigurationProviders** (odkazovaný na tabulku **ERVendorTable**) je propojen pouze se záznamy **1Configurations** (odkazovanými v tabulce **ERSolutionTable**) se stejnou hodnotou v polích **SolutionVendor** a **RecId**. Typ **Vnitřní spojení** se používá pro toto spojení i pro následující podmínky párování záznamů: 
+    - Každý záznam ve zdroji dat **ConfigurationProviders** (odkazovaný na tabulku **ERVendorTable**) je propojen pouze se záznamy **1Configurations** (odkazovanými v tabulce **ERSolutionTable**) se stejnou hodnotou v polích **SolutionVendor** a **RecId**. Typ **Vnitřní spojení** se používá pro toto spojení i pro následující podmínky párování záznamů:
 
     FILTER (Configurations, Configurations.SolutionVendor = ConfigurationProviders.RecId)
 
@@ -171,32 +171,32 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     - Možnost **Spustit** je konfigurována jako **dotaz** v tom smyslu, že tento spojený zdroj dat bude proveden v době běhu na úrovni databáze jako přímé volání SQL.
 
-    Všimněte si, že při spojování záznamů zdrojů dat představujících aplikační tabulky můžete určit podmínky spojení použitím párů jiných polí, než jsou ty, které popisují existující v relacích AOT mezi těmito tabulkami. Tento typ spojení lze nakonfigurovat také na úrovni databáze.
+    Při spojování záznamů zdrojů dat představujících aplikační tabulky můžete určit podmínky spojení použitím párů jiných polí, než jsou ty, které popisují existující v relacích AOT mezi těmito tabulkami. Tento typ spojení lze nakonfigurovat také na úrovni databáze.
 
-6.  Zavřete stránku.
-7.  Vyberte možnost **Zrušit**.
-8.  Ve stromu konfigurací rozbalte položky datového modelu **Set2.Summary**:
+6. Zavřete stránku.
+7. Vyberte možnost **Zrušit**.
+8. Ve stromu konfigurací rozbalte položky datového modelu **Set2.Summary**:
 
     - Vazba **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** označuje, že položka **Set2.Summary.VersionsNumber** je vázaná na souhrnné pole **VersionsNumber** zdroje dat **DetailsSummary** typu **GroupBy**, který byl konfigurován na vracení počtu spojených záznamů zdroje dat **Details** typu **Join**.
-    - Všimněte si, že možnost umístění **Spustit**je konfigurována jako **dotaz** v tom smyslu, že tento zdroj dat  **GroupBy** bude proveden v době běhu na úrovni databáze jako přímé volání SQL. To je možné, protože základní zdroj dat **Details** typu **Join** je konfigurován jako spuštěný na úrovni databáze.
+    - Možnost umístění **Spustit** je konfigurována jako **dotaz** v tom smyslu, že tento zdroj dat  **GroupBy** bude proveden v době běhu na úrovni databáze jako přímé volání SQL. Toto chování je možné, protože základní zdroj dat **Details** typu **Join** je konfigurován jako spuštěný na úrovni databáze.
 
     ![Stránka parametrů zdroje dat GROUPBY](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
-9.  Zavřete stránku.
+9. Zavřete stránku.
 10. Vyberte možnost **Zrušit**.
 
 ### <a name="execute-er-format"></a><a name="executeERformat"></a> Provést formát ER
 
-1.  Ve druhé relaci webového prohlížeče se přistupuje k financím nebo RCS pomocí stejných přihlašovacích údajů a společnosti jako při první relaci.
-2.  Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
-3.  Rozbalte konfiguraci **Mapování k učení se zdrojů dat JOIN**.
-4.  Vyberte konfiguraci **Formát k učení se zdrojů dat JOIN**.
-5.  Vyberte možnost **Návrhář**.
-6.  Vyberte **Zobrazit podrobnosti**.
-7.  Vyberte **Mapování**.
-8.  Vyberte **Rozbalit/sbalit**.
+1. Ve druhé relaci webového prohlížeče se přistupuje k financím nebo RCS pomocí stejných přihlašovacích údajů a společnosti jako při první relaci.
+2. Přejděte do části **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
+3. Rozbalte konfiguraci **Mapování k učení se zdrojů dat JOIN**.
+4. Vyberte konfiguraci **Formát k učení se zdrojů dat JOIN**.
+5. Vyberte možnost **Návrhář**.
+6. Vyberte **Zobrazit podrobnosti**.
+7. Vyberte **Mapování**.
+8. Vyberte **Rozbalit/sbalit**.
 
-    Všimněte si, že tento formát je určen k naplnění vygenerovaného textového souboru s použitím nového řádku pro každou verzi konfigurace ER (sekvence **Verze**). Každý generovaný řádek bude obsahovat název poskytovatele konfigurace, který vlastní aktuální konfiguraci, název konfigurace a verzi konfigurace oddělené středníkem. Poslední řádek generovaného souboru bude obsahovat počet zjištěných verzí konfigurací ER (**souhrnná** sekvence).
+    Tento formát je určen k naplnění vygenerovaného textového souboru s použitím nového řádku pro každou verzi konfigurace ER (sekvence **Verze**). Každý generovaný řádek bude obsahovat název poskytovatele konfigurace, který vlastní aktuální konfiguraci, název konfigurace a verzi konfigurace oddělené středníkem. Poslední řádek generovaného souboru bude obsahovat počet zjištěných verzí konfigurací ER (**souhrnná** sekvence).
 
     ![Stránka návrháře formátu ER](./media/GER-JoinDS-FormatReview.PNG)
 
@@ -207,7 +207,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     ![Stránka návrháře formátu ER](./media/GER-JoinDS-FormatMappingReview.PNG)
 
-9.  Vyberte **Spustit**.
+9. Vyberte **Spustit**.
 10. Na stránce dialogového okna vyberte **Ne** v poli **Použít zdroj dat JOIN**.
 11. Vyberte **OK**.
 12. Zkontrolujte vygenerovaný soubor.
@@ -216,38 +216,38 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
 #### <a name="analyze-er-format-execution-trace"></a>Analýza sledování spouštění formátu ER
 
-1.  V první relaci Finance nebo RCS vyberte **Návrhář**.
-2.  Vyberte **Sledování výkonu**.
-3.  V mřížce **sledování výkonu** vyberte nejvyšší záznam posledního spuštění sledování formátu ER, který použil aktuální součást mapování modelu.
-4.  Vyberte **OK**.
+1. V první relaci Finance nebo RCS vyberte **Návrhář**.
+2. Vyberte **Sledování výkonu**.
+3. V mřížce **sledování výkonu** vyberte nejvyšší záznam posledního spuštění sledování formátu ER, který použil aktuální součást mapování modelu.
+4. Vyberte **OK**.
 
-    Všimněte si, že statistika provedení informuje o zdvojených voláních tabulek aplikací:
+    Statistika provedení informuje o zdvojených voláních tabulek aplikací:
 
     - **ERSolutionTable** byla volána tolikrát, kolikrát máte v tabulce **ERSolutionVersionTable** záznamy o konfiguraci verze, zatímco počet takových volání může být v některých případech snížen pro zlepšení výkonu.
     - **ERVendorTable** byla volána dvakrát pro každý záznam verze konfigurace, který byl zjištěn v tabulce **ERSolutionVersionTable**, zatímco počet takových volání může být v některých případech rovněž snížen.
 
     ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set1Run2.PNG)
 
-5.  Zavřete stránku.
+5. Zavřete stránku.
 
 ### <a name="execute-er-format"></a>Provést formát ER
 
-1.  Přepněte na kartu webového prohlížeče s druhou relací modulu finance nebo RCS.
-2.  Vyberte **Spustit**.
-3.  Na stránce dialogového okna vyberte **Ano** v poli **Použít zdroj dat JOIN**.
-4.  Vyberte **OK**.
-5.  Zkontrolujte vygenerovaný soubor.
+1. Přepněte na kartu webového prohlížeče s druhou relací modulu finance nebo RCS.
+2. Vyberte **Spustit**.
+3. Na stránce dialogového okna vyberte **Ano** v poli **Použít zdroj dat JOIN**.
+4. Vyberte **OK**.
+5. Zkontrolujte vygenerovaný soubor.
 
     ![Stránka dialogového okna uživatele ER](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analýza sledování spouštění formátu ER
 
-1.  V první relaci Finance nebo RCS vyberte **Návrhář**.
-2.  Vyberte **Sledování výkonu**.
-3.  V mřížce **sledování výkonu** vyberte nejvyšší záznam reprezentující poslední spuštění sledování formátu ER, který použil aktuální součást mapování modelu.
-4.  Vyberte **OK**.
+1. V první relaci Finance nebo RCS vyberte **Návrhář**.
+2. Vyberte **Sledování výkonu**.
+3. V mřížce **sledování výkonu** vyberte nejvyšší záznam reprezentující poslední spuštění sledování formátu ER, který použil aktuální součást mapování modelu.
+4. Vyberte **OK**.
 
-    Všimněte si, že statistika provedení informuje o následujících informacích:
+    Statistiky vás informují o následujících faktech:
 
     - Aplikační databáze byla volána jednou za účelem získání záznamů z tabulek **ERVendorTable**, **ERSolutionTable**, a **ERSolutionVersionTable** pro přístup k požadovaným polím.
 
@@ -261,7 +261,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
 Jak můžete vidět z příkladu v tomto tématu, **PROPOJENÝ** zdroj dat lze sestavit z několika zdrojů dat, které popisují jednotlivé datové sady záznamů, které musí být nakonec spojeny. Tyto zdroje dat můžete nakonfigurovat pomocí vestavěné funkce ER [FILTR](er-functions-list-filter.md). Když nakonfigurujete zdroj dat tak, aby byl volán i mimo **PROPOJENÝ** zdroj dat, můžete použít firemní rozsahy jako součást podmínky pro výběr dat. První implementace **PROPOJENÉHO** zdroje dat nepodporuje zdroje dat tohoto typu. Například když voláte zdroj dat založený na [FILTRU](er-functions-list-filter.md) v rámci rozsahu provedení zdroje dat **PROPOJIT**, platí, že pokud volaný zdroj dat obsahuje rozsahy společnosti v rámci podmínky výběru dat, dojde k výjimce.
 
-V Microsoft Dynamics 365 Finance verze 10.0.12 (srpen 2020) můžete použít firemní rozsahy jako součást podmínky pro výběr dat ve zdrojích dat založených na funkci [FILTR ](er-functions-list-filter.md), které jsou vyvolány v rámci provedení **PROPOJENÉHO** zdroje dat. Z důvodu omezení tvůrce [dotazů](../dev-ref/xpp-library-objects.md#query-object-model) aplikace jsou rozsahy společnosti podporovány pouze pro první zdroj dat **PROPOJENÉHO** zdroje dat.
+V Microsoft Dynamics 365 Finance verze 10.0.12 (srpen 2020) můžete použít firemní rozsahy jako součást podmínky pro výběr dat ve zdrojích dat založených na funkci [FILTR](er-functions-list-filter.md), které jsou vyvolány v rámci provedení **PROPOJENÉHO** zdroje dat. Z důvodu omezení tvůrce [dotazů](../dev-ref/xpp-library-objects.md#query-object-model) aplikace jsou rozsahy společnosti podporovány pouze pro první zdroj dat **PROPOJENÉHO** zdroje dat.
 
 ### <a name="example"></a>Příklad
 
@@ -289,4 +289,3 @@ Když je nakonfigurovaný zdroj dat spuštěn, zatímco je provádění ER [sled
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Sledování provádění formátu elektronického výkaznictví za účelem řešení potíží s výkonem](trace-execution-er-troubleshoot-perf.md)
-

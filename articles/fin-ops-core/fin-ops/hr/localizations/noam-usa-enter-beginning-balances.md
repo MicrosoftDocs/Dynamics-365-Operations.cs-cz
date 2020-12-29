@@ -1,28 +1,27 @@
 ---
 title: Zadání počátečních zůstatků mezd
 description: Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně. Tyto informace jsou důležité pro partnery při migraci nebo přenosu dat pro novou implementaci mezd z jiného systému.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005671"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693395"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Zadání počátečních zůstatků mezd
 
@@ -39,7 +38,7 @@ Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy
     - Výhody a srážky
 
 - Společnost by měla zvolit datum, kdy lze nastavit počáteční zůstatky mezd.
-- Informace byly získány na základě všech výdělků, zaměstnaneckých výhod / odpočtů, příspěvků na zaměstnanecké výhody, daní zaměstnanců a daních zaměstnavatelů a jejich částek od začátku roku ze zastaralého systému.
+- Informace byla získána na základě všech výdělků, zaměstnaneckých výhod / odpočtů, příspěvků na zaměstnanecké výhody, daní zaměstnanců a daních zaměstnavatelů a jejich částek od začátku roku ze zastaralého systému.
 
 Při plánování zadávání počátečních zůstatků zvažte, jak podrobná mají data být. Většina firem zadává jednu konsolidovanou částku od začátku roku. Pokud jsou však potřeba podrobnější informace, lze zůstatky zadávat v přírůstcích po čtyřech. Rozhodování o tom, jaká úroveň podrobností je potřeba, určuje, kolik ručních výkazů mezd musí být vytvořeno pro každého zaměstnance. U jednotlivé částky od začátku roku je potřeba pouze jeden ruční výkaz pro každého zaměstnance. K tomu použijte dosud realizované částky z výpisu konečné platby z předchozího systému jako částku zadanou do nového mzdového systému.
 

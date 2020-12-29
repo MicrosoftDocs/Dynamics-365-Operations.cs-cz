@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002536"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686238"
 ---
 # <a name="view-and-design-financial-reports"></a>Zobrazení a navržení finančních sestav
 
@@ -164,7 +163,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete přid�
 14. Zavřete **Konsolidovanou rozvahu a výpis příjmu vedle sebe – výchozí**.
 15. Zavřete **Návrháře sestav**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Cvičení 5: Vytvoření sestavy oddělení vedle sebe
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Cvičení 5: Vytvoření sestavy oddělení vedle sebe
 V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu oddělení vedle sebe. Použijete existující definici řádku, ale vytvoříte novou definici sestavy a novou definici sloupce, která používá filtry dimenzí. Začneme ze seznamu Finanční výkazy.
 
 1. Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
@@ -195,6 +194,6 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 ## <a name="additional-resources"></a>Další prostředky
 [Finanční výkaznictví](../../../finance/general-ledger/financial-reporting-getting-started.md)
 
-[Zobrazení finančních sestav](../../../finance/general-ledger/view-financial-reports.md)
+[Zobrazit finanční sestavy](../../../finance/general-ledger/view-financial-reports.md)
 
-[Blog o finančním výkaznictví v Dynamics](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

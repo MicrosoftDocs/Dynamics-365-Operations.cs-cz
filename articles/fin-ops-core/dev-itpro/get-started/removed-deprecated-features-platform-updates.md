@@ -3,24 +3,23 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971438"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689559"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -37,8 +36,16 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.15 aplikací Finance and Operations
 
-> [!NOTE]
-> Verze 10.0.15 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Podpora aplikace Internet Explorer 11 pro Dynamics 365 je zastaralá
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
+| **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
+| **Ovlivněné oblasti produktu**         | Všechny produkty Dynamics 365 |
+| **Možnost nasazení**              | Vše|
+| **Stav**                         | Zastaralé. Internet Explorer 11 nebude podporován po srpnu 2021.|
+
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Doplněk sady Visual Studio pro použití oprav hotfix metadat
 
@@ -52,10 +59,6 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.14 aplikací Finance and Operations
-
-> [!NOTE]
-> Verze 10.0.14 je vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 
 ### <a name="online-users-page"></a>Stránka online uživatelů 
 
@@ -144,7 +147,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Visual Studio 2017 nahradí Visual Studio 2015 jako nasazená a požadovaná verze. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Jakmile bude oznámena dostupnost nových virtuálních počítačů (VM) s Visual Studio 2017 ohlášena, stávající VM pouze s Visual Studio 2015 budou muset být znovu nasazeny pomocí vlny vydání 1 z roku 2021. |
+| **Stav**                         | Virtuální počítače nasazené na verzi 10.0.13 (Platform update 37) nebo novější obsahují Visual Studio 2017. Verze 10.0.16 (Platform update 40) je finální vydání s podporou pro Visual Studio 2015. Virtuální stroje pouze s verzí Visual Studio 2015 nebude možné aktualizovat na verzi 10.0.17 (Platform update 41). |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Skupiny polí obsahující neplatné odkazy na pole
 

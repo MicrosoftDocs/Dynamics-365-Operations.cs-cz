@@ -1,6 +1,6 @@
 ---
-title: Ověření, zda je v aplikacích Finance and Operations a Common Data Service nakonfigurován duální zápis
-description: Toto téma vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v aplikacích Finance and Operations a Common Data Service.
+title: Ověření, zda je v aplikacích Finance and Operations a Dataverse nakonfigurován duální zápis
+description: Toto téma vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v aplikacích Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,41 +18,43 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2ddac76871a3ac574a1edcb5446be6c64e5e4682
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997223"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685532"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-common-data-service"></a>Ověření, zda je v aplikacích Finance and Operations a Common Data Service nakonfigurován duální zápis
+# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Ověření, zda je v aplikacích Finance and Operations a Dataverse nakonfigurován duální zápis
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service. Konkrétně vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v aplikacích Finance and Operations a Common Data Service.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v aplikacích Finance and Operations a Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Ověření, zda je v aplikaci Finance and Operations nakonfigurován duální zápis
 
-Chcete-li zjistit, zda jsou chyby, které se zobrazí při pokusu o uložení záznamů pro aktualizaci, pocházet z duálního zápisů, ověřte nejprve, zda je konfigurován dvojí zápis.
+Chcete-li zjistit, zda jsou chyby, které se zobrazí při pokusu o uložení řádků pro aktualizaci, pocházet z duálního zápisů, ověřte nejprve, zda je konfigurován dvojí zápis.
 
-+ Máte-li v aplikaci Finance and Operations oprávnění správce, přejděte na možnost **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**. Jsou-li zobrazeny podrobnosti o propojených prostředích a seznam spuštěných map entit, je nakonfigurován dvojí zápis.
++ Máte-li v aplikaci Finance and Operations oprávnění správce, přejděte na možnost **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**. Jsou-li zobrazeny podrobnosti o propojených prostředích a seznam spuštěných map tabulek, je nakonfigurován dvojí zápis.
 
     ![Ověřuje se připojení aplikace Finance and Operations, když máte oprávnění správce](media/verify_fin_ops_1.png)
 
-+ Nemáte-li oprávnění správce, zobrazí se chybová zpráva *Nelze zapsat data do entity \<entity name\>*. V příkladu na následujícím obrázku nelze vytvořit záznam odběratele v aplikaci Finance and Operations, protože je nakonfigurován dvojí zápis, ale skupina odběratelů a referenční data platebních podmínek neexistují v Common Data Service.
++ Nemáte-li oprávnění správce, zobrazí se chybová zpráva *Nelze zapsat data do entity \<entity name\>*. V příkladu na následujícím obrázku nelze vytvořit řádek odběratele v aplikaci Finance and Operations, protože je nakonfigurován dvojí zápis, ale skupina odběratelů a referenční data platebních podmínek neexistují v Dataverse.
 
     ![Ověřuje se připojení aplikace Finance and Operations, když nemáte oprávnění správce](media/verify_fin_ops_2.png)
 
 Informace o tom, jak vyřešit problémy při vytváření dat v aplikacích Finance and Operations, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
 
-## <a name="verify-that-dual-write-is-configured-in-common-data-service"></a>Ověření, zda je nakonfigurován duální zápis v Common Data Service
+## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Ověření, zda je nakonfigurován duální zápis v Dataverse
 
-Pokud se při vytváření dat nachází pole **Společnost** na stránkách v aplikaci Common Data Service, je nakonfigurováno dvojí zapisování.
+Pokud se při vytváření dat nachází pole **Společnost** na stránkách v aplikaci Dataverse, je nakonfigurováno dvojí zapisování.
 
-![Ověřování připojení Common Data Service](media/verify_cds.png)
+![Ověřování připojení Dataverse](media/verify_cds.png)
 
-Informace o tom, jak vyřešit problémy při vytváření dat v Common Data Service, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
+Informace o tom, jak vyřešit problémy při vytváření dat v Dataverse, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
 
-Informace o tom, jak zobrazit podrobnosti chyb při vytváření dat v Common Data Service, naleznete v tématu [Povolení a zobrazení protokolu sledování modulu plug-in v aplikaci Common Data Service, kde jsou zobrazeny podrobnosti o chybě](dual-write-troubleshooting.md#enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details).
+Informace o tom, jak zobrazit podrobnosti chyb při vytváření dat v Dataverse, naleznete v tématu [Povolení a zobrazení protokolu sledování modulu plug-in v aplikaci Dataverse, kde jsou zobrazeny podrobnosti o chybě](dual-write-troubleshooting.md#enable-view-trace).

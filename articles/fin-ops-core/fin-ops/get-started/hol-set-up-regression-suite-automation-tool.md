@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248706"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695108"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Nastavení a instalace kurzu pro nástroj Regression Suite Automation Tool
 Toto téma je kurz, který vám pomůže získat instalační program a začít s nástrojem RSAT a nástroji spojenými s používáním nástroje RSAT. 
@@ -80,7 +79,7 @@ V opačném případě doporučujeme vytvořit nový projekt Azure DevOps. Dalš
 3. Vyplňte následující pole a poté vyberte možnost **Vytvořit**:
 
     - **Název projektu**
-    - **Kontrola verzí** – Vyberte **Kontrola verzí Team Foundation**. Všimněte si, že výchozí možnost **Git**není podporována.
+    - **Kontrola verzí** – Vyberte **Kontrola verzí Team Foundation**. Všimněte si, že výchozí možnost **Git** není podporována.
     - **Proces položky práce**
 
     ![Dialogové okno Vytvořit nový projekt](./media/setup_rsa_tool_04.png)
@@ -407,7 +406,7 @@ Chcete-li povolit ověřování, je nutné vygenerovat a nainstalovat certifiká
     ```
 
     > [!NOTE]
-    > Pokud více uživatelů používá stejnou aplikaci, musí každý uživatel generovat samostatné kryptografické otisky a každý z těchto kryptografických otisků musí být přidán v části **\<klíče\>**.
+    > Pokud více uživatelů používá stejnou aplikaci, musí každý uživatel generovat samostatné kryptografické otisky a každý z těchto kryptografických otisků musí být přidán v části **\<keys\>**.
 
 5. Pokud existuje více než jeden počítač se serverem AOS, zopakujte kroky 3 až 4 pro každý další počítač.
 
@@ -501,7 +500,7 @@ Ve starších verzích aplikace RSAT bylo nutné instalovat ovladač a prohlíž
     - **Přístupový token** – zadejte přístupový token, který umožňuje nástroji připojení k Azure DevOps. Použijte osobní přístupový token, který jste vytvořili dříve v tomto kurzu. Další informace naleznete v tématu [Ověření přístupu s osobními přístupovými tokeny](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Název projektu** – vyberte název projektu Azure DevOps.
     - **Testovací plán** – vyberte testovací plán Azure DevOps, který obsahuje vaše testovací případy. Další informace naleznete v tématu [Vytvoření testovacích plánů a sad testů](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). Po výběru testovacího plánu vyberte možnost **Testovat připojení** pro otestování připojení k aplikaci Azure DevOps.
-    - **Název hostitele** – zadejte název hostitele testovacího prostředí, například **\<myaos\>. cloudax.dynamics.com.** Nezahrnujte předponu **https://** nebo **http://**.
+    - **Název hostitele** – zadejte název hostitele testovacího prostředí, například **\<myaos\>.cloudax.dynamics.com**. Nezahrnujte předponu **https://** nebo **http://**.
     - **Název hostitele SOAP** – zadejte název hostitele SOAP pro testovací prostředí. Název hostitele SOAP se obvykle shoduje s názvem hostitele, ale má příponu **SOAP**. Zde je příklad: **\<myaos\>soap.cloudax.dynamics.com**. Nezahrnujte předponu **https://** nebo **http://**.
 
         > [!NOTE]

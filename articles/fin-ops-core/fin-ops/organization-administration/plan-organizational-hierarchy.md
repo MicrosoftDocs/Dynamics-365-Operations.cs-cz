@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176876"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694682"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
@@ -45,7 +44,7 @@ Při plánování hierarchií je také třeba uvážit vztah mezi organizační 
 
 Je nutné mít alespoň jednu právnickou osobu reprezentující vaše podnikání. Právnická osoba může uzavírat právní smlouvy a jsou po ní vyžadovány finanční výkazy s informacemi o jejím výkonu.
 
-Právnické osoby slouží k transakčnímu podnikání nebo pro konsolidaci. To znamená, že právnická osoba v modulu Finance and Operations nepředstavuje nutně skutečnou entitu ve vašem podnikání. Společnost, která se účastní transakcí, může například vlastnit dceřiné právnické osoby. V tomto scénáři je právnická osoba vyžadována pro transakce a virtuální právnická osoba je vyžadována pro konsolidaci výsledků a zůstatků dceřiných právnických osob.
+Právnické osoby slouží k transakčnímu podnikání nebo pro konsolidaci. To znamená, že právnická osoba ve Finance and Operations nepředstavuje nutně skutečnou entitu ve vašem podnikání. Společnost, která se účastní transakcí, může například vlastnit dceřiné právnické osoby. V tomto scénáři je právnická osoba vyžadována pro transakce a virtuální právnická osoba je vyžadována pro konsolidaci výsledků a zůstatků dceřiných právnických osob.
 
 Interní organizace ve společnosti, jako jsou například místní pobočky, lze znázornit jako další právnické osoby nebo provozní jednotky hlavní právnické osoby. Provozní jednotka nemusí být zákonem definovaná organizace. Provozní jednotky se používají k řízení ekonomických zdrojů a provozních procesů v podnikání. Například oddělení a nákladová střediska jsou provozní jednotky.
 
