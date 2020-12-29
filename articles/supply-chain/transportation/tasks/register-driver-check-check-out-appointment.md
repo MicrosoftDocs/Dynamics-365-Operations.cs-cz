@@ -1,0 +1,48 @@
+---
+title: Registrace přihlášení a odhlášení řidiče k události
+description: Tato procedura ukazuje, jak registrovat přihlášení a odhlášení řidiče.
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: kamaybac
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 34074a6ad2c929085dc6fd43efa8da620ce18584
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424186"
+---
+# <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="984f2-103">Registrace přihlášení a odhlášení řidiče k události</span><span class="sxs-lookup"><span data-stu-id="984f2-103">Register driver check-in and check-out for an appointment</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="984f2-104">Tento postup popisuje, jak zaregistrovat přihlášení a odhlášení řidiče. To provádí obvykle koordinátor přepravy.</span><span class="sxs-lookup"><span data-stu-id="984f2-104">This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="984f2-105">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="984f2-105">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="984f2-106">Než začnete, musí být pro zatížení nastavena událost.</span><span class="sxs-lookup"><span data-stu-id="984f2-106">Before you start, there must be an appointment set up for a load.</span></span> <span data-ttu-id="984f2-107">Chcete-li vytvořit událost, můžete spustit proceduru „Nastavení události pro zatížení“ jako předpoklad.</span><span class="sxs-lookup"><span data-stu-id="984f2-107">To create an appointment, you can run the "Set up an appointment for a load" procedure as a prerequisite.</span></span>
+
+
+## <a name="select-an-appointment"></a><span data-ttu-id="984f2-108">Výběr události</span><span class="sxs-lookup"><span data-stu-id="984f2-108">Select an appointment</span></span>
+1. <span data-ttu-id="984f2-109">Přejděte do nabídky Správa přepravy > Plánování > Plánování událostí doku > Přihlášení a odhlášení řidiče.</span><span class="sxs-lookup"><span data-stu-id="984f2-109">Go to Transportation management > Planning > Dock appointment scheduling > Driver check-in and check-out.</span></span>
+2. <span data-ttu-id="984f2-110">Výběr události</span><span class="sxs-lookup"><span data-stu-id="984f2-110">Select an appointment.</span></span>
+
+## <a name="register-driver-check-in"></a><span data-ttu-id="984f2-111">Registrace přihlášení řidiče</span><span class="sxs-lookup"><span data-stu-id="984f2-111">Register driver check-in</span></span>
+1. <span data-ttu-id="984f2-112">Klikněte na Přihlášení řidiče.</span><span class="sxs-lookup"><span data-stu-id="984f2-112">Click Driver check-in.</span></span>
+2. <span data-ttu-id="984f2-113">Zadejte hodnotu do pole Číslo přívěsu.</span><span class="sxs-lookup"><span data-stu-id="984f2-113">In the Trailer number field, type a value.</span></span>
+3. <span data-ttu-id="984f2-114">Do pole Jméno řidiče zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="984f2-114">In the Driver name field, type a value.</span></span>
+4. <span data-ttu-id="984f2-115">V poli Řidičský průkaz zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="984f2-115">In the Driver license field, type a value.</span></span>
+5. <span data-ttu-id="984f2-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="984f2-116">Click OK.</span></span>
+
+## <a name="register-driver-check-out"></a><span data-ttu-id="984f2-117">Registrace odhlášení řidiče</span><span class="sxs-lookup"><span data-stu-id="984f2-117">Register driver check-out</span></span>
+1. <span data-ttu-id="984f2-118">Klikněte na Odhlášení řidiče.</span><span class="sxs-lookup"><span data-stu-id="984f2-118">Click Driver check-out.</span></span>
+2. <span data-ttu-id="984f2-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="984f2-119">Click OK.</span></span>
+

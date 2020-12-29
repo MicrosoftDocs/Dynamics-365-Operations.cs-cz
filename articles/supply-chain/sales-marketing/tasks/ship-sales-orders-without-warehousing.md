@@ -1,0 +1,58 @@
+---
+title: Expedování prodejních objednávek bez skladování
+description: Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli.
+author: omulvad
+manager: tfehr
+ms.date: 08/20/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424090"
+---
+# <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="33794-103">Expedování prodejních objednávek bez skladování</span><span class="sxs-lookup"><span data-stu-id="33794-103">Ship sales orders without warehousing</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="33794-104">Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli.</span><span class="sxs-lookup"><span data-stu-id="33794-104">This topic explains how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="33794-105">Průvodce lze použít pro tok plnění, který není nastaven pro správu skladu (ani základní ani rozšířené funkce skladu), a proto nevyžaduje zaregistrování výdeje produktu mají před dodávkou.</span><span class="sxs-lookup"><span data-stu-id="33794-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="33794-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="33794-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="33794-107">V obou případech před spuštěním této úlohy vytvořte prodejní objednávku pro produkt na skladě s množstvím větším než 1.</span><span class="sxs-lookup"><span data-stu-id="33794-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="33794-108">Abyste předešli chybě zaúčtování, je třeba zkontrolovat, že množství produktu na skladě na pracovišti a ve skladu, které jste vybrali na objednávce, zahrnuje množství objednávky.</span><span class="sxs-lookup"><span data-stu-id="33794-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you've selected on the order covers the order quantity.</span></span>
+
+## <a name="post-packing-slip-for-an-order"></a><span data-ttu-id="33794-109">Zaúčtování dodacího listu pro objednávku</span><span class="sxs-lookup"><span data-stu-id="33794-109">Post packing slip for an order</span></span>
+1. <span data-ttu-id="33794-110">V navigačním podokně přejděte na **Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.</span><span class="sxs-lookup"><span data-stu-id="33794-110">In the navigation pane, go to **Modules > Sales and marketing > Sales orders > All sales orders**.</span></span>
+2. <span data-ttu-id="33794-111">V seznamu vyhledejte a vyberte objednávku, kterou jste vytvořili pro tento úkol.</span><span class="sxs-lookup"><span data-stu-id="33794-111">In the list, find and select the order you have created for this task.</span></span>
+3. <span data-ttu-id="33794-112">V podokně akcí vyberte **Vyskladnit a zabalit**.</span><span class="sxs-lookup"><span data-stu-id="33794-112">On the Action Pane, select **Pick and pack**.</span></span>
+4. <span data-ttu-id="33794-113">Vyberte **Zaúčtovat dodací list**.</span><span class="sxs-lookup"><span data-stu-id="33794-113">Select **Post packing slip**.</span></span>
+5. <span data-ttu-id="33794-114">Rozbalte nebo sbalte oddíl **Parametry**.</span><span class="sxs-lookup"><span data-stu-id="33794-114">Expand or collapse the **Parameters** section.</span></span>
+6. <span data-ttu-id="33794-115">V poli **Množství** vyberte možnost **Vše**.</span><span class="sxs-lookup"><span data-stu-id="33794-115">In the **Quantity** field, select **All**.</span></span>
+    - <span data-ttu-id="33794-116">Ostatní možnosti zahrnují **Dodat nyní** a **Vyskladněno**.</span><span class="sxs-lookup"><span data-stu-id="33794-116">Other options include **Deliver now** and **Picked**.</span></span> <span data-ttu-id="33794-117">Pokud řádek objednávky má být částečně dodán a pole **Dodat nyní** v řádku objednávky obsahuje nějaké množství, vybrali byste **Dodat nyní**.</span><span class="sxs-lookup"><span data-stu-id="33794-117">If the order line is to be shipped partially and the **Deliver now** field on the order line contains a quantity, you would select **Deliver now**.</span></span> <span data-ttu-id="33794-118">Pokud tok plnění vaší organizace zahrnuje výdej jako samostatný proces, který je spravován a zaregistrován ve výdejce, měli byste vybrat **Vyskladněno**.</span><span class="sxs-lookup"><span data-stu-id="33794-118">If your organization's fulfillment flow includes picking as a separate process that is managed by and registered with a picking list, you would select **Picked**.</span></span>  
+    - <span data-ttu-id="33794-119">Zkontrolujte, zda je možnost **Zaúčtování** nastavena na hodnotu **Ano**.</span><span class="sxs-lookup"><span data-stu-id="33794-119">Check that the **Posting** option is set to **Yes**.</span></span>  
+7. <span data-ttu-id="33794-120">Nastavte možnost **Tisk dodacího listu** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="33794-120">Set the **Print packing slip** option to **Yes**.</span></span> <span data-ttu-id="33794-121">Karta **Přehled** obsahuje seznam dodacích listů k vygenerování v tomto zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="33794-121">The **Overview** tab contains a list of packing slips to be generated in this posting.</span></span> <span data-ttu-id="33794-122">Pokud dodáváte jednotlivé objednávky, obvykle bude jeden dodací list.</span><span class="sxs-lookup"><span data-stu-id="33794-122">If you are shipping an individual order, there will typically be one packing slip.</span></span> <span data-ttu-id="33794-123">Avšak jsou-li řádky objednávky, která má být expedována, z různých pracovišť, zaúčtování bude automaticky rozděleno na příslušný počet dokumentů.</span><span class="sxs-lookup"><span data-stu-id="33794-123">However, if that order's lines are to be shipped from different sites, posting will automatically be split into the appropriate number of documents.</span></span> <span data-ttu-id="33794-124">Jedná se o povinnou podmínku, kterou nelze změnit.</span><span class="sxs-lookup"><span data-stu-id="33794-124">This is a mandatory condition that cannot be changed.</span></span> <span data-ttu-id="33794-125">Obdobně platí, že zaúčtování bude rovněž rozděleno do několika dokumentů, pokud mají řádky objednávky k dodání různé doručovací adresy a nastavení zásad expedice vyžaduje rozdělení.</span><span class="sxs-lookup"><span data-stu-id="33794-125">Similarly, the posting will also be split into multiple documents if the order's lines are to be shipped to different delivery addresses, and the shipping policy is set up to require a split.</span></span>  
+8. <span data-ttu-id="33794-126">Na kartě **Řádky** vyberte řádek pro řádek objednávky k expedici.</span><span class="sxs-lookup"><span data-stu-id="33794-126">On the **Lines** tab, select the row for the order line to be shipped.</span></span>
+9. <span data-ttu-id="33794-127">V poli **Aktualizace** zadejte číslo menší než původní množství.</span><span class="sxs-lookup"><span data-stu-id="33794-127">In the **Update** field, enter a number lower than the original quantity.</span></span>
+10. <span data-ttu-id="33794-128">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="33794-128">Select **OK**.</span></span>
+11. <span data-ttu-id="33794-129">Vyberte **Ano**.</span><span class="sxs-lookup"><span data-stu-id="33794-129">Select **Yes**.</span></span>
+12. <span data-ttu-id="33794-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="33794-130">Close the page.</span></span>
+13. <span data-ttu-id="33794-131">V podokně akcí vyberte **Možnosti**.</span><span class="sxs-lookup"><span data-stu-id="33794-131">On the Action Pane, select **Options**.</span></span>
+14. <span data-ttu-id="33794-132">Vyberte **Změnit zobrazení**.</span><span class="sxs-lookup"><span data-stu-id="33794-132">Select **Change view**.</span></span>
+15. <span data-ttu-id="33794-133">Vyberte **Zobrazení záhlaví**.</span><span class="sxs-lookup"><span data-stu-id="33794-133">Select **Header view**.</span></span>
+    - <span data-ttu-id="33794-134">Pokud byly plně expedovány všechny řádky objednávky, stav zakázky se změní z otevřeného na dodáno.</span><span class="sxs-lookup"><span data-stu-id="33794-134">If all of the lines on the order have been fully shipped, the order status changes from Open to Delivered.</span></span>  
+    - <span data-ttu-id="33794-135">V tomto případě byl řádek objednávky expedován částečně.</span><span class="sxs-lookup"><span data-stu-id="33794-135">In this example, the order line has been shipped partially.</span></span> <span data-ttu-id="33794-136">Toto je důvod, proč stav objednávky zůstane otevřený.</span><span class="sxs-lookup"><span data-stu-id="33794-136">This is why the the order status remains Open.</span></span>     
+    - <span data-ttu-id="33794-137">Pole **Stav dokumentu** je nastaveno na Dodací list, protože alespoň jeden z řádků objednávky byl dodán.</span><span class="sxs-lookup"><span data-stu-id="33794-137">The **Document status** field is set to Packing slip because at least one of the order lines have been shipped.</span></span>  
+16. <span data-ttu-id="33794-138">V podokně akcí klikněte na možnost **Obecné**.</span><span class="sxs-lookup"><span data-stu-id="33794-138">On the Action Pane, select **General**.</span></span>
+17. <span data-ttu-id="33794-139">Vyberte **Množství řádků**.</span><span class="sxs-lookup"><span data-stu-id="33794-139">Select **Line quantity**.</span></span>
+18. <span data-ttu-id="33794-140">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="33794-140">Close the page.</span></span>
+19. <span data-ttu-id="33794-141">V podokně akcí vyberte **Vyskladnit a zabalit**.</span><span class="sxs-lookup"><span data-stu-id="33794-141">On the Action Pane, select **Pick and pack**.</span></span>
+20. <span data-ttu-id="33794-142">Vyberte **Dodací list**.</span><span class="sxs-lookup"><span data-stu-id="33794-142">Select **Packing slip**.</span></span> <span data-ttu-id="33794-143">Stránka **Deník dodacích listů** obsahuje všechny dokumenty dodacího listu, které byly vygenerovány pro vaši objednávku.</span><span class="sxs-lookup"><span data-stu-id="33794-143">The **Packing slip journal** page contains all the packing slip documents that were generated for your order.</span></span> <span data-ttu-id="33794-144">Můžete zkontrolovat podrobnosti o jednotlivých dokumentech a vytisknout je, pokud chcete.</span><span class="sxs-lookup"><span data-stu-id="33794-144">You can review details of each document and print them, if you wish.</span></span>  
+
