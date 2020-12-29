@@ -1,0 +1,77 @@
+---
+title: Integrovaná hlavní data dodavatelů
+description: Toto téma popisuje integraci dat dodavatele mezi aplikacemi Finance and Operations a Dataverse.
+author: RamaKrishnamoorthy
+manager: AnnBe
+ms.date: 07/15/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User, IT Pro
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: ''
+ms.author: ramasri
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-07-15
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685478"
+---
+# <a name="integrated-vendor-master"></a><span data-ttu-id="6004b-103">Integrovaná hlavní data dodavatelů</span><span class="sxs-lookup"><span data-stu-id="6004b-103">Integrated vendor master</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+
+
+<span data-ttu-id="6004b-104">Pojem *dodavatel* se týká dodavatelské organizace nebo jediného majitele, který dodává zboží nebo služby nějakému podniku.</span><span class="sxs-lookup"><span data-stu-id="6004b-104">The term *vendor* refers to a supplier organization, or a sole proprietor who supplies goods or services to a business.</span></span> <span data-ttu-id="6004b-105">Ačkoli je *dodavatel* zavedeným konceptem v aplikacích Microsoft Dynamics 365 Supply Chain Management, v modelem řízených aplikacích Dynamics 365 žádný koncept dodavatele neexistuje.</span><span class="sxs-lookup"><span data-stu-id="6004b-105">Although *vendor* is an established concept in Microsoft Dynamics 365 Supply Chain Management, no vendor concept exists in model-driven apps in Dynamics 365.</span></span> <span data-ttu-id="6004b-106">Chcete-li však uložit informace o dodavateli, můžete přetížit entitu **Účet/kontakt**.</span><span class="sxs-lookup"><span data-stu-id="6004b-106">However, you can overload the **Account/Contact** entity to store vendor information.</span></span> <span data-ttu-id="6004b-107">Integrovaná hlavní data dodavatelů zavádí explicitní koncept dodavatele v modelem řízených aplikacích Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="6004b-107">The integrated vendor master introduces an explicit vendor concept in model-driven apps in Dynamics 365.</span></span> <span data-ttu-id="6004b-108">V entitě **Účet/kontakt** můžete použít nový návrh dodavatele nebo uložit data dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-108">You can either use the new vendor design or store vendor data in the **Account/Contact** entity.</span></span> <span data-ttu-id="6004b-109">Dvojitý zápis podporuje oba přístupy.</span><span class="sxs-lookup"><span data-stu-id="6004b-109">Dual-write supports both approaches.</span></span>
+
+<span data-ttu-id="6004b-110">U obou přístupů jsou data dodavatele integrována mezi Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service a portály Power Apps.</span><span class="sxs-lookup"><span data-stu-id="6004b-110">In both approaches, the vendor data is integrated between Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service, and Power Apps portals.</span></span> <span data-ttu-id="6004b-111">V Supply Chain Management jsou data k dispozici pro workflowy, jako jsou nákupní žádanky a nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="6004b-111">In Supply Chain Management, the data is available for workflows such as purchase requisitions and purchase orders.</span></span>
+
+## <a name="vendor-data-flow"></a><span data-ttu-id="6004b-112">Tok dat dodavatele</span><span class="sxs-lookup"><span data-stu-id="6004b-112">Vendor data flow</span></span>
+
+<span data-ttu-id="6004b-113">Pokud nechcete uložit data dodavatele v entitě **Účet/kontakt** v Dataverse, můžete použít nový návrh dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-113">If you don't want to store vendor data in the **Account/Contact** entity in Dataverse, you can use the new vendor design.</span></span>
+
+![Tok dat dodavatele](media/dual-write-vendor-data-flow.png)
+
+<span data-ttu-id="6004b-115">Pokud nechcete nadále ukládat data dodavatele v entitě **Účet/kontakt**, můžete použít rozšířený návrh dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-115">If you want to continue to store vendor data in the **Account/Contact** entity, you can use the extended vendor design.</span></span> <span data-ttu-id="6004b-116">Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu.</span><span class="sxs-lookup"><span data-stu-id="6004b-116">To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package.</span></span> <span data-ttu-id="6004b-117">Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).</span><span class="sxs-lookup"><span data-stu-id="6004b-117">For more information, see [Switch between vendor designs](vendor-switch.md).</span></span>
+
+![Rozšířený tok dat dodavatele](media/dual-write-vendor-detail.jpg)
+
+> [!TIP]
+> <span data-ttu-id="6004b-119">Používáte portály Power Apps pro samoobslužné dodavatele, mohou informace o dodavateli téci přímo do aplikací Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="6004b-119">If you're using Power Apps portals for self-service vendors, the vendor information can flow directly to Finance and Operations apps.</span></span>
+
+## <a name="templates"></a><span data-ttu-id="6004b-120">Šablony</span><span class="sxs-lookup"><span data-stu-id="6004b-120">Templates</span></span>
+
+<span data-ttu-id="6004b-121">Data dodavatele zahrnují všechny informace o dodavateli, například skupinu dodavatelů, adresy, kontaktní informace, platební profil a profil faktury.</span><span class="sxs-lookup"><span data-stu-id="6004b-121">Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile.</span></span> <span data-ttu-id="6004b-122">Kolekce mapování tabulek pracují společně během interakce s daty dodavatele, jak je uvedeno v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="6004b-122">A collection of table maps work together during vendor data interaction, as shown in the following table.</span></span>
+
+<span data-ttu-id="6004b-123">Aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="6004b-123">Finance and Operations apps</span></span> | <span data-ttu-id="6004b-124">Jiné aplikace Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="6004b-124">Other Dynamics 365 apps</span></span>     | <span data-ttu-id="6004b-125">Popis</span><span class="sxs-lookup"><span data-stu-id="6004b-125">Description</span></span>
+----------------------------|-----------------------------|------------
+<span data-ttu-id="6004b-126">Dodavatel V2</span><span class="sxs-lookup"><span data-stu-id="6004b-126">Vendor V2</span></span>                   | <span data-ttu-id="6004b-127">Účet</span><span class="sxs-lookup"><span data-stu-id="6004b-127">Account</span></span>                     | <span data-ttu-id="6004b-128">Firmy, které používají entitu obchodní vztah k ukládání informací o dodavateli, jí mohou nadále používat stejným způsobem.</span><span class="sxs-lookup"><span data-stu-id="6004b-128">Businesses that use the Account entity to store vendor information can continue to use it in the same way.</span></span> <span data-ttu-id="6004b-129">Mohou také využít explicitní funkce dodavatele, které přicházejí z důvodu integrace s aplikacemi Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="6004b-129">They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.</span></span>
+<span data-ttu-id="6004b-130">Dodavatel V2</span><span class="sxs-lookup"><span data-stu-id="6004b-130">Vendor V2</span></span>                   | <span data-ttu-id="6004b-131">Msdyn\_vendors</span><span class="sxs-lookup"><span data-stu-id="6004b-131">Msdyn\_vendors</span></span>              | <span data-ttu-id="6004b-132">Firmy, které používají vlastní řešení pro dodavatele, mohou využít výhod integrované koncepce dodavatele, která je zaváděna v Dataverse z důvodu integrace s aplikacemi Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="6004b-132">Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Dataverse because of Finance and Operations apps integration.</span></span> 
+<span data-ttu-id="6004b-133">Skupiny dodavatelů</span><span class="sxs-lookup"><span data-stu-id="6004b-133">Vendor groups</span></span>               | <span data-ttu-id="6004b-134">msdyn\_vendorgroups</span><span class="sxs-lookup"><span data-stu-id="6004b-134">msdyn\_vendorgroups</span></span>         | <span data-ttu-id="6004b-135">Tato šablona slouží k synchronizaci informací o skupinách dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-135">This template synchronizes vendor group information.</span></span>
+<span data-ttu-id="6004b-136">Platební metoda dodavatele</span><span class="sxs-lookup"><span data-stu-id="6004b-136">Vendor payment method</span></span>       | <span data-ttu-id="6004b-137">msdyn\_vendorpaymentmethods</span><span class="sxs-lookup"><span data-stu-id="6004b-137">msdyn\_vendorpaymentmethods</span></span> | <span data-ttu-id="6004b-138">Tato šablona slouží k synchronizaci informací o způsobu platby dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-138">This template synchronizes vendor payment method information.</span></span>
+<span data-ttu-id="6004b-139">CDS kontakty V2</span><span class="sxs-lookup"><span data-stu-id="6004b-139">CDS Contacts V2</span></span>             | <span data-ttu-id="6004b-140">kontakty</span><span class="sxs-lookup"><span data-stu-id="6004b-140">contacts</span></span>                    | <span data-ttu-id="6004b-141">Šablona [kontakty](customer-mapping.md#cds-contacts-v2-to-contacts) synchronizuje všechny primární, sekundární a terciární kontaktní informace pro odběratele i dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-141">The [contacts](customer-mapping.md#cds-contacts-v2-to-contacts) template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.</span></span>
+<span data-ttu-id="6004b-142">Řádky platebního kalendáře</span><span class="sxs-lookup"><span data-stu-id="6004b-142">Payment schedule lines</span></span>      | <span data-ttu-id="6004b-143">msdyn\_paymentschedulelines</span><span class="sxs-lookup"><span data-stu-id="6004b-143">msdyn\_paymentschedulelines</span></span> | <span data-ttu-id="6004b-144">Šablona [řádky platebního kalendáře](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synchronizuje referenční data pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-144">The [payment schedule lines](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) template synchronizes reference data for customers and vendors.</span></span>
+<span data-ttu-id="6004b-145">Platební kalendář</span><span class="sxs-lookup"><span data-stu-id="6004b-145">Payment schedule</span></span>            | <span data-ttu-id="6004b-146">msdyn\_paymentschedules</span><span class="sxs-lookup"><span data-stu-id="6004b-146">msdyn\_paymentschedules</span></span>     | <span data-ttu-id="6004b-147">Šablona [plány plateb](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synchronizuje referenční data pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-147">The [payment schedules](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) template synchronizes payment schedule reference data, for both customers and vendors.</span></span>
+<span data-ttu-id="6004b-148">Řádky dnů platby CDS V2</span><span class="sxs-lookup"><span data-stu-id="6004b-148">Payment day lines CDS V2</span></span>    | <span data-ttu-id="6004b-149">msdyn\_paymentdaylines</span><span class="sxs-lookup"><span data-stu-id="6004b-149">msdyn\_paymentdaylines</span></span>      | <span data-ttu-id="6004b-150">Šablona [řádky dní platby](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synchronizuje referenční data řádků dní platby pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-150">The [payment day lines](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) template synchronizes payment day lines reference data for customers and vendors.</span></span>
+<span data-ttu-id="6004b-151">Dny platby CDS</span><span class="sxs-lookup"><span data-stu-id="6004b-151">Payment days CDS</span></span>            | <span data-ttu-id="6004b-152">msdyn\_paymentdays</span><span class="sxs-lookup"><span data-stu-id="6004b-152">msdyn\_paymentdays</span></span>          | <span data-ttu-id="6004b-153">Šablona [dny platby](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synchronizuje referenční data dní plateb pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-153">The [payment days](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) template synchronizes payment days reference data, for both customers and vendors.</span></span>
+<span data-ttu-id="6004b-154">Platební podmínky</span><span class="sxs-lookup"><span data-stu-id="6004b-154">Terms of payment</span></span>            | <span data-ttu-id="6004b-155">msdyn\_paymentterms</span><span class="sxs-lookup"><span data-stu-id="6004b-155">msdyn\_paymentterms</span></span>         | <span data-ttu-id="6004b-156">Šablona [platební podmínky](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synchronizuje referenční data platebních podmínek pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-156">The [terms of payment](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) template synchronizes payment terms reference data, for both customers and vendors.</span></span>
+<span data-ttu-id="6004b-157">Přípony názvu</span><span class="sxs-lookup"><span data-stu-id="6004b-157">Name affixes</span></span>                | <span data-ttu-id="6004b-158">msdyn\_nameaffixes</span><span class="sxs-lookup"><span data-stu-id="6004b-158">msdyn\_nameaffixes</span></span>          | <span data-ttu-id="6004b-159">Šablona [přípony názvů](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synchronizuje referenční data přípon názvů pro odběratele a dodavatele.</span><span class="sxs-lookup"><span data-stu-id="6004b-159">The [name affixes](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) template synchronizes name affixes reference data, for both customers and vendors.</span></span>
+
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
+
+[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
+
+[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
