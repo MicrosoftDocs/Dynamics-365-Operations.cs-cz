@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34d4ad9106b2751c77db4fd03d83932e587a5332
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770016"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680113"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 
@@ -74,7 +73,7 @@ Musíte mít datový model ER jako zdroj obchodních dat, která se použijí v 
 [![Stránka konfigurace](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Navrhněte ER konfiguraci formátu
-Je nutné vytvořit novou konfiguraci formátu ER, který používá datový model **Intrastat** jako zdroj obchodních dat. Tato konfigurace formátu musí generovat výsledky v podobě elektronických dokumentů formátu OpenXML (soubor aplikace Excel). Pro další důležité informace si přehrajte tutorial **ER vytvoření konfigurace pro sestavy ve formátu OPENXML**. Pojmenujte nové konfigurace **Import / export aktivit**, jak je ukázáno na následujícím obrázku. Použijte soubor v aplikaci Excel [dat ER – podrobnosti importu a exportu](https://go.microsoft.com/fwlink/?linkid=845208) jako šablonu při navrhování ER formátu. Pro informace o šabloně formátu importu si přehrajte tutorial.)
+Je nutné vytvořit novou konfiguraci formátu ER, který používá datový model **Intrastat** jako zdroj obchodních dat. Tato konfigurace formátu musí generovat výsledky v podobě elektronických dokumentů formátu OpenXML (soubor aplikace Excel). Pro další důležité informace si přehrajte tutorial **ER vytvoření konfigurace pro sestavy ve formátu OPENXML**. Pojmenujte nové konfigurace **Import / export aktivit**, jak je ukázáno na následujícím obrázku. Použijte soubor v aplikaci Excel [dat ER – podrobnosti importu a exportu](https://go.microsoft.com/fwlink/?linkid=845208) jako šablonu při navrhování ER formátu. (Pro informace o šabloně formátu importu si přehrajte tutorial.)
 
 [![Konfigurace aktivit import/export](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: cf58a7d851577854d08bad70cff69794c3841a2d
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012459"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664289"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -36,29 +36,34 @@ Když otevřete rozhraní pro provádění výrobního provozu, automaticky nač
 
 Tohle téma popisuje různé možnosti konfigurace zařízení úkolového lístku.
 
-## <a name="turn-on-new-features-in-feature-management"></a>Zapnutí nových funkcí ve správě funkcí
+## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Zapněte rozhraní pro provádění výrobního provozu a související volitelné funkce
 
-Než budou k dispozici, musíte v systému zapnout několik nastavení popsaných v tomto tématu. Na stránce [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zapněte některé nebo všechny následujících funkce podle potřeby.
+Samotné rozhraní pro provádění výrobního provozu a několik volitelných nastavení, která jsou popsána v tomto tématu, musí být ve vašem systému zapnutá, než je budete moci používat. Použijte stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), chcete-li podle potřeby zapnout některou nebo všechny funkce popsané v následujících podkapitolách,
 
-### <a name="generate-license-plate"></a>Generovat poznávací značku
+### <a name="the-production-floor-execution-interface"></a>Rozhraní pro provádění výrobního provozu
 
-Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
+Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+- Provádění výrobního provozu
+
+### <a name="generate-license-plates"></a>Generování registračních značek
+
+Tyto funkce zpřístupňují funkčnost registrační značky pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
 1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
 1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
 
-### <a name="print-label"></a>Tisk etikety
+### <a name="print-labels"></a>Tisknout štítky
 
-Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
+Tyto funkce zpřístupňují funkčnost tisku štítku pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
 1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
 1. Vytisknout štítek ze zařízení úkolového lístku
 
 ### <a name="allow-locking-the-touch-screen"></a>Povolení uzamčení dotykové obrazovky
 
-Chcete-li tuto funkci zpřístupnit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tato funkce přidává tlačítko do rozhraní provádění výrobního provozu, které umožňuje pracovníkům dezinfikovat dotykovou obrazovku. Chcete-li ho použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Preview) Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
+- Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 
@@ -70,13 +75,14 @@ Chcete-li vytvořit a udržovat konfigurace zařízení, přejděte na **Řízen
 Dále nakonfigurujte různá nastavení pro vybranou konfiguraci zařízení. K dispozici jsou následující pole:
 
 - **Hlášení množství při odchodu** – Nastavením možnosti na *Ano* vyzvete pracovníky, aby nahlásili zpětnou vazbu o probíhajících úlohách při odchodu. Při nastavení na *Ne* k tomu pracovníci nebudou vyzváni.
-- **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne* , pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Zařízení se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano* , pracovníci zůstanou přihlášení k zařízení úkolového lístku. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco zařízení úkolového lístku nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
-- **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne* , místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano* , pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano* , kde pracovníci často zůstávají přihlášeni delší dobu.
-- **Jeden pracovník** – Nastavte tuto možnost na *Ano* , pouze pokud jeden pracovník používá každé zařízení úkolového lístku, kde je tato konfigurace aktivní. Pokud je tato možnost nastavena na *Ano* , možnost **Zamknout zaměstnance** je automaticky nastavena na *Ano*. Tohle nastavení navíc odebere požadavek (a schopnost) pracovníka přihlásit se pomocí ID znaku (nebo jiného podobného ID). Místo toho se pracovník přihlásí do Microsoft Dynamics 365 Supply Chain Management pomocí systémového uživatelského účtu propojeného s účtem *časově registrovaný pracovník* (z tabulky *pracovníci* ) a současně se přihlásí k zařízení úkolového lístku jako tento pracovník.
-- **Povolit uzamčení dotykové obrazovky** – Nastavte tuto možnost na *Ano* , aby pracovníci mohli zamknout dotykovou obrazovku zařízení úkolového lístku, aby ji mohli dezinfikovat. Když je tato možnost nastavena na *Ano* , na přihlasovací stránku zařízení je přidáno tlačítko **Zamknout obrazovku kvůli dezinfekci**. Když pracovník vybere toto tlačítko, dotykový displej se dočasně zamkne, aby se zabránilo neúmyslnému zadání. Zobrazí se také odpočítávání. Pracovník může nyní bezpečně vyčistit zařízení a obrazovku. Po skončení odpočítávání se dotykový displej automaticky odemkne.
-- **Doba trvání uzamčení obrazovky** – Když je možnost **Povolit uzamčení dotykové obrazovky** nastavena na *Ano* , použijte tuto možnost pro zadání počtu sekund, po které by měla být dotyková obrazovka uzamčena pro dezinfekci. Doba trvání musí být mezi 5 a 120 sekundami.
+- **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne*, pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Zařízení se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano*, pracovníci zůstanou přihlášení k zařízení úkolového lístku. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco zařízení úkolového lístku nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
+- **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne*, místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano*, pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano*, kde pracovníci často zůstávají přihlášeni delší dobu.
+- **Jeden pracovník** – Nastavte tuto možnost na *Ano*, pouze pokud jeden pracovník používá každé zařízení úkolového lístku, kde je tato konfigurace aktivní. Pokud je tato možnost nastavena na *Ano*, možnost **Zamknout zaměstnance** je automaticky nastavena na *Ano*. Tohle nastavení navíc odebere požadavek (a schopnost) pracovníka přihlásit se pomocí ID znaku (nebo jiného podobného ID). Místo toho se pracovník přihlásí do Microsoft Dynamics 365 Supply Chain Management pomocí systémového uživatelského účtu propojeného s účtem *časově registrovaný pracovník* (z tabulky *pracovníci*) a současně se přihlásí k zařízení úkolového lístku jako tento pracovník.
+- **Povolit uzamčení dotykové obrazovky** – Nastavte tuto možnost na *Ano*, aby pracovníci mohli zamknout dotykovou obrazovku zařízení úkolového lístku, aby ji mohli dezinfikovat. Když je tato možnost nastavena na *Ano*, na přihlasovací stránku zařízení je přidáno tlačítko **Zamknout obrazovku kvůli dezinfekci**. Když pracovník vybere toto tlačítko, dotykový displej se dočasně zamkne, aby se zabránilo neúmyslnému zadání. Zobrazí se také odpočítávání. Pracovník může nyní bezpečně vyčistit zařízení a obrazovku. Po skončení odpočítávání se dotykový displej automaticky odemkne.
+- **Doba trvání uzamčení obrazovky** – Když je možnost **Povolit uzamčení dotykové obrazovky** nastavena na *Ano*, použijte tuto možnost pro zadání počtu sekund, po které by měla být dotyková obrazovka uzamčena pro dezinfekci. Doba trvání musí být mezi 5 a 120 sekundami.
 - **Generovat registrační značku** – Nastavením této možnosti na *Ano* vygenerujete novou registrační značku pokaždé, když pracovník použije zařízení úkolového lístku k vykázání dokončené práce. Registrační značka vozidla je generována z číselné posloupnosti nastavené na stránce **Parametry řízení skladu**. Při nastavení této možnosti na *Ne* musí pracovníci při vykazování dokončené práce uvést existující registrační značku.
 - **Tisk etikety** – Nastavte tuto možnost na *Ano* k vytištění etikety poznávací značky, když pracovník používá zařízení úkolového lístku k nahlášení dokončené práce. Konfigurace etikety je nastavena ve směrování dokumentu, jak je popsáno v [Rozvržení směrování dokumentu pro popisky registrační značky](../warehousing/document-routing-layout-for-license-plates.md).
+- **Výběr karty** - Pomocí nastavení v této části zvolte, které karty by se měly zobrazit rozhraním provádění výrobního provozu, když je aktivní aktuální konfigurace. Můžete navrhnout tolik karet, kolik potřebujete, a poté je zde podle potřeby přidat a uspořádat. Podrobnosti o tom, jak zde navrhovat karty a pracovat s nastavením, najdete v části [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
 
 ## <a name="clean-up-job-configurations"></a>Konfigurace úloh čištění
 

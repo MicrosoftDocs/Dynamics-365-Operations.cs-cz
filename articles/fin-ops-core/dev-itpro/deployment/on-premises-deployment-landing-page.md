@@ -3,26 +3,25 @@ title: Domovská stránka Místní nasazení
 description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: sericks007
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 54d236b7bca3e4529d5fff3ef71a2679b785a1a5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367051"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679337"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -70,7 +69,6 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Skripty pro řešení problémů v místních prostředích](onprem-tsg-implementations.md)
 - [Rotace certifikátů](certificate-rotation-on-prem.md)
 - [Místní diagnostika](on-premises-diagnostics.md)
-- [Funkce neimplementované v místních nasazeních](../../fin-ops/get-started/features-not-implemented-on-prem.md)
 - [Odstraněné nebo zastaralé funkce Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  

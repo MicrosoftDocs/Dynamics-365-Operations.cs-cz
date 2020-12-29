@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0c8a265971c4a3f0b83ac1d6404b7d4aa82660
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793796"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516612"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog kurzů pro správce Dynamics 365 Supply Chain Management
 
@@ -46,7 +46,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Správa projektu implementace pro Finance and Operations](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Poznejte nejdůležitější prvky a osvědčené postupy pro řízení úspěšného projektu implementace Finance and Operations. Od prvního kroku, ve kterém plánujete a navrhujete metodologii projektu, využití služeb FastTrack, strategii vývoje, správu dat atd., po nejlepší způsoby správy a sledování provozu po návratu do provozu. | Libovolná online školení vlastním tempem | 11.5 hodin |
 | [Domovská stránka Správa systému](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Toto téma odkazuje na obsah pro správce systému aplikace Microsoft Dynamics 365 for Finance and Operations. Tento obsah jim pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně. | Dokumentace | |
 | [Finance and Operations: Zaškolení do Dynamics 365 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack nabízí službu zaškolení u každého projektu Dynamics 365 for Finance and Operations. V této technické přednášce si vysvětlíme proces zaškolení, projdeme s vámi obsah relace zaškolení a ukážeme vám, jak bude zaškolení v blízké budoucnosti ještě účinnější a pohodlnější. Tato relace je obzvláště relevantní pro každého, kdo spolupracuje se zákazníky v počátečních fázích projektu, mezi uzavíráním licencí a zahájením projektu implementace. | Bezplatný záznam webové konference | 62 min. |
-| [Místní nasazení obchodních dat (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Připojte se k této technické přednášce s přehledem možností místního nasazení pro Dynamics 365 for Finance and Operations, Enterprise Edition. V této relaci se seznámíme s architekturou řešení pro místní nasazení, ALM aspekty, systémovými požadavky a s tím, jak zřídit projekt služeb životního cyklu. | Bezplatný záznam webové konference | 48 min. |
+| [Místní nasazení obchodních dat (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Připojte se k této technické přednášce s přehledem možností místního nasazení pro Dynamics 365 for Finance and Operations, Enterprise Edition. V této relaci se seznámíme s architekturou řešení pro místní nasazení, ALM aspekty, systémovými požadavky a s tím, jak zřídit projekt služeb životního cyklu. | Bezplatný záznam webové konference | 48 min. |
 | [Kopírování do právnické osoby (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | V této relaci budeme diskutovat o nové funkci v rámci správy dat, Kopírovat do právnické osoby. Nejprve se krátce podíváme na nové funkce přidané do architektury pro správu dat v Platform 8 pro pracovní prostor, šablony a datové projekty a poté prodiskutujeme další funkce přidané pro kopírování do právnické osoby. | Bezplatný záznam webové konference | 54 minut |
 
 ## <a name="core-development"></a>Klíčový vývoj<a name="core-development"></a>

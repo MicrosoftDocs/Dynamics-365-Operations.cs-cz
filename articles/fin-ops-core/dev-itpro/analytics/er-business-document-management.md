@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893128"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681297"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -255,7 +254,7 @@ Pokud je funkce **Prostředí UI podobné systému Office pro správu obchodníh
 
 ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate1.png)
 
-Na kartě **Šablony** se zobrazí obsah vybrané šablony. Vyberte kartu **Podrobnosti**, na které si můžete prohlédnout podrobnosti o vybrané šabloně a podrobnosti o konfiguraci formátu elektronického výkaznictví, kde je tato šablona umístěna. Všimněte si, že všechny šablony mají stav **Publikováno**a neobsahují údaje ve sloupci **Revize**. To znamená, že tyto šablony aktuálně nejsou upravovány.
+Na kartě **Šablony** se zobrazí obsah vybrané šablony. Vyberte kartu **Podrobnosti**, na které si můžete prohlédnout podrobnosti o vybrané šabloně a podrobnosti o konfiguraci formátu elektronického výkaznictví, kde je tato šablona umístěna. Všimněte si, že všechny šablony mají stav **Publikováno** a neobsahují údaje ve sloupci **Revize**. To znamená, že tyto šablony aktuálně nejsou upravovány.
 
 Pokud je funkce **Prostředí UI podobné systému Office pro správu obchodního dokumentu** zapnuta v pracovním prostoru **Správa funkcí**, hlavní mřížka v pracovním prostoru **Správa obchodních dokumentů** zobrazuje šablony, které jsou vlastněny vaším poskytovatelem konfigurace ER (tj. poskytovatelem, který je aktuálně označen jako aktivní v pracovním prostoru **Elektronického vykazování**). Po vybrání jedné z těchto šablon můžete vybrat možnost **Upravit šablonu** a začít ji upravovat.
 

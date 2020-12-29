@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771112"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682738"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
@@ -34,7 +33,7 @@ ms.locfileid: "2771112"
 Toto téma popisuje řešení PowerBI.com pro **finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení řešení.
 
 ## <a name="main-account-setup"></a>Nastavení hlavního účtu
-Protože pro organizace je žádoucí, aby se závazky a částky výnosů zobrazovaly ve výkazech jako kladné částky, je důležité správně nastavit hlavní účty. Aby se tyto hlavní účty zobrazovaly jako kladné částky, musí být typ hlavního účtu nastaven na **Pasiva** nebo **Výnos**. Při použití těchto typů účtů se při vykazování pomocí nástroje Power BI změní znaménka a částky se zobrazí jako kladné.
+Protože pro organizace je žádoucí, aby se závazky a částky výnosů zobrazovaly ve výkazech jako kladné částky, je důležité správně nastavit hlavní účty. Aby se tyto hlavní účty zobrazovaly jako kladné částky, musí být typ hlavního účtu nastaven na **Pasiva** nebo **Výnos**. Při použití těchto typů účtů se při vykazování pomocí nástroje Power BI změní znaménka a částky se zobrazí jako kladné.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Řídicí panely a výkazy, které jsou součástí řešení PowerBI.com
 Řídicí panel obsahuje souhrnné dlaždice dat, která jsou založena na základních sestavách. Každá dlaždice obsahuje souhrnné informace pro aktuální rok v rámci všech společností v organizaci. Následuje několik příkladů dlaždic:

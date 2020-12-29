@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017315"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654165"
 ---
 # <a name="zone-threshold-replenishment"></a>Doplnění prahu zóny
 
@@ -41,7 +41,7 @@ Na rozdíl od min./max. doplňování založeného na skladovém místě nevyža
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>Zapnutí funkce Zónové doplňování podle mezních hodnot
 
-Než můžete použít funkci *Zónové doplňování podle mezních hodnot* , musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než můžete použít funkci *Zónové doplňování podle mezních hodnot*, musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Zónové doplňování podle mezních hodnot*
@@ -86,7 +86,7 @@ Tento příklad ukazuje, jak připravit šablonu doplnění. Pokud plánujete vy
 
 1. Pro práci s ukázkovými daty vyberte právnickou osobu **USMF**.
 1. Přejděte na **Řízení skladu \> Nastavení \> Doplnění \> Šablony doplnění**.
-1. Vyberte možnost **Upravit** , tím přepnete stránku do režimu úprav.
+1. Vyberte možnost **Upravit**, tím přepnete stránku do režimu úprav.
 1. V podokně Akce vyberte možnost **Nový**. Tím se přidá řádek do mřížky **Přehled**.
 1. Na novém řádku nastavte následující hodnoty. Potvrďte výchozí hodnoty pro všechna ostatní pole.
 
@@ -95,14 +95,14 @@ Tento příklad ukazuje, jak připravit šablonu doplnění. Pokud plánujete vy
     - **Typ doplňování:** _Minimum nebo maximum_
 
 1. Zvolte **Uložit**.
-1. Zatímco je nový řádek stále vybrán v mřížce **Přehled** , stiskněte tlačítko **Nový** nad mřížkou **Podrobnosti šablony doplnění**. Tím přidáte řádek, který bude přiřazen k právě vytvořené šabloně doplnění *Zone Min/Max replen*.
+1. Zatímco je nový řádek stále vybrán v mřížce **Přehled**, stiskněte tlačítko **Nový** nad mřížkou **Podrobnosti šablony doplnění**. Tím přidáte řádek, který bude přiřazen k právě vytvořené šabloně doplnění *Zone Min/Max replen*.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Pořadové číslo:** Zadejte _1_.
     - **Popis:** Zadejte _Doplnění ve výdejové zóně_.
     - **Jednotka doplnění:** Vyberte _ks_.
     - **Typ požadavku:** Toto pole ponechte prázdné.
-    - **Kód předpisu:** toto pole spojuje šablonu doplnění se směrnicí skladového místa. Vyberte předtím vybraný kód předpisu z ukázkových dat ( _Zone replen_ ).
+    - **Kód předpisu:** toto pole spojuje šablonu doplnění se směrnicí skladového místa. Vyberte předtím vybraný kód předpisu z ukázkových dat (_Zone replen_).
     - **Šablona práce:** Toto pole ponechte prázdné.
     - **Minimální množství:** Toto pole určuje množství, při kterém bude aktivováno doplnění. Zadejte _50_.
     - **Maximální množství:** Toto pole nastavuje maximální množství položky, jež se může v zóně nacházet. Vygenerované práce doplnění zvýší zásoby na toto množství. Zadejte _150_.
@@ -123,7 +123,7 @@ Tento příklad ukazuje, jak připravit šablonu doplnění. Pokud plánujete vy
     - **Pole:** _Číslo položky_
     - **Kritéria:** _A0001_
 
-1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
+1. Vyberte **OK**, uložte svůj dotaz a zavřete dialogové okno.
 1. Klikněte na **Vybrat zóny pro doplnění** nad mřížkou **Podrobnosti šablony doplnění**.
 1. V dialogovém okně **Dotaz na zónu** na kartě **Oblast** přidejte řádek mřížky.
 1. Na novém řádku nastavte následující hodnoty:
@@ -133,7 +133,7 @@ Tento příklad ukazuje, jak připravit šablonu doplnění. Pokud plánujete vy
     - **Pole:** _ID zóny_
     - **Kritéria:** _PODLAHA_
 
-1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
+1. Vyberte **OK**, uložte svůj dotaz a zavřete dialogové okno.
 
 ### <a name="set-up-location-directives"></a>Nastavit směrnice skladových míst
 
@@ -154,7 +154,7 @@ Chcete-li připravit ukázková data, aby se dala použít ve scénáři uveden�
 1. Pro práci s ukázkovými daty vyberte právnickou osobu **USMF**.
 1. Přejděte na **Řízení skladu \> Nastavení \> Směrnice skladového místa**.
 1. V levém podokně nastavte v poli **Typ pracovního příkazu** hodnotu _Doplnění_.
-1. V podokně Akce vyberte možnost **Nová** , vytvoří se nová směrnice.
+1. V podokně Akce vyberte možnost **Nová**, vytvoří se nová směrnice.
 1. Nastavte následující hodnoty:
 
     - **Pořadové číslo:** Přijměte výchozí hodnotu.
@@ -180,7 +180,7 @@ Chcete-li připravit ukázková data, aby se dala použít ve scénáři uveden�
     - **Povolit rozdělení:** Zaškrtněte toto políčko.
 
 1. Kliknutím na tlačítko **Uložit** uložte nový řádek.
-1. Zatímco je nový řádek stále ještě vybrán v mřížce **Řádky** , vyberte možnost **Nový** na záložce s náhledem **Akce směrnice skladového místa**. Přidáte tak nový řádek do mřížky.
+1. Zatímco je nový řádek stále ještě vybrán v mřížce **Řádky**, vyberte možnost **Nový** na záložce s náhledem **Akce směrnice skladového místa**. Přidáte tak nový řádek do mřížky.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Pořadové číslo:** Zadejte _1_.
@@ -200,13 +200,13 @@ Chcete-li připravit ukázková data, aby se dala použít ve scénáři uveden�
     - **Pole:** _ID zóny_
     - **Kritéria:** _BULK_
 
-1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
+1. Vyberte **OK**, uložte svůj dotaz a zavřete dialogové okno.
 1. Směrnici skladového místa uložíte výběrem možnosti **Uložit**.
 
 ##### <a name="create-a-replenishment-put-directive"></a>Vytvoření směrnice skladového místa pro zaskladnění
 
 1. Na stránce **Směrnice skladového místa** zkontrolujte v levém podokně, že je v poli **Typ pracovního příkazu** sále ještě zadána hodnota _Doplnění_.
-1. V podokně Akce vyberte možnost **Nová** , vytvoří se další nová směrnice.
+1. V podokně Akce vyberte možnost **Nová**, vytvoří se další nová směrnice.
 1. Nastavte následující hodnoty:
 
     - **Pořadové číslo:** Přijměte výchozí hodnotu.
@@ -232,7 +232,7 @@ Chcete-li připravit ukázková data, aby se dala použít ve scénáři uveden�
     - **Povolit rozdělení:** Zaškrtněte toto políčko.
 
 1. Kliknutím na tlačítko **Uložit** uložte nový řádek.
-1. Zatímco je nový řádek stále ještě vybrán v mřížce **Řádky** , vyberte možnost **Nový** na záložce s náhledem **Akce směrnice skladového místa**. Přidáte tak nový řádek do mřížky.
+1. Zatímco je nový řádek stále ještě vybrán v mřížce **Řádky**, vyberte možnost **Nový** na záložce s náhledem **Akce směrnice skladového místa**. Přidáte tak nový řádek do mřížky.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Pořadové číslo:** Zadejte _1_.
@@ -252,7 +252,7 @@ Chcete-li připravit ukázková data, aby se dala použít ve scénáři uveden�
     - **Pole:** _ID zóny_
     - **Kritéria:** _PODLAHA_
 
-1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
+1. Vyberte **OK**, uložte svůj dotaz a zavřete dialogové okno.
 1. Směrnici skladového místa uložíte výběrem možnosti **Uložit**.
 
 ## <a name="scenario"></a>Scénář
@@ -275,8 +275,8 @@ Po výběru právnické osoby **USMF** přidejte další ukázková data, jak js
 
 Postupujte podle těchto kroků a ujistěte se, že váš systém obsahuje dostatek zásob, aby bylo možné ukázkový scénář realizovat.
 
-1. Ujistěte se, že máte k dispozici zásoby položky *A0001* ve dvou různých skladových místech v oblasti výdeje ( *PODLAHA* ), jež je uvedena v šabloně doplňování. Celkové zásoby by však měly být nižší než požadované minimální množství ( *50* ), jež je uvedeno v šabloně doplnění. Tímto způsobem můžete simulovat výpočet pro celou zónu, nikoli pouze pro jedno skladové místo. **Upravte zásoby pomocí některého ze skladových procesů dle potřeby.**
-1. Ujistěte se, že máte dostatečné zásoby položky *A0001* na hromadném skladovém místě, které je určeno ve směrnici skladového místa, kde se při práci doplnění má provádět výdej položek ze zóny s ID *BULK*. Celkové zásoby však musí být vyšší než požadované maximální množství ( *150* ), jež je uvedeno v šabloně doplnění.
+1. Ujistěte se, že máte k dispozici zásoby položky *A0001* ve dvou různých skladových místech v oblasti výdeje (*PODLAHA*), jež je uvedena v šabloně doplňování. Celkové zásoby by však měly být nižší než požadované minimální množství (*50*), jež je uvedeno v šabloně doplnění. Tímto způsobem můžete simulovat výpočet pro celou zónu, nikoli pouze pro jedno skladové místo. **Upravte zásoby pomocí některého ze skladových procesů dle potřeby.**
+1. Ujistěte se, že máte dostatečné zásoby položky *A0001* na hromadném skladovém místě, které je určeno ve směrnici skladového místa, kde se při práci doplnění má provádět výdej položek ze zóny s ID *BULK*. Celkové zásoby však musí být vyšší než požadované maximální množství (*150*), jež je uvedeno v šabloně doplnění.
 1. Volitelné, ale doporučené: Chcete-li vytvořit deník úprav zásob postupujte takto:
 
     1. Přejděte do **Řízení zásob \> Položky deníku \> Položky \> Úprava zásob**.
@@ -328,7 +328,7 @@ Po zajištění všech nezbytných ukázkových dat můžete spustit doplňován
     - **Pole:** Vyberte _Šablona doplnění_.
     - **Kritéria:** Vyberte _Min./max. doplnění na bázi zón_. Tuto šablonu doplnění jste vytvořili během přípravy ukázkových dat pro tento scénář.
 
-1. Klikněte na **OK** , uložte dotaz a vraťte se do dialogového okna **Doplnění**.
+1. Klikněte na **OK**, uložte dotaz a vraťte se do dialogového okna **Doplnění**.
 1. Kliknutím na **OK** spusťte šablonu doplnění.
 
 Práce doplnění jsou nyní vytvořeny pro výdej zásob ze zóny *BULK* a doplnění se provede do zóny *PODLAHA*.

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781138"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680868"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurace mapování modelu ER závislého na kontextu podle země
 
@@ -202,7 +201,7 @@ V tabulce znaménko plus (+) označuje přítomnost konfigurace mapování model
 
 Všimněte si, že do protokolu ladění ER byl přidán nový záznam pro spuštěný formát ER. Vzhledem k **tomu**, že pole úrovně tohoto záznamu je nastaveno na **Informace**, záznam je informativní. Vzhledem k tomu, že pole součásti Formát je nastaveno na **Konfigurace mapování**, záznam vás informuje o mapování modelu, které bylo použito při spuštění formátu ER **Formát k učení se mapování** (vybraný v poli **Název konfigurace**). Obsah pole **Generovaný text** vás informuje, že komponenta mapování **Mapování (FR)**, která je umístěna v konfiguraci **Mapování (FR)** byla použita ke spuštění této sestavy.p
 
-## <a name="appendix1"></a>Dodatek 1
+## <a name="appendix-1"></a><a name="appendix1"></a>Dodatek 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurace ukázkového datového modelu
 
@@ -343,7 +342,7 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám. Tato
 4.  Zvolte **Uložit**.
 5.  Zavřete stránku.
 
-## <a name="appendix2"></a>Dodatek 2
+## <a name="appendix-2"></a><a name="appendix2"></a>Dodatek 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurace ukázkového mapování modelu pro obecné přizpůsobení
 
@@ -403,7 +402,7 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám.
 
 Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.
 
-## <a name="appendix3"></a>Dodatek 3
+## <a name="appendix-3"></a><a name="appendix3"></a>Dodatek 3
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurace ukázkového mapování modelu pro přizpůsobení podle země/oblasti
 

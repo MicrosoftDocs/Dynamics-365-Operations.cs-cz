@@ -18,25 +18,27 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997319"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683546"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Poradce při potížích s počáteční synchronizací
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Common Data Service. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy, které by se mohly vyskytnou během počáteční synchronizace.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy, které by se mohly vyskytnou během počáteční synchronizace.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Zkontrolovat chyby počáteční synchronizace v aplikaci Finance and Operations
 
-Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn** , došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
+Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn**, došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
 
 ![Chyba na kartě Počáteční podrobnosti synchronizace](media/initial_sync_status.png)
 
@@ -91,12 +93,12 @@ Chcete-li opravit problém, postupujte následovně.
 
 Můžou se zobrazit chybové zprávy podobné následujícímu příkladu v případě, že některá z vašich mapování mají odkazy na sebe sama a cirkulární odkazy. Chyby spadají do těchto kategorií:
 
-- [Chyby v mapování entit Vendors V2–to–msdyn_vendors](#error-vendor-map)
-- [Chyby v mapování entit Customers V3–to–Accounts](#error-customer-map)
+- [Chyby v mapování tabulek Vendors V2–to–msdyn_vendors](#error-vendor-map)
+- [Chyby v mapování tabulek Customers V3–to–Accounts](#error-customer-map)
 
-## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>Řešení chyb v mapování entit Vendors V2–to–msdyn_vendors
+## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Řešení chyb v mapování tabulek Vendors V2–to–msdyn_vendors
 
-Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Vendors V2** na **msdyn\_vendors** , pokud entity mají existující záznamy s hodnotami v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber**. Tyto chyby se vyskytují proto, že **InvoiceVendorAccountNumber** je pole s vlastním odkazem a **PrimaryContactPersonId** je kruhový odkaz v mapování dodavatele.
+Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Vendors V2** na **msdyn\_vendors**, pokud tabulky mají existující řádky s hodnotami v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber**. Tyto chyby se vyskytují proto, že **InvoiceVendorAccountNumber** je pole s vlastním odkazem a **PrimaryContactPersonId** je kruhový odkaz v mapování dodavatele.
 
 Chybové zprávy, které obdržíte, budou mít následující formulář.
 
@@ -107,11 +109,11 @@ Několik příkladů:
 - *Nelze vyřešit identifikátor GUID pro pole: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Vyhledávání nebylo nalezeno: 000056. Vyzkoušejte tyto adresy URL a zkontrolujte, zda existují referenční údaje: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nelze vyřešit identifikátor GUID pro pole: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Vyhledávání nebylo nalezeno: V24-1. Vyzkoušejte tyto adresy URL a zkontrolujte, zda existují referenční údaje: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Pokud mají libovolné záznamy v entitě dodavatele hodnoty v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** , postupujte podle kroků v části níže a dokončete počáteční synchronizaci.
+Pokud mají libovolné řádky v entitě dodavatele hodnoty v polích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** , postupujte podle kroků v části níže a dokončete počáteční synchronizaci.
 
 1. V aplikaci Finance and Operations odstraňte pole **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** z mapování a pak mapování uložte.
 
-    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)** , na kartě **Mapování entit** , v levém filtru vyberte **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
+    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)**, na kartě **Mapování tabulek**, v levém filtru vyberte **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
     2. Vyhledejte **primarycontactperson** a najděte zdrojové pole **PrimaryContactPersonId**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
@@ -125,7 +127,7 @@ Pokud mají libovolné záznamy v entitě dodavatele hodnoty v polích **Primary
 
 2. Vypněte sledování změn pro entitu **Vendors V2**.
 
-    1. V pracovním prostoru **Správa dat** vyberte dlaždici **Datové entity**.
+    1. V pracovním prostoru **Správa dat** vyberte dlaždici **Datové tabulky**.
     2. Vyberte entitu **Vendors V2**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
@@ -136,14 +138,14 @@ Pokud mají libovolné záznamy v entitě dodavatele hodnoty v polích **Primary
         ![Výběr Zakázat sledování změn.](media/selfref_tracking.png)
 
 3. Spusťte počáteční synchronizaci mapování **Vendors V2 (msdyn\_vendors)**. Počáteční synchronizace by měla úspěšně proběhnout bez chyb.
-4. Spusťte počáteční synchronizaci pro mapování **CDS Contacts V2 (contacts)**. Toto mapování musíte synchronizovat, pokud chcete synchronizovat pole primárního kontaktu na entitě dodavatelů, protože záznamy kontaktů je také třeba také nejprve synchronizovat.
+4. Spusťte počáteční synchronizaci pro mapování **CDS Contacts V2 (contacts)**. Toto mapování musíte synchronizovat, pokud chcete synchronizovat pole primárního kontaktu na entitě dodavatelů, protože řádky kontaktů je také třeba také nejprve synchronizovat.
 5. Přidejte pole **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** zpět do mapování **Vendors V2 (msdyn\_vendors)** a uložte mapování.
-6. Spusťte opět počáteční synchronizaci mapování **Vendors V2 (msdyn\_vendors)**. Všechny záznamy budou synchronizovány, protože sledování změn je vypnuto.
+6. Spusťte opět počáteční synchronizaci mapování **Vendors V2 (msdyn\_vendors)**. Všechny řádky budou synchronizovány, protože sledování změn je vypnuto.
 7. Opět zapněte sledování změn pro entitu **Vendors V2**.
 
-## <a name="resolve-errors-in-the-customers-v3toaccounts-entity-mapping"></a><a id="error-customer-map"></a>Vyřešte chyby v mapování entit Customers V3–to–Accounts
+## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Vyřešte chyby v mapování tabulky Customers V3–to–Accounts
 
-Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Customers V3** na **Accounts** , pokud entity mají existující záznamy s hodnotami v polích **ContactPersonID** a **InvoiceAccount**. Tyto chyby se vyskytují proto, že **InvoiceAccount** je pole s vlastním odkazem a **ContactPersonID** je kruhový odkaz v mapování dodavatele.
+Mohli byste narazit na následující počáteční chyby synchronizace na mapování **Customers V3** na **Accounts**, pokud tabulky mají existující řádky s hodnotami v polích **ContactPersonID** a **InvoiceAccount**. Tyto chyby se vyskytují proto, že **InvoiceAccount** je pole s vlastním odkazem a **ContactPersonID** je kruhový odkaz v mapování dodavatele.
 
 Chybové zprávy, které obdržíte, budou mít následující formulář.
 
@@ -154,11 +156,11 @@ Několik příkladů:
 - *Nelze vyřešit identifikátor GUID pro pole: primarycontactid.msdyn\_contactpersonid. Vyhledávání nebylo nalezeno: 000056. Vyzkoušejte tyto adresy URL a zkontrolujte, zda existují referenční údaje: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nelze vyřešit identifikátor GUID pro pole: msdyn\_billingaccount.accountnumber. Vyhledávání nebylo nalezeno: 1206-1. Vyzkoušejte tyto adresy URL a zkontrolujte, zda existují referenční údaje: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Pokud mají libovolné záznamy v entitě zákazníka hodnoty v polích **ContactPersonID** a **InvoiceAccount** , postupujte podle kroků v části níže a dokončete počáteční synchronizaci. Tento přístup můžete použít pro jakékoli dodávané entity, jako jsou **účty** a **kontakty**.
+Pokud mají libovolné řádky v entitě zákazníka hodnoty v polích **ContactPersonID** a **InvoiceAccount** , postupujte podle kroků v části níže a dokončete počáteční synchronizaci. Tento přístup můžete použít pro jakékoli dodávané tabulky, jako jsou **´´Učty** a **Kontakty**.
 
 1. V aplikaci Finance and Operations odstraňte pole **ContactPersonID** a **InvoiceAccount** z mapování **Customers V3 (accounts)** a mapování uložte.
 
-    1. Na stránce mapování s dvojitým zápisem pro **Customers V3 (accounts)** na kartě **Mapování entit** v levém filtru vyberte **Finance and Operations app.Customers V3**. V pravém filtru vyberte **Common Data Service.Account**.
+    1. Na stránce mapování s dvojitým zápisem pro **Customers V3 (accounts)** na kartě **Mapování tabulek** v levém filtru vyberte **Finance and Operations app.Customers V3**. V pravém filtru vyberte **Dataverse.Account**.
     2. Vyhledejte **contactperson** a najděte zdrojové pole **ContactPersonID**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
@@ -172,7 +174,7 @@ Pokud mají libovolné záznamy v entitě zákazníka hodnoty v polích **Contac
 
 2. Vypněte sledování změn pro entitu **Customers V3**.
 
-    1. V pracovním prostoru **Správa dat** vyberte dlaždici **Datové entity**.
+    1. V pracovním prostoru **Správa dat** vyberte dlaždici **Datové tabulky**.
     2. Vyberte entitu **Customers V3**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
@@ -186,26 +188,26 @@ Pokud mají libovolné záznamy v entitě zákazníka hodnoty v polích **Contac
 4. Spusťte počáteční synchronizaci pro mapování **CDS Contacts V2 (contacts)**.
 
     > [!NOTE]
-    > Existují dvě mapy se stejným názvem. Vyberte mapu, která má následující popis na kartě **Podrobnosti** : **Šablona s dvojím zápisem pro synchronizaci mezi kontakty dodavatele FO.CDS V2 a CDS.Contacts. Vyžaduje nový balíček \[Dynamics365SupplyChainExtended\].**
+    > Existují dvě mapy se stejným názvem. Vyberte mapu, která má následující popis na kartě **Podrobnosti**: **Šablona s dvojím zápisem pro synchronizaci mezi kontakty dodavatele FO.CDS V2 a CDS.Contacts. Vyžaduje nový balíček \[Dynamics365SupplyChainExtended\].**
 
 5. Přidejte pole **InvoiceAccount** a **ContactPersonId** zpět do mapování **Customers V3 (Accounts)** a mapování uložte. Pole **InvoiceAccount** i **ContactPersonId** jsou opět součástí živého synchronizačního režimu. V dalším kroku dokončíte počáteční synchronizaci těchto polí.
-6. Spusťte opět počáteční synchronizaci pro mapování **Customers V3 (Accounts)**. Protože sledování změn je vypnuto, data pro **InvoiceAccount** a **ContactPersonId** budou synchronizována z aplikace Finance and Operations do Common Data Service.
-7. Chcete-li synchronizovat data pro **InvoiceAccount** a **ContactPersonId** z Common Data Service do aplikace Finance and Operations, musíte použít projekt integrace dat.
+6. Spusťte opět počáteční synchronizaci pro mapování **Customers V3 (Accounts)**. Protože sledování změn je vypnuto, data pro **InvoiceAccount** a **ContactPersonId** budou synchronizována z aplikace Finance and Operations do Dataverse.
+7. Chcete-li synchronizovat data pro **InvoiceAccount** a **ContactPersonId** z Dataverse do aplikace Finance and Operations, musíte použít projekt integrace dat.
 
-    1. V Power Apps vytvořit projekt integrace dat mezi entitami **Sales.Account** a **Finance and Operations apps.Customers V3**. Směr dat musí být z Common Data Service do aplikace Finance and Operations. Protože **InvoiceAccount** je nový atribut v dvojitém zápisu, možná budete chtít přeskočit počáteční synchronizaci pro tento atribut. Další informace naleznete v tématu [Integrace dat do Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. V Power Apps vytvořit projekt integrace dat mezi tabulkami **Sales.Account** a **Finance and Operations apps.Customers V3**. Směr dat musí být z Dataverse do aplikace Finance and Operations. Protože **InvoiceAccount** je nový atribut v dvojitém zápisu, možná budete chtít přeskočit počáteční synchronizaci pro tento atribut. Další informace naleznete v tématu [Integrace dat do Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
         Následující ilustrace ukazuje projekt, který aktualizuje **CustomerAccount** a **ContactPersonId**.
 
         ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId](media/cust_selfref6.png)
 
-    2. Přidejte do filtru kritéria společnosti na straně Common Data Service, aby byly v aplikaci Finance and Operations aktualizovány pouze záznamy, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly v aplikaci Finance and Operations aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**. 
 
         > [POZNÁMKA] Pokud tlačítko filtru není k dispozici, vytvořte podpůrný ticket a požádejte tým pro integraci dat o povolení filtrování u klienta.
 
-        Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value** , budou všechny záznamy synchronizovány.
+        Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value**, budou všechny řádky synchronizovány.
 
         ![Přidání dotazu filtru](media/cust_selfref7.png)
 
-    Počáteční synchronizace záznamů je nyní dokončena.
+    Počáteční synchronizace řádků je nyní dokončena.
 
 8. V aplikaci Finance and Operations opět zapněte sledování změn pro entitu **Customers V3**.

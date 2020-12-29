@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383681"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594519"
 ---
-# <a name="auto-firming-with-planning-optimization"></a>Automatické potvrzení s optimalizací plánování
+# <a name="autofirming-with-planning-optimization"></a>Automatické potvrzení s optimalizací plánování
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Automatické potvrzení umožňuje potvrdit (tj. vydat) plánované objednávky 
 > [!NOTE]
 > K automatickému potvrzení plánované nákupní objednávky může dojít pouze tehdy, pokud je položka přidružena k dodavateli.
 
-## <a name="turn-on-auto-firming"></a>Zapnout automatické potvrzování
+## <a name="turn-on-autofirming"></a>Zapnout automatické potvrzování
 
 Chcete-li zapnout automatické potvrzování, postupujte následujícím způsobem.
 
@@ -48,7 +48,7 @@ Ochranná doba potvrzení se počítá od data spuštění hlavního plánován�
 
 - Chcete-li definovat výchozí ochrannou dobu potvrzování pro skupinu disponibility, přejděte na **Hlavní plánování** \> **Nastavení** \> **Disponibilita** \> **Skupiny disponibility** a vyberte skupinu disponibility. Pak na pevné záložce **Jiné** zadejte do pole **Ochranná doba automatického potvrzování (ve dnech)** počet dní.
 - Pokud chcete přepsat ochrannou dobu potvrzení definovanou pro skupinu pokrytí pro konkrétní položku, přejděte na **Správa informací o produktu** \> **Vydané produkty**, v podokně akcí vyberte **Plán** a pak vyberte **Pokrytí položky**. Potom na kartě **Obecné** vyberte **Přepsat ochrannou lhůtu** a do pole **Automatická ochranná lhůta (dny)** zadejte počet dní.
-- Chcete-li přepsat ochrannou dobu potvrzování definovanou pro skupinu disponibility a disponibilitu položky pro určitý hlavní plán, přejděte na **Hlavní plánování** \> **Nastavení** \> **Hlavní plány** a vyberte hlavní plán. Pak na pevné záložce **Ochranná doba ve dnech** nastavte **Zmrazit** na **Ano** a zadejte počet dní.
+- Chcete-li přepsat ochrannou dobu potvrzování definovanou pro skupinu disponibility a disponibilitu položky pro určitý hlavní plán, přejděte na **Hlavní plánování** \> **Nastavení** \> **Hlavní plány** a vyberte hlavní plán. Pak na pevné záložce **Ochranná doba ve dnech** nastavte **Potvrzení** na **Ano** a zadejte počet dní.
 
 Je-li pro spuštění hlavního plánování, které používá optimalizaci plánování, zapnuto automatické potvrzování, bude proces automatického potvrzování proveden v souladu s nastavením automatického potvrzování. Pokud není zapnuto automatické potvrzování nebo pokud je plánování zahájeno ze stránky **Požadavky netto**, bude proces automatického potvrzování přeskočen.
 

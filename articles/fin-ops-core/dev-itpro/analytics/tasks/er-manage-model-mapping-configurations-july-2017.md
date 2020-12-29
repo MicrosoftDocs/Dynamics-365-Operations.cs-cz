@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143046"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684420"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
 
@@ -31,7 +30,7 @@ Následující procedura vysvětluje, jak uživatel přiřazený k roli Správc
 Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete dokončit tohoto průvodce záznamem úloh za použití sady firemních dat podle vašeho výběru. Funkce pro tohoto průvodce záznamem úloh naleznete po instalaci některé z následujících oprav hotfix: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 pro verzi Dynamics AX 7.0 nebo https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 pro verzi Dynamics 365 for Operations.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Ověřte, zda poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v průvodci záznamem úloh Vytvoření poskytovatele konfigurace a jeho označení jako aktivního.   
+    * Ověřte, zda poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v průvodci záznamem úloh. Vytvořte poskytovatele konfigurace a označte ho jako aktivního.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Přidání nové konfigurace ER modelu
 1. Klikněte na Konfigurace výkaznictví.
@@ -57,7 +56,7 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 16. Zavřete stránku.
 17. Klikněte na položku Změnit stav.
 18. Klikněte na tlačítko Dokončit.
-19. Klikněte na tlačítko OK.
+19. Klepněte na tlačítko OK.
 
 ## <a name="add-a-new-er-model-mapping-configuration"></a>Přidání nové konfigurace mapování modelu ER
 1. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
@@ -66,9 +65,9 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
     * Vzorové mapování  
 4. Klepněte na možnost Vytvořit konfiguraci.
 5. Rozbalte oddíl Předpoklady.
-    * Mějte na paměti, že skupina předpokladů implementace již byla automaticky přidána. Skupina obsahuje součást předpokladů, která se vztahuje k nadřazené konfiguraci datového modelu a je označena jako Implementace. To znamená, že tato konfigurace mapování modelu pro vzorový model mapování je považována za implementaci datového modelu – Vzorový datový model. Tato součást tedy vynutí u ER stahování konfigurace mapování modelu – Vzorové mapování, z úložiště ER po stažení konfigurace modelu – Vzorový datový model.   
+    * Skupina předpokladů implementace již byla automaticky přidána. Skupina obsahuje součást předpokladů, která se vztahuje k nadřazené konfiguraci datového modelu a je označena jako Implementace. To znamená, že tato konfigurace mapování modelu pro vzorový model mapování je považována za implementaci datového modelu – Vzorový datový model. Tato součást tedy vynutí u ER stahování konfigurace mapování modelu – Vzorové mapování, z úložiště ER po stažení konfigurace modelu – Vzorový datový model.   
 6. Klikněte na možnost Návrhář.
-    * Všimněte si, že vytvořená konfigurace mapování modelu obsahuje nové prázdné mapování se stejným názvem, jako vytvořená konfigurace. Mějte na paměti, že pokud konfigurace vybraného nadřazeného modelu obsahuje mapování modelu, dojde ke zkopírování do nové konfigurace mapování modelu.   
+    * Vytvořená konfigurace mapování modelu obsahuje nové prázdné mapování se stejným názvem, jako vytvořená konfigurace. Pokud konfigurace vybraného nadřazeného modelu obsahuje mapování modelu, dojde ke zkopírování do nové konfigurace mapování modelu.   
 7. Klikněte na možnost Návrhář.
 8. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Tabulka'.
 9. Klikněte na možnost Přidat kořen.
@@ -112,7 +111,7 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 16. Klikněte na položku Spustit.
     * Na pevné záložce Verze klepněte na tlačítko Spustit.  
 17. Klikněte na tlačítko OK.
-    * Zkontrolujte výstup, zda obsahuje název společnosti, ve které je přihlášen uživatel, který spouští tuto konfiguraci formátu. Poznámka: vytvářená konfigurace mapování modelu je použita v této konfiguraci formátu, protože je k dispozici pouze jedna konfigurace, která obsahuje požadované mapování modelu.   
+    * Zkontrolujte výstup, zda obsahuje název společnosti, ve které je přihlášen uživatel, který spouští tuto konfiguraci formátu. Vytvářená konfigurace mapování modelu je použita v této konfiguraci formátu, protože je k dispozici pouze jedna konfigurace, která obsahuje požadované mapování modelu.   
 
 ## <a name="add-alternative-er-model-mapping-configuration"></a>Přidání alternativní konfigurace mapování modelu ER
 1. Ve stromovém zobrazení vyberte Ukázkový datový model.
@@ -152,13 +151,13 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 
 ## <a name="use-an-existing-er-model-mapping-configuration"></a>Použití existující konfigurace mapování modelu ER
 1. Ve stromovém zobrazení vyberte Sample data model\Sample format
-2. Klikněte na položku Spustit.
-    * Všimněte si, že vybranou pracovní verzi konfigurace formátu ER nelze spustit, protože je k dispozici více než jedna konfigurace mapování modelu pro nedefinovaný datový model, který byl vybrán jako zdroj dat používaného formátu ER.   
+2. Klikněte na Spustit.
+    * Vybranou pracovní verzi konfigurace formátu ER nelze spustit, protože je k dispozici více než jedna konfigurace mapování modelu pro nedefinovaný datový model, který byl vybrán jako zdroj dat používaného formátu ER.   
     * Dále definujete konfiguraci alternativního mapování modelu jako tu, ze které se použije mapování modelu pro zdroj dat používaného formátu ER.   
 3. Ve stromovém zobrazení vyberte Sample data model\Sample mapping (alternative).
 4. Vyberte možnost Ano v položce Výchozí pro pole mapování modelu.
 5. Ve stromovém zobrazení vyberte Sample data model\Sample format
-6. Klikněte na položku Spustit.
-7. Klikněte na tlačítko OK.
-    * Všimněte si, že výchozí konfigurace mapování modelu se používá v této konfiguraci formátu pro generování elektronických dokumentů (vytvořený výstup obsahuje kód společnosti).  
+6. Klikněte na Spustit.
+7. Klepněte na tlačítko OK.
+    * Výchozí konfigurace mapování modelu se používá v této konfiguraci formátu pro generování elektronických dokumentů (vytvořený výstup obsahuje kód společnosti).  
 

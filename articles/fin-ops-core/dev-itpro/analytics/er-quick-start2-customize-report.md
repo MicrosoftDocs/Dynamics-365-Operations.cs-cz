@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67763b29744c4262249ef1ec04e7df490b31fe5b
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3498083"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680163"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
 
@@ -101,22 +100,22 @@ Jako uživatel v roli funkčního konzultanta elektronického výkaznictví mus
     - V poli **Konfigurace** vyberte pro společnost **USMF** typ **Soubor**.
     - V polích **Archiv úloh**, **Dočasné**, **Základ** a **Ostatní** vyberte typ **souboru**.
 
-Další informace o parametrech ER najdete v tématu [Konfigurace rámce ER](electronic-reporting-er-configure-parameters.md).
+Další informace o parametrech elektronického výkaznictví najdete v tématu [Konfigurace rámce elektronického výkaznictví](electronic-reporting-er-configure-parameters.md).
 
-### <a name="activate-an-er-configuration-provider"></a><a id="ActivateProvider"></a>Aktivace poskytovatele konfigurace ER
+### <a name="activate-an-er-configuration-provider"></a><a id="ActivateProvider"></a>Aktivace poskytovatele konfigurace elektronického výkaznictví
 
-U každé přidané konfigurace ER je vyznačen jako vlastník poskytovatel konfigurace ER. Pro tyto účely se používá poskytovatel konfigurace ER, který je aktivován v pracovním prostoru **Elektronické výkaznictví**. Než začnete přidávat nebo upravovat konfigurace ER, musíte proto aktivovat poskytovatele konfigurace ER v pracovním prostoru **Elektronické výkaznictví**.
+U každé přidané konfigurace elektronického výkaznictví je vyznačen jako vlastník poskytovatel konfigurace elektronického výkaznictví. Pro tyto účely se používá poskytovatel konfigurace elektronického výkaznictví, který je aktivován v pracovním prostoru **Elektronické výkaznictví**. Než začnete přidávat nebo upravovat konfigurace ER, musíte proto aktivovat poskytovatele konfigurace ER v pracovním prostoru **Elektronické výkaznictví**.
 
 > [!NOTE]
 > Pouze vlastník konfigurace ER může konfiguraci upravovat. Konfiguraci ER proto můžete upravovat teprve poté, co je příslušná konfigurace ER aktivována v pracovním prostoru **Elektronické výkaznictví**.
 
-#### <a name="review-the-list-of-er-configuration-providers"></a><a id="ReviewProvidersList"></a>Kontrola seznamu poskytovatelů konfigurace ER
+#### <a name="review-the-list-of-er-configuration-providers"></a><a id="ReviewProvidersList"></a>Kontrola seznamu poskytovatelů konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
 3. Na stránce **Tabulka poskytovatelů konfigurací** má záznam každého poskytovatele jedinečný název a adresu URL. Zkontrolujte obsah této stránky. Pokud již existuje záznam **Litware, Inc.** ( `https://www.litware.com`), další postup, [přidání nového poskytovatele konfigurace ER](#ActivateProvider), přeskočte.
 
-#### <a name="add-a-new-er-configuration-provider"></a><a id="ActivateProvider"></a>Přidání nového poskytovatele konfigurace ER
+#### <a name="add-a-new-er-configuration-provider"></a><a id="ActivateProvider"></a>Přidání nového poskytovatele konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
@@ -125,7 +124,7 @@ U každé přidané konfigurace ER je vyznačen jako vlastník poskytovatel konf
 5. Do pole **Internetová adresa** zadejte `https://www.litware.com`.
 6. Zvolte **Uložit**.
 
-#### <a name="activate-an-er-configuration-provider"></a><a id="ActivateAddedProvider"></a>Aktivace poskytovatele konfigurace ER
+#### <a name="activate-an-er-configuration-provider"></a><a id="ActivateAddedProvider"></a>Aktivace poskytovatele konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** klikněte v části **Poskytovatelé konfigurací** na dlaždici **Litware, Inc.** a poté vyberte možnost **Nastavit jako aktivní**.
@@ -299,7 +298,7 @@ Vlastní formát musíte nakonfigurovat, aby splňoval konkrétní požadavky ba
     > [!NOTE]
     > Poskytnutá sestava je nakonfigurována tak, aby <a id="PositionRoutingNumber"></a>každý řádek platby začínal směrovým kódem banky. Pro tento účel se používá formátovací prvek **vendBankRouteNum**. 
 
-8. Vyberte **Přidat**a poté vyberte typ formátu prvku, který přidáváte, jako **Text\\String**:
+8. Vyberte **Přidat** a poté vyberte typ formátu prvku, který přidáváte, jako **Text\\String**:
 
     1. Do pole **Název** zadejte **vendBankSWIFT**.
     2. Do pole **Minimální délka** zadejte hodnotu **11**.

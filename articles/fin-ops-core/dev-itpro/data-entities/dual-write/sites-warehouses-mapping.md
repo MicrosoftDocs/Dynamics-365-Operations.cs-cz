@@ -1,6 +1,6 @@
 ---
 title: Integrované sklady a pracoviště
-description: Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Common Data Service.
+description: Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Dataverse.
 author: t-benebo
 manager: AnnBe
 ms.date: 10/09/2019
@@ -18,26 +18,28 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: d5c2030160f6025c9de63b2c29215364f5f87e6f
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: d192343d78f9248e4d1232d6aee1a1f800383805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997617"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679313"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrované sklady a pracoviště
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Common Data Service. Provozní pracoviště a sklady jsou obecnými koncepty v aplikaci Supply Chain Management. Používají se k modelování dodavatelského řetězce vaší společnosti.
+
+Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Dataverse. Provozní pracoviště a sklady jsou obecnými koncepty v aplikaci Supply Chain Management. Používají se k modelování dodavatelského řetězce vaší společnosti.
 
 ## <a name="templates"></a>Šablony
 
-Při integraci s aplikací Common Data Service jsou tyto koncepcy a všechny jeich souvisejíc informace k dispozic v Common Data Service pomocí datových entit pracovišť a skladů v následující tabulce.
+Při integraci s aplikací Dataverse jsou tyto koncepcy a všechny jeich souvisejíc informace k dispozic v Dataverse pomocí datových tabulek pracovišť a skladů v následující tabulce.
 
-Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | Popis
+Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
 --------------------------|---------------------------|---
 Weby | msdyn_operationalsites | 
 Sklady | msdyn_warehouses | 

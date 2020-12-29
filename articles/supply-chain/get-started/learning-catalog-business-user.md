@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793556"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668974"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Katalog kurzů pro uživatele Dynamics 365 Supply Chain Management
 
@@ -50,7 +50,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Konfigurace a správa produktů a zásob v aplikaci Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Informace o produktu tvoří pilíř dodávek dodavatelsko-odběratelského řetězce a maloobchodních aplikací pro všechna odvětví. V různých modulech podnikového řešení jsou požadovány informace o produktu a konfigurace potřebné pro účely správy obchodních procesů, které souvisejí s produkty, skupinami produktů, kusovníky nebo kategoriemi produktu. V sestavách zásob se různým způsobem zobrazí, kolik zásob máte, a vysvětlí efektivnější finanční umístění zásob. Hlavní plánování vám pomáhá zjednodušit plánování, na základě předem určených faktorů, takže můžete efektivně plánovat, jaké materiály je nutné zakoupit, převést nebo vyrobit. | Libovolná online školení vlastním tempem | 14 hodin |
 | [Konfigurace a správa nákupu a dodavatelů v aplikaci Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Proces vyhledávání a práce s dodavateli, nákup produktů a zajištění kvality zboží a služeb představují všechny důležité faktory, které ovlivňují pověst a úspěšnost společnosti. | Libovolná online školení vlastním tempem | 14 hodin |
 | [Konfigurace a správa prodejů a zákazníků v aplikaci Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | Proces práce se zákazníky, znalost životního cyklu prodejního procesu a nastavení prodejních smluv jsou všechno důležité faktory, které ovlivňují úspěch společnosti. | Libovolná online školení vlastním tempem | 7 hodin |
-| [Konfigurace a práce se správou skladu v Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Řízení skladu v Dynamics 365 Supply Chain Management usnadňuje optimalizaci a zefektivnění procesů skladu podle individuálních potřeb a poskytuje přehled o vašich zásobách a nástrojích, které pomáhají zvýšit spokojenost zákazníků a snižovat náklady. | Libovolná online školení vlastním tempem | 8.5 hodin |
+| [Hlavní plánování v Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | Hlavní plánování umožňuje společnostem identifikovat a vyvážit suroviny a kapacity ke splnění budoucích cílů. Hlavní plánování posuzuje, které suroviny a kapacity jsou aktuálně k dispozici, a které suroviny a kapacity jsou potřebné k dokončení výroby. Například identifikuje, co musí být vyrobeno, zakoupeno, převedeno nebo odloženo jako pojistná zásoba předtím, než můžete dokončit výrobu. | Libovolná online školení vlastním tempem | 5 hodin |
+| [Konfigurace a práce se správou skladu v Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Řízení skladu v Dynamics 365 Supply Chain Management usnadňuje optimalizaci a zefektivnění procesů skladu podle individuálních potřeb a poskytuje přehled o vašich zásobách a nástrojích, které pomáhají zvýšit spokojenost zákazníků a snižovat náklady. | Libovolná online školení vlastním tempem | 8.5 hodin |
 | [Konfigurace a práce se správou přepravy v Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Modul Správa přepravy v aplikaci Dynamics 365 Supply Chain Management usnadňuje vyhledání nejúčinnějšího způsobu dodávání zboží vašim zákazníkům. Správa přepravy vypočítá nejméně nákladný a nejrychlejší způsob dodání zboží a umožňuje identifikovat dodavatele a směrování pro příchozí a odchozí objednávky. | Libovolná online školení vlastním tempem | 3 hodin |
 | [Práce s doplňkem správy majetku pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Správa majetku je doplněk pro Dynamics 365 Supply Chain Management, který se používá ke správě majetku používaného při každodenním provozu vaší společnosti. Příklady těchto typů majetku jsou stroje, výrobní vybavení nebo vysokozdvižné vozíky. | Libovolná online školení vlastním tempem | 12.5 hodin |
 

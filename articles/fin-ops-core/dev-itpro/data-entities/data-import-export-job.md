@@ -3,24 +3,23 @@ title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278891"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684053"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -130,7 +129,7 @@ Organizace však může potřebovat mít týmy zpracovávající faktury podle p
 Spustit úlohu můžete jednou výběrem tlačítka **Importovat** nebo **Exportovat** poté, co nadefinujete úlohu. Chcete-li nastavit opakovanou úlohu, zvolte **Vytvořit opakovanou datovou úlohu**.
 
 > [!NOTE]
-> Úlohu importu nebo exportu lze spustit asynchronně výběrem tlačítka **Importovat** nebo **Exportovat**. Spuštění v asynchronním režimu používá asynchronní rozhraní, která se liší od rozhraní dávek. Stejně jako rozhraní dávek však může asynchronní rozhraní projít omezeními a úlohy nelze proto provést okamžitě. Úlohy můžete také provádět synchronně výběrem **Importovat nyní** nebo **Exportovat nyní**. Úloha se spustí ihned a je to užitečné, pokud se asynchronní způsob nebo dávka nespustí z důvodu omezení. Úlohy mohou být provedeny také v dávce výběrem možnosti **Spustit v dávce**. Zdroje dávky podléhají omezení, takže dávková úloha nemusí začít okamžitě. Asynchronní možnost je užitečná, když uživatelé interagují s uživatelským rozhraním a nejsou uživatelé typu power pro pochopení plánování dávky. Použití dávky je alternativní možnost, pokud je třeba exportovat nebo importovat velké objemy. Dávkové úlohy lze naplánovat tak, aby se spouštěly na určité skupině dávek, což umožňuje větší kontrolu z pohledu vyvažování zátěže. Pokud asynchronní možnost a dávka procházejí omezením kvůli vysokému využití zdrojů v systému, lze jako okamžité řešení použít synchronní verzi importu/exportu. Synchronní možnost se spustí okamžitě a zablokuje uživatelské rozhraní, protože probíhá synchronně. Okna prohlížeče musí zůstat otevřené, když probíhá synchronní operace.
+> Úlohu importu nebo exportu lze spustit výběrem tlačítka **Importovat** nebo **Exportovat**. Tím se naplánuje spuštění dávkové úlohy pouze jednou. Úloha se nemusí provést okamžitě, pokud dávková služba má výpadky kvůli velkému množství požadavků. Úlohy můžete také provádět synchronně výběrem **Importovat nyní** nebo **Exportovat nyní**. Úloha se spustí ihned a je to užitečné, pokud se dávka nespustí z důvodu omezení. Úlohy lze také naplánovat tak, aby se spustila později. Toho lze dosáhnout výběrem možnosti **Spustit v dávce**. Zdroje dávky podléhají omezení, takže dávková úloha nemusí začít okamžitě. Použití dávky je doporučená možnost, protože také pomáhá u velkých objemů dat, která je třeba importovat nebo exportovat. Dávkové úlohy lze naplánovat tak, aby se spouštěly na určité skupině dávek, což umožňuje větší kontrolu z pohledu vyvažování zátěže.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ověření, zda byla úloha spuštěna podle očekávání
 Historie úloh je dostupná pro řešení potíží a analýzu na úlohách importu i exportu. Historie spuštění úloh je organizována podle časových rozsahů.
@@ -195,7 +194,7 @@ Funkce vyčištění historie úlohy ve správě dat musí být použita k napl�
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Ve správě funkcí musí být povolena tato funkce a lze k ní přistupovat z možností **Správa dat \> Vymazání historie úloh**.
+Funkce **Vyčištění historie provádění** musí být povolena ve správě funkcí a lze k ní přistupovat z nabídky **Správa dat \> Vymazání historie úloh**.
 
 ### <a name="scheduling-parameters"></a>Parametry plánování
 
@@ -211,3 +210,36 @@ Při plánování procesu čištění je nutné zadat následující parametry d
 
 > [!NOTE]
 > Nejsou-li záznamy v pracovních tabulkách zcela vyčištěny, zkontrolujte, zda je naplánováno spuštění úlohy čištění. Jak bylo vysvětleno výše, při jakékoli čisté realizaci bude úloha čistit pouze tolik ID spuštění, kolik je možné v zadaných maximálních hodinách. Chcete-li pokračovat v čištění všech zbývajících záznamů fázování, je nutné naplánovat pravidelné spouštění úlohy.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Vyčištění a archivace historie úloh (k dispozici jako preview v aktualizaci platformy 39 nebo verzi 10.0.15)
+Funkce vyčištění a archivace historie úloh nahradí předchozí verze funkce vyčištění. Tato část vysvětluje tyto nové funkce.
+
+Jednou z hlavních změn ve funkci čištění je použití dávkové úlohy systému k vyčištění historie. Použití dávkové úlohy systému umožňuje aplikacím Finance and Operations mít automaticky naplánovanou a spouštěnou dávkovou úlohu vyčištění, jakmile je systém připraven. Dávkové úlohy již není nutné ručně plánovat. V tomto výchozím režimu provádění bude dávková úloha spuštěna každou hodinu počínaje půlnocí a zachová si historii provádění za posledních 7 dní. Vymazaná historie je archivována pro budoucí načtení.
+
+> [!NOTE]
+> Protože je tato funkce zatím v preview, dávková úloha systému neodstraní žádnou historii provádění, dokud nebude povolena prostřednictvím testovací verze úlohy DMFEnableExecutionHistoryCleanupSystemJob. Až bude funkce obecně k dispozici v budoucím vydání, nebude testo testovací verze vyžadována a dávková úloha systému začne čistit a archivovat na základě definovaného plánu, až bude systém připraven, jak je vysvětleno výše. 
+
+> [!NOTE]
+> V budoucím vydání budou předchozí verze funkce vyčištění odebrány z aplikací Finance and Operations.
+
+Druhou změnou v procesu čištění je archivace vymazané historie provádění. Úloha vyčištění archivuje odstraněné záznamy do úložiště objektů blob, které DIXF používá pro běžné integrace. Archivovaný soubor bude ve formátu balíčku DIXF a bude k dispozici po dobu 7 dnů v objektu blob, během kterého bude možné jej stáhnout. Výchozí životnost archivovaného souboru 7 dní lze v parametrech změnit na maximálně 90 dní.
+
+### <a name="changing-the-default-settings"></a>Změna výchozího nastavení
+Tato funkce je aktuálně v náhledu a musí být explicitně zapnuta povolením testovací verze úlohy DMFEnableExecutionHistoryCleanupSystemJob. Ve správě funkcí musí být také zapnuta funkce vyčištění fázování.
+
+Chcete-li změnit výchozí nastavení životnosti archivovaného souboru, přejděte do pracovního prostoru správy dat a vyberte možnost **Vyčištění historie úlohy**. Nastavte **Počet dnů uchování balíčku v objektu blob** na hodnotu mezi 7 a 90 (včetně). Změna se projeví u archivů, které jsou vytvořeny po provedení této změny.
+
+### <a name="downloading-the-archived-package"></a>Stahování archivovaného balíčku
+Tato funkce je aktuálně v náhledu a musí být explicitně zapnuta povolením testovací verze úlohy DMFEnableExecutionHistoryCleanupSystemJob. Ve správě funkcí musí být také zapnuta funkce vyčištění fázování.
+
+Chcete-li stáhnout archivovanou historii spuštění, přejděte do pracovního prostoru správy dat a vyberte možnost **Vyčištění historie úlohy**. Výběrem položky **Historie zálohování balíčku** otevřete formulář historie. Tento formulář zobrazuje seznam všech archivovaných balíčků. Archiv lze vybrat a stáhnout výběrem možnosti **Stáhnout balíček**. Stažený balíček bude ve formátu balíčku DIXF a bude obsahovat následující soubory:
+
+-   Soubor tabulky fázování entit
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

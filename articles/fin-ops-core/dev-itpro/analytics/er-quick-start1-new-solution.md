@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678241"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680235"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Navrhněte nové řešení ER pro tisk vlastní sestavy
 
@@ -142,10 +141,10 @@ Jako uživatel v roli vývojáře elektronického výkaznictví musíte nakonfi
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfigurace parametrů ER
 
-1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. V pracovním prostoru **Elektronické sestavy** vyberte **Parametry elektronického vykazování**.
-3. Na stránce **Parametry elektronického výkaznictví** nastavte na kartě **Obecné** u možnosti **Povolit režim návrhu** hodnotu **Ano**.
-4. Na kartě **Přílohy** natavte následující parametry:
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+2. V pracovním prostoru **Elektronické sestavy** vyberte **Parametry elektronického vykazování**.
+3. Na stránce **Parametry elektronického výkaznictví** nastavte na kartě **Obecné** u možnosti **Povolit režim návrhu** hodnotu **Ano**.
+4. Na kartě **Přílohy** natavte následující parametry:
 
     - V poli **Konfigurace** vyberte pro společnost **USMF** typ **Soubor**.
     - V polích **Archiv úloh**, **Dočasné**, **Základ** a **Ostatní** vyberte typ **souboru**.
@@ -161,28 +160,28 @@ U každé označené konfigurace ER je vyznačen jako vlastník poskytovatel kon
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Kontrola seznamu poskytovatelů konfigurace ER
 
-1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. V pracovním prostoru **Elektronické výkaznictví** v části **Související odkazy** vyberte **Poskytovatelé konfigurace**.
 3. Na stránce **Poskytovatelé konfigurace** má záznam každé konfigurace jedinečný název a adresu URL. Zkontrolujte obsah této stránky. Pokud již existuje záznam **Litware, Inc.** ( `https://www.litware.com`), další postup, [přidání nového poskytovatele konfigurace ER](#ActivateProvider), přeskočte.
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Přidání nového poskytovatele konfigurace ER
 
 1. Na stránce **Poskytovatelé konfigurace** zvolte **Nový**.
-2. Do pole **Název** zadejte **Litware, Inc.**
-3. Do pole **Internetová adresa** zadejte  `https://www.litware.com`.
-4. Zvolte **Uložit**.
+2. Do pole **Název** zadejte **Litware, Inc.**
+3. Do pole **Internetová adresa** zadejte `https://www.litware.com`.
+4. Zvolte **Uložit**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivace poskytovatele konfigurace ER
 
-1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. V **Elektronickém výkaznictí** vyberte **Litware, Inc.** pro vašeho poskytovatele konfigurace.
-3. Vyberte **Nastavit jako aktivní**.
+3. Vyberte **Nastavit jako aktivní**.
 
 Další informace o poskytovatelích konfigurací ER naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Návrh datového modelu specifického pro doménu
 
-Musíte vytvořit novou konfiguraci ER obsahující součást [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components) pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
+Musíte vytvořit novou konfiguraci ER obsahující součást [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components) pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
 
 Dokončením kroků v části [Importujte novou konfiguraci datového modelu](#ImportDataModel) můžete importovat požadovanou konfiguraci datového modelu z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace datového modelu](#DesignDataModel), chcete-li navrhnout tento datový model od začátku.
 
@@ -811,7 +810,7 @@ Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verz
 
 Jako uživatel v roli správce systému musíte vyvinout novou logiku, aby nakonfigurovaný formát ER mohl být vyvolán z uživatelského rozhraní aplikace (UI) pro vygenerování vaší vlastní sestavy. V současné době ER nenabízí žádné možnosti pro konfiguraci tohoto typu logiky. Proto je nutné provést určité inženýrské práce. 
 
-Pro vyvinutí nové logiky je nutné nasadit topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md). Také musí mít přístup k vývojovému prostředí pro tuto topologii. Další informace o dostupných ER API najdete v tématu [API rozhraní architektury elektronického výkaznictví](er-apis-app73.md).
+Pro vyvinutí nové logiky je nutné nasadit topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md). Také musí mít přístup k vývojovému prostředí pro tuto topologii. Další informace o dostupných ER API najdete v tématu [API rozhraní architektury elektronického výkaznictví](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Úprava zdrojového kódu
 
@@ -1060,7 +1059,7 @@ Vytvořte svůj projekt a zpřístupněte uživatelům novou položku nabídky.
 5. Možnost filtrování potvrďte výběrem tlačítka **OK**.
 6. Klepnutím na tlačítko **OK** sestavu spustíte.
 
-    ![V dialogovém okně Elektronický výkaz zadejte kritéria výběru.](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Zadání kritérií výběru v dialogovém okně Elektronický výkaz](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Prohlédněte si generovanou sestavu.
 
@@ -1179,7 +1178,7 @@ Stav verze 1.2 této konfigurace se změní z **Návrh** na **Dokončeno**. Verz
 
 Všimněte si, že zápatí generované sestavy obsahuje název formátu ER, který byl použit k jeho vygenerování.
 
-![Vygenerovaný soubor ve fromátu Excel.](./media/er-quick-start1-report4.png)
+![Vygenerovaný soubor ve formátu Excel](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Spusťte formát z ER
 
@@ -1215,7 +1214,7 @@ Všimněte si, že zápatí generované sestavy neobsahuje název formátu ER, k
     ![Dialogové okno hlášení ER runtime, kde můžete změnit nakonfigurovaný cíl](./media/er-quick-start1-run-settings.png)
 
 6. Klepnutím na tlačítko **OK** sestavu spustíte.
-7. Zkontrolujte vygenerovaný soubor ve fromátu Excel.
+7. Zkontrolujte vygenerovaný soubor ve formátu Excel.
 
     ![Náhled vygenerovaného souboru ve fromátu Excel.](./media/er-quick-start1-preview-PDF.png)
 

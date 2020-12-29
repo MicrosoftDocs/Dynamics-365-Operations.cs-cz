@@ -1,6 +1,6 @@
 ---
 title: Integrovaná hlavní kniha
-description: Toto téma popisuje integraci dat hlavní knihy mezi aplikacemi Finance and Operations a ostatními aplikacemi Dynamics 365 používajícími Common Data Service.
+description: Toto téma popisuje integraci dat hlavní knihy mezi aplikacemi Finance and Operations a ostatními aplikacemi Dynamics 365 používajícími Dataverse.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7f5435a97776b817a4b99887cbab8283de25b692
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: f794d8306a3a752d811d7d84c0ed5f739f423cad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014851"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681635"
 ---
 # <a name="integrated-ledger"></a>Integrovaná hlavní kniha
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ V obchodní aplikaci definují data hlavní knihy základní nastavení pro to, 
 
 ## <a name="templates"></a>Šablony
 
-Data hlavní knihy zahrnují mapy kolekce entit základních financí, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
+Data hlavní knihy zahrnují mapy kolekce tabulek základních financí, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
 Aplikace Finance and Operations      | Modelem řízená aplikace v Dynamics 365 | popis
 ---------------------------------|----------------------------------|------------

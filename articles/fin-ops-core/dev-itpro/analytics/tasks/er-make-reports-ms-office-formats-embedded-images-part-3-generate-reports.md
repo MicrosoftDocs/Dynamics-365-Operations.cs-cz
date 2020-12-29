@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143092"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684372"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generování sestav ve formátech Office s integrovanými obrázky
 
@@ -39,15 +38,15 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 5. Klikněte na možnost Tisk testu.
     * Spusťte formát pro účely testování.  
 6. V poli Obchodovatelný formát šeku vyberte Ano.
-7. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby. Obrázek podpisu je převzat z pole typu dat 'Kontejner' ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
+7. Klepněte na tlačítko OK.
+    * Prohlédněte si vytvořený výstup. Logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby. Obrázek podpisu je převzat z pole typu dat 'Kontejner' ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
 8. Rozbalte sekci Kopie.
 9. Klikněte na položku Upravit.
 10. V poli Vodoznak zadejte Tisknout vodoznak jako anulovaný.
     * Změňte nastavení rozložení vodoznaku tak, aby byl zobrazen text vodoznaku při generování dokumentu v elementu tvaru Excel.  
 11. Klikněte na možnost Tisk testu.
-12. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že vodoznak je uveden v sestavě v souladu s možností výběru.  
+12. Klepněte na tlačítko OK.
+    * Prohlédněte si vytvořený výstup. Vodoznak je uveden v sestavě v souladu s možností výběru.  
 13. Zavřete stránku.
 14. V podokně akcí klikněte na možnost Spravovat platby.
 15. Klikněte na možnost Kontroly.
@@ -56,7 +55,7 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 18. V seznamu označte všechny řádky.
 19. Klikněte na Tisknout kopii šeku.
     * Spusťte formát a znovu vytiskněte vybrané šeky.  
-    * Prohlédněte si vytvořený výstup. Všimněte si, že vybrané šeky byly znovu vytištěny. Logo společnosti a popisky nejsou vytištěny, protože jsou uvedeny na předtištěném formuláři.  
+    * Prohlédněte si vytvořený výstup. Vybrané šeky byly znovu vytištěny. Logo společnosti a popisky nejsou vytištěny, protože jsou uvedeny na předtištěném formuláři.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Úprava mapování importovaného modelu dat
 1. Zavřete stránku.
@@ -67,7 +66,7 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 6. Klikněte na možnost Mapovat model na datový zdroj.
 7. Klikněte na možnost Návrhář.
     * Upravíme vazbu položky podpisu datového modelu a získáme tak obrázek podpisu ze souboru připojeného k záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
-8. Vypněte Zobrazit podrobnosti.
+8. Vypněte možnost Zobrazit podrobnosti.
 9. Ve stromové struktuře rozbalte Rozvržení.
 10. Ve stromovém zobrazení rozbalte layout\signature.
 11. Ve stromovém zobrazení vyberte layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp.
@@ -90,8 +89,8 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 3. V podokně akcí klikněte na možnost Nastavit.
 4. Klepněte na možnost Kontrola.
 5. Klikněte na možnost Tisk testu.
-6. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že obrázek z přílohy správy dokumentů je zobrazen jako podpis oprávněné osoby.  
+6. Klepněte na tlačítko OK.
+    * Prohlédněte si vytvořený výstup. Obrázek z přílohy správy dokumentů je zobrazen jako podpis oprávněné osoby.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Použití dokumentu MS Word jako šablony v importovaném formátu
 1. Zavřete stránku.
@@ -117,6 +116,6 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 20. Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'USMF OPER.
 21. Klepněte na možnost Kontrola.
 22. Klikněte na možnost Tisk testu.
-23. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.  
+23. Klepněte na tlačítko OK.
+    * Prohlédněte si vytvořený výstup. Výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.  
 

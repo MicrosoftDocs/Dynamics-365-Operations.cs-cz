@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143308"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684271"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
 
@@ -98,11 +97,11 @@ Kroky v této dílčí úloze ukazují, jak lze vytvořit novou konfiguraci form
 
     Všimněte si, že navržený formát je zde prezentován jako komponenta zdroje dat.  
 
-6. Ve stromové struktuře rozbalte 'format: Record\*settlement: XML Element 1..1 (settlement): Record.
-7. Ve stromové struktuře rozbalte format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list.
-8. Ve stromové struktuře rozbalte format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record.
-9. Ve stromové struktuře rozbalte format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record.
-10. Ve stromové struktuře zvolte format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record.
+6. Ve stromu rozbalte uzel `format: Record\*settlement: XML Element 1..1 (settlement): Record`.
+7. Ve stromu rozbalte uzel `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list`.
+8. Ve stromu rozbalte uzel `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
+9. Ve stromu rozbalte uzel `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record`.
+10. Ve stromu vyberte možnost `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
 
     Všimněte si, že prezentace povinných a nepovinných prvků formátu se v předdefinované komponentě zdroje dat ‘formát’ liší.  
 11. Ve stromové struktuře rozbalte 'Transakce: Seznam záznamů= formát.vyrovnání.'$výčtové''.
@@ -237,7 +236,7 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 19. Zavřete stránku.
 20. Klikněte na možnost Upravit.
 
-    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
+    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 Finance“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
 
 21. Vyberte možnost Ano v položce Výchozí pro pole mapování modelu.
 22. Ve stromové struktuře zvolte '1099 Model platby'.
@@ -245,7 +244,7 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 24. Klikněte na možnost Mapovat model na datový zdroj.
 25. Klikněte na položku Spustit.
 
-    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích(https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), ve vyhledávacím poli vyberte upřednostňované mapování modelu. Pokud jste ještě nenainstalovali opravy hotfix, přejděte na další krok, protože mapování již bylo vybráno definicí výchozí konfigurace formátu.  
+    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), ve vyhledávacím poli vyberte upřednostňované mapování modelu. Pokud jste ještě nenainstalovali opravy hotfix, přejděte na další krok, protože mapování již bylo vybráno definicí výchozí konfigurace formátu.  
     
     Pokud jste ještě nenainstalovali opravy hotfix KB 4012871, pamatujte, že dialogové okno obsahuje další dotaz na mapování modelu, který se používá k analýze importovaného souboru. Data jsou pak přenesena z dialogového okna do data modelu. Nyní můžete zvolit, jaké mapování formátu musí být použito v závislosti na typu souboru, který chcete importovat.  
     

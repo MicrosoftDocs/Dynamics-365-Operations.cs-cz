@@ -1,5 +1,5 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.7 (leden 2020)
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.7 (leden 2020)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.7.
 author: josaw1
 manager: tfehr
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 81fea8cb5be4d99247da5f6f373aa4250859fcda
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: a91f7b0ed715c383930db319de08fa37e6bbca37
+ms.sourcegitcommit: ce34e1ac6ce3a7033618bb9fd2983b11d63d3112
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802864"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "4597099"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.7 (leden 2020)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.7 (leden 2020)
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,7 +50,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizací
 ### <a name="platform-update-31"></a>Platform update 31
 Aplikace Microsoft Dynamics 365 Supply Chain Management 10.0.7 zahrnuje aktualizaci Platform Update 31. Další informace o aktualizaci Platform Update 31 naleznete v tématu [Co je nového a co se změnilo v aktualizaci Platform Update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
 
-### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: plán 2. vlny vydání v r. 2019
+### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: plán 2. vlny vydání v r. 2019
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
 Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2019](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.

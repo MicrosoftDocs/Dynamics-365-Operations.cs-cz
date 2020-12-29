@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015122"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527379"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy. 
 
@@ -72,7 +74,7 @@ Hlavní produkt je přidružen ke skupině dimenzí produktu a technologii konfi
 Můžete vybírat mezi třemi technologiemi konfigurace:
 
 - Předdefinované varianty definují předem definované dimenze produktu. Definice variant obsahuje definici specifické platné kombinace dimenzí, jako je barva, styl a velikost. Každá kombinace vytváří různé varianty produktu.
-- Konfigurace založené na dimenzích se obvykle používají ve scénářích výroby a umožňují používání dimenze konfigurace v definici kusovníků (BOM). Po výběru konkrétní konfigurace systém použije podmnožinu řádků kusovníku, které jsou platné pro danou konfiguraci plánování a výroby. Tento koncept je známý také jako *globální kusovníku* , protože se jeden sdílený kusovník používá pro všechny konfigurace produktu.
+- Konfigurace založené na dimenzích se obvykle používají ve scénářích výroby a umožňují používání dimenze konfigurace v definici kusovníků (BOM). Po výběru konkrétní konfigurace systém použije podmnožinu řádků kusovníku, které jsou platné pro danou konfiguraci plánování a výroby. Tento koncept je známý také jako *globální kusovníku*, protože se jeden sdílený kusovník používá pro všechny konfigurace produktu.
 - Konfigurace založená na omezeních používá k popisu všech možných atributů a součástí, které jsou požadovány pro všechny možné varianty produktu, jeden modul konfigurace produktu. Omezení kombinací atributů lze popsat pomocí regulárních výrazů nebo omezení na základě tabulky. Modely konfigurace a konfigurátory začnou být důležitější v modulu řízení informací o produktu a používají se ve všech odvětvích.
 
 Při plánování implementace aplikace Supply Chain Management je velmi důležité zvolit správnou technologii konfigurace pro obchodní proces. Produkt nelze převést z jednoho modelu na jiný po implementaci.
@@ -89,7 +91,7 @@ Produkty, které budou uvolněny pro určitou právnickou osobu, se označují j
 
 Pracovní prostor **Údržba uvolněného produktu** lze konfigurovat z položky nabídky **Nakonfigurovat můj pracovní prostor**. Vyberte hierarchii kategorií a kategorii pro filtrování pracovního prostoru. Chcete-li upravit příslušná data produktu v pracovním prostoru, můžete také definovat časové limity pro **naposledy uvolněné produkty** a **zastavené uvolněné produkty** ve dnech.
 
-Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevřené případy** zobrazuje případy změny produktu, které mají produkty ve vybrané hierarchii kategorie produktů, které nejsou dokončeny a uzavřeny. Seznam **Naposledy uvolněné** zobrazuje produkty, které byly uvolněny v rámci časového limitu nastaveného v konfiguraci pracovního prostoru. Pro každou položku v seznamu se spustí ověření a zobrazí stav ověření. Tento stav by mohl naznačovat, že požadované konfigurace pro právnickou osobu nebyly dokončeny. Ze seznamu lze přejít přímo na stránky **Podrobnosti o uvolnění produktu** , **Údržba atributu produktu** , **Údržba kategorie produktu** , **Výchozí nastavení objednávky** a **Překlady textu** k dokončení nutných konfigurací produktu.
+Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevřené případy** zobrazuje případy změny produktu, které mají produkty ve vybrané hierarchii kategorie produktů, které nejsou dokončeny a uzavřeny. Seznam **Naposledy uvolněné** zobrazuje produkty, které byly uvolněny v rámci časového limitu nastaveného v konfiguraci pracovního prostoru. Pro každou položku v seznamu se spustí ověření a zobrazí stav ověření. Tento stav by mohl naznačovat, že požadované konfigurace pro právnickou osobu nebyly dokončeny. Ze seznamu lze přejít přímo na stránky **Podrobnosti o uvolnění produktu**, **Údržba atributu produktu**, **Údržba kategorie produktu**, **Výchozí nastavení objednávky** a **Překlady textu** k dokončení nutných konfigurací produktu.
 
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 

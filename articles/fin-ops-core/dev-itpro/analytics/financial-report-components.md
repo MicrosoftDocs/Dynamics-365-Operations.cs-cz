@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181719"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682714"
 ---
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
@@ -58,7 +57,7 @@ Použijte složky k organizaci svých stavebních bloků v Návrháři sestav. V
 3. Když se objeví nová složka, zadejte název nové složky a stiskněte klávesu Enter.
 
 ## <a name="lock-a-building-block"></a> Uzamknutí stavebního bloku
-Můžete vytvořit heslo pro ochranu a uzamknutí stavebního bloku. Takový krok přidá úroveň zabezpečení pro součást sestavy bez zabezpečení celého systému. Heslo může ochránit informace ve stavebním bloku, které jsou důležité pro proces vykazování na konci měsíce. Uživatel v jakékoli roli může ochránit stavební blok. Chráněná součást je však vždy k dispozici uživatelům ve formě pouze pro čtení. Uživatelé mohou uzamčenou součást otevřít, upravit a uložit pod novým názvem. Uživatel s rolí správce má vždy přístup k zobrazení a změně uzamčeného stavebního bloku.
+Můžete vytvořit heslo pro ochranu a uzamknutí stavebního bloku. Takový krok přidá úroveň zabezpečení pro součást sestavy bez zabezpečení celého systému. Heslo může ochránit informace ve stavebním bloku, které jsou důležité pro proces vykazování na konci měsíce. Uživatel v jakékoli roli může zamknout stavební blok. Chráněná součást je však vždy k dispozici ostatním uživatelům ve formě pouze ke čtení. Uživatelé mohou uzamčenou součást otevřít, upravit a uložit pod novým názvem. Uživatel s rolí správce má vždy přístup k zobrazení a změně uzamčeného stavebního bloku.
 
 1. V Návrháři sestav otevřete součást sestavy, kterou chcete uzamknout, například definici řádku, definici sloupce, definici sestavy nebo definici stromu výkaznictví.
 2. V nabídce **Nástroje** klepněte na tlačítko **Zamknout/Odemknout**. Můžete také kliknout na ikonu **Zamknout/Odemknout** (ikona zámku) na panelu nástrojů.
@@ -81,7 +80,7 @@ Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině 
 
 ### <a name="export-a-building-block-group"></a>Export skupiny stavebních bloků
 
-Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků.Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi.Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
+Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
 
 1. V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete vyexportovat, a pak klikněte na položku **Export**.

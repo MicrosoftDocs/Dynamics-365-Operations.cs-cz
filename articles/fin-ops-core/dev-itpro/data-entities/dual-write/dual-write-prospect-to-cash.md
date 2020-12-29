@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997392"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683640"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -62,9 +62,9 @@ Například číselná řada v Supply Chain Management je **1, 2, 3, 4, 5,...** 
 
 Prodejní nabídky mohou být vytvořeny v aplikaci Sales nebo Supply Chain Management. Pokud vytvoříte nabídku v Sales, bude synchronizována se Supply Chain Management v reálném čase. Stejným způsobem, pokud vytvoříte nabídku v Supply Chain Management, bude synchronizována se Sales v reálném čase. Mějte na paměti následující body:
 
-+ Na nabídku můžete přidat slevu. V takovém případě bude sleva synchronizována se Supply Chain Management. Pole **Slevy** , **Náklady** , a **Daň** v hlavičce jsou kontrolována nastavením v aplikaci Supply Chain Management. Toto nastavení nepodporuje mapování integrace. Místo toho jsou pole **Cena** , **Sleva** , **Účtování** a **Daň** ponechána a zpracována aplikací Supply Chain Management.
-+ Pole **Sleva %** , **Sleva** a **Částka dopravného** jsou v záhlaví prodejní nabídk jen pro čtení.
-+ Pole **Podmínky přepravy** , **Dodací podmínky** , **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
++ Na nabídku můžete přidat slevu. V takovém případě bude sleva synchronizována se Supply Chain Management. Pole **Slevy**, **Náklady**, a **Daň** v hlavičce jsou kontrolována nastavením v aplikaci Supply Chain Management. Toto nastavení nepodporuje mapování integrace. Místo toho jsou pole **Cena**, **Sleva**, **Účtování** a **Daň** ponechána a zpracována aplikací Supply Chain Management.
++ Pole **Sleva %**, **Sleva** a **Částka dopravného** jsou v záhlaví prodejní nabídk jen pro čtení.
++ Pole **Podmínky přepravy**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
 
 Používáte-li také řešení Field Service, ujistěte se, že jste znovu povolili parametr **Rychlé vytvoření řádky nabídky**. Opětovná aktivace parametru umožňuje pokračovat ve vytváření řádků nabídky pomocí funkce rychlého vytvoření.
 1. Přejděte k aplikaci Dynamics 365 Sales.
@@ -89,19 +89,19 @@ Prodejní obědnávky mohou být vytvořeny v aplikaci Sales nebo Supply Chain M
 Máte k dispozici následující prodejní objednávky:
 
 + **Prodej:** množství = 3, sleva na řádek = 10 USD
-+ **Supply Chain Management** : množství = 3, částka řádkové slevy = $3,33, prodejní poplatek = -$0,01
++ **Supply Chain Management**: množství = 3, částka řádkové slevy = $3,33, prodejní poplatek = -$0,01
 
 Pokud provádíte synchronizaci ze Supply Chain Management do Sales, dostanete následující výsledek:
 
-+ **Supply Chain Management** : množství = 3, částka řádkové slevy = $3,33, prodejní poplatek = -$0,01
++ **Supply Chain Management**: množství = 3, částka řádkové slevy = $3,33, prodejní poplatek = -$0,01
 + **Prodej:** množství = 3, sleva na řádek = (3 × 3,33 USD) + $0,01 USD = 10 USD
 
 ## <a name="dual-write-solution-for-sales"></a>Řešení dvojího zapisování pro Sales
 
-Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Většina z těchto polí je zobrazena na kartě **Integrace** v modulu Sales. Další informace o tom, jak jsou mapována stavová pole, najdete v tématu dokumentace [Nastavte mapování pro pole stavu prodejní objednávky](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Většina z těchto polí je zobrazena na kartě **Integrace** v modulu Sales. Další informace o tom, jak jsou mapována stavová pole, najdete v tématu [Nastavení mapování pro pole stavu prodejní objednávky](sales-status-map.md).
 
 + Tlačítka **Vytvořit fakturu** a **Storno objednávky** na stránce **Prodejní objednávka** jsou v Sales skryta.
-+ Hodnota **Stav prodejní objednávky** zůstane **Aktivní** , aby se zajistilo, že změny z aplikace Supply Chain Management mohou být odeslány do prodejní objednávky v aplikaci Sales. Chcete-li kontrolovat toto chování, nastavte hodnotu **Statecode \[Stav\]** na **Aktivní**.
++ Hodnota **Stav prodejní objednávky** zůstane **Aktivní**, aby se zajistilo, že změny z aplikace Supply Chain Management mohou být odeslány do prodejní objednávky v aplikaci Sales. Chcete-li kontrolovat toto chování, nastavte hodnotu **Statecode \[Stav\]** na **Aktivní**.
 
 ## <a name="invoices"></a>Faktury
 
@@ -109,12 +109,12 @@ Prodejní faktury jsou vytvořeny v aplikaci Supply Chain Management a jsou sync
 
 + Pole **Číslo faktury** bylo přidáno do entity **Faktura** a zobrazí se na stránce.
 + Tlačítko **Vytvořit fakturu** je na stránce **Prodejní objednávka** skryto, protože faktury budou vytvořeny v aplikaci Supply Chain Management a synchronizovány do aplikace Sales. Stránku **Faktura** nelze upravovat, protože faktury budou synchronizovány z aplikace Supply Chain Management.
-+ Hodnota **Stav prodejní objednávky** se změní automaticky na **Vyfakturováno** , když byla související faktura synchronizována z aplikace Supply Chain Management do aplikace Sales. Vlastník prodejní objednávky, ze které byla faktura vytvořena, je přiřazen jako vlastník faktury. Vlastník prodejní objednávky tudíž může zobrazit fakturu.
-+ Pole **Dopravní podmínky** , **Dodací podmínky** a **Způsob dodání** nejsou zahrnuta do výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
++ Hodnota **Stav prodejní objednávky** se změní automaticky na **Vyfakturováno**, když byla související faktura synchronizována z aplikace Supply Chain Management do aplikace Sales. Vlastník prodejní objednávky, ze které byla faktura vytvořena, je přiřazen jako vlastník faktury. Vlastník prodejní objednávky tudíž může zobrazit fakturu.
++ Pole **Dopravní podmínky**, **Dodací podmínky** a **Způsob dodání** nejsou zahrnuta do výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
 
 ## <a name="templates"></a>Šablony
 
-Zpeněžení potenciálního zákazníka zahrnují kolekce map základních entit, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
+Zpeněžení potenciálního zákazníka zahrnují kolekce map základních tabulek, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
 | Aplikace Finance and Operations | Modelem řízené aplikace v Dynamics 365 | popis |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ Zpeněžení potenciálního zákazníka zahrnují kolekce map základních enti
 | Záhlaví prodejní nabídky CDS  | nabídky                            |             |
 | Řádky prodejní nabídky CDS   | quotedetails                      |             |
 
-Zde jsou přidružená mapování základních entit pro zpeněžení potenciálního zákazníka:
+Zde jsou přidružená mapování základních tabulek pro zpeněžení potenciálního zákazníka:
 
 + [Zákazníci V3 do accounts](customer-mapping.md#customers-v3-to-accounts)
 + [CDS kontakty V2 do contacts](customer-mapping.md#cds-contacts-v2-to-contacts)

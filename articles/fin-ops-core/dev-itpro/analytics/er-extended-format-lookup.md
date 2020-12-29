@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138853"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679479"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Umožňuje uživatelům nastavit odkaz formátu elektronického výkaznictví s dotazem na formát z globálního úložiště.
 
 [!include [banner](../includes/banner.md)]
 
-Můžete použít rámec [elektronického výkaznictví ](general-electronic-reporting.md) pro konfiguraci [formátů](general-electronic-reporting.md#FormatComponentOutbound) odchozích dokumentů v souladu s právními požadavky různých zemí/oblastí. Pomocí rámce elektronického výkaznictví můžete také konfigurovat [formáty](general-electronic-reporting.md#FormatComponentInbound) pro analýzu příchozích dokumentů a použít informace z těchto dokumentů k připojení nebo aktualizaci dat aplikace. Každý z těchto formátů lze použít v instanci Dynamics 365 Finance pro zpracování příchozích nebo odchozích obchodních dokumentů jako součást určitého obchodního procesu. 
+Můžete použít rámec [elektronického výkaznictví ](general-electronic-reporting.md) pro konfiguraci [formátů](general-electronic-reporting.md#FormatComponentOutbound) odchozích dokumentů v souladu s právními požadavky různých zemí/oblastí. Pomocí rámce elektronického výkaznictví můžete také konfigurovat [formáty](general-electronic-reporting.md#FormatComponentInbound) pro analýzu příchozích dokumentů a použít informace z těchto dokumentů k připojení nebo aktualizaci dat aplikace. Každý z těchto formátů lze použít v instanci Dynamics 365 Finance pro zpracování příchozích nebo odchozích obchodních dokumentů jako součást určitého obchodního procesu.
 
 Obvykle je nutné určit, který formát elektronického výkaznictví je nutné použít v určitém obchodním procesu. Chcete-li to provést, vyberte ve vyhledávacím poli, které je nakonfigurováno jako součást specifických parametrů obchodního procesu, jeden formát elektronického výkaznictví. Tato vyhledávací pole jsou obvykle implementována pomocí vhodného rozhraní API rámce elektronického výkaznictví. Další informace naleznete v tématu [Rozhraní API rámce elektronického výkaznictví - kód pro zobrazení vyhledávání mapování formátu](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
@@ -55,13 +54,13 @@ Při výběru formátu elektronického výkaznictví na záložce s náhledem **
 
 [![Stránka Parametry zahraničního obchodu](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Po úspěšném dokončení importu bude v tomto vyhledávacím poli uložen odkaz na importovaný formát elektronického výkaznictví. Mějte na paměti, že při prvním přístupu ke globálnímu úložišti, je nutné použít poskytnutý odkaz pro registraci k [Regulatory Configuration Service](https://aka.ms/rcs), která se používá pro správu přístupu ke globálnímu úložišti.
+Po úspěšném dokončení importu bude v tomto vyhledávacím poli uložen odkaz na importovaný formát elektronického výkaznictví. Při prvním přístupu ke globálnímu úložišti je nutné použít poskytnutý odkaz pro registraci k [Regulatory Configuration Service](https://aka.ms/rcs), která se používá pro správu přístupu ke globálnímu úložišti.
 
 [![Stránka Parametry zahraničního obchodu](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Ve výchozím nastavení záložka s náhledem **Import z globálního úložiště** zobrazí seznam formátů elektronického výkaznictví z dočasného úložiště, které je automaticky vytvořeno na základě obsahu globálního úložiště pro zlepšení výkonu. K tomu dojde při prvním otevření záložky s náhledem **Import globálního úložiště**, což může trvat několik sekund.
 
-Pokud na záložce s náhledem **Import z globálního úložiště** nevidíte požadovaný formát elektronického výkaznictví, ale jste si jisti, že tento formát elektronického výkaznictví je uložen v globálním úložišti, vyberte možnost **Synchronizovat**. Tím dojde k aktualizaci dočasného úložiště a k jeho synchronizaci s aktuálním obsahem globálního úložiště.
+Pokud na záložce s náhledem **Import z globálního úložiště** nevidíte požadovaný formát elektronického výkaznictví, ale jste si jisti, že tento formát elektronického výkaznictví je uložen v globálním úložišti, vyberte možnost **Synchronizovat**. Tato možnost aktualizuje dočasné úložiště a synchronizuje ho s aktuálním obsahem globálního úložiště.
 
 ## <a name="feature-activation"></a>Aktivace funkce
 

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142448"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684540"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Úprava formátů pro generování dokumentů s daty aplikace
 
@@ -80,31 +79,32 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 38. Klikněte na tlačítko OK.
 39. Ve stromovém zobrazení vyberte File\Declaration\Data\Item.
 40. Klepněte na položku Přidat položku.
-41. Do pole Název zadejte ID záznamu komodity.
+41. Do pole Název zadejte „ID záznamu komodity“.
     * ID záznamu komodity  
 42. V poli Typ dat vyberte Int64.
-43. Klikněte na tlačítko OK.
+43. Klepněte na tlačítko OK.
 44. Klikněte na kartu Mapování.
 45. Ve stromovém zobrazení vyberte File\Declaration\Data\File name.
 46. Klikněte na možnost Vazba.
 47. Ve stromovém zobrazení rozbalte „model“.
 48. Ve stromovém zobrazení rozbalte model\Transactions.
-49. Ve stromovém zobrazení vyberte File\Declaration\Data\Item =  model.Transactions\Commodity rec id.
-50. Ve stromovém zobrazení vyberte možnost model\Transactions\Commodity rec id.
+49. Ve stromovém zobrazení vyberte „File\Declaration\Data\Item = model.Transactions\Commodity rec ID“.
+50. Ve stromovém zobrazení vyberte „model\Transactions\Commodity rec ID“.
 51. Klikněte na možnost Vazba.
-52. Klikněte na položku Uložit.
+52. Klepněte na tlačítko Uložit.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Upravte formát kvůli zapamatování podrobností o vykazování
+
 1. Klikněte na Mapovat formát na model.
 2. Klikněte na možnost Nový.
 3. V poli Definice zadejte nebo vyberte kořenovou položku 'Pro aktualizaci dat aplikace'.
-    * Pro aktualizaci dat aplikace  
+    * Pro aktualizaci dat aplikace.
 4. Do pole Název zadejte Mapování pro aktualizaci dat.
     * Mapování pro aktualizaci dat  
 5. Klikněte na položku Uložit.
-    * Toto mapování definuje to, jak jsou podrobné informace o hlášení Intrastat shromážděny v datovém modelu – strukturu, která je určena výběrem kořenové položky 'Pro aktualizaci dat aplikace'. Tyto podrobnosti, mapování modelu se shodnou kořenovou položkou 'Pro aktualizaci dat aplikace' a směr 'K cíli' se použijí pro aktualizaci dat aplikace. Aktualizace dat aplikace začne ihned po vygenerování odchozí sestavy Intrastat. Všimněte si, že aktualizaci dat aplikace lze přeskočit při spuštění, ale datový model musí být prázdný (obsahovat prázdný seznam záznamů).   
+    * Toto mapování definuje to, jak jsou podrobné informace o hlášení Intrastat shromážděny v datovém modelu – strukturu, která je určena výběrem kořenové položky 'Pro aktualizaci dat aplikace'. Tyto podrobnosti, mapování modelu se shodnou kořenovou položkou 'Pro aktualizaci dat aplikace' a směr 'K cíli' se použijí pro aktualizaci dat aplikace. Aktualizace dat aplikace začne ihned po vygenerování odchozí sestavy Intrastat. Aktualizaci dat aplikace lze přeskočit při spuštění, ale datový model musí být prázdný (obsahovat prázdný seznam záznamů).
 6. Klikněte na možnost Návrhář.
-    * Všimněte si, že je standardně přidán formát odchozí sestavy Intrastat jako zdroj dat pro toto mapování modelu.  
+    * Standardně je přidán formát odchozí sestavy Intrastat jako zdroj dat pro toto mapování modelu.  
     * Připojte prvky požadované sestavy (předkládané jako datový zdroj) k prvkům datového modelu, který je filtrován na základě kořenové položky vybraného modelu.  
 7. Ve stromovém zobrazení rozbalte Záhlaví archivu.
 8. Ve stromovém zobrazení rozbalte Archive header\Archive lines.
@@ -120,8 +120,8 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 18. Klikněte na možnost Přidat funkci.
 19. Ve stromové struktuře rozbalte Formát.
 20. Ve stromovém zobrazení rozbalte format\Declaration: XML Element(Declaration).
-21. Ve stromovém zobrazení rozbalte format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
-22. Ve stromovém zobrazení vyberte 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item).
+21. Ve stromu rozbalte uzel `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
+22. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 23. Klikněte na možnost Přidat datový zdroj.
 24. V poli Receptura zadejte COUNT(format.Declaration.Data.Item).
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 27. Ve stromovém zobrazení vyberte Archive header\File name.
 28. Ve stromovém zobrazení vyberte format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name).
 29. Klikněte na možnost Vazba.
-30. Ve stromovém zobrazení vyberte format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number).
+30. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)`.
 31. Ve stromovém zobrazení vyberte Archive header\Archive lines\Item number.
 32. Klikněte na možnost Vazba.
-33. Ve stromovém zobrazení vyberte format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value).
+33. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)`.
 34. Ve stromovém zobrazení vyberte Archive header\Archive lines\Amount.
 35. Klikněte na možnost Vazba.
-36. Ve stromovém zobrazení vyberte format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id).
-37. Ve stromovém zobrazení vyberte Archive header\Archive lines\Commodity rec id.
+36. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)`.
+37. Ve stromovém zobrazení vyberte „Archive header\Archive lines\Commodity rec ID“.
 38. Klikněte na možnost Vazba.
 39. Ve stromovém zobrazení rozbalte Archive header\Archive lines.
-40. Ve stromovém zobrazení vyberte 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item).
+40. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 41. Klikněte na možnost Vazba.
 42. Ve stromovém zobrazení vyberte Záhlaví archivu.
-43. Ve stromovém zobrazení vyberte 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
+43. Ve stromu vyberte možnost `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
 44. Klikněte na možnost Vazba.
-45. Klikněte na položku Uložit.
+45. Klepněte na tlačítko Uložit.
 46. Zavřete stránku.
 47. Zavřete stránku.
 48. Zavřete stránku.
-

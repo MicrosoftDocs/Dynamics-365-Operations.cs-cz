@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c53596f9b11b1a7be4b8f1e18d58a202c74acd4
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 1fc7ae950ed32a75b8767d764c1b77193c454381
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016509"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654117"
 ---
 # <a name="replenishment-overview"></a>Přehled doplnění
 
@@ -48,7 +48,7 @@ Směrnice umístění se používají k určení umístění, které je třeba d
 
 Kromě vytvoření šablony je nutné zadat určitá nastavení doplnění v šabloně vlny. Šablona vlny by měla obsahovat krok vlny pro doplnění, který se spustí pouze v případě, že přidělení zboží není úspěšné. V tomto kroku vlny doplnění se používá kód kroku vlny pro určení toho, která šablona doplnění by se měla použít. Kromě kroku vlny pro doplnění je nutné ujistit se, že je vybráno **Doplnění** v části **Metody** u šablony vlny. 
 
-Stránka **Šablona doplnění** obsahuje pole **Povolit u vlny poptávky použití nerezervovaných množství**. Zvolte toto zaškrtávací políčko, pokud má doplnění poptávky odečíst nerezervované množství z práce vygenerované z vybrané šablony doplnění. Toto políčko je třeba zaškrtnout pro každou existující šablonu doplnění, pokud chcete umožnit šablonám doplnění poptávky používat tuto logiku. Pokud práce pochází ze šablony doplnění s označeným polem **Povolit poptávku vlny pro použití nerezervovaného množství** , při spuštění doplnění poptávky ve skladu dojde k odečtení poptávky z existující práce doplnění pomocí nerezervovaného množství.
+Stránka **Šablona doplnění** obsahuje pole **Povolit u vlny poptávky použití nerezervovaných množství**. Zvolte toto zaškrtávací políčko, pokud má doplnění poptávky odečíst nerezervované množství z práce vygenerované z vybrané šablony doplnění. Toto políčko je třeba zaškrtnout pro každou existující šablonu doplnění, pokud chcete umožnit šablonám doplnění poptávky používat tuto logiku. Pokud práce pochází ze šablony doplnění s označeným polem **Povolit poptávku vlny pro použití nerezervovaného množství**, při spuštění doplnění poptávky ve skladu dojde k odečtení poptávky z existující práce doplnění pomocí nerezervovaného množství.
 
 **Jednotka doplnění** je minimální jednotka pro doplnění. Musí se jednat o celé číslo, které je násobkem jednotky. Systém bude při vytváření práce zaokrouhlovat až do nejvyšší jednotky.
 
@@ -62,7 +62,7 @@ Minimální a maximální objemy jsou nastaveny v šabloně doplnění. Mnoho da
 Všimněte si, že strategie doplnění metodou Min/Max. nedokáže doplnit prázdné místo, pokud není umístění nastaveno jako pevné umístění pro položku. Není-li umístění, které musí být doplněno, nastaveno jako pevné umístění, systém nedokáže určit, kterou položku je třeba doplnit. Proto je nutné před zahájením doplnění mít na skladě alespoň část množství.
 
 ## <a name="load-demand-replenishment"></a>Doplnění poptávky nákladu
-Doplnění poptávky nákladu využívá souhrn poptávky po několik nákladů a vytváří doplnění, které je nutné pro zásobování příslušných výdejních skladových míst. Doplnění poptávky nákladu se velice podobá doplnění na základě poptávky vlny. Hlavní rozdíl je jak a kdy je Doplnění poptávky nákladu a Doplnění na základě poptávky vlny spouštěno. Stejně jako doplnění metodou Min/Max. je Doplnění poptávky nákladu spouštěno v rámci dávkové úlohy. Chcete-li nastavit dávkovou úlohu na stránce **Doplnění poptávky nákladu** , vyberte šablonu doplnění, kterou chcete používat, a nastavením dotazu filtru určete náklad, který se použije k určení poptávky. Dotaz na umístění definuje umístění, ze kterého se veškeré dostupné množství odečte, aby byla naplněna souhrnná poptávka nákladu.
+Doplnění poptávky nákladu využívá souhrn poptávky po několik nákladů a vytváří doplnění, které je nutné pro zásobování příslušných výdejních skladových míst. Doplnění poptávky nákladu se velice podobá doplnění na základě poptávky vlny. Hlavní rozdíl je jak a kdy je Doplnění poptávky nákladu a Doplnění na základě poptávky vlny spouštěno. Stejně jako doplnění metodou Min/Max. je Doplnění poptávky nákladu spouštěno v rámci dávkové úlohy. Chcete-li nastavit dávkovou úlohu na stránce **Doplnění poptávky nákladu**, vyberte šablonu doplnění, kterou chcete používat, a nastavením dotazu filtru určete náklad, který se použije k určení poptávky. Dotaz na umístění definuje umístění, ze kterého se veškeré dostupné množství odečte, aby byla naplněna souhrnná poptávka nákladu.
 
 ## <a name="immediate-replenishment"></a>Okamžité doplnění
 Namísto toho, abyste museli na konci procesu přidělení shrnout poptávku a provést doplnění na základě shrnutého množství, můžete použít strategii okamžitého doplnění. Když použijete tuto strategii, lze po selhání řádku směrnice skladového místa okamžitě doplnit zásoby. Proto můžete nastavit doplnění tak, aby bylo omezeno konkrétními jednotkami a aby používalo množství, která jsou nastavena pro konkrétní skladová místa.

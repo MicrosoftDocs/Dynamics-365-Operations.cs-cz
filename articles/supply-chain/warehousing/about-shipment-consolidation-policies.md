@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016348"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654213"
 ---
 # <a name="shipment-consolidation-policies"></a>Zásady konsolidace dodávek
 
-Proces konsolidace dodávek, který používá zásady konsolidace dodávek, umožňuje automatizovanou konsolidaci dodávek během automatizovaného a ručního uvolnění do skladu. Automatizovaná konsolidace, která byla k dispozici před zavedením této funkce, měla pevně zakódovaná pole a byla založena na poli **Konsolidovat dodávku při uvolnění do skladu** , které bylo nastaveno pro sklad.
+Proces konsolidace dodávek, který používá zásady konsolidace dodávek, umožňuje automatizovanou konsolidaci dodávek během automatizovaného a ručního uvolnění do skladu. Automatizovaná konsolidace, která byla k dispozici před zavedením této funkce, měla pevně zakódovaná pole a byla založena na poli **Konsolidovat dodávku při uvolnění do skladu**, které bylo nastaveno pro sklad.
 
 Zásady konsolidace dodávek se používají pro následující funkce:
 
@@ -39,7 +39,7 @@ Před zavedením zásad konsolidace dodávek existovala funkce konsolidace jako 
 
 Dotazy se používají k identifikaci použitelné zásady konsolidace dodávek a poté upravitelná sada polí určuje, jak jsou řádky vytížení seskupeny na úrovni dodávky. (Tento vzorec se podobá vzorci, který následují šablony vln.) Kromě toho byla do každé zásady přidána možnost **Konsolidovat se stávajícími dodávkami**. Když je tato možnost zapnutá, postup *Uvolnění do skladu* nalezne dodávky pro konsolidaci vyhledáním mezi existujícími dodávkami, které byly vytvořeny na základě stejné zásady konsolidace. V tomto případě systém místo vytvoření nové vybere existující dodávku nebo náklad. Systém se však konsoliduje pouze se stávajícími dodávkami, které mají stav *Otevřeno*. Dodávky, které patří do uvolnění vlny se stavem *Uvolněno* nebo vyšší nebudou považovány za cíle pro konsolidace.
 
-Když jsou zpřístupněny zásady konsolidace dodávek, nastavení **Konsolidovat dodávku při uvolnění do skladu** , které bylo dříve k dispozici na stránce natavení **Sklady** je skryté. Pro usnadnění přechodu na novou funkci konsolidace dodávek vytváří funkce na stránce **Zásady konsolidace dodávek** výchozí zásadu, která automaticky zahrnuje staré nastavení pro stávající sklady. Po vytvoření této výchozí zásady nebude nastavení **Konsolidovat dodávku při uvolnění do skladu** na stránce **Sklady** již bráno v úvahu.
+Když jsou zpřístupněny zásady konsolidace dodávek, nastavení **Konsolidovat dodávku při uvolnění do skladu**, které bylo dříve k dispozici na stránce natavení **Sklady** je skryté. Pro usnadnění přechodu na novou funkci konsolidace dodávek vytváří funkce na stránce **Zásady konsolidace dodávek** výchozí zásadu, která automaticky zahrnuje staré nastavení pro stávající sklady. Po vytvoření této výchozí zásady nebude nastavení **Konsolidovat dodávku při uvolnění do skladu** na stránce **Sklady** již bráno v úvahu.
 
 Můžete použít stránku **Uvolnění do skladu** pro ruční přepsání použitelné zásady konsolidace stejným způsobem, jakým můžete přepsat zásady plnění.
 
@@ -121,7 +121,7 @@ Následující tabulka shrnuje, jak funguje konsolidace dodávek, když nepouž�
 
 | Bez zásad konsolidace dodávek | Se zásadami konsolidace dodávek |
 |---|----|
-| Nelze použít | Prodej nebo převod dodávek vybraných pro konsolidaci musí mít stejnou zásadu konsolidace jako dodávka, která se vytváří, nebo musí být přiřazeny k otevřené dodávce (když je zapnutá možnost **Konsolidovat se stávajícími dodávkami** ). |
+| Nelze použít | Prodej nebo převod dodávek vybraných pro konsolidaci musí mít stejnou zásadu konsolidace jako dodávka, která se vytváří, nebo musí být přiřazeny k otevřené dodávce (když je zapnutá možnost **Konsolidovat se stávajícími dodávkami**). |
 | Postup *Uvolnění do skladu* nehledá mezi existujícími dodávkami, aby nalezl dodávku pro konsolidaci. Pouze dodávky, které jsou vytvořeny aktuální instancí postupu *Uvolnění do skladu* se používá k nalezení dodávky pro konsolidaci. | Pokud je zapnuta možnost **Konsolidovat se stávajícími dodávkami** pro zásadu konsolidace, která se aktuálně používá, vyhledává proces *Uvolnění do skladu* mezi stávajícími dodávkami, které byly vytvořeny na základě stejné zásady konsolidace, aby našel dodávku pro konsolidaci. Pokud tedy máte dvě zásady, dodávka, která se vytváří na základě zásady 2, nebude nikdy konsolidována s dodávkou, která byla vytvořena na základě zásady 1. |
 | Nelze použít | Pokud je seznam polí zásad konsolidace prázdný nebo pokud zásadu nelze najít, vytvoří se pro každou prodejní objednávku nebo řádek převodního příkazu nová dodávka. |
 | Následující pole konsolidace definuje jedinečnou kombinaci hodnot, která se používá ke konsolidaci dodávek pro *řádek převodního příkazu*. (Všechna ostatní pole jsou ignorována.)<ul><li>Číslo objednávky (OrderNum)</li></ul> | Následující pole konsolidace definují jedinečnou kombinaci hodnot, která se používá ke konsolidaci dodávek pro *řádek převodního příkazu*. (Všechna ostatní pole jsou ignorována.)<ul><li>Číslo objednávky (OrderNum)</li><li>Příjemce dodávky (DeliveryName)</li><li>Poštovní adresa (DeliveryPostalAddress)</li><li>ISO kód země (CountryRegionISOCode)</li><li>Adresa (Address)</li><li>Pracoviště (InventSiteId)</li><li>Sklad (InventLocationId)</li><li>Dopravce dodávky (CarrierCode)</li><li>Služba přepravce (CarrierServiceCode)</li><li>Způsob dodání (ModeCode)</li><li>Skupina přepravců (CarrierGroupCode)</li><li>Dodací podmínky (DlvTermId)</li></ul>Tato pole jsou jediná pole, která jsou k dispozici a inicializovaná při vytvoření nové dodávky. |

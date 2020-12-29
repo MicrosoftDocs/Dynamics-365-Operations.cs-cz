@@ -10,26 +10,27 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040115"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679949"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
-> Toto téma již není aktualizováno. Chcete-li zobrazit aktuální seznam funkcí, které byly z aplikací Finance and Operations odebrány nebo zastaraly, hledejte obsah **"Odebrané nebo zastaralé funkce"** , který se vztahuje k používané aplikaci.
+> Toto téma již není aktualizováno. Chcete-li zobrazit aktuální seznam funkcí, které byly z aplikací Finance and Operations odebrány nebo zastaraly, hledejte obsah **"Odebrané nebo zastaralé funkce"**, který se vztahuje k používané aplikaci.
 
 Toto téma popisuje funkce, které byly odebrány nebo zastaraly z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 
@@ -79,7 +80,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Vyřazujeme metodu **setUtcString()** , protože je k dispozici lepší metoda nahrazení. |
+| **Důvod pro zrušení/odstranění** | Vyřazujeme metodu **setUtcString()**, protože je k dispozici lepší metoda nahrazení. |
 | **Nahrazeno jinou funkcí?**   | Ano |
 | **Ovlivněné oblasti produktu**         | Platforma |
 | **Možnost nasazení**              | Vše |
@@ -185,7 +186,7 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce bude vždy povolena po odebrání parametru. |
 | **Nahrazeno jinou funkcí?**   | Č. Funkce pro podporu prodejních objednávek založených na projektu s více zdroji financování bude povolena vždy.   |
-| **Ovlivněné oblasti produktu**         |Parametr **Povolit prodejní objednávky pro projekty s více zdroji financování** bude odebrán. Po odebrání parametru budou modifikovány následující metody: metoda **ctrlSalesOrderTable** ve třídě **ProjStatusType** , metoda **validate** pro pole **ProjId** a metoda **run** ve formuláři **SalescreateOrder**. Následující metody budou po odebrání parametru zastaralé: metoda **IsSalesOrderAllowedForMultipleFundingSources** v souboru tabulky **ProjTable** , metoda **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** v souboru tabulky **ProjTable** , datové pole **AllowSalesOrdersForMultipleFundingSources** ve formuláři **ProjParameters** a v souborech **ProjParameterEntity** , soukromá metoda **IsAssociatedToMultipleFundingSourcesContract** v souboru tabulky **ProjTable**. |
+| **Ovlivněné oblasti produktu**         |Parametr **Povolit prodejní objednávky pro projekty s více zdroji financování** bude odebrán. Po odebrání parametru budou modifikovány následující metody: metoda **ctrlSalesOrderTable** ve třídě **ProjStatusType**, metoda **validate** pro pole **ProjId** a metoda **run** ve formuláři **SalescreateOrder**. Následující metody budou po odebrání parametru zastaralé: metoda **IsSalesOrderAllowedForMultipleFundingSources** v souboru tabulky **ProjTable**, metoda **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** v souboru tabulky **ProjTable**, datové pole **AllowSalesOrdersForMultipleFundingSources** ve formuláři **ProjParameters** a v souborech **ProjParameterEntity**, soukromá metoda **IsAssociatedToMultipleFundingSourcesContract** v souboru tabulky **ProjTable**. |
 | **Možnost nasazení**              | Vše  |
 | **Stav**                         | Odpisování je plánováno pro vlnu vydání v dubnu 2020. |
 
@@ -266,7 +267,7 @@ Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem model
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole. Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS). Tento problém je v současné době kategorizován jako *varování kompilátoru* , nikoli jako *chyba* , což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému. Chcete-li vyřešit tento problém:<br><br>1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.<br><br>2. Proveďte kompilaci znovu.<br><br>3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění. |
+| **Důvod pro zrušení/odstranění** | Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole. Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS). Tento problém je v současné době kategorizován jako *varování kompilátoru*, nikoli jako *chyba*, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému. Chcete-li vyřešit tento problém:<br><br>1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.<br><br>2. Proveďte kompilaci znovu.<br><br>3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění. |
 | **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
@@ -356,7 +357,7 @@ Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Iniciativa uzavření kódu  |
-| **Nahrazeno jinou funkcí?**   | Žádný. Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.<br><br>Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace. K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu **Aplikace\Třída** , který se vztahuje k této vlastní třídě aplikace.  |
+| **Nahrazeno jinou funkcí?**   | Žádný. Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.<br><br>Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace. K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu **Aplikace\Třída**, který se vztahuje k této vlastní třídě aplikace.  |
 | **Ovlivněné oblasti produktu**         | Architektura elektronického výkaznictví                                                      |
 | **Možnost nasazení**              | Vše                                                                                      |
 | **Stav**                         | Odebráno od verze Finance and Operations, Enterprise Edition 7.3.    |
@@ -374,12 +375,12 @@ Tyto dvě sestavy již nejsou podporovány v aplikaci Finance and Operations. N
 | **Stav**                       | Zastaralé: Položky nabídky pro tyto dvě sestavy byly odstraněny ve verzi 7.3. Kód pro sestavy však zůstane v produktu. V plánu je kód odstranit v budoucích verzích. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Balíčky obsahu Power BI dostupné v AppSource
-Balíčky obsahu **Řízení nákladů** , **Finanční výkonnost** a **Výkonnost maloobchodního kanálu** , dostupné na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
+Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, dostupné na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Aktualizace produktu v Microsoft Power BI. |
-| **Nahrazeno jinou funkcí?**   | Balíčky obsahu **Řízení nákladů** , **Finanční výkonnost** a **Výkonnost maloobchodního kanálu** , které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integrace řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Power BI Embedded v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Nahrazeno jinou funkcí?**   | Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integrace řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Power BI Embedded v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Ovlivněné oblasti produktu**         | Řízení nákladů, Finance a Maloobchod                                                                                               |
 | **Možnost nasazení**              | Pouze cloud (Inntegrace s PowerBI.com není podporována v místních nasazeních).                                                                                                            |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je druhé čtvrtletí roku 2018.    |
@@ -712,7 +713,7 @@ Mzdové informace lidských zdrojů
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.  |
-| **Nahrazeno jinou funkcí?**   | **Výhody** , **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** \> **Mzdy**. |
+| **Nahrazeno jinou funkcí?**   | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** \> **Mzdy**. |
 | **Ovlivněné oblasti produktu**         | Lidské zdroje, Mzdy   |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.    |
 
@@ -806,8 +807,8 @@ Existují dva formáty pro export plateb pro Finsko. LM02 (FI) se používá pro
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob** , duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Dynamics AX 2012 R3.                                                                         |
-| **Nahrazeno jinou funkcí?**   | Modul **Řízení skladu** , který byl vydán v aplikaci AX 2012 R3, Dynamics AX 2012 R3 CU8 a Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
+| **Důvod pro zrušení/odstranění** | Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob**, duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Dynamics AX 2012 R3.                                                                         |
+| **Nahrazeno jinou funkcí?**   | Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Dynamics AX 2012 R3 CU8 a Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
 | **Ovlivněné oblasti produktu**         | Řízení zásob, prodeje a marketing, zásobování a zdroje   |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.    |
 
@@ -847,7 +848,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflo
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integrace rozhraní AIF, AxD a AxBC
 
-V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, jež jsou přidány pro vytvoření *zprávy* , kterou lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na dokumentech, používají třídy **Axd \<Document\>**.
+V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, jež jsou přidány pro vytvoření *zprávy*, kterou lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na dokumentech, používají třídy **Axd \<Document\>**.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -1157,12 +1158,12 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 
 ### <a name="gl-ssrs-reports"></a>Sestavy GL SSRS
 
-Byly odebrány sestavy, které zahrnují následující položky nabídky: **Souhrnná předvaha** , **Podrobná předvaha** , **Účtové osnovy** , **Záznam pro audit** , **Zůstatky** a **Výpis zůstatků**.
+Byly odebrány sestavy, které zahrnují následující položky nabídky: **Souhrnná předvaha**, **Podrobná předvaha**, **Účtové osnovy**, **Záznam pro audit**, **Zůstatky** a **Výpis zůstatků**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami. |
-| **Nahrazeno jinou funkcí?**   | Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako **Finanční výkaznictví** )    |
+| **Nahrazeno jinou funkcí?**   | Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako **Finanční výkaznictví**)    |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.   |
 
@@ -1359,7 +1360,7 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Malé využití |
-| **Nahrazeno jinou funkcí?**   | Ne, ale stránka **Vztah profilu** , kterou lze otevřít ze stránky **Skupiny profilů** , podporuje stejný obchodní scénář jako zastaralá stránka **Plánovač práce**. |
+| **Nahrazeno jinou funkcí?**   | Ne, ale stránka **Vztah profilu**, kterou lze otevřít ze stránky **Skupiny profilů**, podporuje stejný obchodní scénář jako zastaralá stránka **Plánovač práce**. |
 | **Ovlivněné oblasti produktu**         | Čas a docházka     |
 | **Stav**                         | Kód nebyl odstraněn. Formulář JmgWorkPlanner však nebyl migrován.    |
 

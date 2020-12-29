@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142125"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681894"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
 
@@ -77,10 +76,10 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 3. Ve stromovém zobrazení vyberte možnost **Funkce\Seskupit podle**.
 4. Do pole **Název** zadejte `PaymentByCurrency`.
 5. Vyberte možnost **Upravit skupinu podle**.
-6. Ve stromové struktuře rozbalte **model**a pak vyberte **model\Platby**.
+6. Ve stromové struktuře rozbalte **model** a pak vyberte **model\Platby**.
 7. Vyberte **Přidat pole do**.
 8. Vyberte možnost **Skupina Co**.
-9. Ve stromové struktuře rozbalte **model\Platby**a pak vyberte **model\Platby\Měna**.
+9. Ve stromové struktuře rozbalte **model\Platby** a pak vyberte **model\Platby\Měna**.
 10. Vyberte **Přidat pole do**.
 11. Vyberte **Seskupená pole**.
 12. Ve stromovém zobrazení vyberte **model\Platby\Požadovaná částka(InstructedAmount)**.

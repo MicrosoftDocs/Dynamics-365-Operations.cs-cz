@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4e12abceeef59d05fa21cb030b8aa738842cafb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982790"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683888"
 ---
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
@@ -41,13 +40,13 @@ Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové úče
 
 Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
-Obsah Power BI je vystavěn na souhrnném měření **CostObjectStatementCacheMonthly** , které má jako primární datový zdroj tabulku **CostObjectStatementCache** . Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete změnit četnost aktualizací nebo povolit ruční aktualizace v konfiguraci mezipaměti datové sady. Ruční aktualizace lze spustit v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů** .
+Obsah Power BI je vystavěn na souhrnném měření **CostObjectStatementCacheMonthly**, které má jako primární datový zdroj tabulku **CostObjectStatementCache**. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete změnit četnost aktualizací nebo povolit ruční aktualizace v konfiguraci mezipaměti datové sady. Ruční aktualizace lze spustit v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**.
 
-Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizovat souhrnné měření **CostObjectStatementCacheMonthly** , než bude možné aktualizovat data ve vizualizacích Power BI.
+Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizovat souhrnné měření **CostObjectStatementCacheMonthly**, než bude možné aktualizovat data ve vizualizacích Power BI.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Obsah **Řízení nákladů** v Power BI se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů** .
+Obsah **Řízení nákladů** v Power BI se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů**.
 
 Pracovní prostor **Správa nákladů** obsahuje následující karty:
 

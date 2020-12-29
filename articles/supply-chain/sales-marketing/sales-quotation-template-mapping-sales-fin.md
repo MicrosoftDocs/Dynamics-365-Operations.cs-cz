@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b6b4384e1b5f712c08de55195a738295a36b75e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527331"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synchronizace hlaviček a řádků prodejní nabídky přímo z aplikace Sales do Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma se věnuje šablonám a základním úlohám, které se používají k synchronizaci záhlaví a řádek prodejní nabídky přímo z aplikace Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
@@ -94,7 +96,7 @@ Před synchronizací prodejních nabídek je důležité, abyste aktualizovali n
 
 - Zajistěte, že jsou nastavena oprávnění pro tým, ke kterému je uživatel ze sady připojení v aplikaci Sales přiřazen. Používáte-li ukázková data, má obvykle uživatel přístup správce, ale tým ho nemá. Pokud nemá tým přístup správce při spuštění projektu z integrace dat, dostanete chybovou zprávu s oznámením, že hlavní tým chybí.
 
-    Chcete-li nastavit oprávnění pro tým, přejděte na **Nastavení** &gt; **Zabezpečení** &gt; **Týmy**a vyberte příslušný tým. Vyberte **Spravovat role**a poté vyberte roli, která má požadovaná oprávnění, jako je například **Správce systému**.
+    Chcete-li nastavit oprávnění pro tým, přejděte na **Nastavení** &gt; **Zabezpečení** &gt; **Týmy** a vyberte příslušný tým. Vyberte **Spravovat role** a poté vyberte roli, která má požadovaná oprávnění, jako je například **Správce systému**.
 
 - Přejděte na **Nastavení** &gt; **Správa** &gt; **Nastavení systému** &gt; **Prodej** a ujistěte se, že se používají následující nastavení:
 

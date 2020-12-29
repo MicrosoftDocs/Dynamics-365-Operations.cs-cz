@@ -3,7 +3,7 @@ title: Poskytování příruček v hybridní realitě pro pracovníky ve výrob�
 description: Toto téma vysvětluje, jak modul řízení výroby v Microsoft Dynamics 365 Supply Chain Management integrovat s Dynamics 365 Guides.
 author: cabeln
 manager: tfehr
-ms.date: 09/29/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
-ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000971"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645137"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Poskytování příruček v hybridní realitě pro pracovníky ve výrobě
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Pracovníci ve výrobních procesech využijí relevantní pokyny, které jsou jim poskytovány ve správný čas v souvislosti s jejich prací. *Pokyny* se používají v několika oblastech práce, mezi které patří: montáž, servis, provozu, certifikace a bezpečnost. Průběžná instruktáž ve všech těchto základních firemních funkcích pomůže pracovníkům dosáhnout lepších výsledků a lépe pracovat.
 
@@ -124,10 +126,9 @@ Chcete-li nakonfigurovat, jak se aplikace Guides bude zobrazovat v dílně, pře
 
 Nastavte následující pole:
 
-- **Subdoména Common Data Service** – toto pole by už mělo obsahovat hodnotu. Toto pole obsahuje subdoménu prostředí Common Data Service, ve kterém vytváříte příručky. Tato subdoména je první částí adresy URL a zpravidla je pojmenována po vaší organizaci. Pokud je například vaše adresa URL Common Data Service „contoso.crm4.dynamics.com“, měli byste sem zadat *contoso*. Tato hodnota se používá k vytvoření adres vašich příruček a bude zakódována do kódů QR.
+- **URL adresa Microsoft Dataverse** - Zadejte adresu URL pro prostředí Microsoft Dataverse, ve kterém vytvářet své průvodce. Formát je „contoso.crm4.dynamics.com“, kde první část adresy URL je obvykle pojmenována po vaší organizaci (například „contoso.“), Druhá část je specifická pro datovou oblast vašeho prostředí (například „crm4.“) a poslední částí je doména (například „dynamics.com“). Jedním ze způsobů, jak najít správnou adresu URL, je přechod na [home.dynamics.com](https://home.dynamics.com/) a otevření aplikace Guides. Po otevření aplikace Guides se adresa URL zobrazí v panelu adresy vašeho prohlížeče (vezměte pouze základní adresu URL, která by se měla podobat předchozímu příkladu). Tato hodnota se používá k vytvoření adres vašich příruček a bude zakódována do kódů QR.
 - **Velikost kódu QR** – nastavte velikost vykresleného kódu QR. Doporučujeme zvolit velikost, která vyplní většinu vaší obrazovky, ale ne více. Vhodná hodnota je zpravidla *15*.
 - **Úroveň opravy chyb kódu QR** – nastavte členitost kódu QR. Vyšší členitost pomáhá zvýšit spolehlivost kódu, ale **Velikost kódu QR** musí být dostatečně velká, aby podporovala detaily vyžadované vámi vybranou úrovní opravy.
-
 
 > [!TIP]
 > - Kódy QR, které jsou pro váš displej příliš velké, se budou déle vykreslovat a následně se zmenší, aby se vešly na displej. Tím nic nezískáte.
@@ -368,7 +369,7 @@ Příručku přidáte ke vztahu operace postupu takto:
 1. V podokně akcí otevřete kartu **Postup** a ve skupině **Údržba** vyberte **Podrobnosti postupu**.
 1. Otevře se stránka **Podrobnosti postupu** pro vybraný postup.
 1. V horní mřížce vyberte operaci, ke které chcete poskytnout pokyny.
-1. V dolní mřížce vyberte konkrétní vztah (nebo obecný vztah **Vše** ).
+1. V dolní mřížce vyberte konkrétní vztah (nebo obecný vztah **Vše**).
     ![Výběr operace a následně vztahu](media/instruction-guides-RouteOperationRelation.png "Výběr operace a následně vztahu")
 1. Nad dolní mřížkou otevřete kartu **Přidružené příručky**. ![Karta Přidružené příručky](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Přidružené příručky")
 1. Výběrem možnosti **Přidat** na panelu nástrojů v horní části dolní mřížky přidejte do mřížky nový řádek.
@@ -406,6 +407,6 @@ Když Supply Chain Management vygeneruje úkoly pro výrobu, shromáždí z těc
 
 - Pokud připojíte verzi kusovníku nebo verzi receptury k postupu nebo výrobní zakázce, zobrazí se u úkolu všechny příručky připojené k této verzi a také příručky připojené k nadřazenému kusovníku nebo receptuře této verze.
 - Pokud připojíte verzi postupu k výrobní zakázce, zobrazí se u úkolu všechny příručky připojené k této verzi a také příručky připojené k nadřazenému postupu této verze.
-- Pokud definujete několik vztahů operací postupu, které obsahují vztah *Vše* , a přiřadíte k nim příručky, zobrazí se u úkolu jen příručky z nejkonkrétnějšího vztahu.  
+- Pokud definujete několik vztahů operací postupu, které obsahují vztah *Vše*, a přiřadíte k nim příručky, zobrazí se u úkolu jen příručky z nejkonkrétnějšího vztahu.  
 
 ![Schéma řešení relevantních příruček](media/instruction-guides-Resolve.png "Schéma řešení relevantních příruček")

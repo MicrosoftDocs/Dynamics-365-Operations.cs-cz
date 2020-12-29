@@ -1,6 +1,6 @@
 ---
-title: Organizační hierarchie v Common Data Service
-description: Toto téma popisuje integraci dat organizace mezi aplikacemi Finance and Operations a Common Data Service.
+title: Organizační hierarchie v Dataverse
+description: Toto téma popisuje integraci dat organizace mezi aplikacemi Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,32 +18,34 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.openlocfilehash: e2b652f11db62eb58ffc2ec2fc4322149e7d45d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000727"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680065"
 ---
-# <a name="organization-hierarchy-in-common-data-service"></a>Organizační hierarchie v Common Data Service
+# <a name="organization-hierarchy-in-dataverse"></a>Organizační hierarchie v Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Vzhledem k tomu, že Dynamics 365 Finance, je finanční systém, *organizace* je hlavním konceptem a nastavení systému začíná konfigurací hierarchie organizací. Obchodní finance lze poté sledovat na úrovni organizace a také na libovolné úrovni v hierarchii organizací.
 
-Přestože Common Data Service nemá koncept organizační hierarchie, má několik volných konceptů, například celkový výnos z prodeje. Jako součást integrace Common Data Service je do Common Data Service přidána datová struktura hierarchie organizací.
+Přestože Dataverse nemá koncept organizační hierarchie, má několik volných konceptů, například celkový výnos z prodeje. Jako součást integrace Dataverse je do Dataverse přidána datová struktura hierarchie organizací.
 
 ## <a name="data-flow"></a>Tok dat
 
-Podnikatelský ekosystém, který se skládá z aplikací Finance and Operations a Common Data Service, bude nadále mít hierarchii organizací. Tato hierarchie organizací je postavena na aplikacích Finance and Operations, ale je zpřístupněna v Common Data Service pro informační účely a účely rozšiřitelnosti. Následující ilustrace znázorňuje informace o hierarchii organizace, které jsou vystaveny v Common Data Service jako jednosměrný tok dat z aplikací Finance and Operations do Common Data Service.
+Podnikatelský ekosystém, který se skládá z aplikací Finance and Operations a Dataverse, bude nadále mít hierarchii organizací. Tato hierarchie organizací je postavena na aplikacích Finance and Operations, ale je zpřístupněna v Dataverse pro informační účely a účely rozšiřitelnosti. Následující ilustrace znázorňuje informace o hierarchii organizace, které jsou vystaveny v Dataverse jako jednosměrný tok dat z aplikací Finance and Operations do Dataverse.
 
 ![Obrázek architektury](media/dual-write-data-flow.png)
 
-Mapování entity organizační hierarchie jsou k dispozici pro jednosměrnou synchronizaci dat z aplikací Finance and Operations do Common Data Service.
+Mapování tabulky organizační hierarchie je k dispozici pro jednosměrnou synchronizaci dat z aplikací Finance and Operations do Dataverse.
 
 ## <a name="templates"></a>Šablony
 
-Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map entit pro synchronizaci produktů a souvisejících informací.
+Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map tabulek pro synchronizaci produktů a souvisejících informací.
 
 Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
 -----------------------|--------------------------------|---
@@ -64,7 +66,7 @@ Právnické osoby | cdm_companies | Poskytuje obousměrnou synchronizaci informa
 
 ## <a name="internal-organization"></a>Interní organizace
 
-Informace o interní organizaci v Common Data Service pocházejí ze dvou entit, **provozní jednotka** a **právnická osoba**.
+Informace o interní organizaci v Dataverse pocházejí ze dvou tabulek, **provozní jednotka** a **právnická osoba**.
 
 [!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
 

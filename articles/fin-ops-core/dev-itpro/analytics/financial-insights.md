@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181765"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682764"
 ---
 # <a name="financial-insights"></a>Finanční přehledy
 
@@ -81,14 +80,14 @@ Můžete definovat opakování dávek pro pravidelnou aktualizaci dat v entitác
 ## <a name="security"></a>Zabezpečení
 V současné době data v integrovaných sestavách Power BI nelze omezit na právnické osoby, ke kterým má uživatel přístup. Proto jsou integrované sestavy Power BI řízeny prostřednictvím funkčních oprávnění v nastavení zabezpečení. Funkční oprávnění jsou definována pro povolení přístupu k datům všech právnických osob nebo pouze aktivní společnosti. Následující tabulka zobrazuje existující funkční oprávnění a role, ke kterým jsou přiřazena. Funkční oprávnění lze odebrat nebo přiřadit k různým rolím, na základě požadavků vaší společnosti.
 
-| Funkční oprávnění                                    | Role | Popis |
+| Funkční oprávnění                                    | Role | popis |
 |-----------------------------------------|-------|------------|
 | Zobrazit pracovní prostor přehledu CFO             | Vedoucí finančního oddělení | Toto funkční oprávnění poskytuje přístup k pracovnímu prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 | Zobrazit finanční přehledy aktuální společnosti | <ul><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Auditor</li><li>Správce rozpočtu</li><li>Výkonný ředitel</li><li>Vedoucí finančního oddělení</li><li>Finanční kontrolor</li></ul> | Toto funkční oprávnění poskytuje přístup k finančním přehledům. Standardně slouží aktivní společnost jako filtr. Nelze přidat další právnické osoby. |
 | Zobrazit finanční přehledy mezi společnostmi   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Finanční výkaznictví a Finanční přehledy
+## <a name="financial-reporting-vs-financial-insights"></a>Finanční výkaznictví versus Finanční přehledy
 Ačkoli **Finanční přehledy** obsahují finanční výkazy, není to náhrada za finanční výkaznictví v aplikaci. Výchozí finanční výkazy ve **finančních přehledech** jsou omezeny rozsahem a nezahrnují všechny typy finančních výkazů. Finanční výkaznictví je stále primárním nástroj pro návrh, vytváření a generování zákonem požadovaných finančních výkazů.
 
 Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
@@ -131,7 +130,7 @@ Uživatelé mohou filtrovat sestavu pomocí podokna **Filtr** na levé straně. 
 - **Filtry na úrovni vizuálních prvků** – Tyto filtry se používají pouze na vybrané vizuální prvky. Tyto filtry se používají nad filtry na úrovni stránek.
 - **Podrobný filtr** – Tento filtr filtruje ze zdrojového vizuálního prvku, který je použit na aktuální vizuální prvek při procházení ze zdrojového na aktuální vizuální prvek.
 
-![Filtr](./media/filter.png)
+![Možnosti filtrování](./media/filter.png)
 
 Chcete-li odebrat konkrétní hodnotu filtru, vyberte symbol gumy vedle něj. Neodebírejte filtr pomocí výběru X. Když zvolíte X, je pole, které chcete filtrovat, odebráno jako možnost filtru. Pokud omylem odeberete pole z filtru, zavřete pracovní prostor a otevřete ho znovu. Výchozí nastavení filtru se znovu použije.
 
@@ -176,25 +175,25 @@ V Power BI jsou k dispozici různé úrovně přechodu na podrobnosti. Každá �
 
 Na následujícím obrázku je výkaz **Předvaha** sbalen na nejvyšší úroveň hierarchie řádku, hlavní typ účtu.
 
-![Předvaha](./media/trial-balance.png)
+![Výkaz předvahy](./media/trial-balance.png)
 
 Chcete-li zobrazit další úroveň hierarchie, kategorie hlavního účtu, lze nastavit pole **Přejít na podrobnosti** na **Řádky** a poté vybrat tlačítko **Rozbalit** (třetí tlačítko po poli přechodu na podrobnosti). Nyní se rozbalí všechny kategorie hlavního účtu. V současné Power BI neumožňuje rozbalit pouze jeden řádek nebo sloupec, ale stále se zobrazují všechny ostatní řádky nebo sloupce.
 
-![Předvaha](./media/trial-balance2.png)
+![Rozpis předvahy v řádcích](./media/trial-balance2.png)
 
 Chcete-li rozbalit na úrověň hlavních účtů pro všechny řádky, můžete znovu použíttlačítko **Rozbalit**. Chcete-li však přejít dolů na podrobnosti hlavních účtů pro jeden řádek, nejprve zvolte tlačítko **Přejít dolů k podrobnostem** (jednoduchá šipka směrem dolů na pravé straně okna) a pak vyberte řádek, na který chcete přejít. Následující obrázek znázorňuje výsledek při volbě řádku **Prodej** po zvolení tlačítka **Přejít dolů k podrobnostem**.
 
-![Předvaha](./media/trial-balance3.png)
+![Tlačítko rozbalení předvahy](./media/trial-balance3.png)
 
 Po přechodu dolů k podrobnostem na jeden řádek je třeba několik kliknutí, abyste se vrátili k plné předvaze. Tlačítko **Přejít nahoru k podrobnostem** (první tlačítko po poli **Přejít k podrobnostem**) přejde nahoru pouze v kontextu kategori **Prodej**, jak je uvedeno na následujícím obrázku.
 
-![Předvaha](./media/trial-balance4.png)
+![Tlačítko přechodu nahoru k podrobnostem předvahy](./media/trial-balance4.png)
 
 Můžete nadále používat tlačítko **Přejít nahoru k podrobnostem** pro návrat na nejvyšší úrověň souhrnu řádků.
 
 Power BI má také tlačítko, které vám umožní přejít na další úroveň v hierarchii (druhé tlačítko po poli **Přejít na podrobnosti**). Účinek tohoto tlačítka se liší od účinku tlačítka **Rozbalit** (třetí tlačítko po poli **Přejít na podrobnosti**), které se používá k rozbalení hierarchie. Po rozbalení hierarchie se hierarchie uchová v sestavě. Jak bylo zobrazeno dříve, pokud například rozbalíte na úrověň typu hlavního účtu, stále uvidíte v sestavě typ hlavního účtu. Pokud všask přejdete na další úroveň v hierarchii, tato sestava již nezobrazuje nadřazenou položku v hierarchii, jak je zobrazeno na následujícím obrázku.
 
-![Předvaha](./media/trial-balance5.png)
+![Tlačítko přechodu zpět předvahy](./media/trial-balance5.png)
 
 Chcete-li zobrazit podrobnosti o transakcích za souhrnnými zůstatky, můžete vybrat některé částky pro přechod zpět do aplikace Finance and Operations.
 
@@ -245,6 +244,6 @@ Power BI nenabízí možnost skrytí a zobrazení prázdných řádků. Pokud ř
 
 Informace v následujících zdrojích není vyžadována, aby bylo možné povolit integrované sestavy pro pracovní prostory **Přehled CFO** nebo **Finanční přehledy** v produkčním prostředí. Namísto toho jsou užitečné pro vývojářská pole a pokud chcete integrovat sestavy Power BI.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Přístup k analytickým pracovním prostorům a sestavám v prostředí s topologií 1-box](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

@@ -3,7 +3,7 @@ title: Funkce elektronického výkaznictví ROUND
 description: Toto téma obsahuje obecné informace o použití funkce ROUND elektronického výkaznictví.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12af71a024a76fca98fc2e876da9b59e5762cf07
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 83fb5c04938e0aba1277f2d6017d4b66208a8858
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744544"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683249"
 ---
 # <a name="round-er-function"></a>Funkce elektronického výkaznictví ROUND
 
@@ -57,7 +56,7 @@ Výsledná číselná hodnota.
 
 Pokud je hodnota argumentu `decimals` vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.
 
-Pokud je hodnota argumentu `decimals` **0** (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.
+Pokud má argument `decimals` hodnotu **0** (nula), zadané číslo je zaokrouhleno na nejbližší sudé celé číslo.
 
 Pokud je hodnota argumentu `decimals` nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.
 
@@ -69,6 +68,10 @@ Pokud je hodnota argumentu `decimals` nižší než 0 (nula), zadané číslo je
 
 `ROUND (1200.767, -3)` zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu **1000**.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="example-3"></a>Příklad 3
+
+`ROUND (1200.5, 0)` zaokrouhlí na nejbližší sudé celé číslo a vrátí **1200**, zatímco `ROUND (1201.5, 0)` udělá totéž a vrátí **1202**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Matematické funkce](er-functions-category-mathematical.md)
