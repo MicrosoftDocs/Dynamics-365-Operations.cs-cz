@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018553"
+ms.locfileid: "4424236"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Řešení problému s nákupními objednávkami
 
@@ -34,7 +34,7 @@ Toto téma popisuje, jak vyřešit problémy, s nimiž se můžete setkat při p
 
 K tomuto problému může dojít z důvodu nekonzistence v distribucích nákupních objednávek.
 
-Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept* , přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept*, přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="when-purchase-orders-are-imported-through-data-management-purchase-order-line-numbers-dont-follow-the-increment-that-defined-in-system-parameters"></a>Když se nákupní objednávky importují prostřednictvím správy dat, čísla řádků nákupní objednávky nenásledují přírůstek definovaný v systémových parametrech.
 
@@ -58,7 +58,7 @@ Toto chování je záměrné. Výchozí hodnoty pro daňovou skupinu, platební 
 
 K tomuto problému může dojít z důvodu nekonzistence v distribucích nákupních objednávek.
 
-Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept* , přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept*, přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="one-or-more-accounting-distributions-are-either-over-distributed-or-under-distributed"></a>Jedno nebo více rozúčtování je nadměrně distribuováno nebo nedostatečně distribuováno.
 
@@ -70,7 +70,7 @@ Zobrazí se následující chyba: „Jedno nebo více rozúčtování je nadměr
 
 K tomuto problému může dojít z důvodu nekonzistence v distribucích nákupních objednávek.
 
-Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept* , přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept*, přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>Mohu zobrazit pouze nákupní objednávky, které jsem vytvořil/a?
 
@@ -107,7 +107,7 @@ Následující postup ukazuje jeden způsob, jak reprodukovat problém.
 1. Nastavte jazyk systému na *EN-US* (americká angličtina).
 1. Ujistěte se, že existuje produkt, kde jsou udržovány jazyky *EN-US* a *DE* (němčina) pro překlady názvu produktu.
 1. Změňte jazyk právnické osoby na *DE*.
-1. V právnické osobě, kde je jako jazyk nastaveno *DE* , vytvořte nákupní objednávku, která zahrnuje produkt.
+1. V právnické osobě, kde je jako jazyk nastaveno *DE*, vytvořte nákupní objednávku, která zahrnuje produkt.
 1. Všimněte si, že název produktu je stále zobrazen v americké angličtině (systémový jazyk).
 
 ### <a name="issue-resolution"></a>Řešení problému
@@ -118,7 +118,7 @@ Toto chování je záměrné. Na nákupních objednávkách je produkt vždy zob
 
 ### <a name="issue-description"></a>Popis problému
 
-Produkt má schváleného dodavatele, který má například datum účinnosti 11. ledna 2018 ( *01/11/2018* ) a datum vypršení platnosti *Nikdy*. Pokud se pokusíte změnit datum účinnosti na 10. ledna 2018 ( *01/10/2018* ) nebo 12. ledna 2018 ( *01/12/2018* ), zobrazí se následující chyba:
+Produkt má schváleného dodavatele, který má například datum účinnosti 11. ledna 2018 (*01/11/2018*) a datum vypršení platnosti *Nikdy*. Pokud se pokusíte změnit datum účinnosti na 10. ledna 2018 (*01/10/2018*) nebo 12. ledna 2018 (*01/12/2018*), zobrazí se následující chyba:
 
 > Nelze vytvořit záznam v seznamu schválených dodavatelů (PdsApproveVendorList). Hodnota „Vypršení platnosti“ musí být větší nebo rovna hodnotě „Datum platnosti“.
 
@@ -130,7 +130,7 @@ Můžete prodloužit pouze období, pro které je dodavatel schválen. Platí n�
 - Chcete-li změnit datum vypršení platnosti tak, aby bylo pozdější než kterékoli z existujících období, datum platnosti musí být po posledním datu vypršení platnosti v jakémkoli existujícím záznamu.
 - Chcete-li snížit celkovou dobu, po kterou je dodavatel schválen, musíte odstranit nebo upravit existující záznamy. Případně můžete použít přepínač **zkrátit** během importu. Tento přepínač odstraní všechny existující záznamy v tabulce pro schválené dodavatele podle položek.
 
-Pro příklad scénáře, který je popsán v popisu problému, kde má záznam datum účinnosti *01/11/2018* a datum vypršení platnosti *Nikdy* , můžete importovat nový záznam, který má datum účinnosti *01/10/2018* a datum vypršení platnosti *Nikdy*. Nelze však zkrátit období tak, aby bylo datum účinnosti aktualizováno na *01/12/2018* prostřednictvím správy dat. Tuto změnu musíte provést prostřednictvím uživatelského rozhraní.
+Pro příklad scénáře, který je popsán v popisu problému, kde má záznam datum účinnosti *01/11/2018* a datum vypršení platnosti *Nikdy*, můžete importovat nový záznam, který má datum účinnosti *01/10/2018* a datum vypršení platnosti *Nikdy*. Nelze však zkrátit období tak, aby bylo datum účinnosti aktualizováno na *01/12/2018* prostřednictvím správy dat. Tuto změnu musíte provést prostřednictvím uživatelského rozhraní.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Po změně dodací adresy v záhlaví nákupní objednávky se název dodávky nesynchronizuje.
 

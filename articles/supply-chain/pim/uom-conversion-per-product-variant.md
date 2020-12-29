@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3382790"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424101"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
@@ -59,7 +59,7 @@ Chcete-li nakonfigurovat předlohu produktu tak, aby podporovala převod jednotk
     - **Produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro základní produkt. Tento převod jednotek bude použit jako záložní pro všechny varianty produktů, pro které není definovaný žádný převod jednotek.
     - **Varianta produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro určitou variantu produktu. Použijte pole **Varianta produktu** k výběru varianty.
 
-    ![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")
+    ![![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")](media/uom-new-conversion.png "Adding a new unit conversion")
 
 1. K nastavení převodu jednotek použijte další pole, která jsou k dispozici.
 1. Vyberte **OK** k uložení nového převodu jednotek.

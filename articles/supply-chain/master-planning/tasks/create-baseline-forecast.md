@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987183"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4424253"
 ---
 # <a name="create-a-baseline-forecast"></a>Vytvoření základní prognózy
 
@@ -43,7 +43,7 @@ Plánovač výroby může vytvořit základní prognózu pomocí modelů prognó
 7. Zavřete stránku.
 8. Zavřete stránku.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Nastavení parametrů prognózy poptávky
+## <a name="set-up-the-demand-forecasting-parameters"></a>Nastavení parametrů prognózy poptávky
 1. Přejděte na Hlavní plánování > Nastavení > Prognóza poptávky > Parametry tvorby prognóz poptávky.
 2. Rozbalte část Parametry algoritmu prognózy.
 3. V poli Strategie generování prognózy vyberte "Kopírování mezi historickými poptávkami".

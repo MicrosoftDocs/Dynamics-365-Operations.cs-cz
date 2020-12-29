@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978598"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423936"
 ---
 # <a name="create-service-task-relations"></a>Vytvoření relací servisních úloh    
 
@@ -33,11 +33,11 @@ Servisní úlohy lze přidružit servisním smlouvám nebo servisním zakázkám
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Vytvoření relace se servisní smlouvou
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy** .
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Vyberte existující servisní smlouvu nebo vytvořte novou smlouvu.
 
-3.  V podokně akcí klikněte na tlačítko **Servisní úlohy** .
+3.  V podokně akcí klikněte na tlačítko **Servisní úlohy**.
 
 4.  Ve formuláři **Servisní úloh** stisknutím CTRL+N vytvořte nový řádek a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisní úlohy k servisní smlouvě.
 
@@ -51,11 +51,11 @@ Relace servisní úlohy vytvořená na servisní smlouvě je k dispozici ve vše
 
 ## <a name="create-a-relation-with-a-service-order"></a>Vytvoření relace se servisní zakázkou
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Vyberte existující servisní zakázku nebo vytvořte novou zakázku.
 
-3.  V podokně akcí klikněte na tlačítko **Servisní úlohy** .
+3.  V podokně akcí klikněte na tlačítko **Servisní úlohy**.
 
 4.  Ve formuláři **Servisní úloh** stisknutím CTRL+N vytvořte nový řádek a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisní úlohy k servisnímu příkazu.
 

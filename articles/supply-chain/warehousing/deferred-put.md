@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016694"
+ms.locfileid: "4424151"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odložené zpracování práce skladu
 
@@ -44,7 +44,7 @@ Zásady jsou konfigurovány na stránce **Zásady zpracování pracovních postu
 | Název zásady zpracování práce     | Název zásad zpracování pracovního postupu. |
 | Typ pořadí pracovních činností                 | Typ pracovního příkazu, u kterého jsou zásady použity. |
 | Operace                       | Operace, která je zpracována pomocí zásad. |
-| Metoda zpracování práce          | Metoda používaná pro zpracování řádku práce. Pokud je metoda nastavena na **Okamžitě** , chování se podobá chování, když pro zpracování řádku nejsou použity žádné zásady zpracování práce. Je-li metoda nastavena na **odloženo** , použije se odložené zpracování využívající dávkový systém. |
+| Metoda zpracování práce          | Metoda používaná pro zpracování řádku práce. Pokud je metoda nastavena na **Okamžitě**, chování se podobá chování, když pro zpracování řádku nejsou použity žádné zásady zpracování práce. Je-li metoda nastavena na **odloženo**, použije se odložené zpracování využívající dávkový systém. |
 | Prahová hodnota odloženého zpracování   | Hodnota **0** (nula) označuje, že neexistuje žádná prahová hodnota. V tomto případě se použije odložené zpracování, pokud jej lze použít. Pokud je výpočet specifické prahové hodnoty nižší než práh, použije se metoda Immediate. V opačném případě se použije metoda odloženo, pokud ji lze použít. V případě práce související s prodejem a převodem je prahová hodnota vypočtena jako počet přidružených řádků zatížení zdroje, které jsou pro práci zpracovávány. Pro práci doplnění se práh vypočítá jako počet řádků práce, které jsou doplněny prací. Nastavením prahové hodnoty, například **5** pro prodej, nebudou menší práce, které mají méně než pět počátečních zdrojových řádků vytížení, používat odložené zpracování, ale větší práce jej budou používat. Prahová hodnota se uplatní pouze v případě, že je metoda zpracování práce nastavena na hodnotu **Odloženo**. |
 | Skupina dávky odloženého zpracování |Skupina dávky používaná pro úlohy zpracování vlny. |
 

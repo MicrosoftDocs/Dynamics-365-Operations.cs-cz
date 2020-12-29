@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016210"
+ms.locfileid: "4424157"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -36,14 +36,14 @@ Scénáře uvedené v tomto tématu ukazují, jak nastavit výchozí a vlastní 
 > [!IMPORTANT]
 > V [prvním scénáři](#scenario-1), který je popsán v tomto tématu, nejprve nastavíte sklad tak, aby používal dřívější funkci konsolidace dodávek. Poté zpřístupníte zásady konsolidace dodávek. Tímto způsobem můžete vyzkoušet, jak scénář upgradu funguje. Pokud chcete použít prostředí s ukázkovými daty pro projití prvního scénáře, nezapínejte tuto funkci dříve, než provedete scénář.
 
-Než budete moci používat funkci *Zásady konsolidace dodávek* , musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než budete moci používat funkci *Zásady konsolidace dodávek*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Konsolidace dodávky*
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Každý scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
+Každý scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scénář 1: Konfigurace výchozích zásad konsolidace dodávek
 
@@ -59,7 +59,7 @@ Když spustíte tento postup, funkce *Zásady konsolidace dodávek* by měla bý
 Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek v prostředí, ve kterém jsou již sklady nakonfigurovány pro konsolidaci mezi objednávkami.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
-1. V seznamu vyhledejte a otevřete požadovaný záznam skladu (například sklad *24* v ukázkových datech **USMF** ).
+1. V seznamu vyhledejte a otevřete požadovaný záznam skladu (například sklad *24* v ukázkových datech **USMF**).
 1. V podokně akcí vyberte **Upravit**.
 1. Na záložce s náhledem **Sklad** nastavte možnost **Konsolidovat dodávku při uvolnění do skladu** na *Ano*.
 1. Opakujte kroky 2 až 4 pro všechny ostatní sklady, kde je vyžadována konsolidace.
@@ -84,7 +84,7 @@ Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodáve
 
 Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek ve zcela novém prostředí.
 
-1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek* , pokud jste ji již nezapnuli. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
+1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek*, pokud jste ji již nezapnuli. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
 1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 
@@ -164,9 +164,9 @@ Použijte správu funkcí pro zapnutí funkce, pokud jste ji ještě nezapnuli, 
 
 ### <a name="create-example-policy-1"></a>Vytvoření vzorové zásady 1
 
-V tomto příkladu vytvoříte zásadu *Zákazník+Způsob* , kterou lze použít pro následující obchodní případ:
+V tomto příkladu vytvoříte zásadu *Zákazník+Způsob*, kterou lze použít pro následující obchodní případ:
 
-- Zásada se bude dotazovat na konkrétní zákaznický účet ( *US-001* ) a konkrétní způsob doručení ( *Airwa-Air* ).
+- Zásada se bude dotazovat na konkrétní zákaznický účet (*US-001*) a konkrétní způsob doručení (*Airwa-Air*).
 - Konsolidace s otevřenými dodávkami je vypnuta.
 - Konsolidace se provádí podle ID objednávky. (Jinými slovy, budou existovat samostatné dodávky na objednávku, sklad atd.)
 
@@ -195,13 +195,13 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Zvolte **OK** a zavřete dialogové okno.
 
 > [!NOTE]
-> Pro tento obchodní případ nebudou řádky objednávky pro zákazníka *US-001* , který používá způsob doručení *Airwa-Air* , konsolidovány napříč objednávkami. Tato zásada je určena k použití v posloupnosti jako první, v případech, kdy jsou dodávky pro všechny ostatní způsoby dodání pro tohoto zákazníka konsolidovány.
+> Pro tento obchodní případ nebudou řádky objednávky pro zákazníka *US-001*, který používá způsob doručení *Airwa-Air*, konsolidovány napříč objednávkami. Tato zásada je určena k použití v posloupnosti jako první, v případech, kdy jsou dodávky pro všechny ostatní způsoby dodání pro tohoto zákazníka konsolidovány.
 
 ### <a name="create-example-policy-2"></a>Vytvoření vzorové zásady 2
 
-V tomto příkladu vytvoříte zásadu *Nebezpečné zboží* , kterou lze použít pro následující obchodní případ:
+V tomto příkladu vytvoříte zásadu *Nebezpečné zboží*, kterou lze použít pro následující obchodní případ:
 
-- Zásada se bude dotazovat na konkrétní kód filtru ( *nebezpečný* ) a konkrétní způsob doručení ( *Airwa-Air* ).
+- Zásada se bude dotazovat na konkrétní kód filtru (*nebezpečný*) a konkrétní způsob doručení (*Airwa-Air*).
 - Konsolidace s otevřenými dodávkami je zapnuta.
 - Konsolidace se provádí napříč objednávkami. (Jinými slovy, budou existovat samostatné dodávky podle účtu, skladu a podobně, ale pouze v rámci skupiny položek, která je určena v dotazu.)
 
@@ -232,11 +232,11 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Zvolte **OK** a zavřete dialogové okno.
 
 > [!NOTE]
-> Pro tento obchodní případ budou všechny řádky objednávek, kde položky mají specifický kód filtru (tedy kód filtru, kde je pole **Kód 4** nastaveno na *Hořlavý* ) konsolidovány s dalšími položkami stejného typu napříč objednávkami. Pokud existuje otevřená dodávka pro stejný účet, sklad a skupinu položek, budou k ní připojeny nové řádky.
+> Pro tento obchodní případ budou všechny řádky objednávek, kde položky mají specifický kód filtru (tedy kód filtru, kde je pole **Kód 4** nastaveno na *Hořlavý*) konsolidovány s dalšími položkami stejného typu napříč objednávkami. Pokud existuje otevřená dodávka pro stejný účet, sklad a skupinu položek, budou k ní připojeny nové řádky.
 
 ### <a name="create-example-policy-3"></a>Vytvoření vzorové zásady 3
 
-V tomto příkladu vytvoříte zásadu *Požadavky zákazníků* , kterou lze použít pro následující obchodní případ:
+V tomto příkladu vytvoříte zásadu *Požadavky zákazníků*, kterou lze použít pro následující obchodní případ:
 
 - Zásada se bude dotazovat na konkrétní zákaznický účet.
 - Konsolidace s otevřenými dodávkami je zapnuta.
@@ -266,11 +266,11 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 
 ### <a name="create-example-policy-4"></a>Vytvoření vzorové zásady 4
 
-V tomto příkladu vytvoříte zásadu *Zákazníci umožňující konsolidaci* , kterou lze použít pro následující obchodní případ:
+V tomto příkladu vytvoříte zásadu *Zákazníci umožňující konsolidaci*, kterou lze použít pro následující obchodní případ:
 
 - Zásady se budou dotazovat na konkrétní fond objednávek, aby bylo možné identifikovat zákazníky, kteří přijímají konsolidované dodávky.
 - Konsolidace s otevřenými dodávkami je vypnuta.
-- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu** ).
+- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu**).
 
 - Pravidlo na prodejní objednávce můžete přepsat výběrem jiného fondu objednávek.
 
@@ -302,11 +302,11 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 
 ### <a name="create-example-policy-5"></a>Vytvoření vzorové zásady 5
 
-V tomto příkladu vytvoříte zásadu *Sklady umožňující konsolidaci* , kterou lze použít pro následující obchodní případ:
+V tomto příkladu vytvoříte zásadu *Sklady umožňující konsolidaci*, kterou lze použít pro následující obchodní případ:
 
 - Zásady se budou dotazovat na konkrétní fond objednávek, aby bylo možné identifikovat sklady, které mohou konsolidovat dodávky.
 - Konsolidace s otevřenými dodávkami je vypnuta.
-- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu** ).
+- Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu**).
 
 Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které jste vytvořili ve [scénáři 1](#scenario-1). Podobné zásady však můžete vytvořit také ručně pomocí těchto kroků.
 

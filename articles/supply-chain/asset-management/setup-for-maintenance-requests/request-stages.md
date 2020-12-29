@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5849e3a8c3c619916c718032579d4fe6444fa49b
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424109"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stavy životního cyklu požadavku na údržbu
 
@@ -32,7 +32,7 @@ ms.locfileid: "3889114"
  
 
 
-Stavy životního cyklu požadavků údržby definují fáze, kterými může požadavek projít. Příklady zahrnují **Vytvořené**, **Aktivní**a **Ukončené**. Když je požadavek na údržbu převeden na pracovní příkaz, stav životního cyklu požadavku údržby by měl být aktualizován na **Ukončený** nebo **Uzavřený**, aby bylo možné označit, že požadavek na údržbu již není aktivní. Na stránce seznamu **Všechny požadavky na údržbu** můžete vidět všechny požadavky na údržbu bez ohledu na jejich stav životního cyklu.
+Stavy životního cyklu požadavků údržby definují fáze, kterými může požadavek projít. Příklady zahrnují **Vytvořené**, **Aktivní** a **Ukončené**. Když je požadavek na údržbu převeden na pracovní příkaz, stav životního cyklu požadavku údržby by měl být aktualizován na **Ukončený** nebo **Uzavřený**, aby bylo možné označit, že požadavek na údržbu již není aktivní. Na stránce seznamu **Všechny požadavky na údržbu** můžete vidět všechny požadavky na údržbu bez ohledu na jejich stav životního cyklu.
 
 ## <a name="set-up-maintenance-request-lifecycle-states"></a>Nastavit stavy životního cyklu požadavku na údržbu
 

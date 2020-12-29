@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012460"
+ms.locfileid: "4424122"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
 
@@ -45,8 +45,8 @@ Chcete-li nastavit konfiguraci a filtry úloh pro zařízení, přihlaste se na 
 1. Vyberte jeden nebo více filtrů, které chcete použít na aktuální zařízení. Tyto filtry pomohou zajistit, aby se na zařízení zobrazovaly pouze relevantní úlohy. Chcete-li nastavit filtr, vyberte typ filtru a otevřete seznam hodnot a poté vyberte hodnotu, podle které chcete filtrovat. K dispozici jsou následující filtry:
 
     - **Výrobní jednotka** – Tento filtr je filtrem nejvyšší úrovně. Obvykle odkazuje na velkou pracovní oblast, která obsahuje několik skupin prostředků a jednotlivé prostředky.
-    - **Skupina prostředků** – Tento filtr je filtrem střední úrovně. Obvykle odkazuje na kolekci souvisejících prostředků v omezené oblasti pracovního prostoru. Pokud nejprve vyberete filtr **Výrobní jednotka** , seznam skupin prostředků zobrazí pouze skupiny z této jednotky. Jinak zobrazí všechny dostupné skupiny prostředků.
-    - **Prostředek** – Tento filtr je nejkonkrétnějším filtrem. Obvykle odkazuje na konkrétní stroj nebo jiný samostatný prostředek. Pokud nejprve vyberete filtr **Skupina prostředků** nebo **Výrobní jednotka** , seznam prostředků zobrazí pouze prostředky z této skupiny nebo jednotky. Jinak zobrazí všechny dostupné prostředky.
+    - **Skupina prostředků** – Tento filtr je filtrem střední úrovně. Obvykle odkazuje na kolekci souvisejících prostředků v omezené oblasti pracovního prostoru. Pokud nejprve vyberete filtr **Výrobní jednotka**, seznam skupin prostředků zobrazí pouze skupiny z této jednotky. Jinak zobrazí všechny dostupné skupiny prostředků.
+    - **Prostředek** – Tento filtr je nejkonkrétnějším filtrem. Obvykle odkazuje na konkrétní stroj nebo jiný samostatný prostředek. Pokud nejprve vyberete filtr **Skupina prostředků** nebo **Výrobní jednotka**, seznam prostředků zobrazí pouze prostředky z této skupiny nebo jednotky. Jinak zobrazí všechny dostupné prostředky.
 
 1. Vyberte **OK**.
 1. Zobrazí se přihlašovací stránka a vaše zařízení je připraveno k použití.

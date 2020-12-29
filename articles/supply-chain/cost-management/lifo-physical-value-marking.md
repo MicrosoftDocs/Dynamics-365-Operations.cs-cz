@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2c6f59f5bb0d19c32e07b15141c12066948b7a6f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423867"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>Metoda LIFO s fyzickou hodnotou a označením
 
@@ -54,7 +54,7 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 -   5b. Finanční výdej 1 kusu za 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
 -   6. Je provedena uzávěrka skladu. Podle metody LIFO bude poslední finančně zaúčtovaný výdej vyrovnán posledním finančně zaúčtovaným příjmem. K transakci výdeje bude vytvořena úprava ve výši 10 Kč.
 
-Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. Následující obrázky ukazují účinky skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu** . 
+Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. Následující obrázky ukazují účinky skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
 
 ![Metoda LIFO bez funkce Zahrnovat fyzickou hodnotu](./media/lifowithoutincludephysicalvalue.gif) 
 
@@ -67,12 +67,12 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="lifo-with-the-include-physical-value-option"></a>Metoda LIFO s možností Zahrnovat fyzickou hodnotu
-Pokud zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupiny modelů zboží** , systém pro výpočet průběžné průměrné ceny použije transakce fyzického i finančního příjmu. V případě potřeby budou v systému také provedeny úpravy fyzicky aktualizované transakce výdeje. Pokud je zaškrtnutí políčka **Zahrnovat fyzickou hodnotu** odstraněno, budou při uzávěrce skladu s použitím skladového modelu LIFO provedena vyrovnání pouze pro finančně aktualizované transakce. 
+Pokud zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupiny modelů zboží**, systém pro výpočet průběžné průměrné ceny použije transakce fyzického i finančního příjmu. V případě potřeby budou v systému také provedeny úpravy fyzicky aktualizované transakce výdeje. Pokud je zaškrtnutí políčka **Zahrnovat fyzickou hodnotu** odstraněno, budou při uzávěrce skladu s použitím skladového modelu LIFO provedena vyrovnání pouze pro finančně aktualizované transakce. 
 
 Následující obrázek znázorňuje tyto transakce:
 
@@ -90,7 +90,7 @@ Následující obrázek znázorňuje tyto transakce:
 
 Transakce 6a bude upravena podle příjmové transakce 4b. Systém tyto transakce nevyrovná, protože příjem je zaúčtován pouze fyzicky, ale nikoli finančně. Místo toho bude k transakci fyzického výdeje zaúčtována úprava ve výši 8,75 Kč. Transakce 5b bude opravena podle transakce fyzického příjmu 3a. Systém tyto transakce nevyrovná, protože ani jedna není finančně zaúčtované. Místo toho bude k této transakci výdeje zaúčtována úprava ve výši -3,75 Kč. Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 20,00 Kč. 
 
-Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu** . 
+Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
 
 ![Metoda LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifowithincludephysicalvalue.gif) 
 
@@ -103,8 +103,8 @@ Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii 
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="lifo-with-marking"></a>Metoda LIFO s označením
@@ -114,7 +114,7 @@ Přitom si musíte být jisti, že pro fakturu této prodejní objednávky se n�
 
 I před provedením uzávěrky skladu lze tyto dvě transakce vzájemně propojit. 
 
-Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky** . Můžete zobrazit otevřené transakce příjmu na stránce **Označení** . 
+Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky**. Můžete zobrazit otevřené transakce příjmu na stránce **Označení**. 
 
 Po zaúčtování transakce je možné také označit transakci výdeje s příjmem. Můžete spárovat nebo označit transakci výdeje pro transakci otevřených příjmů u naskladněné položky z deníku úpravy zaúčtované inventury. 
 
@@ -147,7 +147,7 @@ Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto s
 - Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
-- Každá svislá šipka je označena průběžným identifikátorem (například *1a* ). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
-- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu* .
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 

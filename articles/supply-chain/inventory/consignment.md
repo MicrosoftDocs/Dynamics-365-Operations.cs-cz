@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018369"
+ms.locfileid: "4424166"
 ---
 # <a name="set-up-consignment"></a>Nastavení zásilky
 
@@ -60,7 +60,7 @@ Dodavatel US-104 můžete sledovat aktualizace pomocí stránky **Zásoby zásil
 ## <a name="consignment-replenishment-orders"></a>Zakázky na doplnění stavu zásob dodávky
 Objednávka doplňovací zásilky je dokument, který se používá pro zažádání a sledovat skladového množství produktů, které má dodavatel v úmyslu dodat do určitého data vytvořením transakcí objednaných zásob. Obvykle se to bude opírat o prognózy a skutečnou poptávku specifických produktů. Zásoby, které má získat oproti objednávce doplňující zásilky, zůstávají ve vlastnictví dodavatele. Zaznamenává se pouze změna vlastnictví produktů souvisejících s fyzickým příjmem, a proto nedochází k žádné aktualizaci transakcí hlavní knihy. 
 
-Dimenze **Vlastník** se používá k oddělení informací o tom, které zásoby vlastní dodavatel a které vlastní přijímající právnická osoba. Řádky objednávky doplnění stavu zásob dodávky mají stav **Otevřená objednávka** , dokud nedojde k přijetí nebo zrušení úplného množství řádků. Až dojde k přijetí nebo zrušení úplného množství, stav se změní na **Dokončeno**. Fyzické zásoby na skladě související s objednávkou doplňovací dodávky lze zaznamenat pomocí registračního procesu a také procesu aktualizace příjemky produktu. Registraci lze provést jako součást procesu doručení položky, nebo lze ručně aktualizovat řádky objednávky. Při procesu aktualizace příjemky produktu se provádí záznam do deníku příjemek produktů, který pro dodavatele slouží k potvrzení o přijetí zboží.
+Dimenze **Vlastník** se používá k oddělení informací o tom, které zásoby vlastní dodavatel a které vlastní přijímající právnická osoba. Řádky objednávky doplnění stavu zásob dodávky mají stav **Otevřená objednávka**, dokud nedojde k přijetí nebo zrušení úplného množství řádků. Až dojde k přijetí nebo zrušení úplného množství, stav se změní na **Dokončeno**. Fyzické zásoby na skladě související s objednávkou doplňovací dodávky lze zaznamenat pomocí registračního procesu a také procesu aktualizace příjemky produktu. Registraci lze provést jako součást procesu doručení položky, nebo lze ručně aktualizovat řádky objednávky. Při procesu aktualizace příjemky produktu se provádí záznam do deníku příjemek produktů, který pro dodavatele slouží k potvrzení o přijetí zboží.
 
 [![Zakázka na doplnění stavu zásob dodávky](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -82,7 +82,7 @@ Rozhraní dodavatelské spolupráce má tři stránky související s procesem p
 -   **Zásoby dodávky na skladě** - zobrazí informace o dodávce položky, které mají dle očekávání dorazit a položky, které jsou již fyzicky k dispozici u zákazníka.
 
 ## <a name="inventory-owners"></a>Vlastníci zásob
-Aby bylo možné zaznamenat fyzickou zásilku zásob, je třeba definovat dodavatele vlastníka. To se provádí na stránce **Vlastník zásob**. Při výběru **Účet dodavatele** se generují výchozí hodnoty pro pole **Název** a **Vlastník**. Hodnota v poli **Vlastník** se zobrazí dodavateli, takže ji můžete změnit v případě, že název účtu dodavatele se špatně rozpoznává externím uživatelům. Je možné upravit pole **Vlastník** , ale pouze do okamžiku, když ukládáte záznam **Vlastník zásob**. Pole **Název** se vyplňuje s názvem strany, k níž je přidružen účet dodavatele, a nemůže být změněno.
+Aby bylo možné zaznamenat fyzickou zásilku zásob, je třeba definovat dodavatele vlastníka. To se provádí na stránce **Vlastník zásob**. Při výběru **Účet dodavatele** se generují výchozí hodnoty pro pole **Název** a **Vlastník**. Hodnota v poli **Vlastník** se zobrazí dodavateli, takže ji můžete změnit v případě, že název účtu dodavatele se špatně rozpoznává externím uživatelům. Je možné upravit pole **Vlastník**, ale pouze do okamžiku, když ukládáte záznam **Vlastník zásob**. Pole **Název** se vyplňuje s názvem strany, k níž je přidružen účet dodavatele, a nemůže být změněno.
 
 [![vlastníci-zásob](./media/inventory-owners.png)](./media/inventory-owners.png)
 
@@ -92,7 +92,7 @@ Položky, které chcete použít v procesech dodávky, musí být přidruženy k
 [![skupina-sledovací-dimenze](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Deník změn vlastnictví zásob
-Deník **Změny vlastnictví zásob** se používá k zaznamenání k přesunu vlastnictví dodávek zásob od dodavatele na stávající právnickou osobu, která ho využívá. Stejně jako jakýkoliv deník zásob musí být označen názvem deníku zásob. Tyto názvy jsou vytvářeny na stránce **Názvy deníků zásob** , kde **Typ deníku** musí být nastaven na **Změny vlastnictví**.
+Deník **Změny vlastnictví zásob** se používá k zaznamenání k přesunu vlastnictví dodávek zásob od dodavatele na stávající právnickou osobu, která ho využívá. Stejně jako jakýkoliv deník zásob musí být označen názvem deníku zásob. Tyto názvy jsou vytvářeny na stránce **Názvy deníků zásob**, kde **Typ deníku** musí být nastaven na **Změny vlastnictví**.
 
 [![Deník-změn-vlastnictví-zásob](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 

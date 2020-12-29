@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 141975e0a3218b18b67d22e04f6f6e8da332ed3d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975673"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423558"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>Snížení počtu dnů u poplatků za odběr 
 
@@ -34,13 +34,13 @@ Chcete-li omezit počet dní pro některý existující poplatek předplatného,
 
 ## <a name="reduce-the-days-on-a-subscription-fee"></a>Omezení počtu dní pro poplatek předplatného
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky** . Vyberte předplatné služby a v podokně akcí klepněte na možnost **Poplatky za předplatné**
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky**. Vyberte předplatné služby a v podokně akcí klepněte na možnost **Poplatky za předplatné**
 
-2.  V poli **Typ předplatného** vyberte **Dny omezení** .
+2.  V poli **Typ předplatného** vyberte **Dny omezení**.
 
-3.  V poli **Od data** a **Do data** definujte interval kalendářních dat pro poplatek předplatného, který chcete z období pro poplatek předplatného odebrat, a poté klepněte na volbu **OK** .
+3.  V poli **Od data** a **Do data** definujte interval kalendářních dat pro poplatek předplatného, který chcete z období pro poplatek předplatného odebrat, a poté klepněte na volbu **OK**.
 
-Chcete-li zobrazit vytvořenou transakci, klepněte ve formuláři **Předplatné** na volbu **Poplatky za předplatné** .
+Chcete-li zobrazit vytvořenou transakci, klepněte ve formuláři **Předplatné** na volbu **Poplatky za předplatné**.
 
 ## <a name="example"></a>Příklad
 

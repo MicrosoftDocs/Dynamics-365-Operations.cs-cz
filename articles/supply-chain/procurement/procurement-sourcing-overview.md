@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018875"
+ms.locfileid: "4424140"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Přehled zásobování a zdrojů
 
@@ -35,15 +35,15 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifikace potřeby produktů a služeb
 
-Potřeba produktů nebo služeb může vzniknout ze *žádanek* , například když zaměstnanec vyžaduje produkt. *Katalogy produktů* mohou být nastaveny na průvodce výběrem dostupných produktů, ze kterých lze vybírat nebo požadavky lze vytvořit pro produkty, které nebyly dosud dostupné v katalogu, umožňující nákupnímu oddělení zvážit, jak může být produkt dodán.  
+Potřeba produktů nebo služeb může vzniknout ze *žádanek*, například když zaměstnanec vyžaduje produkt. *Katalogy produktů* mohou být nastaveny na průvodce výběrem dostupných produktů, ze kterých lze vybírat nebo požadavky lze vytvořit pro produkty, které nebyly dosud dostupné v katalogu, umožňující nákupnímu oddělení zvážit, jak může být produkt dodán.  
 
 *Omezení útrat* lze použít k omezení útrat žádanek a *nákupnímu workflow* přidá možnost požadovat schválení před objednáváním. V případě potřeby je také možné zadat přidělení finančních prostředků rozpočtu.  
 
 Oddělení zásobování identifikuje dodavatelé pro požadované produkty a služby, a tento výpočet může zahrnovat *požadavek na nabídku* odesílaný několika potenciálním dodavatelům. Je možné sdílet specifikace produktu, které jsou požadovány a potenciální dodavatelé mohou zobrazit, zda mohou dodat produkt, který je v souladu s jejich požadavky. Dodavatelé vracejí své nabídky, které jsou pak kontrolovány oddělením zásobování, předtím, než vyberou dodavatele, kteří je budou zásobovat.  
 
-Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku* dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku. Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky. Pokud jsou dodavatelé nastaveni k používání **Portálu pro dodavatele** , funkce nákupní žádanky je zakázána. Namísto toho je objednávka sdílena v **dodavatelském portálu** , a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.  
+Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku* dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku. Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky. Pokud jsou dodavatelé nastaveni k používání **Portálu pro dodavatele**, funkce nákupní žádanky je zakázána. Namísto toho je objednávka sdílena v **dodavatelském portálu**, a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.  
 
-*Katalogy dodavatelů* slouží ke shromažďování informací o sortimentu produktů, které dodavatelé mohou dodávat. Dodavatele mohou publikovat vlastní katalog, a tak je možné katalog udržovat lépe aktuální. K produktu je možné připojit *seznam schválených dodavatelů* , a díky tomu je možné dodavateli pomoci s výběrem, když jsou otevřené nové nákupní objednávky a zabránit použití nežádoucích dodavatelů.
+*Katalogy dodavatelů* slouží ke shromažďování informací o sortimentu produktů, které dodavatelé mohou dodávat. Dodavatele mohou publikovat vlastní katalog, a tak je možné katalog udržovat lépe aktuální. K produktu je možné připojit *seznam schválených dodavatelů*, a díky tomu je možné dodavateli pomoci s výběrem, když jsou otevřené nové nákupní objednávky a zabránit použití nežádoucích dodavatelů.
 
 ## <a name="procurement"></a>Zásobování
 
@@ -66,7 +66,7 @@ Ceny a slevy obsahují informace o cenách, slevách a podmínkách rabatu, kter
 
 ### <a name="delivery-options"></a>Možnosti dodání
 
-K dispozici jsou různé možnosti pro proces dodání přidružený k nákupní objednávce. Objednané produkty, lze rozdělit na *plány dodání* , kde části objednaného množství lze plánovat k dodání různého data. Dodávky mohou rovněž zahrnovat *přímou dodávku* zahájenou z prodejní objednávky, která zautomatizuje generování dodacího listu na prodejní objednávce v okamžiku zjištění příjmu produktu na nákupní objednávce. Nákupní objednávky mohou být součástí *dodavatelsko-odběratelského řetězce* , někdy označovaného také jako mezipodnikové nákupní objednávky, kde jsou objednány produkty z odpovídající mezipodnikové prodejní objednávky. V takovém případě jsou některé kroky mezi dvěma souvisejícími mezipodnikovými objednávkami automatické.
+K dispozici jsou různé možnosti pro proces dodání přidružený k nákupní objednávce. Objednané produkty, lze rozdělit na *plány dodání*, kde části objednaného množství lze plánovat k dodání různého data. Dodávky mohou rovněž zahrnovat *přímou dodávku* zahájenou z prodejní objednávky, která zautomatizuje generování dodacího listu na prodejní objednávce v okamžiku zjištění příjmu produktu na nákupní objednávce. Nákupní objednávky mohou být součástí *dodavatelsko-odběratelského řetězce*, někdy označovaného také jako mezipodnikové nákupní objednávky, kde jsou objednány produkty z odpovídající mezipodnikové prodejní objednávky. V takovém případě jsou některé kroky mezi dvěma souvisejícími mezipodnikovými objednávkami automatické.
 
 ### <a name="supplementary-items"></a>Doplňkové položky
 
@@ -78,7 +78,7 @@ Náklady mohou být přiřazeny k nákupní objednávce. K tomu dochází automa
 
 ## <a name="product-receipt-and-invoicing"></a>Příjem produktu a fakturace
 
-Nákupní objednávky, které obsahují fyzické produkty běžně vyžadují *registrace doručení* , ke které má dojít v rámci skladu, a poté je registrována pro objednávku *příjemka produktu*. Nákupní objednávky s produkty, které splňují požadavky mohou být nakonfigurovány tak, aby zaměstnanci, kteří vyžadují produkty rovněž museli poskytnout *potvrzení o přijetí*.  
+Nákupní objednávky, které obsahují fyzické produkty běžně vyžadují *registrace doručení*, ke které má dojít v rámci skladu, a poté je registrována pro objednávku *příjemka produktu*. Nákupní objednávky s produkty, které splňují požadavky mohou být nakonfigurovány tak, aby zaměstnanci, kteří vyžadují produkty rovněž museli poskytnout *potvrzení o přijetí*.  
 
 Některé nákupní objednávky zahrnují produkty, které obsahují služby a jiné nefyzické produkty, jejichž příjem ve skladu není nutné. Produkty, které mohou být vytvořeny jako služby nebo *kategorie zásobování* lze přímo použít v nákupní objednávce pro takové objednávky. S těmito objednávkami je někdy vynecháno účtování příjemky produktu a objednávka je fakturována přímo, nebo také se provádí registrace příjemky produktu na nákupní objednávce bez jakékoli předchozí registrace doručení.  
 
@@ -92,4 +92,4 @@ Fakturované nákupní objednávky zaznamená pasiva na účet dodavatele v rám
 
 ## <a name="vendor-performance"></a>Výkonnost dodavatele
 
-Přehled nákupu a výkon je podporován prostřednictvím *zásobování a sestav závazků* , zahrnující analýzy výdajů a analýzy výkonnosti dodavatelů.
+Přehled nákupu a výkon je podporován prostřednictvím *zásobování a sestav závazků*, zahrnující analýzy výdajů a analýzy výkonnosti dodavatelů.

@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978694"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423643"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Vytvoření předplatného služby z projektu    
 
 [!include [banner](../includes/banner.md)]
 
 
-Předplatné servisu můžete vytvořit z projektu v **řízení a účetnictví projektu** .
+Předplatné servisu můžete vytvořit z projektu v **řízení a účetnictví projektu**.
 
-1.  Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty** . Otevřete projekt, pro který chcete vytvořit předplatné.
+1.  Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**. Otevřete projekt, pro který chcete vytvořit předplatné.
 
-2.  Ve formuláři **projekty** v **podokně akcí** na kartě **Správa** klikněte na **Servis** \> **Předplatné servisu** .
+2.  Ve formuláři **projekty** v **podokně akcí** na kartě **Správa** klikněte na **Servis** \> **Předplatné servisu**.
 
 3.  Ve formuláři **předplatné** v poli **předplatné servisu** zadejte jedinečné identifikační číslo. Číslo projektu je automaticky zadáno do předplatného pro vybraný projekt.
 

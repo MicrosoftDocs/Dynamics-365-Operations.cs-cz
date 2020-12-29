@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980983"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423660"
 ---
 # <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
 
@@ -40,32 +40,32 @@ Můžete vytvářet překlady následujících informací souvisejících s prod
 -   Popisy, popisné názvy a text nápovědy hodnot atributů produktu.
 -   Názvy a popisy hodnot dimenze produktu
 
-Informace související s produkty můžete překládat do jakéhokoli jazyka, který je k dispozici ze stránky **Překlad textu** . Další informace naleznete v následující části **Vytvoření překladů pro informace související s produktem** .
+Informace související s produkty můžete překládat do jakéhokoli jazyka, který je k dispozici ze stránky **Překlad textu**. Další informace naleznete v následující části **Vytvoření překladů pro informace související s produktem**.
 
 ## <a name="where-can-i-view-the-translated-information"></a>Kde se můžu podívat na přeložené informace?
 Překlad informací o produktu můžete zobrazit v jakémkoli externím zdrojovém dokumentu, jako je faktura, která používá jazyk, kde jsou k dispozici překlady.
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Další informace naleznete v tématu Vytvoření překladů pro informace související s produktem.
 Při vytváření překladů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty** .
-2.  Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady** .
-3.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK** .
-4.  Ve skupině **Přeložený text** Zadejte překlad do polí **Popis** d **Název produktu** .
+1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+2.  Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady**.
+3.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
+4.  Ve skupině **Přeložený text** Zadejte překlad do polí **Popis** d **Název produktu**.
 
 Při vytváření překladů atributů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty** .
-2.  Ve skupinovém rámečku **Nastavení** klepněte na tlačítko **Atributy** a klepněte na tlačítko **Atributy** .
-3.  Na stránce **Atributy** klepněte na **Přeložit** .
-4.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK** .
-5.  Ve skupině **Přeložený text** napište překlady do polí **Popis** , **Popisný název** a **Text nápovědy** .
+1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+2.  Ve skupinovém rámečku **Nastavení** klepněte na tlačítko **Atributy** a klepněte na tlačítko **Atributy**.
+3.  Na stránce **Atributy** klepněte na **Přeložit**.
+4.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
+5.  Ve skupině **Přeložený text** napište překlady do polí **Popis**, **Popisný název** a **Text nápovědy**.
 
 Při vytváření překladů hodnot dimenze produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty** .
-2.  Vyberte produkt a klepněte na možnost **Rozměry produktu** .
-3.  Vyberte jeden z odkazů pro dimenze produktu: **Konfigurace** , **Velikosti** , **Barvy** nebo **Styl** .
-4.  Vyberte hodnotu dimenze a poté klikněte na položku **Přeložit** .
-5.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK** .
-6.  Ve skupině **Přeložený text** zadejte překlady do polí **Název** a **Popis** .
+1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+2.  Vyberte produkt a klepněte na možnost **Rozměry produktu**.
+3.  Vyberte jeden z odkazů pro dimenze produktu: **Konfigurace**, **Velikosti**, **Barvy** nebo **Styl**.
+4.  Vyberte hodnotu dimenze a poté klikněte na položku **Přeložit**.
+5.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
+6.  Ve skupině **Přeložený text** zadejte překlady do polí **Název** a **Popis**.
 
 ## <a name="can-the-names-of-product-variants-be-translated"></a>Je možné přeložit názvy variant produktu?
 Varianty produktu, které jsou založené na dimenzích vydaného produktu. Názvy variant produktu jsou založeny na kombinaci hodnot dimenzí. Pokud jsou přeloženy hodnoty dimenze, které jsou přidruženy k variantě produktu, název varianty produktu se zobrazí v přeloženou verzi.  
@@ -78,9 +78,9 @@ Produkt je tričko dodávané v různých velikostech a barvách a názvy varian
 -   Hodnoty velikosti dimenze: malá, střední, velká
 -   Hodnoty barvy dimenze: červená, zelená, černá
 
-Název varianty produktu, která je založená na hodnotách dimenze Malá a Červená, je **\#3:Malá:Červená** .  
+Název varianty produktu, která je založená na hodnotách dimenze Malá a Červená, je **\#3:Malá:Červená**.  
 
-Zákazník chce koupit nějaká malá červená trička a název tričko musí být na faktuře ve francouzštině. Přeložíte hodnoty dimenze Malá a Červená do francouzštiny a název varianty produktu je **\#3:Petit:Rouge** .
+Zákazník chce koupit nějaká malá červená trička a název tričko musí být na faktuře ve francouzštině. Přeložíte hodnoty dimenze Malá a Červená do francouzštiny a název varianty produktu je **\#3:Petit:Rouge**.
 <table>
 <colgroup>
 <col width="100%" />
@@ -112,14 +112,14 @@ Společnost vyrábí trička v různých stylech a všechny jsou dostupné ve ve
 
 Hodnota dimenze přiřazená k produktu prostřednictvím skupiny variant dimenzí musí být spravovaná ze skupiny variant produktu.   
 Pokud chcete vytvořit skupinu pro hodnotu dimenze, postupujte takto:
-1.  Klepněte na tlačítko **Řízení informací o produktech** &gt; **Nastavení** &gt; **Skupiny variant** .
-2.  Vyberte **Skupiny** **velikostí** , **Skupiny barev** nebo **Skupiny stylů** .
-3.  Klepněte na tlačítko **Nový** a poté zadejte název skupiny do pole **Skupina** **velikostí** , **Skupina barev** nebo **Skupina stylů** . Kliknutím na **Velikosti** , **Barvy** nebo **Styly** vytvořte řádky pro skupiny.
-4.  Na stránce řádků **Skupina** **velikostí** , **Řádky** **skupiny** **barev** nebo **Řádky skupiny stylů** klikněte na **Nový** a vytvořte velikosti, barvy a styly skupin.
+1.  Klepněte na tlačítko **Řízení informací o produktech** &gt; **Nastavení** &gt; **Skupiny variant**.
+2.  Vyberte **Skupiny** **velikostí**, **Skupiny barev** nebo **Skupiny stylů**.
+3.  Klepněte na tlačítko **Nový** a poté zadejte název skupiny do pole **Skupina** **velikostí**, **Skupina barev** nebo **Skupina stylů**. Kliknutím na **Velikosti**, **Barvy** nebo **Styly** vytvořte řádky pro skupiny.
+4.  Na stránce řádků **Skupina** **velikostí**, **Řádky** **skupiny** **barev** nebo **Řádky skupiny stylů** klikněte na **Nový** a vytvořte velikosti, barvy a styly skupin.
 
 Pokud chcete spravovat překlady hodnot v určité skupině hodnot dimenze, postupujte takto:
-1.  Postupujte podle pokynů v předchozím postupu pro vytvoření skupiny hodnot dimenzí k otevření stránky **Řádky skupiny velikostí** , **Řádky skupiny barev** , nebo **Řádky skupiny stylů** .
-2.  Klikněte na **Překlad textu** . Na stránce **Překlad textu** ve skupině **Přeložený text** zadejte překlady do pole **Název** a **Popis** .
+1.  Postupujte podle pokynů v předchozím postupu pro vytvoření skupiny hodnot dimenzí k otevření stránky **Řádky skupiny velikostí**, **Řádky skupiny barev**, nebo **Řádky skupiny stylů**.
+2.  Klikněte na **Překlad textu**. Na stránce **Překlad textu** ve skupině **Přeložený text** zadejte překlady do pole **Název** a **Popis**.
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Kdy lze spravovat překlady informací souvisejících s produktem?
 Překlady informací souvisejících s produktem lze spravovat kdykoli. Při aktualizaci překladů pro hodnotu dimenze, která je přidružena k produktu, se aktualizují informace o produktu, bez ohledu na to, zda má produkt transakce.

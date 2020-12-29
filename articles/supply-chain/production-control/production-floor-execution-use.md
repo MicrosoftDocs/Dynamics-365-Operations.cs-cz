@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012458"
+ms.locfileid: "4424123"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -33,7 +33,7 @@ Rozhraní pro provádění výrobního provozu je optimalizováno pro dotykovou 
 
 Než mohou pracovníci začít zařízení používat, musí jej připravit supervizor nebo technický personál a otevřít správnou stránku v Dynamics 365 Supply Chain Management. Další informace o nastavení zařízení najdete v části [Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu](production-floor-execution-setup.md).
 
-Po přípravě zařízení se na něm zobrazí přihlašovací stránka. Tato stránka zobrazuje informace o stavu úloh pro místní pracovní buňku. Tyto informace jsou pravidelně aktualizovány. Na tuto stránku se pracovníci přihlásí pomocí ID znaku. Ačkoli pracovníci nemusí mít uživatelský účet pro Supply Chain Management, musí mít účet *časově registrovaný pracovník* , který mohou použít při přihlášení.
+Po přípravě zařízení se na něm zobrazí přihlašovací stránka. Tato stránka zobrazuje informace o stavu úloh pro místní pracovní buňku. Tyto informace jsou pravidelně aktualizovány. Na tuto stránku se pracovníci přihlásí pomocí ID znaku. Ačkoli pracovníci nemusí mít uživatelský účet pro Supply Chain Management, musí mít účet *časově registrovaný pracovník*, který mohou použít při přihlášení.
 
 ![Přihlašovací stránka k rozhraní pro provádění výrobního provozu](media/pfei-sign-in-page.png "Přihlašovací stránka k rozhraní pro provádění výrobního provozu")
 
@@ -41,7 +41,7 @@ Zbývající části tohoto tématu popisují, jak pracovníci pracují s rozhra
 
 ## <a name="all-jobs-tab"></a>Karta Všechny úlohy
 
-Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno* , *Zastaveno* nebo *Zahájeno*.
+Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*.
 
 ![Karta Všechny úlohy](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
 
@@ -81,17 +81,17 @@ Pracovníci zahájí výrobní úlohu výběrem úlohy na kartě **Všechny úlo
 
 Pracovníci v dialogovém okně **Zahájení úlohy** potvrdí množství výroby a poté zahájí úlohu. Pracovníci mohou upravit množství výběrem pole **Množství** a poté pomocí zobrazené numerické klávesnice. Pracovníci pak volbou **Zahájit** začnou práci na úloze. Dialogové okno **Zahájení úlohy** se zavře a úloha se přidá na kartu **Aktivní úlohy**.
 
-Pracovníci mohou zahájit úlohu v jakémkoli stavu. Když pracovník zahájí úlohu ve stavu *Nezahájeno* , pole **Množství** v dialogovém okně **Zahájení úlohy** zpočátku zobrazuje celé množství. Když pracovník zahájí úlohu ve stavu *Zahájeno* nebo *Zastaveno* , pole **Množství** zpočátku zobrazuje zbývající množství.
+Pracovníci mohou zahájit úlohu v jakémkoli stavu. Když pracovník zahájí úlohu ve stavu *Nezahájeno*, pole **Množství** v dialogovém okně **Zahájení úlohy** zpočátku zobrazuje celé množství. Když pracovník zahájí úlohu ve stavu *Zahájeno* nebo *Zastaveno*, pole **Množství** zpočátku zobrazuje zbývající množství.
 
 ## <a name="reporting-good-quantities"></a>Hlášení množství zboží
 
-Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat množství zboží, které bylo vyprodukováno, výběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit průběh**. Pak v dialogovém okně **Hlášení průběhu** pracovník zadá množství zboží pomocí numerické klávesnice. Ve výchozím nastavení je množství prázdné. Po zadání množství může pracovník aktualizovat stav úlohy na *Probíhá* , *Zastaveno* nebo *Dokončeno*.
+Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat množství zboží, které bylo vyprodukováno, výběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit průběh**. Pak v dialogovém okně **Hlášení průběhu** pracovník zadá množství zboží pomocí numerické klávesnice. Ve výchozím nastavení je množství prázdné. Po zadání množství může pracovník aktualizovat stav úlohy na *Probíhá*, *Zastaveno* nebo *Dokončeno*.
 
 ![Dialogové okno Hlášení průběhu](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
 
 ## <a name="reporting-scrap"></a>Hlášení odpadu
 
-Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod ( *Žádný* , *Stroj* , *Operátor* nebo *Materiál* ).
+Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod (*Žádný*, *Stroj*, *Operátor* nebo *Materiál*).
 
 ![Dialogové okno Hlášení odpadu](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
 
@@ -119,8 +119,8 @@ Nepřímé aktivity přímo nesouvisejí s výrobní zakázkou. Nepřímé aktiv
 
 Například Shannon, pracovnice ve společnosti Contoso, se chce zúčastnit schůzky společnosti a schůzky jsou považovány za nepřímou aktivitu. Platí jeden z následujících dvou scénářů:
 
-- **Shannon pracuje na jedné nebo více aktivních úlohách.** Shannon vybere možnost **Aktivita** , vyhledá aktivitu (schůzku) a potvrdí její výběr. Zpráva, která se zobrazí, ji informuje, že má probíhající úlohy. Ve zprávě si Shannon může vybrat, zda dokončí nebo zastaví úlohy, na kterých pracuje, než půjde na schůzku.
-- **Shannon nemá žádné aktivní úlohy.** Shannon vybere možnost **Aktivita** , vyhledá aktivitu (schůzku) a potvrdí její výběr. Nyní je registrována jako účastnice schůzky.
+- **Shannon pracuje na jedné nebo více aktivních úlohách.** Shannon vybere možnost **Aktivita**, vyhledá aktivitu (schůzku) a potvrdí její výběr. Zpráva, která se zobrazí, ji informuje, že má probíhající úlohy. Ve zprávě si Shannon může vybrat, zda dokončí nebo zastaví úlohy, na kterých pracuje, než půjde na schůzku.
+- **Shannon nemá žádné aktivní úlohy.** Shannon vybere možnost **Aktivita**, vyhledá aktivitu (schůzku) a potvrdí její výběr. Nyní je registrována jako účastnice schůzky.
 
 V obou scénářích poté, co Shannon potvrdí svůj výběr, přejde na přihlašovací stránku nebo na stránku, která na ni počká, aby potvrdila, že se vrátila ze své nepřímé aktivity. Stránka, která se zobrazí, závisí na konfiguraci rozhraní pro provádění výrobního provozu. (Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).)
 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424059"
 ---
 # <a name="coverage-settings"></a>Nastavení distponibility
 
@@ -36,19 +36,19 @@ Existuje několik způsobů, jak zadat nastavení disponibility:
 
 - Nastavte disponibilitu skupiny.
 
-    Můžete vytvořit skupinu disponibility, která obsahuje nastavení pro všechny produkty spojené s touto skupinou disponibility. Přejděte na **Hlavní plánování &gt; Nastavení &gt; Disponibilita &gt; Skupiny disponibility** a vytvořte tak skupinu disponibility. Můžete propojit skupinu disponibility s produktem. Pokud je odkaz na konkrétní pracoviště, sklad nebo dimenze produktu, použijte pole **Skupina disponibility** na stránce **Disponibilita položky** . Pokud je propojení obecné, bez ohledu na dimenze produktu, použijte pole **Skupina disponibility** na pevné záložce **Plán** stránky **Podrobnosti o produktu** . Pokud ve výchozím nastavení nespojíte skupinu disponibility s produktem, hlavní plánování bude používat obecnou skupinu disponibility, která je určena na stránce **Parametry hlavního plánování** .
+    Můžete vytvořit skupinu disponibility, která obsahuje nastavení pro všechny produkty spojené s touto skupinou disponibility. Přejděte na **Hlavní plánování &gt; Nastavení &gt; Disponibilita &gt; Skupiny disponibility** a vytvořte tak skupinu disponibility. Můžete propojit skupinu disponibility s produktem. Pokud je odkaz na konkrétní pracoviště, sklad nebo dimenze produktu, použijte pole **Skupina disponibility** na stránce **Disponibilita položky**. Pokud je propojení obecné, bez ohledu na dimenze produktu, použijte pole **Skupina disponibility** na pevné záložce **Plán** stránky **Podrobnosti o produktu**. Pokud ve výchozím nastavení nespojíte skupinu disponibility s produktem, hlavní plánování bude používat obecnou skupinu disponibility, která je určena na stránce **Parametry hlavního plánování**.
 
 - Nastavte disponibilitu produktu.
 
-    Nastavení pokrytí lze vytvořit pro určitý produkt. Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty** . Vyberte produkt a pak v podokně akcí na kartě **Plán** ve **skupině disponibility** zvolte **Disponibilita položky** pro otevření stránky **Disponibilita položky** . Je-li produkt již spojen se skupinou disponibility, můžete nastavení skupiny disponibility přepsat v poli **Přepsat** . Nastavení disponibility na stránce **Disponibilita položky** má přednost před nastavením na stránce **Skupina disponibility** .
+    Nastavení pokrytí lze vytvořit pro určitý produkt. Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**. Vyberte produkt a pak v podokně akcí na kartě **Plán** ve **skupině disponibility** zvolte **Disponibilita položky** pro otevření stránky **Disponibilita položky**. Je-li produkt již spojen se skupinou disponibility, můžete nastavení skupiny disponibility přepsat v poli **Přepsat**. Nastavení disponibility na stránce **Disponibilita položky** má přednost před nastavením na stránce **Skupina disponibility**.
 
 - Nastavení disponibility produktu pomocí průvodce.
 
-    Průvodce vás provede jednotlivými kroky procesu nastavení parametrů disponibility primární položky. Na stránce **Disponibilita položky** v podokně akcí zvolte **Průvodce** a otevřete **Průvodce disponibilitou položky** .
+    Průvodce vás provede jednotlivými kroky procesu nastavení parametrů disponibility primární položky. Na stránce **Disponibilita položky** v podokně akcí zvolte **Průvodce** a otevřete **Průvodce disponibilitou položky**.
 
 - Nastavení disponibility pro skupinu dimenzí.
 
-    Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty** . Na stránce **Podrobnosti o uvolněném produktu** na záložce s náhledem **Obecné** v části **Správa** zvolte odkaz v poli **Skupina dimenze úložiště** . Na stránce **Skupiny dimenze úložiště** vyberte zaškrtávací pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Pole **Plán disponibility podle dimenzí** musí mít vybráno pro všechny dimenze produktu, jako je například konfigurace, barva, velikost nebo styl.
+    Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**. Na stránce **Podrobnosti o uvolněném produktu** na záložce s náhledem **Obecné** v části **Správa** zvolte odkaz v poli **Skupina dimenze úložiště**. Na stránce **Skupiny dimenze úložiště** vyberte zaškrtávací pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Pole **Plán disponibility podle dimenzí** musí mít vybráno pro všechny dimenze produktu, jako je například konfigurace, barva, velikost nebo styl.
 
 
 ## <a name="coverage-codes"></a>Kódy pokrytí

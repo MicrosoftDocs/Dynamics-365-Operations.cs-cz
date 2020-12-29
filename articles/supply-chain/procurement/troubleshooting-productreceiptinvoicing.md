@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018622"
+ms.locfileid: "4424238"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Řešení problémů s příjemkami a fakturací produktů
 
@@ -38,7 +38,7 @@ Množství je povinné, pokud chcete zaúčtovat faktury. Pokud tedy bylo celé 
 
 K tomuto problému může dojít z důvodu nekonzistence v distribucích nákupních objednávek.
 
-Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept* , přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Chcete-li tento problém odblokovat a resetovat nákupní objednávku do stavu *Koncept*, přejděte na **Zásobování a zdroje \> Pravidelné úkoly \> Vyčistit \> Reset distribuce nákupní objednávky**. Další informace najdete v následujícím příspěvku na blogu: [Řešení chyb distribuce nákupní objednávky v Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="i-cant-consolidate-multiple-product-receipts-into-a-single-purchase-order"></a>Nemohu konsolidovat více příjemek produktu do jedné nákupní objednávky.
 
@@ -74,7 +74,7 @@ Transakce lze zaúčtovat na pozastavené účty hlavní knihy, když jsou zruš
 
 Pokud je možnost **Časově rozlišit pasiva na příjemce produktu** nastavena na *Ne* pro skupinu modelů položek, nedojde k účtování do hlavní knihy. Fyzická událost však bude zaznamenána pro účely účtování v dílčí hlavní knize a tato událost vyžaduje číslo dokladu. Toto číslo dokladu je číslo dokladu, na které se odkazuje v transakcích zásob.
 
-Doporučujeme nastavit možnost **Časově rozlišit pasiva na příjemce produktu** na *Ano* , jak je popsáno v následujícím příspěvku na blogu: [Zaúčtování vedlejších nákladů v době příjemky produktu](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+Doporučujeme nastavit možnost **Časově rozlišit pasiva na příjemce produktu** na *Ano*, jak je popsáno v následujícím příspěvku na blogu: [Zaúčtování vedlejších nákladů v době příjemky produktu](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Nastavení možnosti Zaúčtovat na účet poplatků v hlavní knize není zapnuto.
 

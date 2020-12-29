@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015934"
+ms.locfileid: "4424198"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Úloha vyčištění položek zásob na skladě v řízení skladu
 
@@ -50,7 +50,7 @@ Při spuštění úlohy má velikost potvrzení 100. Jinými slovy, bude se sna�
 
 ## <a name="possible-user-impact"></a>Možný dopad na uživatele
 
-Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. (Tato funkce kontroluje stav **Množství \<\> 0** v nastavení **Zobrazení rozměrů** , když uživatelé zobrazují informace na skladě.) Nicméně zlepšení výkonu, které poskytuje úloha vyčištění, by mělo tuto malou ztrátu funkčnosti nahradit.
+Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. (Tato funkce kontroluje stav **Množství \<\> 0** v nastavení **Zobrazení rozměrů**, když uživatelé zobrazují informace na skladě.) Nicméně zlepšení výkonu, které poskytuje úloha vyčištění, by mělo tuto malou ztrátu funkčnosti nahradit.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Zpřístupněte nastavení Maximální doba provedení
 

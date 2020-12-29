@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017637"
+ms.locfileid: "4424141"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
@@ -70,14 +70,14 @@ Je- li vybrána úroveň **čísla dávky** v hierarchii, budou automaticky vyb
 >
 > **Číslo dávky** a **Registrační značka** je jediná úroveň v hierarchii, která je otevřená pro zásadu pružné rezervace. Jinými slovy, pro úroveň **umístění** nebo **sériového čísla** nelze zaškrtnout políčko **Povolit rezervaci na objednávce poptávky**.
 >
-> Pokud hierarchie rezervace obsahuje dimenzi sériového čísla (která musí vždy být nižší než úroveň **Číslo dávky** ) a pokud jste pro číslo dávky aktivovali rezervaci specifickou pro dávku, systém bude pokračovat ve zpracování rezervací sériových čísel a operací výdeje na základě pravidel, která platí pro zásadu rezervace Serial-below\[location\].
+> Pokud hierarchie rezervace obsahuje dimenzi sériového čísla (která musí vždy být nižší než úroveň **Číslo dávky**) a pokud jste pro číslo dávky aktivovali rezervaci specifickou pro dávku, systém bude pokračovat ve zpracování rezervací sériových čísel a operací výdeje na základě pravidel, která platí pro zásadu rezervace Serial-below\[location\].
 
-V kterémkoli bodě můžete povolit rezervaci specifickou pro dávku pro existující hierarchii rezervací Batch-below\[location\] v rámci vašeho nasazení. Tato změna neovlivní žádné rezervace a otevřené práce skladu, které byly vytvořeny před provedením změny. Zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky** však nelze odstranit, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují transakce zásob typů výdeje **Rezervované objednané** , **Rezervované – fyzicky** , nebo **Objednáno**.
+V kterémkoli bodě můžete povolit rezervaci specifickou pro dávku pro existující hierarchii rezervací Batch-below\[location\] v rámci vašeho nasazení. Tato změna neovlivní žádné rezervace a otevřené práce skladu, které byly vytvořeny před provedením změny. Zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky** však nelze odstranit, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují transakce zásob typů výdeje **Rezervované objednané**, **Rezervované – fyzicky**, nebo **Objednáno**.
 
 > [!NOTE]
 > Pokud existující hierarchie rezervací položky nepovoluje dávkovou specifikaci pro objednávku, můžete ji přiřadit k hierarchii rezervací, která povoluje specifikaci dávky, pokud je struktura úrovně hierarchie v obou hierarchiích stejná. Použijte funkci **Změnit hierarchii rezervací pro položky** pro provedení opětovného přiřazení. Tato změna může být důležitá v případě, že chcete zabránit flexibilní rezervaci dávky pro podmnožinu položek sledovaných dávkou, ale povolit ji pro zbytek portfolia produktů.
 
-Bez ohledu na to, zda jste zaškrtli políčko **Povolit rezervaci na objednávce poptávky** , nechcete-li rezervovat určité číslo dávky pro položku na řádku objednávky, bude stále platit výchozí logika skladového místa, která je platná pro hierarchii rezervace Batch-below\[location\].
+Bez ohledu na to, zda jste zaškrtli políčko **Povolit rezervaci na objednávce poptávky**, nechcete-li rezervovat určité číslo dávky pro položku na řádku objednávky, bude stále platit výchozí logika skladového místa, která je platná pro hierarchii rezervace Batch-below\[location\].
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Rezervace konkrétního čísla dávky pro objednávku odběratele
 
@@ -102,8 +102,8 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
 
 1. Přejděte na **Řízení skladu** \> **Nastavení** \> **Zásoby \> Hierarchie rezervací**.
 2. Zvolte **Nové**.
-3. Do pole **Název** zadejte název (například **BatchFlex** ).
-4. Do pole **Popis** zadejte popis (například **Batch below flexible** ).
+3. Do pole **Název** zadejte název (například **BatchFlex**).
+4. Do pole **Popis** zadejte popis (například **Batch below flexible**).
 5. V poli **Vybrané** zvolte **Sériové číslo** a **Vlastník** a poté zvolte tlačítko šipky doleva pro přesun na pole **K dipozici**.
 6. Vyberte **OK**.
 7. V řádku pro úroveň dimenze **Číslo dávky** zaškrtněte políčko **Povolit rezervaci na objednávce poptávky**. Úrovně **Registrační značka** a **Skladové místo** jsou vybrány automaticky a nelze u nich zrušit zaškrtávací políčko.
@@ -139,11 +139,11 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
     >
     > Zadáte-li číslo dávky přímo do řádku prodejní objednávky, systém se bude chovat, jako byste zadali konkrétní hodnotu dávky pro položku, na kterou se vztahuje zásada rezervace Batch-below\[location\]. Po uložení řádku se zobrazí varovná zpráva. Pokud potvrdíte, že číslo dávky by mělo být zadáno přímo na řádku objednávky, řádek nebude zpracován běžnou logikou správy skladu.
     >
-    > Pokud rezervujete množství na stránce **Rezervace** , žádná specifická dávka nebude rezervována a provedení skladových operací pro tento řádek bude následovat pravidla aplikovatelná pod zásadami rezervace Batch-below\[location\].
+    > Pokud rezervujete množství na stránce **Rezervace**, žádná specifická dávka nebude rezervována a provedení skladových operací pro tento řádek bude následovat pravidla aplikovatelná pod zásadami rezervace Batch-below\[location\].
 
     Tato stránka obecně funguje a je v interakci stejným způsobem, jako pracuje a je závislá na položkách, které mají přidruženou hierarchii rezervací typu Batch-above\[location\]. Platí však následující výjimky:
 
-    - Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** zobrazí čísla dávek, která jsou vyhrazena pro řádek objednávky. Hodnoty dávky v mřížce se zobrazí v průběhu cyklu realizace řádku objednávky včetně fází zpracování skladu. Naopak na záložce s náhledem **Přehled** je běžná rezervace řádku objednávky (tj. rezervace, která se provádí pro dimenze nad úrovní **skladového místa** ), v mřížce zobrazena až do bodu vytvoření skladové práce. Entita práce pak převezme rezervaci řádku a na stránce se již nebude zobrazovat rezervace řádku. Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** pomáhá zajistit, že procesor prodejní objednávky může zobrazit čísla dávek, která byla potvrzena do objednávky zákazníka v kterémkoli okamžiku během svého životního cyklu, až do fakturace.
+    - Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** zobrazí čísla dávek, která jsou vyhrazena pro řádek objednávky. Hodnoty dávky v mřížce se zobrazí v průběhu cyklu realizace řádku objednávky včetně fází zpracování skladu. Naopak na záložce s náhledem **Přehled** je běžná rezervace řádku objednávky (tj. rezervace, která se provádí pro dimenze nad úrovní **skladového místa**), v mřížce zobrazena až do bodu vytvoření skladové práce. Entita práce pak převezme rezervaci řádku a na stránce se již nebude zobrazovat rezervace řádku. Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** pomáhá zajistit, že procesor prodejní objednávky může zobrazit čísla dávek, která byla potvrzena do objednávky zákazníka v kterémkoli okamžiku během svého životního cyklu, až do fakturace.
     - Kromě rezervace konkrétní dávky může uživatel ručně vybrat konkrétní místo dávky a registrační značku namísto toho, aby je systém vybral automaticky. Tato schopnost souvisí s návrhem mechanismu rezervace dávky potvrzené objednávkou. Jak bylo zmíněno dříve, chcete-li povolit rezervaci určitého čísla dávky pro položku pod zásadami rezervace Batch-below\[location\], musí systém rezervovat všechny dimenze v rámci skladového místa. Skladová práce proto bude mít stejné dimenze uskladnění, které byly rezervovány uživateli, kteří pracovali s objednávkami, a nemusí vždy představovat umístění úložiště položek, které je pro operace výdeje vhodné nebo dokonce možné. Pokud zpracovatelé objednávek vědí o omezeních skladu, mohou chtít ručně vybrat určitá skladová místa a registrační značky při rezervaci dávky. V takovém případě musí uživatel použít funkci **Zobrazit dimenze** v záhlaví stránky a přidat umístění a registrační značku do mřížky na záložce s náhledem **Přehled**.
 
 6. Na stránce **Rezervace dávky** vyberte řádek pro dávku **B11** a pak vyberte **Řádek rezervace**. V průběhu automatické rezervace není určena žádná logika pro přiřazování skladových míst a registračních značek. Množství lze ručně zadat do pole **Rezervace**. Všimněte si, že na záložce s náhledem **Čísla dávek potvrzená pro řádek zdroje** se zobrazí dávka **B11** jako **Potvrzená**.
@@ -177,7 +177,7 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
 
         ![Skladová transakce pro práci, která pochází z rezervace potvrzené objednávkou](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-    - Po vytvoření práce se skladová transakce položky, kde je pole **Odkaz** nastaveno na **Rezervace potvrzená objednávkou** , odstraní. Skladová transakce, kde je pole **Odkaz** nastaveno na **Práce** , nyní ukládá fyzickou rezervaci ve všech dimenzích zásob.
+    - Po vytvoření práce se skladová transakce položky, kde je pole **Odkaz** nastaveno na **Rezervace potvrzená objednávkou**, odstraní. Skladová transakce, kde je pole **Odkaz** nastaveno na **Práce**, nyní ukládá fyzickou rezervaci ve všech dimenzích zásob.
 
         Skladové operace mohou pokračovat v provádění práce obvyklým způsobem. Pokyny v mobilním zařízení však nařídí pracovníkovi, aby vydával určité číslo dávky. V prostředích skladu, kde jsou skladová místa řízena registrační značkou, poté, co pracovník dostane do skladového místa, kde je uložena stejná dávka na více registračních štítků, může vybírat z libovolné registrační značky, která ještě není rezervována (například jinou rezervace nebo práce potvrzené objednávkou, která pochází z rezervace daného typu.)
 
@@ -212,11 +212,11 @@ Chcete-li v objednávce povolit rezervaci registrační značky, musíte zaškrt
 
 ![Stránka hierarchií rezervace zásob pro flexibilní hierarchii rezervace poznávacích značek](media/Flexible-LP-reservation-hierarchy.png)
 
-Rezervace registrační značky můžete v objednávce povolit kdykoli v místě nasazení. Tato změna neovlivní žádné rezervace nebo otevřené práce skladu, které byly vytvořeny před provedením změny. Nemůžete vša zrušit zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky** , pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují otevřené odchozí transakce zásob typů výdeje, které mají stav *Na objednávce* , *Rezervováno objednáno* nebo *Rezervováno fyzicky*.
+Rezervace registrační značky můžete v objednávce povolit kdykoli v místě nasazení. Tato změna neovlivní žádné rezervace nebo otevřené práce skladu, které byly vytvořeny před provedením změny. Nemůžete vša zrušit zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky**, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují otevřené odchozí transakce zásob typů výdeje, které mají stav *Na objednávce*, *Rezervováno objednáno* nebo *Rezervováno fyzicky*.
 
-I když je zaškrtnuto políčko **Povolit rezervaci na objednávku poptávky** pro úroveň **Registrační značka** , je to stále možné *nerezervovat* konkrétní registrační značku na objednávce. V tomto případě se použije výchozí logika operací skladu, která je platná pro hierarchii rezervace.
+I když je zaškrtnuto políčko **Povolit rezervaci na objednávku poptávky** pro úroveň **Registrační značka**, je to stále možné *nerezervovat* konkrétní registrační značku na objednávce. V tomto případě se použije výchozí logika operací skladu, která je platná pro hierarchii rezervace.
 
-Chcete-li rezervovat konkrétní registrační značku, musíte použít proces [Otevřený datový protokol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). V aplikaci můžete provést tuto rezervaci přímo z prodejní objednávky pomocí možnosti **Rezervace vázaná na objednávku dle registrační značky** v příkazu **Otevřít v Excelu**. V datech entity, která se otevírají v doplňku Excel, musíte zadat následující data související s rezervací a poté vybrat **Publikovat** , chcete-li poslat data zpět do Supply Chain Management:
+Chcete-li rezervovat konkrétní registrační značku, musíte použít proces [Otevřený datový protokol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). V aplikaci můžete provést tuto rezervaci přímo z prodejní objednávky pomocí možnosti **Rezervace vázaná na objednávku dle registrační značky** v příkazu **Otevřít v Excelu**. V datech entity, která se otevírají v doplňku Excel, musíte zadat následující data související s rezervací a poté vybrat **Publikovat**, chcete-li poslat data zpět do Supply Chain Management:
 
 - Reference (Pouze hodnota *Prodejní objednávka* je podporována.)
 - Číslo objednávky (Hodnota může být odvozena ze šarže.)
@@ -224,7 +224,7 @@ Chcete-li rezervovat konkrétní registrační značku, musíte použít proces 
 - Poznávací značka
 - Množství
 
-Pokud musíte vyhradit konkrétní registrační značku pro dávkově sledovanou položku, použijte stránku **Dávková rezervace** , jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
+Pokud musíte vyhradit konkrétní registrační značku pro dávkově sledovanou položku, použijte stránku **Dávková rezervace**, jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
 
 Když je řádek prodejní objednávky, který používá rezervaci registrační značky potvrzené objednávkou, zpracován operacemi skladu, nebudou použity direktivy o umístění.
 
@@ -249,9 +249,9 @@ Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standard
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Zásoby \> Hierarchie rezervací.**
 1. Zvolte **Nové**.
-1. Do pole **Název** zadejte hodnotu (například *FlexibleLP* ).
-1. Do pole **Popis** zadejte hodnotu (například *Flexibilní rezervace registrační značky* ).
-1. V seznamu **Vybraný** vyberte **Číslo šarže** , **Sériové číslo** a **Vlastník**.
+1. Do pole **Název** zadejte hodnotu (například *FlexibleLP*).
+1. Do pole **Popis** zadejte hodnotu (například *Flexibilní rezervace registrační značky*).
+1. V seznamu **Vybraný** vyberte **Číslo šarže**, **Sériové číslo** a **Vlastník**.
 1. Vyberte tlačítko **Odebrat** ![šipka zpět](media/backward-button.png) a přesuňte vybrané záznamy do seznamu **K dispozici**.
 1. Vyberte **OK**.
 1. V řádku pro úroveň dimenze **Registrační značka** zaškrtněte políčko **Povolit rezervaci na objednávce poptávky**. Úroveň **Umístění** je vybrána automaticky a nelze u ní zrušit zaškrtávací políčko.
@@ -271,7 +271,7 @@ Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standard
     - **Skupina sledovací dimenze:** *Žádná*
     - **Hierarchie rezervace:** *FlexibleLP*
 
-1. Vyberte **OK** , produkt se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK**, produkt se vytvoří a dialogové okno se zavře.
 1. Nový produkt je otevřen. Na záložce s náhledem **Sklad** nastavte pole **ID skupiny pořadí jednotek** na hodnotu *ks*.
 1. Opakujte předchozí kroky a vytvořte druhý produkt, který má stejná nastavení, ale nastavte **Číslo produktu** a **Číslo položky** na *Item2*.
 1. V podokně Akce na kartě **Správa zásob** ve skupině **Zobrazit** vyberte **Zásoby na skladě**. Poté vyberte **Úprava množství**.
@@ -311,23 +311,23 @@ Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standard
 1. Na pevné záložce **Podrobnosti řádku** na kartě **Nastavení** si poznamenejte **ID šarže** pro každý řádek. Tyto hodnoty budou vyžadovány při rezervaci konkrétních poznávacích značek.
 
     > [!NOTE]
-    > Chcete-li rezervovat konkrétní poznávací značku, musíte použít datovou entitu **Rezervace vázaná na objednávku dle registrační značky**. Chcete-li rezervovat dávkově sledovanou položku na konkrétní registrační značce, můžete také použít stránku **Dávková rezervace** , jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
+    > Chcete-li rezervovat konkrétní poznávací značku, musíte použít datovou entitu **Rezervace vázaná na objednávku dle registrační značky**. Chcete-li rezervovat dávkově sledovanou položku na konkrétní registrační značce, můžete také použít stránku **Dávková rezervace**, jak je popsáno v sekci [Zadejte podrobnosti o prodejní objednávce](#sales-order-details).
     >
     > Pokud zadáte poznávací značku přímo na řádku prodejní objednávky a potvrdíte ji do systému, nebude pro tuto linku použito řízení skladu.
 
-1. Vyberte **Otevřít v Microsoft Office** , vyberte **Rezervace vázaná na objednávku dle registrační značky** a stáhněte si soubor.
+1. Vyberte **Otevřít v Microsoft Office**, vyberte **Rezervace vázaná na objednávku dle registrační značky** a stáhněte si soubor.
 1. V aplikaci Excel otevřete stažený soubor a zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel.
 1. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
 1. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Supply Chain Management.
 1. Chcete-li rezervovat položku na konkrétní registrační značce, v doplňku Excel vyberte **Nový** a přidejte řádek rezervace, Poté nastavte následující hodnoty:
 
-    - **ID šarže:** Zadejte **ID šarže** , kterou jste našli pro řádek prodejní objednávky *Item1*.
+    - **ID šarže:** Zadejte **ID šarže**, kterou jste našli pro řádek prodejní objednávky *Item1*.
     - **Registrační značka:** *LP02*
     - **ReservedInventoryQuantity:** *10*
 
 1. Chcete-li přidat další řádek rezervace, klikněte na **Nový** a zadejte následující hodnoty:
 
-    - **ID šarže:** Zadejte **ID šarže** , kterou jste našli pro řádek prodejní objednávky *Item2*.
+    - **ID šarže:** Zadejte **ID šarže**, kterou jste našli pro řádek prodejní objednávky *Item2*.
     - **Registrační značka:** *LP02*
     - **ReservedInventoryQuantity:** *5*
 
@@ -341,7 +341,7 @@ Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standard
 1. Chcete-li zkontrolovat transakce inventáře, které souvisejí s rezervací řádku prodejní objednávky, na pevné záložce **Řádky prodejních objednávek** v nabídce **Zásoby** vyberte **zobrazit \> Transakce**. Všimněte si, že existují dvě transakce, které se vztahují k rezervaci: jedna, kde je pole **Odkaz** nastaveno na *Prodejní objednávka* a jedna, kde je pole **Odkaz** nastaveno na *Rezervace vázaná na objednávku*.
 
     > [!NOTE]
-    > Transakce, ve které je pole **Odkaz** nastaveno na *Prodejní objednávka* představuje rezervaci řádku objednávky pro dimenze zásob nad úrovní **skladového místa** (site, sklad a stav zásob). Transakce, kde pole **Odkaz** je nastaveno na *Rezervace vázaná na objednávku* , představuje rezervaci řádku objednávky pro konkrétní registrační značku a umístění.
+    > Transakce, ve které je pole **Odkaz** nastaveno na *Prodejní objednávka* představuje rezervaci řádku objednávky pro dimenze zásob nad úrovní **skladového místa** (site, sklad a stav zásob). Transakce, kde pole **Odkaz** je nastaveno na *Rezervace vázaná na objednávku*, představuje rezervaci řádku objednávky pro konkrétní registrační značku a umístění.
 
 1. Chcete-li uvolnit prodejní objednávku, v pododokně akcí na kartě **Sklad** ve skupině **Akce** vyberte **Uvolnit do skladu**.
 
@@ -352,7 +352,7 @@ Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standard
     Jako když se provádí rezervace pro konkrétní dávku, systém nepoužívá směrnice o umístění, když vytváří práci pro prodejní objednávku, která používá rezervaci poznávací značky. Protože rezervace vázaná na objednávku specifikuje všechny dimenze zásob, včetně umístění, nemusí být použity direktivy o umístění, protože tyto dimenze zásob jsou právě zadány v práci. Jsou uvedeny v sekci **Z dimenzí zásob** na stránce **Transakce pracovních zásob**.
 
     > [!NOTE]
-    > Po vytvoření práce se skladová transakce položky, kde je pole **Odkaz** nastaveno na *Rezervace potvrzená objednávkou* , odstraní. Skladová transakce, kde je pole **Odkaz** nastaveno na *Práce* , nyní ukládá fyzickou rezervaci ve všech dimenzích zásob.
+    > Po vytvoření práce se skladová transakce položky, kde je pole **Odkaz** nastaveno na *Rezervace potvrzená objednávkou*, odstraní. Skladová transakce, kde je pole **Odkaz** nastaveno na *Práce*, nyní ukládá fyzickou rezervaci ve všech dimenzích zásob.
 
 1. Na mobilním zařízení dokončete výběr a umístěte práci pomocí položky nabídky, kde je zaškrtnuto políčko **Zpracovat podle registrační značky**.
 
@@ -385,7 +385,7 @@ Zde jsou výsledky akce zrušení výdeje:
 
 - Stav dříve uzavřené práce je nastaven na **Zrušeno**.
 - Nová práce typu **Přesun zásob** se vytvoří pro nevyzvednuté množství **10** pro číslo dávky **B11**. Tato práce představuje přesun z místa **Portál** na registrační značku **LP33** v umístění **FL-001**. Stav je nastaven na **Zavřeno**.
-- Systém znovu rezervuje číslo dávky, které bylo původně objednáno, a přiřadí ID umístění a registrační značky. (Tento proces odpovídá spuštění funkce **Rezervovat řádek** pro řádek objednávky pro dané číslo dávky). Výsledkem je, že se dávka **B11** zobrazí jako potvrzená na záložce s náhledem **Čísla dávek potvrzená pro řádek zdroje** na stránce **Rezervace dávky** , a pole **Rezervace** obsahuje množství **10** pro číslo dávky **B11**. Dále je pole **Místo** nastaveno na **FL-001** a pole **Registrační značka** je nastaveno na **LP11**. (Tato pole můžete přidat do mřížky, pokud nejsou viditelná.)
+- Systém znovu rezervuje číslo dávky, které bylo původně objednáno, a přiřadí ID umístění a registrační značky. (Tento proces odpovídá spuštění funkce **Rezervovat řádek** pro řádek objednávky pro dané číslo dávky). Výsledkem je, že se dávka **B11** zobrazí jako potvrzená na záložce s náhledem **Čísla dávek potvrzená pro řádek zdroje** na stránce **Rezervace dávky**, a pole **Rezervace** obsahuje množství **10** pro číslo dávky **B11**. Dále je pole **Místo** nastaveno na **FL-001** a pole **Registrační značka** je nastaveno na **LP11**. (Tato pole můžete přidat do mřížky, pokud nejsou viditelná.)
 
 V následujících tabulkách je uveden přehled, který zobrazuje způsob, jakým systém zpracovává rezervace dávky potvrzené objednávkou pro určité akce skladu. Chcete-li interpretovat obsah v tabulkách, předpokládejme, že každá akce skladu je spuštěna v kontextu existující práce ve skladu, která pochází z rezervace dávky potvrzené objednávkou, nebo že provádění jednotlivých akcí skladu ovlivňuje práci tohoto typu.
 
@@ -512,7 +512,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 #### <a name="move-an-item-within-a-warehouse"></a>Přesunutí položky v rámci skladu
 
 > [!NOTE]
-> Tuto akci skladu lze použít pouze pro přesun typu **Proces pro vytvoření práce** , nikoli pro přesun podle šablony.
+> Tuto akci skladu lze použít pouze pro přesun typu **Proces pro vytvoření práce**, nikoli pro přesun podle šablony.
 
 <table>
 <thead>

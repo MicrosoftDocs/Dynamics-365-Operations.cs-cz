@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da09d670fd952d885f013693b6362cf9002343ff
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424058"
 ---
 # <a name="delays"></a>Zpoždění
 
@@ -43,7 +43,7 @@ Způsob výpočtu zpoždění pro skupinu disponibility lze upravit. Skupinu dis
 Na stránce **Parametry hlavního plánování** můžete nastavit čas zahájení výpočtu zpoždění. Pokud je objednávka splněna po tomto termínu, k datu zpoždění objednávky se přičte jeden den. 
 
 > [!NOTE]
-> V předchozích verzích se vypočtená zpoždění nazývala *termínové zprávy* , datum zpoždění se nazývalo *datum termínu* a zpožděná transakce se označovala jako *transakce nastavená na budoucí datum* .
+> V předchozích verzích se vypočtená zpoždění nazývala *termínové zprávy*, datum zpoždění se nazývalo *datum termínu* a zpožděná transakce se označovala jako *transakce nastavená na budoucí datum*.
 
 ## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Omezené zpoždění při nastavení výroby s více úrovněmi kusovníku
 Pokud pracujete se zpožděními v nastavení výroby, které má více úrovní kusovníku, je důležité poznamenat, že pouze položky, které způsobují zpoždění, přímo nad položkou (ve struktuře kusovníku), budou při spuštění hlavního plánování aktualizovány s prodlením. Ostatní položky ve struktuře kusovníku nebudou při schválení nebo potvrzení plánované objednávky pro nejvyšší úroveň použity zpoždění použité do prvního hlavního plánování. 
@@ -53,7 +53,7 @@ Zprávy akce lze rovněž použít k identifikaci plánovaných objednávek, kte
 
 ## <a name="desired-date"></a>Požadované datum
 
-Na stránce **Plánovaná objednávka** na kartě **Zpoždění** je uvedeno **požadované datum** plánované objednávky. Požadované datum plánované objednávky je základní datum zpoždění, což je vypočítané datum, které se rovná **požadovanému datu** počítáno od **čistého požadavku** . Pokud je plánovaná objednávka řádka kusovníku, výroby nebo řádka kamban, je požadované datum založeno na **datu požadavku** a nebude uvedeno na stránce **Plánovaná objednávka** .
+Na stránce **Plánovaná objednávka** na kartě **Zpoždění** je uvedeno **požadované datum** plánované objednávky. Požadované datum plánované objednávky je základní datum zpoždění, což je vypočítané datum, které se rovná **požadovanému datu** počítáno od **čistého požadavku**. Pokud je plánovaná objednávka řádka kusovníku, výroby nebo řádka kamban, je požadované datum založeno na **datu požadavku** a nebude uvedeno na stránce **Plánovaná objednávka**.
 
 <a name="additional-resources"></a>Další zdroje
 --------

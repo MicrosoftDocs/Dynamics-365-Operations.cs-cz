@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018346"
+ms.locfileid: "4424219"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
 
@@ -33,7 +33,7 @@ Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávk
 ## <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
 1. V navigačním podokně přejděte na **Moduly > Zásobování a zdroje > Stav zásob dodávky > Zakázky na doplnění stavu zásob dodávky**.
 2. Zvolte **Nové**.
-3. V poli **Účet dodavatele** vyberte dodavatele **US-104** (musíte vybrat dodavatele, který je zaregistrován jako vlastník na stránce **Vlastníci zásob** ). 
+3. V poli **Účet dodavatele** vyberte dodavatele **US-104** (musíte vybrat dodavatele, který je zaregistrován jako vlastník na stránce **Vlastníci zásob**). 
 4. Vyberte **OK**.
 5. Vyberte **Přidat řádek**.
 6. Do pole **Číslo položky** zadejte `M9211CI` (je nutné vybrat položku, která je nastavena pro zásoby dodávky).
@@ -42,7 +42,7 @@ Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávk
 9. Zadejte datum do pole **Potvrzené datum dodání**.
 10. Rozbalte sekci **Podrobnosti řádku**.
 11. Vyberte kartu **Dimenze zásob**.
-12. Chcete-li zobrazit vlastníka v poli **Vlastník dimenze zásob** , aktualizujte stránku. Dodavatel US-104 je nyní uveden jako vlastník.  
+12. Chcete-li zobrazit vlastníka v poli **Vlastník dimenze zásob**, aktualizujte stránku. Dodavatel US-104 je nyní uveden jako vlastník.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Zkontrolujte stav transakce zásob.
 1. Vyberte **skladový model**.

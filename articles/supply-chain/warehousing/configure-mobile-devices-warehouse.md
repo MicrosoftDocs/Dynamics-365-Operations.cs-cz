@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016187"
+ms.locfileid: "4424178"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -44,7 +44,7 @@ Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole 
 > Další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto tématu.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurace položek nabídky pro aktivity a dotazy
-Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé** , můžete vytvořit položku nabídky pro provádění hlavní aktivity nebo dotazu, který nevytváří práci. Příklady zahrnují opakovaný tisk popisků registrační značky vozidel a dotaz na položky ve skladovém místě. V následující tabulce jsou uvedeny možnosti, které jsou k dispozici.
+Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé**, můžete vytvořit položku nabídky pro provádění hlavní aktivity nebo dotazu, který nevytváří práci. Příklady zahrnují opakovaný tisk popisků registrační značky vozidel a dotaz na položky ve skladovém místě. V následující tabulce jsou uvedeny možnosti, které jsou k dispozici.
 
 | Možnost | Popis |
 |---|---|
@@ -55,7 +55,7 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé** , mů
 | Dotaz na registrační značku vozidla | Prohlédněte si množství položek na registrační značce a umístění registrační značky. |
 | Spustit výrobní zakázku | Spusťte výrobní zakázku. |
 | Výrobní odpad | Zadejte množství odpadu, který byl vytvořen během výroby pro každý řádek kusovníku. |
-| Poslední paleta výroby | Uveďte, že byla vyrobena poslední paleta zboží pro výrobní zakázku, a že je nutné aktualizovat stav výrobní zakázky tak, aby byl **hlášen jako dokončený**. Stav surovin, které nebyly při výrobě spotřebovávají, se vrátí z kategorie **Vyskladněno** na **Na objednávce** , a položky se mohou vrátit mezi zásoby. |
+| Poslední paleta výroby | Uveďte, že byla vyrobena poslední paleta zboží pro výrobní zakázku, a že je nutné aktualizovat stav výrobní zakázky tak, aby byl **hlášen jako dokončený**. Stav surovin, které nebyly při výrobě spotřebovávají, se vrátí z kategorie **Vyskladněno** na **Na objednávce**, a položky se mohou vrátit mezi zásoby. |
 | Dotaz na zboží | Naskenujte položku a určete, kde se ve skladě nachází. Dotaz vrátí všechna umístění a množství pro skenovanou položku. |
 | Znovu vytisknout štítek | Znovu vytiskněte štítek registrační značky. |
 | Sestavení registrační značky vozidla | Vytvořte nadřazenou registrační značku kombinací více registračních značek ve stejném skladovém místě. Tato možnost je užitečná, pokud přesouváte více registračních značek současně. Poté, co je nadřazená registrační značka přesunuta, je nutné provést změnu registračních značek předtím, než je možné vybrat položky pro každou z registračních značek. <p></p>**Tip:** Pro přesun nadřazené registrační značky je nutné použít mobilní zařízení konfigurováno pro vytváření přesouvané práce. |
@@ -64,8 +64,8 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé** , mů
 | Odhlášení řidiče | Zaregistrujte, že řidič ukončil svoji schůzku. |
 | Vymazat mezipaměť číselných řad | Odstraňte čísla z číselné řady z mezipaměti pro pořadová čísla. Tuto aktivitu většinou provádí správce systému a řeší tak potíže při ukládání do mezipaměti během používání mobilních zařízení. |
 | Změnit dispozici dávky | Pracovníkovi povolte zadat dispoziční kód dávky pro položky a dávky. Tato volba aktualizuje dispoziční kód, který je určen pro dávku. |
-| Zobrazit otevřený seznam úkolů | Zobrazení seznamu dostupných prací pro určitého uživatele. Uživatel může vybrat práci, která se má provést, a bude do ní směrován. Tento seznam je určen pro tablety velikost obrazovky 7 palců nebo vyšší. Když vyberete tuto možnost, položky nabídky **Upravit dotaz** a **Seznam polí** budou povoleny. Stránka **Upravit dotaz** vám umožňuje nastavit kritéria pro práci, která se zobrazí v seznamu. Na stránce **Seznam polí** můžete vybrat pole, které se zobrazí v pracovním seznamu. Můžete například snížit počet polí, které jsou zobrazeny a urychlit tak uživateli výběr nejvhodnější pracovní položky. Na pevné záložce **Obecné** v poli **Záznamy na stránku** můžete také vybrat, kolik pracovních záznamů na stránce se zobrazí. Pokud je vybrána možnost **Povolit uživatelům filtrovat práci podle typu transakce** , bude pracovní seznam zahrnovat ovládací prvek **Filtr práce** , který uživatel může použít pro filtrování podle typu transakce. Uživateli se zobrazí jen práce v pracovním seznamu, u které mají oprávnění k přístupu. Je nutné zkontrolovat, zda mají oprávnění pro jednu nebo více uživatelem směrovaných položek v nabídce, které podporují konkrétní typy pracovních tříd, ke kterým by měli mít přístup. Oprávnění se také ověřují při pokusu uživatele o provedení práce ze seznamu.|
-| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z aplikace skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku** , vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
+| Zobrazit otevřený seznam úkolů | Zobrazení seznamu dostupných prací pro určitého uživatele. Uživatel může vybrat práci, která se má provést, a bude do ní směrován. Tento seznam je určen pro tablety velikost obrazovky 7 palců nebo vyšší. Když vyberete tuto možnost, položky nabídky **Upravit dotaz** a **Seznam polí** budou povoleny. Stránka **Upravit dotaz** vám umožňuje nastavit kritéria pro práci, která se zobrazí v seznamu. Na stránce **Seznam polí** můžete vybrat pole, které se zobrazí v pracovním seznamu. Můžete například snížit počet polí, které jsou zobrazeny a urychlit tak uživateli výběr nejvhodnější pracovní položky. Na pevné záložce **Obecné** v poli **Záznamy na stránku** můžete také vybrat, kolik pracovních záznamů na stránce se zobrazí. Pokud je vybrána možnost **Povolit uživatelům filtrovat práci podle typu transakce**, bude pracovní seznam zahrnovat ovládací prvek **Filtr práce**, který uživatel může použít pro filtrování podle typu transakce. Uživateli se zobrazí jen práce v pracovním seznamu, u které mají oprávnění k přístupu. Je nutné zkontrolovat, zda mají oprávnění pro jednu nebo více uživatelem směrovaných položek v nabídce, které podporují konkrétní typy pracovních tříd, ke kterým by měli mít přístup. Oprávnění se také ověřují při pokusu uživatele o provedení práce ze seznamu.|
+| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z aplikace skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurace položek nastavení k vytvoření práce pro jiného pracovníka nebo proces

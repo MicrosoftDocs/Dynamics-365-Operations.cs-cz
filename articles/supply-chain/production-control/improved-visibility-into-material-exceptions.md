@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016578"
+ms.locfileid: "4424160"
 ---
 # <a name="visibility-into-material-exceptions"></a>Přehled výjimek materiálu
 
@@ -34,7 +34,7 @@ V pracovním prostoru **Správa výrobního provozu** prostoru vám poskytují l
 - Nezpracované vlny vyžadující pozornost
 - Otevřená skladová práce vyžadující pozornost
 
-Pro všechny tři dlaždice se srovnává datum surovin řádků kusovníku a řádků receptury s datem pracovního prostoru a s filtry možností **Výrobní jednotka** , **Skupinu prostředků** a **Prostředek** , které jsou nastavovány v nabídce **Konfigurovat můj pracovní prostor**. Ve výchozím nastavení je datum pracovního prostoru nastaveno na aktuální datum, které ale lze změnit.
+Pro všechny tři dlaždice se srovnává datum surovin řádků kusovníku a řádků receptury s datem pracovního prostoru a s filtry možností **Výrobní jednotka**, **Skupinu prostředků** a **Prostředek**, které jsou nastavovány v nabídce **Konfigurovat můj pracovní prostor**. Ve výchozím nastavení je datum pracovního prostoru nastaveno na aktuální datum, které ale lze změnit.
 
 Nevydaný řádek kusovníku nebo receptury vyžaduje pozornost, pokud datum suroviny na řádku je stejné nebo dřívější než datum pracovního prostoru a pokud splňuje kritéria, která se definují podle filtrů v pracovním prostoru.
 

@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017660"
+ms.locfileid: "4424224"
 ---
 # <a name="work-policies"></a>Zásady práce
 
@@ -29,7 +29,7 @@ ms.locfileid: "4017660"
 
 Toto téma vysvětluje, jak nastavit systém a aplikaci skladu tak, aby podporovaly pracovní zásady. Tuto funkci můžete použít k rychlé registraci zásob bez vytvoření práce odložení, když obdržíte objednávky nákupu nebo převodu nebo když dokončíte výrobní procesy. Toto téma obsahuje obecné informace. Podrobné informace týkající se přijímání registračních značek viz [Příjem registrační značky prostřednictvím aplikace skladu](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená položka nahlášena jako dokončená nebo když je zboží přijato pomocí aplikace skladu. Každé zásady práce nastavíte definováním podmínek, ve kterých platí: typy a procesy pracovní objednávky, umístění zásob a (volitelně) produkty. Například objednávka produktu *A0001* musí být přijata na místě *RECV* ve skladu *24*. Později se produkt spotřebuje v jiném procesu na místě *RECV*. V takovém případě můžete nastavit pracovní zásadu, která zabrání tomu, aby v případě, že pracovník ohlásí produkt *A0001* jako přijatý do skladu *RECV* , nebyla vytvořena práce odložení.
+Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená položka nahlášena jako dokončená nebo když je zboží přijato pomocí aplikace skladu. Každé zásady práce nastavíte definováním podmínek, ve kterých platí: typy a procesy pracovní objednávky, umístění zásob a (volitelně) produkty. Například objednávka produktu *A0001* musí být přijata na místě *RECV* ve skladu *24*. Později se produkt spotřebuje v jiném procesu na místě *RECV*. V takovém případě můžete nastavit pracovní zásadu, která zabrání tomu, aby v případě, že pracovník ohlásí produkt *A0001* jako přijatý do skladu *RECV*, nebyla vytvořena práce odložení.
 
 > [!NOTE]
 > - Aby byly zásady práce aktivní, musíte pro ně definovat nejméně jedno místo na pevné záložce **Skladovací místa** na stránce **Zásady práce**. 
@@ -113,11 +113,11 @@ Chcete-li nastavit položku nabídky mobilního zařízení na podporu příjmu 
 
 ## <a name="example-scenario-warehouse-receiving"></a>Příklad scénáře: Příjem skladu
 
-Všechny produkty, které obdrží proces *Přijetí zboží nákupní objednávky (a odložení)* musí být registrován v místě *FL-001* a musí být k dispozici ve skladu *24*. Práce by však neměla být vytvořena. Produkty, které jsou přijímány jakýmkoli jiným procesem (tj. pomocí jiných položek nabídky mobilního zařízení), by měly být zaregistrovány ve výchozím umístění pro příjem skladu ( *RECV* ) a práce by měla být vytvořena jako obvykle. (Tento scénář nezobrazuje výchozí nastavení příjmu.)
+Všechny produkty, které obdrží proces *Přijetí zboží nákupní objednávky (a odložení)* musí být registrován v místě *FL-001* a musí být k dispozici ve skladu *24*. Práce by však neměla být vytvořena. Produkty, které jsou přijímány jakýmkoli jiným procesem (tj. pomocí jiných položek nabídky mobilního zařízení), by měly být zaregistrovány ve výchozím umístění pro příjem skladu (*RECV*) a práce by měla být vytvořena jako obvykle. (Tento scénář nezobrazuje výchozí nastavení příjmu.)
 
 Tento scénář vyžaduje následující prvky:
 
-- Zásady práce pro proces *Přijetí zboží nákupní objednávky (a odložení)* v místě *FL-001* , pro všechny produkty
+- Zásady práce pro proces *Přijetí zboží nákupní objednávky (a odložení)* v místě *FL-001*, pro všechny produkty
 - Položka nabídky mobilního zařízení, která má výchozí data a nastavuje pole **Na místo** na hodnotu *FL-001*
 
 ### <a name="prerequisites"></a>Předpoklady
@@ -144,7 +144,7 @@ Tento scénář používá standardní ukázková data. Proto, chcete-li s tím
     - **Sklad:** *24*
     - **Umístění:** *FL-001*
 
-1. Na pevné záložce **Produkty** , nastavte pole **Výběr produktu** na *Vše*.
+1. Na pevné záložce **Produkty**, nastavte pole **Výběr produktu** na *Vše*.
 1. Zvolte **Uložit**.
 
 ### <a name="set-up-a-mobile-device-menu-item-to-change-the-receiving-location"></a>Nastavení položky nabídky na mobilním zařízení na registraci přijatých položek
@@ -201,7 +201,7 @@ Nákupní objednávka je nyní přijata, ale není s ní spojena žádná práce
 
 ## <a name="example-scenario-manufacturing"></a>Příklad scénáře: Výroba
 
-V následujícím příkladu jsou dvě výrobní zakázky, *PROD-001* a *PROD-002*. Výrobní zakázka *PROD-001* má operaci s názvem *Sestavení* , kde produkt *SC1* je hlášen jako dokončený v místě *001*. Výrobní zakázka *PROD-002* má operaci, která se nazývá *Lakování* a spotřebovává produkt *SC1* z umístění *001*. Výrobní zakázka *PROD-002* také spotřebovává suroviny *RM1* 1 z umístění *001*. Surovina *RM1* je uložena ve skladu *BULK-001* a bude vyskladněno v umístění *001* během práce ve skladu pro výdej surovin. Pro uvolnění výroby *PROD-002* je generována práce vyskladnění.
+V následujícím příkladu jsou dvě výrobní zakázky, *PROD-001* a *PROD-002*. Výrobní zakázka *PROD-001* má operaci s názvem *Sestavení*, kde produkt *SC1* je hlášen jako dokončený v místě *001*. Výrobní zakázka *PROD-002* má operaci, která se nazývá *Lakování* a spotřebovává produkt *SC1* z umístění *001*. Výrobní zakázka *PROD-002* také spotřebovává suroviny *RM1* 1 z umístění *001*. Surovina *RM1* je uložena ve skladu *BULK-001* a bude vyskladněno v umístění *001* během práce ve skladu pro výdej surovin. Pro uvolnění výroby *PROD-002* je generována práce vyskladnění.
 
 [![Zásady práce ve skladu](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
@@ -252,7 +252,7 @@ Skladové procesy ne vždy zahrnují skladovou práci. Definováním zásad prá
     - **Sklad:** *51*
     - **Místo:** *001*
 
-1. Na pevné záložce **Produkty** , nastavte pole **Výběr produktu** na *Vybrané*.
+1. Na pevné záložce **Produkty**, nastavte pole **Výběr produktu** na *Vybrané*.
 1. Na pevné záložce **Produkty** přidejte řádek do mřížky výběrem možnosti **Přidat**.
 1. V novém řádku nastavte pole **Číslo položky** na *L0101*.
 1. V podokně akcí vyberte **Uložit**.
@@ -276,7 +276,7 @@ Skladové procesy ne vždy zahrnují skladovou práci. Definováním zásad prá
 1. Přejděte na **Řízení výroby \> Výrobní zakázky \> Všechny výrobní zakázky**.
 1. V podokně akcí vyberte možnost **Nová výrobní zakázka**.
 1. V dialogovém okně **Vytvoření výrobní zakázky** nastavte pole **Číslo položky** na *L0101*.
-1. Vyberte **Vytvořit** , prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **Vytvořit**, prodejní objednávka se vytvoří a dialogové okno se zavře.
 
     Nová výrobní zakázka je přidána do mřížky na stránce **Všechny výrobní objednávky**.
 

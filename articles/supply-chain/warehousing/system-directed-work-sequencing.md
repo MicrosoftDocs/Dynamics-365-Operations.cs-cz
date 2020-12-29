@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017017"
+ms.locfileid: "4424202"
 ---
 # <a name="system-directed-work-sequencing"></a>Řazení práce řízené systémem
 
@@ -130,7 +130,7 @@ Chcete-li s tímto scénářem pracovat pomocí hodnot prezentovaných v tomto
     - **Kritéria:** *!STAGE*
 
         > [!IMPORTANT]
-        > Nezapomeňte zahrnout na vykřičník ( *!* ) před *STAGE*.
+        > Nezapomeňte zahrnout na vykřičník (*!*) před *STAGE*.
 
 1. Klikněte **OK**. Dotaz se uloží a zavře.
 1. Zvolte **Uložit**.
@@ -300,7 +300,7 @@ Pamatujte, že toto nastavení zachytí jakoukoli práci, která má alespoň je
 
 ## <a name="tips"></a>Tipy
 
-Dotazy na řazení práce řízené systémem jsou *inkluzivní*. Na tuto skutečnost při nastavování nezapomínejte. Například chcete, aby konkrétní položka nabídky zpracovávala pouze práci, kde je jako jednotka práce *ks* a zadáte toto omezení na kartě **Oblast** dotazu. V tom případě všechny práce, kde má alespoň jeden řádek práce nastavenou jednotku *ks* , budou předloženy pracovníkovi. Tato práce proto může zahrnovat také práci, kde mají řádky práce jinou jednotku než *ks* (např. *krabice* nebo *paleta* ). Dotaz vyloučí pouze práci, kde nemá žádný řádek práce nastavenou jednotku práce *ks*.
+Dotazy na řazení práce řízené systémem jsou *inkluzivní*. Na tuto skutečnost při nastavování nezapomínejte. Například chcete, aby konkrétní položka nabídky zpracovávala pouze práci, kde je jako jednotka práce *ks* a zadáte toto omezení na kartě **Oblast** dotazu. V tom případě všechny práce, kde má alespoň jeden řádek práce nastavenou jednotku *ks*, budou předloženy pracovníkovi. Tato práce proto může zahrnovat také práci, kde mají řádky práce jinou jednotku než *ks* (např. *krabice* nebo *paleta*). Dotaz vyloučí pouze práci, kde nemá žádný řádek práce nastavenou jednotku práce *ks*.
 
 Proto bylo v příkladu v tomto scénáři ID práce *4* také zachyceno dotazem. Při vytvoření byly přidány dva řádky: jeden pro 25 ks druhý pro 10 ks. Práce je prezentována uživateli, protože alespoň jeden řádek práce má množství menší než 20 ks.
 

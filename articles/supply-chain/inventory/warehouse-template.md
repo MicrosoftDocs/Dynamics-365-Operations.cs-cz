@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204003"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424065"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Nastavení skladu s použitím šablony konfigurace skladu
 
@@ -60,7 +60,7 @@ V tomto scénáři již existují v testovacím prostředí nastavení konfigura
 2. Vyberte dlaždici **Šablony** a poté vyberte **Načíst výchozí šablony** pro načtení výchozích šablon.
 
     > [!NOTE]
-    > Možnost **Načíst výchozí šablony** je dostupné pouze v zobrazení **Rozšířené**. Vyberte **Parametry architektury**a poté v poli **Zobrazit výchozí** vyberte **Rozšířené zobrazení**.
+    > Možnost **Načíst výchozí šablony** je dostupné pouze v zobrazení **Rozšířené**. Vyberte **Parametry architektury** a poté v poli **Zobrazit výchozí** vyberte **Rozšířené zobrazení**.
 
 3. Poté, co jsou načteny výchozí šablony, je lze změnit tak, aby splňovaly vaše obchodní požadavky.
 
@@ -70,7 +70,7 @@ V tomto scénáři již existují v testovacím prostředí nastavení konfigura
 4. Ujistěte se, že se nacházíte v právnické osobě, ze které chcete exportovat data specifická pro společnost.
 5. V pracovním prostoru vyberte **Exportovat**.
 6. Vytvořte nový projekt exportu.
-7. Vyberte **+ Přidat šablonu**a vyhledejte výchozí šablonu skladu **400 - WMS**. Tato šablona přidá entity dat pro konfiguraci skladu.
+7. Vyberte **+ Přidat šablonu** a vyhledejte výchozí šablonu skladu **400 - WMS**. Tato šablona přidá entity dat pro konfiguraci skladu.
 
     > [!NOTE]
     > Je-li nutné filtrovat exportovaná data (například chcete exportovat pouze data, která souvisí s určitým skladem), je nutné vyhodnotit každou datovou entitu a přidat filtrování pomocí dotazu. Případně můžete exportovat všechna data a potom odstranit záznamy, které nejsou vyžadovány v cílových souborech.
@@ -88,7 +88,7 @@ U datového balíčku můžete stáhnout soubor ZIP. Tento soubor obsahuje všec
 
 2. V pracovním prostoru **Správa dat** vyberte **Importovat**.
 3. Vytvořte nový projekt importu.
-4. Vyberte **+ Přidat soubor**a odešlete soubor ZIP pro datový balíček.
+4. Vyberte **+ Přidat soubor** a odešlete soubor ZIP pro datový balíček.
 5. Vyberte **Import**. V zobrazení **Rozšířené** můžete použít možnost **Filtr**, abyste rychle získali přehled o problémech, které mohou nastat během importu.
 
 Možnost **Zobrazit protokol provádění** obsahuje podrobné informace o každé datové entitě, která je importována. Můžete použít zobrazení dat fázování, abyste se dostali rychle k cílovým datům. V takovém případě se zobrazí, jak vypadají importovaná data na souvisejících stránkách v aplikaci. Při použití výchozích datových šablon pracuje pořadí importu pro každou datovou entitu předem definovaným způsobem, aby se zajistilo, že všechna závislá data budou importována nejdříve. Jsou-li vlastní datové entity součástí projektu, je třeba zkontrolovat, že je definováno správné pořadí. Další informace naleznete v tématu[Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md).

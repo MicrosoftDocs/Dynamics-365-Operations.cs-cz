@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986472"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423827"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Přidání omezení výrazu do modelu konfigurace produktu
 
@@ -44,7 +44,7 @@ Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konf
 ## <a name="enter-expression"></a>Zadat výraz
 1. Klepněte na Upravit výraz.
     * Pokud odemknete uživatelské rozhraní v záznamu úkolů v této fázi, můžete používat IntelliSense a seznam symbolů k vytváření omezení výrazu.  
-2. V poli Základ omezení zadejte hodnotu „Implikuje [Přední mřížka == "Kov", Ochrana rohu]“.
+2. V poli Základ omezení zadejte hodnotu „Implikuje[Přední mřížka == "Kov", Ochrana rohu]“.
     * Tento logický výraz uvádí: Pokud přední mřížka je kovová, je nutné vybrat možnost ochrany rohu.  
 3. Klikněte na tlačítko Ověřit.
     * Ověřovací funkce je spuštěna prostřednictvím omezení výrazu a kontroluje chyby syntaxe.  

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9dee8e40de43480cd010b5acc41a3d87611c2ab6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981601"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423956"
 ---
 # <a name="cost-groups"></a>Nákl. skupiny
 
@@ -42,14 +42,14 @@ Termín segmentace nákladových skupin má ve výrobním prostředí několik d
 
 Rozdělení nákladových skupin do segmentů se týká vypočtených nákladů vyráběné položky bez ohledu na to, zda byly ceny založeny na standardních nebo na plánovaných nákladech. Stránka **Souhrn** obsahuje toto rozdělení podle nákladových skupin, podle úrovní nebo podle nákladové skupiny i úrovně. 
 
-Tuto možnost zachování rozdělení nákladových skupin do segmentů přes více úrovní v produktové struktuře odráží termín *rozdělení* . Rozdělení se vztahuje pouze na vyráběné položky, které používají skladový model standardních nákladů. Bez použití rozdělení jsou náklady na vyráběnou součást zpracovávány jako nákladový příspěvek na materiál. Parametr zásob pro rozúčtování nákladů podle dílčí hlavní knihy indikuje, že rozdělení nákladových skupin do segmentů bude zachováno ve více úrovních ve standardních výpočtech nákladů. Zatímco zásady bez udané úrovně značí, že rozdělení skupiny nákladů do segmentu se bude vztahovat pouze na výpočty na jedné úrovni. Na stránce **Shrnutí nákladů podle skupiny nákladů** bude například zobrazeno rozdělení nákladových skupin do segmentů přes více úrovní pro standardní nákladové položky. 
+Tuto možnost zachování rozdělení nákladových skupin do segmentů přes více úrovní v produktové struktuře odráží termín *rozdělení*. Rozdělení se vztahuje pouze na vyráběné položky, které používají skladový model standardních nákladů. Bez použití rozdělení jsou náklady na vyráběnou součást zpracovávány jako nákladový příspěvek na materiál. Parametr zásob pro rozúčtování nákladů podle dílčí hlavní knihy indikuje, že rozdělení nákladových skupin do segmentů bude zachováno ve více úrovních ve standardních výpočtech nákladů. Zatímco zásady bez udané úrovně značí, že rozdělení skupiny nákladů do segmentu se bude vztahovat pouze na výpočty na jedné úrovni. Na stránce **Shrnutí nákladů podle skupiny nákladů** bude například zobrazeno rozdělení nákladových skupin do segmentů přes více úrovní pro standardní nákladové položky. 
 
 Rozdělení nákladových skupin do segmentů může být použito také na odchylky od standardní nákladové položky. Druhý parametr zásob definuje, zda budou odchylky označeny podle nákladové skupiny nebo zda budou pouze shrnuty. 
 
 Nákladové skupině může být přiřazen typ nákladové skupiny a chování pro účely doplňkového rozdělení do segmentů.
 
 -   **Typ nákladové skupiny** − Ke každé nákladové skupině musí být přiřazen typ nákladové skupiny, který označuje nákladovou skupinu jako týkající se přímého materiálu, přímého outsorcingu nebo navržení jako nepřímé či nedefinované výroby. Nákladovou skupinu označenou jako týkající se přímého materiálu lze přiřadit k položkám. Nákladovou skupinu přímé výroby lze přiřadit k nákladovým kategoriím. Nákladová skupina přímého outsourcingu může být přiřazena k typu produktu služby, která umožňuje klasifikaci nákladů souvisejících s nákupem služby pro subdodavatelské aktivity. Nepřímou nákladovou skupinu lze přiřadit k nepřímým nákladům pro příplatky nebo sazby. Nákladovou skupinu, která je označena jako nedefinovaná, lze přiřadit k položkám, nákladovým kategoriím nebo nepřímým nákladům. Přiřazení typu nákladové skupiny slouží několika účelům. Zaprvé omezuje možnost přiřazení nákladové skupiny a zobrazení seznamu použitelných nákladových skupin. Za druhé poskytuje doplňkovou segmentaci pro účely vykazování. Za třetí jej lze použít pro přiřazení účtů hlavní knihy pro různé odchylky.
--   **Chování** − Ke každé nákladové skupině lze volitelně přiřadit určité chování, které označuje danou nákladovou skupinu jako týkající se pevných nebo variabilních nákladů. Nákladová skupina s chováním s hodnotou Null je zpracována jako skupina variabilních nákladů. Přiřazení chování slouží pouze k účelům vykazování. Náklady lze například zobrazit s rozdělením na segmenty pevných a variabilních nákladů v nákladovém formuláři nebo na **Shrnutí nákladů podle skupiny nákladů** . Pokud přiřadíte podíl nastavení zisku pro každou nákladovou skupinu, výpočet kusovníku lze použít pro návrh prodejní ceny na základě vzorce: náklady plus přirážka.
+-   **Chování** − Ke každé nákladové skupině lze volitelně přiřadit určité chování, které označuje danou nákladovou skupinu jako týkající se pevných nebo variabilních nákladů. Nákladová skupina s chováním s hodnotou Null je zpracována jako skupina variabilních nákladů. Přiřazení chování slouží pouze k účelům vykazování. Náklady lze například zobrazit s rozdělením na segmenty pevných a variabilních nákladů v nákladovém formuláři nebo na **Shrnutí nákladů podle skupiny nákladů**. Pokud přiřadíte podíl nastavení zisku pro každou nákladovou skupinu, výpočet kusovníku lze použít pro návrh prodejní ceny na základě vzorce: náklady plus přirážka.
 
 
 

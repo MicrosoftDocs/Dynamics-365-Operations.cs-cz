@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 1025dd00db2e8b87e3c76e3047a7cf470a2d6641
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829794"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423608"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kódy důvodů pro inventury zásob
 
@@ -103,7 +103,7 @@ Kódy důvodů jsou přidány do řádků deníku v denících inventur tyou **D
 ### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Použití kódu důvodů pro úpravu množství
 
 1. Na stránce **Zásoby na skladě** vyberte **Upravit množství**. Můžete otevřít stránku **Zásoby na skladě** několika způsoby. Například zvolte **Řízení zásob** \> **Dotazy a sestavy** \> **Zásoby na skladě**.
-2. Zvolte **Upravit množství**a pak v poli **Kód důvodů inventury** vyberte kód důvodu.
+2. Zvolte **Upravit množství** a pak v poli **Kód důvodů inventury** vyberte kód důvodu.
 
 ### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Konfigurace kódů důvodů pro položky nabídky mobilního zařízení
 
@@ -131,7 +131,7 @@ Před schválením inventury uživatel může změnit kód důvodu, který je p�
 ### <a name="modify-cycle-count-approvals"></a>Úprava schválení cyklické inventury
 
 1. Vyberte **Řízení skladu** \> **Cyklická inventura** \> **Cyklická inventura práce čeká na kontrolu**.
-2. Zvolte **Cyklická inventura**a pak v poli **Kód důvodu** vyberte nový kód důvodu.
+2. Zvolte **Cyklická inventura** a pak v poli **Kód důvodu** vyberte nový kód důvodu.
 
 ### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Úprava položky nabídky mobilního zařízení pro příchozí a odchozí úpravu
 

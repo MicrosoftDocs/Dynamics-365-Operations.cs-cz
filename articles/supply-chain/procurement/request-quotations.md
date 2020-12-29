@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018392"
+ms.locfileid: "4424227"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Přehled požadavků na nabídku
 
@@ -44,7 +44,7 @@ Následující obrázek přehledně znázorňuje průběh procesu požadavku na 
 
 Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, z nákupní žádanky nebo ručním zadáním. Případ požadavku na nabídku je základní dokument, který použijete k vystavení požadavku na nabídku pro každého dodavatele.
 
-Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** ( **Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
+Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
 V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
@@ -130,12 +130,12 @@ Vytvořte případ požadavku na nabídku, vyberte dodavatele, který má zadat 
 
 Můžete ručně vytvořit případ požadavku na nabídku nákupního typu **Nákupní objednávka** nebo **Nákupní smlouva**.
 
-Jestliže je případ požadavku na nabídku typu **nákupní objednávka** , bude se následující chování lišit od jiných typů případů požadavku na nabídku:
+Jestliže je případ požadavku na nabídku typu **nákupní objednávka**, bude se následující chování lišit od jiných typů případů požadavku na nabídku:
 
 - Při vytvoření řádků případu požadavku na nabídku se vytvoří skladové transakce, které mají stav příjmu **Příjem nabídky**.
 - Při přijetí nabídky je vygenerována nákupní objednávka.
 
-Jestliže je požadavek na nabídku typu **nákupní smlouva** , bude se následující chování lišit od jiných typů případů požadavku na nabídku:
+Jestliže je požadavek na nabídku typu **nákupní smlouva**, bude se následující chování lišit od jiných typů případů požadavku na nabídku:
 
 - Případ požadavku na nabídku se používá pro dohodu o nákupu určitého množství nebo hodnoty produktu během času. Musíte vybrat rozsah dat, který se týká nákupní smlouvy a jména osoby, která spravuje nákupní smlouvu.
 - Při přijetí nabídky je vygenerována nákupní smlouva.
@@ -148,7 +148,7 @@ Pokud vytvoříte případ požadavku na nabídku, můžete vybrat typ oslovení
 
 K případu požadavku na nabídku můžete přiřadit dotazník. Tento dotazník se objeví na všech odpovědích RFQ po odeslání požadavku na nabídku. Vyplnění dotazníku je povinný úkol předtím, než může být nabídka odeslána.
 
-I když jsou k dispozici výchozí hodnoty, můžete podle potřeby změnit nastavení **Pole požadavku na nabídku obsažená ve formulářích odpovědí dodavatelů na tyto požadavky** pro každý jednotlivý případ požadavku na nabídku. Chcete-li tak učinit, vytvořte nebo otevřete konkrétní případ požadavku na nabídku. Poté v podokně akcí otevřete kartu **Nabídka** a v části **Odpovědi** vyberte **Nastavit výchozí hodnoty odpovědí v požadavku na nabídku**. Otevře se dialogové okno **Výchozí požadavek na pole odpovědi na nabídku** , které funguje stejně jako při nastavování výchozích hodnot pro formuláře odpovědí dodavatele na požadavek – s tím rozdílem, že zde provedené změny ovlivní pouze aktuální případ žádosti o nabídku. Podrobnosti o tom, jak tuto funkci povolit a jak funguje, najdete v části [Výběr výchozích polí, která chcete zahrnout do formulářů pro odpověď dodavatele na požadavku na nabídku](#default-reply-fields).
+I když jsou k dispozici výchozí hodnoty, můžete podle potřeby změnit nastavení **Pole požadavku na nabídku obsažená ve formulářích odpovědí dodavatelů na tyto požadavky** pro každý jednotlivý případ požadavku na nabídku. Chcete-li tak učinit, vytvořte nebo otevřete konkrétní případ požadavku na nabídku. Poté v podokně akcí otevřete kartu **Nabídka** a v části **Odpovědi** vyberte **Nastavit výchozí hodnoty odpovědí v požadavku na nabídku**. Otevře se dialogové okno **Výchozí požadavek na pole odpovědi na nabídku**, které funguje stejně jako při nastavování výchozích hodnot pro formuláře odpovědí dodavatele na požadavek – s tím rozdílem, že zde provedené změny ovlivní pouze aktuální případ žádosti o nabídku. Podrobnosti o tom, jak tuto funkci povolit a jak funguje, najdete v části [Výběr výchozích polí, která chcete zahrnout do formulářů pro odpověď dodavatele na požadavku na nabídku](#default-reply-fields).
 
 Máte na výběr tři způsoby, jak vybrat dodavatele a přidat jej k případu požadavku na nabídku:
 
@@ -158,7 +158,7 @@ Máte na výběr tři způsoby, jak vybrat dodavatele a přidat jej k případu 
 
 Jakmile je případ požadavku na nabídku připraven, zvolte **Odeslat**. Akce Odeslat vytvoří deník a sestavy, které budou vytištěny, archivovány a odeslány podle nastavení tisku.
 
-Pokud jste nastavili pole **Použít dodavatele pro přepočítávání cen** a **Použít informace o položce specifické pro dodavatele** na **Ano** na stránce **Odesílání požadavku na nabídku** , když jste odeslali požadavek na nabídku dodavateli, některé informace pro konkrétní dodavatele budou automaticky doplněny v RFQ pro daného dodavatele.
+Pokud jste nastavili pole **Použít dodavatele pro přepočítávání cen** a **Použít informace o položce specifické pro dodavatele** na **Ano** na stránce **Odesílání požadavku na nabídku**, když jste odeslali požadavek na nabídku dodavateli, některé informace pro konkrétní dodavatele budou automaticky doplněny v RFQ pro daného dodavatele.
 
 ## <a name="amending-an-rfq-case"></a>Doplnění případu požadavku na nabídku
 
@@ -166,7 +166,7 @@ V některých případech je nutné případ žádosti o nabídku změnit po ode
 
 Pokud konfigurujete proces dodatku tak, aby byl více omezující, před úpravou polí v případu požadavku na nabídku, která již byla odeslán, je nutné vybrat **Vytvořit** v případu požadavku na nabídku pro zahájení dodatku. Po dokončení změn je nutné zvolit **Dokončit**. Poté bude provedeni procesem přidání informací pro e-mail, který bude odeslán pro upozornění dodavatelů na změnu. Aktualizovaná sestava požadavku na nabídku, která zahrnuje poznámku o změně, je automaticky přiřazena k e-mailu.
 
-Pokud nakonfigurujete proces dodatku tak, aby byl méně omezující, nemusíte zvolit **Vytvořit** předtím, než bude možné upravit pole v případu požadavku na nabídku, který již byl odeslán. Musíte však ručně přidat poznámku o změně do požadavku na nabídku a odeslat případ znovu. Počítejte s tím, že tento přístup lze použít pouze v případě, že žádná z odpovědí (nabídek) nebyla upravována. Pokud jste zadali odpověď a je ve stavu **Přijato** , tlačítko **Odeslat** není k dispozici. V takovém případě je nutné vybrat **Vytvořit** a pak **Dokončit** , jako to musíte provést ve více omezujícím procesu. Odpověď se potom resetuje, aby odrážela změny případu požadavku na nabídku.
+Pokud nakonfigurujete proces dodatku tak, aby byl méně omezující, nemusíte zvolit **Vytvořit** předtím, než bude možné upravit pole v případu požadavku na nabídku, který již byl odeslán. Musíte však ručně přidat poznámku o změně do požadavku na nabídku a odeslat případ znovu. Počítejte s tím, že tento přístup lze použít pouze v případě, že žádná z odpovědí (nabídek) nebyla upravována. Pokud jste zadali odpověď a je ve stavu **Přijato**, tlačítko **Odeslat** není k dispozici. V takovém případě je nutné vybrat **Vytvořit** a pak **Dokončit**, jako to musíte provést ve více omezujícím procesu. Odpověď se potom resetuje, aby odrážela změny případu požadavku na nabídku.
 
 Pokud dodavatelé používají rozhraní dodavatelské spolupráce k zadávání nabídek, musíte vždy použít proces dodatku, abyste informovali dodavatele o změnách případu požadavku na nabídku. Tento proces pomáhá zabránit situaci, kdy dodavatelé vytvoří nabídku na zastaralý případ požadavku na nabídku, zatímco probíhá jejich nabídka. Další informace o dodavatelské spolupráci naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
@@ -174,7 +174,7 @@ Pokud chcete pozvat další dodavatele k nabídce a nebyly provedeny žádné zm
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Příjem a registrace odpovědí na RFQ
 
-Při odeslání požadavku na nabídku se automaticky vytvoří list odpovědi. Jakmile dostáváte nabídky v požadavku na nabídku, musíte je zadat prostřednictvím stránky **Požadavek na nabídku** kliknutím na akci **Upravit odpověď RFQ**. To vám umožní zadat informace o nabídce ve formě vyhrazený nabídky. Zpočátku bude **průběh odpovědi** **Nezahájeno**. Po klepnutí na tlačítko **Upravit odpověď RFQ** bude stav pokroku **Aktualizuje se nákupčí** , dokud nabídka nebude odeslána. Klepněte na tlačítko **odeslat** poté, co zadáte informace nabídky. Stav průběhu odpovědi se změní na **odesláno nákupčím.** Podobně platí, že když je povolena spolupráce s dodavatelem, bude se **průběh odpovědi** aktualizovat s tím, jak se dodavatel na nabídce podílí. Stav se pak změní z **Aktualizuje se dodavatel** na **odeslané dodavatelem**. Při odeslání nabídky je vytvořen deník jako **přijato**. Odpověď (nabídka) musí být odeslána za účelem registrace jako přijaté, a teprve poté ji lze dále upravovat jako přijatou nebo odmítnutou.
+Při odeslání požadavku na nabídku se automaticky vytvoří list odpovědi. Jakmile dostáváte nabídky v požadavku na nabídku, musíte je zadat prostřednictvím stránky **Požadavek na nabídku** kliknutím na akci **Upravit odpověď RFQ**. To vám umožní zadat informace o nabídce ve formě vyhrazený nabídky. Zpočátku bude **průběh odpovědi** **Nezahájeno**. Po klepnutí na tlačítko **Upravit odpověď RFQ** bude stav pokroku **Aktualizuje se nákupčí**, dokud nabídka nebude odeslána. Klepněte na tlačítko **odeslat** poté, co zadáte informace nabídky. Stav průběhu odpovědi se změní na **odesláno nákupčím.** Podobně platí, že když je povolena spolupráce s dodavatelem, bude se **průběh odpovědi** aktualizovat s tím, jak se dodavatel na nabídce podílí. Stav se pak změní z **Aktualizuje se dodavatel** na **odeslané dodavatelem**. Při odeslání nabídky je vytvořen deník jako **přijato**. Odpověď (nabídka) musí být odeslána za účelem registrace jako přijaté, a teprve poté ji lze dále upravovat jako přijatou nebo odmítnutou.
 
 Pokud potřebujete aktualizovat nabídku, je třeba projít stejným procesem, jaký je uveden výše, a znovu odeslat.
 
@@ -197,7 +197,7 @@ Při přijetí nabídky nebo jedné či více řádek v nabídce se automaticky 
 
 V odpovědi můžete přidat kód důvodu vysvětlující příčinu přijetí nebo odmítnutí nabídky.
 
-Pokud přijmete nabídku typu **Nákupní žádanka** , budou řádky nákupní žádanky aktualizovány o následující informace, které odrážejí informace na přijaté nabídce:
+Pokud přijmete nabídku typu **Nákupní žádanka**, budou řádky nákupní žádanky aktualizovány o následující informace, které odrážejí informace na přijaté nabídce:
 
 - Jedn. cena
 - Procento slevy

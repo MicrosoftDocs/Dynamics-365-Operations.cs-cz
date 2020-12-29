@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015888"
+ms.locfileid: "4424191"
 ---
 # <a name="work-line-details"></a>Podrobnosti řádku práce
 
@@ -42,7 +42,7 @@ Chcete-li zobrazit seznam podrobností řádku práce, přejděte na **Řízení
 
 - Pole **Filtr** umožňuje hledat řádky, jež obsahují konkrétní hodnotu některého z dostupných parametrů. (Dostupné parametry zahrnují mnoho parametrů, jež nejsou zobrazeny, například sloupce v mřížce.)
 - Přepínám pomocí zaškrtávacího políčka **Zobrazit uzavřené** můžete zobrazit nebo skrýt uzavřené řádky.
-- Volbou **Zobrazit dimenze** můžete otevřít dialogové okno **Zobrazení dimenzí** , kde můžete vybrat, zda chcete zobrazit nebo skrýt sloupce různých dimenzí v mřížce.
+- Volbou **Zobrazit dimenze** můžete otevřít dialogové okno **Zobrazení dimenzí**, kde můžete vybrat, zda chcete zobrazit nebo skrýt sloupce různých dimenzí v mřížce.
 - Výběrem libovolného záhlaví sloupce otevřete nabídku, kde si můžete vybrat třídění nebo filtrování seznamu podle hodnot v příslušném sloupci.
 - Vyberte řádek práce a poté položku **Změnit skladové místo**. Otevře se dialogové okno, v němž můžete změnit skladové místo tohoto řádku práce. Skladové místo, které určíte, přepíše nastavení podle směrnice skladového místa.
 - Vyberte řádek práce a poté možnost **Zrušit řádek práce**. Otevře se dialogové okno, v němž můžete částečně nebo úplně zredukovat množství v daném řádku práce.
@@ -61,7 +61,7 @@ Tuto ukázku můžete také použít jako vodítko při práci na produkčním s
 
 ### <a name="verify-that-the-scenario-setup-includes-enough-available-inventory"></a>Ověření, že nastavení scénáře obsahuje dostatečné dostupné zásoby
 
-Pokud pracujete s ukázkovými daty **USMF** , měli byste se nejprve ujistit, že je váš systém nastaven tak, aby na každém relevantním skladovém místě pro výdej byly k dispozici dostatečné zásoby. V rámci této ukázky se očekává, že budete mít k dispozici následující zásoby:
+Pokud pracujete s ukázkovými daty **USMF**, měli byste se nejprve ujistit, že je váš systém nastaven tak, aby na každém relevantním skladovém místě pro výdej byly k dispozici dostatečné zásoby. V rámci této ukázky se očekává, že budete mít k dispozici následující zásoby:
 
 - **Položka M9200:** 45 ks (nebo více)
 - **Položka M9202:** 10 ks (nebo více)
@@ -85,7 +85,7 @@ Při vytváření práce výdeje postupujte takto:
     - Na záložce s náhledem **Odběratel** zadejte do pole **Účet odběratele** hodnotu _US-001_.
     - Na záložce s náhledem **Obecné** zadejte do pole **Sklad** hodnotu _51_.
 
-1. Vyberte **OK** , prodejní objednávka se vytvoří a dialogové okno se zavře.
+1. Vyberte **OK**, prodejní objednávka se vytvoří a dialogové okno se zavře.
 1. Otevře se nová prodejní objednávka. Obsahuje nový prázdný řádek v mřížce **Řádky prodejních objednávek**. Na tomto řádku nastavte následující hodnoty:
 
     - **Číslo položky:** _M9200_
@@ -98,8 +98,8 @@ Při vytváření práce výdeje postupujte takto:
 1. V podokně Akce na kartě **Sklad** vyberte možnost **Uvolnit do skladu**. Systém vytvoří dodávku, přidá ji k novému nákladu a vytvoří požadovanou práci.
 1. Vytvořte druhou prodejní objednávku pro stejný účet odběratele a sklad, jaké jste použili pro první objednávku. K této objednávce přidejte následující dva řádky objednávky:
 
-    - **Řádek 1:** Nastavte v poli **Číslo položky** hodnotu _M9200_ , v poli **Množství** hodnotu _25_ a v poli **Jednotka** hodnotu _ks_.
-    - **Řádek 2:** Nastavte v poli **Číslo položky** hodnotu _M9202_ , v poli **Množství** hodnotu _10_ a v poli **Jednotka** hodnotu _ks_.
+    - **Řádek 1:** Nastavte v poli **Číslo položky** hodnotu _M9200_, v poli **Množství** hodnotu _25_ a v poli **Jednotka** hodnotu _ks_.
+    - **Řádek 2:** Nastavte v poli **Číslo položky** hodnotu _M9202_, v poli **Množství** hodnotu _10_ a v poli **Jednotka** hodnotu _ks_.
 
 1. Zopakujte kroky 6 až 8 a rezervujte zásoby pro každý řádek objednávky (vždy po jednom). Poté zopakujte krok 9 a uvolněte objednávku do skladu.
 
@@ -109,7 +109,7 @@ Při vytváření práce výdeje postupujte takto:
 1. Najděte a vyberte jeden řádek práce, který jste v rámci této ukázky vytvořili.
 1. Vyberte možnost **Změnit skladové místo**. Otevře se dialogové okno **Výběr nového skladového místa**.
 1. V dialogovém okně **Výběr nového skladového místa** vyberte v poli **Skladové místo** nové skladové místo pro řádek práce.
-1. Vyberte **OK** , pokud chcete změnu použít. Dialogové okno se zavře.
+1. Vyberte **OK**, pokud chcete změnu použít. Dialogové okno se zavře.
 
 > [!IMPORTANT]
 > Změnu skladového místa můžete zadat, pouze když je na novém skladovém místě k dispozici dostatek zásob (pro výdej) nebo pokud skladové místo předává ověření typu skladového místa (pro vložení).
@@ -118,13 +118,13 @@ Při vytváření práce výdeje postupujte takto:
 
 1. Přejděte do nabídky **Řízení skladu \> Práce \> Podrobnosti řádku práce**.
 1. Najděte a vyberte jeden řádek práce, který jste v rámci této ukázky vytvořili. Množství můžete zrušit nebo změnit pouze pro řádky práce, kde je typ práce _Výdej_.
-1. Vyberte možnost **Zrušit řádek práce** , otevře se dialogové okno **Množství ke zrušení**.
+1. Vyberte možnost **Zrušit řádek práce**, otevře se dialogové okno **Množství ke zrušení**.
 1. V dialogovém okně **Množství ke zrušení** zadejte do pole **Množství** hodnotu odpovídající množství, jež se má *odečíst od* množství, jež je na řádku aktuálně zadáno. Ve výchozím nastavení se v poli **Množství** zobrazuje plné množství.
 
     - Pokud zrušíte celé množství, změní se hodnota položky **Stav práce** na _Zrušeno_. V poli **Množství práce** se ale bude stále zobrazovat původní hodnota.
     - Pokud zrušíte pouze část množství, hodnota v poli **Množství práce** se změní a bude zobrazovat novou hodnotu, Hodnota **Stav práce** se nezmění.
 
-1. Vyberte **OK** , pokud chcete změnu použít. Dialogové okno se zavře.
+1. Vyberte **OK**, pokud chcete změnu použít. Dialogové okno se zavře.
 
 > [!IMPORTANT]
 > Pokud zrušíte jen část množství řádku práce, musíte také odstranit již neplatné množství z řádku nákladu. V opačném případě, pokud nebude dodávka nastavena správně, nebude možné potvrdit řádek nákladu k odeslání.

@@ -17,17 +17,17 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017177"
+ms.locfileid: "4424138"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidace zboží - Využití skladového místa
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky **Konsolidace položek** , aby konsolidovali položky, a proto lépe využívali skladové prostory.
+Toto téma poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky **Konsolidace položek**, aby konsolidovali položky, a proto lépe využívali skladové prostory.
 
 ## <a name="turn-on-the-features"></a>Zapnutí funkcí
 
@@ -73,7 +73,7 @@ Tato část popisuje, jak připravit systém k použití konsolidace položek a 
 1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Profily skladových míst**.
 1. V seznamu profilů polohy vyberte možnost **FLOOR-05**.
 1. V podokně akcí vyberte **Upravit**.
-1. Na pevné záložce **Všeobecné** se ujistěte, že jsou obě následující možnosti nastaveny na *Ano* :
+1. Na pevné záložce **Všeobecné** se ujistěte, že jsou obě následující možnosti nastaveny na *Ano*:
 
     - Povolit položku v umístění
     - Povolit stav umístění
@@ -81,7 +81,7 @@ Tato část popisuje, jak připravit systém k použití konsolidace položek a 
 1. Zvolte **Uložit**.
 
     > [!IMPORTANT]
-    > Pokud již možnosti **Povolit položku na místě** a **Povolit stav místa** byly nastaveny na *Ano* , přeskočte na pokyny pro nastavení pevné záložky **Rozměry** v kroku 10. Pokud možnosti ještě nebyly nastaveny na *Ano* , musíte provést kontrolu konzistence modulu **Správa skladu** poté, co je nastavíte ručně. V takovém případě pokračujte dalším krokem.
+    > Pokud již možnosti **Povolit položku na místě** a **Povolit stav místa** byly nastaveny na *Ano*, přeskočte na pokyny pro nastavení pevné záložky **Rozměry** v kroku 10. Pokud možnosti ještě nebyly nastaveny na *Ano*, musíte provést kontrolu konzistence modulu **Správa skladu** poté, co je nastavíte ručně. V takovém případě pokračujte dalším krokem.
 
 1. Chcete-li spustit kontrolu konzistence, přejděte na **Správa systému \> Periodické úkoly \> Databáze \> Kontrola konzistence**.
 1. V dialogovém okně **Kontrola konzistence** nastavte následující hodnoty:
@@ -98,7 +98,7 @@ Tato část popisuje, jak připravit systém k použití konsolidace položek a 
     >
     > Pokud se ve zprávě pro kontrolu konzistence uvádí: „Byly nalezeny nesprávné informace o stavu umístění pro umístění XXXX ve skladu XX“, musíte znovu spustit kontrolu konzistence. Tentokrát nastavte **Kontrola / oprava** na *Opravit chybu*. Zobrazte zprávy a ujistěte se, že nebyly nalezeny žádné chyby.
 
-1. Nyní musíte dokončit nastavení profilu místa. Přejděte zpět na **Správa skladu \> Nastavení \> Sklad \> Profily umístění** , vyberte profil místa **FLOOR-05** a poté V podokně Akcí vyberte **Upravit**.
+1. Nyní musíte dokončit nastavení profilu místa. Přejděte zpět na **Správa skladu \> Nastavení \> Sklad \> Profily umístění**, vyberte profil místa **FLOOR-05** a poté V podokně Akcí vyberte **Upravit**.
 1. Na záložce s náhledem **Rozměry** nastavte následující hodnoty:
 
     - **Procento využití objemu:** *100*
@@ -113,7 +113,7 @@ Tato část popisuje, jak připravit systém k použití konsolidace položek a 
 ### <a name="mobile-device-menu-items"></a>Položky nabídky mobilního zařízení
 
 1. Přejděte do **Řízení skladu \> Nastavení \> Mobilní zařízení \> Položky nabídky mobilního zařízení**.
-1. V podokně Akce vyberte možnost **Nová** , vytvoří se položka nabídky k třídění.
+1. V podokně Akce vyberte možnost **Nová**, vytvoří se položka nabídky k třídění.
 1. V záhlaví nastavte následující hodnoty:
 
     - **Název položky nabídky:** *Nastavit*
@@ -181,7 +181,7 @@ Následující scénář používá k vytvoření inventáře aplikaci skladu na
 
     Zobrazí se zpráva „Práce dokončena“.
 
-1. Stiskněte tlačítko nabídky (tzv. „hamburgerové tlačítko“ nebo „hamburger“) a vyberte **Storno** , chcete-li opustit úkol **Úprava**.
+1. Stiskněte tlačítko nabídky (tzv. „hamburgerové tlačítko“ nebo „hamburger“) a vyberte **Storno**, chcete-li opustit úkol **Úprava**.
 
 ### <a name="consolidate-locations"></a>Konsolidovat umístění
 

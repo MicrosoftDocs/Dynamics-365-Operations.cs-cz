@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018898"
+ms.locfileid: "4424142"
 ---
 # <a name="procurement-catalogs-overview"></a>Přehled zásobovacího katalogu
 
@@ -64,9 +64,9 @@ Katalog definuje, které produkty jsou k dispozici při vytváření nákupních
 
 Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnosti vybrané v poli **Výchozí typ aktualizace** na stránce **Katalogy**. K dispozici pro katalogy jsou následujících výchozích typy aktualizace:
 
--   **Dynamická** : Katalog se automaticky aktualizuje pokaždé, když se změní.
--   **Statická** : Katalog musíte aktualizovat ručně.
--   **Obě** : Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Statická** , je nutné je aktualizovat ručně při aktualizaci těchto kategorií. Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Dynamická** , aktualizuje se automaticky pokaždé, když se změní.
+-   **Dynamická**: Katalog se automaticky aktualizuje pokaždé, když se změní.
+-   **Statická**: Katalog musíte aktualizovat ručně.
+-   **Obě**: Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Statická**, je nutné je aktualizovat ručně při aktualizaci těchto kategorií. Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Dynamická**, aktualizuje se automaticky pokaždé, když se změní.
 
 
 <a name="additional-resources"></a>Další zdroje

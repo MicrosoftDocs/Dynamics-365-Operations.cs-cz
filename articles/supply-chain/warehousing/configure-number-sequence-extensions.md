@@ -4,7 +4,7 @@ description: Toto téma poskytuje přehled funkcí, které poskytují rozšíře
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016118"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4424255"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Nakonfigurujte sekvence čísel pro toky skladu
 
@@ -64,7 +64,7 @@ Chcete-li v systému nastavit rozšíření číselných sekvencí, postupujte t
     Další informace o tom, jak přizpůsobit tyto výchozí číselné sekvence a / nebo přidat nové sekvence, naleznete v další části. Můžete také odstranit kteroukoli z těchto sekvencí, pokud je nepotřebujete.
 
 1. Přejděte zpět na **Řízení skladu \> Nastavení \> Parametry řízení skladu**.
-1. Na kartě **Číselné sekvence** vyberte příslušné rozšíření sekvence čísel, která se použije pro generování čísel pro vaše poznávací značky, ID popisků vlny, ID kontejnerů (v tomto případě vyberte příslušnou sekvenci **Číslo SSCC-18** ) a / nebo BOL ID (v tomto případě vyberte sekvenci **BOL** ). Ve výchozím nastavení jsou rozšíření číselných sekvencí podporována pouze pro tyto čtyři typy ID.
+1. Na kartě **Číselné sekvence** vyberte příslušné rozšíření sekvence čísel, která se použije pro generování čísel pro vaše poznávací značky, ID popisků vlny, ID kontejnerů (v tomto případě vyberte příslušnou sekvenci **Číslo SSCC-18**) a / nebo BOL ID (v tomto případě vyberte sekvenci **BOL**). Ve výchozím nastavení jsou rozšíření číselných sekvencí podporována pouze pro tyto čtyři typy ID.
 
 Při příštím vygenerování nového čísla pro jednu z těchto číselných sekvencí bude použita nová logika.
 
@@ -85,10 +85,10 @@ Chcete-li vytvořit a upravit posloupnosti čísel, postupujte takto.
     | Typ segmentu | popis |
     |---|---|
     | Konstanta | Tento typ segmentu přidá stejný konstantní text pro každé vygenerované číslo v sekvenci. V poli **Hodnota** zadejte požadovaný text. Pole **Délka** je automaticky aktualizováno na délku textu, který jste zadali do pole **Hodnota**. |
-    | Číselná řada | V poli **Hodnota** zadejte číselný znak ( *\#* ) pro každý znak, který by měl být zobrazen ve vygenerované sekvenci. Samotná posloupnost čísel může generovat delší čísla, ale zobrazí se pouze ty nejprávnější znaky. Pole **Délka** je automaticky aktualizováno na počet číselných znaků, který jste zadali do pole **Hodnota**.<p>Chcete-li splnit požadavky GS1 pro čísla SSCC-18, ujistěte se, že délka tohoto segmentu je 16 minus délka předpony GS1.</p> |
+    | Číselná řada | V poli **Hodnota** zadejte číselný znak (*\#*) pro každý znak, který by měl být zobrazen ve vygenerované sekvenci. Samotná posloupnost čísel může generovat delší čísla, ale zobrazí se pouze ty nejprávnější znaky. Pole **Délka** je automaticky aktualizováno na počet číselných znaků, který jste zadali do pole **Hodnota**.<p>Chcete-li splnit požadavky GS1 pro čísla SSCC-18, ujistěte se, že délka tohoto segmentu je 16 minus délka předpony GS1.</p> |
     | Předpona GS1 | Tento typ segmentu přidá hodnotu nastavenou v poli **Předpona společnosti GS1** na stránce **Parametry správy skladu**. Pole **Hodnota** zobrazuje hodnotu, která je nastavena na stránce **Parametry správy skladu** a pole **Délka** zobrazuje počet znaků v hodnotě. Pole **Hodnota** i **Délka** jsou jen pro čtení. |
     | Aplikační identifikátor | V poli **Hodnota** zadejte identifikátor aplikace, jak je stanoveno v příslušných zásadách GS1 pro tento typ číselné sekvence. Například zadejte *00* pro SSCC nebo *420* pro BOL. Pole **Délka** je automaticky aktualizováno na délku identifikátoru, který jste zadali do pole **Hodnota**. |
-    | Typ balení | U položek, které lze jasně identifikovat, přidá tento typ segmentu hodnotu pole z příslušné skupiny sekvencí jednotek (ze stránky **Skupiny sekvencí jednotek** ). (Toto chování odpovídá existující logice pro ID poznávacích značek.) U poznávacích značek, které zahrnují více jednotek uchovávání zásob (SKU), tento typ segmentu přidá *0* (nula) ve výchozím nastavení. Pro tento typ segmentu je pole **Hodnota** je vždy nastaveno na *P* a pole **Délka** je vždy nastaveno na *1*.|
-    | Kontrolní číslice | Tento typ segmentu přidá kontrolní číslici, což je výpočet modulo 10. (Toto chování odpovídá existující logice pro ID poznávacích značek.) Pro tento typ segmentu je pole **Hodnota** vždy nastaveno na stříšku ( *^* ) a pole **Délka** na *1*. |
+    | Typ balení | U položek, které lze jasně identifikovat, přidá tento typ segmentu hodnotu pole z příslušné skupiny sekvencí jednotek (ze stránky **Skupiny sekvencí jednotek**). (Toto chování odpovídá existující logice pro ID poznávacích značek.) U poznávacích značek, které zahrnují více jednotek uchovávání zásob (SKU), tento typ segmentu přidá *0* (nula) ve výchozím nastavení. Pro tento typ segmentu je pole **Hodnota** je vždy nastaveno na *P* a pole **Délka** je vždy nastaveno na *1*.|
+    | Kontrolní číslice | Tento typ segmentu přidá kontrolní číslici, což je výpočet modulo 10. (Toto chování odpovídá existující logice pro ID poznávacích značek.) Pro tento typ segmentu je pole **Hodnota** vždy nastaveno na stříšku (*^*) a pole **Délka** na *1*. |
 
 1. Chcete-li zobrazit příklad konečného formátu čísla, prohlédněte si pole **Formát** ve spodní části pevné záložky **Segmenty**.

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016164"
+ms.locfileid: "4424173"
 ---
 # <a name="cluster-position-full"></a>Plná pozice seskupení
 
@@ -202,7 +202,7 @@ Měla by být vytvořena dvě ID práce, z nichž každé má dva řádky výdej
 1. Výběrem řádku pro každou prodejní objednávku v něm zobrazíte související informace v mřížce **Řádky**. Poznamenejte si skladové místo, ze kterého bude každá položka vydána.
 1. Přejděte na **Řízení zásob \> Dotazy a sestavy \> Zásoby na skladě**.
 1. V podokně Akce volbou **Dimenze** otevřete dialogové okno **Zobrazení dimenzí**.
-1. Ujistěte se, že jsou zaškrtnuta políčka **Registrační značka** , **Sklad** a **Číslo položky** a poté vyberte **OK**.
+1. Ujistěte se, že jsou zaškrtnuta políčka **Registrační značka**, **Sklad** a **Číslo položky** a poté vyberte **OK**.
 1. V podokně **Filtr** nastavte následující filtry:
 
     - **Číslo položky** – **je jedním z** – *L0101* a *T100*
@@ -224,27 +224,27 @@ Měla by být vytvořena dvě ID práce, z nichž každé má dva řádky výdej
 1. Zadejte ID práce pro prodejní objednávku 2 a přiřaďte jej k pozici seskupení 2.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
 
-    Zobrazí se stránka **ÚKOL: Vytvoření výdeje v seskupení: výdej** , která obsahuje *Položka L0101 2 PL* .
+    Zobrazí se stránka **ÚKOL: Vytvoření výdeje v seskupení: výdej**, která obsahuje *Položka L0101 2 PL* .
 
 Protože profil seskupení nastavil počet pozic na 2, systém vás automaticky přesměruje na první konsolidovaný výdej: dvě palety (PL) položky *L0101*.
 
 Během následujících kroků můžete kdykoli vybrat kartu **Podrobnosti** pro zobrazení dalších informací o úkolu, například výdejního skladovacího místa.
 
-1. Nastavte pole **POLOŽKA** na *L0101*. Tím se potvrdí číslo položky, které je pro tuto položku nabídky požadováno (to jste nakonfigurovali dříve výběrem **Nastavení potvrzení práce** na stránce **Položka nabídky mobilního zařízení** , když jste vytvořili tuto položku nabídky).
+1. Nastavte pole **POLOŽKA** na *L0101*. Tím se potvrdí číslo položky, které je pro tuto položku nabídky požadováno (to jste nakonfigurovali dříve výběrem **Nastavení potvrzení práce** na stránce **Položka nabídky mobilního zařízení**, když jste vytvořili tuto položku nabídky).
 1. Zadejte registrační značku vozidla, která je přidružena k položce ve skladovém místě, ze kterého probíhá výdej. Vyberete si dvě palety.
 1. Nastavte pole **REGISTRAČNÍ ZNAČKA** na *REGISTRAČNÍ ZNAČKA\_VÝDEJ\_01*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
 
     Zobrazí se stránka **ÚKOL: Seřadit: Vytvoření výdeje v seskupení**. Zde seřadíte dvě vyskladněné palety do pozice pro výdej. Tato pozice může být břemeno nebo kontejner, který se používá k oddělení vyskladněných zásob podle prodejní objednávky.
 
-1. Zobrazte podrobnosti pro položku ( *L0101* ) a množství ( *20* ks), které jsou seřazeny na pozici 1 (pro prodejní objednávku 1).
+1. Zobrazte podrobnosti pro položku (*L0101*) a množství (*20* ks), které jsou seřazeny na pozici 1 (pro prodejní objednávku 1).
 1. Nastavte pole **POZICE NENÍ K DISPOZICI** na hodnotu *1*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
-1. Zobrazte podrobnosti pro položku ( *L0101* ) a množství ( *20* ks), které jsou seřazeny na pozici 2 (pro prodejní objednávku 2).
+1. Zobrazte podrobnosti pro položku (*L0101*) a množství (*20* ks), které jsou seřazeny na pozici 2 (pro prodejní objednávku 2).
 1. Nastavte pole **POZICE NENÍ K DISPOZICI** na hodnotu *2*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
 
-    Zobrazí se stránka **ÚKOL: Vytvoření výdeje v seskupení: výdej** , která obsahuje *Položka T0100 7 ks* .
+    Zobrazí se stránka **ÚKOL: Vytvoření výdeje v seskupení: výdej**, která obsahuje *Položka T0100 7 ks* .
 
 V tomto scénáři pozice 1 nemůže přijmout celé množství položek, které je třeba vyskladnit, aby byla splněna prodejní objednávka 1. Pozice musí být označena jako plná. V tomto scénáři provedete částečné vyskladnění druhé položky. Druhá položka bude částečně vyskladněna pro pozici 1 a bude vytvořena nová práce pro vyskladnění zbývajícího množství pro splnění objednávky.
 
@@ -259,10 +259,10 @@ V tomto scénáři pozice 1 nemůže přijmout celé množství položek, které
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
 1. Zadejte registrační značku vozidla, ze které je položka vyskladňována, nastavením pole **REGISTRAČNÍ ZNAČKA** na *LPREPL04*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
-1. Zobrazte podrobnosti pro položku ( *T0100* ) a množství ( *2* ks), které jsou seřazeny na pozici 2 (pro prodejní objednávku 2).
+1. Zobrazte podrobnosti pro položku (*T0100*) a množství (*2* ks), které jsou seřazeny na pozici 2 (pro prodejní objednávku 2).
 1. Nastavte pole **POZICE NENÍ K DISPOZICI** na hodnotu *2*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
-1. Zobrazte podrobnosti pro položku ( *T0100* ) a množství ( *2* ks), které jsou seřazeny na pozici 1 (pro prodejní objednávku 1).
+1. Zobrazte podrobnosti pro položku (*T0100*) a množství (*2* ks), které jsou seřazeny na pozici 1 (pro prodejní objednávku 1).
 1. Nastavte pole **POZICE NENÍ K DISPOZICI** na hodnotu *1*.
 1. Vyberte tlačítko **OK** (symbol zaškrtnutí).
 

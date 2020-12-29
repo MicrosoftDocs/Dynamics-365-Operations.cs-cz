@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016624"
+ms.locfileid: "4424211"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -44,7 +44,7 @@ Tento proces lze také nastavit tak, aby všechny naskenované registrační zna
 
 ## <a name="turn-on-the-quality-check-feature"></a>Zapnutí funkce kontroly kvality
 
-Než můžete použít funkci *Kontrola kvality* , musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než můžete použít funkci *Kontrola kvality*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Kontrola kvality*
@@ -157,8 +157,8 @@ Dále vytvořte pracovní šablonu pro kontrolu kvality.
 
     - **Popis šablony práce:** *51 Kontrola kvality*
 
-1. Chcete-li, aby byla dostupná část **Podrobnosti šablony práce** , klikněte na **Uložit**.
-1. Zatímco nová šablona je stále vybrána v části **Přehled** , vyberte **Nový** v části **Podrobnosti pracovní šablony** pro přidání řádku do mřížky.
+1. Chcete-li, aby byla dostupná část **Podrobnosti šablony práce**, klikněte na **Uložit**.
+1. Zatímco nová šablona je stále vybrána v části **Přehled**, vyberte **Nový** v části **Podrobnosti pracovní šablony** pro přidání řádku do mřížky.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Typ práce:** *Výdej*
@@ -206,8 +206,8 @@ Směrnice skladového místa jsou pravidla, která pomáhají identifikovat mís
 1. V podokně akcí kliknutím na **Uložit** uložte nový řádek a zpřístupněte pevnou záložku **Akce direktivy místa**.
 1. Když je na pevné záložce **Řádky** vybrán nový řádek, vyberte **Nový** na pevné záložce **Akce směrování polohy** pro přidání řádku do mřížky, abyste mohli nastavit akci pro linku.
 1. V novém řádku nastavte pole **Název** na *Kvalita*. Potvrďte výchozí hodnoty ve všech zbývajících polích.
-1. V podokně akcí vyberte možnost **Uložit** , chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na pevné záložce **Akce direktivy umístění**.
-1. V době, kdy je řádek, který jste právě přidali, stále vybrán na pevné záložce **Akce směrování polohy** , vyberte **Upravit dotaz** pro otevření dialogového okna, ve kterém můžete upravit dotaz pro akci.
+1. V podokně akcí vyberte možnost **Uložit**, chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na pevné záložce **Akce direktivy umístění**.
+1. V době, kdy je řádek, který jste právě přidali, stále vybrán na pevné záložce **Akce směrování polohy**, vyberte **Upravit dotaz** pro otevření dialogového okna, ve kterém můžete upravit dotaz pro akci.
 1. Na kartě **Oblast** přidejte řádek do dotazu výběrem možnosti **Přidat**.
 1. Na novém řádku nastavte následující hodnoty:
 
@@ -219,7 +219,7 @@ Směrnice skladového místa jsou pravidla, která pomáhají identifikovat mís
     Umístění *QMS* je umístění skladu pro kvalitu.
 
 1. Zvolte **OK** a zavřete dialogové okno.
-1. Nyní je nutné změnit pořadí existujících direktiv umístění pro sklad *51*. Uložte novou direktivu umístění *51 do kvality* , aktualizujte stránku a v seznamu vyberte direktivu o umístění. Potom v podokně akcí pomocí tlačítka **posunout nahoru** a **Posunout dolů** umístěte direktivu umístění pro sklad *51* v následujícím pořadí. (Před výběrem **Posunout nahoru** nebo **Posunout dolů** musíte v seznamu vybrat direktivu o umístění.)
+1. Nyní je nutné změnit pořadí existujících direktiv umístění pro sklad *51*. Uložte novou direktivu umístění *51 do kvality*, aktualizujte stránku a v seznamu vyberte direktivu o umístění. Potom v podokně akcí pomocí tlačítka **posunout nahoru** a **Posunout dolů** umístěte direktivu umístění pro sklad *51* v následujícím pořadí. (Před výběrem **Posunout nahoru** nebo **Posunout dolů** musíte v seznamu vybrat direktivu o umístění.)
 
     1. 51 Do kvality
     2. 51 PO Direct
@@ -308,16 +308,16 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 1. Potvrďte znovu číslo nákupní objednávky.
 1. Do pole **LINENUM** zadejte číslo řádku z nákupní objednávky, kterou přijímáte. Protože objednávka má v tomto scénáři pouze jeden řádek, zadáte *1* v poli **LINENUM** pro každý krok příjmu.
 1. Potvrďte číslo řádku.
-1. Do pole **QTY** zadejte množství pro přijetí. Protože objednávka platí pro tři palety ( *PL* ) v tomto scénáři a existují tři kroky příjmu, zadáte hodnotu *1* do pole **QTY** pro každý krok příjmu.
+1. Do pole **QTY** zadejte množství pro přijetí. Protože objednávka platí pro tři palety (*PL*) v tomto scénáři a existují tři kroky příjmu, zadáte hodnotu *1* do pole **QTY** pro každý krok příjmu.
 1. Potvrďte množství.
 
-    Stránka **Kontrola kvality** , která se objeví, nemá žádná vstupní pole. Ve spodní části je pouze potvrzovací tlačítko (znak zaškrtnutí) a tlačítko Nabídka ( **≡** ) nahoře. (Tlačítko Nabídka se někdy označuje jako hamburger nebo hamburgerové tlačítko.) Pro urychlení procesu kontroly kvality, když paleta projde kontrolou kvality, uživatel pouze potvrdí stránku **Kontrola kvality**.
+    Stránka **Kontrola kvality**, která se objeví, nemá žádná vstupní pole. Ve spodní části je pouze potvrzovací tlačítko (znak zaškrtnutí) a tlačítko Nabídka (**≡**) nahoře. (Tlačítko Nabídka se někdy označuje jako hamburger nebo hamburgerové tlačítko.) Pro urychlení procesu kontroly kvality, když paleta projde kontrolou kvality, uživatel pouze potvrdí stránku **Kontrola kvality**.
 
     ![Stránka Kontrola kvality](media/quality-check.png "Stránka Kontrola kvality")
 
 1. Vyberte potvrzovací tlačítko a předejte kontrolu kvality palety 1 z řádku 1.
 
-    Stránka **Objednávky: Vložit** , která se objeví, zobrazuje podrobnosti o práci vložení:
+    Stránka **Objednávky: Vložit**, která se objeví, zobrazuje podrobnosti o práci vložení:
 
     - **LOC:** Systém určil umístění
 
@@ -342,10 +342,10 @@ U tohoto scénáře bude paleta 2 odmítnuta.
 
     Zobrazí se stránka **Kontrola kvality**. Pro tento příjem bude paleta odmítnuta z hlediska kvality a bude vložena do umístění kvality *QMS*.
 
-1. Vyberte tlačítko Nabídka ( **≡** ) v horní části stránky a poté v nabídce vyberte možnost **Odmítnout**.
-1. Na stránce **Úkol** , která se zobrazí, zadejte **QMS** jako místo *vložení* pro odeslání palety k další kontrole.
+1. Vyberte tlačítko Nabídka (**≡**) v horní části stránky a poté v nabídce vyberte možnost **Odmítnout**.
+1. Na stránce **Úkol**, která se zobrazí, zadejte **QMS** jako místo *vložení* pro odeslání palety k další kontrole.
 
-    Stránka **Kvalita v kontrole kvality: Vložit** , která se objeví, zobrazuje podrobnosti o práci vložení:
+    Stránka **Kvalita v kontrole kvality: Vložit**, která se objeví, zobrazuje podrobnosti o práci vložení:
 
     - **LOC:** *QMS*
 
@@ -378,7 +378,7 @@ U tohoto scénáře bude paleta 3 přijata.
 
 1. Vyberte potvrzovací tlačítko pro předání kontroly kvality.
 
-    Stránka **Objednávky: Vložit** , která se objeví, zobrazuje podrobnosti o práci vložení:
+    Stránka **Objednávky: Vložit**, která se objeví, zobrazuje podrobnosti o práci vložení:
 
     - **LOC:** Systém určil umístění
 
@@ -394,6 +394,6 @@ U tohoto scénáře bude paleta 3 přijata.
 
     Na stránce **Úkol** pro přijetí řádku objednávky obdržíte zprávu „Dokončena práce“. Pole **LINENUM** je k dispozici, takže můžete začít přijímat další paletu.
 
-1. Vyberte tlačítko Nabídka ( **≡** ) v horní části stránky a poté v nabídce vyberte možnost **Zrušit** pro návrat do nabídky.
+1. Vyberte tlačítko Nabídka (**≡**) v horní části stránky a poté v nabídce vyberte možnost **Zrušit** pro návrat do nabídky.
 
 Nyní můžete mobilní aplikaci zavřít.

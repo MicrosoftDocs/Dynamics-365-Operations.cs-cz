@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018783"
+ms.locfileid: "4424132"
 ---
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
@@ -63,21 +63,21 @@ Můžete zkontrolovat podrobnosti o stavu skladové transakce pro produkty, kter
 
 Řádek nákupní objednávky, který slouží k vrácení produktu dodavateli, bude mít záporné množství. Konkrétní šarži pro vrácení můžete vybrat pomocí akce **Rezervace**.  
 
-V některých případech můžete chtít rozdělit objednané množství tak, aby jeho různé části byly dodávány v různých termínech. Tyto dodávky lze nastavit pomocí akce **Plán dodávek** , která je k dispozici v nabídce **Řádek nákupní objednávky** v zobrazení **Řádky**.  
+V některých případech můžete chtít rozdělit objednané množství tak, aby jeho různé části byly dodávány v různých termínech. Tyto dodávky lze nastavit pomocí akce **Plán dodávek**, která je k dispozici v nabídce **Řádek nákupní objednávky** v zobrazení **Řádky**.  
 
 Poplatky lze automaticky přidán k řádkům nákupní objednávky, pokud byly nastaveny automatické náklady pro dodavatele nebo skupinu nákladů dodavatele a pro položku nebo skupinu nákladů na položku. Nicméně více obvyklé je ruční přidání poplatků na úrovni řádku objednávky. Chcete-li přidat poplatek, otevřete stránku **Udržovat náklady** pomocí akce **Udržovat náklady** v nabídce **Finance** v zobrazení **Řádky**. Výhodou přidání poplatků přímo na úrovni řádku objednávky je to, že poplatek může být přidělen jako náklady skladu. Chcete-li nastavit kódy poplatků pro zaúčtování ceny produktu, použijte debetní možnost **Položka**. Tyto typy nákladů musí být přiděleny ze záhlaví nákupní objednávky k řádkům předtím, než může být objednávka potvrzena. Můžete například přidělit náklady na základě množství na každém řádku. Kategorie nákladů také ovlivňuje to, jak jsou poplatky účtovány. Například pevné náklady určují pevnou částku a procentuální náklady se vypočítají jako procento z čisté částky na řádku objednávky. Nákupní objednávky lze přiřadit k vytížení a vytížení může obsahovat odhad očekávaných výdajů za náklady na dopravu. Tyto náklady lze přidělit z vytížení zpět na řádky nákupní objednávky.
 
 ## <a name="purchase-order-actions"></a>Akce nákupní objednávky
 Po přidání záhlaví a řádků do nákupní objednávky musíte často dokončit další kroky ještě předtím, než je objednávka připravena pro potvrzení. Vzhledem k tomu, že je k dispozici mnoho možností, může pro vás užitečné použít [Akci hledání](../../fin-and-ops/get-started/action-search.md) a najít s její pomocí odpovídající položku.  
 
-Produkty lze nastavit na objednávce tak, že mají doplňkové položky. Doplňkové položky jsou výrobky, které musí nebo mohou být nakoupeny společně s jinými přípravky. Doplňkové produkty mohou být přidány zdarma nebo za poplatek jako doprovodné produkty, nebo je možné se rozhodnout, zda je chcete přidat do objednávky, nebo nikoliv. Po přidání každého řádku objednávky můžete zkontrolovat doplňkové položky. Nicméně pravděpodobně je vhodnější zkontrolovat a přidat příslušné doplňkové položky pro všechny řádky na stránce **Doplňkové položky** , kterou lze otevřít z podokna akcí.  
+Produkty lze nastavit na objednávce tak, že mají doplňkové položky. Doplňkové položky jsou výrobky, které musí nebo mohou být nakoupeny společně s jinými přípravky. Doplňkové produkty mohou být přidány zdarma nebo za poplatek jako doprovodné produkty, nebo je možné se rozhodnout, zda je chcete přidat do objednávky, nebo nikoliv. Po přidání každého řádku objednávky můžete zkontrolovat doplňkové položky. Nicméně pravděpodobně je vhodnější zkontrolovat a přidat příslušné doplňkové položky pro všechny řádky na stránce **Doplňkové položky**, kterou lze otevřít z podokna akcí.  
 
 Slevy jsou obvykle přidávány na řádky ihned, jak jsou vytvořeny. Nicméně několik slev se však vztahuje na celou objednávku:
 
 -   Akce **Celkové slevy** vypočítá procento celkových slev, které se aplikuje na celou objednávku. Nepleťte si tuto slevu s procentem platební slevy. Platební slevy jsou použity, pokud je faktura zaplacena, a jsou závislé na vyrovnání platby k určitému datu.
 -   Pokud se používají víceřádkové slevy, je nutné pro výpočet a přiřazení k objednávce použít akci **Víceřádkové slevy**. Víceřádkové slevy jsou slevy, které lze nabídnout, pokud kombinace produktů v objednávce překročí společný práh. Tento typ slev využívá pouze několik společností.
 
-Poplatky se svým kódem, který používá debetní typ **Položka** , musí být přiřazeny k úrovni řádku, aby mohla být objednávka potvrzena. Může pro vás být vhodné přiřadit tyto náklady na úrovni záhlaví objednávky, abyste tak mohli zadat celkovou výši poplatku. V takovém případě však musí být náklady přiděleny na každý řádek, aby mohla být objednávka potvrzena. Můžete použít akci **Přidělit náklady** a rozdělit tak částky z poplatků, které jsou přiřazeny na úrovni záhlaví mezi řádky objednávky. Náklady lze rozdělit podle čisté částky každého řádku v souladu s množstvím, které bylo objednáno, nebo rovnoměrně mezi řádky objednávky. Poté, co přidělíte náklady k řádkům, se poplatek odebere ze záhlaví objednávky.  
+Poplatky se svým kódem, který používá debetní typ **Položka**, musí být přiřazeny k úrovni řádku, aby mohla být objednávka potvrzena. Může pro vás být vhodné přiřadit tyto náklady na úrovni záhlaví objednávky, abyste tak mohli zadat celkovou výši poplatku. V takovém případě však musí být náklady přiděleny na každý řádek, aby mohla být objednávka potvrzena. Můžete použít akci **Přidělit náklady** a rozdělit tak částky z poplatků, které jsou přiřazeny na úrovni záhlaví mezi řádky objednávky. Náklady lze rozdělit podle čisté částky každého řádku v souladu s množstvím, které bylo objednáno, nebo rovnoměrně mezi řádky objednávky. Poté, co přidělíte náklady k řádkům, se poplatek odebere ze záhlaví objednávky.  
 
 Nákupní objednávky lze nakonfigurovat tak, aby vyžadovaly, aby byly rozpočtové prostředky přiděleny k objednávce, než bude možné objednávku zpracovat. V takovém případě můžete použít akci **Kontrola rozpočtu** a rozpočet přidělit.  
 

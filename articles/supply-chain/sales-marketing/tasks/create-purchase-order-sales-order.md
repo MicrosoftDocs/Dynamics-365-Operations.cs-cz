@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018691"
+ms.locfileid: "4424212"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Vytvoření nákupní objednávky z prodejní objednávky
 
@@ -63,7 +63,7 @@ Tento postup zobrazuje, jak vytvořit nákupní objednávku na základě plánu 
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Zkontrolujte nákupní objednávky vytvořené z prodejních objednávek.
 1. V **podokně akcí** klikněte na **Obecné**.
 2. Klikněte na **Související objednávky**. Stránky se seznamem **souvisejících objednávek** všech objednávek, které byly vytvořeny z prodejní objednávky. V tomto příkladu jsou dvě nákupní objednávky, které jsou generovány pro dva různé dodavatele v uvedeném pořadí. 
-3. Kliknutím přejdete na odkaz v poli **Nákupní objednávka**. Každý řádek nákupní objednávky je přidružen k řádku prodejní objednávky, který k nákupu vedl. Vztah k prodejní objednávce je označen na **Kartě produktu** na pevné kartě **Podrobnosti řádku** v polích **Typ odkazu** , **Číslo odkazu** a **Odkaz na šarži**.  
+3. Kliknutím přejdete na odkaz v poli **Nákupní objednávka**. Každý řádek nákupní objednávky je přidružen k řádku prodejní objednávky, který k nákupu vedl. Vztah k prodejní objednávce je označen na **Kartě produktu** na pevné kartě **Podrobnosti řádku** v polích **Typ odkazu**, **Číslo odkazu** a **Odkaz na šarži**.  
 4. Rozbalte nebo sbalte oddíl **Podrobnosti řádku**.
 5. Klikněte na kartu **Produkt**.
     - **Odkaz na šarži** zajišťuje, že náklady aktuálního nákupu budu zpoplatněny na připojené prodejní objednávce.  

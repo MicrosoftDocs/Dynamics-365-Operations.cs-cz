@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018645"
+ms.locfileid: "4424214"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 
@@ -140,11 +140,11 @@ Následující tabulka ukazuje stavy, které mohou mít požadavky na dodavatele
 
 Když je požadavek na dodavatele schválen, je vytvořen účet dodavatele a stav **Schváleno** se objeví na počátečním požadavku na registraci potenciálního dodavatele i na požadavku na dodavatele.
 
-Před schválením požadavku na dodavatele na stránce **Nový dodavatel** , na pevné záložce **Obecné** vyberte **Skupina dodavatelů** a vyberte skupinu dodavatelů.
+Před schválením požadavku na dodavatele na stránce **Nový dodavatel**, na pevné záložce **Obecné** vyberte **Skupina dodavatelů** a vyberte skupinu dodavatelů.
 
 Pokud má mít potenciální dodavatelský uživatel přístup k aplikaci Supply Chain Management jako uživatel dodavatelské spolupráce představující dodavatele, nastavte oprávnění k přístupu dodavatelské spolupráce na **Ano**. Chcete-li deaktivovat uživatelský účet, který potenciální dodavatele použil k registraci, nastavte toto oprávnění na **Ne**.
 
-Je-li oprávnění pro přístup k dodavatelské spolupráci nastaven na **Ano** , je po schválení požadavku na dodavatele odeslána žádost na úpravu role uživatele, aby měl uživatel role, které jsou definovány pro typ **Dodavatel** v položce **Externí role**. Je-li toto oprávnění nastaveno na **Ne** , je po schválení požadavku na dodavatele odeslána žádost na deaktivaci uživatele. V takovém případě musí být nastaveno workflow k deaktivaci požadavku uživatele.
+Je-li oprávnění pro přístup k dodavatelské spolupráci nastaven na **Ano**, je po schválení požadavku na dodavatele odeslána žádost na úpravu role uživatele, aby měl uživatel role, které jsou definovány pro typ **Dodavatel** v položce **Externí role**. Je-li toto oprávnění nastaveno na **Ne**, je po schválení požadavku na dodavatele odeslána žádost na deaktivaci uživatele. V takovém případě musí být nastaveno workflow k deaktivaci požadavku uživatele.
 
 Pro účet dodavatele, který má být vytvořen při schválení požadavku na dodavatele, číselná řada pro vytváření dodavatelů z požadavků na dodavatele musí být nastavena na **Automaticky**.
 

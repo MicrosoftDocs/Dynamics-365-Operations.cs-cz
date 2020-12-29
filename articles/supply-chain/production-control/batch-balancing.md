@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016878"
+ms.locfileid: "4424162"
 ---
 # <a name="batch-balancing"></a>Vyvážení dávky
 
@@ -97,7 +97,7 @@ Látka B má základní atribut X a cílovou úroveň 30. Je obsažena v receptu
 
 ### <a name="none"></a>None
 
-Pokud použijete proces vyvážení dávky, když je typ látky **Žádná** , odhadované množství a vyvážené množství řádku receptury v dávkové objednávce je stejné.
+Pokud použijete proces vyvážení dávky, když je typ látky **Žádná**, odhadované množství a vyvážené množství řádku receptury v dávkové objednávce je stejné.
 
 **Příklad**
 
@@ -115,7 +115,7 @@ Vztah mezi aktivní látkou a doplňkovou látkou se nastavuje na stránce **Pri
 
 Chcete-li nastavit vztahy mezi látkami, postupujte podle následujících kroků:
 
-1.  Vyberte **Řízení informací o produktech** \> **Řízení informací o produktech** \> **Receptury** , otevřete řádek receptury a poté vyberte **Látky** pro otevření stránky **Princip kompenzace**.
+1.  Vyberte **Řízení informací o produktech** \> **Řízení informací o produktech** \> **Receptury**, otevřete řádek receptury a poté vyberte **Látky** pro otevření stránky **Princip kompenzace**.
 
 2.  Vyberte řádek, který představuje princip kompenzace, a poté vyberte aktivní látku ke kompenzaci.
 
@@ -147,7 +147,7 @@ Vzhledem k tomu, že 1,10 je kladný kompenzační koeficient, má tento princip
 
 **Příklad**
 
-Připravili jste recepturu produktu, který zahrnuje látky A, B, C a D pro velikost receptury 100 litrů. Vypočítali jste vyvážené množství všech typů látek, kromě typu látky **Pomocná látka** , který je použit na jednom řádku.
+Připravili jste recepturu produktu, který zahrnuje látky A, B, C a D pro velikost receptury 100 litrů. Vypočítali jste vyvážené množství všech typů látek, kromě typu látky **Pomocná látka**, který je použit na jednom řádku.
 Vyvážené množství pomocné látky se počítá jako rozdíl mezi velikostí dávky 100 litrů a součtem látek A, B a C:
 
 100 – (20 + 25,71 + 14,72) = 39,57
@@ -171,7 +171,7 @@ Proces vyvážení dávky může být rozdělen do dvou dílčích procesů:
 V dílčím procesu látek pro vyvážení dávky se množství látek pro použití ve výrobní dávce vypočítá na základě zvolených dávek, které mají aktivní látky. Pravidlem je, že výpočet lze dokončit pouze tehdy, pokud existuje plná disponibilita všech látek. Nelze vyvážit pouze část dávky, když je dávková objednávka nastavena k výrobě.
 
 [!NOTE]
-Nelze uložit výpočte a poté dokončit proces vyvážení dávky později. Pokud zavřete stránku **Vyrovnání dávky** , je nutné opakovat výpočet pro dokončení procesu.
+Nelze uložit výpočte a poté dokončit proces vyvážení dávky později. Pokud zavřete stránku **Vyrovnání dávky**, je nutné opakovat výpočet pro dokončení procesu.
 
 ### <a name="confirm-and-release-the-formula"></a>Potvrzení a uvolnění receptury
 

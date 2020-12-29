@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015060"
+ms.locfileid: "4424126"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -180,7 +180,7 @@ Hlavní kroky algoritmu modulu:
 
 Velká část (interních) omezení v modulu řídí pracovní dobu a kapacitu zdroje. Úloha v podstatě spočívá v procházení slotů pracovní doby pro zdroj z daného bodu v daném směru a nalezení dostatečně dlouhého intervalu, do kterého se vejde požadovaná kapacita (čas) úloh.
 
-K tomu modul potřebuje znát pracovní dobu zdroje. Oproti hlavním datům modelu se pracovní doby *načítají v líném režimu* , což znamená, že se do modulu načítají podle potřeby. Důvodem pro tento přístup je, že v Supply Chain Managementu často existují pracovní doby pro kalendář na velmi dlouhé období a obvykle existuje mnoho kalendářů, takže data by byla pro předběžné načtení poměrně velká.
+K tomu modul potřebuje znát pracovní dobu zdroje. Oproti hlavním datům modelu se pracovní doby *načítají v líném režimu*, což znamená, že se do modulu načítají podle potřeby. Důvodem pro tento přístup je, že v Supply Chain Managementu často existují pracovní doby pro kalendář na velmi dlouhé období a obvykle existuje mnoho kalendářů, takže data by byla pro předběžné načtení poměrně velká.
 
 Informace z kalendáře si modul žádá v blocích vyvoláním metody třídy X++ `WrkCtrSchedulingInteropDataProvider.getWorkingTimes`. Požadavek je pak na konkrétní ID kalendáře v konkrétním časovém intervalu. V závislosti na stavu mezipaměti serveru v Supply Chain Managementu může každý z těchto požadavků vést k několika voláním databáze, což trvá dlouho (relativně k čistému výpočetnímu času). Pokud navíc kalendář obsahuje velmi propracované definice pracovní doby s mnoha intervaly za den, prodlouží se čas, který načítání zabere.
 
@@ -188,7 +188,7 @@ Když se do plánovacího modulu načtou data o pracovní době, tato se udrží
 
 ### <a name="finite-capacity"></a>Omezená kapacita
 
-Při použití omezené kapacity se pracovní časové intervaly z kalendáře rozdělí a sníží na základě stávajících rezervací kapacity. Tyto rezervace se také načítají prostřednictvím stejné třídy `WrkCtrSchedulingInteropDataProvider` jako kalendáře, ale tentokrát se používá metoda `getCapacityReservations`. Během hlavního plánování se berou v úvahu rezervace konkrétního hlavního plánu, a pokud jsou povoleny na stránce **Parametry hlavního plánování** , zahrnou se i rezervace z potvrzených výrobních zakázek. Podobně také při plánování výrobní zakázky existuje možnost zahrnout rezervace ze stávajících plánovaných objednávek, i když to není tak běžné jako naopak.
+Při použití omezené kapacity se pracovní časové intervaly z kalendáře rozdělí a sníží na základě stávajících rezervací kapacity. Tyto rezervace se také načítají prostřednictvím stejné třídy `WrkCtrSchedulingInteropDataProvider` jako kalendáře, ale tentokrát se používá metoda `getCapacityReservations`. Během hlavního plánování se berou v úvahu rezervace konkrétního hlavního plánu, a pokud jsou povoleny na stránce **Parametry hlavního plánování**, zahrnou se i rezervace z potvrzených výrobních zakázek. Podobně také při plánování výrobní zakázky existuje možnost zahrnout rezervace ze stávajících plánovaných objednávek, i když to není tak běžné jako naopak.
 
 Použití omezené kapacity způsobí, že plánování bude trvat déle, a to z několika důvodů:
 
@@ -305,7 +305,7 @@ Použití omezené kapacity vyžaduje, aby modul načetl informace o kapacitě z
 
 ### <a name="setting-hard-links"></a>Nastavení pevných propojení
 
-Standardní typ propojení u trasy je *měkký* , což znamená, že mezi dobou ukončení jedné operace a začátkem další je povolena časová prodleva. Pokud to povolíte, může to mít ten neblahý účinek, že pokud pro některou z operací nebudou materiály nebo kapacita k dispozici po velmi dlouhou dobu, může být výroba nějakou dobu nečinná, čímž může narůst množství rozpracované práce. U pevných propojení se to nestane, protože dokončení a zahájení musí dokonale navazovat. Nastavení pevných odkazů ale problém s plánováním ztěžuje, protože průsečíky pracovní doby a kapacity je nutné vypočítat pro dva zdroje operací. Pokud jsou součástí i paralelní operace, výrazně tím vzroste výpočetní čas. Pokud zdroje u těchto dvou operací mají různé kalendáře, které se vůbec nepřekrývají, problém je neřešitelný.
+Standardní typ propojení u trasy je *měkký*, což znamená, že mezi dobou ukončení jedné operace a začátkem další je povolena časová prodleva. Pokud to povolíte, může to mít ten neblahý účinek, že pokud pro některou z operací nebudou materiály nebo kapacita k dispozici po velmi dlouhou dobu, může být výroba nějakou dobu nečinná, čímž může narůst množství rozpracované práce. U pevných propojení se to nestane, protože dokončení a zahájení musí dokonale navazovat. Nastavení pevných odkazů ale problém s plánováním ztěžuje, protože průsečíky pracovní doby a kapacity je nutné vypočítat pro dva zdroje operací. Pokud jsou součástí i paralelní operace, výrazně tím vzroste výpočetní čas. Pokud zdroje u těchto dvou operací mají různé kalendáře, které se vůbec nepřekrývají, problém je neřešitelný.
 
 Pevná propojení doporučujeme používat, pouze pokud je to nezbytně nutné, a pečlivě zvažte, zda je to nezbytné pro každou operaci trasy.
 
@@ -321,7 +321,7 @@ Protože modul pracuje tak, že prozkoumává jednotlivé časové sloty z hledi
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Velké (nebo žádné) časové limity plánování
 
-Výkon plánovacího modulu lze optimalizovat pomocí parametrů na stránce **Parametry plánování**. Nastavení **Časový limit plánování povolen** a **Časový limit optimalizace plánování povolen** by mělo být vždy nastaveno na **Ano**. Pokud je nastaveno na **Ne** , plánování může potenciálně běžet nekonečně dlouho, pokud byla vytvořena neproveditelná trasa s mnoha možnostmi.
+Výkon plánovacího modulu lze optimalizovat pomocí parametrů na stránce **Parametry plánování**. Nastavení **Časový limit plánování povolen** a **Časový limit optimalizace plánování povolen** by mělo být vždy nastaveno na **Ano**. Pokud je nastaveno na **Ne**, plánování může potenciálně běžet nekonečně dlouho, pokud byla vytvořena neproveditelná trasa s mnoha možnostmi.
 
 Hodnota **Maximální čas plánování na sekvenci** určuje, kolik sekund lze nanejvýš strávit pokusem najít řešení pro jednu sekvenci (ve většině případů sekvence odpovídá jedné zakázce). Hodnota, která se zde použije, velmi závisí na složitosti trasy a nastaveních, jako je konečná kapacita – dobrým výchozím bodem je maximálně asi 30 sekund.
 

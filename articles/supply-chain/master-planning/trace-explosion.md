@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88e777d69c9da8a19c186bca3ca591e59af232f0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978073"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423587"
 ---
 # <a name="use-tracing-for-explosion"></a>Použití sledování pro rozpad
 
@@ -39,7 +39,7 @@ Po povolení sledování můžete zobrazit informace o činitelích, které tvo�
 -   Simulovat výsledky plánování a určit, zda jsou parametry plánování optimální.
 -   Určit způsob, jakým byly pro objednávku určovány informace, jako například data výroby, množství a priority.
 
-Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování. K sledování dochází, když rozložíte objednávku. Sledování objednávky zahájíte kliknutím na možnost **Aktualizace** a následným označením zaškrtávacího políčka **Povolit sledování** . Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text** . Výsledky hledání jsou zvýrazněny ve stromové struktuře.
+Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování. K sledování dochází, když rozložíte objednávku. Sledování objednávky zahájíte kliknutím na možnost **Aktualizace** a následným označením zaškrtávacího políčka **Povolit sledování**. Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**. Výsledky hledání jsou zvýrazněny ve stromové struktuře.
 
 <a name="additional-resources"></a>Další zdroje
 --------

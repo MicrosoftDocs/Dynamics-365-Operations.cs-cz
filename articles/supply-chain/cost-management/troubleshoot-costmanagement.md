@@ -1,0 +1,64 @@
+---
+title: Řešení potíží se správou nákladů
+description: Toto téma popisuje, jak vyřešit problémy, s nimiž se můžete setkat při práci se správou nákladů.
+author: riluan
+manager: tfehr
+ms.date: 10/13/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: riluan
+ms.search.validFrom: 2020-10-13
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: e84bb167395c06295b0e8ef8b9fd98aa4bc0cc14
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4424258"
+---
+# <a name="troubleshoot-cost-management"></a>Řešení potíží se správou nákladů
+
+Toto téma popisuje, jak vyřešit problémy, s nimiž se můžete setkat při práci se správou nákladů.
+
+## <a name="functional-gaps-between-the-inventory-valueaging-reports-and-their-storage-versions"></a>Funkční mezery mezi sestavami o hodnotě/stárnutí zásob a jejich verzemi úložiště
+
+Funkce [Uložení sestavy stáří zásob](inventory-aging-report-storage.md) a [Sestava úložiště hodnot zásob](inventory-value-report-storage.md) umožňují aplikaci Supply Chain Management zobrazit velké objemy transakcí zásob. V každém případě se výsledky sestavy ukládají k procházení a exportu, na rozdíl od verzí těchto sestav bez úložiště. Některé funkce, které existují ve verzích těchto sestav bez úložiště, však ve verzích úložiště neexistují. Následující pododdíly shrnují rozdíly a poskytují alternativní řešení.
+
+### <a name="storage-reports-dont-include-subtotals-even-if-they-are-enabled-in-the-report-layout"></a>Sestavy úložiště nezahrnují mezisoučty, i když jsou povoleny v rozložení sestavy
+
+Mezisoučty mohou způsobit problémy při exportu výsledku, zejména pokud uživatelé změní sekvenci záznamů.
+
+Chcete-li zkontrolovat mezisoučty, můžete exportovat výsledek do Microsoft Excel. Alternativně, pokud chcete zkontrolovat mezisoučty v rámci Supply Chain Management, použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a povolte funkce *Nový ovládací prvek mřížky* a *(Preview) Seskupení do mřížek*, které poskytují mnohem flexibilnější způsob, jak zobrazit mezisoučet pro každou skupinu podle sloupce. Další informace naleznete v části [Schopnosti mřížky](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+
+### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Sestava úložiště hodnot zásob nepodporuje informace o účtu hlavní knihy
+
+Můžete spustit předvahu, abyste získali zůstatek na účtech zásob a porovnali jej se sestavou **Úložiště hodnot zásob**.
+
+## <a name="warnings-or-errors-are-shown-when-changing-a-ledger-period-status-without-closing-inventory"></a>Varování nebo chyby se zobrazují při změně stavu období hlavní knihy bez uzávěrky skladu.
+
+Společnost Microsoft zavedla následující ověření, aby zabránila problémům způsobeným nesprávným procesem na konci období kolem výpočtu nákladů. Pokud narazíte na některou z následujících chybových zpráv, podívejte se na [KB 4561987](https://fix.lcs.dynamics.com/Issue/Details?kb=4561987&bugId=445351&dbType=3&qc=f514f2adcddcddceec43af58c26ae8a9020effdc7cdfe085d9d0deeb8cc7b6a3) ohledně informací o řešení těchto problémů.
+
+- Chystáte se provést přepočet s datem %1 (10-02-2019). Poslední registrovaný přepočet byl proveden v předchozím období s datem %2 (20-01-2019). Žádné provedení uzávěrky skladu s datem konce odpovídajícího období %3 (31-01-2019) nebylo zaregistrováno. Nezapomeňte provést uzávěrku skladu k datu konce odpovídajícího období %3 (31-01-2019). Ocenění zásob, náklady prodaného zboží a odchylky nemusí být správné v dílčí knize nebo hlavní knize, dokud to nebude provedeno.
+
+- Chystáte se změnit stav období hlavní knihy %1 na %2. Žádné provedení uzávěrky skladu s datem konce odpovídajícího období %3 nebylo zaregistrováno. Proveďte prosím uzávěrku skladu k datu konce odpovídajícího období %3 před změnou stavu. Ocenění zásob, náklady prodaného zboží a odchylky nemusí být správné v dílčí knize nebo hlavní knize, dokud to nebude provedeno. Hlášeno z právnické osoby %4. Prozatím je to informační, ale v budoucnu budete muset provést takovou akci.
+
+- Účetní struktura %1 byla změněna. Jeden nebo více hlavních účtů %2 již neexistuje. Tyto hlavní účty jsou vyžadovány %3 s datem %4. Přidejte tyto hlavní účty do účetní struktury %1, než budete moci obnovit úlohu %3. Prozatím je to informační, ale v budoucnu budete muset provést takovou akci.
+
+- Chystáte se provést uzávěrku skladu s datem %1 (31-01-2019). Žádné provedení výpočtu zpětného účtování nákladů s datem konce odpovídajícího období %2 (31-01-2019) nebylo zaregistrováno. Nezapomeňte spustit výpočet zpětného účtování nákladů s datem konce odpovídajícího období %3 (31-01-2019). Ocenění zásob, náklady prodaného zboží a odchylky nemusí být správné v dílčí knize nebo hlavní knize, dokud to nebude provedeno.
+
+- Chystáte se provést výpočet zpětného účtování nákladů s datem %1 (28-02-2019). Poslední registrovaný výpočet zpětného účtování nákladů byl proveden v předchozím období s datem %2 (31-01-2019). Žádné provedení uzávěrky skladu s datem konce odpovídajícího období %3 (31-01-2019) nebylo zaregistrováno.
+Nezapomeňte provést uzávěrku skladu k datu konce odpovídajícího období %3 (31-01-2019). Ocenění zásob, náklady prodaného zboží a odchylky nemusí být správné v dílčí knize nebo hlavní knize, dokud nebude uzávěrka skladu provedena.
+
+## <a name="inventory-aging-report-discrepancies"></a>Nesrovnalosti sestavy stáří zásob
+
+**Sestava stáří zásob** zobrazuje různé hodnoty při zobrazení v různých dimenzích úložiště (například jako pracoviště nebo sklad). Další informace o logice vykazování najdete v tématu [Příklady a logika sestav stáří zásob](inventory-aging-report.md).

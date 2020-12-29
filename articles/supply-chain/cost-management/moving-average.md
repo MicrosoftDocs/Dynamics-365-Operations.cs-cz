@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423654"
 ---
 # <a name="moving-average"></a>Klouzavý průměr
 
@@ -36,16 +36,16 @@ Při použití klouzavého průměru nejsou podporována vyrovnání a označen�
 
 Následují předpoklady pro použití klouzavého průměru nákladů jako nákladové metody.
 
-1. Na stránce **Skupiny modelů položek** nastavte skupinu modelů položky, u kterých je vybrán **Klouzavý průměr** v poli **Skladový model** .
+1. Na stránce **Skupiny modelů položek** nastavte skupinu modelů položky, u kterých je vybrán **Klouzavý průměr** v poli **Skladový model**.
 
     > [!NOTE]
-    > Ve výchozím nastavení po výběru **Klouzavý průměr** jsou vybrána také pole **Zaúčtovat fyzické zásoby** a **Zaúčtovat finanční zásoby** .
+    > Ve výchozím nastavení po výběru **Klouzavý průměr** jsou vybrána také pole **Zaúčtovat fyzické zásoby** a **Zaúčtovat finanční zásoby**.
 
-1. Na stránce **Zaúčtování** přiřaďte účty k **Cenová odchylka pro klouzavý průměr** . Můžete použít účet **Cenová odchylka pro klouzavý průměr** , když mají náklady být proporcionálně zaneseny. K tomu dochází v následujících dvou scénářích:
+1. Na stránce **Zaúčtování** přiřaďte účty k **Cenová odchylka pro klouzavý průměr**. Můžete použít účet **Cenová odchylka pro klouzavý průměr**, když mají náklady být proporcionálně zaneseny. K tomu dochází v následujících dvou scénářích:
     - Existuje rozdíl nákladů mezi nákupním příjmem a nákupní fakturou kvůli rozdílu mezi původním množstvím zásob a aktuálním množstvím na skladě.
     - Transakce přinášejí zásoby ze záporných hodnot na nulu a existuje rozdíl mezi transakčními náklady a aktuálními klouzavými průměrnými náklady.
 
-1. Na stránce **Zaúčtování** přiřaďte účty k účtům **Přecenění nákladů pro klouzavý průměr** na kartě **Zásoby** . Účet **Přecenění nákladů pro klouzavý průměr** použijte, pokud chcete upravit klouzavý průměr nákladů pro produkt na novou cenu jednotky.
+1. Na stránce **Zaúčtování** přiřaďte účty k účtům **Přecenění nákladů pro klouzavý průměr** na kartě **Zásoby**. Účet **Přecenění nákladů pro klouzavý průměr** použijte, pokud chcete upravit klouzavý průměr nákladů pro produkt na novou cenu jednotky.
 
 1. Na stránce **Uvolněné produkty** přiřaďte skupinu modelu položky klouzavého průměru k produktu.
 
@@ -108,7 +108,7 @@ Na stránce **Vyrovnání pro doklad** se zobrazí úpravy 4,00 zaúčtované do
 
 ## <a name="moving-average-with-production"></a>Klouzavý průměr pro výrobu
 
-Klouzavý průměr podporuje vyrobené položky. Pokud chcete použít klouzavý průměr v provozním prostředím, vyberte **Použít odhadovanou nákladovou cenu** na stránce **Parametry modulu Řízení výroby** . To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
+Klouzavý průměr podporuje vyrobené položky. Pokud chcete použít klouzavý průměr v provozním prostředím, vyberte **Použít odhadovanou nákladovou cenu** na stránce **Parametry modulu Řízení výroby**. To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Klouzavý průměr s datovanou transakcí
 
@@ -128,7 +128,7 @@ Transakce jsou zpracovávány odlišně v závislosti na tom, zda je nové množ
 
 ### <a name="new-balance-is-negative-or-zero"></a>Nový zůstatek je záporný nebo nulový
 
-Pokud je nové množství na skladě záporné nebo nulové, náklady na transakci se vypočítají podle aktuálních průměrných nákladů. Pokud existuje rozdíl mezi kupní cenou a aktuálními průměrnými náklady, zaúčtuje se na účet **Cenová odchylka pro klouzavý průměr** .
+Pokud je nové množství na skladě záporné nebo nulové, náklady na transakci se vypočítají podle aktuálních průměrných nákladů. Pokud existuje rozdíl mezi kupní cenou a aktuálními průměrnými náklady, zaúčtuje se na účet **Cenová odchylka pro klouzavý průměr**.
 
 ### <a name="new-balance-is-positive"></a>Nový zůstatek je kladný
 
@@ -136,12 +136,12 @@ Pokud je nové množství na skladě po transakci kladné, transakce se rozděl�
 
 | Součást | popis |
 |---|---|
-| Záporné až nulové množství | Zásoby použijí aktuální klouzavé průměrné náklady na položku namísto transakčních nákladů pro tu část množství příjmu, která zvyšuje zůstatek na skladě ze záporného na nulový. Rozdíl mezi transakčními náklady a aktuálními klouzavými průměrnými náklady se zaúčtuje na účet **Cenová odchylka pro klouzavý průměr** . |
+| Záporné až nulové množství | Zásoby použijí aktuální klouzavé průměrné náklady na položku namísto transakčních nákladů pro tu část množství příjmu, která zvyšuje zůstatek na skladě ze záporného na nulový. Rozdíl mezi transakčními náklady a aktuálními klouzavými průměrnými náklady se zaúčtuje na účet **Cenová odchylka pro klouzavý průměr**. |
 | Nulové až kladné množství | Sklad používá transakční náklady pro tu část množství příjmu, která zvyšuje zůstatek na skladě z nuly na kladnou hodnotu.                                                  |
 
 ## <a name="inventory-value-report"></a>Sestava hodnoty zásob
 
-V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna pro podporu výpočtu aktuálního klouzavého průměru pro produkt. Sestava hodnoty zásob může vytisknout transakce v chronologickém pořadí společně s náklady pro podporu výpočtu klouzavého průměru nákladů pro produkt. Sestava obsahuje klouzavý průměr nákladů pro produkt. V dialogovém okně **Sestavy hodnot zásob** umožňuje pole intervalu dat vybrat **Čas transakce** nebo **Datum zaúčtování** pro seřazení sestavy. Možnost **Datum zaúčtování** určuje, jak je obvykle sestava vytištěna. Možnost **Čas transakce** je aktuální datum vytvoření sestavy transakce a aktualizace klouzavého průměru nákladů pro produkt. Můžete vytisknout sestavu hodnot zásob pomocí možnosti **Řazení času transakce** v případě, že chcete vidět výpočet klouzavého průměru nákladů v čase. Následující tabulka zobrazuje transakce pro produkt, pro který je sestava vytištěna, když použijete možnost **Řazení času transakce** .
+V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna pro podporu výpočtu aktuálního klouzavého průměru pro produkt. Sestava hodnoty zásob může vytisknout transakce v chronologickém pořadí společně s náklady pro podporu výpočtu klouzavého průměru nákladů pro produkt. Sestava obsahuje klouzavý průměr nákladů pro produkt. V dialogovém okně **Sestavy hodnot zásob** umožňuje pole intervalu dat vybrat **Čas transakce** nebo **Datum zaúčtování** pro seřazení sestavy. Možnost **Datum zaúčtování** určuje, jak je obvykle sestava vytištěna. Možnost **Čas transakce** je aktuální datum vytvoření sestavy transakce a aktualizace klouzavého průměru nákladů pro produkt. Můžete vytisknout sestavu hodnot zásob pomocí možnosti **Řazení času transakce** v případě, že chcete vidět výpočet klouzavého průměru nákladů v čase. Následující tabulka zobrazuje transakce pro produkt, pro který je sestava vytištěna, když použijete možnost **Řazení času transakce**.
 
 | Čas transakce | Datum         | Typ transakce           | Množství | Částka | Průměrné náklady na jednotku |
 |------------------|--------------|----------------------------|----------|--------|-------------------|
@@ -154,4 +154,4 @@ V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna p
 |                  | 31. říjen   | Celkem                      | 2        | 32.00  | 16.00             |
 
 > [!NOTE]
-> Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování** .
+> Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování**.

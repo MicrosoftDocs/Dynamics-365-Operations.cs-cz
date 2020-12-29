@@ -4,7 +4,7 @@ description: Toto téma vysvětluje, jak zrušit a znovu vytisknout stávající
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016647"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4424256"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Opakovaný tisk a anulování vlnových štítků
 
@@ -61,7 +61,7 @@ Chcete-li znovu vytisknout vlnový štítek z webového klienta, postupujte takt
     - Chcete-li štítek aktualizovat, zaškrtněte políčko **Aktualizovat podrobnosti o vlnového štítku**. (Ponechte toto políčko nezaškrtnuté, pokud chcete znovu vytisknout předchozí štítek.)
 
     > [!NOTE]
-    > Pokaždé, když se vlnový štítek vytiskne nebo znovu vytiskne, jeho data se převedou přes příslušné rozložení vlnového štítku a všechny zástupné symboly se nahradí skutečnými hodnotami. Výsledný řetězec je uložen jako záznam v historii vlnových štítků. Pokud políčko **Aktualizovat podrobnosti o vlnovém štítku** není zaškrtnuté, použijí se při opakovaném tisku štítku uložená data Zebra Programming Language (ZPL). Pokud je zaškrtnuto políčko **Aktualizovat podrobnosti o vlnovém štítku** , je vygenerován nový řetězec. Existující štítky vlnové štítky jsou také přepočítány a všechny nadbytečné štítky (například pokud byly související pracovní linie zrušeny nebo změněny) jsou označeny jako **Zrušené** a znovu se nevytisknou.
+    > Pokaždé, když se vlnový štítek vytiskne nebo znovu vytiskne, jeho data se převedou přes příslušné rozložení vlnového štítku a všechny zástupné symboly se nahradí skutečnými hodnotami. Výsledný řetězec je uložen jako záznam v historii vlnových štítků. Pokud políčko **Aktualizovat podrobnosti o vlnovém štítku** není zaškrtnuté, použijí se při opakovaném tisku štítku uložená data Zebra Programming Language (ZPL). Pokud je zaškrtnuto políčko **Aktualizovat podrobnosti o vlnovém štítku**, je vygenerován nový řetězec. Existující štítky vlnové štítky jsou také přepočítány a všechny nadbytečné štítky (například pokud byly související pracovní linie zrušeny nebo změněny) jsou označeny jako **Zrušené** a znovu se nevytisknou.
 
 1. Výběrem **OK** svůj výběr potvrďte.
 
@@ -118,7 +118,7 @@ Podle těchto kroků vytvořte novou kolekci položek nabídky pro opakovaný ti
     - **Popisek seskupení systému:** *ID dodávky*
     - **Režim tisku:** *Výčet*
 
-1. V podokně akcí vyberte **Seznam polí** a v rozevíracích seznamech vyberte pole, která se zobrazí na pomoc pracovníkům určit správnou roli štítků (například *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* a *NumberOfLabels* ).
+1. V podokně akcí vyberte **Seznam polí** a v rozevíracích seznamech vyberte pole, která se zobrazí na pomoc pracovníkům určit správnou roli štítků (například *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* a *NumberOfLabels*).
 1. Zavřete stránku.
 1. Vytvořte čtvrtou položku nabídky a nastavte pro ni následující hodnoty:
 
@@ -131,7 +131,7 @@ Podle těchto kroků vytvořte novou kolekci položek nabídky pro opakovaný ti
     - **Popisek seskupení systému:** *ID dodávky*
     - **Režim tisku:** *ID poslední dobré vlny*
 
-1. V podokně akcí vyberte **Seznam polí** a v rozevíracích seznamech vyberte pole, která se zobrazí na pomoc pracovníkům určit správnou roli štítků (například *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* a *NumberOfLabels* ).
+1. V podokně akcí vyberte **Seznam polí** a v rozevíracích seznamech vyberte pole, která se zobrazí na pomoc pracovníkům určit správnou roli štítků (například *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* a *NumberOfLabels*).
 1. Zavřete stránku.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Nastavení nabídky mobilního zařízení

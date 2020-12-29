@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cefee7d678789f462eedbf9f9a3fbc9b591e25a2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424102"
 ---
 # <a name="costing-versions-overview"></a>Přehled verzí výpočtu nákladů
 
@@ -46,7 +46,7 @@ Nákladová verze může obsahovat sadu záznamů o plánovaných nákladech pol
 ## <a name="entering-costs"></a>Zadání nákladů
 Údržba dat záznamů o cenách v nákladové verzi spočívá v zadávání cen pro nakoupené položky a pro položky, které se převádějí mezi pracovišti. U výrobců zahrnuje další údržba dat zadávání nákladů pro kategorie nákladů, které jsou přidruženy k operacím postupů, zadávání vzorců pro výpočet nepřímých nákladů, které odrážejí výrobní režii, a výpočet nákladů na vyrobené položky. 
 
-Data o cenách položek v nákladové verzi obsahují jeden nebo více záznamů o ceně pro každou položku. Záznam o ceně položky má po vložení stav **Čeká na zpracování** a zamýšlené datum účinnosti. Když záznamu o ceně položky aktivujete, změní se jeho stav na **Aktivní** a datum účinnosti se změní na datum aktivace. Různé záznamy o nákladech na položku mohou být důsledkem různých pracovišť, dat účinnosti nebo stavů. Při kalkulaci nákladů na vyrobené položky k budoucímu datu se pro výpočet kusovníku použijí záznamy o cenách s příslušným datem účinnosti bez ohledu na to, zda mají stav **Čeká na zpracování** nebo **Aktivní** . Při odhadu nákladů na výrobní zakázku a oceňování skladových transakcí se u modelu standardních skladových nákladů použije aktivní záznam o aktuální ceně položky. Správa záznamů o cenách pro kategorie nákladů a vzorců pro výpočet nepřímých nákladů je podobná jako správa záznamů o cenách položek. 
+Data o cenách položek v nákladové verzi obsahují jeden nebo více záznamů o ceně pro každou položku. Záznam o ceně položky má po vložení stav **Čeká na zpracování** a zamýšlené datum účinnosti. Když záznamu o ceně položky aktivujete, změní se jeho stav na **Aktivní** a datum účinnosti se změní na datum aktivace. Různé záznamy o nákladech na položku mohou být důsledkem různých pracovišť, dat účinnosti nebo stavů. Při kalkulaci nákladů na vyrobené položky k budoucímu datu se pro výpočet kusovníku použijí záznamy o cenách s příslušným datem účinnosti bez ohledu na to, zda mají stav **Čeká na zpracování** nebo **Aktivní**. Při odhadu nákladů na výrobní zakázku a oceňování skladových transakcí se u modelu standardních skladových nákladů použije aktivní záznam o aktuální ceně položky. Správa záznamů o cenách pro kategorie nákladů a vzorců pro výpočet nepřímých nákladů je podobná jako správa záznamů o cenách položek. 
 
 Pro nákladové verze existují dvě zásady blokování, které určují, zda může probíhat údržba čekajících nákladů a zda čekající náklady mohou být aktivovány. Zásady blokování použijte k povolení správy dat a poté k zakázání správy dat pro záznamy o cenách v nákladové verzi. 
 

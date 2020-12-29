@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016279"
+ms.locfileid: "4424176"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Vydání dávky částečně rezervovaných převodních příkazů
 
@@ -47,7 +47,7 @@ Zásady plnění pro převodní příkazy a prodejní objednávky jsou určené 
 
 -   Chcete-li vytvořit zásady plnění pro převodní příkazy a prodejní objednávky, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a pak vytvořte zásadu plnění zadáním názvu a popisu.
 
--   Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a následně nastavte pole **Sazba plnění** , **Typ hodnoty** a **Zprávy porušení plnění**.
+-   Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a následně nastavte pole **Sazba plnění**, **Typ hodnoty** a **Zprávy porušení plnění**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Nastavení zásad plnění pro převodní příkazy a prodejní objednávky
 

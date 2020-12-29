@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017063"
+ms.locfileid: "4424129"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -54,7 +54,7 @@ V tomto scénáři výrobní proces (4) spotřebovává materiál ze vstupního 
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurace práce ve skladu pro vyzvednutí kanban u kanbanového odběru
 
-Povolení vyzvednutí surovin pro kanban odběru, konfigurace šablon vlny, pracovních šablon a směrnic pro pracovní místo pro typ pracovního příkazu **Kanban – výdej**. Tento typ pořadí pracovních činností neslouží jenom na podporu procesu výdeje pro kanban odběru. Podporuje také proces vyskladnění pro výrobní kanban. Můžete však nakonfigurovat samostatný postup výdeje pro každý typ kanbanu oddělením šablony vlny, šablon práce a směrnic skladového místa. Když chcete oddělit šablony vlny, šablony práce a směrnice skladového místa, můžete nastavit kritéria pro daný typ aktivity ( **proces** nebo **převod** ) v dotazech pro tyto entity.
+Povolení vyzvednutí surovin pro kanban odběru, konfigurace šablon vlny, pracovních šablon a směrnic pro pracovní místo pro typ pracovního příkazu **Kanban – výdej**. Tento typ pořadí pracovních činností neslouží jenom na podporu procesu výdeje pro kanban odběru. Podporuje také proces vyskladnění pro výrobní kanban. Můžete však nakonfigurovat samostatný postup výdeje pro každý typ kanbanu oddělením šablony vlny, šablon práce a směrnic skladového místa. Když chcete oddělit šablony vlny, šablony práce a směrnice skladového místa, můžete nastavit kritéria pro daný typ aktivity (**proces** nebo **převod**) v dotazech pro tyto entity.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurace kanbanu odběru
 

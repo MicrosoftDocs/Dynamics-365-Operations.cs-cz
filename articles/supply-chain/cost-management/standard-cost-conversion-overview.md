@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214382"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423893"
 ---
 # <a name="standard-cost-conversion-overview"></a>Přehled převodu standardních nákladů
 
@@ -60,13 +60,13 @@ Nová nákladová verze je vyhrazená pro záznam převodu, tak, jak stanovuje t
 Nákladové informace položky ve vyhrazené nákladové verzi lze udržovat pouze na stránce **Převody standardních nákladů**. K výpočtu nákladů pro nákladovou verzi při převodu nelze použít **Nastavení nákladové verze** ani stránku **Údržba nákladové verze**. Můžete však tyto stránky použít k údržbě vyhrazené nákladové verze po dokončení procesu převodu.
 
 ## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Identifikujte položky, které převádíte na standardní náklady
-Použijte stránku**Převody standardních nákladů** pro identifikaci jednotlivých položek, které by měly být převedeny na standardní náklady. Můžete přidat více položek pomocí stránky **Přidat položky do převodu standardních nákladů**. Obecně byste měli zahrnout všechny vyrobené položky do jednoho záznamu převodu pro zajištění správného výpočtu nákladů.
+Použijte stránku **Převody standardních nákladů** pro identifikaci jednotlivých položek, které by měly být převedeny na standardní náklady. Můžete přidat více položek pomocí stránky **Přidat položky do převodu standardních nákladů**. Obecně byste měli zahrnout všechny vyrobené položky do jednoho záznamu převodu pro zajištění správného výpočtu nákladů.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Zadejte výpočet nevyřízených standardních nákladů pro jednotlivé převáděné položky
 Na stránce **Cena položky** zadejte nevyřízené standardní náklady v rámci vyhrazené nákladové verze pro nakoupené a převedené položky. Nákladové záznamy jsou specifické pro pracoviště a nevyřízené náklady položky je nutné zadat pro každé pracoviště. Pomocí stránky **Cena položky** můžete vypočítat nevyřízené standardní náklady pro vyráběné položky. Nevyřízené náklady pro vyráběné položky by se měly vypočítat pro všechna výrobní pracoviště, pokud se nejedná o převodní pracoviště. V takovém případě by se nevyřízené náklady měly zadat ručně. Některé položky mohou mít vlastnosti dimenze produktu, jako je barva, velikost nebo konfigurace. Na stránce **Převody standardních nákladů** popisuje pole **Použít nákladovou cenu podle varianty** standardní náklady pro každou kombinaci dimenzí produktu. Pokud zaškrtnutí tohoto políčka zrušíte, je zapotřebí zadat pouze nevyřízené náklady pro položku.
 
 ## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Zkontrolujte a odstraňte všechny potíže s převáděnými položkami
-Pomocí hlášení**Kontroly převodu standardních nákladů** určete problémy pro převáděné položky. Pokud je položka bezproblémová, její stav v záznamu převodu je zobrazený jako **Zkontrolováno**. V případě, že jsou s položkou spojeny potíže, je nutné problémy vyřešit a pak sestavu znovu spustit a počkat, než se stav změní na **Zkontrolováno**. Pokud nedokážete potíže s položkami včas vyřešit, můžete volitelně položky odstranit ze záznamu převodu a převést je v budoucnosti.
+Pomocí hlášení **Kontroly převodu standardních nákladů** určete problémy pro převáděné položky. Pokud je položka bezproblémová, její stav v záznamu převodu je zobrazený jako **Zkontrolováno**. V případě, že jsou s položkou spojeny potíže, je nutné problémy vyřešit a pak sestavu znovu spustit a počkat, než se stav změní na **Zkontrolováno**. Pokud nedokážete potíže s položkami včas vyřešit, můžete volitelně položky odstranit ze záznamu převodu a převést je v budoucnosti.
 
 ## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Změňte stav záznamu převodu na Připraveno.
 Změnou stavu záznamu převodu na **Připraveno** provedete výslednou kontrolu před spuštěním standardního převodu nákladů. Stav se změní na **Připraveno** pouze v případě, že jsou splněny následující podmínky:

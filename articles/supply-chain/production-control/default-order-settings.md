@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895589"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424106"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -187,7 +187,7 @@ Na kategorii v tomto případě příliš nezáleží, proto ji můžete zakrýt
 
 Můžete si vybrat, jak přísný by měl být systém při ověřování množství zadaného do **Výchozí nastavení objednávky** pro produkt. Když použijete novou přísnou možnost, **Množství standardní objednávky** musí být vždy násobkem zadané hodnoty **Násobek** nákupních objednávek, zásob a prodejních objednávek. Pokud používáte přísnou validaci, nebudete moci uložit výchozí nastavení objednávek, která nesplňují tento požadavek (a na liště zpráv se zobrazí chyba). 
 
-Platí přísná validace na hodnoty **Množství standardní objednávky** uvedené na pevných záložkách **Nákupní objednávka**, **Zásoby** a **Prodejní objednávka** na stránce**Výchozí nastavení objednávky**. Každá pevná záložka má své vlastní nastavení **Násobek**, které se používá k ověření hodnoty **Množství standardní objednávky** zadané pro tuto pevnou záložku.
+Platí přísná validace na hodnoty **Množství standardní objednávky** uvedené na pevných záložkách **Nákupní objednávka**, **Zásoby** a **Prodejní objednávka** na stránce **Výchozí nastavení objednávky**. Každá pevná záložka má své vlastní nastavení **Násobek**, které se používá k ověření hodnoty **Množství standardní objednávky** zadané pro tuto pevnou záložku.
 
 ### <a name="enable-the-strict-validation-option"></a>Povolte možnost přísného ověření
 

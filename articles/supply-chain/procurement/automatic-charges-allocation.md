@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998869"
+ms.locfileid: "4424113"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatické přidělování poplatků
 
@@ -39,13 +39,13 @@ Chcete-li přidělit poplatky, musíte nejprve definovat kódy poplatků.
     - Nákupní objednávky: Přejděte na **Závazky \> Nastavení poplatků \> Kód poplatků**.
     - Prodejní objednávky: Přejděte na **Pohledávky \> Nastavení poplatků \> Kód poplatků**.
 
-1. V podokně Akce vyberte možnost **Nová** , vytvoří se nový kód poplatků.
+1. V podokně Akce vyberte možnost **Nová**, vytvoří se nový kód poplatků.
 1. V záhlaví nového záznamu nastavte následující pole:
 
     - **Kód poplatků** - Zadejte kód poplatků.
     - **Popis** - zadejte popis poplatků.
     - **Skupina DPH položky** - Pokud je to možné, vyberte skupinu DPH položky.
-    - **Poměrné** - Nastavte tuto možnost na *Ano* , pokud chcete poměrně rozdělit své poplatky. Tato možnost je k dispozici pouze pro prodejní objednávky.
+    - **Poměrné** - Nastavte tuto možnost na *Ano*, pokud chcete poměrně rozdělit své poplatky. Tato možnost je k dispozici pouze pro prodejní objednávky.
     - **Maximální částka** - Zadejte maximální částku povolenou pro kód poplatku. Toto pole se používá k ověření poplatků za faktury dodavatele. Je k dispozici pouze pro nákupní objednávky.
 
         > [!NOTE]
@@ -53,8 +53,8 @@ Chcete-li přidělit poplatky, musíte nejprve definovat kódy poplatků.
 
 1. Pevná záložka **Zaúčtování** obsahuje sekce **Debet** a **Kredit**. Nastavte následující pole v závislosti na účetní knize, do které chcete účtovat poplatky:
 
-    - **Typ** - Vyberte typ účtu, na který účtujete ( *Účetní kniha* , *Zákazník* nebo *Položka* ).
-    - **Zaúčtování** - Vyberte typ účetního zápisu, který chcete vytvořit (např *Zprostředkovatelský poplatek* nebo *Vypořádání zákazníka* ).
+    - **Typ** - Vyberte typ účtu, na který účtujete (*Účetní kniha*, *Zákazník* nebo *Položka*).
+    - **Zaúčtování** - Vyberte typ účetního zápisu, který chcete vytvořit (např *Zprostředkovatelský poplatek* nebo *Vypořádání zákazníka*).
     - **Účet** - Vyberte účet, pro který chcete zaúčtovat poplatek.
 
 1. V podokně akcí vyberte **Uložit**.
@@ -112,21 +112,21 @@ Po nastavení kódů poplatků definujte automatické poplatky podle těchto kro
     - *Skupina* - Přiřaďte poplatky skupině různých poplatků.
     - *Všechny* - Aplikuje náklady všem zákazníkům nebo dodavatelům.
 
-1. V poli **Vztah zákazníků** nebo **Vztah dodavatelů** vyberte konkrétního zákazníka nebo dodavatele, pokud jste nastavili **Kód účtu** na *Tabulka*. Pokud jste pole **Kód účtu** nastavili na *Skupina* , vyberte zákazníka nebo skupinu poplatků dodavatele.
+1. V poli **Vztah zákazníků** nebo **Vztah dodavatelů** vyberte konkrétního zákazníka nebo dodavatele, pokud jste nastavili **Kód účtu** na *Tabulka*. Pokud jste pole **Kód účtu** nastavili na *Skupina*, vyberte zákazníka nebo skupinu poplatků dodavatele.
 1. V poli **Kód položky** vyberte jednu z následujících hodnot a určete rozsah položek, které budou ovlivněny. Kód položky můžete vybrat pouze v případě, že definujete automatické poplatky na úrovni řádků.
 
     - *Tabulka* - Aplikuje poplatky specifické položce.
     - *Skupina* - Aplikuje poplatky skupině poplatků za položku.
     - *Všechny* - Aplikuje poplatky všem položkám.
 
-1. V poli **Vztah položky** vyberte konkrétní položku, pokud jste nastavili pole **Kód položek** na *Tabulka*. Pokud nastavili pole **Kód položky** na *Skupina* , vyberte skupinu polatků položky.
+1. V poli **Vztah položky** vyberte konkrétní položku, pokud jste nastavili pole **Kód položek** na *Tabulka*. Pokud nastavili pole **Kód položky** na *Skupina*, vyberte skupinu polatků položky.
 1. **Pouze pro prodejní objednávky:** v poli **Kód způsobu doručení** vyberte jednu z následujících hodnot a určete rozsah režimů doručování, které budou ovlivněny:
 
     - *Tabulka* – Přiřazení poplatků ke konkrétnímu způsobu dodání.
     - *Skupina* – Přiřazení poplatků ke skupině způsobů dodání.
     - *Všechny* – Přiřazení poplatků ke všem způsobům dodání.
 
-1. **Pouze pro prodejní objednávky** : v poli **Vztah způsobu doručení** vyberte konkrétní způsob doručení, pokud nastavíte pole **Kód způsobu doručení** na *Tabulka*. Vyberete-li pole **Kód způsobu doručení** na *Skupina* , vyberte skupinu způsobu doručení.
+1. **Pouze pro prodejní objednávky**: v poli **Vztah způsobu doručení** vyberte konkrétní způsob doručení, pokud nastavíte pole **Kód způsobu doručení** na *Tabulka*. Vyberete-li pole **Kód způsobu doručení** na *Skupina*, vyberte skupinu způsobu doručení.
 1. Na pevné záložce **Řádky** definujte poplatky a sazby poplatků, které budou použity při použití aktuálních automatických poplatků. Pomocí panelu nástrojů na této pevné záložce můžete přidat tolik řádků, kolik potřebujete. U každého řádku je třeba nastavit tato pole:
 
     - **Měna** - Vyberte měnu, která by měla být použita pro výpočet poplatku.
@@ -171,9 +171,9 @@ Následující postup ukazuje, jak alokovat poplatky na úrovni záhlaví řádk
     - **Přidělit vše** - Toto políčko zaškrtněte, chcete-li přidělit náklady řádkům objednávky, i když má kód poplatků jiný typ debetu než *Položka*.
     - **Obdrženo** - Toto políčko zaškrtněte, chcete-li přidělit náklady jen přijatým řádkům objednávky.
     - **Na skladě** - Toto políčko zaškrtněte, chcete-li přidělit náklady jen řádkům objednávky na skladě.
-    - **Zobrazit výběry a vymazat konkrétní řádky** - Zaškrtněte toto políčko, chcete-li z tohoto přidělení vyloučit konkrétní řádky. Pokud zaškrtnete toto políčko, otevře se mřížka **Vyberte řádky, které chcete vyloučit z alokace**. Tato mřížka obsahuje pouze řádky, které odpovídají kritériím definovaným v nastavení **Přidělit náklady k řádkům** a **Na skladě**. Například pokud nastavíte pole **Přidělit náklady k řádkům** na *Kladné řádky* a zaškrtnete možnost **Na skladě** , mřížka zobrazí pouze řádky, které jsou v kladné a na skladě. Kromě toho mřížka automaticky odfiltruje všechny řádky, pro které již bylo přijato celé množství. Když je mřížka otevřená, zrušte zaškrtnutí políčka **Zahrnout** pro každý řádek, který by měl být vyloučen z alokace. 
+    - **Zobrazit výběry a vymazat konkrétní řádky** - Zaškrtněte toto políčko, chcete-li z tohoto přidělení vyloučit konkrétní řádky. Pokud zaškrtnete toto políčko, otevře se mřížka **Vyberte řádky, které chcete vyloučit z alokace**. Tato mřížka obsahuje pouze řádky, které odpovídají kritériím definovaným v nastavení **Přidělit náklady k řádkům** a **Na skladě**. Například pokud nastavíte pole **Přidělit náklady k řádkům** na *Kladné řádky* a zaškrtnete možnost **Na skladě**, mřížka zobrazí pouze řádky, které jsou v kladné a na skladě. Kromě toho mřížka automaticky odfiltruje všechny řádky, pro které již bylo přijato celé množství. Když je mřížka otevřená, zrušte zaškrtnutí políčka **Zahrnout** pro každý řádek, který by měl být vyloučen z alokace. 
 
         > [!IMPORTANT]
-        > Když pracujete s mřížkou **Vyberte řádky, které chcete vyloučit z alokace** , ponechte mřížku otevřenou, dokud nevyberete **Přidělit**. Pokud zavřete mřížku před výběrem **Přidělit** , vaše nastavení v mřížce budou ztracena. Proto budou poplatky přidělovány na základě kritérií, která jste dříve definovali.
+        > Když pracujete s mřížkou **Vyberte řádky, které chcete vyloučit z alokace**, ponechte mřížku otevřenou, dokud nevyberete **Přidělit**. Pokud zavřete mřížku před výběrem **Přidělit**, vaše nastavení v mřížce budou ztracena. Proto budou poplatky přidělovány na základě kritérií, která jste dříve definovali.
 
-1. Vyberte **Přidělit** , pokud chcete použít své nastavení a zavřete dialogové okno.
+1. Vyberte **Přidělit**, pokud chcete použít své nastavení a zavřete dialogové okno.

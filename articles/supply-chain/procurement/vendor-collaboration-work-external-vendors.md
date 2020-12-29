@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018737"
+ms.locfileid: "4424215"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -60,8 +60,8 @@ Správce konfiguruje obecná nastavení pro dodavatelskou spolupráci, jako jsou
 
 Před vytvořením uživatelských účtů pro externí dodavatele nakonfigurujte účet dodavatele, aby mohl dodavatel používat dodavatelskou spolupráci. Na stránce **Dodavatelé** na kartě **Obecné** nastavte pole **Aktivace spolupráce**. Existují tyto možnosti:
 
-- **Aktivní (nákupní objednávka je automaticky potvrzena)** – nákupní objednávky se automaticky potvrzují, pokud je dodavatel přijme beze změn.
-- **Aktivní (nákupní objednávka není automaticky potvrzena)** – nákupní objednávky musí být ručně potvrzeny vaší organizací poté, co je dodavatel přijal.
+- **Aktivní (nákupní objednávka je automaticky potvrzena)**– nákupní objednávky se automaticky potvrzují, pokud je dodavatel přijme beze změn.
+- **Aktivní (nákupní objednávka není automaticky potvrzena)**– nákupní objednávky musí být ručně potvrzeny vaší organizací poté, co je dodavatel přijal.
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Určení, zda má dodavatel vidět informace o ceně
 
@@ -71,7 +71,7 @@ Pokud chcete sdílet informace o ceně pro nákupní objednávky prostřednictv�
 
 ### <a name="sending-a-po-to-a-vendor"></a>Odeslání nákupní objednávky dodavateli
 
-Nákupní objednávky se připravují v Supply Chain Management. Pokud nákupní objednávka bude mít stav **Schváleno** , odesíláte ji dodavateli zvolením možnosti **Odeslat potvrzení** na stránce **Nákupní objednávka**. Stav nákupní objednávky se změní na **V externí revizi**. Po odeslání nákupní objednávky ji dodavatel může zobrazit na stránce **Nákupní objednávky ke kontrole** v rozhraní spolupráce dodavatele. Dodavatel pak může nákupní objednávku přijmout, odmítnout nebo pro ni navrhnout změny. Dodavatel může také přidat komentáře pro předávání informací, jako jsou například změny v nákupní objednávce. Pokud chcete tohoto dodavatele upozornit na novou nákupní objednávku, můžete také nákupní objednávky odeslat e-mailem pomocí systému správy tisku.
+Nákupní objednávky se připravují v Supply Chain Management. Pokud nákupní objednávka bude mít stav **Schváleno**, odesíláte ji dodavateli zvolením možnosti **Odeslat potvrzení** na stránce **Nákupní objednávka**. Stav nákupní objednávky se změní na **V externí revizi**. Po odeslání nákupní objednávky ji dodavatel může zobrazit na stránce **Nákupní objednávky ke kontrole** v rozhraní spolupráce dodavatele. Dodavatel pak může nákupní objednávku přijmout, odmítnout nebo pro ni navrhnout změny. Dodavatel může také přidat komentáře pro předávání informací, jako jsou například změny v nákupní objednávce. Pokud chcete tohoto dodavatele upozornit na novou nákupní objednávku, můžete také nákupní objednávky odeslat e-mailem pomocí systému správy tisku.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Potvrzení a přijetí nákupní objednávky dodavatelem
 
@@ -120,7 +120,7 @@ Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Exter
 </tbody>
 </table>
 
-Pomocí pracovního prostoru **Příprava nákupní objednávky** můžete sledovat, na které nákupní objednávky dodavatel zareagoval. Tento pracovní prostor obsahuje dva seznamy s nákupními objednávkami se stavem **V externí revizi** :
+Pomocí pracovního prostoru **Příprava nákupní objednávky** můžete sledovat, na které nákupní objednávky dodavatel zareagoval. Tento pracovní prostor obsahuje dva seznamy s nákupními objednávkami se stavem **V externí revizi**:
 
 - Na externí kontrole – vyžaduje akci
 - Na externí kontrole čekající na odpověď dodavatele
@@ -141,7 +141,7 @@ Do nákupní objednávky můžete přidávat přílohy, například soubory obr�
 
 Když dodavatel odpoví na nákupní objednávku a navrhne změny, je dalším krokem zpracování odpovědi.
 
-V pracovním prostoru **Příprava nákupní objednávky** v seznamu **Na externí kontrole - vyžaduje akci** , můžete identifikovat nákupní objednávku, kterou dodavatel přijal se změnami. Z tohoto seznamu můžete také přejít na odpověď dodavatele.
+V pracovním prostoru **Příprava nákupní objednávky** v seznamu **Na externí kontrole - vyžaduje akci**, můžete identifikovat nákupní objednávku, kterou dodavatel přijal se změnami. Z tohoto seznamu můžete také přejít na odpověď dodavatele.
 
 Při odpovědi dodavatel může změnit následující informace v záhlaví:
  
@@ -168,7 +168,7 @@ Objednávky lze aktualizovat volbou akce **Zpracovat aktualizaci PO** v odpověd
 
 Ne všechny navrhované změny lze na nákupní objednávce aktualizovat. Pouze aktualizace v záhlaví a aktualizace dat a množství na řádcích lze automaticky aktualizovat v nákupní objednávce. Další změny musíte aktualizovat ručně na nákupní objednávce. V takovém případě hodnota pole **Je PO zpracována?** je **Ruční aktualizace**. Například pokud dodavatel navrhne, že řádek lze rozdělit na plán, tuto změnu je nutné provést ručně.
 
-Všechny řádky, které se nachází ve stavu **Přijato** , budou mít potvrzené datum dodání. Při spuštění akce **Zpracovat aktualizaci nákupní objednávky** se toto datum aktualizuje na nákupní objednávce. Poznámky a přílohy nejsou automaticky převedeny na aktuální nákupní objednávku. Všimněte si, že když aktualizujete aktuální nákupní objednávku prostřednictvím akce **Zpracovat aktualizaci nákupní objednávky** , akce obchodu nebudou na řádcích nákupní objednávky znovu posuzovány.
+Všechny řádky, které se nachází ve stavu **Přijato**, budou mít potvrzené datum dodání. Při spuštění akce **Zpracovat aktualizaci nákupní objednávky** se toto datum aktualizuje na nákupní objednávce. Poznámky a přílohy nejsou automaticky převedeny na aktuální nákupní objednávku. Všimněte si, že když aktualizujete aktuální nákupní objednávku prostřednictvím akce **Zpracovat aktualizaci nákupní objednávky**, akce obchodu nebudou na řádcích nákupní objednávky znovu posuzovány.
 
 ## <a name="po-statuses-and-versions"></a>Stavy a verze nákupní objednávky
 
@@ -185,7 +185,7 @@ Následující tabulka zobrazuje příklad změn stavu a verze, kterou objednáv
 | Dodavatel odešle odpověď **Přijata se změnami**. | Stav bude stále **Na externí kontrole**. |
 | Provedete změny, které jsou požadovány dodavatelem. | Stav je změněn na **Schváleno**. |
 | Odešlete novou verzi nákupní objednávky dodavateli. | Nová verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
-| Dodavatel přijme novou verzi nákupní objednávky. | Stav bude stále **V externí revizi** , pokud není nakonfigurován účet dodavatele na nákupní objednávce na automatické nastavení stavu na **Potvrzeno** při přijetí dodavatelem. |
+| Dodavatel přijme novou verzi nákupní objednávky. | Stav bude stále **V externí revizi**, pokud není nakonfigurován účet dodavatele na nákupní objednávce na automatické nastavení stavu na **Potvrzeno** při přijetí dodavatelem. |
 
 Dodavatelé nemusí nákupní objednávku potvrdit pomocí rozhraní spolupráce pro dodavatele. Mohou také odeslat e-mailovou zprávu nebo sdělit jejich přijetí nákupní objednávky prostřednictvím jiných kanálů. Poté lze ručně potvrdit objednávku. V tomto případě se zobrazí upozornění, že objednávka má být potvrzena, přestože není reakce od dodavatele. Nákupní objednávka se poté zobrazí v historii potvrzení jako otevřená potvrzená objednávka, která nemá žádné odpovědi. V tomto okamžiku dodavatel již nemá možnost nákupní objednávku potvrdit nebo odmítnout.
 
@@ -201,10 +201,10 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 | Akce | Stav a verze |
 |--------|--------------------|
 | Počáteční verze nákupní objednávky je vytvořena v aplikaci Supply Chain Management. | Stav majetku je **Koncept**. |
-| Nákupní objednávka je odeslána do schvalovacího procesu. (Schvalovací proces je interním procesem, do kterého dodavatel nevstupuje.) | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení** , pokud nákupní objednávky není během procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze. | 
+| Nákupní objednávka je odeslána do schvalovacího procesu. (Schvalovací proces je interním procesem, do kterého dodavatel nevstupuje.) | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávky není během procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze. | 
 | Nákupní objednávka je odeslána dodavateli. | Verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
 | Provedete některé změny požadované dodavatelem, ať už manuálně nebo použitím akce **Zpracovat aktualizaci nákupní objednávky** v odpovědi na aktualizaci nákupní objednávky. | Stav je opět změněn na **Koncept**. |
-| Nákupní objednávka je opět odeslána do schvalovacího procesu. | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení** , pokud nákupní objednávky není během procesu schvalování zamítnuta. Alternativně systém lze nakonfigurovat tak, aby změny konkrétního pole nevyžadovaly opětovné schválení. V tomto případě se stav nejprve změní na **Koncept** , a pak se automaticky aktualizuje na **Schváleno**. Schválená nákupní objednávka je registrována jako nová verze. |
+| Nákupní objednávka je opět odeslána do schvalovacího procesu. | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávky není během procesu schvalování zamítnuta. Alternativně systém lze nakonfigurovat tak, aby změny konkrétního pole nevyžadovaly opětovné schválení. V tomto případě se stav nejprve změní na **Koncept**, a pak se automaticky aktualizuje na **Schváleno**. Schválená nákupní objednávka je registrována jako nová verze. |
 | Odešlete novou verzi nákupní objednávky dodavateli. | Nová verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
 | Dodavatel schválí novou verzi nákupní objednávky. | Stav se změní na **Potvrzeno** buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku. |
 

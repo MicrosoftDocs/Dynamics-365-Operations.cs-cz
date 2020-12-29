@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017614"
+ms.locfileid: "4424139"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -45,11 +45,11 @@ Následující ilustrace znázorňuje typický tok pro zpracování příchozíc
 
 1. **Dodavatel potvrdí expedici nákladu.**
 
-    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy** , potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy**, potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **K zaznamenání do skladu a pracovníci registrují množství.**
 
-    Když nákladní vozidlo dorazí do skladu, pracovníci skladu zaregistrují množství nákladu. Pokud je použit modul **Řízení skladu** , jsou zaměstnanci registrováni pomocí mobilních zařízení. Další informace naleznete v tématu [Příjemka produktu proti nákupním objednávkám](../procurement/product-receipt-against-purchase-orders.md#registration) a [Registrace množství položek, které přicházejí v rámci příchozího nákladu](#register-item-quantities-arriving).
+    Když nákladní vozidlo dorazí do skladu, pracovníci skladu zaregistrují množství nákladu. Pokud je použit modul **Řízení skladu**, jsou zaměstnanci registrováni pomocí mobilních zařízení. Další informace naleznete v tématu [Příjemka produktu proti nákupním objednávkám](../procurement/product-receipt-against-purchase-orders.md#registration) a [Registrace množství položek, které přicházejí v rámci příchozího nákladu](#register-item-quantities-arriving).
 
 1. **Zaregistrovaná množství nákladu jsou zaúčtována proti nákupním objednávkám.**
 
@@ -75,7 +75,7 @@ Při prvním doručení příchozího břemene do skladu musí pracovníci sklad
     - Příjem a zaskladnění smíšených registračních značek, kde je pole **Metoda Identifikace řádku zdrojového dokumentu** pro položku nabídky mobilního zařízení nastaveno pro _Přijetí položky nákladu_. Další informace naleznete v tématu [Příjem smíšených registračních značek](mixed-license-plate-receiving.md).
 
     > [!NOTE]
-    > Bez ohledu na proces bude systém generovat práci, která přijme množství zaregistrovaná v přijímacím umístění a umístí je do místa normálního uložení. Při použití procesu _Přijetí a odložení položky nákladu_ či _Přijetí a odložení smíšené registrační značky_ , pracovník, který zaregistroval množství nákladu, bude také vyzván zařízením k provedení práce zaskladnění jako součásti úlohy registrace. Naopak, u procesů _Přijetí položky nákladu_ a _Příjem smíšené registrační značky_ se předpokládá, že práce zaskladnění bude provedena odděleně od úlohy registrace.
+    > Bez ohledu na proces bude systém generovat práci, která přijme množství zaregistrovaná v přijímacím umístění a umístí je do místa normálního uložení. Při použití procesu _Přijetí a odložení položky nákladu_ či _Přijetí a odložení smíšené registrační značky_, pracovník, který zaregistroval množství nákladu, bude také vyzván zařízením k provedení práce zaskladnění jako součásti úlohy registrace. Naopak, u procesů _Přijetí položky nákladu_ a _Příjem smíšené registrační značky_ se předpokládá, že práce zaskladnění bude provedena odděleně od úlohy registrace.
 
 - **Šablona práce definující práci vyskladnění a uložení pro příchozí náklady**
 
@@ -93,7 +93,7 @@ Poté, co pracovník dokončí tyto kroky, systém provede v příslušných en
 
 | Celek | Aktualizace | Poznámka |
 |---|---|---|
-| Načíst | Pole **Množství vytvořené práce** na řádku nákladu se aktualizuje, aby se zobrazilo registrované množství. | Hodnota **Stavu nákladu** zůstane _Expedováno_ nebo _Otevřeno_ , pokud nebylo pro náklad spuštěno žádné potvrzení dodávky. Pokud byl zahájen alespoň jeden řádek práce zaskladnění, změní se na _V procesu_. |
+| Načíst | Pole **Množství vytvořené práce** na řádku nákladu se aktualizuje, aby se zobrazilo registrované množství. | Hodnota **Stavu nákladu** zůstane _Expedováno_ nebo _Otevřeno_, pokud nebylo pro náklad spuštěno žádné potvrzení dodávky. Pokud byl zahájen alespoň jeden řádek práce zaskladnění, změní se na _V procesu_. |
 | Skladová transakce nákupní objednávky, pro kterou jsou registrována přidružená množství nákladu |<p>Aktualizují se následující pole:</p><ul><li>Pole <b>Účtenka</b> je nastaveno na <i>Registrovaná</i>.</li><li>Pole <b>Umístění</b> je aktualizováno kódem místa pro přijímací překladiště. (Tento kód je pro každý sklad určen v poli <b>Výchozí skladové místo příjmu</b>.)</li><li>Pole <b>Registrační značka</b> je aktualizováno číslem registrační značky, které bylo zadáno nebo vygenerováno během registrace.</li><li>Pole <b>ID nákladu</b> je aktualizováno číslem nákladu, na které bylo zaregistrováno množství. (Viz poznámka.)</li></ul> | Možnost propojení mezi skladovou transakcí nákupní objednávky a množstvími registrovanými vůči nákladu byla představena ve verzi 10.0.9 jako volitelná funkce, která byla pojmenovaná _Přiřazení skladových transakcí nákupní objednávky k nákladu_. Tato funkce je užitečná zejména pro operační toky, kde je jedna objednávka zakoupeného zboží dodávána jako vícenásobné vytížení, nebo když náklad obsahuje množství pro více nákupních objednávek. |
 | Zaskladnění | Práce je vytvořena na základě šablony práce s cílem instruovat pracovníka, aby přesunul zaregistrovaná množství z přijímacího místa do běžného místa uložení. | Volba umístění úložiště je řízena směrnicí umístění PUT. Pokud nebyla definována žádná směrnice skladového místa, místo zaskladnění pro práci je prázdné. |
 
@@ -101,10 +101,10 @@ Mějte na paměti, že pracovníci skladu mohou zaregistrovat příjem nákupní
 
 - **Na mobilním zařízení:** použijte procesy _Přijetí řádku nákupní objednávky_ a _Přijetí řádku nákupní objednávky a odložení_. (Pokud pro množství na řádku nákupní objednávky existuje více než jeden náklad, pracovník nemůže použít proces _Přijetí řádku nákupní objednávky_. Místo toho bude pracovník instruován k použití akce zařízení, která je přidružena k procesu _Přijetí položky nákladu_.)
 - **V klientovi:** použijte deník doručení položky.
-- **V klientovi:** použijte akci **Registrace** , kterou lze otevřít z řádku nákupní objednávky.
+- **V klientovi:** použijte akci **Registrace**, kterou lze otevřít z řádku nákupní objednávky.
 
 > [!NOTE]
-> Je-li příjem nákupní objednávky registrován pomocí některé z předchozích metod, není mezi skladovou transakcí nákupní objednávky a nákladem vytvořeno žádné propojení, a to ani v případě, že je zapnuta funkce _Přiřazení skladových transakcí nákupní objednávky k nákladu_. Jedinou výjimkou z tohoto pravidla je použití možnosti **Přijetí řádku nákupní objednávky** , přičemž pouze jeden náklad má pro daný řádek objednávky má jiný stav než _Přijato_.
+> Je-li příjem nákupní objednávky registrován pomocí některé z předchozích metod, není mezi skladovou transakcí nákupní objednávky a nákladem vytvořeno žádné propojení, a to ani v případě, že je zapnuta funkce _Přiřazení skladových transakcí nákupní objednávky k nákladu_. Jedinou výjimkou z tohoto pravidla je použití možnosti **Přijetí řádku nákupní objednávky**, přičemž pouze jeden náklad má pro daný řádek objednávky má jiný stav než _Přijato_.
 
 ### <a name="handle-discrepancies-during-registration-of-inbound-load-quantities"></a>Zpracovat nesrovnalosti během registrace množství pro příchozí náklad
 
@@ -122,8 +122,8 @@ Pole **Příjem většího množství nákladu** použijte pro příslušné pol
 
 - Přijetí položky nákladu
 - Přijetí a odložení položky nákladu
-- Příjem smíšených registračních značek, (když je pole **Metoda Identifikace řádku zdrojového dokumentu** pro položku nabídky mobilního zařízení nastaveno pro _Přijetí položky nákladu_ )
-- Příjem a zaskladnění smíšených registračních značek, (když je pole **Metoda Identifikace řádku zdrojového dokumentu** pro položku nabídky mobilního zařízení nastaveno pro _Přijetí položky nákladu_ )
+- Příjem smíšených registračních značek, (když je pole **Metoda Identifikace řádku zdrojového dokumentu** pro položku nabídky mobilního zařízení nastaveno pro _Přijetí položky nákladu_)
+- Příjem a zaskladnění smíšených registračních značek, (když je pole **Metoda Identifikace řádku zdrojového dokumentu** pro položku nabídky mobilního zařízení nastaveno pro _Přijetí položky nákladu_)
 
 Následující tabulka vysvětluje dostupné možnosti pro pole **Příjem většího množství nákladu**.
 
@@ -144,7 +144,7 @@ Když pracovník skladu dokončí práci zaskladnění, systém zaznamená a bud
 
 | Celek | Aktualizace | Poznámka |
 |---|---|---|
-| Načíst | <p>Aktualizují se následující pole:</p><ul><li>Hodnota <b>Stav nákladu</b> se změnila na <i>zpracovává se</i>.</li><li>Hodnota <b>Stav práce</b> je změněna na <i>100,00% práce dokončeno</i>.</li></ul> | Hodnota **Stav nákladu** se změnila na _Zpracovává se_ , když pracovník zahájí úlohu zaskladnění pro alespoň jeden řádek zaskladnění. |
+| Načíst | <p>Aktualizují se následující pole:</p><ul><li>Hodnota <b>Stav nákladu</b> se změnila na <i>zpracovává se</i>.</li><li>Hodnota <b>Stav práce</b> je změněna na <i>100,00% práce dokončeno</i>.</li></ul> | Hodnota **Stav nákladu** se změnila na _Zpracovává se_, když pracovník zahájí úlohu zaskladnění pro alespoň jeden řádek zaskladnění. |
 | Skladové transakce práce, pro které bylo zaskladněno související množství | Pole **Příjemka** a **Umístění** a další související pole jsou aktualizována tak, aby odrážela pohyb z přijímacího místa do skladového místa. | Hodnota **Stav příjmu** skladové transakce nákupní objednávky zůstane _Zaregistrováno_. |
 | Zaskladnění | Hodnota **Stv práce** se změnila na _Uzavřeno_. | |
 
@@ -159,20 +159,20 @@ Chcete-li otevřít stránku, na níž mohou být zaúčtovány příjemky produ
 - Otevřete příslušnou nákupní objednávku a poté vyberte akci **Příjemka produktu**.
 - Přejděte na **Zásobování a zdroje \> Nákupní objednávky \> Příjem produktů \> Úloha zaúčtování příjemky produktu**.
 
-Akce **Příjemka produktu** , která je k dispozici na stránce **Náklad** (a na ekvivalentní stránce pro úlohu aktualizace **Aktualizovat příjemky produktů** ), může aktualizovat množství příjemky produktu pouze u množství na nákupních objednávkách, které mají stav _Registrováno_. Akce **Příjemka produktu** , která je k dispozici na stránce **Nákupní objednávka** , však může zahrnovat množství ve stavech zpracování ( _Objednáno_ a _Registrováno_ ). Může také určovat rozsah zaúčtování příjemky produktu pomocí dodatečných parametrů, jako je _Množství nynějšího příjmu_ a _Registrované množství a služby_.
+Akce **Příjemka produktu**, která je k dispozici na stránce **Náklad** (a na ekvivalentní stránce pro úlohu aktualizace **Aktualizovat příjemky produktů**), může aktualizovat množství příjemky produktu pouze u množství na nákupních objednávkách, které mají stav _Registrováno_. Akce **Příjemka produktu**, která je k dispozici na stránce **Nákupní objednávka**, však může zahrnovat množství ve stavech zpracování (_Objednáno_ a _Registrováno_). Může také určovat rozsah zaúčtování příjemky produktu pomocí dodatečných parametrů, jako je _Množství nynějšího příjmu_ a _Registrované množství a služby_.
 
-Pouze objednávky, které mají stav _Potvrzeno_ , mohou být zaúčtovány. U nepotvrzených nákupních objednávek se akce **Příjemka produktu** zobrazí jako Není k dispozici.
+Pouze objednávky, které mají stav _Potvrzeno_, mohou být zaúčtovány. U nepotvrzených nákupních objednávek se akce **Příjemka produktu** zobrazí jako Není k dispozici.
 
 ### <a name="post-registered-quantities-from-the-load-page"></a>Zaúčtovat zaregistrovaná množství ze stránky Náklad
 
-Příjemka produktu – chcete-li zaúčtovat zaregistrovaná množství ze stránky **Náklad** , musí být zavedeny následující předpoklady:
+Příjemka produktu – chcete-li zaúčtovat zaregistrovaná množství ze stránky **Náklad**, musí být zavedeny následující předpoklady:
 
 - Náklad musí mít alespoň jednu jednotku množství, která má stav _Registrováno_.
 - Stav nákladu musí být _Expedován_.
 - Nákupní objednávka, která je přidružená k nákladu, musí mít stav _Potvrzeno_.
 
 > [!NOTE]
-> Pokud stav nakládky není nastaven na _Expedováno_ , systém před spuštěním aktualizace příjemky produktu ověření automaticky potvrdí. (Stav nakládky je nastaven na _Expedováno_ při zaregistrování příchozí dodávky uživatelem.)
+> Pokud stav nakládky není nastaven na _Expedováno_, systém před spuštěním aktualizace příjemky produktu ověření automaticky potvrdí. (Stav nakládky je nastaven na _Expedováno_ při zaregistrování příchozí dodávky uživatelem.)
 
 Příjemka produktu – chcete-li zaúčtovat registrace doručení, které jsou přidruženy k vybranému nákladu, pracovník vybere akci **Příjemka produktu** na stránce **Náklad**. Otevřená stránka obsahuje následující klíčové údaje:
 
@@ -181,12 +181,12 @@ Příjemka produktu – chcete-li zaúčtovat registrace doručení, které jsou
 - V mřížce na pevné záložce **Řádky** jsou uvedeny všechny řádky objednávky, které mají registrované množství.
 
 > [!NOTE]
-> Množství pro řádky objednávky, které se zobrazí na kartě **Řádek** , jsou vypočítána různě v závislosti na tom, zda je k dispozici a zapnutá funkce _Povolit více příjemek produktů na náklad_ ve vaší verzi modulu Supply Chain Management.
+> Množství pro řádky objednávky, které se zobrazí na kartě **Řádek**, jsou vypočítána různě v závislosti na tom, zda je k dispozici a zapnutá funkce _Povolit více příjemek produktů na náklad_ ve vaší verzi modulu Supply Chain Management.
 >
 > | Verze | Výpočet |
 > |---|---|
 > | Verze před verzí 10.0.10 a novější verze, kde není zapnuta funkce _Povolit více příjemek produktů na náklad_ | Množství na řádku je součtem všech registrovaných množství _pro daný řádek nákupní objednávky_ bez ohledu na to, zda byla registrace provedena přes více nákladů, nezávisle na nákladu, z mobilního zařízení nebo klienta. |
-> | Verze 10.0.10 a novější verze, kde je zapnuta funkce _Povolit více příjemek produktů na náklad_ | Množství na řádku je součtem všech registrovaných množství _záznamu nákladu_ , ze kterého byla zahájena akce **Zaúčtování příjemky produktu** . |
+> | Verze 10.0.10 a novější verze, kde je zapnuta funkce _Povolit více příjemek produktů na náklad_ | Množství na řádku je součtem všech registrovaných množství _záznamu nákladu_, ze kterého byla zahájena akce **Zaúčtování příjemky produktu** . |
 
 Když uživatel vybere **OK** k potvrzení zaúčtování příjemky produktu, systém provede následující aktualizace příslušných entit.
 
@@ -207,15 +207,15 @@ V následující tabulce jsou shrnuty účinky nastavení **Povolit více pří
 |---|---|---|---|
 | Pokud toto pole není k dispozici (verze před 10.0.10) | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství.</p><p>Pokud je množství nákladu aktualizováno na 0 (nula), což znamená, že nebyla provedena žádná registrace, řádek nákladu bude odstraněn.</p><p>Pokud pro náklad nejsou k dispozici žádné řádky pro čtení, dojde k jeho odstranění.</p> | _Přijato_ | Existuje-li pro zaregistrované množství řádku objednávky více nákladů, aktualizuje se na _přijato_ pouze stav nákladu, ze kterého byla zaúčtována příjemka. |
 | Žádný | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství, které je přidruženo k ID nákladu.</p><p>Pokud není pro skladovou transakci zaznamenáno ID nákladu, chování odpovídá chování ve verzích před 10.0.10.</p> | _Přijato_ | |
-| Ano | Žádné aktualizace | _Přijato_ , pokud je celkové zaregistrované množství nákladu rovno nebo větší než množství nákladu | |
-| Ano | Žádné aktualizace | _Odesláno_ nebo _Zpracovává se_ , pokud je celkové zaregistrované množství nákladu menší než množství nákladu | |
+| Ano | Žádné aktualizace | _Přijato_, pokud je celkové zaregistrované množství nákladu rovno nebo větší než množství nákladu | |
+| Ano | Žádné aktualizace | _Odesláno_ nebo _Zpracovává se_, pokud je celkové zaregistrované množství nákladu menší než množství nákladu | |
 
 Po nastavení pole **Stav nákladu** na _Přijato_ již nelze pro daný náklad provést další zaúčtování příjemky produktu. Pracovník však může zaregistrovat zbývající množství objednávky proti přijatému nákladu za následujících podmínek. (Další informace naleznete v oddílu [Příjem většího množství nákladu](#load-over-receiving) dříve v tomto tématu.)
 
 - Verze Supply Chain Management je starší než verze 10.0.11.
 - Pokud je zapnuta funkce _Příjem většího množství nákladu_ a **Množství řádku nákladu větší, než příjemka** v položce nabídky mobilního zařízení pro akci přijetí položky nákladů je nastaveno na _Povolit_.
 
-Příjemka produktu – pro zaúčtování dalších registrovaných množství do nákladu, které mají stav _přijato_ , musí uživatel spustit akci zaúčtování z přidružené nákupní objednávky.
+Příjemka produktu – pro zaúčtování dalších registrovaných množství do nákladu, které mají stav _přijato_, musí uživatel spustit akci zaúčtování z přidružené nákupní objednávky.
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Zaúčtovat zaregistrovaná množství ze stránky Nákupní objednávka
 
@@ -238,7 +238,7 @@ V následující tabulce jsou shrnuty účinky nastavení **Povolit více pří
 
 | Povolit více přijetí produktu na vytížení | Množství nákladu | Stav nákladu | Poznámka |
 |---|---|---|---|
-| Pokud je toto pole zakázáno nebo není k dispozici (verze před 10.0.10) | Žádné aktualizace | Nebyly provedeny žádné aktualizace. (Stav zůstane _Otevřeno_ , _Odesláno_ nebo _Zpracovává se_.) | Vzhledem k tomu, že zaúčtování příjemky produktu je zahájeno z nákupní objednávky, logika aktualizace neobsahuje informace o přidružení mezi registrovanými množstvími v rámci rozsahu a nákladů, na které byla registrace zaznamenána. Proto nemůže vybrat náklad pro aktualizaci stavu. |
+| Pokud je toto pole zakázáno nebo není k dispozici (verze před 10.0.10) | Žádné aktualizace | Nebyly provedeny žádné aktualizace. (Stav zůstane _Otevřeno_, _Odesláno_ nebo _Zpracovává se_.) | Vzhledem k tomu, že zaúčtování příjemky produktu je zahájeno z nákupní objednávky, logika aktualizace neobsahuje informace o přidružení mezi registrovanými množstvími v rámci rozsahu a nákladů, na které byla registrace zaznamenána. Proto nemůže vybrat náklad pro aktualizaci stavu. |
 | Povoleno | Žádné aktualizace | <p>Nastane jedna z následujících akcí:</p><ul><li>Stav se změní na <i>Přijato</i>, pokud celková přijatá a zakoupená množství skladových transakcí nákupní objednávky je větší nebo rovna množství nákladu, ke kterému jsou přidružena.</li><li>Stav zůstává <i>Otevřeno</i>, <i>Odesláno</i> nebo <i>Zpracovává se</i>, pokud není pro všechny řádky nákaldu splněna předchozí podmínka.</li></ul> | |
 
 ### <a name="select-the-appropriate-product-receipt-posting-option-for-your-logistics-operations"></a>Vyberte možnost zaúčtování příjemky produktu pro vaše logistické operace
@@ -268,12 +268,12 @@ Tyto scénáře vyžadují funkci _Více zaúčtování příjemek produktů na 
 
 1. Otevřete pracovní prostor **Správa funkcí**. (Podrobné informace o tom, jak najít a použít tento pracovní prostor naleznete v tématu [Správa funkcí – přehled](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)funkcí – přehled.)
 
-1. Zapněte funkci _Přiřazení skladových transakcí nákupní objednávky k nákladu_ , která je uvedena následujícím způsobem:
+1. Zapněte funkci _Přiřazení skladových transakcí nákupní objednávky k nákladu_, která je uvedena následujícím způsobem:
 
     - **Modul:** _Řízení skladu_
     - **Název funkce:** _Přiřazení skladových transakcí nákupní objednávky k nákladu_
 
-1. Zapněte funkci _Více zaúčtování příjemek produktů na náklad_ , která je uvedeno následujícím způsobem:
+1. Zapněte funkci _Více zaúčtování příjemek produktů na náklad_, která je uvedeno následujícím způsobem:
 
     - **Modul:** _Řízení skladu_
     - **Název funkce:** _Více zaúčtování příjemek produktů na náklad_
@@ -334,18 +334,18 @@ V tomto postupu můžete ručně vytvořit nákupní objednávku a souvisejíc�
     ![Podrobnosti o nákladu](media/inbound-load-details.png "Podrobnosti o nákladu")
 
 1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Potvrdit \> Příchozí dodávka**. Povšimněte si, že **Stav nákladu** se změnil na _Expedováno_.
-1. Poznamenejte si hodnotu **ID nákladu** , aby jej bylo možné použít v dalším postupu.
+1. Poznamenejte si hodnotu **ID nákladu**, aby jej bylo možné použít v dalším postupu.
 
 #### <a name="register-receipt-of-the-quantities-that-arrived-on-the-load"></a>Zaregistrujte příjem množství, která byla doručena do nákladu
 
 Když je do skladu doručen náklad, pracovník příjmu zaregistruje množství nákladu v mobilním zařízení.
 
 1. Pomocí mobilního zařízení se přihlaste ke skladu 24. (Ve standardních ukázkových datech se přihlaste pomocí čísla _24_ ID uživatele a _1_ jako heslo.)
-1. Vyberte položku nabídky _Přijetí položky nákladu_ , kterou jste vytvořili pro tento scénář.
+1. Vyberte položku nabídky _Přijetí položky nákladu_, kterou jste vytvořili pro tento scénář.
 1. Chcete-li zadat následující hodnoty, postupujte podle instrukcí pro zadávání dat na obrazovce. (Pořadí se může lišit v závislosti na mobilním zařízení nebo emulátoru, které používáte.)
 
     - **Náklad** – zadejte ID nákladu, které jste vytvořili v předchozím postupu.
-    - **Položka** – zadejte _A0001_ , což je položka, která je pro toto náklad očekávána.
+    - **Položka** – zadejte _A0001_, což je položka, která je pro toto náklad očekávána.
     - **Množství** – zadejte _9_ jako skutečné množství, které je k dispozici v nákladu. Povšimněte si, že toto množství je menší než očekávané množství.
 
 1. Pokračovat v procházení pracovního postupu, ponechat všechna ostatní pole prázdná nebo nastavit na výchozí hodnoty, dokud vám zařízení neinformuje o dokončení práce.
@@ -353,23 +353,23 @@ Když je do skladu doručen náklad, pracovník příjmu zaregistruje množství
 Úkol přijetí nákladu je nyní dokončen a pracovník příjmu se může přesunout na následující úkol. Přijímající pracovník však nakonec zkontroluje záznam o nákladu a bude moci zjistit, že přijaté množství je menší než očekávané množství. Poté vyplní následující postup pomocí webového klienta.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V seznamu najděte náklad, které jste právě přijali. (Je možné, že bude nutné zaškrtnout políčko **Zobrazit uzavřené** , chcete-li zahrnout vstupní stavy se stavem nákladu _Expedováno_.) Poté výběrem odkazu ve sloupci **ID nákladu** otevřete požadovaný náklad.
-1. V záznamu nákladu si všimněte, že hodnota **Stav nákladu** zůstane _Expedováno_ , ale hodnota **Množství vytvořené práce** na řádku nákladu se změnila na _9_.
+1. V seznamu najděte náklad, které jste právě přijali. (Je možné, že bude nutné zaškrtnout políčko **Zobrazit uzavřené**, chcete-li zahrnout vstupní stavy se stavem nákladu _Expedováno_.) Poté výběrem odkazu ve sloupci **ID nákladu** otevřete požadovaný náklad.
+1. V záznamu nákladu si všimněte, že hodnota **Stav nákladu** zůstane _Expedováno_, ale hodnota **Množství vytvořené práce** na řádku nákladu se změnila na _9_.
 1. Přejděte na **Zásobování a zdroje \> Nákupní objednávky \> Všechny nákupní objednávky**.
 1. V seznamu najděte právě přijatý nákup a poté výběrem odkazu ve sloupci **Nákupní objednávky** otevřete objednávku.
 \
 1. Na pevné záložce **Řádky nákupní objednávky** vyberte **Zásoby \> Zobrazit \> Transakce**.
-1. Zkontrolujte podrobnosti o dvou transakcích nákupní objednávky. (Bude pravděpodobně nutné přizpůsobit stránku **Skladové transakce** , chcete-li zobrazit pole **ID nákladu** v mřížce.) Měly by se zobrazit dvě transakce:
+1. Zkontrolujte podrobnosti o dvou transakcích nákupní objednávky. (Bude pravděpodobně nutné přizpůsobit stránku **Skladové transakce**, chcete-li zobrazit pole **ID nákladu** v mřížce.) Měly by se zobrazit dvě transakce:
 
-    - Transakce s příjemkou ve stavu _registrováno_ představuje registrační množství _9_ , které bylo spuštěno proti konkrétnímu nákladu pomocí mobilního zařízení. **ID nákladu** je přidruženo k dané transakci.
-    - Transakce, která má příjemku ve stavu _Objednáno_ , představuje zbývající neregistrované množství řádku objednávky _1_.
+    - Transakce s příjemkou ve stavu _registrováno_ představuje registrační množství _9_, které bylo spuštěno proti konkrétnímu nákladu pomocí mobilního zařízení. **ID nákladu** je přidruženo k dané transakci.
+    - Transakce, která má příjemku ve stavu _Objednáno_, představuje zbývající neregistrované množství řádku objednávky _1_.
 
 #### <a name="product-receiptpost-the-registered-load-quantities-against-purchase-orders"></a>Příjemka produktu - zaúčtovat registrovaná množství nákladu proti nákupním objednávkám
 
 V tomto postupu zaúčtujete příjemku produktu – zásoby, které jste zaregistrovali pro náklad. V důsledku toho budou přijaté zásoby a související náklady přidány do hlavní knihy společnosti.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V seznamu najděte náklad, které jste přijali. (Je možné, že bude nutné zaškrtnout políčko **Zobrazit uzavřené** , chcete-li zahrnout vstupní stavy se stavem nákladu _Expedováno_.) Poté výběrem odkazu ve sloupci **ID nákladu** otevřete požadovaný náklad.
+1. V seznamu najděte náklad, které jste přijali. (Je možné, že bude nutné zaškrtnout políčko **Zobrazit uzavřené**, chcete-li zahrnout vstupní stavy se stavem nákladu _Expedováno_.) Poté výběrem odkazu ve sloupci **ID nákladu** otevřete požadovaný náklad.
 1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Přijmout \> Příjemka produktu**. Vyberte **Ano** po zobrazení výzvy k potvrzení výběru.
 1. V dialogovém okně **Zaúčtování příjemky produktu** na pevné záložce **Řádky** prozkoumejte mřížku. Měl by se zobrazit řádek nákupní objednávky, pro který bylo u vybraného nákupu zaregistrováno množství.
 
@@ -381,7 +381,7 @@ V tomto postupu zaúčtujete příjemku produktu – zásoby, které jste zareg
 1. Vrátíte se k podrobnostem o nákladu. Mějte na paměti následující body:
 
     - Pole **Stav nákladu** je nyní nastaveno na _přijato_.
-    - V řádku nákladu se hodnota **Množství** pro náklad změnila z  _10_ na _9_ kusů tak, aby souhlasila s registrovaným množstvím, ale hodnota **Množství vytvořené práce** zůstává _9_.
+    - V řádku nákladu se hodnota **Množství** pro náklad změnila z _10_ na _9_ kusů tak, aby souhlasila s registrovaným množstvím, ale hodnota **Množství vytvořené práce** zůstává _9_.
 
 Pokud nákupní tým neočekává, že dodavatel doručí zbývající množství objednávky 1, může objednávku uzavřít aktualizací zůstatku řádku dodání na _0_. Pokud však brzy zjistíte, že chybějící část došla k původnímu břemenu, pracovníci skladu mohou provést některou z následujících akcí:
 
@@ -425,17 +425,17 @@ Dále se naučíte, jak nastavit řádek nákupní objednávky, abyste mohli obd
 1. V podokně akcí na kartě **Nákup** vyberte **Akce \> Potvrdit**. Stav objednávky je nyní _Potvrzeno_.
 1. V podokně akcí na kartě **Sklad** vyberte **Akce \> Pracovní plocha plánování vytížení**.
 1. Na stránce **Pracovní plocha plánování vytížení** v podokně akcí na kartě **Nabídka a poptávka** vyberte možnost **Přidat \> Do nového nákladu**.
-1. V dialogovém okně **Přiřazení šablony nákladu** nastavte pole **ID šablony nákladu** na _20' Container_. Na kartě **Podrobnosti** změňte hodnotu **Množství** z  _10_ na _5_ a částečně tak přidejte množství řádku nákupní objednávky.
-1. Vyberte **OK** , pokud chcete použít své nastavení a zavřete dialogové okno.
+1. V dialogovém okně **Přiřazení šablony nákladu** nastavte pole **ID šablony nákladu** na _20' Container_. Na kartě **Podrobnosti** změňte hodnotu **Množství** z _10_ na _5_ a částečně tak přidejte množství řádku nákupní objednávky.
+1. Vyberte **OK**, pokud chcete použít své nastavení a zavřete dialogové okno.
 1. Zopakováním kroků 8 až 10 vytvořte druhý náklad. Tentokrát by mělo být pole **Množství** již nastaveno na _5_.
 1. Na stránce **Pracovní plocha plánování nákladu** v mřížce **Náklady** vyberte hodnotu **ID nákladu** pro první vytvořený náklad. Zobrazí se stránka **Podrobnosti o nákladu** a zobrazí se vybraný náklad. Postupujte následovně:
 
     1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Potvrdit \> Příchozí dodávka**.
     1. Povšimněte si, že hodnota **Stav nákladu** se změnila na _Expedováno_.
-    1. Chcete-li se vrátit na stránku **Pracovní plocha plánování nákladu** , vyberte tlačítko Zavřít.
+    1. Chcete-li se vrátit na stránku **Pracovní plocha plánování nákladu**, vyberte tlačítko Zavřít.
 
 1. Opakujte předchozí krok pro druhý náklad, které jste vytvořili.
-1. Poznamenejte si dvě hodnoty **ID nákladu** , které se zobrazí v mřížce **Náklad**.
+1. Poznamenejte si dvě hodnoty **ID nákladu**, které se zobrazí v mřížce **Náklad**.
 
 #### <a name="register-partial-receipt-of-the-quantities-that-arrived-on-the-first-load-and-post-the-registered-load-quantities"></a>Registrovat částečný příjem množství, které bylo doručeno v prvním nákladu a zaúčtovat zaregistrovaná množství nákladu
 
@@ -444,22 +444,22 @@ Když jsou do skladu doručeny náklady, pracovník příjmu zaregistruje množs
 Tento postup ukazuje, jak bude přijímající pracovník registrovat množství nákladu v mobilním zařízení.
 
 1. Pomocí mobilního zařízení se přihlaste ke skladu 24. (Ve standardních ukázkových datech se přihlaste pomocí čísla _24_ ID uživatele a _1_ jako heslo.)
-1. Vyberte položku nabídky _Přijetí položky nákladu_ , kterou jste vytvořili pro tento scénář.
+1. Vyberte položku nabídky _Přijetí položky nákladu_, kterou jste vytvořili pro tento scénář.
 1. Chcete-li zadat následující hodnoty, postupujte podle instrukcí pro zadávání dat na obrazovce. (Pořadí se může lišit v závislosti na mobilním zařízení nebo emulátoru, které používáte.)
 
     - **Náklad** – zadejte ID prvního nákladu, který jste vytvořili v předchozím postupu.
-    - **Položka** – zadejte _A0001_ , což je položka, která je pro toto náklad očekávána.
+    - **Položka** – zadejte _A0001_, což je položka, která je pro toto náklad očekávána.
     - **Množství** – zadejte _3_. Povšimněte si, že toto množství je menší než očekávané množství. V tomto scénáři představte, že jste jako pracovník příjmu neměli čas pro evidenci všech množství pro tento náklad. Dále v tomto postupu zaznamenáte zbývající kusy opakováním tohoto kroku a nastavením pole **Množství** na _2_.
 
 1. Pokračovat v procházení pracovního postupu, ponechat všechna ostatní pole prázdná nebo nastavit na výchozí hodnoty, dokud vám zařízení neinformuje o dokončení práce.
 1. Ve webovém klientovi přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V seznamu najděte náklad, který jste právě přijali, a výběrem hodnoty **ID nákladu** otevřete náklad. Všimněte si, že hodnota **Stav nákladu** zůstane _Expedováno_ , ale hodnota **Množství vytvořené práce** na řádku nákladu se změnila na _3_.
+1. V seznamu najděte náklad, který jste právě přijali, a výběrem hodnoty **ID nákladu** otevřete náklad. Všimněte si, že hodnota **Stav nákladu** zůstane _Expedováno_, ale hodnota **Množství vytvořené práce** na řádku nákladu se změnila na _3_.
 1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Přijmout \> Příjemka produktu**. Vyberte **Ano** po zobrazení výzvy k potvrzení výběru.
 1. V dialogovém okně **Zaúčtování příjemky produktu** zkontrolujte, ale neměňte zobrazené hodnoty, a pak vyberte **OK**.
 1. Vrátíte se na stránku **Podrobností o nákladu** vybraného nákladu. Mějte na paměti následující body:
 
     - Pole **Stav nákladu** zůstává nastaveno na _Expedováno_.
-    - V řádku nákladu zůstane hodnota **Množství** nákladu na _5_ , což je původní množství pro náklad, a hodnota **Množství vytvořené práce** zůstává _3_.
+    - V řádku nákladu zůstane hodnota **Množství** nákladu na _5_, což je původní množství pro náklad, a hodnota **Množství vytvořené práce** zůstává _3_.
 
 1. Dokončete registraci zbývajícího množství do tohoto nákladu opakováním tohoto postupu. V kroku 3 však nastavte pole **Množství** na _2_.
 
@@ -470,11 +470,11 @@ Přijímající úkol pro první náklad je nyní dokončen. Byly vytvořeny dva
 V tomto scénáři pracovník příjmu připíše množství, které je větší než množství, které existuje pro náklad. Navýšení příjmu bude povoleno, protože systém je nastaven tak, aby umožňoval navýšení dodávky.
 
 1. Pomocí mobilního zařízení se přihlaste ke skladu 24. (Ve standardních ukázkových datech se přihlaste pomocí čísla _24_ ID uživatele a _1_ jako heslo.)
-1. Vyberte položku nabídky _Přijetí položky nákladu_ , kterou jste vytvořili pro tento scénář.
+1. Vyberte položku nabídky _Přijetí položky nákladu_, kterou jste vytvořili pro tento scénář.
 1. Chcete-li zadat následující hodnoty, postupujte podle instrukcí pro zadávání dat na obrazovce. (Pořadí se může lišit v závislosti na mobilním zařízení nebo emulátoru, které používáte.)
 
     - **Náklad** – zadejte druhé ID nákladu, které jste vytvořili dříve.
-    - **Položka** – zadejte _A0001_ , což je položka, která je pro toto náklad očekávána.
-    - **Množství** – zadejte hodnotu _7_ , což je zbývající množství, pro které má dodavatel oprávnění dodat jako součást celkového množství nákupní objednávky 12 (kde 10 je původní množství objednávky a 2 je povolené navýšení dodávky o 20 procent). Nezapomeňte, že 5 kusů již bylo v rámci prvního nákladu registrováno.
+    - **Položka** – zadejte _A0001_, což je položka, která je pro toto náklad očekávána.
+    - **Množství** – zadejte hodnotu _7_, což je zbývající množství, pro které má dodavatel oprávnění dodat jako součást celkového množství nákupní objednávky 12 (kde 10 je původní množství objednávky a 2 je povolené navýšení dodávky o 20 procent). Nezapomeňte, že 5 kusů již bylo v rámci prvního nákladu registrováno.
 
 Druhý náklad byl nyní aktualizován o množství 7 a lze aktualizovat příjemku produktu na základě tohoto množství.

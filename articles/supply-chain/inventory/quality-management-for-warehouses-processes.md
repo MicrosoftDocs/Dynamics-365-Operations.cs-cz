@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763472"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424089"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Správa kvality pro procesy skladu
 
@@ -107,7 +107,7 @@ Je-li funkce _Správa kvality pro procesy skladu_ zapnuta, bude příslušný ty
 | Hledat skupinu | popis |
 |---|---|
 | Skupina 1 | U každého přiřazení kvality zkontrolujte **Typ odkazu**, **Typ události** a hodnoty **Párování spuštění** pro danou položku. Pokud existuje párování s řádkem zdrojového dokumentu, přesuňte se do skupiny 2. |
-| Skupina 2 | U každého přiřazení kvality zkontrolujte hodnotu **Kódu položky** (_tabulka_, _skupina_ nebo _vše_) pro danou položku. _Tabulka_ je konkrétnější než _Skupina_ a _Skupina_ je konkrétnější než _Vše_. Pokud existuje párování pro _Tabulku_ (specifickou položku), přesuňte se do skupiny 3. Pokud pro _Tabulku_neexistují žádné párování, vyhledejte párování pro _Skupinu_. Není-li pro _skupinu_nalezeno žádné párování, platí možnost _Vše_. Pokud existuje párování, přesuňte se do skupiny 3. |
+| Skupina 2 | U každého přiřazení kvality zkontrolujte hodnotu **Kódu položky** (_tabulka_, _skupina_ nebo _vše_) pro danou položku. _Tabulka_ je konkrétnější než _Skupina_ a _Skupina_ je konkrétnější než _Vše_. Pokud existuje párování pro _Tabulku_ (specifickou položku), přesuňte se do skupiny 3. Pokud pro _Tabulku_ neexistují žádné párování, vyhledejte párování pro _Skupinu_. Není-li pro _skupinu_ nalezeno žádné párování, platí možnost _Vše_. Pokud existuje párování, přesuňte se do skupiny 3. |
 | Skupina 3 | U každého přiřazení kvality zkontrolujte **Kód účtu** a hodnoty **Zdrojového kódu** pro danou položku. Použitá logika se podobá logice použité pro hodnotu **kódu položky**. |
 | Skupina 4 | U každého přiřazení kvality zkontrolujte pro danou položku hodnotu **Použitelný typ skladu** (_Pouze správa kvality pro procesy skladu_ nebo _vše_). Je-li možnost **Povolit objednávku kvality pro skladové procesy** nastavena na _Ano_ pro sklad ve zdrojovém dokumentu a položka na řádku zdrojového dokumentu je nastavena na _Použít procesy řízení skladu_, přidružení, kde existuje párování pro _Pouze Správa kvality pro procesy skladu_ a přidružení, kde existuje párování pro _Vše_, platí souběžně, pokud existují. Pokud je možnost **Povolit objednávku kvality pro skladové procesy** nastavena na _Ne_ pro sklad ve zdrojovém dokumentu a položka na řádku zdrojového dokumentu je nastavena na _Použít procesy řízení skladu_, použije se pouze správa kvality. |
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018068"
+ms.locfileid: "4424189"
 ---
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
@@ -97,7 +97,7 @@ Můžete hromadně aktualizovat blokování všech **Všichni** dodavatelů na z
 
 Následující kritéria jsou použity pro zařazení dodavatele, který byl po nějakou dobu neaktivní, zařadit nebo vyřadit dodavatele, kteří jsou zároveň zaměstnanci, a vyřadit dodavatele, kteří jsou v přechodném obdobím před dalším vyřazením.
 
-- Na základě počtu dní, které vložíte do pole **Aktivní období** na stránce **Deaktivace dodavatele** , aplikace spočítá poslední datum, kdy může dodavatel provést jakoukoliv činnost, aby byl považován za neaktivního. To je aktuální datum minus počet dnů, které jste vložili. Pokud pro daného dodavatele existuje jedna nebo více faktur, u kterých je datum splatnosti pozdější než vypočítané poslední datum, dodavatel bude z deaktivace vyřazen. Toto platí i v případě, že dodavatel má platby po daném datu, otevřené nákupní žádanky, otevřené nákupní příkazy, žádosti o cenovou nabídku nebo odpovědi.
+- Na základě počtu dní, které vložíte do pole **Aktivní období** na stránce **Deaktivace dodavatele**, aplikace spočítá poslední datum, kdy může dodavatel provést jakoukoliv činnost, aby byl považován za neaktivního. To je aktuální datum minus počet dnů, které jste vložili. Pokud pro daného dodavatele existuje jedna nebo více faktur, u kterých je datum splatnosti pozdější než vypočítané poslední datum, dodavatel bude z deaktivace vyřazen. Toto platí i v případě, že dodavatel má platby po daném datu, otevřené nákupní žádanky, otevřené nákupní příkazy, žádosti o cenovou nabídku nebo odpovědi.
 - Počet dní v poli **Přechodné období před dalším blokováním** se použije pro výpočet posledního dne přechodného období. To znamená aktuální datum minus počet dnů, které jste vložili. Toto se týká pouze dodavatelů, kteří již byli v minulosti deaktivováni. V případě předchozí deaktivace aplikace ověří historii dalších výskytů deaktivace dodavatele a zkontroluje, zda poslední deaktivace nastala před posledním dnem přechodného období. Pokud ano, dodavatel bude zařazen v procesu deaktivace.
 - Parametr **Zahrnout zaměstnance** se týká dodavatelů, kteří jsou propojeni s některým zaměstnancem. Můžete nastavit, zda tyto zaměstnance chcete zahrnout.
 
@@ -114,7 +114,7 @@ Pokud je třeba provést platby na bankovní účet dodavatele, můžete zadat i
 ## <a name="ledger-accounts"></a>Účty hlavní knihy
 Můžete zadat výchozí účty, které se automaticky zobrazí v denících faktur daného dodavatele. Tato funkce může být užitečná, pokud průběžně obvykle platíte za stejné typy položek nebo služeb od stejných dodavatelů. Při určování výchozího účtu můžete rychle a efektivně zadat položky hlavního deníku do deníku faktury. Výchozí účty, které zadáte, nejsou použity pro nákupní objednávky, ani pro faktury dodavatele, které jsou zadány na stránce **Faktura dodavatele**.  
 
-Vyberte výchozí účty na stránce **Výchozí nastavení účtu** , kterou lze otevřít na kartě **Faktura** v záznamech dodavatele. Účty, které zde vyberete, se při zadávání záznamu v deníku zobrazí ve filtrovaném seznamu účtů pro účet dodavatele. Jeden z účtů lze nastavit jako výchozí účet.
+Vyberte výchozí účty na stránce **Výchozí nastavení účtu**, kterou lze otevřít na kartě **Faktura** v záznamech dodavatele. Účty, které zde vyberete, se při zadávání záznamu v deníku zobrazí ve filtrovaném seznamu účtů pro účet dodavatele. Jeden z účtů lze nastavit jako výchozí účet.
 
 
 

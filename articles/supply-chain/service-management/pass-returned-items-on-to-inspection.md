@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983812"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423838"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>Postoupení vrácených položek ke kontrole 
 
@@ -32,13 +32,13 @@ ms.locfileid: "3983812"
 
 Při registraci vrácené položky můžete určit, že má být položka před vrácením do zásob nebo vyřazením jinou formou odeslána ke kontrole.
 
-1.  Klikněte na **Řízení zásob** \> **Deníky** \> **Doručení položky** \> **Doručení položky** .
+1.  Klikněte na **Řízení zásob** \> **Deníky** \> **Doručení položky** \> **Doručení položky**.
     
     \-nebo-
     
-    Klikněte na **Řízení zásob** \> **Deníky** \> **Doručení položky** \> **Výstup výroby** .
+    Klikněte na **Řízení zásob** \> **Deníky** \> **Doručení položky** \> **Výstup výroby**.
 
-2.  Zaregistrujte příjem položky běžným postupem ve formuláři **Deník skl. míst** .
+2.  Zaregistrujte příjem položky běžným postupem ve formuláři **Deník skl. míst**.
     
 
     > [!NOTE]
@@ -46,9 +46,9 @@ Při registraci vrácené položky můžete určit, že má být položka před 
 
 
 
-3.  Na kartě **výchozí hodnoty** v oblasti **režim zpracování** zaškrtněte políčko **řízení karantény** .
+3.  Na kartě **výchozí hodnoty** v oblasti **režim zpracování** zaškrtněte políčko **řízení karantény**.
 
-Tím systém vyzvete k vytvoření karanténního příkazu a osoba nebo oddělení provádějící kontroly na tento příkaz odpoví pomocí formuláře **Karanténní příkaz** .
+Tím systém vyzvete k vytvoření karanténního příkazu a osoba nebo oddělení provádějící kontroly na tento příkaz odpoví pomocí formuláře **Karanténní příkaz**.
 
 ## <a name="see-also"></a>Viz také
 

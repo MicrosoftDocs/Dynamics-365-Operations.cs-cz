@@ -18,11 +18,11 @@ ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983909"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423836"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
@@ -32,37 +32,37 @@ Toto téma obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce
 
 ## <a name="definition-of-a-calendar"></a>Definice kalendáře
 
-Kalendář, který bude vaše organizace používat, můžete definovat na stránce v okně **Správa organizace > Nastavení > Kalendáře > Kalendáře** . 
+Kalendář, který bude vaše organizace používat, můžete definovat na stránce v okně **Správa organizace > Nastavení > Kalendáře > Kalendáře**. 
 
-Každá položka data v kalendáři může být **otevřená** nebo **uzavřená** nebo **základní kalendář** . Tato hodnota je určena ve sloupci **Řízení** na stránce **Pracovní doby** . Pro každé datum platí: 
+Každá položka data v kalendáři může být **otevřená** nebo **uzavřená** nebo **základní kalendář**. Tato hodnota je určena ve sloupci **Řízení** na stránce **Pracovní doby**. Pro každé datum platí: 
 - **Otevřená** -znamená, že je provedena práce pro vybraný den. Kalendář se bude aktualizovat podle šablony pracovní doby.
 - **Zavřená** -znamená, že práce není provedena během dne. 
 - **Základní kalendář** – označuje, že konkrétní datum zdědí pracovní doby a hodnotu otevřená nebo zavřená ze základního kalendáře. Proto po aktualizaci základního kalendáře zdědí vybraný kalendář časy operací z tohoto kalendáře. 
 
-Pro všechna uzavřená data bude automaticky přiděleno zaškrtávací políčko **Uzavřeno pro vyzvednutí** . Pro otevřená data můžete ručně vybrat možnost **Zavřeno pro vyzvednutí** . Ta označuje, že se práce provádí k danému datu, ale expedice nebude provedena. 
+Pro všechna uzavřená data bude automaticky přiděleno zaškrtávací políčko **Uzavřeno pro vyzvednutí**. Pro otevřená data můžete ručně vybrat možnost **Zavřeno pro vyzvednutí**. Ta označuje, že se práce provádí k danému datu, ale expedice nebude provedena. 
 
 ## <a name="calendars-that-affect-master-planning"></a>Kalendáře, které ovlivňují hlavní plánování
 
 ### <a name="calendar-for-a-coverage-group"></a>Kalendář pro skupinu disponibility
 Skupina disponibility označuje běžnou sadu parametrů používanou pro doplnění položek, které náleží k dané skupině disponibility. 
 
-Chcete-li přidat kalendář pro skupinu disponibility, přejděte na **Hlavní plánování > Nastavení > Disponibilita > Skupiny disponibility**  a vytvořte tak skupinu disponibility. Najděte skupinu disponibility, ke které chcete přiřadit kalendář, a vyberte ji v poli **Kalendář** .
+Chcete-li přidat kalendář pro skupinu disponibility, přejděte na **Hlavní plánování > Nastavení > Disponibilita > Skupiny disponibility**  a vytvořte tak skupinu disponibility. Najděte skupinu disponibility, ke které chcete přiřadit kalendář, a vyberte ji v poli **Kalendář**.
 
 Skupinu disponibility lze přiřadit na jiný stránkách: 
-    - Na stránce **Podrobnosti uvolněného produktu** položky. Pokud chcete zobrazit skupinu disponibility položky, přejděte na **Správa informací o produktu > Produkty > Uvolněné produkty** a vyberte položku, která bude převedena na stránku **Podrobnosti o uvolněném produkut** . Skupinu disponibility položky můžete zobrazit na pevné záložce **Plán** .
-    - Na stránce **Disponibilita položky** . Na stránce podrobností uvolněné položky kliknutím na **Disponibilita položky** přejděte na stránku disponibility položky. Na kartě Přehled se zobrazí různé parametry pro doplnění v závislosti na pracovišti, skladu a produktu. Skupina disponibility pro jednotlivé položky bude zděděna ze skupiny disponibility na stránce **podrobnosti o uvolněném produktu** . Lze ji přepsat pomocí možnosti **Použít specifické nastavení** nebo **Přepsat nastavení skupiny** na kartě **Obecné** .
-    - Na stránce **Parametry hlavního plánování** . Pokud nemá položka skupinu disponibility nastavenou na předchozích stránkách, hlavní plánování vezme obecnou skupinu nastavenou v parametrech hlavního plánování. Toto nastavení se provádí v části **Hlavní plánování > Nastavení > Parametry hlavního plánování** v poli **Obecná skupina disponibility** . 
+    - Na stránce **Podrobnosti uvolněného produktu** položky. Pokud chcete zobrazit skupinu disponibility položky, přejděte na **Správa informací o produktu > Produkty > Uvolněné produkty** a vyberte položku, která bude převedena na stránku **Podrobnosti o uvolněném produkut**. Skupinu disponibility položky můžete zobrazit na pevné záložce **Plán**.
+    - Na stránce **Disponibilita položky**. Na stránce podrobností uvolněné položky kliknutím na **Disponibilita položky** přejděte na stránku disponibility položky. Na kartě Přehled se zobrazí různé parametry pro doplnění v závislosti na pracovišti, skladu a produktu. Skupina disponibility pro jednotlivé položky bude zděděna ze skupiny disponibility na stránce **podrobnosti o uvolněném produktu**. Lze ji přepsat pomocí možnosti **Použít specifické nastavení** nebo **Přepsat nastavení skupiny** na kartě **Obecné**.
+    - Na stránce **Parametry hlavního plánování**. Pokud nemá položka skupinu disponibility nastavenou na předchozích stránkách, hlavní plánování vezme obecnou skupinu nastavenou v parametrech hlavního plánování. Toto nastavení se provádí v části **Hlavní plánování > Nastavení > Parametry hlavního plánování** v poli **Obecná skupina disponibility**. 
 
 ### <a name="calendar-for-a-vendor"></a>Kalendář pro dodavatele
 Pokud chcete označit pracovní dny dodavatele, můžete dodavateli přiřadit nákupní kalendář na stránce **Výchozí hodnoty nákupní objednávky** pro dodavatele. 
 
-Chcete-li nastavit kalendář pro dodavatele, je nutné vytvořit kalendář v části **Správa organizace > kalendáře > kalendáře** . Po vytvoření kalendáře je nutné ho přiřadit dodavateli. Přejděte na **Závazky dodavatelů > Dodavatelé > Všichni dodavatelé** a vyberte dodavatele, kterému chcete přiřadit kalendář. Pak na stránce dodavatele na pevné záložce **Výchozí hodnoty nákupní objednávky** přiřaďte nový nákupní kalendář pomocí rozevírací nabídky. 
+Chcete-li nastavit kalendář pro dodavatele, je nutné vytvořit kalendář v části **Správa organizace > kalendáře > kalendáře**. Po vytvoření kalendáře je nutné ho přiřadit dodavateli. Přejděte na **Závazky dodavatelů > Dodavatelé > Všichni dodavatelé** a vyberte dodavatele, kterému chcete přiřadit kalendář. Pak na stránce dodavatele na pevné záložce **Výchozí hodnoty nákupní objednávky** přiřaďte nový nákupní kalendář pomocí rozevírací nabídky. 
 
 Kalendář pro dodavatele označuje dny, kdy přijmou umístění nákupní objednávky, a data, kdy mohou objednávky doručovat do vaší společnosti. Následně budou data objednávky pro nákupní objednávky pro dodavatele s nákupním kalendářem data definovaná jako otevřená v kalendáři. Data dodání pro tyto objednávky budou také v otevřené dny budou mít tedy dopad na doby realizace zakoupené položky. 
 
 #### <a name="define-the-lead-time-for-a-purchased-item"></a>Definování doby realizace pro zakoupenou položku
 
-K určení doby realizace nákupu (pokud mají být zahrnuty pouze pracovní dny) pro určitou položku je nutné přejít na stránku výchozího nastavení objednávky produktu v části **řízení informací o produktech > produkty > uvolněné produkty** a Vyberte **výchozí nastavení objednávky** . 
+K určení doby realizace nákupu (pokud mají být zahrnuty pouze pracovní dny) pro určitou položku je nutné přejít na stránku výchozího nastavení objednávky produktu v části **řízení informací o produktech > produkty > uvolněné produkty** a Vyberte **výchozí nastavení objednávky**. 
 
 > [!Note]
 > Hodnota **Pracovních dnů** v době realizace nákupu označují pracovní dny dodavatele. Například kalendář pro dodávku pouze v úterý s dobou realizace 10 dní a dny zaškrtnutým políčkem pro pracovní dny označuje, že by trvalo deset týdnů (10 úterků), než by byla položka doručena.
@@ -70,7 +70,7 @@ Ve většině případů nedoporučujeme tedy vybrat pracovní dny pro dobu real
 
 #### <a name="define-lead-times-from-the-trade-agreements-page"></a>Definujte doby realizace ze stránky obchodních smluv
 
-Hlavní plánování můžete nastavit tak, aby zahrnoval všechny obchodní smlouvy pro dodavatele. Obchodní smlouvy jsou dohody o pevných cenách nebo slevách, které jsou nastaveny pro jednoho nebo více zákazníků nebo dodavatelů pro prodej nebo nákup jednotlivých nebo více produktů. Přejděte na **Hlavní plánování >Nastavení > Parametry hlavního plánování** a na kartu **Plánované objednávky** a vyberte **Najít obchodní smlouvy** pro zahrnutí obchodní smlouvy při plánování. Hlavní plánování může vybrat dodavatele s **minimální dobou realizace** nebo **nejnižší jednotkovou cenou** .
+Hlavní plánování můžete nastavit tak, aby zahrnoval všechny obchodní smlouvy pro dodavatele. Obchodní smlouvy jsou dohody o pevných cenách nebo slevách, které jsou nastaveny pro jednoho nebo více zákazníků nebo dodavatelů pro prodej nebo nákup jednotlivých nebo více produktů. Přejděte na **Hlavní plánování >Nastavení > Parametry hlavního plánování** a na kartu **Plánované objednávky** a vyberte **Najít obchodní smlouvy** pro zahrnutí obchodní smlouvy při plánování. Hlavní plánování může vybrat dodavatele s **minimální dobou realizace** nebo **nejnižší jednotkovou cenou**.
 
 ### <a name="calendar-for-a-warehouse"></a>Kalendář pro sklad
 Můžete přiřadit kalendář ke skladu a označit tak otevřená data příjmu a expedice. Pokud skladu není přiřazen žádný kalendář, předpokládá se, že je otevřený všechny dny. 
@@ -82,9 +82,9 @@ Můžete přiřadit kalendář ke skladu a označit tak otevřená data příjmu
 Pokud chcete určit, že je sklad otevřený pro příjem, ale vyzvednutí není možné, můžete použít možnost **zásady Uzavřeno pro vyzvednutí** ve skladovém kalendáři. Toto nastavení platí i pro vyzvednutí zákazníkem. 
 
 ### <a name="transport-calendar"></a>Dopravní kalendář 
-Pokud chcete označit data, která jsou dostupná pro expedici převodních příkazů z **odchozího skladu** , můžete přiřadit **přepravní kalendář** . Můžete nastavit kalendář přepravy podle způsobu dodání nebo podle režimu dodání a ze skladu. Kalendář přepravy je nastaven v cestě **Prodej a marketing > Nastavení > Distribuce > Režimy doručení** . Vyberte režim doručení a klikněte na tlačítko **Kalendář přepravy** .
+Pokud chcete označit data, která jsou dostupná pro expedici převodních příkazů z **odchozího skladu**, můžete přiřadit **přepravní kalendář**. Můžete nastavit kalendář přepravy podle způsobu dodání nebo podle režimu dodání a ze skladu. Kalendář přepravy je nastaven v cestě **Prodej a marketing > Nastavení > Distribuce > Režimy doručení**. Vyberte režim doručení a klikněte na tlačítko **Kalendář přepravy**.
 
-Lze vytvořit řádek pro každý sklad a režim dodání, kde je kalendář přidán do sloupce **Kalendář přepravy** . Určí se tak kalendář přepravy, který se použije při odeslání zboží ze skladu pomocí daného způsobu dodávky. Chcete-li dopravní kalendář použít u všech dodávek pomocí daného způsobu dodání, lze vytvořit řádek bez určení skladu.  To bude mít vliv na všechny dodávky pomocí daného režimu dodávky, bez ohledu na sklad. 
+Lze vytvořit řádek pro každý sklad a režim dodání, kde je kalendář přidán do sloupce **Kalendář přepravy**. Určí se tak kalendář přepravy, který se použije při odeslání zboží ze skladu pomocí daného způsobu dodávky. Chcete-li dopravní kalendář použít u všech dodávek pomocí daného způsobu dodání, lze vytvořit řádek bez určení skladu.  To bude mít vliv na všechny dodávky pomocí daného režimu dodávky, bez ohledu na sklad. 
 
 Pokud není přiřazen žádný kalendář přepravy, předpokládá se, že jsou pro přepravu otevřeny všechny dny.
 
@@ -96,7 +96,7 @@ Všimněte si, že je možné zahrnout pouze jeden kalendář na odběratele. Po
 Požadované datum příjmu v řádcích prodejní objednávky je ovlivněno kalendářem odběratele a způsobem kontroly data doručení. Více informací o výpočtu nejstaršího data doručení získáte v části [Příslib objednávky.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Kalendář expedice pro právnickou osobu
-Pokud chcete označit data, ve kterých může právnická osoba expedovat zboží, můžete nastavit kalendář expedice v části **Správa organizace > Organizace > Právnické osoby** . Vyberte právnickou osobu a přidejte kalendář na kartě **Zahraniční obchod a logistika** v poli **Expediční kalendář** . Expediční kalendář bude sloužit jako zdroj výchozích hodnot pro všechny kalendáře skladu v právnické osobě. 
+Pokud chcete označit data, ve kterých může právnická osoba expedovat zboží, můžete nastavit kalendář expedice v části **Správa organizace > Organizace > Právnické osoby**. Vyberte právnickou osobu a přidejte kalendář na kartě **Zahraniční obchod a logistika** v poli **Expediční kalendář**. Expediční kalendář bude sloužit jako zdroj výchozích hodnot pro všechny kalendáře skladu v právnické osobě. 
 
 ## <a name="how-calendars-affect-dates-in-planning"></a>Jak kalendáře ovlivňují data v plánování
 

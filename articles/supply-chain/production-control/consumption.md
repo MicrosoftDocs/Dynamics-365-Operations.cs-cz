@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f58365278200344169b93658e9c92dea2bc4f18f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211622"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423880"
 ---
 # <a name="calculate-material-consumption"></a>Výpočet spotřeby materiálu
 
@@ -63,7 +63,7 @@ Předpokládá se, že, 0,5 metru trubice je vyřazeno pro každých pět část
 
 ### <a name="consumption"></a>Spotřeba
 
-Obvykle vyberete**Spotřeba** jako mechanismus zaokrouhlování, když musí být suroviny vyskladněny v celém množství konkrétní manipulační jednotky produktu. Například k výrobě jednoho kusu dokončeného zboží jsou použity 2 plechovky barvy a barva je vydána v 25litrových plechovkách. V takovém případě mechanismus zaokrouhlování **Spotřeba** lze použít k zaokrouhlení spotřeby nahoru na celá čísla 25litrových plechovek. Následuje výpočet množství barvy, která je vyžadována, pokud je třeba vyrobit 180 kusů dokončeného zboží:
+Obvykle vyberete **Spotřeba** jako mechanismus zaokrouhlování, když musí být suroviny vyskladněny v celém množství konkrétní manipulační jednotky produktu. Například k výrobě jednoho kusu dokončeného zboží jsou použity 2 plechovky barvy a barva je vydána v 25litrových plechovkách. V takovém případě mechanismus zaokrouhlování **Spotřeba** lze použít k zaokrouhlení spotřeby nahoru na celá čísla 25litrových plechovek. Následuje výpočet množství barvy, která je vyžadována, pokud je třeba vyrobit 180 kusů dokončeného zboží:
 
 1.  Barva, která je nutná (bez odpadu): 180 x 2 = 360 plechovek
 2.  Počet plechovek: 360 ÷ 25 = 14,4, což je zaokrouhleno 15.

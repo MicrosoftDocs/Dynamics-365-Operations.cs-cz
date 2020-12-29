@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016255"
+ms.locfileid: "4424174"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -97,19 +97,19 @@ Proces sledování štítků skutečné hmotnosti lze použít pro položky, kte
 
 Dalším důležitým parametrem, který souvisí se zpracováním štítků skutečné hmotnosti, je **Metoda sledování dimenze značky skutečné hmotnosti**. Značky mohou být buď částečně sledovány, nebo plně sledovány. Je-li značka částečně sledována, sleduje dimenze produktu, sledovací dimenze a stav zásob. Je-li značka plně sledována, sleduje dimenze produktu, sledovací dimenze a **všechny** dimenze úložiště.
 
-Navíc, je-li u položky sledována značka, existuje parametr **Metoda zaznamenání odchozí značky**. Tento parametr lze nastavit tak, aby se vždy zobrazoval dotaz na značku u odchozích transakcí z mobilního zařízení. Alternativně můžete nastavit parametr tak, aby se zobrazil dotaz na značky pouze v případě, že jsou požadovány. Existuje například pět značek skutečné hmotnosti na skladě na dané registrační značce, které jste uvedli, že chcete vydat všech pět značek z registrační značky. V tomto případě, pokud je parametr **Metoda zaznamenání odchozí značky** nastaven na **Vyžádat značku jen, když je potřeba** , pět značek bude automaticky vyskladněno. Není nutné skenovat každou značku. Je-li parametr nastaven na **Vždy vyžadovat značkuí** , je nutné skenovat každou značku, a to i v případě, že je vyskladněno všech pět značek.
+Navíc, je-li u položky sledována značka, existuje parametr **Metoda zaznamenání odchozí značky**. Tento parametr lze nastavit tak, aby se vždy zobrazoval dotaz na značku u odchozích transakcí z mobilního zařízení. Alternativně můžete nastavit parametr tak, aby se zobrazil dotaz na značky pouze v případě, že jsou požadovány. Existuje například pět značek skutečné hmotnosti na skladě na dané registrační značce, které jste uvedli, že chcete vydat všech pět značek z registrační značky. V tomto případě, pokud je parametr **Metoda zaznamenání odchozí značky** nastaven na **Vyžádat značku jen, když je potřeba**, pět značek bude automaticky vyskladněno. Není nutné skenovat každou značku. Je-li parametr nastaven na **Vždy vyžadovat značkuí**, je nutné skenovat každou značku, a to i v případě, že je vyskladněno všech pět značek.
 
 > [!NOTE]
 > Jako pravidlo jsou visačky zachyceny a aktualizovány pouze z položek nabídky mobilního zařízení. Existuje však několik scénářů, kde jsou značky zachyceny někde jinde (například z ručního stanoviště balení). Obecně platí, že položky nabídky mobilního zařízení by měly být použity pro všechny aktivity skladu v případě, že jsou použity značky.
 
 ### <a name="how-to-capture-catch-weight"></a>Jak zaznamenat skutečnou hmotnost
 
-**Když se používá sledování značky skutečné hmotnosti** , musí být značka vždy vytvořena pro každou jednotku skutečné hmotnosti, která je přijata, a každá značka musí být vždy přiřazena k hmotnosti.
+**Když se používá sledování značky skutečné hmotnosti**, musí být značka vždy vytvořena pro každou jednotku skutečné hmotnosti, která je přijata, a každá značka musí být vždy přiřazena k hmotnosti.
 
 Například **Krabice** je jednotka skutečné hmotnosti a přijmete jednu paletu s osmi krabicemi. V takovém případě se musí vytvořit osm jedinečných štítků skutečné hmotnosti a hmotnost musí být přiřazena ke každému štítku. V závislosti na štítku příchozí skutečné hmotnosti lze zaznamenat buď hmotnost všech osmi krabic a průměrná hmotnosti pak může být rozdělena na každou krabici, nebo lze zaznamenat jedinečnou hmotnost pro každou krabici.
 Při použití **Použít existující značky skutečné hmotnosti při vykazování výrobních zakázek jako dokončených** s procesem povoleným prostřednictvím položky nabídky mobilního zařízení se zásoby aktualizují na základě existující informace štítku skutečné hmotnosti. V důsledku toho aplikace skladu nezobrazí výzvu k zaznamenání dat štítku skutečné hmotnosti jako součásti výrobní sestavy jako dokončené operace.
 
-**Když se nepoužívá sledování značek skutečné hmotnosti** , lze zaznamenat hmotnost pro každou sadu dimenzí, (například pro každou poznávací značku a sledovací dimenzi). Případně lze zaznamenat hmotnost podle agregované úrovně, například pět poznávacích značek (palet).
+**Když se nepoužívá sledování značek skutečné hmotnosti**, lze zaznamenat hmotnost pro každou sadu dimenzí, (například pro každou poznávací značku a sledovací dimenzi). Případně lze zaznamenat hmotnost podle agregované úrovně, například pět poznávacích značek (palet).
 
 U metod pro zachytávání výstupní hmotnosti lze v možnosti **Podle jednotky skutečné hmotnosti** určit, že vážení má být provedeno pro každou jednotku skutečné hmotnosti (například dle krabice). Možnost **Podle jednotky vyskladnění** umožňuje určit, že hmotnost má být zachycena na základě množství, které bude vyskladněno (například tři krabice). Všimněte si, že pro proces výdeje řádku výroby a interních procesů pohybu se použije průměrná hmotnost, pokud není použita možnost **Nezaznamenáno**.
 
@@ -203,10 +203,10 @@ Kromě omezení, která aktuálně platí pro produkty se skutečnou hmotností,
 - Značky skutečné hmotnosti je nutné ručně aktualizovat, aby odrážely pohyby doplnění práce. Důvodem je skutečnost, že systém nemůže zachytit hmotnost při zpracování práce doplnění, a proto zaznamená průměrnou hmotnost.
 - Přijetí smíšené registrační značky není aktuálně podporováno pro položky se značkou skutečné hmotnosti.
 - Zpracování objednávky prodejní vratky může zaznamenat značky skutečné hmotnosti. Proces však neověřuje, zda je vracená značka shodná s tagem, která byla původně expedována pro prodejní objednávku.
-- Položka nabídky mobilního zařízení, která obsahuje kód aktivity **Zaregistrovat spotřebu materiálu** , aktuálně nepodporuje záznamy skutečné hmotnosti.
+- Položka nabídky mobilního zařízení, která obsahuje kód aktivity **Zaregistrovat spotřebu materiálu**, aktuálně nepodporuje záznamy skutečné hmotnosti.
 - Ačkoliv jsou pro položky se značkou skutečné hmotností podporovány procesy počítání, jsou omezeny. Můžete například použít možnosti mobilního zařízení pro inventarizaci položek se značkou skutečné hmotnosti a použít průměrnou hmotnost. Avšak značky se skutečnou hmotností nejsou automaticky aktualizovány transakcí inventury. Po dokončení inventury transakcí je nutné ručně aktualizovat značky skutečné hmotnosti, aby odrážely zásoby. Pokud se položky, které nebyly původně umístěny do skladového místa, započítávají do tohoto skladového místa, použije se nominální hmotnost.
 - Konsolidace registračních značek aktuálně nepodporuje položky se značkou skutečné hmotnosti.
 - Funkce stornovat práci není podporována u položek se značkou skutečné hmotnosti, které jsou sledovány dle čísla značky.
 
 > [!NOTE]
-> Předchozí informace o štítcích se skutečnou hmotností jsou platné pouze v případě, že produkt se skutečnou hmotností má metodu sledování dimenze skutečné hmotnosti, která je plně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** u zásad zpracování položek skutečné hmotnosti nastaven na hodnotu **Dimenze produktu, sledovací dimenze a všechny dimenze uskladnění** ). Je-li položka se skutečnou hmotností pouze částečně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** nastaven na **Dimenze produktu, sledovací dimenze a stav zásob** ), použijí se další omezení. Vzhledem k tomu, že značka a zásoby v tomto případě ztratí viditelnost, některé další scénáře nejsou podporovány.
+> Předchozí informace o štítcích se skutečnou hmotností jsou platné pouze v případě, že produkt se skutečnou hmotností má metodu sledování dimenze skutečné hmotnosti, která je plně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** u zásad zpracování položek skutečné hmotnosti nastaven na hodnotu **Dimenze produktu, sledovací dimenze a všechny dimenze uskladnění**). Je-li položka se skutečnou hmotností pouze částečně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** nastaven na **Dimenze produktu, sledovací dimenze a stav zásob**), použijí se další omezení. Vzhledem k tomu, že značka a zásoby v tomto případě ztratí viditelnost, některé další scénáře nejsou podporovány.

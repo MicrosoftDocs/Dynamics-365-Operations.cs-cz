@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982919"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423474"
 ---
 # <a name="product-configuration-overview"></a>Přehled konfigurace produktu
 
@@ -138,7 +138,7 @@ Vyhrazené rozhraní pro programování aplikací (API) bylo implementováno tak
 
 ### <a name="pcadaptor-class"></a>Třída PCAdaptor
 
-Rozhraní API je implementováno pomocí sady tříd **PCAdaptor** , které zpřístupňují strukturu dat modelů konfigurace produktu. Instanci třídy **PCAdaptor** je nutné vytvořit pro každý model, který bude rozšířen. Po dokončení relace konfigurace systém kontroluje instanci této třídy a spustí ji, pokud ji nalezne.  
+Rozhraní API je implementováno pomocí sady tříd **PCAdaptor**, které zpřístupňují strukturu dat modelů konfigurace produktu. Instanci třídy **PCAdaptor** je nutné vytvořit pro každý model, který bude rozšířen. Po dokončení relace konfigurace systém kontroluje instanci této třídy a spustí ji, pokud ji nalezne.  
 
 Následující vývojový diagram zobrazuje přehled procesu.  
 

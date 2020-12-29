@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015819"
+ms.locfileid: "4424223"
 ---
 # <a name="wave-template-grouping"></a>Seskupení šablon vlny
 
@@ -34,7 +34,7 @@ Seskupení šablon vlny umožňuje systému použít nastavení [šablon vlny](t
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>Zapnutí funkce seskupení šablon vlny
 
-Než můžete použít funkci *Seskupení šablon vlny* , musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než můžete použít funkci *Seskupení šablon vlny*, musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce** *Seskupení šablon vlny*
@@ -45,7 +45,7 @@ Chcete-li zpřístupnit seskupení šablon vlny, nastavte [šablonu vlny](tasks/
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
 1. V levém podokně vyberte šablonu vlny, kterou chcete nastavovat. Pokud se chystáte využít scénář uvedený dále v tomto tématu s využitím ukázkových dat, vyberte šablonu **Výchozí dodávka 62**.
-1. Vyberte možnost **Upravit** , tím přepnete stránku do režimu úprav.
+1. Vyberte možnost **Upravit**, tím přepnete stránku do režimu úprav.
 1. Na záložce s náhledem **Obecné** nastavte následující hodnoty:
 
     - **Automatizovat tvorbu vln:** *Ano*
@@ -66,7 +66,7 @@ Chcete-li zpřístupnit seskupení šablon vlny, nastavte [šablonu vlny](tasks/
 
     - **Směr hledání:** *Vzestupně*
 
-1. Vyberte **OK** , uložte změny a zavřete okno dotazů.
+1. Vyberte **OK**, uložte změny a zavřete okno dotazů.
 1. V podokně Akce vyberte možnost **Seskupení šablon vlny**.
 1. Na stránce **Seskupení šablon vlny** zaškrtněte políčko **Seskupit podle** u každého řádku, který chcete použít k seskupení řádků objednávky do vln, jak je třeba. Pokud se chystáte použít scénář s ukázkovými daty, zaškrtněte políčko **Seskupit podle** u řádku *Služba dopravce*.
 1. Zvolte **Uložit**.

@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017568"
+ms.locfileid: "4424231"
 ---
 # <a name="set-up-cluster-picking"></a>Nastavení výdejů v seskupení
 
@@ -62,7 +62,7 @@ Chcete-li nastavit profil seskupení, postupujte následujícím způsobem:
 
 1. V poli **Pořadové číslo** zadejte číslo pro definování pořadí, ve kterém se kritéria třídění zpracují.
 
-1. V poli **Název pole** vyberte pole, které určuje řazení. Vyberete-li například pole **WMSLocationId** , práce bude seřazena podle umístění.
+1. V poli **Název pole** vyberte pole, které určuje řazení. Vyberete-li například pole **WMSLocationId**, práce bude seřazena podle umístění.
 
 1. V poli **Třídění** vyberte jednu z následujících možností.
 

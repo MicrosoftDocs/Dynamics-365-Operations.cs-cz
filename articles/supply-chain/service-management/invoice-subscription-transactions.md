@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c0d12e6b392156931ae2681d2804236305278811
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423964"
 ---
 # <a name="invoice-subscription-transactions"></a>Transakce faktur odběru 
 
@@ -31,19 +31,19 @@ ms.locfileid: "3976836"
 
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky** .
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky**.
 
 2.  Vyberte předplatné služby a klepněte na možnost **Upravit** nebo **Předplatné** pro vytvoření předplatného služby.
 
-3.  Klikněte na **Analyzovat** \> **Transakce poplatku** .
+3.  Klikněte na **Analyzovat** \> **Transakce poplatku**.
 
-4.  Vyberte transakci nebo transakce poplatku, které chcete fakturovat, a poté klepněte na **Funkce** \> **Návrh faktury** k otevření formuláře **Návrh faktury** .
+4.  Vyberte transakci nebo transakce poplatku, které chcete fakturovat, a poté klepněte na **Funkce** \> **Návrh faktury** k otevření formuláře **Návrh faktury**.
 
-5.  Klepněte na tlačítko **vytvořit fakturu** a zadejte příslušné parametry do formuláře **Vytvořit fakturu** .
+5.  Klepněte na tlačítko **vytvořit fakturu** a zadejte příslušné parametry do formuláře **Vytvořit fakturu**.
 
-6.  Klepnutím na tlačítko **OK** vytvořte návrh faktury ve formuláři **návrhy faktury** .
+6.  Klepnutím na tlačítko **OK** vytvořte návrh faktury ve formuláři **návrhy faktury**.
 
-7.  Ověřte obsah faktury, klepněte na možnost **Zaúčtovat fakturu** k otevření formuláře **Zaúčtovat fakturu** pro zaúčtování faktury. Tuto fakturu můžete také vytisknout pomocí formuláře **Zaúčtovat fakturu** .
+7.  Ověřte obsah faktury, klepněte na možnost **Zaúčtovat fakturu** k otevření formuláře **Zaúčtovat fakturu** pro zaúčtování faktury. Tuto fakturu můžete také vytisknout pomocí formuláře **Zaúčtovat fakturu**.
 
   
 

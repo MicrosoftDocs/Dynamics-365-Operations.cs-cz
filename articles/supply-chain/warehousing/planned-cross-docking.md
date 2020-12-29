@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017752"
+ms.locfileid: "4424213"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -89,11 +89,11 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
 
     - **Znovu ověřit při přijetí dodávky:** *Ne*
 
-        Tato volba určuje, zda má být dodávka během příjmu znovu ověřena. Pokud je u této možnosti nastavena hodnota *Ano* , proběhne kontrola maximálního časového úseku i počtu dní vypršení platnosti.
+        Tato volba určuje, zda má být dodávka během příjmu znovu ověřena. Pokud je u této možnosti nastavena hodnota *Ano*, proběhne kontrola maximálního časového úseku i počtu dní vypršení platnosti.
 
     - **Ověření časového úseku:** *Ano*
 
-        Tato možnost určuje, zda se má vyhodnocovat maximální časový úsek, když dojde k výběru zdroje dodávky. Pokud je u této možnosti zadána hodnota *Ano* , budou k dispozici pole týkající se maximálního a minimálního časového úseku.
+        Tato možnost určuje, zda se má vyhodnocovat maximální časový úsek, když dojde k výběru zdroje dodávky. Pokud je u této možnosti zadána hodnota *Ano*, budou k dispozici pole týkající se maximálního a minimálního časového úseku.
 
     - **Maximální časový úsek:** *5*
 
@@ -135,7 +135,7 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **Šablona práce:** *51 Cross Dock*
     - **Popis šablony práce:** *51 Cross Dock*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Podrobnosti šablony práce** , klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Podrobnosti šablony práce**, klikněte na **Uložit**.
 1. Na záložce s náhledem **Podrobnosti šablony práce** přidejte řádek do mřížky výběrem možnosti **Nový**.
 1. Na novém řádku nastavte následující hodnoty:
 
@@ -164,22 +164,22 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **Lokalita:** *5*
     - **Sklad:** *51*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky** , klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Řádky**, klikněte na **Uložit**.
 1. Na záložce s náhledem **Řádky** přidejte řádek do mřížky výběrem možnosti **Nový**.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Od množství:** *1*
     - **Do množství:** *1000000*
 
-1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa** , klikněte na **Uložit**.
+1. Chcete-li, aby byla dostupná záložka s náhledem **Akce směrnice skladového místa**, klikněte na **Uložit**.
 1. Na záložce s náhledem **Akce směrnice skladového místa** přidejte řádek do mřížky výběrem možnosti **Nová**.
 1. Na novém řádku nastavte následující hodnoty:
 
     - **Název:** *Portál*
     - **Využití pevného skladového místa:** *Pevná a nepevná skladová místa*
 
-1. Vyberte možnost **Uložit** , chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na nástrojové liště **Akce směrnice skladového místa**.
-1. Vyberte **Upravit dotaz** , otevře se editor dotazů.
+1. Vyberte možnost **Uložit**, chcete-li, aby bylo tlačítko **Upravit dotaz** dostupné na nástrojové liště **Akce směrnice skladového místa**.
+1. Vyberte **Upravit dotaz**, otevře se editor dotazů.
 1. Ujistěte se, že jsou na kartě **Oblast** nakonfigurovány následující dva řádky:
 
     - Řádek 1:
@@ -259,7 +259,7 @@ Pomocí těchto kroků vytvořte z prodejní objednávky cross docking s plán
 
 1. Na záložce s náhledem **Řádky prodejních objednávek** v nabídce **Sklad** vyberte možnost **Podrobnosti dodávky**.
 
-    Zobrazí se stránka **Podrobnosti dodávky** , na níž je dodávka, která byla vytvořena pro prodejní objednávku.
+    Zobrazí se stránka **Podrobnosti dodávky**, na níž je dodávka, která byla vytvořena pro prodejní objednávku.
 
 1. Na záložce s náhledem **Řádky nákladu** si všimněte, že je v poli **Množství pro cross docking s plánováním** zadána hodnota *3*. Protože ve skladu nebyly žádné zásoby, ale platný zdroj dodávky dorazí během časového úseku definováno v šabloně cross dockingu, bylo vytvořeno množství pro cross docking.
 1. Na záložce s náhledem **Řádky nákladu** vyberte položku **Cross docking s plánováním**. Zobrazí se podrobnosti vytvořeného cross dockingu.
@@ -281,7 +281,7 @@ Druhé ID práce, jež vznikne, má v poli **Typ pracovního příkazu** hodnot
 1. Vyberte **OK**.
 1. Na další stránce nastavte u pole **Položka** hodnotu *A0001*.
 1. Vyberte **OK**.
-1. Na další stránce potvrďte hodnoty **Č. nákup. obj.** , **Položka** , a **Množ.** kliknutím na **OK**.
+1. Na další stránce potvrďte hodnoty **Č. nákup. obj.**, **Položka**, a **Množ.** kliknutím na **OK**.
 
     Zobrazí se zpráva „Práce dokončena“.
 
@@ -294,7 +294,7 @@ V současné době mají obě ID práce stejnou cílovou registrační značku.
 1. Na mobilním zařízení přejděte na **Vstupní \> Zaskladnění nákupu** a zadejte cílovou registrační značku podle práce.
 1. Do pole **ID** zadejte ID cílové registrační značky z podrobností práce.
 
-    Stránka výdeje pomocí cross dockingu zobrazuje místo výdeje ( *RECV* ), cílovou registrační značku ( *registrační značka* ), položku ( *A0001* ) a množství ( *3* ).
+    Stránka výdeje pomocí cross dockingu zobrazuje místo výdeje (*RECV*), cílovou registrační značku (*registrační značka*), položku (*A0001*) a množství (*3*).
 
 1. Vyberte **OK**.
 1. V poli **Cílová LP** zadejte cílovou registrační značku pro ID registrační značky, jež by měla být zaskladněna (cross docking) na skladové místo pro dodávku. Můžete vybrat libovolné ID registrační značky dle svého výběru.

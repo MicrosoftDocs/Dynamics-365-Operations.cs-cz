@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 3fa1e8583003a90ba486f757c3826b139e1b3f73
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423591"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
@@ -60,7 +60,7 @@ Poté, co je systém připraven, jak je popsáno v předchozí části, byste m�
 1. Vyberte produkt a pak v podokně akcí na kartě **Plán** ve skupině **Disponibilita** vyberte **Disponibilita položky** pro otevření stránky **Disponibilita položky** vybraného produktu. Ověřte následující nastavení:
 
     - Na kartě **Obecné** můžete nastavit přepisy dodavatele. Pokud chcete, aby Optimalizace plánování použila nákupní smlouvy k výběru dodavatele, měli byste zabránit přepsání dodavatele zrušením zaškrtnutí políčka **Použít konkrétní nastavení**.
-    - Na kartě **Doba realizace** můžete nastavit přepsání doby realizace. Pokud chcete, aby Optimalizace plánování použila nákupní smlouvy k výběru dob realizace, měli byste zabránit přepsání dob realizace. Zrušte zaškrtnutí políčka u všech typů doby realizace, které chcete vybrat, pomocí obchodních smluv (**Nákup**, **Výroba**a / nebo **Převod**).
+    - Na kartě **Doba realizace** můžete nastavit přepsání doby realizace. Pokud chcete, aby Optimalizace plánování použila nákupní smlouvy k výběru dob realizace, měli byste zabránit přepsání dob realizace. Zrušte zaškrtnutí políčka u všech typů doby realizace, které chcete vybrat, pomocí obchodních smluv (**Nákup**, **Výroba** a / nebo **Převod**).
 
 1. Zavřete stránku **Disponibilita položky** pro návrat na stránku s podrobnostmi o vybraném produktu.
 1. V podokně akcí na kartě **Plán** ve skupině **Prognóza** vyberte **Prognóza dodávky** k otevření stránky **Prognóza dodávky**. Ujistěte se, že žádný řádek, který je zde zobrazen, nemá hodnotu ve sloupci **Účet dodavatele**.

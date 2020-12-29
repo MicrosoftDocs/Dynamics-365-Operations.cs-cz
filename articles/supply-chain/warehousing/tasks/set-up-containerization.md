@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017775"
+ms.locfileid: "4424144"
 ---
 # <a name="set-up-containerization"></a>Nastavení vytváření kontejnerů
 
@@ -75,7 +75,7 @@ Toto téma popisuje postup automatizace vytváření kontejnerů vytížení v m
 5. Zadejte hodnotu do pole **Kód kroku vlny**.
 6. Zaškrtněte políčko **Povolit rozdělení výdeje**.
 7. Zvolte **Uložit**.
-8. Vyberte **Omezení kombinování obsahu kontejnerů**. Přerušení smíšené logiky umožňuje nastavit pravidla pro řádky přidělení balení do kontejnerů. Například pokud chcete přidat pole **Číslo položky** , když jsou položky přiřazeny do kontejnerů, bude při vygenerování nového čísla položky vytvořen nový kontejner. To zabrání pracovníkům přibalit přidělovací řádky pro dva různé zákazníky do stejného kontejneru.  
+8. Vyberte **Omezení kombinování obsahu kontejnerů**. Přerušení smíšené logiky umožňuje nastavit pravidla pro řádky přidělení balení do kontejnerů. Například pokud chcete přidat pole **Číslo položky**, když jsou položky přiřazeny do kontejnerů, bude při vygenerování nového čísla položky vytvořen nový kontejner. To zabrání pracovníkům přibalit přidělovací řádky pro dva různé zákazníky do stejného kontejneru.  
 9. Zvolte **Nové**.
 10. Vyberte volbu v poli **Tabulka**.
 11. V poli **Výběr pole** zadejte nebo vyberte hodnotu.

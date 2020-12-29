@@ -4,7 +4,7 @@ description: Toto téma popisuje tisk popisků vlny a vysvětluje, jak je nastav
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016947"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4424254"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Nastavte a použijte tisk popisků vlny
 
@@ -56,7 +56,7 @@ Tato vylepšení zefektivňují označování kartonů před paletizací. Výhod
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Zapnutí funkce tisku popisků vlny
 
-Než můžete použít funkci *Tisk popisků vlny* , musíte ji v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+Než můžete použít funkci *Tisk popisků vlny*, musíte ji v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Tisk popisků vlny*
@@ -134,7 +134,7 @@ Rozvržení štítku řídí, jaké informace jsou na štítku vytištěny a jak
 
 1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví**, **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -391,7 +391,7 @@ Možná bude třeba obnovit metody zpracování vln, abyste měli dostupnou meto
 
 1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví**, **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -534,9 +534,9 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
 2. Vyberte šablonu, např. **Vychozí dodávka 62**.
 3. Na pevné záložce **Metody** přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody**.
-4. V sloupci **Vybrané metody** přiřaďte hodnotu **Kód kroku vlny** , například *Karton* , k metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+4. V sloupci **Vybrané metody** přiřaďte hodnotu **Kód kroku vlny**, například *Karton*, k metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 5. Přesuňte metodu **Tisk popisků vlny** do sloupce **Vybrané metody** podruhé.
-6. V sloupci **Vybrané metody** přiřaďte jinou hodnotu **Kód kroku vlny** , například *Paleta* , k druhé metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
+6. V sloupci **Vybrané metody** přiřaďte jinou hodnotu **Kód kroku vlny**, například *Paleta*, k druhé metodě **Tisk štítků vlny**. Další informace o kódech kroku vlny viz [Kódy kroku vlny](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Vytvořte tři rozvržení vlnového štítku
 
@@ -583,7 +583,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
 1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**. 
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví**, **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
 
     ```plaintext
@@ -695,7 +695,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 
 1. Pokud chcete mít možnost vytisknout nákladní list, na kartě **Připojí se** vyberte záložku **Pracovní řádky** a připojte k nim tabulku **Zásilky**.
 1. Zavřete dialogové okno editoru dotazů.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví**, **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód pro požadovanou hlavičku. Pokud například používáte tiskárny Zebra, můžete použít následující kód.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -733,7 +733,7 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
     - **Popis:** *Štítek přerušení*
 
 1. V podokně akcí vyberte **Uložit**.
-1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví** , **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód ZPL pro požadovanou hlavičku. Následuje příklad.
+1. Pevná záložka **Rozložení textu tiskárny** má tři oddíly, kde můžete psát kód tiskárny: **Sekce záhlaví**, **Sekce text** a **Sekce zápatí**. V **Sekci záhlaví** v poli **Hlavička štítku** zadejte kód ZPL pro požadovanou hlavičku. Následuje příklad.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -818,18 +818,18 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 1. Vyberte **OK** a dialogové okno editor dotazu zavřete.
 1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano**.
 1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny**.
-1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky* , nastavte následující hodnoty:
+1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky*, nastavte následující hodnoty:
 
     - **Tisk štítku přerušení:** Zaškrtněte toto políčko.
-    - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení* , který jste vytvořili dříve v tomto scénáři.)
+    - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení*, který jste vytvořili dříve v tomto scénáři.)
     - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku**. Jsou však možné i jiné scénáře.)
 
-1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku**.
+1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení*, zaškrtněte **ID sestavení štítku**.
 
     > [!NOTE]
     > Toto nastavení vytvoří jednu sekvenci štítků („Karton 1 z X“) na řádek zatížení po celé vlně, bez ohledu na nastavení pracovní skupiny. Tuto sekvenci štítků lze vytisknout na rozvržení štítků. Štítky pro různé zásilky budou navíc odděleny vybraným štítkem přerušení.
 
-1. Vyberte **OK** , chcete-li zavřít dialogové okno **Skupina šablon popisku vlny**.
+1. Vyberte **OK**, chcete-li zavřít dialogové okno **Skupina šablon popisku vlny**.
 1. Vytvořte druhou šablonu popisku, která má následující nastavení:
 
     - **Název šablony štítku:** *Štítky palet*
@@ -872,13 +872,13 @@ Pokud chcete provést tento scénář, musíte mít nainstalována ukázková da
 1. Vyberte **OK** a dialogové okno editor dotazu zavřete.
 1. Okno se zprávou vás vyzve k potvrzení operace resetování seskupení. Pokračujte výběrem tlačítka **Ano**.
 1. V podokně Akce vyberte možnost **Skupina šablon úrovně vlny**.
-1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky* , nastavte následující hodnoty:
+1. V dialogovém okně **Skupina šablon popisků vlny** pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID zásilky*, nastavte následující hodnoty:
 
     - **Tisk štítku přerušení:** Zaškrtněte toto políčko.
-    - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení* , který jste vytvořili dříve v tomto scénáři.)
+    - **ID rozložení štítku:** Vyberte štítek přerušení. (Například vyberte štítek *Přerušení*, který jste vytvořili dříve v tomto scénáři.)
     - **Název tiskárny:** Vyberte tiskárnu pro štítek přerušení. (Obvykle byste za účelem rozdělení rolí štítků měli vybrat stejnou tiskárnu, která je vybrána na pevné záložce **Podrobnosti o šabloně vlnového štítku**. Jsou však možné i jiné scénáře.)
 
-1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení* , zaškrtněte **ID sestavení štítku**.
+1. Pro řádek, kde je pole **Název referenčního pole** nastaveno na *ID referenčního zatížení*, zaškrtněte **ID sestavení štítku**.
 
     > [!NOTE]
     > Toto nastavení vytvoří jednu sekvenci štítků („Karton 1 z X“) na řádek zatížení po celé vlně, bez ohledu na nastavení pracovní skupiny. Tuto sekvenci štítků lze vytisknout na rozvržení štítků. Štítky pro různé zásilky budou navíc odděleny vybraným štítkem přerušení.

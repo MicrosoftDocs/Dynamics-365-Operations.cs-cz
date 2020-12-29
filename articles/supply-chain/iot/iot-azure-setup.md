@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014905"
+ms.locfileid: "4424127"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Nastavení zdrojů Azure pro IoT Intelligence
 

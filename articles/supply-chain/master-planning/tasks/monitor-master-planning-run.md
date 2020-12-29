@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978121"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423589"
 ---
 # <a name="monitor-a-master-planning-run"></a>Sledování běhu hlavního plánování
 
@@ -35,19 +35,19 @@ Na stránce **Zobrazit průběh hlavního plánování** můžete zobrazit podro
 
 Pokud chcete tuto funkci používat, postupujte takto:
 
-1. V pracovním prostoru **Správa funkcí** na kartě **Nová** vyberte v seznamu **Vizualizace pokroku optimalizace plánování** . Pokud se tato funkce nezobrazí na kartě **Nová** , podívejte se na karty **Není povoleno** a **Vše** .
-1. Vyberte **Povolit** . Můžete také vybrat možnost **Plán** a vybrat čas, kdy má být funkce zapnuta.
+1. V pracovním prostoru **Správa funkcí** na kartě **Nová** vyberte v seznamu **Vizualizace pokroku optimalizace plánování**. Pokud se tato funkce nezobrazí na kartě **Nová**, podívejte se na karty **Není povoleno** a **Vše**.
+1. Vyberte **Povolit**. Můžete také vybrat možnost **Plán** a vybrat čas, kdy má být funkce zapnuta.
 
 Na stránce **Zobrazit průběh hlavního plánování** lze zobrazit historické úlohy plánování i aktivní úlohy plánování. 
 
 Chcete-li zobrazit historické úlohy plánování, existují dvě možnosti. 
 
-1. Přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** a v podokně úloh vyberte **Historie** . Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
-1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování** a na kartě Hlavní plánování klikněte na **Historie** . Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
+1. Přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány** a v podokně úloh vyberte **Historie**. Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
+1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování** a na kartě Hlavní plánování klikněte na **Historie**. Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
 
 Chcete-li zobrazit aktivní úlohy plánování, existují dvě možnosti. 
-1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování** , v podokně úloh vyberte **Nedokončený proces plánování** . Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh** .
-1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování** a na kartě Hlavní plánování klikněte na **Zobrazit průběh** . Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
+1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování**, v podokně úloh vyberte **Nedokončený proces plánování**. Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**.
+1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování** a na kartě Hlavní plánování klikněte na **Zobrazit průběh**. Při výběru požadované úlohy vyberte možnost **Dotazy** a poté vyberte možnost **Zobrazit průběh**
 
 Všimněte si, že aktivní úlohy lze zobrazit pouze při zpracování úlohy plánování.
 
@@ -67,10 +67,10 @@ Ganttův diagram je užitečný nástroj, pokud chcete zobrazit dopad zpráv s a
 
 #### <a name="navigation-in-the-gantt-chart"></a>Navigace v Ganttově diagramu
 
-- Chcete-li rozbalit vybranou skupinu a zobrazit podrobnosti, vyberte ve stromovém zobrazení znaménko plus ( **+** ).
-- Chcete-li sbalit vybranou skupinu, vyberte ve stromovém zobrazení znaménko mínus ( **-** ).
-- K navigaci můžete používat klávesnici. K pohybu mezi řádky používejte **šipku nahoru** a **šipku dolů** . K rozbalení a sbalení skupin použijte klávesy **šipka vpravo** a **šipka vlevo** .
-- Chcete-li otevřít nebo zavřít všechny úrovně v Ganttově diagramu, vyberte možnost **rozbalit vše** nebo **Sbalit vše** .
+- Chcete-li rozbalit vybranou skupinu a zobrazit podrobnosti, vyberte ve stromovém zobrazení znaménko plus (**+**).
+- Chcete-li sbalit vybranou skupinu, vyberte ve stromovém zobrazení znaménko mínus (**-**).
+- K navigaci můžete používat klávesnici. K pohybu mezi řádky používejte **šipku nahoru** a **šipku dolů**. K rozbalení a sbalení skupin použijte klávesy **šipka vpravo** a **šipka vlevo**.
+- Chcete-li otevřít nebo zavřít všechny úrovně v Ganttově diagramu, vyberte možnost **rozbalit vše** nebo **Sbalit vše**.
 - Chcete-li zobrazit související čas zpracování, podržte ukazatel myši nad úkolem. (Úkoly jsou na nejnižší úrovni v Ganttově diagramu.)
 
 #### <a name="view-an-additional-master-planning-run-to-compare-jobs"></a>Zobrazení dalšího spuštění hlavního plánování pro porovnání úloh
@@ -118,12 +118,12 @@ Barva se zobrazí pouze na nejnižší úrovni v Ganttově diagramu. Výběrem m
 
 ## <a name="run-master-planning-and-track-processing-time"></a>Spustit hlavní plánování a sledovat čas zpracování
 
-1. Na výchozím řídicím panelu vyberte **Hlavní plánování** .
+1. Na výchozím řídicím panelu vyberte **Hlavní plánování**.
 1. V poli **Plán** zadejte nebo vyberte hodnotu.
-1. Vyberte **Spustit** .
-1. Nastavte možnost **Sledovat čas zpracování** na **Ano** .
+1. Vyberte **Spustit**.
+1. Nastavte možnost **Sledovat čas zpracování** na **Ano**.
 1. Do pole **Počet vláken** zadejte číslo.
-1. Na pevné záložce **záznamy, které mají být zahrnuty** vyberte možnost **Filtr** .
-1. V mřížce vyberte řádek, ve kterém je pole **Pole** nastaveno na **číslo položky** .
-1. Zadejte hodnotu do pole **Kritéria** .
-1. Vyberte **OK** .
+1. Na pevné záložce **záznamy, které mají být zahrnuty** vyberte možnost **Filtr**.
+1. V mřížce vyberte řádek, ve kterém je pole **Pole** nastaveno na **číslo položky**.
+1. Zadejte hodnotu do pole **Kritéria**.
+1. Vyberte **OK**.

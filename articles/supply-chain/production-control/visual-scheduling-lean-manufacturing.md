@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958734"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423568"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuální plánování pro lean manufacturing
 
@@ -42,7 +42,7 @@ Kanbanová úloha se může skládat z jedné nebo mnoha kanbanových úloh. Exi
 -   Zpracovat
 -   Převod
 
-Je možné plánovat pouze úlohy typu **Proces** . Kanbanová úloha a její vlastnosti, jako je čas aktivity, jsou definovány ve výrobním toku kanbanu. V průběhu výrobního kanbanu je kanbanová úloha přiřazena také k pracovní buňce. Denní kapacity pracovní buňky je vypočtena na základě kapacity pracovní buňky nastavené ve skupině prostředků. Je upravena podle denní pracovní doby v souvisejícím kalendáři. Při plánování kanbanové úlohy úloha načte kapacitu pracovní buňky. Deska plánování kanbanu obsahuje následující hlavní funkce:
+Je možné plánovat pouze úlohy typu **Proces**. Kanbanová úloha a její vlastnosti, jako je čas aktivity, jsou definovány ve výrobním toku kanbanu. V průběhu výrobního kanbanu je kanbanová úloha přiřazena také k pracovní buňce. Denní kapacity pracovní buňky je vypočtena na základě kapacity pracovní buňky nastavené ve skupině prostředků. Je upravena podle denní pracovní doby v souvisejícím kalendáři. Při plánování kanbanové úlohy úloha načte kapacitu pracovní buňky. Deska plánování kanbanu obsahuje následující hlavní funkce:
 
 -   Grafické zobrazení plánu výroby v pracovní buňce lean. V tomto přehledu se zobrazují plánované kanbanové úlohy procesu v určitých obdobích.
 -   Nástroj, který umožňuje naplánovat neplánované kanbanové úlohy a přeplánovat dříve naplánované úlohy.
@@ -69,10 +69,10 @@ Další informace o kanbanové úloze jsou k dispozici v popisu, který se zobra
 
 ### <a name="use-colors-to-view-the-kanban-schedule-board"></a>Pomocí barev lze zobrazit, desku plánování kanbanu
 
-K vylepšení přehledu, který deska plánování kanbanu poskytuje, můžete použít barvy k rozlišení kanbanových úloh. Barva kanbanové úlohy není konfigurována ve skupině štíhlého plánu, kde lze agregovat produkty, které se mají vyrobit ve stejném pořadí. Tlačítko **Použít barvy motivu** na kartě **Deska** podokna akcí umožňuje přepínat mezi barvami motivu aplikace a barvami, které jsou konfigurovány ve skupině štíhlého plánu. Pro každé období označuje panel kapacity (6) počet dostupných hodin pro období bylo načteno v rámci kanbanové úlohy. Pokud je období přetížené, panel kapacity vypadá silnější a zobrazuje se červeně. Všechny tyto funkce jsou k dispozici na kartě **deska** podokna akcí (1), v horní části stránky **Deska plánování kanbanu** .
+K vylepšení přehledu, který deska plánování kanbanu poskytuje, můžete použít barvy k rozlišení kanbanových úloh. Barva kanbanové úlohy není konfigurována ve skupině štíhlého plánu, kde lze agregovat produkty, které se mají vyrobit ve stejném pořadí. Tlačítko **Použít barvy motivu** na kartě **Deska** podokna akcí umožňuje přepínat mezi barvami motivu aplikace a barvami, které jsou konfigurovány ve skupině štíhlého plánu. Pro každé období označuje panel kapacity (6) počet dostupných hodin pro období bylo načteno v rámci kanbanové úlohy. Pokud je období přetížené, panel kapacity vypadá silnější a zobrazuje se červeně. Všechny tyto funkce jsou k dispozici na kartě **deska** podokna akcí (1), v horní části stránky **Deska plánování kanbanu**.
 
 ## <a name="plan-unplanned-jobs"></a>Naplánovat neplánované úlohy
-Můžete naplánovat neplánované kanbanové úlohy z dialogového okna **Naplánovat neplánované úlohy** . Toto dialogové okno otevřete kliknutím na tlačítko **Neplánované úlohy** , na kterém je zobrazeno číslo neplánovaných úloh. Případně klikněte na tlačítko **Naplánovat neplánované úlohy** na kartě **deska** podokna akcí. V dialogovém okně se zobrazuje seznam neplánovaných kanbanových úloh pro pracovní buňku. K filtrování všech polí v mřížce lze použít pole **Filtr** . Můžete například filtrovat kanbanové úlohy pro konkrétní produkt. Poté, co máte filtrovaný seznam úloh, které chcete naplánovat, vyberte je v seznamu a klepněte na tlačítko **OK** . Pokud chcete k plánování úloh použít automatické plánování, nastavte možnost **Automatické plánování** na **Ano** . V takovém případě jsou úlohy plánovány na období podle data splatnosti. Úlohy je možné plánovat také podle období. Stačí vybrat období v poli **Období** . Následující obrázek znázorňuje příklad dialogového okna **Naplánovat neplánované úlohy** . 
+Můžete naplánovat neplánované kanbanové úlohy z dialogového okna **Naplánovat neplánované úlohy**. Toto dialogové okno otevřete kliknutím na tlačítko **Neplánované úlohy**, na kterém je zobrazeno číslo neplánovaných úloh. Případně klikněte na tlačítko **Naplánovat neplánované úlohy** na kartě **deska** podokna akcí. V dialogovém okně se zobrazuje seznam neplánovaných kanbanových úloh pro pracovní buňku. K filtrování všech polí v mřížce lze použít pole **Filtr**. Můžete například filtrovat kanbanové úlohy pro konkrétní produkt. Poté, co máte filtrovaný seznam úloh, které chcete naplánovat, vyberte je v seznamu a klepněte na tlačítko **OK**. Pokud chcete k plánování úloh použít automatické plánování, nastavte možnost **Automatické plánování** na **Ano**. V takovém případě jsou úlohy plánovány na období podle data splatnosti. Úlohy je možné plánovat také podle období. Stačí vybrat období v poli **Období**. Následující obrázek znázorňuje příklad dialogového okna **Naplánovat neplánované úlohy**. 
 
 ![Dialogové okno Naplánovat neplánované úlohy](./media/plan-unplanned-jobs-1024x564.png)
 

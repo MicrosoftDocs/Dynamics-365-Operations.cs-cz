@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016786"
+ms.locfileid: "4424154"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu
 
@@ -33,7 +33,7 @@ Během scénáře vytvoříte sadu prodejních objednávek a poté před uvolně
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
+Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Nastavení zásad konsolidace dodávek a filtry produktů
 
@@ -47,7 +47,7 @@ Scénář, který je zde popsán, předpokládá, že jste již tuto funkci zapn
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.

@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0c39d34773a2b36cbf9477e4bdda8e45491d9c03
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213899"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424069"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Sledování položky nebo suroviny
 
@@ -32,7 +32,7 @@ Tento postup uvádí použití sledování položky k určení, kde bylo zboží
 
 
 ## <a name="trace-an-item-backwards-using-a-known-batch-number"></a>Sledujte položky zpětně za použití známého čísla dávky
-1. V **Navigačním podokně**přejděte na **Moduly > Řízení zásob > Dotazy a sestavy > Sledovací dimenze > Sledování zboží**.
+1. V **Navigačním podokně** přejděte na **Moduly > Řízení zásob > Dotazy a sestavy > Sledovací dimenze > Sledování zboží**.
 2. V poli **Číslo položky** vyberte „P9100“.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
 4. V poli **Dopředu nebo dozadu** vyberte „Dozadu“.

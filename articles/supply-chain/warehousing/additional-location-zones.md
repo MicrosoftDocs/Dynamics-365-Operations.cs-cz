@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016293"
+ms.locfileid: "4424179"
 ---
 # <a name="additional-location-zones"></a>Další zóny skladového místa
 
@@ -35,7 +35,7 @@ K použití polí zón není nutné žádné další nastavení.
 
 ## <a name="turn-on-the-additional-location-zone-feature"></a>Zapnutí funkce Další zóna skladového místa
 
-Než můžete použít funkci *Další zóna skladového místa* , musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než můžete použít funkci *Další zóna skladového místa*, musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Další zóna skladového místa*

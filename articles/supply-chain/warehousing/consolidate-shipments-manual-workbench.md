@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016809"
+ms.locfileid: "4424155"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
 
@@ -31,7 +31,7 @@ Toto téma představuje scénář, ve kterém je více objednávek uvolněno do 
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF** , než začnete.
+Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Nastavení zásad konsolidace dodávek a filtry produktů
 
@@ -39,7 +39,7 @@ Scénář, který je zde popsán, předpokládá, že jste již tuto funkci zapn
 
 ## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Zapnutí funkce rušní konsolidace dodávek
 
-Než budete moci používat funkci *Ruční konsolidace dodávek* , musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než budete moci používat funkci *Ruční konsolidace dodávek*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Ruční konsolidace dodávek*
@@ -63,7 +63,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -77,13 +77,13 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -100,13 +100,13 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý* )
+    - **Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
 1. Přidejte druhý řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní* )
+    - **Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)
     - **Množství:** *1.00*
     - **Způsob doručení:** *Airwa-Air*
 
@@ -123,7 +123,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -137,7 +137,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -152,7 +152,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -165,7 +165,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -181,7 +181,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -197,7 +197,7 @@ Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a
 
 1. Přidejte řádek objednávky, který má následující nastavení:
 
-    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4** )
+    - **Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)
     - **Množství:** *1.00*
 
 1. Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.
@@ -221,7 +221,7 @@ Chcete-li uvolnit každou prodejní objednávku, kterou jste vytvořili pro tent
     - **Pole:** *Prodejní objednávka*
     - **Kritéria:** Zadejte čárkami oddělený seznam čísel prodejních objednávek pro každou sadu objednávek, kterou jste vytvořili pro tento scénář.
 
-1. Vyberte **OK** , uložte svůj dotaz a zavřete dialogové okno.
+1. Vyberte **OK**, uložte svůj dotaz a zavřete dialogové okno.
 1. V podokně akcí klikněte na možnost **Konsolidovat dodávky**.
 1. Vyberte všechny dodávky a poté vyberte v podokně akcí možnost **Konsolidovat**.
 
@@ -238,7 +238,7 @@ Následující postup umožňuje ověřit dodávky, které byly vytvořeny nebo 
 Měly být vytvořeny dvě dodávky:
 
 - První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.
-- Druhá dodávka, která nepoužívá způsob dopravy *Airways* , byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
+- Druhá dodávka, která nepoužívá způsob dopravy *Airways*, byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.
 
 ### <a name="related-shipments-for-order-set-2"></a>Související dodávky pro sadu objednávek 2
 

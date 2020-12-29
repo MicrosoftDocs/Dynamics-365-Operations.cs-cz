@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973469"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4424259"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -58,18 +58,20 @@ Chcete-li použít optimalizaci plánování, nainstalujte doplněk Optimalizace
 > Požadavek optimalizace plánování je LCS aktivované prostředí s vysokou dostupností, vrstvy 2 nebo vyšší (ne prostředí OneBox) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější. Pokud se pokusíte nainstalovat doplněk v prostředí OneBox, instalace se nedokončí a budete ji muset zrušit.
 
 1. Přihlaste se k LCS a otevřete požadované prostředí.
-1. Přejděte na **Úplné podrobnosti** .
-1. Přejděte na záložku s náhledem **Doplňky prostředí** .
-1. Vyberte možnost **Nainstalovat nový doplněk** .
-1. Vyberte **Optimalizace plánování** .
+1. Přejděte na **Úplné podrobnosti**.
+1. Přejděte na záložku s náhledem **Doplňky prostředí**.
+1. Vyberte možnost **Nainstalovat nový doplněk**.
+1. Vyberte **Optimalizace plánování**.
 1. Postupujte podle pokynů instalační příručky a vyjádřete souhlas s podmínkami a ujednáními.
-1. Vyberte **Instalovat** .
+1. Vyberte **Instalovat**.
 1. Na záložce s náhledem **Doplňky prostředí** by se mělo zobrazit, že se instaluje optimalizace plánování.
 1. Po několika minutách by se měla položka **Instaluje se** změnit na **Nainstalováno** (pravděpodobně bude nutné aktualizovat stránku). Po instalaci můžete aktivovat optimalizaci plánování v aplikaci Dynamics 365 Supply Chain Management.
 
+Hlavním účelem instalace doplňku Optimalizace plánování je propojení služby a prostředí. Proto musíte doplněk nainstalovat samostatně do každého prostředí, kde budete používat optimalizaci plánování, bez ohledu na jakýkoli kód přesunutý mezi prostředími.
+
 ### <a name="planning-optimization-integration"></a>Integrace optimalizace plánování
 
-Chcete-li nakonfigurovat, zda by měl být pro hlavní plánování použit doplněk Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Parametry optimalizace plánování** .
+Chcete-li nakonfigurovat, zda by měl být pro hlavní plánování použit doplněk Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Parametry optimalizace plánování**.
 
 #### <a name="connection-status"></a>Stav připojení
 
@@ -91,11 +93,11 @@ Nastavení možnosti **Použít optimalizaci plánování** určuje, který plá
 - **Ne** – pro hlavní plánování se používá integrovaný modul Supply Chain Management
 
 > [!NOTE]
-> Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro předdefinovaný modul plánování Supply Chain Management, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano** , tyto úlohy se nezdaří.
+> Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro předdefinovaný modul plánování Supply Chain Management, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano**, tyto úlohy se nezdaří.
 
 ### <a name="integration-with-the-setup"></a>Integrace s nastavením
 
-Je-li zapnut náhled optimalizace plánování, hlavní plánování se provede pomocí doplňku optimalizace plánování. V tomto případě budou ovlivněny výsledky a funkce hlavního plánování.
+Je-li zapnuta optimalizace plánování, hlavní plánování se provede pomocí doplňku optimalizace plánování. V tomto případě budou ovlivněny výsledky a funkce hlavního plánování.
 
 ## <a name="additional-resources"></a>Další prostředky
 

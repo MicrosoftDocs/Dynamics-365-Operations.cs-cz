@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016233"
+ms.locfileid: "4424175"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Zrušení práce skladu pro zpracování výjimek
 
@@ -40,7 +40,7 @@ Na rozdíl od běžné funkce zrušení, ke které lze získat přístup pomocí
 > [!NOTE]
 > V případě práce, která musí být zrušena z provozních důvodů, musí uživatelé skladu nadále používat pravidelné funkce zrušení na stránce práce.
 
-Pomocí funkce Zrušit práci lze zrušit pouze práci typu **Prodej** , **Problém s převodem** , **Vyzvednutí surovin** nebo **Doplnění**. Logika zrušení nebude spuštěna pro zmrazenou práci výběru surovin nebo práci, kterou lze zrušit pomocí běžné funkce zrušení (Další informace naleznete v předchozí poznámce).
+Pomocí funkce Zrušit práci lze zrušit pouze práci typu **Prodej**, **Problém s převodem**, **Vyzvednutí surovin** nebo **Doplnění**. Logika zrušení nebude spuštěna pro zmrazenou práci výběru surovin nebo práci, kterou lze zrušit pomocí běžné funkce zrušení (Další informace naleznete v předchozí poznámce).
 
 Chcete-li odblokovat práci, systém zruší všechny zbývající řádky práce a opraví data skladu přidružená k ID práce, kterou daný uživatel určil. Všechny běžné operace zpracování skladu, které zahrnují ovlivněné množství zboží, mohou být opět obnoveny.
 
