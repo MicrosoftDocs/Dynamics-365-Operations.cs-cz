@@ -1,0 +1,209 @@
+---
+title: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
+description: Toto téma obsahuje informace o tom, jak byla vylepšena funkce směrného plánu ER v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) vylepšena.
+author: NickSelin
+manager: AnnBe
+ms.date: 06/19/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2018-04-01
+ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682840"
+---
+# <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a><span data-ttu-id="1ded8-103">Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-103">Improvements in tracing the results of generated ER reports and comparing them with baseline values</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="1ded8-104">V tomto tématu je popsána první sada vylepšení, která byla provedena ve funkci směrného plánu systému elektronického výkaznictví (ER).</span><span class="sxs-lookup"><span data-stu-id="1ded8-104">This topic describes the first set of improvements that have been made to the baseline feature of the Electronic reporting (ER) framework.</span></span> <span data-ttu-id="1ded8-105">Tato vylepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) a novějších.</span><span class="sxs-lookup"><span data-stu-id="1ded8-105">These improvements are available in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019) and later.</span></span>
+
+## <a name="automate-the-setting-of-baseline-rules"></a><span data-ttu-id="1ded8-106">Automatizace nastavení pravidel směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-106">Automate the setting of baseline rules</span></span>
+
+<span data-ttu-id="1ded8-107">Téma [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md) vysvětluje, jak konfigurovat rámec ER na shromažďování informací o spouštění formátu ER a vyhodnotit výsledky těchto spuštění.</span><span class="sxs-lookup"><span data-stu-id="1ded8-107">The [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic explains how to configure the ER framework to collect information about ER format executions and evaluate the results of those executions.</span></span> <span data-ttu-id="1ded8-108">Příklad v tomto tématu obsahuje kroky, které je nutné provést.</span><span class="sxs-lookup"><span data-stu-id="1ded8-108">The example in this topic shows the steps that must be completed.</span></span>
+
+<span data-ttu-id="1ded8-109">Tady jsou některé kroky:</span><span class="sxs-lookup"><span data-stu-id="1ded8-109">Here are some of the steps:</span></span>
+
+- <span data-ttu-id="1ded8-110">Chcete-li generovat odchozí soubor, spusťte formát ER a soubor uložte lokálně.</span><span class="sxs-lookup"><span data-stu-id="1ded8-110">Run an ER format to generate an outbound file, and store the file locally.</span></span>
+- <span data-ttu-id="1ded8-111">Přidejte lokálně uložený soubor jako přílohu směrného plánu, který byl přidán do formátu ER.</span><span class="sxs-lookup"><span data-stu-id="1ded8-111">Add the locally stored file as an attachment of the baseline that was added for an ER format.</span></span>
+- <span data-ttu-id="1ded8-112">Nakonfigurujte pravidlo směrného plánu pro přidaný směrný plán.</span><span class="sxs-lookup"><span data-stu-id="1ded8-112">Configure the baseline rule for the added baseline.</span></span> <span data-ttu-id="1ded8-113">Tato konfigurace zahrnuje následující kroky:</span><span class="sxs-lookup"><span data-stu-id="1ded8-113">This configuration includes the following steps:</span></span>
+
+    - <span data-ttu-id="1ded8-114">Určete formátovací prvek ER, který slouží k vygenerování odchozího souboru.</span><span class="sxs-lookup"><span data-stu-id="1ded8-114">Specify an ER format element that is used to generate an outbound file.</span></span>
+    - <span data-ttu-id="1ded8-115">Vyberte přílohu, která odkazuje na generovaný výstupní soubor.</span><span class="sxs-lookup"><span data-stu-id="1ded8-115">Select the attachment that refers to the generated outbound file.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1ded8-116">Tyto kroky je nutné provést ručně, přestože nové schopnosti ER umožňují jejich automatizované provedení.</span><span class="sxs-lookup"><span data-stu-id="1ded8-116">These steps must be done manually, even though the new ER capabilities enable them to be automated.</span></span> <span data-ttu-id="1ded8-117">Chcete-li získat další informace o této funkci, vyplňte následující příklad.</span><span class="sxs-lookup"><span data-stu-id="1ded8-117">To learn more about this feature, complete the following example.</span></span>
+
+## <a name="example-automate-the-setting-of-baseline-rules"></a><span data-ttu-id="1ded8-118">Příklad: Automatizace nastavení pravidel směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-118">Example: Automate the setting of baseline rules</span></span>
+
+<span data-ttu-id="1ded8-119">Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v tématu [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), a to až do části Přidání nového směrného plánu pro navržený formát ER.</span><span class="sxs-lookup"><span data-stu-id="1ded8-119">To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, up through the "Add a new baseline for a designed ER format" section.</span></span>
+
+### <a name="review-added-baseline"></a><span data-ttu-id="1ded8-120">Kontrola přidaného směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-120">Review added baseline</span></span>
+
+1. <span data-ttu-id="1ded8-121">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-121">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-122">Vyberte **Směrné plány**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-122">Select **Baselines**.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="1ded8-123">Tlačítko **Směrný plán** v podokně akcí je k dispozici pouze v případě že je pro aktuální společnost zapnutý parametr ER **Spustit v režimu ladění**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-123">The **Baselines** button on the Action Pane is available only when the **Run in debug mode** ER user parameter is turned on for the current company.</span></span>
+
+<span data-ttu-id="1ded8-124">Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných plánů**, ale pravidla směrného plánu pro tento směrný plán ještě nebyla přidána.</span><span class="sxs-lookup"><span data-stu-id="1ded8-124">The baseline has been added for the selected **Format to learn ER baselines** format, but the baseline rules haven't yet been added for this baseline.</span></span>
+
+<span data-ttu-id="1ded8-125">![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline2.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")</span><span class="sxs-lookup"><span data-stu-id="1ded8-125">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+### <a name="make-a-new-baseline-rule"></a><span data-ttu-id="1ded8-126">Vtvoření nového pravidla směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-126">Make a new baseline rule</span></span>
+
+1. <span data-ttu-id="1ded8-127">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-127">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-128">Ve stromové struktuře rozbalte **Model pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-128">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="1ded8-129">Ve stromové struktuře vyberte **Model pro učení směrných plánů ER\\Formát pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-129">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="1ded8-130">Na pevné záložce **Verze** vyberte **Spustit**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-130">On the **Versions** FastTab, select **Run**.</span></span>
+5. <span data-ttu-id="1ded8-131">Do pole **Zadat ID** zadejte **1**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-131">In the **Enter Id** field, enter **1**.</span></span>
+6. <span data-ttu-id="1ded8-132">Nastavte volbu **vytvořit soubory směrného plánu** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-132">Set the **Make baseline files** option to **Yes**.</span></span>
+7. <span data-ttu-id="1ded8-133">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-133">Select **OK**.</span></span>
+8. <span data-ttu-id="1ded8-134">Vyberte **Směrné plány**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-134">Select **Baselines**.</span></span>
+
+    <span data-ttu-id="1ded8-135">![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")</span><span class="sxs-lookup"><span data-stu-id="1ded8-135">![Electronic reporting format baselines page](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+    <span data-ttu-id="1ded8-136">Generovaný výstupní soubor byl automaticky připojen ke směrnému plánu provedeného formátu ER.</span><span class="sxs-lookup"><span data-stu-id="1ded8-136">The generated outbound file has been automatically attached to the baseline of the executed ER format.</span></span> <span data-ttu-id="1ded8-137">Do tohoto směrného plánu bylo automaticky přidáno pravidlo směrného plánu, které obsahuje také odkaz na připojený soubor.</span><span class="sxs-lookup"><span data-stu-id="1ded8-137">The baseline rule has been automatically added to this baseline and also contains the reference to the attached file.</span></span>
+
+9. <span data-ttu-id="1ded8-138">Do pole **Název** zadejte **Směrný plán 1**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-138">In the **Name** field, enter **Baseline 1**.</span></span>
+10. <span data-ttu-id="1ded8-139">Do pole **Maska názvu souboru** zadejte **.xml**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-139">In the **File name mask** field, enter **.xml**.</span></span>
+11. <span data-ttu-id="1ded8-140">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-140">Select **Save**.</span></span>
+
+### <a name="run-the-format"></a><span data-ttu-id="1ded8-141">Spuštění formátu</span><span class="sxs-lookup"><span data-stu-id="1ded8-141">Run the format</span></span>
+
+<span data-ttu-id="1ded8-142">Nyní můžete dokončit zbývající kroky v příkladu v tématu [Sledování generovaných výsledků sestavy a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), počínaje částí Spuštění navrženého formátu ER a kontrola protokolu k analýze výsledků.</span><span class="sxs-lookup"><span data-stu-id="1ded8-142">You're now ready to complete the remaining steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, starting from the "Run the designed ER format and review the log to analyze the results" section.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1ded8-143">Odstraníte-li automaticky přidané pravidlo směrného plánu na pevné záložce **Směrné plány**, odkazovaná příloha nebude automaticky odstraněna.</span><span class="sxs-lookup"><span data-stu-id="1ded8-143">When you delete the automatically added baseline rule on the **Baselines** FastTab, the referenced attachment isn't automatically deleted.</span></span>
+
+## <a name="configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a><span data-ttu-id="1ded8-144">Konfigurace směrného plánu tak, aby ignoroval neustále se měnící části výstupu ER</span><span class="sxs-lookup"><span data-stu-id="1ded8-144">Configure the baseline so that it ignores constantly changing parts of the ER output</span></span>
+
+<span data-ttu-id="1ded8-145">Pokud byl formát ER navržen tak, aby obsahoval informace, které se změní při spuštění formátu, musí být formát vyžadován pro použití funkce směrného plánu pro porovnání generovaných výsledků s hodnotami podle směrného plánu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-145">When an ER format has been designed to contain information that is changed when the format is run, the format must be required to use the ER baseline feature to compare the generated results with baseline values.</span></span> <span data-ttu-id="1ded8-146">Informace mohou být například datum a čas zpracování nebo jedinečný identifikátor vygenerovaného dokumentu v různých formátech (globálně jedinečný identifikátor \[GUID\] atd.).</span><span class="sxs-lookup"><span data-stu-id="1ded8-146">For example, the information might be the processing date and time or the unique identifier of a generated document in different formats (globally unique identifier \[GUID\], and so on).</span></span> <span data-ttu-id="1ded8-147">Nové možnosti ER umožňují konfigurovat pravidlo směrného plánu tak, aby při spuštění formátu s cílem porovnání hodnot podle směrného plánu s výsledky provádění formátu ignorovalo změny ve formátu ER.</span><span class="sxs-lookup"><span data-stu-id="1ded8-147">The new ER capabilities let you configure the baseline rule so that it ignores changeable elements of an ER format when the format is run with the purpose of comparing baseline values with the results of the format's execution.</span></span> <span data-ttu-id="1ded8-148">Chcete-li získat další informace o této funkci, vyplňte následující příklad.</span><span class="sxs-lookup"><span data-stu-id="1ded8-148">To learn more about this feature, complete the following example.</span></span>
+
+## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a><span data-ttu-id="1ded8-149">Příklad: Konfigurace směrného plánu tak, aby ignoroval neustále se měnící části výstupu ER</span><span class="sxs-lookup"><span data-stu-id="1ded8-149">Example: Configure the baseline so that it ignores constantly changing parts of the ER output</span></span>
+
+<span data-ttu-id="1ded8-150">Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v tématu [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md).</span><span class="sxs-lookup"><span data-stu-id="1ded8-150">To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic.</span></span>
+
+### <a name="modify-a-configured-er-format"></a><span data-ttu-id="1ded8-151">Úprava konfigurovaného formátu ER</span><span class="sxs-lookup"><span data-stu-id="1ded8-151">Modify a configured ER format</span></span>
+
+1. <span data-ttu-id="1ded8-152">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-152">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-153">Ve stromové struktuře rozbalte **Model pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-153">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="1ded8-154">Ve stromové struktuře vyberte **Model pro učení směrných plánů ER\\Formát pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-154">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="1ded8-155">Vyberte možnost **Návrhář**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-155">Select **Designer**.</span></span>
+5. <span data-ttu-id="1ded8-156">Ve stromovém zobrazení vyberte **Výstup\\Dokument**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-156">In the tree, select **Output\\Document**.</span></span>
+6. <span data-ttu-id="1ded8-157">Vyberte **přidat**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-157">Select **Add**.</span></span>
+7. <span data-ttu-id="1ded8-158">V rozevíracím dialogovém okně ve stromu vyberte **XML\\Atribut**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-158">In the drop-down dialog box, in the tree, select **XML\\Attribute**.</span></span>
+8. <span data-ttu-id="1ded8-159">Do pole **Název** zadejte **ProcessingDateTime**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-159">In the **Name** field, enter **ProcessingDateTime**.</span></span>
+9. <span data-ttu-id="1ded8-160">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-160">Select **OK**.</span></span>
+10. <span data-ttu-id="1ded8-161">Na kartě **mapování** ve stromové struktuře vyberte **Output\\Document\\ProcessingDateTime.**</span><span class="sxs-lookup"><span data-stu-id="1ded8-161">On the **Mapping** tab, in the tree, select **Output\\Document\\ProcessingDateTime**.</span></span>
+11. <span data-ttu-id="1ded8-162">Vyberte možnost **Upravit vzorec**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-162">Select **Edit formula**.</span></span>
+12. <span data-ttu-id="1ded8-163">Do pole **Vzorec** zadejte následující výraz: **DATETIMEFORMAT(NOW(), "O")**</span><span class="sxs-lookup"><span data-stu-id="1ded8-163">In the **Formula** field, enter the following expression: **DATETIMEFORMAT(NOW(), "O")**</span></span>
+13. <span data-ttu-id="1ded8-164">Vyberte **Uložit** a potom **Test**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-164">Select **Save**, and then select **Test**.</span></span>
+14. <span data-ttu-id="1ded8-165">Pokud chcete znovu otestovat konfigurovaný výraz, znovu vyberte **Test**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-165">Select **Test** again to retest the configured expression.</span></span>
+
+    <span data-ttu-id="1ded8-166">![Stránka Návrhář receptur](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Snímek obrazovky stránky Návrhář receptur")</span><span class="sxs-lookup"><span data-stu-id="1ded8-166">![Formula designer page](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot of the Formula designer page")</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="1ded8-167">Na kartě **Výsledek** testu se zobrazuje, že konfigurovaný výraz vrací při každém volání jinou hodnotu data a času.</span><span class="sxs-lookup"><span data-stu-id="1ded8-167">The **Test result** tab shows that the configured expression returns a different date and time value whenever it's called.</span></span>
+
+15. <span data-ttu-id="1ded8-168">Vyberte stránku **Návrhář vzorců** a potom **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-168">Close the **Formula designer** page, and then select **Save**.</span></span>
+
+    <span data-ttu-id="1ded8-169">![Stránka návrháře formátu](media/GER-BaselineSample-FormatMappingDesign2.PNG "Snímek obrazovky stránky Návrhář formátu")</span><span class="sxs-lookup"><span data-stu-id="1ded8-169">![Format designer page](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot of the Format designer page")</span></span>
+
+16. <span data-ttu-id="1ded8-170">Zavřete stránku **Návrhář formátu**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-170">Close the **Format designer** page.</span></span>
+
+### <a name="remove-an-existing-baseline-rule"></a><span data-ttu-id="1ded8-171">Odebrání existujícího pravidla směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-171">Remove an existing baseline rule</span></span>
+
+1. <span data-ttu-id="1ded8-172">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-172">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-173">Vyberte **Směrné plány**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-173">Select **Baselines**.</span></span>
+3. <span data-ttu-id="1ded8-174">V seznamu směrných plánů vyberte směrný plán, který je nakonfigurován pro **Formát pro učení směrných plánů**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-174">In the list of baselines, select the baseline that is configured for the **Format to learn ER baselines** format.</span></span>
+4. <span data-ttu-id="1ded8-175">Na pevné záložce **Směrné plány** vyberte **Odstranit** k odebrání dříve vytvořeného pravidla směrného plánu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-175">On the **Baselines** FastTab, select **Delete** to remove the baseline rule that you configured earlier.</span></span>
+
+<span data-ttu-id="1ded8-176">![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline3.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")</span><span class="sxs-lookup"><span data-stu-id="1ded8-176">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+### <a name="define-replacements-for-bindings-of-designed-er-format"></a><span data-ttu-id="1ded8-177">Definování náhrad pro vazby navrženého formátu ER</span><span class="sxs-lookup"><span data-stu-id="1ded8-177">Define replacements for bindings of designed ER format</span></span>
+
+1. <span data-ttu-id="1ded8-178">Na stránce **Konfigurace** na pevné záložce **Náhrady** vyberte **Vybrat komponenty**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-178">On the **Configurations** page, on the **Replacements** FastTab, select **Select components**.</span></span>
+2. <span data-ttu-id="1ded8-179">Ve stromu komponent formátu rozbalte **Výstup**, rozbalte **Výstup\\Dokument** a zaškrtněte políčko **Výstup\\Dokument\\ProcessingDateTime**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-179">In the format components tree, expand **Output**, expand **Output\\Document**, and then select the check box for **Output\\Document\\ProcessingDateTime**.</span></span>
+3. <span data-ttu-id="1ded8-180">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-180">Select **OK**.</span></span>
+
+<span data-ttu-id="1ded8-181">![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline4.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")</span><span class="sxs-lookup"><span data-stu-id="1ded8-181">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+<span data-ttu-id="1ded8-182">Vybraná koponenta formátu ER byla přidána do seznamu komponent na pevné záložce **Náhrady**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-182">The selected ER format component has been added to the list of components on the **Replacements** FastTab.</span></span> <span data-ttu-id="1ded8-183">Při spuštění základního formátu ER v režimu ladění bude vazba formátu pro každou součást nahrazena vazbou, která je zobrazena ve sloupci **vazba**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-183">When the base ER format is run in debug mode, the format's binding for each component will be replaced by the binding that is shown in the **Binding** column.</span></span> <span data-ttu-id="1ded8-184">Chcete-li změnit výchozí vazbu pro komponentu, která je uvedena na pevné záložce **Náhrady**, vyberte **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-184">To change the default binding for a component that is listed on the **Replacements** FastTab, select **Edit**.</span></span>
+
+### <a name="make-a-new-baseline-rule"></a><span data-ttu-id="1ded8-185">Vtvoření nového pravidla směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-185">Make a new baseline rule</span></span>
+
+<span data-ttu-id="1ded8-186">Postupujte podle kroků v části Příklad: automatizace nastavení pravidel směrného plánu dříve v tomto tématu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-186">Follow the steps in the "Example: Automate the setting of baseline rules" section earlier in this topic.</span></span> <span data-ttu-id="1ded8-187">Zobrazí se upozornění, že výstupní soubor byl vygenerován pomocí nastavení směrného plánu a že došlo k vynucenému nahrazení vazeb formátu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-187">A notification warns you that the outbound file has been generated by using baseline settings, and that a forced replacement of the format bindings has occurred.</span></span>
+
+<span data-ttu-id="1ded8-188">![Oznámení na stránce Konfigurace](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Snímek obrazovky oznámení na stránce Konfigurace")</span><span class="sxs-lookup"><span data-stu-id="1ded8-188">![Notification on the Configurations page](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot of the notification on the Configurations page")</span></span>
+
+### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a><span data-ttu-id="1ded8-189">Potlačení upozornění na náhradní vazby formátu</span><span class="sxs-lookup"><span data-stu-id="1ded8-189">Suppress warnings about the replacement of format bindings</span></span>
+
+<span data-ttu-id="1ded8-190">Nastavením specifických parametrů ER můžete potlačit upozornění na nahrazení formátovacích vazeb.</span><span class="sxs-lookup"><span data-stu-id="1ded8-190">By setting specific ER parameters, you can suppress notifications that warn about the replacement of format bindings.</span></span> <span data-ttu-id="1ded8-191">Toto potlačení může být užitečné, pokud jsou formátovací vazby nahrazeny bezobslužným režimem pomocí Regression Suite Automation Tool.</span><span class="sxs-lookup"><span data-stu-id="1ded8-191">This suppression can be useful when format bindings are replaced in an unattended mode by using the Regression Suite Automation Tool.</span></span> <span data-ttu-id="1ded8-192">V tomto případě může být upozornění považováno za selhání testovacího případu, který běží.</span><span class="sxs-lookup"><span data-stu-id="1ded8-192">In this case, the warning can be considered a failure of the test case that is running.</span></span>
+
+1. <span data-ttu-id="1ded8-193">Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** vyberte **Parametry uživatelů**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-193">On the **Configurations** page, on the Action Pane, on the **Configurations** tab, select **User parameters**.</span></span>
+2. <span data-ttu-id="1ded8-194">Nastavte volbu **potlačit upozornění** podle směrného plánu na hodnotu **Ano** a pak klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-194">Set the **Suppress baseline warnings** option to **Yes**, and then select **OK**.</span></span>
+
+### <a name="review-the-generated-baseline-file"></a><span data-ttu-id="1ded8-195">Kontrola generovaného souboru směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-195">Review the generated baseline file</span></span>
+
+1. <span data-ttu-id="1ded8-196">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-196">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-197">Vyberte **Směrné plány**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-197">Select **Baselines**.</span></span>
+3. <span data-ttu-id="1ded8-198">Vyberte **Přílohy**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-198">Select **Attachments**.</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="1ded8-199">Vygenerovaný soubor obsahuje text data a času zpracování (**"#"**) z vazby, která byla nakonfigurována v přidaném základním pravidlu, ne z vazby formátu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-199">The generated file contains the processing date and time text (**"#"**) from the binding that was configured in the added baseline rule, not from the format's binding.</span></span>
+    
+4. <span data-ttu-id="1ded8-200">Zavřete stránku **Přílohy**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-200">Close the **Attachments** page.</span></span>
+
+### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a><span data-ttu-id="1ded8-201">Spuštění navrženého formát ER a kontrola protokolu pro analýzu výsledků</span><span class="sxs-lookup"><span data-stu-id="1ded8-201">Run the designed ER format and review the log to analyze the results</span></span>
+
+1. <span data-ttu-id="1ded8-202">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-202">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="1ded8-203">Ve stromové struktuře rozbalte **Model pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-203">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="1ded8-204">Ve stromové struktuře vyberte **Model pro učení směrných plánů ER\\Formát pro učení směrných plánů ER**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-204">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="1ded8-205">Na pevné záložce **Verze** vyberte **Spustit**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-205">On the **Versions** FastTab select **Run**.</span></span>
+5. <span data-ttu-id="1ded8-206">Do pole **Zadat ID** zadejte **1**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-206">In the **Enter Id** field, type **1**.</span></span>
+6. <span data-ttu-id="1ded8-207">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-207">Select **OK**.</span></span>
+7. <span data-ttu-id="1ded8-208">Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurovat protokoly ladění**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-208">Go to **Organization administration** \> **Electronic reporting** \> **Configuration debug logs**.</span></span>
+
+<span data-ttu-id="1ded8-209">Protokol spuštění obsahuje informace o výsledcích porovnání generovaného souboru s nakonfigurovaným směrným plánem.</span><span class="sxs-lookup"><span data-stu-id="1ded8-209">The execution log contains information about the results of the comparison of the generated file with the configured baseline.</span></span> <span data-ttu-id="1ded8-210">Protokol označuje, že vygenerovaný soubor a směrný plán jsou stejné, přestože spuštěný formát obsahuje vazbu k zadání neustále se měnící hodnoty data a času v odchozím souboru.</span><span class="sxs-lookup"><span data-stu-id="1ded8-210">The log indicates that the generated file and the baseline are equal, even though the executed format contains the binding to enter a constantly changing date and time value in the outbound file.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1ded8-211">Přestože byl výstupní soubor vygenerován pomocí nastavení směrného plánu, které vynutí nahrazení vazeb formátu, neobdržíte žádná upozornění o náhradě.</span><span class="sxs-lookup"><span data-stu-id="1ded8-211">Although the outbound file has been generated by using baseline settings that force the replacement of the format's bindings, you don't receive any warnings about the replacement.</span></span>
+
+## <a name="exchange-baseline-settings-between-environments"></a><span data-ttu-id="1ded8-212">Výměna nastavení směrného plánu mezi prostředími</span><span class="sxs-lookup"><span data-stu-id="1ded8-212">Exchange baseline settings between environments</span></span>
+
+### <a name="export-baseline-settings"></a><span data-ttu-id="1ded8-213">Export nastavení směrného plánu</span><span class="sxs-lookup"><span data-stu-id="1ded8-213">Export baseline settings</span></span>
+
+<span data-ttu-id="1ded8-214">Nové možnosti ER umožňují exportovat nastavení směrného plánu pro vybraný formát ER z aktuálního prostředí a uložit je jako soubory XML.</span><span class="sxs-lookup"><span data-stu-id="1ded8-214">The new ER capabilities let you export baseline settings for the selected ER format from the current environment and store them as XML files.</span></span> 
+
+<span data-ttu-id="1ded8-215">Pokud chcete exportovat nastavení směrného plánu, na stránce **Směrné plány formátu elektrického výkaznictví** vyberte **Export**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-215">To export baseline settings, on the **Electronic reporting format baselines** page, select **Export**.</span></span>
+
+### <a name="import-baseline-settings"></a><span data-ttu-id="1ded8-216">Importovat základní nastavení</span><span class="sxs-lookup"><span data-stu-id="1ded8-216">Import baseline settings</span></span>
+
+<span data-ttu-id="1ded8-217">Exportované nastavení směrného plánu lze importovat do prostředí.</span><span class="sxs-lookup"><span data-stu-id="1ded8-217">Exported baseline settings can be imported into a different environment.</span></span> <span data-ttu-id="1ded8-218">Prostředí musí být nejprve importováno jako formát ER.</span><span class="sxs-lookup"><span data-stu-id="1ded8-218">The environment must first be imported as an ER format.</span></span> <span data-ttu-id="1ded8-219">Poté můžete importovat nastavení směrného plánu.</span><span class="sxs-lookup"><span data-stu-id="1ded8-219">You can then import the baseline settings.</span></span>
+
+<span data-ttu-id="1ded8-220">Pokud chcete importovat nastavení směrného plánu z lokálně uloženého souboru XML, na stránce **Směrné plány formátu elektronického výkaznictví** vyberte **Import** a potom po kliknutí na **Procházet** vyberte soubor XML.</span><span class="sxs-lookup"><span data-stu-id="1ded8-220">To import baseline settings from a locally stored XML file, on the **Electronic reporting format baselines** page, select **Import**, and then select **Browse** to select the XML file.</span></span>
+
+<span data-ttu-id="1ded8-221">![Dialogové okno Importovat základní nastavení](media/GER-BaselineSample-ImportBaseline1.PNG "Snímek obrazovky dialogového okna Import nastavení směrného plánu")</span><span class="sxs-lookup"><span data-stu-id="1ded8-221">![Import baseline settings dialog box](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot of the Import baseline settings dialog box")</span></span>
+
+<span data-ttu-id="1ded8-222">Chcete-li importovat nastavení směrného plánu ze souboru XML, který je uložen na serveru SharePoint společnosti Microsoft na základě aktuálního nastavení správy dokumentů a vybraného typu dokumentu, na stránce **Směrné plány formátu elektronického výkaznictví** vyberte možnost **Importovat ze zdroje**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-222">To import baseline settings from an XML file that is stored on the Microsoft SharePoint Server, based on the current Document management settings and the selected document type, on the **Electronic reporting format baselines** page, select **Import from source**.</span></span> <span data-ttu-id="1ded8-223">Pak vyberte typ dokumentu a soubor XML.</span><span class="sxs-lookup"><span data-stu-id="1ded8-223">Then select the document type and the XML file.</span></span> <span data-ttu-id="1ded8-224">Požadovaný typ dokumentu pro přístup do složky SharePoint musí být nakonfigurován předem.</span><span class="sxs-lookup"><span data-stu-id="1ded8-224">The required document type to access the SharePoint folder must be configured in advance.</span></span>
+
+<span data-ttu-id="1ded8-225">![Dialogové okno Importovat ze zdroje](media/GER-BaselineSample-ImportBaseline2.PNG "Snímek obrazovky dialogového okna Import ze zdroje")</span><span class="sxs-lookup"><span data-stu-id="1ded8-225">![Import from source dialog box](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot of the Import from source dialog box")</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1ded8-226">Pomocí záznamníku úkolů můžete zaznamenat postup pro výběr požadovaného typu dokumentu a název souboru v dialogovém okně **Importovat ze zdroje**.</span><span class="sxs-lookup"><span data-stu-id="1ded8-226">You can use Task recorder to record the steps for selecting the required document type and the file name in the **Import from source** dialog box.</span></span> <span data-ttu-id="1ded8-227">Tímto způsobem můžete ponechat požadované nastavení směrného plánu na serveru SharePoint a poté je automaticky importovat přehráním záznamu úkolu při spuštění automatizovaných testů pomocí nástroje Regression Suite Automation Tool.</span><span class="sxs-lookup"><span data-stu-id="1ded8-227">In this way, you can keep required baseline settings on SharePoint Server and then automatically import them by playing a task recording when you run automated tests by using the Regression Suite Automation Tool.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="1ded8-228">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="1ded8-228">Additional resources</span></span>
+
+- [<span data-ttu-id="1ded8-229">Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami</span><span class="sxs-lookup"><span data-stu-id="1ded8-229">Trace generated report results and compare them with baseline values</span></span>](er-trace-reports-compare-baseline.md)
+- [<span data-ttu-id="1ded8-230">Zdroje záznamníku úloh</span><span class="sxs-lookup"><span data-stu-id="1ded8-230">Task recorder resources</span></span>](../user-interface/task-recorder.md)
