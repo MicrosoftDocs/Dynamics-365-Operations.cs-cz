@@ -1,0 +1,56 @@
+---
+title: Odesílání faktur do systému workflow a porovnávání řádků příjemek produktů (preview)
+description: Toto téma vysvětluje proces odesílání importovaných faktur dodavatelů do systému workflow a párování zaúčtovaných řádků příjemek produktů s fakturami dodavatelů.
+author: abruer
+manager: AnnBe
+ms.date: 09/08/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.assetid: ''
+ms.search.region: Global
+ms.author: shpandey
+ms.search.validFrom: 2017-09-08
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440999"
+---
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a><span data-ttu-id="1a683-103">Odesílání faktur do systému workflow a porovnávání řádků příjemek produktů (preview)</span><span class="sxs-lookup"><span data-stu-id="1a683-103">Submit invoices to the workflow system and match product receipt lines (preview)</span></span>
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+<span data-ttu-id="1a683-104">Toto téma vysvětluje proces odesílání importovaných faktur dodavatelů do systému workflow a párování zaúčtovaných řádků příjemek produktů s fakturami dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="1a683-104">This topic explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.</span></span>
+
+## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a><span data-ttu-id="1a683-105">Odesílání importovaných faktur dodavatelů do systému workflowu a párování zaúčtovaných řádků příjemky produktu s nevyřízenými řádky faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="1a683-105">Submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines</span></span>
+
+<span data-ttu-id="1a683-106">V rámci bezobslužného procesu fakturace závazků můžete systém nechat automaticky odeslat importovanou fakturu do systému workflowu.</span><span class="sxs-lookup"><span data-stu-id="1a683-106">As part of a touchless Accounts payable invoicing process, you can have the system automatically submit an imported invoice to the workflow system.</span></span> <span data-ttu-id="1a683-107">Proces odesílání importovaných faktur do systému workflow můžete nakonfigurovat na kartě **Automatizace faktur dodavatele** stránky **Parametry závazků** (**Závazky \> Nastavení \> Parametry závazků**).</span><span class="sxs-lookup"><span data-stu-id="1a683-107">You can configure the process of submitting imported invoices to the workflow system on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).</span></span> <span data-ttu-id="1a683-108">Proces odeslání do pracovního postupu poběží na pozadí s frekvencí, kterou určíte (každou hodinu nebo každý den).</span><span class="sxs-lookup"><span data-stu-id="1a683-108">The submit-to-workflow process will run in the background, at a frequency that you specify (either hourly or daily).</span></span>
+
+<span data-ttu-id="1a683-109">Když automaticky odesíláte faktury do systému workflow, musíte začít s importovanou fakturou.</span><span class="sxs-lookup"><span data-stu-id="1a683-109">When you automatically submit invoices to the workflow system, you must begin with an imported invoice.</span></span> <span data-ttu-id="1a683-110">Aby fakturu bylo možné zpracovat od začátku až do konce bez ručního zásahu, musíte do konfigurace workflowu zahrnout automatizovanou úlohu zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="1a683-110">To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in the workflow configuration.</span></span> <span data-ttu-id="1a683-111">Do systému workflowu lze automaticky odesílat faktury, které souvisejí s nákupními objednávkami, a faktury, které obsahují kategorii zásobování bez nákupní objednávky a řádky, které nejsou na skladě.</span><span class="sxs-lookup"><span data-stu-id="1a683-111">Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system.</span></span> <span data-ttu-id="1a683-112">Faktury, které se zadávají ručně, je třeba ručně odeslat do systému workflow.</span><span class="sxs-lookup"><span data-stu-id="1a683-112">Invoices that are manually entered must be manually submitted to the workflow system.</span></span>
+
+<span data-ttu-id="1a683-113">Hodnota **Odeslal** v pracovním postupu je ID uživatele, které bylo zadáno pro úlohu na pozadí **Odeslat faktury dodavatele do pracovního postupu** na stránce **Automatizace procesů**.</span><span class="sxs-lookup"><span data-stu-id="1a683-113">The **Submitted by** value in the workflow is the user ID that was entered for the **Submit vendor invoices to workflow** background task on the **Process automation** page.</span></span> <span data-ttu-id="1a683-114">Uživatel, který má toto ID uživatele, bude moct podle potřeby vyvolat fakturu ze systému workflow.</span><span class="sxs-lookup"><span data-stu-id="1a683-114">The user who has that user ID will be able to recall the invoice from the workflow system as required.</span></span>
+
+## <a name="matching-posted-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a><span data-ttu-id="1a683-115">Párování příjemek produktů s řádky faktur, které používají třícestné párování</span><span class="sxs-lookup"><span data-stu-id="1a683-115">Matching posted product receipts to invoice lines that have a three-way matching policy</span></span>
+
+<span data-ttu-id="1a683-116">V rámci bezdotykových procesů fakturace závazků může systém automaticky přiřazovat zaúčtované příjemky produktům k řádkům faktur.</span><span class="sxs-lookup"><span data-stu-id="1a683-116">As part of a touchless Accounts payable invoicing process, the system can automatically match posted product receipts to invoice lines.</span></span> <span data-ttu-id="1a683-117">Pro tento úkol je třeba definovat zásadu třícestného párování.</span><span class="sxs-lookup"><span data-stu-id="1a683-117">A three-way matching policy must be defined for this task.</span></span> <span data-ttu-id="1a683-118">Tato funkce je k dispozici, pokud funkce **Automatizace faktur dodavatele** byla povolena na stránce **Správa funkcí**.</span><span class="sxs-lookup"><span data-stu-id="1a683-118">This feature is available if the **Vendor invoice automation** feature has been enabled on the **Feature management** page.</span></span>
+
+<span data-ttu-id="1a683-119">Proces poběží tak dlouho, dokud se spárované množství na příjemce produktu nebude rovnat množství na faktuře.</span><span class="sxs-lookup"><span data-stu-id="1a683-119">The process will run until the matched product receipt quantity equals the invoice quantity.</span></span> <span data-ttu-id="1a683-120">U tohoto procesu můžete určit maximální počet pokusů, které má systém na spárování příjemky produktu s řádkem faktury, než se tento proces označí jako neúspěšný.</span><span class="sxs-lookup"><span data-stu-id="1a683-120">As part of this process, you can specify the maximum number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed.</span></span> <span data-ttu-id="1a683-121">Tento proces poběží na pozadí každou hodinu nebo každý den.</span><span class="sxs-lookup"><span data-stu-id="1a683-121">The process will run in the background, either hourly or daily.</span></span> <span data-ttu-id="1a683-122">Proces automatizovaného párování můžete spustit jako součást procesu odesílání faktur do systému workflowu.</span><span class="sxs-lookup"><span data-stu-id="1a683-122">You can run the automated matching process as part of the process for submitting invoices to the workflow system.</span></span> <span data-ttu-id="1a683-123">Můžete ho rovněž spustit jako samostatný proces.</span><span class="sxs-lookup"><span data-stu-id="1a683-123">Alternatively, you can run it as a standalone process.</span></span> <span data-ttu-id="1a683-124">Nastavení procesu přiřazení příjemek produktů řádkám faktur se konfiguruje na kartě **Automatizace faktur dodavatele** stránky **Parametry závazků** (**Závazky \> Nastavení \> Parametry závazků**).</span><span class="sxs-lookup"><span data-stu-id="1a683-124">The settings for the match-product-receipts-to-invoice-lines process are configured on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).</span></span>
+
+<span data-ttu-id="1a683-125">Řádky faktur, které mají zásadu třícestného párování, kde je spárované množství příjemky menší než množství faktury, budou zahrnuty do automatizovaného procesu párování s příjemkami produktů.</span><span class="sxs-lookup"><span data-stu-id="1a683-125">Invoice lines that have a three-way matching policy, where the matched receipt quantity is less than the invoice quantity, will be included in the automated match-to-product-receipt process.</span></span>
+
+<span data-ttu-id="1a683-126">Chcete-li zobrazit stav **Poslední shoda** u faktur, které nejsou součástí procesu automatického odesílání do pracovního postupu, otevřete fakturu ze stránky **Faktury dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="1a683-126">To view the **Last match** status for invoices that aren't part of the automated submit-to-workflow process, open the invoice from the **Vendor invoices** page.</span></span> <span data-ttu-id="1a683-127">Při zobrazení faktury se aktualizují informace pro ověření spárování.</span><span class="sxs-lookup"><span data-stu-id="1a683-127">When you view the invoice, the matching validation information is updated.</span></span>
+
+<span data-ttu-id="1a683-128">Řádek faktury bude vyloučen z automatizovaného zpracování, pokud bude splněna některá z následujících podmínek:</span><span class="sxs-lookup"><span data-stu-id="1a683-128">An invoice line will be excluded from the automated processing if any of the following conditions are met:</span></span>
+
+- <span data-ttu-id="1a683-129">Hodnota **Stav shody automatického potvrzení** řádku faktury je **Selhalo**.</span><span class="sxs-lookup"><span data-stu-id="1a683-129">The **Automated receipt match status** value of the invoice line is **Failed**.</span></span>
+- <span data-ttu-id="1a683-130">Faktura se používá.</span><span class="sxs-lookup"><span data-stu-id="1a683-130">The invoice is being used.</span></span>
+- <span data-ttu-id="1a683-131">Faktura je v systému workflow.</span><span class="sxs-lookup"><span data-stu-id="1a683-131">The invoice is in the workflow system.</span></span>

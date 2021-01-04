@@ -1,0 +1,77 @@
+---
+title: Vyrovnání hlavní knihy
+description: Toto téma vysvětluje, jak používat stránku Vyrovnání hlavní knihy k vyrovnání transakcí hlavní knihy a stornování vyrovnání.
+author: mikefalkner
+manager: aolson
+ms.date: 09/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerTransSettlement
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: roschlom
+ms.search.validFrom: 2018-11-30
+ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441069"
+---
+# <a name="ledger-settlements"></a><span data-ttu-id="31a7a-103">Vyrovnání hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="31a7a-103">Ledger settlements</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="31a7a-104">Vyrovnání hlavní knihy vám umožňují spárovat transakce Má dáti a Dal v hlavní knize, a označit je jako vyrovnané.</span><span class="sxs-lookup"><span data-stu-id="31a7a-104">Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled.</span></span> <span data-ttu-id="31a7a-105">Tímto způsobem můžete zajistit, že související transakce budou vyrovnány.</span><span class="sxs-lookup"><span data-stu-id="31a7a-105">In this way, you can make sure that related transactions have been cleared.</span></span> <span data-ttu-id="31a7a-106">Pokud byla provedena omylem, můžete také vyrovnání stornovat.</span><span class="sxs-lookup"><span data-stu-id="31a7a-106">You can also reverse settlements if they were made by mistake.</span></span>
+
+## <a name="enable-advanced-ledger-settlements"></a><span data-ttu-id="31a7a-107">Povolit pokročilá vyrovnání hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="31a7a-107">Enable advanced ledger settlements</span></span>
+
+<span data-ttu-id="31a7a-108">Stránka pokročilých vyrovnání hlavní knihy poskytuje další možnosti filtrování a výběru transakcí.</span><span class="sxs-lookup"><span data-stu-id="31a7a-108">The advanced ledger settlements page provides additional capabilities for filtering and selecting transactions.</span></span> <span data-ttu-id="31a7a-109">Chcete-li povolit pokročilá vyrovnání hlavní knihy, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="31a7a-109">To enable advanced ledger settlements page, follow these steps.</span></span>
+
+1. <span data-ttu-id="31a7a-110">Zvolte **Hlavní kniha** \> **Nastavení hlavní knihy** \> **Parametry hlavní knihy**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-110">Select **General ledger** \> **Ledger setup** \> **General ledger parameters**.</span></span> 
+2. <span data-ttu-id="31a7a-111">Na kartě **Vyrovnání hlavní knihy** nastavte možnost **Rozšířené vyrovnání hlavní knihy** na **Ano**, čímž zapnete funkci rozšířeného vyrovnání hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="31a7a-111">On the **Ledger settlements** tab, set the **Advanced ledger settlement** option to **Yes** to turn on the advanced ledger settlement functionality.</span></span> <span data-ttu-id="31a7a-112">Stránka **Pokročilé vyrovnání hlavní knihy** se použije tehdy, když zvolíte **Vyrovnání hlavní knihy** v možnosti **Periodické úlohy**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-112">The advanced **Ledger settlements** page will be used when you select **Ledger settlements** in the **Periodic tasks**.</span></span> 
+3. <span data-ttu-id="31a7a-113">Je nutné zadat seznam účtů, které se použijí pro vyrovnání hlavní knihy pro každou účtovou osnovu.</span><span class="sxs-lookup"><span data-stu-id="31a7a-113">You must enter the list of accounts to use for ledger settlements for each chart of accounts.</span></span> <span data-ttu-id="31a7a-114">Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-114">This list is used to filter the list of transactions that appears on the **Ledger settlements** page.</span></span> <span data-ttu-id="31a7a-115">V seznamu **Účtové osnovy** vyberte účtovou osnovu a poté vyberte **Nový** pro přidání nových účtů do seznamu.</span><span class="sxs-lookup"><span data-stu-id="31a7a-115">In the **Chart of accounts** list, select a chart of accounts, and then select **New** to add new accounts to the list.</span></span>
+
+## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a><span data-ttu-id="31a7a-116">Vyrovnání transakcí pomocí stránky pokročilého vyrovnání hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="31a7a-116">Settle transactions by using the advanced ledger settlements page</span></span>
+
+<span data-ttu-id="31a7a-117">Chcete-li vyrovnat transakce, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="31a7a-117">To settle ledger transactions, follow these steps.</span></span>
+
+1. <span data-ttu-id="31a7a-118">Zvolte **Hlavní kniha** \> **Periodické úlohy** \> **Vyrovnání hlavní knihy**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-118">Select **General ledger** \> **Periodic tasks** \> **Ledger settlements**.</span></span>
+2. <span data-ttu-id="31a7a-119">Nastavte filtry v horní části stránky:</span><span class="sxs-lookup"><span data-stu-id="31a7a-119">Set the filters at the top of the page:</span></span>
+
+    - <span data-ttu-id="31a7a-120">Vyberte rozsah dat nebo zvolte **Kód časového intervalu** pro automatické vyplnění časového rozsahu.</span><span class="sxs-lookup"><span data-stu-id="31a7a-120">Select a date range, or select **Date interval code** to automatically fill in the date range.</span></span>
+    - <span data-ttu-id="31a7a-121">Změňte účtovací vrstvu podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="31a7a-121">Change the posting layer as you require.</span></span>
+    - <span data-ttu-id="31a7a-122">Chcete-li zobrazit hlavní knihu a dimenze zvlášť, vyberte sadu finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="31a7a-122">To show the ledger account and dimensions separately, select a financial dimension set.</span></span>
+
+3. <span data-ttu-id="31a7a-123">Vyberte **Zobrazit transakce** k zobrazení všech transakcí, které odpovídají nastaveným filtrům a seznamu účtů, které jste uvedli při nastavení účtové osnovy v předchozí části.</span><span class="sxs-lookup"><span data-stu-id="31a7a-123">Select **Display transactions** to show all the transactions that match the filters that you set and the list of accounts that you specified when you set up the chart of accounts list in the previous section.</span></span> <span data-ttu-id="31a7a-124">Pokud změníte jakýkoliv z filtrů nebo sad dimenzí, je nutné vybrat možnost **Zobrazit transakce** znovu.</span><span class="sxs-lookup"><span data-stu-id="31a7a-124">If you change any of the filters or the dimension sets, you must select **Display transactions** again.</span></span>
+4. <span data-ttu-id="31a7a-125">Vyberte jeden nebo více řádků, které máte v plánu vyrovnat.</span><span class="sxs-lookup"><span data-stu-id="31a7a-125">Select one or more lines that you're considering for settlement.</span></span> <span data-ttu-id="31a7a-126">Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.</span><span class="sxs-lookup"><span data-stu-id="31a7a-126">The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.</span></span>
+5. <span data-ttu-id="31a7a-127">Po dokončení výběru transakcí vyberte **Označit vybrané**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-127">After you've finished selecting transactions, select **Mark selected**.</span></span> <span data-ttu-id="31a7a-128">Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci.</span><span class="sxs-lookup"><span data-stu-id="31a7a-128">A check mark appears in the **Marked** column for each transaction that you selected.</span></span> <span data-ttu-id="31a7a-129">Kromě toho se hodnota pole **Označená částka** nad mřížkou zvyšuje nebo snižuje o celkovou částku na označených řádcích.</span><span class="sxs-lookup"><span data-stu-id="31a7a-129">Additionally, the value of the **Marked amount** field above the grid increases or decreases by the total amount on the lines that you marked.</span></span>
+6. <span data-ttu-id="31a7a-130">Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Vyrovnat označené transakce**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-130">When the **Marked amount** value is **0** (zero), select **Settle marked transactions**.</span></span> <span data-ttu-id="31a7a-131">Stav označených transakcí je aktualizován na **Vyrovnáno**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-131">The status of the marked transactions is updated to **Settled**.</span></span>
+
+## <a name="make-transactions-easier-to-find"></a><span data-ttu-id="31a7a-132">Snadnější vyhledání transakcí</span><span class="sxs-lookup"><span data-stu-id="31a7a-132">Make transactions easier to find</span></span>
+
+<span data-ttu-id="31a7a-133">Stránka **Vyrovnání hlavní knihy** obsahuje možnosti, které usnadňují zobrazení transakcí, které potřebujete pro vyrovnání.</span><span class="sxs-lookup"><span data-stu-id="31a7a-133">The **Ledger settlements** page includes capabilities that make it easier to see the transactions that you need for settlement.</span></span>
+
+- <span data-ttu-id="31a7a-134">Tlačítko **Zrušit označení vybraných** vymaže pole **Označené** pro všechny řádky, které jsou vybrány.</span><span class="sxs-lookup"><span data-stu-id="31a7a-134">The **Unmark selected** button clears the **Marked** field for all lines that are selected.</span></span>
+- <span data-ttu-id="31a7a-135">Filtr **Označené** vám umožňuje filtrovat transakce podle toho, zda je pole **Označené** pro danou položku vybráno nebo odznačeno.</span><span class="sxs-lookup"><span data-stu-id="31a7a-135">The **Marked** filter lets you filter transactions based on whether the **Marked** field for them is selected or cleared.</span></span>
+- <span data-ttu-id="31a7a-136">Filtr **Stav** vám umožňuje filtrovat transakce podle toho, zda je jejich stav **Vyrovnáno** nebo **Nevyrovnáno**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-136">The **Status** filter lets you filter transactions based on whether their status is **Settled** or **Not settled**.</span></span>
+- <span data-ttu-id="31a7a-137">Tlačítko **Třídit podle absolutní částky** umožňuje seřadit částky podle absolutní hodnoty, abyste mohli seskupit dohromady položky Má dáti a Dal, které mají stejnou částku.</span><span class="sxs-lookup"><span data-stu-id="31a7a-137">The **Sort by absolute amount** button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.</span></span>
+
+## <a name="reverse-a-settlement"></a><span data-ttu-id="31a7a-138">Stornování vyrovnání</span><span class="sxs-lookup"><span data-stu-id="31a7a-138">Reverse a settlement</span></span>
+
+<span data-ttu-id="31a7a-139">Omylem provedené vyrovnání lze stornovat.</span><span class="sxs-lookup"><span data-stu-id="31a7a-139">You can reverse a settlement that was made by mistake.</span></span>
+
+1. <span data-ttu-id="31a7a-140">Proveďte kroky 1 až 3 v části „Vyrovnání transakcí pomocí stránky pokročilých vyrovnání hlavní knihy“ k zobrazení transakcí, které hledáte.</span><span class="sxs-lookup"><span data-stu-id="31a7a-140">Follow steps 1 through 3 in the "Settle transactions by using advanced ledger settlements page" section to show the transactions that you're looking for.</span></span>
+2. <span data-ttu-id="31a7a-141">Ve filtru **Stav** vyberte možnost **Vyrovnáno**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-141">In the **Status** filter, select **Settled**.</span></span>
+3. <span data-ttu-id="31a7a-142">Vyberte jeden nebo více řádků, které máte v plánu stornovat.</span><span class="sxs-lookup"><span data-stu-id="31a7a-142">Select one or more lines that you're considering for reversal.</span></span> <span data-ttu-id="31a7a-143">Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.</span><span class="sxs-lookup"><span data-stu-id="31a7a-143">The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.</span></span>
+4. <span data-ttu-id="31a7a-144">Po dokončení výběru transakcí vyberte **Označit vybrané**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-144">After you've finished selecting transactions, select **Mark selected**.</span></span> <span data-ttu-id="31a7a-145">Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci.</span><span class="sxs-lookup"><span data-stu-id="31a7a-145">A check mark appears in the **Marked** column for each transaction that you selected.</span></span> <span data-ttu-id="31a7a-146">Kromě toho se hodnota pole **Označená částka** v horní části stránky zvyšuje nebo snižuje o celkovou částku na označených řádcích.</span><span class="sxs-lookup"><span data-stu-id="31a7a-146">Additionally, the value of the **Marked amount** field at the top of the page increases or decreases by the total amount on the lines that you marked.</span></span>
+5. <span data-ttu-id="31a7a-147">Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Stornovat označené transakce**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-147">When the **Marked amount** value is **0** (zero), select **Reverse marked transactions**.</span></span> <span data-ttu-id="31a7a-148">Stav označených transakcí je aktualizován na **Nevyrovnáno**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-148">The status of the marked transactions is updated to **Not settled**.</span></span>
+
+## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a><span data-ttu-id="31a7a-149">Aktualizace seznamů účtů, které jsou zahrnuty v seznamu transakcí</span><span class="sxs-lookup"><span data-stu-id="31a7a-149">Update the list of accounts that are included in the list of transactions</span></span>
+
+<span data-ttu-id="31a7a-150">Vyberte **Účty vyrovnání hlavní knihy** pro otevření dialogového okna, ve kterém můžete upravit účty zahrnuté v seznamu transakcí.</span><span class="sxs-lookup"><span data-stu-id="31a7a-150">Select **Ledger settlement accounts** to open a dialog box where you can edit the accounts that are included in the list of transactions.</span></span> <span data-ttu-id="31a7a-151">Zvolte **Nový** pro přidání nových účtů do seznamu.</span><span class="sxs-lookup"><span data-stu-id="31a7a-151">Select **New** to add new accounts to the list.</span></span> <span data-ttu-id="31a7a-152">Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**.</span><span class="sxs-lookup"><span data-stu-id="31a7a-152">This list is used to filter the list of transactions that appears on the **Ledger settlements** page.</span></span>
