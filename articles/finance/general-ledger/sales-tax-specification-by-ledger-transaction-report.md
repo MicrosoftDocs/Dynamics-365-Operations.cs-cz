@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 438a640124e778b839c660f5e161efa22c319af0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976084"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441008"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Specifikace DPH podle sestavy transakce hlavní knihy
 [!include [banner](../includes/banner.md)]
@@ -49,9 +49,9 @@ Při generování sestavy jsou k dispozici následující výchozí pole. Tato p
 | Hlavní účet               | Pomocí polí v sekcích **Od** a **Do** definujte rozsah hlavních účtů. |
 | Kód DPH             | Pomocí polí v sekcích **Od** a **Do** definujte rozsah kódů DPH. |
 | Seskupení                   | Vyberte, zda má být sestava seskupena podle účtu hlavní knihy nebo kódu DPH. |
-| Mezisoučet podle kódu DPH/DPH | Chcete-li zobrazit mezisoučty podle kódu DPH, nastavte tuto možnost na hodnotu **Ano** . |
-| Pouze součty                | Chcete-li zobrazit pouze součty, nastavte tuto možnost na hodnotu **Ano** . |
-| Pouze hlavní účty         | Chcete-li do sestavy zahrnout pouze hlavní účty, nastavte tuto možnost na hodnotu **Ano** . |
+| Mezisoučet podle kódu DPH/DPH | Chcete-li zobrazit mezisoučty podle kódu DPH, nastavte tuto možnost na hodnotu **Ano**. |
+| Pouze součty                | Chcete-li zobrazit pouze součty, nastavte tuto možnost na hodnotu **Ano**. |
+| Pouze hlavní účty         | Chcete-li do sestavy zahrnout pouze hlavní účty, nastavte tuto možnost na hodnotu **Ano**. |
 
 ## <a name="showing-only-non-tax-accounts-on-the-report"></a>Zobrazení pouze nedaňových účtů v sestavě
 

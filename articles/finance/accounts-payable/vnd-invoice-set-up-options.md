@@ -4,7 +4,7 @@ description: Toto téma popisuje možnosti dostupné pro nastavení a konfigurac
 author: abruer
 manager: AnnBe
 ms.date: 10/16/2020
-ms.topic: articl
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c3ee1112a409f87fdb433d5d43442a858dbd1798
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: ebab41d8b7697f20095d6d4654718b88c8b08a82
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022583"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665191"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Možnosti nastavení pro automatizaci faktur dodavatele
 
@@ -31,11 +31,11 @@ ms.locfileid: "4022583"
 Toto téma popisuje možnosti dostupné pro nastavení a konfiguraci automatizace faktur dodavatele. Funkce automatizace faktur používají následující typy parametrů nastavení:
 
 - Parametry pro odesílání importovaných faktur dodavatelů do systému workflowu a párování zaúčtovaných řádků příjemky produktu s nevyřízenými řádky faktury dodavatele.
-- Parametry pro úlohy automatizace procesů na pozadí. Systém automatizace procesů se používá k odeslání importovaných faktur dodavatele do systému workflow. Používá se také k automatickému přiřazování zaúčtovaných řádků účtů produktu k nevyřízeným řádkům faktur dodavatelů. Různé obchodní procesy používají tento systém k definování, jak často vybraný proces poběží. Dostupné frekvence pro procesy na pozadí **Přiřadit příjemky produktů k řádkům faktury** a **Odeslat faktury dodavatele do pracovního postupu** zahrnují **Hodina** a **Denně**.
+- Parametry pro úlohy automatizace zpracování na pozadí. Systém automatizace procesů se používá k odeslání importovaných faktur dodavatele do systému workflow. Používá se také k automatickému přiřazování zaúčtovaných řádků příjmů produktů k čekajícím řádkům faktur dodavatele a k provádění ověření shody faktur u ručních faktur, které byly automaticky přiřazeny k řádkům příjmů produktů. Různé obchodní procesy používají tento systém k definování, jak často vybraný proces poběží. Dostupné frekvence pro procesy na pozadí **Přiřadit příjemky produktů k řádkům faktury** a **Odeslat faktury dodavatele do pracovního postupu** zahrnují **Hodina** a **Denně**.
 
 Chcete-li nastavit nebo zobrazit informace o úloze na pozadí, přejděte na **Správa systému \> Nastavení \> Automatizace procesů** a vyberte kartu **Úloha na pozadí**.
 
-Chcete-li dosáhnout bezdotykové automatizace z procesu importu prostřednictvím zaúčtování faktur dodavatele, musíte nastavit pracovní postup pro fakturu dodavatele. Pracovní postup nastavíte tak, že přejděte na **Závazky > Nastavení > Workflow závazků**. Aby fakturu bylo možné zpracovat od začátku až do konce bez ručního zásahu, musíte do své konfigurace workflowu zahrnout automatizovanou úlohu zaúčtování. .
+Chcete-li dosáhnout bezdotykové automatizace z procesu importu prostřednictvím zaúčtování faktur dodavatele, musíte nastavit pracovní postup pro fakturu dodavatele. Pracovní postup nastavíte tak, že přejděte na **Závazky > Nastavení > Workflow závazků**. Aby fakturu bylo možné zpracovat od začátku až do konce bez ručního zásahu, musíte do své konfigurace workflowu zahrnout automatizovanou úlohu zaúčtování.
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametry pro odesílání importovaných faktur dodavatelů do systému workflow
 
@@ -46,20 +46,20 @@ Pro odesílání importovaných faktur dodavatelů do systému workflow se použ
 
 K dispozici jsou následující parametry:
 
-- **Automaticky odesílat importované faktury do workflow** – Pokud nastavíte tuto možnost na **Ano** , importované faktury se budou automaticky odesílat do systému workflow. Pokud je tato možnost nastavena na **Ne** , faktury musí být předloženy ručně. Nastavením této možnosti na **Ano** povolíte bezdotykový proces importu výsledků prostřednictvím zaúčtování.
+- **Automaticky odesílat importované faktury do workflow** – Pokud nastavíte tuto možnost na **Ano**, importované faktury se budou automaticky odesílat do systému workflow. Pokud je tato možnost nastavena na **Ne**, faktury musí být předloženy ručně. Nastavením této možnosti na **Ano** povolíte bezdotykový proces importu výsledků prostřednictvím zaúčtování.
 
     Tuto možnost můžete nastavit na **Ano** pouze v případě, že je pro vaši právnickou osobu nastaven aktivní pracovní postup faktury dodavatele. Pracovní postup nastavíte tak, že přejděte na **Závazky \> Nastavení \> Workflow závazků**.
 
-- **Před automatickým odesláním přiřadit příjemky produktů k řádkům faktur** – Pokud tuto možnost nastavíte na **Ano** , importovanou fakturu nelze automaticky odeslat do systému workflow, dokud se množství přiřazené příjemky produktu nerovná množství na faktuře. Nastavením této možnosti na **Ano** povolíte automatické přiřazování zaúčtovaných příjemek produktů k řádkům faktur, pro které je definována zásada třícestného párování. Tento proces poběží tak dlouho, dokud se množství na přiřazené příjemce produktu nebude rovnat množství na faktuře. V tomto okamžiku se faktura automaticky odešle do systému workflow.
+- **Před automatickým odesláním přiřadit příjemky produktů k řádkům faktur** – Pokud tuto možnost nastavíte na **Ano**, importovanou fakturu nelze automaticky odeslat do systému workflow, dokud se množství přiřazené příjemky produktu nerovná množství na faktuře. Nastavením této možnosti na **Ano** povolíte automatické přiřazování zaúčtovaných příjemek produktů k řádkům faktur, pro které je definována zásada třícestného párování. Tento proces poběží tak dlouho, dokud se množství na přiřazené příjemce produktu nebude rovnat množství na faktuře. V tomto okamžiku se faktura automaticky odešle do systému workflow.
 
     Možnost „Před automatickým odesláním přiřadit příjemky produktů k řádkům faktur“ je k dispozici, pouze pokud je vybrána možnost **Povolit ověření párování faktur**. Pokud je vybrána tato možnost, je automaticky vybrána možnost **Automaticky přiřadit příjemky produktů k řádkům faktur**.
 
-- **Pro automatické odeslání do workflow vyžadovat, aby se vypočtené součty rovnaly importovaným součtům** – Pokud tuto možnost nastavíte na **Ano** , fakturu nelze automaticky odeslat do systému workflow, dokud se vypočítané součty pro fakturu nebudou rovnat importovaným součtům. Pokud je tato možnost nastavena na **Ne** , fakturu lze automaticky odeslat do systému workflow, ale nelze ji zaúčtovat, dokud nebudou vypočtené součty opraveny tak, aby odpovídaly importovaným součtům. Pokud neimportujete částku faktury nebo částku DPH, měla by být tato možnost nastavena na **Ne**.
-- **Automaticky přiřadit příjemky produktů k řádkům faktur** – Pokud tuto možnost nastavíte na **Ano** , zpracování na pozadí lze použít k automatickému párování zaúčtovaných příjemek produktů k řádkám faktur, pro které je definována zásada třícestného párování. Tento proces bude probíhat, dokud se množství přiřazené příjemky produktu nebude rovnat množství na faktuře nebo dokud nebude dosaženo hodnoty v poli **Počet pokusů o automatické přiřazení**. Proces lze spustit, dokud nebude faktura odeslána do systému workflow.
+- **Pro automatické odeslání do workflow vyžadovat, aby se vypočtené součty rovnaly importovaným součtům** – Pokud tuto možnost nastavíte na **Ano**, fakturu nelze automaticky odeslat do systému workflow, dokud se vypočítané součty pro fakturu nebudou rovnat importovaným součtům. Pokud je tato možnost nastavena na **Ne**, fakturu lze automaticky odeslat do systému workflow, ale nelze ji zaúčtovat, dokud nebudou vypočtené součty opraveny tak, aby odpovídaly importovaným součtům. Pokud neimportujete částku faktury nebo částku DPH, měla by být tato možnost nastavena na **Ne**.
+- **Automaticky přiřadit příjemky produktů k řádkům faktur** – Pokud tuto možnost nastavíte na **Ano**, zpracování na pozadí lze použít k automatickému párování zaúčtovaných příjemek produktů k řádkám faktur, pro které je definována zásada třícestného párování. Tento proces bude probíhat, dokud se množství přiřazené příjemky produktu nebude rovnat množství na faktuře nebo dokud nebude dosaženo hodnoty v poli **Počet pokusů o automatické přiřazení**. Proces lze spustit, dokud nebude faktura odeslána do systému workflow.
 
     Tato možnost je k dispozici, pouze pokud je vybrána možnost **Povolit ověření párování faktur**.
 
-    Pokud nastavíte možnost **Přiřadit příjemky produktů k řádkům faktur před automatickým párováním** na **Ano** , nelze tuto možnost nastavit na **Ne**. Pokud chcete tuto možnost nastavit na **Ne** , musíte nejprve nastavit možnost **Přiřadit příjemky produktů k řádkům faktur před automatickým párováním** na **Ne**.
+    Pokud nastavíte možnost **Přiřadit příjemky produktů k řádkům faktur před automatickým párováním** na **Ano**, nelze tuto možnost nastavit na **Ne**. Pokud chcete tuto možnost nastavit na **Ne**, musíte nejprve nastavit možnost **Přiřadit příjemky produktů k řádkům faktur před automatickým párováním** na **Ne**.
 
 - **Počet pokusů o automatické přiřazení** – U tohoto procesu můžete určit maximální počet pokusů, které má systém na spárování příjemky produktu s řádkem faktury, než se tento proces označí jako neúspěšný. Po dosažení zadaného počtu pokusů je faktura z automatizovaného zpracování odebrána.
-- **Ověřit pouze v případě, že se množství přiřazené příjemky produktu rovná množství na faktuře** – Pokud vyberete tuto možnost, párování faktur se automaticky ověří, pouze když se množství spárované příjemky produktu na řádku faktury rovná množství na řádku faktury. Pokud tato možnost není zaškrtnutá, párování faktur se ověřuje pokaždé, když systém automaticky přiřadí řádek příjemky produktu k řádku faktury.
+

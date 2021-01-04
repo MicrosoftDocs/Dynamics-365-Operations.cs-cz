@@ -16,11 +16,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 165552cade2a38d9605240ab6a8ff423585786ca
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899486"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441142"
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Vytvoření smlouvy bankovního zařízení pro záruční listinu
 

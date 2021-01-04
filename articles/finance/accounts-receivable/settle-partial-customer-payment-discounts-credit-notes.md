@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015000"
+ms.locfileid: "4441327"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Vyrovnat částečnou platbu odběratele, u níž jsou slevy pro dobropisy
 
@@ -51,11 +51,11 @@ Ze stránky **Transakce odběratele** Arnold otevře stránku **Vyrovnat transak
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
-- **Datum platební slevy** : 12. 7. 2015 
-- **Částka platební slevy** : -1,00     
-- **Použít platební slevu** : Normální    
-- **Přijatá platební sleva** : 0,00      
-- **Částka platební slevy k přijetí** : -1,00     
+- **Datum platební slevy**: 12. 7. 2015 
+- **Částka platební slevy**: -1,00     
+- **Použít platební slevu**: Normální    
+- **Přijatá platební sleva**: 0,00      
+- **Částka platební slevy k přijetí**: -1,00     
 
 Vyrovnání bude 100,00 a bude zahrnovat vyplacení 99,00 a slevu 1,00.
 

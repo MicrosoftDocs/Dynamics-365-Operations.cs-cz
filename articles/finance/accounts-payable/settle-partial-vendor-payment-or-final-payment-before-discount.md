@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006134"
+ms.locfileid: "4441319"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby dodavatele a plné vyrovnání konečné platby před datem slevy
 
@@ -64,7 +64,7 @@ April klepne na kartu **Platební sleva** a zobrazí tak částku slevy.
 | 25. 7. 2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Částečná platba 1. července pomocí stránky Transakce vyrovnání
-April můžete vytvořit deník plateb pro tuto platbu otevřením stránky **Deník plateb** na závazcích. Vytvoří nový deník a zadá řádek pro dodavatele 3064. Otevře stránku **Vyrovnat transakce** , aby mohla označit fakturu k vyrovnání. April označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **-500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **-10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **-5,05**. Proto April vyrovnává u této faktury částku -505,05.
+April můžete vytvořit deník plateb pro tuto platbu otevřením stránky **Deník plateb** na závazcích. Vytvoří nový deník a zadá řádek pro dodavatele 3064. Otevře stránku **Vyrovnat transakce**, aby mohla označit fakturu k vyrovnání. April označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **-500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **-10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **-5,05**. Proto April vyrovnává u této faktury částku -505,05.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -105,7 +105,7 @@ April zavře stránku **Vyrovnat transakce**. Řádky plateb pro 495,00 se vytvo
 | SLEV-10010 | Platební sleva    | 7/1/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>Zbývající částka zaplacená dne 8. července
-April zaplatí zbývající část faktury pro dodavatele 3064 8. července, tj. v období platební slevy. April vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **-5,00** , protože sleva 5,00 nebyla dříve využita.
+April zaplatí zbývající část faktury pro dodavatele 3064 8. července, tj. v období platební slevy. April vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **-5,00**, protože sleva 5,00 nebyla dříve využita.
 
 |  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|

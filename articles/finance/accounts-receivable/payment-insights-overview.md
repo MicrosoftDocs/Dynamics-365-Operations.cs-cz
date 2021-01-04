@@ -1,6 +1,6 @@
 ---
 title: Přehledy plateb odběratele (Preview)
-description: V tomto tématu je popsána funkce platebních přehledů, která pomáhá zlepšit pochopení typických způsobů plateb jednotlivých odběratelů a může identifikovat okolnosti, které opravňují ke spouštění procesů inkasa dříve, než jste provedli jiné operace.
+description: Toto téma popisuje funkci přehledů plateb, která pomáhá lépe porozumět typickým platebním praktikám jednotlivých zákazníků. Tato funkce vám pomůže identifikovat okolnosti, které ospravedlňují zahájení procesu inkasa dříve, než byste to udělali v ostatních případech.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773914"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644626"
 ---
 # <a name="customer-payment-insights-preview"></a>Přehledy plateb odběratele (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-V tomto tématu je popsána funkce platebních přehledů, která pomáhá zlepšit pochopení typických způsobů plateb jednotlivých odběratelů a může identifikovat okolnosti, které opravňují ke spouštění procesů inkasa dříve, než je možné provést jiné operace. 
+Toto téma popisuje funkci přehledů plateb, která pomáhá lépe porozumět typickým platebním praktikám jednotlivých zákazníků. Tato funkce vám pomůže identifikovat okolnosti, které ospravedlňují zahájení procesu inkasa dříve, než byste to udělali v ostatních případech. 
 
 ## <a name="overview"></a>Přehled
 
-Organizace často považují za náročné předvídat, kdy zákazník zaplatí faktury. Tento nedostatek přehledu vede k méně přesným prognózám toku hotovosti, procesům inkasa, které začínají příliš pozdě, a objednávek, které jsou vydány odběratelům, kteří mohou mít pro platbu výchozí nastavení. Toto téma popisuje, jak přehledy plateb (Preview) pomáhají organizacím předpovídat, kdy bude faktura zákazníka zaplacena, což pomáhá organizacím vytvořit strategie optimalizace, které zlepší pravděpodobnost včasného zaplacení. 
+Předvídat, kdy zákazník zaplatí faktury, může být náročné. Tento nedostatek přehledu vede k méně přesným prognózám toku hotovosti, procesům inkasa, které začínají příliš pozdě, a objednávek, které jsou vydány odběratelům, kteří mohou mít pro platbu výchozí nastavení. Přehledy plateb zákazníka (preview) pomáhá organizacím předpovědět, kdy dojde k zaplacení faktury zákazníkem. Tyto informace mohou organizacím pomoci vytvořit strategie inkasa, které zvyšují pravděpodobnost včasného zaplacení. 
 
 ## <a name="predictions"></a>Předpovědi
 
@@ -42,13 +42,13 @@ Předpovědi plateb umožní organizacím zlepšovat své obchodní procesy tím
 
 Pomocí modelu strojového učení, který vyplní historické faktury, platby a data odběratele, aplikace Přehledy plateb odběratelů (Preview) přesnější předpovídá, kdy odběratel zaplatí nevyřízenou fakturu.
 
-Pro každou otevřenou fakturu předpovídají Přehledy plateb zákazníka (Preview) tři pravděpodobnosti platby:
+Pro každou otevřenou fakturu mohou Přehledy plateb zákazníka (Preview) předpovědět tři pravděpodobnosti platby:
 
 -   Pravděpodobnost platby včas 
 -   Pravděpodobnost platby se zpožděním
 -   Pravděpodobnost platby s velkým zpožděním
 
-Chcete-li pomoci organizacím pochopit celkovou částku platby, kterou mohou očekávat od zákazníka v jednom ze tří intervalů, včas, se zpožděním a s velkým zpožděním, poskytuje aplikace Přehledy plateb odběratelů (Preview) také agregované zobrazení očekávaných plateb.
+Aplikace Přehledy plateb odběratelů (Preview) také poskytuje agregované zobrazení očekávaných plateb, což může pomoci organizacím pochopit celkovou částku platby, kterou mohou očekávat od zákazníka v jednom ze tří intervalů, včas, se zpožděním a s velkým zpožděním.
 
 [![Agregované zobrazení předpovědí platby](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 

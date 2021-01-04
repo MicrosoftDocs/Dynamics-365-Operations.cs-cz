@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497138"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441157"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
 

@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039839"
+ms.locfileid: "4441339"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Začněte s doplňkem elektronické fakturace
 
@@ -121,7 +121,7 @@ Během instalace RCS dokončíte tyto úlohy:
     ![Výběr parametru trezoru klíčů](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
 5. V podokně Akce vyberte možnost **Nový** a přidejte trezor klíčů.
-6. V poli **URI trezoru klíčů** zadejte hodnotu atributu **Název DNS** prostředku trezoru klíčů, který jste nakonfigurovali v Azure. Informace o tom, kde najít hodnotu **Název DNS** , najdete v části [Vytvořte účet Azure Storage a trezor klíčů](e-invoicing-create-azure-storage-account-key-vault.md).
+6. V poli **URI trezoru klíčů** zadejte hodnotu atributu **Název DNS** prostředku trezoru klíčů, který jste nakonfigurovali v Azure. Informace o tom, kde najít hodnotu **Název DNS**, najdete v části [Vytvořte účet Azure Storage a trezor klíčů](e-invoicing-create-azure-storage-account-key-vault.md).
 
     ![Pole URI trezoru klíčů](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
@@ -151,11 +151,11 @@ Pro doplněk elektronické fakturace můžete vytvořit různá prostředí, nap
 
     ![Pole účtu tokenu úložiště SAS](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
 
-4. Na pevné záložce **Uživatelé** vyberte **Nový** , chcete-li udělit uživatelům přístup k tomuto prostředí.
+4. Na pevné záložce **Uživatelé** vyberte **Nový**, chcete-li udělit uživatelům přístup k tomuto prostředí.
 
     ![Přidávání uživatelů služby](media/e-invoicing-services-get-started-enter-service-users.png)
 
-5. V podokně akcí vyberte **Publikovat** , chcete-li publikovat prostředí na serveru doplňku elektronické fakturace.
+5. V podokně akcí vyberte **Publikovat**, chcete-li publikovat prostředí na serveru doplňku elektronické fakturace.
 
     ![Tlačítko Publikovat](media/e-invoicing-services-get-started-publish-service-environment.png)
 
@@ -231,10 +231,10 @@ Pokud odeslaný fakturační dokument vyžaduje aktualizaci po reakci odeslání
 1. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**.
 2. Vyberte **Úložiště**.
 3. Vyberte **Globální prostředek** a potom vyberte **Otevřít**.
-4. Importujte **Model zprávy s odpovědí** , **Formát importu zprávy s odpovědí** , **Mapování modelu zprávy s odpovědí na místo určení** a **Formát importu obsahu souboru**.
+4. Importujte **Model zprávy s odpovědí**, **Formát importu zprávy s odpovědí**, **Mapování modelu zprávy s odpovědí na místo určení** a **Formát importu obsahu souboru**.
 5. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
 6. Na kartě **Elektronický dokument** vyberte **Přidat** k zadání názvu tabulky, která souvisí s fakturačním dokladem specifickým pro vaši zemi / region. Informace o tom, které názvy tabulek byste měli vybrat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
-7. Vyberte **Typy odpovědí** , chcete-li konfigurovat typy odpovědí. Informace o tom, které názvy tabulek byste měli vybrat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
+7. Vyberte **Typy odpovědí**, chcete-li konfigurovat typy odpovědí. Informace o tom, které názvy tabulek byste měli vybrat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
 
 ![Nastavení typů odpovědí](media/e-invoicing-services-get-started-set-up-response-types.png)
 
@@ -277,14 +277,14 @@ Obchodní dokumenty můžete odeslat ručně nebo na základě vašich požadavk
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu vždy nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
-3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz** , kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
+3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
 
 ![Dialogové okno Odeslat elektronické dokumenty](media/e-invoicing-services-get-started-submission-form.png)
 
 ### <a name="filter-query"></a>Dotaz filtru
 
-1. V dialogovém okně **Dotaz** na kartě **Rozsah** zadejte kritéria filtru pomocí polí **Tabulka** , **Odvozená tabulka** , **Pole** a **Kritéria**.
-2. Vyberte **Přidat** , chcete-li přidat tolik dalších kritérií, kolik potřebujete k výběru obchodních dokumentů.
+1. V dialogovém okně **Dotaz** na kartě **Rozsah** zadejte kritéria filtru pomocí polí **Tabulka**, **Odvozená tabulka**, **Pole** a **Kritéria**.
+2. Vyberte **Přidat**, chcete-li přidat tolik dalších kritérií, kolik potřebujete k výběru obchodních dokumentů.
 
     ![Nastavení kritérií filtru odeslání](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
 

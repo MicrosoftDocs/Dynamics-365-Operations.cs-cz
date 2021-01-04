@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176857"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441106"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
 
@@ -51,7 +51,7 @@ EPC, která zahrnuje evropské banky, vyvíjí obchodní a technické předlohy 
 Převod SEPA je platba od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Platby musí být v eurech a musí obsahovat mezinárodní číslo bankovního účtu (IBAN) a identifikační kód BIC (Bank Identifier Code) pro obě strany. (BIC je známý také jako kód Society for Worldwide Interbank Financial Telecommunication \[SWIFT\].) Kromě toho musí být náklady na transakce sdíleny mezi oběma stranami. Převody prováděné mezi stranami by měly používat soubory XML, které vyhovují normám zpracování plateb ISO 20022 a formátu XML, jak uvádí EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Jak je převod kreditu implementován?
-Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 Finance. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro a euro platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
+Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 Finance. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro euro se používají platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Jaké formáty převodu kreditu jsou aktuálně podporovány?
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
@@ -89,7 +89,7 @@ Seznam specifických parametrů závisí na formátu převodu kreditu. V násled
 </tr>
 <tr class="odd">
 <td>Formát</td>
-<td>Vyberte formát informací o úhradě v závislosti na požadavcích vaší země/regionu nebo banky:
+<td>Vyberte formát informací o úhradě v závislosti na požadavcích vaší země/oblasti nebo banky:
 <ul>
 <li><strong>Strukt.</strong> – Tuto možnost vyberte, chcete-li použít strukturovaný formát, když je jeden řádek platby vyrovnán proti jedné faktuře. Tato možnost není k dispozici pro formát exportu specifický pro zemi/oblast pro Francii, Německo nebo Nizozemsko.</li>
 <li><strong>Nestrukt.</strong> – Tuto možnost vyberte, chcete-li použít nestrukturovaný formát, když je platba vyrovnána proti několika fakturám. Čísla faktur pro vyrovnání faktur jsou zřetězeny a použity jako informace o úhradě. V souladu s pokyny ISO 20022 jsou nestrukturované informace o úhradě omezeny na 140 znaků.</li>

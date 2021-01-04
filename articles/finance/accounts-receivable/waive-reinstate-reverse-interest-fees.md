@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1b5c92d6f3bb0bdc3fbadc9708350b5107e6cf37
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188664"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441174"
 ---
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Vzdát, obnovit nebo změnit úrokové poplatky
 
@@ -61,7 +61,7 @@ Opravy můžete provádět pomocí tlačítka **Správná faktura** v podokně a
 
 Můžete použít ke stornování transakce odběratele na faktuře, pokud byla faktura vytvořena nesprávně. Pokud stornovaná transakce má úrok zahrnutý v oznámení úroků a oznámení úroků bylo zaúčtováno, úrok v transakci bude stornován v oznámení úroků. Oznámení úroků je zrušeno, pokud nebylo zaúčtováno. 
 
-Transakce odběratele můžete stornovat použitím tlačítka **Zpět**na stránce **Transakce odběratele**.
+Transakce odběratele můžete stornovat použitím tlačítka **Zpět** na stránce **Transakce odběratele**.
 
 ## <a name="waive-or-reinstate-interest-notes"></a>Odpuštění nebo opětovné nárokování oznámení úroků
 Můžete vzdát nebo znovu nárokovat všechny náklady na oznámení úroků, které vyberete. Když odpouštíte náklady, nesmí překročit celková odpuštěná částka žádný nastavený limit částek. Oznámení úroků lze obnovit pouze v případě, že dříve bylo odpuštěno. 

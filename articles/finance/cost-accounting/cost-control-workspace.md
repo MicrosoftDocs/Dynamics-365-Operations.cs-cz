@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38dc261a74eea9e45036961fdfecea1465b238de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977688"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441380"
 ---
 # <a name="cost-control-workspace"></a>Pracovní prostor řízení nákladů 
 
@@ -36,17 +36,17 @@ Pracovní prostor **Řízení nákladů** je centrálním místem, kde vedoucí 
 
 Nákladoví účetní mohou definovat tolik konfigurací sestav, kolik potřebují pro požadované složení nebo rozvržení dat. Konfigurace sestav obsahuje šest částí, z nichž každá přispívá k výběru složení cílových dat a rozvržení.
 
-Chcete-li nakonfigurovat pracovní prostor řízení nákladů, klikněte na **Nákladové účetnictví** \> **Nastavení** \> **Konfigurace pracovního prostoru řízení nákladů** .
+Chcete-li nakonfigurovat pracovní prostor řízení nákladů, klikněte na **Nákladové účetnictví** \> **Nastavení** \> **Konfigurace pracovního prostoru řízení nákladů**.
 
 ### <a name="general"></a>Obecné
 
-Na pevné záložce **Obecné** můžete vytvořit jedinečné rozvržení sestavy. Název sestavy bude jedinečný identifikátor, který uživatelé budou moci rozpoznat v pracovním prostoru **Řízení nákladů** . Můžete také určit, zda sestava bude sdílená nebo ponechána jako interní pro nákladové účetní.
+Na pevné záložce **Obecné** můžete vytvořit jedinečné rozvržení sestavy. Název sestavy bude jedinečný identifikátor, který uživatelé budou moci rozpoznat v pracovním prostoru **Řízení nákladů**. Můžete také určit, zda sestava bude sdílená nebo ponechána jako interní pro nákladové účetní.
 
 | Pole       | popis |
 |-------------|-------------|
 | Jméno        | Zadejte jedinečný název rozvržení. |
 | popis | Zadejte podrobný popis. |
-| Publikováno   | Pokud nastavíte toto pole na **Ano** , uživatel, kterému je přiřazena jedna z následujících rolí, může zobrazit sestavu v pracovním prostoru **Řízení nákladů** :<ul><li>Správce nákladového účetnictví</li><li>Nákladový účetní</li><li>Úředník na pozici nákladového účetního</li><li>Kontrolor objektu nákladů</li></ul>Pokud nastavíte toto pole na **No** , pouze uživatelé, kterým je přiřazena jedna z následujících rolí, může zobrazit sestavu v pracovním prostoru **Řízení nákladů** :<ul><li>Správce nákladového účetnictví</li><li>Nákladový účetní</li><li>Úředník na pozici nákladového účetního</li></ul> |
+| Publikováno   | Pokud nastavíte toto pole na **Ano**, uživatel, kterému je přiřazena jedna z následujících rolí, může zobrazit sestavu v pracovním prostoru **Řízení nákladů**:<ul><li>Správce nákladového účetnictví</li><li>Nákladový účetní</li><li>Úředník na pozici nákladového účetního</li><li>Kontrolor objektu nákladů</li></ul>Pokud nastavíte toto pole na **No**, pouze uživatelé, kterým je přiřazena jedna z následujících rolí, může zobrazit sestavu v pracovním prostoru **Řízení nákladů**:<ul><li>Správce nákladového účetnictví</li><li>Nákladový účetní</li><li>Úředník na pozici nákladového účetního</li></ul> |
 
 ### <a name="data-filtering"></a>Filtrování dat
 
@@ -54,7 +54,7 @@ Na pevné záložce **Filtrování dat** určete základ dat pro sestavu. Uživa
 
 | Pole                                                             | popis |
 |-------------------------------------------------------------------|-------------|
-| Hlavní kniha nákladového účetnictví                                            | **Hlavní kniha nákladového účetnictví** , na které je sestava založena. Hodnota je odvozena od pole **Jednotka řízení nákladů** . |
+| Hlavní kniha nákladového účetnictví                                            | **Hlavní kniha nákladového účetnictví**, na které je sestava založena. Hodnota je odvozena od pole **Jednotka řízení nákladů**. |
 | Jednotka řízení nákladů                                                 | Hodnota, kterou jste vybrali, určuje hlavní knihu nákladového účetnictví a objekty nákladů, na kterých je tato sestava založena. |
 | Hierarchie statistické dimenze, Hierarchie dimenze prvku nákladů | Záznam konfigurace pracovního prostoru **Řízení nákladů** může vykázat buď nepeněžní nebo peněžní hodnoty, nikoliv však ve stejném rozvržení. Vyberte hodnotu v poli **Hierarchie dimenze prvku nákladů** pro vykázání peněžních hodnot. Vyberte hodnotu v poli **Hierarchie statistické dimenze** pro vykázání nepeněžních hodnot. Zvolený záznam hierarchie dimenze určuje strukturu úrovně vykazování a agregace.<blockquote>[!NOTE]<br>Chcete-li zobrazit nefinanční a finanční hodnoty vedle sebe, můžete exportovat data do aplikace Microsoft Excel pro balíček obsahu Microsoft Power BI.</blockquote> |
 | Hierarchie dimenze objektu nákladů                                   | Vyberte hierarchii dimenze z dimenze objektu nákladů, který vyhovuje účelu vykazování, které definujete. |
@@ -63,7 +63,7 @@ Na pevné záložce **Filtrování dat** určete základ dat pro sestavu. Uživa
 
 ### <a name="assign-calculation-records"></a>Přiřazení záznamů výpočtů
 
-Výpočet režijních nákladů provádí několik kroků výpočtů na zdrojových datech, jako je například klasifikace chování nákladů, distribuce nákladů a přidělení nákladů. V případě, že byla objevena chybějící zdrojová data nebo je třeba aktualizovat pravidla, lze provést pro stejné fiskální období více výpočtů režijních nákladů. Každý výpočet režijních nákladů je uložen s jedinečným ID. Nákladový účetní může vybrat konkrétní ID výpočtu režijních nákladů. Uživatelé sestavy, jako je například vedoucí pracovníci, zobrazí výsledky výpočtu režijních nákladů v pracovním prostoru **Řízení nákladů** .
+Výpočet režijních nákladů provádí několik kroků výpočtů na zdrojových datech, jako je například klasifikace chování nákladů, distribuce nákladů a přidělení nákladů. V případě, že byla objevena chybějící zdrojová data nebo je třeba aktualizovat pravidla, lze provést pro stejné fiskální období více výpočtů režijních nákladů. Každý výpočet režijních nákladů je uložen s jedinečným ID. Nákladový účetní může vybrat konkrétní ID výpočtu režijních nákladů. Uživatelé sestavy, jako je například vedoucí pracovníci, zobrazí výsledky výpočtu režijních nákladů v pracovním prostoru **Řízení nákladů**.
 
 | Pole                  | popis |
 |------------------------|-------------|
@@ -76,7 +76,7 @@ Výpočet režijních nákladů provádí několik kroků výpočtů na zdrojov�
 
 Na pevné záložce **Fiskální období dle sloupce** se nákladový účetní rozhodne, které fiskálních období má být zobrazeno v rozvržení sestavy.
 
-Hodnoty ve vybraných sloupcích budou vynásobeny vybranými hodnotami na pevné záložce **Fiskální období dle sloupce** .
+Hodnoty ve vybraných sloupcích budou vynásobeny vybranými hodnotami na pevné záložce **Fiskální období dle sloupce**.
 
 | Pole                | popis |
 |----------------------|-------------|
@@ -106,24 +106,24 @@ Na pevné záložce **Sloupce k zobrazení rozpočtových nákladů** se nákla
 
 | Pole                     | popis |
 |---------------------------|-------------|
-| Rozpočet                    | Zůstatky rozpočtu budou zobrazeny podle zvolených sloupců.<blockquote>[!NOTE]<br>Zůstatky budou založeny na verzích rozpočtu, které jsou vybrané na pevné záložce **Filtrování dat** .</blockquote> |
+| Rozpočet                    | Zůstatky rozpočtu budou zobrazeny podle zvolených sloupců.<blockquote>[!NOTE]<br>Zůstatky budou založeny na verzích rozpočtu, které jsou vybrané na pevné záložce **Filtrování dat**.</blockquote> |
 | Odchylka rozpočtu           | Vypočítejte a zobrazte rozdíl mezi skutečným a rozpočtovým zůstatkem. Použije se následující vzorec:<br>Rozpočtový zůstatek – Skutečný zůstatek |
 | Odchylka rozpočtu v %      | Vypočítejte a zobrazte rozdíl v procentech mezi skutečným a rozpočtovým zůstatkem. Použije se následující vzorec:<br>(Rozpočtový zůstatek – Skutečný zůstatek) ÷ Rozpočtový zůstatek |
-| Práh období odchylky | Nastavte prahovou hodnotu pro odchylku peněžní částky za aktuální období. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů** .<blockquote>[!NOTE]<br>Toto pole se vztahuje pouze na prvky nákladů, které představují výdaje.</blockquote> |
-| Práh roku odchylky   | Nastavte prahovou hodnotu pro odchylku peněžní částky za rok. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů** . |
-| Práh odchylky v %      | Nastavte prahovou hodnotu pro odchylku v procentech. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů** .<blockquote>[!NOTE]<br>Stejná procentuální prahová hodnota platí pro aktuální období a rok.</blockquote> |
+| Práh období odchylky | Nastavte prahovou hodnotu pro odchylku peněžní částky za aktuální období. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>[!NOTE]<br>Toto pole se vztahuje pouze na prvky nákladů, které představují výdaje.</blockquote> |
+| Práh roku odchylky   | Nastavte prahovou hodnotu pro odchylku peněžní částky za rok. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**. |
+| Práh odchylky v %      | Nastavte prahovou hodnotu pro odchylku v procentech. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>[!NOTE]<br>Stejná procentuální prahová hodnota platí pro aktuální období a rok.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Pracovní prostor kontroly nákladů
 
 Pracovní prostor **Řízení nákladů** je navržen jako webová sestava. Proto všichni vedoucí pracovníci, kteří odpovídají za objekt nákladů, mohou získat přístup podle toho, jak je popsáno v [Definování přístupových práv pro kontrolory objektů nákladů](access-rights-cost-object-controller.md).
 
-Seznam sestav, které jsou k dispozici pro uživatele, jako jsou například vedoucí pracovníci, je řízen nastavením možnosti **Publikováno** na stránce **Konfigurace pracovního prostoru řízení nákladů** .
+Seznam sestav, které jsou k dispozici pro uživatele, jako jsou například vedoucí pracovníci, je řízen nastavením možnosti **Publikováno** na stránce **Konfigurace pracovního prostoru řízení nákladů**.
 
 ![Sestava, kterou uživatelé mohou zobrazit v pracovním prostoru řízení nákladů](./media/report-cost-control.png)
 
 Manažer může vybrat období fiskálního kalendáře, které chcete zobrazit. K určení výchozího aktuálního období se používá datum relace.
 
-Hodnoty v období fiskálního kalendáře jsou určeny podle názvu sestavy a fiskálního kalendáře zvoleného pro hlavní knihu nákladového účetnictví, která je přidružená k názvu sestavy na stránce **Konfigurace pracovního prostoru řízení nákladů** .
+Hodnoty v období fiskálního kalendáře jsou určeny podle názvu sestavy a fiskálního kalendáře zvoleného pro hlavní knihu nákladového účetnictví, která je přidružená k názvu sestavy na stránce **Konfigurace pracovního prostoru řízení nákladů**.
 
 V hierarchii dimenze objektu nákladů uživatelé mohou vybírat úroveň agregace, na které mají být zobrazeny zůstatky. Povolením zabezpečení na úrovni přístupu kontrolujete oprávnění, tak, aby uživatelé mohli zvolit pouze úrovně hierarchie, ke kterým jim byl udělen přístup. Proto mohou zobrazovat pouze agregované zůstatky, ke kterým jim byl udělen přístup.
 
@@ -133,7 +133,7 @@ Uživatelé mohou přizpůsobit sloupce v sestavě podle svých požadavků.
 
 ### <a name="view-details"></a>Zobrazit podrobnosti
 
-Uživatelé mohou procházet podrobnosti za zůstatky, které jsou zobrazeny v pracovním prostoru. Pokud uživatelé zvolí uzel hierarchie dimenze prvku nákladů a poté kliknou na možnost **Zobrazit podrobnosti** , ukáže dialogové okno **Podrobnosti prvku nákladů** podrobné informace o uzlu.
+Uživatelé mohou procházet podrobnosti za zůstatky, které jsou zobrazeny v pracovním prostoru. Pokud uživatelé zvolí uzel hierarchie dimenze prvku nákladů a poté kliknou na možnost **Zobrazit podrobnosti**, ukáže dialogové okno **Podrobnosti prvku nákladů** podrobné informace o uzlu.
 
 Mřížka ukazuje každý prvek nákladů, který je přidružen k uzlu hierarchie dimenze prvku nákladů, a jeho hodnoty. Sloupce, které se zobrazí v mřížce, odpovídají nastavení pracovního prostoru.
 
@@ -147,7 +147,7 @@ Uživatelé mohou kliknout na **Položky nákladů** a procházet podrobnosti po
 
 Například nájemné je výdaj rozdělený do nákladových středisek. Uživatel, který chce porozumět nákladům na nájemné, které musí nést jeho nákladové středisko, může procházet podrobnosti a vidět, jak bylo nájemné vypočítáno.
 
-Pokud uživatelé kliknou na volbu **Základ přidělení** na stránce **Položky nákladů** , zobrazí se dialogové okno. Uživatele mohou poté přiřadit základ přidělení k pravidlu a zobrazit odpovídající statistická měření, která jsou registrována pro období.
+Pokud uživatelé kliknou na volbu **Základ přidělení** na stránce **Položky nákladů**, zobrazí se dialogové okno. Uživatele mohou poté přiřadit základ přidělení k pravidlu a zobrazit odpovídající statistická měření, která jsou registrována pro období.
 
 V následujícím příkladu je základ přidělení typu **Základ přidělení vzorce** a je zobrazen vzorec. Jsou uvedeny koeficienty, které definují vzorec. Kromě toho mřížka zobrazí výpočet, který se provádí podle objektu nákladů.
 

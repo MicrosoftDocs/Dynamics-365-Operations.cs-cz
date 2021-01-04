@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000788"
+ms.locfileid: "4441316"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Pracovní prostor pro zadávání faktur dodavatele
 
@@ -57,7 +57,7 @@ Chcete-li zobrazit informace, které se zobrazily v pracovním prostoru, musíte
 
 ### <a name="company-selection"></a>Výběr společnosti
 
-Když je zapnutá funkce **Automatizovat faktury dodavatele** , pole **Společnost** se objeví v horní části pracovního prostoru. Výběr pole **Společnost** ovlivňuje všechny informace zobrazené v pracovním prostoru. Ve výchozím nastavení zobrazení obsahuje informace o společnosti, ke které jste se přihlásili. Výběrem jiné společnosti v poli **Společnost** můžete zobrazit informace o této společnosti v pracovním prostoru. Poté můžete vybrat dlaždici v pracovním prostoru a přejít na související stránku ve vybrané společnosti.
+Když je zapnutá funkce **Automatizovat faktury dodavatele**, pole **Společnost** se objeví v horní části pracovního prostoru. Výběr pole **Společnost** ovlivňuje všechny informace zobrazené v pracovním prostoru. Ve výchozím nastavení zobrazení obsahuje informace o společnosti, ke které jste se přihlásili. Výběrem jiné společnosti v poli **Společnost** můžete zobrazit informace o této společnosti v pracovním prostoru. Poté můžete vybrat dlaždici v pracovním prostoru a přejít na související stránku ve vybrané společnosti.
 
 ### <a name="summary-tiles"></a>Dlaždice souhrnu
 
@@ -70,9 +70,9 @@ Dlaždice v sekci **Souhrn nevyřízených faktur** v zobrazení **Moje práce**
 
 (Tyto čtyři dlaždice vyžadují, aby byla ve správě funkcí zapnuta funkce Automatizace faktur dodavatele.)
 
-Chcete-li použít dlaždici **Obnovit faktury dodavatele** , tato funkce musí být zapnutá v části Parametry závazků. Jděte na **Závazky \> Parametry závazků** a poté na kartě **Faktura** nastavte možnost **Povolit obnovení faktury dodavatele** na **Ano**.
+Chcete-li použít dlaždici **Obnovit faktury dodavatele**, tato funkce musí být zapnutá v části Parametry závazků. Jděte na **Závazky \> Parametry závazků** a poté na kartě **Faktura** nastavte možnost **Povolit obnovení faktury dodavatele** na **Ano**.
 
-Když je funkce zapnutá, v pracovním prostoru v sekci **Deníky** budou také seskupeny tři dlaždice. Dlaždice jsou pojmenovány **Deníky** , **Deníky – přiděleno mně** a **Evidence faktur**. 
+Když je funkce zapnutá, v pracovním prostoru v sekci **Deníky** budou také seskupeny tři dlaždice. Dlaždice jsou pojmenovány **Deníky**, **Deníky – přiděleno mně** a **Evidence faktur**. 
 
 Informace v sekci **Souhrn nevyřízených faktur** platí pro společnost, která je nastavena jako výchozí společnost pro vaše přihlášení.
 
@@ -86,7 +86,7 @@ Chcete-li vytvořit nový záznam faktury, vyberte **Nový** a potom vyberte jed
 - Registr faktur
 - Schválení faktury
 
-Všimněte si, že záznam, který vytvoříte, je založen na filtru společnosti, nikoli na společnosti, ke které jste přihlášeni. Například jste přihlášeni ke společnosti **UMSF** , ale filtr společnosti je nastaven na **GBSI**. V tomto případě, když vyberete **Nový** a poté v seznamu vyberete typ záznamu, záznam se vytvoří ve společnosti GBSI.
+Všimněte si, že záznam, který vytvoříte, je založen na filtru společnosti, nikoli na společnosti, ke které jste přihlášeni. Například jste přihlášeni ke společnosti **UMSF**, ale filtr společnosti je nastaven na **GBSI**. V tomto případě, když vyberete **Nový** a poté v seznamu vyberete typ záznamu, záznam se vytvoří ve společnosti GBSI.
 
 ### <a name="documents-not-invoiced-grids"></a>Mřížky nefakturovaných dokumentů
 
@@ -102,11 +102,11 @@ V mřížce **Hledání nákupní objednávky** můžete použít pole **Vyhled�
 
 ### <a name="related-information"></a>Související informace
 
-Informace o zaúčtovaných fakturách můžete zobrazit pomocí odkazů na pravé straně pracovního prostoru. Mezi tyto odkazy patří **Otevřené faktury dodavatele** , **Deník faktur** a **Historie faktur a podrobnosti párování**. V sekci **Prodejci** můžete přistupovat k filtrovanému seznamu, který obsahuje všechny pozastavené dodavatele, nebo můžete použít odkaz **Všichni prodejci**. Dostupné jsou také odkazy **Všechny nákupní objednávky** a **Otevřené zálohy**.
+Informace o zaúčtovaných fakturách můžete zobrazit pomocí odkazů na pravé straně pracovního prostoru. Mezi tyto odkazy patří **Otevřené faktury dodavatele**, **Deník faktur** a **Historie faktur a podrobnosti párování**. V sekci **Prodejci** můžete přistupovat k filtrovanému seznamu, který obsahuje všechny pozastavené dodavatele, nebo můžete použít odkaz **Všichni prodejci**. Dostupné jsou také odkazy **Všechny nákupní objednávky** a **Otevřené zálohy**.
 
 ### <a name="analytics--all-companies-page"></a>Stránka Analýza – všechny společnosti
 
-Když je možnost **Automaticky odesílat importované faktury do workflow** nastavena na **Ano** na stránce **Parametry závazků** , můžete si prohlédnout analýzy automatizace. Stránka **Analýza – všechny společnosti** poskytuje důležité metriky, například faktury dodavatele, které schvaluje schvalovatel a společnost. Tato stránka obsahuje pět stránek sestavy. Jedna stránka obsahuje přehled a další stránky poskytují podrobné informace o metrikách automatizace závazků.
+Když je možnost **Automaticky odesílat importované faktury do workflow** nastavena na **Ano** na stránce **Parametry závazků**, můžete si prohlédnout analýzy automatizace. Stránka **Analýza – všechny společnosti** poskytuje důležité metriky, například faktury dodavatele, které schvaluje schvalovatel a společnost. Tato stránka obsahuje pět stránek sestavy. Jedna stránka obsahuje přehled a další stránky poskytují podrobné informace o metrikách automatizace závazků.
 
 V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sestav.
 

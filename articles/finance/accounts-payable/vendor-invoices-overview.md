@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249111"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701669"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -52,7 +52,7 @@ Při otevření faktury dodavatele ze související nákupní objednávky se ř�
 
 - **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Přijmout nyní** na nákupní objednávce.
 - **Objednané množství** – tuto možnost použijte pro úplné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Objednáno** na nákupní objednávce.
-- **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci (určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
+- **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
 - **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Výchozí hodnota v poli **Množství** se převezme z celkového množství dostupných příjemek produktu.
 - **Registrované množství a služby** – tuto možnost použijte, pokud byla množství registrována v deníku doručených položek pro položky na skladě nebo položky, které nejsou na skladě. Tato možnost zahrnuje také služby bez ohledu na to, zda jsou registrovány.
 
@@ -112,15 +112,18 @@ Na stránku **Obnovit faktury dodavatele** budete mít přístup pouze v přípa
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Resetování stavu workflow pro faktury dodavatele z Bez možnosti obnovy na Koncept
 
-Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je stav faktury dodavatele **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept** výběrem možnosti **Obnovit**. Poté můžete upravit fakturu dodavatele. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetovat stav konceptu workflow faktury dodavatele** na stránce **Správa funkcí**.
+Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je stav faktury dodavatele **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept** výběrem možnosti **Obnovit**. Poté můžete upravit fakturu dodavatele. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetování stavu workflowu pro faktury dodavatele z Bez možnosti obnovy na Koncept** na stránce **Správa funkcí**.
 
 Na stránce **Historie workflowu** můžete resetovat stav workflow na **Koncept**. Tuto stránku můžete otevřít **Faktury dodavatele** nebo z navigace **Obecné > Dotazy > Workflow**. Chcete-li obnovit stav workflow na **Koncept**, vyberte možnost **Obnovit**. Stav workflow můžete také resetovat na koncept výběrem akce **Obnovit** na stránce **Faktura dodavatele** nebo **Čekající faktury dodavatele**. Po resetování stavu workflow na **Koncept** bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
 
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Zobrazení celkové fakturované částky na stránce Čekající faktury dodavatele
+Celkovou fakturovanou částku můžete zobrazit na stránce **Čekající faktury dodavatele** povolením parametru **Zobrazit součet faktur na seznamu čekajících faktur dodavatele vyřízení** na stránce **Parametry závazků**. 
 
 
-## <a name="additional-resources"></a>Další zdroje
 
-- [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
+## <a name="additional-resources"></a>Další prostředky
+
+- [Nastavit zásady faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
 - [Zadání dat faktur do systému závazků pomocí faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)

@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3dad006b486f7cd6714c713a3bd83a95fdf0d2b5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979631"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441063"
 ---
 # <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
 
@@ -31,18 +31,18 @@ Toto téma vysvětluje, jak nastavit kódy DPH. Kódy DPH se vytvoří pro každ
 
 Tento úkol využívá ukázkovou společnost USMF.
 
-1. Přejděte na **Navigační podokno > Daň > Nepřímé daně > DPH > Kódy DPH** .
-2. Zvolte **Nové** .
+1. Přejděte na **Navigační podokno > Daň > Nepřímé daně > DPH > Kódy DPH**.
+2. Zvolte **Nové**.
 3. V poli Kód **prodejní daně** zadejte hodnotu.
-4. Zadejte hodnotu do pole **Název** .
+4. Zadejte hodnotu do pole **Název**.
 5. Vyberte **Období vyrovnání** otevření rozbalovacího seznamu a určete, pro které finanční úřady a v jakých intervalech je tato DPH vykazována a zaplacena.
 6. Vyberte možnost **Skupina zaúčtování hl. knihy** a určete hlavní účty pro zaúčtování DPH do hlavní knihy.
-7. Rozbalte pevnou záložku **Výpočet** . Ta obsahuje několik polí určujících způsob výpočtu částky DPH. Vyplňte tato pole podle potřeby.  
-8. V **Podokně akcí** v horní části rozhraní vyberte **Kód DPH** .
-9. Vyberte **Hodnoty** .
-10. Zadejte hodnotu tohoto daňového kódu do sloupce **hodnota** .
+7. Rozbalte pevnou záložku **Výpočet**. Ta obsahuje několik polí určujících způsob výpočtu částky DPH. Vyplňte tato pole podle potřeby.  
+8. V **Podokně akcí** v horní části rozhraní vyberte **Kód DPH**.
+9. Vyberte **Hodnoty**.
+10. Zadejte hodnotu tohoto daňového kódu do sloupce **hodnota**.
     - Pokud je vybrána možnost Částka za jednotku, hodnota na pevné záložce **Výpočet** v poli Zdroj se vynásobí množstvím v transakci a vypočítá se částka DPH.  Pokud kód daně není daní na základě jednotky, hodnota je procentuální a použije se pro Původ pro tento kód daně k výpočtu částky DPH.     
-11. Zvolte **Uložit** .
+11. Zvolte **Uložit**.
 12. Zavřete stránku.
-13. Zvolte **Uložit** .
+13. Zvolte **Uložit**.
 

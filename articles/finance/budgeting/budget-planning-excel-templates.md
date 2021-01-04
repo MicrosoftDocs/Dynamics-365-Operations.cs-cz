@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772092"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441283"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
@@ -67,7 +67,7 @@ Na kartě **Návrh** klikněte na pole **Přidat** a pak vyberte **BudgetPlanHea
 
 Kurzor přejděte do požadovaného umístění v souboru aplikace Excel. Chcete-li přidat popisek pole do vybraného umístění, klikněte na tlačítko **Přidat popisek**. Chcete-li přidat pole hodnoty na vybrané místo, zvolte možnost **Přidat hodnotu**. Kliknutím na tlačítko **Hotovo** ukončíte návrháře.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Výběr možnosti Přidat hodnotu](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Výběr možnosti Přidat hodnotu](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Přidání vypočteného sloupce do tabulky šablony dokumentu plánu rozpočtu
 --------------------------------------------------------------
@@ -120,7 +120,7 @@ Doporučujeme šablonu uzamknout, abyste zabránili uživatelům v jejím uzavř
 
 Klikněte na šipku pro další nabídku. Vyberte **Uzamknout**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Volba zámku](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Volba zámku](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Můžu použít jiné funkce aplikace Excel, jako například formátování buněk, barvy, podmíněné formátování a grafy pro moje šablony plánu rozpočtu?
 

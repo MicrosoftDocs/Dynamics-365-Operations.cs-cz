@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976468"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441267"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
@@ -80,7 +80,7 @@ Ve finančním účetnictví se některé náklady, jako je například elektři
 
 ### <a name="step-1-process-the-cost-behavior-calculation"></a>Krok 1: Zpracování výpočtu chování nákladů
 
-Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované** . Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady** .
+Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované**. Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady**.
 
 #### <a name="define-the-cost-behavior-rule"></a>Definice pravidel chování nákladů
 

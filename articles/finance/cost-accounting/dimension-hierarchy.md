@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976444"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441074"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchie dimenzí
 
@@ -53,12 +53,12 @@ Hierarchii dimenzí lze vytvořit pro následující typy dimenzí:
 > [!NOTE]
 > - Můžete vytvořit několik hierarchií dimenzí pro stejnou dimenzi, pokud je zapotřebí různých perspektiv.
 > - Hierarchie dimenzí může být přidružena pouze k jedné dimenzi.
-> - Hierarchie dimenzí může mít neomezený počet úrovní ve své struktuře. Všechny úrovně budou dostupné v pracovním prostoru **Řízení nákladů** . Při použití aplikace Microsoft Excel nebo Microsoft Power BI pro účely vykazování je exportováno pouze prvních 15 úrovní hierarchie dimenzí. Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma.
+> - Hierarchie dimenzí může mít neomezený počet úrovní ve své struktuře. Všechny úrovně budou dostupné v pracovním prostoru **Řízení nákladů**. Při použití aplikace Microsoft Excel nebo Microsoft Power BI pro účely vykazování je exportováno pouze prvních 15 úrovní hierarchie dimenzí. Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma.
 > - Hierarchie dimenzí není platné od data. To znamená, že každá změna hierarchie dimenzí je okamžitě uložena do záznamu a nelze porovnávat datum před a datum po.
 
 ## <a name="dimension-hierarchy-type"></a>Typ hierarchie dimenzí
 
-Při vytvoření nové hierarchie dimenzí je nutné zvolit typ hierarchie. Přejděte na **Nákladové účetnictví** > **Dimenze** > **Hierarchie dimenzí** . Klikněte na **Nový** a vyberte typ hierarchie dimenzí. Můžete vybrat buď možnost **Hierarchie kategorizace dimenzí** nebo **Hierarchie klasifikace dimenzí** .
+Při vytvoření nové hierarchie dimenzí je nutné zvolit typ hierarchie. Přejděte na **Nákladové účetnictví** > **Dimenze** > **Hierarchie dimenzí**. Klikněte na **Nový** a vyberte typ hierarchie dimenzí. Můžete vybrat buď možnost **Hierarchie kategorizace dimenzí** nebo **Hierarchie klasifikace dimenzí**.
 
 ### <a name="dimension-categorization-hierarchy"></a>Hierarchie kategorizace dimenzí
 
@@ -75,7 +75,7 @@ Typ **Hierarchie klasifikace dimenzí** se používá k definování pravidel pr
 
 Hierarchie dimenzí je vytvořena jako stromové struktura, která má vztahy uzel a uzel listu.
 
--  Uzel může mít 1: _n_ dílčích uzlů.
+-  Uzel může mít 1:_n_ dílčích uzlů.
 -  Uzel nemůže mít k sobě přiřazené současně podřízené uzly a listové uzly.
 -  Uzel listu lze přiřadit pouze na nejnižší úroveň v hierarchii.
 
@@ -155,7 +155,7 @@ Hierarchii dimenzí pro zásady lze nastavit tak, jak je uvedeno zde.
 |&nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
 
 > [!NOTE]
-> Pod možností **Rozsahy členu dimenze** může uzel obsahovat rozsahy členu dimenze 1: _n_ . Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze. Tento postup dělá hierarchii odolnou do budoucna.  
+> Pod možností **Rozsahy členu dimenze** může uzel obsahovat rozsahy členu dimenze 1:_n_. Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze. Tento postup dělá hierarchii odolnou do budoucna.  
 
 ### <a name="copy-a-hierarchy"></a>Kopírování hierarchie
 
@@ -163,7 +163,7 @@ Aktuální hierarchii dimenzí můžete kopírovat jako výchozí bod pro novou 
 
 ### <a name="rearrange-nodes-in-a-hierarchy"></a>Změna uspořádání uzlů v hierarchii
 
-Uzel lze přesunout nahoru nebo dolů v rámci jeho aktuální úrovně ve struktuře. Tímto způsobem můžete změnit uspořádání pořadí uzlů pro vykazování v pracovním prostoru **Řízení nákladů** .
+Uzel lze přesunout nahoru nebo dolů v rámci jeho aktuální úrovně ve struktuře. Tímto způsobem můžete změnit uspořádání pořadí uzlů pro vykazování v pracovním prostoru **Řízení nákladů**.
 
 Přesun uzlu do nového umístění v hierarchii provedete volbou cílového uzlu. Existují dva způsoby přesunu uzlu:
 
@@ -296,7 +296,7 @@ Všichni manažeři budou potenciálně mít přístup k vysoce citlivým obchod
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | **Ano**               |
 
-V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé** . Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.
+V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé**. Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.
 
 |                 | Uživatelé            | Rozsahy členu dimenze   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
@@ -313,7 +313,7 @@ V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé** .
 > [!NOTE] 
 > Nákladoví účetní musí být přiřazeni do hierarchie nejvyšší úrovně, aby mohli nahlížet do všech položek nákladového účetnictví.
 
-Chcete-li povolit hierarchii seznamu přístupu a jeho nastavení zabezpečení, přejděte na **Nákladové účetnictví** > **Nastavení** > **Parametry** > **Obecné** . Zvolte parametr **Povolit přístup k zobrazení pro členy dimenze objektu nákladů** .
+Chcete-li povolit hierarchii seznamu přístupu a jeho nastavení zabezpečení, přejděte na **Nákladové účetnictví** > **Nastavení** > **Parametry** > **Obecné**. Zvolte parametr **Povolit přístup k zobrazení pro členy dimenze objektu nákladů**.
 
 Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zobrazených v následujících oblastech:
 

@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3904948"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441099"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur u naskenovaných dokumentů
 
@@ -66,13 +66,13 @@ Pro podrobné informace o datových balíčcích viz [Přehled správy dat](../.
 Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy, postupujte takto.
 
 1. Přihlaste se k instanci.
-1. Přejděte na **Závazky** > **Faktury** > **Otevřít faktury dodavatele** .
+1. Přejděte na **Závazky** > **Faktury** > **Otevřít faktury dodavatele**.
 1. Vytvořte faktury, které mají řádky a přílohy.
 
     > [!NOTE]
     > Přílohy musí být přílohy záhlaví. V současné době entita přílohy dokumentu dodavatelské faktury nepodporuje přílohy řádků.
 
-1. Otevřete pracovní prostor **Správa dat** .
+1. Otevřete pracovní prostor **Správa dat**.
 1. Vytvořte úlohu exportu, která obsahuje záhlaví faktury dodavatele, řádku faktury dodavatele a entity příloh dokumentu faktury dodavatele.
 1. Exportujte data.
 1. Stáhněte exportovaná data jako balíček. Nyní můžete balíček použít k importu dat do cílových instancí pro účely testování.
@@ -81,7 +81,7 @@ Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy
 
 Faktury importované pomocí datových balíčků lze přidružit k právnické osobě, ke které patří, dvěma způsoby:
 
-+ Úloha importu, která fakturu zpracovává, ji importuje do stejné společnosti, ve které byla úloha naplánována v pracovním prostoru **Správa dat** . Jinými slovy společnost úlohy určuje společnost, do které faktura patří.
++ Úloha importu, která fakturu zpracovává, ji importuje do stejné společnosti, ve které byla úloha naplánována v pracovním prostoru **Správa dat**. Jinými slovy společnost úlohy určuje společnost, do které faktura patří.
 + Při odeslání datového balíčku obsahujícího faktury do aplikace Finance může volající (tedy aplikace integrace běžící mimo Finance) explicitně zmínit ID společnosti v požadavku HTTP V tomto případě bude kontext společnosti, ve kterém je úloha zpracování spuštěná v modulu Finance, přepsán a faktury jsou importovány do společnosti, která byla předána v požadavku HTTP.
 
 > [!NOTE]
@@ -93,7 +93,7 @@ V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Opera
 
 ### <a name="exceptions-list-page"></a>Stránka seznamu výjimek
 
-Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat** . Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat** , kde můžete provést stejné akce, které jsou k dispozici ve funkci zpracování výjimky. Uživatelské rozhraní, které funkce zpracování výjimek poskytuje, je však optimalizováno pro funkčního uživatele.
+Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**. Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**, kde můžete provést stejné akce, které jsou k dispozici ve funkci zpracování výjimky. Uživatelské rozhraní, které funkce zpracování výjimek poskytuje, je však optimalizováno pro funkčního uživatele.
 
 ![Stránka seznamu výjimek](media/vendor_invoice_automation_02.png)
 
@@ -180,13 +180,13 @@ Tady jsou hlavní funkce, které poskytuje prohlížeč příloh:
 
 ### <a name="default-attachment"></a>Výchozí příloha
 
-Pokud faktura dodavatele má více než jednu přílohu, můžete nastavit jeden z dokumentů jako výchozí přílohu na stránce **Přílohy** . Možnost **Je výchozí příloha** je novou možností, která byla přidaná v rámci této funkce. Tato možnost je také vystavena v datové entitě Příloha dokumentu faktury dodavatele. Proto lze výchozí přílohu nastavit pomocí integrace.
+Pokud faktura dodavatele má více než jednu přílohu, můžete nastavit jeden z dokumentů jako výchozí přílohu na stránce **Přílohy**. Možnost **Je výchozí příloha** je novou možností, která byla přidaná v rámci této funkce. Tato možnost je také vystavena v datové entitě Příloha dokumentu faktury dodavatele. Proto lze výchozí přílohu nastavit pomocí integrace.
 
 Jako výchozí přílohu lze nastavit pouze jeden dokument. Po nastavení dokumentu jako výchozí přílohy se dokument automaticky zobrazí v prohlížeči příloh při otevření faktury. Pokud jako výchozí přílohu nenastavíte žádný dokument, v prohlížeči se při otevření faktury automaticky nezobrazí žádná příloha.
 
 ### <a name="showhide-invoice-attachments"></a>Zobrazit přílohy faktur
 
-Na stránkách **Zpracování výjimek** , **Čekající faktura** a **Deník faktur** je k dispozici nové tlačítko, které umožňuje zobrazit nebo skrýt prohlížeč příloh.
+Na stránkách **Zpracování výjimek**, **Čekající faktura** a **Deník faktur** je k dispozici nové tlačítko, které umožňuje zobrazit nebo skrýt prohlížeč příloh.
 
 ### <a name="security"></a>Zabezpečení
 
@@ -211,7 +211,7 @@ Následující funkční oprávnění poskytují přístup jen pro čtení a zá
 Následující role poskytují přístup jen pro čtení a zápis k prohlížeči příloh pro tyto akce:
 
 + **Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.
-+ **Úředník závazků** , **Manažer závazků** , **Úředník centralizovaných plateb závazků** a **Úředník plateb závazků** – Těmto rolím je přiřazeno funkční oprávnění Dotázat se na stav faktury dodavatele.
++ **Úředník závazků**, **Manažer závazků**, **Úředník centralizovaných plateb závazků** a **Úředník plateb závazků** – Těmto rolím je přiřazeno funkční oprávnění Dotázat se na stav faktury dodavatele.
 
 ### <a name="invoice-exception-details-page"></a>Stránka podrobností o výjimce faktury
 

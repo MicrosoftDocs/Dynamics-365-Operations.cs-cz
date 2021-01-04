@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039785"
+ms.locfileid: "4441335"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Začněte s doplňkem elektronické fakturace pro Itálii
 
@@ -55,7 +55,7 @@ Během instalace RCS dokončíte tyto úlohy:
 
 1. Přihlaste se k účtu RCS.
 2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **elektronická fakturace**.
-3. Na stránce **Funkce elektronické fakturace** vyberte **Import** , chcete-li importovat funkci elektronické fakturace z globálního úložiště.
+3. Na stránce **Funkce elektronické fakturace** vyberte **Import**, chcete-li importovat funkci elektronické fakturace z globálního úložiště.
 
     > [!NOTE]
     > Pokud nevidíte seznam dostupných funkcí, vyberte **Synchronizovat**. 
@@ -90,13 +90,13 @@ Při importu funkce **Export elektronických faktur (IT)** z globálního úlož
 
     ![Otevření stránky Návrhář formátu](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
-5. Použijte stránku **Návrhář formátů** , chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER.
+5. Použijte stránku **Návrhář formátů**, chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER.
 
     ![Stránka návrháře formátu](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Spravujte nastavení funkce elektronické fakturace
 
-- Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat** , **Odebrat** nebo **Upravit** ke správě nastavení funkcí elektronické fakturace.
+- Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat**, **Odebrat** nebo **Upravit** ke správě nastavení funkcí elektronické fakturace.
 
 ![Správa nastavení funkce elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
@@ -163,10 +163,10 @@ Během instalace Finance dokončíte tyto úlohy:
 
 ### <a name="import-the-er-data-model-data-model-mapping-and-formats"></a>Importujte datový model ER, mapování datového modelu a formáty
 
-1. V pracovním prostoru **Elektronické výkaznictví** , ověřte, že poskytovatel konfigurace **Služba obchodních dokumentů** je nastaven na **Aktivní**.
+1. V pracovním prostoru **Elektronické výkaznictví**, ověřte, že poskytovatel konfigurace **Služba obchodních dokumentů** je nastaven na **Aktivní**.
 2. Vyberte **Úložiště**.
 3. Vyberte **Globální prostředek \> Otevřít**.
-4. Importujte **Model faktury** , **Mapování modelu faktury** a **Kontextový model faktury zákazníka**.
+4. Importujte **Model faktury**, **Mapování modelu faktury** a **Kontextový model faktury zákazníka**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Zapněte funkci pro export elektronických faktur zákazníků pro Itálii
 
@@ -208,7 +208,7 @@ Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty 
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
-3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz** , kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
+3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
 
 ![Dialogové okno Odeslat elektronické dokumenty](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
@@ -228,7 +228,7 @@ Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty 
 Můžete si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty.
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
-2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka** nebo **Faktura projektu** , chcete-li filtrovat požadované elektronické dokumenty.
+2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka** nebo **Faktura projektu**, chcete-li filtrovat požadované elektronické dokumenty.
 
     ![Výběr typu dokumentu pro zobrazení protokolů odeslání](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 

@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: ec196600a54a2aed4565cf422dc386d6646ff524
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899635"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441021"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>Aktualizace složité entity bankovního deníku
 
@@ -40,7 +40,7 @@ Pomocí následujících kroků přidejte další pole BankTransactionType field
     -   Tabulka\\FázeŘádkuBankovníhoDeníku
 
 2.  Správa dat\\datové projekty
-    -   Vystavte typ **Bankovní transakce**v rozložení **Zdrojová data**.
+    -   Vystavte typ **Bankovní transakce** v rozložení **Zdrojová data**.
         -   Formát zdrojových dat = XML-Element
         -   Název entity = Bankovní deník
         -   Odeslaný datový soubor = SampleBankJournalCompositeEntity.xml nové verze

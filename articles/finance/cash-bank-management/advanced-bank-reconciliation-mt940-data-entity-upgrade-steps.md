@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899366"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441097"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity
 
@@ -55,7 +55,7 @@ Následující postup slouží k přidání importu bankovního výpisu entity p
             3.  Odeslaný datový soubor = Nová verze SampleBankJournalCompositeEntity.xml.
             4.  Kliknutím na možnost **Ano** přepíšete existující soubor.
             5.  Klikněte na **Ano**, pokud chcete generovat nové mapování.
-            6.  Ověřte, že je S**equenceNumber** mapováno.
+            6.  Ověřte, že je S **equenceNumber** mapováno.
                 -   Klepněte na tlačítko **Zobrazit mapu** na dokumentu výpisu entity.
                 -   Ověřte, že **SequenceNumber** je namapováno ze zdroje do fázování.
 

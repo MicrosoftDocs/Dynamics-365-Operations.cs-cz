@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006159"
+ms.locfileid: "4441321"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -186,7 +186,7 @@ Hierarchie dimenzí **Výkaz zisků a ztrát** musí být aktualizována novými
 | &nbsp;&nbsp;&nbsp;&nbsp;Primární náklady                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundární náklady                         | **SC-CC001**            | **SC-CC004**        |
 
-Vytvořte **Zásady shrnutí nákladů** , kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární**.
+Vytvořte **Zásady shrnutí nákladů**, kde je každé nákladové středisko je namapováno na odpovídající prvek nákladů typu **Sekundární**.
 
 **Zásady shrnutí nákladů**
 
@@ -223,9 +223,9 @@ Systém nyní použije **Zásady shrnutí nákladů** při vytváření **polož
 | 31. 01. 2017      | CC004       | Balení    | SC-CC004 | Balení | 15.717,25 |
 
 > [!NOTE]
-> Položky deníku jsou vytvořeny na základě pravidel v možnosti **Zásady shrnutí nákladů** , pokud zásady existují. Zobrazený zůstatek je zůstatek výpočtu režijních nákladů.
+> Položky deníku jsou vytvořeny na základě pravidel v možnosti **Zásady shrnutí nákladů**, pokud zásady existují. Zobrazený zůstatek je zůstatek výpočtu režijních nákladů.
 
-Stránka **Podrobnosti položky deníku zůstatku nákladů objektu nákladů** , ke které je přístup z položek deníku, zobrazuje, jakým způsobem se získá zůstatek.
+Stránka **Podrobnosti položky deníku zůstatku nákladů objektu nákladů**, ke které je přístup z položek deníku, zobrazuje, jakým způsobem se získá zůstatek.
 
 **Příklad: Položka deníku pro objekt nákladů CC002 Finance**
 
@@ -274,7 +274,7 @@ Následuje příklad výkazu Power Pivot v aplikaci Excel.
 
 Pomocí **zásad shrnutí nákladů** a **prvků nákladů sekundárního typ** můžete ponechat primární náklady na objektu nákladů pro interní sestavy jako primární náklady, které zbývají po **výpočtu režijních nákladů**.
 
-Pokud byste provedli stejný příklad bez vytvoření **zásad shrnutí nákladů** , výsledek vykazování by byl takový, jak je zobrazeno níže. Tok nákladů je správný, ale sledovatelnost a vhled do toku nákladů mezi nákladovými středisky se ztratí.
+Pokud byste provedli stejný příklad bez vytvoření **zásad shrnutí nákladů**, výsledek vykazování by byl takový, jak je zobrazeno níže. Tok nákladů je správný, ale sledovatelnost a vhled do toku nákladů mezi nákladovými středisky se ztratí.
 
 | **Výkaz zisků a ztrát** | **Objekt nákladů** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Celkem**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

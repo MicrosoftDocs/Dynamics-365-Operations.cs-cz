@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977808"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441173"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Správa ověření mezinárodního čísla bankovního účtu (IBAN)
 
@@ -32,14 +32,14 @@ Informace o struktuře kódu IBAN jsou uloženy v aplikaci Microsoft Dynamics 36
 
 ## <a name="set-up-iban-structures"></a>Nastavení struktur čísla IBAN
 
-1. Přejděte do **Pokladna a banka \> Nastavení \> IBAN struktury** .
+1. Přejděte do **Pokladna a banka \> Nastavení \> IBAN struktury**.
 2. Všimněte si, že IBAN struktury pro každou zemi nebo oblast byly vytvořeny automaticky.
 3. Pokud chcete přizpůsobit struktury pro konkrétní zemi nebo region, můžete je upravit.
 4. Definice struktury budou částí každé nové verze. Lze použít nabídku **Resetovat struktury** pro načtení nejnovějších definic po každé aktualizaci.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Ověření IBAN struktury v bankovním účtu
 
-1. Přejděte do části **Pokladna a banka \> Bankovní účty \> Bankovní účty** .
+1. Přejděte do části **Pokladna a banka \> Bankovní účty \> Bankovní účty**.
 2. Vytvořte bankovní účet.
 3. Na pevné kartě **Doplňkové informace** zadejte IBAN.
 

@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977880"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441028"
 ---
 # <a name="credit-management-setup"></a>Nastavení správy úvěrů 
 
@@ -28,7 +28,7 @@ ms.locfileid: "3977880"
 
 ## <a name="credit-management-workflows"></a>Workflow správy úvěrů
 
-Chcete-li definovat workflow, která se používají ke správě úprav limitů úvěrů, přejděte na **Úvěr a inkasa \> Nastavení \> Workflow správy úvěru** .
+Chcete-li definovat workflow, která se používají ke správě úprav limitů úvěrů, přejděte na **Úvěr a inkasa \> Nastavení \> Workflow správy úvěru**.
 
 - Můžete vytvořit workflow, které vám umožní schválit dávku úprav limitů úvěru pomocí jediného schválení.
 - Můžete přidat workflow na úrovni řádku, aby bylo možné schvalovat opravy limitů úvěrů jednotlivě.
@@ -60,9 +60,9 @@ Ve správě úvěrů je používáno několik typů důvodů:
 - Důvody uvolnění jsou přiřazeny k objednávce, když je uvolněna z blokování.
 - Důvody stavu označují, proč byl odběrateli přiřazen stav účtu.
 
-Důvody lze nastavit na stránce **Důvody správy úvěru** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Důvody správy úvěru** ).
+Důvody lze nastavit na stránce **Důvody správy úvěru** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Důvody správy úvěru**).
 
-1. V poli **Typ důvodu** vyberte typ důvodu: **Blokování** , **Uvolnění** nebo **Stav** .
+1. V poli **Typ důvodu** vyberte typ důvodu: **Blokování**, **Uvolnění** nebo **Stav**.
 2. Do pole **Důvod** zadejte název důvodu.
 3. Do pole **Popis** zadejte popis kódu důvodu.
 
@@ -70,28 +70,28 @@ Důvody lze nastavit na stránce **Důvody správy úvěru** ( **Úvěr a inkasa
 
 Skupiny správy úvěru se používají k označení odběratelů nebo skupin odběratelů, které mají stejné vlastnosti v rámci správy úvěru. Skupiny správy úvěru lze použít například k určení pravidel blokování a vyloučení v rámci správy úvěrů pro odběratele.
 
-Skupiny správy úvěru lze vytvořit na stránce **Skupiny správy úvěru** ( **Úvěr a inkasa \> Nastavení> Nastavení správy úvěru \> Skupiny správy úvěru** ).
+Skupiny správy úvěru lze vytvořit na stránce **Skupiny správy úvěru** (**Úvěr a inkasa \> Nastavení> Nastavení správy úvěru \> Skupiny správy úvěru**).
 
 1. Volbou možnosti **Nová položka** vytvořte řádek.
 2. Zadejte ID skupiny. ID může obsahovat až 10 znaků.
 3. Do pole **Popis** zadejte název skupiny. Název může obsahovat až 60 znaků.
 
-Skupinu správy úvěru lze přiřadit k odběrateli na pevné záložce **Úvěr a inkasa** na stránce **Všichni odběratelé** ( **Pohledávky \> Odběratelé \> Všichni odběratelé** ).
+Skupinu správy úvěru lze přiřadit k odběrateli na pevné záložce **Úvěr a inkasa** na stránce **Všichni odběratelé** (**Pohledávky \> Odběratelé \> Všichni odběratelé**).
 
 ## <a name="account-statuses"></a>Stavy účtu
 
 Chcete-li identifikovat stav úvěru u účtu odběratele, můžete vytvořit stavy účtu. Můžete definovat stav a jeho dopad na procesy fakturace a blokování dodávky. Stavy účtu lze také použít k určení pravidel blokování pro odběratele.
 
-Stavy účtu můžete vytvořit na stránce **Stavy účtu** ( **Úvěr a inkasa \> Nastavení> Nastavení správy úvěru \> Stavy účtu** ).
+Stavy účtu můžete vytvořit na stránce **Stavy účtu** (**Úvěr a inkasa \> Nastavení> Nastavení správy úvěru \> Stavy účtu**).
 
 1. Přidejte stav účtu a zadejte popis, který vyjadřuje stav úvěru u odběratele. Například můžete použít popis **Normální** k označení, že je odběratel v dobrém stavu a na otevřené objednávky se vztahuje standardní zpracování v rámci správy úvěru.
-2. V polích **Fakturace** a  **Blokovaná dodávka** vyberte typ blokování, který by měl být použit u odběratelů s tímto stavem účtu. Je možné blokovat veškeré zpracování, blokovat pouze zpracování faktur nebo neblokovat žádné zpracování při uplatnění pravidel limitu úvěru.
+2. V polích **Fakturace** a **Blokovaná dodávka** vyberte typ blokování, který by měl být použit u odběratelů s tímto stavem účtu. Je možné blokovat veškeré zpracování, blokovat pouze zpracování faktur nebo neblokovat žádné zpracování při uplatnění pravidel limitu úvěru.
 
 ## <a name="scoring-groups"></a>Skupiny skórování
 
 Skupiny podle hodnocení lze nastavit tak, aby definovaly rizikové faktory a kritéria, která jsou použita k jejich měření. V případě použití informací o odběrateli na skupinu podle hodnocení se hodnocení vypočítá pro každý faktor rizika a používá se k umístění odběratele do skupiny podle rizika. Skupinu podle rizika lze použít k označení úvěrové způsobilosti a k výpočtu automatických limitů úvěru.
 
-Skupiny podle hodnocení lze vytvářet na stránce **Skupiny podle hodnocení** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Skupiny podle hodnocení** ).
+Skupiny podle hodnocení lze vytvářet na stránce **Skupiny podle hodnocení** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Skupiny podle hodnocení**).
 
 1. Vytvořte skupinu podle hodnocení a zadejte pro ni název.
 2. Zadejte popis blíže popisující skupinu podle hodnocení.
@@ -101,13 +101,13 @@ Skupiny podle hodnocení lze vytvářet na stránce **Skupiny podle hodnocení**
     - **Rozsah** – Pomocí této možnosti můžete definovat rozsah hodnot, které mají být použity při výpočtu hodnocení.
     - **Uživatelem definovaný** – Tuto možnost použijte, chcete-li ručně definovat seznam hodnot, které mají být použity pro hodnocení.
 
-5. Pokud jste jako typ hodnocení vybrali **Rozsah** , přidejte řádky pro definování rozsahu hodnot a odpovídajících hodnocení.
+5. Pokud jste jako typ hodnocení vybrali **Rozsah**, přidejte řádky pro definování rozsahu hodnot a odpovídajících hodnocení.
 
     1. Do pole **Nejnižší hodnota** zadejte nejnižší hodnotu rozsahu.
     2. Do pole **Nejvyšší hodnota** zadejte nejvyšší hodnotu rozsahu.
     3. Do pole **Hodnocení** zadejte hodnocení, které má být přiřazeno, pokud zadaná hodnota spadá do rozssahu „od/do”.
 
-    Pokud jste jako typ hodnocení vybrali **Definovaný uživatelem** , přidejte řádky pro definování hodnot definovaných uživatelem a odpovídajících hodnocení.
+    Pokud jste jako typ hodnocení vybrali **Definovaný uživatelem**, přidejte řádky pro definování hodnot definovaných uživatelem a odpovídajících hodnocení.
 
     1. Do pole **Hodnota** zadejte uživatelem definovanou hodnotu, která by měla být poskytnuta z informací o odběrateli.
     2. Do pole **Hodnocení** zadejte hodnocení, které má být přiřazeno, pokud zadaná hodnota spadá do rozssahu „od/do”.
@@ -116,7 +116,7 @@ Skupiny podle hodnocení lze vytvářet na stránce **Skupiny podle hodnocení**
 
 Můžete definovat odhady rizik, které lze přiřadit k odběratelům na základě jejich hodnocení rizik. Hodnocení rizika se vypočítá porovnáním informací o odběrateli s každou skupinou podle hodnocení. Hodnocení jsou sečtena a celkové hodnocení je porovnáno s hodnotami v nastavení skupiny podle rizika, aby bylo možné identifikovat skupinu podle rizika, ke které daný odběratel náleží. Hodnocení skupiny podle rizika se pak používá k definování pravidel blokování a vyloučení správy úvěrů pro odběratele.
 
-Skupiny podle rizika můžete nastavit na stránce **Odhady rizik** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Klasifikace rizik** ).
+Skupiny podle rizika můžete nastavit na stránce **Odhady rizik** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Klasifikace rizik**).
 
 1. Zadejte ID skupiny podle rizika.
 2. Zadejte popis blíže vysvětlující skupinu podle rizika.
@@ -125,7 +125,7 @@ Skupiny podle rizika můžete nastavit na stránce **Odhady rizik** ( **Úvěr a
 
 ## <a name="guaranteeinsurance-types"></a>Typy záruk/pojištění
 
-Typy záruky/pojištění lze nastavit na stránce **Typy záruky/pojištění** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Pojištění a záruky \> Typy pojištění a záruk** ).
+Typy záruky/pojištění lze nastavit na stránce **Typy záruky/pojištění** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Pojištění a záruky \> Typy pojištění a záruk**).
 
 1. Zadejte typ záruky nebo pojištění, který označuje jméno ručitele nebo zprostředkovatele pojištění.
 2. Zadejte popis popisující ručitele nebo zprostředkovatele pojištění.
@@ -134,22 +134,22 @@ Typy záruky/pojištění lze nastavit na stránce **Typy záruky/pojištění**
 
 Je možné použít typy krytí k další klasifikaci pojistných smluv. Nelze je použít se zárukami.
 
-Typy krytí lze přidat na stránce **Typy krytí** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Pojištění a záruky \> Typy krytí** ).
+Typy krytí lze přidat na stránce **Typy krytí** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Pojištění a záruky \> Typy krytí**).
 
 1. Zadejte typ krytí pro určení typu krytí, který má být přidán jako pojištění nebo záruka.
 2. Zadejte popis typu krytí.
 
 ## <a name="automatic-credit-limits"></a>Automatické úvěrové limity
 
-Kritéria pro automatické limity úvěru můžete vytvořit na stránce **Automatické limity úvěru** ( **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Automatické limity úvěru** ).
+Kritéria pro automatické limity úvěru můžete vytvořit na stránce **Automatické limity úvěru** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Automatické limity úvěru**).
 
 1. Vyberte skupinu podle rizika, ke které má být přiřazen automatický limit úvěru.
 2. Vyberte měnu pro automatický limit úvěru. Pro stejnou skupinu podle rizika lze vytvořit několik automatických limitů úvěru v různých měnách.
-3. Zadejte částku výnosů, která představuje maximální výnosy společnosti, které lze použít pro tento automatický limit úvěru. Při vytvoření limitů úvěru se částka výnosů porovná s hodnotou výnosů, která se nachází na stránce **Finance** ( **Pohledávky \> Všichni odběratelé \> Vybrat odběratele \> Obecné \> Statistiky \> Finanční** ). Systém používá nejnovější hodnotu v části **Přehled** .
+3. Zadejte částku výnosů, která představuje maximální výnosy společnosti, které lze použít pro tento automatický limit úvěru. Při vytvoření limitů úvěru se částka výnosů porovná s hodnotou výnosů, která se nachází na stránce **Finance** (**Pohledávky \> Všichni odběratelé \> Vybrat odběratele \> Obecné \> Statistiky \> Finanční**). Systém používá nejnovější hodnotu v části **Přehled**.
 
 Chcete-li přidat řádky reprezentující limit úvěru, který bude vygenerován na základě vybraných kritérií, postupujte podle následujících kroků.
 
 1. Vyberte skupinu podle hodnocení, která definuje informace o odběrateli, které by měly být použity při výpočtu limitu úvěru.
 2. Vyberte operátor pro porovnání, který definuje, jakým způsobem mají být vyhodnocovány informace o skupině podle hodnocení.
 3. Zadejte hodnotu, která má být porovnána s hodnotou zadanou pro skupinu podle hodnocení.
-4. Zadejte limit úvěru, který má být přiřazen, pokud se informace o odběrateli shodují s hodnotou zadanou pro danou skupinu podle hodnocení. Můžete například vytvořit automatický limit úvěru pro skupinu podle hodnocení **Nízké** . Pokud je jednou ze skupin podle hodnocení počet let podnikání, můžete definovat jeden řádek, který přiřazuje limit úvěru 100 000, pokud odběratel podniká pět let, a další řádek, který přiřazuje limit úvěru 200 000, pokud odběratel podniká 10 let.
+4. Zadejte limit úvěru, který má být přiřazen, pokud se informace o odběrateli shodují s hodnotou zadanou pro danou skupinu podle hodnocení. Můžete například vytvořit automatický limit úvěru pro skupinu podle hodnocení **Nízké**. Pokud je jednou ze skupin podle hodnocení počet let podnikání, můžete definovat jeden řádek, který přiřazuje limit úvěru 100 000, pokud odběratel podniká pět let, a další řádek, který přiřazuje limit úvěru 200 000, pokud odběratel podniká 10 let.

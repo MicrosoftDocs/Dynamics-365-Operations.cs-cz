@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006229"
+ms.locfileid: "4441320"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden doklad se záznamy několika odběratelů nebo dodavatelů
 
@@ -34,7 +34,7 @@ Běžné příklady, kdy se jeden doklad se záznamy používá pro několika od
 
 Doklad obsahující více než jednoho odběratele nebo dodavatele lze zadat pomocí některé z následujících metod:
 
--   Pomocí deníku, který má vybranou možnost **Pouze jedno číslo dokladu** , takže každý přidaný řádek do deníku je zahrnut na stejném dokladu.
+-   Pomocí deníku, který má vybranou možnost **Pouze jedno číslo dokladu**, takže každý přidaný řádek do deníku je zahrnut na stejném dokladu.
 -   Používání dokladu s více řádky, kde neexistuje žádný protiúčet hlavní knihy, s více než jedním odběratelem nebo dodavatelem.
 -   Zadání dokladu s účtem a protiúčtem, ať jde o dodavatele/dodavatele, odběratele/odběratele, odběratele/dodavatele nebo odběratele/dodavatele.
 

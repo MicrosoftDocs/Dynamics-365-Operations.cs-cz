@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653769"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645762"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
@@ -92,6 +92,11 @@ V prognózách cashflow je možné zahrnout rozpočty, které jsou vytvořeny z 
 ### <a name="inventory-management"></a>Řízení zásob
 
 Prognózy nabídky a poptávky zásob lze zahrnout do prognóz cashflow. Na kartě **Řízení zásob** stránky **Nastavení prognózy cashflow** vyberte model prognózy, který má být zahrnut do prognózy cashflow. Zahrnutí do prognózy cashflow lze u jednotlivých řádků prognózy nabídky a poptávky přepsat.
+
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Nastavení dimenzí pro prognózu cashflow
+Nová karta na stránce **Nastavení prognózy cashflow** umožňuje řídit, jaké finanční dimenze se mají použít pro filtrování v pracovním prostoru **Prognóza cashflow**. Tato karta se zobrazí, pouze pokud je povolena funkce prognózy cashflow. 
+
+Na kartě **Dimenze** vyberte ze seznamu dimenze, které se mají použít pro filtrování, a pomocí kláves se šipkami je přesuňte do pravého sloupce. Pro filtrování dat prognózy cashflow lze vybrat pouze dvě dimenze. 
 
 ### <a name="calculation"></a>Výpočet
 

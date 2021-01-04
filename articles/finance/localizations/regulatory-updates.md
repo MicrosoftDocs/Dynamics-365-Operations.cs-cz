@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4fd099116a342780961079c600368d81b30ec4c5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985936"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517493"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v podporovaných lokalizacích Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace uvádějí [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v podporovaných lokalizacích Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace viz [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
 
@@ -40,52 +40,46 @@ Regulativní aktualizace vydané v rámci měsíční aktualizace jsou označeny
 
 Nejnovější plány povinné aktualizace naleznete v následující tabulce.   
 
-|Země|Plánované datum vydání|Verze vydání|Povinná aktualizace|
+|Země/oblast|Datum vydání|Verze vydání|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
 |      Rakousko         |   2020. září      | 10.0.15      |   Formát přiznání k DPH U30 byl aktualizován pro vykazování 2020   |
-|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Přenesená daňová povinnost   |
-|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Termín vystavení faktury (GCC)   |
-|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Přiznání k DPH pro Bahrajn   |
-|      Bahrajn         |   Červenec 2020      | 10.0.12      |   Prodejní faktury pro Bahrajn   |
-|      Brazílie         |   Srpen 2020      | 10.0.14, 10.0.13, 10.0.12      |   Prohlášení PR ADRCST   |
-|      Brazílie         |   2020. březen      | 10.0.11      |   SPED ECD layout 8   |
-|      Brazílie         |   2020. duben      | 10.0.11      |   Technická poznámka NT 2019.001 v1.40   |
-|      Brazílie         |   2020. květen      | 10.0.12, 10.0.11HF      |   Prohlášení ADCR ICMS-ST pro stát Parana   |
-|      Brazílie         |   Červenec 2020 - květen 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
-|      Brazílie         |   Červenec 2020      | 10.0.13, 10.0.12HF      |   SPED Fiscal - Záznam C176 - Stav RS   |
+|      Bahrajn         |   2020. června      | 10.0.13      |   Termín vystavení faktury (GCC)   |
+|      Bahrajn         |   2020. září      | 10.0.13      |   Projektová faktura pro Bahrajn   |
+|      Bahrajn         |   2020. června      | 10.0.13      |   Prohlášení o DPH pro Bahrajn - Povolit popis transakce   |   
+|      Brazílie         |   Srpen 2020      | 10.0.14, 10.0.13      |   Prohlášení PR ADRCST   |
+|      Brazílie         |   2020. květen      | 10.0.13      |   SPED ECF layout 6   |
+|      Brazílie         |   Červenec 2020      | 10.0.13      |   SPED Fiscal - Záznam C176 - Stav RS   |
+|      Brazílie         |   2020. říjen      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v1.51 - přijetí pravidel ověřování kódu výhody společností Distrito Federal   |
+|      Brazílie         |   2020. říjen      | 10.0.16      |   Fiskální SPED – rozložení 015   |
+|      Brazílie         |   Listopad 2020      | 10.0.15HF      |   SPED Fiskální ICMS / IPI záznam C176 aktualizace stavu RS   |
+|      Brazílie         |   2020. říjen      | 10.0.16      |   Prohlášení SC DRCST - SEF 262/2020   |
+|      Brazílie         |   2020. říjen      | 10.0.16      |   SPED Fiskální ICMS / IPI záznam C176   |
 |      Česká republika      |   Červenec 2020      | 10.0.13      |   Změny kontrolního výpisu DPH ve schématu XML (výpis faktur)   |
 |      Česká republika         |   Červenec 2020      | 10.0.13      |   Prohlášení o DPH v XML, náhled prohlášení o DPH v Excelu a formáty XML pro kontrolu DPH založené na modelu daňového přiznání   |
-|      Estonsko         |   2020. květen       | 10.0.11      |   Elektronická fakturace v Estonsku: export faktur zákazníkům v estonském specifickém formátu verze 1.2.  |
 |      Evropa        |   Srpen 2020       | 10.0.14      |   Převod DIČ partnera do Intrastatu  |
 |      Finsko         |   Červenec 2020       | 10.0.13      |   Podpora elektronických faktur pro Finsko  |
-|      Německo         |   2020. květen       | 10.0.12      |   Německo - maloobchod - požadavky na pokladnu    |
-|      Maďarsko         |   2020. březen       | 10.0.11     |   Fakturační systém online v.2.0 ve Finance and Operations    |
-|      Indie         |   Srpen 2020, červenec 2020      | 10.0.3, 10.0.12HF      |   TCS z prodeje zboží podle oddílu 206C (1H) – prahová hodnota podle akumulace transakcí na bázi PAN.  |
-|      Indie         |   Srpen 2020, červen 2020      | 10.0.13, 10.0.12HF      |   Dobropis/dluhopis proti faktuře za export  |
-|      Indie         |   Srpen 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Elektronická faktura pod GST  |
-|      Indie         |   2020. květen      | 10.0.13, 10.0.12      |   Nový formát vratek GSTR-1 a GSTR-2  |
+|      Indie         |   Červenec 2020      | 10.0.13      |   TCS z prodeje zboží podle oddílu 206C (1H) – prahová hodnota podle akumulace transakcí na bázi PAN.  |
+|      Indie         |   Srpen 2020, červen 2020      | 10.0.13      |   Dobropis/dluhopis proti faktuře za export  |
+|      Indie         |   Srpen 2020      | 10.0.13      |   Elektronická faktura pod GST  |
 |      Indie         |   Červenec 2020      | 10.0.13      |   Nový offline nástroj GSTR (ANX-1 a ANX-2) (beta verze)  |
-|      Indie         |   2020. květen      | 10.0.12      |   Zlepšení manipulace s jednotkovou cenou a cenou v příkazech k převodu akcií  |
-|      Indie         |   2020. květen      | 10.0.12      |   Převod akcií se stejnou použitelností daňové sazby v době odeslání a přijetí (včetně částečného příjmu)  |
-|      Itálie         |   2020. květen      | 10.0.12, 10.0.11      |   Změna formátu Modello 770/2019 |
-|      Itálie         |   Červenec 2020      | 10.0.13, 10.0.12HF      |   Změny ve formátu italských elektronických faktur - FatturaPA |
-|      Kuvajt         |   Červenec 2020      | 10.0.12      |   Přenesená daňová povinnost |
+|      Indie         |   2020. říjen      | 10.0.14HF, 10.0.13HF      |   E-faktura v rámci GST v objednávce převodu akcií pro Indii|
+|      Indie         |   2020. říjen      | 10.0.14HF, 10.0.13HF      |   E-faktura v rámci GST pro Indii s více registracemi GSTIN|
+|      Indie         |   2020. září      | 10.0.13HF      |   Sazba srážkové daně na 3/5 desetinných míst|
+|      Indie         |   2020. září      | 10.0.14HF      |   Skupina číselných sekvencí: „GSTNSG“, typ transakce: „GST faktura“, která má být nastavena pro skupinu sekvencí referenčních čísel GST daňových informací „0073“|
+|      Itálie         |   Červenec 2020      | 10.0.13      |   Změny ve formátu italských elektronických faktur - FatturaPA |
 |      Malajsie         |   Červenec 2020      | 10.0.13      |   Sestava SST |
-|      Mexiko         |   2020. září      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   Umístění schématu adresy URL pro CFDI na základě dokumentu Anexo 20 |
-|      Norsko          |   2020. květen   | 10.0.12     |   Redesign výkazu SAF-T: Počáteční zůstatky podle typu „provozní“ transakce a daňových informací v měně daňového kódu v modulu Finance (verze 10) |
-|      Norsko          |   2020. květen   | 10.0.12     |   Změna dialogového okna sestavy SAF-T: k poskytnutí možnosti výběru kontaktní osoby napříč společnostmi |
-|      Norsko          |   2020. květen   | 10.0.12     |   SAF-T Názvy mezer na každém řádku namísto pouze v záhlaví |
-|      Omán         |   Červenec 2020      | 10.0.12H      |   Přenesená daňová povinnost |
+|      Mexiko         |   2020. září      | 10.0.13HF      |   Umístění schématu adresy URL pro CFDI na základě dokumentu Anexo 20 |
+|      Nizozemsko         |   2020. říjen      | 10.0.16     |   Formát Intrastat se aktualizuje od roku 2021 |
+|      Norsko         |   Srpen 2020      | 10.0.14     |   SAF-T - úroveň seskupení transakcí podle „poukazu“ musí být vykázána na úrovni prvku „transakce“ namísto „deníku“ |
 |      Polsko          |   2020. září     | 10.0.14     |   Polsko: Formát Excel JPK-V7M (VDEK) jako náhrada sestavy SSRS  |
-|      Polsko          |   2020. květen     | 10.0.11     |   Rozdělit částku realizovaných kurzových rozdílů závazků/pohledávek na kurzový rozdíl netto hodnoty faktury a částky DPH  |
-|      Polsko          |   2020. květen     | 10.0.11     |   SAF účetní knihy – vylepšení filtrování vrstev pro zaúčtování |
-|      Polsko          |   2020. březen     | 10.0.11     |   JPK_VDEK dodatečná balení I |
-|      Polsko          |   2020. květen     | 10.0.12     |   JPK_VDEK dodatečná balení II |
-|      Polsko          |   2020. březen     | 10.0.11     |   Částečný dobropis na prodejní objednávku se zálohovou fakturou |
-|      Polsko          |   Červenec 2020     | 10.0.13     |   Povinná vylepšení rozdělené platby |
-|      Katar         |   Červenec 2020      | 10.0.12H      |   Přenesená daňová povinnost |
+|      Polsko          |   Červenec 2020     | 10.0.15, 10.0.14HF, 10.0.13     |   Dobrovolná vylepšení rozdělené platby |
+|      Polsko          |   2020. říjen     | 10.0.13HF     |   Povinná vylepšení rozdělené platby |
+|      Polsko          |   Listopad 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) - prodejní doklad typu FP a RO pro maloobchodní transakce |
+|      Polsko          |   2020. září     | 10.0.15     |   Polsko: JPK-V7M (VDEK) - možnost odemknout spuštění generování sestavy po částech |
+|      Polsko          |   2020. říjen     | 10.0.16     |   Zpráva JPK-V7M (VDEK) - využití parametru „Dobrovolně rozdělená platba“ |
 |      Rusko          |   Srpen 2020     | 10.0.14    |   Formát účetního vykazování se mění počínaje rokem 2020  |
 |      Rusko          |   Červenec 2020     | 10.0.13    |   Výpočet odpisů na základě pořizovacích nákladů a velkých oprav s použitím odpisového bonusu v daňovém účetnictví  |
+|      Rusko          |   Listopad 2020     | 10.0.16    |   Formát přiznání DPH je aktualizován na verzi 5.07 počínaje vykazováním za 4. čtvrtletí 2020|
 
 
 

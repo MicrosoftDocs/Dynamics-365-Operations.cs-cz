@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976662"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441109"
 ---
 # <a name="project-invoicing"></a>Fakturace projektu
 
@@ -57,7 +57,7 @@ Návrhy faktury mohou být vytvořeny pro následující transakce:
 -   Částky, které jsou vám zaplaceny odběratelem před zahájením projektu
 
 > [!NOTE]
-> Funkce **Povolit řazení podle zdroje během funkce vytvoření návrhu faktury projektu** umožňuje účetním projektu řadit transakce projektu, které jsou k dispozici pro účtování zdroje při vytváření nového návrhu faktury projektu. Mřížka zobrazující dostupné transakce projektu bude mít samostatná pole pro **ID zdroje** a **Zdroj** . Tato pole umožňují filtrovat a třídit podle názvu zdroje. Ve výchozím nastavení je tato funkce vypnutá. Lze ji povolit pomocí stránky **Správa funkcí** ( **Pracovní prostory > Správa funkcí** ). Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
+> Funkce **Povolit řazení podle zdroje během funkce vytvoření návrhu faktury projektu** umožňuje účetním projektu řadit transakce projektu, které jsou k dispozici pro účtování zdroje při vytváření nového návrhu faktury projektu. Mřížka zobrazující dostupné transakce projektu bude mít samostatná pole pro **ID zdroje** a **Zdroj**. Tato pole umožňují filtrovat a třídit podle názvu zdroje. Ve výchozím nastavení je tato funkce vypnutá. Lze ji povolit pomocí stránky **Správa funkcí** (**Pracovní prostory > Správa funkcí**). Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 V návrhu faktury lze vytvořit transakce poplatků. Můžete také změnit prodejní cenu za hodinu, výdaj, položku a transakce poplatků. Při zaúčtování návrhu faktury jsou přidány aktualizované ceny a transakce do sestav projektů a historie transakcí. 
 
@@ -75,7 +75,7 @@ Pokud vaše organizace vyžaduje, aby byly návrhy faktury před zaúčtováním
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Zobrazení informací o grantu na stránkách seznamu faktur projektu
 
-Uživatelé z veřejného sektoru mohou přidat **ID grantu** a **Název grantu** na stránky se seznamem **Návrhy na fakturu projektu** a **Faktury projektu** . Tyto sloupce jsou povoleny pomocí funkce **Přidejte informace o grantu na stránky se seznamem faktur na projektu** . Tato funkce je ve výchozím nastavení vypnutá a lze ji povolit v části **Pracovní prostory > Správa funkcí** . Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
+Uživatelé z veřejného sektoru mohou přidat **ID grantu** a **Název grantu** na stránky se seznamem **Návrhy na fakturu projektu** a **Faktury projektu**. Tyto sloupce jsou povoleny pomocí funkce **Přidejte informace o grantu na stránky se seznamem faktur na projektu**. Tato funkce je ve výchozím nastavení vypnutá a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 ## <a name="on-account-invoicing"></a>Faktura akontace
 Částka, kterou zadáte do faktury na účet pro projekt, je založena na časovém období, procentuální hodnotě dokončení a dalších podmínkách fakturace, které jsou zadány v související projektové smlouvě. Částka není založena na hodinách, položkách, výdajích ani poplatcích, které jsou zaúčtovány do projektu. 
@@ -111,10 +111,10 @@ Můžete vytvářet například následující plán účtování:
 Když jsou milníkové platby připraveny k fakturaci, použijte postup fakturace částek na účet.
 
 ## <a name="vendor-invoicing"></a>Fakturace dodavatele
-Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Pokud jste nastavili výchozí vlastnosti řádku, jsou zobrazeny pro položku na řádku nákupní objednávky ( **Podrobnosti řádku > Projekt > Vlastnost řádku** ). Existují dva způsoby, jak změnit vlastnost řádku:
+Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Pokud jste nastavili výchozí vlastnosti řádku, jsou zobrazeny pro položku na řádku nákupní objednávky (**Podrobnosti řádku > Projekt > Vlastnost řádku**). Existují dva způsoby, jak změnit vlastnost řádku:
 
 -   Fakturovat odběrateli projektu za zboží. Postup: Nastavte vlastnost řádku pro položku na fakturovatelnou hodnotu na nákupní objednávce a následně fakturujte odběrateli pomocí správného způsobu fakturace projektu.
--   Nefakturovat odběrateli projektu za zboží. Chcete-li to provést, nevybírejte vlastnost řádku na řádku objednávky za zboží **Účtovatellné** . Poté lze nákupní objednávku vyfakturovat a není třeba provádět další akce.
+-   Nefakturovat odběrateli projektu za zboží. Chcete-li to provést, nevybírejte vlastnost řádku na řádku objednávky za zboží **Účtovatellné**. Poté lze nákupní objednávku vyfakturovat a není třeba provádět další akce.
 
 > [!NOTE] 
 > Ve výchozím nastavení nejsou řádky pro zachování verze účtovány. To znamená, že není možné vytvořit návrh faktury pro uvolněné zadržení.

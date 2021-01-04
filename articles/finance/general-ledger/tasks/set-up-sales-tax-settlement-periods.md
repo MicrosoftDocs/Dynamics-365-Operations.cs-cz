@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e5068c121e921c1586dc6ae003c0021bf41d2254
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976762"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441162"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Nastavení období vyrovnání DPH
 
@@ -31,23 +31,23 @@ Toto téma vysvětluje, jak nastavit období vyrovnání DPH. Období vyrovnán�
 
 Tento úkol využívá ukázkovou společnost USMF.
 
-1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH** .
-2. Zvolte **Nové** .
-3. Zadejte hodnotu do pole **Období vyrovnání** .
-4. Zadejte hodnotu do pole **Popis** .
+1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH**.
+2. Zvolte **Nové**.
+3. Zadejte hodnotu do pole **Období vyrovnání**.
+4. Zadejte hodnotu do pole **Popis**.
 5. V poli **Úřad** vyberte finanční úřad, který přijímá sestavy a platby, které byly vytvořeny pro období vyrovnání.
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 7. V poli **Platební podmínky** vyberte požadovaný záznam v rozevírací nabídce. Související finanční úřad lze nastavit jako dodavatele a vyrovnání DPH vytvoří otevřenou fakturu dodavatele. Platební podmínky definují Datum splatnosti pro otevřenou fakturu dodavatele.  
 8. Vyberte typ pro intervaly období vyrovnání.
 9. Zadejte počet jednotek intervalu období pro každé období. Například čtvrtletí má 3 měsíce.
-10. Zaškrtněte nebo zrušte zaškrtnutí políčka **Použít dávkové zpracování pro vyrovnání DPH** . Proces vyrovnání pro období vyrovnání lze zpracovat jako dávkovou úlohu na pozadí. Tato možnost je vhodná velký počet daňových transakcí v rámci intervalu období.  
+10. Zaškrtněte nebo zrušte zaškrtnutí políčka **Použít dávkové zpracování pro vyrovnání DPH**. Proces vyrovnání pro období vyrovnání lze zpracovat jako dávkovou úlohu na pozadí. Tato možnost je vhodná velký počet daňových transakcí v rámci intervalu období.  
     > [!NOTE]
     > V současné době to není podporováno ve Španělsku, Japonsku a Nizozemsku.
-11. Zaškrtněte nebo odškrtněte políčko **Zabránit generování daňové transakce protiúčtu** . Ve výchozím nastavení systém generuje daňové transakce protiúčtu během procesu vyrovnání, což může způsobit problémy s výkonností, pokud je v určitém časovém intervalu velký počet daňových transakcí. Zaškrtněte toto políčko, abyste zabránili generování daňové transakce protiúčtu.
-12. Rozbalte kartu **Intervaly období** .
-13. Vyberte **přidat** .
+11. Zaškrtněte nebo odškrtněte políčko **Zabránit generování daňové transakce protiúčtu**. Ve výchozím nastavení systém generuje daňové transakce protiúčtu během procesu vyrovnání, což může způsobit problémy s výkonností, pokud je v určitém časovém intervalu velký počet daňových transakcí. Zaškrtněte toto políčko, abyste zabránili generování daňové transakce protiúčtu.
+12. Rozbalte kartu **Intervaly období**.
+13. Vyberte **přidat**.
 14. Zadejte datum do pole **Od data** v novém řádku.
 15. Do pole **Do data** zadejte datum.
-16. Vyberte **Nový interval období** . Po zadání prvního intervalu období lze vytvořit automaticky nová období. Můžete se vrátit a přidat nové intervaly období podle potřeby.  
+16. Vyberte **Nový interval období**. Po zadání prvního intervalu období lze vytvořit automaticky nová období. Můžete se vrátit a přidat nové intervaly období podle potřeby.  
 17. Zavřete stránku.
 

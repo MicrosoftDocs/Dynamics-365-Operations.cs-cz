@@ -18,11 +18,11 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441307"
 ---
 # <a name="registration-ids"></a>ID registrace
 
@@ -30,7 +30,7 @@ ms.locfileid: "2175320"
 
 Toto téma poskytuje informace o nastavení a používání ID registrace.
 
-Mnoho zemí a regionů má rozdílné předpisy a požadavky na evidenci daňového registračních čísel nebo ID. Toto téma obsahuje přehled požadovaných nastavení a zpracování typy podporovaných typů registrace pro účastníky v různých evropských zemích/oblastech. Všechny země/oblasti mají své požadavky na podporu různých funkcí v jednotlivých zemích týkající se registračních čísel uvedených různými státními úřady. Mezi příklady registračních čísel patří číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační číslo (EU DIČ). Tato funkce poskytuje jednotný rámec pro všechny země, ve všech oblastech, přičemž v úvahu bere požadavky specifické pro některé evropské země. V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování ID registrace.
+Mnoho zemí a regionů má rozdílné předpisy a požadavky na evidenci daňového registračních čísel nebo ID. Toto téma obsahuje přehled požadovaných nastavení a zpracování typy podporovaných typů registrace pro účastníky v různých evropských zemích/oblastech. Všechny země/oblasti mají své požadavky na podporu různých funkcí v jednotlivých zemích týkající se registračních čísel uvedených různými státními úřady. Mezi příklady registračních čísel patří číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační číslo (EU DIČ). Tato funkce poskytuje jednotný rámec pro všechny země ve všech oblastech, přičemž v úvahu bere požadavky specifické pro některé evropské země. V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování ID registrace.
 
 ## <a name="registration-type-creation"></a>Vytvoření typu registrace
 Dříve, než budete moci zadat ID registrace, je třeba nastavit typy registrace pro různé typy registračních čísel, kterým jednotlivé smluvní strany podléhají. Přejděte na stránku **Správa organizace** &gt; **Globální adresář** &gt; **Typy registrace** &gt; **Typy registrace** a vytvořte a spravujte typy registrace dodavatelů, odběratelů, zaměstnanců a právnických osob v různých zemích.
@@ -48,7 +48,7 @@ Dříve, než budete moci zadat ID registrace, je třeba nastavit typy registrac
 | Primární pro zemi | Pokud je strana spojena s jednou nebo více adresami v konkrétní zemi a ID registrace je platné pro všechny tyto adresy, je třeba určit jednu adresu jako primární pro zemi. Můžete zaregistrovat pouze jedno ID jako primární. Určuje, zda lze zadat registrační číslo pouze pro primární adresu země. |
 
 ## <a name="assign-a-registration-type-to-a-registration-category"></a>Přiřazení typu registrace ke kategorii registrace
-Registrace kategorie je identifikátor země registrace schválený pro používání v konkrétní zemi nebo oblasti pro daně, cla a jiné účely. Tato kategorie definuje pravidla ověření pro konkrétní ID registrace (včetně kontrolních číslic atd.) a zařazení ID registrace v různých sestavách. Na stránce **Správa organizace** &gt; **globální adresář** &gt; **typy registrace** &gt; **kategorie registrace** přiřaďte typ registrace konkrétní země registrace podporované kategorii.
+Registrace kategorie je identifikátor registrace země/oblasti, schválený pro používání v konkrétní zemi nebo oblasti pro daně, cla a jiné účely. Tato kategorie definuje pravidla ověření pro konkrétní ID registrace (včetně kontrolních číslic atd.) a zařazení ID registrace v různých sestavách. Na stránce **Správa organizace** &gt; **globální adresář** &gt; **typy registrace** &gt; **kategorie registrace** přiřaďte typ registrace konkrétní země/oblasti podporované registrační kategorii.
 
 | Pole            | popis|
 |-----------------------|----------------|

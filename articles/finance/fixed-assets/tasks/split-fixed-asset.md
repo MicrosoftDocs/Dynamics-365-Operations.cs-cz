@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000286"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514319"
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
@@ -39,7 +39,7 @@ Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou kni
 
 ## <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
-Před rozdělením plně odepsaného majetku je třeba ručně změnit stav rezervace majetku ze **Zavřeno** na **Otevřeno**. Tento krok je nutný, protože stav rezervace musí být **Otevřeno** , pokud musíte pro majetek zaúčtovat transakce (například při odprodeji po vyřazení). Po změně stavu rezervace majetku rozdělte majetek podle těchto pokynů.
+Před rozdělením plně odepsaného majetku je třeba ručně změnit stav rezervace majetku ze **Zavřeno** na **Otevřeno**. Tento krok je nutný, protože stav rezervace musí být **Otevřeno**, pokud musíte pro majetek zaúčtovat transakce (například při odprodeji po vyřazení). Musíte také zapnout parametr **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Obecné parametry hlavní knihy**. Po změně stavu knihy aktiv a povolení více transakcí v rámci jednoho dokladu proveďte následující kroky k rozdělení majetku.
 
 1. V seznamu najděte a vyberte odkaz na dlouhodobý majetek, který chcete rozdělit.
 2. Vyberte **Knihy**. Vyberte knihu určenou pro rozdělení na nový majetek.

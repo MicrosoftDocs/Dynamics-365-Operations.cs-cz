@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a71d0931445f3501f1b74f26c5eef583ab598b3c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188894"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441054"
 ---
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
 
@@ -105,7 +105,7 @@ Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**
 | FTI-10020  | Faktura          | 25. 6. 2015 | 10020   | 1 000,00                             |                                       | 0,00    | USD      |
 | ARP-10020  |                  | 7/1/2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | SLEV-10020 |                  | 7/1/2015  |         |                                      | 3,00                                  | 0,00    | USD      |
-| ARP-10021  |                  | 4 900 * 30% = 1 470 |         |                                      | 700,00                                | 0,00    | USD      |
+| ARP-10021  |                  | 7/11/2015 |         |                                      | 700,00                                | 0,00    | USD      |
 
 
 

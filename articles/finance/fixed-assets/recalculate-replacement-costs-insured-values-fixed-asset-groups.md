@@ -18,11 +18,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187100"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441215"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku
 
@@ -68,7 +68,7 @@ Lze provádět tyto změny:
 4.  Na stránce **Aktualizovat reprodukční náklady a pojistné částky** lze kliknutím na možnost **OK** spustit přepočet všech položek dlouhodobého majetku.
 
 Následující den vám manažer oznámí, že počítače klesly o 8 % místo 10 %, takže je třeba opravit reprodukční náklady i pojistné částky. Chybu lze opravit dvěma způsoby:
--   Ručně změňte pole **Pojistná částka** a **Reprodukční náklady**na stránce **Dlouhodobý majetek** pro každý dlouhodobý majetek ve skupině dlouhodobého majetku **Počítače**. Vypočtěte a ručně zadejte hodnoty, jako byste snížili původní částku o 8 %. Pomocí této metody nelze nepoužívat stránku **Aktualizovat reprodukční náklady a pojistné částky**.
+-   Ručně změňte pole **Pojistná částka** a **Reprodukční náklady** na stránce **Dlouhodobý majetek** pro každý dlouhodobý majetek ve skupině dlouhodobého majetku **Počítače**. Vypočtěte a ručně zadejte hodnoty, jako byste snížili původní částku o 8 %. Pomocí této metody nelze nepoužívat stránku **Aktualizovat reprodukční náklady a pojistné částky**.
 -   Zadejte reprodukční náklady a koeficienty pojistné částky pro skupinu **Počítače** v polích **Koeficient reprodukčních nákladů** a **Koeficient pojistné částky** na stránce **Skupiny dlouhodobého majetku**. Tím u majetku znovu nastavíte původní hodnotu (před 10% snížením) a potom provedete 8% snížení původní hodnoty. Poté použijte stránku **Aktualizovat reprodukční náklady a pojistné částky** k přepočítání hodnot v závislosti na faktorech, které jste zadali.
 
 > [!NOTE]  

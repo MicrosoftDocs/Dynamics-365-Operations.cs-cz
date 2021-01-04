@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006108"
+ms.locfileid: "4441322"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
 
@@ -71,7 +71,7 @@ Zákazník 4028 odešle platbu za 500,00 1. června. Při zadávání této plat
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Částečná platba pomocí řádků deníku
-Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie může kliknout na **Řádky** a zadat platbu. Zobrazí se platební deník, kam může Arnold zadat řádek pro zákazníka 4028. Arnold otevře stránku **Vyrovnat transakce** , aby mohl označit fakturu k vyrovnání. Arnie označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **5,05**. Proto Arnie vyrovnává u této faktury částku 505,05.
+Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie může kliknout na **Řádky** a zadat platbu. Zobrazí se platební deník, kam může Arnold zadat řádek pro zákazníka 4028. Arnold otevře stránku **Vyrovnat transakce**, aby mohl označit fakturu k vyrovnání. Arnie označí fakturu a změní hodnotu v poli **Částka k vyrovnání** na **500,00**. Znovu uvidí, že hodnota v poli **Částka platební slevy** je **10,00** pro případ úplné fakturace, a že hodnota v poli **Částka platební slevy k přijetí** se změnila na **5,05**. Proto Arnie vyrovnává u této faktury částku 505,05.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -112,7 +112,7 @@ Arnie zavře stránku **Vyrovnat transakce**. Řádky plateb pro 495,00 se vytvo
 | SLEV-10010 |  Platební sleva   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Platba zbývající částky
-Odběratel 4028 zaplatí zbývající částku 495,00 dne 8. července, tedy v rámci období platební slevy. Arnie vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **5,00** , protože sleva 5,00 nebyla dříve využita.
+Odběratel 4028 zaplatí zbývající částku 495,00 dne 8. července, tedy v rámci období platební slevy. Arnie vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **5,00**, protože sleva 5,00 nebyla dříve využita.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|

@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770590"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441180"
 ---
 # <a name="posting-definitions"></a>Definice účtování
 
@@ -32,12 +32,12 @@ ms.locfileid: "2770590"
 Tento článek obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit.
 U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování. Podporované dokumenty a typy účtování můžete prohlížet na stránce **Definice účtování transakcí**. 
 
-Chcete-li začít definice účtování používat, vyberte možnost**Použít definice účtování** na stránce **Parametry hlavní knihy**. I když použijete definice účtování, stále je nutné definovat účetní profily pro původní položky a nepodporované typy zaúčtování a dokumentů. 
+Chcete-li začít definice účtování používat, vyberte možnost **Použít definice účtování** na stránce **Parametry hlavní knihy**. I když použijete definice účtování, stále je nutné definovat účetní profily pro původní položky a nepodporované typy zaúčtování a dokumentů. 
 
 Definice účtování musíte použít, abyste umožnili účtování břemen pro nákupní objednávky a účtování předběžných břemen pro nákupní požadavky.
 
 ## <a name="defining-posting-definitions"></a>Definování definic účtování
-Použijte stránku**Definice účtování** k určení kritérií shody a definování položek, které by se měly generovat, pokud dojde ke shodě. Kritéria shody se posuzují pro původní položky jako rozúčtování. 
+Použijte stránku **Definice účtování** k určení kritérií shody a definování položek, které by se měly generovat, pokud dojde ke shodě. Kritéria shody se posuzují pro původní položky jako rozúčtování. 
 
 Na stránce **Definice účtování** můžete také řádkům položek přiřadit čísla priorit, abyste mohli řídit pořadí, v jakém se řádky posuzují. Řádky, které mají nejnižší číslo priority, se vyhodnocují jako první. Příklad: posoudí se všechny řádky, které mají prioritu 1, poté řádky, které mají prioritu 2, a tak dále. Při zjištění shody jsou ostatní kritéria párování ignorována. Pouze kritéria ve skupině, která odpovídá původní transakci, vytvářejí generované položky. 
 

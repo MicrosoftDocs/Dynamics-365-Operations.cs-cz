@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250321"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441382"
 ---
 # <a name="financial-period-close-workspace"></a>Pracovní prostor uzavření finančního období
 
@@ -52,7 +52,7 @@ Pro úkoly se používají dva indikátory:
 -   Ikona vykřičníku označuje, že úkol je po splatnosti. Pro úkoly, které jsou po splatnosti, je datum splatnosti červeně zvýrazněno.
 -   Ikona visacího zámku označuje, že úkol závisí na jiných úkolech, které ještě nejsou dokončeny. Úkol, který je blokováno závislostmi, nelze označit jako dokončený. Závislosti úkolu lze nastavit pomocí akce **Nastavit závislost**.
 
-Název úkolu je hypertextový odkaz na stránku, nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí pole **Odkaz na úkol** při úpravě nebo vytvoření úkolu. 
+Název úkolu je hypertextový odkaz na stránku nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí pole **Odkaz na úkol** při úpravě nebo vytvoření úkolu. 
 
 Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí akce **Přílohy**. Můžete například označit čísla deníků, které jsou používány jako součást úkolu, přidat komentáře týkající se určitého úkolu nebo připojit soubor sestavy, který byl vytištěn pro úkol. Ikona se zobrazí ve sloupci **Přílohy** pro úkol, pokud je příloha k dispozici. 
 
@@ -68,7 +68,7 @@ Než bude možné použít pracovní prostor **Uzavření finančního období**
 
 Na kartě **Prostředky** definujte osoby, které se podílejí na procesu uzávěrky. Zde musí být nejprve přiřazen jakýkoli zaměstnanec, který odpovídá za úkol uzávěrky. Musíte také zadat zobrazení pro zaměstnance v pracovním prostoru. Existují tyto možnosti:
 
--   **Pouze přiřazené úkoly** – budou zobrazeny pouze úlohy, které jsou mu přiřazeny.
+-   **Pouze přiřazené úkoly** – budou zobrazeny pouze úlohy, které jsou uživateli přiřazeny.
 -   **Všechny úlohy a stav** – budou zobrazeny všechny úlohy uzávěrky a stav celého procesu.
 
 Uživatelé, kteří mají oprávnění pouze zobrazit přiřazené úkoly, nebudou moci přidat úkoly k seznamu úkolů, upravit koly nebo odebrat úkoly ze seznamu.

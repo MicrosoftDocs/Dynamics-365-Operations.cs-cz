@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899510"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441300"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Platební slevy u přeplatků
 
@@ -99,7 +99,7 @@ Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je p
 
 | Účet                                                                                          | Částka Má dáti | Částka kreditu |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce**Platební slevy**). | 10.50        |               |
+| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**). | 10.50        |               |
 | Pohledávky                                                                              |              | 10.50         |
 
 ## <a name="cash-discount-administration--unspecific"></a>Správa platební slevy = nespecifická

@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977760"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441047"
 ---
 # <a name="allocation-bases"></a>Základy přidělení 
 
@@ -333,7 +333,7 @@ Pokud musí být nyní fixní poplatek rovnoměrně rozložen na objekty náklad
 |-------------------|------------------------|-----------------------|---------|
 | Fixní poplatek za elektřinu |                        | Statistické prvky  |         |
 
-Než vyplníte pole **Vzorec** , je nutné určit alias, který má být použit ve vzorci.
+Než vyplníte pole **Vzorec**, je nutné určit alias, který má být použit ve vzorci.
 
 **Koeficienty základu přidělení vzorce**
 
@@ -386,7 +386,7 @@ Je vytvořen nový základ přidělení vzorce, spotřeba elektřiny.
 |-------------------|------------------------|-----------------------|---------|
 | Spotřeba elektřiny |                        | Statistické prvky  |         |
 
-Než vyplníte pole **Vzorec** , je nutné určit alias, který má být použit ve vzorci.
+Než vyplníte pole **Vzorec**, je nutné určit alias, který má být použit ve vzorci.
 
 **Koeficienty základu přidělení vzorce**
 

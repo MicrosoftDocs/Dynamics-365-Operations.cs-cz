@@ -16,11 +16,11 @@ ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8bee320beb411a5ee0829a0e3170de0c7f293172
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124224"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441123"
 ---
 # <a name="collections-management-key-concepts"></a>Klíčové pojmy správy inkasa
 
@@ -41,13 +41,13 @@ Toto téma popisuje jednotlivé pojmy.
 
 ## <a name="customer-aging-snapshots"></a>Snímky sledování splatnosti odběratele 
 
-Snímek sledování splatnosti obsahuje vypočtené splatné zůstatky pro odběratele v konkrétním bodě v čase. Tyto informace se zobrazí na stránce se seznamem **Splatné zůstatky** a **Inkasa**. Před zobrazením informací na stránkách se seznamem inkas (**Splatné zůstatky**, **Inkasní aktivity**a **Inkasní případy**) je nutné vytvořit snímek sledování splatnosti.
+Snímek sledování splatnosti obsahuje vypočtené splatné zůstatky pro odběratele v konkrétním bodě v čase. Tyto informace se zobrazí na stránce se seznamem **Splatné zůstatky** a **Inkasa**. Před zobrazením informací na stránkách se seznamem inkas (**Splatné zůstatky**, **Inkasní aktivity** a **Inkasní případy**) je nutné vytvořit snímek sledování splatnosti.
 
 Pro každého odběratele má snímek sledování splatnosti záhlaví snímku sledování splatnosti a záznamy podrobností, které odpovídají každému období pro sledování splatnosti v definici období pro sledování splatnosti.
 
 Záhlaví snímku sledování splatnosti obsahuje celkovou splatnou částku, limit úvěru, dodací list, částku, částku prodejní objednávky, počet sporných transakcí a celkovou částku sporných transakcí pro účet odběratele. Všechny transakce odběratele jsou zahrnuty do výpočtu těchto množství. Celková splatná částka, limit úvěru, částka dodacího listu a částka prodejní objednávky jsou zobrazeny v okně s fakty **Informace o úvěru** na stránce **Inkasa**.
 
-Pro každé období sledování splatnosti v definici období pro sledování splatnosti je vytvořen záznam podrobností ve snímku sledování splatnosti. Každý záznam podrobností obsahuje ID období sledování splatnosti a celkovou částku transakcí s daty, která jsou v období pro sledování splatnosti. Transakce jsou přidružené k období pro sledování splatnosti, jako je například 30 dnů po splatnosti. Datum se vztahuje ke **sledování splatnosti**k hodnotě data, které jste zadali při vytváření snímku sledování splatnosti. Tyto informace se zobrazí na stránce se seznamem **Splatné zůstatky** a v okně s fakty **Splatné zůstatky** na stránce **Inkasa**.
+Pro každé období sledování splatnosti v definici období pro sledování splatnosti je vytvořen záznam podrobností ve snímku sledování splatnosti. Každý záznam podrobností obsahuje ID období sledování splatnosti a celkovou částku transakcí s daty, která jsou v období pro sledování splatnosti. Transakce jsou přidružené k období pro sledování splatnosti, jako je například 30 dnů po splatnosti. Datum se vztahuje ke **sledování splatnosti** k hodnotě data, které jste zadali při vytváření snímku sledování splatnosti. Tyto informace se zobrazí na stránce se seznamem **Splatné zůstatky** a v okně s fakty **Splatné zůstatky** na stránce **Inkasa**.
 
 ## <a name="collections-customer-pools"></a> Fond odběratelů inkasa 
 

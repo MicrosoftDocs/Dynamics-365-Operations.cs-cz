@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4b4e35d6a07ef4220bdd883eb3384a1c800ecd9e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441258"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Zobrazení zaúčtovaných transakcí DPH
 
@@ -31,21 +31,21 @@ V tomto tématu jsou popsány některé způsoby zobrazení zaúčtovaných tran
 
 ## <a name="posted-sales-tax-page"></a>Zaúčtovaná stránka DPH
 
-1. V navigačním podokně přejděte na **Moduly > Daň > Dotazy a sestavy > Dotazy na DPH > Zaúčtování DPH** .
-2. Chcete-li zúžit zobrazení na určité transakce, vyberte možnost **Zobrazit filtry** .
+1. V navigačním podokně přejděte na **Moduly > Daň > Dotazy a sestavy > Dotazy na DPH > Zaúčtování DPH**.
+2. Chcete-li zúžit zobrazení na určité transakce, vyberte možnost **Zobrazit filtry**.
 3. Zavřete stránku.
 
 ## <a name="sales-tax-settlement-periods-page"></a>Stránka období vyrovnání DPH
 
-1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH** .
-2. Rozbalte oddíl **Intervaly období** .
+1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH**.
+2. Rozbalte oddíl **Intervaly období**.
 3. Vyberte interval, který vás zajímá.
 4. Seznam transakcí zaúčtovaných DPH lze dále filtrovat.
 5. Zavřete stránku.
 
 ## <a name="sales-tax-codes-page"></a>Stránka Kódy DPH
 
-1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Kódy DPH** .
-2. V podokně akcí klikněte na možnost **Kód prodejní daně** .
-3. Vyberte **Zaúčtovaná DPH** .
+1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Kódy DPH**.
+2. V podokně akcí klikněte na možnost **Kód prodejní daně**.
+3. Vyberte **Zaúčtovaná DPH**.
 
