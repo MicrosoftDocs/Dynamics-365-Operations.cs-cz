@@ -16,34 +16,34 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976540"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441122"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku. Chcete-li používat funkce správy úvěru, nastavte parametry na stránce **Parametry úvěrů a inkas** ( **Úvěry a inkasa \> Nastavení \> Parametry úvěrů a inkas** ).
+V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku. Chcete-li používat funkce správy úvěru, nastavte parametry na stránce **Parametry úvěrů a inkas** (**Úvěry a inkasa \> Nastavení \> Parametry úvěrů a inkas**).
 
 ## <a name="credit-parameters"></a>Parametry úvěru
 
-Existují čtyři pevné záložky v sekci **Úvěry** , na kterých můžete měnit parametry, jež řídí správu úvěru: **Blokování úvěru** , **Kontrolní bod správy úvěru** , **CStatistika správy úvěru** a **Limity úvěru** . Následující části popisují nastavení, která jsou k dispozici na jednotlivých pevných záložkách.
+Existují čtyři pevné záložky v sekci **Úvěry**, na kterých můžete měnit parametry, jež řídí správu úvěru: **Blokování úvěru**, **Kontrolní bod správy úvěru**, **CStatistika správy úvěru** a **Limity úvěru**. Následující části popisují nastavení, která jsou k dispozici na jednotlivých pevných záložkách.
 
 ### <a name="credit-holds"></a>Blokování úvěru
 
-- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne** . .
+- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne**. .
 - V poli **Důvody zrušených objednávek** vyberte důvod uvolnění, který bude standardně použit, dojde-li ke zrušení prodejní objednávky, která byla blokována správou úvěru.
-- Chcete-li kontrolovat limit úvěru skupiny odběratelů podle limitu úvěru, když odběratel na prodejní objednávce náleží ke skupině odběratelů podle limitu úvěru, nastavte možnost **Kontrolovat limit úvěru skupin odběratelů podle limitu úvěru** na **Ano** . Bude zkontrolován limit úvěru pro danou skupinu a v případě, že je dostatečný, bude zkontrolován limit úvěru pro odběratele.
-- Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od výchozích platebních podmínek daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano** . Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
-- Chcete-li kontrolovat pořadí slev při vyrovnání, abyste určili, zda se platební sleva na prodejní objednávce liší od výchozí platební slevy daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení slevy při vyrovnání** na **Ano** . Pokud má nová platební sleva vyšší pořadí než původní platební sleva, objednávka se zablokuje ve správě úvěrů.
+- Chcete-li kontrolovat limit úvěru skupiny odběratelů podle limitu úvěru, když odběratel na prodejní objednávce náleží ke skupině odběratelů podle limitu úvěru, nastavte možnost **Kontrolovat limit úvěru skupin odběratelů podle limitu úvěru** na **Ano**. Bude zkontrolován limit úvěru pro danou skupinu a v případě, že je dostatečný, bude zkontrolován limit úvěru pro odběratele.
+- Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od výchozích platebních podmínek daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano**. Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
+- Chcete-li kontrolovat pořadí slev při vyrovnání, abyste určili, zda se platební sleva na prodejní objednávce liší od výchozí platební slevy daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení slevy při vyrovnání** na **Ano**. Pokud má nová platební sleva vyšší pořadí než původní platební sleva, objednávka se zablokuje ve správě úvěrů.
 - V poli **Důvod uvolnění upravených objednávek** vyberte důvod uvolnění, který bude použit jako výchozí, když budou upravené objednávky automaticky uvolněny z blokování správy úvěru.
-- Chcete-li kontrolovat chování pravidla **Vypršela platnost limitu úvěru** , nastavte možnost **Ignorovat pravidlo blokování při vypršení platnosti limitu úvěru, je-li datum vypršení platnosti prázdné** na **Ano** . Chcete-li zablokovat objednávku v případě, že datum vypršení platnosti bude prázdné, nastavte možnost **Ne** .
-- V Řízení skladu lze vytvořit vytížení při zadání prodejní objednávky. Chcete-li ponechat řádky prodejní objednávky na vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Odebrat blokované řádky vytížení** na **Ne** . Vytížení nelze zpracovat, pokud je blokována prodejní objednávka. Chcete-li odebrat řádky prodejní objednávky z vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Ano** . Poté lze vytížení zpracovat.
+- Chcete-li kontrolovat chování pravidla **Vypršela platnost limitu úvěru**, nastavte možnost **Ignorovat pravidlo blokování při vypršení platnosti limitu úvěru, je-li datum vypršení platnosti prázdné** na **Ano**. Chcete-li zablokovat objednávku v případě, že datum vypršení platnosti bude prázdné, nastavte možnost **Ne**.
+- V Řízení skladu lze vytvořit vytížení při zadání prodejní objednávky. Chcete-li ponechat řádky prodejní objednávky na vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Odebrat blokované řádky vytížení** na **Ne**. Vytížení nelze zpracovat, pokud je blokována prodejní objednávka. Chcete-li odebrat řádky prodejní objednávky z vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Ano**. Poté lze vytížení zpracovat.
 - Prodejní objednávky mohou být automaticky uvolněny z kontroly správy úvěru. V poli **Důvod automatického uvolnění** vyberte důvod uvolnění, který bude při automatickém uvolnění prodejních objednávek použit jako výchozí.
-- Prodejní objednávky mohou být automaticky uvolněny z kontroly správy úvěru. V poli **Automaticky uvolnit** vyberte možnost **Bez zaúčtování** , chcete-li uvolnit blokování objednávky. Proces, který zablokoval objednávku, je nutné spustit ručně. Vyberte možnost **Se zaúčtováním** , chcete-li zaúčtovat objednávku pomocí stejného procesu zaúčtování, který byl spuštěn při zablokování prodejní objednávky.
+- Prodejní objednávky mohou být automaticky uvolněny z kontroly správy úvěru. V poli **Automaticky uvolnit** vyberte možnost **Bez zaúčtování**, chcete-li uvolnit blokování objednávky. Proces, který zablokoval objednávku, je nutné spustit ručně. Vyberte možnost **Se zaúčtováním**, chcete-li zaúčtovat objednávku pomocí stejného procesu zaúčtování, který byl spuštěn při zablokování prodejní objednávky.
 
 ### <a name="credit-management-checkpoint"></a>Kontrolní bod správy úvěru
 
@@ -56,13 +56,13 @@ Nezadáte-li počet dnů odkladu, budou pravidla úvěru zkontrolována při ka�
 Pro některé kontrolní body zaúčtování nelze na rozdíl od ostatních stanovit dny odkladu. Je nutné nastavit všechny kontrolní body zaúčtování tak, aby měly dny odkladu, nebo musí být všechny nastaveny tak, aby neměly žádné dny odkladu.
 
 - Označením políčka **Zaúčtování** můžete spustit pravidla správy úvěru, když je spuštěn kontrolní bod zaúčtování zobrazený na řádku. Pokud toto políčko neoznačíte, pravidla budou kontrolována pouze jednou během celého procesu zaúčtování.
-- Pokud políčko **Zaúčtování** označíte, zadejte počet dnů odkladu, které mají uplynout předtím, než budou pravidla blokování zkontrolována. Není-li označeno políčko **Zaúčtování** , nelze přidat dny odkladu.
-- Označením políčka **Pro forma** můžete spustit pravidla správy úvěru, když je spuštěn kontrolní bod pro forma zaúčtování zobrazený na řádku. Ve většině případů je pole **Zaúčtování** v dialogovém okně zobrazeném při zaúčtování prodejní objednávky nastaveno na **Ne** .
-- Pokud políčko **Zaúčtování** označíte, zadejte počet dnů odkladu, které mají uplynout předtím, než budou pravidla blokování zkontrolována. Není-li označeno políčko **Zaúčtování** , nelze přidat dny odkladu.
+- Pokud políčko **Zaúčtování** označíte, zadejte počet dnů odkladu, které mají uplynout předtím, než budou pravidla blokování zkontrolována. Není-li označeno políčko **Zaúčtování**, nelze přidat dny odkladu.
+- Označením políčka **Pro forma** můžete spustit pravidla správy úvěru, když je spuštěn kontrolní bod pro forma zaúčtování zobrazený na řádku. Ve většině případů je pole **Zaúčtování** v dialogovém okně zobrazeném při zaúčtování prodejní objednávky nastaveno na **Ne**.
+- Pokud políčko **Zaúčtování** označíte, zadejte počet dnů odkladu, které mají uplynout předtím, než budou pravidla blokování zkontrolována. Není-li označeno políčko **Zaúčtování**, nelze přidat dny odkladu.
 
 ### <a name="credit-management-statistics"></a>Statistiky správy úvěrů
 
-V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odběratel** je zahrnuto několik statistik správy úvěru. Je nutné zadat několik hodnot, které jsou nutné k výpočtu těchto statistik. Zadejte počet měsíců, který se použije pro výpočet následujících hodnot v okně s fakty **Statistika správy úvěru odběratele** :
+V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odběratel** je zahrnuto několik statistik správy úvěru. Je nutné zadat několik hodnot, které jsou nutné k výpočtu těchto statistik. Zadejte počet měsíců, který se použije pro výpočet následujících hodnot v okně s fakty **Statistika správy úvěru odběratele**:
 
 1. Počet dnů neuhrazeného prodeje 1
 2. Počet dnů neuhrazeného prodeje 2
@@ -74,7 +74,7 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 ### <a name="credit-limits"></a>Limity úvěru
 
 - Ve správě úvěru je limit úvěru odběratele zobrazen v měně odběratele. Je nutné definovat typ směnného kurzu pro limit úvěru v měně odběratele. V poli **Typ směnného kurzu limitu úvěru** vyberte typ směnného kurzu, který má být použit k převodu primárního limitu úvěru na limit úvěru odběratele.
-- Chcete-li uživatelům zabránit v úpravách limitů úvěru na stránce **Odběratel** , nastavte možnost **Povolit ruční úpravy limitů úvěru** na **Ne** . Je-li tato možnost nastavena na **Ne** , změny limitu úvěru odběratele lze provést pouze zaúčtováním transakcí úprav limitu úvěru.
+- Chcete-li uživatelům zabránit v úpravách limitů úvěru na stránce **Odběratel**, nastavte možnost **Povolit ruční úpravy limitů úvěru** na **Ne**. Je-li tato možnost nastavena na **Ne**, změny limitu úvěru odběratele lze provést pouze zaúčtováním transakcí úprav limitu úvěru.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Číselné řady a sdílené parametry číselných řad
 
