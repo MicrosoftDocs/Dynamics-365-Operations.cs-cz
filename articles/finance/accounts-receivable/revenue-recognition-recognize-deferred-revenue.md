@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458616"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115913"
 ---
 # <a name="recognize-deferred-revenue"></a>Uznání odložených výnosů
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Funkci uznání výnosů nelze zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
+> Funkci uznání výnosů nelze zapnout prostřednictvím správy funkcí. V současné době ji aktivujete pomocí konfiguračních klíčů.
 
 Toto téma popisuje proces uznání výnosů v plánu uznání výnosů. Po zaúčtování faktury pro prodejní objednávku se pro každý řádek prodejní objednávky, který má plán výnosů, vytvoří plán uznání výnosů. Plán výnosů na řádku se používá k určení, zda by měl být výnos řádku odložen.
 
@@ -37,11 +36,11 @@ Toto téma popisuje proces uznání výnosů v plánu uznání výnosů. Po zaú
 Existují dva způsoby přístupu k podrobnostem plánu uznání výnosů.
 
 - Plán uznání výnosů můžete otevřít přímo z fakturované prodejní objednávky. V tomto případě se informace v plánu výnosů filtrují, aby se zobrazovaly podrobnosti pouze pro vybranou prodejní objednávku. Tento přístup je užitečný, když ověřujete podrobnosti plánu pro prodejní objednávku.
-- Plán uznání výnosů můžete otevřít přímo ze stránky **Uznání výnosů \> Periodické úlohy**. Tento přístup se často používá, když jsou výnosy uznány na konci období. Při prvním otevření stránky se nezobrazí žádné informace. Pomocí filtrů nad mřížkou definujte kritéria pro podrobnosti plánu, které by se měly zobrazit. Data na faktuře můžete filtrovat zadáním časového období, prodejní objednávky, zákazníka, ID projektu nebo stavu.
+- Plán uznání výnosů můžete otevřít přímo ze stránky **Uznání výnosů \> Periodické úlohy**. Tento přístup se často používá, když jsou výnosy uznány na konci období. Při prvním otevření stránky se nezobrazí žádné informace. Pomocí filtrů nad mřížkou definujte kritéria pro podrobnosti plánu, které by se měly zobrazit. Data na faktuře můžete filtrovat zadáním časového období, prodejní objednávky, odběratele, ID projektu nebo stavu.
 
-[![Stránka plánů výnosů](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Obrázek znázorňující stránku Plány výnosů](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
-Záložka s náhledem **Finanční dimenze** pod mřížkou zobrazuje finanční dimenze řádku prodejní objednávky. Tyto dimenze byly brány v úvahu při účtování do odložených výnosů. Zohledňují se také při uznání výnosů. Použité hodnoty dimenze závisí na účetní struktuře, která je přiřazena k hlavním účtům výnosů a odložených výnosů.
+Záložka s náhledem **Finanční dimenze** pod mřížkou obsahuje finanční dimenze řádku prodejní objednávky. Tyto dimenze byly brány v úvahu při účtování do odložených výnosů. Zohledňují se také při uznání výnosů. Použité hodnoty dimenze závisí na účetní struktuře, která je přiřazena k hlavním účtům výnosů a odložených výnosů.
 
 ## <a name="recognize-revenue"></a>Uznání výnosů
 

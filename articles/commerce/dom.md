@@ -3,14 +3,13 @@ title: Distribuovaná správa objednávek (DOM)
 description: Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4458639"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982584"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -49,10 +48,14 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
     - **Povolit distribuovanou správu objednávek** – Nastavte tuto možnost **Ano**.
     - **Potvrdit použití map Bing pro distribuovanou správu objednávek** – Nastavte tuto možnost na **Ano**.
 
-        > [!NOTE]
-        > Tuto možnost můžete nastavit na **Ano** pouze tehdy, pokud je možnost **Povolit mapy Bing** na kartě **mapy Bing** stránky **Sdílené parametry obchodu** (**Maloobchod \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**) rovněž nastavena na **Ano** a pokud byl zadán platný klíč do pole **Klíč map Bing**.
 
-    - **Období zadržení ve dnech** – Určete, jak dlouho budou v systému zachovány plány, které spuštění distribuované správy objednávek generuje. Dávková úloha **Nastavení úlohy odstranění dat plnění DOM** odstraní všechny plány plnění, které jsou starší než počet dní, které zde zadáte.
+        > [!NOTE]
+        > Tuto možnost můžete nastavit na **Ano** pouze tehdy, pokud je na stránce **Sdílené parametry Commerce** (**Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry Commerce**) na kartě **Mapy Bing** nastavena možnost **Povolit mapy Bing** také na **Ano** a pokud byl zadán platný klíč do pole **Klíč map Bing**.
+        >
+        > Portál [Bing Maps Dev Center](https://www.bingmapsportal.com/) umožňuje omezit přístup k vašim klíčům rozhraní API pro mapy Bing na sadu domén, které zadáte. Tato funkce umožňuje odběratelům definovat striktní sadu hodnot odkazujícího nebo rozsahů IP adres, podle kterých bude klíč ověřen. Žádosti ze seznamu povolených položek budou normálně zpracovány, zatímco žádosti mimo seznam vrátí odpověď Přístup odepřen. Přidání zabezpečení domény do klíče rozhraní API je volitelné a klíče ponechané v původním stavu budou i nadále funkční. Seznam povolených položek pro klíč je nezávislý na všech ostatních klíčích, takže pro každý z vašich klíčů můžete stanovit odlišná pravidla. Distribuovaná správa objednávek nepodporuje nastavení vlastností odkazujících na doménu.
+
+
+    - **Doba uchovávání ve dnech** – Určete, jak dlouho budou v systému uchovány plány, které jsou generovány spuštěním distribuované správy objednávek. Dávková úloha **Nastavení úlohy odstranění dat plnění DOM** odstraní všechny plány plnění, které jsou starší než počet dní, které zde zadáte.
     - **Období zamítnutí (v dnech)** – Určete, kolik musí uplynout času, než může být přiřazen zamítnutý řádek objednávky ke stejnému místu.
 
 5. Na kartě **Řešitel** natavte následující hodnoty:
@@ -62,14 +65,15 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
     - **Typ řešitele** - Vyberte typ hodnoty. S aplikací Commerce jsou vydány dva typy řešitelů: **Řešitel výroby** a **Zjednodušitelný řešitel**. Pro všechna zařízení, která budou spouštět distribuovanou správu objednávek (to znamená všechny servery, které jsou součástí skupiny DOMBatch), musí být zvolen **Řešitel výroby**. Řešitel výroby vyžaduje speciální licenční klíč, který je ve výchozím nastavení licencován a nasazován v produkčních prostředích. U neprodukčních prostředí je třeba tento licenční klíč nasadit ručně. Pokud chcete nasadit licenční klíč ručně, postupujte takto:
 
         1. Ve službě Microsoft Dynamics Lifecycle Services otevřete knihovnu sdíleného majetku, zvolte **Model** jako typ majetku a stáhněte soubor **DOM license**.
-        2. Spusťte správce internetové informační služby společnosti Microsoft, klikněte pravým tlačítkem na **Web AOSService** a poté zvolte **Prozkoumat**. Otevře se okno průzkumníka Windows na **\<AOS service root\>\\webroot**. Poznamenejte si cestu \<AOS Service root\>, protože ji budete muset použít v dalším kroku.
-        3. Zkopírujte konfigurační soubor do adresáře **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Přejděte do klienta Headquarters a otevřete stránku **Parametry distribuované správy objednávek**. Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
+        1. Spusťte správce internetové informační služby společnosti Microsoft, klikněte pravým tlačítkem na **Web AOSService** a poté zvolte **Prozkoumat**. Otevře se okno průzkumníka Windows na **\<AOS service root\>\\webroot**. Poznamenejte si cestu \<AOS Service root\>, protože ji budete muset použít v dalším kroku.
+        1. Zkopírujte konfigurační soubor do adresáře **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        1. Přejděte do klienta Headquarters a otevřete stránku **Parametry distribuované správy objednávek**. Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
+
 
         > [!NOTE]
-        > Zjednodušený řešitel je poskytnut proto, aby maloobchodníci mohli vyzkoušet funkci distribuované správy objednávek bez nasazení speciální licence. Organizace by neměly používat zjednodušeného řešitele v produkčních prostředích.
+        > Zjednodušený řešitel je poskytnut proto, aby maloobchodníci mohli vyzkoušet funkci distribuované správy objednávek bez nasazení speciální licence. Organizace by neměly používat zjednodušeného řešitele v provozních prostředích.
         >
-        > Přestože zjednodušený řešitel poskytuje stejnou sadu funkcí jako řešitel výroby, existují limitace, týkající se výkonnosti (počet objednávek a řádků objednávek, které lze zpracovat při jednom spuštění) a konvergence výsledků (dávka objednávek nemusí v některých scénářích vytěžit nejlepší výsledky).
+        > Řešitel výroby zlepšuje výkon (například počet objednávek a řádků objednávek, které lze zpracovat při jednom spuštění) a konvergenci výsledků (jelikož dávka objednávek nemusí v některých scénářích vytěžit nejlepší výsledky). Řešitele výroby vyžadují některá pravidla, například **Částečné objednávky** nebo **Maximální počet míst**.
      
 6. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek**.
 7. Na kartě **Číselné řady** přiřaďte požadované číselné řady různým entitám distribuované správy objednávek.
@@ -121,9 +125,9 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
         \* Pokud je možnost **Plnit částečné objednávky** nastavena na **Ne**, možnost **Plnit částečné řádky** je vždy považována za nastavenou na **Ne**, bez ohledu na to, jak je ve skutečnosti nastavena.
 
         > [!NOTE]
-        > Ve verzi 10.0.5 aplikace Retail byl změněn parametr **Plnění objednávky pouze z jednoho místa** na **Maximální počet míst plnění**. Namísto toho, aby uživatel mohl konfigurovat, zda lze objednávky plnit pouze z jednoho místa nebo zda lze plnit z libovolného počtu skladových míst, mohou uživatelé nyní určit, zda má být plnění z dané sady míst (nejvýše 5) nebo z libovolného počtu míst. To poskytuje větší flexibilitu ohledně toho, z kolika míst lze objednávku plnit.
+        > Ve verzi 10.0.5 aplikace Retail byl změněn parametr **Plnění objednávky pouze z jednoho místa** na **Maximální počet míst plnění**. Namísto toho, aby uživatel mohl konfigurovat, zda lze objednávky plnit pouze z jednoho místa nebo zda lze plnit z libovolného počtu skladových míst, mohou uživatelé nyní určit, zda má být plnění z dané sady míst (nejvýše 5) nebo z libovolného počtu míst. To poskytuje větší flexibilitu ohledně množství míst, odkud lze objednávku plnit. Toto pravidlo funguje pouze s řešitelem výroby. 
 
-   - **Pravidlo místa plnění offline** – Toto pravidlo umožňuje organizacím určit místo nebo skupinu míst jako offline nebo nedostupné pro distribuovanou správu objednávek, aby objednávky nemohly být přiřazeny k těmto místům pro plnění.
+   - **Pravidlo místa plnění offline** – Toto pravidlo umožňuje organizacím určit místo nebo skupinu míst jako offline nebo nedostupná pro distribuovanou správu objednávek, aby objednávky nemohly být přiřazeny k těmto místům kvůli plnění.
     - **Pravidlo maximálního počtu zamítnutí** – Toto pravidlo umožňuje organizacím určit prahovou hodnotu zamítnutí. Když je dosažena prahová hodnota, proces distribuované správy objednávek označí objednávku nebo řádek objednávky jako výjimku a vyloučí je z dalšího zpracování.
 
         Poté, co jsou řádky objednávky přiřazeny k místu, místo může odmítnout přiřazená řádek objednávky, protože nemusí být schopno z nějakých důvodů plnit tento řádek. Zamítnuté řádky jsou označené jako výjimka a vrácené zpět do skupiny pro zpracování v dalším spuštění. Během dalšího spuštění se distribuovaná správa objednávek pokusí přiřadit zamítnutý řádek k jinému místu. Nové místo může rovněž zamítnout přiřazený řádek objednávky. Tento cyklus přiřazení a zamítnutí se může přihodit několikrát. Když počet zamítnutí dosáhne definované prahové hodnoty, distribuovaná správa objednávek označí řádek objednávky jako stálou výjimku a již znovu nevybere řádek pro přirazení. Distribuovaná správa objednávek bude zvažovat řádek objednávky znovu pro opětovné přiřazení pouze tehdy, když uživatel ručně resetuje stav řádku objednávky.

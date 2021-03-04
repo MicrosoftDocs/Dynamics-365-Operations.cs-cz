@@ -94,12 +94,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.17 (duben 2021)
+                      href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (únor 2021)
                       href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (leden 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
-                    - name: Commerce 10.0.14 (listopad 2020)
-                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -180,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Vložení aplikace plátna z Power Apps
+                - name: Vložení aplikací plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -190,6 +190,44 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Vysvětlení služeb Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Implementace správy životního cyklu
+              items:
+                - name: Domovská stránka Implementace správy životního cyklu
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Architektura pro aplikace Finance and Operations
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                - name: Nasazení projektu implementace
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Plánování prostředí
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Příprava pro ostré nasazení
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Často kladené dotazy týkající se ostrého nasazení
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Odeslání požadavku na službu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure AD'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Přesun prostředí mezi datovými centry
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Přesun licencí mezi typy smlouvy
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Přesune projektů implementace LCS z místního nasazení do cloudu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementace projektů Finance and Operations Commerce
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Aktualizace kódu a prostředí pro projekty Commerce
+                  href: dev-itpro/updating-environments.md
+                - name: Testování a problémy s výkonností
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Přehled architektury
           items:
             - name: Architektura
@@ -248,44 +286,6 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Inicializace počátečních dat v nových prostředích Commerce
                   href: enable-configure-retail-functionality.md
-            - name: Implementace správy životního cyklu
-              items:
-                - name: Domovská stránka Implementace správy životního cyklu
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura pro aplikace Finance and Operations
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Nasazení projektu implementace
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Plánování prostředí
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Příprava pro ostré nasazení
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Často kladené dotazy týkající se ostrého nasazení
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Odeslání požadavku na službu
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure AD'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Přesun prostředí mezi datovými centry
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Přesun licencí mezi typy smlouvy
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Přesune projektů implementace LCS z místního nasazení do cloudu
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementace projektů Finance and Operations Commerce
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty Commerce'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Aktualizace kódu a prostředí pro projekty Commerce
-                  href: dev-itpro/updating-environments.md
-                - name: Testování a problémy s výkonností
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Nastavení kanálů
           items:
             - name: Přehled kanálů
@@ -500,11 +500,13 @@
                       href: work-with-order-holds.md
                 - name: Platby
                   items:
-                    - name: Metody platby
+                    - name: Způsoby platby
                       href: payment-methods.md
                     - name: "Platební metody v\_kontaktních střediscích"
                       href: work-with-payments.md
-                    - name: 'Nastavení platební karty, autorizace a záznam'
+                    - name: Zpracování vrácení platby v kontaktních střediscích
+                      href: call-center-refund-payments.md
+                    - name: 'Nastavení, autorizace a zachycení platební karty'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurace nominálních hodnot hotovosti pro POS
                       href: cash-denominations.md
@@ -648,9 +650,11 @@
                       href: personalization-gdpr.md
                 - name: Povolení doporučení „nákupu podobného vzhledu“
                   href: shop-similar-looks.md
+                - name: Povolení doporučení „nákupu podobného vzhledu“
+                  href: shop-similar-description.md
                 - name: Zkušenosti s POS
                   items:
-                    - name: Přidání doporučení produktu v POS
+                    - name: Přidání doporučení produktů do POS
                       href: product.md
                     - name: Přidání doporučení na obrazovku transakcí
                       href: add-recommendations-control-pos-screen.md
@@ -710,16 +714,18 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Správa objednávek
           items:
-            - name: Objednávky zákazníka
+            - name: Objednávky odběratele
               items:
-                - name: Objednávky zákazníků v pokladním místě (POS)
+                - name: Objednávky odběratele v POS
                   href: customer-orders-overview.md
-                - name: Hybridní objednávky zákazníka
+                - name: Hybridní objednávky odběratele
                   href: hybrid-customer-orders.md
                 - name: Vyvolání operace objednávky v POS
                   href: enhancedorderrecall.md
                 - name: Povolení více režimů doručení a vyzvednutí
                   href: multiple-pickup-modes.md
+                - name: Zpracování vyzvednutí objednávky odběratele v POS
+                  href: process-order-pickup-POS.md
             - name: Prodejní objednávky
               items:
                 - name: "Vytváření objednávek v\_kontaktním středisku"
@@ -854,10 +860,14 @@
                   href: configure-multi-B2C-tenants.md
                 - name: Domény v Dynamics 365 Commerce
                   href: domains-commerce.md
-                - name: Přidání podpory pro síť pro doručování obsahu (CDN)
+                - name: Přidání podpory sítě pro doručování obsahu (CDN)
                   href: add-cdn-support.md
                 - name: Povolení zjišťování obchodu na základě polohy
                   href: enable-store-detection.md
+                - name: Digitální dárkové karty pro elektronické obchodování
+                  href: digital-gift-cards.md
+                - name: Požadavky na prohlížeč pro weby Dynamics 365 Commerce
+                  href: browser-requirements.md
             - name: Přehled ukázkového webu
               items:
                 - name: Přehled domovské stránky
@@ -948,11 +958,13 @@
                       href: enrich-category-page.md
                     - name: Ověření přístupnosti obsahu stránky
                       href: verify-accessibility.md
+                    - name: Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL
+                      href: create-dynamic-pages.md
                 - name: Navigace na webu
                   items:
                     - name: Přizpůsobení navigace na webu
                       href: customize-site-navigation.md
-                    - name: Vytvoření URL adresy stránky
+                    - name: Vytvoření adresy URL stránky
                       href: create-page-URL.md
             - name: Správa digitálních aktiv
               items:
@@ -1058,6 +1070,8 @@
                   items:
                     - name: Moduly kolekce produktů
                       href: product-collection-module-overview.md
+                    - name: Modul rychlého zobrazení
+                      href: quick-view-module.md
                 - name: Navigační moduly
                   items:
                     - name: Modul popisu cesty
@@ -1066,11 +1080,15 @@
                       href: nav-menu-module.md
                     - name: Modul volby lokality
                       href: site-selector.md
+                - name: Moduly vyhledávání
+                  items:
+                    - name: Modul výsledků hledání
+                      href: search-result-module.md
                 - name: Moduly shody s předpisy
                   items:
                     - name: Modul souhlasu se soubory cookie
                       href: cookie-consent-module.md
-            - name: Vyhledat
+            - name: Hledání
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
                   href: category-search-page-overview.md
@@ -1106,6 +1124,18 @@
           items:
             - name: Integrace Dynamics 365 Fraud Protection s aplikací Dynamics 365 Commerce
               href: dev-itpro/DFP.md
+        - name: Elektronický obchod B2B
+          items:
+            - name: Vytvoření webu elektronického obchodu B2B
+              href: b2b/set-up-b2b-site.md
+            - name: Vytváření hierarchií modelování pro organizace B2B
+              href: b2b/org-model.md
+            - name: Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B
+              href: b2b/manage-b2b-users.md
+            - name: Konfigurace způsobu platby zákaznického účtu pro weby elektronického obchodu B2B
+              href: b2b/payment-method.md
+            - name: Nastavení omezení množství produktů pro weby elektronického obchodu B2B
+              href: b2b/quantity-limits.md
         - name: Monitorování a analýza
           items:
             - name: Monitorování výkonnosti prodeje a marží
@@ -2066,6 +2096,8 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: Napodobení stavu přihlášení během místního vývoje
                       href: e-commerce-extensibility/mock-sign-in.md
+                    - name: Konfigurace zobrazení vlastností modulu na základě kontextu
+                      href: e-commerce-extensibility/configure-properties-context.md
                     - name: Globalizace modulů pomocí třídy CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Nastavení Azure Key Vault pro zabezpečenou správu klíčů
@@ -2152,7 +2184,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Nadcházející změny v Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
-                - name: Důležitý vývoj a změny ALM z verze 10.0.10 na 10.0.13
+                - name: Vývoj a změny ALM z verze 10.0.10 na 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
                 - name: Sloučení systémů sestavení pro Commerce a Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2162,7 +2194,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Vytvoření nasaditelných balíčků
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce
+                - name: Vývoj ve prostředích hostovaných v cloudu bez přístupu správce
                   href: dev-itpro/cloud-dev-box.md
                 - name: Nastavení kanálu buildu Commerce SDK
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2238,7 +2270,7 @@
               items:
                 - name: Zákazník Commerce Scale Unit s rozhraní API spotřebitele
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: "Vytvoření nového rozhraní API rozšíření Retail Serveru (Retail SDK verze 10.0.11\_a novější)"
+                - name: "Vytvoření rozhraní API pro rozšíření Retail Serveru (Retail SDK verze 10.0.11\_a novější)"
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: "Vytvoření nového rozhraní API rozšíření Retail Serveru (Retail SDK verze 10.0.11\_a starší)"
                   href: dev-itpro/retail-server-extension.md
@@ -2300,7 +2332,7 @@
                   href: payment-connector-data-fields.md
                 - name: Povolení ochrany před duplicitní platbou pro platební konektor
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Vytvoření balíčku plateb pro průzkumníka aplikací v nasazeních Service Fabric
+                - name: Vytvoření balíčku plateb Commerce pro nasazení Finance and Operations
                   href: dev-itpro/payment-connector-package.md
             - name: Rozšiřitelnost elektronického obchodu třetích stran
               items:

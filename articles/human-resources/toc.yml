@@ -5,6 +5,10 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 28. ledna 2021
+          href: hr-whats-new-2021-01-28.md
+        - name: 21. ledna 2021
+          href: hr-whats-new-2021-01-21.md
         - name: 2. prosince 2020
           href: hr-whats-new-2020-12-02.md
         - name: 22. října 2020
@@ -79,12 +83,16 @@
           items:
             - name: Volba technologie integrace dat
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurovat integraci se službou Common Data Service
+            - name: Nejčastější dotazy k omezování
+              href: hr-admin-integration-throttling-faq.md
+            - name: Konfigurace integrace Dataverse
               href: hr-admin-integration-common-data-service.md
-            - name: Entity Common Data Service
+            - name: Tabulky Dataverse
               href: hr-developer-entities.md
-            - name: Konfigurace virtuálních entit Common Data Service
+            - name: Konfigurace virtuálních entit Dataverse
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: "Nejčastější dotazy k\_virtuálním entitám Human Resources"
+              href: hr-admin-virtual-entity-faq.md
             - name: Konfigurace integrace s aplikací Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurace integrace s aplikací Dayforce
@@ -215,7 +223,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Vytvoření vlastních polí a práce s nimi
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: Vložení aplikace plátna z Power Apps
+            - name: Vložení aplikací plátna z Power Apps
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Nalezení informací pomocí vyhledávání
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
@@ -271,7 +279,7 @@
               href: hr-admin-troubleshooting-not-in-apps.md
             - name: Možnosti vykazování
               href: hr-admin-troubleshooting-reporting.md
-            - name: Často kladené otázky k integraci
+            - name: Nejčastější dotazy k integraci
               href: hr-admin-troubleshooting-integration.md
     - name: Průvodce vývojáře
       items:
@@ -279,7 +287,7 @@
           href: hr-developer-overview.md
         - name: Rozšíření o Power Apps a Power Automate
           href: hr-developer-power-apps.md
-        - name: Entity Common Data Service
+        - name: Tabulky Dataverse
           href: hr-developer-entities.md
         - name: Vlastní pole
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: Volba technologie integrace dat
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurovat integraci se službou Common Data Service
+            - name: Konfigurace integrace Dataverse
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurace integrace s aplikací Finance
               href: hr-admin-integration-finance.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Odeslání žádosti o volno do workflow
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: Rozhraní API integrace ATS
+          items:
+            - name: Úvod
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Požadavek na nábor a související entity
+              items:
+                - name: Požadavek na nábor
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Požadavek na nábor – vzdělání
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Požadavek na nábor – místo
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Požadavek na nábor – pozice
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Požadavek na nábor – dovednost
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Příklad dotazu pro požadavek na nábor
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Požadavek na nábor – sady možností
+              items:
+                - name: Stav práce z hlediska přesčasů
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Požadavek na nábor – stav pozice
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Požadavek na nábor – stav
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Povinná kategorie práce
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: "Kandidát k přijetí a\_související entity"
+              items:
+                - name: Kandidát k přijetí
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Typ certifikátu
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Kontakt strany
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Osoba
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Adresa osoby
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Certifikát osoby
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Vzdělání osoby
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Identifikační číslo osoby
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Odborné zkušenosti osoby
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Prověřování osoby
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Dovednost osoby
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Úroveň hodnocení
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Typy prověřování
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Ukázkový dotaz pro kandidáta k přijetí
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Sady možností kandidáta
+              items:
+                - name: Výsledek integrace uchazeče
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Prázdné Ano Ne
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Stav dokončení
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Typ kontaktu
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Základ kreditu vzdělání
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Pohlaví
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Rodinný stav
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Měsíce roku
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Ne Ano
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Jednotka období
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Frekvence prověřování
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Zdroj generování frekvence prověřování
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Typ úrovně dovednosti
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Uživatelská příručka
       items:
         - name: Přehled
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Emailové oznámení výstrah klientovi
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektronické podpisy
-              items:
-                - name: Přehled elektronických podpisů
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Nastavení elektronických podpisů
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Správa případů
               items:
                 - name: Přehled správy případů
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Zpracování změn sazby
                       href: hr-benefits-process-rate-changes.md
+                - name: Vykazování ACA
+                  href: hr-benefits-management-aca-reports.md
             - name: Definování a správa programu zaměstnaneckých výhod
               href: hr-benefits-manage-program.md
             - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"

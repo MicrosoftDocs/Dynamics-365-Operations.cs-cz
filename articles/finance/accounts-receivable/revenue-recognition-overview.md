@@ -1,6 +1,6 @@
 ---
 title: Přehled uznání výnosů
-description: Toto téma obsahuje informace o funkci uznání výnosů. Tato funkce poskytuje flexibilní rámec, který vám umožňuje definovat pravidla specifická pro společnost pro uznání jak výnosové ceny, tak plán výnosů pro objednávky s více prvky.
+description: Toto téma obsahuje informace o funkci uznání výnosů. Tato funkce poskytuje flexibilní rámec, který vaší společnosti umožňuje definovat vlastní pravidla uznání výnosové ceny a plánu výnosů pro objednávky s více složkami.
 author: kweekley
 manager: aolson
 ms.date: 11/11/2019
@@ -11,30 +11,31 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: a7e37a0800ec7909f79e5a2354f59c7450995641
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4458641"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995607"
 ---
 # <a name="revenue-recognition-overview"></a>Přehled uznání výnosů
 
 [!include [banner](../includes/banner.md)]
 
+Společnosti podnikající v oborech, kde se obchoduje s více složkami, jako jsou produkty, služby nebo předplatná, musí umět rozlišovat jednotlivé složky na objednávkách, takže jejich výnosy mohou být uznány na základě souboru pokynů pro jednotlivé společnosti a odvětví.
+
 > [!NOTE]
-> Funkci uznání výnosů nelze zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
+> Funkci uznání výnosů nelze zapnout prostřednictvím správy funkcí. V současné době ji aktivujete pomocí konfiguračních klíčů.
 
-Společnosti v průmyslových odvětvích, které prodávají více prvků, jako jsou produkty, služby, předplatné atd., musí být schopny rozdělit objednávky s více prvky, aby mohly být výnosy přiznány na základě souboru pokynů pro jednotlivé společnosti a pro jednotlivá odvětví.
+> Uznání výnosů (včetně funkce sady) nelze použít v kanálech Commerce (elektronické obchodování, POS, kontaktní středisko). Položky konfigurované s uznáním výnosů nesmí být přidány na objednávky nebo do transakcí vytvořených v kanálech Commerce.
 
-Obecně lze proces přiznání výnosů použít k provedení těchto úloh:
+Obecně lze uznání výnosů použít k následujícím účelům:
 
-* Přiřazení výnosů, abyste mohli zaručit, že příslušná výnosová cena bude uznána na základě hodnoty komponent na objednávkách s více prvky.
+* Přidělení výnosů, které pomáhá zaručit, že příslušná výnosová cena bude uznána na základě hodnoty komponent na objednávkách s více složkami.
 * Odložení výnosů na základě plánu výnosů, který představuje smluvní časový rámec a procenta pro uznání výnosů v čase.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
