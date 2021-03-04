@@ -72,12 +72,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.17 (duben 2021)
+                      href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (únor 2021)
                       href: get-started/whats-new-scm-10-0-16.md
                     - name: Supply Chain Management 10.0.15 (leden 2021)
                       href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (listopad 2020)
-                      href: get-started/whats-new-scm-10-0-14.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
@@ -154,11 +154,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Uložená zobrazení
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Standardní uložená zobrazení pro Supply Chain Management
+                  href: get-started/saved-views-scm.md
                 - name: Možnosti mřížky
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vložení aplikace plátna z Power Apps
+                - name: Vložení aplikací plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -174,8 +176,8 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Architektura pro aplikace Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
                 - name: Nasazení projektu implementace
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Plánování prostředí
@@ -224,6 +226,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
+              href: cloud-edge/cloud-edge-warehouse-order.md
         - name: Správa majetku
           items:
             - name: Přehled správy majetku
@@ -363,6 +367,8 @@
               items:
                 - name: 'Prognózy, pracovní příkazy a projekty'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: Účet za údržbu majetku vlastněného odběratelem
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: Integrace správy majetku s dlouhodobým majetkem
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Preventivní a reaktivní údržba
@@ -439,10 +445,14 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Stav údržby
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Správa majetku z mobilní aplikace
+              items:
+                - name: Nastavení mobilního pracovního prostoru pro správu majetku
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: Použití mobilního pracovního prostoru pro správu majetku
+                  href: asset-management/asset-management-mobile-workspace.md
             - name: Integrace správy majetku s Dynamics 365 Guides
               href: asset-management/asset-management-guides-integration.md
-            - name: Mobilní pracovní prostor správy majetku
-              href: asset-management/asset-management-mobile-workspace.md
         - name: Správa dat
           items:
             - name: Entity cíle
@@ -1319,6 +1329,8 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: Mobilní pracovní prostor zásob na skladě
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: Řešení potíží se skladovými operacemi
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: Odchozí proces
               items:
                 - name: Přehled odchozího procesu
@@ -1377,13 +1389,19 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Nákupní žádanky
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: Plánování výroby
+                  href: master-planning/planning-optimization/production-planning.md
                 - name: Značení zásob s optimalizací plánování
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Vyloučení produktů s určitými stavy životního cyklu produktu
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: Schválit plánované objednávky
+                - name: Ochranné doby disponibility
+                  href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Schválení plánovaných objednávek
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatické potvrzení s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
@@ -1909,6 +1927,8 @@
                   href: production-control/bom-designer-functionality.md
                 - name: Použití návrháře receptur
                   href: production-control/formula-designer.md
+                - name: Přepsání výchozího principu rezervace pro materiály ve výrobě
+                  href: production-control/override-default-reservation-principle.md
                 - name: "Přidávání variant produktů do nákupních objednávek s\_použitím různých hmotností"
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: Vytvoření prodejní objednávky pro konfigurovatelný produkt
@@ -2027,6 +2047,8 @@
                       href: production-control/bill-of-material-bom.md
                     - name: Funkce návrháře kusovníku
                       href: production-control/bom-designer-functionality.md
+                    - name: Přepsání výchozího principu rezervace pro materiály ve výrobě
+                      href: production-control/override-default-reservation-principle.md
                     - name: Fiktivní položky
                       href: production-control/phantom-items.md
                     - name: Výpočty kusovníku
@@ -2757,6 +2779,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systémem řízený výdej v seskupení
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Nastavení různých rozměrů pro balení a skladování
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: Nastavení vytváření kontejnerů
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Potvrzení dávky a poznávací značky
@@ -2823,6 +2847,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: Opakovaný tisk a anulování štítků vlny
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Expedice malých balíků
+                      href: warehousing/small-parcel-shipping.md
                     - name: Řešení potíží se sestavením nákladu a dodávkami
                       href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Zásady konsolidace dodávek
@@ -2915,12 +2941,16 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Práce se směrnicemi skladového místa
                       href: warehousing/create-location-directive.md
+                    - name: Konfigurace produktových filtrů pro skladové transakce
+                      href: warehousing/filters-and-filter-codes.md
                     - name: Limity pro místo uskladnění
                       href: warehousing/location-stocking-limits.md
                     - name: Kódy kroku vlny
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurace zpracování vlny
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Plánování vytváření práce během vlny
+                      href: warehousing/configure-wave-schedule-work-creation.md
                     - name: Nastavení a použití tisku štítků vlny
                       href: warehousing/configure-wave-label-printing.md
                     - name: Automatická aktualizace dodávek
@@ -2955,6 +2985,8 @@
                       href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Instalace a konfigurace aplikace skladu
                   items:
+                    - name: Instalace a připojení mobilní aplikace Řízení skladu
+                      href: warehousing/install-configure-warehouse-management-app.md
                     - name: Instalace a připojení aplikace skladu
                       href: warehousing/install-configure-warehousing-app.md
                     - name: "Skenování čárových kódů pomocí fotoaparátu v\_aplikaci skladu"
