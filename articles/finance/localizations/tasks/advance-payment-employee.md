@@ -171,3 +171,6 @@ Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele z
 12. Zavřete stránku.
 13. Klikněte na Transakce.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

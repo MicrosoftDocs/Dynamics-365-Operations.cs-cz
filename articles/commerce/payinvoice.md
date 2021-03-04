@@ -45,3 +45,6 @@ Chcete-li povolit tyto scénáře, je třeba nakonfigurovat funkční profil pro
 
 > [!NOTE]
 > Platba nebo vyrovnání dílčích částek není ještě podporována.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

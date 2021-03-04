@@ -68,3 +68,6 @@ Toto je pátá z pěti procedur, které demonstrují proces plateb odběratele p
 11. Klepněte na tlačítko OK.
 12. Klepněte na tlačítko OK.
 13. Klikněte na Vytvořit platby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

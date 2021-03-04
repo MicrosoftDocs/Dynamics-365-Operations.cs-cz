@@ -60,3 +60,6 @@ Toto je druhý z pěti postupů, které společně popisují proces platby odbě
     * Příklad: vyberte bankovní účet DEMF OPER.  
 6. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

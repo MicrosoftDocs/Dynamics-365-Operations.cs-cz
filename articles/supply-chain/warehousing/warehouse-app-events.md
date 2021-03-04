@@ -78,3 +78,6 @@ Resetování zprávy „Selhalo“ o události aplikace:
 1. Pokračujte v práci, dokud se neresetují všechny relevantní zprávy.
 
 Zprávu o události **Selhalo** můžete také odebrat pomocí možnosti **Odstranit** na panelu nástrojů **Zprávy o událostech aplikace skladu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

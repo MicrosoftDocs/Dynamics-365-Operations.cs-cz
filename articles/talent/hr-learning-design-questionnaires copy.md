@@ -246,3 +246,6 @@ Případně můžete nastavit dotazník tak, že pokud respondent vybere odpově
 
 [Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

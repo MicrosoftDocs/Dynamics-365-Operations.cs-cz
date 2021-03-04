@@ -41,3 +41,6 @@ Chcete-li vytvořit a zaúčtovat záznam deníku reklasifikace krátkodobých z
 4. Zapněte parametr **Zaúčtovat**. Případně, pokud by měl být záznam vytvořen, ale ne zaúčtován, ponechte tento parametr vypnutý.
 5. Zapněte parametr **Náhled před zveřejněním** k zobrazení záznamu před jeho zaúčtováním.
 6. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

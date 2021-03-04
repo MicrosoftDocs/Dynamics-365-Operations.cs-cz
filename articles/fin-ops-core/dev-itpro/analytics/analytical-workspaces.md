@@ -45,3 +45,6 @@ ms.locfileid: "4683131"
 - [Pracovní prostor plateb dodavatelů](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Obsah výkonnosti skladu v Power BI](warehouse-power-bi-content.md)
 - [Obsah metriky zaměstnanců v Power BI](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

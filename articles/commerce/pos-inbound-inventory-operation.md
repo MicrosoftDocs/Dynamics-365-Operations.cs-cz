@@ -221,3 +221,6 @@ Poté, co je dokument ve stavu **Požadováno**, je viditelný na kartě **Aktiv
 ## <a name="related-topics"></a>Související témata
 
 [Odchozí skladová operace v POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

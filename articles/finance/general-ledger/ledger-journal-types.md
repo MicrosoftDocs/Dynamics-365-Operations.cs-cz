@@ -68,3 +68,6 @@ Toto téma popisuje typy deníků, které lze nastavit pro finanční deníky. S
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

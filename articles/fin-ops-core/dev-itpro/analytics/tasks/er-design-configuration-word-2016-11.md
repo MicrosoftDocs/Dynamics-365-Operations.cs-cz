@@ -99,3 +99,6 @@ Otevřete tento dokument v aplikaci Word a proveďte následující kroky:
 16. Klikněte na tlačítko **OK**.
 17. Klikněte na tlačítko **OK**. Analyzujte vygenerovaný výstup. Povšimnete si, že vytvořený výstup je ve formátu aplikace Word a obsahuje podrobnosti o zpracovaných platbách.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

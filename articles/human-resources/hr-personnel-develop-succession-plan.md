@@ -60,3 +60,6 @@ Jak v průběhu času vaše organizace roste a vy zvažujete plánování násle
 28. Klikněte na možnost Sestava.
     * Sestava zobrazí seznam doporučených spárování v horní části sestavy.  Můžete vidět, že je zde uveden element „mezera“.  To je rozdíl mezi úrovní, která byla uvedena v mapování dovedností a úrovní dovednosti, která je přiřazena dané osobě.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

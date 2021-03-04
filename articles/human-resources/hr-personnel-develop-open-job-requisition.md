@@ -66,3 +66,6 @@ Náborové projekty umožňují spravovat proces náboru. K jednotlivým náboro
     * Stav Zahájeno znamená, že je projekt připraven přijímat žádosti.  
 33. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

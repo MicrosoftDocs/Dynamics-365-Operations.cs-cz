@@ -41,3 +41,6 @@ Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pr
 9. V poli Počáteční výběr vyberte dimenzi, která bude mít výběr při použití alias.
     * Po zadání zástupce a vyplnění účtu a dimenzí, se kurzor přesune do pole Počáteční výběr.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

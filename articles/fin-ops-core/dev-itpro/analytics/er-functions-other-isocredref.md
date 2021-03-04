@@ -60,3 +60,6 @@ Výsledná textová hodnota.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Další funkce (konkrétní pro obchodní domény)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Můžete také filtrovat kalendáře podle manažera nebo oddělení. Přiřazen
 
 Informace o nastavení kalendáře naleznete v tématu [Konfigurace parametrů kalendáře](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

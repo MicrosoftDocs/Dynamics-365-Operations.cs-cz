@@ -91,3 +91,6 @@ Můžete vybírat z následujících metod odpisování:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Reso
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

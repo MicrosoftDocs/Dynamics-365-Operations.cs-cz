@@ -109,3 +109,6 @@ Chcete-li určit schvalovatele, postupujte takto.
 1. Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele**.
 2. V poli **ID schvalujícího uživatele** vyberte ID uživatele, který musí podepsat změny provedené jiným uživatelem.
 3. V poli **Podepsat pro ID uživatele** vyberte ID uživatele, jehož změny musí být podepsány.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

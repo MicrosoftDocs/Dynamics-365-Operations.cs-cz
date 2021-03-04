@@ -143,3 +143,6 @@ Aktualizované mapování by mělo vypadat takto.
 
 ![Transformace pole pohlaví](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

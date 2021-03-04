@@ -145,3 +145,6 @@ Toto chování je záměrné. Vybraná adresa musí být klasifikována jako dor
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Mohu najít uživatele, který zrušil nákupní objednávku?
 
 Tyto informace jsou sledovány pouze v případě, že je u objednávky možné provádět změny. Pokud používáte správu změn, můžete vidět, kdo změnu (zrušení) odeslal a kdo ji schválil.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

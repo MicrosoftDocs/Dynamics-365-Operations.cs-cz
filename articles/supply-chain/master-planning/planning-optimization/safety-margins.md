@@ -183,3 +183,6 @@ Například položka má dobu realizace jeden den a rezervu příjmu tři dny. N
 [Začínáme s optimalizací plánování](get-started.md)
 
 [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

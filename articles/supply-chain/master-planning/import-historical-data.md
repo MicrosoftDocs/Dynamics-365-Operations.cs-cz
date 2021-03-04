@@ -59,3 +59,6 @@ Po importu historických dat poptávky lze generovat prognózu poptávky.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

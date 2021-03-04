@@ -52,3 +52,6 @@ Oddělení jsou provozní jednotky, které představují funkční oblasti spole
 16. Zadejte hodnotu do pole Popsat změny.
 17. Klikněte na tlačítko Publikovat.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

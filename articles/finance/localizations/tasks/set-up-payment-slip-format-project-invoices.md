@@ -66,3 +66,6 @@ Tato funkce je k dispozici pro právnické osoby, jejichž primární adresa je 
 16. Klikněte na položku Uložit.
 17. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

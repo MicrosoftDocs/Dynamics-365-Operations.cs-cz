@@ -346,3 +346,6 @@ Pokud je předdefinovaný základ přidělení člena dimenze Elektřina přidru
 ## <a name="additional-resources"></a>Další zdroje
 
 [Základy přidělení](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

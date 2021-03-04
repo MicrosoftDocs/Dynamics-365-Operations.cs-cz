@@ -73,3 +73,6 @@ Předpisy země/oblasti ovlivňují nastavení daní a další oblasti správy f
 
 Funkce Supply Chain Management pokrývá části procesu P2P, které zahrnují požadavky, objednávání, příjem, fakturaci a platby za zboží a služby, které vaše organizace nakupuje. Informace o funkcích správy nákupů, zásob a výroby naleznete na [domovské stránce aplikace Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

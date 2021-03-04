@@ -69,3 +69,6 @@ Na následujícím obrázku je znázorněna logika, která se používá v pří
 Na následujícím obrázku je znázorněna logika, která se používá v případě, že je řízení souběžnosti nastaveno na **Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou**.
 
 ![Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou](./media/Model_2.png "Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 4. Klikněte na tlačítko Dokončit.
 5. Klepněte na tlačítko OK.
 ![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

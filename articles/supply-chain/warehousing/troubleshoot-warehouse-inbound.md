@@ -65,3 +65,6 @@ Nová funkce zpracování příchozího nákladu *Příjem většího množství
 1. Nadměrné přijetí množství vytížení
 
 Další informace viz [Zaúčtujte registrované množství produktu oproti nákupním objednávkám](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

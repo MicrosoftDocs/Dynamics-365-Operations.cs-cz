@@ -165,3 +165,6 @@ Můžete upravovat údaje uvedené v předchozí tabulce pro pozice nebo úlohy 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

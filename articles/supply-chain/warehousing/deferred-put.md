@@ -110,3 +110,6 @@ Pracovní prostor **sledování odchozích prací** obsahuje dvě dlaždice, kte
 ## <a name="deleting-completed-tasks"></a>Odstranění dokončených úkolů
 
 Odložené úlohy zpracování vložení můžete odstranit tak, že je vyberete a odstraníte na stránce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

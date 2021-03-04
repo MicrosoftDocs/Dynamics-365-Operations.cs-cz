@@ -91,3 +91,6 @@ V tomto tématu provedete dva hlavní kroky:
 9. V dialogovém okně **Objekt zabezpečení** vyberte objekt zabezpečení přidáním **Doplněk elektronické fakturace**.
 10. Vyberte **Přidat** a potom vyberte **Uložit změny Trezoru klíčů**.
 11. Na stránce **Přehled** zkopírujte hodnotu **Název DNS** pro trezor klíčů. Tato hodnota bude použita během instalace služby v RCS a bude označována jako *identifikátor URI trezoru klíčů*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispoz
 | Hlavní knihy                   | Hlavní knihy, které lze použít k filtrování sestavy u aktuální hlavní knihy              |
 | Kódy rozpočtu              | Kódy rozpočtu pro filtrování sestav                                                |
 | Právnické osoby            | Právnické osoby, které lze použít k filtrování sestavy u aktuální právnické osoby |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

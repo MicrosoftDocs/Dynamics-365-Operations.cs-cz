@@ -54,3 +54,6 @@ Tohle téma popisuje použití registru faktur k vytvoření faktur a použití 
 10. Zvolte **Zaúčtovat**.
 11. Výběrem možnosti **Doklad** zobrazte položky, které byly zaúčtovány. Účet Faktury čekající na schválení bude stornován a nahrazen údaji skutečného účtu výdajů.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

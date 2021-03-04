@@ -40,3 +40,6 @@ Tato procedura vás provede konfigurací propojených produktů. Tato procedura 
 10. Zadejte číslo do pole Množství.
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

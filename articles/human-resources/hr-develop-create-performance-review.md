@@ -78,3 +78,6 @@ Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pr
 34. Zvolte kartu **Kontrola**. S tím, jak recenze prochází jednotlivými stavy, zaměstnanec a manažer můžou přidávat komentáře pro každý cíl nebo kompetenci.  
 35. Vyberte kartu **Podpisy** . Pracovník a manažer se mohou podepsat při kontrole. Po dokončení všech požadovaných podpisů je stav změněn na hodnotu **Dokončeno** a nelze provést žádné další změny.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

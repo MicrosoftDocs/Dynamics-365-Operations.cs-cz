@@ -376,3 +376,6 @@ Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tent
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

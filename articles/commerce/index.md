@@ -56,3 +56,6 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Správa webu s elektronickým obchodováním](online-store-overview.md)
 - [Ochrana proti podvodům](dev-itpro/DFP.md)
 - [Vývoj a rozšiřitelnost obchodu](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

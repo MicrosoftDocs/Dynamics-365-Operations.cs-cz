@@ -54,3 +54,6 @@ Chcete například vytvořit interval servisu o délce 10 dní.
 ## <a name="related-topics"></a>Související témata
 
 [Intervaly servisu](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -185,3 +185,6 @@ Většina polí u objednávek technických změn je stejná jako pole pro vydan�
 | Bezpečnost, ochrana zdraví a životního prostředí | Uveďte, zda se na změnu vztahují pravidla ochrany životního prostředí a bezpečnosti. Pokud ano, můžete vybrat příslušná pravidla. |
 
 Můžete použít tlačítko **Údržba / kopírování informací o změně** ke kopírování informací o změně mezi ovlivněnými produkty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

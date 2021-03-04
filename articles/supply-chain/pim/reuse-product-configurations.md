@@ -45,3 +45,6 @@ Při resetování opětovného použití konfigurací se přestanou brát v úva
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

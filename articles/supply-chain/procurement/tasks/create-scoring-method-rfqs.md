@@ -47,3 +47,6 @@ Tato procedura popisuje způsob vytváření metody hodnocení. Metoda hodnocen�
 14. V poli Rozsah od zadejte číslo.
 15. V poli Rozsah do zadejte číslo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

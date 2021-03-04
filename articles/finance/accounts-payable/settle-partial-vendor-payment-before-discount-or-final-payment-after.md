@@ -122,3 +122,6 @@ Potom Anežka zaúčtuje platbu. Jakmile otevře stránku **Transakce dodavatele
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

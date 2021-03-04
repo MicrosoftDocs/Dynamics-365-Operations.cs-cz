@@ -107,3 +107,6 @@ Při nastavování účetních struktur existují doporučené postupy, které m
 Jakmile jste s novým nastavením nebo změnou účetní struktury spokojení, musíte ji aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny.
 
 Další informace naleznete v tématu [Plánování účtových osnov](plan-chart-of-accounts.md), [finanční dimenze](financial-dimensions.md) a [Zadání kombinací účtů a dimenzí (segmentovaná kontrola položek)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -182,3 +182,6 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční v
 
 ## <a name="generating-consolidated-financial-statements"></a>Generování konsolidovaných finančních výkazů
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

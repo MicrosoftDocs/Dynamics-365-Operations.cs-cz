@@ -529,3 +529,6 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

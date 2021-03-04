@@ -128,3 +128,6 @@ Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nas
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

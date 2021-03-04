@@ -56,3 +56,6 @@ Můžete propojit informační kódy tak, aby při spuštění jednoho informač
 **Příklad 2: Propojení informačních kódů se skupinami informačních kódů**
 
 Při prodeji některých produktů, např. mobilních zařízení, chcete vždy shromáždit sadu konkrétních informací, například telefonní číslo, identifikátor mobilního zařízení (MEID) a sériové číslo. Také však chcete získat jiné informace pro tablet a pro mobilní telefon. Lze nastavit skupinu informačních kódů, která zahrnuje výzvy na telefonní číslo, MEID a sériové číslo, a poté propojit skupinu informačních kódů s jednotlivým informačním kódem. Při spuštění informačního kódu specifického pro produkt lze skupinu informačních kódů spustit následně, abyste mohli shromažďovat společná data, aniž by bylo nutné definovat více sad propojených informačních kódů pro každé zařízení.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Vybrané servisní zakázky budou buď zrušeny, nebo bude jejich stav **Zrušen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

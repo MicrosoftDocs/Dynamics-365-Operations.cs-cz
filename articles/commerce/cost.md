@@ -171,3 +171,6 @@ Pro tuto kombinaci musíte nastavit následující pole:
 
 > [!IMPORTANT]
 > Aby distribuovaná správa objednávek zvažovala při svém spuštění tyto náklady, musíte přidat koeficient nákladů do příslušného profilu plnění.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

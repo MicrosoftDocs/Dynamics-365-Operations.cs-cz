@@ -66,3 +66,6 @@ Data aplikace se používají k naplnění sestav v balíčku obsahu kompenzací
 | Pracovní síla\_JménoPracovníka             | Křestní jméno, příjmení a celé jméno                                                                       | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | PracovníSíla\_TitulPracovníka            | Název a datum služebního věku                                                                                   | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | Workforce\_WorkerTrend            | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job, Workforce\_WorkerBenefit |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

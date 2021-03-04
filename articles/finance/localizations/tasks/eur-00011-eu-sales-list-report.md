@@ -101,3 +101,6 @@ Tento postup je určen pouze pro účetní.
 7. Klikněte na tlačítko OK.
 8. Vyberte volbu „Uzavřeno“ v poli Výběr.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

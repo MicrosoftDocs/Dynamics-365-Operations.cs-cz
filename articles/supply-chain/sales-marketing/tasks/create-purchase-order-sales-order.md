@@ -69,3 +69,6 @@ Tento postup zobrazuje, jak vytvořit nákupní objednávku na základě plánu 
     - **Odkaz na šarži** zajišťuje, že náklady aktuálního nákupu budu zpoplatněny na připojené prodejní objednávce.  
     - Otevřením odkazu v poli **Referenční číslo** můžete přejít na původní prodejní objednávku.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

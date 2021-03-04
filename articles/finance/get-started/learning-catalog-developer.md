@@ -94,3 +94,6 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah | popis  | Formát  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[Zkouška MB-500: Microsoft Dynamics 365: Vývojář aplikací Finance and Operations](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Tato zkouška ověří vaši schopnost splnit následující technické úkoly: naplánovat architekturu a návrh řešení; použít vývojářské nástroje; navrhovat a vyvíjet prvky AOT; vývoj a testování kódu; implementovat reporting; integrovat a spravovat datová řešení; a implementovat zabezpečení a optimalizovat výkon. | Zkouška; náklady se liší podle oblasti. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Chcete-li definovat výchozí ID dávky, které se používá pro fakturaci prod
 
 > [!NOTE]
 > Podpora pro zlepšené zpracování položek sledovaných dávkou při zaúčtování výkazů pro nerozšířené scénáře správy skladu byla představena v aplikaci Retail verze 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

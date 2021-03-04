@@ -135,3 +135,6 @@ Následující obrázek znázorňuje příklad hodnocení produktů v kanálech 
 [Správa hodnocení a recenzí](manage-reviews.md)
 
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

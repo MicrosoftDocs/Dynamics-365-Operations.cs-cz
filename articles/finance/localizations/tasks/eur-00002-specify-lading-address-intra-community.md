@@ -73,3 +73,6 @@ Postup se vztahuje na všechny evropské země/oblasti. Úkol byl vytvořen za p
 37. Klikněte na záložku Obecné.
     * Vyhledejte nově vytvořený řádek a ověřte, že odesílatel dodal zboží z Itálie.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

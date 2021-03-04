@@ -48,3 +48,6 @@ Na stránce **Majetkové transakce** se zobrazují transakce, které buď zvyšu
 Chcete-li zobrazit výdajové leasingové transakce, vyberte leasing na stránce **Souhrn pronájmu** a poté vyberte **Knihy** k otevření leasingových knih, které jsou připojeny k záznamu o leasingu. Pak vyberte **Výdajové transakce**.
 
 Na stránce **Výdajové transakce** se zobrazují všechny výdaje, které byly zaúčtovány oproti leasingu, jako jsou úrokové náklady, výdaje na odpisy a jakékoli zachraňovací náklady.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

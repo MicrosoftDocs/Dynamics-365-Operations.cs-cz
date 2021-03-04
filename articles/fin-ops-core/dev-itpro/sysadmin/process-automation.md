@@ -47,3 +47,6 @@ Každý výskyt lze upravit, aniž by to mělo vliv na jiné výskyty definovan�
 ## <a name="developer-documentation"></a>Dokumentace pro vývojáře
 
 Rámec automatizace procesů umožňuje vývojářům rozšířit rámec automatizace procesů. Dokumentace k [rámci automatizace procesu](../process-automation/process-automation-framework.md) poskytuje informace o tom, jak vytvářet vlastní procesy, jež mají být spouštěny dávkovým serverem, jak je plánovat pomocí průvodce automatizací procesů a automaticky zobrazovat v kalendářovém zobrazení.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

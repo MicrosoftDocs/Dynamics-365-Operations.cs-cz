@@ -41,3 +41,6 @@ Manažer kompenzací a zaměstnaneckých výhod může přihlásit zaměstnance 
 8. Přepněte rozšíření oddílu Organizační přepsání.
     * Je-li třeba zohlednit výkon zaměstnance, je možné přepsat výkon v ostatních odděleních nebo oddělení jiném, než které je přiřazeno pro pozici zaměstnance. Sloupec Procento musí dohromady dát číslo 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

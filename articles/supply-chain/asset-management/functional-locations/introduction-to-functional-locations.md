@@ -83,3 +83,6 @@ Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabul
 | Závady                              | Otevřete stránku **Závady majetku**, kde můžete zobrazit seznam registrací závad majetku, který souvisí s vybraným funkčním místem. |
 | Aktualizace stavu funkčního místa    | Aktualizujte fázi vybraného funkčního místa.                                                                                        |
 | Protokol stavu životního cyklu                 | Zobrazte protokol, který zobrazuje fáze vybraného funkčního místa.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

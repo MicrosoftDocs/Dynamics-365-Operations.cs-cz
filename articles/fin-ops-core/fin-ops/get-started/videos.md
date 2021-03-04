@@ -167,3 +167,6 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) se zaměřuje na poskytování technických podrobných a osvědčených postupů, které zákazníkům a partnerům poskytují podrobné znalosti specifické pro dané předměty.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

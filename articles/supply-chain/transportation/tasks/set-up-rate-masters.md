@@ -97,3 +97,6 @@ Tento postup popisuje, jak nastavíte hlavní sazby. Hlavní sazby obvykle nasta
     * Určete, pro které PSČ toto přiřazení základní sazby bude platné.
 10. Do pole **Země/oblast pro vyzvednutí** zadejte „USA“.
 11. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

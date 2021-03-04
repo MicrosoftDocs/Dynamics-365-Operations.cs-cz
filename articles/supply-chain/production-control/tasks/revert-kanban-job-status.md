@@ -55,3 +55,6 @@ Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové �
     * Vyberte stejnou úlohu.  
     * Všimněte si, že stav úlohy pro kanbanovou úlohu bude vrácen zpět na Plánováno, což je označeno ikonou prázdného kanbanu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 7.  Výběrem možnosti **Přílohy** zobrazíte další poznámky nebo soubory, které jsou připojeny k faktuře.
 8.  Na stránce **Podrobnosti faktury** vyberte požadovanou akci workflowu a dokončete tak proces kontroly.
 9.  Vyberte **Hotovo**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

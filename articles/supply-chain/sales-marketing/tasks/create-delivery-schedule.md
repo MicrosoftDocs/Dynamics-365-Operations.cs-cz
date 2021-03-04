@@ -65,3 +65,6 @@ Tento postup ukazuje, jak vytvořit plán dodávek pro prodejní objednávku. Pl
 22. Klikněte na tlačítko OK.
 23. Klepněte na tlačítko Ano.
 24. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Tato procedura vás provede vytvořením nového zařízení a jeho přidružen�
 9. Klikněte na odkaz na vybraném řádku v seznamu.
 10. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

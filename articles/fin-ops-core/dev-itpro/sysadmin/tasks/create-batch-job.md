@@ -54,3 +54,6 @@ Dávková úloha představuje skupinu úkolů, které jsou odeslány k automatic
     - **Srážka**: Nastavte dávkovou úlohu jako **srážku** tak, aby byla zadržena plánovačem dávkových úloh. Ekvivalent *zastavení*
     - **Čekání**: Nastavte dávkovou úlohu jako **čekání**, aby čekala na vyzvednutí plánovačem úloh. Ekvivalent *přejít*
 5. Klikněte na tlačítko **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

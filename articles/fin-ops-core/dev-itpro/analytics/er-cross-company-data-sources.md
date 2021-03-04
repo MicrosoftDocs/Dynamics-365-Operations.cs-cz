@@ -76,3 +76,6 @@ Pro dokončení průvodce záznamem úloh stáhněte následující soubory.
 
 - [Konfigurace modelu dat – ER CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [Konfigurace formátu ER – CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

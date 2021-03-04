@@ -75,3 +75,6 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
     * Prohlédněte si strukturu formátu použitého k vygenerování sestavy Intrastat. Všimněte si, že je navržena k vygenerování souboru formátu XML vyplněním dat z datového modelu, které je založen na kořenové položce 'Pro odchozí dokument'. Ověřte, že název vytvořeného souboru je definován ve formuláři dialogového okna uživatele (k tomu slouží zdroj dat 'fn').   
 30. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

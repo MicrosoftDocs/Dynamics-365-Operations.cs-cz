@@ -100,3 +100,6 @@ Upozorňujeme, že UOM prognózy poptávky nemusí mít žádný konkrétní vý
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

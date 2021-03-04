@@ -281,3 +281,6 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 6. V poli **Bankovní účet** vyberte **DEMF OPER**.
 7. V dialogovém okně **Generovat platby** vyberte **OK**.
 8. V dialogovém okně **Parametry elektronické sestavy** vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

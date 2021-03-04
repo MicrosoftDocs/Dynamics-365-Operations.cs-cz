@@ -91,3 +91,6 @@ Pokud jste povolili funkci **Rozšířené vyhledávání konfigurací formátu 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [API rozhraní architektury elektronického výkaznictví](er-apis-app73.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

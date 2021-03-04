@@ -110,3 +110,6 @@ Chcete-li do navigační nabídky přidat vlastní možnosti navigace, postupujt
 [Vytvoření URL adresy stránky](create-page-url.md)
 
 [Práce se skupinami publikování](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

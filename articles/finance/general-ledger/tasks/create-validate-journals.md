@@ -43,3 +43,6 @@ Tato procedura vytvoří a ověří deníky a řádky deníku. Tuto proceduru m�
 12. Klikněte na možnost **Zaúčtovat**.
 13. Klikněte na možnost **Doklad**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

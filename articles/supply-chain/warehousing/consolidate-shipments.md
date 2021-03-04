@@ -39,3 +39,6 @@ Následujíc scénáře vás provedou procesem konsolidace dodávek, který pou�
 
 - [Zásady konsolidace dodávek](about-shipment-consolidation-policies.md)
 - [Konfigurace zásad konsolidace dodávek](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

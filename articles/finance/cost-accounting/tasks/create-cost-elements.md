@@ -58,3 +58,6 @@ Existuje několik způsobů, jak vytvořit prvky nákladů v nákladovém účet
 1. Klikněte na Zobrazit členy dimenze.
     * Zobrazte importované účty hlavní knihy jako nákladové prvky ve vaší firmě, do které mohou být evidovány náklady.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

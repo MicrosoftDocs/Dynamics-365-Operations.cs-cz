@@ -59,3 +59,6 @@ Tento průvodce úkolem vyžaduje platformu Dynamics AX 7.1 nebo novější.
 27. Aktualizujte stránku.
 28. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

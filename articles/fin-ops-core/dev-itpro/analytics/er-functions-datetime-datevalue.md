@@ -79,3 +79,6 @@ Nicméně `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` zobrazí výjimku 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce data a času](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

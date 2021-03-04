@@ -34,3 +34,6 @@ Tyto kroky použijte při upgradu na Microsoft Dynamics 365 for Operations verze
 1.  Před upgradem na aplikaci Finance and Operations spusťte procesy přecenění cizí měny pro pohledávky a závazky. Pole **Metoda** nastavte na **Datum faktury**. Transakce přecenění je vytvořena, aby vrátila zpět poslední přecenění cizí měny. Proto se otevřené transakce oceňují v jejich původní zúčtovací měně.
 2.  Upgrade na verzi 1611.
 3.  Spusťte znovu procesy přecenění cizí měny pohledávek a závazků Tentokrát nastavte pole **Metoda** na **Standardní**. Vytvoří se nová transakce přecenění, která je založena na aktuálních směnných kurzech. Tato transakce zaznamená nerealizovaný zisk/ztrátu a správný součtový účet hlavní knihy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

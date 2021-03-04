@@ -82,3 +82,6 @@ Množství kusovníku je 1 a výrobní množství je 110. Vzorec pro spotřebu j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

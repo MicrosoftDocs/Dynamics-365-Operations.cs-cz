@@ -42,3 +42,6 @@ Před zaúčtováním otevřených transakcí na různé účty pro každý hlav
 
 ## <a name="additional-resources"></a>Další zdroje
 [Roční uzávěrka](../general-ledger/year-end-close.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

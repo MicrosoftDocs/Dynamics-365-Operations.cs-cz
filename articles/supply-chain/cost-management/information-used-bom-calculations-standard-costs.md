@@ -84,3 +84,6 @@ Při inicializaci výpočtu kusovníku lze určit několik zdrojů informací. M
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

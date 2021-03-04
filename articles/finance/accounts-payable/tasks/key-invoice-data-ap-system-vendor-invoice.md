@@ -73,3 +73,6 @@ Tento průvodce záznamem úloh vám pomůže vytvořit fakturu dodavatele z n�
 19. Klikněte na možnost **Zaúčtovat**.
 20. Zavřete formulář. Všimněte si, že nákupní objednávka již není uvedena jako přijatá a nefakturovaná.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

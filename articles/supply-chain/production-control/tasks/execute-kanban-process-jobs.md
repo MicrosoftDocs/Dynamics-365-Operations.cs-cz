@@ -57,3 +57,6 @@ Tento postup se zaměřuje na realizaci úloh kanbanových procesů. První úlo
 6. V poli Bezchybné množství zadejte číslo.
 7. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

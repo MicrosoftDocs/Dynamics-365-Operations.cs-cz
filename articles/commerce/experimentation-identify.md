@@ -40,3 +40,6 @@ K ověření hypotézy by měl být úspěch nebo neúspěch experimentu přímo
 
 ## <a name="next-step"></a>Další krok
 [Nastavení experimentu](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

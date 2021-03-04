@@ -73,3 +73,6 @@ Chcete-li vytvořit nebo kopírovat šablonu obchodního procesu, nebo spustot o
 
 Chcete-li zobrazit aktivní procesy a přidružené úlohy, otevřete pracovní prostor **Obchodní procesy**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Zadání požadavku, aby byly upraveny role zabezpečení pro uživatele:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

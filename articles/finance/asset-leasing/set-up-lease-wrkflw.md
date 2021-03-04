@@ -53,3 +53,6 @@ V tématu je vysvětleno, jak nastavit pracovní postup schválení, který bude
 14. Na stránce **Vytvořit pracovní postup** zvolte **Zavřít**.
 14. Vyberte nový pracovní postup a pak vyberte **Verze**. Poté vyberte **Aktivovat** pro zajištění, aby byl pracovní postup aktivní.
 15. Vyberte **Zavřít**. Zobrazí se nová aktivní verze.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

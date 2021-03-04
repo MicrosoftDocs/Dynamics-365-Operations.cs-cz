@@ -73,3 +73,6 @@ Při použití plánů cyklických inventur pro vytvoření inventury můžete �
 14. Klikněte na tlačítko OK.
 15. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

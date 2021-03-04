@@ -196,3 +196,6 @@ Nastavení integrace s modulem Power BI. Další informace naleznete v části [
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

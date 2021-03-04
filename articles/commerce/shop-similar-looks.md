@@ -116,3 +116,6 @@ Následující obrázek ukazuje zaškrtávací políčko **Povolit odkaz na str�
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

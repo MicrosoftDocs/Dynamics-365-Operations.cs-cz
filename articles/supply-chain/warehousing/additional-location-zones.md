@@ -58,3 +58,6 @@ Než můžete použít funkci *Další zóna skladového místa*, musíte ji v 
 7. Vyberte **Vytvořit**.
 8. Obdržíte zprávy uvádějící, že byla přidána nová skladová místa. Tlačítkem **Zobrazit zprávy** tyto zprávy zobrazíte.
 9. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Umístění**. Nová skladová místa se zobrazí v seznamu a jsou k dispozici všechna pole zóny (tj. pole existující zóny i pole nové další zóny).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

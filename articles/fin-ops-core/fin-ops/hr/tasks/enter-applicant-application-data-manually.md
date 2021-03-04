@@ -61,3 +61,6 @@ Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich p
 6. Klikněte na položku Uložit.
     * Po uložení přihlášky bude k ní možné připojit dokumenty, včetně zkušeností, odměn a průvodního dopisu uchazeče.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

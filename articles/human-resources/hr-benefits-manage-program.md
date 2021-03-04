@@ -64,3 +64,6 @@ Někdy může organizace přestat nabízet určité zaměstnanecké výhody. V t
 Nápodobně vám prodloužení platnosti hromadné registrace zaměstnanecké výhody umožní odložit datum vypršení platnosti zaměstnanecké výhody i registrací pracovníků k dané výhodě, když se rozhodnete zaměstnaneckou výhodu nabízet déle, než jste původně plánovali.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

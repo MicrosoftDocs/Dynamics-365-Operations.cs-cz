@@ -59,3 +59,6 @@ Po zadání simulovaných změn nákladů vypočtěte náklady pro vyráběné p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

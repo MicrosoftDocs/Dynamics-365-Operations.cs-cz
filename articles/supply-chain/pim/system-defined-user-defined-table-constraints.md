@@ -67,3 +67,6 @@ Aby mohlo mít omezení tabulky vliv na model konfigurace produktu, je nutno zah
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

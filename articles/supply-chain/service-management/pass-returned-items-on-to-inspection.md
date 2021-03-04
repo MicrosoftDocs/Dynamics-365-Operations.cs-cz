@@ -56,3 +56,6 @@ Tím systém vyzvete k vytvoření karanténního příkazu a osoba nebo odděle
 
 [Určení způsobu nakládání s vrácenými položkami](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

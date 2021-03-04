@@ -92,3 +92,6 @@ Toto téma popisuje postup vytváření žádosti. Ukazuje různé způsoby, jak
 6. Zavřete stránku.
 7. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

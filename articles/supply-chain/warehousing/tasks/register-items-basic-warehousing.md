@@ -58,3 +58,6 @@ Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení pol
 2. Klikněte na položku Příjemka produktu.
 3. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

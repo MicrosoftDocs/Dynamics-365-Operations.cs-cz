@@ -91,3 +91,6 @@ V aplikaci Microsoft Forms mohou autoři měnit nastavení a umožnit tak uživa
 > Integrovaná aplikace Offer Management je dostupná pouze s doplňkem Komplexní nábor. Další informace naleznete v tématu [Která verze aplikace Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

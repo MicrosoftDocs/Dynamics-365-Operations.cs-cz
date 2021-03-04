@@ -180,3 +180,6 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 
 [Volba technologie integrace dat](hr-admin-integration-choose-technology.md)</br>
 [Konfigurace integrace s Common Data Service](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

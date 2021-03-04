@@ -63,3 +63,6 @@ Zde jsou některé typické zdroje odchylek v **nahrazení výroby**:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Pokud sestava v D365 neodpovídá vašim očekáváním, zde je několik kroků
 2.  Exportujte sestavu do aplikace Excel.
 
 Nyní byste měli být schopni zkopírovat data ze sestavy finančního výkaznictví Excel a do sestavy předvahy D365 a porovnat sloupce „Konečný zůstatek“.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

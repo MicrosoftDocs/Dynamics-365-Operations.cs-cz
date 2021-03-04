@@ -59,3 +59,6 @@ Následující ilustrace znázorňuje, jak funguje řešení hodnocení a recenz
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

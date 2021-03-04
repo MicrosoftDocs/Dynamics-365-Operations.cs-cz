@@ -114,3 +114,6 @@ Doporučuje se, abyste tyto dávkové úlohy nespouštěli příliš často (ka�
 > Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob**. Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.
 
 Pokud Váš obchodní scénář vyžaduje menší čas v mezipaměti, požádejte o pomoc pracovníka technické podpory.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

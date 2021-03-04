@@ -91,3 +91,6 @@ Můžete použít filtry s pokročilým dotazováním a filtrování, pomocí kt
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Zásoby produktu (Supply Chain Management do Field Service): Zásoby produktu
 
 [![Mapování šablony v integraci dat](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

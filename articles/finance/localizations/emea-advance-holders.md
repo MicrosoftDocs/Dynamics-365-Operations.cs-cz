@@ -158,3 +158,6 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

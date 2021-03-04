@@ -77,3 +77,6 @@ Nakonec přidejte automatizovanou úlohu pro přidělení fáze plánování roz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

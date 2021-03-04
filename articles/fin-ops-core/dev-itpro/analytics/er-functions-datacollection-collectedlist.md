@@ -77,3 +77,6 @@ Další informace o způsobu použití těchto funkcí najdete v průvodci zázn
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce shromažďování dat](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

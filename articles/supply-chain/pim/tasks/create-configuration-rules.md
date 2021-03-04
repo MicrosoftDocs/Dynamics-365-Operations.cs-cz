@@ -55,3 +55,6 @@ Tento postup se zaměřuje na vytvoření konfiguračních pravidel, která lze 
     * Vyberte číslo položky, které má být v závislosti na zvolené metodě vybráno nebo jehož volba má být zrušena.  
 18. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

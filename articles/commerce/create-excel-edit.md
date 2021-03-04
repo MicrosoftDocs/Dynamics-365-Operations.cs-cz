@@ -78,3 +78,6 @@ Chcete-li vytvořit a konfigurovat sešit aplikace Excel, abyste mohli upravovat
 [Úprava finančních dimenzí pro maloobchodní transakce](edit-financial-dim.md)
 
 [Přidání polí do sešitu aplikace Excel pro úpravu maloobchodních transakcí](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

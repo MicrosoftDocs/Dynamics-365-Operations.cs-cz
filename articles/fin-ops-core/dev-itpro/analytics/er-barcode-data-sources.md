@@ -303,3 +303,6 @@ Nicméně, když používáte zdroj dat **čárový kód** dat pro výrobu čár
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Jazyk receptur v elektronickém výkaznictví](er-formula-language.md)
 - [Funkce NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

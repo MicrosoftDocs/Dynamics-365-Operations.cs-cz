@@ -106,3 +106,6 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blog
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
 Ohledně online kurzů a školení se podívejte na [Dynamics 365 Supply Chain Management na Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -34,3 +34,6 @@ Pro právnické osoby s primární adresou v Estonsku, Litvě, Česká republice
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

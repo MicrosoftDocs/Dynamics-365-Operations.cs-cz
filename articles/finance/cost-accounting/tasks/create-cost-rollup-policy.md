@@ -68,3 +68,6 @@ Tento postup popisuje způsob vytvoření zásad shrnutí nákladů a vytvářen
     * Pokračujte, dokud všechna nákladová střediska nejsou namapována na odpovídajících sekundární prvky nákladů.  
 16. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

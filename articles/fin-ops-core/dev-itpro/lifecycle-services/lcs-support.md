@@ -68,3 +68,6 @@ Toto téma vysvětluje, jak získat nápovědu s aplikacemi Finance and Operatio
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

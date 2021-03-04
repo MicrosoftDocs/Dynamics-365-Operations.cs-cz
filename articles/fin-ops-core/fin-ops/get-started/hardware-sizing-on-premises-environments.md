@@ -141,3 +141,6 @@ Služba Orchestrator je služba pro správu nasazení a související komunikace
 ## <a name="virtualization-and-oversubscription"></a>Virtualizace a předplatné
 
 Důležité služby jako server AOS by měly být hostované ve virtuálních hostitelích s vyhrazenými prostředky – jádra, paměť a disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

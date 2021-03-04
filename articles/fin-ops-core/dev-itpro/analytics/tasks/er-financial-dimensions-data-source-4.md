@@ -49,3 +49,6 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 ![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run3.png)
     * Prohlédněte si generovaný výstup. Pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci.  
 ![Stránka konfigurací elektronického výkaznictví](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

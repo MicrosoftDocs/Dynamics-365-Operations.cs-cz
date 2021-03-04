@@ -57,3 +57,6 @@ Uživatelé, kteří jsou ručně přiřazeni k rolím zabezpečení, musí být
 2. Ve stromu vyberte roli a v nabídce **Role přiřazené uživatelům** vyberte možnost **Ručně přiřadit nebo vyloučit uživatele.**
 4. V poli **Přiřadit uživatele k roli nebo je vyloučit z role** jsou uvedeni uživatelé, jimž nebyla role přiřazena, s **režimem přiřazení** nastaveným na **Žádný**. Vyberte jednoho nebo více uživatelů, kterým má být role přiřazena.
 5. V **podokně akcí** vyberte možnost **Přiřadit k roli**. **Režim přiřazení** se aktualizuje na **Ruční** a uživatelům je nyní přiřazena nová role.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny r
 12. Zadejte hodnotu do pole **Snížení rizika zabezpečení**. Zadejte popis akcí, které budete provádět pro snížení rizika zabezpečení. Můžete například snížit riziko provedením podrobnějších kontrol procesu, prováděním měsíčních manažerských kontrol nebo sdílením prostředků se jinými odděleními.     
 13. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronic
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Chcete-li zahájit konfiguraci těchto informací, vytvořte nařízení, které
 ## <a name="warehouse-management"></a>Řízení skladu
 
 Při přípravě dodávky lze vytisknout několik nových sestav. Tyto sestavy využívají informace, které nastavíte v modulu Správa informací o produktech.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

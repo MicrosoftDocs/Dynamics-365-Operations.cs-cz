@@ -54,3 +54,6 @@ Nákladové skupině může být přiřazen typ nákladové skupiny a chování 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

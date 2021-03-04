@@ -82,3 +82,6 @@ Na stránce **Projekt hromadného zařazení** klepněte na **Otevřít projekt*
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

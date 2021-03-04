@@ -50,3 +50,6 @@ Za účelem lepší viditelnosti různých částek košíku byla ke košíku p�
 - **Použitá záloha** – Částka zálohy použitá na transakci, když uživatel provede výdej objednávky odběratele. Pokud neexistuje přepsání zálohy a je nakonfigurována 10% záloha, částka v tomto poli je 90 % celkové částky objednávky odběratele.
 - **Vyvézt částku** – Celková částka pro řádky, kde byl způsob doručení nastaven na **Vyvézt** při vytvoření nebo úpravě objednávky odběratele, nebo při výměně objednávky odběratele. Částka v tomto poli zahrnuje daně a poplatky.
 - **Částka k vrácení** – Celková částka řádků s negativním množstvím během výměny objednávky odběratele. Částka v tomto poli zahrnuje daně a poplatky.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

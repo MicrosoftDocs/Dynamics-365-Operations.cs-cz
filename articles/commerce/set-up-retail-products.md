@@ -40,3 +40,6 @@ Než bude možné nabídnout produkty k přeprodeji ve vašich obchodních kaná
 4. **Přidejte produkty do sortimentu.** Sortiment představuje kolekci produktů, které nabízíte ve vašich kanálech. Můžete definovat jeden nebo více sortimentů, a každý produkt může být přiřazen do jednoho nebo více sortimentů. Pokud chcete přiřadit produkty do kanálů, přiřaďte sortimenty do těchto kanálů. Při vytváření sortimentu můžete přidat produkty, které ještě nebyly uvolněny pro právnickou osobu. Nicméně dokud produkty nebudou uvolněny pro právnické osoby, nemohou být přidány do kanálů.
 5. **Přidejte produkty do hierarchií navigací.** Než bude možné výrobky procházet online nebo na pokladním místě, musí být rozděleny v hierarchii navigace aplikace Commerce.
 6. **Přidejte produkty do katalogu.** I když je tento krok volitelný pro pokladní místo, online obchody vyžadují, aby byly produkty zahrnuty v alespoň jednom katalogu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

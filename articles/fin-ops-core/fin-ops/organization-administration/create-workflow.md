@@ -83,3 +83,6 @@ Až budete připraveni uložit a aktivovat workflow, postupujte následovně.
 
     - Pokud chcete aktivovat tuto verzi workflowu, klepněte na tlačítko **Aktivovat novou verzi**. Když je workflow aktivní, uživatelé do něj mohou odesílat dokumenty ke zpracování a schválení.
     - Pokud nechcete tuto verzi aktivovat, klepněte na tlačítko **Neaktivovat novou verzi**. Workflow můžete aktivovat později.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

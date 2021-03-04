@@ -146,3 +146,6 @@ Následující postup popisuje, jak uživatel s rolí správce systému nebo ná
 5. Vyberte dokončenou verzi aktuální konfigurace.
     * Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

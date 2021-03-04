@@ -119,3 +119,6 @@ Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jed
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Pokud chcete odeslat soubor do konfigurátoru webu v Commerce, postupujte násle
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

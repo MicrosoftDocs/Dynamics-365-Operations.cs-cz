@@ -59,3 +59,6 @@ Tento průvodce vám pomůže nastavit definici sledování splatnosti, splatné
 2. Vyberte odběratele se zůstatkem.
 3. Rozbalte oblast okna s fakty **Sledování splatnosti** a prohlédněte si splatné zůstatky. Definice období pro sledování splatnosti pro okno s fakty je převzata z výchozí definice období pro sledování splatnosti stanovené v parametrech. Její změna je možná pomocí nabídky Shromažďovat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

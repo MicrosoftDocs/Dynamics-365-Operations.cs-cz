@@ -96,3 +96,6 @@ Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnnéh
 Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

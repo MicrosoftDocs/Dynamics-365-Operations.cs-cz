@@ -57,3 +57,6 @@ Tento postup definuje platební slevu a nastavení data splatnosti. Tento průvo
 26. V poli **Hlavní účet slev dodavatele** zadejte hlavní účet, na který bude platební sleva účtována pro faktury dodavatelů.
 27. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

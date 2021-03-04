@@ -53,3 +53,6 @@ Můžete vytvořit předběžné položky registru rozpočtu pro určitý rozpo�
 19. Klepněte na položku Aktualizovat.
     * Výsledky aktualizace zobrazíte kliknutím na možnost Podrobnosti zprávy na modrém panelu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Plánovaná úloha nastavení, která souvisí s pracovními příkazy, může b
 6. Zvolte **Uložit**.
 
 ![Plánované provedení](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

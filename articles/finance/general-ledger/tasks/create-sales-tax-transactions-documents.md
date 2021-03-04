@@ -60,3 +60,6 @@ DPH v dokumentech se vypočítá zadáním skupiny DPH a skupiny DPH položky na
 29. Klikněte na DPH.
 30. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

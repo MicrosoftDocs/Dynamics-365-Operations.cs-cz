@@ -52,3 +52,6 @@ Při ukončování přiřazení pozice zaměstnanců byla provedena změna vých
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Byla vytvořena nová entita pro úrovně pracovní kompenzace
 Byla vytvořena nová entita platformy správy dat (DMF). Entita zajišťuje tvorbu a aktualizaci úrovní kompenzace, tržních hodnot a informací z průzkumů pro každou práci definovanou v systému.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Data nákladů na položku pro standardní náklady mohou být zkopírována do 
 
 [Postup přípravy na správu standardních nákladů pro vyráběné položky](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

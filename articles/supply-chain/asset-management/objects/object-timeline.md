@@ -49,3 +49,6 @@ Na pevné záložce **Podrobnosti** na stránce **Historie událostí majetku** 
 - Pracovní příkazy včetně zaúčtovaných položek a poznámek
 - Chyby
 - Hodnocení podmínek
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

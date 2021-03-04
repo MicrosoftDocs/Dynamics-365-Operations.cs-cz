@@ -255,3 +255,5 @@ ID místa použité pro adresu pracovníka není součástí číselné řady. J
 Na následujícím obrázku je příklad mapování šablony v integrátoru dat. 
 
 ![Mapování šablony](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

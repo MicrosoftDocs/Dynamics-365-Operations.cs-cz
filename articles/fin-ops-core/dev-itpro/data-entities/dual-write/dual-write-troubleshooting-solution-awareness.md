@@ -45,3 +45,6 @@ Na stránce **Dvojího zápisu** se může zobrazit chybová zpráva podobná n�
 *Entita s názvem 'msdyn\_dualwriteentitymap' s namemapping = 'logický' nebyla nalezena v MetadataCache.*
 
 Chcete-li tento problém vyřešit, zkontrolujte, zda je v aplikaci Dataverse nainstalováno základní řešení dvojího zápisu. Základní řešení duálního zapisování je předpokladem pro sledování řešení.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

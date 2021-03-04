@@ -52,3 +52,6 @@ Když jste naplánovali preventivní práce údržby můžete v dalším kroku p
 
 5. Klikněte na tlačítko **OK**. Je vytvořen jeden nebo více pracovních příkazů.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

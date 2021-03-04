@@ -96,3 +96,6 @@ Následující tabulka ukazuje, které prodejní objednávky uživatelé v každ
 
 > [!NOTE]
 > I když Sam a Jane jsou kontakty, které pracují pro zákazníka X, vidí pouze objednávky, které sami zadali, a nic jiného. Ačkoli May má v systému objednávku, nemůže ji vidět na zákaznickém portálu, protože je neoprávněným uživatelem. (Dále musí zadat objednávku prostřednictvím jiného kanálu, než je zákaznický portál.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

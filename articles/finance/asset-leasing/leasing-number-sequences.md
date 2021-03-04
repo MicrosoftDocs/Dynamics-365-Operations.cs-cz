@@ -36,3 +36,6 @@ Toto téma vysvětluje, jak vytvořit číselné řady pro ID leasingu. Vysvětl
 3. Vyberte **Číselné řady** v postranním panelu.
 4. Vyberte číselnou řadu pro odkaz **ID leasingu**. Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý leasing.
 5. Vyberte číselnou řadu pro odkaz **ID procesu**. Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý proces přecenění indexu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

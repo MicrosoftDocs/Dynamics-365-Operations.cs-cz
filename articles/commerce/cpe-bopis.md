@@ -164,3 +164,6 @@ V případě všech obecných problémů byste jako první věc měli vždy pros
 [Úspora nástrojů online plateb s konektorem Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Přehled omnikanálových plateb](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

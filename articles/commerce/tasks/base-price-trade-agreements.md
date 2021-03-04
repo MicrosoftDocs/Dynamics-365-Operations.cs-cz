@@ -70,3 +70,6 @@ Tato procedura vás provede postupem vytváření obchodních smluv prodejních 
 38. V **podokně akcí** klikněte na možnost Prodej.
 39. Klikněte na možnost **Prodejní cena**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

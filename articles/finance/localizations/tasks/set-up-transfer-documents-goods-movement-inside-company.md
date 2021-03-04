@@ -74,3 +74,6 @@ Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zbož
 10. Klepněte na Dodací list.
 11. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

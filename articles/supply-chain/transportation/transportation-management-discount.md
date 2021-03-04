@@ -33,3 +33,6 @@ Chcete-li nastavit slevy pro správu dopravy, přejděte na **Řízení dopravy 
 Můžete si vybrat, zda chcete slevu přenést na svého zákazníka (nastavením typu slevy na zákazníka) nebo ji ponechat ve společnosti (nastavením typu slevy na dopravce). To vám umožní definovat nastavení, ve kterém získáte marži z vypočítaných poplatků za přepravu.
 
 Pro každou slevu můžete nastavit více kvalifikátorů, například dopravce, služby dopravce, dodací podmínky, zákazník, cíl a další.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

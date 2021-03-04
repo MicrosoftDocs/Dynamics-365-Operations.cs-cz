@@ -53,3 +53,6 @@ Tyto operace by měly být použity pouze v případě, že zrušení hlavní pl
 4. V okně **Dávkové úkoly** vyberte úkoly, které chcete ukončit.
 5. Klikněte na **Změnit stav**, vyberte **Zrušení** a klikněte na **OK**.
 6. Na pevné záložce **Dávkové úkoly** klikněte na **Ukončit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

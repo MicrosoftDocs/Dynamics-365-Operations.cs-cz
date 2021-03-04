@@ -111,3 +111,6 @@ Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data 
 
 [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
 [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

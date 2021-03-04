@@ -69,3 +69,6 @@ Toto téma ukazuje způsob nastavení položky nabídky Mobilní zařízení. V 
 5. Vyberte šipku ukazující napravo.
 6. Zvolte **Uložit**.
 7. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

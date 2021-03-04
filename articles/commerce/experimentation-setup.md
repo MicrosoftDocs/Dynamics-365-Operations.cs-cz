@@ -54,3 +54,6 @@ Chcete-li nastavit metriku úspěšnosti, postupujte následujícím způsobem.
 
 ## <a name="next-step"></a>Další krok
 [Připojení a úpravy experimentu](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

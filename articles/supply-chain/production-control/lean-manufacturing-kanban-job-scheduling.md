@@ -73,3 +73,6 @@ Stránka se seznamy **Plánování kanbanové úlohy** obsahuje okna s fakty zob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

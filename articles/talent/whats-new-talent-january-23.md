@@ -53,3 +53,6 @@ Při této změně byla přidána pole **Zkušební období** a **kalendář** n
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Aktualizace Platform 23 pro Finance and Operations
 Dílčí opravy chyb byly zahrnuty jako součást aktualizace Platform update 23 pro Finance and Operations. Další informace naleznete v tématu [Co je nového nebo změněného v Dynamics 365 Finance and Operations aktualizace platformy 23 (leden 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

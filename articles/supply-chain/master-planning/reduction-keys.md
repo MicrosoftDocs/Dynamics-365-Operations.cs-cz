@@ -227,3 +227,6 @@ Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamick
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

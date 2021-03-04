@@ -108,3 +108,6 @@ Změny smlouvy mají následující dopady na podrobnosti plánu výnosů:
 - Pokud byly pro produkt uznány výnosy, byly některé výnosy nesprávně uznány, protože uznání bylo založeno na nesprávném plánu výnosů. Tyto řádky musí být stornovány a znovu uznány na základě nového plánu. V tomto scénáři jsou vytvořeny nové řádky plánu výnosů, které mají záporné částky k původnímu datu uznání. Poté jsou vytvořeny nové řádky pro uznání částek na základě nového plánu výnosů. Například 8. srpna 2019 jste uznali výnosy za 10,53 USD. 8. září 2019 jste uznali výnosy za 13,16 USD. Proto jsou pro tyto dny vytvořeny dva nové řádky. Jeden řádek na -10,53 USD a druhý řádek na -13,16 USD. Poté je vytvořeno dvacet čtyři nových řádků a celkový odložený výnos 160,61 USD je přidělen mezi ně. Storno řádky můžete zaúčtovat spuštěním procesu **Vytvořit deník**.
 
 [![Plán uznání výnosů](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

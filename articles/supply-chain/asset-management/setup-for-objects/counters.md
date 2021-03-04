@@ -67,3 +67,6 @@ Když jsou typy majetku přidány k typu čítače v poli **Čítače**, je tent
 
 ![Obrázek č. 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

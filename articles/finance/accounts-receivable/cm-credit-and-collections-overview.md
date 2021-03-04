@@ -77,3 +77,6 @@ Popis těchto pojmů naleznete v tématu [Koncepty správy inkasa](./cm-collecti
 [Blokování úvěru pro prodejní objednávky](./cm-sales-order-credit-holds.md)
 
 [Periodické úkoly správy úvěru odběratelů](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

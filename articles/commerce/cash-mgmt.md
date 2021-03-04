@@ -62,3 +62,6 @@ Ve verzi 10.0.3 aplikace Retail a novějších jsou rovněž poskytnuty následu
 - Pokud se při odsouhlasení nevyrovnává vybraná transakce, uživatel musí zadat popis důvodu nevyrovnaného odsouhlasení. Uživatelé mohou vybrat jednu transakci a odsouhlasit ji s odpovídajícím popisem důvodu podle potřeby.
 - Uživatelé mohou pokračovat v odsouhlasení a zrušení odsouhlasení transakcí, dokud není směna uzavřena. Po uzavření směny nelze zrušit odsouhlasení transakcí.
 - Když se uživatel rozhodne uzavřít směnu, aplikace Commerce ověří, zda ve směně neexistují žádné neodsouhlasené transakce řízení hotovosti. Uživatelé nemohou uzavřít směnu, pokud existují transakce, u nichž bylo zrušeno odsouhlasení.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

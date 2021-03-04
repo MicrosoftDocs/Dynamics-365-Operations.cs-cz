@@ -210,3 +210,6 @@ Kromě omezení, která aktuálně platí pro produkty se skutečnou hmotností,
 
 > [!NOTE]
 > Předchozí informace o štítcích se skutečnou hmotností jsou platné pouze v případě, že produkt se skutečnou hmotností má metodu sledování dimenze skutečné hmotnosti, která je plně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** u zásad zpracování položek skutečné hmotnosti nastaven na hodnotu **Dimenze produktu, sledovací dimenze a všechny dimenze uskladnění**). Je-li položka se skutečnou hmotností pouze částečně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** nastaven na **Dimenze produktu, sledovací dimenze a stav zásob**), použijí se další omezení. Vzhledem k tomu, že značka a zásoby v tomto případě ztratí viditelnost, některé další scénáře nejsou podporovány.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

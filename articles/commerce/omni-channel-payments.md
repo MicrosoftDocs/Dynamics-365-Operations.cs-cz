@@ -238,3 +238,6 @@ Když má objednávka více nabídek a je vybráno více řádků, pokladník ne
 - [Platební konektor Dynamics 365 pro Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Tento postup se zaměřuje na definování konfiguračního postupu, který urč
 15. Klikněte na odkaz na vybraném řádku v seznamu.
 16. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Chování systému je stejné bez ohledu na to, zda je volba **Oprava** v část
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -187,3 +187,6 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

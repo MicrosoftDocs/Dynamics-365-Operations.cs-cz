@@ -98,3 +98,6 @@ Můžete uvolnit surovinu pro částečné množství dokončeného zboží nebo
     Jednotky, které jsou k dispozici, jsou definovány v ID skupiny klasifikace jednotek dokončeného zboží.
 
     Například dokončené zboží má následující převod jednotek mezi librami a paletami: 1 PL = 100 kg. Chcete-li vytvořit výrobní zakázku na 10 000 kg  dokončeného zboží, můžete uvolnit suroviny pro počet palet, které chcete vyrobit. Vyberte **PL** jako jednotku a vyberte odpovídající číslo v poli **Množství**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

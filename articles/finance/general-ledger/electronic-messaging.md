@@ -536,3 +536,6 @@ Nyní můžete buď odstranit nebo aktualizovat stav zprávy. Chcete-li aktualiz
 ![Aktualizace stavu zprávy](media/update-status.png)
 
 Stav zprávy je aktualizován na **Připraveno** a nyní můžete vygenerovat sestavu výběrem možnosti **Generovat sestavu**. Sestava se vygeneruje a aktualizuje se stav zprávy a protokol akce. Chcete-li zobrazit generovanou sestavu, vyberte tlačítko **Příloha** (ikona papírové svorky) v pravém horním rohu stránky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

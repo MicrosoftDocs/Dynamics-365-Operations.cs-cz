@@ -410,3 +410,6 @@ Když Supply Chain Management vygeneruje úkoly pro výrobu, shromáždí z těc
 - Pokud definujete několik vztahů operací postupu, které obsahují vztah *Vše*, a přiřadíte k nim příručky, zobrazí se u úkolu jen příručky z nejkonkrétnějšího vztahu.  
 
 ![Schéma řešení relevantních příruček](media/instruction-guides-Resolve.png "Schéma řešení relevantních příruček")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

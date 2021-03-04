@@ -81,3 +81,6 @@ Po zadání základních informací o RFQ je třeba zadat zboží nebo služby, 
 4. Zavřete stránku.
 5. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

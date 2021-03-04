@@ -218,3 +218,6 @@ Výjimky z práce řídí chování rychlého výběru. Chcete-li nastavit praco
 1. Vyberte **Rychlý výběr**.
 1. Vyberte kód pracovní výjimky, který jste vytvořili pro tento scénář.
 1. Pokud jste vybrali správnou výjimku, mělo by být k dispozici zaškrtávací políčko **Zrušit a znovu vytisknout**. Zaškrtněte toto políčko a potvrďte. Po potvrzení je pořadí rolí štítků určené polem **ID sestavení štítku** přepočteno na základě změněných množství pracovní linky. Poté se znovu vytiskne na určené tiskárně.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

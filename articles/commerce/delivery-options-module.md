@@ -83,3 +83,6 @@ Modul možností dodání lze přidat pouze do modulu pokladny. Další informac
 [Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje](pro-rate-charges-matching-lines.md)
 
 [Nastavit způsoby dodání](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -175,3 +175,6 @@ Pokud je tento způsob výpočtu použit ve scénáři částečného vrácení,
 [Omnikanálové rozšířené automatické náklady](omni-auto-charges.md)
 
 [Povolení a konfigurace automatických nákladů podle kanálu](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

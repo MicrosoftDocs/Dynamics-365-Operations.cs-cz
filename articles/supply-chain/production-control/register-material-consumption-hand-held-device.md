@@ -92,3 +92,6 @@ Po dokončení registrace vyberte možnost **Hotovo** k zaúčtování deníku a
 -   Může dojít k vyčerpání materiálu. Například pokud má být spotřebováno množství 100 kg materiálu, poté ji může být vyčerpán, pokud je množství například 105 kg.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

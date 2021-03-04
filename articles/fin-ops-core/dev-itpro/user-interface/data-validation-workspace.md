@@ -57,3 +57,6 @@ Před použitím pracovního prostoru **Kontrolní seznam ověřování dat** je
 Pomocí oblastí úkolů seskupte úkoly ověřování dat do logických oblastí vlastnictví ve vaší organizaci. Například závazky, pohledávky a hlavní kniha mohou být použity jako oblasti úkolu.
 
 **Název položky nabídky** je spojen s pracovním úsilím úkolu a lze ho použít k přechodu přímo na přidruženou stránku z odkazu na úkol v pracovním prostoru. Například úloha ověřování dat pro spuštění sestavy **sledování splatnosti závazků** pro závazky lze spojit se stránkou **Sestava sledování splatnosti závazků**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Chcete-li upravit finanční dimenze pro maloobchodní transakce v Commerce Head
 [Vytvoření sešitu aplikace Excel pro úpravu maloobchodních transakcí](create-excel-edit.md)
 
 [Přidání polí do sešitu aplikace Excel pro úpravu maloobchodních transakcí](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

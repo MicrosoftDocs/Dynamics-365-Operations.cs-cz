@@ -66,3 +66,6 @@ Tento postup popisuje způsob výpočtu návrhů minimální disponibility na z�
 5. V **podokně akcí** klikněte na možnost Plán.
 6. Klikněte na **Disponibilita položky**. Všimněte si, že bylo aktualizováno **Minimální množství** s novým minimálním množstvím z deníku pojistných zásob.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

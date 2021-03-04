@@ -40,3 +40,6 @@ Za účelem přerušení odpisu dlouhodobého majetku vyberte na stránce **Dlou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Odběratelé mohou provést částečnou platbu, kde se zbývající částka ne
 
 
 Další informace naleznete v tématu [Vložení platby odběratele](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

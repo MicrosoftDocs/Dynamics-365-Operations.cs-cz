@@ -169,3 +169,6 @@ Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
 
 [Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

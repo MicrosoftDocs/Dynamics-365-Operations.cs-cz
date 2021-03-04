@@ -58,3 +58,6 @@ Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a
     * Často existuje několik cílů, které jsou stejné nebo podobné pro členy týmu nebo všechny zaměstnance.     Pracovník nebo manažer personálního oddělení může vytvořit skupiny cílů, které obsahují jednu nebo více šablon cíle. Cíle můžete přidat ze skupiny cílů a potom upravit tak, aby odpovídal vašim časovým osám.  
     * Při vytváření kontroly můžete cíle přidat do této kontroly. V Průvodci záznamem úloh najdete kontroly, které ukazují, jak se přidávají cíle do kontrol.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Struktura tohoto seznamu se skládá z jednoho pole **Množství** typu `Real`, 
 [Funkce seznamu](er-functions-category-list.md)
 
 [Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Tento průvodce úkoly vás provede generováním časově rozlišených transak
 17. Klikněte na tlačítko OK.
 18. Klikněte na položku Zaúčtovat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

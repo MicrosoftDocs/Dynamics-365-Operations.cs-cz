@@ -90,3 +90,6 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

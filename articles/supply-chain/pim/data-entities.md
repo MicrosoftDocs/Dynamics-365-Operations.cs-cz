@@ -50,3 +50,6 @@ K importu a exportu dat produktu musíte použít datové entity. Následující
 
 > [!NOTE]
 > Datovou entitu **Vydané produkty V2** můžete použít k importu produktů do systému pouze v případě, že byl sdílený produkt již vytvořen. V opačném případě musíte pro import produktů do systému použít datovou entitu **Vytvoření produktu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

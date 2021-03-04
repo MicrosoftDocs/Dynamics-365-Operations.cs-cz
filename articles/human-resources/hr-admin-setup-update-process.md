@@ -105,3 +105,6 @@ Při testování předběžných verzí funkcí nebo při zkoušení nových fun
 [Co je nového nebo co se změnilo v aplikaci Human Resource služby Dynamics 365](hr-admin-whats-new.md)</br>
 [Zásady životního cyklu softwaru](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

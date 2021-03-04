@@ -78,3 +78,6 @@ Prohlédněte si vygenerovaný soubor XML.
 6. Zavřete stránku.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

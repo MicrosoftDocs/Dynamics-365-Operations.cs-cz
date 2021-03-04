@@ -45,3 +45,6 @@ V závislosti na zásadách společnosti mohou být položky ve vrácené dodáv
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -33,3 +33,6 @@ Nové verze aplikace Talent vycházejí každý týden. Tyto verzí jsou uvedeny
 
 Obsah bude nadále aktualizován každý týden, takže se pravidelně vracejte, abyste zjistili vše o nových funkcích a změnách v nejnovějších verzích aplikace Talent.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

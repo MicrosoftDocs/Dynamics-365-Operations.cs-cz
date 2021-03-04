@@ -48,3 +48,6 @@ Tato procedura popisuje, jak nastavíte úhradu přepravy. To obvykle provádí 
 7. Klepněte na tlačítko Odeslat.
 8. Vyberte trasu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

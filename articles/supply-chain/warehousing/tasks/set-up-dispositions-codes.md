@@ -41,3 +41,6 @@ Tento postup se zaměřuje na nastavení dispozičního kódu, který lze použ�
 6. Zadejte hodnotu do pole Vrátit dispoziční kód.
     * Dispoziční kód vrácení určuje zbývající proces vratky pro registrované položky. V tomto příkladu by měl odběratel obdržet dobropis. Přidejte dispoziční kód vrácení obsahující akci Dal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Tento úkol vytvoří smlouvu bankovního zařízení ke zpracování záruční
 5. Klikněte na položku Uložit.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

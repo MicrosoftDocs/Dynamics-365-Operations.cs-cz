@@ -119,3 +119,6 @@ Zadání následujících hodnot pro nastavení účetního profilu
 | **Vyrovnání** | Tuto možnost vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li toto políčko zaškrtnuto, je nutné vyrovnat transakce ručně s použitím stránky **Vyrovnat otevřené transakce**. |
 | Tlačítko **Zrušit**     | Tuto možnost vyberte, chcete-li mít možnost zrušit transakce, které mají tento účetní profil.                                                                                                               |
 | **Zavřít**      | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

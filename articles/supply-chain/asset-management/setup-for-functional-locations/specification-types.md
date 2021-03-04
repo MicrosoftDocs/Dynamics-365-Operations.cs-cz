@@ -64,3 +64,6 @@ Můžete vytvořit vlastní typy atributů. Dále je možné převést dimenze p
 9. Uložte záznam.
 
     Pole **Typy funkčních míst** zobrazuje počet funkčních míst, která používají typ atributu. Pole **Typy majetku** zobrazuje počet typů majetku, které jej používají.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

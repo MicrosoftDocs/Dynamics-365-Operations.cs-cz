@@ -120,3 +120,6 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 11. Klikněte na tlačítko **OK**.
 12. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

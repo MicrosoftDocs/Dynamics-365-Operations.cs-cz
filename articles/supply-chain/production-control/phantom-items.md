@@ -73,3 +73,6 @@ Fiktivní kusovníky lze také použít pro kusovník, který má síťový post
 Na následujícím obrázku, (a) je kusovník pro produkt G a část F, a (b) je tabulka postupů pro produkt G a část F.
 
 ![Produkt G a část F s tabulkami postupů](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

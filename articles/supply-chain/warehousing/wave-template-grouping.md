@@ -201,3 +201,6 @@ Pro tuto dodávku byla vytvořena nová vlna, protože používá jinou službu 
 1. Vyberte ID vlny, která byla vytvořena ze třetí prodejní objednávky.
 1. Kliknutím na odkaz ID vlny otevřete stránku podrobností vlny.
 1. Všimněte si, že dodávka byla přidána na záložku s náhledem **Řádky vlny** spolu s dodávkou za první prodejní objednávku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

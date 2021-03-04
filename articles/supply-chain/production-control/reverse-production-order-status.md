@@ -53,3 +53,6 @@ Když vrátíte stav výrobní zakázky ze stavu **Zahájeno** zpět do stavu **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

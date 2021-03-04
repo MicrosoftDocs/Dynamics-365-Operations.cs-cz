@@ -112,3 +112,6 @@ Používáte-li pole **ID vrácené šarže** na řádku objednávky k určení 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

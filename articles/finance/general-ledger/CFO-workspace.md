@@ -56,3 +56,6 @@ Toto téma vysvětluje postup při přidání finančních dimenzí do pracovní
 16. Vytvořte svůj projekt a potom otevřete aplikaci pro zobrazení výsledků.
 
     [![Dokončený pracovní prostor](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

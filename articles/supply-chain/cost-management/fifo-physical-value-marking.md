@@ -136,3 +136,6 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

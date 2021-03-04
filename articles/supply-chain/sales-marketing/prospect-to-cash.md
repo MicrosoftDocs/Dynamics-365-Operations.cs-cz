@@ -82,3 +82,6 @@ Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné
 
 - Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo vyšší verze.
 - Řešení Prospect to Cash (P2C) pro Dynamics 365 Sales, verze 1.15.0.0 nebo novější. Řešení je k dispozici ke stažení z AppSource. [Stáhnout Dynamics 365, zpeněžení potenciálního zákazníka](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

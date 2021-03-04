@@ -40,3 +40,6 @@ K přístupu k emulátoru aplikace mobilního zařízení nemůžete použít ž
 ### <a name="issue-resolution"></a>Řešení problému
 
 Emulátor aplikace pro mobilní zařízení je nastaven tak, aby fungoval pouze s účtem správce. Pro všechny účely testování a živého procesu doporučujeme použít samotnou aplikaci skladu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

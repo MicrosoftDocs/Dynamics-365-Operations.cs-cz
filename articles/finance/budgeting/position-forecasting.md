@@ -218,3 +218,6 @@ Pokud chcete zobrazit, do kterých plánů rozpočtu byly zahrnuty pozice progn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

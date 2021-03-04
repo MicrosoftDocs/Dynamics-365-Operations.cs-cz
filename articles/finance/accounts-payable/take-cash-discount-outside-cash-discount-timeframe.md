@@ -91,3 +91,6 @@ Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

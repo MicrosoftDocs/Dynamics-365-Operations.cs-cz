@@ -154,3 +154,6 @@ Proti účtu se provede účetní zápis, pokud je vypnutý parametr **Platba do
 
 > [!NOTE]
 > Ofsetový účet je vybrán na úrovni leasingu na řádcích pro plán plateb zachraňovacích nákladů. Tento offsetový účet lze přidružit k dodavateli nebo k účtu hlavní knihy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

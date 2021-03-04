@@ -47,3 +47,6 @@ Chcete-li zaúčtovat vyrovnání přechodu v souladu s novými účetními stan
 
 5. Chcete-li zobrazit položku deníku, vyberte **Deníky leasingu majetku**.
 6. Vyberte nový deník a pak vyberte **Zaúčtovat**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

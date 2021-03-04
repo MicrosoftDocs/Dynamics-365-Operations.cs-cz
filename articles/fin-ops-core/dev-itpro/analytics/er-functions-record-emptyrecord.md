@@ -60,3 +60,6 @@ Výsledná hodnota atributu.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce záznamu](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

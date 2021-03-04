@@ -112,3 +112,6 @@ Další informace o zpracování ID registrace, včetně nezbytných předpoklad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

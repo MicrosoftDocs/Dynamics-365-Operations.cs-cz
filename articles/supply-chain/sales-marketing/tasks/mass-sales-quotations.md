@@ -101,3 +101,6 @@ Tento postup ukazuje, jak účinně vytvářet prodejní nabídky nabízející 
 11. Přejděte na Prodej a marketing > Prodejní nabídky > Všechny nabídky.
     * Ověřte, zda nabídky byly vytvořeny pro všechny odběratele určené v rutinní hromadné aktualizaci, jak bylo nastaveno ve vybrané šabloně.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Chcete-li nastavit přesměrování pro chybu kódu stavu, postupujte podle nás
 [Přidání nové webové stránky](add-new-page.md)
 
 [Vytvoření URL adresy stránky](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

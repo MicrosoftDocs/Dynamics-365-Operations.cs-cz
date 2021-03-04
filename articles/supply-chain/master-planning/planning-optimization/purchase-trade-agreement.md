@@ -90,3 +90,6 @@ Následující tabulka uvádí příklady, které ukazují, jak různá nastaven
 ## <a name="additional-resources"></a>Další prostředky
 
 [Nákupní smlouvy](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

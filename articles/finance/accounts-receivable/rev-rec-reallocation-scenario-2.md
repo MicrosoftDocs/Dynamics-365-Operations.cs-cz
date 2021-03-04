@@ -90,3 +90,6 @@ Nyní je fakturována druhá prodejní objednávka. Celková faktura předložen
 [![Stránka transakcí dokladů se zaúčtovanou účetní položkou](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Protože součet výnosů a prodeje je vyšší než $1170,44, zaúčtovaný rozdíl je -$130,17. Tato částka vymaže zůstatek z clearingového účtu výnosů částečné faktury. Tento zůstatek je po opětovném přidělení zaúčtován v nové účetní položce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

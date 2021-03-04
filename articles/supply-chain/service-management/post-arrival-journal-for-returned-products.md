@@ -58,3 +58,6 @@ Po zaúčtování deníku budou vrácené položky registrovány na skladě a ve
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

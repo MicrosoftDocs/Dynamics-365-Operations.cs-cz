@@ -91,3 +91,6 @@ Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.RoundUp**, `ROUN
 [Další funkce (konkrétní pro obchodní domény)](er-functions-category-other.md)
 
 [Matematické funkce](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ S aktualizací Platform Update 25 Finance and Operations mohou uživatelé vytv�
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Kontrola duplicitních zaměstnanců: změny uživatelského rozhraní
 S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobrazí počet nalezených duplicit. Chcete-li otevřít novou stránku, můžete vybrat poskytnutý odkaz a vyhodnotit, zda chcete použít detekovanou shodu. Aby nedošlo k přerušení zadávání dat, formulář duplicit se neotevře automaticky.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

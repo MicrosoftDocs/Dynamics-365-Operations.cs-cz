@@ -62,3 +62,6 @@ Témata uvedená v následující tabulce usnadňují konfiguraci komponent Comm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

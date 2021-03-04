@@ -95,3 +95,6 @@ Volitelně můžete propojit kód urychleného zpracování u libovolného způs
 Například pro objednávky, které budou expedovány letecky další den, výdej je zapotřebí provést ze skladu do 13: 00 každý den. V takovém případě lze vytvořit kód urychleného zpracování a kód lze spojit s libovolným způsobem dodání další den, konfigurovaným v systému. Když se ve skladu vytvoří vlna výdeje, příslušný kód urychleného zpracování v poli **urychlené zpracování** lze použít jako filtr, aby byl běh výdeje jen pro objednávky, které mají způsob dodání spojený s tímto kódem.
 
 Dále platí, že při zadání objednávky kontaktního střediska, lze kód urychleného zpracování použít ručně v záhlaví prodejní objednávky nebo na samostatném řádku prodejní objednávky. Kód lze použít k třídění nebo pro účely vykazování. V některých případech musí být objednávka zpracována pečlivě z důvodu problému se službou odběratele. V takovém případě lze v záhlaví nebo na řádkách objednávky použít konkrétní kód urychleného zpracování na pomoc se stanovením prioritního pořadí při procesu plnění.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Výrobní zakázku lze vytvořit v následujících situacích:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

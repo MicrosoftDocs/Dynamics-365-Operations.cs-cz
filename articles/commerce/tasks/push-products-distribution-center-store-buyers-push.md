@@ -53,3 +53,6 @@ Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer´s push k 
 19. Klepněte na Vytvořit objednávku.
 20. Klepněte na tlačítko Ano.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

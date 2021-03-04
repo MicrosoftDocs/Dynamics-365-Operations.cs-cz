@@ -160,3 +160,6 @@ V následující tabulce je uveden seznam prvních 12 měsíců platebního kale
 
 > [!NOTE]
 > Pokud se typ anuity změní na **Splatná anuita**, platba proběhne v lednu místo v prosinci.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

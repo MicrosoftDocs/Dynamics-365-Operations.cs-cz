@@ -87,3 +87,6 @@ Tento postup vás provede povolením vstupního certifikátu EU, konfigurací ú
 4. V podokně akcí klikněte na položku Faktura.
 5. Klikněte na možnost Zobrazit vystavené vstupní certifikáty.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Je vytvořena nová šablona kusovníku s využitím řádků odpovídajících 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

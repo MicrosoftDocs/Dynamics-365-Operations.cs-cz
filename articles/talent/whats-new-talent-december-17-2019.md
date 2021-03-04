@@ -56,3 +56,6 @@ Změny v tomto týdnu opravují problém, kdy nelze generovat kalendářní dny.
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Sestava aktuální bilance na dovolené PBI zdvojnásobuje zůstatek zaměstnanců (385581)
 
 Tato změna opravuje aktuální sestavu zůstatků v tomto scénáři.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

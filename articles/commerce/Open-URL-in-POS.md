@@ -83,3 +83,6 @@ Chcete-li nakonfigurovat, aby se URL adresa otevřela v pokladním místě, prov
 5. Vyberte **Otevřít adresu URL** jako akci.
 6. Zadejte adresu URL, kterou chcete použít.
 7. Nakonfigurujte, zda otevřít adresu URL v novém okně.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Požadavky:
 12. Zavřete stránku.
 13. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

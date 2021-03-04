@@ -44,3 +44,6 @@ Tento postup vás provede konfigurací a spuštěním opakované dávkové úloh
 8. Klepněte na tlačítko OK.
 9. Klepněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Můžete rovněž kopírovat dodavatele pomocí funkce Vyhledávání DIČ, kter
 
 1. Zobrazí se možnost **Kopírovat dodavatele**. Ve výchozím nastavení je tato možnost nastavena na **Ne**. Chcete-li kopírovat dodavatele do aktuální právnické osoby, nastavte možnost na **Ano**.
 2. Zvolte **Zvolit**. Vytvoří se nový dodavatel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

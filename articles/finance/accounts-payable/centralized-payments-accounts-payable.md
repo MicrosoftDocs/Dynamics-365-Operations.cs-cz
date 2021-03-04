@@ -301,3 +301,6 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

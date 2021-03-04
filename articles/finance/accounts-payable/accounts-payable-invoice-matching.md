@@ -194,3 +194,6 @@ Další informace naleznete v tématu [Zásady třícestného párování](three
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Chcete-li přidat nově vyrobené položky v průběhu zmrazeného období, prov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

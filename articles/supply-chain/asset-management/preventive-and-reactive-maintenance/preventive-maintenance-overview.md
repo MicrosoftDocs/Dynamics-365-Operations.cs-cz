@@ -39,3 +39,6 @@ Následující obrázek uvádí přehled workflowu od vytváření plánů údr�
 
 ![Obrázek č. 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

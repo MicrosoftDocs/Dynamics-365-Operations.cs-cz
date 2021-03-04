@@ -110,3 +110,6 @@ Lze odeslat oznámení uživatelům, kteří automatizovanou úlohu spustili neb
     </table>
 
 8. Zopakujte kroky 3 až 7 pro každou událost, kterou jste vybrali v kroku 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

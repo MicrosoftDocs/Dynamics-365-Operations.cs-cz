@@ -96,3 +96,6 @@ Další informace o modulech správy účtů a o jejich vytváření naleznete v
 
 [Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

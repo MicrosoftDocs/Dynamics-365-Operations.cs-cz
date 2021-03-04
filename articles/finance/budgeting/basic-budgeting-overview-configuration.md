@@ -88,3 +88,6 @@ Společnost, která používá funkci plánování rozpočtu může vytvořit a 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

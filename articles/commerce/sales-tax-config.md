@@ -83,3 +83,6 @@ U řádků objednávky se zadaným vyzvednutím v obchodě nebo pouličním výd
 
 [Výpočet osvobození od daně](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

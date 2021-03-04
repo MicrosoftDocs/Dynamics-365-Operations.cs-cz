@@ -124,3 +124,6 @@ Pro nastavení integrace postupujte následujícím způsobem.
     4. V Customer Insights můžete mít více prostředí, jako je například testovací a provozní prostředí. Do pole **ID instance prostředí** zadejte příslušné prostředí.
     5. V poli **Alternativní ID odběratele** zadejte vlastnost v Customer Insights, která je mapována na číslo účtu odběratele. (V aplikaci Commerce číslo účtu odběratele je ID odběratele.)
     6. Zbývající tři vlastnosti jsou měřítka, která se zobrazí na kartě zákazníka v klientské knize. Můžete vybrat až tři měřítka, která se mají zobrazit na kartě zákazníka. (Nemusíte však vybírat žádná měřítka.) Jak již bylo zmíněno dříve, systém tyto hodnoty nejprve zobrazuje a poté zobrazuje hodnoty skupiny atributů klientských knih.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

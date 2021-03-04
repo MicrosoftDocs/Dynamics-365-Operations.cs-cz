@@ -53,3 +53,6 @@ Další informace o nastavení, které souvisí s výpočtem skóre hodnocení p
 
 > [!NOTE]
 > Pokud změníte záznam úrovně služby Majetek na stránce **Úrovně služby Majetek** poté, co jste jej již použili v pracovním příkazu, nebude odpovídajícím způsobem aktualizována úroveň služby v požadavcích na údržbu a pracovních příkazech.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

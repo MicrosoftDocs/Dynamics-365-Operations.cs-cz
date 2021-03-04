@@ -142,3 +142,6 @@ Chybové množství na výrobní zakázce nelze nahlásit, pokud také nehlásí
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Mohu sledovat sériová čísla dokončeného zboží podle sériových čísel spotřebovaného zboží?
 
 Sériová čísla dokončeného zboží nelze sledovat oproti sériovým číslům materiálu, který výrobní zakázka spotřebuje k výrobě dokončeného zboží. Tento scénář není momentálně podporován. Řešením je vytvořit výrobní zakázky pro množství 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

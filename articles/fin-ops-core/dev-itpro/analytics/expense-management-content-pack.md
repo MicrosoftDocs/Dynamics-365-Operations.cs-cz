@@ -93,3 +93,6 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 | Statistika zaměstnance | Vyúčtování výdajů podle typu nákladů            |
 |                     | Osobní výdaje                       |
 |                     | Vyúčtování výdajů podle skupin statistiky     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

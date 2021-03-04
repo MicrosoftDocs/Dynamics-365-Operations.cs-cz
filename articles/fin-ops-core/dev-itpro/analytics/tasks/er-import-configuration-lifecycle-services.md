@@ -103,3 +103,6 @@ V tomto příkladu zvolíte požadovanou verzi konfigurace elektronického výka
     Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.
 
     Všimněte si, že nyní je k dispozici také sdílená 1. verze vybrané konfigurace datového modelu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

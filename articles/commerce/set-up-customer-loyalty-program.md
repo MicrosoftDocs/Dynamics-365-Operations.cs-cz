@@ -151,3 +151,6 @@ Maloobchodní prodejci kromě toho mohou definovat maximální limit bodů věrn
 
     > [!NOTE]
     > Na rozdíl od jiných pravidelných slev, jako je například množství, jednotlivý produkt, shoda a porovnání a slevy prahové hodnoty, nevytvoří sleva za doručení řádky slevy. Spíše přímo upraví přepravní poplatek a připojí název slevy k popisu poplatku.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

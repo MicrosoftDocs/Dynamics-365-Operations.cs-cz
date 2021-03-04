@@ -318,3 +318,6 @@ Po dokončení byste měli vidět, že byly vytvořeny čtyři dodávky:
 
 - [Zásady konsolidace dodávek](about-shipment-consolidation-policies.md)
 - [Konfigurace zásad konsolidace dodávek](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

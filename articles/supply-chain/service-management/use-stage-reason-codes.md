@@ -73,3 +73,6 @@ Pokud jste určili, že má být kód důvodu vyžadován, je třeba zadat kód 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Kód období určuje rozsah období předplatného nebo intervaly, ve kterých m
 Kód období je definován ve skupině předplatného servisu. Je definován pro předplatné pomocí skupiny předplatného servisu. Jakýkoliv nový poplatek předplatného, který vytvoříte, má doporučené datum zahájení. Toto je počáteční datum období, pokud se jedná o první vytvořené období, anebo konec předchozího období, pokud se jedná o druhé a další období.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Pokud vrácená dodávka obsahuje menší než úplné množství na řádku vra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

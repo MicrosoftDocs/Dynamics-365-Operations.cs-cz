@@ -164,3 +164,6 @@ Některé receptury nelze testovat v době návrhu. Receptura může například
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Jazyk receptur v elektronickém výkaznictví](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Po návrhu a distribuci dotazníku mohou vybraní respondenti dotazník vyplnit.
 Dotazníky lze zpřístupnit pro určité uživatele, skupiny uživatelů nebo všechny uživatele na síti.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

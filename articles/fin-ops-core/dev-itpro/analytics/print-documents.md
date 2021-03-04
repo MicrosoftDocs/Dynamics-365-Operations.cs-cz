@@ -74,3 +74,6 @@ Následující diagram znázorňuje základní komponenty, které pomáhají s p
 [![servisní-komponenty-pro-síťový-tisk\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Všimněte si, že jednu tiskárnu lze registrovat s více agenty pro směrování dokumentů. Chcete-li vyřešit předvolby tiskárny, hostovaná služba používá síťovou cestu, která jednoznačně identifikuje každou síťovou tiskárnu. Výsledkem je, že i když je tiskárna registrována více klienty, zobrazí se jako jedna volba v seznamu tiskáren dostupných v aplikacích.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

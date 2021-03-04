@@ -236,3 +236,5 @@ Chcete-li použít podmíněné otázky a vytvářet hierarchii otázek v dotazn
 Právnická osoba nabízí zboží i služby zákazníkům. V takovém případě obvykle dochází k tomu, že někteří odběratelé kupují pouze zboží, jiní pouze služby a někteří zboží i služby. Proto pokud právnická osoba distribuuje průzkum spokojenosti zákazníků, použije na dotazník podmíněnou strukturu, aby odběratelé, kteří nakupují pouze služby, nemuseli odpovídat na otázky o zboží. 
 
 Případně můžete nastavit dotazník tak, že pokud respondent vybere odpověď A na otázku 1, další v pořadí bude otázka 2. Pokud však respondent vybere odpověď B na otázku 1, následuje otázka 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ U pracovníka, který má dovoleno přesunout rezervované zásoby, zaškrtněte
 Tato funkce také byla přenesena zpět do aplikace Microsoft Dynamics AX 2012 R3 a bude dostupná v rámci CU12.
 Lze ji stáhnout také samostatně prostřednictvím KB číslo 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

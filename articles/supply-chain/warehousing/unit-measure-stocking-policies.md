@@ -50,3 +50,6 @@ Při vytvoření uvolněných produktů je nutné vybrat výchozí jednotky pro 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

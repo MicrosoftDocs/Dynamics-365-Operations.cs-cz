@@ -82,3 +82,6 @@ Toto téma ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku. P
     - Stránka přímé dodávky se chová jako pracovní plocha pro nákupčí, který poskytuje přehled všech řádků prodejních objednávek, které mají být v přímo doručeny a umožňuje vytvořit odpovídající nákupní objednávky. Kromě toho mohou zobrazit otevření přímé dodávky a potvrzené objednávky na kartě potvrzení a dodání.  
     - Po vytvoření objednávky přímé dodávky se automaticky přesune na kartu Potvrzení. Můžete si vybrat potvrzení objednávky přímo z této stránky. Když je nákup potvrzen, bude automaticky přesunut na kartu dodání, odkud můžete zaregistrovat jeho přijetí.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

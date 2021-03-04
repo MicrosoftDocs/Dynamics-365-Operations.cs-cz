@@ -85,3 +85,6 @@ Existuje několik důvodů, proč nemusíte vidět všechny požadované funkce 
 
 - Váš spolupracovník pracuje se zkušební verzí nebo licencí Attract s doplňkem komplexního náboru, zatímco vy pracujete se základní verzí systému Attract.
 - Máte Attract s komplexním doplňkem náboru, ale nebyly vám přiděleny správné role na použití všech funkcí. Další informace naleznete v tématu [Zabezpečení a správa rolí v aplikaci Attract](security-attract.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

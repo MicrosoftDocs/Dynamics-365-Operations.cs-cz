@@ -88,3 +88,6 @@ Další informace naleznete v tématu [Uzavření hlavní knihy na konci obdob](
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

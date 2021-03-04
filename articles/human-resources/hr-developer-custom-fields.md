@@ -40,3 +40,5 @@ Nezapomeňte povolit všechna vlastní pole, která jste vytvořili, abyste je m
 [Entity Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Vystavení vlastních polí na datových entitách](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

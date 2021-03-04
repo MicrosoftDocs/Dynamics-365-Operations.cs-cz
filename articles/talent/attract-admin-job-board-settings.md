@@ -51,3 +51,6 @@ Chcete dostat své otevřené pozice před co největší množství kvalifikova
 
 > [!NOTE]
 > Společnost Microsoft a Attract nejsou zahrnuty při vytváření a údržbě těchto hodnot. Je to vaše zodpovědnost udržovat je v aktuálním stavu v aplikaci Attract a pracovat s Broadbeanem na řešení problémů, které se týkají vašich přihlašovacích údajů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

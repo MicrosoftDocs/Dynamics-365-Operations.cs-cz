@@ -109,3 +109,6 @@ Chcete-li pracovníkům umožnit tuto změnu, můžete vytvořit položku nabíd
 - **Zobrazit stav zásob:** *Ano*
 
 Na stránce můžete podle potřeby nastavit další pole.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

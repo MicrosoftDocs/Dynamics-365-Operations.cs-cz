@@ -160,3 +160,6 @@ Toto chování platí pouze v případě, že je produkt přímo vybrán k uvoln
 Například produkt X je přiřazen ke skupině vlastníků produktu *Designové skříňky*. Produkt X je také součástí kusovníku produktu Y, který je přiřazen ke skupině vlastníků produktů *Designové reproduktory*. Pokud uživatel ze skupiny vlastníků produktů *Designové reproduktory* uvolňuje produkt Y a jeho kusovník, produkt X bude uvolněn společně s produktem Y.
 
 Další informace naleznete v tématu [Vlastníci produktů](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

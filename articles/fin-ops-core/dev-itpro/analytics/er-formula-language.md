@@ -174,3 +174,6 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Rozšíření seznamu funkcí elektronického výkaznictví](general-electronic-reporting-formulas-list-extension.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

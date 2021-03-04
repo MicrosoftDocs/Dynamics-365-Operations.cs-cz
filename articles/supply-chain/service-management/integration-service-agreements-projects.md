@@ -83,3 +83,6 @@ Dále můžete zpřístupnit pole **Počáteční čas** a **Koncový čas** na 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

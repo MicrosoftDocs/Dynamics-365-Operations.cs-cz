@@ -53,3 +53,6 @@ Když uživatelé iniciují nabídku v Sales, zkopíruje architektura duálního
 ## <a name="additional-resources"></a>Další prostředky
 
 [Zpeněžení potenciálního zákazníka ve dvojím připisování](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

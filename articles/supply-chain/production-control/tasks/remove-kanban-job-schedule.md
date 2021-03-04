@@ -46,3 +46,6 @@ Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové �
 4. Klikněte na tlačítko OK.
     * Tím vrátíte aktuální stav úlohy ze stavu Plánováno na Neplánováno a odeberete ji z panelu procesů.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

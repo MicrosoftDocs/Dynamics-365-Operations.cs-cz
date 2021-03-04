@@ -116,3 +116,6 @@ Používám verzi 10.0.16 nebo novější a při spuštění hlavního plánová
 > Chcete-li začít, vyplňte prosím následující dotazník a případně požádejte o výjimku z migrace na optimalizaci plánování.
 
 **Odpověď:** Ne, hlavní plánování není blokováno. Vaše spuštění hlavního plánování bylo úspěšně dokončeno a výsledek můžete použít obvyklým způsobem. Chcete-li se však vyhnout dostávání této chybové zprávy během budoucích spuštění hlavního plánování, musíte buď migrovat na optimalizaci plánování okamžitě, nebo požádat o výjimku pomocí odkazu v chybové zprávě.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

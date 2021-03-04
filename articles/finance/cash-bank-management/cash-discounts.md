@@ -66,3 +66,6 @@ Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. úno
 > [!NOTE]
 > Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

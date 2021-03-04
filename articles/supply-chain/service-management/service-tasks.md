@@ -90,3 +90,6 @@ Při automatickém vytváření servisních zakázek můžete použít servisní
 2. Na kartě **Nastavení** zvolte **Podle servisní úlohy** v poli **Kombinace servisních zakázek**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

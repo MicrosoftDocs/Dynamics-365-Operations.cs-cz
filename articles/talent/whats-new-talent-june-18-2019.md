@@ -86,3 +86,6 @@ Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podř
 ### <a name="print-performance-reviews"></a>Tisk kontrol výkonnosti
 
 Zaměstnanci, manažeři a HR budou moci vytisknout hodnocení výkonnosti zaměstnance.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

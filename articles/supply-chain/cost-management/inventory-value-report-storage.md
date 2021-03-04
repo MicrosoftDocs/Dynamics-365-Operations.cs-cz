@@ -106,3 +106,6 @@ Následující příklad ukazuje, jak exportovat sestavu **Hodnota zásob**.
 1. Na otevřené stránce **Souhrn spuštění** můžete zobrazit stav úlohy exportu a seznam exportovaných entit. V části **Stav zpracování entity** vyberte v seznamu entitu **Hodnota zásob** a poté volbou **Stáhnout soubor** stáhněte data, který byla exportována z této entity.
 
 Další informace o tom, jak používat správu dat k exportu dat, naleznete v tématu [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

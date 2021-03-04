@@ -42,3 +42,6 @@ Toto téma ukazuje, jak pozdržet nebo trvale uzavřít období nebo více než 
 11. Vyberte **Stav aktualizace období** a nastavte stav na **Blokováno**, **Otevřeno** nebo **Trvale uzavřeno**. **Otevřeno** naznačuje, že období lze zaúčtovat, pokud má uživatel přístup. Hodnota **Blokováno** znamená, že období nelze zaúčtovat, ale můžete ho znovu otevřít. **Trvale uzavřeno** znamená, že je období uzavřeno a nikdy je nelze otevřít. Úpravy nelze zaúčtovat. Nedoporučujeme nastavit období na **Trvale uzavřeno**, dokud nejsou dokončeny všechny úpravy a audity.  
 12. Vyberte **Aktualizovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

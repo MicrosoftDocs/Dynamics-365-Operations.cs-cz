@@ -61,3 +61,6 @@ Další informace naleznete v tématu [Pravidla zásad auditu](audit-policy-rule
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Když spustíte konfigurovaný formát ER, textová hodnota pole **LabelText** v
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

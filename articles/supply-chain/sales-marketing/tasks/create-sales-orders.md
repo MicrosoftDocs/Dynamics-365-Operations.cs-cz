@@ -68,3 +68,6 @@ Produkty prodané vaší organizací mohou nabízet více variant rozlišených 
     Stránka **Součty** zobrazí podrobnosti o celé objednávce. Jedná se o mezisoučtu částkou, která představuje součet všech čistých částek na řádku upravených pro případné řádkové slevy, celkovou částku faktury, která tvoří mezisoučet upravený pro případnou slevu na úrovni objednávky, náklady, DPH, situaci limitního úvěru zákazníka apod. Částka faktury je částka, která se zobrazí na dokladu pro fakturu odběratele.  
     
 3. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

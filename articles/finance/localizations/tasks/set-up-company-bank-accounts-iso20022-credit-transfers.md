@@ -52,3 +52,6 @@ Toto je druhý z pěti úkolů, které společně popisují proces platby dodava
 4. V poli Bankovní účet zadejte nebo vyberte hodnotu.
 5. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Souvisí to s čekající funkcí, která je plánována jako součást podpory 
 [Začínáme s optimalizací plánování](get-started.md)
 
 [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

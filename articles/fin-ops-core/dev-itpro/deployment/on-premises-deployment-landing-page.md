@@ -72,3 +72,6 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Odstraněné nebo zastaralé funkce Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

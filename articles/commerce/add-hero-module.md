@@ -107,3 +107,6 @@ Chcete-li přidat modul hlavního banneru na novou stránku a nastavit požadova
 [Modul textového bloku](add-content-rich-block.md)
 
 [Modul videopřehrávače](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

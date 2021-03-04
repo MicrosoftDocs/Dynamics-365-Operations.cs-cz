@@ -95,3 +95,6 @@ Při použití externích zdrojů, například DMF pro zobrazení nebo data o au
 
 [Údaje Datum a čas](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Upřednostňované časové pásmo uživatele](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

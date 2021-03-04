@@ -67,3 +67,6 @@ Nyní je vytvořen výchozí typ funkčního místa, který se použije pouze na
 
 >[!NOTE] 
 >Na záložce s náhledem **Obecné** můžete získat přehled o počtu typů majetku, plánech údržby, požadavcích na atributy majetku, povolených typech, atributech a funkčních místech nastavených u typu funkčního místa. Pole **Funkční místa** zobrazuje počet funkčních míst, který používá typ funkčního místa. Pomocí tlačítka **Kopírovat** můžete kopírovat nastavení z typu funkčního místa do vybraného typu funkčního místa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

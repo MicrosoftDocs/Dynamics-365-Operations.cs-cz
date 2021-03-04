@@ -289,3 +289,6 @@ Když je nakonfigurovaný zdroj dat spuštěn, zatímco je provádění ER [sled
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Sledování provádění formátu elektronického výkaznictví za účelem řešení potíží s výkonem](trace-execution-er-troubleshoot-perf.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

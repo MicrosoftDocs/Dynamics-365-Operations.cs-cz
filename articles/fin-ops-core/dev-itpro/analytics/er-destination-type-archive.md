@@ -57,3 +57,6 @@ Pokud je umístění typu dokumentu nastaveno na **Azure storage**, můžete sou
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

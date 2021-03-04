@@ -37,3 +37,6 @@ Data financování a daně jsou integrována pomocí následujících mapování
 
 + [Integrovaná hlavní kniha](ledger-mapping.md)
 + [Integrovaná hlavní data daní](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

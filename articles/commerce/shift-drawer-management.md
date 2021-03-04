@@ -158,3 +158,6 @@ Přejděte na **Maloobchod a velkoobchod \> Kanály \> Obchody \> Všechny obcho
 Toto nastavení pomáhá zajistit, aby výkazy administrativy zahrnovaly stejné transakce jako směny v POS a aby se data sčítala podle této směny.
 
 Další informace o výkazu a metodách uzávěrky naleznete v tématu [Konfigurace obchodů pro výkazy Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

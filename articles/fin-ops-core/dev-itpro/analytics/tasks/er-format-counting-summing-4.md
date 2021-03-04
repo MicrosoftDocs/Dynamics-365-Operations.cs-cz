@@ -103,3 +103,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 21. Klikněte na možnost Otevřít.
     * Zkontrolujte vytvořený soubor XML, který obsahuje podrobnosti o počítání a sčítání, které byly shromážděny během provádění vybrané konfigurace.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -479,3 +479,6 @@ Vyrovnaná částka se projeví v poli <strong>Měna vyrovnání</strong> na str
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

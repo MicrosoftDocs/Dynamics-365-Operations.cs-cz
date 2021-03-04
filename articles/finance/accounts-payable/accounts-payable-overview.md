@@ -148,3 +148,6 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

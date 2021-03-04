@@ -72,3 +72,6 @@ Obohaťte kanál přidáním atributů kanálu a produktu. Než budete moci defi
 33. Klikněte na tlačítko OK.
 34. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

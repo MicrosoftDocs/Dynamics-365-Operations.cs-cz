@@ -92,3 +92,6 @@ Další informace naleznete v tématu [roční uzávěrka pro Českou republiku 
 - [Portál lokalizace Microsoft Dynamics: Sestava České republiky](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

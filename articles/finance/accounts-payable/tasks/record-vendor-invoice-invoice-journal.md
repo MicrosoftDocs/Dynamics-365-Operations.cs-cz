@@ -49,3 +49,6 @@ Tento průvodce úkolem ukazuje, jak vytvořit záznam faktur dodavatele, které
 12. Klikněte na možnost **Zaúčtovat**.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

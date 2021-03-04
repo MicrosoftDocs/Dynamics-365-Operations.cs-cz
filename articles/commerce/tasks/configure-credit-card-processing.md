@@ -62,3 +62,6 @@ Tato procedura vás provede zobrazením seznamu zprostředkovatelů plateb a zp�
 24. Zaškrtněte políčko Výchozí procesor pro nové platebních karty.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

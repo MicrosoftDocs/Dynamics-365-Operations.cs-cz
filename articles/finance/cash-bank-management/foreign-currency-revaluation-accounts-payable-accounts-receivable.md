@@ -66,3 +66,6 @@ Při každém spuštění přecenění cizí měny je vytvořen záznam. Ze záz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

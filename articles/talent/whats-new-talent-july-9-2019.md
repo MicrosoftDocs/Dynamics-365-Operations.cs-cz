@@ -115,3 +115,6 @@ Pro vlastní pole v aplikaci Common Data Service budou povoleny následující e
 - **Typ odchodu**
 - **Bankovní účet pracovníka**
 - **Pracovní kalendář**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

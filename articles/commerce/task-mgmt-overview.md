@@ -53,3 +53,6 @@ Na následujícím obrázku je znázorněna konceptuální architektura správy 
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

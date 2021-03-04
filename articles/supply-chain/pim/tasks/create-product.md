@@ -39,3 +39,6 @@ Tato procedura vás provede procesem vytvoření nového produktu v hierarchii p
 8. Zadejte hodnotu do pole Číslo produktu.
 9. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

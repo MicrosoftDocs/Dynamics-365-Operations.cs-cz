@@ -57,3 +57,6 @@ Na konci každého měsíce připíšete časově rozlišené výnosy z předpla
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

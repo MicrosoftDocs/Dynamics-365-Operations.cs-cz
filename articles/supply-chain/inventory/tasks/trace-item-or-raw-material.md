@@ -60,3 +60,6 @@ Nejvyšší uzel stromové struktury představuje množství vybraných položek
 9. Klikněte na **Prodejní objednávky za expedované zboží**.
 10. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

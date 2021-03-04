@@ -64,3 +64,6 @@ Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, p
 [Synchronizace hodnocení produktů v Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | Logická hodnota, která určuje, zda má být podokno filtru zobrazené (**true**) nebo skryté (**false**).     |
 | showNavPane      | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (**true**) nebo skryté (**false**). |
 | defaultFilters   | Výchozí filtry pro sestavu Power BI.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

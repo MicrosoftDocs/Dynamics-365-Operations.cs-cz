@@ -140,3 +140,6 @@ Zadejte následující hodnoty pro nastavení účetního profilu:
 
 Další informace naleznete v tématu [Přehled plateb odběratele](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

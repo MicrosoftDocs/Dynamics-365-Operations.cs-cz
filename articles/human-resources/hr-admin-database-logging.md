@@ -87,3 +87,6 @@ Chcete-li nastavit čištění protokolu databáze, postupujte následujícím z
    - Datum a čas vytvoření
 
 3. Pomocí karty **Vyčištění protokolu databáze** zjistěte, kdy spustit úlohu vyčištění protokolu. Ve výchozím nastavení jsou protokoly databáze k dispozici po dobu 30 dnů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

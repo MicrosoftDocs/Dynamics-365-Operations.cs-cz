@@ -380,3 +380,6 @@ V první transakci pro předplatné 00020\_13 je prodejní cena 550 EUR odvozena
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

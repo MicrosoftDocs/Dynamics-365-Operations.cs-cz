@@ -58,3 +58,6 @@ Tato procedura vás provede postupem vytvoření nové hardwarové stanice. Bude
 23. Zadejte hodnotu do pole ID terminálu EFT.
 24. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

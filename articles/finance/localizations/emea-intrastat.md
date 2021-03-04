@@ -240,3 +240,6 @@ Stránka **Parametry zahraničního obchodu** slouží k nastavení parametrů u
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

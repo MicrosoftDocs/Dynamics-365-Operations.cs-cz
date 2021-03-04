@@ -123,3 +123,6 @@ Můžete definovat standardní debetní účet plateb podle metody platby bez oh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

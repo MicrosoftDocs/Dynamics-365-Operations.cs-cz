@@ -37,3 +37,6 @@ Můžete použít nový prvek formátu **RAW XML** k návrhu formátů elektroni
 > Počítejte s tím, že systém neřídí, zda je obsah XML, který se umístí do vygenerovaného dokumentu pomocí prvku formátu **RAW XML** správný.
 
 Další informace o této funkci získáte přehráním průvodců záznamů úlohy **ER Použití nezpracovaných dat XML ke generování sestav XML (část 1: Návrh datového modelu)** a **ER Použití nezpracovaných dat XML ke generování sestav XML (část 2: Návrh a spuštění sestavy)**, které jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)** a dají se stáhnout ze [služby Stažení softwaru Microsoft](https://go.microsoft.com/fwlink/?linkid=874684). Tito průvodci záznamem úloh vás provedou procesem konfigurace formátu ER k vložení nezpracovaných dat XML do generovaných souborů.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

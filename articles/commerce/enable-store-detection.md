@@ -69,3 +69,6 @@ Chcete-li zapnout zjišťování obchodu na základě polohy, postupujte podle n
 [Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

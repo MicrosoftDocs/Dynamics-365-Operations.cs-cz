@@ -837,3 +837,6 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 [Simulátor periferních zařízení pro Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

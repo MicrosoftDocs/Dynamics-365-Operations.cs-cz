@@ -60,3 +60,6 @@ Jakmile máte alespoň jednu navrhovanou změnu, zobrazí se další dvě nabíd
     Stav na stránce se změní na **Změny čekající na schválení**.
 
 Pracovní postup následuje standardní procesu pracovního postupu v aplikaci. Schvalovatel je přesměrován na stránku **Zákazník**, kde může zkontrolovat změny na stránce **Navrhované změny** a poté zvolit **Workflow \> Schválit** pro schválení pracovního postupu. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

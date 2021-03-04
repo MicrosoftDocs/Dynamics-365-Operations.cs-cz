@@ -53,3 +53,6 @@ Výraz `IF( Invoice.DocumentDate = NULLDATE(), true, false)` vrátí hodnotu **T
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce data a času](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

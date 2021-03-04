@@ -67,3 +67,6 @@ V následující tabulce jsou popsána pole, která jsou k dispozici v sestavě.
 |           Vyřazení: Likvidační hodnota            |                                                                                               Likvidační hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – likvidační transakce.                                                                                               |
 |           Vyřazení: Zisk/ztráta            |                                                                                 Hodnota zisku nebo ztráty, která je vypočtena jako součást transakce vyřazení pro knihu dlouhodobého majetku.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

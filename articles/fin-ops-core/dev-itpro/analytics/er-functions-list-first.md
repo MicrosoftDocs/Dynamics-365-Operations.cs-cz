@@ -59,3 +59,6 @@ Výraz `FIRST(SPLIT("",1)).Value` vyvolá výjimku za běhu.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Tento příklad ukazuje odpis vypočítaný pomocí zrychlené české metody od
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

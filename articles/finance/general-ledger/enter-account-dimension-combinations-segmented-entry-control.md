@@ -114,3 +114,6 @@ V následující tabulce jsou popsány klávesové zkratky, které lze použít,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

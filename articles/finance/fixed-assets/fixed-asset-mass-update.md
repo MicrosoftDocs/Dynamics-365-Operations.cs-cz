@@ -42,3 +42,6 @@ Po aktualizaci způsobu odpisu pro majetek lze zpracovat odpisy a mimořádné o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

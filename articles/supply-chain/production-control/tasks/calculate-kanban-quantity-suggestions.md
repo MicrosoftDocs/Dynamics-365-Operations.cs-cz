@@ -85,3 +85,6 @@ Tento postup se zaměřuje na optimalizaci velikosti a množství kanbanu u konk
     * Všimněte si, že se že jedná o pevné kanbanové množství „4“ z výpočtu kanbanového množství.  
 5. Klikněte na kartu Panel seznamu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

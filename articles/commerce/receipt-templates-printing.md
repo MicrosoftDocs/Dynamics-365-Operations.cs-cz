@@ -82,3 +82,6 @@ Profily účtenky jsou přiřazeny přímo k tiskárnám prostřednictvím profi
 
 > [!NOTE]
 > Pokud jsou použity dvě tiskárny, jednu tiskárnu lze nastavit na tisk standardních termálních účtenek se 40 sloupci. Druhá tiskárna se obvykle používá pro tisk účtenek na celou stránku, které vyžadují další informace. Tyto typy účtenky zahrnují účtenky za objednávky odběratelů a faktury odběratelům.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

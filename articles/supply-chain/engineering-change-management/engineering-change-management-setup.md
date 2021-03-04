@@ -91,3 +91,6 @@ U každé sady pravidel je třeba nastavit následující pole:
 - **Závažnost** - Vyberte úroveň závažnosti pro nastavení pravidel. Stránku **Závažnosti technických změn** použijete k vytvoření a pojmenování úrovní. (Další informace naleznete v předchozí části.)
 
 Použijte tlačítka na pevné záložce **Pravidla** pro přidání nebo odebrání pravidla pro aktuální nastavení závažnosti. Každé pravidlo má pole **Pravidlo** a pole **Název**. Pravidla stanoví systém a označují typy změn, které produkt může mít. Název indikuje typ změny.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

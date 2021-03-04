@@ -122,3 +122,6 @@ Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následuj
 2. Vyhledejte formulář **Informace** v uzlu formulářů. 
 3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 
 4. Změňte nastavení zabezpečení na **Zobrazit všem**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

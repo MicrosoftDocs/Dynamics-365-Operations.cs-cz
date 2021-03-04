@@ -43,3 +43,6 @@ Tato procedura ukazuje, jak pomocí transakcí dokladu vyhledávat položky den�
 12. V podokně akcí klikněte na možnost **Původní dokument**.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

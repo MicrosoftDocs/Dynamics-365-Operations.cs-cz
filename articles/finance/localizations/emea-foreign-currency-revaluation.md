@@ -72,3 +72,6 @@ Musíte přecenit a upravit bankovní účty, pokud je mezi zúčtovací měnou 
 
 > [!NOTE]
 > V hlavní knize můžete zobrazit dvě samostatné transakce: jednu pro zúčtovací měnu a druhou pro měnu vykazování.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

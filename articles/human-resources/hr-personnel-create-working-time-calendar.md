@@ -43,3 +43,6 @@ Kalendáře popisují kapacitu a pracovní dobu provozních prostředků. Tento 
 12. Vyberte **OK**.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

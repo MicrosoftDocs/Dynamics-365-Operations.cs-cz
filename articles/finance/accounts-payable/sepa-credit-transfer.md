@@ -126,3 +126,6 @@ Při generování plateb je vygenerován soubor platby a budete vyzváni k jeho 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Microsoft Dynamics 365 Talent: Onboard umožňuje sdílet průvodce a šablony z
 - [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
 - [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

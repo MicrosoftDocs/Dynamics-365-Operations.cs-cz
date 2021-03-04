@@ -243,3 +243,6 @@ Chcete-li stáhnout archivovanou historii spuštění, přejděte do pracovního
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

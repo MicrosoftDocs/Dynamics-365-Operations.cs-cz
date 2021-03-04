@@ -89,3 +89,6 @@ Chcete-li se připojit k věrnostnímu programu, můžete vytvořit marketingovo
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

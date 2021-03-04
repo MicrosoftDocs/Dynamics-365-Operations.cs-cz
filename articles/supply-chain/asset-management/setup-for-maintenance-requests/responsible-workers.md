@@ -54,3 +54,6 @@ Před nastavením zodpovědných pracovníků údržby je nutné nastavit pracov
 Následující ilustrace znázorňuje příklad stránky **Zodpovědní pracovníci údržby**.
 
 ![Stránka Zodpovědní pracovníci údržby](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

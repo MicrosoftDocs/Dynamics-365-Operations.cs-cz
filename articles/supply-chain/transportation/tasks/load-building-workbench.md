@@ -67,3 +67,6 @@ Nyní můžete strategii sestavení vytížení přiřadit k šabloně sestaven�
 1. Zkontrolujte navrhovaná vytížení a navrhované řádky vytížení.
 1. V podokně akcí vyberte **Vytvořit zatížení** a vytvořte vytížení, která jsou založena na řádcích zdrojového dokumentu na záložce s náhledem **Navrhované řádky vytížení**.
 1. Zavřete stránku **Pracovní plocha sestavení zatížení**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

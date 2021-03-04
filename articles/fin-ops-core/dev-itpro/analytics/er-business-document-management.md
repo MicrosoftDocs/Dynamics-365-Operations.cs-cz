@@ -423,3 +423,6 @@ Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně A
 
 [Konfigurace elektronického výkaznictví pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Další informace naleznete v následujících tématech:
 
  - [Kontrola inkasních informací](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

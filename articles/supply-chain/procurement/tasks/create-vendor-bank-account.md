@@ -58,3 +58,6 @@ Tato procedura popisuje způsob vytváření bankovního účtu pro dodavatele. 
 25. V poli **Bankovní účet** vyberte účet, který jste právě vytvořili.
 26. Klikněte na možnost **Uložit**. Adresa může být zděděna z bankovní skupiny, pokud je určena, nebo ji můžete přidat zde.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

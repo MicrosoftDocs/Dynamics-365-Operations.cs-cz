@@ -51,3 +51,6 @@ Tato úloha vás provede vytvářením smlouvy bankovního zařízení pro zprac
 18. Klepněte na položku Rozšířit.
 19. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -274,3 +274,6 @@ Ztraceným nebo narušeným zařízením je nutné odebrat přístup k aplikaci
 1. Ujistěte se, že ID klienta aplikace odpovídá ID klienta, které jste si poznamenali v kroku 2.
 1. Na panelu nástrojů vyberte **Odstranit**.
 1. V zobrazené zprávě s potvrzením vyberte **Ano**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

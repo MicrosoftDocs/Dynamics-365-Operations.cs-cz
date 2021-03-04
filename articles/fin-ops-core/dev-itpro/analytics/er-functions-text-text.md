@@ -59,3 +59,6 @@ Jestliže je národní prostředí instance Microsoft Dynamics 365 Finance defin
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

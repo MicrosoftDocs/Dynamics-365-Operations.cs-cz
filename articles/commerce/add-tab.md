@@ -84,3 +84,6 @@ Chcete-li přidat modul karty na stránku a nastavit vlastnosti, postupujte nás
 [Modul ovládacího prvku Accordion](add-accordion.md)
 
 [Modul textového bloku](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

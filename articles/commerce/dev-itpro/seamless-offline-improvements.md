@@ -56,3 +56,6 @@ Parametry Commerce jsou obvykle uloženy v mezipaměti. Z toho vyplývá, že po
 
 - [Offline funkce pokladního místa (POS)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Online a offline operace pokladního místa (POS)](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

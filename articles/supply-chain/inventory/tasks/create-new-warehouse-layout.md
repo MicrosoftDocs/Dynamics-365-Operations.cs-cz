@@ -63,3 +63,6 @@ Toto téma popisuje, jak nastavit informace o umístění ve skladu. To platí p
 7. Zavřete stránku.
 8. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

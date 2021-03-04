@@ -81,3 +81,6 @@ Proto je datum expedice na základě výpočtu hodnoty ATP nastaveno na 10 dní 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

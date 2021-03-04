@@ -280,3 +280,6 @@ Potřebujete-li vyhodnotit mapování modelu pomocí metadat jiné verze aplikac
 ## <a name="additional-resources"></a>Další zdroje
 
 Případně můžete přehrát Průvodce záznamem úloh **Připravit metadata aplikace, která lze použít v RCS** v aplikaci a **Přístup k metadatům aplikace pomocí konfigurace ER** a **Přístup k metadatům aplikace pomocí připojených aplikací** v RCS. Tyto Průvodce záznamem úloh je možné stáhnout ze stránky [Průvodci záznamem úloh pro Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

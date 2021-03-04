@@ -55,3 +55,6 @@ Pro všechna předplatná připojená ke skupině předplatného lze dále prov�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

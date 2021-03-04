@@ -98,3 +98,6 @@ Můžete definovat několik skupin výpočtů kusovníku v závislosti na požad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

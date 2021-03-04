@@ -145,3 +145,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 11. Zobrazte výkonnost jednotlivých prvků nákladů.
 12. Můžete také vyhledat konkrétní prvky nákladů.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

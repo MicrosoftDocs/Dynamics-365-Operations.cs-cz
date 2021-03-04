@@ -63,3 +63,6 @@ Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definov�
    | **Časový úsek pro vykazování** | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
 
 5. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

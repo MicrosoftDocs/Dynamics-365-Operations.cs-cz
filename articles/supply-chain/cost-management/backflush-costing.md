@@ -126,3 +126,6 @@ Je třeba spustit zpětné účtování nákladů pro pravidelné ocenění nedo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

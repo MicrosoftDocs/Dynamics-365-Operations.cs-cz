@@ -56,3 +56,6 @@ Skupiny štíhlého plánu jsou definovány pro rozdělení do skupin a rozliše
 3. V poli Alokační klíč položky klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 4. Klikněte na odkaz na vybraném řádku v seznamu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

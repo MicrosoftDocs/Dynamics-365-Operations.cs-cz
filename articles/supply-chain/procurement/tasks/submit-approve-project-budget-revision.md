@@ -46,3 +46,6 @@ Tato úloha používá sadu dat SSI.
 12. Zadejte hodnotu do pole Komentář.
 13. Klepněte na tlačítko Odeslat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

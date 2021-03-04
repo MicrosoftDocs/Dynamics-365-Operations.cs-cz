@@ -58,3 +58,6 @@ Sestava **Seznam požadavků na údržbu** zobrazuje seznam všech požadavků n
 Na následujícím obrázku je znázorněn příklad sestavy **Seznam požadavků na údržbu** pro všechny aktivní požadavky na údržbu.
 
 ![Sestava seznamu požadavků na údržbu](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

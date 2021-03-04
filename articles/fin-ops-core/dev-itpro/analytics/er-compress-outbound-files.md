@@ -94,3 +94,6 @@ Před provedením procedur v tomto tématu je nutné provést následující kro
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Odložení provádění prvků XML ve formátech elektronického výkaznictví](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

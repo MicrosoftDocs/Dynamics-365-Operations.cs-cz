@@ -47,3 +47,6 @@ Společnost A spravuje finanční záznamy několika malých společností. Jedn
 
 [Tvorba předmětů servisu](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

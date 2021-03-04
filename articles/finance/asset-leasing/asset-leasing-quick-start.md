@@ -253,3 +253,6 @@ Pomocí následujících kroků vytvoříte nový leasing.
 
    Stránka **Transakce leasingového závazku** zobrazuje počáteční uznání, splátky úroků z leasingu, splátky leasingu a zůstatek leasingového závazku. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

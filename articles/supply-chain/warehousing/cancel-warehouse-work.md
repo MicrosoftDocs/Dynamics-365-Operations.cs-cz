@@ -45,3 +45,6 @@ Pomocí funkce Zrušit práci lze zrušit pouze práci typu **Prodej**, **Probl�
 Chcete-li odblokovat práci, systém zruší všechny zbývající řádky práce a opraví data skladu přidružená k ID práce, kterou daný uživatel určil. Všechny běžné operace zpracování skladu, které zahrnují ovlivněné množství zboží, mohou být opět obnoveny.
 
 Chcete-li po zrušení práce vložit ovlivněnou položku do určitého umístění, musí uživatel použít operaci pohybu zásob nebo úpravy množství v mobilním zařízení.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

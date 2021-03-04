@@ -56,3 +56,6 @@ Podmíněné otázky umožňují určit, jaké následující otázky budou prez
 10. Ve stromovém zobrazení vyberte "Otázky\Jsem placen(a) odpovídajícím způsobem za prováděnou práci".
     * Mějte na paměti, že strom otázek se aktualizuje a odráží závislosti.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

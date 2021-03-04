@@ -203,3 +203,6 @@ Další informace o způsobu konfigurace e-mailů v Dynamics 365 Commerce nalezn
 [Nastavení účtenek e-mailem](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Odesílání účtenek e-mailem z Modern POS](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

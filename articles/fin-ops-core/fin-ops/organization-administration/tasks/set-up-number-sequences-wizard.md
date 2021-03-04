@@ -38,3 +38,6 @@ ms.locfileid: "4694732"
 4. Zvolte **Další**.
 5. Vyberte **Dokončit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

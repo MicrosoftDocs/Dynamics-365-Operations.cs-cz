@@ -67,3 +67,6 @@ Spuštění této procedury vyžaduje, aby model konfigurace produktu existoval.
 15. V poli Požadavek zadejte nebo vyberte hodnotu.
 16. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

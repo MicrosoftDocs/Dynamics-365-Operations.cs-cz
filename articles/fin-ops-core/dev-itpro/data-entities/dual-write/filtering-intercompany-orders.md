@@ -65,3 +65,6 @@ Každá standardní entita Common Data Service je rozšířena o odkazy na pole 
 7. Poté, co rozšíříte entitu **Nabídka**, použijte filtr s řetězcem `CUSTGROUP !=  "<company>"` ve funkci řetězce dotazu.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Záhlaví prodejní nabídky, upravit dotaz":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

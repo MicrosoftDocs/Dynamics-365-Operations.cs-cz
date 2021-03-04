@@ -350,3 +350,6 @@ Tento postup použijte, pokud je rozhodnutí nutné učinit v určitém čase.
     - **Roky** – vyberte den, týden a měsíc, do kdy má být rozhodnutí učiněno. Můžete například požadovat, aby bylo rozhodnutí učiněno do třetího pátku v prosinci.
 
 4. Dojde-li k překročení časového limitu, systém učiní rozhodnutí. V seznamu **Akce** vyberte možnost, která má být vybrána.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

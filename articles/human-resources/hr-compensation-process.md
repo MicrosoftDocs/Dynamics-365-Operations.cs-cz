@@ -77,3 +77,6 @@ Po zkontrolování částek kompenzace pro zaměstnance a provedení úprav dopo
 Jakmile má jedna nebo více událostí zaměstnance aktualizován stav na Schváleno, mohou být události nahrány do záznamů fixní kompenzace zaměstnance. To lze provést postupným výběrem jednotlivých událostí zaměstnance a klepnutím na tlačítko **Nahrát kompenzaci zaměstnance** na stránce **Výsledky zaměstnance** nebo klepnutím na tlačítko **Načíst kompenzaci** na stránce **Výsledky procesu** k načtení stránky všech schválených událostí zaměstnance najednou.
 
 Klepnutím na tlačítko **OK** v dialogovém okně **Načíst kompenzaci** přidáte řádky akce kompenzace na stránku **Fixní kompenzace zaměstnance**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Na následujícím obrázku je znázorněn příklad konfigurace zákazníka.
 [Přehled kanálů](channels-overview.md)
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Chcete-li rychle zjistit naléhavost servisní zakázky, použijte Ganttův diag
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

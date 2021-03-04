@@ -150,3 +150,6 @@ Chcete-li povolit atribut **isIntegrationUser**, postupujte následujícím způ
     ![Změna hodnoty pole uživatelského režimu integrace](media/sales-map-user-mode-yes.png)
 
 Vaše prodejní objednávky jsou nyní mapovány.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produ
 
 ## <a name="steps-for-creating-a-job"></a>Postup při vytváření práce
 Ohledně podrobného postupu pro vytvoření nové práce nahlédněte do článku [Definování nových prací](../fin-and-ops/hr/tasks/define-new-jobs.md). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

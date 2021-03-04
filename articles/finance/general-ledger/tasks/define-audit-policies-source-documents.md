@@ -88,3 +88,6 @@ Toto téma vysvětluje způsob nastavení a spuštění pravidel zásad auditu. 
 57. Rozbalte sekci **Přidružení**.
 58. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

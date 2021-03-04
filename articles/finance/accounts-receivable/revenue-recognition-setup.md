@@ -193,3 +193,6 @@ Uznání výnosů lze rovněž použít pro prodejní objednávky, které jsou v
 
 - **Odložené výnosy faktury** – (pod **Výnosové účty**) - Zadejte hlavní účet pro výnosovou cenu, která účtuje do odložených výnosů (místo výnosů). Výnosová cena je odložena, pokud má řádek prodejní objednávky plán výnosů.
 - **Odložené náklady** (pod **Nákladové účty**) – Zadejte hlavní účet pro částku nákladů za prodané zboží, která se zaúčtuje do odložených nákladů za prodané zboží, pokud je výnos také odložen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

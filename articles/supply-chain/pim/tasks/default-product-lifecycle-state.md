@@ -62,3 +62,6 @@ Tento postup popisuje, jak vytvoříte výchozí stav životního cyklu produktu
 > [!NOTE]
 > Předpokládejme, že jste nastavili aktivní stav, nyní můžete vybrat aktivní stav pro povolení použití produktu v hlavmím plánování a výpočtu na úrovni kusovníku. Samozřejmě to dává smysl, pouze pokud nejsou zadány všechny podrobnosti o produktu vyžadované pro konzistentní plánování.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

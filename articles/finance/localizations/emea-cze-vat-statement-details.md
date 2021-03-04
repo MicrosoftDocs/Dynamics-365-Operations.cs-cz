@@ -148,3 +148,6 @@ Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH**, vybert
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

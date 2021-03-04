@@ -127,3 +127,6 @@ Poté, co je výrobek vykázán jako dokončený na výrobní lince, je přeprav
 -   Scénář cross dockingu je podporován pro dávku a sériové řízené zboží, přičemž jak dimenze dávky, tak dimenze sériového čísla jsou definovány nad a pod skladovým místem v hierarchii rezervací. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

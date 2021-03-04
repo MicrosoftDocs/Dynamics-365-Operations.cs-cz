@@ -46,3 +46,6 @@ Můžete tak vytvořit samostatné rozpočty pro nejvýznamnější transakční
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

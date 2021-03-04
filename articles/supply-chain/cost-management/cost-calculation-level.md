@@ -57,3 +57,6 @@ Poté se vytvoří výrobní objednávka pro produkt C a produkt A se přidá do
     - **Produkt C:** 2
 
 Toto chování zajišťuje, že změny v kusovnících výrobní zakázky neovlivní následné výpočty nákladů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

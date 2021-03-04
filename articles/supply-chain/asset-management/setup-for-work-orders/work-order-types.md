@@ -52,3 +52,6 @@ Další informace o stavech životního cyklu pracovního příkazu a fázích p
 8. Zvolte **Uložit**.
 
 ![Typy pracovních příkazů](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

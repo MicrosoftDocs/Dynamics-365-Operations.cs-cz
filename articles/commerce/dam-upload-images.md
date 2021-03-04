@@ -97,3 +97,6 @@ Chcete-li hromadně odeslat složku obrázků v rámci konfigurátoru webu, post
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

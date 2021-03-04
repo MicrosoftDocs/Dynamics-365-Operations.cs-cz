@@ -60,3 +60,6 @@ Na následujícím obrázku je uveden příklad výběru expedice v dialogovém 
 [!NOTE]
 Pokud chcete odstranit plán v pracovním příkazu, vyberte pracovní příkaz v možnosti **Všechny pracovní příkazy** a kliknutím možnost **Odstranit plán** na kartě **Obecné** . Nezapomeňte ručně aktualizovat stav životního cyklu pracovního příkazu, pokud jste plán odstranili.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

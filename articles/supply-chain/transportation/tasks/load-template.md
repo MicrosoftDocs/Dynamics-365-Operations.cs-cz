@@ -54,3 +54,6 @@ Toto téma popisuje způsob nastavení šablony nákladů a jak přiřadit šabl
 1. V podokně Akce na kartě **Nabídka a poptávka** vyberte ve skupině **Přidat** možnost **Do nového vytížení**.
 1. V dialogovém okně **Šablona vytížení** zvolte v poli **ID šablony vytížení** šablonu, kterou použijete.
 1. Zvolte **OK** pro použití šablony.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

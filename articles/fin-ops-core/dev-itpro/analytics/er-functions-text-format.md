@@ -101,3 +101,6 @@ Jestliže je stejná sestava zpracována pro odběratele **Litware Retail** 17. 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

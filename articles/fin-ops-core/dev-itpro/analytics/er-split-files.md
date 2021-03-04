@@ -47,3 +47,6 @@ Další informace o této funkci zobrazíte přehráním Průvodce záznamem úl
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

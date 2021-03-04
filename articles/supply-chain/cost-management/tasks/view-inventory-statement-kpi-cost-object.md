@@ -39,3 +39,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 7. Zadejte datum do pole Od data.
 8. Do pole Do data zadejte datum.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

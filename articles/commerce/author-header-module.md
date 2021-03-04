@@ -119,3 +119,6 @@ Chcete-li zajistit, aby se záhlaví zobrazilo na každé stránce, postupujte p
 [Modul volby webu](site-selector.md)
 
 [Modul volby obchodu](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

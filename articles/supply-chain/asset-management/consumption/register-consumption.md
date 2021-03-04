@@ -95,3 +95,6 @@ Při provádění registrace spotřeby se do registrací v určitém pořadí p�
 >[!NOTE]
 >Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení u dalších aplikací Finance and Operations.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

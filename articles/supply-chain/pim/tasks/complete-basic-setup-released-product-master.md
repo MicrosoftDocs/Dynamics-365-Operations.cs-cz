@@ -53,3 +53,6 @@ Jedná se o třetí postup z osmi, který vysvětluje vytvoření kombinací kon
 20. Zavřete stránku.
 21. Zavřete formulář **Podrobnosti o uvolněném produktu**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Chcete-li vymazat budoucí data resetování, můžete použít funkci **Vymazat
 
 > [!NOTE]
 > V závislosti na zvoleném datu resetování a na formátu účtenky mohou být k dispozici duplicitní čísla příjmu. Ačkoli systém Retail POS může tyto situace zpracovat, zvyšují dobu potřebnou ke zpracování vratek, protože prodejci musí vybírat mezi duplicitními příjmy. Další komplikace související s čištěním dat mohou nastat v případě, že duplicitní příjemky nebyly naplánovány. Proto doporučujeme, abyste používali dynamické datové znaky (například **DDD**, **mm**, **DD** a **RR**), aby se zabránilo výskytu duplicitních čísel příjmu po resetování.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

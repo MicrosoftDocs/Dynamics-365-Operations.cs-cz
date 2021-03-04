@@ -44,3 +44,6 @@ Pro tuto položku byl nastaven skladový model podle metody FIFO a uzávěrka sk
 -   5. února: Množství 1 s náklady 13,00 USD
 
 Chcete-li nastavit náklady těchto dvou položek na 15,00 USD, upravte pomocí možnosti úpravy množství na skladě k poslední uzávěrce skladu otevřené množství na skladě. **Poznámka:** Datem zaúčtování transakce úpravy množství na skladě bude datum poslední uzávěrky skladu. Toto datum nelze změnit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

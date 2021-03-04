@@ -87,3 +87,6 @@ Přidáním fragmentu do šablon stránek pomůžete zaručit, že zápatí bude
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

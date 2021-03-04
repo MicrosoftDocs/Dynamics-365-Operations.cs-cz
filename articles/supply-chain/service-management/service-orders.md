@@ -89,3 +89,6 @@ Ve druhé polovině roku zákazník dospěje k závěru, že servisních zásah�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Spuštění této procedury vyžaduje stávající model konfigurace produktu. M
     * Ověřte, zda některá z dimenzí produktu je aktivní, a proto se hodnota nebo atribut musí přiřadit.  
 9. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

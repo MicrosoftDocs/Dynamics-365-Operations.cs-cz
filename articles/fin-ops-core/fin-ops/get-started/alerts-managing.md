@@ -82,3 +82,6 @@ Pokud nastavíte okno dávkového zpracování, odešle se výstraha po zpracov�
 
 1. Přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Výstrahy** &gt; **Výstrahy založené na datu plnění**.
 2. V dialogovém okně **Výstrahy data plnění** zadejte příslušné informace.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

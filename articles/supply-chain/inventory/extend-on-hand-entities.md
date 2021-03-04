@@ -69,3 +69,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Po dokončení těchto kroků můžete inventář rozšířit o web a inventář po datových jednotkách skladu přidáním nových polí. Tímto způsobem zajistíte, že byla rozšířená pole rozpoznávána a zahrnuta během migrace dat, která používá tyto datové entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Lze také zadat potvrzovací zprávu, která se zobrazí po dokončení průvodc
 4.  Otevřete kartu **Země/oblasti** a vyberte zemi nebo oblast, pro kterou má být použita konfigurace.
 5.  Dokončete konfiguraci podle následujících pokynů pro výchozí konfiguraci.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

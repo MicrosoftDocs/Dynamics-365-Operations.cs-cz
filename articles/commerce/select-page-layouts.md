@@ -78,3 +78,6 @@ Chcete-li vybrat jiné rozvržení pro existující stránku, postupujte podle n
 
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

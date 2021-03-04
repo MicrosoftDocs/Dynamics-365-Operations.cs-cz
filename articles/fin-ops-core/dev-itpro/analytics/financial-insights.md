@@ -247,3 +247,6 @@ Informace v následujících zdrojích není vyžadována, aby bylo možné povo
 - [Přístup k analytickým pracovním prostorům a sestavám v prostředí s topologií 1-box](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

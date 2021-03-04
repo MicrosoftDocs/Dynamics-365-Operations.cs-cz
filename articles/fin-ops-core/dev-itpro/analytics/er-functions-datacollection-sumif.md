@@ -67,3 +67,6 @@ Další informace a příklady použití této funkce naleznete v části [Odlo�
 ## <a name="additional-resources"></a>Další prostředky
 
 [Funkce shromažďování dat](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

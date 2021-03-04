@@ -85,3 +85,6 @@ Pokud je argument `input` prázdný, vrátí se nový prázdný seznam. Pokud ne
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

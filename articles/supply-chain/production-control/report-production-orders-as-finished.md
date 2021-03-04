@@ -48,3 +48,6 @@ K nastavení stavu výrobní zakázky na **Hlášeno jako dokončené** můžete
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

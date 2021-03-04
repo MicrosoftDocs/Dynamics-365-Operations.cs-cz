@@ -301,3 +301,6 @@ Další informace o položkách nabídky mobilního zařízení naleznete v té
 Další informace týkající se přijímání registračních značek a zásad práce získáte v tématu [Příjem registrační značky prostřednictvím aplikace skladu](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Další informace o správě příchozího vytížení získáte v části [Skladová manipulace s příchozím zatížením pro nákupní objednávky](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

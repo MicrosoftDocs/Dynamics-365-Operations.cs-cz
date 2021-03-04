@@ -57,3 +57,6 @@ Chcete-li vyřešit problémy se šablonami ER, ke kterým nemáte přístup, pr
 Podobný problém může nastat, pokud migrujete instanci aplikace do jiného umístění, které bylo více než jednou použito jako cíl migrace a pro které úložiště objektů Blob již obsahuje soubory šablony ER.
 
 Vzhledem k tomu, že je možné provést několik konfigurací formátu ER, může být tento proces časově náročný. Proto je upřednostňováno použití funkce [Záložní úložiště šablon ER](er-backup-storage-templates.md) k automatickému obnovení šablon s poškozenými referencemi.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

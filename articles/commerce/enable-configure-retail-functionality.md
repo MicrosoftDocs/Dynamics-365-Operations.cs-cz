@@ -69,3 +69,6 @@ Po dokončení inicializace je nutné nakonfigurovat další obchodní data. Ně
 - Kanály Commerce
 - Registry a zařízení
 - Sortimenty
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Konsolidovaná dávková objednávka může obsahovat kombince následujících 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

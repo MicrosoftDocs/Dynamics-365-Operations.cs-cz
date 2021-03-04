@@ -49,3 +49,6 @@ Jakmile jsou uchazeči přidáni k pracovnímu místu, obdrží e-mail s odkazem
 
 ## <a name="analytic-reports"></a>Analytické sestavy
 Náborové týmy mohou použít klíčové metriky procesu náboru pro jednu práci nebo agregované přes všechny práce pomocí [analytických sestav v aplikaci Attract](analytic-reports.md). Tato funkce je nyní v [ve verzi Preview](access-preview-feature.md) pro zákazníky s [verzí aplikace Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

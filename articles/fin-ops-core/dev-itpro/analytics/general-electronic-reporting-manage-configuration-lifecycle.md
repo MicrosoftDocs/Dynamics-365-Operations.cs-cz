@@ -87,3 +87,6 @@ Konfigurace elektronického výkaznictví navržené ve vývojovém prostředí 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

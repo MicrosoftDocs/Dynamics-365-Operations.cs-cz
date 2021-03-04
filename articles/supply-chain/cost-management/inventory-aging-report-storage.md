@@ -57,3 +57,6 @@ Než můžete použít tuto funkci, musíte ji povolit ve svém systému. Správ
     > Ve formuláři nebudou zahrnuty mezisoučty definované v rozvržení sestavy.
 
 Datová entita **Sestava prodlení zásob** umožňuje exportovat výstup sestavy **Úložiště sestavy prodlení zásob** použitím filtru pro pole **Identifikátor procesu – název** na libovolný formát, který správa dat podporuje.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ K zobrazení různých verzí můžete použít volbu nabídky **K datu** a vybr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

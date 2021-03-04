@@ -43,3 +43,6 @@ Toto téma vysvětluje, jak vytvořit profil skladového místa v aplikaci Dynam
 10. Vyberte možnost **Ano** v poli **Povolit cyklickou inventuru**.
 11. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Po vyřešení problému s opravou můžete řádek opravy zavřít. Nastavte f�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

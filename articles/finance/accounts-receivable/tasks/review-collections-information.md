@@ -143,3 +143,6 @@ Toto téma vysvětluje kontrolu informací inkasa společně s různými možnos
 5. Vyberte možnost **Zobrazit seznam**.
 - Vyberte účet odběratele nebo ponechejte výchozí hodnotu. Ve výchozím nastavení se jedná o vybraný účet odběratele na stránce se seznamem nebo ve formuláři, ze kterého jste otevřeli tento formulář. Pokud jste formulář otevřeli ze stránky se seznam, odběratelé v seznamu jsou odběratelé, kteří jsou zahrnuti do fondu inkasa použitého na stránce se seznamem.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

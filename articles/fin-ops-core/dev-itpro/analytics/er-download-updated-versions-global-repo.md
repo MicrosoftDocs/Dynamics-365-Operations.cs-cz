@@ -98,3 +98,6 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

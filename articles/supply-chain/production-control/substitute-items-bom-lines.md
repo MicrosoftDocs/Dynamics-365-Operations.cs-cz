@@ -49,3 +49,6 @@ Předpokládejme následující situaci: Kovová destička je vyžadována u sva
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

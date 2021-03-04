@@ -41,3 +41,6 @@ Toto téma vysvětluje, jak vytvořit schéma časového rozlišení. Tento úko
 10. Do pole **Počet výskytů podle období** zadejte číslo.
 11. V poli **Zaúčtovat transakce** vyberte, kdy transakce mají být zaúčtovány – například **měsíčně**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

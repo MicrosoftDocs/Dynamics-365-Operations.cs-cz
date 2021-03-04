@@ -241,3 +241,6 @@ Při implementaci organizační hierarchie berte v úvahu následující doporu�
 - Před modelováním významných restrukturalizačních scénářů využijte data platnosti hierarchie k provedení analýzy dopadů a testu ověření.
 - V režimu konceptu můžete změnit hierarchii před publikováním nové verze v produkčním prostředí.
 - Omezte počet uživatelů, kteří mají oprávnění přidávat nebo odebírat organizace z hierarchie v produkčním prostředí. Menší počet snižuje riziko nákladné chyby a nutných oprav.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

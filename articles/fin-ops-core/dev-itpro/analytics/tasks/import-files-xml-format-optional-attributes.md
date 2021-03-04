@@ -123,3 +123,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 
 > [!NOTE]
 > Stejný soubor byl importován jako návrh formátu. V tomto okamžiku zvažte atribut ID pro prvek ‘document’ jako volitelný.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

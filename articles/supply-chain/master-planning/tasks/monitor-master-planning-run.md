@@ -127,3 +127,6 @@ Barva se zobrazí pouze na nejnižší úrovni v Ganttově diagramu. Výběrem m
 1. V mřížce vyberte řádek, ve kterém je pole **Pole** nastaveno na **číslo položky**.
 1. Zadejte hodnotu do pole **Kritéria**.
 1. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

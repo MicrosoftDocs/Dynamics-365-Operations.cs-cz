@@ -51,3 +51,6 @@ Ujistěte se, že rozumíte způsobu, jakým pole **Uložit ruční úpravy prov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

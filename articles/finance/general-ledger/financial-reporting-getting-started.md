@@ -173,3 +173,6 @@ Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Repor
 ## <a name="additional-resources"></a>Další prostředky
 - [Zobrazit finanční sestavy](view-financial-reports.md)
 - [Definice organizačního stromu ve finančních sestavách](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

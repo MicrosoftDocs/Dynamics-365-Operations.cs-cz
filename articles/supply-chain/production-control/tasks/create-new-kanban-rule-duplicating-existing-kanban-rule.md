@@ -44,3 +44,6 @@ Tento postup se zaměřuje na vytváření kopií existujícího kanbanového pr
 3. Klikněte na tlačítko OK.
     * Všimněte si, že je vytvořeno duplicitní kanbanové pravidlo 000017.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

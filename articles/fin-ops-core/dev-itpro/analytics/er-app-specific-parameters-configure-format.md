@@ -309,3 +309,6 @@ Pokud chcete zjistit, jak používat konfigurovaný formát ER **Formát k zjiš
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Nastavení parametrů formátu ER podle právnické osoby](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

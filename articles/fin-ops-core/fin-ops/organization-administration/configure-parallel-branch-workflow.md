@@ -50,3 +50,6 @@ Pomocí následujících kroků navrhněte a nakonfigurujte prvky této paraleln
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled vytvoření workflow](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

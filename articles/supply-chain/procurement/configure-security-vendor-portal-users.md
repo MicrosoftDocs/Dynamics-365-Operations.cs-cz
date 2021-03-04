@@ -50,3 +50,6 @@ Jestliže stejná osoba vyžaduje přístup k portálu pro dodavatele pro více 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

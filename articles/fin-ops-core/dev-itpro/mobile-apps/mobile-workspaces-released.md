@@ -41,3 +41,6 @@ Toto téma uvádí seznam mobilních pracovních prostorů, které jsou k použi
 | [Prodejní objednávky](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Můžete být informováni o svých prodejních objednávkách.                                                                                                                          |  2017. leden                  |
 | [Dodavatelská spolupráce](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dodavatelé mohou udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech. |2017. leden    |
 | [Správa majetku](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat. |2019. říjen    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Dále můžete zobrazit data prognózy cashflow pro konkrétní účty, objedná
 - **Prognóza nabídek**: Vyberte **Prognózy cashflow** k zobrazení budoucích cashflow, které jsou přidruženy k vybrané prognóze nabídky položky.
 - **Prognóza poptávek**: Vyberte **prognózy cashflow** k zobrazení budoucích cashflow, které jsou přidruženy k vybrané prognóze poptávky položky.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

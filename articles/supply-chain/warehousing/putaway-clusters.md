@@ -296,3 +296,6 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 ## <a name="notes-and-tips"></a>Poznámky a tipy
 
 V případech, kdy se ID seskupení stane nadřazenou registrační značkou pro vnořenou paletu, je při skenování ID seskupení pozice vložení automaticky dána. Žádná další registrační značka nesmí být skenována, i když je generování poznávací značky nastaveno na ruční.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

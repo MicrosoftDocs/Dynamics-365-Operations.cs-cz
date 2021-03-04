@@ -107,3 +107,6 @@ Chcete-li přesměrovat adresu URL na jinou adresu URL, postupujte podle násled
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

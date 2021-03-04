@@ -76,3 +76,6 @@ Jelikož prvky nákladů představují nejnižší úroveň podrobností o nákl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 [Použití filtrů v plánu](plan-filters.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

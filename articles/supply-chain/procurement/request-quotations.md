@@ -247,3 +247,6 @@ V následujícím příkladu se můžete podívat na nejvyšší a nejnižší s
 | Přijměte jednu z nabídek. (nebo alespoň jeden řádek) |                          Přijato                           |                           Akceptováno                           |                    Přijato                    |                    Akceptováno                     |                   Přijato                   |                   Akceptováno                    |
 |           Odmítněte všechny ostatní nabídky.           |                          Odmítnuto                           |                           Akceptováno                           |                    Odmítnuto                    |                    Akceptováno                     |                   Odmítnuto                   |                   Přijato                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

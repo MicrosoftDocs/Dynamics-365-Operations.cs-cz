@@ -43,3 +43,6 @@ Následující tabulka zobrazuje obsah Power BI, ze kterého jsou sestavy vykop�
 | [Prodej a ziskovost](sales-profitability-performance-content-pack.md) | <ul><li>Výnosy podle oblasti</li><li>Top 10 odběratelů podle výnosu</li><li>Top 10 produktů podle výnosu</li></ul> |
 | [Správa kreditu a inkasa](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Odběratel po splatnosti</li><li>Odběratelé s překročeným úvěrovým limitem</li><li>Splatné zůstatky</li></ul> |
 | [Analýza nákupu a výdajů](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Nákup podle měsíce/dne</li><li>Nejlepších 10 dodavatelů podle nákupů</li><li>Nejlepší 10 produktů podle nákupů</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Parametr **Množství** určuje, zda má být v dávce uvolněné fyzicky rezerv
 -   Chcete-li nastavit **množství** a **Povolit uvolnění částečně uvolněných objednávek** pro převodní příkazy, klikněte na **Řízení skladu** \> **Uvolnit do skladu** \> **Automaticky uvolnit převodní příkazy**.
 
 -   Chcete-li nastavit **množství** a **Povolit uvolnění částečně uvolněných objednávek** pro prodejní objednávky, klikněte na **Řízení skladu** \> **Uvolnit do skladu** \> **Automaticky uvolnit prodejní objednávky**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

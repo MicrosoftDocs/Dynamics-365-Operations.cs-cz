@@ -72,3 +72,6 @@ Využití místa lze projektovat generováním sestavy **využití vytížení s
 
 4. V poli **Typ vytížení** vyberte **Objem** nebo **Hmotnost** pro označení provozní jednotky skladu, pro který se má projektovat prostor.
 5. V poli **Nastavení využití prostoru** vyberte nastavení využití prostoru, na kterém by mělo být projektování založeno.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

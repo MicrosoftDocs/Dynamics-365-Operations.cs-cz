@@ -77,3 +77,6 @@ Chcete-li na stránku přidat modul iframe a zobrazit externí video, postupujte
 [Přehled knihovny modulů](starter-kit-overview.md)
 
 [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

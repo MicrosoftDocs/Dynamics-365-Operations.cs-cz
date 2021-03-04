@@ -60,3 +60,6 @@ Tento postup popisuje způsob kontroly množství na skladě a zásob fyzicky k 
 5. Klikněte na tlačítko **OK**.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

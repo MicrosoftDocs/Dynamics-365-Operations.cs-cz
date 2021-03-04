@@ -86,3 +86,6 @@ Chování nákladů je klasifikace nákladů jako fixních nebo variabilních. Z
 15. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
 16. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

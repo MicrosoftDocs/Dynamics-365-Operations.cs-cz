@@ -141,3 +141,6 @@ Posledním krokem je určení prodejních cen založených na atributech pro ver
 1. V podokně akcí otevřete kartu **Model** a ve skupině **Podrobnosti modelu produktu** vyberte **Verze**.
 1. Otevře se stránka **Verze**. Ujistěte se, že **Metoda cenových kalkulací** je nastavená na **Na základě atributů**.
     ![Nastavení metody cenových kalkulací podle atributů](media/prod-config-versions.png "Nastavení metody cenových kalkulací podle atributů")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

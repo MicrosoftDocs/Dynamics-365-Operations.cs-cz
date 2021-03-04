@@ -276,3 +276,6 @@ Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude 
 
 5. Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
 6. Pokud uživatelé v eskalační cestě nereagují v určeném čase, systém automaticky provede akci vhodnou pro daný dokument. Akci, kterou systém provede, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte akci.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -309,3 +309,6 @@ Povolení funkce BR-00053 (NF-e Federal) může vyžadovat odesílání omezený
 - [Přehled doplňku Elektronická fakturace](e-invoicing-service-overview.md)
 - [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
 - [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

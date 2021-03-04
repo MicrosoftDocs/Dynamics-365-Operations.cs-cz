@@ -127,3 +127,6 @@ Chcete-li opravit problém, postupujte následovně.
 
 3. Zkontrolujte, zda má sloupec **externalenvironmentURL** správnou Dataverse adresu URL aplikace. Odstraňte všechny duplicitní řádky, které ukazují na nesprávnou adresu URL Dataverse. Odstraňte odpovídající řádky z tabulek DUALWRITEPROJECTFIELDCONFIGURATION a DUALWRITEPROJECTCONFIGURATION.
 4. Zastavte mapování tabulek a restartujte jej
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Chcete-li odvolat stornovanou transakci, postupujte takto.
 Když vyberete **Trasování storna**, zobrazí se dialogové okno, které zobrazuje původní transakce i stornované transakce spolu s propojeným číslem trasování.
 
 Můžete také trasovat odvolání pomocí příslušné stránky **Plány**. Pole **Storno** je vymazáno, zatímco je vybráno pole **Deník zaúčtován**. Pole **Poslední číslo deníku** je dále aktualizováno číslem deníku transakce odvolání a pole **Číslo deníku** je aktualizováno číslem deníku storna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

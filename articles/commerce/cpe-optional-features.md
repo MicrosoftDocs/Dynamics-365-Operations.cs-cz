@@ -187,3 +187,6 @@ Následující tokeny jsou nahrazeny hodnotami pro každý produkt v objednávce
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

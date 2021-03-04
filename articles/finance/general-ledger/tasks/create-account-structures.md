@@ -61,3 +61,6 @@ Tento průvodce úkoly vás provede vytvořením účetní struktury. Kroky pou�
 29. V **podokně akcí** klikněte na možnost **Aktivovat**.
 30. Klepněte na tlačítko **Aktivovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

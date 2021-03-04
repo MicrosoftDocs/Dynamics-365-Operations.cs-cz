@@ -55,3 +55,6 @@ Chcete-li přidat finanční dimenze do šablony, jsou nutné další změny. Da
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

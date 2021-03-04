@@ -80,3 +80,6 @@ Zaměstnancům můžete povolit koupi a prodej pracovního volna vytvořením z�
 [Časově rozlišit plány pracovního volna a absence](hr-leave-and-absence-accrue.md)</br>
 [Koupit a prodat pracovní volno](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Záruční smlouva může zahrnovat několik řádků smlouvy, které pokryjí z
     4. V poli **Procento** zadejte procento disponibility pro řádek záruky. Procentuální hodnota označuje, kolik je kryto vaší společností.
 
 ![Stránka Záruka](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

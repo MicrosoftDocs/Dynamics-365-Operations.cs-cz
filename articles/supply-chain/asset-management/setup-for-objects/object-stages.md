@@ -70,3 +70,6 @@ Po vytvoření požadovaných stavů životního cyklu majetku můžete nastavit
 
 6. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu majetku, které mohou následovat po vybraném stavu životního cyklu.
 7. Pevná záložka **Stav majetku** se používá, pokud manipulujete s majetkem, který obdržíte k opravě. V sekci **Příchozí/odchozí** můžete vybrat stavy životního cyklu majetku a vyznačit tak pracovní postup majetku, který obdržíte k opravě. Pokud nabízíte zapůjčený majetek zákazníkům nebo oddělením, můžete v sekci **Výpůjčka** vybrat stavy životního cyklu pro zapůjčený majetek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

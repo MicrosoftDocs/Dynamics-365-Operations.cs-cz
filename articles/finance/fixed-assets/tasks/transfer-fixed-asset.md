@@ -48,3 +48,6 @@ Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodo
     * Zkontrolujte výsledky před přenesením knih dlouhodobého majetku.  
 10. Klikněte na položku **Převod**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

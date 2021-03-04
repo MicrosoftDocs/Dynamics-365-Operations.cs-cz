@@ -243,3 +243,6 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

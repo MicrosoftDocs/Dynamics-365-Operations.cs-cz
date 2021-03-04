@@ -140,3 +140,6 @@ Můžete schválit deník zásob pro sloučení dávky ze stránky se seznamem *
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Poté, co byly sloučeny položky se skutečnou hmotností, proč nejsou zobrazeny údaje o skutečné hmotnosti v deníku zásob?
 Lze sloučit dávky položek se skutečnou hmotností stejně jako všech ostatních položek. Údaje o skutečné hmotnosti však nejsou zobrazeny v deníku zásob. Doporučujeme ověřit údaje o skutečné hmotnosti před přenesením sloučení dávky do deníku zásob.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Tento postup použijte pro zobrazení nebo vymazání historie záznamu analýzy
 2. Na stránce **Analýza RFM** vyberte záznam, který chcete zobrazit.
 3. Pro zobrazení historie záznamů zvolte pevnou záložku **Historie**.
 4. Chcete-li vymazat historii záznamu, zvolte **Vymazat historii**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

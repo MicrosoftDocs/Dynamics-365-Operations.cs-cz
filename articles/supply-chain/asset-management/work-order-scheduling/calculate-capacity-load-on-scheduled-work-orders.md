@@ -58,3 +58,6 @@ Pokud pro výpočet vyberete typ vytížení **Kapacita** nebo **Zůstatek**, zo
 
 Informace o způsobu výpočtu vytížení kapacity na řádcích plánu údržby a neplánovaných pracovních příkazech naleznete v tématu [Výpočet vytížení kapacity](../capacity-planning/calculate-capacity-load.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

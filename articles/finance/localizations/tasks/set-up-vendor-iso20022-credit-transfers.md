@@ -52,3 +52,6 @@ Toto je čtvrtý z pěti úkolů, které společně popisují proces platby doda
 4. Klikněte na odkaz na řádku SEPA CT v seznamu.
 5. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

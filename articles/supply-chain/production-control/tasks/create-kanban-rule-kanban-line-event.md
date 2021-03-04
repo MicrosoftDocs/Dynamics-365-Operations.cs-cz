@@ -69,3 +69,6 @@ Tímto postupem vytvoříte kanbanové pravidlo pomocí nastavení události ř�
     * Všimněte si, že kanban pro 27 byl vytvořen pro zpracování aktivity na základě vytvořeného kanbanového pravidla.  
     * Jde o poslední krok.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

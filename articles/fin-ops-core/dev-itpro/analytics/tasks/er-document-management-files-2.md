@@ -91,3 +91,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 26. Klikněte na tlačítko Dokončit.
 27. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

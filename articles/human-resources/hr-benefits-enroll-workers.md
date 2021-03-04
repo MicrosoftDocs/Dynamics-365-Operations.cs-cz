@@ -58,3 +58,6 @@ Tento postup ukazuje, jak jeden pracovník může být registrován do jedné ne
 14. Klikněte na odkaz na vybraném řádku v seznamu.
 15. Na této stránce můžete zobrazit, kterým zaměstnancům byly zapsány zaměstnanecké výhody a také všechny zaměstnance, kteří nebyli přihlášeni.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Kolekce importu pomáhá zajistit, že prodejci je zaplaceno v případě, že o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

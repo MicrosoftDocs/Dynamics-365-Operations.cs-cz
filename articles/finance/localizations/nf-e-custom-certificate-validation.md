@@ -36,3 +36,6 @@ Vlastnost **Účel ověření serveru** z certifikátu V5 vydává brazilská au
 Tato aktualizace umožňuje alternativní řešení ověření certifikátu, což znamená, že je možné navázat zabezpečenou komunikaci.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

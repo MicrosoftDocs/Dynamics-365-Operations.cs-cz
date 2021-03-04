@@ -155,3 +155,6 @@ V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna p
 
 > [!NOTE]
 > Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

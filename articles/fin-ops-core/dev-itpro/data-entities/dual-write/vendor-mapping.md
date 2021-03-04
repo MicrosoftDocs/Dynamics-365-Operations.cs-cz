@@ -75,3 +75,6 @@ Přípony názvu                | msdyn\_nameaffixes          | Šablona [příp
 [!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

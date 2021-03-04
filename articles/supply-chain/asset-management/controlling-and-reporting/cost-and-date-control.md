@@ -108,3 +108,6 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 ![Příklad výsledků výpočtu v řízení pracovních příkazů](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

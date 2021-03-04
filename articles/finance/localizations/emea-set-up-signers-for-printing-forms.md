@@ -165,3 +165,6 @@ Funkce Úředníci zobrazuje výchozí předdefinované podepisující z tabulky
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

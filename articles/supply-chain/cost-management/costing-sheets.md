@@ -50,3 +50,6 @@ Nákladový formulář je zobrazen jako součást stránky **Vypočítat náklad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Postup obnovení prostředí:
 
 > [!Warning]
 > Prostředí Power Apps jsou uložena pouze po dobu sedmi dnů po odstranění. Prostředí musíte obnovit do sedmi dnů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

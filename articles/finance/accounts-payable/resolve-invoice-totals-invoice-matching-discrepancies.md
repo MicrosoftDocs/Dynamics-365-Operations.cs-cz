@@ -44,3 +44,6 @@ Poté, co jste identifikovali nesrovnalost, budete pravděpodobně muset kontakt
 Další informace naleznete v tématu [Prozkoumání/vyřešení výjimek](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

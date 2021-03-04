@@ -46,3 +46,6 @@ Toto téma popisuje, jak zobrazit stav dokumentu odeslaného do systému workflo
     - Tlačítko **Opětovné přiřazení** otevře dialogové okno, ve kterém můžete opětovně přiřadit pracovní položku jinému uživateli.  
     - Ujistěte se, že je rozbalená část **Sledování podrobností**. V této sekci můžete zobrazit historii workflowu vybraného dokumentu.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

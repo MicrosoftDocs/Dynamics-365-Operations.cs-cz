@@ -107,3 +107,6 @@ Když plánujete a spravujete sortimenty pro svou maloobchodní implementaci, zv
 - **Prodeje a vrácení mimo sortimenty** – Tato možnost pomáhá maloobchodním prodejcům efektivně spravovat své sortimenty pomocí omezení počtu dostupných produktů na produkty, které patří do základní kombinace produktů obchodu. Tato funkce také pomáhá maloobchodním prodejcům zvládat situace, kdy byl produkt omylem vynechán ze sortiment nebo kdy byl vrácen mimo data platnosti sortimentu.
 
 Pokud v databázi kanálů neexistují data produktů, pokladní místo provádí volání v reálném čase do centrály pro načtení požadovaných informací, aby mohl být produkt prodán, vrácen nebo umístěn na objednávku odběratele. Informace o produktu, které jsou tímto způsobem načteny, jsou k dispozici pouze v rozsahu dané transakce. Produkt není přidán do definice sortimentu. Proto budou následující volání v reálném čase provedena podle potřeby.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

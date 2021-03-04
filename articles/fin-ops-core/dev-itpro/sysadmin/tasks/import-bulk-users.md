@@ -58,3 +58,6 @@ Po dokončení importu bude nutné přiřadit role uživatelům.
 ## <a name="run-in-a-sandbox-environment"></a>Spuštění v prostředí sandbox
 1. Vyberte možnost **Dávkový import**.
 2. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

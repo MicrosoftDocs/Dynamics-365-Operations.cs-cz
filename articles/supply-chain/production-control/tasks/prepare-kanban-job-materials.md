@@ -42,3 +42,6 @@ Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud js
 6. Klepněte na Připravit.
     * Proces přípravy je dokončen. Označení pole pro všechny řádky výdejky označuje, že je vybrán stav dodání.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

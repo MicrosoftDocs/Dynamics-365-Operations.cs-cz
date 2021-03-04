@@ -64,3 +64,6 @@ Tento postup popisuje nastavení, které je třeba pro vytvoření kanbanového 
     * Dojde k vytvoření 2 kanbanů.  
     * Všimněte si, že 2 kanbany po 5 byly vytvořeny pro toto kanbanové pravidlo výběru.  Tento krok je posledním krokem v tomto postupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

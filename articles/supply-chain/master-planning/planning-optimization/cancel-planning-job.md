@@ -60,3 +60,6 @@ Stav úlohy bude **Probíhá zrušení**, dokud služba optimalizace plánován�
 [Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
 
 [Použití filtrů v plánu](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

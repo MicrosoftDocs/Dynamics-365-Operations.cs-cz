@@ -83,3 +83,6 @@ Masky čárových kódů musí být před použitím přiřazeny k čárovým k�
 5. Klikněte na tlačítko **Uložit**.
 
 Masku čárového kódu lze nyní použít k vytvoření čárových kódů pro produkty. Výše uvedené kroky jsou příklady vytváření masek čárových kódů pro produkty, ale také ukazují, jak vytvořit masky čárového kódu pro všechny ostatní podporované typy čárového kódu. Masky čárových kódů, typy a délky je třeba upravit pro použití v konkrétním prostředí.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

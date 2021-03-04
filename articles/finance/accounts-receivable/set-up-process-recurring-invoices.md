@@ -67,3 +67,6 @@ Po zaúčtování opakované faktury můžete faktury vytisknout ze stránky se 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

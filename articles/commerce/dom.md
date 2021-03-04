@@ -256,3 +256,6 @@ Při používání funkce distribuované správy objednávek je nutné vzít v �
 - Momentálně se distribuovaná správa objednávek dívá pouze na objednávky vytvořené z obchodní sítě. Prodejní objednávky jsou identifikovány jako prodejní objednávky, když je možnost **Obchodní prodej** nastavena na **Ano**.
 - Společnost Microsoft netestovala distribuovanou správu objednávek s rozšířenými funkcemi správy skladu. Zákazníci a partneři musí být obezřetní při určení toho, zda je distribuovaná správa objednávek kompatibilní s rozšířenými funkcemi správy skladu a jejich relevantními procesy.
 - Distribuovaná správa objednávek je k dispozic pouze v cloudové verzi aplikace Commerce. Není podporována v místních nasazeních.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

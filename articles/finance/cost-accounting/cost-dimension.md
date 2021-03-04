@@ -55,3 +55,6 @@ Po importu dat do nákladového účetnictví můžete vytvořit různé perspek
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

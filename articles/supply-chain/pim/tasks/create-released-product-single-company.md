@@ -103,3 +103,6 @@ Tento postup vás provede vytvořením jednoho uvolněného produktu v kontextu 
 12. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 13. Klikněte na odkaz na vybraném řádku v seznamu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

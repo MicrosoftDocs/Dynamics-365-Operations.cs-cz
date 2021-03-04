@@ -48,3 +48,6 @@ Každý případ vyžaduje pečlivé zvážení způsobu aktualizace standardní
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

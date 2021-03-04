@@ -35,3 +35,6 @@ Tento postup vás provede vytvářením a odesíláním sestavy DPH německým �
 5. Vyberte možnost Ano v poli Vytvořit elektronický daňový dokument.
 6. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

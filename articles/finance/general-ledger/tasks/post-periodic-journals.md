@@ -58,3 +58,6 @@ Periodické deníky se někdy nazývají opakované deníky, protože částka, 
 27. V poli **Číslo periodického deníku** zadejte nebo vyberte hodnotu.
 28. Klikněte na odkaz na vybraném řádku v seznamu.
 29. Klikněte na tlačítko **OK**. Periodický deník lze nyní zkontrolovat, schválit nebo zaúčtovat v závislosti na požadavcích a nastavení.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

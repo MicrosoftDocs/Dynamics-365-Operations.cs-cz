@@ -71,3 +71,6 @@ Tato procedura popisuje způsob vytváření výrobní zakázky. K vytvoření 
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

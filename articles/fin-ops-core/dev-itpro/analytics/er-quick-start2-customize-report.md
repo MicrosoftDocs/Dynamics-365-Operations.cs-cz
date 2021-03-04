@@ -514,3 +514,6 @@ Chcete-li začít používat novou funkčnost verze 3.3 formátu **BACS (Velká 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Stažení konfigurací ER z Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Stažení konfigurací ER z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

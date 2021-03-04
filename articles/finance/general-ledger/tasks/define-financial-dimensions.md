@@ -55,3 +55,6 @@ Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovanýc
 9. V poli **Hodnota dimenze** zadejte název pro popis vaší finanční hodnoty.
 10. V poli **Popis** zadejte popis, který popisuje vaši hodnotu finanční dimenze.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

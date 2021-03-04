@@ -224,3 +224,6 @@ Chcete-li získat správně převedené částky při použití měn, finanční
 Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o zadání podrobností online konsolidace získáte v části [Online finanční konsolidace](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

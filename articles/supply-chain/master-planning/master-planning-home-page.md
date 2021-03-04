@@ -86,3 +86,6 @@ K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

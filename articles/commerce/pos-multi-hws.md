@@ -154,3 +154,6 @@ Zaměstnanci obchodu jsou vyzváni, aby vybrali hardwarovou stanici pouze jednou
 - [Nastavení hybridní aplikace POS v systému Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Platební konektor Dynamics 365 pro Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Přehled podpory periferní sítě](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

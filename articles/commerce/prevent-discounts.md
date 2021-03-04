@@ -41,3 +41,6 @@ Následující možnosti, které se nachází na kartě **Velkoobchod** vydanýc
 > Tato nastavení neomezují operaci přepisu ceny, protože se nastaví základní cena, se kterou se nenakládá jako se slevou.
 
 [![Pole zabránění slev](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Výsledná číselná hodnota.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

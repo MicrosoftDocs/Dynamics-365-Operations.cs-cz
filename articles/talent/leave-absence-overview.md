@@ -66,3 +66,6 @@ Správa pracovního volna a absencí poskytuje následující funkce:
 - **Odeslání žádosti o volno**
 
     Zaměstnanci mohou odeslat požadavky na volno vůči svým hodinám, které mají k dispozici. Požadavky mohou být jednoduché požadavky na jeden den nebo více dnů, které zahrnují několik typů pracovního volna a absencí. Pokud není workflow povoleno, žádosti jsou automaticky schváleny. Pokud je workflow povoleno, schválení může být automatické nebo můžete vyžadovat podpis, v závislosti na konfiguraci workflowu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

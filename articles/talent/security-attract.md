@@ -157,3 +157,6 @@ Kandidáti jsou osoby, které byly přidány do skupiny talentů, ale nejsou př
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil - podrobnosti o kandidátovi | Vytvoření, čtení, aktualizace a odstranění | Vytvoření, čtení, aktualizace a odstranění | Bez přístupu   |
 | Dokumenty                   | Vytvoření, čtení, aktualizace a odstranění | Vytvoření, čtení, aktualizace a odstranění | Bez přístupu   |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

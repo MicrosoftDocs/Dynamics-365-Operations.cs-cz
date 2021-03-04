@@ -46,3 +46,6 @@ Tento průvodce používá ukázkovou společnost USMF.
 6. Klikněte na tlačítko OK.
 7. Klepněte na tlačítko Ano.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

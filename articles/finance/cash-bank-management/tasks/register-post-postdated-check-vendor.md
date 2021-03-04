@@ -56,3 +56,6 @@ Role tohoto průvodce úkolem je Pokladník. Tento úkol používá ukázkovou s
 16. Zavřete stránku.
 17. Klikněte na kartu Postdatované šeky.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

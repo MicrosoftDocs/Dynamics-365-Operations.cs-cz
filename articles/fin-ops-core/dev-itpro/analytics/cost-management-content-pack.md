@@ -207,3 +207,6 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Právnické osoby                                          | Jména právnické osoby                              |
 | Fiskální kalendáře                                        | Fiskální kalendář, rok, čtvrtletí, období, měsíc   |
 | Pracoviště                                                    | ID, název, adresa, stát, země               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

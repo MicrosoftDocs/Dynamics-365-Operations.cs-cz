@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Jakmile načtete přístupový token, předáte token v záhlaví autorizace jako token nosiče s každým požadavkem, který odešlete do datového rozhraní API, jak je popsáno výše.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

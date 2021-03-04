@@ -49,3 +49,6 @@ Dále existují dvě jedinečné sestavy využívající strukturování hierarc
 - Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod a velkoobchod** &gt; **Produkty a kategorie** &gt; **Řízení obchodu** &gt; **Sestavy**
 - Pracovní prostor **Správa cen a slev** &gt; **Maloobchod a velkoobchod** &gt; **Tvorba cen a slevy** &gt; **Řízení obchodu** &gt; **Sestavy**
 - Oddíl **Dotazy a sestavy** &gt; **Maloobchod a velkoobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

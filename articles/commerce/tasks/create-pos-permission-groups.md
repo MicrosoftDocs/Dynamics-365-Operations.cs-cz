@@ -48,3 +48,6 @@ Toto téma vysvětluje, jak vytvořit skupinu oprávnění POS. Tento úkol byl 
 16. V poli Skupina oprávnění POS zadejte nebo vyberte hodnotu. Pozice všech pracovníků pro tuto úlohu budou používat toto nastavení skupiny oprávnění POS, pokud oprávnění POS pracovníků nebylo přepsáno na úrovni jejich pozice.  
 17. Zvolte **Uložit**. Po uložení změn bude nutné spustit plán Distribuce pracovníků a uplatnit tak změny v kanálech.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

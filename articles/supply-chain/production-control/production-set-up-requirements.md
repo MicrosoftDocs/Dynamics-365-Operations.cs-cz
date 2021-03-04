@@ -81,3 +81,6 @@ Pokud pracujete s postupy, je nutné definovat operaci pro každý nastavený v�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

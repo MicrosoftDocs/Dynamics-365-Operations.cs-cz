@@ -75,3 +75,6 @@ Pokud je hodnota argumentu `decimals` nižší než 0 (nula), zadané číslo je
 ## <a name="additional-resources"></a>Další prostředky
 
 [Matematické funkce](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

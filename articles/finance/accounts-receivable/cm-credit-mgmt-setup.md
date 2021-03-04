@@ -79,3 +79,6 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Číselné řady a sdílené parametry číselných řad
 
 Ke zpracování úprav limitu úvěru je nutné zadat ID deníku. Je nutné přidat číslo úpravy limitu úvěru, které by mělo být použito ke generování ID deníku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

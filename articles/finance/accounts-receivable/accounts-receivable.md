@@ -116,3 +116,6 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

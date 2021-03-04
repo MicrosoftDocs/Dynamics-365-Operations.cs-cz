@@ -59,3 +59,6 @@ Dále byste měli přidružit účty k typům výdajů. Z těchto účtů bude p
 7. V příslušných polích vyberte hlavní účet finančního leasingu a hlavní účet operativního leasingu.
 
 Po dokončení těchto kroků můžete přidat výdaje prostřednictvím řádek **Harmonogram plateb exekutivních nákladů** na stránce **Podrobnosti o leasingu** vybraného leasingu. Alternativně můžete přidat náklady při vytváření nového pronájmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

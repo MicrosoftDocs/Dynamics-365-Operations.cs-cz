@@ -53,3 +53,6 @@ Pracovní plocha sestavení vytížení používá pro navržení nákladu adres
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

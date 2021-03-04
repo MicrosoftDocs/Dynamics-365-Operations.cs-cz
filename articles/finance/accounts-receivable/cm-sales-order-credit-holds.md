@@ -265,3 +265,6 @@ Prodejní objednávky, které mají vynucený důvod blokování, nelze automati
 Správu úvěru lze aktuálně použít pouze pro prodejní objednávky. Volné faktury, místo prodejních objednávek a objednávky kontaktního střediska použijí dočasné limity úvěru a pojištění/záruk, které přidáte k úpravě limitu úvěru. Nebudou používat pravidla blokování a v případě potíží s limitem úvěru nebudou uloženy do seznamu blokování.
 
 Neexistuje podpora pro projektové faktury ve správě úvěrů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Aby bylo možné takové ověření povolit, je třeba naplánovat, aby se násl
 [Operace příchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Operace odchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 | Mapy ocenění        | Podrobnosti o dlouhodobém majetku |
 
 Pokud chcete zobrazit analýzu s daty, je třeba nejprve aktualizovat agregované měření AssetTransactionMeasure na stránce **Obchod s entitami**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Tento úkol využívá ukázkovou společnost USMF.
 16. Vyberte **Nový interval období**. Po zadání prvního intervalu období lze vytvořit automaticky nová období. Můžete se vrátit a přidat nové intervaly období podle potřeby.  
 17. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Tato procedura ukazuje, jak změnit vlastníka zásob dodávky od dodavatele va�
 2. Klikněte na tlačítko OK.
 3. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

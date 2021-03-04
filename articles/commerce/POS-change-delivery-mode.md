@@ -47,3 +47,6 @@ Po výběru nového způsobu dodání se zobrazí stránka transakce. Chcete-li 
 [Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
 
 [Přizpůsobení transakčních e-mailů podle způsobu doručení](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

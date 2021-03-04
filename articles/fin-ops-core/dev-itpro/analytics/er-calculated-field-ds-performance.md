@@ -300,3 +300,6 @@ Další informace o poskytovatelích konfigurací elektronického výkaznictví 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md)
 - [Podpora parametrizovaných volání zdrojů dat elektronického výkaznictví typu vypočítaného pole](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

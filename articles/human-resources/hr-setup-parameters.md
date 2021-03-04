@@ -50,3 +50,6 @@ Nastavení na kartě **Číselná řada** určují sekvence, které lze použít
 
 > [!NOTE]
 > Počet hodin, které jsou odpracovány nesmí překročit 1 250 a délka zaměstnání nesmí přesáhnout 12 měsíců. Tyto maximální hodnoty jsou v souladu s federálním právem ve Spojených státech amerických. Nakonec nastavení na kartě **Samoobslužné stránky zaměstnanců** určují informace, které manažeři zadávají jménem svých zaměstnanců.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

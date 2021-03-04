@@ -77,3 +77,6 @@ Pokud není jazyková verze definována jako argument volané funkce, hodnota `c
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce data a času](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

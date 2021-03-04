@@ -51,3 +51,6 @@ Tento úkol využívá ukázkovou společnost USMF.
 18. V poli **Měna poplatku** vyberte měny poplatku. Toto je měna, v níž bude vytvořen poplatek.  
 19. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Tato úloha se zaměřuje na vytváření nové úlohy. Ta bude dokončena pomoc
 33. Přepněte rozšíření oddílu Vzdělání.
 34. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

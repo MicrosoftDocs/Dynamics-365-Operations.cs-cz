@@ -94,3 +94,6 @@ Chcete-li deaktivovat vyhodnocení konkrétních pravidel, zvolte příležitost
 [Vytvoření pravidel pro poradce při optimalizaci](./create-rules-optimization-advisor.md)
 
 [Poradce při optimalizaci v Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

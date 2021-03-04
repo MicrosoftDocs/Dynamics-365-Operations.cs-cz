@@ -89,3 +89,6 @@ Commerce používá hierarchie organizace pro potřeby strukturování obchodní
 > [!NOTE]
 > Chcete-li použít funkci Commerce prodeje, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu různých ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

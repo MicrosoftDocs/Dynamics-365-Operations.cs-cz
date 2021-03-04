@@ -62,3 +62,6 @@ Profily mapování dovedností umožňují vyhledání aktuálního zaměstnance
 Můžete vytvořit analýzu profilu dovedností, a zobrazit tak seznam kompetencí pro pracovníka, uchazeče nebo kontaktní osobu k určitému datu. Můžete vytvořit analýzu dovednostních mezer k porovnání dovedností dané osoby s dovednostmi požadovanými pro určitou úlohu.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

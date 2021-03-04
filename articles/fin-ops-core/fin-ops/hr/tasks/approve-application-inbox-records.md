@@ -48,3 +48,6 @@ Tento postup popisuje kontrolu přihlášek přijatých prostřednictvím samoob
 2. Klikněte na odkaz na vybraném řádku v seznamu.
 3. Rozbalte sekci Přílohy.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ V následující tabulce jsou uvedeny možné stavy dokumentu pro prvky stránky
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Přizpůsobení navigace na webu](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Před spuštěním standardního převodu nákladů postupujte takto:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

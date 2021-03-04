@@ -45,3 +45,6 @@ Toto téma vysvětluje, jak udělit zaměstnancům oprávnění k přípravě n�
 2. Pomocí rychlého filtru vyhledejte pracovníka, kterého jste právě vytvořili jako žadatele.
 3. Vyberte žadatele. Seznam Pořizovatel popisuje uživatele, kteří mají oprávnění k objednání položek jménem žadatele, který je vybrán v levém podokně.  Zde můžete přidat další zpracovatele. Toto zobrazení umožňuje také udělit oprávnění žadatelům pro vytvoření žádanek u právnických osob a provozních jednotek, které nejsou primární právnickou osobou nebo provozní jednotkou daného uživatele.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Musíte určit technickou kategorii, do které produkt patří. Kategorie nastav
 Můžete použít vyhledávání technických atributů k vyhledání produktů hledáním jejich hodnot technických atributů. Proto můžete snadno najít technické produkty na základě jejich vlastností. Můžete vyhledávat v produktech, které patří do kategorie technických produktů nebo prohledat všechny technické produkty.
 
 Hledání je k dispozici na stránkách hlavních dat produktu a z transakčních položek v systému, například prodejních objednávek. U transakční položky můžete použít stránku **Hledání technických atributů** pro vyhledání produktu. Poté můžete použít tlačítko **Přidat jako nový řádek** pro přidání produktu na řádky prodejní objednávky. Produkty ve výsledcích vyhledávání lze také přidat přímo do objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -227,3 +227,6 @@ Panel nástrojů návrháře sestav poskytuje rychlý přístup k příkazům na
 [Finanční výkaznictví](financial-reporting-intro.md)
 
 [Generování finančních sestav](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Comm
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

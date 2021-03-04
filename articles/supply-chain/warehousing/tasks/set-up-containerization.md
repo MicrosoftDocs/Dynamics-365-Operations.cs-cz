@@ -81,3 +81,6 @@ Toto téma popisuje postup automatizace vytváření kontejnerů vytížení v m
 11. V poli **Výběr pole** zadejte nebo vyberte hodnotu.
 12. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

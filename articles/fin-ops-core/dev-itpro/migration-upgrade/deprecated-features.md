@@ -1373,3 +1373,6 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 |     <strong>Ovlivněné oblasti produktu</strong>     |                                              Hlavní kniha                                              |
 |             <strong>Stav</strong>             |                                      Odstraněno od verze Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

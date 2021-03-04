@@ -81,3 +81,6 @@ Když náborový tým odešle e-mail, může používat šablony vytvořené spr
 
 > [!NOTE] 
 > Pro automaticky odesílané e-maily můžete vytvořit více šablon. Pouze jednu šablonu však lze nastavit jako aktivní. Vzhledem k tomu, že tento proces spouštějí události, může pouze správce určit, která šablona se má použít, na základě kombinace odznaku **výchozí** a **Automaticky odeslané** v knihovně šablon.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

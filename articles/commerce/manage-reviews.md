@@ -132,3 +132,6 @@ Chcete-li si zobrazit trendy hodnocení a recenzí v konfigurátoru webu v Comme
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

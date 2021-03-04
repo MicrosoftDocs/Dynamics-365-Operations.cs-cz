@@ -68,3 +68,6 @@ Seznamy zaměstnanců vygenerovaných podle zadaných filtrů je možné exporto
 Pokud je nutné vykazovat pokryté osoby, protože jako zaměstnavatel poskytujete pokrytí s vlastním pojištěním, můžete zobrazit i všechny závislé osoby kryté v rámci plánů zaměstnaneckých výhod a označené jako **Lze vykázat podle zákona o dostupné péči** výběrem akce Zobrazit pokrytí závislých prvků na panelu akcí.
 
 **Poznámka:** V okně dotazu se zobrazí pouze zaměstnanecké výhody, jejichž plán byl označen jako **Lze vykázat podle zákona o dostupné péči**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

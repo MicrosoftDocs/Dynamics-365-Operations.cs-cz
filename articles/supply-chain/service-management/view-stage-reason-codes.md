@@ -45,3 +45,6 @@ Zobrazte a upravte seznam důvodů fáze pro servisní zakázku. Použijte důvo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

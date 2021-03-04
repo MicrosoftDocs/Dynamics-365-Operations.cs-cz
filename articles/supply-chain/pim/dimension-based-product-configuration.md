@@ -88,3 +88,6 @@ Následujících osm průvodců záznamem úloh by mělo být dokončeno v pořa
 7.  [Vytváření konfiguračních pravidel](tasks/create-configuration-rules.md)
 8.  [Vytváření konfigurací založených na dimenzích](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

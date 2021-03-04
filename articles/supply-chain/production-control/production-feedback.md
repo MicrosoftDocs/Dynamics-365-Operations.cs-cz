@@ -36,3 +36,6 @@ Zpětná vazba z výroby poskytuje zaměstnanci zpětnou vazbu o výrobních úl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto s
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

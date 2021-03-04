@@ -51,3 +51,6 @@ Tato procedura popisuje, jak vytvořit objekty nákladů importováním finančn
 ## <a name="view-the-imported-cost-centers"></a>Zobrazení importovaných nákladových středisek
 1. Klikněte na Zobrazit členy dimenze.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

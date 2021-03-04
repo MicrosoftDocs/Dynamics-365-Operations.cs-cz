@@ -47,3 +47,6 @@ Dávkové zpracování můžete použít ke spuštění odpisů pro stejnou sadu
 Omezení počtu knih se použije, pokud ve stejném deníku neexistují duplicitní ID majetku. Pokud je však ID majetku stejné jako ID knihy, lze počet knih v deníku překročit, aby bylo ID majetku ve stejném deníku.
 
 Například existuje 5 001 ID dlouhodobého majetku, ke každému ID dlouhodobého majetku jsou přidruženy tři knihy a každá kniha majetku je zaúčtována do stejné účtovací vrstvy. Spustíte odpisy po tři po sobě jdoucí měsíce bez shrnutí. Odpisový deník bude vytvořen pomocí dávkové úlohy a systém vytvoří sedm deníků, které mají 667 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Výsledkem bude 2 001 knih. Proto za tři měsíce bude existovat 6 003 řádků deníku, které udržují stejná ID majetku ve stejném deníku. Systém také vytvoří jeden deník, který má 332 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Za tři měsíce to bude 2 988 řádků.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Na kartě **katalogy** kartě Možnosti konfigurace jsou k dispozici možnosti p
 ## <a name="additional-notes"></a>Další poznámky
 
 V současné době platí, že když je použito ID zdrojového kódu pro všechny prodejní objednávky v call centru, použije se pro generování cen, promoakcí, skriptů a návazného/křížového prodeje specifických pro katalog. Systém nebude zakazovat ani zabraňovat objednání produktu, který není v katalogu, v prodejní objednávce. Pokud je objednaná položka, která není součástí katalogu, systém použije nejprve **Cenovou skupinu** definovanou v kanálu kontaktního střediska (**Retail and Commerce** \> **Kanály** \> **kontaktní střediska** \> **šechna kontaktní střediska**) pro ceny zboží nebo promoakcí. Pokud žádná konkrétní kanálová cena není nalezena, použije se základní prodejní cena zboží.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

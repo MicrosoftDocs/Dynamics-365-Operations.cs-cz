@@ -239,3 +239,6 @@ Chcete-li určit, zda by pracovníci měli znovu použít existující registra�
 
 > [!NOTE]
 > Pokud chcete konfigurovat štítek, přejděte na **Správa skladu \> Nastavení \> Směrování dokumentu \> Směrování dokumentu**. Další informace získáte v části [Povolení tisku štítků registračních značek](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

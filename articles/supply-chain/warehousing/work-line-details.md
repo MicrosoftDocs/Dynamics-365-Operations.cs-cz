@@ -128,3 +128,6 @@ Při vytváření práce výdeje postupujte takto:
 
 > [!IMPORTANT]
 > Pokud zrušíte jen část množství řádku práce, musíte také odstranit již neplatné množství z řádku nákladu. V opačném případě, pokud nebude dodávka nastavena správně, nebude možné potvrdit řádek nákladu k odeslání.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

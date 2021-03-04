@@ -102,3 +102,6 @@ Chcete-li se vyhnout negativním dopadům na uživatelské rozhraní, neupravujt
 - **Jiný**
 
 Místo toho můžete rozšířit výčet **TalentSource** pro přidání dalších typů zdrojů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

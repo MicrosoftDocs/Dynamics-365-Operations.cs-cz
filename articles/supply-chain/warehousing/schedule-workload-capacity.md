@@ -80,3 +80,6 @@ Pokud tyto informace nejsou správně zadány, zobrazí se zpráva při generov�
 3. V poli **typ objednávky** vyberte **plánované a potvrzené**, **plánováno** nebo **potvrzeno** k označení typu objednávek pro plánování v sestavě.
 4. V poli **Typ vytížení** výběrem typu vytížení určete, zda má být kapacita pracovního vytížení projektována v paletách, objemu či hmotnosti.
 5. V poli **Kapacita pracovního vytížení** vyberte nastavení kapacity pracovního vytížení.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ V této aktualizaci byly rozšířeny nadpisy. Toto pole má nyní 65 znaků. T
 ## <a name="benefit-enrollment-status-report"></a>Sestava stavu registrace k zaměstnaneckým výhodám
 
 Vestavěné výkaznictví u otevřené registrace k zaměstnaneckým výhodám snadno pochopit, kde se nachází zaměstnanci v procesu otevřené registrace. Můžete zjistit, kolik zaměstnanců dokončilo proces, kolik ho aktuálně dokončuje a kolik jich ještě nezačalo. Navíc můžete rychle zobrazit problémy, ke kterým došlo při registraci zaměstnance, a celý protokol všech odeslání zaměstnance. Lze tedy snadno ověřit a auditovat odeslání zaměstnance.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

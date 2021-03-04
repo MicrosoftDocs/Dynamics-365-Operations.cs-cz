@@ -108,3 +108,6 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 
 ![Stránka Návrhář modelu dat ER](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

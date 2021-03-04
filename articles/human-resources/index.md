@@ -78,3 +78,6 @@ Aplikace Human Resources propojuje informace o lidech a operacích, které vám 
 [Správa pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
 [Rozvoj zaměstnanců](hr-develop-performance-management-overview.md)</br>
 [Vytvořit kurzy](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

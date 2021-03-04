@@ -54,3 +54,6 @@ Tato procedura ukazuje, jak vytvořit mezipodnikový plán. K vytvoření tohoto
 2. Klikněte na odkaz na vybraném řádku v seznamu. Klepněte na odkaz StaticPlan. Musíte být ve společnosti USMF.  
 3. Klikněte na **Plánované objednávky**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

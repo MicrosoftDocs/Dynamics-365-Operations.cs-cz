@@ -65,3 +65,6 @@ Tyto kroky lze dokončit za použití libovolné datové sady. K provedení těc
     * Mapování ukázky Intrastat  
 5. Klepněte na možnost Vytvořit konfiguraci.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového p
 5. Rozbalte sekci Kanbany.
     * Všimněte si, že kanban byl vytvořen pro přenos potřebného materiálu do skladu 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

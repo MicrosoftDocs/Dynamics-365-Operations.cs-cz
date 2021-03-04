@@ -41,3 +41,6 @@ Nastavte typy zaměstnání v aplikaci Dynamics 365 Human Resources tak, aby vyh
    | **Popis** | Popis typu zaměstnání. |
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

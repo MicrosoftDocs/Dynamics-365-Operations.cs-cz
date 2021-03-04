@@ -197,3 +197,6 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 [Zobrazit finanční sestavy](../../../finance/general-ledger/view-financial-reports.md)
 
 [Blog Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

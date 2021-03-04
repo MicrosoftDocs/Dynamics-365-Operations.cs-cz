@@ -109,3 +109,6 @@ Tato procedura vás provede konfigurací a spuštěním opakující se dávkové
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Předtím, než budete moci zaúčtovat předpořízení, je třeba dokončit to
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -84,3 +84,6 @@ Je možné nakonfigurovat kódy důvodu tak, aby byly vyžadovány pro změny dl
 Nakonec na kartě **Číselné řady** můžete definovat číselné řady pro dlouhodobý majetek. Číselná řada **Dlouhodobého majetku** může být přepsána číselnou řadou číslo **skupiny dlouhodobého majetku**, pokud byla zadána.
 
 Další informace naleznete v tématu [Vytvoření dlouhodobého majetku](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

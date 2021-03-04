@@ -40,3 +40,6 @@ ms.locfileid: "4423933"
 ## <a name="related-topics"></a>Související témata
 
 [Časová okna](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

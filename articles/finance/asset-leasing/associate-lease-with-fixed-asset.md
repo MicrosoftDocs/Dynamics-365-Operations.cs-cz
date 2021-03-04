@@ -54,3 +54,6 @@ Dlouhodobý majetek lze nyní odepisovat pomocí standardní funkce odpisování
 
 > [!NOTE]
 > Pokud přidružíte dlouhodobý majetek k leasingu, tlačítka **Odpis majetku** a **Snížení hodnoty leasingu** jsou v leasingu majetku deaktivována. Transakce odpisů majetku a snížení hodnoty leasingu si můžete prohlédnout v části Dlouhodobý majetek. Tlačítko **Transakce majetku**, které otevírá formulář dotazu, je také deaktivováno. Můžete také otevřít formulář dotazu **Transakce majetku** v části Dlouhodobý majetek.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

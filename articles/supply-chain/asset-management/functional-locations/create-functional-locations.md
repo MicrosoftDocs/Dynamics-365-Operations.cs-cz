@@ -132,3 +132,6 @@ Funkční místo se souvisejícími dílčími místo může být odstraněno, p
 
 >[!NOTE]
 >Pokud nelze odstranit funkční místo, můžete místo toho zpracovat nastavením stavu životnosti funkčního místa pro tento účel. Můžete například nastavit fázi vyřazení nebo odstranění, která by neměla být aktivní fází, ve formuláři **Stavy životního cyklu funkčních míst**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Tři řádky servisních zakázek byly vytvořeny v tomto časovém rozsahu, kte
 
 [Nastavení intervalů servisu](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

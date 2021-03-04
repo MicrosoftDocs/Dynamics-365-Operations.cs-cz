@@ -65,3 +65,6 @@ Následující dávkové úlohy by měly být spouštěny v noci nebo po pracov
 ## <a name="additional-resources"></a>Další prostředky
 
 [Optimalizace výkonu pomocí úloh automatického vyčištění](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

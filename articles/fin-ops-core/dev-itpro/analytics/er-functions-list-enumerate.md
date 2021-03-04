@@ -72,3 +72,6 @@ Následující obrázek znázorňuje výsledek při spuštění navrženého for
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

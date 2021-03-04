@@ -177,3 +177,6 @@ Následující postup ukazuje, jak alokovat poplatky na úrovni záhlaví řádk
         > Když pracujete s mřížkou **Vyberte řádky, které chcete vyloučit z alokace**, ponechte mřížku otevřenou, dokud nevyberete **Přidělit**. Pokud zavřete mřížku před výběrem **Přidělit**, vaše nastavení v mřížce budou ztracena. Proto budou poplatky přidělovány na základě kritérií, která jste dříve definovali.
 
 1. Vyberte **Přidělit**, pokud chcete použít své nastavení a zavřete dialogové okno.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

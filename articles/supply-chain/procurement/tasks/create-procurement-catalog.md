@@ -66,3 +66,6 @@ Toto téma vysvětluje postup při vytváření zásobovacího katalogu. Tento �
 7. Vyberte **Přidat na řádky**.
 8. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

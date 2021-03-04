@@ -97,3 +97,6 @@ Při úpravě má každé pole jiný účinek na transakci:
 - **Upravit podmínky platební slevy:** Platební slevy se změní na základě základního data a podmínek platební slevy.
 
 Po dokončení úprav nastavení platby vyberte **Zavřít** pro uložení vašich změn.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -249,3 +249,6 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 - [Konfigurace formátu počítání a sčítání](./tasks/er-format-counting-summing-1.md)
 - [Sledování provádění formátu elektronického výkaznictví za účelem řešení potíží s výkonem](trace-execution-er-troubleshoot-perf.md)
 - [Odložení provádění prvků XML ve formátech elektronického výkaznictví](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

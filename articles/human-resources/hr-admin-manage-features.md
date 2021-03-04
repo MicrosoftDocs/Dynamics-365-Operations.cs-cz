@@ -94,3 +94,5 @@ Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje 
 
 - [Co je nového v Human Resources](hr-admin-whats-new.md)
 - [Plán vydání Dynamics 365 a Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

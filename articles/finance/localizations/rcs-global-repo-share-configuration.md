@@ -75,3 +75,6 @@ Konfigurace je sdílena s externí organizací a je k dispozici této organizaci
 ![Konfigurace sdílená s externí organizací](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Chcete-li zrušit sdílení konfigurace, která byla dříve sdílena s externí organizací, vyberte konfiguraci a klikněte na **Zrušit sdílení** a poté vyberte **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

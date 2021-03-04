@@ -69,3 +69,6 @@ Můžete také konfigurovat možnosti, které souvisejí se zkušenostmi uchaze�
 Můžete také nastavit a vynutit datum vypršení platnosti nabídek. Nastavíte-li možnost **Vyžadovat datum vypršení platnosti pro všechny nabídky** na **Ano**, nabídky přestanou platil po zadaném počtu dní nebo hodin.
 
 Další informace o správě nabídky získáte v části [Nastavení správy nabídky](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

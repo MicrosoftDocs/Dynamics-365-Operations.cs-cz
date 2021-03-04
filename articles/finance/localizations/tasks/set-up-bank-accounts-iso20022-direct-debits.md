@@ -69,3 +69,6 @@ Toto je čtvrtý z pěti postupů, které společně popisují proces platby odb
 8. Klikněte na tlačítko OK.
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

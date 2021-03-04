@@ -73,3 +73,6 @@ Toto téma vysvětluje, jak nastavit zásady pro fakturu dodavatele. Zásady fak
 16. Vyberte **OK**.
 17. Zavřete stránky a vraťte se na domovskou stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

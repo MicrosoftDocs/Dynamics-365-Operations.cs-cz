@@ -48,3 +48,6 @@ Tato procedura vás provede procesem vytvoření nového vizuálního profilu po
 17. Klikněte na odkaz na vybraném řádku v seznamu.
 18. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

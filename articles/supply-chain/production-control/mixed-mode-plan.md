@@ -69,3 +69,6 @@ Pro zajištění plné flexibility v kombinovaném režimu doporučujeme použí
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

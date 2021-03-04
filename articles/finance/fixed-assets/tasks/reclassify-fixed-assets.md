@@ -46,3 +46,6 @@ Chcete-li reklasifikovat dlouhodobý majetek, postupujte takto:
 5. Do pole **Datum reklasifikace** zadejte datum.
 6. V poli **Číselná řada dokladů** zadejte nebo vyberte hodnotu.
 7. Klikněte na tlačítko **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

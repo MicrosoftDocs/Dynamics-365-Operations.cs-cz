@@ -49,3 +49,6 @@ Schopnosti prostředku popisují, jaké mají provozní prostředky možnosti. P
 5. Do pole Úroveň zadejte číslo.
     * Pokud zadáte, že úloha nebo operace vyžaduje určitou možnost, můžete také určit minimální potřebné úrovně. použijte úroveň schopností k odlišení zdrojů, které lze použít ve stejné úloze, ale s různou rychlostí, silnými stránkami, velikostmi a tak dále.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

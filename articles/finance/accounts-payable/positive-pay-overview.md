@@ -49,3 +49,6 @@ Další informace naleznete v tématu [Nastavení a generování souborů kladn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

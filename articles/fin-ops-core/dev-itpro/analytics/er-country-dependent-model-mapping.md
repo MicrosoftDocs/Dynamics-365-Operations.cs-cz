@@ -496,3 +496,6 @@ Zkontrolujte, zda není jako výchozí konfigurace mapování modelu označena k
 - Nejméně jedna verze konfigurace mapování modelu ER má stav **Dokončeno** nebo **Sdíleno**. V tomto případě bude pro provádění formátu ER použita verze s nejvyšším číslem verze.
 - Možnost **Spuštění konceptu** pro konfiguraci mapování modelu ER je zapnuta. V tomto případě bude pro provádění formátu ER použita verze se stavem **Koncept**.
 > Možnost **Spustit koncept** bude dostupná na stránce **Konfigurace** pro každou konfiguraci mapování modelu ER, když je zapnutý parametr uživatele ER **Spustit nastavení**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Výchozí popis můžete definovat pro mezipodnikové doklady vyrovnání. Vých
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

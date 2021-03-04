@@ -110,3 +110,6 @@ Když používáte proces *Systémově řízený výdej seskupení*, pokud nakon
 ### <a name="issue-resolution"></a>Řešení problému
 
 Chcete-li tento problém vyřešit, upravte profil seskupení a nastavte možnost **Aktivovat pozice** na *Ne*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

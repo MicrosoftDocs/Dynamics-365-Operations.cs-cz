@@ -62,3 +62,6 @@ Pokud se používá postupné účtování, jež zajišťuje oddělení účtov�
 Podrobnosti o finančním odsouhlasení za směnu jsou synchronizovány se systémem Commerce Headquarters pomocí úlohy P-job.
 
 Výkazy finančního maloobchodu v systému Commerce Headquarters nepočítají součty, jež se zobrazují v podrobnostech na řádcích výkazů. Místo toho se k tvorbě a zaúčtování maloobchodních výkazů používají finalizované částky v klientu POS.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

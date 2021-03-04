@@ -42,3 +42,6 @@ Chcete-li potvrdit více platebních kalendářů, postupujte takto.
     - Chcete-li potvrdit všechny knihy, zapněte parametr **Pro všechny knihy**.
 
 Informace o nově potvrzených knihách jsou uvedeny na stránce **Potvrzené knihy**. Po potvrzení platebních kalendářů je možné zaúčtovat položky deníku počátečního uznání pro leasingy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

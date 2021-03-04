@@ -41,3 +41,6 @@ Dynamics 365 Human Resources používá kódy úrovní s sazbami zaměstnanecký
    | **Popis** | Stručný popis kódu úrovně zaměstnanecké výhody |
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

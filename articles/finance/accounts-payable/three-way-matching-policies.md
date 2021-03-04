@@ -145,3 +145,6 @@ Další informace naleznete v tématu [Přehled párování faktur závazků](ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

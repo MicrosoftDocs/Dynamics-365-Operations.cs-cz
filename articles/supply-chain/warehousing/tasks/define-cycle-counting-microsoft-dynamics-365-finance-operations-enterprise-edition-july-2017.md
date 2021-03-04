@@ -96,3 +96,6 @@ Cyklická inventura je skladový proces, který slouží k auditu skladových po
 21. Klikněte na tlačítko **OK**.
 22. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

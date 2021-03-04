@@ -62,3 +62,6 @@ Položka je přidána na prodejní řádek pro přímé dodání ze skladu, kter
 ### <a name="issue-resolution"></a>Řešení problému
 
 Společnost Microsoft vyhodnotila tento problém a zjistila, že jde o omezení funkcí. V současné době WMS nepodporuje přímé doručování. Chcete-li tedy použít přímé doručení, musíte vybrat položku a sklad, který nespadá do WMS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

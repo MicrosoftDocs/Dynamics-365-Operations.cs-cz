@@ -49,3 +49,6 @@ Tento postup ukazuje, jak vypočítat náklady na dokončený výrobek s použit
 11. Zavřete stránku.
 12. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

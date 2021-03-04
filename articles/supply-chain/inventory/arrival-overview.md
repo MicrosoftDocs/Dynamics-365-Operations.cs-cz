@@ -121,3 +121,6 @@ Po zaregistrování veškerého zboží může vedoucí skladu nebo vedoucí ná
 
 ## <a name="summary"></a>Souhrn
 Stránka **Přehled doručení** může pomoci vedoucímu skladu a pracovníkům skladu dosáhnout přehledu očekávaných prací, které je třeba provést jako součást příchozího procesu. Na této stránce můžete také spustit proces doručení položky k zajištění, že položky budou sledovány v první položce skladu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

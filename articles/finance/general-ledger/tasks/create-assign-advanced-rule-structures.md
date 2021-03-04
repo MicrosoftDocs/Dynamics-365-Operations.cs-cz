@@ -59,3 +59,6 @@ Toto téma vysvětluje, jak vytvořit pokročilou strukturu pravidel a přiřadi
 17. Zavřete stránku.
 18. Vyberte **Aktivovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

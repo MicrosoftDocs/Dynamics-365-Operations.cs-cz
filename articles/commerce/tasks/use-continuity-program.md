@@ -62,3 +62,6 @@ Tento postup vás provede prodejem programu trvání a zpracováním souvisejíc
     * Zadejte číslo prodejní objednávky, které jste si poznamenali dříve v proceduře. Tím zachováte dobu zpracování pro tuto proceduru jako minimální. Pole Prodejní objednávka je volitelné – můžete zpracovat všechny objednávky pro jakýkoli program.  
 21. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

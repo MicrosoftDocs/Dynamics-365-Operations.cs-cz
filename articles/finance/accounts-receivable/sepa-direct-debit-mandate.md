@@ -54,3 +54,6 @@ Další zdroje
 
 [Vytvoření zmocnění k přímému debetu pro odběratele](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

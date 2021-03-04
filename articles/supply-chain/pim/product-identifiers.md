@@ -190,3 +190,6 @@ Nyní můžete použít datové entity **Entita identifikátoru Common Data Serv
 ## <a name="related-topic"></a>Související téma
 
 [Vyhledávání produktů a variant produktu během zadávání objednávky](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

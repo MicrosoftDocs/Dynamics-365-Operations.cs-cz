@@ -354,3 +354,6 @@ Následující scénáře ilustrují, jak byste mohli použít zásady konsolida
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Zásady konsolidace dodávek](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

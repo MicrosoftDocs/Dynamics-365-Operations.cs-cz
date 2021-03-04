@@ -46,3 +46,6 @@ Informace naleznete v části Zřízení přístupu k prostředí v tématu [Zř
 **Dlouhodobé řešení**
 
 Společnost Microsoft zvažuje automatické přiřazení příslušných práv k aplikacím Onboard a Attract, když je uživatel přidán do Human Resources.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

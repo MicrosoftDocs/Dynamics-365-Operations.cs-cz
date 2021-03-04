@@ -383,3 +383,6 @@ Předpokládaný zůstatek (30) = časově rozlišené množství (10 × 1) + ak
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Konfigurace typů pracovního volna a absence](hr-leave-and-absence-types.md)
 - [Časové rozlišení plánů pracovního volna a absence](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

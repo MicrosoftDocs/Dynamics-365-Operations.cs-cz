@@ -36,3 +36,6 @@ Správa přepravy umožňuje rozdělit geografická umístění do zón. Rozděl
 - **Optimalizovat plánování trasy** - Přiřazením konkrétních plánů tras konkrétním zónám.
 
 Zóny definujete na základě hodnot polí metadat (jako je země, rozsah PSČ nebo služba operátora), které kvalifikují každou zónu. Definice zón se nevyžadují, pokud vaše ceny za přepravu nepoužívají koncept zóny.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Další informace o správě obsahu webu naleznete v následujících tématech:
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
 
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

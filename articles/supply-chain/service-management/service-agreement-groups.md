@@ -42,3 +42,6 @@ V poli **Skupina servisních smluv** na stránce **Parametry správy servisu** m
 ## <a name="related-topics"></a>Související témata
 
 [Vytvoření skupin servisních smluv](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

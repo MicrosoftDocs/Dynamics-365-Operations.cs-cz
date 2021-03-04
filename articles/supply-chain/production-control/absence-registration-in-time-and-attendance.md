@@ -109,3 +109,6 @@ Například pracovník označí příchod v 10:00 a vybere kód absence, který
 ### <a name="calculate-and-approve-absence"></a>Výpočet a schválení absence
 
 - Vyberte **Čas a docházka** &gt; **Zkontrolovat a schválit** &gt; **Schválit nebo vypočítat**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

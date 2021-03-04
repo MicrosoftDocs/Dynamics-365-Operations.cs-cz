@@ -82,3 +82,6 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
 - [Přerušit pracovní volno](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

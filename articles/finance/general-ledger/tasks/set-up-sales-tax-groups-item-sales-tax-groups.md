@@ -50,3 +50,6 @@ Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně polo�
 19. Klikněte na odkaz na vybraném řádku v seznamu.
 20. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

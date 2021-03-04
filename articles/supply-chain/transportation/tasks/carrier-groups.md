@@ -38,3 +38,6 @@ Pokud pro stejný segment trasy existuje více přepravců a služeb dopravce, m
 1. V poli **Název** zadejte popisný název skupiny.
 1. Na pevné záložce **Detaily** přidejte řádek a vyberte dopravce a službu dopravce. Tento krok opakujte, dokud nepřidáte tolik dopravců, kolik pro skupinu potřebujete.
 1. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

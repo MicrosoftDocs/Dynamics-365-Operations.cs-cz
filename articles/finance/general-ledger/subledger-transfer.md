@@ -42,3 +42,6 @@ Pro převod dávek dílčí hlavní knihy jsou k dispozici následující možno
 Ve verzi 10.0.8 byla provedena vylepšení pro zvýšení výkonu možnosti Asynchrnonní. Tato funkce je povolena pod názvem funkce **Optimalizace výkonu převodu z dílčí knihy do hlavní knihy**. 
  
 Tato funkce zlepšuje přenos dat z dílčí hlavní knihy do hlavní knihy. Umožňuje efektivnější proces a seskupuje sady menších transakcí pro převod. To umožňuje efektivnější využití dávkového serveru. Tato funkce vyžaduje, aby byl dávkový server nastaven, online a funkční, aby bylo možné použít možnost asynchronního převodu. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

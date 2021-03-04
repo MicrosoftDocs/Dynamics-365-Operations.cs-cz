@@ -52,3 +52,6 @@ Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak 
 4. Chcete-li sledovat a spravovat změny v nastavení sazby zaměstnaneckých výhod, vyberte **Akce** a potom vyberte **Spravovat verze**.
 
 5. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

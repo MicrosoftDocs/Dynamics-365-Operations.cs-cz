@@ -129,3 +129,6 @@ Plánování dotazníků umožňuje plánovat a rozdělovat dotazníky mezi víc
 2. Klepněte na tlačítko Konec.
 3. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

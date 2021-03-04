@@ -49,3 +49,6 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
     - Proveďte ověření až poté, co filtrujete určitou transakci namísto obecného ověřování. Například pro počet záznamů můžete filtrovat číslo transakce nebo datum transakce tak, aby ověření vyloučilo všechny ostatní transakce. 
     - Pokud kontrolujete zůstatek odběratele nebo kontrolu rozpočtu, nejprve hodnotu uložte a poté přidejte hodnotu transakce pro ověření očekávaného výsledku namísto ověření pevné očekávané hodnoty. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

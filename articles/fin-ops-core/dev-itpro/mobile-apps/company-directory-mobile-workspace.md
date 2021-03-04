@@ -89,3 +89,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 1.  V mobilní aplikaci zvolte pracovní prostor **Adresář společnosti**.
 2.  V poli **Vyhledat** zadejte křestní jméno, příjmení, titul nebo oddělení zaměstnance pro zahájení hledání.
 3.  Vyberte zaměstnance. Zobrazí se stránka **Profil zaměstnance**. Informace na této stránce zahrnují křestní jméno, příjmení, titul a oddělení zaměstnance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

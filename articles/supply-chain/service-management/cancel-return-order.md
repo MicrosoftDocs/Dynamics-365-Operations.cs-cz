@@ -49,3 +49,6 @@ Když chcete uložit záznam plánované vratky, můžete vratku také zrušit, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

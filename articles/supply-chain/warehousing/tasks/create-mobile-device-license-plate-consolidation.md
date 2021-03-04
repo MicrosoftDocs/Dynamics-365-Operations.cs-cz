@@ -37,3 +37,6 @@ Tato procedura ukazuje, jak vytvořit položku nabídky mobilního zařízení p
 5. V poli Režim vyberte „Nepřímý“.
 6. V poli Kód aktivity vyberte "Konsolidovat registrační značky".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

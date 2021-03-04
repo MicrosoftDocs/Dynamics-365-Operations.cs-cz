@@ -137,3 +137,6 @@ Aplikace Dynamics 365 Finance neumí vytisknout formulář 1096 Roční shrnutí
 Byla přidána nová funkce veřejného sektoru **Aktualizovat údaje formuláře 1099 podle hlavního účtu**, kterou můžete povolit v pracovním prostoru **Správa funkcí**. Tato funkce umožňuje přidružit hodnoty dodavatele na formuláři 1099 podle hlavního účtu v rozúčtování namísto výchozího účtu v záznamu dodavatele.
 
 Další informace naleznete v tématu [Nastavení dodavatelů pro vykazování 1099](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

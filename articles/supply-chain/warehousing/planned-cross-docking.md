@@ -316,3 +316,6 @@ V současné době mají obě ID práce stejnou cílovou registrační značku.
 Následující obrázek ukazuje, jak by se dokončená práce cross dockingu mohla v systému Microsoft Dynamics 365 Supply Chain Management zobrazit.
 
 ![Práce cross docking dokončena](media/PlannedCrossDockingWork.png "Práce cross docking dokončena")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

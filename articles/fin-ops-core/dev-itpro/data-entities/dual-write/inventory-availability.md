@@ -57,3 +57,6 @@ Dialogové okno vrací informace ATP ze Supply Chain Management. Tato informace 
 - Množství příjmu
 - Množství výdeje
 - Množství na skladě
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

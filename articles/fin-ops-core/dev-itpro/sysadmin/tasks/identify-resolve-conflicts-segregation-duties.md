@@ -43,3 +43,6 @@ Toto téma vysvětluje, jak identifikovat a vyřešit konflikty v dělení zodpo
 1. Přejděte do nabídky **Podokno navigace > Správa systému > Zabezpečení > Dělení zodpovědnosti > Pravidla dělení zodpovědnosti.** Vyberte pravidlo.  
 2. Zvolte **Ověřit zodpovědnosti a role**. Pokud jakákoli stávající role porušila vybrané pravidlo, zobrazí se zpráva obsahující název role a názvy konfliktních zodpovědností. Správce musí určit snížení rizika zabezpečení nebo upravit roli tak, aby neporušovala pravidla dělení zodpovědnosti. Pokud vybrané pravidlo není porušeno žádnou rolí, zpráva zobrazí informaci, že všechny role jsou kompatibilní.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

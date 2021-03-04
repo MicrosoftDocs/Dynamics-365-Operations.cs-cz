@@ -51,3 +51,6 @@ Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot. Tato úloh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

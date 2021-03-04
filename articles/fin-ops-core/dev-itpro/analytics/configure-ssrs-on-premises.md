@@ -93,3 +93,6 @@ Postupujte podle kroků v tomto tématu pro konfiguraci služby SQL Server Repor
 13. Kliknutím na tlačítko **Konec** zavřete **Správce konfigurace služby Reporting Services**.
 
     [![zavření správce konfigurace služby reporting services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

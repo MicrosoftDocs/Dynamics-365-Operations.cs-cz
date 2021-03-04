@@ -148,3 +148,6 @@ Pro každý řádek, který přidáte, nastavte následující pole.
 | Dotazník | Vyberte dotazník, který se má použít pro kontrolní seznam. Kontrolní seznam je místní kontrolní seznam ve společnosti, kde se provádí kontrola připravenosti. Systém musí být schopen vyhodnotit, zda je kontrolní seznam správně zodpovězen. Proto musí být kontrolní seznam nastaven tak, aby bylo hodnocení provedeno na základě správných odpovědí. Další informace o tom, jak vytvářet dotazníky, najdete v části [Použití dotazníků](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) a souvisejících tématech. |
 | Automatické schválení | Záznamy o kontrole připravenosti zahrnují zaškrtávací políčko **Schváleno** označující stav schválení. Vyberte zaškrtávací políčko **Automatické schválení** pro kontroly, které by měly být nastaveny na schválené ihned poté, co je přidělený uživatel dokončí. Zrušte zaškrtnutí tohoto políčka, chcete-li jako další krok vyžadovat výslovné schválení. |
 | Povinné | Toto políčko zaškrtněte u kontrol, které musí přiřazený uživatel dokončit. Povinné kontroly nelze přeskočit. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

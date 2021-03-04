@@ -190,3 +190,6 @@ Následující údaje se importují a zahrnou do nového záznamu zaměstnance:
 
 [Konfigurace virtuálních entit Common Data Service](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Co je Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

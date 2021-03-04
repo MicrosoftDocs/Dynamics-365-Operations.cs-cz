@@ -161,3 +161,6 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 7. Klepněte na tlačítko OK.
     * Výchozí konfigurace mapování modelu se používá v této konfiguraci formátu pro generování elektronických dokumentů (vytvořený výstup obsahuje kód společnosti).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Při úpravě zůstatku dovolené zaměstnance můžete uvést kód příčiny a
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Nastavte kategorie zaměstnání v aplikaci Dynamics 365 Human Resources tak, ab
 3. Zadejte hodnoty pro **typ pracovníka**, **kategorii zaměstnání** a **popis**.
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

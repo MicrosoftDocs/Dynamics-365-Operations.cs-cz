@@ -89,3 +89,6 @@ Pokud chcete zobrazit přehled všech registrací prostojů údržby, klikněte 
 >[!NOTE]
 >Všechny kalendáře používané v modulu **Správa majetku** se nastavují v umístění **Správa organizace** > **Nastavení** > **Kalendáře** > **Kalendáře**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

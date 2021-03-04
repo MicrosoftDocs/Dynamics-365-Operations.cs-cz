@@ -62,3 +62,6 @@ Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení pro
 [Přehled přípravy a zřízení servisních smluv](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

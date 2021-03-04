@@ -90,3 +90,6 @@ Požadavky:
 12. Klepněte na tlačítko Dokončit.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

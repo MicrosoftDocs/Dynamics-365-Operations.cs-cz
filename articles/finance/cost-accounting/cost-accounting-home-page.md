@@ -53,3 +53,6 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

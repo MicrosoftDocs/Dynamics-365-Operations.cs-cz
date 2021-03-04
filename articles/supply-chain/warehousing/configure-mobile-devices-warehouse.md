@@ -439,3 +439,6 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 [Stavy zásob](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

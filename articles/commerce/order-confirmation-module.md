@@ -87,3 +87,6 @@ Chcete-li přidat modul potvrzení objednávky na novou stránku a nastavit pož
 [Modul s informacemi o vyzvednutí](pickup-info-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -260,3 +260,6 @@ V předchozím příkladu jste získali přístup k parametrům formátu ER, kte
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

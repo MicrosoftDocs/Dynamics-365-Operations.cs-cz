@@ -57,3 +57,6 @@ Data aplikace se používají k naplnění sestav v balíčku obsahu organizačn
 | Školení\_Pozice        | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Školení\_WorkerName      | Křestní jméno, příjmení a celé jméno                             | Školení\_CourseAttendees |
 | Školení\_WorkerTitle     | Název a datum služebního věku                                         | Školení\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

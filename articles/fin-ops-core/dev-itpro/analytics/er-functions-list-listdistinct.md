@@ -97,3 +97,6 @@ Následující příklad ukazuje, jak můžete získat seznam jedinečných čí
 ## <a name="additional-resources"></a>Další prostředky
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

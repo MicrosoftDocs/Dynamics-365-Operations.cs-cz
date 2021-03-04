@@ -60,3 +60,6 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy 
 5. Zavřete formulář.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

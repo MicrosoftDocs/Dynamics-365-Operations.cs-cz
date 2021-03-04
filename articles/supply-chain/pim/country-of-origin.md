@@ -91,3 +91,6 @@ Při generování sestavy kusovníku můžete pro každou část, pro kterou jst
 Je vygenerována a zobrazena sestava, která zobrazuje informace o zemi původu každé části. Následuje příklad sestavy.
 
 ![Sestava země původu](media/country-of-origin-report.png "Sestava země původu")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

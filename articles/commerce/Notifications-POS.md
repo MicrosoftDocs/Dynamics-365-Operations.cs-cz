@@ -77,3 +77,6 @@ Chcete-li zobrazit počet oznámení na tlačítku, je nutné zajistit, aby bylo
 Následující obrázek znázorňuje účinek výběru **Vpravo nahoře** oproti možnosti **Na střed** v poli **Zarovnání obsahu** pro tlačítka různých velikostí.
 
 ![Aktivní obsah na tlačítkách POS](./media/ButtonsWithLiveContent.png "Aktivní obsah na tlačítkách POS")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

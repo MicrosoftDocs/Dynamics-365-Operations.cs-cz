@@ -43,3 +43,6 @@ Pokud je ve vytížení více než jedna dodávka, můžete vygenerovat hlavní 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

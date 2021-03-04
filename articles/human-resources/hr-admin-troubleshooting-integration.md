@@ -181,3 +181,6 @@ Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry 
 - Správa dat:
 
   - [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

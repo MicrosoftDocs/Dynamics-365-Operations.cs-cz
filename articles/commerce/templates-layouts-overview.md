@@ -112,3 +112,6 @@ Chcete-li začít používat přednastavená rozvržení, postupujte podle [Prá
 [Práce s přednastavenými rozloženími](work-with-layouts.md)
 
 [Práce se skupinami publikování](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

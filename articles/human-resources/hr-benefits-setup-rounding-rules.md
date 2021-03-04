@@ -36,3 +36,6 @@ Pravidla zaokrouhlení můžete nastavit v aplikaci Dynamics 365 Human Resources
 3. Určete **hodnoty zaokrouhlení na nejbližší**, **scénář** a **způsob zaokrouhlení**.
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

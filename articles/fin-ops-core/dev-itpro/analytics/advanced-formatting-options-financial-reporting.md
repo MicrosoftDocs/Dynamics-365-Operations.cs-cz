@@ -310,3 +310,6 @@ Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledc�
 Sestavy lze navrhovat pomocí hodnot dimenzí, které obsahují znak ampersand (&).
 
 V rámci jakéhokoliv pole **Odkaz na finanční dimenze** můžete zadat hodnotu, například **P&L**. Zahrnutí jednoduchých uvozovek (' ') na obou stranách hodnoty dimenze označuje, že používáte hodnotu literálu, například zahrnutí znaku ampersandu (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

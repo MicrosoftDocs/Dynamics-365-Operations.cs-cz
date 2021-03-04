@@ -51,3 +51,6 @@ Funkce rozšířeného odsouhlasení banky umožňuje importovat bankovní výpi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,5 @@ Statistiky dotazníku slouží k analýze výsledků vyplněných dotazníků na
 -   Vyberte nebo zkontrolujte kritéria pro analýzu výsledků dle charakteristiky respondenta nebo dotazníku. Například výběrem možnosti **PSČ** lze analyzovat korelaci mezi umístěním a správnými odpověďmi respondenta.
 
 Definovaná nastavení budou uložena a lze je použít k periodickému přepočítávání výsledků.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

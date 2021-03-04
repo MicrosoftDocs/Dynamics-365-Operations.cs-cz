@@ -64,3 +64,6 @@ Tento postup ukazuje postup potvrzení prodejních objednávek. Bude vám předv
 11. Klikněte na tlačítko **OK**.
 12. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

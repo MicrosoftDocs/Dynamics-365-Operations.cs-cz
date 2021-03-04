@@ -74,3 +74,6 @@ Tento postup se zaměřuje na potřebné nastavení k vytvoření kanbanového p
 2. Klepněte na Zobrazit strom doložení.
     * Všimněte si, že kanban je vytvořen stejným množstvím jako řádek prodeje. Můžete také vidět výdej materiálu vyžadovaný k výrobě L0050. Tento krok je posledním krokem v tomto postupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

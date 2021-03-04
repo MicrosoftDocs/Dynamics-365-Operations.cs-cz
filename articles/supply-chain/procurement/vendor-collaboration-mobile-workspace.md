@@ -170,3 +170,6 @@ Jsou zobrazeny všechny změny, které byly provedeny v odpovědi na řádku obj
 
 ### <a name="open-confirmed-orders"></a>Otevřít potvrzené objednávky
 Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na **Potvrzeno**), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

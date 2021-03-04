@@ -113,3 +113,6 @@ Povolení a používání Elektronické fakturace může vyžadovat odesílání
 - [Začněte s doplňkem elektronické fakturace pro Mexiko](e-invoicing-mex-get-started.md)
 - [Začněte s doplňkem elektronické fakturace pro Itálii](e-invoicing-ita-get-started.md)
 - [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

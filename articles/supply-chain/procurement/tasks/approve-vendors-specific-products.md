@@ -62,3 +62,6 @@ Tento postup popisuje způsob schválení dodavatelů pro určité produkty. Tí
 31. Zavřete stránku.
 32. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

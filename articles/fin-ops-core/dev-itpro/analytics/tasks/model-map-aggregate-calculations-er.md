@@ -116,3 +116,6 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 68. Klepněte na tlačítko Uložit.
     * Poznámka: pole 'Provedení v' označuje, že toto seskupení se provede při spuštění v paměti i v případě, že neexistují žádná seskupení definovaná ve vybraném zdroji dat a vybraný zdroj dat tabulky záznamů typu se vztahuje na stejnou tabulku 'systému Intrastat. Důvodem je skutečnost, že zdroj dat obsahuje některá vypočítaná pole, která nelze ještě převést na úrovni databáze SQL.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

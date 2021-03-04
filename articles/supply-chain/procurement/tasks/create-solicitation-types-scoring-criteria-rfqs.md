@@ -52,3 +52,6 @@ Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení
 8. Klikněte na tlačítko OK.
 9. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

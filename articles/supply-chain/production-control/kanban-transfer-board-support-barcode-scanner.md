@@ -192,3 +192,6 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ V následující proceduře je uveden postup, pomocí kterého mohou správci sy
 6. Přejděte na **Navigační podokno > Moduly > Běžné > Běžné > Výchozí řídicí panel**. Měli byste na řídícím panelu vidět novou proužkovou reklamu nebo obrázek loga.  
     
     Může být nutné změnit vaší společnost pomocí pole pro výběr společnosti na tu, pro kterou jste odeslali proužkovou reklamu.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

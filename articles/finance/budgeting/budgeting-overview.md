@@ -70,3 +70,6 @@ Například můžete definovat, kdo provádí rozpočtování, co se rozpočtuje
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

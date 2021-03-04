@@ -83,3 +83,6 @@ Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazov�
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Použijte upravené pracovní verze formátu ER při zpracování deníku plateb
 
 Zkontrolujte vytvořený seznam včetně nových podrobností o řádcích platby – datum platby.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

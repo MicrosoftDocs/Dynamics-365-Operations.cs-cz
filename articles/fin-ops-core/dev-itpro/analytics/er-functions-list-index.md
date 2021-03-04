@@ -63,3 +63,6 @@ Pokud zadáte zdroj dat **DS** typu *vypočítané pole* a ten obsahuje výraz `
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

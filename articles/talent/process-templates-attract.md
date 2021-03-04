@@ -71,3 +71,6 @@ Pro vytvoření šablony náborového procesu postupujte podle těchto kroků:
     - Chcete-li odstranit aktivitu, rozbalte jí a pak vyberte tlačítko koše na záhlaví aktivity.
 
 8. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

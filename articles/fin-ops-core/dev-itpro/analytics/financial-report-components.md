@@ -126,3 +126,6 @@ Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uži
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

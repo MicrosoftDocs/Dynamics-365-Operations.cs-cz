@@ -104,3 +104,6 @@ Chcete-li přidat modul galerie médií na marketingovou stránku, postupujte po
 [Modul kontejneru](add-container-module.md)
 
 [Odeslání obrázků](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

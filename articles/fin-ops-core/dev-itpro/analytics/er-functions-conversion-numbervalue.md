@@ -63,3 +63,6 @@ Výsledná číselná hodnota.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce převodu typu](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

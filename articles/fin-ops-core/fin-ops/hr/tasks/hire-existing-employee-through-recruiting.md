@@ -40,3 +40,6 @@ Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanc
 9. Klikněte na možnost Změna pozice.
     * Nyní můžete také změnit kompenzaci. Pokud nyní kompenzaci nepřiřadíte, můžete to změnit zobrazením formuláře pracovníka, výběrem karty Kompenzace a výběrem možnosti „Fixní plán“. Po výběru možnosti „Změna pozice“ bude stav přihlášky aktualizován na hodnotu „Zaměstnán“.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

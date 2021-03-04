@@ -150,3 +150,6 @@ Po zobrazení náhledu změn vašich šablon můžete publikovat šablonu na akt
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Práce s přednastavenými rozloženími](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

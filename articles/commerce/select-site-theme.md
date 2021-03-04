@@ -68,3 +68,6 @@ Chcete-li vybrat motiv, který je pro web použit, postupujte podle následujíc
 
 [Vytvoření nového tématu](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

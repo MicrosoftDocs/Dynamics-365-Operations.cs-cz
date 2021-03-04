@@ -51,3 +51,6 @@ Následující možnosti budou k dispozici pro výběr, jestliže je typ práce 
 | Potvrzení výdeje kusů | K dispozici pro typy prací Výdej a inventura. Potvrzení produktu je vybráno automaticky. Umožňuje vám potvrdit jednotlivé skladové položky z mobilního zařízení při naskenování. |
 |  Maximální počet kusů  |                   K dispozici pro vyskladnění práce, pokud je povoleno potvrzení výdeje kusů. Nastaví limit na počet kusů, které je třeba potvrdit.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

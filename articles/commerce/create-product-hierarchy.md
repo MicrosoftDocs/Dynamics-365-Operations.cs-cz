@@ -80,3 +80,6 @@ Skupiny atributů kategorií lze podle potřeby přiřadit ke každé skupině.
 [Správa kategorií produktů a produktů](category-management-product-creation.md)
 
 [Změna pořadí řazení pro entity podpory prodeje](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

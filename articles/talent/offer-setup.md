@@ -209,3 +209,6 @@ Existuje několik částí procesu vytváření nabídky, které může konfigur
 
 
 Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepsání nabídek](./creating-offers.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -245,3 +245,6 @@ V úloze v jednotkách škálování můžete spravovat následující dvě dáv
 
 - Zpracování záznamů tabulky vln
 - Zpracovat události přenosu kontroly provedení vlny
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

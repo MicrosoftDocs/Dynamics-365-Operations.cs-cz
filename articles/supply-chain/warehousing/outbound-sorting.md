@@ -667,3 +667,6 @@ Musíte dokončit práci výběru tříděných zásob. Po dokončení budou zá
     Práce je dokončena.
 
 Odteď platí všechny ostatní skladové procesy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

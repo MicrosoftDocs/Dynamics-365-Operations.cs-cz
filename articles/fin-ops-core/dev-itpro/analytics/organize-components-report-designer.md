@@ -148,3 +148,6 @@ Pouze výchozí nastavení základního období se uloží s definicí sestavy.<
 ## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 4.  Vyberte zákazníka.
 5.  Vyberte **Kontaktní informace** nebo **Prodejní objednávky**. Pokud je vybraná možnost **Prodejní objednávky**, zobrazí se seznam prodejních objednávek pro zákazníka.
 6.  Vyberte **Prodejní objednávka**. Zde můžete nyní zobrazit informace o řádcích prodejní objednávky, informace o dodávkách, kontaktní informace zákazníka a kontaktní informace příjemce objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

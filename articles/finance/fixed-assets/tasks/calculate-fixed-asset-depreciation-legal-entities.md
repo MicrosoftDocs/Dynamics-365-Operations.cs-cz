@@ -51,3 +51,6 @@ Odpis dlouhodobého majetku lze spustit napříč právnickými osobami v jedin�
 5. Klikněte na Vytvoří deník.
 6. Přejděte na Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

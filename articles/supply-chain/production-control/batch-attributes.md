@@ -53,3 +53,6 @@ Atribut dávky můžete vyhledat, pokud rezervujete dávku pro prodejní objedn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

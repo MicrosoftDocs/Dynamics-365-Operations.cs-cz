@@ -87,3 +87,6 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 - Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (vyžaduje se přihlášení).
 - Seznam lokalizací, které jsou podporovány, uvádí [Příručka mezinárodní dostupnosti](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

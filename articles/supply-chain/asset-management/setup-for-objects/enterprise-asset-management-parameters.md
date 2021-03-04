@@ -107,3 +107,6 @@ Vyberte typy dokumentů, které mají být k dispozici pro tisk příloh souvise
 Odkaz **Číselné řady**
 
 Vyberte požadované číselné řady v tomto oddílu. Existují dvě číselné řady pro majetek: jedna pro ručně vytvořený majetek a druhá pro majetek vytvořený prostřednictvím čekajících majetků.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

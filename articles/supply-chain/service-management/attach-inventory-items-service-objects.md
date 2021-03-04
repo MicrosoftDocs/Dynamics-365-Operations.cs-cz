@@ -51,3 +51,6 @@ Položka je nyní připojena k předmětu servisu a do předmětu servisu jsou t
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

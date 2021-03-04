@@ -63,3 +63,6 @@ Rozložení grafického návrhu pro MPOS nebo Cloud POS řídí rozložení pokl
 ## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace, Instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

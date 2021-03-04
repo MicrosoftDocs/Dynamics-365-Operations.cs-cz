@@ -535,3 +535,6 @@ Tyto změny lze provést pro scénář 1, na základě požadavků pro scénář
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Pokud máte dobrovolníky nebo jiné zaměstnance, možná budete chtít změnit
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled samoobsluhy pro zaměstnance a manažery](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

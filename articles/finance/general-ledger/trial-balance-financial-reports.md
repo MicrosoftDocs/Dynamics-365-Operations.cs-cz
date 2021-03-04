@@ -110,3 +110,6 @@ Každá sestavu předvahy používá jinou definici sloupců. Tyto definice slou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

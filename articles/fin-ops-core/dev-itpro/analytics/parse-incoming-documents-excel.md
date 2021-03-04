@@ -46,3 +46,6 @@ Pokud jste si ještě nepřehráli následujícího průvodce záznamem úloh [E
 | Popis obsahu    | Soubor                                                            |
 |------------------------|-----------------------------------------------------------------|
 | Konfigurace modelu ER | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

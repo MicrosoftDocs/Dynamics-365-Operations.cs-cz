@@ -44,3 +44,6 @@ Ve snaze usnadnit import členů dimenze objektů nákladů používáte datové
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

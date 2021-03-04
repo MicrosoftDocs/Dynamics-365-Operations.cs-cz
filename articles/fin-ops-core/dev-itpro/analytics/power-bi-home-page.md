@@ -65,3 +65,6 @@ Následující řešení PowerBI.com jsou k dispozici z [Microsoft AppSource](ht
 - Správa nákladů
 - [Finanční výkonnost](financial-performance-power-bi-content-pack.md)
 - [Výkonnost maloobchodního kanálu ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

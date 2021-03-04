@@ -56,3 +56,6 @@ Chcete-li nastavit kalendář, postupujte následujícím způsobem:
 10. Chcete-li přiřadit kalendář zaměstnancům, vyberte **Přiřadit zaměstnancům** v podokně akcí. Vyberte zaměstnance, kterým chcete tento kalendář přiřadit, a klikněte na **Přiřadit**.
 
 Zaměstnanci nemusí mít přiřazené kalendáře. Pokud je definován kalendář pracovní doby, dny volna jsou automaticky vyloučeny z požadavku. Množství v hodinách nebo dnech vychází z pracovní doby definované v kalendáři. Pokud nemá zaměstnanec přiřazený kalendář, jsou pro dny volna k dispozici všechny dny a množství dnů volna není pro tento požadavek výchozí. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

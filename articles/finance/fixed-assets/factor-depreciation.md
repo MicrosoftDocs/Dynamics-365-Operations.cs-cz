@@ -79,3 +79,6 @@ Hodnota v poli **Koeficient** je rovna **50**. V tomto případě bude odpis ste
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

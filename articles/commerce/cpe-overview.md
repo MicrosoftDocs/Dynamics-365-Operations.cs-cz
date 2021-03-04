@@ -64,3 +64,6 @@ Chcete-li zřizovat prostředí vyhodnocení Commerce, získáte informace v č�
 [Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
 
 [Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

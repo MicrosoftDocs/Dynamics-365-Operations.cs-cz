@@ -53,3 +53,6 @@ Pomocí následujících kroků přidejte a nakonfigurujte větve této paraleln
     > Pořadí větví není důležité, protože všechny větve paralelní aktivity běží současně.
 
 3. Informace o konfiguraci jednotlivých větví uvádí téma [Konfigurace paralelních větví ve workflow](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

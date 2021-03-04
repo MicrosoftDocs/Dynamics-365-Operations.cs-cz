@@ -102,3 +102,6 @@ Servisní zakázku lze vytvořit z formuláře **Prodejní objednávky** pomocí
 
 [Vytvoření servisních zakázek (formulář třídy)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ V pracovním prostoru **Správa dat** můžete získat přehled o entitách cíl
 
     ![Obrázek č. 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

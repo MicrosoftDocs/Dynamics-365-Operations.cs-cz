@@ -175,3 +175,6 @@ Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (skl
 6. Klikněte na odkaz na vybraném řádku v seznamu.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

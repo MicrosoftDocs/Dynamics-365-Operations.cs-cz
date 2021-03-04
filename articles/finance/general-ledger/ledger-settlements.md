@@ -75,3 +75,6 @@ Omylem provedené vyrovnání lze stornovat.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualizace seznamů účtů, které jsou zahrnuty v seznamu transakcí
 
 Vyberte **Účty vyrovnání hlavní knihy** pro otevření dialogového okna, ve kterém můžete upravit účty zahrnuté v seznamu transakcí. Zvolte **Nový** pro přidání nových účtů do seznamu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

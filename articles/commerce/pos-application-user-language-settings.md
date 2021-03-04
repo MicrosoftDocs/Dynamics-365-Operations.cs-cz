@@ -65,3 +65,6 @@ Nastavení jazyka uživatele POS pochází z nabídky **Všichni pracovníci** n
 | **Company (Společnost)** | Výchozí                    | Výchozí                                                       |
 | **Obchod**   | Přepsání společnosti          | Přepsání společnosti                                             |
 | **Uživatel**    | Přepsání obchodu nebo společnosti | Nikdy                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

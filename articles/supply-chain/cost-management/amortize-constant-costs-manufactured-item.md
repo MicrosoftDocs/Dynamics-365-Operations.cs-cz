@@ -47,3 +47,6 @@ Vypočtené množství amortizovaných konstantních nákladů na vyráběnou po
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

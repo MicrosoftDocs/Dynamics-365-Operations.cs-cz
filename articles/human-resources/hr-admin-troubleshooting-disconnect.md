@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources odpojuje uživatele, když jsou současn�
 Ujistěte se, že pro daný typ prohlížeče je současně otevřeno pouze jedno prostředí. Uživatelé mohou otevřít více relací do stejného prostředí (více záložek ve stejném prohlížeči).
 
 Uživatelé, kteří chtějí přeskakovat mezi dvěma prostředími současně, by měli otevřít každé prostředí v jiném typu prohlížeče. (Například uživatel A může zobrazit prostředí 1 v Chrome a prostředí 2 v Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

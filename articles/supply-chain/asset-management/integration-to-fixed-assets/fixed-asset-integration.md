@@ -115,3 +115,6 @@ Chcete-li odebrat existující přidružení mezi objektem údržby a dlouhodob�
 1. Vyhledejte a otevřete dlouhodobý majetek.
 1. Na záložce s náhledem **Dlouhodobý majetek** vymažte hodnotu z pole **Funkční místo**.
 1. V podokně akcí vyberte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

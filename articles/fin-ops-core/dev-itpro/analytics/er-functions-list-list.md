@@ -73,3 +73,6 @@ V tomto případě výraz `LIST('Record 1', 'Record 2')` vrátí nový seznam, k
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Toto vydání obsahuje několik dalších oprav chyb:
 - Když je přijat dodavatel, karta **Kompenzace** by neměla být k dispozici na stránce požadavku/akce.
 - V průběhu procesu ukončení požadavku nelze pokračovat, dokud všechna povinná pole neobsahují data.
 - Problémy s pořadím řazení a zobrazením dat v analýze správy personálu byly vyřešeny.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -169,3 +169,6 @@ Příklad scénáře vyžaduje přípravu dvou profilů skladových míst.
 
 > [!NOTE]
 > Pole skladového místa se aktualizují pouze skladovými transakcemi. Pokud provedete přesun zásob pomocí deníku nebo procesů jiných než skladových, aktualizace těchto polí se neprovede.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

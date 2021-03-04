@@ -65,3 +65,6 @@ Další informace naleznete v následujících tématech:
 [Nastavení zařízení banky a zaúčtování profilů pro záruční listiny](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

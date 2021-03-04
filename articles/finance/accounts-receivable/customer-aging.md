@@ -145,3 +145,6 @@ Při generování této sestavy se zobrazují následující výchozí parametry
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

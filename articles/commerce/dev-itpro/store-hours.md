@@ -78,3 +78,6 @@ Pomocí následujících kroků přidejte do tištěných příjemek POS pracovn
 Příjemky POS nyní zahrnují pracovní dobu obchodu. Pokud byly do šablony zahrnuty nějaké svátky, zobrazí se na účtence.
 
 ![Příklad účtenky](../dev-itpro/media/Storehours3.png "Příklad účtenky")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

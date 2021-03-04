@@ -55,3 +55,5 @@ Jakmile je žádanka připravena, použijte akci **Workflow** > **Odeslat** pro 
 
 - [Nastavení externího katalogu pro funkci PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 - [cXML vylepšení nákupu](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

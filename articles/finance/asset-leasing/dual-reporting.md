@@ -523,3 +523,6 @@ Po vytvoření a zaúčtování všech těchto položek deníku se zobrazí nás
 | 11         | Akumulovaný odpis |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

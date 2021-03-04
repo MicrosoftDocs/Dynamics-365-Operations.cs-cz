@@ -136,3 +136,5 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 
 > [!NOTE]
 > Funkce *Správa kvality pro skladové procesy* poskytuje dodatečné možnosti pro nastavení přidružení kvality. Přidá novou podmínku (**Použitelný typ skladu**) a nové nastavení (**Zásady zpracování kvality**). Pokud jste tuto funkci povolili, další informace naleznete v tématu [Správa kvality pro procesy skladu](../quality-management-for-warehouses-processes.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

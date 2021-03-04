@@ -153,3 +153,6 @@ Vytvořte nákupní objednávku nebo vyberte stávající nákupní objednávku.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

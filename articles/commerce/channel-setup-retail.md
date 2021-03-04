@@ -182,3 +182,6 @@ Chcete-li nastavit trezory, postupujte následujícím způsobem.
 
 [Nastavení kanálu kontaktního střediska](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Sledovací dimenze **Vlastník** chybí, když se aplikace skladu používá k p
 ### <a name="issue-resolution"></a>Řešení problému
 
 Společnost Microsoft vyhodnotila tento problém a zjistila, že jde o omezení funkcí. V současné době procesy správy skladu podporují pouze zásoby, které jsou ve vlastnictví právnické osoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

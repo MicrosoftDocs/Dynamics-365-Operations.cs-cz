@@ -117,3 +117,6 @@ Pokud plánujete použít tento přístup pro velké množství transakčních d
 [Funkce elektronického výkaznictví FIRSTORNULL](er-functions-list-firstornull.md)
 
 [Funkce elektronického výkaznictví WHERE](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

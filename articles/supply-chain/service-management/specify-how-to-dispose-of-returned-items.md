@@ -183,3 +183,6 @@ Pro každý kód dispozice, který definujete, je nutné vybrat dispoziční akc
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

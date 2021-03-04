@@ -80,3 +80,6 @@ Při použití výdeje v seskupení je velmi důležité potvrzení položek k o
 1. V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** \> **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
 
 1. Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**. Možnost **Potvrzení produktu** umožňuje ověřit jednotlivé skladové položky z mobilního zařízení při naskenování.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

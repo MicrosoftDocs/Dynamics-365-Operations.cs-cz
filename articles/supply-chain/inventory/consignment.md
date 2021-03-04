@@ -103,3 +103,6 @@ Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

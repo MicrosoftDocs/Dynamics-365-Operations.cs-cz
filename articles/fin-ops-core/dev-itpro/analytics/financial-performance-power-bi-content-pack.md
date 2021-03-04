@@ -88,3 +88,6 @@ Následující entity byly použity jako základ řešení PowerBI.com **Finanč
 - ChartofAccounts
 
 Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit sešit aplikace [Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

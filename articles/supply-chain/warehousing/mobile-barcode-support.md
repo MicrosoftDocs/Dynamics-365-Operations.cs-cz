@@ -35,3 +35,6 @@ Aplikace Dynamics 365 Supply Chain Management – sklady byla testována s výb
 
 Jako zákazníkovi vám doporučujeme před rozhodnutím o hardwaru, který chcete koupit, vyzkoušet mobilní skenovací aplikaci Warehouse na vybraném hardwaru.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

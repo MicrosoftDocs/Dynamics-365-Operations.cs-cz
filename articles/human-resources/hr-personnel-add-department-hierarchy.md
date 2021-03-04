@@ -54,3 +54,6 @@ Pro přidání oddělení do hierarchie oddělení postupujte takto:
 
 ## <a name="steps-for-creating-a-department"></a>Postup při vytváření oddělení
 Ohledně podrobného postupu pro vytvoření nového oddělení nahlédněte do článku [Definování nových oddělení](../fin-and-ops/hr/tasks/define-new-departments.md). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ S použitím metadat konfiguračního klíče vytvořeného během seznamu obnov
 Kdykoli aktualizujete konfigurační klíče na entitě, úrovni tabulek nebo polí, seznam entit v platformě správy dat musí být aktualizován. Tento proces zajišťuje, aby platforma vzala nejnovější nastavení konfiguračního klíče. Dokud nebude obnoven seznam entit, bude se zobrazovat na stránce seznamu entit následující upozornění. Aktualizované změny konfiguračního klíče se projeví okamžitě po aktualizaci seznamu entit. Doporučujeme ověřit existující datové projekty a úlohy, abyste se ujistili, že fungují podle očekávání poté, co změny konfiguračních klíčů začaly být účinné.
 
 ![Cílová pole](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

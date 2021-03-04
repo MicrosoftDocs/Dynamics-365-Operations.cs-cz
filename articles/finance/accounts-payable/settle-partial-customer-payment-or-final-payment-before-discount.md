@@ -149,3 +149,6 @@ Arnie zaúčtuje deník a zkontroluje transakce odběratele na stránce **Transa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

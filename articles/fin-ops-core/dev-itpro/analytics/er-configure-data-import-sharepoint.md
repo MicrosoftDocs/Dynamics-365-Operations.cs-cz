@@ -206,3 +206,6 @@ Prostudujte kód ve třídě `BankImport_RU` modelu `Application Suite` a podív
 
 [Změny rozhraní API architektury ER pro aktualizaci aplikace 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

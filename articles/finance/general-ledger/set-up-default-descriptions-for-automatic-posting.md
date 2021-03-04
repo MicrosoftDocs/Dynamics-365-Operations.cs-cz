@@ -87,3 +87,6 @@ Po dokončení kroků uvedených v části [Nastavení výchozích popisů](#set
 2. V poli **Referenční tabulka** vyberte tabulku databáze, ze které chcete přidat data parametru do popisu.
 3. V poli **Referenční pole** vyberte pole databáze, ze kterého chcete přidat data parametru do popisu.
 4. Opakováním kroků 1 až 3 přidejte další parametry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

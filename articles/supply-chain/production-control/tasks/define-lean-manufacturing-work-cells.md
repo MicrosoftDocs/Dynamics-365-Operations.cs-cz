@@ -100,3 +100,6 @@ Pracovní buňka je konkrétní formulář skupin prostředků, které lze použ
 ## <a name="save"></a>Uložit
 1. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

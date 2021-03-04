@@ -59,3 +59,6 @@ Servisní smlouva je platná od 1. ledna 2012 až 31. prosince 2012. K této ser
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

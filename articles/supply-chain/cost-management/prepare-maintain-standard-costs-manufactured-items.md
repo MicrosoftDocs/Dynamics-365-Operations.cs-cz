@@ -73,3 +73,6 @@ Pokud chcete použít informace o postupu pro účely nákladů, jsou vyžadová
 
 [Nastavení produktů, které mohou být vyrobeny nebo pořízeny](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

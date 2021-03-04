@@ -67,3 +67,6 @@ Abyste se vyhnuli dalším účetním položkám, straně Má dáti a Dal na ste
 
 -   Organizace často používají pevné dimenze k nulovému plnění a finanční dimenzi, která není požadována. Obvykle se jedná o případy pro rozvahové účty, jako jsou účty pohledávek a závazků. Účetní struktury lze použít pro nesledované finanční dimenze, které jsou obvykle vyplněny nulovými hodnotami.  Odebrání finanční dimenze pro rozvahové účty eliminuje nutnost použít pevné dimenze.
 -   Pokud vaše organizace vyžaduje pevné dimenze na hlavním účtu pohledávek/závazků, najděte způsob nastavení výchozí pevné dimenze pro platbu, tak, aby hodnota pevné dimenze byla uložena v transakci dodavatele pro platbu. To umožní systému obnovit hlavní účet pohledávek a závazků tak, aby zahrnoval hodnoty pevné dimenze. Hodnotu pevné dimenze lze definovat jako výchozí pro dodavatele nebo pro název deníku pro deník plateb.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Můžete odeslat obrázek loga společnosti a další informace jako značku pro
     ![Přidání odkazů na zásady ochrany osobních údajů společnosti a podmínky použití zápatí e-mailu](./media/attract-admin-email-footer.png)
 
 4. Výběrem možnosti **Uložit** uložte nastavení šablony e-mailu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Následující postup popisuje vztah mezi majetkem, pracovními příkazy, proje
 
 7. Chcete-li zobrazit přehled projektů spojených s dlouhodobým majetkem, vyberte možnost **Dlouhodobý majetek** > **Dlouhodobý majetek** > **Dlouhodobý majetek** a pak v poli **Číslo dlouhodobého majetku** otevřete zobrazení podrobností. Rozbalte podokno **Související informace** na pravé straně stránky a vyberte pevnou záložku **Související projekty**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

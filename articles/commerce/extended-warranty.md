@@ -239,3 +239,6 @@ Záruka je služba poskytovaná pro konkrétní jedinečný produkt. V Dynamics 
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Přehled číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Při vytváření nové servisní zakázky pro servisní smlouvy, které je při
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

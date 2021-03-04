@@ -57,3 +57,6 @@ Tento postup se zaměřuje na ověřování stromu doložení z řádku prodeje,
 5. Ve stromovém zobrazení vyberte „Řádek prodeje 000832\Kanban 000558\Výdej pro L0001\Kanban 000559“.
     * Úloha pro druhý kanban je také plánována, protože celý strom doložení je plánován. Všimněte si, že stav kanbanové úlohy bude změněn z Nenaplánováno na Naplánováno.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

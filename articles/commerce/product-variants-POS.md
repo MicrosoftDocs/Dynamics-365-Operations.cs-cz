@@ -115,3 +115,6 @@ Následující tabulka uvádí více informací o dalších dostupných akcích.
 | Dostupnost         | Zobrazte informace o položkách dostupných pro slíbení pro vybranou kombinaci variant pro vybrané umístění. |
 | Zobrazit všechna místa   | Přepněte na standardní zobrazení vyhledávání zásob a zvýrazněte informace o dostupnosti zásob pro variantu položky napříč všemi obchody ve skupině lokátorů obchodů a distribučních centrech typu **Standardní/Výchozí**. |
 | Zobrazit podrobnosti produktu | Přesměrujte uživatele na stránku **Podrobnosti produktu** přidruženého základního produktu. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

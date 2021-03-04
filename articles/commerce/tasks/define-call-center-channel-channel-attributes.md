@@ -100,3 +100,6 @@ Tento postup vás provede vytvářením nového kanálu commerce a definováním
 65. Klikněte na položku Uložit.
 66. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

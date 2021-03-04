@@ -73,3 +73,6 @@ Následující obrázek znázorňuje příklad skupiny velikostí pro "velikosti
 [Nastavení maloobchodních produktů](set-up-retail-products.md)
 
 [Dimenze produktu](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

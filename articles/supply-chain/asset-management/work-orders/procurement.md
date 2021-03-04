@@ -100,3 +100,6 @@ Následující obrázek ukazuje příklad stránky **Nákupní objednávka** se 
 
 Podobně platí, že chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupní žádanky pracovního příkazu, na stránce se seznamem **Nákup pracovního příkazu** vyberte záznam nákupní objednávky a pak ve sloupci **Nákupní žádanka** vyberte odkaz na nákupní žádanku. Pole **Číslo aktivity** najdete na kartě **Projekt** pevné záložky **Podrobnosti řádku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

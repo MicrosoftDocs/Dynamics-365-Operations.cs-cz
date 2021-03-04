@@ -254,3 +254,6 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Požadavky zboží pro objednávky služeb jsou zpracovávány prostřednictvím
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

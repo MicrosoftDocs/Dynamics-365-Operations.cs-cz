@@ -145,3 +145,6 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 46. Zavřete stránku.
 ![Stránka návrháře operací ER](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

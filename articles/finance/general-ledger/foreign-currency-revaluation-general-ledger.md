@@ -113,3 +113,6 @@ Výsledek přecenění mimo pořadí dat lze zrušit, ale může být nutné zm�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

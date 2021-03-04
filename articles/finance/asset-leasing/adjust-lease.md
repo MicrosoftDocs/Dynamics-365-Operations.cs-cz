@@ -82,3 +82,6 @@ Pokud byl leasing upraven, můžete zobrazit jeho různé verze. Můžete si tak
 
 2. Chcete-li zobrazit historické plány, otevřete upravený leasingu ze stránky **Souhrn leasingu**, vyberte požadovanou knihu a poté v podokně akcí vyberte **Historie verzí knihy**.
 3. Na stránce **Verze knihy** vyberte požadovanou verzi a požadovaný plán, které chcete zobrazit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

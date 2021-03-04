@@ -41,3 +41,6 @@ Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k d
 6. Vyberte možnost Ano v poli Zobrazit podrobnosti.
 7. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

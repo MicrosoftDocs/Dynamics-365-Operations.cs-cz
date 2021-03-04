@@ -67,3 +67,6 @@ Tento postup popisuje, jak vytvořit novou hierarchii kategorií a přiřadit ty
 8. Klikněte na odkaz na vybraném řádku v seznamu.
 9. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

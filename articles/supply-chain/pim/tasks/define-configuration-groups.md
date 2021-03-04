@@ -40,3 +40,6 @@ Tento postup popisuje definování konfiguračních skupin produktu vytvořením
 7. Zadejte hodnotu do pole Název.
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

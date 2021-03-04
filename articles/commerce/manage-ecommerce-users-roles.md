@@ -71,3 +71,6 @@ Po vytvoření webu mohou k vývojovému prostředí daného webu přistupovat p
 [Zvažování optimalizace webového vyhledávače pro váš web](search-engine-optimization-considerations.md)
 
 [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

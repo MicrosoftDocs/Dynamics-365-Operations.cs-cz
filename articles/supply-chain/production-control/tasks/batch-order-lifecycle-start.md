@@ -92,3 +92,6 @@ Předpoklady pro spuštění procedury s jinou sadou dat je uvolněný produkt s
 12. Zavřete stránku.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

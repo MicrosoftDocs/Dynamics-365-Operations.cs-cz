@@ -55,3 +55,6 @@ Tento postup popisuje vytvoření atributu dávky, přiřazení výchozích rozs
 22. Klikněte na položku Uložit.
 23. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

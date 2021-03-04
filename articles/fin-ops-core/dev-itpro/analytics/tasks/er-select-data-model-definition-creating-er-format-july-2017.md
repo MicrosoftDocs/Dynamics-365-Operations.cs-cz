@@ -98,3 +98,6 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Nyní je tak k dispozici k mapování zdrojů dat aplikace pouze jedna kořenová položka. Po uvedení alespoň jednoho modelu mapování jsou mapovány ke zdrojům dat aplikace pouze kořenové položky modelu, které lze vybrat jako definici modelu po přidání formátu ER.   
 5. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

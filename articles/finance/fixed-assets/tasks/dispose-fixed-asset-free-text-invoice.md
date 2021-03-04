@@ -41,3 +41,6 @@ Toto téma vysvětluje vyřazení dlouhodobého majetku pomocí volné faktury.
 10. Zadejte nebo vyberte hodnotu v poli **Dlouhodobý majetek**.
 11. Zvolte **Zaúčtovat**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

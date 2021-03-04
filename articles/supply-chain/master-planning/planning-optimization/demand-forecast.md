@@ -274,3 +274,6 @@ Redukční klíče prognózy musí být přiřazen ke skupině disponibility pol
 ### <a name="reduce-a-forecast-by-transactions"></a>Snížení prognózy podle transakcí
 
 Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamické období** jako metodu pro snížení požadavků prognózy, můžete určit, které transakce sníží prognózu. Na stránce **Skupiny krytí** na záložce s náhledem **Jiné** v poli **Snížit prognózu podle** vyberte **Všechny transakce**, pokud mají všechny transakce snížit prognózu, nebo **Objednávky** , pokud mají prognózu snížit pouze prodejní objednávky.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

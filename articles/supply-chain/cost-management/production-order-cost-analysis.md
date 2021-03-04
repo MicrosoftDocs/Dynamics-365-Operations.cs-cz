@@ -65,3 +65,6 @@ Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

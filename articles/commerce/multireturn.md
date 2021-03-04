@@ -54,3 +54,6 @@ Když jsou zvoleny objednávky, zobrazí se seznam všech vratných produktů na
 
 Pokud je objednávka plně vrácena, částka daní vrácená zákazníkovi se bude rovnat částce původně účtované daně.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

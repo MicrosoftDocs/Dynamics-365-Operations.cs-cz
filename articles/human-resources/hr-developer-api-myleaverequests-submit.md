@@ -108,3 +108,5 @@ Při volání rozhraní API pro odesílání provádí aplikace Human Resources 
 
 - [Přehled MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Ověřování](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

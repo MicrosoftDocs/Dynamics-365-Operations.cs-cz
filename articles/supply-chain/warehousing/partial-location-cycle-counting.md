@@ -62,3 +62,6 @@ V tomto příkladu se pro sklad 61 musí započítat pouze číslo položky A000
 ## <a name="additional-resources"></a>Další zdroje
 
 [Cyklická inventura](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

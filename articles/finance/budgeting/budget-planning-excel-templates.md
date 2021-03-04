@@ -130,3 +130,6 @@ Můžete také vytvořit a použít kontingenční tabulky a grafy pro další s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Aplikace Supply Chain Management provádí výpočet následujících typů pře
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

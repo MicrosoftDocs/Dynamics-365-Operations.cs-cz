@@ -101,3 +101,6 @@ Plánováním, sledováním a analýzou případů můžete vytvořit efektivní
 - [Konfigurace správy dokumentů](configure-document-management.md)
 - [Konfigurace a odeslání e-mailu](configure-email.md)
 - [Údaje data a času a časové pásmo](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

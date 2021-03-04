@@ -54,3 +54,6 @@ Tento postup popisuje, jak vytvořit novou knihu dlouhodobého majetku a přidru
     * Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.  
     * Způsob odpisu je možné nastavit podle potřeby pro daňové účely.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

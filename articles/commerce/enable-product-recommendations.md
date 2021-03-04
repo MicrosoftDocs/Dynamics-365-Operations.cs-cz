@@ -114,3 +114,6 @@ Další informace o přizpůsobených doporučení získáte v tématu [Povolen�
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Toto téma vysvětluje, jak vytvořit prodejní smlouvu, která zavazuje jednoho
 11. Vyberte **OK**.
 12. Zavřete stránku. Smlouva je nyní platná. Můžete zahájit propojení smlouvy s objednávkami odběratele protiúčtem vůči potvrzenému cíli.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Deník faktur, který je vytvořen po zaúčtování, nezahrnuje nadřazenou pol
 Je důležité, aby deník faktur nezahrnoval nadřazenou položku ze sady, protože všechny procesy prováděné po zaúčtování faktury jsou založeny na tomto deníku faktur. Pokud například vytvoříte dobropis na kartě **Prodej** v podokně akcí, vytvořený dobropis bude obsahovat položky komponent, ale nebude obsahovat nadřazenou položku.
 
 [![Dobropis obsahující položky komponent, ale ne nadřazenou položku](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

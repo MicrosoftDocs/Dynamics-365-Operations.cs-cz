@@ -299,3 +299,6 @@ Povolení funkcí MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) může vy
 - [Přehled doplňku Elektronická fakturace](e-invoicing-service-overview.md)
 - [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
 - [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

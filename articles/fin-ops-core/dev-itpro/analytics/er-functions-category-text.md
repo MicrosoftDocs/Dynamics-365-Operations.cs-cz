@@ -62,3 +62,6 @@ Textové funkce elektronického výkaznictví (ER) lze použít k provádění o
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Jazyk receptur v elektronickém výkaznictví](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

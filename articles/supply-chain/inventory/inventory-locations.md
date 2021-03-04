@@ -66,3 +66,6 @@ Je možné kopírovat umístění z jednoho skladu do jiného a vytvořit umíst
 --------
 
 [Vytvoření nového rozvržení skladu](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

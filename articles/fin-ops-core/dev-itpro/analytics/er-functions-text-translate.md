@@ -77,3 +77,6 @@ Funkce `TRANSLATE` nahradí vždy jeden znak. Funkce nahradí první znak argume
 ## <a name="additional-resources"></a>Další prostředky
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

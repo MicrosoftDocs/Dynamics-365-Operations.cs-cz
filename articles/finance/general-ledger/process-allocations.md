@@ -44,3 +44,6 @@ Pravidla přidělení hlavní knihy můžete použít pro plány rozpočtu. Při
 > [!NOTE]
 > Nemůžete používat mezipodniková pravidla pro přidělení hlavní knihy v plánu rozpočtu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

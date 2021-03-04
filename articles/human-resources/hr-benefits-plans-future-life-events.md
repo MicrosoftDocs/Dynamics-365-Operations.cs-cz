@@ -46,3 +46,6 @@ V aplikaci Dynamics 365 Human Resources můžete naplánovat budoucí životní 
    | Řádek | Číslo řádku budoucí životní události. |
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

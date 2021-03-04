@@ -180,3 +180,6 @@ Funkce náhledu jsou k dispozici pouze v prostředích **Sandbox**.
 ### <a name="print-performance-reviews"></a>Tisk kontrol výkonnosti
 
 Viz [Tisk shrnutí výkonu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) v plánu Dynamics 365: 2019 release wave 2.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

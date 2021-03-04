@@ -58,3 +58,6 @@ Před zahájením práce změňte kontext země společnosti DEMF z DEU (Německ
 10. Zavřete stránku.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

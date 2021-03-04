@@ -57,3 +57,6 @@ Následující tabulka popisuje pole, která jsou k dispozici na kartě **Správ
 | Pravidlo závažnosti | Vyberte, jak by měla být stanovena závažnost objednávky technické změny. Vyberte *ruční*, pokud se očekává, že uživatel zadá hodnotu do pole **Závažnost**. Výběrem volby *Vypočítat* nechte systém vypočítat hodnotu pole **Závažnost**, když v podokně akcí objednávky technických změn vyberete **Vypočítat závažnost**. V takovém případě systém použije pravidla závažnosti, která jsou definována na stránce **Sada pravidel závažnosti**. Vyberte *Vypočítat automaticky*, aby se hodnota pole **Závažnost** vypočítala automaticky a vyplnila podle sad pravidel závažnosti. |
 | Znovu uvolnit dotčené produkty | Toto pole je použitelné, když znovu vydáváte produkty prostřednictvím příkazu k technické změně. Můžete vybrat, zda mají být v dialogovém okně **Zprávy** navrženy všechny produkty nebo pouze dotčené produkty. |
 | Úrovně kusovníku pro uvolnění | Hloubka úrovně kusovníku, který se má uvolnit. Pokud má kusovník více úrovní (tj. pokud je hlubší) než zde zadaná hodnota, budou uvolněny pouze úrovně do zadané hodnoty. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

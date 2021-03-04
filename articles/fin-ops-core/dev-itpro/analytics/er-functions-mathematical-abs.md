@@ -55,3 +55,6 @@ Výsledná číselná hodnota.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Matematické funkce](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

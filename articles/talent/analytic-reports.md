@@ -88,3 +88,6 @@ Jednou z skvělých funkcí aplikace Power BI je způsob, jakým jsou vzájemně
 ## <a name="export-to-excel"></a>Export do aplikace Excel
 
 Chcete-li zobrazit data sestav v aplikaci Excel, můžete kliknout na nabídku možností (tři tečky) na vizuálním prvku a zvolit **Exportovat podkladová data**. Exportovaná data budou exportována jako filtrovaná s ohledem na uživatelská oprávnění v aplikaci Attract. Další informace naleznete v tématu [Export dat z vizualizací](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

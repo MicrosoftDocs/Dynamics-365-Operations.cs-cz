@@ -62,3 +62,6 @@ Zaměstnanci mohou provádět různé typy registrací spuštění výroby v rá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

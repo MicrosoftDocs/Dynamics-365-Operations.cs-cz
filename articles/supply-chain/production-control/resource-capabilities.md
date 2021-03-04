@@ -58,3 +58,6 @@ Když máte provozní prostředky typu **lidské zdroje**, které jsou přiřaze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

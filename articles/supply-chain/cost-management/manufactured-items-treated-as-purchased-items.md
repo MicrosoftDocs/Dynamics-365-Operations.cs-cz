@@ -42,3 +42,6 @@ Výpočtu lze předejít výběrem příznaku **Zastavit rozpad**, který je vlo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Vlastnosti plánování pracovní doby se používají ke kategorizaci časovýc
 3. Zadejte hodnotu do pole Hodnota.
 4. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

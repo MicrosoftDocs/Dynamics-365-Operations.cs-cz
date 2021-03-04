@@ -367,3 +367,6 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 
 - [Vytvoření konfigurací elektronického výkaznictví (ER)](electronic-reporting-configuration.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

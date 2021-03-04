@@ -49,3 +49,6 @@ Spuštění této procedury vyžaduje, aby nejméně jeden model konfigurace pro
     * Aktivujte verzi modelu výrobku. Pro jeden model produktu je možné současně mít aktivní pouze jeden produkt.  
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

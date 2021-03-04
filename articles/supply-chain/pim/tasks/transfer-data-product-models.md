@@ -37,3 +37,6 @@ Export dat pro model konfigurace produktu vyžaduje, aby alespoň jeden model pr
 5. Klepněte na Exportovat model produktu.
     * Chování při stahování se liší prohlížeč od prohlížeče v závislosti na tom, jak je nastaveno zabezpečení.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

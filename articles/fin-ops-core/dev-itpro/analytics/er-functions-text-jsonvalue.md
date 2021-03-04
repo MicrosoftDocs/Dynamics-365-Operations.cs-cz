@@ -59,3 +59,6 @@ Zdroj dat **JsonField** obsahuje následující data ve formátu JSON: **{"Build
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

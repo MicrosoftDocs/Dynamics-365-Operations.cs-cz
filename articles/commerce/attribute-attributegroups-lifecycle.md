@@ -257,3 +257,6 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 
     > [!NOTE]
     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny produkty.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -251,3 +251,6 @@ Chcete-li zaručit, že budou zadány správné hodnoty pro váš podnik, musít
 ## <a name="see-also"></a>Viz také
 
 Další diskuze naleznete v původním příspěvku blogu [Více o (dynamických) záporných dnech](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

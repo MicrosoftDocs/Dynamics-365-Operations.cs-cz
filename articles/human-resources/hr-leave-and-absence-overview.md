@@ -54,3 +54,6 @@ Zaměstnanci mohou odesílat žádosti o volno a spravovat je v pracovním prost
 [Žádost o volno](hr-employee-self-service-request-time-off.md)
 [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

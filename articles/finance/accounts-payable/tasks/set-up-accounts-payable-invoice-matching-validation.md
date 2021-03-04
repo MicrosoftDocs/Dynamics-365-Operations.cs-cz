@@ -98,3 +98,6 @@ Chcete-li určit tolerance specifické pro dodavatele pro párování součtů f
 
 1. Chcete-li určit tolerance pro jednotlivé dodavatele, kteří přepíší výchozí tolerance, zvolte **Účet dodavatele**.
 2. Zadejte procento odchylky přijatelné pro tohoto dodavatele.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

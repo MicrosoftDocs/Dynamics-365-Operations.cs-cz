@@ -65,3 +65,6 @@ V argumentech logických funkcí můžete použít odkazy na zdroje dat, čísel
 ## <a name="additional-resources"></a>Další zdroje
 
 [Logické funkce](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

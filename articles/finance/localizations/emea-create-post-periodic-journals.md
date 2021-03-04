@@ -48,3 +48,6 @@ Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

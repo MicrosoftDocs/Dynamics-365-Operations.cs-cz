@@ -54,3 +54,6 @@ Tento postup ukazuje, jak přiřadit k uvolněnému produktu a jeho variantám s
 2. Označte v seznamu vybraný řádek.
 3. V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

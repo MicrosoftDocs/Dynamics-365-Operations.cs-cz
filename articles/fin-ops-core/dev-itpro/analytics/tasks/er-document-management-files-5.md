@@ -96,3 +96,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 7. Klepněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že kromě zprávy s fakturou zprávy ve formátu je pro každou přílohu vytvořen jeden soubor. Soubory příloh jsou naplněny komprimovaným výstupem v binárním formátu.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Chcete-li použít filtrování na základě kontextu společnosti ve vlastních
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Použití kontextu společnosti":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -945,3 +945,6 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 ## <a name="additional-resources"></a>Další prostředky
 
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

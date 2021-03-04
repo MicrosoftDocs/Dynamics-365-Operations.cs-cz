@@ -58,3 +58,6 @@ Opětovné přidělení dokončíte tlačítkem **Zpracovat**. Zobrazí se výzv
 > Chcete-li zadat kontext, proč se zobrazují tyto další položky, můžete do mřížky přidat další sloupce, například **ID opětovného přidělení** a **Prodejní objednávka**.
 > 
 > [![Další sloupce na stránce Opětovné přidělení výnosových cen](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

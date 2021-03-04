@@ -153,3 +153,6 @@ Tato karta se podrobněji věnuje dopadu alternativy vybrané dodávky. Pokud kl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

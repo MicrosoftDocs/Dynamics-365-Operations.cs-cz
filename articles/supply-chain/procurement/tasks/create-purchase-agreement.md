@@ -72,3 +72,6 @@ Toto téma vás provede vytvořením nákupní smlouvy. Toto by obvykle provád�
 5. Zvolte **Potvrzení nákupní smlouvy**. Možnost **Náhled/tisk** umožňuje generovat dokument pro nákupní smlouvu, který pak můžete vytisknout nebo odeslat dodavateli. Pokud smlouvu aktualizujete a znovu potvrdíte později, zobrazí se zde obě verze.  
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

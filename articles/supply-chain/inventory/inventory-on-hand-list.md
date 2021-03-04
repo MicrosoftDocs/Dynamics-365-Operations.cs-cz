@@ -146,3 +146,6 @@ Zde je výsledný výstup.
 | IA0001 | 1 | 2 | 2 |
 
 Všimněte si, že nastavení v podokně **Filtry** se vztahuje na podrobnou (neagregovanou) tabulku zásob, která je zobrazena na začátku této sekce. Proto kritérium **Dostupné fyzicky** \| **menší nebo rovno** \| _1_ najde z této tabulky dva řádky (první a třetí řádek, z nichž každý zobrazuje hodnotu **Dostupné fyzicky** _1_). V tomto scénáři však stránka **Seznam na skladě** není nastavena pro zobrazení dimenze **Sklad**. Proto agreguje dva původní řádky do jednoho výsledného řádku, protože oba řádky mají stejné hodnoty ve všech zobrazených rozměrech. Zdá se, že tento řádek porušuje kritérium filtrování, protože hodnota **Dostupné fyzicky** je zobrazena jako _2_. Výsledek je však správný, protože nastavení v podokně **Filtry** se vztahuje na zdrojovou tabulku, nikoli na agregovanou tabulku, která je zobrazena na stránce **Seznam na skladě**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Finanční úřady jsou entity, pro které je třeba vykazovat a platit shromá�
 10. V poli Zaokrouhlení zadejte číslo.
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

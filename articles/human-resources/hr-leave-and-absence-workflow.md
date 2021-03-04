@@ -81,3 +81,6 @@ Tyto příklady ukazují, jak lze pomocí různých datových prvků vytvořit r
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

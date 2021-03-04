@@ -44,3 +44,6 @@ Platná verze kusovníku, bez ohledu na to, zda se jedná o specifický kusovní
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

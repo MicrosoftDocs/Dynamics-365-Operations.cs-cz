@@ -93,3 +93,6 @@ Můžete také používat dvojí úrovně. Pokud pro hodnotu **Použít úrovně
    | **Sazba flexibilního kreditu kuřáka** | Počet flexibilních kreditů pro náklady na zaměstnanecké výhody na základě výpočtu definovaného pro úroveň úrovně pro kuřáky. |
 
 5. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ V modulu Správa majetku můžete vytvořit dokumenty tak, že budou automaticky
 
 4. Vyberte **Přílohy**. Zobrazí se standardní stránka **Zpracování dokumentu** zpracování dokumentu.
 5. Nastavte doklady nebo poznámky, které by měly být připojeny k záznamu dokumentu majetku. Po připojení dokumentů zobrazí pole **Přílohy** počet dokumentů, které souvisejí se záznamem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

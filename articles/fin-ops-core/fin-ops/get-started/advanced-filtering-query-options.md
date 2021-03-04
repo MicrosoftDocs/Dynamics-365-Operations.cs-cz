@@ -242,3 +242,6 @@ Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a n�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

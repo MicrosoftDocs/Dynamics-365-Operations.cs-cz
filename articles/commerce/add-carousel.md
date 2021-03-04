@@ -86,3 +86,6 @@ Chcete-li přidat karuselový modul na novou stránku a nastavit požadované vl
 [Modul bloku obsahu](add-hero-module.md)
 
 [Modul videopřehrávače](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

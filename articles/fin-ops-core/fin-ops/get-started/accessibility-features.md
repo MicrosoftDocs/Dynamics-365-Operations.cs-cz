@@ -97,3 +97,6 @@ V chytrých telefonech a na jiných malých obrazovkách se ovládací prvky a r
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Pokyny pro vývojáře a odběratele k tomu, jak začlenit usnadnění přístupu do svých přizpůsobení
 
 Další informace o osvědčených postupech společnosti Microsoft pro usnadnění přístupu naleznete v tématu [Dostupnost ve formulářích, produktech a ovládacích prvcích](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

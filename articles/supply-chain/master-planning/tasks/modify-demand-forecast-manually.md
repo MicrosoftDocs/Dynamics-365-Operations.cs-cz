@@ -43,3 +43,6 @@ Tento postup popisuje postup úpravy prognózy pro položku. K vytvoření tohot
 1. Klikněte na možnost **Otevřít** v Microsoft Office.
 2. Klikněte na **Upravit prognózy poptávky** v aplikaci Excel. V aplikaci Excel lze přidat, odstranit a upravit řádky prognózy poptávky. Pokud nejsou vidět data v aplikaci Excel, je třeba přihlásit se s aktivní možností "Zůstat přihlášeni", a je nutné důvěřovat datovému spojení.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

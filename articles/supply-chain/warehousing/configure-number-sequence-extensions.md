@@ -92,3 +92,6 @@ Chcete-li vytvořit a upravit posloupnosti čísel, postupujte takto.
     | Kontrolní číslice | Tento typ segmentu přidá kontrolní číslici, což je výpočet modulo 10. (Toto chování odpovídá existující logice pro ID poznávacích značek.) Pro tento typ segmentu je pole **Hodnota** vždy nastaveno na stříšku (*^*) a pole **Délka** na *1*. |
 
 1. Chcete-li zobrazit příklad konečného formátu čísla, prohlédněte si pole **Formát** ve spodní části pevné záložky **Segmenty**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

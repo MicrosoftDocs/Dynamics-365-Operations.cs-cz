@@ -56,3 +56,6 @@ Tato procedura používá ukázkovou společnost USMF.
 10. Klikněte na možnost Doklad.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

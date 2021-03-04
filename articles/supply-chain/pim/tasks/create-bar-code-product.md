@@ -43,3 +43,6 @@ Toto téma ukazuje, jak ručně vytvořit čárový kód pomocí čísla položk
 12. Zvolte **Uložit**.
 13. Zavřete stránku. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

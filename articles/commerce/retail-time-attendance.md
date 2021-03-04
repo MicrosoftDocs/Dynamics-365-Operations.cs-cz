@@ -139,3 +139,6 @@ Uživatelé aplikace Commerce používají workflow pro výpočet, schvalování
 - Registrování absence
 
 Další informace o zpracování registrace času a docházky naleznete v tématu [Zpracování registrací času a docházky](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,5 @@ Pro každou organizaci, která nabízí zaměstnanecké výhody, musíte nakonfi
    | **Výchozí e-mailová adresa odesílatele** | E-mailová adresa, která se použije k odeslání potvrzovacího e-mailu. |
 
 3. Zvolte **Uložit**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

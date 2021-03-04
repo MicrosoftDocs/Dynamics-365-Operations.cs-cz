@@ -40,3 +40,6 @@ Tento postup popisuje nastavení pracovní třídy. Pracovní třídy se použí
     * Pokud vyberete typ umístění, nastaví se omezení s ohledem na to, kde je možné položky umístit poté, co byly vyskladněny. Toto nastavení se používá, když se směrnice umístění pokusí o překlad umístění nebo když pracovník skladu ručně zadá umístění pro položku nabídky mobilního zařízení.  
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

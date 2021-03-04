@@ -170,3 +170,6 @@ Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu**
 ## <a name="additional-resources"></a>Další zdroje
 
 [Hybridní objednávky zákazníka](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

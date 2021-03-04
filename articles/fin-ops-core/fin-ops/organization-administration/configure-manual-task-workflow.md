@@ -381,3 +381,6 @@ Po přiřazení ruční úlohy uživateli musí uživatel danou úlohu zpracovat
 5. Chcete-li uživateli umožnit, aby úlohu postoupil jinému uživateli, zaškrtněte políčko **Delegovat**.
 6. Chcete-li uživateli umožnit, aby úlohu přeřadil jinému uživateli ve frontě pracovních položek, označte pole **Znovu přiřadit**.
 7. Chcete-li uživateli umožnit, aby úlohu přeřadil do fronty pracovních položek, označte pole **Uvolnit**. Jiný uživatel pak může úkol dokončit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

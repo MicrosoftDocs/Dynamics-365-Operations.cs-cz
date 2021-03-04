@@ -117,3 +117,6 @@ Následující dvě ilustrace zobrazují **úlohu plánování v** dialogovém o
 - Na záložce s náhledem **Spustit na pozadí** můžete nastavit dávkovou úlohu pro plánování pořadí v pravidelných intervalech.  
 - Pokud je v několika fondech pracovních příkazů uvedeno pořadí (viz [Fondy pracovních příkazů](../work-orders/work-order-pools.md)), zobrazí se jeden záznam pro každý fond v části **Otevřené fondy rozvrhu údržby**. To je provedeno za účelem optimalizace možností filtrování pro fondy pracovních příkazů.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

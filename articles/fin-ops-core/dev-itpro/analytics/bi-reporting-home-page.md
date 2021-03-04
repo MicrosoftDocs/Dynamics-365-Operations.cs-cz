@@ -89,3 +89,6 @@ Následující sestavy poskytují referenční informace o objektech:
 - [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md)
 - [Dostupné sestavy služby Microsoft SQL Server Reporting Services](SSRS-report.md)
 - [Sestava typů workflow](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

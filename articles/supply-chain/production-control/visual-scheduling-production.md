@@ -160,3 +160,6 @@ Ganttův diagram lze otevřít z následujících stránek.
 
 [Vizuální plánování výroby (ukázkový skript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

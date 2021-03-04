@@ -89,3 +89,6 @@ Všechny položky deníku, které jsou vytvořeny v leasingu majetku, jsou obsa�
 
 > [!NOTE]
 > Deník leasingu majetku nelze vytvořit ručně. Automaticky se vytvoří, když se vytvoří plány leasingu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Horní část následujícího obrázku ukazuje, jak rozhraní ve výchozím nas
 Ve výchozím nastavení se rozhraní pro provádění výrobního provozu automaticky odhlásí, pokud ho nikdo po dobu 12 hodin nepoužívá. Uživatel Supply Chain Management se poté musí znovu přihlásit. Časový limit však můžete prodloužit až na 90 dní.
 
 Chcete-li prodloužit časový limit, přihlaste se k Supply Chain Management a přejděte na **Správa systému \> Uživatelé \> Rozšíření relace**. Zadejte uživatelský účet Supply Chain Management, který se používá pro přihlášení k zařízení, a počet hodin, po které by relace měla zůstat aktivní.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

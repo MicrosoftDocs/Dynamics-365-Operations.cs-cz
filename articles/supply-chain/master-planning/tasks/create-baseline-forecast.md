@@ -82,3 +82,6 @@ Plánovač výroby může vytvořit základní prognózu pomocí modelů prognó
 5. Klikněte na Podrobnosti o řádcích prognózy.
     * Na této stránce můžete zobrazit hodnoty přesnosti, historické poptávky a prognózu. Podle potřeby můžete upravit také prognózu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Interní majetek zahrnuje kolekci základních map tabulek, které pracují spol
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

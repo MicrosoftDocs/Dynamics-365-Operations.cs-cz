@@ -39,3 +39,6 @@ Před použitím konsolidace centra je třeba povolit možnost **Plánování tr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

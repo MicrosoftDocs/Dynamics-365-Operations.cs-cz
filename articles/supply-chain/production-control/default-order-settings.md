@@ -204,3 +204,6 @@ Nastavte možnost ověření takto:
 1. Na kartě **Všeobecné** nastavte **Ověření výchozího množství objednávky** na jednu z následujících hodnot:
     - **Přísný** - Tuto možnost vyberte, chcete-li zajistit, aby všechny hodnoty **Množství standardní objednávky** byly násobkem hodnoty **Násobek** pro každou pevnou záložku (**Nákupní objednávka**, **Zásoby** a **Prodejní objednávka**).
     - **Standardní** - Tuto možnost vyberte, chcete-li použít standardní ověření (které funguje stejně, jako když tato funkce není povolena).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

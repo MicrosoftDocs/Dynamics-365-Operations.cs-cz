@@ -73,3 +73,6 @@ Tato procedura ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty
 
 8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

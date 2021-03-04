@@ -81,3 +81,6 @@ Pro přidanou položku je znovu zaúčtována prodejní objednávka. Celková fa
 [![Stránka transakcí dokladů se zaúčtovanou účetní položkou](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Protože součet výnosů a prodeje je vyšší než $319,50, zaúčtovaný rozdíl je $14,48. Tato částka vymaže zůstatek z clearingového účtu výnosů částečné faktury. Tento zůstatek byl aktualizován v nové účetní položce zaúčtované po opětovném přidělení.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

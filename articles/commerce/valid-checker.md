@@ -78,3 +78,6 @@ Pokud je nalezena chyba ověření, jediným způsobem její opravy je kontaktov
 
 > [!NOTE]
 > V budoucích verzích bude přidáno více pravidel ověření pro podporu více scénářů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

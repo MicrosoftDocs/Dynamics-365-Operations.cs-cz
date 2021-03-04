@@ -48,3 +48,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
     - Podle potřeby přidejte organizace.  
     - Pokud chcete přidat organizaci, klikněte na tlačítko **Upravit** a pak **Vložit** a přidejte organizaci. Po dokončení provádění změn můžete **uložit** návrh a **publikovat** změny.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

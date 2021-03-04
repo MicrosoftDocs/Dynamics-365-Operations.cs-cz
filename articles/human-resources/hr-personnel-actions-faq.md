@@ -92,3 +92,6 @@ Příklad:
 - Datum platnosti v záhlaví akce **Přijmout pracovníka** je datum, které jste zadali do pole **Počáteční datum zaměstnání**.
 - Datum platnosti v záhlaví akce **Převést pracovníka** je datum, které jste zadali do pole **Počáteční datum přiřazení** pro pracovníka.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

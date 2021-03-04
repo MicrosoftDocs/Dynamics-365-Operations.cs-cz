@@ -74,3 +74,6 @@ Tento úkol využívá ukázkovou společnost USMF.
     * Tento účet je debetován, pokud je počáteční marže zaúčtována a kreditován po zaúčtování platby.  
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

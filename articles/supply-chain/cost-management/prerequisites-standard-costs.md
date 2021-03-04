@@ -80,3 +80,6 @@ Odběratelé, kteří chtějí změnit existující položky na skladový model 
 
 - [Jak nastavit standardní náklady pro přímé materiály v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Standardní přímé mzdové náklady v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Chcete-li deaktivovat soubor přepisu CSS na vašem webu, postupujte následovn�
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

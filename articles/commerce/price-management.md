@@ -240,3 +240,6 @@ Cenový modul **nepodporuje** následující cenové funkce:
 Cena je jedním z nejdůležitějších faktorů, které kontrolují nákupní rozhodnutí mnoha odběratelů, a mnoho zákazníků porovnává ceny na různých webech, než něco nakoupí. Aby se zajistilo, že budou poskytovat konkurenční ceny, maloobchodníci pozorně sledují své konkurenty a často pořádají promoakce. Chcete-li tedy pomoci těmto prodejcům přilákat zákazníky, je velmi důležité, aby vyhledávání produktů, funkce procházení, seznamy a stránka podrobností o produktu zobrazovalo nejpřesnější ceny.
 
 V nadcházejícím vydání aplikace Commerce bude rozhraní API **GetActivePrices** vracet ceny, které zahrnují jednoduché slevy (například jednořádkové slevy, které nezávisejí na jiných položkách nákupního košíku). Tímto způsobem jsou zobrazené ceny blízké skutečné částce, kterou odběratelé za položky zaplatí. Toto rozhraní API bude zahrnovat všechny typy jednoduchých slev: založené na místu, věrnostní, katalogové a založené na kanálu. Rozhraní API navíc vrátí názvy a informace o platnosti pro použité slevy, takže maloobchodní prodejci mohou poskytnout podrobnější popis ceny a vytvořit pocit naléhavosti, pokud platnost slevy brzy vyprší.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

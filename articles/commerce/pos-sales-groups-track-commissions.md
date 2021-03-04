@@ -88,3 +88,6 @@ POS umožňuje uživatelům konfigurovat mříž tlačítek, které jsou součá
 ## <a name="calculating-commissions"></a>Výpočet provizí
 
 Provize se vypočítávají pro pracovníky v určených prodejních skupinách v době zaúčtování výkazu nebo zaúčtování prodejní objednávky.Částka provize je určena podle podílu zaměstnance na provizi, jak je definováno v prodejní skupině a nastavení výpočtu přidružené provize pro odběratele a produkty v transakci.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Pro položku řádku prodejní objednávky je standardní postup takový, že ot
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

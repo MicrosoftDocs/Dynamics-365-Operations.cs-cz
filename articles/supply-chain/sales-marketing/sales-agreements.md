@@ -113,3 +113,6 @@ Můžete kopírovat finanční dimenze, záhlaví dokladů nebo jednotlivé řá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

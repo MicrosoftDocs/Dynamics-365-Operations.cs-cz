@@ -253,3 +253,6 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 ![Obrázek č. 10](media/am-mobile-10.png)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

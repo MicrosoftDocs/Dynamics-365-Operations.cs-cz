@@ -139,3 +139,6 @@ Po vytvoření stavů životního cyklu pracovního příkazu, které jsou poža
 9. Uložte model životního cyklu pracovních příkazů.
 
 ![Stránka Modely životního cyklu pracovního příkazu](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

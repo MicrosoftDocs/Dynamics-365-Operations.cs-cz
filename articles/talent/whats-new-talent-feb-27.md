@@ -141,3 +141,6 @@ Chcete-li aktualizovat svou stávající šablonu, postupujte takto.
     9. Na stránce **Úloha mapování** vyberte nový sloupec jako zdroj pro vytvoření jiného mapování pro HIERARCHYTYPENAME .
 
         [![Mapování](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

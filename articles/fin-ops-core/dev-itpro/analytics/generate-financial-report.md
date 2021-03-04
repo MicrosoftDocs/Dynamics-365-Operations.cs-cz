@@ -156,3 +156,6 @@ Po spuštění analýzy chybějícího účtu jsou k dispozici následující kl
 [Finanční výkaznictví](financial-reporting-intro.md)
 
 [Rozhraní Návrháře sestav](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

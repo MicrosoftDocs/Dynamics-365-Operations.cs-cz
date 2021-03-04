@@ -82,3 +82,6 @@ Funkce kupón zahrnuje více různých funkcí. Centrály obchodu (HQ) a kanál 
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány Commerce Scale Unit a POS.** V aktualizaci HQ se aktualizují stránky kupónu a slev a modul velkoobchodní ceny je rovněž aktualizován. Pokud je aktualizována pouze jedna z těchto dvou komponent, některé stránky v modulu Commerce nebudou odpovídat datům výpočtu ceny. Při výpočtech slevy tak mohou nastat neočekávané výpočty slevy nebo chyby.
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány Commerce Scale Unit a POS (N-1).** Vzhledem k tomu, že zároveň nemohou být aktualizovány všechny obchody, doporučujeme, abyste provedli aktualizaci HQ před aktualizací maloobchodů. V případě scénáře N-1 nebude nová funkčnosti vztahující se ke kupónům k dispozici v obchodech, které dosud nebyly aktualizovány. Funkce kupónu například zavádí řádky vyloučení. Používáte-li u slevy vyloučené řádky, nebudou použity v obchodě, ve kterém je spuštěna dřívější verze.
 - **HQ se neaktualizuje, ale jsou aktualizovány Commerce Scale Unit a POS (N+1).** Vzhledem k tomu, že aktualizovaný cenový modul v Commerce Scale Unit dokáže zpracovávat zastaralé kódy slev během cenové kalkulace, aktualizace by neměla mít žádný funkční dopad na tento scénář.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

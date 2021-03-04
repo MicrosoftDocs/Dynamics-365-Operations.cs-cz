@@ -87,3 +87,6 @@ Oprava této chyby závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
 + Mapování pravděpodobně neobsahuje zdrojová nebo cílová pole. Pokud v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících polí entity při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Pokud v prostředí Dataverse chybí pole, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byla pole automaticky vložena zpět do mapování.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

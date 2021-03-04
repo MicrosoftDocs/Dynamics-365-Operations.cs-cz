@@ -82,3 +82,6 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
     - Na účet časového rozlišení rabatu bylo provedeno připsání představující budoucí odpovědnost směrem k odběrateli.
     - Z výdajového účtu rabatu byl proveden odpis v rámci uznání vzniklých nákladů v souvislosti s prodejem.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

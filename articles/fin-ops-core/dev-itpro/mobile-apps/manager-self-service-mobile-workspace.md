@@ -97,3 +97,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 1.  Vyberte možnost **Udělit pochvalu**. 
 1. Zadejte text pochvaly, kterou chcete odeslat. 
 1. Vyberte **Hotovo**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

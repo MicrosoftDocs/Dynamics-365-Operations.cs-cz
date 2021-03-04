@@ -37,3 +37,6 @@ Doplněk služby nákladového účetnictví pro Microsoft Dynamics 365 Supply C
 ## <a name="related-resources"></a>Související prostředky
 
 [Začínáme se službou nákladového účetnictví](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

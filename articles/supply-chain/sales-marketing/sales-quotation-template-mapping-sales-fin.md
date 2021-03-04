@@ -143,3 +143,6 @@ Na následujícím obrázku je příklad mapování šablony v integrátoru dat.
 
 [zpeněžení potenciálního zákazníka](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

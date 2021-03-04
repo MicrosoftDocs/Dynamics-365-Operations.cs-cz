@@ -109,3 +109,6 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 [Modul buy boxu](add-buy-box.md)
 
 [Přehled doporučení produktu](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

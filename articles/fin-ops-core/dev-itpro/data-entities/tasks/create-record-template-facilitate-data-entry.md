@@ -43,3 +43,6 @@ Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, kter�
 13. Vyberte **OK**.
 14. Vyberte **Zavřít**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

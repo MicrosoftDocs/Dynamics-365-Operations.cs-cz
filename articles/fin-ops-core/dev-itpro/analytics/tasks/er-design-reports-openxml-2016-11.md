@@ -150,3 +150,6 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 17. V poli **Bankovní účet** zadejte `GBSI OPER`.
 18. Vyberte **OK** a potom znovu **OK**. Zkontrolujte vytvořený list, včetně podrobností na řádcích platby, stejně tak jako součty pro každý kód měny používaný v této platební zprávě.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Toto téma vysvětluje provádění správy neshody na základě existující ob
 2. Vyberte **Zavřít neshodu**.
 3. Vyberte **Ano**.
 4. Zavřete stránky.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

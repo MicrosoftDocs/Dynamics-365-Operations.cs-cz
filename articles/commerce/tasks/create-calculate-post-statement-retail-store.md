@@ -48,3 +48,6 @@ Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování v
 12. Na domovské stránce vyberte **Finance obchodu**.
 13. Vyberte kartu **Publikované výkazy**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

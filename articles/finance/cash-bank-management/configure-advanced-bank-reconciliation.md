@@ -61,3 +61,6 @@ Možnost **Po importu odsouhlasit** automaticky ověří bankovní výpis, vytvo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

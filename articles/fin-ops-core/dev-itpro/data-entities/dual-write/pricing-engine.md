@@ -69,3 +69,6 @@ Při vyplnění polí v Sales platí následující omezení:
 + Nastavení nákladů a přidělení nákladů v Supply Chain Management není replikováno v Sales.
 + Cenová kalkulace nebere v potaz zvláštní maloobchodní ceny, které jsou zadány v poli **Maloobchodní síť** na stránce řádku prodejní objednávky v modulu Supply Chain Management.
 + Slevy, které jsou definovány v oddílu **Správa obchodních náhrad** v modulu Supply Chain Management, se neberou v úvahu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

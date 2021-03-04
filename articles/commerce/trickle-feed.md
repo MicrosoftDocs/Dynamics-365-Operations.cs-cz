@@ -54,3 +54,6 @@ Díky postupnému vytváření objednávek, funkci představené ve verzi 10.0.5
 > Položky nabídky **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat výkazy v dávce** a **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat výkazy v dávce** jsou s touto novou funkcí odebrány.
 
 Typy transakčních a finančních výkazů lze alternativně vytvořit ručně. Přejděte na **Retail a Commerce > Kanály > Obchody** a klikněte na **Výkazy**. Klikněte na **Nový** a pak zvolte typ výkazu, který chcete vytvořit. Pole na stránce **Výkazy** a akce pod položkou **Skupina výkazů** této stránky zobrazí relevantní data a akce založené na vybraném typu výkazu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

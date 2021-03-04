@@ -94,3 +94,6 @@ Pokyny k přidání modulu dárkového poukazu na stránku pokladny a nastavení
 [Podpora pro externí dárkové poukazy](./dev-itpro/gift-card.md)
 
 [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

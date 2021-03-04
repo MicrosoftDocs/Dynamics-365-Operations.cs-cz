@@ -144,3 +144,6 @@ Zbývající metadata, například umístění, se nezobrazí na stránce úloh,
 --------
 
 [Přehled instalace a konfigurace aplikace skladu](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

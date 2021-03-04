@@ -111,3 +111,6 @@ Pro stránku výsledků hledání jsou nezbytné následující součásti:
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

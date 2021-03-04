@@ -175,3 +175,6 @@ Pokud chcete zobrazit seznam možností, které jsou k dispozici v místním nas
 
 \* V místních prostředích zobrazuje PerfTimer pouze výsledky pro klienta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

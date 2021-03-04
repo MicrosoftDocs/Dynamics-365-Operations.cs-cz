@@ -49,3 +49,6 @@ Při vytváření transakcí refundace bude vytvořena faktura dodavatele s čá
 
 5. Chcete-li zobrazit transakce úhrad, které byly vytvořeny, použijte sestavu **Úhrada** (**Pohledávky \> Dotazy a sestavy \> Sestava úhrady**).
 6. V části Závazky vytvořte platbu pro faktury dodavatele, které byly vytvořeny procesem refundace. Informace o tom, jak platit dodavatelům, najdete na stránce [Přehled plateb dodavatele](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

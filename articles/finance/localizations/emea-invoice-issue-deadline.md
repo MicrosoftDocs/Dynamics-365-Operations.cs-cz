@@ -122,3 +122,6 @@ Pokud nemáte přístup ke stránkám, které se používají k dokončení úko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

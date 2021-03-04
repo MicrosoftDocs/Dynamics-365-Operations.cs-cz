@@ -81,3 +81,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Sklady (z aplikace Supply Chain Management do služby Field Service): Sklad
 
 [![Mapování šablony v integraci dat](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

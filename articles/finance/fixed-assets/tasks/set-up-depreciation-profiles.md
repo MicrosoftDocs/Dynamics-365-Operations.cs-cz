@@ -40,3 +40,6 @@ Odpisové profily určují typ a četnost odpisů majetku.   Tento záznam použ
 7. V poli **Frekvence období** vyberte možnost.
 8. Zavřete formulář.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst 
 24. Zavřete stránku.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

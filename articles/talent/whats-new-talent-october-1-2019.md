@@ -84,3 +84,6 @@ V sestavení tohoto týdne se popis zobrazí při výběru úlohy na stránce an
 ### <a name="print-performance-reviews"></a>Tisk kontrol výkonnosti
 
 Zaměstnanci, manažeři a odborníci v oblasti HR budou moci vytisknout hodnocení výkonnosti zaměstnance.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

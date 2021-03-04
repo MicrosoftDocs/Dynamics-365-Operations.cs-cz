@@ -47,3 +47,6 @@ Chcete-li použít automatické odsouhlasení, je nutné zadat plán odsouhlasen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

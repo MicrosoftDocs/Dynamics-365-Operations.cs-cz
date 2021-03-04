@@ -368,3 +368,6 @@ Při odstranění řádku BPM jsou odstraněni také všichni průvodci zázname
 **Odstraněný řádek BPM**
 
 - Přesunutí naplánovaných kanbanových úloh
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

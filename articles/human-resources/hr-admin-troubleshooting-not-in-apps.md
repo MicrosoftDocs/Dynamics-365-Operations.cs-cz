@@ -55,3 +55,6 @@ Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Micr
     ![Tlačítko Synchronizovat](media/get-more.png)
 
     Po dokončení synchronizace se Human Resources se objeví na domovské stránce.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

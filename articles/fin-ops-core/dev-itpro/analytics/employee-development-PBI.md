@@ -68,3 +68,6 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 | Analýza dovedností zaměstnanců  | Certifikace, úroveň, datum úrovně a dovednost                                                                    | Jméno zaměstnance, dovednost |
 | Výkonnost              | Ohodnocení, popis a model ohodnocení                                                                      | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
 | Dovednost                    | Dovednosti, typ dovedností a ohodnocení                                                                              | Analýza dovedností zaměstnanců, upřednostňovaná dovednost |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

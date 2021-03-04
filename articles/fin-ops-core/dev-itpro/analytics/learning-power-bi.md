@@ -62,3 +62,6 @@ Následující data se používají k vyplňování sestav v obsahu **učení** 
 | Pozice         | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Program kurzu, účastníci kurzu |
 | Jméno zaměstnance    | Křestní jméno, příjmení a celé jméno                             | Účastníci kurzu |
 | Titul zaměstnance   | Název a datum služebního věku                                         | Účastníci kurzu |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

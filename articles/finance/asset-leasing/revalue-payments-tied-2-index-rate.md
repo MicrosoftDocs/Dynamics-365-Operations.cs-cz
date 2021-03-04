@@ -68,3 +68,6 @@ Chcete-li zobrazit účinky procesu přecenění leasingu na leasingy IFRS 16, o
 Můžete si prohlédnout nově vygenerovaný plán plateb, který začíná datem přecenění, a zobrazit celkovou aktualizovanou částku platby. Byl také vytvořen nový plán amortizace závazků z leasingu a plán odpisů aktiv, aby odrážely upravený splátkový kalendář.
 
 Položka deníku automaticky zaúčtovala položku deníku úprav na účet kvůli změnám v leasingových splátkách, které souvisejí s přeceněním indexu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

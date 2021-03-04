@@ -77,3 +77,6 @@ Obsah **CustCollectionsBICrossCompany** v Power BI obsahuje sestavu, která sest
 | Upomínky         | <ul><li>Částky kódu výběru</li><li>Podrobnosti částky kódu inkasa</li><li>Částka upomínky podle společnosti</li><li>Částka upomínky podle skupiny odběratelů</li><li>Částka upomínky podle oblasti</li></ul> |
 
 Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden na vizualizaci.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

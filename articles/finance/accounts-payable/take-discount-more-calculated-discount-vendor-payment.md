@@ -51,3 +51,6 @@ Potom April zaúčtuje platební deník. Faktura je plně uhrazena pomocí platb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

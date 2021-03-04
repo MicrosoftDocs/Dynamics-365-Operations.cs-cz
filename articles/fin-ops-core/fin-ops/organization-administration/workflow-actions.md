@@ -141,3 +141,6 @@ Když schvalující požaduje provedení změny v dokumentu, je dokument odeslá
 Stanislav například odeslal vyúčtování výdajů na 12 000 USD a tento dokument je přiřazen Šárce. Pokud bude Šárka požadovat změnu, bude vyúčtování výdajů odesláno zpět Stanislavovi.
 
 Stanislav může vyúčtování výdajů znovu odeslat. Nejprve může provést požadované změny, anebo může znovu odeslat původní verzi vyúčtování výdajů. Jestliže Stanislav vyúčtování výdajů znovu odešle, je odesláno Františkovi ke schválení, protože František je prvním schvalovatelem v procesu schvalování.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

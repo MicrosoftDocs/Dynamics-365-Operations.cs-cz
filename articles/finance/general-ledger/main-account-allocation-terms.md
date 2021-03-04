@@ -70,3 +70,6 @@ Na pevné záložce **Cílový účet hlavní knihy** bude hlavní účet stejn�
 > Můžete volitelně použít tlačítko **Kopírovat** pro duplikování vybrané alokace.
 
 Když je pro hlavní účet vytvořen termín přidělení, systém automaticky zaúčtuje nový voucher, když je zaúčtován voucher, který odpovídá zdrojovým finančním dimenzím v podmínkách přidělení.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

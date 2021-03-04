@@ -111,3 +111,6 @@ Korigované náklady na hodinu a na čas úlohy jsou zaúčtovány do výrobníh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

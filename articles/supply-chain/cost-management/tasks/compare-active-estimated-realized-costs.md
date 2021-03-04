@@ -40,3 +40,6 @@ Tento postup popisuje, jak zobrazit důvody pro vysoké výrobní odchylky pro v
 6. Klikněte na Zobrazit porovnání nákladů.
 7. Klikněte na tlačítko Zavřít.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

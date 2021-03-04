@@ -78,3 +78,6 @@ Otevření Návrháře kusovníku pomocí vztahu předmětu servisu
 
 Vytváříte-li servisní zakázky pro servisní smlouvu automaticky, vztahy předmětů servisu ve smlouvě budou rovněž vytvořeny v servisních zakázkách.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

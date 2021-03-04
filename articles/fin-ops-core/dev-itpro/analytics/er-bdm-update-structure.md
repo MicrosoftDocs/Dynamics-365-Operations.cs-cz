@@ -106,3 +106,6 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

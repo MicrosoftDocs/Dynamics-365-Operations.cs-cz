@@ -41,3 +41,6 @@ Pokud je vybrán řádek nákupního košíku a je vybraná možnost **Zvolené 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Objednávky zákazníka v Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

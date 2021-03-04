@@ -63,3 +63,6 @@ Funkce `DAYS` vrátí kladnou hodnotu, pokud je první datum pozdější než dr
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce data a času](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

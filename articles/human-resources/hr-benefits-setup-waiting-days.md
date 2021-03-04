@@ -42,3 +42,6 @@ Dny čekání v aplikaci Microsoft Dynamics 365 Human Resources představují m�
    | **Den** | Den v měsíci, který má systém nastavit jako datum období čekání do. |
    
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

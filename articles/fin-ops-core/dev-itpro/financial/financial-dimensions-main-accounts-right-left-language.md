@@ -38,3 +38,6 @@ Finanční dimenze a hlavní účty jsou klíčové součásti fázi plánován�
 - Nepoužívejte vybrané oddělovače účtové osnovy ve finanční dimenzi a hodnotách hlavního účtu.
 
 Podle těchto doporučených postupů můžete zajistit konzistentní reprezentaci uživatelem definované objednávky v celém systému.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

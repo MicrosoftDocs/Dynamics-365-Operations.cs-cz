@@ -41,3 +41,6 @@ Tento postup popisuje, jak definovat jednotky řízení nákladů ve hlavní kni
 10. V poli Dimenze zadejte nebo vyberte hodnotu.
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

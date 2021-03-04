@@ -83,3 +83,6 @@ Tato procedura vás provede procesem roční uzávěrky, která zůstatky přev�
 23. Roční uzávěrka se nastaví na výchozí dávková spouštění. Pro dlouhodobé procesy platí pravidlo doporučeného postupu spouštět je v dávkovém režimu. To je obvykle jeden z těchto procesů, což je důvod pro použití v dávkovém režimu ve výchozím nastavení.  
 24. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

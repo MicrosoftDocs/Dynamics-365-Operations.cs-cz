@@ -71,3 +71,6 @@ Následující diagram znázorňuje obchodní procesy vysoké úrovně pro **ř�
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

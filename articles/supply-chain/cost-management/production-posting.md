@@ -57,3 +57,6 @@ V nabídce **Parametry modulu řízení výroby**, lze použít pole **Zaúčtov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

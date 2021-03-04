@@ -61,3 +61,6 @@ Až budete mít alespoň jednu navrženou změnu, zobrazí se další dvě karty
     Stav na stránce se změní na **Změny čekající na schválení**.
 
 Workflow postupuje podle standardního procesu workflow. Schvalovatel je přesměrován na stránku **Dodavatel**, kde může zkontrolovat změny na stránce **Navrhované změny** a poté zvolit **Workflow \> Schválit** pro schválení pracovního postupu. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

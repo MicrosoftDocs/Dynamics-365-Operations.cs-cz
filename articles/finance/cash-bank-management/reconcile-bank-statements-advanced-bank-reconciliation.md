@@ -96,3 +96,6 @@ Transakce bankovního výpisu, které jste označili jako **Nový** v listě od
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

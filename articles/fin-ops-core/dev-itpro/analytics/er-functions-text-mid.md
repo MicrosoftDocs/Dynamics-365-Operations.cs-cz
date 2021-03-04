@@ -69,3 +69,6 @@ Pokud hodnota argumentu `starting position` přesahuje délku zadaného řetězc
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

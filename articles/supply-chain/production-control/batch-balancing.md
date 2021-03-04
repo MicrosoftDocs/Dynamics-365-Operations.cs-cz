@@ -193,3 +193,6 @@ Existuje jedna výjimka z pravidla, že dávkové objednávky lze použít pro v
 Pokud receptura obsahuje aktivní látku produktu, který je povolen pro procesy správy skladu, ale je číslo dávky je pod umístěním v hierarchii rezervací, není dávková objednávka použitelná pro vyvážení dávky.
 
 Dávková objednávka, která není použitelná pro vyvážení dávky, prochází pravidelným cyklem procesu pro dávkové objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

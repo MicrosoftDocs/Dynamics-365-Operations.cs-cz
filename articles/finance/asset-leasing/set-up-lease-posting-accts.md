@@ -84,3 +84,6 @@ Chcete-li přiřadit účty ke knihám a skupinám na leasing, musíte nakonfigu
     > [!NOTE]
     > Vybraný finanční nebo provozní účet bude odepsán po zaúčtování faktury za plánovaný výdaj.
     > **Vyrovnání výdajů na leasing** bude použito jako typ účtování pro transakce s náklady na výkon, ale zaúčtuje se na definovaný **Ofsetový účet** v **řádkách plánu plateb zachraňovacích nákladů** v podrobnostech leasingu nebo formuláři knihy leasingu.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

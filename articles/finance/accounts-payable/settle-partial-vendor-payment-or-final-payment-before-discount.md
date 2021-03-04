@@ -142,3 +142,6 @@ April zaúčtuje deník plateb a zkontroluje transakce dodavatele na stránce **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

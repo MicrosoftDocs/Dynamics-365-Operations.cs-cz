@@ -70,3 +70,6 @@ Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku. Tento pos
 13. Klikněte na **Prodejní objednávky**.
 14. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

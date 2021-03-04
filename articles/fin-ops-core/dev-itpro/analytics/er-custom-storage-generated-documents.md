@@ -175,3 +175,6 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Domovská stránka pro rozšiřitelnost](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

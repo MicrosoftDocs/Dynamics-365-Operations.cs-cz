@@ -46,3 +46,6 @@ Chcete-li vybrat posloupnost záložních nákladů pro klouzavý průměr, post
     - **Aktivní náklady – cena položky** – organizace mohou mít problémy s výkonem v případě, že používají obchodní procesy, v nichž sklad pravidelně vychází záporný, a zároveň je objem transakce vysoký. Toto nastavení může pomoci při zmírnění těchto potíží s výkonem.
 
 ![Parametry skladového účetnictví](media/inventory-accounting-parameters.png "Parametry skladového účetnictví")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

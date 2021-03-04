@@ -43,3 +43,6 @@ Skupiny servisních smluv jsou užitečné při řazení a filtrování servisn�
 ## <a name="related-topics"></a>Související témata
 
 [Přehled servisních smluv](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

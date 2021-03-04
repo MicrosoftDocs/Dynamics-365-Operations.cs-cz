@@ -854,3 +854,6 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
     - Převodní příkazy a výdej surovin
 
 - Pravidlo konsolidace kontejneru pro balení podle jednotky předpisu má omezení. V případě rezervací potvrzených objednávkou doporučujeme nepoužívat šablony sestavení kontejnerů, kde je povoleno pole **Zabalit podle jednotky přepisu**. V aktuálním návrhu nejsou při vytvoření skladové práce použity směrnice skladového místa. Z tohoto důvodu je při kroku vlny vytváření kontejnerů použita pouze nejnižší jednotka ve skupině klasifikace jednotek (skladová jednotka).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

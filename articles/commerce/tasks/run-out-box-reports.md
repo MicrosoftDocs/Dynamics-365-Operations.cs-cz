@@ -64,3 +64,6 @@ K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT. T
 5. Klikněte na Exportovat.
 6. Klikněte na PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

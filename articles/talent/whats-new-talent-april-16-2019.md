@@ -94,3 +94,6 @@ S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobra
 S aktualizací Platform Update 25 Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

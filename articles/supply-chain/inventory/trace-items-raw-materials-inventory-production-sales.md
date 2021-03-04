@@ -140,3 +140,6 @@ Můžete vygenerovat sestavu **Expedováno odběratelům** k identifikaci množs
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Je možné sledovat souběžné a vedlejší produkty?
 Souběžné produkty lze sledovat, ale není možné sledovat vedlejší produkty, protože k nim nejsou obvykle přiřazeny sledovací dimenze. Když sledujete zboží, budou jakékoli související souběžné produkty zahrnuty do podrobností o sledování. Uzel, který obsahuje souběžný produkt, má v podrobnosti slovo "souběžný produkt". Podrobnosti o souběžném produktu můžete z obrazit také výběrem uzlu v podrobnostech o sledování a kliknutím na pevnou záložku **Výroba**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

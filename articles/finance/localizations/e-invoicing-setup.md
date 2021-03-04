@@ -361,3 +361,6 @@ Podle těchto pokynů spravujte životní cyklus funkce doplňku elektronické f
 
     > [!NOTE]
     > Když vyberete **Ano**, stav konfiguračních verzí se automaticky změní z **Dokončeno** na **Sdílené**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

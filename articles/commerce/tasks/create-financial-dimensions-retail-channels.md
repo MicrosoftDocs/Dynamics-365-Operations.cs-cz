@@ -55,3 +55,6 @@ Tato procedura vás provede vytvořením finanční dimenze kanálu commerce s h
 24. Klikněte na odkaz na vybraném řádku v seznamu.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

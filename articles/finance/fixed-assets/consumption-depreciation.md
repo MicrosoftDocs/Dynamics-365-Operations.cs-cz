@@ -68,3 +68,6 @@ Odpisový plán 31. ledna vypadá takto: odhadované množství × procento × j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

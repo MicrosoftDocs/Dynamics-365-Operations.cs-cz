@@ -113,3 +113,6 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 11. Zavřete stránku. 
 
 Potřebujete-li vyhodnotit mapování modelu pomocí metadat jiné verze aplikace, zaregistrujte jinou připojenou aplikaci, přiřaďte ji k tomuto mapování modelu a ověřte ji proti novým metadatům.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

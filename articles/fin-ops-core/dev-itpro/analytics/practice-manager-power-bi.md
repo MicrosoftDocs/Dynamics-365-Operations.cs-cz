@@ -117,3 +117,6 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Klíčové měření agregace       | Pole               | popis |
 |---------------------------------|---------------------|-------------|
 | Plánované náklady dokončené aktivity | Sum(TotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

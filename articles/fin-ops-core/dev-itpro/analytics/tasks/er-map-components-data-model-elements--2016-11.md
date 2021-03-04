@@ -113,3 +113,6 @@ Každou verzi formátu lze konfigurovat jako dostupnou pro použití od určité
 1. Rozbalte oddíl Kódy ISO zemí/oblastí.
     * Označením konkrétní země/oblasti, ve které lze formát použít, lze omezit přístup ke každému formátu. Pokud je seznam zemí/oblastí pro určitý formát prázdný, lze použít tento formát v jakékoli společnosti. Pokud jsou do tohoto seznamu zemí/oblastí vloženy některé kódy země/oblasti ISO, lze použít tento formát pouze ve společnostech, které mají primární adresu v této zemi/regionu.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

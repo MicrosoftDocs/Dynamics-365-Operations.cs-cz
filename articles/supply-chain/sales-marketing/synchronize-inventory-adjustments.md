@@ -79,3 +79,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Převod zásob (Field Service do Supply Chain Management): Převod zásob
 
 [![Mapování šablony v integraci dat](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

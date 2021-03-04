@@ -60,3 +60,6 @@ Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podř
 ### <a name="platform-update-29-for-finance-and-operations"></a>Aktualizace Platform 29 pro Finance and Operations
 
 Další podrobnosti o aktualizaci Platform 29 pro Finance and Operations získáte v tématu [Funkce náhledu v aktualizaci platformy Dynamics 365 Finance and Operations 29 (říjen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

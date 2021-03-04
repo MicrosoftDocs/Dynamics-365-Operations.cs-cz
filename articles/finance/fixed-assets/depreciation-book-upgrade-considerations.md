@@ -83,3 +83,6 @@ S každým přístupem bude skript pro upgrade dat používat také číselnou �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

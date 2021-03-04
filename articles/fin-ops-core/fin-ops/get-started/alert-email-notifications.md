@@ -50,3 +50,6 @@ Služba odešle e-mailová upozornění pomocí předdefinovaných šablon e-mai
 Následující obrázek zobrazuje strukturu výstražných oznámení při přijetí e-mailem.
 
 [![Výstražná upozornění založená na šabloně pro vytvoření záznamu, změny polí a odstranění šablon](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Modul volby lokality lze přidat do [modulu záhlaví](author-header-module.md) 
 [Modul popisu cesty](add-breadcrumb.md)
 
 [Modul navigační nabídky](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

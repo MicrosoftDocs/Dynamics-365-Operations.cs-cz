@@ -1233,3 +1233,6 @@ Všimněte si, že zápatí generované sestavy neobsahuje název formátu ER, k
 - [Funkce IF](er-functions-logical-if.md)
 - [Funkce ORDERBY](er-functions-list-orderby.md)
 - [Funkce SESSIONNOW](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

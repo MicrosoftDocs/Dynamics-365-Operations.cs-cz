@@ -42,3 +42,6 @@ Například prodejní objednávka má dvě položky: jednu pro doručení a druh
 ### <a name="issue-resolution"></a>Řešení problému
 
 Stav uvolnění se vztahuje pouze na řádky objednávky, kde jsou položky povoleny pro správu skladu. Stav uvolnění proto zůstává *Částečně uvolněno* v tomto scénáři. Společnost Microsoft vyhodnotila tento problém a zjistila, že jde o omezení funkcí. Jako součást procesu dodacího listu a procesu fakturace bylo možné přidat rozšíření pro aktualizaci stavu uvolnění.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Tento postup vás provede vytvořením variant produktu pro základní produkt z
     * Popisy je možné generovat pro všechny vaše varianty na základě kombinace hodnot dimenze produktu. Popisy jsou volitelné.  
 5. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

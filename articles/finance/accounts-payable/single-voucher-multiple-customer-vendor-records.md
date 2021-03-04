@@ -233,3 +233,6 @@ Chcete-li se vyhnout nežádoucím problémům s budoucím vyrovnání pro tuto 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

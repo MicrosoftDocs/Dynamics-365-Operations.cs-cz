@@ -186,3 +186,6 @@ Další informace viz [Možnost Celková částka a Interval výpočtu pro kódy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

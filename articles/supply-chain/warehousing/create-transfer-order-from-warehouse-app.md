@@ -334,3 +334,6 @@ Převodní příkazy se vytváří bez použití funkce **Řízení data dodán�
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Můžu použít registrační značku se zápornými fyzickými zásobami na skladě?
 
 Tato funkce podporuje pouze kladná fyzická množství na skladě. Před přiřazením registračních značek k převodnímu příkazu se ujistěte, že máte kladná fyzická množství na skladě ve skladu a v úrovni stavu zásob.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

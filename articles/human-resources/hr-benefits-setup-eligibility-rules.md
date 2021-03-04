@@ -176,3 +176,6 @@ Programy jsou sadou plánů zaměstnaneckých výhod, které sdílejí společno
    | **Pravidla způsobilosti** | Vyberte pravidla způsobilosti, která chcete použít pro program zaměstnaneckých výhod. Pravidla způsobilosti se definují na kartě **Pravidla způsobilosti** na této stránce. |
    
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Analýza času který se používá ke zpracování pracovních položek může 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

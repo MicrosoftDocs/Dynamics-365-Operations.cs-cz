@@ -91,3 +91,6 @@ Aktivita webového obsahu (iframe) vám umožňuje vložit vlastní webové ře�
 
 > [!NOTE]
 > Aktivita Webový obsah je dostupná pouze s doplňkem Komplexní nábor.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

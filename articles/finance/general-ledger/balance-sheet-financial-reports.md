@@ -82,3 +82,6 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

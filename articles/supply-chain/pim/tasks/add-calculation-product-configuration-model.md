@@ -39,3 +39,6 @@ Tento postup popisuje, jak přidat nový výpočet pro model konfigurace produkt
 4. Klikněte na tlačítko Zavřít.
 5. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

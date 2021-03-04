@@ -65,3 +65,6 @@ Počáteční mimořádný odpis se zadává buď jako procento, nebo jako pevn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

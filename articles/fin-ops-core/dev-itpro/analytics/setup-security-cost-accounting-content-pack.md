@@ -63,3 +63,6 @@ Předpokládáme, že vaše organizace chce omezit přístup k datům. Pokud jso
 
 ## <a name="additional-resources"></a>Další prostředky
 Další informace o zabezpečení na úrovni řádku v Power BI naleznete v tématu [Správa zabezpečení na vašem modelu v Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

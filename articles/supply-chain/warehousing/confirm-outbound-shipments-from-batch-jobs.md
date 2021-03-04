@@ -54,3 +54,6 @@ Chcete-li nastavit naplánovanou dávkovou úlohu pro spuštění potvrzení odc
 1. Vyberte **OK** v dialogovém okně **Potvrďte odeslání** pro přidání dávkové úlohy do dávkové fronty.
 
 Další informace viz [Přehled dávkového zpracování](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -192,3 +192,6 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 Další informace o funkcích, které byly v předchozích verzích odebrány nebo zastaraly, naleznete v tématu [Odebrané nebo zastaralé funkce v předchozích verzích](../migration-upgrade/deprecated-features.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

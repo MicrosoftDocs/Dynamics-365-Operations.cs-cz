@@ -45,3 +45,6 @@ Počet kontejnerů, které je potřeba zvážit pro náklad, je vypočítán za 
 -   Chcete-li nastavit hmotnost a objem kontejneru, klikněte na **Řízení skladu** \> **Nastavení** \> **Kontejnery** \> **Typy kontejnerů**.
 
 -   Chcete-li nastavit procento využití kontejneru, klikněte na **Řízení skladu** \> **Nastavení** \> **Kontejnery** \> **Skupiny kontejnerů** a zadejte hodnotu do pole **Procento využití kontejneru**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ Doba životnosti opravy pořizovací ceny je stejná jako u dlouhodobého majetk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

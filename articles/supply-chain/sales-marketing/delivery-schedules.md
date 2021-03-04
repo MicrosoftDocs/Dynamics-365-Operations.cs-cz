@@ -57,3 +57,6 @@ Při potvrzení prodejní nabídky se na výsledných prodejních objednávkách
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

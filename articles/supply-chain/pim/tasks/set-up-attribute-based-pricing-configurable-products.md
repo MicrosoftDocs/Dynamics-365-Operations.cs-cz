@@ -52,3 +52,6 @@ Toto téma vysvětluje, jak nastavit ceny na základě atributů. Jako předpokl
 8. Zadejte hodnotu do pole **Výraz**. Zadejte například typ `50`. 
 9. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

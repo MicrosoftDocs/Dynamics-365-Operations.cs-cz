@@ -69,3 +69,6 @@ K vytvoření tohoto záznamu jsou použita ukázková data společnosti USMF.
 10. Klikněte na položku Uložit.
 11. Zavřete formulář.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

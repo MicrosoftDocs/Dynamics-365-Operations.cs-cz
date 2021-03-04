@@ -145,3 +145,6 @@ Další informace naleznete v následujících tématech:
 - [Duální měna](dual-currency.md)
 - [Přehled DPH](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

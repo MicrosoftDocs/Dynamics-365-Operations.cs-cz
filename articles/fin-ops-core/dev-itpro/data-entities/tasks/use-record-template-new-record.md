@@ -35,3 +35,6 @@ Tento postup používá společnost USMF.
 3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 4. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

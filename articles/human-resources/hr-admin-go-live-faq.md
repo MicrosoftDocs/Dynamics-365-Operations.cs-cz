@@ -99,3 +99,6 @@ Chcete-li nahlásit výpadek produkčního prostředí, postupujte podle postupu
  ## <a name="see-also"></a>Viz také
 
  [Příprava pro ostré nasazení](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

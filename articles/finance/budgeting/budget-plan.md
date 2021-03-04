@@ -247,3 +247,6 @@ C. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

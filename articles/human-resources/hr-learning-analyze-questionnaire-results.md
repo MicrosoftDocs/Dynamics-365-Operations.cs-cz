@@ -69,3 +69,6 @@ Statistiky dotazníku slouží k výpočtu průměrné hodnoty, součtů a proce
 2. Klikněte na možnost Výsledky.
 3. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

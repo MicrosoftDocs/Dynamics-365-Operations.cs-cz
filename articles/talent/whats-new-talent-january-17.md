@@ -45,3 +45,6 @@ S touto změnou je výchozí hodnota pole **Akce požadována do** nyní pro už
 ### <a name="ideas-portal-updated"></a>Aktualizovaný portál Nápady
 Odkazy v aplikaci na odeslání nápadu pro Talent byly aktualizovány na novém portálu Nápady. Všechny nápady zadané na starém portálu byly migrovány, takže jsou všechny vaše skvělé nápady stále k dispozici a ostatní o nich mohou hlasovat.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

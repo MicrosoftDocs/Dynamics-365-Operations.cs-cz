@@ -140,3 +140,6 @@ Můžete upravit rozdíly ve vypočítané hodnotě, a poté potvrdit vypočíta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

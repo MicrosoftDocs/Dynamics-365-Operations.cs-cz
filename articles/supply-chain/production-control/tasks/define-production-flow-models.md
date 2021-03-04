@@ -46,3 +46,6 @@ Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pra
 8. V poli Reakce na nedostatek kapacity vyberte možnost.
     * Možnosti obsahují: Odložit – odložení úplné poptávky plánovací události na příští dostupný produkční den, s dostupnou propustností. Zrušit - ukončení automatického plánování pro plánovací událost a ponechání souvisejících prací nenaplánovaných.   Přidat do požadovaného dne - naplánování požadované práce pro požadované období. Tímto dochází k přetížení buňky pro tento den a vyžaduje kontrolu plánovače a ruční interakci.   Rozdělit na dostupná období - rozdělení různých prací plánovací události na všechny dostupné produkční dny, počínaje prvním dostupným dnem. Množství minimální distribuce je množství kanbanové úlohy. Rozdělení přiřadí minimální množství plánování (kanbanové množství) pro každý den s dostatečnou dostupnou propustností.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

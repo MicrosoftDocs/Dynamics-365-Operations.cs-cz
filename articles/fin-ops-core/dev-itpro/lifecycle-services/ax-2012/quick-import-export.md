@@ -40,3 +40,6 @@ Funkci Rychlý Import / Export jsme přidali, aby měli uživatelé možnost imp
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

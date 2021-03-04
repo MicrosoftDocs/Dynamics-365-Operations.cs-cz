@@ -130,3 +130,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 3. Klikněte na **Procházet** a zvolte soubor **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Klikněte na tlačítko **OK**.
 5. Prohlédněte si vygenerovaný soubor. Všimněte si, že stejný soubor byl importován jako návrh formátu. V tomto okamžiku zvažte atribut ID pro prvek ‘document’ jako volitelný.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

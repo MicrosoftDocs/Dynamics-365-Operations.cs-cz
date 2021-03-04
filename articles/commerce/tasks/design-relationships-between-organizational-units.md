@@ -63,3 +63,6 @@ Tento postup vás provede navrhováním vztahu mezi organizačními jednotkami. 
 29. Klikněte na tlačítko Publikovat.
 30. Klikněte na tlačítko Zavřít.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

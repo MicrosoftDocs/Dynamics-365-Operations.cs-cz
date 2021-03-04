@@ -102,3 +102,6 @@ V modulu Finance and Operations verze 10.0.5 je ukládání záloh šablon ER k 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

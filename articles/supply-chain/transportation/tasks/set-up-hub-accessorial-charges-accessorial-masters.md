@@ -54,3 +54,6 @@ Tento postup popisuje vytvoření hlavní dodatečnou služby pro centrum a pou�
 9. Klikněte na položku Uložit.
 10. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

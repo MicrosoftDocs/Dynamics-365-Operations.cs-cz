@@ -119,3 +119,6 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 23. Klepněte na tlačítko OK.
     * Prohlédněte si vytvořený výstup. Výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

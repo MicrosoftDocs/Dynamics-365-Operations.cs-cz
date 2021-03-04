@@ -114,3 +114,6 @@ Následující témata popisují různé scénáře, kdy lze použít uznání v
 - [Opětovné přidělení uznání výnosů – scénář 2](rev-rec-reallocation-scenario-2.md) – Jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy.
 - [Opětovné přidělení uznání výnosů – scénář 3](rev-rec-reallocation-scenario-3.md) – Do existující fakturované prodejní objednávky je přidán nový řádek.
 - [Opětovné přidělení uznání výnosů – scénář 4](rev-rec-reallocation-scenario-4.md) – Z existující, částečně fakturované prodejní objednávky je odebrán řádek.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

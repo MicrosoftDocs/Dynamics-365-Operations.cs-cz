@@ -102,3 +102,6 @@ Tato procedura ukazuje, jak nastavit názvosloví čísel produktu pro nakonfigu
 43. Zavřete stránku.
 44. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

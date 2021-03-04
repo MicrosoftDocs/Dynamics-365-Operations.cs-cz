@@ -46,3 +46,6 @@ Tato procedura popisuje způsob ukončení výrobní zakázky. K vytvoření to
 1. V podokně akcí klikněte na možnost Spravovat náklady.
 2. Klikněte na Zobrazit porovnání nákladů.
     * Po ukončení výrobní zakázky budete mít můžete porovnat odhadovanou cenu nákladu proti skutečné ceně nákladů, abyste získali přehled o výrobních odchylkách.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -267,3 +267,6 @@ V modulu Správa majetku můžete automaticky aktualizovat všechny změny progn
 2. V dialogovém okně **Aktualizovat prognózu typu práce údržby** na záložce s náhledem **Záznamy k zahrnutí** můžete dle potřeby přidat výběr pro konkrétní typy práce údržby. Vyberte **Filtr** a poté volbou **Vybrat** proveďte výběr.
 3. Na záložce s náhledem **Spustit na pozadí** můžete dle potřeby nastavit automatickou aktualizaci jako dávkovou úlohu.
 4. Kliknutím na tlačítko **OK** spustíte aktualizaci prognózy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

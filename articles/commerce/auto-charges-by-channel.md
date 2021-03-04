@@ -128,3 +128,6 @@ Výběrem **Možnosti transakce \> Náklady \> Správa nákladů** v aplikaci PO
 [Omnikanálové rozšířené automatické náklady](omni-auto-charges.md)
 
 [Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

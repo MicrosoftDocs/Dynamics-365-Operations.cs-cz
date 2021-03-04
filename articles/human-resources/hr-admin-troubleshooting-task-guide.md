@@ -63,3 +63,6 @@ Postupujte podle těchto kroků k opětovnému přehrání průvodce záznamem �
 2. Zvolte **Otevřít z LCS**.
 3. Vyberte knihovnu a BPM uzel, který má uloženého průvodce záznamem úloh.
 4. Otevřete průvodce záznamem úloh.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

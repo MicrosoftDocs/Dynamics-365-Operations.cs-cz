@@ -118,3 +118,6 @@ Vyberte výchozí účty na stránce **Výchozí nastavení účtu**, kterou lze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

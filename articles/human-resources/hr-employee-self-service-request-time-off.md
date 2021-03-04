@@ -62,3 +62,6 @@ Při aktualizaci existujícího požadavku o volno můžete přidat přílohu. M
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 8. Klikněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že nově vytvořený soubor aplikace Excel obsahuje stejný počet sloupců, které byly vybrány pro finanční dimenze. Záhlaví sestavy v těchto sloupcích představuje názvy finančních dimenzí. Řádky transakce v těchto sloupcích představují finančních dimenze. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Každé pravidlo přidělení má čtyři komponenty: obecné údaje, zdroj, cí
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

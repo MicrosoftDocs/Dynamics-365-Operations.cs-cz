@@ -64,3 +64,6 @@ Naplánování automatického úkolu vyčištění historie dávkových úloh Do
 
 8. V případě potřeby změňte všechny ostatní parametry v podnabídce **Spustit na pozadí** a pak vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

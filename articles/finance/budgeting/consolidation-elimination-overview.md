@@ -90,3 +90,6 @@ Data můžete konsolidovat pomocí možnosti **Export zůstatků společnosti**,
 Další informace naleznete v tématu [Přecenění měny ve společnosti konsolidace](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

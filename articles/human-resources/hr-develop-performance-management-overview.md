@@ -163,3 +163,5 @@ Typy zdrojů deníků výkonnosti popisují, odkud pochází deníky výkonnosti
 ### <a name="review-types"></a>Typy kontroly
 
 Typy přezkoumání výkonnosti vám pomáhají s řízením průběhu přezkoumání. Můžete povolit nebo zakázat pracovní postup přezkoumání. Pokud přezkoumání nepoužívá pracovní postup, můžete definovat výchozí stav, který bude používán při vytvoření přezkoumání. Můžete také rozhodnout, zda bude muset přezkoumání podepsat zaměstnanec, manažer nebo oba.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

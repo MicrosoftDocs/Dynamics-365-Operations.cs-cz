@@ -45,3 +45,6 @@ Dny čekání v aplikaci Microsoft Dynamics 365 Human Resources představují mi
    | **Den čekání** | Zvolte datum čekání pro výpočet data čekání. |
 
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

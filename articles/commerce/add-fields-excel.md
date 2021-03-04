@@ -55,3 +55,6 @@ Nové pole a data jsou nyní k dispozici pro úpravy v aplikaci Excel.
 [Úprava finančních dimenzí pro maloobchodní transakce](edit-financial-dim.md)
 
 [Vytvoření sešitu aplikace Excel pro úpravu maloobchodních transakcí](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

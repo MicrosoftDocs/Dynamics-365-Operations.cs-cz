@@ -73,3 +73,6 @@ Chcete-li obohatit stránku produktu, postupujte podle následujících kroků.
 [Obohacení cílové stránky kategorie](enrich-category-page.md)
 
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

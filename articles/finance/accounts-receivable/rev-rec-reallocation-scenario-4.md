@@ -77,3 +77,6 @@ Když vyberete **Doklad**, deník faktur obsahuje původní účetní položku. 
 Dále otevřete stránku **Všichni odběratelé** (**Pohledávky \> Odběratelé \> Všichni odběratelé**), vyberte odběratele **US\_SI\_0003** a potom vyberte **Transakce**. Stránka **Transakce odběratele** obsahuje pouze původní fakturu (000008) spolu s původní účetní položkou. Protože je možnost **Zaúčtovat opravy faktur do pohledávek při opětovném přidělení** na stránce **Parametry hlavní knihy** nastavena na **Ne**, aktualizuje se pouze hlavní kniha. Proto se nezobrazují stornovací a aktualizované účetní položky. Všimněte si, že jsou zobrazeny transakce úprav výnosů, které byly vytvořeny ve [scénáři 3](rev-rec-reallocation-scenario-3.md).
 
 [![Původní účetní položka na stránce Transakce odběratele](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

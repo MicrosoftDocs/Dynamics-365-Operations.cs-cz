@@ -60,3 +60,6 @@ Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, 
 21. Zadejte hodnotu do pole Předmět.
 22. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

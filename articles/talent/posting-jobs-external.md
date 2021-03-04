@@ -102,3 +102,6 @@ Pokud máte problémy s publikováním pracovního místa na Broadbean, vyzkouš
 [Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract](./creating-jobs-attract.md)
 
 [Povolení integrace služby Broadbean v aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Spuštěním mapování vytvářeném modelu pro testovací účely zobrazíte, 
     * Vyberte tlačítko Procházet a vyberte soubor Response4.xml.
 16. Vyberte OK.
     * Prohlédněte si generovaný výstup. Typ odezvy nyní byl správně rozpoznán jako rovnající se souboru Response1.xml.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

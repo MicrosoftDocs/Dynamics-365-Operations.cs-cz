@@ -79,3 +79,6 @@ ms.locfileid: "4423520"
 3. Rozbalte sekci Neděle.
 4. Vyberte možnost Ano v poli Uzavřeno pro výdej.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

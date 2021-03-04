@@ -44,3 +44,6 @@ V tomto tématu je vysvětleno, jak schválit dodavatele pro určité kategorie 
 13. Vyberte **Ne** v poli **Zdědit dodavatele z nadřazené kategorie:**.
 14. Vyberte **Ano** v poli **Zdědit dodavatele z nadřazené kategorie:**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Toto téma vysvětluje, jak nastavit jednoduchou směrnici umístění. Uvedený
 4. Zadejte hodnotu do pole **Kritéria**.
 5. Vyberte **OK**. Můžete pokračovat v přidávání řádků směrnice a akcí směrnice, dokud nebudete mít pokryty všechny možné scénáře skladu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

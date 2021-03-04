@@ -57,3 +57,6 @@ Další informace o jednotlivých krocích v procesu experimentování najdete v
 
 ## <a name="next-step"></a>Další krok
 [Identifikace hypotézy a určení metriky úspěšnosti experimentu](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

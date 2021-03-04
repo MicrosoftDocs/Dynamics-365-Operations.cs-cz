@@ -40,3 +40,6 @@ Konfigurace **Zobrazení starších dávke v rámci skladu** je k dispozici v po
 
 - V části **Správa skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení** nastavte možnost **Použít existující práci** na **Ano** u položek nabídky a vyberte možnost **Upozornit** v poli **Vyskladnění nejstarší dávky**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

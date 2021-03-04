@@ -87,3 +87,6 @@ Následující příklad ukazuje, jak upravit domovskou stránku změnou videa, 
 [Obohacení cílové stránky kategorie](enrich-category-page.md)
 
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

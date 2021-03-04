@@ -671,3 +671,6 @@ Stav verze 32.6.7.2 se změní z **Koncept** na **Dokončeno** a verze se změn�
 - [Stažení konfigurací ER z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
 - [Vytvořit volnou fakturu](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

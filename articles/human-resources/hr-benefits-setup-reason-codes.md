@@ -41,3 +41,6 @@ Aplikace Dynamics 365 Human Resources používá kódy důvodu k vysvětlení d�
    | **Popis** | Popis kódu důvodu. |
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

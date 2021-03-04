@@ -137,3 +137,6 @@ Když teď použijete základní adresu URL kanálu a přejdete na adresu URL st
 [Stavy dokumentu a životního cyklu](document-states-overview.md)
 
 [Práce s publikovacími skupinami](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

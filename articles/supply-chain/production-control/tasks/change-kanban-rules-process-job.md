@@ -49,3 +49,6 @@ Tato procedura se zaměřuje na změnu použitého kanbanového pravidla pro dan
 7. Klepněte na tlačítko Dokončit.
     * Kanbanová úloha používá jiné kanbanové pravidlo. To může být užitečné na úrovni pracovních buněk vytížení.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

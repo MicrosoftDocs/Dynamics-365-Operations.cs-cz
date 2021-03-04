@@ -85,3 +85,6 @@ Chcete-li použít službu [Microsoft Accessibility Insights](https://accessibil
 [Obohacení stránky produktu](enrich-product-page.md)
 
 [Obohacení cílové stránky kategorie](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

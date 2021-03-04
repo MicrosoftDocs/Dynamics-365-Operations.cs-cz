@@ -139,3 +139,6 @@ Odběratel odešle platbu za 95,00 v rámci data platební slevy. Platba je pot�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Správci mohou nechat ověřené uživatele, aby se sami odhlásili ze sběru ud
 ### <a name="custom-extensions"></a>Vlastní rozšíření
 
 Správci mohou vytvářet svá vlastní rozšíření pro správu možnosti odhlášení pro uživatele. Další informace naleznete v tématu [Volání rozhraní API serveru](e-commerce-extensibility/call-retail-server-apis.md) a [Rozšiřitelnost online kanálu](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Tato procedura ukazuje, jak vytvářet a publikovat nový sortiment produktů a 
 1. Klikněte na tlačítko Publikovat.
 2. Klepněte na tlačítko Ano.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

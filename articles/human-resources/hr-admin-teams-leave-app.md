@@ -134,3 +134,6 @@ Chcete-li omezit přístup k aplikaci Human Resources v Microsoft Teams pro vaš
 [Centrum nápovědy Microsoft Teams](https://support.office.com/teams)</br>
 [Správa žádostí o dovolenou v aplikaci Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

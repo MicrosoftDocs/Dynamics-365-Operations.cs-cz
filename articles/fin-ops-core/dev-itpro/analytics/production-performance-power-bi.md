@@ -128,3 +128,6 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Entity                  | ID a jméno                                                   |
 | Zdroje                 | ID prostředku, název prostředku, typ prostředku a skupiny prostředků |
 | Produkty                  | Číslo produktu, název produktu, ID položky a skupina položek         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

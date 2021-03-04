@@ -68,3 +68,6 @@ Tohle téma popisuje použití registru faktur k vytváření faktur. Potom pou�
 13. Vyberte **Transakce**.
 14. Vyberte fakturu, kterou jste vytvořili. Časové rozlišení registru faktur bylo stornováno a zaúčtováno na příslušný účet výdajů.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

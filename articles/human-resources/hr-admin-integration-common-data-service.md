@@ -118,3 +118,6 @@ Chcete-li spustit úplnou synchronizaci entity mezi Human Resources a Common Dat
 [![Spuštění úplné synchronizace](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

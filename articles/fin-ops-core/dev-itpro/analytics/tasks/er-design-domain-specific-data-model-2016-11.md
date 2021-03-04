@@ -187,3 +187,6 @@ Vytváříte nový datový model pro vybranou konfiguraci. Tato verze konfigurac
 65. Klikněte na položku Uložit.
 66. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

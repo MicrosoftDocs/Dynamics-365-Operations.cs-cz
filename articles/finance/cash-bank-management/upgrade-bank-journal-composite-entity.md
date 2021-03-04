@@ -55,3 +55,6 @@ Pomocí následujících kroků přidejte další pole BankTransactionType field
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

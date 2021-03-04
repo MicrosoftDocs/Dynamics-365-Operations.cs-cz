@@ -146,3 +146,6 @@ Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dost
 [Rozhraní REST API Map Bing](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Modul Mapy](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

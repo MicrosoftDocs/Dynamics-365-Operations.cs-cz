@@ -55,3 +55,6 @@ Pomocí tohoto postupu nastavte šablonu, která představuje objekty u zákazn�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

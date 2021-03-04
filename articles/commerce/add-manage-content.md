@@ -57,3 +57,6 @@ Začněte výběrem jednoho z následujících témat.
 [Stavy dokumentu a životního cyklu](document-states-overview.md)
 
 [Povolení a používání sdílení napříč kanály](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

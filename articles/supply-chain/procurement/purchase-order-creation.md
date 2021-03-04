@@ -96,3 +96,6 @@ Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Napříkl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

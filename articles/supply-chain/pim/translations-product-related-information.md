@@ -128,3 +128,6 @@ Překlady informací souvisejících s produktem lze spravovat kdykoli. Při akt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

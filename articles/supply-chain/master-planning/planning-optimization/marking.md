@@ -49,3 +49,6 @@ Když zpracujete plánovanou objednávku, dialogové okno **Potvrzení** poskytu
 - **Ne** - Není použito žádné označení zásob.
 - **Standardní** – Označení zásob se aktualizuje podle doložení. Objednávka požadavku (poptávka) se označí podle objednávky splnění (nabídka). Pokud na objednávce plnění zůstane nějaké množství, není označeno a referenční informace zůstanou prázdné. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny pouze k prodejní objednávce.
 - **Rozšířený** – Označí se objednávka požadavku (poptávka) i objednávka splnění (nabídka) bez ohledu na to, zda v objednávce splnění zůstane nějaké množství nebo ne. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny jak k prodejní objednávce, tak k nákupní objednávce.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

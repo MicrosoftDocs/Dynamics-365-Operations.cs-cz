@@ -59,3 +59,6 @@ Tento postup popisuje použití nákupní smlouvy při vytváření nákupní ob
 3. Zavřete stránku.
 4. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

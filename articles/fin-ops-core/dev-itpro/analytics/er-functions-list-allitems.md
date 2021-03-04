@@ -65,3 +65,6 @@ Pokud zadáte **Vend** jako zdroj dat datového typu *seznam záznamů*, který 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

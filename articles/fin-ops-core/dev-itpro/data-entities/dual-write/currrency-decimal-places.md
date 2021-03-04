@@ -95,3 +95,6 @@ Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přes
 ### <a name="tables-currency-field"></a>tabulky: Pole měny
 
 Počet desetinných míst, která lze konfigurovat pro konkrétní pole měny, je omezen na čtyři.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

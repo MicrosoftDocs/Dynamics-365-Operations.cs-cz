@@ -55,3 +55,6 @@ Základní cena nebo index předplatného byly aktualizovány pomocí zadané ho
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

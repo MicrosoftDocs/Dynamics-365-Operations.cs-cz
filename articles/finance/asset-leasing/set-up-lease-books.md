@@ -53,3 +53,6 @@ Při vytváření leasingové knihy postupujte takto.
     | Krátkodobá prahová hodnota                     | Zadejte počet měsíců, které se mají použít jako prahová hodnota pro krátkodobé leasingy. Pokud je doba leasingu menší nebo rovna počtu měsíců, které zde zadáte, systém klasifikuje leasing jako krátkodobý a použije se odložená splátka. |
     | Prahová hodnota nízké hodnoty                      | Zadejte částku, která se použije jako prahová hodnota pro leasingy aktiv s nízkou hodnotou. Pokud je reální hodnota majetku menší nebo rovna hodnotě, kterou zde zadáte, systém klasifikuje leasing jako leasing aktiv s nízkou hodnotou a použije se odložená splátka. |
     | Platba dodavateli                            | Tuto možnost nastavte na **Ano**, pokud chcete umožnit účtování leasingových plateb jako fakturu na účet dodavatele, který je uveden u každého leasingu. Po zaúčtování leasingové splátky bude připsána částka na účet dodavatele. Pokud je tato možnost nastavena na **Ne**, bude místo toho hodnota připsána na účet, který je určen pro typ zaúčtování **Leasingová platba** na stránce **Parametry zaúčtování leasingu**. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

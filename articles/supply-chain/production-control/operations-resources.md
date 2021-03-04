@@ -85,3 +85,6 @@ Při definování činnosti, například operace postupu nebo hodinové prognóz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

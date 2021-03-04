@@ -109,3 +109,6 @@ Jak je popsáno v předchozí části, můžete při vytvoření skupiny přidat
 
 Chcete-li vybraný pracovní příkaz odebrat z fondu pracovních příkazů, vyberte v kroku 3 možnost **Odebrat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

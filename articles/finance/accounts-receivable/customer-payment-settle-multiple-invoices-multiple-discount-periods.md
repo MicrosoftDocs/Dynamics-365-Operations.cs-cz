@@ -101,3 +101,6 @@ Arnold informace může zobrazit na stránce **Transakce odběratele**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Následující obrázek znázorňuje kartu **Seznamy úkolů**.
 [Vytvoření seznamů úkolů a přidání úkolů](task-mgmt-create-lists.md)
 
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Po zrušení nákupních objednávek, které byly ve stavu *Potvrzeno* se zruše
 
 K tomuto problému dochází pouze u nákupních objednávek, které podléhají správě změn. Dochází k tomu, protože zrušení je považováno za změnu, kterou je nutné schválit. Schválení může být provedeno automaticky systémem. Proto je procesem odeslání zrušené nákupní objednávky do pracovního postupu schválení, aby mohla přejít do stavu *Schváleno*. V tomto okamžiku se nákupní objednávka již nebude zobrazovat v seznamu konceptů nákupních objednávek v pracovním prostoru **Příprava nákupní objednávky**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

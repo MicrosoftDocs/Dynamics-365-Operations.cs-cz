@@ -52,3 +52,6 @@ Tento postup se zaměřuje na přípravu zpracování kanbanové úlohy, když n
 6. Klepněte na Připravit.
     * Všimněte si, že ikona ve stavu úlohy označuje, že úloha je nyní připravena.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

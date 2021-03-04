@@ -70,3 +70,6 @@ Tato procedura vás provede definování věrnostního schématu. Věrnostní sc
 27. Klikněte na položku Uložit.
     * Kdykoli změníte kanály pro věrnostní schéma, musíte zahájit akci Zpracovat věrnostní schémata. Tímto způsobem budou kanály aktualizovány pomocí věrnostních schémat.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Tlačítko **Přidělení výnosové ceny** je stále k dispozici, abyste mohli 
 Očekávaný plán uznání výnosů je odstraněn a nahrazen konečným plánem uznání výnosů. Podrobnosti plánu výnosů jsou udržovány pro každý řádek prodejní objednávky a používají se k uvolnění odložených výnosů do skutečných výnosů, jakmile jsou splněny smluvní závazky.
 
 [![Konečný plán uznání výnosů](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

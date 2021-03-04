@@ -599,3 +599,6 @@ Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupc
 [Definice řádku v návrháři finanční sestavy](row-definitions-financial-reporting.md)
 
 [Rozšířené možnosti formátování ve finančním výkaznictví](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

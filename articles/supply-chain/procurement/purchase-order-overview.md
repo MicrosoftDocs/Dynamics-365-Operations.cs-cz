@@ -92,3 +92,6 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

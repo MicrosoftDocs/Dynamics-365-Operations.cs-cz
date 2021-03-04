@@ -37,3 +37,6 @@ Tato procedura ukazuje, jak konfigurovat nastavení funkce profilu prodejny vzta
 4. Poté vyberte možnost v poli Požadavek na výběr prodejního zástupce.
 5. Vyberte možnost Ano v poli Vyžadovat prodejního zástupce.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

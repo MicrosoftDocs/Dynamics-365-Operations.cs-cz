@@ -50,3 +50,6 @@ Dále je nutné dokončit průvodce záznamem úloh[Vytvoření požadovaných k
 | Titul                  | Název souboru |
 |------------------------|-----------|
 | Konfigurace modelu ER | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

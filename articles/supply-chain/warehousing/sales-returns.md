@@ -331,3 +331,6 @@ V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

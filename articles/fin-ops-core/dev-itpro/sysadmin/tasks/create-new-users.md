@@ -55,3 +55,6 @@ Uživatelé, kteří jsou externí vůči klientovi, do kterého bylo prostřed�
 4. Vybrat **Importovat uživatele**.
 5. Vyberte **Zavřít**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

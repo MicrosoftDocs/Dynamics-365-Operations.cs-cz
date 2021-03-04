@@ -49,3 +49,6 @@ Pro mapování stavu přepravy na stav přepravce postupujte takto:
 1. Vyberte kód stavu přepravy, který má být mapován na kód vybraného dopravce.
 1. Zadejte externí kód, který používá dopravce.
 1. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

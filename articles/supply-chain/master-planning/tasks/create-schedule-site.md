@@ -56,3 +56,6 @@ Tento postup popisuje způsob plánování výrobních zakázek, které nebyly d
 4. Klepněte na Kusovníky.
     * Na této stránce se zobrazí odhad spotřeby materiálu pro operace ve výrobní zakázce, a aktuální dostupné zásoby.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

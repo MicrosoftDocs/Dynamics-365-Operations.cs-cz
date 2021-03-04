@@ -83,3 +83,6 @@ Místo toho je třeba hodnotu ovládacího prvku vyhledávání vymazat, otevř�
 Po použití filtru (viz následující obrázek) může uživatel najít a vybrat řádek jako obvykle.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

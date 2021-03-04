@@ -64,3 +64,6 @@ Na panelu aplikace může uživatel vybrat některou operaci. V závislosti na s
 - **Upravit** – umožňuje uživatelům provádět změny ve vybrané objednávce odběratele.
 
 - **Vydat** – spustí tok vydání, který uživateli umožňuje vybrat produkty, které mají být vydány, a vytvoří prodejní transakci výdeje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

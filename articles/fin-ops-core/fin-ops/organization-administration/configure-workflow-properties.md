@@ -179,3 +179,6 @@ Chcete-li zadat komentáře ke změnám provedeným u tohoto workflowu, proveďt
 2. V poli **Zadat komentáře k workflowu** zadejte své poznámky.
 3. Zkontrolujte své komentáře. Po přidání komentáře je již nelze upravit.
 4. Kliknutím na **Přidat** přidáte komentáře do oblasti **Historie poznámek**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

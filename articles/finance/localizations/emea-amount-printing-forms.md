@@ -54,3 +54,6 @@ Pro nastavení úplného a krátkého názvu měnových jednotek a podjednotek p
 
 5. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

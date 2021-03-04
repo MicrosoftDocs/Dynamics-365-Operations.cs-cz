@@ -41,3 +41,6 @@ Další informace naleznete v tématu [Nastavení kategorií hlavního účtu](t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

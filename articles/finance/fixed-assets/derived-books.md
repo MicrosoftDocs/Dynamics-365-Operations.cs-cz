@@ -48,3 +48,6 @@ Další informace naleznete v tématu [Zaúčtování pomocí odvozených knih](
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

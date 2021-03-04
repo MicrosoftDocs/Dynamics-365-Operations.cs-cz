@@ -102,3 +102,6 @@ Na kartě **Alokační klíče** lze nastavit **Parametry algoritmu prognózy** 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

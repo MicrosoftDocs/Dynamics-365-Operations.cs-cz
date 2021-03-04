@@ -44,3 +44,6 @@ V tomto tématu je vysvětleno, jak upravit DPH u faktury dodavatele. Pokud pův
 13. Vyberte **OK**.
 14. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

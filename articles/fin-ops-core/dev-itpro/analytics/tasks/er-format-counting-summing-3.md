@@ -132,3 +132,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 77. Klikněte na položku Uložit.
 78. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

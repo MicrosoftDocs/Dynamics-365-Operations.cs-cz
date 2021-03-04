@@ -113,3 +113,6 @@ Další seskupení řádků servisní zakázky do servisních objednávek vychá
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

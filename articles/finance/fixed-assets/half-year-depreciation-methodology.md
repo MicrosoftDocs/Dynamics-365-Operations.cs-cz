@@ -42,3 +42,6 @@ První rok provozu bude uzavřen v prosinci 2020, což znamená, že konec pěti
    [![Plán odpisů pro půlroční způsob odpisů](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Prodloužená období odpisů, která jsou přidána půlročním způsobem, poskytují přesnější rozdělení odpisů. Šestiměsíční způsob představuje rovnoměrnější výdaje na odpisy, což je užitečné pro vykazování zisků a ztrát.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

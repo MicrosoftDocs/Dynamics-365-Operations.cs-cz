@@ -90,3 +90,6 @@ Další informace naleznete v tématu [Zjednodušené zadání zaměstnance a na
 ### <a name="platform-update-29"></a>Aktualizace platformy 29
 
 Další podrobnosti o aktualizaci Platform Update 29 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 for Finance and Operations (říjen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

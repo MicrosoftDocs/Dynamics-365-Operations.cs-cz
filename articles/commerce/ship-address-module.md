@@ -72,3 +72,6 @@ Modul dodací adresy lze přidat pouze do modulu pokladny. Další informace o k
 [Modul podrobností objednávky](order-confirmation-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

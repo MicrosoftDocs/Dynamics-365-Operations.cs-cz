@@ -80,3 +80,6 @@ Dlouhodobý majetek má následující charakteristiky.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

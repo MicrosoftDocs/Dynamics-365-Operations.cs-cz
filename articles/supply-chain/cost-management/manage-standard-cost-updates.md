@@ -49,3 +49,6 @@ V tomto příkladu byla použita dodatečná nákladová verze pro správu aktua
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

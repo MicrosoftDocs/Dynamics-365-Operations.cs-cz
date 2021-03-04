@@ -153,3 +153,6 @@ Informaci o tom, zda lze uvolněný produkt použít jako komponentu nebo díl�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

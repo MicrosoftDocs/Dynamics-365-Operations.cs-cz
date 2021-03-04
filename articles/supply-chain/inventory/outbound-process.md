@@ -85,3 +85,6 @@ Zásoby. které nebyly ještě rezervovány, se zarezervují během generování
 Jakmile byly vyskladněny všechny řádků výdeje na stránce **Registrace výdejky**, přidružená dodávka je dokončena. Poté lze inicializovat proces pro dodací listy prodejní objednávky na základě vyskladněných zásob.
 
 [![Aktualizace odchozích dodávek](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

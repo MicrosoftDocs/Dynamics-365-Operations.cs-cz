@@ -151,3 +151,6 @@ Aktualizované mapování by mělo vypadat jako následující obrázky.
 ![Úkol pracovníci pracovníkovi](./media/WorkerMapping.png)
 
 ![Transformace pole pohlaví](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

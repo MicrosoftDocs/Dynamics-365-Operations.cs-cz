@@ -92,3 +92,6 @@ Chcete-li sledovat stav seznamu úkolů pro všechny úkoly, které vám jsou p�
 [Vytvoření seznamů úkolů a přidání úkolů](task-mgmt-create-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

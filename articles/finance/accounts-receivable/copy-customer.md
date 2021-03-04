@@ -64,3 +64,6 @@ Můžete rovněž kopírovat odběratele pomocí funkce Vyhledávání DIČ, kte
 
 1. Zobrazí se možnost **Kopírovat odběratele**. Ve výchozím nastavení je tato možnost nastavena na **Ne**. Chcete-li kopírovat odběratele do aktuální právnické osoby, nastavte možnost na **Ano**. 
 2. Zvolte **Zvolit**. Vytvoří se nový odběratel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

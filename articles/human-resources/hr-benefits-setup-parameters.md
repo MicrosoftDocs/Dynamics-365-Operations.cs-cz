@@ -68,3 +68,6 @@ Před nastavením plánů zaměstnaneckých výhod v Microsoft Dynamics 365 Huma
 3. Zvolte **Uložit**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

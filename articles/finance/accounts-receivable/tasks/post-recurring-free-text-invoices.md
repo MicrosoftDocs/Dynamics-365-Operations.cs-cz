@@ -46,3 +46,6 @@ Opakované faktury se používají pro pravidelné fakturování odběratelů na
 6. Klikněte na položku Zaúčtovat.
     * Zaúčtujte vybrané faktury.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

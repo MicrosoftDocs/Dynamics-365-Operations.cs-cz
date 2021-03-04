@@ -47,3 +47,6 @@ Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do
 8. Zadejte hodnotu do pole Konsolidační účet.
 9. Zadejte hodnotu do pole Název konsolidačního účtu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

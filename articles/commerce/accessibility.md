@@ -114,3 +114,6 @@ Chcete-li nastavit atribut **Minimální věku** u datového zdroje videa, postu
 [Přidání stránky se zásadami ochrany osobních údajů](add-privacy-page.md)
 
 [Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

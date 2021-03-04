@@ -59,3 +59,6 @@ Tento průvodce úkolem slouží k vytvoření posloupnosti upomínek. Tento úk
 26. Rozbalte pevnou záložku **Poznámka**.
 27. Zadejte text, který se má zobrazit v upomínce pro vybraný kód upomínky. Tento text lze přeložit do několika jazyků pomocí nabídky Překlady nad polem.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

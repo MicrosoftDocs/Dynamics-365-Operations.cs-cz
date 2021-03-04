@@ -91,3 +91,6 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Některé popisky, které jsou uvedeny v předtištěném formuláři šeků, budou zahrnuty do sestavy při jejím vytvoření pro účely testování. Tyto štítky se však nevytisknou během skutečného tisku, protože předtištěný formulář je již obsahuje.  
 15. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

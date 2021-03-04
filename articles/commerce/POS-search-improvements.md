@@ -118,3 +118,6 @@ V nadcházející verzi aplikace Commerce budou maloobchodní prodejci moci nast
 
 Aby se zabránilo neočekávaným problémům s výkonem, je tato konfigurace skryta za testovacím příznakem s názvem **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Chcete-li tedy zobrazit možnost **Výchozí režim vyhledávání odběratelů** nastavující uživatelské rozhraní (UI), měl by maloobchodní prodejce vytvořit lístek podpory pro akceptační testování uživatele a výrobní prostředí. Po obdržení lístku bude tým inženýrů spolupracovat s maloobchodním prodejcem, aby se ujistil, že prodejce provádí testování v nevýrobním prostředí, aby zhodnotil výkonnost a implementoval požadované optimalizace.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

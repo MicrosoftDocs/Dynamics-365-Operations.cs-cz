@@ -209,3 +209,6 @@ V konsolidaci hlavní knihy byla přidána nová možnost pro konsolidaci část
 -  Nyní můžete zvolit, zda chcete použít zúčtovací měnu nebo měnu vykazování ze zdrojové společnosti jako transakční měnu v konsolidační společnosti.
 
 - Částky zúčtovací měny nebo měny vykazování ze zdrojové společnosti budou zkopírovány přímo do částek zúčtovací měny nebo měny vykazování v konsolidační společnosti, pokud je některá z měn stejná. Pokud žádná z měn není stejná, jsou částky zúčtovací měny nebo měny vykazování v konsolidační společnosti vypočteny pomocí směnného kurzu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

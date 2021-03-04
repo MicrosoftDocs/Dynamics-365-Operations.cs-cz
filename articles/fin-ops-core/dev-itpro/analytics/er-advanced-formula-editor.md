@@ -171,3 +171,6 @@ Editor je aktuálně podporován v následujících webových prohlížečích:
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 - [Editor Monaco](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

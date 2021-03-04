@@ -45,3 +45,6 @@ Tato sestava poskytuje snímek následujícího souhrnu v rámci výkonnosti obc
 - Souhrn daně
 - Souhrn přepisů ceny
 - Souhrn slev
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

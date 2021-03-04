@@ -75,3 +75,6 @@ Relace servisní úlohy vytvořená na servisní zakázce je k dispozici na konk
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

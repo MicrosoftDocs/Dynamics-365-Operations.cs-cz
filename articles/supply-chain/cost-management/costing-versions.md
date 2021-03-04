@@ -68,3 +68,6 @@ Záznamy o nákupních cenách pro položky slouží také jako referenční inf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

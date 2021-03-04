@@ -333,3 +333,6 @@ Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zo
 > [!NOTE] 
 > - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarchie seznamu přístupu nepomáhá zabezpečit export dat do aplikace Excel. Z toho vyplývá, že nástroj pro vytváření sestav by měl být použit pouze nákladovými účetními a vedoucími pracovníky, kteří mají úplný přístup k zobrazení dat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

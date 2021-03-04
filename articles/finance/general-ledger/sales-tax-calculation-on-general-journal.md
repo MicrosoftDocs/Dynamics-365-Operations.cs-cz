@@ -157,3 +157,6 @@ Následující tabulka zobrazuje obecné pravidlo.
 | Pohledávky DPH | Záporné              | Účet pohledávek | Záporné (dal)  |
 | Splatná DPH    | Kladné              | Účet závazků    | Záporné (dal)  |
 | Splatná DPH    | Záporné              | Účet závazků    | Kladný (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

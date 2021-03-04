@@ -55,3 +55,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 5. Vyberte **Zavřít**. 
 6. Vyberte požadovanou verzi konfigurace elektronického výkaznictví a výběrem možnosti **Import** ji převeďte do aktuální instance.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

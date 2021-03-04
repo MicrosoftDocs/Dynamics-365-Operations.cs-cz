@@ -56,3 +56,6 @@ Tento úkol vyžaduje výrobní tok s verzí a již vytvořenými aktivitami.
 3. V poli Aktivita zadejte nebo vyberte hodnotu.
 4. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

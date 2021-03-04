@@ -65,3 +65,6 @@ Aby bylo možné spuštění tohoto postupu, musíte mít roli správce systému
 29. Klikněte na tlačítko OK.
 30. Vyberte důvod, proč zaznamenáváte odchod dříve.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

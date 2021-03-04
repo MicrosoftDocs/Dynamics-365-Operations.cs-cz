@@ -53,3 +53,6 @@ Tato změna přidá možnost odstranění do formuláře **Pracovníci bez zamě
 5. Nastavte oprávnění **Odstranit**, které má být uděleno.
 6. Vyberte kartu **nepublikované objekty**.
 7. Zvolte **Publikovat vše**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

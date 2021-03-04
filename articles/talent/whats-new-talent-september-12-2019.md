@@ -104,3 +104,6 @@ Tato verze nyní poskytuje možnost použít kontrolní seznamy pro zaměstnance
 Tato funkce je nyní k dispozici v prostředích izolovaného prostoru. Chcete-li tuto funkci zapnout, přejděte na **Správa systému > Odkazy > Nastavení > Systémové parametry > Funkce náhledu**. Vyberte **Rozšířený formulář pracovníka a navigace**. To povolí tyto změny pro všechny uživatele. Tuto možnost můžete kdykoli vypnout.
 
 Další informace naleznete v tématu [Zjednodušené zadání zaměstnance a navigace](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

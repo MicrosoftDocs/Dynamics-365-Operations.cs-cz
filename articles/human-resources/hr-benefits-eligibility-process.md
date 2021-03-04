@@ -54,3 +54,6 @@ Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody. Vý
 25. Otevřete filtr sloupce Stav.
 26. Seřadit od A do Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

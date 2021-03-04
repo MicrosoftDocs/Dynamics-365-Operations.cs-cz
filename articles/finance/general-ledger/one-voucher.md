@@ -186,3 +186,6 @@ Je-li nutné u pohledávek pro vybrané účty hlavní knihy splatných účtů 
 ### <a name="the-system-allows-it"></a>Systém to umožňuje"
 
 Organizace často používají funkci jednoho dokladu pouze proto, že jim systém umožňuje používat je bez pochopení důsledků.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Simulace ceny ovlivňuje pouze řádek, pro který byla použita, a snižuje cel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

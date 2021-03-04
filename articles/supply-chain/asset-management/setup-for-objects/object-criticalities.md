@@ -62,3 +62,6 @@ Chcete-li nastavit kritičnost, nejprve vytvořte typy kritičnosti, které by m
 - Kritičnost na pracovním příkazu je přepočítána pokaždé, když je v pracovním příkazu přidán nebo odstraněn řádek.
 - Pokud pracovní příkaz obsahuje několik prací pracovního příkazu, v pracovním příkazu je vždy použita nejvyšší kritičnost podle pole **Faktor** na stránce **Typy kritičnosti**.
 - Obecně platí, že kritičnost majetku se může v průběhu období změnit. Kritičnost může být ovlivněna nákupem nového vybavení, rekonstrukcí a tak dále. Zvažte možnost přehodnocením kritičnosti svého majetku v pravidelných intervalech (například jednou za rok nebo každý druhý rok), abyste zajistili, že se vaše definice kritičnosti shodují s aktuálním nastavením výroby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

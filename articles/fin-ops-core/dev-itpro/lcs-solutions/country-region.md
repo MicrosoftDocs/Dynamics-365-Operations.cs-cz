@@ -133,3 +133,6 @@ Další informace naleznete v tématu [Systém nápovědy](../../fin-ops/get-sta
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

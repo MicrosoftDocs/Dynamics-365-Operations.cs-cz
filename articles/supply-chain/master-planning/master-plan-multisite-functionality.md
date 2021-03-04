@@ -52,3 +52,6 @@ Následující témata popisují, jak plánovací modul určuje používaný skl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

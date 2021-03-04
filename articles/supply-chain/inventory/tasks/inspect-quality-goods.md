@@ -51,3 +51,6 @@ Toto téma vysvětluje, jak zpracovat objednávku kvality. Tohoto průvodce mů�
 4. Vyberte **OK**.
 5. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

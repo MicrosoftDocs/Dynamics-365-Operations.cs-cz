@@ -95,3 +95,6 @@ Pokud jste rozsah experimentu definovali jako **úplný** v průvodci **Připoje
 
 ## <a name="next-step"></a>Další krok
 [Náhled a publikování experimentu](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

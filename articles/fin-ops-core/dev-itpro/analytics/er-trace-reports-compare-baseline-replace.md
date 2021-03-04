@@ -207,3 +207,6 @@ Chcete-li importovat nastavení směrného plánu ze souboru XML, který je ulo�
 
 - [Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami](er-trace-reports-compare-baseline.md)
 - [Zdroje záznamníku úloh](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

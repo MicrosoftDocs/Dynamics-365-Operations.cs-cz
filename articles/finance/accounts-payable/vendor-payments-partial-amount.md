@@ -54,3 +54,6 @@ Můžete provést částečnou úhradu, když je částka, která musí být vyr
 
 
 Další informace naleznete v tématu [Přehled plateb dodavatele](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

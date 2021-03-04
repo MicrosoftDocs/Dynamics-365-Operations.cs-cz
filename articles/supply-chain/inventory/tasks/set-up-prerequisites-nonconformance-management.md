@@ -80,3 +80,6 @@ Toto téma použijte pro povolení procesů správy neshod. Neshoda popisuje pos
 4. Zadejte hodnotu do pole **Popis**.
 5. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

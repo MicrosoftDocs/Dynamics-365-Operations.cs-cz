@@ -48,3 +48,6 @@ V pracovním prostoru **Správa funkcí** zapněte následující funkci: **Gene
 Následující obrázek znázorňuje příklad vygenerované sestavy. Sestava ukazuje, že kód vykazování **101** má měnu **EUR**, pokud je pole **Měna DPH** nastaveno na **EUR** pro kód DPH, ke kterému je kód vykazování přiřazen.
 
 ![Příkald sestavy Platba DPH podle kódu](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

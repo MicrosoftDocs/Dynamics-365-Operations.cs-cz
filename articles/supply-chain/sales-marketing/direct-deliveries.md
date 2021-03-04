@@ -53,3 +53,6 @@ Když vytvoříte přímou dodávku, nebudou prodávané položky nikdy fyzicky 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

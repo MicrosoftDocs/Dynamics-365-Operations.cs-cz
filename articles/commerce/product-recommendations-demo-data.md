@@ -90,3 +90,6 @@ Přípona obsahuje datový objekt s názvem 'RecoMockDataset.csv', který vám u
 [Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

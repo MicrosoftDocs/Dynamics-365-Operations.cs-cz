@@ -54,3 +54,6 @@ Chcete-li zobrazit stav **Poslední shoda** u faktur, které nejsou součástí 
 - Hodnota **Stav shody automatického potvrzení** řádku faktury je **Selhalo**.
 - Faktura se používá.
 - Faktura je v systému workflow.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

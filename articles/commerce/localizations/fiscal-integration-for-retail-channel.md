@@ -150,3 +150,6 @@ Následující funkce fiskální integrace je k dispozici také v sadě Retail S
 Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Retail SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
 
 - [Ukázka integrace kontrolní jednotky pro Švédsko (starší)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

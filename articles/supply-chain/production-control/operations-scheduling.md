@@ -84,3 +84,6 @@ Pokud pracujete s hotovými materiály, plánování je závislé také na dostu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

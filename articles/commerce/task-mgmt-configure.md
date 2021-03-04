@@ -111,3 +111,6 @@ Následující obrázek znázorňuje příklad dlaždice **Úkoly** na domovské
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

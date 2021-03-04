@@ -38,3 +38,6 @@ Hlavní kniha nákladového účetnictví představuje celkovou jednotku výkazn
 8. V poli Statistická dimenze zadejte nebo vyberte hodnotu.
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

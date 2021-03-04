@@ -58,3 +58,6 @@ Při seskupení šablon s použitím názvů odpovídajících použití těchto
 ## <a name="related-topics"></a>Související témata
 
 [Kopírování řádků šablon servisu](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

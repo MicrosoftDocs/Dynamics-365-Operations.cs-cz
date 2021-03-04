@@ -54,3 +54,6 @@ Související doklad zobrazí doklad společností protiúčtu při zaúčtován
 3. Označte v seznamu vybraný řádek.
 4. Klikněte na možnost Doklad.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

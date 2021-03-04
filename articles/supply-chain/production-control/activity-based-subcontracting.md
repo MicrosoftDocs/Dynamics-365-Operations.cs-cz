@@ -106,3 +106,6 @@ Supply Chain Management nyní podporuje výpočet kusovníku, který zahrnuje p�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

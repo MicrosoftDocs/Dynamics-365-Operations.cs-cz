@@ -195,3 +195,6 @@ U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-vi
 Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například používáte přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky, ale sloupec se objeví při příštím otevření stránky K tomu dochází, protože nastavení **Zobrazení dimenzí** kontroluje dimenze zásob, které jsou zobrazeny. Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na jednotlivých stránkách.
 
 V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky na stránce, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tuto stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

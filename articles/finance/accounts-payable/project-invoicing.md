@@ -132,3 +132,6 @@ Můžete vytvořit fakturu se zápornou částkou, což bude faktura klasifikova
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

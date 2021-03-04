@@ -65,3 +65,6 @@ Tento postup se zaměřuje na vytvoření receptury, která zahrnuje stejné lá
 5. Klepněte na tlačítko Vybrat.
 6. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

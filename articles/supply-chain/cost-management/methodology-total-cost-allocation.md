@@ -62,3 +62,6 @@ Pole **Přidělení nákladů vedlejšího produktu** na stránce **Vedlejší p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

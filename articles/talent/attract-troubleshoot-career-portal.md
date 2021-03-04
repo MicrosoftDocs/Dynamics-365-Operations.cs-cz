@@ -72,3 +72,5 @@ Přiřaďte roli uživatele Talent týmu pro vztahy s talenty.
 
    1. Přihlaste se na kariérní portál z nového okna prohlížeče.
    2. Požádejte o práci z kariérního portálu. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

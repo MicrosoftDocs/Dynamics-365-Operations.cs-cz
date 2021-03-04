@@ -76,3 +76,6 @@ Dále mějte dále na paměti, že maximální vyrovnání hodnoty fyzických z�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

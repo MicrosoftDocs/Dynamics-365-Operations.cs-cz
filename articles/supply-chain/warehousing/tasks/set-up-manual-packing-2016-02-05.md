@@ -95,3 +95,6 @@ Proces balení umožňuje ověřit a zabalit produkty do kontejnerů. V tomto pr
 8. V poli Hmotnost jednotky zadejte nebo vyberte hodnotu.
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

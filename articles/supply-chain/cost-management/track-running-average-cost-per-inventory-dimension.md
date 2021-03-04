@@ -56,3 +56,6 @@ Průběžná průměrná nákladová cena ve skladu GW a dávce AAA činí 11,20
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

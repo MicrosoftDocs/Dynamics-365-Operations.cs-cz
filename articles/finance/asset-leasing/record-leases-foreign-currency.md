@@ -53,3 +53,6 @@ Když vytvoříte položky deníku odpisů proti leasingu denominovanému v ciz�
 Konečnou částku odpisových výdajů lze vypočítat pomocí mírně odlišného směnného kurzu, takže používaný majetek je plně odepsán jak v účetní měně, tak v měně vykazování.
 
 Pokud byl leasing překlasifikován na **Odložený nájem**, systém automaticky vymaže směnné kurzy účetní měny a měny vykazování, pokud již byly definovány.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

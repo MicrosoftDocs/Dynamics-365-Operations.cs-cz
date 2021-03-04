@@ -123,3 +123,6 @@ Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použí
 [Záznamník úloh](task-recorder.md)
 
 [Vytvořit témata nápovědy ve formátu RTF pomocí Záznamníku úkolů (externí odkaz)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

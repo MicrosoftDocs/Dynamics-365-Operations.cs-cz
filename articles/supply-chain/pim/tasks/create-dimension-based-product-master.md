@@ -42,3 +42,6 @@ Tento postup popisuje, jak vytvořit nový základní produkt pomocí technologi
     * Vyberte technologii konfigurace založené na dimenzích.  
 9. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

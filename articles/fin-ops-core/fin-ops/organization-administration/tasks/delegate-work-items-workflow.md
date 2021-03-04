@@ -60,3 +60,6 @@ Pokud plánujete absenci v kanceláři nebo nejste jinak schopní u pracovních
 8. Do pole **Koncové datum a čas** zadejte datum a čas.
 9. Zaškrtnutím políčka **Povoleno** můžete aktivovat pravidlo delegování. 
 10. Do pole **Komentář** zadejte komentář s vysvětlením, proč delegujete pracovní položky.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

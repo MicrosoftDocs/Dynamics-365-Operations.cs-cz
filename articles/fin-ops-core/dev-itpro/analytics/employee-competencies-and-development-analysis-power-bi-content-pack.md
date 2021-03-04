@@ -69,3 +69,6 @@ Sestavy v balíčku obsahu Kompetence a rozvoj zaměstnance se vyplní pomocí
 | Pracovní síla\_JménoPracovníka             | Křestní jméno, příjmení a celé jméno                                                                       | |
 | PracovníSíla\_TitulPracovníka            | Název a datum služebního věku                                                                                   | |
 | PracovníSíla\_TrendPracovníků             | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

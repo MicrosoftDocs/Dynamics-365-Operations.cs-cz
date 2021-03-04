@@ -99,3 +99,6 @@ Další úkol je vytvořit požadavek na nabídku pro získání nabídek na vá
 8. Vyberte stránku.
 9. Zvolte Dokončeno.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

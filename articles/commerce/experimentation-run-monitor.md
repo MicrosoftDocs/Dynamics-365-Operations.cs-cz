@@ -53,3 +53,6 @@ Pokud budete z nějakého důvodu potřebovat své varianty upravit, postupujte 
 
 ## <a name="next-step"></a>Další krok
 [Povýšení varianty a dokončení experimentu](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

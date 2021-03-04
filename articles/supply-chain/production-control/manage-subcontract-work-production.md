@@ -103,3 +103,6 @@ Obvykle jsou výstupní sklad a umístění subdodavatelské skupiny prostředk�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

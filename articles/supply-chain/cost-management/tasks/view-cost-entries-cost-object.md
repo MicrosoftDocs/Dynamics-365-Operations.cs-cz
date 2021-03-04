@@ -39,3 +39,6 @@ Tento postup popisuje způsob zobrazení záznamů nákladů pro objekt náklad�
 7. Použijte rychlý filtr k filtrování v poli Číslo s hodnotou „p000031“.
     * Pokud jsou položky nákladů prázdné, nastavte počáteční datum na 31. leden 2012 a koncové datum na 31. prosinec 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

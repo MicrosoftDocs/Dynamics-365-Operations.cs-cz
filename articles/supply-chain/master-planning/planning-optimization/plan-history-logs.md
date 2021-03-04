@@ -47,3 +47,6 @@ Kromě toho, že se zobrazuje počáteční čas a stav úloh, můžete zobrazit
 [Použití filtrů v plánu](plan-filters.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

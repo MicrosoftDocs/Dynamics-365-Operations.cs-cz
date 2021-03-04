@@ -210,3 +210,6 @@ Jak je popsáno výše v tomto tématu, atributy **Štítek** a **Popis** každ�
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Funkce elektronického výkaznictví](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

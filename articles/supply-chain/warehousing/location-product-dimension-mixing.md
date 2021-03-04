@@ -239,3 +239,5 @@ Vytvoříte nákupní objednávku, která má tři řádky: dva řádky pro stej
 
 > [!TIP]
 > Tento scénář můžete opakovat, ale tentokrát nastavte **Velikost** - *Ne* na záložce s náhledem **Povolit míchání dimenzí produktu** v **profilu skladového místa** *BULK*. V takovém případě nebude možné dimenze produktů míchat. V tomto případě bude po obdržení nákupní objednávky každá varianta produktu umístěna na nové skladové místo.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

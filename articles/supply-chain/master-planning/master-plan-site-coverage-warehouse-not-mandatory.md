@@ -63,3 +63,6 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

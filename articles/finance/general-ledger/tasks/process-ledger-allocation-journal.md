@@ -44,3 +44,6 @@ Toto téma vysvětluje, jak zpracovat požadavek na přidělení. Použijte str�
 9. Zvolte **Zaúčtovat**.
 10. Zvolte **Zaúčtovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

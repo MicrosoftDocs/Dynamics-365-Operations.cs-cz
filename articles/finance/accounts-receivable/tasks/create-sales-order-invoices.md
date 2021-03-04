@@ -68,3 +68,6 @@ Tento průvodce úkolem popisuje zásady fakturace prodejní objednávky, včetn
 10. Klepněte na možnost **Zrušit**.
 11. Klepněte na tlačítko **Ano**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

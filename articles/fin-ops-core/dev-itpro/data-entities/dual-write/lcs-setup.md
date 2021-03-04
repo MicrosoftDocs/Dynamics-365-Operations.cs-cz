@@ -90,3 +90,6 @@ Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím zp
 
 > [!NOTE]
 > Nelze zrušit propojení prostředí pomocí LCS. Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

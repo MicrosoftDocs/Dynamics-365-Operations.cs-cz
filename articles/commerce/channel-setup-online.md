@@ -134,3 +134,6 @@ Následující obrázek znázorňuje příklad nastavení přiřazení skupiny p
 [Nastavení kanálu kontaktního střediska](channel-setup-callcenter.md)
 
 [Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

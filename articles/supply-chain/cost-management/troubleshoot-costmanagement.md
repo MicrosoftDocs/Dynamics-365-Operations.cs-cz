@@ -62,3 +62,6 @@ Nezapomeňte provést uzávěrku skladu k datu konce odpovídajícího období %
 ## <a name="inventory-aging-report-discrepancies"></a>Nesrovnalosti sestavy stáří zásob
 
 **Sestava stáří zásob** zobrazuje různé hodnoty při zobrazení v různých dimenzích úložiště (například jako pracoviště nebo sklad). Další informace o logice vykazování najdete v tématu [Příklady a logika sestav stáří zásob](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

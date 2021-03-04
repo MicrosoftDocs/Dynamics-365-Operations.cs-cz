@@ -54,3 +54,6 @@ Tato procedura popisuje postup kopírování vedlejších produktů z existujíc
 6. Klikněte na tlačítko OK.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

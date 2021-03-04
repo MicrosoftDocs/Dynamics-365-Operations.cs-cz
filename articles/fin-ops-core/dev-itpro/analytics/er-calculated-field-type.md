@@ -342,3 +342,6 @@ Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS*
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 - [Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

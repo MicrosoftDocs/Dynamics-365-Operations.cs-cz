@@ -113,3 +113,6 @@ Nový plán fixní kompenzace nelze přiřadit zaměstnanci, dokud nebudou defin
 
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

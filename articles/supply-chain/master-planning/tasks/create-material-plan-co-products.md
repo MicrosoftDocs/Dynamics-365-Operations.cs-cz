@@ -111,3 +111,6 @@ Plánovač výroby naplánuje materiálové požadavky na položky, které jsou 
 19. V poli Zakázat všechny procesy plánování vyberte Ne.
 20. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

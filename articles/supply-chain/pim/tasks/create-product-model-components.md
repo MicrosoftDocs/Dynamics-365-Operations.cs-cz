@@ -38,3 +38,6 @@ Modely konfigurace produktu založené na omezeních využívají komponenty jak
 7. Zadejte nějakou hodnotu do pole Popis.
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

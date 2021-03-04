@@ -87,3 +87,6 @@ Chcete-li přidat modul ovládacího prvku Accordion na stránku často kladený
 [Modul karty](add-tab.md)
 
 [Modul textového bloku](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

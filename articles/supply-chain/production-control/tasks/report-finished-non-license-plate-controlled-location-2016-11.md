@@ -62,3 +62,6 @@ Tento průvodce úkolem obsahuje ukázku dokončeného hlášení do skladového
 18. Klepněte na tlačítko Podrobnosti práce.
     * Pokud byla výrobní zakázka ohlášena jako dokončená, žádná práce nebyla pro vyskladnění vytvořena. K tomu dochází, protože jsou definovány zásady práce, které brání generování práce, když je produkt L0101 ohlášen za dokončený v umístění 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

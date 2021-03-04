@@ -41,3 +41,6 @@ Byly přidány nové možnosti pro dovolenou a absenci (parametry **lidských zd
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Akce náboru pracovníků jsou zastavené ve stavu Workflow dokončen
 Byly provedeny změny k nápravě problémů, kdy malý počet workflow skončil se stavem Workflow dokončen Nové workflowy by se nyní měly přesunout do stavu Dokončeno, jakmile skončí workflow. Všechny workflowy ve stavu workflow byl dokončen budou přesunuty do chybového stavu umožňujícího aktualizaci nebo odebrání v případě potřeby. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

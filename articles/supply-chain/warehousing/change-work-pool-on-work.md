@@ -149,3 +149,6 @@ Můžete použít stránku **Podrobnosti o práci** pro zobrazení vytvořené p
 > Když se objeví dialogové okno **Změna fondu práce**, pole **ID fondu práce** může být ve výchozím nastavení prázdné. Pokud je pole prázdné, když vyberete **OK** pro použití změn, odeberete fond práce úplně z práce.
 >
 > Kromě přepínání fondů práce můžete pomocí tohoto postupu přidat fond práce do jakékoli pracovní položky, která ji nemá, nebo odebrat fond práce z jakékoli pracovní položky, která jej nemá.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

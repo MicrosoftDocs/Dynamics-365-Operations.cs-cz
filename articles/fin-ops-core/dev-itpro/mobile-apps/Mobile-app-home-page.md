@@ -151,3 +151,6 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 
 ## <a name="troubleshooting"></a>Řešení potíží
 [Zdroje mobilní platformy](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

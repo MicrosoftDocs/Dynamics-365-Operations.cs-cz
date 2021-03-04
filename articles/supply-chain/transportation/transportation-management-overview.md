@@ -87,3 +87,6 @@ Aplikace Supply Chain Management obsahuje strategii sestavení vytížení, kter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

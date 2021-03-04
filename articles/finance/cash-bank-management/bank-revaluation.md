@@ -88,3 +88,6 @@ Transakce přecenění cizí měny je také rozdělena mezi dimenzemi, které se
 Pokud musíte stornovat transakci přecenění, vyberte tlačítko **Stornovat transakci** v podokně akcí stránky **Přecenění cizí měny**. Nový historický záznam přecenění cizí měny bude vytvořen k udržování historického kontrolního záznamu, kdy bylo přecenění vytvořeno nebo stornováno.
 
 Pokud chcete stornovat několik přecenění, nejprve je nutné stornovat nejnovější přecenění. Poté pokračujte ve stornování staršího přecenění podle data. Poté můžete zpracovat nové přecenění pro období, která jsou stornována.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

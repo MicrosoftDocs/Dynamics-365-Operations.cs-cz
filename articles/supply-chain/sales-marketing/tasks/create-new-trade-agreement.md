@@ -73,3 +73,6 @@ Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novo
 ## <a name="additional-resources"></a>Další prostředky
 ### <a name="community-blogs"></a>Blogy komunity
 - [Prodejní ceny v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

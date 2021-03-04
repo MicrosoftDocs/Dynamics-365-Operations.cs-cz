@@ -52,3 +52,6 @@ Na následujícím snímku obrazovky je uveden příklad stránky **Naplánovan�
 
 ![Obrázek č. 1](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Faktura dodavatele zůstane v nevyřízeném stavu, dokud nepřijde skutečná d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Dále zapněte konfigurační klíč **Správa technických změn** podle těcht
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
 1. Rozbalte uzel **Obchod** a vyberte zaškrtávací políčko **Řízení technických změn**.
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

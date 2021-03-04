@@ -88,3 +88,6 @@ Zadaný kód měny je volitelný. Pokud je definován jako prázdný řetězec, 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Textové funkce](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

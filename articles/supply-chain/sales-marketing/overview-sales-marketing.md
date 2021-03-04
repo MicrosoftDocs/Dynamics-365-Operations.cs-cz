@@ -125,3 +125,6 @@ Proforma faktura je faktura připravená jako odhad skutečných částek faktur
 #### <a name="blogs"></a>Blogy
 
 Přehled procesu prodeje najdete v příspěvku [Jak funguje prodej v aplikaci Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

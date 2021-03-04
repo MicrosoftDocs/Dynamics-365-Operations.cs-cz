@@ -140,3 +140,6 @@ Strategie LIFO najde místo, které obsahuje nejnovéjší datum stárnutí, a p
 1. Všimněte si, že řádek, kde je hodnota **Typ práce** *Výdej*, ukazuje hodnotu **Skadové místo** *FL-001*. Toto místo obsahuje registrační značku, která má nejnovější datum stárnutí (LIFO).
 
 V těchto scénářích jste viděli, jak strategie stárnutí místa směřuje práci k místu zísob, které má nejstarší nebo nejnovější zásoby, v závislosti na vybrané strategii.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Na stránce fotoaparátu po kliknutí na tlačítko fotoaparátu bude toto tlač
 
 Jestliže zaměříte fotoaparátu na čárový kód, udržujte čárový kód zarovnaný mezi čarami pro dosažení nejlepších výsledků. Při úspěšném naskenování čárového kódu bude zpracován výsledek a budete navedeni k dalšímu kroku. Pokud další krok obsahuje jiné vstupní pole s upřednostňovaným vstupním režimem nastaveným na Skenování, stránka fotoaparátu se znovu spustí. Pokud není dalším krokem skenovací pole, stránka kamery se nespustí.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

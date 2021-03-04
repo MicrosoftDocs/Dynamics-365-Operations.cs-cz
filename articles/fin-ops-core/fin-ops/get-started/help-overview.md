@@ -164,3 +164,6 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 | [Komunita Dynamics](https://community.dynamics.com/) | Tento web hostuje blogy, fóra a videa. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Tento web obsahuje hodnocení a informace o prodeji. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Tento web hostuje zdroje školení, sestavy ke stažení a dokumenty whitepaper, a je primárním webem podpory pro držitele plánu služeb. Přístup k některým zdrojům na tomto webu může vyžadovat plán služeb. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 11. Klepněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že pro každou přílohu byl vytvořen jeden uzel XML. Obsah přílohy je naplněna do výstupu XML v textovém formátu MIME (base64).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

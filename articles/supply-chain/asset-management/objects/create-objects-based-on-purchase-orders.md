@@ -70,3 +70,6 @@ Můžete spustit **Inventuru čekajícího majetku** ke kontrole čekajícího m
 3. Tuto úlohu můžete nastavit tak, aby byla spouštěna jako dávková úloha, například jednou denně.
 
 **Upozornění:** Pokud dojde ke změně dat na nákupní objednávce *poté*, co jste vytvořili majetek na základě příslušející položky, tyto změny se na majetku neprojeví.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

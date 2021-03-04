@@ -48,3 +48,6 @@ Tato procedura vás provede procesem vytvoření finančních dimenzí pro regis
 17. Na seznamu vyhledejte a vyberte hodnotu dimenze pro aktualizovaný registr.
 18. Klepněte na tlačítko Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

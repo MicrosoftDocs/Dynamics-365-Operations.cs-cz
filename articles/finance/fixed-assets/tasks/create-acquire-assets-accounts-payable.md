@@ -56,3 +56,6 @@ Tento průvodce úkolem vás provede vytvořením a pořízením dlouhodobého m
 17. Klikněte na odkaz na vybraném řádku v seznamu.
 18. Klikněte na možnost **Zaúčtovat**. Dlouhodobý majetek se vytvoří a pořídí při zaúčtování faktury.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

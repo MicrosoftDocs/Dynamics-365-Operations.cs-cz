@@ -187,3 +187,6 @@ K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

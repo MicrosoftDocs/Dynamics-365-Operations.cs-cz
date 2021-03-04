@@ -39,3 +39,6 @@ Zjistěte, jak vyhledávat dodavatele na základě specifických kritérií. Ten
 6. V poli Země/oblast zadejte hodnotu.
 7. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

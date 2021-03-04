@@ -65,3 +65,6 @@ Tento seznam je poskytnut, aby vám pomohl zvážit tyto odstraněné a zastaral
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -301,3 +301,6 @@ Smazání oddělení mezi **přidělením nákladů** a **zásadami shrnutí ná
 -  [Dimenze prvku nákladů](cost-elements.md)
 -  [Hierarchie dimenzí](dimension-hierarchy.md)
 -  [Výpočet režijních nákladů](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

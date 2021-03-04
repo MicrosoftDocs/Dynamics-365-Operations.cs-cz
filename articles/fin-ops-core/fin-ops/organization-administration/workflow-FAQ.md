@@ -59,3 +59,6 @@ Výchozí hodnota pole **Počet položek workflowu na dávkový úkol** na strá
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co je funkce Rozšířená chyba pracovního postupu?
 Funkce Rozšířená chyba pracovního postupu ve verzi 10.0.13 přidává chybové kódy k rozlišení různých tříd chyb pracovního postupu. Hlášené chybové zprávy budou většinou podobné, s menšími rozdíly, aby byly jasnější.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
