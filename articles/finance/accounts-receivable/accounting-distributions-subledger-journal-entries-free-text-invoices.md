@@ -1,5 +1,5 @@
 ---
-title: Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury
+title: Rozúčtování a položky deníku pro volné faktury
 description: Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách. Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,39 +11,38 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441005"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993183"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a><span data-ttu-id="c14d5-104">Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury</span><span class="sxs-lookup"><span data-stu-id="c14d5-104">Accounting distributions and subledger journal entries for free text invoices</span></span>
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a><span data-ttu-id="eab2c-104">Rozúčtování a položky dílčí hlavní knihy pro volné faktury</span><span class="sxs-lookup"><span data-stu-id="eab2c-104">Accounting distributions and subledger entries for free text invoices</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c14d5-105">Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách.</span><span class="sxs-lookup"><span data-stu-id="c14d5-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="c14d5-106">Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="c14d5-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
+<span data-ttu-id="eab2c-105">Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách.</span><span class="sxs-lookup"><span data-stu-id="eab2c-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="eab2c-106">Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="eab2c-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
 
-<a name="accounting-distributions"></a><span data-ttu-id="c14d5-107">Rozúčtování</span><span class="sxs-lookup"><span data-stu-id="c14d5-107">Accounting distributions</span></span>
+<a name="accounting-distributions"></a><span data-ttu-id="eab2c-107">Rozúčtování</span><span class="sxs-lookup"><span data-stu-id="eab2c-107">Accounting distributions</span></span>
 ------------------------
 
-<span data-ttu-id="c14d5-108">Na stránce Volné faktury můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.</span><span class="sxs-lookup"><span data-stu-id="c14d5-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
+<span data-ttu-id="eab2c-108">Na stránce Volné faktury můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.</span><span class="sxs-lookup"><span data-stu-id="eab2c-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
 
--   <span data-ttu-id="c14d5-109">**Distribuovat částky**—Zobrazení a změna rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky.</span><span class="sxs-lookup"><span data-stu-id="c14d5-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="c14d5-110">Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.</span><span class="sxs-lookup"><span data-stu-id="c14d5-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
-    -   <span data-ttu-id="c14d5-111">Změna částek v záhlaví volných faktur, například náklady nebo měnové zaokrouhlení částky.</span><span class="sxs-lookup"><span data-stu-id="c14d5-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
-    -   <span data-ttu-id="c14d5-112">Změna částek na řádcích volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-112">Change free text invoice line amounts.</span></span>
--   <span data-ttu-id="c14d5-113">**Zobrazit distribuce** – Zobrazení rozúčtování pro všechny řádky v dokumentu.</span><span class="sxs-lookup"><span data-stu-id="c14d5-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="c14d5-114">V tomto zobrazení nelze měnit rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="c14d5-114">You can't change the accounting distributions from this view.</span></span>
-    -   <span data-ttu-id="c14d5-115">Zobrazení záhlaví a částek řádku.</span><span class="sxs-lookup"><span data-stu-id="c14d5-115">View header and line amounts.</span></span>
+-   <span data-ttu-id="eab2c-109">**Distribuovat částky**—Zobrazení a změna rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky.</span><span class="sxs-lookup"><span data-stu-id="eab2c-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="eab2c-110">Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.</span><span class="sxs-lookup"><span data-stu-id="eab2c-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
+    -   <span data-ttu-id="eab2c-111">Změna částek v záhlaví volných faktur, například náklady nebo měnové zaokrouhlení částky.</span><span class="sxs-lookup"><span data-stu-id="eab2c-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
+    -   <span data-ttu-id="eab2c-112">Změna částek na řádcích volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-112">Change free text invoice line amounts.</span></span>
+-   <span data-ttu-id="eab2c-113">**Zobrazit distribuce** – Zobrazení rozúčtování pro všechny řádky v dokumentu.</span><span class="sxs-lookup"><span data-stu-id="eab2c-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="eab2c-114">V tomto zobrazení nelze měnit rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="eab2c-114">You can't change the accounting distributions from this view.</span></span>
+    -   <span data-ttu-id="eab2c-115">Zobrazení záhlaví a částek řádku.</span><span class="sxs-lookup"><span data-stu-id="eab2c-115">View header and line amounts.</span></span>
 
-## <a name="distributing-amounts"></a><span data-ttu-id="c14d5-116">Distribuce částek</span><span class="sxs-lookup"><span data-stu-id="c14d5-116">Distributing amounts</span></span>
-<span data-ttu-id="c14d5-117">Při vkládání volné faktury budou jednotlivé částky rozděleny následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="c14d5-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
+## <a name="distributing-amounts"></a><span data-ttu-id="eab2c-116">Distribuce částek</span><span class="sxs-lookup"><span data-stu-id="eab2c-116">Distributing amounts</span></span>
+<span data-ttu-id="eab2c-117">Při vkládání volné faktury budou jednotlivé částky rozděleny následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="eab2c-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -53,86 +52,86 @@ ms.locfileid: "4441005"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c14d5-118">Typ peněžní částky</span><span class="sxs-lookup"><span data-stu-id="c14d5-118">Type of monetary amount</span></span></th>
-<th><span data-ttu-id="c14d5-119">Odkud se zobrazuje hlavní účet</span><span class="sxs-lookup"><span data-stu-id="c14d5-119">Where the main account is displayed from</span></span></th>
-<th><span data-ttu-id="c14d5-120">Pořadí priority, které určuje, jaká výchozí finanční dimenze je zobrazena</span><span class="sxs-lookup"><span data-stu-id="c14d5-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
+<th><span data-ttu-id="eab2c-118">Typ peněžní částky</span><span class="sxs-lookup"><span data-stu-id="eab2c-118">Type of monetary amount</span></span></th>
+<th><span data-ttu-id="eab2c-119">Odkud se zobrazuje hlavní účet</span><span class="sxs-lookup"><span data-stu-id="eab2c-119">Where the main account is displayed from</span></span></th>
+<th><span data-ttu-id="eab2c-120">Pořadí priority, které určuje, jaká výchozí finanční dimenze je zobrazena</span><span class="sxs-lookup"><span data-stu-id="eab2c-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="c14d5-121">Řádek volné faktury</span><span class="sxs-lookup"><span data-stu-id="c14d5-121">Free text invoice line</span></span></td>
-<td><span data-ttu-id="c14d5-122">Hlavní kniha na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-122">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="eab2c-121">Řádek volné faktury</span><span class="sxs-lookup"><span data-stu-id="eab2c-121">Free text invoice line</span></span></td>
+<td><span data-ttu-id="eab2c-122">Hlavní kniha na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-122">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="c14d5-123">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="c14d5-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="c14d5-124">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-125">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-126">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="c14d5-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="eab2c-123">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="eab2c-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="eab2c-124">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-125">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-126">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="eab2c-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c14d5-127">Řádek volné faktury pro kombinaci čísla dlouhodobého majetku a oceňovacího modelu</span><span class="sxs-lookup"><span data-stu-id="c14d5-127">Free text invoice line for a fixed asset number and value model combination</span></span>
+<td><span data-ttu-id="eab2c-127">Řádek volné faktury pro kombinaci čísla dlouhodobého majetku a oceňovacího modelu</span><span class="sxs-lookup"><span data-stu-id="eab2c-127">Free text invoice line for a fixed asset number and value model combination</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c14d5-128"><strong>Poznámka </strong></span><span class="sxs-lookup"><span data-stu-id="c14d5-128"><strong>Note</strong></span></span></th>
+<th><span data-ttu-id="eab2c-128"><strong>Poznámka </strong></span><span class="sxs-lookup"><span data-stu-id="eab2c-128"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="c14d5-129">Hlavní účet na řádku volné faktury bude účet vyřazení dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="c14d5-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
+<td><span data-ttu-id="eab2c-129">Hlavní účet na řádku volné faktury bude účet vyřazení dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="eab2c-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
 </tr>
 </tbody>
 </table>
 </div></td>
-<td><span data-ttu-id="c14d5-130">Hlavní kniha na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-130">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="eab2c-130">Hlavní kniha na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-130">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="c14d5-131">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-132">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="c14d5-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="eab2c-131">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-132">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="eab2c-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c14d5-133">Částka slevy na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="c14d5-133">Free text invoice discount amount</span></span></td>
-<td><span data-ttu-id="c14d5-134">Pole Hlavní účet pro slevy odběratele na stránce strany Platební slevy.</span><span class="sxs-lookup"><span data-stu-id="c14d5-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
+<td><span data-ttu-id="eab2c-133">Částka slevy na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="eab2c-133">Free text invoice discount amount</span></span></td>
+<td><span data-ttu-id="eab2c-134">Pole Hlavní účet pro slevy odběratele na stránce strany Platební slevy.</span><span class="sxs-lookup"><span data-stu-id="eab2c-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="c14d5-135">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="c14d5-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="c14d5-136">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-137">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-138">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="c14d5-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="eab2c-135">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="eab2c-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="eab2c-136">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-137">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-138">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="eab2c-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c14d5-139">Částka DPH na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="c14d5-139">Free text invoice sales tax amount</span></span></td>
-<td><span data-ttu-id="c14d5-140">Pole Splatná DPH na stránce Skupiny zaúčtování hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="c14d5-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
+<td><span data-ttu-id="eab2c-139">Částka DPH na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="eab2c-139">Free text invoice sales tax amount</span></span></td>
+<td><span data-ttu-id="eab2c-140">Pole Splatná DPH na stránce Skupiny zaúčtování hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="eab2c-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="c14d5-141">Použijte finanční dimenze, které jsou definovány v částce řádku na volné faktuře nebo distribucí pro částky řádku nákladů.</span><span class="sxs-lookup"><span data-stu-id="c14d5-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
-<li><span data-ttu-id="c14d5-142">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-143">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="c14d5-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="eab2c-141">Použijte finanční dimenze, které jsou definovány v částce řádku na volné faktuře nebo distribucí pro částky řádku nákladů.</span><span class="sxs-lookup"><span data-stu-id="eab2c-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
+<li><span data-ttu-id="eab2c-142">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-143">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="eab2c-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c14d5-144">Částka na řádku nákladů na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="c14d5-144">Free text invoice charge line amount</span></span></td>
-<td><span data-ttu-id="c14d5-145">Pole Účet Dal na stránce Kódy nákladů.</span><span class="sxs-lookup"><span data-stu-id="c14d5-145">The Credit account field in the Charges code page.</span></span></td>
+<td><span data-ttu-id="eab2c-144">Částka na řádku nákladů na volné faktuře</span><span class="sxs-lookup"><span data-stu-id="eab2c-144">Free text invoice charge line amount</span></span></td>
+<td><span data-ttu-id="eab2c-145">Pole Účet Dal na stránce Kódy nákladů.</span><span class="sxs-lookup"><span data-stu-id="eab2c-145">The Credit account field in the Charges code page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="c14d5-146">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="c14d5-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="c14d5-147">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-148">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="c14d5-149">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="c14d5-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="eab2c-146">Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</span><span class="sxs-lookup"><span data-stu-id="eab2c-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="eab2c-147">Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-148">Použijte výchozí hodnoty finanční dimenze na řádku volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="eab2c-149">Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</span><span class="sxs-lookup"><span data-stu-id="eab2c-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="distributing-taxes"></a><span data-ttu-id="c14d5-150">Distribuce daní</span><span class="sxs-lookup"><span data-stu-id="c14d5-150">Distributing taxes</span></span>
-<span data-ttu-id="c14d5-151">Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="c14d5-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="c14d5-152">Při výpočtu DPH je třeba ve formuláři Volná faktura provést jeden z následujících úkolů:</span><span class="sxs-lookup"><span data-stu-id="c14d5-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
--   <span data-ttu-id="c14d5-153">Zobrazit DPH.</span><span class="sxs-lookup"><span data-stu-id="c14d5-153">View the sales tax.</span></span>
--   <span data-ttu-id="c14d5-154">Zobrazit celkový součet faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-154">View the invoice total.</span></span>
--   <span data-ttu-id="c14d5-155">Zobrazit cashflow.</span><span class="sxs-lookup"><span data-stu-id="c14d5-155">View the cash flow.</span></span>
--   <span data-ttu-id="c14d5-156">Zobrazit rozúčtování pro všechny volné faktury.</span><span class="sxs-lookup"><span data-stu-id="c14d5-156">View accounting distributions for the whole free text invoice.</span></span>
--   <span data-ttu-id="c14d5-157">Zobrazit dílčí hlavní knihu.</span><span class="sxs-lookup"><span data-stu-id="c14d5-157">View the subledger journal.</span></span>
+## <a name="distributing-taxes"></a><span data-ttu-id="eab2c-150">Distribuce daní</span><span class="sxs-lookup"><span data-stu-id="eab2c-150">Distributing taxes</span></span>
+<span data-ttu-id="eab2c-151">Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="eab2c-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="eab2c-152">Při výpočtu DPH je třeba ve formuláři Volná faktura provést jeden z následujících úkolů:</span><span class="sxs-lookup"><span data-stu-id="eab2c-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
+-   <span data-ttu-id="eab2c-153">Zobrazit DPH.</span><span class="sxs-lookup"><span data-stu-id="eab2c-153">View the sales tax.</span></span>
+-   <span data-ttu-id="eab2c-154">Zobrazit celkový součet faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-154">View the invoice total.</span></span>
+-   <span data-ttu-id="eab2c-155">Zobrazit cashflow.</span><span class="sxs-lookup"><span data-stu-id="eab2c-155">View the cash flow.</span></span>
+-   <span data-ttu-id="eab2c-156">Zobrazit rozúčtování pro všechny volné faktury.</span><span class="sxs-lookup"><span data-stu-id="eab2c-156">View accounting distributions for the whole free text invoice.</span></span>
+-   <span data-ttu-id="eab2c-157">Zobrazit dílčí hlavní knihu.</span><span class="sxs-lookup"><span data-stu-id="eab2c-157">View the subledger journal.</span></span>
 
-## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="c14d5-158"> Dílčí hlavní knihy pro volné faktury</span><span class="sxs-lookup"><span data-stu-id="c14d5-158">Subledger journals for free text invoices</span></span>
-<span data-ttu-id="c14d5-159">Před zaúčtováním volné faktury můžete zobrazit celý účetní zápis faktury, který zahrnuje pohledávky a závazky, abyste ověřili, zda je faktura zaúčtována na správné účty.</span><span class="sxs-lookup"><span data-stu-id="c14d5-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="c14d5-160">Toto zobrazení celkového zápisu do účetnictví se nazývá dílčí hlavní kniha.</span><span class="sxs-lookup"><span data-stu-id="c14d5-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="c14d5-161">Pokud zobrazíte náhled dříve, než zapíšete fakturu dodavatele do deníku, a položka dílčí hlavní knihy není správná, nelze položku dílčí hlavní knihy změnit.</span><span class="sxs-lookup"><span data-stu-id="c14d5-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="c14d5-162">Namísto toho je nutné změnit rozúčtování nebo účetní profil.</span><span class="sxs-lookup"><span data-stu-id="c14d5-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="c14d5-163">Rozúčtování slouží k definování jedné strany účetní položky, má dáti nebo dal.</span><span class="sxs-lookup"><span data-stu-id="c14d5-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="c14d5-164">Vyrovnání účetní položky dílčí hlavní knihy je vytvořeno z účetních profilů, jako je například účet odběratele nebo daň.</span><span class="sxs-lookup"><span data-stu-id="c14d5-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
+## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="eab2c-158"> Dílčí hlavní knihy pro volné faktury</span><span class="sxs-lookup"><span data-stu-id="eab2c-158">Subledger journals for free text invoices</span></span>
+<span data-ttu-id="eab2c-159">Před zaúčtováním volné faktury můžete zobrazit celý účetní zápis faktury, který zahrnuje pohledávky a závazky, abyste ověřili, zda je faktura zaúčtována na správné účty.</span><span class="sxs-lookup"><span data-stu-id="eab2c-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="eab2c-160">Toto zobrazení celkového zápisu do účetnictví se nazývá dílčí hlavní kniha.</span><span class="sxs-lookup"><span data-stu-id="eab2c-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="eab2c-161">Pokud zobrazíte náhled dříve, než zapíšete fakturu dodavatele do deníku, a položka dílčí hlavní knihy není správná, nelze položku dílčí hlavní knihy změnit.</span><span class="sxs-lookup"><span data-stu-id="eab2c-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="eab2c-162">Namísto toho je nutné změnit rozúčtování nebo účetní profil.</span><span class="sxs-lookup"><span data-stu-id="eab2c-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="eab2c-163">Rozúčtování slouží k definování jedné strany účetní položky, má dáti nebo dal.</span><span class="sxs-lookup"><span data-stu-id="eab2c-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="eab2c-164">Vyrovnání účetní položky dílčí hlavní knihy je vytvořeno z účetních profilů, jako je například účet odběratele nebo daň.</span><span class="sxs-lookup"><span data-stu-id="eab2c-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
 
 
 
