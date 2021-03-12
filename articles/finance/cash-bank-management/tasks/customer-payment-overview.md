@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71e1657d738f691644b6d9cc4d34f812b853934e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441141"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978856"
 ---
 # <a name="customer-payment-overview"></a>Přehled plateb odběratele
 
@@ -52,6 +51,3 @@ Tento průvodce záznamem úloh vás provede různými metodami zadání plateb 
 21. Do pole **Platební reference** zadejte platební referenci. Platební reference je vyžadována, pouze pokud vyberete zahrnutí platby na vkladové složence.  
 22. V **Podokně akcí** klikněte na **Zaúčtovat** pro zaúčtování plateb odběratelů. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

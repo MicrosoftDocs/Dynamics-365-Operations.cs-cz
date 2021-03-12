@@ -1,5 +1,5 @@
 ---
-title: Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
+title: Úplné vyrovnání částečných a konečných plateb před datem slevy
 description: Tento článek popisuje scénáře, které zobrazují způsob záznamu částečných plateb pro odběratele a využití platebních slev v rámci období platební slevy.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 7c0c2c5db4f8169876be2bd98e36c4a8dbc35c35
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441322"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979456"
 ---
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
+# <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Úplné vyrovnání částečných a konečných plateb před datem slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -149,6 +148,3 @@ Arnie zaúčtuje deník a zkontroluje transakce odběratele na stránce **Transa
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

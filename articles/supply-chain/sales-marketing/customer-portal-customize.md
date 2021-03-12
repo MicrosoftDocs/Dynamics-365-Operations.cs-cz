@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980849"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
@@ -40,9 +39,9 @@ Následující témata vám pomohou naučit se základy Power Apps portálů a j
 - [Správa obsahu portálu](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) - Toto téma vysvětluje, jak můžete spravovat a přizpůsobovat obsah, který se objeví na vašem portálu.
 - [Upravit CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) - Toto téma vám pomůže provádět složitější úpravy uživatelského rozhraní (UI) vašeho portálu.
 - [Vytvořte téma pro svůj portál](https://docs.microsoft.com/dynamics365/portals/create-theme) - Toto téma vám pomůže vytvořit motiv uživatelského rozhraní pro váš portál.
-- [Vytvářejte a exponujte obsah portálu snadno](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) - Toto téma vám pomůže spravovat základní data a entity, které používáte pro svůj portál.
+- [Vytvářejte a exponujte obsah portálu snadno](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) - Toto téma vám pomůže spravovat základní data a tabulky, které používáte pro svůj portál.
 - [Nakonfigurujte kontakt pro použití na portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) - Toto téma vysvětluje, jak vytvářet a přizpůsobovat uživatelské role a jak funguje zabezpečení a ověřování Power Apps portálů.
-- [Nakonfigurujte poznámky pro formuláře entit a webové formuláře na portálech](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) - Toto téma vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
+- [Nakonfigurujte poznámky pro formuláře tabulky a webové formuláře na portálech](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) - Toto téma vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
 - [Chyba při manipulaci s webovým portálem](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) - Toto téma vysvětluje, jak zobrazit protokoly chyb portálu a uložit je do vašeho účtu úložiště blob Microsoft Azure.
 
 ## <a name="customize-the-order-creation-process"></a>Přizpůsobte proces vytváření objednávek
@@ -91,7 +90,7 @@ Zde jsou standardní kroky pro odeslání objednávky ze zákaznického portálu
 
 Aby byl zajištěn hladký uživatelský dojem, portál pro zákazníky automaticky vyplňuje hodnoty pro několik požadovaných polí. Tyto hodnoty vycházejí z informací v kontaktním záznamu zákazníka, který zadává objednávku.
 
-Pro každý [záznam kontaktu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) patřící zákazníkovi, který bude používat zákaznický portál k zadávání objednávek, je nutné zadat hodnoty pro následující povinná pole. Jinak dojde k chybám.
+Pro každý [záznam řádku](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) patřící zákazníkovi, který bude používat zákaznický portál k zadávání objednávek, je nutné zadat hodnoty pro následující povinná pole. Jinak dojde k chybám.
 
 - **Společnost** – Právnická osoba, které náleží objednávka
 - **Potenciální zákazník** - Účet odběratele přidružený k objednávce
@@ -99,7 +98,7 @@ Pro každý [záznam kontaktu](https://docs.microsoft.com/powerapps/maker/portal
 - **Měna** - Měna ceny
 - **Odeslat do země / oblasti** - Země nebo region, do kterého budou položky doručeny
 
-Pro entitu prodejní objednávky jsou automaticky nastavena následující pole:
+Pro tabulku prodejní objednávky jsou automaticky nastavena následující pole:
 
 - **Jazyk** - Jazyk objednávky (ve výchozím nastavení je hodnota převzata z kontaktního záznamu.)
 - **Odeslat do země / oblasti** - Země nebo region, do kterého budou položky doručeny (ve výchozím nastavení je hodnota převzata z kontaktního záznamu.)
@@ -116,7 +115,7 @@ Pro entitu prodejní objednávky jsou automaticky nastavena následující pole:
 
 Pokud nezměníte základní proces vytváření objednávek, můžete libovolně upravovat vzhled a uživatelské rozhraní zákaznického portálu. Pokud chcete změnit proces vytváření objednávek, musíte mít na paměti několik bodů.
 
-Neodstraňujte následující pole z entity prodejní objednávky v Common Data Service, protože musí vytvořit prodejní objednávku v režimu dvojitého zápisu:
+Neodstraňujte následující sloupce z tabulky prodejní objednávky v Microsoft Dataverse, protože musí vytvořit prodejní objednávku v režimu dvojitého zápisu:
 
 - **Společnost** – Právnická osoba, které náleží objednávka
 - **Název** – název prodejní objednávky
@@ -127,7 +126,7 @@ Neodstraňujte následující pole z entity prodejní objednávky v Common Data 
 - **Jazyk** - Jazyk objednávky (Obvykle je tento jazyk jazykem potenciálního zákazníka.)
 - **Popis dodací adresy** - dodací adresa prodejní objednávky
 
-U položek jsou požadována následující pole:
+U položek jsou požadovány následující sloupce:
 
 - **Produkt** - Produkt k objednání
 - **Množství** - množství vybraného produktu
@@ -135,11 +134,11 @@ U položek jsou požadována následující pole:
 - **Odeslat do země / oblasti** - Země nebo oblast doručení
 - **Popis dodací adresy** - dodací adresa objednávky
 
-Musíte se ujistit, že váš zákaznický portál nějak předá hodnoty pro všechna tato pole.
+Musíte se ujistit, že váš zákaznický portál nějak předá hodnoty pro všechny tyto sloupce.
 
-Chcete-li na stránku přidat pole nebo je odstranit, viz [Vytvářejte nebo upravujte rychle vytvářené formuláře pro efektivnější zadávání dat](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Chcete-li na stránku přidat sloupce nebo je odstranit, viz [Vytvářejte nebo upravujte rychle vytvářené formuláře pro efektivnější zadávání dat](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Pokud chcete změnit, jak jsou pole přednastavena a jak jsou hodnoty nastaveny při uložení stránky, podívejte se na následující informace v dokumentaci portálů Power Apps:
+Pokud chcete změnit, jak jsou sloupce přednastaveny a jak jsou hodnoty nastaveny při uložení stránky, podívejte se na následující informace v dokumentaci portálů Power Apps:
 
 - [Předem vyplněné pole](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Nastavit hodnotu při uložení](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ Další informace o tom, jak můžete nastavit a přizpůsobit zákaznický port
 - [Upgradujte portál](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrace konfigurace portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Správa životního cyklu řešení: aplikace Dynamics 365 for Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

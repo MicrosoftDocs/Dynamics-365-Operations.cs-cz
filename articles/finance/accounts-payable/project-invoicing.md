@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441109"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979580"
 ---
 # <a name="project-invoicing"></a>Fakturace projektu
 
@@ -75,7 +74,7 @@ Pokud vaše organizace vyžaduje, aby byly návrhy faktury před zaúčtováním
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Zobrazení informací o grantu na stránkách seznamu faktur projektu
 
-Uživatelé z veřejného sektoru mohou přidat **ID grantu** a **Název grantu** na stránky se seznamem **Návrhy na fakturu projektu** a **Faktury projektu**. Tyto sloupce jsou povoleny pomocí funkce **Přidejte informace o grantu na stránky se seznamem faktur na projektu**. Tato funkce je ve výchozím nastavení vypnutá a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
+Uživatelé z veřejného sektoru mohou přidat **ID grantu** a **Název grantu** na stránky se seznamem **Návrhy na fakturu projektu** a **Faktury projektu**. Tyto sloupce jsou povoleny pomocí funkce **Přidejte informace o grantu na stránky se seznamem faktur na projektu**. Tato funkce je ve výchozím nastavení vypnutá a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 ## <a name="on-account-invoicing"></a>Faktura akontace
 Částka, kterou zadáte do faktury na účet pro projekt, je založena na časovém období, procentuální hodnotě dokončení a dalších podmínkách fakturace, které jsou zadány v související projektové smlouvě. Částka není založena na hodinách, položkách, výdajích ani poplatcích, které jsou zaúčtovány do projektu. 
@@ -132,6 +131,3 @@ Můžete vytvořit fakturu se zápornou částkou, což bude faktura klasifikova
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

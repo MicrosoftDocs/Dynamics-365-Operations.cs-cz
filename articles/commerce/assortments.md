@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410709"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979991"
 ---
 # <a name="assortment-management"></a>Správa sortimentu
 
@@ -107,6 +106,3 @@ Když plánujete a spravujete sortimenty pro svou maloobchodní implementaci, zv
 - **Prodeje a vrácení mimo sortimenty** – Tato možnost pomáhá maloobchodním prodejcům efektivně spravovat své sortimenty pomocí omezení počtu dostupných produktů na produkty, které patří do základní kombinace produktů obchodu. Tato funkce také pomáhá maloobchodním prodejcům zvládat situace, kdy byl produkt omylem vynechán ze sortiment nebo kdy byl vrácen mimo data platnosti sortimentu.
 
 Pokud v databázi kanálů neexistují data produktů, pokladní místo provádí volání v reálném čase do centrály pro načtení požadovaných informací, aby mohl být produkt prodán, vrácen nebo umístěn na objednávku odběratele. Informace o produktu, které jsou tímto způsobem načteny, jsou k dispozici pouze v rozsahu dané transakce. Produkt není přidán do definice sortimentu. Proto budou následující volání v reálném čase provedena podle potřeby.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

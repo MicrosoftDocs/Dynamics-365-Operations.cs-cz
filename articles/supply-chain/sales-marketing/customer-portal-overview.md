@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529571"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980799"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Přehled zákaznického portálu pro Dynamics 365 Supply Chain Management
 
@@ -64,11 +63,8 @@ Zákaznický portál je poskytován jako šablona portálů Power Apps. Závisí
 
 [Portály Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview) je funkce, která umožňuje uživatelům vytvořit web navenek orientovaný, ke kterému se mohou přihlásit lidé mimo organizaci. Pro výrobu portálů je zapotřebí jen málo kódů. Zákaznický portál je jedním z mnoha [Šablon portálu Dynamics 365](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365), které jsou k dispozici od společnosti Microsoft.
 
-[Dvojí zapisování](https://docs.microsoft.com/powerapps/maker/portals/overview) je předpřipravený produkt infrastruktury poskytující prakticky v reálném čase mezi aplikacemi řízených modelem v aplikacích Dynamics 365 a Finance and Operations. Dvojí zapisování poskytuje obousměrnou integraci mezi aplikacemi Finance and Operations a Common Data Service. Proto poskytuje integrované uživatelské prostředí pro celé aplikace. Zákaznický portál závisí na entitách, které jsou synchronizovány s duálním zápisem. Předtím, než se na zákaznickém portálu mohou objevit data z Supply Chain Management, musí být pro všechny příslušné entity povoleny duální zápisy.
+[Dvojí zapisování](https://docs.microsoft.com/powerapps/maker/portals/overview) je předpřipravená infrastruktura poskytující prakticky v reálném čase mezi aplikacemi Customer Engagement a Finance and Operations. Dvojí zapisování poskytuje obousměrnou integraci mezi aplikacemi Finance and Operations a Microsoft Dataverse. Proto poskytuje integrované uživatelské prostředí pro celé aplikace. Zákaznický portál závisí na tabulkách, které jsou synchronizovány s duálním zápisem. Předtím, než se na zákaznickém portálu mohou objevit data z Supply Chain Management, musí být pro všechny příslušné tabulky povoleny duální zápisy.
 
 ![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")
 
 Zákaznický portál slouží jako výchozí bod pro organizace, které chtějí používat portály Power Apps k vytvoření externě orientovaného webu, který používá data z instalace Supply Chain Management. Pomáhá organizacím propojit dvojí zápis, Supply Chain Management a portály Power Apps.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

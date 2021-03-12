@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247193732a49cf0d26f0437f57f3ed66061a118
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441111"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979531"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 
@@ -44,14 +43,14 @@ Organizace může vydávat zálohy (zálohové platby) dodavatelům za zboží n
 | Fakturace zálohy je k dispozici jen v části Závazky.                         | Zálohy jsou k dispozici v části Závazky a Pohledávky.    |
 
 ## <a name="overview-of-the-prepayment-process"></a>Přehled procesu záloh
-Účetní praxe v mnoha zemích nebo oblastech vyžaduje, aby zálohy od odběratele nebo pro dodavatele nebyly zaúčtovány na běžných součtových účtech pro odběratele nebo dodavatele. Namísto toho se tyto platby záloh účtují do zvláštních účtů hlavní knihy určené pro platby záloh. Při vytvoření prodejní nebo nákupní objednávky je odběrateli nebo od dodavatele vystavena faktura. Při úhradě faktury dojde ke stornování zálohy a dokladu platby zálohy na DPH na účtech záloh hlavní knihy a částky faktury se automaticky zaúčtují na běžné součtové účty. Pokud chcete vytvořit zálohu, postupujte následovně.
+Účetní praxe v mnoha zemích nebo oblastech vyžaduje, aby zálohy od odběratele nebo pro dodavatele nebyly zaúčtovány na běžných součtových účtech pro odběratele nebo dodavatele. Namísto toho se tyto platby záloh účtují do zvláštních účtů hlavní knihy určené pro platby záloh. Při vytvoření prodejní nebo nákupní objednávky je odběrateli nebo od dodavatele vystavena faktura. Při úhradě faktury dojde ke stornování zálohy a dokladu platby zálohy na DPH na účtech záloh hlavní knihy a částky faktury se automaticky zaúčtují na běžné součtové účty. Pokud chcete vytvořit zálohu, postupujte následovně.
 
 1.  Nastavte účetní profily pro zálohy.
 2.  V části Parametry pohledávek a Parametry závazků pod položkou **Hlavní kniha a DPH** vyberte nový účetní profil pomocí parametru **Účetní profil pro deník plateb se zálohou**.
 3.  Vytvořte deník plateb a potom vytvořte novou platbu.
 4.  Můžete platbu označit jako zálohu. Pokud je platba označena jako záloha, bude platba zaúčtována do účtů hlavní knihy, které jsou definovány v účetním profilu, který nastavíte podle kroku 1 a 2. Dále platí, že pokud je platba označena jako záloha, budou vypočteny daně. Některé úřady vyžadují zaplacení daní při zaznamenání zálohy, a to i v případě, že není k dispozici faktura.
 5.  Zaúčtujte zálohu.
-6.  Volitelné: Zálohu můžete před vytvořením faktury vyrovnat proti nákupní objednávce nebo prodejní objednávce.Na stránce prodejní nebo nákupní objednávky v podokně akcí použijte možnost **Vyrovnat transakce**.
+6.  Volitelné: Zálohu můžete před vytvořením faktury vyrovnat proti nákupní objednávce nebo prodejní objednávce. Na stránce prodejní nebo nákupní objednávky v podokně akcí použijte možnost **Vyrovnat transakce**.
 7.  Jakmile dodavatel dodá zboží nebo služby, fakturu zaznamenejte. Pokud jste v kroku 6 vyrovnali zálohu oproti nákupní objednávce nebo prodejní objednávce, záloha se automaticky vyrovná oproti faktuře, kterou jste vytvořili. Pokud záloha nebyla vyrovnána oproti nákupní objednávce nebo prodejní objednávce, můžete ji ručně vyrovnat oproti faktuře s použitím možnosti **Vyrovnat transakce** na stránce odběratele nebo dodavatele. Částka zálohy je potom dočasně stornována z účtu hlavní knihy závazků/pohledávek. Dále pokud byly vypočteny daně, jsou stornovány, protože faktura obsahuje skutečné daně.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Přehled procesu fakturace záloh
@@ -66,6 +65,3 @@ Zálohové faktury se při obchodování používají běžně. Dodavatel vystav
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
