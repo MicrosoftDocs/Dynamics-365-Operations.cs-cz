@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424113"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983159"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatické přidělování poplatků
 
@@ -177,6 +176,3 @@ Následující postup ukazuje, jak alokovat poplatky na úrovni záhlaví řádk
         > Když pracujete s mřížkou **Vyberte řádky, které chcete vyloučit z alokace**, ponechte mřížku otevřenou, dokud nevyberete **Přidělit**. Pokud zavřete mřížku před výběrem **Přidělit**, vaše nastavení v mřížce budou ztracena. Proto budou poplatky přidělovány na základě kritérií, která jste dříve definovali.
 
 1. Vyberte **Přidělit**, pokud chcete použít své nastavení a zavřete dialogové okno.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

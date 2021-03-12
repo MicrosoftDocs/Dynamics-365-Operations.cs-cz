@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a0c8dabc91d4d69d3f7098672611610a4ec73ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09f7efbfa0b4b96b52350afb961710057d6a2f92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441262"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984902"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Finance
 
@@ -95,6 +94,3 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. | |
 | [Zkuška MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: nastavení a konfigurace finanční správy, správa a použití běžných procesů; implementace a správa závazků a pohledávek a správa rozpočtování a dlouhodobého majetku. | Zkouška; náklady se liší podle oblasti. | |
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional sjednocuje globální finance a provozy a automatizuje úkoly a workflowy, zjednodušuje objednávky, prodej, fakturaci a výkaznictví pro zákazníky. | Certifikace; náklady se liší podle oblasti. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e57c51011f1d93a6f62eb88c9cc45a38f2d0a5f3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 59cfc629e7c6e978715f08bc4a3383ba6f9bb089
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528737"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984977"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Výukový katalog pro vývojáře Dynamics 365 Finance
 
@@ -49,8 +48,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Finance and Operations: Rozšíření Dynamics 365 for Finance and Operations pomocí PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Seznamte se s jednoduchostí aplikací Microsoft PowerApps a jejich integrací s aplikacemi Dynamics 365 for Finance and Operations umožňující digitální transformaci podniku a zvýšení produktivity uživatelů. | Bezplatný záznam webové konference | 43 minut |
 | [Finance and Operations: Rozšiřitelnost (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Poskytneme vám přehled a novinky v plánech rozšiřitelnosti společnosti Microsoft. Budeme podrobně probírat různé způsoby rozšíření řešení a podrobněji se věnovat funkcím rozšiřitelnosti metadat, a také schopnosti doplnit a rozšířit kód, včetně užitečné funkce Chain of Command. | Bezplatný záznam webové konference | 50 min |
 | [Nastavení Visual Studio Team Services (VSTS) (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Tato technická přednáška provází nezbytným postupem při konfiguraci instance VSTS a projektu pro připojení k implementačnímu projektu LCS pro konfiguraci vývojového/testovacího prostředí. | Bezplatný záznam webové konference | 41 minut |
-| [Integrátor dat CDS (DYN451PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Připojte se k této technické přednášce zabývající se integrátorem dat Common Data Service (CDS). Probereme možnosti integrace mezi ostatními aplikacemi Dynamics 365 Customer Engagement a Dynamics 365 Finance and Operations a také integrace s jinými řešeními třetích stran. | Bezplatný záznam webové konference | 61 minut |
-| [Integrace mezi Dynamics 365 for Sales a Dynamics 365 for Finance & Operations prostřednictvím CDS (DYN340PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | V této technické přednášce si představíme scénář integrace známý jako Zpeněžení potenciálního zákazníka, s prodejními a marketingovými aktivitami v Dynamics 365 for Sales a plněním v aplikaci Dynamics 365 for Finance and Operations. Podíváme se také na datový integrátor a postup úpravy integrace. | Bezplatný záznam webové konference | 54 minut |
+| [Integrátor dat Dataverse (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Připojte se k této technické přednášce zabývající se integrátorem dat Dataverse. Probereme možnosti integrace mezi ostatními aplikacemi Dynamics 365 Customer Engagement a Dynamics 365 Finance and Operations a také integrace s jinými řešeními třetích stran. | Bezplatný záznam webové konference | 61 minut |
+| [Integrace mezi Dynamics 365 for Sales a Dynamics 365 for Finance & Operations prostřednictvím Dataverse (DYN340PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | V této technické přednášce si představíme scénář integrace známý jako Zpeněžení potenciálního zákazníka, s prodejními a marketingovými aktivitami v Dynamics 365 for Sales a plněním v aplikaci Dynamics 365 for Finance and Operations. Podíváme se také na datový integrátor a postup úpravy integrace. | Bezplatný záznam webové konference | 54 minut |
 | [Správa dat (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Přidejte se k nám na této technické přednášce o správě dat. Zjistěte informace o dostupných možnostech a o scénářích, pro které jsou doporučovány. Budeme se věnovat struktuře správy dat, šablonám, kopírování databáze, sdílení dat mezi společnostmi a informacím o výkonu. | Bezplatný záznam webové konference | 58 min. |
 | [Nástroje pro integraci Azure pro Dynamics 365 for Finance and Operations (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Tato technická přednáška se věnuje typům nástrojů, které se při integraci s aplikací Dynamics 365 for Finance & Operations a při výběru nástroje pro integraci mohou brát v úvahu. Relace také projde některými scénáři integrace laděnými pomocí integračních služeb Azure. | Bezplatný záznam webové konference | 63 minut |
 | [Rámce integrace v Dynamics 365 for Finance & Operations (DYN385PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-frameworks-within-dynamics-365-for-finance-amp-operations-october-31-2017) | Tato relace poskytne přehled integračních rámců v rámci produktu Dynamics 365 for Finance & Operations a diskutuje aspekty, za kterých lze tyto rámce používat. | Bezplatný záznam webové konference | 64 minut |
@@ -94,6 +93,3 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah | popis  | Formát  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[Zkouška MB-500: Microsoft Dynamics 365: Vývojář aplikací Finance and Operations](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Tato zkouška ověří vaši schopnost splnit následující technické úkoly: naplánovat architekturu a návrh řešení; použít vývojářské nástroje; navrhovat a vyvíjet prvky AOT; vývoj a testování kódu; implementovat reporting; integrovat a spravovat datová řešení; a implementovat zabezpečení a optimalizovat výkon. | Zkouška; náklady se liší podle oblasti. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
