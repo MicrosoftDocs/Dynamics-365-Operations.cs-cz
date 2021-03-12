@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b31d0880d4f2cd2b8ad2dffcfe279421f935ed35
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: df23e219f5bd859b0072785dfd5f7a0ec63f540e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995386"
 ---
 # <a name="assign-lease-user-roles"></a>Přiřadit role uživatele leasingu
 
@@ -44,6 +43,3 @@ Podle těchto pokynů můžete uživatelům přiřadit role, které se používa
 1. Přejděte na **Správa systému \> Zabezpečení \> Přiřadit uživatele k rolím**.
 2. Vyberte role **Údržba leasingu**, **Referent leasingu** nebo **Zobrazit leasing** a poté vyberte **Ručně přiřadit / vyloučit uživatele**.
 3. Vyberte uživatele, kterému chcete roli přiřadit, a poté vyberte **Přiřait k roli**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

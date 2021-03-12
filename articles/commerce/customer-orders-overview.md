@@ -3,7 +3,7 @@ title: Objednávky zákazníků v pokladním místě (POS)
 description: Toto téma obsahuje informace o objednávkách zákazníků v pokladním místě (POS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410769"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995788"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
@@ -52,9 +51,9 @@ Chcete-li používat objednávky zákazníků, musíte nakonfigurovat způsoby d
 
 ### <a name="set-up-fulfillment-groups"></a>Nastavení skupin plnění
 
-Některé obchody nebo sklady nemusí být schopny plnit objednávky zákazníků. Konfigurací skupin plnění může organizace určit, která umístění obchodu a skladu se zobrazí jako možnosti uživatelům, kteří vytvářejí objednávky zákazníků v POS. Skupiny plnění jsou konfigurovány na stránce **Skupiny plnění**. Organizace mohou vytvořit tolik skupin plnění, kolik požadují. Poté, co je definována skupina plnění, je propojena s obchodem pomocí tlačítka na kartě **Nastavení** v podokně Akce na stránce **Obchody**.
+Některé obchody nebo sklady nemusí být schopny plnit objednávky zákazníků. Konfigurací skupin plnění může organizace určit, která umístění obchodu a skladu se zobrazí jako možnosti uživatelům, kteří vytvářejí objednávky zákazníků v POS. Skupiny plnění jsou konfigurovány na stránce **Skupiny plnění**. Organizace mohou vytvořit tolik skupin plnění, kolik požadují. Poté, co je definována skupina plnění, propojte ji s obchodem výběrem možnost **Přiřazení skupiny plnění** na kartě **Nastavení** v podokně Akce na stránce **Obchody**.
 
-V Commerce verze 10.0.12 a novějších mohou organizace definovat, zda lze sklad nebo kombinaci sklad/obchod, které jsou definovány ve skupinách plnění, použít k přepravě, k vyzvednutí nebo k přepravě a vyzvednutí. Proto má obchod další flexibilitu pro řízení možností skladu a obchodu, které se zobrazují uživatelům, kteří vytvářejí objednávku pro výdej versus objednávku pro dodávku. Chcete-li využít výhod těchto možností konfigurace, musíte zapnout funkci **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění**. Pokud sklad, který je propojen se skupinou plnění, není obchod, lze jej nakonfigurovat pouze jako místo expedice. Nelze jej použít, když jsou objednávky pro výdej konfigurovány v POS.
+V Commerce verze 10.0.12 a novějších mohou organizace definovat, zda lze sklad nebo kombinaci sklad a obchod, které jsou definovány ve skupinách plnění, použít k přepravě, k vyzvednutí nebo k přepravě a vyzvednutí. To umožňuje podnikům větší flexibilitu při určování, které sklady lze vybrat při vytváření objednávky zákazníka k odeslání zboží, a které obchody lze vybrat při vytváření objednávky zákazníka pro vyzvednutí zboží. Chcete-li využít výhod těchto možností konfigurace, zapněte funkci **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění**. Pokud sklad, který je propojen se skupinou plnění, není obchod, lze jej nakonfigurovat pouze jako místo expedice. Nelze jej použít, když jsou objednávky pro výdej konfigurovány v POS.
 
 ![Stránka Skupiny plnění](media/customer-order-fulfillment-group.png)
 
@@ -99,7 +98,10 @@ Ujistěte se, že [rozložení obrazovky](https://docs.microsoft.com/dynamics365
 
 ![Operace na obrazovce transakcí POS](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Práce s objednávkami zákazníků v POS
+## <a name="work-with-customer-orders-in-pos"></a>Práce s objednávkami zákazníků v POS
+
+> [!NOTE]
+> Funkce rozpoznávání výnosů není aktuálně podporována pro použití v kanálech Commerce (e-commerce, POS, call centrum). Položky nakonfigurované s rozpoznáváním výnosů by neměly být přidávány k objednávkám vytvořeným v kanálech Commerce. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Vytvoření objednávky zákazníka pro produkty, které budou odeslány zákazníkovi
 
@@ -118,7 +120,7 @@ Ujistěte se, že [rozložení obrazovky](https://docs.microsoft.com/dynamics365
 2. Přidejte produkty do košíku.
 3. Volbou **Vyzvednout vybrané** nebo **Vyzvednout vše** spusťe konfiguraci vyzvednutí objednávky.
 4. Vyberte umístění obchodu, kde si zákazník vyzvedne vybrané produkty.
-5. Vyberte datum vyskladnění.
+5. Vyberte datum, kdy bude položka vyzvednuta.
 6. Pomocí platebních funkcí můžete zaplatit veškeré vypočítané nesplacené částky nebo pomocí operace **Přepsání zálohy** změnit nesplacené částky a poté provést platbu.
 7. Pokud nebyla zaplacena celková částka objednávky, vyberte, zda zákazník poskytne platbu později (při vyskladnění), nebo zda bude kreditní karta nyní tokenizována a poté použita a zaznamenána v době vyskladnění.
 
@@ -127,12 +129,10 @@ Ujistěte se, že [rozložení obrazovky](https://docs.microsoft.com/dynamics365
 Maloobchodní objednávky, které jsou vytvořeny v online kanálu nebo kanálu obchodu, lze podle potřeby odvolat a upravit prostřednictvím POS.
 
 > [!IMPORTANT]
-> Objednávky vytvořené v kanálu kontaktního střediska nelze upravovat prostřednictvím POS, pokud je pro kanál kontaktního střediska zapnuto nastavení [Povolit dokončení objednávky](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). Aby bylo zajištěno správné zpracování plateb, musí být objednávky, které pocházejí z kanálu kontaktního střediska a které používají funkci Povolit dokončení objednávky, upraveny prostřednictvím aplikace kontaktního střediska v centrále Commerce.
+> Ne všechny maloobchodní objednávky lze upravovat prostřednictvím aplikace POS. Objednávky vytvořené v kanálu kontaktního střediska nelze upravovat prostřednictvím POS, pokud je pro kanál kontaktního střediska zapnuto nastavení [Povolit dokončení objednávky](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). Aby bylo zajištěno správné zpracování plateb, musí být objednávky, které pocházejí z kanálu kontaktního střediska a které používají funkci Povolit dokončení objednávky, upraveny prostřednictvím aplikace kontaktního střediska v centrále Commerce.
 
-V Commerce verze 10.0.13 a starší mohou uživatelé upravovat podporované objednávky zákazníků prostřednictvím POS pouze v případě, že jsou objednávky plně otevřené. Pokud již byly řádky objednávky zpracovány k plnění (vyskladnění, zabalení atd.), bude objednávka uzamčena pro úpravy v POS.
+Ve verzi 10.0.17 a novější mohou uživatelé upravovat způsobilé objednávky prostřednictvím aplikace POS, i když je objednávka částečně splněna. Objednávky, které jsou plně fakturovány, však stále nelze upravovat prostřednictvím POS. Chcete-li tuto funkci aktivovat, zapněte funkci **Upravit částečně splněné objednávky v pokladním místě** v pracovním prostoru **Správa funkcí**. Pokud tato funkce není povolena nebo pokud používáte verzi 10.0.16 nebo starší, uživatelé budou moci upravovat objednávky zákazníků v POS pouze v případě, že je objednávka plně otevřená. Dále, pokud je funkce povolena, můžete omezit, které obchody mohou upravovat částečně splněné objednávky. Možnost zakázat tuto funkci pro konkrétní obchody lze konfigurovat prostřednictvím **Funkční profil** a pevné kartě **Všeobecné**.
 
-> [!NOTE]
-> V Commerce verze 10.0.14, funkce, která byla vydána ve verzi [Public Preview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) umožňuje uživatelům POS upravovat objednávky zákazníků prostřednictvím POS, i když některá z objednávek již byla splněna. Objednávky, které jsou plně fakturovány, však stále nelze upravovat prostřednictvím POS. Chcete-li tuto funkci Preview otestovat a poskytnout další zpětnou vazbu, zapněte funkci **(Preview) Upravit částečně splněné objednávky v pokladním místě** v pracovním prostoru **Správa funkcí**. Objednávky zákazníků, které pocházejí z kanálu kontaktního střediska a používají funkci Povolit dokončení objednávky, nelze upravovat ani po povolení této funkce.
 
 1. Vyberte **Odvolat objednávku**.
 2. Pomocí **vyhledávání** zadejte filtry a vyhledejte objednávku a poté vyberte **Použít**.
@@ -170,6 +170,3 @@ Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu**
 ## <a name="additional-resources"></a>Další zdroje
 
 [Hybridní objednávky zákazníka](hybrid-customer-orders.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0973d36a8fddd16d02776ac6567d424ac6ebc3ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441217"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994293"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Sdílejte konfigurace elektronického vykazování (ER) v globálním úložišti služby Microsoft Regulatory Configuration Services (RCS) s externími organizacemi
 
@@ -50,7 +49,7 @@ Postupujte podle těchto kroků a ověřte, že konfigurace, kterou chcete sdíl
 
 1. V **Elektronickém výkaznictí** vyberte pracovní prostor **Úložiště** pro vašeho poskytovatele konfigurace.
 
-    ![Poskytovatelé konfigurace](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![Poskytovatelé konfigurace](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Vyberte **Globální úložiště** \> **Otevřít**.
 3. Vyhledejte konfiguraci, kterou chcete sdílet. Pomocí pole filtru můžete vyhledávání zúžit. Pokud nemůžete najít konfiguraci v globálním úložišti, postupujte podle těchto kroků: [Vytvořte a nahrajte novou verzi konfigurace elektronického výkaznictví (ER)](rcs-global-repo-upload.md).
@@ -64,17 +63,12 @@ Po vytvoření konfigurace u vašeho poskytovatele konfigurace ji můžete sdíl
 3. Vyberte konfiguraci, kterou chcete sdílet.
 4. Na pevné kartě **Sdíleno s** vyberte **Organizace**.
 
-    ![Sdíleno pomocí pevné záložky](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Sdíleno pomocí pevné záložky](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. V dialogovém okně zadejte název domény pro externí organizaci a poté vyberte **OK**.
 
-    ![Sdílejte konfigurační verzi pomocí dialogového okna externí organizace](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Sdílejte konfigurační verzi pomocí dialogového okna externí organizace](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfigurace je sdílena s externí organizací a je k dispozici této organizaci v globálním úložišti. Odtud ji lze importovat do instance RCS organizace nebo do jejích instancí aplikací Finance and Operations.
 
-![Konfigurace sdílená s externí organizací](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
 6. Chcete-li zrušit sdílení konfigurace, která byla dříve sdílena s externí organizací, vyberte konfiguraci a klikněte na **Zrušit sdílení** a poté vyberte **OK**
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

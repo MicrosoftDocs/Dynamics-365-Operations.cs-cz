@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 297792e90b3d2da0d738f5cbaa14779bc17ea3c8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512323"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996191"
 ---
 # <a name="putaway-clusters"></a>Seskupení vyskladnění
 
@@ -296,6 +295,3 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 ## <a name="notes-and-tips"></a>Poznámky a tipy
 
 V případech, kdy se ID seskupení stane nadřazenou registrační značkou pro vnořenou paletu, je při skenování ID seskupení pozice vložení automaticky dána. Žádná další registrační značka nesmí být skenována, i když je generování poznávací značky nastaveno na ruční.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

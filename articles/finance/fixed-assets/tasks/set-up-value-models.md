@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetBookTable, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a59bafe3099b50d34bdd9e125cfb7f43d219dcc6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92c965775980d15e367b8cd5742d3bc61c3f698c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441218"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994783"
 ---
 # <a name="set-up-value-models"></a>Nastavení oceňovacích modelů
 
@@ -54,6 +53,3 @@ Tento postup popisuje, jak vytvořit novou knihu dlouhodobého majetku a přidru
     * Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.  
     * Způsob odpisu je možné nastavit podle potřeby pro daňové účely.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

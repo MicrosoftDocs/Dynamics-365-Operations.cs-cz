@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7008891d194dc990d13a9f56db155c6990aae0c0
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 76c7eff17df92b01317544112099e391fd05d105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441370"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995361"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Zobrazení transakcí závazků, majetku a nákladů
 
@@ -48,6 +47,3 @@ Na stránce **Majetkové transakce** se zobrazují transakce, které buď zvyšu
 Chcete-li zobrazit výdajové leasingové transakce, vyberte leasing na stránce **Souhrn pronájmu** a poté vyberte **Knihy** k otevření leasingových knih, které jsou připojeny k záznamu o leasingu. Pak vyberte **Výdajové transakce**.
 
 Na stránce **Výdajové transakce** se zobrazují všechny výdaje, které byly zaúčtovány oproti leasingu, jako jsou úrokové náklady, výdaje na odpisy a jakékoli zachraňovací náklady.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

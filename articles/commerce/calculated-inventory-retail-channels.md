@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68fa26daac055cd0fd72035683f05ed36052b3a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410770"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995813"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vypočítat dostupnost zásob pro maloobchodní kanály
 
@@ -114,6 +113,3 @@ Doporučuje se, abyste tyto dávkové úlohy nespouštěli příliš často (ka�
 > Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob**. Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.
 
 Pokud Váš obchodní scénář vyžaduje menší čas v mezipaměti, požádejte o pomoc pracovníka technické podpory.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

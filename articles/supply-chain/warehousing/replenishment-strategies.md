@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9c23126c6ab15a1924b34f98d33a0661011ba8bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996091"
 ---
 # <a name="replenishment-strategies"></a>Strategie doplňování
 
@@ -115,6 +114,3 @@ Výsledky se liší kvůli informacím, které jsou k dispozici při vytvářen�
 [![Příklad 2](media/ReplenTemp_example_2.png "Příklad 2")](media/ReplenTemp_example_2_large.png)
 
 Chcete-li tedy získat maximální množství na doplněná místa, měli byste nastavit možnost **Povolit rozdělení** na *Ano* na směrnicích skladového místa pro výdej doplňování.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

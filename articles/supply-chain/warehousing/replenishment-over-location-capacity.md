@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f94053920b475ef9190b5ac65a5f9ca01dcd4a1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424203"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996116"
 ---
 # <a name="replenishment-over-location-capacity"></a>Doplnění nad kapacitu místa
 
@@ -408,6 +407,3 @@ Nyní si můžete vybrat prodejní objednávku 2. Když bylo dokončeno doplňov
 - Pokud chcete, můžete ručně přepsat dostupnost práce doplňování pro každou hlavičku práce ze stránky **Podrobnosti o práci**.
 - Když systém nastaví dostupnost práce při doplňování, vezme v úvahu veškerý inventář, který je již v místě před dokončením jakékoli práce
 - Každá část práce na prodejní objednávce je spojena s konkrétní prací na doplnění. Neexistuje žádná odpovídající funkce dostupnosti prodejní práce.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
