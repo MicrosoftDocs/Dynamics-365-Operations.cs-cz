@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: af4321cd9d6e15c82c4eef1f1ca218b8301ebf35
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4410936"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003646"
 ---
 # <a name="store-configurations-for-retail-statements"></a> Konfigurace obchodů pro maloobchodní výkazy
 
@@ -49,6 +48,3 @@ Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způso
 17. Vyberte možnost „Ano“ v možnosti **Metoda rozdělení podle výpisu**, chcete-li získat výkazy vytvořené pro každou definovanou metodu výkazu. Tato akce je užitečná v případě, že výkon při účtování je třeba zlepšit pro obchody s vysokými objemy transakcí, protože vytvoří mnoho menších výkazů, které lze zpracovat současně.  
 18. Na pevné záložce **Obecné**, v poli **Výchozí odběratel** můžete vybrat účet odběratele, který se má použít pro prodeje příchozím odběratelům.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

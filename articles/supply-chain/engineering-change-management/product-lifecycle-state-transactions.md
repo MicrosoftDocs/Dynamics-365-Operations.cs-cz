@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424265"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005320"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stavy životního cyklu produktu a transakce
 
@@ -76,6 +75,3 @@ Následující pole jsou k dispozici pro každý proces, který je uveden na zá
 | Zásada | Vyberte jednu z následujících hodnot, abyste určili, zda a jak bude povolen aktuální proces pro produkty, které jsou v tomto stavu životního cyklu:<ul><li>**Povoleno** - Obchodní proces je povolen.</li><li>**Blokováno** - Proces není povolen. Pokud se uživatel pokusí použít proces na produktu, který je v tomto stavu životního cyklu, systém pokus zablokuje a místo toho zobrazí chybu. Můžete například blokovat nákup produktů na konci životnosti.</li><li>**Povoleno s varováním** - Proces je povolen, ale zobrazí se varování. Můžete například chtít nasadit prototypový produkt do výrobní zakázky vytvořené oddělením výzkumu a vývoje. Ostatní oddělení by si však měla být vědoma toho, že by produkt ještě neměla vyrábět.</li></ul> |
 
 Pokud přidáváte další pravidla stavu životního cyklu jako přizpůsobení, můžete tato pravidla zobrazit v uživatelském rozhraní výběrem možnosti **Obnovit procesy** v horním panelu. Tlačítko **Obnovit procesy** je k dispozici pouze správcům.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

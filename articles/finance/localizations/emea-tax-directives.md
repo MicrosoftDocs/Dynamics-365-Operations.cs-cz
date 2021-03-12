@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2f0da36e2be20d5ae8c838ed73c6e8aa1c19b621
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e6fa4867df51d39c268446077de27366784e1cd7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407616"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005924"
 ---
 # <a name="tax-directives-for-europe"></a>Daňové předpisy pro Evropu
 
@@ -33,6 +32,3 @@ Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro faktu
 
 > [!NOTE]
 > Ověřte, že pole **Specifikace DPH** je nastaveno na **Měna registrace** nebo **Měna registrace a společnosti** na stránce **Nastavení formuláře** na kartě **Obecné** (**Pohledávky > Nastavení > Formuláře > Nastavení formuláře** nebo **SPráva a účetnictví projektu > Nastavení > Formuláře > Nastavení formuláře**).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

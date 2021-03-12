@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424266"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005370"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametry správy technické změny
 
@@ -57,6 +56,3 @@ Následující tabulka popisuje pole, která jsou k dispozici na kartě **Správ
 | Pravidlo závažnosti | Vyberte, jak by měla být stanovena závažnost objednávky technické změny. Vyberte *ruční*, pokud se očekává, že uživatel zadá hodnotu do pole **Závažnost**. Výběrem volby *Vypočítat* nechte systém vypočítat hodnotu pole **Závažnost**, když v podokně akcí objednávky technických změn vyberete **Vypočítat závažnost**. V takovém případě systém použije pravidla závažnosti, která jsou definována na stránce **Sada pravidel závažnosti**. Vyberte *Vypočítat automaticky*, aby se hodnota pole **Závažnost** vypočítala automaticky a vyplnila podle sad pravidel závažnosti. |
 | Znovu uvolnit dotčené produkty | Toto pole je použitelné, když znovu vydáváte produkty prostřednictvím příkazu k technické změně. Můžete vybrat, zda mají být v dialogovém okně **Zprávy** navrženy všechny produkty nebo pouze dotčené produkty. |
 | Úrovně kusovníku pro uvolnění | Hloubka úrovně kusovníku, který se má uvolnit. Pokud má kusovník více úrovní (tj. pokud je hlubší) než zde zadaná hodnota, budou uvolněny pouze úrovně do zadané hodnoty. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

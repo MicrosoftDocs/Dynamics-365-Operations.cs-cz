@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423836"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001792"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
@@ -143,6 +142,3 @@ Pokud jde o kalendář skupiny disponibility, je třeba uvážit, že existuje c
 
 ### <a name="updating-scm-related-calendars"></a>Aktualizace kalendářů souvisejících se SCM
 I když je důležité, aby všechny relevantní kalendáře měly přiřazené odpovídajících místo (dodavatele, odběratele, sklad, způsob dodání nebo skupinu disponibility), jejich aktualizace je stejně důležitá, aby odrážely změnu. Systém definuje datum výroby, převodu, nákupu a prodejní objednávky podle kombinace přiřazené kalendáře. Osvědčilo se objasnit, kdo nese odpovědnost za přiřazování a aktualizaci kalendářů v příslušných oblastech. V případě rozdělení či jiných neobvyklých změn pracovních dnů je nutné aktualizovat kalendáře příslušným způsobem. Všechny úkoly, které závisí na kalendářích, jako je hlavní plánování a plánování výroby, je nutné při aktualizaci kalendářů provést znovu. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

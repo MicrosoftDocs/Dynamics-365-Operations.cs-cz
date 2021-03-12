@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9de46acd8e568be08518d9bf93067748e0541023
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004456"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -87,6 +86,3 @@ V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na p�
 
 Když se kanban spotřebovává ve vstupním místě výroby, je vykazován jako prázdný signál a do toku je přidán nový kanban stejného typu. Po vytvoření kanbanu se do vlny kanbanu přidá řádek vlny. Při zpracování vlny kanbanu se vytvoří skladová práce vyskladnění kanbanu. Pracovník skladu zpracuje práci pro výdej kanbanu a je nasměrován na výdej materiálu pro kanban ve skladovém místě. Když tento pracovník skladu potvrdí vyskladnění, kanban bude automaticky doplněn a pracovník skladu dostane pokyn k vložení materiálu do vstupního skladového místa.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

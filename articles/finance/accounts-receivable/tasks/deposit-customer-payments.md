@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1d903f557fbaeb720dd4a34dc1c772be0dcb56eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9221101581a6a130889b7c941ca228070a000c56
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003149"
 ---
 # <a name="deposit-customer-payments"></a>Vklad platby odběratele
 
@@ -48,6 +47,3 @@ Vložení platby odběratele. Tento úkol využívá ukázkovou společnost USMF
 17. Vyberte **OK**. První stránka slouží k vytvoření vkladové složenky.  
 18. Vyberte **OK**. Druhý krok je tisk vkladové složenky, ale tento krok není nutný.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

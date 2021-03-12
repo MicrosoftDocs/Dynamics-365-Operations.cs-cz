@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b047a1abaa6b19096740f589281c837643d796b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441134"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003521"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatelů pomocí návrhu platby
 
@@ -69,14 +68,14 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 
 ### <a name="option-1-by-cash-discount"></a>Možnost 1: Dle platební slevy
 
-April vybere **Platební sleva** jako typ návrhu. Zadá rozsah dat od 26. června do 10. července. Tyto faktury jsou zahrnuty v návrhu:
+April vybere **Platební sleva** jako typ návrhu. Zadá rozsah dat od 26. června do 10. července. Tyto faktury jsou zahrnuty v návrhu:
 
 -   1002, protože datum slevy pro 4. července je v rozsahu dat pro platbu.
 -   1004, protože datum slevy pro 1. července je v rozsahu dat pro platbu.
 
 Následující faktury nejsou zahrnuty v návrhu:
 
--   1001, protože datum slevy pro 29. června již vypršelo a faktura proto již nemá nárok na platební slevu.
+-   1001, protože datum slevy pro 29. června již vypršelo, a faktura proto již nemá nárok na platební slevu.
 -   1003, protože tato faktura neobsahuje datum slevy.
 
 ### <a name="option-2-by-due-date"></a>Možnost 2: Podle dne splatnosti
@@ -108,7 +107,7 @@ Následující faktury nejsou zahrnuty v návrhu:
 
 #### <a name="dimension-control"></a>Kontrola dimenze
 
-Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle návrhu platby a nastavit výchozí dimenze na základě finančních dimenzí používaných pro aplikovanou fakturu. V kontextu Norska pro každý způsob platby je finanční dimenze karta, na které lze aktivovat kontrolu dimenzí a také povolit seskupení pro každou dimenzi. K dispozici jsou tyto možnosti:
+Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle návrhu platby a nastavit výchozí dimenze na základě finančních dimenzí používaných pro aplikovanou fakturu. V kontextu Norska je pro každý způsob platby karta finanční dimenze, na které lze aktivovat kontrolu dimenzí a také povolit seskupování pro každou dimenzi. K dispozici jsou tyto možnosti:
 
 -   Pole **Kontrola dimenzí** je zakázáno. Návrh platby se chová jako ve kterékoli jiné zemi.
 -   Pole **Kontrola dimenzí** je aktivováno bez dalšího definování dimenzí Návrh platby bude vytvořen bez ohledu na dimenzi. Vytvořená transakce nedědí žádné dimenze z aplikované položky.
@@ -119,10 +118,7 @@ Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle
 
 #### <a name="bank-account-selection"></a>Výběr účtu
 
-Můžete definovat standardní debetní účet plateb podle metody platby bez ohledu na kontext země. To bude nastaveno na řádcích platby generovaných návrhem. S funkcí bankovního účtu lze definovat více debetní bankovních účtů spravovaných dimenzí a měnou nebo jejich kombinací k použití různých debetní bankovních účtů, v závislosti na jednotlivých kombinacích. Tyto kombinace můžete nastavit na stránce **Metody platby** pomocí tlačítka  **Bankovní účty** dostupného pro každou metodu platby s **Typ účtu pro zaúčtování** = **Banka**.
+Můžete definovat standardní debetní účet plateb podle metody platby bez ohledu na kontext země. To bude nastaveno na řádcích platby generovaných návrhem. S funkcí bankovního účtu lze definovat více debetní bankovních účtů spravovaných dimenzí a měnou nebo jejich kombinaci k použití různých debetní bankovních účtů v závislosti na jednotlivých kombinacích. Tyto kombinace můžete nastavit na stránce **Metody platby** pomocí tlačítka **Bankovní účty** dostupného pro každou metodu platby s **Typ účtu pro zaúčtování** = **Banka**.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
