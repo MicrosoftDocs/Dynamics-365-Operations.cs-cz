@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cc41f99085e5f30ae29edce296a5e3752cbabd33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423670"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966823"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Údržba postupu pro model produktu
 
@@ -67,6 +66,3 @@ Spuštění této procedury vyžaduje, aby model konfigurace produktu existoval.
 15. V poli Požadavek zadejte nebo vyberte hodnotu.
 16. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

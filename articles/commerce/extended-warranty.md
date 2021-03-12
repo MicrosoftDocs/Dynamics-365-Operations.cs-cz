@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410674"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965107"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Vytvoření a konfigurace rozšířených záruk
 
@@ -142,7 +141,7 @@ Skupina záruk je vtah mezi záručním zbožím a zbožím spadajícím do zár
 
 Chcete-li nastavit skupinu záruk v aplikaci Commerce, postupujte podle následujících pokynů.
 
-1. Přejděte na **Retail and Commerce \> Produkty a kategorie \> Záruka \> Skupiny záruky**.
+1. Přejděte na **Retail a Commerce \> Produkty a kategorie \> Záruka \> Skupiny záruky**.
 1. Zvolte **Nový** pro vytvoření nové skupiny záruk.
 1. Do pole **Název** zadejte název nové skupiny.
 1. Na pevné záložce **Obecné** v poli **Popis** zadejte popis skupiny.
@@ -239,6 +238,3 @@ Záruka je služba poskytovaná pro konkrétní jedinečný produkt. V Dynamics 
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Přehled číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

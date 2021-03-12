@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71ec15b2568eefd8bea99e64c258a65461a7ad95
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423606"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965623"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Skenování čárových kódů pomocí fotoaparátu v aplikaci skladu
 
@@ -55,6 +54,3 @@ Na stránce fotoaparátu po kliknutí na tlačítko fotoaparátu bude toto tlač
 
 Jestliže zaměříte fotoaparátu na čárový kód, udržujte čárový kód zarovnaný mezi čarami pro dosažení nejlepších výsledků. Při úspěšném naskenování čárového kódu bude zpracován výsledek a budete navedeni k dalšímu kroku. Pokud další krok obsahuje jiné vstupní pole s upřednostňovaným vstupním režimem nastaveným na Skenování, stránka fotoaparátu se znovu spustí. Pokud není dalším krokem skenovací pole, stránka kamery se nespustí.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

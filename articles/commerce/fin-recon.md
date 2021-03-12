@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5d0520f35391f76b52fd8a333033b0d7ba4f7fe1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410672"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965070"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Finanční odsouhlasení v maloobchodních prodejnách
 
@@ -62,6 +61,3 @@ Pokud se používá postupné účtování, jež zajišťuje oddělení účtov�
 Podrobnosti o finančním odsouhlasení za směnu jsou synchronizovány se systémem Commerce Headquarters pomocí úlohy P-job.
 
 Výkazy finančního maloobchodu v systému Commerce Headquarters nepočítají součty, jež se zobrazují v podrobnostech na řádcích výkazů. Místo toho se k tvorbě a zaúčtování maloobchodních výkazů používají finalizované částky v klientu POS.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
