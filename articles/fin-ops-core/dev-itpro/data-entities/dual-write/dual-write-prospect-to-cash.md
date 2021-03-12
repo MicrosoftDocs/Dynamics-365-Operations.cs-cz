@@ -3,7 +3,7 @@ title: Zpeněžení potenciálního zákazníka ve dvojím připisování
 description: Toto téma obsahuje informace o Zpeněžení potenciálního zákazníka ve dvojím zapisování.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683640"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959594"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -37,6 +37,11 @@ V rozhraní aplikace můžete přistupovat ke stavům zpracování a informacím
 
 ![Datový tok s dvojím zápisem ve zpeněžení potenciálního zákazníka](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Informace o integraci zákazníků a kontaktů najdete v části [Integrovaný kmenový soubor zákazníka](customer-mapping.md). Informace o integraci produktu najdete v části [Jednotná zkušenost s produktem](product-mapping.md).
+
+> [!NOTE]
+> V Dynamics 365 Sales se potenciální zákazník i zákazník odvolávají na záznam v tabulce **Účet**, kde je sloupec **Typ vztahu** buď **potenciální zákazník** nebo **Zákazník**. Pokud vaše obchodní logika obsahuje kvalifikační proces **Účet**, kde je vytvořen záznam **Účet** a je nejprve kvalifikován jako potenciální zákazník a poté jako zákazník, tento záznam se synchronizuje s aplikací Finance and Operations pouze v případě, že se jedná o zákazníka (`RelationshipType=Customer`). Pokud chcete řádek **Účet** synchronizovat jako potenciálního zákazníka, pak potřebujete vlastní mapu pro integraci dat potenciálního zákazníka.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
 Než bude možné synchronizovat prodejní nabídky, je nutné aktualizovat následující nastavení.
@@ -46,11 +51,11 @@ Než bude možné synchronizovat prodejní nabídky, je nutné aktualizovat nás
 V Sales přejděte na **Nastavení \> Správa \> Nastavení systému \> Prodej** a ujistěte se, že se používají následující nastavení:
 
 - Systémová možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
-- Pole **Metoda výpočtu slevy** je nastaveno na **Položka řádku**.
+- Sloupec **Metoda výpočtu slevy** je nastaven na **Položka řádku**.
 
 ### <a name="sites-and-warehouses"></a>Pracoviště a sklady
 
-V Supply Chain Management jsou pole **Pracoviště** a **sklad** vyžadována pro řádky nabídky a řádky objednávky. Pokud nastavíte pracoviště a sklad ve výchozím nastavení objednávky, tato pole budou automaticky nastavena při přidání produktu do řádku nabídky nebo řádku objednávky. 
+V Supply Chain Management jsou sloupce **Pracoviště** a **sklad** vyžadovány pro řádky nabídky a řádky objednávky. Pokud nastavíte pracoviště a sklad ve výchozím nastavení objednávky, tyto sloupce budou automaticky nastaveny při přidání produktu do řádku nabídky nebo řádku objednávky. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Číselné řady pro nabídky a objednávky
 
@@ -62,9 +67,9 @@ Například číselná řada v Supply Chain Management je **1, 2, 3, 4, 5,...** 
 
 Prodejní nabídky mohou být vytvořeny v aplikaci Sales nebo Supply Chain Management. Pokud vytvoříte nabídku v Sales, bude synchronizována se Supply Chain Management v reálném čase. Stejným způsobem, pokud vytvoříte nabídku v Supply Chain Management, bude synchronizována se Sales v reálném čase. Mějte na paměti následující body:
 
-+ Na nabídku můžete přidat slevu. V takovém případě bude sleva synchronizována se Supply Chain Management. Pole **Slevy**, **Náklady**, a **Daň** v hlavičce jsou kontrolována nastavením v aplikaci Supply Chain Management. Toto nastavení nepodporuje mapování integrace. Místo toho jsou pole **Cena**, **Sleva**, **Účtování** a **Daň** ponechána a zpracována aplikací Supply Chain Management.
-+ Pole **Sleva %**, **Sleva** a **Částka dopravného** jsou v záhlaví prodejní nabídk jen pro čtení.
-+ Pole **Podmínky přepravy**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
++ Na nabídku můžete přidat slevu. V takovém případě bude sleva synchronizována se Supply Chain Management. Sloupce **Slevy**, **Náklady**, a **Daň** v hlavičce jsou kontrolovány nastavením v aplikaci Supply Chain Management. Toto nastavení nepodporuje mapování integrace. Místo toho jsou sloupce **Cena**, **Sleva**, **Účtování** a **Daň** ponechány a zpracovány aplikací Supply Chain Management.
++ Sloupce **Sleva %**, **Sleva** a **Částka dopravného** jsou v záhlaví prodejní nabídky jen pro čtení.
++ Sloupce **Podmínky přepravy**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tyto sloupce mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je tabulka synchronizována.
 
 Používáte-li také řešení Field Service, ujistěte se, že jste znovu povolili parametr **Rychlé vytvoření řádky nabídky**. Opětovná aktivace parametru umožňuje pokračovat ve vytváření řádků nabídky pomocí funkce rychlého vytvoření.
 1. Přejděte k aplikaci Dynamics 365 Sales.
@@ -82,7 +87,7 @@ Prodejní obědnávky mohou být vytvořeny v aplikaci Sales nebo Supply Chain M
 + Výpočet slevy a zaokrouhlení:
 
     - Model výpočtu slevy v aplikaci Sales se liší od modelu výpočtu slevy v aplikaci Supply Chain Management. V aplikaci Supply Chain Management konečná částka slevy na řádku prodeje může být výsledkem kombinace částky slevy a procent slevy. Pokud je tato celková částka slevy podělená množstvím na řádku, může dojít k zaokrouhlení. Toto zaokrouhlení však není bráno v potaz, pokud je zaokrouhlená částka slevy na jednotku synchronizována do aplikace Sales. Chcete-li zaručit, že celková částka slevy z řádku prodeje v aplikaci Supply Chain Management je správně synchronizována do aplikace Sales, musí být celá částka synchronizována, aniž by byla podělena množstvím řádku. Proto je nutné definovat v aplikaci Sales možnost Metoda výpočtu slevy jako **Položku řádku**.
-    - Při synchronizaci řádku prodejní objednávky z aplikace Sales do aplikace Supply Chain Management se používá celková částka řádkové slevy. Protože aplikace Supply Chain Management nemá žádné pole pro uložení celé částky slevy pro řádek, je částka podělená množstvím a uložená v poli **Řádková sleva**. Jakékoliv zaokrouhlování, ke kterému dojde při tomto dělení, je uloženo v poli **Prodejní náklady** na řádku prodeje.
+    - Při synchronizaci řádku prodejní objednávky z aplikace Sales do aplikace Supply Chain Management se používá celková částka řádkové slevy. Protože aplikace Supply Chain Management nemá žádné sloupce pro uložení celé částky slevy pro řádek, je částka podělená množstvím a uložená ve sloupci **Řádková sleva**. Jakékoliv zaokrouhlování, ke kterému dojde při tomto dělení, je uloženo ve sloupci **Prodejní náklady** na řádku prodeje.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Příklad: Synchronizace ze Sales do Supply Chain Management
 
@@ -98,7 +103,7 @@ Pokud provádíte synchronizaci ze Supply Chain Management do Sales, dostanete n
 
 ## <a name="dual-write-solution-for-sales"></a>Řešení dvojího zapisování pro Sales
 
-Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Většina z těchto polí je zobrazena na kartě **Integrace** v modulu Sales. Další informace o tom, jak jsou mapována stavová pole, najdete v tématu [Nastavení mapování pro pole stavu prodejní objednávky](sales-status-map.md).
+Nové sloupce byly přidána do tabulky **Objednávka** a zobrazí na stránce. Většina z těchto sloupců je zobrazena na kartě **Integrace** v modulu Sales. Další informace o tom, jak jsou mapovány stavové sloupce, najdete v tématu [Nastavení mapování pro sloupce stavu prodejní objednávky](sales-status-map.md).
 
 + Tlačítka **Vytvořit fakturu** a **Storno objednávky** na stránce **Prodejní objednávka** jsou v Sales skryta.
 + Hodnota **Stav prodejní objednávky** zůstane **Aktivní**, aby se zajistilo, že změny z aplikace Supply Chain Management mohou být odeslány do prodejní objednávky v aplikaci Sales. Chcete-li kontrolovat toto chování, nastavte hodnotu **Statecode \[Stav\]** na **Aktivní**.
@@ -107,18 +112,18 @@ Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce. Vět
 
 Prodejní faktury jsou vytvořeny v aplikaci Supply Chain Management a jsou synchronizovány do aplikace Sales. Mějte na paměti následující body:
 
-+ Pole **Číslo faktury** bylo přidáno do entity **Faktura** a zobrazí se na stránce.
++ Sloupec **Číslo faktury** byl přidán do tabulky **Faktura** a zobrazí se na stránce.
 + Tlačítko **Vytvořit fakturu** je na stránce **Prodejní objednávka** skryto, protože faktury budou vytvořeny v aplikaci Supply Chain Management a synchronizovány do aplikace Sales. Stránku **Faktura** nelze upravovat, protože faktury budou synchronizovány z aplikace Supply Chain Management.
 + Hodnota **Stav prodejní objednávky** se změní automaticky na **Vyfakturováno**, když byla související faktura synchronizována z aplikace Supply Chain Management do aplikace Sales. Vlastník prodejní objednávky, ze které byla faktura vytvořena, je přiřazen jako vlastník faktury. Vlastník prodejní objednávky tudíž může zobrazit fakturu.
-+ Pole **Dopravní podmínky**, **Dodací podmínky** a **Způsob dodání** nejsou zahrnuta do výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
++ Sloupce **Dopravní podmínky**, **Dodací podmínky** a **Způsob dodání** nejsou zahrnuta do výchozího mapování. Pokud chcete tyto sloupce mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je tabulka synchronizována.
 
 ## <a name="templates"></a>Šablony
 
 Zpeněžení potenciálního zákazníka zahrnují kolekce map základních tabulek, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
-| Aplikace Finance and Operations | Modelem řízené aplikace v Dynamics 365 | popis |
+| Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
 |-----------------------------|-----------------------------------|-------------|
-| Záhlaví prodejní faktury V2    | faktury                          |             |
+| Záhlaví prodejní faktury V2    | faktury                          | Tabulka záhlaví prodejní faktury V2 v aplikaci Finance and Operations obsahuje faktury za prodejní objednávky a faktury s volným textem. Je použit filtr v Dataverse pro duální zápis, který odfiltruje veškeré dokumenty s volným textem na faktuře. |
 | Řádky prodejní faktury V2      | invoicedetails                    |             |
 | Záhlaví prodejní objednávky CDS     | salesorders                       |             |
 | Řádky prodejní objednávky CDS       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Zde jsou přidružená mapování základních tabulek pro zpeněžení potenci�
 + [Všechny produkty do msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Ceník](product-mapping.md)
 
+## <a name="limitations"></a>Omezení
+- Vrácené objednávky nejsou podporovány.
+- Dobropisy nejsou podporovány.
+- Je třeba nastavit finanční dimenze pro kmenová data, například zákazníka a dodavatele. Když je zákazník přidán do nabídky nebo prodejní objednávky, finanční dimenze přidružené k záznamu zákazníka se automaticky dostanou do objednávky. V současné době duální zápis nezahrnuje data finančních dimenzí pro kmenová data. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Zde jsou přidružená mapování základních tabulek pro zpeněžení potenci�
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

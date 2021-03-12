@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f4f6a3fdf07ae267f92eedd312c6c721f18429
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a7dc365bc2a317b67235f1ad01a4157089e0079d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692885"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798922"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurace schvalovacích procesů ve workflowu
 
@@ -183,6 +183,3 @@ Schvalovací proces se skládá z kroků schválení. Pomocí následujícího p
 1. V editoru workflowu poklepejte na schvalovací proces. V editoru workflowu se zobrazí kroky schvalovacího procesu.
 2. Chcete-li přidat schvalovací krok, přetáhněte krok z oblasti **Prvky workflowu** na plátno.
 3. Chcete-li nakonfigurovat schvalovací krok, získáte informace v části [Konfigurace schvalovacích kroků ve workflow](configure-approval-step-workflow.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

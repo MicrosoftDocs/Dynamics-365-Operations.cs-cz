@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4450575"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839542"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Dostupnost zásob v dvojitém zápisu
 
@@ -58,5 +58,63 @@ Dialogové okno vrací informace ATP ze Supply Chain Management. Tato informace 
 - Množství výdeje
 - Množství na skladě
 
+## <a name="how-it-works"></a>Jak to funguje
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Když vyberete tlačítko **Zásoby na skladě** na stránce **Nabídky**, **Objednávky** nebo **Faktury**, provede se živé volání rozhraní API duálního zápisu **Zásoby na skladě**. API vypočítá zásoby na skladě pro daný produkt. Výsledek se uloží do tabulek **InventCDSInventoryOnHandRequestEntity** a **InventCDSInventoryOnHandEntryEntity** a poté se zapíše do Dataverse duálním zápisem. Chcete-li použít tuto funkci, musíte spustit následující mapy duálního zápisu. Při spuštění map přeskočte počáteční synchronizaci.
+
+- Ruční záznamy o zásobách CDS (msdyn_inventoryonhandentries)
+- Ruční žádosti o zásoby CDS (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Šablony
+Následující šablony jsou k dispozici pro vystavení údajů o přímých zásobách.
+
+Aplikace Finance and Operations | Aplikace Customer Engagement | popis 
+---|---|---
+[Položky zásob na skladě CDS](#145) | msdyn_inventoryonhandentries |
+[Požadavky na zásoby na skladě CDS](#147) | msdyn_inventoryonhandrequests |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Ruční záznamy o zásobách CDS (msdyn_inventoryonhandentries)
+
+Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Dataverse.
+
+Pole aplikace Finance and Operations | Typ mapování | Pole Customer Engagement | Výchozí hodnota
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Ruční žádosti o zásoby CDS (msdyn_inventoryonhandrequests)
+
+Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Dataverse.
+
+Pole aplikace Finance and Operations | Typ mapování | Pole Customer Engagement | Výchozí hodnota
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

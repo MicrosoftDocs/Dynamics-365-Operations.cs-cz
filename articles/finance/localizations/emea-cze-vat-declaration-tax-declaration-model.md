@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.assetid: ''
 ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a3482e9ab2dbdcf068ebfeb381ad98080733b318
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bae6814c1cac06c4c1528a79903b5348338dffc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407614"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962878"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -753,6 +752,3 @@ Následující postup představuje příklad, jak zaúčtovat opravu odpočtu DP
     |------------------------|-----------------|----------------------|
     | VATDeductionCorrection | CORR            | Nákup             |
     | VATDeductionCorrection | CORR            | Nákupní dobropis |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

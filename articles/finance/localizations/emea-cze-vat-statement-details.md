@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263614
 ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 374c51306446e3d02d06bdfd95b73ba2af5ec509
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 8dfd0f23008cd72c0aa359ef1024983a2f1fd080
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4407628"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962819"
 ---
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
@@ -148,6 +147,3 @@ Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH**, vybert
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

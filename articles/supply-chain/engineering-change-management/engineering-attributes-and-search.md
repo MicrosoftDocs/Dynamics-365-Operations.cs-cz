@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 5a4f31af3f76c1af6a0f5546955e810bd1cca375
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424271"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963681"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technické atributy a vyhledávání technických atributů
 
@@ -94,6 +93,3 @@ Musíte určit technickou kategorii, do které produkt patří. Kategorie nastav
 Můžete použít vyhledávání technických atributů k vyhledání produktů hledáním jejich hodnot technických atributů. Proto můžete snadno najít technické produkty na základě jejich vlastností. Můžete vyhledávat v produktech, které patří do kategorie technických produktů nebo prohledat všechny technické produkty.
 
 Hledání je k dispozici na stránkách hlavních dat produktu a z transakčních položek v systému, například prodejních objednávek. U transakční položky můžete použít stránku **Hledání technických atributů** pro vyhledání produktu. Poté můžete použít tlačítko **Přidat jako nový řádek** pro přidání produktu na řádky prodejní objednávky. Produkty ve výsledcích vyhledávání lze také přidat přímo do objednávky.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423628"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963731"
 ---
 # <a name="weighted-average-date"></a>Datum váženého průměru
 
@@ -38,7 +37,7 @@ Pokud dojde pouze k jednomu příjmu k datu nebo před ním, není nutné počí
 
 Následující vzorec se používá pro výpočet nákladové metody s datem váženého průměru: 
 
-Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
+Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
 
 Při uzávěrce skladu je výpočet proveden denně prostřednictvím období uzávěrky, jak je uvedeno na následujícím obrázku. 
 
@@ -51,10 +50,10 @@ Skladové transakce, které opustí sklad, jako například prodejní objednávk
 
 Jako vyrovnání jsou označována zaúčtování uzávěrky skladu, při nichž jsou výdeje přiřazeny ke správnému váženému průměru k datu uzávěrky. 
 
-**Poznámka:** Další informace o vyrovnání naleznete v článku o skladových uzávěrkách. V následujících příkladech je znázorněn dopad použití váženého průměru v pěti konfiguracích:
+**Poznámka:** Další informace o vyrovnání naleznete v článku o skladových uzávěrkách. V následujících příkladech je znázorněn dopad použití váženého průměru v pěti konfiguracích:
 
 -   Přímé vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
--   Souhrnné vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
+-   Souhrnné vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**.
 -   Přímé vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
 -   Souhrnné vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
 -   Datum váženého průměru s použitím označení
@@ -196,6 +195,3 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

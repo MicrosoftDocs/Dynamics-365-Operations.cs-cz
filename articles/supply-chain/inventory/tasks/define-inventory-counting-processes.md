@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9df5db0e71f550e82820e15b1597d9e287071f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c8550e539a1b3299d89ec2b13550a13e284d807
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424076"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961364"
 ---
 # <a name="define-inventory-counting-processes"></a>Definování procesů inventur zásob
 
@@ -85,6 +84,3 @@ Toto téma popisuje konfiguraci základního inventurního procesu vytvořením 
 5. V rozevírací nabídce pole **Skupina inventury** vyberte skupinu inventury. Můžete vybrat konkrétní inventurní skupinu, která má být použita pro položku v určitém skladu, který jste vybrali. Při provádění inventury skladu tato zásada inventury přepíše hlavní zásady inventury pro položku.  
 6. Zvolte **Uložit**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

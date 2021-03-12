@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410688"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963103"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
@@ -95,6 +94,3 @@ Volitelně můžete propojit kód urychleného zpracování u libovolného způs
 Například pro objednávky, které budou expedovány letecky další den, výdej je zapotřebí provést ze skladu do 13: 00 každý den. V takovém případě lze vytvořit kód urychleného zpracování a kód lze spojit s libovolným způsobem dodání další den, konfigurovaným v systému. Když se ve skladu vytvoří vlna výdeje, příslušný kód urychleného zpracování v poli **urychlené zpracování** lze použít jako filtr, aby byl běh výdeje jen pro objednávky, které mají způsob dodání spojený s tímto kódem.
 
 Dále platí, že při zadání objednávky kontaktního střediska, lze kód urychleného zpracování použít ručně v záhlaví prodejní objednávky nebo na samostatném řádku prodejní objednávky. Kód lze použít k třídění nebo pro účely vykazování. V některých případech musí být objednávka zpracována pečlivě z důvodu problému se službou odběratele. V takovém případě lze v záhlaví nebo na řádkách objednávky použít konkrétní kód urychleného zpracování na pomoc se stanovením prioritního pořadí při procesu plnění.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

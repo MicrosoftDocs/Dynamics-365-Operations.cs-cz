@@ -3,7 +3,7 @@ title: Vytváření a aktualizace časových úseků pro vyzvednutí zákazníke
 description: V tomto tématu je popsán postup při vytváření, konfiguraci a aktualizaci časových úseků vyzvednutí zákazníkem v centrále Commerce.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 11/06/2020
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: f86eb47ec64dff230223ed0ecbe792373aca649f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681535"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828204"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem
 
@@ -49,17 +49,15 @@ Následující obrázek ukazuje příklad výběru časového úseku na pokladn�
 
     Vlastnost **Minimální počet dní** zajišťuje, že maloobchodník má dostatek času na zpracování objednávky, než bude připravena k vyzvednutí. Vlastnost **Maximální počet dní** zajišťuje, že uživatel nemůže vybrat datum, které je příliš daleko v budoucnosti. Například pokud je minimální hodnota nastavena na **1** a objednávka je podána 20. září, nejdřívější den, kdy bude objednávka dostupná k vyzvednutí, je následující možný den (21. září). Podobným způsobem můžete nastavením maximální hodnoty definovat maximální počet dní, po které lze objednávku vyzvednout. Když jsou definovány minimální a maximální hodnoty, uživatelé webu mohou během procesu placení zobrazit a vybrat pouze konkrétní sadu dnů.
 
-    Minimální hodnotu můžete nastavit na desetinnou hodnotu, která je menší než 1. Pokud je například vyzvednutí k dispozici čtyři hodiny po zadání objednávky, nastavte minimální hodnotu na **0,17** (= 4 ÷ 24, zaokrouhleno nahoru na dvě desetinná místa). Pokud však nastavíte minimální hodnotu na desetinnou hodnotu, která je větší než 1, vždy se zaokrouhlí na nejbližší celé číslo (nahoru nebo dolů).
-
-    Pokud nastavíte maximální hodnotu na desetinnou, vždy se zaokrouhlí nahoru. Například hodnota **1,2** bude zaokrouhlena na **2**.
+    Minimální hodnotu můžete nastavit na desetinnou hodnotu, která je menší než 1. Pokud je například vyzvednutí k dispozici čtyři hodiny po zadání objednávky, nastavte minimální hodnotu na **0,17** (= 4 ÷ 24, zaokrouhleno nahoru na dvě desetinná místa). Pokud však nastavíte minimální hodnotu na desetinnou hodnotu, která je větší než 1, vždy se zaokrouhlí nahoru na nejbližší celé číslo. Například hodnota **1,2** bude zaokrouhlena na **2**. Podobně, pokud nastavíte maximální hodnotu na desetinnou hodnotu, vždy se zaokrouhlí nahoru na nejbližší celé číslo. 
 
 - **Počáteční datum** a **Koncové datum** – Zadejte počáteční a koncové datum časového úseku. Každá položka časového úseku má počáteční a koncové datum. Proto máte flexibilitu pro přidávání různých časových úseků po celý rok (například vyzvednutí během svátků). Pokud se po zadání objednávky změní počáteční a koncové datum časového úseku, změny se na danou objednávku nebudou vztahovat. Když definujete počáteční a koncové datum, musíte zvážit data uzavření obchodu (například Boží hod vánoční) a zajistit, aby pro tyto dny nebyly definovány časové úseky.
-- **Aktivní hodiny doručení** – Zadejte období, kdy je vyzvednutí povoleno. Například časy vyzvednutí mohou být každý den mezi 14:00 a 17:00. Tato vlastnost umožňuje, aby časy vyzvednutí byly nezávislé na hodinách obchodu. Proto může maloobchodník nakonfigurovat časy vyzvednutí, které splňují jeho specifické obchodní požadavky. Když definujete aktivní hodiny vyzvednutí, musíte vzít v úvahu provozní hodiny obchodu a zajistit, aby časy vyzvednutí nebyly definovány pro časy, kdy je obchod zavřený.
+- **Aktivní hodiny vyzvednutí** – Zadejte období, kdy je vyzvednutí povoleno. Například časy vyzvednutí mohou být každý den mezi 14:00 a 17:00. Tato vlastnost umožňuje, aby časy vyzvednutí byly nezávislé na hodinách obchodu. Proto může maloobchodník nakonfigurovat časy vyzvednutí, které splňují jeho specifické obchodní požadavky. Když definujete aktivní hodiny vyzvednutí, musíte vzít v úvahu provozní hodiny obchodu a zajistit, aby časy vyzvednutí nebyly definovány pro časy, kdy je obchod zavřený.
 
     > [!NOTE]
     > Hodiny vyzvednutí v obchodě musí být definovány v časovém pásmu příslušného obchodu.
 
-- **Interval časového úseku** – Zadejte dobu trvání jednotlivých časových úseků. Například doba trvání každého časového úseku může být v přírůstcích po 15 minutách, 30 minutách nebo jedné hodině.
+- **Interval časového úseku** – Zadejte dobu trvání jednotlivých časových úseků. Například doba trvání každého časového úseku může být v přírůstcích po 15 minutách, 30 minutách nebo jedné hodině. Pokud je hodnota časového úseku 0, je časový úsek k dispozici po celou dobu mezi počátečním a koncovým časem.
 - **Úseky na interval** – Zadejte počet zákazníků nebo objednávek, které mohou být obslouženy k vyzvednutí během každého intervalu časového úseku. Například zadejte **1**, **2**, **3** nebo jakékoli jiné celé číslo.
 - **Aktivní dny** – Zadejte dny v týdnu, kdy jsou aktivní časové úseky vyzvednutí. Tato vlastnost umožňuje maloobchodníkovi definovat dny, kdy chce podporovat vyzvednutí objednávek.
 - **Maloobchodní kanály** – Zadejte maloobchodní kanály. Každý časový úsek může být přidružen k jednomu nebo více maloobchodním obchodům. V závislosti na provozních hodinách každého obchodu lze vytvořit jeden nebo více položek časových úseků a přidružit je ke kanálu. 
@@ -84,7 +82,7 @@ Konfiguraci funkce časového úseku v centrále Commerce provedete následovně
 1. Na záložce s náhledem **Vyzvednutí objednávky – nastavení času** vyberte **Přidat**.
 1. V dialogovém okně **Vyzvednutí objednávky – nastavení času** definujte rozsah dat, způsob doručení, aktivní hodiny doručení, aktivní dny, interval časového úseku, úseky na interval a další nastavení.
 
-    Pokud budou časové úseky v dohledné budoucnosti statické, ponechte pole **Koncové datum** prázdné.
+    Pokud budou časové úseky v dohledné budoucnosti statické, nastavte pole **Koncové datum** na **Nikdy**.
 
     > [!NOTE]
     > Můžete vytvořit více šablon, ale k jednomu kanálu nebo obchodu lze přidružit pouze jednu šablonu.
@@ -120,9 +118,12 @@ Následující obrázek ukazuje příklad objednávky elektronického obchodu, k
 
 ![Příklad objednávky elektronického obchodu, kde byl vybrán časový úsek vyzvednutí](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
+## <a name="time-slot-selection-for-call-center-orders"></a>Výběr časového úseku pro objednávky kontaktního střediska
+
+V aplikaci kontaktního střediska mohou agenti kontaktního střediska vybrat obchod nebo umístění pro vyzvednutí, stejně jako datum a časový úsek, jak je zvýrazněno na následujícím obrázku.
+
+![Příklad objednávky kontaktního střediska, kde byl vybrán časový úsek vyzvednutí](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Modul informací o vyzvednutí](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

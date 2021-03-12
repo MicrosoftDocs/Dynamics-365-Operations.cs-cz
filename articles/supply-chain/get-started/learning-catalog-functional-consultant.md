@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 601977cc5b8aa992b8576d30eb1412fb4e119154
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963628"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Katalog kurzů pro funkční konzultanty Dynamics 365 Supply Chain Management
 
@@ -114,6 +113,3 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 | [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. |
 | [Zkouška MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: Implementace správy informací o produktu; implementace řízení zásob; implementace a správa procesů dodavatelských řetězců a implementace řízení skladu a přepravy a provádění obchodních procesů. | Zkouška; náklady se liší podle oblasti. |
 | [Zkouška MB-320: Microsoft Dynamics 365 for Finance and Operations, výroba](https://www.microsoft.com/learning/exam-MB-320.aspx) | Tato zkouška měří schopnost plnit následující technické úkoly: nastavení a konfigurace výroby; vytvoření a správa výrobních a štíhlých objednávek; a vytváření, zpracování a správa výrobních dávkových objednávek. | Zkouška; náklady se liší podle oblasti. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

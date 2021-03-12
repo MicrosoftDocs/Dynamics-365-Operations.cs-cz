@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 109c047a35154f6d4c0ebcd71e1c72990d0f4971
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693371"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798798"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurace ručních úloh ve workflow
 
@@ -381,6 +381,3 @@ Po přiřazení ruční úlohy uživateli musí uživatel danou úlohu zpracovat
 5. Chcete-li uživateli umožnit, aby úlohu postoupil jinému uživateli, zaškrtněte políčko **Delegovat**.
 6. Chcete-li uživateli umožnit, aby úlohu přeřadil jinému uživateli ve frontě pracovních položek, označte pole **Znovu přiřadit**.
 7. Chcete-li uživateli umožnit, aby úlohu přeřadil do fronty pracovních položek, označte pole **Uvolnit**. Jiný uživatel pak může úkol dokončit.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

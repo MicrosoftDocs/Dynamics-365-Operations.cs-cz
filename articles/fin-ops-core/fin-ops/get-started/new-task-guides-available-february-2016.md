@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74d5b92f8f8864544e6b333bd957206f02a2503f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 39e6d6bf4161641ae22de56dac69bc6217649878
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695082"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799080"
 ---
 # <a name="new-task-guides-february-2016"></a>Noví průvodci úkolem (únor 2016)
 
@@ -645,6 +645,3 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)](new-task-guides-november-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
