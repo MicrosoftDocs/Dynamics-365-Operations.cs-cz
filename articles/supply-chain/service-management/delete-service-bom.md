@@ -11,44 +11,43 @@ ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 482e2cc4dee22d3c4cc28819a3aa3c47b6349bb5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423731"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996619"
 ---
-# <a name="delete-a-service-bom"></a><span data-ttu-id="b895e-103">Odstranění servisního kusovníku</span><span class="sxs-lookup"><span data-stu-id="b895e-103">Delete a service BOM</span></span> 
+# <a name="delete-a-service-bom"></a><span data-ttu-id="3eb36-103">Odstranění servisního kusovníku</span><span class="sxs-lookup"><span data-stu-id="3eb36-103">Delete a service BOM</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="b895e-104">Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.</span><span class="sxs-lookup"><span data-stu-id="b895e-104">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="b895e-105">Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).</span><span class="sxs-lookup"><span data-stu-id="b895e-105">Select the service agreement that you want to delete a service bill of materials (BOM) from.</span></span>
+1.  <span data-ttu-id="3eb36-104">Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.</span><span class="sxs-lookup"><span data-stu-id="3eb36-104">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="3eb36-105">Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).</span><span class="sxs-lookup"><span data-stu-id="3eb36-105">Select the service agreement that you want to delete a service bill of materials (BOM) from.</span></span>
 
-2.  <span data-ttu-id="b895e-106">V **podokně akcí** klikněte na položku **předměty servisu**.</span><span class="sxs-lookup"><span data-stu-id="b895e-106">On the **Action Pane**, click **Service objects**.</span></span>
+2.  <span data-ttu-id="3eb36-106">V **podokně akcí** klikněte na položku **předměty servisu**.</span><span class="sxs-lookup"><span data-stu-id="3eb36-106">On the **Action Pane**, click **Service objects**.</span></span>
 
-3.  <span data-ttu-id="b895e-107">Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník.</span><span class="sxs-lookup"><span data-stu-id="b895e-107">In the **Service objects** form, select the service object that you want to delete a service BOM from.</span></span> <span data-ttu-id="b895e-108">Klepněte na tlačítko **funkce** a poté vyberte **odstranit servisní Kusovník**.</span><span class="sxs-lookup"><span data-stu-id="b895e-108">Click **Functions**, and then select **Delete service BOM**.</span></span>
+3.  <span data-ttu-id="3eb36-107">Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník.</span><span class="sxs-lookup"><span data-stu-id="3eb36-107">In the **Service objects** form, select the service object that you want to delete a service BOM from.</span></span> <span data-ttu-id="3eb36-108">Klepněte na tlačítko **funkce** a poté vyberte **odstranit servisní Kusovník**.</span><span class="sxs-lookup"><span data-stu-id="3eb36-108">Click **Functions**, and then select **Delete service BOM**.</span></span>
 
-4.  <span data-ttu-id="b895e-109">Klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="b895e-109">Click **Yes**.</span></span>
+4.  <span data-ttu-id="3eb36-109">Klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="3eb36-109">Click **Yes**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="b895e-110">Pokud jste nepoužili kusovník šablon, lze servisní kusovník odstranit z formuláře <STRONG>Kusovníky šablony</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="b895e-110">If you have not applied a template BOM, the service BOM can be deleted from the <STRONG>Template BOMs</STRONG> form.</span></span> <span data-ttu-id="b895e-111">Pokud jste pro servisní kusovník šablonu použili, nebude možné jej tímto způsobem odstranit.</span><span class="sxs-lookup"><span data-stu-id="b895e-111">If you have applied a template BOM, the service BOM cannot be deleted by using this method.</span></span></P>
+> <P><span data-ttu-id="3eb36-110">Pokud jste nepoužili kusovník šablon, lze servisní kusovník odstranit z formuláře <STRONG>Kusovníky šablony</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="3eb36-110">If you have not applied a template BOM, the service BOM can be deleted from the <STRONG>Template BOMs</STRONG> form.</span></span> <span data-ttu-id="3eb36-111">Pokud jste pro servisní kusovník šablonu použili, nebude možné jej tímto způsobem odstranit.</span><span class="sxs-lookup"><span data-stu-id="3eb36-111">If you have applied a template BOM, the service BOM cannot be deleted by using this method.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b895e-112">Viz také</span><span class="sxs-lookup"><span data-stu-id="b895e-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3eb36-112">Viz také</span><span class="sxs-lookup"><span data-stu-id="3eb36-112">See also</span></span>
 
-[<span data-ttu-id="b895e-113">Kusovníky šablony</span><span class="sxs-lookup"><span data-stu-id="b895e-113">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="3eb36-113">Kusovníky šablony</span><span class="sxs-lookup"><span data-stu-id="3eb36-113">Template BOMs</span></span>](template-boms.md)
 
-[<span data-ttu-id="b895e-114">Správa šablon kusovníku pro vztahy předmětu</span><span class="sxs-lookup"><span data-stu-id="b895e-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
+[<span data-ttu-id="3eb36-114">Správa šablon kusovníku pro vztahy předmětu</span><span class="sxs-lookup"><span data-stu-id="3eb36-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
 
   
 
