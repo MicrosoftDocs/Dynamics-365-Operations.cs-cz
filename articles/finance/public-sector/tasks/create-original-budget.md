@@ -1,6 +1,6 @@
 ---
 title: Vytvoření původního rozpočtu a pak stornování předběžných položek registru pro veřejný sektor
-description: Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat.
+description: Toto téma poskytuje informace o tom, jak vytvořit a vrátit původní položku rozpočtu pomocí rozpočtového modelu a hodnot dimenzí, které mají předběžné částky rozpočtu.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,43 +11,42 @@ ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32d89216d49a743729de8910f738276cbddcd8bb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 134e2ca851d72965198026107817c66a808ac705
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441249"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987947"
 ---
-# <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="242a7-103">Vytvoření původního rozpočtu a pak stornování předběžných položek registru pro veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="242a7-103">Create an original budget and then reverse preliminary budget entries in the public sector</span></span>
+# <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="ce222-103">Vytvoření původního rozpočtu a pak stornování předběžných položek registru pro veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="ce222-103">Create an original budget and then reverse preliminary budget entries in the public sector</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="242a7-104">Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat.</span><span class="sxs-lookup"><span data-stu-id="242a7-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="242a7-105">Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.</span><span class="sxs-lookup"><span data-stu-id="242a7-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="ce222-104">Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat.</span><span class="sxs-lookup"><span data-stu-id="ce222-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="ce222-105">Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.</span><span class="sxs-lookup"><span data-stu-id="ce222-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="242a7-106">Přejděte na Rozpočtování > Položky registru rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="242a7-106">Go to Budgeting > Budget register entries.</span></span>
-2. <span data-ttu-id="242a7-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="242a7-107">Click New.</span></span>
-3. <span data-ttu-id="242a7-108">V poli Rozpočtový model kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242a7-108">In the Budget model field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="242a7-109">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="242a7-109">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="242a7-110">V poli Kód rozpočtu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242a7-110">In the Budget code field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="242a7-111">Klikněte na možnost Původní rozpočet na seznamu.</span><span class="sxs-lookup"><span data-stu-id="242a7-111">In the list, click Original budget.</span></span>
-7. <span data-ttu-id="242a7-112">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="242a7-112">Click Save.</span></span>
-8. <span data-ttu-id="242a7-113">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="242a7-113">Click Add line.</span></span>
-9. <span data-ttu-id="242a7-114">Volitelné: Pokud chcete změnit datum na jiné, než je datum v záhlaví, zadejte nové datum.</span><span class="sxs-lookup"><span data-stu-id="242a7-114">Optional: If you want to change the date from the one in the header, enter a new date.</span></span> <span data-ttu-id="242a7-115">Toto datum určuje fiskální období, pro které je zaznamenán rozpočet.</span><span class="sxs-lookup"><span data-stu-id="242a7-115">This date determines the fiscal period that the budget will be recorded to.</span></span>
-10. <span data-ttu-id="242a7-116">V poli Účetní struktura klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242a7-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="242a7-117">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="242a7-117">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="242a7-118">Zadejte požadované hodnoty do pole Hodnoty dimenzí.</span><span class="sxs-lookup"><span data-stu-id="242a7-118">In the Dimension values field, specify the desired values.</span></span>
-13. <span data-ttu-id="242a7-119">Zadejte číslo do pole Částka.</span><span class="sxs-lookup"><span data-stu-id="242a7-119">In the Amount field, enter a number.</span></span>
-14. <span data-ttu-id="242a7-120">V poli Měna kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242a7-120">In the Currency field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="242a7-121">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="242a7-121">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="242a7-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="242a7-122">Click Save.</span></span>
-17. <span data-ttu-id="242a7-123">Klikněte na možnost Aktualizovat zůstatky rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="242a7-123">Click Update budget balances.</span></span>
-    * <span data-ttu-id="242a7-124">Volitelné: Můžete vybrat možnost Stornovat předběžný rozpočet.</span><span class="sxs-lookup"><span data-stu-id="242a7-124">Optional: You can select the Reverse preliminary budget option.</span></span> <span data-ttu-id="242a7-125">Poznámka: Stornovat můžete všechny předběžné položky rozpočtu, nebo pouze předběžné položky rozpočtu, které mají vámi zadaný kód rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="242a7-125">Note that you can reverse all preliminary budget entries, or only the preliminary budget entries that have the budget code that you specify.</span></span>  
-    * <span data-ttu-id="242a7-126">Chcete-li provádět volitelné výběry, klikněte na ikonu Odemknout v horní části stránky.</span><span class="sxs-lookup"><span data-stu-id="242a7-126">To make optional selections, click the Unlock icon at the top of the page.</span></span>  
-18. <span data-ttu-id="242a7-127">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="242a7-127">Click Update.</span></span>
+1. <span data-ttu-id="ce222-106">Přejděte na Rozpočtování > Položky registru rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="ce222-106">Go to Budgeting > Budget register entries.</span></span>
+2. <span data-ttu-id="ce222-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="ce222-107">Click New.</span></span>
+3. <span data-ttu-id="ce222-108">V poli Rozpočtový model kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="ce222-108">In the Budget model field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="ce222-109">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ce222-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="ce222-110">V poli Kód rozpočtu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="ce222-110">In the Budget code field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="ce222-111">Klikněte na možnost Původní rozpočet na seznamu.</span><span class="sxs-lookup"><span data-stu-id="ce222-111">In the list, click Original budget.</span></span>
+7. <span data-ttu-id="ce222-112">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="ce222-112">Click Save.</span></span>
+8. <span data-ttu-id="ce222-113">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="ce222-113">Click Add line.</span></span>
+9. <span data-ttu-id="ce222-114">Volitelné: Pokud chcete změnit datum na jiné, než je datum v záhlaví, zadejte nové datum.</span><span class="sxs-lookup"><span data-stu-id="ce222-114">Optional: If you want to change the date from the one in the header, enter a new date.</span></span> <span data-ttu-id="ce222-115">Toto datum určuje fiskální období, pro které je zaznamenán rozpočet.</span><span class="sxs-lookup"><span data-stu-id="ce222-115">This date determines the fiscal period that the budget will be recorded to.</span></span>
+10. <span data-ttu-id="ce222-116">V poli Účetní struktura klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="ce222-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="ce222-117">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ce222-117">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="ce222-118">Zadejte požadované hodnoty do pole Hodnoty dimenzí.</span><span class="sxs-lookup"><span data-stu-id="ce222-118">In the Dimension values field, specify the desired values.</span></span>
+13. <span data-ttu-id="ce222-119">Zadejte číslo do pole Částka.</span><span class="sxs-lookup"><span data-stu-id="ce222-119">In the Amount field, enter a number.</span></span>
+14. <span data-ttu-id="ce222-120">V poli Měna kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="ce222-120">In the Currency field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="ce222-121">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="ce222-121">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="ce222-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="ce222-122">Click Save.</span></span>
+17. <span data-ttu-id="ce222-123">Klikněte na možnost Aktualizovat zůstatky rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="ce222-123">Click Update budget balances.</span></span>
+    * <span data-ttu-id="ce222-124">Volitelné: Můžete vybrat možnost Stornovat předběžný rozpočet.</span><span class="sxs-lookup"><span data-stu-id="ce222-124">Optional: You can select the Reverse preliminary budget option.</span></span> <span data-ttu-id="ce222-125">Poznámka: Stornovat můžete všechny předběžné položky rozpočtu, nebo pouze předběžné položky rozpočtu, které mají vámi zadaný kód rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="ce222-125">Note that you can reverse all preliminary budget entries, or only the preliminary budget entries that have the budget code that you specify.</span></span>  
+    * <span data-ttu-id="ce222-126">Chcete-li provádět volitelné výběry, klikněte na ikonu Odemknout v horní části stránky.</span><span class="sxs-lookup"><span data-stu-id="ce222-126">To make optional selections, click the Unlock icon at the top of the page.</span></span>  
+18. <span data-ttu-id="ce222-127">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="ce222-127">Click Update.</span></span>
 

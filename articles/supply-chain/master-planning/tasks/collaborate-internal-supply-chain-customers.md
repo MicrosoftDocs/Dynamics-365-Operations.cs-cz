@@ -11,35 +11,34 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84c42e550d51e40b7f777c3da67ed765519ddfd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f39f487ea29bf923c82c08aff56ff5350da0810e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423835"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987222"
 ---
-# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="3ab5f-103">Spolupráce s odběrateli interního dodavatelského řetězce</span><span class="sxs-lookup"><span data-stu-id="3ab5f-103">Collaborate with internal supply chain customers</span></span>
+# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="0cce4-103">Spolupráce s odběrateli interního dodavatelského řetězce</span><span class="sxs-lookup"><span data-stu-id="0cce4-103">Collaborate with internal supply chain customers</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3ab5f-104">Tato procedura ukazuje, jak zobrazit všechny plánované objednávky, které budou splněny mezipodnikovým dodavatelem.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="3ab5f-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="0cce4-104">Tato procedura ukazuje, jak zobrazit všechny plánované objednávky, které budou splněny mezipodnikovým dodavatelem.</span><span class="sxs-lookup"><span data-stu-id="0cce4-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="0cce4-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="0cce4-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. <span data-ttu-id="3ab5f-106">Klikněte na Hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-106">Click Master planning.</span></span>
-2. <span data-ttu-id="3ab5f-107">V poli Plán zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-107">In the Plan field, enter or select a value.</span></span>
-    * <span data-ttu-id="3ab5f-108">V poli Plán vyberte plán 10.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-108">In the Plan field, select plan 10.</span></span>  
-3. <span data-ttu-id="3ab5f-109">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-109">Click Run.</span></span>
-4. <span data-ttu-id="3ab5f-110">Do pole Počet vláken zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-110">In the Number of threads field, enter a number.</span></span>
-    * <span data-ttu-id="3ab5f-111">To představuje počet paralelních podprocesů použitých pro hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-111">This represents the number of parallel threads to be used for master planning.</span></span>  
-5. <span data-ttu-id="3ab5f-112">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-112">Click OK.</span></span>
-    * <span data-ttu-id="3ab5f-113">Tato operace může chvíli trvat.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-113">This may take a while.</span></span>  
-6. <span data-ttu-id="3ab5f-114">Klikněte na Plánovaná mezipodniková poptávka.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-114">Click Planned intercompany demand.</span></span>
-7. <span data-ttu-id="3ab5f-115">Klikněte na Zobrazit výstupní plánovanou mezipodnikovou poptávku.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-115">Click Outbound planned intercompany demand.</span></span>
-    * <span data-ttu-id="3ab5f-116">Tato stránka obsahuje přehled plánované poptávky, kterou splní dodavatel interního zásobovacího řetězce.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
-8. <span data-ttu-id="3ab5f-117">Rozbalte část Podrobnosti nadřazené poptávky.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-117">Expand the Upstream demand details section.</span></span>
-    * <span data-ttu-id="3ab5f-118">V této části můžete zobrazit podrobnosti o tom, jak bude splněna poptávka.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="3ab5f-119">Než se zde zobrazí další informace, budete muset počkat na spuštění hlavního plánování v dodavatelské společnosti.</span><span class="sxs-lookup"><span data-stu-id="3ab5f-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
+1. <span data-ttu-id="0cce4-106">Klikněte na Hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="0cce4-106">Click Master planning.</span></span>
+2. <span data-ttu-id="0cce4-107">V poli Plán zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0cce4-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="0cce4-108">V poli Plán vyberte plán 10.</span><span class="sxs-lookup"><span data-stu-id="0cce4-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="0cce4-109">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="0cce4-109">Click Run.</span></span>
+4. <span data-ttu-id="0cce4-110">Do pole Počet vláken zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="0cce4-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="0cce4-111">To představuje počet paralelních podprocesů použitých pro hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="0cce4-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="0cce4-112">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0cce4-112">Click OK.</span></span>
+    * <span data-ttu-id="0cce4-113">Tato operace může chvíli trvat.</span><span class="sxs-lookup"><span data-stu-id="0cce4-113">This may take a while.</span></span>  
+6. <span data-ttu-id="0cce4-114">Klikněte na Plánovaná mezipodniková poptávka.</span><span class="sxs-lookup"><span data-stu-id="0cce4-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="0cce4-115">Klikněte na Zobrazit výstupní plánovanou mezipodnikovou poptávku.</span><span class="sxs-lookup"><span data-stu-id="0cce4-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="0cce4-116">Tato stránka obsahuje přehled plánované poptávky, kterou splní dodavatel interního zásobovacího řetězce.</span><span class="sxs-lookup"><span data-stu-id="0cce4-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="0cce4-117">Rozbalte část Podrobnosti nadřazené poptávky.</span><span class="sxs-lookup"><span data-stu-id="0cce4-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="0cce4-118">V této části můžete zobrazit podrobnosti o tom, jak bude splněna poptávka.</span><span class="sxs-lookup"><span data-stu-id="0cce4-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="0cce4-119">Než se zde zobrazí další informace, budete muset počkat na spuštění hlavního plánování v dodavatelské společnosti.</span><span class="sxs-lookup"><span data-stu-id="0cce4-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 
