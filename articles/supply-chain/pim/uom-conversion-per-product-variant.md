@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424101"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001692"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
@@ -59,7 +58,7 @@ Chcete-li nakonfigurovat předlohu produktu tak, aby podporovala převod jednotk
     - **Produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro základní produkt. Tento převod jednotek bude použit jako záložní pro všechny varianty produktů, pro které není definovaný žádný převod jednotek.
     - **Varianta produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro určitou variantu produktu. Použijte pole **Varianta produktu** k výběru varianty.
 
-    ![![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")
 
 1. K nastavení převodu jednotek použijte další pole, která jsou k dispozici.
 1. Vyberte **OK** k uložení nového převodu jednotek.
@@ -107,6 +106,3 @@ Chcete-li exportovat jednotkové převody do Excelu, na stránce **Převody jedn
 ## <a name="additional-resources"></a>Další prostředky
 
 [Správa měrných jednotek](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

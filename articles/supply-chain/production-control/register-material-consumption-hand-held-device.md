@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424094"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998871"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrace spotřeby materiálu pomocí mobilního zařízení
 
@@ -40,7 +39,7 @@ Tento workflow platí v případě, že existují přísné požadavky na sledov
 
 Proces souvislé výroby (5) spotřebovává surovinu RM-100 řízenou dávkou. Materiál je k dispozici v umístění Bulk-001 (1) pro registrační značku vozidla PL-1 se dvěma dávkami, B1 a B2, z nichž obě mají množství 100 kg. Práce ve skladu (2) je uvolněna a zpracována pro RM-100 a materiál je vyzvednut ze skladu Bulk-001 do vstupního místa výroby PIL-01 (3), které je definováno jako místo neřízené registrační značkou. Obsluha stroje zváží materiál ze vstupního místa výroby (3) a registruje hmotnost a číslo dávky jako spotřebované (4). Ze vstupního místa výroby je část materiálu ručně vložena do výrobního procesu v definovaných časových intervalech. Když obsluha stroje přidá materiál, je zvážen na váze a zaregistruje se číslo dávky.
 
-## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Nastavení workflowu při registraci spotřeby pomocí ručního zařízení
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Nastavení workflowu při registraci spotřeby pomocí ručního zařízení
 Vytvořte produkt dokončené výroby FG-100 s kusovníkem, kde je surovina řízenou dávkou RM-100. Přidejte dvě dávky B1 a B2 RM-100 v množství 100 do umístění: Bulk-001 s registrační značkou: PL-1. Princip vyprazdňování na řádku kusovníku pro RM-100 kusovníku je nastaven na **ruční**. Nastavte výchozí umístění výrobního vstupu na PIL-01. To můžete provést výběrem tohoto skladového místa jako vstupního místa výroby ve skladu 51.
 
 1.  Vytvoření nové položky nabídky mobilních zařízení: 
@@ -68,7 +67,7 @@ To přenese materiál z velkoskladu do vstupního místa výroby PIL 01. Po doko
 
 Po spuštění výrobní zakázky můžete zaregistrovat spotřeby materiálu s workflowem pro ručním zařízení. Začněme registrací spotřeby 25 kg dávky B1.
 
-6.  Vyberte položku nabídky  **Zaregistrovat materiál** **spotřeba** pro ruční zařízení a zadejte následující informace: 
+6.  Vyberte položku nabídky **Zaregistrovat materiál** **spotřeba** pro ruční zařízení a zadejte následující informace: 
 
 -    Číslo výrobní zakázky  
 -    Skladové místo, ve kterém se bude materiál spotřebovávat, je v tomto případě PIL-01. 
@@ -92,6 +91,3 @@ Po dokončení registrace vyberte možnost **Hotovo** k zaúčtování deníku a
 -   Může dojít k vyčerpání materiálu. Například pokud má být spotřebováno množství 100 kg materiálu, poté ji může být vyčerpán, pokud je množství například 105 kg.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

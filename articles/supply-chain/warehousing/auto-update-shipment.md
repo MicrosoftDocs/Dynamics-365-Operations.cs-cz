@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f75e9421ab9cac0b62e1cdee17ecf74796783cc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423611"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001217"
 ---
 # <a name="shipment-auto-updates"></a>Automatické aktualizace dodávek
 
@@ -140,6 +139,3 @@ Vlna se zpracuje a vytvoří práci pro rezervovaná množství na řádcích vy
 Pokud má dodávka stav **Zařazeno do vlny** nebo vyšší, aktualizace množství na řádku prodejní objednávky se neodrazí ani se neověřuje podle řádku vytížení, který je přiřazen k dodávce. Změny množství na řádku vytížení musí být provedeny přímo na řádku vytížení.
 
 Ověření je provedeno po vytvoření práce pro řádek vytížení a po provedení rezervace. Snížení množství na řádku prodejní objednávky se ověří podle rezervace řádku práce.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

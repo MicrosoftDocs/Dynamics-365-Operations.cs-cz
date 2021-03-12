@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e71cfd451a51a5dabd12419541202ecc39df631
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423627"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999949"
 ---
 # <a name="set-up-master-planning"></a>Nastavení hlavního plánování
 
@@ -227,6 +226,3 @@ Doba realizace + záporné dny + aktuální datum – datum požadavku
 Systém používá pouze plánované objednávky dodávek, které jsou v této ochranné době, a vytváří novou plánovanou objednávku mimo ni. Výhodou dynamických negativních dnů je, že bude zahrnuta doba realizace jednotlivého produktu pro opětovné použití existujících objednávek a pro zamezení vytváření nových plánovaných objednávek, které budou ukončeny později v důsledku zpoždění způsobených dobou realizace. 
 
 Další informace naleznete v tématu [Záporné dny a dynamické záporné dny](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

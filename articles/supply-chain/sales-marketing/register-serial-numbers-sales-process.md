@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4f5a04e85d3cc34111b7421fbff6cbde413b7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423740"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001517"
 ---
 # <a name="working-with-serialized-items"></a>Práce se serializovanými položkami
 
@@ -55,8 +54,8 @@ Jestliže sériové číslo nelze přečíst nebo skenovat, můžete vytvořit p
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Mohu opravit nebo změnit sériová čísla registrovaná pro prodejní objednávku?
 Ano, sériová čísla můžete opravit, pokud jsou splněny následující podmínky:
--   **Faktury** – můžete změnit sériová čísla položek, které dosud nebyly vyfakturovány. Dodací list se také aktualizuje. Pokud však byl řádek prodejní objednávky opraven registrací záporného množství, nelze změnit sériová čísla pro řádek prodejní objednávky.
--   **Dodací listy** – nelze částečně opravit řádek dodacího listu, který obsahuje serializované položky. Je nutné stornovat celé množství na řádku. Pokud byl stornován nebo opraven dodací list, není třeba registrovat stornovaná sériová čísla znovu při vytváření nového dodacího listu pro stejné serializované položky. Použijí se čísla, která byla zaregistrována.
+-   **Faktury** - můžete změnit sériová čísla položek, které dosud nebyly vyfakturovány. Dodací list se také aktualizuje. Pokud však byl řádek prodejní objednávky opraven registrací záporného množství, nelze změnit sériová čísla pro řádek prodejní objednávky.
+-   **Dodací listy** - nelze částečně opravit řádek dodacího listu, který obsahuje serializované položky. Je nutné stornovat celé množství na řádku. Pokud byl stornován nebo opraven dodací list, není třeba registrovat stornovaná sériová čísla znovu při vytváření nového dodacího listu pro stejné serializované položky. Použijí se čísla, která byla zaregistrována.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Mohu zobrazit sériová čísla, která byla dodána společně s konkrétním dodacím list nebo byla zahrnuta do faktury?
 Ano, můžete spustit dotaz na řádek deníku dodacího listu nebo řádek deníku faktury k zobrazení seznamu všech sériových čísel, které byly zahrnuty do dokumentu.
@@ -80,6 +79,3 @@ Tato funkce je k dispozici pro všechny role, které mohou spravovat prodejní d
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

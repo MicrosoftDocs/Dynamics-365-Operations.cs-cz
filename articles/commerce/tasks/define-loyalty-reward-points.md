@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailLoyaltyRewardPoints
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e40ebcbf3ab1befc641ae34571a8b974bd0425a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af217a5e756db571e3e351b743aa44b842f478f1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000477"
 ---
 # <a name="define-loyalty-reward-points"></a> Definování bodů věrnostních odměn
 
@@ -46,6 +45,3 @@ Tato procedura vás provede definováním bodů věrnostních odměn. Body věrn
 10. Vyberte možnost v poli Jednotka času konce platnosti.
 11. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
