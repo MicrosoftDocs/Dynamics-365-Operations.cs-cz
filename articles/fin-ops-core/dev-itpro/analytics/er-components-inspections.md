@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688560"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797334"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
 [!include[banner](../includes/banner.md)]
 
-Každá konfigurovaná komponenta pro [formátování](general-electronic-reporting.md#FormatComponentOutbound) a [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) [elektronického výkaznictví (ER)](general-electronic-reporting.md) může projít [ověřením platnosti](er-fillable-excel.md#validate-an-er-format) v době návrhu. Během tohoto ověřování se provádí kontrola konzistence, která pomáhá předcházet výskytu problémů za běhu, jako jsou chyby spuštění a snížení výkonu. U každého nalezeného problému je uvedena cesta k problematickému prvku. U některých problémů je k dispozici automatická oprava.
+Každá konfigurovaná komponenta pro [formátování](general-electronic-reporting.md#FormatComponentOutbound) a [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) [elektronického výkaznictví (ER)](general-electronic-reporting.md) může projít [ověřením platnosti](er-fillable-excel.md#validate-an-er-format) v době návrhu. Během tohoto ověřování se provádí kontrola konzistence, která pomáhá předcházet výskytu problémů za běhu, jako jsou chyby spuštění a snížení výkonu. U každého nalezeného poskytuje kontrola cestu k problematickému prvku. U některých problémů je k dispozici automatická oprava.
 
 Ve výchozím nastavení se v následujících případech ověření automaticky použije u konfigurace ER, která obsahuje dříve zmíněné komponenty ER:
 
@@ -101,7 +100,7 @@ Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Dalš�
 <td>Chyba</td>
 <td>
 <p>Nelze převést výraz typu &lt;typ&gt; na pole typu &lt;typ&gt;.</p>
-<p><b>Chyba za běhu:</b> Výjimka typu</p>
+<p><b>Chyba za běhu:</b> Výjimka pro typ</p>
 </td>
 </tr>
 <tr>
@@ -573,11 +572,11 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 
     ![Ověření prvků formátu navázaných na zdroje dat na stránce Návrhář formátů](./media/er-components-inspections-09c.png)
 
-16. Všimněte si, že dojde k chybám ověření. Zpráva uvádí, že chyba může být za běhu vyvolána u konfigurovaných komponent formátu **Statement\\Party\\Name** a **Statement\\Party\\AccountNum**, pokud je seznam **model.Vendor** prázdný.
+16. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že chyba může být za běhu vyvolána u konfigurovaných komponent formátu **Statement\\Party\\Name** a **Statement\\Party\\AccountNum**, pokud je seznam `model.Vendor` prázdný.
 
     ![Chyba ověření, která upozorňuje na potenciální chybu u konfigurovaných komponent formátu](./media/er-components-inspections-09d.png)
 
-Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění, vyberete příkaz **Spustit** a zvolíte číslo účtu neexistujícího dodavatele. Protože požadovaný dodavatel neexistuje, seznam **model.Vendor** bude prázdný (to znamená, že nebude obsahovat žádné záznamy).
+Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění, vyberete příkaz **Spustit** a zvolíte číslo účtu neexistujícího dodavatele. Protože požadovaný dodavatel neexistuje, seznam `model.Vendor` bude prázdný (to znamená, že nebude obsahovat žádné záznamy).
 
 ![Chyby za běhu, ke kterým došlo za běhu mapování formátu](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ Pro vybraný řádek v mřížce na kartě **Upozornění** můžete vybrat př�
 
 #### <a name="option-1"></a>Možnost 1
 
-Můžete navázat prvek formátu **Statement\\Party\\Name** na položku zdroje dat **model.Vendor**. Za běhu tato vazba volá nejprve zdroj dat **model.Vendor**. Když **model.Vendor** vrátí prázdný seznam záznamů, vnořené prvky formátu se nespustí. Proto u této konfigurace formátu nejsou vyvolána žádná upozornění ověření.
+Můžete navázat prvek formátu **Statement\\Party\\Name** na položku zdroje dat `model.Vendor`. Za běhu tato vazba volá nejprve zdroj dat `model.Vendor`. Když `model.Vendor` vrátí prázdný seznam záznamů, vnořené prvky formátu se nespustí. Proto u této konfigurace formátu nejsou vyvolána žádná upozornění ověření.
 
 ![Vazba prvku formátu na položku zdroje dat na stránce Návrhář formátů](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Možnost 2
 
-Změňte vazbu prvku formátu **Statement\\Party\\Name** z `model.Vendor.Name` na `FIRSTORNULL(model.Vendor).Name`. Aktualizovaná vazba podmíněně převede první záznam zdroje dat **model.Vendor** typu **Seznam záznamů** na nový zdroj dat typu **Záznam**. Tento nový zdroj dat obsahuje stejnou sadu polí.
+Změňte vazbu prvku formátu **Statement\\Party\\Name** z `model.Vendor.Name` na `FIRSTORNULL(model.Vendor).Name`. Aktualizovaná vazba podmíněně převede první záznam zdroje dat `model.Vendor` typu **Seznam záznamů** na nový zdroj dat typu **Záznam**. Tento nový zdroj dat obsahuje stejnou sadu polí.
 
-- Pokud je ve zdroji dat **model.Vendor** k dispozici alespoň jeden záznam, pole tohoto záznamu jsou vyplněna hodnotami polí prvního záznamu zdroje dat **model.Vendor**. V takovém případě aktualizovaná vazba vrátí název dodavatele.
+- Pokud je ve zdroji dat `model.Vendor` k dispozici alespoň jeden záznam, pole tohoto záznamu jsou vyplněna hodnotami polí prvního záznamu zdroje dat `model.Vendor`. V takovém případě aktualizovaná vazba vrátí název dodavatele.
 - V opačném případě je každé pole vytvořeného záznamu vyplněno výchozí hodnotou pro datový typ daného pole. V tomto případě je vrácen prázdný řetězec jako výchozí hodnota datového typu **Řetězec**.
 
 Proto se pro prvek formátu **Statement\\Party\\Name** nevyskytují žádná upozornění ověření, když je vázán na výraz `FIRSTORNULL(model.Vendor).Name`.
@@ -606,13 +605,13 @@ Proto se pro prvek formátu **Statement\\Party\\Name** nevyskytují žádná upo
 
 #### <a name="option-3"></a>Možnost 3
 
-Pokud chcete explicitně určit data, která se zadávají do generovaného dokumentu, když zdroj dat **model.Vendor** typu **Seznam záznamů** nevrátí žádné záznamy (v tomto příkladu text **Not available**), změňte vazbu prvku formátu **Statement\\Party\\Name** z hodnoty `model.Vendor.Name` na `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Můžete také použít výraz `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+Pokud chcete explicitně určit data, která se zadávají do generovaného dokumentu, když zdroj dat `model.Vendor` typu **Seznam záznamů** nevrátí žádné záznamy (v tomto příkladu text **Not available**), změňte vazbu prvku formátu **Statement\\Party\\Name** z hodnoty `model.Vendor.Name` na `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Můžete také použít výraz `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Další faktor ke zvážení
 
-Inspekce vás také upozorňuje na další možný problém. Ve výchozím nastavení při vazbě prvků formátu **Statement\\Party\\Name** a **Statement\\Party\\AccountNum** na příslušná pole zdroje dat **model.Vendor** typu **Seznam záznamů** budou tyto vazby spuštěny a načtou hodnoty odpovídajících polí prvního záznamu zdroje dat **model.Vendor**, pokud tento seznam není prázdný.
+Inspekce vás také upozorňuje na další možný problém. Ve výchozím nastavení při vazbě prvků formátu **Statement\\Party\\Name** a **Statement\\Party\\AccountNum** na příslušná pole zdroje dat `model.Vendor` typu **Seznam záznamů** budou tyto vazby spuštěny a načtou hodnoty odpovídajících polí prvního záznamu zdroje da `model.Vendor`, pokud tento seznam není prázdný.
 
-Protože jste nevytvořili vazbu prvku formátu **Statement\\Party** se zdrojem dat **model.Vendor**, prvek **Statement\\Party** nebude během provádění formátu iterován pro každý záznam zdroje dat **model.Vendor**. Místo toho bude vygenerovaný dokument vyplněn informacemi pouze z prvního záznamu seznamu záznamů, pokud tento seznam obsahuje více záznamů. Proto může nastat problém, pokud je formát určen k vyplnění generovaného dokumentu informacemi o všech dodavatelích ze zdroje dat **model.Vendor**. Chcete-li tento problém napravit, vytvořte vazbu prvku **Statement\\Party** se zdrojem dat **model.Vendor**.
+Protože jste nevytvořili vazbu prvku formátu **Statement\\Party** se zdrojem dat `model.Vendor`, prvek **Statement\\Party** enebude během provádění formátu iterován pro každý záznam zdroje dat `model.Vendor`. Místo toho bude vygenerovaný dokument vyplněn informacemi pouze z prvního záznamu seznamu záznamů, pokud tento seznam obsahuje více záznamů. Proto může nastat problém, pokud je formát určen k vyplnění generovaného dokumentu informacemi o všech dodavatelích ze zdroje dat `model.Vendor`. Chcete-li tento problém napravit, vytvořte vazbu prvku **Statement\\Party** se zdrojem dat `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Spustitelnost výrazu s funkcí FILTER (použití mezipaměti)
 
@@ -699,7 +698,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 
 14. Navažte prvky formátu na poskytnuté zdroje dat následujícím způsobem:
 
-    - Vytvořte vazbu prvku formátu **Statement\\Party** na položku zdroje dat **model.Vendor**.
+    - Vytvořte vazbu prvku formátu **Statement\\Party** na položku zdroje dat `model.Vendor`.
     - Vytvořte vazbu prvku formátu **Statement\\Party\\Name** na pole zdroje dat **model.Vendor.Name**.
     - Vytvořte vazbu prvku formátu **Statement\\Party\\AccountNum** na pole zdroje dat **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Chcete-li se naučit synchronizovat strukturu formátu se šablonou ER v editoru
 [Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md)
 
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

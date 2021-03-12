@@ -3,7 +3,7 @@ title: Vytvoření organizační hierarchie
 description: Následující postup použijte k vytvoření organizační hierarchie.
 author: sericks007
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 12/15/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 673403680525eff57c5886bb4f430a33efd76250
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8627c1aa0ce9ec011b568224040b1143f0f54c31
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694782"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796915"
 ---
 # <a name="create-an-organization-hierarchy"></a>Vytvoření organizační hierarchie
 
@@ -38,7 +38,7 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 3. Zadejte hodnotu do pole **Název**.
 4. V sekci **Účel** klikněte na **Přiřadit účel**.
 5. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Vyberte účel, který chcete přiřadit k hierarchii organizace.  
-6. V sekci **Přiřazené hierarchie** klikněte na **Přidat**.
+6. V části **Přiřazené hierarchie** klikněte na **Přidat**.
 7. Označte na seznamu vybraný řádek. Vyhledejte hierarchii, kterou jste právě vytvořili.  
 8. Klikněte na tlačítko **OK**.
 
@@ -48,6 +48,3 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
     - Podle potřeby přidejte organizace.  
     - Pokud chcete přidat organizaci, klikněte na tlačítko **Upravit** a pak **Vložit** a přidejte organizaci. Po dokončení provádění změn můžete **uložit** návrh a **publikovat** změny.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

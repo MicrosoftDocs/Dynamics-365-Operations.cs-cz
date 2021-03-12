@@ -1,6 +1,6 @@
 ---
-title: Nastavení mapování pro pole stavu prodejní objednávky
-description: Toto téma vysvětluje, jak nastavit pole stavu prodejní objednávky pro duální zápis.
+title: Nastavení mapování pro sloupce stavu prodejní objednávky
+description: Toto téma vysvětluje, jak nastavit sloupce stavu prodejní objednávky pro duální zápis.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4450537"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744292"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Nastavení mapování pro pole stavu prodejní objednávky
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Nastavení mapování pro sloupce stavu prodejní objednávky
 
 [!include [banner](../../includes/banner.md)]
 
-Pole, která označují stav prodejní objednávky, mají různé hodnoty výčtu v Microsoft Dynamics 365 Supply Chain Management a Dynamics 365 Sales. K mapování těchto polí při duálním zápisu je nutné další nastavení.
+Sloupce, které označují stav prodejní objednávky, mají různé hodnoty výčtu v Microsoft Dynamics 365 Supply Chain Management a Dynamics 365 Sales. K mapování těchto sloupců při duálním zápisu je nutné další nastavení.
 
-## <a name="fields-in-supply-chain-management"></a>Pole v Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>sloupce v Supply Chain Management
 
-V aplikaci Supply Chain Management dvě pole odrážejí stav prodejní objednávky. Pole, která musíte mapovat, jsou **Stav** a **Stav dokumentu**.
+V aplikaci Supply Chain Management dva sloupce odrážejí stav prodejní objednávky. Sloupce, které musíte mapovat, jsou **Stav** a **Stav dokumentu**.
 
 Výčet **Stav** určuje celkový stav objednávky. Tento stav se zobrazuje v záhlaví objednávky.
 
@@ -53,9 +53,9 @@ Výčet **Stav dokumentu** má následující hodnoty:
 - Dodací list
 - Faktura
 
-## <a name="fields-in-sales"></a>Pole v aplikaci Sales
+## <a name="columns-in-sales"></a>sloupce v aplikaci Prodej
 
-V aplikaci Sales dvě pole označují stav objednávky. Pole, která musíte mapovat, jsou **Stav** a **Stav zpracování**.
+V aplikaci Sales dva sloupce označují stav objednávky. Sloupce, které musíte mapovat, jsou **Stav** a **Stav zpracování**.
 
 Výčet **Stav** určuje celkový stav objednávky. Má následujícími hodnoty:
 
@@ -95,7 +95,7 @@ Následující tabulka ukazuje mapování **stavu zpracování** mezi aplikacemi
 
 ## <a name="setup"></a>Nastavení
 
-Chcete-li nastavit mapování pro pole stavu prodejní objednávky, musíte povolit atributy **IsSOPIntegrationEnabled** a **isIntegrationUser**.
+Chcete-li nastavit mapování pro sloupce stavu prodejní objednávky, musíte povolit atributy **IsSOPIntegrationEnabled** a **isIntegrationUser**.
 
 Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následujícím způsobem.
 
@@ -110,14 +110,14 @@ Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následující
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následující
 
 Chcete-li povolit atribut **isIntegrationUser**, postupujte následujícím způsobem.
 
-1. V aplikaci Sales přejděte na **Nastavení \> Přizpůsobení \> Přizpůsobit systém**, vyberte **Entita uživatele** a poté otevřete **Formulář \> Uživatel**.
+1. V aplikaci Sales přejděte na **Nastavení \> Přizpůsobení \> Přizpůsobit systém**, vyberte **Tabulka uživatele** a poté otevřete **Formulář \> Uživatel**.
 
     ![Otevření formuláře uživatele](media/sales-map-user.png)
 
 2. V prohlížeči polí najděte **Uživatelský režim integrace** a dvojitým kliknutím ho přidejte do formuláře. Uložte změnu.
 
-    ![Přidání pole uživatelského režimu integrace do formuláře](media/sales-map-field-explorer.png)
+    ![Přidání sloupce uživatelského režimu integrace do formuláře](media/sales-map-field-explorer.png)
 
 3. V aplikaci Sales přejděte na **Nastavení \> Zabezpečeno \> Uživatelé** a změňte zobrazení z **Povolení uživatelé** na **Uživatelé aplikace**.
 
@@ -145,11 +145,8 @@ Chcete-li povolit atribut **isIntegrationUser**, postupujte následujícím způ
 
     ![Seznam uživatelů aplikací](media/sales-map-user-mode.png)
 
-5. Změňte hodnotu pole **Uživatelský režim integrace** na **Ano**.
+5. Změňte hodnotu sloupce **Uživatelský režim integrace** na **Ano**.
 
-    ![Změna hodnoty pole uživatelského režimu integrace](media/sales-map-user-mode-yes.png)
+    ![Změna hodnoty sloupce uživatelského režimu integrace](media/sales-map-user-mode-yes.png)
 
 Vaše prodejní objednávky jsou nyní mapovány.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 785b14d20a647ea2187f311f1cd056b8181d4849
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694049"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797384"
 ---
 # <a name="workflow-faq"></a>Workflow – Často kladené otázky
 
@@ -59,6 +59,3 @@ Výchozí hodnota pole **Počet položek workflowu na dávkový úkol** na strá
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co je funkce Rozšířená chyba pracovního postupu?
 Funkce Rozšířená chyba pracovního postupu ve verzi 10.0.13 přidává chybové kódy k rozlišení různých tříd chyb pracovního postupu. Hlášené chybové zprávy budou většinou podobné, s menšími rozdíly, aby byly jasnější.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

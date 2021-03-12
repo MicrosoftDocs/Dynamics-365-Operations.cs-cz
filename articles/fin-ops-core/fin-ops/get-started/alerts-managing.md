@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4e34685731a09131d2ab49a0e04479c9c20f4da8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693791"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798575"
 ---
 # <a name="batch-processing-of-alerts"></a>Dávkové zpracování výstrah
 
 [!include [banner](../includes/banner.md)]
 
-Výstrahy jsou zpracovávány pomocí funkce dávkového zpracování. Než mohou být výstrahy doručeny, musíte nastavit dávkové zpracování.
+Výstrahy jsou zpracovávány pomocí funkce dávkového zpracování. Než proces vydá výstrahy, musíte nastavit dávkové zpracování.
 
-Jsou podporovány dva typy událostí:
+Funkce dávkového zpracování podporuje dva typy událostí:
 
-- Události, které byly vyvolány událostmi založenými na změně. Tyto události jsou označovány jako události vytvoření/odstranění a aktualizace.
-- Události spouštěné podle dat splatnosti.
+- Události vyvolané událostmi založenými na změně. Tyto události jsou označovány jako události vytvoření/odstranění a aktualizace.
+- Události vyvolané termíny splnění.
 
 Dávkové zpracování lze nastavit pro každý typ událostí.
-        
+
 ## <a name="batch-processing-for-change-based-events"></a>Dávkové zpracování událostí založených na změně
 
 Systém načítá všechny události založené na změně, které se vyskytly od posledního spuštění dávkového zpracování. Události založené na změně zahrnují aktualizace polí, odstranění záznamů a vytváření záznamů. Tyto události jsou porovnány s podmínkami nastavenými v pravidlech výstrah. Když událost odpovídá podmínkám v pravidlu, dávkové zpracování vygeneruje výstrahu.
@@ -44,13 +44,13 @@ Systém načítá všechny události založené na změně, které se vyskytly o
 
 Na druhé straně dávková úloha, která se vrací méně často a která je naplánována pro situace, kdy je nízké zatížení systému, může zvýšit výkon systému. Nízká frekvence provádění dávkového zpracování však nemusí splňovat požadavky uživatelů na aktuální výstrahy.
 
-Při nastavování četnosti dávkového zpracování pro události založené na změně tedy dbejte na rovnováhu mezi včasností výstrah a výkonem celého systému. Čím více je uživatelů, kteří vytvářejí pravidla výstrah, tím důležitější jsou tato hlediska. Četnost nemá žádný vliv na počet událostí, které je nutné zpracovat. Pokud však pravidla vytváří více uživatelů, je nutné provést další kontroly. Tento typ výměny dat může ovlivnit výkonnost systému.
+Při nastavování četnosti dávkového zpracování pro události založené na změně tedy dbejte na rovnováhu mezi včasností výstrah a výkonem celého systému. Čím více je uživatelů, kteří vytvářejí pravidla výstrah, tím důležitější jsou tato hlediska. Četnost nemá žádný vliv na počet událostí, které systém zpracuje. Pokud však pravidla vytváří více uživatelů, proces spustí další kontroly. Tento typ výměny dat může ovlivnit výkonnost systému.
 
 #### <a name="the-risks-of-low-batch-frequency"></a>Rizika nízké četnosti dávek
 
-Pokud nastavíte dávkové zpracování s nízkou četností pro události založené na změnách, může dojít ke ztrátě výstrah, protože data důležitá pro podmínky pravidel výstrah se změní před zpracováním dávky. Může tedy dojít ke ztrátě výstrah.
+Pokud nastavíte dávkové zpracování s nízkou četností pro události založené na změnách, může dojít ke ztrátě výstrah, protože data důležitá pro podmínky pravidel výstrah se změní před zpracováním. Může tedy dojít ke ztrátě výstrah.
 
-Může například existovat pravidlo výstrahy, které je nastaveno tak, že spustí výstrahu za předpokladu, že událostí je **změna kontaktní adresy zákazníka** a podmínkou je **zákazník = BB**. Jinak řečeno, pokud se kontakt odběratele pro BB zákazníka změní, zaznamená se událost. Systém dávkového zpracování je však nastaven tak, aby dávkové zpracování bylo méně časté než zadávání dat. Pokud se jméno zákazníka změní z **BB** na **AA** předtím, než se událost zpracuje, data v databázi neodpovídají podmínce pravidla, **zákazník = BB**. Proto když je nakonec událost zpracována, nevygeneruje se žádná výstraha.
+Vytvoříte například pravidlo výstrahy, které je nastaveno tak, že spustí výstrahu za předpokladu, že událostí je **změna kontaktní adresy zákazníka** a podmínkou je **zákazník = BB**. Jinak řečeno, pokud se kontakt odběratele pro BB zákazníka změní, proces zaznamená událost. Systém dávkového zpracování je však nastaven tak, aby dávkové zpracování bylo méně časté než zadávání dat. Pokud se jméno zákazníka změní z **BB** na **AA** předtím, než se událost zpracuje, data v databázi neodpovídají podmínce pravidla, **zákazník = BB**. Proto když je nakonec událost zpracována, nevygeneruje se žádná výstraha.
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>Nastavení zpracování výstrahy na základě změny
 
@@ -76,12 +76,9 @@ Zpracování pravidel výstrah ve společnosti může být zastaveno z několika
 
 Pokud chcete zabránit, aby výstrahy data platnosti zastarala, vzhledem k tomu, že dávková úloha nebyla spuštěna několik dní, můžete nastavit okno dávkového zpracování. Okno dávkového zpracování lze použít, aby se zabránilo spouštění dávkové úlohy po zadaný počet dní.
 
-Pokud nastavíte okno dávkového zpracování, odešle se výstraha po zpracování pravidla výstrahy, přestože výstraha překročí časový limit určený v kritériích data splatnosti. Výstrahy jsou odesílány tak dlouho, dokud nebude překročeno období, které je definováno podle této lhůty plus okno dávkového zpracování. Výstrahy se přestanou odesílat, až bude překročeno období, které je definováno podle této lhůty plus okno dávkového zpracování.
+Pokud nastavíte okno dávkového zpracování, odešle se výstraha po zpracování pravidla výstrahy, přestože výstraha překročí časový limit určený v kritériích data splatnosti. Výstrahy jsou odesílány tak dlouho, dokud nebude překročeno období, které je definováno podle této lhůty plus okno dávkového zpracování. Výstrahy se přestanou odesílat, až období překročí hodnotu, která je definována podle této lhůty plus okno dávkového zpracování.
 
 ### <a name="set-up-processing-for-due-date-alerts"></a>Nastavení zpracování výstrahy na datum splatnosti
 
 1. Přejděte na **Správa systému** &gt; **Pravidelné úlohy** &gt; **Výstrahy** &gt; **Výstrahy založené na datu plnění**.
 2. V dialogovém okně **Výstrahy data plnění** zadejte příslušné informace.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Přehled správy obchodních dokumentů
 description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681297"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740949"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -43,24 +43,17 @@ V současné době je funkce správy obchodních dokumentů implementována pouz
 
 Chcete-li použít správu obchodních dokumentů pro úpravy šablon ve formátech Excel nebo Word pomocí desktopových aplikací Microsoft Office, je nutné mít nainstalováno Microsoft Office 2010 nebo novější verzi. Je to podporováno v cloudových a místních nasazeních.
 
+Chcete-li použít správu obchodních dokumentů pro úpravy šablon ve formátech Excel nebo Word pomocí aplikací Microsoft 365, je nutné mít nainstalován Microsoft 365 Office pro webové předplatné. To je podporováno v cloudovém nasazení.
+
 ## <a name="business-document-availability"></a>Dostupnost obchodních dokumentů
 
-Při vydání veřejné verze Preview budou k dispozici následující sestavy s šablonami založeným na aplikaci Excel:
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 najdete v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Pohledávky** (srpen 2019)
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2020 najdete v části [Konfigurovatelné vykazování obchodních dokumentů - šablony Word](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Prodejní zálohová faktura
-- Prodejní objednávka – dodací list
+Další sestavy budou k dispozici v budoucích verzích. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. Informace o tom, jak zkontrolovat seznam aktuálně dostupných sestav, najdete v části [Seznam konfigurací ER, které byly vydány v aplikaci Finance na podporu konfigurovatelných obchodních dokumentů](#list-of-configurations-cbd) níže.
 
-**Závazky** (srpen 2019)
-
-- Zálohová nákupní faktura
-- Nákupní objednávka
-- Nákupní objednávka – dodací list
-
-Budou k dispozici další sestavy. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. 
-
-Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 lze najít v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
 
 ## <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 
@@ -74,24 +67,24 @@ V příkladu tohoto postupu jsou použity ukázkové konfigurace ER. Do aktuáln
 
 **Ukázka fakturačního řešení elektronického výkaznictví pro zákazníky**
 
-| **Soubor**                                  | **Obsah**                                |
-|-------------------------------------------|--------------------------------------------|
+| Soubor                                      | Obsah |
+|-------------------------------------------|---------|
 | Customer invoicing model.version.2.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Customer FTI report (GER).version.2.3.xml | [Konfigurace formátu elektronického výkaznictví volné faktury](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Ukázka řešení platebních šeků elektronického výkaznictví**
 
-| **Soubor**                                  | **Obsah**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model for cheques.version.10.xml          | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Cheques printing format.version.10.9.xml  | [Konfigurace formátu elektronického výkaznictví platebního šeku](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Soubor                                     | Obsah |
+|------------------------------------------|---------|
+| Model for cheques.version.10.xml         | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Cheques printing format.version.10.9.xml | [Konfigurace formátu elektronického výkaznictví platebního šeku](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Ukázka řešení zahraničního obchodu elektronického výkaznictví**
 
-| **Soubor**                                  | **Obsah**                                |
-|-------------------------------------------|--------------------------------------------|
-| Intrastat model.version.1.xml             | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat report.version.1.9.xml          | [Konfigurace formátu elektronického výkaznictví sestavy řízení systému Intrastat](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Soubor                             | Obsah |
+|----------------------------------|---------|
+| Intrastat model.version.1.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat report.version.1.9.xml | [Konfigurace formátu elektronického výkaznictví sestavy řízení systému Intrastat](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 K importu každého souboru použijte následující postup. Před importem odpovídající *konfigurace* elektronického výkaznictví importujte pro jednotlivá řešení elektronického výkaznictví konfiguraci *datového modelu* elektronického výkaznictví v tabulkách výše.
 
@@ -101,15 +94,13 @@ K importu každého souboru použijte následující postup. Před importem odpo
 4. Výběrem možnosti **Procházet** načtete požadovaný soubor XML.
 5. Kliknutím na tlačítko **OK** potvrďte import konfigurace.
 
-![Stránka konfigurací elektronického výkaznictví](./media/BDM-Overview-ERSolutions.png)
-
+![Import konfigurace stránky potvrzující konfigurace ER](./media/BDM-Overview-ERSolutions.png)
 
 Případně můžete importovat oficiálně publikovaná konfigurace formátu ER ze služby Microsoft Dynamics Lifecycle Service (LCS). Chcete-li například dokončit tento postup, můžete importovat nejnovější verzi konfigurace formátu ER **Volná textová faktura (Excel)**. Odpovídající datové modely ER a konfigurace mapování modelu ER budou importovány automaticky.
 
 ![Stránka obsahu Knihovna sdílených datových zdrojů LCS](./media/BDM-Overview-SharedAssetLibrary.png)
 
 Další informace o importu konfigurací elektronického výkaznictví naleznete v tématu [Správa životního cyklu konfigurace elektronického výkaznictví](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## <a name="enable-business-document-management"></a>Povolení správy obchodních dokumentů
 
@@ -122,7 +113,7 @@ Chcete-li povolit funkci správy obchodních dokumentů pro všechny právnické
 3. Výběrem možnosti **Povolit nyní** zapněte vybranou funkci.
 4. K nové funkci budete mít přístup po aktualizaci stránky.
 
->[!NOTE]
+> [!NOTE]
 > Další informace o použití nového uživatelského rozhraní dokumentu v modulu Správa obchodních dokumentů naleznete v tématu [Nové uživatelské rozhraní dokumentů v modulu Správa obchodních dokumentů](er-business-document-management-new-template-ui.md).
 
 ![Pracovní prostor Správa funkcí](./media/BDM-Overview-FMEnabling.png)
@@ -134,21 +125,22 @@ Další informace o aktivaci nových funkcí naleznete v tématu [Přehled sprá
 Chcete-li nastavit základní parametry pro správu obchodních dokumentů, použijte informace v následujících sekcích.
 
 ### <a name="prerequisites-for-parameter-setup"></a>Předpoklady pro nastavení parametrů
+
 Před nastavením správy obchodních dokumentů je nutné nastavit v architektuře správy dokumentů požadovaný typ dokumentu. Tento typ dokumentu se používá k určení dočasného úložiště dokumentů ve formátech Office (Excel a Word), které se používají jako šablony pro sestavy elektronického výkaznictví. Dočasné šablony úložiště lze upravit pomocí desktopových aplikací Office.
 
 Pro tento typ dokumentu je nutné vybrat následující hodnoty atributů.
 
-| **Název atributu**  | **Hodnota atributu**   |
-|---------------------|-----------------------|
-| Třída               | Připojit soubor           |
-| Seskupit               | Soubor                  |
-| Umístění            | SharePoint            |
+| Název atributu | Hodnota atributu |
+|----------------|-----------------|
+| Třída          | Připojit soubor     |
+| Seskupit          | Soubor            |
+| Umístění       | SharePoint      |
 
 Informace o nastavení požadovaných parametrů správy dokumentů a typů dokumentů naleznete v tématu [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Nastavení typu dokumentu pro správu dokumentů](./media/BDM-Overview-DMSetting.png)
 
-### <a name=""></a><a name="SetupBdmParameters">Nastavení parametrů</a>
+### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>Nastavení parametrů
 
 Na stránce **parametry obchodního dokumentu** lze nastavit základní parametry správy obchodních dokumentů. Na stránku mohou přistupovat jen někteří uživatelé. Mezi ně patří:
 
@@ -159,7 +151,7 @@ Pomocí následujícího postupu nastavíte základní parametry pro všechny pr
 
 1. Přihlaste se jako uživatel s přístupem na stránku **Parametry obchodního dokumentu**.
 2. Přejděte do části **Správa organizace** \> **Elektronické vykazování** \> **Správu obchodních dokumentů** \> **Parametry obchodního dokumentu**.
-3.    Na stránce **Parametry obchodního dokumentu** na kartě **Přílohy** v poli **Typ dokumentu SharePoint** definujte typ dokumentu, který se má použít k dočasnému uložení šablon ve formátech Office v době, kdy jsou upravovat pomocí desktopových aplikací Office. 
+3. Na stránce **Parametry obchodního dokumentu** na kartě **Přílohy** v poli **Typ dokumentu SharePoint** definujte typ dokumentu, který se má použít k dočasnému uložení šablon ve formátech Office v době, kdy jsou upravovat pomocí desktopových aplikací Office. 
 
 > [!NOTE]
 > Pro tento parametr jsou k dispozici pouze typy dokumentů, které jsou konfigurovány s použitím umístění SharePoint.
@@ -175,7 +167,7 @@ Vybraný typ dokumentu je specifický pro společnost a bude použit, pokud uži
 
 Ve výchozím nastavení, pokud není povolen přístup k oprávněním pro správu obchodních dokumentů, uvidí každý uživatel s přístupem k pracovnímu prostoru správy obchodních dokumentů všechny šablony řešení elektronického výkaznictví, které jsou k dispozici. Pracovní prostor správy obchodních dokumentů zobrazí pouze ty šablony, které se nacházejí v konfiguracích formátu elektronického výkaznictví a jsou označeny značkou **Typ obchodního dokumentu**.
 
-![Stránka konfigurací elektronického výkaznictví](./media/BDM-Overview-ERFormatTags.png)
+![Stránka konfigurace ER se značkou typu obchodního dokumentu](./media/BDM-Overview-ERFormatTags.png)
 
 Seznam šablon, které jsou k dispozici v pracovním prostoru správy obchodních dokumentů, může být omezen konfigurací přístupových oprávnění. To může být důležité v případě, že se k vytváření obchodních dokumentů pro různé obchodní domény (funkční oblasti) používají různé šablony a určitým uživatelům chcete umožnit přístup k různým šablonám pro úpravy v pracovním prostoru správy obchodních dokumentů.
 
@@ -197,13 +189,13 @@ Chcete-li povolit nastavit přístupová oprávnění ke správě obchodních do
 
     Následující obrázek zobrazuje informace, které jsou k dispozici v pracovním prostoru Správa obchodních dokumentů pro uživatele s rolí **Úředník pohledávek**. S aktuálním nastavením přístupových oprávnění může uživatel upravovat šablony obchodních dokumentů z různých funkčních oblastí, včetně fakturace, regulačního vykazování a plateb.
 
-    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů pro úředníka pohledávek](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Na stránce **Konfigurátor přístupových oprávnění** vyberte možnost **Nastavení oprávnění přístupu**.
 4. V dialogovém okně **Nastavení přístupových oprávnění pro úpravy šablon** povolte možnost **Použít konfigurovaná přístupová oprávnění**.
 5. Klepnutím na tlačítko **OK** potvrďte, že byla povolena oprávnění přístupu ke správě obchodních dokumentů.
 
-    ![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Stránka potvrzení přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Chcete-li zadat novou obchodní roli, pro kterou mají být konfigurována oprávnění pro přístup k šablonám správy obchodních dokumentů, vyberte možnost **Přidat**.
 7. V dialogovém okně **Role zabezpečení** vyberte roli **Úředník pohledávek** a poté klepnutím na tlačítko **OK** potvrďte výběr role.
@@ -215,7 +207,7 @@ Chcete-li povolit nastavit přístupová oprávnění ke správě obchodních do
 
 11. Přepněte podokno **Související informace** z pravé strany aktuální stránky. V podokně **Související informace** je zobrazen způsob použití konfigurovaných přístupových oprávnění včetně informací o tom, jaké konfigurační šablony elektronického výkaznictví budou k dispozici pro uživatele s rolí **Úředník pohledávek**.
 
-    ![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Podokno souvisejících informací na stránce Konfigurátor přístupových oprávnění](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Na kartě **Přístupová oprávnění dle konfigurací** vyberte možnost **Přidat**.
 13. V dialogovém **Výběr konfigurace** označte konfiguraci formátu elektronického výkaznictví jako **Sestavu Intrastat**.
@@ -226,11 +218,11 @@ Aktuální nastavení znamená, že pro každého uživatele, který má roli **
 - Šablony, které mají hodnotu **Fakturace** pro značku **Funkční oblast**.
 - Šablony z konfigurací formátu elektronického výkaznictví, které jsou uvedeny na kartě **Přístupová oprávnění dle konfigurací** (šablony z konfigurace formátu **Sestava Intrastat** domény **Statutární vykazování** v tomto příkladu).
 
-![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess4.png)
+![Pevné záložky přístupových oprávnění na stránce Konfigurátor přístupových oprávnění.](./media/BDM-Overview-TemplatesAccess4.png)
 
 Následující obrázek zobrazuje, co pracovní prostor Správa obchodních dokumentů umožňuje uživateli s rolí **Úředník pohledávek**. S aktuálním nastavením přístupového oprávnění ke správě obchodních dokumentů může uživatel upravovat šablony obchodních dokumentů z domény **Fakturace** a z konfigurace formátu elektronického výkaznictví **Sestava Intrastat**. Šablony z domény **Platby** nejsou přístupné pro roli **Úředník pohledávek**.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-TemplatesForAlice2.png)
+![Stránka pracovního prostoru Úprava šablon obchodních dokumentů ve správě obchodních dokumentů](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > Pravidla **Přístupová oprávnění dle konfigurací** jsou uložena za pomoci jedinečného ID konfigurace formátu elektronického výkaznictví. To znamená, že tato pravidla nebudou odstraněna, pokud konfigurace elektronického výkaznictví, která na ně odkazuje, bude odstraněna. Při importu odstraněných konfigurací zpět do této instance budou tato pravidla na ně odkazovat znovu. Po opětovném importu odstraněných konfigurací není nutné pravidla nastavovat znovu.
@@ -252,7 +244,7 @@ Pokud je funkce **Prostředí UI podobné systému Office pro správu obchodníh
 - Šablony, které vlastní váš poskytovatel konfigurace aplikace ER (tj. poskytovatel, který je aktuálně označen jako aktivní v pracovním prostoru **Elektronického vykazování**). Po vybrání jedné z těchto šablon můžete vybrat možnost **Upravit šablonu** a začít ji upravovat.
 - Šablony vlastněné ostatními poskytovateli konfugurace ER. Po vybrání jedné z těchto šablon můžete vybrat **Nový dokument**, abyste vytvořili jeho kopii, která je vlastněna vaším poskytovatelem konfigurace ER, a poté můžete začít upravovat jeho kopii.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate1.png)
+![Stránka Seznam šablon v pracovním prostoru Správa obchodních dokumentů](./media/BDM-Overview-EditingTemplate1.png)
 
 Na kartě **Šablony** se zobrazí obsah vybrané šablony. Vyberte kartu **Podrobnosti**, na které si můžete prohlédnout podrobnosti o vybrané šabloně a podrobnosti o konfiguraci formátu elektronického výkaznictví, kde je tato šablona umístěna. Všimněte si, že všechny šablony mají stav **Publikováno** a neobsahují údaje ve sloupci **Revize**. To znamená, že tyto šablony aktuálně nejsou upravovány.
 
@@ -265,7 +257,7 @@ Chcete-li pracovat se šablonami, které jsou vlastněny jinými zprostředkovat
 1. V pracovním prostoru Správa obchodních dokumentů vyberte v seznamu šablonu **Formát tisku šeků**.
 2. Zvolte kartu **Podrobnosti**.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate2.png)
+![Stránka pracovního prostoru správy obchodních dokumentů, karta Podrobnosti](./media/BDM-Overview-EditingTemplate2.png)
 
 Pro vybranou šablonu je k dispozici možnost **Upravit šablonu**. Tato možnost je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví, která je vlastněna aktivním poskytovatelem konfigurace elektronického výkaznictví (v tomto případě **Litware, Inc.**). Je -li vybrána možnost **Upravit šablonu**, budete moci upravit existující šablonu z verze konceptu základní konfigurace formátu elektronického výkaznictví.
 
@@ -273,14 +265,14 @@ Pro vybranou šablonu je k dispozici možnost **Upravit šablonu**. Tato možnos
 
 1. V pracovním prostoru správy obchodních dokumentů vyberte dokument, který chcete použít jako šablonu.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate3.png)
+    ![Stránka Vybrat dokument v pracovním prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Vyberte **Nový dokument** a v poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
-4. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
-5. V poli **Komentář** změňte komentář pro automaticky vytvořenou revizi upravitelné šablony.
-6. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav
+2. Vyberte **Nový dokument** a v poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
+3. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
+4. V poli **Komentář** změňte komentář pro automaticky vytvořenou revizi upravitelné šablony.
+5. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate4.png)
+![Potvrzení začátku procesu úprav a k vytvoření nové šablony](./media/BDM-Overview-EditingTemplate4.png)
 
 Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytovanou aktuálním a jiným poskytovatelem (v tomto případě Microsoft), který nemá žádnou revizi. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
@@ -290,21 +282,21 @@ Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci form
 2. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
 3. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
 
-    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate5.png)
+    ![Stránka Úprava šablony v pracovním prostoru Správa obchodních dokumentů](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
+4. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
 Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici pro online úpravy pomocí Microsoft 365.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout1.png)
+![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Úprava šablony pomocí Microsoft 365</a>
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Úprava šablony pomocí Microsoft 365
 
 Šablonu můžete upravit pomocí aplikace Microsoft 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží v upravitelné šabloně, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure). To je konfigurováno pro rámec elektronického výkaznictví.
 
-![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout2.png)
+![Změna písma na tučné v záhlaví šablony na stránce editoru šablon správy obchodních dokumentů](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name=""></a><a name="EditInOfficeDesktopApp">Úprava šablony v desktopové aplikaci Office</a>
+### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Úprava šablony v desktopové aplikaci Office
 
 > [!NOTE]
 > Tato funkce je k dispozici pouze tehdy, když je parametr **Typ dokumentu SharePoint** správně nakonfigurován. Další informace naleznete v tématu [Konfigurace parametrů](#SetupBdmParameters).
@@ -312,15 +304,15 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 1. Chcete- li upravit šablonu pomocí funkce desktopové aplikace Office (v tomto příkladu aplikace Excel), vyberte možnost **Otevřít v desktopové aplikaci**. Upravitelná šablona je zkopírována z trvalého úložiště do dočasného úložiště konfigurovaného v parametrech správy obchodních dokumentů jako složka SharePoint.
 2. Potvrďte, že chcete otevřít šablonu z dočasného úložiště souborů v desktopové aplikaci Office Excel.
 
-    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout3.png)
+    ![Šablona otevřená v desktopové aplikaci Excel](./media/BDM-Overview-EditingLayout3.png)
 
 3. Upravte šablonu. Například změňte barvu písma výzev polí v záhlaví šablony z **Černá** na **Modrá**.
 
-    ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout4.png)
+    ![Úprava barvy písma v záhlaví šablony pomocí desktopové aplikace Excel](./media/BDM-Overview-EditingLayout4.png)
 
 4. Volbou **Uložit** v desktopové aplikaci Excel uložte změny šablony do dočasného úložiště.
 
-    ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout5.png)
+    ![Uložení změn na stránce editoru šablon pro správu obchodních dokumentů pomocí desktopové aplikace Excel](./media/BDM-Overview-EditingLayout5.png)
 
 5. Zavřete desktopovou aplikaci Excel.
 6. Výběrem možnosti **Synchronizovat uloženou kopii** synchronizujte dočasné úložiště šablon s trvalým úložištěm šablon.
@@ -340,7 +332,7 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 
 Aktualizovaná šablona je zobrazena na kartě **Šablona** . Všimněte si, že stav upravené šablony je nyní **Koncept** a aktuální revize již není prázdná. To znamená, že proces úpravy této šablony byl zahájen.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate5.png)
+![Zobrazení aktualizované šablony na stránce Seznam šablon v pracovním prostoru Správa obchodních dokumentů](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>Test upravené šablony 
 
@@ -353,7 +345,7 @@ Aktualizovaná šablona je zobrazena na kartě **Šablona** . Všimněte si, že
     ![Stránka nastavení správy tisku](./media/BDM-Overview-TestRun1.png)
 
 6. Stisknutím klávesy **Escape** zavřete aktuální stránku.
-7. Vyberte možnost **Tisk** a poté klepněte namožnost **Vybráno**.
+7. Vyberte možnost **Tisk** a poté vyberte možnost **Vybráno**.
 8. Stáhněte dokument a otevřete jej pomocí desktopové aplikace Excel.
 
 ![Stránka Volné faktury](./media/BDM-Overview-TestRun2.png)
@@ -367,7 +359,7 @@ Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou
 3. V případě potřeby změňte v poli **Název** název druhé revize a založte jej na aktuálně aktivní první revizi.
 4. Pokud je třeba, v poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
 
-    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-AddRevision.png)
+    ![Vytvoření revizí šablony na stránce Seznam šablon v pracovním prostoru Správa obchodních dokumentů](./media/BDM-Overview-AddRevision.png)
 
     Vytvořili jste novou revizi šablony, která byla uložena v trvalém úložišti šablon. Nyní můžete pokračovat v úpravách šablony druhé revize, která je aktuálně vybrána jako aktivní.
 
@@ -385,22 +377,25 @@ Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou
 
 Při úpravě šablony z formátu elektronického výkaznictví, který vlastní aktuální aktivní zprostředkovatel, vám bude nabídnuta možnost odvolání změn provedených v šabloně.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-RevokeChanges.png)
+![Odmítnutí změn šablony na stránce Seznam šablon v pracovním prostoru Správa obchodních dokumentů](./media/BDM-Overview-RevokeChanges.png)
 
 1. Na stránce **Editor šablon BDM** vyberte kartu **Šablona**.
 2. Vyberte možnost **Zpět**.
 3. Pokud vyberete možnost **OK** k odvolání změn provedených v šabloně, upravená šablona bude nahrazena původní šablonou a všechny změny budou odebrány. Pokud odvoláte změny šablony, budete moci šablonu odstranit. Chcete-li prozkoumat ostatní možnosti, vyberte možnost **Storno**.
 
 ### <a name="publish-a-modified-template"></a>Publikování upravené šablony
+
 1. Na stránce **Editor šablon BDM** na kartě **Šablona** vyberte **Publikovat**.
 2. Vyberete-li možnost **OK** pro potvrzení publikování, draft odvozeného formátu elektronického výkaznictví **Kopie sestavy FTI odběratele (GER)**, který obsahuje upravenou šablonu, bude označen jako dokončený. Upravená šablona bude k dispozici pro ostatní uživatele. Dokončené verze tohoto formátu elektronického výkaznictví zachovají pouze poslední aktivní revizi vaší šablony. Ostatní revize budou odstraněny. Chcete-li prozkoumat ostatní možnosti, vyberte možnost **Storno**.
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Vybral jsem možnost **Upravit dokument**, ale namísto otevření stránky **Editor šablon BDM** v aplikaci Finance and Operations jsem byl přesměrován na webovou stránku Microsoft 365.
-Jedná se o známý problém s přesměrováním Microsoft 365. To se stává při prvním přihlášení k Microsoft 365. Chcete-li tento problém vyřešit, v prohlížeči vyberte tlačítko **Zpět**, čímž přejdete zpět.
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Vybral jsem možnost Upravit dokument, ale namísto přechodu na stránku Editor šablon BDM v aplikaci Finance jsem byl přesměrován na webovou stránku Microsoft 365.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Rozumím, jak upravit šablonu pomocí Microsoft 365 v první relaci aplikace a jak používat šablonu v druhé relaci aplikace upravením šablony tak, abych mohl vidět, jaký vliv mají změny na vygenerovaný obchodní dokument. Mohu to provést pomocí desktopové aplikace Office?
+Jedná se o známý problém s přesměrováním Microsoft 365. Stává se to při prvním přihlášení k Microsoft 365. Chcete-li tento problém vyřešit, vyberte **Zpět** ve svém prohlížeči pro návrat na předchozí stránku.
+
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Rozumím, jak upravit šablonu pomocí Microsoft 365 v první relaci aplikace a jak používat šablonu v druhé relaci aplikace upravením šablony tak, abych mohl vidět, jaký vliv mají změny na vygenerovaný obchodní dokument. Mohu používat desktopovou aplikaci Office stejným způsobem?
+
 Ano, můžete. V první relaci aplikace vyberte možnost **Otevřít v desktopové aplikaci**. Šablona bude uložena do dočasného úložiště souborů a bude otevřena v desktopové aplikaci Office. Nyní, když chcete-zobrazit náhled změn šablony ve vygenerovaném obchodním dokumentu, proveďte následující kroky:
 
 1. Upravte šablonu pomocí desktopové aplikace Office.
@@ -408,7 +403,8 @@ Ano, můžete. V první relaci aplikace vyberte možnost **Otevřít v desktopov
 3. Na stránce **Editor šablon BDM** v první relaci aplikace vyberte možnost **Synchronizovat uloženou kopii**.
 4. Spusťte tento formát šablony elektronického výkaznictví v druhé relaci aplikace.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Zobrazuje se mi chyba „Hodnota musí být zadána. Název parametru: externalId“ při výběru možnosti **Otevřít v desktopové aplikaci**. Jak lze tento problém vyřešit? 
+### <a name="when-i-select-open-in-desktop-app-i-receive-the-following-error-message-value-cannot-be-null-parameter-name-externalid-how-do-i-work-around-this-issue"></a>Když vyberu Otevřít v desktopové aplikaci, zobrazí se následující chybová zpráva: „Hodnota nemůže být null. Název parametru: externalId. " Jak lze tento problém vyřešit?
+
 Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně Azure AD, která se liší od domény Azure AD, která byla použita pro nasazení této instance. Vzhledem k tomu, že služba SharePoint, která slouží k ukládání šablon pro jejich zpřístupnění pro úpravy pomocí desktopových aplikací Office, patří do stejné domény, nemáme žádná oprávnění pro přístup ke službě SharePoint. Chcete-li tento problém vyřešit, přihlaste se k aktuální instanci s použitím přihlašovacích údajů uživatele se správnou doménou Azure AD.
 
 ## <a name="additional-resources"></a>Další zdroje
@@ -423,6 +419,163 @@ Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně A
 
 [Konfigurace elektronického výkaznictví pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Seznam konfigurací ER, které byly vydány v aplikaci Finance na podporu konfigurovatelných obchodních dokumentů
 
+[Seznam](general-electronic-reporting.md#list-of-configurations) konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globální úložiště](er-download-configurations-global-repo.md) ke kontrole seznamu konfigurací ER, které jsou aktuálně podporovány. Můžete [filtrovat](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) globální úložiště pro kontrolu seznamu konfigurací ER, které se používají k podpoře konfigurovatelných obchodních dokumentů.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Filtrování obsahu globálního úložiště na stránce úložiště konfigurace](./media/bdm-overview-filterglobalrepo.gif)
+
+V následující tabulce je uveden seznam konfigurací ER, které podporují konfigurovatelné obchodní dokumenty a které byly vydány v modulu Finance do prosince 2020.
+
+| Konfigurace datového modelu    | Konfigurace formátu                           |
+|-----------------------------|-------------------------------------------------|
+| Model přepravní doklad        | Přepravní doklad (Excel)                          |
+|                             | Přepravní doklad (Word)                           |
+| Model certifikátu o původu | Certifikát o původu (Excel)                   |
+|                             | Certifikát o původu (Word)                    |
+| Model faktury               | Dobropis a vrubopis zákazníka (Excel)          |
+|                             | Dobropis a vrubopis zákazníka (Word)           |
+|                             | Volná textová faktura (Excel)                       |
+|                             | Volná textová faktura (Excel) (BH)                  |
+|                             | Volná textová faktura (FR) (Excel)                  |
+|                             | Volná textová faktura (LT) (Excel)                  |
+|                             | Volná textová faktura (LV) (Excel)                  |
+|                             | Volná textová faktura (PL) (Excel)                  |
+|                             | Volná textová faktura (CZ) (Excel)                  |
+|                             | Volná textová faktura (EE) (Excel)                  |
+|                             | Volná textová faktura (HU) (Excel)                  |
+|                             | Volná textová faktura (TH) (Excel)                  |
+|                             | Volná textová faktura (Word)                        |
+|                             | Řádkové položky smlouvy na projekt (Excel)             |
+|                             | Řádkové položky smlouvy na projekt (CZ) (Excel)        |
+|                             | Řádkové položky smlouvy na projekt (Excel) (BH)        |
+|                             | Řádkové položky smlouvy na projekt (HU) (Excel)        |
+|                             | Řádkové položky smlouvy na projekt (LT) (Excel)        |
+|                             | Řádkové položky smlouvy na projekt (PL) (Excel)        |
+|                             | Řádkové položky smlouvy na projekt (Word)              |
+|                             | Vydání uchování zákazníka projektu (Excel)      |
+|                             | Vydání uchování zákazníka projektu (CZ) (Excel) |
+|                             | Vydání uchování zákazníka projektu (HU) (Excel) |
+|                             | Vydání uchování zákazníka projektu (LT) (Excel) |
+|                             | Vydání uchování zákazníka projektu (PL) (Excel) |
+|                             | Vydání uchování zákazníka projektu (TH) (Excel) |
+|                             | Vydání uchování zákazníka projektu (Word)       |
+|                             | Projektová faktura (Excel)                         |
+|                             | Projektová faktura (Word)                          |
+|                             | Projektová faktura (AE) (Excel)                    |
+|                             | Projektová faktura (CZ) (Excel)                    |
+|                             | Projektová faktura (Excel) (BH)                    |
+|                             | Projektová faktura (HU) (Excel)                    |
+|                             | Projektová faktura (JP) (Excel)                    |
+|                             | Projektová faktura (LT) (Excel)                    |
+|                             | Projektová faktura (PL) (Excel)                    |
+|                             | Projektová faktura (TH) (Excel)                    |
+|                             | Projektová faktura (MY) (Excel)               |
+|                             | Jednoduchá projektová faktura (MY) (Excel)             |
+|                             | Faktura pro správu projektu (Excel)                  |
+|                             | Faktura pro správu projektu (CZ) (Excel)             |
+|                             | Faktura pro správu projektu (Excel) (BH)             |
+|                             | Faktura pro správu projektu (HU) (Excel)             |
+|                             | Faktura pro správu projektu (JP) (Excel)             |
+|                             | Faktura pro správu projektu (LT) (Excel)             |
+|                             | Faktura pro správu projektu (PL) (Excel)             |
+|                             | Faktura pro správu projektu (Word)                   |
+|                             | Zálohová nákupní faktura (Excel)                |
+|                             | Zálohová nákupní faktura (Word)                 |
+|                             | Prodejní zálohová faktura (Excel)                   |
+|                             | Prodejní zálohová faktura (Word)                    |
+|                             | Prodejní zálohová faktura (PL) (Excel)              |
+|                             | Prodejní faktura (Excel)                           |
+|                             | Prodejní faktura (Excel) (BH)                      |
+|                             | Prodejní faktura (Excel) (CZ)                      |
+|                             | Prodejní faktura (Excel) (EE)                      |
+|                             | Prodejní faktura (Excel) (FR)                      |
+|                             | Prodejní faktura (Excel) (HU)                      |
+|                             | Prodejní faktura (Excel) (IN)                      |
+|                             | Prodejní faktura (Excel) (LT)                      |
+|                             | Prodejní faktura (Excel) (LV)                      |
+|                             | Prodejní faktura (Excel) (PL)                      |
+|                             | Prodejní faktura (Excel) (TH)                      |
+|                             | Prodejní faktura (Word)                            |
+|                             | Obchodní faktura TMS (Excel)                  |
+|                             | Obchodní faktura TMS (Word)                   |
+|                             | Příloha dokumentu faktury dodavatele (Excel)                 |
+|                             | Příloha dokumentu faktury dodavatele (CZ) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (HU) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (IN) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (LT) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (LV) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (MY) (Excel)            |
+|                             | Příloha dokumentu faktury dodavatele (Word)                  |
+| Model objednávky                 | Potvrzení smlouvy (Excel)                  |
+|                             | Potvrzení smlouvy (Word)                   |
+|                             | Potvrzení nákupní smlouvy (Excel)         |
+|                             | Potvrzení nákupní smlouvy (Word)          |
+|                             | Nákupní objednávka (Excel)                          |
+|                             | Nákupní objednávka (CZ) (Excel)                     |
+|                             | Dotaz na nákupní objednávku (CZ) (Excel)             |
+|                             | Nákupní objednávka (HU) (Excel)                     |
+|                             | Dotaz na nákupní objednávku (HU) (Excel)             |
+|                             | Řádek nákupní objednávka (Word)                           |
+|                             | Dotaz na nákupní objednávku (Excel)                  |
+|                             | Dotaz na nákupní objednávku (Word)                   |
+|                             | Potvrzení prodejní objednávky (Excel)                |
+|                             | Potvrzení prodejní objednávky (CZ) (Excel)           |
+|                             | Potvrzení prodejní objednávky (HU) (Excel)           |
+|                             | Potvrzení prodejní objednávky (Word)                 |
+| Model balení          | Obsah kontejneru (Excel)                      |
+|                             | Obsah kontejneru (Word)                       |
+|                             | Seznam nakládky (Excel)                               |
+|                             | Seznam nakládky (Word)                                |
+|                             | Výběrový seznam (Excel)                            |
+|                             | Výběrový seznam (CZ) (Excel)                       |
+|                             | Výdejka (Word)                             |
+|                             | Výběrový seznam produkce (Excel)                    |
+|                             | Výběrový seznam produkce (Word)                     |
+|                             | Výběrový seznam zásilky pro načtení (Excel)             |
+|                             | Výběrový seznam zásilky pro načtení (Word)              |
+|                             | Výběrový seznam pro zásilku (Excel)         |
+|                             | Výběrový seznam pro zásilku (Word)          |
+|                             | Výběrový seznam zásilky pro vlnu (Excel)             |
+|                             | Výběrový seznam zásilky pro vlnu (Word)              |
+| Model platby               | Poradenství ohledně plateb zákazníkům (Excel)                 |
+|                             | Poradenství ohledně plateb zákazníkům (Word)                  |
+|                             | Poradenství ohledně plateb dodavatelům (Excel)                   |
+|                             | Poradenství ohledně plateb dodavatelům (Word)                    |
+| Model nabídky             | Nabídka projektu (Excel)                       |
+|                             | Nabídky projektu (Word)                        |
+|                             | Řádky požadavku na nabídku (Excel)                   |
+|                             | Řádky požadavku na nabídku (Přijetí) (Excel)          |
+|                             | Řádky požadavku na nabídku (Přijetí) (Word)           |
+|                             | Řádky požadavku na nabídku (Odmítnutí) (Excel)          |
+|                             | Řádky požadavku na nabídku (Odmítnutí) (Word)           |
+|                             | Požadavek na nabídku (Vrácení) (Excel)          |
+|                             | Požadavek na nabídku (Vrácení) (Word)           |
+|                             | Požadavek na nabídku (Word)                    |
+|                             | Prodejní nabídka (Excel)                         |
+|                             | Prodejní nabídka (CZ) (Excel)                    |
+|                             | Prodejní nabídka (HU) (Excel)                    |
+|                             | Řádek nabídky (Word)                          |
+|                             | Potvrzení prodejní nabídky (Excel)            |
+|                             | Potvrzení prodejní nabídky (Word)             |
+| Model odsouhlasení        | Výpis z běžného účtu, Ext (Excel)             |
+|                             | Výpis z běžného účtu, Ext (CN) (Excel)        |
+|                             | Výpis z běžného účtu, Ext (Word)              |
+|                             | Výpis z běžného účtu, Francie (Excel)          |
+| Model připomenutí              | Upomínka inkasa (Excel)                  |
+|                             | Upomínka inkasa (CN) (Excel)             |
+|                             | Upomínka (Word)                   |
+|                             | Oznámení úroků odběratele (Excel)                  |
+|                             | Oznámení úroků odběratele (Word)                   |
+| Model nákladního listu               | Načíst nabídku (Excel)                             |
+|                             | Načíst nabídku (Word)                              |
+|                             | Nákupní objednávka – dodací list (Excel)             |
+|                             | Nákupní objednávka – dodací list (CZ) (Excel)        |
+|                             | Nákupní objednávka – dodací list (Word)              |
+|                             | Trasa (Excel)                                   |
+|                             | Trasa (Word)                                    |
+|                             | Prodejní objednávka – dodací list (Excel)                |
+|                             | Prodejní objednávka – dodací list (CZ) (Excel)           |
+|                             | Prodejní objednávka – dodací list (LT) (Excel)           |
+|                             | Prodejní objednávka – dodací list (PL) (Excel)           |
+|                             | Prodejní objednávka – dodací list (Word)                 |

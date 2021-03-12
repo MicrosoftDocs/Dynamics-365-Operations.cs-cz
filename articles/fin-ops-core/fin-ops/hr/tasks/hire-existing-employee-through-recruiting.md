@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693105"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797252"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Najmutí existujících zaměstnanců prostřednictvím náboru
 
@@ -40,6 +40,3 @@ Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanc
 9. Klikněte na možnost Změna pozice.
     * Nyní můžete také změnit kompenzaci. Pokud nyní kompenzaci nepřiřadíte, můžete to změnit zobrazením formuláře pracovníka, výběrem karty Kompenzace a výběrem možnosti „Fixní plán“. Po výběru možnosti „Změna pozice“ bude stav přihlášky aktualizován na hodnotu „Zaměstnán“.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

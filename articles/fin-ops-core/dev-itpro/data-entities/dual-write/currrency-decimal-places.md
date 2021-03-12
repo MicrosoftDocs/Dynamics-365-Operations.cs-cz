@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683718"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744368"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrace datového typu měny pro dvojitý zápis
 
@@ -44,11 +44,11 @@ Migrace je volitelná. Pokud byste mohli mít podporu pro více desetinných mí
 
 ## <a name="requesting-migration-from-microsoft"></a>Žádost o migraci od společnosti Microsoft
 
-Úložiště pro existující měnová pole v Dataverse nemůže podporovat více než čtyři desetinná místa. Proto během procesu migrace jsou hodnoty měny zkopírovány do nových interních polí v databázi. Tento proces probíhá nepřetržitě, dokud nebudou migrována všechna data. Interně na konci migrace nové typy úložišť nahrazují staré typy úložišť, ale hodnoty dat se nezmění. Pole měny pak mohou podporovat až 10 desetinných míst. Během procesu migrace lze Dataverse nadále používat bez přerušení.
+Úložiště pro existující měnové sloupce v Dataverse nemůže podporovat více než čtyři desetinná místa. Proto během procesu migrace jsou hodnoty měny zkopírovány do nových interních sloupců v databázi. Tento proces probíhá nepřetržitě, dokud nebudou migrována všechna data. Interně na konci migrace nové typy úložišť nahrazují staré typy úložišť, ale hodnoty dat se nezmění. Sloupce měny pak mohou podporovat až 10 desetinných míst. Během procesu migrace lze Dataverse nadále používat bez přerušení.
 
 Současně jsou měnové kurzy upravovány tak, aby podporovaly až 12 desetinných míst místo současného limitu 10. Tato změna je nutná, aby počet desetinných míst byl stejný v aplikaci Finance and Operations a Dataverse.
 
-Migrace nezmění žádná data. Po převodu polí měny a směnného kurzu mohou správci nakonfigurovat systém tak, aby používal až 10 desetinných míst pro měnová pole zadáním počtu desetinných míst pro každou měnu transakce a pro stanovení ceny.
+Migrace nezmění žádná data. Po převodu sloupců měny a směnného kurzu mohou správci nakonfigurovat systém tak, aby používal až 10 desetinných míst pro měnové sloupce zadáním počtu desetinných míst pro každou měnu transakce a pro stanovení ceny.
 
 ### <a name="request-a-migration"></a>Požádejte o migraci
 
@@ -72,29 +72,26 @@ Po dokončení migrace Dataverse může ukládat čísla, která mají více des
 
 Chcete-li provést tuto změnu, musíte aktualizovat následující nastavení v aplikaci Power Apps:
 
-+ **Systémová nastavení: Přesnost měny pro stanovení ceny** - pole **Nastavit přesnost měny, která se používá pro stanovení cen v celém systému** definuje, jak se bude měna chovat pro organizaci, když je vybrána **Přesnost stanovení cen**.
-+ **Řízení podniku: měny** - Pole **Přesnost měny** umožňuje určit vlastní počet desetinných míst pro konkrétní měnu. Existuje nastavení pro celou organizaci.
++ **Systémová nastavení: Přesnost měny pro stanovení ceny** - sloupec **Nastavit přesnost měny, která se používá pro stanovení cen v celém systému** definuje, jak se bude měna chovat pro organizaci, když je vybrána **Přesnost stanovení cen**.
++ **Řízení podniku: měny** - sloupec **Přesnost měny** umožňuje určit vlastní počet desetinných míst pro konkrétní měnu. Existuje nastavení pro celou organizaci.
 
 Existují některá omezení:
 
-+ Nelze konfigurovat pole měny na entitě.
++ Nelze konfigurovat sloupec měny v tabulce.
 + Více než čtyři desetinná místa můžete zadat pouze na úrovni **Stanovení ceny** a **Měna transakce**.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systémová nastavení: Přesnost měny pro stanovení ceny
 
-Po dokončení migrace mohou správci nastavit přesnost měny. Přejděte na **Nastavení \> Správa** a vyberte **Nastavení systému**. Pak na kartě **Obecné** změňte hodnotu pole **Nastavit přesnost měny, která se používá pro stanovení cen v celém systému**, jak je znázorněno na následujícím obrázku.
+Po dokončení migrace mohou správci nastavit přesnost měny. Přejděte na **Nastavení \> Správa** a vyberte **Nastavení systému**. Pak na kartě **Obecné** změňte hodnotu sloupce **Nastavit přesnost měny, který se používá pro stanovení cen v celém systému**, jak je znázorněno na následujícím obrázku.
 
 ![Systémová nastavení měny](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Řízení podniku: měny
 
-Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přesnosti měny použité pro stanovení ceny, můžete ji změnit. Přejděte na **Nastavení \> Řízení podniku**, vyberte **Měny** a vyberte měnu, kterou chcete změnit. Pak nastavte pole **Přesnost měny** a zadejte požadovaný počet desetinných míst, jak je znázorněno na následujícím obrázku.
+Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přesnosti měny použité pro stanovení ceny, můžete ji změnit. Přejděte na **Nastavení \> Řízení podniku**, vyberte **Měny** a vyberte měnu, kterou chcete změnit. Pak nastavte sloupec **Přesnost měny** a zadejte požadovaný počet desetinných míst, jak je znázorněno na následujícím obrázku.
 
 ![Nastavení měny pro konkrétní národní prostředí](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>tabulky: Pole měny
+### <a name="tables-currency-column"></a>tabulky: Sloupec Měna
 
-Počet desetinných míst, která lze konfigurovat pro konkrétní pole měny, je omezen na čtyři.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Počet desetinných míst, která lze konfigurovat pro konkrétní sloupce měny, je omezen na čtyři.

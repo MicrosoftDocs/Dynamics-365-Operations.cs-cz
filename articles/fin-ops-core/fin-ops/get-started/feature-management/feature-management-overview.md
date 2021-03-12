@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692959"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798345"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
@@ -101,8 +101,8 @@ Budou povoleny všechny funkce, které lze povolit. Pokud je již v budoucnu na
 
 Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty, pokud nejsou povinné. Chcete-li však automaticky zapnout všechny nové funkce, můžete pomocí rozevíracího seznamu pod názvem pracovního prostoru změnit, k čemu dojde při přidání nových funkcí.
 
-- Výběrem možnosti **Automaticky povolovat nové funkce** se při přidání do vašeho prostředí automaticky zapnou všechny nové funkce.
-- Výběrem možnosti **Automaticky nepovolovat nové funkce** se při přidání do vašeho prostředí automaticky vypnou všechny nové funkce.
+- Výběrem možnosti `Enable new features automatically` se při přidání do vašeho prostředí automaticky zapnou všechny nové funkce.
+- Výběrem možnosti `Do not enable new features automatically` se při přidání do vašeho prostředí implicitně vypnou všechny nové funkce.
 
 
 Pokud povolíte všechny funkce automaticky, budou zapnuty všechny funkce, které by byly povoleny při kliknutí na tlačítko **Povolit vše**. Nepovolí se funkce vyžadující potvrzení nebo funkce, které nelze povolit, dokud nebude provedena akce.
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Co je rozhraní IFeatureLifecycle, které je implementováno některými třídami funkcí?
 IFeatureLifecycle je interní mechanismus Microsoftu pro označení fáze životního cyklu funkce. Funkce mohou být tyto:
-- PrivatePreview – Vyžaduje nasazení testovací verze, aby byla viditelná.
-- PublicPreview – Zobrazuje se ve výchozím nastavení, ale s upozorněním, že funkce je ve verzi Preview.
-- Released – Plné vydání.
+- `PrivatePreview` – Vyžaduje nasazení testovací verze, aby byla viditelná.
+- `PublicPreview` – Zobrazuje se ve výchozím nastavení, ale s upozorněním, že funkce je ve verzi Preview.
+- `Released` - Plně uvolněno.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

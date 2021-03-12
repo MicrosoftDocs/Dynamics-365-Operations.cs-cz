@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694488"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798420"
 ---
 # <a name="create-alert-rules"></a>Vytváření pravidel výstrah
 
@@ -40,7 +40,7 @@ Dávkové úlohy pro změnu dat a výstrahy s datem splatnosti musí být spušt
 
 Událost, která spouští pravidlo výstrahy, může být datum nebo nastalá specifická změna, ke které dochází. Spouštěče událostí jsou definovány na pevné záložce **Upozornit mě při** dialogového okna **Vytvořit pravidlo výstrahy**. Dostupné události pro konkrétní pole závisí na zvoleném spouštěči.
 
-Například když nastavujete pravidlo výstrahy pro pole **počáteční datum**, události po termínu splnění jsou vhodné. Proto je typ události **je splatno za** pro toto pole k dispozici. Pro pole, jako je například **Nákladové středisko** například není událost data splatnosti vhodná. Proto není typ události **je splatno za** k dispozici. Namísto toho je k dispozici typ události **Došlo ke změně**.
+Například když nastavujete pravidlo výstrahy pro pole **počáteční datum**, události po termínu splnění jsou vhodné. Proto je typ události `is due in` pro toto pole k dispozici. Pro pole, jako je například **Nákladové středisko** například není událost data splatnosti vhodná. Proto není typ události `is due in` k dispozici. Namísto toho je k dispozici typ události `has changed`.
 
 ## <a name="event-types"></a>Typy událostí
 
@@ -86,10 +86,10 @@ Výstrahy lze externě odesílat pomocí architektury obchodních událostí. P�
 2. V podokně akcí na kartě **Možnosti** ve skupině **Sdílení** vyberte **vytvořit pravidlo výstrahy**.
 3. V dialogovém okně **Vytvořit pravidlo výstrahy**, v poli **Pole** vyberte pole, které chcete sledovat.
 4. V poli **Událost** vyberte typ události.
-5. Na pevné záložce **Upozornit mě na** vyberte požadovanou možnost. Chcete-li odeslat výstrahu jako obchodní událost, zkontrolujte, že je možnost **Pro celou organizaci** nastavena na **Ne**.
+5. Na pevné záložce **Upozornit mě na** vyberte požadovanou možnost. Chcete-li odeslat výstrahu jako obchodní událost, nastavte hotnodu **Pro celou organizaci** na **Ne**.
 6. Pokud by se pravidlo výstrahy mělo deaktivovat v určité datum, vyberte na pevné záložce **Upozornit mě do** koncové datum.
-7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha. Chcete-li odeslat výstrahu jako obchodní událost, nastavte možnost **Odeslat externě** na **Ano**.
-8. Do pole **Zpráva** zadejte libovolnou zprávu. Text, který bude používán jako zpráva, kterou dostanete při spuštění výstrahy.
+7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se stane předmětem e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha. Chcete-li odeslat výstrahu jako obchodní událost, nastavte možnost **Odeslat externě** na **Ano**.
+8. Do pole **Zpráva** zadejte libovolnou zprávu. Text bude používán jako zpráva, kterou dostanete při spuštění výstrahy.
 9. Zvolte **OK**, chcete-li uložit nastavení a vytvořit pravidlo výstrahy.
 
 ## <a name="limitations-and-workarounds"></a>Omezení a zástupná řešení
@@ -102,6 +102,3 @@ Výstrahy nelze vytvořit pro některé sekundární zdroje dat ve formuláříc
     ```
 2. Vytvořte výstrahu z formuláře SysTableBrowser.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

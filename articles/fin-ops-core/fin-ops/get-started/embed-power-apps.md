@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: fbdd4dd1bb0b850319b12e55b0e68d6fdc516ad6
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693476"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798370"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
@@ -115,7 +115,7 @@ Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji ode
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit.
 
 Podle výchozího nastavení uživatel může vložit aplikace na každou stránku pod tlačítkem nabídky Power Apps nebo přímo na stránku jako kartu, pevnou záložku, list nebo jako nový oddíl v pracovním prostoru. Avšak v případě potřeby vývojáři také mohou konfigurovat tuto funkci, aby povolila vložení aplikace pouze na některé stránky pomocí následujících metod:
 
@@ -142,6 +142,3 @@ public final class ClassTest_Extension
     }
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

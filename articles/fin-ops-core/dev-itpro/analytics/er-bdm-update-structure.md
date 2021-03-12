@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681321"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728082"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Aktualizace struktury šablony obchodního dokumentu 
 
@@ -56,7 +56,7 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 5. Výběrem **OK** vytvořte novou šablonu.
 
     > [!NOTE]
-    > Pokud jste se ještě nepřihlásili do Office Online, budete [přesměrováni na přihlašovací stránku Office 365](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Chcete-li se vrátit do prostředí Finance, vyberte tlačítko **Zpět** v prohlížeči.
+    > Pokud jste se ještě nepřihlásili do Office Online, budete [přesměrováni na přihlašovací stránku Office 365](er-business-document-management.md#frequently-asked-questions). Chcete-li se vrátit do prostředí Finance, vyberte tlačítko **Zpět** v prohlížeči.
 
     Nová šablona se otevře v režimu úprav ve vloženém ovládacím prvku Excel Online na stránce editoru šablon.
 
@@ -106,6 +106,3 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

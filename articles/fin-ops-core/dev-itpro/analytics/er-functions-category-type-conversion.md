@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686067"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740801"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Seznam funkcí ER v kategorii převodu typu
 
@@ -38,6 +38,14 @@ K převodu hodnot mezi typy lze použít funkce pro převod typů elektronickéh
 | [IntValue](er-functions-conversion-intvalue.md)       | Tato funkce vrací hodnotu *Int*, která představuje zadaný řetězec. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Tato funkce vrací hodnotu typu *reálné číslo*, která je převedena ze zadané hodnoty typu *Řetězec*. Během převodu se uvažují určené oddělovače skupin desetinných míst a číslic. |
 | [Hodnota](er-functions-conversion-value.md)             | Tato funkce vrací hodnotu typu *reálné číslo*, která je převedena ze zadané hodnoty typu *Řetězec*. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Funkce převodu typu v kategorii kontejneru
+
+V následující tabulce jsou popsány funkce pro převod typů v kategorii [kontejner](er-functions-category-container.md).
+
+| Funkce | popis |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Tato funkce převede zadaný vstup datového typu *String* na datovou položku datového typu *Kontejner*. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Funkce převodu typu v kategorii datum a čas
 
@@ -79,6 +87,3 @@ V následující tabulce jsou popsány funkce pro převod typů v [kategorii tex
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
 [Jazyk receptur v elektronickém výkaznictví](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

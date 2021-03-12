@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694181"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798640"
 ---
 # <a name="action-search"></a>Vyhledání akce
 
@@ -35,7 +35,7 @@ Stránky primárně vystavují příkazy v podoknech akcí, standardním podokn�
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-Klíčocé tipy již nejsou k dispozici, ale byly nahrazeny funkcí hledání akce. Nová funkce vám umožňuje rychle vyhledat a spustit tlačítko z jakéhokoli viditelného podokna akcí.
+Klíčové tipy již nejsou k dispozici, ale byly nahrazeny funkcí hledání akce. Nová funkce vám umožňuje rychle vyhledat a spustit tlačítko z jakéhokoli viditelného podokna akcí.
 
 ## <a name="using-action-search"></a>Použití hledání akcí
 
@@ -53,7 +53,7 @@ Vyhledávání akcí také spustíte stisknutím kláves Ctrl +/ nebo Alt + Q. S
 
 ## <a name="understanding-the-results-list"></a>Vysvětlivky k seznamu výsledků
 
-Často musíte znát umístění i kontext tlačítka, abyste plně porozuměli účelu daného tlačítka. Proto se zobrazují další informace pro každou položku v seznamu výsledků, které vám pomohou přesně pochopit, která tlačítka se zobrazí v seznamu. Zejména se zobrazí "cesta" tlačítka. Tato cesta může obsahovat popisky tyto prvky uživatelského rozhraní odpovídajícím způsobem:
+Často musíte znát umístění i kontext tlačítka, abyste plně porozuměli účelu daného tlačítka. Proto se v seznamu výsledků zobrazují další informace pro každou položku, které vám pomohou přesně pochopit, která tlačítka se zobrazí v seznamu. Zejména se zobrazí "cesta" tlačítka. Tato cesta může obsahovat popisky tyto prvky uživatelského rozhraní odpovídajícím způsobem:
 
 - Karta podokno akcí
 - Skupina tlačítek
@@ -65,7 +65,7 @@ Předpokládejme například, že jste zadali výraz **cel** do pole **vyhledáv
 
 [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
-V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardního podokna akcí v horní části stránky. Vyhledávání akcí však zobrazuje také výsledky viditelných panelů nástrojů, které jsou umístěny na dalších místech na stránce. Například vyhledáváte tlačítko **Zásoby na skladě**, které se nachází na pevné záložce **Řádky prodejní objednávky**. V tomto případě cesta tlačítka v seznamu výsledků (**Řádky prodejní objednávky**&gt;**Zásoby**&gt;**Zobrazení**) vás informuje o tom, že toto tlačítko se nachází v nadpisu **Zobrazení** na tlačítku nabídky **Zásob** na pevné záložce **Řádky prodejní objednávky**.
+V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardního podokna akcí v horní části stránky. Vyhledávání akcí však zobrazuje také výsledky z viditelných panelů nástrojů, které jsou umístěny na jiných místech na stránce. Například vyhledáváte tlačítko **Zásoby na skladě**, které je na pevné záložce **Řádky prodejní objednávky**. V tomto případě vás cesta tlačítka v seznamu výsledků (**Řádky prodejní objednávky** &gt; **Zásoby** &gt; **Zobrazení**) informuje o tom, že toto tlačítko se nachází v nadpisu **Zobrazení** na tlačítku nabídky **Zásoby** na pevné záložce **Řádky prodejní objednávky**.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
@@ -75,6 +75,3 @@ V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardníh
 ## <a name="action-search-vs-navigation-search"></a>Vyhledávání akcí versus hledání navigace
 
 Akce hledání je určena k vyhledání a spuštění akcí na stránce. Existuje i samostatný mechanismus vyhledávání pro vyhledávání a navigaci na stránky. Další informace o této funkci naleznete v článku [Hledání navigace](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

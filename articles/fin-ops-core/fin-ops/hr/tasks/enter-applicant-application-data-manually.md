@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ea39e86ace40cd8e3ad2733b7f7f7a873a963e7
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1039acd53f493e810b11aafd85116d034b7d323
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693033"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797306"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ruční zadávání dat o přihlášce a uchazeči
 
@@ -61,6 +61,3 @@ Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich p
 6. Klikněte na položku Uložit.
     * Po uložení přihlášky bude k ní možné připojit dokumenty, včetně zkušeností, odměn a průvodního dopisu uchazeče.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

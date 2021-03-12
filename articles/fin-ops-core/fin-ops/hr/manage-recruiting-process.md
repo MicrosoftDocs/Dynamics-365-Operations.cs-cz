@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f440a42ea475a42c803475d82e3027625bf4db
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694902"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798036"
 ---
 # <a name="manage-recruiting-processes"></a>Řízení náborových procesů
 
@@ -103,6 +103,3 @@ Má-li přihlášku zkontrolovat několik pracovníků, lze pro vytvoření sezn
 ## <a name="hiring-applicants"></a>Přijímání uchazečů
 
 Pomocí stránky **Přihlášky** můžete najmou uchazeče. Při náboru žadatele bude mít záznam přihlášky stav **Zaměstnán** a osobní záznam uchazeče v globálním adresáři je přidružen k novému záznamu pracovníka. Změny informací v globálním adresáři pro nový záznam pracovníka je zobrazen také v záznamu žadatele. To vám může pomoci snížit objem zadávaní dat, pokud nový pracovník někdy zažádá o jinou pozici v rámci vaší organizace. Pokud chcete přijmout stávajícího pracovníka na novou pozici, klikněte na **Změnit pozici** v rozevíracím seznamu **Stav přihlášky** pro zahájení procesu převodu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

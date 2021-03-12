@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b83d6044545467f7c7488a4b2a97be75d3e27f9
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b66f84360e7161e899177850bf45f16607600842
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694610"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796860"
 ---
 # <a name="change-the-date-for-a-session"></a>Změna data pro relaci
 
@@ -32,6 +32,3 @@ V tomto tématu je vysvětleno, jak lze změnit datum relace. Standardně se př
 2. Do pole **Datum** zadejte datum.
 3. Vyberte **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

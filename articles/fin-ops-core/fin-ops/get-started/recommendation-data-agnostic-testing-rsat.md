@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7fd1fc4756e74a5d07ffae533b6b9837b960f17a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693742"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798194"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostické testování dat pomocí Regression Suite Automation Tool
 
@@ -49,6 +49,3 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
     - Proveďte ověření až poté, co filtrujete určitou transakci namísto obecného ověřování. Například pro počet záznamů můžete filtrovat číslo transakce nebo datum transakce tak, aby ověření vyloučilo všechny ostatní transakce. 
     - Pokud kontrolujete zůstatek odběratele nebo kontrolu rozpočtu, nejprve hodnotu uložte a poté přidejte hodnotu transakce pro ověření očekávaného výsledku namísto ověření pevné očekávané hodnoty. 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

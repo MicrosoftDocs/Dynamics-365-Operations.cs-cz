@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d72eaa28cfe3d114d2ab48cb1e477074a8bf739
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3c1b63ba623eb1699938476825a77fd40d838142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693251"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797212"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -734,7 +734,7 @@ Se serverem maloobchodu a správou dat mohou spotřebitelé a podniků vytváře
 </tr>
 <tr>
 <td>Přesun dat mezi záložní kanceláří Microsoft Dynamics AX a kanály pomocí Commerce Data Exchange.</td>
-<td>Commerce Data Exchange je systém, který přenáší data mezi aplikací Microsoft Dynamics AX a maloobchodními kanály, jako jsou například online obchody nebo kamenné obchody. Další informace najdete v tématu <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange je systém, který přenáší data mezi aplikací Microsoft Dynamics AX a maloobchodními kanály, jako jsou například online obchody nebo kamenné obchody. Další informace naleznete v tématu <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Funkční parita s Microsoft Dynamics AX 2012 CU8. Upozorňujeme však na tyto skutečnosti:
 <ul>
 <li>Služba Commerce Data Exchange byla přepracována pro cloud.</li>
@@ -1033,6 +1033,3 @@ Nebyly přidány následující nové funkce.
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688252"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744534"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -65,23 +65,23 @@ Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
 1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Systém** vyberte **Správa**.
 2. Na stránce **Správa** zvolte **Nastavení systému**.
-3. Na kartě **Vlastní nastavení** v poli **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
+3. Na kartě **Vlastní nastavení** ve sloupci **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
 
 
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
 1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Přizpůsobení** vyberte **Protokol sledování modulu plug-in**.
-2. Najděte protokoly sledování, kde pole **Název typu** je nastaveno na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Najděte protokoly sledování, kde sloupec **Název typu** je nastaven na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Chcete-li zobrazit úplný protokol, klikněte dvakrát na položku, a potom na pevné záložce **Spuštění** zkontrolujte text **Message Block**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v aplikacích Finance and Operations
 
 **Požadovaná role pro zobrazení chyb:** Chyby duálního zápisu správce systému, které vznikly v Dataverse, se mohou objevit v aplikaci Finance and Operations. V některých případech není úplný text chybové zprávy k dispozici, protože zpráva je příliš dlouhá nebo obsahuje osobní identifikační údaje (PII). Pomocí následujících kroků můžete zapnout podrobné protokolování chyb.
 
-1. Všechny konfigurace projektu v aplikacích Finance and Operations mají vlastnost **IsDebugMode** v entitě **DualWriteProjectConfiguration**. Otevřete entitu **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel.
+1. Všechny konfigurace projektu v aplikacích Finance and Operations mají vlastnost **IsDebugMode** v tabulce **DualWriteProjectConfiguration**. Otevřete tabulku **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel.
 
     > [!TIP]
-    > Snadným způsobem, jak tuto entitu otevřít, je zapnout režim **Návrh** v doplňku aplikace Excel a poté přidat **DualWriteProjectConfigurationEntity** do listu. další informace získáte v tématu [Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel](../../office-integration/use-excel-add-in.md).
+    > Snadným způsobem, jak tuto tabulku otevřít, je zapnout režim **Návrh** v doplňku aplikace Excel a poté přidat **DualWriteProjectConfigurationEntity** do listu. další informace získáte v tématu [Otevření dat tabulky v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel](../../office-integration/use-excel-add-in.md).
 
 2. Nastavte vlastnost **IsDebugMode** na **Ano** pro projekt.
 3. Spuštění scénáře generujících chyby.
@@ -118,10 +118,7 @@ Nyní můžete propojit nové prostředí.
 Po vytvoření prodejní objednávky v produktu Dynamics 365 Sales se můžete kliknutím na možnost **+ Přidat produkty** přesměrovat do formuláře řádku objednávky Dynamics 365 Project Operations. Neexistuje žádný způsob, jak z tohoto formuláře zobrazit formulář **Informace** pro řádek prodejní objednávky. Možnost pro **informace** není zobrazena v rozevírací nabídce pod položkou **Nový řádek objednávky**. K tomu dojde, protože operace projektu byly nainstalovány ve vašem prostředí.
 
 Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následujícím způsobem:
-1. Přejděte na entitu **Řádek** objednávky.
+1. Přejděte na entitu **Řádek** tabulky.
 2. Vyhledejte formulář **Informace** v uzlu formulářů. 
 3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 
 4. Změňte nastavení zabezpečení na **Zobrazit všem**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

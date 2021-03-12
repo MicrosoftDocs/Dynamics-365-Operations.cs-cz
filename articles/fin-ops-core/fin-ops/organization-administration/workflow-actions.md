@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694280"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797595"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Akce v procesech schválení workflow
 
@@ -141,6 +141,3 @@ Když schvalující požaduje provedení změny v dokumentu, je dokument odeslá
 Stanislav například odeslal vyúčtování výdajů na 12 000 USD a tento dokument je přiřazen Šárce. Pokud bude Šárka požadovat změnu, bude vyúčtování výdajů odesláno zpět Stanislavovi.
 
 Stanislav může vyúčtování výdajů znovu odeslat. Nejprve může provést požadované změny, anebo může znovu odeslat původní verzi vyúčtování výdajů. Jestliže Stanislav vyúčtování výdajů znovu odešle, je odesláno Františkovi ke schválení, protože František je prvním schvalovatelem v procesu schvalování.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

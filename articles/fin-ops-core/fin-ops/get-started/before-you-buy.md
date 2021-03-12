@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694129"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798542"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
@@ -30,7 +30,7 @@ Neznáte Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamic
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok 1: Vyzkoušejte aplikaci Finance and Operations zdarma po dobu 30 dnů
 
-Aplikaci Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze aplikací Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte na stránce [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Aplikaci Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze aplikací Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte v tématu [Registrace ukázkového předplatného](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok dva: Výběr možnosti nasazení
 
@@ -93,6 +93,3 @@ Microsoft FastTrack for Dynamics 365 je služba zajišťující zákazníkům ú
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Pokud provádíte upgrade aplikace Dynamics AX 2012 nebo migraci z aplikace AX 2009
 
 Pokud jste zákazník, který upgraduje z aplikace Microsoft Dynamics AX 2012 nebo migruje z aplikace Microsoft Dynamics AX 2009, budete pravděpodobně mít nárok na delší zkušební období. Další informace vám poskytne <daxcf@microsoft.com>.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

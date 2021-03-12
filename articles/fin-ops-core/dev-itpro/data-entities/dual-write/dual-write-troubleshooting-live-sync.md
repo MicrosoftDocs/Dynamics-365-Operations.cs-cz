@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685556"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744606"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
@@ -46,11 +46,11 @@ Může se zobrazit následující chybová zpráva při vytváření řádku v a
 
 Chcete-li tento problém vyřešit, postupujte podle kroků v [Požadavcích na systém a jeho předpoklady](requirements-and-prerequisites.md). K provedení těchto kroků musí mít uživatelé aplikace se dvojím zápisem, kteří jsou vytvořeni v aplikaci Dataverse, roli správce systému. Výchozí vlastnící tým musí mít také roli správce systému.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Synchronizace v ostrém provozu pro libovolnou entitu neustále vyvolává podobnou chybu při vytváření řádku v aplikaci Finance and Operations
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Synchronizace v ostrém provozu pro libovolnou tabulku neustále vyvolává podobnou chybu při vytváření řádku v aplikaci Finance and Operations.
 
 **Požadovaná role pro opravu problému:** správce systému
 
-Při každém pokusu o uložení dat entity do aplikace Finance and Operations se může zobrazit chybová zpráva podobná následující:
+Při každém pokusu o uložení dat tabulky do aplikace Finance and Operations se může zobrazit chybová zpráva podobná následující:
 
 *Nelze uložit změny do databáze. Jednotka práce nemůže potvrdit transakci. Nelze zapsat data do entity uoms. Zápisy do UnitOfMeasureEntity se nezdařily. Chybová zpráva Nelze synchronizovat s entitou uoms.*
 
@@ -58,8 +58,8 @@ Chcete-li tento problém vyřešit, je nutné zajistit, aby v aplikaci Finance a
 
 Pokud existují data na obou stranách a potvrdili jste, že problém není související s daty, postupujte následujícím způsobem.
 
-1. Zastavte související entitu.
-2. Přihlaste se k aplikaci Finance and Operations a ujistěte se, že v tabulkách DualWriteProjectConfiguration a DualWriteProjectFieldConfiguration existují řádky pro nefunkční entitu. Takto například dotaz vypadá, pokud entita **Zákazníci** selhává.
+1. Zastavte související tabulku.
+2. Přihlaste se k aplikaci Finance and Operations a ujistěte se, že v tabulce DualWriteProjectConfiguration a DualWriteProjectFieldConfiguration existují řádky pro nefunkční entitu. Takto například dotaz vypadá, pokud tabulka **Zákazníci** selhává.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Pokud existují data na obou stranách a potvrdili jste, že problém není souv
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Pokud existují řádky pro neúspěšnou entitu i po zastavení mapování tabulek, odstraňte řádky, které souvisejí s chybnou entitou. Poznamenejte si sloupec **ProjectName** v tabulce DualWriteProjectConfiguration a načtěte záznam v tabulce DualWriteProjectFieldConfiguration použitím názvu projektu k odstranění řádku.
+3. Pokud existují řádky pro neúspěšnou tabulku i po zastavení mapování tabulek, odstraňte řádky, které souvisejí s chybnou tabulkou. Poznamenejte si sloupec **ProjectName** v tabulce DualWriteProjectConfiguration a načtěte řádek v tabulce DualWriteProjectFieldConfiguration použitím názvu projektu k odstranění řádku.
 4. Spusťte mapování tabulek. Ověřte, zda se data synchronizují bez problémů.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Zpracování chyb oprávnění ke čtení nebo zapisování při vytváření dat v aplikaci Finance and Operations
@@ -127,6 +127,3 @@ Chcete-li opravit problém, postupujte následovně.
 
 3. Zkontrolujte, zda má sloupec **externalenvironmentURL** správnou Dataverse adresu URL aplikace. Odstraňte všechny duplicitní řádky, které ukazují na nesprávnou adresu URL Dataverse. Odstraňte odpovídající řádky z tabulek DUALWRITEPROJECTFIELDCONFIGURATION a DUALWRITEPROJECTCONFIGURATION.
 4. Zastavte mapování tabulek a restartujte jej
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
