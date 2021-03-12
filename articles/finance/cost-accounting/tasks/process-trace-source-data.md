@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a23443c985ac681c8c31956ae5ea3e513337577
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4363a51549503327e7decccf38c82db6e75acd88
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441288"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990635"
 ---
 # <a name="process-and-trace-source-data"></a>Zpracování a sledování zdrojových dat
 
@@ -45,6 +44,3 @@ Veškeré zpracování dat se provádí prostřednictvím úloh. Pro každou úl
     * V tomto příkladu vyberte Fiskální období 9/2017.  
 14. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

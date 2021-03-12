@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5d4256b155d3e06d63e425fab63b4025ef2577f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d68e5a63ea3b037cc111d6732857f0aae1ce7e5d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441201"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989942"
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Import konfigurace přímého debetu ve formátu ISO20022
 
@@ -49,6 +48,3 @@ Toto je první z pěti postupů, které společně popisují proces platby odbě
     * Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.  
 9. Klepněte na tlačítko Ano.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

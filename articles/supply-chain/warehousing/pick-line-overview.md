@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 433ed2152c47dbe698a640b099cb34727fe63452
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423694"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989686"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Nastavte položku nabídky mobilního zařízení a poskytněte přehled řádků výdeje
 
@@ -69,6 +68,3 @@ Chcete-li nastavit položku nabídky mobilního zařízení a poskytnout tak př
     - Použijte zbývající pole **Zobrazit pole** pro přidání až sedmi dalších polí zobrazení, jak požadujete. V každém poli **Zobrazit pole** vyberte název pole řádku práce. Každý řádek poté zobrazí hodnotu pro toto pole. Hodnoty se zobrazí v pořadí, které zde vyberete. Můžete nachat některá z polí **Zobrazit pole** prázdná, pokud nevyžadujete všech sedm hodnot.
 
 1. V podokně akcí vyberte **Uložit** a pak vyberte stránku **Seznam polí**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

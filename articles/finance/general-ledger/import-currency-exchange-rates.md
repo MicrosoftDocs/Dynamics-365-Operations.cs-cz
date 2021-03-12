@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a5dbe0d822f7bdb1a62a99c43ef9f7170c889676
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441239"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988870"
 ---
 # <a name="import-currency-exchange-rates"></a>Importovat směnné kurzy měn
 
@@ -56,6 +55,3 @@ Směnné kurzy můžete importovat ze zdroje poskytovatelů směnných kurzů a 
 | **Přepsat existující směnné kurzy**   | Toto zaškrtávací políčko spravuje aktualizace stávajícího směnného kurzu pro dvojici měn, když směnný kurz k určitému datu již existuje. Pokud toto políčko nezaškrtnete, směnný kurz pro konkrétní data není importován, pokud již existuje jiný směnný kurz.                                                                                       |
 | **Zabránit importu v den státního svátku** | Toto zaškrtávací políčko řídí import směnného kurzu k datu, které připadá na státní svátek. Například pokud vyberte toto zaškrtávací políčko a použijete jako poskytovatele směnného kurzu Evropské centrální banky, systém nebude aktualizovat směnný kurz ve svátek vztahující se k aktuální právnické osobě. Tato možnost nemusí být k dispozici pro některé poskytovatele. |
 | **Kurz z předchozího dne** | Toto zaškrtávací políčko je k dispozici, pokud povolíte funkci **Import ECB k aktuálnímu nebo předchozímu datu** na stránce **Správa funkcí**. Toto zaškrtávací políčko je k dispozici pouze pro poskytovatele *Central Bank of Europe*. Zaškrtněte toto políčko, chcete-li importovat směnný kurz měny, který zveřejňuje Evropská centrální banka předchozí pracovní den přibližně v 16:00 CET. Ve výchozím nastavení není toto políčko zaškrtnuto. Chcete-li importovat směnný kurz, který je publikován ve stejný pracovní den, zrušte zaškrtnutí tohoto políčka.  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

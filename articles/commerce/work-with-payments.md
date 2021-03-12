@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7636f5c664634c680edf2ff9d8bae5ebb9035af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fede81aa8c61eddba72b9ba2e780d61731f8253
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410798"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989245"
 ---
 # <a name="payment-methods-in-call-centers"></a>Platební metody v kontaktních střediscích
 
@@ -53,6 +52,3 @@ Když jsou metody platby vytvořeny, měly by být navázány na hlavní knihu n
 Pro scénáře zpracování refundace používá kontaktní středisko také některé z metod platby, které se definují v modulu Pohledávky. Chcete-li konfigurovat tyto metody plateb, přejděte na **Maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Metody refundace kontaktního střediska**. Je nutné dokončit tuto konfigurace pro zpracování šeků refundace odběratelům. Například platí-li odběratel původně objednávku hotovostí nebo šekem, uživatel může chtít odeslat odběrateli šek refundace prostřednictvím pohledávek. Typy plateb hotovostí a šekem v kontaktním středisku musí být v takovém případě namapovány na správnou metodu platby v modulu Pohledávky, aby se zajistilo správné zpracování refundace.
 
 Dále, pokud uživatel zpracovává vratku jako uživatel kontaktního střediska v aplikaci Commerce, ale nemůže navázat vratku na původní prodej, musí být definována platební metoda **Vrácení** v parametrech kontaktního střediska. Přejděte na **Maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska** a poté na kartě **RMA/vratky** v poli **Způsob platby** nadefinujte způsob platby. Metoda platby bude metodou platby použitou pro refundace. Obvykle bude definována buď jako metodu šeku nebo jako metoda účtu odběratele.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

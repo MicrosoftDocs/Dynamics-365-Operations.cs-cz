@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea661441c6c810d144d423b054c1bef058cdd9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e66d5aac0c2ed966727ef569ac5345fcd91b841e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441145"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989193"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Mezipodnikové účetnictví pro centralizované platby
 
@@ -108,6 +107,3 @@ U plateb dodavatelů transakce počátečního a koncového data splatnosti v pr
 
 ## <a name="withholding-tax"></a>Srážková daň
 Účet dodavatele, který je přidružený k faktuře, slouží k určení, zda se má vypočítat srážkovou daň. Pokud se srážková daň používá, je vypočteno v právnické osobě, která je přidružená k faktuře. Pokud právnické osoby používají různé měny, použije se směnný kurz z právnické osoby, která je přidružená k faktuře.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

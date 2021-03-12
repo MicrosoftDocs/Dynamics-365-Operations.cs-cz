@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5cf1ac4de07cb6357493a0b2c84f6a6ee591d4bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990556"
 ---
 # <a name="cash-position-preview"></a>Pozice hotovosti (Preview)
 
@@ -51,6 +50,3 @@ Chcete-li uložit a upravit pozici hotovosti, vytvořte snímek. Další informa
 
 #### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

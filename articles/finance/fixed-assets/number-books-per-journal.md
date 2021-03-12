@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: cfb9a9e1456a7d9067e3c4369a7eb7150326655d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650650"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988945"
 ---
 # <a name="number-of-books-per-journal"></a>Počet knih na deník
 
@@ -46,7 +45,7 @@ Dávkové zpracování můžete použít ke spuštění odpisů pro stejnou sadu
 
 Omezení počtu knih se použije, pokud ve stejném deníku neexistují duplicitní ID majetku. Pokud je však ID majetku stejné jako ID knihy, lze počet knih v deníku překročit, aby bylo ID majetku ve stejném deníku.
 
-Například existuje 5 001 ID dlouhodobého majetku, ke každému ID dlouhodobého majetku jsou přidruženy tři knihy a každá kniha majetku je zaúčtována do stejné účtovací vrstvy. Spustíte odpisy po tři po sobě jdoucí měsíce bez shrnutí. Odpisový deník bude vytvořen pomocí dávkové úlohy a systém vytvoří sedm deníků, které mají 667 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Výsledkem bude 2 001 knih. Proto za tři měsíce bude existovat 6 003 řádků deníku, které udržují stejná ID majetku ve stejném deníku. Systém také vytvoří jeden deník, který má 332 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Za tři měsíce to bude 2 988 řádků.
+Například existuje 5 001 ID dlouhodobého majetku, ke každému ID dlouhodobého majetku jsou přidruženy tři knihy a každá kniha majetku je zaúčtována do stejné účtovací vrstvy. Spustíte odpisy po tři po sobě jdoucí měsíce bez shrnutí.  Odpisový deník bude vytvořen pomocí dávkové úlohy a systém vytvoří sedm deníků, které mají 667 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Výsledkem bude 2 001 knih. Proto za tři měsíce bude existovat 6 003 řádků deníku, které udržují stejná ID majetku ve stejném deníku. Systém také vytvoří jeden deník, který má 332 ID dlouhodobého majetku a tři knihy pro každé ID dlouhodobého majetku. Za tři měsíce to bude 2 988 řádků.
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+> [!Note] 
+> Pokud je zapnutý parametr **Shrnout odpisy** když vytváříte návrh odpisování, pak hodnota v poli **Počet knih v deníku - návrh odpisování** nemá žádný účinek. V tomto případě je počet knih v deníku 6000, což je interně definovaný limit.

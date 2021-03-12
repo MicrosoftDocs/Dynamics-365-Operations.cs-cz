@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6d60502cd7f749b71cf39cc38d8a39dcbb7b108
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92bc314e69628f2a287ba7c9a7c2d3d73a0bfd33
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441003"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988095"
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Nastavení způsobu platby pro převody kreditu ve formátu ISO20022
 
@@ -48,6 +47,3 @@ Toto je třetí z pěti úkolů, které společně popisují proces platby dodav
 10. Zadejte hodnoty DEMF OPER do pole Platební účet.
 11. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

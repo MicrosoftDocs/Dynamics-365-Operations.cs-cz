@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990232"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Katalog kurzů pro uživatele Dynamics 365 Finance
 
@@ -53,13 +52,11 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Práce s pohledávkami v Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/work-accounts-receivable-dyn365-finance/)  | Chcete-li vytvořit faktury odběratelů, zaúčtovat dodací listy a používat volné faktury, které nesouvisí s prodejními objednávkami, nakonfigurujte modul Pohledávky v aplikaci Dynamics 365 Finance. V této studijní cestě se také dozvíte, jak provádět každodenní úkoly v modulu Pohledávky.      | Libovolná online školení vlastním tempem | 7 hodin   |
 | [Konfigurace a použití rozpočtování v aplikaci Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Každá organizace, ať se jedná o soukromou nebo veřejnou, nastavuje finanční a provozní cíle vytvořením rozpočtů. Díky charakteru plánování rozpočtu založenému na spolupráci a zpracování můžete zefektivnit proces rozpočtu. | Libovolná online školení vlastním tempem | 3.5 hodin |
 | [Konfigurace a správa dlouhodobého majetku v aplikaci Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace. Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu. | Libovolná online školení vlastním tempem | 4.5 hodin |
-| [Začínáme s nákladovým účetnictvím pro řetězce dodávek v Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod.  | Libovolná online školení vlastním tempem | 1 hodina  |
+| [Začínáme s nákladovým účetnictvím pro řetězce dodávek v Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod.  | Libovolná online školení vlastním tempem | 1 hodina  |
+| [Práce s modulem Správa výdajů v Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maximalizujte ziskovost a minimalizujte náklady díky funkcím přesné správy výdajů v Dynamics 365 Project Operations. Naučte se, jak konfigurovat systém a vytvářet a schvalovat výkazy výdajů. | Libovolná online školení vlastním tempem | 5.5 hodin  |
 
 ## <a name="exam"></a>Zkouška<a name="exam"></a>
 
 | Obsah | popis  | Formát  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Základy produktu Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Prokažte, že rozumíte Microsoft Dynamics 365: Power Platform; cloudové pojmy, možnosti licencování a možnosti nasazení a vydání | Zkouška; náklady se liší podle oblasti. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

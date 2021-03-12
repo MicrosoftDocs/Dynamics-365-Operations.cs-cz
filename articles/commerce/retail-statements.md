@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9162bb9b56432dbeb4638e0598dcbf436ab0b1b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410902"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989494"
 ---
 # <a name="retail-statements"></a>Příkazy maloobchodu
 
@@ -88,6 +87,3 @@ Při zaúčtování výkazu prodejní objednávky a faktury jsou vytvořeny pro 
 - Prodeje, pro které byl přidání zákazník do transakce v POS, generují samostatné prodejní objednávky a faktury, jednu pro každého jedinečného odběratele.
 
 Pro platby ve výkazu jsou automaticky vytvořeny deníky plateb a zásoby jsou automaticky aktualizovány pro obchod POS.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
