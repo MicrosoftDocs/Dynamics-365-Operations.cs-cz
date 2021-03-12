@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 948f83d56e560cc21205294c15de4b2097d2ad2e
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: c1bb422b12489598d099b59b3447f620c80c9438
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441376"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991060"
 ---
 # <a name="customer-transactions-list-page"></a>Stránka se seznamem transakcí odběratele
 
@@ -97,6 +96,3 @@ Při úpravě má každé pole jiný účinek na transakci:
 - **Upravit podmínky platební slevy:** Platební slevy se změní na základě základního data a podmínek platební slevy.
 
 Po dokončení úprav nastavení platby vyberte **Zavřít** pro uložení vašich změn.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

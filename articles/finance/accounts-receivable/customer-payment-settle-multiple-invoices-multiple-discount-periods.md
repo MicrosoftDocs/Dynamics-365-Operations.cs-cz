@@ -1,5 +1,5 @@
 ---
-title: Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy
+title: Použití jedné platby na úhradu více faktur, které zasahují do více období slevy
 description: Toto téma popisuje, jak je více faktur vypláceno, pokud jednotlivé faktury splňují nárok na platební slevu. Scénáře v tomto článku popisují, jak se liší využité platební slevy v závislosti na tom, kdy je platba provedena.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 5e45004c9f93963fb886039165f16ccc6a3f98f5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441381"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991284"
 ---
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy
+# <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby na úhradu více faktur, které zasahují do více období slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -101,6 +100,3 @@ Arnold informace může zobrazit na stránce **Transakce odběratele**.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

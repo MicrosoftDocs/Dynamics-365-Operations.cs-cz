@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441371"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992751"
 ---
 # <a name="use-lease-approval-workflows"></a>Použití pracovních postupů schvalování leasingu
 
@@ -45,6 +44,3 @@ Než použijete tento postup, ujistěte se, že byl vytvořen alespoň pracovní
 
 8. Chcete-li zastavit pracovní postup, na stránce **Historie pracovního postupu** vyberte **Odvolat**. V dialogovém okně, které se zobrazí, vyberte jinou stránku a pak vyberte **OK**.
 9. Chcete-li deaktivovat pracovní postup nebo aktivovat dříve vytvořený pracovní postup, přejděte na **Majetkový leasing \> Nastavení \> Pracovní postup leasingu**. Pak na stránce **Pracovní postup pronájmu** vyberte **Pracovní postup \> Verze**. Chcete-li, aby byl aktuální pracovní postup neaktivní, vyberte v dialogovém okně verze leasingu aktivní leasing a poté vyberte **Neaktivní**. Chcete-li stávající pracovní postup aktivovat, vyberte pracovní postup a poté vyberte **Aktivovat**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

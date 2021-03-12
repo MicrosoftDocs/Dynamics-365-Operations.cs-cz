@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441024"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991110"
 ---
 # <a name="create-a-free-text-invoice"></a>Vytvoření volné faktury
 
@@ -30,8 +29,8 @@ Toto téma vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte uk
 
 ## <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
-1. Přejděte na **Pohledávky \> Faktury \> Všechny volné faktury**.
-2. Vyberte možnost **Nový**.
+1. Přejděte na **Pohledávky (nebo Prodejní registr) \> Faktury \> Všechny volné faktury**.
+2. Zvolte **Nové**.
 3. V poli **Účet odběratele** vyberte hodnotu.
 
     * Ve výchozím nastavení se jako účet faktury použije účet, který je zvolen jako účet odběratele.
@@ -85,6 +84,3 @@ Jakmile zkopírujete řádky, lze podle potřeby upravit informace.
 Můžete vytvořit volnou fakturu ze šablony. Vyberete-li **Nová ze šablony** na kartě **Faktura**, můžete vybrat název šablony a účet odběratele pro novou volnou fakturu. Výchozí hodnoty, jako jsou například platební podmínky a způsob platby, lze automaticky vyplnit z odběratele, nebo můžete použít hodnoty, které byly uloženy v šabloně.
 
 Bude vytvořena nová volná faktura a můžete upravit hodnoty podle potřeby.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

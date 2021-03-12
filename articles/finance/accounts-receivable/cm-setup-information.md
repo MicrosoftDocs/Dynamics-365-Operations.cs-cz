@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441028"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991228"
 ---
 # <a name="credit-management-setup"></a>Nastavení správy úvěrů 
 
@@ -153,6 +152,3 @@ Chcete-li přidat řádky reprezentující limit úvěru, který bude vygenerov�
 2. Vyberte operátor pro porovnání, který definuje, jakým způsobem mají být vyhodnocovány informace o skupině podle hodnocení.
 3. Zadejte hodnotu, která má být porovnána s hodnotou zadanou pro skupinu podle hodnocení.
 4. Zadejte limit úvěru, který má být přiřazen, pokud se informace o odběrateli shodují s hodnotou zadanou pro danou skupinu podle hodnocení. Můžete například vytvořit automatický limit úvěru pro skupinu podle hodnocení **Nízké**. Pokud je jednou ze skupin podle hodnocení počet let podnikání, můžete definovat jeden řádek, který přiřazuje limit úvěru 100 000, pokud odběratel podniká pět let, a další řádek, který přiřazuje limit úvěru 200 000, pokud odběratel podniká 10 let.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

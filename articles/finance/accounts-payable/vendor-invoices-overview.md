@@ -1,9 +1,9 @@
 ---
 title: Přehled faktur dodavatele
-description: V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
+description: V tomto tématu jsou obecné informace o fakturách dodavatele.
 author: abruer
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
-ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
+ms.openlocfilehash: 0299eb3470f500bf469c3367f1c426715067a5dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4701669"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993309"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
+V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na přijetí platby za produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
 ## <a name="vendor-invoices"></a>Faktury dodavatele
 
-Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele.
+Faktura dodavatele z nákupní objednávky je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele.
 
-Ačkoliv jsou některé faktury dodavatele propojeny s nákupní objednávkou, mohou faktury dodavatele obsahovat také řádky, které neodpovídají řádkům nákupní objednávky. Můžete vytvořit také faktury dodavatele, které nejsou přidruženy k žádné nákupní objednávce. Tyto faktury dodavatele mohou představovat probíhající služby, jako například provozní účet, takže při jejich přidání nemusíte odkazovat na nákupní objednávku.
+Ačkoliv jsou některé faktury dodavatele propojeny s nákupní objednávkou, mohou faktury dodavatele obsahovat také řádky, které neodpovídají řádkům nákupní objednávky. Můžete vytvořit také faktury dodavatele, které nejsou přidruženy k žádné nákupní objednávce. Tyto faktury dodavatele mohou představovat probíhající služby, například fakturu za služby. Když přidáte probíhající službu, nemusíte odkazovat na nákupní objednávku.
 
 Je několik způsobů, jak zadat fakturu dodavatele:
 
@@ -48,12 +47,12 @@ V následující diskusi naleznete více informací o použití stránek **Otev�
 
 ## <a name="understanding-invoice-line-quantities"></a>Princip množství na řádcích faktury
 
-Při otevření faktury dodavatele ze související nákupní objednávky se řádky faktury vytvoří z nákupní objednávky. Dle výchozího nastavení se množství převezme z množství na příjemce produktu. Můžete však použít některé z následujících výchozích chování:
+Při otevření faktury dodavatele ze související nákupní objednávky systém vytvoří řádky faktury z nákupní objednávky. Dle výchozího nastavení systém převezme množství z příjemky produktu. Můžete však použít některé z následujících výchozích chování:
 
-- **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Přijmout nyní** na nákupní objednávce.
-- **Objednané množství** – tuto možnost použijte pro úplné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Objednáno** na nákupní objednávce.
+- **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Systém nastaví výchozí hodnotu v poli **Množství** z množství určeného v poli **Přijmout nyní** na nákupní objednávce.
+- **Objednané množství** – tuto možnost použijte pro úplné dodávky. Systém nastaví výchozí hodnotu v poli **Množství** z množství určeného v poli **Objednáno** na nákupní objednávce.
 - **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
-- **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Výchozí hodnota v poli **Množství** se převezme z celkového množství dostupných příjemek produktu.
+- **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Systém převezme výchozí hodnotu v poli **Množství** z celkového množství dostupných příjemek produktu.
 - **Registrované množství a služby** – tuto možnost použijte, pokud byla množství registrována v deníku doručených položek pro položky na skladě nebo položky, které nejsou na skladě. Tato možnost zahrnuje také služby bez ohledu na to, zda jsou registrovány.
 
 Používá-li vaše právnická osoba párování faktur, můžete si zobrazit výsledky párování množství ve sloupci **Spárování množství v příjemce produktu**. K zobrazení výsledků párování množství můžete použít také tlačítko **Podrobnosti o párování** na kartě podokna akcí **Kontrola**.
@@ -64,23 +63,25 @@ Do faktury dodavatele můžete přidat řádek, který nebyl na nákupní objedn
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Odeslání faktury dodavatele ke kontrole
 
-Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat**, které slouží k odeslání faktury dodavatele do procesu kontroly.
+Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat** sloužící k odeslání faktury dodavatele do procesu kontroly.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Zabránění odeslání faktury do workflowu 
 
 Následuje několik způsobů, jak lze zabránit odeslání faktury do workflowu.
 
-- **Celková částka faktury a zaregistrovaná celková částka se neshodují.** Osoba, která odeslala fakturu, obdrží výstrahu, že celkové částky nejsou stejné, takže může opravit zůstatky před opětovným odesláním faktury do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když liší celková částka faktury a registrovaná celková částka** na stránce **Správa funkcí**. 
+- **Celková částka faktury a zaregistrovaná celková částka se neshodují.** Osoba, která předložila fakturu, obdrží upozornění, že součty nejsou stejné. Výstraha poskytuje příležitost opravit zůstatky před opětovným odesláním faktury do workflow. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když liší celková částka faktury a registrovaná celková částka** na stránce **Správa funkcí**. 
 
 - **Faktura obsahuje nepřidělené náklady.** Osoba, která odeslala fakturu, obdrží výstrahu, že faktura obsahuje nepřidělené částky, takže může opravit fakturu před opětovným odesláním do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když existují nepřidělené částky na faktuře dodavatele** na stránce **Správa funkcí**.
 
-- **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží výstrahu, že byla nalezena faktura s duplicitním číslem a tato osoba ji může opravit před opětovným odesláním do workflowu. Tato výstraha se zobrazí, pokud je parametr závazků s popiskem **Zkontrolovat použité číslo faktury** je nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.  
+- **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží výstrahu, že byla nalezena faktura s duplicitním číslem a tato osoba ji může opravit před opětovným odesláním do workflowu. Tato výstraha se zobrazí, pokud je parametr **Zkontrolovat použité číslo faktury** v závazcích nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Spárování faktur dodavatele s příjemkami produktu
 
 Podle potřeby můžete zadávat a ukládat informace o fakturách dodavatele a porovnat řádky faktury s řádky příjemky produktu. Také můžete spárovat částečná množství pro řádek.
 
 Fakturu dodavatele lze vytvořit na základě řádkových položek příjemek produktu, které byly přijaty do dnešního data, a to i tehdy, když všechny položky určité nákupní objednávky nebyly dosud přijaty. Tuto možnost můžete využít například tehdy, když dodavatel zasílá jednou za měsíc fakturu pokrývající všechny jím odeslané dodávky v daném měsíci. Každá příjemka produktu představuje částečnou nebo úplnou dodávku položek uvedených v nákupní objednávce.
+
+Když je faktura ve workflow, schvalovatel může aktualizovat množství faktur tak, aby odpovídala hodnotě v poli **Product-receipt-quantity-to-match**. Chcete-li tak učinit, vyberte funkci **Aktualizovat množství faktur tak, aby odpovídala množství příjemek ve workflow** v pracovním prostoru **Správa funkcí** a vyberte **Povolit**. Pokud schvalovatel v procesu pracovního postupu odstranil všechny shody ze všech příjemek z řádku faktury, řádek faktury bude odstraněn. Pokud tato funkce není povolena, množství faktur se u faktur ve workflow neaktualizuje.
 
 Při zaúčtování faktury je množství v poli **Zůstatek faktury** u každé položky aktualizováno celkovým počtem přijatého množství z vybraných příjemek produktu. Pokud bude množství **Zůstatek faktury** i množství **Zbývá dodat** pro všechny položky na nákupní objednávce nulové (0), stav nákupní objednávky se změní na hodnotu **Fakturováno**. Pokud množství v poli **Zůstatek faktury** není nulové (0), stav nákupní objednávky se nezmění a k této objednávce je možné zadat další faktury.
 
@@ -128,6 +129,3 @@ Celkovou fakturovanou částku můžete zobrazit na stránce **Čekající faktu
 - [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Zaznamenání faktury dodavatele do deníku faktur](tasks/record-vendor-invoice-invoice-journal.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

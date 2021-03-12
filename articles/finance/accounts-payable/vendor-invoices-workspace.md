@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441316"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993256"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Pracovní prostor pro zadávání faktur dodavatele
 
@@ -117,6 +116,3 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 | Faktury, které se nepodařilo importovat | <ul><li>Faktury, které se nepodařilo importovat</li><li>Faktury, které se nepodařilo importovat, podle společnosti</li></ul> |
 | Důvody selhání automatizace | <ul><li>Faktury, které selhaly</li><li>Faktury, které selhaly podle společnosti</li><li>Faktury, které selhaly, podle skupiny dodavatele</li></ul> |
 | Stav pracovního postupu                | <ul><li>Faktury ve workflow</li><li>Instance workflowu faktury dodavatele</li><li>Přiřazení na schvalovatele</li><li>Workflow faktury dodavatele na společnost</li><li>Průměrný počet dnů ve workflowu podle schvalujícího</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
