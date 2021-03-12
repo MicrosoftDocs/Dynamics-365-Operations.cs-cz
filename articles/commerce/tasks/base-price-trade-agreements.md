@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db3a91807c0cfb51426c03eeaf7785168e6ad0de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410843"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006046"
 ---
 # <a name="base-price-and-trade-agreements"></a> Základní cena a obchodní smlouvy
 
@@ -70,6 +69,3 @@ Tato procedura vás provede postupem vytváření obchodních smluv prodejních 
 38. V **podokně akcí** klikněte na možnost Prodej.
 39. Klikněte na možnost **Prodejní cena**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

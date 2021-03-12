@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Czech Republic
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 4a6a9f182c28e6f256d4cd8629bcada0d60f5140
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8495fbfa451bf161f21e2135f08740c87d6a6d21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407610"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006350"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -412,6 +411,3 @@ Konfigurační soubor se nachází ve složce **Konfigurace** projektu rozšíř
 
 - **Adresa koncového bodu** – adresa URL služby daňové registrace.
 - **Časový limit** – doba v milisekundách, po kterou bude čekat ovladač na odpověď od služby daňové registrace.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

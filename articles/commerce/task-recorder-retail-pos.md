@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006128"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 
@@ -34,7 +33,7 @@ Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Moder
 
 ## <a name="overview"></a>Přehled
 
-Záznamník úloh v Retail Modern POS nebo Cloud POS je nové řešení, které nabízí vysokou míru odezvy. Poskytuje flexibilní aplikační programovací rozhraní (API) pro rozšíření a plynulou integraci se spotřebiteli záznamů obchodních procesů. Integrace Záznamníku úloh s nástrojem Modelování podnikových procesů (BPM) ve službě Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) se posunula kupředu. Proto mohou uživatelé dále vytvářet diagramy pro bohaté obchodní procesy ze záznamů pro analýzu a návrh aplikací.
+Záznamník úloh v Retail Modern POS nebo Cloud POS je nové řešení, které nabízí vysokou míru odezvy. Poskytuje flexibilní aplikační programovací rozhraní (API) pro rozšíření a plynulou integraci se spotřebiteli záznamů obchodních procesů. Integrace Záznamníku úloh s nástrojem Modelování podnikových procesů (BPM) ve službě Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) se posunula kupředu. Proto mohou uživatelé dále vytvářet diagramy pro bohaté obchodní procesy ze záznamů pro analýzu a návrh aplikací.
 
 ## <a name="architecture"></a>Architektura
 
@@ -146,6 +145,3 @@ Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžet
 
 > [!NOTE]
 > V nápovědě pro Retail Retail Modern POS a Cloud POS se nezobrazují průvodci záznamem úloh v závislosti na tom, v jakém jste formuláři nebo jakou provádíte operaci. Je nutné v poli pro vyhledávání zadat název procesu a poté kliknout na **Hledat**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
