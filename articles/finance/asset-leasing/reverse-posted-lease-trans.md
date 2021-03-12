@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 259fd8f41eade1e873225f0d95c499c8cb8c1a6a
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 3e4908ddab2650e5ff7e4a28bf916604d165d08c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441357"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969521"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Stornování zaúčtované leasingové transakce
 
@@ -56,6 +55,3 @@ Chcete-li odvolat stornovanou transakci, postupujte takto.
 Když vyberete **Trasování storna**, zobrazí se dialogové okno, které zobrazuje původní transakce i stornované transakce spolu s propojeným číslem trasování.
 
 Můžete také trasovat odvolání pomocí příslušné stránky **Plány**. Pole **Storno** je vymazáno, zatímco je vybráno pole **Deník zaúčtován**. Pole **Poslední číslo deníku** je dále aktualizováno číslem deníku transakce odvolání a pole **Číslo deníku** je aktualizováno číslem deníku storna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

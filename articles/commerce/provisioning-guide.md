@@ -3,14 +3,13 @@ title: Zřízení prostředí vyhodnocení Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4410938"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969894"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení Dynamics 365 Commerce
 
@@ -131,6 +130,22 @@ Pokud chcete inicializovat CSU, postupujte takto.
 
 Pokud nemůžete najít odkaz **Správa** odkaz v zobrazení podrobností o prostředí, požádejte o pomoc kontaktní osobu společnosti Microsoft.
 
+Při počátečním zpracování se může zobrazit následující chybová zpráva:
+
+> Vyhodnocovací (demo/testovací) prostředí musí registrovat aplikaci konektoru jednotky škálování \<application ID\> v centrále.
+
+Pokud se inicializace CSU nezdaří a zobrazí se tato chybová zpráva, poznamenejte si ID aplikace, což je globálně jedinečný identifikátor (GUID), a poté podle pokynů v další části zaregistrujte aplikaci nasazení CSU v centrále Commerce.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Zaregistrujte aplikaci nasazení CSU v obchodním ústředí (je-li požadováno)
+
+Chcete-li zaregistrovat aplikaci nasazení CSU v obchodním ústředí, postupujte takto.
+
+1. V centrále Commerce přejděte na **Správa systému \> Nastavení \> Aplikace Azure Active Directory**.
+1. Ve sloupci **ID klienta** zadejte ID aplikace z chybové zprávy inicializace CSU, kterou jste obdrželi.
+1. Ve sloupci **Název** zadejte libovolný popisný text (například **CSU Eval**).
+1. Ve sloupci **ID uživatele** zadejte **RetailServiceAccount**.
+1. Opakujte inicializaci a nasazení CSU z LCS.
+
 ### <a name="initialize-e-commerce"></a>Inicializace e-Commerce
 
 Pokud chcete inicializovat e-Commerce, postupujte takto.
@@ -176,6 +191,3 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí vyhodnoce
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 866da2ce58e33676c2fa4bb2d6abfde891a5d021
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423850"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967401"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Postup přípravy na správu standardních nákladů pro vyráběné položky
 
@@ -73,6 +72,3 @@ Pokud chcete použít informace o postupu pro účely nákladů, jsou vyžadová
 
 [Nastavení produktů, které mohou být vyrobeny nebo pořízeny](manufactured-items-treated-as-purchased-items.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

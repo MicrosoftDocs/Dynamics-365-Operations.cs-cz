@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 799c479c750fcaf296f3e2787fa38416af51963c
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516746"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967752"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže spuštění výroby pro cloudové a hraniční jednotky škálování
 
@@ -110,6 +109,3 @@ Chcete-li zkontrolovat historii výrobních úloh, které byly zpracovány na je
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Výrobní centrum pro úlohu procesoru zprávy jednotky škálování
 
 Úloha _Výrobní centrum pro procesor zpráv jednotky škálování_ zpracovává data z centra do jednotky škálování. Tato úloha se automaticky spustí, když je nasazena úloha provedení. Můžete jej však kdykoli spustit ručně tak, že přejdete na **Kontrola výroby \> Pravidelné úkoly \> Správa úlohy backoffice \> Výrobní centrum pro škálování procesorů zpráv jednotky**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441027"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969694"
 ---
 # <a name="collections-process-automation"></a>Automatizace procesů inkasa
 
@@ -118,6 +117,3 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Automatické zaúčtování upomínek           |     Typy akcí upomínek, které zaúčtují upomínku během automatizace.                                      |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Vytváření aktivit pro automatizaci                |     Vytváření a uzavírání aktivit pro typy akcí bez aktivity, abyste mohli zobrazit všechny automatické kroky provedené v účtu.        |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Dny uchování automatizace procesu inkasa     |     Definuje počet dní, po které je uchována historie inkas.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

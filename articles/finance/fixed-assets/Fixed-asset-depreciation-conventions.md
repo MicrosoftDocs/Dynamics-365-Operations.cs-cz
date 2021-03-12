@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4315f70e7959e2576e9b87dfb3898318f47aa46d
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: bd0153b5d735e1d565b67db6c66c854ff738509c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441317"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969196"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konvence odepisování dlouhodobého majetku
 
@@ -43,6 +42,3 @@ Konvence odepisování lze přiřadit nastavení knihy skupiny dlouhodobého maj
 | Polovina měsíce (15. den v měsíci) | Pro výpočet odpočtu na odpisu v roce, kdy majetek uvedete do užívání, vynásobte odpisy za celý rok zlomkem. Čitatel (číslo nahoře) v tomto zlomku činí počet celých měsíců v roce uvedení majetku do užívání plus 1/2 neboli 0,5. Jmenovatel (dolní číslo) je 12. Pokud majetek vyřadíte před koncem období zotavení, použijte stejnou metodu pro výpočet odpočtu odpisu v roce disponování. |
 | Pololetí (počátek roku) | Majetek, který má datum <strong>uvedeno do užívání</strong> v první polovině roku, se začíná odepisovat k prvnímu dni v roce (celý rok). Majetek, který má datum <strong>uvedeno do užívání</strong> ve druhé polovině roku, se začíná odepisovat odprostřed roku. |
 | Pololetí (příští rok)     | Majetek, který má datum <strong>uvedeno do užívání</strong> v první polovině roku, se začíná odepisovat k prvnímu dni v roce (celý rok). Majetek, který má datum <strong>uvedeno do užívání</strong> ve druhé polovině roku, se začíná odepisovat k prvnímu dni v následujícím roce. Majetek, který se vyřadí v první polovině roku, je považován za vyřazený pro účely odpisů k poslednímu dni v předchozím roce. Všechny odpisy zaúčtované v aktuálním roce musí být stornovány nebo upraveny. Majetek, který se vyřadí ve druhé polovině roku, je považován za vyřazený pro účely odpisů k poslednímu dni v roce vyřazení. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

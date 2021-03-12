@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441261"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968972"
 ---
 # <a name="electronic-messaging"></a>Elektronické zprávy
 
@@ -536,6 +535,3 @@ Nyní můžete buď odstranit nebo aktualizovat stav zprávy. Chcete-li aktualiz
 ![Aktualizace stavu zprávy](media/update-status.png)
 
 Stav zprávy je aktualizován na **Připraveno** a nyní můžete vygenerovat sestavu výběrem možnosti **Generovat sestavu**. Sestava se vygeneruje a aktualizuje se stav zprávy a protokol akce. Chcete-li zobrazit generovanou sestavu, vyberte tlačítko **Příloha** (ikona papírové svorky) v pravém horním rohu stránky.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

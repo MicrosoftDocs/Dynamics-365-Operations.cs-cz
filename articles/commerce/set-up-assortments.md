@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26614d319453041177e8072793f09f52ebfd51fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410882"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969819"
 ---
 # <a name="set-up-assortments"></a>Nastavení sortimentu
 
@@ -55,6 +54,3 @@ Po dokončení požadavků lze vytvořit sortiment a přiřadit jej do vašich p
 2. Vyberte prodejní kanály nebo skupiny vysoké úrovně v prodejních kanálech, na které se sortiment vztahuje.
 3. Přidejte do sortimentu kategorie produktů, jednotlivé produkty nebo varianty produktu. Všechny produkty lze zahrnout do konkrétní kategorie, nebo vyjmout vybrané produkty z kategorie, která je zahrnuta do sortimentu.
 4. Publikujte sortiment. Při publikování sortimentu je automaticky spuštěn plánovač sortimentu. Tento proces generuje seznam produktů. Po dokončení tohoto procesu budou produkty k dispozici pro prodejní kanály, ke kterým je sortiment produktu přiřazen. Pokud jsou provedeny změny v publikovaném sortimentu nebo v prodejních kanálech, ke kterým je sortiment přiřazen, musí být sortiment aktualizován. Pokud chcete aktualizovat sortiment po provedení změn, můžete spustit plánovač sortimentu jako dávkovou úlohu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

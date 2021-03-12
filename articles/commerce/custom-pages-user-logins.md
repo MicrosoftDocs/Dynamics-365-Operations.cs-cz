@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: a55da9683c43ac75109fd256e481b02a4d565914
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517225"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970071"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
@@ -214,6 +213,3 @@ Po aktualizaci souboru global.json a publikování změn se nový text odkazu zo
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

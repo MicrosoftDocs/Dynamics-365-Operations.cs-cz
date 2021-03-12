@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410691"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970096"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Výběr mezi Modern POS (MPOS) a Cloud POS
 
@@ -105,6 +104,3 @@ Při plánování POS implementace ve svých obchodech vezměte v úvahu násled
 - **Hardwarová zařízení/periferní zařízení** – Jedním z důležitých aspektů systému Retail POS je jeho schopnost používat periferní zařízení POS, například tiskárny, zásuvky s hotovostí nebo platební terminály. Ačkoliv všechny dostupné možnosti POS mohou použít periferní zařízení, pouze MPOS pro systém Windows je podporuje přímo. Pro všechny jiné aplikace se vyžaduje jedna nebo více hardwarových stanic. I když tento přístup přidá flexibilitu, je třeba nasadit, nakonfigurovat a obsluhovat další komponenty.
 - **Systémové požadavky** – Požadavky na systém pro POS se liší. Ujistěte se, že ověříte nejnovější informace před provedením výběru. Například vzhledem k tomu, že CPOS běží v prohlížeči, podporuje širokou škálu operačních systémů. Další informace o systémových požadavcích naleznete v části [Systémové požadavky pro nasazení cloudu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Nasazení a údržba** – Složitost požadavků na nasazení a údržbu se může lišit v závislosti na výběru aplikace a nasazení. Například pro nasazení CPOS hostované na cloudu CPOS nemusíte instalovat a aktualizovat každé zařízení. Proto tento přístup výrazně snižuje složitost a náklady. Pokud však MPOS nasadíte na každé registrační pokladně a povolíte offline režim offline, a současně nasadíte sdílené hardwarové stanice, výrazně zvýšíte počet koncových bodů, které je třeba spravovat.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

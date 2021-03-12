@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e487de874fd9b65dc6913cbacf724686f23d33c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410806"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970006"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Katalog kurzů pro správce Dynamics 365 Commerce
 
@@ -48,6 +47,3 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah  | popis  | Formát  | Délka    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Konfigurace a práce s elektronickým obchodem v Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/)              | Online kanály a web elektronického obchodu Dynamics 365 Commerce umožní maloobchodníkům vytvořit online přítomnost své značky. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
