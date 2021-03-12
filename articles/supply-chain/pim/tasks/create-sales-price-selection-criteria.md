@@ -11,46 +11,45 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ae444008e550d808a02d55dad02cc1b52874f0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 60a7c7230d4eb57d840121f6ee490bf829e0dc8f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423804"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999649"
 ---
-# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="482d7-103">Vytvoření kritérií pro výběr prodejní ceny</span><span class="sxs-lookup"><span data-stu-id="482d7-103">Create sales price selection criteria</span></span>
+# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="26d79-103">Vytvoření kritérií pro výběr prodejní ceny</span><span class="sxs-lookup"><span data-stu-id="26d79-103">Create sales price selection criteria</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="482d7-104">Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro modely prodejní ceny podle atributů.</span><span class="sxs-lookup"><span data-stu-id="482d7-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="482d7-105">Spuštění této procedury vyžaduje, aby byl k dispozici nejméně jeden model prodejní ceny.</span><span class="sxs-lookup"><span data-stu-id="482d7-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="482d7-106">Tento příklad používá cenový model pro model prodejních cen řešení Reproduktor ve společnosti ukázkových dat USMF.</span><span class="sxs-lookup"><span data-stu-id="482d7-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="482d7-107">Manažer produktu obvykle používá tuto proceduru.</span><span class="sxs-lookup"><span data-stu-id="482d7-107">Typically, a product manager uses this procedure.</span></span>
+<span data-ttu-id="26d79-104">Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro modely prodejní ceny podle atributů.</span><span class="sxs-lookup"><span data-stu-id="26d79-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="26d79-105">Spuštění této procedury vyžaduje, aby byl k dispozici nejméně jeden model prodejní ceny.</span><span class="sxs-lookup"><span data-stu-id="26d79-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="26d79-106">Tento příklad používá cenový model pro model prodejních cen řešení Reproduktor ve společnosti ukázkových dat USMF.</span><span class="sxs-lookup"><span data-stu-id="26d79-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="26d79-107">Manažer produktu obvykle používá tuto proceduru.</span><span class="sxs-lookup"><span data-stu-id="26d79-107">Typically, a product manager uses this procedure.</span></span>
 
 
-## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="482d7-108">Přidání nového kritéria pro existující model prodejní ceny</span><span class="sxs-lookup"><span data-stu-id="482d7-108">Add a new criterion for an existing sales price model</span></span>
-1. <span data-ttu-id="482d7-109">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="482d7-109">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="482d7-110">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="482d7-110">Click Product configuration models.</span></span>
-3. <span data-ttu-id="482d7-111">V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklikejte na odkaz pro název modelu.</span><span class="sxs-lookup"><span data-stu-id="482d7-111">In the list, select the row for the Speaker solution product model, but don't click the link for the model name.</span></span>
-4. <span data-ttu-id="482d7-112">V podokně akcí klepněte na možnost Model.</span><span class="sxs-lookup"><span data-stu-id="482d7-112">On the Action Pane, click Model.</span></span>
-5. <span data-ttu-id="482d7-113">Klikněte na Kritéria cenového modelu.</span><span class="sxs-lookup"><span data-stu-id="482d7-113">Click Price model criteria.</span></span>
-6. <span data-ttu-id="482d7-114">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="482d7-114">Click New.</span></span>
-7. <span data-ttu-id="482d7-115">Do pole Název zadejte hodnotu Skupina odběratelů 10.</span><span class="sxs-lookup"><span data-stu-id="482d7-115">In the Name field, type 'Customer group 10'.</span></span>
-    * <span data-ttu-id="482d7-116">Název kritéria cenového modelu se používá na pomoc při identifikaci základních kritérií výběru.</span><span class="sxs-lookup"><span data-stu-id="482d7-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
-8. <span data-ttu-id="482d7-117">V poli Cenový model zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="482d7-117">In the Price model field, enter or select a value.</span></span>
-9. <span data-ttu-id="482d7-118">V poli Výchozí typ objednávky vyberte možnost Prodejní objednávka.</span><span class="sxs-lookup"><span data-stu-id="482d7-118">In the Order type field, select Sales order.</span></span>
-    * <span data-ttu-id="482d7-119">Typ objednávky určuje databázová pole, která budou k dispozici pro výběrový dotaz.</span><span class="sxs-lookup"><span data-stu-id="482d7-119">The order type determines the database fields that will be available for the selection query.</span></span>  
-10. <span data-ttu-id="482d7-120">Zadejte datum do pole Platné od data.</span><span class="sxs-lookup"><span data-stu-id="482d7-120">In the Valid from field, enter a date.</span></span>
-11. <span data-ttu-id="482d7-121">Do pole Ukončit platnost k datu zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="482d7-121">In the Expire by field, enter a date.</span></span>
-12. <span data-ttu-id="482d7-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="482d7-122">Click Save.</span></span>
+## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="26d79-108">Přidání nového kritéria pro existující model prodejní ceny</span><span class="sxs-lookup"><span data-stu-id="26d79-108">Add a new criterion for an existing sales price model</span></span>
+1. <span data-ttu-id="26d79-109">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="26d79-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="26d79-110">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="26d79-110">Click Product configuration models.</span></span>
+3. <span data-ttu-id="26d79-111">V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklikejte na odkaz pro název modelu.</span><span class="sxs-lookup"><span data-stu-id="26d79-111">In the list, select the row for the Speaker solution product model, but don't click the link for the model name.</span></span>
+4. <span data-ttu-id="26d79-112">V podokně akcí klepněte na možnost Model.</span><span class="sxs-lookup"><span data-stu-id="26d79-112">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="26d79-113">Klikněte na Kritéria cenového modelu.</span><span class="sxs-lookup"><span data-stu-id="26d79-113">Click Price model criteria.</span></span>
+6. <span data-ttu-id="26d79-114">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="26d79-114">Click New.</span></span>
+7. <span data-ttu-id="26d79-115">Do pole Název zadejte hodnotu Skupina odběratelů 10.</span><span class="sxs-lookup"><span data-stu-id="26d79-115">In the Name field, type 'Customer group 10'.</span></span>
+    * <span data-ttu-id="26d79-116">Název kritéria cenového modelu se používá na pomoc při identifikaci základních kritérií výběru.</span><span class="sxs-lookup"><span data-stu-id="26d79-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
+8. <span data-ttu-id="26d79-117">V poli Cenový model zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="26d79-117">In the Price model field, enter or select a value.</span></span>
+9. <span data-ttu-id="26d79-118">V poli Výchozí typ objednávky vyberte možnost Prodejní objednávka.</span><span class="sxs-lookup"><span data-stu-id="26d79-118">In the Order type field, select Sales order.</span></span>
+    * <span data-ttu-id="26d79-119">Typ objednávky určuje databázová pole, která budou k dispozici pro výběrový dotaz.</span><span class="sxs-lookup"><span data-stu-id="26d79-119">The order type determines the database fields that will be available for the selection query.</span></span>  
+10. <span data-ttu-id="26d79-120">Zadejte datum do pole Platné od data.</span><span class="sxs-lookup"><span data-stu-id="26d79-120">In the Valid from field, enter a date.</span></span>
+11. <span data-ttu-id="26d79-121">Do pole Ukončit platnost k datu zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="26d79-121">In the Expire by field, enter a date.</span></span>
+12. <span data-ttu-id="26d79-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="26d79-122">Click Save.</span></span>
 
-## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="482d7-123">Vytvoření dotazu pro kritérium výběru</span><span class="sxs-lookup"><span data-stu-id="482d7-123">Create the query for the selection criteria</span></span>
-1. <span data-ttu-id="482d7-124">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="482d7-124">Click Edit.</span></span>
-2. <span data-ttu-id="482d7-125">V poli Tabulka vyberte Odběratelé.</span><span class="sxs-lookup"><span data-stu-id="482d7-125">In the Table field, select Customers.</span></span> 
-3. <span data-ttu-id="482d7-126">V poli Pole vyberte Skupina odběratelů.</span><span class="sxs-lookup"><span data-stu-id="482d7-126">In the Field field, select Customer group.</span></span>
-    * <span data-ttu-id="482d7-127">V tomto příkladu použijeme jako kritérium výběru konkrétní skupinu odběratelů.</span><span class="sxs-lookup"><span data-stu-id="482d7-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
-4. <span data-ttu-id="482d7-128">V poli Kritéria vyberte Skupina odběratelů 10.</span><span class="sxs-lookup"><span data-stu-id="482d7-128">In the Criteria field, select Customer group 10.</span></span> 
-5. <span data-ttu-id="482d7-129">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="482d7-129">Click OK.</span></span>
+## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="26d79-123">Vytvoření dotazu pro kritérium výběru</span><span class="sxs-lookup"><span data-stu-id="26d79-123">Create the query for the selection criteria</span></span>
+1. <span data-ttu-id="26d79-124">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="26d79-124">Click Edit.</span></span>
+2. <span data-ttu-id="26d79-125">V poli Tabulka vyberte Odběratelé.</span><span class="sxs-lookup"><span data-stu-id="26d79-125">In the Table field, select Customers.</span></span> 
+3. <span data-ttu-id="26d79-126">V poli Pole vyberte Skupina odběratelů.</span><span class="sxs-lookup"><span data-stu-id="26d79-126">In the Field field, select Customer group.</span></span>
+    * <span data-ttu-id="26d79-127">V tomto příkladu použijeme jako kritérium výběru konkrétní skupinu odběratelů.</span><span class="sxs-lookup"><span data-stu-id="26d79-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
+4. <span data-ttu-id="26d79-128">V poli Kritéria vyberte Skupina odběratelů 10.</span><span class="sxs-lookup"><span data-stu-id="26d79-128">In the Criteria field, select Customer group 10.</span></span> 
+5. <span data-ttu-id="26d79-129">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="26d79-129">Click OK.</span></span>
 
