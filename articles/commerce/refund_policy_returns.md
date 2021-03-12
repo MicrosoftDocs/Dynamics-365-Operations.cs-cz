@@ -10,97 +10,96 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: c2a9325f09ffe43c3436b7e0ca2ab511e1f57f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89e8fe78414e73053317ebe19e3afcc89231d440
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979696"
 ---
-# <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a><span data-ttu-id="33e44-103">Vytvoření a aktualizace zásady vrácení a refundace pro kanál</span><span class="sxs-lookup"><span data-stu-id="33e44-103">Create and update a returns and refunds policy for a channel</span></span>
+# <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a><span data-ttu-id="93c20-103">Vytvoření a aktualizace zásady vrácení a refundace pro kanál</span><span class="sxs-lookup"><span data-stu-id="93c20-103">Create and update a returns and refunds policy for a channel</span></span>
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a><span data-ttu-id="33e44-104">Přehled</span><span class="sxs-lookup"><span data-stu-id="33e44-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="93c20-104">Přehled</span><span class="sxs-lookup"><span data-stu-id="93c20-104">Overview</span></span>
 
-<span data-ttu-id="33e44-105">Zásada vrácení se změnami kanálu v Dynamics 365 Commerce umožňuje prodejcům nastavit vynucení, na kterých lze úhrady plateb povolit pro zpracování vrácení na pokladním místě (POS).</span><span class="sxs-lookup"><span data-stu-id="33e44-105">The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.</span></span>  
+<span data-ttu-id="93c20-105">Zásada vrácení se změnami kanálu v Dynamics 365 Commerce umožňuje prodejcům nastavit vynucení, na kterých lze úhrady plateb povolit pro zpracování vrácení na pokladním místě (POS).</span><span class="sxs-lookup"><span data-stu-id="93c20-105">The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.</span></span>  
 
-<span data-ttu-id="33e44-106">Toto téma vysvětluje postup nastavení zásad vrácení a refundace pro kanál.</span><span class="sxs-lookup"><span data-stu-id="33e44-106">This topic describes the steps to set up a returns and refunds policy for a channel.</span></span>
+<span data-ttu-id="93c20-106">Toto téma vysvětluje postup nastavení zásad vrácení a refundace pro kanál.</span><span class="sxs-lookup"><span data-stu-id="93c20-106">This topic describes the steps to set up a returns and refunds policy for a channel.</span></span>
 
-<span data-ttu-id="33e44-107">Rozsah zásady je aktuálně omezen na nastavení nabídek plateb, které lze povolit pro kanál.</span><span class="sxs-lookup"><span data-stu-id="33e44-107">The scope of the policy is currently limited to setting the payment tenders that can be allowed for a channel.</span></span> <span data-ttu-id="33e44-108">Seznam povolených položek vychází z metod plateb, které byly použity při nákupu.</span><span class="sxs-lookup"><span data-stu-id="33e44-108">The "allowed" list is based on the payment methods used to make the purchase.</span></span> <span data-ttu-id="33e44-109">Například:</span><span class="sxs-lookup"><span data-stu-id="33e44-109">For example:</span></span>
+<span data-ttu-id="93c20-107">Rozsah zásady je aktuálně omezen na nastavení nabídek plateb, které lze povolit pro kanál.</span><span class="sxs-lookup"><span data-stu-id="93c20-107">The scope of the policy is currently limited to setting the payment tenders that can be allowed for a channel.</span></span> <span data-ttu-id="93c20-108">Seznam povolených položek vychází z metod plateb, které byly použity při nákupu.</span><span class="sxs-lookup"><span data-stu-id="93c20-108">The "allowed" list is based on the payment methods used to make the purchase.</span></span> <span data-ttu-id="93c20-109">Například:</span><span class="sxs-lookup"><span data-stu-id="93c20-109">For example:</span></span>
 
-- <span data-ttu-id="33e44-110">Pokud byl nákup proveden pomocí dárkového poukazu, platí zásady obchodu pro zpracování refundací pouze na nový dárkový poukaz nebo pro poskytnutí dobropisu obchodu.</span><span class="sxs-lookup"><span data-stu-id="33e44-110">If a purchase was made using a gift card, the store policy is to process refunds only to a new gift card or to give store credit.</span></span> 
-- <span data-ttu-id="33e44-111">Pokud je prodej uskutečněn s použitím hotovosti, jsou možnosti refundace hotovostní, dárkové poukazy a účet odběratele, ale ne kreditní karta.</span><span class="sxs-lookup"><span data-stu-id="33e44-111">If a sale is made using cash, the options allowed for refund are cash, gift card, and customer account, but not credit card.</span></span> 
+- <span data-ttu-id="93c20-110">Pokud byl nákup proveden pomocí dárkového poukazu, platí zásady obchodu pro zpracování refundací pouze na nový dárkový poukaz nebo pro poskytnutí dobropisu obchodu.</span><span class="sxs-lookup"><span data-stu-id="93c20-110">If a purchase was made using a gift card, the store policy is to process refunds only to a new gift card or to give store credit.</span></span> 
+- <span data-ttu-id="93c20-111">Pokud je prodej uskutečněn s použitím hotovosti, jsou možnosti refundace hotovostní, dárkové poukazy a účet odběratele, ale ne kreditní karta.</span><span class="sxs-lookup"><span data-stu-id="93c20-111">If a sale is made using cash, the options allowed for refund are cash, gift card, and customer account, but not credit card.</span></span> 
 
 
-## <a name="enable-return-policy"></a><span data-ttu-id="33e44-112">Povolit zásady vracení</span><span class="sxs-lookup"><span data-stu-id="33e44-112">Enable return policy</span></span>
+## <a name="enable-return-policy"></a><span data-ttu-id="93c20-112">Povolit zásady vracení</span><span class="sxs-lookup"><span data-stu-id="93c20-112">Enable return policy</span></span>
 
-<span data-ttu-id="33e44-113">Chcete-li povolit funkci zásad vrácení v rámci prodejního kanálu, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="33e44-113">To enable the channel return policy functionality, do the following:</span></span>
+<span data-ttu-id="93c20-113">Chcete-li povolit funkci zásad vrácení v rámci prodejního kanálu, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="93c20-113">To enable the channel return policy functionality, do the following:</span></span>
 
-1. <span data-ttu-id="33e44-114">Přejděte do pracovního prostoru **Správa funkcí** v Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="33e44-114">Go to the **Feature Management** workspace in Dynamics 365 Commerce.</span></span>
-2. <span data-ttu-id="33e44-115">Vyhledejte v seznamu názvů funkcí funkci **Povolit zásady vracení kanálů**.</span><span class="sxs-lookup"><span data-stu-id="33e44-115">Search for the **Enable channel return policies** feature in the list of feature names.</span></span>
-3. <span data-ttu-id="33e44-116">Vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="33e44-116">Select **Enable now**.</span></span> 
+1. <span data-ttu-id="93c20-114">Přejděte do pracovního prostoru **Správa funkcí** v Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="93c20-114">Go to the **Feature Management** workspace in Dynamics 365 Commerce.</span></span>
+2. <span data-ttu-id="93c20-115">Vyhledejte v seznamu názvů funkcí funkci **Povolit zásady vracení kanálů**.</span><span class="sxs-lookup"><span data-stu-id="93c20-115">Search for the **Enable channel return policies** feature in the list of feature names.</span></span>
+3. <span data-ttu-id="93c20-116">Vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="93c20-116">Select **Enable now**.</span></span> 
 
-## <a name="configure-return-policy"></a><span data-ttu-id="33e44-117">Konfigurace zásad vracení</span><span class="sxs-lookup"><span data-stu-id="33e44-117">Configure return policy</span></span>
+## <a name="configure-return-policy"></a><span data-ttu-id="93c20-117">Konfigurace zásad vracení</span><span class="sxs-lookup"><span data-stu-id="93c20-117">Configure return policy</span></span>
 
-<span data-ttu-id="33e44-118">Chcete-li konfigurovat zásady vracení pro maloobchodní prodejnu nebo online maloobchodní kanál, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="33e44-118">Follow these steps to configure a return policy for a retail store or online retail channel.</span></span>
+<span data-ttu-id="93c20-118">Chcete-li konfigurovat zásady vracení pro maloobchodní prodejnu nebo online maloobchodní kanál, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="93c20-118">Follow these steps to configure a return policy for a retail store or online retail channel.</span></span>
 
-1. <span data-ttu-id="33e44-119">Přejděte na **Maloobchodní a velkoobchodní prodej** \> **Nastavení kanálu** \> **Vracení** \> **Zásady vracení v rámci kanálu**.</span><span class="sxs-lookup"><span data-stu-id="33e44-119">Go to **Retail and Commerce** \> **Channel Setup** \> **Returns** \> **Channel return policy**.</span></span>
+1. <span data-ttu-id="93c20-119">Přejděte na **Maloobchodní a velkoobchodní prodej** \> **Nastavení kanálu** \> **Vracení** \> **Zásady vracení v rámci kanálu**.</span><span class="sxs-lookup"><span data-stu-id="93c20-119">Go to **Retail and Commerce** \> **Channel Setup** \> **Returns** \> **Channel return policy**.</span></span>
 
-2. <span data-ttu-id="33e44-120">Vyberte **Nová** pro vytvoření nové šablony zásad vracení.</span><span class="sxs-lookup"><span data-stu-id="33e44-120">Select **New** to create a new return policy template.</span></span> <span data-ttu-id="33e44-121">Chcete-li použít existující šablonu, vyberte ji v levém podokně.</span><span class="sxs-lookup"><span data-stu-id="33e44-121">To use an existing template, select the template in the left pane.</span></span> <span data-ttu-id="33e44-122">Pro nové šablony přidejte název a popis, který vám pomůže určit zásadu při jejím použití v prodejním kanálu.</span><span class="sxs-lookup"><span data-stu-id="33e44-122">For new templates, add a name and description that will help you identify the policy when it is being applied to the channel.</span></span>
+2. <span data-ttu-id="93c20-120">Vyberte **Nová** pro vytvoření nové šablony zásad vracení.</span><span class="sxs-lookup"><span data-stu-id="93c20-120">Select **New** to create a new return policy template.</span></span> <span data-ttu-id="93c20-121">Chcete-li použít existující šablonu, vyberte ji v levém podokně.</span><span class="sxs-lookup"><span data-stu-id="93c20-121">To use an existing template, select the template in the left pane.</span></span> <span data-ttu-id="93c20-122">Pro nové šablony přidejte název a popis, který vám pomůže určit zásadu při jejím použití v prodejním kanálu.</span><span class="sxs-lookup"><span data-stu-id="93c20-122">For new templates, add a name and description that will help you identify the policy when it is being applied to the channel.</span></span>
 
-   <span data-ttu-id="33e44-123">![Přidat nové zásady vrácení](media/Return-policy-page1.png "Přidání nové zásady vracení")</span><span class="sxs-lookup"><span data-stu-id="33e44-123">![Add new return policy](media/Return-policy-page1.png "Add new return rolicy")</span></span>
+   <span data-ttu-id="93c20-123">![Přidat nové zásady vrácení](media/Return-policy-page1.png "Přidání nové zásady vracení")</span><span class="sxs-lookup"><span data-stu-id="93c20-123">![Add new return policy](media/Return-policy-page1.png "Add new return rolicy")</span></span>
      
    
-3. <span data-ttu-id="33e44-124">V části **Povolené způsoby platby refundace** definujte **povolené** nabídky výplat vratek, které jsou specifické pro jednotlivé způsoby platby.</span><span class="sxs-lookup"><span data-stu-id="33e44-124">In the **Allowed refund payment methods** section, define **Allowed** return payment tenders that are specific to each payment method.</span></span>
-   <span data-ttu-id="33e44-125">![Přidat způsoby platby](media/Return-policy-page2.PNG "Nastavit povolené metody platby podle typu platby")</span><span class="sxs-lookup"><span data-stu-id="33e44-125">![Add payment methods](media/Return-policy-page2.PNG "Set allowed payment methods per payment type")</span></span>
+3. <span data-ttu-id="93c20-124">V části **Povolené způsoby platby refundace** definujte **povolené** nabídky výplat vratek, které jsou specifické pro jednotlivé způsoby platby.</span><span class="sxs-lookup"><span data-stu-id="93c20-124">In the **Allowed refund payment methods** section, define **Allowed** return payment tenders that are specific to each payment method.</span></span>
+   <span data-ttu-id="93c20-125">![Přidat způsoby platby](media/Return-policy-page2.PNG "Nastavit povolené metody platby podle typu platby")</span><span class="sxs-lookup"><span data-stu-id="93c20-125">![Add payment methods](media/Return-policy-page2.PNG "Set allowed payment methods per payment type")</span></span>
    
     > [!IMPORTANT]
-    > - <span data-ttu-id="33e44-126">Způsoby platby jsou odvozeny ze způsobů platby nastavených pro organizaci.</span><span class="sxs-lookup"><span data-stu-id="33e44-126">The payment methods are derived from the payment methods set for the organization.</span></span>
-    > - <span data-ttu-id="33e44-127">Přidání povoleného typu úhrady vratky pro každý ze seznamu způsobu platby zajistí, že vrácení může být provedeno na povolený typ úhrady vratky.</span><span class="sxs-lookup"><span data-stu-id="33e44-127">Adding an allowed return tender type for each listed payment method will ensure that returns can be made to the allowed return tender type.</span></span>
+    > - <span data-ttu-id="93c20-126">Způsoby platby jsou odvozeny ze způsobů platby nastavených pro organizaci.</span><span class="sxs-lookup"><span data-stu-id="93c20-126">The payment methods are derived from the payment methods set for the organization.</span></span>
+    > - <span data-ttu-id="93c20-127">Přidání povoleného typu úhrady vratky pro každý ze seznamu způsobu platby zajistí, že vrácení může být provedeno na povolený typ úhrady vratky.</span><span class="sxs-lookup"><span data-stu-id="93c20-127">Adding an allowed return tender type for each listed payment method will ensure that returns can be made to the allowed return tender type.</span></span>
     
-4. <span data-ttu-id="33e44-128">Přiřaďte šablonu zásad vracení s obchody, kde bude použita.</span><span class="sxs-lookup"><span data-stu-id="33e44-128">Associate the return policy template with the stores where it will be used.</span></span> <span data-ttu-id="33e44-129">Na kartě **Maloobchodní kanály** vyberte **Přidat** a přidružte dostupné kanály.</span><span class="sxs-lookup"><span data-stu-id="33e44-129">Select **Add** in the **Retail Channels** tab and associate the available channels.</span></span> 
+4. <span data-ttu-id="93c20-128">Přiřaďte šablonu zásad vracení s obchody, kde bude použita.</span><span class="sxs-lookup"><span data-stu-id="93c20-128">Associate the return policy template with the stores where it will be used.</span></span> <span data-ttu-id="93c20-129">Na kartě **Maloobchodní kanály** vyberte **Přidat** a přidružte dostupné kanály.</span><span class="sxs-lookup"><span data-stu-id="93c20-129">Select **Add** in the **Retail Channels** tab and associate the available channels.</span></span> 
 
-    - <span data-ttu-id="33e44-130">V dialogovém okně **Vybrat uzly organizace** vyberte obchody, oblasti a organizace, ke kterým má být daná šablona přidružena.</span><span class="sxs-lookup"><span data-stu-id="33e44-130">In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.</span></span>
-    - <span data-ttu-id="33e44-131">Ke každému obchodu lze přidružit pouze jednu šablonu zásad vracení.</span><span class="sxs-lookup"><span data-stu-id="33e44-131">Only one return policy template can be associated with each store.</span></span>
-    - <span data-ttu-id="33e44-132">Pomocí tlačítek se šipkami vyberte obchody, regiony nebo organizace.</span><span class="sxs-lookup"><span data-stu-id="33e44-132">Use the arrow buttons to select stores, regions, or organizations.</span></span>
-    - <span data-ttu-id="33e44-133">Datum začátku platnosti zásady bude datem, kdy jsou zásady použity pro kanály a spouštěné úlohy kanálu.</span><span class="sxs-lookup"><span data-stu-id="33e44-133">The effective date on the policy will be the date on which the policies are applied to the channels and the channel jobs are run.</span></span> 
+    - <span data-ttu-id="93c20-130">V dialogovém okně **Vybrat uzly organizace** vyberte obchody, oblasti a organizace, ke kterým má být daná šablona přidružena.</span><span class="sxs-lookup"><span data-stu-id="93c20-130">In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.</span></span>
+    - <span data-ttu-id="93c20-131">Ke každému obchodu lze přidružit pouze jednu šablonu zásad vracení.</span><span class="sxs-lookup"><span data-stu-id="93c20-131">Only one return policy template can be associated with each store.</span></span>
+    - <span data-ttu-id="93c20-132">Pomocí tlačítek se šipkami vyberte obchody, regiony nebo organizace.</span><span class="sxs-lookup"><span data-stu-id="93c20-132">Use the arrow buttons to select stores, regions, or organizations.</span></span>
+    - <span data-ttu-id="93c20-133">Datum začátku platnosti zásady bude datem, kdy jsou zásady použity pro kanály a spouštěné úlohy kanálu.</span><span class="sxs-lookup"><span data-stu-id="93c20-133">The effective date on the policy will be the date on which the policies are applied to the channels and the channel jobs are run.</span></span> 
 
-    <span data-ttu-id="33e44-134">![Dialogové okno Vybrat organizační uzly](media/Return-policy-page3.PNG "Dialogové okno Vybrat organizační uzly")</span><span class="sxs-lookup"><span data-stu-id="33e44-134">![Choose organization nodes dialog box](media/Return-policy-page3.PNG "Choose organization nodes dialog box")</span></span>
+    <span data-ttu-id="93c20-134">![Dialogové okno Vybrat organizační uzly](media/Return-policy-page3.PNG "Dialogové okno Vybrat organizační uzly")</span><span class="sxs-lookup"><span data-stu-id="93c20-134">![Choose organization nodes dialog box](media/Return-policy-page3.PNG "Choose organization nodes dialog box")</span></span>
 
-5. <span data-ttu-id="33e44-135">Na stránce **Plán distribuce** spusťte úlohu **1070** pro zpřístupnění zásad vracení prodejního kanálu v POS.</span><span class="sxs-lookup"><span data-stu-id="33e44-135">On the **Distribution schedule** page, run the **1070** job to make the channel return policy available to the POS.</span></span>
+5. <span data-ttu-id="93c20-135">Na stránce **Plán distribuce** spusťte úlohu **1070** pro zpřístupnění zásad vracení prodejního kanálu v POS.</span><span class="sxs-lookup"><span data-stu-id="93c20-135">On the **Distribution schedule** page, run the **1070** job to make the channel return policy available to the POS.</span></span>
 
-## <a name="preview-the-channel-return-policy-in-the-pos"></a><span data-ttu-id="33e44-136">Náhled zásad vrácení kanálů v POS</span><span class="sxs-lookup"><span data-stu-id="33e44-136">Preview the channel return policy in the POS</span></span>
+## <a name="preview-the-channel-return-policy-in-the-pos"></a><span data-ttu-id="93c20-136">Náhled zásad vrácení kanálů v POS</span><span class="sxs-lookup"><span data-stu-id="93c20-136">Preview the channel return policy in the POS</span></span>
 
-<span data-ttu-id="33e44-137">Chcete-li zobrazit povolené typy úhrad vratek v POS, postupujte podle kroků v jednom z následujících příkladů.</span><span class="sxs-lookup"><span data-stu-id="33e44-137">Follow the steps in either of the following examples to view the allowed return tender types in POS.</span></span>
+<span data-ttu-id="93c20-137">Chcete-li zobrazit povolené typy úhrad vratek v POS, postupujte podle kroků v jednom z následujících příkladů.</span><span class="sxs-lookup"><span data-stu-id="93c20-137">Follow the steps in either of the following examples to view the allowed return tender types in POS.</span></span>
 
-1. <span data-ttu-id="33e44-138">Přihlaste se k POS jako pokladník nebo manažer.</span><span class="sxs-lookup"><span data-stu-id="33e44-138">Sign in to the POS as a cashier or manager.</span></span>
-2. <span data-ttu-id="33e44-139">V části **Směna a pokladna** vyberte **Zobrazit deník**.</span><span class="sxs-lookup"><span data-stu-id="33e44-139">Under **Shift and Drawer**, select **Show journal**.</span></span>
-3. <span data-ttu-id="33e44-140">Vyberte transakci, která je součástí vrácení.</span><span class="sxs-lookup"><span data-stu-id="33e44-140">Select the transaction that is part of the return.</span></span> 
-4. <span data-ttu-id="33e44-141">Vyberte položky k refundaci a vyberte způsob platby.</span><span class="sxs-lookup"><span data-stu-id="33e44-141">Select the items to refund, and choose the payment method.</span></span>  
-- <span data-ttu-id="33e44-142">Pokud je vybraná úhrada plateb v seznamu povolených typů úhrad vratek, může pokladní dokončit transakci.</span><span class="sxs-lookup"><span data-stu-id="33e44-142">If the payment tender selected is in the allowed list of return tender types, the cashier can complete the transaction.</span></span>
-- <span data-ttu-id="33e44-143">Není-li vybraná úhrada plateb povolena, zobrazí se chybová zpráva.</span><span class="sxs-lookup"><span data-stu-id="33e44-143">If the payment tender selected is not allowed, an error message is displayed.</span></span>
-- <span data-ttu-id="33e44-144">Chcete-li zobrazit seznam všech povolených typů úhrady vratek, vyberte **Dlužná částka**.</span><span class="sxs-lookup"><span data-stu-id="33e44-144">Select **Amount Due** to display a list of all the allowed return tender types.</span></span>
+1. <span data-ttu-id="93c20-138">Přihlaste se k POS jako pokladník nebo manažer.</span><span class="sxs-lookup"><span data-stu-id="93c20-138">Sign in to the POS as a cashier or manager.</span></span>
+2. <span data-ttu-id="93c20-139">V části **Směna a pokladna** vyberte **Zobrazit deník**.</span><span class="sxs-lookup"><span data-stu-id="93c20-139">Under **Shift and Drawer**, select **Show journal**.</span></span>
+3. <span data-ttu-id="93c20-140">Vyberte transakci, která je součástí vrácení.</span><span class="sxs-lookup"><span data-stu-id="93c20-140">Select the transaction that is part of the return.</span></span> 
+4. <span data-ttu-id="93c20-141">Vyberte položky k refundaci a vyberte způsob platby.</span><span class="sxs-lookup"><span data-stu-id="93c20-141">Select the items to refund, and choose the payment method.</span></span>  
+- <span data-ttu-id="93c20-142">Pokud je vybraná úhrada plateb v seznamu povolených typů úhrad vratek, může pokladní dokončit transakci.</span><span class="sxs-lookup"><span data-stu-id="93c20-142">If the payment tender selected is in the allowed list of return tender types, the cashier can complete the transaction.</span></span>
+- <span data-ttu-id="93c20-143">Není-li vybraná úhrada plateb povolena, zobrazí se chybová zpráva.</span><span class="sxs-lookup"><span data-stu-id="93c20-143">If the payment tender selected is not allowed, an error message is displayed.</span></span>
+- <span data-ttu-id="93c20-144">Chcete-li zobrazit seznam všech povolených typů úhrady vratek, vyberte **Dlužná částka**.</span><span class="sxs-lookup"><span data-stu-id="93c20-144">Select **Amount Due** to display a list of all the allowed return tender types.</span></span>
 
-<span data-ttu-id="33e44-145">- nebo -</span><span class="sxs-lookup"><span data-stu-id="33e44-145">-or-</span></span>
+<span data-ttu-id="93c20-145">- nebo -</span><span class="sxs-lookup"><span data-stu-id="93c20-145">-or-</span></span>
 
-1. <span data-ttu-id="33e44-146">Přihlaste se k POS jako pokladník nebo manažer.</span><span class="sxs-lookup"><span data-stu-id="33e44-146">Sign in to the POS as a cashier or manager.</span></span>
-2. <span data-ttu-id="33e44-147">Vyberte **Transakce vrácení** a zadejte ID účtenky pomocí kontroly čárového kódu nebo ručním zadáním.</span><span class="sxs-lookup"><span data-stu-id="33e44-147">Select **Return Transaction** and enter the receipt ID using a barcode scan or by manual entry.</span></span> 
-3. <span data-ttu-id="33e44-148">Vyberte transakci, která je součástí vrácení.</span><span class="sxs-lookup"><span data-stu-id="33e44-148">Select the transaction that is part of the return.</span></span> 
-4. <span data-ttu-id="33e44-149">Vyberte položky k refundaci a vyberte způsob platby.</span><span class="sxs-lookup"><span data-stu-id="33e44-149">Select the items to refund, and choose the payment method.</span></span>  
-- <span data-ttu-id="33e44-150">Pokud je vybraná úhrada plateb v seznamu povolených typů úhrad vratek, může pokladní dokončit transakci.</span><span class="sxs-lookup"><span data-stu-id="33e44-150">If the payment tender selected is in the allowed list of return tender types, the cashier can complete the transaction.</span></span>
-- <span data-ttu-id="33e44-151">Není-li vybraná úhrada plateb povolena, zobrazí se chybová zpráva.</span><span class="sxs-lookup"><span data-stu-id="33e44-151">If the payment tender selected is not allowed, an error message is displayed.</span></span>
-- <span data-ttu-id="33e44-152">Chcete-li zobrazit seznam všech povolených typů úhrady vratek, vyberte **Dlužná částka**.</span><span class="sxs-lookup"><span data-stu-id="33e44-152">Select **Amount Due** to display a list of all the allowed return tender types.</span></span>
+1. <span data-ttu-id="93c20-146">Přihlaste se k POS jako pokladník nebo manažer.</span><span class="sxs-lookup"><span data-stu-id="93c20-146">Sign in to the POS as a cashier or manager.</span></span>
+2. <span data-ttu-id="93c20-147">Vyberte **Transakce vrácení** a zadejte ID účtenky pomocí kontroly čárového kódu nebo ručním zadáním.</span><span class="sxs-lookup"><span data-stu-id="93c20-147">Select **Return Transaction** and enter the receipt ID using a barcode scan or by manual entry.</span></span> 
+3. <span data-ttu-id="93c20-148">Vyberte transakci, která je součástí vrácení.</span><span class="sxs-lookup"><span data-stu-id="93c20-148">Select the transaction that is part of the return.</span></span> 
+4. <span data-ttu-id="93c20-149">Vyberte položky k refundaci a vyberte způsob platby.</span><span class="sxs-lookup"><span data-stu-id="93c20-149">Select the items to refund, and choose the payment method.</span></span>  
+- <span data-ttu-id="93c20-150">Pokud je vybraná úhrada plateb v seznamu povolených typů úhrad vratek, může pokladní dokončit transakci.</span><span class="sxs-lookup"><span data-stu-id="93c20-150">If the payment tender selected is in the allowed list of return tender types, the cashier can complete the transaction.</span></span>
+- <span data-ttu-id="93c20-151">Není-li vybraná úhrada plateb povolena, zobrazí se chybová zpráva.</span><span class="sxs-lookup"><span data-stu-id="93c20-151">If the payment tender selected is not allowed, an error message is displayed.</span></span>
+- <span data-ttu-id="93c20-152">Chcete-li zobrazit seznam všech povolených typů úhrady vratek, vyberte **Dlužná částka**.</span><span class="sxs-lookup"><span data-stu-id="93c20-152">Select **Amount Due** to display a list of all the allowed return tender types.</span></span>
 
-<span data-ttu-id="33e44-153">![Nepovolena refundace](media/Return-policy-page6.png "Typ refundace není povolen.")</span><span class="sxs-lookup"><span data-stu-id="33e44-153">![Refund not allowed](media/Return-policy-page6.png "Refund type not allowed")</span></span>
+<span data-ttu-id="93c20-153">![Nepovolena refundace](media/Return-policy-page6.png "Typ refundace není povolen.")</span><span class="sxs-lookup"><span data-stu-id="93c20-153">![Refund not allowed](media/Return-policy-page6.png "Refund type not allowed")</span></span>
 
 
 
-<span data-ttu-id="33e44-154">![Seznam způsobů platby](media/Return-policy-page5.PNG "Typy refundace nejsou povoleny")</span><span class="sxs-lookup"><span data-stu-id="33e44-154">![List of payment methods](media/Return-policy-page5.PNG "Refund types allowed")</span></span>
+<span data-ttu-id="93c20-154">![Seznam způsobů platby](media/Return-policy-page5.PNG "Typy refundace nejsou povoleny")</span><span class="sxs-lookup"><span data-stu-id="93c20-154">![List of payment methods](media/Return-policy-page5.PNG "Refund types allowed")</span></span>
