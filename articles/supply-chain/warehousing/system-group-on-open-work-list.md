@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b697cce8ecb9ece282fc659ab4d97c4b747c5e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 826920980bdd2d30337c92553bd0367b119f676c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423677"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977331"
 ---
 # <a name="system-grouping-on-an-open-work-list"></a>Systémové seskupení na otevřeném seznamu úkolů
 
@@ -42,6 +41,3 @@ Tyto kroky slouží k nastavení systémového seskupení v otevřeném seznamu 
 | Pole systémového seskupení | K dispozici pouze v případě, že je možnost <strong>Povolit systémovou práci</strong> nastavena na hodnotu <strong>Ano</strong>. Vyberte pole, které určuje způsob seskupení práce pro pracovníky. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Pole <strong>Popisek systémového seskupení</strong> použijte k informování pracovníka, co kontrolovat. |
 | Popisek systémového seskupení |                       K dispozici pouze v případě, že je možnost <strong>Povolit systémovou práci</strong> nastavena na hodnotu <strong>Ano</strong>. Zadejte informace pro pracovníka o tom, co kontrolovat při seskupení práce vyskladnění v aplikaci . Používáte-li například pole <strong>ShipmentId</strong> pro seskupení práce výdeje podle dodávky, měli byste do pole zadat ID dodávky. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Je nutné zaškrtnout pole definující seskupení v poli <strong>systémové seskupení</strong>.                       |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailBuyersPushPerPackage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 033d4f72b626130c144faff30fe0d35349b26c6d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ac93806bc85be92840548e160ddf803e63adbbc4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977181"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Používání cross dockingu pro distribuci produktů z přijímacího skladu do obchodů
 
@@ -49,6 +48,3 @@ Tato procedura vás provede postupem, jak vytvořit a zpracovat cross docking k 
 15. Vyhledejte a vyberte na seznamu sklad, který obdržel produkty.
 16. Klikněte na objednávku, abyste zobrazili objednávky, které byly vytvořeny pro vybraný sklad.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

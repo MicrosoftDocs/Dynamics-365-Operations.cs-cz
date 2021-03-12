@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423605"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977406"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
@@ -235,7 +234,7 @@ Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení pou
 
 Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
 
->[Poznámka!] náhradní prodejní objednávku můžete po jejím vytvoření upravit nebo vymazat.
+>[Poznámka!] náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
 
 ## <a name="generate-a-packing-slip"></a>Vytvořte dodací list
 Před přijetím vrácených položek na sklad musíte aktualizovat dodací list pro objednávku, do které toto zboží náleží. Stejně jako je proces aktualizace faktury aktualizací finanční transakce, proces aktualizace dodacího listu je fyzickou aktualizací skladového záznamu. Jinými slovy, tento proces potvrdí změny zásob. V případě vrácení jsou kroky přiřazené k dispoziční akci implementovány v průběhu aktualizace dodacího listu. Při generování dodacího listu dojde k následujícím událostem:
@@ -331,6 +330,3 @@ V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6afa52fa2c784fd7afbdc8db0e079af0689b4bec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7e72847b9046968c87d9602e141bae6c603c1c63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441224"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976314"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a>Nastavení zařízení banky a zaúčtování profilů pro akreditiv
 
@@ -74,6 +73,3 @@ Tento úkol využívá ukázkovou společnost USMF.
     * Tento účet je debetován, pokud je počáteční marže zaúčtována a kreditován po zaúčtování platby.  
 9. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423514"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977856"
 ---
 # <a name="define-production-flow-models"></a>Definování modelů výrobních toků
 
@@ -46,6 +45,3 @@ Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pra
 8. V poli Reakce na nedostatek kapacity vyberte možnost.
     * Možnosti obsahují: Odložit – odložení úplné poptávky plánovací události na příští dostupný produkční den, s dostupnou propustností. Zrušit - ukončení automatického plánování pro plánovací událost a ponechání souvisejících prací nenaplánovaných.   Přidat do požadovaného dne - naplánování požadované práce pro požadované období. Tímto dochází k přetížení buňky pro tento den a vyžaduje kontrolu plánovače a ruční interakci.   Rozdělit na dostupná období - rozdělení různých prací plánovací události na všechny dostupné produkční dny, počínaje prvním dostupným dnem. Množství minimální distribuce je množství kanbanové úlohy. Rozdělení přiřadí minimální množství plánování (kanbanové množství) pro každý den s dostatečnou dostupnou propustností.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

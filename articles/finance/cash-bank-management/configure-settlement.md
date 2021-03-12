@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ebc6fcfe20082f76007eabb86d5e33dbfc900dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441296"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976436"
 ---
 # <a name="configure-settlement"></a>Konfigurace vyrovnání
 
@@ -67,6 +66,3 @@ Abyste se vyhnuli dalším účetním položkám, straně Má dáti a Dal na ste
 
 -   Organizace často používají pevné dimenze k nulovému plnění a finanční dimenzi, která není požadována. Obvykle se jedná o případy pro rozvahové účty, jako jsou účty pohledávek a závazků. Účetní struktury lze použít pro nesledované finanční dimenze, které jsou obvykle vyplněny nulovými hodnotami.  Odebrání finanční dimenze pro rozvahové účty eliminuje nutnost použít pevné dimenze.
 -   Pokud vaše organizace vyžaduje pevné dimenze na hlavním účtu pohledávek/závazků, najděte způsob nastavení výchozí pevné dimenze pro platbu, tak, aby hodnota pevné dimenze byla uložena v transakci dodavatele pro platbu. To umožní systému obnovit hlavní účet pohledávek a závazků tak, aby zahrnoval hodnoty pevné dimenze. Hodnotu pevné dimenze lze definovat jako výchozí pro dodavatele nebo pro název deníku pro deník plateb.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264554
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8dff41042f15a32d265fb6239a07e6af8d149960
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 622a79c564f05f11e3b393f52b158c94f0e8f403
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407626"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978253"
 ---
 # <a name="half-year-depreciation-on-fixed-asset-disposal-for-the-czech-republic"></a>Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku
 
@@ -58,6 +57,3 @@ Po nastavení metod odpisů lze použít pololetní odpisy majetku pro vyřazen�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
