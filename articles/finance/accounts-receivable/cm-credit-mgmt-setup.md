@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ea865812a0ef187697fadbfc6f576df6595db4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441122"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971746"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
@@ -79,6 +78,3 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Číselné řady a sdílené parametry číselných řad
 
 Ke zpracování úprav limitu úvěru je nutné zadat ID deníku. Je nutné přidat číslo úpravy limitu úvěru, které by mělo být použito ke generování ID deníku.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c85dd895e18805da2d1daf5f90f64db82bdc0116
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424151"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973778"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odložené zpracování práce skladu
 
@@ -110,6 +109,3 @@ Pracovní prostor **sledování odchozích prací** obsahuje dvě dlaždice, kte
 ## <a name="deleting-completed-tasks"></a>Odstranění dokončených úkolů
 
 Odložené úlohy zpracování vložení můžete odstranit tak, že je vyberete a odstraníte na stránce.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410659"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972448"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -240,6 +239,3 @@ Cenový modul **nepodporuje** následující cenové funkce:
 Cena je jedním z nejdůležitějších faktorů, které kontrolují nákupní rozhodnutí mnoha odběratelů, a mnoho zákazníků porovnává ceny na různých webech, než něco nakoupí. Aby se zajistilo, že budou poskytovat konkurenční ceny, maloobchodníci pozorně sledují své konkurenty a často pořádají promoakce. Chcete-li tedy pomoci těmto prodejcům přilákat zákazníky, je velmi důležité, aby vyhledávání produktů, funkce procházení, seznamy a stránka podrobností o produktu zobrazovalo nejpřesnější ceny.
 
 V nadcházejícím vydání aplikace Commerce bude rozhraní API **GetActivePrices** vracet ceny, které zahrnují jednoduché slevy (například jednořádkové slevy, které nezávisejí na jiných položkách nákupního košíku). Tímto způsobem jsou zobrazené ceny blízké skutečné částce, kterou odběratelé za položky zaplatí. Toto rozhraní API bude zahrnovat všechny typy jednoduchých slev: založené na místu, věrnostní, katalogové a založené na kanálu. Rozhraní API navíc vrátí názvy a informace o platnosti pro použité slevy, takže maloobchodní prodejci mohou poskytnout podrobnější popis ceny a vytvořit pocit naléhavosti, pokud platnost slevy brzy vyprší.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

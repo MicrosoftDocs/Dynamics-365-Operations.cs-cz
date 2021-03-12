@@ -1,5 +1,5 @@
 ---
-title: Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy
+title: Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
 description: Tento článek vás provede scénářem, kde je provedeno více částečných plateb, některé v rámci období platební slevy a jiné mimo období platební slevy.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a30bd1c032d27405c17388465eb813d6c87c270
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441002"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971971"
 ---
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy
+# <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -122,6 +121,3 @@ Potom Anežka zaúčtuje platbu. Jakmile otevře stránku **Transakce dodavatele
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b0976494a8bb128ae6bb40cbcdf7c691185f23
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424057"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970499"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -84,8 +83,8 @@ Na kartě **Alokační klíče** lze nastavit **Parametry algoritmu prognózy** 
 - **Procento úrovně jistoty**: Interval jistoty obsahuje určitý úsek hodnot, které fungují jako vhodné odhady pro prognózu poptávky. 95% úroveň jistoty například označuje existenci 5% riziko, že budoucí poptávka se bude nacházet mimo rozsah intervalu jistoty.
 - **Vynutit sezónnost**: Určuje, zda vynutit, aby model použil určitý typ sezónnosti. Platí pouze pro ARIMA a ETS. Možnosti: AUTO (výchozí), žáDNá, DOPLŇKOVá, MULTIPLIKATIVNí.
 - **Model prognózy**: Možnosti: ARIMA, ETS, STL, ETS + ARIMA, ETS + STL, VšE. Chcete-li vybrat nejlépe odpovídající model, použijte možnost **VŠE**.
-- **Maximální předpokládaná hodnota**: Určuje maximální hodnotu, která má být použita pro prognózy. Formát: + 1E[n] nebo číselná konstanta.
-- **Minimální předpokládaná hodnota**: Určuje minimální hodnotu, která má být použita pro prognózy. Formát: -1E[n] nebo číselná konstanta.
+- **Maximální předpokládaná hodnota**: Určuje maximální hodnotu, která má být použita pro prognózy. Formát: + 1E [n] nebo číselná konstanta.
+- **Minimální předpokládaná hodnota**: Určuje minimální hodnotu, která má být použita pro prognózy. Formát: -1E [n] nebo číselná konstanta.
 - **Chybějící nahrazení hodnoty**: Určuje, jak jsou vyplněny mezery v historických datech. Možnosti: číselná hodnota, STŘEDNÍ, PŘEDCHOZÍ, INTERPOLOVANÁ LINEÁRNÍ, INTERPOLOVANÁ POLYNOMIÁLNÍ.
 - **Chybí rozsah nahrazení hodnoty**: Určuje, zda se nahrazení hodnoty vztahuje pouze na rozsah dat každého jednotlivého atributu rozlišení nebo na celou sadu dat. Možnosti: GRANULARITY_ATTRIBUTE (výchozí), GLOBAL.
 - **Nápověda k sezónnosti**: pro sezónní data uveďte nápovědu pro model prognózy, která zlepší přesnost prognózy. Formát: celé číslo, které představuje počet intervalů pro opakování vzoru poptávky. Zadejte například "6" pro data, která se opakují jednou za 6 měsíců.
@@ -102,6 +101,3 @@ Na kartě **Alokační klíče** lze nastavit **Parametry algoritmu prognózy** 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

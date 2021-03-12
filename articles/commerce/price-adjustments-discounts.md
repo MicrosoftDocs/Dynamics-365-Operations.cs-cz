@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
-ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
+ms.openlocfilehash: f29e90e1c61792c70d4d6eaeee7758676bf193b2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4584308"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972473"
 ---
 # <a name="price-adjustments-and-discounts"></a>Úpravy ceny a slevy
 
@@ -51,6 +50,3 @@ Existují mnoho typů slev:
 - **Přepravní sleva** – Sleva, která se použije, když celková částka transakce přesáhne zadanou částku a na objednávku se použije určitý způsob doručení (například dvoudenní nebo noční přeprava).
 
 Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

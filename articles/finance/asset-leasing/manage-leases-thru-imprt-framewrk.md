@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d7a7d2afd8f352bc167ec8c0a354ee4ac0a9e77b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7df2f55f596cab54315c2da2ec0492422514f49c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971296"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Správa leasingů prostřednictvím rámce importu leasingu
 
@@ -83,6 +82,3 @@ Pokud používáte rámec importu leasingu k aktualizaci leasingu a typ zpracov�
 
 1. Přejděte na **Leasing majetku \> Rámec importu leasingu \> Nastavení \> Aktualizovat výběr pole**.
 2. Na stránce, která se zobrazí, vyberte pole, která chcete aktualizovat, a poté je výběrem zelené šipky přesuňte na seznam **Vybraná pole**. Pouze pole v seznamu **Vybraná pole** lze aktualizovat pomocí sady pro import leasingu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
