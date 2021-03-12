@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424260"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987472"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Technické verze a kategorie technických produktů
 
@@ -162,6 +161,3 @@ Technické kusovníky a postupy se vytvářejí z technické verze, kde platí. 
 U produktů, kde používáte dimenze produktu *verze* (spolu s logistickým dopadem na transakce), je verze také přidána do kusovníků a postupů. Toto chování pomáhá odlišit kusovníky a postupy po sobě jdoucích verzí, bez ohledu na nastavení **Vynutit platnost**.
 
 U produktů, kde nepoužíváte dimenze produktu *verze* (bez logistického dopadu na transakce), není verze přidána do kusovníků nebo postupů. Proto nebude mezi kusovníky a postupy po sobě jdoucích verzí žádný rozdíl. V tomto případě důrazně doporučujeme nastavit možnost **Vynutit platnost** na *Ano*. Tímto způsobem pomůžete zabránit tomu, aby se technické verze překrývaly, a můžete také aktivovat kusovník a postup novější verze, aniž byste nejprve museli deaktivovat kusovník a postup předchozí verze. Pokud v tomto případě nastavíte možnost **Nastavit platnost** na *Ano*, musíte ručně deaktivovat kusovníky a postupy starších verzí, než budete moci aktivovat nejnovější verzi.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

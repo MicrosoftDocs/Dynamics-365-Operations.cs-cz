@@ -3,7 +3,7 @@ title: Modul košíku
 description: Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: abb9909c03577763ff7e6242c9395a58159df6ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4410940"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985972"
 ---
 # <a name="cart-module"></a>Modul košíku
 
@@ -53,6 +52,7 @@ Následující obrázek ukazuje příklad stránky nákupního košíku na webu 
 | Záhlaví | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Nadpis košíku, jako "Nákupní taška" nebo "Položky v nákupním košíku". |
 | Zobrazit chybu vyprodanosti | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, na stránce košíku se zobrazí chyby související s akciemi. Doporučujeme nastavit tuto vlastnost na **Pravda** pokud jsou na webu prováděny kontroly zásob. |
 | Zobrazit přepravní poplatky u řádkových položek | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, řádkové položky košíku zobrazí přepravné, jsou-li tyto informace k dispozici. Tato funkce není v motivu Fabrikam podporována, protože uživatelé vyberou dopravu pouze v pokladně. Tuto funkci však lze zapnout v jiných workflowech, pokud je to možné. |
+| Zobrazit dostupné propagační akce| **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, košík zobrazuje dostupné propagační akce na základě položek v košíku. Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.16. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduly, které lze použít v modulu košíku
 
@@ -117,6 +117,3 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
 
 [Vytvoření online funkčního profilu](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

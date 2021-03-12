@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b6270bbb6780786ed4535ca2987ed44448bd81ad
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424273"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987571"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Ukázka funkce správy technických změn
 
@@ -411,6 +410,3 @@ Produkt lze nyní znovu vydat do společnosti *USMF* a poté odeslat zákazníko
 1. Vyberte každou společnost, které chcete vydat produkty.
 1. Vyberte **OK** pro zavření dialogového okna **Vydání** a návrat do pracovní plochy.
 1. V podokně akcí na kartě **Změnový příkaz** ve skupině **Vydání produktu** vyberte **Proces** k vydání dotčených produktů vybraným společnostem. Případně vyberte **Uvolnit strukturu produktu** k zahájení procesu vydání.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

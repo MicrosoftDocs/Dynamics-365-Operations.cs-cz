@@ -1,6 +1,6 @@
 ---
 title: Vytvoření původního rozpočtu a pak stornování předběžných položek registru pro veřejný sektor
-description: Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat.
+description: Toto téma poskytuje informace o tom, jak vytvořit a vrátit původní položku rozpočtu pomocí rozpočtového modelu a hodnot dimenzí, které mají předběžné částky rozpočtu.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32d89216d49a743729de8910f738276cbddcd8bb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 134e2ca851d72965198026107817c66a808ac705
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441249"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987947"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>Vytvoření původního rozpočtu a pak stornování předběžných položek registru pro veřejný sektor
 
@@ -51,6 +50,3 @@ Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtový
     * Chcete-li provádět volitelné výběry, klikněte na ikonu Odemknout v horní části stránky.  
 18. Klepněte na položku Aktualizovat.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

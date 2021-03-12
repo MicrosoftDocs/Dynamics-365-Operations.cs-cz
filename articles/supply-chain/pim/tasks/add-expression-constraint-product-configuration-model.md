@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411e20bd8631b70df981c5785f502693d5ba3705
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423827"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987122"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Přidání omezení výrazu do modelu konfigurace produktu
 
@@ -44,13 +43,10 @@ Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konf
 ## <a name="enter-expression"></a>Zadat výraz
 1. Klepněte na Upravit výraz.
     * Pokud odemknete uživatelské rozhraní v záznamu úkolů v této fázi, můžete používat IntelliSense a seznam symbolů k vytváření omezení výrazu.  
-2. V poli Základ omezení zadejte hodnotu „Implikuje[Přední mřížka == "Kov", Ochrana rohu]“.
+2. V poli Základ omezení zadejte hodnotu „Implikuje [Přední mřížka == "Kov", Ochrana rohu]“.
     * Tento logický výraz uvádí: Pokud přední mřížka je kovová, je nutné vybrat možnost ochrany rohu.  
 3. Klikněte na tlačítko Ověřit.
     * Ověřovací funkce je spuštěna prostřednictvím omezení výrazu a kontroluje chyby syntaxe.  
 4. Klikněte na tlačítko Zavřít.
 5. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

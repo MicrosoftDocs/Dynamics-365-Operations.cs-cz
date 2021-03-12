@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b2c5a8976973203a943a2cec7658a2998c54f279
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f881e8715d4a62bc753aefa0beebaf0cceafcc77
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410860"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985704"
 ---
 # <a name="set-up-retail-products"></a>Nastavení maloobchodních produktů
 
@@ -40,6 +39,3 @@ Než bude možné nabídnout produkty k přeprodeji ve vašich obchodních kaná
 4. **Přidejte produkty do sortimentu.** Sortiment představuje kolekci produktů, které nabízíte ve vašich kanálech. Můžete definovat jeden nebo více sortimentů, a každý produkt může být přiřazen do jednoho nebo více sortimentů. Pokud chcete přiřadit produkty do kanálů, přiřaďte sortimenty do těchto kanálů. Při vytváření sortimentu můžete přidat produkty, které ještě nebyly uvolněny pro právnickou osobu. Nicméně dokud produkty nebudou uvolněny pro právnické osoby, nemohou být přidány do kanálů.
 5. **Přidejte produkty do hierarchií navigací.** Než bude možné výrobky procházet online nebo na pokladním místě, musí být rozděleny v hierarchii navigace aplikace Commerce.
 6. **Přidejte produkty do katalogu.** I když je tento krok volitelný pro pokladní místo, online obchody vyžadují, aby byly produkty zahrnuty v alespoň jednom katalogu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

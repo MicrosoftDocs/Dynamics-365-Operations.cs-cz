@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423789"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987546"
 ---
 # <a name="inventory-close"></a>Uzavřít zásoby
 
@@ -60,7 +59,7 @@ Některé úkoly, které lze provést pomocí stránky **Závěrka a oprava**, z
 Aktualizovány budou účty hlavní knihy, které jsou spojené s původní skladovou transakcí. Pokud je například prodejní objednávka vyrovnána s nákupní objednávkou, budou upraveny účty hlavní knihy, které byly použity pro původní prodejní objednávku. Toto chování platí i v případě, že účty hlavní knihy pro skupiny položek přiřazených dané položce se změnily po zaúčtování prodejní objednávky. Po uzávěrce skladu dojde k vytvoření částky vyrovnání, částka vyrovnání bude přesto zaúčtována k původním účtům hlavní knihy, nikoli na nové účty hlavní knihy přiřazených k dané položce. Hlavní kniha může být aktualizována také stornováním uzávěrka skladu. 
 
 > [!NOTE] 
-> - Uzávěrka skladu je povinným krokem v procesu uzavírání měsíce pro všechny skladové modely. To zahrnuje standardní a klouzavý průměr nákladů. Dokud nebude provedeno uzavření skladu k datu ukončení období, nebude možné uzavřít finanční období.
+> - Uzávěrka skladu je povinným krokem v procesu uzavírání měsíce pro všechny skladové modely kromě klouzavého průměru.  Budete upozorněni, pokud se pokusíte uzavřít finanční období, aniž byste nejprve provedli uzavření inventáře k datu konce období.
 > - Před spuštěním postupu uzávěrky se zobrazí seznam položek, které nelze vyrovnat v průběhu aktualizace.
 > - Doporučujeme spustit uzávěrku skladu v době minimálního provozu, což umožní rovnoměrné vytížení výpočetních zdrojů.
 
@@ -87,6 +86,3 @@ V některých případech je nutné zrušit dokončenou uzávěrku skladu a vrá
 > [!NOTE] 
 > Znovu otevřít lze pouze poslední zásoby období, které bylo ukončeno. Pokud chcete stornovat předchozí skladové uzávěrky, je nutné stornovat postupně každou následnou skladovou uzávěrku, počínaje poslední uzávěrkou.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
