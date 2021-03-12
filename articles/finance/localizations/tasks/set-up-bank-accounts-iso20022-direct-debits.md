@@ -11,61 +11,60 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b09d7d203f1bb58fad26a109962005affa6d307
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 85c1faebe9a61ad2e708ba26c7a5f0cad15f5f8b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441080"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988194"
 ---
-# <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="7e732-103">Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="7e732-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>
+# <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="19387-103">Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="19387-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7e732-104">Tato úloha vás provede nastavením bankovního účtu odběratele a zmocněním k přímému debetu odběratele, které jsou požadovány pro generování souboru plateb odběratele pro přímý debet ISO20022.</span><span class="sxs-lookup"><span data-stu-id="7e732-104">This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit.</span></span> <span data-ttu-id="7e732-105">V závislosti na formátech platby odběratele, které jsou nastavené, mohou být pro odběratele nebo bankovní účet odběratele potřeba další informace, které nejsou zahrnuty v tomto postupu.</span><span class="sxs-lookup"><span data-stu-id="7e732-105">Depending on the customer payment formats tha are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account.</span></span> 
+<span data-ttu-id="19387-104">Tato úloha vás provede nastavením bankovního účtu odběratele a zmocněním k přímému debetu odběratele, které jsou požadovány pro generování souboru plateb odběratele pro přímý debet ISO20022.</span><span class="sxs-lookup"><span data-stu-id="19387-104">This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit.</span></span> <span data-ttu-id="19387-105">V závislosti na formátech platby odběratele, které jsou nastavené, mohou být pro odběratele nebo bankovní účet odběratele potřeba další informace, které nejsou zahrnuty v tomto postupu.</span><span class="sxs-lookup"><span data-stu-id="19387-105">Depending on the customer payment formats tha are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account.</span></span> 
 
-<span data-ttu-id="7e732-106">Tento úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="7e732-106">This task was created using the demo data company DEMF with a legal entity primary address in Germany.</span></span>
-
-
-
-<span data-ttu-id="7e732-107">Toto je čtvrtý z pěti postupů, které společně popisují proces platby odběratele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7e732-107">This is the fourth of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
+<span data-ttu-id="19387-106">Tento úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="19387-106">This task was created using the demo data company DEMF with a legal entity primary address in Germany.</span></span>
 
 
-## <a name="set-up-a-customer-bank-account"></a><span data-ttu-id="7e732-108">Nastavení bankovního účtu odběratele</span><span class="sxs-lookup"><span data-stu-id="7e732-108">Set up a customer bank account</span></span>
-1. <span data-ttu-id="7e732-109">Přejděte na Pohledávky > Zákazníci > Všichni odběratelé.</span><span class="sxs-lookup"><span data-stu-id="7e732-109">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="7e732-110">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="7e732-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="7e732-111">V poli Účet můžete například filtrovat pomocí hodnoty „DE-010“.</span><span class="sxs-lookup"><span data-stu-id="7e732-111">For example, filter on the Account field with a value of 'DE-010 '.</span></span>
-3. <span data-ttu-id="7e732-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="7e732-112">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="7e732-113">V podokně akcí klikněte na možnost Odběratel.</span><span class="sxs-lookup"><span data-stu-id="7e732-113">On the Action Pane, click Customer.</span></span>
-5. <span data-ttu-id="7e732-114">Klikněte na možnost Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="7e732-114">Click Bank accounts.</span></span>
-6. <span data-ttu-id="7e732-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7e732-115">Click New.</span></span>
-7. <span data-ttu-id="7e732-116">Zadejte hodnotu do pole Bankovní účet.</span><span class="sxs-lookup"><span data-stu-id="7e732-116">In the Bank account field, type a value.</span></span>
-8. <span data-ttu-id="7e732-117">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="7e732-117">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="7e732-118">Zadejte například banka EUR.</span><span class="sxs-lookup"><span data-stu-id="7e732-118">For example, enter 'EUR bank'.</span></span>  
-9. <span data-ttu-id="7e732-119">V poli Bankovní skupiny zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7e732-119">In the Bank groups field, enter or select a value.</span></span>
-10. <span data-ttu-id="7e732-120">Zadejte hodnotu do pole IBAN.</span><span class="sxs-lookup"><span data-stu-id="7e732-120">In the IBAN field, type a value.</span></span>
-    * <span data-ttu-id="7e732-121">Zadejte například DE36200400000628808808.</span><span class="sxs-lookup"><span data-stu-id="7e732-121">For example, enter 'DE36200400000628808808'.</span></span>  
-11. <span data-ttu-id="7e732-122">V poli Kód SWIFT zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7e732-122">In the SWIFT code field, type a value.</span></span>
-    * <span data-ttu-id="7e732-123">Například zadejte COBADEFFXXX.</span><span class="sxs-lookup"><span data-stu-id="7e732-123">For example: Enter 'COBADEFFXXX'.</span></span>  <span data-ttu-id="7e732-124">Všimněte si, že pro spoustu formátů platby není povinný SWIFT\BIC, doporučujeme ho však pro bankovní účet zaregistrovat.</span><span class="sxs-lookup"><span data-stu-id="7e732-124">Please note that SWIFT \ BIC is not mandatory for many payment formats however it is recommended to have it registered for a bank account.</span></span>  
-12. <span data-ttu-id="7e732-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="7e732-125">Click Save.</span></span>
-13. <span data-ttu-id="7e732-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7e732-126">Close the page.</span></span>
-14. <span data-ttu-id="7e732-127">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="7e732-127">Click Edit.</span></span>
-15. <span data-ttu-id="7e732-128">Rozbalte položku Výchozí nastavení plateb.</span><span class="sxs-lookup"><span data-stu-id="7e732-128">Expand the Payment defaults section.</span></span>
-16. <span data-ttu-id="7e732-129">V poli Bankovní účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7e732-129">In the Bank account field, enter or select a value.</span></span>
 
-## <a name="add-a-direct-debit-mandate"></a><span data-ttu-id="7e732-130">Přidání zmocnění k přímému debetu</span><span class="sxs-lookup"><span data-stu-id="7e732-130">Add a direct debit mandate</span></span>
-1. <span data-ttu-id="7e732-131">Rozbalte část Zmocnění k přímému debetu.</span><span class="sxs-lookup"><span data-stu-id="7e732-131">Expand the Direct debit mandates section.</span></span>
-2. <span data-ttu-id="7e732-132">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7e732-132">Click Add.</span></span>
-3. <span data-ttu-id="7e732-133">V poli Bankovní účet věřitele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7e732-133">In the Creditor bank account field, enter or select a value.</span></span>
-    * <span data-ttu-id="7e732-134">Vyberte například DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="7e732-134">For example, select DEMF OPER.</span></span>  
-4. <span data-ttu-id="7e732-135">Do pole Datum podpisu zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="7e732-135">In the Signature date field, enter a date.</span></span>
-5. <span data-ttu-id="7e732-136">Klepnutím na tlačítko Ano dojde k potvrzení aktualizace data.</span><span class="sxs-lookup"><span data-stu-id="7e732-136">Click Yes to confirm the date update.</span></span>
-6. <span data-ttu-id="7e732-137">V poli Místo podpisu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7e732-137">In the Signature location field, enter or select a value.</span></span>
-7. <span data-ttu-id="7e732-138">Do pole Očekávaný počet plateb zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="7e732-138">In the Expected number of payments field, enter a number.</span></span>
-8. <span data-ttu-id="7e732-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7e732-139">Click OK.</span></span>
-9. <span data-ttu-id="7e732-140">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="7e732-140">Click Save.</span></span>
+<span data-ttu-id="19387-107">Toto je čtvrtý z pěti postupů, které společně popisují proces platby odběratele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="19387-107">This is the fourth of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
+
+
+## <a name="set-up-a-customer-bank-account"></a><span data-ttu-id="19387-108">Nastavení bankovního účtu odběratele</span><span class="sxs-lookup"><span data-stu-id="19387-108">Set up a customer bank account</span></span>
+1. <span data-ttu-id="19387-109">Přejděte na Pohledávky > Zákazníci > Všichni odběratelé.</span><span class="sxs-lookup"><span data-stu-id="19387-109">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="19387-110">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="19387-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="19387-111">V poli Účet můžete například filtrovat pomocí hodnoty „DE-010“.</span><span class="sxs-lookup"><span data-stu-id="19387-111">For example, filter on the Account field with a value of 'DE-010 '.</span></span>
+3. <span data-ttu-id="19387-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="19387-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="19387-113">V podokně akcí klikněte na možnost Odběratel.</span><span class="sxs-lookup"><span data-stu-id="19387-113">On the Action Pane, click Customer.</span></span>
+5. <span data-ttu-id="19387-114">Klikněte na možnost Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="19387-114">Click Bank accounts.</span></span>
+6. <span data-ttu-id="19387-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="19387-115">Click New.</span></span>
+7. <span data-ttu-id="19387-116">Zadejte hodnotu do pole Bankovní účet.</span><span class="sxs-lookup"><span data-stu-id="19387-116">In the Bank account field, type a value.</span></span>
+8. <span data-ttu-id="19387-117">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="19387-117">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="19387-118">Zadejte například banka EUR.</span><span class="sxs-lookup"><span data-stu-id="19387-118">For example, enter 'EUR bank'.</span></span>  
+9. <span data-ttu-id="19387-119">V poli Bankovní skupiny zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="19387-119">In the Bank groups field, enter or select a value.</span></span>
+10. <span data-ttu-id="19387-120">Zadejte hodnotu do pole IBAN.</span><span class="sxs-lookup"><span data-stu-id="19387-120">In the IBAN field, type a value.</span></span>
+    * <span data-ttu-id="19387-121">Zadejte například DE36200400000628808808.</span><span class="sxs-lookup"><span data-stu-id="19387-121">For example, enter 'DE36200400000628808808'.</span></span>  
+11. <span data-ttu-id="19387-122">V poli Kód SWIFT zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="19387-122">In the SWIFT code field, type a value.</span></span>
+    * <span data-ttu-id="19387-123">Například zadejte COBADEFFXXX.</span><span class="sxs-lookup"><span data-stu-id="19387-123">For example: Enter 'COBADEFFXXX'.</span></span>  <span data-ttu-id="19387-124">Všimněte si, že pro spoustu formátů platby není povinný SWIFT\BIC, doporučujeme ho však pro bankovní účet zaregistrovat.</span><span class="sxs-lookup"><span data-stu-id="19387-124">Please note that SWIFT \ BIC is not mandatory for many payment formats however it is recommended to have it registered for a bank account.</span></span>  
+12. <span data-ttu-id="19387-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="19387-125">Click Save.</span></span>
+13. <span data-ttu-id="19387-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="19387-126">Close the page.</span></span>
+14. <span data-ttu-id="19387-127">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="19387-127">Click Edit.</span></span>
+15. <span data-ttu-id="19387-128">Rozbalte položku Výchozí nastavení plateb.</span><span class="sxs-lookup"><span data-stu-id="19387-128">Expand the Payment defaults section.</span></span>
+16. <span data-ttu-id="19387-129">V poli Bankovní účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="19387-129">In the Bank account field, enter or select a value.</span></span>
+
+## <a name="add-a-direct-debit-mandate"></a><span data-ttu-id="19387-130">Přidání zmocnění k přímému debetu</span><span class="sxs-lookup"><span data-stu-id="19387-130">Add a direct debit mandate</span></span>
+1. <span data-ttu-id="19387-131">Rozbalte část Zmocnění k přímému debetu.</span><span class="sxs-lookup"><span data-stu-id="19387-131">Expand the Direct debit mandates section.</span></span>
+2. <span data-ttu-id="19387-132">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="19387-132">Click Add.</span></span>
+3. <span data-ttu-id="19387-133">V poli Bankovní účet věřitele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="19387-133">In the Creditor bank account field, enter or select a value.</span></span>
+    * <span data-ttu-id="19387-134">Vyberte například DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="19387-134">For example, select DEMF OPER.</span></span>  
+4. <span data-ttu-id="19387-135">Do pole Datum podpisu zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="19387-135">In the Signature date field, enter a date.</span></span>
+5. <span data-ttu-id="19387-136">Klepnutím na tlačítko Ano dojde k potvrzení aktualizace data.</span><span class="sxs-lookup"><span data-stu-id="19387-136">Click Yes to confirm the date update.</span></span>
+6. <span data-ttu-id="19387-137">V poli Místo podpisu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="19387-137">In the Signature location field, enter or select a value.</span></span>
+7. <span data-ttu-id="19387-138">Do pole Očekávaný počet plateb zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="19387-138">In the Expected number of payments field, enter a number.</span></span>
+8. <span data-ttu-id="19387-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="19387-139">Click OK.</span></span>
+9. <span data-ttu-id="19387-140">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="19387-140">Click Save.</span></span>
 
