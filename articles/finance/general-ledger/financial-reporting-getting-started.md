@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 24d57982981ca7b72e43c086ace381e420acb06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672437"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975679"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
@@ -48,6 +47,8 @@ Chcete-li vytvořit a generovat finanční sestavy pro právnickou osobu, nastav
 -   Ledger
 -   Účtová osnova
 -   Měna
+-   Zaúčtování transakce alespoň do jednoho účtu
+-   Hlavní účet je uveden ve sloupci Vybrané v umístění **Hlavní kniha > Nastavení hlavní knihy > Nastavení finančního výkaznictví**
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Poskytnutí bezpečnostního přístupu k Financial Reporting
 Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení. Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.
@@ -173,6 +174,3 @@ Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Repor
 ## <a name="additional-resources"></a>Další prostředky
 - [Zobrazit finanční sestavy](view-financial-reports.md)
 - [Definice organizačního stromu ve finančních sestavách](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

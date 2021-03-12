@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f351da832f8fa62935d09c6ce6ede277971dbbbc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 244cf7337ec856f7517a3c0c3e055a90ab65b13f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423597"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973928"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Nastavení omezení přepravy pro položku
 
@@ -44,6 +43,3 @@ Tento postup nastaví omezení přepravy a zabrání přepravě vybrané položk
 10. Klikněte na položku Uložit.
 11. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

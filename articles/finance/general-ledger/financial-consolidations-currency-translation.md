@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441274"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975757"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -125,7 +124,7 @@ Můžete podle potřeby nastavit datum, kdy pravidlo eliminace nabude platnosti,
 
 Po definování základních vlastností zvolte **Řádky** pro definování skutečných pravidel zpracování. Existují dvě možnosti pro eliminace: eliminace změny čisté částky nebo určení pevné částky.
 
-Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*). Například hodnota **1\*** zvolí jako zdroj dat pro přidělení všechny účty začínající číslem **1**.
+Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*). Například hodnota **1\**_ zvolí jako zdroj dat pro přidělení všechny účty začínající číslem _* 1**.
 
 Po výběru zdrojových účtů použijte pole **Specifikace účtu** pro určení účtu, který se používá z cílové společnosti. Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný ve zdrojovém účtu. Vyberete-li možnost **Definováno uživatelem**, je nutné zadat cílový účet.
 
@@ -182,6 +181,3 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční v
 
 ## <a name="generating-consolidated-financial-statements"></a>Generování konsolidovaných finančních výkazů
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

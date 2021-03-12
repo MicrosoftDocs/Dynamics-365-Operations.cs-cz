@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f11edc15821faad84485d5b81e4a9ded0b7e974
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bfd96fcae78fd0fe383781112c17c7a3b5ea1d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423599"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974003"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Nastavení automatického odsouhlasení dopravného
 
@@ -72,6 +71,3 @@ Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravn
 11. V poli Kód důvodu nedoplatku zadejte nebo vyberte hodnotu.
 12. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

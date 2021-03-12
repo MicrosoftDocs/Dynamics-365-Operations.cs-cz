@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 273063
 ms.search.region: Czech Republic
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 09a4f68d933aa2fc00e53cd3957b436fbe5d4ef2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2b0ba2c4db1a4cb80560fc7fd42f6a9e42f4f21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407606"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975354"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
@@ -80,6 +79,3 @@ V poli **Kód důvodu pro platební slevy** vyberte výchozí kód důvodu pro o
 Dobropisy pro hotovostní slevy se automaticky zaúčtují při vyrovnání otevřených transakcí odběratele (faktury odběratele a platbu odběratele). Při zaúčtování dobropisů pro hotovostní slevy jsou zahrnuty kódy důvodů, které nastavíte v parametrech pohledávek, a odkaz na původní fakturu.
 Dobropisy pro platební slevy jsou číslovány podle číselné řady nastavené pro dobropisy. Výtisk dokumentu je nazván **Opravný dokument daně**. Obsahuje původní číslo faktury, základ a částku DPH a důvod, proč byla vytištěna oprava.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

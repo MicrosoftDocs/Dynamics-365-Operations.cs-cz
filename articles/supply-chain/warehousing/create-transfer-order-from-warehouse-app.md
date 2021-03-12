@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4be9f8bab55f28fa88cb87aef32ab599056c1831
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423596"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973853"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
@@ -334,6 +333,3 @@ Převodní příkazy se vytváří bez použití funkce **Řízení data dodán�
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Můžu použít registrační značku se zápornými fyzickými zásobami na skladě?
 
 Tato funkce podporuje pouze kladná fyzická množství na skladě. Před přiřazením registračních značek k převodnímu příkazu se ujistěte, že máte kladná fyzická množství na skladě ve skladu a v úrovni stavu zásob.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

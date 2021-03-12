@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423617"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974803"
 ---
 # <a name="create-sales-orders"></a>Vytvářet prodejní objednávky
 
@@ -68,6 +67,3 @@ Produkty prodané vaší organizací mohou nabízet více variant rozlišených 
     Stránka **Součty** zobrazí podrobnosti o celé objednávce. Jedná se o mezisoučtu částkou, která představuje součet všech čistých částek na řádku upravených pro případné řádkové slevy, celkovou částku faktury, která tvoří mezisoučet upravený pro případnou slevu na úrovni objednávky, náklady, DPH, situaci limitního úvěru zákazníka apod. Částka faktury je částka, která se zobrazí na dokladu pro fakturu odběratele.  
     
 3. Vyberte **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

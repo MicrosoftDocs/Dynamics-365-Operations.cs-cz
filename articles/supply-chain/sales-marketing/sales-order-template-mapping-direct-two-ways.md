@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424007"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974978"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma se věnuje šablonám a základním úlohám, které se používají ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Dynamics 365 Sales a Dynamics 365 Supply Chain Management.
 
@@ -64,8 +65,8 @@ Následující úlohy synchronizace jsou vyžadovány před synchronizací záhl
 
 | Správa dodavatelsko-odběratelského řetězce  | Prodej.             |
 |-------------------------|-------------------|
-| Záhlaví prodejní objednávky CDS | SalesOrders       |
-| Řádky prodejní objednávky CDS   | SalesOrderDetails |
+| Záhlaví prodejní objednávky Dataverse | SalesOrders       |
+| Řádky prodejní objednávky Dataverse   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Tok entity
 
@@ -75,7 +76,7 @@ Není nutné vytvoření objednávek v aplikaci Sales. Místo toho můžete vytv
 
 V aplikaci Supply Chain Management pomáhají filtry v šabloně zajistit, aby byly v synchronizaci zahrnuty pouze příslušné prodejní objednávky:
 
-- Objednávající a fakturující odběratel na prodejní objednávce musí pocházet z aplikace Sales, aby byli zahrnuti do procesu synchronizace. V aplikaci Supply Chain Management se používají pole **OrderingCustomerIsExternallyMaintained** a **InvoiceCustomerIsExternallyMaintained** k filtrování prodejních objednávek z datových entit.
+- Objednávající a fakturující odběratel na prodejní objednávce musí pocházet z aplikace Sales, aby byli zahrnuti do procesu synchronizace. V aplikaci Supply Chain Management se používají sloupce **OrderingCustomerIsExternallyMaintained** a **InvoiceCustomerIsExternallyMaintained** k filtrování prodejních objednávek z datových tabulek.
 - Prodejní objednávka musí být v aplikaci Supply Chain Management potvrzena. Pouze potvrzené prodejní objednávky nebo prodejní objednávky s vyšším stavem zpracování, například stavem **Expedováno** nebo **Fakturováno**, budou synchronizovány do aplikace Sales.
 - Po vytvoření nebo úpravě prodejní objednávky musí být provedena v aplikaci Supply Chain Management dávková úloha **Vypočítat celkové tržby**. Pouze prodejní objednávky s vypočítanými celkovými tržbami budou synchronizovány do aplikace Sales.
 
@@ -103,10 +104,10 @@ Při synchronizaci řádku prodejní objednávky z aplikace Sales do aplikace Su
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Řešení Potenciální zákazník pro hotovost v aplikaci Sales
 
-Nová pole byla přidána do entity **Objednávka** a zobrazí na stránce:
+Nové sloupce byly přidána do tabulky **Objednávka** a zobrazí na stránce:
 
 - **Je externě spravováno** - Nastavte tuto možnost na **Ano**, když pořadí pochází z aplikace Supply Chain Management.
-- **Stav zpracování** - Toto pole ukazuje stav zpracování objednávky v aplikaci Supply Chain Management. K dispozici jsou následující hodnoty:
+- **Stav zpracování** - Tento sloupec ukazuje stav zpracování objednávky v aplikaci Supply Chain Management. K dispozici jsou následující hodnoty:
 
     - **Návrh** – Počáteční stav při vytvoření objednávky v aplikaci Sales. V aplikaci Sales lze upravit pouze objednávky s tímto stavem zpracování.
     - **Aktivní** – Stav po aktivaci objednávky v aplikaci Sales s použitím tlačítka **Aktivovat**.
@@ -141,7 +142,7 @@ Před synchronizací prodejních objednávek je důležité aktualizovat násled
 - Přejděte na **Nastavení** &gt; **Správa** &gt; **Nastavení systému** &gt; **Prodej** a ujistěte se, že se používají následující nastavení:
 
     - Možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
-    - Pole **Metoda výpočtu slevy** je nastaveno na **Položka řádku**.
+    - Sloupec **Metoda výpočtu slevy** je nastaven na **Položka řádku**.
 
 ### <a name="setup-in-supply-chain-management"></a>Nastavení v Supply Chain Management
 
@@ -151,10 +152,10 @@ Pokud také používáte integraci s pracovními příkazy, je nutné nastavit p
 
 1. Přejděte na **Prodej a marketing** \> **Nastavení** \> **Prodejní objednávky** \> **Původ prodeje**.
 2. Vyberte **nový** pro vytvoření nového původu prodeje.
-3. V poli **Původ prodeje** zadejte název pro původ prodeje, jako je například **SalesOrder**.
-4. Do pole **Popis** zadejte popis, například **Prodejní objednávka z obchodního oddělení**.
+3. Ve sloupci **Původ prodeje** zadejte název pro původ prodeje, jako je například **SalesOrder**.
+4. Do sloupce **Popis** zadejte popis, například **Prodejní objednávka z obchodního oddělení**.
 5. Zaškrtněte políčko **Přiřazení typů původu**.
-6. Nastavte hodnotu v poli **Typ původu prodeje** na **Integrace prodejní objednávky**.
+6. Nastavte hodnotu ve sloupci **Typ původu prodeje** na **Integrace prodejní objednávky**.
 7. Zvolte **Uložit**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Nastavení v prodejních objednávkách (Sales do Supply Chain Management) - Přímo v projektu integrace dat
@@ -181,12 +182,12 @@ Pokud také používáte integraci s pracovními příkazy, je nutné nastavit p
 ## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 
 > [!NOTE]
-> Pole **Platební podmínky**, **Dopravní podmínky**, **Dodací podmínky**, **způsob dopravy** a **způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
+> Sloupce **Platební podmínky**, **Dopravní podmínky**, **Dodací podmínky**, **způsob dopravy** a **způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tyto sloupce mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je tabulka synchronizována.
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 > [!NOTE]
-> Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management nebo naopak.
+> Mapování ukazuje, jaké informace o sloupci budou synchronizovány z aplikace Sales do aplikace Supply Chain Management nebo naopak.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Prodejní objednávky (Supply Chain Management do Sales): OrderHeader
 
@@ -207,6 +208,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ## <a name="related-topics"></a>Související témata
 
 [zpeněžení potenciálního zákazníka](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
