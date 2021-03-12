@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423580"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996319"
 ---
 # <a name="confirm-and-transfer"></a>Potvrdit a převést
 
@@ -230,6 +229,3 @@ O aktualizaci transakčních vztahů se můžete ujistit také takto:
 - Možnost **Rozdělit množství do nového nákladu** funguje také tehdy, když jsou některá ze zbývajících záhlaví ve stavu *V procesu*. Funkci proto můžete používat, i když pracovníci již provádějí příkazy k výdeji.
 - Pokud vyberete možnost **Stornovat nedodané množství**, zatímco ještě existuje práce ve stavu *Otevřená* nebo *Probíhající*, zobrazí se následující chybová zpráva: „Nelze stornovat zbývající množství pro naložení. Existuje práce pro nakládání.“
 - Pokud vyberete možnost **Stornovat nedodané množství**, když již nezbývá žádná práce, ale existují neexpedované řádky nákladu, zobrazí se následující chybová zpráva: „Zásilku nelze načíst, protože množství u položky překračuje procento definované pro dodávku.“ Chcete-li se této chybě vyhnout, můžete nastavit procentuální hodnotu **V dodávce** na nerealizovaném řádku nákladu na 100 procent. Nerealizované řádky nebudou přesunuty do nového nákladu, ale aktuální náklad bude potvrzen jako „v dodávce“. V takovém případě nebudete moci původní objednávku znovu uvolnit. Proto bude třeba věc vyřešit jiným postupem.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528286"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996769"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
@@ -39,11 +38,11 @@ Video [POzvěte zákazníky k registraci a používání vašeho zákaznického 
 
 ## <a name="prerequisite-setup"></a>Nastavení předpokladů
 
-Kontakty v portálech Power Apps jsou uloženy jako záznamy v entitě **Kontakty** v Common Data Service. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
+Kontakty v portálech Power Apps jsou uloženy jako záznamy v tabulce **Kontakty** v Microsoft Dataverse. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
 
 ![Systémový diagram pro kontakty zákaznického portálu](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
 
-Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování entit **Kontakt** dvojitým zápisem.
+Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování tabulky **Kontakt** dvojitým zápisem.
 
 ## <a name="the-invitation-process"></a>Proces pozvání
 
@@ -58,15 +57,15 @@ Po vytvoření kontaktu byste jej měli vidět v Supply Chain Management.
 
 Další informace viz [Nakonfigurujte kontakt pro použití na portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) v dokumentaci portálů Power Apps.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Dodávané webové role a oprávnění entit
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Dodávané webové role a oprávnění tabulky
 
-Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [oprávněními entit](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
+Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [oprávněními tabulky](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
 
 ### <a name="out-of-box-web-roles"></a>Dodávané webové role
 
 Tato část popisuje webové role dodávané se zákaznickým portálem.
 
-Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění entity pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
+Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění tabulky pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
 
 #### <a name="administrator"></a>Správce
 
@@ -96,6 +95,3 @@ Následující tabulka ukazuje, které prodejní objednávky uživatelé v každ
 
 > [!NOTE]
 > I když Sam a Jane jsou kontakty, které pracují pro zákazníka X, vidí pouze objednávky, které sami zadali, a nic jiného. Ačkoli May má v systému objednávku, nemůže ji vidět na zákaznickém portálu, protože je neoprávněným uživatelem. (Dále musí zadat objednávku prostřednictvím jiného kanálu, než je zákaznický portál.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

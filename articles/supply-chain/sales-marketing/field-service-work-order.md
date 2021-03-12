@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528916"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998496"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 
@@ -62,13 +61,13 @@ Následující úlohy synchronizace jsou vyžadovány před synchronizací záhl
 
 | **Field Service** | **Správa dodavatelsko-odběratelského řetězce** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | Záhlaví prodejní objednávky CDS |
-| msdyn_workorderservices | Řádky prodejní objednávky CDS   |
-| msdyn_workorderproducts | Řádky prodejní objednávky CDS   |
+| msdyn_workorders        | Záhlaví prodejní objednávky Dataverse |
+| msdyn_workorderservices | Řádky prodejní objednávky Dataverse   |
+| msdyn_workorderproducts | Řádky prodejní objednávky Dataverse   |
 
 ## <a name="entity-flow"></a>Tok entity
 
-Objednávky práce se vytvářejí v aplikaci Field Service. V případě, že objednávky práce zahrnují pouze externě spravované produkty a hodnota **Stav pracovní objednávky** se liší od hodnoty **Neplánované otevřené** a **Uzavřené – zrušené**, lze objednávky práce synchronizovat s Supply Chain Management přes projekt Integrace dat Common Data Service. Aktualizace u pracovních příkazů budou synchronizovány jako prodejní objednávky v modulu Supply Chain Management. Mezi tyto aktualizace patří informace o typu původu a stavu.
+Objednávky práce se vytvářejí v aplikaci Field Service. V případě, že objednávky práce zahrnují pouze externě spravované produkty a hodnota **Stav pracovní objednávky** se liší od hodnoty **Neplánované otevřené** a **Uzavřené – zrušené**, lze objednávky práce synchronizovat s Supply Chain Management přes projekt Integrace dat Microsoft Dataverse. Aktualizace u pracovních příkazů budou synchronizovány jako prodejní objednávky v modulu Supply Chain Management. Mezi tyto aktualizace patří informace o typu původu a stavu.
 
 ## <a name="estimated-versus-used"></a>Odhadované versus používané
 
@@ -273,6 +272,3 @@ Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus n
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004) nebo (msdyn_allocated ne true))
 
 [![Mapování šablony v integraci dat](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

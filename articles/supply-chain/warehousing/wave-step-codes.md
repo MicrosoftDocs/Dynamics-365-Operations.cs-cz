@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 08b40c076e288592f6a4cd628b9acd8a2eaedb7e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424222"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998396"
 ---
 # <a name="wave-step-codes"></a>Kódy kroku vlny
 
@@ -93,6 +92,3 @@ Následující postup vám pomůže zaručit, že vytvořená šablona doplněn�
 6. V poli **Kód kroku vlny** vyberte kód kroku vlny, který jste vybrali v šabloně doplnění.
 
 Tyto kroky provedete pro každou právnickou osobu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

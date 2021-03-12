@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: 862987b8ccdc4272bdd404e78391ad447bc290b3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4424254"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996344"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Nastavte a použijte tisk popisků vlny
 
@@ -932,6 +931,3 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 - Historie popisků vlny
 
 U většiny těchto stránek najdete příslušnou funkci výběrem **Vlnové štítky** ve skupině **Související informace** na kartě **Zásilky** v podokně akcí.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

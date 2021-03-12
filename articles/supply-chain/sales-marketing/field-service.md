@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1b1f88c77ed891839adb57c2ba5e2f72f35fda6d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528892"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998471"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Přehled integrace s Microsoft Dynamics 365 Field Service
 
@@ -32,14 +31,14 @@ ms.locfileid: "4528892"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Supply Chain Management umožňuje synchronizaci obchodních procesů mezi aplikacemi Dynamics 365 Supply Chain Management a Dynamics 365 Field Service. Scénáře integrace jsou konfigurovány s použitím rozsáhlých šablon integrátoru dat a Common Data Service pro umožnění synchronizace obchodních procesů.
-Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní pole a také entity, mohou být mapovány pro účely úpravy integrace a plnění konkrétních obchodních potřeb. 
+Supply Chain Management umožňuje synchronizaci obchodních procesů mezi aplikacemi Dynamics 365 Supply Chain Management a Dynamics 365 Field Service. Scénáře integrace jsou konfigurovány s použitím rozsáhlých šablon integrátoru dat a Microsoft Dataverse pro umožnění synchronizace obchodních procesů.
+Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní sloupce a tabulky, mohou být mapovány pro účely úpravy integrace a plnění konkrétních obchodních potřeb. 
 
 Integrace Field Service staví na současné funkci potenciálního zákazníka k hotovosti.
 
 ![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/field-service-integration.png)
 
-První fáze integrace mezi Field Service a Supply Chain Management se zaměřuje na povolení pracovních příkazů a smluv ve Field Service pro fakturaci v Supply Chain Management. Podporovaný tok začíná ve Field Service, kde jsou informace z pracovních příkazů synchronizovány s Supply Chain Management jako prodejní objednávky. V Supply Chain Management jsou prodejní objednávky fakturovány za účelem generování fakturačních dokumentů. Kromě toho jsou informace z faktur smluv ve službě Field Service synchronizovány do aplikace Supply Chain Management. Integrátor dat Microsoft Dynamics 365 synchronizuje data pomocí upravitelné projektů. Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní pole a také entity, mohou být mapovány pro účely úpravy integrace a plnění konkrétních požadavků.
+První fáze integrace mezi Field Service a Supply Chain Management se zaměřuje na povolení pracovních příkazů a smluv ve Field Service pro fakturaci v Supply Chain Management. Podporovaný tok začíná ve Field Service, kde jsou informace z pracovních příkazů synchronizovány s Supply Chain Management jako prodejní objednávky. V Supply Chain Management jsou prodejní objednávky fakturovány za účelem generování fakturačních dokumentů. Kromě toho jsou informace z faktur smluv ve službě Field Service synchronizovány do aplikace Supply Chain Management. Integrátor dat Microsoft Dynamics 365 synchronizuje data pomocí upravitelné projektů. Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní sloupce a také tabulky, mohou být mapovány pro účely úpravy integrace a plnění konkrétních požadavků.
 
 První fáze integrace mezi Field Service a Finance and Supply Chain Management umožňuje synchronizaci následujících položek:
 
@@ -85,6 +84,3 @@ Chcete-li použít řešení integrace Field Service, je nutné nainstalovat ná
 - Field Service (verze 8.2.0.286) nebo novější na Dynamics 365 9.1.x - vydána v listopadu 2018
 - Řešení Prospect to Cash (P2C) pro Dynamics 365, verze 1.15.0.1 nebo novější. Řešení je k dispozici ke stažení z [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Řešení 'Field Service Integration, Project and Inventory' pro Dynamics 365, verze 2.0.0.0 nebo novější. Řešení je k dispozici ke stažení z [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
