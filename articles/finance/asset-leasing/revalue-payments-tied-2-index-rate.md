@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 83684afbd5e11b890a59bc1469ddefffd1777c4e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 2cbe54ad92aff2f8a85e47301635fe4b6819e9a7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441348"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012054"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Přecenění leasingových splátek vázaných na indexovou sazbu
 
@@ -68,6 +67,3 @@ Chcete-li zobrazit účinky procesu přecenění leasingu na leasingy IFRS 16, o
 Můžete si prohlédnout nově vygenerovaný plán plateb, který začíná datem přecenění, a zobrazit celkovou aktualizovanou částku platby. Byl také vytvořen nový plán amortizace závazků z leasingu a plán odpisů aktiv, aby odrážely upravený splátkový kalendář.
 
 Položka deníku automaticky zaúčtovala položku deníku úprav na účet kvůli změnám v leasingových splátkách, které souvisejí s přeceněním indexu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

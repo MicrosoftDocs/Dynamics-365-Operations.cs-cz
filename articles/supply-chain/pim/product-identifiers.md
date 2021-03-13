@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529179"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011358"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu
 
@@ -44,7 +43,7 @@ V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamic
 
 Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
 
-Pokud použijete Common Data Service, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Common Data Service. Varianty produktu jsou synchronizovány do Common Data Service jako odlišné produkty.
+Pokud použijete Microsoft Dataverse, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Microsoft Dataverse. Varianty produktu jsou synchronizovány do Dataverse jako odlišné produkty.
 
 ## <a name="item-number-and-product-dimensions"></a>Dimenze čísla položky a produktů
 
@@ -167,7 +166,7 @@ Následující tabulka obsahuje přehled výsledků importu a ručního vytvoře
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifikátor entity produktu (exportovat všechny identifikátory produktu)
 
-Model identifikátoru entity produktu byl vytvořen proto, aby bylo možné zřídit verzi 1.0 CDS se všemi identifikátory, které se používají pro účely odkazování na produkt. Aby ye tato úloha zjednodušila, budou všechny identifikátory agregovány do jedné globální tabulky identifikátoru, aby je bylo možné exportovat jako jeden model. Všimněte si, že tato verze systému CDS nepoužívá model identifikátorů produktu. Proto má entita **Entita identifikátoru Common Data Service entity produktu** a tento proces omezené praktické použití a v budoucnu pravděpodobně dojde k jejich změně.
+Model identifikátoru entity produktu byl vytvořen proto, aby bylo možné zřídit verzi 1.0 Dataverse se všemi identifikátory, které se používají pro účely odkazování na produkt. Aby ye tato úloha zjednodušila, budou všechny identifikátory agregovány do jedné globální tabulky identifikátoru, aby je bylo možné exportovat jako jeden model. Všimněte si, že tato verze systému Dataverse nepoužívá model identifikátorů produktu. Proto má entita **Entita identifikátoru Common Data Service entity produktu** a tento proces omezené praktické použití a v budoucnu pravděpodobně dojde k jejich změně.
 
 Tabulka identifikátorů produktu je globální tabulka, která se vytváří ze všech referenčních tabulek hlavní právnické osoby prostřednictvím opakované dávkové úlohy. Je nutné vybrat právnickou osobu a hierarchii kategorií produktu jako definici rozsahu hlavního globálního produktu. Generování tabulky globálních identifikátorů produktu je omezeno na produkty, které byly vydány pro vybranou právnickou osobu, a produkty, které jsou součástí hierarchie produktů, která je vybrána pro roli **Common Data Service** v produktu hierarchie kategorií.
 
@@ -175,7 +174,7 @@ Tento proces předpokládá, že hlavní data produktů jsou primárně udržov�
 
 Takto se konfiguruje prostředí:
 
-1. Vybrat hierarchii kategorie pro CDS. Na stránce **Přidružení role hierarchie kategorií**, pokud není přidružena žádná hierarchie k roli **Common Data Service**, je nutné vytvořit nové přidružení. Vyberte roli **Common Data Service** a potom přidružte hierarchie kategorií představující nabídku produktů, které mají být synchronizovány do CDS.
+1. Vybrat hierarchii kategorie pro Dataverse. Na stránce **Přidružení role hierarchie kategorií**, pokud není přidružena žádná hierarchie k roli **Common Data Service**, je nutné vytvořit nové přidružení. Vyberte roli **Common Data Service** a potom přidružte hierarchie kategorií představující nabídku produktů, které mají být synchronizovány do Dataverse.
 2. Vyberte právnickou osobu pro globální hlavní data produktu. Na stránce **parametry modulu řízení informací o produktu** na kartě **Atributy produktu** vyberte hlavní společnost, kde jsou primárně zachovány identifikátory produktů a položek.
 3. Definování typů kódů identifikátorů, které mají být exportovány. Přejděte na **řízení informací o produktech** &gt; **nastavení** &gt; **Kódy identifikátoru produktu**. Pro vygenerování typů kódů identifikátoru vyberte **Generovat kódy**. Pro každý typ identifikace, která je nalezena ve vybrané právnické osobě je generována položka typu kódu.
 
@@ -190,6 +189,3 @@ Nyní můžete použít datové entity **Entita identifikátoru Common Data Serv
 ## <a name="related-topic"></a>Související téma
 
 [Vyhledávání produktů a variant produktu během zadávání objednávky](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

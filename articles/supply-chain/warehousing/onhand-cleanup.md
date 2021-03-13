@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424198"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014476"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Úloha vyčištění položek zásob na skladě v řízení skladu
 
@@ -50,7 +49,12 @@ Při spuštění úlohy má velikost potvrzení 100. Jinými slovy, bude se sna�
 
 ## <a name="possible-user-impact"></a>Možný dopad na uživatele
 
-Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. (Tato funkce kontroluje stav **Množství \<\> 0** v nastavení **Zobrazení rozměrů**, když uživatelé zobrazují informace na skladě.) Nicméně zlepšení výkonu, které poskytuje úloha vyčištění, by mělo tuto malou ztrátu funkčnosti nahradit.
+Uživatelé mohou být ovlivněni, pokud úloha pro vyčištění položek odstraní všechny záznamy pro danou úroveň (například úroveň registrační značky). V tomto případě nemusí být funkce pro zjištění, zda byly zásoby dříve k dispozici na registrační značce, podle očekávání funkční, protože příslušné položky na skladě již nejsou k dispozici. To lze například zažít v následujících situacích:
+
+- V **seznamu na skladě**, když uživatel zruší výběr podmínky **Množství \<\> 0** nebo vybere podmínku **Uzavřené transakce** v nastavení **Zobrazení dimenze**.
+- V sestavě **Dimenze fyzických zásob podle dimenze zásob** pro minulá období, když uživatel nastaví parametr **K datu**.
+
+Zlepšení výkonu, které poskytuje úloha vyčištění, by však mělo tyto malé ztráty funkčnosti vyrovnat.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Zpřístupněte nastavení Maximální doba provedení
 
@@ -58,6 +62,3 @@ Ve výchozím nastavení není nastavení **Maximální doba provedení** dostup
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Maximální doba provedení pro úlohu čištění položek na skladě v rámci správy skladu*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

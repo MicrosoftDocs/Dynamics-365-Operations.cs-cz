@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3720945823cf127f776a9ea6a6ad75a72ceec00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012334"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push
 
@@ -53,6 +52,3 @@ Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer´s push k 
 19. Klepněte na Vytvořit objednávku.
 20. Klepněte na tlačítko Ano.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

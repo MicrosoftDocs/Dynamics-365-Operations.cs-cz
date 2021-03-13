@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bd85d9cd2d7273ad6e05d794a96e4d6a8d7c526
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423614"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010765"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Vyhledání platných cen a slev
 
@@ -60,6 +59,3 @@ Ověřte, že pole Účet odběratele obsahuje číslo odběratele US-001.
     * Jsou zde dvě smlouvy řádkových slev pro produkt T0012, kde je zadána sleva 5 procent pro množství na řádku objednávky od 1 do 10 a 7% sleva na množství objednávky vyšší než 10. Všimněte si, že slevy platí pro skupinu produktů, v tomto příkladu to je kód skupiny 01, do které produkt T0012 patří.  
 4. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

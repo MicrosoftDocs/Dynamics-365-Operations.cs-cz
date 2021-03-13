@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74e9825dbd4ebe05b2efb590f491b3b54e68ec5a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423498"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010465"
 ---
 # <a name="service-orders"></a>Servisní zakázky   
 
@@ -89,6 +88,3 @@ Ve druhé polovině roku zákazník dospěje k závěru, že servisních zásah�
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

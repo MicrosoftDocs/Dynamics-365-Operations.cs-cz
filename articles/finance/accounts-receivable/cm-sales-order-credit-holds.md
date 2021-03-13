@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441029"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012256"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Blokování úvěru pro prodejní objednávky
 [!include [banner](../includes/banner.md)]
@@ -265,6 +264,3 @@ Prodejní objednávky, které mají vynucený důvod blokování, nelze automati
 Správu úvěru lze aktuálně použít pouze pro prodejní objednávky. Volné faktury, místo prodejních objednávek a objednávky kontaktního střediska použijí dočasné limity úvěru a pojištění/záruk, které přidáte k úpravě limitu úvěru. Nebudou používat pravidla blokování a v případě potíží s limitem úvěru nebudou uloženy do seznamu blokování.
 
 Neexistuje podpora pro projektové faktury ve správě úvěrů.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
