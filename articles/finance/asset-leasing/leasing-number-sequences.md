@@ -11,28 +11,28 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 66b48723bbff7f176ef192924e8ea2b96641ba56
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: c21b7a55ff611a5d3ab745f3af5e2e855240531b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128948"
 ---
-# <a name="assign-number-sequences"></a><span data-ttu-id="55340-104">Přiřazení číselných řad</span><span class="sxs-lookup"><span data-stu-id="55340-104">Assign number sequences</span></span>
+# <a name="assign-number-sequences"></a><span data-ttu-id="6d559-104">Přiřazení číselných řad</span><span class="sxs-lookup"><span data-stu-id="6d559-104">Assign number sequences</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="55340-105">Toto téma vysvětluje, jak vytvořit číselné řady pro ID leasingu.</span><span class="sxs-lookup"><span data-stu-id="55340-105">This topic explains how to create number sequences for lease IDs.</span></span> <span data-ttu-id="55340-106">Vysvětluje také, jak vytvořit jedinečná ID, která se používají v procesu přecenění indexu.</span><span class="sxs-lookup"><span data-stu-id="55340-106">It also explains how to create unique IDs that are used in the index revaluation process.</span></span>
+<span data-ttu-id="6d559-105">Toto téma vysvětluje, jak vytvořit číselné řady pro ID leasingu.</span><span class="sxs-lookup"><span data-stu-id="6d559-105">This topic explains how to create number sequences for lease IDs.</span></span> <span data-ttu-id="6d559-106">Vysvětluje také, jak vytvořit jedinečná ID, která se používají v procesu přecenění indexu.</span><span class="sxs-lookup"><span data-stu-id="6d559-106">It also explains how to create unique IDs that are used in the index revaluation process.</span></span>
 
-1. <span data-ttu-id="55340-107">Přejděte do nabídky **Leasing majetku \> Nastavení \> Parametry leasingu majetku**.</span><span class="sxs-lookup"><span data-stu-id="55340-107">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
-2. <span data-ttu-id="55340-108">Vyberte postranní panel **Číselné řady**.</span><span class="sxs-lookup"><span data-stu-id="55340-108">Select the **Number sequences** side tab.</span></span>
-3. <span data-ttu-id="55340-109">Vyberte **Číselné řady** v postranním panelu.</span><span class="sxs-lookup"><span data-stu-id="55340-109">Select **Number sequences** in the side bar.</span></span>
-4. <span data-ttu-id="55340-110">Vyberte číselnou řadu pro odkaz **ID leasingu**.</span><span class="sxs-lookup"><span data-stu-id="55340-110">Select the number sequence for the **Lease ID** reference.</span></span> <span data-ttu-id="55340-111">Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý leasing.</span><span class="sxs-lookup"><span data-stu-id="55340-111">This number sequence will be used to generate the unique identifier for each lease.</span></span>
-5. <span data-ttu-id="55340-112">Vyberte číselnou řadu pro odkaz **ID procesu**.</span><span class="sxs-lookup"><span data-stu-id="55340-112">Select the number sequence for the **Process ID** reference.</span></span> <span data-ttu-id="55340-113">Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý proces přecenění indexu.</span><span class="sxs-lookup"><span data-stu-id="55340-113">This number sequence will be used to generate the unique identifier for each index revaluation process.</span></span>
+1. <span data-ttu-id="6d559-107">Přejděte do nabídky **Leasing majetku \> Nastavení \> Parametry leasingu majetku**.</span><span class="sxs-lookup"><span data-stu-id="6d559-107">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
+2. <span data-ttu-id="6d559-108">Vyberte postranní panel **Číselné řady**.</span><span class="sxs-lookup"><span data-stu-id="6d559-108">Select the **Number sequences** side tab.</span></span>
+3. <span data-ttu-id="6d559-109">Vyberte **Číselné řady** v postranním panelu.</span><span class="sxs-lookup"><span data-stu-id="6d559-109">Select **Number sequences** in the side bar.</span></span>
+4. <span data-ttu-id="6d559-110">Vyberte číselnou řadu pro odkaz **ID leasingu**.</span><span class="sxs-lookup"><span data-stu-id="6d559-110">Select the number sequence for the **Lease ID** reference.</span></span> <span data-ttu-id="6d559-111">Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý leasing.</span><span class="sxs-lookup"><span data-stu-id="6d559-111">This number sequence will be used to generate the unique identifier for each lease.</span></span>
+5. <span data-ttu-id="6d559-112">Vyberte číselnou řadu pro odkaz **ID procesu**.</span><span class="sxs-lookup"><span data-stu-id="6d559-112">Select the number sequence for the **Process ID** reference.</span></span> <span data-ttu-id="6d559-113">Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý proces přecenění indexu.</span><span class="sxs-lookup"><span data-stu-id="6d559-113">This number sequence will be used to generate the unique identifier for each index revaluation process.</span></span>
+6. <span data-ttu-id="6d559-114">Vyberte číselnou řadu pro odkaz **ID návrhu na ukončení**.</span><span class="sxs-lookup"><span data-stu-id="6d559-114">Select the number sequence for the **Termination Proposal ID** reference.</span></span> <span data-ttu-id="6d559-115">Tato číselná posloupnost se použije ke generování jedinečného identifikátoru pro každý návrh na ukončení.</span><span class="sxs-lookup"><span data-stu-id="6d559-115">This number sequence will be used to generate the unique identifier for each termination proposal.</span></span>
