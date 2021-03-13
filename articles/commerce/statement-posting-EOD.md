@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e76a5ad741dca5831b609a5b991aa70e3753c621
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410854"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009636"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
@@ -174,6 +173,3 @@ Ostatní backendová vylepšení, která uživatel vidí byla provedena u funkce
 
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **aktualizace zásob** v poli **úroveň podrobností** vyberte **Souhrn**.
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **Agregace** nastavte možnost **transakce dokladu** na **Ano**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

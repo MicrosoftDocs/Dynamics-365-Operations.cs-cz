@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: feee6b348ac1870295a894ad988278b23a3f30a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 156cd4ec3a1d1a08ba43832a93fde0d4f22ac2ed
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423959"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007634"
 ---
 # <a name="hazardous-materials"></a>Nebezpečné materiály
 
@@ -61,6 +60,3 @@ Chcete-li zahájit konfiguraci těchto informací, vytvořte nařízení, které
 ## <a name="warehouse-management"></a>Řízení skladu
 
 Při přípravě dodávky lze vytisknout několik nových sestav. Tyto sestavy využívají informace, které nastavíte v modulu Správa informací o produktech.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

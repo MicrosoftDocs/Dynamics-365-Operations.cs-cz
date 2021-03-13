@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 801327dc54f6d4cfef7a9f062395e29846783e8f
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ae0eba6d397725cf425d9781a597d904e1958d44
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644938"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009381"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Použití externích dat v prognózách peněžních toků (náhled)
 
@@ -63,6 +62,3 @@ Kromě toho, pokud musíte přesunout data nastavení z jednoho prostředí do j
 
 #### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

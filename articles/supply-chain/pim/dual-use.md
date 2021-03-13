@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4623b6eaa18b65f0f61cb8c227115d59f3ff9c08
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424012"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007685"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 
@@ -108,6 +107,3 @@ Používáte stránku **Certifikáty dvojího použití** pro nastavení a sprá
     | Vytisknout na fakturu | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na fakturách, které jsou adresovány konkrétní zemi během zadaného časového období. |
     | Vytisknout na dodacím listu | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na dodacích listech, které jsou adresovány konkrétní zemi během zadaného časového období. |
     | Vytisknout na prodejní objednávku | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na prodejních objednávkách, které jsou adresovány konkrétní zemi během zadaného časového období. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

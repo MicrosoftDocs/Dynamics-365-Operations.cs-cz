@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14244ccfef69a8bff3390539ff7b851a8f5b5ec1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441147"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009561"
 ---
 # <a name="settle-remainder"></a>Vyrovnání zůstatku
 
@@ -70,6 +69,3 @@ Pro vyrovnání zbývající částky proveďte následující kroky:
 7)  Můžete také vytvořit deník plateb se zbývající částkou vyrovnání nebo ji zaúčtovat bez deníku. Vyberte **Ano** pro **Upravit v deníku** pro vytvoření deníku plateb. Budete moci upravit deník plateb, který vytvoříte.
 8)  Klikněte na **Vyrovnat zůstatek**. Pokud chcete vytvořit deník, tlačítko se změní na **Vytvořit deník**. Namísto toho klikněte na **Vytvořit deník**.
 9)  Jestliže jste vytvořili deník plateb, stránka deníku se otevře po klepnutí na tlačítko **Vyrovnání zůstatku**. Do deníku bude přidán řádek deníku se zbývající částkou vyrovnání a s účtem vyrovnání zůstatku jako protiúčtem. Pokud jste přidali odběratele nebo dodavatele, abyste mohli přesunout částku vyrovnání na jiného odběratele nebo dodavatele, do deníku bude přidán další řádek pro přesun částky vyrovnání danému odběrateli nebo dodavateli.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

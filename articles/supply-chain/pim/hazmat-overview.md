@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff285e7e8bcdd2a3197f0ccae569ac880b796028
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423566"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007584"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 
@@ -62,6 +61,3 @@ Další informace, jak nastavit předpisy a hodnoty pro nebezpečné materiály 
 ## <a name="warehouse-management"></a>Řízení skladu
 
 Když připravujete dodávku v Řízení skladu, můžete vytisknout několik nových sestav, které používají informace, které jste nastavili v Řízení informací o produktech. Další informace o dostupných sestavách a jejich použití najdete v části [Nebezpečné materiály – dotazy a sestavy](hazmat-reports.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

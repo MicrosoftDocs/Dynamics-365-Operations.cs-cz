@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423747"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007140"
 ---
 # <a name="formulas-and-formula-versions"></a>Receptury a verze receptury
 
@@ -71,6 +70,3 @@ Poměrná funkce je k dispozici pouze tehdy, když jsou všechny komponenty polo
 
 ## <a name="use-step-consumption"></a>Použití spotřeby kroku
 Spotřeba kroku eliminuje požadavek, kdy je nutné zadat množství suroviny na kartě **Řádek receptury**. Namísto toho je spotřeba kroku nakonfigurována tak, aby měla hodnoty **Od řady** a **Množství**. Je zvolena informace ze spotřeby kroku na záznam řady, který splňuje množství na dávkové objednávce. Spotřeba kroku je užitečná, když není poměr spotřeby lineární s ohledem na velikost dávkové objednávky a pouze navyšuje požadavek při dosažení určité prahové hodnoty množství. Chcete-li povolit tuto funkci pro novou recepturu, ve skupině **Výpočet spotřeby** změňte nastavení receptury pro použitelnou surovinu ze **Standardní** na **Krok**. Tuto metodu spotřeby určíte na kartě **nastavení** stránky **Řádek receptury**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

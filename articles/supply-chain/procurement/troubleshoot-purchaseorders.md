@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424236"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007484"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Řešení problému s nákupními objednávkami
 
@@ -132,7 +131,7 @@ Můžete prodloužit pouze období, pro které je dodavatel schválen. Platí n�
 
 Pro příklad scénáře, který je popsán v popisu problému, kde má záznam datum účinnosti *01/11/2018* a datum vypršení platnosti *Nikdy*, můžete importovat nový záznam, který má datum účinnosti *01/10/2018* a datum vypršení platnosti *Nikdy*. Nelze však zkrátit období tak, aby bylo datum účinnosti aktualizováno na *01/12/2018* prostřednictvím správy dat. Tuto změnu musíte provést prostřednictvím uživatelského rozhraní.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Po změně dodací adresy v záhlaví nákupní objednávky se název dodávky nesynchronizuje.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>Po změně dodací adresy v záhlaví nákupní objednávky se název dodávky nesynchronizuje.
 
 ### <a name="issue-description"></a>Popis problému
 
@@ -145,6 +144,3 @@ Toto chování je záměrné. Vybraná adresa musí být klasifikována jako dor
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Mohu najít uživatele, který zrušil nákupní objednávku?
 
 Tyto informace jsou sledovány pouze v případě, že je u objednávky možné provádět změny. Pokud používáte správu změn, můžete vidět, kdo změnu (zrušení) odeslal a kdo ji schválil.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

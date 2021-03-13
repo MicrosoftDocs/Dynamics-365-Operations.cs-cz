@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424011"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007690"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
@@ -126,7 +125,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>nebo</td>
+<td>Nebo</td>
 <td>To platí při splnění libovolné podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nepravda</strong>.</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
@@ -135,7 +134,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Plus</td>
+<td>Kladný</td>
 <td>Sečte podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>0</strong>.</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
@@ -144,7 +143,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Minus</td>
+<td>Záporný</td>
 <td>Argumenty se negují. Musí mít právě jednu podmínku.</td>
 <td>Minus[expr], infix: -expr</td>
 <td><ul>
@@ -153,47 +152,47 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Abs</td>
+<td>Funkce ABS</td>
 <td>Vezme absolutní hodnotu podmínky. Musí mít právě jednu podmínku.</td>
-<td>Abs[expr]</td>
+<td>ABS [výraz]</td>
 <td><strong>Operátor:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>Časy</td>
 <td>Vezme násobek podmínek. Pokud je počet podmínek 0 (nula), výsledkem je <strong>1</strong>.</td>
-<td>Times[args], infix: a * b * ... * z</td>
+<td>Krát[args], infix: a * b * ... * z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Times[x, y, 2] == z</li>
+<li><strong>Operátor:</strong> Doby[x, y, 2] == z</li>
 <li><strong>Infixový zápis:</strong> x * y * 2 == z</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Výkon</td>
-<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní k <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
+<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Power[x, 2] == y</li>
+<li><strong>Operátor:</strong> Výkon[x, 2] == y</li>
 <li><strong>Infixový zápis:</strong> x ^ 2 == y</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Maximum</td>
 <td>Výsledkem je největší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Max[args]</td>
+<td>Max[argumenty]</td>
 <td><strong>Operátor:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>Minimum</td>
 <td>Výsledkem je nejmenší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Min[args]</td>
+<td>Min[argumenty]</td>
 <td><strong>Operátor:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>Ne</td>
 <td>Výsledkem logický opak podmínky. Musí mít právě jednu podmínku.</td>
-<td>Not[expr], infix: !expr</td>
+<td>Ne[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operátor:</strong> Not[x] &amp; Not[y == 3]</li>
+<li><strong>Operátor:</strong> Ne[x] &amp; Ne[y == 3]</li>
 <li><strong>Infixový zápis:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -222,7 +221,7 @@ V následující tabulce jsou uvedeny příklady, jak zapsat infixový zápis.
 |        (x)        |                           Závorky ruší výchozí priority.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Proč nejsou má omezení výrazu vyhodnocena správně?
-Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu.Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:
+Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Tento seznam obsahuje rezervovaná klíčová slova, která nelze použít:
 
 -   Horní mez
 -   Prvek
@@ -254,6 +253,3 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
