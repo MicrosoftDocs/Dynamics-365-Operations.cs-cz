@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130998"
 ---
 # <a name="set-up-lease-books"></a>Nastavení leasingových knih
 
@@ -53,6 +52,4 @@ Při vytváření leasingové knihy postupujte takto.
     | Krátkodobá prahová hodnota                     | Zadejte počet měsíců, které se mají použít jako prahová hodnota pro krátkodobé leasingy. Pokud je doba leasingu menší nebo rovna počtu měsíců, které zde zadáte, systém klasifikuje leasing jako krátkodobý a použije se odložená splátka. |
     | Prahová hodnota nízké hodnoty                      | Zadejte částku, která se použije jako prahová hodnota pro leasingy aktiv s nízkou hodnotou. Pokud je reální hodnota majetku menší nebo rovna hodnotě, kterou zde zadáte, systém klasifikuje leasing jako leasing aktiv s nízkou hodnotou a použije se odložená splátka. |
     | Platba dodavateli                            | Tuto možnost nastavte na **Ano**, pokud chcete umožnit účtování leasingových plateb jako fakturu na účet dodavatele, který je uveden u každého leasingu. Po zaúčtování leasingové splátky bude připsána částka na účet dodavatele. Pokud je tato možnost nastavena na **Ne**, bude místo toho hodnota připsána na účet, který je určen pro typ zaúčtování **Leasingová platba** na stránce **Parametry zaúčtování leasingu**. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Leasingová smlouva                       | Vyberte konvenci pro datum zahájení leasingu:<ul><li><b>Žádný</b> - Jako datum zahájení se použije datum zahájení leasingu.</li><li><b>Celý měsíc</b> - Jako datum zahájení se použije první den měsíce, do kterého spadá datum zahájení leasingu.</li></ul><p>Pokud vyberete <b>Žádný</b>, existuje riziko, že plány amortizace závazků a odpisů aktiv se časově rozliší a zaúčtují náklady v polovině měsíce, nikoli na konci měsíce. Výběrem <b>Celý měsíc</b> zajistíte, že systém začne účtovat o leasingu v první den měsíce a že výdaje za celý měsíc budou připisovány a zaúčtovány v posledním dni měsíce.</p><p><strong>Poznámka:</strong> Funkce pro konvence týkající se leasingu musí být zapnutá prostřednictvím správy funkcí. V pracovním prostoru <b>Správa funkcí</b> vyhledejte a vyberte funkci, která se jmenuje <b>Konvence leasingu pro leasing majetku</b> a poté vyberte <b>Povolit nyní</b>.</p> |

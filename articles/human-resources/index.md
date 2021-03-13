@@ -2,7 +2,7 @@
 title: Vítejte ve společnosti Dynamics 365 Human Resources
 description: Dynamics 365 Human Resources poskytuje přehled o pracovních plochách, které potřebujete k vytváření pracovního prostředí zaměstnanců podle více oblastí.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65100ba5798ac5731d510c8f6f112bb7a33b4e65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1136d4c811f819665202f5f93e54b63b98188970
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129537"
 ---
 # <a name="welcome-to-dynamics-365-human-resources"></a>Vítejte ve společnosti Dynamics 365 Human Resources
 
@@ -61,7 +61,7 @@ Aplikace Human Resources propojuje informace o lidech a operacích, které vám 
 
 [Přehled](hr-developer-overview.md)</br>
 [Rozšíření pomocí Power Apps a Power Automate](hr-developer-power-apps.md)</br>
-[Entity aplikace Human Resources v Common Data Service](hr-developer-entities.md)</br>
+[Entity aplikace Human Resources v Dataverse](hr-developer-entities.md)</br>
 [Vlastní pole](hr-developer-custom-fields.md)</br>
 [Nastavení integrace dat](hr-admin-integration-choose-technology.md)</br>
 [Odkaz na API rozhraní entity](hr-developer-api-authentication.md)
@@ -78,6 +78,3 @@ Aplikace Human Resources propojuje informace o lidech a operacích, které vám 
 [Správa pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
 [Rozvoj zaměstnanců](hr-develop-performance-management-overview.md)</br>
 [Vytvořit kurzy](hr-learning-courses.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
-title: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
-description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel.
-author: ChrisGarty
+title: Zobrazení a aktualizace dat entity v aplikaci Excel
+description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel.
+author: jasongre
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -13,38 +13,39 @@ ms.reviewer: sericks
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a9486b3d700cdbe19fbcdba431f673d0a03014f
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688460"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141869"
 ---
-# <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
+# <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo Finance and Operations.
+Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo Finance and Operations.
 
-Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016.
+Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016 nebo novější.
 
 > [!NOTE]
 > Pokud je klient MIcrosoft Azure Active Directory (Azure AD) konfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že byla použita aktualizace z května 2016 pro Office, aby vás doplněk aplikace Excel mohl správně přihlásit.
 
-Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků v Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
+Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otevření dat entity v aplikaci Excel při spuštění z aplikace Finance and Operations
-1. Na stránce Finance and Operations vyberte příkaz **Otevřít v Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Otevření dat entity v aplikaci Excel při spuštění z aplikace Finance and Operations
+1. Na stránce v aplikaci Finance and Operations vyberte příkaz **Otevřít v Microsoft Office**.
 
     Pokud je kořenový zdroj dat (tabulka) pro stránku stejný jako kořenový zdroj dat kořenové pro libovolnou entitu, jsou pro stránku generovány výchozí možnosti **Otevřít v aplikaci Excel**. Možnosti **Otevřít v aplikaci Excel** možnosti najdete na často používaných stránkách jako **Všichni dodavatelé** a **Všichni zákazníci**.
  
 2. Zvolte možnost **Otevřít v aplikaci Excel** a otevřete sešit, který je generován. Tento sešit obsahuje závazné informace pro entitu, ukazatel pro vaše prostředí a ukazatel na doplněk aplikace Excel.
 3. V aplikaci Excel zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
-5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z aplikace Internet Explorer a automaticky vás přihlásí, pokud je to možné. Proto ověřte uživatelské jméno v pravém horním rohu doplňku aplikace Excel.
+5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
 
 Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Všimněte si, že v sešitu nebudou žádná data, dokud ho doplněk aplikace Excel nenačte.
 
@@ -72,7 +73,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 Poté, co doplněk aplikace Excel načte data entity do sešitu, můžete data kdykoli aktualizovat volbou možnosti **Aktualizovat** v doplňku aplikace Excel.
 
 ## <a name="edit-entity-data-in-excel"></a>Úprava dat entity v aplikaci Excel
-Můžete změnit data entity podle požadavku a pak je publikovat zpět volbou možnosti **Publikovat** v doplňku aplikace Excel. Chcete-li upravit záznam, vyberte buňku v listu a potom změňte hodnotu buňky. Chcete-li přidat nový záznam, proveďte jeden z následujících kroků:
+Můžete změnit data entity podle požadavku a pak je publikovat zpět do Finance and Operations volbou možnosti **Publikovat** v doplňku aplikace Excel. Chcete-li upravit záznam, vyberte buňku v listu a potom změňte hodnotu buňky. Chcete-li přidat nový záznam, proveďte jeden z následujících kroků:
 
 - Klikněte na libovolné místo v tabulce zdrojů dat a potom zvolte **Nový** v doplňku aplikace Excel.
 - Klikněte kdekoliv v posledním řádku v tabulce zdrojů dat a potom stiskněte klávesu Tab, dokud se kurzor nepřesune z posledního sloupce řádku a dokud není vytvořen nový řádek.
@@ -105,6 +106,21 @@ Chcete-li upravit sloupce, které jsou automaticky přidány do listu, můžete 
 4. Abyste provedli změny zdrojů dat, zvolte **Aktualizovat**. Potom zvolte **Hotovo** a ukončete návrháře.
 5. Pokud jste přidali pole (sloupec), zvolte **Aktualizovat** pro načtení aktualizované sady dat.
 
+## <a name="change-the-publish-batch-size"></a>Změna velikosti dávky publikování
+Když uživatelé publikují změny datových záznamů pomocí doplňku Excel, aktualizace se odesílají v dávkách. Výchozí velikost dávky pro publikování je 100 řádků. Ve verzi 10.0.17 a novější vám funkce **Povolit konfiguraci velikosti dávky publikování v doplňku aplikace Excel** poskytuje flexibilní kontrolu nad velikostí dávky publikování.
+
+Správci systému mohou určit celosystémový limit velikosti dávky publikování pro sešity "Otevřít v aplikaci Excel" nastavením pole **Publikovat limit dávky** v části **Parametry aplikace** stránky **Parametry aplikace Office**.
+
+Velikost dávky publikování lze také změnit pro jednotlivý sešit pomocí doplňku Excel.
+
+1. Otevřete sešit v aplikaci Excel.
+2. Zvolte tlačítko **Možnost** (ikona ozubeného kola) v pravém horním rohu doplňku Excel.
+3. Nastavte pole **Publikovat velikost dávky** podle potřeby. Hodnota, kterou nastavíte, musí být menší než limit dávky publikování v celém systému.
+4. Vyberte **OK**.
+5. Uložte sešit. Pokud sešit neuložíte po provedení změn v nastavení doplňku, tyto změny nebudou při opětovném otevření sešitu přetrvávat.
+
+Autoři šablon sešitů aplikace Excel mohou stejným postupem nastavit velikost dávky publikování pro šablony, než je nahrají do systému.
+
 ## <a name="copy-environment-data"></a>Kopírovat data prostředí
 
 Data načtená do sešitu z jednoho prostředí lze zkopírovat do jiného prostředí. Nestačí však změnit jen URL adresu připojení, protože datová mezipaměť v sešitu bude nadále zacházet s daty jako s existujícími daty. Namísto toho je nutné použít funkci Kopírovat data prostředí a publikovat data do nového prostředí jako nová data.
@@ -123,6 +139,4 @@ Existuje několik problémů, které lze vyřešit pomocí některé jednoduchý
 - **Je zobrazeno tlačítko Načíst aplety** – Pokud má doplněk aplikace Excel po přihlášení tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **Dostanete zprávu "Zakázáno"** – Pokud se při načítání metadat doplňkem aplikace Excel zobrazí zpráva "Zakázáno", účet, který je přihlášení k doplňku aplikace Excel, nemá oprávnění používat cílené služby, instance nebo databázi. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **V aplikaci Excel se zobrazí prázdná webová stránka** – Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](https://technet.microsoft.com/library/jj219422.aspx) pro [přesunutí z vyřazeného kanálu do stávajícího](https://technet.microsoft.com/library/mt455210.aspx).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- **Při publikování změn dat obdržíte časový limit** - Pokud obdržíte zprávy o vypršení časového limitu, když se pokoušíte publikovat změny dat v entitě, zvažte zmenšení velikosti dávky publikování pro ovlivněný sešit. Entity, které aktivují větší množství logiky při změnách záznamu, mohou vyžadovat zasílání aktualizací v menších dávkách, aby se zabránilo vypršení časového limitu.

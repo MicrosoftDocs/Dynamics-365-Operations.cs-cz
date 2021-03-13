@@ -1,6 +1,6 @@
 ---
 title: Poradce při potížích s počáteční instalací
-description: Toto téma obsahuje informace o řešení potíží, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
+description: Toto téma obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129974"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -71,13 +71,13 @@ Chcete-li poskytnout souhlas s aplikací, postupujte podle následujících krok
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Ověřte, zda jsou při propojování správně nastaveny data společnosti a týmy s duálním zápisem
 
-Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Dataverse vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu **Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
+Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Dataverse vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít tabulku **Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
 
 1. V aplikaci řízené modelem v produktu Dynamics 365 vyberte filtr v pravém horním rohu.
 2. V rozevíracím seznamu vyberte **Společnost**.
 3. Výsledky zobrazíte výběrem možnosti **Spustit**.
 4. Vyberte společnost, která byla propojena při konfiguraci dvojího přepisu.
-5. Ověřte, zda má pole **Výchozí vlastnící tým** hodnotu. Na následujícím obrázku je pole **Výchozí vlastnící tým** nastaveno na **USMF dvojí zápis**.
+5. Ověřte, zda má sloupec **Výchozí vlastnící tým** hodnotu. Na následujícím obrázku je sloupec **Výchozí vlastnící tým** nastaveno na **USMF dvojí zápis**.
 
     ![Ověřování výchozího vlastnícího týmu](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Při pokusu o povolení map se může zobrazit následující chybová zpráva:
 *Chyba dvojího zápisu – registrace modulu plug-in se nezdařila: \[(nelze získat mapu oddílu pro projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Chyba překračuje maximální počet povolených oddílů pro mapování DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. došlo k jedné nebo více chybám.*
 
 Aktuální limit při propojení prostředí je přibližně 40 právnických osob. K této chybě dojde, pokud se pokusíte povolit mapy a mezi prostředími je propojeno více než 40 právnických osob.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

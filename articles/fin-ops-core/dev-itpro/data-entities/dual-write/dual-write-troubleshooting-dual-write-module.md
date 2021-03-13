@@ -1,5 +1,5 @@
 ---
-title: Poradce při potížích s modulem dvojitého zápisu v aplikacích Finance and Operations
+title: Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
 description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v aplikacích Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131238"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Poradce při potížích s modulem dvojitého zápisu v aplikacích Finance and Operations
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždic
 
 **Požadovaná pověření pro opravu problému:** Stejný uživatel, který má nastaven dvojitý zápis.
 
-Při pokusu o konfiguraci nové entity pro dvojitého zápisu se může zobrazit následující chybová zpráva. Jediným uživatelem, který může vytvořit mapu, je uživatel, který má nastaveno připojení s dvojitým zápisem.
+Při pokusu o konfiguraci nové tabulky pro dvojitého zápisu se může zobrazit následující chybová zpráva. Jediným uživatelem, který může vytvořit mapu, je uživatel, který má nastaveno připojení s dvojitým zápisem.
 
 *Stavový kód odpovědi neoznačuje úspěch: 401 (Neautorizováno)*
 
@@ -77,7 +77,7 @@ K této chybě dojde, pokud propojené prostředí Dataverse není k dispozici.
 
 Chcete-li tento problém vyřešit, vytvořte lístek pro tým pro integraci dat. Připojte sledování sítě, aby mohl tým pro integraci dat označit mapy jako **nespuštěný** na back endu.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Chyba při pokusu o spuštění mapování tabulky
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Chyba při pokusu o spuštění mapování tabulky
 
 Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit chybová zpráva podobná následující:
 
@@ -86,7 +86,4 @@ Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zob
 Oprava této chyby závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
-+ Mapování pravděpodobně neobsahuje zdrojová nebo cílová pole. Pokud v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících polí entity při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Pokud v prostředí Dataverse chybí pole, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byla pole automaticky vložena zpět do mapování.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.

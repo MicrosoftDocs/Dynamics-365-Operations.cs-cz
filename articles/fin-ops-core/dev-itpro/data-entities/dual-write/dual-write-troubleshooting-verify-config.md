@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 361d6555b60e02832c337b6f416b2b3627b6d365
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129300"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Ověření, zda je v aplikacích Finance and Operations a Dataverse nakonfigurován duální zápis
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Ověření, zda je v aplikacích Finance and Operations a Dataverse nakonfigurován duální zápis
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,13 +51,10 @@ Informace o tom, jak vyřešit problémy při vytváření dat v aplikacích Fin
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Ověření, zda je nakonfigurován duální zápis v Dataverse
 
-Pokud se při vytváření dat nachází pole **Společnost** na stránkách v aplikaci Dataverse, je nakonfigurováno dvojí zapisování.
+Pokud se při vytváření dat nachází sloupec **Společnost** na stránkách v aplikaci Dataverse, je nakonfigurováno dvojí zapisování.
 
 ![Ověřování připojení Dataverse](media/verify_cds.png)
 
 Informace o tom, jak vyřešit problémy při vytváření dat v Dataverse, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
 
 Informace o tom, jak zobrazit podrobnosti chyb při vytváření dat v Dataverse, naleznete v tématu [Povolení a zobrazení protokolu sledování modulu plug-in v aplikaci Dataverse, kde jsou zobrazeny podrobnosti o chybě](dual-write-troubleshooting.md#enable-view-trace).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

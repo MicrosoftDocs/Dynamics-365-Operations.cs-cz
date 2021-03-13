@@ -1,8 +1,8 @@
 ---
 title: Vypracování plánu kariérního postupu
-description: Jak v průběhu času vaše organizace roste a vy zvažujete plánování následnictví, můžete chtít vyhledat osobu, která má podobné dovednosti, jako jiný uživatel.
+description: Jak vaše organizace roste, musíte začít s plánováním kariérního postupu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,55 +11,48 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 203dbc5463bfcc4249e9ed73802a9a1fc153f260
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130198"
 ---
-# <a name="develop-succession-plan"></a>Vypracování plánu kariérního postupu
+# <a name="develop-a-succession-plan"></a>Vypracování plánu kariérního postupu
 
+Jak vaše organizace roste, musíte začít s plánováním kariérního postupu. Během plánování kariérního postupu možná budete chtít najít někoho, kdo má podobné dovednosti jako jiná osoba. Mapování dovedností umožňuje analyzovat existující zaměstnance a uchazeče, u kterých chcete zjistit, zda se shodují jejich kvalifikační předpoklady na hodnotného zaměstnance. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
-
-Jak v průběhu času vaše organizace roste a vy zvažujete plánování následnictví, můžete chtít vyhledat osobu, která má podobné dovednosti, jako jiný uživatel.  Mapování dovedností umožňuje analyzovat existující zaměstnance a uchazeče, u kterých chcete zjistit, zda se shodují jejich kvalifikační předpoklady na hodnotného zaměstnance. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
-
-1. Přejděte na Lidské zdroje > Kompetence > Analýza dovedností > Profily mapování dovedností.
-2. Klikněte na položku Nová.
-3. V poli Mapování dovedností zadejte název vašeho mapování dovedností.  Příklad: Zaměstnanec.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Do pole Datum zadejte datum.
-6. Klikněte na Načíst profil.
-7. Klikněte na možnost Osoba.
-8. V poli osoba zadejte jméno, nebo ji vyberte z rozevíracího seznamu.  Příklad: Cassie Hicks.
-9. Klepněte na tlačítko OK.
-10. Rozbalte pevnou záložku Certifikáty a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
-11. Rozbalte pevnou záložku dovedností pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
-12. Označte na seznamu první řádek.  Příklad: Účetnictví
-13. Klikněte na zaškrtávací políčko Volitelné.
-14. Vyberte volbu v poli Důležitost.
-    * Pokud označíte dovednost jako volitelnou, je nutné vybrat úroveň důležitosti dané dovednosti.  
+1. Přejděte na **Lidské zdroje > Kompetence > Analýza dovedností > Profily mapování dovedností**.
+2. Zvolte **Nové**.
+3. V poli **Mapování dovedností** zadejte název vašeho mapování dovedností. Příklad: Zaměstnanec.
+4. Zadejte hodnotu do pole **Popis**.
+5. Do pole **Datum** zadejte datum.
+6. Vyberte **Načíst profil**.
+7. Vyberte **Osobu**.
+8. V poli **Osoba** zadejte jméno, nebo ji vyberte z rozevíracího seznamu.
+9. Vyberte **OK**.
+10. Rozbalte pevnou záložku **Certifikáty** a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
+11. Rozbalte pevnou záložku **Dovedností** pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
+12. Označte na seznamu první řádek. Příklad: Účetnictví.
+13. Zaškrtněte políčko **Volitelné**.
+14. Vyberte volbu v poli **Důležitost**. Pokud označíte dovednost jako volitelnou, je nutné vybrat úroveň důležitosti dané dovednosti.  
 15. Vyberte ze seznamu řádek 2.
-16. Klikněte na zaškrtávací políčko Volitelné.
-17. Vyberte volbu v poli Důležitost.
+16. Zaškrtněte políčko **Volitelné**.
+17. Vyberte volbu v poli **Důležitost**.
 18. Vyberte ze seznamu řádek 3.
-19. Klikněte na zaškrtávací políčko Volitelné.
-20. Vyberte volbu v poli Důležitost.
+19. Zaškrtněte políčko **Volitelné**.
+20. Vyberte volbu v poli **Důležitost**.
 21. Vyberte ze seznamu řádek 4.
-22. Klikněte na zaškrtávací políčko Volitelné.
+22. Zaškrtněte políčko **Volitelné**.
 23. Vyberte volbu v poli Důležitost.
-24. Rozbalte pevnou záložku Vzdělání umožňující zobrazení nebo úpravu kompetencí vzdělání, které mají být zahrnuty do mapování dovednosti.
-25. Klikněte na tlačítko Spustit.
-26. Klikněte na tlačítko OK.
-27. Klikněte na možnost Výsledky.
-28. Klikněte na možnost Sestava.
-    * Sestava zobrazí seznam doporučených spárování v horní části sestavy.  Můžete vidět, že je zde uveden element „mezera“.  To je rozdíl mezi úrovní, která byla uvedena v mapování dovedností a úrovní dovednosti, která je přiřazena dané osobě.  
+24. Rozbalte pevnou záložku **Vzdělání** umožňující zobrazení nebo úpravu kompetencí vzdělání, které mají být zahrnuty do mapování dovednosti.
+25. Vyberte **Provést**.
+26. Vyberte **OK**.
+27. Vyberte **Výsledek**
+28. Vyberte **Sestavu**. Sestava zobrazí seznam doporučených spárování v horní části sestavy. V seznamu vidíte element „mezera“. Mezera je rozdíl mezi úrovní mapování dovedností a úrovní dovedností dané osoby.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

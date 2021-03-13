@@ -2,7 +2,7 @@
 title: Vytvořit položky výpůjček
 description: Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické položky, jako například telefony nebo počítače, které vaše společnost poskytuje pro zaměstnance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8317a2fbe9d857ed3824631241b99c333b6dc4e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7da578c57be57b55e9175600461549416faa1298
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130342"
 ---
 # <a name="create-loan-items"></a>Vytvořit položky výpůjček
 
@@ -59,6 +59,3 @@ Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické polož
 14. Klikněte na tlačítko OK.
 15. Aktualizujte stránku.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

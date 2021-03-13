@@ -1,8 +1,8 @@
 ---
 title: Generování sestav v rámci zákona Affordable Care Act
-description: Tato funkce má pomáhat zaměstnavatelům, kteří potřebují sledovat informace ve formulářích 1095-B a 1095-C v rámci zmocnění zaměstnavatele v kontextu zákona Affordable Care Act (ACA). Tato funkce je povolena pouze pro právnické osoby v USA.
+description: Reporting zákona Affordable Care (ACA) generuje formuláře 1095-B a 1095-C podle části zákona Affordable Care **Mandát zaměstnavatele**.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,64 +10,80 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3555be3067db459625df9f9b0ac6b78fc2715289
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56ff879603a31956db877b45aec11b15371b69f5
+ms.sourcegitcommit: 5c1b5ef40ce7359b3f1955535a250718d863badb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417637"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5142149"
 ---
-# <a name="generate-affordable-care-act-aca-reports"></a>Generování sestav v rámci zákona Affordable Care Act
+# <a name="generate-aca-reports"></a>Generování ACA sestav
 
-Tato funkce má pomáhat zaměstnavatelům, kteří potřebují sledovat informace ve formulářích 1095-B a 1095-C v rámci **zmocnění zaměstnavatele** v kontextu zákona Affordable Care Act (ACA). Tato funkce je povolena pouze pro právnické osoby v USA.
+Reporting zákona Affordable Care (ACA) generuje formuláře 1095-B a 1095-C podle části zákona Affordable Care **Mandát zaměstnavatele**.
+
+> [!NOTE]
+> Hlášení ACA je povoleno pouze pro právnické osoby ve Spojených státech.
 
 ## <a name="getting-started"></a>Začínáme
-Při sledování informací uvedených ve formulářích 1095-B a 1095-C je nutné nejprve vytvořit jednu nebo více skupin pokrytí pro ACA. Tyto skupiny se použijí k označení nabídky pokrytí nabídnuté zaměstnanci, zaměstnancova podílu na měsíční náhradě s nejnižšími náklady (pokud je tato cena vyšší než federální hranice chudoby) a případně také programu Safe Harbor, který zaměstnavatel používá. Pokud použijete skupiny pokrytí ACA, budete moci informace v těchto polích spravovat hromadně a nebudete muset upravovat každý záznam zaměstnance se stejnými podmínkami. Skupiny pokrytí ACA lze navíc snadno přiřadit k jednomu nebo několika zaměstnancům pomocí funkce hromadného přiřazení na stránce.
+
+Chcete-li sledovat informace proformuláře 1095-B a 1095-C musíte nejprve vytvořit jednu nebo více skupin Affordable Care. Skupiny pokrytí Affordable Care označují:
+
+- Nabídku pokrytí pro zaměstnance
+- Podíl zaměstnance na nejnižší měsíční prémii, pokud je cena nad federální hranicí chudoby
+- Program Safe Harbor, který využívá zaměstnavatel, je-li k dispozici
+
+Skupiny pokrytí ACA, budete moci informace v těchto polích spravovat hromadně a nebudete muset upravovat každý záznam zaměstnance se stejnými podmínkami. Skupiny pokrytí ACA lze snadno přiřadit k jednomu nebo několika zaměstnancům pomocí funkce **Hromadné přiřazení** na stránce.
 
 ## <a name="maintaining-multiple-versions-of-a-coverage-group"></a>Správa několika verzí skupiny pokrytí
-Můžete používat několik verzí skupin pokrytí a provádět průběžně aktualizace, aniž by bylo nutné vytvářet nové skupiny a přeřazovat do ní zaměstnance při každé změně v organizaci nebo v nabízených výhodách. 
 
-Po vytvoření potřebných skupin pokrytí ACA je můžete hromadně přiřadit k zaměstnancům pomocí funkce **Hromadné přiřazení** na stránce. Můžete také u jednotlivých zaměstnanců nastavit, zda je u nich třeba sledovat a vykazovat informace o ACA, a můžete je jednotlivě přiřazovat ke skupinám pokrytí ACA.
+Můžete spravovat několik verzí skupin pokrytí. Tato funkce vám umožňuje provádět změny, aniž byste museli vytvářet novou skupinu a znovu do ní přiřazovat zaměstnance. 
 
-Pokud u některého zaměstnance není nutné sledovat nebo vykazovat informace v rámci ACA (například jde-li o zaměstnance na částečný úvazek), je možné nastavit pole **Vykazovat pokrytí** na možnost Ne. Všichni zaměstnanci, u kterých je třeba sledovat informace ACA, musí být přiřazeni k některé skupině pokrytí ACA. Přesto však můžete měnit možnosti **Nabídka pokrytí**, **Podíl zaměstnance na nákladech** a **Dohoda Safe Harbor** u všech měsíců, které vyžadují zadání jiných hodnot, než jaké jsou uvedeny ve skupině pokrytí.
+Poté, co vytvoříte skupiny pokrytí ACA, můžete hromadně přiřadit skupiny zaměstnancům s volbou **Hromadné přiřazení** volba. Můžete také jednotlivě označit, zda chcete sledovat a hlásit informace ACA, a přiřadit zaměstnance do skupiny pokrytí Affordable Care.
 
-Chcete-li zadat výjimky z hodnot skupiny pokrytí ACA, klikněte na odkaz pokrytí ACA na stránce podrobností pracovníka (v části Další informace na kartě Zaměstnání).
+Nemusíte sledovat některé informace o pokrytí ACA, například u zaměstnanců na částečný úvazek. V tomto případě nastavte **Zpráva o pokrytí** pole na **Ne**. I když musíte každému zaměstnanci přiřadit sledovatelné informace ACA do skupiny pokrytí Affordable Care, můžete změnit následující možnosti pro měsíce s různými hodnotami:
+
+- **Nabídka pokrytí**
+- **Podíl zaměstnance na nákladech**
+- **Institut "Safe Harbor"**
+
+Chcete-li zadat výjimky z hodnot skupiny pokrytí ACA, vyberte **Pokrytí Affordable Care** na stránce **Podrobnosti pracovníka** (v části **Další informace** na kartě **Zaměstnání**).
 
 ## <a name="reporting-health-care-coverage"></a>Vykazování pokrytí zdravotní péče
-Pokud zaměstnavatel nabízí sponzorované pokrytí s vlastním připojištěním a zaměstnanec tuto nabídku využívá (bez ohledu na to, zda pracuje na plný nebo částečný úvazek), je ve formuláři 1095-C nutné hlásit i další informace vedle údajů o tom, jaké (pokud nějaké) pokrytí zdravotního pojištění bylo nabídnuto zaměstnanci na plný úvazek. Ve výkazu musí být uvedeni všichni zaměstnanci (včetně závislých osob) krytí v rámci plánů zaměstnaneckých výhod sponzorovaných zaměstnavatelem, a to ve všech měsících, kdy pokrytí platilo. 
 
-Zaškrtnutím políčka **Lze vykázat podle zákona o dostupné péči** můžete určit, zda je třeba daný plán zaměstnaneckých výhod vykazovat.
+Pokud zaměstnavatel nabízí sponzorované pokrytí s vlastním připojištěním a zaměstnanco tuto nabídku využívá (bez ohledu na to, zda pracuje na plný nebo částečný úvazek), je ve formuláři 1095-C nutné hlásit i další informace vedle údajů o tom, jaké (pokud nějaké) pokrytí zdravotního pojištění bylo nabídnuto zaměstnanci na plný úvazek. Ve výkazu musí být uvedeni všichni zaměstnanci (včetně závislých osob) krytí v rámci plánů zaměstnaneckých výhod sponzorovaných zaměstnavatelem, a to ve všech měsících, kdy pokrytí platilo. 
 
-Pokud si zaměstnanci navíc zvolili i krytí závislých osob, je možné uvést data, kdy pokrytí začalo platit, na stránce Udržovat výhody. Chcete-li uvést, že se výhoda vztahuje na závislou osobu, vyberte tlačítko Upravit na panelu akcí na kartě Rodinní příslušníci.
+Zaškrtnutím políčka **Lze vykázat podle zákona ACA** můžete určit, zda je třeba daný plán zaměstnaneckých výhod vykazovat.
+
+Pokud si zaměstnanci navíc zvolili i krytí závislých osob, je možné uvést data, kdy pokrytí začalo platit, na stránce **Udržovat výhody**. Chcete-li uvést, že se výhoda vztahuje na závislou osobu, vyberte tlačítko **Upravit** na panelu akcí na kartě **Rodinní příslušníci**.
 
 Na stránce **Správce dat pokrytí rodinného příslušníka** můžete určit data pokrytí závislých osob v rámci zaměstnanecké výhody. Zadáním data na této stránce automaticky zaškrtnete políčko **Pokryto** na stránce **Udržovat výhody**.
 
-## <a name="generate-1095b-and-1095c-forms"></a>Generování formulářů 1095-B a 1095-C
-Formuláře 109-B and 1095-C můžete vygenerovat i v aplikaci a rozeslat je všem zaměstnancům. V systému lze také elektronicky vygenerovat formuláře 1095-C a odpovídající soubory pro přenos 1094-C, které lze poslat na finanční úřad.  
+## <a name="generate-1095-b-and-1095-c-forms"></a>Generujte formuláře 1095-B a 1095-C
+
+Formuláře 1095-B and 1095-C můžete vygenerovat i v aplikaci a rozeslat je všem zaměstnancům. Systém může také elektronicky generovat formuláře 1095-C a přenosové soubory IRS 1094-C.  
 
 Při generování formuláře 1095 C zadejte příslušný daňový rok a označte, zda mají být nahrazena čísla sociálního pojištění. Při tisku formulářů 1095-C pro více než 500 zaměstnanců obdržíte více než jeden soubor PDF. Doporučuje se zvýšit **maximální velikost souboru** v okně **parametry správy dokumentů** na 150 MB.
 
 ## <a name="viewing-information"></a>Zobrazení informací
+
 Pomocí stránky **Pokrytí dostupné péče pro pracovníka** můžete zjistit, kteří zaměstnanci byli přiděleni k jednotlivým skupinám pokrytí, kteří zařazeni být nemusí a kteří přiřazeni nejsou.
 
 U případných přepsaných výchozích hodnot skupiny pokrytí ACA se vedle změněné hodnoty zobrazí hvězdička. Pokud jsou hodnoty u všech 12 měsíců stejné a nebyly přepsány, hodnota bude uvedena ve sloupci **Všech 12 měsíců**.
 
-Pomocí okna dotazu můžete zjistit, u kterých zaměstnanců bylo určeno, že se nemají v rámci ACA vykazovat (to znamená, že není třeba sledovat, zda jim bylo nabídnuto pokrytí, a není pro ně třeba na konci roku vydávat formulář 1095-C). Výběrem možnosti **Nelze vykázat podle zákona o dostupné péči** v poli **Filtrovat podle** můžete vytvořit seznam všech zaměstnanců, na které se nevztahuje formulář 1095-C.
+Můžete také použít okno s dotazem, abyste pochopili, kteří zaměstnanci byli označeni jako zaměstnanci, kteří nejsou ACA vykazovatelní. Nemusíte sledovat, zda jim bylo nabídnuto pokrytí, a nebudete jim muset na konci roku vydat 1095-C. Vyberte **Nevykazovatelní v rámci ACA** v poli **Filtrovat podle** pro vygenerování seznamu všech zaměstnanců, kteří neobdrží 1095-C.
 
-Kromě zobrazení seznamu zaměstnanců, na které se vykazování podle ACA nevztahuje, můžete také zobrazit všechny zaměstnance, kteří nejsou přiřazeni (pole **Vykazovat pokrytí ACA** je prázdné) nebo kteří byli přiřazeni do skupiny pokrytí ACA, jejíž platnost pro rok zadaný v poli **Rok** vypršela.
+Kromě toho můžete také zobrazit všechny zaměstnance, kteří nejsou přiřazeni (pole **Vykazovat pokrytí ACA** je prázdné) nebo kteří byli přiřazeni do skupiny pokrytí ACA, jejíž platnost pro rok zadaný v poli **Rok** vypršela.
 
 Seznamy zaměstnanců vygenerovaných podle zadaných filtrů je možné exportovat do aplikace Excel.
 
-Pokud je nutné vykazovat pokryté osoby, protože jako zaměstnavatel poskytujete pokrytí s vlastním pojištěním, můžete zobrazit i všechny závislé osoby kryté v rámci plánů zaměstnaneckých výhod a označené jako **Lze vykázat podle zákona o dostupné péči** výběrem akce Zobrazit pokrytí závislých prvků na panelu akcí.
+Pokud potřebujete hlásit kryté osoby, protože poskytujete pojištěné osoby, můžete zobrazit závislé osoby, na které se vztahují plány dávek, které jsou označeny jako **hlásitelné ACA**. V podokně akcí vyberte **Zobrazit data pokrytí rodinného příslušníka**.
 
-**Poznámka:** V okně dotazu se zobrazí pouze zaměstnanecké výhody, jejichž plán byl označen jako **Lze vykázat podle zákona o dostupné péči**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> [!NOTE]
+> Pouze plány dávek označené jako **hlásitelné ACA** zobrazit v okně dotazu.

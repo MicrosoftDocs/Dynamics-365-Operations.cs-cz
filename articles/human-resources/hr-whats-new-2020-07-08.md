@@ -1,8 +1,8 @@
 ---
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources (08. července 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 8. červenci 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130390"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources (8. července 2020)
 
@@ -71,9 +71,9 @@ Vytvořená a upravená systémová pole jsou nyní povolena v tabulce **WorkCal
 
 Toto vydání opravuje chybu (nulová reference) v zjednodušeném záznamu zaměstnance, když přijmete zaměstnance pomocí možnosti **Příjem a přidání podrobností**.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Změny provedené v entitě Common Data Service Pracovník se neodráží v Human Resources (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Změny provedené v entitě Dataverse Pracovník se neodráží v Human Resources (455652)
 
-Změny provedené v následujících polích v entitě **Pracovník** v Common Data Service se nyní objeví v Human Resources:
+Změny provedené v následujících polích v entitě **Pracovník** v Dataverse se nyní objeví v Human Resources:
 
 - **Práce z domu**
 - **Datum služebního věku**
@@ -131,9 +131,9 @@ Entita DMF je nyní k dispozici pro akruální pozastavení
 
 ## <a name="coming-soon"></a>Již brzy
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Položky kontrolního seznamu zahrnuté do Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Položky kontrolního seznamu zahrnuté do Dataverse
 
-Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Common Data Service k dispozici již brzy.
+Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Dataverse k dispozici již brzy.
 
 ## <a name="see-also"></a>Viz také
 
@@ -141,6 +141,3 @@ Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní 
 [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

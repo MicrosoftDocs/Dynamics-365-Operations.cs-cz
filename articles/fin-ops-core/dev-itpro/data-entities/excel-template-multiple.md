@@ -1,5 +1,5 @@
 ---
-title: Import dat ze šablon datových entit aplikace Excel s více listy
+title: Šablony dat s více listy
 description: Toto téma popisuje, jak importovat data pomocí šablon datové entity Excelu do Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688072"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130574"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Import dat ze šablon datových entit aplikace Excel s více listy
+# <a name="data-templates-with-multiple-worksheets"></a>Šablony dat s více listy
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ V případech, kdy musí být odeslána nová verze stejného nebo zcela nového
 ## <a name="upload-a-file-using-run-project"></a>Odeslání souboru pomocí spuštění projektu
 
 Můžete načíst soubor aplikace Excel při používání možnosti **Spustit projekt** pro provedení projektu importu. Musíte si dávat pozor, abyste odeslali pouze soubory, které mají stejné listy jako existující mapování na datových entitách v datovém projektu. Pokud není list nalezen v nově odeslaném souboru, systém zobrazí chybovou zprávu a zastaví import. Pokud u entity musí být změněno mapování na list, musí být nejprve aktualizováno mapování v datovém projektu z datového projektu předtím, než použijete soubor v možnosti **Spustit projekt**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

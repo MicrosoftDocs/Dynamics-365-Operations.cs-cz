@@ -1,6 +1,6 @@
 ---
 title: Úprava formátů pro generování dokumentů s daty aplikace
-description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 3 - úprava modelu a mapování).
+description: Toto téma popisuje, jak navrhnout konfigurace vykazování k vygenerování elektronického dokumentu a aktualizaci dat aplikace.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129390"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Úprava formátů pro generování dokumentů s daty aplikace
 
@@ -149,6 +149,3 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 46. Zavřete stránku.
 47. Zavřete stránku.
 48. Zavřete stránku.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

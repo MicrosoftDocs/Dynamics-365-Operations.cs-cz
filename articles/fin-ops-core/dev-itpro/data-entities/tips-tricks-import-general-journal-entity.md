@@ -1,5 +1,5 @@
 ---
-title: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
+title: Import dokladů pomocí entity hlavního deníku
 description: Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129592"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Import dokladů pomocí entity hlavního deníku
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ V následujících oddílech je popsán dopad tohoto nastavení. Vysvětlují ta
 - Pokud je pole **Číslo dokladu** nastaveno na **Automaticky generované**, import se nezdaří. Nastavení **Automaticky generované** pro pole **Číslo dokladu** není podporováno.
 
 Ve výchozím nastavení používají entity obecného deníku zpracování založené na sadě. Po vyhodnocení obchodních požadavků vaší organizace můžete změnit nastavení **Zpracování založené na sadě** klepnutím na **Datové entity** v pracovním prostoru **Správa dat**. Zpracování založené na sadě se používá k urychlení procesu importu. Pokud nechcete zpracování založené na sadě použít, import entity obecného deníku bude pomalejší.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

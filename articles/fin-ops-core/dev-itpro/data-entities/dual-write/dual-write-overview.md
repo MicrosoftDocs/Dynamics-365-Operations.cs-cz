@@ -1,6 +1,6 @@
 ---
-title: Přehled dvojího zapisování
-description: Toto téma obsahuje přehled dvojího zapisování. Dvojí zapisování je infrastruktura poskytující prakticky v reálném čase mezi aplikacemi řízených modelem Microsoft Dynamics 365 a Finance and Operations.
+title: Přehled dvojitého zápisu
+description: Toto téma poskytuje přehled dvojího zapisování, které poskytuje interakci prakticky v reálném čase mezi aplikacemi Customer Engagement a aplikacemi Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129998"
 ---
-# <a name="dual-write-overview"></a>Přehled dvojího zapisování
+# <a name="dual-write-overview"></a>Přehled dvojitého zápisu
 
 [!include [banner](../../includes/banner.md)]
 
@@ -53,7 +53,7 @@ Infrastruktura dvojího zapisování je rozšiřitelná a spolehlivá a obsahuje
 + Kombinované zobrazení protokolů aktivit a chyb pro správce dat
 + Možnost konfigurovat vlastní výstrahy a prahové hodnoty a přihlásit se k odběru oznámení
 + Intuitivní uživatelské rozhraní (UI) pro filtrování a transformace
-+ Schopnost nastavit a zobrazit závislosti a vztahy entity
++ Schopnost nastavit a zobrazit závislosti a vztahy tabulky
 + Rozšiřitelnost pro standardní i pro vlastní tabulky a mapy
 + Spolehlivé řízení životního cyklu aplikací
 + Přednastavené možnosti nastavení pro nové odběratele
@@ -93,7 +93,7 @@ Dvojí zapisování poskytuje integraci dat mezi aplikacemi Microsoft Dynamics 3
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co znamená duální zápis pro vývojáře a architekty aplikací pro zapojení zákazníků?
 
-Duální zápis automatizuje tok dat mezi aplikacemi Finance and Operations a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Dataverse. Tato řešení rozšiřují schéma entity, moduly plugin a pracovní postupy v Dataverse, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance and Operations.
+Duální zápis automatizuje tok dat mezi aplikacemi Finance and Operations a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Dataverse. Tato řešení rozšiřují schéma tabulky, moduly plugin a pracovní postupy v Dataverse, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance and Operations.
 
 Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální zápis některé zásadní změny ve schématu Dataverse. Pokud plánu rozumíte, můžete se v budoucnu vyhnout úpravám návrhu a vývoje.
 
@@ -103,12 +103,9 @@ Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální
 
 + Aby se zabránilo ztrátě dat při přenosu měny mezi aplikacemi Finance and Operations a Dataverse, budete moci rozšířit počet desetinných míst v datovém typu měny aplikací pro zapojení zákazníků. Tato funkce automaticky přenese existující řádky do nového rozšířeného stavu ve vrstvě metadat. Během tohoto procesu je hodnota měny převedena na desítková data, nikoli na peněžní, a hodnota měny podporuje 10 desetinných míst. Pro tuto funkci je třeba se registrovat a organizace, které nepotřebují více než 4 desetinná místa přesnosti, se registrovat nemusí. Další informace viz [Migrace datového typu měny pro duální zápis](currrency-decimal-places.md).
 
-+ [Platnost od](../../dev-tools/date-effectivity.md) bude přidán do Dataverse. Bude podporovat minulá, současná a budoucí data ve stejné entitě.
++ [Platnost od](../../dev-tools/date-effectivity.md) bude přidán do Dataverse. Bude podporovat minulá, současná a budoucí data ve stejné tabulce.
 
 + [Převody jednotek](../../../../supply-chain/pim/tasks/manage-unit-measure.md) produktu jsou podporovány pro produkty, nabídky, objednávky a faktury.
 
 Další informace o nadcházejících změnách najdete v části [Co je nového nebo co se změnilo ohledně duálního zápisu](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
