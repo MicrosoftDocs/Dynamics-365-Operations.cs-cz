@@ -1,7 +1,7 @@
 ---
 title: Obsah správy výdajů v Power BI
 description: Toto téma popisuje, co je součástí balíčku obsahu správy výdajů v Power BI.
-author: RyanSand
+author: panolte
 manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9391676beea6aac831648d5fa55eae5eba3f6397
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682790"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016445"
 ---
 # <a name="expense-management-power-bi-content"></a>Obsah správy výdajů v Power BI
 
@@ -93,6 +93,3 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 | Statistika zaměstnance | Vyúčtování výdajů podle typu nákladů            |
 |                     | Osobní výdaje                       |
 |                     | Vyúčtování výdajů podle skupin statistiky     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

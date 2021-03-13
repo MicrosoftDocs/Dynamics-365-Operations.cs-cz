@@ -1,7 +1,7 @@
 ---
 title: Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky
 description: Tento postup popisuje použití nákupní smlouvy při vytváření nákupní objednávky.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3e02bd4aaef8da7838c92199c28b1e298078c57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6f82cabebea5c9e86e898c064c70a0e7a48b49d3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423755"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016596"
 ---
 # <a name="create-a-purchase-release-order-when-creating-the-purchase-order"></a>Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky
 
@@ -64,6 +63,3 @@ Tento postup popisuje použití nákupní smlouvy při vytváření nákupní ob
 3. Zavřete stránku.
 4. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
