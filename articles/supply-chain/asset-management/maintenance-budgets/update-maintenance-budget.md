@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e43abd4644eec8c91606ec48bbecf30f12600856
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423876"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021011"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualizace rozpočtů údržby
 
@@ -75,6 +74,3 @@ Na stránce **Řádky údržby rozpočtu** můžete ručně přidat nový řáde
 
 - Víte, že renovace některého majetku je aktuálně ve fázi plánování, ale související úlohy ještě nebyly vytvořeny ve správě majetku. Chcete však, aby byly rozpočtové náklady pro tyto úlohy zahrnuty do rozpočtu údržby.
 - Od tvorby rozpočtu údržby byl vytvořen nový majetek nebo nové typy majetku, ale plány údržby dosud nebyly nastaveny pro tento majetek nebo typy majetku. Chcete však, aby byly rozpočtové náklady pro tyto typy majetku zahrnuty do rozpočtu údržby.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

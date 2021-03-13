@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75de9a51560dcd8fea7998425fee14a27e891972
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c0359bfe31b3d01f28028bb17d5d30af39a1db9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423952"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021596"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Záruky na majetek a typy majetku
 
@@ -54,6 +53,3 @@ Toto téma vysvětluje, jak nastavit záruky na majetek a typy majetku v modulu 
 
 > [!NOTE]
 > Když vytvoříte pracovní příkaz pro majetek, který je pokryt záruční smlouvou dodavatele, a pokud má pracovní příkaz očekávané počáteční datum během záruční doby, obdržíte oznámení o záruční smlouvě. Poté můžete požadovaný pracovní příkaz zrušit podle potřeby.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

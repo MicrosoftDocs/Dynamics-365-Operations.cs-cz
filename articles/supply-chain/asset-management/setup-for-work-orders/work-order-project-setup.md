@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423638"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021547"
 ---
 # <a name="work-order-project-setup"></a>Nastavení projektu pracovního příkazu
 
@@ -86,6 +85,3 @@ Nastavení umožňuje úplnou integraci s modulem **Řízení projektů a úče
 > Při každém vytvoření řádku pracovního příkazu vyhledá Správa majetku skupinu projektů, která by měla souviset s projektem pracovního příkazu. Hledání je založeno na nastavení popsaném v tomto tématu. Každá skupina projektů má související typ projektu. Skupiny projektů s **Časem a materiálem** nebo typem projektu **S pevnou cenou** jsou platné pouze pro majetek, který souvisí s účtem odběratele.
 >
 > U nadřazených projektů a skupin projektů je výběr založen na záznamech, které jste vytvořili pomocí předchozího postupu, když systém vybere dostupný projekt pracovního příkazu nebo skupinu projektů. Správa majetku prochází záznamy, které souvisejí s projektem pracovního příkazu, a slouží ke kontrole možného spárování. Vždy zkontroluje nejdříve nejkonkrétnější kombinaci. Jinými slovy, pro nadřazený projekt pracovního příkazu Správa majetku nejprve zkontroluje možnou shodu v poli **Majetek**. Pokud není nalezena shoda, zkontroluje shodu v poli **Typ majetku**. Pokud není nalezena shoda, zkontroluje shodu v poli **Funkční místo** a tak dále. Jak vidíte v rozvržení stránky **Nastavení projektu pracovního příkazu**, toto chování znamená, že pro nalezení nejspecifičtější kombinace zkontroluje Správa majetku každý záznam zprava doleva pro nalezení shody. Není-li nalezena žádná shoda, použije se výchozí záznam, v němž je vybrán pouze ID projektu. Proces vyhledání související skupiny projektů je podobný. Správa majetku nejprve zkontroluje možné párování pro pole **Majetek**, poté pole **Typ majetku** a poté pole **Typ pracovního příkazu**. Není-li nalezena žádná shoda, použije se výchozí záznam, v němž je vybrána pouze skupina projektu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

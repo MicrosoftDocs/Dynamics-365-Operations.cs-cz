@@ -1,7 +1,7 @@
 ---
 title: Mobilní pracovní prostor dodavatelské spolupráce
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: mkirknel
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc73fe415ec2b9a266dda6b7f1b3469b7a77f256
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424092"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020829"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
@@ -170,6 +169,3 @@ Jsou zobrazeny všechny změny, které byly provedeny v odpovědi na řádku obj
 
 ### <a name="open-confirmed-orders"></a>Otevřít potvrzené objednávky
 Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na **Potvrzeno**), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

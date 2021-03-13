@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetJobTypeDefaultForecast, EntAssetJobTrade, EntAssetJobTypeDefaultCopy, EntAssetChecklistVariableValueLookup, EntAssetChecklistTemplateCreate, EntAssetJobVariant, EntAssetJobTypeDefaultReference, EntAssetJobTypeDefaultChecklist, EntAssetJobTypeDefault, EntAssetJobType, EntAssetJobTypeDefaultChecklistCopy, EntAssetChecklistTemplate, EntAssetJobTypeDefaultDescription, EntAssetJobTypeLookup, EntAssetJobTypeDefaultToolCopy, EntAssetJobTypePreviewPart, EntAssetJobTypeDefaultTool, EntAssetJobTypeDefaultForecastCopy, EntAssetChecklistTemplateLookup, EntAssetJobGroup, EntAssetChecklistVariable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a335d642457fdd84ec42e285425fdc6212889cc0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423795"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021264"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
 
@@ -267,6 +266,3 @@ V modulu Správa majetku můžete automaticky aktualizovat všechny změny progn
 2. V dialogovém okně **Aktualizovat prognózu typu práce údržby** na záložce s náhledem **Záznamy k zahrnutí** můžete dle potřeby přidat výběr pro konkrétní typy práce údržby. Vyberte **Filtr** a poté volbou **Vybrat** proveďte výběr.
 3. Na záložce s náhledem **Spustit na pozadí** můžete dle potřeby nastavit automatickou aktualizaci jako dávkovou úlohu.
 4. Kliknutím na tlačítko **OK** spustíte aktualizaci prognózy.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

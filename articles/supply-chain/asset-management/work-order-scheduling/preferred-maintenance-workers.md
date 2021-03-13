@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkerPreferred
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c0637609a34890360a3b81355a8d21ef1b9faf8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab36d9fde0cc6e864f21f9ebd09834f5098c1913
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423762"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021397"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Nastavení preferovaných pracovníků údržby
 
@@ -68,6 +67,3 @@ Můžete také nastavit *odpovědné* pracovníky údržby, kteří mohou být v
 
 Při plánování pracovních příkazů se počítají různé výsledky s cílem určit, kteří pracovníci by měli dokončit úlohy související s pracovním příkazem (tato skóre se nastavují v nabídce **Parametry správy majetku** > **Plánování pracovních příkazů**). Pokud při plánování pracovních příkazů získají dva nebo více preferovaných pracovníků údržby nebo odpovědných pracovníků údržby stejné hodnocení, bude jeden pracovník vybrán náhodně. V opačném případě je vždy pracovník s nejvyšším skóre přidělen k dokončení pracovního příkazu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eedc21dde32671b4f5539ac4e798a8e1329c191
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424112"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021261"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stavy životního cyklu funkčních míst
 
@@ -63,6 +62,3 @@ Pokud jste vytvořili stavy životního cyklu vyžadované pro vaše funkční m
 5. Chcete-li pro model vybrat všechny dostupné stavy, klikněte na tlačítko ![vybrat všechny dostupné fáze](media/03-setup-for-functional-locations.png). Všechny stavy jsou převedeny do části **Vybrané stavy životního cyklu**.
 6. Chcete-li z modelu odebrat vybraný stav, vyberte stav v části **Vybrané stavy životního cyklu** a poté zvolte tlačítko se ![šipkou zpět](media/04-setup-for-functional-locations.png).
 7. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu, které mohou následovat po vybraném stavu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
