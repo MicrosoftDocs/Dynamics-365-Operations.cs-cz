@@ -1,6 +1,6 @@
 ---
 title: Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 1 - Příprava datového modelu)
-description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví.
+description: Toto téma popisuje, jak nakonfigurovat formát elektronického výkaznictví (ER) na použití souborů (příloh) správy dokumentů ve výstupu ER. (část 1)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,62 +15,62 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b82c63c572cc946737ba54deb10a03dc437c01b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bff518c60f0f36bdc88245d79bd82f0c4d0599ed
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681813"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092634"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="0b493-103">Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 1 - Příprava datového modelu)</span><span class="sxs-lookup"><span data-stu-id="0b493-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="37d65-104">Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 1 - Příprava datového modelu)</span><span class="sxs-lookup"><span data-stu-id="37d65-104">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0b493-104">Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="0b493-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="0b493-105">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="0b493-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="37d65-105">Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="37d65-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="37d65-106">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="37d65-106">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="0b493-106">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".</span><span class="sxs-lookup"><span data-stu-id="0b493-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
+<span data-ttu-id="37d65-107">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".</span><span class="sxs-lookup"><span data-stu-id="37d65-107">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
 
-<span data-ttu-id="0b493-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="0b493-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="37d65-108">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="37d65-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="0b493-108">Získání přístupu k seznamu konfigurací poskytovaných společností Microsoft</span><span class="sxs-lookup"><span data-stu-id="0b493-108">Get access to the list of configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="0b493-109">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="0b493-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="37d65-109">Získání přístupu k seznamu konfigurací poskytovaných společností Microsoft</span><span class="sxs-lookup"><span data-stu-id="37d65-109">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="37d65-110">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="37d65-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
 
-    <span data-ttu-id="0b493-110">Ujistěte se, že poskytovatel 'Litware, Inc.'</span><span class="sxs-lookup"><span data-stu-id="0b493-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="0b493-111">je k dispozici a označen jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="0b493-111">provider is available and marked as active.</span></span>  
+    <span data-ttu-id="37d65-111">Ujistěte se, že poskytovatel 'Litware, Inc.'</span><span class="sxs-lookup"><span data-stu-id="37d65-111">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="37d65-112">je k dispozici a označen jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="37d65-112">provider is available and marked as active.</span></span>  
 
-2. <span data-ttu-id="0b493-112">Vyberte Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="0b493-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="0b493-113">Poskytovatel</span><span class="sxs-lookup"><span data-stu-id="0b493-113">provider.</span></span>
-3. <span data-ttu-id="0b493-114">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="0b493-114">Click Repositories.</span></span>
+2. <span data-ttu-id="37d65-113">Vyberte Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="37d65-113">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="37d65-114">Poskytovatel</span><span class="sxs-lookup"><span data-stu-id="37d65-114">provider.</span></span>
+3. <span data-ttu-id="37d65-115">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="37d65-115">Click Repositories.</span></span>
 
-    <span data-ttu-id="0b493-115">Pokud již existuje úložiště typu Zdroje operace, přeskočte zbývající kroky aktuální dílčí úlohy.</span><span class="sxs-lookup"><span data-stu-id="0b493-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
+    <span data-ttu-id="37d65-116">Pokud již existuje úložiště typu Zdroje operace, přeskočte zbývající kroky aktuální dílčí úlohy.</span><span class="sxs-lookup"><span data-stu-id="37d65-116">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
 
-4. <span data-ttu-id="0b493-116">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="0b493-116">Click Add to open the drop dialog.</span></span>
-5. <span data-ttu-id="0b493-117">V poli Typ úložiště konfigurace zadejte "Provozní prostředky".</span><span class="sxs-lookup"><span data-stu-id="0b493-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
-6. <span data-ttu-id="0b493-118">Klikněte na Vytvořit úložiště.</span><span class="sxs-lookup"><span data-stu-id="0b493-118">Click Create repository.</span></span>
-7. <span data-ttu-id="0b493-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0b493-119">Click OK.</span></span>
+4. <span data-ttu-id="37d65-117">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="37d65-117">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="37d65-118">V poli Typ úložiště konfigurace zadejte "Provozní prostředky".</span><span class="sxs-lookup"><span data-stu-id="37d65-118">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="37d65-119">Klikněte na Vytvořit úložiště.</span><span class="sxs-lookup"><span data-stu-id="37d65-119">Click Create repository.</span></span>
+7. <span data-ttu-id="37d65-120">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="37d65-120">Click OK.</span></span>
 
-## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="0b493-120">Získání konfigurace modelu odběratele poskytnuté společností Microsoft</span><span class="sxs-lookup"><span data-stu-id="0b493-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="0b493-121">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="0b493-121">Click Show filters.</span></span>
-2. <span data-ttu-id="0b493-122">Použijte následující filtry: Zadejte hodnotu filtru Provozní prostředky do pole Název pomocí operátoru filtru "začíná na". Jako hodnotu filtru do pole popis zadejte "" pomocí operátoru filtru "začíná na".</span><span class="sxs-lookup"><span data-stu-id="0b493-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
-3. <span data-ttu-id="0b493-123">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="0b493-123">Click Show filters.</span></span>
-4. <span data-ttu-id="0b493-124">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="0b493-124">Click Open.</span></span>
-5. <span data-ttu-id="0b493-125">Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="0b493-125">In the tree, select 'Customer invoice model'.</span></span>
+## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="37d65-121">Získání konfigurace modelu odběratele poskytnuté společností Microsoft</span><span class="sxs-lookup"><span data-stu-id="37d65-121">Get the Customer invoice model configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="37d65-122">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="37d65-122">Click Show filters.</span></span>
+2. <span data-ttu-id="37d65-123">Použijte následující filtry: Zadejte hodnotu filtru Provozní prostředky do pole Název pomocí operátoru filtru "začíná na". Jako hodnotu filtru do pole popis zadejte "" pomocí operátoru filtru "začíná na".</span><span class="sxs-lookup"><span data-stu-id="37d65-123">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
+3. <span data-ttu-id="37d65-124">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="37d65-124">Click Show filters.</span></span>
+4. <span data-ttu-id="37d65-125">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="37d65-125">Click Open.</span></span>
+5. <span data-ttu-id="37d65-126">Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="37d65-126">In the tree, select 'Customer invoice model'.</span></span>
 
-    <span data-ttu-id="0b493-126">Vyberte konfiguraci modelu "Model faktury odběratele" k importu.</span><span class="sxs-lookup"><span data-stu-id="0b493-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
+    <span data-ttu-id="37d65-127">Vyberte konfiguraci modelu "Model faktury odběratele" k importu.</span><span class="sxs-lookup"><span data-stu-id="37d65-127">Select the model configuration 'Customer invoice model' to import it.</span></span>  
 
-6. <span data-ttu-id="0b493-127">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="0b493-127">Click Import.</span></span>
+6. <span data-ttu-id="37d65-128">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="37d65-128">Click Import.</span></span>
 
-    <span data-ttu-id="0b493-128">Klikněte na Import pro verzi 1 vybrané konfigurace.</span><span class="sxs-lookup"><span data-stu-id="0b493-128">Click Import for version 1 of the selected configuration.</span></span>  
+    <span data-ttu-id="37d65-129">Klikněte na Import pro verzi 1 vybrané konfigurace.</span><span class="sxs-lookup"><span data-stu-id="37d65-129">Click Import for version 1 of the selected configuration.</span></span>  
 
-7. <span data-ttu-id="0b493-129">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="0b493-129">Click Yes.</span></span>
-8. <span data-ttu-id="0b493-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0b493-130">Close the page.</span></span>
-9. <span data-ttu-id="0b493-131">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0b493-131">Close the page.</span></span>
-10. <span data-ttu-id="0b493-132">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="0b493-132">Click Reporting configurations.</span></span>
-11. <span data-ttu-id="0b493-133">Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="0b493-133">In the tree, select 'Customer invoice model'.</span></span>
+7. <span data-ttu-id="37d65-130">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="37d65-130">Click Yes.</span></span>
+8. <span data-ttu-id="37d65-131">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="37d65-131">Close the page.</span></span>
+9. <span data-ttu-id="37d65-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="37d65-132">Close the page.</span></span>
+10. <span data-ttu-id="37d65-133">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="37d65-133">Click Reporting configurations.</span></span>
+11. <span data-ttu-id="37d65-134">Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="37d65-134">In the tree, select 'Customer invoice model'.</span></span>
 
-## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="0b493-134">Vytvořte odvozený model na podporu přístupu k souborům správy dokumentů.</span><span class="sxs-lookup"><span data-stu-id="0b493-134">Create the derived model to support access to the Document Management files.</span></span>
-<span data-ttu-id="0b493-135">Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z konfigurace dodávané společností Microsoft.</span><span class="sxs-lookup"><span data-stu-id="0b493-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="0b493-136">Pomocí této konfigurace budete implementovat přístup k souborům Správy dokumentů a zpřístupníte je pro elektronické dokumenty, které vytvoříte na základě tohoto modelu.</span><span class="sxs-lookup"><span data-stu-id="0b493-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
-1. <span data-ttu-id="0b493-137">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="0b493-137">Click Create configuration to open the drop dialog.</span></span>
-2. <span data-ttu-id="0b493-138">V poli Nový zadejte „Odvodit z názvu: Model faktury zákazníka, Microsoft“.</span><span class="sxs-lookup"><span data-stu-id="0b493-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
-3. <span data-ttu-id="0b493-139">Zadejte hodnotu Model faktury odběratele (vlastní) do pole Název.</span><span class="sxs-lookup"><span data-stu-id="0b493-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
-4. <span data-ttu-id="0b493-140">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="0b493-140">Click Create configuration.</span></span>
+## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="37d65-135">Vytvořte odvozený model na podporu přístupu k souborům správy dokumentů.</span><span class="sxs-lookup"><span data-stu-id="37d65-135">Create the derived model to support access to the Document Management files.</span></span>
+<span data-ttu-id="37d65-136">Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z konfigurace dodávané společností Microsoft.</span><span class="sxs-lookup"><span data-stu-id="37d65-136">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="37d65-137">Pomocí této konfigurace budete implementovat přístup k souborům Správy dokumentů a zpřístupníte je pro elektronické dokumenty, které vytvoříte na základě tohoto modelu.</span><span class="sxs-lookup"><span data-stu-id="37d65-137">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
+1. <span data-ttu-id="37d65-138">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="37d65-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="37d65-139">V poli Nový zadejte „Odvodit z názvu: Model faktury zákazníka, Microsoft“.</span><span class="sxs-lookup"><span data-stu-id="37d65-139">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
+3. <span data-ttu-id="37d65-140">Zadejte hodnotu Model faktury odběratele (vlastní) do pole Název.</span><span class="sxs-lookup"><span data-stu-id="37d65-140">In the Name field, type 'Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="37d65-141">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="37d65-141">Click Create configuration.</span></span>
 
