@@ -1,7 +1,7 @@
 ---
 title: Přehled zásobovacího katalogu
 description: Tento článek popisuje na nejvyšší úrovni, jak mohou odborníci na nákup nastavit a spravovat zásobovací katalogy. Zásobovací katalogy definují položky a služby, které zaměstnanci společnosti mohou objednat pro interní použití.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: fcbe55adfc834b6170ca4c2a242d6bff5264ac8a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424142"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019772"
 ---
 # <a name="procurement-catalogs-overview"></a>Přehled zásobovacího katalogu
 
@@ -76,6 +75,3 @@ Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnost
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

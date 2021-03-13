@@ -1,7 +1,7 @@
 ---
 title: Přehled plánování rozpočtu
 description: Toto téma popisuje plánování rozpočtu. Obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3744fd823576b597b4550008338e3cc96cb585d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441282"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019221"
 ---
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
@@ -205,6 +204,3 @@ V nabídce **Akce** je také možné vytvořit proces zkopírováním existujíc
 Další užitečný příkaz v nabídce **Akce** je **Zobrazit stav zpracování rozpočtu**. Tento příkaz graficky zobrazí plány rozpočtu v rámci procesu spolu s odpovídajícími daty, jako jsou například stav workflowu plánů, souhrny podle množství a jednotky a navigace jedním kliknutím k samotným plánům rozpočtu.
 
 [![Stav procesu plánování rozpočtu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

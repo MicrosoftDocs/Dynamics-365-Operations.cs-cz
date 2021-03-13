@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424009"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020197"
 ---
 # <a name="procurement"></a>Zásobování
 
@@ -100,6 +99,3 @@ Následující obrázek ukazuje příklad stránky **Nákupní objednávka** se 
 
 Podobně platí, že chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupní žádanky pracovního příkazu, na stránce se seznamem **Nákup pracovního příkazu** vyberte záznam nákupní objednávky a pak ve sloupci **Nákupní žádanka** vyberte odkaz na nákupní žádanku. Pole **Číslo aktivity** najdete na kartě **Projekt** pevné záložky **Podrobnosti řádku**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

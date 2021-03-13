@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423920"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020646"
 ---
 # <a name="asset-management-parameters"></a>Parametry správy majetku
 
@@ -34,21 +33,20 @@ Ve správě majetku musí být nastaveny obecné parametry týkající se majetk
 > [!NOTE]
 > Chcete-li nastavit systém obsahující ukázková data pro testování funkcí správy majetku, vyhledejte pokyny v tématu [Nasazení ukázkového prostředí](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md).
 
-Odkaz **Majetek**
+## <a name="the-assets-tab"></a>Karta Aktiva
+
+Karta **Aktiva** poskytuje následující nastavení:
 
 - **Výchozí funkční místo** je standardní funkční místo, které je automaticky vybráno u majetku při vytváření nového majetku.  
 - V poli **Standardní kalendář** vyberte kalendář, který se má použít pro výpočet ukazatelů KPI majetku v případě, že u majetku není vybrán žádný zdroj.  
 - V poli **Zobrazení** vyberte standardní zobrazení, které se zobrazí při otevření **Zobrazení majetku** (**Správa majetku** > **Společné** > **Majetek** > **Zobrazení majetku**).
 - **Výchozí type požadavku** je standardní typ požadavku na údržbu, který je automaticky vybrán při vytváření nového požadavku.  
-- Pokud chcete vytvořit projekty, které se vztahují k majetku, vztahy projektu týkající se výběru **hlavního projektu**, **hierarchie projektu** a možnost pro **automatické vytvoření projektů** se nastavují v **parametrech správy majetku**.  
-- V poli **Maska projektu pracovního příkazu** definujete počet dílčích projektů povolených pro pracovní příkazy a dílčí majetek. Maska pracovního příkazu se používá k definování počtu pracovních příkazů, které lze vytvořit na majetku a použít na souvisejícím projektu úlohy pracovního příkazu. Maska pracovního příkazu je nastavena v poli **Maska souvisejícího pracovního příkazu** v **parametrech správy majetku** (**Správa majetku** > **Nastavení** > **Parametry správy majetku** > **Pracovní příkazy**).  
-    >[!NOTE]
-    >Formát související masky pracovního příkazu je počet znaků hash (#) v závislosti na maximálním počtu pracovních příkazů, které chcete na majetku vytvořit. Příklad: ## umožňuje vytvořit až 99 dílčích projektů.  
 - Prognózy pro typy úloh jsou uloženy v projektu vybraném v poli **Projekt prognózy**. Pro každý typ úlohy se automaticky vytvoří nová aktivita v projektu prognózy. Prognózy pro typ úlohy se pak uloží do projektu prognózy.  
-- V poli **Model** vyberte model prognózy použitý pro typ práce a prognózy pracovních příkazů.  
+- V poli **Model** vyberte model prognózy použitý pro typ práce a prognózy pracovních příkazů.
 
+## <a name="the-work-orders-tab"></a>Karta Pracovní příkazy
 
-Odkaz **Pracovní příkazy**
+Karta **Pracovní příkazy** poskytuje následující nastavení:
 
 - **Výchozí typ pracovního příkazu** definuje standardní nastavení při vytváření pracovního příkazu.  
 - **Typ preventivního pracovního příkazu** definuje typ pracovního příkazu, který se používá při vytváření pracovních příkazů z plánů údržby. Pokud je toto pole ponecháno prázdné, použije se typ pracovního příkazu v poli **Výchozí typ pracovního příkazu**.  
@@ -67,8 +65,9 @@ Odkaz **Pracovní příkazy**
     - Nastavení pořadí údržby  
 - Na záložce s náhledem **Kategorie** lze definovat výchozí kategorie týkající se spotřeby na pracovních příkazech.  
 
+## <a name="the-work-order-scheduling-tab"></a>Karta Plánování pracovního příkazu
 
-Odkaz **Plánování pracovního příkazu**
+Karta **Plánování pracovního příkazu** poskytuje následující nastavení na kartě s náhledem **Obecné**:
 
 - **Ochranná doba plánu** určuje období ve dnech, vypočítané od očekávaného počátečního data pracovního příkazu, během něhož jsou plánovány úlohy pracovního příkazu.  
 - **Hlavní plán** se vztahuje ke zdrojům v modulu **Správy organizace**. Pokud v tomto poli vyberete hlavní plán, budete moci zobrazit rezervace kapacity vztahující se k pracovním příkazům v možnosti **Rezervace kapacity** (**Správa organizace** > **Zdroje** > **Zdroje** > volba zdroje > karta **Zdroj** > tlačítko **Rezervace kapacity**). Pokud toto pole ponecháte prázdné, budete moci zobrazit vytížení kapacity vztahující se k pracovním příkazům v možnosti **Vytížení kapacity** (**Správa organizace** \> **Zdroje** \> **Zdroje** \> volba zdroje \> karta **Zdroj** \> tlačítko **Vytížení kapacity**).  
@@ -100,13 +99,10 @@ Pole popsaná v následujícím seznamu se vztahují k vypočítaným skóre hod
   - Za předpokladu, že na plánovaném pracovním příkazu nebyl vybrán žádný odpovědný pracovník a skupiny odpovědných pracovníků - přidáte a odečtete hodnoty skóre hodnocení v příkladech ve výše uvedených polích **Upřednostňovaný pracovník**, **Skupina upřednostňovaných pracovníků**, **Místo majetku** a **Počáteční datum** a získáte součet 3 010. To znamená vysoké skóre pro pracovníka, který je již vybrán jako upřednostňovaný pracovník, a je zahrnut do skupiny upřednostňovaných pracovníků na pracovním příkazu, a pracovník je také umístěn ve stejném zařízení jako majetek, pro který je nutné naplánovat úlohu. To znamená, že existuje dobrá možnost, že daný pracovník bude vybrán k dokončení úlohy během plánování pracovního příkazu.  
   - Pokud je do jednoho z osmi výše uvedených polí vložena hodnota 0, nebude toto hodnocení použito během plánování pracovního příkazu.  
 
-Odkaz **Typy dokumentů**
+## <a name="the-document-types-tab"></a>Karta typ dokumentu
 
 Vyberte typy dokumentů, které mají být k dispozici pro tisk příloh souvisejících se sestavou pracovního příkazu. To se provádí výběrem typu dokumentu v části **Dostupné** a výběrem ![šipky vpřed](media/15-setup-for-objects.png). Pokud chcete odstranit vybraný typ dokumentu, vyberte typ dokumentu v části **Vybrané** a vyberte tlačítko se ![šipkou zpět](media/16-setup-for-objects.png).
 
-Odkaz **Číselné řady**
+## <a name="the-number-sequences-tab"></a>Karta Číselné řady
 
 Vyberte požadované číselné řady v tomto oddílu. Existují dvě číselné řady pro majetek: jedna pro ručně vytvořený majetek a druhá pro majetek vytvořený prostřednictvím čekajících majetků.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

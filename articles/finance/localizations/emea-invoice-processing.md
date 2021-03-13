@@ -1,7 +1,7 @@
 ---
 title: Zpracování fakturace
 description: Toto téma obsahuje informace o zpracování faktur pro východní Evropu.
-author: v-kikozl
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 87a06e1b17e9c0bdb4147f49b2dacb74236360fa
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 9dcc6c4d886f34429b48a9beec458ff341e43db4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4407630"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018642"
 ---
 # <a name="invoice-processing"></a>Zpracování fakturace
 
@@ -122,6 +121,3 @@ Toto téma stručně popisuje některé scénáře specifické pro určité zem�
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

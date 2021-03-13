@@ -1,7 +1,7 @@
 ---
 title: Zabezpečení uživatele portálu pro dodavatele
 description: V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysUserManagement
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30231
 ms.assetid: 3574db17-81c7-4c5a-999b-0098aa0b9cda
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72f353448f3b5d1f816bb240a230e26529c9cec3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1be210728a6d5fa9a26daf9f13865ff08de03d2d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424098"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018168"
 ---
 # <a name="vendor-portal-user-security"></a>Zabezpečení uživatele dodavatelského portálu
 
@@ -50,6 +49,3 @@ Jestliže stejná osoba vyžaduje přístup k portálu pro dodavatele pro více 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Nastavení zásad pro hierarchie kategorií zásobování
 description: Tento postup použijte k nastavení pravidel pro objednávání produktů v kategorii.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d113181b5c78c0f35292b5f14cedd12bacdc7364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423752"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017082"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Nastavení zásad pro hierarchie kategorií zásobování
 
@@ -52,6 +51,3 @@ Tento postup použijte k nastavení pravidel pro objednávání produktů v kate
 6. Vyberte možnost v poli **Výběr dodavatele**. Vyberte pravidlo, které určuje, jaký typ dodavatelů lze vybrat pro kategorii při vytváření žádanky.  
 7. Klepněte na tlačítko **Zavřít**. Vámi definovaná pravidla zásad, byla pro žádanky typu Spotřeba. Pokud chcete definovat zásady pro žádanky typu Doplnění, vytvořte pravidlo pro typ pravidla zásad s názvem „Pravidlo zásad přístupu ke kategorii doplnění“.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a7239bf5f8e53e61c4259abbcbf2ff740f4cef55
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423872"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018064"
 ---
 # <a name="inbound-and-outbound-assets"></a>Příchozí a odchozí majetek
 
@@ -71,6 +70,3 @@ Po dokončení úlohy údržby nebo opravy můžete majetek zaregistrovat jako v
 2. Zvolte majetek nebo požadavek na údržbu.
 3. Vyberte **Doručit majetek**.
 4. V poli **Doručeno** zadejte datum a čas. Pak vyberte **OK**. Záznam bude odebrán ze stránky se seznamem **Odchozí majetek**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

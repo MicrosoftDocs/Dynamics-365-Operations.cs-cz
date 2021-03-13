@@ -1,7 +1,7 @@
 ---
 title: Odstraňování problémů s rozpočtováním pozice
 description: Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 88253
 ms.assetid: c44df01b-8700-4022-b4c6-c4b1cb84d31d
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afddc9815ee3864236f93c8400bcf116d5b6cc89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441246"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017610"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Odstraňování problémů s rozpočtováním pozice
 
@@ -64,6 +63,3 @@ Data na řádku nákladového prvku pozice prognózy musí spadat do následují
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

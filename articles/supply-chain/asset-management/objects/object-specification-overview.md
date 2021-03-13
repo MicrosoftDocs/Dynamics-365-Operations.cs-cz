@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b91e88292acf8e67de924a746b02858664ae9ec6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a092fac4f1b8648c2c93791f1c5efb90708c44e2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423947"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020172"
 ---
 # <a name="asset-attribute-overview"></a>Přehled atributů majetku
 
@@ -40,6 +39,3 @@ Stránka **Přehled atributů majetku** zobrazuje samostatný řádek pro každ�
 3. Vyberte **OK**. Seznam obsahuje všechny majetky, které používají vybraný typ majetku. Pro každý majetek jsou všechny typy atributů souvisejícího majetku zobrazeny na stejném řádku.
 
 Stránka **Atribut majetku** zobrazuje samostatný řádek pro každý typ atributu použitý u majetku. Chcete-li tuto stránku otevřít, vyberte **Správa majetku** \> **Dotazy** \> **Majetek** \> **Atribut majetku**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

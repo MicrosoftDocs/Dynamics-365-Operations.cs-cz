@@ -1,7 +1,7 @@
 ---
 title: Dodavatelská spolupráce s externími dodavateli
 description: Toto téma vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424215"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016746"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -259,6 +258,3 @@ Uživatel, který nastavuje parametry pro proces požadavku na nabídku, může 
 - %createddate%
 
 Pokud je požadován dodatek a je odeslán po odeslání požadavku na nabídku, požadavek na nabídku bude odeslán znovu všem pozvaným dodavatelům. Publikovaný dokument bude také aktualizován na stránce **Otevřené publikované požadavky na nabídky**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

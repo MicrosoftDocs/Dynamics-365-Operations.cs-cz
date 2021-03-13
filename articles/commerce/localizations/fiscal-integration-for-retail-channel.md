@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410877"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017460"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
@@ -150,6 +149,3 @@ Následující funkce fiskální integrace je k dispozici také v sadě Retail S
 Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Retail SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
 
 - [Ukázka integrace kontrolní jednotky pro Švédsko (starší)](./retail-sdk-control-unit-sample.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

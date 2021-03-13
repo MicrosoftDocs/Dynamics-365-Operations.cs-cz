@@ -1,7 +1,7 @@
 ---
 title: Workflowy zásobování a zdrojů
 description: Některé organizace vyžadují, aby nákupní žádanky a nákupní objednávky byly schváleny uživatelem, který se liší od osoby, která transakci vytvořila. Workflow můžete vytvořit za účelem nastavení schvalovacího procesu.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22602911fa5d395d439242746f2fe8a27c656bcf
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654141"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019747"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 
@@ -80,6 +79,3 @@ Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 - [Definování workflowů pracovních postupů pro nákupní žádanky](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Workflow nákupní žádanky](purchase-requisitions-workflow.md)
 - [Nábor dodavatelů](vendor-onboarding.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
