@@ -3,24 +3,23 @@ title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 37b541ff5037a38b60dbfd6a6c071f55afcc1304
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: dd982ae60da1c2958d6d759bb5dd256a71fabf6c
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689517"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154194"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -34,7 +33,22 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.17
+
+> [!Important]
+> Verze 10.0.17 je k dispozici jako součást vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="full-dataset-generation-interval-is-deprecated"></a>Interval generování celé datové sady je zastaralý
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Počínaje tímto vydáním, ve formuláři **Parametry plánovače obchodu** v centrále Dynamics 365 bude pole **Celý interval generování datové sady ve dnech** zastaralé. Počínaje touto verzí bude pole vizuálně odstraněno, takže hodnotu nebude možné upravit. Zůstane jako hodnota **0**. |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Dynamics 365 Commerce |
+| **Možnost nasazení**              | Vše|
+| **Stav**                         | Zastaralé. Toto pole nepoužívejte ani v něm neměňte hodnotu.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.15
 
@@ -108,6 +122,3 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 Další informace o funkcích, které byly v předchozích verzích odebrány nebo zastaraly, naleznete v tématu [Odebrané nebo zastaralé funkce v předchozích verzích](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154402"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
@@ -166,7 +166,7 @@ Provozní jednotky používají kontext země nadřazené právnické osoby. Pro
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Pokud organizace modelována jako právnická osoba
 
-Pro země nebo oblasti, které jsou podporovány, lze vytvořit většinu povinných sestav. Informace o tom, které sestavy jsou k dispozici pro každou zemi/oblast, naleznete na [Lokalizačním portálu aplikace Microsoft DynamicsMicrosoft Dynamics](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Je vyžadováno přihlášení k CustomerSource.)
+Pro země nebo oblasti, které jsou podporovány, lze vytvořit většinu povinných sestav. Informace o tom, které sestavy jsou k dispozici pro každou zemi/oblast, naleznete na [Lokalizačním portálu aplikace Microsoft DynamicsMicrosoft Dynamics](https://docs.microsoft.com/dynamics/s-e/). (Je vyžadováno přihlášení k CustomerSource.)
 
 > [!NOTE]
 > Účtovací vrstva v hlavní knize vám umožňuje vytvořit úpravné položky pro nadřazenou společnost, která používá jiný účetní standard než dceřiná společnost. Například pro společnost, která používá obecně přijímanou účetní praxi ve Velké Británii (UK GAAP), můžete vytvořit položky úprav v účtovací vrstvě. Tyto položky mohou konsolidovány do nadřazené společnosti, která používá obecně přijímané účetní principy (GAAP) ve Spojených státech amerických. Položky úprav neovlivní vykazování UK GAAP.
@@ -241,6 +241,3 @@ Při implementaci organizační hierarchie berte v úvahu následující doporu�
 - Před modelováním významných restrukturalizačních scénářů využijte data platnosti hierarchie k provedení analýzy dopadů a testu ověření.
 - V režimu konceptu můžete změnit hierarchii před publikováním nové verze v produkčním prostředí.
 - Omezte počet uživatelů, kteří mají oprávnění přidávat nebo odebírat organizace z hierarchie v produkčním prostředí. Menší počet snižuje riziko nákladné chyby a nutných oprav.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

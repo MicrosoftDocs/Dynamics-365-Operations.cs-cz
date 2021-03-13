@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527403"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152190"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (26. září 2020)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527403"
 
 Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
-Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>V této vydané verzi
 
@@ -58,7 +57,7 @@ Tato verze obsahuje následující opravy chyb.
 | 481401 | Zpracování časového rozlišení přestane reagovat, pokud je základ data časového rozlišení po počátečním datu časového rozlišení a na konci měsíce | Zpracování časového rozlišení je aktualizováno tak, aby nemělo zpoždění, pokud je základ časového rozlišení po počátečním datu časového rozlišení a na konci měsíce. |
 | 447167 | Seznamy záznamů s končící platností obsahují neaktivní pracovníky | Karta **Záznamy s končící platností** v sekci **Správa zaměstnanců** obsahovala neaktivních pracovníky. Nyní obsahuje pouze aktivní pracovníky. |
 | 486840 | Ze sekce **Pracovní položky přiřazené mně** se otevírá chybná žádost o pracovní volno | Výběr žádosti o pracovní volno ze sekce **Pracovní položky přiřazené mně** již neotevře poslední žádost o pracovní volno nebo absenci přiřazenou aktuálnímu uživateli. |
-| 506868 | Pole **Funkce** pro Common Data Service není nastaveno na entitu **Pracovní pozice** | Pole **Funkce** v entitách **Pozice** a **Pracovní pozice** se zobrazovalo jako nezadané. Pole **Funkce** se nyní zobrazuje. |
+| 506868 | Pole **Funkce** pro Dataverse není nastaveno na entitu **Pracovní pozice** | Pole **Funkce** v entitách **Pozice** a **Pracovní pozice** se zobrazovalo jako nezadané. Pole **Funkce** se nyní zobrazuje. |
 | 430359 | Nelze přistupovat k úkolům kontrolního seznamu pro zrušení zprovoznění s přiřazenými rolemi manažera a zaměstnance | Pracovníci s budoucím datem ukončení pracovního poměru neměli přístup k úkolům kontrolního seznamu, pokud měli pouze roli zaměstnance nebo manažera. Nyní mohou k úkolům pro zrušení zprovoznění přistupovat uživatelé pouze s rolí zaměstnance nebo manažera s budoucím datem ukončení pracovního poměru. |
 | 458102 | Nový zaměstnanec se neobjeví v entitě **Informace o mzdách pracovníka** při jejím vytvoření | Noví zaměstnanci jsou zahrnuti do entity informací o mzdách pracovníků, aniž by museli před exportem entity pro zaměstnance otevírat informace o mzdě. |
 
@@ -85,6 +84,3 @@ Následující nová funkce je naplánována do budoucího vydání:
 [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Proces aktualizace](hr-admin-setup-update-process.md)
 [Správa funkcí](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

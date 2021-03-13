@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689487"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154170"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -34,9 +33,19 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.16
+
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Formáty elektronického hlášení „Přiznání DPH (CZ)“ a „Export kontrolního hlášení (CZ)“ pro Českou republiku
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novými formáty |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 22. ledna 2022 plánujeme nadále nepodporovat formáty elktronických výkazů (ER) „Přiznání DPH (CZ)“, „Export kontrolního hlášení (CZ)“. Místo toho jsou v rámci modelu „Daňové přiznání“ zavedeny nové formáty XML přiznání DPH (CZ), Excel přiznání DPH (CZ), XML kontrolního hlášení DPH (CZ). |
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>„Formát exportu transakcí hlavní knihy (BE)“ Formát elektronického hlášení a příslušný model „Export transakcí hlavní knihy (BE)“ pro Belgii
 
@@ -107,6 +116,3 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 Další informace o funkcích, které byly v předchozích verzích odebrány nebo zastaraly, naleznete v tématu [Odebrané nebo zastaralé funkce v předchozích verzích](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

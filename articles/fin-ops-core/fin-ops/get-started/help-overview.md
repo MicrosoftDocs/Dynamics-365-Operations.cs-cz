@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695132"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154146"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -163,7 +163,4 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Tento web hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/) | Tento web hostuje blogy, fóra a videa. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Tento web obsahuje hodnocení a informace o prodeji. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Tento web hostuje zdroje školení, sestavy ke stažení a dokumenty whitepaper, a je primárním webem podpory pro držitele plánu služeb. Přístup k některým zdrojům na tomto webu může vyžadovat plán služeb. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Tento web hostuje zdroje školení, sestavy ke stažení a dokumenty whitepaper, a je primárním webem podpory pro držitele plánu služeb. Přístup k některým zdrojům na tomto webu může vyžadovat plán služeb. |

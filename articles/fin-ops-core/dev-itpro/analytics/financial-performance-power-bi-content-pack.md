@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 53dbf90b09ce532731ecaabc45418926da6083d5
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682738"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154354"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
@@ -87,7 +87,4 @@ Následující entity byly použity jako základ řešení PowerBI.com **Finanč
 - Hlavní knihy
 - ChartofAccounts
 
-Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit sešit aplikace [Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit sešit aplikace [Microsoft Excel](https://docs.microsoft.com/dynamics/s-e/). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu.

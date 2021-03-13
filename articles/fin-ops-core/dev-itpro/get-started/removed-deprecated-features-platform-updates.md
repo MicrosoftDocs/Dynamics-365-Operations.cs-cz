@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689559"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154080"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -32,7 +32,55 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="feature-removed-effective-january-28-2021"></a>Funkce odstraněna s účinností od 28. ledna 2021
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Dávková úloha pro zpracování defragmentace SQL indexu
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Abychom snížili režii provozu, monitorování a údržby správy indexu zákazníky, byla tato funkce odstraněna. |
+| **Nahrazeno jinou funkcí?**   | Do budoucna budou údržbu indexu provádět služby společnosti Microsoft. K tomu bude docházet nepřetržitě, aniž by to ovlivnilo pracovní vytížení uživatele. |
+| **Ovlivněné oblasti produktu**         | Aplikace Finance and Operations|
+| **Možnost nasazení**              | Nasazení v cloudu - ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
+| **Stav**                         | Tato funkce byla odstraněna. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.17 aplikací Finance and Operations
+
+> [!IMPORTANT]
+> Verze 10.0.17 je k dispozici jako součást vydání náhledu. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Chcete-li podporovat nejnovější verze Visual Studio, je třeba provést určité změny v rozšířeních X ++ pro Visual Studio. Tyto změny nejsou kompatibilní s Visual Studio 2015. |
+| **Nahrazeno jinou funkcí?**   | Visual Studio 2017 nahradí Visual Studio 2015 jako nasazená a požadovaná verze. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Po aktualizaci budou předchozí nástroje X++ odebrány z Visual Studio 2015 a aktualizované nástroje se nebudou instalovat ve Visual Studio 2015. Na hostovaná sestavení to nemá žádný dopad. U sestavování virtuálních počítačů je nutné ručně aktualizovat kanál sestavení (definice sestavení), aby se změnila závislost z MSBuild 14.0 (Visual Studio 2015) na MSBuild 15.0 (Visual Studio 2017), jak je popsáno v části [Aktualizace staršího kanálu v Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Uživatelský avatar 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Avatar uživatele, který se zobrazuje na pravé straně navigačního panelu, byl načten pomocí rozhraní API z ovládacího prvku záhlaví Dynamics 365, jehož podpora byla ukončena. |
+| **Nahrazeno jinou funkcí?**   | Uživatelé místo toho uvidí své iniciály v kruhu na navigačním panelu. Toto je stejný vizuál, jaký se aktuálně používá na vývojových počítačích. |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Odstraněno od verze 10.0.17. |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Ukončení podpory portálu Enterprise (EP)  
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Artefakty metadat spojené s Dynamics AX 2012 Enterprise Portal (EP) byly vyřazeny, protože aplikace Finance and Operations nikdy nepodporovaly EP. |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Ve vydání z října 2021 je naplánováno odstranění všech kódů EP. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.15 aplikací Finance and Operations
 
@@ -192,6 +240,3 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 Další informace o funkcích, které byly v předchozích verzích odebrány nebo zastaraly, naleznete v tématu [Odebrané nebo zastaralé funkce v předchozích verzích](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
