@@ -2,7 +2,7 @@
 title: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 description: Tento článek vysvětluje, jak vyřešit problém, kdy jsou názvy osob a pozic zkráceny při odběratelově zobrazení hierarchie pozic v aplikaci Microsoft Dynamics 365 Human Resources. Zkrácení textu může ztížit pořízení snímku obrazovky nebo tisk hierarchie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0dc91d3165f14c165f75756dc63a3dc8f63149aa
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417638"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111770"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 
@@ -104,6 +104,3 @@ Na základě polí, která jste vybrali do schématu, každý uzel zobrazí př�
 **Další možnost**
 
 V aplikaci Human Resources můžete rovněž použít pracovní prostor **Osoby** pro zobrazení některých informací souvisejících s hierarchií.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

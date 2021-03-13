@@ -2,7 +2,7 @@
 title: Kopírovat instanci
 description: Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox).
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527830"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111771"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
@@ -41,7 +41,7 @@ Při kopírování instance mějte na paměti následující tipy:
 
 - Při kopírování databáze aplikace Human Resources nejsou zkopírovány prvky (aplikace nebo data), které jsou obsaženy v prostředí Microsoft Power Apps. Informace o tom, jak kopírovat prvky do prostředí Power Apps, naleznete v tématu [kopírování prostředí](https://docs.microsoft.com/power-platform/admin/copy-environment). Prostředí Power Apps, které chcete přepsat, musí být prostředí izolovaného prostoru (sandbox). Chcete-li změnit produkční prostředí Power Apps na prostředí s izolovaným prostorem, musíte být globálním správcem klienta. Další informace o změně prostředí Power Apps naleznete v tématu [přepnutí instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Common Data Service, musíte znovu použít vlastní pole na entity Common Data Service. Viz [Použití vlastních polí na Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Dataverse, musíte znovu použít vlastní pole na tabulky Dataverse. Viz [Použití vlastních polí na Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Vliv kopírování databáze aplikace Human Resources
 
@@ -72,15 +72,15 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
 4. V podokně úloh **Kopírovat instanci** vyberte instanci, kterou chcete přepsat, a poté vyberte možnost **kopírovat**. Počkejte, až bude hodnota pole **Kopírovat stav** aktualizována na hodnotu **dokončeno**.
 
-   ![[Výběr instance, která má být přepsána](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Výběr instance, kterou chcete přepsat](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vyberte **Power Platform** a přihlaste se do centra pro správu Microsoft Power Platform.
 
-   ![[Vyberte Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Výběr Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vyberte prostředí Power Apps, ke zkopírování a pak vyberte **Kopírovat**.
 
-7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Common Data Service. Další informace a pokyny naleznete v části [Konfigurace integrace Common Data Service](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Dataverse. Další informace a pokyny naleznete v části [Konfigurace integrace Dataverse](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Datové prvky a stavy
 
@@ -122,11 +122,11 @@ Všichni uživatelé v cílovém prostředí izolovaného prostoru (sandbox) vč
 
 Všichni uživatelé, kteří nejsou správci v cílovém prostředí izolovaného prostoru (sandbox), jsou zakázáni, aby zabránili nechtěným přihlášením v prostředí karantény. Správci mohou v případě potřeby znovu povolit uživatele.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Použití vlastních polí na Common Data Service
+## <a name="apply-custom-fields-to-dataverse"></a>Použití vlastních polí na Dataverse
 
-Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Common Data Service, musíte znovu použít vlastní pole na entity Common Data Service.
+Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Dataverse, musíte znovu použít vlastní pole na tabulky Dataverse.
 
-Pro každé vlastní pole, které je vystaveno v entitách Common Data Service, proveďte následující kroky:
+Pro každé vlastní pole, které je vystaveno v tabulkách Dataverse, proveďte následující kroky:
 
 1. Přejděte do vlastního pole a vyberte **Upravit**.
 
@@ -140,7 +140,7 @@ Pro každé vlastní pole, které je vystaveno v entitách Common Data Service, 
 
 6. Znovu vyberte **Použít změny**.
 
-Proces zrušení výběru, použití změn, opětovného výběru a opětovného použití změn vyzve schéma k aktualizaci v Common Data Service pro zahrnutí vlastních polí.
+Proces zrušení výběru, použití změn, opětovného výběru a opětovného použití změn vyzve schéma k aktualizaci v Dataverse pro zahrnutí vlastních polí.
 
 Další informace o vlastních polích naleznete v tématu [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Další informace o vlastních polích naleznete v tématu [Vytvoření vlastní
 [Odebrání instance](hr-admin-setup-remove-instance.md)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

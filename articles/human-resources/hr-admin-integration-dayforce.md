@@ -2,7 +2,7 @@
 title: Konfigurace integrace s aplikací Dayforce
 description: Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto článku. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417555"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111772"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
 
@@ -676,6 +676,3 @@ Zaměstnanci mohou deklarovat informace o cestovním pasu. Tato informace je typ
 
 Zaměstnanec může deklarovat více identifikačních čísel typu identifikace **Pas**. Do aplikace Dayforce se integruje pouze zadání aktuálního aktivního pasu. Po uplynutí platnosti všech zadání pasu se integruje do Dayforce ten, který byl naposledy vydán.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

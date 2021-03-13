@@ -2,7 +2,7 @@
 title: Správa dat vypršení platnosti zaměstnaneckých výhod
 description: Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4eb882f564e2b74ae15cd54fcda6e5370b07d4
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417556"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111769"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Správa dat vypršení platnosti zaměstnaneckých výhod
 
@@ -46,6 +46,3 @@ Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstna
 15. Klikněte na možnost Zaměstnanecké výhody.
 16. V seznamu vyhledejte výhodu a vyberte záznam. Všimněte si nového koncového data pokrytí.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

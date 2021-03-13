@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669157"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111705"
 ---
 # <a name="recruit-job-candidates"></a>Nábor uchazečů o práci
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources vám pomůže spravovat žádosti o nábor. Pomůž
 Pokud nepoužíváte samostatnou náborovou aplikaci, můžete kandidáty spravovat také ručně v Human Resources.
 
 >[!NOTE]
->Pokud jste správcem nebo vývojářem a chcete integrovat Human Resources s náborovou aplikací jiných výrobců, přečtěte si [Konfigurace integrace Common Data Service](hr-admin-integration-common-data-service.md) a [Konfigurace virtuální entity Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)
+>Pokud jste správcem nebo vývojářem a chcete integrovat Human Resources s náborovou aplikací jiných výrobců, přečtěte si [Konfigurace integrace Dataverse](hr-admin-integration-common-data-service.md) a [Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Najdete zde také náborové integrační aplikace v [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,15 +46,13 @@ Pokud nepoužíváte samostatnou náborovou aplikaci, můžete kandidáty spravo
 
 ## <a name="enable-recruiting-requests"></a>Povolit požadavky na nábor
 
-Pokud chcete odeslat žádosti o nábor v Human Resources, musíte nejprve povolit tuto funkci v části **Parametry Human Resources**.
+Pokud chcete odeslat žádosti o nábor v Human Resources, musíte nejprve povolit tuto funkci v části **Sdílené parametry Human Resources**.
 
 1. V pracovním prostoru **Správa zaměstnanců** vyberte kartu **Odkazy**.
 
-2. V části **Nastavení** vyberte **parametry lidských zdrojů**.
+2. V části **Nastavení** vyberte **Sdílené parametry Human Resources**.
 
-3. Na kartě **Obecné** v části **NÁBOR** nastavte **Povolit žádosti o nábor** na **Ano**.
-
-   ![Povolit požadavky na nábor](./media/hr-recruit-0-enable-requests.png)
+3. Na kartě **Nábor** v části **NÁBOR** nastavte **Povolit žádosti o nábor** na **Ano**.
 
 ## <a name="add-a-recruiting-request-location"></a>Přidání umístění žádosti o nábor
 
@@ -224,8 +222,6 @@ V případě potřeby můžete kandidáta poté, co ho přijmete, propustit. Nap
 
 ## <a name="see-also"></a>Viz také
 
-[Konfigurace virtuálních entit Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organizování zaměstnanců](hr-personnel-departments-jobs-positions.md)<br>
 [Nastavení komponent práce](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

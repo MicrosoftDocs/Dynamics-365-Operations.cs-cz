@@ -2,8 +2,8 @@
 title: Nastavení kódů důvodů
 description: Aplikace Dynamics 365 Human Resources používá kódy důvodu k vysvětlení důvodu změny zaměstnaneckých výhod.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83923eecf7eb23a21b8dbbd39491014fa2bc20d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ae82c8312d344f5380adec8413766304681a0a05
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417661"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111761"
 ---
 # <a name="set-up-reason-codes"></a>Nastavení kódů důvodů
 
-Aplikace Dynamics 365 Human Resources používá kódy důvodu k vysvětlení důvodu změny zaměstnaneckých výhod. 
+Aplikace Dynamics 365 Human Resources používá kódy důvodu k vysvětlení důvodu změny zaměstnaneckých výhod.
 
-1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Kódy důvodu**.
+> [!NOTE]
+> Od ledna 2021 migrují kódy důvodu do pracovního prostoru **Správa zaměstnanců** místo pracovního prostoru **Správa zaměstnaneckých výhod**. Další informace viz [Ruční migrace kódů důvodů do Správy zaměstnanců](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+
+## <a name="create-reason-codes"></a>Vytvoření kódů rozhodnutí
+
+1. V pracovním prostoru **Správa zaměstnanců** (nebo pracovním prostoru **Správa zaměstnaneckých výhod**, pokud vaše kódy důvodu ještě nebyly migrovány) vyberte **Odkazy** a potom vyberte **Kódy důvodů**.
 
 2. Zvolte **Nové**.
 
@@ -40,7 +45,37 @@ Aplikace Dynamics 365 Human Resources používá kódy důvodu k vysvětlení d�
    | **Kód důvodu** | Jedinečný název pro identifikaci důvodu, kdy zaměstnanec změnil zápis plánu zaměstnaneckých výhod. |
    | **Popis** | Popis kódu důvodu. |
 
-4. Zvolte **Uložit**. 
+4. V **Použitelné scénáře** nastavte **Správa zaměstnaneckých výhod** na **Ano**. (Nepoužije se, pokud vaše kódy důvodu dosud nemigrovaly do pracovního prostoru **Správa zaměstnanců**.)
 
+5. Zvolte **Uložit**.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Ruční migrace kódů důvodů do Správy zaměstnanců
+
+V lednu 2021 migrují kódy důvodu do pracovního prostoru **Správa zaměstnanců** místo pracovního prostoru **Správa zaměstnaneckých výhod**. Data kódu většiny důvodů se automaticky přenesou do vašeho prostředí. Některá data kódů důvodu nemusí migrovat. Například kódy důvodu mají nyní maximálně 15 znaků, takže jakékoli kódy příčiny delší než 15 znaků nebudou migrovány automaticky.
+
+Uvidíte banner na stránce **Odkazy** pracovního prostoru **Správa zaměstnaneckých výhod**, který vás informuje o migraci a o tom, zda kódy důvodu neprovedly migraci.
+
+1. Vyberte **Kódy důvodů** pro podrobnosti o stavu migrace.
+
+   [![Kódy důvodu](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+
+2. Vyberte kód důvodu, který se nepodařilo migrovat.
+
+   [![Stav migrace kódu důvodu](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+
+3. Vyberte **Migrujte kód důvodu**.
+
+   [![Migrovat kód důvodu](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+
+4. V podokně **Migrace kódu důvodu zaměstnaneckých výhod** máte dvě možnosti pro mapování na kód důvodu Správy zaměstnanců:
+
+   - Chcete-li ve správě zaměstnanců použít existující kód důvodu, vyberte jeden důvod v rozbalovací nabídce **Použít stávající kód důvodu**.
+     > [!NOTE]
+     > Existující kód důvodu můžete použít ve správě zaměstnanců pouze v případě, že na něj již jiný kód důvodu správy výhod nebyl migrován.
+   - Chcete-li ve správě zaměstnanců vytvořit nový kód důvodu, zadejte nový v **Nový kód důvodu** a poté zadejte popis do **Nový popis**.
+
+   [![Namapujte na kód důvodu správy zaměstnanců](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+
+Po migraci kódů důvodu na správu zaměstnanců je možnost jejich použití ve správě zaměstnaneckých výhod automaticky nastavena na **Ano**.
+
+[![Použít ód důvodu ve správě zaměstnaneckých výhod](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)

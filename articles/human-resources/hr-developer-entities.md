@@ -1,9 +1,9 @@
 ---
-title: Entity Common Data Service
-description: Microsoft Dynamics 365 Human Resources používá Common Data Service k povolení scénářů rozšiřitelnosti a integrace.
+title: Tabulky Dataverse
+description: Microsoft Dynamics 365 Human Resources používá Dataverse k povolení scénářů rozšiřitelnosti a integrace.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,28 +18,27 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2f075a8e96af55b1363d2d51db377c5b25c38775
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529999"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111818"
 ---
-# <a name="common-data-service-entities"></a>Entity Common Data Service
+# <a name="dataverse-tables"></a>Tabulky Dataverse
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+Microsoft Dynamics 365 Human Resources používá Dataverse k povolení scénářů rozšiřitelnosti a integrace.
 
-Microsoft Dynamics 365 Human Resources používá Common Data Service k povolení scénářů rozšiřitelnosti a integrace.
+> [!NOTE]
+> Entity Human Resources odpovídají Dataverse tabulkám. Pro více informací o Dataverse (dříve Common Data Service) a aktualizacích terminologie, viz [Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Další informace týkající se Common Data Service získáte v tématu [Co je Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+Následující tabulky Dataverse jsou k dispozici na základě entit lidských zdrojů.
 
-V Common Data Service jsou k dispozici následující entity lidských zdrojů.
+## <a name="benefit-tables"></a>Tabulky výhod
 
-## <a name="benefit-entities"></a>Entity zaměstnaneckých výhod
-
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
-| Interval provádění výpočtu zaměstnaneckých výhod | cdm_benefitcalculationfrequency |
+| Frekvence výpočtu zaměstnaneckých výhod | cdm_benefitcalculationfrequency |
 | Platební období – interval provádění výpočtu zaměstnaneckých výhod | cdm_benefitcalculationfrequencypayperiod |
 | Sazba výpočtu zaměstnanecké výhody | cdm_benefitcalculationrate |
 | Podrobnosti sazby výpočtu zaměstnanecké výhody | cdm_benefitcalculationratedetail |
@@ -47,9 +46,9 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Plán zaměstnaneckých výhod | cdm_benefitplan (není povoleno pro podporu vlastních polí) |
 | Typ zaměstnanecké výhody | cdm_benefittype |
 
-## <a name="business-process-tasks-entities"></a>Entity úkolů obchodního procesu
+## <a name="business-process-tasks-tables"></a>Tabulky úkolů obchodního procesu
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Kalendář obchodních procesů | cdm_businessprocesscalendar |
 | Přiřazení skupiny obchodních procesů | cdm_businessprocessgroupassignment |
@@ -58,9 +57,9 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Záhlaví šablony kontrolního seznamu | cdm_businessprocesstemplateheader |
 | Úkol šablony kontrolního seznamu | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-entities"></a>Entity kompenzace
+## <a name="compensation-tables"></a>Tabulky Kompenzace
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Fixní plán kompenzace | cdm_compensationfixedplan |
 | Mřížka kompenzace | cdm_compensationgrid |
@@ -77,9 +76,9 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Pravidlo připsání | cdm_vestingrule |
 | Fixní kompenzace pracovníka | cdm_workerfixedcompensation |
 
-## <a name="organization-entities"></a>Entity organizace
+## <a name="organization-tables"></a>Organizační tabulky
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Oddělení | cdm_department |
 | Zaměstnání | cdm_employment |
@@ -95,33 +94,33 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Pozice | cdm_title |
 
 > [!NOTE]
-> Finanční dimenze pro **Typ pozice**, **Přiřazení pracovníka poziec** a **Zaměstnání** poskytují integraci v jediném směru do Common Data Service. Aktualizace finančních dimenzí nelze v současné době synchronizovat z Common Data Service do modulu Human Resources. 
+> Finanční dimenze pro **Typ pozice**, **Přiřazení pracovníka poziec** a **Zaměstnání** poskytují integraci v jediném směru do Dataverse. Aktualizace finančních dimenzí nelze v současné době synchronizovat z Dataverse do modulu Human Resources. 
 
-## <a name="leave-and-absence-entities"></a>Entity pracovního volna a absence
+## <a name="leave-and-absence-tables"></a>Tabulky Pracovní volno a absence
 
-| Jméno | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Transakce fondu pracovního volna | cdm_leavebanktransaction |
-| Opustit zápis | cdm_leaveenrollment |
+| Registrace pracovního volna | cdm_leaveenrollment |
 | Plán pracovního volna | cdm_leaveplan |
 | Žádost o pracovní volno | cdm_leaverequest |
 | Podrobnosti o požadavku na dovolenou | cdm_leaverequestdetail |
 | Typ pracovního volna | cdm_leavetype |
 | Kód důvodu typu volna | cdm_leavetypereasoncode |
 
-## <a name="payroll-entities"></a>Entita mzdy
+## <a name="payroll-tables"></a>Výplatní tabulky
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Platební cyklus | cdm_paycycle |
-| Mzdové období | cdm_payperiod |
+| Platební období | cdm_payperiod |
 | Kód příjmů mzdy | cdm_payrollearningcode |
 | Úhrady na bankovní účet | cdm_bankaccountdisbursement |
 | Daňová oblast | cdm_taxregion |
 
-## <a name="worker-entities"></a>Entity pracovníků
+## <a name="worker-tables"></a>Tabulky pracovníků
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Pracovní podproces | cdm_worker |
 | Adresa pracovníka | cdm_workeraddress |
@@ -135,22 +134,22 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Časový interval pracovního kalenáře | cdm_workcalendartimeinterval (není povoleno pro podporu vlastních polí) |
 | Bankovní účet pracovníka | cdm_workerbankaccount |
 
-## <a name="worker-setup-entities"></a>Entity nastavení pracovníků
+## <a name="worker-setup-tables"></a>Tabulky nastavení pracovníků
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Stav veterána | cdm_veteranstatus |
 | Etnický původ | cdm_ethnicorigin |
 | Kód důvodu | cdm_reasoncode |
-| Subjekt vydávající identifikaci osob | cdm_personidentificationissuingagency |
+| Úřad vydávající identifikaci osoby | cdm_personidentificationissuingagency |
 
-## <a name="competency-entities"></a>Entity kompetence
+## <a name="competency-tables"></a>Tabulky kompetencí
 
-| Název | Celek |
+| Jméno | Tabulka |
 | --- | --- |
 | Typ dovednosti | cdm_skilltype |
 
-## <a name="entity-relationship-models"></a>Modely vztahu entity
+## <a name="table-relationship-models"></a>Modely vztahů tabulek
 
 ### <a name="worker"></a>Pracovní podproces
 
@@ -178,8 +177,9 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 
 ## <a name="see-also"></a>Viz také
 
-[Volba technologie integrace dat](hr-admin-integration-choose-technology.md)</br>
-[Konfigurace integrace s Common Data Service](hr-admin-integration-common-data-service.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Volba technologie integrace dat](hr-admin-integration-choose-technology.md)<br>
+[Konfigurace integrace s Dataverse](hr-admin-integration-common-data-service.md)<br>
+[Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Virtuální tabulky lidských zdrojů - časté dotazy](hr-admin-virtual-entity-faq.md)<br>
+[Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Aktualizace terminologie](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)

@@ -2,7 +2,7 @@
 title: Proces získání nároku na zaměstnaneckou výhodu
 description: Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 20fb04613b34acc869db4fea016a23e80b0f1bb5
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417551"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111718"
 ---
 # <a name="benefit-eligibility-process"></a>Proces získání nároku na zaměstnaneckou výhodu
 
@@ -54,6 +54,3 @@ Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody. Vý
 25. Otevřete filtr sloupce Stav.
 26. Seřadit od A do Z
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

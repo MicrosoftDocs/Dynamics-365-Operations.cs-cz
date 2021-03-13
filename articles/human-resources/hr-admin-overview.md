@@ -1,8 +1,8 @@
 ---
-title: Přehled
+title: Přehled správy
 description: Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíže aplikace Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527854"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111840"
 ---
-# <a name="overview"></a>Přehled
+# <a name="administration-overview"></a>Přehled správy
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 
 - Nastavení integrace dat
   - [Volba technologie integrace dat](hr-admin-integration-choose-technology.md)
-  - [Konfigurace integrace s Common Data Service](hr-admin-integration-common-data-service.md)
+  - [Konfigurace integrace s Dataverse](hr-admin-integration-common-data-service.md)
   - [Konfigurace integrace s aplikací Finance](hr-admin-integration-finance.md)
   - [Konfigurace integrace s aplikací Dayforce](hr-admin-integration-dayforce.md)
   - [Vytvoření aplikace pro export opakujících se dat](hr-admin-integration-recurring-data-export.md)
@@ -102,5 +102,3 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 - [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)
 - [Průvodce vývojáře](hr-developer-overview.md)
 - [Uživatelská příručka](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

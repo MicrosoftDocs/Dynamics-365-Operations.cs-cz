@@ -2,7 +2,7 @@
 title: Proces kompenzace
 description: Zpracování kompenzace umožňuje vypočítat částky nové základní kompenzace pro zaměstnance na základě úpravy jmění, cílů zvýšení zásluh a výkonnosti.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cf5b8cd297f1686998688979a736f47f7d100c4
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417628"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111819"
 ---
 # <a name="process-compensation"></a>Proces kompenzace
 
@@ -77,6 +77,3 @@ Po zkontrolování částek kompenzace pro zaměstnance a provedení úprav dopo
 Jakmile má jedna nebo více událostí zaměstnance aktualizován stav na Schváleno, mohou být události nahrány do záznamů fixní kompenzace zaměstnance. To lze provést postupným výběrem jednotlivých událostí zaměstnance a klepnutím na tlačítko **Nahrát kompenzaci zaměstnance** na stránce **Výsledky zaměstnance** nebo klepnutím na tlačítko **Načíst kompenzaci** na stránce **Výsledky procesu** k načtení stránky všech schválených událostí zaměstnance najednou.
 
 Klepnutím na tlačítko **OK** v dialogovém okně **Načíst kompenzaci** přidáte řádky akce kompenzace na stránku **Fixní kompenzace zaměstnance**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

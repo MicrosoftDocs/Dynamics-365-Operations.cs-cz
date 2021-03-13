@@ -2,7 +2,7 @@
 title: Zpracování způsobilosti k registraci
 description: Tento článek vysvětluje, jak spustit proces nároku na přihlášení.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417585"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111809"
 ---
 # <a name="process-enrollment-eligibility"></a>Zpracování způsobilosti k registraci
 
@@ -72,6 +72,3 @@ Tento článek vysvětluje, jak zobrazit výsledky procesu nároku.
    | **Výsledný stav** | To bude způsobilé nebo nezpůsobilé. Pokud pracovník nesplní požadované informace, jako je například četnost plateb nebo fixní kompenzace, nebo pokud v plánu zaměstnaneckých výhod chybí informace, které brání registraci zaměstnanců, nebude mít výsledný stav nárok. |
    | **Výsledná zpráva** | Označuje, proč pracovník nemá nárok na plán zaměstnaneckých výhod nebo který předává pravidlo způsobilosti. |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

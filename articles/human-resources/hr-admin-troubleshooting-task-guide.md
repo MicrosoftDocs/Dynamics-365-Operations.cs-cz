@@ -2,7 +2,7 @@
 title: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
 description: Tento článek vysvětluje, jak uložit průvodce záznamem úloh do Microsoft Dynamics Lifecycle Services (LCS) a poté je opětovně přehrát.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c81c345932e0e3dce4b13104222ed9f668a3c460
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417639"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111846"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
 
@@ -63,6 +63,3 @@ Postupujte podle těchto kroků k opětovnému přehrání průvodce záznamem �
 2. Zvolte **Otevřít z LCS**.
 3. Vyberte knihovnu a BPM uzel, který má uloženého průvodce záznamem úloh.
 4. Otevřete průvodce záznamem úloh.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

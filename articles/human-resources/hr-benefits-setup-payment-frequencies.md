@@ -2,7 +2,7 @@
 title: Nastavení frekvencí platby
 description: Microsoft Dynamics 365 Human Resources používá frekvence plateb k výpočtu ročního platu zaměstnaneckých výhod, k určení částky prémie na výplatu zaměstnaneckých výhod, kterou zaměstnanec platí za každé výplatní období, a četnost plateb pro zprostředkovatele.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f5a2ad19d9f9f3a6afa2574d9fdb8841c70d6e6e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417657"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111805"
 ---
 # <a name="set-up-payment-frequencies"></a>Nastavení frekvencí platby
 
@@ -56,6 +56,3 @@ Pole faktorů přepočtu identifikují faktor přepočtu z četnosti plateb do s
    | **Hodinový koeficient převodu** | Roční koeficient převodu pro frekvenci plateb Roční koeficient převodu pro měsíční frekvenci plateb je například následující: </br></br>(12 měsíčních plateb / 2080 hodin) = 0,005769
 
 4. Zvolte **Uložit**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

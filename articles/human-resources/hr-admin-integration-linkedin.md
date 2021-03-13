@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4fda9d85b459d233e6239f3fcffbb48e596d4085
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527878"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111847"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrace s LinkedIn Talent Hub
 
@@ -127,14 +127,14 @@ Po uložení a zavření nového uživatele aplikace v předchozí části jste 
     - **Název**: Zadejte název role zabezpečení Power Apps, kterou jste vytvořili dříve, například **Integrace LinkedIn Talent Hub HRIS**.
     - **ID uživatele**: Vyberte uživatele, který má oprávnění k zápisu dat do pracovního prostoru Správa zaměstnanců.
 
-### <a name="create-the-entity-in-common-data-service"></a>Vytvoření entity v Common Data Service
+### <a name="create-the-table-in-dataverse"></a>Vytvoření tabulky v Dataverse
 
 > [!IMPORTANT]
-> Integrace s LinkedIn Talent Hub závisí na virtuálních entitách v Common Data Service pro Human Resources. Jako předpoklad pro tento krok musíte v nastavení nakonfigurovat virtuální entity. Informace o konfiguraci virtuálních entit najdete v tématu [Konfigurace virtuálních entit Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> Integrace s LinkedIn Talent Hub závisí na virtuálních tabulkách v Dataverse pro Human Resources. Jako předpoklad pro tento krok musíte v nastavení nakonfigurovat virtuální tabulky. Informace o konfiguraci virtuálních tabulke najdete v tématu [Konfigurace virtuálních tabulek Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. V Human Resources otevřete stránku **Integrace Common Data Service (CDS)**.
+1. V Human Resources otevřete stránku **Integrace Dataverse**.
 
-2. Vyberte kartu **Virtuální entity**.
+2. Vyberte kartu **Virtuální tabulky**.
 
 3. Filtrujte seznam entit podle popisku entity a vyhledejte **Exportovaný kandidát LinkedIn**.
 
@@ -188,8 +188,5 @@ Následující údaje se importují a zahrnou do nového záznamu zaměstnance:
 
 ## <a name="see-also"></a>Viz také
 
-[Konfigurace virtuálních entit Common Data Service](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Co je Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Konfigurace virtuálních tabulek Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

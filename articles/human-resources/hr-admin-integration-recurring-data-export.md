@@ -2,7 +2,7 @@
 title: Vytvoření aplikace pro export opakujících se dat
 description: Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97972d2179c42e9d2d672cbebb75643ef0a02a62
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417672"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111756"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Vytvoření aplikace pro export opakujících se dat
 
@@ -205,6 +205,3 @@ Následující obrázek ukazuje, jak vypadá aplikace Logic Apps Designer, když
 V tomto návodu jste se seznámili s použitím llogic app k exportu dat z Human Resources a k uložení exportovaných dat do složky OneDrive pro firmy. Kroky v tomto výukovém programu můžete upravit podle potřeb firmy.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

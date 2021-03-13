@@ -2,7 +2,7 @@
 title: Konfigurace typů životních událostí
 description: Microsoft Dynamics 365 Human Resources používá typy životní události k definování událostí, které jsou platné k aktualizaci přihlášení zaměstnaneckých výhod.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417618"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111806"
 ---
 # <a name="configure-life-event-types"></a>Konfigurace typů životních událostí
 
@@ -88,6 +88,3 @@ Při vytváření typu životní události můžete vybrat některou z následuj
 | **Vypršení platnosti přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Použití zpracování životní události. Pokud například upravíte datum vypršení platnosti pravidla způsobilosti plánu na hodnotu 5:00 odp., kdykoliv po 5:00 odp. nebo v následujících dnech, a poté spustíte zpracování změny události životního cyklu, zobrazí se zpráva oznamující, že platnost přepisu pravidla způsobilosti vypršela. |
 | **Nový plán zaměstnaneckých výhod (nespecifický pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Nový | <ul><li>Možnosti způsobilosti jsou přidány do aktuálního plánu.</li><li>Je přidán nový plán s připojenými možnostmi způsobilosti.</li></ul></br></br>Pracovníci HR by v této instanci měli spustit zpracování nároků na události životního cyklu. |
 | **Změna přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Pravidla/možnosti > Pravidla zaměstnaneckých výhod | Použití zpracování nároku na životní událost. Protokolováno, když se v záznamech **EhrBenefitEligibilityRule** změnily následující hodnoty: **UseEmplCategory**, **UseEmplStatus** nebo **UseEmplType**. Aktualizuje pouze transakce životní události, které již existují pro změněné pravidlo nebo kritéria způsobilosti. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

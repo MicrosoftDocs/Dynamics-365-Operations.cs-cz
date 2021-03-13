@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4417707"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111737"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Příprava pro ostré nasazení Human Resources
 
@@ -53,28 +53,36 @@ V následující tabulce jsou uvedeny všechny kroky v procesu, očekávané trv
 
 ## <a name="completing-the-lcs-methodology"></a>Dokončení metodiky LCS
 
-Hlavním milníkem v každém implementačním projektu je přechod do produkčního prostředí. 
-
-Abychom zajistili, že se produkční prostředí používá pro živé operace, Microsoft zřídí produkční instanci pouze v případě, že se implementace blíží do fáze **Provoz** po dokončení požadovaných činností v metodice LCS. Další informace o prostředích ve vašem předplatném najdete v části  [Průvodce licencováním Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Zákazníci musí dokončit fáze **Analýza**, **Design a vývoj** a **Test** v metodice LCS před tím, než je k dispozici tlačítko **Konfigurovat**  pro vyžádání produkčního prostředí. Chcete-li dokončit fázi v LCS, musíte nejprve dokončit všechny požadované kroky v této fázi. Když jsou dokončeny všechny kroky ve fázi, můžete dokončit celou fázi. Fázi můžete kdykoli znovu otevřít, pokud musíte provést změny. Další informace viz  [Lifecycle Services (LCS) pro zákazníky aplikací Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Proces dokončení kroku má dvě části: 
+Hlavním milníkem v každém implementačním projektu je přechod do produkčního prostředí. Proces dokončení kroku má dvě části: 
 
 - Proveďte skutečnou práci, jako je analýza přizpůsobení a mezer nebo testování přijetí uživatele (UAT). 
 - Označte odpovídající krok v metodice LCS jako dokončený. 
 
-Dobrou praxí je plnění kroků v metodice při postupu v implementaci. Nečekejte až na poslední chvíli. Neklikejte jen na všechny kroky, abyste získali produkční prostředí. Je v nejlepším zájmu zákazníka mít solidní implementaci. 
+Dobrou praxí je plnění kroků v metodice při postupu v implementaci. Nečekejte až na poslední chvíli. Je v nejlepším zájmu zákazníka mít solidní implementaci. 
 
 ## <a name="uat-for-your-solution"></a>UAT pro vaše řešení
 
 Během fáze UAT musíte otestovat všechny obchodní procesy, které jste implementovali, a veškerá přizpůsobení, která jste provedli, v prostředí Sandbox v implementačním projektu. Abychom vám pomohli zajistit úspěšné uvedení do provozu, měli byste při dokončení fáze UAT zvážit následující: 
 
+- Doporučujeme, aby váš proces UAT začínal čistým a čerstvým prostředím, kde jsou data z vaší konfigurace GOLD zkopírována do prostředí před spuštěním procesu UAT. Jako prostředí GOLD doporučujeme používat provozní prostředí, dokud nebude v ostrém provozu, kdy se prostředí stává provozním.
 - Testovací případy pokrývají celý rozsah požadavků. 
 - Otestujte pomocí migrovaných dat. Tato data by měla zahrnovat kmenová data, jako jsou pracovníci, úlohy a pozice. Zahrňte také počáteční zůstatky, jako je nahromadění dovolené a absence. Nakonec zahrňte otevřené transakce, jako jsou aktuální registrace výhod. Kompletní testování se všemi typy dat, i když datová sada není dokončena. 
 - Testujte pomocí správných rolí zabezpečení (výchozí role a vlastní role), které jsou přiřazeny uživatelům. 
 - Ujistěte se, že řešení splňuje veškeré regulační požadavky specifické pro společnost a odvětví. 
 - Zdokumentujte všechny funkce a získejte souhlas a potvrzení od zákazníka. 
+
+## <a name="mock-go-live"></a>Napodobení ostrého provozu
+
+Před uvedením do ostrého provozu musíte provést napodobení ostrého provozu pro otestování kroků potřebných pro přechod ze starších systémů na nový systém. Napodobení ostrého provozu byste měli provést v prostředí sandbox a zahrnout všechny kroky do svého plánu přechodu.
+
+- Než přejdete do ostrého provozu, doporučujeme, abyste jako konfigurační prostředí GOLD používali provozní prostředí.
+- Ujistěte se, že máte zaveden proces silné správy, který před uvedením do ostrého provozu chrání provozní prostředí před náhodnými transakcemi nebo aktualizacemi.
+- Když jste připraveni provést UAT nebo napodobit ostrý provoz, aktualizujte prostředí sandbox z provozního prostředí. Další informace viz [Kopírování instance](hr-admin-setup-copy-instance.md).
+- Vyzkoušejte každý krok svého plánu přechodu v prostředí sandbox a poté ověřte prostředí sandbox provedením namátkových kontrol nebo provedením testů ze skriptů UAT v daném prostředí.
+  - Testy by měly zahrnovat všechny migrace dat včetně transformací potřebných pro uvedení do ostrého provozu.
+  - Tento proces by měl zahrnovat faktické odstřižení od všech starších systémů.
+  - Nezapomeňte do napodobení přechodu zahrnout všechny kroky integrace přechodu nebo kroky externího systému.
+- Pokud se během napodobení přechodu vyskytnou nějaké problémy, může být vyžadováno druhé napodobení přechodu. Z tohoto důvodu doporučujeme zahrnout dva falešné přechody do plánu projektu.
 
 ## <a name="fasttrack-go-live-assessment"></a>Test naživo FastTrack
 
@@ -91,5 +99,3 @@ Po odeslání kontrolního seznamu váš architekt řešení FastTrack zkontrolu
 ## <a name="see-also"></a>Viz také
 
 [Často kladené dotazy týkající se ostrého nasazení](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

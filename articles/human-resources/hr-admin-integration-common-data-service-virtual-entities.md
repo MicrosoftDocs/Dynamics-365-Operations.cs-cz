@@ -1,9 +1,9 @@
 ---
-title: Konfigurace virtuálních entit Common Data Service
-description: Toto téma ukazuje, jak konfigurovat virtuální entity pro Dynamics 365 Human Resources. Můžete generovat a aktualizovat existující virtuální entity a analyzovat vygenerované a dostupné entity.
+title: Konfigurace virtuálních tabulek Dataverse
+description: Toto téma ukazuje, jak konfigurovat virtuální tabulky pro Dynamics 365 Human Resources. Můžete generovat a aktualizovat existující virtuální tabulky a analyzovat vygenerované a dostupné tabulky.
 author: andreabichsel
 manager: tfehr
-ms.date: 11/02/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,49 +18,54 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: cd299b51e38cc30c3e18f3ef9de1f43fa817b840
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645594"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111827"
 ---
-# <a name="configure-common-data-service-virtual-entities"></a>Konfigurace virtuálních entit Common Data Service
+# <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources je virtuální zdroj dat v Common Data Service. Poskytuje úplné operací vytváření, čtení, aktualizace a mazání (CRUD) z Common Data Service a Microsoft Power Platform. Data pro virtuální entity nejsou uloženy v Common Data Service, ale v databázi aplikace. 
+Dynamics 365 Human Resources je virtuální zdroj dat v Microsoft Dataverse. Poskytuje úplné operací vytváření, čtení, aktualizace a mazání (CRUD) z Dataverse a Microsoft Power Platform. Data pro virtuální tabulky nejsou uloženy v Dataverse, ale v databázi aplikace.
 
-Pro povolení operací CRUD v entitách Human Resources z Common Data Service musíte entity zpřístupnit jako virtuální entity v Common Data Service. To vám umožní provádět operace CRUD z Common Data Service a Microsoft Power Platform na datech v Human Resources. Operace také podporují úplné ověření obchodní logiky Human Resources, aby byla zajištěna integrita dat při jejich zápisu do entit.
-
-## <a name="available-virtual-entities-for-human-resources"></a>Dostupné virtuální entity pro Human Resources
-
-Všechny entity Open Data Protocol (OData) v Human Resources jsou k dispozici jako virtuální entity v Common Data Service. Jsou k dispozici i v Power Platform. Nyní můžete vytvářet aplikace a prostředí s daty přímo z Human Resources s plnou schopností CRUD, a to bez kopírování nebo synchronizace dat do Common Data Service. Můžete používat portály Power Apps k vytváření externích webů, které umožňují scénáře spolupráce pro obchodní procesy v Human Resources.
-
-Můžete zobrazit seznam virtuálních entit povolených v prostředí a začít pracovat s entitami v [Power Apps](https://make.powerapps.com), v řešení **Virtuální entity Dynamics 365 HR**.
-
-![Virtuální entity Dynamics 365 HR ve Windows Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
-
-## <a name="virtual-entities-versus-natural-entities"></a>Virtuální entity versus přirozené entity
-
-Virtuální entity pro Human Resources nejsou totéž jako přirozené entity Common Data Service vytvořené pro Human Resources. Přirozené entity pro Human Resources jsou generovány samostatně a udržovány v řešení HCM Common v Common Data Service. U přirozených entit jsou data uložena v Common Data Service a vyžaduje synchronizaci s databází aplikace Human Resources.
+Pro povolení operací CRUD v entitách Human Resources z Dataverse musíte entity zpřístupnit jako virtuální tabulky v Dataverse. To vám umožní provádět operace CRUD z Dataverse a Microsoft Power Platform na datech v Human Resources. Operace také podporují úplné ověření obchodní logiky Human Resources, aby byla zajištěna integrita dat při jejich zápisu do entit.
 
 > [!NOTE]
-> Seznam přirozených entit Common Data Service pro Human Resources viz [Entity Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Entity Human Resources odpovídají Dataverse tabulkám. Pro více informací o Dataverse (dříve Common Data Service) a aktualizacích terminologie, viz [Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+
+## <a name="available-virtual-tables-for-human-resources"></a>Dostupné virtuální tabulky pro Human Resources
+
+Všechny entity Open Data Protocol (OData) v Human Resources jsou k dispozici jako virtuální tabulky v Dataverse. Jsou k dispozici i v Power Platform. Nyní můžete vytvářet aplikace a prostředí s daty přímo z Human Resources s plnou schopností CRUD, a to bez kopírování nebo synchronizace dat do Dataverse. Můžete používat portály Power Apps k vytváření externích webů, které umožňují scénáře spolupráce pro obchodní procesy v Human Resources.
+
+Můžete zobrazit seznam virtuálních tabulek povolených v prostředí a začít pracovat s tabulkami v [Power Apps](https://make.powerapps.com), v řešení **Virtuální tabulky Dynamics 365 HR**.
+
+![Virtuální tabulky Dynamics 365 HR ve Windows Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+
+## <a name="virtual-tables-versus-native-tables"></a>Virtuální tabulky versus nativní tabulky
+
+Virtuální tabulky pro Human Resources nejsou totéž jako nativni tabulky Dataverse vytvořené pro Human Resources. 
+
+Nativní tabulky pro Human Resources jsou generovány samostatně a udržovány v řešení HCM Common v Dataverse. U nativních tabulek jsou data uložena v Dataverse a vyžaduje synchronizaci s databází aplikace Human Resources.
+
+> [!NOTE]
+> Seznam nativních tabulek Dataverse pro Human Resources viz [Tabulky Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## <a name="setup"></a>Nastavení
 
-Povolte virtuální entity ve vašem prostředí provedením těchto kroků nastavení.
+Povolte virtuální tabulky ve vašem prostředí provedením těchto kroků nastavení.
 
-### <a name="enable-virtual-entities-in-human-resources"></a>Povolení virtuálních entit v Human Resources
+### <a name="enable-virtual-tables-in-human-resources"></a>Povolení virtuálních tabulek v Human Resources
 
-Nejprve musíte povolit virtuální entity v pracovním prostoru **Správa funkcí**.
+Nejprve musíte povolit virtuální tabulky v pracovním prostoru **Správa funkcí**.
 
 1. V modulu Human Resources vyberte **Správa systému**.
 
 2. Vyberte dlaždici **Správa funkcí**.
 
-3. Vyberte **Podpora virtuálních entit v HR/CDS** a potom vyberte **Povolit**.
+3. Vyberte **Podpora virtuálních tabulek v HR v Dataverse** a potom vyberte **Povolit**.
 
 Další informace o povolení a zákazu funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
@@ -74,13 +79,13 @@ Musíte registrovat instanci Human Resources v portálu Azure, aby platforma ide
 
 3. Vyberte **Nová registrace**.
 
-4. V poli **Název** zadejte popisný název aplikace. Například **Virtuální entity Dynamics 365 Human Resources**.
+4. V poli **Název** zadejte popisný název aplikace. Například **Virtuální tabulky Dynamics 365 Human Resources**.
 
 5. V poli **URI přesměrování** zadejte adresu URL oboru názvů vaší instance Human Resources.
 
 6. Vyberte **Registrovat**.
 
-7. Po dokončení registrace se na webu Azure Portal zobrazí podokno **Přehled** pro registraci aplikace, které obsahuje jeho **ID aplikace (klienta)**. V tuto chvíli si **ID aplikace (klienta)** poznamenejte. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních entit](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Po dokončení registrace se na webu Azure Portal zobrazí podokno **Přehled** pro registraci aplikace, které obsahuje jeho **ID aplikace (klienta)**. V tuto chvíli si **ID aplikace (klienta)** poznamenejte. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních tabulek](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
 8. V levém navigačním podokně vyberte **Certifikáty a tajné klíče**.
 
@@ -88,14 +93,14 @@ Musíte registrovat instanci Human Resources v portálu Azure, aby platforma ide
 
 10. Zadejte popis, vyberte dobu trvání a vyberte **Přidat**.
 
-11. Zaznamenejte hodnotu tajného klíče. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních entit](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Zaznamenejte hodnotu tajného klíče. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních tabulek](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > V tuto chvíli si nezapomeňte hodnotu tajného klíče poznamenat. Po opuštění této stránky se tajný klíč už nikdy nezobrazí.
 
-### <a name="install-the-dynamics-365-hr-virtual-entity-app"></a>Instalace aplikaci Dynamics 365 HR Virtual Entity
+### <a name="install-the-dynamics-365-hr-virtual-table-app"></a>Instalace aplikaci Dynamics 365 HR Virtual Table
 
-Nainstalujte si aplikaci Dynamics 365 HR Virtual Entity do svého prostředí Power Apps, abyste si nasadili balíček řešení virtuální entity do Common Data Service.
+Nainstalujte si aplikaci Dynamics 365 HR Virtual Table do svého prostředí Power Apps, abyste si nasadili balíček řešení virtuální tabulky do Dataverse.
 
 1. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -105,7 +110,7 @@ Nainstalujte si aplikaci Dynamics 365 HR Virtual Entity do svého prostředí Po
 
 4. Vyberte akci **Nainstalovat aplikaci**.
 
-5. Vyberte **Dynamics 365 HR Virtual Entity** a pak **Další**.
+5. Vyberte **Dynamics 365 HR Virtual Table** a pak **Další**.
 
 6. Přečtěte si podmínky služby a potvrďte svůj souhlas.
 
@@ -113,11 +118,11 @@ Nainstalujte si aplikaci Dynamics 365 HR Virtual Entity do svého prostředí Po
 
 Instalace trvá několik minut. Po jejím dokončení pokračujte dalšími kroky.
 
-![Instalace aplikace Dynamics 365 HR Virtual Entity z centra pro správu Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Instalace aplikace Dynamics 365 HR Virtual Table z centra pro správu Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
-### <a name="configure-the-virtual-entity-data-source"></a>Konfigurace zdroje dat virtuálních entit 
+### <a name="configure-the-virtual-table-data-source"></a>Konfigurace zdroje dat virtuálních tabulek 
 
-Dalším krokem je konfigurace zdroje dat virtuálních entit v prostředí Power Apps. 
+Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Power Apps. 
 
 1. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -161,7 +166,7 @@ Dalším krokem je konfigurace zdroje dat virtuálních entit v prostředí Powe
 Udělte oprávnění těmto dvěma aplikacím Azure AD v oblasti Human Resources:
 
 - Aplikace vytvořená pro vašeho tenanta přes Microsoft Azure Portal
-- Aplikace Dynamics 365 HR Virtual Entity nainstalovaná v prostředí Power Apps 
+- Aplikace Dynamics 365 HR Virtual Table nainstalovaná v prostředí Power Apps 
 
 1. V Human Resources otevřete stránku **Aplikace Azure Active Directory**.
 
@@ -174,48 +179,45 @@ Udělte oprávnění těmto dvěma aplikacím Azure AD v oblasti Human Resources
 3. Zvolte **Nový** pro vytvoření druhého záznamu aplikace:
 
     - **ID klienta**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Název**: Dynamics 365 HR Virtual Entity
+    - **Název**: Dynamics 365 HR Virtual Table
     - V poli **ID uživatele** vyberte ID uživatele s oprávněními správce v Human Resources a prostředí Power Apps.
 
-## <a name="generate-virtual-entities"></a>Generování virtuálních entit
+## <a name="generate-virtual-tables"></a>Generování virtuálních tabulek
 
-Po dokončení instalace můžete vybrat virtuální entity, které chcete vygenerovat a povolit ve vaší instanci Common Data Service.
+Po dokončení instalace můžete vybrat virtuální tabulku, které chcete vygenerovat a povolit ve vaší instanci Dataverse.
 
-1. V Human Resources otevřete stránku **Integrace Common Data Service (CDS)**.
+1. V Human Resources otevřete stránku **Integrace Dataverse**.
 
-2. Vyberte kartu **Virtuální entity**.
+2. Vyberte kartu **Virtuální tabulky**.
 
 > [!NOTE]
-> Přepínač **Povolte virtuální entitu** bude nastaven na **Ano** automaticky po dokončení všech požadovaných nastavení. Pokud je přepínač nastaven na **Ne**, zkontrolujte kroky v předchozích částech tohoto dokumentu a ujistěte se, že jsou dokončeny všechny nezbytné předpoklady.
+> Přepínač **Povolte virtuální tabulku** bude nastaven na **Ano** automaticky po dokončení všech požadovaných nastavení. Pokud je přepínač nastaven na **Ne**, zkontrolujte kroky v předchozích částech tohoto dokumentu a ujistěte se, že jsou dokončeny všechny nezbytné předpoklady.
 
-3. Vyberte entitu nebo entity, které chcete generovat v Common Data Service.
+3. Vyberte tabulku nebo tabulku, kterou chcete generovat v Dataverse.
 
 4. Vyberte **Generovat/aktualizovat**.
 
-![Integrace Common Data Service](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Integrace Dataverse](./media/hr-admin-integration-common-data-service-integration.jpg)
 
-## <a name="check-entity-generation-status"></a>Zkontrolujte stav generování entity
+## <a name="check-table-generation-status"></a>Zkontrolujte stav generování tabulky
 
-Virtuální entity jsou generovány v Common Data Service prostřednictvím asynchronního procesu na pozadí. Aktualizace na displeji procesu v centru akcí. Podrobnosti o procesu, včetně protokolů chyb, se objeví na stránce **Procesní automatizace**.
+Virtuální tabulky jsou generovány v Dataverse prostřednictvím asynchronního procesu na pozadí. Aktualizace na displeji procesu v centru akcí. Podrobnosti o procesu, včetně protokolů chyb, se objeví na stránce **Procesní automatizace**.
 
 1. V Human Resources otevřete stránku **Procesní automatizace**.
 
 2. Vyberte kartu **Procesy na pozadí**.
 
-3. Vyberte **Proces na pozadí asynchronní operace s dotazováním virtuální entity**.
+3. Vyberte **Proces na pozadí asynchronní operace s dotazováním virtuální tabulky**.
 
 4. Vyberte **Zobrazit nejnovější výsledky**.
 
-V posuvném podokně se zobrazují nejnovější výsledky provádění procesu. Můžete zobrazit protokol procesu, včetně všech chyb vrácených z Common Data Service.
+V posuvném podokně se zobrazují nejnovější výsledky provádění procesu. Můžete zobrazit protokol procesu, včetně všech chyb vrácených z Dataverse.
 
 ## <a name="see-also"></a>Viz také
 
-[Co je Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Přehled entit](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Přehled vztahů mezi entitami](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Vytváření a úpravy virtuálních entit, které obsahují data z externího zdroje dat](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Co je Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tabulky v Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Přehled vztahů mezi tabulkami](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Vytváření a úpravy virtuálních tabulek, které obsahují data z externího zdroje dat](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Co jsou portály Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Přehled vytváření aplikací v Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

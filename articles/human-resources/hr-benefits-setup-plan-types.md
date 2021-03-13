@@ -2,7 +2,7 @@
 title: Vytvoření typů plánu
 description: Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e24c11fb6e84a7480a40b706b106cd8465470f5c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417655"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111775"
 ---
 # <a name="create-plan-types"></a>Vytvoření typů plánu
 
@@ -63,6 +63,3 @@ Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definov�
    | **Časový úsek pro vykazování** | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
 
 5. Zvolte **Uložit**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
