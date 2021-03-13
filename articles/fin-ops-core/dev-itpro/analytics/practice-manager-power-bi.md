@@ -1,6 +1,6 @@
 ---
 title: Obsah manažera školení v Power BI
-description: Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
+description: Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685698"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092450"
 ---
 # <a name="practice-manager-power-bi-content"></a>Obsah manažera školení v Power BI
 
@@ -117,6 +117,3 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Klíčové měření agregace       | Pole               | popis |
 |---------------------------------|---------------------|-------------|
 | Plánované náklady dokončené aktivity | Sum(TotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Nové uživatelské rozhraní dokumentu v modulu Správa obchodních dokumentů
-description: Toto téma obsahuje informace o tom, jak používat nové uživatelské rozhraní dokumentu (UI) ve funkci správy obchodních dokumentů rámce elektronického výkaznictví.
+description: Toto téma obsahuje informace o tom, jak používat nové uživatelské rozhraní dokumentu ve funkci správy obchodních dokumentů elektronického výkaznictví.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681345"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092218"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Nové uživatelské rozhraní dokumentu v modulu Správa obchodních dokumentů
 
@@ -64,6 +64,3 @@ Chcete-li tuto funkci zapnout pro všechny právnické osoby, postupujte podle n
 Tlačítko **Nový dokument** se používá pro vytváření úpravy šablony v konfiguraci formátu elektronického výkaznictví, kterou poskytuje jiný poskytovatel. V tomto příkladu je poskytovatelem Microsoft. Když vyberete **Nový dokument**, zobrazí se všechny šablony vlastněné aktuálními a jinými poskytovateli. Po výběru bude šablona otevřena pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
 Další informace naleznete v tématu [Přehled správy obchodních dokumentů](er-business-document-management.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

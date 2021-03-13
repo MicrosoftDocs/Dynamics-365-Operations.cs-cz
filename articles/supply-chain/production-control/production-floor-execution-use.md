@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4424123"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077624"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -41,11 +40,11 @@ Zbývající části tohoto tématu popisují, jak pracovníci pracují s rozhra
 
 ## <a name="all-jobs-tab"></a>Karta Všechny úlohy
 
-Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*.
+Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
 
 ![Karta Všechny úlohy](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
 
-Seznam úloh má následující sloupce. (Čísla odpovídají číslům na předchozím obrázku.)
+Seznam úloh má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
 
 1. **Sloupec výběru** – Sloupec zcela vlevo používá zatržítko k označení úloh, které vybral pracovník. Pracovníci mohou v seznamu vybrat více úloh najednou. Chcete-li vybrat všechny úlohy v seznamu, zaškrtněte políčko v záhlaví sloupce. Když je vybrána jedna úloha, podrobnosti o této úloze se zobrazí ve spodní části stránky.
 1. **Sloupec Stav úlohy** – Tento sloupec používá symboly k označení stavu každé úlohy. Úlohy, které nemají v tomto sloupci žádný symbol, mají stav *Nezahájeno*. Zelený trojúhelník označuje úlohy, které mají stav *Zahájeno*. Dvě žluté svislé čáry označují úlohy, které mají stav *Zastaveno*.
@@ -60,9 +59,11 @@ Seznam úloh má následující sloupce. (Čísla odpovídají číslům na pře
 
 ## <a name="active-jobs-tab"></a>Karta Aktivní úlohy
 
+Karty **Aktivní úlohy** zobrazují seznam všech úloh, které již přihlášený pracovník zahájil. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
+
 ![Karta Aktivní úlohy](media/pfei-active-jobs-tab.png "Karta Aktivní úlohy")
 
-Seznam úloh na kartě **Aktivní úlohy** má následující sloupce:
+Seznam aktivních úloh má následující sloupce:
 
 - **Sloupec výběru** – Sloupec zcela vlevo používá zatržítko k označení úloh, které vybral pracovník. Pracovníci mohou v seznamu vybrat více úloh najednou. Chcete-li vybrat všechny úlohy v seznamu, zaškrtněte políčko v záhlaví sloupce. Když je vybrána jedna úloha, podrobnosti o této úloze se zobrazí ve spodní části stránky.
 - **Objednávka** – Tento sloupec zobrazuje číslo výrobní zakázky pro úlohu.
@@ -72,6 +73,28 @@ Seznam úloh na kartě **Aktivní úlohy** má následující sloupce:
 - **Dokončeno** – Tento sloupec zobrazuje množství, které již bylo pro úlohu dokončeno.
 - **Zlikvidováno** – Tento sloupec zobrazuje množství, které již bylo pro úlohu zlikvidováno.
 - **Zbývající** – Tento sloupec zobrazuje množství, které zbývá do dokončení úlohy.
+
+## <a name="my-machine-tab"></a>Karta Můj stroj
+
+Karta **Můj stroj** pracovníkům umožňuje vybrat majetek, který je připojen ke zdroji stroje v sadě filtrů na kartě **Všechny úlohy**. Pracovník pak může zobrazit stav vybraného majetku čtením hodnot až čtyř vybraných čítačů a seznamů posledních požadavků na údržbu a registrovaných prostojů. Pracovník může také požádat o údržbu vybraného majetku a zaregistrovat a upravit prostoje stroje. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
+ 
+![Karta Můj stroj](media/pfei-my-machine-tab.png "Karta Můj stroj")
+
+Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
+
+1. **Majetek stroje** - Vyberte zařízení stroje, které chcete sledovat. Začněte psát název a vyberte jej ze seznamu odpovídajícího majetku, nebo vyberte ikonu lupy a vyberte ze seznamu všech aktiv spojených se zdroji, které jsou ve filtru seznamu úloh.
+
+    > [!NOTE]
+    > Uživatelé Supply Chain Management mohou podle potřeby přiřadit zdroj ke každé stránce **Všechny majetky** (na kartě **Fixní majetek** pomocí rozevíracího seznamu **Zdroj**). Další informace naleznete v tématu [Vytvoření majetku](../asset-management/objects/create-an-object.md).
+
+1. **Nastavení** - Vyberte ikonu ozubeného kola a otevřete dialogové okno, kde si můžete vybrat, která počítadla se mají zobrazit pro vybraný majetek stroje. Hodnoty těchto čítačů jsou zobrazeny v horní části karty **Správa majetku**. Nabídka **Nastavení** (zobrazená na následujícím snímku obrazovky) umožňuje povolit až čtyři čítače. U každého počítadla, které chcete povolit, použijte vyhledávací pole v horní části dlaždice a vyberte počítadlo. Vyhledávací pole obsahuje seznam všech čítačů přidružených k aktivu vybranému v horní části stránky **Správa majetku** . Nastavte každé počítadlo tak, aby sledovalo hodnotu **Agregované** nebo nejnovější **Aktuální** hodnotu čítače. Například pokud nastavíte čítač, který sleduje, kolik hodin stroj běžel, měli byste jej nastavit na **Agregované**. Pokud nastavíte počitadlo pro měření nejnovější aktualizované teploty nebo tlaku, měli byste jej nastavit na **Aktuální**. Volbou **OK** uložte svá nastavení a zavřete dialogové okno.
+
+    ![Karta Můj stroj](media/pfei-my-machine-tab-settings.png "Karta Můj stroj")
+
+1. **požadavek na údržbu** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete vytvořit požadavek na údržbu. Budete moci poskytnout popis a poznámku. Na požadavek bude upozorněn uživatel Supply Chain Management, který poté bude moci převést požadavek na údržbu na objednávku údržby.
+1. **Registrovat prostoje** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete zaregistrovat prostoje stroje. Budete moci vybrat kód důvodu a zadat časové rozpětí data a času prostoje. Registrace výpadku stroje se používá pro výpočet efektivity majetku stroje.
+1. **Zobrazit nebo upravit** - Toto tlačítko vyberte, chcete-li otevřít dialogové okno, kde můžete upravit nebo zobrazit stávající záznamy o prostojích.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Zahájení a dokončení výrobních úloh
 
@@ -124,7 +147,7 @@ Například Shannon, pracovnice ve společnosti Contoso, se chce zúčastnit sch
 
 V obou scénářích poté, co Shannon potvrdí svůj výběr, přejde na přihlašovací stránku nebo na stránku, která na ni počká, aby potvrdila, že se vrátila ze své nepřímé aktivity. Stránka, která se zobrazí, závisí na konfiguraci rozhraní pro provádění výrobního provozu. (Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Práce na přestávkách
+## <a name="registering-breaks"></a>Registrace přestávek
 
 Pracovníci mohou registrovat přestávky. Přestávky lze flexibilně definovat, jak je popsáno v části [Plat na základě registrace](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Pracovníci mohou otevřít dokument připojený k úloze výběrem volby **Poky
 1. Pracovník se s pomocí průvodce naučí danou úlohu.
 
 Další informace, jak vytvořit, přiřadit a použít průvodce pro HoloLens viz [Poskytnutí průvodce hybridní reality pro pracovníky ve výrobě](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

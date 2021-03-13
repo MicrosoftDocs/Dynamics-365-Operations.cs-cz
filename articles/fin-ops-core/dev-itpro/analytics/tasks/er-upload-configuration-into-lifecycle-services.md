@@ -1,6 +1,6 @@
 ---
 title: Odeslání konfigurace do služby Lifecycle Services
-description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci elektronického výkaznictví a odeslat ji do služby Microsoft Dynamics Lifecycle Services (LCS).
+description: Toto téma popisuje, jak vytvořit novou konfiguraci elektronického výkaznictví (ER) a nahrát ji do Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684156"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092534"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Odeslání konfigurace do služby Lifecycle Services
 
@@ -145,6 +145,3 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Li
     V seznamu by měla být uvedena konfigurace elektronického výkaznictví, kterou jste nahráli.
 
     Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

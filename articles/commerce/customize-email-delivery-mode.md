@@ -10,24 +10,22 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Commerce, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: faf5fba70bf9297727464e6046806696ab725001
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: f4ecb990cfe792e92142f922c43c71ef8494e117
+ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594948"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5031841"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Přizpůsobení transakčních e-mailů podle způsobu doručení
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje, jak nastavit vlastní e-mailové šablony pro konkrétní typy oznámení a způsoby doručení v Microsoft Dynamics 365 Commerce.
 
@@ -73,6 +71,3 @@ Chcete-li nakonfigurovat e-mailové šablony pro konkrétní způsoby doručení
 [Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
 
 [Změna způsobu dodání v POS](pos-change-delivery-mode.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Generování elektronických dokumentů ER pro platby za použití konfigurace formátu
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může použít novou konfiguraci formátu pro elektronické výkaznictví a vytvořit tak elektronické doklady pro zpracování plateb.
+description: Toto téma popisuje, jak použít novou konfiguraci elektronického výkaznictví (ER) ke generování elektronických dokumentů ke zpracování plateb.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e88df5c2f92ee2b9b448ba100c8bc4105eddae4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 816f98660a5508ada203f49a71e0785548fb9a31
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681726"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092193"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>Generování elektronických dokumentů ER pro platby za použití konfigurace formátu
 
@@ -81,6 +81,3 @@ K provedení těchto kroků musíte nejprve dokončit kroky v postupu „Vytvoř
 25. Klikněte na tlačítko OK.
     * Analyzujte vytvořený soubor platby ve formátu XML. Srovnejte jej s navrženým rozvržením dokumentu a definovanými atributy platební transakce.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

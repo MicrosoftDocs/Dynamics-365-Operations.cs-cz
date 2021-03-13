@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669156"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080031"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (2. prosince 2020)
 
@@ -61,7 +60,7 @@ Tato verze obsahuje následující opravy chyb.
 | 514087 | Entita BenefitEligibilityProcessResult by měla zahrnovat datum a čas, který byl použit při zpracování. | Výsledek zpracování BenefitEligibity nyní obsahuje značku data a času posledního zpracování, která dříve chyběla. |
 | 526903 | Registrace zaměstnaneckých výhod selže u plánů se závislými prvky, když **Automatický výběr pověřených osob** je zapnutý v části **Sdílené parametry Human Resources**. | Opravili jsme problém, kdy registrace zaměstnaneckých výhod selhala pro závislé prvky, když byla možnost **Automatický výběr pověřených osob** zapnuta pro výchozí pověřené osoby. |
 | 521922 | Parametr **Zobrazit absenci bez podrobností** zobrazuje podrobnosti požadavků na volno v kalendáři absencí týmu. | Typ pracovního volna, barva typu pracovního volna a podrobnosti dne se zobrazovaly v kalendáři absencí týmu, když byla možnost **Zobrazit absenci bez podrobností** nastavena na **Ano** v části **Parametry pracovního volna a absence**. To bylo vyřešeno a nyní se typ pracovního volna nezobrazuje a pro všechny typy pracovního volna v kalendáři absencí týmu se používá výchozí barva typu pracovního volna (tmavě modrá). |
-| 527316 | Změny nadpisů u oznámení práce, pozice a pracovníka se nesynchronizují. | Vztah Nadpis byl původně přidán do entit Práce, Pozice a Pracovník. Synchronizace tohoto vztahu funguje při synchronizaci z Human Resources do Common Data Service, ale nefungovala pro oznámení z Common Data Service. To bylo vyřešeno. |
+| 527316 | Změny nadpisů u oznámení práce, pozice a pracovníka se nesynchronizují. | Vztah Nadpis byl původně přidán do entit Práce, Pozice a Pracovník. Synchronizace tohoto vztahu funguje při synchronizaci z Human Resources do Dataverse, ale nefungovala pro oznámení z Dataverse. To bylo vyřešeno. |
 | 512275 | Odebrány možnosti barev z části **Parametry pracovního volna a absence**. | Nyní, když jsou barvy definovány pro typ pracovního volna, možnosti barev již nejsou potřeba v části **Parametry pracovního volna a absence**, takže byly odstraněny. |
 | 437112 | Zavádějící text chybové zprávy během přiřazování pozice zaměstnance. | Aktualizována chybová zpráva při najímání pracovníka a pokusu o přiřazení pracovníka k pozici, která není aktivní. Aktualizovaná zpráva **Zadaná pozice není aktivní k počátečnímu datu zaměstnání. Zkontrolujte dobu trvání této pozice.** |
 | 527816 | Problémy s výkonem na stránce **Volno**. | Výkon byl vylepšen na stránce **Volno**. |
@@ -92,6 +91,3 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 [Přehled produktu Dynamics 365 Human Resources vydání 2020 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

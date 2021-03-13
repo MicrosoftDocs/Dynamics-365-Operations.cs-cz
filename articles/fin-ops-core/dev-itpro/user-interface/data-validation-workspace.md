@@ -1,6 +1,6 @@
 ---
 title: Pracovní prostor kontrolního seznamu ověřování dat
-description: Pracovní prostor Kontrolní seznam ověřování dat umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci.
+description: Pracovní prostor Kontrolní seznam ověřování dat umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,12 +14,12 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687568"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092324"
 ---
 # <a name="data-validation-checklist-workspace"></a>Pracovní prostor kontrolního seznamu ověřování dat
 
@@ -39,8 +39,7 @@ Dlaždice **Souhrn** poskytují přehled procesu a indikátory vám pomohou udr�
 
 V části **Úkoly a stav** se zobrazí celkový stav projektu ověřování dat různými způsoby: stav podle právnické osoby, oblasti a seznamu úloh. Můžete vybrat filtr pro zobrazení stavu pro konkrétní společnost. Každá karta stavu poskytuje rozpis podle procenta, které bylo dokončeno, a počtu úkolů, které zbývají.
 
-Poslední karta je určená pro seznam podrobných úkolů. Tento seznam zobrazuje úplný seznam úkolů.
-Můžete filtrovat seznam úkolů v několika způsoby. Chcete-li změnit stav úkolu nebo přiřadit úkol, klikněte na možnost **Upravit úkol**. Chcete-li zobrazit přílohy úkolu, klikněte na možnost **Přílohy**.
+Poslední karta je určená pro seznam podrobných úkolů. Tento seznam zobrazuje úplný seznam úkolů. Můžete filtrovat seznam úkolů v několika způsoby. Chcete-li změnit stav úkolu nebo přiřadit úkol, klikněte na možnost **Upravit úkol**. Chcete-li zobrazit přílohy úkolu, klikněte na možnost **Přílohy**.
 
 Název úkolu je hypertextový odkaz na stránku nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz lze nastavit pomocí pole **Název položky nabídky** při úpravě nebo vytváření úkolu z formuláře **Konfigurace projektu ověřování dat**.
 
@@ -57,6 +56,3 @@ Před použitím pracovního prostoru **Kontrolní seznam ověřování dat** je
 Pomocí oblastí úkolů seskupte úkoly ověřování dat do logických oblastí vlastnictví ve vaší organizaci. Například závazky, pohledávky a hlavní kniha mohou být použity jako oblasti úkolu.
 
 **Název položky nabídky** je spojen s pracovním úsilím úkolu a lze ho použít k přechodu přímo na přidruženou stránku z odkazu na úkol v pracovním prostoru. Například úloha ověřování dat pro spuštění sestavy **sledování splatnosti závazků** pro závazky lze spojit se stránkou **Sestava sledování splatnosti závazků**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

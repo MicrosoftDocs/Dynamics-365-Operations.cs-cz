@@ -1,6 +1,6 @@
 ---
 title: Elektronické vykazování – návrh datového modelu pro určitou doménu
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje model dat pro elektronické platební doklady.
+description: Toto téma popisuje, jak vytvořit novou konfiguraci elektronického výkaznictví (ER), která obsahuje datový model pro dokumenty elektronických plateb.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 268f661079b80551b36ad2e1877615d878350051
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1eb2c6e5b5f186fb6db7c32a9982807274e5ea1b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681942"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092684"
 ---
 # <a name="er-design-domain-specific-data-model"></a>Elektronické vykazování – návrh datového modelu pro určitou doménu
 
@@ -187,6 +187,3 @@ Vytváříte nový datový model pro vybranou konfiguraci. Tato verze konfigurac
 65. Klikněte na položku Uložit.
 66. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

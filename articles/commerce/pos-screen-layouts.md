@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 203d12956825286b77a107bb9fd91c451ecfd1e6
+ms.sourcegitcommit: dc3deca942864c4a8354096183c9e1b9b88992f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4410915"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5032926"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Vizuální konfigurace uživatelského rozhraní POS
 
@@ -117,6 +116,9 @@ V kompaktním rozvržení POS jsou mřížky tlačítek automaticky rozvrženy 
 
 ![Mřížky tlačítek kompaktního rozvržení](../commerce/media/Compact-View-Button-Grids.png)
 
+> [!NOTE]
+> Velikost tlačítek v návrháři se změní tak, aby odpovídala velikosti okna, proto nemusí přesně odrážet skutečná tlačítka vykreslená v POS. Chcete-li co nejlépe simulovat rozložení mřížky tlačítek, upravte okna návrháře na stejnou velikost jako POS.
+
 ### <a name="images"></a>Obrázky
 
 Pro každou velikost rozvržení na obrazovce rozvržění můžete určit obrázky, které mají být zahrnuty v uživatelském rozhraní POS. V úplném rozložení POS lze zadat jeden obrázek pro úvodní obrazovku. Tento obrázek se zobrazí jako první prvek uživatelského rozhraní vlevo. Na obrazovce **Transakce** lze použít obrázky jako obrázky karty nebo jako logo. Kompaktní rozvržení POS tyto obrázky nepoužívá.
@@ -205,6 +207,3 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 ## <a name="additional-resources"></a>Další zdroje
 
 [Instalace návrháře rozložení pokladního místa Retail (POS)](install-pos-layout-designer.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

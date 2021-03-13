@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594947"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053406"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Povolení více způsobů vyzvednutí/doručení objednávek zákazníků
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 V Microsoft Dynamics 365 Commerce verze 10.0.16 a novějších mohou organizace definovat více způsobů doručení, které si kupující nebo prodejní partneři mohou vybrat, když vytvoří objednávku, která bude vyzvednuta v obchodě. Tímto způsobem mohou organizace svým nakupujícím poskytnout více možností vyzvednutí. Například mnoho maloobchodníků nyní nabízí nakupujícím možnost vyzvednutí v obchodě nebo pouliční vyzvednutí objednávky. Commerce podporuje konfiguraci těchto různých způsobů vyzvednutí/doručení. Uživatelé je pak mohou využít, když vytvářejí objednávky zákazníků v jakémkoli podporovaném kanálu Commerce (elektronický obchod, kontaktní středisko nebo obchod).
 
@@ -86,6 +85,3 @@ Když je pro kanál k dispozici více způsobů vyzvednutí/doručení, zákazn�
 ## <a name="considerations-for-distributed-order-management"></a>Úvahy nad distribuovanou správou objednávek
 
 Funkce [distribuované správy objednávek (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) v Commerce ignorují všechny řádky prodeje, které jsou označeny pro vyzvednutí v obchodě. Tyto funkce byly aktualizovány, aby zajistily, že řádky prodeje, které jsou propojeny s nakonfigurovanými způsoby vyzvednutí/doručení, obcházejí logiku DOM a nebudou znovu přiděleny novému skladu plnění.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

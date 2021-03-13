@@ -1,6 +1,6 @@
 ---
 title: Návrh konfigurací elektronického výkaznictví pro import dat z externích CSV souborů
-description: Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Finance and Operations z externího souboru ve formátu CSV.
+description: Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického výkaznictví pro import dat do aplikace Finance and Operations z externího souboru ve formátu CSV.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7fbae4570448a6bb1309ffe0092ff9b07825d717
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682038"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092759"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Návrh konfigurací elektronického výkaznictví pro import dat z externích CSV souborů
 
@@ -124,6 +124,3 @@ Pro účely testování proveďte mapování formátu pomocí souboru 1099entrie
     * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány všechny řádky 7 importovaného souboru CSV. Řádek 1 nadpisů obsahujících polí byl vynechán, 4 transakce byly správně analyzovány a 2 transakce byly rozpoznány jako neplatné.
 3. Zavřete stránku.
 4. Zavřete stránku.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

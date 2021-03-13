@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664265"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077571"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Návrh rozhraní pro provádění výrobního provozu
 
@@ -57,7 +56,7 @@ Chcete-li vytvořit a konfigurovat novou kartu, postupujte dle těchto kroků:
 1. V záhlaví stránky proveďte následující nastavení:
 
     - **Název karty** - Zadejte název karty.
-    - **Hlavní zobrazení** - Vyberte mezi dvěma předdefinovanými seznamy úloh (*Aktivní úlohy* nebo *Všechny úlohy*).
+    - **Hlavní zobrazení** - Vyberte mezi dvěma předdefinovanými seznamy úloh (*Aktivní úlohy*, *Všechny úlohy* nebo *Můj počítač*).
     - **Zobrazení podrobností** - Vyberte mezi prázdnou hodnotou nebo **Podrobnosti o úloze**. Pokud vyberete prázdnou hodnotu, na kartě nebude žádné podrobné zobrazení. Pokud vyberete **Podrobnosti o úloze**, podrobné zobrazení bude obsahovat podrobný popis úlohy vybrané v seznamu úloh v hlavním zobrazení.
 
 1. V části **Primární panel nástrojů** vyberte, která tlačítka by měla být k dispozici na primárním panelu nástrojů. Sloupec **Dostupné akce** zobrazuje seznam všech tlačítek, která lze přidat. Sloupec **Vybrané akce** zobrazuje seznam všech tlačítek, která jsou součástí aktuální konfigurace. Pomocí tlačítek mezi sloupci můžete podle potřeby přesouvat vybrané položky mezi sloupci. Použijte tlačítka nahoru a dolů vedle sloupce **Vybrané akce** pro ovládání pořadí, v jakém jsou tlačítka zobrazena v uživatelském rozhraní.
@@ -79,6 +78,3 @@ Poté, co jste navrhli všechny karty, které potřebujete, můžete je přidru�
 1. Podle potřeby pokračujte v přidávání dalších karet.
 
 1. Použijte tlačítka **Nahoru** a **Dolů** na panelu nástrojů a uspořádejte karty podle potřeby. Karty se budou zobrazovat zleva doprava v pořadí uvedeném na výše uvedeném snímku obrazovky (karta nahoře je zobrazena vlevo).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

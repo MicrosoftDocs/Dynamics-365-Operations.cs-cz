@@ -3,7 +3,7 @@ title: Uložená zobrazení
 description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 8537ec87c625e8b54cdf7574216d66f285da3a48
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 54f8c4bcac53f7cceb25f73b24311e93884be95d
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693694"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077442"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Úvod
 
@@ -123,12 +124,14 @@ Zobrazení publikujete takto.
 1. Vytvořte a uložte osobní kopii zobrazení, kterou chcete publikovat. 
 2. V zobrazení, které je aktuálně načteno, vyberte název zobrazení pro otevření rozevírací nabídky selektoru zobrazení. 
 3. Vyberte tlačítko **Další** a potom **Publikovat**. Otevře se dialogové okno Publikovat.
-4. Zadejte název a (volitelně) popis zobrazení. Jméno, které zadáte, se zobrazí uživatelům, kteří toto zobrazení obdrží, v jejich selektorech zobrazení. Názvy publikovaných zobrazení pro stránku musí být jedinečné. Na stránce nejsou povoleny žádné duplicitní názvy, a to ani v případě, že se seznam rolí nebo právnických osob, na něž jsou zobrazení aplikována, liší.
-5. **Verze 10.0.9 a pozdější:** Určete, zda má být zobrazení publikováno jako výchozí zobrazení pro vybrané uživatele. Když zobrazení nastavíte jako výchozí, zobrazí se uživatelům při dalším otevření cílové stránky. Jednotné globální výchozí zobrazení každého cílového uživatele se změní. Po publikování však uživatelé mohou změnit své výchozí zobrazení.
-6. Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno. 
-7. **Verze 10.0.13 a novější:** Zjistěte, zda chcete publikovat zobrazení do podřízených rolí každé vybrané role zabezpečení. Pokud tak učiníte, zaškrtněte políčko **Zahrnout podřízené role** v řádku pro příslušné role zabezpečení. Toto políčko není k dispozici pro role, které nemají podřízené role.
-7. Přidejte právnické osoby, pro které má být toto zobrazení k dispozici. 
-8. Zvolte **Publikovat**.
+4. Zadejte název zobrazení. Jméno, které zadáte, se zobrazí uživatelům, kteří toto zobrazení obdrží, v jejich selektorech zobrazení. Názvy publikovaných zobrazení pro stránku musí být jedinečné. Na stránce nejsou povoleny žádné duplicitní názvy, a to ani v případě, že se seznam rolí nebo právnických osob, na něž jsou zobrazení aplikována, liší.
+5. **Aktualizace 10.0.17 nebo novější:** Pokud je zapnutá funkce **(Náhled) Podpora překladů pro organizační zobrazení**, můžete přidat překlady pro název vašeho zobrazení v tolika jazycích, kolik vyžaduje vaše organizace, výběrem tlačítka **Překlady** vedle pole **Název**. Název zobrazení se poté ukáže uživatelům v jejich aktuálním jazyce. Můžete také nastavit výchozí jazyk a určit překlad, který se zobrazí uživatelům, kteří používají jazyky, pro které není definován žádný překlad.
+5. Volitelné: Zadejte popis zobrazení, aby uživatelé, kteří obdrží toto zobrazení, lépe porozuměli jeho účelu. 
+6. Určete, zda má být zobrazení publikováno jako výchozí zobrazení pro vybrané uživatele. Když zobrazení nastavíte jako výchozí, zobrazí se uživatelům při dalším otevření cílové stránky. Jednotné globální výchozí zobrazení každého cílového uživatele se změní. Po publikování však uživatelé mohou změnit své výchozí zobrazení.
+7. Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno. 
+8. Zjistěte, zda chcete publikovat zobrazení do podřízených rolí každé vybrané role zabezpečení. Pokud tak učiníte, zaškrtněte políčko **Zahrnout podřízené role** v řádku pro příslušné role zabezpečení. Toto políčko není k dispozici pro role, které nemají podřízené role.
+9. Přidejte právnické osoby, pro které má být toto zobrazení k dispozici. 
+10. Zvolte **Publikovat**.
 
 Všimněte si, že v některých prostředích může tato doba trvat dlouho (až hodinu), než uživatelé uvidí publikované zobrazení.
 
@@ -146,27 +149,15 @@ Pokud změny, které chcete provést v publikovaném zobrazení, zahrnují pouze
 1. Přepněte do zobrazení Publikováno pro parametry, které chcete aktualizovat. 
 2. V rozevírací nabídce selektoru zobrazení vyberte **Znovu publikovat**. Pokud používáte verzi 10.0.12 nebo starší, musíte vybrat **Publikovat** a pak **Ano** pro aktualizaci stávajícího zobrazení.
 3. Aktualizujte název, popis nebo role zabezpečení a právnické osoby pro zobrazení. 
-4. Zvolte **Publikovat**. 
-5. **Verze 10.0.8 a starší:** Pokud jste aktualizovali název publikovaného zobrazení, musíte také odstranit publikované zobrazení, které má staré jméno. (Další informace získáte v části [Správa publikovaných zobrazení](saved-views.md#managing-published-views).)
+4. Zvolte **Publikovat**. Pokud jste původně vybrali toto publikované zobrazení jako výchozí zobrazení, bude to po publikování pro uživatele znovu výchozí zobrazení. 
 
-**Verze 10.0.9 a novější:** Pokud jste původně vybrali toto publikované zobrazení jako výchozí zobrazení, bude to po publikování pro uživatele znovu výchozí zobrazení.
-
-Pokud změny provedené v publikovaném zobrazení zahrnují úpravy přizpůsobení nebo filtrů spojených se zobrazením, postupujte následujícím způsobem: 
-
-**Verze 10.0.13 a novější:** Proveďte požadované změny přímo v zobrazení. Vedle názvu zobrazení by se měla zobrazovat hvězdička (\*).
+Pokud změny provedené v publikovaném zobrazení zahrnují úpravy přizpůsobení nebo filtrů spojených se zobrazením, postupujte následujícím způsobem.
 
 1. Načtěte publikované zobrazení pro parametry, které chcete změnit. 
 2. Proveďte požadované změny místního konceptu.
 3. V rozevírací nabídce selektoru zobrazení vyberte **Znovu publikovat**.
 4. Vyberte **Ano** k indikaci, že chcete zobrazení spolu s neuloženými změnami. 
 5. Upravte všechny parametry publikování, které vyžadují úpravu, a poté vyberte **Publikovat**. 
-
-**Verze 10.0.12 a starší**
-
-1. Načtěte publikované zobrazení pro parametry, které chcete změnit. 
-2. Uložte kopii publikovaného zobrazení a vytvořte místní koncept publikovaného zobrazení. 
-3. Upravte místní koncept o potřebné změny.
-4. Publikujte zobrazení s původním názvem. 
 
 ## <a name="managing-published-views"></a>Správa publikovaných zobrazení
 
@@ -179,20 +170,20 @@ Chcete-li zobrazit seznam všech dostupných zobrazení pro tuto stránku, je k 
 - **Znovu publikovat** – Použijte akci **Znovu publikovat**, pokud chcete znovu publikovat zobrazení s upravenými parametry publikování (název, popis, role zabezpečení).
 - **Publikovat** - Použijte akci **Publikovat** k publikování aktuálně nepublikovaného zobrazení. 
 - **Zrušit publikování** - Použijte akci **Zrušit publikování** k deaktivaci zobrazení. Zobrazení bude stále k dispozici v systému, ale uživatelé jej neuvidí ve výběru zobrazení, dokud nebude znovu publikováno.
-- **Uložit jako osobní** – Použijte akci **Uložit jako osobní** k vytvoření osobní rámcové kopie publikovaného zobrazení. Tato funkce vám může pomoci pochopit obsah zobrazení, který pro vás nebyl publikován nebo který ještě nebyl publikován. Můžete jej také použít k úpravě a opětovnému publikování zobrazení. Tato funkce je zavedena ve verzi 10.0.12.
+- **Uložit jako osobní** – Použijte akci **Uložit jako osobní** k vytvoření osobní rámcové kopie publikovaného zobrazení. Tato funkce vám může pomoci pochopit obsah zobrazení, který pro vás nebyl publikován nebo který ještě nebyl publikován. Můžete jej také použít k úpravě a opětovnému publikování zobrazení.
 - **Odstranit** – k trvalému odstranění publikovaného nebo nepublikovaného zobrazení použijte akci **Odstranit**. Tato akce odebere zobrazení také pro všechny uživatele v systému. Odebrání publikovaných zobrazení se projeví po výběru tlačítka **Uložit**. Po odstranění nelze zobrazení obnovit. 
 
 ## <a name="managing-views-globally"></a>Globální správa zobrazení
 
 Přestože jsou na každé stránce zobrazeny některé funkce správy, jak je uvedeno v tomto tématu, **správci systému** a **správci uložených zobrazení** mohou spravovat pohledy holističtěji pro systém prostřednictvím stránky **Individuální nastavení**. Tato stránka obsahuje zejména následující oddíly a možnosti: 
 
-- **Publikovaná zobrazení** - V této části jsou uvedena všechna zobrazení, která byla publikována pro vaši organizaci. Odsud můžete zobrazení znovu upravit poté, co upravíte role zabezpečení nebo právnické osoby, na které je zobrazení zaměřeno. Tato zobrazení můžete také exportovat, odstranit nebo můžete zrušit jeho publikování. Ve verzi 10.0.12 a novějších můžete pomocí akce **Uložit jako osobní** vytvořit k vytvoření osobní kopii zobrazení, abyste mohli zobrazení aktualizovat nebo získat lepší přehled o jeho obsahu. 
-- **Nepublikovaná zobrazení** - V této části jsou uvedena všechna zobrazení organizace ve vašem systému, která momentálně nejsou publikována. Tato zobrazení nejčastěji přicházejí do systému pomocí funkce importu. Tato zobrazení můžete publikovat, exportovat nebo odstranit. Akce **Rychlé publikování**, která byla přidána ve verzi 10.0.12, umožňuje publikovat více zobrazení z této sekce v jedné akci pomocí stávající konfigurace zabezpečení a konfigurace právnických osob. Ve verzi 10.0.12 a novějších můžete pomocí akce **Uložit jako osobní** vytvořit k osobní kopie těchto zobrazení, abyste mohli lépe pochopit obsah zobrazení.
+- **Publikovaná zobrazení** - V této části jsou uvedena všechna zobrazení, která byla publikována pro vaši organizaci. Odsud můžete zobrazení znovu upravit poté, co upravíte role zabezpečení nebo právnické osoby, na které je zobrazení zaměřeno. Tato zobrazení můžete také exportovat, odstranit nebo můžete zrušit jeho publikování. Pomocí akce **Uložit jako osobní** můžete vytvořit k vytvoření osobní kopii zobrazení, abyste mohli zobrazení aktualizovat nebo získat lepší přehled o jeho obsahu. 
+- **Nepublikovaná zobrazení** - V této části jsou uvedena všechna zobrazení organizace ve vašem systému, která momentálně nejsou publikována. Tato zobrazení nejčastěji přicházejí do systému pomocí funkce importu. Tato zobrazení můžete publikovat, exportovat nebo odstranit. Akce **Rychlé publikování**, která byla přidána ve verzi 10.0.12, umožňuje publikovat více zobrazení z této sekce v jedné akci pomocí stávající konfigurace zabezpečení a konfigurace právnických osob. Pomocí akce **Uložit jako osobní** můžete vytvořit k osobní kopie těchto zobrazení, abyste mohli lépe pochopit obsah zobrazení.
 - **Osobní zobrazení** – v této části jsou uvedena všechna zobrazení, která byla vytvořena uživateli v systému. Odsud můžete publikovat osobní zobrazení do organizace nebo zkopírovat jedno či více těchto zobrazení pro jiné uživatele. Tato zobrazení můžete také exportovat nebo odstranit podle potřeby.
 - **Uživatelské nastavení** - Vyberte uživatele, kterého chcete zobrazit, nebo upravte jeho schopnost používat personalizaci pro celý systém nebo pro konkrétní stránky, které uživatel navštívil. Můžete si prohlížet a pracovat s personalizacemi uživatele v systému. Můžete také odstranit všechny personalizace pro daného uživatele nebo popisek funkcí pro uživatele. Pokud jsou obnoveny popisky funkce, všechna překryvná okna, která zavedla nové funkce a která uživatel předtím odstranil se znovu zobrazí při příštím výskytu těchto funkcí uživatelem.
 - **Nastavení systému:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení použita pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
 
-Uživatelé, kteří mají přístup na stránku **Individuální nastavení**, mohou také importovat osobní zobrazení nebo zobrazení organizace pomocí tlačítka **Importovat zobrazení** v podokně akcí. Ve verzi 10.0.12 a novějších byl přidán mechanismus pro okamžité publikování zobrazení při jejich importu.
+Uživatelé, kteří mají přístup na stránku **Individuální nastavení**, mohou také importovat osobní zobrazení nebo zobrazení organizace pomocí tlačítka **Importovat zobrazení** v podokně akcí. Pro zobrazení organizace můžete vybrat **Publikovat okamžitě** ke zpřístupnění výběrů uživatelům bez dalšího explicitního publikování.
 
 ## <a name="known-issues"></a>Známé problémy
 Seznam známých problémů s uloženými zobrazeními naleznete na stránce [Vytváření formulářů, které plně využívají uložená zobrazení](../../dev-itpro/user-interface/understanding-saved-views.md).
@@ -204,27 +195,7 @@ Seznam známých problémů s uloženými zobrazeními naleznete na stránce [Vy
 > [!NOTE]
 > Funkce **Uložená zobrazení** vyžaduje povolení systému přizpůsobení ve Finance and Operations. Pokud je individuální nastavení pro celé prostředí vypnuto, zobrazení budou zakázána i v případě, že provedete níže uvedené kroky. 
 
-**Verze 10.0.13 a pozdější**
-
-Funkce **Uložená zobrazení** již není v náhledu. Nyní je k dispozici přímo prostřednictvím správy funkcí v jakémkoli prostředí.
-
-**Verze 10.0.9 až 10.0.12**
-
-Funkce **Uložená zobrazení** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Stejně jako u jiných funkcí náhledu je povolení této funkce v produkčním prostředí podmíněno [dodatečnou smlouvou o použití](https://go.microsoft.com/fwlink/?linkid=2105274).
-
-**10.0.8 / Platform update 32 a předchozí**
-
-Funkci **Uložená zobrazení** lze povolit v prostředí úrovně 1 (Dev/Test) a úrovně 2 (Sandbox), aby bylo možné poskytnout další změny testování a návrhu pomocí následujících kroků.
-
-1. **Povolit let**: spustit následující příkaz SQL: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
-
-2. **Obnovit IIS** pro vyprázdnění statickou mezipaměť testovací verze. 
-3. **Najít funkci**: přejděte do pracovního prostoru **Správa funkcí**. Pokud se **Uložená zobrazení** v seznamu neobjeví, vyberte **Vyhledat aktualizace**.
-4. **Povolit funkci**: vyhledejte funkci **Uložená zobrazení** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**.
-
-Všechny následující uživatelské relace budou začínat uloženým zobrazením.
+Můžete zapínat a vypínat funkci **Uložená zobrazení** prostřednictvím správy funkcí v libovolném prostředí. Po zapnutí budou uložená zobrazení povolena ve všech následujících relacích uživatele.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Co se stane se stávajícími individuálními nastaveními, když jsou povolena zobrazení? 
 
@@ -253,6 +224,3 @@ U stránek s vybranými velkými zobrazeními (přizpůsobení a dotazy lze ukl�
 
 - Pokud například přejdete v dlaždici na stránku, bude dotaz dlaždice proveden bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud jste vytvořili tuto dlaždici po povolení zobrazení, výběrem dlaždice se otevře stránka se zobrazením přidruženým k této dlaždici.
 - Pokud také přejdete na stránku, jejíž vstupní bod obsahuje dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. Měli byste věnovat pozornost, pokud k tomu dojde prostřednictvím informační zprávy při načítání zobrazení. Můžete také potvrdit přepnutí do tohoto zobrazení po načtení stránky, což by mělo umožnit spuštění dotazu zobrazení.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

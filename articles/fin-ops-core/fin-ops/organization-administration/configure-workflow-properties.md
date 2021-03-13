@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693275"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067616"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurace vlastností workflow
 
@@ -73,6 +73,9 @@ Můžete zadat pokyny pro uživatele, kteří budou odesílat dokumenty ke zprac
     4. V poli **Přeložený text** zadejte text.
     5. Text můžete přizpůsobit vložením zástupného textu. Pokyny, jak zadat zástupný text, naleznete v kroku 3.
     6. Klepněte na tlačítko **Zavřít**.
+
+> [!NOTE]
+> Zástupné symboly nelze přidat pomocí kopírování a vkládání, protože cílové informace nejsou vloženy správně. Pomocí rozhraní přidejte zástupné symboly.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Určete, kdy se tento workflow používá v podmínkách aktivace
 
@@ -179,6 +182,3 @@ Chcete-li zadat komentáře ke změnám provedeným u tohoto workflowu, proveďt
 2. V poli **Zadat komentáře k workflowu** zadejte své poznámky.
 3. Zkontrolujte své komentáře. Po přidání komentáře je již nelze upravit.
 4. Kliknutím na **Přidat** přidáte komentáře do oblasti **Historie poznámek**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

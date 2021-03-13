@@ -1,6 +1,6 @@
 ---
 title: Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
-description: Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER.
+description: Toto téma popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2de6464aaceadd60a82a70f428f42cd4f864eb8
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682014"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092078"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 
@@ -157,6 +157,3 @@ Pro účely testování proveďte mapování formátu pomocí souboru SampleInco
 2. Klikněte na tlačítko OK.
     * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány pouze řádky 3 importovaného souboru TXT. Kód IBAN na řádku 4, který není platný, byl vynechán a v informačním protokolu je uvedena chybová zpráva.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

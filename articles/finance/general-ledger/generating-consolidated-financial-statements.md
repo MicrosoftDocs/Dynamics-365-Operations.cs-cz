@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441208"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044014"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Vytváření konsolidovaných finančních výkazů
 
@@ -74,7 +73,7 @@ Organizační hierarchie, které obsahují dimenze nebo právnické osoby, dynam
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolidace zahrnující eliminace
 Transakce eliminací jsou běžnou součástí procesu konsolidace. V tomto příkladu je během konsolidace eliminováno pět účtů: 142600 211400, 401420, 401180 a 510820. Společnosti mohou mít mezi vnitropodnikové účty nastaveny různě. Některé společnosti například používají jako poslední číslici 9, pokud je účet používán pro vnitropodnikové transakce. Bez ohledu na metodu – pokud znáte vnitropodnikové účty, na svých konsolidovaných finančních výkazech můžete zobrazovat eliminace.
 
-Následující obrázek znázorňuje definici sloupce pro konsolidovanou výsledovku. Tři vnitropodnikové účty zisků a ztrát jsou definovány pro každou společnost s použitím filtru dimenze. Sloupec D obsahuje eliminace účtů pouze pro společnost USMF a sloupec E obsahuje eliminace pouze pro společnost DEMF. Sloupce E i D jsou nastaveny tak, aby **nebyly** vytištěny ve finančním výkazu.
+Následující obrázek znázorňuje definici sloupce pro konsolidovanou výsledovku. Tři vnitropodnikové účty zisků a ztrát jsou definovány pro každou společnost s použitím filtru dimenze. Sloupce F, G a H obsahují eliminační účty pouze pro společnosti USMF, USRT a DEMF. Tyto sloupce jsou nastaveny tak, aby **nebyly** vytištěny ve finančním výkazu.
 
 ![Definice sloupce - konsolidovaný výpis příjmů](./media/column-definition-consolidated-income-statement.png "Definice sloupce - konsolidovaný výpis příjmů")
 
@@ -140,7 +139,7 @@ Různé právnické osoby mohou mít různé fiskální kalendáře, ale i tak j
 - Vytvořte definici sloupce a pomocí období a roku namapujte příslušná období na jednotlivé společnosti.
 - V **Nastavení** \> **Další** \> **Další možnosti** vyberte, zda chcete konsolidovat pomocí koncového data období nebo čísla období.
 
-Při vytváření definice sloupce pro několik společností, které mají různé fiskálních období, je důležité zvážit, která společnost bude přiřazena k poli **Název společnosti** v definici sestavy. Fiskální kalendář takové společnosti se použije jako základní fiskální kalendář pro definici sestavy. Následující tabulka například zobrazuje nastavení fiskálního období pro společnosti USMF a INMF. Pro konsolidované sestavy chcete použít fiskální kalendář, který používá společnost USMF. Sloupec „Mapování“ zobrazuje ekvivalentní období a rok pro každou společnost, je-li sestava vytvořena pro 30. června 2018.
+Při vytváření definice sloupce pro několik společností, které mají různé fiskálních období, je důležité zvážit, která společnost bude přiřazena k poli **Název společnosti** v definici sestavy. Fiskální kalendář takové společnosti se použije jako základní fiskální kalendář pro definici sestavy. Následující tabulka například zobrazuje fiskální období, které bylo nastaveno pro společnosti USMF a INMF. Pro konsolidované sestavy chcete použít fiskální kalendář, který používá společnost USMF. Sloupec „Mapování“ zobrazuje ekvivalentní období a rok pro každou společnost, je-li sestava vytvořena pro 30. června 2018.
 
 | Společnost   | Fiskální rok                                  | Mapování                     |
 |-----------|----------------------------------------------|-----------------------------|
@@ -224,6 +223,3 @@ Chcete-li získat správně převedené částky při použití měn, finanční
 Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o zadání podrobností online konsolidace získáte v části [Online finanční konsolidace](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
