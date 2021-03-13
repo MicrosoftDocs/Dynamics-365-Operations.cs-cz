@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680041"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115673"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -53,8 +53,8 @@ Informace o produktu obsahují všechny informace související s produktem a je
 
 Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
 -----------------------|--------------------------------|---
-Uvolněné produkty V2 | msdyn\_sharedproductdetails | Entita **msdyn\_sharedproductdetails** obsahuje pole z aplikací Finance and Operations, které definují produkt a obsahují finanční a řídící informace o produktu. 
-Uvolněné jedinečné produkty v Dataverse | Produkt | Entita **Produkt** obsahuje pole, která definují produkt. Zahrnuje jednotlivé produkty (produkty s dílčím typem produktu) a varianty produktu. Následující tabulka zobrazuje mapování.
+Uvolněné produkty V2 | msdyn\_sharedproductdetails | Tabulka **msdyn\_sharedproductdetails** obsahuje sloupce z aplikací Finance and Operations, které definují produkt a obsahují finanční a řídící informace o produktu. 
+Uvolněné jedinečné produkty v Dataverse | Produkt | Tabulka **Produkt** obsahuje sloupce, které definují produkt. Zahrnuje jednotlivé produkty (produkty s dílčím typem produktu) a varianty produktu. Následující tabulka zobrazuje mapování.
 Identifikované čárové kódy čísla produktu | msdyn\_productbarcodes | Čárové kódy produktů se používají k jednoznačné identifikaci produktů.
 Výchozí nastavení objednávky | msdyn\_productdefaultordersettings
 Výchozí nastavení pořadí konkrétních produktů | msdyn_productdefaultordersettings
@@ -65,36 +65,38 @@ Barvy | msdyn\_productcolors
 Velikosti | msdyn\_productsizes
 Styly | msdyn\_productsytles
 Konfigurace | msdyn\_productconfigurations
-Barvy základního produktu | msdyn_sharedproductcolors | Entita **Sdílená barva produktu** produktu označuje barvy, které může mít určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
-Velikosti základního produktu | msdyn_sharedproductsizes | Entita **Sdílená velikost produktu** produktu označuje velikosti, které může mít konkrétní základní produkt. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
-Styly základního produktu | msdyn_sharedproductstyles | Entita **Sdílený styl produktu** produktu označuje styly, které má určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
-Konfigurace základního produktu | msdyn_sharedproductconfigurations | Entita **Sdílená konfigurace produktu** produktu označuje konfigurace, které má určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
-Všechny výrobky | msdyn_globalproducts | Entita všechny produkty obsahuje všechny produkty, které jsou k dispozici v aplikacích Finance and Operations, a to jak uvolněné produkty, tak i neuvolněné produkty.
+Barvy základního produktu | msdyn_sharedproductcolors | Tabulka **Sdílená barva produktu** označuje barvy, které může mít určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
+Velikosti základního produktu | msdyn_sharedproductsizes | Tabulka **Sdílená velikost produktu** označuje velikosti, které může mít konkrétní základní produkt. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
+Styly základního produktu | msdyn_sharedproductstyles | Tabulka **Sdílený styl produktu** označuje styly, které má určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
+Konfigurace základního produktu | msdyn_sharedproductconfigurations | Tabulka **Sdílená konfigurace produktu** označuje konfigurace, které má určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
+Všechny výrobky | msdyn_globalproducts | Tabulka všechny produkty obsahuje všechny produkty, které jsou k dispozici v aplikacích Finance and Operations, a to jak uvolněné produkty, tak i neuvolněné produkty.
 Jednotka | uoms
 Převody jednotek | msdyn_ unitofmeasureconversions
 Převod měrné jednotky konkrétního produktu | msdyn_productspecificunitofmeasureconversion
-Kategorie produktu | msdyn_productcategories | Každá z kategorií produktů a informace o její struktuře a vlastnostech je obsažena v entitě kategorie produktu. 
-Hierarchie kategorií produktů | msdyn_productcategoryhierarhies | Hierarchie produktů můžete použít k uspořádání produktů do kategorií nebo k jejich seskupení. Hierarchie kategorií jsou k dispozici v Dataverse prostřednictvím entity Hierarchie kategorií produktu. 
-Role hierarchie kategorií produktů | msdyn_productcategoryhierarchies | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá entita role kategorie produktu. 
-Přiřazení kategorií produktů | msdyn_productcategoryassignments | Chcete-li přiřadit produkt do kategorie, lze použít entitu přiřazení kategorie produktu.
+Kategorie produktu | msdyn_productcategories | Každá z kategorií produktů a informace o její struktuře a vlastnostech je obsažena v tabulce kategorie produktu. 
+Hierarchie kategorií produktů | msdyn_productcategoryhierarhies | Hierarchie produktů můžete použít k uspořádání produktů do kategorií nebo k jejich seskupení. Hierarchie kategorií jsou k dispozici v Dataverse prostřednictvím tabulky Hierarchie kategorií produktu. 
+Role hierarchie kategorií produktů | msdyn_productcategoryhierarchies | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá tabulka role kategorie produktu. 
+Přiřazení kategorií produktů | msdyn_productcategoryassignments | Chcete-li přiřadit produkt do kategorie, lze použít tabulku přiřazení kategorie produktu.
 
 ## <a name="integration-of-products"></a>Integrace produktů
 
-V tomto modelu je produkt reprezentován kombinací dvou tabulek v Dataverse: **Produkt** a **msdyn\_sharedproductdetails**. Zatímco první entita obsahuje definici produktu (jedinečný identifikátor produktu, název produktu a popis), druhá entita obsahuje pole uložená na úrovni produktu. Kombinace těchto dvou tabulek se používá k definování výrobku podle konceptu skladové jednotky (SKU). Každý uvolněný produkt bude mít své informace v uvedených tabulkách (podrobnosti o produktu a sdíleném produktu). Chcete-li sledovat všechny produkty (uvolněné a neuvolněné), použije se entita **Globální produkty**. 
+V tomto modelu je produkt reprezentován kombinací dvou tabulek v Dataverse: **Produkt** a **msdyn\_sharedproductdetails**. Zatímco první tabulka obsahuje definici produktu (jedinečný identifikátor produktu, název produktu a popis), druhá tabulka obsahuje sloupce uložené na úrovni produktu. Kombinace těchto dvou tabulek se používá k definování výrobku podle konceptu skladové jednotky (SKU). Každý uvolněný produkt bude mít své informace v uvedených tabulkách (podrobnosti o produktu a sdíleném produktu). Chcete-li sledovat všechny produkty (uvolněné a neuvolněné), použije se tabulka **Globální produkty**. 
 
 Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty jedinečných produktů, základních produktů a variant produktů lze zaznamenat v Dataverse následujícím způsobem:
 
-- **Produkty s podtypem** jsou produkty definované samy sebou. Není nutné definovat žádné dimenze. Příkladem je určitá kniha. Pro tyto produkty je vytvořen jeden záznam v entitě **Produkt** a jeden záznam je vytvořen v entitě **msdyn\_sharedproductdetails**. Není vytvořen žádný záznam produktové řady.
-- **Základní produkty** se používají jako obecné výrobky, které obsahují definici a pravidla určující chování obchodních procesů. Na základě těchto definic mohou být vygenerovány jedinečné produkty, které jsou známy jako varianty produktu. Například tričko je základní produkt a může mít barvu a velikost jako dimenze. Varianty lze uvolnit s různými kombinacemi těchto dimenzí, jako je například malé modré triko nebo středně velké zelené triko. V rámci integrace je v tabulce produktů vytvořen jeden záznam na variantu. Tento záznam obsahuje specifické informace o variantách, jako jsou například různé dimenze. Obecné informace o produktu jsou uloženy v entitě **msdyn\_sharedproductdetails**. (Tyto obecné informace se uchovávají v základním produktu.) Informace základního produktu se synchronizují s Dataverse, jakmile je vytvořen uvolněný hlavní produkt (před uvolněním variant).
+- **Produkty s podtypem** jsou produkty definované samy sebou. Není nutné definovat žádné dimenze. Příkladem je určitá kniha. Pro tyto produkty je vytvořen jeden řádek v tabulce **Produkt** a jeden řádek je vytvořen v tabulce **msdyn\_sharedproductdetails**. Není vytvořen žádný řádek produktové řady.
+- **Základní produkty** se používají jako obecné výrobky, které obsahují definici a pravidla určující chování obchodních procesů. Na základě těchto definic mohou být vygenerovány jedinečné produkty, které jsou známy jako varianty produktu. Například tričko je základní produkt a může mít barvu a velikost jako dimenze. Varianty lze uvolnit s různými kombinacemi těchto dimenzí, jako je například malé modré triko nebo středně velké zelené triko. V rámci integrace je v tabulce produktů vytvořen jeden řádek na variantu. Tento řádek obsahuje specifické informace o variantách, jako jsou například různé dimenze. Obecné informace o produktu jsou uloženy v tabulce **msdyn\_sharedproductdetails**. (Tyto obecné informace se uchovávají v základním produktu.) Informace základního produktu se synchronizují s Dataverse, jakmile je vytvořen uvolněný hlavní produkt (před uvolněním variant).
 - **Jedinečné produkty** odkazují na všechny produkty podtypu produktu a všechny varianty produktu. 
 
 ![Datový model pro produkty](media/dual-write-product.png)
 
-V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. 
+V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt. 
 
 Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní**, aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**. 
 
-Mějte na paměti, že synchronizace produktů se děje aplikací Finance and Operations do Dataverse. To znamená, že hodnoty polí entit produktu lze změnit v Dataverse, ale při spuštění synchronizace (při změně pole produktu v aplikaci Finance and Operations) dojde k přepsání hodnot v Dataverse. 
+Pokud jsou produkty synchronizovány, musíte zadat hodnotu pro pole **Prodejní jednotka** v aplikaci Finance and Operations, protože je to povinné pole v prodeji.
+
+Synchronizace produktů se děje z aplikace Finance and Operations do Dataverse. To znamená, že hodnoty sloupců z tabulky lze změnit v Dataverse, ale při spuštění synchronizace (při změně sloupce produktu v aplikaci Finance and Operations) dojde k přepsání hodnot v Dataverse. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -166,7 +168,7 @@ Nejprve je důležité poznamenat, že klíč integrace pro jednotku je msdyn_sy
 
 Pro jednotky spárované/překrývající se v aplikacích Finance and Operations a jiných aplikacích Dynamics 365:
 
-+ **Jednotka patří do skupiny jednotek v jiných aplikacích Dynamics 365, které odpovídají přidružené třídě jednotek v aplikacích Finance and Operations**. V takovém případě musí být pole msdyn_symbol v ostatních aplikacích Dynamics 365 vyplněno symbolem jednotky z aplikací Finance and Operations. Proto, když budou data spárována a skupina jednotek bude nastavena jako „externě udržovaná“ v jiných aplikacích Dynamics 365.
++ **Jednotka patří do skupiny jednotek v jiných aplikacích Dynamics 365, které odpovídají přidružené třídě jednotek v aplikacích Finance and Operations**. V takovém případě musí být sloupec msdyn_symbol v ostatních aplikacích Dynamics 365 vyplněn symbolem jednotky z aplikací Finance and Operations. Proto, když budou data spárována a skupina jednotek bude nastavena jako „externě udržovaná“ v jiných aplikacích Dynamics 365.
 + **Jednotka patří do skupiny jednotek v jiných aplikacích Dynamics 365, které neodpovídají přidružené třídě jednotek v aplikacích Finance and Operations (žádná existující třída jednotek v aplikacích Finance and Operations pro třídu jednotek v jiných aplikacích Dynamics 365)**. V takovém případě musí být msdyn_symbol vyplněn náhodným řetězcem. Pamatujte, že tato hodnota musí být jedinečná v aplikacích Dynamics 365.
 
 Pro jednotky a třídy jednotek v aplikacích Finance and Operations neexistující v jiných aplikacích Dynamics 365:
@@ -175,7 +177,7 @@ Jako součást dvojitého zápisu jsou skupiny jednotek z aplikací Finance and 
 
 Pro jednotky v jiných aplikacích Dynamics 365, které neexistují v aplikacích Finance and Operations:
 
-Pole msdyn_symbol musí být vyplněno pro všechny jednotky. Jednotky mohou být vždy vytvořeny v aplikacích Finance and Operations v odpovídající třídě jednotek (pokud existuje). Pokud třída jednotek neexistuje, musí být nejprve vytvořena (všimněte si, že nemůžete vytvořit třídu jednotek v aplikacích Finance and Operations, kromě možnosti rozšíření, pokud rozšiřujete výčet) a spárována s jinou skupinou jednotek aplikací Dynamics 365. Poté můžete vytvořit jednotku. Symbol jednotky v aplikacích Finance and Operations musí být msdyn_symbol dříve specifikovaný v jiných aplikacích Dynamics 365 pro jednotku.
+Sloupec msdyn_symbol musí být vyplněn pro všechny jednotky. Jednotky mohou být vždy vytvořeny v aplikacích Finance and Operations v odpovídající třídě jednotek (pokud existuje). Pokud třída jednotek neexistuje, musí být nejprve vytvořena (všimněte si, že nemůžete vytvořit třídu jednotek v aplikacích Finance and Operations, kromě možnosti rozšíření, pokud rozšiřujete výčet) a spárována s jinou skupinou jednotek aplikací Dynamics 365. Poté můžete vytvořit jednotku. Symbol jednotky v aplikacích Finance and Operations musí být msdyn_symbol dříve specifikovaný v jiných aplikacích Dynamics 365 pro jednotku.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Zásady produktu: dimenze, sledování a skupiny úložišť
 
@@ -202,7 +204,7 @@ Zásady produktu jsou sady zásad, které se používají pro definování produ
 
 Pro jednoznačnou identifikaci produktů mezi Dynamics 365 for Finance and Operations a produktů v Dataverse se používá klíč integrace. U produktů je **(productnumber)** jedinečným klíčem, který identifikuje produkt v Dataverse. Je tvořen zřetězením: **(company, msdyn_productnumber)**. **Company** označuje právnickou osobu v Finance and Operations a **msdyn_productnumber** označuje číslo produktu pro specifický produkt v aplikaci Finance and Operations. 
 
-Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
+Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek sloupce je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. Ve sloupci (productnumber) však není zobrazen jedinečný klíč produktu. 
 
 Pokud vytváříte aplikace v Dataverse, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber**, protože není jedinečné. 
 
@@ -210,12 +212,12 @@ Pokud vytváříte aplikace v Dataverse, měli byste věnovat pozornost použit�
 
 ### <a name="initial-synchronization-of-products"></a>Počáteční synchronizace produktů 
 
-Když je povolen dvojí zápis, jsou produkty z aplikací Finance and Operations synchronizovány do Dataverse a jiných modelem řízených aplikací Dynamics 365. Produkty vytvořené v aplikaci Dataverse a jiných aplikacích Dynamics 365 před uvedením dvojího zápisu nebudou aktualizovány ani spárovány s daty produktu z aplikací Finance and Operations.
+Když je povolen dvojí zápis, jsou produkty z aplikací Finance and Operations synchronizovány do Dataverse a jiných aplikací Customer Engagement. Produkty vytvořené v aplikaci Dataverse a jiných aplikacích Dynamics 365 před uvedením dvojího zápisu nebudou aktualizovány ani spárovány s daty produktu z aplikací Finance and Operations.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Párování dat produktu z Finance and Operations a dalších aplikací Dynamics 365
 
-Pokud jsou stejné produkty uchovávány (překrývání a spárování) v aplikaci Finance and Operations a v Dataverse a v jiných aplikacích Dynamics 365 při povolování dvojího zápisu, dojde k provedení synchronizace produktů z Finance and Operations a duplicitní záznamy se zobrazí v Dataverse pro stejný produkt.
-Chcete-li se vyhnout předchozí situaci, pokud ostatní aplikace Dynamics 365 obsahují produkty, které se překrývají a shodují s Finance and Operations, musí správce povolující dvojí zapisování spustit **Company** (například: "USMF") a **msdyn_productnumber** (příklad: 1234:Black:S) před tím, než dojde k synchronizaci produktů. Jinými slovy, tato dvě pole v produktu v Dataverse musí být vyplněna příslušnou společností v aplikaci Finance and Operations, se kterou musí být výrobek spárován, a se svým číslem produktu. 
+Pokud jsou stejné produkty uchovávány (překrývání a spárování) v aplikaci Finance and Operations a v Dataverse a v jiných aplikacích Dynamics 365 při povolování dvojího zápisu, dojde k provedení synchronizace produktů z Finance and Operations a duplicitní řádky se zobrazí v Dataverse pro stejný produkt.
+Chcete-li se vyhnout předchozí situaci, pokud ostatní aplikace Dynamics 365 obsahují produkty, které se překrývají a shodují s Finance and Operations, musí správce povolující dvojí zapisování spustit sloupce **Company** (například: "USMF") a **msdyn_productnumber** (příklad: 1234:Black:S) před tím, než dojde k synchronizaci produktů. Jinými slovy, tato dva sloupce v produktu v Dataverse musí být vyplněna příslušnou společností v aplikaci Finance and Operations, se kterou musí být výrobek spárován, a se svým číslem produktu. 
 
 Pokud je synchronizace povolena a probíhá, budou produkty z Finance and Operations synchronizovány se spírovanými produkty v aplikaci Dataverse a v dalších aplikacích Dynamics 365. To platí pro jedinečné produkty i varianty produktu. 
 
@@ -223,6 +225,3 @@ Pokud je synchronizace povolena a probíhá, budou produkty z Finance and Operat
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migrace dat produktu z dalších aplikací Dynamics 365 do Finance and Operations
 
 Pokud jiné aplikace Dynamics 365 obsahují produkty, které nejsou přítomny v aplikaci Finance and Operations, může správce nejprve použít **EcoResReleasedProductCreationV2Entity** pro import těchto produktů v aplikaci Finance and Operations. A za druhé, spárujte data produktu z aplikace Finance and Operations a dalších aplikací Dynamics 365, jak je popsáno výše. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

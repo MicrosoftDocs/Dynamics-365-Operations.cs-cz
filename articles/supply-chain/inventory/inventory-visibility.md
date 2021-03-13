@@ -1,7 +1,7 @@
 ---
 title: Doplněk Viditelnost zásob
 description: Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625058"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114663"
 ---
 # <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Doplněk Viditelnost zásob je nezávislá a vysoce škálovatelná mikroslužba, která umožňuje sledování zásob na skladě v reálném čase, a tím poskytuje globální pohled na viditelnost zásob.
 
 Všechny informace, které se vztahují k zásobám na skladě, se do služby exportují téměř v reálném čase prostřednictvím nízkoúrovňové integrace SQL. Externí systémy přistupují ke službě prostřednictvím rozhraní API RESTful a dotazují se na praktické informace o daných sadách dimenzí, čímž získávají seznam dostupných pozic.
 
-Viditelnost zásob je mikroslužba postavená na Common Data Service, což znamená, že ji můžete rozšířit pomocí vytváření Power Apps a použitím Power BI, a poskytovat přizpůsobené funkce pro splnění vašich obchodních požadavků. Je také možné upgradovat index za účelem provádění dotazů na zásoby.
+Viditelnost zásob je mikroslužba postavená na Microsoft Dataverse, což znamená, že ji můžete rozšířit pomocí vytváření Power Apps a použitím Power BI, a poskytovat přizpůsobené funkce pro splnění vašich obchodních požadavků. Je také možné upgradovat index za účelem provádění dotazů na zásoby.
 
 Viditelnost zásob poskytuje možnosti konfigurace, které umožňují její integraci s více systémy třetích stran. Podporuje standardizovanou dimenzi zásob, přizpůsobitelnou rozšiřitelnost a standardizované, konfigurovatelné vypočítané množství.
 
@@ -78,30 +78,57 @@ Pro instalaci doplňku Viditelnost zásob proveďte následující:
 
 ### <a name="get-a-security-service-token"></a>Získání tokenu služby zabezpečení
 
-Chcete-li získat token služby zabezpečení, postupujte takto:
+Token služby zabezpečení získáte takto:
 
-1. Získejte `aadToken` a zavolejte koncový bod: https://securityservice.operations365.dynamics.com/token.
-1. Nahraďte `client_assertion` v textu za `aadToken`.
-1. Nahraďte kontext v textu prostředím, ve kterém chcete doplněk nasadit.
-1. Nahraďte obor v textu následovně:
+1. Přihlaste se na Azure Portal a použijte jej k vyhledání `clientId` a `clientSecret` pro vaši aplikaci Supply Chain Management.
+1. Načtěte token Azure Active Directory (`aadToken`) odesláním požadavku HTTP s následujícími vlastnostmi:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metoda** - `GET`
+    - **Obsah těla (údaje formuláře)**:
 
-    - Rozsah pro MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (ID aplikace Azure Active Directory ID tenanta pro MCK naleznete v `appsettings.mck.json`.)
-    - Rozsah pro PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (ID aplikace Azure Active Directory ID tenanta pro PROD naleznete v `appsettings.prod.json`.)
+        | klíč | hodnota |
+        | --- | --- |
+        | id klienta | ${aadAppId} |
+        | tajný klíč klienta | ${aadAppSecret} |
+        | typ grantu | client_credentials |
+        | prostředek | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Měli byste obdržet `aadToken` v odpovědi, která se podobá následujícímu příkladu.
 
-    Výsledek by měl vypadat podobně jako v následujícím příkladu.
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formulujte požadavek JSON, který se podobá následujícímu:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Kde:
+    - Hodnota `client_assertion` musí být `aadToken`, který jste obdrželi v předchozím kroku.
+    - Hodnota `context` musí být ID prostředí, do kterého chcete doplněk nasadit.
+    - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
+
+1. Odešlete požadavek HTTP s následujícími vlastnostmi:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metoda** - `POST`
+    - **Záhlaví HTTP** - Zahrňte verzi API (klíč je `Api-Version` a hodnota je `1.0`)
+    - **Obsah těla** - Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
 
 1. V odpovědi získáte `access_token`. To je to, co potřebujete jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
 
@@ -500,6 +527,3 @@ Dotazy zobrazené v předchozích příkladech by mohly vrátit takový výslede
 ```
 
 Všimněte si, že pole množství jsou strukturována jako slovník měrných jednotek a jejich přidružených hodnot.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

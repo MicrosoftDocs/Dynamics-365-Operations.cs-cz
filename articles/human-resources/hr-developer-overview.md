@@ -1,8 +1,8 @@
 ---
-title: Přehled
+title: Přehled vývoje
 description: Tato příručka pro vývojáře poskytuje odkaz na rozhraní API a vlastní pole. Poskytuje také informace o integraci s jinými aplikacemi.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 517febd7967350956a28dfd9d11e4042456c7da0
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528310"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115383"
 ---
-# <a name="overview"></a>Přehled
+# <a name="development-overview"></a>Přehled vývoje
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -35,13 +35,13 @@ Tato příručka pro vývojáře poskytuje odkaz na rozhraní API a vlastní pol
 
 - [Rozšíření pomocí Power Apps a Power Automate](hr-developer-power-apps.md)
 
-- [Entity aplikace Human Resources v Common Data Service](hr-developer-entities.md)
+- [Entity aplikace Human Resources v Dataverse](hr-developer-entities.md)
 
 - [Vlastní pole](hr-developer-custom-fields.md)
 
 - Nastavení integrace dat
   - [Volba technologie integrace dat](hr-admin-integration-choose-technology.md)
-  - [Konfigurace integrace s Common Data Service](hr-admin-integration-common-data-service.md)
+  - [Konfigurace integrace s Dataverse](hr-admin-integration-common-data-service.md)
   - [Konfigurace integrace s aplikací Finance](hr-admin-integration-finance.md)
   - [Konfigurace integrace s aplikací Dayforce](hr-admin-integration-dayforce.md)
   - [Vytvoření aplikace pro export opakujících se dat](hr-admin-integration-recurring-data-export.md)
@@ -62,6 +62,3 @@ Tato příručka pro vývojáře poskytuje odkaz na rozhraní API a vlastní pol
 - [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)
 - [Průvodce správce](hr-admin-overview.md)
 - [Uživatelská příručka](hr-hrpro-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

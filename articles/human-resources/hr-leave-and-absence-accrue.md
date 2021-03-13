@@ -2,7 +2,7 @@
 title: Časově rozlišit plány pracovního volna a absence
 description: Můžete časově rozlišit volno a absenci v Dynamics 365 Human Resources pro více zaměstnanců nebo pro jednotlivce.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aed36a38c5d50767b5ac14ae82ca424f0c835ae0
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417690"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5116085"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Časově rozlišit plány pracovního volna a absence
 
@@ -111,6 +111,3 @@ Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data 
 
 [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
 [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
