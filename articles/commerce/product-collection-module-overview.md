@@ -3,35 +3,32 @@ title: Moduly kolekce produktů
 description: V tomto tématu je uveden přehled modulů kolekcí produktů v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410654"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097096"
 ---
 # <a name="product-collection-modules"></a>Moduly kolekce produktů
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 V tomto tématu je uveden přehled modulů kolekcí produktů v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Objevování produktů je primární nástroj, který maloobchodníci používají pro zapojení svých zákazníků na webu e-Commerce. Moduly kolekcí produktů pomáhají prodejcům vytvářet působivé možnosti nakupování poskytnutím intuitivního vizuálního rozhraní, které lze použít k rychlému vytváření kolekcí produktů.
 
@@ -67,6 +64,10 @@ V následující tabulce jsou popsány různé typy modulů kolekcí produktů v
 | Často nakupované společně | Umělá inteligence/strojové učení | Tento modul používá strojní učení k analýze zákaznických vzorků a doporučí související položky, které jsou často nakoupeny spolu s daným produktem. Tento seznam může zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu. |
 | Lidem se též líbí           | Umělá inteligence/strojové učení | Tento modul používá strojní učení k analýze zákaznických vzorků a doporučí položky, které souvisí s daným produktem. Tento seznam může zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu. |
 | Výběry pro vás              | Umělá inteligence/strojové učení | Tento modul využívá strojového učení k analýze nákupních vzorců přihlášeného uživatele a k poskytnutí individuálních doporučení založených na těchto vzorcích nákupu. Pro uživatele typu host bude tento seznam sbalen. |
+
+## <a name="supported-modules"></a>Podporované moduly 
+
+Modul kolekce produktů podporuje [modul rychlého zobrazení](quick-view-module.md), který umožňuje uživatelům prohlížet informace o produktu a přidávat položky do košíku ze stránky kolekce produktů.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Přidání modulu kolekce produktů do stránky kategorie
 
@@ -110,5 +111,4 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 
 [Přehled doporučení produktu](product-recommendations.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Modul rychlého zobrazení](quick-view-module.md)

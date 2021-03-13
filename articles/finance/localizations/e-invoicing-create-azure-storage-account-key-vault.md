@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441334"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104222"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Vytvořte účet úložiště Azure a trezor klíčů
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Doplňková služba elektronické fakturace přebírá odpovědnost za ukládání všech vašich obchodních údajů v prostředcích Microsoft Azure, které vlastní vaše společnost. Abyste zajistili, že služba funguje správně a že ke všem obchodním datům, která jsou potřebná a generovaná doplňkem elektronické fakturace, přistupuje pouze doplněk, musíte vytvořit dva hlavní zdroje Azure:
-
-- Účet úložiště Azure (úložiště Blob) k ukládání elektronických faktur
-- Trezor klíčů Azure k ukládání certifikátů a identifikátoru URI (Uniform Resource Identifier) účtu úložiště
-
-> [!NOTE]
-> Vyhrazený zdroj úložiště klíčů a úložiště objektů blob zákazníka musí být přiděleny konkrétně pro použití s doplňkem elektronické fakturace.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -91,6 +80,3 @@ V tomto tématu provedete dva hlavní kroky:
 9. V dialogovém okně **Objekt zabezpečení** vyberte objekt zabezpečení přidáním **Doplněk elektronické fakturace**.
 10. Vyberte **Přidat** a potom vyberte **Uložit změny Trezoru klíčů**.
 11. Na stránce **Přehled** zkopírujte hodnotu **Název DNS** pro trezor klíčů. Tato hodnota bude použita během instalace služby v RCS a bude označována jako *identifikátor URI trezoru klíčů*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

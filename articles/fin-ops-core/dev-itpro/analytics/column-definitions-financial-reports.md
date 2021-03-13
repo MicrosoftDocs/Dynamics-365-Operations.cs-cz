@@ -1,6 +1,6 @@
 ---
 title: Definice sloupce ve finančních sestavách
-description: Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav.
+description: Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy, která definuje obsah jednotlivých sloupců v sestavě.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687223"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093102"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
@@ -226,17 +226,16 @@ Uživatel vytváří sestavu pro dynamickou šestiměsíční prognózu. Uživat
 | Šířka sloupce        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Řízení tisku       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Uživatel kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno **Záhlaví sloupce** a zadá následující informace.
+Poté uživatel kliknutím dvakrát na buňku záhlaví sloupce B otevře dialogové okno **Záhlaví sloupce** a zadá následující informace.
 
 | Pole              | Hodnota                 |
 |--------------------|-----------------------|
 | Text záhlaví sloupce | Skutečné                |
 | Vložit automatický text    | Nebyla vybrána žádná možnost. |
 | Možnosti formátu     | Pole                   |
-| Zarovnání      | Nebyla vybrána žádná možnost. |
+| Odůvodnění      | Nebyla vybrána žádná možnost. |
 | Rozšířit z        | mld.                     |
 | Rozšířit do          | ZÁKLAD                  |
-| Záhlaví rozpočtu      | BASE+1 až koncový sloupec  |
 
 Po zadání informací uživatel klikne na **OK**. Poté uživatel kliknutím dvakrát na buňku záhlaví sloupce C otevře dialogové okno **Záhlaví sloupce** a zadá následující informace.
 
@@ -244,10 +243,10 @@ Po zadání informací uživatel klikne na **OK**. Poté uživatel kliknutím dv
 |--------------------|-----------------------|
 | Text záhlaví sloupce | Rozpočet                |
 | Vložit automatický text    | Nebyla vybrána žádná možnost. |
-| Možnosti formátu     | Pole                   |
-| Zarovnání      | Nebyla vybrána žádná možnost. |
-| Rozšířit z        | C                     |
-| Rozšířit do          | ZÁKLAD+2                |
+| Možnosti formátu     | Box                   |
+| Odůvodnění      | Nebyla vybrána žádná možnost. |
+| Rozšířit z        | BASE+1                |
+| Rozšířit do          | mil.                     |
 
 Nyní pokaždé, když tato zpráva je generována, přes sloupce obsahující skutečná data se vytiskne slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“. Navíc počet sloupců se upraví každý měsíc.
 
@@ -599,6 +598,3 @@ Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupc
 [Definice řádku v návrháři finanční sestavy](row-definitions-financial-reporting.md)
 
 [Rozšířené možnosti formátování ve finančním výkaznictví](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

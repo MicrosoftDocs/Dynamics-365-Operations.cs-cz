@@ -3,14 +3,13 @@ title: Modul navigační nabídky
 description: Tohle téma se zabývá moduly navigační nabídky a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: 65f8b6128b140f3fa776659d8920dfc5e095213f
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4410919"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097383"
 ---
 # <a name="navigation-menu-module"></a>Modul navigační nabídky
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly navigační nabídky a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Primárním účelem modulů navigační nabídky je umožnit uživatelům webu procházet produkty a stránky webu podle hierarchie navigace sítě definované v centrále Dynamics 365 Commerce. Položky konfigurované v modulu navigační nabídky se zobrazují jako navigace v záhlaví webu. Moduly navigační nabídky také podporují statické položky nabídky, které odkazují na jiné stránky na webu elektronického obchodu.
 
@@ -46,7 +44,9 @@ Následující obrázek ukazuje příklad navigační nabídky pro web Fabrikam 
 |---------------------------|-----------------------|-------------|
 | Zdroj                  | **Maloobchod**, **Ruční vytváření**, **Maloobchod a ruční vytváření** | Hodnota **Maloobchod** umožňuje v navigační nabídce zobrazit hierarchii navigace sítě z centrály Commerce. Hodnota **Ruční vytváření** umožňuje doporučovat statické položky nabídky. Hodnota **Maloobchod a ruční vyváření** umožňuje kombinaci obou. |
 | Zobrazení obrázků kategorií | **Pravda** nebo **nepravda**    | Je-li povolena, tato vlastnost zobrazuje obrázky kategorií v navigační nabídce, jak je definováno v centrále Commerce pro každou kategorii. Přidáno v Comerce verze 10.0.14. |
-| Povolení navigační nabídky s více úrovněmi | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, navigační nabídka může zobrazit více úrovní navigační hierarchie. Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.15. |
+| Zobrazit propagační akce | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, lze propagační akce konfigurovat pomocí obrázků, odkazů a textu. Tato vlastnost byla přidána ve verzi Commerce verze 10.0.17. |
+| Přidejte propagační akce | Text, obrázek nebo odkaz | Když je povolena vlastnost **Zobrazit propagační akce**, můžete v navigační nabídce přidat text, obrázek nebo odkaz jako propagační obsah. |
+| Povolení navigační nabídky s více úrovněmi | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, navigační nabídka může zobrazit více úrovní navigační hierarchie. Tato funkce je k dispozici v aplikaci Commerce verze 10.0.15. |
 | Počet úrovní | Celé číslo | Tato vlastnost definuje počet úrovní, které se mají zobrazit, pokud je vlastnost **Povolit navigační nabídku s více úrovněmi** je nastavena na **Pravda**. |
 | Statická položka nabídky| Pole hodnot| Statické položky nabídky, které přidružují název položky nabídky s odkazem na stránku statického webu. Položky nabídky můžete vytvořit pod dalšími položkami nabídky. Ve výchozím nastavení se statické nabídky zobrazují na kořenové úrovni a budou přidány do hierarchie navigace sítě, pokud existuje. |
 | Zobrazení kořenové nabídky | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, lze navigační nabídku definovat pod vlastním kořenem (například **Koupit**). Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.15. |
@@ -72,6 +72,3 @@ Podrobnosti, jak přidat modul navigační nabídky do modulu záhlaví, viz [Mo
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
 
 [Modul záhlaví](author-header-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

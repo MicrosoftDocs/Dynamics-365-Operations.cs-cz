@@ -3,7 +3,7 @@ title: Přehled doplňku Elektronická fakturace
 description: Toto téma poskytuje informace o doplňku elektronické fakturace v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441333"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104201"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Přehled doplňku Elektronická fakturace
 
@@ -45,9 +44,9 @@ Doplněk elektronické fakturace vám pomůže dosáhnout následujících cíl�
 
 Chcete-li použít doplněk Elektronická fakturace, musíte jej nainstalovat ze svého projektu v Microsoft Dynamics Lifecycle Services (LCS). Dále podle postupu nastavení zapněte integraci s Finance nebo Supply Chain Management. Více informací viz [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Dostupnost
+## <a name="service-availability"></a><a name="availability"></a>Dostupnost služby
 
-Zpočátku je doplněk Elektronická fakturace k dispozici vybraným zákazníkům prostřednictvím programu náhledu. Později se náhled otevře širšímu okruhu zákazníků. Nakonec bude služba obecně dostupná. Protože funkce, která řeší požadavky specifické pro zemi / region, mohou být v různých fázích vydání omezené, měli byste vždy zkontrolovat nejaktuálnější dokumentaci, která zdůrazňuje pokrytí a rozsah podporovaných řešení pro konkrétní zemi / region.
+V současné době je doplněk elektronické fakturace k dispozici zákazníkům prostřednictvím programu Preview a v další fázi bude služba obecně dostupná. Protože funkce, která řeší požadavky specifické pro zemi / region, mohou být v různých fázích vydání omezené, měli byste vždy zkontrolovat nejaktuálnější dokumentaci, která zdůrazňuje pokrytí a rozsah podporovaných řešení pro konkrétní zemi / region.
 
 Doplněk elektronické fakturace je nasazen v následujících geografických oblastech Azure:
 
@@ -76,7 +75,7 @@ Doplněk elektronické fakturace lze použít ve scénářích, kdy musíte vytv
     - Integrovaná, snadno rozšiřitelná a konfigurovatelná integrace s dalším obsahem pro několik zemí
 
     > [!NOTE]
-    > V současné době je podporován omezený počet přímých odeslání. Více informací naleznete v předchozích části [Dostupnost](#availability) v tomto tématu. Podpora bude v budoucnu rozšířena.
+    > V současné době je podporován omezený počet přímých odeslání. Více informací naleznete v části [Dostupnost služby](#availability) výše v tomto tématu. Podpora bude v budoucnu rozšířena.
 
 - Zpracování odpovědí z webových služeb, včetně konfigurovatelného zpracování zpráv o výjimkách
 - Podpora elektronických podpisů (například pomocí podpisového algoritmu XMLDSig)
@@ -104,15 +103,9 @@ Následující obrázek ukazuje, jak data proudí do a z doplňku elektronické 
 ![Tok dat pro doplněk Elektronická fakturace](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Povolení a používání Elektronické fakturace může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovými úřady pro účely zasílání elektronických faktur v předdefinovaných formátech požadovaných pro integraci s webovými službami těchto vlád. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
+Povolení a používání doplňku elektronické fakturace může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovými úřady pro účely zasílání elektronických faktur v předdefinovaných formátech požadovaných pro integraci s webovými službami těchto vlád. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
 
 ## <a name="additional-resources"></a>Další prostředky
-
-- [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
-- [Začněte s doplňkem elektronické fakturace pro Brazílii](e-invoicing-bra-get-started.md)
-- [Začněte s doplňkem elektronické fakturace pro Mexiko](e-invoicing-mex-get-started.md)
-- [Začněte s doplňkem elektronické fakturace pro Itálii](e-invoicing-ita-get-started.md)
-- [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Správa služby](e-invoicing-service-administration.md)
+- [Konfigurace elektronických faktur v RCS](e-invoicing-configuration-rcs.md)
+- [Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

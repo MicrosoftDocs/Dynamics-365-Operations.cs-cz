@@ -1,6 +1,6 @@
 ---
 title: Import konfigurace ze služby Lifecycle Services
-description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace elektronického výkaznictví ze služby Microsoft Dynamics Lifecycle Services (LCS).
+description: Toto téma popisuje, jak importovat novou verzi konfigurace elektronického výkaznictví (ER) z Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684444"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093688"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Import konfigurace ze služby Lifecycle Services
 
@@ -103,6 +103,3 @@ V tomto příkladu zvolíte požadovanou verzi konfigurace elektronického výka
     Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.
 
     Všimněte si, že nyní je k dispozici také sdílená 1. verze vybrané konfigurace datového modelu.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Přístup k metadatům aplikace pomocí připojených aplikací
-description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service (RCS) navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v Finance and Operations.
+description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682134"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093323"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Přístup k metadatům aplikace pomocí připojených aplikací
 
@@ -113,6 +113,3 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 11. Zavřete stránku. 
 
 Potřebujete-li vyhodnotit mapování modelu pomocí metadat jiné verze aplikace, zaregistrujte jinou připojenou aplikaci, přiřaďte ji k tomuto mapování modelu a ověřte ji proti novým metadatům.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

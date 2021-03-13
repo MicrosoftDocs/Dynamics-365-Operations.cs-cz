@@ -1,6 +1,6 @@
 ---
 title: Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může mapovat prvky datového modelu na komponenty vytvořené konfigurace elektronického výkaznictví, která určuje formát elektronického dokumentu obchodní doménu pro platby.
+description: Toto téma popisuje, jak mapovat prvky datového modelu na komponenty vytvořené konfigurace elektronického výkaznictví (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684324"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093766"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)
 
@@ -113,6 +113,3 @@ Každou verzi formátu lze konfigurovat jako dostupnou pro použití od určité
 1. Rozbalte oddíl Kódy ISO zemí/oblastí.
     * Označením konkrétní země/oblasti, ve které lze formát použít, lze omezit přístup ke každému formátu. Pokud je seznam zemí/oblastí pro určitý formát prázdný, lze použít tento formát v jakékoli společnosti. Pokud jsou do tohoto seznamu zemí/oblastí vloženy některé kódy země/oblasti ISO, lze použít tento formát pouze ve společnostech, které mají primární adresu v této zemi/regionu.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

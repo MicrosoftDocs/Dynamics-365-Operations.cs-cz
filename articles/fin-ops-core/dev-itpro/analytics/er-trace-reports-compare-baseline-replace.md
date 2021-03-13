@@ -1,6 +1,6 @@
 ---
 title: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
-description: Toto téma obsahuje informace o tom, jak byla vylepšena funkce směrného plánu ER v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) vylepšena.
+description: Toto téma popisuje vylepšení funkce základní úrovně ER v Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093997"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
 
@@ -59,7 +59,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 
 Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných plánů**, ale pravidla směrného plánu pro tento směrný plán ještě nebyla přidána.
 
-![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline2.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví, zatím žádná pravidla](media/GER-BaselineSample-AddBaseline2.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="make-a-new-baseline-rule"></a>Vtvoření nového pravidla směrného plánu
 
@@ -72,7 +72,7 @@ Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných 
 7. Vyberte **OK**.
 8. Vyberte **Směrné plány**.
 
-    ![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+    ![Stránka se směrným plánem formátu elektronického výkaznictví, vybrané základní plány](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
     Generovaný výstupní soubor byl automaticky připojen ke směrnému plánu provedeného formátu ER. Do tohoto směrného plánu bylo automaticky přidáno pravidlo směrného plánu, které obsahuje také odkaz na připojený soubor.
 
@@ -130,7 +130,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 3. V seznamu směrných plánů vyberte směrný plán, který je nakonfigurován pro **Formát pro učení směrných plánů**.
 4. Na pevné záložce **Směrné plány** vyberte **Odstranit** k odebrání dříve vytvořeného pravidla směrného plánu.
 
-![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline3.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví, odstraněná](media/GER-BaselineSample-AddBaseline3.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definování náhrad pro vazby navrženého formátu ER
 
@@ -138,7 +138,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 2. Ve stromu komponent formátu rozbalte **Výstup**, rozbalte **Výstup\\Dokument** a zaškrtněte políčko **Výstup\\Dokument\\ProcessingDateTime**.
 3. Vyberte **OK**.
 
-![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline4.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví, komponenty](media/GER-BaselineSample-AddBaseline4.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 Vybraná koponenta formátu ER byla přidána do seznamu komponent na pevné záložce **Náhrady**. Při spuštění základního formátu ER v režimu ladění bude vazba formátu pro každou součást nahrazena vazbou, která je zobrazena ve sloupci **vazba**. Chcete-li změnit výchozí vazbu pro komponentu, která je uvedena na pevné záložce **Náhrady**, vyberte **Upravit**.
 
@@ -207,6 +207,3 @@ Chcete-li importovat nastavení směrného plánu ze souboru XML, který je ulo�
 
 - [Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami](er-trace-reports-compare-baseline.md)
 - [Zdroje záznamníku úloh](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

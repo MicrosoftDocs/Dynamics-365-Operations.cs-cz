@@ -1,6 +1,6 @@
 ---
 title: Obsah analýzy nákladového účetnictví v Power BI
-description: Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+description: Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683864"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093379"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
+# <a name="cost-accounting-analysis-power-bi-content"></a>Obsah Power BI analýzy nákladového účetnictví
 
 [!include [banner](../includes/banner.md)]
 
@@ -123,6 +123,3 @@ Následující klíčové dimenze se používají jako filtry k řezu měrných 
 | Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
 | Fiskální roky                       | Kalendářní rok                                                                                                        |
 | Fiskální období                     | Kalendářní roční období                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

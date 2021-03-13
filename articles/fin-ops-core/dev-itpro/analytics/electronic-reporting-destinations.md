@@ -1,9 +1,9 @@
 ---
 title: Místa určení elektronického výkaznictví
-description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných typech cílů a o možnostech zabezpečení.
+description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687151"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097274"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -62,7 +62,7 @@ Pokud v dialogovém okně **Zpráva Intrastat** na pevné záložce **Spustit na
 Pokud nastavíte možnost **Dávkové zpracování** na **Ano**, formát ER se spustí v [dávkovém](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) režimu. Příslušná dávková úloha je vytvořena na základě parametrů, které zadáte na kartě **Spustit na pozadí** dialogového okna **Parametry elektronického výkaznictví**.
 
 > [!NOTE]
-> Popis úlohy slouží k tomu, aby vás informoval o průběhu mapování formátu elektronického výkaznictví. Zahrnuje také název provedené komponenty ER.
+> Popis úlohy vás informuje o průběhu mapování formátu elektronického výkaznictví. Zahrnuje také název provedené komponenty ER.
 
 [![Spuštění formátu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -96,7 +96,9 @@ Pomocí této funkce můžete například konfigurovat cíle souborů pro souč�
 
 [![Konfigurace více cílů pro jeden prvek formátu](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-## <a name="destination-types"></a>Typy cílů
+Při spuštění formátu ER se vždy spustí všechny cíle, které byly nakonfigurovány pro komponenty formátu. Kromě toho v aplikaci Finance **verze 10.0.17 a novější** byla vylepšena funkčnost cílů ER a nyní vám umožňuje konfigurovat různé sady cílů pro jeden formát ER. Tato konfigurace označí každou sadu jako nakonfigurovanou pro konkrétní akci uživatele. Rozhraní API ER bylo [prodlouženo](er-apis-app10-0-17.md), takže lze poskytnout akci, kterou uživatel provede, spuštěním formátu ER. Poskytnutý kód akce je předán cílům ER. Můžete spustit různé cíle ve formátu ER, v závislosti na poskytnutém kódu akce. Další informace viz [Konfigurace cílů ER závislých na akci](er-action-dependent-destinations.md).
+
+## <a name="destination-types"></a>Typy cílových míst
 
 Pro formáty elektronického výkaznictví jsou nyní podporovány následující cíle. Můžete zakázat nebo povolit všechny typy současně. Tímto způsobem můžete neprovádět žádnou akci, nebo poslat součásti do všech nakonfigurovaných cílů.
 
@@ -154,7 +156,7 @@ Pokud odškrtnete políčko **Zastavit zpracování při selhání** pro kompone
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Výstupní převod do souboru PDF
 
-Chcete-li převést výstup ve formátu Microsoft Office (Excel/Word) do formátu PDF, můžete použít volbu převodu do PDF.
+Chcete-li převést výstup ve formátu Microsoft Office (Excel nebo Word) do formátu PDF, můžete použít volbu převodu do PDF.
 
 ### <a name="make-pdf-conversion-available"></a>Zpřístupnění převodu do PDF
 
@@ -164,21 +166,20 @@ Chcete-li, aby byla v aktuální instanci modulu Finance k dispozici možnost p�
 
 ### <a name="applicability"></a>Použitelnost
 
-Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se používají ke generování výstupu ve formátu Microsoft Office Excel nebo Word (**soubor aplikace Excel**). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF.
+Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se používají ke generování výstupu ve formátu Office (Excel nebo Word) (**Soubor Excel**). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF.
 
 ### <a name="limitations"></a>Omezení
 
 > [!NOTE]
 > Tato funkce je funkcí Preview a podléhá podmínkám použití, které jsou popsány v [doplňujících podmínkách použití pro funkce Preview Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> Možnost převodu PDF je k dispozici pouze pro nasazení v cloudu.
->
-> Vtvořený soubor PDF je omezen na maximální počet 300 stránek.
->
-> V aplikaci Microsoft Dynamics 365 Finance verze 10.0.9 (duben 2020) je v současné době v dokumentu PDF vytvořeném z výstupu z aplikace Excel podporována pouze orientace stránky na šířku. S vydáním Dynamics 365 Finance verze 10.0.10 (květen 2020) můžete [určit orientaci stránky](#SelectPdfPageOrientation) v dokumentu PDF, který je vytvořen z výstupu aplikace Excel při konfiguraci cíle ER.
->
-> Pro převod výstupu, který neobsahuje žádná vložená písma, se používají pouze běžná systémová písma operačního systému Windows.
+Možnost převodu PDF je k dispozici pouze pro nasazení v cloudu.
+
+Vtvořený dokument PDF je omezen na maximální počet 300 stránek.
+
+V modulu Finance **verze 10.0.9**, vytvořeném z výstupu z aplikace Excel, je podporována pouze orientace stránky na šířku. S vydáním Finance **verze 10.0.10 (květen 2020) a pozdější** můžete [určit orientaci stránky](#SelectPdfPageOrientation) v dokumentu PDF, který je vytvořen z výstupu aplikace Excel při konfiguraci cíle ER.
+
+Pro převod výstupu, který neobsahuje žádná vložená písma, se používají pouze běžná systémová písma operačního systému Windows.
 
 ### <a name="use-the-pdf-conversion-option"></a>Použití možnosti převodu do PDF
 
@@ -188,16 +189,16 @@ Chcete-li zapnout převod do PDF pro cíl souboru, zaškrtněte políčko **Pře
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Výběr orientace stránky pro převod do PDF</a>
 
-Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete určit orientaci stránky v PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
+Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete určit orientaci stránky v dokumentu PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
 
 [![Výběr orientace stránky pro převod do PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Chcete-li mít možnost vybrat orientaci stránky PDF, je nutné nainstalovat Microsoft Dynamics 365 Finance 10.0.10 (květen 2020) nebo novější.
+> Chcete-li mít možnost vybrat orientaci stránky PDF, je nutné nainstalovat Finance verze 10.0.10 nebo novější.
 >
 > Vybraná orientace stránky se použije pro všechny konfigurace ER, které jsou generovány ve formátu aplikace Excel a následně převedeny do formátu PDF.
 >
-> Pokud je převedený PDF vytvořen z konfigurace ER ve formátu aplikace Word, bude orientace stránky PDF provedena z dokumentu aplikace Word.
+> Pokud je konfigurace ER ve formátu aplikace Word převedena na PDF, bude orientace dokumentu PDF provedena z dokumentu aplikace Word.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 
@@ -225,7 +226,7 @@ Ujistěte se, že jste zvolili **Nový** a potom zvolte konfiguraci v poli **Odk
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Jaký je účel cíle souboru v nastavení cíle? Co toto nastavení dělá?
 
-Cíl **Souboru** se používá k řízení dialogového okna. Pokud povolíte tento cíl, nebo pro konfiguraci není definován žádný cíl, zobrazí se po vytvoření výstupního souboru dialogové okno uložení nebo otevření.
+Cíl **Soubor** se používá k ovládání dialogového okna webového prohlížeče, když spustíte formát ER v interaktivním režimu. Pokud povolíte tento cíl, nebo pro konfiguraci není definován žádný cíl, zobrazí se po vytvoření výstupního souboru ve webovém prohlížeči dialogové okno uložení nebo otevření.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Můžete dát příklad vzorce, který odkazuje na účet dodavatele, aby mu bylo možné odeslat e-mail?
 
@@ -235,9 +236,8 @@ Vzorec je specifický pro konfiguraci EV. Například pokud použijete konfigura
 
 Váš formát musí být nejdříve k dispozici v konfiguracích elektronického výkaznictví. Když je splněn požadavek, otevřete stránku **Místo určení elektronického výkaznictví** a vytvořte nový odkaz na tuto konfiguraci. Pak je třeba mít k dispozici čtyři cíle souboru, jeden pro každou součást výstupu. Vytvořte první cíl souboru, pojmenujte jej např. jako **Složka** a vyberte název souboru, který představuje složku ve vaší konfiguraci. Poté zvolte **Nastavení** a ujistěte se, že jsou zakázány všechny cíle. Pro tento cíl souboru se složka nevytvoří. Ve výchozím nastavení se soubory budou chovat stejným způsobem díly hierarchickým závislostem mezi soubory a nadřazenými složkami. Jinými slovy se nikam neodešlou. Chcete-li přepsat výchozí chování, je nutné vytvořit tři další cíle souborů, jeden pro každý soubor. V nastavení cíle pro každý ze souborů je nutné povolit cíl, na který má být soubor odeslán.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Konfigurace cílů ER závislých na akci](er-action-dependent-destinations.md)

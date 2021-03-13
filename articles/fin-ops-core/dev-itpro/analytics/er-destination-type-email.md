@@ -1,6 +1,6 @@
 ---
 title: Typ cílového umístění elektronického výkaznictví e-mailu
-description: Toto téma vysvětluje, jak konfigurovat e-mailový cíl pro každou komponentu SLOŽKA nebo SOUBOR formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů.
+description: Toto téma vysvětluje, jak nakonfigurovat cíl e-mailu pro každou SLOŽKU nebo SOUBOR ve formátu elektronického výkaznictví (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690119"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094097"
 ---
 # <a name="email-er-destination-type"></a>Typ cílového umístění elektronického výkaznictví e-mailu
 
@@ -65,8 +65,6 @@ Pokud vyberete jako typ e-mailové adresy možnost **Správa tisku – e-mail**,
 - V poli **Zdroj e-mailu** vyberte možnost **Žádný**.
 - V poli **Další e-mailové adresy oddělené znakem „;“** zadejte pevné e-mailové adresy.
 
-![Konfigurace pevné e-mailové adresy](./media/er_destinations-emailfixedaddress.png)
-
 Alternativně můžete e-mailové adresy získat z kontaktních údajů strany, pro kterou generujete odchozí dokument. Pro použití jiných než pevných e-mailových adres je nutné vybrat v poli **Zdroj e-mailu** [roli](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) strany pro cíl souboru. Podporovány jsou následující role:
 
 - Odběratel
@@ -92,8 +90,6 @@ Na stránce **Návrhář vzorců** zadejte v poli **Vzorec** odkaz na podporovan
 
 Pokud jsou čísla účtů konfigurované role jedinečná pro celou instanci Microsoftu Dynamics 365 Finance, může pole **Společnost zdroje e-mailu** v dialogovém okně **E-mail – komu** zůstat prázdné.
 
-![Prázdné pole Společnost zdroje e-mailu](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Případně může dojít k situaci, kdy různé strany v [Globálním adresáři](../../fin-ops/organization-administration/overview-global-address-book.md) byly registrovány v různých společnostech ([právnických osobách](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) takovým způsobem, že všichni používají stejné číslo účtu k vyplnění konfigurované role. V tomto případě nejsou čísla účtů pro konfigurovanou roli jedinečná pro celou instanci Finance. Chcete-li tedy explicitně vybrat stranu, nemůžete zadat pouze číslo účtu. Musíte také zadat společnost, ve které byla strana zaregistrována, abyste mohli naplnit konfigurovanou roli. Vyberte tlačítko **Vazba** (symbol řetězu) vedle pole **Společnost zdroje e-mailu** v dialogovém okně **E-mail – komu** a otevřete tak stránku [Návrhář vzorců](general-electronic-reporting-formula-designer.md). Na této stránce pak můžete konfigurovat vzorec, který za běhu vrátí kód společnosti, jejíž požadovaný zdroj musí být nalezen v rozsahu.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Chcete-li určit typ e-mailových adres, které musí být použity za běhu, vy
 
 > [!NOTE]
 > Pokud jsou v poli **Účel** vybrány účely a současně je možnost **Primární kontakt** nastavena na **Ano**, bude za běhu použit každá e-mailová adresa, která splňuje alespoň jedno konfigurované kritérium.
-
-![Konfigurace účtu atributů zdroje e-mailu](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Konfigurační e-mail
 
@@ -145,6 +139,3 @@ Následující obrázek ukazuje proces seskupování jednotlivých komponent, po
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

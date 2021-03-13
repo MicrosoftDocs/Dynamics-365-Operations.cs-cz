@@ -1,6 +1,6 @@
 ---
 title: Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 1 - Vytvoření formátu)
-description: Následující procedura popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) k vytvoření počtu a součtu na základě dat již generovaného textového výstupu.
+description: Toto téma popisuje, jak nakonfigurovat formát elektronického výkaznictví tak, aby počítal a sčítal na základě dat již vygenerovaného textového výstupu. (část 1)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1742582057cc912d8e6f90eb14e9e4cdcd193608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a3639b5ac28f8a571642e983906d658dabf05b1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684708"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093015"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a>Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 1 - Vytvoření formátu)
 
@@ -56,6 +56,3 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 8. Ve stromovém zobrazení rozbalte „Modul Intrastat“.
 9. Ve stromové struktuře vyberte Modul Intrastat\Intrastat (DE).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

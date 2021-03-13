@@ -1,5 +1,5 @@
 ---
-title: Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.16 (únor 2021)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
 manager: annbe
@@ -10,26 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 963979c9d24c275f77347ec5d682f318db18f915
-ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
+ms.openlocfilehash: 1ffd98a94b9ed3201be3c4530b8fba7e2820c268
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4626795"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104982"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10016-february-2021"></a>Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.16 (únor 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.16. Tato verze má číslo sestavení 10.0.689 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.16. Tato verze má číslo sestavení 10.0.689 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** Listopad 2020
 - **Obecně dostupné vydání (automatická aktualizace):** Leden 2021
@@ -40,8 +38,11 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
 - [Přizpůsobitelné realizační rozhraní dílny](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Další informace viz [Nastavení zařízení pro spuštění provádění výrobního provozu](../production-control/production-floor-execution-setup.md).
+
 - [Doplněk viditelnosti zásob pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Další informace viz [Doplněk viditelnosti zásob](../inventory/inventory-visibility.md)
+
 - [Ověřte registrační značky na řádcích zdrojových dokumentů](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Další informace viz [Přehled konfigurace skladu](../warehousing/warehouse-configuration.md).
+
 - [Vizualizace odchozí pracovní zátěže správy skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Další informace viz [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md)
 
 Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
@@ -88,7 +89,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.16 aplikací Finance and Operations (říjen 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.16 aplikací Finance and Operations (únor 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -110,6 +111,3 @@ Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management]
 Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

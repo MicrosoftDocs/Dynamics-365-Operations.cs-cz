@@ -1,6 +1,6 @@
 ---
 title: Příprava metadat aplikace k použití v RCS
-description: Kroky v tomto tématu vysvětlují, jak může uživatel vytvořit novou konfiguraci elektronického výkaznictví (ER), která obsahuje metadata aplikace pro navrhování konfigurací mapování modelu elektronického výkaznictví v Regulatory configuration service (RCS).
+description: Toto téma popisuje, jak vytvořit novou konfiguraci sestav, která obsahuje metadata aplikace.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d5f55d089a88642cb2bda70274472ad0f0e45cd7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684084"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094233"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Příprava metadat aplikace k použití v RCS
 [!include [banner](../../includes/banner.md)]
@@ -80,6 +80,3 @@ Přidali jsme informace o metadatech do tabulky záznamů Intrastat.
 3.    Klikněte na tlačítko **OK**. 
     
 Vytvořená konfigurace metadat elektronického výkaznictví byla uložena jako soubor XML, který lze importovat do RCS a použít jako zdroj informací o metadatech pro obchodní doménu zahraničního obchodu v aplikaci. Na základě těchto informací můžeme určit mapování mezi metadaty aplikací a datovým modelem elektronického výkaznictví.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

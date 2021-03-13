@@ -1,9 +1,9 @@
 ---
 title: Přehled elektronického výkaznictví
-description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení.
+description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví. Popisuje klíčové koncepty, podporované scénáře a formáty, které jsou součástí řešení.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e40aa168c296af86721862d1751212d16d47bd49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 33d399c6a9051097d3ea0c7990a37302395d9c77
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682592"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093919"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -37,6 +37,7 @@ Modul EV je zaměřen na obchodní uživatele, nikoli na vývojáře. Vzhledem k
 EV v současné době podporuje formáty listů TEXT, XML dokument Microsoft Word a OPENXML. Je k dispozici rozšíření zajišťující podporu dalších formátů.
 
 ## <a name="capabilities"></a>Schopnosti
+
 Modul EV má následující možnosti:
 
 - S jedním společným nástrojem pro elektronické výkaznictví v různých doménách nahrazuje 20 různých modulů pro provádění určitého typu elektronického výkaznictví pro Finance and Operations.
@@ -46,6 +47,7 @@ Modul EV má následující možnosti:
 - Podporuje možnost pro distribuci formátu pro partnery a zákazníky pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="key-concepts"></a>Klíčové koncepty
+
 ### <a name="components"></a>Komponenty
 
 EV podporuje dva typy komponentů: **Datový model** a **Formát**.
@@ -71,7 +73,6 @@ Mapování modelu, které podporuje odchozí elektronické dokumenty, má tyto f
 - Může využívat různé typy dat aplikace jako zdroje dat pro datový model. Například může používat tabulky, datové entity, metody nebo výčty.
 - Podporuje vstupní parametry uživatele lze definovat jako datové zdroje modelu dat, když je při spuštění nutné zadat některá data.
 - Podporuje transformaci dat aplikace do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců podobně jako v aplikaci Microsoft Excel. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví (ER)](general-electronic-reporting-formula-designer.md).
-
 
 Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyto funkce:
 
@@ -107,6 +108,7 @@ Následující obrázek znázorňuje tok dat u těchto formátů.
 Chcete-li spustit jednu konfiguraci formátu ER a vygenerovat odchozí elektronický dokument, je nutné určit mapování konfigurace formátu.
 
 #### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Komponenty formátu pro příchozí elektronické dokumenty
+
 Komponenta formátu je schématem příchozího dokumentu, které se importuje při spuštění. Schéma se skládá z následujících prvků:
 
 - Formát, který definuje strukturu a obsah příchozího elektronického dokumentu obsahujícího data, která se importují při spuštění. Komponenta formátu, která slouží k analýze příchozích dokumentů v různých formátech (například text nebo XML).
@@ -196,6 +198,7 @@ Další informace získáte v tématu [Import konfigurací elektronického výka
 Požadovaná úložiště **LCS projekt**, **Systém souborů** a **Regulatory Configuration Services (RCS)** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
+
 ### <a name="building-a-data-model"></a>Vytvoření datového modelu
 
 EV nabízí návrháře modelu, kterého můžete použít pro vytvoření modelu dat pro určité obchodní domény. Všechny obchodních entity specifické pro domény a a vztahy mezi nimi mohou být přítomné v datovém modelu jako hierarchická struktura. 
@@ -216,6 +219,7 @@ EV poskytuje návrháře mapování modelu, který umožňuje uživatelům mapov
 K seznámení se s tímto scénářem podrobněji si přehrajte průvodce úkoly **Elektronické vykazování – definování mapování modelů a výběr zdrojů dat** a **Elektronické vykazování – namapování datového modelu na vybrané zdroje dat** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurace mapování datového modelu u příchozích dokumentů
+
 ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům mapovat navržené datové modely na konkrétní cíle. Je například možné mapovat datové modely na komponenty aktualizovatelných dat (tabulky, datové entity a zobrazení). Na základě mapování, se data se aktualizují v operačním čase pomocí dat z datového modelu. Jako abstraktní úložiště formátu ER se datový model vyplní daty importovanými z příchozího elektronického dokumentu. 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Uložení navrženého modelu komponent jako konfigurace modelu
@@ -237,6 +241,7 @@ Návrhář formátů ER slouží k vytvoření elektronických dokumentů ve fo
 K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – vytvoření konfigurace pro sestavy ve formátu OPENXML** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**). V rámci kroku průvodce záznamem úlohy pro import šablony použijte jako šablonu soubor aplikace Excel [Šablona sestavy platby (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202).
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Vytvoření konfigurace pro generování elektronických dokumentů ve formátu dokumentu aplikace Word
+
 Návrhář formátu ER lze použít k vytvoření elektronického dokumentu ve formátu dokumentu aplikace Word. Následující obrázek znázorňuje příklad tohoto typu formátu. Tento formát znovu používá existující konfiguraci ER, která byla původně vytvořena ke generování výstupu sestavy ve formátu OPENXML.
 
 Abyste se podrobně seznámili s tímto postupem, přehrajte si průvodce záznamem úlohy Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu Microsoft WORD (součást obchodního procesu 7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)). V rámci kroku průvodce záznamem úlohy pro import šablony použijte jako šablony pro formát ER následující soubory aplikace Word:
@@ -245,6 +250,7 @@ Abyste se podrobně seznámili s tímto postupem, přehrajte si průvodce zázn
 - [Vázaná šablona sestavy platby (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Vytvoření konfigurace pro import dat z příchozích elektronických dokumentů
+
 Návrhář formátů ER lze použít k popisu elektronického dokumentu, který je součástí plánu pro import dat v textovém formátu nebo XML. Navržený formát slouží k analýze příchozího dokumentu. Návrhář mapování formátu ER lze použít k definování vazeb prvků navrženého formátu na model dat. 
 
 Abyste se podrobně seznámili s tímto postupem, přehrajte si průvodce záznamem úlohy Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru (součást obchodního procesu 7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)). Při přehrávání průvodce použijte tyto soubory:
@@ -265,6 +271,7 @@ Aplikaci lze použít ke spuštění za použití vytvořeného formátu pro gen
 K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – použití formátu ke generování elektronického dokumentu pro platby** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ## <a name="handling-er-components"></a>Zpracování komponent EV
+
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Publikování komponent EV v LCS pro jejich externímu nabízení (lokalizace)
 
 Vlastník vytvořené součásti (modelu nebo formátu) je schopen používat EV pro publikování dokončené verze součásti do LCS. Je požadováno úložiště typu **projekt LCS** pro aktuálního zprostředkovatele konfigurací EV. Při změně stavu dokončené verze součásti z **DOKONČENO** na **SDÍLENO**, je tato verze publikována do LCS. Při publikování komponenty do LCS se vlastník této součásti stane poskytovatelem služby pro podporu této součásti. Například pokud součást formátu slouží ke generování zákonem požadovaných elektronických dokumentů (například podle scénáře lokalizace), předpokládá se, že tento formát splňuje změny právních předpisů, a že poskytovatel vydává nové verze pokaždé, když musí podporovat nové právní požadavky. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Odeslání konfigurace ER do služby Lifecycle Services**(součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
@@ -281,92 +288,13 @@ EV umožňuje vytváření (odvození) nové komponenty z aktuální verze kompo
 
 EV podporuje schopnost automaticky přijmout změny poslední verze základní komponenty v aktuální verzi konceptu odvozené komponenty. Pro tento proces je používáno označení *přeskladnění*. Například nové regulační změny zavedené v nejnovější verzi formátu importovaných z LCS mohou být automaticky sloučeny do vlastní přizpůsobené verze tohoto formátu elektronického dokumentu. Všechny změny, které nelze automaticky sloučit, jsou považovány za konflikty. Tyto konflikty jsou uvedeny a připraveny pro ruční vyřešení v nástroji Návrhář příslušné součásti. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – aktualizace formátu osvojováním jeho nové základní verze** (součástí obchodního procesu **7.5.5.3 Získání/vývoj součástí změněných IT služeb/řešení (10683)**).
 
-## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-application"></a>Seznam konfigurací ER, které jsou k dispozici v řešení Finance
+## <a name="list-of-er-configurations-that-have-been-released-in-finance"></a><a name="list-of-configurations"></a>Seznam konfigurací ER, které byly vydány v aplikaci Finance
 
-| Konfigurace modelu dat pro specifickou doménu: název | Doména                | Konfigurace formátu závislá na modelu dat: název | Popis                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Model souboru auditu                                 | Finanční audit       |                                                   |                                                                    |
-|                                                  |                       | Soubor auditu (NL)                                   | Formát souboru auditu pro Nizozemsko                                  |
-| Model BAS                                        | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | BAS (AU)                                          | Formát BAS pro Austrálii                                           |
-| Model schématu pro obor stavebnictví               | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Měsíční vratky CIS (UK)                           | Formát měsíční vratky CIS pro Spojené království                   |
-| Model upomínky                          | Elektronická fakturace  |                                                   |                                                                    |
-|                                                  |                       | Upomínka OIOUBL (DK)                     | Formát upomínky OIOUBL pro Dánsko                        |
-| Model účetní elektronické hlavní knihy (MX)          | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Pomocná hlavní kniha XML (MX)                         | Formát sestavy transakcí v pomocné hlavní knize pro každý účet pro Mexiko |
-|                                                  |                       | Účtová osnova XML (MX)                         | Formát sestavy účtové osnovy pro Mexiko                          |
-|                                                  |                       | Deníky XML (MX)                                 | Formát sestavy deníku transakcí pro Mexiko                      |
-|                                                  |                       | Předvaha XML (MX)                            | Formát sestavy předvahy pro Mexiko                             |
-| Model Elster                                     | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Formát Elster pro Německo                                          |
-| Model souhrnného hlášení – EU                              | Sestava obchodu       |                                                   |                                                                    |
-|                                                  |                       | Souhrnné hlášení – EU (DE)                                | Formát souhrnného hlášení (EU) pro Německo                               |
-|                                                  |                       | Souhrnné hlášení – EU (DK)                                | Formát souhrnného hlášení (EU) pro Dánsko                               |
-|                                                  |                       | Souhrnné hlášení – EU (FR)                                | Formát souhrnného hlášení (EU) pro Francii                                |
-|                                                  |                       | Souhrnné hlášení – EU (NL)                                | Formát souhrnného hlášení (EU) pro Nizozemsko                           |
-|                                                  |                       | Souhrnné hlášení TXT – EU (UK)                            | Formát TXT souhrnného hlášení (EU) pro Spojené království                    |
-|                                                  |                       | Souhrnné hlášení XML – EU (UK)                            | Formát XML souhrnného hlášení (EU) pro Spojené království                    |
-|                                                  |                       | Souhrnné hlášení – EU podle sloupců                   | Souhrnné hlášení – EU podle sloupců                                    |
-|                                                  |                       | Souhrnné hlášení – EU podle řádků                      | Souhrnné hlášení – EU podle řádků                                       |
-| Účtovací model FEC (FR)                        | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Účetní data XML – FEC (FR)                      | Formát XML pro export účetních dat FEC pro Francii                   |
-| Soubor auditu pro Německo                                | Finanční audit       |                                                   |                                                                    |
-|                                                  |                       | Výstupní soubor auditu pro Německo                          | Výstupní soubor auditu pro Německo a Rakousko                          |
-| Modul Intrastat                                  | Sestava obchodu       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Formát Intrastat pro Německo                                       |
-|                                                  |                       | Intrastat (DK)                                    | Formát Intrastat pro Dánsko                                       |
-|                                                  |                       | Intrastat INTRACOM (FR)                           | Formát Intrastat INTRACOM pro Francii                               |
-|                                                  |                       | Intrastat SAISUNIC (FR)                           | Formát Intrastat SAISUNIC pro Francii                               |
-|                                                  |                       | Intrastat (NL)                                    | Formát Intrastat pro Nizozemsko                               |
-|                                                  |                       | Intrastat (UK)                                    | Formát Intrastat pro Spojené království                            |
-|                                                  |                       | Sestava Intrastat                                  | Kontrolní sestava Intrastat aplikace Excel                                     |
-| Model faktury odběratele                           | Elektronická fakturace  |                                                   |                                                                    |
-|                                                  |                       | Dobropis k projektu OIOUBL (DK)                   | Formát dobropisu k projektu OIOUBL pro Dánsko                      |
-|                                                  |                       | Faktura k projektu OIOUBL (DK)                       | Formát faktury k projektu OIOUBL pro Dánsko                          |
-|                                                  |                       | Prodejní dobropis OIOUBL (DK)                     | Formát prodejního dobropisu OIOUBL pro Dánsko                        |
-|                                                  |                       | Prodejní faktura OIOUBL (DK)                         | Formát prodejní faktury OIOUBL pro Dánsko                            |
-| Model deklarace OB                             | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Prohlášení OB (NL)                               | Formát prohlášení OB pro Nizozemsko                          |
-| Model platby                                    | Platby              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Formát platby Betalingsservice pro Dánsko                        |
-|                                                  |                       | Úhrada směnky (FR)                  | Formát úhrady směnky pro Francii                      |
-|                                                  |                       | BTL91 (NL)                                        | Formát platby dodavatele BTL91 pro Nizozemsko                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | Formát platby přímého debetu CFONB pro Francii                       |
-|                                                  |                       | CFONB Virements (FR)                              | Formát platby domácího dodavatele CFONB pro Francii                    |
-|                                                  |                       | Dodavatel Nordea (DK)                                | Formát platby korporačního dodavatele Nordea Netbank pro Dánsko         |
-|                                                  |                       | Přímé platební služby ANZ (AU)                    | Formát pro přímé platební služby ANZ pro Austrálii                 |
-|                                                  |                       | Přímé platební služby CBA (AU)                    | Formát pro přímé platební služby CBA pro Austrálii                 |
-|                                                  |                       | Přímé platební služby NAB (AU)                    | Formát pro přímé platební služby NAB pro Austrálii                 |
-|                                                  |                       | Přímé platební služby STG (AU)                    | Formát pro přímé platební služby STG pro Austrálii                 |
-|                                                  |                       | Systém pro přímý vstup WBC (AU)                      | Formát systému pro přímý vstup WBC pro Austrálii                   |
-|                                                  |                       | DirectLink (NZ)                                   | Formát pro DirectLink pro Nový Zéland                              |
-|                                                  |                       | Soubor platby JBA (JP)                             | Formát platby JBA pro Japonsko                                       |
-|                                                  |                       | Peněžní převod ISO20022                          | Formát pro peněžní převod SEPA pro Evropu                             |
-|                                                  |                       | Peněžní převod ISO20022 (FR)                     | Formát pro peněžní převod SEPA pro Francii                             |
-|                                                  |                       | Peněžní převod ISO20022 (DE)                     | Formát pro peněžní převod SEPA pro Německo                            |
-|                                                  |                       | Peněžní převod ISO20022 (NL)                     | Formát pro peněžní převod SEPA pro Nizozemsko                    |
-|                                                  |                       | Inkaso ISO20022                             | Formát inkasa SEPA pro Evropu                                |
-|                                                  |                       | Inkaso ISO20022 (FR)                        | Formát inkasa SEPA pro Francii                                |
-|                                                  |                       | Inkaso ISO20022 (DE)                        | Formát inkasa SEPA pro Německo                               |
-|                                                  |                       | Inkaso ISO20022 (NL)                        | Formát inkasa SEPA pro Nizozemsko                       |
-|                                                  |                       | BACS (UK)                                         | Formát pro platbu dodavatele BACS pro Spojené království                  |
-| Stornovací poplatek                                   | Vykázání daně         |                                                   |                                                                    |
-|                                                  |                       | Seznam stornovacích poplatků prodeje                         | Formát seznamu stornovacích poplatků prodeje                                   |
-| Model integrace XBRL pro Nizozemsko                     | Vykazování v kódu XBRL        |                                                   |                                                                    |
-|                                                  |                       | XBRL Semansys (NL)                                | Formát exportu Semansys XBRL pro Nizozemsko                    |
-| Model GAF (MY)                                   | Finanční audit       |                                                   |                                                                    |
-|                                                  |                       | Soubor GAF (MY)                                     | Formát GAF pro Malajsii                                         |
-| Sestava sledování splatnosti dodavatele (CN)                         | Analýza dat dodavatele |                                                   |                                                                    |
-|                                                  |                       | Formát sestavy sledování splatnosti dodavatele (CN)                   | Formát sestavy sledování splatnosti dodavatele pro Čínu                               |
-| Model prohlášení k faktuře dodavatele                 | Analýza dat dodavatele |                                                   |                                                                    |
-|                                                  |                       | Prohlášení k faktuře dodavatele (IS)                   | Formát prohlášení k faktuře dodavatele pro Island                      |
-|                                                  |                       | Sestava prohlášení k faktuře dodavatele (IS)            | Sestava prohlášení k faktuře dodavatele pro Island                      |
+Seznam konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globální úložiště](er-download-configurations-global-repo.md) ke kontrole seznamu konfigurací ER, které jsou aktuálně podporovány. Na kartě s náhledem **Podrobnosti o ukončení** můžete zkontrolovat informace o konfiguracích, které byly přerušeny nebo které již nejsou udržovány. 
 
-## <a name="additional-resources"></a>Další zdroje
+![Obsah globálního úložiště na stránce úložiště konfigurace](./media/er-overview-03.gif)
 
-- [Vytvoření konfigurací elektronického výkaznictví (ER)](electronic-reporting-configuration.md)
+## <a name="additional-resources"></a>Další prostředky
+
+- [Vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

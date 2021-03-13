@@ -1,6 +1,6 @@
 ---
 title: Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
-description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service (RCS) navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v Finance and Operations.
+description: Kroky v tomto tématu popisují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví pomocí metadat.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 58697148ecf83f4962bd64a221945b6d911e11a6
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682158"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093298"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
 
@@ -125,6 +125,3 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 > [!NOTE]
 > Tento způsob získání informací o metadatech aplikace je jediný dostupný pro lokálně nasazené aplikace (v případě místních obchodních dat (LBD) nebo místně se používá model nasazení).
         
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

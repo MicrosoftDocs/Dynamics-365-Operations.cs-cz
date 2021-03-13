@@ -1,6 +1,6 @@
 ---
 title: Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
-description: Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Microsoft Dynamics 365 Finance z externího souboru.
+description: Toto téma popisuje, jak navrhnout konfigurace elektronického výkaznictví pro import dat do aplikace Microsoft Dynamics 365 Finance z externího souboru.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093716"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
 
@@ -254,6 +254,3 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 27. Zavřete stránku.
 28. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

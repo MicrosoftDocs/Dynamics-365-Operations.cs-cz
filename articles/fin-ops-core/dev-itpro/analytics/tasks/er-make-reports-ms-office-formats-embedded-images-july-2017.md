@@ -1,6 +1,6 @@
 ---
 title: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-description: Kroky v tomto tématu popisují informace o navrhování konfigurací elektronického výkaznictví, které generují elektronické dokumenty ve formátech Microsoft Office (Excel a Word) obsahující vložené obrázky.
+description: Toto téma popisuje proces navrhování konfigurací, které generují elektronické dokumenty ve formátech Excel a Word, které obsahují vestavěné obrázky.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684395"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093663"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
@@ -90,6 +90,3 @@ K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronic
  30. Vyberte možnost Ano v poli Povolit vytváření verifikačních transakcí v neaktivních bankovních účtech:.  
  31. Klikněte na položku Uložit.  
  32. Zavřete stránku.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

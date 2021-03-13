@@ -1,6 +1,6 @@
 ---
-title: Definice stromu výkaznictví ve finančních sestavách
-description: Tento článek obsahuje informace o definicích stromu výkaznictví. Definice stromu výkaznictví je součástí sestavy nebo stavební blok, který pomáhá definovat strukturu a hierarchii vaší organizace.
+title: Definice organizačního stromu ve finančních sestavách
+description: Tento článek popisuje definice stromu sestav. Definice stromu sestav je komponentou sestavy, která definuje strukturu organizace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682666"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093893"
 ---
-# <a name="reporting-tree-definitions-in-financial-reports"></a>Definice stromu výkaznictví ve finančních sestavách
+# <a name="reporting-tree-definitions-in-financial-reports"></a>Definice organizačního stromu ve finančních sestavách
 
 [!include [banner](../includes/banner.md)]
 
@@ -220,6 +220,3 @@ Následující příklady ukazují možné informace, které jsou použity v def
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

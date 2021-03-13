@@ -3,7 +3,7 @@ title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f8ec45208ea86f4b1782eaeb1d14bb414e3b577f
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693767"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104302"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Nový ovládací prvek mřížky poskytuje řadu užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
+Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
 
 -  Vypočet součtů
 -  Zadávání před systémem
 -  Vyhodnocování matematických výrazů 
 -  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **(Preview) Seskupení do mřížek**)
--  Připnuté systémové sloupce
+-  Zmrazení sloupců
 
 ## <a name="calculating-totals"></a>Vypočet součtů
 V aplikacích Finance and Operations mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
@@ -45,10 +45,10 @@ Aplikace Finance and Operations obsahují oblast zápatí v dolní části každ
 - Celkové součty v dolní části konfigurovaných číselných sloupců
 - Počet řádků v sadě dat 
 
-Toto zápatí je ve výchozím nastavení skryto, ale lze je snadno zapnout. Chcete-li zobrazit zápatí pro mřížku, klikněte pravým tlačítkem na záhlaví sloupce v mřížce a vyberte možnost **Zobrazit zápatí**. Po zapnutí zápatí pro určitou mřížku bude toto nastavení zapamatováno, dokud uživatel neskryje zápatí, což lze provést kliknutím pravým tlačítkem na záhlaví sloupce a výběrem možnosti **Skrýt zápatí**.  Pamatujte, že akce **Zobrazit zápatí / Skrýt zápatí** bude v budoucí aktualizaci přemístěna. 
+Toto zápatí je ve výchozím nastavení skryto, ale lze je zapnout. Chcete-li zobrazit zápatí pro mřížku, klikněte pravým tlačítkem na záhlaví sloupce v mřížce a vyberte možnost **Zobrazit zápatí**. Po zapnutí zápatí pro konkrétní mřížku bude toto nastavení zapamatováno, dokud se uživatel nerozhodne zápatí skrýt. Chcete-li zápatí skrýt, klikněte pravým tlačítkem na záhlaví sloupce a vyberte **Skrýt zápatí**.  (Provedení akce **Zobrazit zápatí / Skrýt zápatí** bude v budoucí aktualizaci přemístěno na nové místo. 
 
 ### <a name="specifying-columns-with-totals"></a>Určení sloupců se součty
-V současné době nebudou ve výchozím nastavení nakonfigurovány žádné sloupce pro zobrazení součtů. Namísto toho je tato činnost považována za jednorázovou, podobně jako nastavení šířky sloupců v mřížce. Jakmile určíte, že chcete zobrazit součty pro sloupec, toto nastavení se při další návštěvě stránky zapamatuje.  
+V současné době ve výchozím nastavení žádné sloupce nezobrazují součty. Namísto toho je tato činnost považována za jednorázovou, podobně jako nastavení šířky sloupců v mřížce. Jakmile určíte, že chcete zobrazit součty pro sloupec, toto nastavení se při další návštěvě stránky zapamatuje.  
 
 Existují dva způsoby konfigurace sloupce pro zobrazení celkového součtu: 
 
@@ -122,8 +122,14 @@ Stejně jako můžete vybrat (nebo zrušit výběr) všech řádků v mřížce 
 ### <a name="hiding-column-names"></a>Skrytí názvů sloupců
 Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Počínaje verzí 10.0.14 / Platform Update 38 můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
 
-## <a name="pinned-system-columns"></a>Připnuté systémové sloupce
-Sloupec pro výběr řádku a stavový sloupec řádku v nové mřížce jsou připnuty nebo zmrazeny v levé části mřížky. Proto, když jsou tyto sloupce zahrnuty do mřížky, budou vždy viditelné pro uživatele, bez ohledu na polohu vodorovného posouvání v mřížce.   
+## <a name="freezing-columns"></a>Zmrazení sloupců
+Některé sloupce v mřížce mohou být dostatečně důležité pro kontext, který se nemá rolovat mimo zobrazení. Místo toho chcete, aby byly hodnoty v těchto sloupcích vždy viditelné. Ve verzi 10.0.17 poskytuje funkce **Ukotvit sloupce v mřížce** tuto flexibilitu uživatelům. 
+
+Chcete-li sloupec ukotvit, klikněte pravým tlačítkem do záhlaví sloupce a poté vyberte **Ukotvit sloupec**. Při prvním provedení tohoto kroku se vybraný sloupec stane prvním sloupcem a již se nebude posouvat mimo zobrazení. Jakýkoli následující sloupec, který zmrazíte, bude přidán napravo od posledního zmrazeného sloupce. Pomocí standardní funkce Přesunout můžete změnit pořadí zmrazených sloupců podle potřeby. Ukotvené sloupce však nelze přesunout, aby se zobrazily mezi množinou nezmrazených sloupců. Ukotvené sloupce podobně nelze přesunout, aby se zobrazily mezi množinou zmrazených sloupců.
+
+Chcete-li sloupec odmrazit, klikněte pravým tlačítkem do záhlaví zmrazeného sloupce a poté vyberte **Odmrazit sloupec**. 
+
+Všimněte si, že výběr řádků a sloupce stavu řádků v nové mřížce jsou vždy zmrazeny jako první dva sloupce. Proto, když jsou tyto sloupce zahrnuty do mřížky, budou vždy viditelné pro uživatele, bez ohledu na polohu vodorovného posouvání v mřížce. U těchto dvou sloupců nelze změnit pořadí.
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 
@@ -148,7 +154,7 @@ Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1
 
 Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlášení jednotlivých stránek z používání nové mřížky 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
 Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, od verze 10.0.13/Platform update 37 je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
 
  ```this.forceLegacyGrid();```
@@ -159,7 +165,7 @@ Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nov
 Pokud vývojář nastaví vlastnost **WidthMode** na **SizeToAvailable** pro sloupce uvnitř nové mřížky mají tyto sloupce zpočátku stejnou šířku, jakou by měli, kdyby byla vlastnost nastavena na **SizeToContent**. Roztahují se však, aby uvnitř mřížky využili jakoukoli další dostupnou šířku. Pokud je vlastnost nastavena na **SizeToAvailable** pro více sloupců sdílejí všechny tyto sloupce jakoukoli další dostupnou šířku uvnitř mřížky. Pokud však uživatel ručně změní velikost jednoho z těchto sloupců, sloupec se stane statickým. Zůstane na této šířce a již se nebude natahovat, aby zabírala další dostupnou šířku mřížky.  
 
 ## <a name="known-issues"></a>Známé problémy
-V této části je uveden seznam známých problémů nového ovládacího prvku mřížky, zatímco je ve verzi Preview.  
+Tato část udržuje seznam známých problémů pro nový ovládací prvek mřížky.  
 
 ### <a name="open-issues"></a>Otevřené problémy
 -  Po aktivaci funkce **Nový ovládací prvek mřížky** budou některé stránky i nadále využívat existující ovládací prvek mřížky. To se stane v následujících situacích:  
@@ -170,20 +176,44 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
     Když se uživatel poprvé setká s jednou z těchto situací, zobrazí se zpráva o aktualizaci stránky. Po zobrazení této zprávy bude stránka nadále využívat stávající mřížku pro všechny uživatele až do další aktualizace produktu. Pro budoucí aktualizaci bude zváženo lepší zacházení s těmito scénáři, aby bylo možné využít novou mřížku.    
     
 -  [KB 4582758] Záznamy jsou rozmazané, když změníte velikost písma ze 100 na jakékoli jiné procento
-    
+-  [KB 4592012] Neočekávaná chyba klienta v IE11 při vkládání více řádků z Excelu
+    -  Microsoft neprovádí opravu tohoto problému
+
+### <a name="fixed-as-part-of-10016"></a>Opraveno jako součást verze 10.0.16
+
+-  [KB 4598335] Víceřádkové ovládací prvky řetězce nerespektují jejich DisplayHeights v seznamech / kartách 
+-  [KB 4591891] Řádky návrhu faktury zmizí, když zrušíte označení řádků
+-  [KB 4592104] Nelze upravovat záznamy po kliknutí na „Opravit problém“ a přesunu na jiný řádek bez vyřešení problému s ověřením
+-  [KB 4594449] Ve výběru data chybí tlačítka „Nikdy“ a „Vymazat“ 
+-  [KB 4594448] Zadání času je v nové mřížce zacházeno odlišně
+-  [KB 4600059] Neočekávaná chyba klienta s omezením e-mailu
+-  [KB 4574584] Náhled přílohy výdajů není k dispozici, když umístíte ukazatel myši nad ikonu potvrzení
+
 ### <a name="fixed-as-part-of-10015"></a>Opraveno jako součást verze 10.0.15    
 
+-  (Aktualizace kvality) [KB 4594444] Neočekávaná chyba klienta s náhledem pro řízení segmentovaného vstupu
 -  [KB 4582723] Možnosti zobrazení se nezobrazí, když je voláte později v životním cyklu formuláře
+-  [KB 4591988] Problémy s použitím klávesnice k výběru hodnoty z vyhledávání ReferenceGroup
+-  [KB 4588958] Test Regression Suite Automation Tool (RSAT) selhává s chybou: TypeError: Nelze přečíst vlastnost 'text' nedefinované
+-  [KB 4591970] Neočekávaná chyba klienta při vkládání z aplikace Excel byla provedena ihned po kliknutí do mřížky
+-  [KB 4591904] Změny dat se neuloží, pokud po úpravě ovládacího prvku uživatel okamžitě klikne a otevře vyhledání jiného ovládacího prvku
+-  [KB 4584752] Neočekávaná chyba klienta ve stránce Návrhy faktury projektu
+-  [KB 4584540] Nelze opustit mřížku po vložení jednoho řádku do řádku deníku
+-  [KB 4591908] Při vytváření nového řádku zůstává zaostření ve sloupci, ve kterém jste byli
 
 ### <a name="fixed-as-part-of-10014"></a>Opraveno jako součást verze 10.0.14
 
 -  (Aktualizace kvality) [KB 4584752] Neočekávaná chyba klienta ve stránce Návrhy faktury projektu
+-  [KB 4583880] Testy Regression Suite Automation Tool (RSAT) selhaly při akci OpenLookup se zprávou "Cannot read property RowIndex of undefined"
+-  [KB 4583847] Neočekávaná chyba klienta při procházení jednotlivými vyhledáváními
 
 ### <a name="fixed-as-part-of-10013"></a>Opraveno jako součást verze 10.0.13
 
+-  (Aktualizace kvality) [KB 4584752] Neočekávaná chyba klienta ve stránce Návrhy faktury projektu
 -  (Aktualizace kvality) [KB 4583880] Testy Regression Suite Automation Tool (RSAT) selhaly při akci OpenLookup se zprávou "Cannot read property RowIndex of undefined"
 -  (Aktualizace kvality) [KB 4583847] Neočekávaná chyba klienta při procházení jednotlivými vyhledáváními 
 -  (Aktualizace kvality) [Chyba 471777] Nelze vybrat pole v mřížce pro úpravy nebo vytvoření mobilní aplikace
+-  [KB 4582727] Mřížka zamrzne poté, co uživatel dostane dialog pro položky s více množstvími
 -  [Chyba 474851] Hypertextové odkazy v ovládacích prvcích referenční skupiny nefungují 
 -  [Chyba 474848] Rozšířené náhledy s mřížkami se nezobrazí
 -  [KB 4582726] Vlastnost RotateSign není respektována  
@@ -224,13 +254,13 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 - [KB 4562646] Někdy nemůžete-kliknout mimo mřížku, pokud vyberete více řádků v mřížce.
 - [KB 4562647] Fokus je resetován na první ovládací prvek v dialogovém okně **Publikovat** po přidání nového řádku do mřížky bezpečnostních rolí.
 - [KB 4563310] Rozšířený náhled není po změně řádku uzavřen.
-- [KB 4563313] V aplikaci Internet Explorer se objeví "Neočekávaná chyba klienta", když je při vyhledávání vybrána hodnota.
-- [KB 4564557] V aplikaci Internet Explorer se neotevřou vyhledávací a rozbalovací nabídky
+- [KB 4563313] "Neočekávaná chyba klienta" se objeví v Internet Explorer, když je při vyhledávání vybrána hodnota.
+- [KB 4564557] Vyhledávací a rozbalovací nabídky se neotevřou v Internet Explorer
 - [KB 4563324] Navigace nefunguje po otevření pracovního prostoru **Personální management**.
 
 ### <a name="fixed-as-part-of-10011"></a>Opraveno jako součást verze 10.0.11
 
-- [Problém 432458] Na začátku některých podřízených kolekcí se zobrazí prázdné nebo duplicitní řádky.
+- [Vystavení 432458] Na začátku některých podřízených kolekcí se zobrazí prázdné nebo duplicitní řádky.
 - [KB 4549711] Řádky v návrhu platby nelze po povolení nového ovládacího prvku mřížky správně odebrat.
 - [KB 4558374] Záznamy, které vyžadují dialogové okno s polymorfním selektorem, nelze vytvořit.
 - [KB 4558375] Text nápovědy se nezobrazuje ve sloupcích v nové mřížce.
@@ -263,6 +293,3 @@ V této části je uveden seznam známých problémů nového ovládacího prvku
 ### <a name="quality-update-for-1009platform-update-33"></a>Aktualizace pro zvýšení kvality pro verzi 10.0.9 / Platform update 33
 
 - [KB 4550367] Časové hodnoty nejsou správně naformátovány.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
