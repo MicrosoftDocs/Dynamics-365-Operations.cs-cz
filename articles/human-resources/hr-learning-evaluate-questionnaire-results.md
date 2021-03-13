@@ -2,7 +2,7 @@
 title: Zobrazení a vyhodnocení výsledků dotazníků
 description: Tento článek vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, jež respondenti dokončí.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff2136e1f0a87b7d77968ca1163e64f8838b234b
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417691"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5116109"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Zobrazení a vyhodnocení výsledků dotazníků
 
@@ -68,9 +68,7 @@ Statistiky dotazníku slouží k analýze výsledků vyplněných dotazníků na
     -   Vyberte typ grafu, který bude použit při prohlížení výsledků.
     -   Vyberte typy osob v síti (zaměstnanci, kontaktní osoby nebo uchazeči), jejichž odpovědi mají být zahrnuty do statistiky. Je rovněž možné zahrnout odpovědi z dotazníků, které byly vyplněny anonymně.
     -   Nastavte intervaly, které jsou založeny na věku nebo služebním věku, pro analýzu výsledků.
--   Výběr nebo ověření nastavení, jež upřesní předmět statistiky. Například při výběru PSČ lze analyzovat výsledky pro všechny respondenty v dané geografické oblasti.
+-   Výběr nebo ověření nastavení, jež upřesní předmět statistiky. Například při výběru PSČ lze analyzovat výsledky pro všechny respondenty v dané geografické oblasti.
 -   Vyberte nebo zkontrolujte kritéria pro analýzu výsledků dle charakteristiky respondenta nebo dotazníku. Například výběrem možnosti **PSČ** lze analyzovat korelaci mezi umístěním a správnými odpověďmi respondenta.
 
 Definovaná nastavení budou uložena a lze je použít k periodickému přepočítávání výsledků.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

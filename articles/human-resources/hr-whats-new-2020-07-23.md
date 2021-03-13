@@ -1,8 +1,8 @@
 ---
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources (23. července 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 23. červenci 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f5e10d6d1dedfc251a1a00110b50c9096314d75b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127514"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources (23. července 2020)
 
@@ -33,7 +33,7 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynam
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>Odstranění finančních dimenzí na pozici nefunguje podle očekávání (445476)
 
-Odstranění dimenzí z pozice nyní odstraní stejné pozice z Common Data Service.
+Odstranění dimenzí z pozice nyní odstraní stejné pozice z Dataverse.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>Pozice, které nejsou v hierarchii, ukazují neaktivní pozice (397257)
 
@@ -94,9 +94,9 @@ Entita DMF je nyní k dispozici pro akruální pozastavení
 
 ## <a name="coming-soon"></a>Již brzy
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Položky kontrolního seznamu zahrnuté do Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Položky kontrolního seznamu zahrnuté do Dataverse
 
-Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Common Data Service k dispozici již brzy.
+Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Dataverse k dispozici již brzy.
 
 ## <a name="platform-changes"></a>Změny platformy
 
@@ -108,6 +108,3 @@ Platform update 10.0.12 (36)
 [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

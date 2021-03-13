@@ -1,6 +1,6 @@
 ---
-title: Nastavení dvojitého zápisu z Lifecycle Services
-description: V tomto tématu je vysvětleno, jak zřídit připojení s dvojím zápisem mezi novým prostředím Finance and Operations a novým prostředím Dataverse z Microsoft Dynamics Lifecycle Services (LCS).
+title: Nastavení duálního zápisu z Lifecycle Services
+description: Toto téma vysvětluje, jak nastavit připojení pro duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: df67e498b963af3ded7464f46f37bb4b2ca7d852
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127586"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení dvojitého zápisu z Lifecycle Services
+# <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -56,7 +54,7 @@ Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím zp
     - Pokud je prostředí Dataverse již pro klienta zřízeno, můžete je vybrat.
 
         1. Nastavte možnost **Konfigurovat Dataverse** na **Ano**.
-        2. V poli **Dostupná prostředí** vyberte prostředí, které chcete integrovat s vašimi daty Finance and Operations. Seznam obsahuje všechna prostředí, v nichž máte oprávnění správce.
+        2. Ve sloupci **Dostupná prostředí** vyberte prostředí, které chcete integrovat s vašimi daty Finance and Operations. Seznam obsahuje všechna prostředí, v nichž máte oprávnění správce.
         3. Zaškrtnutím políčka **Souhlasím** dáte najevo, že souhlasíte s podmínkami a ujednáními.
 
         ![Karta Dataverse, když už je pro klienta zřízeno prostředí Dataverse](../dual-write/media/lcs_setup_1.png)
@@ -76,9 +74,9 @@ Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím zp
         ![Karta Dataverse, pokud váš klient ještě nemá prostředí Dataverse](../dual-write/media/lcs_setup_2.png)
 
 7. Proveďte zbývající kroky v průvodci **Nastavení nasazení**.
-8. Poté, co má prostředí stav **Nasazeno** otevřete stránku s podrobnostmi o prostředí. V sekci **Informace o prostředí Dataverse** jsou uvedeny názvy prostředí Finance and Operations a Dataverse, která jsou propojena.
+8. Poté, co má prostředí stav **Nasazeno** otevřete stránku s podrobnostmi o prostředí. V sekci **Integrace prostředí Power Platform** jsou uvedeny názvy prostředí Finance and Operations a Dataverse, která jsou propojena.
 
-    ![Sekce s informacemi o prostředí Dataverse](../dual-write/media/lcs_setup_3.png)
+    ![Sekce integrace Power Platform](../dual-write/media/lcs_setup_3.png)
 
 9. Správce prostředí Finance and Operations se musí přihlásit k LCS a dokončit propojení výběrem **Odkaz na CDS for Apps**. Na stránce s podrobnostmi o prostředí jsou uvedeny kontaktní informace na správce.
 
@@ -86,10 +84,8 @@ Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím zp
 
 10. Chcete-li otevřít pracovní prostor **Integrace dat** v prostředí Finance and Operations a ovládat šablony, které jsou k dispozici, vyberte možnost **Odkaz na CDS for Apps**.
 
-    ![Tlačítko Odkaz na CDS for Apps v sekci s informacemi o prostředí Dataverse](../dual-write/media/lcs_setup_4.png)
+    ![Tlačítko Odkaz na CDS for Apps v sekci s informacemi o Power Platform](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > Nelze zrušit propojení prostředí pomocí LCS. Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.
 
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4417718"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128154"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -196,7 +196,6 @@ Aplikace Human Resources v Teams má následující problémy s usnadněním, na
 | --- | --- |
 | Zvětšení plochy o 400 % skryje některá tlačítka akcí. | Doporučujeme místo toho používat lupu, dokud nebudeme moci tuto úroveň zvětšení podporovat. |
 | Na kartě **Volno** hlasový komentář oznamuje akci tlačítka při čtení záhlaví mřížky volna. | Záhlaví a prvky v mřížce jsou seskupeny podle roku a jsou sbalitelné. Komentář to interpretuje jako položku s akcemi, kterou ale není. |
-| Pokud potáhnete prstem, když je otevřeno místní okno nebo nabídka, hlasový komentář přeskočí čtení obsahu místního okna nebo nabídky. | Prozkoumejte obsah pomocí skenování prstem. |
 | Na kartě **Volno** je při přechodu na **Kód důvodu** v nové žádosti potřeba potáhnutí prstem navíc. | Neexistuje žádný skrytý ovládací prvek, ke kterému se potáhnutí prstem pokouší dostat. |
 | Na kartě **Volno**, pokud potáhnete prstem, když je kalendář otevřený, skončíte mimo ovládací prvek namísto horní části v nové žádosti nebo během úpravy požadavku. | Když dosáhnete položky **Přejít na dnešek**, považujte to za konec ovládacího prvku a potáhnutím prstem opačným směrem se dostanete zpět nahoru. |
 | Komentář nečte popisky kalendářních dat. | Data v párech jsou vždy **Počáteční datum** a **Koncové datum**. |
@@ -229,6 +228,3 @@ Chcete-li omezit přístup k aplikaci Human Resources v Microsoft Teams pro vaš
 [Stažení a instalace aplikace Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Centrum nápovědy Microsoft Teams](https://support.office.com/teams)</br>
 [Aplikace Human Resources v Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
