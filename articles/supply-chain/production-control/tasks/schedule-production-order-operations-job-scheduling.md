@@ -55,3 +55,6 @@ Toto téma je zaměřeno na plánování výrobní zakázky pomocí plánování
 6. V podokně akcí vyberte možnost **Výrobní zakázka**.
 7. Vyberte **Všechny úlohy**. Všimněte si, že na základě aktivní trasy je vytvořeno 5 úloh s plánováním úlohy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Stornovat neuložené změny na expediční vývěsce můžete pomocí následuj
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

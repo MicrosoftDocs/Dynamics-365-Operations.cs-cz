@@ -150,3 +150,6 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 3. Do pole **Prostředí** zadejte název prostředí doplňku elektronické fakturace.
 4. Zvolte **Uložit** a pak zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

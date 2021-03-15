@@ -124,3 +124,6 @@ Pro účely testování proveďte mapování formátu pomocí souboru 1099entrie
     * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány všechny řádky 7 importovaného souboru CSV. Řádek 1 nadpisů obsahujících polí byl vynechán, 4 transakce byly správně analyzovány a 2 transakce byly rozpoznány jako neplatné.
 3. Zavřete stránku.
 4. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ Chcete-li vytvořit seznam navrhovaných náprav a oprav, které lze přidat na 
 
 > [!NOTE]
 > Podle potřeby můžete změnit názvy příznaků, oblastí, typů, příčin a náprav poruch. Změny názvu se automaticky projeví v souvisejících registracích poruch.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

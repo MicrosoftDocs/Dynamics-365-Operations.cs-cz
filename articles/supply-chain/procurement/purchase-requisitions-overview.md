@@ -201,3 +201,6 @@ Pokud chcete konsolidovat schválené řádky nákupní žádanky, postupujte ta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

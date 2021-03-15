@@ -48,3 +48,6 @@ Před použitím funkce **Otevřít v novém okně** je třeba nakonfigurovat fu
 Funkce **Otevřít v novém okně** je k dispozici pouze, pokud existuje více než jedna stránka otevřená v okně. Dále se místní okno automaticky zavře, pokud nejsou žádné další stránky otevřeny (tj. když je zavřena poslední stránka v tomto okně). Systém také zavře otevřené stránky, když přejdete do jiné oblasti aplikace. Z toho vyplývá, že pokud máte otevřená místní okna a přejdete do jiné oblasti v aplikaci, místní okna budou automaticky uzavřena, protože stránky v těchto oknech byly zavřeny systémem.
 
 Horní panel v místních oknech zobrazuje informace o společnosti, ve které byla stránka otevřena a je určena jen ke čtení. Místní podokna jsou závislá na hlavním okně prohlížeče. Je-li hlavní okno zavřeno nebo aktualizováno, všechna otevřená místní okna se stanou jen pro čtení. Pokud k tomu dojde, můžete stále prohlížet údaje v těchto oknech, ale nebudete moci s nimi spolupracovat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

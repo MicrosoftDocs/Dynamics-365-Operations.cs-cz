@@ -142,3 +142,6 @@ Pokud chcete zakázat scénář, postupujte takto.
 2. Na dlaždici scénáře vyberte **Konfigurovat**.
 3. Volbou **Další** přejděte na poslední stránku průvodce.
 4. Nastavte možnost pro zákaz scénáře.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

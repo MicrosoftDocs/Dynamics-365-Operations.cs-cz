@@ -224,3 +224,6 @@ U stránek s vybranými velkými zobrazeními (přizpůsobení a dotazy lze ukl�
 
 - Pokud například přejdete v dlaždici na stránku, bude dotaz dlaždice proveden bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud jste vytvořili tuto dlaždici po povolení zobrazení, výběrem dlaždice se otevře stránka se zobrazením přidruženým k této dlaždici.
 - Pokud také přejdete na stránku, jejíž vstupní bod obsahuje dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. Měli byste věnovat pozornost, pokud k tomu dojde prostřednictvím informační zprávy při načítání zobrazení. Můžete také potvrdit přepnutí do tohoto zobrazení po načtení stránky, což by mělo umožnit spuštění dotazu zobrazení.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Když zaúčtujete dokument, je dokumentu přiřazena příslušná skupina čí
 
 > [!NOTE]
 > V některých zemích již existuje specifická logika pro číslování dokumentů. V takovém případě logika konkrétní země přepíše funkci **Chronologické číslování**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

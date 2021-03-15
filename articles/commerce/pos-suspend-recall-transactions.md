@@ -81,3 +81,6 @@ Pokud chcete rychle a snadno vyvolat pozastavenou transakci, naskenujte čárov�
 ### <a name="void-a-suspended-transaction"></a>Anulování pozastavené transakce
 
 Anulované transakce můžete zrušit tak, že transakci odvoláte a pak provedete operaci **Anulování transakce** nebo vyberete transakci v seznamu **Odvolat transakci** a na panelu aplikace vyberete **Anulovat**. Případně lze nakonfigurovat obchod tak, aby vyzval uživatele k anulování pozastavené transakce při uzavření směny.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

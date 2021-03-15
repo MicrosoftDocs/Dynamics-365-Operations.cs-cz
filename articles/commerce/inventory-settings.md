@@ -92,3 +92,6 @@ Následující obrázek ukazuje příklad stránky s podrobnostmi o košíku, kt
 [Modul volby obchodu](store-selector.md)
 
 [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

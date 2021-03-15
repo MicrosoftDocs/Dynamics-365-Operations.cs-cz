@@ -254,3 +254,6 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 27. Zavřete stránku.
 28. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

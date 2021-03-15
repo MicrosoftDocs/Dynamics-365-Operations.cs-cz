@@ -100,3 +100,6 @@ Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro za
 10. Klikněte na Schváleno.
     * Po schválení záznamu může být načten do záznamu oficiální kompenzace zaměstnance. Nová kompenzace bude platná k datu transakce, které je nastaveno v procesu kompenzace.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

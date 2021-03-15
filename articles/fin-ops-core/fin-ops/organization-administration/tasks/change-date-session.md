@@ -32,3 +32,6 @@ V tomto tématu je vysvětleno, jak lze změnit datum relace. Standardně se př
 2. Do pole **Datum** zadejte datum.
 3. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

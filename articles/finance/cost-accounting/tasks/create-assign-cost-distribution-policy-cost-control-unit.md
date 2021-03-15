@@ -72,3 +72,6 @@ Pravidla pro rozdělení nákladů se používají k rozdělení nákladů, kter
 5. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
 6. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

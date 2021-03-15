@@ -120,3 +120,6 @@ Následuje příklad exportu sestavy **Porovnání úložiště cen položek**:
 1. Otevře se stránka **Souhrn spuštění**, v níž se zobrazí stav úlohy exportu a seznam exportovaných entit. Vyberte entitu **Porovnat ceny zboží**, která je uvedena v oblasti **Stav zpracování entity** a poté vyberte **Stáhnout soubor** pro stažení dat exportovaných z této entity.
 
 Další informace o tom, jak používat správu dat k exportu dat, naleznete v tématu [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

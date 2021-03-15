@@ -62,3 +62,6 @@ Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb d
 33. Platby vygenerujte kliknutím na tlačítko **OK**.
 34. Jsou-li všechny platby schválené a vygenerované, klikněte na možnost **Zaúčtovat**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

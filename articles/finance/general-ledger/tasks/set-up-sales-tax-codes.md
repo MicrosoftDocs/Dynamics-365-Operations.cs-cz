@@ -45,3 +45,6 @@ Tento úkol využívá ukázkovou společnost USMF.
 12. Zavřete stránku.
 13. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

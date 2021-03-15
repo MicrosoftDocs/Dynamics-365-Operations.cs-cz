@@ -93,3 +93,6 @@ Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování 
 - [Návrh dotazníků](../../../talent/design-questionnaires.md)
 - [Distribuce a plánování dotazníků](../../../talent/distribute-questionnaires.md)
 - [Zobrazení a vyhodnocení výsledků dotazníků](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

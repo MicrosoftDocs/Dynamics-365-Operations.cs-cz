@@ -154,3 +154,6 @@ Funkce skupin publikování v současné době podporuje pouze obsah webu. Spole
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Přizpůsobení navigace na webu](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

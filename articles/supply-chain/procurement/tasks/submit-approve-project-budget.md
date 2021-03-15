@@ -56,3 +56,6 @@ Tento úkol byl vytvořen pomocí sady dat USSI.
 21. Zadejte hodnotu do pole **Komentář**.
 22. Klepněte na tlačítko **Odeslat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Po vytvoření požadavků na údržbu je lze snadno převést na pracovní př�
 
     ![Otevření nového pracovního příkazu](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

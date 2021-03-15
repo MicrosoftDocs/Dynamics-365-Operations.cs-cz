@@ -54,3 +54,6 @@ Plánovač výroby vypočítá požadovaný materiál a kapacitu pro výrobu ur�
 2. Klikněte na položku Potvrdit.
 3. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

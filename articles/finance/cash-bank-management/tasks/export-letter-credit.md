@@ -139,3 +139,6 @@ Před provedením této procedury spusťte procedury „Nastavení zařízení b
 3. Klikněte na odkaz na vybraném řádku v seznamu.
     * Ověřit stav dodávky = přijaté platby a částka zůstatku = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

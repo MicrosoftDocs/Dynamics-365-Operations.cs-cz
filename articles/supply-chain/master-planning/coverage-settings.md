@@ -65,3 +65,6 @@ Každá metoda doplnění je přiřazena k jednomu z následujících kódů pok
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

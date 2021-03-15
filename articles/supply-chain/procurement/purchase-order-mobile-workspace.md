@@ -112,3 +112,6 @@ Poté, co jste navštívili nákupní objednávku, která je vám přiřazena, a
 5. Vyberte odpovídající akci.
 6. Na stránce **Dokončit úkol** zadejte komentář. Všimněte si, že pokud jste vybrali akci **Delegovat**, je nutné vybrat uživatele, kterému má být úkol delegován.
 7. Vyberte **Hotovo**. Po aktualizaci pracovního prostoru již nákupní objednávka nebude v tomto seznamu. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

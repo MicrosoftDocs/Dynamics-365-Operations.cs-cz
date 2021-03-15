@@ -82,3 +82,6 @@ Existují dvě možnosti související s rezervacemi na stránce **Parametry ř�
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Zásady rezervace zásob na stránce Parametry výroby
 
 Hodnota pole **Rezervace** na kartě **Obecné** na stránce **Parametry výroby** určuje výchozí místo ve výrobním procesu, kdy se mají rezervovat zásoby. Například zásoby je možné rezervovat při plánování práce nebo při zahájení práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

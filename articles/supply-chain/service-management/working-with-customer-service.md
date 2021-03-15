@@ -48,3 +48,6 @@ Témata v této části poskytují přehled obchodního procesu odběratelského
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

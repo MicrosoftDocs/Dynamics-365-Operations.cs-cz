@@ -1414,3 +1414,6 @@ Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtuj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

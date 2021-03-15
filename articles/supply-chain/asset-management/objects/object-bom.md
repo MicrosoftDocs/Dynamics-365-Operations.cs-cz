@@ -83,3 +83,6 @@ Pro majetek můžete ručně vytvořit řádky položky.
 5. Pokud platnost položky vyprší, zadejte do pole **Vypršení platnosti** koncové datum.
 6. V poli **Číslo položky** vyberte položku. Název se automaticky vyplní do pole **Název produktu**.
 7. Poté v poli **Množství** zadejte množství, které se používá. Pole **Jednotka** je aktualizováno automaticky.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

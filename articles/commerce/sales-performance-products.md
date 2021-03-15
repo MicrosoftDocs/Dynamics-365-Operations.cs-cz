@@ -43,3 +43,6 @@ Pro toto hodnocení lze použít sestavu **Nejlepší produkty**, která je ihne
 - Pracovní prostor **Řízení obchodu** &gt; **Retail and Commerce** &gt; **Kanály** &gt; **Řízení obchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
 - Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod a velkoobchod** &gt; **Kanály** &gt; **Správa obchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
 - Sekce **Dotazy a sestavy** &gt; **Retail and Commerce** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších produktů**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

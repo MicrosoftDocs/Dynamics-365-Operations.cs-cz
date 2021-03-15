@@ -57,3 +57,6 @@ Na stránce **aktivní zapůjčený majetek** můžete zobrazit seznam všeho za
 3. V poli **Vráceno** zadejte datum a čas.
 4. Vyberte **OK**.
 5. Aktualizujte stránku seznamu **Aktivních zapůjčený majetek** a všimněte si, že se zapůjčený majetek již v seznamu nezobrazí.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

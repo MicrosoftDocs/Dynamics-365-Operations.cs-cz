@@ -83,3 +83,6 @@ Po dokončení konfigurace kanálu kontaktního střediska a definování uživa
 > [!NOTE]
 > Chcete-li použít funkci kontaktního střediska, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu funkčnosti kontaktního střediska, která provádí různá ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

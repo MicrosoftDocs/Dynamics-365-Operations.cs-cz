@@ -207,3 +207,6 @@ Zobrazí se informace o pokrytí závislých osob zaměstnance.
 
 > [!NOTE]
 > Tato stránka zobrazuje pouze plány výhod, které jsou označeny jako **hlásitelné ACA**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

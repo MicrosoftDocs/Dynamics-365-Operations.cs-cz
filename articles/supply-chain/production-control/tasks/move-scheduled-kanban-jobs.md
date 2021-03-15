@@ -61,3 +61,6 @@ Tento postup se zaměřuje na přesunutí plánovaného zpracování kanbanovýc
 2. Klikněte na **Vpřed**. Všimněte si, že úloha byla přesunuta o jeden řádek v seznamu dolů. 
 
 3. Klikněte na **Vzad**. Všimněte si, že úloha byla přesunuta o jeden řádek v seznamu nahoru.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

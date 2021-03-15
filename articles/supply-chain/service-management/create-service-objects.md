@@ -42,3 +42,6 @@ Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze prov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

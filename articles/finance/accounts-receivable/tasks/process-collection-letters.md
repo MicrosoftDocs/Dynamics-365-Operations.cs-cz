@@ -87,3 +87,6 @@ Pokud chcete ignorovat platby a dobropisy pro výpočet kódu upomínky, postupu
 
 1. Přejděte na **Navigační podokno > Moduly > Kredit a inkasa > Nastavení > Parametry závazků** a klikněte na kartu **Inkasa**. 
 2. Změňte hodnotu možnosti **ignorovat platby a dobropisy pro výpočet kódu upomínky na** **Ano**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

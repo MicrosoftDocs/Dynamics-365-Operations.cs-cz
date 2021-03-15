@@ -275,3 +275,6 @@ V tomto scénáři byl proveden výdej v seskupení a uživatel je nasměrován 
     Zobrazí se zpráva „Seskupení dokončeno“.
 
 Nyní můžete pomocí položky nabídky **Prodejní výdej** vyskladnit zbývající množství. Poté můžete pomocí položky nabídky **Nakládání prodeje** přesunout položky z přechodného skladového místa do překladišť.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

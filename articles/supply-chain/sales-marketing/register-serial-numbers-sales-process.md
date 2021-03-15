@@ -79,3 +79,6 @@ Tato funkce je k dispozici pro všechny role, které mohou spravovat prodejní d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ Následující klíčové dimenze se používají jako filtry k řezu měrných 
 | Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
 | Fiskální roky                       | Kalendářní rok                                                                                                        |
 | Fiskální období                     | Kalendářní roční období                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

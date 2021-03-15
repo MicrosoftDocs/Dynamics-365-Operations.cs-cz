@@ -94,3 +94,6 @@ Desku plánování kanbanu můžete otevřít pomocí položky nabídky na násl
 
 [Plánování kanbanové úlohy pro lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

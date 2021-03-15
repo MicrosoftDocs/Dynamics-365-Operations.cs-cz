@@ -85,3 +85,6 @@ Abyste mohli účinně spravovat své portály, musíte porozumět portálům Po
 - [Upgradujte portál](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrace konfigurace portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Správa životního cyklu řešení: aplikace Dynamics 365 for Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

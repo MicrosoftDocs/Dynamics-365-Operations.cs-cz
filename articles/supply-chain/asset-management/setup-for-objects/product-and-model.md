@@ -59,3 +59,6 @@ Toto téma vysvětluje, jak nastavit výrobce majetku a související modely v m
 2. Ve sloupci **Majetek** vyberte odkaz na majetek. Zobrazí se stránka **Podrobnosti**.
 3. Vyberte možnost **Upravit**.
 4. Na záložce **Obecné** vyberte hodnoty v polích **Výrobce** a **Model**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

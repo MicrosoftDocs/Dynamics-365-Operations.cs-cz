@@ -86,3 +86,6 @@ Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

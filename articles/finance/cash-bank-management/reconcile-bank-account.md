@@ -70,3 +70,6 @@ Funkce Zrušení odsouhlasení bankovního výpisu vám umožňuje zrušit odsou
 Odsouhlasení bankovního výpisu lze zrušit pouze v chronologickém pořadí, ve kterém byly zadány. Když je odsouhlasení bankovního výpisu zrušeno, nové transakce a opravy budou stornovány a všechny ostatní transakce budou označeny jako Neodsouhlasené.
  
 Chcete-li zrušit odsouhlasení bankovního výpisu, vyberte bankovní výpis a vyberte **Bankovní výpis > Zrušení odsouhlasení banky**. Na stránce **Storno odsouhlasení banky** zadejte **Kód důvodu**, **Komentář k důvodu** a **Datum zrušení**. Výběrem tlačítka **OK** zahajte zrušení. Poznámka: datum zrušení bankovního výpisu musí být v nebo po datu výpisu z banky. Po zrušení odsouhlasení bankovního výpisu bude pole **Datum zrušení** bankovního výpisu aktualizováno dle **Data zrušení**. Chcete-li zobrazit transakce, pro které bylo odsouhlasení zrušeno, vyberte tlačítko **Transakce**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

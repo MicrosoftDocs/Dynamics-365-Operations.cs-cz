@@ -58,3 +58,6 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
 Sypký mazací materiál se vyrábí v 1000litrovém mixéru. Jakmile je sypký materiál připraven, odčerpá se na několik čerpacích stanic, kde se plní lahve různých velikostí. Po dokončení plnění jsou lahve zabaleny do krabic. Tyto krabice se pak balí na palety.
 
 V tomto scénáři je vytvořena dávková objednávka na výrobu 1 000 litrů sypkého materiálu. (Tato objednávka je hromadná objednávka.) Když je tato dávková objednávka dokončena, nahlásí se jako dokončená do místa vstupu materiálu čerpacích stanic. Poté se vytvoří dávková objednávka k naplnění a zabalení každé velikosti lahve. (Tyto objednávky jsou objednávky balení.) Objednávky balení mají vzorec, který se skládá z sypkého materiálu, prázdné láhve, štítku a dalších balicích materiálů. Vzhledem k tomu, že sypký materiál proudí přímo z míchací nádrže do čerpacích stanic, není k vyzvednutí této přísady zapotřebí žádné práce ve skladu a sypký materiál se spotřebovává přímo ze vstupního místa. Proto je princip rezervace nastaven na *ruční*. Ostatní materiály se do čerpací stanice přichystají vychystávací prací. Proto je u těchto linek nastaven princip rezervace *vydání*, například k tomu, aby rezervace proběhla automaticky při uvolnění objednávky balíčku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

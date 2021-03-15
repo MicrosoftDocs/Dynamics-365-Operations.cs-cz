@@ -80,3 +80,6 @@ Po vytvoření stavů životního cyklu, které jsou požadovány pro vaše pož
 Následující ilustrace znázorňuje příklad stránky **Modely životního cyklu požadavků na údržbu**.
 
 ![Stránka Modely životního cyklu požadavku na údržbu](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

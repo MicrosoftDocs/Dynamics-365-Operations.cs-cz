@@ -96,3 +96,6 @@ Na stránce **Náhradní díly** můžete také vytvořit nové náhradní díly
 
 Chcete-li zjistit, zda se náhradní díl na vybraném řádku používá někde jinde v modulu Správa majetku (například ve vztahu k majetku a pracovním příkazům), vyberte řádek náhradní části a pak vyberte **Položka, kde se používá** k otevření stránky **Položka, kde se používá**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

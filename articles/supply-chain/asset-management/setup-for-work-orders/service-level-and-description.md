@@ -55,3 +55,6 @@ Při vytvoření pracovního příkazu můžete pro něj definovat úrovně slu�
 2. Zvolte **Nové**.
 3. Zadejte popis do pole **Popis**.
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

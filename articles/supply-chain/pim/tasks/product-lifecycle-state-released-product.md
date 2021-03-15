@@ -36,3 +36,6 @@ Tento postup ukazuje, jak přiřadit k uvolněnému produktu stav životního cy
 5. V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.
 6. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

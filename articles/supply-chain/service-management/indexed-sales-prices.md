@@ -42,3 +42,6 @@ Pokud je základní cena například 1 000 EUR a index je 110, bude prodejní ce
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Kompenzační mřížky umožňují definovat a spravovat struktury plateb pro p
 29. V seznamu označte všechny řádky nebo jejich označení zrušte.
 30. Klikněte na Použít na mřížku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

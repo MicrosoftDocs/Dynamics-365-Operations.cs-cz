@@ -82,3 +82,6 @@ Pokud používáte rámec importu leasingu k aktualizaci leasingu a typ zpracov�
 
 1. Přejděte na **Leasing majetku \> Rámec importu leasingu \> Nastavení \> Aktualizovat výběr pole**.
 2. Na stránce, která se zobrazí, vyberte pole, která chcete aktualizovat, a poté je výběrem zelené šipky přesuňte na seznam **Vybraná pole**. Pouze pole v seznamu **Vybraná pole** lze aktualizovat pomocí sady pro import leasingu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

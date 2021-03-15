@@ -146,3 +146,6 @@ Dostupné informace jsou název dodavatele, adresy, kontaktní informace, kontak
 ## <a name="additional-resources"></a>Další zdroje
 
 [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

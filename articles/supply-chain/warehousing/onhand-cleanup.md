@@ -62,3 +62,6 @@ Ve výchozím nastavení není nastavení **Maximální doba provedení** dostup
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Maximální doba provedení pro úlohu čištění položek na skladě v rámci správy skladu*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

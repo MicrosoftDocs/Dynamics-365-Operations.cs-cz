@@ -48,3 +48,6 @@ Další informace naleznete v části [Odvozené knihy](derived-books.md) a [Za�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

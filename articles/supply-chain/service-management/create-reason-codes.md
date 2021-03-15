@@ -40,3 +40,6 @@ Po výzvě k zadání kódu důvodu k vysvětlení, proč aktualizujete fázi se
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Po vytvoření konfigurace u vašeho poskytovatele konfigurace ji můžete sdíl
 Konfigurace je sdílena s externí organizací a je k dispozici této organizaci v globálním úložišti. Odtud ji lze importovat do instance RCS organizace nebo do jejích instancí aplikací Finance and Operations.
 
 6. Chcete-li zrušit sdílení konfigurace, která byla dříve sdílena s externí organizací, vyberte konfiguraci a klikněte na **Zrušit sdílení** a poté vyberte **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

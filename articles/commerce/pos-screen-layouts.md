@@ -207,3 +207,6 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 ## <a name="additional-resources"></a>Další zdroje
 
 [Instalace návrháře rozložení pokladního místa Retail (POS)](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

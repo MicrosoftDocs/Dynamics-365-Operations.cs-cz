@@ -84,3 +84,6 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 Další informace o tom, jak pracovat s mobilním pracovním prostorem **Správa majetku**, získáte v tématu [Použití mobilního pracovního prostoru Správa majetku](asset-management-mobile-workspace.md).
 
 Více informací o mobilní aplikaci Finance and Operations (Dynamics 365) získáte v tématu [Domovská stránka mobilní aplikace](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

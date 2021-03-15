@@ -88,3 +88,6 @@ V tomto případě jsou dva kusy PC na skladě zohledněny. Nicméně vzhledem k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

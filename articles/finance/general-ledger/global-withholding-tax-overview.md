@@ -44,3 +44,6 @@ Globální funkce srážkové daně je vylepšena u transakcí dodavatelů a zá
 
 > [!NOTE]
 > Globální funkce srážkové daně nelze zapnout pro země/oblasti, kde již existují lokalizovaná řešení srážkové daně. Mezi tyto oblasti patří mimo jiné Indie, Brazílie, Thajsko, Saúdská Arábie, Irsko, Velká Británie a Spojené státy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

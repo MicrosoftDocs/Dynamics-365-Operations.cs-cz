@@ -50,3 +50,6 @@ Existují mnoho typů slev:
 - **Přepravní sleva** – Sleva, která se použije, když celková částka transakce přesáhne zadanou částku a na objednávku se použije určitý způsob doručení (například dvoudenní nebo noční přeprava).
 
 Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

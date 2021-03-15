@@ -84,3 +84,6 @@ Jakmile zkopírujete řádky, lze podle potřeby upravit informace.
 Můžete vytvořit volnou fakturu ze šablony. Vyberete-li **Nová ze šablony** na kartě **Faktura**, můžete vybrat název šablony a účet odběratele pro novou volnou fakturu. Výchozí hodnoty, jako jsou například platební podmínky a způsob platby, lze automaticky vyplnit z odběratele, nebo můžete použít hodnoty, které byly uloženy v šabloně.
 
 Bude vytvořena nová volná faktura a můžete upravit hodnoty podle potřeby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

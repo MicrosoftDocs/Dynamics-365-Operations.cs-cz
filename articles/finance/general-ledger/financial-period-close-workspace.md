@@ -107,3 +107,6 @@ Po dokončení plánu uzávěrky pro něho vyberte možnost **Uzavřeno**. Histo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

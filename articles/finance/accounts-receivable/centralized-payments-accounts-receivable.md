@@ -295,3 +295,6 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam-západ)    |              | 75,00         |
 | Pohledávky Fabrikam-východ (Fabrikam-západ) | 25,00        |               |
 | Pohledávky (Fabrikam-západ)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Tato procedura ukazuje, jak použít spolupráci dodavatele k zobrazení informa
 1. Přejděte do nabídky Spolupráce dodavatele > Zásoby dodávky > Zásoby dodávky na skladě.
     * Stránka Zásoby dodávky na skladě ukazuje zásobu, kterou vlastníte ve skladu zákazníka. Další dimenze, například pracoviště a sklad, můžete zobrazit klepnutím na kartu Zobrazit dimenze.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

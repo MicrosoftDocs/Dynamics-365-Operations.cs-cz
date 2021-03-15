@@ -132,3 +132,6 @@ Po spuštění procesní události můžete doporučit úpravy nárůstu zásluh
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

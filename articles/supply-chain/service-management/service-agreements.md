@@ -78,3 +78,6 @@ Každý řádek servisní smlouvy podrobně popisuje obsah navrhované servisní
 ## <a name="related-topics"></a>Související témata
 
 [Vytváření servisních smluv](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -410,3 +410,6 @@ Produkt lze nyní znovu vydat do společnosti *USMF* a poté odeslat zákazníko
 1. Vyberte každou společnost, které chcete vydat produkty.
 1. Vyberte **OK** pro zavření dialogového okna **Vydání** a návrat do pracovní plochy.
 1. V podokně akcí na kartě **Změnový příkaz** ve skupině **Vydání produktu** vyberte **Proces** k vydání dotčených produktů vybraným společnostem. Případně vyberte **Uvolnit strukturu produktu** k zahájení procesu vydání.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Tato karta s náhledem se podrobněji věnuje dopadu alternativy vybrané dodáv
 ## <a name="additional-resources"></a>Další zdroje
 
 [Příslib objednávky](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

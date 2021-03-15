@@ -72,3 +72,6 @@ V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro nav
    | **End** | Koncové datum a čas, kdy má být dlaždice k dispozici. |
 
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

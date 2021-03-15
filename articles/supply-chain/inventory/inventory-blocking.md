@@ -69,3 +69,6 @@ Můžete určit, jaké stavy zásob jsou stavy blokování, pomocí parametru **
 [Procesy správy kvality](quality-management-processes.md)
 
 [Kontrola kvality zboží](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

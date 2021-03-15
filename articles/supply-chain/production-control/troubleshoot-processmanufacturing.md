@@ -40,3 +40,6 @@ Ve verzích před vydáním 10.0.13, pokud nepoužíváte tok výpočtu náklad�
 > Chystáte se provést uzávěrku skladu s datem %1. Žádné provedení výpočtu zpětného účtování nákladů s datem konce odpovídajícího období %1 nebylo zaregistrováno. Nezapomeňte spustit výpočet zpětného účtování nákladů s datem konce odpovídajícího období %1. Ocenění zásob, náklady prodaného zboží a odchylky nemusí být správné v dílčí knize nebo hlavní knize, dokud to nebude provedeno.
 
 Tento problém byl opraven ve verzi 10.0.13 a novější. Další informace naleznete v [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

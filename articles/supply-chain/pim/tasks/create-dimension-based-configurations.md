@@ -52,3 +52,6 @@ Tento postup popisuje, jak definovat konfiguraci produktu založeného na dimenz
     * Zadejte popis konfigurace vysvětlující její obsahuj.  
 11. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Tato procedura znázorňuje způsob použití šablony konfigurace pro produkt n
 
 ## <a name="select-the-product-configuration"></a>Vyberte konfiguraci produktu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

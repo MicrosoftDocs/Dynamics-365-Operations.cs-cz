@@ -44,3 +44,6 @@ Tento postup popisuje zapůjčení položky pracovníkovi a záznam vrácení po
 2. Klikněte na položku Upravit.
 3. V poli Aktuální návrat zadejte datum.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

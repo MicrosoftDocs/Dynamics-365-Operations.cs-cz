@@ -52,3 +52,6 @@ Je také nutné nastavit dobu realizace přepravy mezi sklady na stránce **Dny 
 2. V poli **Místo příjmu** vyberte **sklad**.
 3. Vyberte **odesílající sklad**, **přijímající sklad** a **Počet dnů přepravy**. 
 4. (Volitelné) Můžete také nastavit dobu přepravy v závislosti na režimu doručení na kartě **Dny dopravy podle způsobu doručení**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

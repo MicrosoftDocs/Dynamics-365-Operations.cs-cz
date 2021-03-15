@@ -61,3 +61,6 @@ Na následujícím příkladu jsou znázorněny úkoly zahrnuté do nastavován�
 ## <a name="additional-resources"></a>Další zdroje
 
 [Úpravy ceny a slevy](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

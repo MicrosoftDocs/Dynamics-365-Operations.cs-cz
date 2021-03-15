@@ -111,3 +111,6 @@ Následujících klíčové měrné systémy agregace byly použity jako základ
 | Výkon expedice        | Expedice podle produktu                       | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
 | Výkon expedice        | Expedováno podle odběratele                      | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
 | Výkon expedice        | Expedováno podle pracoviště nebo skladu              | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

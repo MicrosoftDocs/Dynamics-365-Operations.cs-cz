@@ -56,3 +56,6 @@ Tato procedura ukazuje, jak nakonfigurovat pracovníka jako obchodního zástupc
 6. V poli Výchozí skupina zadejte nebo vyberte hodnotu.
 7. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

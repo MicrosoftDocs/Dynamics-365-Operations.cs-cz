@@ -121,3 +121,6 @@ Pokud je zavedena nová verze certifikátu, ale nelze ho aktualizovat ve všech 
 
 > [!NOTE]
 > V modulu Commerce Runtime bude nejprve volána nová verze certifikátu. Pokud certifikát ještě nebyl aktualizován v konkrétním obchodě nebo na konkrétním terminálu, bude volána předchozí verze.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

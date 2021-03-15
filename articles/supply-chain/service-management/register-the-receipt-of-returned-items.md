@@ -112,3 +112,6 @@ Jako alternativu k použití formuláře **Přehled doručení** můžete použ�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

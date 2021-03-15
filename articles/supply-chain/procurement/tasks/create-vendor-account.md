@@ -58,3 +58,6 @@ Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontak
 7. Zavřete stránku.
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

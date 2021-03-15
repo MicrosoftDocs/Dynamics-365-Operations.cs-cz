@@ -73,3 +73,6 @@ V zobrazení podrobností lze aktualizovat různé informace. Několik příklad
 
 > [!NOTE]
 > Pokud při vytváření požadavku na údržbu vyberete určitý majetek, můžete k majetku přidat jednu chybu. Po vytvoření požadavku na údržbu můžete podle potřeby přidat další chyby. Pokud chcete přidat chyby, vyberte **Chyba majetku** na stránce **Všechny požadavky na údržbu**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Další informace naleznete v tématu [Odpisové metody a způsoby odpisu](depre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

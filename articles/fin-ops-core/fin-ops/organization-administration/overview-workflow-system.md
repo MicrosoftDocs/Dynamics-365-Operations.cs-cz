@@ -71,3 +71,6 @@ Používání systému workflowu v organizaci má několik výhod:
 + [Konfigurace paralelních větví ve workflow](configure-parallel-branch-workflow.md)
 + [Konfigurace workflow položky řádku](configure-line-item-workflow.md)
 + [Workflow – Často kladené otázky](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

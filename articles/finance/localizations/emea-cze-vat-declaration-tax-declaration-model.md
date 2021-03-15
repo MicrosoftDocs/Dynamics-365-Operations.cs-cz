@@ -752,3 +752,6 @@ Následující postup představuje příklad, jak zaúčtovat opravu odpočtu DP
     |------------------------|-----------------|----------------------|
     | VATDeductionCorrection | CORR            | Nákup             |
     | VATDeductionCorrection | CORR            | Nákupní dobropis |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

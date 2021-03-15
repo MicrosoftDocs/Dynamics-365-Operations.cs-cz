@@ -61,3 +61,6 @@ V tomto příkladu je zobrazen výpočet kontroly nákladů majetku.
     ![Obrázek č. 1](media/05-controlling-and-reporting.png)
 
 Více informací o nastavení závad získáte v části [Správa závad](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

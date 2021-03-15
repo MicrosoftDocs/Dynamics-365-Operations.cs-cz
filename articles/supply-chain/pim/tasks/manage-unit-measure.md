@@ -62,3 +62,6 @@ Tento postup popisuje definování měrné jednotky, poskytnutí překladů pro 
 6. Klikněte na tlačítko **OK**.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.
     * V tomto příkladu vyberte Expedice.  
 27. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

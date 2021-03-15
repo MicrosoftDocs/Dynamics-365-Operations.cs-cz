@@ -48,3 +48,6 @@ Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak z
 7. Klepněte na Vyrovnání hlavní knihy.
 8. Označte v seznamu vybraný řádek.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

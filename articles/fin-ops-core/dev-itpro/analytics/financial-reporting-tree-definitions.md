@@ -220,3 +220,6 @@ Následující příklady ukazují možné informace, které jsou použity v def
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

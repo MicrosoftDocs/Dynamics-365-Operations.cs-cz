@@ -41,3 +41,6 @@ Pro školení o funkcích sdílených s ostatními aplikacemi Finance and Operat
 | Obsah  | popis  | Formát  | Délka    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Nasazení a rozšíření Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Tento studijní program popisuje, jak nasadit prostředí Dynamics 365 Commerce a provádět kroky po nasazení, pro úspěšné implementace Commerce pomocí správné topologie pro potřeby každého maloobchodníka. | Libovolná online školení vlastním tempem | 5 hodin |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Tato úloha aktualizuje způsob odpisu pro uvedenou skupinu dlouhodobého majetk
 15. Klikněte na tlačítko OK.
     *  Výsledky procesu jsou zobrazeny v sestavě Hromadná aktualizace.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

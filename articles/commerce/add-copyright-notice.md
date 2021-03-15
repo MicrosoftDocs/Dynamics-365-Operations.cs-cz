@@ -74,3 +74,6 @@ Zápatí, které obsahuje poznámku o autorských právech, se automaticky zobra
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

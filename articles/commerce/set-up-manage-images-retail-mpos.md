@@ -208,3 +208,6 @@ Obrázky katalogu, kategorie, zaměstnance a odběratelů, které musí být pou
 5. Postupujte podobně pro ostatní entity, jako je například kategorie, zaměstnanec a odběratel.
 
     [![Offline obrázek](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

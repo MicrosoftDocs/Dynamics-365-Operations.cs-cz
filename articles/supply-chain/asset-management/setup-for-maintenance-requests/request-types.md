@@ -44,3 +44,6 @@ Typ požadavku údržby definuje příslušnost ke skupině stavů životního c
 Následující ilustrace znázorňuje příklad stránky **Typy požadavků na údržbu**.
 
 ![Stránka Typy požadavků na údržbu](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

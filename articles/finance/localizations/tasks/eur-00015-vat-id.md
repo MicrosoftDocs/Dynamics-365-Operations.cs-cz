@@ -60,3 +60,6 @@ Informace zde uvedené se vztahují na všechny evropské země/oblasti. Tento �
     * Přiřaďte typ registrace, který jste vytvořili, k předdefinované kategorii registrace.  
 22. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

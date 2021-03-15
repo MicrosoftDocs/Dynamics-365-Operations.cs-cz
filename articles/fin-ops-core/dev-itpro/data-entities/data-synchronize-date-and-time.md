@@ -40,3 +40,6 @@ Tato duální konverze způsobí změnu dat mezi aplikacemi. Například duáln�
 4. Změňte **Časové pásmo** na **standard UTC (Coordinated Universal Time)** a změňte **Jazyk** na **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

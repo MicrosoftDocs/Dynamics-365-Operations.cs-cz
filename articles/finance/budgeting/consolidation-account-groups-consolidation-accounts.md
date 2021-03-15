@@ -53,3 +53,6 @@ Další informace naleznete v tématu [Vytvoření skupin konsolidace a další 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

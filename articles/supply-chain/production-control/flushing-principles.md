@@ -62,3 +62,6 @@ Princip vyprazdňování Dokončit určuje, že materiál bude automaticky spot�
 
 ### <a name="available-at-location"></a>K dispozici na skladě
 Princip vyprazdňování K dispozici ve skladovém místě určuje, že materiál bude automaticky spotřebovávaný po registraci jako výdeje pro výrobu. Materiál je registrován jako vyskladněný ze skladového místa po dokončení výdeje surovin, případně když je k dispozici na vstupním místě výroby a uvolnění řádku kusovníku do skladu. Výdejka vytvořená během procesu je zaúčtována v dávkové úloze. Tento princip je relevantní, pokud například máte mnoho aktivit výdeje pro jednu výrobní zakázku. V takovém případě není nutné ručně aktualizovat výdejku a lze získat aktuální zobrazení zůstatku nedokončené výroby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

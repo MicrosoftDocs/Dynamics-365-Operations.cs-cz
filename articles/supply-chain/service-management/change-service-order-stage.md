@@ -40,3 +40,6 @@ Tento postup slouží k přesunutí servisní zakázky na další fázi v servis
 4.  Ve formuláři **změnit fázi servisu** vyberte do požadované fáze.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

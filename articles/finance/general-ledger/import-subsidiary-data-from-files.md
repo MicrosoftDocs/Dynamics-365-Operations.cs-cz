@@ -60,3 +60,6 @@ Toto téma vysvětluje, jak připravit data z externích systémů tak, aby je b
 8. Nastavte možnost **Dávkové zpracování** na **Ano**, chcete-li spustit konsolidaci jako dávkovou úlohu v konkrétní čas. Chcete-li konsolidaci spustit okamžitě, vyberte **OK**. 
 
 Transakce a zůstatky, které byly v dceřiných společnostech označeny ke konsolidaci, budou přidány na příslušné účty konsolidované právnické osoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

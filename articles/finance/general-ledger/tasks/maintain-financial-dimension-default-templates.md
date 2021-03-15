@@ -41,3 +41,6 @@ Tohle téma popisuje, jak nastavit výchozí šablony finanční dimenze. Šablo
 11. Zadejte procento hodnoty finanční dimenze, které odpovídají zadanému procentu.
 12. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

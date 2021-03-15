@@ -44,3 +44,6 @@ Pokud neurčíte pro řádek servisní smlouvy žádné časové okno, je nutné
 
 [Tvorba časových oken](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

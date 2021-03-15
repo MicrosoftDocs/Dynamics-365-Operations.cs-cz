@@ -71,3 +71,6 @@ Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

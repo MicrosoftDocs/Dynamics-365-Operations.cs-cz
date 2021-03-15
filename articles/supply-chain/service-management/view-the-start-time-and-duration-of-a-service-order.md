@@ -58,3 +58,6 @@ Můžete také zobrazit, kdy došlo u servisní zakázky k zahájení a zastaven
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

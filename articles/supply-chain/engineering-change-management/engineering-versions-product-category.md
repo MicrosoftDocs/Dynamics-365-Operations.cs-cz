@@ -161,3 +161,6 @@ Technické kusovníky a postupy se vytvářejí z technické verze, kde platí. 
 U produktů, kde používáte dimenze produktu *verze* (spolu s logistickým dopadem na transakce), je verze také přidána do kusovníků a postupů. Toto chování pomáhá odlišit kusovníky a postupy po sobě jdoucích verzí, bez ohledu na nastavení **Vynutit platnost**.
 
 U produktů, kde nepoužíváte dimenze produktu *verze* (bez logistického dopadu na transakce), není verze přidána do kusovníků nebo postupů. Proto nebude mezi kusovníky a postupy po sobě jdoucích verzí žádný rozdíl. V tomto případě důrazně doporučujeme nastavit možnost **Vynutit platnost** na *Ano*. Tímto způsobem pomůžete zabránit tomu, aby se technické verze překrývaly, a můžete také aktivovat kusovník a postup novější verze, aniž byste nejprve museli deaktivovat kusovník a postup předchozí verze. Pokud v tomto případě nastavíte možnost **Nastavit platnost** na *Ano*, musíte ručně deaktivovat kusovníky a postupy starších verzí, než budete moci aktivovat nejnovější verzi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

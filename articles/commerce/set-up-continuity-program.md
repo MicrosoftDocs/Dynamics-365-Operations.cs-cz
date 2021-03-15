@@ -49,3 +49,6 @@ Poté, co jste nastavili program trvání podle pokynů výše, můžete vytvoř
 - **Rozšiřte řádky trvání** (je-li vyžadováno) – zvyšte počet opakování povolených u trvalé události. Opakování dodávky lze poté překročit přes limit, který byl nastaven v poli **Prahová hodnota opakování trvalé položky** v parametrech kontaktního střediska.
 - **Proveďte aktualizaci trvání** (je-li vyžadováno) – synchronizujte změny mezi programem trvání a nadřazenými trvalými prodejními objednávkami.
 - **Zavřete nadřazené řádky trvání a objednávky** – zavřete trvalé objednávky.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Uživatelé mohou také studovat prodejní trendy a vzorce v hodinovém grafu na
 - Pracovní prostor **Řízení obchodu** &gt; **Retail and Commerce** &gt; **Kanály** &gt; **Řízení obchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**
 - Pracovní prostor **Finance obchodu** &gt; **Retail and Commerce** &gt; **Kanály** &gt; **Finance obchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**
 - Část **Dotazy a sestavy** &gt; **Retail and Commerce** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle hodin**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

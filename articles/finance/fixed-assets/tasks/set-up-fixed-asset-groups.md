@@ -38,3 +38,6 @@ Toto téma vysvětluje, jak vytvořit novou skupinu dlouhodobého majetku. Využ
 8. Vyberte volbu v poli **Způsob odpisu**.
 9. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 
 - [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

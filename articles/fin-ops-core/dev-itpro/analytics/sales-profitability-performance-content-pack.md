@@ -107,3 +107,6 @@ Následující tabulka uvádí klíčové dimenze v prodejní krychli, které se
 | Data            | Data                                                |
 
 Ve výchozím nastavení obsah zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr dat v části filtrů sestavy. Můžete také změnit filtr společnosti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

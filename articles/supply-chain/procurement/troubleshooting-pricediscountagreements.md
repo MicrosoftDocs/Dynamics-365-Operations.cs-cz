@@ -124,3 +124,6 @@ Toto chování se očekává. Protože žádanky nejsou vždy schváleny, neměl
 
 Můžete vytvořit obchodní smlouvy pro jakékoli odpovědi na požadavky na nabídku (RFQ), bez ohledu na to, zda byly přijaty nebo odmítnuty. Další informace naleznete v tématu [Přehled požadavků na nabídku](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

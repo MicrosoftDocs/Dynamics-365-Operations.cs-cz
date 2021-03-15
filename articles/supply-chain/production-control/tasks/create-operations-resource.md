@@ -80,3 +80,6 @@ Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Tent
 4. V poli Vstupní místo zadejte nebo vyberte hodnotu.
     * Zadejte umístění ve skladu, ze kterého provozní prostředek spotřebovává materiál.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

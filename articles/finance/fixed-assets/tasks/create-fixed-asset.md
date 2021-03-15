@@ -54,3 +54,6 @@ Pokud jste nedefinovali číslo dlouhodobého majetku v šabloně doplňku aplik
 
 > [!WARNING]
 > Záznam dlouhodobého majetku nebude odstraněn, pokud byly transakce zaúčtovány do přidružené knihy nebo pokud je nově vytvořený dlouhodobý majetek zadán na řádku deníku, ale nebyl zaúčtován. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

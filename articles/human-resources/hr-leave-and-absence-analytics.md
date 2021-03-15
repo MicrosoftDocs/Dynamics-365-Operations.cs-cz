@@ -45,3 +45,5 @@ Dynamics 365 Human Resources poskytuje analýzu, která vám pomůže získat p�
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

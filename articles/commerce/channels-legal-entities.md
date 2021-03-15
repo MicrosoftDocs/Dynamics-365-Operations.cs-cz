@@ -85,3 +85,6 @@ Na následujícím obrázku je podrobný příklad právnické osoby.
 [Přehled kanálů](channels-overview.md)
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Poznamenejte si čísla odběratele a zboží, které jste zvolili pro proces pr
 3. Zavřete stránku.
 4. Vyberte **Doklad**. Transakce dokladu můžete zkontrolovat pro částky provize, které byly zaúčtované do předdefinovaných výdajů a účtů vyplacené provize.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

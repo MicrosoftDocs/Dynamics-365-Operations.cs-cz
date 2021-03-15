@@ -139,3 +139,6 @@ Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiš
 26. Ve stromovém zobrazení rozbalte Ukázkový datový model.
     * Všimněte si, že konfigurace modelu mapování 'Vzorové mapování' bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro aplikaci. Konfigurace 'Vzorové mapování (alternativní)' nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
     * Pokud jste přihlášeni k Finance and Operations, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace 'Ukázkové mapování (alternativní)' a konfigurace "Ukázkové mapování" bude přeskočena.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

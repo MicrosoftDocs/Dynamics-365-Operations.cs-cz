@@ -82,3 +82,6 @@ Jakmile jsou k dispozici data nastavení, jste připraveni k vytvoření majetku
 1. Na stránce **Všechna funkční místa** se ujistěte, že funkční místo, kde chcete majetek automaticky vytvořit, používá typ funkčního místa, který jste pro tento účel vytvořili.
 2. V seznamu vyberte funkční místo.
 3. Vyberte **Aktualizovat stav funkčního místa** a pak vyberte stav životního cyklu, který jste pro tento účel vytvořili. Jeden majetek je nyní automaticky nainstalován na funkční místo. Tento majetek má stejný název jako funkční místo.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

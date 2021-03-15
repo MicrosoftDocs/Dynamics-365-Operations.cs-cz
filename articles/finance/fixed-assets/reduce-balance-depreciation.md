@@ -84,3 +84,6 @@ Pomocí metody Degresivní odpisování je 30 % odpisové základny (čistá ú�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

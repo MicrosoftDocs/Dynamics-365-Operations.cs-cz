@@ -58,3 +58,6 @@ Tato procedura ukazuje, jak vytvořit obchodní smlouvy o prodejních cenách po
 24. Klikněte na kartu Cenová pravidla kategorie.
     * Kategorizace cenových pravidel specifická pro kanál se zobrazí na tomto seznamu.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

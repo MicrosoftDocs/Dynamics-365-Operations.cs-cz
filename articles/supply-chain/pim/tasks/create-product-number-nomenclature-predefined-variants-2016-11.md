@@ -57,3 +57,6 @@ Toto téma vysvětluje, jak nastavit názvosloví čísel produktu pro předdefi
 5. V poli **Názvosloví čísla varianty produktu** zadejte nebo vyberte hodnotu.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

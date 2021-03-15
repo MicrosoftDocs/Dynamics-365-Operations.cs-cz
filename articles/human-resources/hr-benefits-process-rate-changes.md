@@ -48,3 +48,6 @@ Zpracování změn sazby zaměstnaneckých výhod v Microsoft Dynamics 365 Human
    4. Vyberte **OK**. Proces bude spuštěn s nastavenými parametry.
 
 4. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

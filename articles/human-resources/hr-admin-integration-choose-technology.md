@@ -150,3 +150,6 @@ V případě, že je k dispozici mnoho různých integračních technologií, 
 <sup>2</sup>společnost Microsoft intenzivně investuje do zvýšení pokrytí dat pro tabulky Dataverse. Doporučujeme použít Dataverse, pokud je k dispozici pokrytí. Služba Dataverse poskytuje v současné době nízké datové pokrytí ve srovnánís DMF a entitami s povolenou službou OData.
 
 <sup>3</sup>SQL databáze je přístupná prostřednictvím programu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

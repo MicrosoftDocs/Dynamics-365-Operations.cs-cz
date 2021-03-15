@@ -88,3 +88,6 @@ Video [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.
 Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM)  (zobrazené výše) je zahrnuto do [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Toto téma popisuje, jak pořídit záznam příjmu zboží přímo na nákupní
 6. Nastavte **Množství** na hodnotu 4. Zde je možné ručně zadat množství přijaté pro každý řádek objednávky.  
 7. Vyberte **OK**. Zboží bylo zaznamenáno jako obdržené v nákupní objednávce a deník příjemek produktů byl vytvořen jako dokument, který tuto akci odráží. Akci Příjemka produktu můžete použít ke kontrole deníků vytvořených s nákupní objednávkou a zobrazit tak, co bylo přijato, a kdy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

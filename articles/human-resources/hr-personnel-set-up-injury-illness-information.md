@@ -65,3 +65,6 @@ Zaměstnavatelé potřebují být informováni, když dojde ke zranění nebo on
     * Úřady pro ohlašování jsou úřady, kde je nutné vykazovat incidenty. Zaškrtněte výchozí políčko pro agenturu, která je výchozí agenturou pro vykazování zranění a onemocnění.  
 23. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

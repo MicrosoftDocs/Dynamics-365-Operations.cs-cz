@@ -87,3 +87,6 @@ Na následujícím obrázku je znázorněna právnická osoba přidaná v kořen
 [Přehled kanálů](channels-overview.md)
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

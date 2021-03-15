@@ -61,3 +61,6 @@ Pokud má majetek související dílčí majetek, můžete jej odstranit pouze v
 
 > [!NOTE]
 > Pokud nemůžete odstranit majetek pomocí tohoto postupu, dalším způsobem odstranění je nastavení stavu životního cyklu majetku pro tento účel. Můžete například nastavit stav životního cyklu **Zlikvidováno** nebo **Odstraněno** na stránce **Stavy životního cyklu majetku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

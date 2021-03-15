@@ -75,3 +75,6 @@ Srážková daň se počítá v **Deníku plateb dodavatele**. Můžete ručně 
 Odvozená částka srážkové daně bude odečtena z platby dodavatele a zaúčtována na **Účet srážkové daně** v souvisejícím dokladu.
 
 ![Účet srážkové daně zobrazující související dokument](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Na následujícím obrázku je znázorněn příklad sestavy pracovního příka
 
 ![Obrázek č. 2](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

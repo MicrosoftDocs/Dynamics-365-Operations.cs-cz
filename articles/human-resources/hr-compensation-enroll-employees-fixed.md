@@ -39,3 +39,6 @@ Manažer kompenzací a zaměstnaneckých výhod může přiřadit zaměstnance k
     * Je-li Plán fixní kompenzace plánem kroku, vyberte krok obsahující správné mzdové sazby pro zaměstnance. Je-li Plán fixní kompenzace plánem stupně nebo pásma, zadejte mzdovou sazbu pro zaměstnance. Mzdová sazba bude ověřena podle nastavení tolerance pro plán a minimálních a maximálních referenčních bodů pro úroveň kompenzace pozice.  
 8. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

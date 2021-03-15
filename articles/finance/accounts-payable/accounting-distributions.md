@@ -56,3 +56,6 @@ Obecné možnosti rozúčtování poskytují následující možnosti zpracován
 Ve verzi 10.0.13 byla přidána funkce, která ověřuje distribuční tabulku účetnictví, aby bylo zajištěno, že jsou nová pole správně nastavena. Tato funkce se nazývá **Povolit další ověření dat pro dokumenty pomocí rámce účetnictví zdrojových dokumentů**. Chcete-li tuto funkci používat, musíte ji povolit pomocí pracovního prostoru **Správa funkcí**. Chcete-li funkci povolit, vyhledejte její název v poli **Vyhledávání** na stránce **Správa funkcí** a poté vyberte **Povolit hned**.
 
 Více informací naleznete v části [Rozúčtování a záznamy v dílčí hlavní knize pro faktury dodavatele](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

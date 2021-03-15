@@ -61,3 +61,6 @@ Další informace o fragmentech záhlaví a modulech viz [Modul záhlaví](autho
 [Modul záhlaví](author-header-module.md) 
 
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

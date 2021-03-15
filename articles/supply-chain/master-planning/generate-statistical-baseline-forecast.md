@@ -77,3 +77,6 @@ Pokud se prognóza nevygeneruje pro velkou sadu položek, ale například vždy 
 - [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
 - [Autorizace upravené prognózy](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí ú�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

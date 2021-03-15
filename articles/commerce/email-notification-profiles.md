@@ -95,3 +95,6 @@ Před odesláním e-mailu je nutné nakonfigurovat službu odchozí pošty a nas
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
 
 [Přehled organizací a organizačních hierarchií](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

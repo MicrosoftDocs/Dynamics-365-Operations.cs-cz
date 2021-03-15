@@ -106,3 +106,6 @@ Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Mi
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

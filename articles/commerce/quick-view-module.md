@@ -77,3 +77,6 @@ Chcete-li přidat modul rychlého zobrazení do modulu kolekce produktů v konfi
 [Modul kolekce produktů](product-collection-module-overview.md)
 
 [Modul výsledků hledání](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

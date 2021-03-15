@@ -148,3 +148,6 @@ Chcete-li nakonfigurovat odpověď API dostupnosti produktu, postupujte takto.
 [Použití nastavení zásob](inventory-settings.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

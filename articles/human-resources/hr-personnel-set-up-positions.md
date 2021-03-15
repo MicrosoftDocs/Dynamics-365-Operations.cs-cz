@@ -67,3 +67,6 @@ Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice 
 30. V poli Oddělení zadejte nebo vyberte hodnotu.
 31. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

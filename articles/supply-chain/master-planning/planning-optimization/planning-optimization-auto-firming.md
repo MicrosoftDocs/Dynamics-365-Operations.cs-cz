@@ -66,3 +66,6 @@ Optimalizaci plánování i plánovací modul, který je integrovaný v Microsof
 - Automatické potvrzení je založeno na datu požadavku (koncové datum).
 - Chcete-li zajistit, aby byly příkazy potvrzeny včas, musí být ochranná doba potvrzení delší než doba realizace.
 - Chcete-li potvrdit všechny objednávky, které musí být zahájeny v aktuálním týdnu, musí být ochranná doba potvrzování doba realizace plus jeden týden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

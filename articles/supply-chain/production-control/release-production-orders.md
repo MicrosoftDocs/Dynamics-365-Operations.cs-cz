@@ -63,3 +63,6 @@ Práce pro výdej surovin je vytvořena v průběhu uvolnění. Práce je genero
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

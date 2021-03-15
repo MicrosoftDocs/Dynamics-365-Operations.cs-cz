@@ -55,3 +55,6 @@ Pokud došlo ke ztrátě nebo poškození položky, vložte záznam o fiktivním
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

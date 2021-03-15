@@ -66,3 +66,6 @@ Tento postup slouží k vytváření a přiřazení zásady přidělení náklad
 5. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
 6. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

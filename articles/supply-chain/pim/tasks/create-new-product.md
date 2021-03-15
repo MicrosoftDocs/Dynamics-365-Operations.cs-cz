@@ -42,3 +42,6 @@ Toto téma popisuje, jak vytvořit nový sdílený produkt. Obvykle jej má na s
 3. V poli **Skupina sledovací dimenze** zadejte nebo vyberte hodnotu. Skupina sledovací dimenze určuje, které sledovací dimenze je nutné zadat pro jednotlivé transakce produktu, a jakým způsobem budou zpracovány ve skladu.  
 4. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

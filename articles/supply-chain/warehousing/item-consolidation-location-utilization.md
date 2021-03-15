@@ -207,3 +207,6 @@ Následující scénář používá k vytvoření inventáře aplikaci skladu na
 
     > [!NOTE]
    > Systém vytvoří jedno pracovní ID pro každý pohyb, který musí být dokončen. Pokud určíte místo, které již obsahuje zásoby, vytvoří se pouze jedno ID práce. Pokud zadáte nové místo, vytvoří se dvě ID práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

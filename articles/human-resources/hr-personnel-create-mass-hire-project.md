@@ -48,3 +48,6 @@ Tento postup vás provede nastavením procesu hromadného zařazování zaměstn
     * Volitelně vyberte Oddělení pro nové pozice.  
 13. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

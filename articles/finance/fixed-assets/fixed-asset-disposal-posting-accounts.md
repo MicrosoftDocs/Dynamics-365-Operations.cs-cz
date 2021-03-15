@@ -42,3 +42,6 @@ Transakce vyřazení pro položku dlouhodobého majetku ve fondu majetku s nízk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

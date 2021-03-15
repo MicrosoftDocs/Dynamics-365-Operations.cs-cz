@@ -621,3 +621,6 @@ Pro sklad 51 jste nastavili data práce a místa, aby se zajistilo, že bude aut
 
 > [!NOTE]
 > Zvažte přidání položky kvality do položky nabídky mobilního zařízení, kde je zobrazen kód aktivity *Zobrazit otevřený seznam úkolů*. Příklad naleznete v položce nabídky mobilního zařízení s názvem **Pracovní seznam** v ukázkových datech. Nejprve přidejte třídu práce *Objednávka kvality* do uživatelem řízené položky nabídky, protože tato třída práce je požadována pro práci, která se má zobrazit v pracovním seznamu. Poté přidejte pracovní třídu *Objednávka kvality* do položky nabídky **Pracovní seznam**. Uživatelé, kteří mají přístup k pracovnímu seznamu, budou moci vyskladnit a zpracovat práci, která je automaticky generována ověřením objednávky kvality.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

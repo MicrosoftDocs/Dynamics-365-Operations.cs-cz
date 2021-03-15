@@ -70,3 +70,6 @@ Pokud ručně nebo automaticky vytváříte servisní zakázky v řádku servisn
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

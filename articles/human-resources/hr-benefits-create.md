@@ -53,3 +53,6 @@ Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které bu
 6. Do pole Platnost zadejte datum a čas.
 7. Klikněte na možnost Vytvořit zaměstnaneckou výhodu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

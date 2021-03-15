@@ -42,3 +42,6 @@ Toto téma popisuje, jak klasifikovat produkt pomocí hierarchií kategorií. Po
 11. V poli **Kategorie** zadejte nebo vyberte hodnotu.
 12. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

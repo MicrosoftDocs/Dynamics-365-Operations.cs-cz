@@ -59,3 +59,6 @@ To je užitečné v případě, že chcete získat přehled o očekávané spot�
 8. Chcete-li zobrazit produkt, sklad nebo sledovací dimenze související s položkami, klikněte na tlačítko **Zobrazit dimenze**. Zvolte příslušná zaškrtávací políčka a klikněte na tlačítko **OK**.
 
 ![Obrázek č. 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

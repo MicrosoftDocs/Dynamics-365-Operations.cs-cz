@@ -96,3 +96,6 @@ Chcete-li upravit metadata stránky, postupujte takto.
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
 
 [Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

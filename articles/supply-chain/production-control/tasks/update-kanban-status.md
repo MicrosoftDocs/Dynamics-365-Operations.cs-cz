@@ -47,3 +47,6 @@ Pokud dojde omylem k vyprázdnění kanbanu nebo přijatý kanban musí být pr�
 2. Označte v seznamu vybraný řádek.
     * Všimněte si, že stav manipulační jednotky je Vyprázdněno.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

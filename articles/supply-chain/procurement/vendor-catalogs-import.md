@@ -69,3 +69,6 @@ Soubor šablony pro import katalogu je soubor průmyslového standardu XSD, kter
 3. V dialogovém okně **Uložit jako** vyberte umístění, do kterého chcete šablonu souboru s katalogem uložit a soubor uložte.
 
 Další informace a příklady naleznete v tomto příspěvku blogu: [Katalogy dodavatele v aplikaci Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

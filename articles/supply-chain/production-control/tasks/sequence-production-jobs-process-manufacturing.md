@@ -70,3 +70,6 @@ Tento postup používá barevné výrobky jako příklad popisující to, jak se
 8. Použijte rychlý filtr k filtrování v poli Číslo položky na základě hodnoty P300.
     * Všimněte si, že objednávky nyní jsou seřazeny podle priority barev a velikostí, a plánované objednávky začínají k prvnímu datu objednání a datu dodání. Ověřte údaje ve sloupci Datum objednávky nebo Počáteční datum v okně s fakty Podrobnosti plánu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

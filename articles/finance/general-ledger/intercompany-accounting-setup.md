@@ -49,3 +49,6 @@ Vzájemný vztah lze snadno nastavit na stránce **Mezipodnikové účetnictví*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

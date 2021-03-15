@@ -125,3 +125,6 @@ Pokud nemáte přístup ke stránkám, které se používají k dokončení toho
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

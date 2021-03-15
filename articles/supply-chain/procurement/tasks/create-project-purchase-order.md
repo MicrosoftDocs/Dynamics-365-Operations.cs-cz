@@ -47,3 +47,6 @@ Tento postup ukazuje způsob vytváření nákupní objednávky projektu. Tato �
     * Ověřte, že prodejní a nákladové ceny jsou k dispozici. Pokud nejsou k dispozici, ale jsou povinné, zadejte tyto informace.  
 14. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

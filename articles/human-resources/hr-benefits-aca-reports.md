@@ -87,3 +87,6 @@ Pokud potřebujete hlásit kryté osoby, protože poskytujete pojištěné osoby
 
 > [!NOTE]
 > Pouze plány dávek označené jako **hlásitelné ACA** zobrazit v okně dotazu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

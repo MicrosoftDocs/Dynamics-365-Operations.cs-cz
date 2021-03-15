@@ -229,3 +229,6 @@ O aktualizaci transakčních vztahů se můžete ujistit také takto:
 - Možnost **Rozdělit množství do nového nákladu** funguje také tehdy, když jsou některá ze zbývajících záhlaví ve stavu *V procesu*. Funkci proto můžete používat, i když pracovníci již provádějí příkazy k výdeji.
 - Pokud vyberete možnost **Stornovat nedodané množství**, zatímco ještě existuje práce ve stavu *Otevřená* nebo *Probíhající*, zobrazí se následující chybová zpráva: „Nelze stornovat zbývající množství pro naložení. Existuje práce pro nakládání.“
 - Pokud vyberete možnost **Stornovat nedodané množství**, když již nezbývá žádná práce, ale existují neexpedované řádky nákladu, zobrazí se následující chybová zpráva: „Zásilku nelze načíst, protože množství u položky překračuje procento definované pro dodávku.“ Chcete-li se této chybě vyhnout, můžete nastavit procentuální hodnotu **V dodávce** na nerealizovaném řádku nákladu na 100 procent. Nerealizované řádky nebudou přesunuty do nového nákladu, ale aktuální náklad bude potvrzen jako „v dodávce“. V takovém případě nebudete moci původní objednávku znovu uvolnit. Proto bude třeba věc vyřešit jiným postupem.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

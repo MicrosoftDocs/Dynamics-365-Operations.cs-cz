@@ -48,3 +48,6 @@ Tato procedura vás provede postupem, jak vytvořit a zpracovat cross docking k 
 15. Vyhledejte a vyberte na seznamu sklad, který obdržel produkty.
 16. Klikněte na objednávku, abyste zobrazili objednávky, které byly vytvořeny pro vybraný sklad.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

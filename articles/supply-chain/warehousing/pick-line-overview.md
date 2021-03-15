@@ -68,3 +68,6 @@ Chcete-li nastavit položku nabídky mobilního zařízení a poskytnout tak př
     - Použijte zbývající pole **Zobrazit pole** pro přidání až sedmi dalších polí zobrazení, jak požadujete. V každém poli **Zobrazit pole** vyberte název pole řádku práce. Každý řádek poté zobrazí hodnotu pro toto pole. Hodnoty se zobrazí v pořadí, které zde vyberete. Můžete nachat některá z polí **Zobrazit pole** prázdná, pokud nevyžadujete všech sedm hodnot.
 
 1. V podokně akcí vyberte **Uložit** a pak vyberte stránku **Seznam polí**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

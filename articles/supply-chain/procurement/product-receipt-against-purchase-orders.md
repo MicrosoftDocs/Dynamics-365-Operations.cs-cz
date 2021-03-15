@@ -68,3 +68,6 @@ Přístup k této stránce je pomocí skupiny akci **Příjem** na stránce **N�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

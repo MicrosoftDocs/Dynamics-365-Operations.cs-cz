@@ -120,3 +120,6 @@ Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupuj
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

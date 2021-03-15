@@ -59,3 +59,6 @@ ms.locfileid: "4966023"
 [Šablony servisu](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

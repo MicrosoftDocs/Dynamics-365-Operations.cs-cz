@@ -62,3 +62,6 @@ Tato příručka pro vývojáře poskytuje odkaz na rozhraní API a vlastní pol
 - [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)
 - [Průvodce správce](hr-admin-overview.md)
 - [Uživatelská příručka](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

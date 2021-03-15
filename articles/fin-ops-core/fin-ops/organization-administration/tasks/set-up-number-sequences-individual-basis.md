@@ -40,3 +40,6 @@ Toto téma vysvětluje nastavení číselných řad na jednotlivém základě. �
 8. Rozbalte sekci **Obecné**. Na pevné záložce Obecné určete, zda je číselná řada manuální a souvislá nebo nesouvislá. Navíc zadejte nejnižší a nejvyšší čísla, která lze použít v číselné řadě. Nedoporučujeme nesouvislou číselnou řadu změnit na souvislou číselnou řadu. Číselná řada nebude skutečně souvislá. Tato změna může způsobit narušení duplicitního klíče v databáze. Navíc souvislé číselné řady mají větší vliv na výkon.   
 9. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

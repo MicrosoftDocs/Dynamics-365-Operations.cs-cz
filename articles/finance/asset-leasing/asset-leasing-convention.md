@@ -50,3 +50,6 @@ Chcete-li zobrazit nebo přiřadit konvenci leasingu, postupujte takto.
 3. Zvolte **Uložit**.
 
 Když je vytvořen leasing, datum zahájení každé knihy se automaticky zadá na základě data zahájení, které je zadáno pro leasing, a leasingové konvence, která je pro knihu zadána.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

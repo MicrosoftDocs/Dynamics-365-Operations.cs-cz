@@ -32,3 +32,6 @@ Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro faktu
 
 > [!NOTE]
 > Ověřte, že pole **Specifikace DPH** je nastaveno na **Měna registrace** nebo **Měna registrace a společnosti** na stránce **Nastavení formuláře** na kartě **Obecné** (**Pohledávky > Nastavení > Formuláře > Nastavení formuláře** nebo **SPráva a účetnictví projektu > Nastavení > Formuláře > Nastavení formuláře**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

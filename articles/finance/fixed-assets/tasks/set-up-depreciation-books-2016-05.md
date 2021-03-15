@@ -54,3 +54,6 @@ Tento postup prochází procesem vytvoření nové knihy odpisů a jejím přidr
 6. Zadejte číslo do pole Doba životnosti.
     * Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

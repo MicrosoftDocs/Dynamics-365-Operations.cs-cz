@@ -204,3 +204,6 @@ Další informace týkající se aktivace zahrnují informaci o tom, který prac
 ### <a name="client-data-synchronization"></a>Synchronizace dat klienta
 
 Všechny změny v klientovi POS s výjimkou změn ve stavu aktivace zařízení musí synchronizovány s databázi kanálu, jinak se neprojeví. Chcete-li synchronizovat změny s databází kanálů, přejděte do nabídky **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Plán distribuce** a spusťte požadovaný plán distribuce. V případě klientských změn spouštějte plány distribuce **Pokladny** a **Konfigurace kanálu**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

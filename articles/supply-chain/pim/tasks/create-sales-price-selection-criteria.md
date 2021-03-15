@@ -53,3 +53,6 @@ Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro mod
 4. V poli Kritéria vyberte Skupina odběratelů 10. 
 5. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

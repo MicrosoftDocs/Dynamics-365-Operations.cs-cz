@@ -59,3 +59,6 @@ Při používání skupin publikování s experimenty je třeba brát v úvahu n
 
 ## <a name="next-step"></a>Další krok
 [Spuštění a monitorování experimentu](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

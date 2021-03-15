@@ -109,3 +109,6 @@ Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální
 
 Další informace o nadcházejících změnách najdete v části [Co je nového nebo co se změnilo ohledně duálního zápisu](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

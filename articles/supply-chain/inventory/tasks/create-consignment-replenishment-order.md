@@ -61,3 +61,6 @@ Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávk
 3. Vyberte **Přehled**. Položky, které byly přijaty jako zásoby dodávky ve vlastnictví dodavatele, jsou k dispozici na skladě. Zbývající množství na objednávce doplnění stavu zásob dodávky je uvedeno v poli **Celkem objednáno**.  
 4. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

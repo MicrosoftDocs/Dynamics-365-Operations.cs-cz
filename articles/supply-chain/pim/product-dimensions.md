@@ -145,3 +145,6 @@ Dimenze verze funguje jako ostatní dimenze produktu. Vzhledem ke své specifick
 
 > [!IMPORTANT]
 > Pokud zapnete a použijete dimenzi verze, některá řešení, která odkazují na rozměry inventáře, přestanou fungovat podle očekávání. Chcete-li tyto problémy potvrdit a opravit, obraťte se na nezávislého dodavatele softwaru (ISV) ohledně řešení, kterých se to týká. Další informace viz [Povelte dimenzi verze](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

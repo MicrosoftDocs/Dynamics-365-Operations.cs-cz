@@ -157,3 +157,6 @@ Další zdroje
 [Definování přístupových práv pro kontrolory objektů nákladů](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

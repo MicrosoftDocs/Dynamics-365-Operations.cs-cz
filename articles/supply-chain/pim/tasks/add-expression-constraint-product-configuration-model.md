@@ -50,3 +50,6 @@ Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konf
 4. Klikněte na tlačítko Zavřít.
 5. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

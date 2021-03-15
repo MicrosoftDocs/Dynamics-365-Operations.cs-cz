@@ -129,3 +129,6 @@ Následující seznam obchodních dokumentů je řízen funkcí **Směrovat výs
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Změny rozhraní API architektury elektronického výkaznictví pro Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

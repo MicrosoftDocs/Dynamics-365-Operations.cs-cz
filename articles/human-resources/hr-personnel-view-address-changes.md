@@ -128,3 +128,6 @@ Když vyberete **Změny adresy** na nové stránce se zobrazí podrobnosti o vš
 > Pokud chcete dostávat upozornění nebo e-maily o těchto změnách adresy, můžete vytvořit nové pravidlo upozornění na kartě **Možnosti** v podokně akcí. Další informace o tom, jak vytvářet pravidla upozornění, naleznete v tématu [Vytvoření nových pravidel upozornění](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
 > Pokud chcete nakonfigurovat pracovní postup pro změny adresy, můžete vybrat pravidlo **Odeslat externě** v pravidlu upozornění a poté použít Power Automate ke spuštění obchodní události a konfigurace pracovního postupu. Další informace naleznete v tématu [Upozornění jako obchodní události](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

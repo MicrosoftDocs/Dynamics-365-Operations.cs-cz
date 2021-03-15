@@ -411,3 +411,6 @@ Konfigurační soubor se nachází ve složce **Konfigurace** projektu rozšíř
 
 - **Adresa koncového bodu** – adresa URL služby daňové registrace.
 - **Časový limit** – doba v milisekundách, po kterou bude čekat ovladač na odpověď od služby daňové registrace.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

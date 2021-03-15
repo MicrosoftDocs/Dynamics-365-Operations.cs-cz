@@ -61,3 +61,6 @@ Tato procedura vás provede vyhledáním odběratele vytvořením nové objedná
 
 [Změna způsobu dodání v POS](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

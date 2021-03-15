@@ -214,3 +214,5 @@ Manažeři mohou zobrazit všechny cíle pro svůj tým prostřednictvím dlažd
 Na kartě **Přezkoumání** je uveden přehled přezkoumání zaměstnance v příslušných stavech: **Probíhá**, **Připraveno k přezkoumání** a **Konečné přezkoumání**. Chcete-li získat přístup k přezkoumání zaměstnance, vyberte tlačítko **Podrobnosti** a pak vyberte přezkoumání, na nichž se chcete podílet. Na základě toho, kde je přezkoumání v rámci procesu workflowu, můžete zjistit, zda je přezkoumání k dispozici pro aktualizaci. 
 
 Všechna přezkoumání pro svůj tým můžete zobrazit prostřednictvím dlaždice **Přezkoumání výkonnosti týmu** v části **Souhrn** pro **Můj tým**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

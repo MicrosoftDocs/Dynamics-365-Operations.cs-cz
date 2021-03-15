@@ -45,3 +45,6 @@ Toto téma vysvětluje, jak vytvořit metodu platby pro platby odběratelů. Ten
 15. Na kartě **Atributy platby** definujte, které atributy platby chcete použít pro tuto metodu platby.
 16. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

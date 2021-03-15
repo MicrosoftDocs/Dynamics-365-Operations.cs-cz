@@ -60,3 +60,6 @@ Vytvořte základní produkt pro předem definované varianty. K vytvoření to
 10. Klikněte na možnost **Uložit**.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

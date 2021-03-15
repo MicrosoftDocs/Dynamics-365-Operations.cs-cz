@@ -66,3 +66,5 @@ Náborové projekty vám umožňují spravovat proces náboru. Po vytvoření n�
 32. Vyberte **Stav náborového projektu**.
 33. Vyberte **Spustit**. Stav **Zahájeno** znamená, že je projekt připraven přijímat žádosti.  
 34. Vyberte **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

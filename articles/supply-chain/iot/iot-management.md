@@ -61,3 +61,6 @@ Můžete simulovat signály výrobního stroje. Další informace naleznete v t�
 + [Připojení IoT DevKit AZ3166 k centru Azure IoT](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Připojení online simulátoru Raspberry Pi k centru Azure IoT (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Přehled akcelerátoru řešení simulace zařízení](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

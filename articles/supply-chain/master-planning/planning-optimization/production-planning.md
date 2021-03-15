@@ -83,3 +83,6 @@ Pro scénáře plánování, které zahrnují produkci, doporučujeme vyhnout se
 I když jsou závislé podřízené položky automaticky detekovány a zahrnuty do hlavních běhů plánování, když je použit integrovaný hlavní plánovací stroj, Optimalizace plánování tuto akci neprovede.
 
 Například pokud se k výrobě produktu B použije také jeden šroub ze struktury kusovníku produktu A, musí být do filtru zahrnuty všechny produkty ve struktuře kusovníku produktů A a B. Protože to může být velmi složité, aby bylo zajištěno, že všechny produkty jsou součástí filtru, doporučujeme, abyste se vyhnuli filtrovaným hlavním plánovacím běhům, když jsou zahrnuty výrobní zakázky.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Přidali jsme informace o metadatech do tabulky záznamů Intrastat.
 3.    Klikněte na tlačítko **OK**. 
     
 Vytvořená konfigurace metadat elektronického výkaznictví byla uložena jako soubor XML, který lze importovat do RCS a použít jako zdroj informací o metadatech pro obchodní doménu zahraničního obchodu v aplikaci. Na základě těchto informací můžeme určit mapování mezi metadaty aplikací a datovým modelem elektronického výkaznictví.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

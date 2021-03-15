@@ -63,3 +63,6 @@ Toto téma vás provede nastavením programu trvání (označovaném také jako 
     * Když je prostřednictvím kontaktního střediska prodáno zboží, z vybraného programu trvání se aplikuje další obchodní logika.  
 7. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

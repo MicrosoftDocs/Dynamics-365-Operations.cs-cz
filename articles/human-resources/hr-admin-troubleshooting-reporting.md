@@ -49,3 +49,6 @@ Uživatel nemůže přizpůsobit integrované sestavy Microsoft Power BI.
 **Dlouhodobé řešení**
 
 Další možnosti Power BI budou k dispozici a více dat a entit se stane součástí Dataverse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

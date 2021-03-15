@@ -102,3 +102,6 @@ Pokud uživatelé chtějí vymazat blokování a provést ještě další změny
 ## <a name="reporting-options"></a>Možnosti vykazování
 
 Přejděte na **Maloobchod a velkoobchod** \> **Dotazy a sestavy** \> **Sestavy kontaktního střediska** \> **Sestavy blokování objednávky** a spusťte sestavu týkající se blokování objednávek podle rozsahu dat, kódu blokování nebo jiných souvisejících kritérií.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

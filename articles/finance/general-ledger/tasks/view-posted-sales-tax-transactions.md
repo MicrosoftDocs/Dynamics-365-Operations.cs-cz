@@ -48,3 +48,6 @@ V tomto tématu jsou popsány některé způsoby zobrazení zaúčtovaných tran
 2. V podokně akcí klikněte na možnost **Kód prodejní daně**.
 3. Vyberte **Zaúčtovaná DPH**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

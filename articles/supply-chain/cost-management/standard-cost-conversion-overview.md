@@ -101,3 +101,6 @@ Hlášení **Výkaz analýzy odchylek** umožňuje analyzovat odchylky přeceně
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

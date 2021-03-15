@@ -109,3 +109,6 @@ Chcete-li zkontrolovat historii výrobních úloh, které byly zpracovány na je
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Výrobní centrum pro úlohu procesoru zprávy jednotky škálování
 
 Úloha _Výrobní centrum pro procesor zpráv jednotky škálování_ zpracovává data z centra do jednotky škálování. Tato úloha se automaticky spustí, když je nasazena úloha provedení. Můžete jej však kdykoli spustit ručně tak, že přejdete na **Kontrola výroby \> Pravidelné úkoly \> Správa úlohy backoffice \> Výrobní centrum pro škálování procesorů zpráv jednotky**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

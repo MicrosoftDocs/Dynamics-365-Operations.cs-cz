@@ -164,3 +164,6 @@ Chcete-li spustit rámcovou verzi upravitelného formátu, musíte ji nastavit j
 
 - [Návrh nové konfigurace ER pro generování sestav ve formátu Word](../er-design-configuration-word.md)
 - [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

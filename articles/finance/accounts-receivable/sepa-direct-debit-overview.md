@@ -83,3 +83,6 @@ V obou schématech inkasa SEPA mají odběratelé určitá práva na refundaci. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

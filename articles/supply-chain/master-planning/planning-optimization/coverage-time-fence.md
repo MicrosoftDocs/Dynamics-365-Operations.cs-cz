@@ -85,3 +85,6 @@ Při nastavování ochranných lhůt disponibility zvažte následující body:
 - Mezipodniková poptávka bude ignorována, pokud požadované datum odeslání, které je vypočítáno, není uvnitř ochranné lhůty disponibility. U integrovaného hlavního plánování není mezipodniková poptávka omezena ochrannou lhůtou disponibility.
 - Předpovědi poptávky budou ignorovány, pokud datum rozpočtu není uvnitř ochranné lhůty disponibility. U integrovaného hlavního plánování nejsou prognózy poptávky omezeny ochrannou lhůtou disponibility.
 - Optimalizace plánování zohledňuje časové pásmo. Zvažuje časové pásmo na místech nabídky a poptávky a čas plánování. Například hlavní plánování je spuštěno v 11:00 dne 15. října z webu v Dánsku (GMT + 1 časové pásmo) a je použita ochranná lhůta disponibility deset dnů. V takovém případě je nabídka a poptávka ze stránky v Seattlu (časové pásmo GMT-8) zahrnuta na 2:00 25. října (= deset 24 hodinových dní po spuštění hlavního plánování, minus časový rozdíl devíti hodin). Všimněte si, že vestavěný hlavní plánovací modul bere v úvahu pouze datum ochranné lhůty. Výsledek se proto může lišit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

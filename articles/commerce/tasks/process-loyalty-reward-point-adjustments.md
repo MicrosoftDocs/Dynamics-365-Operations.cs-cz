@@ -49,3 +49,6 @@ Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpra
 15. Klikněte na Transakce karet.
 16. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

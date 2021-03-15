@@ -139,3 +139,6 @@ Na stránce **Transakce dodavatele** April uvidí nový zůstatek 200,00.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

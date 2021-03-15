@@ -94,3 +94,6 @@ Výpočet kusovníku specifický podle objednávky reprezentuje odchylku výpoč
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -812,3 +812,6 @@ Chcete-li se naučit synchronizovat strukturu formátu se šablonou ER v editoru
 [Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md)
 
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

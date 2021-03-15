@@ -69,3 +69,6 @@ Následující ilustrace ukazuje příklad stránky pokladny elektronického obc
 [Modul potvrzení objednávky](order-confirmation-module.md)
 
 [Modul podrobností objednávky](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

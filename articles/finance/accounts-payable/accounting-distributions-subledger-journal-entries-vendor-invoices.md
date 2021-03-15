@@ -249,3 +249,6 @@ Pokud není položka dílčí hlavní knihy správná při zobrazení náhledu n
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

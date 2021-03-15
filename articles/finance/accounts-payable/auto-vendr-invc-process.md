@@ -68,3 +68,6 @@ Pracovní prostor **Zadání faktury dodavatele** vám umožňuje se plně soust
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatizace faktur dodavatele – pokračujte v automatizovaném zpracování více faktur
 Pokud importovaná faktura není úspěšně odeslána do workflowu prostřednictvím automatizovaného procesu, systém ji odebere z dalšího automatizovaného zpracování. Úředník pro závazky může zkontrolovat a upravit fakturu, než ji automatický proces znovu odešle do workflowu. Pokud lze důvod selhání vyřešit stejnou opravou pro více faktur, můžete restartovat automatizovaný proces na stránce **Obnovit automatické zpracování faktur**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

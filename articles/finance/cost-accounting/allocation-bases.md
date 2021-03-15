@@ -429,3 +429,6 @@ Následuje příklad pravidla pro rozdělení nákladů, pokud je v něm jako z�
 |    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × částka  |
 |    CC003    |     IT      | 13,250.00 | (13 250 ÷ 18 162,50) × částka |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

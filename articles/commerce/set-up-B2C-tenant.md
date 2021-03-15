@@ -361,3 +361,6 @@ Nepovinný sekundární účet správce lze přidat do oddílu **Uživatelé** v
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

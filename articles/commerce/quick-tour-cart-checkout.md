@@ -106,3 +106,6 @@ Další informace o tom, jak vytvořit stránku pokladny, naleznete v tématu [
 [Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

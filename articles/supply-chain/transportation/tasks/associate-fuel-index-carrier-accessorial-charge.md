@@ -77,3 +77,6 @@ Tento průvodce popisuje vytvoření přiřazení doplňkové služby, nákladů
 6. Klikněte na odkaz na vybraném řádku v seznamu.
 7. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

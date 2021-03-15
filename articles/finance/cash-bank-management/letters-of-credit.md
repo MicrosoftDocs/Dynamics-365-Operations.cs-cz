@@ -52,3 +52,6 @@ Další informace naleznete v následujících tématech:
 [Vytvoření smlouvy bankovního zařízení pro akreditiv](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

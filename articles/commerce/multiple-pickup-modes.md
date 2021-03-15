@@ -85,3 +85,6 @@ Když je pro kanál k dispozici více způsobů vyzvednutí/doručení, zákazn�
 ## <a name="considerations-for-distributed-order-management"></a>Úvahy nad distribuovanou správou objednávek
 
 Funkce [distribuované správy objednávek (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) v Commerce ignorují všechny řádky prodeje, které jsou označeny pro vyzvednutí v obchodě. Tyto funkce byly aktualizovány, aby zajistily, že řádky prodeje, které jsou propojeny s nakonfigurovanými způsoby vyzvednutí/doručení, obcházejí logiku DOM a nebudou znovu přiděleny novému skladu plnění.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

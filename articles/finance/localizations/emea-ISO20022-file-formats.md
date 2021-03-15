@@ -128,3 +128,6 @@ Další informace o elektronickém výkaznictví naleznete v tématu [Přehled e
 - [Nastavení způsobu platby pro převody kreditu ve formátu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Nastavení způsobu platby pro přímý debet ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

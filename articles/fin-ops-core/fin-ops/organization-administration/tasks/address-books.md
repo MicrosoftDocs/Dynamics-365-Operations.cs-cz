@@ -41,3 +41,6 @@ Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento záz
 7. Kliknutím na šipku přidejte vybrané dostupné týmy do adresáře.
 8. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

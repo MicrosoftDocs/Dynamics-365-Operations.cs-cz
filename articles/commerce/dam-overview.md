@@ -59,3 +59,6 @@ Funkce digitálních materiálů a správy jsou umístěny v konfigurátoru webu
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

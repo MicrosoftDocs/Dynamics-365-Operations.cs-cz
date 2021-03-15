@@ -122,3 +122,6 @@ Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Vyu
 88. Zadejte požadované hodnoty do pole **Hlavní účet**.
 89. Zadejte požadované hodnoty do pole **Protiúčet**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

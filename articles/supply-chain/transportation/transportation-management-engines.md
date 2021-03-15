@@ -98,3 +98,6 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | 3        | Cílové PSČ | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 4        | Cílové koncové PSČ   | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 5        | Cílová země           | Přiřazení | Řetězec    | Země / oblast |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

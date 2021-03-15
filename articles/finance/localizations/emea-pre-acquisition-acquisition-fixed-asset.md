@@ -51,3 +51,6 @@ Předtím, než budete moci zaúčtovat předpořízení, je třeba dokončit to
   > [!NOTE]
   > V parametrech návrhu akvizice / úpravy akvizice můžete nastavit datum v poli **Do data** až do data, kdy jsou vybrány transakce před akvizicí.
   > Tato funkce je k dispozici ve verzi 10.0.17 nebo novější.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

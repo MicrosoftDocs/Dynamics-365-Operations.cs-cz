@@ -298,3 +298,6 @@ Seznam konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globáln
 
 - [Vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

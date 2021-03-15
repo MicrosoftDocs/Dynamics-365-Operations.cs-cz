@@ -166,3 +166,6 @@ Proces zpracování rabatů dodavatele zahrnuje více úloh ručního sledován�
 - Generování přesných nároků na rabat
 - Časové rozlišení očekávaných pohledávek a dočasného zisku v hlavní knize
 - Aktualizace zůstatku dodavatele a výsledovky se splatnou úhradou
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

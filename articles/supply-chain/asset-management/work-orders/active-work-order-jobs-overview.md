@@ -42,3 +42,6 @@ Na následujícím obrázku je uveden příklad stránky **Aktivní práce údr�
 
 Stručný popis tlačítek na stránce se seznamem **Aktivní úlohy údržby pracovního příkazu** naleznete v [úvodu k pracovním příkazům](../work-orders/introduction-to-work-orders.md), ve kterém jsou popsána stejná tlačítka.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

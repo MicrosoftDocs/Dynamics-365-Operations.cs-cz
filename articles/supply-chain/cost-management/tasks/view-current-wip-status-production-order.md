@@ -37,3 +37,6 @@ Tato procedura ukazuje, jak u výrobní zakázky zobrazit výkaz nedokončené v
 6. V poli Datum od nastavte datum a čas na „2012-12-01“ .
 7. V poli Datum do nastavte datum a čas na „2012-12-31“ .
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

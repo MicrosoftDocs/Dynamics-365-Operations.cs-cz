@@ -84,3 +84,6 @@ Toto téma popisuje konfiguraci základního inventurního procesu vytvořením 
 5. V rozevírací nabídce pole **Skupina inventury** vyberte skupinu inventury. Můžete vybrat konkrétní inventurní skupinu, která má být použita pro položku v určitém skladu, který jste vybrali. Při provádění inventury skladu tato zásada inventury přepíše hlavní zásady inventury pro položku.  
 6. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

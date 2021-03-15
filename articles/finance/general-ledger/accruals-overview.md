@@ -45,3 +45,6 @@ Jakmile vstoupíte do deníku, můžete kliknout na volbu **Časové rozlišení
 
 
 Další informace naleznete v tématu [Vytvoření schémat časového rozlišení](tasks/create-accrual-schemes.md) a [Vytvoření transakcí časového rozlišení hlavní knihy](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Namísto toho, abyste museli na konci procesu přidělení shrnout poptávku a p
 |   Směrnice skladového místa   |                                                       Směrnice umístění jsou nezbytné, aby bylo možné provést práci v umístění, které vyžaduje doplnění, a v umístění, ze kterého zásoby pochází.                                                        |
 |     Šablony práce      |                                                   Šablony práce typu <strong>Doplnění</strong> jsou nutné pro vytvoření doplnění, a aby bylo možné zásoby přenášet do požadovaného umístění.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

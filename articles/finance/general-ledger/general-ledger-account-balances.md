@@ -50,3 +50,6 @@ Další informace naleznete v tématu [Zobrazení finančních sestav](view-fina
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

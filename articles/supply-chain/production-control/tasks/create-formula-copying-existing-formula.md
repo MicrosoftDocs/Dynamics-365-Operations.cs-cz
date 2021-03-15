@@ -56,3 +56,6 @@ Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z ně
 3. Klikněte na tlačítko OK.
 4. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

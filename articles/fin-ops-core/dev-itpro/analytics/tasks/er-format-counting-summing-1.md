@@ -56,3 +56,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 8. Ve stromovém zobrazení rozbalte „Modul Intrastat“.
 9. Ve stromové struktuře vyberte Modul Intrastat\Intrastat (DE).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

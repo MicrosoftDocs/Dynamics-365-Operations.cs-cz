@@ -71,3 +71,6 @@ Inventury mohou být plánované nebo neplánované. Plánované počty zásob s
 ## <a name="inventory-lookup"></a>Vyhledávání zásob
 
 Na stránce **Vyhledávání zásob** lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Vyberte obchod, pro který chcete zobrazit množství dostupném pro slíbení, a pak vyberte **Zobrazit dostupnost obchodu**. Informace o dostupných konfiguračních možnostech naleznete v části [Výpočet dostupnosti zásob pro maloobchodní kanály](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

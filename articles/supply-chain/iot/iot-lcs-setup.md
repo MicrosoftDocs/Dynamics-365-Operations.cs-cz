@@ -55,3 +55,6 @@ Nastavení LCS je nyní dokončeno. Dalším krokem je [nastavení scénáře](i
 2. V LCS přejděte k podrobnostem prostředí Supply Chain Management .
 3. Přejděte do části **Doplňky prostředí**.
 4. Vyberte **Odinstalovat** pro doplněk IoT Intelligence.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

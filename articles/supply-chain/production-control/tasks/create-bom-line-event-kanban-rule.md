@@ -82,3 +82,6 @@ Tato úloha je zaměřena na nastavení potřebné k vytvoření kanbanového pr
     * Všimněte si kanbanu vytvořeného pro dodání zboží M0001 pro odhadovanou výrobní zakázku.  
     * Poslední krok!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

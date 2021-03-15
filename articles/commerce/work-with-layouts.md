@@ -108,3 +108,6 @@ Po zobrazení náhledu změn v rozvržení přednastavených položek můžete p
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Práce se šablonami](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

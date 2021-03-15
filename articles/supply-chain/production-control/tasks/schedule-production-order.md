@@ -54,3 +54,6 @@ Tato procedura popisuje způsob plánování výrobní zakázky. K vytvoření 
 6. Zavřete stránku.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Po provedení registrace pro zhodnocení stavu majetku můžete vytisknout sesta
 
 >[!NOTE]
 >Vyhodnocení podmínky můžete také zaregistrovat v pracovním příkazu (tlačítko **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** > **Vyhodnocení podmínky**.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

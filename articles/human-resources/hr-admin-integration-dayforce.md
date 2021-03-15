@@ -676,3 +676,6 @@ Zaměstnanci mohou deklarovat informace o cestovním pasu. Tato informace je typ
 
 Zaměstnanec může deklarovat více identifikačních čísel typu identifikace **Pas**. Do aplikace Dayforce se integruje pouze zadání aktuálního aktivního pasu. Po uplynutí platnosti všech zadání pasu se integruje do Dayforce ten, který byl naposledy vydán.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

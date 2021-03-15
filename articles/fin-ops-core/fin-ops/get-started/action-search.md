@@ -75,3 +75,6 @@ V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardníh
 ## <a name="action-search-vs-navigation-search"></a>Vyhledávání akcí versus hledání navigace
 
 Akce hledání je určena k vyhledání a spuštění akcí na stránce. Existuje i samostatný mechanismus vyhledávání pro vyhledávání a navigaci na stránky. Další informace o této funkci naleznete v článku [Hledání navigace](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

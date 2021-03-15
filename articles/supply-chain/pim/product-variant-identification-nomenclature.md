@@ -197,3 +197,6 @@ Během jednoho kroku procesu konfigurace systém navrhne hodnotu konfigurace pod
 
 [Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

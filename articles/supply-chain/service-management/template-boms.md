@@ -133,3 +133,6 @@ Chcete-li používat kusovníky šablony, je nutné nastavit dvě číselné řa
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

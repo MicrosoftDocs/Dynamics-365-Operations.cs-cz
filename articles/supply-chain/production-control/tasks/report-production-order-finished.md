@@ -51,3 +51,6 @@ Tato procedura popisuje způsob nahlásit výrobní zakázky jako dokončenou. K
 4. Klikněte na odkaz na vybraném řádku v seznamu.
     * Je zaúčtován Deník dokončené výroby. Podle potřeby můžete v deníku provádět úpravy, můžete ručně vytvořit nový deník, kde můžete provádět změny.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

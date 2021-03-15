@@ -116,3 +116,6 @@ Tyto dva skladové deníky podporují pouze scénář *Inicializovat sklad* scé
 ## <a name="additional-resources"></a>Další zdroje
 
 [Datové entity](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

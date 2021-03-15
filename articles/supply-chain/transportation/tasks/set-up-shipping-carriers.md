@@ -72,3 +72,6 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 9. V poli **Modul mezioperačního času** vyberte z rozevírací nabídky požadovanou možnost.
 10. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

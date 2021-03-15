@@ -169,3 +169,6 @@ Pracovníci mohou otevřít dokument připojený k úloze výběrem volby **Poky
 1. Pracovník se s pomocí průvodce naučí danou úlohu.
 
 Další informace, jak vytvořit, přiřadit a použít průvodce pro HoloLens viz [Poskytnutí průvodce hybridní reality pro pracovníky ve výrobě](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

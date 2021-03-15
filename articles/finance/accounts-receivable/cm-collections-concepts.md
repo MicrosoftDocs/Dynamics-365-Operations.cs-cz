@@ -121,3 +121,6 @@ Můžete zpracovat platby NFP volbou možnosti **Platba NFP** na stránce **Inka
 [Blokování úvěru pro prodejní objednávky](./cm-sales-order-credit-holds.md)
 
 [Periodické úkoly správy úvěru odběratelů](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

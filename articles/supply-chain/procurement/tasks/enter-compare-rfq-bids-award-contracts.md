@@ -106,3 +106,6 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Zobrazení generované nákupní objednávky
 
 V podokně akcí na kartě **Obecné** zvolte **Nákupní objednávka**. Zobrazená stránka ukáže nákupní objednávku, která byla vygenerována po přijetí nabídky.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

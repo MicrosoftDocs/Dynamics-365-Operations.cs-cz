@@ -45,3 +45,6 @@ Poté, co náborový pracovník vytvoří projekt hromadného zařazování zam�
 8. Odznačte vybraný řádek na seznamu.
     * Vyberte další pozici projektu a pokračujte v zapisování údajů o pracovníkovi pro každou osobu, kterou chcete zařadit.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

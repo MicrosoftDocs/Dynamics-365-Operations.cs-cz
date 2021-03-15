@@ -79,3 +79,6 @@ Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 - [Definování workflowů pracovních postupů pro nákupní žádanky](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Workflow nákupní žádanky](purchase-requisitions-workflow.md)
 - [Nábor dodavatelů](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

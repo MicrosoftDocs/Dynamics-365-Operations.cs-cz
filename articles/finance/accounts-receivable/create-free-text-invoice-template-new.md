@@ -67,3 +67,6 @@ Pro tuto ukázku použijte ukázkovou společnost USMF. Tento postup je určen p
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Uložení volné faktury jako šablony
 Můžete také uložit existující volnou fakturu jako šablonu. Když zvolíte na kartě Faktura možnost Uložit jako šablonu, zadejte název a popis šablony. Když šablona s názvem již existuje, zobrazí se upozornění, že šablona s tímto názvem již existuje. Můžete ji stále nahradit kliknutím na OK. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

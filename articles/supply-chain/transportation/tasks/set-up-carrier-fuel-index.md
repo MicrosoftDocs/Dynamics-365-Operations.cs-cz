@@ -66,3 +66,6 @@ Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a ind
 12. Klikněte na odkaz na vybraném řádku v seznamu.
 13. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

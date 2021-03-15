@@ -47,3 +47,6 @@ Weby Dynamics 365 Commerce jsou nejlépe podporovány následujícími webovými
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

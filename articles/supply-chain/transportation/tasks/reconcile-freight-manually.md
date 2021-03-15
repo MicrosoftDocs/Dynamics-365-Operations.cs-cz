@@ -60,3 +60,6 @@ Odsouhlasení faktury dopravce a účtu dopravného provádíte řádek po řád
 5. Klepnutím přejdete na odkaz v poli Číslo referenčního deníku.
 6. Klikněte na položku Řádky.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

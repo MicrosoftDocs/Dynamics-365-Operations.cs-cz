@@ -112,3 +112,6 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízen
 | Všechny vlny | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro zpracování vlny |
 | Pracovní plocha plánování vytížení | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro workbench plánování práce |
 | Podrobnosti o práci | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení stránky s podrobnostmi o práci |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

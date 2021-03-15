@@ -72,3 +72,6 @@ Parametry nastavené v globálním adresáři určují role, které mohou zobraz
     - Chcete-li odeslat obrázek, vyberte možnost **Odeslat nový obrázek**.
     - Chcete-li odebrat obrázek, vyberte jej a pak vyberte **Odebrat**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

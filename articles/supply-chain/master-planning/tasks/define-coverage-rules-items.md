@@ -101,3 +101,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 11. Do pole **Čas nákupu** zadejte hodnotu 5.
 12. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ K dispozici budou následující stránky a položky nabídky související s na
  - **Parametry zahraničního obchodu** (**Daň** > **Nastavení** > **DPH** > **Zahraniční obchod** > **Parametry zahraničního obchodu**). Viz [Nastavení vlastností země/oblasti](#Set-up-Country/region-properties).
 
 Zaškrtávací políčko **Stornovací poplatek** bude k dispozici na stránkách **Skupina DPH** a **Zaúčtovaná DPH**. Další informace najdete v částech [Nastavení skupin DPH a skupin DPH položek](#sales-tax-item-sales-tax-groups), [Stornovací poplatek na prodejní faktuře](#reverse-charge-sale) a [Stornovací poplatek na nákupní faktuře](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

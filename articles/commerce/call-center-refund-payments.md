@@ -108,3 +108,6 @@ Alternativně může organizace nastavit možnost **Povolit přepsání plateb**
 ## <a name="additional-resources"></a>Další prostředky
 
 [Platební metody v kontaktních střediscích](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

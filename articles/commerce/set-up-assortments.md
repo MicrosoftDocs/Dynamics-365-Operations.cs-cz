@@ -54,3 +54,6 @@ Po dokončení požadavků lze vytvořit sortiment a přiřadit jej do vašich p
 2. Vyberte prodejní kanály nebo skupiny vysoké úrovně v prodejních kanálech, na které se sortiment vztahuje.
 3. Přidejte do sortimentu kategorie produktů, jednotlivé produkty nebo varianty produktu. Všechny produkty lze zahrnout do konkrétní kategorie, nebo vyjmout vybrané produkty z kategorie, která je zahrnuta do sortimentu.
 4. Publikujte sortiment. Při publikování sortimentu je automaticky spuštěn plánovač sortimentu. Tento proces generuje seznam produktů. Po dokončení tohoto procesu budou produkty k dispozici pro prodejní kanály, ke kterým je sortiment produktu přiřazen. Pokud jsou provedeny změny v publikovaném sortimentu nebo v prodejních kanálech, ke kterým je sortiment přiřazen, musí být sortiment aktualizován. Pokud chcete aktualizovat sortiment po provedení změn, můžete spustit plánovač sortimentu jako dávkovou úlohu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

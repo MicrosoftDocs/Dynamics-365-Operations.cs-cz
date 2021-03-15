@@ -931,3 +931,6 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 - Historie popisků vlny
 
 U většiny těchto stránek najdete příslušnou funkci výběrem **Vlnové štítky** ve skupině **Související informace** na kartě **Zásilky** v podokně akcí.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

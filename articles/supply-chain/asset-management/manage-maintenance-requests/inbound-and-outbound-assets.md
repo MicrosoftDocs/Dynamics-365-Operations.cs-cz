@@ -70,3 +70,6 @@ Po dokončení úlohy údržby nebo opravy můžete majetek zaregistrovat jako v
 2. Zvolte majetek nebo požadavek na údržbu.
 3. Vyberte **Doručit majetek**.
 4. V poli **Doručeno** zadejte datum a čas. Pak vyberte **OK**. Záznam bude odebrán ze stránky se seznamem **Odchozí majetek**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

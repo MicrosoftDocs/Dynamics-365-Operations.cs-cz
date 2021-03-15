@@ -45,3 +45,6 @@ Tento postup umožňuje náborovým pracovníkům přijmout uchazeče, který po
 15. Rozbalte nebo sbalte oddíl Kontaktní informace.
 16. Rozbalte nebo sbalte oddíl Osobní údaje.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

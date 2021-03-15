@@ -97,3 +97,6 @@ Následující ilustrace znázorňuje příklad výsledného grafu.
 ![Vizualizace stavu zóny a práce](media/work-viz-chart.png "Vizualizace stavu zóny a práce")
 
 Tento graf ukazuje dvě zóny pojmenované **FLOOR** a **BULK** a zónu s názvem **Prázdná**. Zóna **Prázdná** představuje všechny řádky práce, které nejsou členy žádné zóny. Graf vždy zobrazuje všechna nesouvisející filtrovaná data jako **Prázdná**, aby byla zajištěna co největší viditelnost. V zóně **FLOOR** graf ukazuje tři uzavřené čáry a čtyři otevřené čáry. V zóně **BULK** graf ukazuje čtyři uzavřené čáry jednu otevřenou čáru a 24 zrušených čar. Nakonec graf ukazuje osm uzavřených čar, které nejsou součástí žádné zóny, a proto jsou uvedeny jako **Prázdné**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

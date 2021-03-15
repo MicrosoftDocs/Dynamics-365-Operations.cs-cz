@@ -130,3 +130,6 @@ Dokument / deník je nastaven na Částky včetně DPH = Ne Částka řádku tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

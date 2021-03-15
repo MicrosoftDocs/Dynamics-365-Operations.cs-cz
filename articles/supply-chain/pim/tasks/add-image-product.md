@@ -36,3 +36,6 @@ Tato procedura ukazuje, jak přidat obrázek k produktu. Společnost s ukázkov�
 5. Klikněte na položku Nová.
     * Klikněte na tlačítko Procházet. Vyhledejte obrázek, který chcete použít, vyberte jej a potom zavřete dialogové okno.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

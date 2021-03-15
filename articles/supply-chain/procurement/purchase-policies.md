@@ -150,3 +150,6 @@ Pravidlo pro tvorbu nákupní objednávky a konsolidaci poptávky definuje zása
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

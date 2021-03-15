@@ -39,3 +39,6 @@ Náklady pro vyráběnou položku jsou vždy zahrnuty do jednotkových nákladů
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Chcete-li přidat modul pro sdílení na sociálních sítích do modulu buy box
 [Modul buy boxu](add-buy-box.md)
 
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

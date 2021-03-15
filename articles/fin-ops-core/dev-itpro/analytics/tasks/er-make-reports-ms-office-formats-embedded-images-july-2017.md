@@ -90,3 +90,6 @@ K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronic
  30. Vyberte možnost Ano v poli Povolit vytváření verifikačních transakcí v neaktivních bankovních účtech:.  
  31. Klikněte na položku Uložit.  
  32. Zavřete stránku.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

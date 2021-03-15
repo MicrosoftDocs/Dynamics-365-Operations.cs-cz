@@ -239,3 +239,6 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 1. Vyberte **Hotovo**.
 
     ![Přidat přílohu k požadavku na údržbu](media/am-mobile-10.png "Přidat přílohu k požadavku na údržbu")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

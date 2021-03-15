@@ -58,3 +58,6 @@ Nový rozpočet údržby můžete také vytvořit zkopírováním existujícího
 
 > [!NOTE]
 > Rozpočet údržby vypočítá pouze rozpočtové náklady založené na řádcích rozvrhu údržby. Chcete-li vypočítat skutečné náklady pro stejné období, můžete provést výpočet na stránce **Kontrola nákladů majetku**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

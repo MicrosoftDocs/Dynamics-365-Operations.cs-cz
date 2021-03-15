@@ -154,3 +154,6 @@ Vyberte společnost, která je zdrojem konsolidovaných dat, a pak vyberte pravi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

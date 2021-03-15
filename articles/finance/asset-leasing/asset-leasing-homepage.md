@@ -95,3 +95,6 @@ Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](ht
 ### <a name="videos"></a>Videa
 
 Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

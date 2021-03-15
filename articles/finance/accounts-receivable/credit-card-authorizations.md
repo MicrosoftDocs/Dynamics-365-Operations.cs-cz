@@ -79,3 +79,6 @@ Pro anulování autorizace platební karty můžete změnit metodu platby na jin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

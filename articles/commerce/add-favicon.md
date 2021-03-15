@@ -98,3 +98,6 @@ Při náhledu stránek založených na šabloně, do které jste přidali fragme
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

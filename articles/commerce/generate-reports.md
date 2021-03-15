@@ -137,3 +137,6 @@ Chcete-li vygenerovat sestavu **Prodeje organizace**, postupujte následujícím
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Domovská stránka aplikace Commerce](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Chcete-li přidat modul přehrávače videa na novou stránku a nastavit požado
 [Modul textového bloku](add-content-rich-block.md)
 
 [Modul bloku obsahu](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

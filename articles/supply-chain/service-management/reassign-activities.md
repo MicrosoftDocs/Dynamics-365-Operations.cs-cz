@@ -57,3 +57,6 @@ Pomocí následujícího postupu přiřadíte aktivity jinému pracovníkovi:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

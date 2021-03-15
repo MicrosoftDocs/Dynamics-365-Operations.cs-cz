@@ -135,3 +135,6 @@ Ověření sériových čísel také nastane, když uživatel provede operace vy
 [Operace příchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Operace odchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

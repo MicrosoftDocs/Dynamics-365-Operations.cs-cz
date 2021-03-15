@@ -103,3 +103,6 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

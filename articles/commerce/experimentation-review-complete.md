@@ -60,3 +60,6 @@ Chcete-li odstranit experiment v nástroji pro tvorbu obchodních webů, postupu
 
 ## <a name="previous-step"></a>Předchozí krok
 [Spuštění a monitorování experimentu](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

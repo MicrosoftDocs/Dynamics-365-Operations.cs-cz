@@ -143,3 +143,6 @@ Následující pole budou přidána do položky nabídky mobilního zařízení,
 - Výchozí kód důvodů inventury
 - Zobrazit kód důvodů inventury
 - Upravit kód důvodů inventury
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

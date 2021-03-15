@@ -123,3 +123,6 @@ Workflow **Úpravy limitu úvěru** lze použít k odeslání úprav limitu úv
 
 > [!NOTE]
 > Při vytvoření workflow **Úpravy limitu úvěru** můžete workflow nastavit tak, aby se úpravy automaticky zaúčtovávaly po schválení řádků. Pouze do workflow zahrňte úlohu **Automaticky zaúčtovat deník**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

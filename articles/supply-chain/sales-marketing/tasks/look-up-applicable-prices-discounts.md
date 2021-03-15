@@ -59,3 +59,6 @@ Ověřte, že pole Účet odběratele obsahuje číslo odběratele US-001.
     * Jsou zde dvě smlouvy řádkových slev pro produkt T0012, kde je zadána sleva 5 procent pro množství na řádku objednávky od 1 do 10 a 7% sleva na množství objednávky vyšší než 10. Všimněte si, že slevy platí pro skupinu produktů, v tomto příkladu to je kód skupiny 01, do které produkt T0012 patří.  
 4. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

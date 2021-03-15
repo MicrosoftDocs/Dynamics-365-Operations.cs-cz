@@ -58,3 +58,6 @@ Po dokončení konfigurace systému pro použití směnných kurzů DPH, pokud j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

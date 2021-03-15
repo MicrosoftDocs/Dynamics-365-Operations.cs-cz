@@ -67,3 +67,6 @@ Pokud plánujete potvrdit více objednávek najednou, může paralelní proveden
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

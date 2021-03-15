@@ -56,3 +56,6 @@ Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vrá
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

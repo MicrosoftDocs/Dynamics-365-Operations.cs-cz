@@ -83,3 +83,6 @@ Tento průvodce úkolem znázorňuje, jak nastavit parametry pro odpisy a potom 
 5. Klikněte na tlačítko **OK**.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

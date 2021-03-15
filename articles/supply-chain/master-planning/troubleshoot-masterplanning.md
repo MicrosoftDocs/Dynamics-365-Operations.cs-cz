@@ -88,3 +88,6 @@ Jedním ze způsobů, jak zlepšit výkon pomocí integrovaného modulu hlavníh
 
 > [!NOTE]
 > Tím se omezí doba rozpadů provedených pro tento hlavní plán na jeden den.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

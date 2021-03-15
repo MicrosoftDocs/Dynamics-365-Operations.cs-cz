@@ -137,3 +137,6 @@ Postup při zobrazení a práci s Ganttovým grafem:
     - Chcete-li přeplánovat zobrazenou pracovní objednávku, vyberte položku a přetáhněte ji do příslušného nového data a času.
 
 1. Pokud jste provedli změny, vyberte **Uložit** v podokně akcí a uložte je.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

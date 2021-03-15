@@ -112,3 +112,6 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 [Přehled doporučení produktu](product-recommendations.md)
 
 [Modul rychlého zobrazení](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

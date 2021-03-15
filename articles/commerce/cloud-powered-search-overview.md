@@ -81,3 +81,6 @@ Rozšířené třídění v řešení Dynamics 365 Commerce umožňujě zákazn
 [Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání](category-search-page-overview.md)
 
 [Správa metadat SEO](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

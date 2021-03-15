@@ -43,3 +43,6 @@ Další tlačítka na stránce **Nákladové kategorie** poskytují přístup k 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -120,3 +120,6 @@ Kliknutím na tlačítko **Nastavení** můžete upravit informace zobrazené ve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

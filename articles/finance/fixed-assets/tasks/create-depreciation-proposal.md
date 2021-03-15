@@ -47,3 +47,6 @@ Toto téma popisuje způsob dávkové nabídky práce odpisů a vysvětluje post
 3. Vybrat **řádky**.
 4. Zvolte **Zaúčtovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ K vytvoření této procedury jsou použita ukázková data společnosti USMF.
 6. V seznamu vyberte **ID uživatele**. Například 24.
 7. Rozbalte pevnou záložku **Práce**.
 8. Vyberte možnost **Ano** v poli **Povolit ruční opakované přidělení zboží**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

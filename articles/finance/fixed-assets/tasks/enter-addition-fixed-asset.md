@@ -45,3 +45,6 @@ Postup využívá účetní role a ukázková data pro právnické osoby USMF.
     * Nastavte možnost **Prodlužuje dobu životnosti** na **Ano**, pokud příslušenství prodlužuje dobu životnosti majetku.  
     * Toto pole slouží pouze k informačním účelům. Chcete-li prodloužit dobu životnosti, upravte hodnotu Doba životnosti pro Účetní odpisy a/nebo Knihy odpisů pro majetek.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

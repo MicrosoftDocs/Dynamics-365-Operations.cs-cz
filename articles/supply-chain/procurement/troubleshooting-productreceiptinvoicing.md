@@ -109,3 +109,6 @@ Následující postup ukazuje jeden způsob, jak reprodukovat problém.
 ### <a name="issue-resolution"></a>Řešení problému
 
 To závisí na nastavení parametrů pro faktury a skupiny faktur. Další informace najdete v následujícím příspěvku na blogu: [Účtování nákladů nákupu a odchylky zásob](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Následující obrázek znázorňuje příklad uzlu s přidanými skupinami atri
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Správa atributů a skupin atributů](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

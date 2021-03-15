@@ -139,3 +139,6 @@ Uživatel podepisující certifikaci musí po vygenerování dokumentu ručně z
 ### <a name="page-numbers"></a>Čísla stránek
 
 Aktuální stránka a počet stránek vytištěných ve spodní části dokumentu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

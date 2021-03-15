@@ -146,3 +146,6 @@ Následující obrázek ukazuje podrobnosti pro konfigurovaný sklad.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

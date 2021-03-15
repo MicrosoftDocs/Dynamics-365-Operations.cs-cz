@@ -55,3 +55,6 @@ Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Pokud je pole **Stornovat časové rozlišení při připsání na stranu Dal** 
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

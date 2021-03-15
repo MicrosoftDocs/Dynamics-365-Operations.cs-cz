@@ -55,3 +55,6 @@ Toto téma popisuje proces vytvoření a zaúčtování deníku inventury zásob
 1. Vyberte **skladový model**.
 2. Vyberte **Transakce**. V tomto poli se zobrazí všechny související transakce vytvořené při zaúčtování deníku inventury zásob.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

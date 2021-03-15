@@ -127,3 +127,6 @@ V aplikaci kontaktního střediska mohou agenti kontaktního střediska vybrat o
 ## <a name="additional-resources"></a>Další prostředky
 
 [Modul informací o vyzvednutí](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Tento postup se zaměřuje na plánování zpracování kanbanových úloh pro k
     * Všimněte si, že obě úlohy jsou přidány do požadovaného období.  
     * V části Kapacita období můžete vidět zatížení pro jednotlivá období. Pole Spotřeba zobrazí plánovanou spotřebu v tomto období. Pokud je plánovaná spotřeba větší, než kapacita dostupná v tomto období, bude vybrán stav Přetížení spotřeby.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Vytvoření a odeslání souhrnného hlášení (EU)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

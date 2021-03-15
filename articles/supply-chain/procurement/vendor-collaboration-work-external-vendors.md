@@ -258,3 +258,6 @@ Uživatel, který nastavuje parametry pro proces požadavku na nabídku, může 
 - %createddate%
 
 Pokud je požadován dodatek a je odeslán po odeslání požadavku na nabídku, požadavek na nabídku bude odeslán znovu všem pozvaným dodavatelům. Publikovaný dokument bude také aktualizován na stránce **Otevřené publikované požadavky na nabídky**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

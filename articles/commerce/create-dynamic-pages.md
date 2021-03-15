@@ -96,3 +96,6 @@ Po publikování vlastní stránky se zobrazí místo dynamické stránky s para
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
 
 [Rozšiřitelnost online kanálu](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

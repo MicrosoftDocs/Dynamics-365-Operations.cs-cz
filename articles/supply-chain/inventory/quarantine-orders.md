@@ -66,3 +66,6 @@ Jako součást procesu karanténní objednávky je možné zásoby vyřadit. Př
 --------
 
 [Blokování zásob](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

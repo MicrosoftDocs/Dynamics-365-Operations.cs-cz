@@ -72,3 +72,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Produkty Field Service (Supply Chain Management do Field Service): Products - Products
 
 [![Mapování šablony v integraci dat](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Tento průvodce popisuje, jak nastavit kritéria určující práci, která vzni
 V případě prodejních objednávek a zakázek kanbanu je třeba vyhradit zásoby před vydáním objednávky do skladu. V opačném případě položky nebo řádky přidělení nelze zpracovat ve vlně. Pro výrobní zakázky můžete také využít možnost Povolit částečnou rezervaci. Například je to užitečné v případě, kdy vlastníte materiály potřebné k zahájení výroby, a můžete počkat, než budou pro dokončení procesu k dispozici další materiály. Pokud vyberete tuto možnost, je nutné ručně opakovat proces vydání do skladu, jakmile budou k dispozici další materiály.  
 25. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

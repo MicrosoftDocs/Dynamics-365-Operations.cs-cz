@@ -64,3 +64,6 @@ Tato procedura používá ukázkovou společnost USMF. Manažer závazků nebo o
 10. V podokně akcí klikněte na položku Přehled.
 11. Klikněte na položku Párování – podrobnosti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

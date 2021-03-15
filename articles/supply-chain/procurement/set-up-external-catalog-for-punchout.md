@@ -112,3 +112,5 @@ Pokud byl požadován produkt z externího katalogu dodavatele, nelze katalog od
 
 - [cXML vylepšení nákupu](purchasing-cxml-enhancements.md)
 - [Použití externích katalogů pro funkci PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

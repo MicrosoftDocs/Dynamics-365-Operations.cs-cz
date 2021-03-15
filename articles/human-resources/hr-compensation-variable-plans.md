@@ -99,3 +99,6 @@ Lze použít kartu **Přepsání** a přepsat specifické hodnoty pro zaměstnan
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

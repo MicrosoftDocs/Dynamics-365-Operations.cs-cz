@@ -81,3 +81,6 @@ Podrobné informace o konfiguraci modulu mapy na stránce viz [Uložení modulu 
 [Správa map Bing pro vaši organizaci](./dev-itpro/manage-bing-maps.md)
 
 [Webový ovládací prvek Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

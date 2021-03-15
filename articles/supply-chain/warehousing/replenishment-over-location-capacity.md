@@ -407,3 +407,6 @@ Nyní si můžete vybrat prodejní objednávku 2. Když bylo dokončeno doplňov
 - Pokud chcete, můžete ručně přepsat dostupnost práce doplňování pro každou hlavičku práce ze stránky **Podrobnosti o práci**.
 - Když systém nastaví dostupnost práce při doplňování, vezme v úvahu veškerý inventář, který je již v místě před dokončením jakékoli práce
 - Každá část práce na prodejní objednávce je spojena s konkrétní prací na doplnění. Neexistuje žádná odpovídající funkce dostupnosti prodejní práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

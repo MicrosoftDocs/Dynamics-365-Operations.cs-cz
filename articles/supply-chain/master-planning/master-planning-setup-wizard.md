@@ -208,3 +208,6 @@ V průvodci jsou pro výrobce Contoso Retailer zadány následující hodnoty:
     - **Odpověď:** „Ano, jak je definováno v tomto hlavním plánu.“ Je zadán **1 den**.
 
     Společnost Contoso používá schválené žádanky ze svých obchodů k vytvoření plánovaných nákupních objednávek pro doplnění těchto obchodů. Vzhledem k tomu, že hlavní plánování je spuštěno každý den, budou do plánování zahrnuty žádanky z posledního dne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

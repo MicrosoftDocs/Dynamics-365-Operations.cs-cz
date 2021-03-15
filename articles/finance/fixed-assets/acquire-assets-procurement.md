@@ -108,3 +108,6 @@ Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-as
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

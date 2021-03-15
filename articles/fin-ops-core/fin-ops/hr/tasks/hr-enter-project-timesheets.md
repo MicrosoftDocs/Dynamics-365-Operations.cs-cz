@@ -51,3 +51,6 @@ Tato procedura vám umožní vytvořit časový rozvrh pomocí prázdného formu
 21. Klepněte na tlačítko **Odeslat**.
 22. Klepněte na tlačítko **Odeslat**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

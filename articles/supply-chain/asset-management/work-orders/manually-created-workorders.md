@@ -165,3 +165,6 @@ Na následujícím obrázku je uveden příklad dialogového okna **Vytvořit pr
 >[!NOTE]
 >Pokud chcete, aby se pracovní příkazy vytvářely automaticky, můžete naplánovat úlohy plánu údržby nebo nastavit automatické vytvoření [plánů údržby](../preventive-and-reactive-maintenance/maintenance-plans.md) nebo [pořadí údržby](../preventive-and-reactive-maintenance/maintenance-rounds.md) u majetku. Pracovní příkazy vytvořené z požadavků na údržbu na stránce se seznamem **Rozvrh veškeré údržby** jsou vytvořeny s typy úloh údržby vybranými v požadavcích na údržbu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

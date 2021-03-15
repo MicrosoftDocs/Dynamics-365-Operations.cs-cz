@@ -86,3 +86,6 @@ Následující tabulka zobrazuje entity, na kterých je obsah založen.
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                 | Společnost, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání |
 | Projekt hromadného zařazení        | Počet projektů hromadného zařazení, vlastník projektu a stav projektu                     | Společnost, řádek Hromadné zařazení |
 | Řádek hromadné zařazení           | Oddělení, typ zaměstnání a pozice                                           | Datum, pozice, projekt hromadného zařazení |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

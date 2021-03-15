@@ -78,3 +78,6 @@ Tato procedura popisuje, jak nastavit věrnostní program pomocí dvou věrnostn
 39. Zavřete stránku.
 40. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

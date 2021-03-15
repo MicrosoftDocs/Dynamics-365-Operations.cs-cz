@@ -68,3 +68,6 @@ Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastaven
 ## <a name="configure-continuity-programs"></a>Konfigurace programů trvání
 
 [Nastavení programů kontinuity pro kontaktní střediska](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

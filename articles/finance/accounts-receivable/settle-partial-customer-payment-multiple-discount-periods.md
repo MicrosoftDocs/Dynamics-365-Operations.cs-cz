@@ -97,3 +97,6 @@ Zůstatek faktury je nyní 0,00. Arnold informace může zobrazit na stránce **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

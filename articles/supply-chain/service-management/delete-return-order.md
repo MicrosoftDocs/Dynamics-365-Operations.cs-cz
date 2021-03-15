@@ -43,3 +43,6 @@ Formulář **Odstranit objednávku vratky** slouží k odstranění několika vr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

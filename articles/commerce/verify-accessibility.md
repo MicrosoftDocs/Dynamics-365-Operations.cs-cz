@@ -86,3 +86,6 @@ Chcete-li použít službu [Microsoft Accessibility Insights](https://accessibil
 [Obohacení cílové stránky kategorie](enrich-category-page.md)
 
 [Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

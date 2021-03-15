@@ -53,3 +53,6 @@ Pokud chcete zapnout správu neshody, postupujte takto:
 [Procesy správy kvality](quality-management-processes.md)
 
 [Nastavení předpokladů pro správu neshody](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

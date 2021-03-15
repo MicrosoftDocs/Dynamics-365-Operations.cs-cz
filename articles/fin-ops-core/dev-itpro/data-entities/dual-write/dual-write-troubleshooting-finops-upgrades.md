@@ -91,3 +91,6 @@ Pokud problém stále není opraven, postupujte podle následujících kroků.
 4. Otevřete stránku **Mapování tabulek** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
 5. Není-li atribut automaticky naplněn na mapě, přidejte jej ručně kliknutím na tlačítko **Přidat atribut** a následným kliknutím na tlačítko **Uložit**. 
 6. Vyberte mapování a klikněte na tlačítko **Spustit**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

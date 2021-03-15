@@ -67,3 +67,6 @@ V tomto příkladu ověřte, zda je uživateli "SHANNON" přiřazena role operá
 6. V poli **Výrobní jednotka** lze nastavit výchozí filtr pro pracovníka. Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení. Zadejte požadovanou hodnotu.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

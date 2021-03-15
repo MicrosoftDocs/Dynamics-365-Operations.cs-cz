@@ -61,3 +61,6 @@ Pomocí tohoto postupu lze vytvořit nákupní objednávku, u které proběhne k
 4. Klikněte na Zobrazit chyby a varování kontroly rozpočtu.
 5. Klikněte na tlačítko Zavřít.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

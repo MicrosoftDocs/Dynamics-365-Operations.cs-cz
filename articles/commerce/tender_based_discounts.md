@@ -71,3 +71,6 @@ Maloobchodní prodejci často vylučují některé produkty, jako jsou nové pol
 
 > [!NOTE]
 > Pokud je konfigurace **Zabránit všem slevám** nastaven na **Ano**, nebudou u produktu použity žádné slevy. Nebudou použity slevy na základě úhrad.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

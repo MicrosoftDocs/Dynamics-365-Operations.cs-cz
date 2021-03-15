@@ -229,3 +229,6 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

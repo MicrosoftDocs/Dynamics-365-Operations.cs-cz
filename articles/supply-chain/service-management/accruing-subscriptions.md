@@ -151,3 +151,6 @@ Můžete určit počet transakcí hlavní knihy, které jsou vytvořeny při za�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

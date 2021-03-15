@@ -67,3 +67,6 @@ Můžete také nastavit *odpovědné* pracovníky údržby, kteří mohou být v
 
 Při plánování pracovních příkazů se počítají různé výsledky s cílem určit, kteří pracovníci by měli dokončit úlohy související s pracovním příkazem (tato skóre se nastavují v nabídce **Parametry správy majetku** > **Plánování pracovních příkazů**). Pokud při plánování pracovních příkazů získají dva nebo více preferovaných pracovníků údržby nebo odpovědných pracovníků údržby stejné hodnocení, bude jeden pracovník vybrán náhodně. V opačném případě je vždy pracovník s nejvyšším skóre přidělen k dokončení pracovního příkazu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

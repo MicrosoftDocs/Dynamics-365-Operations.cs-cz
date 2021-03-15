@@ -70,3 +70,6 @@ Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení. V 
 7. Klikněte na položku Zaúčtovat.
 8. Klikněte na tlačítko OK.
     * V deníku karet postupu je zaznamenáván čas strávený na jednotlivých operacích. Může být rovněž uvedeno dobré a chybné množství.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Provozní jednotka je organizace, která se používá k rozdělení řízení e
     + Zadejte informace o způsobech komunikace, například e-mailové adresy, adresy URL a telefonní čísla. Chcete-li zadat nový záznam komunikace, klikněte na tlačítko Nový. Chcete-li upravit existující záznam komunikace, klikněte na tlačítko položky **Více možností > Pokročilé**.   
 6. Volitelně můžete podle potřeby změnit **Číslo provozní jednotky**. Všimněte si, že toto číslo je jedinečným identifikátorem pro odpovídající záznam **Strana** a nemůže být stejné jako jiné provozní jednotky.
 7. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

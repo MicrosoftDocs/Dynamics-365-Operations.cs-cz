@@ -52,3 +52,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 3. Vyberte **OK**.
 4. Vyberte **Plánované objednávky**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

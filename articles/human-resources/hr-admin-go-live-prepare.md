@@ -99,3 +99,6 @@ Po odeslání kontrolního seznamu váš architekt řešení FastTrack zkontrolu
 ## <a name="see-also"></a>Viz také
 
 [Často kladené dotazy týkající se ostrého nasazení](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

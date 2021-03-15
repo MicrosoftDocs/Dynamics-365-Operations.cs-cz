@@ -69,3 +69,6 @@ Místo kopírování celé objednávky je běžnější vytvořit novou nákupn�
 4. Zvolte řádek pro požadovanou nákupní objednávku. Všimněte si, že byl vybrán také jeden řádek objednávky v této nákupní objednávce.  
 5. Vyberte **OK**. Další řádek objednávky byl přidán do nákupní objednávky.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

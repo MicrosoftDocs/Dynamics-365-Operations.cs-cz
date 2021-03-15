@@ -57,3 +57,6 @@ Po vytvoření globálního adresáře můžete vytvořit další adresáře pod
 **Rozhodnutí:**
 
 - Kolik dalších adresářů vytvoříte?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

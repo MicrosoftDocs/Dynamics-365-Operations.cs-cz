@@ -243,3 +243,6 @@ Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Test vlastního formátu pro generování souborů plateb
 Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Finance and Operations. Vyberte vytvořený formát 'BACS (Velká Británie – fiktivní vlastní)' v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

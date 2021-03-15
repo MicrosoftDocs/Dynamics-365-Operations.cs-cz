@@ -71,3 +71,6 @@ Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Tento postup vás provede konfigurací a spuštěním opakovaných dávkových �
 11. Klikněte na tlačítko OK.
 12. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

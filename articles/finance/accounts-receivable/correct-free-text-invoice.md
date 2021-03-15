@@ -50,3 +50,6 @@ Zrušení faktury a opravnou fakturu lze určit dvěma způsoby:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

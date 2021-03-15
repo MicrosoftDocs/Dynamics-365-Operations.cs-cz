@@ -503,3 +503,6 @@ Přiřazení kvality je nutné definovat pro každou variantu obchodního proces
 [Řízení neshody](enable-nonconformance-management.md)
 
 [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

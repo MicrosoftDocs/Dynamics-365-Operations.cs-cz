@@ -71,3 +71,6 @@ Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravn
 11. V poli Kód důvodu nedoplatku zadejte nebo vyberte hodnotu.
 12. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

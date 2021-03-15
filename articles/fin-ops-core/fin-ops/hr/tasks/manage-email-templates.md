@@ -47,3 +47,6 @@ Můžete přenést informace z databáze organizace do záložek v novém dokume
 8. Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.
 9. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

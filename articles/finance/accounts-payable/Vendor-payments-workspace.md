@@ -77,3 +77,6 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 |    Zůstatek dodavatele vůči odběrateli     |                                                                                                                   <ul><li>Zůstatek dodavatele vůči odběrateli</li><li>Zůstatek dodavatele vůči na společnost</li><li>Zůstatek dodavatele vůči odběrateli – detaily</li></ul>                                                                                                                    |
 |    Faktury s blokováním platby     |                                                                                         <ul><li>Faktury s blokováním platby</li><li>Faktury s blokováním platby – detaily</li><li>Faktury s blokováním platby podle společnosti</li><li>Faktury s blokováním platby podle skupiny dodavatelů</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

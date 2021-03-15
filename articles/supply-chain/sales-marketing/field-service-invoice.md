@@ -107,3 +107,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Smluvní faktury (Field Service do Supply Chain Management): řádky faktur
 
 [![Mapování šablony v integraci dat](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

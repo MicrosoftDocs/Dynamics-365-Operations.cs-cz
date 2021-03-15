@@ -54,3 +54,6 @@ Existují okolnosti, kdy nedoporučujeme resetovat datové tržiště. Mezi ně 
 > Následující body specifikují dvě věci, které resetování datového tržiště *nebude* dělat. <br>
 > - Resetování nevymaže návrhy sestav. <br>
 > - Resetování nevymaže firemní ani uživatelská data, pokud není vybráno.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

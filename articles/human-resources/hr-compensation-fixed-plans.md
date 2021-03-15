@@ -98,3 +98,6 @@ Nyní můžete přiřadit zaměstnance k plánu fixní kompenzace. Otevřete str
 
 Systém ověří, zda je zadaná částka kompenzace uvedená pro plán kompenzace typu stupeň nebo pásmo mezi minimálním a maximálním referenčním bodem úrovně kompenzace v dané pozici zaměstnance. Pokud je částka kompenzace mimo povolený rozsah, zobrazí se upozornění nebo chybová zpráva v závislosti na úrovni tolerance, která je nastavena v plánu fixní kompenzace.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

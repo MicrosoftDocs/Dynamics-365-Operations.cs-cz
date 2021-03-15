@@ -65,3 +65,6 @@ Chcete-li přidat modul ikony nákupního košíku, přečtěte si [Modul záhla
 [Modul podrobností objednávky](order-confirmation-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

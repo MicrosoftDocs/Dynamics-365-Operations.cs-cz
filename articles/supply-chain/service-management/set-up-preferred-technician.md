@@ -67,3 +67,6 @@ Můžete vybrat libovolného pracovníka jako upřednostňovaného technika pro 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

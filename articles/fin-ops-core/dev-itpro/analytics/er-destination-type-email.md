@@ -139,3 +139,6 @@ Následující obrázek ukazuje proces seskupování jednotlivých komponent, po
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

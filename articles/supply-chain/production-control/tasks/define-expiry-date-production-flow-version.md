@@ -40,3 +40,6 @@ Pro ukončení platnosti a zpracování verze výrobního toku k danému datu ne
 6. Do pole Datum vypršení platnosti zadejte datum a čas.
     * Pro datum vypršení platnosti se nová verze nespustí nebo neaktivuje. Také již nebude možné vytvořit nebo spustit úlohy pro tento výrobní tok. Dále můžete dokončit zahájené úlohy po datu vypršení platnosti.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

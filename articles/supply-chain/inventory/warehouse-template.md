@@ -97,3 +97,6 @@ Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopíro
 ## <a name="related-topic"></a>Související téma
 
 [Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

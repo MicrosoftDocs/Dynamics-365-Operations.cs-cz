@@ -192,3 +192,6 @@ Plně expedované převodní příkazy jsou přesunuty na kartu **Dokončeno** v
 ## <a name="related-topics"></a>Související témata
 
 [Operace příchozích zásob v POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

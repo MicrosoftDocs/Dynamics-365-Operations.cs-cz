@@ -125,3 +125,6 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 > [!NOTE]
 > Tento způsob získání informací o metadatech aplikace je jediný dostupný pro lokálně nasazené aplikace (v případě místních obchodních dat (LBD) nebo místně se používá model nasazení).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

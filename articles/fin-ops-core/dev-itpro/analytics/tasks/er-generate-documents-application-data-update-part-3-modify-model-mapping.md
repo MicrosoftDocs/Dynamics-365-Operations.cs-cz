@@ -168,3 +168,6 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 66. Zavřete stránku.
 67. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

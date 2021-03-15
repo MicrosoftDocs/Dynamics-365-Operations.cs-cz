@@ -208,3 +208,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ## <a name="related-topics"></a>Související témata
 
 [zpeněžení potenciálního zákazníka](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

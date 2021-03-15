@@ -161,3 +161,6 @@ Chcete-li uložit tajný klíč připojovacího řetězce centra Redis Cache, po
 > Kdykoli aktualizujete jeden z připojovacích řetězců, musíte také aktualizovat hodnoty tajných klíčů.
 
 Nyní jste dokončili zřízení požadovaných zdrojů Azure. Dalším krokem je [instalace doplňku IoT Intelligence v Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

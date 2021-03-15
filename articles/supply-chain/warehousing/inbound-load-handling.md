@@ -477,3 +477,6 @@ V tomto scénáři pracovník příjmu připíše množství, které je větš�
     - **Množství** – zadejte hodnotu _7_, což je zbývající množství, pro které má dodavatel oprávnění dodat jako součást celkového množství nákupní objednávky 12 (kde 10 je původní množství objednávky a 2 je povolené navýšení dodávky o 20 procent). Nezapomeňte, že 5 kusů již bylo v rámci prvního nákladu registrováno.
 
 Druhý náklad byl nyní aktualizován o množství 7 a lze aktualizovat příjemku produktu na základě tohoto množství.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

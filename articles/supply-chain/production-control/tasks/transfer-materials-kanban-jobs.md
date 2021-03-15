@@ -65,3 +65,6 @@ Tento postup se zaměřuje na provádění kanbanové úlohy pro výběr umožň
 2. Klikněte na tlačítko Dokončit.
     * Tímto dokončíte převod obou úloh.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

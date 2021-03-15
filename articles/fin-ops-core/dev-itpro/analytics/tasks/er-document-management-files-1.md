@@ -74,3 +74,6 @@ Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z kon
 3. Zadejte hodnotu Model faktury odběratele (vlastní) do pole Název.
 4. Klepněte na možnost Vytvořit konfiguraci.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

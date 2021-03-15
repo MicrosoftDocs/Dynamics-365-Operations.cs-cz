@@ -62,3 +62,6 @@ K dispozici jsou následující parametry:
 
 - **Počet pokusů o automatické přiřazení** – U tohoto procesu můžete určit maximální počet pokusů, které má systém na spárování příjemky produktu s řádkem faktury, než se tento proces označí jako neúspěšný. Po dosažení zadaného počtu pokusů je faktura z automatizovaného zpracování odebrána.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

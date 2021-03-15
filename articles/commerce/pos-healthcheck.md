@@ -82,3 +82,6 @@ Vlastní kontroly stavu lze rovněž vytvořit, pokud chcete testovat zařízen�
 ## <a name="related-articles"></a>Související články
 
 [Spouštěče Modern POS (MPOS) a tisk](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

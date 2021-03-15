@@ -164,3 +164,6 @@ Sestava sazby slevy váženého průměru splňuje požadavek na zveřejnění d
 |     Měna                          |     Zkratka použité měny transakce. Všechny sestavy převedou měnu transakce na měnu vykazování.  |
 |     Zbývající leasingové splátky          |     Celková částka nezaplacených leasingových splátek ze splátkového kalendáře zbývajících od data v poli **K datu**.            |
 |     Zbývající vážené platby       |     Zbývající leasingové splátky vynásobené použitou sazbou slevy.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

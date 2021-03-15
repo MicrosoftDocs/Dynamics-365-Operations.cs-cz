@@ -41,3 +41,6 @@ Můžete nastavit následující informace pro faktury odběratelů a objednávk
 
     * Přejděte na **Správa organizace \> Číselné řady \> Správa čítačů**. Musí existovat záznam, kde **Modul** = **Prodej** a **Typ** = **Faktura**.
     * Přejděte na **Správa organizace \> Číselné řady \> Nastavení číslování faktur**. Zaškrtněte políčko **Commerce** pro pořadové číslo řádku, který se používá k číslování faktur odběratele.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

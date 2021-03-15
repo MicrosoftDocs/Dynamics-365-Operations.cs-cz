@@ -93,3 +93,6 @@ Tento záznam úlohy popisuje základní postup pro vytvoření případu zraně
 36. Klikněte na položku Uložit.
     * Stav případu lze kdykoli aktualizovat.  Nastavte případ na stav Probíhá, pokud probíhá zpracování zranění nebo onemocnění.  Jakmile uzavřete incident, můžete pouze přidat nebo odebrat náklady, léčbu nebo evidenci související s incidentem.  Chcete-li upravit informace, případ znovu otevřete.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Při zaúčtování finanční transakce se záznam transakce nachází ve stavu
 -   skladové deníky se záporným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 Transakce snižující množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Proces uzávěrky skladu je tedy vyžadován pro vyrovnání výdejových transakcí příjmovými transakcemi podle modelu zásob, která je přiřazen jednotlivým položkám.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

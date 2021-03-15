@@ -527,3 +527,6 @@ Dotazy zobrazené v předchozích příkladech by mohly vrátit takový výslede
 ```
 
 Všimněte si, že pole množství jsou strukturována jako slovník měrných jednotek a jejich přidružených hodnot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

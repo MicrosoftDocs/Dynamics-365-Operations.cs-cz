@@ -48,3 +48,6 @@ Tento článek popisuje postup spuštění procesu nároku na životní událost
    4. Vyberte **OK**. Proces bude spuštěn s nastavenými parametry.
 
 4. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

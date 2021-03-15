@@ -60,3 +60,6 @@ Následující sestavy hlavní knihy slouží kromě finančních sestav k zobra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

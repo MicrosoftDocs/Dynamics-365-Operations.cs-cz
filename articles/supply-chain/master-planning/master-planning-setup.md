@@ -226,3 +226,6 @@ Doba realizace + záporné dny + aktuální datum – datum požadavku
 Systém používá pouze plánované objednávky dodávek, které jsou v této ochranné době, a vytváří novou plánovanou objednávku mimo ni. Výhodou dynamických negativních dnů je, že bude zahrnuta doba realizace jednotlivého produktu pro opětovné použití existujících objednávek a pro zamezení vytváření nových plánovaných objednávek, které budou ukončeny později v důsledku zpoždění způsobených dobou realizace. 
 
 Další informace naleznete v tématu [Záporné dny a dynamické záporné dny](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

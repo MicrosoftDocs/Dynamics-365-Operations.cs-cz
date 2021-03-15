@@ -68,3 +68,6 @@ Tento článek uvádí, jak vytvořit prvky zaměstnanecké výhody, které budo
 16. Vyberte volbu v poli Základ.
 17. Zadejte číslo do pole Částka nebo sazba.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

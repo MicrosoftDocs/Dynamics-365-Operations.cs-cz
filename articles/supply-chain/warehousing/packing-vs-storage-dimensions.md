@@ -133,3 +133,6 @@ V tomto procesu vytvoříte zásilku na základě dimenzí *balení* položky, u
 1. Otevřete mobilní zařízení, přihlaste se do skladu 63 a přejděte na **Inventář \> Upravit**.
 1. Zadejte **Loc** = *SHORT-01*. Vytvořte novou registrační značku pomocí **Položka** = *A0001* a **Množství** = *1 ks*.
 1. Vyberte **OK**. Zobrazí se chyba „Umístění SHORT-01 se nezdařilo, protože položka A0001 se nevejde do zadaných rozměrů umístění.“ Důvodem je, že dimenze typu *Úložiště* produktu jsou větší než dimenze určené v profilu umístění.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

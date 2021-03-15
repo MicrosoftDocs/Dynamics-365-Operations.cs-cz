@@ -302,3 +302,6 @@ Chcete-li vytvořit stránku s podrobnostmi o fakturách v nástroji pro tvorbu 
 [Modul bloku obsahu](../add-hero-module.md)
 
 [Kolekce produktů](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

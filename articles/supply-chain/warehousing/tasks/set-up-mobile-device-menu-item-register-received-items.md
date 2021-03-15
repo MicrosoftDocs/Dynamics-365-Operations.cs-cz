@@ -59,3 +59,6 @@ Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Tento p
 6. Zvolte **Uložit**.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Tento postup popisuje, jak nastavíte přiřazení doplňkové služby. To obvyk
 14. V poli Poplatek za dodatečné služby zadejte číslo.
 15. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

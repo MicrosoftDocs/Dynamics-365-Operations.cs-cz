@@ -348,3 +348,6 @@ V následující tabulce jsou popsána pole pro platební transakce registračn�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

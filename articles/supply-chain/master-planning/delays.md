@@ -58,3 +58,6 @@ Na stránce **Plánovaná objednávka** na kartě **Zpoždění** je uvedeno **p
 --------
 
 [Nastavení distponibility](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

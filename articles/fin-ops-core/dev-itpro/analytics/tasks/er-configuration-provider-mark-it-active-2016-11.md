@@ -44,3 +44,6 @@ Toto téma vysvětluje, jak uživatel přiřazený k roli Správce systému neb
 2. Vyberte **Nastavit jako aktivní**.
 
 ![Stránka pracovního prostoru elektronického vykazování](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Zákaznický portál je poskytován jako šablona portálů Power Apps. Závisí
 ![Závislosti zákaznického portálu](media/customer-portal-elements.png "Závislosti zákaznického portálu")
 
 Zákaznický portál slouží jako výchozí bod pro organizace, které chtějí používat portály Power Apps k vytvoření externě orientovaného webu, který používá data z instalace Supply Chain Management. Pomáhá organizacím propojit dvojí zápis, Supply Chain Management a portály Power Apps.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

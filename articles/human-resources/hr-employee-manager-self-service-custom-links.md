@@ -48,3 +48,6 @@ Chcete-li použít tuto funkci, povolte **Vlastní odkazy v samoobsluze pro mana
 ## <a name="see-also"></a>Viz také
 
 [Přehled samoobsluhy pro zaměstnance a manažery](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

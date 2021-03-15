@@ -48,3 +48,6 @@ Toto téma vysvětluje, jak nastavit srážkovou daň. *Srážková daň* je da�
 18. Zvolte **Uložit**.
 19. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

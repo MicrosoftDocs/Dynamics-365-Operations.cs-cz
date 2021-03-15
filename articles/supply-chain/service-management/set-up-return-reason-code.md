@@ -62,3 +62,6 @@ Tento postup vám pomůže nastavit kódy důvodů vrácení, pomocí kterých m
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

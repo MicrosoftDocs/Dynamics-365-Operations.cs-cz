@@ -87,3 +87,6 @@ Pokud je marketingový obsah jedinečný pro určitý produkt, lze do PDP přida
 [Přehled stránek správy účtů](quick-tour-account-management.md)
 
 [Obohacení stránky podrobností produktu](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

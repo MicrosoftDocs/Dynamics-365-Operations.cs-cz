@@ -79,3 +79,6 @@ Na stránce se seznamem **Všechen majetek** můžete vytisknout sestavu závad 
 >[!NOTE]
 >Můžete také vytisknout sestavu závad pro několik majetků nebo typů majetku výběrem **Správa majetku** > **Sestavy** > **Majatek** > **Závada majetku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

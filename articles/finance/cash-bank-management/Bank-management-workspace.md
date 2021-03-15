@@ -63,3 +63,6 @@ Stránka **Analýza** poskytuje důležité metriky o bankovních účtech v akt
 -   Zůstatek podle měny
 
 Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu
 2. Klikněte na Transakce.
     * V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

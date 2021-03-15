@@ -72,3 +72,6 @@ Pokud odesíláte více typů majetku současně (například obrázky a videoz�
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Chcete-li změnit ID uživatele, musíte klíč v databázi přejmenovat. Když 
 Další možnosti implementace uživatelů B2B najdete v tématu [Export uživatele B2B do Azure AD](../implement-b2b.md).
 
 Informace o předkonfigurovaných systémových účtech najdete v části [Předkonfigurované systémové účty](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

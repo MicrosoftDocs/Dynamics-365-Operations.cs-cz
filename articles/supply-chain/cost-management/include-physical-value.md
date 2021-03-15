@@ -59,3 +59,6 @@ Při zaúčtování prodejní objednávky se zaúčtuje částka nákladů 10,00
 
 > [!NOTE]
 > Pokud pro porovnání označíte pole **Zahrnovat fyzickou hodnotu** pro toto zboží při zaúčtování prodejní objednávky, zaúčtované náklady budou 12,00 USD.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

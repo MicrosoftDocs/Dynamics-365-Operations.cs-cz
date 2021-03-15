@@ -174,3 +174,6 @@ Pomocí akce **Odstranit** na požadavku registrace potenciálního dodavatele m
 |         Schváleno         |                                                                               Požadavek na dodavatele je schválen.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
 |         Odmítnuto         |                                                                               Požadavek na dodavatele je zamítnut.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

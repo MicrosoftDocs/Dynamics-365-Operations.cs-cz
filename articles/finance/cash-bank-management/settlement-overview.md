@@ -77,3 +77,6 @@ Při pokusu o vypořádání transakce si můžete všimnout symbolu, který ozn
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Vyrovnání zůstatku](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

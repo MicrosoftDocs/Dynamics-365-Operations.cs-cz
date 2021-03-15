@@ -65,3 +65,6 @@ Po dokončení vlastního oříznutí se úpravy obrazu projeví téměř okamž
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

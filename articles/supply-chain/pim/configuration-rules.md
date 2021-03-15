@@ -45,3 +45,6 @@ Stávající konfigurace nejsou následnými změnami konfiguračních pravidel 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

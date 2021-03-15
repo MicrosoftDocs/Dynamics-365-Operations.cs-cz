@@ -276,3 +276,6 @@ Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů té
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -159,3 +159,6 @@ Po dokončení procesu vykazování za určité období (například pokud finan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

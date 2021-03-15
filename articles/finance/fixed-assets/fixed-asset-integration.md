@@ -94,3 +94,6 @@ Další informace naleznete v tématu [Pořízení majetku pomocí zásobování
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

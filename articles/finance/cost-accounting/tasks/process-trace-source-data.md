@@ -44,3 +44,6 @@ Veškeré zpracování dat se provádí prostřednictvím úloh. Pro každou úl
     * V tomto příkladu vyberte Fiskální období 9/2017.  
 14. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

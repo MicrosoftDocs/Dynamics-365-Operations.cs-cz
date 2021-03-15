@@ -162,3 +162,6 @@ Bude-li konfigurace provedena na pracovišti nebo dokonce ve společnosti, kter�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

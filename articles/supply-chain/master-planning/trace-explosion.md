@@ -47,3 +47,6 @@ Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. N
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

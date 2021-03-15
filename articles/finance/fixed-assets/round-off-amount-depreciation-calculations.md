@@ -49,3 +49,6 @@ Odpis je bez zaokrouhlení vypočítán v částce 2 444,44. Stejně jako v nás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

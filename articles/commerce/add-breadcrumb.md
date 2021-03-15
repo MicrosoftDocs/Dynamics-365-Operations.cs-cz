@@ -94,3 +94,6 @@ Chcete-li přidat modul popisu cesty na stránku podrobností o produktu a nasta
 [Modul buy boxu](add-buy-box.md)
 
 [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Když vytisknete deobropisy s volným textem, dobropisy zákazníků a projektů
 
 > [!NOTE]
 > Ujistěte se, že jsou tiskové formáty dokumentů správně nakonfigurovány za předpokladu, že budou vytištěny odkazy na původní faktury.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

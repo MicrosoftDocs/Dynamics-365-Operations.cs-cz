@@ -89,3 +89,6 @@ Na následujícím obrázku je uveden snímek obrazovky výpočtu KUV pro čtyř
 - V části **Všechen majetek** můžete vícenásobně vybrat několik kusů majetku a kliknout na tlačítko **KPI majetku** na kartě **Obecné**. Pak klikněte na **OK** v dialogovém okně **Vypočítat KPI majetku** pro výpočet KPI u vybraného majetku.  
 - Výsledky výpočtu KPI mohou, ale nemusí zahrnovat [registrace prostojů údržby](../work-orders/maintenance-downtime.md), v závislosti na nastavení a použití kódů důvodu prostoje údržby. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

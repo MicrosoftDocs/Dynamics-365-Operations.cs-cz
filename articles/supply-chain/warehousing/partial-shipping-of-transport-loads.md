@@ -65,3 +65,6 @@ Toto nastavení umožňuje potvrdit expedici nákladu obsahující úplný nákl
 
 1. Vyberte **řízení skladu** \> **Nakládky** \> **Přeprava nakládky**.
 2. V podokně akcí na kartě **Expedovat a přijmout** ve skupině **Potvrdit** vyberte **Přeprava**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

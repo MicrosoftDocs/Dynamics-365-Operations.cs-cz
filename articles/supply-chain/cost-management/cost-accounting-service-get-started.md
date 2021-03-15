@@ -110,3 +110,6 @@ Chcete-li nastavit integraci mezi službou nákladového účetnictví a Dynamic
 ## <a name="related-resources"></a>Související prostředky
 
 [Domovská stránka služby nákladového účetnictví](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

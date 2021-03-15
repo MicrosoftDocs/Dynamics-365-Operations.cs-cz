@@ -157,3 +157,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 71. Zavřete stránku.
 72. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

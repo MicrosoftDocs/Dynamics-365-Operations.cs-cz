@@ -117,3 +117,6 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Automatické zaúčtování upomínek           |     Typy akcí upomínek, které zaúčtují upomínku během automatizace.                                      |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Vytváření aktivit pro automatizaci                |     Vytváření a uzavírání aktivit pro typy akcí bez aktivity, abyste mohli zobrazit všechny automatické kroky provedené v účtu.        |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Dny uchování automatizace procesu inkasa     |     Definuje počet dní, po které je uchována historie inkas.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

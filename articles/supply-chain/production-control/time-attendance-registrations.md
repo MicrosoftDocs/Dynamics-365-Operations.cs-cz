@@ -118,3 +118,6 @@ Zaměstnanci s pracovními úkoly, které nevyžadují okamžitou zpětnou vazbu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

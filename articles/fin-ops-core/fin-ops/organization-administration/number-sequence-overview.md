@@ -115,3 +115,6 @@ Pokud regulační předpis nepožaduje používání souvislé řady čísel, do
 V případě výpadku napájení, chyby aplikace nebo jiného neočekávaného selhání nemůže systém znovu použít čísla pro souvislé číselné řady. Proces čištění můžete spustit ručně nebo automaticky pro obnovení ztracených čísel.
 
 Při plánování procesu čištění pečlivě zvažte použití serveru. Čištění se doporučuje provádět jako dávková úloha mimo pracovní dobu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

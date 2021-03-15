@@ -51,3 +51,6 @@ Pro školení o funkcích sdílených s ostatními aplikacemi Finance and Operat
 | Obsah | popis  | Formát   | Délka    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurace a práce s elektronickým obchodem v Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Online kanály a web elektronického obchodu Dynamics 365 Commerce umožní maloobchodníkům vytvořit online přítomnost své značky. | Libovolná online školení vlastním tempem | 4 hodin   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

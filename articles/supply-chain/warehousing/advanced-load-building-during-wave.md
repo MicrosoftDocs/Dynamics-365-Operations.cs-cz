@@ -249,3 +249,6 @@ Tento scénář ukazuje, jak nastavení, jež bylo popsáno výše v tomto tém
 1. V prodejní objednávce, kterou jste právě vytvořili, vyberte na záložce s náhledem **Řádky prodejní objednávky** možnost **Přidat řádek**. Přidá se další řádek.
 1. Na novém řádku nastavte v poli **Číslo položky** hodnotu *M9200* a v poli **Množství** hodnotu *1*.
 1. Opakujte kroky 6 až 9, až provedete rezervaci řádku a uvolněte jej do skladu. Stejně jako předtím, vytvoří systém **novou** dodávku pro přidaný řádek. Protože je však položka ze skupiny položek **CarAudio**, **neprojde přes omezení, která jste nastavili pro skupinu pro spojování nákladů**. Proto se **přidá do nového nákladu**. Pokud jste nezadali skupinu pro spojování nákladů v šabloně sestavení nákladu, byla by tato dodávka přidána k prvnímu nákladu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

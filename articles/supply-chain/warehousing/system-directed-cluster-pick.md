@@ -206,3 +206,6 @@ Dříve než můžete nastavit systémem řízený výdej v seskupení, musíte 
 1. Posledním krokem mobilního zařízení je **umístit** seskupení do konečného umístění. Vyberte **OK**
     - Po potvrzení této operace je seskupení uzavřeno a přerušeno, a to na základě hodnoty, kterou jste nastavili pro pole **Přerušit seskupení v** v profilu seskupení. ID práce jsou také uzavřeny.
 1. V mobilním zařízení je zobrazena zpráva "Seskupení dokončeno".
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

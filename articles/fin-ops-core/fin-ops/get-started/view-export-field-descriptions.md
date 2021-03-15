@@ -107,3 +107,6 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přizpůsobení popisů pole](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

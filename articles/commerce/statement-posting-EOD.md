@@ -173,3 +173,6 @@ Ostatní backendová vylepšení, která uživatel vidí byla provedena u funkce
 
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **aktualizace zásob** v poli **úroveň podrobností** vyberte **Souhrn**.
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **Agregace** nastavte možnost **transakce dokladu** na **Ano**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

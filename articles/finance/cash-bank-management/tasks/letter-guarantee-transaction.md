@@ -147,3 +147,6 @@ Tato procedura používá ukázkovou společnost USMF.
     * Ověřte zaúčtované záznamy deníku.  
 16. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

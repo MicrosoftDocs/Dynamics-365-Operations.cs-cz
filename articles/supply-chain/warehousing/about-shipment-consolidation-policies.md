@@ -134,3 +134,6 @@ Následující tabulka shrnuje, jak funguje konsolidace dodávek, když nepouž�
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Konfigurace zásad konsolidace dodávek](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

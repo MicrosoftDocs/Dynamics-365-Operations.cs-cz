@@ -114,3 +114,6 @@ Výsledky se liší kvůli informacím, které jsou k dispozici při vytvářen�
 [![Příklad 2](media/ReplenTemp_example_2.png "Příklad 2")](media/ReplenTemp_example_2_large.png)
 
 Chcete-li tedy získat maximální množství na doplněná místa, měli byste nastavit možnost **Povolit rozdělení** na *Ano* na směrnicích skladového místa pro výdej doplňování.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

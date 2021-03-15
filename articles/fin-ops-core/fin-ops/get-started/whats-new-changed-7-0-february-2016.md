@@ -1033,3 +1033,6 @@ Nebyly přidány následující nové funkce.
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

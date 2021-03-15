@@ -62,3 +62,6 @@ Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množst
 8. Klikněte na odkaz na vybraném řádku v seznamu.
     * Vyberte zásadu Speaker2016, kterou jste právě vytvořili v předchozím podúkolu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Výsledkem je plánovaná objednávka na 25 kusů. (= 25 ks. &minus;0 kusů.) pr
 [Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

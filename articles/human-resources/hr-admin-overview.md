@@ -102,3 +102,5 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 - [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)
 - [Průvodce vývojáře](hr-developer-overview.md)
 - [Uživatelská příručka](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

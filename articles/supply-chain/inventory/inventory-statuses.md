@@ -64,3 +64,6 @@ Stavy zásob můžete změnit buď pomocí stránky **Množství na skladě podl
 > - Na stránce **Množství na skladě podle místa** můžete seskupit řádky podle zobrazených dimenzí pomocí tlačítka **Zobrazit dimenze** a změnit stav vybraných řádků.
 > - Na stránce **Množství na skladě podle místa** můžete vybrat více záznamů a poté použít tlačítko **Změna stavu zásob** pro změnu všech najednou.
 > - V periodickém úkolu **Změna stavu zásob** budete moci filtrovat podle sledovacích dimenzí.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

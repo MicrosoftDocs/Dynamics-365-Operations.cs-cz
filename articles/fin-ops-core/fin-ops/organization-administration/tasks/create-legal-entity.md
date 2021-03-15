@@ -45,3 +45,6 @@ Právnická osoba je organizace, která je identifikována prostřednictvím reg
 15. Rozbalte položku **Daňová registrace**. V části **Daňová registrace** zadejte registrační čísla, která se používají při styku s finančními úřady.
 16. Rozbalte sekci **Daň 1099**. V části **Daň 1099** zadejte informace 1099 pro právní subjekt.  
 17. Klikněte na možnost **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

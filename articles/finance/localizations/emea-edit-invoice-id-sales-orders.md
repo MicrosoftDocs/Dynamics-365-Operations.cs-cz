@@ -60,3 +60,6 @@ Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

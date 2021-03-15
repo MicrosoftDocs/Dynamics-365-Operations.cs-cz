@@ -50,3 +50,6 @@ Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsah
 21. Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 7. měsícem. V tomto příkladu to je 2,5.
 22. Chcete-li dokončit nastavení, klikněte na tlačítko Zavřít.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

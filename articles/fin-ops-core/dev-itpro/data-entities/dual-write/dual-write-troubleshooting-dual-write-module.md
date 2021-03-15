@@ -87,3 +87,6 @@ Oprava této chyby závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
 + Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

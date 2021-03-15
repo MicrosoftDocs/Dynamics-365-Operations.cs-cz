@@ -109,3 +109,6 @@ Povolení a používání doplňku elektronické fakturace může vyžadovat ode
 - [Správa služby](e-invoicing-service-administration.md)
 - [Konfigurace elektronických faktur v RCS](e-invoicing-configuration-rcs.md)
 - [Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

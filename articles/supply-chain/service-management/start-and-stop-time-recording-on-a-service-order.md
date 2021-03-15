@@ -64,3 +64,6 @@ Tento postup můžete použít ke spuštění a zastavení nahrávání pro serv
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

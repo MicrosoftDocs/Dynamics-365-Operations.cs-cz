@@ -159,3 +159,6 @@ Můžete zadat popis plánu, který pomůže zaměstnancům s jejich zaměstnane
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
 2. Vyberte **Programy flexibilního kreditu**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

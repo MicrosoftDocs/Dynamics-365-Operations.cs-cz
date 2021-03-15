@@ -38,3 +38,6 @@ Tato procedura popisuje způsob vytváření nákupní objednávky pro jednoráz
 5. Klikněte na tlačítko OK.
     * Nákupní objednávku lze nyní dokončit a zpracovat jako jakoukoli jinou objednávku. Neexistují žádné zvláštní vlastnosti související se způsobem provedení. Faktura bude zohledňovat splatnost transakcí na účtu dodavatele, který byl vytvořen s objednávkou, a platba bude poté zpracována.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -166,3 +166,6 @@ Je možné stornovat a znovu zadávat transakce. Chcete-li transakci stornovat, 
 2. Klepněte na tlačítko **Ano** po zobrazení zprávy "Při stornování tohoto výkazu mezd se vytvoří storno platby pro vyrovnání v tomto výkazu mezd. Nelze upravit žádný výkaz mezd. Chcete stornovat tento výkaz mezd?" . 
 
 Po stornování výkazu mezd můžete generovat nový výkaz mezd pracovníka na základě předtím vytvořeného výkazu mezd. Je nutné opravit jakékoli nesprávné řádky ve výkazu zisků předtím, než budete generovat nový výkaz mezd, a následně generovat nové výkazy mezd se správnými částkami. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

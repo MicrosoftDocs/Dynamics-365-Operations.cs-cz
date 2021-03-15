@@ -71,3 +71,6 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

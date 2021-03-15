@@ -108,3 +108,6 @@ Použijte následující kritéria pro výběr a aktualizaci uvolněných produk
 - [Přiřazení stavu životního cyklu produktu k uvolněnému produktu](tasks/product-lifecycle-state-released-product.md)
 - [Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu](tasks/obsolete-product-variants.md)
 - [Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

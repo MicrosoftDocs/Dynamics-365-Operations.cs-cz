@@ -177,3 +177,6 @@ V této části budete dále pracovat na pracovním příkazu, na němž jste pr
 1. V podokně akcí na kartě **Fakturace** zvolte **Návrh nové faktury**.
 1. V dialogovém okně **Vytvořit návrh faktury** v části **Transakce projektu** zaškrtněte políčko **Vybrat** u každého řádku, který chcete fakturovat.
 1. Vyberte **OK** pro zavření dialogového okna a zobrazení nového návrhu faktury.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

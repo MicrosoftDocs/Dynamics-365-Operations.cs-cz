@@ -61,3 +61,6 @@ Další informace naleznete v tématu [Dodavatelská spolupráce s externími do
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

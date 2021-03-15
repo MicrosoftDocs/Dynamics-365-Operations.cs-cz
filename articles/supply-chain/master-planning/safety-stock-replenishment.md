@@ -115,3 +115,6 @@ Plnění transakce požadavku na rezervní zásoby se sníží priorita, pokud s
 Ve fázi disponibility hlavního plánování již doplnění rezervních zásob nemá sníženou prioritu. Zásoby na skladě lze použít před jakýmikoliv jinými typy poptávky. Během výpočtu zpoždění se přidá nová logika k procházení opožděnými prodejními řádky, požadavky na řádek kusovníku a všemi ostatními typy poptávky, za účelem určení, zda mohou být doručeny včas, za předpokladu použití rezervních zásob. Pokud systém identifikuje, že použití rezervních zásob může minimalizovat zpoždění, řádky prodeje nebo řádky kusovníku nahradí jejich počáteční disponibilitu rezervními zásobami a systém místo toho spustí doplnění rezervních zásob.
 
 Pokud pro výpočet zpoždění není nastaven plán nebo položka, bude mít omezení rezervních zásob stejnou prioritu jako ostatní typy poptávky. To znamená, že existuje rezerva zásob na skladě a dalších dostupných zásob před jinými typy poptávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

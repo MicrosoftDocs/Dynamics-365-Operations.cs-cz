@@ -293,3 +293,6 @@ Tato část udržuje seznam známých problémů pro nový ovládací prvek mř�
 ### <a name="quality-update-for-1009platform-update-33"></a>Aktualizace pro zvýšení kvality pro verzi 10.0.9 / Platform update 33
 
 - [KB 4550367] Časové hodnoty nejsou správně naformátovány.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

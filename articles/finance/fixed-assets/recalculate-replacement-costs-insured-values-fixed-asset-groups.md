@@ -77,3 +77,6 @@ Následující den vám manažer oznámí, že počítače klesly o 8 % místo 1
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

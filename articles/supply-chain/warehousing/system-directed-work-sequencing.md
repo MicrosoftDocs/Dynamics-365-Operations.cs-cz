@@ -304,3 +304,6 @@ Dotazy na řazení práce řízené systémem jsou *inkluzivní*. Na tuto skute�
 Proto bylo v příkladu v tomto scénáři ID práce *4* také zachyceno dotazem. Při vytvoření byly přidány dva řádky: jeden pro 25 ks druhý pro 10 ks. Práce je prezentována uživateli, protože alespoň jeden řádek práce má množství menší než 20 ks.
 
 V závislosti na scénáři můžete tomuto chování bránit s využitím dělení práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

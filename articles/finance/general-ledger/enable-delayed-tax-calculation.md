@@ -64,3 +64,6 @@ Systém dává prioritu nastavení pro záhlaví deníku. Ve výchozím nastaven
 4. Na kartě **Nastavení** nastavte možnost **Výpočet opožděné daně** na hodnotu **Ano**.
 
 ![Obrázek stránky hlavního deníku](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

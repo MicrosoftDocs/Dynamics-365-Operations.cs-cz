@@ -51,3 +51,6 @@ Při platbě hotovosti v POS může uživatel použít nominální hodnoty k ryc
 
 - **Větší nebo rovno splatné částce** - Ve výchozím nastavení POS zobrazí pouze nominálních hodnoty, které jsou větší než splatná částka, což umožňuje úhradu jedním dotykem. Pokud je například dlužná částka 7,5 USD, POS zobrazí následující nominální hodnoty: 10 USD, 20 USD, 50 USD a 100 USD. Dotyk jedné z těchto částek automaticky uhradí prodej za tuto částku. Bankovky 1 USD a 5 USD se nezobrazují, protože tyto částky jsou menší než částka k zaplacení.
 - **Všechny nominální hodnoty** - Zvolte tuto možnost, aby se vždy zobrazily všechny nominální hodnoty v POS, bez ohledu částku k úhradě. To znamená, že uživatel může použít kombinaci bankovek k dosažení splatné částky. Například pokud je dlužná částka 25,00 USD, uživatel si může zvolit 20 USD a 5 USD k dokončení prodeje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Při spuštění hlavního plánování se vytvoří dvě plánované objednávk
 > Po spuštění plánované objednávky, která je vázána na nákupní objednávku, plánovací modul udržuje vázání na nákupní objednávku. Pokud později zjistíte, že ve schválené objednávce chybí určité množství, které je nutné ke splnění požadavku na nákup, systém vytvoří novou plánovanou objednávku rozdílu.
 
 Další obecné informace o nákupních žádankách naleznete v tématu [Přehled nákupní žádanky](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

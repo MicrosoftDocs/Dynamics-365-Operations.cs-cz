@@ -50,3 +50,6 @@ Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtový
     * Chcete-li provádět volitelné výběry, klikněte na ikonu Odemknout v horní části stránky.  
 18. Klepněte na položku Aktualizovat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

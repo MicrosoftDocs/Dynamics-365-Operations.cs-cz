@@ -57,3 +57,6 @@ Názory, novinky a další informace o řízení zásob a jiných řešeních na
 
 ### <a name="task-guides"></a>Průvodci záznamem úloh
 K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko **Nápověda** na kterékoliv stránce
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Tento záznam používá ukázkovou společnost DEMF.
 6. V poli **Stručný popis** zadejte popis pro interní účely.
 7. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

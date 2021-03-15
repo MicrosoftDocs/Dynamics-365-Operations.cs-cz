@@ -83,3 +83,6 @@ Následující obrázek ukazuje, jak publikovat aktualizace kanálů.
 [Vytvoření hierarchie navigace sítě](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Běžné scénáře jsou k dispozici pro prodejce používající aplikaci Comme
 + Vyskladňovat produkty v aktuálním obchodě nebo jiném obchodě.
 + Zrušit objednávku v aktuálním obchodě nebo jiném obchodě.
 + Vrátit objednávku s či bez příjmu v aktuálním obchodě nebo jiném obchodě.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

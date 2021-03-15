@@ -101,3 +101,6 @@ Na stránce **Všichni odběratelé** (**Pohledávky \> Odběratelé \> Všichni
     V tomto případě je účinný limit úvěru 125 000 (= A + \[B × C\]).
     
     Pokud však zvolíte políčko **Zahrnuto v expozici**, bude hodnota **Aktualizovat limit úvěru** 50 000 (= 50,00 % ze 100 000) odebrána a hodnota expozice je 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

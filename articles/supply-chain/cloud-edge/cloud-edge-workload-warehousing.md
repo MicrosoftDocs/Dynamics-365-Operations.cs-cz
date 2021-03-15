@@ -292,3 +292,6 @@ V úloze v jednotkách škálování můžete spravovat následující dávkové
 - Zpracování záznamů tabulky vln
 - Zpracovatel zprávy z centra skladu do jednotky škálování
 - Zpracovat požadavky na aktualizaci množství pro řádky objednávky skladu
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

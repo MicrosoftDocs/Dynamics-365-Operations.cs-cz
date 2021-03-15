@@ -54,3 +54,6 @@ Zákon IRCA (Immigration Reform and Control Act) vyžaduje od amerických zaměs
 22. V poli Číslo dokumentu zadejte nebo vyberte hodnotu.
 23. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Po povolení doporučení produktů budete muset přidat panel doporučení na �
 [Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
 
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

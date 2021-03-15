@@ -60,3 +60,6 @@ Na stránce **Profily sazeb** můžete zkontrolovat všechny dostupné profily s
 
 > [!NOTE]
 > Profily, které jsou vytvořeny na stránce **Přepravci**, se také zobrazují na stránce **Profily sazeb**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

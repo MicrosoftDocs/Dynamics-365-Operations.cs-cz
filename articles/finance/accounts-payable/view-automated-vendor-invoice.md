@@ -37,3 +37,6 @@ Pokud importovaná faktura podléhá procesu odeslání do pracovního postupu, 
 - **Pozastaveno** – Automatizované procesy definované na stránce **Parametry závazků** proběhly, ale nejméně jeden krok procesu selhal. Stav **Pozastaveno** se použije také v případě, že je pole **Zahrnout do automatizovaného zpracování** nastaveno na **Ne**. Selhání si můžete prohlédnout výběrem volby **Zobrazit poslední výsledky**.
 - **V pracovním postupu** – Importovaná faktura byla odeslána do systému pracovního postupu, a to buď automatizovaným procesem odeslání do pracovního postupu, nebo ručně.
 - **Pracovní postup dokončen** – Proces u importované faktury byl dokončen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Tato procedura popisuje způsob tvorby, tisku a zaúčtování oznámení úrok�
 5. Klikněte na tlačítko **OK**.
 6. V poli **Stav** vyberte možnost „Zaúčtováno“.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

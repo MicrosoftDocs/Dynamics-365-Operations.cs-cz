@@ -81,3 +81,6 @@ Dokud společnost Microsoft nevydá řešení k vyřešení problému, zvažte p
 - Ve standardní ceně se vyhněte desítkovým hodnotám. Zkuste definovat standardní cenu tak, aby pole **Cenové množství** bylo nastaveno na *1*. Pokud musíte zadat hodnotu **Cenové množství**, která je větší než *1*, zkuste minimalizovat počet desetinných míst v jednotkové standardní ceně. (V ideálním případě by měla být méně než dvě desetinná místa.) Například se vyhněte definování standardního nastavení nákladů, jako je **Cena** = *10* a **Cenové množství** = *3*, protože vytvoří jednotkovou standardní cenu 3.333333 (kde se opakuje desetinná hodnota).
 - Ve většině dokumentů nepoužívejte více řádků, které obsahují stejnou kombinaci dimenzí produktů a finančních zásob.
 - Snižte stupeň paralelizace. (V tomto případě se systém může zrychlit, protože dojde k menšímu počtu konfliktů a opakování aktualizací.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

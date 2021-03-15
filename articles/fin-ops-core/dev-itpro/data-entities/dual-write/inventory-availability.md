@@ -118,3 +118,6 @@ Pole aplikace Finance and Operations | Typ mapování | Pole Customer Engagement
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ V konsolidační společnosti nebudete moci zpracovávat ani vyplňovat rozpočt
 Další informace naleznete v tématu [Přecenění měny ve společnosti konsolidace](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

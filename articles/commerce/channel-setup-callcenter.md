@@ -135,3 +135,6 @@ Chcete-li nastavit cenovou skupinu, postupujte podle následujících pokynů.
 [Nastavení a práce s výstrahami u podvodů](set-up-fraud-alerts.md)
 
 [Nastavení programů kontinuity pro kontaktní střediska](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

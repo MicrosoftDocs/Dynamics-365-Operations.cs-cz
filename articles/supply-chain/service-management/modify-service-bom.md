@@ -71,3 +71,6 @@ Můžete zaznamenat historii prvku v rámci servisního kusovníku. Pokaždé, k
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

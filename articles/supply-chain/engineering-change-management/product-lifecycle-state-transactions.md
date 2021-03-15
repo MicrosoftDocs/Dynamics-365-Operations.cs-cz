@@ -75,3 +75,6 @@ Následující pole jsou k dispozici pro každý proces, který je uveden na zá
 | Zásada | Vyberte jednu z následujících hodnot, abyste určili, zda a jak bude povolen aktuální proces pro produkty, které jsou v tomto stavu životního cyklu:<ul><li>**Povoleno** - Obchodní proces je povolen.</li><li>**Blokováno** - Proces není povolen. Pokud se uživatel pokusí použít proces na produktu, který je v tomto stavu životního cyklu, systém pokus zablokuje a místo toho zobrazí chybu. Můžete například blokovat nákup produktů na konci životnosti.</li><li>**Povoleno s varováním** - Proces je povolen, ale zobrazí se varování. Můžete například chtít nasadit prototypový produkt do výrobní zakázky vytvořené oddělením výzkumu a vývoje. Ostatní oddělení by si však měla být vědoma toho, že by produkt ještě neměla vyrábět.</li></ul> |
 
 Pokud přidáváte další pravidla stavu životního cyklu jako přizpůsobení, můžete tato pravidla zobrazit v uživatelském rozhraní výběrem možnosti **Obnovit procesy** v horním panelu. Tlačítko **Obnovit procesy** je k dispozici pouze správcům.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -259,3 +259,6 @@ Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

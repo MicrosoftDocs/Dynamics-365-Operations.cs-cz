@@ -59,3 +59,6 @@ Chcete-li definovat vlastní fokální bod pro obrázek, postupujte následujíc
 [Oříznutí obrázků](dam-crop-images.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

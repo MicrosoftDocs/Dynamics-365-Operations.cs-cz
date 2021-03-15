@@ -63,3 +63,6 @@ Pokud jednotlivé části pracovního prostoru mají filtry, můžete filtrovat 
 [![Konfigurace a filtrování pracovních prostorů](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Stejně jako v případě filtru celého pracovního prostoru vyberte nebo zadejte do pole hodnotu k filtrování obsahu části.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

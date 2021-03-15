@@ -77,3 +77,6 @@ Pokud však používáte položku, která má hierarchii rezervace "dávka pod" 
 Toto chování je záměrné. Pokud vložíte dimenzi nad dimenzi **Umístění** v hierarchii rezervací, musí být zadána před uvolněním do skladu. Společnost Microsoft vyhodnotila tento problém a zjistila, že se jedná o omezení funkcí během uvolnění do skladu z pracovní plochy plánování nákladu. Částečná množství nelze uvolnit, pokud je není apecifikována jedna nebo více dimenzí nad **Umístěním**.
 
 Další informace viz [Flexibilní zásada rezervace dimenze na úrovni skladu](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

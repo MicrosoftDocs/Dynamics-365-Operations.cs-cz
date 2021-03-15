@@ -99,3 +99,6 @@ Pokud chcete spolupracovat se společností Microsoft na nástrojích a procesec
 [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)  
 [Vytváření dokumentace nebo školení pomocí záznamníku úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Úložiště GitHub vlastní nápovědy](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

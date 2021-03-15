@@ -42,3 +42,6 @@ Toto téma popisuje získání dlouhodobého majetku pomocí návrhu pořízení
 - V návrhu pořízení bude zahrnut pouze dlouhodobý majetek s datem pořízení a pořizovací cenou nastavenou v knize.  
 11. Na stránce vyberte kartu **Knihy**.
 12. Zvolte **Zaúčtovat**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

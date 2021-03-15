@@ -208,3 +208,6 @@ Následující sloupce určují, kde lze operace vyvolat:
 § Když je POS offline, pouze transakce v aktuální offline databázi lze stornovat k vrácení.
 
 \*\* Když je POS offline, pouze transakce v aktuální offline databázi kanálů se zobrazí v deníku.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Aktivace nové standardní ceny obvykle přecení aktuální hodnotu zásob stan
 - **Žádný** - žádné finanční dimenze nebyly zaúčtovány pro transakce zaměřené na přecenění cizí měny. Pokud vaše účetní struktura zahrnuje požadovanou finanční dimenzi ve vaší účetní struktuře, proces přecenění stále probíhá, ale vytvoří účetní položky, které nemají žádné finanční dimenze. V takovém případě uživatelé nejprve obdrží varovnou zprávu, aby mohli v případě potřeby přecenění zrušit.
 - **Tabulka** – Finanční dimenze položky se pak zaúčtují na transakcích přecenění. Toto je výchozí nastavení a je v souladu s původním chováním systému bez zapnutí funkce *Možnosti výchozí finanční dimenze pro přecenění standardních nákladů na zásoby*.
 - **Zaúčtování** – finanční dimenze transakce, která je právě přehodnocena, je zaúčtována v transakcích přecenění. Ve výchozím nastavení se finanční dimenze z účtu zásob původní transakce použijí jak pro účet inventáře, tak pro účet přecenění.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

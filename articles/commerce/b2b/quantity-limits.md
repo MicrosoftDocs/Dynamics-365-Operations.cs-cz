@@ -84,3 +84,6 @@ Chcete-li zapnout funkci omezení počtu objednávek B2B v konfigurátoru webů 
 [Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování](manage-b2b-users.md)
 
 [Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

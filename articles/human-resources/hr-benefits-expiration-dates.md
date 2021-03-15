@@ -46,3 +46,6 @@ Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstna
 15. Klikněte na možnost Zaměstnanecké výhody.
 16. V seznamu vyhledejte výhodu a vyberte záznam. Všimněte si nového koncového data pokrytí.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

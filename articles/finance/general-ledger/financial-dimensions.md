@@ -139,3 +139,6 @@ Další informace naleznete v následujících tématech:
 
 - [Definování finančních dimenzí](tasks/define-financial-dimensions.md)
 - [Udržování výchozích šablon finančních dimenzí](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

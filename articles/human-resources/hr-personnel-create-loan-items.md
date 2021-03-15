@@ -59,3 +59,6 @@ Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické polož
 14. Klikněte na tlačítko OK.
 15. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Následující ilustrace znázorňuje zobrazení podrobností okna **Aktivity pr
 - Položky majetku lze kopírovat z jedné aktivity prostoje údržby do jiné. V části **Všechny aktivity prostojů údržby** vyberte tlačítko **Kopírovat aktivity prostoje údržby** a vyberte požadované položky v polích **Z aktivit prostoje údržby** a **Do aktivit prostoje údržby** prostoje a klikněte na tlačítko **OK**.
 - V části **Všechny aktivity prostoje údržby** kliknutím na tlačítko **Řádky rozvrhu údržby** nebo **Aktivní pracovní příkazy** otevřete související seznamy a zobrazíte řádky související s vybranou aktivitou prostoje údržby.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

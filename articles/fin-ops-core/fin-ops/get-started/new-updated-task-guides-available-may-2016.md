@@ -193,3 +193,6 @@ Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, určen�
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

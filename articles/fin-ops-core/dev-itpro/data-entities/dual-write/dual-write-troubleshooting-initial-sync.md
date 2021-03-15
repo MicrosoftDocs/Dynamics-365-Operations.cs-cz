@@ -211,3 +211,6 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
     Počáteční synchronizace řádků je nyní dokončena.
 
 8. V aplikaci Finance and Operations opět zapněte sledování změn pro tabulku **Customers V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

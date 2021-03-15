@@ -72,3 +72,6 @@ Podrobnosti, jak přidat modul navigační nabídky do modulu záhlaví, viz [Mo
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
 
 [Modul záhlaví](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

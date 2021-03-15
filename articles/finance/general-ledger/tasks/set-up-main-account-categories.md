@@ -41,3 +41,6 @@ Toto téma vysvětluje, jak nastavit kategorie hlavního účtu. Kategorie hlavn
 3. Hlavní účty vyberete zvolením nebo zrušením výběru **Propojeno**.
 4. Vyberte **OK**.
 5. Vyberte **Ano**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

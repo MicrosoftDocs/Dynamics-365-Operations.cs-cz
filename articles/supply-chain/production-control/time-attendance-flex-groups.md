@@ -184,3 +184,6 @@ Tato změna proběhne po převodu, protože hodiny pružné pracovní doby byly 
 | 06:00 odp. | 08:00 odp. | 2    | 1.5       | 3            |
 | 08:00 odp. | 09:00 odp. | 1    | 2         | 2            |
 |          |          |      | **Celkem** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

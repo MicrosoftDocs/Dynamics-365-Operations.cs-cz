@@ -102,3 +102,6 @@ Výstrahy nelze vytvořit pro některé sekundární zdroje dat ve formuláříc
     ```
 2. Vytvořte výstrahu z formuláře SysTableBrowser.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

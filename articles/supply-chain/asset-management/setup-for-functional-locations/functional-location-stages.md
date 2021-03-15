@@ -62,3 +62,6 @@ Pokud jste vytvořili stavy životního cyklu vyžadované pro vaše funkční m
 5. Chcete-li pro model vybrat všechny dostupné stavy, klikněte na tlačítko ![vybrat všechny dostupné fáze](media/03-setup-for-functional-locations.png). Všechny stavy jsou převedeny do části **Vybrané stavy životního cyklu**.
 6. Chcete-li z modelu odebrat vybraný stav, vyberte stav v části **Vybrané stavy životního cyklu** a poté zvolte tlačítko se ![šipkou zpět](media/04-setup-for-functional-locations.png).
 7. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu, které mohou následovat po vybraném stavu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

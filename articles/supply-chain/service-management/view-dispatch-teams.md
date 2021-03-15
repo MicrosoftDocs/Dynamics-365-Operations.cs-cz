@@ -52,3 +52,6 @@ Informace o přiřazování pracovníka týmu naleznete v tématu [Nastavení up
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

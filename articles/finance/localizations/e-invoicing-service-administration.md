@@ -138,3 +138,6 @@ Prostředí musí být nakonfigurováno na kartě **Služby odesílání** na st
 
 - [Konfigurace elektronických faktur v RCS](e-invoicing-configuration-rcs.md)
 - [Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

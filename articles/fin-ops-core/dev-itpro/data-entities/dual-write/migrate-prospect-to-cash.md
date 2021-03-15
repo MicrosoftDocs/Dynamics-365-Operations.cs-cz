@@ -98,3 +98,6 @@ Protože data z tabulky **Produkty** jsou navržena tak, aby plynula jedním sm�
 ## <a name="quote-and-quote-product-tables"></a>Nabídka a tabulky produktu Nabídka
 
 Pro tabulku **Nabídka** postupujte podle pokynů v části [Tabulka objednávky](#order-table) dříve v tomto tématu. Pro tabulku **Produkt nabídky** postupujte podle pokynů v části [Tabulka produktů objednávky](#order-products-table) dříve v tomto tématu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

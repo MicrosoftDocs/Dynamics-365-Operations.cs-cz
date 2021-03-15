@@ -146,3 +146,6 @@ Další sestavy, které jsou k dispozici, zahrnují sestavu **Pozice prognózy p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlast
 [Modul podrobností objednávky](order-confirmation-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

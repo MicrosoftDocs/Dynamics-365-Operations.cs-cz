@@ -56,3 +56,6 @@ Je-li okamžité doplnění vybráno pro řádek směrnice skladového místa, a
 
 - Ujistěte se, že je šablona doplnění poptávky, která je použita, je nastavena na použití správných šablon místa a pracovních šablon typu **doplnění**.
 - Ujistěte se, že je dostatečné množství zásob na skladě ve skladových místech, kde šablona doplnění poptávky vyhledá zásoby na skladě pro doplnění.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

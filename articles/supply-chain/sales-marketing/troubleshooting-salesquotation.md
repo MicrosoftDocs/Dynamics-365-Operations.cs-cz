@@ -39,3 +39,6 @@ Pokud se pokusíte nastavit prodejní množství (pole **SalesQty**) pro položk
 
 U produktů, které jsou položkami služby, nemůžete nastavit prodejní množství. Například pokud nabídnete službu pro instalaci položky, nemá smysl zaznamenávat množství, protože neexistuje žádná fyzická položka. Existuje pouze služba.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Konsolidovaná právnická osoba je nyní nastavena pro periodickou úlohu **Kon
 
 > [!NOTE]
 > Před zpracováním konsolidace musíte připravit právnické osoby dceřiné společnosti na konsolidaci. Další informace viz [Založení dceřiné právnické osoby ke konsolidaci](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

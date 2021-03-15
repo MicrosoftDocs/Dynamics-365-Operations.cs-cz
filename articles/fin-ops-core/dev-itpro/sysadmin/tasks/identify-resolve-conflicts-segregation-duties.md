@@ -59,3 +59,6 @@ Když přiřadíte uživatele rolím, pravidla pro dělení zodpovědnosti se au
 
 > [!NOTE]
 > Pokud je u stejného uživatele uvedeno několik konfliktů, vyberte záznam uživatele a vyhodnoťte přiřazené role na stránce **Uživatelé**. Abyste se tomuto konfliktu vyhnuli, ověřte každé pravidlo po jeho přidání nebo úpravě.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

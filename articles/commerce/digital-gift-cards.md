@@ -100,3 +100,6 @@ Ke konfiguraci vlastní částky pro digitální dárkovou kartu v nástroji kon
 [Vytvoření online funkčního profilu](online-functionality-profile.md)
 
 [Podpora pro externí dárkové poukazy](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

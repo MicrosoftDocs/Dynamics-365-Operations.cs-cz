@@ -84,3 +84,6 @@ Musíte také provést ruční úpravy prognózy na stránce **Podrobnosti progn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

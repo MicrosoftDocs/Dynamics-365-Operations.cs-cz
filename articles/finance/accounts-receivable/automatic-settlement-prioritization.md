@@ -82,3 +82,6 @@ Pokud nejsou uvedeny žádné uživatelem definované priority vyrovnání, tran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

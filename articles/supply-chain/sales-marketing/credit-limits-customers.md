@@ -137,3 +137,6 @@ V některých případech je třeba ručně zkontrolovat limit úvěru odběrate
 1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**. Dvakrát klikněte na prodejní objednávku.
 
 2.  Ve formuláři **Prodejní objednávka** v podokně akcí na kartě **Spravovat**, klikněte na **Zkontrolovat limit úvěru**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

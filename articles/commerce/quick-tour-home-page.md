@@ -72,3 +72,6 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 [Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

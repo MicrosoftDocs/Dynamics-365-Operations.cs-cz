@@ -158,3 +158,6 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
 11. Chcete-li zobrazit čistý efekt ukončení, kde používaný majetek a závazek z leasingu budou 0 (nula), otevřete tabulky transakcí a aktivy a pasivy.
 
 Stav leasingu by nyní měl být **Ukončeno**. Proti tomuto leasingu nebudou zaúčtovány žádné další položky deníku, pokud nebude ukončení stornováno.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

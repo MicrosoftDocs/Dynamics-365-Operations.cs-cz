@@ -104,3 +104,6 @@ Na základě polí, která jste vybrali do schématu, každý uzel zobrazí př�
 **Další možnost**
 
 V aplikaci Human Resources můžete rovněž použít pracovní prostor **Osoby** pro zobrazení některých informací souvisejících s hierarchií.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

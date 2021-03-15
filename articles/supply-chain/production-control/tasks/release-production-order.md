@@ -40,3 +40,6 @@ Tato procedura popisuje způsob uvolnění výrobní zakázky. K vytvoření to
 6. Klepněte na tlačítko OK.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

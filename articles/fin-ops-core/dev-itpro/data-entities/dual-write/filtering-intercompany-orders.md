@@ -66,3 +66,6 @@ Každá standardní tabulka Dataverse je rozšířena o odkazy na sloupec **Mezi
 8. Poté, co rozšíříte entitu **Nabídky**, použijte filtr s řetězcem `CUSTGROUP != "<company>"` ve funkci řetězce dotazu.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Dialogové okno Upravit dotaz pro záhlaví prodejní nabídky CDS":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

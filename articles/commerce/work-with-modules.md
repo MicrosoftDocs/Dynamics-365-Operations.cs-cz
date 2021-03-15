@@ -172,3 +172,6 @@ Chcete-li konfigurovat modul kontejneru na stránce, postupujte podle následuj�
 
 [Práce s publikovacími skupinami](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

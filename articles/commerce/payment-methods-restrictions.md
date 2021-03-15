@@ -60,3 +60,6 @@ Když je možnost **Omezit pro refundace bez příjemky** nastavena na **Ano**, 
 
 Pokud má transakce vrácení s příjemkou i bez příjemky, podmínky omezení nebudou vynuceny, protože transakce bude workflow vrácení s příjemkou. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

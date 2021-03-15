@@ -52,3 +52,6 @@ Na stránce **Skupiny disponibility** můžete vybrat zprávy akcí, které má 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

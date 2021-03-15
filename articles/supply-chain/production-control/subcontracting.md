@@ -302,3 +302,6 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     ![Graf porovnání nákladů](./media/subcontract35_cost-comparison-charts.png)
 
 Chybí nastavení v datech.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

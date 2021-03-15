@@ -87,3 +87,6 @@ Pořadí zobrazení hierarchie navigace kanálu se odráží v centrále, katalo
 
 > [!NOTE]
 > Ve výchozím nastavení je funkce vlastního řazení vypnutá. Informace o zapnutí této funkce a dalších funkcí naleznete v tématu [Správa funkcí](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

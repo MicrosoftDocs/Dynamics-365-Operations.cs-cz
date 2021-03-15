@@ -106,3 +106,6 @@ V následující tabulce jsou uvedeny formuláře, které podporují komponenty 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

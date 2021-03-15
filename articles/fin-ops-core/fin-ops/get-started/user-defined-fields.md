@@ -162,3 +162,6 @@ Z důvodů výkonnosti a z technických důvodů momentálně podporují přidá
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Lze odkazovat na vlastní pole z nástrojů pro vývojáře?  
 
 Vlastní pole lze spravovat pouze prostřednictvím uživatelského rozhraní a nelze na ně odkazovat pomocí kódu. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

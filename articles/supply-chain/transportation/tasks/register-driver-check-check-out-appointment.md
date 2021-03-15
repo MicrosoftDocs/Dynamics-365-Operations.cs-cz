@@ -45,3 +45,6 @@ Tento postup popisuje, jak zaregistrovat přihlášení a odhlášení řidiče.
 1. Klikněte na Odhlášení řidiče.
 2. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

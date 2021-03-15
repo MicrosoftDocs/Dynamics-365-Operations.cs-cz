@@ -99,3 +99,6 @@ Modul seznamu recenzí produktu obsahuje pozici, do níž lze přidat modul hist
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ April může zkontrolovat transakce dodavatelů na stránce **Transakce dodavate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

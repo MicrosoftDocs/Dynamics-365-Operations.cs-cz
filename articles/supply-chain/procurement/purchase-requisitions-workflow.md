@@ -120,3 +120,6 @@ Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve work
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

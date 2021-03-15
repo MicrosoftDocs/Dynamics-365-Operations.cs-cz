@@ -66,3 +66,6 @@ Když vyberete tuto dlaždici, otevře se stránka **Všechny vlny výroby**. Ta
 Dlaždice **Otevřená skladová práce vyžadující pozornost** zobrazuje počet řádků kusovníku a receptury, které byly uvolněny do skladu, mají nezpracovanou práci a které mají datum surovin dřívější nebo stejné jako datum pracovního prostoru. Řádky musí být spotřebovány provozním prostředkem, který se použije na filtrování pracovního prostoru.
 
 Když vyberete tuto dlaždici, otevře se stránka **Veškerá práce**. Tato stránka je filtrována podle počtu otevřených záhlaví práce, které obsahují řádky práce z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice. Ze stránky **Veškerá práce** můžete práci zpracovat ručně.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

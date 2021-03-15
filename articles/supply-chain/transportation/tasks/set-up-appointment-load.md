@@ -46,3 +46,6 @@ Tato procedura ukazuje, jak nastavit a naplánovat událostí překladiště pro
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

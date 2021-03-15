@@ -46,3 +46,6 @@ Chcete-li vytvořit metodu přepravy, postupujte dle těchto kroků:
 1. Zvolte **Nová** a vytvořte novou metodu přepravy.
 1. Zadejte jedinečné ID a popisný název metody přepravy.
 1. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

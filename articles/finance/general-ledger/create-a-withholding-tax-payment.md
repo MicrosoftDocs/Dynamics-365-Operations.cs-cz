@@ -40,3 +40,6 @@ Procedura úlohy platby srážkové daně slouží k vyrovnání zůstatků srá
 7. Klikněte na tlačítko **OK**.
 
 ![Parametry platby srážkové daně](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

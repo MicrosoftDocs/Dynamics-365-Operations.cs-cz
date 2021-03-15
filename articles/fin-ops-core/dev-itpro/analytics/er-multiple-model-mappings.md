@@ -182,3 +182,6 @@ Mapování modelu **Kopie InvoiceProject** konfigurace **Mapování modelu faktu
 - [Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země](er-country-dependent-model-mapping.md)
 - [Změny API rámce architektury elektronického výkaznictví](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

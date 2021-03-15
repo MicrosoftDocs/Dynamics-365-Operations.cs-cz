@@ -46,3 +46,6 @@ Při nastavování servisní fáze můžete vytvořit více možností nebo vět
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

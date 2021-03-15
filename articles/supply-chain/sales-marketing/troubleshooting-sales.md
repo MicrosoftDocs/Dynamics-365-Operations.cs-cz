@@ -112,3 +112,6 @@ Supply Chain Management aktuálně nepodporuje výpočet provizí za zaúčtovan
 Položka sady není pro nákupní objednávku k dispozici, protože pokud prozkoumáte řádky prodejní objednávky pro položku sady, zjistíte, že množství je *0* (nula) a stav je *Zrušeno*. Toto chování je záměrné. Prodejní objednávka nakupuje pouze komponenty položky sady. Nezakupuje samotnou položku sady.
 
 Pokud si musíte koupit sadu, zvažte, zda ji musíte označit jako položku sady, protože tato funkce je navržena pro scénáře rozpoznávání výnosů. Další informace o položkách sady naleznete v tématu [Sady](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

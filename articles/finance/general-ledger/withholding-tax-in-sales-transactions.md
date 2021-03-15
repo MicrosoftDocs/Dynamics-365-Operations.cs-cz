@@ -63,3 +63,6 @@ Výchozí skupina srážkové daně a skupina srážkové daně položky se pou�
 Srážková daň se vypočítá a zaúčtuje s **Deníkem plateb odběratele**. Můžete ručně upravit příslušný kód srážkové daně i skutečnou částku srážkové daně na kartě **Srážková daň** na stránce **Vypořádat transakce**.
 
 Vypočtená částka srážkové daně bude odečtena z platby odběratele a zaúčtována na **Protiúčet srážkové daně** v souvisejícím dokladu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

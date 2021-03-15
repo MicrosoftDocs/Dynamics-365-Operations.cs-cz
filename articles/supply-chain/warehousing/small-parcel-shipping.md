@@ -279,3 +279,6 @@ Chcete-li zpracovat dodávku, postupujte následovně.
     ![Příklad expedičního štítku](media/sps-label-example.png "Příklad expedičního štítku")
 
 1. Všimněte si, že hodnoty **ID manifestu kontejneru** a **Celkem dopravné** byly přidány jako přijaté od dopravce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

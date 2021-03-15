@@ -63,3 +63,6 @@ Následující obrázek znázorňuje příklad funkčního profilu.
 [Přehled rozložení obrazovky](pos-screen-layouts.md)       
 
 [Konfigurace a instalace Retail hardware station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

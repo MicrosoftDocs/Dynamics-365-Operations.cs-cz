@@ -97,3 +97,6 @@ Verze konfigurace je odstraněna a zobrazí se potvrzovací zpráva.
 > [!NOTE]
 > Konfigurace mohou být odstraněny pouze poskytovatelem konfigurace, který je vytvořil. Pokud byla konfigurace sdílena s jinou organizací, bude nutné ji před odstraněním zrušit.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

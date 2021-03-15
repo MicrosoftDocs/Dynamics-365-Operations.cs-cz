@@ -103,3 +103,6 @@ Má-li přihlášku zkontrolovat několik pracovníků, lze pro vytvoření sezn
 ## <a name="hiring-applicants"></a>Přijímání uchazečů
 
 Pomocí stránky **Přihlášky** můžete najmou uchazeče. Při náboru žadatele bude mít záznam přihlášky stav **Zaměstnán** a osobní záznam uchazeče v globálním adresáři je přidružen k novému záznamu pracovníka. Změny informací v globálním adresáři pro nový záznam pracovníka je zobrazen také v záznamu žadatele. To vám může pomoci snížit objem zadávaní dat, pokud nový pracovník někdy zažádá o jinou pozici v rámci vaší organizace. Pokud chcete přijmout stávajícího pracovníka na novou pozici, klikněte na **Změnit pozici** v rozevíracím seznamu **Stav přihlášky** pro zahájení procesu převodu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

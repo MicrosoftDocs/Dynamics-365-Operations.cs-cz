@@ -129,3 +129,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
     -   Podle fyzické inventury (Toto zobrazení představuje celkovou částku).
     -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
     -   Fyzicky k dispozici (Toto zobrazení představuje částku k dispozici, která nemá žádné rezervace.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

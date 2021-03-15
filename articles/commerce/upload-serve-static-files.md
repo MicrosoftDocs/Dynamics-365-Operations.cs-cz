@@ -105,3 +105,6 @@ K úpravě cesty URL postupujte následovně.
 [Oříznutí obrázků](dam-crop-images.md)
 
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

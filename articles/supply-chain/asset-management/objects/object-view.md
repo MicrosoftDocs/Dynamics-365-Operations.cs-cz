@@ -47,3 +47,6 @@ ID funkčního místa / ID funkčního místa (pokud existuje více než jedno f
 Pokud jste ve stromovém zobrazení vybrali nějaký majetek, můžete vybrat **Aktivní požadavky** nebo **Aktivní pracovní příkazy** a zobrazit tak požadavky na údržbu nebo pracovní příkazy, které souvisejí s majetkem. Chcete-li otevřít související zobrazení, vyberte **Otevřít** \> **Funkční místo**, **Majetek** nebo **Kusovník majetku**.
 
 Možnost **Funkční místo majetku**, kterou můžete vybrat v poli **Zobrazení**, je také k dispozici v libovolném vyhledávání majetku, kde můžete vybrat majetek. Stromové zobrazení se zobrazí na kartě **Zobrazení majetku**, například kde [vytvoříte majetek](../objects/create-an-object.md), vytvoříte požadavek údržby nebo vytvoříte pracovní příkaz.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

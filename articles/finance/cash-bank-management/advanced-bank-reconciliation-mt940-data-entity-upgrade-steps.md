@@ -63,3 +63,6 @@ Následující postup slouží k přidání importu bankovního výpisu entity p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

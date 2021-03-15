@@ -36,3 +36,6 @@ Procedura úlohy Vyrovnat a zaúčtovat DPH slouží k vyrovnání zůstatků DP
 5. Zadejte datum do pole **Datum transakce**.
 6. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

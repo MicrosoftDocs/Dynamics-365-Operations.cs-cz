@@ -93,3 +93,6 @@ Protokoly odeslání obsahují následující dodatečné funkce:
 - **Zrušit odeslání** – Tato funkce umožňuje speciální zpracování odesílání v situacích, kdy musí být elektronická faktura schválena externí webovou službou. Dává pokyn doplňku elektronické fakturace, aby webové službě odeslal specifickou zprávu, která má zrušit stav schválené elektronické faktury v databázi webové služby.
 - **Znovu odeslat dokument** – Opětovné odeslání elektronického dokumentu, který již byl odeslán do doplňku elektronické fakturace. Na stránce **Podrobnosti o odeslání** se vytvoří celý nový protokol.
 - **Provést související odeslání**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

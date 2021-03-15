@@ -63,3 +63,6 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 
 - [Záloha pro zaměstnance (východní Evropa)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

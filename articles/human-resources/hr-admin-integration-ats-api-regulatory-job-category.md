@@ -49,3 +49,6 @@ Tento výčet určuje sadu možností pro hodnoty sady možností regulační ka
 
 [Úvod do rozhraní API pro integraci systému sledování žadatelů](hr-admin-integration-ats-api-introduction.md)<br>
 [Příklad dotazu na žádost o nábor](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

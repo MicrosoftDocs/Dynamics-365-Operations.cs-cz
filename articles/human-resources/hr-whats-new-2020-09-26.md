@@ -84,3 +84,6 @@ Následující nová funkce je naplánována do budoucího vydání:
 [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Proces aktualizace](hr-admin-setup-update-process.md)
 [Správa funkcí](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

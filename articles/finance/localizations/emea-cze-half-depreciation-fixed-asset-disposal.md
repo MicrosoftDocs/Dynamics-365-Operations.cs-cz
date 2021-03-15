@@ -57,3 +57,6 @@ Po nastavení metod odpisů lze použít pololetní odpisy majetku pro vyřazen�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

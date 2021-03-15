@@ -130,3 +130,6 @@ Tento scénář ukazuje, jak tato funkce funguje pro sklady, u nichž je nastave
 
 > [!NOTE]
 > Stejný výsledek lze očekávat, když bude druhý řádek částečně rezervován. V tomto případě se vytvoří práce rezervované množství řádku objednávky, nikoli však pro množství pro něž rezervace provedena nebyla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

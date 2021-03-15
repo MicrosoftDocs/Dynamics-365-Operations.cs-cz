@@ -290,3 +290,6 @@ Když je jedna funkce elektronické fakturace odvozena od jiné, příkaz **Změ
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -276,3 +276,6 @@ Chcete-li zobrazit obsah potvrzení dodavatele nebo chybové odpovědi, vyberte 
 
 - [Nastavení externího katalogu pro funkci PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 - [Použití externích katalogů pro funkci PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

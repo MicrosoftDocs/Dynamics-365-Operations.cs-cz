@@ -44,3 +44,6 @@ Toto je první z pěti úkolů, které společně popisují proces platby dodava
     * Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.  
 9. Klepněte na tlačítko Ano.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

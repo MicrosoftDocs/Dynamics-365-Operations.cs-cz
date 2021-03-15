@@ -128,3 +128,6 @@ Tyto úkoly jsou určeny pro správce systému.
 8. V poli Země/oblast zadejte „PRT“.
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

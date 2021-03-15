@@ -75,3 +75,6 @@ Celkové procento pro všechny intervaly nemusí být 100. Pokud však hodnota v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -162,3 +162,6 @@ Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné po
 [Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

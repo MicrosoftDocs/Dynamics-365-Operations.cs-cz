@@ -66,3 +66,6 @@ Následující obrázek znázorňuje příklad online funkčního profilu.
 [Nastavení maloobchodního kanálu](channel-setup-retail.md)
 
 [Nastavení kanálu kontaktního střediska](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

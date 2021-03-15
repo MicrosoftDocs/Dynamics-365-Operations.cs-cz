@@ -57,3 +57,6 @@ Tento postup vás provede vytvářením rozšířených pravidel pro deníky. To
 4. Ve stromu zkontrolujte „skupinu, pro kterou chcete povolit zaúčtování pro tento název deníku“.
 5. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

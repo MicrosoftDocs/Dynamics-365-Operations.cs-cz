@@ -53,3 +53,6 @@ Můžete podat žádost o pracovní volno a zobrazit stav svých žádostí o vo
 ## <a name="see-also"></a>Viz také
 
 [Přerušit pracovní volno](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

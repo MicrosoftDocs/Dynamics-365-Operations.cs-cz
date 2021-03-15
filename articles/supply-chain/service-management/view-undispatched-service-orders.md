@@ -60,3 +60,6 @@ Toto téma popisuje způsob zobrazení aktivit v servisní zakázce, které nema
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

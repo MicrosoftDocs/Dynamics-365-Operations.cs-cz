@@ -64,3 +64,6 @@ Chcete-li tuto funkci zapnout pro všechny právnické osoby, postupujte podle n
 Tlačítko **Nový dokument** se používá pro vytváření úpravy šablony v konfiguraci formátu elektronického výkaznictví, kterou poskytuje jiný poskytovatel. V tomto příkladu je poskytovatelem Microsoft. Když vyberete **Nový dokument**, zobrazí se všechny šablony vlastněné aktuálními a jinými poskytovateli. Po výběru bude šablona otevřena pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
 Další informace naleznete v tématu [Přehled správy obchodních dokumentů](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

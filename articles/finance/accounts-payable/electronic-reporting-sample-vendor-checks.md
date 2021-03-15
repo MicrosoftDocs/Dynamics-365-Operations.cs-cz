@@ -43,3 +43,6 @@ Microsoft Dynamics 365 Finance zahrnuje ukázkový formát, kde je šek nahoře,
 - Když generujete platby pro nakonfigurovaný bankovní účet v deníku plateb, vytisknou se šeky v zadaném formátu.
 
 Další informace naleznete v tématu [Úprava formátu elektronického výkaznictví](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Následující obrázek znázorňuje příklad konfigurace pro uvolněný produk
 [Vytvořit právnické osoby](channels-legal-entities.md)
 
 [Vytvoření skupiny variant](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

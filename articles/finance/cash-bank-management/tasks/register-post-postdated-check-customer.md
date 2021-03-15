@@ -49,3 +49,6 @@ Podrobnosti postdatovaného šeku přijatého od zákazníka můžete zaregistro
 15. Klikněte na položku Zaúčtovat.
 16. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

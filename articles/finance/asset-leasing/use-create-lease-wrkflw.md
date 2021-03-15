@@ -44,3 +44,6 @@ Než použijete tento postup, ujistěte se, že byl vytvořen alespoň pracovní
 
 8. Chcete-li zastavit pracovní postup, na stránce **Historie pracovního postupu** vyberte **Odvolat**. V dialogovém okně, které se zobrazí, vyberte jinou stránku a pak vyberte **OK**.
 9. Chcete-li deaktivovat pracovní postup nebo aktivovat dříve vytvořený pracovní postup, přejděte na **Majetkový leasing \> Nastavení \> Pracovní postup leasingu**. Pak na stránce **Pracovní postup pronájmu** vyberte **Pracovní postup \> Verze**. Chcete-li, aby byl aktuální pracovní postup neaktivní, vyberte v dialogovém okně verze leasingu aktivní leasing a poté vyberte **Neaktivní**. Chcete-li stávající pracovní postup aktivovat, vyberte pracovní postup a poté vyberte **Aktivovat**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

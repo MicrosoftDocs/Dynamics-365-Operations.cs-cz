@@ -80,3 +80,6 @@ Bez ohledu na to, zda jsou namapovány účty, zrušte zaškrtnutí políčka **
 
 > [!NOTE]
 > Pomocí této metody lze vytvořit účtovou osnovu v konsolidované právnické osobě na základě účtové osnovy některé z dceřiných právnických osob. (Další informace viz [Skupiny konsolidačních účtů a další konsolidační účty](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Poté každému konsolidovanému hlavnímu účtu přiřaďte vhodný princip převodu konsolidace a spusťte konsolidaci pro všechny dceřiné právnické osoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

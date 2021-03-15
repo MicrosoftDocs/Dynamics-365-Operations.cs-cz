@@ -110,3 +110,6 @@ Stránka **Podrobnosti o plánované práci** (**Řízení skladu \> Práce \> P
 Chcete-li zobrazit dávkové úlohy pro zpracování ve vlnách, vyberte **Dávkové úlohy** v podokně akcí na straně **Všechny vlny**.
 
 Odtud můžete zobrazit všechny podrobnosti dávkové úlohy pro každé ID dávkové úlohy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

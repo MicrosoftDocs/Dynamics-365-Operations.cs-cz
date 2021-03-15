@@ -127,3 +127,6 @@ V tomto příkladu je jakékoli účet součástí účetní struktury – zisky
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

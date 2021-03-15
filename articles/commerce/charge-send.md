@@ -41,3 +41,6 @@ Funkce odeslání nákladů používá následující operace POS: Expedovat vš
 Možnost vybrat adresy pro dodání zůstává nezměněna.
 
 Způsoby dodání, které lze použít k plnění řádku objednávky, jsou založeny na konfiguraci platných způsobů dodání pro produkty a adresy. Protože pravidla pro platné způsoby dodání se udržují pouze v modulu Headquarters (HQ), klient POS zavolá v reálném čase pro načtení platných způsobů dodání pro řádek expedice.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

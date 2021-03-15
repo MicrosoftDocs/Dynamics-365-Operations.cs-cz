@@ -156,3 +156,6 @@ Následující obrázek ukazuje účinek skladového modelu LIFO, když je použ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

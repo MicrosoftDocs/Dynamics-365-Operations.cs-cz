@@ -52,3 +52,6 @@ V tomto okamžiku systém určí, která větev se použije, vyhodnocením odesl
     2. Vyberte v oblasti **Ověřit podmínku** formuláře záznam.
     3. Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.
     4. Kliknutím na tlačítko **OK** nebo **Zrušit** se vraťte do formuláře **Vlastnosti**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

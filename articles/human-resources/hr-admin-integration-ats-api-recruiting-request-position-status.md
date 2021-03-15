@@ -41,3 +41,6 @@ Tento výčet poskytuje sadu možností pro stavové hodnoty každé pozice a po
 
 [Úvod do rozhraní API pro integraci systému sledování žadatelů](hr-admin-integration-ats-api-introduction.md)<br>
 [Příklad dotazu na žádost o nábor](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Pro účely testování proveďte mapování formátu pomocí souboru SampleInco
 2. Klikněte na tlačítko OK.
     * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány pouze řádky 3 importovaného souboru TXT. Kód IBAN na řádku 4, který není platný, byl vynechán a v informačním protokolu je uvedena chybová zpráva.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Chcete-li vybrat jiné rozvržení pro existující stránku, postupujte podle n
 
 [Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

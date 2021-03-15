@@ -67,3 +67,6 @@ Tento postup popisuje, jak vytvořit nákupní vratku pomocí akce dobropisu a z
 4. Zadejte hodnotu do pole **Příjemka produktu**. Toto pole slouží k zadání reference, která bude použita jako doklad pro deník příjemek produktů.  
 5. Klikněte na tlačítko **OK**. Zboží bylo zaznamenáno jako expedované v nákupní vratce a byl vytvořen deník příjemek produktů. Akci Příjemka produktu můžete použít ke kontrole deníků vytvořených s nákupní objednávkou a zobrazit tak, co bylo přijato nebo vráceno, a kdy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

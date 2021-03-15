@@ -36,3 +36,6 @@ Můžete registrovat a zaúčtovat všechny transakce servisní zakázky prostř
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

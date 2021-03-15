@@ -51,3 +51,6 @@ Tento postup použijte k nastavení pravidel pro objednávání produktů v kate
 6. Vyberte možnost v poli **Výběr dodavatele**. Vyberte pravidlo, které určuje, jaký typ dodavatelů lze vybrat pro kategorii při vytváření žádanky.  
 7. Klepněte na tlačítko **Zavřít**. Vámi definovaná pravidla zásad, byla pro žádanky typu Spotřeba. Pokud chcete definovat zásady pro žádanky typu Doplnění, vytvořte pravidlo pro typ pravidla zásad s názvem „Pravidlo zásad přístupu ke kategorii doplnění“.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

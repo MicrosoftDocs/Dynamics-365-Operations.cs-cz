@@ -38,3 +38,6 @@ Na snímku obrazovky níže je uveden příklad pracovníka údržby, který sou
 
 Nastavení kalendáře pro nástroje a majetek není nutné ve vztahu k plánování pracovních příkazů. Předpokladem je, že nástroje a majetek jsou k dispozici 24 hodin denně pro údržbu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

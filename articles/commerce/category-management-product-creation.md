@@ -56,3 +56,6 @@ Dále pak ve vylepšené kategorii produktů může ve srovnání s předchozím
 Tuto novou rozšířenou strukturu vlastností produktu můžete použít pro výběr aktualizovaných vlastností produktu, které je třeba odeslat k přiřazeným produktům. Na stránce **Hierarchie produktů Commerce** v podokně akcí vyberte **kategorie** a poté vyberte **aktualizovat produkty** k otevření dialogového okna **Aktualizace produktů**.
 
 ![Dialogové okno Aktualizovat produkty](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

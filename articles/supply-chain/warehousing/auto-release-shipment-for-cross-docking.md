@@ -178,3 +178,6 @@ Všimněte si, že dojde k následujícím událostem:
 - Uvolnění do skladu je aktivováno pro propojenou prodejní objednávku.
 - Na základě uvolnění, dodávky a cross dockingu je vytvořena práce. Tato práce instruuje operátora skladu a vybírá množství potřebná ke splnění řádku prodejní objednávky a umístí je do výstupního umístění, které je zadáno ve směrnici umístění pro cross docking.
 - Pokud je množství výrobní zakázky vyšší než množství vyžadované prodejní objednávkou, bude vytvořena běžná práce při zaskladnění. Tato práce instruuje operátora skladu k vyskladnění množství dokončeného zboží, které zbývá po přeložení a jeho přesunutí do běžného skladu podle směrnice o skladovém místě.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

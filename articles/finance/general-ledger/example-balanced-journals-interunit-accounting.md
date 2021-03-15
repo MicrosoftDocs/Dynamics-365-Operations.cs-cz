@@ -54,3 +54,6 @@ Následující účetní položky jsou proto vytvořeny automaticky tak, aby vyr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

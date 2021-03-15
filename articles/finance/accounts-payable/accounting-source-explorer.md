@@ -50,3 +50,6 @@ Pro tyto dokumenty můžete také z Průzkumníka zdroje účetnictví přejít 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

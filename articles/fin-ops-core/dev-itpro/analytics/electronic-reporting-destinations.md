@@ -241,3 +241,6 @@ Váš formát musí být nejdříve k dispozici v konfiguracích elektronického
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Konfigurace cílů ER závislých na akci](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

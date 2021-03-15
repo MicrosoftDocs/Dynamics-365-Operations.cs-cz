@@ -67,3 +67,6 @@ Toto téma uvádí způsob, jakým můžete vytvořit pravidla nároku na zaměs
 10. Zvolte **Uložit**.
 11. Zavřete formulář.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

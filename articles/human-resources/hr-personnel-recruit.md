@@ -225,3 +225,6 @@ V případě potřeby můžete kandidáta poté, co ho přijmete, propustit. Nap
 [Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organizování zaměstnanců](hr-personnel-departments-jobs-positions.md)<br>
 [Nastavení komponent práce](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

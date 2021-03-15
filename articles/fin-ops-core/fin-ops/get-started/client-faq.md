@@ -54,3 +54,6 @@ Volba **Zobrazit podrobnosti** je k dispozici v několika způsoby:
 
 - Má-li ovládací prvek schopnost **Zobrazit podrobnosti** a pokud má ovládací prvek hodnotu, tato hodnota je zobrazena jako hypertextový odkaz. Klepnutím na odkaz otevřete stránku, která obsahuje další podrobnosti.
 - Možnost **Zobrazit podrobnosti** je také v místní nabídce. Další informace o tom, kdy se místní nabídky zobrazí při klepnutí pravým tlačítkem myši, naleznete v předchozím oddílu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

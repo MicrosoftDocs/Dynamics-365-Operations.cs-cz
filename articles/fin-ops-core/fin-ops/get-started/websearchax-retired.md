@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 "hledaný termín"
 - nebo -
 
 site:msdn.microsoft.com dynamics ax 2012 “hledaný termín”
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

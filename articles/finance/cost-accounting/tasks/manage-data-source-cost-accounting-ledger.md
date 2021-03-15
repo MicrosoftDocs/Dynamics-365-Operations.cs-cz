@@ -47,3 +47,6 @@ Tento postup slouží k řízení zdroje dat hlavní knihy pro hlavní knihu ná
 14. V poli Účtovací vrstvy vyberte Aktuální.
 15. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

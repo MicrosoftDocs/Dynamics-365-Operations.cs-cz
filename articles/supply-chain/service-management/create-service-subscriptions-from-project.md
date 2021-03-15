@@ -54,3 +54,6 @@ Nyní můžete pro předplatné vytvořit transakce předplatného.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

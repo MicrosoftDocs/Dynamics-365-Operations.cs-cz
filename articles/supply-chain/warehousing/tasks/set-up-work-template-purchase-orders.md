@@ -60,3 +60,6 @@ Toto téma popisuje nastavení jednoduché pracovní šablony pro použití při
 6. Do pole **ID pracovní třídy** zadejte hodnotu. Jsou nastaveny pokyny pro výdej a příjem. Každá sada výdej/příjmu musí mít stejnou pracovní třídu. Používejte stejnou pracovní třídu, kterou jste zadali pro instrukci výdeje.  
 7. Zvolte **Uložit**. Všimněte si, že je nyní zaškrtnuto zaškrtávací políčko **Platné**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Odhad nákladů také poskytuje následující informace:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

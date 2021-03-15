@@ -48,3 +48,6 @@ Chcete-li spojit číselnou řadu s dopravcem, postupujte takto:
 1. Vyberte možnost **Upravit**.
 1. Na záložce s náhledem **Přehled** vyberte možnost v poli **Řada PRO čísel**.
 1. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

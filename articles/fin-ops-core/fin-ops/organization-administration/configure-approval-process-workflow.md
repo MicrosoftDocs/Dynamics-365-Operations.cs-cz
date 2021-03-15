@@ -183,3 +183,6 @@ Schvalovací proces se skládá z kroků schválení. Pomocí následujícího p
 1. V editoru workflowu poklepejte na schvalovací proces. V editoru workflowu se zobrazí kroky schvalovacího procesu.
 2. Chcete-li přidat schvalovací krok, přetáhněte krok z oblasti **Prvky workflowu** na plátno.
 3. Chcete-li nakonfigurovat schvalovací krok, získáte informace v části [Konfigurace schvalovacích kroků ve workflow](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

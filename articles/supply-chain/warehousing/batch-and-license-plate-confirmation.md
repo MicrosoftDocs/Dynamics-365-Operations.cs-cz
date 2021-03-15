@@ -47,3 +47,6 @@ Můžete nakonfigurovat potvrzení dávky a poznávací značky z položek nabí
 
 1. Z položek nabídky mobilního zařízení vstupte do nastavení potvrzení práce.  
 1. Vyberte možnost pro potvrzení dávky nebo registrační značky. Obě možnosti jsou k dispozici pro vyskladnění typu práce, které nemají povolené automatické potvrzení.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

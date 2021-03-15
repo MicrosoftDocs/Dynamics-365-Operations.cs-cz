@@ -42,3 +42,6 @@ V následující tabulce je uveden formát importu, který byste měli použít 
 | 6            | BusinessUnit, 1 oddělení, 2 | Atributy finanční dimenze, které jsou definovány v pořadí segmentů.<p>Můžete použít stránku **Export** k ověření, jak jsou definovány atributy.</p> |
 | 7            | 002,1,658 | <ul><li>Hodnota finanční dimenze</li><li>Finanční dimenze jako index poskytovaný v RecordDimensions</li><li>Nejednoznačné, jedinečné ID záznamu, které je přidruženo k jedinečnému ID záznamu z RecordTrans nebo RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Hodnoty dimenze, které jsou přidruženy k transakci z RecordBudget</li><li>Finanční dimenze jako index poskytovaný v RecordDimensions</li><li>Nejednoznačné ID záznamu řádku, které je zarovnáno s řádkem transakčních řádků v souboru</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

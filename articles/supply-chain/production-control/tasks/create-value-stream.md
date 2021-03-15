@@ -48,3 +48,6 @@ Hodnotové proudy jsou provozní jednotky, které seskupují jednu nebo více v�
 2. Zavřete stránku.
 3. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Na níže uvedeném snímku obrazovky je zobrazen příklad výpočtu použitéh
 
 ![Příklad výpočtu místa použití položky](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

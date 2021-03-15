@@ -95,3 +95,6 @@ Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sled
 17. V seznamu vyberte skupinu provize, kterou jste vytvořili dříve.
 18. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

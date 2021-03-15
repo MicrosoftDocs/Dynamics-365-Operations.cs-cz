@@ -66,3 +66,6 @@ K nasazení Lean Manufacturingu jsme zvolili přístup k výrobnímu toku a akti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

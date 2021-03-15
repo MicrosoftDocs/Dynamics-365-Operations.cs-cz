@@ -39,3 +39,5 @@ Spravujte požadavky na volno v pracovním prostoru **Samoobsluha zaměstnance**
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Při přijetí položky nebo při fyzické kontrole vrácené položky přiřaď
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

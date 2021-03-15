@@ -47,3 +47,6 @@ Informace týkající se vypořádání jsou zaznamenány a mohou být zobrazeny
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Objednávka je uložena, a obsahuje příznak **Nezpracovávat**. Tento přízna
 Chcete-li zobrazit a spravovat objednávky, které jsou blokovány kvůli kontrole proti podvodu, přejděte na **Maloobchod a velkoobchod** \> **Odběratelé** \> **Blokování objednávek**. Na stránce **Blokování objednávek** v seznamu vyberte položku a klikněte na **Blokování objednávky**, abyste viděli podrobnější zobrazení, které obsahuje informace o důvodu blokování. Na pevné záložce **Podrobnosti podvodu** můžete zobrazit systematická kritéria podvodu, která byla nalezena jako shoda pro objednávku a použité skóre. Pokud objednávka byla blokována ručně, můžete provést revizi všech komentářů zadaných uživatelem, který objednávku zablokoval pohledem do části **Poznámky o podvodu** na pevné záložce **Poznámky**.
 
 Další informace o práci s blokováním objednávek najdete v části [Blokování objednávek](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

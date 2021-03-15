@@ -87,3 +87,6 @@ Metoda degresivního odepisování 175 % vydělí 175 procent počtem roků živ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

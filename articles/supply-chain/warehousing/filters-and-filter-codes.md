@@ -165,3 +165,6 @@ Chcete-li nastavit kódy filtru dodavatele, postupujte podle následujících kr
 ## <a name="see-also"></a>Viz také
 
 [Další informace najdete v příspěvku na blogu WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

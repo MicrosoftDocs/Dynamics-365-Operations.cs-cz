@@ -89,3 +89,6 @@ Více informací najdete v části [Sazby DPH na základě polí Základ marže
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

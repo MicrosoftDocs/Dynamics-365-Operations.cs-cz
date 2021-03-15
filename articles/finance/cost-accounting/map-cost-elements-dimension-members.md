@@ -52,3 +52,6 @@ Kdykoli můžete aktualizovat upřesnění mapování dimenze prvku nákladů. V
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Vyrovnání bude 100,00 a bude zahrnovat vyplacení 99,00 a slevu 1,00.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

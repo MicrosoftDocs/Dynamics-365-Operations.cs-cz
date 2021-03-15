@@ -87,3 +87,6 @@ V tomto příkladu je ve společnosti USMF vytvořena plánovaná nákupní obje
 Následující ilustrace ukazuje, jak by se tento příklad mohl objevit na stránce **Víceúrovňové zakotvení** pro plánovanou výrobní zakázku.
 
 ![Mezipodnikový příklad, který zahrnuje tři společnosti](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

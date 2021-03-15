@@ -104,3 +104,6 @@ Možnost odvolat deník v workflowu, který má stav "bez možnosti obnovy", je 
 
 ## <a name="delete-journal-lines"></a>Odstranit řádky deníku
 Možnost rychlé odstranění všech řádků deníku je povolena v deníku v části **Funkce** > **Odstranit řádky deníku**. Chcete-li tuto funkci povolit, vyberte ve **Správě funkcí** možnost **Odstranit optimalizace výkonu deníku**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

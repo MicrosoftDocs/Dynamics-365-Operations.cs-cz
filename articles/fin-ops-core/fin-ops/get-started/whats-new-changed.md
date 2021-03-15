@@ -50,3 +50,6 @@ Chcete-li zjistit, co je nového nebo co se změnilo v Lifecycle Services, nalez
 - [Co je nového a co se změnilo v Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

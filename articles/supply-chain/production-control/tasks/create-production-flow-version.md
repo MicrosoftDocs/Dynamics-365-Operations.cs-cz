@@ -63,3 +63,6 @@ Tento postup se zaměřuje na vytvoření nové verze výrobního toku. Pro tuto
     * Zadejte počet dní v období skutečného času cyklu. Období skutečného času cyklu je počet dnů, jejichž úlohy jsou zpětně seskupeny od aktuální minuty pro výpočet skutečného času cyklu. Hodnota může být změněna kdykoli a je použita pouze pro výpočet skutečného času cyklu.  
 13. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

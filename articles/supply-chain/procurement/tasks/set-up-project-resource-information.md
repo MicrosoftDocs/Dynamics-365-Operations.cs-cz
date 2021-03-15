@@ -51,3 +51,6 @@ Tato procedura popisuje, jak nastavíte prostředek projektu. Tato úloha použ�
 20. Klikněte na položku Uložit.
 21. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

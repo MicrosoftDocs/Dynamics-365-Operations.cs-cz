@@ -116,3 +116,6 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 | Faktury, které se nepodařilo importovat | <ul><li>Faktury, které se nepodařilo importovat</li><li>Faktury, které se nepodařilo importovat, podle společnosti</li></ul> |
 | Důvody selhání automatizace | <ul><li>Faktury, které selhaly</li><li>Faktury, které selhaly podle společnosti</li><li>Faktury, které selhaly, podle skupiny dodavatele</li></ul> |
 | Stav pracovního postupu                | <ul><li>Faktury ve workflow</li><li>Instance workflowu faktury dodavatele</li><li>Přiřazení na schvalovatele</li><li>Workflow faktury dodavatele na společnost</li><li>Průměrný počet dnů ve workflowu podle schvalujícího</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

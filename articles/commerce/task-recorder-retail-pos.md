@@ -145,3 +145,6 @@ Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžet
 
 > [!NOTE]
 > V nápovědě pro Retail Retail Modern POS a Cloud POS se nezobrazují průvodci záznamem úloh v závislosti na tom, v jakém jste formuláři nebo jakou provádíte operaci. Je nutné v poli pro vyhledávání zadat název procesu a poté kliknout na **Hledat**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

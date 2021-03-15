@@ -153,3 +153,6 @@ Když mají být materiály ručně odečteny ze skladu, můžete použít násl
 | Hlášení jako dokončené |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
 | Hlášení jako dokončené | Aktualizovat sestavu o dokončení on-line | <strong>Stav</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

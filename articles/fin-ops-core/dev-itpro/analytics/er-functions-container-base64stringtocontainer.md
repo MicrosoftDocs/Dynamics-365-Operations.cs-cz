@@ -80,3 +80,6 @@ V tomto příkladu zdroj dat **\#MediaAsBase64String** kóduje binární obsah a
 ## <a name="additional-resources"></a>Další prostředky
 
 [Funkce kontejneru](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

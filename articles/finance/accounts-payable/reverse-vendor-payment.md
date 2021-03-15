@@ -82,3 +82,6 @@ Pokud byl stornovaný šek vydán pro refundaci odběratele, může dojít také
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

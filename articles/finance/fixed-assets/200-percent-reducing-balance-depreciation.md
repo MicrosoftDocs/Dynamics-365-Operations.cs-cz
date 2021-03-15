@@ -89,3 +89,6 @@ Metoda degresivního odepisování 200 % vydělí 200 procent počtem roků živ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

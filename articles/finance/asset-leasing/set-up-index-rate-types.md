@@ -42,3 +42,6 @@ Jako metodu indexové sazby musíte vybrat buď **Rozdíl hodnoty indexové sazb
 
 - Pokud chcete vypočítat novou leasingovou splátku založenou na rozdílu mezi indexovou sazbou k počátečnímu datu a poslední indexovou sazbou, vyberte metodu **Rozdíl hodnoty indexové sazby**. Indexová sazba je definována v poli **Indexová sazba (%)**.
 - Metodu **Hodnota indexové sazby** vyberte, pokud chcete vypočítat leasingovou splátku pomocí procenta uvedeného v poli **Indexová sazba**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

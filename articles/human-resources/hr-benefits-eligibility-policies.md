@@ -49,3 +49,6 @@ Můžete definovat rozsah pravidla v pravidle. Pokud například vytvoříte typ
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

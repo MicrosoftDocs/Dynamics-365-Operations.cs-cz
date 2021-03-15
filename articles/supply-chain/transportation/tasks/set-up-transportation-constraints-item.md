@@ -43,3 +43,6 @@ Tento postup nastaví omezení přepravy a zabrání přepravě vybrané položk
 10. Klikněte na položku Uložit.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Poté, co jste navrhli všechny karty, které potřebujete, můžete je přidru�
 1. Podle potřeby pokračujte v přidávání dalších karet.
 
 1. Použijte tlačítka **Nahoru** a **Dolů** na panelu nástrojů a uspořádejte karty podle potřeby. Karty se budou zobrazovat zleva doprava v pořadí uvedeném na výše uvedeném snímku obrazovky (karta nahoře je zobrazena vlevo).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

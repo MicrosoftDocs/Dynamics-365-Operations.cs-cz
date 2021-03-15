@@ -54,3 +54,6 @@ Pokud tedy proměnná **Od data** pro období omezení bude mít hodnotu 21. led
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

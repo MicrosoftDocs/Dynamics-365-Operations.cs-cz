@@ -105,3 +105,6 @@ Další zdroje
 - [Pracovní prostor kontroly nákladů](cost-control-workspace.md)
 - [Hierarchie dimenzí](dimension-hierarchy.md)
 - [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

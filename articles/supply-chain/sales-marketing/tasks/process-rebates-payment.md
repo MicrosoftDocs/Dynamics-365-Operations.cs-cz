@@ -50,3 +50,6 @@ Tento postup ukazuje převod schválených a zpracovaných rabatů odběratele n
     * Všimněte si, že transakce pro zápornou částku představující celkovou částku rabatu bez referenčního čísla faktury byla přidána k zůstatku odběratele.   
 15. Klikněte na možnost Zrušit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

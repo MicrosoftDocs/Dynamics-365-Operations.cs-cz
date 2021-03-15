@@ -118,3 +118,6 @@ Tlačítka ve skupině **Projekt** na kartě **Pracovní příkaz** v podokně a
 >[!NOTE]
 >Pokud chcete zahrnout prognózy vytvořené v pracovním příkazu při spuštění hlavního plánování pomocí modelu prognózy vybraného na stránce **Parametry správy majetku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Tento postup popisuje, jak plnit prodejní smlouvy přidružením prodejní obje
 23. Klepněte na Připojená prodejní smlouva.
 24. Klepněte na kartu Plnění.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

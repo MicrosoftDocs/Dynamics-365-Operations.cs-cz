@@ -95,3 +95,6 @@ Chcete-li přidat modul propagačního banneru na stránku a nastavit požadovan
 [Modul bloku obsahu](add-hero-module.md)
 
 [Modul videopřehrávače](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

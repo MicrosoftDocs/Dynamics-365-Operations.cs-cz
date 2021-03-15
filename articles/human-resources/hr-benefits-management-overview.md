@@ -97,3 +97,6 @@ Některé změny je nutné zpracovat, aby byly aktivní.
 - [Zpracování způsobilosti k životním událostem](hr-benefits-process-life-event-eligibility.md)
 - [Zpracování změn sazby](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 | [Návrh dotazníku](hr-learning-design-questionnaires.md) | Tento článek obsahuje informace o způsobu návrhu dotazníku. Proces návrhu zahrnuje nastavení předpokladů, odpovědí a dotazů a poté je zkombinuje do dotazníku. |
 | [Distribuce a plánování dotazníků](hr-learning-distribute-questionnaires.md) | Tento článek obsahuje informace o způsobu rozesílání dotazníku respondentům a vyplňování dotazníků. |
 | [Zobrazení a vyhodnocení výsledků dotazníku](hr-learning-evaluate-questionnaire-results.md) | Tento článek obsahuje informace o způsobu zobrazení a vyhodnocování výsledků z vyplněných dotazníků. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Výběr práce je blokován z důvodu práce se závislým doplňováním.
 ### <a name="issue-resolution"></a>Řešení problému
 
 Při použití doplňování požadavků vlny, pokud je nutné místo pro výdej doplnit, aby byla splněna zdrojový požadavek na objednávku, vytvoří systém práci s doplňováním i výdejem. Blokuje však výdej práci, dokud není dokončena doplňovací práce. Toto chování je záměrné, protože místo výdeje nebude mít dostatek zásob, dokud nebude dokončeno doplňování. Dokončete doplňovací práci a poté zpracujte výdej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

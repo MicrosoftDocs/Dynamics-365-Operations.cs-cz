@@ -76,3 +76,6 @@ Při plánování úkolů jsou brány v úvahu použitá procenta účinnosti ur
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

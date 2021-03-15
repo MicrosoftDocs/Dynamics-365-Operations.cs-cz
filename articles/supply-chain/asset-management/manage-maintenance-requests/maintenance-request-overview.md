@@ -72,3 +72,6 @@ Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabul
 | Odeslání zapůjčeného majetku                  | Vyberte zapůjčený majetek, který by měl být dočasnou náhradou majetku vybraného na zvoleném požadavku na údržbu. |
 | Vrácení vypůjčeného majetku                | Zaregistrujte zapůjčený majetek jako vrácený. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky l
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

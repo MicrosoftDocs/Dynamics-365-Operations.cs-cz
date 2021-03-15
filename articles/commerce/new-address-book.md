@@ -56,3 +56,6 @@ Na následujícím obrázku je znázorněno vytvoření adresáře zaměstnance 
 [Přehled rozložení obrazovky](pos-screen-layouts.md)       
 
 [Konfigurace a instalace Retail Hardware Station](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

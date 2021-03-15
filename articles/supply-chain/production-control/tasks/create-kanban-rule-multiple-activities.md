@@ -58,3 +58,6 @@ Tento postup popisuje, jak vytvořit kanbanové pravidlo, které zahrnuje více 
     * Všimněte si, že kanban má od výrobního toku dvě úlohy pro zpracování. První je SpeakerAssemblyAndPolish a druhá SpeakerTestAndPackaging.  
     * Poslední krok!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

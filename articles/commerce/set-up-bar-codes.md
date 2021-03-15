@@ -46,3 +46,6 @@ Tento článek popisuje, jak lze používat čárové kódy v aplikaci Dynamics 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Nastavení masek čárových kódů](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

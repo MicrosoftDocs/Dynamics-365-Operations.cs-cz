@@ -44,3 +44,6 @@ Platí například následující podmínky:
 Částka k odpisu u původního majetku je 1 822,25 USD. Tato částka se rovná NBV před zaúčtováním rozdělené transakce (9 111,25 USD) plus úprava akvizice, která je generována během účtování rozdělené transakce (-8 000 USD), plus úprava odpisů, která je generována během rozdělené transakce (711 USD). Proto je odpis za druhý rok (1 822,25 × 18 procent) ÷ 12 = 27,33 USD.
 
 Částka k odpisu nového dlouhodobého majetku v prvním roce je (8 000 × 18 procent) ÷ 12 = 120 USD.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

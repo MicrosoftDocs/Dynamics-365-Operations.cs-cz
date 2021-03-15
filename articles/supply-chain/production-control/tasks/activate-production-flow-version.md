@@ -40,3 +40,6 @@ Než bude možné vytvořit kanbanové úlohy a zpracovat aktivity pro verzi vý
 5. Klepněte na tlačítko Aktivovat.
 6. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

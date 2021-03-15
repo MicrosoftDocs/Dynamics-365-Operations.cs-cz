@@ -51,3 +51,6 @@ Chcete-li opravit, upravit nebo aktualizovat standardní náklady nových polož
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

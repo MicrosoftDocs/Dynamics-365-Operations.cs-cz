@@ -59,3 +59,6 @@ Další informace naleznete v následujících tématech:
 
 - [Finanční dimenze](financial-dimensions.md)
 - [Vytvoření a přiřazení struktur rozšířeného pravidla](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

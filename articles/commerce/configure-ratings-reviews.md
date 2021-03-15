@@ -94,3 +94,6 @@ Informace týkající se konfigurace hodnocení a recenzí na stránkách s podr
 [Konfigurovat moduly hodnocení a recenzí na stránkách s podrobnostmi o produktu](ratings-reviews-modules.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

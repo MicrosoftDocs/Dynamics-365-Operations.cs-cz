@@ -51,3 +51,6 @@ Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společn
 10. Klikněte na možnost Doklad.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

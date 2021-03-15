@@ -57,3 +57,6 @@ Způsob vytvoření hierarchie funkčních míst závisí na požadavcích vaš�
 Následující obrázek znázorňuje příklad funkčních míst, která jsou založena na zákaznících.
 
 ![Diagram znázorňující funkční místa na základě zákazníků](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

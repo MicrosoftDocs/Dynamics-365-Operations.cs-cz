@@ -75,3 +75,6 @@ Poznamenejte si číslo nákupní objednávky, kterou vytvoříte, a také si po
     * Poté, co jste kliknuli na tlačítko OK, zkontrolujte pruh zpráv. Musí existovat zpráva o tom, že operace byla dokončena.  
 5. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

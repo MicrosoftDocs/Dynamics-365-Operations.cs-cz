@@ -39,3 +39,6 @@ Chcete-li vyřešit tento problém, zákazník musí postupovat podle těchto kr
 3. Zvolte **Uložit**.
 
 ![Stránka parametrů globálního adresáře](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

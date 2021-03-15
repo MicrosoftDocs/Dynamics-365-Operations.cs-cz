@@ -35,3 +35,6 @@ Následující téma vysvětluje, jak uživatel v roli správce systému může 
 5. V poli **Časové pásmo** vyberte z rozevíracího seznamu požadovanou možnost.
 6. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

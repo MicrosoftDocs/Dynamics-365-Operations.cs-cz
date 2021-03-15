@@ -108,3 +108,6 @@ Na snímku obrazovky níže byl přidán **Typ** a v tomto příkladu je zobraze
 >[!NOTE]
 >Pro získání přehledu všech registrací závad vytvořených v pracovních příkazech a požadavcích na údržbu klikněte na **Správa majetku** > **Dotazy** > **Závada majetku** > **Závady majetku**. Na stránce **Závady majetku** vyberte registraci závad majetku a rozbalte podokno **Související informace**, abyste viděli informace týkající se souvisejícího pracovního příkazu nebo požadavku na údržbu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

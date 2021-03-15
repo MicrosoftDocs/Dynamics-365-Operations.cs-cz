@@ -101,3 +101,6 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
 7. Čistý dopad snížení hodnoty zobrazíte v tabulkách transakcí s aktivy a pasivy. Všimněte si, že snížení hodnoty snížilo používaný majetek, ale účetní hodnota leasingového závazku se nezměnila.
 
 Snížení hodnoty má ještě jeden další účinek, který byste měli zvážit. Protože částka používaného majetku je nyní mnohem menší než závazek z leasingu, částka musí být odepsána jinak, než tomu bylo dříve. Konkrétně je majetek nyní odepisován rovnoměrně po zbývajících 84 měsíců leasingu, počínaje dnem transakce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

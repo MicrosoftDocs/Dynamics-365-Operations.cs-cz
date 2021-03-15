@@ -67,3 +67,6 @@ Můžete zadat záznamy strany buď v globálním adresáři nebo na stránce p�
 ## <a name="can-i-translate-address-information-for-party-records"></a>Mohu převést informace o adrese pro záznamy strany?
 
 Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) ve vaší aplikaci, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

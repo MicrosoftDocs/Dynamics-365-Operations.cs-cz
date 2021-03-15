@@ -94,3 +94,6 @@ Pomocí tohoto postupu vytvořte hierarchii sestavy pro vykazování v organizac
     * Vyberte člena dimenze odpovídajícího uzlu.  
 59. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

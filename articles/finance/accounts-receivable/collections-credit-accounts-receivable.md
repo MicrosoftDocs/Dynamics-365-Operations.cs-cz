@@ -110,3 +110,6 @@ Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

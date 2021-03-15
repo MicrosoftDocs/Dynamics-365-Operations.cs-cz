@@ -96,3 +96,6 @@ Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finanční
 Pokud použijete postdatovaný šek jako způsob platby, dojde při vytvoření platby k vymazání bankovního účtu. V některých zemích se DPH stane "realizovanou" odpovědností, když se platba zúčtuje v bance, což znamená, že postdatovaný šek je vyrovnán. Můžete ho povolit výběrem možnosti **Realizovat podmíněnou DPH při zaúčtování postdatovaných šeků** v části **Správa hotovosti a banky > Nastavení > Parametry správy hotovosti a banky > Postdatované šeky**.
 
 Další informace naleznete v tématu [Nastavení srážkové daně](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

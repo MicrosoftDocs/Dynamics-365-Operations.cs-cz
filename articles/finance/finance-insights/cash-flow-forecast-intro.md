@@ -67,3 +67,6 @@ Na kartě **Dimenze** vyberte ze seznamu dimenze, které se mají použít pro f
 
 #### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

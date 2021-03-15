@@ -82,3 +82,6 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa data](../../dev-itpro/data-entities/data-entities.md).
 7.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 8.  Zpracujte změny. Aktualizace všech dimenzí zásob může chvíli trvat. Průběh můžete sledovat pomocí úkolů dávkové úlohy můžete sledovat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

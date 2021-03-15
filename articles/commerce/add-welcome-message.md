@@ -67,3 +67,6 @@ Uvítací zpráva se nyní zobrazuje v horní části každé stránky webu, kte
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Když je ve vašem systému zapnuta funkce nebezpečných materiálů, sestava *
 ## <a name="packing-list-report"></a>Sestava Dodací list
 
 Když je ve vašem systému zapnuta funkce nebezpečných materiálů, dodací listy obsahují další informace, které se vztahují k tištěnému textu dodávky pro danou položku. Tato sestava je k dispozici na stránce **Všechny náklady**, jako obvykle.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

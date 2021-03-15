@@ -67,3 +67,6 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

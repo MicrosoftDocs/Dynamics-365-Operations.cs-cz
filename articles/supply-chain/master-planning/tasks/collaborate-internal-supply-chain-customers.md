@@ -42,3 +42,6 @@ Tato procedura ukazuje, jak zobrazit všechny plánované objednávky, které bu
 8. Rozbalte část Podrobnosti nadřazené poptávky.
     * V této části můžete zobrazit podrobnosti o tom, jak bude splněna poptávka. Než se zde zobrazí další informace, budete muset počkat na spuštění hlavního plánování v dodavatelské společnosti.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

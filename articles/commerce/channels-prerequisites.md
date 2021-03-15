@@ -85,3 +85,6 @@ Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik po�
 [Nastavení maloobchodního kanálu](channel-setup-retail.md)
     
 [Nastavení online kanálu](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

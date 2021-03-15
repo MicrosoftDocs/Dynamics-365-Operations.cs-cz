@@ -152,3 +152,6 @@ Tento postup vás provede nastavením parametrů systému Intrastat a převodem 
     
 Zkontrolujte převedená data včetně Cílová země/oblast expedice, země původu, hmotnosti, množství, množství v dalších jednotkách, zboží, kódu transakce, výše faktury a statistických částek. Tato data lze v případě potřeby změnit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

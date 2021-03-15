@@ -42,3 +42,6 @@ Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny r
 
 > [!IMPORTANT] 
 > Při vytváření pravidla není ověřeno dodržování pravidel pro oddělení povinností. Můžete vytvořit pravidlo, které vytvoří konflikt pro existující role. Stávající přiřazení rolí uživatelů může být také v konfliktu s novým pravidlem. Po vytvoření nebo úpravě pravidla musíte ověřit dodržování předpisů. Další informace získáte v části [Identifikace a vyřešení konfliktů v dělení zodpovědnosti](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

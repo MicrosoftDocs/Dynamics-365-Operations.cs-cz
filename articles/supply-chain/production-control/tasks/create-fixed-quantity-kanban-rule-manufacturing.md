@@ -73,3 +73,6 @@ Tento postup se zaměřuje na nastavení potřebného k vytvoření pevné výro
     * Dojde k vytvoření 5 kanbanů.  
     * Všimněte si, že 5 kanbanů po 10, bylo vytvořeno pro toto výrobní kanbanové pravidlo. Tento krok je posledním krokem v tomto postupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

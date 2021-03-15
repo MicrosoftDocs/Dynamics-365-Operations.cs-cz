@@ -94,3 +94,6 @@ Jak však bylo uvedeno výše, pokud používáte konfiguraci zařízení s mož
 ## <a name="additional-resources"></a>Další prostředky
 
 [Vykázání jako dokončené ze zařízení úkolového lístku](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

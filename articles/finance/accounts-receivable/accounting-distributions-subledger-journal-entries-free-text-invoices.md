@@ -135,3 +135,6 @@ Před zaúčtováním volné faktury můžete zobrazit celý účetní zápis fa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

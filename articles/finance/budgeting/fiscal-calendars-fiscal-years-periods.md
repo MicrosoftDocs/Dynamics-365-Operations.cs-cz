@@ -63,3 +63,6 @@ K zobrazení podrobností fiskálního kalendáře, fiskálních roků a období
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

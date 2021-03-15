@@ -41,3 +41,6 @@ Postup se vztahuje na všechny evropské země/oblasti. Procedura byla vytvořen
 7. Klepněte na tlačítko Najít.
     * Zobrazí se všechny strany s tímto ID registrace.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

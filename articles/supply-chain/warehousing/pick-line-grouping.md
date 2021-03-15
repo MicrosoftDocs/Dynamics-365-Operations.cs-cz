@@ -170,3 +170,6 @@ Dříve než můžete nastavit seskupování řádků vyskladnění, musíte vyt
 >   - Řádky práce s nedokončenou doplňovací prací
 >   - Naměrné vyskladnění
 >   - Opakované přidělení zboží při krátkodobém vyskladnění
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

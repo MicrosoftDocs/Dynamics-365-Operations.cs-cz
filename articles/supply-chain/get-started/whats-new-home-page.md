@@ -67,3 +67,6 @@ Chcete-li zjistit, co je nového nebo co se změnilo ve vydáních před listopa
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | Listopad 2016    | [Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016. květen         | [Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016. únor    | [Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

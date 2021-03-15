@@ -49,3 +49,6 @@ Například existuje 5 001 ID dlouhodobého majetku, ke každému ID dlouhodob�
 
 > [!Note] 
 > Pokud je zapnutý parametr **Shrnout odpisy** když vytváříte návrh odpisování, pak hodnota v poli **Počet knih v deníku - návrh odpisování** nemá žádný účinek. V tomto případě je počet knih v deníku 6000, což je interně definovaný limit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

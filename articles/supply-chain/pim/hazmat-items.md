@@ -220,3 +220,6 @@ Pokud chcete spustit kontrolu kompatibility, postupujte takto.
 1. V podokně akcí na kartě **Náklady** ve skupině **Akce** vyberte **Kontrola kompatibility**.
 
 Obdržíte zprávu, která vás informuje o výsledcích kontroly.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

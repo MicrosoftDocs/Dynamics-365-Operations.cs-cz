@@ -74,3 +74,6 @@ Na stránce **Řádky údržby rozpočtu** můžete ručně přidat nový řáde
 
 - Víte, že renovace některého majetku je aktuálně ve fázi plánování, ale související úlohy ještě nebyly vytvořeny ve správě majetku. Chcete však, aby byly rozpočtové náklady pro tyto úlohy zahrnuty do rozpočtu údržby.
 - Od tvorby rozpočtu údržby byl vytvořen nový majetek nebo nové typy majetku, ale plány údržby dosud nebyly nastaveny pro tento majetek nebo typy majetku. Chcete však, aby byly rozpočtové náklady pro tyto typy majetku zahrnuty do rozpočtu údržby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

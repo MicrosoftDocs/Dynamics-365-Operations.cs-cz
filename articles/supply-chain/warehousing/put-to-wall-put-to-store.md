@@ -540,3 +540,6 @@ Pokud by se měly pozice třídění uzavřít ručně, musí být možnost **Au
 
 > [!IMPORTANT]
 > Po vytvoření pohybu z místa třídění nesmíte práci zrušit. V opačném případě bude pozice a kontejnery v ní odstraněny ze systému a nebudou k dispozici pro další zpracování. Budou odstraněny rovněž zásoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

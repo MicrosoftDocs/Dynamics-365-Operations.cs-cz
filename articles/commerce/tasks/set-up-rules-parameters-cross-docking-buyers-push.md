@@ -47,3 +47,6 @@ Tato procedura ukazuje postup vytváření pravidel doplnění. Pravidla doplně
 14. Zadejte číslo do pole Hmotnost.
 15. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

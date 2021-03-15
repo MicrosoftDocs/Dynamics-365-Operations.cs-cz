@@ -66,3 +66,6 @@ Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Nap�
 ## <a name="see-also"></a>Viz také
 
 - [Odložení provádění prvků XML ve formátech elektronického výkaznictví](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

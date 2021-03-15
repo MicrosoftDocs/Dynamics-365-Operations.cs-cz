@@ -51,3 +51,6 @@ Stejně jako u každé nové funkce musí zákazníci sledovat plán vydání a 
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Až bude známé datum ukončení podpory, kde bude uvedeno?
 
 Ukončení podpory Jednoho dokladu je významnou změnou, která bude široce komunikována. Bude sděleno prostřednictvím dokumentace k produktu, příspěvku na blogu a oznámení na příslušných konferencích společnosti Microsoft, a to v dostatečném předstihu před datem, kdy ukončení podpory nabude účinnosti.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

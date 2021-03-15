@@ -47,3 +47,6 @@ Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

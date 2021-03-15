@@ -47,3 +47,6 @@ Tato procedura vás provede kroky použití hmotností variant pro automatické 
 17. Nastavte množství na hodnotu 1000.
 18. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

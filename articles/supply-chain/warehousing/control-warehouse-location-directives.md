@@ -76,3 +76,6 @@ Směrnice skladového místa určují, *kde* mají být položky vyzvednuty a *k
 
 - Video: [Podrobné prozkoumání konfigurace správy skladu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Téma nápovědy: [Vytvoření směrnic skladového místa](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

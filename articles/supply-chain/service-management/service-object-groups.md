@@ -65,3 +65,6 @@ Předměty servisu lze přiřadit ke skupině pomocí formuláře **Předměty s
 [Tvorba předmětů servisu](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

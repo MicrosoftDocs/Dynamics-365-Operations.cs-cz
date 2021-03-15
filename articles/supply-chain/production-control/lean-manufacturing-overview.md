@@ -82,3 +82,6 @@ Lean manufacturing kromě toho podporuje procesy nákupů a fakturování služe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Li
     V seznamu by měla být uvedena konfigurace elektronického výkaznictví, kterou jste nahráli.
 
     Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

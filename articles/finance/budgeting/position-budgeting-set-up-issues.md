@@ -63,3 +63,6 @@ Data na řádku nákladového prvku pozice prognózy musí spadat do následují
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

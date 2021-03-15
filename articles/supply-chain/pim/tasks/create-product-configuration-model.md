@@ -82,3 +82,6 @@ Tento postup popisuje způsob vytvoření modelu konfigurace produktu a zadání
 17. V poli Podle sérií zadejte číslo.
 18. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

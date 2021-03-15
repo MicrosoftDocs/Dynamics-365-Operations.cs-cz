@@ -383,3 +383,6 @@ Po přípravě všech povinných prvků můžete nastavit automatizaci slottingu
 1. Pokud chcete spouštět běh automaticky, nastavte opakování.
 
 Pro cvičení ve scénáři **nenastavujte** automatické spouštění slottingu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

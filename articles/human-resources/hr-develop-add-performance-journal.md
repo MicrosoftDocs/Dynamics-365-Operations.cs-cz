@@ -54,3 +54,6 @@ Deník výkonnosti obsahuje informace, které se týkají toho, jak jste splnili
 20. Do pole Popis zadejte "Děkujeme za veškerou podporu na konferenci!".
 21. Klepněte na tlačítko Odeslat.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

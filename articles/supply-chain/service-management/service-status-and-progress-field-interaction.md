@@ -94,3 +94,6 @@ Pokud jsou všechny řádky servisní zakázky označeny hodnotou **Zaúčtován
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

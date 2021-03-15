@@ -186,3 +186,6 @@ Existují dvě výjimky z pravidla, že dávkové objednávky lze použít pro v
 1. Pokud se měrná jednotka vzorce liší od měrné jednotky inventáře aktivní látky, dávkové pořadí není použitelné pro vyvážení dávky.
 
 Dávková objednávka, která není použitelná pro vyvážení dávky, prochází pravidelným cyklem procesu pro dávkové objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

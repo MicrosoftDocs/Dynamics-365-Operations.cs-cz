@@ -203,3 +203,6 @@ IFeatureLifecycle je interní mechanismus Microsoftu pro označení fáze život
 - `PublicPreview` – Zobrazuje se ve výchozím nastavení, ale s upozorněním, že funkce je ve verzi Preview.
 - `Released` - Plně uvolněno.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

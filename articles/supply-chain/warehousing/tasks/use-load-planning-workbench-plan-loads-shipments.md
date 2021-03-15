@@ -60,3 +60,6 @@ Toto téma popisuje použití pracovní plochy plánování vytížení k vytvo�
 5. Vyberte **Přiřadit**.
 6. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

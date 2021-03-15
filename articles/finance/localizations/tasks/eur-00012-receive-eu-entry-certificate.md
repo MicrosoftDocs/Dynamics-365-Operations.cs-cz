@@ -41,3 +41,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.
     * Připojte další informace k deníku.  
     * Například připojte k deníku naskenovaný obrázek vstupního certifikátu EU.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

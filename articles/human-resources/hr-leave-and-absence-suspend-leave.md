@@ -49,3 +49,6 @@ Pokud jsou časové rozlišení zpracovávány i v době, kdy je pracovní volno
 - [Konfigurace typů pracovního volna a absence](hr-leave-and-absence-types.md)
 - [Časové rozlišení plánů pracovního volna a absence](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

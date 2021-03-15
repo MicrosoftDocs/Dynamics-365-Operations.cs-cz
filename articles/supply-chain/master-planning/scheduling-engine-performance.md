@@ -328,3 +328,6 @@ Hodnota **Časový limit pokusů o optimalizaci** určuje, kolik sekund lze maxi
 
 > [!NOTE]
 > Hodnoty nastavené pro časové limity budou použity jak pro plánování vydaných výrobních zakázek, tak plánovaných zakázek v rámci MRP. Výsledkem je, že nastavení velmi vysokých hodnot by mohlo výrazně zvýšit dobu běhu MRP při spuštění plánu s mnoha naplánovanými výrobními zakázkami.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

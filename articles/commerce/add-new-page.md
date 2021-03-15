@@ -92,3 +92,6 @@ Chcete-li na svůj web přidat novou stránku webu, postupujte podle následují
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
 
 [Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

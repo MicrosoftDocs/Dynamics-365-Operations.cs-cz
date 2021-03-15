@@ -803,3 +803,6 @@ V tomto oddílu vytvoříte uloženou proměnnou v prvním testovacím případu
 2. Ověřte, zda oba testovací případy byly úspěšné.
 
     ![Pole výsledku nastavené na úspěch pro testovací případy](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

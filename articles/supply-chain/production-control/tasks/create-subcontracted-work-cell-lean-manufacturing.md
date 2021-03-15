@@ -70,3 +70,6 @@ K modelování práce subdodávky pro lean manufacturing je nutné vytvořit pra
 24. V poli Jednotka klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 25. Vyřešit změny jednotky.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

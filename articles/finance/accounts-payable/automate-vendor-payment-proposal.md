@@ -143,3 +143,6 @@ Pro automatizace návrhů plateb dodavatelům byly přidány následující povi
 | Dotaz na výskyty v plánu | Úředník pro platby závazků, úředník pro centralizované platby závazků | Tato povinnost uděluje práva zobrazovat výskyty automatizace návrhů plateb prostřednictvím následujících oprávnění:<ul><li>Zobrazení výskytů v plánu</li><li>Zobrazení týdenního zobrazení výskytů</li></ul> |
 | Dotaz na řadu plánu      | Žádní                                                                       | Tato povinnost uděluje práva zobrazovat nastavení řady a výskytů prostřednictvím následujících oprávnění:<ul><li>Zobrazení výskytů v plánu</li><li>Zobrazení stránku se seznamem výskytů</li><li>Zobrazení týdenního zobrazení výskytů</li></ul>|
 | Údržba výskytů v plánu     | Žádní                                                                       | Tato povinnost uděluje práva vytvářet a udržovat výskyt prostřednictvím následujících oprávnění:<ul><li>Údržba výskytů v plánu</li><li>Zobrazení týdenního zobrazení výskytů</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

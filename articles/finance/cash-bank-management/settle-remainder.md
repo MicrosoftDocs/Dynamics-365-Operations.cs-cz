@@ -69,3 +69,6 @@ Pro vyrovnání zbývající částky proveďte následující kroky:
 7)  Můžete také vytvořit deník plateb se zbývající částkou vyrovnání nebo ji zaúčtovat bez deníku. Vyberte **Ano** pro **Upravit v deníku** pro vytvoření deníku plateb. Budete moci upravit deník plateb, který vytvoříte.
 8)  Klikněte na **Vyrovnat zůstatek**. Pokud chcete vytvořit deník, tlačítko se změní na **Vytvořit deník**. Namísto toho klikněte na **Vytvořit deník**.
 9)  Jestliže jste vytvořili deník plateb, stránka deníku se otevře po klepnutí na tlačítko **Vyrovnání zůstatku**. Do deníku bude přidán řádek deníku se zbývající částkou vyrovnání a s účtem vyrovnání zůstatku jako protiúčtem. Pokud jste přidali odběratele nebo dodavatele, abyste mohli přesunout částku vyrovnání na jiného odběratele nebo dodavatele, do deníku bude přidán další řádek pro přesun částky vyrovnání danému odběrateli nebo dodavateli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

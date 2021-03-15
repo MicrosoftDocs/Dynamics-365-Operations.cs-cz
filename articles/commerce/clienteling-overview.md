@@ -132,3 +132,6 @@ Po úpravě polí vyberte **Ověřit**, aby bylo zajištěno, že k tajnému kó
 8. V Commerce na stránce **Parametry Commerce** na kartě **Clienteling** na pevné kartě **Dynamics 365 Customer Insights** nastavte **ID aplikace** na „CI_Access_AppID“ (z kroku 1 výše). Jako **Název tajného kódu** vyberte název tajného kódu zadaný v kroku 7 výše („CISecret“). Nastavte možnost **Povolit Customer Insights** na **Ano**. Pokud je instalace z nějakého důvodu neúspěšná, zobrazí se chybová zpráva a tato možnost bude nastavena na **Ne**. 
 
 V Customer Insights můžete mít více prostředí, jako je například testovací a provozní prostředí. Do pole **ID instance prostředí** zadejte příslušné prostředí. V poli **Alternativní ID odběratele** zadejte vlastnost v Customer Insights, která je mapována na číslo účtu odběratele. (V Commerce je číslo zákaznického účtu ID zákazníka.) Zbývající tři vlastnosti jsou míry, které se zobrazí na zákaznické kartě v knize klientů. Můžete vybrat až tři měřítka, která se mají zobrazit na kartě zákazníka. Není však nutné vybírat žádné míry. Jak již bylo zmíněno dříve, systém nejprve zobrazí tyto hodnoty a poté zobrazí hodnoty pro skupinu atributů knihy klientů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

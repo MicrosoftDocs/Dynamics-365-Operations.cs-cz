@@ -280,3 +280,6 @@ Po nastavení funkce *Určení pozice registrační značky na skladovém míst�
     ![Pozice 1 skladového místa](media/LocationLicensePlatePositioning.png "Pozice 1 skladového místa")
 
 1. Zadejte ID registrační značky vtvořené pro dané skladové místo a poté podle pokynů proveďte výdej prodejní objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

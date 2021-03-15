@@ -154,3 +154,6 @@ Následující klíčové dimenze v obsahu se používají jako filtry k rozděl
 | Data                  | Data, Posun o rok                                    |
 
 Ve výchozím nastavení obsah zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr dat v části filtrů sestavy. Můžete také změnit filtr společnosti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

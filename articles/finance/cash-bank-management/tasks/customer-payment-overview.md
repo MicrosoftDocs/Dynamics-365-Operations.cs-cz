@@ -51,3 +51,6 @@ Tento průvodce záznamem úloh vás provede různými metodami zadání plateb 
 21. Do pole **Platební reference** zadejte platební referenci. Platební reference je vyžadována, pouze pokud vyberete zahrnutí platby na vkladové složence.  
 22. V **Podokně akcí** klikněte na **Zaúčtovat** pro zaúčtování plateb odběratelů. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

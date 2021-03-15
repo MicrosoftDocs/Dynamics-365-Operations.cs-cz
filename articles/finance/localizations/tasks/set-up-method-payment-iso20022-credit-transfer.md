@@ -47,3 +47,6 @@ Toto je třetí z pěti úkolů, které společně popisují proces platby dodav
 10. Zadejte hodnoty DEMF OPER do pole Platební účet.
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -204,3 +204,6 @@ V nabídce **Akce** je také možné vytvořit proces zkopírováním existujíc
 Další užitečný příkaz v nabídce **Akce** je **Zobrazit stav zpracování rozpočtu**. Tento příkaz graficky zobrazí plány rozpočtu v rámci procesu spolu s odpovídajícími daty, jako jsou například stav workflowu plánů, souhrny podle množství a jednotky a navigace jedním kliknutím k samotným plánům rozpočtu.
 
 [![Stav procesu plánování rozpočtu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

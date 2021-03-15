@@ -245,3 +245,6 @@ Můžete si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty
 - [Přehled doplňku Elektronická fakturace](e-invoicing-service-overview.md)
 - [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
 - [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

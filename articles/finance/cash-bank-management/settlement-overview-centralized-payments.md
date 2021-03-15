@@ -107,3 +107,6 @@ U plateb dodavatelů transakce počátečního a koncového data splatnosti v pr
 
 ## <a name="withholding-tax"></a>Srážková daň
 Účet dodavatele, který je přidružený k faktuře, slouží k určení, zda se má vypočítat srážkovou daň. Pokud se srážková daň používá, je vypočteno v právnické osobě, která je přidružená k faktuře. Pokud právnické osoby používají různé měny, použije se směnný kurz z právnické osoby, která je přidružená k faktuře.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Další informace, jak nastavit předpisy a hodnoty pro nebezpečné materiály 
 ## <a name="warehouse-management"></a>Řízení skladu
 
 Když připravujete dodávku v Řízení skladu, můžete vytisknout několik nových sestav, které používají informace, které jste nastavili v Řízení informací o produktech. Další informace o dostupných sestavách a jejich použití najdete v části [Nebezpečné materiály – dotazy a sestavy](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

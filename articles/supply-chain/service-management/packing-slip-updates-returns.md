@@ -48,3 +48,6 @@ Při aktualizaci dodacího listu pro vrácenou položku, která pochází z prod
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

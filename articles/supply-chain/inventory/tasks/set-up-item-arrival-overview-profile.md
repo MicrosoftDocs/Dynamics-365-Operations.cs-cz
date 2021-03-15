@@ -53,3 +53,6 @@ Toto téma je zaměřeno na nastavení profilu přehledu doručení. Profil pře
 17. Zvolte **Uložit**.
 18. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

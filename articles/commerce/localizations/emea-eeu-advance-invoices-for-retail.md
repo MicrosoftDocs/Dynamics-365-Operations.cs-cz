@@ -87,3 +87,6 @@ Tento postup slouží k povolení tisku dokumentů z POS na tiskárně Windows, 
 
 4. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
 5. Vyberte úlohu **1090** a klikněte na tlačítko **Spustit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

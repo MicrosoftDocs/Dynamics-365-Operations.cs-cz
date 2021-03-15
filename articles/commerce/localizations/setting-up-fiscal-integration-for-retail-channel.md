@@ -225,3 +225,6 @@ Chcete-li povolit ruční provedení odložené fiskální registrace, měli bys
     1. Výběr rozložení k aktualizaci
     2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.
     3. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

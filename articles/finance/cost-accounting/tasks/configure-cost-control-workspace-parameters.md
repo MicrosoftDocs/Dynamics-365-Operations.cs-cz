@@ -58,3 +58,6 @@ Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby v
 27. V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
     * Po výběru hierarchie dimenzí objektu nákladů rozbalte hierarchii dimenzí prvku nákladů a prohlédněte si požadované nákladové hodnoty. Můžete například rozbalit hierarchii Výrobní režie a zjistit z ní hodnoty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

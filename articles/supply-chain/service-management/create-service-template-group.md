@@ -38,3 +38,6 @@ Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

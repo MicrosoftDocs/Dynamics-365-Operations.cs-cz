@@ -63,3 +63,6 @@ V následující tabulce je uveden přehled termínů, které byste měli znát 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Přizpůsobení navigace na webu](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Například produkt X je přiřazen ke skupině vlastníků produktu *Designové
 ## <a name="product-owners-and-approvals"></a>Vlastníci produktů a schválení
 
 Protože vlastníci produktů vědí, zda konkrétní technické změny budou pro jejich produkty přínosem, má často smysl je zahrnout jako součást schvalovacího procesu do správy technických změn. Tento přístup můžete implementovat nastavením vlastníků produktů jako poskytovatelů účastníků v pracovních postupech, které se používají pro správu technických změn. Systém poté přiřadí úkoly schválení v pracovních postupech na základě produktů, které jsou v požadavcích na technické změny a příkazech k technickým změnám. Další informace naleznete v tématu [Správa změn technických produktů](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

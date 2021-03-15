@@ -36,3 +36,6 @@ Chcete-li vytvořit dávkovou úlohu nebo zpracovat platební faktury, odpisy ne
 > Následné transakce, jako jsou plány amortizace závazků, platby, odpisy a výdaje, budou zaúčtovány až po zaúčtování počátečního uznání u příslušných leasingů.
 >
 > Položky deníku jsou vytvořeny, ale nebudou zaúčtovány, dokud nevyberete příkaz **Spustit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

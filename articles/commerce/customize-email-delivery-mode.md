@@ -71,3 +71,6 @@ Chcete-li nakonfigurovat e-mailové šablony pro konkrétní způsoby doručení
 [Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
 
 [Změna způsobu dodání v POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Pokud jste aktivovali funkci náhledu oprav pracovního volna a svátků, Aplika
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Konfigurace typů pracovního volna a absence](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Tento postup popisuje uvolnění základního produktu, který bude použit pro 
 7. Klepněte na tlačítko Další.
 8. Klepněte na tlačítko Dokončit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

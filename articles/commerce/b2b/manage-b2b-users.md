@@ -139,3 +139,6 @@ Chcete-li zapojit obchodní partnery a uživatele do centrály Commerce, postupu
 [Nastavte limity množství produktů pro weby B2B elektronického obchodování](quantity-limits.md)
 
 [Přehled číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

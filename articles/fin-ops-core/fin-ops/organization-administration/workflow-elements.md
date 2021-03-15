@@ -89,3 +89,6 @@ Následující prvky umožňují navrhovat workflowy, které mají alternativní
 ### <a name="subworkflow"></a>Dílčí workflow
 
 *Dílčí workflow* je workflow, který je spuštěn v kontextu jiného workflowu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 8. Zrušte zaškrtnutí políčka Umístění.
 9. Klikněte na tlačítko OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Při nastavení seskupování pro automaticky generované pracovní příkazy po
 1. Pokud chcete, aby se možnosti uplatnily při spuštění pouze některých vašich plánů údržby, na kartě s náhledem **Záznamy, které mají být zahrnuty**, přidejte filtry podle potřeby, stejně jako to můžete udělat pro jiné dávkové úlohy v Microsoft Dynamics 365 Supply Chain Management.
 1. Na kartě s náhledem **Spustit na pozadí** nastavte dávkové a plánovací možnosti, jak požadujete, stejně jako u jiných dávkových úloh v Supply Chain Management.
 1. Výběrem **OK** spusťte a/nebo naplánujte vybrané plány údržby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

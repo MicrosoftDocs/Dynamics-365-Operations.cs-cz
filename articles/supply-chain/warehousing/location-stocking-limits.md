@@ -103,3 +103,6 @@ Chcete-li vysvětlit toto zjevné selhání, musíte porozumět kritériím výb
 
 > [!NOTE]
 > Limity pro místo uskladnění nemůžete použít například ke kontrole doplnění položek, které mají ve stejném umístění různá množství. V takovém případě použijte *šablonu doplnění*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Na následujícím obrázku je znázorněna hierarchie s různými kanály.
 [Nastavení maloobchodního kanálu](channel-setup-retail.md)
     
 [Nastavení online kanálu](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

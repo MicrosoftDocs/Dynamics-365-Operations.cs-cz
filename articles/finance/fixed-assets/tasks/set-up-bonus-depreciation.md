@@ -48,3 +48,6 @@ Tento postup popisuje vytvoření nové náhrady za zvláštní odpisy a její p
     * Výchozí hodnota pro procento nebo částku je převzatá z nastavení náhrady za zvláštní odpisy.  
 8. V poli Priorita zadejte číslo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

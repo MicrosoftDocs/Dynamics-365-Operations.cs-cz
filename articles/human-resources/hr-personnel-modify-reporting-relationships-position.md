@@ -44,3 +44,6 @@ Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnan
 12. V poli Nadřízená pozice zadejte nebo vyberte hodnotu.  Příklad: 000437
 13. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

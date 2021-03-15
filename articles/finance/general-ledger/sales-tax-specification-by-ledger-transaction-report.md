@@ -57,3 +57,6 @@ Při generování sestavy jsou k dispozici následující výchozí pole. Tato p
 Chcete-li v sestavě zobrazit pouze nedaňové účty, nastavte podmínku filtru, například hvězdičku (\*), jak je znázorněno na následujícím obrázku.
 
 ![Sestava zobrazující nedaňové účty](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

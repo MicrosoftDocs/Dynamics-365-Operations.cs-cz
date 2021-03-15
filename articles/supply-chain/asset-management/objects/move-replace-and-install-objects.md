@@ -90,3 +90,6 @@ K instalaci struktury majetku do funkčního místa použijte funkci **Nainstalo
 4. V poli **Funkční místo** zvolte nové místo.
 5. Ve výchozím nastavení je pole **Začátek platnosti** automaticky nastaveno na aktuální datum a čas. Můžete však vybrat jiné datum a čas, od kterého je instalace ve struktuře majetku platná.
 6. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

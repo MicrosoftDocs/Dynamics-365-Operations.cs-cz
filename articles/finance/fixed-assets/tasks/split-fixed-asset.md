@@ -62,3 +62,6 @@ Před rozdělením plně odepsaného majetku je třeba ručně změnit stav reze
     - Je vytvořena transakce pořízení pro nový majetek na stejnou částku.
 
 4. Zvolte **Zaúčtovat**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

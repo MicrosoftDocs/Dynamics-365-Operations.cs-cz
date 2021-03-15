@@ -53,3 +53,6 @@ Vaše zůstatky se před aktualizací buď automaticky aktualizují, nebo projdo
 
 [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
 [Správa zásad nákupu a prodeje pracovního volna](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

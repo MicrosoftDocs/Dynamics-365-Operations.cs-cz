@@ -87,3 +87,6 @@ Metoda degresivního odepisování 150 % vydělí 150 procent počtem roků živ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Kódy GTIN přiřazuje organizace GS1. V tomto příkladu zadáte kód pro čís
 11. Zadejte hodnotu do pole GTIN.
 12. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Zálohové faktury se při obchodování používají běžně. Dodavatel vystav
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

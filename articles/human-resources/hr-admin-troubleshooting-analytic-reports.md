@@ -43,3 +43,6 @@ Tento problém může být pouze záležitostí časování. Tento postup slouž
 1. Vyberte **Upravit** v horní části stránky a nastavte naplánované počáteční datum a čas na hodnotu, která bude aktualizovat analytiku blíže aktuálnímu času.
 
 ![Dávkové úlohy](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání inf
 | Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | 2018. června | [KB 4342134Microsoft Dynamics 365 for Retail - verze 7.3.2.5 - balíček BugFix 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* Odkaz směřuje na článek znalostní báze. Chcete-li zobrazit článek znalostní báze, musíte se přihlásit ke službě Lifecycle Services (LCS).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

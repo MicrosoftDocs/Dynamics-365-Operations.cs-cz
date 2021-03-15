@@ -72,3 +72,6 @@ Pokud funkce nebo modul webu elektronického obchodu používá nepodstatný sou
 [Modul souhlasu se soubory cookie](cookie-consent-module.md) 
  
 [Modul záhlaví](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

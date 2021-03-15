@@ -88,3 +88,6 @@ Zobrazí se další transakce pro částky v měně vykazování.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

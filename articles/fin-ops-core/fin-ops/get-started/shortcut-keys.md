@@ -255,3 +255,6 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 [Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

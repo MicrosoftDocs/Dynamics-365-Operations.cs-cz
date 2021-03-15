@@ -158,3 +158,6 @@ Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář e
 42. Klikněte na tlačítko **Uložit**.
 43. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

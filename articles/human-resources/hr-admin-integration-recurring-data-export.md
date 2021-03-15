@@ -205,3 +205,6 @@ Následující obrázek ukazuje, jak vypadá aplikace Logic Apps Designer, když
 V tomto návodu jste se seznámili s použitím llogic app k exportu dat z Human Resources a k uložení exportovaných dat do složky OneDrive pro firmy. Kroky v tomto výukovém programu můžete upravit podle potřeb firmy.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

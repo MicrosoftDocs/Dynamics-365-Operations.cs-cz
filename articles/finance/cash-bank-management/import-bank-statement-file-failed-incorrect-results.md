@@ -107,3 +107,6 @@ V následující tabulce jsou uvedeny příklady technických definic rozložen�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Tento článek vysvětluje, jak zobrazit výsledky procesu nároku.
    | **Výsledný stav** | To bude způsobilé nebo nezpůsobilé. Pokud pracovník nesplní požadované informace, jako je například četnost plateb nebo fixní kompenzace, nebo pokud v plánu zaměstnaneckých výhod chybí informace, které brání registraci zaměstnanců, nebude mít výsledný stav nárok. |
    | **Výsledná zpráva** | Označuje, proč pracovník nemá nárok na plán zaměstnaneckých výhod nebo který předává pravidlo způsobilosti. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

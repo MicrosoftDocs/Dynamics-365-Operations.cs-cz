@@ -77,3 +77,6 @@ Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabul
 | Náhradní díly          | Zobrazte seznam schválených a alternativních náhradních dílů, které lze na majetku použít.                                                                               |
 | Spotřeba majetku    | Vytiskněte sestavu zobrazující registrace spotřeby u majetku                                                                                                |
 | Závada majetku          | Vytiskněte sestavu zobrazující registrace závad u majetku                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

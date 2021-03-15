@@ -52,3 +52,6 @@ Tato procedura vás provede vytvořením úpravy velkoobchodní ceny. Úpravou v
 14. Zavřete stránku.
 15. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

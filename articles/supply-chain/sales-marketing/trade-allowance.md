@@ -199,3 +199,6 @@ Analytičtější přehled různých měření výkonu promoakcí najdete v zobr
 
 Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**. V podokně akcí klikněte na položku **Analýza**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

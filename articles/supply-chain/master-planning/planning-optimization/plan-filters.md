@@ -58,3 +58,6 @@ Je nastaven filtr plánu, který zahrnuje položky A, B a C. Běhy hlavního pl�
 [Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -79,3 +79,5 @@ Uvidíte banner na stránce **Odkazy** pracovního prostoru **Správa zaměstnan
 Po migraci kódů důvodu na správu zaměstnanců je možnost jejich použití ve správě zaměstnaneckých výhod automaticky nastavena na **Ano**.
 
 [![Použít ód důvodu ve správě zaměstnaneckých výhod](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

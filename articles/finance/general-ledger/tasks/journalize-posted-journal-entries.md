@@ -39,3 +39,6 @@ Tento postup ukazuje zapisováním do deníku zaúčtovaných položek deníku. 
 9. Kliknutím na tlačítko **OK** stránku filtru zavřete.
 10. Kliknutím na tlačítko **OK** spusťte proces zařazení do deníku. Po dokončení procesu se vygeneruje sestava.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

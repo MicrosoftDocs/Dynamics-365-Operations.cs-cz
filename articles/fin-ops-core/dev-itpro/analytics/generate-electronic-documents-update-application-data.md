@@ -40,3 +40,6 @@ Další informace o této funkci získáte v průvodcích záznamem úloh pro 
 - [Konfigurace modelu dat ER: Intrastat (model)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Konfigurace mapování modelu ER: Intrastat (mapování)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Konfigurace formátu ER: Intrastat (formát)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

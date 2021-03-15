@@ -66,3 +66,6 @@ Protože technická společnost vlastní data relevantní pro techniku, řídí 
 
     - Když jsou tyto dokumenty předány jiným právnickým osobám, jsou chráněny před odstraněním provozní společností.
     - Jiné právnické osoby mohou přidávat zcela nové místní dokumenty. Provozní společnost vlastní a udržuje tyto místní dokumenty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

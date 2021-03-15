@@ -45,3 +45,6 @@ Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze
 12. Klikněte na položku Uložit.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

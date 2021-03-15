@@ -45,3 +45,6 @@ Hledání lze dále upřesnit výběrem typu dokumentu, například faktury doda
 [![Použitý filtr a import pro typ obchodního dokumentu](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtrované výsledky mohou být importovány do úložiště RCS uživatelů nebo prostředí Dynamics 365 Finance, a to buď jednotlivě, nebo jako sadu. Chcete-li to provést, vyberte skupinu konfigurací a klikněte na možnost **Importovat**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Při pokusu o povolení map se může zobrazit následující chybová zpráva:
 *Chyba dvojího zápisu – registrace modulu plug-in se nezdařila: \[(nelze získat mapu oddílu pro projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Chyba překračuje maximální počet povolených oddílů pro mapování DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. došlo k jedné nebo více chybám.*
 
 Aktuální limit při propojení prostředí je přibližně 40 právnických osob. K této chybě dojde, pokud se pokusíte povolit mapy a mezi prostředími je propojeno více než 40 právnických osob.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

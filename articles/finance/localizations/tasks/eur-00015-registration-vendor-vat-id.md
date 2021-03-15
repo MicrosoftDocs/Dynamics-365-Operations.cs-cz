@@ -63,3 +63,6 @@ Dokončení této procedury vyžaduje nastavení hodnot DIČ. Postup se vztahuje
 25. V poli DIČ zadejte nebo vyberte hodnotu.
 26. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

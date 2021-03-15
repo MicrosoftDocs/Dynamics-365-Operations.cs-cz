@@ -121,3 +121,6 @@ Toto téma stručně popisuje některé scénáře specifické pro určité zem�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento úko
 13. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Stiskněte klávesu Shift, chcete-li vybrat více rolí, které chcete přidat do podokna **Vybrané role**, a kliknutím na šipku vybrané role přidejte.  
 14. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

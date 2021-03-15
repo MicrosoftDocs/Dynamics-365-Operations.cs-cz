@@ -51,3 +51,6 @@ Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace ji
 2. Klepněte na tlačítko **Ano**.
 3. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

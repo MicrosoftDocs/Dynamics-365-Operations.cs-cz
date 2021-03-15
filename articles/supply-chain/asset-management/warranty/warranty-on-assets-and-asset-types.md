@@ -53,3 +53,6 @@ Toto téma vysvětluje, jak nastavit záruky na majetek a typy majetku v modulu 
 
 > [!NOTE]
 > Když vytvoříte pracovní příkaz pro majetek, který je pokryt záruční smlouvou dodavatele, a pokud má pracovní příkaz očekávané počáteční datum během záruční doby, obdržíte oznámení o záruční smlouvě. Poté můžete požadovaný pracovní příkaz zrušit podle potřeby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

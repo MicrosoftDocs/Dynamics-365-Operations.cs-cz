@@ -43,3 +43,6 @@ Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyl
 5. Označte v seznamu vybraný řádek.
 6. V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

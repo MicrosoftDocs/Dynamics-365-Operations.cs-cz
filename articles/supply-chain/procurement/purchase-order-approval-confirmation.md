@@ -98,3 +98,6 @@ Pokud PO prochází správou změn, každá změna, například zrušení objedn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

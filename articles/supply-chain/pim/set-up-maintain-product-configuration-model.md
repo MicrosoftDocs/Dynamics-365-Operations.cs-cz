@@ -52,3 +52,6 @@ Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

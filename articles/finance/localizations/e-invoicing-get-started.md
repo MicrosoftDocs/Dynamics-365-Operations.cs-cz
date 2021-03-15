@@ -235,3 +235,6 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
 - [Začněte s doplňkem elektronické fakturace pro Mexiko](e-invoicing-mex-get-started.md)
 - [Začněte s doplňkem elektronické fakturace pro Itálii](e-invoicing-ita-get-started.md)
 - [Elektronické faktury zákazníka v Egyptě](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

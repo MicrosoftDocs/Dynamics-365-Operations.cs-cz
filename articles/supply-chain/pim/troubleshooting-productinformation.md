@@ -151,3 +151,6 @@ Pokud již byla ve společnosti A uvolněna varianta produktu a pokusíte se ji 
 Tlačítko **Nový** na stránce **Uvolněné varianty produktu** vytvoří variantu a uvolní ji v kontextu společnosti. Pokud již byla varianta vytvořena, nemůžete použít tlačítko **Nový** pro uvolnění v jiné společnosti.
 
 Chcete-li problém vyřešit, otevřete stránku **Základní produkt** a vyberte **Uvolnit produkt** pro uvolnění stávající varianty v požadované společnosti.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

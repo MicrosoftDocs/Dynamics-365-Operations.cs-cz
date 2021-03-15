@@ -113,3 +113,6 @@ Chcete-li přiřadit průvodce k šabloně kontrolního seznamu údržby, postup
 
 - [Přehled dvojitého zápisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Přehled správy majetku](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

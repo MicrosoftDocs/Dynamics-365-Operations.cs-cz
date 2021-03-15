@@ -68,3 +68,6 @@ Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si res
 5. V poli Skupina odpovědí zadejte nebo vyberte hodnotu.
 6. Zadejte hodnotu do pole Text.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

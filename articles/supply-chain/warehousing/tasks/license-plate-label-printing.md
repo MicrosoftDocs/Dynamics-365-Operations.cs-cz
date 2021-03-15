@@ -100,3 +100,6 @@ Tohle téma popisuje automatický tisk štítku Sériový nákladový kód konte
 7. Zvolte **Uložit**.
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

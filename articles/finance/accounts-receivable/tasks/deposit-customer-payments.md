@@ -47,3 +47,6 @@ Vložení platby odběratele. Tento úkol využívá ukázkovou společnost USMF
 17. Vyberte **OK**. První stránka slouží k vytvoření vkladové složenky.  
 18. Vyberte **OK**. Druhý krok je tisk vkladové složenky, ale tento krok není nutný.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Pokud používáte dvě měny nebo používáte jednu měnu, ale transakce jsou 
 Realizované zisky a ztráty jsou zisky a ztráty z dokončených transakcí. Zaznamenávají se do výkazu zisků a ztrát. Nerealizované zisky a ztráty jsou zisky a ztráty, které se uskutečnily, ale transakce není dokončena. Jinými slovy, zaúčtovali jste například fakturu, ale faktura ještě není vyrovnána a zaplacena. Nerealizované zisky a ztráty se zaznamenávají do rozvahy.
 
 Další informace, jak použít dvě měny, naleznete v části [Duální měna](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

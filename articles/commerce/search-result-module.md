@@ -90,3 +90,6 @@ Chcete-li přidat modul výsledků vyhledávání na stránku kategorie, postupu
 [Přehled knihovny modulů](starter-kit-overview.md)
 
 [Modul rychlého zobrazení](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Když spustíte nakonfigurovaný formát ER, připojená šablona Word se použi
 
 - [Opětovné použití konfigurace ER se šablonami aplikace Excel ke generování zpráv ve formátu Word](./tasks/er-design-configuration-word-2016-11.md)
 - [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

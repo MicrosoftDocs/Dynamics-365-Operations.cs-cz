@@ -81,3 +81,6 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

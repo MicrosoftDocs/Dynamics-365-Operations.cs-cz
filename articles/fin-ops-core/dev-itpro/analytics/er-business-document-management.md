@@ -579,3 +579,6 @@ V následující tabulce je uveden seznam konfigurací ER, které podporují kon
 |                             | Prodejní objednávka – dodací list (LT) (Excel)           |
 |                             | Prodejní objednávka – dodací list (PL) (Excel)           |
 |                             | Prodejní objednávka – dodací list (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

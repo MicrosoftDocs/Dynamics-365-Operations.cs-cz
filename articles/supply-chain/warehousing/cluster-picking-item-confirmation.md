@@ -41,3 +41,6 @@ Ověření položek pro výdej v seskupení funguje stejně jako při ověření
 |        Parametr        |                                    popis                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Potvrzení produktu | Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

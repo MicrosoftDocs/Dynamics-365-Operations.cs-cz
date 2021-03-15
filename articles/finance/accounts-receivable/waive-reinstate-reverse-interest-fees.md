@@ -94,3 +94,6 @@ Lze stornovat úroky z transakce použitím tlačítka **Historie** na kartě **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -120,3 +120,6 @@ Při fakturaci transakcí pro březen 2011 je prodejní cena 200 EUR snížena 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

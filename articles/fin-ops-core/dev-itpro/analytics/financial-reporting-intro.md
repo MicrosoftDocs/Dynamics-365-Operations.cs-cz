@@ -96,3 +96,6 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 
 ## <a name="additional-resources"></a>Další zdroje
 [Generování finančních sestav](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

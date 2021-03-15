@@ -89,3 +89,6 @@ Tento průvodce úkolem ukazuje, jak vytvořit zmocnění k přímému debetu a 
 3. Vyberte odběratele, pro kterého jste vybrali zmocnění.
 4. V poli **ID zmocnění k přímému debetu** zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

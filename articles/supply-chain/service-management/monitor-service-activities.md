@@ -59,3 +59,6 @@ Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

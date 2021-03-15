@@ -73,3 +73,6 @@ Pole **Alias**, **UPN** a **Externí dílčí identifikátor** na kartě **Comme
 [Vytvoření funkčního profilu maloobchodu](retail-functionality-profile.md)
 
 [ Konfigurace pracovníka](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

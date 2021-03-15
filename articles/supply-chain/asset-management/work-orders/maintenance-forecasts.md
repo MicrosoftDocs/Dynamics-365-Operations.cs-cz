@@ -123,3 +123,6 @@ Pokud jsou hodinové náklad,y náklady na položku a výdaje aktualizovány v o
 Na následujícím obrázku je uveden příklad stránky **Aktualizovat prognózu údržby pracovního příkazu**.
 
 ![Obrázek č. 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

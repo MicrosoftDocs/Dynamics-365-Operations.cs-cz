@@ -38,3 +38,6 @@ Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

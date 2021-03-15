@@ -98,3 +98,6 @@ Následující obrázek ukazuje zaškrtávací políčko **Povolit odkaz na na z
 [Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

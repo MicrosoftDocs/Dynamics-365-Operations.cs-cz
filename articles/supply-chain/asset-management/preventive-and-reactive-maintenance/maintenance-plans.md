@@ -238,3 +238,6 @@ Můžete nakonfigurovat systém tak, aby automaticky vynuloval čítač pokažd�
 1. Jděte na **Správa majetku \> Nastavení \> Pracovní příkazy \> Stavy životního cyklu**.
 1. V podokně seznamu vyberte stav životního cyklu pracovního příkazu, na kterém by měl být vynulován příslušný čítač.
 1. Na pevné záložce **Obecné** nastavte možnost **Resetovat čítač** na *Ano*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

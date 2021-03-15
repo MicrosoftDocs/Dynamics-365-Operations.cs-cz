@@ -73,3 +73,6 @@ Nákupní objednávka musí být potvrzena, než bude možné zpracovat příjem
 6. Sbalte oddíl **Řádky**.
 7. Výběrem tlačítka **OK** zaúčtujte příjem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

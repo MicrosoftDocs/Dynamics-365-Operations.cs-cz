@@ -63,3 +63,6 @@ Na stránce **Čítače majetku** (**Správa majetku** > **Dotazy** > **Majetek*
 >[!NOTE]
 >Rozsah lze nastavit tak, aby definoval odchylky v ručních registracích čítačů. Můžete také určit typ zprávy, která se zobrazí v případě, že se registrace nacházejí mimo definovaný rozsah. Další informace o nastavení čítačů naleznete v tématu [Čítače](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

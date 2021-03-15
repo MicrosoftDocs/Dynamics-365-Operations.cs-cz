@@ -67,3 +67,6 @@ Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hl
 Zbývající hodnota období odpisu dlouhodobého majetku se neaktualizuje, pokud je řádek deníku typu transakce odpisu vytvořený nebo importovaný prostřednictvím datové entity. Tato hodnota je aktualizována při použití procesu schválení odpisu pro vytvoření řádku deníku.
 
 Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

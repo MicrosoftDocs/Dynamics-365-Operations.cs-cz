@@ -56,3 +56,6 @@ Můžete také nastavit počáteční dynamický plán tak, aby se aktualizoval 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

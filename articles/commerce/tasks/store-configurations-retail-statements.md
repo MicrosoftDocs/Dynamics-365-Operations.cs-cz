@@ -48,3 +48,6 @@ Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způso
 17. Vyberte možnost „Ano“ v možnosti **Metoda rozdělení podle výpisu**, chcete-li získat výkazy vytvořené pro každou definovanou metodu výkazu. Tato akce je užitečná v případě, že výkon při účtování je třeba zlepšit pro obchody s vysokými objemy transakcí, protože vytvoří mnoho menších výkazů, které lze zpracovat současně.  
 18. Na pevné záložce **Obecné**, v poli **Výchozí odběratel** můžete vybrat účet odběratele, který se má použít pro prodeje příchozím odběratelům.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

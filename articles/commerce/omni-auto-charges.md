@@ -221,3 +221,6 @@ Pokud uživatelé ručně přepíší vypočtené náklady nebo přidají ručn�
 
 [Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

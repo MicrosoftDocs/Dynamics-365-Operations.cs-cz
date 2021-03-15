@@ -73,3 +73,6 @@ Chcete-li konfigurovat základní workflow, který je spuštěn, když zaměstna
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

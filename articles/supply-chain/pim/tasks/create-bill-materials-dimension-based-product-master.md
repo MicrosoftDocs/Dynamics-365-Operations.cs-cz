@@ -78,3 +78,6 @@ V tomto postupu je vhodné mít dokončené 4 předchozí průvodce v tomto poř
 5. Klikněte na tlačítko OK.
 6. Klepněte na tlačítko Aktivovat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

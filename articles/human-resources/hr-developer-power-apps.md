@@ -60,3 +60,5 @@ Chcete-li stáhnout šablonu **Power Automate – připojení k SQL a provedení
 ## <a name="additional-resources"></a>Další prostředky
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

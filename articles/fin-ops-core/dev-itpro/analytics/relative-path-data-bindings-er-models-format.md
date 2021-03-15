@@ -57,3 +57,6 @@ Tato funkce neruší zpětnou kompatibilitu architektury elektronického výkazn
 ## <a name="additional-resources"></a>Další prostředky
 
 [Jazyk vzorce ER](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

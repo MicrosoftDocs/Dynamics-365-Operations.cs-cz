@@ -154,3 +154,6 @@ Pokud se pokusíte použít apliaci skladu pro spuštění práce výdeje proti 
 ## <a name="other-blocked-operations"></a>Další blokované operace
 
 Veškeré operace, které upravují pracovní řádky, transakce zásob práce nebo odkazy doplňování, které souvisejí s prací, která je rozdělována, se nezdaří a zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je právě rozdělována.“
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

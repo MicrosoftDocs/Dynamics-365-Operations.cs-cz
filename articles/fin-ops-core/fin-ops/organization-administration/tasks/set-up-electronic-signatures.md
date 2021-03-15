@@ -77,3 +77,6 @@ Tento postup použijte k nastavení elektronických podpisů. Elektronický podp
 10. Klikněte na položku Uložit.
 11. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

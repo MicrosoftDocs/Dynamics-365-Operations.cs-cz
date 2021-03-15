@@ -139,3 +139,6 @@ Vlna se zpracuje a vytvoří práci pro rezervovaná množství na řádcích vy
 Pokud má dodávka stav **Zařazeno do vlny** nebo vyšší, aktualizace množství na řádku prodejní objednávky se neodrazí ani se neověřuje podle řádku vytížení, který je přiřazen k dodávce. Změny množství na řádku vytížení musí být provedeny přímo na řádku vytížení.
 
 Ověření je provedeno po vytvoření práce pro řádek vytížení a po provedení rezervace. Snížení množství na řádku prodejní objednávky se ověří podle rezervace řádku práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

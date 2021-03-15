@@ -62,3 +62,6 @@ Uživatelé centrály Commerce se mohou podívat na hodnoty vlastností pro vše
 [Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B](payment-method.md)
 
 [Nastavte limity množství produktů pro weby B2B elektronického obchodování](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

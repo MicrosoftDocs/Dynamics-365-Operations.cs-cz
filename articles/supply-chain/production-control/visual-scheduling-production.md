@@ -159,3 +159,6 @@ Ganttův diagram lze otevřít z následujících stránek.
 
 [Vizuální plánování výroby (ukázkový skript)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

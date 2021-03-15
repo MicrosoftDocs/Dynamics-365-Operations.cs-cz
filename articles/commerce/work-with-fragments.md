@@ -135,3 +135,6 @@ Fragment můžete také upravit tak, že jej vyberete na stránce, v šabloně n
 [Práce s přednastavenými rozloženími](work-with-layouts.md)
 
 [Práce se skupinami publikování](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

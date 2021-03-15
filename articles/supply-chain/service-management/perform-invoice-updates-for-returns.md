@@ -56,3 +56,6 @@ Při nastavení aktualizace faktury pro dávkové zpracování musí prodejní o
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v
 11. V poli **Platební sleva odběratele** vyberte hlavní účet pro zaúčtování platební slevy pro **Kódy DPH**, které jsou přidružené k této **Skupině zaúčtování hlavní knihy**. Toto pole je nepovinné a pokud není zadán žádný účet, použije se hlavní účet ze seznamu **Kódy platebních slev**. Může být užitečné použití různých účtů pro každou **Skupinu zaúčtování hlavní knihy**, pokud používáte možnost Stornovat DPH u platební slevy pro **skupiny DPH**.  
 12. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

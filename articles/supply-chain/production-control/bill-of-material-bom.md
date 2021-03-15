@@ -117,3 +117,6 @@ Vyberte řádek **Dodavatel**, pokud výrobní proces používá subdodavatele a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

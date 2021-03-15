@@ -217,3 +217,6 @@ Plnění objednávky na pokladním místě obsahuje filtrování umožňující 
 - Vytvořeno
 - Datum dodání
 - Datum příjmu
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

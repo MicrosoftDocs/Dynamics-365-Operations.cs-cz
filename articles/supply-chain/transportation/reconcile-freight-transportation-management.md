@@ -105,3 +105,6 @@ Dalším ze způsobů ručního párování v tomto příkladu je tento postup:
 1. Spárujte Inv1 a Inv 2 s FB jeden po druhém. FB je plně uzavřeno.
 
 Jak ukazuje tento příklad, párování faktur za přepravu se zápornými částkami by se mělo provádět pouze ručně. Tím zajistíte, že je vždy možné spárovat přepravní faktury se zápornými částkami k přepravnímu dokladu, který není plně uzavřen, protože vám to umožňuje řídit odpovídající sekvenci.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

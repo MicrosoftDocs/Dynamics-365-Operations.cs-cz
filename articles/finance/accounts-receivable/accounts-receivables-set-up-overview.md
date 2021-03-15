@@ -109,3 +109,6 @@ Další informace naleznete v tématu [Úvěr a inkasa v modulu Pohledávky](co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

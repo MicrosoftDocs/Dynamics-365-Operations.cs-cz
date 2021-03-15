@@ -133,3 +133,6 @@ Aktuální hodnoty můžete uložit jako výchozí hodnoty. K dispozici jsou dv�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

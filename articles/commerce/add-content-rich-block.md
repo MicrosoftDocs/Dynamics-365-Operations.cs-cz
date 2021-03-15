@@ -88,3 +88,6 @@ Chcete-li přidat modul textového bloku na novou stránku a nastavit požadovan
 
 [Modul videopřehrávače](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

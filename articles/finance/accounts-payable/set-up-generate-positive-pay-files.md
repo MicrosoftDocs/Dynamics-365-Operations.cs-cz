@@ -164,3 +164,6 @@ Pokud je nutné změnit soubor kladných plateb, můžete jej odvolat. Na strán
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

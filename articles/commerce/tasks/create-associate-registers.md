@@ -43,3 +43,6 @@ Tento postup demonstruje vytvoření pokladních míst. Tato procedura použív�
     * Číslo pokladny EFT POS umožňuje informovat procesor plateb o tom, který platební terminál odesílá autorizace požadavků. Tato hodnota se nazývá často "ID terminálu" nebo "TID". TID lze běžně nalézt na štítku na platebním zařízení.  
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

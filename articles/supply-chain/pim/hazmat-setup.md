@@ -283,3 +283,6 @@ Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení infor
 Specifikace *Tunel pro nebezpečný materiál* omezuje typy tunelů, kterými lze přepravovat nebezpečný materiál, určením typů tunelů, které musí být použity. Kategorie tunelů jsou stanoveny příslušnými předpisy pro přepravu nebezpečných materiálů. Tato specifikace se obvykle vztahuje pouze na silniční dopravu.
 
 Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení informací o produktech \> Nastavení \> Dokumentace expedice nebezpečného materiálu \> Tunel pro nebezpečný materiál**. Na stránce **Tunel pro nebezpečný materiál** můžete vytvořit libovolný počet identifikátorů tunelů a každý nakonfigurovat s identifikačním kódem a krátkým popisem.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

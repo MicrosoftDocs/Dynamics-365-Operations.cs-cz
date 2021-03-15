@@ -73,3 +73,6 @@ Názory, novinky a jiné informace o modulu Řízení skladů a jiných řešen�
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Podle těchto pokynů můžete uživatelům přiřadit role, které se používa
 1. Přejděte na **Správa systému \> Zabezpečení \> Přiřadit uživatele k rolím**.
 2. Vyberte role **Údržba leasingu**, **Referent leasingu** nebo **Zobrazit leasing** a poté vyberte **Ručně přiřadit / vyloučit uživatele**.
 3. Vyberte uživatele, kterému chcete roli přiřadit, a poté vyberte **Přiřait k roli**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

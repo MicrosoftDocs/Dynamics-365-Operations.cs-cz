@@ -41,3 +41,6 @@ Můžete nastavit různé typy požadavků pro použití ve vaší firmě. Poža
 Následující ilustrace znázorňuje příklad stránky **Všechny požadavky na údržbu**.
 
 ![Stránka Všechny požadavky na údržbu](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

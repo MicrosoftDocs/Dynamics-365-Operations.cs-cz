@@ -55,3 +55,6 @@ Tento postup se zaměřuje na nahrazení existujícího kanbanového pravidla za
 1. Nastavte Maximální množství na „100“.
     * Rozbalte pevnou záložku Množství a prohlédněte si pole Maximální množství. Změna maximálního množství na hodnotu 100 vám umožní zpracovat až 100 kanbanů.    Tento krok je posledním krokem v tomto postupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

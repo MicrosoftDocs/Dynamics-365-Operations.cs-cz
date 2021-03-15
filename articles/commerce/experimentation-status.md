@@ -44,3 +44,6 @@ Podobně ve sloupci **Stav třetí strany** mohou být zobrazeny následující 
 Schéma níže znázorňuje obě sady stavů a jejich vzájemný vztah.
 
 [ ![Stavy experimentování](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

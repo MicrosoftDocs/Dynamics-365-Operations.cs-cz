@@ -67,3 +67,6 @@ Na následujícím obrázku je uvedena stránka seznamu **Všechny rozvrhy údr�
 
 ![Obrázek č. 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

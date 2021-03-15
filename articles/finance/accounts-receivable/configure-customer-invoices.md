@@ -166,3 +166,6 @@ Následující pole mění chování procesu zaúčtování.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

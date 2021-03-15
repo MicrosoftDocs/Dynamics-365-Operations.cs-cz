@@ -69,3 +69,6 @@ Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomoc�
     - Akce **Vymazat a odeslat** je použitelná pouze při použití funkce kontaktního střediska.  
 8. Klikněte na možnost **Vymazat blokování**. Blokování nyní bylo z objednávky vymazáno a odebráno ze seznamu aktivních blokací. Všechna blokování a jejich podmnožinu podle specifického stavu zobrazíte změnou hodnoty v poli Zobrazit.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

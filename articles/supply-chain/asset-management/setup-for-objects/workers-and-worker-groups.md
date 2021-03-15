@@ -63,3 +63,6 @@ Můžete také vytvořit skupiny pracovníků údržby a přidružit k nim praco
 6. Pokud má skupina prostředků souviset s vybranou skupinou údržbářských pracovníků, vyberte možnost **Kopírovat ze skupiny prostředků**. V poli **Skupina** vyberte skupinu zdrojů, ze které chcete kopírovat nastavení kalendáře. Potom v poli **Skupina pracovníků** vyberte skupinu pracovníků, ke které chcete zkopírovat nastavení kalendáře skupiny prostředků. Tento krok je relevantní pouze v případě, že chcete, aby pracovníci údržby používali kalendář, který se vztahuje k prostředku (pracovnímu středisku) během plánování pracovního příkazu.
 
     Pole na pevné záložce **Podrobnosti** zobrazí počet pracovníků údržby a funkčních míst, které byly vytvořeny ve zvolené skupině pracovníků údržby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

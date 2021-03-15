@@ -85,3 +85,6 @@ Pro každého odběratele, který souhlasil s úhradou prostřednictvím směnky
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

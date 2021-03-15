@@ -85,3 +85,6 @@ Tento záznam používá ukázkovou společnost USMF. Manažer závazků nebo os
 24. Zavřete stránku.
 25. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

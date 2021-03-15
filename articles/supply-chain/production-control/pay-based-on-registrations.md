@@ -598,3 +598,6 @@ Pokud se pracovník nedostaví na práci v pracovní den a nemá na ten den plá
 - Automaticky vložit absenci
 
 Při výpočtu denních registrací pro pracovníka, který má oprávnění k pružné pracovní době, se použije jako kód absence kód, který je určený v poli **Automaticky vložit flex-**. Pokud pracovník není aktivován pro pružnou pracovní dobu, bude použit kód absence zadaný v poli **Automaticky vložit absenci**. Pokud má společnost kombinaci pracovníků, kteří mají povolenu pružnou pracovní dobu, a pracovníky, kteří nemají povolenu pružnou pracovní dobu, musíte nastavit oba parametry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -396,3 +396,6 @@ U tohoto scénáře bude paleta 3 přijata.
 1. Vyberte tlačítko Nabídka (**≡**) v horní části stránky a poté v nabídce vyberte možnost **Zrušit** pro návrat do nabídky.
 
 Nyní můžete mobilní aplikaci zavřít.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

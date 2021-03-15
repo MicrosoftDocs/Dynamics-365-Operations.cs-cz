@@ -77,3 +77,6 @@ Pokud jste zaúčtovali spotřebu v pracovních příkazech, můžete vytisknout
 >[!NOTE]
 >Můžete také vygenerovat [sestavu pracovních příkazů](../work-orders/work-order-report.md), která obsahuje další podrobnosti o pracovním příkazu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

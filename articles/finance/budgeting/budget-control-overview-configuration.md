@@ -126,3 +126,6 @@ Jakmile bude zapnuta kontrola rozpočtu, uživatelům se budou zobrazovat varovn
 Z této stránky mohou uživatelé přejít na stránku **Statistika kontroly rozpočtu podle období** a zobrazit zde podrobnosti o dostupnosti rozpočtu a rezervace pro vybrané kombinace dimenzí kontroly rozpočtu. Uživatelé mohou také přejít k podrobnostem na stránce **Statistika kontroly rozpočtu** a zobrazit si dostupnost rozpočtu pro všechny kombinace finančních dimenzí, které se používají v kontrole rozpočtu. 
 
 Pokud je kontrola rozpočtu zapnuta pro nákupní objednávky, může správce rozpočtu použít pracovní prostor **Rozpočty hlavní knihy a prognózy** ke kontrole fronty všech nepotvrzených nákupních objednávek s varováními a chybami kontroly rozpočtu. Pokud má správce rozpočtu nakonfigurovaná oprávnění překročit rozpočet, nákupní objednávky mohou být potvrzeny přímo v tomto pracovním prostoru.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

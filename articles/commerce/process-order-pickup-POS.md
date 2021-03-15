@@ -57,3 +57,6 @@ Pokud musíte změnit množství vyzvednutí poté, co vyberete položky, které
 Pokud je zapnutá funkce **Vylepšit uživatelské prostředí pro zpracování vyzvednutí objednávek v pokladním místě**, mohou organizace přidat tlačítko pro operaci **Změnit řádky vyzvednutí** do rozložení obrazovky stránky transakce. Poté, co vytvoříte nákupní košík transakce vyzvednutí v POS a vyberete položky, můžete vybrat **Změnit řádky vyzvednutí**, pokud musíte změnit vyzvedávané položky, ale nechcete zneplatnit celou transakci. V dialogovém okně **Změnit řádky vyzvednutí** můžete změnit položky k vyzvednutí a množství. Košík transakcí se poté aktualizuje, aby odrážel vaše změny.
 
 ![Dialogové okno Změnit vyzvedávané položky](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

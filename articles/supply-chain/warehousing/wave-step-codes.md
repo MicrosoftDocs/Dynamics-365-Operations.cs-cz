@@ -92,3 +92,6 @@ Následující postup vám pomůže zaručit, že vytvořená šablona doplněn�
 6. V poli **Kód kroku vlny** vyberte kód kroku vlny, který jste vybrali v šabloně doplnění.
 
 Tyto kroky provedete pro každou právnickou osobu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

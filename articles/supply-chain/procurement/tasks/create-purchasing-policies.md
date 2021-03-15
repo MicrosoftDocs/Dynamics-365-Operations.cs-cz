@@ -56,3 +56,6 @@ Totot téma popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní proc
 4. Vyberte **Zavřít**.
 - Nyní můžete nastavit jiná pravidla zásad pro zásady nákupu. Všimněte si, že typ pravidel zásad nemůže mít překrývající se pravidla, která jsou aktivní současně v rámci jedné zásady zásobování.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

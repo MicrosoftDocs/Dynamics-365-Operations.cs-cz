@@ -41,3 +41,6 @@ Systém můžete konfigurovat na zaslání e-mailových zpráv uživatelům, kdy
 
 > [!NOTE]
 > Šablony e-mailů pracovního postupu budou získány buď ze systémových e-mailových šablon nebo e-mailových šablon organizace v závislosti na tom, zda je pracovní postup pracovním postupem na úrovni systému (nikoli společnosti) nebo na úrovni organizace (specifický pro společnost).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

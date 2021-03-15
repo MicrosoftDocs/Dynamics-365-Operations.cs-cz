@@ -70,3 +70,6 @@ Stránka **Export** (**Správa systému \> Pracovní prostory \> Import/export**
 5. Tlačítkem **OK** spustíte export.
 
 Po dokončení exportu se zobrazí zpráva s počtem záznamů uložených do každého souboru. Soubory pak můžete importovat do konsolidované právnické osoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

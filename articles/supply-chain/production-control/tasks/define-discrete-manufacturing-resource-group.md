@@ -57,3 +57,6 @@ Skupina prostředků je sada provozních prostředků, které obvykle odpovídaj
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 7. Klikněte na odkaz na vybraném řádku v seznamu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

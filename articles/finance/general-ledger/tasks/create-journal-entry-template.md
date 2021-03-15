@@ -62,3 +62,6 @@ Zaúčtované deníky lze uložit jako šablony dokladů a použít v novém dok
 29. V poli **Částka** zadejte částku, kterou chcete použít pro doklad. Pole **Částka** se zobrazí pouze pokud je typ šablony dokladu Procento.  
 30. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

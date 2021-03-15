@@ -66,3 +66,6 @@ Tato procedura vás provede vytvářením nového online kanálu a jeho přidán
 3. Spusťte plán distribuce 1070 k synchronizování změn do databáze kanálů. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

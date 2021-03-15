@@ -152,3 +152,6 @@ Chcete-li přidat řádky reprezentující limit úvěru, který bude vygenerov�
 2. Vyberte operátor pro porovnání, který definuje, jakým způsobem mají být vyhodnocovány informace o skupině podle hodnocení.
 3. Zadejte hodnotu, která má být porovnána s hodnotou zadanou pro skupinu podle hodnocení.
 4. Zadejte limit úvěru, který má být přiřazen, pokud se informace o odběrateli shodují s hodnotou zadanou pro danou skupinu podle hodnocení. Můžete například vytvořit automatický limit úvěru pro skupinu podle hodnocení **Nízké**. Pokud je jednou ze skupin podle hodnocení počet let podnikání, můžete definovat jeden řádek, který přiřazuje limit úvěru 100 000, pokud odběratel podniká pět let, a další řádek, který přiřazuje limit úvěru 200 000, pokud odběratel podniká 10 let.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

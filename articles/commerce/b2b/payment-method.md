@@ -76,3 +76,6 @@ Chcete-li potvrdit, že byla povolena a zveřejněna platební metoda zákaznick
 [Nastavte limity množství produktů pro weby B2B elektronického obchodování](quantity-limits.md)
 
 [SDK a aktualizace knihovny modulů](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Při zaúčtování výkazu prodejní objednávky a faktury jsou vytvořeny pro 
 - Prodeje, pro které byl přidání zákazník do transakce v POS, generují samostatné prodejní objednávky a faktury, jednu pro každého jedinečného odběratele.
 
 Pro platby ve výkazu jsou automaticky vytvořeny deníky plateb a zásoby jsou automaticky aktualizovány pro obchod POS.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

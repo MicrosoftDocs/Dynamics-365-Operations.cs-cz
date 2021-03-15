@@ -37,3 +37,6 @@ Níže uvedený obrázek znázorňuje rozhraní k jiným modulům v aplikaci Fin
 ![Přehled integrace správy majetku](media/overview-integrate2.jpg)
 
 Správa majetku umožňuje efektivně spravovat a provádět úkoly související se správou a údržbou mnoha typů zařízení ve vaší firmě, například strojů, výrobních zařízení a vozidel. Správa majetku podporuje řešení napříč četnými průmyslovými odvětvími.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

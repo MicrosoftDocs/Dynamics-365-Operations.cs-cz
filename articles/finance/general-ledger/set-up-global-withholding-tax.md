@@ -47,3 +47,6 @@ Toto téma uvádí kroky pro nastavení globální srážkové daně z prodeje a
 7. Nastavte skupiny srážkové daně na stránce **Skupiny srážkové daně položky** pro položku nebo službu.
 
 8. Nastavte **Minimální částku faktury** na stránce **Parametry hlavní knihy > Srážková daň**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

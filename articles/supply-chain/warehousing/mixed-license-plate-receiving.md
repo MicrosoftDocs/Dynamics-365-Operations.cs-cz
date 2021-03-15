@@ -48,3 +48,6 @@ Je nutné vytvořit novou položku nabídky s prací v režimu, která nepouží
 - Přijetí a odložení smíšené registrační značky
 
 Možnosti pro identifikaci řádky zdrojového dokumentu jsou položka nákupní objednávky, řádek nákupní objednávky, vratka, položka převodu objednávky a řádek převodního příkazu. Tyto volby mohou změnit pořadí příjmu u jedné registrační značky. Poslední možností je podle položky nákladu. Můžete přidat více položek do registrační značky vozidla, ale nelze přepínat mezi více náklady.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ K provedení těchto kroků musíte nejprve dokončit kroky v postupu „Vytvoř
 25. Klikněte na tlačítko OK.
     * Analyzujte vytvořený soubor platby ve formátu XML. Srovnejte jej s navrženým rozvržením dokumentu a definovanými atributy platební transakce.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

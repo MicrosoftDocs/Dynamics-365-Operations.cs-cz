@@ -87,3 +87,6 @@ Následující kroky ve výrobním cyklu mohou nastat pro všechny typy smíšen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

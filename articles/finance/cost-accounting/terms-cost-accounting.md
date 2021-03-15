@@ -204,3 +204,6 @@ Výpisy jsou zobrazení pro vedoucí pracovníky, kteří odpovídají za říze
 Verze se používají k simulaci, zobrazení a porovnání různých výsledků. Standardně jsou zobrazeny všechny skutečné náklady v jedné základní verzi, která se nazývá *Skutečné*. U rozpočtů a výpočtů můžete pracovat s libovolným počtem verzí. Můžete například importovat data rozpočtu do původní verze a poté revidovat rozpočet v revidované verzi. V případě výpočtů můžete vytvořit více verzí. V těchto různých verzích pak můžete vytvářet výpočty pomocí různých pravidel výpočtu, která se budou používat pro přidělení nákladů.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -213,3 +213,6 @@ Po aktualizaci souboru global.json a publikování změn se nový text odkazu zo
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

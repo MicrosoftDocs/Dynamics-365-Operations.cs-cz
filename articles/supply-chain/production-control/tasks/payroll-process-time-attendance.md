@@ -69,3 +69,6 @@ Tento postup popisuje, jak povolit mzdový proces pro čas a docházku. K vytvo
 7. Klikněte na položku Upravit.
 8. V poli Platební smlouva zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

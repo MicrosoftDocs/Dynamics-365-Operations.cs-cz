@@ -118,3 +118,6 @@ Chcete-li zkontrolovat historii pracovního postupu pro deník:
 1. V navigačním podokně rozbalte **Řízení zásob \> Zápisy v deníku \> Položky** a poté vyberte typ deníku zásob.
 1. Otevření relevantní deník.
 1. Vyberte tlačítko **Pracovní postup** v podokně akcí a otevřete rozevírací dialogové okno. Vyberte **Historii pracovního postupu**. Další informace viz [Historie pracovního postupu](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

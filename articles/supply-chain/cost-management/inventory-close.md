@@ -86,3 +86,6 @@ V některých případech je nutné zrušit dokončenou uzávěrku skladu a vrá
 > [!NOTE] 
 > Znovu otevřít lze pouze poslední zásoby období, které bylo ukončeno. Pokud chcete stornovat předchozí skladové uzávěrky, je nutné stornovat postupně každou následnou skladovou uzávěrku, počínaje poslední uzávěrkou.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

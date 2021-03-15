@@ -72,3 +72,6 @@ V zobrazení **Skladové řádky** můžete sledovat průběh příchozího př�
 
 - Jděte na **Řízení skladu \> Dotazy a sestavy \> Řádky skladové objednávky** a pomocí filtru najděte řádky, které hledáte.
 - Jděte na **Zásobování a zdroje \> Nákupní objednávky \> Všechny nákupní objednávky** a otevřete příslušnou nákupní objednávku. V části **Řádky nákupní objednávky** vyberte jeden nebo více řádků a poté na panelu nástrojů vyberte **Sklad \> Záznamy o přijetí do skladu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

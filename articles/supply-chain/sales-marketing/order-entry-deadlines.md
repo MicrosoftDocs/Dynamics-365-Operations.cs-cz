@@ -108,3 +108,6 @@ Následující tabulka obsahuje konečné termíny zadání objednávky pro pobo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

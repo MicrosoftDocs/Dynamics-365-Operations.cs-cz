@@ -49,3 +49,6 @@ Po vytvoření skupin leasingu můžete ke každé skupině přiřadit knihy. Kd
 1. Přejděte na **Leasing majetku \> Nastavení \> Skupina leasingu**.
 2. Vyberte skupinu leasingu a poté vyberte **Knihy**.
 3. Vyberte **Nový** a poté v poli **Typ knihy** vyberte knihu, kterou chcete přiřadit do skupiny leasingu. Skupině leasingu můžete přiřadit více knih, pokud musí být leasing účtován různými způsoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

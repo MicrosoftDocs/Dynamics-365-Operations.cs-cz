@@ -44,3 +44,6 @@ Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobov
 4. Vyberte produkty, které chcete přidat do kategorie zásobování.
 5. Výběrem šipky přidáte produkty do tabulky **Vybrané**.
 6. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

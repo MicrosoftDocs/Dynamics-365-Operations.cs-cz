@@ -45,3 +45,6 @@ Tato procedura vás provede definováním bodů věrnostních odměn. Body věrn
 10. Vyberte možnost v poli Jednotka času konce platnosti.
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

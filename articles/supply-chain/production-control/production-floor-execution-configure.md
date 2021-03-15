@@ -99,3 +99,6 @@ Dávková úloha pravidelně čistí položky v referenční tabulce pro zaříz
 1. V podokně Akce vyberte **Vyčištění konfigurací klienta**.
 1. V dialogovém okně **Vyčištění konfigurace klienta** nastavte pole **Počet dní** na počet dní (zpětně), které je třeba zvážit. Odeberete všechny konfigurace a záznamy přihlášení pro zařízení, která nebyla během této doby aktivní.
 1. Volbou **OK** vyčistíte příslušné konfigurace na základě nastavení **Počet dní**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

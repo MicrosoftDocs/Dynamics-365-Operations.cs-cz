@@ -70,3 +70,6 @@ Proces upgradu přesune vaše existující nastavení a všechny vaše existují
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

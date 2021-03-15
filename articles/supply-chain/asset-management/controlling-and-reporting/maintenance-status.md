@@ -67,3 +67,6 @@ Na níže uvedeném snímku obrazovky byly přidány informace o funkčních mí
 
 ![Příklad měsíčního pracovního vytížení s funkčními místy](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

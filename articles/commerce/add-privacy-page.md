@@ -108,3 +108,6 @@ Na fragment lze nyní odkazovat v šabloně pro jiné stránky webu. Pokud je na
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
 
 [Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

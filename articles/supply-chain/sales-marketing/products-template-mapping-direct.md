@@ -123,3 +123,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

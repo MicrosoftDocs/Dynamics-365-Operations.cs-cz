@@ -142,3 +142,6 @@ Pokud jde o kalendář skupiny disponibility, je třeba uvážit, že existuje c
 
 ### <a name="updating-scm-related-calendars"></a>Aktualizace kalendářů souvisejících se SCM
 I když je důležité, aby všechny relevantní kalendáře měly přiřazené odpovídajících místo (dodavatele, odběratele, sklad, způsob dodání nebo skupinu disponibility), jejich aktualizace je stejně důležitá, aby odrážely změnu. Systém definuje datum výroby, převodu, nákupu a prodejní objednávky podle kombinace přiřazené kalendáře. Osvědčilo se objasnit, kdo nese odpovědnost za přiřazování a aktualizaci kalendářů v příslušných oblastech. V případě rozdělení či jiných neobvyklých změn pracovních dnů je nutné aktualizovat kalendáře příslušným způsobem. Všechny úkoly, které závisí na kalendářích, jako je hlavní plánování a plánování výroby, je nutné při aktualizaci kalendářů provést znovu. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Pokud je v konfliktu s účtovou osnovu, lze změnit formát oddělovače účet
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Určení, zda prostředí vyžaduje aktualizaci oddělovače 
 Pokud jsou oddělovače ve vašem upgradovaném prostředí konfliktní, může dojít k nestabilitě při zadávání hodnot v ovládacím prvku segmentované položky nebo položky řízení dimenzí. To znamená, že je třeba vždy použít vyhledávací kódy nebo plovoucí nabídku při zadávání kombinací účtů a dimenzí.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Toto je pátý z pěti úkolů, které společně popisují proces platby dodava
     3.    Zadejte hodnotu do pole **Název souboru**. Z důvodu platby v EUR bude v tomto příkladu vygenerovaný soubor kompatibilní se SEPA. Převod kreditu ISO20022, jakož i jiné formáty plateb dodavatelů, lze také použít k vytváření plateb v jiných měnách.
     4.    V poli **Bankovní účet** zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

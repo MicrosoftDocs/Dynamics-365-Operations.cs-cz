@@ -36,3 +36,6 @@ Tato procedura vás provede postupem stažení a předem definované hardwarové
 5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 6. Klikněte na Stáhnout.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

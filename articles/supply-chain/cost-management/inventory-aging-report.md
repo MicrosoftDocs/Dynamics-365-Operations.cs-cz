@@ -364,3 +364,6 @@ Nová sestava bude vypadat podobně jako v následujícím příkladu.
 </tr>
 </tfoot>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Mějte na paměti následující body:
 
 - Můžete nastavit čítače, které souvisejí s jiným čítačem. V takovém případě jsou při aktualizaci čítače automaticky aktualizovány související čítače. Další informace o nastavení souvisejících čítačů naleznete v tématu [Čítače](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

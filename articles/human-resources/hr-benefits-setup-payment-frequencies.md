@@ -56,3 +56,6 @@ Pole faktorů přepočtu identifikují faktor přepočtu z četnosti plateb do s
    | **Hodinový koeficient převodu** | Roční koeficient převodu pro frekvenci plateb Roční koeficient převodu pro měsíční frekvenci plateb je například následující: </br></br>(12 měsíčních plateb / 2080 hodin) = 0,005769
 
 4. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

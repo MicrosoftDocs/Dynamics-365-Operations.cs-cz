@@ -48,3 +48,6 @@ Můžete vytvářet měsíční faktury pro jednotlivé leasingy nebo můžete p
 6. Po zaúčtování transakce můžete zobrazit informace o transakci a účetní hodnotu leasingového závazku výběrem **Transakce závazku** v leasingové knize.
 
     V platebním kalendáři bude vybráno políčko **Deník zaúčtován** a na řádku bude uvedeno číslo deníku faktury. Po vytvoření deníku plateb a položky pro tento deník musíte záznam stornovat, než jej lze znovu vytvořit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

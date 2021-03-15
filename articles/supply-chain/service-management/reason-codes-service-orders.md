@@ -49,3 +49,6 @@ Kódy důvodů jsou volitelné. Můžete se rozhodnout, zda má být požadován
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Chování leasingu majetku ovlivňuje několik nastavení konfigurace. Tato nast
 
     > [!NOTE]
     > Doporučujeme ponechat tuto možnost nastavenou na **Ne**. Nastavení této možnosti se používá jako ověření a kontrola, aby se zabránilo náhodnému odepsání verze uzavřené knihy. Ponecháním možnosti nastavenou na **Ne** pomůžete udržet přesnou zůstatkovou účetní hodnotu a přesné výpočty budoucích odpisů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

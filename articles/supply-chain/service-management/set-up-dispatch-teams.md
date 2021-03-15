@@ -53,3 +53,6 @@ Toto téma popisuje, jak vytvořit expediční tým. Po vytvoření expedičníh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

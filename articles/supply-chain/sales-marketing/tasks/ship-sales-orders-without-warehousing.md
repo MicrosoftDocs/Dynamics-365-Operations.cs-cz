@@ -55,3 +55,6 @@ Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výro
 19. V podokně akcí vyberte **Vyskladnit a zabalit**.
 20. Vyberte **Dodací list**. Stránka **Deník dodacích listů** obsahuje všechny dokumenty dodacího listu, které byly vygenerovány pro vaši objednávku. Můžete zkontrolovat podrobnosti o jednotlivých dokumentech a vytisknout je, pokud chcete.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

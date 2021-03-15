@@ -66,3 +66,6 @@ Povolte sledování změn pro projekty datové entity.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekty (z aplikace Supply Chain Management do služby Field Service): Projekty
 
 [![Mapování šablony v integraci dat](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

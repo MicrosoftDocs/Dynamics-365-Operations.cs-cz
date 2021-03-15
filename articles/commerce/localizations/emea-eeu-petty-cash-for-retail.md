@@ -92,3 +92,6 @@ Následující postup slouží k nastavení metody platby pro platby v hotovosti
 
 > [!NOTE]
 > Je nutné nastavit protiúčty jak pro metodu platby pro úhrady hotovosti, tak pro odebrání úhrady nebo metodu platby plovoucí položky pro obchod. Tím se vytvoří vyrovnané položky hlavní knihy pro odebrání úhrady nebo transakce plovoucí položky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

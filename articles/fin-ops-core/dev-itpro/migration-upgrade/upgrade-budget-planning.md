@@ -162,3 +162,6 @@ Bylo přidáno několik datových entit, aby bylo možné rychle implementovat p
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

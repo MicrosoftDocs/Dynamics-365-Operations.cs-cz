@@ -104,3 +104,6 @@ Výpočty nejsou zahrnuty do ověření. Je nutné vyzkoušet model konfigurace 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

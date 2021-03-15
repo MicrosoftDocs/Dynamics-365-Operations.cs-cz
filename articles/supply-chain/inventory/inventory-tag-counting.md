@@ -35,3 +35,6 @@ Vytvořením řádků na stránce **Inventura podle štítků** přidáte čísl
 ## <a name="additional-resources"></a>Další zdroje
 
 [Cyklická inventura](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

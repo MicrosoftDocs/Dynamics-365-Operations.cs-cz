@@ -56,3 +56,6 @@ Jak vaše organizace roste, musíte začít s plánováním kariérního postupu
 27. Vyberte **Výsledek**
 28. Vyberte **Sestavu**. Sestava zobrazí seznam doporučených spárování v horní části sestavy. V seznamu vidíte element „mezera“. Mezera je rozdíl mezi úrovní mapování dovedností a úrovní dovedností dané osoby.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

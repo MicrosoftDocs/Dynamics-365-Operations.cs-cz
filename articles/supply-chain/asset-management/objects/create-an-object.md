@@ -115,3 +115,6 @@ Na této pevné záložce můžete přidat nebo odebrat kola údržby, která js
 ## <a name="financial-dimensions"></a>Finanční dimenze
 
 Můžete vybrat finanční dimenze pro majetek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

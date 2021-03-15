@@ -100,3 +100,6 @@ Je vhodné definovat jedinečný typ dokumentu pro opravy pomocí stránky **Typ
 [Nastavení objednávek kvality](tasks/set-up-quality-orders.md)
 
 [Kontrola kvality zboží](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

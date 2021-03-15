@@ -221,3 +221,6 @@ V posuvném podokně se zobrazují nejnovější výsledky provádění procesu.
 [Vytváření a úpravy virtuálních tabulek, které obsahují data z externího zdroje dat](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Co jsou portály Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Přehled vytváření aplikací v Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

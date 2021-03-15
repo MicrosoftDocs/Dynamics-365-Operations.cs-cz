@@ -86,3 +86,6 @@ V následujícím obrázku jsou uvedeny příklady těchto typů upozornění.
 *Seznam* je název zadaný pro kolekci záznamů, kterou se můžete posunovat. Tyto záznamy lze přenést na stránku jejich výběrem. Často se tím otevře mřížka.
 
 ![Na následujícím obrázku vidíte příklady panelů nástrojů, mřížek a seznamů.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

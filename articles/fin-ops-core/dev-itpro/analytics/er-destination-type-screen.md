@@ -38,3 +38,6 @@ Nastavíte-li **Povoleno** na **Ano**, vytvoří se náhled výstupu. Některé 
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

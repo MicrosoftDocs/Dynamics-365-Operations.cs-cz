@@ -86,3 +86,6 @@ V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na p�
 
 Když se kanban spotřebovává ve vstupním místě výroby, je vykazován jako prázdný signál a do toku je přidán nový kanban stejného typu. Po vytvoření kanbanu se do vlny kanbanu přidá řádek vlny. Při zpracování vlny kanbanu se vytvoří skladová práce vyskladnění kanbanu. Pracovník skladu zpracuje práci pro výdej kanbanu a je nasměrován na výdej materiálu pro kanban ve skladovém místě. Když tento pracovník skladu potvrdí vyskladnění, kanban bude automaticky doplněn a pracovník skladu dostane pokyn k vložení materiálu do vstupního skladového místa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

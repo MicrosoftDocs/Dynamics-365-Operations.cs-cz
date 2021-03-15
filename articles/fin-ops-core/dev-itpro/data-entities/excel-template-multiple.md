@@ -49,3 +49,6 @@ V případech, kdy musí být odeslána nová verze stejného nebo zcela nového
 ## <a name="upload-a-file-using-run-project"></a>Odeslání souboru pomocí spuštění projektu
 
 Můžete načíst soubor aplikace Excel při používání možnosti **Spustit projekt** pro provedení projektu importu. Musíte si dávat pozor, abyste odeslali pouze soubory, které mají stejné listy jako existující mapování na datových entitách v datovém projektu. Pokud není list nalezen v nově odeslaném souboru, systém zobrazí chybovou zprávu a zastaví import. Pokud u entity musí být změněno mapování na list, musí být nejprve aktualizováno mapování v datovém projektu z datového projektu předtím, než použijete soubor v možnosti **Spustit projekt**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

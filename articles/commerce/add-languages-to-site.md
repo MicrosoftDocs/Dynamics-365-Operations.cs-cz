@@ -175,3 +175,6 @@ Jazyk, který jste přidali, bude nyní k dispozici, abyste mohli nakonfigurovat
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Fakturované nákupní objednávky zaznamená pasiva na účet dodavatele v rám
 ## <a name="vendor-performance"></a>Výkonnost dodavatele
 
 Přehled nákupu a výkon je podporován prostřednictvím *zásobování a sestav závazků*, zahrnující analýzy výdajů a analýzy výkonnosti dodavatelů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

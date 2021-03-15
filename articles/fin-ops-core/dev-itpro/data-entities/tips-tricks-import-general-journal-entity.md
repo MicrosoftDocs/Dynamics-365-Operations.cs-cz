@@ -65,3 +65,6 @@ V následujících oddílech je popsán dopad tohoto nastavení. Vysvětlují ta
 - Pokud je pole **Číslo dokladu** nastaveno na **Automaticky generované**, import se nezdaří. Nastavení **Automaticky generované** pro pole **Číslo dokladu** není podporováno.
 
 Ve výchozím nastavení používají entity obecného deníku zpracování založené na sadě. Po vyhodnocení obchodních požadavků vaší organizace můžete změnit nastavení **Zpracování založené na sadě** klepnutím na **Datové entity** v pracovním prostoru **Správa dat**. Zpracování založené na sadě se používá k urychlení procesu importu. Pokud nechcete zpracování založené na sadě použít, import entity obecného deníku bude pomalejší.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

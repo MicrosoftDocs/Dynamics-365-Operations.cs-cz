@@ -121,3 +121,6 @@ Chcete-li přidat externí skript přímo do šablony v rámci konfigurátoru we
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

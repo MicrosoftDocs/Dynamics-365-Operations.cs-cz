@@ -39,3 +39,6 @@ Stránka **Přehled atributů majetku** zobrazuje samostatný řádek pro každ�
 3. Vyberte **OK**. Seznam obsahuje všechny majetky, které používají vybraný typ majetku. Pro každý majetek jsou všechny typy atributů souvisejícího majetku zobrazeny na stejném řádku.
 
 Stránka **Atribut majetku** zobrazuje samostatný řádek pro každý typ atributu použitý u majetku. Chcete-li tuto stránku otevřít, vyberte **Správa majetku** \> **Dotazy** \> **Majetek** \> **Atribut majetku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

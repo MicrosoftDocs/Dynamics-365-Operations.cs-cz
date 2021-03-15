@@ -106,3 +106,6 @@ Chcete-li exportovat jednotkové převody do Excelu, na stránce **Převody jedn
 ## <a name="additional-resources"></a>Další prostředky
 
 [Správa měrných jednotek](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

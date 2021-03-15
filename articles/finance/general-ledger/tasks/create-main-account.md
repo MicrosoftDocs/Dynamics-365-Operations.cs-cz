@@ -51,3 +51,6 @@ Tento průvodce úkoly váš provede přidáním hlavního účtu k existující
 21. V poli **Typ převodu měny** vyberte metodu pro výpočet směnných kurzů pro účet.
 22. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

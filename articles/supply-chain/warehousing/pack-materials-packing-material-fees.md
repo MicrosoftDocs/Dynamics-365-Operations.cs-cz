@@ -111,3 +111,6 @@ Na faktuře můžete vytisknout hmotnost obalových materiálů a informovat o t
 
 1. Přejděte do **Pohledávky \> Nastavení \> Parametry pohledávek**.
 1. Na kartě **Aktualizace** na pevné záložce **Faktura** nastavte volbu **Tisk hmotnosti obalového materiálu** na hodnotu **Ano**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

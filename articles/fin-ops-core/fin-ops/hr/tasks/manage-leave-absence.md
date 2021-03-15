@@ -46,3 +46,6 @@ Tento postup vás provede vytvářením záznamů o odchodu zaměstnance. Lze sl
     * Například: odchod kvůli adopci  
 12. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Tento záznam používá ukázkovou společnost USRT.
     * Vyberte účet, kam se mají zaúčtovat částky pro odvod do trezoru.  
 8. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

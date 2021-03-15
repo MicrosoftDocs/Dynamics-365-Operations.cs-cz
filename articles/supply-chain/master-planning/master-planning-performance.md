@@ -161,3 +161,6 @@ Před zahájením kroku disponibility se zobrazí krok předběžné disponibili
 - **Jedna těžká rutina najednou** – Nespouštějte hlavní plánování spolu s žádnou jinou těžkou rutinou.
 - **Zkontroluje protokol relace.**
 - **Filtrování položek** – Použijte stav životního cyklu pro vyloučení položek ze spuštění hlavního plánovaní. (Nepoužívejte čísla položek.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ K tomuto problému dochází, když je množství transakce zásob zadáno jako 
 
 > [!IMPORTANT]
 > Důrazně doporučujeme, abyste skript pečlivě upravili podle potřeby pro své prostředí, otestovali jej v testovacím prostředí a poté zkontrolovali výsledná data před spuštěním skriptu v provozním prostředí.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

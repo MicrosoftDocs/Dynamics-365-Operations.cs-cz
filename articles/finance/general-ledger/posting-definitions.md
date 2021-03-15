@@ -61,3 +61,6 @@ Tato omezení platí v případě, že vytvoříte odkazy v definicích účtov�
 Další informace získáte v části [Příklady definice účtování](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

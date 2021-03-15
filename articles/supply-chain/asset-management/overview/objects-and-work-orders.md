@@ -54,3 +54,6 @@ Chcete-li naplánovat a spustit úlohu údržby v pracovním příkazu, je nutn�
 
 > [!NOTE]
 > Obecně, když pracujete v aplikaci Dynamics 365 Supply Chain Management a modulu **Správa majetku**, vyberete **Nový** pro vytvoření nového záznamu, vyberete možnost **Upravit** pro aktualizaci existujícího záznamu a vyberete možnost **Uložit** pro uložení nových nebo upravených dat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

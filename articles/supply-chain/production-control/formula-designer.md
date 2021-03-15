@@ -120,3 +120,6 @@ Kliknutím na tlačítko **Nastavení** můžete upravit informace zobrazené ve
 |     Kusovník     | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí ve stromové struktuře. V modulu Návrhář receptur jsou vybraná kritéria zobrazena v dolní části obou tabulek. |
 |    Postup    |                                           Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí pro postupy.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

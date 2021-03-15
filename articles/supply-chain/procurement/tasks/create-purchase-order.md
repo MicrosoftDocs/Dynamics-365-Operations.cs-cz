@@ -73,3 +73,6 @@ Toto téma popisuje způsob ručního vytváření nákupní objednávky. Nákup
 
 2. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

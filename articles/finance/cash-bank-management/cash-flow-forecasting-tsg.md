@@ -52,3 +52,6 @@ Ověřte, že byla nakonfigurována měření „Cash flow measure V2“ a „Le
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Byly entity úložiště Entity aktualizovány?
 
 Musíte pravidelně obnovovat své entity, abyste zajistili, že data jsou aktuální a přesná. Chcete-li ručně aktualizovat konkrétní entitu, přejděte na **Správa systému \> Nastavení \> Úložiště Entity**, vyberte entitu a poté vyberte **Obnovit**. Data lze také aktualizovat automaticky. Na stránce **Úložiště Entity** nastavte možnost **Automatické obnovení povoleno** na **Ano**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

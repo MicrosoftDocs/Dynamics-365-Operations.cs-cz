@@ -150,3 +150,6 @@ Další informace o vlastních polích naleznete v tématu [Vytvoření vlastní
 [Odebrání instance](hr-admin-setup-remove-instance.md)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

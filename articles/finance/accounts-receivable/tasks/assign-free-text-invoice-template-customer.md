@@ -49,3 +49,6 @@ Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odb�
     + Ročně – Vyberte tuto možnost a zadejte počet roků do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva roky.  
 14. Do pole **Za** zadejte číslo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

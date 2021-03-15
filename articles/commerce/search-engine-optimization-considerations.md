@@ -55,3 +55,6 @@ Vzhledem k tomu, že aplikace Dynamics 365 Commerce podporuje ověřené náhled
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
 [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -251,3 +251,6 @@ Uživatelé globalizačních služeb mohou spravovat prostředí, aby nastavili 
 10. Výběrem možnosti **Publikovat** publikujte prostředí.
 
     ![Publikované prostředí](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

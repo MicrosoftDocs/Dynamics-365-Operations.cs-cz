@@ -76,3 +76,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Pracovní příkazy s aplikací Project (Field Service do Supply Chain Management): WorkOrderService
 
 [![Mapování šablony v integraci dat](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

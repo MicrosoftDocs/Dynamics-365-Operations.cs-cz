@@ -104,3 +104,6 @@ Další informace o položkách nabídky mobilního zařízení naleznete v té
 Více informací o scénáři výroby *Nahlásit jako hotovo* získáte v tématu [Přehled pracovních zásad skladu](warehouse-work-policies.md).
 
 Další informace o správě příchozího vytížení získáte v části [Skladová manipulace s příchozím zatížením pro nákupní objednávky](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

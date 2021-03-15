@@ -56,3 +56,6 @@ Tento postup ukazuje, jak přiřadit skupiny DPH k velkoobchodním kanálům. Pr
 21. Klikněte na odkaz na vybraném řádku v seznamu.
 22. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

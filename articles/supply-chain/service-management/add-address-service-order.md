@@ -74,3 +74,6 @@ Pro přidání alternativní adresy do servisní zakázky postupujte takto:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

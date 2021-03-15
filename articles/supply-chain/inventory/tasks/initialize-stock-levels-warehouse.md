@@ -59,3 +59,6 @@ Tento postup popisuje, jak manuálně aktualizovat zásoby na skladě pomocí de
 25. Zavřete stránku.
 26. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

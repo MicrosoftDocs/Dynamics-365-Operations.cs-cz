@@ -62,3 +62,6 @@ Seznam výsledků hledání je omezen na 10 položek. Pokud ve výsledcích nena
 ## <a name="development"></a>Vývoj
 
 Z pohledu vývoje je funkce hledání navigace velmi jednoduchá, protože nevzniká téměř žádná prodleva mezi nasazením položek nabídky a možnosti jejich zobrazení ve výsledcích hledání. Dokud jsou položky nabídky propojeny z navigačního podokna nebo řídicího panelu, je možné je automaticky prohledávat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

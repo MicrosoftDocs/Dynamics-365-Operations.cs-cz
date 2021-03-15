@@ -103,3 +103,6 @@ Chcete-li zobrazit povolené typy úhrad vratek v POS, postupujte podle kroků v
 
 
 ![Seznam způsobů platby](media/Return-policy-page5.PNG "Typy refundace nejsou povoleny")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

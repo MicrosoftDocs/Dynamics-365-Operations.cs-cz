@@ -43,3 +43,6 @@ Kontrolor nákladů může tento postup použít k mapování dimenze prvku nák
     * V tomto příkladu vyberte člena dimenze 6001004 Telefon.  
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

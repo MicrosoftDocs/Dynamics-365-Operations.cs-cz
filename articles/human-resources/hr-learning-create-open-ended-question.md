@@ -38,3 +38,6 @@ Dotazy s otevřeným koncem povolují respondentům poskytovat vlastní odpověd
     * Pro otázky s otevřeným koncem se používá vstupní druh Text nebo Poznámka.  
 6. V poli Text zadejte svoji otázku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

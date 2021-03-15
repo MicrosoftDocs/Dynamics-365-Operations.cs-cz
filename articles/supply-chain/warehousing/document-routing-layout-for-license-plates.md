@@ -135,3 +135,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Další informace o tisku štítků
 
 Další informace o nastavení a tisku štítků naleznete v tématu [Povolení tisku štítků registračních značek](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

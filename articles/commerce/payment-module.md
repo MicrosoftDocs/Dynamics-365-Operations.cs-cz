@@ -117,3 +117,6 @@ Pokud jsou zapotřebí konektory platby Adyen i PayPal, přidejte oba moduly do 
 [Konektor platby Dynamics 365 pro PayPal](paypal.md)
 
 [Silné ověření klienta pomocí konektoru Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -34,3 +34,6 @@ Tento postup popisuje, jak vytvořit nový stav cyklu životnosti produktu. Stav
 3. Zadejte hodnotu do pole Stav.
 4. Zadejte nějakou hodnotu do pole Popis.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

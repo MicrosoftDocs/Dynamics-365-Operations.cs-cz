@@ -72,3 +72,6 @@ Tato procedura vás provede vytvářením balíčku výrobku a jeho použití v 
 17. Klikněte na položku Vytvořit.
 18. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

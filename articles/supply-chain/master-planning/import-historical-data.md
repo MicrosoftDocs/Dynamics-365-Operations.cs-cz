@@ -61,3 +61,6 @@ Po importu historických dat poptávky lze generovat prognózu poptávky.
 
 [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)  
 [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

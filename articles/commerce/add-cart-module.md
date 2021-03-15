@@ -117,3 +117,6 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
 
 [Vytvoření online funkčního profilu](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

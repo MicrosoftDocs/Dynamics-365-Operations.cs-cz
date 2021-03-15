@@ -49,3 +49,6 @@ Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Hu
    | Plány | Pevná záložka plány obsahuje plány, které vyhovují zadanému kritériu filtru. Na každém řádku jsou zahrnuty odpovídající možnosti konfigurace, které byly nastaveny zaměstnancem HR a vybranými zaměstnanci. Pole Oprávněný určuje, zda existuje konflikt ověření s výběrem plánu. |
 
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
