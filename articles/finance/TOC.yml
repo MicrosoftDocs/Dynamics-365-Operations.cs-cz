@@ -72,7 +72,9 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (březen 2021)
+                    - name: Finance 10.0.18 (květen 2021)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (duben 2021)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (únor 2021)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: Odstraněné nebo zastaralé funkce
               items:
+                - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Odebrané nebo zastaralé funkce v předchozích verzích
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: Zpracování upomínek
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Příklad zpracování upomínek
+              href: accounts-receivable/process-collection-letters-example.md
             - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Sestava sledování prodlení odběratele
@@ -486,6 +492,8 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Chronologické číslování dokumentů a dokladů
               href: accounts-receivable/chrono-numbers.md
+            - name: Archivovat vytištěné faktury zákazníků s hash čísly
+              href: accounts-receivable/archive-printed-invoices.md
         - name: Rozpočtování
           items:
             - name: Domovská stránka rozpočtování
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: "Import a\_vytvoření více jednorázových dodavatelů a\_faktur ve veřejném sektoru"
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Omezení úprav rozúčtování na fakturách
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: Plán pro jednorázové dodavatele ve veřejném sektoru
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: "Řízení přístupu k\_nákupním smlouvám ve veřejném sektoru"
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: Začněte s doplňkem elektronické fakturace pro Brazílii
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Elektronické faktury zákazníka v Egyptě
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: Začněte s doplňkem elektronické fakturace pro Egypt
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: Začněte s doplňkem elektronické fakturace pro Itálii
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: Začněte s doplňkem elektronické fakturace pro Mexiko
@@ -1580,6 +1590,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Nastavení parametrů NF-e pro fiskální subjekt
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.006 - Zprostředkující prodejní digitální platforma pro NF-e
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 - Pravidla daňových výhod a výjimek pro NF-e / NFC-e
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
@@ -1784,6 +1796,8 @@
                   href: localizations/emea-egy-reg-numbers.md
                 - name: Konfigurace rozložení faktur pro Egypt
                   href: localizations/emea-egy-invoice-layout.md
+                - name: Elektronické faktury zákazníka v Egyptě
+                  href: localizations/emea-egy-e-invoices.md
             - name: Estonsko
               items:
                 - name: Estonsko - přehled
@@ -2008,12 +2022,14 @@
                   items:
                     - name: Přehled souboru auditu pro Německo
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: Přizpůsobení konfigurace souboru auditu
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Vygenerování souboru auditu
-                      href: localizations/tasks/german-audit-file.md
                     - name: Import konfigurace souboru auditu
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: Vygenerování souboru auditu
+                      href: localizations/tasks/german-audit-file.md
+                    - name: Přizpůsobení konfigurace souboru auditu
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: Přidání filtrů do konfigurace souboru auditu
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: "Opravy odpisů u\_dodatečných pořízení za druhý rok"
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Sestava černé listiny
                   href: localizations/emea-ita-black-list-report.md
-                - name: Datum kompetence
+                - name: Datum kompetence a fiskální deník
                   href: localizations/emea-ita-competence-date.md
                 - name: Odpisování dlouhodobého majetku
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3253,11 +3269,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Finanční výkonnost
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Finanční přehledy
+                - name: Finanční analýza
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: Správa dlouhodobého majetku
                   href: fixed-assets/Fixed-asset-management-workspace.md
-                - name: Výuka
+                - name: Vzdělávání
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Školení organizace
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -3485,7 +3501,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
                         - name: Where
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/finance/toc.json
-                    - name: Logika
+                    - name: Logické
                       items:
                         - name: Logické funkce
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/finance/toc.json
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3675,6 +3697,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
                     - name: "Opětovné použití konfigurací elektronického výkaznictví s\_šablonami Excel pro generování sestav ve formátu Word"
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Potlačení ovládacích prvků obsahu Wordu v generovaných sestavách
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
                 - name: Návrh konfigurací pro vyplnění šablon PDF
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Integrace obrázků a tvarů
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Sdílení konfigurací v globálním úložišti
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Ukončení konfigurací v globálním úložišti RCS
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
