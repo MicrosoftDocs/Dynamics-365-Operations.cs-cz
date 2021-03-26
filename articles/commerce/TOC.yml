@@ -94,6 +94,8 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.18 (květen 2021)
+                      href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (duben 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (únor 2021)
@@ -102,6 +104,8 @@
                       href: get-started/whats-new-commerce-10-0-15.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
+                    - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
@@ -532,6 +536,8 @@
                       href: omni-channel-payments.md
                     - name: Omnikanálové platby objednávek Commerce
                       href: dev-itpro/commerce-payments.md
+                    - name: Archivovat data transakcí platební karty
+                      href: dev-itpro/archive-cc-data.md
                     - name: Zpracování kreditních karet bez hardwarové stanice
                       href: dev-itpro/cnp-pos.md
                     - name: Dynamics 365 Payment Connector pro PayPal
@@ -540,6 +546,12 @@
                       href: wallets.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
+                - name: "E-mail a\_oznámení"
+                  items:
+                    - name: Konfigurace e-mailů s příjemkou pro použití vlastních rozložení a šablon
+                      href: configure-emailed-receipt-formats.md
+                    - name: Přidání QR kódu nebo čárového kódu do transakčních e-mailů a e-mailů s příjemkou
+                      href: add-qr-code-barcode-email.md
                 - name: Správa map Bing pro vaši organizaci
                   href: dev-itpro/manage-bing-maps.md
                 - name: Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem
@@ -766,6 +778,8 @@
                   href: refund_policy_returns.md
         - name: Správa zákazníků
           items:
+            - name: Správa zákazníků v obchodech
+              href: customer-mgmt-stores.md
             - name: Clienteling
               items:
                 - name: Přehled clientelingu
@@ -860,6 +874,8 @@
                   href: configure-multi-B2C-tenants.md
                 - name: Domény v Dynamics 365 Commerce
                   href: domains-commerce.md
+                - name: Možnosti implementace sítě pro doručování obsahu
+                  href: cdn-options.md
                 - name: Přidání podpory sítě pro doručování obsahu (CDN)
                   href: add-cdn-support.md
                 - name: Povolení zjišťování obchodu na základě polohy
@@ -1066,6 +1082,10 @@
                   items:
                     - name: Moduly a stránky správy obchodního vztahu
                       href: account-management.md
+                - name: Moduly správy identity
+                  items:
+                    - name: Moduly a stránky správy identity
+                      href: identity-mgmt-modules.md
                 - name: Moduly kolekce produktů
                   items:
                     - name: Moduly kolekce produktů
@@ -1206,6 +1226,8 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Podpora pro upgrade a N-1 pro Indii
                   href: localizations/apac-ind-n-1-for-india.md
+                - name: Generování QR kódů a jejich tisk na příjemkách
+                  href: localizations/ind-generate-qr-code-print-receipt.md
             - name: Itálie
               items:
                 - name: Vzor integrace fiskální tiskárny pro Itálii
@@ -2088,6 +2110,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Nastavení aplikací
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Soubor nastavení platformy
+                      href: e-commerce-extensibility/platform-settings.md
                     - name: Rozšíření definice modulu
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Přehled API rozhraní souborů cookie
@@ -2136,6 +2160,8 @@
                       href: e-commerce-extensibility/data-action-overrides.md
                     - name: Zavěšení datových akcí
                       href: e-commerce-extensibility/data-action-hooks.md
+                    - name: Volání datových akcí na straně serveru pomocí AJAX
+                      href: e-commerce-extensibility/data-actions-with-ajax.md
                 - name: Vývoj motivů
                   items:
                     - name: Přehled motivů
@@ -2248,7 +2274,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: Volání API POS nebo operací z rozšíření POS
                   href: dev-itpro/pos-api-extension.md
-                - name: Spouštěče Modern POS (MPOS) a tisk
+                - name: Spouštěče POS
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky
                   href: dev-itpro/pos-control-non-screen.md
@@ -2304,7 +2330,7 @@
                   href: dev-itpro/order-attributes.md
                 - name: Atributy odběratele
                   href: dev-itpro/customer-attributes.md
-                - name: Vzory SDK CRT
+                - name: Rozšíření příjemky
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Události rozšíření protokolu do Application Insights
                   href: dev-itpro/commerce-application-insights.md
@@ -2344,6 +2370,54 @@
                   href: dev-itpro/ecommerce-platform-sdk.md
             - name: Lokalizace zdrojů rozšíření Commerce a souborů popisků
               href: dev-itpro/extension-resource-localization.md
+        - name: Řešení potíží
+          items:
+            - name: Zpracování objednávky
+              items:
+                - name: Typ platby musí být chyba kreditní karty
+                  href: troubleshoot/payment-type-credit-card-error.md
+                - name: Daně na online objednávkách jsou nesprávně vypočítány
+                  href: troubleshoot/tax-miscalculated-online-order.md
+                - name: Chyba synchronizace objednávky související s výchozí platební službou
+                  href: troubleshoot/synchronization-error.md
+            - name: Zpracování plateb
+              items:
+                - name: Refundace na vratce je odmítnuta
+                  href: troubleshoot/refund-declined.md
+                - name: Dynamics 365 Payment Connector pro Adyen
+                  items:
+                    - name: Řešení potíží s Dynamics 365 Payment Connector pro Adyen
+                      href: troubleshoot/adyen-support.md
+                    - name: Možnost Uložit pro mou další platbu se nezobrazí
+                      href: troubleshoot/next-payment-link-not-appearing.md
+                    - name: Na stránce zadání kreditní karty se při placení zobrazuje chyba
+                      href: troubleshoot/credit-card-entry-form-error.md
+                    - name: Platby jsou automaticky vypořádány před fakturací nebo odesláním objednávek
+                      href: troubleshoot/payments-auto-settled.md
+            - name: Správa webu elektronického obchodu
+              items:
+                - name: Během počátečního nasazení nelze konfigurovat skupinu zabezpečení pro tvůrce webů
+                  href: troubleshoot/security-group-site-builder.md
+                - name: Produkty a kategorie se v tvůrci webů nezobrazují
+                  href: troubleshoot/products-categories-unavailable.md
+                - name: Po kopírování prostředí chybí produkty a kategorie
+                  href: troubleshoot/missing-products-categories.md
+                - name: Omezení přístupu k výkladní skříni během testování nebo vývoje
+                  href: troubleshoot/restrict-access-storefront.md
+                - name: Odkaz na přihlášení přesměruje zpět na web elektronického obchodu
+                  href: troubleshoot/sign-in-redirects-back.md
+                - name: Záznamy zákazníků se nezobrazují v ústředí Commerce
+                  href: troubleshoot/customer-record-not-appearing.md
+                - name: Nezobrazuje se možnost výběru
+                  href: troubleshoot/pickup-store-link-missing.md
+                - name: Maloobchod se neobjevuje v seznamu obchodů
+                  href: troubleshoot/pickup-store-missing.md
+                - name: Lze rezervovat položky bez zásob
+                  href: troubleshoot/items-without-inventory-checked-out.md
+            - name: Řešení potíží s SDK
+              items:
+                - name: Nastavení vývojářského prostředí elektronického obchodování pro ladění proti virtuálnímu počítači Retail Server úrovně 1
+                  href: troubleshoot/set-up-dev-environment-debugging.md
     - name: Vývoj a správa aplikací Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

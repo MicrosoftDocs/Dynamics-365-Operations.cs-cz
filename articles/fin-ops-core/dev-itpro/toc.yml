@@ -14,6 +14,8 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.18 (květen 2021)
+                  href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platform Update pro 10.0.17 (duben 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform Update pro 10.0.16 (únor 2021)
@@ -22,6 +24,8 @@
                   href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Odstraněné nebo zastaralé funkce
               items:
+                - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Odstraněné nebo zastaralé funkce platformy
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Odebrané nebo zastaralé funkce v předchozích verzích
@@ -38,6 +42,8 @@
               href: business-events/app-business-events.md
             - name: Obchodní události workflow
               href: business-events/business-events-workflow.md
+            - name: Obchodní události dávky
+              href: business-events/system-business-events.md
             - name: Výstrahy jako obchodní události
               href: business-events/alerts-business-events.md
             - name: Obchodní události v Microsoft Flow
@@ -216,10 +222,14 @@
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: Interní majetek pro údržbu
                               href: data-entities/dual-write/in-house-assets.md
-                            - name: 'Integrovaný pracovník, práce a pozice'
-                              href: data-entities/dual-write/integrated-hr.md
                             - name: Dostupnost zásob
                               href: data-entities/dual-write/inventory-availability.md
+                            - name: 'Integrovaný pracovník, práce a pozice'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Integrace poznámek
+                              href: data-entities/dual-write/notes-integration.md
+                            - name: Odkaz na mapování
+                              href: data-entities/dual-write/mapping-reference.md
                         - name: Podpora duálního zápisu
                           items:
                             - name: Podpora řešení Field Service a Project Service Automation
@@ -642,6 +652,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Vytvoření připojení Lifecycle Services (LCS) v Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Aktualizace hostovaného Azure Pipeline pro nové balíčky NuGet
+                  href: dev-tools/pipeline-nuget-split.md
                 - name: Aktualizace starých kanálů v Azure Pipelines
                   href: dev-tools/pipeline-msbuild-update.md
             - name: Vzorová aplikace správy vozového parku
@@ -1100,11 +1112,9 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Monitorování a diagnostika
               href: lifecycle-services/monitoring-diagnostics.md
-            - name: Sestava analýzy dopadů
-              href: lifecycle-services/impact-analysis-report.md
             - name: Restart služeb prostředí
               href: lifecycle-services/restart-environment-services.md
-            - name: Nahlášení výpadku výroby
+            - name: Nahlásit výpadek výroby
               href: lifecycle-services/report-production-outage.md
             - name: Sledování přihlášení uživatelů
               href: lifecycle-services/user-logins.md
@@ -1448,6 +1458,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Export B2B uživatelů do Azure AD
               href: sysadmin/implement-b2b.md
+            - name: Údržba dat
+              href: sysadmin/DataMaintenancePortal.md
             - name: Zabezpečení
               items:
                 - name: Zabezpečení na základě rolí

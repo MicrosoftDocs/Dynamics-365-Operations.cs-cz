@@ -17,46 +17,49 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf6f0bc27121e6c1a0b4bba2ad1ca31909423c92
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d35d1a734ebff3abdf49083c282b5dfb64b445bd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969063"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212414"
 ---
-# <a name="fixed-assets-home-page"></a><span data-ttu-id="3dbb6-103">Domovská stránka Dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="3dbb6-103">Fixed assets home page</span></span>
+# <a name="fixed-assets-home-page"></a><span data-ttu-id="33c45-103">Domovská stránka Dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="33c45-103">Fixed assets home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3dbb6-104">Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-104">Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</span></span> 
+<span data-ttu-id="33c45-104">Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost.</span><span class="sxs-lookup"><span data-stu-id="33c45-104">Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</span></span> 
 
-<span data-ttu-id="3dbb6-105">Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-105">You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</span></span> <span data-ttu-id="3dbb6-106">Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-106">You can calculate adjustments to the fixed assets, and also dispose of them.</span></span> <span data-ttu-id="3dbb6-107">Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-107">When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</span></span> <span data-ttu-id="3dbb6-108">Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-108">The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</span></span> <span data-ttu-id="3dbb6-109">Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-109">Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</span></span> <span data-ttu-id="3dbb6-110">Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-110">The Fixed assets functionality incorporates many of these standards and rules.</span></span>
+<span data-ttu-id="33c45-105">Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy.</span><span class="sxs-lookup"><span data-stu-id="33c45-105">You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</span></span> <span data-ttu-id="33c45-106">Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení.</span><span class="sxs-lookup"><span data-stu-id="33c45-106">You can calculate adjustments to the fixed assets, and also dispose of them.</span></span> <span data-ttu-id="33c45-107">Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="33c45-107">When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</span></span> <span data-ttu-id="33c45-108">Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu.</span><span class="sxs-lookup"><span data-stu-id="33c45-108">The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</span></span> <span data-ttu-id="33c45-109">Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="33c45-109">Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</span></span> <span data-ttu-id="33c45-110">Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.</span><span class="sxs-lookup"><span data-stu-id="33c45-110">The Fixed assets functionality incorporates many of these standards and rules.</span></span>
 
-<span data-ttu-id="3dbb6-111">[![Obchodní proces](./media/FA-process.PNG)](./media/FA-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="3dbb6-111">[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)</span></span>
-
-
-
-### <a name="additional-resources"></a><span data-ttu-id="3dbb6-112">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="3dbb6-112">Additional resources</span></span>
-
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="3dbb6-113">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="3dbb6-113">What's new and in development</span></span>
-
-<span data-ttu-id="3dbb6-114">Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-114">Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
-
-#### <a name="blogs"></a><span data-ttu-id="3dbb6-115">Blogy</span><span class="sxs-lookup"><span data-stu-id="3dbb6-115">Blogs</span></span>
-
-<span data-ttu-id="3dbb6-116">Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [Microsoft Dynamics 365 Finance and Operations - Finance](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="3dbb6-116">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
-
-<span data-ttu-id="3dbb6-117">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-117">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
-
-#### <a name="task-guides"></a><span data-ttu-id="3dbb6-118">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="3dbb6-118">Task guides</span></span>
-<span data-ttu-id="3dbb6-119">Další nápověda je k dispozici v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-119">Additional help is available as task guides.</span></span> <span data-ttu-id="3dbb6-120">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="3dbb6-120">To access task guides, click the Help button on any page.</span></span>
-
-#### <a name="videos"></a><span data-ttu-id="3dbb6-121">Videa</span><span class="sxs-lookup"><span data-stu-id="3dbb6-121">Videos</span></span>
-
-<span data-ttu-id="3dbb6-122">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="3dbb6-122">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="33c45-111">[![Obchodní proces](./media/FA-process.PNG)](./media/FA-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="33c45-111">[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)</span></span>
 
 
+
+### <a name="additional-resources"></a><span data-ttu-id="33c45-112">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="33c45-112">Additional resources</span></span>
+
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="33c45-113">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="33c45-113">What's new and in development</span></span>
+
+<span data-ttu-id="33c45-114">Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují.</span><span class="sxs-lookup"><span data-stu-id="33c45-114">Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
+
+#### <a name="blogs"></a><span data-ttu-id="33c45-115">Blogy</span><span class="sxs-lookup"><span data-stu-id="33c45-115">Blogs</span></span>
+
+<span data-ttu-id="33c45-116">Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [Microsoft Dynamics 365 Finance and Operations - Finance](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="33c45-116">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+
+<span data-ttu-id="33c45-117">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="33c45-117">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
+
+#### <a name="task-guides"></a><span data-ttu-id="33c45-118">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="33c45-118">Task guides</span></span>
+<span data-ttu-id="33c45-119">Další nápověda je k dispozici v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="33c45-119">Additional help is available as task guides.</span></span> <span data-ttu-id="33c45-120">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="33c45-120">To access task guides, click the Help button on any page.</span></span>
+
+#### <a name="videos"></a><span data-ttu-id="33c45-121">Videa</span><span class="sxs-lookup"><span data-stu-id="33c45-121">Videos</span></span>
+
+<span data-ttu-id="33c45-122">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="33c45-122">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 
 
+
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
