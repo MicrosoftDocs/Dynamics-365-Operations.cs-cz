@@ -16,51 +16,51 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e060fe2a578296f079653244ed4d5676313e5ea8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ac188832bdaeba430eed7f08e91a9c2214a0e15
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963053"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219094"
 ---
-# <a name="channels-overview"></a><span data-ttu-id="e847a-103">Přehled kanálů</span><span class="sxs-lookup"><span data-stu-id="e847a-103">Channels overview</span></span>
+# <a name="channels-overview"></a><span data-ttu-id="80a0e-103">Přehled kanálů</span><span class="sxs-lookup"><span data-stu-id="80a0e-103">Channels overview</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="e847a-104">Toto téma poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="e847a-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="e847a-105">Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení každého kanálu.</span><span class="sxs-lookup"><span data-stu-id="e847a-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
+<span data-ttu-id="80a0e-104">Toto téma poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="80a0e-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="80a0e-105">Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení každého kanálu.</span><span class="sxs-lookup"><span data-stu-id="80a0e-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
 
-## <a name="types-of-channels"></a><span data-ttu-id="e847a-106">Typy kanálů</span><span class="sxs-lookup"><span data-stu-id="e847a-106">Types of Channels</span></span>
+## <a name="types-of-channels"></a><span data-ttu-id="80a0e-106">Typy kanálů</span><span class="sxs-lookup"><span data-stu-id="80a0e-106">Types of Channels</span></span>
 
-<span data-ttu-id="e847a-107">Dynamics 365 Commerce podporuje tři různé typy kanálů: maloobchodní, kontaktní a online kanály.</span><span class="sxs-lookup"><span data-stu-id="e847a-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
+<span data-ttu-id="80a0e-107">Dynamics 365 Commerce podporuje tři různé typy kanálů: maloobchodní, kontaktní a online kanály.</span><span class="sxs-lookup"><span data-stu-id="80a0e-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
 
-### <a name="retail-channels"></a><span data-ttu-id="e847a-108">Maloobchodní sítě</span><span class="sxs-lookup"><span data-stu-id="e847a-108">Retail channels</span></span>
+### <a name="retail-channels"></a><span data-ttu-id="80a0e-108">Maloobchodní sítě</span><span class="sxs-lookup"><span data-stu-id="80a0e-108">Retail channels</span></span>
 
-<span data-ttu-id="e847a-109">Maloobchodní kanály představují standardní kamenné obchody.</span><span class="sxs-lookup"><span data-stu-id="e847a-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="e847a-110">Každý obchod může mít vlastní pokladní místo (POS), účty příjmů a výdajů a zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="e847a-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
+<span data-ttu-id="80a0e-109">Maloobchodní kanály představují standardní kamenné obchody.</span><span class="sxs-lookup"><span data-stu-id="80a0e-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="80a0e-110">Každý obchod může mít vlastní pokladní místo (POS), účty příjmů a výdajů a zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="80a0e-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
 
-### <a name="call-center-channels"></a><span data-ttu-id="e847a-111">Kanály kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="e847a-111">Call center channels</span></span>
+### <a name="call-center-channels"></a><span data-ttu-id="80a0e-111">Kanály kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="80a0e-111">Call center channels</span></span>
 
-<span data-ttu-id="e847a-112">Kanály kontaktního střediska reprezentují objednávku střediska volání a řízení zákazníků.</span><span class="sxs-lookup"><span data-stu-id="e847a-112">Call center channels represent call center order and customer management.</span></span>
+<span data-ttu-id="80a0e-112">Kanály kontaktního střediska reprezentují objednávku střediska volání a řízení zákazníků.</span><span class="sxs-lookup"><span data-stu-id="80a0e-112">Call center channels represent call center order and customer management.</span></span>
 
-### <a name="online-channels"></a><span data-ttu-id="e847a-113">Online kanály</span><span class="sxs-lookup"><span data-stu-id="e847a-113">Online channels</span></span>
+### <a name="online-channels"></a><span data-ttu-id="80a0e-113">Online kanály</span><span class="sxs-lookup"><span data-stu-id="80a0e-113">Online channels</span></span>
 
-<span data-ttu-id="e847a-114">Online kanály představují online poutače e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="e847a-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="e847a-115">Po vytvoření online kanálu je nutné vytvořit web pomocí nástroje Microsoft Dynamics 365 Commerce Site Builder nebo jiného řešení e-Commerce třetí strany.</span><span class="sxs-lookup"><span data-stu-id="e847a-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
+<span data-ttu-id="80a0e-114">Online kanály představují online poutače e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="80a0e-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="80a0e-115">Po vytvoření online kanálu je nutné vytvořit web pomocí nástroje Microsoft Dynamics 365 Commerce Site Builder nebo jiného řešení e-Commerce třetí strany.</span><span class="sxs-lookup"><span data-stu-id="80a0e-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
 
-## <a name="channel-setup-basics"></a><span data-ttu-id="e847a-116">Základy nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-116">Channel setup basics</span></span>
+## <a name="channel-setup-basics"></a><span data-ttu-id="80a0e-116">Základy nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-116">Channel setup basics</span></span>
 
-<span data-ttu-id="e847a-117">Nastavení kanálu se provádí v nástroji Commerce.</span><span class="sxs-lookup"><span data-stu-id="e847a-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="e847a-118">Každý kanál může mít vlastní metody platby, cenové skupiny, hierarchie produktů, sortimenty a sadu produktů.</span><span class="sxs-lookup"><span data-stu-id="e847a-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="e847a-119">Po vytvoření kanálu přiřadíte produkty, které má obsahovat a prodávat.</span><span class="sxs-lookup"><span data-stu-id="e847a-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="e847a-120">Každý typ kanálu má jedinečnou sadu funkcí, které je nutné nakonfigurovat.</span><span class="sxs-lookup"><span data-stu-id="e847a-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="e847a-121">Maloobchodní kanál například vyžaduje přiřazení zaměstnanců, registrů a odběratelů.</span><span class="sxs-lookup"><span data-stu-id="e847a-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="e847a-122">Jakmile je vytvořen nový kanál, musí být přiřazen k organizační hierarchii.</span><span class="sxs-lookup"><span data-stu-id="e847a-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
+<span data-ttu-id="80a0e-117">Nastavení kanálu se provádí v nástroji Commerce.</span><span class="sxs-lookup"><span data-stu-id="80a0e-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="80a0e-118">Každý kanál může mít vlastní metody platby, cenové skupiny, hierarchie produktů, sortimenty a sadu produktů.</span><span class="sxs-lookup"><span data-stu-id="80a0e-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="80a0e-119">Po vytvoření kanálu přiřadíte produkty, které má obsahovat a prodávat.</span><span class="sxs-lookup"><span data-stu-id="80a0e-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="80a0e-120">Každý typ kanálu má jedinečnou sadu funkcí, které je nutné nakonfigurovat.</span><span class="sxs-lookup"><span data-stu-id="80a0e-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="80a0e-121">Maloobchodní kanál například vyžaduje přiřazení zaměstnanců, registrů a odběratelů.</span><span class="sxs-lookup"><span data-stu-id="80a0e-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="80a0e-122">Jakmile je vytvořen nový kanál, musí být přiřazen k organizační hierarchii.</span><span class="sxs-lookup"><span data-stu-id="80a0e-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
 
-## <a name="channel-setup-prerequisites"></a><span data-ttu-id="e847a-123">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-123">Channel setup prerequisites</span></span>
+## <a name="channel-setup-prerequisites"></a><span data-ttu-id="80a0e-123">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-123">Channel setup prerequisites</span></span>
 
-<span data-ttu-id="e847a-124">Před nastavením kanálu je nutné dokončit některé požadované úkoly na základě typu kanálu.</span><span class="sxs-lookup"><span data-stu-id="e847a-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="e847a-125">Další informace naleznete v tématu [Předpoklady pro nastavení kanálů](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="e847a-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
+<span data-ttu-id="80a0e-124">Před nastavením kanálu je nutné dokončit některé požadované úkoly na základě typu kanálu.</span><span class="sxs-lookup"><span data-stu-id="80a0e-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="80a0e-125">Další informace naleznete v tématu [Předpoklady pro nastavení kanálů](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="80a0e-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
 
-## <a name="set-up-a-channel"></a><span data-ttu-id="e847a-126">Nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-126">Set up a channel</span></span>
+## <a name="set-up-a-channel"></a><span data-ttu-id="80a0e-126">Nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-126">Set up a channel</span></span>
 
-<span data-ttu-id="e847a-127">Po dokončení požadovaných úloh proveďte další pokyny k instalaci aplikace pomocí následujících odkazů.</span><span class="sxs-lookup"><span data-stu-id="e847a-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
+<span data-ttu-id="80a0e-127">Po dokončení požadovaných úloh proveďte další pokyny k instalaci aplikace pomocí následujících odkazů.</span><span class="sxs-lookup"><span data-stu-id="80a0e-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
 
-- [<span data-ttu-id="e847a-128">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-128">Set up a retail channel</span></span>](channel-setup-retail.md)
-- [<span data-ttu-id="e847a-129">Nastavení kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="e847a-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
-- [<span data-ttu-id="e847a-130">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-130">Set up an online channel</span></span>](channel-setup-online.md)
+- [<span data-ttu-id="80a0e-128">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-128">Set up a retail channel</span></span>](channel-setup-retail.md)
+- [<span data-ttu-id="80a0e-129">Nastavení kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="80a0e-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+- [<span data-ttu-id="80a0e-130">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-130">Set up an online channel</span></span>](channel-setup-online.md)
 
 <!--
 ## Post-channel configuration
@@ -77,14 +77,17 @@ After you create a channel, you may need to complete some of the below tasks:
 - Run the jobs to send the store data to Retail POS. (LINK TBD)
 -->
 
-## <a name="additional-resources"></a><span data-ttu-id="e847a-131">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="e847a-131">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="80a0e-131">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="80a0e-131">Additional resources</span></span>
 
-[<span data-ttu-id="e847a-132">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+[<span data-ttu-id="80a0e-132">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
 
-[<span data-ttu-id="e847a-133">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-133">Set up a retail channel</span></span>](channel-setup-retail.md)
+[<span data-ttu-id="80a0e-133">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-133">Set up a retail channel</span></span>](channel-setup-retail.md)
     
-[<span data-ttu-id="e847a-134">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="e847a-134">Set up an online channel</span></span>](channel-setup-online.md)
+[<span data-ttu-id="80a0e-134">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="80a0e-134">Set up an online channel</span></span>](channel-setup-online.md)
 
-[<span data-ttu-id="e847a-135">Nastavení kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="e847a-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+[<span data-ttu-id="80a0e-135">Nastavení kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="80a0e-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
 
-[<span data-ttu-id="e847a-136">Nastavení organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="e847a-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
+[<span data-ttu-id="80a0e-136">Nastavení organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="80a0e-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

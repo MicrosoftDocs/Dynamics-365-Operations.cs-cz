@@ -14,57 +14,60 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d6208e867bd322ddfc4e599856b1905fa8e19b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b62e5765964a13357e0e7b663be1c7fd2cc19037
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969371"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208792"
 ---
-# <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="09410-103">Konfigurace přístupových práv pro kontrolora objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="09410-103">Configure access rights for a cost object controller</span></span>
+# <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="afca0-103">Konfigurace přístupových práv pro kontrolora objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="afca0-103">Configure access rights for a cost object controller</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="09410-104">Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontroloru objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="09410-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="09410-105">Tento záznam používá v ukázkových datech společnost USP2.</span><span class="sxs-lookup"><span data-stu-id="09410-105">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="afca0-104">Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontroloru objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="afca0-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="afca0-105">Tento záznam používá v ukázkových datech společnost USP2.</span><span class="sxs-lookup"><span data-stu-id="afca0-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="assign-the-cost-object-controller-role"></a><span data-ttu-id="09410-106">Přiřazení role kontrolora objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="09410-106">Assign the cost object controller role</span></span>
-1. <span data-ttu-id="09410-107">Přejděte do nabídky Správa systému > Uživatelé > Uživatelé.</span><span class="sxs-lookup"><span data-stu-id="09410-107">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="09410-108">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="09410-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="09410-109">Můžete například filtrovat v poli Uživatelské jméno pomocí hodnoty „alicia“.</span><span class="sxs-lookup"><span data-stu-id="09410-109">For example, filter on the User name field with a value of 'alicia'.</span></span>
-3. <span data-ttu-id="09410-110">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="09410-110">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="09410-111">Klikněte na možnost Přiřadit role.</span><span class="sxs-lookup"><span data-stu-id="09410-111">Click Assign roles.</span></span>
-5. <span data-ttu-id="09410-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="09410-112">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="09410-113">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="09410-113">Click OK.</span></span>
+## <a name="assign-the-cost-object-controller-role"></a><span data-ttu-id="afca0-106">Přiřazení role kontrolora objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="afca0-106">Assign the cost object controller role</span></span>
+1. <span data-ttu-id="afca0-107">Přejděte do nabídky Správa systému > Uživatelé > Uživatelé.</span><span class="sxs-lookup"><span data-stu-id="afca0-107">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="afca0-108">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="afca0-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="afca0-109">Můžete například filtrovat v poli Uživatelské jméno pomocí hodnoty „alicia“.</span><span class="sxs-lookup"><span data-stu-id="afca0-109">For example, filter on the User name field with a value of 'alicia'.</span></span>
+3. <span data-ttu-id="afca0-110">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="afca0-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="afca0-111">Klikněte na možnost Přiřadit role.</span><span class="sxs-lookup"><span data-stu-id="afca0-111">Click Assign roles.</span></span>
+5. <span data-ttu-id="afca0-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="afca0-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="afca0-113">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="afca0-113">Click OK.</span></span>
 
-## <a name="enable-access-list-security"></a><span data-ttu-id="09410-114">Povolení zabezpečení přístupového seznamu</span><span class="sxs-lookup"><span data-stu-id="09410-114">Enable access list security</span></span>
-1. <span data-ttu-id="09410-115">Přejděte na Nákladové účetnictví > Dimenze > Hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="09410-115">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="09410-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="09410-116">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="09410-117">Vyberte organizaci.</span><span class="sxs-lookup"><span data-stu-id="09410-117">Select Organization.</span></span>  
-3. <span data-ttu-id="09410-118">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="09410-118">Click Edit.</span></span>
-4. <span data-ttu-id="09410-119">V poli Hierarchie přístupového seznamu vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="09410-119">Select Yes in the Access list hierarchy field.</span></span>
-5. <span data-ttu-id="09410-120">Klikněte na Zobrazit hierarchii.</span><span class="sxs-lookup"><span data-stu-id="09410-120">Click View hierarchy.</span></span>
+## <a name="enable-access-list-security"></a><span data-ttu-id="afca0-114">Povolení zabezpečení přístupového seznamu</span><span class="sxs-lookup"><span data-stu-id="afca0-114">Enable access list security</span></span>
+1. <span data-ttu-id="afca0-115">Přejděte na Nákladové účetnictví > Dimenze > Hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="afca0-115">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="afca0-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="afca0-116">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="afca0-117">Vyberte organizaci.</span><span class="sxs-lookup"><span data-stu-id="afca0-117">Select Organization.</span></span>  
+3. <span data-ttu-id="afca0-118">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="afca0-118">Click Edit.</span></span>
+4. <span data-ttu-id="afca0-119">V poli Hierarchie přístupového seznamu vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="afca0-119">Select Yes in the Access list hierarchy field.</span></span>
+5. <span data-ttu-id="afca0-120">Klikněte na Zobrazit hierarchii.</span><span class="sxs-lookup"><span data-stu-id="afca0-120">Click View hierarchy.</span></span>
 
-## <a name="assign-access-rights-to-user"></a><span data-ttu-id="09410-121">Přiřazení přístupových práv uživateli</span><span class="sxs-lookup"><span data-stu-id="09410-121">Assign access rights to user</span></span>
-1. <span data-ttu-id="09410-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="09410-122">Click New.</span></span>
-2. <span data-ttu-id="09410-123">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="09410-123">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="09410-124">V poli ID uživatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="09410-124">In the User ID field, enter or select a value.</span></span>
-    * <span data-ttu-id="09410-125">Vyberte správce.</span><span class="sxs-lookup"><span data-stu-id="09410-125">Select Admin.</span></span>  
-4. <span data-ttu-id="09410-126">Ve stromovém zobrazení vyberte 'Organization\CEO\CFO\FIM'.</span><span class="sxs-lookup"><span data-stu-id="09410-126">In the tree, select 'Organization\CEO\CFO\FIM'.</span></span>
-5. <span data-ttu-id="09410-127">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="09410-127">Click New.</span></span>
-6. <span data-ttu-id="09410-128">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="09410-128">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="09410-129">V poli ID uživatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="09410-129">In the User ID field, enter or select a value.</span></span>
-    * <span data-ttu-id="09410-130">Vyberte Alicia.</span><span class="sxs-lookup"><span data-stu-id="09410-130">Select Alicia.</span></span>  
-8. <span data-ttu-id="09410-131">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="09410-131">Click Save.</span></span>
+## <a name="assign-access-rights-to-user"></a><span data-ttu-id="afca0-121">Přiřazení přístupových práv uživateli</span><span class="sxs-lookup"><span data-stu-id="afca0-121">Assign access rights to user</span></span>
+1. <span data-ttu-id="afca0-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="afca0-122">Click New.</span></span>
+2. <span data-ttu-id="afca0-123">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="afca0-123">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="afca0-124">V poli ID uživatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="afca0-124">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="afca0-125">Vyberte správce.</span><span class="sxs-lookup"><span data-stu-id="afca0-125">Select Admin.</span></span>  
+4. <span data-ttu-id="afca0-126">Ve stromovém zobrazení vyberte 'Organization\CEO\CFO\FIM'.</span><span class="sxs-lookup"><span data-stu-id="afca0-126">In the tree, select 'Organization\CEO\CFO\FIM'.</span></span>
+5. <span data-ttu-id="afca0-127">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="afca0-127">Click New.</span></span>
+6. <span data-ttu-id="afca0-128">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="afca0-128">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="afca0-129">V poli ID uživatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="afca0-129">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="afca0-130">Vyberte Alicia.</span><span class="sxs-lookup"><span data-stu-id="afca0-130">Select Alicia.</span></span>  
+8. <span data-ttu-id="afca0-131">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="afca0-131">Click Save.</span></span>
 
-## <a name="enable-access-rights-in-cost-accounting"></a><span data-ttu-id="09410-132">Povolení přístupových práv v nákladovém účetnictví</span><span class="sxs-lookup"><span data-stu-id="09410-132">Enable access rights in Cost accounting</span></span>
-1. <span data-ttu-id="09410-133">Přejděte na Nákladové účetnictví > Nastavení > Parametry.</span><span class="sxs-lookup"><span data-stu-id="09410-133">Go to Cost accounting > Setup > Parameters.</span></span>
-2. <span data-ttu-id="09410-134">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="09410-134">Click the General tab.</span></span>
-3. <span data-ttu-id="09410-135">Zvolte parametr Ano v poli Povolit přístup k zobrazení pro členy dimenze objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="09410-135">Select Yes in the Enable view access for cost object dimension members field.</span></span>
-4. <span data-ttu-id="09410-136">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="09410-136">Click Save.</span></span>
-5. <span data-ttu-id="09410-137">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="09410-137">Close the page.</span></span>
-6. <span data-ttu-id="09410-138">Přejděte na Nákladové účetnictví > Nastavení > Konfigurace pracovního prostoru pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="09410-138">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
-7. <span data-ttu-id="09410-139">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="09410-139">Click Edit.</span></span>
-8. <span data-ttu-id="09410-140">Vyberte možnost Ano v poli Publikováno.</span><span class="sxs-lookup"><span data-stu-id="09410-140">Select Yes in the Published field.</span></span>
-    * <span data-ttu-id="09410-141">Pokud vyberete Ano, uživatel s přiřazenou některou z následujících čtyř rolí si může zobrazit sestavy v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní, úředník na pozici nákladového účetního nebo kontrolor objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="09410-141">If you select Yes, a user who is assigned one of the following four roles can see the reports in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, and cost object controller.</span></span> <span data-ttu-id="09410-142">Pokud vyberete Ne, pouze uživatel s přiřazenou některou z následujících rolí si může zobrazit sestavy: manažer nákladového účetnictví, nákladový účetní a úředník na pozici nákladového účetního.</span><span class="sxs-lookup"><span data-stu-id="09410-142">If you select No, only a user who is assigned one of the following roles can see the reports: cost accounting manager, cost accountant, and cost accountant clerk.</span></span>    
-9. <span data-ttu-id="09410-143">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="09410-143">Click Save.</span></span>
+## <a name="enable-access-rights-in-cost-accounting"></a><span data-ttu-id="afca0-132">Povolení přístupových práv v nákladovém účetnictví</span><span class="sxs-lookup"><span data-stu-id="afca0-132">Enable access rights in Cost accounting</span></span>
+1. <span data-ttu-id="afca0-133">Přejděte na Nákladové účetnictví > Nastavení > Parametry.</span><span class="sxs-lookup"><span data-stu-id="afca0-133">Go to Cost accounting > Setup > Parameters.</span></span>
+2. <span data-ttu-id="afca0-134">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="afca0-134">Click the General tab.</span></span>
+3. <span data-ttu-id="afca0-135">Zvolte parametr Ano v poli Povolit přístup k zobrazení pro členy dimenze objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="afca0-135">Select Yes in the Enable view access for cost object dimension members field.</span></span>
+4. <span data-ttu-id="afca0-136">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="afca0-136">Click Save.</span></span>
+5. <span data-ttu-id="afca0-137">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="afca0-137">Close the page.</span></span>
+6. <span data-ttu-id="afca0-138">Přejděte na Nákladové účetnictví > Nastavení > Konfigurace pracovního prostoru pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="afca0-138">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
+7. <span data-ttu-id="afca0-139">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="afca0-139">Click Edit.</span></span>
+8. <span data-ttu-id="afca0-140">Vyberte možnost Ano v poli Publikováno.</span><span class="sxs-lookup"><span data-stu-id="afca0-140">Select Yes in the Published field.</span></span>
+    * <span data-ttu-id="afca0-141">Pokud vyberete Ano, uživatel s přiřazenou některou z následujících čtyř rolí si může zobrazit sestavy v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní, úředník na pozici nákladového účetního nebo kontrolor objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="afca0-141">If you select Yes, a user who is assigned one of the following four roles can see the reports in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, and cost object controller.</span></span> <span data-ttu-id="afca0-142">Pokud vyberete Ne, pouze uživatel s přiřazenou některou z následujících rolí si může zobrazit sestavy: manažer nákladového účetnictví, nákladový účetní a úředník na pozici nákladového účetního.</span><span class="sxs-lookup"><span data-stu-id="afca0-142">If you select No, only a user who is assigned one of the following roles can see the reports: cost accounting manager, cost accountant, and cost accountant clerk.</span></span>    
+9. <span data-ttu-id="afca0-143">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="afca0-143">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

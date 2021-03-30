@@ -1,6 +1,6 @@
 ---
 title: Odeslat videa
-description: Toto téma popisuje, jak odeslat videa v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+description: Toto téma popisuje, jak nahrát videa v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 03/03/2020
@@ -17,58 +17,61 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8cabcd3528308919697a9f2ecb2a81ad5acbe31
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d74e7116d68074bfc917784a8f51f85d5682c5d6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000918"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213835"
 ---
-# <a name="upload-videos"></a><span data-ttu-id="84c65-103">Odeslat videa</span><span class="sxs-lookup"><span data-stu-id="84c65-103">Upload videos</span></span>
+# <a name="upload-videos"></a><span data-ttu-id="54f97-103">Odeslat videa</span><span class="sxs-lookup"><span data-stu-id="54f97-103">Upload videos</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="84c65-104">Toto téma popisuje, jak odeslat videa v konfigurátoru webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="84c65-104">This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
+<span data-ttu-id="54f97-104">Toto téma popisuje, jak nahrát videa v konfigurátoru webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="54f97-104">This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="84c65-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="84c65-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="54f97-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="54f97-105">Overview</span></span>
 
-<span data-ttu-id="84c65-106">Knihovna médií konfigurátoru webu Commerce umožňuje odesílat videozáznamy.</span><span class="sxs-lookup"><span data-stu-id="84c65-106">The Commerce site builder Media Library allows you to upload videos.</span></span> <span data-ttu-id="84c65-107">Vždy byste měli odeslat verzi videa s nejvyšším datovým tokem a rozlišením, protože video bude automaticky konvertováno, aby bylo použitelné pro různá zobrazení a jejich zarážky.</span><span class="sxs-lookup"><span data-stu-id="84c65-107">You should always upload the version of a video with the highest bitrate and resolution, because the video will be automatically converted to be suitable for different viewports and their breakpoints.</span></span>
+<span data-ttu-id="54f97-106">Knihovna médií konfigurátoru webu Commerce umožňuje odesílat videozáznamy.</span><span class="sxs-lookup"><span data-stu-id="54f97-106">The Commerce site builder Media Library allows you to upload videos.</span></span> <span data-ttu-id="54f97-107">Vždy byste měli odeslat verzi videa s nejvyšším datovým tokem a rozlišením, protože video bude automaticky konvertováno, aby bylo použitelné pro různá zobrazení a jejich zarážky.</span><span class="sxs-lookup"><span data-stu-id="54f97-107">You should always upload the version of a video with the highest bitrate and resolution, because the video will be automatically converted to be suitable for different viewports and their breakpoints.</span></span>
 
-### <a name="video-information-specified-during-upload"></a><span data-ttu-id="84c65-108">Informace o video zadané při odeslání</span><span class="sxs-lookup"><span data-stu-id="84c65-108">Video information specified during upload</span></span>
+### <a name="video-information-specified-during-upload"></a><span data-ttu-id="54f97-108">Informace o video zadané při odeslání</span><span class="sxs-lookup"><span data-stu-id="54f97-108">Video information specified during upload</span></span>
 
-<span data-ttu-id="84c65-109">Při odesílání videa lze zadat následující informace.</span><span class="sxs-lookup"><span data-stu-id="84c65-109">When uploading a video, the following information can be specified.</span></span>
+<span data-ttu-id="54f97-109">Při odesílání videa lze zadat následující informace.</span><span class="sxs-lookup"><span data-stu-id="54f97-109">When uploading a video, the following information can be specified.</span></span>
 
-- <span data-ttu-id="84c65-110">**Nadpis, popis, klíčová slova**: metadata videa.</span><span class="sxs-lookup"><span data-stu-id="84c65-110">**Title, Description, Keywords**: Metadata of the video.</span></span>
-- <span data-ttu-id="84c65-111">**Automaticky generovat skryté titulky**: Určuje, zda mají být automaticky vygenerovány skryté titulky pro video.</span><span class="sxs-lookup"><span data-stu-id="84c65-111">**Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.</span></span>
-- <span data-ttu-id="84c65-112">**Skryté titulky**: Určuje skryté titulky, které mají být použity.</span><span class="sxs-lookup"><span data-stu-id="84c65-112">**Closed Caption**: Specifies the closed captions to be used.</span></span>
-- <span data-ttu-id="84c65-113">**Normální zvuk**: Určuje běžnou zvukovou stopu, která má být použita.</span><span class="sxs-lookup"><span data-stu-id="84c65-113">**Regular Audio**: Specifies the regular audio track to be used.</span></span>
-- <span data-ttu-id="84c65-114">**Miniatura**: Určuje miniaturu videa.</span><span class="sxs-lookup"><span data-stu-id="84c65-114">**Thumbnail**: Specifies the thumbnail for the video.</span></span> <span data-ttu-id="84c65-115">Pokud není zadána, nebude generován automaticky.</span><span class="sxs-lookup"><span data-stu-id="84c65-115">If not specified, it will be generated automatically.</span></span>
-- <span data-ttu-id="84c65-116">**Popisný zvuk**: Určuje popisnou zvukovou stopu, která má být použita.</span><span class="sxs-lookup"><span data-stu-id="84c65-116">**Descriptive Audio**: Specifies the descriptive audio track to be used.</span></span>
+- <span data-ttu-id="54f97-110">**Nadpis, popis, klíčová slova**: metadata videa.</span><span class="sxs-lookup"><span data-stu-id="54f97-110">**Title, Description, Keywords**: Metadata of the video.</span></span>
+- <span data-ttu-id="54f97-111">**Automaticky generovat skryté titulky**: Určuje, zda mají být automaticky vygenerovány skryté titulky pro video.</span><span class="sxs-lookup"><span data-stu-id="54f97-111">**Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.</span></span>
+- <span data-ttu-id="54f97-112">**Skryté titulky**: Určuje skryté titulky, které mají být použity.</span><span class="sxs-lookup"><span data-stu-id="54f97-112">**Closed Caption**: Specifies the closed captions to be used.</span></span>
+- <span data-ttu-id="54f97-113">**Normální zvuk**: Určuje běžnou zvukovou stopu, která má být použita.</span><span class="sxs-lookup"><span data-stu-id="54f97-113">**Regular Audio**: Specifies the regular audio track to be used.</span></span>
+- <span data-ttu-id="54f97-114">**Miniatura**: Určuje miniaturu videa.</span><span class="sxs-lookup"><span data-stu-id="54f97-114">**Thumbnail**: Specifies the thumbnail for the video.</span></span> <span data-ttu-id="54f97-115">Pokud není zadána, nebude generován automaticky.</span><span class="sxs-lookup"><span data-stu-id="54f97-115">If not specified, it will be generated automatically.</span></span>
+- <span data-ttu-id="54f97-116">**Popisný zvuk**: Určuje popisnou zvukovou stopu, která má být použita.</span><span class="sxs-lookup"><span data-stu-id="54f97-116">**Descriptive Audio**: Specifies the descriptive audio track to be used.</span></span>
 
-## <a name="upload-a-video"></a><span data-ttu-id="84c65-117">Odeslat video</span><span class="sxs-lookup"><span data-stu-id="84c65-117">Upload a video</span></span>
+## <a name="upload-a-video"></a><span data-ttu-id="54f97-117">Odeslat video</span><span class="sxs-lookup"><span data-stu-id="54f97-117">Upload a video</span></span>
 
-<span data-ttu-id="84c65-118">Chcete-li odeslat video v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="84c65-118">To upload a video in site builder, follow these steps.</span></span>
+<span data-ttu-id="54f97-118">Chcete-li odeslat video v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="54f97-118">To upload a video in site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="84c65-119">V levém navigačním podokně vyberte položku **Knihovna médií**.</span><span class="sxs-lookup"><span data-stu-id="84c65-119">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="84c65-120">Na panelu příkazů vyberte možnost **Odeslat \> Odeslání mediálních položek**.</span><span class="sxs-lookup"><span data-stu-id="84c65-120">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="84c65-121">V okně Průzkumník souborů přejděte na jeden nebo více souborů s videi, které chcete odeslat, a vyberte možnost **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="84c65-121">In the File Explorer window, navigate to and select one or more video files to upload, and then select **Open**.</span></span>
-1. <span data-ttu-id="84c65-122">V dialogovém okně **Odeslat mediální položku** zadejte požadovaný název a alternativní text.</span><span class="sxs-lookup"><span data-stu-id="84c65-122">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
-1. <span data-ttu-id="84c65-123">Zadejte volitelný popis a klíčová slova a v případě potřeby vyberte kategorii.</span><span class="sxs-lookup"><span data-stu-id="84c65-123">Enter optional description and keywords and select a category if desired.</span></span> 
-1. <span data-ttu-id="84c65-124">Chcete-li publikovat obrázky ihned po odeslání, zaškrtněte políčko **Publikovat mediální položky po odeslání**</span><span class="sxs-lookup"><span data-stu-id="84c65-124">If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box</span></span>
-1. <span data-ttu-id="84c65-125">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="84c65-125">Select **OK**.</span></span>
+1. <span data-ttu-id="54f97-119">V levém navigačním podokně vyberte položku **Knihovna médií**.</span><span class="sxs-lookup"><span data-stu-id="54f97-119">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="54f97-120">Na panelu příkazů vyberte možnost **Odeslat \> Odeslání mediálních položek**.</span><span class="sxs-lookup"><span data-stu-id="54f97-120">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="54f97-121">V okně Průzkumník souborů přejděte na jeden nebo více souborů s videi, které chcete odeslat, a vyberte možnost **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="54f97-121">In the File Explorer window, navigate to and select one or more video files to upload, and then select **Open**.</span></span>
+1. <span data-ttu-id="54f97-122">V dialogovém okně **Odeslat mediální položku** zadejte požadovaný název a alternativní text.</span><span class="sxs-lookup"><span data-stu-id="54f97-122">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
+1. <span data-ttu-id="54f97-123">Zadejte volitelný popis a klíčová slova a v případě potřeby vyberte kategorii.</span><span class="sxs-lookup"><span data-stu-id="54f97-123">Enter optional description and keywords and select a category if desired.</span></span> 
+1. <span data-ttu-id="54f97-124">Chcete-li publikovat obrázky ihned po odeslání, zaškrtněte políčko **Publikovat mediální položky po odeslání**</span><span class="sxs-lookup"><span data-stu-id="54f97-124">If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box</span></span>
+1. <span data-ttu-id="54f97-125">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="54f97-125">Select **OK**.</span></span>
 
-<span data-ttu-id="84c65-126">Pokud odesíláte více typů majetku současně (například obrázky a videozáznamy), můžete v dialogovém okně **Odeslat mediální položku** zadat pouze klíčová slova, zda mají být soubory publikovány ihned po odeslání a zda mají být automaticky vygenerovány skryté titulky pro videosoubory.</span><span class="sxs-lookup"><span data-stu-id="84c65-126">If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files.</span></span> <span data-ttu-id="84c65-127">Všechny majetky budou sdílet stejná klíčová slova.</span><span class="sxs-lookup"><span data-stu-id="84c65-127">All the assets will share the same keywords.</span></span>
+<span data-ttu-id="54f97-126">Pokud odesíláte více typů majetku současně (například obrázky a videozáznamy), můžete v dialogovém okně **Odeslat mediální položku** zadat pouze klíčová slova, zda mají být soubory publikovány ihned po odeslání a zda mají být automaticky vygenerovány skryté titulky pro videosoubory.</span><span class="sxs-lookup"><span data-stu-id="54f97-126">If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files.</span></span> <span data-ttu-id="54f97-127">Všechny majetky budou sdílet stejná klíčová slova.</span><span class="sxs-lookup"><span data-stu-id="54f97-127">All the assets will share the same keywords.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="84c65-128">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="84c65-128">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="54f97-128">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="54f97-128">Additional resources</span></span>
 
-[<span data-ttu-id="84c65-129">Přehled správy digitálního majetku</span><span class="sxs-lookup"><span data-stu-id="84c65-129">Digital asset management overview</span></span>](dam-overview.md)
+[<span data-ttu-id="54f97-129">Přehled správy digitálního majetku</span><span class="sxs-lookup"><span data-stu-id="54f97-129">Digital asset management overview</span></span>](dam-overview.md)
 
-[<span data-ttu-id="84c65-130">Odeslání obrázků</span><span class="sxs-lookup"><span data-stu-id="84c65-130">Upload images</span></span>](dam-upload-images.md)
+[<span data-ttu-id="54f97-130">Odeslání obrázků</span><span class="sxs-lookup"><span data-stu-id="54f97-130">Upload images</span></span>](dam-upload-images.md)
 
-[<span data-ttu-id="84c65-131">Odeslat soubory</span><span class="sxs-lookup"><span data-stu-id="84c65-131">Upload files</span></span>](dam-upload-files.md)
+[<span data-ttu-id="54f97-131">Odeslat soubory</span><span class="sxs-lookup"><span data-stu-id="54f97-131">Upload files</span></span>](dam-upload-files.md)
 
-[<span data-ttu-id="84c65-132">Oříznutí obrázků</span><span class="sxs-lookup"><span data-stu-id="84c65-132">Crop images</span></span>](dam-crop-images.md)
+[<span data-ttu-id="54f97-132">Oříznutí obrázků</span><span class="sxs-lookup"><span data-stu-id="54f97-132">Crop images</span></span>](dam-crop-images.md)
 
-[<span data-ttu-id="84c65-133">Přizpůsobení ohniska obrázku</span><span class="sxs-lookup"><span data-stu-id="84c65-133">Customize image focal points</span></span>](dam-custom-focal-point.md)
+[<span data-ttu-id="54f97-133">Přizpůsobení ohniska obrázku</span><span class="sxs-lookup"><span data-stu-id="54f97-133">Customize image focal points</span></span>](dam-custom-focal-point.md)
 
-[<span data-ttu-id="84c65-134">Nahrání a obsloužení statických souborů</span><span class="sxs-lookup"><span data-stu-id="84c65-134">Upload and serve static files</span></span>](upload-serve-static-files.md)
+[<span data-ttu-id="54f97-134">Nahrání a obsloužení statických souborů</span><span class="sxs-lookup"><span data-stu-id="54f97-134">Upload and serve static files</span></span>](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

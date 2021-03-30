@@ -18,59 +18,62 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9ce8887f3cd7da0e250d3b0ffe96b222953de44
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7dd9de055a020d7171aa2dea45714933b0987d49
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965346"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207965"
 ---
-# <a name="manually-create-curated-recommendations"></a><span data-ttu-id="889f2-103">Ručně vytvořit uspořádaná doporučení</span><span class="sxs-lookup"><span data-stu-id="889f2-103">Manually create curated recommendations</span></span>
+# <a name="manually-create-curated-recommendations"></a><span data-ttu-id="8bc84-103">Ručně vytvořit uspořádaná doporučení</span><span class="sxs-lookup"><span data-stu-id="8bc84-103">Manually create curated recommendations</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="889f2-104">V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy doporučení produktů pro zákazníky Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="889f2-104">This topic explains how merchandizers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.</span></span>
+<span data-ttu-id="8bc84-104">V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy doporučení produktů pro zákazníky Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="8bc84-104">This topic explains how merchandizers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.</span></span>
 
-<span data-ttu-id="889f2-105">Seznamy vybraných produktů jsou kolekce jednotlivých položek obsahu vytvořených a doporučených lidmi.</span><span class="sxs-lookup"><span data-stu-id="889f2-105">Curated lists are collections of individual content, created and curated by people.</span></span>  
+<span data-ttu-id="8bc84-105">Seznamy vybraných produktů jsou kolekce jednotlivých položek obsahu vytvořených a doporučených lidmi.</span><span class="sxs-lookup"><span data-stu-id="8bc84-105">Curated lists are collections of individual content, created and curated by people.</span></span>  
 
-## <a name="create-a-new-list"></a><span data-ttu-id="889f2-106">Vytvoření nového seznamu</span><span class="sxs-lookup"><span data-stu-id="889f2-106">Create a new list</span></span>
+## <a name="create-a-new-list"></a><span data-ttu-id="8bc84-106">Vytvoření nového seznamu</span><span class="sxs-lookup"><span data-stu-id="8bc84-106">Create a new list</span></span>
 
-<span data-ttu-id="889f2-107">Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="889f2-107">To create a curated product recommendation list, follow these steps.</span></span>
+<span data-ttu-id="8bc84-107">Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="8bc84-107">To create a curated product recommendation list, follow these steps.</span></span>
 
-1. <span data-ttu-id="889f2-108">Přejděte na **Retail a Commerce &gt; Doporučení produktů &gt; Seznamy doporučení**.</span><span class="sxs-lookup"><span data-stu-id="889f2-108">Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation lists**.</span></span>
-1. <span data-ttu-id="889f2-109">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="889f2-109">Select **New**.</span></span>
-1. <span data-ttu-id="889f2-110">Zadejte hodnotu do pole **ID seznamu**.</span><span class="sxs-lookup"><span data-stu-id="889f2-110">In the **List Id** field, enter a value.</span></span>
-1. <span data-ttu-id="889f2-111">Zadejte hodnotu do pole **Název seznamu**.</span><span class="sxs-lookup"><span data-stu-id="889f2-111">In the **List name** field, enter a value.</span></span>
-    - <span data-ttu-id="889f2-112">**Název seznamu** představuje nadpis seznamu, který se zobrazí v oddílu doporučených seznamů modulu **Kolekce produktů**.</span><span class="sxs-lookup"><span data-stu-id="889f2-112">The **List name** is the title of the list that will appear in the curated lists section of the **Product collection** module.</span></span>
-1. <span data-ttu-id="889f2-113">Chcete-li přidat produkty do seznamu, vyberte možnost **Přidat produkty**.</span><span class="sxs-lookup"><span data-stu-id="889f2-113">To add products to the list, select **Add products**.</span></span>
-1. <span data-ttu-id="889f2-114">Chcete-li změnit pořadí produktů v seznamu, zadejte hodnotu do sloupce **Pořadí zobrazení**.</span><span class="sxs-lookup"><span data-stu-id="889f2-114">To change the order of the products in the list, enter a value in the **Display order** column.</span></span>
-    - <span data-ttu-id="889f2-115">Pokud mají dva produkty stejnou hodnotu pořadí zobrazení, pak se konečné pořadí těchto dvou výsledků může lišit od back office.</span><span class="sxs-lookup"><span data-stu-id="889f2-115">If two products have the same display order value, then the final order of those two results may differ from the back office.</span></span>
-1. <span data-ttu-id="889f2-116">Kliknutím na tlačítko **Uložit** uložte seznam.</span><span class="sxs-lookup"><span data-stu-id="889f2-116">Select **Save** to save the list.</span></span>
+1. <span data-ttu-id="8bc84-108">Přejděte na **Retail a Commerce &gt; Doporučení produktů &gt; Seznamy doporučení**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-108">Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation lists**.</span></span>
+1. <span data-ttu-id="8bc84-109">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-109">Select **New**.</span></span>
+1. <span data-ttu-id="8bc84-110">Zadejte hodnotu do pole **ID seznamu**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-110">In the **List Id** field, enter a value.</span></span>
+1. <span data-ttu-id="8bc84-111">Zadejte hodnotu do pole **Název seznamu**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-111">In the **List name** field, enter a value.</span></span>
+    - <span data-ttu-id="8bc84-112">**Název seznamu** představuje nadpis seznamu, který se zobrazí v oddílu doporučených seznamů modulu **Kolekce produktů**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-112">The **List name** is the title of the list that will appear in the curated lists section of the **Product collection** module.</span></span>
+1. <span data-ttu-id="8bc84-113">Chcete-li přidat produkty do seznamu, vyberte možnost **Přidat produkty**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-113">To add products to the list, select **Add products**.</span></span>
+1. <span data-ttu-id="8bc84-114">Chcete-li změnit pořadí produktů v seznamu, zadejte hodnotu do sloupce **Pořadí zobrazení**.</span><span class="sxs-lookup"><span data-stu-id="8bc84-114">To change the order of the products in the list, enter a value in the **Display order** column.</span></span>
+    - <span data-ttu-id="8bc84-115">Pokud mají dva produkty stejnou hodnotu pořadí zobrazení, pak se konečné pořadí těchto dvou výsledků může lišit od back office.</span><span class="sxs-lookup"><span data-stu-id="8bc84-115">If two products have the same display order value, then the final order of those two results may differ from the back office.</span></span>
+1. <span data-ttu-id="8bc84-116">Kliknutím na tlačítko **Uložit** uložte seznam.</span><span class="sxs-lookup"><span data-stu-id="8bc84-116">Select **Save** to save the list.</span></span>
 
-## <a name="example-list"></a><span data-ttu-id="889f2-117">Ukázkový seznam</span><span class="sxs-lookup"><span data-stu-id="889f2-117">Example List</span></span>
+## <a name="example-list"></a><span data-ttu-id="8bc84-117">Ukázkový seznam</span><span class="sxs-lookup"><span data-stu-id="8bc84-117">Example List</span></span>
 
 ![Ukázkový doporučený seznam v administrativě](./media/examplecuratedrecolist.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="889f2-119">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="889f2-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8bc84-119">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="8bc84-119">Additional resources</span></span>
 
-[<span data-ttu-id="889f2-120">Přehled doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="889f2-120">Product recommendations overview</span></span>](product-recommendations.md)
+[<span data-ttu-id="8bc84-120">Přehled doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8bc84-120">Product recommendations overview</span></span>](product-recommendations.md)
 
-[<span data-ttu-id="889f2-121">Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="889f2-121">Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment</span></span>](enable-adls-environment.md)
+[<span data-ttu-id="8bc84-121">Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="8bc84-121">Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment</span></span>](enable-adls-environment.md)
 
-[<span data-ttu-id="889f2-122">Povolit doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="889f2-122">Enable product recommendations</span></span>](enable-product-recommendations.md)
+[<span data-ttu-id="8bc84-122">Povolit doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8bc84-122">Enable product recommendations</span></span>](enable-product-recommendations.md)
 
-[<span data-ttu-id="889f2-123">Povolení přizpůsobených doporučení</span><span class="sxs-lookup"><span data-stu-id="889f2-123">Enable personalized recommendations</span></span>](personalized-recommendations.md)
+[<span data-ttu-id="8bc84-123">Povolení přizpůsobených doporučení</span><span class="sxs-lookup"><span data-stu-id="8bc84-123">Enable personalized recommendations</span></span>](personalized-recommendations.md)
 
-[<span data-ttu-id="889f2-124">Odhlášení přizpůsobených doporučení</span><span class="sxs-lookup"><span data-stu-id="889f2-124">Opt out of personalized recommendations</span></span>](personalization-gdpr.md)
+[<span data-ttu-id="8bc84-124">Odhlášení přizpůsobených doporučení</span><span class="sxs-lookup"><span data-stu-id="8bc84-124">Opt out of personalized recommendations</span></span>](personalization-gdpr.md)
 
-[<span data-ttu-id="889f2-125">Povolit doporučení typu „podobný vzhled“</span><span class="sxs-lookup"><span data-stu-id="889f2-125">Enable "shop similar looks" recommendations</span></span>](shop-similar-looks.md)
+[<span data-ttu-id="8bc84-125">Povolit doporučení typu „podobný vzhled“</span><span class="sxs-lookup"><span data-stu-id="8bc84-125">Enable "shop similar looks" recommendations</span></span>](shop-similar-looks.md)
 
-[<span data-ttu-id="889f2-126">Přidání doporučení produktu v POS</span><span class="sxs-lookup"><span data-stu-id="889f2-126">Add product recommendations on POS</span></span>](product.md)
+[<span data-ttu-id="8bc84-126">Přidání doporučení produktu v POS</span><span class="sxs-lookup"><span data-stu-id="8bc84-126">Add product recommendations on POS</span></span>](product.md)
 
-[<span data-ttu-id="889f2-127">Přidání doporučení na obrazovku transakcí</span><span class="sxs-lookup"><span data-stu-id="889f2-127">Add recommendations to the transaction screen</span></span>](add-recommendations-control-pos-screen.md)
+[<span data-ttu-id="8bc84-127">Přidání doporučení na obrazovku transakcí</span><span class="sxs-lookup"><span data-stu-id="8bc84-127">Add recommendations to the transaction screen</span></span>](add-recommendations-control-pos-screen.md)
 
-[<span data-ttu-id="889f2-128">Úprava výsledků doporučení AI-ML</span><span class="sxs-lookup"><span data-stu-id="889f2-128">Adjust AI-ML recommendations results</span></span>](modify-product-recommendation-results.md)
+[<span data-ttu-id="8bc84-128">Úprava výsledků doporučení AI-ML</span><span class="sxs-lookup"><span data-stu-id="8bc84-128">Adjust AI-ML recommendations results</span></span>](modify-product-recommendation-results.md)
 
-[<span data-ttu-id="889f2-129">Vytvořit doporučení s ukázkovými daty</span><span class="sxs-lookup"><span data-stu-id="889f2-129">Create recommendations with demo data</span></span>](product-recommendations-demo-data.md)
+[<span data-ttu-id="8bc84-129">Vytvořit doporučení s ukázkovými daty</span><span class="sxs-lookup"><span data-stu-id="8bc84-129">Create recommendations with demo data</span></span>](product-recommendations-demo-data.md)
 
-[<span data-ttu-id="889f2-130">Často kladené dotazy k doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="889f2-130">Product recommendations FAQ</span></span>](faq-recommendations.md)
+[<span data-ttu-id="8bc84-130">Často kladené dotazy k doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8bc84-130">Product recommendations FAQ</span></span>](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

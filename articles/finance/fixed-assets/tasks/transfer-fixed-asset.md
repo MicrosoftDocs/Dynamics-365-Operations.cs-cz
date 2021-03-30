@@ -15,35 +15,38 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a0770011a76b1e4cc8b4d13e54fab2d0fba43f8a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 365fa7a54dcf6817f933c0d305561c5fd0f8ba27
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975908"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213477"
 ---
-# <a name="transfer-a-fixed-asset"></a><span data-ttu-id="99579-103">Převedení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="99579-103">Transfer a fixed asset</span></span>
+# <a name="transfer-a-fixed-asset"></a><span data-ttu-id="4841d-103">Převedení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="4841d-103">Transfer a fixed asset</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="99579-104">Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="99579-104">This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.</span></span>  <span data-ttu-id="99579-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="99579-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="4841d-104">Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="4841d-104">This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.</span></span>  <span data-ttu-id="4841d-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="4841d-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
 
-1. <span data-ttu-id="99579-106">V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="99579-106">In the Navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.</span></span>
-2. <span data-ttu-id="99579-107">V seznamu najděte a vyberte dlouhodobý majetek, který chcete přenést.</span><span class="sxs-lookup"><span data-stu-id="99579-107">In the list, find and select the fixed asset to transfer.</span></span>
-3. <span data-ttu-id="99579-108">V podokně akcí klikněte na možnost **Dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="99579-108">On the Action Pane, click **Fixed asset**.</span></span>
-4. <span data-ttu-id="99579-109">Klikněte na **Převést dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="99579-109">Click **Transfer fixed assets**.</span></span>
-5. <span data-ttu-id="99579-110">Do pole **Datum převodu** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="99579-110">In the **Transfer date** field, enter a date.</span></span>
-6. <span data-ttu-id="99579-111">Zadejte komentáře popisující převod.</span><span class="sxs-lookup"><span data-stu-id="99579-111">Enter comments to describe the transfer.</span></span>
+1. <span data-ttu-id="4841d-106">V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="4841d-106">In the Navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.</span></span>
+2. <span data-ttu-id="4841d-107">V seznamu najděte a vyberte dlouhodobý majetek, který chcete přenést.</span><span class="sxs-lookup"><span data-stu-id="4841d-107">In the list, find and select the fixed asset to transfer.</span></span>
+3. <span data-ttu-id="4841d-108">V podokně akcí klikněte na možnost **Dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="4841d-108">On the Action Pane, click **Fixed asset**.</span></span>
+4. <span data-ttu-id="4841d-109">Klikněte na **Převést dlouhodobý majetek**.</span><span class="sxs-lookup"><span data-stu-id="4841d-109">Click **Transfer fixed assets**.</span></span>
+5. <span data-ttu-id="4841d-110">Do pole **Datum převodu** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="4841d-110">In the **Transfer date** field, enter a date.</span></span>
+6. <span data-ttu-id="4841d-111">Zadejte komentáře popisující převod.</span><span class="sxs-lookup"><span data-stu-id="4841d-111">Enter comments to describe the transfer.</span></span>
     
-    <span data-ttu-id="99579-112">Tento seznam zobrazuje všechny knihy pro dlouhodobý majetek.</span><span class="sxs-lookup"><span data-stu-id="99579-112">This list shows all books for the fixed asset.</span></span>  
-7. <span data-ttu-id="99579-113">Označte knihy, které chcete převést do nové sady finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="99579-113">Mark the books you want to transfer to a new financial dimension set.</span></span>
-    * <span data-ttu-id="99579-114">Tento seznam zobrazuje hodnoty aktuální finanční dimenze pro vybranou knihu.</span><span class="sxs-lookup"><span data-stu-id="99579-114">This list shows the existing financial dimension values for the selected book.</span></span>  
-    * <span data-ttu-id="99579-115">Zvolte finanční dimenzi, kterou chcete aktualizovat pro vybranou knihu dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="99579-115">Select the financial dimension you want to update for the selected fixed asset book.</span></span>  
-8. <span data-ttu-id="99579-116">V poli **Finanční dimenze** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="99579-116">In the **Financial dimension** field, click the drop down button to open the lookup.</span></span>
-    * <span data-ttu-id="99579-117">Podle potřeby nastavte jiné hodnoty finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="99579-117">Set other financial dimension values as appropriate.</span></span>  
-    * <span data-ttu-id="99579-118">Veškeré hodnoty finanční dimenze se změní, jakmile dojde k převodu, a to podle toho, zda byla zadána hodnota nebo ponechána prázdná.</span><span class="sxs-lookup"><span data-stu-id="99579-118">All financial dimension values change when a transfer occurs, whether a value has been entered or left blank.</span></span> <span data-ttu-id="99579-119">Například pokud je zadána hodnota pro organizační jednotku a hodnota pro finanční dimenze nákladového centra a oddělení ponechána prázdná.</span><span class="sxs-lookup"><span data-stu-id="99579-119">For example, if you entered a value for the BusinessUnit and left the CostCenter and Department financial dimensions blank.</span></span> <span data-ttu-id="99579-120">Pokud vaše účetní struktura umožňuje prázdné hodnoty pro nákladové centrum a oddělení, převod způsobí, že každý oceňovací model bude mít novou hodnotu pro obchodní jednotku a prázdnou hodnotu nákladové centrum a oddělení.</span><span class="sxs-lookup"><span data-stu-id="99579-120">If your account structure allows blank values for CostCenter and Department, the transfer would result in each value model having the new value for BusinessUnit and a blank value for CostCenter and Department.</span></span>  
-9. <span data-ttu-id="99579-121">Klikněte na položku **Aktualizovat**.</span><span class="sxs-lookup"><span data-stu-id="99579-121">Click **Update**.</span></span>
-    * <span data-ttu-id="99579-122">Budete moci vytvořit náhled změn před uzavřením převodu.</span><span class="sxs-lookup"><span data-stu-id="99579-122">You have the opportunity to preview the changes before finalizing the transfer.</span></span>  
-    * <span data-ttu-id="99579-123">Zkontrolujte výsledky před přenesením knih dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="99579-123">Review results before transferring the fixed asset books.</span></span>  
-10. <span data-ttu-id="99579-124">Klikněte na položku **Převod**.</span><span class="sxs-lookup"><span data-stu-id="99579-124">Click **Transfer**.</span></span>
+    <span data-ttu-id="4841d-112">Tento seznam zobrazuje všechny knihy pro dlouhodobý majetek.</span><span class="sxs-lookup"><span data-stu-id="4841d-112">This list shows all books for the fixed asset.</span></span>  
+7. <span data-ttu-id="4841d-113">Označte knihy, které chcete převést do nové sady finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="4841d-113">Mark the books you want to transfer to a new financial dimension set.</span></span>
+    * <span data-ttu-id="4841d-114">Tento seznam zobrazuje hodnoty aktuální finanční dimenze pro vybranou knihu.</span><span class="sxs-lookup"><span data-stu-id="4841d-114">This list shows the existing financial dimension values for the selected book.</span></span>  
+    * <span data-ttu-id="4841d-115">Zvolte finanční dimenzi, kterou chcete aktualizovat pro vybranou knihu dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="4841d-115">Select the financial dimension you want to update for the selected fixed asset book.</span></span>  
+8. <span data-ttu-id="4841d-116">V poli **Finanční dimenze** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="4841d-116">In the **Financial dimension** field, click the drop down button to open the lookup.</span></span>
+    * <span data-ttu-id="4841d-117">Podle potřeby nastavte jiné hodnoty finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="4841d-117">Set other financial dimension values as appropriate.</span></span>  
+    * <span data-ttu-id="4841d-118">Veškeré hodnoty finanční dimenze se změní, jakmile dojde k převodu, a to podle toho, zda byla zadána hodnota nebo ponechána prázdná.</span><span class="sxs-lookup"><span data-stu-id="4841d-118">All financial dimension values change when a transfer occurs, whether a value has been entered or left blank.</span></span> <span data-ttu-id="4841d-119">Například pokud je zadána hodnota pro organizační jednotku a hodnota pro finanční dimenze nákladového centra a oddělení ponechána prázdná.</span><span class="sxs-lookup"><span data-stu-id="4841d-119">For example, if you entered a value for the BusinessUnit and left the CostCenter and Department financial dimensions blank.</span></span> <span data-ttu-id="4841d-120">Pokud vaše účetní struktura umožňuje prázdné hodnoty pro nákladové centrum a oddělení, převod způsobí, že každý oceňovací model bude mít novou hodnotu pro obchodní jednotku a prázdnou hodnotu nákladové centrum a oddělení.</span><span class="sxs-lookup"><span data-stu-id="4841d-120">If your account structure allows blank values for CostCenter and Department, the transfer would result in each value model having the new value for BusinessUnit and a blank value for CostCenter and Department.</span></span>  
+9. <span data-ttu-id="4841d-121">Klikněte na položku **Aktualizovat**.</span><span class="sxs-lookup"><span data-stu-id="4841d-121">Click **Update**.</span></span>
+    * <span data-ttu-id="4841d-122">Budete moci vytvořit náhled změn před uzavřením převodu.</span><span class="sxs-lookup"><span data-stu-id="4841d-122">You have the opportunity to preview the changes before finalizing the transfer.</span></span>  
+    * <span data-ttu-id="4841d-123">Zkontrolujte výsledky před přenesením knih dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="4841d-123">Review results before transferring the fixed asset books.</span></span>  
+10. <span data-ttu-id="4841d-124">Klikněte na položku **Převod**.</span><span class="sxs-lookup"><span data-stu-id="4841d-124">Click **Transfer**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
