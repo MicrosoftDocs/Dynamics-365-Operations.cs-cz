@@ -16,49 +16,52 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b516d51210604a5813d637aa342dc7e269c60d89
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 132b3133bd75cd2b47a96a60e943ff96e686fecf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972232"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229881"
 ---
-# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="f745a-103"> Návrh vztahů mezi organizačními jednotkami</span><span class="sxs-lookup"><span data-stu-id="f745a-103">Design the relationships between organizational units</span></span>
+# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="9c277-103"> Návrh vztahů mezi organizačními jednotkami</span><span class="sxs-lookup"><span data-stu-id="9c277-103">Design the relationships between organizational units</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f745a-104">Tento postup vás provede navrhováním vztahu mezi organizačními jednotkami.</span><span class="sxs-lookup"><span data-stu-id="f745a-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="f745a-105">Před definováním vztahu je nutné vytvořit nový organizační účel, nebo můžete vybrat existující účel organizace.</span><span class="sxs-lookup"><span data-stu-id="f745a-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="f745a-106">K dokončení tohoto postupu jsou použita ukázková data společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="f745a-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="f745a-107">Tento úkol je určen pro roli správce.</span><span class="sxs-lookup"><span data-stu-id="f745a-107">This task is intended for the administrator role.</span></span>
+<span data-ttu-id="9c277-104">Tento postup vás provede navrhováním vztahu mezi organizačními jednotkami.</span><span class="sxs-lookup"><span data-stu-id="9c277-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="9c277-105">Před definováním vztahu je nutné vytvořit nový organizační účel, nebo můžete vybrat existující účel organizace.</span><span class="sxs-lookup"><span data-stu-id="9c277-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="9c277-106">K dokončení tohoto postupu jsou použita ukázková data společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="9c277-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="9c277-107">Tento úkol je určen pro roli správce.</span><span class="sxs-lookup"><span data-stu-id="9c277-107">This task is intended for the administrator role.</span></span>
 
-1. <span data-ttu-id="f745a-108">Přejděte do nabídky Správa organizace > Organizace > Organization hierarchies.</span><span class="sxs-lookup"><span data-stu-id="f745a-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
-2. <span data-ttu-id="f745a-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f745a-109">Click New.</span></span>
-3. <span data-ttu-id="f745a-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="f745a-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="f745a-111">Klikněte na Přiřadit účel.</span><span class="sxs-lookup"><span data-stu-id="f745a-111">Click Assign purpose.</span></span>
-5. <span data-ttu-id="f745a-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f745a-112">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="f745a-113">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="f745a-113">Click Add.</span></span>
-7. <span data-ttu-id="f745a-114">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f745a-114">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="f745a-115">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f745a-115">Click OK.</span></span>
-    * <span data-ttu-id="f745a-116">Podle potřeby můžete vybrat tolik účelů organizace, kolik pro vaši organizaci potřebujete.</span><span class="sxs-lookup"><span data-stu-id="f745a-116">You can select as many organization purposes as required for your organization.</span></span>  
-9. <span data-ttu-id="f745a-117">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f745a-117">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="f745a-118">Klikněte na Nastavit jako výchozí.</span><span class="sxs-lookup"><span data-stu-id="f745a-118">Click Set as default.</span></span>
-11. <span data-ttu-id="f745a-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f745a-119">Close the page.</span></span>
-12. <span data-ttu-id="f745a-120">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f745a-120">Click Save.</span></span>
-13. <span data-ttu-id="f745a-121">Klikněte na možnost Zobrazit.</span><span class="sxs-lookup"><span data-stu-id="f745a-121">Click View.</span></span>
-14. <span data-ttu-id="f745a-122">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="f745a-122">Click Edit.</span></span>
-15. <span data-ttu-id="f745a-123">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="f745a-123">Click Insert.</span></span>
-16. <span data-ttu-id="f745a-124">Klikněte na Obchodní jednotka.</span><span class="sxs-lookup"><span data-stu-id="f745a-124">Click Business unit.</span></span>
-17. <span data-ttu-id="f745a-125">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f745a-125">In the list, find and select the desired record.</span></span>
-18. <span data-ttu-id="f745a-126">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f745a-126">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="f745a-127">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="f745a-127">Click Insert.</span></span>
-20. <span data-ttu-id="f745a-128">Klikněte na Kanál Commerce.</span><span class="sxs-lookup"><span data-stu-id="f745a-128">Click Commerce channel.</span></span>
-21. <span data-ttu-id="f745a-129">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f745a-129">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="f745a-130">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f745a-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="f745a-131">Můžete přidat tolik organizačních jednotek, kolik potřebujete.</span><span class="sxs-lookup"><span data-stu-id="f745a-131">You can add as many organization units as is required.</span></span>  
-23. <span data-ttu-id="f745a-132">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f745a-132">Click Save.</span></span>
-24. <span data-ttu-id="f745a-133">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="f745a-133">Click Close.</span></span>
-25. <span data-ttu-id="f745a-134">Kliknutím na možnost Publikovat otevřete dialog Zanechat.</span><span class="sxs-lookup"><span data-stu-id="f745a-134">Click Publish to open the drop dialog.</span></span>
-26. <span data-ttu-id="f745a-135">Do pole Datum platnosti zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="f745a-135">In the Effective date field, enter a date and time.</span></span>
-27. <span data-ttu-id="f745a-136">Do pole Datum platnosti zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="f745a-136">In the Effective date field, enter a date and time.</span></span>
-28. <span data-ttu-id="f745a-137">Zadejte hodnotu do pole Popsat změny.</span><span class="sxs-lookup"><span data-stu-id="f745a-137">In the Describe changes field, type a value.</span></span>
-29. <span data-ttu-id="f745a-138">Klikněte na tlačítko Publikovat.</span><span class="sxs-lookup"><span data-stu-id="f745a-138">Click Publish.</span></span>
-30. <span data-ttu-id="f745a-139">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="f745a-139">Click Close.</span></span>
+1. <span data-ttu-id="9c277-108">Přejděte do nabídky Správa organizace > Organizace > Organization hierarchies.</span><span class="sxs-lookup"><span data-stu-id="9c277-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+2. <span data-ttu-id="9c277-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="9c277-109">Click New.</span></span>
+3. <span data-ttu-id="9c277-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="9c277-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="9c277-111">Klikněte na Přiřadit účel.</span><span class="sxs-lookup"><span data-stu-id="9c277-111">Click Assign purpose.</span></span>
+5. <span data-ttu-id="9c277-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9c277-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="9c277-113">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="9c277-113">Click Add.</span></span>
+7. <span data-ttu-id="9c277-114">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9c277-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="9c277-115">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="9c277-115">Click OK.</span></span>
+    * <span data-ttu-id="9c277-116">Podle potřeby můžete vybrat tolik účelů organizace, kolik pro vaši organizaci potřebujete.</span><span class="sxs-lookup"><span data-stu-id="9c277-116">You can select as many organization purposes as required for your organization.</span></span>  
+9. <span data-ttu-id="9c277-117">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9c277-117">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="9c277-118">Klikněte na Nastavit jako výchozí.</span><span class="sxs-lookup"><span data-stu-id="9c277-118">Click Set as default.</span></span>
+11. <span data-ttu-id="9c277-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="9c277-119">Close the page.</span></span>
+12. <span data-ttu-id="9c277-120">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="9c277-120">Click Save.</span></span>
+13. <span data-ttu-id="9c277-121">Klikněte na možnost Zobrazit.</span><span class="sxs-lookup"><span data-stu-id="9c277-121">Click View.</span></span>
+14. <span data-ttu-id="9c277-122">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="9c277-122">Click Edit.</span></span>
+15. <span data-ttu-id="9c277-123">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="9c277-123">Click Insert.</span></span>
+16. <span data-ttu-id="9c277-124">Klikněte na Obchodní jednotka.</span><span class="sxs-lookup"><span data-stu-id="9c277-124">Click Business unit.</span></span>
+17. <span data-ttu-id="9c277-125">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9c277-125">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="9c277-126">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="9c277-126">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="9c277-127">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="9c277-127">Click Insert.</span></span>
+20. <span data-ttu-id="9c277-128">Klikněte na Kanál Commerce.</span><span class="sxs-lookup"><span data-stu-id="9c277-128">Click Commerce channel.</span></span>
+21. <span data-ttu-id="9c277-129">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9c277-129">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="9c277-130">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="9c277-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="9c277-131">Můžete přidat tolik organizačních jednotek, kolik potřebujete.</span><span class="sxs-lookup"><span data-stu-id="9c277-131">You can add as many organization units as is required.</span></span>  
+23. <span data-ttu-id="9c277-132">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="9c277-132">Click Save.</span></span>
+24. <span data-ttu-id="9c277-133">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="9c277-133">Click Close.</span></span>
+25. <span data-ttu-id="9c277-134">Kliknutím na možnost Publikovat otevřete dialog Zanechat.</span><span class="sxs-lookup"><span data-stu-id="9c277-134">Click Publish to open the drop dialog.</span></span>
+26. <span data-ttu-id="9c277-135">Do pole Datum platnosti zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="9c277-135">In the Effective date field, enter a date and time.</span></span>
+27. <span data-ttu-id="9c277-136">Do pole Datum platnosti zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="9c277-136">In the Effective date field, enter a date and time.</span></span>
+28. <span data-ttu-id="9c277-137">Zadejte hodnotu do pole Popsat změny.</span><span class="sxs-lookup"><span data-stu-id="9c277-137">In the Describe changes field, type a value.</span></span>
+29. <span data-ttu-id="9c277-138">Klikněte na tlačítko Publikovat.</span><span class="sxs-lookup"><span data-stu-id="9c277-138">Click Publish.</span></span>
+30. <span data-ttu-id="9c277-139">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="9c277-139">Click Close.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
