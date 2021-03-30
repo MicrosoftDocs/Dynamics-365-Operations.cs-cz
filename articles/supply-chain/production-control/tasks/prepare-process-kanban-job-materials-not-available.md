@@ -16,38 +16,41 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df0396a1d00e61ad82e52fc07779e239cd811ab8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 742ac97c4b730d3552f532c53409ef54320b263a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994084"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204561"
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="320f7-103">Příprava kanbanové úlohy procesu, když pro pracovní buňku nejsou k dispozici materiály</span><span class="sxs-lookup"><span data-stu-id="320f7-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
+# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="ef017-103">Příprava kanbanové úlohy procesu, když pro pracovní buňku nejsou k dispozici materiály</span><span class="sxs-lookup"><span data-stu-id="ef017-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="320f7-104">Tento postup se zaměřuje na přípravu zpracování kanbanové úlohy, když nejsou k dispozici některé materiály pro pracovní buňku, a je tak nutné vybrat materiály ze skladu.</span><span class="sxs-lookup"><span data-stu-id="320f7-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="320f7-105">Postup "Příprava procesní kanbanové úlohy, pokud jsou materiály k dispozici" je předpokladem pro vytvoření tohoto postupu.</span><span class="sxs-lookup"><span data-stu-id="320f7-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="320f7-106">Tento postup je určen pro operátora stroje.</span><span class="sxs-lookup"><span data-stu-id="320f7-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="320f7-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="320f7-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="ef017-104">Tento postup se zaměřuje na přípravu zpracování kanbanové úlohy, když nejsou k dispozici některé materiály pro pracovní buňku, a je tak nutné vybrat materiály ze skladu.</span><span class="sxs-lookup"><span data-stu-id="ef017-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="ef017-105">Postup "Příprava procesní kanbanové úlohy, pokud jsou materiály k dispozici" je předpokladem pro vytvoření tohoto postupu.</span><span class="sxs-lookup"><span data-stu-id="ef017-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="ef017-106">Tento postup je určen pro operátora stroje.</span><span class="sxs-lookup"><span data-stu-id="ef017-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="ef017-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="ef017-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="320f7-108">Přejděte na Řízení výroby > Kanban > Kanbanová deska pro úlohy zpracování.</span><span class="sxs-lookup"><span data-stu-id="320f7-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="320f7-109">V poli Pracovní buňka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="320f7-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="320f7-110">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="320f7-110">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="320f7-111">Vyberte pracovní buňku 1250.</span><span class="sxs-lookup"><span data-stu-id="320f7-111">Select work cell 1250.</span></span>  
-4. <span data-ttu-id="320f7-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="320f7-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="320f7-113">Vyberte Kanban 000356.</span><span class="sxs-lookup"><span data-stu-id="320f7-113">Select Kanban 000356.</span></span>  
-5. <span data-ttu-id="320f7-114">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="320f7-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="320f7-115">V seznamu zrušte výběr řádku 4.</span><span class="sxs-lookup"><span data-stu-id="320f7-115">In the list, deselect row 4.</span></span> <span data-ttu-id="320f7-116">nebo vyberte řádek 4, pokud jste nedokončili úkolu "Příprava procesní kanbanové úlohy, jakmile jsou materiály k dispozici."</span><span class="sxs-lookup"><span data-stu-id="320f7-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
-6. <span data-ttu-id="320f7-117">Přepněte rozšíření oddílu Výdejka.</span><span class="sxs-lookup"><span data-stu-id="320f7-117">Toggle the expansion of the Picking list section.</span></span>
-    * <span data-ttu-id="320f7-118">Ikona Žádný záznam ve stavu dodávky udává, že 48 z každé položky P0002 chybí pro pracovní buňku.</span><span class="sxs-lookup"><span data-stu-id="320f7-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
+1. <span data-ttu-id="ef017-108">Přejděte na Řízení výroby > Kanban > Kanbanová deska pro úlohy zpracování.</span><span class="sxs-lookup"><span data-stu-id="ef017-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="ef017-109">V poli Pracovní buňka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="ef017-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="ef017-110">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="ef017-110">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="ef017-111">Vyberte pracovní buňku 1250.</span><span class="sxs-lookup"><span data-stu-id="ef017-111">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="ef017-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ef017-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="ef017-113">Vyberte Kanban 000356.</span><span class="sxs-lookup"><span data-stu-id="ef017-113">Select Kanban 000356.</span></span>  
+5. <span data-ttu-id="ef017-114">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ef017-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="ef017-115">V seznamu zrušte výběr řádku 4.</span><span class="sxs-lookup"><span data-stu-id="ef017-115">In the list, deselect row 4.</span></span> <span data-ttu-id="ef017-116">nebo vyberte řádek 4, pokud jste nedokončili úkolu "Příprava procesní kanbanové úlohy, jakmile jsou materiály k dispozici."</span><span class="sxs-lookup"><span data-stu-id="ef017-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
+6. <span data-ttu-id="ef017-117">Přepněte rozšíření oddílu Výdejka.</span><span class="sxs-lookup"><span data-stu-id="ef017-117">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="ef017-118">Ikona Žádný záznam ve stavu dodávky udává, že 48 z každé položky P0002 chybí pro pracovní buňku.</span><span class="sxs-lookup"><span data-stu-id="ef017-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
 
-## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="320f7-119">Převod materiálů do pracovní buňky</span><span class="sxs-lookup"><span data-stu-id="320f7-119">Transfer materials to work cell</span></span>
-1. <span data-ttu-id="320f7-120">Přepněte rozšíření oddílu Úlohy převodů.</span><span class="sxs-lookup"><span data-stu-id="320f7-120">Toggle the expansion of the Transfer jobs section.</span></span>
-2. <span data-ttu-id="320f7-121">Použijte rychlý filtr k filtrování v poli Číslo položky na základě hodnoty P0002.</span><span class="sxs-lookup"><span data-stu-id="320f7-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
-3. <span data-ttu-id="320f7-122">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="320f7-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="320f7-123">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="320f7-123">Click Start.</span></span>
-    * <span data-ttu-id="320f7-124">Probíhá přenos.</span><span class="sxs-lookup"><span data-stu-id="320f7-124">Transfer is in progress.</span></span>  
-5. <span data-ttu-id="320f7-125">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="320f7-125">Click Complete.</span></span>
-    * <span data-ttu-id="320f7-126">Položka P0002 je nyní k dispozici na výdejce pro kanbanovou úlohu.</span><span class="sxs-lookup"><span data-stu-id="320f7-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="320f7-127">To znamená, že můžeme připravit kanban se všemi potřebnými materiály.</span><span class="sxs-lookup"><span data-stu-id="320f7-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
-6. <span data-ttu-id="320f7-128">Klepněte na Připravit.</span><span class="sxs-lookup"><span data-stu-id="320f7-128">Click Prepare.</span></span>
-    * <span data-ttu-id="320f7-129">Všimněte si, že ikona ve stavu úlohy označuje, že úloha je nyní připravena.</span><span class="sxs-lookup"><span data-stu-id="320f7-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
+## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="ef017-119">Převod materiálů do pracovní buňky</span><span class="sxs-lookup"><span data-stu-id="ef017-119">Transfer materials to work cell</span></span>
+1. <span data-ttu-id="ef017-120">Přepněte rozšíření oddílu Úlohy převodů.</span><span class="sxs-lookup"><span data-stu-id="ef017-120">Toggle the expansion of the Transfer jobs section.</span></span>
+2. <span data-ttu-id="ef017-121">Použijte rychlý filtr k filtrování v poli Číslo položky na základě hodnoty P0002.</span><span class="sxs-lookup"><span data-stu-id="ef017-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
+3. <span data-ttu-id="ef017-122">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ef017-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="ef017-123">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="ef017-123">Click Start.</span></span>
+    * <span data-ttu-id="ef017-124">Probíhá přenos.</span><span class="sxs-lookup"><span data-stu-id="ef017-124">Transfer is in progress.</span></span>  
+5. <span data-ttu-id="ef017-125">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="ef017-125">Click Complete.</span></span>
+    * <span data-ttu-id="ef017-126">Položka P0002 je nyní k dispozici na výdejce pro kanbanovou úlohu.</span><span class="sxs-lookup"><span data-stu-id="ef017-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="ef017-127">To znamená, že můžeme připravit kanban se všemi potřebnými materiály.</span><span class="sxs-lookup"><span data-stu-id="ef017-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
+6. <span data-ttu-id="ef017-128">Klepněte na Připravit.</span><span class="sxs-lookup"><span data-stu-id="ef017-128">Click Prepare.</span></span>
+    * <span data-ttu-id="ef017-129">Všimněte si, že ikona ve stavu úlohy označuje, že úloha je nyní připravena.</span><span class="sxs-lookup"><span data-stu-id="ef017-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
