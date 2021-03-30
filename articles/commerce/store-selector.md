@@ -1,6 +1,6 @@
 ---
 title: Modul volby obchodu
-description: Tohle téma se zabývá modulem výběru obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74dbad4cb348f19b51ba8b84a1cd41fc5049708e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 785ff004adcd94e7c4c6c5918d632ce662aa7989
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006328"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205115"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá modulem výběru obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
+Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 Zákazníci mohou pomocí modulu pro výběr obchodu vyzvednout produkt ve vybraném obchodě po nákupu online. Ve verzi Commerce verze 10.0.13 obsahuje modul pro výběr obchodu také další funkce, které mohou zobrazit stránku **Najít obchod**, která zobrazuje obchody v okolí.
 

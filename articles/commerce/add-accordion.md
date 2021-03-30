@@ -1,6 +1,6 @@
 ---
 title: Modul ovládacího prvku Accordion
-description: Tohle téma se zabývá moduly ovládacího prvku Accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+description: Tohle téma se zabývá moduly accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 28cb9d2e450ff1c05d4faa5cac343e03ef051437
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a08441f5dffa9c2c65b304d0265dd107a838a685
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986097"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206600"
 ---
 # <a name="accordion-module"></a>Modul ovládacího prvku Accordion
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá moduly ovládacího prvku Accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
+Tohle téma se zabývá moduly accordion a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 Moduly ovládacího prvku Accordion jsou moduly podobné kontejnerům, které slouží k uspořádání informací nebo modulů na stránce díky možnosti sbalení podobně jako u zásuvek. Modul ovládacího prvku Accordion lze použít na jakékoli stránce.
 

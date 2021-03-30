@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130748"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219980"
 ---
 # <a name="adjust-leases"></a>Úprava leasingů
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak upravit leasing. Může být vyžadována úprava, pokud dojde ke změně podmínek leasingu, prodloužení leasingu nebo změně jiných okolností. Leasing majetku je v souladu s pokyny, které o změnách leasingu poskytuje téma Kodifikace účetních standardů 842 (ASC 842) a Mezinárodní standard finančního výkaznictví 16 (IFRS 16). ASC 842-20-15-1 definuje změnu leasingu jako jakoukoli změnu podmínek smlouvy, která způsobí změnu rozsahu nebo protiplnění leasingu. Odstavec 39 IFRS 16 stanovuje, že nájemce musí přehodnotit leasingový závazek tak, aby odpovídal změnám leasingových splátek.
 

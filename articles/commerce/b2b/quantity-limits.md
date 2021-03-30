@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e70648da2cc1c526625b6e34fd0867d40abb5a85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035882"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211170"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Nastavte limity množství produktů pro weby B2B elektronického obchodování
 
@@ -81,7 +81,7 @@ Chcete-li zapnout funkci omezení počtu objednávek B2B v konfigurátoru webů 
 
 [Vytvářejte hierarchie modelování org pro organizace B2B](org-model.md)
 
-[Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování](manage-b2b-users.md)
+[Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B](manage-b2b-users.md)
 
 [Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B](payment-method.md)
 

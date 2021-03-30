@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 23d81eaee6684ff2b041f93edd05076af66d322d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 43017cbb76c38eed6951a9e87c763cf919c3bd93
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980524"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206408"
 ---
 # <a name="container-module"></a>Modul kontejneru
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Modul kontejneru je takový modul, který uvnitř hostuje jiné moduly. Primárním účelem modulu kontejneru je definovat pomocí vlastností, které jsou pro něj nastaveny, rozložení modulů, které obsahuje. Tyto moduly mohou být například umístěny vedle sebe ve dvou sloupcích, ve třech sloupcích, ve čtyřech sloupcích nebo v šesti sloupcích. Mohou být také omezeny na šířku kontejneru nebo mohou vyplnit obrazovku. Do každého modulu kontejneru lze také přidat nadpis.
 

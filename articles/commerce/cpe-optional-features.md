@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: def99a34404357e28501de5ccf11c6130d53f34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993443"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213811"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
@@ -102,7 +102,7 @@ Pro každou transakční událost, pro kterou chcete odeslat e-maily, musíte ak
 
 Šablony e-mailů je vhodné přizpůsobit tak, aby používaly různé obrázky. Nebo můžete chtít aktualizovat odkazy v šablonách tak, aby byly v prostředí vyhodnocení. Tento postup vysvětluje, jak stáhnout výchozí šablony, přizpůsobit je a aktualizovat šablony v systému.
 
-1. Ve webovém prohlížeči můžete stáhnout [soubor .zip vyhodnocení výchozích šablon e-mailu Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip), které obsahují následující dokumenty HTML v místním počítači. Tento soubor obsahuje následující dokumenty HTML:
+1. Ve webovém prohlížeči můžete stáhnout [soubor zip vyhodnocení výchozích šablon e-mailu Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) do místního počítače. Tento soubor obsahuje následující dokumenty HTML:
 
     - Šablona potvrzení objednávky
     - Šablona dárkového poukazu
@@ -133,7 +133,7 @@ Když je e-mail vykreslován, budou tyto tokeny nahrazeny skutečnými hodnotami
 
 Následující tokeny se vztahují na celkovou prodejní objednávku.
 
-| Název tokenu | Token  |
+| Název tokenu | Token |
 |-------------------|-------|
 | Číslo objednávky      | %salesid% |
 | Jméno zákazníka   | %customername% |
@@ -159,7 +159,7 @@ Následující tokeny jsou nahrazeny hodnotami pro každý produkt v objednávce
 | Název produktu           | %lineproductname% |
 | popis            | %lineproductdescription% |
 | Množství               | %linequantity% |
-| Cena řádkové jednotky        | %lineprice% (verify) |
+| Cena řádkové jednotky        | %lineprice% (ověřit) |
 | celkem řádkových položek        | %linenetamount% |
 | řádková sleva          | %linediscount% |
 | Datum expedice              | %lineshipdate% |

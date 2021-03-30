@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9d8945348cbe3255ecc497f129d125ad11e9ceab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d0e5fa731d4b808cda9863074d17d1917410f399
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000842"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213667"
 ---
 # <a name="delivery-options-module"></a>Modul možností doručení
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje moduly možností dodání a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Moduly možností doručení umožňují zákazníkům vybrat způsob doručení, jako je například dopravce nebo vyzvednutí pro jejich online objednávku. Pro určení způsobu doručení je vyžadována dodací adresa. Pokud se změní dodací adresa, je nutné znovu načíst možnosti dodání. Pokud objednávka obsahuje pouze položky, které budou vydány v obchodě, bude tento modul automaticky skrytý.
 

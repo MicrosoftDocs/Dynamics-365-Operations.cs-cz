@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5e800daa6eeb54a2eda535cb57aa45559b59b4ea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980499"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206455"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
-
-## <a name="overview"></a>Přehled
 
 Modul poklady je speciální kontejner, který je hostitelem všech modulů, které jsou nutné k vytvoření objednávky. Modul poklady představuje podrobný tok, který zákazník používá k zadání všech relevantních informací za účelem provedení nákupu. Zachycuje doručovací adresu, způsob přepravy a informace o fakturaci. Poskytuje také souhrn objednávky a další informace, které souvisejí s objednávkou odběratele.
 

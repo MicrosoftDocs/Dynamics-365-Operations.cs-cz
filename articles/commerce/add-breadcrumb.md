@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986072"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206552"
 ---
 # <a name="breadcrumb-module"></a>Modul popisu cesty
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly popisu cesty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Moduly popisu cesty se používají k zajištění sekundární navigace na stránkách webu. Obvykle se zobrazují v horní části stránky pod záhlavím. Přestože lze moduly popisu cesty přidat na jakoukoli stránku, nejčastěji se používají na stránkách podrobností o produktu, aby zobrazovaly hierarchii kategorií produktů a poskytovaly rychlý způsob, jak se pohybovat po webu. Modul popisu cesty lze také použít k zobrazení odkazu „Zpět na výsledky“, když uživatelé otevřou stránku podrobností o produktu ze stránky vyhledávání nebo seznamu. Tímto způsobem se uživatelé mohou rychle vrátit na svou stránku filtrovaného seznamu a pokračovat v nakupování.
 
