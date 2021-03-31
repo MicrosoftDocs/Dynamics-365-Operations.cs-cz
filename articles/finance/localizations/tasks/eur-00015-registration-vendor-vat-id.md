@@ -15,51 +15,54 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eb8e5ea8a7a8360155c9eb30eaa85004483950e2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cb72a5f187afe9ebe1081acd6fe0b039c370718e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4984756"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227899"
 ---
-# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="438bb-103">EUR-00015 Registrace DIČ dodavatele</span><span class="sxs-lookup"><span data-stu-id="438bb-103">EUR-00015 Registration of vendor VAT ID</span></span>
+# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="fbbcb-103">EUR-00015 Registrace DIČ dodavatele</span><span class="sxs-lookup"><span data-stu-id="fbbcb-103">EUR-00015 Registration of vendor VAT ID</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="438bb-104">Tato procedura ukazuje, jak přidat ID registrace DPH a číslo osvobození od daně k účtu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="438bb-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="438bb-105">Tento proces je podobný pro právnické osoby a odběratele.</span><span class="sxs-lookup"><span data-stu-id="438bb-105">This process is similar for legal entities and customers.</span></span> 
+<span data-ttu-id="fbbcb-104">Tato procedura ukazuje, jak přidat ID registrace DPH a číslo osvobození od daně k účtu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="fbbcb-105">Tento proces je podobný pro právnické osoby a odběratele.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-105">This process is similar for legal entities and customers.</span></span> 
 
-<span data-ttu-id="438bb-106">Dokončení této procedury vyžaduje nastavení hodnot DIČ.</span><span class="sxs-lookup"><span data-stu-id="438bb-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="438bb-107">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="438bb-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="438bb-108">Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="438bb-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="438bb-109">Tato procedura je určena pro správce správy dat, manažera závazků nebo manažera pohledávek.</span><span class="sxs-lookup"><span data-stu-id="438bb-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="438bb-110">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="438bb-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="fbbcb-106">Dokončení této procedury vyžaduje nastavení hodnot DIČ.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="fbbcb-107">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="fbbcb-108">Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="fbbcb-109">Tato procedura je určena pro správce správy dat, manažera závazků nebo manažera pohledávek.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="fbbcb-110">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. <span data-ttu-id="438bb-111">Přejděte do části Závazky > Dodavatelé > Všichni dodavatelé.</span><span class="sxs-lookup"><span data-stu-id="438bb-111">Go to Accounts payable > Vendors > All vendors.</span></span>
-2. <span data-ttu-id="438bb-112">V seznamu vyhledejte a vyberte dodavatele DE-01001.</span><span class="sxs-lookup"><span data-stu-id="438bb-112">In the list find and select vendor DE-01001</span></span>
-3. <span data-ttu-id="438bb-113">Klikněte na ID registrace.</span><span class="sxs-lookup"><span data-stu-id="438bb-113">Click Registration IDs.</span></span>
-4. <span data-ttu-id="438bb-114">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="438bb-114">Click Add.</span></span>
-5. <span data-ttu-id="438bb-115">Vyberte DIČ.</span><span class="sxs-lookup"><span data-stu-id="438bb-115">Select VAT ID.</span></span>
-6. <span data-ttu-id="438bb-116">Zadejte hodnotu do pole Číslo registrace.</span><span class="sxs-lookup"><span data-stu-id="438bb-116">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="438bb-117">Zadejte DIČ v Německu pro vybraného dodavatele.</span><span class="sxs-lookup"><span data-stu-id="438bb-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="438bb-118">Identifikátor se musí shodovat se zadaným formátem typu registrace.</span><span class="sxs-lookup"><span data-stu-id="438bb-118">The ID must match the specified format of the registration type.</span></span>  
-7. <span data-ttu-id="438bb-119">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="438bb-119">Click the General tab.</span></span>
-8. <span data-ttu-id="438bb-120">V poli Platnost zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="438bb-120">In the Effective field, enter a date.</span></span>
-9. <span data-ttu-id="438bb-121">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="438bb-121">Click Save.</span></span>
-10. <span data-ttu-id="438bb-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="438bb-122">Click New.</span></span>
-11. <span data-ttu-id="438bb-123">Zadejte hodnotu do pole Název nebo popis.</span><span class="sxs-lookup"><span data-stu-id="438bb-123">In the Name or description field, type a value.</span></span>
-    * <span data-ttu-id="438bb-124">Zadejte například ITA.</span><span class="sxs-lookup"><span data-stu-id="438bb-124">For example, enter ITA.</span></span>  
-12. <span data-ttu-id="438bb-125">V poli Země/oblast zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="438bb-125">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="438bb-126">Vyberte například ITA.</span><span class="sxs-lookup"><span data-stu-id="438bb-126">For example, select ITA.</span></span>  
-13. <span data-ttu-id="438bb-127">Vyberte možnost Primární v poli Země.</span><span class="sxs-lookup"><span data-stu-id="438bb-127">Select Yes in the Primary for country field.</span></span>
-14. <span data-ttu-id="438bb-128">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="438bb-128">Click Save.</span></span>
-15. <span data-ttu-id="438bb-129">Klikněte na záložku Přehled.</span><span class="sxs-lookup"><span data-stu-id="438bb-129">Click the Overview tab.</span></span>
-16. <span data-ttu-id="438bb-130">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="438bb-130">Click Add.</span></span>
-17. <span data-ttu-id="438bb-131">V poli Typ registrace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="438bb-131">In the Registration type field, enter or select a value.</span></span>
-    * <span data-ttu-id="438bb-132">Vyberte například DIČ.</span><span class="sxs-lookup"><span data-stu-id="438bb-132">For example, select VAT ID.</span></span>  
-18. <span data-ttu-id="438bb-133">Zadejte hodnotu do pole Číslo registrace.</span><span class="sxs-lookup"><span data-stu-id="438bb-133">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="438bb-134">Například zadejte DIČ v Itálii.</span><span class="sxs-lookup"><span data-stu-id="438bb-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="438bb-135">Identifikátor musí mít stejný formát jako typ registrace.</span><span class="sxs-lookup"><span data-stu-id="438bb-135">The ID must have the same format as the registration type.</span></span>  
-19. <span data-ttu-id="438bb-136">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="438bb-136">Click Save.</span></span>
-20. <span data-ttu-id="438bb-137">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="438bb-137">Close the page.</span></span>
-21. <span data-ttu-id="438bb-138">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="438bb-138">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="438bb-139">Vyberte například DE-01001.</span><span class="sxs-lookup"><span data-stu-id="438bb-139">For example, select DE-01001.</span></span>  
-22. <span data-ttu-id="438bb-140">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="438bb-140">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="438bb-141">Rozbalte oddíl Faktury a dodávky.</span><span class="sxs-lookup"><span data-stu-id="438bb-141">Expand the Invoice and delivery section.</span></span>
-24. <span data-ttu-id="438bb-142">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="438bb-142">Click Edit.</span></span>
-25. <span data-ttu-id="438bb-143">V poli DIČ zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="438bb-143">In the Tax exempt number field, enter or select a value.</span></span>
-26. <span data-ttu-id="438bb-144">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="438bb-144">Click Save.</span></span>
+1. <span data-ttu-id="fbbcb-111">Přejděte do části Závazky > Dodavatelé > Všichni dodavatelé.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-111">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="fbbcb-112">V seznamu vyhledejte a vyberte dodavatele DE-01001.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-112">In the list find and select vendor DE-01001</span></span>
+3. <span data-ttu-id="fbbcb-113">Klikněte na ID registrace.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-113">Click Registration IDs.</span></span>
+4. <span data-ttu-id="fbbcb-114">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-114">Click Add.</span></span>
+5. <span data-ttu-id="fbbcb-115">Vyberte DIČ.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-115">Select VAT ID.</span></span>
+6. <span data-ttu-id="fbbcb-116">Zadejte hodnotu do pole Číslo registrace.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-116">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="fbbcb-117">Zadejte DIČ v Německu pro vybraného dodavatele.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="fbbcb-118">Identifikátor se musí shodovat se zadaným formátem typu registrace.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-118">The ID must match the specified format of the registration type.</span></span>  
+7. <span data-ttu-id="fbbcb-119">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-119">Click the General tab.</span></span>
+8. <span data-ttu-id="fbbcb-120">V poli Platnost zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-120">In the Effective field, enter a date.</span></span>
+9. <span data-ttu-id="fbbcb-121">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-121">Click Save.</span></span>
+10. <span data-ttu-id="fbbcb-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-122">Click New.</span></span>
+11. <span data-ttu-id="fbbcb-123">Zadejte hodnotu do pole Název nebo popis.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-123">In the Name or description field, type a value.</span></span>
+    * <span data-ttu-id="fbbcb-124">Zadejte například ITA.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-124">For example, enter ITA.</span></span>  
+12. <span data-ttu-id="fbbcb-125">V poli Země/oblast zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-125">In the Country/region field, enter or select a value.</span></span>
+    * <span data-ttu-id="fbbcb-126">Vyberte například ITA.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-126">For example, select ITA.</span></span>  
+13. <span data-ttu-id="fbbcb-127">Vyberte možnost Primární v poli Země.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-127">Select Yes in the Primary for country field.</span></span>
+14. <span data-ttu-id="fbbcb-128">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-128">Click Save.</span></span>
+15. <span data-ttu-id="fbbcb-129">Klikněte na záložku Přehled.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-129">Click the Overview tab.</span></span>
+16. <span data-ttu-id="fbbcb-130">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-130">Click Add.</span></span>
+17. <span data-ttu-id="fbbcb-131">V poli Typ registrace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-131">In the Registration type field, enter or select a value.</span></span>
+    * <span data-ttu-id="fbbcb-132">Vyberte například DIČ.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-132">For example, select VAT ID.</span></span>  
+18. <span data-ttu-id="fbbcb-133">Zadejte hodnotu do pole Číslo registrace.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-133">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="fbbcb-134">Například zadejte DIČ v Itálii.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="fbbcb-135">Identifikátor musí mít stejný formát jako typ registrace.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-135">The ID must have the same format as the registration type.</span></span>  
+19. <span data-ttu-id="fbbcb-136">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-136">Click Save.</span></span>
+20. <span data-ttu-id="fbbcb-137">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-137">Close the page.</span></span>
+21. <span data-ttu-id="fbbcb-138">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="fbbcb-139">Vyberte například DE-01001.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-139">For example, select DE-01001.</span></span>  
+22. <span data-ttu-id="fbbcb-140">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-140">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="fbbcb-141">Rozbalte oddíl Faktury a dodávky.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-141">Expand the Invoice and delivery section.</span></span>
+24. <span data-ttu-id="fbbcb-142">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-142">Click Edit.</span></span>
+25. <span data-ttu-id="fbbcb-143">V poli DIČ zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-143">In the Tax exempt number field, enter or select a value.</span></span>
+26. <span data-ttu-id="fbbcb-144">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbbcb-144">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

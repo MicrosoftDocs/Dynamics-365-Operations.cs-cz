@@ -18,25 +18,28 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7c408068ece94d47c0f41e286a2ce0ae7efd23dd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f5037067917290f21f681d2446a0e1ab0e31228c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972485"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231193"
 ---
-# <a name="options-for-preventing-discounts-for-retail-products"></a><span data-ttu-id="12b2b-103">Možnosti zabránění slevám pro maloobchodní produkty</span><span class="sxs-lookup"><span data-stu-id="12b2b-103">Options for preventing discounts for retail products</span></span>
+# <a name="options-for-preventing-discounts-for-retail-products"></a><span data-ttu-id="517d9-103">Možnosti zabránění slevám pro maloobchodní produkty</span><span class="sxs-lookup"><span data-stu-id="517d9-103">Options for preventing discounts for retail products</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="12b2b-104">Existují různé důvody, proč maloobchodní prodejci mohou chtít, aby na některé produkty neplatila sleva, buď v rámci promoakce nebo během prodeje v POS.</span><span class="sxs-lookup"><span data-stu-id="12b2b-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
+<span data-ttu-id="517d9-104">Existují různé důvody, proč maloobchodní prodejci mohou chtít, aby na některé produkty neplatila sleva, buď v rámci promoakce nebo během prodeje v POS.</span><span class="sxs-lookup"><span data-stu-id="517d9-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
 
-<span data-ttu-id="12b2b-105">Následující možnosti, které se nachází na kartě **Velkoobchod** vydaných produktů, umožní nakonfigurování výrobku tak, aby se na něj nevztahovaly všechny nebo pouze manuální slevy.</span><span class="sxs-lookup"><span data-stu-id="12b2b-105">The following options, which can be found on the **Commerce** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="12b2b-106">Nastavení lze také určit na úrovni kategorie z hierarchie kategorií.</span><span class="sxs-lookup"><span data-stu-id="12b2b-106">The settings can also be specified at the category level from the category hierarchy.</span></span>
+<span data-ttu-id="517d9-105">Následující možnosti, které se nachází na kartě **Velkoobchod** vydaných produktů, umožní nakonfigurování výrobku tak, aby se na něj nevztahovaly všechny nebo pouze manuální slevy.</span><span class="sxs-lookup"><span data-stu-id="517d9-105">The following options, which can be found on the **Commerce** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="517d9-106">Nastavení lze také určit na úrovni kategorie z hierarchie kategorií.</span><span class="sxs-lookup"><span data-stu-id="517d9-106">The settings can also be specified at the category level from the category hierarchy.</span></span>
 
-- <span data-ttu-id="12b2b-107">**Zabránit všem selvám** - Výběrem této volby můžete zabránit, aby se na tento produkt aplikoval jakýkoliv typ slevy.</span><span class="sxs-lookup"><span data-stu-id="12b2b-107">**Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="12b2b-108">To zahrnuje promoakce, jako například kombinační slevy, množstevní a mezní slevy, jakož i manuální slevy řádku a transakce použité při prodeji uživatelem POS.</span><span class="sxs-lookup"><span data-stu-id="12b2b-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
-- <span data-ttu-id="12b2b-109">**Zabránit ručním slevám** - Tuto možnost vyberte pouze pro zabránění slev řádku nebo transakce použitým při prodeji uživatelem POS.</span><span class="sxs-lookup"><span data-stu-id="12b2b-109">**Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="12b2b-110">Produkty s touto zvolenou možností mají stále nárok na promoakce, jako jsou například kombinační, množstevní a mezní slevy.</span><span class="sxs-lookup"><span data-stu-id="12b2b-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
+- <span data-ttu-id="517d9-107">**Zabránit všem selvám** - Výběrem této volby můžete zabránit, aby se na tento produkt aplikoval jakýkoliv typ slevy.</span><span class="sxs-lookup"><span data-stu-id="517d9-107">**Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="517d9-108">To zahrnuje promoakce, jako například kombinační slevy, množstevní a mezní slevy, jakož i manuální slevy řádku a transakce použité při prodeji uživatelem POS.</span><span class="sxs-lookup"><span data-stu-id="517d9-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
+- <span data-ttu-id="517d9-109">**Zabránit ručním slevám** - Tuto možnost vyberte pouze pro zabránění slev řádku nebo transakce použitým při prodeji uživatelem POS.</span><span class="sxs-lookup"><span data-stu-id="517d9-109">**Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="517d9-110">Produkty s touto zvolenou možností mají stále nárok na promoakce, jako jsou například kombinační, množstevní a mezní slevy.</span><span class="sxs-lookup"><span data-stu-id="517d9-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="12b2b-111">Tato nastavení neomezují operaci přepisu ceny, protože se nastaví základní cena, se kterou se nenakládá jako se slevou.</span><span class="sxs-lookup"><span data-stu-id="12b2b-111">These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>
+> <span data-ttu-id="517d9-111">Tato nastavení neomezují operaci přepisu ceny, protože se nastaví základní cena, se kterou se nenakládá jako se slevou.</span><span class="sxs-lookup"><span data-stu-id="517d9-111">These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>
 
-<span data-ttu-id="12b2b-112">[![Pole zabránění slev](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span><span class="sxs-lookup"><span data-stu-id="12b2b-112">[![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span></span>
+<span data-ttu-id="517d9-112">[![Pole zabránění slev](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span><span class="sxs-lookup"><span data-stu-id="517d9-112">[![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

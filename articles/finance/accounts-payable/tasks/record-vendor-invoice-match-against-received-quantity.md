@@ -15,52 +15,55 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: be1e818e8a97684248c9c0b9d43c39e631f855f5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 66f3b3444b9ff6a93d83c97f1d962c3bdb0699c9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979256"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227105"
 ---
-# <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="b4b55-103">Zaznamenání faktury dodavatele a spárování s přijatým množstvím</span><span class="sxs-lookup"><span data-stu-id="b4b55-103">Record vendor invoice and match against received quantity</span></span>
+# <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="bafb8-103">Zaznamenání faktury dodavatele a spárování s přijatým množstvím</span><span class="sxs-lookup"><span data-stu-id="bafb8-103">Record vendor invoice and match against received quantity</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="b4b55-104">Pokud od dodavatele obdržíte fakturu za zboží nebo služby na nákupní objednávce, mohou obchodní procesy vyžadovat, aby zboží nebo služby byly před schválením této faktury k platbě skutečně přijaty.</span><span class="sxs-lookup"><span data-stu-id="b4b55-104">When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment.</span></span> <span data-ttu-id="b4b55-105">Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur.</span><span class="sxs-lookup"><span data-stu-id="b4b55-105">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> 
+<span data-ttu-id="bafb8-104">Pokud od dodavatele obdržíte fakturu za zboží nebo služby na nákupní objednávce, mohou obchodní procesy vyžadovat, aby zboží nebo služby byly před schválením této faktury k platbě skutečně přijaty.</span><span class="sxs-lookup"><span data-stu-id="bafb8-104">When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment.</span></span> <span data-ttu-id="bafb8-105">Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur.</span><span class="sxs-lookup"><span data-stu-id="bafb8-105">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> 
 
-<span data-ttu-id="b4b55-106">Na stránce Parametry závazků zajistěte, že je vybrána možnost Povolit ověření párování faktur, pole Zaúčtovat fakturu s odchylkami je nastaveno na Vyžadovat schválení a pole Zásady párování řádků je nastaveno na Třícestné párování.</span><span class="sxs-lookup"><span data-stu-id="b4b55-106">In the Accounts payable parameters page, ensure that the Enable invoice matching validation option is selected, the Post invoice with discrepancies field is set to Require approval, and the Line matching policy field is set to Three-way matching.</span></span>
+<span data-ttu-id="bafb8-106">Na stránce Parametry závazků zajistěte, že je vybrána možnost Povolit ověření párování faktur, pole Zaúčtovat fakturu s odchylkami je nastaveno na Vyžadovat schválení a pole Zásady párování řádků je nastaveno na Třícestné párování.</span><span class="sxs-lookup"><span data-stu-id="bafb8-106">In the Accounts payable parameters page, ensure that the Enable invoice matching validation option is selected, the Post invoice with discrepancies field is set to Require approval, and the Line matching policy field is set to Three-way matching.</span></span>
 
-<span data-ttu-id="b4b55-107">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="b4b55-107">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="b4b55-108">Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky.</span><span class="sxs-lookup"><span data-stu-id="b4b55-108">The accounts payable manager or accounting manager role would perform these steps.</span></span>
+<span data-ttu-id="bafb8-107">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="bafb8-107">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="bafb8-108">Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky.</span><span class="sxs-lookup"><span data-stu-id="bafb8-108">The accounts payable manager or accounting manager role would perform these steps.</span></span>
 
 
-## <a name="create-a-purchase-order"></a><span data-ttu-id="b4b55-109">Vytvoření nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="b4b55-109">Create a purchase order</span></span>
-1. <span data-ttu-id="b4b55-110">Přejděte na Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="b4b55-110">Go to All purchase orders.</span></span>
-2. <span data-ttu-id="b4b55-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="b4b55-111">Click New.</span></span>
-3. <span data-ttu-id="b4b55-112">V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="b4b55-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="b4b55-113">Zadejte hodnotu do pole Účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="b4b55-113">In the Vendor account field, type a value.</span></span>
-5. <span data-ttu-id="b4b55-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b4b55-114">Click OK.</span></span>
-6. <span data-ttu-id="b4b55-115">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="b4b55-115">Click Add line.</span></span>
-7. <span data-ttu-id="b4b55-116">Zadejte hodnotu do pole Číslo zboží.</span><span class="sxs-lookup"><span data-stu-id="b4b55-116">In the Item number field, type a value.</span></span>
-8. <span data-ttu-id="b4b55-117">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="b4b55-117">On the Action Pane, click Purchase.</span></span>
-9. <span data-ttu-id="b4b55-118">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="b4b55-118">Click Confirm.</span></span>
+## <a name="create-a-purchase-order"></a><span data-ttu-id="bafb8-109">Vytvoření nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="bafb8-109">Create a purchase order</span></span>
+1. <span data-ttu-id="bafb8-110">Přejděte na Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="bafb8-110">Go to All purchase orders.</span></span>
+2. <span data-ttu-id="bafb8-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bafb8-111">Click New.</span></span>
+3. <span data-ttu-id="bafb8-112">V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="bafb8-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="bafb8-113">Zadejte hodnotu do pole Účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="bafb8-113">In the Vendor account field, type a value.</span></span>
+5. <span data-ttu-id="bafb8-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bafb8-114">Click OK.</span></span>
+6. <span data-ttu-id="bafb8-115">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="bafb8-115">Click Add line.</span></span>
+7. <span data-ttu-id="bafb8-116">Zadejte hodnotu do pole Číslo zboží.</span><span class="sxs-lookup"><span data-stu-id="bafb8-116">In the Item number field, type a value.</span></span>
+8. <span data-ttu-id="bafb8-117">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="bafb8-117">On the Action Pane, click Purchase.</span></span>
+9. <span data-ttu-id="bafb8-118">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="bafb8-118">Click Confirm.</span></span>
 
-## <a name="post-a-product-receipt"></a><span data-ttu-id="b4b55-119">Zaúčtování příjemky produktu</span><span class="sxs-lookup"><span data-stu-id="b4b55-119">Post a product receipt</span></span>
-1. <span data-ttu-id="b4b55-120">V podokně akcí klikněte na položku Přijmout.</span><span class="sxs-lookup"><span data-stu-id="b4b55-120">On the Action Pane, click Receive.</span></span>
-2. <span data-ttu-id="b4b55-121">Klikněte na položku Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="b4b55-121">Click Product receipt.</span></span>
-3. <span data-ttu-id="b4b55-122">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="b4b55-122">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="b4b55-123">Zadejte hodnotu do pole Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="b4b55-123">In the Product receipt field, type a value.</span></span>
-5. <span data-ttu-id="b4b55-124">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b4b55-124">Click OK.</span></span>
+## <a name="post-a-product-receipt"></a><span data-ttu-id="bafb8-119">Zaúčtování příjemky produktu</span><span class="sxs-lookup"><span data-stu-id="bafb8-119">Post a product receipt</span></span>
+1. <span data-ttu-id="bafb8-120">V podokně akcí klikněte na položku Přijmout.</span><span class="sxs-lookup"><span data-stu-id="bafb8-120">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="bafb8-121">Klikněte na položku Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="bafb8-121">Click Product receipt.</span></span>
+3. <span data-ttu-id="bafb8-122">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="bafb8-122">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="bafb8-123">Zadejte hodnotu do pole Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="bafb8-123">In the Product receipt field, type a value.</span></span>
+5. <span data-ttu-id="bafb8-124">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bafb8-124">Click OK.</span></span>
 
-## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a><span data-ttu-id="b4b55-125">Zaznamenání a párování faktury dodavatele s příjemkou produktu</span><span class="sxs-lookup"><span data-stu-id="b4b55-125">Record and match a vendor invoice to a product receipt</span></span>
-1. <span data-ttu-id="b4b55-126">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="b4b55-126">On the Action Pane, click Invoice.</span></span>
-2. <span data-ttu-id="b4b55-127">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="b4b55-127">Click Invoice.</span></span>
-3. <span data-ttu-id="b4b55-128">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="b4b55-128">In the Number field, type a value.</span></span>
-4. <span data-ttu-id="b4b55-129">Kliknutím na Výchozí od: Objednané množství otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b4b55-129">Click Default from: Ordered quantity to open the drop dialog.</span></span>
-5. <span data-ttu-id="b4b55-130">Vyberte volbu v poli Výchozí množství pro řádky.</span><span class="sxs-lookup"><span data-stu-id="b4b55-130">In the Default quantity for lines field, select an option.</span></span>
-6. <span data-ttu-id="b4b55-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b4b55-131">Click OK.</span></span>
-7. <span data-ttu-id="b4b55-132">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="b4b55-132">Click Yes.</span></span>
-8. <span data-ttu-id="b4b55-133">Klikněte na Spárovat příjemky produktu.</span><span class="sxs-lookup"><span data-stu-id="b4b55-133">Click Match product receipts.</span></span>
-9. <span data-ttu-id="b4b55-134">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b4b55-134">Click OK.</span></span>
-10. <span data-ttu-id="b4b55-135">V podokně akcí klikněte na položku Přehled.</span><span class="sxs-lookup"><span data-stu-id="b4b55-135">On the Action Pane, click Review.</span></span>
-11. <span data-ttu-id="b4b55-136">Klikněte na položku Párování – podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="b4b55-136">Click Matching details.</span></span>
+## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a><span data-ttu-id="bafb8-125">Zaznamenání a párování faktury dodavatele s příjemkou produktu</span><span class="sxs-lookup"><span data-stu-id="bafb8-125">Record and match a vendor invoice to a product receipt</span></span>
+1. <span data-ttu-id="bafb8-126">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="bafb8-126">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="bafb8-127">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="bafb8-127">Click Invoice.</span></span>
+3. <span data-ttu-id="bafb8-128">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="bafb8-128">In the Number field, type a value.</span></span>
+4. <span data-ttu-id="bafb8-129">Kliknutím na Výchozí od: Objednané množství otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="bafb8-129">Click Default from: Ordered quantity to open the drop dialog.</span></span>
+5. <span data-ttu-id="bafb8-130">Vyberte volbu v poli Výchozí množství pro řádky.</span><span class="sxs-lookup"><span data-stu-id="bafb8-130">In the Default quantity for lines field, select an option.</span></span>
+6. <span data-ttu-id="bafb8-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bafb8-131">Click OK.</span></span>
+7. <span data-ttu-id="bafb8-132">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="bafb8-132">Click Yes.</span></span>
+8. <span data-ttu-id="bafb8-133">Klikněte na Spárovat příjemky produktu.</span><span class="sxs-lookup"><span data-stu-id="bafb8-133">Click Match product receipts.</span></span>
+9. <span data-ttu-id="bafb8-134">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bafb8-134">Click OK.</span></span>
+10. <span data-ttu-id="bafb8-135">V podokně akcí klikněte na položku Přehled.</span><span class="sxs-lookup"><span data-stu-id="bafb8-135">On the Action Pane, click Review.</span></span>
+11. <span data-ttu-id="bafb8-136">Klikněte na položku Párování – podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="bafb8-136">Click Matching details.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
