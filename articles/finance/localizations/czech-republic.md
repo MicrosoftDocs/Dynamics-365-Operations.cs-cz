@@ -14,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fd3fb48856b27957ebf3d5e1b3ce99fdd1c29233
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8a2fa093e8a24b68074a1c843049999131823c2a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978296"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217344"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
