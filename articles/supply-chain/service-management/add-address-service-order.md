@@ -17,60 +17,63 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6c8f00eb1a1fe2ef3aea22da20ce218d7568f64
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7b9c6a410acbfebb3a83e753c422dd87dbf52566
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966048"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205850"
 ---
-# <a name="add-an-address-to-a-service-order"></a><span data-ttu-id="67ce7-103">Přidání adresy do servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="67ce7-103">Add an address to a service order</span></span>    
+# <a name="add-an-address-to-a-service-order"></a><span data-ttu-id="68581-103">Přidání adresy do servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="68581-103">Add an address to a service order</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="67ce7-104">Toto téma popisuje postup přidání adresy odběratele do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="67ce7-104">This topic describes how to add a customer address to a service order.</span></span> <span data-ttu-id="67ce7-105">Při vytváření servisní zakázky se informace o adrese přenáší z projektu, ke kterému je servisní zakázka připojena.</span><span class="sxs-lookup"><span data-stu-id="67ce7-105">When you create a service order, the address information is transferred from the project that the service order is attached to.</span></span> <span data-ttu-id="67ce7-106">Pro odběratele, dodavatele, pracoviště, sklady, servisní zakázky a projekty však můžete vybrat alternativní umístění z adres, které jsou již zadány v aplikaci Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="67ce7-106">However, you can select an alternative location from addresses that are already entered in Microsoft Dynamics AX for customers, vendors, sites, warehouses, service orders, and projects.</span></span>
+<span data-ttu-id="68581-104">Toto téma popisuje postup přidání adresy odběratele do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="68581-104">This topic describes how to add a customer address to a service order.</span></span> <span data-ttu-id="68581-105">Při vytváření servisní zakázky se informace o adrese přenáší z projektu, ke kterému je servisní zakázka připojena.</span><span class="sxs-lookup"><span data-stu-id="68581-105">When you create a service order, the address information is transferred from the project that the service order is attached to.</span></span> <span data-ttu-id="68581-106">Pro odběratele, dodavatele, pracoviště, sklady, servisní zakázky a projekty však můžete vybrat alternativní umístění z adres, které jsou již zadány v aplikaci Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="68581-106">However, you can select an alternative location from addresses that are already entered in Microsoft Dynamics AX for customers, vendors, sites, warehouses, service orders, and projects.</span></span>
 
-<span data-ttu-id="67ce7-107">Můžete také vytvořit adresy nové.</span><span class="sxs-lookup"><span data-stu-id="67ce7-107">You can also create a new address.</span></span> <span data-ttu-id="67ce7-108">Ve výchozím stavu je nová adresa převedena do projektu.</span><span class="sxs-lookup"><span data-stu-id="67ce7-108">By default, the new address is transferred to the project.</span></span> <span data-ttu-id="67ce7-109">Můžete však zadat, aby nová adresa byla relevantní pouze pro tuto instanci služby.</span><span class="sxs-lookup"><span data-stu-id="67ce7-109">However, you can specify that the new address is only relevant for this instance of the service.</span></span> <span data-ttu-id="67ce7-110">V takovém případě nová adresa do projektu převedena nebude.</span><span class="sxs-lookup"><span data-stu-id="67ce7-110">If you do, the new address is not transferred to the project.</span></span>
+<span data-ttu-id="68581-107">Můžete také vytvořit adresy nové.</span><span class="sxs-lookup"><span data-stu-id="68581-107">You can also create a new address.</span></span> <span data-ttu-id="68581-108">Ve výchozím stavu je nová adresa převedena do projektu.</span><span class="sxs-lookup"><span data-stu-id="68581-108">By default, the new address is transferred to the project.</span></span> <span data-ttu-id="68581-109">Můžete však zadat, aby nová adresa byla relevantní pouze pro tuto instanci služby.</span><span class="sxs-lookup"><span data-stu-id="68581-109">However, you can specify that the new address is only relevant for this instance of the service.</span></span> <span data-ttu-id="68581-110">V takovém případě nová adresa do projektu převedena nebude.</span><span class="sxs-lookup"><span data-stu-id="68581-110">If you do, the new address is not transferred to the project.</span></span>
 
-## <a name="create-a-customer-address-for-a-service-order"></a><span data-ttu-id="67ce7-111">Vytvoření adresy zákazníka pro servisní zakázku</span><span class="sxs-lookup"><span data-stu-id="67ce7-111">Create a customer address for a service order</span></span>
+## <a name="create-a-customer-address-for-a-service-order"></a><span data-ttu-id="68581-111">Vytvoření adresy zákazníka pro servisní zakázku</span><span class="sxs-lookup"><span data-stu-id="68581-111">Create a customer address for a service order</span></span>
 
-<span data-ttu-id="67ce7-112">Pro přidání adresy do servisní zakázky postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="67ce7-112">To add an address to a service order, follow these steps:</span></span>
+<span data-ttu-id="68581-112">Pro přidání adresy do servisní zakázky postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="68581-112">To add an address to a service order, follow these steps:</span></span>
 
-1.  <span data-ttu-id="67ce7-113">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-113">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="68581-113">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="68581-113">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="67ce7-114">Otevřete servisní zakázku, pro kterou chcete vytvořit adresu.</span><span class="sxs-lookup"><span data-stu-id="67ce7-114">Open the service order that you want to create an address for.</span></span>
+2.  <span data-ttu-id="68581-114">Otevřete servisní zakázku, pro kterou chcete vytvořit adresu.</span><span class="sxs-lookup"><span data-stu-id="68581-114">Open the service order that you want to create an address for.</span></span>
 
-3.  <span data-ttu-id="67ce7-115">V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-115">On the **Action Pane**, click **Edit**, and then click **Header view**.</span></span>
+3.  <span data-ttu-id="68581-115">V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.</span><span class="sxs-lookup"><span data-stu-id="68581-115">On the **Action Pane**, click **Edit**, and then click **Header view**.</span></span>
 
-4.  <span data-ttu-id="67ce7-116">Na pevné záložce **adresy** klepněte na tlačítko **přidání adresy**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-116">On the **Address** FastTab, click **Add address**.</span></span>
+4.  <span data-ttu-id="68581-116">Na pevné záložce **adresy** klepněte na tlačítko **přidání adresy**.</span><span class="sxs-lookup"><span data-stu-id="68581-116">On the **Address** FastTab, click **Add address**.</span></span>
 
-5.  <span data-ttu-id="67ce7-117">Ve formuláři **Nová adresa** zadejte jedinečný název adresy a vyplňte zbývající pole.</span><span class="sxs-lookup"><span data-stu-id="67ce7-117">In the **New address** form, enter a unique name for the address and complete the remaining fields.</span></span> 
+5.  <span data-ttu-id="68581-117">Ve formuláři **Nová adresa** zadejte jedinečný název adresy a vyplňte zbývající pole.</span><span class="sxs-lookup"><span data-stu-id="68581-117">In the **New address** form, enter a unique name for the address and complete the remaining fields.</span></span> 
     
 
     > [!WARNING]
-    > <P><span data-ttu-id="67ce7-118">Zadáte-li stejný název, jaký používá existující adresa, informace zadané do zbývajících polí přepíší informace pro existující adresu.</span><span class="sxs-lookup"><span data-stu-id="67ce7-118">If you enter the same name as an existing address, the information that you enter in the remaining fields will overwrite information for the existing address.</span></span></P>
+    > <P><span data-ttu-id="68581-118">Zadáte-li stejný název, jaký používá existující adresa, informace zadané do zbývajících polí přepíší informace pro existující adresu.</span><span class="sxs-lookup"><span data-stu-id="68581-118">If you enter the same name as an existing address, the information that you enter in the remaining fields will overwrite information for the existing address.</span></span></P>
 
 
-6.  <span data-ttu-id="67ce7-119">Klepnutím na tlačítko **OK** zkopírujete novou adresu do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="67ce7-119">Click **OK** to copy the new address to your service order.</span></span>
+6.  <span data-ttu-id="68581-119">Klepnutím na tlačítko **OK** zkopírujete novou adresu do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="68581-119">Click **OK** to copy the new address to your service order.</span></span>
 
-## <a name="specify-an-alternative-address-on-a-service-order"></a><span data-ttu-id="67ce7-120">Zadání alternativní adresy pro servisní zakázku</span><span class="sxs-lookup"><span data-stu-id="67ce7-120">Specify an alternative address on a service order</span></span>
+## <a name="specify-an-alternative-address-on-a-service-order"></a><span data-ttu-id="68581-120">Zadání alternativní adresy pro servisní zakázku</span><span class="sxs-lookup"><span data-stu-id="68581-120">Specify an alternative address on a service order</span></span>
 
-<span data-ttu-id="67ce7-121">Pro přidání alternativní adresy do servisní zakázky postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="67ce7-121">To add an alternative address to a service order, follow these steps:</span></span>
+<span data-ttu-id="68581-121">Pro přidání alternativní adresy do servisní zakázky postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="68581-121">To add an alternative address to a service order, follow these steps:</span></span>
 
-1.  <span data-ttu-id="67ce7-122">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-122">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="68581-122">Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="68581-122">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="67ce7-123">Otevřete servisní zakázku, pro kterou chcete zadat alternativní adresu.</span><span class="sxs-lookup"><span data-stu-id="67ce7-123">Open the service order that you want to enter an alternative address for.</span></span>
+2.  <span data-ttu-id="68581-123">Otevřete servisní zakázku, pro kterou chcete zadat alternativní adresu.</span><span class="sxs-lookup"><span data-stu-id="68581-123">Open the service order that you want to enter an alternative address for.</span></span>
 
-3.  <span data-ttu-id="67ce7-124">V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-124">On the **Action Pane**, click **Edit**, and then click **Header view**.</span></span>
+3.  <span data-ttu-id="68581-124">V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.</span><span class="sxs-lookup"><span data-stu-id="68581-124">On the **Action Pane**, click **Edit**, and then click **Header view**.</span></span>
 
-4.  <span data-ttu-id="67ce7-125">Na pevné záložce **adresy** klepněte na tlačítko **Jiná adresa**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-125">On the **Address** FastTab, click **Other address**.</span></span>
+4.  <span data-ttu-id="68581-125">Na pevné záložce **adresy** klepněte na tlačítko **Jiná adresa**.</span><span class="sxs-lookup"><span data-stu-id="68581-125">On the **Address** FastTab, click **Other address**.</span></span>
 
-5.  <span data-ttu-id="67ce7-126">Ve formuláři **výběr adresy** v poli **typ záznamu** vyberte **servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="67ce7-126">In the **Address selection** form, in the **Record type** field, select **Service orders**.</span></span>
+5.  <span data-ttu-id="68581-126">Ve formuláři **výběr adresy** v poli **typ záznamu** vyberte **servisní zakázky**.</span><span class="sxs-lookup"><span data-stu-id="68581-126">In the **Address selection** form, in the **Record type** field, select **Service orders**.</span></span>
 
-6.  <span data-ttu-id="67ce7-127">Vyberte adresu a klepnutím na tlačítko **OK** ji zkopírujete do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="67ce7-127">Select an address, and then click **OK** to copy it to your service order.</span></span>
+6.  <span data-ttu-id="68581-127">Vyberte adresu a klepnutím na tlačítko **OK** ji zkopírujete do servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="68581-127">Select an address, and then click **OK** to copy it to your service order.</span></span>
 
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
