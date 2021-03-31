@@ -17,83 +17,86 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3392f5f36d04e8cb0a9d6e6b7db31ff62c987649
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c065aa961cf5c2d6770ae47c63a75953e6d38e00
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995763"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222530"
 ---
-# <a name="upload-files-other-than-images-and-videos"></a><span data-ttu-id="0de7c-103">Odeslat jiné soubory než obrázky a videa</span><span class="sxs-lookup"><span data-stu-id="0de7c-103">Upload files other than images and videos</span></span>
+# <a name="upload-files-other-than-images-and-videos"></a><span data-ttu-id="52789-103">Odeslání souborů jiných než obrázky a videa</span><span class="sxs-lookup"><span data-stu-id="52789-103">Upload files other than images and videos</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0de7c-104">V tomto tématu je popsán postup při odesílání souborů kromě obrázků a videí v konfigurátoru webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="0de7c-104">This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
+<span data-ttu-id="52789-104">V tomto tématu je popsán postup při odesílání souborů kromě obrázků a videí v konfigurátoru webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="52789-104">This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="0de7c-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="0de7c-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="52789-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="52789-105">Overview</span></span>
 
-<span data-ttu-id="0de7c-106">Knihovna médií konfigurátoru webu Commerce podporuje odesílání binárních datových zdrojů s výjimkou obrázků a videí.</span><span class="sxs-lookup"><span data-stu-id="0de7c-106">The Commerce site builder Media Library supports the uploading of binary assets other than images or videos.</span></span> <span data-ttu-id="0de7c-107">Můžete například chtít odeslat soubory aplikace Microsoft Excel, Microsoft Word, Microsoft PowerPoint nebo PDF.</span><span class="sxs-lookup"><span data-stu-id="0de7c-107">For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.</span></span>
+<span data-ttu-id="52789-106">Knihovna médií konfigurátoru webu Commerce podporuje odesílání binárních datových zdrojů s výjimkou obrázků a videí.</span><span class="sxs-lookup"><span data-stu-id="52789-106">The Commerce site builder Media Library supports the uploading of binary assets other than images or videos.</span></span> <span data-ttu-id="52789-107">Můžete například chtít odeslat soubory aplikace Microsoft Excel, Microsoft Word, Microsoft PowerPoint nebo PDF.</span><span class="sxs-lookup"><span data-stu-id="52789-107">For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.</span></span>
 
-<span data-ttu-id="0de7c-108">Podporovány jsou následující typy dokumentů:</span><span class="sxs-lookup"><span data-stu-id="0de7c-108">The following document types are supported:</span></span>
-- <span data-ttu-id="0de7c-109">7Z</span><span class="sxs-lookup"><span data-stu-id="0de7c-109">7Z</span></span>
-- <span data-ttu-id="0de7c-110">AVI</span><span class="sxs-lookup"><span data-stu-id="0de7c-110">AVI</span></span>
-- <span data-ttu-id="0de7c-111">CS</span><span class="sxs-lookup"><span data-stu-id="0de7c-111">CS</span></span>
-- <span data-ttu-id="0de7c-112">CSS</span><span class="sxs-lookup"><span data-stu-id="0de7c-112">CSS</span></span>
-- <span data-ttu-id="0de7c-113">DOC</span><span class="sxs-lookup"><span data-stu-id="0de7c-113">DOC</span></span>
-- <span data-ttu-id="0de7c-114">DOCX</span><span class="sxs-lookup"><span data-stu-id="0de7c-114">DOCX</span></span>
-- <span data-ttu-id="0de7c-115">EPUB</span><span class="sxs-lookup"><span data-stu-id="0de7c-115">EPUB</span></span>
-- <span data-ttu-id="0de7c-116">GIF</span><span class="sxs-lookup"><span data-stu-id="0de7c-116">GIF</span></span>
-- <span data-ttu-id="0de7c-117">INDD</span><span class="sxs-lookup"><span data-stu-id="0de7c-117">INDD</span></span>
-- <span data-ttu-id="0de7c-118">JAR</span><span class="sxs-lookup"><span data-stu-id="0de7c-118">JAR</span></span>
-- <span data-ttu-id="0de7c-119">JPG</span><span class="sxs-lookup"><span data-stu-id="0de7c-119">JPG</span></span>
-- <span data-ttu-id="0de7c-120">JPEG</span><span class="sxs-lookup"><span data-stu-id="0de7c-120">JPEG</span></span>
-- <span data-ttu-id="0de7c-121">JS</span><span class="sxs-lookup"><span data-stu-id="0de7c-121">JS</span></span>
-- <span data-ttu-id="0de7c-122">MP3</span><span class="sxs-lookup"><span data-stu-id="0de7c-122">MP3</span></span>
-- <span data-ttu-id="0de7c-123">MP4</span><span class="sxs-lookup"><span data-stu-id="0de7c-123">MP4</span></span>
-- <span data-ttu-id="0de7c-124">MPEG</span><span class="sxs-lookup"><span data-stu-id="0de7c-124">MPEG</span></span>
-- <span data-ttu-id="0de7c-125">MPG</span><span class="sxs-lookup"><span data-stu-id="0de7c-125">MPG</span></span>
-- <span data-ttu-id="0de7c-126">ODP</span><span class="sxs-lookup"><span data-stu-id="0de7c-126">ODP</span></span>
-- <span data-ttu-id="0de7c-127">ODS</span><span class="sxs-lookup"><span data-stu-id="0de7c-127">ODS</span></span>
-- <span data-ttu-id="0de7c-128">ODT</span><span class="sxs-lookup"><span data-stu-id="0de7c-128">ODT</span></span>
-- <span data-ttu-id="0de7c-129">PDF</span><span class="sxs-lookup"><span data-stu-id="0de7c-129">PDF</span></span>
-- <span data-ttu-id="0de7c-130">PNG</span><span class="sxs-lookup"><span data-stu-id="0de7c-130">PNG</span></span>
-- <span data-ttu-id="0de7c-131">PPT</span><span class="sxs-lookup"><span data-stu-id="0de7c-131">PPT</span></span>
-- <span data-ttu-id="0de7c-132">PPTX</span><span class="sxs-lookup"><span data-stu-id="0de7c-132">PPTX</span></span>
-- <span data-ttu-id="0de7c-133">PS</span><span class="sxs-lookup"><span data-stu-id="0de7c-133">PS</span></span>
-- <span data-ttu-id="0de7c-134">QXP</span><span class="sxs-lookup"><span data-stu-id="0de7c-134">QXP</span></span>
-- <span data-ttu-id="0de7c-135">RAR</span><span class="sxs-lookup"><span data-stu-id="0de7c-135">RAR</span></span>
-- <span data-ttu-id="0de7c-136">RTF</span><span class="sxs-lookup"><span data-stu-id="0de7c-136">RTF</span></span>
-- <span data-ttu-id="0de7c-137">SVG</span><span class="sxs-lookup"><span data-stu-id="0de7c-137">SVG</span></span>
-- <span data-ttu-id="0de7c-138">TAR</span><span class="sxs-lookup"><span data-stu-id="0de7c-138">TAR</span></span>
-- <span data-ttu-id="0de7c-139">TGZ</span><span class="sxs-lookup"><span data-stu-id="0de7c-139">TGZ</span></span>
-- <span data-ttu-id="0de7c-140">TXT</span><span class="sxs-lookup"><span data-stu-id="0de7c-140">TXT</span></span>
-- <span data-ttu-id="0de7c-141">WMV</span><span class="sxs-lookup"><span data-stu-id="0de7c-141">WMV</span></span>
-- <span data-ttu-id="0de7c-142">XLS</span><span class="sxs-lookup"><span data-stu-id="0de7c-142">XLS</span></span>
-- <span data-ttu-id="0de7c-143">XLSX</span><span class="sxs-lookup"><span data-stu-id="0de7c-143">XLSX</span></span>
-- <span data-ttu-id="0de7c-144">XML</span><span class="sxs-lookup"><span data-stu-id="0de7c-144">XML</span></span>
-- <span data-ttu-id="0de7c-145">ZIP</span><span class="sxs-lookup"><span data-stu-id="0de7c-145">ZIP</span></span>
+<span data-ttu-id="52789-108">Podporovány jsou následující typy dokumentů:</span><span class="sxs-lookup"><span data-stu-id="52789-108">The following document types are supported:</span></span>
+- <span data-ttu-id="52789-109">7Z</span><span class="sxs-lookup"><span data-stu-id="52789-109">7Z</span></span>
+- <span data-ttu-id="52789-110">AVI</span><span class="sxs-lookup"><span data-stu-id="52789-110">AVI</span></span>
+- <span data-ttu-id="52789-111">CS</span><span class="sxs-lookup"><span data-stu-id="52789-111">CS</span></span>
+- <span data-ttu-id="52789-112">CSS</span><span class="sxs-lookup"><span data-stu-id="52789-112">CSS</span></span>
+- <span data-ttu-id="52789-113">DOC</span><span class="sxs-lookup"><span data-stu-id="52789-113">DOC</span></span>
+- <span data-ttu-id="52789-114">DOCX</span><span class="sxs-lookup"><span data-stu-id="52789-114">DOCX</span></span>
+- <span data-ttu-id="52789-115">EPUB</span><span class="sxs-lookup"><span data-stu-id="52789-115">EPUB</span></span>
+- <span data-ttu-id="52789-116">GIF</span><span class="sxs-lookup"><span data-stu-id="52789-116">GIF</span></span>
+- <span data-ttu-id="52789-117">INDD</span><span class="sxs-lookup"><span data-stu-id="52789-117">INDD</span></span>
+- <span data-ttu-id="52789-118">JAR</span><span class="sxs-lookup"><span data-stu-id="52789-118">JAR</span></span>
+- <span data-ttu-id="52789-119">JPG</span><span class="sxs-lookup"><span data-stu-id="52789-119">JPG</span></span>
+- <span data-ttu-id="52789-120">JPEG</span><span class="sxs-lookup"><span data-stu-id="52789-120">JPEG</span></span>
+- <span data-ttu-id="52789-121">JS</span><span class="sxs-lookup"><span data-stu-id="52789-121">JS</span></span>
+- <span data-ttu-id="52789-122">MP3</span><span class="sxs-lookup"><span data-stu-id="52789-122">MP3</span></span>
+- <span data-ttu-id="52789-123">MP4</span><span class="sxs-lookup"><span data-stu-id="52789-123">MP4</span></span>
+- <span data-ttu-id="52789-124">MPEG</span><span class="sxs-lookup"><span data-stu-id="52789-124">MPEG</span></span>
+- <span data-ttu-id="52789-125">MPG</span><span class="sxs-lookup"><span data-stu-id="52789-125">MPG</span></span>
+- <span data-ttu-id="52789-126">ODP</span><span class="sxs-lookup"><span data-stu-id="52789-126">ODP</span></span>
+- <span data-ttu-id="52789-127">ODS</span><span class="sxs-lookup"><span data-stu-id="52789-127">ODS</span></span>
+- <span data-ttu-id="52789-128">ODT</span><span class="sxs-lookup"><span data-stu-id="52789-128">ODT</span></span>
+- <span data-ttu-id="52789-129">PDF</span><span class="sxs-lookup"><span data-stu-id="52789-129">PDF</span></span>
+- <span data-ttu-id="52789-130">PNG</span><span class="sxs-lookup"><span data-stu-id="52789-130">PNG</span></span>
+- <span data-ttu-id="52789-131">PPT</span><span class="sxs-lookup"><span data-stu-id="52789-131">PPT</span></span>
+- <span data-ttu-id="52789-132">PPTX</span><span class="sxs-lookup"><span data-stu-id="52789-132">PPTX</span></span>
+- <span data-ttu-id="52789-133">PS</span><span class="sxs-lookup"><span data-stu-id="52789-133">PS</span></span>
+- <span data-ttu-id="52789-134">QXP</span><span class="sxs-lookup"><span data-stu-id="52789-134">QXP</span></span>
+- <span data-ttu-id="52789-135">RAR</span><span class="sxs-lookup"><span data-stu-id="52789-135">RAR</span></span>
+- <span data-ttu-id="52789-136">RTF</span><span class="sxs-lookup"><span data-stu-id="52789-136">RTF</span></span>
+- <span data-ttu-id="52789-137">SVG</span><span class="sxs-lookup"><span data-stu-id="52789-137">SVG</span></span>
+- <span data-ttu-id="52789-138">TAR</span><span class="sxs-lookup"><span data-stu-id="52789-138">TAR</span></span>
+- <span data-ttu-id="52789-139">TGZ</span><span class="sxs-lookup"><span data-stu-id="52789-139">TGZ</span></span>
+- <span data-ttu-id="52789-140">TXT</span><span class="sxs-lookup"><span data-stu-id="52789-140">TXT</span></span>
+- <span data-ttu-id="52789-141">WMV</span><span class="sxs-lookup"><span data-stu-id="52789-141">WMV</span></span>
+- <span data-ttu-id="52789-142">XLS</span><span class="sxs-lookup"><span data-stu-id="52789-142">XLS</span></span>
+- <span data-ttu-id="52789-143">XLSX</span><span class="sxs-lookup"><span data-stu-id="52789-143">XLSX</span></span>
+- <span data-ttu-id="52789-144">XML</span><span class="sxs-lookup"><span data-stu-id="52789-144">XML</span></span>
+- <span data-ttu-id="52789-145">ZIP</span><span class="sxs-lookup"><span data-stu-id="52789-145">ZIP</span></span>
 
-## <a name="upload-a-file"></a><span data-ttu-id="0de7c-146">Odeslat soubor</span><span class="sxs-lookup"><span data-stu-id="0de7c-146">Upload a file</span></span>
+## <a name="upload-a-file"></a><span data-ttu-id="52789-146">Odeslat soubor</span><span class="sxs-lookup"><span data-stu-id="52789-146">Upload a file</span></span>
 
-<span data-ttu-id="0de7c-147">Pokud chcete odeslat soubor do konfigurátoru webu v Commerce, postupujte následovně.</span><span class="sxs-lookup"><span data-stu-id="0de7c-147">To upload a file to Commerce site builder, follow these steps.</span></span>
+<span data-ttu-id="52789-147">Pokud chcete odeslat soubor do konfigurátoru webu v Commerce, postupujte následovně.</span><span class="sxs-lookup"><span data-stu-id="52789-147">To upload a file to Commerce site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="0de7c-148">V levém navigačním podokně vyberte položku **Knihovna médií**.</span><span class="sxs-lookup"><span data-stu-id="0de7c-148">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="0de7c-149">Na panelu příkazů vyberte možnost **Odeslat \> Odeslání mediálních položek**.</span><span class="sxs-lookup"><span data-stu-id="0de7c-149">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="0de7c-150">V Průzkumníkovi souborů vyberte jeden nebo více souborů a pak vyberte možnost **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="0de7c-150">In File Explorer, select one or more files and then select **Open**.</span></span>
-1. <span data-ttu-id="0de7c-151">V dialogovém okně **Odeslat mediální položku** zadejte podle potřeby název, popis a metadata klíčových slov.</span><span class="sxs-lookup"><span data-stu-id="0de7c-151">In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.</span></span>
-1. <span data-ttu-id="0de7c-152">Chcete-li publikovat soubory ihned po odeslání, zaškrtněte políčko **Publikovat mediální položky po odeslání**.</span><span class="sxs-lookup"><span data-stu-id="0de7c-152">To publish the file(s) immediately after upload, select the **Publish media items after upload** check box.</span></span>
-1. <span data-ttu-id="0de7c-153">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="0de7c-153">Select **OK**.</span></span>
+1. <span data-ttu-id="52789-148">V levém navigačním podokně vyberte položku **Knihovna médií**.</span><span class="sxs-lookup"><span data-stu-id="52789-148">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="52789-149">Na panelu příkazů vyberte možnost **Odeslat \> Odeslání mediálních položek**.</span><span class="sxs-lookup"><span data-stu-id="52789-149">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="52789-150">V Průzkumníkovi souborů vyberte jeden nebo více souborů a pak vyberte možnost **Otevřít**.</span><span class="sxs-lookup"><span data-stu-id="52789-150">In File Explorer, select one or more files and then select **Open**.</span></span>
+1. <span data-ttu-id="52789-151">V dialogovém okně **Odeslat mediální položku** zadejte podle potřeby název, popis a metadata klíčových slov.</span><span class="sxs-lookup"><span data-stu-id="52789-151">In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.</span></span>
+1. <span data-ttu-id="52789-152">Chcete-li publikovat soubory ihned po odeslání, zaškrtněte políčko **Publikovat mediální položky po odeslání**.</span><span class="sxs-lookup"><span data-stu-id="52789-152">To publish the file(s) immediately after upload, select the **Publish media items after upload** check box.</span></span>
+1. <span data-ttu-id="52789-153">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="52789-153">Select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0de7c-154">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="0de7c-154">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="52789-154">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="52789-154">Additional resources</span></span>
 
-[<span data-ttu-id="0de7c-155">Přehled správy digitálního majetku</span><span class="sxs-lookup"><span data-stu-id="0de7c-155">Digital asset management overview</span></span>](dam-overview.md)
+[<span data-ttu-id="52789-155">Přehled správy digitálního majetku</span><span class="sxs-lookup"><span data-stu-id="52789-155">Digital asset management overview</span></span>](dam-overview.md)
 
-[<span data-ttu-id="0de7c-156">Odeslání obrázků</span><span class="sxs-lookup"><span data-stu-id="0de7c-156">Upload images</span></span>](dam-upload-images.md)
+[<span data-ttu-id="52789-156">Odeslání obrázků</span><span class="sxs-lookup"><span data-stu-id="52789-156">Upload images</span></span>](dam-upload-images.md)
 
-[<span data-ttu-id="0de7c-157">Odeslání videa</span><span class="sxs-lookup"><span data-stu-id="0de7c-157">Upload video</span></span>](dam-upload-video.md)
+[<span data-ttu-id="52789-157">Odeslání videa</span><span class="sxs-lookup"><span data-stu-id="52789-157">Upload video</span></span>](dam-upload-video.md)
 
-[<span data-ttu-id="0de7c-158">Oříznutí obrázků</span><span class="sxs-lookup"><span data-stu-id="0de7c-158">Crop images</span></span>](dam-crop-images.md)
+[<span data-ttu-id="52789-158">Oříznutí obrázků</span><span class="sxs-lookup"><span data-stu-id="52789-158">Crop images</span></span>](dam-crop-images.md)
 
-[<span data-ttu-id="0de7c-159">Přizpůsobení ohniska obrázku</span><span class="sxs-lookup"><span data-stu-id="0de7c-159">Customize image focal points</span></span>](dam-custom-focal-point.md)
+[<span data-ttu-id="52789-159">Přizpůsobení ohniska obrázku</span><span class="sxs-lookup"><span data-stu-id="52789-159">Customize image focal points</span></span>](dam-custom-focal-point.md)
 
-[<span data-ttu-id="0de7c-160">Nahrání a obsloužení statických souborů</span><span class="sxs-lookup"><span data-stu-id="0de7c-160">Upload and serve static files</span></span>](upload-serve-static-files.md)
+[<span data-ttu-id="52789-160">Nahrání a obsloužení statických souborů</span><span class="sxs-lookup"><span data-stu-id="52789-160">Upload and serve static files</span></span>](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
