@@ -16,12 +16,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8bae6814c1cac06c4c1528a79903b5348338dffc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 41b3ce2488b229b4bdb76148600c045cbaee6e62
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962878"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246860"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
