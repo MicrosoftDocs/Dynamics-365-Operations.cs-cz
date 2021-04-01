@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016924"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237369"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Přehled požadavků na nabídku
 
@@ -80,21 +80,21 @@ Vyberte šablonu, která se má použít pro oznámení e-mailem odeslané dodav
 - %Důvod pro vrácení nabídky%
 - %Důvod pro dodatek%
 - %Pořizovatel dodatku%
-- %Společnost%
+- %Company%
 - %Název případu požadavku na nabídku%
 - %Datum a čas vypršení%
-- %Datum%
+- %Date%
 
-Tokeny %Důvod pro vrácení nabídky% a %Důvod pro dodatek% jsou nahrazeny textem, který pracovník zásobování může zadat po dokončení dodatku v průvodci **Dodatek**. Hodnoty pro token %Pořizovatel dodatku% a %Společnost% jsou automaticky převzaty z požadavku na nabídku. Token %Date% je nahrazen aktuálním datem.
+Tokeny %Důvod pro vrácení nabídky% a %Důvod pro dodatek% jsou nahrazeny textem, který pracovník zásobování může zadat po dokončení dodatku v průvodci **Dodatek**. Hodnoty pro token %Pořizovatel dodatku% a %Company% jsou automaticky převzaty z RFQ. Token %Date% je nahrazen aktuálním datem.
 
 Jestliže chcete zrušit žádost o cenovou nabídku poté, co byla odeslána musíte to udělat z případu požadavku na nabídku. Pro zrušení se musí použít šablona e-mailu k odeslání oznámení o zrušení kontaktní osobě dodavatele. Je nutné vybrat šablonu na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablony může šablona obsahovat následující náhradní tokeny:
 
 - %Důvod zrušení%
 - %Případ požadavku na nabídku%
 - %Požadavek na nabídku zrušil/a%
-- %Společnost%
+- %Company%
 - %Název případu požadavku na nabídku%
-- %Datum%
+- %Date%
 
 Token %Důvod zrušení % se nahradí textem, který může zásobovací pracovník zadat v průvodci **Zrušení**. Token %Date% je nahrazen aktuálním datem.
 
