@@ -16,34 +16,37 @@ ms.search.industry: Service industries
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 825e374e9d450ee187e7ddb1ce5925c3d7e15f25
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1eef6f4e0ef4b0c33572156b702c182456e3360d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016420"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237220"
 ---
-# <a name="create-project-purchase-order"></a><span data-ttu-id="816bc-103">Vytvoření nákupní objednávky projektu</span><span class="sxs-lookup"><span data-stu-id="816bc-103">Create project purchase order</span></span>
+# <a name="create-project-purchase-order"></a><span data-ttu-id="03f68-103">Vytvoření nákupní objednávky projektu</span><span class="sxs-lookup"><span data-stu-id="03f68-103">Create project purchase order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="816bc-104">Tento postup ukazuje způsob vytváření nákupní objednávky projektu.</span><span class="sxs-lookup"><span data-stu-id="816bc-104">This procedure shows you how to create a project purchase order.</span></span> <span data-ttu-id="816bc-105">Tato úloha používá sadu dat USSI.</span><span class="sxs-lookup"><span data-stu-id="816bc-105">This task uses the USSI data set.</span></span>
+<span data-ttu-id="03f68-104">Tento postup ukazuje způsob vytváření nákupní objednávky projektu.</span><span class="sxs-lookup"><span data-stu-id="03f68-104">This procedure shows you how to create a project purchase order.</span></span> <span data-ttu-id="03f68-105">Tato úloha používá sadu dat USSI.</span><span class="sxs-lookup"><span data-stu-id="03f68-105">This task uses the USSI data set.</span></span>
 
-1. <span data-ttu-id="816bc-106">Přejděte na Řízení projektu a účetnictví > Projekty > Všechny projekty.</span><span class="sxs-lookup"><span data-stu-id="816bc-106">Go to Project management and accounting > Projects > All projects.</span></span>
-2. <span data-ttu-id="816bc-107">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="816bc-107">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="816bc-108">V podokně akcí klepněte na možnost Spravovat.</span><span class="sxs-lookup"><span data-stu-id="816bc-108">On the Action Pane, click Manage.</span></span>
-4. <span data-ttu-id="816bc-109">Klikněte na Úloha položky.</span><span class="sxs-lookup"><span data-stu-id="816bc-109">Click Item task.</span></span>
-5. <span data-ttu-id="816bc-110">Klikněte na Nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="816bc-110">Click Purchase order.</span></span>
-6. <span data-ttu-id="816bc-111">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="816bc-111">In the Vendor account field, enter or select a value.</span></span>
-7. <span data-ttu-id="816bc-112">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="816bc-112">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="816bc-113">Tyto kroky nejsou povinné, ale zjednodušují nákupní objednávku nastavením výchozího pracoviště a skladu pro řádky nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="816bc-113">These steps aren't required, but they do simplify the purchase order by setting up a default site and warehouse for the purchase order lines.</span></span>  
-8. <span data-ttu-id="816bc-114">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="816bc-114">In the Warehouse field, enter or select a value.</span></span>
-9. <span data-ttu-id="816bc-115">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="816bc-115">Click OK.</span></span>
-10. <span data-ttu-id="816bc-116">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="816bc-116">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="816bc-117">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="816bc-117">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="816bc-118">To může být číslo položky nebo kategorie zásobování.</span><span class="sxs-lookup"><span data-stu-id="816bc-118">This can be the item number or a procurement category.</span></span>  
-12. <span data-ttu-id="816bc-119">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="816bc-119">Expand the Line details section.</span></span>
-13. <span data-ttu-id="816bc-120">Klikněte na kartu Projekt.</span><span class="sxs-lookup"><span data-stu-id="816bc-120">Click the Project tab.</span></span>
-    * <span data-ttu-id="816bc-121">Ověřte, že prodejní a nákladové ceny jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="816bc-121">Verify that the sales and cost prices are available.</span></span> <span data-ttu-id="816bc-122">Pokud nejsou k dispozici, ale jsou povinné, zadejte tyto informace.</span><span class="sxs-lookup"><span data-stu-id="816bc-122">If they are not available but needed, enter the information.</span></span>  
-14. <span data-ttu-id="816bc-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="816bc-123">Click Save.</span></span>
+1. <span data-ttu-id="03f68-106">Přejděte na Řízení projektu a účetnictví > Projekty > Všechny projekty.</span><span class="sxs-lookup"><span data-stu-id="03f68-106">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="03f68-107">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="03f68-107">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="03f68-108">V podokně akcí klepněte na možnost Spravovat.</span><span class="sxs-lookup"><span data-stu-id="03f68-108">On the Action Pane, click Manage.</span></span>
+4. <span data-ttu-id="03f68-109">Klikněte na Úloha položky.</span><span class="sxs-lookup"><span data-stu-id="03f68-109">Click Item task.</span></span>
+5. <span data-ttu-id="03f68-110">Klikněte na Nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="03f68-110">Click Purchase order.</span></span>
+6. <span data-ttu-id="03f68-111">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="03f68-111">In the Vendor account field, enter or select a value.</span></span>
+7. <span data-ttu-id="03f68-112">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="03f68-112">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="03f68-113">Tyto kroky nejsou povinné, ale zjednodušují nákupní objednávku nastavením výchozího pracoviště a skladu pro řádky nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="03f68-113">These steps aren't required, but they do simplify the purchase order by setting up a default site and warehouse for the purchase order lines.</span></span>  
+8. <span data-ttu-id="03f68-114">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="03f68-114">In the Warehouse field, enter or select a value.</span></span>
+9. <span data-ttu-id="03f68-115">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="03f68-115">Click OK.</span></span>
+10. <span data-ttu-id="03f68-116">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="03f68-116">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="03f68-117">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="03f68-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="03f68-118">To může být číslo položky nebo kategorie zásobování.</span><span class="sxs-lookup"><span data-stu-id="03f68-118">This can be the item number or a procurement category.</span></span>  
+12. <span data-ttu-id="03f68-119">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="03f68-119">Expand the Line details section.</span></span>
+13. <span data-ttu-id="03f68-120">Klikněte na kartu Projekt.</span><span class="sxs-lookup"><span data-stu-id="03f68-120">Click the Project tab.</span></span>
+    * <span data-ttu-id="03f68-121">Ověřte, že prodejní a nákladové ceny jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="03f68-121">Verify that the sales and cost prices are available.</span></span> <span data-ttu-id="03f68-122">Pokud nejsou k dispozici, ale jsou povinné, zadejte tyto informace.</span><span class="sxs-lookup"><span data-stu-id="03f68-122">If they are not available but needed, enter the information.</span></span>  
+14. <span data-ttu-id="03f68-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="03f68-123">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,21 +17,24 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6527c4887ccd3085d63dd64c104a94e6354f536b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28c0724a20199595b0e2c19867ccaa4876d37980
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996445"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233312"
 ---
-# <a name="transportation-management-zone-master"></a><span data-ttu-id="5ad44-103">Hlavní zóna správy přepravy</span><span class="sxs-lookup"><span data-stu-id="5ad44-103">Transportation management zone master</span></span>
+# <a name="transportation-management-zone-master"></a><span data-ttu-id="041a2-103">Hlavní zóna správy přepravy</span><span class="sxs-lookup"><span data-stu-id="041a2-103">Transportation management zone master</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5ad44-104">Správa přepravy umožňuje rozdělit geografická umístění do zón.</span><span class="sxs-lookup"><span data-stu-id="5ad44-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="5ad44-105">Rozdělení míst do zón může pomoci:</span><span class="sxs-lookup"><span data-stu-id="5ad44-105">Dividing locations into zones can help to:</span></span>
+<span data-ttu-id="041a2-104">Správa přepravy umožňuje rozdělit geografická umístění do zón.</span><span class="sxs-lookup"><span data-stu-id="041a2-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="041a2-105">Rozdělení míst do zón může pomoci:</span><span class="sxs-lookup"><span data-stu-id="041a2-105">Dividing locations into zones can help to:</span></span>
 
-- <span data-ttu-id="5ad44-106">**Zjednodušit ceny dopravy** - Ceny podle zón mohou být jednodušší než ceny podle jednotlivých míst, zvláště když jsou místa pro dopravu rozptýlena.</span><span class="sxs-lookup"><span data-stu-id="5ad44-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
-- <span data-ttu-id="5ad44-107">**Optimalizovat plánování nákladu** - Konsolidací nákladů podle zón.</span><span class="sxs-lookup"><span data-stu-id="5ad44-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
-- <span data-ttu-id="5ad44-108">**Optimalizovat plánování trasy** - Přiřazením konkrétních plánů tras konkrétním zónám.</span><span class="sxs-lookup"><span data-stu-id="5ad44-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
+- <span data-ttu-id="041a2-106">**Zjednodušit ceny dopravy** - Ceny podle zón mohou být jednodušší než ceny podle jednotlivých míst, zvláště když jsou místa pro dopravu rozptýlena.</span><span class="sxs-lookup"><span data-stu-id="041a2-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
+- <span data-ttu-id="041a2-107">**Optimalizovat plánování nákladu** - Konsolidací nákladů podle zón.</span><span class="sxs-lookup"><span data-stu-id="041a2-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
+- <span data-ttu-id="041a2-108">**Optimalizovat plánování trasy** - Přiřazením konkrétních plánů tras konkrétním zónám.</span><span class="sxs-lookup"><span data-stu-id="041a2-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
 
-<span data-ttu-id="5ad44-109">Zóny definujete na základě hodnot polí metadat (jako je země, rozsah PSČ nebo služba operátora), které kvalifikují každou zónu.</span><span class="sxs-lookup"><span data-stu-id="5ad44-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="5ad44-110">Definice zón se nevyžadují, pokud vaše ceny za přepravu nepoužívají koncept zóny.</span><span class="sxs-lookup"><span data-stu-id="5ad44-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
+<span data-ttu-id="041a2-109">Zóny definujete na základě hodnot polí metadat (jako je země, rozsah PSČ nebo služba operátora), které kvalifikují každou zónu.</span><span class="sxs-lookup"><span data-stu-id="041a2-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="041a2-110">Definice zón se nevyžadují, pokud vaše ceny za přepravu nepoužívají koncept zóny.</span><span class="sxs-lookup"><span data-stu-id="041a2-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
