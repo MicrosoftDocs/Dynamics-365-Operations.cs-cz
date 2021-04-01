@@ -17,76 +17,79 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af1c1a222981a0bcf9d7341cde5b83dd720da802
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1aacc57051f21b992d9f7feb44c99511fc2a65bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994958"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241283"
 ---
-# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="8fe0b-103">Odpisové metody a způsoby odpisu</span><span class="sxs-lookup"><span data-stu-id="8fe0b-103">Depreciation methods and conventions</span></span>
+# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="d30f9-103">Odpisové metody a způsoby odpisu</span><span class="sxs-lookup"><span data-stu-id="d30f9-103">Depreciation methods and conventions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8fe0b-104">Tento článek poskytuje přehled podporovaných odpisových zásad a metod.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
+<span data-ttu-id="d30f9-104">Tento článek poskytuje přehled podporovaných odpisových zásad a metod.</span><span class="sxs-lookup"><span data-stu-id="d30f9-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
 
-<span data-ttu-id="8fe0b-105">K dispozici máte několik metod a způsobů odpisu.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="8fe0b-106">Metody slouží k přidělení odpisové hodnoty dlouhodobého majetku jednotlivým fiskálním obdobím.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="8fe0b-107">Odpisová hodnota dlouhodobého majetku je pořizovací cena snížená o likvidační hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
+<span data-ttu-id="d30f9-105">K dispozici máte několik metod a způsobů odpisu.</span><span class="sxs-lookup"><span data-stu-id="d30f9-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="d30f9-106">Metody slouží k přidělení odpisové hodnoty dlouhodobého majetku jednotlivým fiskálním obdobím.</span><span class="sxs-lookup"><span data-stu-id="d30f9-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="d30f9-107">Odpisová hodnota dlouhodobého majetku je pořizovací cena snížená o likvidační hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d30f9-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
 
-<span data-ttu-id="8fe0b-108">Používáte-li určitý způsob odpisu a změníte poslední datum zahájení odpisu určitého majetku, které přeskočí některé odpisy, bude odpis za poslední rok pravděpodobně vyšší nebo nižší, než bylo očekáváno.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="8fe0b-109">Odpis je nastaven podle počtu období ovlivněných změnou posledního data zahájení odpisu.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
+<span data-ttu-id="d30f9-108">Používáte-li určitý způsob odpisu a změníte poslední datum zahájení odpisu určitého majetku, které přeskočí některé odpisy, bude odpis za poslední rok pravděpodobně vyšší nebo nižší, než bylo očekáváno.</span><span class="sxs-lookup"><span data-stu-id="d30f9-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="d30f9-109">Odpis je nastaven podle počtu období ovlivněných změnou posledního data zahájení odpisu.</span><span class="sxs-lookup"><span data-stu-id="d30f9-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
 
-<span data-ttu-id="8fe0b-110">Pokud například používáte půlroční způsob odpisu déle než tři roky, trvá odpis běžně přes 3 a půl roku.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="8fe0b-111">Změníte-li během tohoto období poslední datum spuštění odpisu, nebude v posledním roce odpisu zahrnut počet ovlivněných období.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="8fe0b-112">Posunete-li toto datum o tři měsíce, bude pro odpis v posledním roce důležitých devět měsíců, přičemž za normálních okolností by to bylo šest.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
+<span data-ttu-id="d30f9-110">Pokud například používáte půlroční způsob odpisu déle než tři roky, trvá odpis běžně přes 3 a půl roku.</span><span class="sxs-lookup"><span data-stu-id="d30f9-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="d30f9-111">Změníte-li během tohoto období poslední datum spuštění odpisu, nebude v posledním roce odpisu zahrnut počet ovlivněných období.</span><span class="sxs-lookup"><span data-stu-id="d30f9-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="d30f9-112">Posunete-li toto datum o tři měsíce, bude pro odpis v posledním roce důležitých devět měsíců, přičemž za normálních okolností by to bylo šest.</span><span class="sxs-lookup"><span data-stu-id="d30f9-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
 
-<span data-ttu-id="8fe0b-113">K dispozici máte následující způsoby odpisu.</span><span class="sxs-lookup"><span data-stu-id="8fe0b-113">You can select from the following depreciation conventions.</span></span>
-
-
--   <span data-ttu-id="8fe0b-114">Pololetí</span><span class="sxs-lookup"><span data-stu-id="8fe0b-114">Half year</span></span>
--   <span data-ttu-id="8fe0b-115">Celý měsíc</span><span class="sxs-lookup"><span data-stu-id="8fe0b-115">Full month</span></span>
--   <span data-ttu-id="8fe0b-116">Polovina čtvrtletí</span><span class="sxs-lookup"><span data-stu-id="8fe0b-116">Mid quarter</span></span>
--   <span data-ttu-id="8fe0b-117">Polovina měsíce (1. den v měsíci)</span><span class="sxs-lookup"><span data-stu-id="8fe0b-117">Mid month (1st of month)</span></span>
--   <span data-ttu-id="8fe0b-118">Polovina měsíce (15. den v měsíci)</span><span class="sxs-lookup"><span data-stu-id="8fe0b-118">Mid month (15th of month)</span></span>
--   <span data-ttu-id="8fe0b-119">Pololetí (počátek roku)</span><span class="sxs-lookup"><span data-stu-id="8fe0b-119">Half year (start of year)</span></span>
--   <span data-ttu-id="8fe0b-120">Pololetí (příští rok)</span><span class="sxs-lookup"><span data-stu-id="8fe0b-120">Half year (next year)</span></span>
-
-<span data-ttu-id="8fe0b-121">Můžete vybírat z následujících metod odpisování:</span><span class="sxs-lookup"><span data-stu-id="8fe0b-121">You can select from the following depreciation methods.</span></span>
--   <span data-ttu-id="8fe0b-122">Lineární</span><span class="sxs-lookup"><span data-stu-id="8fe0b-122">Straight line service life</span></span>
--   <span data-ttu-id="8fe0b-123">Zrychleně</span><span class="sxs-lookup"><span data-stu-id="8fe0b-123">Reducing balance</span></span>
--   <span data-ttu-id="8fe0b-124">Ručně</span><span class="sxs-lookup"><span data-stu-id="8fe0b-124">Manual</span></span>
--   <span data-ttu-id="8fe0b-125">Koeficient</span><span class="sxs-lookup"><span data-stu-id="8fe0b-125">Factor</span></span>
--   <span data-ttu-id="8fe0b-126">Spotřeba</span><span class="sxs-lookup"><span data-stu-id="8fe0b-126">Consumption</span></span>
--   <span data-ttu-id="8fe0b-127">Lineární s vyrovnáním na konci životnosti</span><span class="sxs-lookup"><span data-stu-id="8fe0b-127">Straight line life remaining</span></span>
--   <span data-ttu-id="8fe0b-128">Degresivní 200 %</span><span class="sxs-lookup"><span data-stu-id="8fe0b-128">200% reducing balance</span></span>
--   <span data-ttu-id="8fe0b-129">Degresivní 175 %</span><span class="sxs-lookup"><span data-stu-id="8fe0b-129">175% reducing balance</span></span>
--   <span data-ttu-id="8fe0b-130">Degresivní 150 %</span><span class="sxs-lookup"><span data-stu-id="8fe0b-130">150% reducing balance</span></span>
--   <span data-ttu-id="8fe0b-131">Degresivní 125 %</span><span class="sxs-lookup"><span data-stu-id="8fe0b-131">125% reducing balance</span></span>
+<span data-ttu-id="d30f9-113">K dispozici máte následující způsoby odpisu.</span><span class="sxs-lookup"><span data-stu-id="d30f9-113">You can select from the following depreciation conventions.</span></span>
 
 
+-   <span data-ttu-id="d30f9-114">Pololetí</span><span class="sxs-lookup"><span data-stu-id="d30f9-114">Half year</span></span>
+-   <span data-ttu-id="d30f9-115">Celý měsíc</span><span class="sxs-lookup"><span data-stu-id="d30f9-115">Full month</span></span>
+-   <span data-ttu-id="d30f9-116">Polovina čtvrtletí</span><span class="sxs-lookup"><span data-stu-id="d30f9-116">Mid quarter</span></span>
+-   <span data-ttu-id="d30f9-117">Polovina měsíce (1. den v měsíci)</span><span class="sxs-lookup"><span data-stu-id="d30f9-117">Mid month (1st of month)</span></span>
+-   <span data-ttu-id="d30f9-118">Polovina měsíce (15. den v měsíci)</span><span class="sxs-lookup"><span data-stu-id="d30f9-118">Mid month (15th of month)</span></span>
+-   <span data-ttu-id="d30f9-119">Pololetí (počátek roku)</span><span class="sxs-lookup"><span data-stu-id="d30f9-119">Half year (start of year)</span></span>
+-   <span data-ttu-id="d30f9-120">Pololetí (příští rok)</span><span class="sxs-lookup"><span data-stu-id="d30f9-120">Half year (next year)</span></span>
+
+<span data-ttu-id="d30f9-121">Můžete vybírat z následujících metod odpisování:</span><span class="sxs-lookup"><span data-stu-id="d30f9-121">You can select from the following depreciation methods.</span></span>
+-   <span data-ttu-id="d30f9-122">Lineární</span><span class="sxs-lookup"><span data-stu-id="d30f9-122">Straight line service life</span></span>
+-   <span data-ttu-id="d30f9-123">Zrychleně</span><span class="sxs-lookup"><span data-stu-id="d30f9-123">Reducing balance</span></span>
+-   <span data-ttu-id="d30f9-124">Ručně</span><span class="sxs-lookup"><span data-stu-id="d30f9-124">Manual</span></span>
+-   <span data-ttu-id="d30f9-125">Koeficient</span><span class="sxs-lookup"><span data-stu-id="d30f9-125">Factor</span></span>
+-   <span data-ttu-id="d30f9-126">Spotřeba</span><span class="sxs-lookup"><span data-stu-id="d30f9-126">Consumption</span></span>
+-   <span data-ttu-id="d30f9-127">Lineární s vyrovnáním na konci životnosti</span><span class="sxs-lookup"><span data-stu-id="d30f9-127">Straight line life remaining</span></span>
+-   <span data-ttu-id="d30f9-128">Degresivní 200 %</span><span class="sxs-lookup"><span data-stu-id="d30f9-128">200% reducing balance</span></span>
+-   <span data-ttu-id="d30f9-129">Degresivní 175 %</span><span class="sxs-lookup"><span data-stu-id="d30f9-129">175% reducing balance</span></span>
+-   <span data-ttu-id="d30f9-130">Degresivní 150 %</span><span class="sxs-lookup"><span data-stu-id="d30f9-130">150% reducing balance</span></span>
+-   <span data-ttu-id="d30f9-131">Degresivní 125 %</span><span class="sxs-lookup"><span data-stu-id="d30f9-131">125% reducing balance</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="8fe0b-132">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="8fe0b-132">Additional resources</span></span>
+
+
+<a name="additional-resources"></a><span data-ttu-id="d30f9-132">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="d30f9-132">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="8fe0b-133">Odpisy dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="8fe0b-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
+[<span data-ttu-id="d30f9-133">Odpisy dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="d30f9-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
 
-[<span data-ttu-id="8fe0b-134">Lineární odpisování</span><span class="sxs-lookup"><span data-stu-id="8fe0b-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
+[<span data-ttu-id="d30f9-134">Lineární odpisování</span><span class="sxs-lookup"><span data-stu-id="d30f9-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
 
-[<span data-ttu-id="8fe0b-135">Degresivní odpis</span><span class="sxs-lookup"><span data-stu-id="8fe0b-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
+[<span data-ttu-id="d30f9-135">Degresivní odpis</span><span class="sxs-lookup"><span data-stu-id="d30f9-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
 
-[<span data-ttu-id="8fe0b-136">Ruční odpis</span><span class="sxs-lookup"><span data-stu-id="8fe0b-136">Manual depreciation</span></span>](manual-depreciation.md)
+[<span data-ttu-id="d30f9-136">Ruční odpis</span><span class="sxs-lookup"><span data-stu-id="d30f9-136">Manual depreciation</span></span>](manual-depreciation.md)
 
-[<span data-ttu-id="8fe0b-137">Odpis koeficientem</span><span class="sxs-lookup"><span data-stu-id="8fe0b-137">Factor depreciation</span></span>](factor-depreciation.md)
+[<span data-ttu-id="d30f9-137">Odpis koeficientem</span><span class="sxs-lookup"><span data-stu-id="d30f9-137">Factor depreciation</span></span>](factor-depreciation.md)
 
-[<span data-ttu-id="8fe0b-138">Odpis spotřeby</span><span class="sxs-lookup"><span data-stu-id="8fe0b-138">Consumption depreciation</span></span>](consumption-depreciation.md)
+[<span data-ttu-id="d30f9-138">Odpis spotřeby</span><span class="sxs-lookup"><span data-stu-id="d30f9-138">Consumption depreciation</span></span>](consumption-depreciation.md)
 
-[<span data-ttu-id="8fe0b-139">Lineární odpis s vyrovnáním na konci životnosti</span><span class="sxs-lookup"><span data-stu-id="8fe0b-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
+[<span data-ttu-id="d30f9-139">Lineární odpis s vyrovnáním na konci životnosti</span><span class="sxs-lookup"><span data-stu-id="d30f9-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
 
-[<span data-ttu-id="8fe0b-140">Degresivní odpis 125 procent</span><span class="sxs-lookup"><span data-stu-id="8fe0b-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="d30f9-140">Degresivní odpis 125 procent</span><span class="sxs-lookup"><span data-stu-id="d30f9-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="8fe0b-141">Degresivní odpis 150 procent</span><span class="sxs-lookup"><span data-stu-id="8fe0b-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="d30f9-141">Degresivní odpis 150 procent</span><span class="sxs-lookup"><span data-stu-id="d30f9-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="8fe0b-142">Degresivní odpis 175 procent</span><span class="sxs-lookup"><span data-stu-id="8fe0b-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="d30f9-142">Degresivní odpis 175 procent</span><span class="sxs-lookup"><span data-stu-id="d30f9-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="8fe0b-143">Degresivní odpis 200 procent</span><span class="sxs-lookup"><span data-stu-id="8fe0b-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="d30f9-143">Degresivní odpis 200 procent</span><span class="sxs-lookup"><span data-stu-id="d30f9-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
