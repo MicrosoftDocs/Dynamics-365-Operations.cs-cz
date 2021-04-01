@@ -16,12 +16,12 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c2b0ba2c4db1a4cb80560fc7fd42f6a9e42f4f21
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 55561586cbe768cfd1c23a0f2e4a7b44015a34c9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975354"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236296"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 

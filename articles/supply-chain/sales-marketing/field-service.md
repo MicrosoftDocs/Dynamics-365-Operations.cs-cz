@@ -1,5 +1,5 @@
 ---
-title: Přehled integrace s Microsoft Dynamics 365 Field Service
+title: Přehled integrace se službou Microsoft Dynamics 365 Field Service
 description: Toto téma poskytuje přehled o integraci s Microsoft Dynamics 365 Field Service.
 author: ChristianRytt
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1b1f88c77ed891839adb57c2ba5e2f72f35fda6d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9b0fafd46143979a734151b4011e537991347862
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998471"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237887"
 ---
-# <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Přehled integrace s Microsoft Dynamics 365 Field Service
+# <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Přehled integrace se službou Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]
 
