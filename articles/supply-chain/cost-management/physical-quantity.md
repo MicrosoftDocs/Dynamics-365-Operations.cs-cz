@@ -18,33 +18,33 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 914c7e8c757664ec791b46924600b74c9c979e8f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f14248ffa8f9f5a460b090ca5754442cd50bf45a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967426"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263535"
 ---
-# <a name="inventory-object-values"></a><span data-ttu-id="a5dd7-103">Hodnoty objektu zásob</span><span class="sxs-lookup"><span data-stu-id="a5dd7-103">Inventory object values</span></span>
+# <a name="inventory-object-values"></a><span data-ttu-id="4dcc1-103">Hodnoty objektu zásob</span><span class="sxs-lookup"><span data-stu-id="4dcc1-103">Inventory object values</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a5dd7-104">Tento článek obsahuje informace o výpočtu hodnot objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
+<span data-ttu-id="4dcc1-104">Tento článek obsahuje informace o výpočtu hodnot objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
 
-<span data-ttu-id="a5dd7-105">Nová funkce **„fyzické množství“** umožňuje zobrazit hodnoty určitého objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
+<span data-ttu-id="4dcc1-105">Nová funkce **„fyzické množství“** umožňuje zobrazit hodnoty určitého objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
 
-<span data-ttu-id="a5dd7-106">Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="a5dd7-107">Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="a5dd7-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
+<span data-ttu-id="4dcc1-106">Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="4dcc1-107">Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="4dcc1-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
 
-<span data-ttu-id="a5dd7-108">Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="a5dd7-109">Zde je způsob výpočtu hodnoty objektu zásob:</span><span class="sxs-lookup"><span data-stu-id="a5dd7-109">Here is how the value of an inventory object is calculated:</span></span> 
+<span data-ttu-id="4dcc1-108">Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="4dcc1-109">Zde je způsob výpočtu hodnoty objektu zásob:</span><span class="sxs-lookup"><span data-stu-id="4dcc1-109">Here is how the value of an inventory object is calculated:</span></span> 
 
-<span data-ttu-id="a5dd7-110">Objekt zásob.Hodnota = Objektu nákladů.Průměrné náklady na jednotku x Objekt zásob.Množství</span><span class="sxs-lookup"><span data-stu-id="a5dd7-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
+<span data-ttu-id="4dcc1-110">Objekt zásob.Hodnota = Objektu nákladů.Průměrné náklady na jednotku x Objekt zásob.Množství</span><span class="sxs-lookup"><span data-stu-id="4dcc1-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
 
-<span data-ttu-id="a5dd7-111">Následující příklad ukazuje způsob výpočtu hodnot objektu zásob a objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="a5dd7-112">U položky A jsou registrovány dvě události příjemky produktu:</span><span class="sxs-lookup"><span data-stu-id="a5dd7-112">Two product receipt events are registered on item A:</span></span>
+<span data-ttu-id="4dcc1-111">Následující příklad ukazuje způsob výpočtu hodnot objektu zásob a objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="4dcc1-112">U položky A jsou registrovány dvě události příjemky produktu:</span><span class="sxs-lookup"><span data-stu-id="4dcc1-112">Two product receipt events are registered on item A:</span></span>
 
--   <span data-ttu-id="a5dd7-113">Příjemka produktu 1: Množství = 100 kusů., Množství = 1 000,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky</span><span class="sxs-lookup"><span data-stu-id="a5dd7-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="a5dd7-114">= B1</span><span class="sxs-lookup"><span data-stu-id="a5dd7-114">= B1</span></span>
--   <span data-ttu-id="a5dd7-115">Příjemka produktu 2: Množství = 50 kusů., Množství = 800,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky</span><span class="sxs-lookup"><span data-stu-id="a5dd7-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="a5dd7-116">= B2</span><span class="sxs-lookup"><span data-stu-id="a5dd7-116">= B2</span></span>
+-   <span data-ttu-id="4dcc1-113">Příjemka produktu 1: Množství = 100 kusů., Množství = 1 000,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky</span><span class="sxs-lookup"><span data-stu-id="4dcc1-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="4dcc1-114">= B1</span><span class="sxs-lookup"><span data-stu-id="4dcc1-114">= B1</span></span>
+-   <span data-ttu-id="4dcc1-115">Příjemka produktu 2: Množství = 50 kusů., Množství = 800,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky</span><span class="sxs-lookup"><span data-stu-id="4dcc1-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="4dcc1-116">= B2</span><span class="sxs-lookup"><span data-stu-id="4dcc1-116">= B2</span></span>
 
-<span data-ttu-id="a5dd7-117">Následující tabulka zobrazuje výsledek výpočtu nákladového objektu.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="a5dd7-118">Výsledky lze zobrazit na stránce **Nákladový objekt**.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-118">You can view the result on the **Cost object** page.</span></span>
+<span data-ttu-id="4dcc1-117">Následující tabulka zobrazuje výsledek výpočtu nákladového objektu.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="4dcc1-118">Výsledky lze zobrazit na stránce **Nákladový objekt**.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-118">You can view the result on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -58,29 +58,29 @@ ms.locfileid: "4967426"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a5dd7-119">Typ objektu</span><span class="sxs-lookup"><span data-stu-id="a5dd7-119">Object type</span></span></th>
-<th><span data-ttu-id="a5dd7-120">Číslo zboží</span><span class="sxs-lookup"><span data-stu-id="a5dd7-120">Item number</span></span></th>
-<th><span data-ttu-id="a5dd7-121">Lokalita</span><span class="sxs-lookup"><span data-stu-id="a5dd7-121">Site</span></span></th>
-<th><span data-ttu-id="a5dd7-122">Množství</span><span class="sxs-lookup"><span data-stu-id="a5dd7-122">Quantity</span></span></th>
-<th><span data-ttu-id="a5dd7-123">Skladová jednotka</span><span class="sxs-lookup"><span data-stu-id="a5dd7-123">Inventory unit</span></span></th>
-<th><span data-ttu-id="a5dd7-124">Hodnota</span><span class="sxs-lookup"><span data-stu-id="a5dd7-124">Value</span></span></th>
-<th><span data-ttu-id="a5dd7-125">Průměrné náklady na jednotku</span><span class="sxs-lookup"><span data-stu-id="a5dd7-125">Average unit cost</span></span></th>
+<th><span data-ttu-id="4dcc1-119">Typ objektu</span><span class="sxs-lookup"><span data-stu-id="4dcc1-119">Object type</span></span></th>
+<th><span data-ttu-id="4dcc1-120">Číslo zboží</span><span class="sxs-lookup"><span data-stu-id="4dcc1-120">Item number</span></span></th>
+<th><span data-ttu-id="4dcc1-121">Lokalita</span><span class="sxs-lookup"><span data-stu-id="4dcc1-121">Site</span></span></th>
+<th><span data-ttu-id="4dcc1-122">Množství</span><span class="sxs-lookup"><span data-stu-id="4dcc1-122">Quantity</span></span></th>
+<th><span data-ttu-id="4dcc1-123">Skladová jednotka</span><span class="sxs-lookup"><span data-stu-id="4dcc1-123">Inventory unit</span></span></th>
+<th><span data-ttu-id="4dcc1-124">Hodnota</span><span class="sxs-lookup"><span data-stu-id="4dcc1-124">Value</span></span></th>
+<th><span data-ttu-id="4dcc1-125">Průměrné náklady na jednotku</span><span class="sxs-lookup"><span data-stu-id="4dcc1-125">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="a5dd7-126">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="a5dd7-126">Cost object</span></span></td>
-<td><span data-ttu-id="a5dd7-127">O</span><span class="sxs-lookup"><span data-stu-id="a5dd7-127">A</span></span></td>
-<td><span data-ttu-id="a5dd7-128">1</span><span class="sxs-lookup"><span data-stu-id="a5dd7-128">1</span></span></td>
-<td><span data-ttu-id="a5dd7-129">150</span><span class="sxs-lookup"><span data-stu-id="a5dd7-129">150</span></span></td>
-<td><span data-ttu-id="a5dd7-130">Ks</span><span class="sxs-lookup"><span data-stu-id="a5dd7-130">Pcs.</span></span></td>
-<td><p><span data-ttu-id="a5dd7-131">1 800,00 Kč</span><span class="sxs-lookup"><span data-stu-id="a5dd7-131">$1800.00</span></span></p></td>
-<td><p><span data-ttu-id="a5dd7-132">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="a5dd7-132">$12.00</span></span></p></td>
+<td><span data-ttu-id="4dcc1-126">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="4dcc1-126">Cost object</span></span></td>
+<td><span data-ttu-id="4dcc1-127">O</span><span class="sxs-lookup"><span data-stu-id="4dcc1-127">A</span></span></td>
+<td><span data-ttu-id="4dcc1-128">1</span><span class="sxs-lookup"><span data-stu-id="4dcc1-128">1</span></span></td>
+<td><span data-ttu-id="4dcc1-129">150</span><span class="sxs-lookup"><span data-stu-id="4dcc1-129">150</span></span></td>
+<td><span data-ttu-id="4dcc1-130">Ks</span><span class="sxs-lookup"><span data-stu-id="4dcc1-130">Pcs.</span></span></td>
+<td><p><span data-ttu-id="4dcc1-131">1 800,00 Kč</span><span class="sxs-lookup"><span data-stu-id="4dcc1-131">$1800.00</span></span></p></td>
+<td><p><span data-ttu-id="4dcc1-132">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="4dcc1-132">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="a5dd7-133">Následující tabulka zobrazuje výsledek výpočtu objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="a5dd7-134">Výsledky lze zobrazit kliknutím na možnost **Fyzické množství** na stránce **Nákladový objekt**.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
+<span data-ttu-id="4dcc1-133">Následující tabulka zobrazuje výsledek výpočtu objektu zásob.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="4dcc1-134">Výsledky lze zobrazit kliknutím na možnost **Fyzické množství** na stránce **Nákladový objekt**.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -96,53 +96,56 @@ ms.locfileid: "4967426"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a5dd7-135">Typ objektu</span><span class="sxs-lookup"><span data-stu-id="a5dd7-135">Object type</span></span></th>
-<th><span data-ttu-id="a5dd7-136">Číslo zboží</span><span class="sxs-lookup"><span data-stu-id="a5dd7-136">Item number</span></span></th>
-<th><span data-ttu-id="a5dd7-137">Lokalita</span><span class="sxs-lookup"><span data-stu-id="a5dd7-137">Site</span></span></th>
-<th><span data-ttu-id="a5dd7-138">Sklad</span><span class="sxs-lookup"><span data-stu-id="a5dd7-138">Warehouse</span></span></th>
-<th><span data-ttu-id="a5dd7-139">Č. dávky</span><span class="sxs-lookup"><span data-stu-id="a5dd7-139">Batch No.</span></span></th>
-<th><span data-ttu-id="a5dd7-140">Množství</span><span class="sxs-lookup"><span data-stu-id="a5dd7-140">Quantity</span></span></th>
-<th><span data-ttu-id="a5dd7-141">Skladová jednotka</span><span class="sxs-lookup"><span data-stu-id="a5dd7-141">Inventory unit</span></span></th>
-<th><span data-ttu-id="a5dd7-142">Hodnota</span><span class="sxs-lookup"><span data-stu-id="a5dd7-142">Value</span></span></th>
-<th><span data-ttu-id="a5dd7-143">Průměrné náklady na jednotku</span><span class="sxs-lookup"><span data-stu-id="a5dd7-143">Average unit cost</span></span></th>
+<th><span data-ttu-id="4dcc1-135">Typ objektu</span><span class="sxs-lookup"><span data-stu-id="4dcc1-135">Object type</span></span></th>
+<th><span data-ttu-id="4dcc1-136">Číslo zboží</span><span class="sxs-lookup"><span data-stu-id="4dcc1-136">Item number</span></span></th>
+<th><span data-ttu-id="4dcc1-137">Lokalita</span><span class="sxs-lookup"><span data-stu-id="4dcc1-137">Site</span></span></th>
+<th><span data-ttu-id="4dcc1-138">Sklad</span><span class="sxs-lookup"><span data-stu-id="4dcc1-138">Warehouse</span></span></th>
+<th><span data-ttu-id="4dcc1-139">Č. dávky</span><span class="sxs-lookup"><span data-stu-id="4dcc1-139">Batch No.</span></span></th>
+<th><span data-ttu-id="4dcc1-140">Množství</span><span class="sxs-lookup"><span data-stu-id="4dcc1-140">Quantity</span></span></th>
+<th><span data-ttu-id="4dcc1-141">Skladová jednotka</span><span class="sxs-lookup"><span data-stu-id="4dcc1-141">Inventory unit</span></span></th>
+<th><span data-ttu-id="4dcc1-142">Hodnota</span><span class="sxs-lookup"><span data-stu-id="4dcc1-142">Value</span></span></th>
+<th><span data-ttu-id="4dcc1-143">Průměrné náklady na jednotku</span><span class="sxs-lookup"><span data-stu-id="4dcc1-143">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="a5dd7-144">Objekt zásob</span><span class="sxs-lookup"><span data-stu-id="a5dd7-144">Inventory object</span></span></td>
-<td><span data-ttu-id="a5dd7-145">O</span><span class="sxs-lookup"><span data-stu-id="a5dd7-145">A</span></span></td>
-<td><span data-ttu-id="a5dd7-146">1</span><span class="sxs-lookup"><span data-stu-id="a5dd7-146">1</span></span></td>
-<td><span data-ttu-id="a5dd7-147">11</span><span class="sxs-lookup"><span data-stu-id="a5dd7-147">11</span></span></td>
-<td><span data-ttu-id="a5dd7-148">B1</span><span class="sxs-lookup"><span data-stu-id="a5dd7-148">B1</span></span></td>
-<td><span data-ttu-id="a5dd7-149">100</span><span class="sxs-lookup"><span data-stu-id="a5dd7-149">100</span></span></td>
-<td><span data-ttu-id="a5dd7-150">Ks</span><span class="sxs-lookup"><span data-stu-id="a5dd7-150">Pcs.</span></span></td>
-<td><p><span data-ttu-id="a5dd7-151">1 200,00 Kč.</span><span class="sxs-lookup"><span data-stu-id="a5dd7-151">$1200.00</span></span></p></td>
-<td><p><span data-ttu-id="a5dd7-152">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="a5dd7-152">$12.00</span></span></p></td>
+<td><span data-ttu-id="4dcc1-144">Objekt zásob</span><span class="sxs-lookup"><span data-stu-id="4dcc1-144">Inventory object</span></span></td>
+<td><span data-ttu-id="4dcc1-145">O</span><span class="sxs-lookup"><span data-stu-id="4dcc1-145">A</span></span></td>
+<td><span data-ttu-id="4dcc1-146">1</span><span class="sxs-lookup"><span data-stu-id="4dcc1-146">1</span></span></td>
+<td><span data-ttu-id="4dcc1-147">11</span><span class="sxs-lookup"><span data-stu-id="4dcc1-147">11</span></span></td>
+<td><span data-ttu-id="4dcc1-148">B1</span><span class="sxs-lookup"><span data-stu-id="4dcc1-148">B1</span></span></td>
+<td><span data-ttu-id="4dcc1-149">100</span><span class="sxs-lookup"><span data-stu-id="4dcc1-149">100</span></span></td>
+<td><span data-ttu-id="4dcc1-150">Ks</span><span class="sxs-lookup"><span data-stu-id="4dcc1-150">Pcs.</span></span></td>
+<td><p><span data-ttu-id="4dcc1-151">1 200,00 Kč.</span><span class="sxs-lookup"><span data-stu-id="4dcc1-151">$1200.00</span></span></p></td>
+<td><p><span data-ttu-id="4dcc1-152">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="4dcc1-152">$12.00</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="a5dd7-153">Objekt zásob</span><span class="sxs-lookup"><span data-stu-id="a5dd7-153">Inventory object</span></span></td>
-<td><span data-ttu-id="a5dd7-154">A</span><span class="sxs-lookup"><span data-stu-id="a5dd7-154">A</span></span></td>
-<td><span data-ttu-id="a5dd7-155">1</span><span class="sxs-lookup"><span data-stu-id="a5dd7-155">1</span></span></td>
-<td><span data-ttu-id="a5dd7-156">11</span><span class="sxs-lookup"><span data-stu-id="a5dd7-156">11</span></span></td>
-<td><span data-ttu-id="a5dd7-157">B2</span><span class="sxs-lookup"><span data-stu-id="a5dd7-157">B2</span></span></td>
-<td><span data-ttu-id="a5dd7-158">50</span><span class="sxs-lookup"><span data-stu-id="a5dd7-158">50</span></span></td>
-<td><span data-ttu-id="a5dd7-159">Ks</span><span class="sxs-lookup"><span data-stu-id="a5dd7-159">Pcs.</span></span></td>
-<td><p><span data-ttu-id="a5dd7-160">600,00 Kč</span><span class="sxs-lookup"><span data-stu-id="a5dd7-160">$600.00</span></span></p></td>
-<td><p><span data-ttu-id="a5dd7-161">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="a5dd7-161">$12.00</span></span></p></td>
+<td><span data-ttu-id="4dcc1-153">Objekt zásob</span><span class="sxs-lookup"><span data-stu-id="4dcc1-153">Inventory object</span></span></td>
+<td><span data-ttu-id="4dcc1-154">A</span><span class="sxs-lookup"><span data-stu-id="4dcc1-154">A</span></span></td>
+<td><span data-ttu-id="4dcc1-155">1</span><span class="sxs-lookup"><span data-stu-id="4dcc1-155">1</span></span></td>
+<td><span data-ttu-id="4dcc1-156">11</span><span class="sxs-lookup"><span data-stu-id="4dcc1-156">11</span></span></td>
+<td><span data-ttu-id="4dcc1-157">B2</span><span class="sxs-lookup"><span data-stu-id="4dcc1-157">B2</span></span></td>
+<td><span data-ttu-id="4dcc1-158">50</span><span class="sxs-lookup"><span data-stu-id="4dcc1-158">50</span></span></td>
+<td><span data-ttu-id="4dcc1-159">Ks</span><span class="sxs-lookup"><span data-stu-id="4dcc1-159">Pcs.</span></span></td>
+<td><p><span data-ttu-id="4dcc1-160">600,00 Kč</span><span class="sxs-lookup"><span data-stu-id="4dcc1-160">$600.00</span></span></p></td>
+<td><p><span data-ttu-id="4dcc1-161">12,00 Kč</span><span class="sxs-lookup"><span data-stu-id="4dcc1-161">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="a5dd7-162">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="a5dd7-162">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="4dcc1-162">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="4dcc1-162">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="a5dd7-163">Nákladové objekty</span><span class="sxs-lookup"><span data-stu-id="a5dd7-163">Cost objects</span></span>](cost-object.md)
+[<span data-ttu-id="4dcc1-163">Nákladové objekty</span><span class="sxs-lookup"><span data-stu-id="4dcc1-163">Cost objects</span></span>](cost-object.md)
 
-[<span data-ttu-id="a5dd7-164">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="a5dd7-164">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="4dcc1-164">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="4dcc1-164">Cost entries</span></span>](cost-entries.md)
 
-[<span data-ttu-id="a5dd7-165">Co je nového a co se změnilo</span><span class="sxs-lookup"><span data-stu-id="a5dd7-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
+[<span data-ttu-id="4dcc1-165">Co je nového a co se změnilo</span><span class="sxs-lookup"><span data-stu-id="4dcc1-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

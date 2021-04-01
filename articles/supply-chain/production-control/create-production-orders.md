@@ -18,29 +18,32 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28ef1da29b38354d7ccaad56fb036f21d8c9ff15
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 68758f4ddf39b4b8f7f0758f9e59e17c3411723a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011165"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246302"
 ---
-# <a name="production-order-lifecycle-overview"></a><span data-ttu-id="a6edf-105">Přehled životního cyklu výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="a6edf-105">Production order lifecycle overview</span></span>
+# <a name="production-order-lifecycle-overview"></a><span data-ttu-id="33896-105">Přehled životního cyklu výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="33896-105">Production order lifecycle overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a6edf-106">Při vytvoření výrobní zakázky je iniciován požadavek pro zahájení výroby položky.</span><span class="sxs-lookup"><span data-stu-id="a6edf-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="a6edf-107">Výrobní zakázka obsahuje informace o tom, jaký produkt bude vyroben, kolik kusů produktu bude vyrobeno a plánované datum dokončení.</span><span class="sxs-lookup"><span data-stu-id="a6edf-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="a6edf-108">Také zahrnuje informace o materiálech, které se spotřebují a který proces se má při výrobě položky použít.</span><span class="sxs-lookup"><span data-stu-id="a6edf-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
+<span data-ttu-id="33896-106">Při vytvoření výrobní zakázky je iniciován požadavek pro zahájení výroby položky.</span><span class="sxs-lookup"><span data-stu-id="33896-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="33896-107">Výrobní zakázka obsahuje informace o tom, jaký produkt bude vyroben, kolik kusů produktu bude vyrobeno a plánované datum dokončení.</span><span class="sxs-lookup"><span data-stu-id="33896-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="33896-108">Také zahrnuje informace o materiálech, které se spotřebují a který proces se má při výrobě položky použít.</span><span class="sxs-lookup"><span data-stu-id="33896-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
 
-<span data-ttu-id="a6edf-109">Výrobní zakázka prochází výrobního cyklu několik fázemi.</span><span class="sxs-lookup"><span data-stu-id="a6edf-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="a6edf-110">Zakázce je po vytvoření přiřazen stav **Vytvořeno**.</span><span class="sxs-lookup"><span data-stu-id="a6edf-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="a6edf-111">Jakmile je objednávka dokončena, je jí přiřazen stav **Ukončeno**.</span><span class="sxs-lookup"><span data-stu-id="a6edf-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="a6edf-112">Díky možnosti nastavení parametrů v každé fázi může uživatel nakonfigurovat jednotlivé kroky.</span><span class="sxs-lookup"><span data-stu-id="a6edf-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="a6edf-113">Nastavení může být nastaveno pro jednoho uživatele nebo pro všechny uživatele.</span><span class="sxs-lookup"><span data-stu-id="a6edf-113">The setting can be set up for a single user or for all users.</span></span>
+<span data-ttu-id="33896-109">Výrobní zakázka prochází výrobního cyklu několik fázemi.</span><span class="sxs-lookup"><span data-stu-id="33896-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="33896-110">Zakázce je po vytvoření přiřazen stav **Vytvořeno**.</span><span class="sxs-lookup"><span data-stu-id="33896-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="33896-111">Jakmile je objednávka dokončena, je jí přiřazen stav **Ukončeno**.</span><span class="sxs-lookup"><span data-stu-id="33896-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="33896-112">Díky možnosti nastavení parametrů v každé fázi může uživatel nakonfigurovat jednotlivé kroky.</span><span class="sxs-lookup"><span data-stu-id="33896-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="33896-113">Nastavení může být nastaveno pro jednoho uživatele nebo pro všechny uživatele.</span><span class="sxs-lookup"><span data-stu-id="33896-113">The setting can be set up for a single user or for all users.</span></span>
 
-<span data-ttu-id="a6edf-114">Hlavními entitami výrobní zakázky jsou výrobní kusovník a výrobní postup.</span><span class="sxs-lookup"><span data-stu-id="a6edf-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="a6edf-115">Tyto položky jsou zkopírovány do výrobní zakázky na základě vybrané položky a množství, které chcete vyrobit.</span><span class="sxs-lookup"><span data-stu-id="a6edf-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="a6edf-116">Před zahájením výrobní zakázky je možné výrobní kusovník a postup upravit.</span><span class="sxs-lookup"><span data-stu-id="a6edf-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
+<span data-ttu-id="33896-114">Hlavními entitami výrobní zakázky jsou výrobní kusovník a výrobní postup.</span><span class="sxs-lookup"><span data-stu-id="33896-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="33896-115">Tyto položky jsou zkopírovány do výrobní zakázky na základě vybrané položky a množství, které chcete vyrobit.</span><span class="sxs-lookup"><span data-stu-id="33896-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="33896-116">Před zahájením výrobní zakázky je možné výrobní kusovník a postup upravit.</span><span class="sxs-lookup"><span data-stu-id="33896-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
 
-<span data-ttu-id="a6edf-117">Výrobní zakázku lze vytvořit v následujících situacích:</span><span class="sxs-lookup"><span data-stu-id="a6edf-117">A production order can be created in the following scenarios:</span></span>
+<span data-ttu-id="33896-117">Výrobní zakázku lze vytvořit v následujících situacích:</span><span class="sxs-lookup"><span data-stu-id="33896-117">A production order can be created in the following scenarios:</span></span>
 
--   <span data-ttu-id="a6edf-118">Vytvoření při provedení hlavního plánování založeného na potřebném materiálu.</span><span class="sxs-lookup"><span data-stu-id="a6edf-118">Created by master planning execution based on material demand.</span></span>
--   <span data-ttu-id="a6edf-119">Vytvoření přímo z řádku prodejní objednávky nebo při vytvoření a odhadnutí výrobní zakázky vyšší úrovně (doložená dodávka).</span><span class="sxs-lookup"><span data-stu-id="a6edf-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
--   <span data-ttu-id="a6edf-120">Ruční vytvoření.</span><span class="sxs-lookup"><span data-stu-id="a6edf-120">Created manually.</span></span>
-
-
+-   <span data-ttu-id="33896-118">Vytvoření při provedení hlavního plánování založeného na potřebném materiálu.</span><span class="sxs-lookup"><span data-stu-id="33896-118">Created by master planning execution based on material demand.</span></span>
+-   <span data-ttu-id="33896-119">Vytvoření přímo z řádku prodejní objednávky nebo při vytvoření a odhadnutí výrobní zakázky vyšší úrovně (doložená dodávka).</span><span class="sxs-lookup"><span data-stu-id="33896-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
+-   <span data-ttu-id="33896-120">Ruční vytvoření.</span><span class="sxs-lookup"><span data-stu-id="33896-120">Created manually.</span></span>
 
 
+
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

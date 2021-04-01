@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b3a0ffe81f4b56bdd388dc1ce2c00a99e0278cdf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021234"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262831"
 ---
-# <a name="audit-policy-rules"></a><span data-ttu-id="04e2e-106">Pravidla zásad auditu</span><span class="sxs-lookup"><span data-stu-id="04e2e-106">Audit policy rules</span></span>
+# <a name="audit-policy-rules"></a><span data-ttu-id="da4cc-106">Pravidla zásad auditu</span><span class="sxs-lookup"><span data-stu-id="da4cc-106">Audit policy rules</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="04e2e-107">Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili.</span><span class="sxs-lookup"><span data-stu-id="04e2e-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="04e2e-108">Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="04e2e-109">Každé pravidlo zásad je instancí typu pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="04e2e-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="04e2e-110">Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně.</span><span class="sxs-lookup"><span data-stu-id="04e2e-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
+<span data-ttu-id="da4cc-107">Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili.</span><span class="sxs-lookup"><span data-stu-id="da4cc-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="da4cc-108">Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="da4cc-109">Každé pravidlo zásad je instancí typu pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="da4cc-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="da4cc-110">Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně.</span><span class="sxs-lookup"><span data-stu-id="da4cc-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
 
-<a name="queries-and-query-types"></a><span data-ttu-id="04e2e-111">Dotazy a typy dotazů</span><span class="sxs-lookup"><span data-stu-id="04e2e-111">Queries and query types</span></span>
+<a name="queries-and-query-types"></a><span data-ttu-id="da4cc-111">Dotazy a typy dotazů</span><span class="sxs-lookup"><span data-stu-id="da4cc-111">Queries and query types</span></span>
 -----------------------
 
-<span data-ttu-id="04e2e-112">Když vytvoříte pravidlo zásad auditu, nejprve vyberte typ pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="04e2e-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="04e2e-113">Typ pravidla zásad určuje dotaz pro strom aplikačních objektů (AOT), který bude použit jako výchozí bod při vytvoření pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="04e2e-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="04e2e-114">Určuje také typ dotazu pro pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="04e2e-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="04e2e-115">Dotaz určuje zdrojový dokument, pro který je pravidlo zásad vyhodnoceno.</span><span class="sxs-lookup"><span data-stu-id="04e2e-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="04e2e-116">Určuje také pole ve zdrojovém dokumentu, který určuje právnickou osobu a data použité při výběru dokumentů pro audit.</span><span class="sxs-lookup"><span data-stu-id="04e2e-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="04e2e-117">Typ dotazu řídí výchozí pole na stránce s dotazy a na stránce pravidel zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="04e2e-118">V následující tabulce jsou uvedeny typy dotazů dostupné pro pravidla zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-118">The following table shows the query types that are available for audit policy rules.</span></span>
+<span data-ttu-id="da4cc-112">Když vytvoříte pravidlo zásad auditu, nejprve vyberte typ pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="da4cc-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="da4cc-113">Typ pravidla zásad určuje dotaz pro strom aplikačních objektů (AOT), který bude použit jako výchozí bod při vytvoření pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="da4cc-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="da4cc-114">Určuje také typ dotazu pro pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="da4cc-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="da4cc-115">Dotaz určuje zdrojový dokument, pro který je pravidlo zásad vyhodnoceno.</span><span class="sxs-lookup"><span data-stu-id="da4cc-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="da4cc-116">Určuje také pole ve zdrojovém dokumentu, který určuje právnickou osobu a data použité při výběru dokumentů pro audit.</span><span class="sxs-lookup"><span data-stu-id="da4cc-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="da4cc-117">Typ dotazu řídí výchozí pole na stránce s dotazy a na stránce pravidel zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="da4cc-118">V následující tabulce jsou uvedeny typy dotazů dostupné pro pravidla zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-118">The following table shows the query types that are available for audit policy rules.</span></span>
 
 <table>
 <colgroup>
@@ -43,61 +43,64 @@ ms.locfileid: "5021234"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="04e2e-119">Typ dotazu</span><span class="sxs-lookup"><span data-stu-id="04e2e-119">Query type</span></span></th>
-<th><span data-ttu-id="04e2e-120">Účel</span><span class="sxs-lookup"><span data-stu-id="04e2e-120">Purpose</span></span></th>
-<th><span data-ttu-id="04e2e-121">Více informací</span><span class="sxs-lookup"><span data-stu-id="04e2e-121">More information</span></span></th>
+<th><span data-ttu-id="da4cc-119">Typ dotazu</span><span class="sxs-lookup"><span data-stu-id="da4cc-119">Query type</span></span></th>
+<th><span data-ttu-id="da4cc-120">Účel</span><span class="sxs-lookup"><span data-stu-id="da4cc-120">Purpose</span></span></th>
+<th><span data-ttu-id="da4cc-121">Více informací</span><span class="sxs-lookup"><span data-stu-id="da4cc-121">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="04e2e-122">Podmíněné</span><span class="sxs-lookup"><span data-stu-id="04e2e-122">Conditional</span></span></td>
-<td><span data-ttu-id="04e2e-123">Vyhodnoťte atributy zdrojového dokumentu proti zadaným hodnotám.</span><span class="sxs-lookup"><span data-stu-id="04e2e-123">Evaluate source document attributes against specified values.</span></span></td>
+<td><span data-ttu-id="da4cc-122">Podmíněné</span><span class="sxs-lookup"><span data-stu-id="da4cc-122">Conditional</span></span></td>
+<td><span data-ttu-id="da4cc-123">Vyhodnoťte atributy zdrojového dokumentu proti zadaným hodnotám.</span><span class="sxs-lookup"><span data-stu-id="da4cc-123">Evaluate source document attributes against specified values.</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="04e2e-124">Agregovat</span><span class="sxs-lookup"><span data-stu-id="04e2e-124">Aggregate</span></span></td>
-<td><span data-ttu-id="04e2e-125">Vyhodnoťte více zdrojových dokumentů nebo řádků zdrojového dokumentu proti pravidlu zásad sečtením číselné hodnoty.</span><span class="sxs-lookup"><span data-stu-id="04e2e-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
+<td><span data-ttu-id="da4cc-124">Agregovat</span><span class="sxs-lookup"><span data-stu-id="da4cc-124">Aggregate</span></span></td>
+<td><span data-ttu-id="da4cc-125">Vyhodnoťte více zdrojových dokumentů nebo řádků zdrojového dokumentu proti pravidlu zásad sečtením číselné hodnoty.</span><span class="sxs-lookup"><span data-stu-id="da4cc-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="04e2e-126">Vzorkování</span><span class="sxs-lookup"><span data-stu-id="04e2e-126">Sampling</span></span></td>
-<td><span data-ttu-id="04e2e-127">Vyberte náhodně zadané procento zdrojových dokumentů pro vyhodnocení narušení zásad.</span><span class="sxs-lookup"><span data-stu-id="04e2e-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
-<td><span data-ttu-id="04e2e-128">Pokud vyberete tuto možnost, použijte stránku Pravidla zásad auditu a zadejte procento dokumentů, které chcete náhodně vybrat pro audit.</span><span class="sxs-lookup"><span data-stu-id="04e2e-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
+<td><span data-ttu-id="da4cc-126">Vzorkování</span><span class="sxs-lookup"><span data-stu-id="da4cc-126">Sampling</span></span></td>
+<td><span data-ttu-id="da4cc-127">Vyberte náhodně zadané procento zdrojových dokumentů pro vyhodnocení narušení zásad.</span><span class="sxs-lookup"><span data-stu-id="da4cc-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
+<td><span data-ttu-id="da4cc-128">Pokud vyberete tuto možnost, použijte stránku Pravidla zásad auditu a zadejte procento dokumentů, které chcete náhodně vybrat pro audit.</span><span class="sxs-lookup"><span data-stu-id="da4cc-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="04e2e-129">Duplicitní</span><span class="sxs-lookup"><span data-stu-id="04e2e-129">Duplicate</span></span></td>
-<td><span data-ttu-id="04e2e-130">Vyhodnoťte zdrojové dokumenty a určete, zda obsahují duplicitní záznamy v určených polích.</span><span class="sxs-lookup"><span data-stu-id="04e2e-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
-<td><span data-ttu-id="04e2e-131">Když vyberete tuto možnost, použijte stránku Pravidla zásad auditu a zadejte počet dní, které chcete přidat na začátek rozsahu dat pro výběr dokumentu při vyhodnocení duplicitních záznamů dokumentů.</span><span class="sxs-lookup"><span data-stu-id="04e2e-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
+<td><span data-ttu-id="da4cc-129">Duplicitní</span><span class="sxs-lookup"><span data-stu-id="da4cc-129">Duplicate</span></span></td>
+<td><span data-ttu-id="da4cc-130">Vyhodnoťte zdrojové dokumenty a určete, zda obsahují duplicitní záznamy v určených polích.</span><span class="sxs-lookup"><span data-stu-id="da4cc-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
+<td><span data-ttu-id="da4cc-131">Když vyberete tuto možnost, použijte stránku Pravidla zásad auditu a zadejte počet dní, které chcete přidat na začátek rozsahu dat pro výběr dokumentu při vyhodnocení duplicitních záznamů dokumentů.</span><span class="sxs-lookup"><span data-stu-id="da4cc-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="04e2e-132">Vyhledávání seznamu</span><span class="sxs-lookup"><span data-stu-id="04e2e-132">List search</span></span></td>
-<td><span data-ttu-id="04e2e-133">Vyhodnocení zdrojových dokumentů pro dané entity.</span><span class="sxs-lookup"><span data-stu-id="04e2e-133">Evaluate source documents for specific entities.</span></span></td>
-<td><span data-ttu-id="04e2e-134">Kořenový dokument dotazu definuje dokument, u kterého bude proveden audit.</span><span class="sxs-lookup"><span data-stu-id="04e2e-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="04e2e-135">Dotaz musí být dotaz seznamu, který obsahuje odkaz na tabulku dirpartytable.</span><span class="sxs-lookup"><span data-stu-id="04e2e-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="04e2e-136">Tuto možnost lze použít pouze u dotazů AOT:</span><span class="sxs-lookup"><span data-stu-id="04e2e-136">This option can be used only with the following AOT queries:</span></span>
+<td><span data-ttu-id="da4cc-132">Vyhledávání seznamu</span><span class="sxs-lookup"><span data-stu-id="da4cc-132">List search</span></span></td>
+<td><span data-ttu-id="da4cc-133">Vyhodnocení zdrojových dokumentů pro dané entity.</span><span class="sxs-lookup"><span data-stu-id="da4cc-133">Evaluate source documents for specific entities.</span></span></td>
+<td><span data-ttu-id="da4cc-134">Kořenový dokument dotazu definuje dokument, u kterého bude proveden audit.</span><span class="sxs-lookup"><span data-stu-id="da4cc-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="da4cc-135">Dotaz musí být dotaz seznamu, který obsahuje odkaz na tabulku dirpartytable.</span><span class="sxs-lookup"><span data-stu-id="da4cc-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="da4cc-136">Tuto možnost lze použít pouze u dotazů AOT:</span><span class="sxs-lookup"><span data-stu-id="da4cc-136">This option can be used only with the following AOT queries:</span></span>
 <ul>
-<li><span data-ttu-id="04e2e-137"><span class="ui">AuditPolicyExpenseList</span> (zaměstnanci sledovaní v sestavě výdajů)</span><span class="sxs-lookup"><span data-stu-id="04e2e-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
-<li><span data-ttu-id="04e2e-138"><span class="ui">AuditPolicyPurchList</span> (dodavatelé sledovaní v nákupní objednávce)</span><span class="sxs-lookup"><span data-stu-id="04e2e-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
-<li><span data-ttu-id="04e2e-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Dodavatelé sledovaní ve fakturách dodavatele)</span><span class="sxs-lookup"><span data-stu-id="04e2e-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
+<li><span data-ttu-id="da4cc-137"><span class="ui">AuditPolicyExpenseList</span> (zaměstnanci sledovaní v sestavě výdajů)</span><span class="sxs-lookup"><span data-stu-id="da4cc-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
+<li><span data-ttu-id="da4cc-138"><span class="ui">AuditPolicyPurchList</span> (dodavatelé sledovaní v nákupní objednávce)</span><span class="sxs-lookup"><span data-stu-id="da4cc-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
+<li><span data-ttu-id="da4cc-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Dodavatelé sledovaní ve fakturách dodavatele)</span><span class="sxs-lookup"><span data-stu-id="da4cc-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
 </ul>
-<span data-ttu-id="04e2e-140">Pokud vyberete tuto možnost, zadejte sledované entity na stránce Pravidlo zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
+<span data-ttu-id="da4cc-140">Pokud vyberete tuto možnost, zadejte sledované entity na stránce Pravidlo zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="04e2e-141">Vyhledávání klíčových slov</span><span class="sxs-lookup"><span data-stu-id="04e2e-141">Keyword search</span></span></td>
-<td><span data-ttu-id="04e2e-142">Vyhodnocení zdrojových dokumentů a určení toho, zda obsahují určitá slova.</span><span class="sxs-lookup"><span data-stu-id="04e2e-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
-<td><span data-ttu-id="04e2e-143">Pokud vyberete tuto možnost, zadejte vyhledávaná slova na stránce Pravidlo zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="04e2e-144">Stránka Pravidlo zásad auditu obsahuje také volby, které vám umožňují určit tabulky a pole k vyhodnocení zadaných slov.</span><span class="sxs-lookup"><span data-stu-id="04e2e-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
+<td><span data-ttu-id="da4cc-141">Vyhledávání klíčových slov</span><span class="sxs-lookup"><span data-stu-id="da4cc-141">Keyword search</span></span></td>
+<td><span data-ttu-id="da4cc-142">Vyhodnocení zdrojových dokumentů a určení toho, zda obsahují určitá slova.</span><span class="sxs-lookup"><span data-stu-id="da4cc-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
+<td><span data-ttu-id="da4cc-143">Pokud vyberete tuto možnost, zadejte vyhledávaná slova na stránce Pravidlo zásad auditu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="da4cc-144">Stránka Pravidlo zásad auditu obsahuje také volby, které vám umožňují určit tabulky a pole k vyhodnocení zadaných slov.</span><span class="sxs-lookup"><span data-stu-id="da4cc-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="common-parameters"></a><span data-ttu-id="04e2e-145">Společné parametry</span><span class="sxs-lookup"><span data-stu-id="04e2e-145">Common parameters</span></span>
-<span data-ttu-id="04e2e-146">Všechna pravidla zásad pro určitou zásadu auditu sdílí stejné parametry dávky a stejný rozsah data pro výběr dokumentu.</span><span class="sxs-lookup"><span data-stu-id="04e2e-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="04e2e-147">Tyto parametry jsou zadány pro zásady na stránce Další možnosti.</span><span class="sxs-lookup"><span data-stu-id="04e2e-147">These parameters are specified for the policy in the Additional options page.</span></span>
+## <a name="common-parameters"></a><span data-ttu-id="da4cc-145">Společné parametry</span><span class="sxs-lookup"><span data-stu-id="da4cc-145">Common parameters</span></span>
+<span data-ttu-id="da4cc-146">Všechna pravidla zásad pro určitou zásadu auditu sdílí stejné parametry dávky a stejný rozsah data pro výběr dokumentu.</span><span class="sxs-lookup"><span data-stu-id="da4cc-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="da4cc-147">Tyto parametry jsou zadány pro zásady na stránce Další možnosti.</span><span class="sxs-lookup"><span data-stu-id="da4cc-147">These parameters are specified for the policy in the Additional options page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="04e2e-148">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="04e2e-148">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="da4cc-148">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="da4cc-148">Additional resources</span></span>
 --------
 
-<span data-ttu-id="04e2e-149">[Porušení a případy zásad auditu](audit-policy-violations-cases.md)
-[Definování zásad auditu pro zdrojové dokumenty](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="04e2e-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
+<span data-ttu-id="da4cc-149">[Porušení a případy zásad auditu](audit-policy-violations-cases.md)
+[Definování zásad auditu pro zdrojové dokumenty](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="da4cc-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
 [Define audit policies for source documents](tasks/define-audit-policies-source-documents.md)</span></span>
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
