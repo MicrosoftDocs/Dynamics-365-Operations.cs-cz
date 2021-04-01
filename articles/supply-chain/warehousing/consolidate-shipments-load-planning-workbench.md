@@ -15,248 +15,251 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: c0af6764742532cbe181c8a20e7bf783b0e6d7cf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2fd13c2ceb8843b79b9dbc87acf77f219f0244f5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983084"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242246"
 ---
-# <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a><span data-ttu-id="95fad-103">Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení</span><span class="sxs-lookup"><span data-stu-id="95fad-103">Consolidate shipments by using Release to warehouse from the load planning workbench</span></span>
+# <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a><span data-ttu-id="d56d6-103">Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení</span><span class="sxs-lookup"><span data-stu-id="d56d6-103">Consolidate shipments by using Release to warehouse from the load planning workbench</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="95fad-104">Toto téma představuje scénář, ve kterém je více objednávek uvolněno do skladu ve stejném nákladu a později automaticky konsolidováno do dodávek.</span><span class="sxs-lookup"><span data-stu-id="95fad-104">This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.</span></span>
+<span data-ttu-id="d56d6-104">Toto téma představuje scénář, ve kterém je více objednávek uvolněno do skladu ve stejném nákladu a později automaticky konsolidováno do dodávek.</span><span class="sxs-lookup"><span data-stu-id="d56d6-104">This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.</span></span>
 
-## <a name="make-demo-data-available"></a><span data-ttu-id="95fad-105">Zpřístupnění ukázkových dat</span><span class="sxs-lookup"><span data-stu-id="95fad-105">Make demo data available</span></span>
+## <a name="make-demo-data-available"></a><span data-ttu-id="d56d6-105">Zpřístupnění ukázkových dat</span><span class="sxs-lookup"><span data-stu-id="d56d6-105">Make demo data available</span></span>
 
-<span data-ttu-id="95fad-106">Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="95fad-106">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="95fad-107">Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.</span><span class="sxs-lookup"><span data-stu-id="95fad-107">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
+<span data-ttu-id="d56d6-106">Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="d56d6-106">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="d56d6-107">Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.</span><span class="sxs-lookup"><span data-stu-id="d56d6-107">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
 
-## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="95fad-108">Nastavení zásad konsolidace dodávek a filtry produktů</span><span class="sxs-lookup"><span data-stu-id="95fad-108">Set up shipment consolidation policies and product filters</span></span>
+## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="d56d6-108">Nastavení zásad konsolidace dodávek a filtry produktů</span><span class="sxs-lookup"><span data-stu-id="d56d6-108">Set up shipment consolidation policies and product filters</span></span>
 
-<span data-ttu-id="95fad-109">Scénář, který je zde popsán, předpokládá, že jste již tuto funkci zapnuli a provedli cvičení v [konfiguraci zásad konsolidace dodávek](configure-shipment-consolidation-policies.md) a vytvořili zásady a další záznamy, které jsou zde popsány.</span><span class="sxs-lookup"><span data-stu-id="95fad-109">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="95fad-110">Než budete pokračovat v tomto scénáři, nezapomeňte tato cvičení provést.</span><span class="sxs-lookup"><span data-stu-id="95fad-110">Be sure to do those exercises before you continue with this scenario.</span></span>
+<span data-ttu-id="d56d6-109">Scénář, který je zde popsán, předpokládá, že jste již tuto funkci zapnuli a provedli cvičení v [konfiguraci zásad konsolidace dodávek](configure-shipment-consolidation-policies.md) a vytvořili zásady a další záznamy, které jsou zde popsány.</span><span class="sxs-lookup"><span data-stu-id="d56d6-109">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="d56d6-110">Než budete pokračovat v tomto scénáři, nezapomeňte tato cvičení provést.</span><span class="sxs-lookup"><span data-stu-id="d56d6-110">Be sure to do those exercises before you continue with this scenario.</span></span>
 
-## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="95fad-111">Vytvoření prodejních objednávek pro tento scénář</span><span class="sxs-lookup"><span data-stu-id="95fad-111">Create the sales orders for this scenario</span></span>
+## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="d56d6-111">Vytvoření prodejních objednávek pro tento scénář</span><span class="sxs-lookup"><span data-stu-id="d56d6-111">Create the sales orders for this scenario</span></span>
 
-<span data-ttu-id="95fad-112">Začněte vytvořením kolekce prodejních objednávek, se kterou můžete pracovat.</span><span class="sxs-lookup"><span data-stu-id="95fad-112">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="95fad-113">Musíte pracovat se skladem, který je povolen pro rozšířené procesy skladu (WMS).</span><span class="sxs-lookup"><span data-stu-id="95fad-113">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="95fad-114">Pokud není výslovně uveden jiný sklad, musí být stejný sklad použit pro každou z následujících sad objednávek.</span><span class="sxs-lookup"><span data-stu-id="95fad-114">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
+<span data-ttu-id="d56d6-112">Začněte vytvořením kolekce prodejních objednávek, se kterou můžete pracovat.</span><span class="sxs-lookup"><span data-stu-id="d56d6-112">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="d56d6-113">Musíte pracovat se skladem, který je povolen pro rozšířené procesy skladu (WMS).</span><span class="sxs-lookup"><span data-stu-id="d56d6-113">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="d56d6-114">Pokud není výslovně uveden jiný sklad, musí být stejný sklad použit pro každou z následujících sad objednávek.</span><span class="sxs-lookup"><span data-stu-id="d56d6-114">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
 
-<span data-ttu-id="95fad-115">Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a vytvořte kolekci prodejních objednávek, jejichž nastavení jsou popsána v následujících pododdílech.</span><span class="sxs-lookup"><span data-stu-id="95fad-115">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
+<span data-ttu-id="d56d6-115">Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky** a vytvořte kolekci prodejních objednávek, jejichž nastavení jsou popsána v následujících pododdílech.</span><span class="sxs-lookup"><span data-stu-id="d56d6-115">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
 
-### <a name="create-order-set-1"></a><span data-ttu-id="95fad-116">Vytvoření sady objednávek 1</span><span class="sxs-lookup"><span data-stu-id="95fad-116">Create order set 1</span></span>
+### <a name="create-order-set-1"></a><span data-ttu-id="d56d6-116">Vytvoření sady objednávek 1</span><span class="sxs-lookup"><span data-stu-id="d56d6-116">Create order set 1</span></span>
 
-#### <a name="sales-order-1-1"></a><span data-ttu-id="95fad-117">Prodejní objednávka 1-1</span><span class="sxs-lookup"><span data-stu-id="95fad-117">Sales order 1-1</span></span>
+#### <a name="sales-order-1-1"></a><span data-ttu-id="d56d6-117">Prodejní objednávka 1-1</span><span class="sxs-lookup"><span data-stu-id="d56d6-117">Sales order 1-1</span></span>
 
-1. <span data-ttu-id="95fad-118">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-118">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-118">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-118">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-119">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="95fad-119">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="95fad-120">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="95fad-120">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="d56d6-119">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d56d6-119">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="d56d6-120">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d56d6-120">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="95fad-121">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-121">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-121">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-121">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-122">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-122">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-123">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-123">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-122">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-122">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-123">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-123">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-124">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-124">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-124">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-124">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-order-1-2"></a><span data-ttu-id="95fad-125">Prodejní objednávka 1-2</span><span class="sxs-lookup"><span data-stu-id="95fad-125">Sales order 1-2</span></span>
+#### <a name="sales-order-1-2"></a><span data-ttu-id="d56d6-125">Prodejní objednávka 1-2</span><span class="sxs-lookup"><span data-stu-id="d56d6-125">Sales order 1-2</span></span>
 
-1. <span data-ttu-id="95fad-126">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-126">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-126">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-126">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-127">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="95fad-127">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="95fad-128">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="95fad-128">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="d56d6-127">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d56d6-127">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="d56d6-128">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d56d6-128">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="95fad-129">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-129">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-129">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-129">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-130">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-130">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-131">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-131">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-130">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-130">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-131">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-131">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-132">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-132">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-132">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-132">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-order-1-3"></a><span data-ttu-id="95fad-133">Prodejní objednávka 1-3</span><span class="sxs-lookup"><span data-stu-id="95fad-133">Sales order 1-3</span></span>
+#### <a name="sales-order-1-3"></a><span data-ttu-id="d56d6-133">Prodejní objednávka 1-3</span><span class="sxs-lookup"><span data-stu-id="d56d6-133">Sales order 1-3</span></span>
 
-1. <span data-ttu-id="95fad-134">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-134">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-134">Vytvořte prodejní objednávku, která má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-134">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-135">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="95fad-135">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="95fad-136">**Způsob dodání:** *10*</span><span class="sxs-lookup"><span data-stu-id="95fad-136">**Mode of delivery:** *10*</span></span>
+    - <span data-ttu-id="d56d6-135">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d56d6-135">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="d56d6-136">**Způsob dodání:** *10*</span><span class="sxs-lookup"><span data-stu-id="d56d6-136">**Mode of delivery:** *10*</span></span>
 
-1. <span data-ttu-id="95fad-137">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-137">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-137">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-137">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-138">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-138">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-139">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-139">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-138">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-138">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-139">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-139">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-140">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-140">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
-1. <span data-ttu-id="95fad-141">Přidejte druhý řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-141">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-140">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-140">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-141">Přidejte druhý řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-141">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-142">**Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-143">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-143">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="95fad-144">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="95fad-144">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="d56d6-142">**Číslo položky:** *A0002* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-143">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-143">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-144">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d56d6-144">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="95fad-145">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci druhého řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-145">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+1. <span data-ttu-id="d56d6-145">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci druhého řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-145">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
 
-### <a name="create-order-set-2"></a><span data-ttu-id="95fad-146">Vytvoření sady objednávek 2</span><span class="sxs-lookup"><span data-stu-id="95fad-146">Create order set 2</span></span>
+### <a name="create-order-set-2"></a><span data-ttu-id="d56d6-146">Vytvoření sady objednávek 2</span><span class="sxs-lookup"><span data-stu-id="d56d6-146">Create order set 2</span></span>
 
-#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="95fad-147">Prodejní objednávky 2-1 a 2-2</span><span class="sxs-lookup"><span data-stu-id="95fad-147">Sales orders 2-1 and 2-2</span></span>
+#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="d56d6-147">Prodejní objednávky 2-1 a 2-2</span><span class="sxs-lookup"><span data-stu-id="d56d6-147">Sales orders 2-1 and 2-2</span></span>
 
-1. <span data-ttu-id="95fad-148">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-148">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-148">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-148">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-149">**Účet zákazníka:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="95fad-149">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="d56d6-149">**Účet zákazníka:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="d56d6-149">**Customer account:** *US-002*</span></span>
 
-1. <span data-ttu-id="95fad-150">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-150">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-150">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-150">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-151">**Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)</span><span class="sxs-lookup"><span data-stu-id="95fad-151">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
-    - <span data-ttu-id="95fad-152">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-152">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-151">**Číslo položky:** *M9200* (položka, kde je filtr **Kód 4** nastaven na *Hořlavý*)</span><span class="sxs-lookup"><span data-stu-id="d56d6-151">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
+    - <span data-ttu-id="d56d6-152">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-152">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-153">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-153">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
-1. <span data-ttu-id="95fad-154">Přidejte druhý řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-154">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-153">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-153">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-154">Přidejte druhý řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-154">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-155">**Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)</span><span class="sxs-lookup"><span data-stu-id="95fad-155">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
-    - <span data-ttu-id="95fad-156">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-156">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="95fad-157">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="95fad-157">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="d56d6-155">**Číslo položky:** *M9201* (položka, kde je filtr **Kód 4** nastaven na *Explozivní*)</span><span class="sxs-lookup"><span data-stu-id="d56d6-155">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
+    - <span data-ttu-id="d56d6-156">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-156">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-157">**Způsob doručení:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d56d6-157">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="95fad-158">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci druhého řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-158">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+1. <span data-ttu-id="d56d6-158">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci druhého řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-158">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
 
-### <a name="create-order-set-3"></a><span data-ttu-id="95fad-159">Vytvoření sady objednávek 3</span><span class="sxs-lookup"><span data-stu-id="95fad-159">Create order set 3</span></span>
+### <a name="create-order-set-3"></a><span data-ttu-id="d56d6-159">Vytvoření sady objednávek 3</span><span class="sxs-lookup"><span data-stu-id="d56d6-159">Create order set 3</span></span>
 
-#### <a name="sales-orders-3-1-and-3-2"></a><span data-ttu-id="95fad-160">Prodejní objednávky 3-1 a 3-2</span><span class="sxs-lookup"><span data-stu-id="95fad-160">Sales orders 3-1 and 3-2</span></span>
+#### <a name="sales-orders-3-1-and-3-2"></a><span data-ttu-id="d56d6-160">Prodejní objednávky 3-1 a 3-2</span><span class="sxs-lookup"><span data-stu-id="d56d6-160">Sales orders 3-1 and 3-2</span></span>
 
-1. <span data-ttu-id="95fad-161">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-161">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-161">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-161">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-162">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="95fad-162">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="95fad-163">**Žádost zákazníka:** *1*</span><span class="sxs-lookup"><span data-stu-id="95fad-163">**Customer requisition:** *1*</span></span>
+    - <span data-ttu-id="d56d6-162">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d56d6-162">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="d56d6-163">**Žádost zákazníka:** *1*</span><span class="sxs-lookup"><span data-stu-id="d56d6-163">**Customer requisition:** *1*</span></span>
 
-1. <span data-ttu-id="95fad-164">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-164">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-164">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-164">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-165">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-165">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-166">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-166">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-165">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-165">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-166">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-166">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-167">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-167">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-167">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-167">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-3-3-and-3-4"></a><span data-ttu-id="95fad-168">Prodejní objednávky 3-3 a 3-4</span><span class="sxs-lookup"><span data-stu-id="95fad-168">Sales orders 3-3 and 3-4</span></span>
+#### <a name="sales-orders-3-3-and-3-4"></a><span data-ttu-id="d56d6-168">Prodejní objednávky 3-3 a 3-4</span><span class="sxs-lookup"><span data-stu-id="d56d6-168">Sales orders 3-3 and 3-4</span></span>
 
-1. <span data-ttu-id="95fad-169">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-169">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-169">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-169">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-170">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="95fad-170">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="95fad-171">**Žádost zákazníka:** *2*</span><span class="sxs-lookup"><span data-stu-id="95fad-171">**Customer requisition:** *2*</span></span>
+    - <span data-ttu-id="d56d6-170">**Účet zákazníka:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d56d6-170">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="d56d6-171">**Žádost zákazníka:** *2*</span><span class="sxs-lookup"><span data-stu-id="d56d6-171">**Customer requisition:** *2*</span></span>
 
-1. <span data-ttu-id="95fad-172">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-172">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-172">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-172">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-173">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-173">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-174">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-174">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-173">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-173">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-174">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-174">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-175">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-175">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-175">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-175">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-### <a name="create-order-set-4"></a><span data-ttu-id="95fad-176">Vytvoření sady objednávek 4</span><span class="sxs-lookup"><span data-stu-id="95fad-176">Create order set 4</span></span>
+### <a name="create-order-set-4"></a><span data-ttu-id="d56d6-176">Vytvoření sady objednávek 4</span><span class="sxs-lookup"><span data-stu-id="d56d6-176">Create order set 4</span></span>
 
-#### <a name="sales-orders-4-1-and-4-2"></a><span data-ttu-id="95fad-177">Prodejní objednávky 4-1 a 4-2</span><span class="sxs-lookup"><span data-stu-id="95fad-177">Sales orders 4-1 and 4-2</span></span>
+#### <a name="sales-orders-4-1-and-4-2"></a><span data-ttu-id="d56d6-177">Prodejní objednávky 4-1 a 4-2</span><span class="sxs-lookup"><span data-stu-id="d56d6-177">Sales orders 4-1 and 4-2</span></span>
 
-1. <span data-ttu-id="95fad-178">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-178">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-178">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-178">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-179">**Účet zákazníka:** *US-003*</span><span class="sxs-lookup"><span data-stu-id="95fad-179">**Customer account:** *US-003*</span></span>
+    - <span data-ttu-id="d56d6-179">**Účet zákazníka:** *US-003*</span><span class="sxs-lookup"><span data-stu-id="d56d6-179">**Customer account:** *US-003*</span></span>
 
-1. <span data-ttu-id="95fad-180">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-180">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-180">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-180">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-181">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-181">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-182">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-182">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-181">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-181">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-182">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-182">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-183">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-183">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-183">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-183">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-3-and-4-4"></a><span data-ttu-id="95fad-184">Prodejní objednávky 4-3 a 4-4</span><span class="sxs-lookup"><span data-stu-id="95fad-184">Sales orders 4-3 and 4-4</span></span>
+#### <a name="sales-orders-4-3-and-4-4"></a><span data-ttu-id="d56d6-184">Prodejní objednávky 4-3 a 4-4</span><span class="sxs-lookup"><span data-stu-id="d56d6-184">Sales orders 4-3 and 4-4</span></span>
 
-1. <span data-ttu-id="95fad-185">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-185">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-185">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-185">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-186">**Účet zákazníka:** *US-004*</span><span class="sxs-lookup"><span data-stu-id="95fad-186">**Customer account:** *US-004*</span></span>
+    - <span data-ttu-id="d56d6-186">**Účet zákazníka:** *US-004*</span><span class="sxs-lookup"><span data-stu-id="d56d6-186">**Customer account:** *US-004*</span></span>
 
-1. <span data-ttu-id="95fad-187">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-187">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-187">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-187">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-188">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-188">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-189">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-189">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-188">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-188">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-189">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-189">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-190">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-190">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-190">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-190">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-5-and-4-6"></a><span data-ttu-id="95fad-191">Prodejní objednávky 4-5 a 4-6</span><span class="sxs-lookup"><span data-stu-id="95fad-191">Sales orders 4-5 and 4-6</span></span>
+#### <a name="sales-orders-4-5-and-4-6"></a><span data-ttu-id="d56d6-191">Prodejní objednávky 4-5 a 4-6</span><span class="sxs-lookup"><span data-stu-id="d56d6-191">Sales orders 4-5 and 4-6</span></span>
 
-1. <span data-ttu-id="95fad-192">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-192">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-192">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-192">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-193">**Účet zákazníka:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="95fad-193">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="95fad-194">**Lokalita:** *6*</span><span class="sxs-lookup"><span data-stu-id="95fad-194">**Site:** *6*</span></span>
-    - <span data-ttu-id="95fad-195">**Sklad:** *61*</span><span class="sxs-lookup"><span data-stu-id="95fad-195">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="95fad-196">**Fond:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="95fad-196">**Pool:** *ShipCons*</span></span>
+    - <span data-ttu-id="d56d6-193">**Účet zákazníka:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="d56d6-193">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="d56d6-194">**Lokalita:** *6*</span><span class="sxs-lookup"><span data-stu-id="d56d6-194">**Site:** *6*</span></span>
+    - <span data-ttu-id="d56d6-195">**Sklad:** *61*</span><span class="sxs-lookup"><span data-stu-id="d56d6-195">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="d56d6-196">**Fond:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="d56d6-196">**Pool:** *ShipCons*</span></span>
 
-1. <span data-ttu-id="95fad-197">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-197">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-197">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-197">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-198">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-199">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-199">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-198">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-199">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-199">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-200">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-200">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-200">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-200">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-7-and-4-8"></a><span data-ttu-id="95fad-201">Prodejní objednávky 4-7 a 4-8</span><span class="sxs-lookup"><span data-stu-id="95fad-201">Sales orders 4-7 and 4-8</span></span>
+#### <a name="sales-orders-4-7-and-4-8"></a><span data-ttu-id="d56d6-201">Prodejní objednávky 4-7 a 4-8</span><span class="sxs-lookup"><span data-stu-id="d56d6-201">Sales orders 4-7 and 4-8</span></span>
 
-1. <span data-ttu-id="95fad-202">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-202">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="d56d6-202">Vytvořte dvě stejné prodejní objednávky, které mají následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-202">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-203">**Účet zákazníka:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="95fad-203">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="95fad-204">**Lokalita:** *6*</span><span class="sxs-lookup"><span data-stu-id="95fad-204">**Site:** *6*</span></span>
-    - <span data-ttu-id="95fad-205">**Sklad:** *61*</span><span class="sxs-lookup"><span data-stu-id="95fad-205">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="95fad-206">**Fond:** Pole ponechejte prázdné.</span><span class="sxs-lookup"><span data-stu-id="95fad-206">**Pool:** Leave this field blank.</span></span>
+    - <span data-ttu-id="d56d6-203">**Účet zákazníka:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="d56d6-203">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="d56d6-204">**Lokalita:** *6*</span><span class="sxs-lookup"><span data-stu-id="d56d6-204">**Site:** *6*</span></span>
+    - <span data-ttu-id="d56d6-205">**Sklad:** *61*</span><span class="sxs-lookup"><span data-stu-id="d56d6-205">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="d56d6-206">**Fond:** Pole ponechejte prázdné.</span><span class="sxs-lookup"><span data-stu-id="d56d6-206">**Pool:** Leave this field blank.</span></span>
 
-1. <span data-ttu-id="95fad-207">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="95fad-207">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="d56d6-207">Přidejte řádek objednávky, který má následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d56d6-207">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="95fad-208">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="95fad-208">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="95fad-209">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="95fad-209">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="d56d6-208">**Číslo položky:** *A0001* (položka, ke které není přiřazen filtr **Kód 4**)</span><span class="sxs-lookup"><span data-stu-id="d56d6-208">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="d56d6-209">**Množství:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d56d6-209">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="95fad-210">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-210">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="d56d6-210">Vyberte **Zásoby \> Rezervace** a poté v podokně akcí vyberte **Rezervovat šarži** pro rezervaci řádku objednávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-210">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-## <a name="use-the-load-planning-workbench-to-create-loads-and-release-them-to-the-warehouse"></a><span data-ttu-id="95fad-211">Pomocí pracovní plochy plánování nákladu můžete vytvářet náklady a uvolňovat je do skladu</span><span class="sxs-lookup"><span data-stu-id="95fad-211">Use the load planning workbench to create loads and release them to the warehouse</span></span>
+## <a name="use-the-load-planning-workbench-to-create-loads-and-release-them-to-the-warehouse"></a><span data-ttu-id="d56d6-211">Pomocí pracovní plochy plánování nákladu můžete vytvářet náklady a uvolňovat je do skladu</span><span class="sxs-lookup"><span data-stu-id="d56d6-211">Use the load planning workbench to create loads and release them to the warehouse</span></span>
 
-<span data-ttu-id="95fad-212">Chcete-li vytvořit náklad pro každou sadu objednávek, kterou jste vytvořili pro tento scénář, a poté ji uvolnit do skladu, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="95fad-212">Follow these steps to create a load for each order set that you created for this scenario and then release it to the warehouse.</span></span>
+<span data-ttu-id="d56d6-212">Chcete-li vytvořit náklad pro každou sadu objednávek, kterou jste vytvořili pro tento scénář, a poté ji uvolnit do skladu, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="d56d6-212">Follow these steps to create a load for each order set that you created for this scenario and then release it to the warehouse.</span></span>
 
-1. <span data-ttu-id="95fad-213">Přejděte do **Řízení skladu \> Náklady \> Pracovní plocha plánování nákladu**.</span><span class="sxs-lookup"><span data-stu-id="95fad-213">Go to **Warehouse management \> Loads \> Load planning workbench**.</span></span>
-1. <span data-ttu-id="95fad-214">Na kartě **Řádky prodeje** najděte a vyberte všechny řádky prodejních objednávek z jedné ze sad objednávek, které jste pro tento scénář vytvořili.</span><span class="sxs-lookup"><span data-stu-id="95fad-214">On the **Sales lines** tab, find and select all the sales order lines from one of the order sets that you created for this scenario.</span></span>
-1. <span data-ttu-id="95fad-215">V podokně akcí na kartě **Nabídka a poptávka** vyberte **Přidat \> Do nového nákladu** a přidejte vybrané řádky prodejní objednávky do nového nákladu.</span><span class="sxs-lookup"><span data-stu-id="95fad-215">On the Action Pane, on the **Supply and demand** tab, select **Add \> To new load** to add the selected order lines to a new Load.</span></span>
-1. <span data-ttu-id="95fad-216">V dialogovém okně **Přiřazení šablony nákladu** v poli **ID šablony nákladu** vyberte šablonu nákladu, například *Standardní šablona nákladu*.</span><span class="sxs-lookup"><span data-stu-id="95fad-216">In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.</span></span>
-1. <span data-ttu-id="95fad-217">Zvolte **OK** a zavřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="95fad-217">Select **OK** to close the dialog box.</span></span> 
-1. <span data-ttu-id="95fad-218">V části **Náklady** vyhledejte a vyberte náklad, který jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="95fad-218">In the **Loads** section, find and select the load that you just created.</span></span>
-1. <span data-ttu-id="95fad-219">Vyberte **Uvolnění \> Uvolnění do skladu** pro uvolnění vybraného nákladu do skladu.</span><span class="sxs-lookup"><span data-stu-id="95fad-219">Select **Release \> Release to warehouse** to release the selected load to the warehouse.</span></span>
-1. <span data-ttu-id="95fad-220">Tento postup opakujte pro další tři sady objednávek, které jste vytvořili pro tento scénář.</span><span class="sxs-lookup"><span data-stu-id="95fad-220">Repeat this procedure for the other three order sets that you created for this scenario.</span></span>
+1. <span data-ttu-id="d56d6-213">Přejděte do **Řízení skladu \> Náklady \> Pracovní plocha plánování nákladu**.</span><span class="sxs-lookup"><span data-stu-id="d56d6-213">Go to **Warehouse management \> Loads \> Load planning workbench**.</span></span>
+1. <span data-ttu-id="d56d6-214">Na kartě **Řádky prodeje** najděte a vyberte všechny řádky prodejních objednávek z jedné ze sad objednávek, které jste pro tento scénář vytvořili.</span><span class="sxs-lookup"><span data-stu-id="d56d6-214">On the **Sales lines** tab, find and select all the sales order lines from one of the order sets that you created for this scenario.</span></span>
+1. <span data-ttu-id="d56d6-215">V podokně akcí na kartě **Nabídka a poptávka** vyberte **Přidat \> Do nového nákladu** a přidejte vybrané řádky prodejní objednávky do nového nákladu.</span><span class="sxs-lookup"><span data-stu-id="d56d6-215">On the Action Pane, on the **Supply and demand** tab, select **Add \> To new load** to add the selected order lines to a new Load.</span></span>
+1. <span data-ttu-id="d56d6-216">V dialogovém okně **Přiřazení šablony nákladu** v poli **ID šablony nákladu** vyberte šablonu nákladu, například *Standardní šablona nákladu*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-216">In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.</span></span>
+1. <span data-ttu-id="d56d6-217">Zvolte **OK** a zavřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="d56d6-217">Select **OK** to close the dialog box.</span></span> 
+1. <span data-ttu-id="d56d6-218">V části **Náklady** vyhledejte a vyberte náklad, který jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="d56d6-218">In the **Loads** section, find and select the load that you just created.</span></span>
+1. <span data-ttu-id="d56d6-219">Vyberte **Uvolnění \> Uvolnění do skladu** pro uvolnění vybraného nákladu do skladu.</span><span class="sxs-lookup"><span data-stu-id="d56d6-219">Select **Release \> Release to warehouse** to release the selected load to the warehouse.</span></span>
+1. <span data-ttu-id="d56d6-220">Tento postup opakujte pro další tři sady objednávek, které jste vytvořili pro tento scénář.</span><span class="sxs-lookup"><span data-stu-id="d56d6-220">Repeat this procedure for the other three order sets that you created for this scenario.</span></span>
 
-## <a name="verify-the-shipments"></a><span data-ttu-id="95fad-221">Ověření dodávek</span><span class="sxs-lookup"><span data-stu-id="95fad-221">Verify the shipments</span></span>
+## <a name="verify-the-shipments"></a><span data-ttu-id="d56d6-221">Ověření dodávek</span><span class="sxs-lookup"><span data-stu-id="d56d6-221">Verify the shipments</span></span>
 
-<span data-ttu-id="95fad-222">Následující postup umožňuje ověřit dodávky, které byly vytvořeny nebo aktualizovány v důsledku konsolidace dodávky.</span><span class="sxs-lookup"><span data-stu-id="95fad-222">The following procedure lets you verify the shipments that have been created or updated as a result of shipment consolidation.</span></span> <span data-ttu-id="95fad-223">Použijte ho ke kontrole každé sady objednávek, kterou jste vytvořili pro tento scénář, a poté zkontrolujte následující pododdíly, abyste se ujistili, že jste dosáhli očekávaných výsledků.</span><span class="sxs-lookup"><span data-stu-id="95fad-223">Use it to review each order set that you created for this scenario, and then review the subsections that follow to make sure that you've obtained the expected results.</span></span>
+<span data-ttu-id="d56d6-222">Následující postup umožňuje ověřit dodávky, které byly vytvořeny nebo aktualizovány v důsledku konsolidace dodávky.</span><span class="sxs-lookup"><span data-stu-id="d56d6-222">The following procedure lets you verify the shipments that have been created or updated as a result of shipment consolidation.</span></span> <span data-ttu-id="d56d6-223">Použijte ho ke kontrole každé sady objednávek, kterou jste vytvořili pro tento scénář, a poté zkontrolujte následující pododdíly, abyste se ujistili, že jste dosáhli očekávaných výsledků.</span><span class="sxs-lookup"><span data-stu-id="d56d6-223">Use it to review each order set that you created for this scenario, and then review the subsections that follow to make sure that you've obtained the expected results.</span></span>
 
-1. <span data-ttu-id="95fad-224">Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.</span><span class="sxs-lookup"><span data-stu-id="95fad-224">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
-1. <span data-ttu-id="95fad-225">Najděte a vyberte požadovanou dodávku.</span><span class="sxs-lookup"><span data-stu-id="95fad-225">Find and select the required shipment.</span></span>
-1. <span data-ttu-id="95fad-226">Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.</span><span class="sxs-lookup"><span data-stu-id="95fad-226">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
+1. <span data-ttu-id="d56d6-224">Přejděte na **Řízení skladu \> Dodávky \> Všechny dodávky**.</span><span class="sxs-lookup"><span data-stu-id="d56d6-224">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
+1. <span data-ttu-id="d56d6-225">Najděte a vyberte požadovanou dodávku.</span><span class="sxs-lookup"><span data-stu-id="d56d6-225">Find and select the required shipment.</span></span>
+1. <span data-ttu-id="d56d6-226">Pokud byla při vytváření nebo aktualizaci dodávky použita zásada konsolidace, měli byste ji vidět v poli **Zásada konsolidace dodávek**.</span><span class="sxs-lookup"><span data-stu-id="d56d6-226">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
 
-### <a name="release-order-set-1-in-one-load"></a><span data-ttu-id="95fad-227">Uvolněte sadu objednávek 1 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="95fad-227">Release order set 1 in one load</span></span>
+### <a name="release-order-set-1-in-one-load"></a><span data-ttu-id="d56d6-227">Uvolněte sadu objednávek 1 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="d56d6-227">Release order set 1 in one load</span></span>
 
-<span data-ttu-id="95fad-228">Měly být vytvořeny dvě dodávky:</span><span class="sxs-lookup"><span data-stu-id="95fad-228">Two shipments should have been created:</span></span>
+<span data-ttu-id="d56d6-228">Měly být vytvořeny dvě dodávky:</span><span class="sxs-lookup"><span data-stu-id="d56d6-228">Two shipments should have been created:</span></span>
 
-- <span data-ttu-id="95fad-229">První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.</span><span class="sxs-lookup"><span data-stu-id="95fad-229">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
-- <span data-ttu-id="95fad-230">Druhá dodávka, která nepoužívá způsob dopravy *Airways*, byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.</span><span class="sxs-lookup"><span data-stu-id="95fad-230">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-229">První dodávka obsahuje tři řádky a byla vytvořena pomocí zásady konsolidace dodávek *CustomerMode*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-229">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-230">Druhá dodávka, která nepoužívá způsob dopravy *Airways*, byla vytvořena pomocí zásady konsolidace dodávek *CustomerOrderNo*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-230">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
 
-### <a name="release-order-set-2-in-one-load"></a><span data-ttu-id="95fad-231">Uvolněte sadu objednávek 2 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="95fad-231">Release order set 2 in one load</span></span>
+### <a name="release-order-set-2-in-one-load"></a><span data-ttu-id="d56d6-231">Uvolněte sadu objednávek 2 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="d56d6-231">Release order set 2 in one load</span></span>
 
-<span data-ttu-id="95fad-232">Měly být vytvořeny tři dodávky:</span><span class="sxs-lookup"><span data-stu-id="95fad-232">Three shipments should have been created:</span></span>
+<span data-ttu-id="d56d6-232">Měly být vytvořeny tři dodávky:</span><span class="sxs-lookup"><span data-stu-id="d56d6-232">Three shipments should have been created:</span></span>
 
-- <span data-ttu-id="95fad-233">První dodávka obsahuje položky *Hořlavý*.</span><span class="sxs-lookup"><span data-stu-id="95fad-233">The first shipment contains the *Flammable* items.</span></span>
-- <span data-ttu-id="95fad-234">Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.</span><span class="sxs-lookup"><span data-stu-id="95fad-234">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
+- <span data-ttu-id="d56d6-233">První dodávka obsahuje položky *Hořlavý*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-233">The first shipment contains the *Flammable* items.</span></span>
+- <span data-ttu-id="d56d6-234">Každá ze dvou dalších zásilek obsahuje jeden řádek, který má položku *Explozivní*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-234">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
 
-### <a name="release-order-set-3-in-one-load"></a><span data-ttu-id="95fad-235">Uvolněte sadu objednávek 3 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="95fad-235">Release order set 3 in one load</span></span>
+### <a name="release-order-set-3-in-one-load"></a><span data-ttu-id="d56d6-235">Uvolněte sadu objednávek 3 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="d56d6-235">Release order set 3 in one load</span></span>
 
-<span data-ttu-id="95fad-236">Měly být vytvořeny dvě dodávky:</span><span class="sxs-lookup"><span data-stu-id="95fad-236">Two shipments should have been created:</span></span>
+<span data-ttu-id="d56d6-236">Měly být vytvořeny dvě dodávky:</span><span class="sxs-lookup"><span data-stu-id="d56d6-236">Two shipments should have been created:</span></span>
 
-- <span data-ttu-id="95fad-237">První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1*.</span><span class="sxs-lookup"><span data-stu-id="95fad-237">The first shipment contains order lines from the sales order where the **Customer requisition** field is set to *1*.</span></span>
-- <span data-ttu-id="95fad-238">Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2*.</span><span class="sxs-lookup"><span data-stu-id="95fad-238">The second shipment contains order lines from sales order where the **Customer requisition** field is set to *2*.</span></span>
+- <span data-ttu-id="d56d6-237">První dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *1*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-237">The first shipment contains order lines from the sales order where the **Customer requisition** field is set to *1*.</span></span>
+- <span data-ttu-id="d56d6-238">Druhá dodávka obsahuje řádky objednávky z prodejní objednávky, kde je pole **Žádost zákazníka** nastaveno na *2*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-238">The second shipment contains order lines from sales order where the **Customer requisition** field is set to *2*.</span></span>
 
-### <a name="release-order-set-4-in-one-load"></a><span data-ttu-id="95fad-239">Uvolněte sadu objednávek 4 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="95fad-239">Release order set 4 in one load</span></span>
+### <a name="release-order-set-4-in-one-load"></a><span data-ttu-id="d56d6-239">Uvolněte sadu objednávek 4 v jednom nákladu</span><span class="sxs-lookup"><span data-stu-id="d56d6-239">Release order set 4 in one load</span></span>
 
-<span data-ttu-id="95fad-240">Měly být vytvořeny čtyři dodávky:</span><span class="sxs-lookup"><span data-stu-id="95fad-240">Four shipments should have been created:</span></span>
+<span data-ttu-id="d56d6-240">Měly být vytvořeny čtyři dodávky:</span><span class="sxs-lookup"><span data-stu-id="d56d6-240">Four shipments should have been created:</span></span>
 
-- <span data-ttu-id="95fad-241">Řádky ze dvou objednávek pro účet zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="95fad-241">Lines from two orders for customer account *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="95fad-242">Řádky ze dvou objednávek pro účet zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="95fad-242">Lines from two orders for customer account *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="95fad-243">Řádky z objednávek 4-5 a 4-6 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="95fad-243">Lines from sales orders 4-5 and 4-6 for customer account *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="95fad-244">Řádky z objednávek 4-7 a 4-8 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.</span><span class="sxs-lookup"><span data-stu-id="95fad-244">Lines from sales orders 4-7 and 4-8 for customer account *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-241">Řádky ze dvou objednávek pro účet zákazníka *US-003* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-241">Lines from two orders for customer account *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-242">Řádky ze dvou objednávek pro účet zákazníka *US-004* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-242">Lines from two orders for customer account *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-243">Řádky z objednávek 4-5 a 4-6 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *Fond objednávek*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-243">Lines from sales orders 4-5 and 4-6 for customer account *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="d56d6-244">Řádky z objednávek 4-7 a 4-8 pro účet zákazníka *US-007* byly seskupeny do jedné dodávky pomocí zásady konsolidace dodávek *CrossOrder*.</span><span class="sxs-lookup"><span data-stu-id="d56d6-244">Lines from sales orders 4-7 and 4-8 for customer account *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="95fad-245">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="95fad-245">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d56d6-245">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="d56d6-245">Additional resources</span></span>
 
-- [<span data-ttu-id="95fad-246">Zásady konsolidace dodávek</span><span class="sxs-lookup"><span data-stu-id="95fad-246">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
-- [<span data-ttu-id="95fad-247">Konfigurace zásad konsolidace dodávek</span><span class="sxs-lookup"><span data-stu-id="95fad-247">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+- [<span data-ttu-id="d56d6-246">Zásady konsolidace dodávek</span><span class="sxs-lookup"><span data-stu-id="d56d6-246">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
+- [<span data-ttu-id="d56d6-247">Konfigurace zásad konsolidace dodávek</span><span class="sxs-lookup"><span data-stu-id="d56d6-247">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
