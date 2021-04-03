@@ -18,87 +18,91 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f55977fc45424ea7e514a741f9dd7f8f9306b015
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111840"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466921"
 ---
-# <a name="administration-overview"></a><span data-ttu-id="f6b64-103">Přehled správy</span><span class="sxs-lookup"><span data-stu-id="f6b64-103">Administration overview</span></span>
+# <a name="administration-overview"></a><span data-ttu-id="83613-103">Přehled správy</span><span class="sxs-lookup"><span data-stu-id="83613-103">Administration overview</span></span>
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="f6b64-104">Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíže aplikace Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="f6b64-104">This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="83613-104">Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíže aplikace Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="83613-104">This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.</span></span>
 
-- [<span data-ttu-id="f6b64-105">Systémové požadavky</span><span class="sxs-lookup"><span data-stu-id="f6b64-105">System requirements</span></span>](hr-admin-system-requirements.md)
+- [<span data-ttu-id="83613-105">Systémové požadavky</span><span class="sxs-lookup"><span data-stu-id="83613-105">System requirements</span></span>](hr-admin-system-requirements.md)
 
-- <span data-ttu-id="f6b64-106">Nastavení a správa instancí</span><span class="sxs-lookup"><span data-stu-id="f6b64-106">Set up and manage instances</span></span>
-  - [<span data-ttu-id="f6b64-107">Zřízení Human Resources</span><span class="sxs-lookup"><span data-stu-id="f6b64-107">Provision Human Resources</span></span>](hr-admin-setup-provision.md)
-  - [<span data-ttu-id="f6b64-108">Kopírovat instanci</span><span class="sxs-lookup"><span data-stu-id="f6b64-108">Copy an instance</span></span>](hr-admin-setup-copy-instance.md)
-  - [<span data-ttu-id="f6b64-109">Odebrání instance</span><span class="sxs-lookup"><span data-stu-id="f6b64-109">Remove an instance</span></span>](hr-admin-setup-remove-instance.md)
-  - [<span data-ttu-id="f6b64-110">Aktualizace procesu</span><span class="sxs-lookup"><span data-stu-id="f6b64-110">Update process</span></span>](hr-admin-setup-update-process.md)
+- <span data-ttu-id="83613-106">Nastavení a správa instancí</span><span class="sxs-lookup"><span data-stu-id="83613-106">Set up and manage instances</span></span>
+  - [<span data-ttu-id="83613-107">Zřízení Human Resources</span><span class="sxs-lookup"><span data-stu-id="83613-107">Provision Human Resources</span></span>](hr-admin-setup-provision.md)
+  - [<span data-ttu-id="83613-108">Kopírovat instanci</span><span class="sxs-lookup"><span data-stu-id="83613-108">Copy an instance</span></span>](hr-admin-setup-copy-instance.md)
+  - [<span data-ttu-id="83613-109">Odebrání instance</span><span class="sxs-lookup"><span data-stu-id="83613-109">Remove an instance</span></span>](hr-admin-setup-remove-instance.md)
+  - [<span data-ttu-id="83613-110">Aktualizace procesu</span><span class="sxs-lookup"><span data-stu-id="83613-110">Update process</span></span>](hr-admin-setup-update-process.md)
 
-- <span data-ttu-id="f6b64-111">Nastavení integrace dat</span><span class="sxs-lookup"><span data-stu-id="f6b64-111">Set up data integration</span></span>
-  - [<span data-ttu-id="f6b64-112">Volba technologie integrace dat</span><span class="sxs-lookup"><span data-stu-id="f6b64-112">Choose a data integration technology</span></span>](hr-admin-integration-choose-technology.md)
-  - [<span data-ttu-id="f6b64-113">Konfigurace integrace s Dataverse</span><span class="sxs-lookup"><span data-stu-id="f6b64-113">Configure Dataverse integration</span></span>](hr-admin-integration-common-data-service.md)
-  - [<span data-ttu-id="f6b64-114">Konfigurace integrace s aplikací Finance</span><span class="sxs-lookup"><span data-stu-id="f6b64-114">Configure integration with Finance</span></span>](hr-admin-integration-finance.md)
-  - [<span data-ttu-id="f6b64-115">Konfigurace integrace s aplikací Dayforce</span><span class="sxs-lookup"><span data-stu-id="f6b64-115">Configure integration with Dayforce</span></span>](hr-admin-integration-dayforce.md)
-  - [<span data-ttu-id="f6b64-116">Vytvoření aplikace pro export opakujících se dat</span><span class="sxs-lookup"><span data-stu-id="f6b64-116">Create a recurring data export app</span></span>](hr-admin-integration-recurring-data-export.md)
-  - <span data-ttu-id="f6b64-117">Integrace s Office</span><span class="sxs-lookup"><span data-stu-id="f6b64-117">Integrate with Office</span></span>
-    - [<span data-ttu-id="f6b64-118">Kurz integrace s Office</span><span class="sxs-lookup"><span data-stu-id="f6b64-118">Office integration tutorial</span></span>](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [<span data-ttu-id="f6b64-119">Aktualizace dat entity v aplikaci Excel</span><span class="sxs-lookup"><span data-stu-id="f6b64-119">Update entity data in Excel</span></span>](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [<span data-ttu-id="f6b64-120">Vytvoření zkušeností s otevíráním v Excelu</span><span class="sxs-lookup"><span data-stu-id="f6b64-120">Create Open in Excel experiences</span></span>](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [<span data-ttu-id="f6b64-121">Řešení problémů s integrací s Office</span><span class="sxs-lookup"><span data-stu-id="f6b64-121">Troubleshoot Office integration</span></span>](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+- <span data-ttu-id="83613-111">Nastavení integrace dat</span><span class="sxs-lookup"><span data-stu-id="83613-111">Set up data integration</span></span>
+  - [<span data-ttu-id="83613-112">Volba technologie integrace dat</span><span class="sxs-lookup"><span data-stu-id="83613-112">Choose a data integration technology</span></span>](hr-admin-integration-choose-technology.md)
+  - [<span data-ttu-id="83613-113">Konfigurace integrace s Dataverse</span><span class="sxs-lookup"><span data-stu-id="83613-113">Configure Dataverse integration</span></span>](hr-admin-integration-common-data-service.md)
+  - [<span data-ttu-id="83613-114">Konfigurace integrace s aplikací Finance</span><span class="sxs-lookup"><span data-stu-id="83613-114">Configure integration with Finance</span></span>](hr-admin-integration-finance.md)
+  - [<span data-ttu-id="83613-115">Konfigurace integrace s aplikací Dayforce</span><span class="sxs-lookup"><span data-stu-id="83613-115">Configure integration with Dayforce</span></span>](hr-admin-integration-dayforce.md)
+  - [<span data-ttu-id="83613-116">Vytvoření aplikace pro export opakujících se dat</span><span class="sxs-lookup"><span data-stu-id="83613-116">Create a recurring data export app</span></span>](hr-admin-integration-recurring-data-export.md)
+  - <span data-ttu-id="83613-117">Integrace s Office</span><span class="sxs-lookup"><span data-stu-id="83613-117">Integrate with Office</span></span>
+    - [<span data-ttu-id="83613-118">Kurz integrace s Office</span><span class="sxs-lookup"><span data-stu-id="83613-118">Office integration tutorial</span></span>](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [<span data-ttu-id="83613-119">Aktualizace dat entity v aplikaci Excel</span><span class="sxs-lookup"><span data-stu-id="83613-119">Update entity data in Excel</span></span>](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [<span data-ttu-id="83613-120">Vytvoření zkušeností s otevíráním v Excelu</span><span class="sxs-lookup"><span data-stu-id="83613-120">Create Open in Excel experiences</span></span>](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [<span data-ttu-id="83613-121">Řešení problémů s integrací s Office</span><span class="sxs-lookup"><span data-stu-id="83613-121">Troubleshoot Office integration</span></span>](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
-- [<span data-ttu-id="f6b64-122">Správa funkcí</span><span class="sxs-lookup"><span data-stu-id="f6b64-122">Manage features</span></span>](hr-admin-manage-features.md)
+- [<span data-ttu-id="83613-122">Správa funkcí</span><span class="sxs-lookup"><span data-stu-id="83613-122">Manage features</span></span>](hr-admin-manage-features.md)
 
-- [<span data-ttu-id="f6b64-123">Konfigurace a správa protokolování databáze</span><span class="sxs-lookup"><span data-stu-id="f6b64-123">Configure and manage database logging</span></span>](hr-admin-database-logging.md)
+- [<span data-ttu-id="83613-123">Konfigurace a správa protokolování databáze</span><span class="sxs-lookup"><span data-stu-id="83613-123">Configure and manage database logging</span></span>](hr-admin-database-logging.md)
 
-- <span data-ttu-id="f6b64-124">Prozkoumání uživatelského rozhraní</span><span class="sxs-lookup"><span data-stu-id="f6b64-124">Explore the user interface</span></span>
-  - [<span data-ttu-id="f6b64-125">Prvky uživatelského rozhraní</span><span class="sxs-lookup"><span data-stu-id="f6b64-125">User interface elements</span></span>](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-126">Funkce usnadnění přístupu</span><span class="sxs-lookup"><span data-stu-id="f6b64-126">Accessibility features</span></span>](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-127">Přehled správy funkcí</span><span class="sxs-lookup"><span data-stu-id="f6b64-127">Feature management overview</span></span>](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-128">Často kladené dotazy ke klientovi</span><span class="sxs-lookup"><span data-stu-id="f6b64-128">Client FAQ</span></span>](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-129">Vyhledání akce</span><span class="sxs-lookup"><span data-stu-id="f6b64-129">Action search</span></span>](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-130">Pokročilé filtrování a syntaxe dotazu</span><span class="sxs-lookup"><span data-stu-id="f6b64-130">Advanced filtering and query syntax</span></span>](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-131">Konfigurace a filtrování pracovních prostorů</span><span class="sxs-lookup"><span data-stu-id="f6b64-131">Configure and filter workspaces</span></span>](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
-  - [<span data-ttu-id="f6b64-132">Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně</span><span class="sxs-lookup"><span data-stu-id="f6b64-132">Show pages side by side by using the Open in new window feature</span></span>](../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-133">Klávesové zkratky</span><span class="sxs-lookup"><span data-stu-id="f6b64-133">Keyboard shortcuts</span></span>](../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-134">Změna bannerů a obrázků s logem pro právnické osoby</span><span class="sxs-lookup"><span data-stu-id="f6b64-134">Change the banners or logo images for legal entities</span></span>](../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-135">Hledání za účelem navigace</span><span class="sxs-lookup"><span data-stu-id="f6b64-135">Navigation search</span></span>](../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-136">Přizpůsobení uživatelského prostředí</span><span class="sxs-lookup"><span data-stu-id="f6b64-136">Personalize the user experience</span></span>](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-137">Uložená zobrazení</span><span class="sxs-lookup"><span data-stu-id="f6b64-137">Saved views</span></span>](../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-138">Vytvoření vlastních polí a práce s nimi</span><span class="sxs-lookup"><span data-stu-id="f6b64-138">Create and work with custom fields</span></span>](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-139">Vložení Microsoft Power Apps</span><span class="sxs-lookup"><span data-stu-id="f6b64-139">Embed Microsoft Power Apps</span></span>](../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-140">Nalezení informací pomocí vyhledávání</span><span class="sxs-lookup"><span data-stu-id="f6b64-140">Find information by using lookups</span></span>](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-141">Změna data pro relaci</span><span class="sxs-lookup"><span data-stu-id="f6b64-141">Change the date for a session</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-142">Nastavení upřednostňovaného časového pásma uživatele</span><span class="sxs-lookup"><span data-stu-id="f6b64-142">Set a user's preferred time zone</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-143">Vysvětlení služeb Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="f6b64-143">Understand Lifecycle Services</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
+- <span data-ttu-id="83613-124">Prozkoumání uživatelského rozhraní</span><span class="sxs-lookup"><span data-stu-id="83613-124">Explore the user interface</span></span>
+  - [<span data-ttu-id="83613-125">Prvky uživatelského rozhraní</span><span class="sxs-lookup"><span data-stu-id="83613-125">User interface elements</span></span>](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-126">Funkce usnadnění přístupu</span><span class="sxs-lookup"><span data-stu-id="83613-126">Accessibility features</span></span>](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-127">Přehled správy funkcí</span><span class="sxs-lookup"><span data-stu-id="83613-127">Feature management overview</span></span>](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-128">Často kladené dotazy ke klientovi</span><span class="sxs-lookup"><span data-stu-id="83613-128">Client FAQ</span></span>](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-129">Vyhledání akce</span><span class="sxs-lookup"><span data-stu-id="83613-129">Action search</span></span>](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-130">Pokročilé filtrování a syntaxe dotazu</span><span class="sxs-lookup"><span data-stu-id="83613-130">Advanced filtering and query syntax</span></span>](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-131">Konfigurace a filtrování pracovních prostorů</span><span class="sxs-lookup"><span data-stu-id="83613-131">Configure and filter workspaces</span></span>](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
+  - [<span data-ttu-id="83613-132">Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně</span><span class="sxs-lookup"><span data-stu-id="83613-132">Show pages side by side by using the Open in new window feature</span></span>](../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-133">Klávesové zkratky</span><span class="sxs-lookup"><span data-stu-id="83613-133">Keyboard shortcuts</span></span>](../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-134">Změna bannerů a obrázků s logem pro právnické osoby</span><span class="sxs-lookup"><span data-stu-id="83613-134">Change the banners or logo images for legal entities</span></span>](../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-135">Hledání za účelem navigace</span><span class="sxs-lookup"><span data-stu-id="83613-135">Navigation search</span></span>](../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-136">Přizpůsobení uživatelského prostředí</span><span class="sxs-lookup"><span data-stu-id="83613-136">Personalize the user experience</span></span>](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-137">Uložená zobrazení</span><span class="sxs-lookup"><span data-stu-id="83613-137">Saved views</span></span>](../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-138">Vytvoření vlastních polí a práce s nimi</span><span class="sxs-lookup"><span data-stu-id="83613-138">Create and work with custom fields</span></span>](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-139">Vložení Microsoft Power Apps</span><span class="sxs-lookup"><span data-stu-id="83613-139">Embed Microsoft Power Apps</span></span>](../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-140">Nalezení informací pomocí vyhledávání</span><span class="sxs-lookup"><span data-stu-id="83613-140">Find information by using lookups</span></span>](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-141">Změna data pro relaci</span><span class="sxs-lookup"><span data-stu-id="83613-141">Change the date for a session</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-142">Nastavení upřednostňovaného časového pásma uživatele</span><span class="sxs-lookup"><span data-stu-id="83613-142">Set a user's preferred time zone</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-143">Vysvětlení služeb Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="83613-143">Understand Lifecycle Services</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
 
-- <span data-ttu-id="f6b64-144">Zdroje dokumentace</span><span class="sxs-lookup"><span data-stu-id="f6b64-144">Documentation resources</span></span>
-  - [<span data-ttu-id="f6b64-145">Systém nápovědy</span><span class="sxs-lookup"><span data-stu-id="f6b64-145">Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-146">Připojení k systému nápovědy</span><span class="sxs-lookup"><span data-stu-id="f6b64-146">Connect the Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-147">Zobrazení a export popisů polí</span><span class="sxs-lookup"><span data-stu-id="f6b64-147">View and export field descriptions</span></span>](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-148">Záznamník úloh</span><span class="sxs-lookup"><span data-stu-id="f6b64-148">Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="f6b64-149">Vytváření dokumentace nebo školení pomocí záznamníku úloh</span><span class="sxs-lookup"><span data-stu-id="f6b64-149">Create documentation or training with Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
+- <span data-ttu-id="83613-144">Zdroje dokumentace</span><span class="sxs-lookup"><span data-stu-id="83613-144">Documentation resources</span></span>
+  - [<span data-ttu-id="83613-145">Systém nápovědy</span><span class="sxs-lookup"><span data-stu-id="83613-145">Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-146">Připojení k systému nápovědy</span><span class="sxs-lookup"><span data-stu-id="83613-146">Connect the Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-147">Zobrazení a export popisů polí</span><span class="sxs-lookup"><span data-stu-id="83613-147">View and export field descriptions</span></span>](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-148">Záznamník úloh</span><span class="sxs-lookup"><span data-stu-id="83613-148">Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="83613-149">Vytváření dokumentace nebo školení pomocí záznamníku úloh</span><span class="sxs-lookup"><span data-stu-id="83613-149">Create documentation or training with Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- <span data-ttu-id="f6b64-150">Řešení problémů s Human Resources</span><span class="sxs-lookup"><span data-stu-id="f6b64-150">Troubleshoot Human Resources</span></span>
-  - [<span data-ttu-id="f6b64-151">Získání podpory</span><span class="sxs-lookup"><span data-stu-id="f6b64-151">Get support</span></span>](hr-admin-troubleshooting-support.md)
-  - [<span data-ttu-id="f6b64-152">Optimalizace výkonu pomocí úloh automatického vyčištění</span><span class="sxs-lookup"><span data-stu-id="f6b64-152">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
-  - [<span data-ttu-id="f6b64-153">Analytické sestavy nejsou aktualizovány</span><span class="sxs-lookup"><span data-stu-id="f6b64-153">Analytic reports aren't updated</span></span>](hr-admin-troubleshooting-analytic-reports.md)
-  - [<span data-ttu-id="f6b64-154">Nelze vytvořit prostředí v centru pro správu Power Apps</span><span class="sxs-lookup"><span data-stu-id="f6b64-154">Can't create an environment in the Power Apps Admin center</span></span>](hr-admin-troubleshooting-power-apps.md)
-  - [<span data-ttu-id="f6b64-155">Odpojení klienta</span><span class="sxs-lookup"><span data-stu-id="f6b64-155">Client disconnects</span></span>](hr-admin-troubleshooting-disconnect.md)
-  - [<span data-ttu-id="f6b64-156">Zabránění zkrácení textu v hierarchii pozic</span><span class="sxs-lookup"><span data-stu-id="f6b64-156">Avoid truncated text in position hierarchy</span></span>](hr-admin-troubleshooting-truncate.md)
-  - [<span data-ttu-id="f6b64-157">Spuštění procesu kompenzace</span><span class="sxs-lookup"><span data-stu-id="f6b64-157">Run the compensation process</span></span>](hr-admin-troubleshooting-compensation.md)
-  - [<span data-ttu-id="f6b64-158">Uložení průvodce záznamem úloh do LCS</span><span class="sxs-lookup"><span data-stu-id="f6b64-158">Save a task guide to LCS</span></span>](hr-admin-troubleshooting-task-guide.md)
-  - [<span data-ttu-id="f6b64-159">Přístup k soukromým adresám podle role zabezpečení</span><span class="sxs-lookup"><span data-stu-id="f6b64-159">Access private addresses by security role</span></span>](hr-admin-troubleshooting-private-addresses.md)
-  - [<span data-ttu-id="f6b64-160">Human Resources se nezobrazují v aplikacích Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="f6b64-160">Human Resources doesn't appear in Dynamics 365 apps</span></span>](hr-admin-troubleshooting-not-in-apps.md)
-  - [<span data-ttu-id="f6b64-161">Možnosti vykazování</span><span class="sxs-lookup"><span data-stu-id="f6b64-161">Reporting options</span></span>](hr-admin-troubleshooting-reporting.md)
-  - [<span data-ttu-id="f6b64-162">Často kladené otázky k integraci</span><span class="sxs-lookup"><span data-stu-id="f6b64-162">Integration FAQ</span></span>](hr-admin-troubleshooting-integration.md)
+- <span data-ttu-id="83613-150">Řešení problémů s Human Resources</span><span class="sxs-lookup"><span data-stu-id="83613-150">Troubleshoot Human Resources</span></span>
+  - [<span data-ttu-id="83613-151">Získání podpory</span><span class="sxs-lookup"><span data-stu-id="83613-151">Get support</span></span>](hr-admin-troubleshooting-support.md)
+  - [<span data-ttu-id="83613-152">Optimalizace výkonu pomocí úloh automatického vyčištění</span><span class="sxs-lookup"><span data-stu-id="83613-152">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
+  - [<span data-ttu-id="83613-153">Analytické sestavy nejsou aktualizovány</span><span class="sxs-lookup"><span data-stu-id="83613-153">Analytic reports aren't updated</span></span>](hr-admin-troubleshooting-analytic-reports.md)
+  - [<span data-ttu-id="83613-154">Nelze vytvořit prostředí v centru pro správu Power Apps</span><span class="sxs-lookup"><span data-stu-id="83613-154">Can't create an environment in the Power Apps Admin center</span></span>](hr-admin-troubleshooting-power-apps.md)
+  - [<span data-ttu-id="83613-155">Odpojení klienta</span><span class="sxs-lookup"><span data-stu-id="83613-155">Client disconnects</span></span>](hr-admin-troubleshooting-disconnect.md)
+  - [<span data-ttu-id="83613-156">Zabránění zkrácení textu v hierarchii pozic</span><span class="sxs-lookup"><span data-stu-id="83613-156">Avoid truncated text in position hierarchy</span></span>](hr-admin-troubleshooting-truncate.md)
+  - [<span data-ttu-id="83613-157">Spuštění procesu kompenzace</span><span class="sxs-lookup"><span data-stu-id="83613-157">Run the compensation process</span></span>](hr-admin-troubleshooting-compensation.md)
+  - [<span data-ttu-id="83613-158">Uložení průvodce záznamem úloh do LCS</span><span class="sxs-lookup"><span data-stu-id="83613-158">Save a task guide to LCS</span></span>](hr-admin-troubleshooting-task-guide.md)
+  - [<span data-ttu-id="83613-159">Přístup k soukromým adresám podle role zabezpečení</span><span class="sxs-lookup"><span data-stu-id="83613-159">Access private addresses by security role</span></span>](hr-admin-troubleshooting-private-addresses.md)
+  - [<span data-ttu-id="83613-160">Human Resources se nezobrazují v aplikacích Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="83613-160">Human Resources doesn't appear in Dynamics 365 apps</span></span>](hr-admin-troubleshooting-not-in-apps.md)
+  - [<span data-ttu-id="83613-161">Možnosti vykazování</span><span class="sxs-lookup"><span data-stu-id="83613-161">Reporting options</span></span>](hr-admin-troubleshooting-reporting.md)
+  - [<span data-ttu-id="83613-162">Často kladené otázky k integraci</span><span class="sxs-lookup"><span data-stu-id="83613-162">Integration FAQ</span></span>](hr-admin-troubleshooting-integration.md)
 
-## <a name="see-also"></a><span data-ttu-id="f6b64-163">Viz také</span><span class="sxs-lookup"><span data-stu-id="f6b64-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83613-163">Viz také</span><span class="sxs-lookup"><span data-stu-id="83613-163">See also</span></span>
 
-- [<span data-ttu-id="f6b64-164">Co je nového a co se změnilo v Human Resources</span><span class="sxs-lookup"><span data-stu-id="f6b64-164">What's new or changed in Human Resources</span></span>](hr-admin-whats-new.md)
-- [<span data-ttu-id="f6b64-165">Průvodce vývojáře</span><span class="sxs-lookup"><span data-stu-id="f6b64-165">Developer Guide</span></span>](hr-developer-overview.md)
-- [<span data-ttu-id="f6b64-166">Uživatelská příručka</span><span class="sxs-lookup"><span data-stu-id="f6b64-166">User Guide</span></span>](hr-hrpro-overview.md)
+- [<span data-ttu-id="83613-164">Co je nového a co se změnilo v Human Resources</span><span class="sxs-lookup"><span data-stu-id="83613-164">What's new or changed in Human Resources</span></span>](hr-admin-whats-new.md)
+- [<span data-ttu-id="83613-165">Průvodce vývojáře</span><span class="sxs-lookup"><span data-stu-id="83613-165">Developer Guide</span></span>](hr-developer-overview.md)
+- [<span data-ttu-id="83613-166">Uživatelská příručka</span><span class="sxs-lookup"><span data-stu-id="83613-166">User Guide</span></span>](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
