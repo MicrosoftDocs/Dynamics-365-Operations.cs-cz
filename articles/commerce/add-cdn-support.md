@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985947"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582712"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory pro síť CDN
-
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory sítě pro doručování obsahu (CDN)
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Pokud zřídíte prostředí elektronického obchodu v řešení Dynamics 365 Commerce, můžete jej nakonfigurovat tak, aby spolupracovalo se službou CDN. 
 
@@ -96,8 +93,8 @@ Chcete-li nastavit pravidlo směrování ve službě Azure Front Door Service, p
 1. Do pole **Název** zadejte **výchozí**.
 1. V poli **Přijatý protokol** vyberte možnost **HTTP a HTTPS**.
 1. Do pole **Hostitelé front-endu** zadejte **název-klienta-elektronického-obchodování-dynamics.azurefd.net**.
-1. V části **Vzory, které se mají vyhledat** zadejte do horního pole položku **/\** _.
-1. V části _*Podrobnosti postupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
+1. V části **Vzory, které se mají vyhledat** zadejte do horního pole položku **/\***.
+1. V části **Podrobnostipostupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
 1. V poli **Back-endový fond** vyberte **ecom-backend**.
 1. Ve skupině polí **Předávací protokol** vyberte možnost **Požadavek na shodu**. 
 1. Nastavte možnost **Přepis adresy URL** na hodnotu **Zakázáno**.
@@ -109,8 +106,8 @@ Chcete-li nastavit pravidlo použití mezipaměti ve službě Azure Front Door S
 1. Do pole **Název** zadejte **statické objekty**.
 1. V poli **Přijatý protokol** vyberte možnost **HTTP a HTTPS**.
 1. Do pole **Hostitelé front-endu** zadejte **název-klienta-elektronického-obchodování-dynamics.azurefd.net**.
-1. V části **Vzory, které se mají vyhledat** zadejte do horního pole **/\_msdyn365/\_scnr/\** _.
-1. V části _*Podrobnosti postupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
+1. V části **Vzory, které se mají vyhledat** zadejte do horního pole **/\_msdyn365/\_scnr/\***.
+1. V části **Podrobnostipostupu** nastavte možnost **Typ postupu** na hodnotu **Vpřed**.
 1. V poli **Back-endový fond** vyberte **ecom-backend**.
 1. Ve skupině polí **Předávací protokol** vyberte možnost **Požadavek na shodu**.
 1. Nastavte možnost **Přepis adresy URL** na hodnotu **Zakázáno**.
@@ -143,25 +140,7 @@ Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné po
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Konfigurace názvu domény](configure-your-domain-name.md)
-
-[Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
-
-[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
-
-[Přidružení webu Dynamics 365 Commerce k online kanálu](associate-site-online-store.md)
-
-[Správa souborů robots.txt](manage-robots-txt-files.md)
-
-[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
-
-[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
-
-[Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
-
-[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
-
-[Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+[Možnosti implementace sítě pro doručování obsahu](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c2b0d5be38425b5ceebb38b7964f5ec600b1c838
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 79a971e3de43cb0161d4ac5012f657a947bc567c
+ms.sourcegitcommit: afbdc268bcdb1755d7f1bc79ad1b7fc801b2e2f5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141897"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579965"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrace nákupu mezi Supply Chain Management a Field Service
 
@@ -47,8 +46,8 @@ Chcete-li integrovat Supply Chain Management s Field Service, musíte nainstalov
 
 ### <a name="prerequisites"></a>Předpoklady
 
-+ **Duální zápis** - Další informace získáte na [domovské stránce pro duální zápis](dual-write-home-page.md#dual-write-setup).
-+ **Dynamics 365 Field Service** – Další informace viz [Postup instalace Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Duální zápis** - Další informace získáte na [domovské stránce pro duální zápis](dual-write-home-page.md#dual-write-setup).
+- **Dynamics 365 Field Service** – Další informace viz [Postup instalace Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Když jsou povoleny v Microsoft Dataverse, představují duální zápis a Field Service několik vrstev řešení, která rozšiřují prostředí o nová metadata, formuláře, pohledy a logiku. Tato řešení lze povolit v libovolném pořadí, ačkoli se obvykle instalují v pořadí uvedeném zde:
 
@@ -57,8 +56,8 @@ Když jsou povoleny v Microsoft Dataverse, představují duální zápis a Field
 3. **Rozšířený Supply Chain Management** – Rozšířený Supply Chain Management se automaticky nainstaluje, když je v prostředí povolen duální zápis. 
 4. **Řešení OneFSSCM** - OneFSSCM se automaticky instaluje podle toho, které řešení (Field Service nebo Supply Chain Management) je nainstalováno jako poslední.
 
-    + Pokud je Field Service v prostředí již nainstalovaná a povolíte duální zápis, který nainstaluje rozšířený Supply Chain Management, je nainstalován OneFSSCM.
-    + Pokud je rozšířený Supply Chain Management v prostředí již nainstalován a povolíte duální zápis, který nainstaluje Supply Chain Management, je nainstalován OneFSSCM.
+    - Pokud je Field Service v prostředí již nainstalovaná a povolíte duální zápis, který nainstaluje rozšířený Supply Chain Management, je nainstalován OneFSSCM.
+    - Pokud je rozšířený Supply Chain Management v prostředí již nainstalován a povolíte duální zápis, který nainstaluje Supply Chain Management, je nainstalován OneFSSCM.
 
 ## <a name="initial-synchronization"></a>Počáteční synchronizace
 
@@ -124,22 +123,22 @@ Navíc Dataverse zahrnuje logiku, která mapuje dodavatele s jejich souvisejíc�
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 
-+ Nákupní objednávky lze vytvářet a aktualizovat pomocí uživatelů Dataverse. Proces a data jsou však řízeny v Supply Chain Management. Omezení týkající se aktualizací sloupců nákupních objednávek ve Supply Chain Management platí, když aktualizace pocházejí z Field Service. Nemůžete například aktualizovat nákupní objednávku, pokud byla dokončena. 
-+ Pokud je nákupní objednávka řízena správou změn ve správě Supply Chain Management, může uživatel Field Service aktualizovat nákupní objednávku pouze v případě, že je stav schválení Supply Chain Management *Koncept*.
-+ Několik sloupců je spravováno pouze pomocí Supply Chain Management a nelze je aktualizovat ve službě Field Service. Chcete-li zjistit, které sloupce nelze aktualizovat, zkontrolujte tabulky mapování v produktu. Z důvodu jednoduchosti je většina těchto sloupců nastavena pouze na čtení stránek Dataverse. 
+- Nákupní objednávky lze vytvářet a aktualizovat pomocí uživatelů Dataverse. Proces a data jsou však řízeny v Supply Chain Management. Omezení týkající se aktualizací sloupců nákupních objednávek ve Supply Chain Management platí, když aktualizace pocházejí z Field Service. Nemůžete například aktualizovat nákupní objednávku, pokud byla dokončena. 
+- Pokud je nákupní objednávka řízena správou změn ve správě Supply Chain Management, může uživatel Field Service aktualizovat nákupní objednávku pouze v případě, že je stav schválení Supply Chain Management *Koncept*.
+- Několik sloupců je spravováno pouze pomocí Supply Chain Management a nelze je aktualizovat ve službě Field Service. Chcete-li zjistit, které sloupce nelze aktualizovat, zkontrolujte tabulky mapování v produktu. Z důvodu jednoduchosti je většina těchto sloupců nastavena pouze na čtení stránek Dataverse. 
 
     Například sloupce s informacemi o ceně jsou spravovány pomocí Supply Chain Management. Supply Chain Management má obchodní dohody, ze kterých může Field Service těžit. Sloupce jako **Jednotková cena**, **Sleva**, a **Čistá částka** pocházejí pouze ze Supply Chain Management. Abyste zajistili synchronizaci ceny se službou Field Service, měli byste použít funkci **Sync** na stránkách **Nákupní objednávka** a **Produkt na objednávku** v Dataverse při zadání údajů o objednávce. Další informace získáte v části [Synchronizace s údaji o nákupu Dynamics 365 Supply Chain Management na vyžádání](#sync-procurement).
 
-+ Sloupec **Součty** je dostupný pouze ve službě Field Service, protože v Supply Chain Management neexistují žádné aktuální součty nákupní objednávky. Součty v Supply Chain Management se počítají na základě více parametrů, které nejsou k dispozici ve Field Service.
-+ Řádky nákupní objednávky, kde je zadána pouze kategorie nákupu nebo kde je zadaný produkt položka typu produktu *Služba* nebo typ produktu Field Service, lze zahájit pouze v Supply Chain Management. Řádky se poté synchronizují do Dataverse a jsou viditelné ve Field Service.
-+ Pokud je nainstalován pouze produkt Field Service a ne Supply Chain Management, sloupec **Sklad** je na objednávce povinný. Pokud je však nainstalován Supply Chain Management, je tento požadavek uvolněný, protože Supply Chain Management umožňuje řádky nákupní objednávky, kde není v určitých situacích uveden žádný sklad.
-+ Příjmy z produktu (příjmy z nákupní objednávky v Dataverse) jsou spravovány pomocí Supply Chain Management a nelze z nich vytvořit Dataverse, pokud je nainstalován Supply Chain Management. Příjmy produktu ze Supply Chain Management jsou synchronizovány ze Supply Chain Management do Dataverse.
-+ V Supply Chain Management je povoleno nedostatečné doručení. Řešení OneFSSCM přidává logiku, takže když je na řádku pro příjem produktu (nebo produkt příjmu nákupní objednávky v Dataverse) vytvořen nebo aktualizován, je vytvořen řádek deníku zásob Dataverse pro úpravu zbývajícího množství, které je v pořadí pro scénáře nedostatečné dodávky.
+- Sloupec **Součty** je dostupný pouze ve službě Field Service, protože v Supply Chain Management neexistují žádné aktuální součty nákupní objednávky. Součty v Supply Chain Management se počítají na základě více parametrů, které nejsou k dispozici ve Field Service.
+- Řádky nákupní objednávky, kde je zadána pouze kategorie nákupu nebo kde je zadaný produkt položka typu produktu *Služba* nebo typ produktu Field Service, lze zahájit pouze v Supply Chain Management. Řádky se poté synchronizují do Dataverse a jsou viditelné ve Field Service.
+- Pokud je nainstalován pouze produkt Field Service a ne Supply Chain Management, sloupec **Sklad** je na objednávce povinný. Pokud je však nainstalován Supply Chain Management, je tento požadavek uvolněný, protože Supply Chain Management umožňuje řádky nákupní objednávky, kde není v určitých situacích uveden žádný sklad.
+- Příjmy z produktu (příjmy z nákupní objednávky v Dataverse) jsou spravovány pomocí Supply Chain Management a nelze z nich vytvořit Dataverse, pokud je nainstalován Supply Chain Management. Příjmy produktu ze Supply Chain Management jsou synchronizovány ze Supply Chain Management do Dataverse.
+- V Supply Chain Management je povoleno nedostatečné doručení. Řešení OneFSSCM přidává logiku, takže když je na řádku pro příjem produktu (nebo produkt příjmu nákupní objednávky v Dataverse) vytvořen nebo aktualizován, je vytvořen řádek deníku zásob Dataverse pro úpravu zbývajícího množství, které je v pořadí pro scénáře nedostatečné dodávky.
 
 ## <a name="unsupported-scenarios"></a>Nepodporované scénáře
 
-+ Field Service zabraňuje přidání řádků do zrušené nákupní objednávky v Supply Chain Management. Jako řešení můžete změnit stav systému nákupní objednávky ve Field Service a poté přidat nový řádek do Field Service nebo Supply Chain Management.
-+ Přestože řádky nákupu ovlivňují úrovně zásob v obou systémech, tato integrace nezajišťuje vyrovnání zásob napříč Supply Chain Management a Field Service. Field Service i Supply Chain Management mají další procesy, které aktualizují úrovně zásob. Tyto procesy jsou mimo rozsah nákupu.
+- Field Service zabraňuje přidání řádků do zrušené nákupní objednávky v Supply Chain Management. Jako řešení můžete změnit stav systému nákupní objednávky ve Field Service a poté přidat nový řádek do Field Service nebo Supply Chain Management.
+- Přestože řádky nákupu ovlivňují úrovně zásob v obou systémech, tato integrace nezajišťuje vyrovnání zásob napříč Supply Chain Management a Field Service. Field Service i Supply Chain Management mají další procesy, které aktualizují úrovně zásob. Tyto procesy jsou mimo rozsah nákupu.
 
 ## <a name="status-management"></a>Správa stavu
 
@@ -161,13 +160,13 @@ Stavy schválení řádku jsou aktivní pouze v případě, že existuje pracovn
 
 Na stavové sloupce se vztahují následující pravidla:
 
-+ Stav v Supply Chain Management nelze z Field Service aktualizovat. V některých případech se však stav ve Field Service aktualizuje, když se změní stav nákupní objednávky v Supply Chain Management.
-+ Pokud je nákupní objednávka v Supply Chain Management ve správě změn a zpracovává se změna, je stav schválení *Koncept* nebo *Probíhá kontrola*. V tomto případě bude stav schválení Field Service nastaven na *Null*.
-+ Pokud je stav schválení nákupní objednávky v Supply Chain Management nastaven na *Schváleno*, *Probíhá externí kontrola*, *Potvrzeno* nebo *Dokončeno*, stav schválení nákupní objednávky Field Service bude nastaven na *Schváleno*.
-+ Pokud je stav schválení nákupní objednávky v Supply Chain Management nastaven na *Zamítnuto*, stav schválení nákupní objednávky Field Service bude nastaven na *Zamítnuto*.
-+ Pokud se stav záhlaví dokumentu v Supply Chain Management změní na *Otevřená objednávka (zpětná objednávka)* a stav nákupní objednávky Field Service je *Koncept* nebo *Zrušeno*, stav nákupní objednávky ve Field Service se změní na *Odesláno*.
-+ Pokud se stav záhlaví dokumentu v Supply Chain Management změní na *Zrušeno* a ve Field Service nejsou žádné produkty příjmu nákupní objednávky spojené s nákupní objednávkou (prostřednictvím produktů nákupní objednávky), stav systému Field Service se nastaví na *Zrušeno*.
-+ Pokud je stav řádku nákupní objednávky v Supply Chain Management *Zrušeno*, je stav produktu objednávky ve Field Service nastaven na *Zrušeno*. Kromě toho, pokud se změní stav řádku nákupní objednávky v Supply Chain Management ze *Zrušeno* na *Zpětná objednávka*, je stav položky produktu nákupní objednávky ve Field Service nastaven na *čekající*.
+- Stav v Supply Chain Management nelze z Field Service aktualizovat. V některých případech se však stav ve Field Service aktualizuje, když se změní stav nákupní objednávky v Supply Chain Management.
+- Pokud je nákupní objednávka v Supply Chain Management ve správě změn a zpracovává se změna, je stav schválení *Koncept* nebo *Probíhá kontrola*. V tomto případě bude stav schválení Field Service nastaven na *Null*.
+- Pokud je stav schválení nákupní objednávky v Supply Chain Management nastaven na *Schváleno*, *Probíhá externí kontrola*, *Potvrzeno* nebo *Dokončeno*, stav schválení nákupní objednávky Field Service bude nastaven na *Schváleno*.
+- Pokud je stav schválení nákupní objednávky v Supply Chain Management nastaven na *Zamítnuto*, stav schválení nákupní objednávky Field Service bude nastaven na *Zamítnuto*.
+- Pokud se stav záhlaví dokumentu v Supply Chain Management změní na *Otevřená objednávka (zpětná objednávka)* a stav nákupní objednávky Field Service je *Koncept* nebo *Zrušeno*, stav nákupní objednávky ve Field Service se změní na *Odesláno*.
+- Pokud se stav záhlaví dokumentu v Supply Chain Management změní na *Zrušeno* a ve Field Service nejsou žádné produkty příjmu nákupní objednávky spojené s nákupní objednávkou (prostřednictvím produktů nákupní objednávky), stav systému Field Service se nastaví na *Zrušeno*.
+- Pokud je stav řádku nákupní objednávky v Supply Chain Management *Zrušeno*, je stav produktu objednávky ve Field Service nastaven na *Zrušeno*. Kromě toho, pokud se změní stav řádku nákupní objednávky v Supply Chain Management ze *Zrušeno* na *Zpětná objednávka*, je stav položky produktu nákupní objednávky ve Field Service nastaven na *čekající*.
 
 ## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Synchronizace na vyžádání s nákupem v Supply Chain Management
 

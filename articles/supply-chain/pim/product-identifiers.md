@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1e771d6cbad3faf99f88782d424273f0d8ac98b4
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011358"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574190"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu
 
@@ -41,7 +41,7 @@ V aplikaci Dynamics 365 Supply Chain Management je primárním identifikátorem 
 
 V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamics 365 Supply Chain Management. Namísto toho je přidružen k produktu v systému správy (PLM) životního cyklu produktu nebo systém pro správu dat produktu (PDM). V takovém případě používáte data entity k importu produktů a variant produktu. Aplikace Supply Chain Management pak tato čísla použije ve všech operacích.
 
-Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
+Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je zvláštní název představující klasifikaci produktu.
 
 Pokud použijete Microsoft Dataverse, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Microsoft Dataverse. Varianty produktu jsou synchronizovány do Dataverse jako odlišné produkty.
 
@@ -89,7 +89,7 @@ Na stránce **Externí popisy položek** můžete přidružit číslo položky o
 | popis | Název, který odběratel přiřadil k položce | Název, který dodavatel přiřadil k položce |
 | Externí text položky | Popis položky odběratele | Popis položky dodavatele |
 
-Používá-li více odběratelů nebo dodavatelů stejná čísla položek (například v případě nákupního přidružení nebo velkoobchodní skupiny), můžete vytvořit skupiny odběratelů nebo dodavatelů, chcete-li zjednodušit správu informací o externích produktech.
+Používá-li více odběratelů nebo dodavatelů stejná čísla položek (například u nákupního přidružení nebo velkoobchodní skupiny), můžete vytvořit skupiny odběratelů nebo dodavatelů, chcete-li zjednodušit správu informací o externích produktech.
 
 - Pro skupiny odběratelů přejděte na **Prodej** &gt; **nastavení** &gt; **položky** &gt; **externí popis položky** k vytváření a údržbě skupin a jejich souvisejících čísel položek. Pokud chcete přiřadit odběratele ke skupině, přejděte na **Pohledávky** &gt; **Odběratelé** &gt; **Všichni odběratelé** a poté na pevné záložce **Výchozí nastavení prodejních objednávek** určete hodnotu v poli **Položka – Skupina odběratelů**.
 - Pro skupiny dodavatelů přejděte na **Zásobování a zdroje** &gt; **nastavení** &gt; **Skupina popisu externí položky** k vytváření a údržbě skupin a jejich souvisejících čísel položek. Pokud chcete přiřadit dodavatele ke skupině, přejděte na **Pohledávky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé** a poté na pevné záložce **Výchozí nastavení nákupních objednávek** určete hodnotu v poli **Položka – Skupina dodavatelů**.
@@ -108,7 +108,7 @@ Chcete-li spravovat čárové kódy, zvolte na stránce **Uvolněné produkty** 
 
 V elektronickém obchodování je důležité, aby všechny strany mluvily společným jazykem a odkazovaly na produkty pomocí společné sady identifikátorů. Proto některá odvětví spoléhají na [GTIN](https://www.gs1.org/id-keys/gtin), což je globální systém čísel položek zprostředkovaný GS1.
 
-Doporučujeme udržovat číslo GTIN jako čárový kód. Lze ho však dále udržovat také na stránce **Položka – GTIN**. Chcete-li otevřít tuto stránku, zvolte na stránce **Uvolněné produkty** na kartě **Správa skladu** ve skupině **Sklad** možnost **Kódy GTIN**. Všimněte si, že není GTIN udržováno jako globální číslo. Namísto toho se spravuje podle právnické osoby.
+Doporučujeme udržovat číslo GTIN jako čárový kód. Lze ho však dále udržovat také na stránce **Položka – GTIN**. Chcete-li otevřít tuto stránku, zvolte na stránce **Uvolněné produkty** na kartě **Správa skladu** ve skupině **Sklad** možnost **Kódy GTIN**. GTIN není udržováno jako globální číslo. Namísto toho se spravuje podle právnické osoby.
 
 V modulu Supply Chain Management lze určit varianty balení pro skladové operace definováním konkrétní měrné jednotky. Například položka by mohla být uložena po kusech, sadách po šesti, v zásobnících po 18 nebo na plných paletách. Konkrétní jednotka měření bude určena pro každou z těchto varianty balení. Vzhledem k tomu, že GTIN obvykle souvisí s jednotkou balení produktů, stránka **Položka – GTIN** stránce umožňuje spravovat více kódů GTIN pro produkt a měrnou jednotku. Nemůžete však použít stejný kód GTIN opakovaně pro různé položky nebo varianty produktu právnické osoby.
 
@@ -126,12 +126,12 @@ Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání 
 |-------------|--------------------|--------------------|----------|
 | Produkty V2 | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na nastavení entity a číselné řady pro číslo produktu lze automaticky vytvořit číslo produktu v okamžiku importu. |
 | Varianty produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na šabloně klasifikace produktu může být číslo výrobku automaticky vytvořeno při importu. Můžete však importovat všechna jedinečná číslo výrobku a toto číslo produktu nemusí vycházet ze struktury šablony klasifikace produktu. |
-| Překlady produktu | Název produktu, popis produktu | Název produktu, popis produktu | Tato entita přepíše libovolný jazyk. Všimněte si, že při když je přepsán název nebo popis jazyka primární právnické osoby, název a popis produktu se změní. |
+| Překlady produktu | Název produktu, popis produktu | Název produktu, popis produktu | Tato entita přepíše libovolný jazyk. Když je přepsán název nebo popis jazyka primární právnické osoby, název a popis produktu se změní. |
 | Tvorba uvolněného produktu V2 | Číslo položky, číslo produktu, vyhledávací název položky| Číslo položky, číslo produktu, vyhledávací název položky, vyhledávací název produktu, název produktu | Tato entita může být složitá při použití číselných řad během vytváření nových uvolněných produktů. Vliv má číselná řada **č. položky** i **číslo produktu**. Číselná řada **Číslo položky** však platí pro právnickou osobu, zatímco číselná řada **číslo produktu** je globální. Proto nedoporučujeme používat číselnou řadu **Číslo položky** při nasazení nových uvolněných produktů. Samozřejmě při použití entity pro uvolnění existujícího produktu musí být číslo produktu uvedeno v entitě. Další informace naleznete v tématu "Číselné řady produktů a položek" v tomto tématu. |
 | Uvolněné varianty produktu | Číslo položky, dimenze produktu, číslo produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu, dimenze produktu | Stejně jako entit **varianty produktu** i tato entita slouží k vytvoření nových produktů, které mají stejnou šablonu klasifikace produktu nebo číslo produktu pro variantu. |
 | Popisy externích položek pro odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Skupinu odběratelů (například přidružení kupujícího) lze sloučit do jedné skupiny pomocí entity **Skupiny odběratelů popisu externí položky**. |
 | Popis externích položek pro dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Skupinu dodavatelů (například prodejní asociaci nebo průmyslovou organizaci) lze sloučit do jedné skupiny pomocí entity **Skupiny dodavatelů popisu externí položky**. |
-| Čárový kód položky | Čárový kód | Čárový kód | Všimněte si, že při importu musíte odkazovat na nastavení čárového kódu, který je definován v cílovém systému. Importované odkazy čárového kódu jsou ověřovány proti nastavení čárového kódu a jsou odmítnuty, pokud neodpovídají požadavkům definovaným v nastavení čárového kódu. |
+| Čárový kód položky | Čárový kód | Čárový kód | Při importu musíte odkazovat na nastavení čárového kódu, který je definován v cílovém systému. Importované odkazy čárového kódu jsou ověřovány proti nastavení čárového kódu a jsou odmítnuty, pokud neodpovídají požadavkům definovaným v tomto nastavení. |
 | Externí kódy pro uvolněné produkty | Externí kód | Externí kód, třídy externího kódu, číslo položky | Externí kódy jsou podle právnické osoby. Pro import musíte odkazovat na definovaný kód třídy. Importujte třídy kódu pomocí entity **Třídy externího kódu pro uvolněné produkty**. |
 | Externí kódy pro uvolněné varianty produkty | Externí kód | Externí kód, třídy externího kódu, číslo položky, dimenze produktu | Externí kódy jsou podle právnické osoby. Pro import musíte odkazovat na definovaný kód třídy. Importujte třídy kódu pomocí entity **Třídy externího kódu pro uvolněné produkty**. Tato entita odkazuje na varianty produktu podle čísla položky a dimenze produktu. |
 | Exportovat kódy pro uvolněné varianty produktu podle identifikátoru čísla produktu | Externí kód | Externí kód, třídy externího kódu, číslo produktu | Externí kódy jsou podle právnické osoby. Pro import musíte odkazovat na definovaný kód třídy. Importujte třídy kódu pomocí entity **Třídy externího kódu pro uvolněné produkty**. Tato entita odkazuje na varianty produktu podle čísla produktu varianty. (Od další hlavní verze) |
@@ -160,8 +160,8 @@ Následující tabulka obsahuje přehled výsledků importu a ručního vytvoře
 | Číselná řada čísla produktu | Číselná řada čísel položky | Mapování čísla položky | Mapování čísla produktu | Výsledek importu entity | Výsledek ručního vytvoření | Závěr |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Je ruční = Ne | Je ruční = Ne | Žádné mapování | Žádné mapování | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | S touto konfigurací budou čísla produktů následovat po číselné řadě produktů a čísla položek budou následovat po číselné řadě položek. Tato konfigurace však nebude fungovat v případě, že existuje více než jedna položka (řádek), která má být importována. |
-| Je ruční = Ne | Ruční = Ano | Automaticky vygenerovat | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo položky**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Jedná se o doporučený postup při importu nebalených produktů s použitím datové entity Tvorba uvolněného produktu V2. |
-| Je ruční = Ne | Ruční = Ano | Žádné mapování | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Tato konfigurace však nebude fungovat v případě, že existuje více než jedna položka (řádek), která má být importována. |
+| Je ruční = Ne | Ruční = Ano | Automaticky vygenerovat | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo položky**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Jedná se o doporučený postup při importu nebalených produktů s použitím datové entity Tvorba uvolněného produktu V2.<br><br>Tento přístup můžete použít pouze při hromadném importu položek (několik řádků) a při vytváření položek prostřednictvím uživatelského rozhraní. Pokud potřebujete hromadný import i vytváření produktů prostřednictvím uživatelského rozhraní, použijte místo toho postup v dalším řádku této tabulky. Chcete-li přejít z přístupu hromadného importu k ručnímu importu a vytváření produktů pomocí uživatelského rozhraní, musíte ručně upravit **další číslo** v pořadí čísel číselné řady položek tak, aby odpovídalo **dalšímu číslu** v číselné řadě čísel produktů. Pak byste mohli přepnout na přístup v dalším řádku této tabulky. |
+| Je ruční = Ne | Ruční = Ano | Žádné mapování | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Tato konfigurace však nebude fungovat v případě, že existuje více než jedna položka (řádek), která má být importována.<br><br>Tento přístup musíte použít, pokud potřebujete importovat produkty pomocí entit (lze importovat pouze jeden řádek najednou), tak vytvářet produkty prostřednictvím uživatelského rozhraní. |
 | Ruční = Ano | Nelze použít | Nelze použít | Automaticky vygenerovat | Obdržíte následující chybovou zprávu: Nelze detekovat číselnou řadu. | Podle číselné řady **Číslo položky** | Toto nastavení není podporováno pro import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifikátor entity produktu (exportovat všechny identifikátory produktu)
@@ -178,7 +178,7 @@ Takto se konfiguruje prostředí:
 2. Vyberte právnickou osobu pro globální hlavní data produktu. Na stránce **parametry modulu řízení informací o produktu** na kartě **Atributy produktu** vyberte hlavní společnost, kde jsou primárně zachovány identifikátory produktů a položek.
 3. Definování typů kódů identifikátorů, které mají být exportovány. Přejděte na **řízení informací o produktech** &gt; **nastavení** &gt; **Kódy identifikátoru produktu**. Pro vygenerování typů kódů identifikátoru vyberte **Generovat kódy**. Pro každý typ identifikace, která je nalezena ve vybrané právnické osobě je generována položka typu kódu.
 
-    Všimněte si, že pro čárové kódy se kód typu generuje pro každé nastavení čárového kódu. Pro každou třídu externího kódu je generován typ kódu.
+    Pro čárové kódy se kód typu generuje pro každé nastavení čárového kódu. Pro každou třídu externího kódu je generován typ kódu.
 
     Nyní můžete spravovat seznam typů kódů. Můžete změnit kód, název a popis. Můžete také odstranit typy kódů. Typy kódů, které odstraníte, nebudou použity k naplnění globálních tabulek identifikátorů entity produktu.
 

@@ -3,7 +3,7 @@ title: Operace odvolání objednávky v POS
 description: Toto téma vysvětluje funkce, které jsou dostupné u vylepšených stránek pro odvolání objednávek v POS.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010067"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585123"
 ---
 # <a name="recall-order-operation-in-pos"></a>Operace odvolání objednávky v POS
 
@@ -35,7 +35,7 @@ Konfigurace tlačítka operace **Odvolání objednávky** umožňuje organizací
 
 K dispozici jsou následující možnosti zobrazení.
 - **Žádné** – tato možnost nasadí tuto operaci bez konkrétního zobrazení. Když uživatel otevře operaci s touto konfigurací, bude vyzván k vyhledání objednávek nebo k výběru z předdefinovaného filtru objednávek.
-- **Objednávky k plnění** – když uživatel zahájí tuto operaci, automaticky se spustí dotaz, který vyhledá a zobrazí seznam objednávek, které má obchod splnit. Tyto objednávky jsou nakonfigurovány pro výdej v obchodě nebo dodávku z obchodu, přičemž řádky těchto objednávek ještě nebyly vydány nebo zabaleny.
+- **Objednávky k plnění** – když uživatel zahájí tuto operaci, automaticky se spustí dotaz, který vyhledá a zobrazí seznam objednávek, které má aktuální obchod uživatele splnit. Tyto objednávky jsou nakonfigurovány pro výdej v obchodě nebo dodávku z obchodu, přičemž řádky těchto objednávek ještě nebyly vydány nebo zabaleny.
 - **Objednávky k vydání** – když uživatel zahájí tuto operaci, automaticky se spustí dotaz, který vyhledá a zobrazí seznam objednávek, které jsou nakonfigurovány pro výdej v aktuálním obchodě uživatele.
 - **Objednávky k dodávce** – když uživatel zahájí tuto operaci, automaticky se spustí dotaz, který vyhledá a zobrazí seznam objednávek, které jsou nakonfigurovány pro dodávku z aktuálního obchodu uživatele.
 
@@ -46,7 +46,7 @@ Pokud uživatel zahájí operaci **Odvolat objednávku** z POS, když je zobraze
 
 ![Hlavní nabídka odvolání objednávky](media/recallordermain.png)
 
-Po uplatnění kritérií hledání zobrazí aplikace seznam odpovídajících prodejních objednávek.
+Po uplatnění kritérií hledání zobrazí aplikace seznam odpovídajících prodejních objednávek. Je důležité si uvědomit, že při použití možností vyhledávání/filtrování nemusí být načtené objednávky objednávkami propojenými s aktuálním obchodem uživatele. Tento vyhledávací proces načte a zobrazí jakoukoli objednávku zákazníka, která odpovídá kritériím vyhledávání, i když byla objednávka vytvořena nebo nastavena tak, aby byla splněna v jiném obchodě/kanálu nebo skladem.
 
 ![Podrobnosti odvolání objednávky](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ Výběrem objednávky v seznamu může uživatel zobrazit další podrobnosti. I
 
 Na panelu aplikace může uživatel vybrat některou operaci. V závislosti na stavu objednávky nemusí být některé operace povoleny.
 
-- **Vrátit** – provede vrácení jedné nebo více faktur souvisejících s vybranou objednávkou odběratele.
+- **Vrácení** – Zahájí proces vytváření vrácení u některého z fakturovaných produktů u vybrané objednávky zákazníka.
 
-- **Storno** – vystaví úplné zrušení vybrané prodejní objednávky.
+- **Storno** – vystaví úplné zrušení vybrané prodejní objednávky. Tato možnost nebude k dispozici u objednávek iniciovaných prostřednictvím kanálu call centra a nelze ji použít k částečnému zrušení objednávky.
 
 - **Splnit** – přenese uživatele na stránku pro splnění objednávky, která bude předfiltrována na vybranou objednávku. Zobrazí se pouze řádky vybrané objednávky, které jsou otevřené pro splnění obchodem uživatele.
 
-- **Upravit** – umožňuje uživatelům provádět změny ve vybrané objednávce odběratele.
+- **Upravit** – umožňuje uživatelům provádět změny ve vybrané objednávce odběratele. Objednávky lze upravovat pouze v [určitých scénářích](customer-orders-overview.md#edit-an-existing-customer-order).
 
-- **Vydat** – spustí tok vydání, který uživateli umožňuje vybrat produkty, které mají být vydány, a vytvoří prodejní transakci výdeje.
+- **Vyzvednutí** – Tato možnost bude k dispozici, pokud má objednávka jeden nebo více řádků určených k vyzvednutí v aktuálním obchodě uživatele. Tato operace spustí tok vydání, který uživateli umožňuje vybrat produkty, které mají být vydány, a vytvoří prodejní transakci výdeje.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Přidání oznámení k operaci zrušení objednávky
+
+Ve verzi 10.0.18 a novější můžete nakonfigurovat oznámení POS a živá upozornění na dlaždice pro operaci **Zrušení objednávky**, pokud je to požadováno. Další informace viz [Zobrazit oznámení o objednávce v prodejním místě (POS)](notifications-pos.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

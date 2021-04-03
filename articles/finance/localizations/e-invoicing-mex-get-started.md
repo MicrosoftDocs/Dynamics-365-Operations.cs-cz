@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988467"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592639"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Začněte s doplňkem elektronické fakturace pro Mexiko
 
@@ -291,7 +291,7 @@ Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturac
     ![Zobrazení podrobností protokolu odeslání zrušení](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Povolení funkcí MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) může vyžadovat zasílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkce MX-00010 a MX-00016 (Faktura CFDI a zrušení CFDI) přechodem na **Správa organizace \> Nastavení \> Parametry elektronckého dokumentu**. Vyberte kartu **Funkce**, vyberte řádky obsahující funkce MX-00010 a MX-00016 a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
+Aktivace funkce **Mexická elektronická faktura CFDI (MX)** může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovým úřadem pro účely zasílání elektronických faktur tomuto daňovému úřadu v předdefinovaném formátu požadovaném pro integraci s webovými službami těchto vlád. Správce může povolit a zakázat funkci **Mexická elektronická faktura CFDI (MX)** přechodem na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**. Vyberte kartu **Funkce**, vyberte řádky, které obsahují funkci **Mexická elektronická faktura CFDI (MX)**, a poté proveďte příslušný výběr. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13415f68f41555f3e86cbe699cf921e9a2cf6d5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b7e68ec4d172ced7ac66837e9580971d22b23b5f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111716"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465743"
 ---
 # <a name="set-up-compensation-grids"></a>Nastavit kompenzační mřížky
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompenzační mřížky umožňují definovat a spravovat struktury plateb pro plány fixní kompenzace. Kompenzační mřížky můžete sdílet mezi několika plány nebo zkopírovat při vytvoření nového plánu kompenzace.  Před vytvořením kompenzační mřížky, je nutné nastavit úrovně a referenční body. V tomto příkladu vytvoříme nový typ třídy kompenzační mřížky pomocí ukázkových dat pro úrovně a referenční body. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

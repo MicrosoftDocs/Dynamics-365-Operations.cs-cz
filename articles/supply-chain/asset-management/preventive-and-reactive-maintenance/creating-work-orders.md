@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131786"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500567"
 ---
 # <a name="creating-work-orders"></a>Vytvoření pracovních příkazů
 
@@ -62,8 +62,7 @@ Chcete-li vytvořit pracovní příkazy, které jsou založeny na vašem plánu 
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Seskupte řádky pracovních příkazů, které se automaticky vytvářejí, když běží plán údržby
 
-> [!IMPORTANT]
-> Tato funkce popsaná v této části je k dispozici jako součást soukromé verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Tato funkce umožňuje definovat pravidla pro seskupování řádků pracovních příkazů do jednoho pracovního příkazu, když je systém nastaven na automatické generování pracovních příkazů na základě plánu údržby. Dříve mohly automaticky generované pracovní příkazy obsahovat pouze jeden řádek. Nyní však můžete pracovní příkazy seskupovat například podle majetku, typu majetku nebo funkčního umístění. (Ručně generované pracovní příkazy již lze tímto způsobem seskupit, jak je popsáno v předchozí části tohoto tématu.)
 
