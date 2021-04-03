@@ -16,116 +16,121 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 50be7631ec303171640b7fa9e6d283a198bd1a52
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115455"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464999"
 ---
-# <a name="distribute-questionnaires-using-scheduling"></a><span data-ttu-id="4a3b9-103">Distribuce dotazníků s použitím plánování</span><span class="sxs-lookup"><span data-stu-id="4a3b9-103">Distribute questionnaires using scheduling</span></span>
+# <a name="distribute-questionnaires-using-scheduling"></a><span data-ttu-id="b04d5-103">Distribuce dotazníků s použitím plánování</span><span class="sxs-lookup"><span data-stu-id="b04d5-103">Distribute questionnaires using scheduling</span></span>
 
-<span data-ttu-id="4a3b9-104">Plánování dotazníků umožňuje plánovat a rozdělovat dotazníky mezi více respondentů.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-104">Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents.</span></span> <span data-ttu-id="4a3b9-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-105">The demo data company used to create this procedure is USMF.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="create-a-questionnaire-schedule"></a><span data-ttu-id="4a3b9-106">Vytvořte plán dotazníku</span><span class="sxs-lookup"><span data-stu-id="4a3b9-106">Create a questionnaire schedule</span></span>
+<span data-ttu-id="b04d5-104">Plánování dotazníků umožňuje plánovat a rozdělovat dotazníky mezi více respondentů.</span><span class="sxs-lookup"><span data-stu-id="b04d5-104">Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents.</span></span> <span data-ttu-id="b04d5-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="b04d5-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="4a3b9-107">Přejděte na Dotazník > Distribuovat > Plány dotazníků.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-107">Go to Questionnaire > Distribute > Questionnaire schedules.</span></span>
+## <a name="create-a-questionnaire-schedule"></a><span data-ttu-id="b04d5-106">Vytvořte plán dotazníku</span><span class="sxs-lookup"><span data-stu-id="b04d5-106">Create a questionnaire schedule</span></span>
 
-2. <span data-ttu-id="4a3b9-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-108">Click New.</span></span>
+1. <span data-ttu-id="b04d5-107">Přejděte na Dotazník > Distribuovat > Plány dotazníků.</span><span class="sxs-lookup"><span data-stu-id="b04d5-107">Go to Questionnaire > Distribute > Questionnaire schedules.</span></span>
 
-3. <span data-ttu-id="4a3b9-109">Zadejte hodnotu do pole Plánování.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-109">In the Scheduling field, type a value.</span></span>
+2. <span data-ttu-id="b04d5-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="b04d5-108">Click New.</span></span>
 
-4. <span data-ttu-id="4a3b9-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-110">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="4a3b9-111">Nastavte plán pro anonymní v případě, že odpověď by měla být zaznamenána bez jmen přiřazených k odpovědi.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-111">Set the schedule to Anonymous if the responses should be recorded without names associated to the response.</span></span>  
-    * <span data-ttu-id="4a3b9-112">Povolení anonymních výsledků musí být v parametrech HR nejprve nastaveno.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-112">Allowing anonymous results must be set up in the HR parameters first.</span></span>  
+3. <span data-ttu-id="b04d5-109">Zadejte hodnotu do pole Plánování.</span><span class="sxs-lookup"><span data-stu-id="b04d5-109">In the Scheduling field, type a value.</span></span>
 
-5. <span data-ttu-id="4a3b9-113">V poli Typ vyberte typ plánování.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-113">In the Type field, select the planning type.</span></span>  <span data-ttu-id="4a3b9-114">V tomto příkladu použijeme typ Spokojenost.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-114">In this example we will use the Satisfaction type.</span></span>
+4. <span data-ttu-id="b04d5-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="b04d5-110">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="b04d5-111">Nastavte plán pro anonymní v případě, že odpověď by měla být zaznamenána bez jmen přiřazených k odpovědi.</span><span class="sxs-lookup"><span data-stu-id="b04d5-111">Set the schedule to Anonymous if the responses should be recorded without names associated to the response.</span></span>  
+    * <span data-ttu-id="b04d5-112">Povolení anonymních výsledků musí být v parametrech HR nejprve nastaveno.</span><span class="sxs-lookup"><span data-stu-id="b04d5-112">Allowing anonymous results must be set up in the HR parameters first.</span></span>  
 
-6. <span data-ttu-id="4a3b9-115">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-115">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="b04d5-113">V poli Typ vyberte typ plánování.</span><span class="sxs-lookup"><span data-stu-id="b04d5-113">In the Type field, select the planning type.</span></span>  <span data-ttu-id="b04d5-114">V tomto příkladu použijeme typ Spokojenost.</span><span class="sxs-lookup"><span data-stu-id="b04d5-114">In this example we will use the Satisfaction type.</span></span>
 
-7. <span data-ttu-id="4a3b9-116">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-116">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="b04d5-115">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="b04d5-115">In the list, find and select the desired record.</span></span>
 
-8. <span data-ttu-id="4a3b9-117">Do pole Datum zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-117">In the Date field, enter a date.</span></span>
+7. <span data-ttu-id="b04d5-116">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="b04d5-116">In the list, click the link in the selected row.</span></span>
 
-9. <span data-ttu-id="4a3b9-118">Rozbalte oddíl E-mail pro samoobsluhu pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-118">Expand the Email for employee self service section.</span></span>
+8. <span data-ttu-id="b04d5-117">Do pole Datum zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="b04d5-117">In the Date field, enter a date.</span></span>
 
-10. <span data-ttu-id="4a3b9-119">Zadejte hodnotu do pole Předmět.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-119">In the Subject field, type a value.</span></span>
+9. <span data-ttu-id="b04d5-118">Rozbalte oddíl E-mail pro samoobsluhu pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="b04d5-118">Expand the Email for employee self service section.</span></span>
 
-    * <span data-ttu-id="4a3b9-120">Příklad: Dotazník k dispozici</span><span class="sxs-lookup"><span data-stu-id="4a3b9-120">Example: Questionnaire available</span></span>  
+10. <span data-ttu-id="b04d5-119">Zadejte hodnotu do pole Předmět.</span><span class="sxs-lookup"><span data-stu-id="b04d5-119">In the Subject field, type a value.</span></span>
 
-11. <span data-ttu-id="4a3b9-121">Do pole Text zadejte text e-mailové zprávy.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-121">In the Text field, type the body of your email message.</span></span> <span data-ttu-id="4a3b9-122">Všimněte si, že proměnná slouží k nahrazení hodnot v systému.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-122">Note, the variable can be used to substitue values in the system.</span></span>
+    * <span data-ttu-id="b04d5-120">Příklad: Dotazník k dispozici</span><span class="sxs-lookup"><span data-stu-id="b04d5-120">Example: Questionnaire available</span></span>  
 
-    * <span data-ttu-id="4a3b9-123">Příklad: Vážený/á %P%, přihlaste se prosím do Samoobsluhy pro zaměstnance a vyplňte dotazník zdraví pracovníků.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-123">Example: Dear %P%, Please log in to Employee Self Service to complete the Workforce Health questionnaire.</span></span>  <span data-ttu-id="4a3b9-124">Contoso</span><span class="sxs-lookup"><span data-stu-id="4a3b9-124">Contoso</span></span>  
+11. <span data-ttu-id="b04d5-121">Do pole Text zadejte text e-mailové zprávy.</span><span class="sxs-lookup"><span data-stu-id="b04d5-121">In the Text field, type the body of your email message.</span></span> <span data-ttu-id="b04d5-122">Všimněte si, že proměnná slouží k nahrazení hodnot v systému.</span><span class="sxs-lookup"><span data-stu-id="b04d5-122">Note, the variable can be used to substitue values in the system.</span></span>
 
-12. <span data-ttu-id="4a3b9-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-125">Click Save.</span></span>
+    * <span data-ttu-id="b04d5-123">Příklad: Vážený/á %P%, přihlaste se prosím do Samoobsluhy pro zaměstnance a vyplňte dotazník zdraví pracovníků.</span><span class="sxs-lookup"><span data-stu-id="b04d5-123">Example: Dear %P%, Please log in to Employee Self Service to complete the Workforce Health questionnaire.</span></span>  <span data-ttu-id="b04d5-124">Contoso</span><span class="sxs-lookup"><span data-stu-id="b04d5-124">Contoso</span></span>  
 
-## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a><span data-ttu-id="4a3b9-126">Použijte Podrobnosti nastavení pro výběr dotazníků, které chcete zodpovědět společně s dotazy, které chcete použít u vybraných respondentů.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-126">Use the Setup details to select the questionnaire(s) to be answered as well as any queries to use to select respondents.</span></span>
+12. <span data-ttu-id="b04d5-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="b04d5-125">Click Save.</span></span>
 
-1. <span data-ttu-id="4a3b9-127">Klikněte na Podrobnosti nastavení.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-127">Click Setup details.</span></span>
+## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a><span data-ttu-id="b04d5-126">Použijte Podrobnosti nastavení pro výběr dotazníků, které chcete zodpovědět společně s dotazy, které chcete použít u vybraných respondentů.</span><span class="sxs-lookup"><span data-stu-id="b04d5-126">Use the Setup details to select the questionnaire(s) to be answered as well as any queries to use to select respondents.</span></span>
 
-2. <span data-ttu-id="4a3b9-128">V seznamu vyberte dotaz, který chcete použít k vyhledání systému pro respondenty dotazníku.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-128">In the list, select a query to use to search the system for respondents for the questionnaire.</span></span>
+1. <span data-ttu-id="b04d5-127">Klikněte na Podrobnosti nastavení.</span><span class="sxs-lookup"><span data-stu-id="b04d5-127">Click Setup details.</span></span>
 
-    * <span data-ttu-id="4a3b9-129">Příklad: Pracovníci</span><span class="sxs-lookup"><span data-stu-id="4a3b9-129">Example: Workers</span></span>  
+2. <span data-ttu-id="b04d5-128">V seznamu vyberte dotaz, který chcete použít k vyhledání systému pro respondenty dotazníku.</span><span class="sxs-lookup"><span data-stu-id="b04d5-128">In the list, select a query to use to search the system for respondents for the questionnaire.</span></span>
 
-3. <span data-ttu-id="4a3b9-130">Klepněte na tlačítko Zobrazit nebo upravit dotaz a vyberte tak určité uživatele nebo upravte dotaz a vyhledejte tak osoby odpovídající konkrétním kritériím.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-130">Click View or modify query to select specific people or adjust the query to find people who match specific criteria.</span></span>
+    * <span data-ttu-id="b04d5-129">Příklad: Pracovníci</span><span class="sxs-lookup"><span data-stu-id="b04d5-129">Example: Workers</span></span>  
 
-    * <span data-ttu-id="4a3b9-131">Respondenti musí být také uživateli v systému.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-131">Note that all respondents must also be users in the system.</span></span>  
+3. <span data-ttu-id="b04d5-130">Klepněte na tlačítko Zobrazit nebo upravit dotaz a vyberte tak určité uživatele nebo upravte dotaz a vyhledejte tak osoby odpovídající konkrétním kritériím.</span><span class="sxs-lookup"><span data-stu-id="b04d5-130">Click View or modify query to select specific people or adjust the query to find people who match specific criteria.</span></span>
 
-4. <span data-ttu-id="4a3b9-132">V seznamu označte řádek Osoba.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-132">In the list, mark the row for Person</span></span>
+    * <span data-ttu-id="b04d5-131">Respondenti musí být také uživateli v systému.</span><span class="sxs-lookup"><span data-stu-id="b04d5-131">Note that all respondents must also be users in the system.</span></span>  
 
-5. <span data-ttu-id="4a3b9-133">V poli Kritéria zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-133">In the Criteria field, enter or select a value.</span></span>
+4. <span data-ttu-id="b04d5-132">V seznamu označte řádek Osoba.</span><span class="sxs-lookup"><span data-stu-id="b04d5-132">In the list, mark the row for Person</span></span>
 
-    * <span data-ttu-id="4a3b9-134">Vyberte Julia Funderburk</span><span class="sxs-lookup"><span data-stu-id="4a3b9-134">Select Julia Funderburk</span></span>  
+5. <span data-ttu-id="b04d5-133">V poli Kritéria zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="b04d5-133">In the Criteria field, enter or select a value.</span></span>
 
-6. <span data-ttu-id="4a3b9-135">V seznamu vyberte Julia Funderburk</span><span class="sxs-lookup"><span data-stu-id="4a3b9-135">In the list, select Julia Funderburk</span></span>
+    * <span data-ttu-id="b04d5-134">Vyberte Julia Funderburk</span><span class="sxs-lookup"><span data-stu-id="b04d5-134">Select Julia Funderburk</span></span>  
 
-7. <span data-ttu-id="4a3b9-136">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-136">Click OK.</span></span>
+6. <span data-ttu-id="b04d5-135">V seznamu vyberte Julia Funderburk</span><span class="sxs-lookup"><span data-stu-id="b04d5-135">In the list, select Julia Funderburk</span></span>
 
-8. <span data-ttu-id="4a3b9-137">Klepněte na kartu Dotazníky.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-137">Click the Questionnaires tab.</span></span>
+7. <span data-ttu-id="b04d5-136">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b04d5-136">Click OK.</span></span>
 
-9. <span data-ttu-id="4a3b9-138">Ve stromovém zobrazení rozbalte uzel pro typ dotazníku Průzkum spokojenosti.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-138">In the tree, expand 'the node for the questionnaire type Satisfaction Survey'.</span></span>
+8. <span data-ttu-id="b04d5-137">Klepněte na kartu Dotazníky.</span><span class="sxs-lookup"><span data-stu-id="b04d5-137">Click the Questionnaires tab.</span></span>
 
-10. <span data-ttu-id="4a3b9-139">Ve stromové struktuře označte "Posouzení zdravotního stavu pracovníků".</span><span class="sxs-lookup"><span data-stu-id="4a3b9-139">In the tree, check 'Workforce Health Assessment'.</span></span>
+9. <span data-ttu-id="b04d5-138">Ve stromovém zobrazení rozbalte uzel pro typ dotazníku Průzkum spokojenosti.</span><span class="sxs-lookup"><span data-stu-id="b04d5-138">In the tree, expand 'the node for the questionnaire type Satisfaction Survey'.</span></span>
 
-11. <span data-ttu-id="4a3b9-140">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-140">Click OK.</span></span>
+10. <span data-ttu-id="b04d5-139">Ve stromové struktuře označte "Posouzení zdravotního stavu pracovníků".</span><span class="sxs-lookup"><span data-stu-id="b04d5-139">In the tree, check 'Workforce Health Assessment'.</span></span>
 
-12. <span data-ttu-id="4a3b9-141">Klikněte na Plánovaná relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-141">Click Planned answer session.</span></span>
+11. <span data-ttu-id="b04d5-140">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b04d5-140">Click OK.</span></span>
 
-    * <span data-ttu-id="4a3b9-142">Plánované relace odpovědí byly vytvořeny pro jednotlivé vybrané/dotazované uživatele.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-142">Note that Planned answer sessions have been created for each selected/queried user.</span></span>  
+12. <span data-ttu-id="b04d5-141">Klikněte na Plánovaná relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="b04d5-141">Click Planned answer session.</span></span>
 
-13. <span data-ttu-id="4a3b9-143">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-143">Close the page.</span></span>
+    * <span data-ttu-id="b04d5-142">Plánované relace odpovědí byly vytvořeny pro jednotlivé vybrané/dotazované uživatele.</span><span class="sxs-lookup"><span data-stu-id="b04d5-142">Note that Planned answer sessions have been created for each selected/queried user.</span></span>  
 
-## <a name="start-the-questionnaire-schedule-in-order-to-make-the-questionnaire-available-for-respondents-to-complete"></a><span data-ttu-id="4a3b9-144">Zahajte plánování dotazníku, pokud chcete zpřístupnit respondentům dotazník k vyplnění.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-144">Start the questionnaire schedule in order to make the questionnaire available for respondents to complete.</span></span>
+13. <span data-ttu-id="b04d5-143">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="b04d5-143">Close the page.</span></span>
 
-1. <span data-ttu-id="4a3b9-145">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-145">Click Functions.</span></span>
+## <a name="start-the-questionnaire-schedule-in-order-to-make-the-questionnaire-available-for-respondents-to-complete"></a><span data-ttu-id="b04d5-144">Zahajte plánování dotazníku, pokud chcete zpřístupnit respondentům dotazník k vyplnění.</span><span class="sxs-lookup"><span data-stu-id="b04d5-144">Start the questionnaire schedule in order to make the questionnaire available for respondents to complete.</span></span>
 
-2. <span data-ttu-id="4a3b9-146">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-146">Click Start.</span></span>
+1. <span data-ttu-id="b04d5-145">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="b04d5-145">Click Functions.</span></span>
 
-3. <span data-ttu-id="4a3b9-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-147">Click OK.</span></span>
+2. <span data-ttu-id="b04d5-146">Klikněte na položku Spustit.</span><span class="sxs-lookup"><span data-stu-id="b04d5-146">Click Start.</span></span>
 
-## <a name="send-the-email-to-inform-respondents-of-the-available-questionnaire"></a><span data-ttu-id="4a3b9-148">Odešlete e-mail informující respondenty o dostupném dotazníku.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-148">Send the email to inform respondents of the available questionnaire.</span></span>
+3. <span data-ttu-id="b04d5-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b04d5-147">Click OK.</span></span>
 
-1. <span data-ttu-id="4a3b9-149">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-149">Click Functions.</span></span>
+## <a name="send-the-email-to-inform-respondents-of-the-available-questionnaire"></a><span data-ttu-id="b04d5-148">Odešlete e-mail informující respondenty o dostupném dotazníku.</span><span class="sxs-lookup"><span data-stu-id="b04d5-148">Send the email to inform respondents of the available questionnaire.</span></span>
 
-2. <span data-ttu-id="4a3b9-150">Klikněte na Odeslat e-mail.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-150">Click Send email.</span></span>
+1. <span data-ttu-id="b04d5-149">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="b04d5-149">Click Functions.</span></span>
 
-3. <span data-ttu-id="4a3b9-151">Klikněte na možnost Zrušit.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-151">Click Cancel.</span></span>
+2. <span data-ttu-id="b04d5-150">Klikněte na Odeslat e-mail.</span><span class="sxs-lookup"><span data-stu-id="b04d5-150">Click Send email.</span></span>
 
-## <a name="use-planned-answer-sessions-to-monitor-who-needs-to-complete-the-questionnaire"></a><span data-ttu-id="4a3b9-152">Použijte Plánované relace odpovědí ke sledování toho, kdo má dotazník vyplnit.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-152">Use Planned answer sessions to monitor who needs to complete the questionnaire.</span></span>
+3. <span data-ttu-id="b04d5-151">Klikněte na možnost Zrušit.</span><span class="sxs-lookup"><span data-stu-id="b04d5-151">Click Cancel.</span></span>
 
-1. <span data-ttu-id="4a3b9-153">Klikněte na Plánovaná relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-153">Click Planned answer session.</span></span>
+## <a name="use-planned-answer-sessions-to-monitor-who-needs-to-complete-the-questionnaire"></a><span data-ttu-id="b04d5-152">Použijte Plánované relace odpovědí ke sledování toho, kdo má dotazník vyplnit.</span><span class="sxs-lookup"><span data-stu-id="b04d5-152">Use Planned answer sessions to monitor who needs to complete the questionnaire.</span></span>
 
-    * <span data-ttu-id="4a3b9-154">Jakmile budete připraveni ukončit plánovanou relaci, odstraňte veškeré zbývající plánované relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-154">Delete any remaining planned answer session when you're ready to end the scheduled session.</span></span>  
+1. <span data-ttu-id="b04d5-153">Klikněte na Plánovaná relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="b04d5-153">Click Planned answer session.</span></span>
 
-2. <span data-ttu-id="4a3b9-155">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-155">Click Delete.</span></span>
+    * <span data-ttu-id="b04d5-154">Jakmile budete připraveni ukončit plánovanou relaci, odstraňte veškeré zbývající plánované relace odpovědí.</span><span class="sxs-lookup"><span data-stu-id="b04d5-154">Delete any remaining planned answer session when you're ready to end the scheduled session.</span></span>  
 
-3. <span data-ttu-id="4a3b9-156">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-156">Click Yes.</span></span>
+2. <span data-ttu-id="b04d5-155">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="b04d5-155">Click Delete.</span></span>
 
-4. <span data-ttu-id="4a3b9-157">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-157">Close the page.</span></span>
+3. <span data-ttu-id="b04d5-156">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="b04d5-156">Click Yes.</span></span>
 
-## <a name="end-the-schedule-when-all-respondents-have-completed-the-questionnaire-andor-all-remaining-planned-answer-sessions-have-been-deleted"></a><span data-ttu-id="4a3b9-158">Poté, co dotazník vyplní všichni respondenti nebo jsou odstraněny všechny zbývající plánované relace odpovědí, plán ukončete.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-158">End the schedule when all respondents have completed the questionnaire and/or all remaining Planned answer sessions have been deleted.</span></span>
+4. <span data-ttu-id="b04d5-157">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="b04d5-157">Close the page.</span></span>
 
-1. <span data-ttu-id="4a3b9-159">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-159">Click Functions.</span></span>
-2. <span data-ttu-id="4a3b9-160">Klepněte na tlačítko Konec.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-160">Click End.</span></span>
-3. <span data-ttu-id="4a3b9-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4a3b9-161">Click OK.</span></span>
+## <a name="end-the-schedule-when-all-respondents-have-completed-the-questionnaire-andor-all-remaining-planned-answer-sessions-have-been-deleted"></a><span data-ttu-id="b04d5-158">Poté, co dotazník vyplní všichni respondenti nebo jsou odstraněny všechny zbývající plánované relace odpovědí, plán ukončete.</span><span class="sxs-lookup"><span data-stu-id="b04d5-158">End the schedule when all respondents have completed the questionnaire and/or all remaining Planned answer sessions have been deleted.</span></span>
 
+1. <span data-ttu-id="b04d5-159">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="b04d5-159">Click Functions.</span></span>
+2. <span data-ttu-id="b04d5-160">Klepněte na tlačítko Konec.</span><span class="sxs-lookup"><span data-stu-id="b04d5-160">Click End.</span></span>
+3. <span data-ttu-id="b04d5-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b04d5-161">Click OK.</span></span>
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,41 +17,46 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d78199cf0e76ffd0676a26961a8e646938dc7333
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 9be1c2b862a01d6f14ad98dbcb01e061649c6af0
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111825"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463977"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a><span data-ttu-id="42821-103">Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="42821-103">Human Resources doesn't appear in Microsoft Dynamics 365 apps</span></span>
+# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a><span data-ttu-id="cacac-103">Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="cacac-103">Human Resources doesn't appear in Microsoft Dynamics 365 apps</span></span>
 
-<span data-ttu-id="42821-104">**Vydání**</span><span class="sxs-lookup"><span data-stu-id="42821-104">**Issue**</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="42821-105">Zákazník nevidí Dynamics 365 Human Resources mezi aplikacemi Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="42821-105">The customer doesn't see Dynamics 365 Human Resources among the Microsoft Dynamics 365 apps.</span></span>
+<span data-ttu-id="cacac-104">**Vydání**</span><span class="sxs-lookup"><span data-stu-id="cacac-104">**Issue**</span></span>
 
-<span data-ttu-id="42821-106">**Rozlišení**</span><span class="sxs-lookup"><span data-stu-id="42821-106">**Resolution**</span></span>
+<span data-ttu-id="cacac-105">Zákazník nevidí Dynamics 365 Human Resources mezi aplikacemi Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="cacac-105">The customer doesn't see Dynamics 365 Human Resources among the Microsoft Dynamics 365 apps.</span></span>
 
-<span data-ttu-id="42821-107">Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Microsoft Power Apps.</span><span class="sxs-lookup"><span data-stu-id="42821-107">The user must be added to the Environment Maker role for the environment in Microsoft Power Apps.</span></span>
+<span data-ttu-id="cacac-106">**Rozlišení**</span><span class="sxs-lookup"><span data-stu-id="cacac-106">**Resolution**</span></span>
 
-1. <span data-ttu-id="42821-108">Uživatel s rolí správce, který má licenci plánu 2 pro Power Apps, musí otevřít [portál pro správu Power Apps](https://preview.admin.powerapps.com/).</span><span class="sxs-lookup"><span data-stu-id="42821-108">The admin user who has a Power Apps Plan 2 license must open the [Power Apps Admin portal](https://preview.admin.powerapps.com/).</span></span>
+<span data-ttu-id="cacac-107">Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Microsoft Power Apps.</span><span class="sxs-lookup"><span data-stu-id="cacac-107">The user must be added to the Environment Maker role for the environment in Microsoft Power Apps.</span></span>
 
-2. <span data-ttu-id="42821-109">Vyberte **Prostředí** a zvolte správné prostředí pro Human Resources.</span><span class="sxs-lookup"><span data-stu-id="42821-109">Select **Environments**, and select the correct environment for Human Resources.</span></span>
+1. <span data-ttu-id="cacac-108">Uživatel s rolí správce, který má licenci plánu 2 pro Power Apps, musí otevřít [portál pro správu Power Apps](https://preview.admin.powerapps.com/).</span><span class="sxs-lookup"><span data-stu-id="cacac-108">The admin user who has a Power Apps Plan 2 license must open the [Power Apps Admin portal](https://preview.admin.powerapps.com/).</span></span>
 
-3. <span data-ttu-id="42821-110">Na kartě **Zabezpečení** na kartě **Role prostředí** zvolte **Tvůrce prostředí**.</span><span class="sxs-lookup"><span data-stu-id="42821-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
+2. <span data-ttu-id="cacac-109">Vyberte **Prostředí** a zvolte správné prostředí pro Human Resources.</span><span class="sxs-lookup"><span data-stu-id="cacac-109">Select **Environments**, and select the correct environment for Human Resources.</span></span>
+
+3. <span data-ttu-id="cacac-110">Na kartě **Zabezpečení** na kartě **Role prostředí** zvolte **Tvůrce prostředí**.</span><span class="sxs-lookup"><span data-stu-id="cacac-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
 
     ![Karta Role prostředí](media/environment-roles.png)
 
-4. <span data-ttu-id="42821-112">Na kartě **Uživatelé** přidejte uživatele nebo organizaci.</span><span class="sxs-lookup"><span data-stu-id="42821-112">On the **Users** tab, add the user or your organization.</span></span>
+4. <span data-ttu-id="cacac-112">Na kartě **Uživatelé** přidejte uživatele nebo organizaci.</span><span class="sxs-lookup"><span data-stu-id="cacac-112">On the **Users** tab, add the user or your organization.</span></span>
 
     ![Karta Uživatelé](media/environment-maker.png)
 
-5. <span data-ttu-id="42821-114">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="42821-114">Select **Save**.</span></span>
+5. <span data-ttu-id="cacac-114">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="cacac-114">Select **Save**.</span></span>
 
-6. <span data-ttu-id="42821-115">Uživatel se musí nyní přihlásit do [Microsoft Dynamics 365](https://home.dynamics.com/).</span><span class="sxs-lookup"><span data-stu-id="42821-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
+6. <span data-ttu-id="cacac-115">Uživatel se musí nyní přihlásit do [Microsoft Dynamics 365](https://home.dynamics.com/).</span><span class="sxs-lookup"><span data-stu-id="cacac-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
 
-7. <span data-ttu-id="42821-116">Vyberte **Synchronizovat** pro aktualizaci uživatelských aplikací.</span><span class="sxs-lookup"><span data-stu-id="42821-116">Select **Sync** to update the user apps.</span></span>
+7. <span data-ttu-id="cacac-116">Vyberte **Synchronizovat** pro aktualizaci uživatelských aplikací.</span><span class="sxs-lookup"><span data-stu-id="cacac-116">Select **Sync** to update the user apps.</span></span>
 
     ![Tlačítko Synchronizovat](media/get-more.png)
 
-    <span data-ttu-id="42821-118">Po dokončení synchronizace se Human Resources se objeví na domovské stránce.</span><span class="sxs-lookup"><span data-stu-id="42821-118">After synchronization is completed, Human Resources will appear on the home page.</span></span>
+    <span data-ttu-id="cacac-118">Po dokončení synchronizace se Human Resources se objeví na domovské stránce.</span><span class="sxs-lookup"><span data-stu-id="cacac-118">After synchronization is completed, Human Resources will appear on the home page.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
