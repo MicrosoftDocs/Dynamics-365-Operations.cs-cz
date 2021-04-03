@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001335"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470634"
 ---
 # <a name="repair-management"></a>Správa oprav       
 
@@ -37,15 +37,11 @@ Můžete nastavit příznaky, diagnózu a řešení. Všechny můžete později 
 
 Formuláře pro nastavení slouží k zadávání informací, které budou použity k zadání symptomů, diagnózy a rozhodnutí opravy.
 
-1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **podmínky**.
-
-2.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků**.
-
-3.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy**.
-
-4.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Řešení**.
-
-5.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Fáze oprav**.
+- **Správa servisu** \> **Nastavení** \> **Opravy** \> **Podmínky**.
+- **Správa servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků**.
+-  **Správa servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy**.
+- **Správa servisu** \> **nastavení** \> **opravy** \> **Řešení**.
+- **Správa servisu** \> **nastavení** \> **opravy** \> **Fáze oprav**.
 
 ## <a name="symptoms-and-conditions"></a>Příznaky a podmínky
 
@@ -81,19 +77,19 @@ Chcete-li pro určitou položku použít správu oprav, musí být tato položka
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Vytvoření řádku opravy pro servisní zakázku
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Vyberte servisní zakázku s předmětem servisu, který vyžaduje opravu.
 
-3.  Klepněte na tlačítko **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav**.
+3.  Vyberte formulář **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav**.
 
-4.  Stisknutím kombinace kláves CTRL+N vytvořte nový řádek.
+4.  Zvolte **Nový** pro vytvoření nového řádku.
 
 5.  Vyberte předmět servisu. Můžete vybrat libovolný předmět servisu, který byl konfigurován prostřednictvím relace předmětu v servisní zakázce.
 
-6.  Vyberte libovolné přednastavené symptomy, diagnózy či hodnoty zpracování, které jsou relevantní pro daný řádek opravy, a v případě potřeby klepněte na kartu **Poznámka** a vytvořte na řádku opravy poznámku.
+6.  Vyberte libovolné přednastavené symptomy, diagnózy či hodnoty zpracování, které jsou relevantní pro daný řádek opravy, a v případě potřeby vyberte **Poznámka** a vytvořte na řádku opravy poznámku.
 
-7.  Stisknutím kombinace kláves CTRL+S nový řádek opravy uložte. Pole **Vytvořené datum a čas** na kartě **hlavní** ve formuláři **řádky oprav** se aktualizuje s použitím času uložení.
+7.  Kliknutím na tlačítko **Uložit** uložte nový řádek opravy. Pole **Vytvořené datum a čas** na kartě **hlavní** ve formuláři **řádky oprav** se aktualizuje s použitím času uložení.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Sledování průběhu a vyřešení opravy problému
 

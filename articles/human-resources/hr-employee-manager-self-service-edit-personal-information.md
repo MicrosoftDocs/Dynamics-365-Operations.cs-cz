@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115335"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502981"
 ---
 # <a name="edit-personal-information"></a>Upravit osobní informace
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Své osobní údaje můžete upravovat v Dynamics 365 Human Resources v **pracovním prostoru samoobsluhy pro zaměstnance**.
 
@@ -38,13 +40,16 @@ Mezi osobní údaje, které můžete upravit, patří:
 - Způsob platby
 - Obrázek použitý v Human Resources
 
+>[!NOTE]
+>Je možné, že nebudete moci upravovat určité typy osobních údajů, například detaily obchodních kontaktů. Další informace najdete v tématu [Omezení úpravy osobních údajů](hr-employee-self-service-restrict-editing.md).
+
 Parametry nastavené v globálním adresáři určují role, které mohou zobrazit vaše osobní údaje.
 
 1. V Human Resources vyberte možnost **Samoobsluha pro zaměstnance**.
 
 2. Vyberte možnost **Upravit osobní údaje**.
 
-3. Chcete-li změnit adresu, vyberte kartu **Adresy**. Provedené změny se zobrazí v pracovním prostoru **Správa zaměstnanců** s cílem upozornit oddělení lidských zdrojů. 
+3. Chcete-li změnit adresu, vyberte kartu **Adresy**. Provedené změny se zobrazí v pracovním prostoru **Správa zaměstnanců** s cílem upozornit oddělení lidských zdrojů.
 
     - Kliknutím na **Přidat** přidáte novou adresu.
     - Chcete-li upravit existující adresu, vyberte ji a pak vyberte možnost **Upravit**.
@@ -52,11 +57,13 @@ Parametry nastavené v globálním adresáři určují role, které mohou zobraz
     - Chcete-li přidat nebo odebrat kontakt, vyberte **Další možnosti** a pak vyberte možnost **Upřesnit**. V části **Kontaktní informace** vyberte možnost **Přidat** nebo **Odebrat** a podle potřeby upravte pole.
     - Chcete-li nastavit časové pásmo a umístění, vyberte možnost **Další možnosti** a pak vyberte možnost **Upřesnit**. V části **Obecné** upravte pole podle potřeby.
 
-4. Chcete-li změnit své kontaktní údaje, vyberte kartu **Podrobnosti o kontaktu**. Můžete zadat různé typy kontaktních informací, včetně telefonu, e-mailu nebo odkazů na sociální média. Můžete nastavit podrobnosti o kontaktu jako primární, ale můžete tak nastavit vždy jen jeden z každého typu. 
+4. Chcete-li změnit své kontaktní údaje, vyberte kartu **Podrobnosti o kontaktu**. Můžete zadat různé typy kontaktních informací, včetně telefonu, e-mailu nebo odkazů na sociální média. Můžete nastavit podrobnosti o kontaktu jako primární, ale můžete tak nastavit vždy jen jeden z každého typu.
 
     - Kliknutím na **Přidat** přidáte nové kontaktní informace. Upravte pole podle potřeby.
     - Chcete-li upravit existující kontaktní informace, vyberte danou položku a pak vyberte možnost **Upravit**. Upravte pole podle potřeby.
     - Chcete-li nastavit podrobnosti o kontaktu jako soukromé, vyberte danou položku, vybertemožnost **Upřesnit** a poté nastavte přepínač **Soukromé** na hodnotu **Ano**. Vyberte **OK**.
+      >[!NOTE]
+      >Tlačítko **Rozšířené** není k dispozici, pokud váš správce ve vašem prostředí povolil funkci **(Preview) Omezit zaměstnance v přidávání nebo úpravách adresy a kontaktních údajů pro vybrané účely**. Další informace najdete v tématu [Omezení úpravy osobních údajů](hr-employee-self-service-restrict-editing.md).
   
 5. Chcete-li změnit osobní kontakty, vyberte kartu **Osobní kontakty**. Můžete určit nouzové kontakty, příjemce a závislé osoby. Kontaktem může být osoba nebo organizace. Funkce **Správa zaměstnaneckých výhod** používá osobní kontaktní informace. Další informace viz [Konfigurace možností způsobilosti osobních kontaktů](hr-benefits-setup-contact-eligibility-options.md).
 

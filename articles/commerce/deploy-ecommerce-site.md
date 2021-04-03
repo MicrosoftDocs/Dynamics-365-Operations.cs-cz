@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b750ee89a85688dcebe673f9c3ff13693e9fcad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d31e3e7248809a00ad51183b80205d1351567ab3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976731"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477869"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
-
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu Dynamics 365 Commerce pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
-
-## <a name="overview"></a>Přehled
 
 Microsoft Dynamics Lifecycle Services (LCS) je cloudový pracovní prostor vhodný pro spolupráci, který mohou partneři a zákazníci používat ke správě projektů a prostředí, zobrazování nejnovějších informací o produktech a funkcích Microsoft Dynamics a vytváření, sledování a procházení incidentů podpory. Funkce správy elektronického obchodu jsou integrovány do LCS.
 

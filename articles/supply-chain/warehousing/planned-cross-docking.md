@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970299"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556259"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -37,12 +37,12 @@ V době přijetí příchozí objednávky nastavení cross dockingu automaticky
 > [!NOTE]
 > U transakcí se zásobami se **neprovede** zrušení registrace, je-li zrušena crossdockingová úloha, a to ani v případě, že je nastavení této funkcionality v parametrech správy skladu zapnuto.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Zapnutí funkce Cross docking s plánováním
+## <a name="turn-on-the-planned-cross-docking-features"></a>Zapnutí funkcí Cross docking s plánováním
 
-Funkci Cross docking s rozšířeným plánováním můžete používat až poté, co ji ve svém systému zapnete. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapínejte následující funkce v následujícím pořadí:
 
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Cross docking s plánováním*
+1. *Plánovaný cross docking*
+2. *Šablony cross dockingu se směrnicemi skladového místa*
 
 ## <a name="setup"></a>Nastavení
 
@@ -89,6 +89,10 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **Znovu ověřit při přijetí dodávky:** *Ne*
 
         Tato volba určuje, zda má být dodávka během příjmu znovu ověřena. Pokud je u této možnosti nastavena hodnota *Ano*, proběhne kontrola maximálního časového úseku i počtu dní vypršení platnosti.
+
+    - **Kód směrnice** Toto pole nechte prázdné.
+
+        Tato možnost umožňuje systému používat direktivy umístění, aby pomohla určit nejlepší umístění pro přesun zásob cross-docking. Můžete jej nastavit přiřazením kódu direktivy ke každé příslušné šabloně cross-dockingu. Každý kód direktivy označuje jedinečnou direktivu umístění.
 
     - **Ověření časového úseku:** *Ano*
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56e868f3050432db8d3b1721da435665f554d90d
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987571"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487914"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Ukázka funkce správy technických změn
 
@@ -397,7 +397,6 @@ Technik nyní zkontroluje požadavek od zákazníka a vytvoří objednávku změ
 
 1. V podokně akcí na kartě **Příkaz ke změně** ve skupině **Změnit stav** vyberte **Schválit**.
 1. Vyberte **Proces** k aktualizaci informací o produktu.
-1. Vyberte **Kompletní** k označení objednávky změn jako dokončené.
 
 ## <a name="release-the-changed-product"></a>Vydání změněného produktu
 
@@ -411,5 +410,8 @@ Produkt lze nyní znovu vydat do společnosti *USMF* a poté odeslat zákazníko
 1. Vyberte **OK** pro zavření dialogového okna **Vydání** a návrat do pracovní plochy.
 1. V podokně akcí na kartě **Změnový příkaz** ve skupině **Vydání produktu** vyberte **Proces** k vydání dotčených produktů vybraným společnostem. Případně vyberte **Uvolnit strukturu produktu** k zahájení procesu vydání.
 
+## <a name="complete-the-change-order"></a>Dokončení změnového příkazu
+
+Chcete-li označit změnový příkaz jako dokončený, což znamená, že nezbývají žádné další akce, vyberte možnost **Dokončit** v podokně akcí.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

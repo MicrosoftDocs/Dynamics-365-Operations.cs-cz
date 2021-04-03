@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,15 +11,15 @@ ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
+ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154170"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5474056"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -33,7 +33,19 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.17
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>Úložiště LCS jako možnost úložiště pro konfigurace elektronických zpráv
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým globálním úložištěm Regulatory Configuration Service (RCS) |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Dynamics 365 Finance, produkty Supply Chain Management a Project Operations|
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. dubna 2022 plánujeme přestat podporovat úložiště Microsoft Dynamics Lifecycle Services (LCS) jako možnost úložiště pro konfigurace elektronického vykazování (ER). Nové konfigurace Microsoft ER budou publikovány ke stažení výhradně z globálního úložiště. Globální úložiště je přístupné z produktů Dynamics 365 a RCS. Další informace získáte v tématu [Import konfigurací ER z RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.16
 
