@@ -18,33 +18,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f326957d5f33607e434f99563cfeb528c05f258d
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: c87d98a16431805ad652e28e5ca100a4152ad0c6
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111780"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466223"
 ---
-# <a name="process-rate-changes"></a><span data-ttu-id="0e551-103">Zpracování změn sazby</span><span class="sxs-lookup"><span data-stu-id="0e551-103">Process rate changes</span></span>
+# <a name="process-rate-changes"></a><span data-ttu-id="5160e-103">Zpracování změn sazby</span><span class="sxs-lookup"><span data-stu-id="5160e-103">Process rate changes</span></span>
 
-<span data-ttu-id="0e551-104">Zpracování změn sazby zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources, když má nový nebo existující plán zaměstnaneckých výhod změnu v nastavení pravidla způsobilosti.</span><span class="sxs-lookup"><span data-stu-id="0e551-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="0e551-105">Pokud je vytvořeno nové pravidlo způsobilosti a je přiřazeno k plánu, zobrazí se výzva systému pro opětovné spuštění nároku pracovníka ke kontrole, zda mohou mít zaměstnanci nárok na plán na základě nových možností nároku.</span><span class="sxs-lookup"><span data-stu-id="0e551-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="0e551-106">V pracovním prostoru **Správa výhod** vyberte v části **Zpracování** možnost **Zpracování aktualizace změny sazby**.</span><span class="sxs-lookup"><span data-stu-id="0e551-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
+<span data-ttu-id="5160e-104">Zpracování změn sazby zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources, když má nový nebo existující plán zaměstnaneckých výhod změnu v nastavení pravidla způsobilosti.</span><span class="sxs-lookup"><span data-stu-id="5160e-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="5160e-105">Pokud je vytvořeno nové pravidlo způsobilosti a je přiřazeno k plánu, zobrazí se výzva systému pro opětovné spuštění nároku pracovníka ke kontrole, zda mohou mít zaměstnanci nárok na plán na základě nových možností nároku.</span><span class="sxs-lookup"><span data-stu-id="5160e-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
 
-2. <span data-ttu-id="0e551-107">V dialogovém okně **Spustit proces aktualizace sazby zaměstnanecké výhody** zadejte hodnoty pro následující pole:</span><span class="sxs-lookup"><span data-stu-id="0e551-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
+1. <span data-ttu-id="5160e-106">V pracovním prostoru **Správa výhod** vyberte v části **Zpracování** možnost **Zpracování aktualizace změny sazby**.</span><span class="sxs-lookup"><span data-stu-id="5160e-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
 
-   | <span data-ttu-id="0e551-108">Pole</span><span class="sxs-lookup"><span data-stu-id="0e551-108">Field</span></span> | <span data-ttu-id="0e551-109">Popis</span><span class="sxs-lookup"><span data-stu-id="0e551-109">Description</span></span> |
+2. <span data-ttu-id="5160e-107">V dialogovém okně **Spustit proces aktualizace sazby zaměstnanecké výhody** zadejte hodnoty pro následující pole:</span><span class="sxs-lookup"><span data-stu-id="5160e-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="5160e-108">Pole</span><span class="sxs-lookup"><span data-stu-id="5160e-108">Field</span></span> | <span data-ttu-id="5160e-109">Popis</span><span class="sxs-lookup"><span data-stu-id="5160e-109">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="0e551-110">**Období registrace**</span><span class="sxs-lookup"><span data-stu-id="0e551-110">**Enrollment period**</span></span> | <span data-ttu-id="0e551-111">Období registrace, pro které mají být zpracovány změny sazeb.</span><span class="sxs-lookup"><span data-stu-id="0e551-111">The enrollment period to process rate changes for.</span></span> |
+   | <span data-ttu-id="5160e-110">**Období registrace**</span><span class="sxs-lookup"><span data-stu-id="5160e-110">**Enrollment period**</span></span> | <span data-ttu-id="5160e-111">Období registrace, pro které mají být zpracovány změny sazeb.</span><span class="sxs-lookup"><span data-stu-id="5160e-111">The enrollment period to process rate changes for.</span></span> |
 
-3. <span data-ttu-id="0e551-112">Chcete-li spustit proces na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:</span><span class="sxs-lookup"><span data-stu-id="0e551-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
+3. <span data-ttu-id="5160e-112">Chcete-li spustit proces na pozadí, vyberte možnost **Spustit na pozadí** a proveďte následující úkony:</span><span class="sxs-lookup"><span data-stu-id="5160e-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
 
-   1. <span data-ttu-id="0e551-113">Zadejte informace pro proces.</span><span class="sxs-lookup"><span data-stu-id="0e551-113">Enter information for the process.</span></span>
+   1. <span data-ttu-id="5160e-113">Zadejte informace pro proces.</span><span class="sxs-lookup"><span data-stu-id="5160e-113">Enter information for the process.</span></span>
 
-   2. <span data-ttu-id="0e551-114">Chcete-li nastavit opakovanou úlohu, vyberte možnost **opakování**, zadejte informace o opakování a vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="0e551-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
+   2. <span data-ttu-id="5160e-114">Chcete-li nastavit opakovanou úlohu, vyberte možnost **opakování**, zadejte informace o opakování a vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="5160e-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
 
-   3. <span data-ttu-id="0e551-115">Chcete-li nastavit výstrahu úlohy,vyberte **výstrahy**, vyberte výstrahy, které chcete přijmout, a pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="0e551-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
+   3. <span data-ttu-id="5160e-115">Chcete-li nastavit výstrahu úlohy,vyberte **výstrahy**, vyberte výstrahy, které chcete přijmout, a pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="5160e-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
 
-   4. <span data-ttu-id="0e551-116">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="0e551-116">Select **OK**.</span></span> <span data-ttu-id="0e551-117">Proces bude spuštěn s nastavenými parametry.</span><span class="sxs-lookup"><span data-stu-id="0e551-117">The process will run with the parameters you set.</span></span>
+   4. <span data-ttu-id="5160e-116">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="5160e-116">Select **OK**.</span></span> <span data-ttu-id="5160e-117">Proces bude spuštěn s nastavenými parametry.</span><span class="sxs-lookup"><span data-stu-id="5160e-117">The process will run with the parameters you set.</span></span>
 
-4. <span data-ttu-id="0e551-118">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="0e551-118">Select **OK**.</span></span>
+4. <span data-ttu-id="5160e-118">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="5160e-118">Select **OK**.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

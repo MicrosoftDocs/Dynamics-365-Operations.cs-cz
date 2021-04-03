@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,77 +16,80 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15a84b086b324ec390d88e8b2617022ad4773977
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2a80587236d17160a996d701ca4ae38be21c818c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683056"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563287"
 ---
-# <a name="roundamount-er-function"></a><span data-ttu-id="75c55-103">Funkce elektronického výkaznictví ROUNDAMOUNT</span><span class="sxs-lookup"><span data-stu-id="75c55-103">ROUNDAMOUNT ER function</span></span>
+# <a name="roundamount-er-function"></a><span data-ttu-id="8dec9-103">Funkce elektronického výkaznictví ROUNDAMOUNT</span><span class="sxs-lookup"><span data-stu-id="8dec9-103">ROUNDAMOUNT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="75c55-104">Funkce `ROUNDAMOUNT` vrátí hodnotu typu *reálné číslo* jako výsledek zaokrouhlení zadaného čísla na nejbližší násobek jiného čísla podle zadaného pravidla zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="75c55-104">The `ROUNDAMOUNT` function returns a *Real* value as the result of the rounding of the specified number to the nearest multiple of another number according to the specified rounding rule.</span></span>
+<span data-ttu-id="8dec9-104">Funkce `ROUNDAMOUNT` vrátí hodnotu typu *reálné číslo* jako výsledek zaokrouhlení zadaného čísla na nejbližší násobek jiného čísla podle zadaného pravidla zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="8dec9-104">The `ROUNDAMOUNT` function returns a *Real* value as the result of the rounding of the specified number to the nearest multiple of another number according to the specified rounding rule.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="75c55-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="75c55-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8dec9-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="8dec9-105">Syntax</span></span>
 
 ```vb
 ROUNDAMOUNT (number, decimals, round rule)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="75c55-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="75c55-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="8dec9-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="8dec9-106">Arguments</span></span>
 
-<span data-ttu-id="75c55-107">`number`: *celé číslo* nebo *reálné číslo*</span><span class="sxs-lookup"><span data-stu-id="75c55-107">`number`: *Int* or *Real*</span></span>
+<span data-ttu-id="8dec9-107">`number`: *celé číslo* nebo *reálné číslo*</span><span class="sxs-lookup"><span data-stu-id="8dec9-107">`number`: *Int* or *Real*</span></span>
 
-<span data-ttu-id="75c55-108">Číselná hodnota, která má být zaokrouhlena.</span><span class="sxs-lookup"><span data-stu-id="75c55-108">A numeric value that must be rounded.</span></span>
+<span data-ttu-id="8dec9-108">Číselná hodnota, která má být zaokrouhlena.</span><span class="sxs-lookup"><span data-stu-id="8dec9-108">A numeric value that must be rounded.</span></span>
 
-<span data-ttu-id="75c55-109">`decimals`: *celé číslo* nebo *reálné číslo*</span><span class="sxs-lookup"><span data-stu-id="75c55-109">`decimals`: *Int* or *Real*</span></span>
+<span data-ttu-id="8dec9-109">`decimals`: *celé číslo* nebo *reálné číslo*</span><span class="sxs-lookup"><span data-stu-id="8dec9-109">`decimals`: *Int* or *Real*</span></span>
 
-<span data-ttu-id="75c55-110">Číslo, na jehož násobek má být zaokrouhlena hodnota parametru `number`.</span><span class="sxs-lookup"><span data-stu-id="75c55-110">The number that the value of the `number` parameter must be rounded to a multiple of.</span></span>
+<span data-ttu-id="8dec9-110">Číslo, na jehož násobek má být zaokrouhlena hodnota parametru `number`.</span><span class="sxs-lookup"><span data-stu-id="8dec9-110">The number that the value of the `number` parameter must be rounded to a multiple of.</span></span>
 
-<span data-ttu-id="75c55-111">`round rule`: *hodnota výčtu*</span><span class="sxs-lookup"><span data-stu-id="75c55-111">`round rule`: *Enum value*</span></span>
+<span data-ttu-id="8dec9-111">`round rule`: *hodnota výčtu*</span><span class="sxs-lookup"><span data-stu-id="8dec9-111">`round rule`: *Enum value*</span></span>
 
-<span data-ttu-id="75c55-112">Výčtová hodnota výčtu **RoundOffType**, která definuje pravidlo zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="75c55-112">An enumeration value of the **RoundOffType** enumeration that defines the rounding rule.</span></span> <span data-ttu-id="75c55-113">Tento výčet nabízí následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="75c55-113">This enumeration offers the following values:</span></span>
+<span data-ttu-id="8dec9-112">Výčtová hodnota výčtu **RoundOffType**, která definuje pravidlo zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="8dec9-112">An enumeration value of the **RoundOffType** enumeration that defines the rounding rule.</span></span> <span data-ttu-id="8dec9-113">Tento výčet nabízí následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="8dec9-113">This enumeration offers the following values:</span></span>
 
-- <span data-ttu-id="75c55-114">Normální (Ordinary)</span><span class="sxs-lookup"><span data-stu-id="75c55-114">Normal (Ordinary)</span></span>
-- <span data-ttu-id="75c55-115">Zaokrouhlení dolů (RoundDown)</span><span class="sxs-lookup"><span data-stu-id="75c55-115">Downward (RoundDown)</span></span>
-- <span data-ttu-id="75c55-116">Zaokrouhlení nahoru (RoundUp)</span><span class="sxs-lookup"><span data-stu-id="75c55-116">Rounding-up (RoundUp)</span></span>
+- <span data-ttu-id="8dec9-114">Normální (Ordinary)</span><span class="sxs-lookup"><span data-stu-id="8dec9-114">Normal (Ordinary)</span></span>
+- <span data-ttu-id="8dec9-115">Zaokrouhlení dolů (RoundDown)</span><span class="sxs-lookup"><span data-stu-id="8dec9-115">Downward (RoundDown)</span></span>
+- <span data-ttu-id="8dec9-116">Zaokrouhlení nahoru (RoundUp)</span><span class="sxs-lookup"><span data-stu-id="8dec9-116">Rounding-up (RoundUp)</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="75c55-117">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="75c55-117">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="8dec9-117">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="8dec9-117">Return values</span></span>
 
-<span data-ttu-id="75c55-118">*Reálný*</span><span class="sxs-lookup"><span data-stu-id="75c55-118">*Real*</span></span>
+<span data-ttu-id="8dec9-118">*Reálný*</span><span class="sxs-lookup"><span data-stu-id="8dec9-118">*Real*</span></span>
 
-<span data-ttu-id="75c55-119">Výsledná číselná hodnota je násobkem hodnoty určené parametrem `decimals` a je nejblíže hodnotě určené parametrem `number`.</span><span class="sxs-lookup"><span data-stu-id="75c55-119">The resulting numeric value is a multiple of the value specified by the `decimals` parameter and is closest to the value specified by the `number` parameter.</span></span>
+<span data-ttu-id="8dec9-119">Výsledná číselná hodnota je násobkem hodnoty určené parametrem `decimals` a je nejblíže hodnotě určené parametrem `number`.</span><span class="sxs-lookup"><span data-stu-id="8dec9-119">The resulting numeric value is a multiple of the value specified by the `decimals` parameter and is closest to the value specified by the `number` parameter.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="75c55-120">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="75c55-120">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="8dec9-120">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="8dec9-120">Usage notes</span></span>
 
-<span data-ttu-id="75c55-121">Pokud je parametr `number` nulový, vrátí funkce vždy nulu.</span><span class="sxs-lookup"><span data-stu-id="75c55-121">When the `number` parameter is zero, this function always returns zero.</span></span>
+<span data-ttu-id="8dec9-121">Pokud je parametr `number` nulový, vrátí funkce vždy nulu.</span><span class="sxs-lookup"><span data-stu-id="8dec9-121">When the `number` parameter is zero, this function always returns zero.</span></span>
 
-<span data-ttu-id="75c55-122">Pokud je parametr `decimals` nulový, zaokrouhlí tato funkce na výchozí hodnotu zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="75c55-122">When the `decimals` parameter is zero, this function rounds to the default round-off value.</span></span> <span data-ttu-id="75c55-123">Pokud je parametr `round rule` nastaven na **RoundOffType.Ordinary**, výchozí hodnota zaokrouhlení bude **0,01**.</span><span class="sxs-lookup"><span data-stu-id="75c55-123">When the `round rule` parameter is set to **RoundOffType.Ordinary**, the default round-off value is **0.01**.</span></span> <span data-ttu-id="75c55-124">V opačném případě je výchozí hodnota zaokrouhlení **1,0**.</span><span class="sxs-lookup"><span data-stu-id="75c55-124">Otherwise, the default round-off value is **1.0**.</span></span>
+<span data-ttu-id="8dec9-122">Pokud je parametr `decimals` nulový, zaokrouhlí tato funkce na výchozí hodnotu zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="8dec9-122">When the `decimals` parameter is zero, this function rounds to the default round-off value.</span></span> <span data-ttu-id="8dec9-123">Pokud je parametr `round rule` nastaven na **RoundOffType.Ordinary**, výchozí hodnota zaokrouhlení bude **0,01**.</span><span class="sxs-lookup"><span data-stu-id="8dec9-123">When the `round rule` parameter is set to **RoundOffType.Ordinary**, the default round-off value is **0.01**.</span></span> <span data-ttu-id="8dec9-124">V opačném případě je výchozí hodnota zaokrouhlení **1,0**.</span><span class="sxs-lookup"><span data-stu-id="8dec9-124">Otherwise, the default round-off value is **1.0**.</span></span>
 
-<span data-ttu-id="75c55-125">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.Ordinary**, tato funkce jej zaokrouhlí na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="75c55-125">When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function rounds to the nearest round-off amount.</span></span>
+<span data-ttu-id="8dec9-125">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.Ordinary**, tato funkce jej zaokrouhlí na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="8dec9-125">When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function rounds to the nearest round-off amount.</span></span>
 
-<span data-ttu-id="75c55-126">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.RoundDown**, tato funkce zaokrouhlí směrem k nule na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="75c55-126">When the `round rule` parameter is set to **RoundOffType.RoundDown**, this function rounds towards zero to the nearest round-off amount.</span></span>
+<span data-ttu-id="8dec9-126">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.RoundDown**, tato funkce zaokrouhlí směrem k nule na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="8dec9-126">When the `round rule` parameter is set to **RoundOffType.RoundDown**, this function rounds towards zero to the nearest round-off amount.</span></span>
 
-<span data-ttu-id="75c55-127">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.RoundUp**, tato funkce zaokrouhlí směrem od nuly na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="75c55-127">When the `round rule` parameter is set to **RoundOffType.RoundUp**, this function rounds away from zero to the nearest round-off amount.</span></span>
+<span data-ttu-id="8dec9-127">Pokud je parametr `round rule` nastaven na hodnotu **RoundOffType.RoundUp**, tato funkce zaokrouhlí směrem od nuly na nejbližší zaokrouhlenou částku.</span><span class="sxs-lookup"><span data-stu-id="8dec9-127">When the `round rule` parameter is set to **RoundOffType.RoundUp**, this function rounds away from zero to the nearest round-off amount.</span></span>
 
-<span data-ttu-id="75c55-128">Pokud je parametr `round rule` nastaven na **RoundOffType.Ordinary**, tato funkce se zachová podobně jako funkce aplikace Excel [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) a X++ [Round](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round).</span><span class="sxs-lookup"><span data-stu-id="75c55-128">When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function behaves like the [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) Excel function and the [ROUND](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round) X++ function.</span></span>
+<span data-ttu-id="8dec9-128">Pokud je parametr `round rule` nastaven na **RoundOffType.Ordinary**, tato funkce se zachová podobně jako funkce aplikace Excel [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) a X++ [Round](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round).</span><span class="sxs-lookup"><span data-stu-id="8dec9-128">When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function behaves like the [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) Excel function and the [ROUND](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round) X++ function.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="75c55-129">Poznámky</span><span class="sxs-lookup"><span data-stu-id="75c55-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8dec9-129">Poznámky</span><span class="sxs-lookup"><span data-stu-id="8dec9-129">Remarks</span></span>
 
-<span data-ttu-id="75c55-130">Chcete-li zaokrouhlit číselnou hodnotu na zadaný počet desetinných míst, použijte funkci [ROUND](er-functions-mathematical-round.md).</span><span class="sxs-lookup"><span data-stu-id="75c55-130">To round a numeric value to a specified number of decimal places, use the [ROUND](er-functions-mathematical-round.md) function.</span></span>
+<span data-ttu-id="8dec9-130">Chcete-li zaokrouhlit číselnou hodnotu na zadaný počet desetinných míst, použijte funkci [ROUND](er-functions-mathematical-round.md).</span><span class="sxs-lookup"><span data-stu-id="8dec9-130">To round a numeric value to a specified number of decimal places, use the [ROUND](er-functions-mathematical-round.md) function.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75c55-131">Příklad</span><span class="sxs-lookup"><span data-stu-id="75c55-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8dec9-131">Příklad</span><span class="sxs-lookup"><span data-stu-id="8dec9-131">Example</span></span>
 
-<span data-ttu-id="75c55-132">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.Ordinary**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 7,35.</span><span class="sxs-lookup"><span data-stu-id="75c55-132">If the **model.RoundOff** parameter is set to **RoundOffType.Ordinary**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 7.35.</span></span> 
+<span data-ttu-id="8dec9-132">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.Ordinary**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 7,35.</span><span class="sxs-lookup"><span data-stu-id="8dec9-132">If the **model.RoundOff** parameter is set to **RoundOffType.Ordinary**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 7.35.</span></span> 
 
-<span data-ttu-id="75c55-133">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.RoundDown**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 7,35.</span><span class="sxs-lookup"><span data-stu-id="75c55-133">If the **model.RoundOff** parameter is set to **RoundOffType.RoundDown**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 7.35.</span></span> 
+<span data-ttu-id="8dec9-133">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.RoundDown**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 7,35.</span><span class="sxs-lookup"><span data-stu-id="8dec9-133">If the **model.RoundOff** parameter is set to **RoundOffType.RoundDown**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 7.35.</span></span> 
 
-<span data-ttu-id="75c55-134">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.RoundUp**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 8,4.</span><span class="sxs-lookup"><span data-stu-id="75c55-134">If the **model.RoundOff** parameter is set to **RoundOffType.RoundUp**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 8.4.</span></span>
+<span data-ttu-id="8dec9-134">Pokud je parametr **model.RoundOff** nastaven na **RoundOffType.RoundUp**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` vrátí 8,4.</span><span class="sxs-lookup"><span data-stu-id="8dec9-134">If the **model.RoundOff** parameter is set to **RoundOffType.RoundUp**, `ROUNDAMOUNT (7.45, 1.05, model.RoundOff)` returns 8.4.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="75c55-135">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="75c55-135">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8dec9-135">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="8dec9-135">Additional resources</span></span>
 
-[<span data-ttu-id="75c55-136">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="75c55-136">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="8dec9-136">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="8dec9-136">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
 
-[<span data-ttu-id="75c55-137">Matematické funkce</span><span class="sxs-lookup"><span data-stu-id="75c55-137">Mathematical functions</span></span>](er-functions-category-mathematical.md)
+[<span data-ttu-id="8dec9-137">Matematické funkce</span><span class="sxs-lookup"><span data-stu-id="8dec9-137">Mathematical functions</span></span>](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

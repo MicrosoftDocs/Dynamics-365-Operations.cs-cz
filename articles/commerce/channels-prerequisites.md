@@ -16,72 +16,72 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0705efac4659f96ebca1c67f6f0ab8d23c99d81e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 270f751e860e56a03e20df720c088f275d0298e7
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997693"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477917"
 ---
-# <a name="channel-setup-prerequisites"></a><span data-ttu-id="bf96b-103">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="bf96b-103">Channel setup prerequisites</span></span>
-
+# <a name="channel-setup-prerequisites"></a><span data-ttu-id="499d1-103">Předpoklady nastavení kanálu</span><span class="sxs-lookup"><span data-stu-id="499d1-103">Channel setup prerequisites</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="bf96b-104">Toto téma poskytuje přehled předpokladů nastavení kanálů v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="bf96b-104">This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="499d1-104">Toto téma poskytuje přehled předpokladů nastavení kanálu v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="499d1-104">This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="bf96b-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="bf96b-105">Overview</span></span>
-
-<span data-ttu-id="bf96b-106">Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik požadovaných úloh.</span><span class="sxs-lookup"><span data-stu-id="bf96b-106">Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed.</span></span> <span data-ttu-id="bf96b-107">Následující seznamy požadovaných úloh jsou uspořádány podle typu kanálů.</span><span class="sxs-lookup"><span data-stu-id="bf96b-107">The following lists of prerequisite tasks are organized by channel type.</span></span>
+<span data-ttu-id="499d1-105">Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik požadovaných úloh.</span><span class="sxs-lookup"><span data-stu-id="499d1-105">Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed.</span></span> <span data-ttu-id="499d1-106">Následující seznamy požadovaných úloh jsou uspořádány podle typu kanálů.</span><span class="sxs-lookup"><span data-stu-id="499d1-106">The following lists of prerequisite tasks are organized by channel type.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bf96b-108">Některá dokumentace se stále píše a odkazy budou aktualizovány při publikování nového obsahu.</span><span class="sxs-lookup"><span data-stu-id="bf96b-108">Some documentation is still being written, and links will be updated as new content is published.</span></span>
+> <span data-ttu-id="499d1-107">Některá dokumentace se stále píše a odkazy budou aktualizovány při publikování nového obsahu.</span><span class="sxs-lookup"><span data-stu-id="499d1-107">Some documentation is still being written, and links will be updated as new content is published.</span></span>
 
-## <a name="initialization"></a><span data-ttu-id="bf96b-109">Inicializace</span><span class="sxs-lookup"><span data-stu-id="bf96b-109">Initialization</span></span>
+## <a name="initialization"></a><span data-ttu-id="499d1-108">Inicializace</span><span class="sxs-lookup"><span data-stu-id="499d1-108">Initialization</span></span>
 
-- [<span data-ttu-id="bf96b-110">Inicializovat počáteční data</span><span class="sxs-lookup"><span data-stu-id="bf96b-110">Initialize seed data</span></span>](enable-configure-retail-functionality.md)
+- [<span data-ttu-id="499d1-109">Inicializovat počáteční data</span><span class="sxs-lookup"><span data-stu-id="499d1-109">Initialize seed data</span></span>](enable-configure-retail-functionality.md)
 
-## <a name="global-prerequisities-required-for-all-channel-types"></a><span data-ttu-id="bf96b-111">Globální předpoklady vyžadované pro všechny typy kanálů</span><span class="sxs-lookup"><span data-stu-id="bf96b-111">Global prerequisities required for all channel types</span></span>
+## <a name="global-prerequisities-required-for-all-channel-types"></a><span data-ttu-id="499d1-110">Globální předpoklady vyžadované pro všechny typy kanálů</span><span class="sxs-lookup"><span data-stu-id="499d1-110">Global prerequisities required for all channel types</span></span>
 
-- [<span data-ttu-id="bf96b-112">Definovat a konfigurovat strukturu právnické osoby</span><span class="sxs-lookup"><span data-stu-id="bf96b-112">Define and configure your legal entity structure</span></span>](channels-legal-entities.md) 
-- [<span data-ttu-id="bf96b-113">Konfigurace vaší organizační hierarchie</span><span class="sxs-lookup"><span data-stu-id="bf96b-113">Configure your organizational hierarchy</span></span>](channels-org-hierarchies.md)
-- [<span data-ttu-id="bf96b-114">Nastavit sklad</span><span class="sxs-lookup"><span data-stu-id="bf96b-114">Set up a warehouse</span></span>](channels-setup-warehouse.md)
-- [<span data-ttu-id="bf96b-115">Konfigurovat DPH</span><span class="sxs-lookup"><span data-stu-id="bf96b-115">Configure sales tax</span></span>](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
-- [<span data-ttu-id="bf96b-116">Nastavení profilu oznámení e-mailem</span><span class="sxs-lookup"><span data-stu-id="bf96b-116">Set up an email notification profile</span></span>](email-notification-profiles.md)
-- [<span data-ttu-id="bf96b-117">Nastavení číselných řad</span><span class="sxs-lookup"><span data-stu-id="bf96b-117">Set up number sequences</span></span>](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
-- [<span data-ttu-id="bf96b-118">Nastavení výchozího zákazníka a adresáře</span><span class="sxs-lookup"><span data-stu-id="bf96b-118">Set up a default customer and address book</span></span>](default-customer.md)
+- [<span data-ttu-id="499d1-111">Definovat a konfigurovat strukturu právnické osoby</span><span class="sxs-lookup"><span data-stu-id="499d1-111">Define and configure your legal entity structure</span></span>](channels-legal-entities.md) 
+- [<span data-ttu-id="499d1-112">Konfigurace vaší organizační hierarchie</span><span class="sxs-lookup"><span data-stu-id="499d1-112">Configure your organizational hierarchy</span></span>](channels-org-hierarchies.md)
+- [<span data-ttu-id="499d1-113">Nastavit sklad</span><span class="sxs-lookup"><span data-stu-id="499d1-113">Set up a warehouse</span></span>](channels-setup-warehouse.md)
+- [<span data-ttu-id="499d1-114">Konfigurovat DPH</span><span class="sxs-lookup"><span data-stu-id="499d1-114">Configure sales tax</span></span>](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
+- [<span data-ttu-id="499d1-115">Nastavení profilu oznámení e-mailem</span><span class="sxs-lookup"><span data-stu-id="499d1-115">Set up an email notification profile</span></span>](email-notification-profiles.md)
+- [<span data-ttu-id="499d1-116">Nastavení číselných řad</span><span class="sxs-lookup"><span data-stu-id="499d1-116">Set up number sequences</span></span>](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
+- [<span data-ttu-id="499d1-117">Nastavení výchozího zákazníka a adresáře</span><span class="sxs-lookup"><span data-stu-id="499d1-117">Set up a default customer and address book</span></span>](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
 -->
 
-## <a name="retail-channel-prerequisites"></a><span data-ttu-id="bf96b-119">Předpoklady maloobchodní sítě</span><span class="sxs-lookup"><span data-stu-id="bf96b-119">Retail channel prerequisites</span></span>
+## <a name="retail-channel-prerequisites"></a><span data-ttu-id="499d1-118">Předpoklady maloobchodní sítě</span><span class="sxs-lookup"><span data-stu-id="499d1-118">Retail channel prerequisites</span></span>
 
-- [<span data-ttu-id="bf96b-120">Informační kódy a skupiny informačních kódů</span><span class="sxs-lookup"><span data-stu-id="bf96b-120">Info codes and info code groups</span></span>](info-codes-retail.md)
-- [<span data-ttu-id="bf96b-121">Nastavení funkčního profilu maloobchodu</span><span class="sxs-lookup"><span data-stu-id="bf96b-121">Set up a retail functionality profile</span></span>](retail-functionality-profile.md)
-- [<span data-ttu-id="bf96b-122">Nastavení adresáře zaměstnanců</span><span class="sxs-lookup"><span data-stu-id="bf96b-122">Set up an employee address book</span></span>](new-address-book.md)
-- [<span data-ttu-id="bf96b-123">Nastavení rozvržení obrazovky</span><span class="sxs-lookup"><span data-stu-id="bf96b-123">Set up a screen layout</span></span>](pos-screen-layouts.md)
-- [<span data-ttu-id="bf96b-124">Nastavit hardwarovou stanici</span><span class="sxs-lookup"><span data-stu-id="bf96b-124">Set up a hardware station</span></span>](retail-hardware-station-configuration-installation.md)
+- [<span data-ttu-id="499d1-119">Informační kódy a skupiny informačních kódů</span><span class="sxs-lookup"><span data-stu-id="499d1-119">Info codes and info code groups</span></span>](info-codes-retail.md)
+- [<span data-ttu-id="499d1-120">Nastavení funkčního profilu maloobchodu</span><span class="sxs-lookup"><span data-stu-id="499d1-120">Set up a retail functionality profile</span></span>](retail-functionality-profile.md)
+- [<span data-ttu-id="499d1-121">Nastavení adresáře zaměstnanců</span><span class="sxs-lookup"><span data-stu-id="499d1-121">Set up an employee address book</span></span>](new-address-book.md)
+- [<span data-ttu-id="499d1-122">Nastavení rozvržení obrazovky</span><span class="sxs-lookup"><span data-stu-id="499d1-122">Set up a screen layout</span></span>](pos-screen-layouts.md)
+- [<span data-ttu-id="499d1-123">Nastavit hardwarovou stanici</span><span class="sxs-lookup"><span data-stu-id="499d1-123">Set up a hardware station</span></span>](retail-hardware-station-configuration-installation.md)
 
-## <a name="call-center-channel-prerequisites"></a><span data-ttu-id="bf96b-125">Předpoklady kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="bf96b-125">Call Center channel prerequisites</span></span>
+## <a name="call-center-channel-prerequisites"></a><span data-ttu-id="499d1-124">Předpoklady kanálu kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="499d1-124">Call Center channel prerequisites</span></span>
 
-- <span data-ttu-id="bf96b-126">Parametry kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="bf96b-126">Call center parameters</span></span>
-- [<span data-ttu-id="bf96b-127">Způsoby platby za objednávku a refundaci kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="bf96b-127">Call center order and refund payment methods</span></span>](work-with-payments.md)
-- [<span data-ttu-id="bf96b-128">Způsoby dodání a poplatků kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="bf96b-128">Call center modes of delivery and charges</span></span>](configure-call-center-delivery.md)
+- <span data-ttu-id="499d1-125">Parametry kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="499d1-125">Call center parameters</span></span>
+- [<span data-ttu-id="499d1-126">Způsoby platby za objednávku a refundaci kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="499d1-126">Call center order and refund payment methods</span></span>](work-with-payments.md)
+- [<span data-ttu-id="499d1-127">Způsoby dodání a poplatků kontaktního střediska</span><span class="sxs-lookup"><span data-stu-id="499d1-127">Call center modes of delivery and charges</span></span>](configure-call-center-delivery.md)
 
-## <a name="online-channel-prerequisites"></a><span data-ttu-id="bf96b-129">Předpoklady online kanálu</span><span class="sxs-lookup"><span data-stu-id="bf96b-129">Online channel prerequisites</span></span>
+## <a name="online-channel-prerequisites"></a><span data-ttu-id="499d1-128">Předpoklady online kanálu</span><span class="sxs-lookup"><span data-stu-id="499d1-128">Online channel prerequisites</span></span>
 
-- [<span data-ttu-id="bf96b-130">Vytvoření online funkčního profilu</span><span class="sxs-lookup"><span data-stu-id="bf96b-130">Create an online functionality profile</span></span>](online-functionality-profile.md)
+- [<span data-ttu-id="499d1-129">Vytvoření online funkčního profilu</span><span class="sxs-lookup"><span data-stu-id="499d1-129">Create an online functionality profile</span></span>](online-functionality-profile.md)
 
-## <a name="additional-resources"></a><span data-ttu-id="bf96b-131">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="bf96b-131">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="499d1-130">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="499d1-130">Additional resources</span></span>
 
-[<span data-ttu-id="bf96b-132">Přehled kanálů</span><span class="sxs-lookup"><span data-stu-id="bf96b-132">Channels overview</span></span>](channels-overview.md)
+[<span data-ttu-id="499d1-131">Přehled kanálů</span><span class="sxs-lookup"><span data-stu-id="499d1-131">Channels overview</span></span>](channels-overview.md)
 
-[<span data-ttu-id="bf96b-133">Přehled organizací a organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="bf96b-133">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[<span data-ttu-id="499d1-132">Přehled organizací a organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="499d1-132">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
-[<span data-ttu-id="bf96b-134">Nastavení organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="bf96b-134">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
+[<span data-ttu-id="499d1-133">Nastavení organizačních hierarchií</span><span class="sxs-lookup"><span data-stu-id="499d1-133">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
 
-[<span data-ttu-id="bf96b-135">Vytvořit právnické osoby</span><span class="sxs-lookup"><span data-stu-id="bf96b-135">Create legal entities</span></span>](channels-legal-entities.md)
+[<span data-ttu-id="499d1-134">Vytvořit právnické osoby</span><span class="sxs-lookup"><span data-stu-id="499d1-134">Create legal entities</span></span>](channels-legal-entities.md)
 
-[<span data-ttu-id="bf96b-136">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="bf96b-136">Set up a retail channel</span></span>](channel-setup-retail.md)
+[<span data-ttu-id="499d1-135">Nastavení maloobchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="499d1-135">Set up a retail channel</span></span>](channel-setup-retail.md)
     
-[<span data-ttu-id="bf96b-137">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="bf96b-137">Set up an online channel</span></span>](channel-setup-online.md)
+[<span data-ttu-id="499d1-136">Nastavení online kanálu</span><span class="sxs-lookup"><span data-stu-id="499d1-136">Set up an online channel</span></span>](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
