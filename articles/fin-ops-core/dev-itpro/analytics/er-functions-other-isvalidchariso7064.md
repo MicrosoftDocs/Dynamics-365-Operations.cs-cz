@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,43 +16,46 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3bceb15bbe1dc65abc88c1229459707a6166482
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 26300adce5f9a8a567510885577c6cfb9b1c859a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680655"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563359"
 ---
-# <a name="isvalidcharacteriso7064-er-function"></a><span data-ttu-id="8d347-103">Funkce el. výkaznictví ISVALIDCHARACTERISO7064</span><span class="sxs-lookup"><span data-stu-id="8d347-103">ISVALIDCHARACTERISO7064 ER function</span></span>
+# <a name="isvalidcharacteriso7064-er-function"></a><span data-ttu-id="f79f0-103">Funkce el. výkaznictví ISVALIDCHARACTERISO7064</span><span class="sxs-lookup"><span data-stu-id="f79f0-103">ISVALIDCHARACTERISO7064 ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8d347-104">Funkce `ISVALIDCHARACTERISO7064` vrátí *logickou hodnotu* **TRUE**, pokud zadaný řetězec představuje platné mezinárodní číslo bankovního účtu (IBAN).</span><span class="sxs-lookup"><span data-stu-id="8d347-104">The `ISVALIDCHARACTERISO7064` function returns a *Boolean* value of **TRUE** if the specified string represents a valid international bank account number (IBAN).</span></span> <span data-ttu-id="8d347-105">V opačném případě výraz vrátí *logickou hodnotu* **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="8d347-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="f79f0-104">Funkce `ISVALIDCHARACTERISO7064` vrátí *logickou hodnotu* **TRUE**, pokud zadaný řetězec představuje platné mezinárodní číslo bankovního účtu (IBAN).</span><span class="sxs-lookup"><span data-stu-id="f79f0-104">The `ISVALIDCHARACTERISO7064` function returns a *Boolean* value of **TRUE** if the specified string represents a valid international bank account number (IBAN).</span></span> <span data-ttu-id="f79f0-105">V opačném případě výraz vrátí *logickou hodnotu* **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f79f0-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8d347-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="8d347-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f79f0-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="f79f0-106">Syntax</span></span>
 
 ```vb
 ISVALIDCHARACTERISO7064 (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="8d347-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="8d347-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="f79f0-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="f79f0-107">Arguments</span></span>
 
-<span data-ttu-id="8d347-108">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="8d347-108">`text`: *String*</span></span>
+<span data-ttu-id="f79f0-108">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="f79f0-108">`text`: *String*</span></span>
 
-<span data-ttu-id="8d347-109">Textová hodnota, která představuje IBAN.</span><span class="sxs-lookup"><span data-stu-id="8d347-109">A text value that represents an IBAN.</span></span>
+<span data-ttu-id="f79f0-109">Textová hodnota, která představuje IBAN.</span><span class="sxs-lookup"><span data-stu-id="f79f0-109">A text value that represents an IBAN.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="8d347-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="8d347-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f79f0-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="f79f0-110">Return values</span></span>
 
-<span data-ttu-id="8d347-111">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="8d347-111">*String*</span></span>
+<span data-ttu-id="f79f0-111">*Řetězec*</span><span class="sxs-lookup"><span data-stu-id="f79f0-111">*String*</span></span>
 
-<span data-ttu-id="8d347-112">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="8d347-112">The resulting text value.</span></span>
+<span data-ttu-id="f79f0-112">Výsledná textová hodnota.</span><span class="sxs-lookup"><span data-stu-id="f79f0-112">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8d347-113">Příklad</span><span class="sxs-lookup"><span data-stu-id="8d347-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f79f0-113">Příklad</span><span class="sxs-lookup"><span data-stu-id="f79f0-113">Example</span></span>
 
-<span data-ttu-id="8d347-114">`ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")` vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="8d347-114">`ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")` returns **TRUE**.</span></span> 
+<span data-ttu-id="f79f0-114">`ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")` vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f79f0-114">`ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")` returns **TRUE**.</span></span> 
 
-<span data-ttu-id="8d347-115">`ISVALIDCHARACTERISO7064 ("AT61")` vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="8d347-115">`ISVALIDCHARACTERISO7064 ("AT61")` returns **FALSE**.</span></span>
+<span data-ttu-id="f79f0-115">`ISVALIDCHARACTERISO7064 ("AT61")` vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f79f0-115">`ISVALIDCHARACTERISO7064 ("AT61")` returns **FALSE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="8d347-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="8d347-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="f79f0-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="f79f0-116">Additional resources</span></span>
 
-[<span data-ttu-id="8d347-117">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="8d347-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="f79f0-117">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="f79f0-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
