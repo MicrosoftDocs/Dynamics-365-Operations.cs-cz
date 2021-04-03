@@ -17,35 +17,38 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9093cd36ecf667d3ebf6970f7e4b2deb580e3723
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b059ad5b2ea9cd577624355cf17925cfb9b4867b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965848"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258511"
 ---
-# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="da1e6-103">Kódy důvodů pro servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="da1e6-103">Reason codes for service orders</span></span>   
+# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="a6543-103">Kódy důvodů pro servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="a6543-103">Reason codes for service orders</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="da1e6-104">Pomocí kódů důvodu můžete vysvětlovat stav servisní zakázky při aktualizaci její fáze.</span><span class="sxs-lookup"><span data-stu-id="da1e6-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="da1e6-105">Například při zrušení servisní zakázky můžete vybrat kód důvodu pro zrušení.</span><span class="sxs-lookup"><span data-stu-id="da1e6-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
+<span data-ttu-id="a6543-104">Pomocí kódů důvodu můžete vysvětlovat stav servisní zakázky při aktualizaci její fáze.</span><span class="sxs-lookup"><span data-stu-id="a6543-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="a6543-105">Například při zrušení servisní zakázky můžete vybrat kód důvodu pro zrušení.</span><span class="sxs-lookup"><span data-stu-id="a6543-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
 
-<span data-ttu-id="da1e6-106">Chcete-li zobrazit informace o kódech důvodu používaných ke sledování průběhu zpracování servisních zakázek, spusťte sestavu průběhu servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="da1e6-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="da1e6-107">V této sestavě jsou uvedeny všechny servisní zakázky bez ohledu na jejich fázi a kódy důvodů, které jsou zadány při aktualizaci fáze servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="da1e6-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
+<span data-ttu-id="a6543-106">Chcete-li zobrazit informace o kódech důvodu používaných ke sledování průběhu zpracování servisních zakázek, spusťte sestavu průběhu servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="a6543-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="a6543-107">V této sestavě jsou uvedeny všechny servisní zakázky bez ohledu na jejich fázi a kódy důvodů, které jsou zadány při aktualizaci fáze servisní zakázky.</span><span class="sxs-lookup"><span data-stu-id="a6543-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
 
-## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="da1e6-108">Zapnutí nebo vypnutí kódů důvodu</span><span class="sxs-lookup"><span data-stu-id="da1e6-108">Turn reason codes on or off</span></span>
+## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="a6543-108">Zapnutí nebo vypnutí kódů důvodu</span><span class="sxs-lookup"><span data-stu-id="a6543-108">Turn reason codes on or off</span></span>
 
-<span data-ttu-id="da1e6-109">Kódy důvodů jsou volitelné.</span><span class="sxs-lookup"><span data-stu-id="da1e6-109">Reason codes are optional.</span></span> <span data-ttu-id="da1e6-110">Můžete se rozhodnout, zda má být požadován kód důvodu při aktualizaci servisní zakázky na určitou servisní fázi.</span><span class="sxs-lookup"><span data-stu-id="da1e6-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
+<span data-ttu-id="a6543-109">Kódy důvodů jsou volitelné.</span><span class="sxs-lookup"><span data-stu-id="a6543-109">Reason codes are optional.</span></span> <span data-ttu-id="a6543-110">Můžete se rozhodnout, zda má být požadován kód důvodu při aktualizaci servisní zakázky na určitou servisní fázi.</span><span class="sxs-lookup"><span data-stu-id="a6543-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
 
-1.  <span data-ttu-id="da1e6-111">Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **Fáze servisu**.</span><span class="sxs-lookup"><span data-stu-id="da1e6-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
+1.  <span data-ttu-id="a6543-111">Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **Fáze servisu**.</span><span class="sxs-lookup"><span data-stu-id="a6543-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
 
-2.  <span data-ttu-id="da1e6-112">Ve formuláři **Fáze servisu** vyberte servisní fázi a poté zaškrtněte políčko **Důvod** pro servisní fázi.</span><span class="sxs-lookup"><span data-stu-id="da1e6-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
+2.  <span data-ttu-id="a6543-112">Ve formuláři **Fáze servisu** vyberte servisní fázi a poté zaškrtněte políčko **Důvod** pro servisní fázi.</span><span class="sxs-lookup"><span data-stu-id="a6543-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
 
-3.  <span data-ttu-id="da1e6-113">Uložte změny zavřením formuláře.</span><span class="sxs-lookup"><span data-stu-id="da1e6-113">Close the form to save your changes.</span></span>
+3.  <span data-ttu-id="a6543-113">Uložte změny zavřením formuláře.</span><span class="sxs-lookup"><span data-stu-id="a6543-113">Close the form to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="da1e6-114">Viz také</span><span class="sxs-lookup"><span data-stu-id="da1e6-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6543-114">Viz také</span><span class="sxs-lookup"><span data-stu-id="a6543-114">See also</span></span>
 
-[<span data-ttu-id="da1e6-115">Nastavit fáze servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="da1e6-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
+[<span data-ttu-id="a6543-115">Nastavit fáze servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="a6543-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
