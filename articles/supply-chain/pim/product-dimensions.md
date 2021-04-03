@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118674"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260640"
 ---
 # <a name="product-dimensions"></a>Dimenze produktu
 
@@ -106,7 +106,7 @@ Při testování kompatibility řešení s dimenzí verze hledejte následujíc�
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Mapy:** Pokud některé mapy používají dimenze zásob, musí být odpovídající mapování relací k těmto mapám aktualizováno tak, aby obsahovaly dimenzi verze. V rozšířeném modelu nebo rozšíření tabulky hledejte tabulky, kde pole obsahují rozměry inventáře.
-1. **Microsoft Dynamics 365 Commerce funkčnost:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikacích POS nebo elektronického obchodování. Tyto aplikace specifické pro obchod nebudou podporovat uživatele, kteří prodávají / odesílají nebo vracejí / přijímají zásoby podle dimenze verze. Funkce vyhledávání dostupnosti zásob nerozlišují zásoby podle dimenze verze v obchodních aplikacích. Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
+1. Funkce **Microsoft Dynamics 365 Commerce:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikacích POS nebo elektronického obchodování. Tyto aplikace specifické pro obchod nebudou podporovat uživatele, kteří prodávají / odesílají nebo vracejí / přijímají zásoby podle dimenze verze. Funkce vyhledávání dostupnosti zásob nerozlišují zásoby podle dimenze verze v obchodních aplikacích. Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
 
 #### <a name="turn-on-the-version-dimension"></a>Zapnout dimenzi verze
 
