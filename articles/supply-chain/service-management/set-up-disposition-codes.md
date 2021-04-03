@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977531"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470684"
 ---
 # <a name="set-up-disposition-codes"></a>Nastavit dispoziční kódy 
 
@@ -33,15 +33,15 @@ Můžete nastavit kódy dispozice k určení způsobu zpracování zboží vrác
 
 Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vráceno . Další informace o kódech důvodů naleznete v tématu [nastavení kódu důvodu vrácení](set-up-return-reason-code.md).
 
-1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy likvidace**.
+1.  Přejděte na **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy likvidace**.
 
-2.  Nový kód dispozice vytvoříte kliknutím na možnost **Nový** nebo stisknutím kláves CTRL+N.
+2.  Zvolte **Nový** pro vytvoření nového dispozičního kódu.
 
 3.  Zadejte jedinečný, popisný název, vyberte akci a zadejte popis kódu dispozice.
 
-4.  Pokud chcete k tomuto dispozičními kódu přidružit jakékoli poplatky odběratele, klepněte na tlačítko **Poplatky** a otevřete formulář **Nastavení poplatků**.
+4.  Pokud chcete k tomuto dispozičními kódu přidružit jakékoli poplatky odběratele, vyberte **Poplatky** a otevřete formulář **Nastavení poplatků**.
 
-5.  Chcete-li definovat jakékoli externí kódy, které mají odpovídat vlastním dispozičním kódům vaší společnosti, klepněte na tlačítko **Externí kódy** a otevřete formulář **Externí kódy**.
+5.  Chcete-li definovat jakékoli externí kódy, které mají odpovídat vlastním dispozičním kódům vaší společnosti, vyberte **Externí kódy** a otevřete formulář **Externí kódy**.
 
 ## <a name="see-also"></a>Viz také
 

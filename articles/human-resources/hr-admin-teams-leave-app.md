@@ -3,7 +3,7 @@ title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111785"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487866"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžou lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
-![Robot aplikace pracovního volna Human Resources Teams](./media/hr-admin-teams-leave-app-bot.png)
+![Robot aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot.png)
 
 ![Karta volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umož
 
 ## <a name="install-and-setup"></a>Instalace a nastavení
 
-Aplikaci Human Resources najdete v obchodě Teams. Informace o instalaci aplikace Teams najdete v části [Správa žádostí o dovolenou v aplikaci Teams](hr-teams-leave-app.md).
+Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams. Informace o instalaci aplikace Teams najdete v části [Správa žádostí o dovolenou v aplikaci Teams](hr-teams-leave-app.md).
 
 Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správa zásad povolení k aplikaci v Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Pokud chcete, aby si uživatelé v aplikaci prohlíželi kalendář dovolené a nepřítomnosti, musíte povolit funkci **Kalendář dovolené a nepřítomnosti v Teams** ve Správě funkcí. Další informace o povolení funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Povolení oznámení pro aplikaci Human Resources v Teams
 
-Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní volno v aplikaci Teams, musíte povolit oznámení v aplikaci Human Resources.
+Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní volno v aplikaci Teams, musíte povolit oznámení v aplikaci Dynamics 365 Human Resources.
 
 >[!NOTE]
->Oznámení dostanou pouze uživatelé, kteří jsou přihlášeni k Teams a používají aplikaci Human Resources Teams.
+>Oznámení dostanou pouze uživatelé, kteří jsou přihlášeni do Teams a používají aplikaci Dynamics 365 Human Resources Teams.
 
 1. V modulu Human Resources vyberte **Správa systému**.
 
@@ -66,7 +68,7 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Zapnutí nebo vypnutí oznámení aplikace Teams pro jednotlivé uživatele
 
-Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznámení zapnout nebo vypnout pro jednotlivé uživatele.
+Jakmile povolíte oznámení pro aplikaci Dynamics 365 Human Resources Teams, můžete oznámení zapnout nebo vypnout pro jednotlivé uživatele.
 
 1. V modulu Human Resources vyberte **Správa systému**.
 
@@ -82,9 +84,28 @@ Jakmile povolíte oznámení pro aplikaci Human Resources Teams, můžete oznám
 
 6. Zvolte **Uložit**.
 
-## <a name="known-issues"></a>Známé problémy
+## <a name="supported-languages"></a>Podporované jazyky
 
-| Výdej | Stav |
+Aplikace Dynamics 365 Human Resources v Teams podporuje následující jazyky:
+
+| ID národního prostředí | Jazyk |
+| --- | --- |
+| de-DE | Němčina (Německo) |
+| es-ES | Španělština (Španělsko) |
+| es-MX | Španělština (Mexiko) |
+| fr-CA | Francouzština (Kanada) |
+| fr-FR | Francouzština (Francie) |
+| it-IT | Italština (Itálie) |
+| nl-NL | Holandština (Nizozemsko) |
+| pt-BR | Portugalština (Brazílie) |
+| tr-TR | Turečtina (Turecko) |
+| zh-CN | Čínština (zjednodušená) |
+
+## <a name="notes"></a>Poznámky
+
+Následující pracovní položky jsou určeny pro budoucí vydání:
+
+| Pracovní položka | Stav |
 | --- | --- |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
 | Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
@@ -100,7 +121,7 @@ Pokud vás uživatel kontaktuje, protože se nemůže přihlásit do aplikace, o
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Chyba při schvalování žádostí o dovolenou v aplikaci Human Resources v Teams
 
-Pokud se uživateli při pokusu o schválení žádostí o dovolenou v aplikaci Teams zobrazí chyba, proveďte v rámci řešení potíží následující kroky:
+Pokud se uživateli při pokusu o schválení žádostí o dovolenou v aplikaci Teams zobrazí chyba, zkuste v rámci řešení potíží následující kroky:
 
 1. Ověřte, že jeho účet Teams je stejný, jaký používá pro přístup k Human Resources.
 

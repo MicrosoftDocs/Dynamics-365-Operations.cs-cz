@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001842"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470762"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
@@ -198,7 +198,7 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
 1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
-2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
+2. Zvolte **Nový** pro vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 

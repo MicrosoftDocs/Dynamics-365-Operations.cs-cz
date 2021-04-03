@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1dd4dfc5b8ca7af66941d081b4c20be0f5d6001d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993393"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477893"
 ---
 # <a name="create-a-default-customer"></a>Vytvoření výchozího odběratele
-
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán postup při vytvoření výchozího odběratele, který se použije při vytváření kanálu v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Při vytváření kanálu budete muset zadat výchozího odběratele. Po prvním vytvoření skupiny odběratelů a adresáře odběratelů lze snadno vytvořit výchozího odběratele.
 

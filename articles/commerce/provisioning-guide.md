@@ -1,5 +1,5 @@
 ---
-title: Zřízení prostředí vyhodnocení Dynamics 365 Commerce
+title: Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
@@ -17,14 +17,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a57cc02c6d62f288f14b65191c2f4927a019963c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969894"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478157"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení Dynamics 365 Commerce
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -34,8 +34,6 @@ Než začnete, doporučujeme vám toto téma rychle prohledat, abyste získali p
 
 > [!NOTE]
 > Prostředí vyhodnocení Commerce nejsou obecně dostupná a jsou poskytována partnerům a zákazníkům na základě žádosti. Podrobnější informace získáte od kontaktu společnosti Microsoft.
-
-## <a name="overview"></a>Přehled
 
 Chcete-li úspěšně zřídit prostředí pro hodnocení Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít, když se chystáte ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 

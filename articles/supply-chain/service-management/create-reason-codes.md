@@ -17,29 +17,24 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89e6010440599c5e60415c1261927de73f520034
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 254a94548bc75ee6d1eae1d1c9f3ae4bdbf58855
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965950"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470970"
 ---
-# <a name="create-reason-codes"></a>Vytvoření kódů rozhodnutí    
+# <a name="create-reason-codes"></a>Vytvoření kódů rozhodnutí
 
 [!include [banner](../includes/banner.md)]
 
+1. Přejděte na obrazovku **Správa služby** \> **Nastavení** \> **Servisní zakázky** \> **Kódy důvodu fáze**.
 
-1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **kódy důvodu fáze**.
+1. Zvolte **Nový** pro vytvoření kódu důvodu.
 
-2.  Stisknutím kláves CTRL+N vytvořte nový kód důvodu.
-
-3.  Stisknutím kláves CTRL+S kód důvodu uložte.
+1. Zvolte **Uložit** pro uložení kódu důvodu.
 
 Po výzvě k zadání kódu důvodu k vysvětlení, proč aktualizujete fázi servisní zakázky je možné vysvětlit, proč aktualizujete fázi servisní zakázky nastavených kódů důvodu.
 
-  
-
-
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

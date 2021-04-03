@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115069"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463327"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Typy pracovního volna v Dynamics 365 Human Resources definují různé typy absence, které může zaměstnanec ohlásit. Typy pracovního volna můžete přizpůsobit podle potřeb dané organizace. Příklady popisů typů pracovního volna:
 
@@ -72,8 +74,7 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
    
  3. Nastavte **Typ převodu pracovního volna** pro typ volna. Pokud vyberete tuto možnost, veškeré zůstatky k převodu budou převedeny na zadaný typ volna. Do plánu volna a nepřítomnosti musí být rovněž zahrnut typ převodu volna. 
  
- 4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Můžete také nastavit datum účinnosti pravidla vypršení platnosti. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené. 
- 
+ 4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Můžete také nastavit datum účinnosti pravidla vypršení platnosti. Datum účinnosti se používá k určení, kdy se má spustit dávková úloha, která zpracovává vypršení platnosti volna, nebo datum, kdy se pravidlo projeví. K samotnému vypršení platnosti dojde vždy v den zahájení plánu pracovního volna, jakmile je dávková úloha nastavena na zpracování. Například datum zahájení plánu může být 1. 1. 2020, ale pravidlo bylo vytvořeno až 1. 6. 2020. Nastavením data účinnosti na 1. 6. 2020 bude pravidlo zpracováno na hranici příštího roku, tedy 1. 1. 2021. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené. 
  
 ## <a name="see-also"></a>Viz také
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001941"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476668"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -44,20 +44,24 @@ Správa technických změn vám pomáhá plánovat a spravovat verzování produ
 
 Předchozí video ([Možnosti správy změn v Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) je součástí [seznamu videí o Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), které jsou k dispozici na YouTube.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>Zapněte pro svůj systém správu technických změn
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Zapnutí funkcí správy technických změn a dimenze verzí pro systém
 
-Nejprve zapněte správu technických změn podle těchto kroků.
+Než budete moci používat funkci správy technických změn, musíte povolit funkci *správy technických změn* a její konfigurační klíč. Pokud chcete také sledovat dimenzi verze produktů v transakcích (volitelně), musíte povolit také funkci *Dimenze verze produktu* a její konfigurační klíč.
+
+Správci mohou funkce zapnout provedením následujících kroků.
 
 1. Přejděte na [Správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Zkontrolovat aktualizace.
 1. Zapněte funkci s názvem **Správa technických změn**.
+1. Chcete-li ji použít, zapněte také funkci s názvem **Verze dimenze produktu**.
 
-Dále zapněte konfigurační klíč **Správa technických změn** podle těchto kroků.
+Správci mohou zapnout konfigurační klíče provedením následujících kroků.
 
 1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
-1. Rozbalte uzel **Obchod** a vyberte zaškrtávací políčko **Řízení technických změn**.
+1. Rozbalte uzel **Obchod**.
+1. Zaškrtněte políčko **Správa technických změn**.
+1. Chcete-li jej použít, zaškrtněte také políčko **Dimenze produktu - verze**.
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

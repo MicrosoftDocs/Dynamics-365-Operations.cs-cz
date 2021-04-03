@@ -16,18 +16,16 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 89e8fe78414e73053317ebe19e3afcc89231d440
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 03e46a7f8d110bd9ef3b353b150116bbf8a70ad5
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979696"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478109"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Přehled
 
 Zásada vrácení se změnami kanálu v Dynamics 365 Commerce umožňuje prodejcům nastavit vynucení, na kterých lze úhrady plateb povolit pro zpracování vrácení na pokladním místě (POS).  
 
