@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: aeb3d66ad24f96efea1b0ea9828a537f8853c94b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115505"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465479"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Odeslání žádosti o volno do workflow
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 V Microsoft Dynamics 365 Human Resources můžete pomocí rozhraní API MyLeaveRequests Submit() odeslat žádost o pracovní volno do workflowu. Toto rozhraní API je vystaveno jako akce pro entitu OData MyLeaveRequests.
 

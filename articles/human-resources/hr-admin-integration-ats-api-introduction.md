@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48e368fe69443a5105ddba78a887bf9159bfe52a
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125586"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464025"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Úvod do rozhraní API pro integraci systému sledování žadatelů
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Toto téma popisuje rozhraní API pro integraci systému sledování žadatelů (ATS) v Dynamics 365 Human Resources. Účelem rozhraní API je umožnit efektivní integraci mezi Dynamics 365 Human Resources a partnerskými systémy ATS.
 
@@ -121,10 +123,10 @@ Sady možností:
 - [Prázdné Ano Ne](hr-admin-integration-ats-api-blank-yes-no.md)
 - [Stav dokončení](hr-admin-integration-ats-api-completion-status.md)
 - [Typ kontaktu](hr-admin-integration-ats-api-contact-type.md)
-- [Základní kredity ve vzdělávání](hr-admin-integration-ats-api-education-credit-basis.md)
+- [Základ kreditu vzdělání](hr-admin-integration-ats-api-education-credit-basis.md)
 - [Rod](hr-admin-integration-ats-api-gender.md)
 - [Rodinný stav](hr-admin-integration-ats-api-marital-status.md)
-- [Měsíce v roce](hr-admin-integration-ats-api-months-of-year.md)
+- [Měsíce roku](hr-admin-integration-ats-api-months-of-year.md)
 - [Ne Ano](hr-admin-integration-ats-api-no-yes.md)
 - [Jednotka období](hr-admin-integration-ats-api-period-unit.md)
 - [Frekvence prověřování](hr-admin-integration-ats-api-screening-frequency.md)

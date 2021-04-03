@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: db96073f0a16f1c710fbfebb2d08a1d693eab1e1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4997094"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463375"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurace parametrů pracovního volna a absence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Resourcesje vhodné ověřit nastavení všech souvisejících parametrů lidských zdrojů, včetně následujících:
 

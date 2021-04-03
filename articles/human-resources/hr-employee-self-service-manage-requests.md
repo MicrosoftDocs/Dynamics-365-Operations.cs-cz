@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 86e6868b5172ea113fab63780773633427a45a1a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115287"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463183"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Správa žádostí o pracovní volno a absenci
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Spravujte požadavky na volno v pracovním prostoru **Samoobsluha zaměstnance** v aplikaci Dynamics 365 Human Resources. Požadavky mohou být jednoduché požadavky na jeden den nebo více dnů, které zahrnují několik typů pracovního volna a absencí. Pokud není workflow povoleno, žádosti jsou automaticky schváleny. Pokud je workflow povoleno, schválení může být automatické nebo vyžadovat podpis, v závislosti na konfiguraci workflowu.
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 383af930e7ea5b14584069dff09e45b92808df23
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b6df9391f8b97573f7874f8bc19450db3fdadd88
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115191"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463207"
 ---
 # <a name="change-employee-self-service-workspace-name"></a>Změna názvu samoobslužného pracovního prostoru zaměstnance
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Pokud máte dobrovolníky nebo jiné zaměstnance, možná budete chtít změnit název pracovního prostoru **Zaměstnanecká samoobsluha**. Tento pracovní prostor můžete změnit na **Samoobsluha**.
 

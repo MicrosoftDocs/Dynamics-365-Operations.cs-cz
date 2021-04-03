@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2083d3b18621ec7759b658b5ec34f2371c2ea1df
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 5ac357bbef4bf84b9eaf153834bc7a609240c45e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111820"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464219"
 ---
 # <a name="create-worker-benefit-plans"></a>Vytvoření plánů zaměstnaneckých výhod pracovníka
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Human Resources vytvořit pro výběr plánů zaměstnaneckých výhod pro zaměstnance a potvrzení výběrů plánu zaměstnaneckých výhod. Zaměstnanci obvykle vybírají plány zaměstnaneckých výhod sami pomocí samoobsluhy zaměstnanců a potom výběr potvrdí správce zaměstnaneckých výhod. 
 

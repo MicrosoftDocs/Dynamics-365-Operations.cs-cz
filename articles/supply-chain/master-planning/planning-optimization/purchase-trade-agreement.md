@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e060f20b65153a7bbe70996e6ff4c3930468348a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992238"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264715"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
@@ -73,12 +73,12 @@ Poté, co je systém připraven, jak je popsáno v předchozí části, byste m�
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Příklady toho, jak Optimalizace plánování vyhledává dodavatele a doby realizace
 
-Následující tabulka uvádí příklady, které ukazují, jak různá nastavení vydaného produktu a souvisejících nákupních obchodních smluv ovlivňují hodnoty, které jsou nalezeny pro výslednou plánovanou objednávku. Hodnoty zobrazené **tučně** ve dvou sloupcích zcela vpravo jsou hodnoty, které jsou vybrány pomocí Optimalizace plánování. Hodnoty uvedené *_tučně a kurzívou_* v ostatních sloupcích jsou nastavení, která vytvořila tyto výsledné hodnoty pro každý řádek.
+Následující tabulka uvádí příklady, které ukazují, jak různá nastavení vydaného produktu a souvisejících nákupních obchodních smluv ovlivňují hodnoty, které jsou nalezeny pro výslednou plánovanou objednávku. Hodnoty zobrazené **tučně** ve dvou sloupcích zcela vpravo jsou hodnoty, které jsou vybrány pomocí Optimalizace plánování. Hodnoty uvedené **_tučně a kurzívou_** v ostatních sloupcích jsou nastavení, která vytvořila tyto výsledné hodnoty pro každý řádek.
 
 | Vydaný produkt: dodavatel | Výchozí nastavení objednávky: doba realizace | Pokrytí položky: Přepsat dodavatele | Pokrytí položky: Přepsat dobu realizace | Obchodní smlouva: dodavatel | Obchodní smlouva: doba realizace | Obchodní smlouva: Ignorovat dobu realizace | Výsledný dodavatel | Výsledná doba realizace |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _*_US001_*_ | _*_1_*_ | Žádný | Žádný | US003 | 3 | Žádný | _ *US001** | **1** |
-| US001 | 1 | **_Ano: US002_* _ | _*_Ano: 2_*_ | US003 | 3 | Žádný | _ *US002** | **2** |
+| ***US001** _ | _*_1_*_ | Žádný | Žádný | US003 | 3 | Žádný | _ *US001** | **1** |
+| US001 | 1 | ***Ano: US002** _ | _*_Ano: 2_*_ | US003 | 3 | Žádný | _ *US002** | **2** |
 | *(Prázdné)* | 1 | Žádný | Žádný | ***US003** _ | _*_3_*_ | Žádný | _ *US003** | **3** |
 | *(Prázdné)* | ***1** _ | Žádný | Žádný | _*_US003_*_ | 3 | Ano | _ *US003** | **1** |
 | *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Žádný | US003 | 3 | Žádný | _ *US002** | **1** |
