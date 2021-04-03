@@ -18,19 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142268"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486970"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalace a připojení aplikace skladu
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Toto téma popisuje, jak konfigurovat starou skladovou aplikaci. Pokud hledáte informace o tom, jak nakonfigurovat novou mobilní aplikaci Warehouse Management (aktuálně ve veřejném náhledu), získáte informace v tématu [Instalace a připojení mobilní aplikace Warehouse Management](install-configure-warehouse-management-app.md).
+> Toto téma popisuje, jak konfigurovat starou skladovou aplikaci. Pokud hledáte informace o tom, jak konfigurovat novou mobilní aplikaci Řízení skladu, pročtěte si téma [Instalace a připojení mobilní aplikace Řízení skladu](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Toto téma popisuje způsob konfigurace skladové aplikace pro nasazení v cloudu. Postup konfigurace skladové aplikace pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

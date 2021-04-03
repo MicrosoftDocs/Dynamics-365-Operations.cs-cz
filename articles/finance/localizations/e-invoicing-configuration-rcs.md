@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104356"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592615"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurace doplňku elektronické fakturace v Regulatory Configuration Services (RCS)
 
@@ -64,7 +64,6 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace, které jso
 | Belgie        | Belgická elektronická faktura (BE)      | Prodejní a projektové faktury |
 | Brazílie         | Brazilský NF-e (BR)                  | Fiskální dokument model 55, opravné dopisy, zrušení a vyřazení |
 | Brazílie         | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokumenty služby |
-| Brazílie         | Brazilský NFS-e São Paulo (BR)       | Fiskální dokumenty služby |
 | Dánsko        | Dánská elektronická faktura (DK)       | Prodejní a projektové faktury |
 | Egypt          | Egyptská elektronická faktura (EG) | Prodejní a projektové faktury |
 | Estonsko        | Estonská elektronická faktura (EE)     | Prodejní a projektové faktury |
@@ -119,10 +118,6 @@ Následující seznamy ukazují konfigurace formátu ER, které jsou k dispozici
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF dotaz Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brazilian (BR) NFS-e: NFS-e město São Paulo
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Dánská (AT) elektronická faktura: Prodejní a projektové faktury pro Dánsko
 
@@ -210,7 +205,7 @@ V následující tabulce jsou uvedeny dostupné akce a to, zda jsou aktuálně o
 | Volejte brazilskou službu SEFAZ                  | Integrace s brazilskou službou SEFAZ pro odesílání fiskálních dokumentů.       | Náhled           |
 | Volání mexické služby PAC                      | Integrace s mexickou službou PAC pro odesílání CFDI.                      | Náhled           |
 | Odezva procesu                              | Analýza odpovědi přijatou z volání webové služby.                     | Obecně dostupné  |
-| Použití MS Power Automate                         | Integrace s postupem integrovaným v Microsoft Power Automate.                       | Náhled           |
+| Použití MS Power Automate                         | Integrace s tokem vytvořeným v Microsoft Power Automate.                       | Náhled           |
 
 ## <a name="configuration-providers"></a>Poskytovatelé konfigurace
 

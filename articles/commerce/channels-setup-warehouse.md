@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 67c0bb169bee8a7ea90edb4db7233111a8ee6e34
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993646"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477627"
 ---
 # <a name="warehouse-set-up"></a>Nastavit sklad
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak nastavit sklad, který má být použit s novým kanálem v Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Ke každému obchodnímu kanálu je nutné přidružit konfigurovaný sklad. Následující postupy poskytují minimální konfiguraci nutnou k nastavení skladu pro obchodní kanál. Další informace týkající se nastavení skladu naleznete v [Přehledu řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 

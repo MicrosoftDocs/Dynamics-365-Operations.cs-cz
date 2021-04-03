@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993996"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487090"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Odstraňování potíží s konfigurací skladu
 
@@ -109,5 +109,32 @@ Chcete-li pracovníkům umožnit tuto změnu, můžete vytvořit položku nabíd
 
 Na stránce můžete podle potřeby nastavit další pole.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Profil správy dokování profilu umístění nebrání smíšení typů zásob.
+
+### <a name="issue-description"></a>Popis problému
+
+Používáte *zásady konsolidace dodávky*. Nastavili jste *profil správy doku* pro *profil umístění*, ale když je práce vytvořena, typy zásob se v konečném umístění smíchají.
+
+### <a name="issue-resolution"></a>Řešení problému
+
+Profily správy doků vyžadují, aby byla práce předem rozdělena. Jinými slovy, profil správy doku očekává, že pracovní záhlaví nebude mít více umístění pro vložení.
+
+Aby profil správy doku mohl efektivně spravovat míchání zásob, musí být nastaveno zalomení pracovní hlavičky.
+
+V tomto příkladu je náš profil správy doku nakonfigurován tak, že hodnota **Typy zásob, které by se neměly kombinovat** je nastavena na *ID zásilky* a nastavíme pro ni zalomení pracovní hlavičky:
+
+1. Přejděte do **Řízení skladu \> Nastavení \> Práce \> Pracovní šablony**.
+1. Vyberte **Typ pracovního příkazu** pro úpravu (například *Nákupní objednávky*).
+1. Vyberte pracovní šablonu, kterou chcete upravit.
+1. V podokně akcí vyberte **Upravit dotaz**.
+1. Otevřete kartu **Řazení** a přidejte řádek s následujícím nastavením:
+    - **Tabulka** - *Dočasné pracovní transakce*
+    - **Odvozená tabulka** - *Dočasné pracovní transakce*
+    - **Pole** - *ID dodávky*
+1. Vyberte **OK**.
+1. Vrátíte se na stránku **Pracovní šablony**. V podokně akcí vyberte **Zalomení pracovních hlaviček**.
+1. V podokně akcí vyberte **Upravit**.
+1. Zaškrtněte políčko spojené s **Název pole** *ID zásilky*.
+1. V podokně akcí vyberte **Uložit**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
