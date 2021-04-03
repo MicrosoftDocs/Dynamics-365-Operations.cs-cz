@@ -3,7 +3,7 @@ title: Vytvoření e-mailových šablon pro transakční události
 description: Toto téma popisuje, jak vytvářet, odesílat a konfigurovat e-mailové šablony pro transakční události v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000771"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555238"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -39,7 +39,7 @@ Než budete moci mapovat konkrétní transakční událost na e-mailovou šablon
 
 Šablonu e-mailu vytvoříte takto:
 
-1. V Commerce Headquarters přejděte do nabídky **E-mailové šablony organizace**, která je v **Retail a Commerce \> Nastavení centrály \> E-mailové šablony organizace** nebo **Správa organizace \> Nastavení \> E-mailové šablony organizace**.
+1. V centrále Commerce přejděte do nabídky **Retail a Commerce \> Nastavení centrály \> E-mailové šablony organizace** nebo **Správa organizace \> Nastavení \> E-mailové šablony organizace**.
 1. Zvolte **Nové**.
 1. Pod možností **Obecné** nastavte následující pole:
 
@@ -78,28 +78,29 @@ Následuje příklad.
 
 Následující zástupné texty se načtou a zobrazí data, která jsou definována na úrovni prodejní objednávky (na rozdíl od úrovně řádku prodeje).
 
-| Název zástupného textu    | Hodnota zástupného textu                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Jméno zákazníka, který vystavil objednávku.                   |
-| salesid             | ID prodejní objednávky.                                       |
-| deliveryaddress     | Dodací adresa pro expedované objednávky.                         |
-| customeraddress     | Adresa zákazníka.                                     |
-| deliverydate        | Datum dodání.                                               |
-| shipdate            | Datum expedice.                                                   |
-| modeofdelivery      | Způsob doručení objednávky.                                  |
-| náklady pro záhlaví             | Celkové poplatky za objednávku.                                 |
-| daň                 | Celková daň objednávky.                                     |
-| celkem               | Celková částka objednávky.                                  |
-| ordernetamount      | Celková částka objednávky snížená o celkovou daň.             |
-| sleva            | Celková sleva objednávky.                                |
-| storename           | Název obchodu, kde byla vystavena objednávka.                |
-| storeaddress        | Adresa obchodu, který vystavil objednávku.                  |
-| storeopenfrom       | Otevírací čas obchodu, který vystavil objednávku.             |
-| storeopento         | Zavírací čas obchodu, který vystavil objednávku.             |
-| pickupstorename     | Název obchodu, kde bude objednávka vyzvednuta.         |
-| pickupstoreaddress  | Adresa obchodu, kde bude objednávka vyzvednuta.      |
-| pickupopenstorefrom | Otevírací čas obchodu, kde bude objednávka vyzvednuta. |
-| pickupopenstoreto   | Zavírací čas obchodu, kde bude objednávka vyzvednuta. |
+| Název zástupného textu     | Hodnota zástupného textu                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Jméno zákazníka, který vystavil objednávku.               |
+| salesid              | ID prodejní objednávky.                                   |
+| deliveryaddress      | Dodací adresa pro expedované objednávky.                     |
+| customeraddress      | Adresa zákazníka.                                 |
+| customeremailaddress | E-mailová adresa, kterou zákazník zadal při placení.     |
+| deliverydate         | Datum dodání.                                           |
+| shipdate             | Datum expedice.                                               |
+| modeofdelivery       | Způsob doručení objednávky.                              |
+| náklady pro záhlaví              | Celkové poplatky za objednávku.                             |
+| daň                  | Celková daň objednávky.                                 |
+| celkem                | Celková částka objednávky.                              |
+| ordernetamount       | Celková částka objednávky snížená o celkovou daň.         |
+| sleva             | Celková sleva objednávky.                            |
+| storename            | Název obchodu, kde byla vystavena objednávka.            |
+| storeaddress         | Adresa obchodu, který vystavil objednávku.              |
+| storeopenfrom        | Otevírací čas obchodu, který vystavil objednávku.         |
+| storeopento          | Zavírací čas obchodu, který vystavil objednávku.         |
+| pickupstorename      | Název obchodu, kde bude objednávka vyzvednuta.     |
+| pickupstoreaddress   | Adresa obchodu, kde bude objednávka vyzvednuta.  |
+| pickupopenstorefrom  | Otevírací čas obchodu, kde bude objednávka vyzvednuta. |
+| pickupopenstoreto    | Zavírací čas obchodu, kde bude objednávka vyzvednuta. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Zástupné texty řádku objednávky (úroveň řádku prodeje)
 
@@ -169,11 +170,8 @@ Následuje příklad.
 
 Účtenky lze zaslat e-mailem zákazníkům, kteří nakupují v maloobchodním pokladním místě (POS). Obecně jsou kroky pro vytvoření šablony účtenky odeslané e-mailem stejné jako kroky pro vytvoření šablon pro jiné transakční události. Jsou však nutné následující změny:
 
-- ID e-mailu e-mailové šablony musí být **emailRecpt**.
 - Text účtenky se vloží do e-mailu pomocí zástupného textu **%message%**. Aby bylo zajištěno, že tělo účtenky je správně vykresleno, obklopte zástupný text **%message%** HTML značkami **&lt;pre&gt;** a **&lt;/pre&gt;**.
-- Konce řádků v HTML pro záhlaví a zápatí e-mailu jsou převedeny na HTML značky **&lt;br /&gt;**, aby bylo tělo účtenky vykresleno správně. Chcete-li vyloučit nežádoucí vertikální prostor v e-mailech s účtenkou, odstraňte konce řádků z jakéhokoli místa v HTML, kde vertikální prostor není vyžadován.
-
-Další informace o způsobu konfigurace e-mailových účtenek naleznete v tématu [Nastavení účtenek e-mailem](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Zástupný symbol **%receiptid%** lze použít k zobrazení QR kódu nebo čárového kódu, který představuje ID účtenky. (QR kódy a čárové kódy jsou dynamicky generovány a obsluhovány službou třetí strany.) Další informace o tom, jak zobrazit QR kód nebo čárový kód v e-mailovém potvrzení, najdete v části [Přidání QR kódu nebo čárového kód do transakčních a přijímacích e-mailů](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Odeslání HTML e-mailu
 

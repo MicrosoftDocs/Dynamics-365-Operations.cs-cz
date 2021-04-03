@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123461"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500687"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management obsahuje několik uložených zobrazení, která můžete podle potřeby povolit a použít. Některé z těchto standardních uložených zobrazení jsou optimalizovány a pojmenovány pro konkrétní roli nebo úkol (například „Kontrola kvality“ nebo „Příjem“). Jiné jsou optimalizovány tak, aby zahrnovaly pouze pole a nastavení, která podle statistik používání společnosti Microsoft zákazníci nejčastěji používají. Tato uložená zobrazení se obvykle označují jako *zjednodušená* zobrazení. Toto téma popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit a přizpůsobit.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024663"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500591"
 ---
 # <a name="manage-standard-cost-updates"></a>Správa aktualizací standardních nákladů
 
@@ -45,6 +45,8 @@ Následující příklad znázorňuje použití přístupu s jednou verzí a dv�
 V tomto příkladu byla použita dodatečná nákladová verze pro správu aktualizací v průběhu roku 2020. Lze použít více dodatečných nákladových verzí (například samostatnou verzi pro každou dávku aktualizací). Při použití více dalších nákladů musí být záloha vyjádřena jako aktivní náklady, protože aktivní náklady jsou rozděleny na více nákladových verzích.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Finanční dimenze pro standardní přecenění nákladů
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktivace nové standardní ceny obvykle přecení aktuální hodnotu zásob standardními transakcemi přecenění nákladů. Finanční dimenze položky se pak zaúčtují na transakcích. hcete-li však určit, zda a jak jsou finanční dimenze zaúčtovány, použijte [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí funkce nazvané *Možnosti výchozí finanční dimenze pro přecenění standardních nákladů na zásoby*. Po povolení této funkce přejděte na **Správa nákladů> Nastavení zásad účtování zásob> Parametry** a nastavte nový rozevírací seznam **Původ finanční dimenze** na jednu z následujících hodnot:
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115673"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560452"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -92,9 +91,13 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 
 V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt. 
 
+Aktuální implementace pluginů pro duální zápis, které přidružují výchozí ceník k jednotce, vyhledá měnu přidruženou k aplikaci Finance and Operations a najde první ceník v aplikaci Customer Engagement pomocí abecedního řazení názvu ceníku. Chcete-li nastavit výchozí ceník pro konkrétní měnu, pokud máte pro tuto měnu více ceníků, musíte aktualizovat název ceníku na název, který je v abecedním pořadí dříve než jakékoli jiné ceníky pro stejnou měnu.
+
 Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní**, aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**. 
 
 Pokud jsou produkty synchronizovány, musíte zadat hodnotu pro pole **Prodejní jednotka** v aplikaci Finance and Operations, protože je to povinné pole v prodeji.
+
+Vytváření skupin produktů z Dynamics 365 Sales není podporováno synchronizací produktů s dvojím zápisem.
 
 Synchronizace produktů se děje z aplikace Finance and Operations do Dataverse. To znamená, že hodnoty sloupců z tabulky lze změnit v Dataverse, ale při spuštění synchronizace (při změně sloupce produktu v aplikaci Finance and Operations) dojde k přepsání hodnot v Dataverse. 
 
