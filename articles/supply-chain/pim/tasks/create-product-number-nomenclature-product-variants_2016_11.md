@@ -15,89 +15,92 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e52b7a5aff3e86e845484e1e84b4003cc4a52c95
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 07922a20d5c99640f32bb28ddddaffe846440667
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992363"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258868"
 ---
-# <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a><span data-ttu-id="0aec1-103">Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu</span><span class="sxs-lookup"><span data-stu-id="0aec1-103">Create a product number nomenclature for configured product variants</span></span>
+# <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a><span data-ttu-id="104b3-103">Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu</span><span class="sxs-lookup"><span data-stu-id="104b3-103">Create a product number nomenclature for configured product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0aec1-104">Tato procedura ukazuje, jak nastavit názvosloví čísel produktu pro nakonfigurované varianty produktu a jak je přiřadit konfigurovatelnému základnímu produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-104">This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master.</span></span> <span data-ttu-id="0aec1-105">Tato procedura také ukazuje, jak lze vytvářet názvosloví konfigurace komponenty modelu konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-105">This procedure also demonstrates how you can build a configuration nomenclature for a product configuration model component.</span></span> <span data-ttu-id="0aec1-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="0aec1-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0aec1-107">Základnímu produktu D0004 je přiřazeno nové názvosloví čísla produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-107">The new product number nomenclature is assigned to the D0004 product master.</span></span> <span data-ttu-id="0aec1-108">Tento úkol obvykle provádí návrhář produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-108">This task would typically be done by a product designer.</span></span>
+<span data-ttu-id="104b3-104">Tato procedura ukazuje, jak nastavit názvosloví čísel produktu pro nakonfigurované varianty produktu a jak je přiřadit konfigurovatelnému základnímu produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-104">This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master.</span></span> <span data-ttu-id="104b3-105">Tato procedura také ukazuje, jak lze vytvářet názvosloví konfigurace komponenty modelu konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-105">This procedure also demonstrates how you can build a configuration nomenclature for a product configuration model component.</span></span> <span data-ttu-id="104b3-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="104b3-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="104b3-107">Základnímu produktu D0004 je přiřazeno nové názvosloví čísla produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-107">The new product number nomenclature is assigned to the D0004 product master.</span></span> <span data-ttu-id="104b3-108">Tento úkol obvykle provádí návrhář produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-108">This task would typically be done by a product designer.</span></span>
 
 
-## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="0aec1-109">Vytvoření názvosloví čísla produktu</span><span class="sxs-lookup"><span data-stu-id="0aec1-109">Create a product number nomenclature</span></span>
-1. <span data-ttu-id="0aec1-110">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-110">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="0aec1-111">Klikněte na Zobrazit názvosloví produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-111">Click Product nomenclature.</span></span>
-3. <span data-ttu-id="0aec1-112">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="0aec1-112">Click New.</span></span>
-4. <span data-ttu-id="0aec1-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="0aec1-113">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="0aec1-114">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="0aec1-114">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="0aec1-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-115">Click Add.</span></span>
-7. <span data-ttu-id="0aec1-116">Klikněte na Číslo základního produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-116">Click Product master number.</span></span>
-8. <span data-ttu-id="0aec1-117">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-117">Click Add.</span></span>
-9. <span data-ttu-id="0aec1-118">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="0aec1-118">Click Text constant.</span></span>
-10. <span data-ttu-id="0aec1-119">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-119">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="0aec1-120">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="0aec1-120">In the Text field, type a value.</span></span>
-12. <span data-ttu-id="0aec1-121">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-121">Click Add.</span></span>
-13. <span data-ttu-id="0aec1-122">Klikněte na Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="0aec1-122">Click Configuration.</span></span>
-14. <span data-ttu-id="0aec1-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-123">Close the page.</span></span>
+## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="104b3-109">Vytvoření názvosloví čísla produktu</span><span class="sxs-lookup"><span data-stu-id="104b3-109">Create a product number nomenclature</span></span>
+1. <span data-ttu-id="104b3-110">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-110">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="104b3-111">Klikněte na Zobrazit názvosloví produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-111">Click Product nomenclature.</span></span>
+3. <span data-ttu-id="104b3-112">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="104b3-112">Click New.</span></span>
+4. <span data-ttu-id="104b3-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="104b3-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="104b3-114">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="104b3-114">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="104b3-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-115">Click Add.</span></span>
+7. <span data-ttu-id="104b3-116">Klikněte na Číslo základního produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-116">Click Product master number.</span></span>
+8. <span data-ttu-id="104b3-117">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-117">Click Add.</span></span>
+9. <span data-ttu-id="104b3-118">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="104b3-118">Click Text constant.</span></span>
+10. <span data-ttu-id="104b3-119">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-119">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="104b3-120">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="104b3-120">In the Text field, type a value.</span></span>
+12. <span data-ttu-id="104b3-121">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-121">Click Add.</span></span>
+13. <span data-ttu-id="104b3-122">Klikněte na Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="104b3-122">Click Configuration.</span></span>
+14. <span data-ttu-id="104b3-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-123">Close the page.</span></span>
 
-## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a><span data-ttu-id="0aec1-124">Přiřazení názvosloví čísla produktu základnímu produktu</span><span class="sxs-lookup"><span data-stu-id="0aec1-124">Assign the product number nomenclature to a product master</span></span>
-1. <span data-ttu-id="0aec1-125">Klikněte na Základní produkty.</span><span class="sxs-lookup"><span data-stu-id="0aec1-125">Click Product masters.</span></span>
-2. <span data-ttu-id="0aec1-126">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="0aec1-126">Use the Quick Filter to find records.</span></span> <span data-ttu-id="0aec1-127">Můžete například filtrovat pole Číslo produktu pomocí hodnoty „D“.</span><span class="sxs-lookup"><span data-stu-id="0aec1-127">For example, filter on the Product number field with a value of 'D'.</span></span>
-3. <span data-ttu-id="0aec1-128">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-128">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="0aec1-129">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="0aec1-129">Click Edit.</span></span>
-5. <span data-ttu-id="0aec1-130">Vyberte možnost Ano v poli Použít názvosloví.</span><span class="sxs-lookup"><span data-stu-id="0aec1-130">Select Yes in the Use nomenclature field.</span></span>
-6. <span data-ttu-id="0aec1-131">V poli Názvosloví čísla varianty produktu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-131">In the Product variant number nomenclature field, enter or select a value.</span></span>
-7. <span data-ttu-id="0aec1-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-132">Close the page.</span></span>
-8. <span data-ttu-id="0aec1-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-133">Close the page.</span></span>
+## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a><span data-ttu-id="104b3-124">Přiřazení názvosloví čísla produktu základnímu produktu</span><span class="sxs-lookup"><span data-stu-id="104b3-124">Assign the product number nomenclature to a product master</span></span>
+1. <span data-ttu-id="104b3-125">Klikněte na Základní produkty.</span><span class="sxs-lookup"><span data-stu-id="104b3-125">Click Product masters.</span></span>
+2. <span data-ttu-id="104b3-126">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="104b3-126">Use the Quick Filter to find records.</span></span> <span data-ttu-id="104b3-127">Můžete například filtrovat pole Číslo produktu pomocí hodnoty „D“.</span><span class="sxs-lookup"><span data-stu-id="104b3-127">For example, filter on the Product number field with a value of 'D'.</span></span>
+3. <span data-ttu-id="104b3-128">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="104b3-128">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="104b3-129">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="104b3-129">Click Edit.</span></span>
+5. <span data-ttu-id="104b3-130">Vyberte možnost Ano v poli Použít názvosloví.</span><span class="sxs-lookup"><span data-stu-id="104b3-130">Select Yes in the Use nomenclature field.</span></span>
+6. <span data-ttu-id="104b3-131">V poli Názvosloví čísla varianty produktu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-131">In the Product variant number nomenclature field, enter or select a value.</span></span>
+7. <span data-ttu-id="104b3-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-132">Close the page.</span></span>
+8. <span data-ttu-id="104b3-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-133">Close the page.</span></span>
 
-## <a name="create-nomenclature-for-a-product-configuration-model-component"></a><span data-ttu-id="0aec1-134">Vytvoření názvosloví pro komponentu modelu konfigurace produktu</span><span class="sxs-lookup"><span data-stu-id="0aec1-134">Create nomenclature for a product configuration model component</span></span>
-1. <span data-ttu-id="0aec1-135">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-135">Click Product configuration models.</span></span>
-2. <span data-ttu-id="0aec1-136">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="0aec1-136">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="0aec1-137">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-137">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="0aec1-138">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="0aec1-138">Click Edit.</span></span>
-5. <span data-ttu-id="0aec1-139">Vyberte možnost Ano v poli Použít konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="0aec1-139">Select Yes in the Use configuration nomenclature field.</span></span>
-6. <span data-ttu-id="0aec1-140">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-140">Click Add.</span></span>
-7. <span data-ttu-id="0aec1-141">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="0aec1-141">Click Attribute value.</span></span>
-8. <span data-ttu-id="0aec1-142">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-142">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="0aec1-143">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-143">In the Attribute field, enter or select a value.</span></span>
-10. <span data-ttu-id="0aec1-144">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-144">Click Add.</span></span>
-11. <span data-ttu-id="0aec1-145">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="0aec1-145">Click Text constant.</span></span>
-12. <span data-ttu-id="0aec1-146">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-146">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="0aec1-147">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="0aec1-147">In the Text field, type a value.</span></span>
-14. <span data-ttu-id="0aec1-148">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-148">Click Add.</span></span>
-15. <span data-ttu-id="0aec1-149">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="0aec1-149">Click Attribute value.</span></span>
-16. <span data-ttu-id="0aec1-150">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-150">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="0aec1-151">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-151">In the Attribute field, enter or select a value.</span></span>
-18. <span data-ttu-id="0aec1-152">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-152">Click Add.</span></span>
-19. <span data-ttu-id="0aec1-153">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="0aec1-153">Click Text constant.</span></span>
-20. <span data-ttu-id="0aec1-154">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-154">In the list, mark the selected row.</span></span>
-21. <span data-ttu-id="0aec1-155">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="0aec1-155">In the Text field, type a value.</span></span>
-22. <span data-ttu-id="0aec1-156">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-156">Click Add.</span></span>
-23. <span data-ttu-id="0aec1-157">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="0aec1-157">Click Attribute value.</span></span>
-24. <span data-ttu-id="0aec1-158">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-158">In the list, mark the selected row.</span></span>
-25. <span data-ttu-id="0aec1-159">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-159">In the Attribute field, enter or select a value.</span></span>
-26. <span data-ttu-id="0aec1-160">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-160">Click Add.</span></span>
-27. <span data-ttu-id="0aec1-161">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="0aec1-161">Click Text constant.</span></span>
-28. <span data-ttu-id="0aec1-162">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-162">In the list, mark the selected row.</span></span>
-29. <span data-ttu-id="0aec1-163">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="0aec1-163">In the Text field, type a value.</span></span>
-30. <span data-ttu-id="0aec1-164">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-164">Click Add.</span></span>
-31. <span data-ttu-id="0aec1-165">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="0aec1-165">Click Attribute value.</span></span>
-32. <span data-ttu-id="0aec1-166">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-166">In the list, mark the selected row.</span></span>
-33. <span data-ttu-id="0aec1-167">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-167">In the Attribute field, enter or select a value.</span></span>
-34. <span data-ttu-id="0aec1-168">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-168">Click Add.</span></span>
-35. <span data-ttu-id="0aec1-169">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="0aec1-169">Click Text constant.</span></span>
-36. <span data-ttu-id="0aec1-170">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-170">In the list, mark the selected row.</span></span>
-37. <span data-ttu-id="0aec1-171">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="0aec1-171">In the Text field, type a value.</span></span>
-38. <span data-ttu-id="0aec1-172">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="0aec1-172">Click Add.</span></span>
-39. <span data-ttu-id="0aec1-173">Klikněte na Hodnota číselné řady.</span><span class="sxs-lookup"><span data-stu-id="0aec1-173">Click Number sequence value.</span></span>
-40. <span data-ttu-id="0aec1-174">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="0aec1-174">In the list, mark the selected row.</span></span>
-41. <span data-ttu-id="0aec1-175">V poli Číselná řada zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0aec1-175">In the Number sequence field, enter or select a value.</span></span>
-42. <span data-ttu-id="0aec1-176">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-176">Close the page.</span></span>
-43. <span data-ttu-id="0aec1-177">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-177">Close the page.</span></span>
-44. <span data-ttu-id="0aec1-178">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0aec1-178">Close the page.</span></span>
+## <a name="create-nomenclature-for-a-product-configuration-model-component"></a><span data-ttu-id="104b3-134">Vytvoření názvosloví pro komponentu modelu konfigurace produktu</span><span class="sxs-lookup"><span data-stu-id="104b3-134">Create nomenclature for a product configuration model component</span></span>
+1. <span data-ttu-id="104b3-135">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="104b3-135">Click Product configuration models.</span></span>
+2. <span data-ttu-id="104b3-136">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="104b3-136">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="104b3-137">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="104b3-137">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="104b3-138">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="104b3-138">Click Edit.</span></span>
+5. <span data-ttu-id="104b3-139">Vyberte možnost Ano v poli Použít konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="104b3-139">Select Yes in the Use configuration nomenclature field.</span></span>
+6. <span data-ttu-id="104b3-140">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-140">Click Add.</span></span>
+7. <span data-ttu-id="104b3-141">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="104b3-141">Click Attribute value.</span></span>
+8. <span data-ttu-id="104b3-142">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-142">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="104b3-143">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-143">In the Attribute field, enter or select a value.</span></span>
+10. <span data-ttu-id="104b3-144">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-144">Click Add.</span></span>
+11. <span data-ttu-id="104b3-145">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="104b3-145">Click Text constant.</span></span>
+12. <span data-ttu-id="104b3-146">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-146">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="104b3-147">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="104b3-147">In the Text field, type a value.</span></span>
+14. <span data-ttu-id="104b3-148">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-148">Click Add.</span></span>
+15. <span data-ttu-id="104b3-149">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="104b3-149">Click Attribute value.</span></span>
+16. <span data-ttu-id="104b3-150">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-150">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="104b3-151">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-151">In the Attribute field, enter or select a value.</span></span>
+18. <span data-ttu-id="104b3-152">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-152">Click Add.</span></span>
+19. <span data-ttu-id="104b3-153">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="104b3-153">Click Text constant.</span></span>
+20. <span data-ttu-id="104b3-154">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-154">In the list, mark the selected row.</span></span>
+21. <span data-ttu-id="104b3-155">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="104b3-155">In the Text field, type a value.</span></span>
+22. <span data-ttu-id="104b3-156">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-156">Click Add.</span></span>
+23. <span data-ttu-id="104b3-157">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="104b3-157">Click Attribute value.</span></span>
+24. <span data-ttu-id="104b3-158">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-158">In the list, mark the selected row.</span></span>
+25. <span data-ttu-id="104b3-159">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-159">In the Attribute field, enter or select a value.</span></span>
+26. <span data-ttu-id="104b3-160">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-160">Click Add.</span></span>
+27. <span data-ttu-id="104b3-161">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="104b3-161">Click Text constant.</span></span>
+28. <span data-ttu-id="104b3-162">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-162">In the list, mark the selected row.</span></span>
+29. <span data-ttu-id="104b3-163">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="104b3-163">In the Text field, type a value.</span></span>
+30. <span data-ttu-id="104b3-164">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-164">Click Add.</span></span>
+31. <span data-ttu-id="104b3-165">Klikněte na Hodnota atributu dávky.</span><span class="sxs-lookup"><span data-stu-id="104b3-165">Click Attribute value.</span></span>
+32. <span data-ttu-id="104b3-166">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-166">In the list, mark the selected row.</span></span>
+33. <span data-ttu-id="104b3-167">V poli Atribut zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-167">In the Attribute field, enter or select a value.</span></span>
+34. <span data-ttu-id="104b3-168">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-168">Click Add.</span></span>
+35. <span data-ttu-id="104b3-169">Klikněte na Textová konstanta.</span><span class="sxs-lookup"><span data-stu-id="104b3-169">Click Text constant.</span></span>
+36. <span data-ttu-id="104b3-170">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-170">In the list, mark the selected row.</span></span>
+37. <span data-ttu-id="104b3-171">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="104b3-171">In the Text field, type a value.</span></span>
+38. <span data-ttu-id="104b3-172">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="104b3-172">Click Add.</span></span>
+39. <span data-ttu-id="104b3-173">Klikněte na Hodnota číselné řady.</span><span class="sxs-lookup"><span data-stu-id="104b3-173">Click Number sequence value.</span></span>
+40. <span data-ttu-id="104b3-174">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="104b3-174">In the list, mark the selected row.</span></span>
+41. <span data-ttu-id="104b3-175">V poli Číselná řada zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="104b3-175">In the Number sequence field, enter or select a value.</span></span>
+42. <span data-ttu-id="104b3-176">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-176">Close the page.</span></span>
+43. <span data-ttu-id="104b3-177">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-177">Close the page.</span></span>
+44. <span data-ttu-id="104b3-178">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="104b3-178">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

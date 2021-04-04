@@ -18,53 +18,56 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8fd0b2743deab758538922f312853b622a512c0a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a12bd7a178d8d40db8c919410a00fbf021625f50
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000729"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238743"
 ---
-# <a name="initialize-seed-data-in-new-commerce-environments"></a><span data-ttu-id="1fd68-103">Inicializace počátečních dat v nových prostředích Commerce</span><span class="sxs-lookup"><span data-stu-id="1fd68-103">Initialize seed data in new Commerce environments</span></span>
+# <a name="initialize-seed-data-in-new-commerce-environments"></a><span data-ttu-id="c21ae-103">Inicializace počátečních dat v nových prostředích Commerce</span><span class="sxs-lookup"><span data-stu-id="c21ae-103">Initialize seed data in new Commerce environments</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="1fd68-104">Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="1fd68-104">This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="c21ae-104">Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="c21ae-104">This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="1fd68-105">Po zavedení řešení Commerce pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS), musíte k vytvoření základních dat konfigurace inicializovat konfiguraci Commerce.</span><span class="sxs-lookup"><span data-stu-id="1fd68-105">After the Commerce solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the Commerce configuration to create the basic configuration data.</span></span>
+<span data-ttu-id="c21ae-105">Po zavedení řešení Commerce pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS), musíte k vytvoření základních dat konfigurace inicializovat konfiguraci Commerce.</span><span class="sxs-lookup"><span data-stu-id="c21ae-105">After the Commerce solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the Commerce configuration to create the basic configuration data.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="1fd68-106">Před inicializací konfigurace Commerce se ujistěte, že jste zadali jazyk a poštovní adresu pro každou právnickou osobu všude, kde obchody nastavíte.</span><span class="sxs-lookup"><span data-stu-id="1fd68-106">Before you initialize the commerce configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up stores.</span></span> <span data-ttu-id="1fd68-107">Tento krok je nutné provést pro každou právnickou osobu, kterou používáte pro Commerce.</span><span class="sxs-lookup"><span data-stu-id="1fd68-107">This step must be completed for each legal entity that you use for commerce.</span></span>
+> <span data-ttu-id="c21ae-106">Před inicializací konfigurace Commerce se ujistěte, že jste zadali jazyk a poštovní adresu pro každou právnickou osobu všude, kde obchody nastavíte.</span><span class="sxs-lookup"><span data-stu-id="c21ae-106">Before you initialize the commerce configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up stores.</span></span> <span data-ttu-id="c21ae-107">Tento krok je nutné provést pro každou právnickou osobu, kterou používáte pro Commerce.</span><span class="sxs-lookup"><span data-stu-id="c21ae-107">This step must be completed for each legal entity that you use for commerce.</span></span>
 
-<span data-ttu-id="1fd68-108">Pro inicializaci konfigurace postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="1fd68-108">To initialize the configuration, follow these steps.</span></span>
+<span data-ttu-id="c21ae-108">Pro inicializaci konfigurace postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="c21ae-108">To initialize the configuration, follow these steps.</span></span>
 
-1. <span data-ttu-id="1fd68-109">Spusťte klienta aplikace Commerce.</span><span class="sxs-lookup"><span data-stu-id="1fd68-109">Start the Commerce client.</span></span>
-2. <span data-ttu-id="1fd68-110">Click **Retail a Commerce** &gt; **Nastavení centrály** &gt; **Parametry** &gt; **Parametry Commerce**.</span><span class="sxs-lookup"><span data-stu-id="1fd68-110">Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.</span></span>
-3. <span data-ttu-id="1fd68-111">Klepněte na tlačítko **Inicializovat**.</span><span class="sxs-lookup"><span data-stu-id="1fd68-111">Click **Initialize**.</span></span>
+1. <span data-ttu-id="c21ae-109">Spusťte klienta aplikace Commerce.</span><span class="sxs-lookup"><span data-stu-id="c21ae-109">Start the Commerce client.</span></span>
+2. <span data-ttu-id="c21ae-110">Click **Retail a Commerce** &gt; **Nastavení centrály** &gt; **Parametry** &gt; **Parametry Commerce**.</span><span class="sxs-lookup"><span data-stu-id="c21ae-110">Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.</span></span>
+3. <span data-ttu-id="c21ae-111">Klepněte na tlačítko **Inicializovat**.</span><span class="sxs-lookup"><span data-stu-id="c21ae-111">Click **Initialize**.</span></span>
 
-<span data-ttu-id="1fd68-112">Inicializace vytvoří následující výchozí data konfigurace:</span><span class="sxs-lookup"><span data-stu-id="1fd68-112">Initialization creates the following default configuration data:</span></span>
+<span data-ttu-id="c21ae-112">Inicializace vytvoří následující výchozí data konfigurace:</span><span class="sxs-lookup"><span data-stu-id="c21ae-112">Initialization creates the following default configuration data:</span></span>
 
-- <span data-ttu-id="1fd68-113">Úlohy a dílčí úlohy plánovače Commerce</span><span class="sxs-lookup"><span data-stu-id="1fd68-113">Commerce scheduler jobs and subjobs</span></span>
-- <span data-ttu-id="1fd68-114">Schéma obchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="1fd68-114">Commerce channel schema</span></span>
-- <span data-ttu-id="1fd68-115">Plány distribuce Commerce</span><span class="sxs-lookup"><span data-stu-id="1fd68-115">Commerce distribution schedules</span></span>
-- <span data-ttu-id="1fd68-116">Výchozí rozložení obrazovky, které zahrnuje mřížky tlačítek, obrázky a motivy</span><span class="sxs-lookup"><span data-stu-id="1fd68-116">Default screen layouts, which include button grids, images, and themes</span></span>
-- <span data-ttu-id="1fd68-117">Informace o časovém pásmu</span><span class="sxs-lookup"><span data-stu-id="1fd68-117">Time zone information</span></span>
-- <span data-ttu-id="1fd68-118">Operace pokladních míst (POS)</span><span class="sxs-lookup"><span data-stu-id="1fd68-118">Point-of-sale (POS) operations</span></span>
-- <span data-ttu-id="1fd68-119">Oprávnění POS</span><span class="sxs-lookup"><span data-stu-id="1fd68-119">POS permissions</span></span>
-- <span data-ttu-id="1fd68-120">Sestavy kanálu</span><span class="sxs-lookup"><span data-stu-id="1fd68-120">Channel reports</span></span>
-- <span data-ttu-id="1fd68-121">Metadata atributu</span><span class="sxs-lookup"><span data-stu-id="1fd68-121">Attribute metadata</span></span>
-- <span data-ttu-id="1fd68-122">Šablony ověření entity</span><span class="sxs-lookup"><span data-stu-id="1fd68-122">Entity validation templates</span></span>
-- <span data-ttu-id="1fd68-123">Dávková úloha pro vymazání historie relace Commerce Data Exchange</span><span class="sxs-lookup"><span data-stu-id="1fd68-123">Batch job to purge Commerce Data Exchange session history</span></span>
+- <span data-ttu-id="c21ae-113">Úlohy a dílčí úlohy plánovače Commerce</span><span class="sxs-lookup"><span data-stu-id="c21ae-113">Commerce scheduler jobs and subjobs</span></span>
+- <span data-ttu-id="c21ae-114">Schéma obchodního kanálu</span><span class="sxs-lookup"><span data-stu-id="c21ae-114">Commerce channel schema</span></span>
+- <span data-ttu-id="c21ae-115">Plány distribuce Commerce</span><span class="sxs-lookup"><span data-stu-id="c21ae-115">Commerce distribution schedules</span></span>
+- <span data-ttu-id="c21ae-116">Výchozí rozložení obrazovky, které zahrnuje mřížky tlačítek, obrázky a motivy</span><span class="sxs-lookup"><span data-stu-id="c21ae-116">Default screen layouts, which include button grids, images, and themes</span></span>
+- <span data-ttu-id="c21ae-117">Informace o časovém pásmu</span><span class="sxs-lookup"><span data-stu-id="c21ae-117">Time zone information</span></span>
+- <span data-ttu-id="c21ae-118">Operace pokladních míst (POS)</span><span class="sxs-lookup"><span data-stu-id="c21ae-118">Point-of-sale (POS) operations</span></span>
+- <span data-ttu-id="c21ae-119">Oprávnění POS</span><span class="sxs-lookup"><span data-stu-id="c21ae-119">POS permissions</span></span>
+- <span data-ttu-id="c21ae-120">Sestavy kanálu</span><span class="sxs-lookup"><span data-stu-id="c21ae-120">Channel reports</span></span>
+- <span data-ttu-id="c21ae-121">Metadata atributu</span><span class="sxs-lookup"><span data-stu-id="c21ae-121">Attribute metadata</span></span>
+- <span data-ttu-id="c21ae-122">Šablony ověření entity</span><span class="sxs-lookup"><span data-stu-id="c21ae-122">Entity validation templates</span></span>
+- <span data-ttu-id="c21ae-123">Dávková úloha pro vymazání historie relace Commerce Data Exchange</span><span class="sxs-lookup"><span data-stu-id="c21ae-123">Batch job to purge Commerce Data Exchange session history</span></span>
 
-<span data-ttu-id="1fd68-124">Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Commerce.</span><span class="sxs-lookup"><span data-stu-id="1fd68-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Commerce database.</span></span>
+<span data-ttu-id="c21ae-124">Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Commerce.</span><span class="sxs-lookup"><span data-stu-id="c21ae-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Commerce database.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1fd68-125">Je možné konfigurovat plánovač Commerce samostatně.</span><span class="sxs-lookup"><span data-stu-id="1fd68-125">There is an option to separately configure the Commerce scheduler.</span></span> <span data-ttu-id="1fd68-126">Tato možnost umožňuje obnovíte konfiguraci plánovače Commerce na výchozí nastavení.</span><span class="sxs-lookup"><span data-stu-id="1fd68-126">This option lets you reset the Commerce scheduler configuration to its default settings.</span></span>
+> <span data-ttu-id="c21ae-125">Je možné konfigurovat plánovač Commerce samostatně.</span><span class="sxs-lookup"><span data-stu-id="c21ae-125">There is an option to separately configure the Commerce scheduler.</span></span> <span data-ttu-id="c21ae-126">Tato možnost umožňuje obnovíte konfiguraci plánovače Commerce na výchozí nastavení.</span><span class="sxs-lookup"><span data-stu-id="c21ae-126">This option lets you reset the Commerce scheduler configuration to its default settings.</span></span>
 
-<span data-ttu-id="1fd68-127">Po dokončení inicializace je nutné nakonfigurovat další obchodní data.</span><span class="sxs-lookup"><span data-stu-id="1fd68-127">After initialization is completed, you must configure additional commerce data.</span></span> <span data-ttu-id="1fd68-128">Několik příkladů:</span><span class="sxs-lookup"><span data-stu-id="1fd68-128">Here are some examples:</span></span>
+<span data-ttu-id="c21ae-127">Po dokončení inicializace je nutné nakonfigurovat další obchodní data.</span><span class="sxs-lookup"><span data-stu-id="c21ae-127">After initialization is completed, you must configure additional commerce data.</span></span> <span data-ttu-id="c21ae-128">Několik příkladů:</span><span class="sxs-lookup"><span data-stu-id="c21ae-128">Here are some examples:</span></span>
 
-- <span data-ttu-id="1fd68-129">Parametry obchodu</span><span class="sxs-lookup"><span data-stu-id="1fd68-129">Commerce parameters</span></span>
-- <span data-ttu-id="1fd68-130">Parametry plánovače obchodu</span><span class="sxs-lookup"><span data-stu-id="1fd68-130">Commerce scheduler parameters</span></span>
-- <span data-ttu-id="1fd68-131">Kanály Commerce</span><span class="sxs-lookup"><span data-stu-id="1fd68-131">Commerce channels</span></span>
-- <span data-ttu-id="1fd68-132">Registry a zařízení</span><span class="sxs-lookup"><span data-stu-id="1fd68-132">Registers and devices</span></span>
-- <span data-ttu-id="1fd68-133">Sortimenty</span><span class="sxs-lookup"><span data-stu-id="1fd68-133">Assortments</span></span>
+- <span data-ttu-id="c21ae-129">Parametry obchodu</span><span class="sxs-lookup"><span data-stu-id="c21ae-129">Commerce parameters</span></span>
+- <span data-ttu-id="c21ae-130">Parametry plánovače obchodu</span><span class="sxs-lookup"><span data-stu-id="c21ae-130">Commerce scheduler parameters</span></span>
+- <span data-ttu-id="c21ae-131">Kanály Commerce</span><span class="sxs-lookup"><span data-stu-id="c21ae-131">Commerce channels</span></span>
+- <span data-ttu-id="c21ae-132">Registry a zařízení</span><span class="sxs-lookup"><span data-stu-id="c21ae-132">Registers and devices</span></span>
+- <span data-ttu-id="c21ae-133">Sortimenty</span><span class="sxs-lookup"><span data-stu-id="c21ae-133">Assortments</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
