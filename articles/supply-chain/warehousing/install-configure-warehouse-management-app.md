@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142316"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487018"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142316"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Toto téma popisuje, jak nakonfigurovat novou Warehouse Management Mobile App, která je aktuálně ve veřejném náhledu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu, přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Toto téma popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu, přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Public Preview mobilní aplikace Warehouse Management je k dispozici ke stažení v Microsoft App Center. Poskytuje se jako samostatná komponenta. Proto ji musíte stáhnout do každého zařízení a poté ji nakonfigurovat pro připojení k prostředí Microsoft Dynamics 365 Supply Chain Management.
-
-Toto téma vysvětluje, jak nainstalovat Warehouse Management Mobile App na každém z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
+Toto téma vysvětluje, jak stáhnout a nainstalovat mobilní aplikaci Řízení skladu na každém z vašich mobilních zařízení, a jak konfigurovat její připojování k prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 
 ## <a name="system-requirements"></a>Systémové požadavky
 
@@ -53,17 +51,27 @@ Než můžete použít aplikaci, musíte ve svém systému zapnout související
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Získání mobilní aplikace pro správu skladu
 
-Ke stažení aplikace použijte jeden z následujících odkazů:
+U menších nasazení budete obvykle chtít instalovat aplikaci na každém zařízení z příslušného úložiště a poté ručně konfigurovat připojení k prostředím, která používáte.
 
-- **Windows (UWP):** [Program náhledu centra aplikací - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+U větších nasazení můžete automatizovat nasazení anebo konfiguraci, což může být pohodlnější, pokud spravujete mnoho zařízení. Můžete například použít řešení pro správu mobilních zařízení a mobilních aplikací, jako je [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Protože tato aplikace je ukázkovou aplikací, je k její instalaci zapotřebí několik dalších kroků. Podrobnosti viz [Instalace sestavení z App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Nainstalujte si aplikaci z obchodu s aplikacemi
 
-- **Android:** [Program náhledu App Center - Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Nejjednodušší způsob instalace aplikace na jednom zařízení je instalace z obchodu s aplikacemi, který vždy poskytuje nejnovější obecně dostupnou verzi. Microsoft Intune může také načítat aplikace z obchodů s aplikacemi. K instalaci aplikace z obchodu s aplikacemi použijte jeden z následujících odkazů:
 
-    Protože tato aplikace je ukázkovou aplikací, je k její instalaci zapotřebí několik dalších kroků. Podrobnosti viz [Testování aplikací Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Řízení skladu v Microsoft Storu](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-U menších nasazení můžete chtít nainstalovat aplikaci z příslušného úložiště a poté ručně nakonfigurovat připojení k prostředím, která používáte. Můžete však také automatizovat nasazení a / nebo konfiguraci aplikace. Tento přístup může být vhodný, pokud spravujete mnoho zařízení a používáte řešení pro správu mobilních zařízení a správu mobilních aplikací, například [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Řízení skladu v obchodě Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Stažení aplikace z Microsoft App Center
+
+Jako alternativu k instalaci z obchodu s aplikacemi si místo toho můžete aplikaci stáhnout z Microsoft App Center. App Center poskytuje instalovatelné balíčky, které můžete zkušebně načíst. Kromě aktuální verze vám App Center také umožňuje stáhnout předchozí verze a může poskytnout verze preview s chystanými funkcemi, které si můžete vyzkoušet. Chcete-li stáhnout aktuální, předchozí nebo preview verzi mobilní aplikace Řízení skladu z Microsoft App Center, použijte jeden z následujících odkazů:
+
+- **Windows (UWP):** [Řízení skladu (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Pokyny k instalaci staženého balíčku na zařízení Windows a nastavení požadovaných certifikátů naleznete v tématu [Instalace sestavení z App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Řízení skladu (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Jestliže si stáhnete verzi preview, je k její instalaci zapotřebí několik dalších kroků. Podrobnosti viz [Testování aplikací Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Vytvoření aplikace webové služby v Azure Active Directory
 

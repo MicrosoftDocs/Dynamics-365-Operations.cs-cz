@@ -3,10 +3,9 @@ title: Typ cílového místa elektronického výkaznictví tiskárny
 description: Toto téma vysvětluje, jak nakonfigurovat cíl tiskárny pro každou SLOŽKU nebo SOUBOR ve formátu elektronického výkaznictví (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 19613d9dfba21d591d96a2df45bedb80c043b3a7
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094072"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561943"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Cílové místo tiskárny
 
@@ -48,8 +47,6 @@ Chcete-li zpřístupnit cíl **tiskárny** v aktuální instanci Microsoft Dynam
 Cíl **tiskárny** lze konfigurovat pouze pro součásti souboru, které jsou použity ke generování výstupu ve formátu tisknutelného PDF (PDF Merger nebo prvky formátu souboru PDF) nebo formátu Microsoft Office Excel/Word. Když je výstup generován ve formátu PDF, je odeslán do tiskárny. Když je výstup generován ve formátu Microsoft Office, je automaticky převeden do formátu PDF a poté odeslán do tiskárny.
 
 ### <a name="limitations"></a>Omezení
-
-Tato funkce je funkcí Preview a podléhá podmínkám použití, které jsou popsány v [doplňujících podmínkách použití pro funkce Preview Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 Cíl **tiskárny** je implementován pouze pro nasazení v cloudu.
 

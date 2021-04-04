@@ -2,11 +2,10 @@
 title: Místa určení elektronického výkaznictví
 description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097274"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569712"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -166,12 +165,14 @@ Chcete-li, aby byla v aktuální instanci modulu Finance k dispozici možnost p�
 
 ### <a name="applicability"></a>Použitelnost
 
-Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se používají ke generování výstupu ve formátu Office (Excel nebo Word) (**Soubor Excel**). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF.
-
-### <a name="limitations"></a>Omezení
+Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se používají ke generování výstupu ve formátu Office (Excel nebo Word) (**Soubor Excel**). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF. Ve verzích Finance **před verzí 10.0.18** tuto možnost můžete zapnout pouze pro komponenty typu **Excel\\Soubor**, které se používají ke generování výstupu ve formátu [Excel](er-fillable-excel.md) nebo [Word](er-design-configuration-word.md). Nicméně ve **verzi 10.0.18 a novější** můžete také zapnout tuto možnost pro komponenty typu **Běžný\\Soubor**.
 
 > [!NOTE]
-> Tato funkce je funkcí Preview a podléhá podmínkám použití, které jsou popsány v [doplňujících podmínkách použití pro funkce Preview Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Věnujte pozornost varovné zprávě, kterou obdržíte při zapnutí možnosti převodu PDF pro komponentu ER typu **Běžný\\Soubor**. Tato zpráva vás informuje, že neexistuje způsob, jak v době návrhu zaručit, že vybraná komponenta souboru za běhu vystaví obsah ve formátu PDF nebo obsah převáděný do formátu PDF. Tuto možnost byste proto měli zapnout, pouze pokud jste si jisti, že vybraná komponenta souboru byla nakonfigurována tak, aby za běhu vystavovala obsah ve formátu PDF nebo obsah převáděný do formátu PDF.
+> 
+> Pokud zapnete možnost převodu PDF pro komponentu typu **Excel\\Soubor**, pokud tato komponenta vystavuje obsah v jiném formátu než PDF a pokud vystavený obsah nelze převést do formátu PDF, dojde za běhu k výjimce. Zpráva, kterou obdržíte, vás informuje, že vygenerovaný obsah nelze převést do formátu PDF.
+
+### <a name="limitations"></a>Omezení
 
 Možnost převodu PDF je k dispozici pouze pro nasazení v cloudu.
 

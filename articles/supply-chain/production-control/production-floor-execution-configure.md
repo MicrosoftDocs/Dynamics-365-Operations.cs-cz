@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077470"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556307"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -41,7 +42,8 @@ Samotné rozhraní pro provádění výrobního provozu a několik volitelných 
 
 ### <a name="the-production-floor-execution-interface"></a>Rozhraní pro provádění výrobního provozu
 
-Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
 - Provádění výrobního provozu
 
 ### <a name="generate-license-plates"></a>Generování registračních značek
@@ -79,6 +81,7 @@ Chcete-li vytvořit a udržovat konfigurace zařízení, přejděte na **Řízen
 
 Dále nakonfigurujte různá nastavení pro vybranou konfiguraci zařízení. K dispozici jsou následující pole:
 
+- **Pouze označení příchodu a odchodu** - Nastavte tuto možnost na *Ano* k vytvoření zjednodušeného rozhraní, které poskytuje pouze funkci označení příchodu a odchodu. Tím se deaktivuje většina ostatních možností na této stránce. Než tuto možnost povolíte, musíte odstranit všechny řádky ze záložky s náhledem **Výběr karty**.
 - **Hlášení množství při odchodu** – Nastavením možnosti na *Ano* vyzvete pracovníky, aby nahlásili zpětnou vazbu o probíhajících úlohách při odchodu. Při nastavení na *Ne* k tomu pracovníci nebudou vyzváni.
 - **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne*, pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Zařízení se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano*, pracovníci zůstanou přihlášení k zařízení úkolového lístku. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco zařízení úkolového lístku nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
 - **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne*, místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano*, pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano*, kde pracovníci často zůstávají přihlášeni delší dobu.
