@@ -15,22 +15,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973753"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558255"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a><span data-ttu-id="f849d-103">Rozvržení směrování dokumentu pro popisky poznávací značky</span><span class="sxs-lookup"><span data-stu-id="f849d-103">Document routing layout for license plate labels</span></span>
+# <a name="document-routing-layout-for-license-plate-labels"></a><span data-ttu-id="bdd0e-103">Rozvržení směrování dokumentu pro popisky poznávací značky</span><span class="sxs-lookup"><span data-stu-id="bdd0e-103">Document routing layout for license plate labels</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f849d-104">Rozvržení směrování dokumentu definuje rozvržení popisků řidičských průkazů a dat, která jsou na nich vytištěna.</span><span class="sxs-lookup"><span data-stu-id="f849d-104">The document routing layout defines the layout of license plate labels, and the data that is printed on them.</span></span> <span data-ttu-id="f849d-105">Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.</span><span class="sxs-lookup"><span data-stu-id="f849d-105">You configure the printing trigger points when you set up mobile device menu items and work templates.</span></span>
 
-<span data-ttu-id="f849d-106">V obvyklém scénáři pracovník příjmu ve skladu vytiskněte štítky registračních značek ihned po záznamu obsahu palet, které přicházejí do oblasti příjmu.</span><span class="sxs-lookup"><span data-stu-id="f849d-106">In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area.</span></span> <span data-ttu-id="f849d-107">Fyzické štítky se použijí na palety.</span><span class="sxs-lookup"><span data-stu-id="f849d-107">The physical labels are applied to the pallets.</span></span> <span data-ttu-id="f849d-108">Poté je lze použít k ověření v rámci procesu zaskladnění a následných operací odchozího vyskladnění.</span><span class="sxs-lookup"><span data-stu-id="f849d-108">They can then be used for validation as part of the put-away process that follows and future outbound picking operations.</span></span>
+<span data-ttu-id="bdd0e-104">Rozvržení směrování dokumentu definuje rozvržení popisků řidičských průkazů a dat, která jsou na nich vytištěna.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-104">The document routing layout defines the layout of license plate labels, and the data that is printed on them.</span></span> <span data-ttu-id="bdd0e-105">Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-105">You configure the printing trigger points when you set up mobile device menu items and work templates.</span></span>
 
-<span data-ttu-id="f849d-109">Můžete tisknout velmi složité štítky za předpokladu, že tiskové zařízení může interpretovat text, který mu byl odeslán.</span><span class="sxs-lookup"><span data-stu-id="f849d-109">You can print highly complex labels, provided that the printing device can interpret the text that is sent to it.</span></span> <span data-ttu-id="f849d-110">Například rozložení Zebra Programming Language (ZPL), které obsahuje čárový kód, může vypadat podobně jako v následujícím příkladu.</span><span class="sxs-lookup"><span data-stu-id="f849d-110">For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.</span></span>
+<span data-ttu-id="bdd0e-106">V obvyklém scénáři pracovník příjmu ve skladu vytiskněte štítky registračních značek ihned po záznamu obsahu palet, které přicházejí do oblasti příjmu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-106">In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area.</span></span> <span data-ttu-id="bdd0e-107">Fyzické štítky se použijí na palety.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-107">The physical labels are applied to the pallets.</span></span> <span data-ttu-id="bdd0e-108">Poté je lze použít k ověření v rámci procesu zaskladnění a následných operací odchozího vyskladnění.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-108">They can then be used for validation as part of the put-away process that follows and future outbound picking operations.</span></span>
+
+<span data-ttu-id="bdd0e-109">Můžete tisknout velmi složité štítky za předpokladu, že tiskové zařízení může interpretovat text, který mu byl odeslán.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-109">You can print highly complex labels, provided that the printing device can interpret the text that is sent to it.</span></span> <span data-ttu-id="bdd0e-110">Například rozložení Zebra Programming Language (ZPL), které obsahuje čárový kód, může vypadat podobně jako v následujícím příkladu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-110">For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.</span></span>
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -46,92 +47,99 @@ ms.locfileid: "4973753"
 ^PQ1,,,Y^XZ
 ```
 
-<span data-ttu-id="f849d-111">V rámci procesu tisku štítků bude text `$LicensePlateId$` v tomto příkladu nahrazen datovou hodnotou.</span><span class="sxs-lookup"><span data-stu-id="f849d-111">As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value.</span></span>
+<span data-ttu-id="bdd0e-111">V rámci procesu tisku štítků bude text `$LicensePlateId$` v tomto příkladu nahrazen datovou hodnotou.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-111">As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value.</span></span>
 
-<span data-ttu-id="f849d-112">Chcete-li zobrazit hodnoty, které budou vytištěny, přejděte na **Řízení skladu \> Dotazy a sestavy \> Štítky registračních značek**.</span><span class="sxs-lookup"><span data-stu-id="f849d-112">To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.</span></span>
+<span data-ttu-id="bdd0e-112">Chcete-li zobrazit hodnoty, které budou vytištěny, přejděte na **Řízení skladu \> Dotazy a sestavy \> Štítky registračních značek**.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-112">To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.</span></span>
 
-<span data-ttu-id="f849d-113">Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků.</span><span class="sxs-lookup"><span data-stu-id="f849d-113">Several widely available label generation tools can help you format the text for the label layout.</span></span> <span data-ttu-id="f849d-114">Mnohé z těchto nástrojů podporují `$FieldName$` formát.</span><span class="sxs-lookup"><span data-stu-id="f849d-114">Many of these tools support the `$FieldName$` format.</span></span> <span data-ttu-id="f849d-115">Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f849d-115">In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.</span></span>
+<span data-ttu-id="bdd0e-113">Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-113">Several widely available label generation tools can help you format the text for the label layout.</span></span> <span data-ttu-id="bdd0e-114">Mnohé z těchto nástrojů podporují `$FieldName$` formát.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-114">Many of these tools support the `$FieldName$` format.</span></span> <span data-ttu-id="bdd0e-115">Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-115">In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.</span></span>
 
-## <a name="custom-number-formats"></a><span data-ttu-id="f849d-116">Vlastní formáty čísel</span><span class="sxs-lookup"><span data-stu-id="f849d-116">Custom number formats</span></span>
+## <a name="turn-on-this-feature-for-your-system"></a><span data-ttu-id="bdd0e-116">Zapnutí této funkce ve vašem systému</span><span class="sxs-lookup"><span data-stu-id="bdd0e-116">Turn on this feature for your system</span></span>
 
-<span data-ttu-id="f849d-117">Formátování hodnot číselných polí, které jsou vytištěny pomocí kódů s následujícím formátem, lze přizpůsobit.</span><span class="sxs-lookup"><span data-stu-id="f849d-117">You can customize the formatting of numerical field values that are printed by using codes that have the following format.</span></span>
+<span data-ttu-id="bdd0e-117">Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Vylepšené rozvržení popisků poznávacích značek*.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-117">If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature.</span></span>
+
+## <a name="custom-number-formats"></a><span data-ttu-id="bdd0e-118">Vlastní formáty čísel</span><span class="sxs-lookup"><span data-stu-id="bdd0e-118">Custom number formats</span></span>
+
+<span data-ttu-id="bdd0e-119">Formátování hodnot číselných polí, které jsou vytištěny pomocí kódů s následujícím formátem, lze přizpůsobit.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-119">You can customize the formatting of numerical field values that are printed by using codes that have the following format.</span></span>
 
 ```dos
 $FieldName:FormatString$
 ```
 
-<span data-ttu-id="f849d-118">Zde je vysvětlení tohoto formátu:</span><span class="sxs-lookup"><span data-stu-id="f849d-118">Here is an explanation of this format:</span></span>
+<span data-ttu-id="bdd0e-120">Zde je vysvětlení tohoto formátu:</span><span class="sxs-lookup"><span data-stu-id="bdd0e-120">Here is an explanation of this format:</span></span>
 
-- <span data-ttu-id="f849d-119">`FieldName` je název datového pole (například **množství**).</span><span class="sxs-lookup"><span data-stu-id="f849d-119">`FieldName` is the name of the data field (such as **Qty**).</span></span>
-- <span data-ttu-id="f849d-120">`FormatString` definuje způsob tisku dat.</span><span class="sxs-lookup"><span data-stu-id="f849d-120">`FormatString` defines how the data must be printed.</span></span>
+- <span data-ttu-id="bdd0e-121">`FieldName` je název datového pole (například **množství**).</span><span class="sxs-lookup"><span data-stu-id="bdd0e-121">`FieldName` is the name of the data field (such as **Qty**).</span></span>
+- <span data-ttu-id="bdd0e-122">`FormatString` definuje způsob tisku dat.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-122">`FormatString` defines how the data must be printed.</span></span>
 
-<span data-ttu-id="f849d-121">Následující příklady ukazují, jak lze upravit pole pracovní množství (**množství**):</span><span class="sxs-lookup"><span data-stu-id="f849d-121">The following examples show how you can customize the work quantity (**Qty**) field:</span></span>
+<span data-ttu-id="bdd0e-123">Následující příklady ukazují, jak lze upravit pole pracovní množství (**množství**):</span><span class="sxs-lookup"><span data-stu-id="bdd0e-123">The following examples show how you can customize the work quantity (**Qty**) field:</span></span>
 
-- <span data-ttu-id="f849d-122">Chcete-li vždy zobrazit čtyři číslice (pomocí nul jako zástupné symboly), použijte `$Qty:0000$`.</span><span class="sxs-lookup"><span data-stu-id="f849d-122">To always show four digits (by using zeros as placeholders), use `$Qty:0000$`.</span></span> <span data-ttu-id="f849d-123">Pokud je například množství 10, štítek zobrazí "0010".</span><span class="sxs-lookup"><span data-stu-id="f849d-123">For example, if the quantity is 10, the label will show "0010."</span></span>
-- <span data-ttu-id="f849d-124">Chcete-li vždy zobrazit dvě desetinná místa, použijte možnost `$Qty:0.00$`.</span><span class="sxs-lookup"><span data-stu-id="f849d-124">To always show two decimal places, use `$Qty:0.00$`.</span></span> <span data-ttu-id="f849d-125">Pokud je například množství 10, štítek zobrazí "10.00".</span><span class="sxs-lookup"><span data-stu-id="f849d-125">For example, if the quantity is 10, the label will show "10.00."</span></span>
+- <span data-ttu-id="bdd0e-124">Chcete-li vždy zobrazit čtyři číslice (pomocí nul jako zástupné symboly), použijte `$Qty:0000$`.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-124">To always show four digits (by using zeros as placeholders), use `$Qty:0000$`.</span></span> <span data-ttu-id="bdd0e-125">Pokud je například množství 10, štítek zobrazí "0010".</span><span class="sxs-lookup"><span data-stu-id="bdd0e-125">For example, if the quantity is 10, the label will show "0010."</span></span>
+- <span data-ttu-id="bdd0e-126">Chcete-li vždy zobrazit dvě desetinná místa, použijte možnost `$Qty:0.00$`.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-126">To always show two decimal places, use `$Qty:0.00$`.</span></span> <span data-ttu-id="bdd0e-127">Pokud je například množství 10, štítek zobrazí "10.00".</span><span class="sxs-lookup"><span data-stu-id="bdd0e-127">For example, if the quantity is 10, the label will show "10.00."</span></span>
 
-<span data-ttu-id="f849d-126">Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span><span class="sxs-lookup"><span data-stu-id="f849d-126">For a complete list of the available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span></span>
+<span data-ttu-id="bdd0e-128">Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span><span class="sxs-lookup"><span data-stu-id="bdd0e-128">For a complete list of the available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span></span>
 
-## <a name="custom-string-formats"></a><span data-ttu-id="f849d-127">Formáty vlastních řetězců</span><span class="sxs-lookup"><span data-stu-id="f849d-127">Custom string formats</span></span>
+## <a name="custom-string-formats"></a><span data-ttu-id="bdd0e-129">Formáty vlastních řetězců</span><span class="sxs-lookup"><span data-stu-id="bdd0e-129">Custom string formats</span></span>
 
-<span data-ttu-id="f849d-128">První znaky řetězce můžete odebrat pomocí následujícího pole a kódu formátu.</span><span class="sxs-lookup"><span data-stu-id="f849d-128">You can remove the first characters of a string by using the following field and format code.</span></span>
+<span data-ttu-id="bdd0e-130">První znaky řetězce můžete odebrat pomocí následujícího pole a kódu formátu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-130">You can remove the first characters of a string by using the following field and format code.</span></span>
 
 ```dos
 $FieldName:#..$
 ```
 
-<span data-ttu-id="f849d-129">Zde určuje `#` počet znaků, které mají být přeskočeny.</span><span class="sxs-lookup"><span data-stu-id="f849d-129">Here, `#` specifies the number of characters to skip.</span></span> <span data-ttu-id="f849d-130">Chcete-li například vytisknout sériové číslo kontejneru (SSCC), který neobsahuje první dva znaky, použijte možnost `$LicensePlateId:2..$`.</span><span class="sxs-lookup"><span data-stu-id="f849d-130">For example, to print a Serial Shipping Container Code (SSCC) license plate number that doesn't include the first two characters, use `$LicensePlateId:2..$`.</span></span> <span data-ttu-id="f849d-131">V takovém případě bude číslo registrační značky 0011111111111222221 vytisknuto jako 11111111111222221.</span><span class="sxs-lookup"><span data-stu-id="f849d-131">In this case, the license plate number 0011111111111222221 will be printed as "11111111111222221."</span></span>
+<span data-ttu-id="bdd0e-131">Zde určuje `#` počet znaků, které mají být přeskočeny.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-131">Here, `#` specifies the number of characters to skip.</span></span> <span data-ttu-id="bdd0e-132">Chcete-li například vytisknout sériové číslo kontejneru (SSCC), který neobsahuje první dva znaky, použijte možnost `$LicensePlateId:2..$`.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-132">For example, to print a Serial Shipping Container Code (SSCC) license plate number that doesn't include the first two characters, use `$LicensePlateId:2..$`.</span></span> <span data-ttu-id="bdd0e-133">V takovém případě bude číslo registrační značky 0011111111111222221 vytisknuto jako 11111111111222221.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-133">In this case, the license plate number 0011111111111222221 will be printed as "11111111111222221."</span></span>
 
-## <a name="custom-datetime-formats"></a><span data-ttu-id="f849d-132">Vlastní formáty data a času</span><span class="sxs-lookup"><span data-stu-id="f849d-132">Custom date/time formats</span></span>
+## <a name="custom-datetime-formats"></a><span data-ttu-id="bdd0e-134">Vlastní formáty data a času</span><span class="sxs-lookup"><span data-stu-id="bdd0e-134">Custom date/time formats</span></span>
 
-<span data-ttu-id="f849d-133">V následujícím příkladu je ukázáno, jak lze ovládat formát používaný k tisku dat.</span><span class="sxs-lookup"><span data-stu-id="f849d-133">The following example shows how you can control the format that is used to print dates.</span></span>
+<span data-ttu-id="bdd0e-135">V následujícím příkladu je ukázáno, jak lze ovládat formát používaný k tisku dat.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-135">The following example shows how you can control the format that is used to print dates.</span></span>
 
 ```dos
 $PrintedDate:dd-MM-yyyy$
 ```
 
-<span data-ttu-id="f849d-134">V tomto příkladu bude datum 30. dubna 2020 vytisknuto jako "30-04-2020".</span><span class="sxs-lookup"><span data-stu-id="f849d-134">In this example, the date April 30, 2020, will be printed as "30-04-2020."</span></span>
+<span data-ttu-id="bdd0e-136">V tomto příkladu bude datum 30. dubna 2020 vytisknuto jako "30-04-2020".</span><span class="sxs-lookup"><span data-stu-id="bdd0e-136">In this example, the date April 30, 2020, will be printed as "30-04-2020."</span></span>
 
-<span data-ttu-id="f849d-135">Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span><span class="sxs-lookup"><span data-stu-id="f849d-135">For a complete list of the available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span></span>
+<span data-ttu-id="bdd0e-137">Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span><span class="sxs-lookup"><span data-stu-id="bdd0e-137">For a complete list of the available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span></span>
 
-## <a name="print-individual-lines-from-multiline-data"></a><span data-ttu-id="f849d-136">Tisk jednotlivých řádků z víceřádkových dat</span><span class="sxs-lookup"><span data-stu-id="f849d-136">Print individual lines from multiline data</span></span>
+## <a name="print-individual-lines-from-multiline-data"></a><span data-ttu-id="bdd0e-138">Tisk jednotlivých řádků z víceřádkových dat</span><span class="sxs-lookup"><span data-stu-id="bdd0e-138">Print individual lines from multiline data</span></span>
 
-<span data-ttu-id="f849d-137">Obsahuje-li datové pole více řádků (tj. řádků oddělených zalomením řádků), můžete vytisknout jednotlivé řádky s použitím následujícího formátu.</span><span class="sxs-lookup"><span data-stu-id="f849d-137">If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.</span></span>
+<span data-ttu-id="bdd0e-139">Obsahuje-li datové pole více řádků (tj. řádků oddělených zalomením řádků), můžete vytisknout jednotlivé řádky s použitím následujícího formátu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-139">If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.</span></span>
 
 ```dos
 $FieldName[#]$
 ```
 
-<span data-ttu-id="f849d-138">Zde `#` je číslo řádku, který chcete vytisknout.</span><span class="sxs-lookup"><span data-stu-id="f849d-138">Here, `#` is the line number that you want to print.</span></span> <span data-ttu-id="f849d-139">(Pro první řádek použijte 1.)</span><span class="sxs-lookup"><span data-stu-id="f849d-139">(Use 1 for the first line.)</span></span>
+<span data-ttu-id="bdd0e-140">Zde `#` je číslo řádku, který chcete vytisknout.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-140">Here, `#` is the line number that you want to print.</span></span> <span data-ttu-id="bdd0e-141">(Pro první řádek použijte 1.)</span><span class="sxs-lookup"><span data-stu-id="bdd0e-141">(Use 1 for the first line.)</span></span>
 
-<span data-ttu-id="f849d-140">Váš systém má například pole `AdditionalAddress`, ve kterém je uložena následující víceřádková adresa:</span><span class="sxs-lookup"><span data-stu-id="f849d-140">For example, your system has an `AdditionalAddress` field that stores the following multiline address:</span></span>
+<span data-ttu-id="bdd0e-142">Váš systém má například pole `AdditionalAddress`, ve kterém je uložena následující víceřádková adresa:</span><span class="sxs-lookup"><span data-stu-id="bdd0e-142">For example, your system has an `AdditionalAddress` field that stores the following multiline address:</span></span>
 
-<span data-ttu-id="f849d-141">Společnost Contoso-Inc.</span><span class="sxs-lookup"><span data-stu-id="f849d-141">Contoso Inc.</span></span>  
-<span data-ttu-id="f849d-142">Název ulice 123</span><span class="sxs-lookup"><span data-stu-id="f849d-142">123 Street Name</span></span>  
-<span data-ttu-id="f849d-143">Některé město, některý stát</span><span class="sxs-lookup"><span data-stu-id="f849d-143">Some City, Some State</span></span>
+<span data-ttu-id="bdd0e-143">Společnost Contoso-Inc.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-143">Contoso Inc.</span></span>  
+<span data-ttu-id="bdd0e-144">Název ulice 123</span><span class="sxs-lookup"><span data-stu-id="bdd0e-144">123 Street Name</span></span>  
+<span data-ttu-id="bdd0e-145">Některé město, některý stát</span><span class="sxs-lookup"><span data-stu-id="bdd0e-145">Some City, Some State</span></span>
 
-<span data-ttu-id="f849d-144">Tuto adresu lze po jednotlivých řádcích vytisknout pomocí následujících kódů.</span><span class="sxs-lookup"><span data-stu-id="f849d-144">You can print this address, one line at a time, by using the following codes.</span></span>
+<span data-ttu-id="bdd0e-146">Tuto adresu lze po jednotlivých řádcích vytisknout pomocí následujících kódů.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-146">You can print this address, one line at a time, by using the following codes.</span></span>
 
-| <span data-ttu-id="f849d-145">Kód</span><span class="sxs-lookup"><span data-stu-id="f849d-145">Code</span></span> | <span data-ttu-id="f849d-146">Text vytištěný</span><span class="sxs-lookup"><span data-stu-id="f849d-146">Text that is printed</span></span> |
+| <span data-ttu-id="bdd0e-147">Kód</span><span class="sxs-lookup"><span data-stu-id="bdd0e-147">Code</span></span> | <span data-ttu-id="bdd0e-148">Text vytištěný</span><span class="sxs-lookup"><span data-stu-id="bdd0e-148">Text that is printed</span></span> |
 |---|---|
-| `$AdditionalAddress[1]$` | <span data-ttu-id="f849d-147">Společnost Contoso-Inc.</span><span class="sxs-lookup"><span data-stu-id="f849d-147">Contoso Inc.</span></span> |
-| `$AdditionalAddress[2]$` | <span data-ttu-id="f849d-148">Název ulice 123</span><span class="sxs-lookup"><span data-stu-id="f849d-148">123 Street Name</span></span> |
-| `$AdditionalAddress[3]$` | <span data-ttu-id="f849d-149">Některé město, některý stát</span><span class="sxs-lookup"><span data-stu-id="f849d-149">Some City, Some State</span></span> |
+| `$AdditionalAddress[1]$` | <span data-ttu-id="bdd0e-149">Společnost Contoso-Inc.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-149">Contoso Inc.</span></span> |
+| `$AdditionalAddress[2]$` | <span data-ttu-id="bdd0e-150">Název ulice 123</span><span class="sxs-lookup"><span data-stu-id="bdd0e-150">123 Street Name</span></span> |
+| `$AdditionalAddress[3]$` | <span data-ttu-id="bdd0e-151">Některé město, některý stát</span><span class="sxs-lookup"><span data-stu-id="bdd0e-151">Some City, Some State</span></span> |
 
-## <a name="print-and-format-from-a-display-method"></a><span data-ttu-id="f849d-150">Tisk a formátování z metody zobrazení</span><span class="sxs-lookup"><span data-stu-id="f849d-150">Print and format from a display method</span></span>
+## <a name="print-and-format-from-a-display-method"></a><span data-ttu-id="bdd0e-152">Tisk a formátování z metody zobrazení</span><span class="sxs-lookup"><span data-stu-id="bdd0e-152">Print and format from a display method</span></span>
 
-<span data-ttu-id="f849d-151">Můžete tisknout z metody zobrazení v následujícím formátu.</span><span class="sxs-lookup"><span data-stu-id="f849d-151">You can print from a display method by using the following format.</span></span>
+<span data-ttu-id="bdd0e-153">Můžete tisknout z metody zobrazení v následujícím formátu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-153">You can print from a display method by using the following format.</span></span>
 
 ```dos
 $DisplayMethod()$
 ```
 
-<span data-ttu-id="f849d-152">Tento formát lze kombinovat s jinými typy, které byly popsány dříve v tomto tématu.</span><span class="sxs-lookup"><span data-stu-id="f849d-152">You can combine this format with other types that were described earlier in this topic.</span></span> <span data-ttu-id="f849d-153">Například máte pojmenovanou metodu zobrazení `DisplayListOfItemsNumbers()` a chcete vytisknout číslo první položky této metody.</span><span class="sxs-lookup"><span data-stu-id="f849d-153">For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method.</span></span> <span data-ttu-id="f849d-154">V takovém případě můžete použít následující kód.</span><span class="sxs-lookup"><span data-stu-id="f849d-154">In this case, you can use the following code.</span></span>
+<span data-ttu-id="bdd0e-154">Tento formát lze kombinovat s jinými typy, které byly popsány dříve v tomto tématu.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-154">You can combine this format with other types that were described earlier in this topic.</span></span> <span data-ttu-id="bdd0e-155">Například máte pojmenovanou metodu zobrazení `DisplayListOfItemsNumbers()` a chcete vytisknout číslo první položky této metody.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-155">For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method.</span></span> <span data-ttu-id="bdd0e-156">V takovém případě můžete použít následující kód.</span><span class="sxs-lookup"><span data-stu-id="bdd0e-156">In this case, you can use the following code.</span></span>
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## <a name="more-information-about-how-to-print-labels"></a><span data-ttu-id="f849d-155">Další informace o tisku štítků</span><span class="sxs-lookup"><span data-stu-id="f849d-155">More information about how to print labels</span></span>
+## <a name="more-information-about-how-to-print-labels"></a><span data-ttu-id="bdd0e-157">Další informace o tisku štítků</span><span class="sxs-lookup"><span data-stu-id="bdd0e-157">More information about how to print labels</span></span>
 
-<span data-ttu-id="f849d-156">Další informace o nastavení a tisku štítků naleznete v tématu [Povolení tisku štítků registračních značek](tasks/license-plate-label-printing.md).</span><span class="sxs-lookup"><span data-stu-id="f849d-156">For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).</span></span>
+<span data-ttu-id="bdd0e-158">Další informace o nastavení a tisku štítků naleznete v tématu [Povolení tisku štítků registračních značek](tasks/license-plate-label-printing.md).</span><span class="sxs-lookup"><span data-stu-id="bdd0e-158">For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
