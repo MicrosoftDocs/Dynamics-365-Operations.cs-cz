@@ -1,0 +1,87 @@
+---
+title: Možnosti implementace sítě pro doručování obsahu
+description: V tomto tématu jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
+author: BrianShook
+manager: AnnBe
+ms.date: 03/11/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: brshoo
+ms.search.validFrom: 2020-11-01
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: ae0769b7e19f80244186c51454444c499c5e497f
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582796"
+---
+# <a name="content-delivery-network-implementation-options"></a><span data-ttu-id="105d7-104">Možnosti implementace sítě pro doručování obsahu</span><span class="sxs-lookup"><span data-stu-id="105d7-104">Content delivery network implementation options</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="105d7-105">V tomto tématu jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-105">This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments.</span></span> <span data-ttu-id="105d7-106">Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.</span><span class="sxs-lookup"><span data-stu-id="105d7-106">These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.</span></span>
+
+<span data-ttu-id="105d7-107">Zákazníci Commerce mají několik možností, když uvažují, kterou službu CDN použít ve svém Commerce prostředí.</span><span class="sxs-lookup"><span data-stu-id="105d7-107">Commerce customers have several options when they are considering which CDN service to use with their Commerce environment.</span></span> <span data-ttu-id="105d7-108">Commerce je vydáván se základní podporou Azure Front Door, která pokrývá základní požadavky na hostování a vlastní doménu.</span><span class="sxs-lookup"><span data-stu-id="105d7-108">Commerce is released with basic Azure Front Door support that covers basic hosting and custom domain requirements.</span></span> <span data-ttu-id="105d7-109">Pro společnosti, které chtějí větší kontrolu a konkrétnější možnosti zabezpečení, jako je brána firewall webových aplikací (WAF), může být nejlepší volbou použít buď instanci Azure Front Door, kterou vlastní zákazník, nebo externí službu CDN.</span><span class="sxs-lookup"><span data-stu-id="105d7-109">For companies that want more control and more specific security abilities, such as a web application firewall (WAF), the best option might be to use either a customer-owned instance of Azure Front Door or an external CDN service.</span></span>
+
+<span data-ttu-id="105d7-110">V prostředích Commerce lze použít následující tři možnosti implementace CDN:</span><span class="sxs-lookup"><span data-stu-id="105d7-110">The following three CDN implementation options can be used with Commerce environments:</span></span>
+
+- <span data-ttu-id="105d7-111">Instance Azure Front Door poskytnutá Commerce</span><span class="sxs-lookup"><span data-stu-id="105d7-111">The Commerce-provided instance of Azure Front Door</span></span>
+- <span data-ttu-id="105d7-112">Instance Azure Front Door vlastněná zákazníkem (pro lepší kontrolu a další funkce zabezpečení)</span><span class="sxs-lookup"><span data-stu-id="105d7-112">A customer-owned instance of Azure Front Door (for increased control and additional security features)</span></span>
+- <span data-ttu-id="105d7-113">Externí služba CDN</span><span class="sxs-lookup"><span data-stu-id="105d7-113">An external CDN service</span></span>
+
+<span data-ttu-id="105d7-114">Všechny tři možnosti implementace CDN dodávají pouze dynamický obsah HTML z vlastních domén.</span><span class="sxs-lookup"><span data-stu-id="105d7-114">All three CDN implementation options deliver only dynamic HTML content from custom domains.</span></span> <span data-ttu-id="105d7-115">Commerce automaticky zpracovává všechny JavaScript, kaskádové styly (CSS), obrázky, videa a další statický obsah prostřednictvím sítí CDN spravovaných společností Microsoft.</span><span class="sxs-lookup"><span data-stu-id="105d7-115">Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs.</span></span> <span data-ttu-id="105d7-116">Možnost, kterou vyberete, určuje operační schopnosti, možnosti ovládání a další možnosti zabezpečení, které jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="105d7-116">The option that you choose determines the operational capabilities, control capabilities, and additional security capabilities that are available.</span></span>
+
+<span data-ttu-id="105d7-117">Následující obrázek přehledně znázorňuje přehled architektury Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-117">The following illustration shows an overview of the Commerce architecture.</span></span>
+
+![Přehled architektury Commerce](media/Commerce_CDN-Option_ComparisonModels.png)
+
+<span data-ttu-id="105d7-119">Další informace o tom, jak nastavit instanci Azure Front Door pro váš web Commerce, viz [Přidání podpory CDN](add-cdn-support.md).</span><span class="sxs-lookup"><span data-stu-id="105d7-119">For more information about how to set up an instance of Azure Front Door for your Commerce site, see [Add CDN Support](add-cdn-support.md).</span></span>
+
+## <a name="use-the-commerce-provided-azure-front-door-instance"></a><span data-ttu-id="105d7-120">Použití instance Azure Front Door poskytnuté Commerce</span><span class="sxs-lookup"><span data-stu-id="105d7-120">Use the Commerce-provided Azure Front Door instance</span></span>
+
+<span data-ttu-id="105d7-121">V následující tabulce jsou uvedeny výhody a nevýhody používání instance Azure Front Door poskytované Commerce ke správě koncových bodů obsahu.</span><span class="sxs-lookup"><span data-stu-id="105d7-121">The following table lists the pros and cons of using the Commerce-provided instance of Azure Front Door to manage content endpoints.</span></span>
+
+| <span data-ttu-id="105d7-122">Výhody</span><span class="sxs-lookup"><span data-stu-id="105d7-122">Pros</span></span> | <span data-ttu-id="105d7-123">Nevýhody</span><span class="sxs-lookup"><span data-stu-id="105d7-123">Cons</span></span> |
+|------|------|
+| <ul><li><span data-ttu-id="105d7-124">Instance je zahrnuta v ceně Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-124">The instance is included in the Commerce cost.</span></span></li><li><span data-ttu-id="105d7-125">Protože instance je spravována týmem Commerce, je vyžadována menší údržba a existují sdílené kroky instalace.</span><span class="sxs-lookup"><span data-stu-id="105d7-125">Because the instance is managed by the Commerce team, less maintenance is required, and there are shared setup steps.</span></span></li><li><span data-ttu-id="105d7-126">Infrastruktura hostovaná v Azure je škálovatelná, bezpečná a spolehlivá.</span><span class="sxs-lookup"><span data-stu-id="105d7-126">The Azure-hosted infrastructure is scalable, secure, and reliable.</span></span></li><li><span data-ttu-id="105d7-127">Certifikát SSL (Secure Sockets Layer) vyžaduje jednorázové nastavení a je automaticky obnovován.</span><span class="sxs-lookup"><span data-stu-id="105d7-127">The Secure Sockets Layer (SSL) certificate requires a one-time setup and is automatically renewed.</span></span></li><li><span data-ttu-id="105d7-128">Instance je monitorována z hlediska chyb a anomálií týmem Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-128">The instance is monitored for errors and anomalies by the Commerce team.</span></span></li></ul> | <ul><li><span data-ttu-id="105d7-129">WAF není podporována.</span><span class="sxs-lookup"><span data-stu-id="105d7-129">A WAF isn't supported.</span></span></li><li><span data-ttu-id="105d7-130">Neexistují žádná konkrétní přizpůsobení nebo úpravy nastavení.</span><span class="sxs-lookup"><span data-stu-id="105d7-130">There are no specific customizations or setting adjustments.</span></span></li><li><span data-ttu-id="105d7-131">Instance závisí na aktualizaci nebo změnách týmu Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-131">The instance depends on the Commerce team for updates or changes.</span></span></li><li><span data-ttu-id="105d7-132">Pro vrcholové domény je vyžadována samostatná instance Azure Front Door a pro integraci vrcholových domén s Azure DNS je zapotřebí další práce.</span><span class="sxs-lookup"><span data-stu-id="105d7-132">A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure DNS.</span></span></li><li><span data-ttu-id="105d7-133">Zákazníkovi není poskytována žádná telemetrie o odpovědích za sekundu (RPS) ani chybovost.</span><span class="sxs-lookup"><span data-stu-id="105d7-133">No telemetry about responses per second (RPS) or the error rate is provided to the customer.</span></span></li></ul> |
+
+<span data-ttu-id="105d7-134">Následující obrázek ukazuje architekturu instance Azure Front Door poskytované Commerce.</span><span class="sxs-lookup"><span data-stu-id="105d7-134">The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.</span></span>
+
+![Instance Azure Front Door poskytnuté Commerce](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+
+## <a name="use-a-customer-owned-azure-front-door-instance"></a><span data-ttu-id="105d7-136">Použití instance Azure Front Door, kterou vlastní zákazník</span><span class="sxs-lookup"><span data-stu-id="105d7-136">Use a customer-owned Azure Front Door instance</span></span>
+
+<span data-ttu-id="105d7-137">V následující tabulce jsou uvedeny výhody a nevýhody používání instance Azure Front Door vlastněné zákazníkem ke správě koncových bodů obsahu.</span><span class="sxs-lookup"><span data-stu-id="105d7-137">The following table lists the pros and cons of using a customer-owned instance of Azure Front Door to manage content endpoints.</span></span>
+
+| <span data-ttu-id="105d7-138">Výhody</span><span class="sxs-lookup"><span data-stu-id="105d7-138">Pros</span></span> | <span data-ttu-id="105d7-139">Nevýhody</span><span class="sxs-lookup"><span data-stu-id="105d7-139">Cons</span></span> |
+|------|------|
+| <ul><li><span data-ttu-id="105d7-140">Nastavení je bezpečné a snadno se spravuje.</span><span class="sxs-lookup"><span data-stu-id="105d7-140">Setup is secure and easy to manage.</span></span></li><li><span data-ttu-id="105d7-141">Infrastruktura hostovaná v Azure je škálovatelná, bezpečná a spolehlivá.</span><span class="sxs-lookup"><span data-stu-id="105d7-141">The Azure-hosted infrastructure is scalable, secure, and reliable.</span></span></li><li><span data-ttu-id="105d7-142">Instance umožňuje integraci WAF a ovládací prvky granulárních pravidel pro jemnější zabezpečení, které je vyladěno speciálně pro váš web.</span><span class="sxs-lookup"><span data-stu-id="105d7-142">The instance allows for WAF integration and granular rule controls for finer-grade security that is tuned specifically for your site.</span></span></li><li><span data-ttu-id="105d7-143">Instance umožňuje jemnější kontrolu nad certifikáty SSL (vlastními i spravovanými Azure Front Door) a propojováním domén.</span><span class="sxs-lookup"><span data-stu-id="105d7-143">The instance allows for finer control of SSL certificates (both customer-owned and Azure Front Door–managed) and domain linking.</span></span></li><li><span data-ttu-id="105d7-144">Instance nabízí řešení vrcholové domény, pokud je spárováno přímo s Azure DNS.</span><span class="sxs-lookup"><span data-stu-id="105d7-144">The instance offers an apex domain solution if it's paired directly with Azure DNS.</span></span></li><li><span data-ttu-id="105d7-145">K dispozici je telemetrie a výstrahy.</span><span class="sxs-lookup"><span data-stu-id="105d7-145">Telemetry and alerting are provided.</span></span></li><li><span data-ttu-id="105d7-146">Certifikát SSL vyžaduje jednorázové nastavení a je automaticky obnovován.</span><span class="sxs-lookup"><span data-stu-id="105d7-146">The SSL certificate requires a one-time setup and is automatically renewed.</span></span></li></ul> | <ul><li><span data-ttu-id="105d7-147">Instance je spravována samostatně.</span><span class="sxs-lookup"><span data-stu-id="105d7-147">The instance is self-managed.</span></span></li><li><span data-ttu-id="105d7-148">Je vyžadováno počáteční získávání znalostí.</span><span class="sxs-lookup"><span data-stu-id="105d7-148">Initial knowledge ramp-up is required.</span></span></li></ul> |
+
+<span data-ttu-id="105d7-149">Následující obrázek ukazuje infrastrukturu Commerce, která zahrnuje instanci Azure Front Door, kterou vlastní zákazník.</span><span class="sxs-lookup"><span data-stu-id="105d7-149">The following illustration shows a Commerce infrastructure that includes a customer-owned Azure Front Door instance.</span></span>
+
+![Infrastruktura Commerce, která zahrnuje instanci Azure Front Door, kterou vlastní zákazník](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+
+## <a name="use-an-external-cdn-service"></a><span data-ttu-id="105d7-151">Použití externí služby CDN</span><span class="sxs-lookup"><span data-stu-id="105d7-151">Use an external CDN service</span></span>
+
+<span data-ttu-id="105d7-152">V následující tabulce jsou uvedeny výhody a nevýhody používání externí služby CDN ke správě koncových bodů obsahu.</span><span class="sxs-lookup"><span data-stu-id="105d7-152">The following table lists the pros and cons of using an external CDN service to manage content endpoints.</span></span>
+
+| <span data-ttu-id="105d7-153">Výhody</span><span class="sxs-lookup"><span data-stu-id="105d7-153">Pros</span></span> | <span data-ttu-id="105d7-154">Nevýhody</span><span class="sxs-lookup"><span data-stu-id="105d7-154">Cons</span></span> |
+|------|------|
+| <ul><li><span data-ttu-id="105d7-155">Tato možnost je užitečná, když je stávající doména již hostována na externím CDN.</span><span class="sxs-lookup"><span data-stu-id="105d7-155">This option is useful when the existing domain is already hosted on an external CDN.</span></span></li><li><span data-ttu-id="105d7-156">Konkurenční CDN (například Akamai) mohou mít více funkcí WAF.</span><span class="sxs-lookup"><span data-stu-id="105d7-156">Competitor CDNs (for example, Akamai) might have more WAF capabilities.</span></span></li></ul> | <ul><li><span data-ttu-id="105d7-157">Je vyžadována samostatná smlouva a další náklady.</span><span class="sxs-lookup"><span data-stu-id="105d7-157">A separate contract and additional costing are required.</span></span></li><li><span data-ttu-id="105d7-158">SSL může způsobit další náklady.</span><span class="sxs-lookup"><span data-stu-id="105d7-158">SSL might incur additional costs.</span></span></li><li><span data-ttu-id="105d7-159">Protože je služba oddělená od cloudové struktury Azure, je nutné spravovat další infrastrukturu.</span><span class="sxs-lookup"><span data-stu-id="105d7-159">Because the service is separate from the Azure cloud structure, additional infrastructure must be managed.</span></span></li><li><span data-ttu-id="105d7-160">Služba může vyžadovat delší časové investice do nastavení koncového bodu a zabezpečení.</span><span class="sxs-lookup"><span data-stu-id="105d7-160">The service might require longer time investments in endpoint and security setup.</span></span></li><li><span data-ttu-id="105d7-161">Služba je spravována samostatně.</span><span class="sxs-lookup"><span data-stu-id="105d7-161">The service is self-managed.</span></span></li><li><span data-ttu-id="105d7-162">Služba je automaticky monitorována.</span><span class="sxs-lookup"><span data-stu-id="105d7-162">The service is self-monitored.</span></span></li></ul> |
+
+<span data-ttu-id="105d7-163">Následující obrázek ukazuje infrastrukturu Commerce, která zahrnuje externí službu CDN.</span><span class="sxs-lookup"><span data-stu-id="105d7-163">The following illustration shows a Commerce infrastructure that includes an external CDN service.</span></span>
+
+![Infrastruktura Commerce, která zahrnuje externí službu CDN](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="105d7-165">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="105d7-165">Additional resources</span></span>
+
+[<span data-ttu-id="105d7-166">Přidání podpory sítě pro doručování obsahu (CDN)</span><span class="sxs-lookup"><span data-stu-id="105d7-166">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)

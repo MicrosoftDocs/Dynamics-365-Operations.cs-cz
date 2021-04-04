@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -15,145 +14,148 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fccdda3ac441630836a0d33f78eb04e9cd26d4a
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 7b5f291372bc459bc1979dca4a95cfafb39e2ad9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092103"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567287"
 ---
-# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a><span data-ttu-id="e817a-103">Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat</span><span class="sxs-lookup"><span data-stu-id="e817a-103">Define ER model mappings and select data sources for them</span></span>
+# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a><span data-ttu-id="2d598-103">Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat</span><span class="sxs-lookup"><span data-stu-id="2d598-103">Define ER model mappings and select data sources for them</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e817a-104">Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e817a-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model.</span></span> <span data-ttu-id="e817a-105">Zdroje dat budou v době návrhu vázány k jednotlivých součástem vybraného datového modelu a za běhu vyplní obchodní data do datového modelu.</span><span class="sxs-lookup"><span data-stu-id="e817a-105">The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time.</span></span> <span data-ttu-id="e817a-106">V tomto příkladu budete vybírat zdroje dat pro existující datový model, který byl vytvořen pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření nového datového modelu".</span><span class="sxs-lookup"><span data-stu-id="e817a-106">In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Create a new data model" procedure.</span></span>
+<span data-ttu-id="2d598-104">Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="2d598-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model.</span></span> <span data-ttu-id="2d598-105">Zdroje dat budou v době návrhu vázány k jednotlivých součástem vybraného datového modelu a za běhu vyplní obchodní data do datového modelu.</span><span class="sxs-lookup"><span data-stu-id="2d598-105">The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time.</span></span> <span data-ttu-id="2d598-106">V tomto příkladu budete vybírat zdroje dat pro existující datový model, který byl vytvořen pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření nového datového modelu".</span><span class="sxs-lookup"><span data-stu-id="2d598-106">In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Create a new data model" procedure.</span></span>
 
 
-## <a name="open-the-electronic-reporting-configurations-tree"></a><span data-ttu-id="e817a-107">Otevření stromu konfigurací elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="e817a-107">Open the Electronic Reporting configurations tree</span></span>
-1. <span data-ttu-id="e817a-108">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e817a-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="e817a-109">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e817a-109">Click Reporting configurations.</span></span>
+## <a name="open-the-electronic-reporting-configurations-tree"></a><span data-ttu-id="2d598-107">Otevření stromu konfigurací elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="2d598-107">Open the Electronic Reporting configurations tree</span></span>
+1. <span data-ttu-id="2d598-108">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="2d598-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="2d598-109">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="2d598-109">Click Reporting configurations.</span></span>
 
-## <a name="insert-a-new-model-mapping"></a><span data-ttu-id="e817a-110">Vložení nového mapování modelu</span><span class="sxs-lookup"><span data-stu-id="e817a-110">Insert a new model mapping</span></span>
-1. <span data-ttu-id="e817a-111">Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)“.</span><span class="sxs-lookup"><span data-stu-id="e817a-111">In the tree, select 'Payments (simplified model)'.</span></span>
-2. <span data-ttu-id="e817a-112">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="e817a-112">Click Designer.</span></span>
-3. <span data-ttu-id="e817a-113">Klikněte na možnost Mapovat model na datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="e817a-113">Click Map model to datasource.</span></span>
-4. <span data-ttu-id="e817a-114">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e817a-114">Click New.</span></span>
-    * <span data-ttu-id="e817a-115">Tím vytvoříte nový záznam, který namapuje datový model na zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="e817a-115">This will create a new record that will map the data model to data sources.</span></span> <span data-ttu-id="e817a-116">V tomto příkladu namapujete datový model na zdroje dat pro požadovaný typ platby: peněžní převod.</span><span class="sxs-lookup"><span data-stu-id="e817a-116">In this example, you will map the data model to data sources for the desired payment type: credit transfer.</span></span>     <span data-ttu-id="e817a-117">Pro konkrétní datový model lze navrhnout více mapování.</span><span class="sxs-lookup"><span data-stu-id="e817a-117">It is possible to design more than one mapping for a particular data model.</span></span> <span data-ttu-id="e817a-118">Například můžete vytvořit mapování pro různé typy plateb, jako je například pro přímý debet nebo peněžní převody.</span><span class="sxs-lookup"><span data-stu-id="e817a-118">For example, you could create a mapping for the different types of payments, such as for direct debit or for credit transfers.</span></span> <span data-ttu-id="e817a-119">V tomto příkladu vytvoříte mapování pro peněžní převody.</span><span class="sxs-lookup"><span data-stu-id="e817a-119">In this example, you will create a mapping for credit transfers.</span></span>  
-5. <span data-ttu-id="e817a-120">Zadejte text „Mapování Dal“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e817a-120">In the Name field, type 'CT mapping'.</span></span>
-    * <span data-ttu-id="e817a-121">Mapování Dal</span><span class="sxs-lookup"><span data-stu-id="e817a-121">CT mapping</span></span>  
-6. <span data-ttu-id="e817a-122">V poli Popis zadejte „Model platby pro mapování Dal“.</span><span class="sxs-lookup"><span data-stu-id="e817a-122">In the Description field, type 'Payment model mapping CT'.</span></span>
-    * <span data-ttu-id="e817a-123">Model platby pro mapování Dal</span><span class="sxs-lookup"><span data-stu-id="e817a-123">Payment model mapping CT</span></span>  
-7. <span data-ttu-id="e817a-124">Zadejte hodnotu CustomerCreditTransferInitiation do pole Definice.</span><span class="sxs-lookup"><span data-stu-id="e817a-124">In the Definition field, type 'CustomerCreditTransferInitiation'.</span></span>
-    * <span data-ttu-id="e817a-125">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="e817a-125">CustomerCreditTransferInitiation</span></span>  
-8. <span data-ttu-id="e817a-126">ResolveChanges Definice.</span><span class="sxs-lookup"><span data-stu-id="e817a-126">ResolveChanges the Definition.</span></span>
-9. <span data-ttu-id="e817a-127">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e817a-127">Click Save.</span></span>
+## <a name="insert-a-new-model-mapping"></a><span data-ttu-id="2d598-110">Vložení nového mapování modelu</span><span class="sxs-lookup"><span data-stu-id="2d598-110">Insert a new model mapping</span></span>
+1. <span data-ttu-id="2d598-111">Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)“.</span><span class="sxs-lookup"><span data-stu-id="2d598-111">In the tree, select 'Payments (simplified model)'.</span></span>
+2. <span data-ttu-id="2d598-112">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="2d598-112">Click Designer.</span></span>
+3. <span data-ttu-id="2d598-113">Klikněte na možnost Mapovat model na datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="2d598-113">Click Map model to datasource.</span></span>
+4. <span data-ttu-id="2d598-114">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2d598-114">Click New.</span></span>
+    * <span data-ttu-id="2d598-115">Tím vytvoříte nový záznam, který namapuje datový model na zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="2d598-115">This will create a new record that will map the data model to data sources.</span></span> <span data-ttu-id="2d598-116">V tomto příkladu namapujete datový model na zdroje dat pro požadovaný typ platby: peněžní převod.</span><span class="sxs-lookup"><span data-stu-id="2d598-116">In this example, you will map the data model to data sources for the desired payment type: credit transfer.</span></span>     <span data-ttu-id="2d598-117">Pro konkrétní datový model lze navrhnout více mapování.</span><span class="sxs-lookup"><span data-stu-id="2d598-117">It is possible to design more than one mapping for a particular data model.</span></span> <span data-ttu-id="2d598-118">Například můžete vytvořit mapování pro různé typy plateb, jako je například pro přímý debet nebo peněžní převody.</span><span class="sxs-lookup"><span data-stu-id="2d598-118">For example, you could create a mapping for the different types of payments, such as for direct debit or for credit transfers.</span></span> <span data-ttu-id="2d598-119">V tomto příkladu vytvoříte mapování pro peněžní převody.</span><span class="sxs-lookup"><span data-stu-id="2d598-119">In this example, you will create a mapping for credit transfers.</span></span>  
+5. <span data-ttu-id="2d598-120">Zadejte text „Mapování Dal“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2d598-120">In the Name field, type 'CT mapping'.</span></span>
+    * <span data-ttu-id="2d598-121">Mapování Dal</span><span class="sxs-lookup"><span data-stu-id="2d598-121">CT mapping</span></span>  
+6. <span data-ttu-id="2d598-122">V poli Popis zadejte „Model platby pro mapování Dal“.</span><span class="sxs-lookup"><span data-stu-id="2d598-122">In the Description field, type 'Payment model mapping CT'.</span></span>
+    * <span data-ttu-id="2d598-123">Model platby pro mapování Dal</span><span class="sxs-lookup"><span data-stu-id="2d598-123">Payment model mapping CT</span></span>  
+7. <span data-ttu-id="2d598-124">Zadejte hodnotu CustomerCreditTransferInitiation do pole Definice.</span><span class="sxs-lookup"><span data-stu-id="2d598-124">In the Definition field, type 'CustomerCreditTransferInitiation'.</span></span>
+    * <span data-ttu-id="2d598-125">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="2d598-125">CustomerCreditTransferInitiation</span></span>  
+8. <span data-ttu-id="2d598-126">ResolveChanges Definice.</span><span class="sxs-lookup"><span data-stu-id="2d598-126">ResolveChanges the Definition.</span></span>
+9. <span data-ttu-id="2d598-127">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2d598-127">Click Save.</span></span>
 
-## <a name="define-required-data-sources-for-the-current-model-mapping"></a><span data-ttu-id="e817a-128">Definování požadovaných zdrojů dat pro aktuální mapování modelu</span><span class="sxs-lookup"><span data-stu-id="e817a-128">Define required data sources for the current model mapping</span></span>
-1. <span data-ttu-id="e817a-129">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="e817a-129">Click Designer.</span></span>
-2. <span data-ttu-id="e817a-130">Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.</span><span class="sxs-lookup"><span data-stu-id="e817a-130">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
-3. <span data-ttu-id="e817a-131">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="e817a-131">Click Add root.</span></span>
-    * <span data-ttu-id="e817a-132">Zadejte tento zdroj dat pro přístup k platebním transakcím.</span><span class="sxs-lookup"><span data-stu-id="e817a-132">Enter this data source to access payment transactions.</span></span>  
-4. <span data-ttu-id="e817a-133">Zadejte text „Transakce“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e817a-133">In the Name field, type 'Transactions'.</span></span>
-    * <span data-ttu-id="e817a-134">Transakce</span><span class="sxs-lookup"><span data-stu-id="e817a-134">Transactions</span></span>  
-5. <span data-ttu-id="e817a-135">Zadejte text „Transakce“ do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="e817a-135">In the Label field, enter 'Transactions'.</span></span>
-    * <span data-ttu-id="e817a-136">Transakce</span><span class="sxs-lookup"><span data-stu-id="e817a-136">Transactions</span></span>  
-6. <span data-ttu-id="e817a-137">V poli Nápověda zadejte text „Řádky deníku hlavní knihy“.</span><span class="sxs-lookup"><span data-stu-id="e817a-137">In the Help field, enter 'Ledger journal lines'.</span></span>
-    * <span data-ttu-id="e817a-138">Řádky deníku hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="e817a-138">Ledger journal lines</span></span>  
-7. <span data-ttu-id="e817a-139">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="e817a-139">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="e817a-140">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="e817a-140">Select Yes.</span></span>  
-8. <span data-ttu-id="e817a-141">Do pole Tabulka zadejte hodnotu „LedgerJournalTrans“.</span><span class="sxs-lookup"><span data-stu-id="e817a-141">In the Table field, type 'LedgerJournalTrans'.</span></span>
-    * <span data-ttu-id="e817a-142">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="e817a-142">LedgerJournalTrans</span></span>  
-9. <span data-ttu-id="e817a-143">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-143">Click OK.</span></span>
-    * <span data-ttu-id="e817a-144">Vyberte tabulku LedgerJournalTrans jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="e817a-144">Select the LedgerJournalTrans table as a data source for the current data model.</span></span>  
-10. <span data-ttu-id="e817a-145">Ve stromovém zobrazení vyberte možnost „Funkce\Počítané pole“.</span><span class="sxs-lookup"><span data-stu-id="e817a-145">In the tree, select 'Functions\Calculated field'.</span></span>
-11. <span data-ttu-id="e817a-146">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="e817a-146">Click Add.</span></span>
-    * <span data-ttu-id="e817a-147">Kliknutím na tlačítko Přidat přidejte nové vypočítané pole.</span><span class="sxs-lookup"><span data-stu-id="e817a-147">Click Add to add a new calculated field.</span></span>  
-12. <span data-ttu-id="e817a-148">Zadejte text „$EndToEndID“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e817a-148">In the Name field, type '$EndToEndID'.</span></span>
-    * <span data-ttu-id="e817a-149">$EndToEndID</span><span class="sxs-lookup"><span data-stu-id="e817a-149">$EndToEndID</span></span>  
-13. <span data-ttu-id="e817a-150">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="e817a-150">Click Edit formula.</span></span>
-14. <span data-ttu-id="e817a-151">Ve stromovém zobrazení vyberte možnost „Řetězec\SLOUČIT“.</span><span class="sxs-lookup"><span data-stu-id="e817a-151">In the tree, select 'String\CONCATENATE'.</span></span>
-15. <span data-ttu-id="e817a-152">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="e817a-152">Click Add function.</span></span>
-16. <span data-ttu-id="e817a-153">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="e817a-153">In the tree, expand 'Transactions'.</span></span>
-17. <span data-ttu-id="e817a-154">Ve stromovém zobrazení vyberte možnost „Transakce\Doklad“.</span><span class="sxs-lookup"><span data-stu-id="e817a-154">In the tree, select 'Transactions\Voucher'.</span></span>
-18. <span data-ttu-id="e817a-155">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="e817a-155">Click Add data source.</span></span>
-19. <span data-ttu-id="e817a-156">V poli Vzorec zadejte 'CONCATENATE(Transactions.Voucher, "-", '.</span><span class="sxs-lookup"><span data-stu-id="e817a-156">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", '.</span></span>
-    * <span data-ttu-id="e817a-157">Na konci receptury zadejte [ , “-“, ].</span><span class="sxs-lookup"><span data-stu-id="e817a-157">Type [ , "-", ] at the end of the formula.</span></span>  
-20. <span data-ttu-id="e817a-158">Ve stromovém zobrazení vyberte možnost „Řetězec\TEXT“.</span><span class="sxs-lookup"><span data-stu-id="e817a-158">In the tree, select 'String\TEXT'.</span></span>
-21. <span data-ttu-id="e817a-159">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="e817a-159">Click Add function.</span></span>
-22. <span data-ttu-id="e817a-160">Ve stromovém zobrazení vyberte možnost "Transakce\ID záznamu(RecId)".</span><span class="sxs-lookup"><span data-stu-id="e817a-160">In the tree, select 'Transactions\Record-ID(RecId)'.</span></span>
-23. <span data-ttu-id="e817a-161">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="e817a-161">Click Add data source.</span></span>
-24. <span data-ttu-id="e817a-162">V poli Vzorec zadejte 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span><span class="sxs-lookup"><span data-stu-id="e817a-162">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span></span>
-    * <span data-ttu-id="e817a-163">Na konci receptury zadejte [))].</span><span class="sxs-lookup"><span data-stu-id="e817a-163">Type [))] at the end of the formula.</span></span>  
-25. <span data-ttu-id="e817a-164">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e817a-164">Click Save.</span></span>
-    * <span data-ttu-id="e817a-165">Ověřte, že ve vytvořené receptuře nejsou žádné chyby.</span><span class="sxs-lookup"><span data-stu-id="e817a-165">Make sure that no errors have been discovered for the created formula.</span></span> <span data-ttu-id="e817a-166">Podívejte se na kartu CHYBY pod ovládacím prvkem editoru receptury.</span><span class="sxs-lookup"><span data-stu-id="e817a-166">See the ERRORS tab below the formula editor control.</span></span>  
-26. <span data-ttu-id="e817a-167">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-167">Close the page.</span></span>
-27. <span data-ttu-id="e817a-168">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-168">Click OK.</span></span>
-    * <span data-ttu-id="e817a-169">Přidejte vypočítané pole k tomuto datovému zdroji.</span><span class="sxs-lookup"><span data-stu-id="e817a-169">Add the calculated field to this data source.</span></span>  
-28. <span data-ttu-id="e817a-170">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="e817a-170">Click Add.</span></span>
-    * <span data-ttu-id="e817a-171">Kliknutím na tlačítko Přidat přidejte nové vypočítané pole.</span><span class="sxs-lookup"><span data-stu-id="e817a-171">Click Add to add a new calculated field.</span></span>  
-29. <span data-ttu-id="e817a-172">Do pole Název zadejte „$Amount“.</span><span class="sxs-lookup"><span data-stu-id="e817a-172">In the Name field, type '$Amount'.</span></span>
-    * <span data-ttu-id="e817a-173">$Částka</span><span class="sxs-lookup"><span data-stu-id="e817a-173">$Amount</span></span>  
-30. <span data-ttu-id="e817a-174">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="e817a-174">Click Edit formula.</span></span>
-31. <span data-ttu-id="e817a-175">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="e817a-175">In the tree, expand 'Transactions'.</span></span>
-32. <span data-ttu-id="e817a-176">Ve stromovém zobrazení vyberte možnost "Transakce\Má dáti(AmountCurDebit)".</span><span class="sxs-lookup"><span data-stu-id="e817a-176">In the tree, select 'Transactions\Debit(AmountCurDebit)'.</span></span>
-33. <span data-ttu-id="e817a-177">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="e817a-177">Click Add data source.</span></span>
-34. <span data-ttu-id="e817a-178">V poli Vzorec zadejte 'Transactions.AmountCurDebit - '.</span><span class="sxs-lookup"><span data-stu-id="e817a-178">In the Formula field, enter 'Transactions.AmountCurDebit - '.</span></span>
-    * <span data-ttu-id="e817a-179">Na konci receptury zadejte [ - ].</span><span class="sxs-lookup"><span data-stu-id="e817a-179">Type [ - ] at the end of the formula.</span></span>  
-35. <span data-ttu-id="e817a-180">Ve stromovém zobrazení vyberte možnost "Transakce\Dal(AmountCurCredit)".</span><span class="sxs-lookup"><span data-stu-id="e817a-180">In the tree, select 'Transactions\Credit(AmountCurCredit)'.</span></span>
-36. <span data-ttu-id="e817a-181">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="e817a-181">Click Add data source.</span></span>
-37. <span data-ttu-id="e817a-182">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e817a-182">Click Save.</span></span>
-38. <span data-ttu-id="e817a-183">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-183">Close the page.</span></span>
-39. <span data-ttu-id="e817a-184">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-184">Click OK.</span></span>
-    * <span data-ttu-id="e817a-185">Tím se přidá vypočtené pole $Amount k vybranému zdroji dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="e817a-185">This will add the $Amount calculated field to the selected data source for the current data model.</span></span>  
-40. <span data-ttu-id="e817a-186">Ve stromovém zobrazení vyberte možnost Transactions\$Amount.</span><span class="sxs-lookup"><span data-stu-id="e817a-186">In the tree, select 'Transactions\$Amount'.</span></span>
-41. <span data-ttu-id="e817a-187">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="e817a-187">In the tree, expand 'Transactions'.</span></span>
-42. <span data-ttu-id="e817a-188">Ve stromové struktuře rozbalte nebo sbalte Transactions\$Amount.</span><span class="sxs-lookup"><span data-stu-id="e817a-188">In the tree, expand or collapse 'Transactions\$Amount'.</span></span>
-43. <span data-ttu-id="e817a-189">Ve stromové struktuře rozbalte nebo sbalte 'Transakce'.</span><span class="sxs-lookup"><span data-stu-id="e817a-189">In the tree, expand or collapse 'Transactions'.</span></span>
-44. <span data-ttu-id="e817a-190">Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.</span><span class="sxs-lookup"><span data-stu-id="e817a-190">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
-45. <span data-ttu-id="e817a-191">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="e817a-191">Click Add root.</span></span>
-    * <span data-ttu-id="e817a-192">Zadejte tento zdroj dat pro přístup k podrobnostem o bankovním účtu společnosti.</span><span class="sxs-lookup"><span data-stu-id="e817a-192">Enter this data source to access the company's bank account details.</span></span>  
-46. <span data-ttu-id="e817a-193">Zadejte text „BankAccount“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e817a-193">In the Name field, type 'BankAccount'.</span></span>
-    * <span data-ttu-id="e817a-194">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="e817a-194">BankAccount</span></span>  
-47. <span data-ttu-id="e817a-195">Zadejte text „Bankovní účet“ do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="e817a-195">In the Label field, enter 'Bank Account'.</span></span>
-    * <span data-ttu-id="e817a-196">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="e817a-196">Bank Account</span></span>  
-48. <span data-ttu-id="e817a-197">Zadejte text „Bankovní účet“ do pole Nápověda.</span><span class="sxs-lookup"><span data-stu-id="e817a-197">In the Help field, enter 'Bank Account'.</span></span>
-    * <span data-ttu-id="e817a-198">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="e817a-198">Bank Account</span></span>  
-49. <span data-ttu-id="e817a-199">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="e817a-199">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="e817a-200">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="e817a-200">Select Yes.</span></span>  
-50. <span data-ttu-id="e817a-201">Do pole Tabulka zadejte hodnotu „BankAccountTable“.</span><span class="sxs-lookup"><span data-stu-id="e817a-201">In the Table field, type 'BankAccountTable'.</span></span>
-    * <span data-ttu-id="e817a-202">BankAccountTable</span><span class="sxs-lookup"><span data-stu-id="e817a-202">BankAccountTable</span></span>  
-51. <span data-ttu-id="e817a-203">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-203">Click OK.</span></span>
-    * <span data-ttu-id="e817a-204">Vyberte tabulku BankAccountTable jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="e817a-204">Select the BankAccountTable table as a data source for the current data model.</span></span>  
-52. <span data-ttu-id="e817a-205">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="e817a-205">Click Add root.</span></span>
-    * <span data-ttu-id="e817a-206">Zadejte tento zdroj dat pro přístup k požadavkům společnosti.</span><span class="sxs-lookup"><span data-stu-id="e817a-206">Enter this data source to access the company's requisites.</span></span>  
-53. <span data-ttu-id="e817a-207">Do pole Název zadejte text „Společnost“.</span><span class="sxs-lookup"><span data-stu-id="e817a-207">In the Name field, type 'Company'.</span></span>
-    * <span data-ttu-id="e817a-208">Společnost</span><span class="sxs-lookup"><span data-stu-id="e817a-208">Company</span></span>  
-54. <span data-ttu-id="e817a-209">Zadejte hodnotu do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="e817a-209">In the Label field, type a value.</span></span>
-    * <span data-ttu-id="e817a-210">Informace o společnosti</span><span class="sxs-lookup"><span data-stu-id="e817a-210">Company information</span></span>  
-55. <span data-ttu-id="e817a-211">Do pole Nápověda zadejte „Informace o společnosti“.</span><span class="sxs-lookup"><span data-stu-id="e817a-211">In the Help field, enter 'Company information'.</span></span>
-    * <span data-ttu-id="e817a-212">Informace o společnosti</span><span class="sxs-lookup"><span data-stu-id="e817a-212">Company information</span></span>  
-56. <span data-ttu-id="e817a-213">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="e817a-213">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="e817a-214">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="e817a-214">Select Yes.</span></span>  
-57. <span data-ttu-id="e817a-215">Do pole Tabulka zadejte hodnotu „CompanyInfo“.</span><span class="sxs-lookup"><span data-stu-id="e817a-215">In the Table field, type 'CompanyInfo'.</span></span>
-    * <span data-ttu-id="e817a-216">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="e817a-216">CompanyInfo</span></span>  
-58. <span data-ttu-id="e817a-217">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-217">Click OK.</span></span>
-    * <span data-ttu-id="e817a-218">Vyberte tabulku CompanyInfo jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="e817a-218">Select the CompanyInfo table as a data source for the current data model.</span></span>  
-59. <span data-ttu-id="e817a-219">Ve stromovém zobrazení vyberte možnost „Funkce\Počítané pole“.</span><span class="sxs-lookup"><span data-stu-id="e817a-219">In the tree, select 'Functions\Calculated field'.</span></span>
-60. <span data-ttu-id="e817a-220">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="e817a-220">Click Add root.</span></span>
-    * <span data-ttu-id="e817a-221">Vložte vypočítané pole jako nový zdroj dat.</span><span class="sxs-lookup"><span data-stu-id="e817a-221">Insert a calculated field as a new data source.</span></span>  
-61. <span data-ttu-id="e817a-222">Do pole Název zadejte „ProcessingDateTime“.</span><span class="sxs-lookup"><span data-stu-id="e817a-222">In the Name field, type 'ProcessingDateTime'.</span></span>
-    * <span data-ttu-id="e817a-223">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="e817a-223">ProcessingDateTime</span></span>  
-62. <span data-ttu-id="e817a-224">Do pole Popisek zadejte „Datum a čas zpracování“.</span><span class="sxs-lookup"><span data-stu-id="e817a-224">In the Label field, enter 'Processing date & time'.</span></span>
-    * <span data-ttu-id="e817a-225">Datum a čas zpracování</span><span class="sxs-lookup"><span data-stu-id="e817a-225">Processing date & time</span></span>  
-63. <span data-ttu-id="e817a-226">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="e817a-226">Click Edit formula.</span></span>
-64. <span data-ttu-id="e817a-227">Ve stromové struktuře vyberte 'Datum/čas\SESSIONNOW'.</span><span class="sxs-lookup"><span data-stu-id="e817a-227">In the tree, select 'Date/time\SESSIONNOW'.</span></span>
-65. <span data-ttu-id="e817a-228">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="e817a-228">Click Add function.</span></span>
-66. <span data-ttu-id="e817a-229">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e817a-229">Click Save.</span></span>
-67. <span data-ttu-id="e817a-230">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-230">Close the page.</span></span>
-68. <span data-ttu-id="e817a-231">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e817a-231">Click OK.</span></span>
-    * <span data-ttu-id="e817a-232">Přidejte vypočítané pole ProcessingDateTime jako zdroj dat pro aktuální model data.</span><span class="sxs-lookup"><span data-stu-id="e817a-232">Add the ProcessingDateTime calculated field as a data source for the current data model.</span></span>  
-69. <span data-ttu-id="e817a-233">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e817a-233">Click Save.</span></span>
-70. <span data-ttu-id="e817a-234">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-234">Close the page.</span></span>
-71. <span data-ttu-id="e817a-235">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-235">Close the page.</span></span>
-72. <span data-ttu-id="e817a-236">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e817a-236">Close the page.</span></span>
+## <a name="define-required-data-sources-for-the-current-model-mapping"></a><span data-ttu-id="2d598-128">Definování požadovaných zdrojů dat pro aktuální mapování modelu</span><span class="sxs-lookup"><span data-stu-id="2d598-128">Define required data sources for the current model mapping</span></span>
+1. <span data-ttu-id="2d598-129">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="2d598-129">Click Designer.</span></span>
+2. <span data-ttu-id="2d598-130">Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.</span><span class="sxs-lookup"><span data-stu-id="2d598-130">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+3. <span data-ttu-id="2d598-131">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="2d598-131">Click Add root.</span></span>
+    * <span data-ttu-id="2d598-132">Zadejte tento zdroj dat pro přístup k platebním transakcím.</span><span class="sxs-lookup"><span data-stu-id="2d598-132">Enter this data source to access payment transactions.</span></span>  
+4. <span data-ttu-id="2d598-133">Zadejte text „Transakce“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2d598-133">In the Name field, type 'Transactions'.</span></span>
+    * <span data-ttu-id="2d598-134">Transakce</span><span class="sxs-lookup"><span data-stu-id="2d598-134">Transactions</span></span>  
+5. <span data-ttu-id="2d598-135">Zadejte text „Transakce“ do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="2d598-135">In the Label field, enter 'Transactions'.</span></span>
+    * <span data-ttu-id="2d598-136">Transakce</span><span class="sxs-lookup"><span data-stu-id="2d598-136">Transactions</span></span>  
+6. <span data-ttu-id="2d598-137">V poli Nápověda zadejte text „Řádky deníku hlavní knihy“.</span><span class="sxs-lookup"><span data-stu-id="2d598-137">In the Help field, enter 'Ledger journal lines'.</span></span>
+    * <span data-ttu-id="2d598-138">Řádky deníku hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="2d598-138">Ledger journal lines</span></span>  
+7. <span data-ttu-id="2d598-139">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="2d598-139">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="2d598-140">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="2d598-140">Select Yes.</span></span>  
+8. <span data-ttu-id="2d598-141">Do pole Tabulka zadejte hodnotu „LedgerJournalTrans“.</span><span class="sxs-lookup"><span data-stu-id="2d598-141">In the Table field, type 'LedgerJournalTrans'.</span></span>
+    * <span data-ttu-id="2d598-142">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="2d598-142">LedgerJournalTrans</span></span>  
+9. <span data-ttu-id="2d598-143">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-143">Click OK.</span></span>
+    * <span data-ttu-id="2d598-144">Vyberte tabulku LedgerJournalTrans jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="2d598-144">Select the LedgerJournalTrans table as a data source for the current data model.</span></span>  
+10. <span data-ttu-id="2d598-145">Ve stromovém zobrazení vyberte možnost „Funkce\Počítané pole“.</span><span class="sxs-lookup"><span data-stu-id="2d598-145">In the tree, select 'Functions\Calculated field'.</span></span>
+11. <span data-ttu-id="2d598-146">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="2d598-146">Click Add.</span></span>
+    * <span data-ttu-id="2d598-147">Kliknutím na tlačítko Přidat přidejte nové vypočítané pole.</span><span class="sxs-lookup"><span data-stu-id="2d598-147">Click Add to add a new calculated field.</span></span>  
+12. <span data-ttu-id="2d598-148">Zadejte text „$EndToEndID“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2d598-148">In the Name field, type '$EndToEndID'.</span></span>
+    * <span data-ttu-id="2d598-149">$EndToEndID</span><span class="sxs-lookup"><span data-stu-id="2d598-149">$EndToEndID</span></span>  
+13. <span data-ttu-id="2d598-150">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="2d598-150">Click Edit formula.</span></span>
+14. <span data-ttu-id="2d598-151">Ve stromovém zobrazení vyberte možnost „Řetězec\SLOUČIT“.</span><span class="sxs-lookup"><span data-stu-id="2d598-151">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="2d598-152">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="2d598-152">Click Add function.</span></span>
+16. <span data-ttu-id="2d598-153">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="2d598-153">In the tree, expand 'Transactions'.</span></span>
+17. <span data-ttu-id="2d598-154">Ve stromovém zobrazení vyberte možnost „Transakce\Doklad“.</span><span class="sxs-lookup"><span data-stu-id="2d598-154">In the tree, select 'Transactions\Voucher'.</span></span>
+18. <span data-ttu-id="2d598-155">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="2d598-155">Click Add data source.</span></span>
+19. <span data-ttu-id="2d598-156">V poli Vzorec zadejte 'CONCATENATE(Transactions.Voucher, "-", '.</span><span class="sxs-lookup"><span data-stu-id="2d598-156">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", '.</span></span>
+    * <span data-ttu-id="2d598-157">Na konci receptury zadejte [ , “-“, ].</span><span class="sxs-lookup"><span data-stu-id="2d598-157">Type [ , "-", ] at the end of the formula.</span></span>  
+20. <span data-ttu-id="2d598-158">Ve stromovém zobrazení vyberte možnost „Řetězec\TEXT“.</span><span class="sxs-lookup"><span data-stu-id="2d598-158">In the tree, select 'String\TEXT'.</span></span>
+21. <span data-ttu-id="2d598-159">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="2d598-159">Click Add function.</span></span>
+22. <span data-ttu-id="2d598-160">Ve stromovém zobrazení vyberte možnost "Transakce\ID záznamu(RecId)".</span><span class="sxs-lookup"><span data-stu-id="2d598-160">In the tree, select 'Transactions\Record-ID(RecId)'.</span></span>
+23. <span data-ttu-id="2d598-161">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="2d598-161">Click Add data source.</span></span>
+24. <span data-ttu-id="2d598-162">V poli Vzorec zadejte 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span><span class="sxs-lookup"><span data-stu-id="2d598-162">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span></span>
+    * <span data-ttu-id="2d598-163">Na konci receptury zadejte [))].</span><span class="sxs-lookup"><span data-stu-id="2d598-163">Type [))] at the end of the formula.</span></span>  
+25. <span data-ttu-id="2d598-164">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2d598-164">Click Save.</span></span>
+    * <span data-ttu-id="2d598-165">Ověřte, že ve vytvořené receptuře nejsou žádné chyby.</span><span class="sxs-lookup"><span data-stu-id="2d598-165">Make sure that no errors have been discovered for the created formula.</span></span> <span data-ttu-id="2d598-166">Podívejte se na kartu CHYBY pod ovládacím prvkem editoru receptury.</span><span class="sxs-lookup"><span data-stu-id="2d598-166">See the ERRORS tab below the formula editor control.</span></span>  
+26. <span data-ttu-id="2d598-167">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-167">Close the page.</span></span>
+27. <span data-ttu-id="2d598-168">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-168">Click OK.</span></span>
+    * <span data-ttu-id="2d598-169">Přidejte vypočítané pole k tomuto datovému zdroji.</span><span class="sxs-lookup"><span data-stu-id="2d598-169">Add the calculated field to this data source.</span></span>  
+28. <span data-ttu-id="2d598-170">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="2d598-170">Click Add.</span></span>
+    * <span data-ttu-id="2d598-171">Kliknutím na tlačítko Přidat přidejte nové vypočítané pole.</span><span class="sxs-lookup"><span data-stu-id="2d598-171">Click Add to add a new calculated field.</span></span>  
+29. <span data-ttu-id="2d598-172">Do pole Název zadejte „$Amount“.</span><span class="sxs-lookup"><span data-stu-id="2d598-172">In the Name field, type '$Amount'.</span></span>
+    * <span data-ttu-id="2d598-173">$Částka</span><span class="sxs-lookup"><span data-stu-id="2d598-173">$Amount</span></span>  
+30. <span data-ttu-id="2d598-174">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="2d598-174">Click Edit formula.</span></span>
+31. <span data-ttu-id="2d598-175">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="2d598-175">In the tree, expand 'Transactions'.</span></span>
+32. <span data-ttu-id="2d598-176">Ve stromovém zobrazení vyberte možnost "Transakce\Má dáti(AmountCurDebit)".</span><span class="sxs-lookup"><span data-stu-id="2d598-176">In the tree, select 'Transactions\Debit(AmountCurDebit)'.</span></span>
+33. <span data-ttu-id="2d598-177">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="2d598-177">Click Add data source.</span></span>
+34. <span data-ttu-id="2d598-178">V poli Vzorec zadejte 'Transactions.AmountCurDebit - '.</span><span class="sxs-lookup"><span data-stu-id="2d598-178">In the Formula field, enter 'Transactions.AmountCurDebit - '.</span></span>
+    * <span data-ttu-id="2d598-179">Na konci receptury zadejte [ - ].</span><span class="sxs-lookup"><span data-stu-id="2d598-179">Type [ - ] at the end of the formula.</span></span>  
+35. <span data-ttu-id="2d598-180">Ve stromovém zobrazení vyberte možnost "Transakce\Dal(AmountCurCredit)".</span><span class="sxs-lookup"><span data-stu-id="2d598-180">In the tree, select 'Transactions\Credit(AmountCurCredit)'.</span></span>
+36. <span data-ttu-id="2d598-181">Klikněte na možnost Přidat datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="2d598-181">Click Add data source.</span></span>
+37. <span data-ttu-id="2d598-182">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2d598-182">Click Save.</span></span>
+38. <span data-ttu-id="2d598-183">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-183">Close the page.</span></span>
+39. <span data-ttu-id="2d598-184">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-184">Click OK.</span></span>
+    * <span data-ttu-id="2d598-185">Tím se přidá vypočtené pole $Amount k vybranému zdroji dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="2d598-185">This will add the $Amount calculated field to the selected data source for the current data model.</span></span>  
+40. <span data-ttu-id="2d598-186">Ve stromovém zobrazení vyberte možnost Transactions\$Amount.</span><span class="sxs-lookup"><span data-stu-id="2d598-186">In the tree, select 'Transactions\$Amount'.</span></span>
+41. <span data-ttu-id="2d598-187">Ve stromovém zobrazení rozbalte možnost Transakce.</span><span class="sxs-lookup"><span data-stu-id="2d598-187">In the tree, expand 'Transactions'.</span></span>
+42. <span data-ttu-id="2d598-188">Ve stromové struktuře rozbalte nebo sbalte Transactions\$Amount.</span><span class="sxs-lookup"><span data-stu-id="2d598-188">In the tree, expand or collapse 'Transactions\$Amount'.</span></span>
+43. <span data-ttu-id="2d598-189">Ve stromové struktuře rozbalte nebo sbalte 'Transakce'.</span><span class="sxs-lookup"><span data-stu-id="2d598-189">In the tree, expand or collapse 'Transactions'.</span></span>
+44. <span data-ttu-id="2d598-190">Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.</span><span class="sxs-lookup"><span data-stu-id="2d598-190">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+45. <span data-ttu-id="2d598-191">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="2d598-191">Click Add root.</span></span>
+    * <span data-ttu-id="2d598-192">Zadejte tento zdroj dat pro přístup k podrobnostem o bankovním účtu společnosti.</span><span class="sxs-lookup"><span data-stu-id="2d598-192">Enter this data source to access the company's bank account details.</span></span>  
+46. <span data-ttu-id="2d598-193">Zadejte text „BankAccount“ do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2d598-193">In the Name field, type 'BankAccount'.</span></span>
+    * <span data-ttu-id="2d598-194">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="2d598-194">BankAccount</span></span>  
+47. <span data-ttu-id="2d598-195">Zadejte text „Bankovní účet“ do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="2d598-195">In the Label field, enter 'Bank Account'.</span></span>
+    * <span data-ttu-id="2d598-196">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="2d598-196">Bank Account</span></span>  
+48. <span data-ttu-id="2d598-197">Zadejte text „Bankovní účet“ do pole Nápověda.</span><span class="sxs-lookup"><span data-stu-id="2d598-197">In the Help field, enter 'Bank Account'.</span></span>
+    * <span data-ttu-id="2d598-198">Bankovní účet</span><span class="sxs-lookup"><span data-stu-id="2d598-198">Bank Account</span></span>  
+49. <span data-ttu-id="2d598-199">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="2d598-199">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="2d598-200">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="2d598-200">Select Yes.</span></span>  
+50. <span data-ttu-id="2d598-201">Do pole Tabulka zadejte hodnotu „BankAccountTable“.</span><span class="sxs-lookup"><span data-stu-id="2d598-201">In the Table field, type 'BankAccountTable'.</span></span>
+    * <span data-ttu-id="2d598-202">BankAccountTable</span><span class="sxs-lookup"><span data-stu-id="2d598-202">BankAccountTable</span></span>  
+51. <span data-ttu-id="2d598-203">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-203">Click OK.</span></span>
+    * <span data-ttu-id="2d598-204">Vyberte tabulku BankAccountTable jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="2d598-204">Select the BankAccountTable table as a data source for the current data model.</span></span>  
+52. <span data-ttu-id="2d598-205">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="2d598-205">Click Add root.</span></span>
+    * <span data-ttu-id="2d598-206">Zadejte tento zdroj dat pro přístup k požadavkům společnosti.</span><span class="sxs-lookup"><span data-stu-id="2d598-206">Enter this data source to access the company's requisites.</span></span>  
+53. <span data-ttu-id="2d598-207">Do pole Název zadejte text „Společnost“.</span><span class="sxs-lookup"><span data-stu-id="2d598-207">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="2d598-208">Společnost</span><span class="sxs-lookup"><span data-stu-id="2d598-208">Company</span></span>  
+54. <span data-ttu-id="2d598-209">Zadejte hodnotu do pole Popisek.</span><span class="sxs-lookup"><span data-stu-id="2d598-209">In the Label field, type a value.</span></span>
+    * <span data-ttu-id="2d598-210">Informace o společnosti</span><span class="sxs-lookup"><span data-stu-id="2d598-210">Company information</span></span>  
+55. <span data-ttu-id="2d598-211">Do pole Nápověda zadejte „Informace o společnosti“.</span><span class="sxs-lookup"><span data-stu-id="2d598-211">In the Help field, enter 'Company information'.</span></span>
+    * <span data-ttu-id="2d598-212">Informace o společnosti</span><span class="sxs-lookup"><span data-stu-id="2d598-212">Company information</span></span>  
+56. <span data-ttu-id="2d598-213">Vyberte možnost Ano v poli Zeptat se na dotaz.</span><span class="sxs-lookup"><span data-stu-id="2d598-213">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="2d598-214">Vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="2d598-214">Select Yes.</span></span>  
+57. <span data-ttu-id="2d598-215">Do pole Tabulka zadejte hodnotu „CompanyInfo“.</span><span class="sxs-lookup"><span data-stu-id="2d598-215">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="2d598-216">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="2d598-216">CompanyInfo</span></span>  
+58. <span data-ttu-id="2d598-217">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-217">Click OK.</span></span>
+    * <span data-ttu-id="2d598-218">Vyberte tabulku CompanyInfo jako zdroj dat pro aktuální datový model.</span><span class="sxs-lookup"><span data-stu-id="2d598-218">Select the CompanyInfo table as a data source for the current data model.</span></span>  
+59. <span data-ttu-id="2d598-219">Ve stromovém zobrazení vyberte možnost „Funkce\Počítané pole“.</span><span class="sxs-lookup"><span data-stu-id="2d598-219">In the tree, select 'Functions\Calculated field'.</span></span>
+60. <span data-ttu-id="2d598-220">Klikněte na možnost Přidat kořen.</span><span class="sxs-lookup"><span data-stu-id="2d598-220">Click Add root.</span></span>
+    * <span data-ttu-id="2d598-221">Vložte vypočítané pole jako nový zdroj dat.</span><span class="sxs-lookup"><span data-stu-id="2d598-221">Insert a calculated field as a new data source.</span></span>  
+61. <span data-ttu-id="2d598-222">Do pole Název zadejte „ProcessingDateTime“.</span><span class="sxs-lookup"><span data-stu-id="2d598-222">In the Name field, type 'ProcessingDateTime'.</span></span>
+    * <span data-ttu-id="2d598-223">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="2d598-223">ProcessingDateTime</span></span>  
+62. <span data-ttu-id="2d598-224">Do pole Popisek zadejte „Datum a čas zpracování“.</span><span class="sxs-lookup"><span data-stu-id="2d598-224">In the Label field, enter 'Processing date & time'.</span></span>
+    * <span data-ttu-id="2d598-225">Datum a čas zpracování</span><span class="sxs-lookup"><span data-stu-id="2d598-225">Processing date & time</span></span>  
+63. <span data-ttu-id="2d598-226">Klikněte na možnost Upravit vzorec.</span><span class="sxs-lookup"><span data-stu-id="2d598-226">Click Edit formula.</span></span>
+64. <span data-ttu-id="2d598-227">Ve stromové struktuře vyberte 'Datum/čas\SESSIONNOW'.</span><span class="sxs-lookup"><span data-stu-id="2d598-227">In the tree, select 'Date/time\SESSIONNOW'.</span></span>
+65. <span data-ttu-id="2d598-228">Klikněte na možnost Přidat funkci.</span><span class="sxs-lookup"><span data-stu-id="2d598-228">Click Add function.</span></span>
+66. <span data-ttu-id="2d598-229">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2d598-229">Click Save.</span></span>
+67. <span data-ttu-id="2d598-230">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-230">Close the page.</span></span>
+68. <span data-ttu-id="2d598-231">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2d598-231">Click OK.</span></span>
+    * <span data-ttu-id="2d598-232">Přidejte vypočítané pole ProcessingDateTime jako zdroj dat pro aktuální model data.</span><span class="sxs-lookup"><span data-stu-id="2d598-232">Add the ProcessingDateTime calculated field as a data source for the current data model.</span></span>  
+69. <span data-ttu-id="2d598-233">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2d598-233">Click Save.</span></span>
+70. <span data-ttu-id="2d598-234">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-234">Close the page.</span></span>
+71. <span data-ttu-id="2d598-235">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-235">Close the page.</span></span>
+72. <span data-ttu-id="2d598-236">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2d598-236">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
