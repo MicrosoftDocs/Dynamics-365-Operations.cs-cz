@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,45 +16,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbba375104b57f9fb09ed4e330d85181ec0dff8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b689e6d4bb849f07db5d00cf8a9dc5c16646a927
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684876"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563865"
 ---
-# <a name="isempty-er-function"></a><span data-ttu-id="ca604-103">Funkce elektronického výkaznictví ISEMPTY</span><span class="sxs-lookup"><span data-stu-id="ca604-103">ISEMPTY ER function</span></span>
+# <a name="isempty-er-function"></a><span data-ttu-id="acf00-103">Funkce elektronického výkaznictví ISEMPTY</span><span class="sxs-lookup"><span data-stu-id="acf00-103">ISEMPTY ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ca604-104">Funce `ISEMPTY` vrátí *logickou hodnotu* **TRUE**, pokud zadaný seznam neobsahuje žádné záznamy.</span><span class="sxs-lookup"><span data-stu-id="ca604-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="ca604-105">V opačném případě výraz vrátí *logickou hodnotu* **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="ca604-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="acf00-104">Funce `ISEMPTY` vrátí *logickou hodnotu* **TRUE**, pokud zadaný seznam neobsahuje žádné záznamy.</span><span class="sxs-lookup"><span data-stu-id="acf00-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="acf00-105">V opačném případě výraz vrátí *logickou hodnotu* **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="acf00-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ca604-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="ca604-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="acf00-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="acf00-106">Syntax</span></span>
 
 ```vb
 ISEMPTY (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ca604-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="ca604-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="acf00-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="acf00-107">Arguments</span></span>
 
-<span data-ttu-id="ca604-108">`list`: *seznam záznamů*</span><span class="sxs-lookup"><span data-stu-id="ca604-108">`list`: *Record list*</span></span>
+<span data-ttu-id="acf00-108">`list`: *seznam záznamů*</span><span class="sxs-lookup"><span data-stu-id="acf00-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="ca604-109">Platná cesta ke zdroji dat typu *seznam záznamů*.</span><span class="sxs-lookup"><span data-stu-id="ca604-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="acf00-109">Platná cesta ke zdroji dat typu *seznam záznamů*.</span><span class="sxs-lookup"><span data-stu-id="acf00-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ca604-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="ca604-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="acf00-110">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="acf00-110">Return values</span></span>
 
-<span data-ttu-id="ca604-111">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="ca604-111">*Boolean*</span></span>
+<span data-ttu-id="acf00-111">*Logická hodnota*</span><span class="sxs-lookup"><span data-stu-id="acf00-111">*Boolean*</span></span>
 
-<span data-ttu-id="ca604-112">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="ca604-112">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="acf00-112">Výsledná *logická hodnota*.</span><span class="sxs-lookup"><span data-stu-id="acf00-112">The resulting *Boolean* value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="ca604-113">Příklad 1</span><span class="sxs-lookup"><span data-stu-id="ca604-113">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="acf00-113">Příklad 1</span><span class="sxs-lookup"><span data-stu-id="acf00-113">Example 1</span></span>
 
-<span data-ttu-id="ca604-114">Pokud zadáte zdroj dat **DS** typu *vypočítané pole* a ten obsahuje výraz `SPLIT ("A|B|C", "|")`, výraz `ISEMPTY(DS)` vrátí hodnotu **"FALSE"**.</span><span class="sxs-lookup"><span data-stu-id="ca604-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
+<span data-ttu-id="acf00-114">Pokud zadáte zdroj dat **DS** typu *vypočítané pole* a ten obsahuje výraz `SPLIT ("A|B|C", "|")`, výraz `ISEMPTY(DS)` vrátí hodnotu **"FALSE"**.</span><span class="sxs-lookup"><span data-stu-id="acf00-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="ca604-115">Příklad 2</span><span class="sxs-lookup"><span data-stu-id="ca604-115">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="acf00-115">Příklad 2</span><span class="sxs-lookup"><span data-stu-id="acf00-115">Example 2</span></span>
 
-<span data-ttu-id="ca604-116">Výraz `ISEMPTY (SPLIT ("",1))` vrátí hodnotu **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="ca604-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
+<span data-ttu-id="acf00-116">Výraz `ISEMPTY (SPLIT ("",1))` vrátí hodnotu **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="acf00-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ca604-117">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="ca604-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="acf00-117">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="acf00-117">Additional resources</span></span>
 
-[<span data-ttu-id="ca604-118">Funkce seznamu</span><span class="sxs-lookup"><span data-stu-id="ca604-118">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="acf00-118">Funkce seznamu</span><span class="sxs-lookup"><span data-stu-id="acf00-118">List functions</span></span>](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

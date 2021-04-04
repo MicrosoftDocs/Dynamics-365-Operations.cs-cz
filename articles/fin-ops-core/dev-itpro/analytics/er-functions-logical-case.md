@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,69 +16,72 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69b76a06bcd3ba002d9543447e60afa14d5a6ce6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f466e3ffe368bf30236060d820621e723106fc1d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687019"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562462"
 ---
-# <a name="case-er-function"></a><span data-ttu-id="19f2f-103">Funkce el. výkaznictví CASE</span><span class="sxs-lookup"><span data-stu-id="19f2f-103">CASE ER function</span></span>
+# <a name="case-er-function"></a><span data-ttu-id="7eaeb-103">Funkce el. výkaznictví CASE</span><span class="sxs-lookup"><span data-stu-id="7eaeb-103">CASE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="19f2f-104">Funkce `CASE` vyhodnotí hodnotu zadaného výrazu podle zadaných alternativních možností a vrátí výsledek první možnosti, která se rovná hodnotě zadaného výrazu.</span><span class="sxs-lookup"><span data-stu-id="19f2f-104">The `CASE` function evaluates the value of the specified expression against the specified alternative options and returns the result of the first option that equals the value of the specified expression.</span></span> <span data-ttu-id="19f2f-105">V opačném případě vrátí volitelný výchozí výsledek, pokud je výchozí výsledek zadán jako poslední argument volané funkce, jemuž nepředchází nějaká možnost.</span><span class="sxs-lookup"><span data-stu-id="19f2f-105">Otherwise, it returns the optional default result, if a default result is specified as the last argument of the called function that isn't preceded by an option.</span></span> <span data-ttu-id="19f2f-106">Vrácená hodnota může být libovolného podporovaného datového typu.</span><span class="sxs-lookup"><span data-stu-id="19f2f-106">The value that is returned can be a value of any of the supported data types.</span></span>
+<span data-ttu-id="7eaeb-104">Funkce `CASE` vyhodnotí hodnotu zadaného výrazu podle zadaných alternativních možností a vrátí výsledek první možnosti, která se rovná hodnotě zadaného výrazu.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-104">The `CASE` function evaluates the value of the specified expression against the specified alternative options and returns the result of the first option that equals the value of the specified expression.</span></span> <span data-ttu-id="7eaeb-105">V opačném případě vrátí volitelný výchozí výsledek, pokud je výchozí výsledek zadán jako poslední argument volané funkce, jemuž nepředchází nějaká možnost.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-105">Otherwise, it returns the optional default result, if a default result is specified as the last argument of the called function that isn't preceded by an option.</span></span> <span data-ttu-id="7eaeb-106">Vrácená hodnota může být libovolného podporovaného datového typu.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-106">The value that is returned can be a value of any of the supported data types.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="19f2f-107">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="19f2f-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7eaeb-107">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="7eaeb-107">Syntax</span></span>
 
 ```vb
 CASE (expression, option 1, result 1[, option 2, result 2, …, option N, result N, default result])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="19f2f-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="19f2f-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="7eaeb-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="7eaeb-108">Arguments</span></span>
 
-<span data-ttu-id="19f2f-109">`expression`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="19f2f-109">`expression`: *Primitive data type* (Boolean, numeric, or text)</span></span>
+<span data-ttu-id="7eaeb-109">`expression`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="7eaeb-109">`expression`: *Primitive data type* (Boolean, numeric, or text)</span></span>
 
-<span data-ttu-id="19f2f-110">Platný výraz, který vrací hodnotu primitivního datového typu.</span><span class="sxs-lookup"><span data-stu-id="19f2f-110">A valid expression that returns a value of the primitive data type.</span></span>
+<span data-ttu-id="7eaeb-110">Platný výraz, který vrací hodnotu primitivního datového typu.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-110">A valid expression that returns a value of the primitive data type.</span></span>
 
-<span data-ttu-id="19f2f-111">`option 1`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="19f2f-111">`option 1`: *Primitive data type* (Boolean, numeric, or text)</span></span>
+<span data-ttu-id="7eaeb-111">`option 1`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="7eaeb-111">`option 1`: *Primitive data type* (Boolean, numeric, or text)</span></span>
 
-<span data-ttu-id="19f2f-112">Platný výraz, který vrací hodnotu stejného primitivního datového typu jako argument `expression` volané funkce.</span><span class="sxs-lookup"><span data-stu-id="19f2f-112">A valid expression that returns a value of the same primitive data type as the `expression` argument of the called function.</span></span> <span data-ttu-id="19f2f-113">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="19f2f-113">This argument is required.</span></span>
+<span data-ttu-id="7eaeb-112">Platný výraz, který vrací hodnotu stejného primitivního datového typu jako argument `expression` volané funkce.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-112">A valid expression that returns a value of the same primitive data type as the `expression` argument of the called function.</span></span> <span data-ttu-id="7eaeb-113">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-113">This argument is required.</span></span>
 
-<span data-ttu-id="19f2f-114">`result 1`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="19f2f-114">`result 1`: *Any of the supported data types*</span></span>
+<span data-ttu-id="7eaeb-114">`result 1`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="7eaeb-114">`result 1`: *Any of the supported data types*</span></span>
 
-<span data-ttu-id="19f2f-115">Vrácený výsledek, který odpovídá předcházející možnosti.</span><span class="sxs-lookup"><span data-stu-id="19f2f-115">The returned result that corresponds to the preceding option.</span></span> <span data-ttu-id="19f2f-116">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="19f2f-116">This argument is required.</span></span>
+<span data-ttu-id="7eaeb-115">Vrácený výsledek, který odpovídá předcházející možnosti.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-115">The returned result that corresponds to the preceding option.</span></span> <span data-ttu-id="7eaeb-116">Tento argument je povinný.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-116">This argument is required.</span></span>
 
-<span data-ttu-id="19f2f-117">`option N`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="19f2f-117">`option N`: *Primitive data type* (Boolean, numeric, or text)</span></span>
+<span data-ttu-id="7eaeb-117">`option N`: *primitivní datový typ* (logická, číselná nebo textová hodnota)</span><span class="sxs-lookup"><span data-stu-id="7eaeb-117">`option N`: *Primitive data type* (Boolean, numeric, or text)</span></span>
 
-<span data-ttu-id="19f2f-118">Platný výraz, který vrací hodnotu stejného primitivního datového typu jako argument `expression` volané funkce.</span><span class="sxs-lookup"><span data-stu-id="19f2f-118">A valid expression that returns a value of the same primitive data type as the `expression` argument of the called function.</span></span> <span data-ttu-id="19f2f-119">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="19f2f-119">This argument is optional.</span></span>
+<span data-ttu-id="7eaeb-118">Platný výraz, který vrací hodnotu stejného primitivního datového typu jako argument `expression` volané funkce.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-118">A valid expression that returns a value of the same primitive data type as the `expression` argument of the called function.</span></span> <span data-ttu-id="7eaeb-119">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-119">This argument is optional.</span></span>
 
-<span data-ttu-id="19f2f-120">`result N`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="19f2f-120">`result N`: *Any of the supported data types*</span></span>
+<span data-ttu-id="7eaeb-120">`result N`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="7eaeb-120">`result N`: *Any of the supported data types*</span></span>
 
-<span data-ttu-id="19f2f-121">Vrácený výsledek, který odpovídá předcházející možnosti.</span><span class="sxs-lookup"><span data-stu-id="19f2f-121">The returned result that corresponds to the preceding option.</span></span> <span data-ttu-id="19f2f-122">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="19f2f-122">This argument is optional.</span></span>
+<span data-ttu-id="7eaeb-121">Vrácený výsledek, který odpovídá předcházející možnosti.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-121">The returned result that corresponds to the preceding option.</span></span> <span data-ttu-id="7eaeb-122">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-122">This argument is optional.</span></span>
 
-<span data-ttu-id="19f2f-123">`default result`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="19f2f-123">`default result`: *Any of the supported data types*</span></span>
+<span data-ttu-id="7eaeb-123">`default result`: *kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="7eaeb-123">`default result`: *Any of the supported data types*</span></span>
 
-<span data-ttu-id="19f2f-124">Výsledek, který by měl být vrácen, pokud neexistuje shoda.</span><span class="sxs-lookup"><span data-stu-id="19f2f-124">The result that should be returned if there is no match.</span></span> <span data-ttu-id="19f2f-125">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="19f2f-125">This argument is optional.</span></span>
+<span data-ttu-id="7eaeb-124">Výsledek, který by měl být vrácen, pokud neexistuje shoda.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-124">The result that should be returned if there is no match.</span></span> <span data-ttu-id="7eaeb-125">Tento argument je volitelný.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-125">This argument is optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="19f2f-126">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="19f2f-126">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7eaeb-126">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="7eaeb-126">Return values</span></span>
 
-<span data-ttu-id="19f2f-127">*kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="19f2f-127">*Any of the supported data types*</span></span>
+<span data-ttu-id="7eaeb-127">*kterýkoli z podporovaných datových typů*</span><span class="sxs-lookup"><span data-stu-id="7eaeb-127">*Any of the supported data types*</span></span>
 
-<span data-ttu-id="19f2f-128">Výsledná hodnota některého z podporovaných datových typů.</span><span class="sxs-lookup"><span data-stu-id="19f2f-128">The resulting value of any of the supported data types.</span></span>
+<span data-ttu-id="7eaeb-128">Výsledná hodnota některého z podporovaných datových typů.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-128">The resulting value of any of the supported data types.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="19f2f-129">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="19f2f-129">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="7eaeb-129">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="7eaeb-129">Usage notes</span></span>
 
-<span data-ttu-id="19f2f-130">Výjimka je vyvolána za běhu, pokud neexistuje shoda a volitelný výchozí výsledek není definován.</span><span class="sxs-lookup"><span data-stu-id="19f2f-130">An exception is thrown at runtime if there is no match and an optional default result isn't defined.</span></span>
+<span data-ttu-id="7eaeb-130">Výjimka je vyvolána za běhu, pokud neexistuje shoda a volitelný výchozí výsledek není definován.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-130">An exception is thrown at runtime if there is no match and an optional default result isn't defined.</span></span>
 
-<span data-ttu-id="19f2f-131">Všechny výsledky musí být zadány pomocí stejného datového typu.</span><span class="sxs-lookup"><span data-stu-id="19f2f-131">All results must be specified by using the same data type.</span></span> <span data-ttu-id="19f2f-132">Výjimka je vyvolána v době návrhu, pokud se datové typy konfigurovaných výsledků neshodují.</span><span class="sxs-lookup"><span data-stu-id="19f2f-132">An exception is thrown at design time if the data types of the configured results don't match.</span></span>
+<span data-ttu-id="7eaeb-131">Všechny výsledky musí být zadány pomocí stejného datového typu.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-131">All results must be specified by using the same data type.</span></span> <span data-ttu-id="7eaeb-132">Výjimka je vyvolána v době návrhu, pokud se datové typy konfigurovaných výsledků neshodují.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-132">An exception is thrown at design time if the data types of the configured results don't match.</span></span>
 
-<span data-ttu-id="19f2f-133">Jsou-li první výsledná hodnota a *n*-tá hodnota výsledku hodnoty datového typu *kontejner (záznam)* nebo *seznam záznamů*, výsledek obsahuje pouze pole, která existují v obou hodnotách.</span><span class="sxs-lookup"><span data-stu-id="19f2f-133">If the first result value and the *N* th result value are values of the *Container (record)* or *Record list* data type, the result has only the fields that exist in both values.</span></span>
+<span data-ttu-id="7eaeb-133">Jsou-li první výsledná hodnota a *n*-tá hodnota výsledku hodnoty datového typu *kontejner (záznam)* nebo *seznam záznamů*, výsledek obsahuje pouze pole, která existují v obou hodnotách.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-133">If the first result value and the *N* th result value are values of the *Container (record)* or *Record list* data type, the result has only the fields that exist in both values.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19f2f-134">Příklad</span><span class="sxs-lookup"><span data-stu-id="19f2f-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7eaeb-134">Příklad</span><span class="sxs-lookup"><span data-stu-id="7eaeb-134">Example</span></span>
 
-<span data-ttu-id="19f2f-135">`CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")` vrátí řetězec **"WINTER"** (zima), pokud je aktuální datum relace aplikace mezi říjnem a prosincem.</span><span class="sxs-lookup"><span data-stu-id="19f2f-135">`CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")` returns the string **"WINTER"** if the current application session date is between October and December.</span></span> <span data-ttu-id="19f2f-136">Jinak bude vrácen prázdný řetězec.</span><span class="sxs-lookup"><span data-stu-id="19f2f-136">Otherwise, it returns a blank string.</span></span>
+<span data-ttu-id="7eaeb-135">`CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")` vrátí řetězec **"WINTER"** (zima), pokud je aktuální datum relace aplikace mezi říjnem a prosincem.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-135">`CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")` returns the string **"WINTER"** if the current application session date is between October and December.</span></span> <span data-ttu-id="7eaeb-136">Jinak bude vrácen prázdný řetězec.</span><span class="sxs-lookup"><span data-stu-id="7eaeb-136">Otherwise, it returns a blank string.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="19f2f-137">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="19f2f-137">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7eaeb-137">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="7eaeb-137">Additional resources</span></span>
 
-[<span data-ttu-id="19f2f-138">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="19f2f-138">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="7eaeb-138">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="7eaeb-138">Logical functions</span></span>](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
