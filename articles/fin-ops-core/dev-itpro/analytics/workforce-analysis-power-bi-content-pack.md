@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
@@ -17,18 +16,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8ea0bcafa616e5b12ac0a997af87c7d57564362d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092784"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563731"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Obsah metriky zaměstnanců v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **metriky zaměstnanců** v Microsoft Power BI . Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje obsah **Metriky zaměstnanců** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Metriky zaměstnanců** v Power BI zobrazuje v pracovním prostoru **Správa pracovníků**, pokud používáte jeden z následujících produktů:
