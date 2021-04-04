@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 90a3d624dac6c78dfbf2479c5ac7eab76dd4b542
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f90e49c6191134a99b306fdc9de6b46c07844dea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115941"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463399"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definujte plány volna a absence v aplikaci Dynamics 365 Human Resources pro každý typ nabízeného volna. Plány volna a absence lze časově rozlišit v různých intervalech, například ročně, měsíčně nebo jednou za čtrnáct dní. Plán lze také definovat jako grant, kde dochází k jednomu časovému rozlišení v konkrétní datum. Můžete například vytvořit plán, který bude každoročně přidělovat pohyblivé svátky.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004620"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500495"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Stáří vyskladnění zásob směrnice skladového místa
 
@@ -119,7 +119,7 @@ Strategie FIFO najde místo, které obsahuje nejstarší datum stárnutí, a př
 1. Na stránce **Prodejní objednávka** v pododokně akcí na kartě **Sklad** ve skupině **Akce** vyberte **Uvolnit do skladu**. Zobrazí se informační zprávy. Systém vytvoří dodávku, přidá ji k novému nákladu a vytvoří požadovanou práci.
 1. Na pevné záložce **Řádky prodejní objednávky** v nabídce **Sklad** vyberte **Podrobnosti o práci**, chcete-li otevřít práci, která byla vytvořena pro tuto prodejní objednávku. Všimněte si, že řádek, kde je hodnota **Typ práce** *Výdej*, ukazuje hodnotu **Skadové místo** *FL-002*. Toto místo obsahuje registrační značku, která má nejstarší datum stárnutí (FIFO).
 1. Vyberte **Sklad \> Podrobnosti o zásilce**.
-1. Na pevné záložce **_Všeobecné_* si poznamenejte si ID vlny, abyste jej mohli použít ve scénáři 2.
+1. Na záložce **Obecné** si poznamenejte si ID vlny, abyste jej mohli použít ve scénáři 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scénář 2: Nastavení a použití stárnutí místa LIFO
 

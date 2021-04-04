@@ -15,12 +15,12 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbff8fbf463c1aaa3dd3ea7aade439a757a9611
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d1ce89eeadceeaa84a8373200cb2276092936cf7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978248"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256612"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Roční uzávěrka pro Českou republiku a Maďarsko
 [!include[banner](../includes/banner.md)]

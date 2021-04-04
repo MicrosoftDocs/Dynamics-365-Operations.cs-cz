@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97972d2179c42e9d2d672cbebb75643ef0a02a62
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 5bc9b5c97f855f1d8eb44765c98473b69f96adec
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111756"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466970"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Vytvoření aplikace pro export opakujících se dat
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu. Výukový kurz využívá pro export dat rozhraní API REST balíčku DMF aplikace Human Resources. Po exportu dat uloží logic app exportovaný balíček dat do složky Microsoft OneDrive pro firmy.
 

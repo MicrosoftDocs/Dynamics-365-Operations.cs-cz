@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012416"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478381"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurace rezervních zásob a úrovní zásob
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Centrála Dynamics 365 Commerce uchovává údaje o zásobách a různé kanály, jako jsou aplikace v místě prodeje (POS), poutače e-Commerce a další vlastní integrované aplikace, které řídí oběh zásob asynchronním způsobem. Dostupné hodnoty inventáře, které se získají prostřednictvím stránky inventáře v centrále Commerte, prostřednictvím uživatelského rozhraní POS (UI) a prostřednictvím rozhraní API pro dostupnost zásob elektronického obchodování, tedy nejsou vždy v reálném čase vždy stoprocentně přesné.
 
