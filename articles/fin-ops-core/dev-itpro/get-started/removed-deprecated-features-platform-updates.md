@@ -3,10 +3,9 @@ title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: f363b122e30990f5b36e69fd8fe271bdc15e2e79
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154080"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563987"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -32,7 +31,7 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funkce odstraněna s účinností od 28. ledna 2021
 
