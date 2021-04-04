@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72b600bc59119a6304fa043240a34051435f8691
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001395"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470946"
 ---
 # <a name="create-service-orders-manually"></a>Ruční vytvoření servisních objednávek    
 
@@ -36,17 +36,17 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Ruční vytvoření servisní zakázky ze servisní smlouvy
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Vyberte **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Vyberte servisní smlouvu nebo vytvořte novou servisní smlouvu.
 
-3.  Klikněte na kartu **Dodávka** a ve skupině **Vytvořit** klikněte na **Plánované servisní zakázky** k otevření formuláře **Vytvořit servisní zakázky**.
+3.  Vyberte kartu **Dodávka** a ve skupině **Vytvořit** výběrem možnosti **Plánované servisní zakázky** otevřete formulář **Vytvořit servisní zakázky**.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Ruční vytvoření servisní zakázky ve formuláři Servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Vyberte uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
-2.  Stisknutím kláves Ctrl+N vytvořte novou servisní zakázku.
+2.  Výběrem možnosti **Nový** vytvoříte novou servisní zakázku.
 
 3.  Vytvořte řádky servisní zakázky pro servisní smlouvu.
 
@@ -55,9 +55,9 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 ## <a name="create-a-service-order-from-a-project"></a>Vytvoření servisní zakázky z projektu
 
-1.  Klikněte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.
+1.  Přejděte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.
 
-2.  Ve formuláři **Projekty** v **podokně akcí** klikněte na kartu **Správa** \> klikněte na **Servis** \> **Servisní příkazy**.
+2.  Ve formuláři **Projekty** v **podokně akcí** vyberte kartu **Správa** \> a vyberte **Servis** \> **Servisní příkazy**.
 
 3.  Postupujte podle pokynů pro ruční vytvoření servisní zakázky ve formuláři **Servisní zakázky**. V poli **ID projektu** se zobrazuje reference na projekt.
 
@@ -68,19 +68,19 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 Servisní zakázku lze vytvořit z formuláře **Prodejní objednávky** pomocí průvodce **Vytvoření nové servisní zakázky na základě prodejní objednávky**.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**.
+1.  Přejděte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**.
 
 2.  Otevřete příslušnou prodejní objednávku.
 
-3.  Na kartě **Prodejní objednávka** spusťte kliknutím na **Servisní zakázka** průvodce **Vytvoření nové servisní zakázky na základě prodejní objednávky**.
+3.  Na kartě **Prodejní objednávka** spusťte výběrem možnosti **Servisní zakázka** průvodce **Vytvoření nové servisní zakázky na základě prodejní objednávky**.
 
-4.  Klepněte na tlačítko **Další \>** a poté proveďte následující kroky na stránce **Vybrat smlouvu pro servisní zakázku**:
+4.  Vyberte **Další \>** a poté proveďte následující kroky na stránce **Vybrat smlouvu pro servisní zakázku**:
     
       - V poli **Servisní smlouva** vyberte servisní smlouvu, ke které by nová servisní zakázka měla být přidružena.
     
       - (Volitelné): Použijte pole **ID projektu** pro přidružení servisní zakázky ke konkrétnímu projektu.
 
-5.  Klepněte na tlačítko **Další \>** a poté proveďte následující kroky na stránce **Vytvořit servisní zakázku**:
+5.  Vyberte **Další \>** a poté proveďte následující kroky na stránce **Vytvořit servisní zakázku**:
     
       - Do pole **Upřednostňovaný čas služby** zadejte datum a čas zahájení volání servisu.
     
@@ -90,12 +90,12 @@ Servisní zakázku lze vytvořit z formuláře **Prodejní objednávky** pomocí
     
       - V poli **ID kontaktu** vyberte osobu ze společnosti odběratele, která by měla být v souvislosti s touto servisní zakázkou kontaktována.
 
-6.  Klikněte na **Další \>** a potom na **Dokončit**.
+6.  Vyberte **Další \>** a potom vyberte **Dokončit**.
 
 
 ## <a name="see-also"></a>Viz také
 
-[Servisní zakázky](service-orders.md)
+[Počet servisních zakázek](service-orders.md)
 
 [Automatické vytvoření servisních zakázek](create-service-orders-automatically.md)
 

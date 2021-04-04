@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963303"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470512"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -239,7 +239,7 @@ Můžete určit více akcí směrnice skladového místa pro každý řádek. Po
     - **Zaokrouhlete nahoru na celou dávku LP a FEFO** - Tato strategie kombinuje prvky strategií *dávkové rezervace FEFO* a *Zaokrouhlete na celé LP*. Je platný pouze pro dávkové položky a směrnice skladového místa, které mají typ práce *Výběr*. Aby bylo možné použít řádek, musí být dávkově povolen na použití strategie *Dávková rezervace FEFO* a strategii *Zaokrouhlit na celé LP* lze použít pouze pro doplnění. Pokud je tato strategie nakonfigurována společně s limitem umístění skladu, může to způsobit přetížení vybraného umístění pracovního místa a ignorování limitů skladování.
     - **Zaokrouhlit nahoru na úplnou registrační značku** - Tato strategie slouží k zaokrouhlování skladového množství, aby odpovídalo množství registrační značky přiřazenému ke zboží k výdeji. Tuto strategii můžete použít pouze pro směrnice skladového místa doplnění typu *Výběr*. Pokud je tato strategie nakonfigurována společně s limitem umístění skladu, může to způsobit přetížení vybraného umístění pracovního místa a ignorování limitů skladování.
     - **Řízeno registrační značkou** – tuto strategii použijte, když provedete uvolnění objednávky do skladu pro vytvoření práce výdeje a vložení. Tento přístup lze provést pro více registračních značek. Tato strategie se pokusí rezervovat a vytvořit práci výdeje z míst, kde jsou požadované registrační značky, které byly přidruženy k řádkům převodního příkazu. Pokud však tyto akce nelze dokončit, ale přesto chcete vytvořit vychystávací práci, měli byste se vrátit k jiné strategii pro akce směrnice skladovacího místa. V závislosti na požadavcích vašeho obchodního procesu můžete také hledat zásoby v jiné oblasti skladu.
-    - **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tuto strategii můžete použít pouze pro směrnice skladového místa, které mají typ práce *Výběr*.
+    - **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tuto strategii můžete použít pouze pro směrnice skladového místa, které mají typ práce *Vložit*.
     - **FIFO zastarávání místa** – Pomocí strategie FIFO můžete dodávat jak dávkově sledované položky, tak položky bez dávkového sledování, na základě data, kdy byl inventář zadán do skladu. Tato schopnost může být užitečná zejména u zásob bez dávkového sledování, kde není k dispozici datum vypršení platnosti pro třídění. Strategie FIFO najde místo, které obsahuje nejstarší datum stárnutí, a přidělí výdej podle tohoto data stárnutí.
     - **LIFO zastarávání místa** – Pomocí strategie LIFO můžete dodávat jak dávkově sledované položky, tak položky bez dávkového sledování, na základě data, kdy byl inventář zadán do skladu. Tato schopnost může být užitečná zejména u zásob bez dávkového sledování, kde není k dispozici datum vypršení platnosti pro třídění. Strategie LIFO najde místo, které obsahuje nejnovější datum stárnutí, a přidělí výdej podle tohoto data stárnutí.
 

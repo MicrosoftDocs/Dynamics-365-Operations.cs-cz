@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: eb4632d7f7d73dbef690be16419e5f3aa25e880e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115119"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467812"
 ---
 # <a name="create-questionnaires"></a>Vytvoření dotazníků
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tento článek popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 

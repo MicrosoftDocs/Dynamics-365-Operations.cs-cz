@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078239"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501095"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Přepis výchozího principu rezervace pro materiály ve výrobě
 
@@ -38,11 +39,11 @@ Například pokud máte suroviny nebo přísady, které vyžadují výběr, kuso
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení výroby*
-- **Název funkce:** *Přepsat výchozí produkční rezervaci*
+- **Název funkce:** *(Preview) Přepsat výchozí produkční rezervaci*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Přiřazení zásady rezervace výroby ke skupině modelů zboží
 
-1. Jděte na **Cost Management &gt; Nastavení účetních zásad skladů &gt; Skupiny modelu položky**.
+1. Jděte na **Cost Management \> Nastavení účetních zásad skladů \> Skupiny modelu položky**.
 1. Vytvořte nebo vyberte skupinu modelů zboží.
 1. Na kartě s náhledem **Zásady zásob** zaškrtněte políčko **Přepsat rezervaci výroby zboží**.
 1. V poli **Rezervace** vyberte zásadu rezervace pro položky, které patří do vybrané skupiny modelů. (Mezi tyto položky patří položky, které jsou na kusovníku nebo vzorci.)

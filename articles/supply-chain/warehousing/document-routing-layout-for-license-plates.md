@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973753"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558255"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rozvržení směrování dokumentu pro popisky poznávací značky
 
 [!include [banner](../includes/banner.md)]
+
 
 Rozvržení směrování dokumentu definuje rozvržení popisků řidičských průkazů a dat, která jsou na nich vytištěna. Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.
 
@@ -51,6 +52,10 @@ V rámci procesu tisku štítků bude text `$LicensePlateId$` v tomto příkladu
 Chcete-li zobrazit hodnoty, které budou vytištěny, přejděte na **Řízení skladu \> Dotazy a sestavy \> Štítky registračních značek**.
 
 Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků. Mnohé z těchto nástrojů podporují `$FieldName$` formát. Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.
+
+## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
+
+Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Vylepšené rozvržení popisků poznávacích značek*.
 
 ## <a name="custom-number-formats"></a>Vlastní formáty čísel
 

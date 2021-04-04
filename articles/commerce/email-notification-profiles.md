@@ -1,9 +1,9 @@
 ---
 title: Nastavení profilu oznámení e-mailem
 description: Toto téma popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
-author: samjarawan
+author: bicyclingfool
 manager: annbe
-ms.date: 03/31/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -13,26 +13,23 @@ ms.reviewer: v-chgri
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d82a1abe68ff6e162acb75c6fdc1e207af11c279
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000817"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555300"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Nastavení profilu oznámení e-mailem
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Přehled
-
-Před vytvořením kanálů budete mít možnost nastavit profil, který zajistí, že e-mailová oznámení mohou být odeslána pro různé události, jako je například vytvoření objednávky, stav expedice objednávky a chyba platby.
+Při vytváření kanálů můžete nastavit e-mailový oznamovací profil. Tímto způsobem mohou být e-maily zasílány zákazníkům ohledně různých transakčních událostí, jako je vytvoření objednávky, stav odeslání objednávky a selhání platby.
 
 Další informace o konfiguraci e-mailu naleznete v tématu [Konfigurace a odesílání e-mailu](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -48,7 +45,7 @@ Chcete-li vytvořit profil oznámení e-mailem, postupujte následujícím způs
 
 ### <a name="create-an-email-template"></a>Vytvoření šablonu e-mailu
 
-Před vytvořením oznámení e-mailem je nutné vytvořit šablonu e-mailu organizace, která obsahuje e-mailové informace odesílatele a šablonu e-mailu.
+Než bude možné povolit typ e-mailového oznámení, musíte vytvořit šablonu e-mailu organizace v centrále Commerce. Tato šablona definuje předmět e-mailu, odesílatele, výchozí jazyk a tělo e-mailu pro každý jazyk, který chcete podporovat.
 
 Šablonu e-mailu vytvoříte takto:
 
@@ -58,7 +55,7 @@ Před vytvořením oznámení e-mailem je nutné vytvořit šablonu e-mailu orga
 1. Do pole **Jméno odesílatele** zadejte jméno odesílatele.
 1. Zadejte smysluplný popis do pole **Popis e-mailu**.
 1. Do pole **E-mail odesílatele** zadejte e-mailovou adresu odesílatele.
-1. V části **Obecné** vyplňte veškeré potřebné volitelné informace (jako je například priorita e-mailu).
+1. V části **Všeobecné** vyberte výchozí jazyk šablony e-mailu. Výchozí jazyk se použije, pokud pro zadaný jazyk neexistuje žádná lokalizovaná šablona.
 1. Rozbalte část **Obsah e-mailové zprávy**, zvolte **Nový** a vytvořte obsah šablony. Pro každou položku obsahu vyberte jazyk a zadejte předmět e-mailu. Pokud e-mail bude mít text, zkontrolujte zda je zaškrtnuto políčko **má tělo**.
 1. V podokně akcí vyberte **E-mailová zpráva** a zadejte šablonu e-mailového textu.
 

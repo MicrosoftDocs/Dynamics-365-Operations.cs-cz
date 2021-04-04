@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125418"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500615"
 ---
 # <a name="recruiting-request"></a>Požadavek na nábor
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Toto téma popisuje entitu Žádost o nábor pro Dynamics 365 Human Resources.
 
@@ -98,7 +100,8 @@ Popisuje požadavek na nábor pro práci.
 | **Hodnota ID typu práce**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Jen pro čtení<br>Volitelné<br>Cizí klíč: mshr_hcmjobtypeentityid entity mshr_hcmjobtypenentity | Systémem generovaný, jedinečný identifikátor typu práce přidruženého k práci pro žádost o nábor. |
 | **Stav osvobození od daně**<br>mshr_exemptstatus<br>Sada možností *JobExemptStatus* | Jen pro čtení<br>Volitelné | Stav osvobození FLSA na základě typu práce. |
 | **Odhadované počáteční datum**<br>mshr_estimatedstartdate<br>*Datum* | Čtení/zápis<br>Povinná | Odhadované datum, kdy kandidát začne pracovat. |
-| **Externí popis**<br>mshr_externaldescription<br>*Řetězec* | Čtení/zápis<br>Volitelné | Popis práce/pozice vystavený kandidátovi. | Dolní prahová hodnota kompenzace<br>mshr_compensationlowthreshold<br>*Dvojité* | Čtení/zápis<br>Volitelné | Dolní mez úrovně kompenzace. |
+| **Externí popis**<br>mshr_externaldescription<br>*Řetězec* | Čtení/zápis<br>Volitelné | Popis práce/pozice vystavený kandidátovi. | 
+| **Dolní prahová hodnota kompenzace**<br>mshr_compensationlowthreshold<br>*Dvojité* | Čtení/zápis<br>Volitelné | Dolní mez úrovně kompenzace. |
 | **Kontrolní bod kompenzace**<br>mshr_compensationcontrolpoint<br>*Dvojité* | Čtení/zápis<br>Volitelné | Kontrolní bod úrovně kompenzace. |
 | **Horní prahová hodnota kompenzace**<br>mshr_compensationhighthreshold<br>*Dvojité* | Čtení/zápis<br>Volitelné | Horní mez úrovně kompenzace. |
 | **Úroveň kompenzace**<br>mshr_compensationlevelid<br>*Řetězec* | Čtení/zápis<br>Volitelné | Úroveň kompenzace práce. Pro práci lze nastavit několik úrovní kompenzace. Tento atribut označuje vybranou úroveň kompenzace práce pro tento požadavek. |

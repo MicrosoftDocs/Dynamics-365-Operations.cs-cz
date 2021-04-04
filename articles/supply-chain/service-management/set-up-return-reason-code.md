@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991708"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470661"
 ---
 # <a name="set-up-return-reason-codes"></a>Nastavení kódů důvodu vrácení   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991708"
 
 ## <a name="set-up-return-reason-code-groups"></a>Nastavení skupin kódů důvodů vrácení 
 
-1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **skupiny kódů důvodů vrácení**.
+1.  Přejděte na **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **skupiny kódů důvodů vrácení**.
 
-2.  Stisknutím kombinace kláves CTRL + N vytvořte řádek pro novou skupinu kódů příčin vrácení.
+2.  Výběrem možnosti **Nový** vytvořte řádek pro novou skupinu kódů příčin vrácení.
 
 3.  V poli **skupiny kódů důvodu vrácení** zadejte identifikátor pro tuto skupinu.
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991708"
 
 Tento postup vám pomůže nastavit kódy důvodů vrácení, pomocí kterých můžete určit, proč byl produkt odběratelem vrácen.
 
-1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy důvodů vrácení**.
+1.  Přejděte na **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy důvodů vrácení**.
 
 2.  Vytvořte nový řádek s kódem důvodu vrácení stisknutím kombinace kláves CTRL + N.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983537"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501119"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
 
@@ -249,7 +249,7 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
 1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
-2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
+2. Zvolte **Nový** pro vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 
@@ -265,8 +265,8 @@ Redukční klíče prognózy musí být přiřazen ke skupině disponibility pol
 2. Na záložce s náhledem **Jiné** v poli **Redukční klíč** vyberte redukční klíč, který chcete přiřadit ke skupině disponibility. Redukční klíč se pak použije na všechny položky, které patří do skupiny disponibility.
 3. Chcete-li použít redukční klíč pro výpočet snížení prognózy během hlavního plánování, musíte toto nastavení definovat v nastavení plánu prognózy nebo hlavního plánu. Přejděte na jedno z následujících míst:
 
-    - Hlavní plánování \> Nastavení \> Plány \> Plány prognózy
-    - Hlavní plánování \> Nastavení \> Plány \> Hlavní plány
+    - **Hlavní plánování \> Nastavení \> Plány \> Plány prognózy**
+    - **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**
 
 4. Na stránce **Plány prognózy** nebo **Hlavní plány** na záložce s náhledem **Obecné** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberte buď **Procento – redukční klíč** nebo **Transakce – redukční klíč**.
 
@@ -274,5 +274,69 @@ Redukční klíče prognózy musí být přiřazen ke skupině disponibility pol
 
 Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamické období** jako metodu pro snížení požadavků prognózy, můžete určit, které transakce sníží prognózu. Na stránce **Skupiny krytí** na záložce s náhledem **Jiné** v poli **Snížit prognózu podle** vyberte **Všechny transakce**, pokud mají všechny transakce snížit prognózu, nebo **Objednávky** , pokud mají prognózu snížit pouze prodejní objednávky.
 
+## <a name="forecast-models-and-submodels"></a>Modely prognóz a dílčí modely
+
+Tato část popisuje, jak vytvořit modely prognóz a jak kombinovat více modelů prognóz nastavením dílčích modelů.
+
+*Model prognózy* jmenuje a identifikuje určitou prognózu. Poté, co vytvoříte model prognózy, můžete k němu přidat řádky prognózy. Chcete-li přidat řádky prognózy pro více položek, použijte stránku **Řádky prognózy poptávky**. Chcete-li přidat řádky prognózy pro konkrétní vybranou položku, použijte stránku **Vydané produkty**.
+
+Model prognózy může zahrnovat prognózy z jiných modelů prognóz. K dosažení tohoto výsledku přidáte další modely prognóz jako *dílčí modely* rodičovského modelu prognózy. Než budete moci přidat každý relevantní model jako dílčí model nadřízeného modelu prognózy, musíte jej vytvořit.
+
+Výsledná struktura vám poskytuje účinný způsob ovládání prognóz, protože umožňuje kombinovat (agregovat) vstup z více jednotlivých prognóz. Z hlediska plánování je proto snadné kombinovat prognózy pro simulace. Můžete například nastavit simulaci založenou na kombinaci běžné prognózy s prognózou jarní propagace.
+
+### <a name="submodel-levels"></a>Úrovně dílčích modelů
+
+Počet dílčích modelů, které lze přidat do nadřízeného modelu prognózy, není nijak omezen. Struktura však může mít hloubku pouze jedné úrovně. Jinými slovy, model prognózy, který je dílčím modelem jiného modelu prognózy, nemůže mít své vlastní dílčí modely. Když přidáte do modelu prognózy dílčí modely, systém zkontroluje, zda je tento model prognózy již dílčím modelem jiného modelu prognózy.
+
+Pokud hlavní plánování narazí na dílčí model, který má své vlastní dílčí modely, zobrazí se chybová zpráva.
+
+#### <a name="submodel-levels-example"></a>Příklad úrovní dílčích modelů
+
+Model prognózy A obsahuje model prognózy B jako dílčí model. Proto model prognózy B nemůže mít své vlastní dílčí modely. Pokud se pokusíte přidat dílčí model do modelu prognózy B, zobrazí se následující chybová zpráva: „Model prognózy B je dílčím modelem pro model A.“
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Agregace prognóz napříč modely prognóz
+
+Řádky prognózy, které se vyskytnou ve stejný den, budou agregovány napříč jejich modelem prognózy a jeho dílčími modely.
+
+#### <a name="aggregation-example"></a>Příklad agregace
+
+Model prognózy A obsahuje modely prognózy B a C jako dílčí modely.
+
+- Model prognózy A zahrnuje prognózu poptávky po 2 kusech (ks) na 15. června.
+- Model prognózy B zahrnuje prognózu poptávky po 3 kusech (ks) na 15. června.
+- Model prognózy C zahrnuje prognózu poptávky po 4 kusech (ks) na 15. června.
+
+Výsledná prognóza poptávky na 15. června bude jedinou poptávkou po 9 ks (2 + 3 + 4).
+
+> [!NOTE]
+> Každý dílčí model prognózy používá vlastní parametry, nikoliv parametry nadřízeného modelu prognózy.
+
+### <a name="create-a-forecast-model"></a>Vytvoření modelu prognózy
+
+Při vytváření modelu prognózy postupujte takto:
+
+1. Přejděte do uzlu **Hlavní plánování \> Nastavení \> Prognóza poptávky \> Modely prognózy**.
+1. V podokně akcí zvolte **Nový**.
+1. Nastavte následující pole pro nový model prognózy:
+
+    - **Model** – Zadejte jedinečný identifikátor modelu.
+    - **Název** – Zadejte popisný název modelu.
+    - **Zastaven** – Obvykle byste měli nastavit tuto možnost na *Ne*. Nastavte ji na *Ano* pouze v případě, kdy chcete zabránit úpravám všech řádků prognózy, které jsou přiřazeny k modelu.
+
+    > [!NOTE]
+    > Pole **Zahrnout do prognóz peněžních toků** a pole na záložce **Projekt** nesouvisejí s hlavním plánováním. Proto je můžete v tomto kontextu ignorovat. Musíte je brát do úvahy, pouze když pracujete s prognózou pro modul **Řízení projektů a účetnictví**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Přiřazení dílčích modelů k modelu prognózy
+
+Pokud chcete k modelu prognózy přiřadit dílčí modely, postupujte takto.
+
+1. Přejděte do uzlu **Řízení zásob \> Nastavení \> Prognóza \> Modely prognózy**.
+1. V podokně seznamu vyberte model prognózy, pro který chcete konfigurovat dílčí model.
+1. Na záložce **Dílčí model** přidejte řádek do mřížky výběrem možnosti **Přidat**.
+1. Na novém řádku nastavte následující pole:
+
+    - **Dílčí model** – Vyberte model prognózy, který chcete přidat jako dílčí model. Tento model prognózy již musí existovat a nesmí mít žádné vlastní dílčí modely.
+    - **Název** – Zadejte popisný název dílčího modelu. Například tento název může označovat vztah dílčího modelu k nadřízenému modelu prognózy.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
