@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e3412f446fe9fb8e3c2ca5407b22680dec3c3b82
+ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111845"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579324"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedená témata podávají podrobné informace o změnách provedených v jednotlivých vydáních.
 
@@ -49,9 +51,11 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících článcích:
 
+[8. března 2021](hr-whats-new-2021-03-08.md)</br>
+[22. února 2021](hr-whats-new-2021-02-22.md)</br>
 [28. ledna 2021](hr-whats-new-2021-01-28.md)</br>
 [21. ledna 2021](hr-whats-new-2021-01-21.md)</br>
-[02. prosince 2020](hr-whats-new-2020-12-02.md)</br>
+[2. prosince 2020](hr-whats-new-2020-12-02.md)</br>
 [22. října 2020](hr-whats-new-2020-10-22.md)</br>
 [16. září 2020](hr-whats-new-2020-09-16.md)</br>
 [3. září 2020](hr-whats-new-2020-09-03.md)</br>

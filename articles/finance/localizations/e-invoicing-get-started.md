@@ -3,7 +3,7 @@ title: Začněte s doplňkem elektronické fakturace
 description: Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07954c5c96f390bc651794f8b6c61f2a1a17ab8b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111213"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592543"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Začněte s doplňkem elektronické fakturace
 
@@ -38,7 +38,6 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace a obchodní
 | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> |
 | Brazilský NF-e (BR)                  | <p>Model 55 fiskálního dokumentu</p><p>Dopis o opravě</p> |
 | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby |
-| Brazilský NFS-e São Paulo (BR)       | Fiskální dokument služby |
 | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> |
 | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> |
 | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> |
@@ -64,14 +63,14 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importujte funkci elektronické fakturace od poskytovatele konfigurace společnosti Microsoft 
 
 1. Přihlaste se ke svému účtu Regulatory Configuration Service (RCS).
-2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **elektronická fakturace**.
+2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **Doplněk elektronické fakturace**.
 3. Vyberte **Import** a potom vyberte **Synchronizovat**.
 4. Filtrujte sloupec **Poskytovatel konfigurace** sloupec podle výrazu **Microsoft**.
 5. Vyberte název funkce elektronické fakturace z tabulky na začátku tohoto tématu a poté vyberte **Import**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Vytvoření funkce elektronické fakturace u poskytovatele organizace
 
-1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **elektronická fakturace**.
+1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Doplněk elektronické fakturace**.
 2. Vyberte **Přidat** > **Na základě stávající funkce** a do pole **Název** zadejte název funkce elektronické fakturace.
 3. Do pole **Popis** zadejte popis funkce.
 4. V **poli základní funkce** vyberte importovanou funkci elektronické fakturace od poskytovatele konfigurace společnosti Microsoft.
@@ -79,7 +78,9 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 ## <a name="configure-the-electronic-invoicing-feature"></a>Konfigurace funkce elektronické fakturace
 
-V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat další konfiguraci. Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
+V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat další konfiguraci. 
+
+Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
 ## <a name="configure-the-application-setup"></a>Konfigurace nastavení aplikace
 
@@ -100,7 +101,6 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
     | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | Daňový doklad |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby | Daňový doklad |
-    | Brazilský NFS-e São Paulo (BR)       | Fiskální dokument služby | Daňový doklad |
     | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
@@ -122,7 +122,6 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
     | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | <p>Kontextový model faktury zákazníka – kontext fiskálního dokumentu</p><p>Kontextový model faktury zákazníka – kontext dopisu opravy FD</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby| Kontextový model faktury zákazníka – kontext fiskálního dokumentu |
-    | Brazilský NFS-e São Paulo (BR)       | Fiskální dokument služby| Kontextový model faktury zákazníka – kontext fiskálního dokumentu |
     | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
@@ -144,7 +143,6 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
     | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | <p>Mapování fiskálních dokumentů – Mapování fiskálních dokumentů</p><p>Mapování fiskálních dokumentů – mapování opravných dopisů</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby | Mapování fiskálních dokumentů – Mapování fiskálních dokumentů |
-    | Brazilský NFS-e São Paulo (BR)       | Fiskální dokument služby | Mapování fiskálních dokumentů – Mapování fiskálních dokumentů |
     | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
@@ -158,7 +156,9 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
 
-V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat další konfiguraci. Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
+V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat další konfiguraci.
+
+Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
 ## <a name="deploy-the-electronic-invoicing-feature"></a>Nasazení funkce elektronické fakturace
 
@@ -177,27 +177,26 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
 
 1. Přihlaste se k Finance nebo Supply Chain Management a ověřte si, že jste ve správné právnické osobě.
 2. Přejděte na **Správa organizace** \> **Nastavení** \> **Parametry elektronického dokumentu**.
-3. Na kartě **Funkce** vyberte záložku funkce nebo odkazy uvedené v následující tabulce, chcete-li zapnout funkci elektronické fakturace pro Finance nebo Supply Chain Management.
+3. Na kartě **Funkce** vyberte funkci specifickou pro danou zemi/oblast a zapněte funkci elektronické fakturace pro Finance nebo Supply Chain Management. V následující tabulce je uveden seznam funkcí elektronické fakturace, které jsou k dispozici pro konkrétní zemi/oblasti. 
 
-    | Název funkce                         | Země nebo oblast  | Odkaz na funkci |
-    |--------------------------------------|-----------------|-------------------|
-    | Rakouské elektronické faktury (AT)    | Rakousko         | EUR-00023 |
-    | Belgická elektronická faktura (BE)      | Belgie         | EUR-00023 |
-    | Brazilský NF-e (BR)                  | Brazílie          | BR-00053 |
-    | Brazilian NFS-e ABRASF Curitiba (BR) | Brazílie          | BR-00095 |
-    | Brazilský NFS-e São Paulo (BR)       | Brazílie          | BR-00095 |
-    | Dánská elektronická faktura (DK)       | Dánsko         | <p>EUR-00023</p><p>DK-00001</p> |
-    | Nizozemská elektronická faktura (NL)        | Nizozemsko | EUR-00023 |
-    | Egyptská elektronická faktura (EG)     | Egypt           | EG-00008 |
-    | Estonská elektronická faktura (EE)     | Estonsko         | EUR-00023 |
-    | Finská elektronická faktura (FI)      | Finsko         | EUR-00023 |
-     Francouzská elektronická faktura (FR)       | Francie           | EUR-00023 |
-    | Německá elektronická faktura (DE)       | Německo         | EUR-00023 |
-    | Mexická CFDI Interfactura (MX)       | Mexiko          | <p>MX-00010</p><p>MX-00016</p> |
-    | Norská elektronická faktura (NO)    | Norsko          | <p>EUR-00023</p><p>NO-00010</p> |
-    | Španělská elektronická faktura (ES)      | Španělsko           | <p>EUR-00023</p><p>ES-00025</p> |
-    | Italská elektronická faktura (IT)      | Itálie           | <p>EUR-00023</p><p>IT-00036</p> |
-    | Elektronická faktura PEPPOL            | Evropa          | EUR-00023 |
+    | Název funkce                                          | Země nebo oblast  |
+    |-------------------------------------------------------|-----------------|
+    | Rakouské elektronické faktury (AT)                     | Rakousko         |
+    | Belgická elektronická faktura (BE)                       | Belgie         |
+    | Mexická elektronická faktura CFDI (MX)                  | Mexiko          |
+    | Dánská elektronická faktura (DK)                        | Dánsko         |
+    | Nizozemská elektronická faktura (NL)                         | Nizozemsko |
+    | Egyptská elektronická faktura (EG)                      | Egypt           |
+    | Estonská elektronická faktura (EE)                      | Estonsko         |
+    | Finská elektronická faktura (FI)                       | Finsko         |
+    | Francouzská elektronická faktura (FR)                        | Francie          |
+    | Německá elektronická faktura (DE)                        | Německo         |
+    | Italská elektronická faktura (IT)                       | Itálie           |
+    | Brazilská elektronická faktura NF-e Federal (BR)      | Brazílie          |
+    | NFS-e – elektronické faktura za služby (městské) pro Brazílii   | Brazílie          |
+    | Norská elektronická faktura (NO)                     | Norsko          |
+    | Elektronická faktura PEPPOL                             | Globální          |
+    | Španělská elektronická faktura (ES)                       | Španělsko           |
 
 4. Zvolte **Uložit**.
 
@@ -226,11 +225,11 @@ V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžado
 
 3. Vyberte fakturu v mřížce a poté vyberte **Dotaz** \> **Podrobnosti o podání**.
 
-V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat další konfiguraci. Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
 ## <a name="related-topics"></a>Související témata
 
 - [Přehled doplňku elektronické fakturace](e-invoicing-service-overview.md)
+- [Začněte se správou služby doplňku elektronické fakturace](e-invoicing-get-started-service-administration.md)
 - [Začněte s doplňkem elektronické fakturace pro Brazílii](e-invoicing-bra-get-started.md)
 - [Začněte s doplňkem elektronické fakturace pro Mexiko](e-invoicing-mex-get-started.md)
 - [Začněte s doplňkem elektronické fakturace pro Itálii](e-invoicing-ita-get-started.md)

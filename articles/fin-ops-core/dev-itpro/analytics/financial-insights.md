@@ -1,12 +1,11 @@
 ---
-title: Finanční přehledy
-description: Finanční přehledy používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
+title: Finanční analýza
+description: Finanční analýza používá Microsoft Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,20 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115721"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572359"
 ---
-# <a name="financial-insights"></a>Finanční přehledy
+# <a name="financial-analysis"></a>Finanční analýza
 
 [!include [banner](../includes/banner.md)]
 
-**Finanční přehledy** používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je vloženo do aplikace Záměrem **finančních přehledů** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 
+**Finanční analýza** používá Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je vloženo do aplikace Záměrem **finanční analýzy** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 
 
-**Finanční přehledy** kombinují data z hlavní knihy a dílčích hlavních knih, aby poskytly ucelenější obrázek o finančním stavu organizace.
+**Finanční analýza** kombinuje data z hlavní knihy a dílčích hlavních knih, aby poskytla ucelenější obrázek o finančním stavu organizace.
 
 > [!NOTE]
 > Tento dokument používá následující terminologii Power BI:
@@ -38,14 +37,14 @@ ms.locfileid: "5115721"
 > - **Stránka** – Karta v jednom .pbix souboru. Každá stránka může obsahovat jeden nebo více vizuálních prvků.
 > - **Vizuální prvek** – Jeden zdroj dat, například karta, indikátor KPI, diagram, graf, matice nebo finanční výkaz. Stránka s finančním výkazem jako vizuálním prvkem může neobsahovat jiné vizuální prvky z důvodu velikosti dat, která se vykazují.
 
-V současné době se **Finanční přehledy** používají k zobrazení dat pro aktivní právnickou osobu nebo všechny právnické osoby. V příštích verzích se pracovní prostor vyvine do místa, kde můžete používat Power BI k úpravám a vytváření vizuálních prvků.
+V současné době se **Finanční analýza** používá k zobrazení dat pro aktivní právnickou osobu nebo všechny právnické osoby. V příštích verzích se pracovní prostor vyvine do místa, kde můžete používat Power BI k úpravám a vytváření vizuálních prvků.
 
-Pracovní prostor **Přehled CFO** zobrazuje stejné vizuální prvky jako **Finanční přehledy**, ale zaměřuje na se poskytnutí zobrazení a filtrování dat stávajících sestav. V dalších verzích bude moct přidávat nové vizuální prvky do pracovního prostoru **Finanční přehledy**. Nové vizuální prvky mohou být také k dispozici v pracovních prostorech, které se zaměřují na jiné role, jako jsou projektoví manažeři nebo manažeři závazků. Pracovní prostor **Přehled CFO** nadále zobrazuje data pro všechny právnické osoby, bez ohledu na právnické osoby, ke kterým má role přístup.
+Pracovní prostor **Přehled CFO** zobrazuje stejné vizuální prvky jako **Finanční analýza**, ale zaměřuje na se poskytnutí zobrazení a filtrování dat stávajících sestav. V dalších verzích bude moct přidávat nové vizuální prvky do pracovního prostoru **Finanční analýza**. Nové vizuální prvky mohou být také k dispozici v pracovních prostorech, které se zaměřují na jiné role, jako jsou projektoví manažeři nebo manažeři závazků. Pracovní prostor **Přehled CFO** nadále zobrazuje data pro všechny právnické osoby, bez ohledu na právnické osoby, ke kterým má role přístup.
 
 ## <a name="dynamics-365-finance-setup"></a>Nastavení Dynamics 365 Finance
 **Hlavní kniha**
 
-Typ hlavního účtu a kategorie hlavního účtu slouží k zadání do příslušných hlavních účtů na finančním výkazu **Rozvaha** a na různých finančních výkazech **Výsledovka** ve **finančních přehledech**.
+Typ hlavního účtu a kategorie hlavního účtu slouží k zadání do příslušných hlavních účtů na finančním výkazu **Rozvaha** a na různých finančních výkazech **Výsledovka** ve **finanční analýze**.
 
 Na stránce **Hlavní účty** je nutné definovat váš hlavní účet, aby k němu byl přiřazen jeden z následujících typů:
 
@@ -57,14 +56,14 @@ Na stránce **Hlavní účty** je nutné definovat váš hlavní účet, aby k n
 
 Nepřiřazujte jiný typ hlavního účtu, jako je například **Rozvaha** nebo **Zisk a ztráta** ke svým hlavním účtům. Sestavy nemohou určit typ hlavního účtu, pokud byly přiřazeny jiné typy hlavního účtu, protože nejsou dostatečně podrobné. Typ hlavního účtu musí být určen k zobrazení závazků a výnosů jako kladných částek ve finančních sestavách.
 
-Aby se zobrazil na finančních výkazech a byl zahrnut v různých dalších vizuálních prvcích, jako jsou například indikátory KPI, musí být ke každému hlavnímu účtu přiřazena kategorie hlavního účtu. Kategorie hlavního účtu byly rozšířeny, aby zahrnovaly pořadí zobrazení. Pořadí zobrazení se používá specificky na finančních výkazech ve **finančních přehledech**. Po upravení nebo přidání nové kategorie hlavního účtu lze změnit hodnotu **Pořadí zobrazení** pro definování pořadí, ve kterém mají být zobrazeny kategorie hlavního účtu na finančním výkazu. Pokud musíte změnit pořadí zobrazení pro mnoho kategorií hlavního účtu, můžete použít funkci Otevřít v aplikaci Excel pro rychlou úpravu a publikování změn zpět do aplikace.
+Aby se zobrazil na finančních výkazech a byl zahrnut v různých dalších vizuálních prvcích, jako jsou například indikátory KPI, musí být ke každému hlavnímu účtu přiřazena kategorie hlavního účtu. Kategorie hlavního účtu byly rozšířeny, aby zahrnovaly pořadí zobrazení. Pořadí zobrazení se používá specificky na finančních výkazech ve **finanční analýze**. Po upravení nebo přidání nové kategorie hlavního účtu lze změnit hodnotu **Pořadí zobrazení** pro definování pořadí, ve kterém mají být zobrazeny kategorie hlavního účtu na finančním výkazu. Pokud musíte změnit pořadí zobrazení pro mnoho kategorií hlavního účtu, můžete použít funkci Otevřít v aplikaci Excel pro rychlou úpravu a publikování změn zpět do aplikace.
 
 ## <a name="entity-store"></a>Úložiště entit
-Data pro **finanční přehledy** pocházejí z úložiště entit (**Správa systému** \> **Nastavení** \> **Úložiště entit**). Otevřete-li pracovní prostory **Přehled CFO** nebo **Finanční přehledy** a zobrazí se následující upozornění ve vizuálních prvcích, je nutné aktualizovat entity.
+Data pro **finanční analýzu** pocházejí z úložiště entit (**Správa systému** \> **Nastavení** \> **Úložiště entit**). Otevřete-li pracovní prostory **Přehled CFO** nebo **Finanční analýza** a zobrazí se následující upozornění ve vizuálních prvcích, je nutné aktualizovat entity.
 
 ![Upozornění](./media/Cantdisplay.png)
 
-Je nutné aktualizovat následující entity pro zobrazení dat v pracovních prostorech **Finanční přehledy** a **Přehled CFO**:
+Je nutné aktualizovat následující entity pro zobrazení dat v pracovním prostoru **Finanční analýza**:
 
 - BudgetActivityMeasure
 - Data transakce finančního výkaznictví -verze 3 
@@ -74,8 +73,6 @@ Je nutné aktualizovat následující entity pro zobrazení dat v pracovních pr
 - Krychle Nákup
 - Krychle Prodej
 
-V předchozí verzi byly použity entity LedgerActivityMeasure a VendPaymentBIMeasure pro data v pracovním prostoru **Přehled CFO**. Ty se však již nepoužívají v aktuální verzi.
-
 Můžete definovat opakování dávek pro pravidelnou aktualizaci dat v entitách. Vzhledem k tomu, že každá entita je během aktualizace zcela přetvořena, vyberte čas a četnost aktualizace entity opatrně. FinancialReportingTransactionData je primární entita, používaná pro finanční výkazy. Proto se můžete rozhodnout pro aktualizaci této entity častěji.
 
 ## <a name="security"></a>Zabezpečení
@@ -83,18 +80,17 @@ V současné době data v integrovaných sestavách Power BI nelze omezit na pr�
 
 | Funkční oprávnění                                    | Role | popis |
 |-----------------------------------------|-------|------------|
-| Zobrazit pracovní prostor přehledu CFO             | Vedoucí finančního oddělení | Toto funkční oprávnění poskytuje přístup k pracovnímu prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
-| Zobrazit finanční přehledy aktuální společnosti | <ul><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Auditor</li><li>Správce rozpočtu</li><li>Výkonný ředitel</li><li>Vedoucí finančního oddělení</li><li>Finanční kontrolor</li></ul> | Toto funkční oprávnění poskytuje přístup k finančním přehledům. Standardně slouží aktivní společnost jako filtr. Nelze přidat další právnické osoby. |
-| Zobrazit finanční přehledy mezi společnostmi   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
+| Zobrazit finanční analýzu aktuální společnosti | <ul><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Auditor</li><li>Správce rozpočtu</li><li>Výkonný ředitel</li><li>Vedoucí finančního oddělení</li><li>Finanční kontrolor</li></ul> | Toto funkční oprávnění poskytuje přístup k finanční analýze. Standardně slouží aktivní společnost jako filtr. Nelze přidat další právnické osoby. |
+| Zobrazit finanční analýzu celé společnosti   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 
 
-## <a name="financial-reporting-vs-financial-insights"></a>Finanční výkaznictví versus Finanční přehledy
-Ačkoli **Finanční přehledy** obsahují finanční výkazy, není to náhrada za finanční výkaznictví v aplikaci. Výchozí finanční výkazy ve **finančních přehledech** jsou omezeny rozsahem a nezahrnují všechny typy finančních výkazů. Finanční výkaznictví je stále primárním nástroj pro návrh, vytváření a generování zákonem požadovaných finančních výkazů.
+## <a name="financial-reporting-vs-financial-analysis"></a>Finanční výkaznictví versus Finanční analýza
+Ačkoli **Finanční analýza** obsahuje finanční výkazy, není to náhrada za finanční výkaznictví v aplikaci. Výchozí finanční výkazy ve **finanční analýze** jsou omezeny rozsahem a nezahrnují všechny typy finančních výkazů. Finanční výkaznictví je stále primárním nástroj pro návrh, vytváření a generování zákonem požadovaných finančních výkazů.
 
 Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
 
 
-|                                                          | Finanční výkaznictví                                               | Finanční přehledy |
+|                                                          | Financial Reporting                                               | Finanční analýza |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Upravit výchozí sestavy**                                 | Ano                                                               | Žádný |
 | **Vytvořit nové sestavy**                                   | Ano                                                               | Žádný |
@@ -108,7 +104,7 @@ Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
 | **vykázat externí data**                              | Žádný                                                                | Žádný |
 | **Podpora konsolidací**                               | Ano                                                               | Omezené Lze vykázat více společností, ale používat pouze zúčtovací měnu |
 
-Kromě uživatelského rozhraní v původní pracovním prostoru **Přehled CFO** jsou nyní k dispozici nové indikátory KPI, grafy a finanční výkazy. K dispozici jsou následující finanční výkazy:
+K dispozici jsou následující finanční výkazy:
 
 - Předvaha
 - Rozvaha
@@ -121,7 +117,7 @@ Kromě uživatelského rozhraní v původní pracovním prostoru **Přehled CFO*
 - Prodej odběrateli
 
 ## <a name="edit-visuals"></a>Úprava vizuálních prvků
-V původním vydání **finančních přehledů** nelze upravit žádný vizuální prvek. V dalších verzích uživatelé s příslušným zabezpečením budou moci vytvářet nové vizuální prvky, kopírovat stávající a upravovat je. Ačkoliv jsou soubory .pbix obsahující sestavy k dispozici jako zdroje, nedoporučujeme úpravu výchozích sestav. Další změny budou provedeny v datovém modelu, výchozích sestavách a vlastních vizuálních prvcích finančních výkazu, které se používají k tvorbě finančních výkazů. Proto abyste mohli využít nové funkce a změny datového modelu v další verzi, je třeba znovu provést změny provedené ve výchozích sestavách prostřednictvím Microsoft Power BI Desktop.
+Předchozích vydáních **finanční analýzy** nešlo upravit žádný vizuální prvek. V dalších verzích uživatelé s příslušným zabezpečením budou moci vytvářet nové vizuální prvky, kopírovat stávající a upravovat je. Ačkoliv jsou soubory .pbix obsahující sestavy k dispozici jako zdroje, nedoporučujeme úpravu výchozích sestav. Další změny budou provedeny v datovém modelu, výchozích sestavách a vlastních vizuálních prvcích finančních výkazu, které se používají k tvorbě finančních výkazů. Proto abyste mohli využít nové funkce a změny datového modelu v další verzi, je třeba znovu provést změny provedené ve výchozích sestavách prostřednictvím Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrování
 Uživatelé mohou filtrovat sestavu pomocí podokna **Filtr** na levé straně. Toto podokno je stejné, jako podokno dostupné prostřednictvím Power BI Desktop. Existují různé úrovně filtrování, z nichž některé nemusí být k dispozici v závislosti na výběru na stránce (kartě) nebo použíití podrobných možností:
@@ -168,7 +164,7 @@ Následující dimenze se používají ve výchozích sestavách. Žádná z tě
 - Město
 
 > [!IMPORTANT] 
-> Pokud shrnete transakce pro více dodavatelů nebo odběratelů do jednoho dokladu pomocí finančních deníků, data budou nesprávná. Výkaznictví nemůže určit, který odběratel nebo dodavatel se vztahuje ke konkrétnímu účtu hlavní knihy v položce deníku, protože informace nejsou uchovávány všude. Z tohoto důvodu nedoporučujeme zadávat více dodavatelů, odběratelů, dlouhodobého majetku nebo projektů do jediného dokladu.
+> Pokud shrnete transakce pro více dodavatelů nebo odběratelů do jednoho dokladu pomocí finančních deníků, data budou nesprávná. Proces výkaznictví nemůže určit, který odběratel nebo dodavatel se vztahuje ke konkrétnímu účtu hlavní knihy v položce deníku, protože informace nejsou uchovávány všude. Z tohoto důvodu nedoporučujeme zadávat více dodavatelů, odběratelů, dlouhodobého majetku nebo projektů do jediného dokladu.
 
 ## <a name="drill-on-data"></a>Procházení k podrobnostem dat
 
@@ -243,7 +239,7 @@ Power BI nenabízí možnost skrytí a zobrazení prázdných řádků. Pokud ř
 
 ## <a name="additional-resources-for-power-bi"></a>Další zdroje pro Power BI
 
-Informace v následujících zdrojích není vyžadována, aby bylo možné povolit integrované sestavy pro pracovní prostory **Přehled CFO** nebo **Finanční přehledy** v produkčním prostředí. Namísto toho jsou užitečné pro vývojářská pole a pokud chcete integrovat sestavy Power BI.
+Informace v následujících zdrojích není vyžadována, aby bylo možné povolit integrované sestavy pro pracovní prostor **Finanční analýza** v produkčním prostředí. Namísto toho jsou užitečné pro vývojářská pole a pokud chcete integrovat sestavy Power BI.
 
 - [Přístup k analytickým pracovním prostorům a sestavám v prostředí s topologií 1-box](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 

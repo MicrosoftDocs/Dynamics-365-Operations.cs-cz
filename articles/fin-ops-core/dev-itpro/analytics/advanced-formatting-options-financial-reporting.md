@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 08659bac84b07f6e95a83b84612cb035b51cf28d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093155"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568459"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Rozšířené možnosti formátování ve finančním výkaznictví
 
@@ -283,10 +282,10 @@ Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, ab
 > [!NOTE]
 > Abyste mohli tuto funkci použít, je nutné přiřadit k definici řádku strom výkaznictví.
 
-Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky **Související vzorce/řádky/jednotky** v definici řádku a do omezení typu finančních dat. Výpočet musí použít podmíněný výpočet, který začíná konstrukcí **IF @Unit**. Příklad: IF @Unit(SALES) THEN @100 ELSE 0 Tento výpočet obsahuje částku z řádku 100 každého sloupce sestavy, ale pouze pro jednotku SALES. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace **OR** ve výrazu **IF**. Příklad: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Jednotku lze určit v omezení typu výpočtu jedním z následujících způsobů:
+Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky **Související vzorce/řádky/jednotky** v definici řádku a do omezení typu finančních dat. Výpočet musí použít podmíněný výpočet, který začíná konstrukcí **IF \@Unit**. Příklad: IF @Unit(SALES) THEN @100 ELSE 0 Tento výpočet obsahuje částku z řádku 100 každého sloupce sestavy, ale pouze pro jednotku SALES. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace **OR** ve výrazu **IF**. Zde je příklad: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Jednotku pro omezení podle typu výpočtu můžete zadat jedním z následujících způsobů:
 
-- Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF @Unit(SALES)** umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
-- Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu **IF @Unit(ACME:SALES**) k omezení výpočtu na jednotky SALES ve společnosti ACME.
+- Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF \@Unit(SALES)** umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
+- Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu **IF @Unit (ACME:SALES)** k omezení výpočtu na jednotky SALES ve společnosti ACME.
 - Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Zadejte například výraz **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -296,7 +295,7 @@ Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, ab
 
 1. V Návrháři sestav klikněte na položku **Definice řádků** a otevřete definici řádků, kterou chcete změnit.
 2. Dvakrát klikněte na buňku **Kód formátu** a vyberte kód **CAL**.
-3. Klikněte na buňku **Související vzorce/řádky/jednotky** a poté zadejte podmíněné výpočty, které začínají konstrukcí **IF @Unit**.
+3. Klikněte na buňku **Související vzorce/řádky/jednotky** a poté zadejte podmíněné výpočty, které začínají konstrukcí **IF \@Unit**.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Výrazy IF/THEN/ELSE v definici sloupce
 
@@ -310,6 +309,5 @@ Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledc�
 Sestavy lze navrhovat pomocí hodnot dimenzí, které obsahují znak ampersand (&).
 
 V rámci jakéhokoliv pole **Odkaz na finanční dimenze** můžete zadat hodnotu, například **P&L**. Zahrnutí jednoduchých uvozovek (' ') na obou stranách hodnoty dimenze označuje, že používáte hodnotu literálu, například zahrnutí znaku ampersandu (&).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

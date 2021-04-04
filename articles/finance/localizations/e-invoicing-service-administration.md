@@ -3,7 +3,7 @@ title: Komponenty pro správu doplňku elektronického fakturování
 description: Toto téma poskytuje informace o komponentách, které souvisejí se správou doplňku elektronické fakturace.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104355"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592567"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Komponenty pro správu doplňku elektronického fakturování
 
@@ -39,11 +39,15 @@ Použijte Microsoft Azure k vytvoření tajných klíčů pro trezor klíčů a 
 
 Pomocí Microsoft Dynamics Lifecycle Services (LCS) povolte doplněk pro mikroslužby pro váš projekt nasazení LCS.
 
-V LCS vyberte dlaždici **Správa funkcí Preview** a poté zapněte funkci **Služba elektronické fakturace**.
+> [!NOTE]
+> Instalace doplňku mikroslužeb v LCS vyžaduje alespoň virtuální počítač úrovně 2. Další informace o plánování prostředí naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) je rozhraní, které se používá ke konfiguraci doplňku elektronické fakturace. Prostředky typu prostředí nebo funkce elektronické fakturace jsou vytvářeny, udržovány a hostovány v RCS. Když jsou prostředky připraveny, jsou publikovány ve službě doplňku elektronické fakturace.
+
+Registrace RCS viz [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 Pro více informací o RCS viz [Regulatory Configuration Services (RCS) – funkce globalizace](rcs-globalization-feature.md)
 
@@ -53,22 +57,14 @@ Než budete pomocí RCS moci konfigurovat elektronické faktury, musíte nakonfi
 
 #### <a name="service-endpoint"></a>Koncový bod služby
 
-Adresa URL koncového bodu doplňku elektronické fakturace se může lišit podle geografie datového centra Azure. Následující tabulka uvádí dostupnost podle oblastí:
+Doplněk elektronické fakturace je k dispozici v několika geografických oblastech datového centra Azure. Následující tabulka uvádí dostupnost podle oblastí.
 
-| Geografie datového centra Azure | URL adresa koncového bodu služby                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| Východní USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| USA – západ                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Sever EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Západ EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>ID přihlášky
-
-ID aplikace je ID aplikace doplňku elektronické fakturace. V tomto případě je hodnota pevná: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>ID prostředí LCS
-
-ID prostředí LCS je ID předplatného LCS vaší organizace.
+| Geografie datového centra Azure |
+|----------------------------|
+| Východní USA                    |
+| USA – západ                    |
+| Sever EU                   |
+| Západ EU                    |
 
 ### <a name="service-environments"></a>Prostředí služby
 

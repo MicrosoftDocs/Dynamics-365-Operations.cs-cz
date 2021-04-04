@@ -3,10 +3,9 @@ title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094022"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574166"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -54,7 +53,7 @@ Musíte přidat komponentu **Excel\\Soubor** do nakonfigurovaného formátu elek
 Chcete-li určit rozvržení odchozího dokumentu, připojte sešit aplikace Excel, který má příponu .xlsx k součásti **Excel\\Soubor**, jako šablonu pro odchozí dokumenty.
 
 > [!NOTE]
-> Když ručně připojíte šablonu, musíte použít [typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), který byl za tímto účelem nakonfigurován v [parametrech elektronického výkaznictví](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> Když ručně připojíte šablonu, musíte použít [typ dokumentu](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), který byl za tímto účelem nakonfigurován v [parametrech elektronického výkaznictví](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Přidání přílohy ke komponentě Excel\Soubor](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Chcete-li se dozvědět více o tom, jak vkládat obrázky a tvary, nahlédněte
 
 Součást **Konec stránky** vynutí, aby Excel začal na nové stránce. Tato součást není vyžadována, pokud chcete použít výchozí stránkování aplikace Excel, ale měli byste ji použít, pokud chcete, aby aplikace Excel postupovala podle formátu elektronického výkaznictví pro vytvoření stránkování.
 
+## <a name="footer-component"></a>Komponenta zápatí
+
+Komponenta **Zápatí** se používá k vyplnění zápatí v dolní části vygenerovaného listu v sešitu aplikace Excel.
+
+> [!NOTE]
+> Tuto komponentu můžete přidat pro všechny komponenty **List** k určení různých zápatí pro různé listy ve vygenerovaném sešitu aplikace Excel.
+
+Když konfigurujete jednotlivou komponentu **Zápatí**, můžete použít vlastnost **Vzhled záhlaví/zápatí** k určení stránek, pro které se komponenta používá. K dispozici jsou následující hodnoty:
+
+- **Všechny** – Spustit nakonfigurovanou komponentu **Zápatí** pro všechny stránky nadřazeného listu aplikace Excel.
+- **První** – Spustit nakonfigurovanou komponentu **Zápatí** pouze pro první stránku nadřazeného listu aplikace Excel.
+- **Sudá** – Spustit nakonfigurovanou komponentu **Zápatí** pouze pro sudé stránky nadřazeného listu aplikace Excel.
+- **Lichá** – Spustit nakonfigurovanou komponentu **Zápatí** pouze pro liché stránky nadřazeného listu aplikace Excel.
+
+Pro jednu komponentu **List** můžete přidat několik komponent **Zápatí**, z nichž každá má pro vlastnost **Vzhled záhlaví/zápatí** jinou hodnotu. Tímto způsobem můžete vygenerovat různá zápatí pro různé typy stránek v listu aplikace Excel.
+
+> [!NOTE]
+> Zajistěte, aby každá komponenta **Zápatí**, kterou přidáte do jednoho **Listu**, měla pro vlastnost **Vzhled záhlaví/zápatí** jinou hodnotu. Jinak dojde k [chybě ověření](er-components-inspections.md#i16). Chybová zpráva, kterou obdržíte, vás upozorní na nekonzistenci.
+
+Pod přidanou komponentu **Zápatí** přidejte požadované vnořené komponenty **Text\\Řetězec**, **Text\\DateTime** nebo jiný typ. Nakonfigurujte vazby pro tyto komponenty a určete, jak je vyplněno vaše zápatí stránky.
+
+Můžete také použít speciální [formátovací kódy](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) ke správnému formátování obsahu vygenerovaného zápatí. Chcete-li se naučit používat tento přístup, postupujte podle pokynů v [příkladu 1](#example-1) dále v tomto tématu.
+
+> [!NOTE]
+> Při konfiguraci formátů ER nezapomeňte vzít v úvahu [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) Excel a maximální počet znaků pro jedno záhlaví nebo zápatí.
+
+## <a name="header-component"></a>Komponenta záhlaví
+
+Komponenta **Záhlaví** se používá k vyplnění záhlaví v horní části vygenerovaného listu v sešitu aplikace Excel. Používá se stejně jako komponenta **Zápatí**.
+
 ## <a name="edit-an-added-er-format"></a>Úprava přidaného formátu elektronického výkaznictví
 
 ### <a name="update-a-template"></a>Aktualizace šablony
@@ -175,6 +204,48 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
     >[!NOTE]
     > Přepočet vzorce je vynucen ručně, když je generovaný dokument otevřen k náhledu v aplikaci Excel.
     > Tuto možnost nepoužívejte, pokud konfigurujete cíl ER, který předpokládá použití vygenerovaného dokumentu bez jeho náhledu v aplikaci Excel (pro převod PDF, odeslání e-mailem atd.), protože generovaný dokument nemusí obsahovat hodnoty v buňkách obsahujících vzorce.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Příklad 1: Formátování obsahu zápatí
+
+1. Použijte poskytnuté konfigurace ER ke [generování](er-generate-printable-fti-forms.md) dokumentu s volnou textovou fakturou (FTI), který lze tisknout.
+2. Zkontrolujte zápatí vygenerovaného dokumentu. Všimněte si, že obsahuje informace o aktuálním čísle stránky a celkovém počtu stránek v dokumentu.
+
+    ![Zkontrolujte zápatí vygenerovaného dokumentu ve formátu Excel](./media/er-fillable-excel-footer-1.gif)
+
+3. V návrháři formátu ER [otevřete](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ukázkový formát ER pro kontrolu.
+
+    Zápatí listu **faktury** je generováno na základě nastavení dvou komponent **Řetězec**, které jsou umístěny pod komponentou **Zápatí**.
+
+    - První komponenta **Řetězec** vyplní následující speciální kódy formátování, aby donutila aplikaci Excel použít konkrétní formátování:
+
+        - **&C** – Zarovnat text zápatí do středu.
+        - **&"Segoe UI,Regular"&8** – Vložit text zápatí v písmu "Segoe UI Regular" písmo o velikosti 8 bodů.
+
+    - Druhý komponent **Řetězec** vyplní text, který obsahuje aktuální číslo stránky a celkový počet stránek v aktuálním dokumentu.
+
+    ![Zkontrolujte formát ER zápatí na stránce Návrhář formátů](./media/er-fillable-excel-footer-2.png)
+
+4. Přizpůsobte ukázkový formát ER a upravte aktuální zápatí stránky:
+
+    1. [Vytvořit](er-quick-start2-customize-report.md#DeriveProvidedFormat) odvozený formát **Faktura s volným textem (Excel) vlastní**, který je založen na vzorovém formátu ER.
+    2. Přidejte první nový pár komponent **Řetězec** pro komponentu **Zápatí** listu **Faktura**:
+
+        1. Přidejte komponentu **Řetězec**, která zarovná název společnosti vlevo a zobrazí jej v 8bodovém písmu "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**).
+        2. Přidejte komponentu **Řetězec** komponenta, která vyplňuje název společnosti (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Přidejte druhý nový pár komponent **Řetězec** pro komponentu **Zápatí** listu **Faktura**:
+
+        1. Přidejte komponentu **Řetězec**, která zarovná datum zpracování vpravo a zobrazí jej v 8bodovém písmu "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
+        2. Přidejte komponentu **Řetězec**, která vyplní datum zpracování ve vlastním formátu (**"&nbsp;&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Kontrola formátu ER zápatí na stránce Návrhář formátů](./media/er-fillable-excel-footer-3.png)
+
+    4. [Vyplňte](er-quick-start2-customize-report.md#CompleteDerivedFormat) verzi konceptu odvozeného formátu ER **Faktura s volným textem (Excel) vlastní**.
+
+5. [Nakonfigurujte](er-generate-printable-fti-forms.md#configure-print-management) správu tisku pro použití odvozeného formátu ER **Faktura s volným textem (Excel) vlastní** namísto ukázkového formátu ER.
+6. Vygenerujte tisknutelný dokument FTI a zkontrolujte zápatí vygenerovaného dokumentu.
+
+    ![Kontrola zápatí vygenerovaného dokumentu ve formátu Excel](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Další prostředky
 

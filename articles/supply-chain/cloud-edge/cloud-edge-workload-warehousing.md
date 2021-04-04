@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104933"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580958"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -85,7 +85,14 @@ Centrum vlastní následující data:
 > [!NOTE]
 > Tok příchozích objednávek se koncepčně liší od odchozích toků. Stejný sklad můžete provozovat na jednotce škálování nebo v centru v závislosti na tom, zda byla nákupní objednávka uvolněna do skladu nebo ne. Jakmile uvolníte objednávku do skladu, můžete s touto objednávkou pracovat pouze po přihlášení na jednotce škálování.
 
-Pokud používáte *proces uvolnění do skladu*, vytvoří se [*objednávky skladu*](cloud-edge-warehouse-order.md) a vlastnictví příslušného toku příjmu se přiřadí jednotce škálování. Centrum nebude moci zaregistrovat příchozí příjem.
+Pokud používáte proces *Uvolnit do skladu*, vytvoří se [*skladové objednávky*](cloud-edge-warehouse-order.md) a vlastnictví souvisejícího toku přijímání se přiřadí jednotce škálování. Centrum nebude moci zaregistrovat příchozí příjem.
+
+Abyste mohli použít proces *Uvolnit do skladu*, musíte být přihlášeni v centru. Chcete-li jej spustit nebo naplánovat, přejděte na jednu z následujících stránek:
+
+- **Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky > Sklad > Akce > Uvolnit do skladu**
+- **Řízení skladu > Uvolnění do skladu > Automatické uvolnění nákupních objednávek**
+
+Při použití možnosti **Automatické uvolnění nákupních objednávek** můžete vybrat konkrétní řádky nákupní objednávky na základě dotazu. Typickým scénářem by bylo nastavení opakované dávkové úlohy, která uvolní všechny potvrzené řádky nákupní objednávky, které se očekávají příští den.
 
 Pracovník může spustit proces příjmu pomocí aplikace skladu, která je připojena k jednotce škálování. Data se poté zaznamenají podle jednotky škálování a nahlásí se proti příchozí skladové objednávce. Vytvoření a zpracování následného odložení bude také zpracováno podle jednotky škálování.
 
@@ -222,7 +229,7 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 | Převést řádek nákupní objednávky a odložení                        | Ano | Žádný |
 | Zrušení práce (příchozí)                                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, ale pouze, když možnost <b>Zrušit registraci potvrzení při rušení práce</b> (na stránce <b>Parametry správy skladu</b>) není podporována.</p> |
 | Zpracování příjmu produktu z nákupní objednávky                          | Ano | Žádný |
-| Příjem nákupní objednávky s nedostatečným doručením                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne, protože zrušit můžete pouze celé řádkové množství skladové objednávky |
+| Příjem nákupní objednávky s nedostatečným doručením                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano, ale pouze podáním žádosti o zrušení z centra |
 | Příjem nákupní objednávky s nadměrným doručením                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano  |
 | Příjem s vytvořením práce *Cross docking*                   | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
 | Příjem s vytvořením práce *Objednávka kvality*                  | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |

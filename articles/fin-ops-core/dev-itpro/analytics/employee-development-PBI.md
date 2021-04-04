@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 41e2f8b1dc5f86220a4a2edeab24f82883e5157f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1091357f1d86bac17c860a41daaa2577035163ca
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687095"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569656"
 ---
 # <a name="employee-development-power-bi-content"></a>Obsah rozvoje zaměstnanců v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **Rozvoj zaměstnanců** v Power BI.
+Toto téma popisuje obsah **rozvoje zaměstnanců** v Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Sestavy, které jsou součástí obsahu **Rozvoj zaměstnanců** v Power BI, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.

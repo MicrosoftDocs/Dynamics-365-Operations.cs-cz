@@ -3,7 +3,7 @@ title: Začínáme se správou služby doplňky elektronické fakturace
 description: Toto téma poskytuje informace, jak začít s doplňkem elektronické fakturace.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104353"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592519"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Začínáme se správou služby doplňky elektronické fakturace
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104353"
 Než provedete postupy v tomto tématu, musí být splněny následující předpoklady:
 
 - Musíte mít přístup ke svému účtu Microsoft Dynamics Lifecycle Services (LCS).
-- Musíte mít projekt LCS, který obsahuje verzi 10.0.13 nebo novější nástroje Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho musí být tyto aplikace nasazeny v jedné z následujících geografických oblastí Azure:
+- Musíte mít projekt LCS, který obsahuje verzi 10.0.17 nebo novější nástroje Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho musí být tyto aplikace nasazeny v jedné z následujících geografických oblastí Azure:
 
     - Východní USA
     - USA – západ
@@ -52,6 +52,13 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 2. Vyberte dlaždici **Náhled správy funkcí**.
 3. V části **Funkce Public Preview** vyberte **služba elektronické fakturace**.
 4. Ujistěte se, zda je možnost **Funkce Preview zapnuta** nastavena na hodnotu **Ano**.
+5. Na řídicím panelu LCS vyberte svůj projekt nasazení LCS. Projekt LCS musí být spuštěný.
+7. Na kartě **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
+8. Vyberte **Služby elektronické fakturace** a v poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Toto je pevná hodnota.
+10. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure.
+11. Zkontrolujte smluvní podmínky a poté zaškrtněte políčko.
+12. Vyberte **Instalovat**.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Nastavení parametrů pro integraci RCS s doplňkem elektronické fakturace
 
@@ -73,7 +80,7 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 ## <a name="create-key-vault-secret"></a>Vytvoření tajného kódu Key Vault
 
 1. Přihlaste se k účtu RCS.
-2. V pracovním prostoru **Funkce globalizace** v části **Prostředí** vyberte dlaždici **Elektronická fakturace**.
+2. V pracovním prostoru **Funkce globalizace** v části **Prostředí** vyberte dlaždici **Doplněk elektronické fakturace**.
 3. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Prostředí služby** a potom vyberte **Parametry Key Vault**.
 4. Vyberte možnost **Nový** k vytvoření tajného kódu trezoru klíčů.
 5. Do pole **Název** zadejte název tajného kódu trezoru klíčů. Zadejte popis do pole **Popis**.
@@ -82,22 +89,31 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 ## <a name="create-storage-account-secret"></a>Vytvoření tajného kódu účtu úložiště
 
-1. Na stránce **Parametry trezoru klíčů** v části **Certifikáty** vyberte **Přidat**.
-2. Do pole **Název** zadejte název tajného kódu účtu úložiště. Zadejte popis do pole **Popis**.
-3. V poli **Typ** vyberte **Certifikát**.
-4. Zvolte **Uložit** a pak zavřete stránku.
+1. Přejděte na **Správa systému** > **Nastavit** > **Parametry trezoru klíčů** a vyberte tajný klíč trezoru klíčů.
+2. V části **Certifikáty** vyberte **Přidat**.
+3. V poli **Název** zadejte název tajného klíče účtu úložiště a do pole **Popis** zadejte popis.
+4. V poli **Typ** vyberte **Certifikát**.
+5. Zvolte **Uložit** a pak zavřete stránku.
+
+## <a name="create-a-digital-certificate-secret"></a>Vytvoření tajného klíče digitálního certifikátu
+
+1. Přejděte na **Správa systému** > **Nastavit** > **Parametry trezoru klíčů** a vyberte tajný klíč trezoru klíčů.
+2. V části **Certifikáty** vyberte **Přidat**.
+3. V poli **Název** zadejte název tajného klíče digitálního certifikátu a do pole **Popis** zadejte popis.
+4. V poli **Typ** vyberte **Certifikát**.
+5. Zvolte **Uložit** a pak zavřete stránku.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Vytvoření prostředí doplňku elektronické fakturace
 
 1. Přihlaste se k účtu RCS.
-2. V pracovním prostoru **Funkce globalizace** v části **Prostředí** vyberte dlaždici **Elektronická fakturace**.
+2. V pracovním prostoru **Funkce globalizace** v části **Prostředí** vyberte dlaždici **Doplněk elektronické fakturace**.
 
 ## <a name="create-a-service-environment"></a>Vytvoření servisního prostředí
 
 1. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Prostředí služby**.
 2. Vyberte **Nový** pro vytvoření nového prostředí služby.
 3. Do pole **Název** zadejte název prostředí elektronické fakturace. Zadejte popis do pole **Popis**.
-4. V poli **Tajný klíč tokenu SAS úložiště** vyberte název certifikátu, který se musí použít k ověření přístupu k účtu úložiště.
+4. V poli **Tajný klíč tokenu SAS úložiště** vyberte název tajného klíče účtu úložiště, který se musí použít k ověření přístupu k účtu úložiště.
 5. V části **Uživatelé** vyberte **Přidat**, chcete-li přidat uživatele, který má povoleno odesílat elektronické faktury prostřednictvím prostředí a také se připojit k účtu úložiště.
 6. Do pole **ID uživatele** zadejte alias uživatele. Do pole **E-mail** zadejte e-mailovou adresu uživatele.
 7. Zvolte **Uložit**.

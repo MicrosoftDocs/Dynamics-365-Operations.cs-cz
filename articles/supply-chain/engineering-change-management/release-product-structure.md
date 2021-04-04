@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967223"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580908"
 ---
 # <a name="release-product-structures"></a>Uvolnění struktur produktu
 
@@ -76,8 +76,6 @@ Příklad toho, jak produkt přijmout, najdete v části [Než produkt vydáte v
 ## <a name="release-policies"></a>Zásady uvolnění
 
 Ne všechny provozní společnosti potřebují stejná produktová data. Obecně platí, že provozní společnosti, které vyrábějí technické výrobky, vyžadují kusovník, zatímco provozní společnost, která prodává pouze technické výrobky, kusovník nevyžadují. Zásady uvolnění můžete použít k určení parametrů, které se používají k uvolnění produktů.
-
-U technických produktů je zásada uvolnění přiřazena v kategorii technických produktů a toto pole je povinné. U standardních produktů je zásada přiřazena ke sdílenému produktu a pole je volitelné.
 
 Další informace o kategoriích technických produktů najdete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
 

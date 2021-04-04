@@ -3,7 +3,7 @@ title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128154"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571721"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams vám umožňuje rychle požádat o volno a zobrazit informace o svém zůstatku volna přímo v Microsoft Teams. Můžete komunikovat s robotem a požádat o informace a zahájit žádost o dovolenou. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžete lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
+Aplikace Dynamics 365 Human Resources v aplikaci Microsoft Teams vám umožňuje rychle požádat o volno a zobrazit informace o svém zůstatku volna přímo v Microsoft Teams. Můžete komunikovat s robotem a požádat o informace a zahájit žádost o dovolenou. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžete lidem posílat informace o svém nadcházejícím volnu v Teams a chatech mimo aplikaci Human Resources.
 
 ## <a name="install-the-app"></a>Instalace aplikace
 
-Aplikaci Human Resources najdete v obchodě Teams.
+Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams.
 
 1. V aplikaci Microsoft Teams zvolte tři tečky.
 
@@ -70,29 +70,21 @@ Po instalaci aplikace se zobrazí uvítací zpráva, která vás informuje o typ
 
 Můžete požádat robota a následující akce:
 
-- Zobrazit informace o zůstatku volna pro každý typ volna, do kterého jste zaregistrováni.
-
-   ![Zobrazení zůstatků aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Zobrazit další podrobnosti o konkrétním typu volna.
-
-   ![Zobrazení podrobností aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot-details.png)
-
 - Zahájit žádost o volno za vás.
 
-   ![Žádost o volno aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot-request.png)
- 
-Po zahájení žádosti o dovolenou můžete upravit dny přímo na kartě.
+  ![Zahájení žádosti o volno v chatu Teams](./media/hr-teams-leave-app-initiate.png)
 
-![Úprava žádosti aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot-edit.png)
- 
-Až zadáte informace, vyberte **Odeslat** pro odeslání žádosti ke schválení. Můžete také zvolit **Uložit jako koncept** a vrátit se k žádosti později.
+- Chatovací robot za vás vyplní žádost o volno. Vyberte možnost **Požádat o volno** a upravte podrobnosti své žádosti.
 
-![Odeslání žádosti aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot-submit.png)
+  ![Úprava podrobností žádosti o volno](./media/hr-teams-leave-app-details.png)
+
+- Po dokončení úprav podrobností žádosti o volno vyberte **Odeslat** a předejte žádost ke schválení.
+
+  ![Odeslání žádosti o volno](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Správa volna v aplikaci Teams
 
-Karta **Volno** umožňuje zobrazit:
+Karta **Volno** umožňuje zobrazit: 
 
 - Informace o zůstatku pro každý typ volna, ke kterému jste zaregistrováni
 
@@ -164,21 +156,51 @@ Pokud jste manažer s přímými podřízenými, můžete si prohlédnout schvá
 
 1. V aplikaci Human Resources v Teams vyberte **Volno**.
 
-2. Vyberte **Kalendář týmu**.
+2. Vyberte **Kalendář týmu**. Kalendář zobrazuje schválené a nevyřízené volno vašich přímých podřízených.
 
    ![Zobrazení kalendáře v aplikaci Human Resources Teams](./media/hr-teams-leave-app-view-calendar.png)
 
-Kalendář zobrazuje schválené a nevyřízené volno vašich přímých podřízených.
+   > [!NOTE]
+   > Pokud týmový kalendář nevidíte, požádejte správce o jeho aktivaci. Další informace naleznete v tématu [Instalace a nastavení](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Kalendář volna v aplikaci Human Resources Teams](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Podporované jazyky
+
+Aplikace Dynamics 365 Human Resources v Teams podporuje následující jazyky:
+
+| ID národního prostředí | Jazyk |
+| --- | --- |
+| de-DE | Němčina (Německo) |
+| es-ES | Španělština (Španělsko) |
+| es-MX | Španělština (Mexiko) |
+| fr-CA | Francouzština (Kanada) |
+| fr-FR | Francouzština (Francie) |
+| it-IT | Italština (Itálie) |
+| nl-NL | Holandština (Nizozemsko) |
+| pt-BR | Portugalština (Brazílie) |
+| tr-TR | Turečtina (Turecko) |
+| zh-CN | Čínština (zjednodušená) |
 
 ## <a name="troubleshooting"></a>Řešení potíží
 
-Pokud máte potíže s přihlášením nebo používáním aplikace Human Resources Teams, zkuste problémy vyřešit podle těchto pokynů. Pokud problémy přetrvávají i po pokusu o vyřešení, obraťte se na podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
+Pokud máte potíže s přihlášením nebo používáním aplikace Dynamics 365 Human Resources Teams, zkuste problémy vyřešit podle těchto pokynů. Pokud problémy přetrvávají i po pokusu o vyřešení, obraťte se na podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nelze se přihlásit do aplikace Human Resources v Teams
 
 Pokud se nemůžete do aplikace přihlásit, je možné, že účet, pomocí kterého se přihlašujete do Microsoft Teams není spojen se záznamem zaměstnance v Dynamics 365 Human Resources. Požádejtea správce systému o ověření, jestli je váš záznam zaměstnance správně přidružen.
+
+### <a name="translations-dont-display-correctly"></a>Překlady se nezobrazují správně
+
+Pokud se překlady nezobrazují podle očekávání, ujistěte se, že jazyk, který vyberete v Teams, odpovídá jazyku vybranému v **Možnostech uživatele** Human Resources.
+
+V Teams se podívejte na pole **Jazyk aplikace** v **Nastavení**.
+
+![Nastavení Teams](./media/hr-teams-leave-app-settings.png)
+
+V Human Resources vyberte **Nastavení** a poté vyberte **Možnosti uživatele**. Ověřte, že pole **Jazyk** odpovídá poli **Jazyk aplikace** v Teams.
+
+![Možnosti uživatele v Human Resources](./media/hr-teams-leave-app-user-options.png)
+
+Pokud problémy s překladem přetrvávají, dejte nám vědět. Informace najdete v tématu [Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Chyba při schvalování žádostí o dovolenou v aplikaci Human Resources v Teams
 
@@ -198,7 +220,6 @@ Aplikace Human Resources v Teams má následující problémy s usnadněním, na
 | Na kartě **Volno** hlasový komentář oznamuje akci tlačítka při čtení záhlaví mřížky volna. | Záhlaví a prvky v mřížce jsou seskupeny podle roku a jsou sbalitelné. Komentář to interpretuje jako položku s akcemi, kterou ale není. |
 | Na kartě **Volno** je při přechodu na **Kód důvodu** v nové žádosti potřeba potáhnutí prstem navíc. | Neexistuje žádný skrytý ovládací prvek, ke kterému se potáhnutí prstem pokouší dostat. |
 | Na kartě **Volno**, pokud potáhnete prstem, když je kalendář otevřený, skončíte mimo ovládací prvek namísto horní části v nové žádosti nebo během úpravy požadavku. | Když dosáhnete položky **Přejít na dnešek**, považujte to za konec ovládacího prvku a potáhnutím prstem opačným směrem se dostanete zpět nahoru. |
-| Komentář nečte popisky kalendářních dat. | Data v párech jsou vždy **Počáteční datum** a **Koncové datum**. |
 | Na kartě **Chat**, když zadáte datum při používání asistenčního nástroje nebo navigace pomocí klávesnice, přeskočí fokus zpět na začátek. | Stiskněte klávesu Tab, dokud se znovu nedostanete do oblasti zadávání. |
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů

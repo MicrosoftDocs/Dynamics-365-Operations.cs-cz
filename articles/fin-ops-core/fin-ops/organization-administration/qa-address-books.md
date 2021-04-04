@@ -3,10 +3,9 @@ title: Často kladené dotazy k adresářům
 description: Toto téma obsahuje odpovědi na časté dotazy související s adresáři.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796891"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559934"
 ---
 # <a name="address-books-faq"></a>Často kladené dotazy o adresáři
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Jak zkontroluji duplicitní záznamy?
 
@@ -68,5 +68,10 @@ Můžete zadat záznamy strany buď v globálním adresáři nebo na stránce p�
 
 Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) ve vaší aplikaci, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
 
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Proč po importu adres nemohu upravovat importované adresy, když přistupuji k záznamům?
+
+Při importu adres je pole označené **IsLocationOwner**, což označuje, zda strana, která je přidružena k místu (adrese), je vlastníkem adresy. Pokud je strana vlastníkem adresy, lze adresu upravit při přístupu pomocí strany v globálním adresáři nebo z formuláře hlavního záznamu (například zákazník, prodejce nebo pracovník). Pokud strana není vlastníkem adresy, nelze záznam upravit z dříve uvedených formulářů. Při importu adres se musí **IsLocationOwner** nastavit na **Ano**, chcete-li adresu upravit pomocí přidružené strany. Existují však chvíle, kdy je toto pole importováno nesprávně. Chcete-li tento problém vyřešit, vlastníka místa lze aktualizovat v globálním adresáři ze záznamu strany nebo ze stránky **Potvrdit vlastníky umístění**. Chcete-li aktualizovat záznam jedné strany, přejděte na **Globální adresář > Adresa**. Vyberte **Upravit** ke spuštění stránky **Upravit adresu** ke změně vlastníka umístění. Vyberte **Změnit vlastníka umístění** k zobrazení předchozího vlastníka místa, přičemž novým vlastníkem místa je aktuálně vybraná strana. Pokud je předchozí vlastník místa prázdný, znamená to, že vlastník místa nebyl uveden. Výběr možnosti **Pokročilé** otevře stránku **Spravovat adresy**, kde lze také nastavit vlastníka umístění. Vyberte umístění, které chcete aktualizovat, a poté vyberte **Nastavit vlastníka umístění** z nabídky. Chcete-li aktualizovat vlastníka umístění pro více záznamů, přejděte na **Globální adresář > Umístění > Potvrzení vlastníků umístění**. Seznam obsahuje umístění, která jsou propojena s jednou stranou, ale tato strana není vlastníkem. Výběr **Potvrdit vlastníka** nastaví **Navrhované ID strany vlastníka** na vlastníka propojené adresy. Jakmile je strana nastavena jako vlastník, propojenou adresu lze upravit ze záznamu strany. Chcete-li změnit vlastníka umístění, musíte mít přidělené oprávnění **Nastavit vlastníka umístění** na straně **Konfigurace zabezpečení**.  Správci systému je toto oprávnění uděleno ve výchozím nastavení.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

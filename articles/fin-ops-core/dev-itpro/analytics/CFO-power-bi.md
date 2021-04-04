@@ -1,12 +1,11 @@
 ---
 title: Obsah přehledu CFO v Power BI
-description: Toto téma popisuje obsah Přehled CFO v Power BI.
+description: Toto téma popisuje obsah Přehled CFO v obsahu Microsoft Power BI.
 author: kweekley
 manager: AnnBe
 ms.date: 10/02/2010
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
@@ -14,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5970f5c333803c45426b75d09b4f07c26bf892de
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7f97187f4afb228ad2028e0be7cf55b6154372f8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688142"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568511"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Obsah přehledu CFO v Power BI
 
 [!include [banner](../includes/banner.md)] 
 
-Toto téma popisuje obsah **Přehled CFO** v Microsoft Power BI. Tento obsah Power BI platí pro ty, kteří používají Microsoft Dynamics 365 for Finance and Operations, verzi 7.2. Pokud používáte verzi 7.3 nebo pozdější, nahlédněte do tématu [Finanční přehledy](financial-insights.md).
+Toto téma popisuje obsah **Přehled CFO** v obsahu Microsoft Power BI. Tento obsah Power BI platí pro ty, kteří používají Microsoft Dynamics 365 for Finance and Operations, verzi 7.2. Pokud používáte verzi 7.3 nebo pozdější, nahlédněte do tématu [Finanční přehledy](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
