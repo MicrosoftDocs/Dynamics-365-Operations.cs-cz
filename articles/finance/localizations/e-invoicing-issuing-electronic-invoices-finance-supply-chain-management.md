@@ -3,7 +3,7 @@ title: Vystavení elektronických faktur v aplikacích Finance a Supply Chain Ma
 description: Toto téma poskytuje informace o vystavování elektronických faktur v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management prostřednictvím doplňku elektronické fakturace.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104354"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486946"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management
 
@@ -37,23 +37,33 @@ Toto téma poskytuje informace o vystavování elektronických faktur v Microsof
 
 Abyste mohli vystavovat elektronické faktury pomocí doplňku elektronické fakturace, je nezbytné aktivovat odkaz na funkci v aplikacích Finance a Supply Chain Management.
 
-Každý odkaz na funkci odpovídá některé funkci elektronického fakturování, která odpovídá požadavkům na elektronické fakturování některé země/oblasti.
+Každá funkce odpovídá některé funkci elektronického fakturování, která odpovídá požadavkům na elektronické fakturování některé země/oblasti.
 
-V následující tabulce jsou uvedeny odkazy na formuláře, které podporuje doplněk elektronického fakturování.
+V následující tabulce jsou uvedeny funkce, které může podporovat doplněk elektronického fakturování.
 
-| Odkaz na funkci | Jméno                                              | Země nebo oblast |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | Brazilská elektronická faktura NF-e Federal       | Brazílie         |
-| BR-00095          | Brazilské elektronické faktury NFS-e               | Brazílie         |
-| DK-00001          | Elektronická fakturace pro veřejný sektor (OIOUBL) – DK    | Dánsko        |
-| EG-00008          | Elektronická fakturace pro Egypt                             | Egypt          |
-| ES-00025          | Elektronická faktura pro veřejný sektor           | Španělsko          |
-| EUR-00023         | Elektronická fakturace pro veřejný sektor Evropské unie       | Evropa         |
-| ITA-00036         | IT – elektronická fakturace pro veřejný sektor (FatturaPA) | Itálie          |
-| MX-00010          | Elektronické faktury CFDI                                  | Mexiko         |
-| MX-00016          | Elektronická fakturace CFDI – proces zrušení           | Mexiko         |
+| Jméno                                              | Země nebo oblast |
+|---------------------------------------------------|----------------|
+|Elektronická faktura pro Rakousko                        |Rakousko         |
+|Elektronická faktura pro Belgii                         |Belgie         |
+|NF-e Federal - Brazilská elektronická faktura       |Brazílie          |
+|NFS-e – elektronické faktura za služby (městské) pro Brazílii|Brazílie          |
+|Elektronická faktura pro Dánsko                          |Dánsko         |
+|Elektronická faktura pro Egypt                        |Egypt           |
+|Elektronická faktura pro Estonsko                        |Estonsko         |
+|Elektronická faktura pro Finsko                         |Finsko         |
+|Elektronická faktura pro Francii                          |Francie          |
+|Elektronická faktura pro Německo                          |Německo         |
+|PEPPOL – globální elektronická faktura                 |Globální          |
+|Elektronická faktura pro Itálii                         |Itálie           |
+|CFDI – elektronická faktura pro Mexiko                  |Mexiko          |
+|Elektronická faktura pro Nizozemí                           |Nizozemsko     |
+|Elektronická faktura pro Norsko                       |Norsko          |
+|Elektronická faktura pro Španělsko                         |Španělsko           |
 
-V případech, kdy existuje starší funkce elektronické fakturace, která podporovala rozsah lokalizace dané země, aktivace odkazu na funkci povolí vydávání elektronických faktur prostřednictvím doplňku elektronické fakturace a vypíná dřívější funkci.
+V případech, kdy existuje starší funkce elektronické fakturace, která podporovala rozsah lokalizace dané země/oblast, aktivace těchto funkcí vypne starší funkci a zapne vydávání elektronických faktur prostřednictvím doplňku elektronické fakturace a vypíná dřívější funkci.
+
+> [!IMPORTANT]
+> Poté, co je povolena funkce integrace doplňku elektronické fakturace, je nové prostředí elektronické fakturace ve výchozím nastavení vypnuto. Koncept funkce můžete použít k selektivnímu povolení nových zkušeností pro právnické osoby využívající funkce specifické pro zemi/oblast. Možnost **Globální** řídí nové prostředí pro zbývající okres/regiony, které nejsou konkrétně uvedeny v tabulce.
 
 ## <a name="submit-electronic-documents"></a>Odeslat elektronické dokumenty
 
