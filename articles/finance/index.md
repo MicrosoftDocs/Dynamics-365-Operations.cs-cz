@@ -2,11 +2,9 @@
 title: Domovská stránka aplikace Finance
 description: Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy financí v Microsoft Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218876"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813452"
 ---
 # <a name="finance-home-page"></a>Domovská stránka aplikace Finance
 
@@ -71,8 +69,10 @@ Předpisy země/oblasti ovlivňují nastavení daní a další oblasti správy f
 
 ### <a name="additional-content"></a>Další obsah
 
-Funkce Supply Chain Management pokrývá části procesu P2P, které zahrnují požadavky, objednávání, příjem, fakturaci a platby za zboží a služby, které vaše organizace nakupuje. Informace o funkcích správy nákupů, zásob a výroby naleznete na [domovské stránce aplikace Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
+Funkce Supply Chain Management pokrývá části procesu P2P, které zahrnují požadavky, objednávání, příjem, fakturaci a platby za zboží a služby, které vaše organizace nakupuje. Informace o funkcích správy nákupů, zásob a výroby naleznete na [domovské stránce aplikace Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
+## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Finance na Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

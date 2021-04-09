@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform Update pro 10.0.16 (únor 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Platform Update pro 10.0.15 (leden 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integrovaný pracovník, práce a pozice'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Strana a globální adresář
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Používání Power Portal s datovým modelem strany
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Integrace poznámek
                               href: data-entities/dual-write/notes-integration.md
                             - name: Odkaz na mapování
@@ -526,13 +528,15 @@
                   items:
                     - name: Nastavení místních projektů v LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Nastavení a nasazení místních prostředí
+                    - name: Nastavení a nasazení místních prostředí (Platform Update 41 a novější)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Nastavení a nasazení místních prostředí (Platform Update 12 až 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
                     - name: Vývoj a nasazení vlastních modelů do místních prostředí
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Údržba prostředí
+                - name: Operace prostředí
                   items:
                     - name: Použití aktualizací na místní nasazení
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurace uzlů AOS pouze pro dávky a pouze interaktivního v místních nasazeních
                       href: deployment/onprem-batchonly.md
+                    - name: Konfigurace vysoké dostupnosti pro uzly SQL Server Reporting Services (SSRS)
+                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurace proxy pro místní prostředí
                       href: deployment/onprem-reverseproxy.md
                     - name: Místní diagnostika
@@ -1136,20 +1142,24 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integrace Microsoft Power Platform
           items:
-            - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
-              href: power-platform/overview.md
-            - name: Přehled doplňků
-              href: power-platform/add-ins-overview.md
-            - name: Modelování entit
-              href: power-platform/entity-modeling.md
-            - name: Správa životního cyklu aplikace
-              href: power-platform/application-lifecycle-management.md
-            - name: Reference správce Finance and Operations a Dataverse
-              href: power-platform/admin-reference.md
-            - name: Portály Power Apps s Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Často kladené dotazy k virtuálním entitám Finance and Operations
-              href: power-platform/faq.md
+            - name: Virtuální entity
+              items:
+                - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
+                  href: power-platform/overview.md
+                - name: Modelování entit
+                  href: power-platform/entity-modeling.md
+                - name: Správa životního cyklu aplikace
+                  href: power-platform/application-lifecycle-management.md
+                - name: Reference správce Finance and Operations a Dataverse
+                  href: power-platform/admin-reference.md
+                - name: Portály Power Apps s Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Často kladené dotazy k virtuálním entitám Finance and Operations
+                  href: power-platform/faq.md
+            - name: Doplňky
+              items:
+                - name: Přehled doplňků
+                  href: power-platform/add-ins-overview.md
         - name: Mobilní platforma
           items:
             - name: Zdroje mobilní platformy
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Kurz pro nástroj Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
+            - name: Konfigurace uživatelů bez oprávnění správce
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Doporučené postupy
               href: perf-test/rsat/rsat-best-practices.md
             - name: Agnostické testování dat pomocí Regression Suite Automation Tool

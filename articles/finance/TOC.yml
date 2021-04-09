@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (únor 2021)
                       href: get-started/whats-new-changed-10-0-16.md
-                    - name: Finance 10.0.15 (leden 2021)
-                      href: get-started/whats-new-changed-10-0-15.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -1418,13 +1416,13 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Povinné aktualizace
               href: localizations/regulatory-updates.md
-            - name: Doplněk elektronické fakturace
+            - name: Elektronická fakturace
               items:
-                - name: Přehled doplňku elektronické fakturace
+                - name: Přehled elektronické fakturace
                   href: localizations/e-invoicing-service-overview.md
-                - name: Součásti pro správu doplňku elektronické fakturace
+                - name: Součásti pro správu elektronické fakturace
                   href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurace doplňku elektronické fakturace v Regulatory Configuration Services (RCS)
+                - name: Konfigurace elektronické fakturace v Regulatory Configuration Services (RCS)
                   href: localizations/e-invoicing-configuration-rcs.md
                 - name: Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management
                   href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1432,20 +1430,22 @@
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
                 - name: Začínáme
                   items:
-                    - name: Začněte se správou služby doplňku elektronické fakturace
+                    - name: Začněte se správou služby elektronické fakturace
                       href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Začněte s doplňkem elektronické fakturace
+                    - name: Začněte s elektronickou fakturací
                       href: localizations/e-invoicing-get-started.md
-                    - name: Začněte s doplňkem elektronické fakturace pro Brazílii
+                    - name: Začněte s elektronickou fakturací pro Brazílii
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Začněte s doplňkem elektronické fakturace pro Egypt
+                    - name: Začněte s elektronickou fakturací pro Egypt
                       href: localizations/e-invoicing-eg-get-started.md
-                    - name: Začněte s doplňkem elektronické fakturace pro Itálii
+                    - name: Začněte s elektronickou fakturací pro Itálii
                       href: localizations/e-invoicing-ita-get-started.md
-                    - name: Začněte s doplňkem elektronické fakturace pro Mexiko
+                    - name: Začněte s elektronickou fakturací pro Mexiko
                       href: localizations/e-invoicing-mex-get-started.md
-                    - name: Nastavení doplňku elektronické fakturace
+                    - name: Nastavení elektronické fakturace
                       href: localizations/e-invoicing-setup.md
+                - name: Nejčastější dotazy k elektronické fakturaci
+                  href: localizations/e-invoicing-faq.md
             - name: Austrálie
               items:
                 - name: Austrálie - přehled
@@ -1798,6 +1798,10 @@
                   href: localizations/emea-egy-invoice-layout.md
                 - name: Elektronické faktury zákazníka v Egyptě
                   href: localizations/emea-egy-e-invoices.md
+                - name: Přiznání k DPH pro Egypt
+                  href: localizations/emea-egy-vat-declaration.md
+                - name: Přiznání ke srážkové dani pro Egypt
+                  href: localizations/emea-egy-wht-declaration.md
             - name: Estonsko
               items:
                 - name: Estonsko - přehled
@@ -2082,6 +2086,38 @@
                   href: localizations/india.md
                 - name: Rozsah indické lokalizace
                   href: localizations/apac-ind-scope.md
+                - name: Co je nového a co se změnilo v lokalizaci pro Indii
+                  items:
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.0
+                      href: localizations/apac-ind-news-letter-10-0-00.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.01
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.02
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.03
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.04
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.05
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.06
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.07
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.08
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.09
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.10
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.11
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.12
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.13
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.14
+                      href: localizations/apac-ind-news-letter-10-0-14.md
                 - name: Dlouhodobý majetek
                   items:
                     - name: Přehled dlouhodobého majetku pro Indii
@@ -2108,210 +2144,198 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Převod kapitálových položek do dlouhodobého majetku
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indická daň GST
+                - name: Nepřímé daně
                   items:
-                    - name: Přehled indické daně GST
-                      href: localizations/apac-ind-gst.md
-                    - name: Co je nového a co se změnilo pro lokalizaci indické daně GST
+                    - name: Indická daň GST
                       items:
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.0
-                          href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.01
-                          href: localizations/apac-ind-news-letter-10-0-01.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.02
-                          href: localizations/apac-ind-news-letter-10-0-02.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.03
-                          href: localizations/apac-ind-news-letter-10-0-03.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.04
-                          href: localizations/apac-ind-news-letter-10-0-04.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.05
-                          href: localizations/apac-ind-news-letter-10-0-05.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.06
-                          href: localizations/apac-ind-news-letter-10-0-06.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.07
-                          href: localizations/apac-ind-news-letter-10-0-07.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.08
-                          href: localizations/apac-ind-news-letter-10-0-08.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.09
-                          href: localizations/apac-ind-news-letter-10-0-09.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.10
-                          href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.11
-                          href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.12
-                          href: localizations/apac-ind-news-letter-10-0-12.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.13
-                          href: localizations/ind-news-letter-10-0-13.md
-                        - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.14
-                          href: localizations/apac-ind-news-letter-10-0-14.md
-                    - name: Referenční skupiny indické daně GST
-                      href: localizations/apac-ind-gst-reference-groups.md
-                    - name: GST integrace pro registrační pokladny
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
-                    - name: Nastavení hlavních dat
-                      items:
-                        - name: Vytvoření obchodní vertikály
-                          href: localizations/apac-ind-GST-create-business-vertical.md
-                        - name: Aktualizace kódu státu a svazového teritoria
-                          href: localizations/apac-ind-GST-update-state-code-union-territory.md
-                        - name: Vytvoření základního GSTIN
-                          href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: Definování GSTIN a posloupnost referenčních čísel
-                          href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
-                        - name: Definování kódů HSN a kódů účetnictví služby
-                          href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: Vytvoření typu sazby daně
-                          href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: Vytvoření hlavních účtů pro typ zaúčtování GST
-                          href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-                        - name: Vytvoření období daňového vyrovnání
-                          href: localizations/apac-ind-GST-create-tax-settlement-period.md
-                        - name: Připojení GSTIN ke skupině daňové registrace
-                          href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
-                    - name: Nastavení daně
-                      items:
-                        - name: Nasazení konfigurace daně a její nasazení do právnických osob
-                          href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
-                        - name: Mapování typů konfigurace daně - Cla
-                          href: localizations/apac-ind-GST-map-configuration-tax-types.md
-                        - name: Nastavení tabulek sazeb a procent
-                          href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                        - name: Nastavení hierarchie DPH a pravidel vyrovnání
-                          href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                    - name: Nákupní transakce
-                      items:
-                        - name: Nákupy od neregistrovaných dodavatelů
-                          href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
-                        - name: Nákup zdanitelné položky od neregistrovaného dodavatele
-                          href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
-                        - name: Nákupy od registrovaných dodavatelů
-                          href: localizations/apac-ind-GST-purchases-registered-vendor.md
-                        - name: Nákupy zlevněného zboží
-                          href: localizations/apac-ind-GST-purchase-discounted-goods.md
-                        - name: Nákupy osvobozeného zboží
-                          href: localizations/apac-ind-GST-purchase-exempted-goods.md
-                        - name: Nákupy zboží s nulovou sazbou
-                          href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: Nákupy zboží bez GST
-                          href: localizations/apac-ind-GST-purchase-non-gst-goods.md
-                        - name: Nákupy od kombinovaných prodejců
-                          href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
-                        - name: Nákup zboží podléhajícího dani s přepravními náklady
-                          href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
-                        - name: Kontrola nákupní faktury se zbožím podléhajícím dani
-                          href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
-                        - name: Nákupy dlouhodobého majetku
-                          href: localizations/apac-ind-GST-purchase-fixed-asset.md
-                        - name: Vytvoření dobropisu proti nákupní faktuře
-                          href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
-                        - name: Vytvoření dluhopisu proti nákupní faktuře
-                          href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
-                        - name: Objednávky kvality zahrnující zničení vzorku
-                          href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
-                        - name: Nákupní vratky
-                          href: localizations/apac-ind-GST-purchase-return-order.md
-                        - name: Zálohové platby dodavatele se stornovacími poplatky
-                          href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                    - name: Prodejní transakce
-                      items:
-                        - name: Prodej zboží podléhajícího dani spotřebitelům
-                          href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-                        - name: Prodej registrovaným zákazníkům
-                          href: localizations/apac-ind-GST-sell-registered-customer.md
-                        - name: Volné faktury
-                          href: localizations/apac-ind-GST-free-text-invoices.md
-                        - name: Prodej zboží podléhajícího dani se stornovacím poplatkem
-                          href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-                        - name: Prodej osvobozených položek
-                          href: localizations/apac-ind-GST-sales-exempted-item.md
-                        - name: Prodej zboží s nulovou sazbou
-                          href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: Prodej zboží bez GST
-                          href: localizations/apac-ind-GST-sell-non-gst-goods.md
-                        - name: Prodej zboží podléhajícího dani se slevou a provizorním ohodnocením
-                          href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-                        - name: Prodej zboží podléhajícího dani s daní na přepravních nákladech
-                          href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-                        - name: 'Prodej, kde ceny zahrnují a vylučují daň'
-                          href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-                        - name: Vytvoření dluhopisu proti prodejní faktuře
-                          href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-                        - name: Vytvoření dobropisu proti prodejní faktuře
-                          href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-                        - name: Prodejní faktury rozdělené na základě adresy doručení
-                          href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-                        - name: Vratky
-                          href: localizations/apac-ind-GST-return-order-form.md
-                    - name: Cizí transakce
-                      items:
-                        - name: Dovoz zboží s GST
-                          href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: Dovoz služeb s GST
-                          href: localizations/apac-ind-import-services-gst.md
-                        - name: Vývoz zboží s nulovou sazbou daně
-                          href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                        - name: Vývoz služeb s nulovou sazbou daně
-                          href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: Skladová transakce
-                      items:
-                        - name: Převodní příkazy skladu
-                          href: localizations/apac-ind-stock-transfer.md
-                        - name: Skladové převodní příkazy s daní na mezipodnikové ceně
-                          href: localizations/apac-ind-GST-stock-transfer-transactions.md
-                    - name: Transakce plateb odběratelů
-                      items:
-                        - name: Platby záloh s daní
-                          href: localizations/apac-ind-GST-advance-payment-includes-tax.md
-                        - name: Zálohové platby vyrovnané během zaúčtování faktury
-                          href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-                        - name: Ruční vyrovnání zálohy a faktury zahrnující daň
-                          href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-                        - name: Platby faktur s daní
-                          href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
-                        - name: Kontrola plateb záloh s daní
-                          href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
-                        - name: Refundace platby odběratele
-                          href: localizations/apac-ind-GST-customer-payment-refund.md
-                    - name: Transakce přímé daně
+                        - name: Přehled indické daně GST
+                          href: localizations/apac-ind-gst.md
+                        - name: Daňový modul
+                          items:
+                            - name: Přehled daňového modulu
+                              href: general-ledger/tax-engine.md
+                            - name: Importovat konfiguraci
+                              href: general-ledger/tax-engine-import-configuration.md
+                            - name: Rozšířený návrhář receptur
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                            - name: Použitelnost daňového modulu
+                              href: general-ledger/tax-engine-applicability.md
+                            - name: Vytvoření komponent daně
+                              href: localizations/tax-engine-create-tax-component.md
+                            - name: Integrace daňového modulu
+                              href: general-ledger/tax-engine-integration.md
+                            - name: Rozšíření daňového modulu
+                              href: general-ledger/extend-tax-engine-configurations.md
+                            - name: Vyčištění tabulky TaxDocumentJSON
+                              href: localizations/gte-clean-up-tax-document-json-table.md
+                            - name: Řešení potíží GTE
+                              href: localizations/tax-engine-trouble-shooting.md
+                        - name: Nastavení hlavních dat
+                          items:
+                            - name: Vytvoření obchodní vertikály
+                              href: localizations/apac-ind-GST-create-business-vertical.md
+                            - name: Aktualizace kódu státu a svazového teritoria
+                              href: localizations/apac-ind-GST-update-state-code-union-territory.md
+                            - name: Vytvoření základního GSTIN
+                              href: localizations/apac-ind-GST-create-gstin-master.md
+                            - name: Definování GSTIN a posloupnost referenčních čísel
+                              href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                            - name: Definování kódů HSN a kódů účetnictví služby
+                              href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                            - name: Vytvoření typu sazby daně
+                              href: localizations/apac-ind-GST-create-tax-rate-type.md
+                            - name: Vytvoření hlavních účtů pro typ zaúčtování GST
+                              href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                            - name: Vytvoření období daňového vyrovnání
+                              href: localizations/apac-ind-GST-create-tax-settlement-period.md
+                            - name: Připojení GSTIN ke skupině daňové registrace
+                              href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                        - name: Nastavení daně
+                          items:
+                            - name: Nasazení konfigurace daně a její nasazení do právnických osob
+                              href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                            - name: Mapování typů konfigurace daně - Cla
+                              href: localizations/apac-ind-GST-map-configuration-tax-types.md
+                            - name: Nastavení tabulek sazeb a procent
+                              href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                            - name: Nastavení hierarchie DPH a pravidel vyrovnání
+                              href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                            - name: Referenční skupiny indické daně GST
+                              href: localizations/apac-ind-gst-reference-groups.md
+                        - name: Daňové transakce
+                          items:
+                            - name: Nákupní transakce
+                              items:
+                                - name: Nákupy od neregistrovaných dodavatelů
+                                  href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                                - name: Nákup zdanitelné položky od neregistrovaného dodavatele
+                                  href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                                - name: Nákupy od registrovaných dodavatelů
+                                  href: localizations/apac-ind-GST-purchases-registered-vendor.md
+                                - name: Nákupy zlevněného zboží
+                                  href: localizations/apac-ind-GST-purchase-discounted-goods.md
+                                - name: Nákupy osvobozeného zboží
+                                  href: localizations/apac-ind-GST-purchase-exempted-goods.md
+                                - name: Nákupy zboží s nulovou sazbou
+                                  href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                                - name: Nákupy zboží bez GST
+                                  href: localizations/apac-ind-GST-purchase-non-gst-goods.md
+                                - name: Nákupy od kombinovaných prodejců
+                                  href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                                - name: Nákup zboží podléhajícího dani s přepravními náklady
+                                  href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                                - name: Kontrola nákupní faktury se zbožím podléhajícím dani
+                                  href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                                - name: Nákupy dlouhodobého majetku
+                                  href: localizations/apac-ind-GST-purchase-fixed-asset.md
+                                - name: Vytvoření dobropisu proti nákupní faktuře
+                                  href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                                - name: Vytvoření dluhopisu proti nákupní faktuře
+                                  href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                                - name: Objednávky kvality zahrnující zničení vzorku
+                                  href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                                - name: Nákupní vratky
+                                  href: localizations/apac-ind-GST-purchase-return-order.md
+                                - name: Zálohové platby dodavatele se stornovacími poplatky
+                                  href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                            - name: Prodejní transakce
+                              items:
+                                - name: Prodej zboží podléhajícího dani spotřebitelům
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                                - name: Prodej registrovaným zákazníkům
+                                  href: localizations/apac-ind-GST-sell-registered-customer.md
+                                - name: Volné faktury
+                                  href: localizations/apac-ind-GST-free-text-invoices.md
+                                - name: Prodej zboží podléhajícího dani se stornovacím poplatkem
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                                - name: Prodej osvobozených položek
+                                  href: localizations/apac-ind-GST-sales-exempted-item.md
+                                - name: Prodej zboží s nulovou sazbou
+                                  href: localizations/apac-ind-GST-sell-zero-rated-goods.md
+                                - name: Prodej zboží bez GST
+                                  href: localizations/apac-ind-GST-sell-non-gst-goods.md
+                                - name: Prodej zboží podléhajícího dani se slevou a provizorním ohodnocením
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                                - name: Prodej zboží podléhajícího dani s daní na přepravních nákladech
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                                - name: 'Prodej, kde ceny zahrnují a vylučují daň'
+                                  href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                                - name: Vytvoření dluhopisu proti prodejní faktuře
+                                  href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                                - name: Vytvoření dobropisu proti prodejní faktuře
+                                  href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                                - name: Prodejní faktury rozdělené na základě adresy doručení
+                                  href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                                - name: Vratky
+                                  href: localizations/apac-ind-GST-return-order-form.md
+                            - name: Cizí transakce
+                              items:
+                                - name: Dovoz zboží s GST
+                                  href: localizations/apac-ind-GST-import-goods-gst.md
+                                - name: Dovoz služeb s GST
+                                  href: localizations/apac-ind-import-services-gst.md
+                                - name: Vývoz zboží s nulovou sazbou daně
+                                  href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                                - name: Vývoz služeb s nulovou sazbou daně
+                                  href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                                - name: Dobropis nebo dluhopis proti exportní objednávce
+                                  href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+                            - name: Transkace převodu skladu
+                              items:
+                                - name: Převodní příkazy skladu
+                                  href: localizations/apac-ind-stock-transfer.md
+                                - name: Skladové převodní příkazy s daní na mezipodnikové ceně
+                                  href: localizations/apac-ind-GST-stock-transfer-transactions.md
+                            - name: Transakce plateb odběratelů
+                              items:
+                                - name: Platby záloh s daní
+                                  href: localizations/apac-ind-GST-advance-payment-includes-tax.md
+                                - name: Zálohové platby vyrovnané během zaúčtování faktury
+                                  href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                                - name: Ruční vyrovnání zálohy a faktury zahrnující daň
+                                  href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                                - name: Platby faktur s daní
+                                  href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                                - name: Kontrola plateb záloh s daní
+                                  href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                                - name: Refundace platby odběratele
+                                  href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Úprava daně
+                              items:
+                                - name: Úprava částky daně
+                                  href: localizations/apac-ind-GST-tax-adjustments.md
+                                - name: Vytvoření deníku daně
+                                  href: localizations/apac-ind-GST-tax-journal.md
+                            - name: Dotazy na daňový doklad
+                              items:
+                                - name: Daňový dotaz
+                                  href: localizations/apac-ind-GST-tax-inquiry.md
+                        - name: Vyrovnání daní
+                          items:
+                            - name: Daňové vyrovnání na základě pravidel
+                              href: localizations/apac-ind-GST-tax-settlement.md
+                        - name: Sestavy GSTR
+                          items:
+                            - name: Nové formáty vratek GSTR-1 a GSTR-2
+                              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
+                            - name: "Nový offline nástroj GSTR pro ANX-1\_a nákupní registr"
+                              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+                            - name: Generování dat sestavy GSTR pro vrácení daně
+                              href: localizations/apac-ind-GST-tax-returns.md
+                            - name: Povolení hromadné zpracování pro sestavy GSTR
+                              href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                - name: Přímé daně
+                  items:
+                    - name: Indická srážková daň
                       items:
                         - name: Zahrnutí GST při výpočtu daňových srážek
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: Zahrnutí GST při výpočtu daňových výběrů
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                    - name: Úprava částky daně
-                      href: localizations/apac-ind-GST-tax-adjustments.md
-                    - name: Daňové vyrovnání na základě pravidel
-                      href: localizations/apac-ind-GST-tax-settlement.md
-                    - name: Vytvoření deníku daně
-                      href: localizations/apac-ind-GST-tax-journal.md
-                    - name: Generování dat sestavy GSTR pro vrácení daně
-                      href: localizations/apac-ind-GST-tax-returns.md
-                    - name: Povolení hromadné zpracování pro sestavy GSTR
-                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
-                    - name: Daňový dotaz
-                      href: localizations/apac-ind-GST-tax-inquiry.md
-                    - name: Vyčištění tabulky TaxDocumentJSON
-                      href: localizations/gte-clean-up-tax-document-json-table.md
-                - name: Daňový modul
-                  items:
-                    - name: Přehled daňového modulu
-                      href: general-ledger/tax-engine.md
-                    - name: Importovat konfiguraci
-                      href: general-ledger/tax-engine-import-configuration.md
-                    - name: Rozšířený návrhář receptur
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                    - name: Použitelnost daňového modulu
-                      href: general-ledger/tax-engine-applicability.md
-                    - name: Vytvoření komponent daně
-                      href: localizations/tax-engine-create-tax-component.md
-                    - name: Integrace daňového modulu
-                      href: general-ledger/tax-engine-integration.md
-                    - name: Rozšíření daňového modulu
-                      href: general-ledger/extend-tax-engine-configurations.md
-                    - name: Řešení potíží GTE
-                      href: localizations/tax-engine-trouble-shooting.md
-                - name: Často kladené dotazy týkající se prahových hodnot daní
-                  href: localizations/apac-ind-tax-thresholds.md
+                        - name: Často kladené dotazy týkající se prahových hodnot daní
+                          href: localizations/apac-ind-tax-thresholds.md
+                        - name: TCS při prodeji zboží
+                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
             - name: Itálie
               items:
                 - name: Itálie - přehled
@@ -2568,6 +2592,8 @@
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i.SAF vykazování pro Litvu
                   href: localizations/emea-ltu-isaf.md
+                - name: Soubor standardního auditu pro daň (SAF-T) pro Litvu
+                  href: localizations/emea-ltu-saf-t.md
             - name: Malajsie
               items:
                 - name: Malajsie - přehled
@@ -2930,6 +2956,8 @@
                       href: localizations/rus-deferred-expenses-register.md
                     - name: Daňové registry peněžních toků
                       href: localizations/rus-cash-flow-tax-registers.md
+                    - name: Registry jmenovitých hodnot výdajů
+                      href: localizations/rus-rated-expenses-registers.md
             - name: Saúdská Arábie
               items:
                 - name: Saúdská Arábie - přehled
@@ -3381,11 +3409,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Příprava metadat specifických pro aplikaci
                       items:
-                        - name: (Elektronické výkaznictví) Příprava metadat aplikace k použití v RCS
+                        - name: Příprava metadat aplikace v elektronickém výkaznictví k použití v RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
+                        - name: Přístup k metadatům aplikace v RCS pomocí konfigurace elektronického výkaznictví
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Přístup k metadatům aplikace pomocí připojených aplikací
+                        - name: Přístup k metadatům aplikace v RCS pomocí připojených aplikací
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Definování mapování modelů a výběr zdrojů dat
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3403,7 +3431,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: Upgrade formátu přijetím nové základní verze tohoto formátu
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-            - name: Návrháři receptur v elektronickém výkaznictví
+            - name: Návrháře receptur v elektronickém výkaznictví
               items:
                 - name: Návrhář receptur
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
@@ -3675,7 +3703,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
+            - name: Návrh formátů elektronické výkaznictví pro generování odchozích dokumentů v různých formátech
               items:
                 - name: Návrh konfigurací pro generování odchozích dokumentů ve formátu Excel
                   items:
@@ -3703,7 +3731,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Integrace obrázků a tvarů
                   items:
-                    - name: (Elektronické výkaznictví) Integrace obrázků a tvarů v generovaných dokumentech
+                    - name: Integrace obrázků a tvarů v generovaných dokumentech
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
                     - name: Příklad integrace obrázků a tvarů
                       items:
@@ -3763,8 +3791,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Services (RCS) - funkce globalizace
-                      href: localizations/rcs-globalization-feature.md
+                    - name: Funkce globalizace v RCS
+                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
                     - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
                       items:
                         - name: Stažení konfigurací z RCS
@@ -3896,17 +3924,17 @@
                     - name: Typy cílových míst
                       items:
                         - name: Cílové místo archivu
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
                         - name: Cílové místo e-mailu
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
                         - name: Cílové místo souboru
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
                         - name: Cílové místo Power BI
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
                         - name: Cílové místo tiskárny
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
                         - name: Cílové místo obrazovky
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace cílových míst
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace cílových míst závislých na akcích

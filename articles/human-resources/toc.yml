@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 22. března 2021
+          href: hr-whats-new-2021-03-22.md
         - name: 8. března 2021
           href: hr-whats-new-2021-03-08.md
         - name: 22. února 2021
@@ -265,6 +267,8 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimalizace výkonu pomocí úloh automatického vyčištění
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Reset zablokovaných dávkových úloh
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Analytické sestavy nejsou aktualizovány
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Nelze vytvořit prostředí v centru pro správu Power Apps

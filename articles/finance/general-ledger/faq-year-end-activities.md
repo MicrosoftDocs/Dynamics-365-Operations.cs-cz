@@ -2,11 +2,9 @@
 title: Časté dotazy k aktivitám na konci roku
 description: Toto téma popisuje aktivity související s roční uzávěrkou.
 author: kweekley
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,14 +13,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a9feafcab5969e9ec8fcbb8a6903d7b59505f6ae
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249404"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822824"
 ---
 # <a name="year-end-activities-faq"></a>Časté dotazy k aktivitám na konci roku 
+
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje aktivity související s roční uzávěrkou. Primárně je zaměřeno na otázky ohledně roční uzávěrky hlavní knihy a závazků.
 

@@ -2,11 +2,9 @@
 title: Vítejte v Dynamics 365 Talent
 description: Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/03/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: c1ba1541a05e5cf2874813efa8b6500bdf8adb49
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b5220577108eebf1efe1adf2c64835d287a3e7a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242006"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796645"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Vítejte v Dynamics 365 Talent
 
