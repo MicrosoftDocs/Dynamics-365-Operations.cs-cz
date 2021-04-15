@@ -2,11 +2,9 @@
 title: Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
 description: Tento článek vás provede scénářem, kde je provedeno více částečných plateb, některé v rámci období platební slevy a jiné mimo období platební slevy.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227321"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810335"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
 
@@ -48,9 +46,9 @@ Tato společnost nakupuje zboží od dodavatele 3057. Fabrikam přijme platební
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
+| Dat. plat. slevy           | 7/09/2015 |
 | Částka platební slevy         | -10,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -73,9 +71,9 @@ Potom Anežka zaúčtuje platbu. Faktura má nyní zůstatek 700,00. Na stránce
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**. Anežka může vidět, že již dostala slevu 3,00.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
+| Dat. plat. slevy           | 7/09/2015 |
 | Částka platební slevy         | 0,00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | –3,00     |
@@ -99,10 +97,10 @@ Pokud dodavatel Anežce umožní uplatnit slevu, i když splácí po datu slevy,
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 7:00      |
+| Dat. plat. slevy           | 7/09/2015 |
+| Částka platební slevy         | 7.00      |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | –3,00     |
 | Částka platební slevy k přijetí | –7,00     |
