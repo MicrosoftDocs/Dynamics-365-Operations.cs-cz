@@ -2,7 +2,6 @@
 title: Součásti finančních sestav
 description: Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách.
 author: aprilolson
-manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8015af1970da22f70882739cddb4227825e4e40
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cb4c8f28848659557e3d60a130506ec3ae61b7f8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568816"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743415"
 ---
 # <a name="financial-report-components"></a>Součásti finančních sestav
 

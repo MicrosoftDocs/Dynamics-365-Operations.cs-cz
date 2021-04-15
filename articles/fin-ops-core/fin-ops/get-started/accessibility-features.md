@@ -2,7 +2,6 @@
 title: Funkce usnadnění přístupu
 description: Toto téma popisuje funkci, které je určena uživatelům, kteří mají různá postižení.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 45395113944af6f02d0afb67284dc0d42bdedca4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562428"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744116"
 ---
 # <a name="accessibility-features"></a>Funkce usnadnění přístupu
 
@@ -38,7 +37,7 @@ Pro většinu uživatelů zahrnuje každodenní používání systému velké mn
 
 Každá stránka, ke které se přistupuje pomocí nabídky navigačního podokna, podokna nejvíce vlevo, je rovněž dostupná z pole **Vyhledávání**. Stisknutím kláves Alt + G přesunete výběr na pole **Vyhledávání** a pak můžete zadat název nebo popis stránky.
 
-!["Bankovní účty" zadané do pole vyhledávání](media/6d08b0be32808221023e2aa92d69fd70.png "text "bankovní účty" zadaný ve vyhledávacím poli")
+!["Bankovní účty" zadané do pole vyhledávání](media/6d08b0be32808221023e2aa92d69fd70.png "text &quot;bankovní účty&quot; zadaný ve vyhledávacím poli")
 
 Další informace naleznete v tématu [Hledání za účelem navigace](navigation-search.md).
 
@@ -53,7 +52,7 @@ Ke každé akci, kterou nabízí stránka, se lze dostat z klávesnice pomocí p
 
 Chcete spustit akci **Protokol oznámení e-mailem**, která se zobrazí ve skupině **Oznámení e-mailem** na kartě **Prodejní objednávka** v podokně akcí.
 
-![Akce protokolu e-mailového oznámení v podokně akcí](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg ""Akce protokolu e-mailového oznámení" v podokně akcí")
+![Akce protokolu e-mailového oznámení v podokně akcí](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Akce protokolu e-mailového oznámení&quot; v podokně akcí")
 
 Jedna z možností je použití klávesnice. Stisknutím kombinace kláves Ctrl + F6 přesuňte výběr na podokno akcí a poté stiskněte opakovaně klávesu Tab, abyste se přesunuli přes všechny karty a akce až na výběr akce **Protokol oznámení e-mailem**.
 
@@ -63,11 +62,11 @@ Můžete také spustit akci přímějším způsobem. Kdekoliv na stránce stisk
 
 V poli pro vyhledávání zadejte slova, která popisují akci. Tato akce vám bude k dispozici a lze ji spustit přímo. Například zadáním slov **e-mail**, **oznám** (částečné slovo), nebo **protokol**, je možné "přeskočit" na funkci protokolu oznámení e-mailem.
 
-![Text "E-mail" zadaný ve vyhledávacím poli](media/image4.png "Text "email" zadaný ve vyhledávacím poli")
+![Text "E-mail" zadaný ve vyhledávacím poli](media/image4.png "Text &quot;email&quot; zadaný ve vyhledávacím poli")
 
-![Text "Oznám" zadaný ve vyhledávacím poli](media/image5.png "Text "oznám" zadaný ve vyhledávacím poli")
+![Text "Oznám" zadaný ve vyhledávacím poli](media/image5.png "Text &quot;oznám&quot; zadaný ve vyhledávacím poli")
 
-![Text "Protokol" zadaný ve vyhledávacím poli](media/image6.png "Text "protokol" zadaný ve vyhledávacím poli")
+![Text "Protokol" zadaný ve vyhledávacím poli](media/image6.png "Text &quot;protokol&quot; zadaný ve vyhledávacím poli")
 
 Po dokončení můžete stisknout kombinaci kláves Ctrl + apostrof znovu a vrátit výběr na pole, se kterým jste pracovali před spuštěním hledání akce.
 
@@ -79,7 +78,7 @@ Při každodenním použití systému nejsou třeba k provádění typických ú
 
 Můžete však zjistit, že některá pole, která často používáte k provádění úloh, nejsou zahrnuta ve výchozí posloupnosti karet. V takovém případě, používáte-li Windows Narrator, můžete použít jeho akce klávesnice pro přístup k těmto polím a kontrole jejich obsahu. Případně je můžete zapnout možnost **Rozšířená posloupnost karet** na stránce **Možnosti**. Tato možnost učiní všechny upravitelná pole a pole jen pro čtení součástí posloupnosti karet. Poté můžete použít individuální nastavení stránky k vytvoření vlastní posloupnosti karet a vyloučit pole, která nemusí být součástí posloupnosti karet. Další informace o individuálním nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
-![Možnost "rozšířená posloupnost karet"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Možnost "Rozšířená posloupnost karet"")
+![Možnost "rozšířená posloupnost karet"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Možnost &quot;Rozšířená posloupnost karet&quot;")
 
 ## <a name="form-patterns"></a>Vzory formulářů
 

@@ -2,7 +2,6 @@
 title: Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 description: Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa9910ec65899926a57b974f7e9a3f1f2becc5d9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0c97b0bb3f18408cb4defe0a7aa52a5a5a08ce04
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566521"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749771"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
