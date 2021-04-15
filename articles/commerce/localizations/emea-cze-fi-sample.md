@@ -2,11 +2,9 @@
 title: Ukázka integrace fiskální služby pro Českou republiku
 description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku.
 author: josaw
-manager: annbe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1cd5dead8906b37c30acea7acbd26f53e2e10ee4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d9c001ba203a1ec06d416ffaee28f2aee3a5a211
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225731"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798841"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
