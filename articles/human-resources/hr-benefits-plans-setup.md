@@ -2,11 +2,9 @@
 title: Vytvoření plánu zaměstnaneckých výhod
 description: Nastavení plánů zaměstnaneckých výhod v Dynamics 365 Human Resources
 author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d398da8fa53f39cfbdc3911d5acd0967f0c5d5b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: da11799d3340798067fc03061159896f44750c77
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464271"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805723"
 ---
-# <a name="create-a-benefits-plan"></a>Vytvoření plánu zaměstnaneckých výhod
+# <a name="create-a-benefit-plan"></a>Vytvoření plánu zaměstnaneckých výhod
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -46,9 +44,8 @@ V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výh
    | **Program** | Určuje program, který má volitelně přiřadit plán. |
    | **Sada** | Určuje sadu, která má volitelně přiřadit plán. |
    | **Mistr** | Určuje, zda je plán hlavním plánem v sadě, ke které je přiřazen. |
-   | **Stav** | Ukazuje aktuální stav plánu zaměstnaneckých výhod. Výchozí hodnota je Aktivní. Pokud změníte stav na neaktivní, plán nebude k dispozici pro výběr při registraci. |
    | **Platnost do data a času** | Datum a čas začátku plánu. Výchozí hodnotou je aktuální systémové datum. |
-   | **Platný do data a času** | Datum a čas konce plánu (stav je nastaven na neaktivní). Výchozí hodnota je 12/31/2154, což znamená nikdy. |
+   | **Platný do data a času** | Datum a čas konce plánu. Výchozí hodnota je 12/31/2154, což znamená nikdy. |
 
 4. Na kartě **Konfigurace** zadejte hodnoty následujících polí v závislosti na typu plánu, který vytváříte:
 
@@ -56,18 +53,18 @@ V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výh
    | --- | --- | --- |
    | Zdravotnictví (zdravotní, zubní, oční, HMO) | COBRA | Určuje, zda má plán nárok na COBRA (Zákon o sesouhlasení konsolidovaného rozpočtu na Omnibus). |
    | Zdravotnictví (zdravotní, zubní, oční, HMO) | HIPAA | Určuje, zda má plán nárok na HIPAA (zákon o přenositelnost zdravotního pojištění a zodpovědnosti). |
-   | <ul><li>Zdravotnictví (zdravotní, zubní, oční, HMO)</li><li>Ostatní (PTO, Fitness)</li><li>Další</li><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li><li>Úspory (například 401 (k))</li><li>FSA</li></ul> | Před zdaněním způsobilý | Určuje, zda lze příspěvky na plán provést před uplatněním daní. |
-   | <ul><li>Zdravotnictví (zdravotní, zubní, oční, HMO)</li><li>Ostatní (PTO, Fitness)</li><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li><li>Úspory (například 401 (k))</li><li>FSA</li></ul> | Po zdanění způsobilé | Určuje, zda lze příspěvky na plán provést po uplatnění daní. |
-   | <ul><li>Zdravotnictví (zdravotní, zubní, oční, HMO)</li><li>Ostatní (PTO, Fitness)</li><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li><li>Úspory (například 401 (k))</li><li>FSA</li></ul> | Přispěvatel | Určuje, kdo přispívá k plánu – zaměstnanec, zaměstnavatel nebo oba. |
-   | <ul><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li></ul> | Minimální pokrytí | Minimální částka pojistného krytí požadovaná pro plán. |
-   | <ul><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li></ul> | Maximální pokrytí | Maximální částka pojistného krytí požadovaná pro plán. |
-   | <ul><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li></ul> | Použít přírůstky pokrytí | Určuje, zda se má ověřit, zda částka pokrytí odpovídá platné přírůstkové částce. |
-   | <ul><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li></ul> | Přírůstková částka | Přírůstková částka pojistného krytí požadovaná pro plán. Je-li například přírůstková částka 1 000, zaměstnanec nemůže mít pojištění ve výši 200 500, kterou by bylo nutné zaokrouhlit nahoru na $201 000 nebo dolů na $200 000. |
-   | <ul><li>Dlouhodobé postižení</li><li>ADD (základní životní, dobrovolnictví)</li></ul> | Přírůstkový směr | Určuje směr zaokrouhlení, buď nahoru nebo dolů, když částka pokrytí nesplňuje hodnotu přírůstkové částky. |
+   | Zdravotnictví (zdravotní, zubní, oční, HMO)<br><br>Ostatní (PTO, Fitness)<br><br>Další<br><br>Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví)<br><br>Úspory (například 401 (k))<br><br>FSA | Před zdaněním způsobilý | Určuje, zda lze příspěvky na plán provést před uplatněním daní. |
+   | Zdravotnictví (zdravotní, zubní, oční, HMO)<br><br>Ostatní (PTO, Fitness)<br><br>Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví)<br><br>Úspory (například 401 (k))<br><br>FSA | Po zdanění způsobilé | Určuje, zda lze příspěvky na plán provést po uplatnění daní. |
+   | Zdravotnictví (zdravotní, zubní, oční, HMO)<br><br>Ostatní (PTO, Fitness)<br><br>Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví)<br><br>Úspory (například 401 (k))<br><br>FSA | Přispěvatel | Určuje, kdo přispívá k plánu – zaměstnanec, zaměstnavatel nebo oba. |
+   | Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví) | Minimální pokrytí | Minimální částka pojistného krytí požadovaná pro plán. |
+   | Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví) | Maximální pokrytí | Maximální částka pojistného krytí požadovaná pro plán. |
+   | Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví) | Použít přírůstky pokrytí | Určuje, zda se má ověřit, zda částka pokrytí odpovídá platné přírůstkové částce. |
+   | Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví) | Přírůstková částka | Přírůstková částka pojistného krytí požadovaná pro plán. Je-li například přírůstková částka 1 000, zaměstnanec nemůže mít pojištění ve výši 200 500, kterou by bylo nutné zaokrouhlit nahoru na $201 000 nebo dolů na $200 000. |
+   | Dlouhodobé postižení<br><br>ADD (základní životní, dobrovolnictví) | Přírůstkový směr | Určuje směr zaokrouhlení, buď nahoru nebo dolů, když částka pokrytí nesplňuje hodnotu přírůstkové částky. |
    | ADD (základní životní, dobrovolnictví) | Důkaz pojistitelnosti | Určuje, zda zaměstnanec musí poskytovat doklad o pojistitelnosti. |
    | ADD (základní životní, dobrovolnictví) | Množství | Částka v zúčtovací měně. Toto pole je aktivní, jen když je zaškrtnuté políčko Doklad o pojistitelnosti. |
-   | <ul><li>Úspory (například 401 (k))</li><li>FSA</li></ul> | Minimální roční příspěvek | Minimální částka příspěvku požadovaná pro plán. |
-   | <ul><li>Úspory (například 401 (k))</li><li>FSA</li></ul> | Maximální roční příspěvek | Maximální částka příspěvku požadovaná pro plán. |
+   | Úspory (například 401 (k))<br><br>FSA | Minimální roční příspěvek | Minimální částka příspěvku požadovaná pro plán. |
+   | Úspory (například 401 (k))<br><br>FSA | Maximální roční příspěvek | Maximální částka příspěvku požadovaná pro plán. |
    | Úspory (například 401 (k)) | Maximální roční částka zaměstnavatele | Maximální částka, kterou může zaměstnavatel přispívat k plánu úspory zaměstnanců během období zaměstnanecké výhody. Pro použití této možnosti je také nutné zaškrtnout políčko Shoda zaměstnavatele. |
    | Úspory (například 401 (k)) | Dorovnání zaměstnavatele | Určuje, zda zaměstnavatel přispívá k plánu úspor zaměstnance. |
    | Úspory (například 401 (k)) | Procento dorovnání zaměstnavatele | Procento příspěvku zaměstnance, které zaměstnavatel dorovná. |
@@ -122,7 +119,7 @@ Můžete zobrazit pracovníky, kteří jsou registrovaní ve vybraném plánu v�
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte **Registrovaní pracovníci**.
+2. Na kartě **Výhody** v navigačním panelu vyberte možnost **Zapsaní pracovníci**.
 
 ## <a name="attach-coverage-options"></a>Připojit možnosti pokrytí
 
@@ -130,7 +127,7 @@ K vybraným plánům zaměstnaneckých výhod lze přidávat možnosti disponibi
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte možnost **připojit možnosti pokrytí**.
+2. Na kartě **Výhody** v navigačním panelu vyberte možnost **Připojit možnosti pokrytí**.
 
 ## <a name="override-eligibility-rules"></a>Přepis pravidel nároku
 
@@ -138,7 +135,7 @@ Do plánu můžete přidat pracovníky jako výjimky z pravidel způsobilosti. K
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte **Přepis pravidel nároku**.
+2. Na kartě **Výhody** v navigačním panelu vyberte možnost **Přepis pravidel nároku**.
 
 ## <a name="view-attached-periods"></a>Zobrazit připojená období
 
@@ -146,21 +143,21 @@ Můžete zobrazit seznam dostupných období zaměstnaneckých výhod.
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte **Období**.
+2. Na navigačním panelu vyberte kartu **Období**.
 
-## <a name="view-plan-information"></a>Zobrazit informace o plánu
+## <a name="view-plan-description"></a>Zobrazení popisu plánu
 
-Můžete zadat popis plánu, který pomůže zaměstnancům s jejich zaměstnaneckými výhodami. Informace o plánu, které zde zadáte, se zobrazí v poli Samoobsluha zaměstnance při umístění ukazatele myši na plán v seznamu možnosti disponibility.
+Můžete zadat popis plánu, který pomůže zaměstnancům s jejich zaměstnaneckými výhodami. Popis plánu, který zde zadáte, se zobrazí v poli Samoobsluha zaměstnance při umístění ukazatele myši na plán v seznamu možnosti pokrytí.
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte **informace o plánu**.
+2. Na kartě **Výhody** v navigačním panelu vyberte možnost **Popis plánu**.
 
 ## <a name="view-flex-credit-programs"></a>Zobrazit programy flexibilních kreditů
 
 1. V pracovním prostoru **Správa zaměstnaneckých výhod** v části **Plány** vyberte možnost **plány zaměstnaneckých výhod**.
 
-2. Vyberte **Programy flexibilního kreditu**.
+2. Na kartě **Výhody** v navigačním panelu vyberte možnost **Programy flexibilních kreditů**.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

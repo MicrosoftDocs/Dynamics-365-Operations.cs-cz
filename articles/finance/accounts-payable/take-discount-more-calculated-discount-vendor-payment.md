@@ -2,11 +2,9 @@
 title: Použití větší slevy, než je vypočítaná, pro platbu dodavatele
 description: Tento článek vás provede scénářem, kde je využita platební sleva pro částku vyšší, než je sleva, která byla původně k dispozici na faktuře. K této situaci může dojít v případě, že organizace sestaví dohodu s dodavatelem, podle které zaplatí menší částku na faktuře.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a56331f76867aeac0bad0912749d96f959513e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 62f2088ff04a0ef5ffe6ffe47b85f47e6957264d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235878"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810239"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Použití větší slevy, než je vypočítaná, pro platbu dodavatele
 
@@ -38,10 +36,10 @@ Dodavatel 3051 umožňuje společnosti Fabrikam přijmout platební slevu 4 %, p
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 12. 7. 2015 |
-| Částka platební slevy         | 60,00     |
+| Dat. plat. slevy           | 12. 7. 2015 |
+| Částka platební slevy         | 60.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 60,00     |

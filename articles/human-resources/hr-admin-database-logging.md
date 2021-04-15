@@ -2,11 +2,9 @@
 title: Konfigurace a správa protokolování databáze
 description: Můžete sledovat změny tabulek a polí v Dynamics 365 Human Resources s protokolováním databáze.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467642"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801328"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurace a správa protokolování databáze
 
@@ -68,7 +66,22 @@ Chcete-li vylepšit výkon, omezte položky protokolu výběrem konkrétních po
 Můžete použít průvodce **Protokolováním změn databáze** k nastavení protokolování databáze. Průvodce poskytuje flexibilní způsob nastavení protokolování tabulek nebo polí.
 
 1. Přejděte na **Správa systému > Odkazy > Databáze > Nastavení protokolu databáze**. Výběrem tlačítka **Nový** spusťte průvodce **změnami protokolování databáze**.
-2. Průvodce dokončete.
+2. Zvolte **Další**. 
+3. Na stránce **Tabulky a pole** průvodce vyberte tabulky a pole, u kterých chcete povolit protokolování databáze, a vyberte možnost **Další**.
+
+   > [!Note]
+   > Protokolování databáze není k dispozici u všech tabulek v databázi aplikace Human Resources. Výběrem možnosti **Zobrazit všechny tabulky** pod seznamem rozbalíte seznam tabulek a polí, aby se zobrazily všechny databázové tabulky, u kterých je k dispozici protokolování databáze, ale toto bude jen podmnožina úplného seznamu databázových tabulek.
+
+4. Na stránce **Typy změn** průvodce vyberte datové operace, u kterých chcete sledovat změny pro každou z tabulek a polí, a vyberte možnost **Další**. V následující tabulce najdete popis datových operací, které jsou k dispozici u protokolování.
+5. Na stránce **Dokončit** zkontrolujte provedené změny a vyberte možnost **Dokončit**.
+
+| Operace | popis |
+| -- | -- |
+| Sledovat nové transakce | Vytvořte protokol pro nové záznamy, které jsou vytvořeny v tabulce. |
+| Aktualizace | Vytvořte protokol pro aktualizace záznamů tabulky nebo aktualizace jednotlivě vybraných polí v tabulce. Pokud se rozhodnete protokolovat aktualizace pro tabulku, vytvoří se záznam protokolu pokaždé, když se provede aktualizace jakéhokoli pole libovolného záznamu v tabulce. Pokud se rozhodnete protokolovat aktualizace pro konkrétní pole, záznam protokolu se vytvoří, pouze když se provedou aktualizace těchto polí záznamů tabulky. |
+| Odstranit | Vytvořte protokol pro záznamy odstraněné z tabulky. |
+| Přejmenovat klíč | Vytvořte záznam protokolu při přejmenování klíče tabulky. |
+
 
 ## <a name="clean-up-database-logs"></a>Vyčištění protokolů databáze
 

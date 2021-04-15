@@ -2,7 +2,6 @@
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 22. února 2021
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 22. únoru 2021.
 author: marcelbf
-manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
@@ -18,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 363ea7d47a46234b2854a073029859c31277d88f
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 53e9c42f718665165be97e5022a9e767b0436e59
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579348"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802208"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 22. února 2021
 

@@ -2,11 +2,9 @@
 title: Hierarchie dimenzí
 description: V tomto tématu jsou informace o hierarchiích dimenzí. Hierarchie dimenzí se používá k definování struktury sestav, zásad nákladů a nastavení zabezpečení v nákladovém účetnictví.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217379"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810167"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchie dimenzí
 
@@ -124,12 +122,13 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 Hierarchii dimenzí pro vykazování lze nastavit tak, jak je uvedeno zde.
 
-|                   | Rozsahy členu dimenze   |                         |
+**Rozsahy členu dimenze**
+
+|   Uzly           |   Od členu dimenze   |   Po člen dimenze   |
 |-------------------|---------------------------|-------------------------|
-| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace      |                           |                         |
 | &nbsp;&nbsp;Správce         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Výroba    |                           |                         |
@@ -146,12 +145,13 @@ Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit zde uveden�
 
 Hierarchii dimenzí pro zásady lze nastavit tak, jak je uvedeno zde.
 
-|                   | Rozsahy členu dimenze   |                         |
+**Rozsahy členu dimenze**
+
+|   Uzly           |   Od členu dimenze   |   Po člen dimenze   |
 |-------------------|---------------------------|-------------------------|
-| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
 | Chování nákladů     |                           |                         |
 | &nbsp;&nbsp;Pevné náklady    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
 
 > [!NOTE]
 > Pod možností **Rozsahy členu dimenze** může uzel obsahovat rozsahy členu dimenze 1:_n_. Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze. Tento postup dělá hierarchii odolnou do budoucna.  
@@ -297,9 +297,10 @@ Všichni manažeři budou potenciálně mít přístup k vysoce citlivým obchod
 
 V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé**. Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.
 
-|                 | Uživatelé            | Rozsahy členu dimenze   |                         |
+**Rozsahy členu uživatelů a dimenze**
+
+|   Uzly         |   ID uživatele        |   Z členu dimenze   |   Po člen dimenze   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Uzly**       | **ID uživatele**      | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Správce         | Duben            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
