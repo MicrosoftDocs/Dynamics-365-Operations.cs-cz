@@ -2,7 +2,6 @@
 title: Funkce el. výkaznictví TABLENAME2ID
 description: Toto téma obsahuje obecné informace o použití funkce TABLENAME2ID elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,48 +15,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49370af4ebb7552dd3aff4512890fd93fa67c72d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0f94d00d9d40830d895e906ffbaa2a236f1efc43
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563263"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746548"
 ---
-# <a name="tablename2id-er-function"></a><span data-ttu-id="fd074-103">Funkce el. výkaznictví TABLENAME2ID</span><span class="sxs-lookup"><span data-stu-id="fd074-103">TABLENAME2ID ER function</span></span>
+# <a name="tablename2id-er-function"></a><span data-ttu-id="7b21f-103">Funkce el. výkaznictví TABLENAME2ID</span><span class="sxs-lookup"><span data-stu-id="7b21f-103">TABLENAME2ID ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fd074-104">Funkce `TABLENAME2ID` vrátí číselnou reprezentaci ID tabulky pro zadaný název tabulky jako *celočíselnou* hodnotu.</span><span class="sxs-lookup"><span data-stu-id="fd074-104">The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.</span></span>
+<span data-ttu-id="7b21f-104">Funkce `TABLENAME2ID` vrátí číselnou reprezentaci ID tabulky pro zadaný název tabulky jako *celočíselnou* hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7b21f-104">The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fd074-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="fd074-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7b21f-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="7b21f-105">Syntax</span></span>
 
 ```vb
 TABLENAME2ID (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="fd074-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="fd074-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="7b21f-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="7b21f-106">Arguments</span></span>
 
-<span data-ttu-id="fd074-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="fd074-107">`text`: *String*</span></span>
+<span data-ttu-id="7b21f-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="7b21f-107">`text`: *String*</span></span>
 
-<span data-ttu-id="fd074-108">Textová hodnota, která představuje platný název tabulky.</span><span class="sxs-lookup"><span data-stu-id="fd074-108">A text value that represents a valid table name.</span></span>
+<span data-ttu-id="7b21f-108">Textová hodnota, která představuje platný název tabulky.</span><span class="sxs-lookup"><span data-stu-id="7b21f-108">A text value that represents a valid table name.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="fd074-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="fd074-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7b21f-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="7b21f-109">Return values</span></span>
 
-<span data-ttu-id="fd074-110">*Celé číslo*</span><span class="sxs-lookup"><span data-stu-id="fd074-110">*Integer*</span></span>
+<span data-ttu-id="7b21f-110">*Celé číslo*</span><span class="sxs-lookup"><span data-stu-id="7b21f-110">*Integer*</span></span>
 
-<span data-ttu-id="fd074-111">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="fd074-111">The resulting numeric value.</span></span>
+<span data-ttu-id="7b21f-111">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="7b21f-111">The resulting numeric value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="fd074-112">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="fd074-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="7b21f-112">Poznámky k použití</span><span class="sxs-lookup"><span data-stu-id="7b21f-112">Usage notes</span></span>
 
-<span data-ttu-id="fd074-113">Spuštění této funkce může mít různé výsledky v různých instancích aplikace Microsoft Dynamics 365 Finance, i když je použit stejný název společnosti.</span><span class="sxs-lookup"><span data-stu-id="fd074-113">Execution of this function can have different results in different instances of Microsoft Dynamics 365 Finance, even if the same company name is used.</span></span>
+<span data-ttu-id="7b21f-113">Spuštění této funkce může mít různé výsledky v různých instancích aplikace Microsoft Dynamics 365 Finance, i když je použit stejný název společnosti.</span><span class="sxs-lookup"><span data-stu-id="7b21f-113">Execution of this function can have different results in different instances of Microsoft Dynamics 365 Finance, even if the same company name is used.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fd074-114">Příklad</span><span class="sxs-lookup"><span data-stu-id="fd074-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7b21f-114">Příklad</span><span class="sxs-lookup"><span data-stu-id="7b21f-114">Example</span></span>
 
-<span data-ttu-id="fd074-115">`TABLENAME2ID ("Intrastat")` vrátí **1510**.</span><span class="sxs-lookup"><span data-stu-id="fd074-115">`TABLENAME2ID ("Intrastat")` returns **1510**.</span></span>
+<span data-ttu-id="7b21f-115">`TABLENAME2ID ("Intrastat")` vrátí **1510**.</span><span class="sxs-lookup"><span data-stu-id="7b21f-115">`TABLENAME2ID ("Intrastat")` returns **1510**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="fd074-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="fd074-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7b21f-116">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="7b21f-116">Additional resources</span></span>
 
-[<span data-ttu-id="fd074-117">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="fd074-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="7b21f-117">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="7b21f-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
