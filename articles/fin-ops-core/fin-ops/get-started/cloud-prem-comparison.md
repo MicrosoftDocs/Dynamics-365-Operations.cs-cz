@@ -2,7 +2,6 @@
 title: Srovnání funkcí cloudu a on-premises
 description: Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744044"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
@@ -43,9 +42,9 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |---------------------|-----------------------------|-----------|-----------------|
 | Dodržování předpisů a certifikáty        |                                                                                           | Ano       | Ano             |
 |                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Ne              |
-| Integrace a správa dat      |                                                                                           | Ano       | Ano             
+| Integrace a správa dat      |                                                                                           | Ano       | Ano             |
 |                                      | Export dat do svého vlastního datového skladu                                                    | Ano       | Ano             |
-|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano              |
+|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano             |
 |                                      | Integrace dat                                                                         | Ano       | Ano             |
 | Správa dokumentů                  |                                                                                           | Ano       | Ano             |
 | Správa financí                 |                                                                                           | Ano       | Ano             |
@@ -62,8 +61,8 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
 |                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
 |                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
-|                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ne              |
-|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Ne              |
+|                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ano             |
+|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Žádný              |
 | Lifecycle Services                   |                                                                                           | Ano       | Ano             |
 |                                      | Konfigurovatelné obchodní procesy                                                           | Ano       | Ne              |
 | Lokalizace                        |                                                                                           | Ano       | Ano             |
@@ -85,7 +84,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 
 | **Plošný**                | **Funkce**             | **Cloud** | **Místní** |
 |-------------------------|-------------------|-----------|-----------------|
-| Správa majetku                     |                                                                                           | Ano       | Žádný |
+| Správa majetku                     |                                                                                           | Ano       | Žádný              |
 | Dodržování předpisů a certifikáty        |                                                                                           | Ano       | Ano             |
 |                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Žádný              |
 | Nákladové účetnictví                      |                                                                                           | Ano       | Ano             |
@@ -96,7 +95,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 | Integrace a správa dat      |                                                                                           | Ano       | Ano             |
 |                                      | Rozšíření na základě konfigurace                                                            | Ano       | Žádný              |
 |                                      | Export dat do svého vlastního datového skladu                                                    | Ano       | Ano             |
-|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano              |
+|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano             |
 |                                      | Integrace dat                                                                         | Ano       | Ano             |
 | Správa dokumentů                  |                                                                                           | Ano       | Ano             |
 | Nápověda                                 |                                                                                           | Ano       | Ne              |
@@ -111,7 +110,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
 |                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
 |                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
-|                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Žádný              |
+|                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ano             |
 |                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Žádný              |
 | Řízení zásob                 |                                                                                           | Ano       | Ano             |
 | Lifecycle Services                   |                                                                                           | Ano       | Ano             |

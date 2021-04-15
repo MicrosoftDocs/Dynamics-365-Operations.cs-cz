@@ -2,8 +2,7 @@
 title: Domovská stránka Místní nasazení
 description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564053"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749298"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -38,12 +37,14 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 
 ## <a name="onboard"></a>Zaškolení
 - [Nastavení místních projektů ve službě Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Nastavení a nasazení místních prostředí (Platform update 12 a novější)](setup-deploy-on-premises-pu12.md)
+- [Nastavení a nasazení místních prostředí (Platform update 41 a novější)](setup-deploy-on-premises-pu41.md)
+- [Nastavení a nasazení místních prostředí (Platform Update 12 až 40)](setup-deploy-on-premises-pu12.md)
 - [Instalace zařízení síťové tiskárny v místních prostředích](../analytics/install-network-printer-onprem.md)
 - [Konfigurace služby SQL Server Reporting Services pro místní nasazení](../analytics/configure-ssrs-on-premises.md)
 - [Vývoj a nasazení vlastních modelů do místních prostředí](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Práce v místním nasazení
+- [Konfigurace vysoké dostupnosti pro uzly SQL Server Reporting Services (SSRS)](onprem-SSRSHA.md)
 - [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import konfigurací elektronického výkaznictví](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generování dokumentů, publikování a tisk v nasazeních on-premises](../analytics/printing-capabilities-on-premises.md)

@@ -2,8 +2,7 @@
 title: Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 description: Toto téma obsahuje informace o tom, jak navrhnout formát elektronického výkaznictví pro vyplnění šablony PDF.
 author: NickSelin
-manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ac7f1c3fc0b03a42012ea14369eef554c6ea30f3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561775"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753281"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -46,15 +45,15 @@ Než začnete, musíte mít v závislosti na službě, kterou používáte k dok
 
 Je také nutné dokončit postup [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Nakonec je nutné stáhnout následující soubory z [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
+Nakonec si stáhněte následující soubory.
 
 | Popis obsahu                       | Název souboru                                     |
 |-------------------------------------------|-----------------------------------------------|
-| Šablona pro první stránku sestavy | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
-| Šablona pro další stránky sestavy    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
-| Ukázkový formát elektronického výkaznictví - PDF                          | [Sestava Intrastat (PDF).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
-| Ukázkový formát elektronického výkaznictví - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
-| Ukázková datová sada                            | [Intrastat sample data.xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
+| Šablona pro první stránku sestavy | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
+| Šablona pro další stránky sestavy    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
+| Ukázkový formát elektronického výkaznictví - PDF                          | [Sestava Intrastat (PDF).version.1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
+| Ukázkový formát elektronického výkaznictví - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
+| Ukázková datová sada                            | [Intrastat sample data.xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
 
 ## <a name="design-the-format-configuration"></a>Návrh konfigurace formátu
 
