@@ -2,11 +2,9 @@
 title: Nastavit kódy vykazování DPH
 description: Kódy vykazování DPH odkazují na číslo pole uvedené v sestavě DPH.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
@@ -15,28 +13,28 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: be24e18da63d1a613c3c6e72f7c767c7af9b6656
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1e040bac6ef9e950e8d7f97e3c136636acf1fe43
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222136"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813524"
 ---
-# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="425ba-103">Nastavit kódy vykazování DPH</span><span class="sxs-lookup"><span data-stu-id="425ba-103">Set up sales tax reporting codes</span></span>
+# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="a45b3-103">Nastavit kódy vykazování DPH</span><span class="sxs-lookup"><span data-stu-id="a45b3-103">Set up sales tax reporting codes</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="425ba-104">Kódy vykazování DPH odkazují na číslo pole uvedené v sestavě DPH.</span><span class="sxs-lookup"><span data-stu-id="425ba-104">The Sales tax reporting codes refer to a field number that's listed on a sales tax report.</span></span> <span data-ttu-id="425ba-105">Používají se na rozložení sestavy specifickém pro zemi.</span><span class="sxs-lookup"><span data-stu-id="425ba-105">They are used on country-specific report layouts.</span></span> <span data-ttu-id="425ba-106">Používají se také v sestavě platby DPH podle kódu.</span><span class="sxs-lookup"><span data-stu-id="425ba-106">They're also used on the Sales tax payment by code report.</span></span> <span data-ttu-id="425ba-107">Tato sestava zobrazuje částky daně z obratu za období vypořádání shrnuté pro každý kód vykazování.</span><span class="sxs-lookup"><span data-stu-id="425ba-107">That report shows sales tax amounts for a settlement period summarized for each reporting code.</span></span> <span data-ttu-id="425ba-108">Jakmile vytvoříte kódy vykazování DPH, můžete na ně odkazovat na pevných záložkách Nastavení sestavy, k nimž přejdete ze stránky **Kódy DPH**.</span><span class="sxs-lookup"><span data-stu-id="425ba-108">After you create Sales tax reporting codes, you can refer to those codes on the Report setup FastTabs, which you can access from the **Sales tax code** page.</span></span> 
+<span data-ttu-id="a45b3-104">Kódy vykazování DPH odkazují na číslo pole uvedené v sestavě DPH.</span><span class="sxs-lookup"><span data-stu-id="a45b3-104">The Sales tax reporting codes refer to a field number that's listed on a sales tax report.</span></span> <span data-ttu-id="a45b3-105">Používají se na rozložení sestavy specifickém pro zemi.</span><span class="sxs-lookup"><span data-stu-id="a45b3-105">They are used on country-specific report layouts.</span></span> <span data-ttu-id="a45b3-106">Používají se také v sestavě platby DPH podle kódu.</span><span class="sxs-lookup"><span data-stu-id="a45b3-106">They're also used on the Sales tax payment by code report.</span></span> <span data-ttu-id="a45b3-107">Tato sestava zobrazuje částky daně z obratu za období vypořádání shrnuté pro každý kód vykazování.</span><span class="sxs-lookup"><span data-stu-id="a45b3-107">That report shows sales tax amounts for a settlement period summarized for each reporting code.</span></span> <span data-ttu-id="a45b3-108">Jakmile vytvoříte kódy vykazování DPH, můžete na ně odkazovat na pevných záložkách Nastavení sestavy, k nimž přejdete ze stránky **Kódy DPH**.</span><span class="sxs-lookup"><span data-stu-id="a45b3-108">After you create Sales tax reporting codes, you can refer to those codes on the Report setup FastTabs, which you can access from the **Sales tax code** page.</span></span> 
 
-<span data-ttu-id="425ba-109">Tento záznam používá ukázkovou společnost DEMF.</span><span class="sxs-lookup"><span data-stu-id="425ba-109">This recording uses the DEMF demo company.</span></span>
+<span data-ttu-id="a45b3-109">Tento záznam používá ukázkovou společnost DEMF.</span><span class="sxs-lookup"><span data-stu-id="a45b3-109">This recording uses the DEMF demo company.</span></span>
 
-1. <span data-ttu-id="425ba-110">V **Navigačním podokně** přejděte na **Daň > Nepřímé daně > DPH > Kódy vykazování DPH**.</span><span class="sxs-lookup"><span data-stu-id="425ba-110">In the **Navigation pane**, go to **Tax > Setup > Sales tax > Sales tax reporting codes**.</span></span>
-2. <span data-ttu-id="425ba-111">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="425ba-111">Click **New**.</span></span>
-3. <span data-ttu-id="425ba-112">Vyberte rozvržení sestavy, do které patří kód vykazování.</span><span class="sxs-lookup"><span data-stu-id="425ba-112">Select the report layout that the reporting code belongs to.</span></span> <span data-ttu-id="425ba-113">Toto rozvržení slouží k filtrování dostupných kódů vykazování pro kód DPH.</span><span class="sxs-lookup"><span data-stu-id="425ba-113">This layout is used to filter the available reporting codes for a sales tax code.</span></span> <span data-ttu-id="425ba-114">Každý kód DPH patří do období vyrovnání, které patří finančnímu úřadu používajícímu rozvržení sestavy.</span><span class="sxs-lookup"><span data-stu-id="425ba-114">Each sales tax code belongs to a settlement period, which belongs to a Sales tax authority, which uses a report layout.</span></span>  
-4. <span data-ttu-id="425ba-115">Zadejte číslo do pole **Kód vykazování-**.</span><span class="sxs-lookup"><span data-stu-id="425ba-115">In the **Reporting code** field, enter a number.</span></span>
-5. <span data-ttu-id="425ba-116">V poli **Text sestavy** zadejte popis, který se zobrazí v sestavách.</span><span class="sxs-lookup"><span data-stu-id="425ba-116">In the **Report text** field, enter a description to display on reports.</span></span>
-6. <span data-ttu-id="425ba-117">V poli **Stručný popis** zadejte popis pro interní účely.</span><span class="sxs-lookup"><span data-stu-id="425ba-117">In the **Brief description** field, enter a description for internal purposes.</span></span>
-7. <span data-ttu-id="425ba-118">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="425ba-118">Click **Save**.</span></span>
+1. <span data-ttu-id="a45b3-110">V **Navigačním podokně** přejděte na **Daň > Nepřímé daně > DPH > Kódy vykazování DPH**.</span><span class="sxs-lookup"><span data-stu-id="a45b3-110">In the **Navigation pane**, go to **Tax > Setup > Sales tax > Sales tax reporting codes**.</span></span>
+2. <span data-ttu-id="a45b3-111">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="a45b3-111">Click **New**.</span></span>
+3. <span data-ttu-id="a45b3-112">Vyberte rozvržení sestavy, do které patří kód vykazování.</span><span class="sxs-lookup"><span data-stu-id="a45b3-112">Select the report layout that the reporting code belongs to.</span></span> <span data-ttu-id="a45b3-113">Toto rozvržení slouží k filtrování dostupných kódů vykazování pro kód DPH.</span><span class="sxs-lookup"><span data-stu-id="a45b3-113">This layout is used to filter the available reporting codes for a sales tax code.</span></span> <span data-ttu-id="a45b3-114">Každý kód DPH patří do období vyrovnání, které patří finančnímu úřadu používajícímu rozvržení sestavy.</span><span class="sxs-lookup"><span data-stu-id="a45b3-114">Each sales tax code belongs to a settlement period, which belongs to a Sales tax authority, which uses a report layout.</span></span>  
+4. <span data-ttu-id="a45b3-115">Zadejte číslo do pole **Kód vykazování-**.</span><span class="sxs-lookup"><span data-stu-id="a45b3-115">In the **Reporting code** field, enter a number.</span></span>
+5. <span data-ttu-id="a45b3-116">V poli **Text sestavy** zadejte popis, který se zobrazí v sestavách.</span><span class="sxs-lookup"><span data-stu-id="a45b3-116">In the **Report text** field, enter a description to display on reports.</span></span>
+6. <span data-ttu-id="a45b3-117">V poli **Stručný popis** zadejte popis pro interní účely.</span><span class="sxs-lookup"><span data-stu-id="a45b3-117">In the **Brief description** field, enter a description for internal purposes.</span></span>
+7. <span data-ttu-id="a45b3-118">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="a45b3-118">Click **Save**.</span></span>
 
 
 
