@@ -2,7 +2,6 @@
 title: Typ cílového umístění elektronického výkaznictví Power BI
 description: Toto téma obsahuje informace o způsobu konfigurace typu cílového umístění elektronického výkaznictví Power BI pro odchozí dokumenty.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
@@ -16,27 +15,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: a6b6a2e4bc3c0eca8185f501121d9d1ba1b4e063
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 964ed05eaba2a4dbba904b4ce0e0be33d0925fb5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561967"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753449"
 ---
-# <a name="power-bi-destination"></a><span data-ttu-id="bbd68-103">Cílové místo Power BI</span><span class="sxs-lookup"><span data-stu-id="bbd68-103">Power BI destination</span></span>
+# <a name="power-bi-destination"></a><span data-ttu-id="cfd73-103">Cílové místo Power BI</span><span class="sxs-lookup"><span data-stu-id="cfd73-103">Power BI destination</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bbd68-104">Můžete konfigurovat cíl Microsoft Power BI pro každou složku nebo komponent souboru formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů.</span><span class="sxs-lookup"><span data-stu-id="bbd68-104">You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format that is configured to generate outbound documents.</span></span> <span data-ttu-id="bbd68-105">V závislosti na nastavení cíle je vygenerovaný dokument uložen v dříve konfigurované složce SharePoint.</span><span class="sxs-lookup"><span data-stu-id="bbd68-105">Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.</span></span>
+<span data-ttu-id="cfd73-104">Můžete konfigurovat cíl Microsoft Power BI pro každou složku nebo komponent souboru formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů.</span><span class="sxs-lookup"><span data-stu-id="cfd73-104">You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format that is configured to generate outbound documents.</span></span> <span data-ttu-id="cfd73-105">V závislosti na nastavení cíle je vygenerovaný dokument uložen v dříve konfigurované složce SharePoint.</span><span class="sxs-lookup"><span data-stu-id="cfd73-105">Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.</span></span>
 
-<span data-ttu-id="bbd68-106">Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance Dynamics 365 Finance do služeb Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="bbd68-106">Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your Dynamics 365 Finance instance to Microsoft Power BI services.</span></span> <span data-ttu-id="bbd68-107">Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel.</span><span class="sxs-lookup"><span data-stu-id="bbd68-107">The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose.</span></span> <span data-ttu-id="bbd68-108">Další informace získáte v tématu [Konfigurace elektronického výkaznictví (ER) pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span><span class="sxs-lookup"><span data-stu-id="bbd68-108">For more information, see [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span></span>
+<span data-ttu-id="cfd73-106">Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance Dynamics 365 Finance do služeb Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="cfd73-106">Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your Dynamics 365 Finance instance to Microsoft Power BI services.</span></span> <span data-ttu-id="cfd73-107">Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel.</span><span class="sxs-lookup"><span data-stu-id="cfd73-107">The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose.</span></span> <span data-ttu-id="cfd73-108">Další informace získáte v tématu [Konfigurace elektronického výkaznictví (ER) pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span><span class="sxs-lookup"><span data-stu-id="cfd73-108">For more information, see [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span></span>
 
-<span data-ttu-id="bbd68-109">[![Stránka nastavení cíle](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span><span class="sxs-lookup"><span data-stu-id="bbd68-109">[![Destination setting page](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span></span>
+<span data-ttu-id="cfd73-109">[![Stránka nastavení cíle](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span><span class="sxs-lookup"><span data-stu-id="cfd73-109">[![Destination setting page](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="bbd68-110">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="bbd68-110">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cfd73-110">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="cfd73-110">Additional resources</span></span>
 
-- [<span data-ttu-id="bbd68-111">Přehled elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="bbd68-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
-- [<span data-ttu-id="bbd68-112">Místa určení elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="bbd68-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
+- [<span data-ttu-id="cfd73-111">Přehled elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="cfd73-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+- [<span data-ttu-id="cfd73-112">Místa určení elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="cfd73-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Rod
 description: Toto téma popisuje sadu možností typu Pohlaví pro Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,34 +14,34 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df8d83058c559728b59b9d16bd34218d2c7d284
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 6f155fef5f7414bb6b36af2c1c43f2d7eb2183eb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464049"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798314"
 ---
-# <a name="gender"></a><span data-ttu-id="22725-103">Rod</span><span class="sxs-lookup"><span data-stu-id="22725-103">Gender</span></span>
+# <a name="gender"></a><span data-ttu-id="3c672-103">Rod</span><span class="sxs-lookup"><span data-stu-id="3c672-103">Gender</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="22725-104">Toto téma popisuje sadu možností typu Pohlaví pro Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="22725-104">This topic describes the Gender option set for Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="3c672-104">Toto téma popisuje sadu možností typu Pohlaví pro Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="3c672-104">This topic describes the Gender option set for Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="22725-105">Fyzický název: mshr_hcmpersongender</span><span class="sxs-lookup"><span data-stu-id="22725-105">Physical name: mshr_hcmpersongender</span></span>
+<span data-ttu-id="3c672-105">Fyzický název: mshr_hcmpersongender</span><span class="sxs-lookup"><span data-stu-id="3c672-105">Physical name: mshr_hcmpersongender</span></span>
 
-<span data-ttu-id="22725-106">Tento výčet poskytuje sadu možností týkajících se pohlaví kandidáta.</span><span class="sxs-lookup"><span data-stu-id="22725-106">This enumeration provides the option set of genders for the candidate.</span></span> <span data-ttu-id="22725-107">Jedná se o sadu možností mshr_hcmpersongender.</span><span class="sxs-lookup"><span data-stu-id="22725-107">This is available in the mshr_hcmpersongender option set.</span></span>
+<span data-ttu-id="3c672-106">Tento výčet poskytuje sadu možností týkajících se pohlaví kandidáta.</span><span class="sxs-lookup"><span data-stu-id="3c672-106">This enumeration provides the option set of genders for the candidate.</span></span> <span data-ttu-id="3c672-107">Jedná se o sadu možností mshr_hcmpersongender.</span><span class="sxs-lookup"><span data-stu-id="3c672-107">This is available in the mshr_hcmpersongender option set.</span></span>
 
-| <span data-ttu-id="22725-108">Hodnota</span><span class="sxs-lookup"><span data-stu-id="22725-108">Value</span></span> | <span data-ttu-id="22725-109">Štítek</span><span class="sxs-lookup"><span data-stu-id="22725-109">Label</span></span> | <span data-ttu-id="22725-110">popis</span><span class="sxs-lookup"><span data-stu-id="22725-110">Description</span></span> |
+| <span data-ttu-id="3c672-108">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c672-108">Value</span></span> | <span data-ttu-id="3c672-109">Štítek</span><span class="sxs-lookup"><span data-stu-id="3c672-109">Label</span></span> | <span data-ttu-id="3c672-110">popis</span><span class="sxs-lookup"><span data-stu-id="3c672-110">Description</span></span> |
 | --- | --- | --- |
-| <span data-ttu-id="22725-111">200000000</span><span class="sxs-lookup"><span data-stu-id="22725-111">200000000</span></span> | <span data-ttu-id="22725-112">Není</span><span class="sxs-lookup"><span data-stu-id="22725-112">None</span></span> | <span data-ttu-id="22725-113">Pohlaví nebylo zadáno.</span><span class="sxs-lookup"><span data-stu-id="22725-113">No gender has been specified.</span></span> |
-| <span data-ttu-id="22725-114">200000001</span><span class="sxs-lookup"><span data-stu-id="22725-114">200000001</span></span> | <span data-ttu-id="22725-115">Muž</span><span class="sxs-lookup"><span data-stu-id="22725-115">Male</span></span> | <span data-ttu-id="22725-116">Muž.</span><span class="sxs-lookup"><span data-stu-id="22725-116">Male.</span></span> |
-| <span data-ttu-id="22725-117">200000002</span><span class="sxs-lookup"><span data-stu-id="22725-117">200000002</span></span> | <span data-ttu-id="22725-118">Žena</span><span class="sxs-lookup"><span data-stu-id="22725-118">Female</span></span> | <span data-ttu-id="22725-119">Žena.</span><span class="sxs-lookup"><span data-stu-id="22725-119">Female.</span></span> |
-| <span data-ttu-id="22725-120">200000003</span><span class="sxs-lookup"><span data-stu-id="22725-120">200000003</span></span> | <span data-ttu-id="22725-121">Nespecifické</span><span class="sxs-lookup"><span data-stu-id="22725-121">NonSpecific</span></span> | <span data-ttu-id="22725-122">Výběr nespecifického pohlaví.</span><span class="sxs-lookup"><span data-stu-id="22725-122">Selection for a non-specific gender.</span></span> |
+| <span data-ttu-id="3c672-111">200000000</span><span class="sxs-lookup"><span data-stu-id="3c672-111">200000000</span></span> | <span data-ttu-id="3c672-112">Není</span><span class="sxs-lookup"><span data-stu-id="3c672-112">None</span></span> | <span data-ttu-id="3c672-113">Pohlaví nebylo zadáno.</span><span class="sxs-lookup"><span data-stu-id="3c672-113">No gender has been specified.</span></span> |
+| <span data-ttu-id="3c672-114">200000001</span><span class="sxs-lookup"><span data-stu-id="3c672-114">200000001</span></span> | <span data-ttu-id="3c672-115">Muž</span><span class="sxs-lookup"><span data-stu-id="3c672-115">Male</span></span> | <span data-ttu-id="3c672-116">Muž.</span><span class="sxs-lookup"><span data-stu-id="3c672-116">Male.</span></span> |
+| <span data-ttu-id="3c672-117">200000002</span><span class="sxs-lookup"><span data-stu-id="3c672-117">200000002</span></span> | <span data-ttu-id="3c672-118">Žena</span><span class="sxs-lookup"><span data-stu-id="3c672-118">Female</span></span> | <span data-ttu-id="3c672-119">Žena.</span><span class="sxs-lookup"><span data-stu-id="3c672-119">Female.</span></span> |
+| <span data-ttu-id="3c672-120">200000003</span><span class="sxs-lookup"><span data-stu-id="3c672-120">200000003</span></span> | <span data-ttu-id="3c672-121">Nespecifické</span><span class="sxs-lookup"><span data-stu-id="3c672-121">NonSpecific</span></span> | <span data-ttu-id="3c672-122">Výběr nespecifického pohlaví.</span><span class="sxs-lookup"><span data-stu-id="3c672-122">Selection for a non-specific gender.</span></span> |
 
-## <a name="see-also"></a><span data-ttu-id="22725-123">Viz také</span><span class="sxs-lookup"><span data-stu-id="22725-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3c672-123">Viz také</span><span class="sxs-lookup"><span data-stu-id="3c672-123">See also</span></span>
 
-[<span data-ttu-id="22725-124">Úvod do rozhraní API pro integraci systému sledování žadatelů</span><span class="sxs-lookup"><span data-stu-id="22725-124">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
-[<span data-ttu-id="22725-125">Příklad dotazu pro entitu Kandidát k přijetí</span><span class="sxs-lookup"><span data-stu-id="22725-125">Example query for Candidate to hire</span></span>](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+[<span data-ttu-id="3c672-124">Úvod do rozhraní API pro integraci systému sledování žadatelů</span><span class="sxs-lookup"><span data-stu-id="3c672-124">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="3c672-125">Příklad dotazu pro entitu Kandidát k přijetí</span><span class="sxs-lookup"><span data-stu-id="3c672-125">Example query for Candidate to hire</span></span>](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

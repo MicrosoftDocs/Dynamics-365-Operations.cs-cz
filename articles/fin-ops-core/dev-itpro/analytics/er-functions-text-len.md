@@ -2,7 +2,6 @@
 title: Funkce el. výkaznictví LEN
 description: Toto téma obsahuje obecné informace o použití funkce LEN elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
@@ -16,44 +15,44 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fce4b5311d84364310b76545a775f1cc8db2fd70
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 394e07a7a573cc4462196b17440f8b0547d8dd48
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569961"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746308"
 ---
-# <a name="len-er-function"></a><span data-ttu-id="72fb8-103">Funkce el. výkaznictví LEN</span><span class="sxs-lookup"><span data-stu-id="72fb8-103">LEN ER function</span></span>
+# <a name="len-er-function"></a><span data-ttu-id="71fd0-103">Funkce el. výkaznictví LEN</span><span class="sxs-lookup"><span data-stu-id="71fd0-103">LEN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="72fb8-104">Funkce `LEN` vrátí počet znaků v zadaném řetězci jako *celočíselnou* hodnotu.</span><span class="sxs-lookup"><span data-stu-id="72fb8-104">The `LEN` function returns the number of characters in the specified string as an *Integer* value.</span></span>
+<span data-ttu-id="71fd0-104">Funkce `LEN` vrátí počet znaků v zadaném řetězci jako *celočíselnou* hodnotu.</span><span class="sxs-lookup"><span data-stu-id="71fd0-104">The `LEN` function returns the number of characters in the specified string as an *Integer* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="72fb8-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="72fb8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="71fd0-105">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="71fd0-105">Syntax</span></span>
 
 ```vb
 LEN (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="72fb8-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="72fb8-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="71fd0-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="71fd0-106">Arguments</span></span>
 
-<span data-ttu-id="72fb8-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="72fb8-107">`text`: *String*</span></span>
+<span data-ttu-id="71fd0-107">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="71fd0-107">`text`: *String*</span></span>
 
-<span data-ttu-id="72fb8-108">Hodnota typu *řetězec*, která představuje samotný text.</span><span class="sxs-lookup"><span data-stu-id="72fb8-108">A *String* value that specifies the text.</span></span>
+<span data-ttu-id="71fd0-108">Hodnota typu *řetězec*, která představuje samotný text.</span><span class="sxs-lookup"><span data-stu-id="71fd0-108">A *String* value that specifies the text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="72fb8-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="72fb8-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="71fd0-109">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="71fd0-109">Return values</span></span>
 
-<span data-ttu-id="72fb8-110">*Celé číslo*</span><span class="sxs-lookup"><span data-stu-id="72fb8-110">*Integer*</span></span>
+<span data-ttu-id="71fd0-110">*Celé číslo*</span><span class="sxs-lookup"><span data-stu-id="71fd0-110">*Integer*</span></span>
 
-<span data-ttu-id="72fb8-111">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="72fb8-111">The resulting numeric value.</span></span>
+<span data-ttu-id="71fd0-111">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="71fd0-111">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="72fb8-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="72fb8-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="71fd0-112">Příklad</span><span class="sxs-lookup"><span data-stu-id="71fd0-112">Example</span></span>
 
-<span data-ttu-id="72fb8-113">`LEN ("Sample")` vrátí **6**.</span><span class="sxs-lookup"><span data-stu-id="72fb8-113">`LEN ("Sample")` returns **6**.</span></span>
+<span data-ttu-id="71fd0-113">`LEN ("Sample")` vrátí **6**.</span><span class="sxs-lookup"><span data-stu-id="71fd0-113">`LEN ("Sample")` returns **6**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="72fb8-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="72fb8-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="71fd0-114">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="71fd0-114">Additional resources</span></span>
 
-[<span data-ttu-id="72fb8-115">Textové funkce</span><span class="sxs-lookup"><span data-stu-id="72fb8-115">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="71fd0-115">Textové funkce</span><span class="sxs-lookup"><span data-stu-id="71fd0-115">Text functions</span></span>](er-functions-category-text.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
