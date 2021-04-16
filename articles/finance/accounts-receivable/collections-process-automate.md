@@ -2,11 +2,9 @@
 title: Automatizace procesů inkasa
 description: Toto téma popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa nebo odeslání upomínky zákazníkovi.
 author: panolte
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: ce83b8e66abece2c40ca0a7ca3bf67894b97c287
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582744"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827619"
 ---
 # <a name="collections-process-automation"></a>Automatizace procesů inkasa
 
