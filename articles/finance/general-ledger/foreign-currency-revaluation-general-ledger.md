@@ -2,11 +2,9 @@
 title: Přecenění cizí měny pro hlavní knihu
 description: Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7433c6753b612a9721917c036a8b36b7e3165177
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e2f24c60b3fb82532f50e58dde9a19f5fefb25d5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249256"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832915"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
@@ -83,7 +81,7 @@ Hlavní účet je přeceněn dne 31. ledna  Nerealizovaný zisk nebo ztráta se 
 
 | Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
 
 Bude vytvořena následující účetní položka.
 

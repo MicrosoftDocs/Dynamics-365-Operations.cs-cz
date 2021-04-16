@@ -2,11 +2,9 @@
 title: Přerušení odpisování (svátky)
 description: Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2d91c45ff778be84d6dd16162f40c6e69c83b250
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 14b598916cbab439a354b678818652a91bc1db10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236292"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839863"
 ---
 # <a name="depreciation-suspension-holidays"></a>Přerušení odpisování (svátky)
 

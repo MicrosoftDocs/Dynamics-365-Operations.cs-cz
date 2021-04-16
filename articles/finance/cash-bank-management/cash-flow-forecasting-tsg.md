@@ -2,11 +2,9 @@
 title: Řešení potíží s nastavením předpovědi peněžních toků
 description: Toto téma obsahuje odpovědi na otázky, které můžete mít při konfiguraci předpovědí peněžních toků. Řeší často kladené otázky (FAQ) týkající se nastavení peněžních toků, aktualizací peněžních toků a Power BI peněžních toků.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232482"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827307"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Řešení potíží s nastavením předpovědi peněžních toků
 
@@ -47,11 +45,19 @@ Než se mohou objevit prognózy peněžních toků v zobrazeních Power BI, je t
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Proč peněžní tok Power BI fungoval v předchozích verzích, ale nyní je prázdný?
 
-Ověřte, že byla nakonfigurována měření „Cash flow measure V2“ a „LedgerCovLiquidityMeasurement“ z úložiště Entity. Další informace o tom, jak pracovat s daty v úložišti Entity, najdete v tématu [Integrace Power BI s úložištěm Entity](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md) Ověřte, zda byly provedeny všechny kroky potřebné k zobrazení obsahu Power BI. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).
+Ověřte, že byla nakonfigurována měření „Cash flow measure V2“ a „LedgerCovLiquidityMeasurement“ z úložiště Entity. Další informace o práci s daty v úložišti entit získáte v tématu [Integrace Power BI s úložištěm entit](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Ověřte, zda byly dokončeny všechny kroky potřebné k zobrazení obsahu Power BI. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Byly entity úložiště Entity aktualizovány?
 
 Musíte pravidelně obnovovat své entity, abyste zajistili, že data jsou aktuální a přesná. Chcete-li ručně aktualizovat konkrétní entitu, přejděte na **Správa systému \> Nastavení \> Úložiště Entity**, vyberte entitu a poté vyberte **Obnovit**. Data lze také aktualizovat automaticky. Na stránce **Úložiště Entity** nastavte možnost **Automatické obnovení povoleno** na **Ano**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Jakou metodu výpočtu je třeba použít při výpočtu prognóz cashflow?
+
+Metoda výpočtu prognózy cashflow má dvě důležité možnosti výběru. Možnost **Nový** vypočítá prognózy cashflow pro nové dokumenty a dokumenty, které se změnily v době po spuštění poslední dávkové úlohy. Tato možnost obvykle probíhá rychleji, protože zpracovává menší podmnožinu dokumentů. Možnost **Celkem** přepočítá prognózy cashflow pro každý dokument v systému. Tato možnost trvá déle, protože má větší rozsah práce.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Jak mohu zlepšit výkonnost opakující se dávkové úlohy předpovědi cashflow?
+
+Doporučujeme předpovědi cashflow spouštět jednou za den mimo špičku a použít metodu výpočtu **Nový**. Doporučujeme používat tento přístup šest dní v týdnu. Poté jednou týdně spusťte prognózu cashflow využívající metodu výpočtu **Celkem**, a to v den s nejmenším množstvím aktivity.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

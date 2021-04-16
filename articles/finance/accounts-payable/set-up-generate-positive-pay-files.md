@@ -2,11 +2,9 @@
 title: Nastavení a generování souborů kladné platby
 description: Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227369"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830705"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a generování souborů kladné platby
 
@@ -140,6 +138,9 @@ Soubory kladných plateb jsou vytvořeny pomocí datových entit. Aby bylo možn
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> Názvy XML v kódu XSLT musí odpovídat velikosti písmen uzlů v XML. Soubory XSLT i XML rozlišují velká a malá písmena. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Přiřazení formátu kladné platby k bankovnímu účtu
 Pro každý bankovní účet, pro který chcete generovat informace o souborech kladných plateb, musíte přiřadit formát kladných plateb, který byl zadán v předchozím kroku. Na stránce **Bankovní účty** vyberte formát kladných plateb, který odpovídá bankovního účtu. V poli **Počáteční datum kladné platby** zadejte první datum generování souborů kladných plateb. Je důležité zadat datum do tohoto pole. V opačném případě první soubor kladných plateb, který vygenerujete, bude obsahovat všechny šeky, které kdy byly vytvořeny pro tento bankovní účet.
