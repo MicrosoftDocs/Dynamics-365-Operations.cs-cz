@@ -2,11 +2,9 @@
 title: Převedení dlouhodobého majetku
 description: Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 365fa7a54dcf6817f933c0d305561c5fd0f8ba27
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7588e0058713d7facf053aa269210fc88e5a3ff2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213477"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823877"
 ---
 # <a name="transfer-a-fixed-asset"></a>Převedení dlouhodobého majetku
 

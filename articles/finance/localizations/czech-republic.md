@@ -2,11 +2,9 @@
 title: Přehled – Česká republika
 description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Czech Republic
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a2fa093e8a24b68074a1c843049999131823c2a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 58e6fd85fcec04dacfab9b09a80bede821d472f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217344"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840308"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
