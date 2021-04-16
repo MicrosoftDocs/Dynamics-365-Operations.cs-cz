@@ -2,11 +2,9 @@
 title: Vyrovnání částečné platby dodavatele, u níž je více období slev
 description: Tento článek vás provede scénářem, kdy je více částečných plateb provedeno pro dodavatele, který nabízí více platebních slev.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcaca97203c47bf7eac02ba410763a4e1a7b34a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56e2b3a8dadd824fa0170a1db19fffeaecb47775
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227273"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827859"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby dodavatele, u níž je více období slev
 
@@ -56,9 +54,9 @@ Následující data platební slevy a částky jsou k dispozici pro tuto fakturu
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/02/2015 |
+| Dat. plat. slevy           | 7/02/2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -72,9 +70,9 @@ Vzhledem k tomu, že je k dispozici platební sleva, chce April změnit částku
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/02/2015 |
+| Dat. plat. slevy           | 7/02/2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -105,9 +103,9 @@ April rozhodne zaplatit 495,00 a využít tak platební slevy 5,00. Celková č�
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 12. 7. 2015 |
+| Dat. plat. slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -10,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | -6,00     |
