@@ -2,7 +2,6 @@
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 description: Toto téma vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574118"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753833"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -666,19 +665,19 @@ Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete
 
 ![Chyba za běhu, ke které dojde během provádění mapování formátu na stránce Návrhář formátů](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatické řešení
+### <a name="automatic-resolution&quot;></a>Automatické řešení
 
 Není k dispozici žádná možnost automatického řešení tohoto problému.
 
-### <a name="manual-resolution"></a>Ruční řešení
+### <a name=&quot;manual-resolution&quot;></a>Ruční řešení
 
-#### <a name="option-1"></a>Možnost 1
+#### <a name=&quot;option-1&quot;></a>Možnost 1
 
 Odstraňte příznak **Mezipaměť** ze zdroje dat **Vendor**. Zdroj dat **FilteredVendor** zdroj dat se poté stane spustitelným, ale zdroj dat **Vendor**, na který se odkazuje v tabulce VendTable, bude přístupný pokaždé, když je volán zdroj dat **FilteredVendor**.
 
-#### <a name="option-2"></a>Možnost 2
+#### <a name=&quot;option-2&quot;></a>Možnost 2
 
-Změňte výraz zdroje dat **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum="US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. V tomto případě bude ke zdroji dat **Vendor**, na který se odkazuje v tabulce VendTable, přistupováno pouze během prvního volání zdroje dat **Vendor**. Výběr záznamů se však provede v paměti. Tento přístup proto může způsobit špatný výkon.
+Změňte výraz zdroje dat **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. V tomto případě bude ke zdroji dat **Vendor**, na který se odkazuje v tabulce VendTable, přistupováno pouze během prvního volání zdroje dat **Vendor**. Výběr záznamů se však provede v paměti. Tento přístup proto může způsobit špatný výkon.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Chybějící vazba
 

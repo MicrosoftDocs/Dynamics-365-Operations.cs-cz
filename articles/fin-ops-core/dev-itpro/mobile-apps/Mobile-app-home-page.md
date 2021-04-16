@@ -2,7 +2,6 @@
 title: Domovská stránka mobilní aplikace
 description: Toto téma popisuje mobilní aplikaci Finance and Operations (Dynamics 365) a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 925d1fff51317b592a7af61ebd797fa70ab5b6f4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cda743983f84edf0fa8c513013de812698cbb9ba
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567181"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748214"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 

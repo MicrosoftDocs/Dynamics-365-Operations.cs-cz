@@ -2,7 +2,6 @@
 title: Přehled dvojitého zápisu
 description: Toto téma poskytuje přehled dvojího zapisování, které poskytuje interakci prakticky v reálném čase mezi aplikacemi Customer Engagement a aplikacemi Finance and Operations.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6cc02b483a2975dd3be28032ea7e90b540945492
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 76c2f07ac5c25eea576cbb69256e76fbef4d86ca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561271"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754105"
 ---
 # <a name="dual-write-overview"></a>Přehled dvojitého zápisu
 

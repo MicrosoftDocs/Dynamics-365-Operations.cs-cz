@@ -2,7 +2,6 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
@@ -14,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3be09f6c469e90b153bff1d8a09b98f5a46b933a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: c8f417b3ba427104d6d0e57ac595ab7b453f48fa
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570890"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749558"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
 

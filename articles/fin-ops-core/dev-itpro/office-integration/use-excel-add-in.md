@@ -2,7 +2,6 @@
 title: Zobrazení a aktualizace dat entity v aplikaci Excel
 description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
@@ -15,23 +14,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b7da9867ed86921f3487077081ec63e8b44e92c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562542"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752959"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo Finance and Operations.
 
-Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016 nebo novější.
+Otevřením dat entity v aplikaci Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016 nebo novější.
 
 > [!NOTE]
 > Pokud je klient MIcrosoft Azure Active Directory (Azure AD) konfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že byla použita aktualizace z května 2016 pro Office, aby vás doplněk aplikace Excel mohl správně přihlásit.
@@ -52,7 +51,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Otevření dat entity v aplikaci Excel při spuštění z aplikace Excel
 1. V aplikaci Excel na kartě **Vložit** ve skupině **doplňky** zvolením možnosti **Obchod** otevřete Office Store.
-2. V Office Storu vyhledejte klíčové slovo **Dynamics** a zvolte **Přidat** vedle položky **Doplněk Microsoft Dynamics** (doplněk aplikace Excel).
+2. V Office Storu vyhledejte klíčové slovo **Dynamics** a zvolte **Přidat** vedle položky **Doplněk Microsoft Dynamics Office** (doplněk aplikace Excel).
 3. Pokud používáte doplněk aplikace Excel poprvé, zvolte **Důvěřovat tomuto doplňku** pro povolení spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Zvolte **Přidat informace o serveru** k otevření podokna **Možnosti**.
 5. Ve vašem prohlížeči zkopírujte adresu URL cílové instance aplikace Finance and Operations, vložte ji do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
