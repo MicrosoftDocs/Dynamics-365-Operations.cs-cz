@@ -2,11 +2,9 @@
 title: Globální srážková daň
 description: Toto téma poskytuje informace o globální funkci srážkové daně a o tom, jak ji nastavit. Globální funkce srážkové daně je vylepšena u transakcí dodavatelů a zákazníků, takže srážková daň se počítá na úrovni položky.
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,33 +15,33 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 25fc503d6145872b8e9f28b8d9a4d7b9c1ba53a4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9a73d34fb4fbf007cbb5a996cfa6e9719532869c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249160"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826659"
 ---
-# <a name="global-withholding-tax"></a><span data-ttu-id="8dd6a-104">Globální srážková daň</span><span class="sxs-lookup"><span data-stu-id="8dd6a-104">Global withholding tax</span></span>
+# <a name="global-withholding-tax"></a><span data-ttu-id="e8392-104">Globální srážková daň</span><span class="sxs-lookup"><span data-stu-id="e8392-104">Global withholding tax</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8dd6a-105">Toto téma poskytuje informace o globální funkci srážkové daně a vysvětluje, jak ji nastavit.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-105">This topic provides information about global withholding tax functionality and explains how to set it up.</span></span> <span data-ttu-id="8dd6a-106">Tato nová funkce je k dispozici ve verzi 10.0.17 a novější.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-106">The new functionality is available in version 10.0.17 and later.</span></span>
+<span data-ttu-id="e8392-105">Toto téma poskytuje informace o globální funkci srážkové daně a vysvětluje, jak ji nastavit.</span><span class="sxs-lookup"><span data-stu-id="e8392-105">This topic provides information about global withholding tax functionality and explains how to set it up.</span></span> <span data-ttu-id="e8392-106">Tato nová funkce je k dispozici ve verzi 10.0.17 a novější.</span><span class="sxs-lookup"><span data-stu-id="e8392-106">The new functionality is available in version 10.0.17 and later.</span></span>
 
-<span data-ttu-id="8dd6a-107">Globální funkce srážkové daně je vylepšena u transakcí dodavatelů a zákazníků, takže srážková daň se počítá na úrovni položky.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-107">Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.</span></span> <span data-ttu-id="8dd6a-108">Zůstatek na účtu srážkové daně z nákupních transakcí lze vyrovnat spuštěním úlohy platby srážkové daně proti účtu vyrovnání srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-108">The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8dd6a-109">Globální srážková daň nepodporuje funkci **Spravovat náklady** na stránkách nákupní objednávky, faktury dodavatele a prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-109">Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.</span></span>
-
-## <a name="turn-on-global-withholding-tax"></a><span data-ttu-id="8dd6a-110">Zapnutí globální srážkové daně</span><span class="sxs-lookup"><span data-stu-id="8dd6a-110">Turn on global withholding tax</span></span>
-
-1. <span data-ttu-id="8dd6a-111">V pracovním prostoru **Správa funkcí** vyberte **Globální srážková daň** a poté vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-111">In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.</span></span>
-2. <span data-ttu-id="8dd6a-112">Přejděte na **Daň \> Nastavení \> Parametry \> Parametry hlavní knihy** a poté na kartě **Srážková daň** nastavte možnost **Povolit globální srážkovou daň** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-112">Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Withholding tax** tab, set the **Enable global withholding tax** option to **Yes**.</span></span>
-3. <span data-ttu-id="8dd6a-113">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-113">Select **Save**.</span></span>
-4. <span data-ttu-id="8dd6a-114">Aktualizujte stránku ve webovém prohlížeči.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-114">Refresh the page in your web browser.</span></span>
+<span data-ttu-id="e8392-107">Globální funkce srážkové daně je vylepšena u transakcí dodavatelů a zákazníků, takže srážková daň se počítá na úrovni položky.</span><span class="sxs-lookup"><span data-stu-id="e8392-107">Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.</span></span> <span data-ttu-id="e8392-108">Zůstatek na účtu srážkové daně z nákupních transakcí lze vyrovnat spuštěním úlohy platby srážkové daně proti účtu vyrovnání srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="e8392-108">The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8dd6a-115">Globální funkce srážkové daně nelze zapnout pro země/oblasti, kde již existují lokalizovaná řešení srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-115">Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist.</span></span> <span data-ttu-id="8dd6a-116">Mezi tyto oblasti patří mimo jiné Indie, Brazílie, Thajsko, Saúdská Arábie, Irsko, Velká Británie a Spojené státy.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-116">These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.</span></span>
+> <span data-ttu-id="e8392-109">Globální srážková daň nepodporuje funkci **Spravovat náklady** na stránkách nákupní objednávky, faktury dodavatele a prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="e8392-109">Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.</span></span>
+
+## <a name="turn-on-global-withholding-tax"></a><span data-ttu-id="e8392-110">Zapnutí globální srážkové daně</span><span class="sxs-lookup"><span data-stu-id="e8392-110">Turn on global withholding tax</span></span>
+
+1. <span data-ttu-id="e8392-111">V pracovním prostoru **Správa funkcí** vyberte **Globální srážková daň** a poté vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="e8392-111">In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.</span></span>
+2. <span data-ttu-id="e8392-112">Přejděte na **Daň \> Nastavení \> Parametry \> Parametry hlavní knihy** a poté na kartě **Srážková daň** nastavte možnost **Povolit globální srážkovou daň** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="e8392-112">Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Withholding tax** tab, set the **Enable global withholding tax** option to **Yes**.</span></span>
+3. <span data-ttu-id="e8392-113">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="e8392-113">Select **Save**.</span></span>
+4. <span data-ttu-id="e8392-114">Aktualizujte stránku ve webovém prohlížeči.</span><span class="sxs-lookup"><span data-stu-id="e8392-114">Refresh the page in your web browser.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e8392-115">Globální funkce srážkové daně nelze zapnout pro země/oblasti, kde již existují lokalizovaná řešení srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="e8392-115">Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist.</span></span> <span data-ttu-id="e8392-116">Mezi tyto oblasti patří mimo jiné Indie, Brazílie, Thajsko, Saúdská Arábie, Irsko, Velká Británie a Spojené státy.</span><span class="sxs-lookup"><span data-stu-id="e8392-116">These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
