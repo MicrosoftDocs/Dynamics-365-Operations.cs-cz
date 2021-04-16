@@ -2,7 +2,6 @@
 title: Konfigurace workflow položky řádku
 description: Toto téma vysvětluje, jak nakonfigurovat prvek workflowu položky řádku.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46de2bc3683ed907f1879afc13c60adce261d402
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 84da7080542b4cc2ecc487b0a1331482fb69b998
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567008"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747898"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurace workflow položky řádku
 

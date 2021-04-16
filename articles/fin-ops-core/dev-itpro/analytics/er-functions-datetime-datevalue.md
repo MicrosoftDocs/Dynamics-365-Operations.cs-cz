@@ -2,7 +2,6 @@
 title: Funkce el. výkaznictví DATEVALUE
 description: Toto téma obsahuje obecné informace o použití funkce DATEVALUE elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82feb8284f4b6116a53d174dcdd9b8c09c4fa63a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d760c3f874bfebad11b9497b136cb67df4e9ea61
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563551"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746932"
 ---
 # <a name="datevalue-er-function"></a>Funkce el. výkaznictví DATEVALUE
 

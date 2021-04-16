@@ -2,7 +2,6 @@
 title: Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 description: Toto téma obsahuje informace o způsobu použití typu vypočítaného pole pro zdroje dat ER.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569194"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749482"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
@@ -194,7 +193,7 @@ Na stránce **Návrhář formátu** je v konfigurovaných vypočítaných políc
 
 ![Rozbalený seznam úrovní vypočítaných polí](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Použít nakonfigurované počítané pole pro prvky formátu vazby
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Použít nakonfigurované počítané pole pro prvky formátu vazby
 
 1. Výběrem **Model.Data2.Levels** vyberte nakonfigurované počítané pole.
 2. Vyberte prvek formátu **Statement.Taxation.Regular**.
@@ -215,7 +214,7 @@ Na stránce **Návrhář formátu** je v konfigurovaných vypočítaných políc
 9. Vyberte možnost **vazba**.
 10. Vyberte možnost **Ano**, pokud chcete potvrdit nahrazení aktuálně používaného zdroje dat **Level3** novým zdrojem dat **Levels** ve všech vnořených formátovacích prvcích vybraného prvku formátu.
 
-   Když zadáte argument parametrizovaného pole pro prvek XML představující úroveň zdanění (například **Model.Data2.Levels("Reduced")** jako textovou hodnotu), nemusíte provádět stejnou akci pro vnořené atributy XML – jejich vazby automaticky zdědí hodnotu argumentu definovaného na nadřazené úrovni (**Model.Data2.Levels.aggregated.Base**, nikoli **Model.Data2.Levels("Reduced").aggregated.Base**).
+   Když zadáte argument parametrizovaného pole pro prvek XML představující úroveň zdanění (například **Model.Data2.Levels(&quot;Reduced")** jako textovou hodnotu), nemusíte provádět stejnou akci pro vnořené atributy XML – jejich vazby automaticky zdědí hodnotu argumentu definovaného na nadřazené úrovni (**Model.Data2.Levels.aggregated.Base**, nikoli **Model.Data2.Levels("Reduced").aggregated.Base**).
 
 Opakující se volání jakéhokoliv parametrizovaného pole nejsou podporována.
 
@@ -223,10 +222,10 @@ Můžete vybrat možnost **Upravit vzorec** a změnit argument vyrovnáno podle 
 
 ![Upozornění na potvrzení ověření](media/er-calculated-field-type-10.png)
 
-## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurace parametrizovaného vypočítaného pole pro návrat záznamu
+## <a name="configure-a-parameterized-calculated-field-to-return-a-record&quot;></a>Konfigurace parametrizovaného vypočítaného pole pro návrat záznamu
 Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotlivých polí tohoto záznamu k formátování prvků. V takovém případě nebude existovat žádná nadřazená vazba, která obsahuje hodnotu argumentu pro volání parametrizovaného počítaného pole - tato hodnota musí být definována ve vazbě pole jednoho záznamu.
 
-### <a name="start-adding-a-new-calculated-field"></a>Začít přidávat nové počítané pole
+### <a name=&quot;start-adding-a-new-calculated-field&quot;></a>Začít přidávat nové počítané pole
 
 1. Vyberte položku **Model.Data2**.
 2. Vyberte **přidat**.
@@ -234,7 +233,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 4. Do pole **Název** zadejte **LevelRecord**.
 5. Vyberte možnost **Upravit vzorec**.
 
-### <a name="define-a-parameter-for-adding-a-calculated-field"></a>Definovat parametr pro přidání vypočítaného pole
+### <a name=&quot;define-a-parameter-for-adding-a-calculated-field&quot;></a>Definovat parametr pro přidání vypočítaného pole
 
 1. Vyberte **Parametry**.
 2. Zvolte **Nové**.
@@ -242,7 +241,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 4. V poli **Typ** vyberte **Řetězec**.
 5. Vyberte **OK**.
 
-### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definovat výraz pro přidání vypočítaného pole
+### <a name=&quot;define-an-expression-for-adding-a-calculated-field&quot;></a>Definovat výraz pro přidání vypočítaného pole
 
 1. V poli **Vzorec** zadejte následující:  
     
@@ -250,7 +249,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 
 2. Vyberte parametr **Úroveň zdanění**.
 3. Vyberte **Přidat zdroj dat**.
-4. V poli **Vzorec** přidejte **"Úroveň zdanění"))** do stavu, který jste zadali v kroku 1 a dokončete výraz na:  
+4. V poli **Vzorec** přidejte **&quot;Úroveň zdanění"))** do stavu, který jste zadali v kroku 1 a dokončete výraz na:  
     
     **FIRSTORNULL(\@.Levels('Taxation Level'))**
 
