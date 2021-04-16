@@ -2,11 +2,9 @@
 title: Správa pokladní hotovosti pro Commerce pro východní Evropu
 description: Toto téma popisuje, jak nastavit a používat funkce správy hotovosti v aplikaci Commerce pro východní Evropu.
 author: epopov
-manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8807fbf3be7d5a69fb66efed0635c8813674da51
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9305e7143bc0a978569d51544a1ae65ee57b3243
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225711"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798815"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Správa pokladní hotovosti pro Commerce pro východní Evropu
 

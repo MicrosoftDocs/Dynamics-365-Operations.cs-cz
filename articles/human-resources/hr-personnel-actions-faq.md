@@ -2,11 +2,9 @@
 title: Často kladené dotazy k akcím personálu
 description: Tento článek obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu. Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5eee8855a5a6eda4f6c0ad926f9366121de3ee7d
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0fb24ff25ba59c5440684c457267d826d35b7ac4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467099"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794486"
 ---
 # <a name="personnel-actions-faq"></a>Často kladené dotazy k akcím personálu
 
