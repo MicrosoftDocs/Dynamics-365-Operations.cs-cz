@@ -2,11 +2,9 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474056"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836906"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -39,7 +37,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>Úložiště LCS jako možnost úložiště pro konfigurace elektronických zpráv
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nahrazeno novým globálním úložištěm Regulatory Configuration Service (RCS) |
 | **Nahrazeno jinou funkcí?**   | Ano |
@@ -51,7 +49,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Formáty elektronického hlášení „Přiznání DPH (CZ)“ a „Export kontrolního hlášení (CZ)“ pro Českou republiku
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nahrazeno novými formáty |
 | **Nahrazeno jinou funkcí?**   | Ano |
@@ -61,7 +59,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>„Formát exportu transakcí hlavní knihy (BE)“ Formát elektronického hlášení a příslušný model „Export transakcí hlavní knihy (BE)“ pro Belgii
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nahrazeno novým formátem ER v modelu „Standardní soubor auditu (SAF-T)“.  |
 | **Nahrazeno jinou funkcí?**   | Ano |
@@ -71,7 +69,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>Sestava "VAT 100" pro spojené království ve formátu SSRS
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nahrazeno novým formátem ER - formát „Declaration VAT Excel (UK)“ pod „Model daňového přiznání“.  |
 | **Nahrazeno jinou funkcí?**   | Ano |
@@ -83,7 +81,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Podpora aplikace Internet Explorer 11 pro Dynamics 365 je zastaralá
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
@@ -95,7 +93,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polské sestavy SSRS: registr DPH na výstupu, registr DPH na vstupu, souhrnný registr DPH v EU – odkaz na funkci PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Není vyžadováno zákonem.  |
 | **Nahrazeno jinou funkcí?**   | Ano (formát aplikace Excel pro standardní soubor auditu s přiznáním k DPH – JPK_VDEK) |
@@ -107,7 +105,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="norwegian-standard-main-accounts"></a>Standardní hlavní účty pro Norsko
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Změnit návrh  |
 | **Nahrazeno jinou funkcí?**   | Ano (nahrazeno parametry specifickými pro aplikaci formátu ER) |
@@ -118,7 +116,8 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.7
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogové okno pro změnu požadavku workflowu již neobsahuje rozevírací seznam pro výběr uživatele.
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Změněno na funkci s výběrem skupiny účtů.  |
 | **Nahrazeno jinou funkcí?**   | Ano |

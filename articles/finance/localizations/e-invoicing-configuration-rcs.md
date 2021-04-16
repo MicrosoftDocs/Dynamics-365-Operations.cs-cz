@@ -1,12 +1,10 @@
 ---
-title: Konfigurace doplňku elektronické fakturace v Regulatory Configuration Services (RCS)
-description: Toto téma vysvětluje, jak konfigurovat doplněk elektronické fakturace v Dynamics 365 Regulatory Configuration Services (RCS).
+title: Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
+description: Toto téma vysvětluje, jak konfigurovat Elektronickou fakturaci v Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,32 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592615"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840237"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurace doplňku elektronické fakturace v Regulatory Configuration Services (RCS)
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Toto téma poskytuje informace o možnostech konfigurace Elektronické fakturace ve službě Dynamics 365 Regulatory Configuration Services (RCS).
 
-Toto téma poskytuje informace o možnostech konfigurace doplňku elektronické fakturace ve službě Dynamics 365 Regulatory Configuration Services (RCS).
-
-Prostřednictvím funkcí konfigurace vám doplněk elektronické fakturace pomůže splnit obchodní a regulační požadavky na elektronické faktury, aniž byste museli provádět jakékoli kódování. A ve scénářích, kdy elektronické faktury musí být elektronicky schváleny webovou službou, vám možnosti konfigurace také pomohou splnit požadavky na výměnu zpráv s webovou službou, aniž byste museli dělat jakýkoli kód.
+Prostřednictvím funkcí konfigurace vám Elektronická fakturace pomůže splnit obchodní a regulační požadavky na elektronické faktury, aniž byste museli provádět jakékoli kódování. A ve scénářích, kdy elektronické faktury musí být elektronicky schváleny webovou službou, vám možnosti konfigurace také pomohou splnit požadavky na výměnu zpráv s webovou službou, aniž byste museli dělat jakýkoli kód.
 
 ## <a name="electronic-reporting"></a>Elektronická sestava
 
-Elektronické výkaznictví (ER) podporuje doplněk elektronické fakturace.
+Elektronické výkaznictví (ER) podporuje Elektronickou fakturaci.
 
-Mapování a formáty datového modelu jsou konfigurovatelné komponenty, které se vytvářejí a udržují prostřednictvím ER a používají se v doplňku elektronické fakturace. Návrhář formátů ER je nástroj pro vytváření a údržbu formátů souborů. Používá se ke konfiguraci funkcí elektronické fakturace.
+Mapování a formáty datového modelu jsou konfigurovatelné komponenty, které se vytvářejí a udržují prostřednictvím ER a používají se v Elektronické fakturaci. Návrhář formátů ER je nástroj pro vytváření a údržbu formátů souborů. Používá se ke konfiguraci funkcí elektronické fakturace.
 
 Další podrobnosti získáte v tématu [Přehled elektronického výkaznictví (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 
 ## <a name="electronic-invoicing-features"></a>Funkce elektronické fakturace
 
-Funkce elektronické fakturace jsou zodpovědné za generování elektronických faktur prostřednictvím doplňku elektronické fakturace. Zapouzdřují pravidla konfigurace a používají je ke zpracování dat, která Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management odesílá do doplňku elektronické fakturace a do elektronických faktur.
+Funkce elektronické fakturace jsou zodpovědné za generování elektronických faktur prostřednictvím Elektronické fakturace. Zapouzdřují pravidla konfigurace a používají je ke zpracování dat, která Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management odesílá do Elektronické fakturace a do elektronických faktur.
 
 Funkce také podporují scénáře, kde je vyžadován soulad se specifikacemi formátu souboru a výstupem je samostatný elektronický soubor. Ve většině případů zveřejňuje specifikace formátu souboru finanční úřad.
 
@@ -81,13 +77,13 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace, které jso
 
 Funkce elektronické fakturace se skládají z následujících skupin konfigurovatelných komponent:
 
-- **Formáty** – Formáty umožňují konfigurovat, co musí doplněk elektronické fakturace generovat, když se z elektronického dokumentu stane elektronická faktura. Formáty zahrnují konfiguraci formátu pro elektronickou fakturu a pro soubory a zprávy, které se používají k odesílání požadavků a přijímání odpovědí, když je vyžadována komunikace s externí webovou službou.
-- **Akce** – Akce vám umožní nakonfigurovat, jak doplněk elektronické fakturace generuje transformaci elektronického dokumentu, který Finance a Supply Chain Management odeslal do elektronické faktury.
-- **Pravidla použitelnosti** – Pravidla použitelnosti vám umožňují konfigurovat kontext, který doplněk elektronické fakturace musí vzít v úvahu při zpracování funkce elektronické fakturace.
-- **Proměnné** – Proměnné umožňují konfigurovat podporu pro konstrukci logiky konfigurace. Proměnné mohou fungovat jako vstup hodnot k provedení konkrétní akce. Alternativně mohou fungovat jako výměna hodnot mezi Finance a Supply Chain Management a doplňkem elektronické fakturace.
-- **Mapování modelu elektronického dokumentu** – Mapování modelu elektronického dokumentu umožňuje konfigurovat mapování modelu ER. Mapování modelu definuje mapování dat abstraktní faktury, která je integrována do doplňku Elektronická fakturace při odesílání elektronických dokumentů.
+- **Formáty** – Formáty umožňují konfigurovat, co musí Elektronická fakturace generovat, když se z elektronického dokumentu stane elektronická faktura. Formáty zahrnují konfiguraci formátu pro elektronickou fakturu a pro soubory a zprávy, které se používají k odesílání požadavků a přijímání odpovědí, když je vyžadována komunikace s externí webovou službou.
+- **Akce** – Akce vám umožní nakonfigurovat, jak Elektronická fakturace generuje transformaci elektronického dokumentu, který aplikace Finance a Supply Chain Management odeslaly do elektronické faktury.
+- **Pravidla použitelnosti** – Pravidla použitelnosti vám umožňují konfigurovat kontext, který Elektronická fakturace musí vzít v úvahu při zpracování funkce elektronické fakturace.
+- **Proměnné** – Proměnné umožňují konfigurovat podporu pro konstrukci logiky konfigurace. Proměnné mohou fungovat jako vstup hodnot k provedení konkrétní akce. Alternativně mohou fungovat jako výměna hodnot mezi Finance a Supply Chain Management a Elektronickou fakturací.
+- **Mapování modelu elektronického dokumentu** – Mapování modelu elektronického dokumentu umožňuje konfigurovat mapování modelu ER. Mapování modelu definuje mapování dat abstraktní faktury, která je integrována do Elektronické fakturace při odesílání elektronických dokumentů.
 - **Kontextový model faktury** – Kontextový model faktury umožňuje konfigurovat kontextový model faktury ER a definovat kontext funkce elektronické fakturace.
-- **Typy odpovědí** – Typy odpovědí vám umožňují konfigurovat, co musí doplněk elektronické fakturace aktualizovat ve Finance Supply Chain Management v důsledku zpracování elektronické faktury.
+- **Typy odpovědí** – Typy odpovědí vám umožňují konfigurovat, co musí Elektronická fakturace aktualizovat ve Finance Supply Chain Management v důsledku zpracování elektronické faktury.
 
 ### <a name="formats"></a>Formáty
 
@@ -237,7 +233,7 @@ Verze funkcí elektronické fakturace dodržují životní cyklus, který má a�
 
 - **Návrh** – Pokud je verze prvku v tomto stavu, můžete upravit jeho konfigurační atributy a jakékoli jeho artefakty (například konfigurace formátu souboru).
 - **Kompletní** – Pokud je verze funkce v tomto stavu, byla publikována do globálního úložiště, které je přidruženo k vaší organizaci. Už nemůžete upravovat verzi prvku ani žádnou z komponent ER.
-- **Publikováno** – Pokud je verze funkce v tomto stavu, byla publikována v doplňku Elektronická fakturace. Už nemůžete upravovat verzi prvku ani žádnou z komponent ER.
+- **Publikováno** – Pokud je verze funkce v tomto stavu, byla publikována v Elektronické fakturaci. Už nemůžete upravovat verzi prvku ani žádnou z komponent ER.
 
 ### <a name="feature-configurations"></a>Konfigurace funkce
 
@@ -266,14 +262,14 @@ Prostřednictvím nastavení aplikace můžete nakonfigurovat část funkce elek
 
 V RCS používáte příkaz **Nasadit** k cílovému publikování verze funkce elektronické fakturace. Vyberte **Nasadit** a poté vyberte jednu z následujících možností k definování cíle nasazení: 
 
-- **Prostředí služby** – Když je cílem nasazení prostředí služby, verze funkce elektronické fakturace se publikuje do prostředí služby. Doplněk elektronické fakturace je poté připraven přijímat a zpracovávat elektronické dokumenty, které odesílají Finance a Supply Chain Management.
+- **Prostředí služby** – Když je cílem nasazení prostředí služby, verze funkce elektronické fakturace se publikuje do prostředí služby. Elektronická fakturace je poté připravena přijímat a zpracovávat elektronické dokumenty, které odesílají Finance a Supply Chain Management.
 - **Připojená aplikace** – Když je cílem nasazení připojená aplikace, konfigurace poskytovaná nastavením aplikace se zapíše do instance Finance a Supply Chain Management, která k ní byla dříve přidružena.
 
 Pouze verze s elektronickou fakturací, které mají stav **Dokončeno** lze nasadit do prostředí služby nebo do připojené aplikace.
 
 ### <a name="removing-feature-versions"></a>Odstranění budoucích verzí
 
-V RCS používáte příkaz **Zrušit nasazení** k odebrání konkrétní verze funkce elektronické fakturace z prostředí služby v doplňku Elektronická fakturace.
+V RCS používáte příkaz **Zrušit nasazení** k odebrání konkrétní verze funkce elektronické fakturace z prostředí služby v Elektronické fakturaci.
 
 > [!IMPORTANT]
 > Příkaz **Zrušit nasazení** funguje pouze v prostředí služby. Neodstraňuje verze funkcí elektronické fakturace z připojených aplikací.

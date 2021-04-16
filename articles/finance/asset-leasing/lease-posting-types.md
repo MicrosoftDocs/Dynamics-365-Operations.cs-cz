@@ -2,11 +2,9 @@
 title: Typy zaúčtování leasingu
 description: Toto téma popisuje typy účtování, které se používají pro transakce leasingu aktiv.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229495"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841134"
 ---
 # <a name="lease-posting-types"></a>Typy zaúčtování leasingu
 
@@ -90,15 +88,6 @@ Například leasing má aktuální účetní hodnotu závazku z leasingu ve vý�
 **Příklad záznamů v deníku:** Časové rozlišení odpisů<br>
 **Debet:** výdej za odpis XXX<br>
 **Kredit:** Akumulovaný odpis XXX
-
-## <a name="retained-earnings"></a>Pozdržené příjmy
-
-Účet přidružený k pozdrženým příjmům. Tento účet může být debitován nebo kreditován v položce deníku vyrovnání přechodu pomocí úplné retrospektivní metody nebo metody A kumulativní možnosti oprav. Rozdíl mezi počátečním používaného majetku a leasingovým závazkem se zaúčtuje do pozdržených příjmů. Ve vzácných případech může dojít k ovlivnění pozdržených příjmů během úpravy leasingu, pokud se klasifikace leasingu změní z finanční na operativní tak, aby se hodnota používaného majetku zvyšovala nebo snižovala tak, aby se rovnala leasingovému závazku.
-
-**Příklad záznamů v deníku:** Přechodové vyrovnání (metoda s možností A plně retrospektivní nebo kumulativní opravy)<br>
-**Debet:** leasingový závazek XXX<br>
-**Kredit** leasing majetku XXX<br>
-**Kredit:** pozdržené příjmy XXX
 
 ## <a name="variable-payment"></a>Variabilní splátka
 
