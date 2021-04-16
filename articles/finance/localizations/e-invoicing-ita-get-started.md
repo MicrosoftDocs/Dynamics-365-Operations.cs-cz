@@ -1,12 +1,10 @@
 ---
-title: Začněte s doplňkem elektronické fakturace pro Itálii
-description: Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace pro Itálii v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
+title: Začínáme s Elektronickou fakturací pro Itálii
+description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Itálii.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259213"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840093"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Začněte s doplňkem elektronické fakturace pro Itálii
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Začínáme s Elektronickou fakturací pro Itálii
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Doplněk elektronické fakturace pro Itálii nemusí aktuálně podporovat všechny funkce, které jsou k dispozici pro elektronické faktury v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. 
+> Elektronická fakturace pro Itálii nemusí aktuálně podporovat všechny funkce, které jsou k dispozici pro elektronické faktury v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. 
 
-Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace pro Itálii Provede vás konfiguračními kroky, které jsou závislé na zemi v Regulatory Configuration Services (RCS) a Finance. Rovněž vás provede procesem odesílání elektronických faktur, které jsou generovány ve formátu **FatturaPA** specifického pro Itálii prostřednictvím služby a vysvětluje, jak zkontrolovat výsledky zpracování.
+Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Itálii. Provede vás konfiguračními kroky, které jsou závislé na zemi v Regulatory Configuration Services (RCS) a Finance. Rovněž vás provede procesem odesílání elektronických faktur, které jsou generovány ve formátu **FatturaPA** specifického pro Itálii prostřednictvím služby a vysvětluje, jak zkontrolovat výsledky zpracování.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Než dokončíte kroky v tomto tématu, musíte provést kroky v [Začněte s doplňkem Elektronická fakturace](e-invoicing-get-started.md).
+Než dokončíte kroky v tomto tématu, musíte provést kroky v [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 ## <a name="rcs-setup"></a>Nastavení RCS
 
@@ -48,7 +46,7 @@ Během instalace RCS dokončíte tyto úlohy:
 4. Publikování funkce elektronické fakturace.
 
 > [!NOTE]
-> „Funkce elektronické fakturace“ je obecný název prostředku, který je nakonfigurován a publikován tak, aby využíval server doplňku elektronické fakturace. V tomto případě je export elektronických faktur zákazníků funkce elektronické fakturace, kterou nastavíte.
+> „Funkce elektronické fakturace“ je obecný název prostředku, který je nakonfigurován a publikován tak, aby využíval server Elektronické fakturace. V tomto případě je export elektronických faktur zákazníků funkce elektronické fakturace, kterou nastavíte.
 
 ## <a name="import-the-e-invoicing-feature"></a>Import funkce elektronické fakturace
 
@@ -153,7 +151,7 @@ Funkci elektronické fakturace můžete publikovat změnou stavu verze na **Doko
 
 ![Změna stavu funkce elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Nastavte integraci doplňku elektronické fakturace ve Finance
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Nastavení integrace Elektronické fakturace ve Finance
 
 Během instalace Finance dokončíte tyto úlohy:
 
@@ -193,17 +191,17 @@ Během instalace Finance dokončíte tyto úlohy:
 
 Během zpracování ve Finance dokončíte tyto úlohy:
 
-1. Generujte italské e-faktury prostřednictvím doplňku Elektronická fakturace
+1. Generování italských e-faktur prostřednictvím Elektronické fakturace
 2. Zobrazte protokoly o provedení a zkontrolujte výsledky zpracování.
 
 ### <a name="generate-electronic-invoices"></a>Generujte elektronické faktury
 
-Po zapnutí funkce **Konfigurovatelná integrace doplňku elektronické fakturace** a aktivaci funkce **IT00036** starý proces pro generování italských elektronických faktur ve Finance již nelze použít. Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
+Po zapnutí funkce **Konfigurovatelná integrace Elektronické fakturace** a aktivaci funkce **IT00036** již nelze použít starý proces pro generování italských elektronických faktur ve Finance. Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
 
 Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty elektronické faktury.
 
 > [!NOTE]
-> Než budete pokračovat, ověřte, že bylo dokončeno nastavení požadované pro italské elektronické faktury. Další informace naleznete v tématu [Zákaznické elektronické faktury](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Uvědomte si, že některé kroky nastavení popsané v tomto tématu nemusí být k dispozici z důvodu aktivace doplňku Elektronická fakturace.
+> Než budete pokračovat, ověřte, že bylo dokončeno nastavení požadované pro italské elektronické faktury. Další informace naleznete v tématu [Zákaznické elektronické faktury](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Uvědomte si, že některé kroky nastavení popsané v tomto tématu nemusí být k dispozici z důvodu aktivace Elektronické fakturace.
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
@@ -220,7 +218,7 @@ Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty 
 2. Zvolte **OK** a zavřete dialogové okno **Dotaz**.
 3. Vyberte **OK** k odeslání vybraných dokumentů.
 
-> ![POZNÁMKA] Během prvního pokusu o odeslání dokumentu prostřednictvím služby budete vyzváni k potvrzení spojení s doplňkem Elektronická fakturace. Vyberte **Klikněte zde pro připojení ke službě elektronického odesílání dokumentů**.
+> ![POZNÁMKA] Během prvního pokusu o odeslání dokumentu prostřednictvím služby budete vyzváni k potvrzení spojení s Elektronickou fakturací. Vyberte **Klikněte zde pro připojení ke službě elektronického odesílání dokumentů**.
 
 #### <a name="view-submission-logs"></a>Zobrazit protokoly odeslání
 
@@ -242,9 +240,9 @@ Můžete si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty
 
 ## <a name="related-topics"></a>Související témata
 
-- [Přehled doplňku Elektronická fakturace](e-invoicing-service-overview.md)
-- [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
-- [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+- [Přehled elektronické fakturace](e-invoicing-service-overview.md)
+- [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md)
+- [Nastavení Elektronické fakturace](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
