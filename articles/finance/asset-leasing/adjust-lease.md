@@ -2,11 +2,9 @@
 title: Úprava leasingů
 description: Toto téma vysvětluje, jak upravit leasing. Může být vyžadována úprava, pokud dojde ke změně podmínek leasingu, prodloužení leasingu nebo změně jiných okolností.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1dce99e9fb553cce8de9cefc7e01c8755e9d2090
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219980"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825764"
 ---
 # <a name="adjust-leases"></a>Úprava leasingů
 

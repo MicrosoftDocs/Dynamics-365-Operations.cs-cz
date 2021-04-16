@@ -2,11 +2,9 @@
 title: Konfigurace vyrovnání
 description: To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky.
 author: kweekley
-manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee37bc38c1027e2b52e25b331f65be6f2f5edd98
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2acfe35363558398d873c7fd3a377d6db7785f19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254052"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830441"
 ---
 # <a name="configure-settlement"></a>Konfigurace vyrovnání
 

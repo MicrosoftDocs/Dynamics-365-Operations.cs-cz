@@ -2,11 +2,9 @@
 title: Přiznání k DPH (Česká republika)
 description: Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku.
 author: anasyash
-manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 41b3ce2488b229b4bdb76148600c045cbaee6e62
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6e105b462fe48e68c3676d80773ca2bdcecd2dd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246860"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839854"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 

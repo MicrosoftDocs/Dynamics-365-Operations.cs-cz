@@ -2,11 +2,9 @@
 title: Možnost Celková částka a Interval výpočtu pro kódy DPH
 description: Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234110"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842361"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
 
@@ -46,9 +44,8 @@ Pokud částka odpovídá horní mezi předchozím intervalem a zároveň dolní
 ## <a name="example-whole-amount-method-of-calculation"></a>Příklad: výpočet metodou celkové částky
 Na stránce Hodnoty kódu DPH jsou sazby DPH nastaveny v následujících intervalech:
 
-|                   |                   |              |
+| Minimální limit     | Maximální limit     | Sazba daně     |
 |-------------------|-------------------|--------------|
-| **Minimální limit** | **Maximální limit** | **Sazba daně** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -65,9 +62,8 @@ Prodejní daň bude vypočtena ve výši celé zdanitelné částky.
 ## <a name="example-interval-method-of-calculation"></a> Příklad: výpočet metodou intervalu
 Na stránce Hodnoty jsou sazby DPH nastaveny v následujících intervalech:
 
-|                   |                   |              |
+| Minimální limit     | Maximální limit     | Sazba daně     |
 |-------------------|-------------------|--------------|
-| **Minimální limit** | **Maximální limit** | **Sazba daně** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
