@@ -2,11 +2,9 @@
 title: Přecenění leasingových splátek vázaných na indexovou sazbu
 description: Toto téma popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 79e8922a6118693db941ec259a2a1004e3522954
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d743bb51cfc1487e76ee46adfd59276f1c1b48b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241363"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819715"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Přecenění leasingových splátek vázaných na indexovou sazbu
 
