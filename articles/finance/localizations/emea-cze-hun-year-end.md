@@ -2,11 +2,9 @@
 title: Roční uzávěrka pro Českou republiku a Maďarsko
 description: Toto téma obsahuje informace o procesu roční uzávěrky a počátečních transakcích pro Maďarsko a Českou republiku.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1ce89eeadceeaa84a8373200cb2276092936cf7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cb718df92cdb2bb09e13210990422b4f66150458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256612"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839856"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Roční uzávěrka pro Českou republiku a Maďarsko
 [!include[banner](../includes/banner.md)]
