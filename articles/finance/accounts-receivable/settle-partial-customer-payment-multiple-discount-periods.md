@@ -2,11 +2,9 @@
 title: Vyrovnání částečné platby zákazníka, u níž je více období slev
 description: Tento článek popisuje způsob, jakým se vyrovnávají platby odběratelů po více období slevy.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241707"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835093"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby zákazníka, u níž je více období slev
 
@@ -56,7 +54,7 @@ Dne 28. června provede odběratel 4031 částečné platbu ve výši 294,00. Vz
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu **294,00**, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 6,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání** za vás.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 6/30/2015 |
 | Částka platební slevy         | 20,00     |
@@ -75,7 +73,7 @@ Po zaúčtování platby Arnoldem je zůstatek faktury 700,00.
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 30,00     |

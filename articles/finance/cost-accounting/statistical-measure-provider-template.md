@@ -2,11 +2,9 @@
 title: Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
 description: Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření. Členy statistické dimenze lze použít jako základ přidělení v zásadách, jako je distribuce nákladů a přidělení nákladů. Můžete je také používat k vykazování spotřeby nepeněžních nákladů.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ceb274c05874438206c1b3f8fc279a6f39e2b69
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 330b7dfd3937d0d7c4a394b55972d75e876aea17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208816"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833059"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
 
@@ -162,7 +160,7 @@ Po zpracování zdrojových dat hlavní knihy pro statistické měření jsou v 
 
 **Statistické položky**
 
-| Objekt nákladů |    | Datum účtování | Člen statistické dimenze |  popis        | Hodnota |
+| Objekt nákladů |  popis  | Datum účtování | Člen statistické dimenze |  popis        | Hodnota |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR | 31. 01. 2017      | FTE                         | Zaměstnanci na plný úvazek | 1.00      |
 | CC002       | FI | 31. 01. 2017      | FTE                         | Zaměstnanci na plný úvazek | 2,00      |
@@ -328,7 +326,7 @@ Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákla
 
 **Statistické položky**
 
-| Objekt nákladů |    | Datum účtování | Člen statistické dimenze |      popis                   | Hodnota  |
+| Objekt nákladů | popis | Datum účtování | Člen statistické dimenze |      popis                   | Hodnota  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | HR | 31. 01. 2017      | Elektrické energie                  | Spotřeba elektřiny | 2,450.00   |
 | CC002       | FI | 31. 01. 2017      | Elektrické energie                  | Spotřeba elektřiny | 4,100.00   |
@@ -336,11 +334,11 @@ Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákla
 
 Pokud je předdefinovaný základ přidělení člena dimenze Elektřina přidružen jako základ přidělení v pravidle distribuce nákladů, náklady budou rozděleny pomocí následujícího faktoru přidělení.
 
-| Objekt nákladů |    | Hodnota | Koeficient přidělení          |
-|-------------|----|-----------|----------------------------|
-| CC001       | HR | 2,450.00  | (2 450 ÷ 21 550) × částka  |
-| CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × částka  |
-| CC003       | IT | 15,000.00 | (15 000 ÷ 21 550) × částka |
+| Objekt nákladů | popis   | Hodnota | Koeficient přidělení          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | HR            | 2,450.00  | (2 450 ÷ 21 550) × částka  |
+| CC002       | FI            | 4,100.00  | (4 100 ÷ 21 550) × částka  |
+| CC003       | IT            | 15,000.00 | (15 000 ÷ 21 550) × částka |
 
 ## <a name="additional-resources"></a>Další zdroje
 
