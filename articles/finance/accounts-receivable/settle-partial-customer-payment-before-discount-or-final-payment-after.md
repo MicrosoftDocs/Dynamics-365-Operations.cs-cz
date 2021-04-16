@@ -2,11 +2,9 @@
 title: Vyrovnání částečné platby před datem slevy s konečnou platbou po datu slevy
 description: Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele. Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250547"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835140"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Vyrovnání částečné platby před datem slevy s konečnou platbou po datu slevy
 
@@ -48,10 +46,10 @@ Fabrikam prodává zboží zákazníkovi 4027. Fabrikam nabízí platební slevu
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu 297,00, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 3,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání** za vás.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
 | Dat. plat. slevy           | 7/09/2015 |
-| Částka platební slevy         | 10,00     |
+| Částka platební slevy         | 10.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 3,00      |
@@ -73,9 +71,9 @@ Arnold zaúčtuje tuto platbu. Faktura má nyní zůstatek 700,00. Následujíc�
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
+| Dat. plat. slevy           | 7/09/2015 |
 | Částka platební slevy         | 0,00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 3,00      |
@@ -89,10 +87,10 @@ Pokud Arnold změní hodnotu v poli **Použít platební slevu** na **Vždy**, n
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 7:00      |
+| Dat. plat. slevy           | 7/09/2015 |
+| Částka platební slevy         | 7.00      |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | 3,00      |
 | Částka platební slevy k přijetí | 7:00      |
