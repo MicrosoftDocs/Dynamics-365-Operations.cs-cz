@@ -2,11 +2,9 @@
 title: " Vytvoření a přidružení hardwarové stanice"
 description: Tato procedura vás provede postupem vytvoření nové hardwarové stanice.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailHardwareStation, RetailStoreTable
 audience: Application User
@@ -16,46 +14,46 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0c02246a20ef28c0f4f28b73dfe5ff56f38a68b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a4402e8d1179499512034e7deb8b3eb78f12096f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247037"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798578"
 ---
-# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="2a759-103"> Vytvoření a přidružení hardwarové stanice</span><span class="sxs-lookup"><span data-stu-id="2a759-103">Create and associate a hardware station</span></span>
+# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="fbfd7-103"> Vytvoření a přidružení hardwarové stanice</span><span class="sxs-lookup"><span data-stu-id="fbfd7-103">Create and associate a hardware station</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2a759-104">Tato procedura vás provede postupem vytvoření nové hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="2a759-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="2a759-105">Bude vytvořený nový hardwarový profil a použije se pro přidání nových hardwarových stanic do předem definovaného obchodu (kanálu).</span><span class="sxs-lookup"><span data-stu-id="2a759-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="2a759-106">Tato procedura používá v ukázkových datech společnost USRT.</span><span class="sxs-lookup"><span data-stu-id="2a759-106">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="fbfd7-104">Tato procedura vás provede postupem vytvoření nové hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="fbfd7-105">Bude vytvořený nový hardwarový profil a použije se pro přidání nových hardwarových stanic do předem definovaného obchodu (kanálu).</span><span class="sxs-lookup"><span data-stu-id="fbfd7-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="fbfd7-106">Tato procedura používá v ukázkových datech společnost USRT.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="2a759-107">Přejděte na Základy obchodování > Kanály > ..</span><span class="sxs-lookup"><span data-stu-id="2a759-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="2a759-108">> ..</span><span class="sxs-lookup"><span data-stu-id="2a759-108">> ..</span></span> <span data-ttu-id="2a759-109">> ..</span><span class="sxs-lookup"><span data-stu-id="2a759-109">> ..</span></span> <span data-ttu-id="2a759-110">> Profily hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="2a759-110">> Hardware station profiles.</span></span>
-2. <span data-ttu-id="2a759-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2a759-111">Click New.</span></span>
-3. <span data-ttu-id="2a759-112">V poli ID hardwarové stanice zadejte „TestHWProfile“.</span><span class="sxs-lookup"><span data-stu-id="2a759-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
-4. <span data-ttu-id="2a759-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2a759-113">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="2a759-114">Zadejte číslo do pole Číslo portu.</span><span class="sxs-lookup"><span data-stu-id="2a759-114">In the Port number field, enter a number.</span></span>
-6. <span data-ttu-id="2a759-115">V poli Profil hardwaru kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="2a759-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="2a759-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="2a759-116">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="2a759-117">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2a759-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="2a759-118">V poli Název balíčku kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="2a759-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="2a759-119">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2a759-119">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="2a759-120">Toto je standardní balíček, jehož součástí je nové prostředí.</span><span class="sxs-lookup"><span data-stu-id="2a759-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="2a759-121">Číslo verze se může lišit.</span><span class="sxs-lookup"><span data-stu-id="2a759-121">The version number may vary.</span></span>  
-11. <span data-ttu-id="2a759-122">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="2a759-122">Click Save.</span></span>
-12. <span data-ttu-id="2a759-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2a759-123">Close the page.</span></span>
-13. <span data-ttu-id="2a759-124">Přejděte na Maloobchodní a velkoobchodní prodej > Kanály > Všechny maloobchody.</span><span class="sxs-lookup"><span data-stu-id="2a759-124">Go to Retail and Commerce > Channels > All stores.</span></span>
-14. <span data-ttu-id="2a759-125">Vyberte ze seznamu řádek 17.</span><span class="sxs-lookup"><span data-stu-id="2a759-125">In the list, select row 17.</span></span>
-    * <span data-ttu-id="2a759-126">Pokud používáte data ukázkové společnosti USRT jedná se o obchod Houston.</span><span class="sxs-lookup"><span data-stu-id="2a759-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
-15. <span data-ttu-id="2a759-127">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2a759-127">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="2a759-128">Přepněte rozšíření oddílu Hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="2a759-128">Toggle the expansion of the Hardware stations section.</span></span>
-17. <span data-ttu-id="2a759-129">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="2a759-129">Click Add.</span></span>
-18. <span data-ttu-id="2a759-130">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="2a759-130">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="2a759-131">V poli ID profilu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="2a759-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
-20. <span data-ttu-id="2a759-132">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="2a759-132">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="2a759-133">Musí se jednat o nový profil hardwarové stanice vytvořený v předchozím postupu.</span><span class="sxs-lookup"><span data-stu-id="2a759-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
-21. <span data-ttu-id="2a759-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2a759-134">In the list, click the link in the selected row.</span></span>
-22. <span data-ttu-id="2a759-135">Do pole Název hostitele zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2a759-135">In the Host name field, type a value.</span></span>
-23. <span data-ttu-id="2a759-136">Zadejte hodnotu do pole ID terminálu EFT.</span><span class="sxs-lookup"><span data-stu-id="2a759-136">In the EFT terminal ID field, type a value.</span></span>
-24. <span data-ttu-id="2a759-137">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2a759-137">Click Save.</span></span>
+1. <span data-ttu-id="fbfd7-107">Přejděte na Základy obchodování > Kanály > ..</span><span class="sxs-lookup"><span data-stu-id="fbfd7-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="fbfd7-108">> ..</span><span class="sxs-lookup"><span data-stu-id="fbfd7-108">> ..</span></span> <span data-ttu-id="fbfd7-109">> ..</span><span class="sxs-lookup"><span data-stu-id="fbfd7-109">> ..</span></span> <span data-ttu-id="fbfd7-110">> Profily hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-110">> Hardware station profiles.</span></span>
+2. <span data-ttu-id="fbfd7-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-111">Click New.</span></span>
+3. <span data-ttu-id="fbfd7-112">V poli ID hardwarové stanice zadejte „TestHWProfile“.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
+4. <span data-ttu-id="fbfd7-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="fbfd7-114">Zadejte číslo do pole Číslo portu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-114">In the Port number field, enter a number.</span></span>
+6. <span data-ttu-id="fbfd7-115">V poli Profil hardwaru kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="fbfd7-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="fbfd7-117">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="fbfd7-118">V poli Název balíčku kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="fbfd7-119">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-119">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="fbfd7-120">Toto je standardní balíček, jehož součástí je nové prostředí.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="fbfd7-121">Číslo verze se může lišit.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-121">The version number may vary.</span></span>  
+11. <span data-ttu-id="fbfd7-122">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-122">Click Save.</span></span>
+12. <span data-ttu-id="fbfd7-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-123">Close the page.</span></span>
+13. <span data-ttu-id="fbfd7-124">Přejděte na Maloobchodní a velkoobchodní prodej > Kanály > Všechny maloobchody.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-124">Go to Retail and Commerce > Channels > All stores.</span></span>
+14. <span data-ttu-id="fbfd7-125">Vyberte ze seznamu řádek 17.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-125">In the list, select row 17.</span></span>
+    * <span data-ttu-id="fbfd7-126">Pokud používáte data ukázkové společnosti USRT jedná se o obchod Houston.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
+15. <span data-ttu-id="fbfd7-127">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-127">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="fbfd7-128">Přepněte rozšíření oddílu Hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-128">Toggle the expansion of the Hardware stations section.</span></span>
+17. <span data-ttu-id="fbfd7-129">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-129">Click Add.</span></span>
+18. <span data-ttu-id="fbfd7-130">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-130">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="fbfd7-131">V poli ID profilu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="fbfd7-132">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-132">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="fbfd7-133">Musí se jednat o nový profil hardwarové stanice vytvořený v předchozím postupu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
+21. <span data-ttu-id="fbfd7-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-134">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="fbfd7-135">Do pole Název hostitele zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-135">In the Host name field, type a value.</span></span>
+23. <span data-ttu-id="fbfd7-136">Zadejte hodnotu do pole ID terminálu EFT.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-136">In the EFT terminal ID field, type a value.</span></span>
+24. <span data-ttu-id="fbfd7-137">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fbfd7-137">Click Save.</span></span>
 
 
 

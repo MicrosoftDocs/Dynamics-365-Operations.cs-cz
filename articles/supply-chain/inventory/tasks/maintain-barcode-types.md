@@ -2,11 +2,9 @@
 title: Údržba typů čárového kódu
 description: Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze použít v rámci sestavy seznamu výdejek.
 author: perlynne
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
@@ -16,34 +14,34 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 112438417e425b8b77dd56f25e0b6e6db21c5148
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 937384f14d88dafd537888d862ee1e363ea20626
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244392"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809511"
 ---
-# <a name="maintain-barcode-types"></a><span data-ttu-id="6945f-103">Údržba typů čárového kódu</span><span class="sxs-lookup"><span data-stu-id="6945f-103">Maintain barcode types</span></span>
+# <a name="maintain-barcode-types"></a><span data-ttu-id="3b93b-103">Údržba typů čárového kódu</span><span class="sxs-lookup"><span data-stu-id="3b93b-103">Maintain barcode types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6945f-104">Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze použít v rámci sestavy seznamu výdejek.</span><span class="sxs-lookup"><span data-stu-id="6945f-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="6945f-105">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="6945f-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="6945f-106">Pokud používáte USMF, můžete použít ukázkové hodnoty, které jsou zobrazeny.</span><span class="sxs-lookup"><span data-stu-id="6945f-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="6945f-107">Tyto úkoly obvykle provádějí vedoucí skladu.</span><span class="sxs-lookup"><span data-stu-id="6945f-107">These tasks would typically be carried out by a warehouse manager.</span></span>
+<span data-ttu-id="3b93b-104">Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze použít v rámci sestavy seznamu výdejek.</span><span class="sxs-lookup"><span data-stu-id="3b93b-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="3b93b-105">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="3b93b-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="3b93b-106">Pokud používáte USMF, můžete použít ukázkové hodnoty, které jsou zobrazeny.</span><span class="sxs-lookup"><span data-stu-id="3b93b-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="3b93b-107">Tyto úkoly obvykle provádějí vedoucí skladu.</span><span class="sxs-lookup"><span data-stu-id="3b93b-107">These tasks would typically be carried out by a warehouse manager.</span></span>
 
-1. <span data-ttu-id="6945f-108">Přejděte k čárovým kódům.</span><span class="sxs-lookup"><span data-stu-id="6945f-108">Go to Bar codes.</span></span>
-2. <span data-ttu-id="6945f-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="6945f-109">Click New.</span></span>
-3. <span data-ttu-id="6945f-110">Zadejte hodnotu do pole Nastavení čárového kódu.</span><span class="sxs-lookup"><span data-stu-id="6945f-110">In the Barcode setup field, type a value.</span></span>
-4. <span data-ttu-id="6945f-111">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="6945f-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="6945f-112">Vyberte možnost v poli Typ čárového kódu.</span><span class="sxs-lookup"><span data-stu-id="6945f-112">In the Bar code type field, select an option.</span></span>
-    * <span data-ttu-id="6945f-113">Pokud používáte data USMF, můžete vybrat „Kód 39“.</span><span class="sxs-lookup"><span data-stu-id="6945f-113">If you're using USMF, you can select 'Code 39'.</span></span>  
-6. <span data-ttu-id="6945f-114">Do pole Velikost zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="6945f-114">In the Size field, enter a number.</span></span>
-7. <span data-ttu-id="6945f-115">Zadejte číslo do pole Maximální délka.</span><span class="sxs-lookup"><span data-stu-id="6945f-115">In the Maximum length field, enter a number.</span></span>
-8. <span data-ttu-id="6945f-116">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="6945f-116">Click Save.</span></span>
-9. <span data-ttu-id="6945f-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6945f-117">Close the page.</span></span>
-10. <span data-ttu-id="6945f-118">Přejděte do parametrů modulu Řízení zásob a skladu</span><span class="sxs-lookup"><span data-stu-id="6945f-118">Go to Inventory and warehouse management parameters.</span></span>
-11. <span data-ttu-id="6945f-119">V poli Nastavení čárového kódu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6945f-119">In the Barcode setup field, enter or select a value.</span></span>
-    * <span data-ttu-id="6945f-120">Vyberte nastavení čárového kódu, který jste předtím vytvořili, nezapomeňte však, že formát čárového kódu musí odpovídat formátu jedinečného identifikátoru pro typ záznamu používaného v procesu.</span><span class="sxs-lookup"><span data-stu-id="6945f-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="6945f-121">Například pro postupy výdeje by formát čárového kódu měl odpovídat formátu odkazu postupu výdeje, což je obvykle číselná řada.</span><span class="sxs-lookup"><span data-stu-id="6945f-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
-12. <span data-ttu-id="6945f-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="6945f-122">Click Save.</span></span>
-13. <span data-ttu-id="6945f-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6945f-123">Close the page.</span></span>
+1. <span data-ttu-id="3b93b-108">Přejděte k čárovým kódům.</span><span class="sxs-lookup"><span data-stu-id="3b93b-108">Go to Bar codes.</span></span>
+2. <span data-ttu-id="3b93b-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="3b93b-109">Click New.</span></span>
+3. <span data-ttu-id="3b93b-110">Zadejte hodnotu do pole Nastavení čárového kódu.</span><span class="sxs-lookup"><span data-stu-id="3b93b-110">In the Barcode setup field, type a value.</span></span>
+4. <span data-ttu-id="3b93b-111">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="3b93b-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="3b93b-112">Vyberte možnost v poli Typ čárového kódu.</span><span class="sxs-lookup"><span data-stu-id="3b93b-112">In the Bar code type field, select an option.</span></span>
+    * <span data-ttu-id="3b93b-113">Pokud používáte data USMF, můžete vybrat „Kód 39“.</span><span class="sxs-lookup"><span data-stu-id="3b93b-113">If you're using USMF, you can select 'Code 39'.</span></span>  
+6. <span data-ttu-id="3b93b-114">Do pole Velikost zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="3b93b-114">In the Size field, enter a number.</span></span>
+7. <span data-ttu-id="3b93b-115">Zadejte číslo do pole Maximální délka.</span><span class="sxs-lookup"><span data-stu-id="3b93b-115">In the Maximum length field, enter a number.</span></span>
+8. <span data-ttu-id="3b93b-116">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="3b93b-116">Click Save.</span></span>
+9. <span data-ttu-id="3b93b-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3b93b-117">Close the page.</span></span>
+10. <span data-ttu-id="3b93b-118">Přejděte do parametrů modulu Řízení zásob a skladu</span><span class="sxs-lookup"><span data-stu-id="3b93b-118">Go to Inventory and warehouse management parameters.</span></span>
+11. <span data-ttu-id="3b93b-119">V poli Nastavení čárového kódu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="3b93b-119">In the Barcode setup field, enter or select a value.</span></span>
+    * <span data-ttu-id="3b93b-120">Vyberte nastavení čárového kódu, který jste předtím vytvořili, nezapomeňte však, že formát čárového kódu musí odpovídat formátu jedinečného identifikátoru pro typ záznamu používaného v procesu.</span><span class="sxs-lookup"><span data-stu-id="3b93b-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="3b93b-121">Například pro postupy výdeje by formát čárového kódu měl odpovídat formátu odkazu postupu výdeje, což je obvykle číselná řada.</span><span class="sxs-lookup"><span data-stu-id="3b93b-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
+12. <span data-ttu-id="3b93b-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="3b93b-122">Click Save.</span></span>
+13. <span data-ttu-id="3b93b-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3b93b-123">Close the page.</span></span>
 
 
 
