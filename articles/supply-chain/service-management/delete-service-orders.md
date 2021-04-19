@@ -2,11 +2,9 @@
 title: Odstranit servisní zakázky
 description: Odstranit servisní zakázky
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,36 +15,36 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a141ec1574dbd1cbbf4640063999797c711a8d72
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98ddb6be5d15344abdc603f978ce5deb5e5db7e8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247423"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824551"
 ---
-# <a name="delete-service-orders"></a><span data-ttu-id="a9888-103">Odstranit servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="a9888-103">Delete service orders</span></span> 
+# <a name="delete-service-orders"></a><span data-ttu-id="f206f-103">Odstranit servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="f206f-103">Delete service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="a9888-104">Klepněte na tlačítko **řízení servisu** \> **Periodicky** \> **servisní zakázky** \> **odstranění servisních zakázek**.</span><span class="sxs-lookup"><span data-stu-id="a9888-104">Click **Service management** \> **Periodic** \> **Service orders** \> **Delete service orders**.</span></span>
+1.  <span data-ttu-id="f206f-104">Klepněte na tlačítko **řízení servisu** \> **Periodicky** \> **servisní zakázky** \> **odstranění servisních zakázek**.</span><span class="sxs-lookup"><span data-stu-id="f206f-104">Click **Service management** \> **Periodic** \> **Service orders** \> **Delete service orders**.</span></span>
 
-2.  <span data-ttu-id="a9888-105">Ve formuláři **Odstranit servisní příkazy** klepněte na tlačítko **Vybrat** a zadejte kritéria pro výběr servisních zakázek, které chcete odstranit, a potom klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="a9888-105">On the **Delete service orders** form, click **Select** to specify the criteria to select the service orders to be deleted, and then click **OK**.</span></span>
+2.  <span data-ttu-id="f206f-105">Ve formuláři **Odstranit servisní příkazy** klepněte na tlačítko **Vybrat** a zadejte kritéria pro výběr servisních zakázek, které chcete odstranit, a potom klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f206f-105">On the **Delete service orders** form, click **Select** to specify the criteria to select the service orders to be deleted, and then click **OK**.</span></span>
 
-3.  <span data-ttu-id="a9888-106">Jestliže chcete generovat informační protokol, který zobrazí odstraněné servisní zakázky, zaškrtněte políčko **Zobrazit informační protokol**.</span><span class="sxs-lookup"><span data-stu-id="a9888-106">Select the **Show Infolog** check box to generate an Infolog that displays the deleted service orders.</span></span>
+3.  <span data-ttu-id="f206f-106">Jestliže chcete generovat informační protokol, který zobrazí odstraněné servisní zakázky, zaškrtněte políčko **Zobrazit informační protokol**.</span><span class="sxs-lookup"><span data-stu-id="f206f-106">Select the **Show Infolog** check box to generate an Infolog that displays the deleted service orders.</span></span>
 
-4.  <span data-ttu-id="a9888-107">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="a9888-107">Click **OK**.</span></span>
+4.  <span data-ttu-id="f206f-107">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f206f-107">Click **OK**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="a9888-108">Pokud ve formuláři nevyberete žádná kritéria pro výběr servisních objednávek, budou odstraněny všechny servisní objednávky.</span><span class="sxs-lookup"><span data-stu-id="a9888-108">If you do not specify any criteria to select the service orders, all service orders are deleted.</span></span> <span data-ttu-id="a9888-109">Při opuštění formuláře <STRONG>Odstranit servisní objednávky</STRONG> však budete mít možnost odstranit všechny servisní objednávky.</span><span class="sxs-lookup"><span data-stu-id="a9888-109">However, when you exit the <STRONG>Delete service orders</STRONG> form, you will have the option to delete all service orders.</span></span></P>
-> <P><span data-ttu-id="a9888-110">Odstranit lze pouze servisní objednávky, jejichž stav odstranění umožňuje.</span><span class="sxs-lookup"><span data-stu-id="a9888-110">Also, you can only delete service orders with a stage that lets you delete them.</span></span></P>
+> <P><span data-ttu-id="f206f-108">Pokud ve formuláři nevyberete žádná kritéria pro výběr servisních objednávek, budou odstraněny všechny servisní objednávky.</span><span class="sxs-lookup"><span data-stu-id="f206f-108">If you do not specify any criteria to select the service orders, all service orders are deleted.</span></span> <span data-ttu-id="f206f-109">Při opuštění formuláře <STRONG>Odstranit servisní objednávky</STRONG> však budete mít možnost odstranit všechny servisní objednávky.</span><span class="sxs-lookup"><span data-stu-id="f206f-109">However, when you exit the <STRONG>Delete service orders</STRONG> form, you will have the option to delete all service orders.</span></span></P>
+> <P><span data-ttu-id="f206f-110">Odstranit lze pouze servisní objednávky, jejichž stav odstranění umožňuje.</span><span class="sxs-lookup"><span data-stu-id="f206f-110">Also, you can only delete service orders with a stage that lets you delete them.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="a9888-111">Viz také</span><span class="sxs-lookup"><span data-stu-id="a9888-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f206f-111">Viz také</span><span class="sxs-lookup"><span data-stu-id="f206f-111">See also</span></span>
 
-[<span data-ttu-id="a9888-112">Servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="a9888-112">Service orders</span></span>](service-orders.md)
+[<span data-ttu-id="f206f-112">Servisní zakázky</span><span class="sxs-lookup"><span data-stu-id="f206f-112">Service orders</span></span>](service-orders.md)
 
   
 

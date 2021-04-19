@@ -2,11 +2,9 @@
 title: Zobrazení zůstatku objektu nákladů
 description: K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 author: AndersGirke
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventCostDimParmFixed
 audience: Application User
@@ -16,28 +14,28 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a5cb08c8b6f7464dc6b04a6641225526d07d3c2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bface512eb93b728aa72d241d96a73f5e14fb5db
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239415"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830189"
 ---
-# <a name="view-cost-object-balance"></a><span data-ttu-id="fc8e4-103">Zobrazení zůstatku objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="fc8e4-103">View cost object balance</span></span>
+# <a name="view-cost-object-balance"></a><span data-ttu-id="18bbd-103">Zobrazení zůstatku objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="18bbd-103">View cost object balance</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="fc8e4-104">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="fc8e4-105">Tento postup je určen pro kontrolora nákladů.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-105">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="18bbd-104">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="18bbd-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="18bbd-105">Tento postup je určen pro kontrolora nákladů.</span><span class="sxs-lookup"><span data-stu-id="18bbd-105">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="fc8e4-106">Klikněte na Správa nákladů.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-106">Click Cost administration.</span></span>
-2. <span data-ttu-id="fc8e4-107">Klepněte na možnost Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-107">Click Released products.</span></span>
-3. <span data-ttu-id="fc8e4-108">Použijte rychlý filtr k filtrování v poli Číslo zboží s hodnotou „m0004“.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-108">Use the Quick Filter to filter on the Item number field with a value of 'm0004'.</span></span>
-4. <span data-ttu-id="fc8e4-109">V podokně akcí klikněte na možnost Spravovat náklady.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-109">On the Action Pane, click Manage costs.</span></span>
-5. <span data-ttu-id="fc8e4-110">Klepněte na Nákladové objekty.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-110">Click Cost objects.</span></span>
-6. <span data-ttu-id="fc8e4-111">Klepněte na Fyzické množství.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-111">Click Physical quantity.</span></span>
-7. <span data-ttu-id="fc8e4-112">Klepněte na Zobrazení dimenzí.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-112">Click Dimensions display.</span></span>
-8. <span data-ttu-id="fc8e4-113">Zrušte zaškrtnutí políčka Umístění.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-113">Clear the Location check box.</span></span>
-9. <span data-ttu-id="fc8e4-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fc8e4-114">Click OK.</span></span>
+1. <span data-ttu-id="18bbd-106">Klikněte na Správa nákladů.</span><span class="sxs-lookup"><span data-stu-id="18bbd-106">Click Cost administration.</span></span>
+2. <span data-ttu-id="18bbd-107">Klepněte na možnost Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="18bbd-107">Click Released products.</span></span>
+3. <span data-ttu-id="18bbd-108">Použijte rychlý filtr k filtrování v poli Číslo zboží s hodnotou „m0004“.</span><span class="sxs-lookup"><span data-stu-id="18bbd-108">Use the Quick Filter to filter on the Item number field with a value of 'm0004'.</span></span>
+4. <span data-ttu-id="18bbd-109">V podokně akcí klikněte na možnost Spravovat náklady.</span><span class="sxs-lookup"><span data-stu-id="18bbd-109">On the Action Pane, click Manage costs.</span></span>
+5. <span data-ttu-id="18bbd-110">Klepněte na Nákladové objekty.</span><span class="sxs-lookup"><span data-stu-id="18bbd-110">Click Cost objects.</span></span>
+6. <span data-ttu-id="18bbd-111">Klepněte na Fyzické množství.</span><span class="sxs-lookup"><span data-stu-id="18bbd-111">Click Physical quantity.</span></span>
+7. <span data-ttu-id="18bbd-112">Klepněte na Zobrazení dimenzí.</span><span class="sxs-lookup"><span data-stu-id="18bbd-112">Click Dimensions display.</span></span>
+8. <span data-ttu-id="18bbd-113">Zrušte zaškrtnutí políčka Umístění.</span><span class="sxs-lookup"><span data-stu-id="18bbd-113">Clear the Location check box.</span></span>
+9. <span data-ttu-id="18bbd-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="18bbd-114">Click OK.</span></span>
 
 
 

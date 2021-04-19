@@ -2,11 +2,9 @@
 title: Aktualizace stavu kanbanu
 description: Pokud dojde omylem k vyprázdnění kanbanu nebo přijatý kanban musí být prázdný, je nutné aktualizovat stav kanbanu.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User
@@ -16,36 +14,36 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 055765452579b1de74f1c2158de9c6cb4ee80f16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5a0e03da4671ffec4ecf4835b20a00ef87971c94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252815"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831808"
 ---
-# <a name="update-kanban-status"></a><span data-ttu-id="76c07-103">Aktualizace stavu kanbanu</span><span class="sxs-lookup"><span data-stu-id="76c07-103">Update kanban status</span></span>
+# <a name="update-kanban-status"></a><span data-ttu-id="66a00-103">Aktualizace stavu kanbanu</span><span class="sxs-lookup"><span data-stu-id="66a00-103">Update kanban status</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="76c07-104">Pokud dojde omylem k vyprázdnění kanbanu nebo přijatý kanban musí být prázdný, je nutné aktualizovat stav kanbanu.</span><span class="sxs-lookup"><span data-stu-id="76c07-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="76c07-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="76c07-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="76c07-106">Tento postup je určen pro vedoucího dílny.</span><span class="sxs-lookup"><span data-stu-id="76c07-106">This procedure is intended for the shop supervisor.</span></span>
+<span data-ttu-id="66a00-104">Pokud dojde omylem k vyprázdnění kanbanu nebo přijatý kanban musí být prázdný, je nutné aktualizovat stav kanbanu.</span><span class="sxs-lookup"><span data-stu-id="66a00-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="66a00-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="66a00-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="66a00-106">Tento postup je určen pro vedoucího dílny.</span><span class="sxs-lookup"><span data-stu-id="66a00-106">This procedure is intended for the shop supervisor.</span></span>
 
 
-## <a name="find-the-kanban"></a><span data-ttu-id="76c07-107">Vyhledejte kanban.</span><span class="sxs-lookup"><span data-stu-id="76c07-107">Find the kanban.</span></span>
-1. <span data-ttu-id="76c07-108">Přejděte na Řízení výroby > Kanban > Kanbany.</span><span class="sxs-lookup"><span data-stu-id="76c07-108">Go to Production control > Kanban > Kanbans.</span></span>
-2. <span data-ttu-id="76c07-109">Otevřete filtr sloupce Stav manipulační jednotky.</span><span class="sxs-lookup"><span data-stu-id="76c07-109">Open Handling unit status column filter.</span></span>
-3. <span data-ttu-id="76c07-110">Klikněte na tlačítko Vymazat.</span><span class="sxs-lookup"><span data-stu-id="76c07-110">Click Clear.</span></span>
-    * <span data-ttu-id="76c07-111">To obnoví hodnoty filtrů.</span><span class="sxs-lookup"><span data-stu-id="76c07-111">This resets the filters.</span></span>  
-4. <span data-ttu-id="76c07-112">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="76c07-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="76c07-113">Můžete například filtrovat pole Číslo karty pomocí hodnoty „000149“.</span><span class="sxs-lookup"><span data-stu-id="76c07-113">For example, filter on the Card number field with a value of '000149'.</span></span>
+## <a name="find-the-kanban"></a><span data-ttu-id="66a00-107">Vyhledejte kanban.</span><span class="sxs-lookup"><span data-stu-id="66a00-107">Find the kanban.</span></span>
+1. <span data-ttu-id="66a00-108">Přejděte na Řízení výroby > Kanban > Kanbany.</span><span class="sxs-lookup"><span data-stu-id="66a00-108">Go to Production control > Kanban > Kanbans.</span></span>
+2. <span data-ttu-id="66a00-109">Otevřete filtr sloupce Stav manipulační jednotky.</span><span class="sxs-lookup"><span data-stu-id="66a00-109">Open Handling unit status column filter.</span></span>
+3. <span data-ttu-id="66a00-110">Klikněte na tlačítko Vymazat.</span><span class="sxs-lookup"><span data-stu-id="66a00-110">Click Clear.</span></span>
+    * <span data-ttu-id="66a00-111">To obnoví hodnoty filtrů.</span><span class="sxs-lookup"><span data-stu-id="66a00-111">This resets the filters.</span></span>  
+4. <span data-ttu-id="66a00-112">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="66a00-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="66a00-113">Můžete například filtrovat pole Číslo karty pomocí hodnoty „000149“.</span><span class="sxs-lookup"><span data-stu-id="66a00-113">For example, filter on the Card number field with a value of '000149'.</span></span>
 
-## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="76c07-114">Změna stavu Vyprázdněno na Přijato</span><span class="sxs-lookup"><span data-stu-id="76c07-114">Change emptied status to received status</span></span>
-1. <span data-ttu-id="76c07-115">Klikněte na Stornovat prázdnou manipulační jednotku.</span><span class="sxs-lookup"><span data-stu-id="76c07-115">Click Reverse empty handling unit.</span></span>
-2. <span data-ttu-id="76c07-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="76c07-116">Click OK.</span></span>
-    * <span data-ttu-id="76c07-117">Všimněte si, že stav manipulační jednotky je Přijato.</span><span class="sxs-lookup"><span data-stu-id="76c07-117">Notice that the Handling unit status is Received.</span></span>  
+## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="66a00-114">Změna stavu Vyprázdněno na Přijato</span><span class="sxs-lookup"><span data-stu-id="66a00-114">Change emptied status to received status</span></span>
+1. <span data-ttu-id="66a00-115">Klikněte na Stornovat prázdnou manipulační jednotku.</span><span class="sxs-lookup"><span data-stu-id="66a00-115">Click Reverse empty handling unit.</span></span>
+2. <span data-ttu-id="66a00-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="66a00-116">Click OK.</span></span>
+    * <span data-ttu-id="66a00-117">Všimněte si, že stav manipulační jednotky je Přijato.</span><span class="sxs-lookup"><span data-stu-id="66a00-117">Notice that the Handling unit status is Received.</span></span>  
 
-## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="76c07-118">Změna stavu Přijato na Vyprázdněno</span><span class="sxs-lookup"><span data-stu-id="76c07-118">Change received status to emptied status</span></span>
-1. <span data-ttu-id="76c07-119">Klikněte na Prázdný kanban.</span><span class="sxs-lookup"><span data-stu-id="76c07-119">Click Empty kanban.</span></span>
-2. <span data-ttu-id="76c07-120">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="76c07-120">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="76c07-121">Všimněte si, že stav manipulační jednotky je Vyprázdněno.</span><span class="sxs-lookup"><span data-stu-id="76c07-121">Notice that the Handling unit status is Emptied.</span></span>  
+## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="66a00-118">Změna stavu Přijato na Vyprázdněno</span><span class="sxs-lookup"><span data-stu-id="66a00-118">Change received status to emptied status</span></span>
+1. <span data-ttu-id="66a00-119">Klikněte na Prázdný kanban.</span><span class="sxs-lookup"><span data-stu-id="66a00-119">Click Empty kanban.</span></span>
+2. <span data-ttu-id="66a00-120">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="66a00-120">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="66a00-121">Všimněte si, že stav manipulační jednotky je Vyprázdněno.</span><span class="sxs-lookup"><span data-stu-id="66a00-121">Notice that the Handling unit status is Emptied.</span></span>  
 
 
 
