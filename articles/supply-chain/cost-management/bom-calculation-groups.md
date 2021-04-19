@@ -2,11 +2,9 @@
 title: Skupiny výpočtů kusovníku
 description: Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5927b1c31cf15e2fb92c15d4abc06bfa0403e33d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce954b61b4d6a12f2bc62a71ef2e1bc69732a4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266288"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813284"
 ---
 # <a name="bom-calculations-groups"></a>Skupiny výpočtů kusovníku
 

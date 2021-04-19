@@ -1,12 +1,10 @@
 ---
-title: Přijetí registrační značky prostřednictvím aplikace skladu
-description: V tomto tématu je vysvětleno, jak nastavit aplikaci skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
+title: Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
+description: V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245147"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823184"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Přijetí registrační značky prostřednictvím aplikace skladu
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak nastavit aplikaci skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
+V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
 
 Pomocí této funkce můžete rychle zaznamenat příjem příchozích zásob, který souvisí s avízem expedice zboží (ASN). Systém při expedici převodního příkazu procesy správy skladu automaticky vytvoří avízo expedice zboží. U procesu nákupní objednávky lze ASN zaznamenat ručně nebo je lze automaticky importovat pomocí procesu příchozí datové entity ASN.
 
@@ -72,7 +70,7 @@ Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Vyl
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zobrazit nebo přeskočit stránku Souhrn přijetí
 
-Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehouse v rámci procesu získávání registrační značky.
+Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok mobilní aplikace Řízení skladu v rámci procesu získávání registrační značky.
 
 Je-li tato funkce zapnuta, položky nabídky mobilního zařízení pro příjem registračních značek nebo příjem a zaskladnění registračních značek poskytnou nastavení **Zobrazit stránku souhnu příjmu**. Toto nastavení má následující možnosti:
 

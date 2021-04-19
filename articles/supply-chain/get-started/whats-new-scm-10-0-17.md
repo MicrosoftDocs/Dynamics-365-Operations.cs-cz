@@ -1,12 +1,10 @@
 ---
-title: Náhled Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.17.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571805"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813164"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.17. Tato verze má číslo sestavení 10.0.761 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.17. Tato verze má číslo sestavení 10.0.761 a je k dispozici následujícím způsobem:
 
 - **Náhled vydané verze:** únor 2021
 - **Obecně dostupné vydání (automatická aktualizace):** březen 2021
@@ -36,9 +33,9 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce.  Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí mohou být stále ve verzi Preview, ačkoli většina již je obecně dostupná.
 
 ### <a name="asset-management"></a>Správa majetku
 
@@ -68,9 +65,13 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 - [Mobilní aplikace pro správu skladu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Další informace viz [Instalace a připojení aplikace Warehouse Management](../warehousing/install-configure-warehouse-management-app.md) a [Uživatelské nastavení mobilního zařízení](../warehousing/mobile-device-user-settings.md).
 
+- Oznámení o provedení vlny<br> - Další informace viz [Oznámení o provedení vlny](../warehousing/wave-execution-notifications.md)
+
 ### <a name="manufacturing"></a>Výroba
 
-- [Funkce správy majetku v rozhraní pro spuštění výrobního provozu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Další informace viz [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md).
+- [Funkce správy majetku v rozhraní pro spuštění výrobního provozu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
+
+- Sjednocená číselná řady pro ID úloh<br> - Další informace viz 
 
 - [Přepsání výchozího principu rezervace pro materiály ve výrobě](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Další informace získáte v části [Přepis výchozího principu rezervace pro materiály ve výrobě](../production-control/override-default-reservation-principle.md).
 

@@ -2,11 +2,9 @@
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1d2aa12e77080b530847bfdbde4dbe3a67431c3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258892"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821146"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 
@@ -35,7 +33,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
 - Správa jednotek škálování pro cloud a hraniční zařízení s prováděcími úlohami pro výrobu a skladování<br> - Další informace naleznete v [Cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu](../cloud-edge/cloud-edge-landing-page.md).
 

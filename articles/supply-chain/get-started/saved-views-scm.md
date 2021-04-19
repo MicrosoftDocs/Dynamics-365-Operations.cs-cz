@@ -2,11 +2,9 @@
 title: Standardní uložená zobrazení pro Supply Chain Management
 description: Toto téma popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500687"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821242"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management obsahuje několik uložených zobrazení, která můžete podle potřeby povolit a použít. Některé z těchto standardních uložených zobrazení jsou optimalizovány a pojmenovány pro konkrétní roli nebo úkol (například „Kontrola kvality“ nebo „Příjem“). Jiné jsou optimalizovány tak, aby zahrnovaly pouze pole a nastavení, která podle statistik používání společnosti Microsoft zákazníci nejčastěji používají. Tato uložená zobrazení se obvykle označují jako *zjednodušená* zobrazení. Toto téma popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit a přizpůsobit.
 
@@ -82,14 +79,16 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Zásobo
 
 ## <a name="saved-views-for-the-production-control-module"></a>Uložená zobrazení pro modul řízení výroby
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízení výroby.
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
-| Stránka podrobností výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
-| Stránka výdejky výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
-| Stránka výdejky výrobních příkazů | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
+| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
+| Stránka podrobností výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
+| Stránka výdejky výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
+| Stránka výdejky výrobních příkazů | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Uložená zobrazení pro modul Prodej a marketing
 

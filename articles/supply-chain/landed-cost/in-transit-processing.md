@@ -2,7 +2,6 @@
 title: Zpracování přepravovaného zboží
 description: Toto téma popisuje, jak pracovat s objednávkami přepravovaného zboží. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, může být zboží fakturováno před jeho přijetím do skladu ke spotřebě.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500397"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823402"
 ---
 # <a name="goods-in-transit-processing"></a>Zpracování přepravovaného zboží
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje, jak pracovat s objednávkami přepravovaného zboží. Tento typ objednávky se používá pouze v modulu **Náklady za doručení**. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, nemusíte čekat na přijetí zboží do skladu, než může být zboží fakturováno. Místo toho je zboží fakturováno, když opouští výchozí sklad nebo přístav dodavatele, a finanční náklady jsou uznány při zahájení cesty. Tato funkce vám umožní správně převzít vlastnictví zásob, protože zboží se často stává majetkem vaší organizace, když opustí přepravní přístav.
 
@@ -135,7 +133,7 @@ Modul Náklady za doručení přidává do položek nabídky mobilního zaříze
 
 Nastavení konfigurace pro tyto procesy se podobá nastavení [procesů vytváření příjmu a vyskladnění nákupních objednávek](https://technet.microsoft.com/library/dn553216.aspx). Proces *Příjem a vyskladnění položky přepravovaného zboží* však také přidá následující pole.
 
-- **Povolit dokončení přepravního kontejneru** – Pokud je tato možnost nastavena na *Ano*, skladová aplikace poskytne další možnost s názvem **Přepravní kontejner dokončen**, když je vyskladnění dokončeno. Když je tato možnost vybrána, pracovník bude vyzván k potvrzení, že je kontejner kompletní. V tomto okamžiku budou všechny nedostačující příjmy zpracovány jako transakce nedostatečné dodávky.
+- **Povolit dokončení přepravního kontejneru** – Pokud je tato možnost nastavena na *Ano*, mobilní aplikace Řízení skladu poskytne další možnost s názvem **Přepravní kontejner dokončen**, když je vyskladnění dokončeno. Když je tato možnost vybrána, pracovník bude vyzván k potvrzení, že je kontejner kompletní. V tomto okamžiku budou všechny nedostačující příjmy zpracovány jako transakce nedostatečné dodávky.
 
 ### <a name="location-directives"></a>Směrnice skladového místa
 

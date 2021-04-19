@@ -2,7 +2,6 @@
 title: Odhad a správa nákladů za doručení
 description: Systém používá vaše nastavení automatických nákladů k určení odhadu vašich nákladů za doručení. Toto téma vysvětluje, jak můžete definovat různé scénáře a dosáhnout tak přesnějšího odhadu.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: cbd652f2b29f7a78ad9e4e1d3dda4a3ef8a9f3f3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 510f5fc4910dde2f91fe2d666abb23a9bd7381f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501263"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823426"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Odhad a správa nákladů za doručení
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Systém používá vaše [nastavení automatických nákladů](auto-cost-setup.md) k určení odhadu vašich nákladů za doručení. Kromě toho můžete definovat různé scénáře a dosáhnout tak přesnějšího odhadu. Tyto scénáře jsou uloženy. Můžete je tedy později zkontrolovat a porovnat je se skutečností v sestavě. Můžete také aktualizovat cenu položky.
 

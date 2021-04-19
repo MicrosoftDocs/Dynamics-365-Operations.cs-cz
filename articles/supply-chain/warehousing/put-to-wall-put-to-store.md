@@ -2,11 +2,9 @@
 title: Umístění na zeď - umístění do obchodu
 description: Toto téma obsahuje informace o funkci Umístění na zeď - umístění do obchodu. Tato funkce umožňuje zpracovat scénáře, ve kterých musíte produkt konsolidovat do pracovní oblasti předbalení na základě konfigurovatelných kritérií. Pomáhá zkrátit dobu výdeje, protože umožňuje výběry na jednu cílovou registrační značku a může používat více pozic umístění než cluster.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228506"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823280"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umístění na zeď - umístění do obchodu
 
@@ -524,7 +522,7 @@ Nyní, když byly veškeré zásoby vloženy do místa třídění, musí být r
 
 Pokud by se měly pozice třídění uzavřít ručně, musí být možnost **Automaticky zavřít pozici třídění** pro šablonu odchozího třídění nastavena na *Ne* a uzavření musí být provedeno před přesunutím zásob do oblasti nákladové brány. Pozice lze uzavřít různými způsoby:
 
-- Prostřednictvím skladové aplikace:
+- Prostřednictvím mobilní aplikace Řízení skladu:
 
     - Uživatel může naskenovat jednu z položek, které jsou již na dané pozici, a poté vybrat **Zavřít** pro uzavření pozice.
     - Pokud uživatel prohledá kontejner, který již byl roztříděn, zobrazí se chybová zpráva. Uživatel však stále může pokračovat k zavření pozice.
