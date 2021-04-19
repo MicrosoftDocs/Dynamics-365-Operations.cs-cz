@@ -2,7 +2,6 @@
 title: Správa cest
 description: Toto téma popisuje, jak pracovat s cestami. Cesta obvykle představuje plavidlo. V závislosti na vašich zvycích a postupech však může představovat dodavatele, nákupní objednávku nebo jinou položku, která má pro vaši organizaci smysl.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500999"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833778"
 ---
 # <a name="manage-voyages"></a>Správa cest
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Cesta obvykle představuje plavidlo. V závislosti na vašich zvycích a postupech však může představovat dodavatele, nákupní objednávku nebo jinou položku, která má pro vaši organizaci smysl.
 
@@ -74,9 +72,9 @@ V následující tabulce jsou popsány akce, které jsou k dispozici na kartě *
 | Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky v cestě. Pokud zboží na cestě projde zpracováním přepravovaného zboží, budou řádky nákupní objednávky fakturovány před dokončením procesu přijímání. Při fakturaci původní nákupní objednávky budou vytvořeny objednávky přepravovaného zboží, které jsou přidruženy k řádkům původní nákupní objednávky. Tyto objednávky pak může přijmout sklad. Pokud se používají dodávky s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování faktury. |
 | Převodní příkaz expedice | Zaúčtuje cestu převodního příkazu pro všechny řádky nákupní objednávky v cestě. Pokud je toto tlačítko vybráno, budou možné aktualizovat pouze převodní příkazy. |
 | Přijmout převodní příkaz | Zaúčtuje příjemku převodního příkazu pro všechny řádky nákupní objednávky v cestě. |
-| Přijmout přepravované zboží | Přijme všechny řádky objednávky, které jsou v cestě přepravovány. Toto tlačítko je jednou ze tří možností, které jsou k dispozici pro příjem přepravovaného zboží na cestě. (Další dvě možnosti jsou tlačítko **Vytvořit deník doručení**, které je popsáno dále v této tabulce, a skladová aplikace.) Tato možnost je nejjednodušší a bude zpracovávat přepravované zboží z tranzitního skladu do konečného cílového skladu. Chcete-li mít nad procesem větší kontrolu, použijte ke zpracování příjmu zboží deník příjezdu nebo mobilní zařízení. |
+| Přijmout přepravované zboží | Přijme všechny řádky objednávky, které jsou v cestě přepravovány. Toto tlačítko je jednou ze tří možností, které jsou k dispozici pro příjem přepravovaného zboží na cestě. (Další dvě možnosti jsou tlačítko **Vytvořit deník doručení**, které je popsáno dále v této tabulce, a mobilní aplikace Řízení skladu.) Tato možnost je nejjednodušší a bude zpracovávat přepravované zboží z tranzitního skladu do konečného cílového skladu. Chcete-li mít nad procesem větší kontrolu, použijte ke zpracování příjmu zboží deník příjezdu nebo mobilní zařízení. |
 | Najít automatické náklady | Najde jakékoli příslušné náklady na cestu. Pokud tyto náklady již byly nalezeny nebo aktualizovány, zobrazí se následující zpráva: „Existují nevyfakturované řádky nákladů. Chcete je přepsat?“ Budou nalezeny veškeré náklady, které nebyly spojeny s cestou v době vytvoření. Náklady na cestu, které jsou spojené s cestou a byly fakturovány, nebudou přepsány. |
-| Vytvořit deník doručení | <p>Otevře dialogové okno **Vytvořit deník doručení**, kde můžete vytvořit deník doručení, který určuje umístění. Dialogové okno nabízí následující možnosti:</p><ul><li>**Vytvořit z přepravovaného zboží** nebo **Vytvořit z převodního příkazu** – Popisek pro tuto možnost se mění v závislosti na tom, zda používáte proces přepravovaného zboží. Nastavením na *Ano* otevřete stránku deníku doručení, která vám umožní zpracovat standardní deník doručení pro přepravované zboží, které je spojeno s cestou. Pokud položka již byla přijata do konečného cílového skladu, nebude přidána do řádků deníku doručení.</li><li>**Inicializovat množství** – Nastavte tuto možnost na *Ano*, chcete-li inicializovat množství, které bude přijato, na základě množství zboží uvedeného na řádku cesty. Pokud byl řádek cesty částečně přijat, bude toto množství zbývajícím množstvím. Doporučujeme nastavit tuto možnost na *Ano*.</li><li>**Vytvořit z řádků objednávky** – Nastavte tuto možnost na *Ano*, chcete-li převzít hodnotu z řádků objednávky.</li></ul><p>Toto tlačítko je jednou ze tří možností, které jsou k dispozici pro příjem zboží na cestě. (Další možnosti jsou tlačítko **Přijmout přepravované zboží**, které bylo popsáno dříve v této tabulce, a skladová aplikace.)</p> |
+| Vytvořit deník doručení | <p>Otevře dialogové okno **Vytvořit deník doručení**, kde můžete vytvořit deník doručení, který určuje umístění. Dialogové okno nabízí následující možnosti:</p><ul><li>**Vytvořit z přepravovaného zboží** nebo **Vytvořit z převodního příkazu** – Popisek pro tuto možnost se mění v závislosti na tom, zda používáte proces přepravovaného zboží. Nastavením na *Ano* otevřete stránku deníku doručení, která vám umožní zpracovat standardní deník doručení pro přepravované zboží, které je spojeno s cestou. Pokud položka již byla přijata do konečného cílového skladu, nebude přidána do řádků deníku doručení.</li><li>**Inicializovat množství** – Nastavte tuto možnost na *Ano*, chcete-li inicializovat množství, které bude přijato, na základě množství zboží uvedeného na řádku cesty. Pokud byl řádek cesty částečně přijat, bude toto množství zbývajícím množstvím. Doporučujeme nastavit tuto možnost na *Ano*.</li><li>**Vytvořit z řádků objednávky** – Nastavte tuto možnost na *Ano*, chcete-li převzít hodnotu z řádků objednávky.</li></ul><p>Toto tlačítko je jednou ze tří možností, které jsou k dispozici pro příjem zboží na cestě. (Další možnosti jsou tlačítko **Přijmout přepravované zboží**, které bylo popsáno dříve v této tabulce, a mobilní aplikace Řízení skladu.)</p> |
 | Časově rozlišené náklady | Můžete shromáždit náklady, když má typ nákladů pro debet zadaný účet hlavní knihy. Toto tlačítko se obvykle používá, když je zboží na cestě, nebo když bylo zboží přijato a fakturováno. |
 | Agregovat náklady | Přesune náklady z úrovně přepravního kontejneru na úroveň cesty. Toto tlačítko můžete použít ve scénáři sdílených služeb/přepravy, kde více entit sdílí přepravní kontejner nebo prostor kartonu. Například cesta má přepravní kontejner o délce 40 stop a přepravní kontejner o délce 20 stop a rozdělení se provádí podle objemu. V takovém případě může být penalizováno zboží/entity které sdílejí nebo využívají prostor ve 20stopovém přepravním kontejneru. Pro spravedlivé rozdělení nákladů mohou některé organizace chtít převést náklady na cestu a rozdělit je na základě metody rozdělení na úrovni cesty. |
 | Změnit šablonu cesty | Otevřete dialogové okno, ve kterém můžete změnit šablonu cesty. Po změně šablony budou náklady na cestu odstraněny. Možná budete muset vybrat příkaz **Najít automatické náklady** (viz popis výše v této tabulce) nebo znovu ručně přidat náklady. |

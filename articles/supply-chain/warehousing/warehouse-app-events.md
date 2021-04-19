@@ -2,11 +2,9 @@
 title: Události aplikace skladu
 description: Toto téma popisuje zpracování událostí aplikace skladu používané ke zpracování zpráv o událostech aplikace skladu jako součást dávkové úlohy.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248636"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837386"
 ---
 # <a name="warehouse-app-event-processing"></a>Zpracování události aplikace skladu
 
 [!include [banner](../includes/banner.md)]
 
-Dávkové úlohy spuštěné v produktu Supply Chain Management mohou používat data z fronty pro zpracování událostí vydaných aplikací skladu, aby podle potřeby reagovaly na signalizované události. Tato funkce přidává do fronty relevantní události v reakci na určité typy akcí prováděné pracovníky používajícími tuto aplikaci. Příkladem je, že při použití funkce **Vytvářet a zpracovat převodní příkazy z aplikace skladu** se záhlaví a řádky převodního příkazu vytvoří a aktualizují v back-endu, když v systému běží dávková úloha **Zpracovat události aplikace skladu**.
+Dávkové úlohy spuštěné v produktu Supply Chain Management mohou používat data z fronty pro zpracování událostí vydané v mobilní aplikaci Řízení skladu, aby podle potřeby reagovaly na signalizované události. Tato funkce přidává do fronty relevantní události v reakci na určité typy akcí prováděné pracovníky používajícími tuto aplikaci. Příkladem je, že při použití funkce *Vytvářet a zpracovat převodní příkazy z aplikace skladu* se záhlaví a řádky převodního příkazu vytvoří a aktualizují v back-endu, když v systému běží dávková úloha **Zpracovat události aplikace skladu**.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>Povolení funkce Zpracovat události aplikace skladu
 
@@ -50,11 +48,11 @@ Nastavte naplánovanou dávkovou úlohu pro zpracování událostí aplikace skl
 
 ## <a name="query-warehouse-app-events"></a>Dotazy na události aplikace skladu
 
-Frontu událostí a zprávy o událostech generované aplikací skladu si můžete zobrazit přechodem na **Řízení skladu \> Dotazy a zprávy \> Protokoly mobilních zařízení \> Události aplikace skladu**.
+Frontu událostí a zprávy o událostech generované mobilní aplikací Řízení skladu si můžete zobrazit přechodem na **Řízení skladu \> Dotazy a zprávy \> Protokoly mobilních zařízení \> Události aplikace skladu**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardní proces fronty událostí
 
-Fronta událostí skladových aplikací se obvykle používá s následujícím popsaným tokem:
+Fronta událostí skladové aplikace se obvykle používá s následujícím popsaným tokem:
 
 1. Událost bude přidána do fronty se zprávou o události. Nová zpráva má zpočátku stav události **Čekání**, což znamená, že dávková úloha **Zpracovat události aplikace skladu** tuto zprávu nevyzvedne a nezpracuje.
 1. Jakmile je stav zprávy aktualizován na **Ve frontě**, dávková úloha **Zpracovat události aplikace skladu** událost vyzvedne a zpracuje.

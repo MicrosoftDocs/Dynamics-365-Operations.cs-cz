@@ -2,11 +2,9 @@
 title: Odstraňování potíží s konfigurací skladu
 description: Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při konfiguraci aplikace Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 1dbd947f0740d22e0f79e6d5c272beb64715c8a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487090"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814385"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Odstraňování potíží s konfigurací skladu
 
@@ -38,7 +36,7 @@ Tato chybová zpráva se zobrazí při skenování ID registrační značky nebo
 
 ### <a name="issue-resolution"></a>Řešení problému
 
-Ujistěte se, že ID registrační značky není rezervováno něčím jiným. K tomuto problému docházelo, když hodnota, kterou uživatel naskenoval v aplikaci skladu, byla platným skladovým místem i platným ID registrační značky. Tento problém byl však vyřešen ve verzi 10.0.11.
+Ujistěte se, že ID registrační značky není rezervováno něčím jiným. K tomuto problému docházelo, když hodnota, kterou uživatel naskenoval v mobilní aplikaci Řízení skladu, byla platným skladovým místem i platným ID registrační značky. Tento problém byl však vyřešen ve verzi 10.0.11.
 
 ## <a name="i-receive-the-following-error-message-license-plate-must-be-specified-for-this-location"></a>Zobrazuje se následující chybová zpráva: „Pro toto skladové místo musí být určena registrační značka.“
 
@@ -82,7 +80,7 @@ Směrnice skladového místa typu pracovního příkazu *Prodejní objednávky* 
 
 Ve verzi 10.0.15 byla přidána nová funkce *Vyhodnocení všech akcí pro směrnice skladového místa vícenásobného SKU* (viz [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Tato funkce vyhodnocuje všechny akce pro směrnice skladového místa vícenásobného SKU. Pokud požadujete tuto funkci, použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k jejímu zapnutí.
 
-## <a name="i-cant-use-the-warehouse-app-to-do-partial-picking"></a>K částečnému výdeji nemohu použít aplikaci skladu.
+## <a name="i-cant-use-the-warehouse-management-mobile-app-to-do-partial-picking"></a>K částečnému výdeji nemohu použít mobilní aplikaci Řízení skladu.
 
 ### <a name="issue-description"></a>Popis problému
 
@@ -100,7 +98,7 @@ Chcete provést změnu stavu zásob u částečného množství dávky.
 
 ### <a name="issue-resolution"></a>Řešení problému
 
-Chcete-li pracovníkům umožnit tuto změnu, můžete vytvořit položku nabídky pro aplikaci skladu. Na stránce **Položky nabídky mobilního zařízení** vytvořte (nebo upravte) položku nabídky, která má následující nastavení:
+Chcete-li pracovníkům umožnit tuto změnu, můžete vytvořit položku nabídky pro mobilní aplikaci Řízení skladu. Na stránce **Položky nabídky mobilního zařízení** vytvořte (nebo upravte) položku nabídky, která má následující nastavení:
 
 - **Režim:** *Práce*
 - **Použít existující práci:** *Ne*

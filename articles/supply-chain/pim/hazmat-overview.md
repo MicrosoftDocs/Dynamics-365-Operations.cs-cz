@@ -2,11 +2,9 @@
 title: Přehled nebezpečných materiálů
 description: Toto téma poskytuje přehled funkcí, které souvisejí s manipulací a dokumentací nebezpečných materiálů během správy informací o produktu a správy skladu.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231881"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829371"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Aby organizace, které přepravují materiály klasifikované jako nebezpečné zboží, dodržovaly přepravní předpisy, musí ke svým zásilkám přiložit dodatečné doklady. Funkce nebezpečných materiálů umožňuje zákazníkům ukládat informace související s uvolněnými položkami. Tyto informace lze poté použít k přípravě dokumentace o dodávce. Organizace, která přepravuje nebezpečné zboží, musí mít vlastní procesy a postupy pro správu přepravního procesu. Microsoft Dynamics 365 Supply Chain Management je jen nástroj, který může pomoci vygenerovat požadované dokumenty.
 

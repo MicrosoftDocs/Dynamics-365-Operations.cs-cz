@@ -2,7 +2,6 @@
 title: Náhled Dynamics 365 Supply Chain Management 10.0.18 (květen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
-manager: annbe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0a75cd0b02c48421edebac0b83576095bea65bb6
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571781"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832123"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.18 (květen 2021)
 
@@ -36,17 +35,17 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
 - Automatické vydávání objednávek (vylepšení pro [Realizace skladu s jednotkami škálování v cloudu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).
 
 - [Vylepšení výkonu a archivace v podnikovém měřítku](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Další informace viz [Archivace skladových transakcí](../inventory/archive-inventory-transactions.md)
 
-- [Správa rabatu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
+- [Správa rabatu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md)
 
 - Zjednodušené rozhraní pouze pro označení příchodu do práce a odchodu z práce (vylepšení pro [Vylepšené rozhraní pro provádění výrobního provozu pro výrobu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. 
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 

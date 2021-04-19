@@ -2,11 +2,9 @@
 title: Doplnění nad kapacitu místa
 description: Toto téma obsahuje informace o funkci Doplňování přes kapacitu místa. Tato funkce umožňuje veškerou doplňovací práci, která bude vyžadována na den, který má být vytvořen, a řídí dostupnost této doplňovací práce, aby bylo zajištěno, že místu vyskladnění nedojdou zásoby, ani nepřekročí kapacitu.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228386"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823232"
 ---
 # <a name="replenishment-over-location-capacity"></a>Doplnění nad kapacitu místa
 
@@ -241,7 +239,7 @@ V závislosti na množství, které máte k dispozici, se mohou vytvořená mno�
 
 #### <a name="on-hand-inventory-license-plate-id"></a>ID registrační značky na skladě
 
-Později v tomto scénáři budete používat skladovací aplikaci (nebo emulátor), kde musíte identifikovat registrační značku pro dokončení scénářů vychystávání a doplňování.
+Později v tomto scénáři budete používat mobilní aplikaci (nebo emulátor) Řízení skladu, kde musíte identifikovat registrační značku pro dokončení scénářů vychystávání a doplňování.
 
 Chcete-li najít ID registrační značky, které budete později potřebovat, postupujte takto.
 
@@ -266,7 +264,7 @@ Provedete doplnění umístění skladu pro první dvě ID práce. Práce na tř
 
 #### <a name="replenishment"></a>Doplnění
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
 1. Přejděte na **Zásoby \> Doplnění**.
 
     Jste vyzváni, abyste dokončili první práci na doplnění. Zobrazí se číslo položky, množství a umístění pro vyskladnění.
@@ -296,7 +294,7 @@ Dokud nebude z místa vybrán dostatek zásob, aby byl pod položkou nabídky uv
 
 Před dokončením zbývajícího úkolu doplňování musí být místo vyskladnění vyčerpáno ze zásoby na úroveň, na které lze zbývající část doplňování odblokovat. Jinými slovy, součet množství zásob na skladě v místě a množství doplňování nesmí překročit hodnota **Přetečené množství**. Pokud je tato částka menší než množství přetečení, zbývající doplňování bude odblokováno.
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
 1. Přejděte do **Výstupní \> Prodejní výdej**.
 1. Zadejte první ID práce pro prodejní objednávku 1.
 

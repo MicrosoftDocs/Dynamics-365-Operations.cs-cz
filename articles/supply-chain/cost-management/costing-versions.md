@@ -2,11 +2,9 @@
 title: Přehled verzí výpočtu nákladů
 description: Tento článek obsahuje informace o nákladových verzích, způsobu jejich udržování a typech dat, která lze do nich zahrnout. Hlavním účelem nákladové verze je to, že obsahuje záznamy o položkách, kategorie nákladů a vzorce pro výpočet nepřímých nákladů.
 author: AndersGirke
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4375c088e0872f6f75ee83b288c41e80ea4dcb34
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 421ef0ffc3d9105e605a010f912f26ec03f590b0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232343"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832363"
 ---
 # <a name="costing-versions-overview"></a>Přehled verzí výpočtu nákladů
 

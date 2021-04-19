@@ -2,11 +2,9 @@
 title: Jak pracovníci používají rozhraní pro provádění výrobního provozu
 description: Tohle téma popisuje, jak používat rozhraní pro provádění výrobního provozu z pohledu pracovníka.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500783"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814649"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rozhraní pro provádění výrobního provozu je optimalizováno pro dotykovou interakci. Jeho provedení poskytuje vizuální kontrast, který splňuje požadavky na přístupnost pro prostředí dílny. Nabízí všechny funkce jako zařízení úkolového lístku. Umožňuje však také paralelní spuštění více úloh ze seznamu úloh. (Tato funkce je také známá jako *sdružování úloh*.) Navíc ze seznamu úloh mohou pracovníci otevřít průvodce, který byl vytvořen v Microsoft Dynamics 365 Guide. Tímto způsobem mohou získat vizuální pokyny na HoloLens.
 
@@ -90,7 +87,7 @@ Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům 
 
 1. **Nastavení** - Vyberte ikonu ozubeného kola a otevřete dialogové okno, kde si můžete vybrat, která počítadla se mají zobrazit pro vybraný majetek stroje. Hodnoty těchto čítačů jsou zobrazeny v horní části karty **Správa majetku**. Nabídka **Nastavení** (zobrazená na následujícím snímku obrazovky) umožňuje povolit až čtyři čítače. U každého počítadla, které chcete povolit, použijte vyhledávací pole v horní části dlaždice a vyberte počítadlo. Vyhledávací pole obsahuje seznam všech čítačů přidružených k aktivu vybranému v horní části stránky **Správa majetku** . Nastavte každé počítadlo tak, aby sledovalo hodnotu **Agregované** nebo nejnovější **Aktuální** hodnotu čítače. Například pokud nastavíte čítač, který sleduje, kolik hodin stroj běžel, měli byste jej nastavit na **Agregované**. Pokud nastavíte počitadlo pro měření nejnovější aktualizované teploty nebo tlaku, měli byste jej nastavit na **Aktuální**. Volbou **OK** uložte svá nastavení a zavřete dialogové okno.
 
-    ![Karta Můj stroj](media/pfei-my-machine-tab-settings.png "Karta Můj stroj")
+    ![Nastavení karty Můj stroj](media/pfei-my-machine-tab-settings.png "Nastavení karty Můj stroj")
 
 1. **požadavek na údržbu** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete vytvořit požadavek na údržbu. Budete moci poskytnout popis a poznámku. Na požadavek bude upozorněn uživatel Supply Chain Management, který poté bude moci převést požadavek na údržbu na objednávku údržby.
 1. **Registrovat prostoje** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete zaregistrovat prostoje stroje. Budete moci vybrat kód důvodu a zadat časové rozpětí data a času prostoje. Registrace výpadku stroje se používá pro výpočet efektivity majetku stroje.

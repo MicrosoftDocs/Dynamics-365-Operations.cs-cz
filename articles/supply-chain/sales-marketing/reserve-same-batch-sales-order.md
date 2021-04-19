@@ -2,11 +2,9 @@
 title: Rezervace stejné dávky pro prodejní objednávku
 description: Tento článek vysvětluje, jak nastavit produkt pro umožnění rezervací zásob pomocí jedné dávky zásob.
 author: omulvad
-manager: tfehr
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c7745b1306142678760318cc47f54b93d6f727a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0937be76aa687ed986ff83e67f2db3e2dadd0f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231809"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807649"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezervace stejné dávky pro prodejní objednávku
 
@@ -43,7 +41,7 @@ Když rezervujete zásoby pro produkt na řádku prodejní objednávky, který j
 - Platnost dávky vypršela, na základě data vypršení platnosti a všech dnů prodejnosti příslušného odběratele. Položky lze stále ještě považována za rezervaci, pokud se skupina modelu zboží pro položku „nejdříve končící platnost – nejdříve ze skladu“ (FEFO) – řízenou podle data a pokud je jako kritérium pro výdej vybráno datum doporučené spotřeby.
 - Dávka neobsahuje dostatek zbývajících dní skladovatelnosti na základě data vypršení platnosti a data doporučené spotřeby, a navíc žádné dny prodejnosti odběratele.
 
-U položek přidružených ke skupině dimenzí úložiště, která má povolenu možnost **Použít procesy řízení skladu**, lze vyhradit specifická čísla dávek pomocí hierarchie rezervací s danou dimenzí zásob čísla dávky definovanou nad dimenzí skladového místa. Stránka **Rezervace dávky** pro řádky prodejního a převodního příkazu umožňuje také vybrat a rezervovat více řádků na základě dostupných čísel dávek. Další informace, jak postupovat v případě, že používáte hierarchii rezervací s dimenzí čísla dávky pod skladovým místem, naleznete [Flexibilní zásada rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+U položek přidružených ke skupině dimenzí úložiště, která má povolenu možnost **Použít procesy řízení skladu**, lze vyhradit specifická čísla dávek pomocí hierarchie rezervací, kde je definována dimenze zásob čísla dávky nad dimenzí skladového místa. Tento typ hierarchie rezervací je také známý jako *Batch-above \[location\]*. Stránka **Rezervace dávky** pro řádky prodejního a převodního příkazu umožňuje také vybrat a rezervovat více řádků na základě dostupných čísel dávek. Další informace, jak postupovat v případě, že používáte hierarchii rezervací s dimenzí čísla dávky pod skladovým místem (*Batch-below \[location\]*), naleznete v části [Flexibilní zásada rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

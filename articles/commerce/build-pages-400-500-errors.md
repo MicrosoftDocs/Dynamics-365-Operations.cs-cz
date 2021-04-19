@@ -2,11 +2,9 @@
 title: Vytvoření stránek s vlastní odpovědí pro chyby kódu stavu 4xx/5xx
 description: Toto téma popisuje, jak vytvořit stránky s vlastní odpovědí pro chyby kódu stavu 4xx a 5xx pomocí nástrojů pro tvorbu obsahu v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee2f74581ded6020d075377f931c465d7c89f9e5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6b35b3c07b1edd41e6a3763c0001529e125e4636
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211098"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799633"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Vytvoření stránek s vlastní odpovědí pro chyby kódu stavu 4xx/5xx
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit stránky s vlastní odpovědí pro chyby kódu stavu 4xx a 5xx pomocí nástrojů pro tvorbu obsahu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Není-li požadavek úspěšný, server vydá odpovědi na chyby kódu stavu HTTP. Kód stavu 404 je zachycen a vrácen v případě, že stránka nebyla nalezena a kód stavu 500 je zachycen a vrácen, pokud dojde k chybě serveru. V Dynamics 365 Commerce mohou uživatelé aplikace vytvářet stránky s vlastními odpovědmi na chyby kódu stavu, které jsou zobrazeny uživatelům.
 

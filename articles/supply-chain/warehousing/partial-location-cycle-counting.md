@@ -2,11 +2,9 @@
 title: Částečná cyklická inventura místa
 description: Aktuální operace výpočtů řídí plány cyklické inventury. Můžete požadovat, aby byly započítány pouze konkrétní produkty a varianty produktů namísto všech zásob na skladě ve skladovém místě.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abafe64a17b7b284e5e045da33bb15cf3c42800b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4fa017c9702524d4637ef73a4c2e506a9c53b28
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234674"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818889"
 ---
 # <a name="partial-location-cycle-counting"></a>Částečná cyklická inventura místa
 
@@ -48,7 +46,7 @@ Předtím, než lze zpracovat práci cyklické inventury, musíte přinejmenší
 Pro proces částečné cyklické inventury se datum/čas **poslední cyklické inventury** pro dané místo neaktualizuje, přestože se počítají všechny položky na skladě na daném místě. Částečná cyklická inventura nezohledňuje parametr **Dny mezi cyklickými inventurami** na stránce **Plány cyklických inventur**. Částečná cyklická inventura nepodporuje současné počítání více položek na stejném místě. Funkce částečné cyklické inventury může mít za následek, že stejné místo bude pro položku započítáno několikrát, kdy je spuštěna funkce **Zpracovat plán cyklických inventur**. Chcete-li se tomuto scénáři vyhnout, zadejte filtry v poli **Vybrat umístění**.
 
 > [!NOTE]
-> Aplikace skladu nenabízí tlačítko **Přidat LP nebo položku**, když použijete proces částečné cyklické inventury.
+> Mobilní aplikace Řízení skladu nenabízí tlačítko **Přidat LP nebo položku**, když použijete proces částečné cyklické inventury.
 
 ## <a name="example"></a>Příklad
 

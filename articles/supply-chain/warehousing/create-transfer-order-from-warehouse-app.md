@@ -1,12 +1,10 @@
 ---
 title: Vytvoření převodních příkazů z aplikace skladu
-description: Toto téma popisuje, jak vytvářet a zpracovávat převodní příkazy z funkce aplikace skladu.
+description: Toto téma popisuje, jak vytvářet a zpracovávat převodní příkazy z funkce mobilní aplikace Řízení skladu.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 855b057706bc2f8315084a3cebec6f855a4d01e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214123"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838363"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
 [!include [banner](../includes/banner.md)]
 
-Tato funkce umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z aplikace skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek a přidat registrační značky do převodního příkazu. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky.
+Tato funkce umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z mobilní aplikace Řízení skladu. Pracovníci začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek a přidat registrační značky do převodního příkazu. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky.
 
-## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Povolení funkce vytváření převodních příkazů z aplikace skladu
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Povolení funkce vytváření převodních příkazů z mobilní aplikace Řízení skladu
 
 Než budete moct tuto funkci používat, musíte funkci a její předpoklady povolit ve svém systému. Správci mohou pomocí stránky [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby.
 
@@ -50,8 +48,8 @@ Tady jsou obecné pokyny pro nastavení položky nabídky mobilního zařízení
 1. Vyberte **Nová** pro přidání nové položky nabídky. Začněte určením následujících nastavení:
 
     - **Název položky nabídky** – Přiřaďte název tak, jak by se měl zobrazovat v aplikaci Supply Chain Management.
-    - **Název** – Přiřaďte název nabídky tak, jak by se měl zobrazovat pracovníkům v aplikaci skladu.
-    - **Režim** – Nastavte na *Nepřímý* (tato aplikace skladu nebude vytvářet práci).
+    - **Název** – Přiřaďte název nabídky tak, jak by se měl zobrazovat pracovníkům v mobilní aplikaci Řízení skladu.
+    - **Režim** – Nastavte na *Nepřímý* (tato položka nabídky nebude vytvářet práci).
     - **Kód aktivity** – Nastavte na *Vytvořit převodní příkaz z registračních značek*, aby pracovníci skladu mohli vytvořit převodní příkaz na základě jedné nebo více naskenovaných registračních značek.
 
 1. Pomocí nastavení **Zásady vytváření řádků převodních příkazů** můžete řídit způsob, jakým bude tato položka nabídky vytvářet řádky převodního příkazu. Tyto řádky budou vytvářeny a aktualizovány na základě zásob na skladě, které jsou registrovány pro naskenované registrační značky. Zvolte jednu z následujících hodnot:
@@ -74,7 +72,7 @@ Tady jsou obecné pokyny pro nastavení položky nabídky mobilního zařízení
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Vytvoření převodního příkazu na základě registračních značek
 
-Aplikace skladu používá jednoduchý proces vytváření převodních příkazů na základě registračních značek. Pracovník pomocí aplikace skladu provede následující:
+Mobilní aplikace Řízení skladu používá jednoduchý proces vytváření převodních příkazů na základě registračních značek. Pracovník pomocí mobilní aplikace Řízení skladu provede následující:
 
 1. Vytvoří převodní příkaz a identifikuje cílový sklad.
 1. Identifikuje všechny registrační značky k expedici.
@@ -258,9 +256,9 @@ Pro uvedený příklad se použijí dvě **události aplikace skladu** (*Vytvoř
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Prošetřování událostí aplikace skladu
 
-Frontu událostí a zprávy o událostech generované aplikací skladu si můžete zobrazit přechodem na **Řízení skladu \> Dotazy a zprávy \> Protokoly mobilních zařízení \> Události aplikace skladu**.
+Frontu událostí a zprávy o událostech generované mobilní aplikací Řízení skladu si můžete zobrazit přechodem na **Řízení skladu \> Dotazy a zprávy \> Protokoly mobilních zařízení \> Události aplikace skladu**.
 
-Zprávy o událostech *Vytvoření převodního příkazu* budou mít stav *Čekání*, což znamená, že dávková úloha **Zpracovat události aplikace skladu** nebude tyto zprávy o událostech přebírat a zpracovávat. Jakmile se stav zpráv o událostech aktualizuje na *Ve frontě*, dávková úloha události zpracuje. K tomu dojde současně s vytvořením události *Dokončení převodního příkazu* (když pracovník vybere tlačítko **Dokončit objednávku** v aplikaci skladu). Po zpracování zpráv o událostech *Vytvoření převodního příkazu* se stav aktualizuje na *Dokončeno* nebo *Chyba*. Když je stav události *Dokončení převodního příkazu* aktualizován na *Dokončeno*, všechny související události jsou odstraněny z fronty.
+Zprávy o událostech *Vytvoření převodního příkazu* budou mít stav *Čekání*, což znamená, že dávková úloha **Zpracovat události aplikace skladu** nebude tyto zprávy o událostech přebírat a zpracovávat. Jakmile se stav zpráv o událostech aktualizuje na *Ve frontě*, dávková úloha události zpracuje. K tomu dojde současně s vytvořením události *Dokončení převodního příkazu* (když pracovník vybere tlačítko **Dokončit objednávku** v mobilní aplikaci Řízení skladu). Po zpracování zpráv o událostech *Vytvoření převodního příkazu* se stav aktualizuje na *Dokončeno* nebo *Chyba*. Když je stav události *Dokončení převodního příkazu* aktualizován na *Dokončeno*, všechny související události jsou odstraněny z fronty.
 
 Protože **události aplikace skladu** pro vytvoření dat převodního příkazu nejsou dávkovou úlohou zpracovány, dokud není stav zpráv aktualizován na *Ve frontě*, budete muset vyhledat požadovaná čísla převodních příkazů jako součást pole **Identifikátor**. Pole **Identifikátor** je v záhlaví stránky **Události aplikace skladu**.
 
@@ -276,11 +274,11 @@ Další informace viz [Zpracování událostí aplikace skladu](warehouse-app-ev
 
 Během tohoto scénáře se stalo následující:
 
-1. Pomocí aplikace skladu jste vybrali položku nabídky, která používá kód aktivity **Vytvořit převodní příkaz z registračních značek**.
+1. Pomocí mobilní aplikace Řízení skladu jste vybrali položku nabídky, která používá kód aktivity **Vytvořit převodní příkaz z registračních značek**.
 1. Aplikace vás vyzvala k výběru cílového skladu pro převodní příkaz. Zdrojový sklad je vždy ten, do kterého jste aktuálně přihlášení jako pracovník.
 1. Při výběru cílového skladu systém zarezervoval číslo ID pro nadcházející převodní příkaz (na základě číselné řady převodních příkazů definované v systému), ale ještě tento převodní příkaz nevytvořil.
 1. Když jste naskenovali registrační značku *RZ10* obsahující zásoby na skladě, který by měly být přesunuty do nového skladu, byla do fronty událostí přidána **událost aplikace skladu** k pozdějšímu zpracování. Tato událost skladu obsahovala podrobnosti zprávy o naskenování včetně zamýšleného čísla převodního příkazu.
-1. V aplikaci skladu se při výběru tlačítka **Dokončit objednávku** vytvořila nová událost aplikace skladu **Dokončení převodního příkazu** a stav související existující události **Vytvoření převodního příkazu** se změnil na **Ve frontě**.
+1. V mobilní aplikaci Řízení skladu se při výběru tlačítka **Dokončit objednávku** vytvořila nová událost aplikace skladu **Dokončení převodního příkazu** a stav související existující události **Vytvoření převodního příkazu** se změnil na **Ve frontě**.
 1. V back-endovém systému převzala **dávková úloha Zpracovat události aplikace skladu** událost **Ve frontě** a shromáždila zásoby na skladě související s naskenovanou registrační značkou. Na základě těchto zásob na skladě se vytvořil vlastní záznam převodního příkazu a přidružené řádky. Úloha také naplnila pole **Zásady odchozí dodávky** pro tento převodní příkaz pomocí hodnoty založené na nakonfigurovaném nastavení *Uvolnění a potvrzení expedice* a propojila registrační značku s řádky strategie **Registrační značka řízena**.
 1. Na základě hodnoty pole **Zásady odchozí dodávky** na řádku tohoto převodního příkazu nyní dotaz **dávkové úlohy Automaticky uvolnit převodní příkazy** vedl k uvolnění převodního příkazu do expedičního skladu. A na základě nastavení použití **šablony vlny**, **šablony práce** a **směrnic skladového místa** byla práce automaticky zpracována s výsledkem, že **Stav nákladu** byl aktualizován na *Naloženo*.
 1. Pro daný náklad byla provedena **dávková úloha Zpracovat odchozí dodávku**. Výsledkem bylo expedování převodního příkazu a vygenerování avíza expedice zboží.
@@ -294,13 +292,13 @@ Během tohoto scénáře se stalo následující:
 
 Musí být povolená funkce *Vytvářet a zpracovávat převodní příkazy z aplikace skladu*. Další informace viz [Povolení vytváření převodních příkazů z aplikace skladu](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-app-processes"></a>Procesy aplikace skladu
+### <a name="warehouse-management-mobile-app-processes"></a>Procesy mobilní aplikace Řízení skladu
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Proč nevidím tlačítko nabídky „Dokončit objednávku“?
 
 K převodnímu příkazu musíte mít přiřazenou alespoň jednu registrační značku.
 
-#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Může několik uživatelů aplikace skladu přidávat registrační značky do stejného převodního příkazu současně?
+#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Může několik uživatelů mobilní aplikace Řízení skladu přidávat registrační značky do stejného převodního příkazu současně?
 
 Ano, několik pracovníků skladu může skenovat registrační značky do stejného převodního příkazu.
 
@@ -312,11 +310,11 @@ Ne, registrační značku je možné v dané chvíli přidat pouze do jednoho p�
 
 Ne, do převodního příkazu s událostí **Dokončení převodního příkazu** nemůžete přidávat další registrační značky.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak najdu existující převodní příkazy k použití prostřednictvím tlačítka „Vybrat převodní příkaz“ v aplikaci skladu, pokud tento příkaz ještě nebyl vytvořen v back-endovém systému?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak najdu existující převodní příkazy k použití prostřednictvím tlačítka „Vybrat převodní příkaz“ v mobilní aplikaci Řízení skladu, pokud tento příkaz ještě nebyl vytvořen v back-endovém systému?
 
 V současné době nemůžete v této aplikaci převodní příkazy vyhledávat, ale čísla převodních příkazů můžete najít na stránce **Události aplikace skladu**. Další informace viz [Prošetřování událostí aplikace skladu](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Můžu z aplikace skladu ručně vybrat číslo převodního příkazu, které se má použít?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Můžu z mobilní aplikace Řízení skladu ručně vybrat číslo převodního příkazu, které se má použít?
 
 Podporována jsou pouze automaticky generovaná čísla převodních příkazů na základě číselných řad.
 

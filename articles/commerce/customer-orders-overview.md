@@ -2,11 +2,9 @@
 title: Objednávky zákazníků v pokladním místě (POS)
 description: Toto téma obsahuje informace o objednávkách zákazníků v pokladním místě (POS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220503"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821001"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
@@ -61,7 +59,8 @@ V Commerce verze 10.0.12 a novějších mohou organizace definovat, zda lze skla
 
 Při práci s objednávkami zákazníků v POS musíte zvážit některá nastavení kanálu obchodu. Tato nastavení najdete na stránce **Obchody** v centrále Commerce.
 
-- **Sklad** – Toto pole označuje sklad, který se používá k plnění objednávek, které jsou nakonfigurovány pro dodávku z daného obchodu.
+- **Sklad** - Toto pole označuje sklad, který bude použit při snižování zásob pro objednávky cash and carry a vyzvednutí zákazníkem vázané na tento obchod. Jako osvědčený postup doporučujeme používání jedinečných skladů pro každý kanál obchodu, aby se zabránilo konfliktním problémům obchodní logiky napříč obchody.
+- **Expediční sklad** - Toto pole označuje sklad, který bude použit při snižování zásob pro objednávky zákazníka, které budou expedovány z vybraného obchodu. Pokud je funkce **Možnost zadat umístění jako „Expedice“ nebo „Vyzvednutí“ povoleno ve skupině plnění** ve vašem prostředí povolena, mohou si uživatelé POS vybrat konkrétní sklad, ze kterého se bude odesílat v POS, místo aby si vybrali obchod, ze kterého se bude odesílat. Když je tedy tato funkce povolena, expediční sklad se již nevyužívá, protože uživatel si při vytvoření objednávky vybere konkrétní sklad, ze kterého bude expedována objednávka.
 - **Přiřazení skupiny plnění** – Vyberte toto tlačítko (na kartě **Nastavení** v podokně Akce), chcete-li propojit odkazované skupiny plnění, aby se zobrazily možnosti míst výdeje nebo původů dodávky při vytváření objednávek zákazníků v POS.
 - **Použít daň podle místa určení** – Tato možnost určuje, zda se dodací adresa použije k určení daňové skupiny, která se použije na řádky objednávky, které jsou dodávány na adresu zákazníka.
 - **Použít daň podle zákazníka** – Tato možnost určuje, zda se daňová skupina, která je definována pro doručovací adresu zákazníka, použije k zdanění objednávek zákazníků, které jsou vytvořeny v POS pro odeslání k zákazníkovi domů.

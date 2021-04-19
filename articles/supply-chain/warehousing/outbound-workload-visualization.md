@@ -2,11 +2,9 @@
 title: Vizualizace odchozího pracovní vytížení
 description: Toto téma popisuje informace o vizualizaci odchozího pracovní vytížení. Tato funkce umožňuje správcům skladu a supervizorům vytvářet vlastní grafy pracovního vytížení, které lze použít k monitorování postupu aktuální práce a jejího množství, které zbývá. Manažeři skladu mohou podle potřeby vytvářet více zobrazení a nastavit automatické obnovování.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b7512ea6ad2e97db388bac6750482f7ed967140
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225904"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810479"
 ---
 # <a name="outbound-workload-visualization"></a>Vizualizace odchozího pracovní vytížení
 

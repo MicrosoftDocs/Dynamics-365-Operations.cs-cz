@@ -2,11 +2,9 @@
 title: Automatické potvrzení s optimalizací plánování
 description: Toto téma vysvětluje, jak používat automatické potvrzování s optimalizací plánování.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 9106137fe6dd097beea9914cdde541e581946f46
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3542e343de29c9fd9d19ed99cab4b4eebacd2899
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227787"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812996"
 ---
 # <a name="autofirming-with-planning-optimization"></a>Automatické potvrzení s optimalizací plánování
 
@@ -33,6 +31,8 @@ Automatické potvrzení umožňuje potvrdit (tj. vydat) plánované objednávky 
 
 > [!NOTE]
 > K automatickému potvrzení plánované nákupní objednávky může dojít pouze tehdy, pokud je položka přidružena k dodavateli.
+> 
+> Potvrzené odvozené objednávky (nákupní objednávky dílčí smlouvy) budou zobrazovat stav *Probíhá kontrola*, když je povoleno sledování změn případů.
 
 ## <a name="turn-on-autofirming"></a>Zapnout automatické potvrzování
 

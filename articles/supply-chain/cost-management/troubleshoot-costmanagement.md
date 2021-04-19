@@ -1,12 +1,10 @@
 ---
 title: Řešení potíží se správou nákladů
 description: Toto téma popisuje, jak vyřešit problémy, s nimiž se můžete setkat při práci se správou nákladů.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262446"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834282"
 ---
 # <a name="troubleshoot-cost-management"></a>Řešení potíží se správou nákladů
 
@@ -37,7 +35,7 @@ Funkce [Uložení sestavy stáří zásob](inventory-aging-report-storage.md) a 
 
 Mezisoučty mohou způsobit problémy při exportu výsledku, zejména pokud uživatelé změní sekvenci záznamů.
 
-Chcete-li zkontrolovat mezisoučty, můžete exportovat výsledek do Microsoft Excel. Alternativně, pokud chcete zkontrolovat mezisoučty v rámci Supply Chain Management, použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a povolte funkce *Nový ovládací prvek mřížky* a *(Preview) Seskupení do mřížek*, které poskytují mnohem flexibilnější způsob, jak zobrazit mezisoučet pro každou skupinu podle sloupce. Další informace naleznete v části [Schopnosti mřížky](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Chcete-li zkontrolovat mezisoučty, můžete exportovat výsledek do Microsoft Excel. Alternativně, pokud chcete zkontrolovat mezisoučty v rámci Supply Chain Management, použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a povolte funkce *Nový ovládací prvek mřížky* a *Seskupení do mřížek*, které poskytují mnohem flexibilnější způsob, jak zobrazit mezisoučet pro každou skupinu podle sloupce. Další informace naleznete v části [Schopnosti mřížky](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Sestava úložiště hodnot zásob nepodporuje informace o účtu hlavní knihy
 

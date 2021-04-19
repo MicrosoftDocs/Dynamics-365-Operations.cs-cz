@@ -2,11 +2,9 @@
 title: Metoda FIFO s fyzickou hodnotou a označením
 description: Metoda (FIFO, First in, First out) představuje skladový model, ve kterém jsou nejprve vydávány první uskladněné položky. Finančně aktualizované výdeje ze skladu jsou vyrovnány oproti prvním finančně aktualizovaným příjmům do skladu na základě finančního data skladové transakce.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e01300a4932cb6797905072b913b70db3700184
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205411"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821602"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>Metoda FIFO s fyzickou hodnotou a označením
 

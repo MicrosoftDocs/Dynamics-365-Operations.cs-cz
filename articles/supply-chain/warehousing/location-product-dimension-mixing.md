@@ -2,11 +2,9 @@
 title: Směšování dimenzí produktu na skladovém místě
 description: Toto téma poskytuje informace o míchání dimenzí produktů na skladovém místě. Tato funkce profilu skladového místa pomáhá zlepšit správu skladového místa, pokud se používají varianty produktu nebo produkty, které mají různé dimenze, jako například v módním průmyslu. Funkce umožní rozhodnout, zda je možné konfigurace, barvy, styly a velikosti pro konkrétní profil skladového místa míchat, nebo zda lze na jedno skladové místo umístit pouze jednu dimenzi nebo kombinaci.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217022"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831283"
 ---
 # <a name="location-product-dimension-mixing"></a>Směšování dimenzí produktu na skladovém místě
 
@@ -206,9 +204,9 @@ Vytvoříte nákupní objednávku, která má tři řádky: dva řádky pro stej
 
 1.Zvolte **Uložit**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Přijetí řádků objednávky ve skladové aplikaci
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Přijetí řádků objednávky v mobilní aplikaci Řízení skladu
 
-1. Přihlaste se do skladové aplikace jako uživatel, který má povolen sklad *24*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který má povolen sklad *24*.
 1. Vyberte nabídku **Vstupní**.
 1. Vyberte **Příjem řádku PO**.
 1. Vyberte pole **ČÍSLOPO** a zadejte číslo nákupní objednávky.
