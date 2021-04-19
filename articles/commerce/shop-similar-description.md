@@ -2,11 +2,9 @@
 title: Povolení doporučení „nákupu zboží s podobným popisem“
 description: Toto téma popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.
 author: bsokolov
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,86 +16,86 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b6b397b1f21e3dfcdb4a2b7fe67ddb541d090a97
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce01ef1d4b916d955685b4d01dafd3d54d6fcebd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234382"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795398"
 ---
-# <a name="enable-shop-similar-description-recommendations"></a><span data-ttu-id="33491-103">Povolení doporučení „nákupu podobného vzhledu“</span><span class="sxs-lookup"><span data-stu-id="33491-103">Enable "shop similar description" recommendations</span></span>
+# <a name="enable-shop-similar-description-recommendations"></a><span data-ttu-id="8978e-103">Povolení doporučení „nákupu podobného vzhledu“</span><span class="sxs-lookup"><span data-stu-id="8978e-103">Enable "shop similar description" recommendations</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="33491-104">Toto téma popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="33491-104">This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="8978e-104">Toto téma popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="8978e-104">This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="33491-105">Doporučení "nákupu zboží s podobným popisem" v Dynamics 365 Commerce využívá umělou inteligenci a strojové učení (AI-ML) k poskytování doporučení produkty, které mají podobný popis jako produkty, které zákazníci hledají.</span><span class="sxs-lookup"><span data-stu-id="33491-105">The "shop similar description" recommendations feature in Dynamics 365 Commerce uses artificial intelligence and machine learning (AI-ML) to deliver recommendations for products that have descriptions that are similar to what the customer is looking for.</span></span> <span data-ttu-id="33491-106">Poskytnutím doporučení typu „podobný popis“ pro všechny maloobchodní kanály v Commerce mohou maloobchodní prodejci pomoci zákazníkům snadno najít to, co hledají.</span><span class="sxs-lookup"><span data-stu-id="33491-106">By making "shop similar description" recommendations available for all retail channels in Commerce, retailers can help customers easily find what they want.</span></span>
+<span data-ttu-id="8978e-105">Doporučení "nákupu zboží s podobným popisem" v Dynamics 365 Commerce využívá umělou inteligenci a strojové učení (AI-ML) k poskytování doporučení produkty, které mají podobný popis jako produkty, které zákazníci hledají.</span><span class="sxs-lookup"><span data-stu-id="8978e-105">The "shop similar description" recommendations feature in Dynamics 365 Commerce uses artificial intelligence and machine learning (AI-ML) to deliver recommendations for products that have descriptions that are similar to what the customer is looking for.</span></span> <span data-ttu-id="8978e-106">Poskytnutím doporučení typu „podobný popis“ pro všechny maloobchodní kanály v Commerce mohou maloobchodní prodejci pomoci zákazníkům snadno najít to, co hledají.</span><span class="sxs-lookup"><span data-stu-id="8978e-106">By making "shop similar description" recommendations available for all retail channels in Commerce, retailers can help customers easily find what they want.</span></span>
 
-<span data-ttu-id="33491-107">Funkce pro doporučení „nákupu zboží s podobným popisem“ používá název a popis produktů produktů typu seed k nalezení a doporučení podobných produktů v katalogu produktů maloobchodního prodejce.</span><span class="sxs-lookup"><span data-stu-id="33491-107">The functionality for "shop similar description" recommendations uses the product name and description of seed products to find and recommend similar products in a retailer's product catalog.</span></span>
+<span data-ttu-id="8978e-107">Funkce pro doporučení „nákupu zboží s podobným popisem“ používá název a popis produktů produktů typu seed k nalezení a doporučení podobných produktů v katalogu produktů maloobchodního prodejce.</span><span class="sxs-lookup"><span data-stu-id="8978e-107">The functionality for "shop similar description" recommendations uses the product name and description of seed products to find and recommend similar products in a retailer's product catalog.</span></span>
 
-<span data-ttu-id="33491-108">Doporučení typu „podobný popis“ jsou k dispozici jak v místě prodeje (POS), tak v prostředí elektronického obchodování.</span><span class="sxs-lookup"><span data-stu-id="33491-108">"Shop similar description" recommendations are available in both the point of sale (POS) and e-commerce experiences.</span></span>
+<span data-ttu-id="8978e-108">Doporučení typu „podobný popis“ jsou k dispozici jak v místě prodeje (POS), tak v prostředí elektronického obchodování.</span><span class="sxs-lookup"><span data-stu-id="8978e-108">"Shop similar description" recommendations are available in both the point of sale (POS) and e-commerce experiences.</span></span>
 
-## <a name="example-scenarios"></a><span data-ttu-id="33491-109">Ukázkové scénáře</span><span class="sxs-lookup"><span data-stu-id="33491-109">Example scenarios</span></span>
+## <a name="example-scenarios"></a><span data-ttu-id="8978e-109">Ukázkové scénáře</span><span class="sxs-lookup"><span data-stu-id="8978e-109">Example scenarios</span></span>
 
-<span data-ttu-id="33491-110">Následující ukázkové scénáře ukazují typy doporučení, které může funkce „nákupu zboží s podobným popisem“ poskytnout:</span><span class="sxs-lookup"><span data-stu-id="33491-110">The following example scenarios show the types of recommendations that the "shop similar description" functionality can provide:</span></span>
+<span data-ttu-id="8978e-110">Následující ukázkové scénáře ukazují typy doporučení, které může funkce „nákupu zboží s podobným popisem“ poskytnout:</span><span class="sxs-lookup"><span data-stu-id="8978e-110">The following example scenarios show the types of recommendations that the "shop similar description" functionality can provide:</span></span>
 
-- <span data-ttu-id="33491-111">Zákazník si prohlíží brýle v retro stylu s rohovou obroučkou a dostane několik doporučení na další brýle, které mají podobný design, v kontextu sortimentu maloobchodního prodejce.</span><span class="sxs-lookup"><span data-stu-id="33491-111">A customer views a pair of retro-style horn-rimmed glasses and receives a set of recommendations for other glasses that have a similar design, in the context of the retailer's industry.</span></span>
-- <span data-ttu-id="33491-112">Zákazník používá doporučení k „nákupu zboží s podobným popisem“ k objevení dalších příchutí kávy, které jsou podobné příchuti, kterou již dříve od maloobchodního prodejce zakoupil.</span><span class="sxs-lookup"><span data-stu-id="33491-112">A customer uses "shop similar description" recommendations to discover coffee flavors that are similar to a flavor that they previously purchased from the retailer.</span></span>
+- <span data-ttu-id="8978e-111">Zákazník si prohlíží brýle v retro stylu s rohovou obroučkou a dostane několik doporučení na další brýle, které mají podobný design, v kontextu sortimentu maloobchodního prodejce.</span><span class="sxs-lookup"><span data-stu-id="8978e-111">A customer views a pair of retro-style horn-rimmed glasses and receives a set of recommendations for other glasses that have a similar design, in the context of the retailer's industry.</span></span>
+- <span data-ttu-id="8978e-112">Zákazník používá doporučení k „nákupu zboží s podobným popisem“ k objevení dalších příchutí kávy, které jsou podobné příchuti, kterou již dříve od maloobchodního prodejce zakoupil.</span><span class="sxs-lookup"><span data-stu-id="8978e-112">A customer uses "shop similar description" recommendations to discover coffee flavors that are similar to a flavor that they previously purchased from the retailer.</span></span>
 
-## <a name="set-up-shop-similar-description-recommendations"></a><span data-ttu-id="33491-113">Nastavení doporučení „nákupu zboží s podobným popisem“</span><span class="sxs-lookup"><span data-stu-id="33491-113">Set up "shop similar description" recommendations</span></span>
+## <a name="set-up-shop-similar-description-recommendations"></a><span data-ttu-id="8978e-113">Nastavení doporučení „nákupu zboží s podobným popisem“</span><span class="sxs-lookup"><span data-stu-id="8978e-113">Set up "shop similar description" recommendations</span></span>
 
-<span data-ttu-id="33491-114">Doporučení produktů jsou podporována pouze u užovatelů Commerce, kteří migrovali své úložiště do služby Azure Data Lake Storage Gen2.</span><span class="sxs-lookup"><span data-stu-id="33491-114">Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Storage Gen2.</span></span>
+<span data-ttu-id="8978e-114">Doporučení produktů jsou podporována pouze u užovatelů Commerce, kteří migrovali své úložiště do služby Azure Data Lake Storage Gen2.</span><span class="sxs-lookup"><span data-stu-id="8978e-114">Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Storage Gen2.</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="33491-115">Předpoklady</span><span class="sxs-lookup"><span data-stu-id="33491-115">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="8978e-115">Předpoklady</span><span class="sxs-lookup"><span data-stu-id="8978e-115">Prerequisites</span></span>
 
-<span data-ttu-id="33491-116">Než se zákazníkům mohou zobrazit doporučení k „nákupu zboží s podobným popisem“, musíte splnit následující předpoklady:</span><span class="sxs-lookup"><span data-stu-id="33491-116">Before "shop similar description" recommendations can be shown to customers, you must complete the following prerequisites:</span></span>
+<span data-ttu-id="8978e-116">Než se zákazníkům mohou zobrazit doporučení k „nákupu zboží s podobným popisem“, musíte splnit následující předpoklady:</span><span class="sxs-lookup"><span data-stu-id="8978e-116">Before "shop similar description" recommendations can be shown to customers, you must complete the following prerequisites:</span></span>
 
-- <span data-ttu-id="33491-117">[Povolit doporučení produktů](enable-product-recommendations.md) v centrále Commerce.</span><span class="sxs-lookup"><span data-stu-id="33491-117">[Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.</span></span>
-- <span data-ttu-id="33491-118">Ověřit, zda mediální server podporuje volání HTTPS.</span><span class="sxs-lookup"><span data-stu-id="33491-118">Confirm that the media server supports HTTPS calls.</span></span>
+- <span data-ttu-id="8978e-117">[Povolit doporučení produktů](enable-product-recommendations.md) v centrále Commerce.</span><span class="sxs-lookup"><span data-stu-id="8978e-117">[Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.</span></span>
+- <span data-ttu-id="8978e-118">Ověřit, zda mediální server podporuje volání HTTPS.</span><span class="sxs-lookup"><span data-stu-id="8978e-118">Confirm that the media server supports HTTPS calls.</span></span>
 
-### <a name="turn-on-the-shop-similar-description-recommendations-feature"></a><span data-ttu-id="33491-119">Zapnutí funkce „nákupu zboží s podobným popisem“</span><span class="sxs-lookup"><span data-stu-id="33491-119">Turn on the "shop similar description" recommendations feature</span></span>
+### <a name="turn-on-the-shop-similar-description-recommendations-feature"></a><span data-ttu-id="8978e-119">Zapnutí funkce „nákupu zboží s podobným popisem“</span><span class="sxs-lookup"><span data-stu-id="8978e-119">Turn on the "shop similar description" recommendations feature</span></span>
 
-<span data-ttu-id="33491-120">Chcete-li zapnout funkci doporučení typu „podobný popis“ v centrále Commerce, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="33491-120">To turn on the "shop similar description" recommendations feature in Commerce headquarters, follow these steps.</span></span>
+<span data-ttu-id="8978e-120">Chcete-li zapnout funkci doporučení typu „podobný popis“ v centrále Commerce, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="8978e-120">To turn on the "shop similar description" recommendations feature in Commerce headquarters, follow these steps.</span></span>
 
-1. <span data-ttu-id="33491-121">V pracovním prostoru **Správa funkcí**, v seznamu dostupných funkcí vyhledejte a vyberte **Nákup zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="33491-121">In the **Feature management** workspace, in the list of available features, search for and select **Shop similar description**.</span></span>
-1. <span data-ttu-id="33491-122">V pravém podokně vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="33491-122">In the right pane, select **Enable**.</span></span>
+1. <span data-ttu-id="8978e-121">V pracovním prostoru **Správa funkcí**, v seznamu dostupných funkcí vyhledejte a vyberte **Nákup zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="8978e-121">In the **Feature management** workspace, in the list of available features, search for and select **Shop similar description**.</span></span>
+1. <span data-ttu-id="8978e-122">V pravém podokně vyberte **Povolit**.</span><span class="sxs-lookup"><span data-stu-id="8978e-122">In the right pane, select **Enable**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="33491-123">Když tuto funkci zapnete, systém začne generovat seznamy doporučení produktů.</span><span class="sxs-lookup"><span data-stu-id="33491-123">When you turn on the feature, the system starts to generate product recommendation lists.</span></span> <span data-ttu-id="33491-124">Může trvat až jeden den, než busou tyto seznamy k dispozici a viditelné online a v POS terminálech.</span><span class="sxs-lookup"><span data-stu-id="33491-124">It might take up to a day for those lists to become available and visible online and on POS terminals.</span></span>
+> <span data-ttu-id="8978e-123">Když tuto funkci zapnete, systém začne generovat seznamy doporučení produktů.</span><span class="sxs-lookup"><span data-stu-id="8978e-123">When you turn on the feature, the system starts to generate product recommendation lists.</span></span> <span data-ttu-id="8978e-124">Může trvat až jeden den, než busou tyto seznamy k dispozici a viditelné online a v POS terminálech.</span><span class="sxs-lookup"><span data-stu-id="8978e-124">It might take up to a day for those lists to become available and visible online and on POS terminals.</span></span>
 >
-> <span data-ttu-id="33491-125">Pokud tuto funkci vypnete, ostatních typů doporučení produktů se to nedotkne.</span><span class="sxs-lookup"><span data-stu-id="33491-125">If you turn off the feature, other types of product recommendations aren't affected.</span></span> <span data-ttu-id="33491-126">Další informace o doporučeních produktů naleznete v tématu [Přehled doporučení produktu](product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="33491-126">For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).</span></span>
+> <span data-ttu-id="8978e-125">Pokud tuto funkci vypnete, ostatních typů doporučení produktů se to nedotkne.</span><span class="sxs-lookup"><span data-stu-id="8978e-125">If you turn off the feature, other types of product recommendations aren't affected.</span></span> <span data-ttu-id="8978e-126">Další informace o doporučeních produktů naleznete v tématu [Přehled doporučení produktu](product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="8978e-126">For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).</span></span>
 
-## <a name="add-a-shop-similar-description-button-to-product-details-pages"></a><span data-ttu-id="33491-127">Přidejte tlačítko Nákup zboží s podobným popisem na stránky s podrobnostmi o produktu</span><span class="sxs-lookup"><span data-stu-id="33491-127">Add a Shop similar description button to product details pages</span></span>
+## <a name="add-a-shop-similar-description-button-to-product-details-pages"></a><span data-ttu-id="8978e-127">Přidejte tlačítko Nákup zboží s podobným popisem na stránky s podrobnostmi o produktu</span><span class="sxs-lookup"><span data-stu-id="8978e-127">Add a Shop similar description button to product details pages</span></span>
 
-<span data-ttu-id="33491-128">Poté, co v centrále Commerce zapnete funkci doporučení typu „podobný popis“, můžete přidat tlačítko **Zboží s podobným popisem** do buy boxu na jakékoli stránce s podrobnostmi o produktu (PDP).</span><span class="sxs-lookup"><span data-stu-id="33491-128">After you turn on the "shop similar description" recommendations feature in Commerce headquarters, you can add a **Shop similar description** button to the buy box on any product details page (PDP).</span></span> <span data-ttu-id="33491-129">Zákazník, který vybere toto tlačítko, se přesune na vyhrazenou stránku **Nákup zboží s podobným popisem**, která zobrazí vizuálně podobné produkty.</span><span class="sxs-lookup"><span data-stu-id="33491-129">A customer who selects this button is taken to a dedicated **Shop similar description** page that shows visually similar products.</span></span> <span data-ttu-id="33491-130">Zákazník pak může pomocí selektorů dále filtrovat produkty.</span><span class="sxs-lookup"><span data-stu-id="33491-130">The customer can then use selectors to further filter the products.</span></span>
+<span data-ttu-id="8978e-128">Poté, co v centrále Commerce zapnete funkci doporučení typu „podobný popis“, můžete přidat tlačítko **Zboží s podobným popisem** do buy boxu na jakékoli stránce s podrobnostmi o produktu (PDP).</span><span class="sxs-lookup"><span data-stu-id="8978e-128">After you turn on the "shop similar description" recommendations feature in Commerce headquarters, you can add a **Shop similar description** button to the buy box on any product details page (PDP).</span></span> <span data-ttu-id="8978e-129">Zákazník, který vybere toto tlačítko, se přesune na vyhrazenou stránku **Nákup zboží s podobným popisem**, která zobrazí vizuálně podobné produkty.</span><span class="sxs-lookup"><span data-stu-id="8978e-129">A customer who selects this button is taken to a dedicated **Shop similar description** page that shows visually similar products.</span></span> <span data-ttu-id="8978e-130">Zákazník pak může pomocí selektorů dále filtrovat produkty.</span><span class="sxs-lookup"><span data-stu-id="8978e-130">The customer can then use selectors to further filter the products.</span></span>
 
-<span data-ttu-id="33491-131">K přidání tlačítka **Nákup zboží s podobným popisem** na PDP pomocí konfigurátoru webu Commerce, postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="33491-131">To add a **Shop similar description** button to a PDP by using Commerce site builder, follow these steps.</span></span>
+<span data-ttu-id="8978e-131">K přidání tlačítka **Nákup zboží s podobným popisem** na PDP pomocí konfigurátoru webu Commerce, postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="8978e-131">To add a **Shop similar description** button to a PDP by using Commerce site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="33491-132">Otevře existující stránku konfigurátoru webu, která obsahuje modul buy boxu.</span><span class="sxs-lookup"><span data-stu-id="33491-132">Open an existing site builder page that contains a buy box module.</span></span>
-1. <span data-ttu-id="33491-133">V levém navigačním podokně vyberte modul buy boxu.</span><span class="sxs-lookup"><span data-stu-id="33491-133">In the left navigation pane, select the buy box module.</span></span>
-1. <span data-ttu-id="33491-134">V pravém navigačním podokně zaškrtněte políčko **Povolit odkaz na zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="33491-134">In the right pane, select the **Enable Shop Similar description Link** check box.</span></span>
-1. <span data-ttu-id="33491-135">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="33491-135">Select **Save**.</span></span>
-1. <span data-ttu-id="33491-136">Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.</span><span class="sxs-lookup"><span data-stu-id="33491-136">Select **Finish editing** to check in the page, and then select **Publish** to publish it.</span></span> <span data-ttu-id="33491-137">Po publikování stránky bude PDP obsahovat tlačítko **Nákup zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="33491-137">After the page is published, the PDP will include a **Shop similar description** button.</span></span>
+1. <span data-ttu-id="8978e-132">Otevře existující stránku konfigurátoru webu, která obsahuje modul buy boxu.</span><span class="sxs-lookup"><span data-stu-id="8978e-132">Open an existing site builder page that contains a buy box module.</span></span>
+1. <span data-ttu-id="8978e-133">V levém navigačním podokně vyberte modul buy boxu.</span><span class="sxs-lookup"><span data-stu-id="8978e-133">In the left navigation pane, select the buy box module.</span></span>
+1. <span data-ttu-id="8978e-134">V pravém navigačním podokně zaškrtněte políčko **Povolit odkaz na zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="8978e-134">In the right pane, select the **Enable Shop Similar description Link** check box.</span></span>
+1. <span data-ttu-id="8978e-135">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="8978e-135">Select **Save**.</span></span>
+1. <span data-ttu-id="8978e-136">Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.</span><span class="sxs-lookup"><span data-stu-id="8978e-136">Select **Finish editing** to check in the page, and then select **Publish** to publish it.</span></span> <span data-ttu-id="8978e-137">Po publikování stránky bude PDP obsahovat tlačítko **Nákup zboží s podobným popisem**.</span><span class="sxs-lookup"><span data-stu-id="8978e-137">After the page is published, the PDP will include a **Shop similar description** button.</span></span>
 
-<span data-ttu-id="33491-138">Následující obrázek ukazuje zaškrtávací políčko **Povolit odkaz na na zboží s podobným popisem** a tlačítko **Podobný popis** na příkladu PDP v konfigurátoru webů.</span><span class="sxs-lookup"><span data-stu-id="33491-138">The following illustration shows the **Enable shop similar description Link** check box and the **Shop similar description** button on an example PDP in site builder.</span></span>
+<span data-ttu-id="8978e-138">Následující obrázek ukazuje zaškrtávací políčko **Povolit odkaz na na zboží s podobným popisem** a tlačítko **Podobný popis** na příkladu PDP v konfigurátoru webů.</span><span class="sxs-lookup"><span data-stu-id="8978e-138">The following illustration shows the **Enable shop similar description Link** check box and the **Shop similar description** button on an example PDP in site builder.</span></span>
 
 ![Zaškrtávací políčko Povolit odkaz na zboží s podobným popisem a tlačitko Podobný popis na PDP v konfigurátoru webů.](./media/ter_site_builder_buybox_button.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="33491-140">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="33491-140">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8978e-140">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="8978e-140">Additional resources</span></span>
 
-[<span data-ttu-id="33491-141">Přehled doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="33491-141">Product recommendations overview</span></span>](product-recommendations.md)
+[<span data-ttu-id="8978e-141">Přehled doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8978e-141">Product recommendations overview</span></span>](product-recommendations.md)
 
-[<span data-ttu-id="33491-142">Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="33491-142">Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment</span></span>](enable-adls-environment.md)
+[<span data-ttu-id="8978e-142">Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="8978e-142">Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment</span></span>](enable-adls-environment.md)
 
-[<span data-ttu-id="33491-143">Povolit doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="33491-143">Enable product recommendations</span></span>](enable-product-recommendations.md)
+[<span data-ttu-id="8978e-143">Povolit doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8978e-143">Enable product recommendations</span></span>](enable-product-recommendations.md)
 
-[<span data-ttu-id="33491-144">Povolení doporučení „nákupu podobného vzhledu“</span><span class="sxs-lookup"><span data-stu-id="33491-144">Enable "shop similar looks" recommendations</span></span>](shop-similar-looks.md)
+[<span data-ttu-id="8978e-144">Povolení doporučení „nákupu podobného vzhledu“</span><span class="sxs-lookup"><span data-stu-id="8978e-144">Enable "shop similar looks" recommendations</span></span>](shop-similar-looks.md)
 
-[<span data-ttu-id="33491-145">Úprava výsledků doporučení AI-ML</span><span class="sxs-lookup"><span data-stu-id="33491-145">Adjust AI-ML recommendations results</span></span>](modify-product-recommendation-results.md)
+[<span data-ttu-id="8978e-145">Úprava výsledků doporučení AI-ML</span><span class="sxs-lookup"><span data-stu-id="8978e-145">Adjust AI-ML recommendations results</span></span>](modify-product-recommendation-results.md)
 
-[<span data-ttu-id="33491-146">Ručně vytvořit uspořádaná doporučení</span><span class="sxs-lookup"><span data-stu-id="33491-146">Manually create curated recommendations</span></span>](create-editorial-recommendation-lists.md)
+[<span data-ttu-id="8978e-146">Ručně vytvořit uspořádaná doporučení</span><span class="sxs-lookup"><span data-stu-id="8978e-146">Manually create curated recommendations</span></span>](create-editorial-recommendation-lists.md)
 
-[<span data-ttu-id="33491-147">Často kladené dotazy k doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="33491-147">Product recommendations FAQ</span></span>](faq-recommendations.md)
+[<span data-ttu-id="8978e-147">Často kladené dotazy k doporučení produktu</span><span class="sxs-lookup"><span data-stu-id="8978e-147">Product recommendations FAQ</span></span>](faq-recommendations.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Připojení k používání hodnocení a recenzí
 description: V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocení a recenzí na vašem webu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,50 +15,50 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6c54a8fa01badb6a383c41dc979e71d82a25ef97
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9e3f2a17e182c0e3efc8b90380eff74f350c3278
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804642"
 ---
-# <a name="opt-in-to-use-ratings-and-reviews"></a><span data-ttu-id="d00a3-103">Připojení k používání hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="d00a3-103">Opt in to use ratings and reviews</span></span>
+# <a name="opt-in-to-use-ratings-and-reviews"></a><span data-ttu-id="865f3-103">Připojení k používání hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="865f3-103">Opt in to use ratings and reviews</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="d00a3-104">V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocení a recenzí na vašem webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="d00a3-104">This topic explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.</span></span>
+<span data-ttu-id="865f3-104">V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocení a recenzí na vašem webu Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="865f3-104">This topic explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="d00a3-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="d00a3-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="865f3-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="865f3-105">Overview</span></span>
 
-<span data-ttu-id="d00a3-106">Řešení hodnocení a recenzí je omnikanálové řešení, které lze zpřístupnit v Dynamics 365 Commerce pomocí Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="d00a3-106">The ratings and reviews solution is an omni-channel solution that you can make available in Dynamics 365 Commerce by using Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="d00a3-107">LCS je portál pro správu, který maloobchodní prodejci používají ke správě svého prostředí od zařazení po vyřazení z provozu.</span><span class="sxs-lookup"><span data-stu-id="d00a3-107">LCS is an administration portal that retailers use to manage their environments from provisioning to decommissioning.</span></span>
+<span data-ttu-id="865f3-106">Řešení hodnocení a recenzí je omnikanálové řešení, které lze zpřístupnit v Dynamics 365 Commerce pomocí Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="865f3-106">The ratings and reviews solution is an omni-channel solution that you can make available in Dynamics 365 Commerce by using Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="865f3-107">LCS je portál pro správu, který maloobchodní prodejci používají ke správě svého prostředí od zařazení po vyřazení z provozu.</span><span class="sxs-lookup"><span data-stu-id="865f3-107">LCS is an administration portal that retailers use to manage their environments from provisioning to decommissioning.</span></span>
 
-<span data-ttu-id="d00a3-108">Chcete-li použít řešení hodnocení a recenze na webu obchodu, musíte při nasazení vašeho webu pro elektronický obchod v aplikaci souhlasit s hodnocením a recenzemi Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="d00a3-108">If you want to use the ratings and reviews solution on your Commerce website, you must opt in for ratings and reviews during deployment of your e-Commerce site on Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="865f3-108">Chcete-li použít řešení hodnocení a recenze na webu obchodu, musíte při nasazení vašeho webu pro elektronický obchod v aplikaci souhlasit s hodnocením a recenzemi Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="865f3-108">If you want to use the ratings and reviews solution on your Commerce website, you must opt in for ratings and reviews during deployment of your e-Commerce site on Dynamics 365 Commerce.</span></span>
 
-## <a name="opt-in-to-use-ratings-and-reviews"></a><span data-ttu-id="d00a3-109">Připojení k používání hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="d00a3-109">Opt in to use ratings and reviews</span></span>
+## <a name="opt-in-to-use-ratings-and-reviews"></a><span data-ttu-id="865f3-109">Připojení k používání hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="865f3-109">Opt in to use ratings and reviews</span></span>
 
-<span data-ttu-id="d00a3-110">Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="d00a3-110">To opt in to use ratings and reviews on your site, follow these steps.</span></span>
+<span data-ttu-id="865f3-110">Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="865f3-110">To opt in to use ratings and reviews on your site, follow these steps.</span></span>
 
-1. <span data-ttu-id="d00a3-111">Postupujte podle kroků v [nasazení nového webu e-Commerce](deploy-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="d00a3-111">Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).</span></span>
-1. <span data-ttu-id="d00a3-112">Zatímco jste stále v LCS, přejděte na **Nastavení nasazení Retail \> Další nastavení**.</span><span class="sxs-lookup"><span data-stu-id="d00a3-112">While you're still in LCS, go to **Retail deployment setup \> Other settings**.</span></span>
-1. <span data-ttu-id="d00a3-113">Nastavte možnost **Povolit službu hodnocení a recenzování** na hodnotu **Ano**.</span><span class="sxs-lookup"><span data-stu-id="d00a3-113">Set the **Enable ratings and reviews service** option to **Yes**.</span></span>
-1. <span data-ttu-id="d00a3-114">V poli **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí (ID objektu skupiny zabezpečení)** zadejte ID skupiny zabezpečení Microsoft Azure Active Directory (Azure AD), která obsahuje moderátory hodnocení a recenzí.</span><span class="sxs-lookup"><span data-stu-id="d00a3-114">In the **AAD security group for ratings and review moderator (security group object id)** field, enter the ID of the Microsoft Azure Active Directory (Azure AD) security group that includes the ratings and reviews moderators.</span></span>
+1. <span data-ttu-id="865f3-111">Postupujte podle kroků v [nasazení nového webu e-Commerce](deploy-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="865f3-111">Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).</span></span>
+1. <span data-ttu-id="865f3-112">Zatímco jste stále v LCS, přejděte na **Nastavení nasazení Retail \> Další nastavení**.</span><span class="sxs-lookup"><span data-stu-id="865f3-112">While you're still in LCS, go to **Retail deployment setup \> Other settings**.</span></span>
+1. <span data-ttu-id="865f3-113">Nastavte možnost **Povolit službu hodnocení a recenzování** na hodnotu **Ano**.</span><span class="sxs-lookup"><span data-stu-id="865f3-113">Set the **Enable ratings and reviews service** option to **Yes**.</span></span>
+1. <span data-ttu-id="865f3-114">V poli **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí (ID objektu skupiny zabezpečení)** zadejte ID skupiny zabezpečení Microsoft Azure Active Directory (Azure AD), která obsahuje moderátory hodnocení a recenzí.</span><span class="sxs-lookup"><span data-stu-id="865f3-114">In the **AAD security group for ratings and review moderator (security group object id)** field, enter the ID of the Microsoft Azure Active Directory (Azure AD) security group that includes the ratings and reviews moderators.</span></span>
 
     ![Připojení k používání hodnocení a recenzí](media/LCS_RnR_Preference.png)
 
-1. <span data-ttu-id="d00a3-116">Dokončete proces inicializace e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="d00a3-116">Complete the e-Commerce initialization process.</span></span>
+1. <span data-ttu-id="865f3-116">Dokončete proces inicializace e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="865f3-116">Complete the e-Commerce initialization process.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="d00a3-117">Jste-li existujícím zákazníkem Dynamics 365 Commerce, který již nasadil server elektronického obchodu bez přijetí hodnocení a recenze a nyní chcete použít hodnocení a recenze z balíčku Dynamics 365 Commerce, odešlete požadavek na službu.</span><span class="sxs-lookup"><span data-stu-id="d00a3-117">If you are an existing Dynamics 365 Commerce customer who has already deployed an e-Commerce site without having opted in for ratings and reviews and now want to use ratings and reviews from the Dynamics 365 Commerce package, please submit a service request.</span></span> <span data-ttu-id="d00a3-118">Informace o postupu při odesílání žádostí o služby naleznete v tématu [Proces odeslání požadavků na službu](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="d00a3-118">For information about how to submit a service request, see [Submit service requests process](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json).</span></span> 
+> <span data-ttu-id="865f3-117">Jste-li existujícím zákazníkem Dynamics 365 Commerce, který již nasadil server elektronického obchodu bez přijetí hodnocení a recenze a nyní chcete použít hodnocení a recenze z balíčku Dynamics 365 Commerce, odešlete požadavek na službu.</span><span class="sxs-lookup"><span data-stu-id="865f3-117">If you are an existing Dynamics 365 Commerce customer who has already deployed an e-Commerce site without having opted in for ratings and reviews and now want to use ratings and reviews from the Dynamics 365 Commerce package, please submit a service request.</span></span> <span data-ttu-id="865f3-118">Informace o postupu při odesílání žádostí o služby naleznete v tématu [Proces odeslání požadavků na službu](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="865f3-118">For information about how to submit a service request, see [Submit service requests process](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json).</span></span> 
 
-## <a name="additional-resources"></a><span data-ttu-id="d00a3-119">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="d00a3-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="865f3-119">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="865f3-119">Additional resources</span></span>
 
-[<span data-ttu-id="d00a3-120">Přehled hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="d00a3-120">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
+[<span data-ttu-id="865f3-120">Přehled hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="865f3-120">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
 
-[<span data-ttu-id="d00a3-121">Správa hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="d00a3-121">Manage ratings and reviews</span></span>](manage-reviews.md)
+[<span data-ttu-id="865f3-121">Správa hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="865f3-121">Manage ratings and reviews</span></span>](manage-reviews.md)
 
-[<span data-ttu-id="d00a3-122">Konfigurace hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="d00a3-122">Configure ratings and reviews</span></span>](configure-ratings-reviews.md)
+[<span data-ttu-id="865f3-122">Konfigurace hodnocení a recenzí</span><span class="sxs-lookup"><span data-stu-id="865f3-122">Configure ratings and reviews</span></span>](configure-ratings-reviews.md)
 
-[<span data-ttu-id="d00a3-123">Synchronizace hodnocení produktů v Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="d00a3-123">Sync product ratings in Dynamics 365 Commerce</span></span>](sync-product-ratings.md)
+[<span data-ttu-id="865f3-123">Synchronizace hodnocení produktů v Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="865f3-123">Sync product ratings in Dynamics 365 Commerce</span></span>](sync-product-ratings.md)
 
 
 

@@ -6,23 +6,22 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a6d09127b13eee64a24837d5462612961ef0e347
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 605792bdc82a311fff9f7f4b8945ca5dde172c54
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240236"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5642158"
 ---
-# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="4ed71-103">Dynamics 365 Commerce výukový katalog</span><span class="sxs-lookup"><span data-stu-id="4ed71-103">Dynamics 365 Commerce Learning catalog</span></span> 
+# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="044bf-103">Dynamics 365 Commerce výukový katalog</span><span class="sxs-lookup"><span data-stu-id="044bf-103">Dynamics 365 Commerce Learning catalog</span></span> 
 
-<span data-ttu-id="4ed71-104">Vyberte si potřebné online školení, osobní workshopy a události pro vaši roli uživatele aplikace Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="4ed71-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
+<span data-ttu-id="044bf-104">Vyberte si potřebné online školení, osobní workshopy a události pro vaši roli uživatele aplikace Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="044bf-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -30,113 +29,113 @@ ms.locfileid: "5240236"
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="4ed71-105">Osoby rozhodující v obchodní a technické oblasti</span><span class="sxs-lookup"><span data-stu-id="4ed71-105">Business and Technical Decision Makers</span></span>
+    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="044bf-105">Osoby rozhodující v obchodní a technické oblasti</span><span class="sxs-lookup"><span data-stu-id="044bf-105">Business and Technical Decision Makers</span></span>
 
-    <span data-ttu-id="4ed71-106">Rozhodujete se, zda investovat do nových technologií?</span><span class="sxs-lookup"><span data-stu-id="4ed71-106">Do you decide whether to invest in new technologies?</span></span> 
+    <span data-ttu-id="044bf-106">Rozhodujete se, zda investovat do nových technologií?</span><span class="sxs-lookup"><span data-stu-id="044bf-106">Do you decide whether to invest in new technologies?</span></span> 
 
-    [<span data-ttu-id="4ed71-107">Vzdělávací katalog pro osoby rozhodující v obchodní a technické oblasti</span><span class="sxs-lookup"><span data-stu-id="4ed71-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
+    [<span data-ttu-id="044bf-107">Vzdělávací katalog pro osoby rozhodující v obchodní a technické oblasti</span><span class="sxs-lookup"><span data-stu-id="044bf-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
 
-    [<span data-ttu-id="4ed71-108">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
+    [<span data-ttu-id="044bf-108">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="business-users"></a><span data-ttu-id="4ed71-109">Obchodní uživatelé</span><span class="sxs-lookup"><span data-stu-id="4ed71-109">Business users</span></span>
+    ### <a name="business-users"></a><span data-ttu-id="044bf-109">Obchodní uživatelé</span><span class="sxs-lookup"><span data-stu-id="044bf-109">Business users</span></span>
 
-    <span data-ttu-id="4ed71-110">Právě jste získali novou aplikaci, kterou chcete použít?</span><span class="sxs-lookup"><span data-stu-id="4ed71-110">Did you just get a new application to use?</span></span> 
+    <span data-ttu-id="044bf-110">Právě jste získali novou aplikaci, kterou chcete použít?</span><span class="sxs-lookup"><span data-stu-id="044bf-110">Did you just get a new application to use?</span></span> 
 
-    [<span data-ttu-id="4ed71-111">Obchodní uživatelé – katalog kurzů</span><span class="sxs-lookup"><span data-stu-id="4ed71-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
+    [<span data-ttu-id="044bf-111">Obchodní uživatelé – katalog kurzů</span><span class="sxs-lookup"><span data-stu-id="044bf-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
 
-    [<span data-ttu-id="4ed71-112">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
+    [<span data-ttu-id="044bf-112">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
 
-    [<span data-ttu-id="4ed71-113">Obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
+    [<span data-ttu-id="044bf-113">Obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
 
-    [<span data-ttu-id="4ed71-114">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
+    [<span data-ttu-id="044bf-114">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="implementation-project-managers"></a><span data-ttu-id="4ed71-115">Správci projektu implementace</span><span class="sxs-lookup"><span data-stu-id="4ed71-115">Implementation Project Managers</span></span>
+    ### <a name="implementation-project-managers"></a><span data-ttu-id="044bf-115">Správci projektu implementace</span><span class="sxs-lookup"><span data-stu-id="044bf-115">Implementation Project Managers</span></span>
 
-    <span data-ttu-id="4ed71-116">Jste zodpovědni za bezproblémovou implementaci v rámci vaší společnosti?</span><span class="sxs-lookup"><span data-stu-id="4ed71-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
+    <span data-ttu-id="044bf-116">Jste zodpovědni za bezproblémovou implementaci v rámci vaší společnosti?</span><span class="sxs-lookup"><span data-stu-id="044bf-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
 
-    [<span data-ttu-id="4ed71-117">Katalog školení - vedoucí projektu implementace</span><span class="sxs-lookup"><span data-stu-id="4ed71-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
+    [<span data-ttu-id="044bf-117">Katalog školení - vedoucí projektu implementace</span><span class="sxs-lookup"><span data-stu-id="044bf-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
 
-    [<span data-ttu-id="4ed71-118">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
+    [<span data-ttu-id="044bf-118">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="administrators"></a><span data-ttu-id="4ed71-119">Správci</span><span class="sxs-lookup"><span data-stu-id="4ed71-119">Administrators</span></span>
+    ### <a name="administrators"></a><span data-ttu-id="044bf-119">Správci</span><span class="sxs-lookup"><span data-stu-id="044bf-119">Administrators</span></span>
 
-    <span data-ttu-id="4ed71-120">Potřebujete, aby systémy a data zůstaly aktivní, zřízené a zabezpečené?</span><span class="sxs-lookup"><span data-stu-id="4ed71-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
+    <span data-ttu-id="044bf-120">Potřebujete, aby systémy a data zůstaly aktivní, zřízené a zabezpečené?</span><span class="sxs-lookup"><span data-stu-id="044bf-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
 
-    [<span data-ttu-id="4ed71-121">Katalog kurzů – správci</span><span class="sxs-lookup"><span data-stu-id="4ed71-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
+    [<span data-ttu-id="044bf-121">Katalog kurzů – správci</span><span class="sxs-lookup"><span data-stu-id="044bf-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
 
-    [<span data-ttu-id="4ed71-122">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
+    [<span data-ttu-id="044bf-122">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
 
-    [<span data-ttu-id="4ed71-123">Obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
+    [<span data-ttu-id="044bf-123">Obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
 
-    [<span data-ttu-id="4ed71-124">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
+    [<span data-ttu-id="044bf-124">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
 
   :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="developers"></a><span data-ttu-id="4ed71-125">Vývojáři</span><span class="sxs-lookup"><span data-stu-id="4ed71-125">Developers</span></span>
+    ### <a name="developers"></a><span data-ttu-id="044bf-125">Vývojáři</span><span class="sxs-lookup"><span data-stu-id="044bf-125">Developers</span></span>
 
-    <span data-ttu-id="4ed71-126">Potřebujete napsat kód pro integraci s jinými zdroji dat, rozšíření funkčnosti základního systému nebo vytvoření komplexní aplikace?</span><span class="sxs-lookup"><span data-stu-id="4ed71-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
+    <span data-ttu-id="044bf-126">Potřebujete napsat kód pro integraci s jinými zdroji dat, rozšíření funkčnosti základního systému nebo vytvoření komplexní aplikace?</span><span class="sxs-lookup"><span data-stu-id="044bf-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
 
-    [<span data-ttu-id="4ed71-127">Výukový katalog pro vývojáře</span><span class="sxs-lookup"><span data-stu-id="4ed71-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
+    [<span data-ttu-id="044bf-127">Výukový katalog pro vývojáře</span><span class="sxs-lookup"><span data-stu-id="044bf-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
 
-    [<span data-ttu-id="4ed71-128">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-128">Get started</span></span>](learning-catalog-developer.md#get-started)
+    [<span data-ttu-id="044bf-128">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-128">Get started</span></span>](learning-catalog-developer.md#get-started)
 
-    [<span data-ttu-id="4ed71-129">Obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
+    [<span data-ttu-id="044bf-129">Obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="functional-consultants"></a><span data-ttu-id="4ed71-130">Funkční poradci</span><span class="sxs-lookup"><span data-stu-id="4ed71-130">Functional consultants</span></span>
+    ### <a name="functional-consultants"></a><span data-ttu-id="044bf-130">Funkční poradci</span><span class="sxs-lookup"><span data-stu-id="044bf-130">Functional consultants</span></span>
 
-    <span data-ttu-id="4ed71-131">Jste odborníkem na implementaci obchodní domény?</span><span class="sxs-lookup"><span data-stu-id="4ed71-131">Are you an implementation expert for a business domain?</span></span> 
+    <span data-ttu-id="044bf-131">Jste odborníkem na implementaci obchodní domény?</span><span class="sxs-lookup"><span data-stu-id="044bf-131">Are you an implementation expert for a business domain?</span></span> 
 
-    [<span data-ttu-id="4ed71-132">Katalog kurzů – funkční konzultant pro žádosti</span><span class="sxs-lookup"><span data-stu-id="4ed71-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
+    [<span data-ttu-id="044bf-132">Katalog kurzů – funkční konzultant pro žádosti</span><span class="sxs-lookup"><span data-stu-id="044bf-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
 
-    [<span data-ttu-id="4ed71-133">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
+    [<span data-ttu-id="044bf-133">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
 
-    [<span data-ttu-id="4ed71-134">Obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
+    [<span data-ttu-id="044bf-134">Obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
 
-    [<span data-ttu-id="4ed71-135">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
+    [<span data-ttu-id="044bf-135">Elektronický obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="4ed71-136">Partnerství prodeje a marketingu</span><span class="sxs-lookup"><span data-stu-id="4ed71-136">Partner Sales and Marketing</span></span>
+    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="044bf-136">Partnerství prodeje a marketingu</span><span class="sxs-lookup"><span data-stu-id="044bf-136">Partner Sales and Marketing</span></span>
 
-    <span data-ttu-id="4ed71-137">Zodpovídáte za pomoc zákazníkům při koupi správného řešení?</span><span class="sxs-lookup"><span data-stu-id="4ed71-137">Are you responsible for helping your customers buy the right solution?</span></span> 
+    <span data-ttu-id="044bf-137">Zodpovídáte za pomoc zákazníkům při koupi správného řešení?</span><span class="sxs-lookup"><span data-stu-id="044bf-137">Are you responsible for helping your customers buy the right solution?</span></span> 
 
-    [<span data-ttu-id="4ed71-138">Katalog školení pro prodej a marketing pro Microsoft Partnery</span><span class="sxs-lookup"><span data-stu-id="4ed71-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
+    [<span data-ttu-id="044bf-138">Katalog školení pro prodej a marketing pro Microsoft Partnery</span><span class="sxs-lookup"><span data-stu-id="044bf-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
 
-    [<span data-ttu-id="4ed71-139">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
+    [<span data-ttu-id="044bf-139">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
 
     :::column-end:::
 
     :::column:::
 
-    ### <a name="solution-architects"></a><span data-ttu-id="4ed71-140">Architekti řešení</span><span class="sxs-lookup"><span data-stu-id="4ed71-140">Solution architects</span></span>
+    ### <a name="solution-architects"></a><span data-ttu-id="044bf-140">Architekti řešení</span><span class="sxs-lookup"><span data-stu-id="044bf-140">Solution architects</span></span>
 
-    <span data-ttu-id="4ed71-141">Navrhujete řešení, která vyhovují potřebám a rozpočtům vašich zákazníků?</span><span class="sxs-lookup"><span data-stu-id="4ed71-141">Do you design solutions that meet your customers' needs and budgets?</span></span>
+    <span data-ttu-id="044bf-141">Navrhujete řešení, která vyhovují potřebám a rozpočtům vašich zákazníků?</span><span class="sxs-lookup"><span data-stu-id="044bf-141">Do you design solutions that meet your customers' needs and budgets?</span></span>
 
-    [<span data-ttu-id="4ed71-142">Katalog školení - Architekti řešení</span><span class="sxs-lookup"><span data-stu-id="4ed71-142">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
+    [<span data-ttu-id="044bf-142">Katalog školení - Architekti řešení</span><span class="sxs-lookup"><span data-stu-id="044bf-142">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
 
-    [<span data-ttu-id="4ed71-143">Začínáme</span><span class="sxs-lookup"><span data-stu-id="4ed71-143">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
+    [<span data-ttu-id="044bf-143">Začínáme</span><span class="sxs-lookup"><span data-stu-id="044bf-143">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
 
-    [<span data-ttu-id="4ed71-144">Obchod</span><span class="sxs-lookup"><span data-stu-id="4ed71-144">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
+    [<span data-ttu-id="044bf-144">Obchod</span><span class="sxs-lookup"><span data-stu-id="044bf-144">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
 
     :::column-end:::
 :::row-end:::
