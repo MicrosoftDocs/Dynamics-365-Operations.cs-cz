@@ -2,11 +2,9 @@
 title: Stavy zásob
 description: Tento článek popisuje, jak lze použít stavy zásob rozdělení k řazení zásob do kategorií a jejich sledování.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
-ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
+ms.openlocfilehash: e3c8b467f29037bbb869189e3607e11f40aad2c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476692"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829853"
 ---
 # <a name="inventory-statuses"></a>Stavy zásob
 
@@ -45,10 +43,14 @@ Stav zásob je jednou z dimenzí ve skupině dimenzí úložiště. Stavy zásob
 
 Položky na skladu ve stavu zásob „dostupné“ či „nedostupné“ můžete použít v rámci příchozí práce. Například lze vytvořit stav „dostupné” s názvem *Připraveno*, stav „nedostupné” s názvem *Poškozeno* a stav „blokované” s názvem *Blokováno*. Při vytvoření nákupní objednávky pro přijaté nebo vrácené položky a pokud jsou položky poškozené nebo zničené, můžete změnit stav zásob těchto položek na *Poškozeno* na řádku nákupní objednávky. Poté, co byly položky přijaty, je automaticky nastaven stav *Blokováno*. Kontrolujete-li poškozené položky pomocí mobilního zařízení, aplikace Supply Chain Management může použít směrnice skladových míst a šablony práce k zobrazení informací o odpovídajícím místě nebo rozsahu míst, kde jsou položky odloženy. Pro vrácené položky se vytvoří typ výdeje *Rezervace* na stránce **Skladové transakce**.
 
+Můžete určit, jaké stavy zásob jsou stavy blokování, pomocí zaškrtávacího políčka **Blokování zásob** na stránce **Stavy zásob**. Stavy zásob nelze použít jako stavy blokování pro prodejní objednávky, převodní příkazy, nebo integrace projektu.
+
+U odchozí práce můžete pomocí různých neblokujících stavů zásob určit, proti kterým zásobám se má rezervovat. Pokud máte položky se stavem *„Blokování“* a použijete u nich hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní. U objednávek kvality přidružených k odchozí práci navíc není možné aktualizovat **Stav zásob** jako součást ověření objednávky kvality.
+
 > [!NOTE]
 > Na místech, kde existuje otevřená práce, nemůžete změnit stav zásob. Například pokud jste provedli příjem nákupu pro položku, ale neprovedli jste krok vyskladnění, pak by pro přijímající místo existovala otevřená práce a při pokusu o změnu stavu zásob v daném místě by se zobrazila chyba. Dokončení nebo zrušení související práce vám umožní změnit stav.
- 
-Pro výstupní práci používejte položky, které mají stav zásob „dostupné“. Pokud máte položky se stavem *„Zničené“* a použijete u nich hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní.
+>
+> Obvykle stav zásob na skladě související s otevřenou prací skladu mění pouze pracovníci používající mobilní aplikaci Řízení skladu, například při provádění procesu přesunu.
 
 Poté, co jste nastavili stavy zásob, můžete nastavit také výchozí stav zásob pro pracoviště, položku a sklad. Můžete také nastavit výchozí stav pro prodej, převod a nákupní objednávky. Výchozí stav pro prodejní objednávky a odchozí převodní příkaz nemůže mít volbu **Blokování zásob** nastavenu na hodnotu *Ano*. Stav zásob, který je zděděn z výchozího nastavení pracoviště, skladu, položky, nákupní objednávky, převodního příkaz nebo prodejní objednávky, lze změnit pomocí mobilního zařízení nebo na nákupní objednávce, prodejní objednávce nebo řádku převodního příkazu.
 

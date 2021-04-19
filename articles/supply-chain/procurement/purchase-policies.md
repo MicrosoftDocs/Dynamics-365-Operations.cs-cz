@@ -1,12 +1,10 @@
 ---
 title: Přehled zásad nákupu
 description: V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8c8fa3e4b59cdb013c1c524e06085b06905715e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b2c69ab02ea9e6a5a5699a204258243d6204413b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215882"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825295"
 ---
 # <a name="purchasing-policies-overview"></a>Přehled zásad nákupu
 

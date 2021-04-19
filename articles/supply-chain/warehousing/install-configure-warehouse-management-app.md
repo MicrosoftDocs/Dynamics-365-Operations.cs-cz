@@ -2,11 +2,9 @@
 title: Instalace a připojení mobilní aplikace Warehouse Management
 description: Toto téma vysvětluje, jak nainstalovat aplikaci Warehouse Management Mobile App z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,20 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487018"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835599"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Toto téma popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu, přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Toto téma popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu (nyní zastaralou), přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Toto téma vysvětluje, jak stáhnout a nainstalovat mobilní aplikaci Řízení skladu na každém z vašich mobilních zařízení, a jak konfigurovat její připojování k prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 

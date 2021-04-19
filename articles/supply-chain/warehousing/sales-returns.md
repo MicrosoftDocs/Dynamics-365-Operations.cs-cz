@@ -2,11 +2,9 @@
 title: Prodejní vratky
 description: Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c01a945735f6340a0efd3d9c5ff74dd8cebd9ab7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d460cab24ca73d43a0f055c5f65791968841e472
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263317"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835503"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
@@ -232,7 +230,7 @@ Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení pou
 
 ![Náhradní proces při použití dispozičního kódu](./media/SalesReturn05.png)
 
-Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
+Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace&quot; (&quot;nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
 
 >[Poznámka!] náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
 

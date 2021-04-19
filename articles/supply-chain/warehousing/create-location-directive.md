@@ -2,11 +2,9 @@
 title: Práce se směrnicemi skladového místa
 description: Toto téma popisuje, jak pracovat se směrnicemi skladového místa. Směrnice skladového místa jsou pravidla definovaná uživatelem, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470512"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838387"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -152,7 +150,7 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
     > [!IMPORTANT]
     > Abyste mohli provádět vícepolohové i jednopolohové vnoření, musíte zadat dva řádky, které mají stejnou strukturu a nastavení, ale musíte nastavit možnost **Vícenásobná SKU** na *Ano* pro jeden řádek a *Ne* pro druhý. Pro operace vložení je proto nutné mít dvě stejné směrnice skladového místa, i když nerozlišujete mezi jednou a vícero skladovými jednotkami u ID práce. Často platí, že pokud nenastavíte obě tyto směrnice skladového místa umístění, neočekávaná umístění obchodních procesů budou pocházet z použité směrnice skladového místa. Podobné nastavení musíte použít pro směrnice skladového místa, které mají **Typ práce** *výběr*, pokud potřebujete zpracovat objednávky, které obsahují více SKU.
 
-    Použijte možnost **Vícenásobné SKU** pro řádky práce, které zpracovávají více než jedno číslo položky. (Číslo položky bude v detailech práce prázdné a bude zobrazeno jako **Násobek** na stránkách zpracování v aplikaci skladu.)
+    Použijte možnost **Vícenásobné SKU** pro řádky práce, které zpracovávají více než jedno číslo položky. (Číslo položky bude v detailech práce prázdné a bude zobrazeno jako **Násobek** na stránkách zpracování v mobilní aplikaci Řízení skladu.)
 
     V typickém příkladu scénáře je pracovní šablona nastavena tak, aby měla více než jeden pár vyskladnění/vložení. V takovém případě možná budete chtít vyhledat konkrétní pracovní místo, které se použije pro řádky s **Typem práce** *Vložení*.
 
@@ -171,7 +169,7 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
     > [!NOTE]
     > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types).
 
-- **Dispoziční kód** - Toto pole se používá pro směrnice skladového místa, které mají typ pracovního příkazu *Nákupní objednávky*, *Hotové zboží odloženo* nebo *Vrátit objednávky* a typ práce *Vložit*. Použijte jej k vedení toku k použití konkrétní směrnice skladového místa, v závislosti na kódu dispozice, který pracovník vybral v aplikaci skladu. Můžete například nasměrovat vrácené zboží na místo kontroly, než bude vráceno do skladu. Dispoziční kód lze propojit se stavem zásob. Tímto způsobem jej lze použít ke změně stavu zásob v rámci procesu přijímání. Máte například dispoziční kód *QA*, který nastavuje stav zásob na *QA*. Poté můžete mít samostatnou směrnici skladového místa, abyste toto zboží přesunuli do karantény.
+- **Dispoziční kód** - Toto pole se používá pro směrnice skladového místa, které mají typ pracovního příkazu *Nákupní objednávky*, *Hotové zboží odloženo* nebo *Vrátit objednávky* a typ práce *Vložit*. Použijte jej k vedení toku k použití konkrétní směrnice skladového místa, v závislosti na kódu dispozice, který pracovník vybral v mobilní aplikaci Řízení skladu. Můžete například nasměrovat vrácené zboží na místo kontroly, než bude vráceno do skladu. Dispoziční kód lze propojit se stavem zásob. Tímto způsobem jej lze použít ke změně stavu zásob v rámci procesu přijímání. Máte například dispoziční kód *QA*, který nastavuje stav zásob na *QA*. Poté můžete mít samostatnou směrnici skladového místa, abyste toto zboží přesunuli do karantény.
 
     > [!NOTE]
     > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types).

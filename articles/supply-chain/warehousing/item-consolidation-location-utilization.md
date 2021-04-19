@@ -2,11 +2,9 @@
 title: Konsolidace zboží - Využití skladového místa
 description: Toto téma poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky Konsolidace položek, aby konsolidovali položky, a proto lépe využívali skladové prostory.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3b20b41d27e5faeac7ea88940c086ae33390dc29
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216998"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835556"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidace zboží - Využití skladového místa
 
@@ -149,7 +147,7 @@ Tato část popisuje, jak připravit systém k použití konsolidace položek a 
 
 ## <a name="example-scenario"></a>Příklad
 
-Následující scénář používá k vytvoření inventáře aplikaci skladu na mobilním zařízení pro *úpravu* zásob do dvou míst ve skladu.
+Následující scénář používá k vytvoření zásob mobilní aplikaci Řízení skladu pro *úpravu* zásob do dvou míst ve skladu.
 
 ### <a name="add-inventory-to-locations"></a>Přidat zásoby na skladová místa
 

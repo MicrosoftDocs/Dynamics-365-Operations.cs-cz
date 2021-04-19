@@ -2,11 +2,9 @@
 title: Pracovní zátěže správy skladu pro cloudové a hraniční jednotky škálování
 description: Toto téma poskytuje informace o funkci, která umožňuje jednotkám škálování spouštět vybrané procesy z vaší úlohy správy skladu.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580958"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832387"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -70,7 +68,7 @@ Centrum vlastní následující data:
 - Přidělení objednávky a zpracování odchozího zatížení
 - Procesy uvolnění do skladu, vytvoření zásilky, vytvoření vlny a finalizace vlny
 
-Jednotky stupnice vlastní skutečné vlnové zpracování (jako je přidělení práce, doplňovací práce a vytvoření poptávky práce) po vydání vlny. Pracovníci skladu proto mohou zpracovávat odchozí práci pomocí aplikace skladu, která je připojena k jednotce škálování.
+Jednotky stupnice vlastní skutečné vlnové zpracování (jako je přidělení práce, doplňovací práce a vytvoření poptávky práce) po vydání vlny. Pracovníci skladu proto mohou zpracovávat odchozí práci pomocí mobilní aplikace Řízení skladu, která je připojena k jednotce škálování.
 
 ![Tok zpracování vlny](./media/wes-wave-processing-ga.png "Tok zpracování vlny")
 
@@ -94,7 +92,7 @@ Abyste mohli použít proces *Uvolnit do skladu*, musíte být přihlášeni v c
 
 Při použití možnosti **Automatické uvolnění nákupních objednávek** můžete vybrat konkrétní řádky nákupní objednávky na základě dotazu. Typickým scénářem by bylo nastavení opakované dávkové úlohy, která uvolní všechny potvrzené řádky nákupní objednávky, které se očekávají příští den.
 
-Pracovník může spustit proces příjmu pomocí aplikace skladu, která je připojena k jednotce škálování. Data se poté zaznamenají podle jednotky škálování a nahlásí se proti příchozí skladové objednávce. Vytvoření a zpracování následného odložení bude také zpracováno podle jednotky škálování.
+Pracovník může spustit proces příjmu pomocí mobilní aplikace Řízení skladu, která je připojena k jednotce škálování. Data se poté zaznamenají podle jednotky škálování a nahlásí se proti příchozí skladové objednávce. Vytvoření a zpracování následného odložení bude také zpracováno podle jednotky škálování.
 
 Pokud nepoužíváte proces *vydání do skladu* a tím pádem ani *skladové objednávky*, centrum může zpracovávat příjem skladu a zpracování práce nezávisle na jednotkách škálování.
 
@@ -117,10 +115,10 @@ Uživatelům, kteří působí jako správci skladu v centru i na jednotkách š
 Pro pracovní zátěž WES na jednotce škálování lze povolit následující procesy provádění skladu:
 
 - Vybrané metody vln pro prodejní a převodové objednávky (alokace, doplnění poptávky, kontejnerizace, tvorba díla a tisk štítků vln)
-- Zpracování skladových a prodejních zakázek pomocí aplikace skladu (včetně doplňovacích prací)
-- Dotaz na zásoby po ruce pomocí aplikace skladu
-- Vytváření a spouštění pohybů zásob pomocí aplikace skladu
-- Registrace nákupních objednávek a odvedení práce pomocí aplikace skladu
+- Zpracování skladových a prodejních zakázek pomocí mobilní aplikace Řízení skladu (včetně doplňovacích prací)
+- Dotaz na zásoby na skladě pomocí mobilní aplikace Řízení skladu
+- Vytváření a spouštění pohybů zásob pomocí mobilní aplikace Řízení skladu
+- Registrace nákupních objednávek a odvedení práce pomocí mobilní aplikace Řízení skladu
 
 Následující pracovní příkazy jsou aktuálně podporovány pro pracovní zátěže WES na nasazení jednotek škálování:
 
@@ -133,7 +131,7 @@ Následující pracovní příkazy jsou aktuálně podporovány pro pracovní z�
 V jednotkách škálování nejsou v současné době podporovány žádné jiné typy zdrojových dokumentů ani skladových prací. Například pro pracovní zátěž WES na jednotce měřítka nemůžete provést proces přijetí objednávky přenosu (potvrzení o převodu) nebo počítat procesní cyklus.
 
 > [!NOTE]
-> Položky nabídky mobilních zařízení a tlačítka pro nepodporované funkce se ve _skladové aplikaci_ nezobrazí, když je připojena k nasazení jednotky škálování.
+> Položky nabídky mobilních zařízení a tlačítka pro nepodporované funkce se v _mobilní aplikaci Řízení skladu_ nezobrazí, když je připojena k nasazení jednotky škálování.
 
 > [!WARNING]
 > Když spustíte úlohu na jednotce škálování, nemůžete spustit nepodporované procesy pro konkrétní sklad v centru. Tabulky uvedené dále v tomto tématu dokumentují podporované funkce.
@@ -164,7 +162,7 @@ Následující funkce správy skladu nejsou aktuálně podporovány v úlohách 
 - Zpracování skladové práce s dodacími listy
 - Zpracování skladové práce se spuštěním prahové hodnoty pro počítání cyklů
 - Zpracování skladové práce s manipulací s materiálem / automatizací skladu
-- Použití obrazu hlavních dat produktu (například v aplikaci skladu)
+- Použití obrazu hlavních dat produktu (například v mobilní aplikaci Řízení skladu)
 
 > [!WARNING]
 > Některé funkce skladu nebudou k dispozici pro sklady se spuštěnými úlohami správy skladu na jednotce škálování a také nejsou podporovány na rozbočovači nebo na úlohách jednotky škálování.
@@ -253,7 +251,7 @@ Následující tabulka ukazuje, které funkce skladových operací a zpracován�
 | Přesun                                           | Ano | Ano                          |
 | Pohyb podle šablony                               | Ano | Ano                          |
 | Převod skladu                                 | Ano | Žádný                           |
-| Vytvoření převodního příkazu z aplikace skladu           | Ano | Žádný                           |
+| Vytvoření převodního příkazu z mobilní aplikace Řízení skladu           | Ano | Žádný                           |
 | Úprava (příchozí/odchozí)                                | Ano | Žádný                           |
 | Změna stavu zásob                            | Ano | Žádný                           |
 | Zpracování nesrovnalostí cyklické inventury a počítání | Ano | Žádný                           |

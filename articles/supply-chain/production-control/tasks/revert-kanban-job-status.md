@@ -2,11 +2,9 @@
 title: Vrátit stav kanbanové úlohy
 description: Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové úlohy.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94618494b9c338ed27b2558c91dc662c853d3cda
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ee0ace8ff57b91828eb055658af5c8ecc50064ad
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5261086"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831907"
 ---
 # <a name="revert-kanban-job-status"></a>Vrátit stav kanbanové úlohy
 

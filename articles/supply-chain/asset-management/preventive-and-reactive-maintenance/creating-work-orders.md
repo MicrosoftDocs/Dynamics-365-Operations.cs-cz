@@ -2,11 +2,9 @@
 title: Vytvoření pracovních příkazů
 description: Toto téma vysvětluje, jak vytvořit pracovní příkazy v modulu Správa majetku.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500567"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836727"
 ---
 # <a name="creating-work-orders"></a>Vytvoření pracovních příkazů
 
@@ -62,8 +60,6 @@ Chcete-li vytvořit pracovní příkazy, které jsou založeny na vašem plánu 
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Seskupte řádky pracovních příkazů, které se automaticky vytvářejí, když běží plán údržby
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Tato funkce umožňuje definovat pravidla pro seskupování řádků pracovních příkazů do jednoho pracovního příkazu, když je systém nastaven na automatické generování pracovních příkazů na základě plánu údržby. Dříve mohly automaticky generované pracovní příkazy obsahovat pouze jeden řádek. Nyní však můžete pracovní příkazy seskupovat například podle majetku, typu majetku nebo funkčního umístění. (Ručně generované pracovní příkazy již lze tímto způsobem seskupit, jak je popsáno v předchozí části tohoto tématu.)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Povolení seskupování pro automaticky generované pracovní příkazy
@@ -71,7 +67,7 @@ Tato funkce umožňuje definovat pravidla pro seskupování řádků pracovních
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Správa majetku*
-- **Název funkce:** *(Náhled) Použít pravidla pro seskupování pracovních příkazů při provádění plánu údržby*
+- **Název funkce:** *Použít pravidla pro seskupování pracovních příkazů při provádění plánu údržby*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Nastavení seskupování pro automaticky generované pracovní příkazy
 

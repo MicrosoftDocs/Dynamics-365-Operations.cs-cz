@@ -2,11 +2,9 @@
 title: Seskupení vyskladnění
 description: Seskupení vyskladnění nabízejí způsob, jak vybrat více registračních značek najednou a poté je vyskladnit do různých umístění. Mohou být velmi užitečné pro maloobchod, kde registrační značky obvykle nejsou plnými paletami zásob.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228434"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840358"
 ---
 # <a name="putaway-clusters"></a>Seskupení vyskladnění
 
@@ -230,7 +228,7 @@ Tento scénář simuluje zpracování seskupení vyskladnění.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Příjem a třídění zásob do seskupení
 
-1. Přihlaste se do skladové aplikace jako uživatel, který má nastavený sklad *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který je nastaven pro sklad *61*.
 1. V hlavní nabídce vyberte **Příchozí**.
 1. V nabídce **Příchozí** vyberte **Přijímat a setřídit seskupení**.
 1. V poli **Ponum** zadejte číslo nákupní objednávky.
@@ -272,7 +270,7 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 
 #### <a name="put-the-cluster-away"></a>Vyskladnění seskupení
 
-1. Přihlaste se do skladové aplikace jako uživatel, který má nastavený sklad *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který je nastaven pro sklad *61*.
 1. V hlavní nabídce vyberte **Příchozí**.
 1. V nabídce **Příchozí** zvolte **Vyskladnění seskupení**.
 1. Vyberte **ID seskupení** a zadejte ID seskupení, které jste dříve zadali pro uzavřené seskupení.

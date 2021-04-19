@@ -2,11 +2,9 @@
 title: Uživatelská nastavení mobilního zařízení
 description: Toto téma vysvětluje, jak spravovat uživatelské nastavení mobilních zařízení pro pracovníky skladu.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
 audience: Application User
@@ -17,17 +15,16 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8090305c1b296d8a8a64df444abb1d1f2235aeee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501191"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837458"
 ---
 # <a name="mobile-device-user-settings"></a>Uživatelská nastavení mobilního zařízení
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Nová mobilní aplikace Warehouse Management má sadu nastavení specifických pro aplikaci, která pomáhají přizpůsobit uživatelské prostředí. Protože aplikaci lze použít na zařízeních různých velikostí a konfigurací obrazovek (například na tabletu, telefonu nebo na ruce), může být užitečné centrálně spravovat tato nastavení z aplikace Microsoft Dynamics 365 Supply Chain Management.
 

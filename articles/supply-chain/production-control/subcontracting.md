@@ -2,11 +2,9 @@
 title: Subdodávka
 description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Dynamics 365 Supply Chain Management.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255534"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825175"
 ---
 # <a name="subcontracting"></a>Subdodávka
 
@@ -210,7 +208,7 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
 
     ![Dvě sady práce pro výdej suroviny na stránce Práce](./media/subcontract22_work-page.png)
 
-26. Spusťte aplikaci skladu ke zpracování práce skladu pro operaci 10.
+26. Spusťte mobilní aplikaci Řízení skladu ke zpracování práce skladu pro operaci 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     - V poli **Od operace č.** zvolte **10**.
     - V poli **Do operace č.** zvolte **10**.
 
-    ![Hodnoty nastavené na kartě Obecné](./media/subcontract23_start-dialog.png)
+    ![Hodnoty nastavené na kartě Obecné 1](./media/subcontract23_start-dialog.png)
 
 31. Vyberte **OK**, zavřete dialogové okno **Spustit** a vraťte se na stránku **Všechny výrobní zakázky**.
 
     Všimněte si, že stav výrobní zakázky je nyní **Spuštěno**. Materiály pro operaci 10 se spotřebují automatickým zaúčtováním deníku výdejek. Spotřeba času pro operaci 10 je zaúčtována automatických zaúčtováním deníku karet postupů.
 
-32. Spusťte aplikaci skladu ke zpracování práce skladu pro operaci 20.
+32. Spusťte mobilní aplikaci Řízení skladu ke zpracování práce skladu pro operaci 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     - Do pole **Množství** zadejte **10**.
     - Nastavte možnost **Zaúčtovat výdejku** na **Ne**.
 
-    ![Hodnoty nastavené na kartě Obecné](./media/subcontract24_general-tab.png)
+    ![Hodnoty nastavené na kartě Obecné 2](./media/subcontract24_general-tab.png)
 
 35. Vyberte **OK**, zavřete dialogové okno **Spustit** a vraťte se na stránku **Všechny výrobní zakázky**.
 

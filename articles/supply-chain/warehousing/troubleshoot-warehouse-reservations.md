@@ -2,11 +2,9 @@
 title: Odstraňování problémů s rezervacemi v řízení skladu
 description: Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při práci s rezervacemi skladu v Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248708"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828099"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Odstraňování problémů s rezervacemi v řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při práci s rezervacemi skladu v Microsoft Dynamics 365 Supply Chain Management.
+
+Témata související s registracemi čísla dávky a sériového čísla najdete v tématu [Odstraňování problémů s hierarchiemi dávkových a sériových rezervací ve skladu](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Zobrazuje se mi následující chybová zpráva: „Nelze odebrat rezervace, protože existuje práce, která závisí na rezervacích."
 
@@ -63,20 +63,6 @@ K tomuto problému může dojít, pokud systém nemůže aktualizovat množství
 ### <a name="issue-resolution"></a>Řešení problému
 
 Tento problém je pravděpodobně způsoben otevřenou prací. Buď dokončete práci, nebo přijměte bez vytvoření práce. Ujistěte se, že žádné transakce zásob fyzicky nerezervují množství. Například tyto transakce mohou být otevřené objednávky kvality, záznamy blokující zásoby nebo výstupní objednávky.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Zobrazuje se následující chybová zpráva: „Aby bylo možné přiřadit vlně, musí řádky nákladu určit rozměry nad umístěním. Chcete-li přiřadit tyto rozměry, zarezervujte a znovu vytvořte řádek nákladu. “
-
-### <a name="issue-description"></a>Popis problému
-
-Pokud používáte položku, která má hierarchii rezervace "dávka nad" (s dimenzí **Číslo šarže** umístěnou *nad* dimenzí **Umístění**), příkaz **Uvolnit do skladu** na stránce **Pracovní plocha plánování nákladu** pro částečné množství nefunguje. Zobrazí se tato chybová zpráva a pro částečné množství se nevytvoří žádná práce.
-
-Pokud však používáte položku, která má hierarchii rezervace "dávka pod" (s dimenzí **Číslo šarže** umístěnou *pod* dimenzí **Umístění**), můžete uvolnit náklad ze stránky **Pracovní plocha plánování nákladu** pro částečné množství.
-
-### <a name="issue-resolution"></a>Řešení problému
-
-Toto chování je záměrné. Pokud vložíte dimenzi nad dimenzi **Umístění** v hierarchii rezervací, musí být zadána před uvolněním do skladu. Společnost Microsoft vyhodnotila tento problém a zjistila, že se jedná o omezení funkcí během uvolnění do skladu z pracovní plochy plánování nákladu. Částečná množství nelze uvolnit, pokud je není apecifikována jedna nebo více dimenzí nad **Umístěním**.
-
-Další informace viz [Flexibilní zásada rezervace dimenze na úrovni skladu](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

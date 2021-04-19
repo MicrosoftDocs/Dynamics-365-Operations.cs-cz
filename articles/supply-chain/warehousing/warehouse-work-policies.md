@@ -2,11 +2,9 @@
 title: Zásady práce
 description: Toto téma vysvětluje, jak nastavit pracovní zásady.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248540"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838123"
 ---
 # <a name="work-policies"></a>Zásady práce
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit systém a aplikaci skladu tak, aby podporovaly pracovní zásady. Tuto funkci můžete použít k rychlé registraci zásob bez vytvoření práce odložení, když obdržíte objednávky nákupu nebo převodu nebo když dokončíte výrobní procesy. Toto téma obsahuje obecné informace. Podrobné informace týkající se přijímání registračních značek viz [Příjem registrační značky prostřednictvím aplikace skladu](warehousing-mobile-device-app-license-plate-receiving.md).
+Toto téma vysvětluje, jak nastavit systém a mobilní aplikaci Řízení skladu tak, aby podporovaly pracovní zásady. Tuto funkci můžete použít k rychlé registraci zásob bez vytvoření práce odložení, když obdržíte objednávky nákupu nebo převodu nebo když dokončíte výrobní procesy. Toto téma obsahuje obecné informace. Podrobné informace týkající se přijímání registračních značek viz [Příjem registrační značky prostřednictvím mobilní aplikaci Řízení skladu](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená položka nahlášena jako dokončená nebo když je zboží přijato pomocí aplikace skladu. Každé zásady práce nastavíte definováním podmínek, ve kterých platí: typy a procesy pracovní objednávky, umístění zásob a (volitelně) produkty. Například objednávka produktu *A0001* musí být přijata na místě *RECV* ve skladu *24*. Později se produkt spotřebuje v jiném procesu na místě *RECV*. V takovém případě můžete nastavit pracovní zásadu, která zabrání tomu, aby v případě, že pracovník ohlásí produkt *A0001* jako přijatý do skladu *RECV*, nebyla vytvořena práce odložení.
+Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená položka nahlášena jako dokončená nebo když je zboží přijato pomocí mobilní aplikaci Řízení skladu. Každé zásady práce nastavíte definováním podmínek, ve kterých platí: typy a procesy pracovní objednávky, umístění zásob a (volitelně) produkty. Například objednávka produktu *A0001* musí být přijata na místě *RECV* ve skladu *24*. Později se produkt spotřebuje v jiném procesu na místě *RECV*. V takovém případě můžete nastavit pracovní zásadu, která zabrání tomu, aby v případě, že pracovník ohlásí produkt *A0001* jako přijatý do skladu *RECV*, nebyla vytvořena práce odložení.
 
 > [!NOTE]
 > - Aby byly zásady práce aktivní, musíte pro ně definovat nejméně jedno místo na pevné záložce **Skladovací místa** na stránce **Zásady práce**. 
@@ -297,7 +295,7 @@ Pokud byla výrobní zakázka ohlášena jako dokončená, žádná práce nebyl
 
 Další informace o položkách nabídky mobilního zařízení naleznete v tématu [Nastavení mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md).
 
-Další informace týkající se přijímání registračních značek a zásad práce získáte v tématu [Příjem registrační značky prostřednictvím aplikace skladu](warehousing-mobile-device-app-license-plate-receiving.md).
+Další informace týkající se přijímání registračních značek a zásad práce získáte v tématu [Příjem registrační značky prostřednictvím mobilní aplikaci Řízení skladu](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Další informace o správě příchozího vytížení získáte v části [Skladová manipulace s příchozím zatížením pro nákupní objednávky](inbound-load-handling.md).
 

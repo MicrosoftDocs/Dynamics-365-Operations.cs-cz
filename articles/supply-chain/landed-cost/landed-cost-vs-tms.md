@@ -2,7 +2,6 @@
 title: Náklady za doručení a Správa přepravy
 description: 'Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: Správa přepravy (TMS) a Náklady za doručení. Toto téma shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi.'
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500711"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833850"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Náklady za doručení a Správa přepravy
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: **Správa přepravy** (TMS) a **Náklady za doručení**. Toto téma shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi. Tyto informace můžete použít k rozhodnutí, který modul nejlépe vyhovuje vašim obchodním praktikám. Možná zjistíte, že některé obchodní praktiky fungují lépe v TMS, zatímco jiné fungují nejlépe v modulu Náklady za doručení. Poté, v závislosti na vašich obchodních požadavcích, se můžete rozhodnout použít výhradně jeden modul, nebo můžete oba moduly kombinovat.
 
@@ -158,15 +156,15 @@ TMS i Náklady za doručení poskytují funkce pro správu příjmu zboží v ko
 
 ### <a name="tms-receiving-by-container-features"></a>Funkce příjmu podle kontejneru v TMS
 
-TMS podporuje příchozí avíza expedice zboží, všechny varianty příjmu prostřednictvím skladové aplikace a všechny metody příjmu prostřednictvím klienta Supply Chain Management.
+TMS podporuje příchozí avíza expedice zboží, všechny varianty příjmu prostřednictvím mobilní aplikace Řízení skladu a všechny metody příjmu prostřednictvím klienta Supply Chain Management.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Funkce příjmu podle kontejneru v Nákladech za doručení
 
 Aby podporovaly příjem podle kontejneru, vytvoří Náklady za doručení záznamy o přepravním kontejneru a přidruží nákupní objednávky ke konkrétnímu přepravnímu kontejneru pomocí jeho ID kontejneru. Poté lze na tento přepravní kontejner použít režijní náklady a rozdělit je tak, aby byly spojeny s příslušnými nákupními objednávkami.
 
-Kontejnery v Nákladech za doručení lze přijímat prostřednictvím nového typu příjmu, který se nazývá *příjem přepravovaného zboží*, prostřednictvím deníků příjezdu nebo prostřednictvím příjmu z mobilního zařízení. Pokud jsou použity deníky příjezdu, množství lze inicializovat z objednávky přepravovaného zboží nebo z řádků původní nákupní objednávky v kontejneru. Náklady za doručení poskytují dva pracovní typy pro příjem prostřednictvím skladové aplikace.
+Kontejnery v Nákladech za doručení lze přijímat prostřednictvím nového typu příjmu, který se nazývá *příjem přepravovaného zboží*, prostřednictvím deníků příjezdu nebo prostřednictvím příjmu z mobilního zařízení. Pokud jsou použity deníky příjezdu, množství lze inicializovat z objednávky přepravovaného zboží nebo z řádků původní nákupní objednávky v kontejneru. Náklady za doručení poskytují dva pracovní typy pro příjem prostřednictvím mobilní aplikace Řízení skladu.
 
-Náklady za doručení neposkytují ASN pro elektronický příjem zboží. Kromě toho nepodporují toky skladové aplikace, které zpracovávají příjem zatížení, příjem registrační značky nebo příjem smíšené registrační značky.
+Náklady za doručení neposkytují ASN pro elektronický příjem zboží. Kromě toho nepodporují toky mobilní aplikaci Řízení skladu, které zpracovávají příjem zatížení, příjem registrační značky nebo příjem smíšené registrační značky.
 
 ## <a name="rate-shopping-by-vendor"></a>Návrh přepravních sazeb podle dodavatele
 

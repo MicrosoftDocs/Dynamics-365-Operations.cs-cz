@@ -2,11 +2,9 @@
 title: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
 description: Toto téma poskytuje informace o schopnosti objednávky skladu, která se používá jako součást pracovního vytížení jednotky měřítka skladu.
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556355"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836679"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556355"
 
 *Skladové objednávky* jsou typem objednávky, která byla vytvořena k podpoře nasazení centra podpory a škálování jednotek skladu. Umožní vám přijímat zásoby, když pracujete se zatížením skladu na jednotce škálování. Aktuálně se používají pouze u objednávek.
 
-Objednávky skladu se používají jako součást zpracování správy skladu, například když se skladová aplikace používá k registraci fyzických zásob na skladě během zpracování příchozí nákupní objednávky. Skladové objednávky jsou vytvářeny jako součást procesu *Vydání do skladu*, který je k dispozici pro nákupní objednávky, které určují sklad jednotek měřítka a položky, které mají povoleno používat procesy správy skladu.
+Objednávky skladu se používají jako součást zpracování správy skladu, například když se mobilní aplikace Řízení skladu používá k registraci fyzických zásob na skladě během zpracování příchozí nákupní objednávky. Skladové objednávky jsou vytvářeny jako součást procesu *Vydání do skladu*, který je k dispozici pro nákupní objednávky, které určují sklad jednotek měřítka a položky, které mají povoleno používat procesy správy skladu.
 
 > [!IMPORTANT]
 > Objednávky skladu jsou k dispozici pouze v nasazeních, která používají [úlohy správy skladu pro cloudové a okrajové jednotky škálování](cloud-edge-workload-warehousing.md).
@@ -70,7 +68,7 @@ Chcete-li zrušit řádky skladové objednávky, postupujte následujícím způ
 
 ## <a name="monitor-a-warehouse-order"></a>Sledování skladové objednávky
 
-V zobrazení **Skladové řádky** můžete sledovat průběh příchozího příjmu kontrolou hodnot ve sloupci **Zbývající množství k přijetí**. Chcete-li zobrazit podrobnosti, které souvisejí s prací prováděnou pomocí aplikace Sklad, postupujte podle jednoho z těchto kroků.
+V zobrazení **Skladové řádky** můžete sledovat průběh příchozího příjmu kontrolou hodnot ve sloupci **Zbývající množství k přijetí**. Chcete-li zobrazit podrobnosti, které souvisejí s prací prováděnou pomocí mobilní aplikace Řízení skladu, postupujte podle jednoho z těchto kroků.
 
 - Jděte na **Řízení skladu \> Dotazy a sestavy \> Řádky skladové objednávky** a pomocí filtru najděte řádky, které hledáte.
 - Jděte na **Zásobování a zdroje \> Nákupní objednávky \> Všechny nákupní objednávky** a otevřete příslušnou nákupní objednávku. V části **Řádky nákupní objednávky** vyberte jeden nebo více řádků a poté na panelu nástrojů vyberte **Sklad \> Záznamy o přijetí do skladu**.

@@ -2,11 +2,9 @@
 title: Zboží dvojího užití
 description: Toto téma vysvětluje, jak sledovat výrobky, které jsou identifikovány jako zboží dvojího užití, ukládat čísla certifikátů pro každý relevantní produkt a zemi určení a tisknout platná čísla certifikátů na příslušné faktury, dodací listy a / nebo prodejní objednávky.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a6cc730f8d672d906072a9b97b737dbdea9faf2d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15e8696b2bfa9f1df3cecd2d98b9ad2f6c5d6000
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243194"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829467"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 

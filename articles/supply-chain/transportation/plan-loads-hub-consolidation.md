@@ -2,11 +2,9 @@
 title: Přehled plánování vytížení pomocí konsolidace centra
 description: Tento článek popisuje funkci konsolidace dodávky v centru, pokud doručujete zboží z různých skladů ke stejnému zákazníkovi, nebo při příjmu zboží od více dodavatelů ve stejném skladu.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b599c953244109b56958c0fe02deedfa252973
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f0e7ae8db62ce374b991ac5f117e3d1d33534df
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205195"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828459"
 ---
 # <a name="plan-loads-using-hub-consolidation-overview"></a>Přehled plánování vytížení pomocí konsolidace centra
 

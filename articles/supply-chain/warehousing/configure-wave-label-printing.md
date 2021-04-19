@@ -1,12 +1,10 @@
 ---
-title: Nastavte a použijte tisk popisků vlny
+title: Tisk štítků vlny
 description: Toto téma popisuje tisk popisků vlny a vysvětluje, jak je nastavit.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
@@ -15,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: a08f10c1f5c3ff5b9023f37614c4e113b3a6b30d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe04b841dbb3bb237de53f74d73f2b3f9162ae6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211759"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840430"
 ---
-# <a name="set-up-and-use-wave-label-printing"></a>Nastavte a použijte tisk popisků vlny
+# <a name="wave-label-printing"></a>Tisk štítků vlny
 
 [!include [banner](../includes/banner.md)]
 
@@ -932,5 +930,8 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 
 U většiny těchto stránek najdete příslušnou funkci výběrem **Vlnové štítky** ve skupině **Související informace** na kartě **Zásilky** v podokně akcí.
 
+## <a name="additional-resources"></a>Další prostředky
+
+- [Opakovaný tisk a anulování štítků vlny](reprint-and-void-wave-labels.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

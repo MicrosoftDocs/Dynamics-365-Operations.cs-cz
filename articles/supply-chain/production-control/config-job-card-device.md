@@ -2,11 +2,9 @@
 title: Konfigurovat úkolový lístek pro zařízení
 description: Tohle téma popisuje různé možnosti konfigurace zařízení úkolového lístku.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: c139fb7daa0f40b6b7afb0a707f714502d3146d1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2ccfbadb48e2ecd274e68201bbbc7858ab01203a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246350"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836583"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
@@ -50,7 +48,7 @@ Chcete-li tuto funkci zpřístupnit, povolte následující funkce ve [správě 
 
 Chcete-li tuto funkci zpřístupnit, povolte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Preview) Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
+- Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
 
 ## <a name="manage-your-device-configurations"></a>Správa konfigurace zařízení
 

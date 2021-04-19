@@ -2,11 +2,9 @@
 title: Automatická dodávka prodejní dodávky pro cross docking
 description: Toto téma popisuje strategii cross dockingu, která umožňuje automaticky uvolnit objednávku do skladu v případě, že výrobní zakázka, která dodává množství poptávky, je vykázána jako dokončená, aby bylo množství přesunuto přímo z místa výstupu výroby do odchozího umístění.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831427"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatická dodávka prodejní dodávky pro cross docking
 
@@ -163,7 +161,7 @@ Chcete-li cross dock množství dokončeného zboží do výstupního místa sou
 8. Na stránce **Výrobní zakázka** v podokně akcí na kartě **Výrobní zakázka** ve skupině **Zpracování** vyberte **Odhad** a pak vyberte **OK**. Objednávka je odhadnuta a množství suroviny je rezervováno pro výrobu.
 9. V podokně akcí na kartě **Výrobní zakázka** ve skupině **Proces** vyberte **Uvolnit** a pak vyberte **OK**. Pro suroviny je vytvořena práce s vyskladněním.
 10. Otevřete a zkontrolujte práci. V podokně akcí na kartě **Sklad** ve skupině **Obecné** vyberte **Podrobnosti práce**. Poznamenejte si ID práce.
-11. Přihlaste se ke skladové aplikaci a spusťte práci ve skladu 51.
+11. Přihlaste se k mobilní aplikaci Řízení skladu a spusťte práci ve skladu 51.
 12. Přejděte na **Výroba** \> **Výběr výroby**.
 13. Zadejte ID práce pro zahájení a dokončení výběru surovin. 
 

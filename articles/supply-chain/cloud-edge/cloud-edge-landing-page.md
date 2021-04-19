@@ -2,11 +2,9 @@
 title: Cloudové jednotky a hraniční jednotky škálování pro pracovní zatížení výroby a správy skladů
 description: Toto téma poskytuje informace o cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240430"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836703"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloudové jednotky a hraniční jednotky škálování pro pracovní zatížení výroby a správy skladů
 
@@ -124,10 +122,10 @@ Další informace viz [podrobnosti o úloze výrobní jednotky škálování](cl
 V případě řízení skladu poskytují cloudové a hraniční jednotky škálování následující funkce, i když hraniční jednotky nejsou připojeny ke cloudu:
 
 - Zpracování vybraných vlnových metod pro prodejní objednávky a doplnění poptávky.
-- Pracovníci skladu mohou pomocí aplikace skladu spouštět práci ve skladu a poptávku doplnění.
-- Pracovníci skladu se mohou dotazovat na vlastní sklad pomocí aplikace skladu.
-- Pracovníci skladu mohou vytvářet a spouštět pohyby ve skladu pomocí aplikace skladu.
-- Pracovníci skladu mohou registrovat nákupní objednávky a provádět vyskladnění pomocí aplikace skladu.
+- Pracovníci skladu mohou pomocí mobilní aplikace Řízení skladu spouštět práci ve skladu a poptávku doplnění.
+- Pracovníci skladu se mohou dotazovat na vlastní sklad pomocí mobilní aplikace Řízení skladu.
+- Pracovníci skladu mohou vytvářet a spouštět pohyby ve skladu pomocí mobilní aplikace Řízení skladu.
+- Pracovníci skladu mohou registrovat nákupní objednávky a provádět vyskladnění pomocí mobilní aplikace Řízení skladu.
 
 Další informace viz [podrobnosti o úloze skladové jednotky škálování](cloud-edge-workload-warehousing.md).
 

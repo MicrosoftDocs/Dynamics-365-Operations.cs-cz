@@ -1,12 +1,10 @@
 ---
 title: Plány údržby
 description: Toto téma popisuje plány údržby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500807"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839600"
 ---
 # <a name="maintenance-plans"></a>Plány údržby
 
@@ -195,8 +193,6 @@ Na následujícím obrázku je znázorněn příklad plánů údržby nastavený
 
 ## <a name="counter-based-maintenance-enhancements"></a>Vylepšení údržby založené na počítadle
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Funkce *Vylepšení údržby založené na počítadle* zavádí následující funkce:
 
 - Možnost automaticky vložit čítač, který má hodnotu *0* (nula) při vytvoření majetku. Tato možnost může být užitečná, když používáte prediktivní údržbu založenou na počítačích. Když se funkce *Vylepšení údržby založené na čítači* nepoužívá, čítače, které mají hodnotu *0* (nula), musí být vloženy ručně.
@@ -209,7 +205,7 @@ Funkce *Vylepšení údržby založené na počítadle* zavádí následující 
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Správa majetku*
-- **Název funkce:** *(Preview) vylepšení údržby založené na čítači*
+- **Název funkce:** *Vylepšení údržby založené na čítači*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Vytvoření a inicializace čítačů, když je vytvořen majetek
 

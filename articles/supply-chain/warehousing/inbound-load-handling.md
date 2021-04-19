@@ -2,11 +2,9 @@
 title: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 description: Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235333"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835623"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -66,7 +64,7 @@ Při prvním doručení příchozího břemene do skladu musí pracovníci sklad
 
 - **Nabídka mobilního zařízení konfigurovaná pro podporu příjmu nákladů**
 
-    [Aplikace skladu](install-configure-warehousing-app.md) pro mobilní zařízení podporuje následující procesy vytváření práce:
+    [Mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md) pro mobilní zařízení podporuje následující procesy vytváření práce:
 
     - Přijetí položky nákladu
     - Přijetí a odložení položky nákladu
@@ -285,7 +283,7 @@ Chcete-li s těmito scénáři pracovat pomocí zadaných ukázkových záznam�
 
 Před tím, než pracovníci příjmu skladu mohou použít mobilní zařízení k registraci příchozích zásob, které jsou spojeny s nákladem, je nutné pro tento účel vytvořit položku nabídky mobilního zařízení.
 
-V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidáte ji do existující nabídky. Pracovník skladu pak může vybrat položku nabídky v aplikaci skladu.
+V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidáte ji do existující nabídky. Pracovník skladu pak může vybrat položku nabídky v mobilní aplikaci Řízení skladu.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Mobilní zařízení \> Položky nabídky mobilního zařízení** a ujistěte se, že nabídka mobilního zařízení obsahuje položku nabídky s následujícími nastaveními:
 

@@ -2,11 +2,9 @@
 title: Rozdělení práce
 description: Toto téma obsahuje informace o funkci rozdělení práce. Tato funkce umožňuje rozdělit velké pracovní příkazy na několik menších pracovních příkazů, které pak můžete přiřadit několika pracovníkům skladu. Tímto způsobem může stejnou práci vydat současně několika pracovníky skladu.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245075"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830755"
 ---
 # <a name="work-split"></a>Rozdělení práce
 
@@ -69,7 +67,7 @@ Funkce *Rozdělení práce* přidá následující dvě tlačítka na kartu **Pr
 >
 > - Práce je aktuálně rozdělena jiným uživatelem. Pokud se pokusíte otevřít rozdělovací stránku pro práci, která je již rozdělena jiným uživatelem, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělena. Zkuste to znovu za několik minut. Pokud budete nadále dostávat tuto zprávu, obraťte se na nadřízeného.“
 
-Nový důvod blokování práce *Rozdělení práce* označuje, kdy je ID práce v procesu rozdělení. Je to zobrazeno jak na stránce **Rozdělit práci** a v aplikaci skladu, pokud se uživatel pokusí spustit práci. Pokud jsou použity důvody blokování, název pole **Blokovaná vlna** z ID práce se změní na **Blokováno**.
+Nový důvod blokování práce *Rozdělení práce* označuje, kdy je ID práce v procesu rozdělení. Je to zobrazeno jak na stránce **Rozdělit práci** a v mobilní aplikaci Řízení skladu, pokud se uživatel pokusí spustit práci. Pokud jsou použity důvody blokování, název pole **Blokovaná vlna** z ID práce se změní na **Blokováno**.
 
 ## <a name="initiate-a-work-split"></a>Zahajte rozdělení práce
 
@@ -147,9 +145,9 @@ Chcete-li dokončit rozdělení práce, důvod blokování *Rozdělit práci* mu
 
 Po odstranění důvodu blokování *Rozdělit práci* lze práci spustit na mobilním zařízení, pokud je stav **Blokováno** nastaven na *Ne* na ID práce.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Blokování uživatelů v aplikaci Sklad
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Blokování uživatelů v mobilní aplikaci Řízení skladu
 
-Pokud se pokusíte použít apliaci skladu pro spuštění práce výdeje proti ID práce, která je rozdělována, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělována." Pokud se se vám zobrazí tato zpráva, vyberte **Storno**. Poté můžete pokračovat ve zpracování dalších prací.
+Pokud se pokusíte použít mobilní aplikaci Řízení skladu pro spuštění práce výdeje proti ID práce, která je rozdělována, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělována." Pokud se se vám zobrazí tato zpráva, vyberte **Storno**. Poté můžete pokračovat ve zpracování dalších prací.
 
 ## <a name="other-blocked-operations"></a>Další blokované operace
 

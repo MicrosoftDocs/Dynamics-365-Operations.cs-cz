@@ -2,11 +2,9 @@
 title: Limity pro místo uskladnění
 description: Toto téma popisuje funkčnost limitů pro místo uskladnění.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e336b54b894669f8a49091473314e1d7d2639e5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216974"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831259"
 ---
 # <a name="location-stocking-limits"></a>Limity pro místo uskladnění
 
@@ -83,7 +81,7 @@ V tomto příkladu spustíte tok přijímání nákupní objednávky pro dva ř�
 
 Nejprve obdržíte množství *4* jednotky *PL* ve velikosti *S* a zkontrolujte umístění řádku vložení pro vytvořenou práci. Pak obdržíte množství *4* jednotky *PL* ve velikosti *L* a zkontrolujte umístění řádku vložení pro vytvořenou práci.
 
-1. Ve skladovací aplikaci se přihlaste pomocí čísla *24* ID uživatele a *1* jako heslo.
+1. V mobilní aplikaci Řízení skladu se přihlaste pomocí čísla *24* ID uživatele a *1* jako heslo.
 1. Vyberte **Příchozí** \> **Příjem nákupu**..
 1. Přijměte *4* *PL* čísla položky *D0013* ve velikosti *S*.
 1. Zkontrolujte vytvořenou práci založení. Měl by se vám zobrazit následující výsledek:

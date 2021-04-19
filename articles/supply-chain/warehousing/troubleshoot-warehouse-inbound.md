@@ -2,11 +2,9 @@
 title: Řešení potíží s příchozími skladovými operacemi
 description: Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při práci s příchozími skladovými operacemi v Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250875"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828219"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Řešení potíží s příchozími skladovými operacemi
 
@@ -65,5 +63,22 @@ Nová funkce zpracování příchozího nákladu *Příjem většího množství
 
 Další informace viz [Zaúčtujte registrované množství produktu oproti nákupním objednávkám](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Když zaregistruji příchozí objednávky, zobrazí se následující chybová zpráva: „Množství není platné“.
+
+### <a name="issue-description"></a>Popis problému
+
+Pokud je pole **Zásady seskupování registračních značek** nastaveno na *Definováno uživatelem* pro položku nabídky mobilního zařízení, která je použita k registraci příchozích objednávek, zobrazí se chybová zpráva („Množství není platné“) a registraci nelze dokončit.
+
+### <a name="issue-cause"></a>Příčina problému
+
+Když je *Definováno uživatelem* použito jako zásada pro seskupování registračních značek, systém rozdělí příchozí zásoby na samostatné registrační značky, jak udává skupina klasifikace jednotek. Pokud se ke sledování přijímané položky použije číslo dávky nebo sériové číslo, je třeba zadat množství každé dávky nebo série pro každou registrační značku, která je registrována. Pokud množství, které je zadáno pro registrační značku, překročí množství, které ještě musí být přijato pro aktuální dimenze, zobrazí se chybová zpráva.
+
+### <a name="issue-resolution"></a>Řešení problému
+
+Když zaregistrujete položku pomocí položky nabídky mobilního zařízení, kde je pole **Zásady seskupování registračních značek** nastaveno na *Definováno uživatelem*, může systém vyžadovat potvrzení nebo zadání čísel registračních značek, čísel dávek nebo sériových čísel.
+
+Na potvrzovací stránce registrační značky systém zobrazí množství, které je přiděleno pro aktuální registrační značku. Na potvrzovací stránce dávky nebo série systém zobrazí množství, které ještě musí být přijato pro aktuální registrační značku. Bude také obsahovat pole, kde můžete zadat množství, které bude registrováno pro tuto kombinaci registrační značky a čísla dávky nebo sériového čísla. V takovém případě se ujistěte, že množství, které je registrováno pro registrační značku, nepřekročí množství, které ještě musí být přijato.
+
+Případně pokud se při registraci příchozí objednávky vygeneruje příliš mnoho registračních značek, hodnotu pole **Zásady seskupování registračních značek** lze změnit na *Seskupení registračních značek*, položce lze přiřadit novou skupinu klasifikace jednotek nebo možnost **Seskupení registračních značek** pro skupinu klasifikace jednotek může být deaktivována.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

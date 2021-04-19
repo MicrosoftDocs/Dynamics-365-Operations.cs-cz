@@ -2,11 +2,9 @@
 title: Flexibilní zásada rezervace dimenze na úrovni skladu
 description: V tomto tématu jsou popsány zásady rezervace zásob, které umožňují společnostem prodávat produkty sledované podle dávky a spustit jejich logistiku, protože operace s povoleným WMS rezervují konkrétní dávky pro prodejní objednávky zákazníka, a to i v případě, že hierarchie rezervací, přidružená k produktům, neumožňuje rezervaci specifických dávek.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235405"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835671"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
 [!include [banner](../includes/banner.md)]
 
-Pokud je hierarchie rezervací zásob typu Batch-below\[location\] spojena s produkty, podniky, které prodávají produkty sledované podle dávky a spouštějí své logistiku jako operace, které jsou povoleny pro Microsoft Dynamics 365 Warehouse Management System (WMS), nemohou rezervovat konkrétní dávky těchto produktů pro prodejní objednávky odběratele.
+Pokud je hierarchie rezervací zásob typu *Batch-below\[location\]* spojena s produkty, podniky, které prodávají produkty sledované podle dávky a spouštějí své logistiku jako operace, které jsou povoleny pro Microsoft Dynamics 365 Warehouse Management System (WMS), nemohou rezervovat konkrétní dávky těchto produktů pro prodejní objednávky odběratele.
 
 Podobně nemohou být vyhrazeny konkrétní registrační značky pro produkty na prodejních objednávkách, pokud jsou tyto produkty spojeny s výchozí hierarchií rezervace.
 
-V tomto tématu jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky nebo registrační značky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací Batch-below\[location\].
+V tomto tématu jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky nebo registrační značky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací *Batch-below\[location\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Hierarchie rezervací zásob
 
 V tomto oddílu je shrnuta existující hierarchie rezervací zásob.
 
-Hierarchie rezervace zásob určuje, že pokud se jedná o dimenze uskladnění, objednávka poptávky nese povinné dimenze pracoviště, skladu a stavu zásob, zatímco logika skladu je odpovědná za přiřazení skladového místa k požadovanému množství a rezervaci skladového místa. Jinak řečeno, v interakcích mezi objednávkou poptávky a skladovými operacemi se očekává, že objednávka poptávky indikuje, odkud musí být objednávka expedována (tj. pracoviště a sklad). Sklad pak spoléhá na svou logiku k nalezení požadovaného množství v skladových prostorách.
+Hierarchie rezervace zásob určuje, že pokud jde o dimenze úložiště, objednávka poptávky nese povinné dimenze pracoviště, skladu a stavu zásob. Jinými slovy, povinné dimenze jsou všechny dimenze nad dimenzí umístění v hierarchii rezervací, zatímco logika skladu je zodpovědná za přiřazení místa požadovaným množstvím a za rezervaci místa. V interakcích mezi objednávkou poptávky a skladovými operacemi se očekává, že objednávka poptávky indikuje, odkud musí být objednávka expedována (tj. pracoviště a sklad). Sklad pak spoléhá na svou logiku k nalezení požadovaného množství v skladových prostorách.
 
 Chcete-li však zohlednit provozní model podniku, je sledovací dimenze (dávka a sériová čísla) předmětem větší flexibility. Hierarchie rezervací zásob může vyhovovat situacím, pro které platí následující podmínky:
 
-- Podnik spoléhá na své skladové operace za účelem správy výdeje množství, která mají čísla dávek nebo sériová čísla po nalezení množství v prostoru úložiště skladu. Tento model se často označuje jako *Batch-below\[location\]*. Obvykle se používá v případě, že identifikace dávky nebo sériového čísla produktu není důležitá pro zákazníky, kteří učiní poptávku u prodávající společnosti.
-- Pokud jsou dávka a sériová čísla součástí specifikace objednávky odběratele a jsou zaznamenána na objednávce poptávky, skladové operace, které vyhledají množství ve skladu, jsou omezeny konkrétními požadovanými počty a nejsou povoleny jejich změny. Tento model se označuje jako *Batch-above\[location\]*.
+- Podnik spoléhá na své skladové operace za účelem správy výdeje množství, která mají čísla dávek nebo sériová čísla *po* nalezení množství v prostoru úložiště skladu. Tento model se často označuje jako *Batch-below\[location\]* nebo *Serial-below\[location\]*. Obvykle se používá v případě, že identifikace dávky nebo sériového čísla produktu není důležitá pro zákazníky, kteří učiní poptávku u prodávající společnosti.
+- Podnik spoléhá na své skladové operace za účelem správy výdeje množství, která mají čísla dávek nebo sériová čísla *před* nalezením množství v prostoru úložiště skladu. Pokud jsou dávka a sériová čísla potřebné jako součást specifikace objednávky zákazníka, jsou zaznamenány na objednávce poptávky a skladové operace, které vyhledají množství ve skladu, je nemohou změnit. Tento model se často označuje jako *Batch-above\[location\]* nebo *Serial-above\[location\]*. Protože dimenze nad umístěním jsou specifické požadavky pro poptávky, které musí být splněny, logika skladu je nepřidělí. Tyto dimenze **musí** být vždy určeny na objednávce poptávky nebo v souvisejících rezervacích.
 
 V těchto scénářích je výzvou, že každému uvolněnému produktu lze přiřadit pouze jednu hierarchii rezervace zásob. Proto, aby WMS zpracoval sledované položky, poté, co v přiřazení hierarchie určí, kdy má být provedena rezervace dávky nebo sériového čísla (buď při objednávce poptávky nebo při zahájení práce výdeje skladu), toto časování nelze změnit ad hoc.
 
@@ -49,16 +47,16 @@ V těchto scénářích je výzvou, že každému uvolněnému produktu lze př
 
 ### <a name="business-scenario"></a>Scénáře obchodu
 
-V tomto scénáři společnost používá strategii zásob, při které je dokončené zboží sledováno pomocí čísel dávek. Tato společnost také používá pracovní vytížení WMS. Vzhledem k tomu, že toto pracovní vytížení má dobře vybavenou logiku pro plánování a provádění operací výdeje a expedice skladu pro položky s povolenou dávkou, je většina dokončených položek přidružena k hierarchii rezervací zásob "Batch-below\[location\]". Výhodou tohoto typu operačního nastavení je to, že rozhodnutí (což jsou ve skutečnosti rozhodnutí o rezervacích) o tom, které dávky vyskladnit a do jakého skladu je vložit, budou odloženy až do zahájení operace výdeje skladu. Nejsou provedeny při učinění objednávky odběratele.
+V tomto scénáři společnost používá strategii zásob, při které je dokončené zboží sledováno pomocí čísel dávek. Tato společnost také používá pracovní vytížení WMS. Vzhledem k tomu, že toto pracovní vytížení má dobře vybavenou logiku pro plánování a provádění operací výdeje a expedice skladu pro položky s povolenou dávkou, je většina dokončených položek přidružena k hierarchii rezervací zásob *Batch-below\[location\]*. Výhodou tohoto typu operačního nastavení je to, že rozhodnutí (což jsou ve skutečnosti rozhodnutí o rezervacích) o tom, které dávky vyskladnit a do jakého skladu je vložit, budou odloženy až do zahájení operace výdeje skladu. Nejsou provedeny při učinění objednávky odběratele.
 
-Ačkoliv hierarchie rezervací Batch-below\[location\] slouží k zajištění správných obchodních cílů společnosti, mnoho zavedených zákazníků společnosti vyžaduje stejnou dávku, při které byly tyto produkty zakoupeny dříve. Z toho vyplývá, že společnost hledá flexibilitu ve způsobu, jakým jsou zpracovávána pravidla rezervace dávky, takže v závislosti na poptávce odběratelů po stejné položce dojde k následujícímu chování:
+Ačkoliv hierarchie rezervací *Batch-below\[location\]* slouží k zajištění správných obchodních cílů společnosti, mnoho zavedených zákazníků společnosti vyžaduje stejnou dávku, při které byly tyto produkty zakoupeny dříve. Z toho vyplývá, že společnost hledá flexibilitu ve způsobu, jakým jsou zpracovávána pravidla rezervace dávky, takže v závislosti na poptávce odběratelů po stejné položce dojde k následujícímu chování:
 
 - Číslo dávky lze zaznamenat a rezervovat, když je objednávka provedena, zpracovatelem prodeje, a nelze ji změnit během skladových operací anebo pořídit jinými požadavky. Toto chování pomáhá zaručit, že objednané číslo dávky je expedováno odběrateli.
 - Není-li číslo dávky pro odběratele důležité, skladové operace mohou určit číslo dávky během výdejní práce po provedení registrace prodejní objednávky a rezervace.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Povolení rezervace konkrétní dávky v prodejní objednávce
 
-Chcete-li přizpůsobit požadovanou flexibilitu v chování rezervace dávek u položek, které jsou přidruženy k hierarchii rezervace zásob Batch-below\[location\], musí manažeři zásob zaškrtnout políčko **Povolit rezervaci na objednávce poptávky** pro úroveň **čísla dávky** na stránce **hierarchie rezervací zásob**.
+Chcete-li přizpůsobit požadovanou flexibilitu v chování rezervace dávek u položek, které jsou přidruženy k hierarchii rezervace zásob *Batch-below\[location\]*, musí manažeři zásob zaškrtnout políčko **Povolit rezervaci na objednávce poptávky** pro úroveň **čísla dávky** na stránce **hierarchie rezervací zásob**.
 
 ![Zflexibilnění hierarchie rezervace zásob](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ Je- li vybrána úroveň **čísla dávky** v hierarchii, budou automaticky vyb
 >
 > **Číslo dávky** a **Registrační značka** je jediná úroveň v hierarchii, která je otevřená pro zásadu pružné rezervace. Jinými slovy, pro úroveň **umístění** nebo **sériového čísla** nelze zaškrtnout políčko **Povolit rezervaci na objednávce poptávky**.
 >
-> Pokud hierarchie rezervace obsahuje dimenzi sériového čísla (která musí vždy být nižší než úroveň **Číslo dávky**) a pokud jste pro číslo dávky aktivovali rezervaci specifickou pro dávku, systém bude pokračovat ve zpracování rezervací sériových čísel a operací výdeje na základě pravidel, která platí pro zásadu rezervace Serial-below\[location\].
+> Pokud hierarchie rezervace obsahuje dimenzi sériového čísla (která musí vždy být nižší než úroveň **Číslo dávky**) a pokud jste pro číslo dávky aktivovali rezervaci specifickou pro dávku, systém bude pokračovat ve zpracování rezervací sériových čísel a operací výdeje na základě pravidel, která platí pro zásadu rezervace *Serial-below\[location\]*.
 
-V kterémkoli bodě můžete povolit rezervaci specifickou pro dávku pro existující hierarchii rezervací Batch-below\[location\] v rámci vašeho nasazení. Tato změna neovlivní žádné rezervace a otevřené práce skladu, které byly vytvořeny před provedením změny. Zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky** však nelze odstranit, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují transakce zásob typů výdeje **Rezervované objednané**, **Rezervované – fyzicky**, nebo **Objednáno**.
+V kterémkoli bodě můžete povolit rezervaci specifickou pro dávku pro existující hierarchii rezervací *Batch-below\[location\]* v rámci vašeho nasazení. Tato změna neovlivní žádné rezervace a otevřené práce skladu, které byly vytvořeny před provedením změny. Zaškrtnutí políčka **Povolit rezervaci na objednávce poptávky** však nelze odstranit, pokud pro jednu nebo více položek které jsou přidruženy k dané hierarchii rezervací, existují transakce zásob typů výdeje **Rezervované objednané**, **Rezervované – fyzicky**, nebo **Objednáno**.
 
 > [!NOTE]
 > Pokud existující hierarchie rezervací položky nepovoluje dávkovou specifikaci pro objednávku, můžete ji přiřadit k hierarchii rezervací, která povoluje specifikaci dávky, pokud je struktura úrovně hierarchie v obou hierarchiích stejná. Použijte funkci **Změnit hierarchii rezervací pro položky** pro provedení opětovného přiřazení. Tato změna může být důležitá v případě, že chcete zabránit flexibilní rezervaci dávky pro podmnožinu položek sledovaných dávkou, ale povolit ji pro zbytek portfolia produktů.
 
-Bez ohledu na to, zda jste zaškrtli políčko **Povolit rezervaci na objednávce poptávky**, nechcete-li rezervovat určité číslo dávky pro položku na řádku objednávky, bude stále platit výchozí logika skladového místa, která je platná pro hierarchii rezervace Batch-below\[location\].
+Bez ohledu na to, zda jste zaškrtli políčko **Povolit rezervaci na objednávce poptávky**, nechcete-li rezervovat určité číslo dávky pro položku na řádku objednávky, bude stále platit výchozí logika skladového místa, která je platná pro hierarchii rezervace *Batch-below\[location\]*.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Rezervace konkrétního čísla dávky pro objednávku odběratele
 
-Po nastavení hierarchie rezervací zásob Batch-below\[location\] pro položku sledovanou dávkou za účelem umožnění rezervace konkrétních čísel dávky na prodejních objednávkách mohou zpracovatelé prodejní objednávky provést objednávky odběratele pro stejnou položku jedním z následujících způsobů:
+Po nastavení hierarchie rezervací zásob *Batch-below\[location\]* pro položku sledovanou dávkou za účelem umožnění rezervace konkrétních čísel dávky na prodejních objednávkách mohou zpracovatelé prodejní objednávky provést objednávky odběratele pro stejnou položku jedním z následujících způsobů:
 
 - **Zadat podrobnosti objednávky bez zadání čísla dávky** – tento přístup by měl být použit v případě, že specifikace dávky produktu není pro odběratele důležitá. Všechny existující procesy související se zpracováním objednávky tohoto typu v systému zůstanou nezměněny. Na straně uživatelů nejsou vyžadovány žádné další úvahy.
 - **Zadat podrobnosti objednávky a rezervovat určité číslo dávky** – tento přístup by měl být použit v případě, že odběratel požaduje určitou dávku. Zákazníci obvykle požadují určitou dávku při opětovném objednání produktu, který dříve nakoupili. Tento typ rezervace specifické pro dávku se nazývá *rezervace potvrzená objednávkou*.
 
 Následující sada pravidel je platná při zpracování množství a číslo dávky je potvrzeno pro specifickou objednávku:
 
-- Chcete-li povolit rezervaci určitého čísla dávky pro položku pod zásadami rezervace Batch-below\[location\], musí systém rezervovat všechny dimenze v rámci skladového místa. Tento rozsah obvykle zahrnuje dimenzi registrační značky.
+- Chcete-li povolit rezervaci určitého čísla dávky pro položku pod zásadami rezervace *Batch-below\[location\]*, musí systém rezervovat všechny dimenze v rámci skladového místa. Tento rozsah obvykle zahrnuje dimenzi registrační značky.
 - Směrnice skladových míst se nepoužívají, pokud je pro řádek prodeje vytvořena výdejní práce, která používá rezervaci dávky potvrzenou objednávkou.
 - Během zpracování práce skladu pro dávky potvrzené objednávkou nemůže uživatel ani systém změnit číslo dávky. (Toto zpracování zahrnuje zpracování výjimek.)
 
@@ -131,19 +129,19 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
 2. Zvolte **Nové**.
 3. V záhlaví prodejní objednávky v poli **Účet odběratele** zadejte **US-003**.
 4. Přidejte řádek pro novou položku a jako množství zadejte **10**. Ujistěte se, že je v poli **Sklad** nastavena hodnota na **24**.
-5. Na záložce s náhledem **Řádky prodejní objednávky** vyberte možnost **Zásoby** a poté ve skupině **Udržovat** vyberte možnost **Rezervace dávky**. Stránka **Rezervace dávky** zobrazí seznam dávek, které jsou k dispozici pro rezervaci pro daný řádek objednávky. V tomto příkladu se zobrazí množství **20** pro číslo dávky **B11** a množství **10** pro číslo dávky **B22**. Všimněte si, ke stránce **Rezervace dávky** nelze získat přístup z řádku, pokud je položka na tomto řádku přidružena k hierarchii rezervace Batch-below\[location\] v případě, že není nastavena tak, aby umožňovala rezervaci specifickou pro dávku.
+5. Na záložce s náhledem **Řádky prodejní objednávky** vyberte možnost **Zásoby** a poté ve skupině **Udržovat** vyberte možnost **Rezervace dávky**. Stránka **Rezervace dávky** zobrazí seznam dávek, které jsou k dispozici pro rezervaci pro daný řádek objednávky. V tomto příkladu se zobrazí množství **20** pro číslo dávky **B11** a množství **10** pro číslo dávky **B22**. Všimněte si, ke stránce **Rezervace dávky** nelze získat přístup z řádku, pokud je položka na tomto řádku přidružena k hierarchii rezervace *Batch-below\[location\]* v případě, že není nastavena tak, aby umožňovala rezervaci specifickou pro dávku.
 
     > [!NOTE]
     > Chcete-li rezervovat určitou dávku pro prodejní objednávku, je nutné použít stránku **Rezervace dávky**.
     >
-    > Zadáte-li číslo dávky přímo do řádku prodejní objednávky, systém se bude chovat, jako byste zadali konkrétní hodnotu dávky pro položku, na kterou se vztahuje zásada rezervace Batch-below\[location\]. Po uložení řádku se zobrazí varovná zpráva. Pokud potvrdíte, že číslo dávky by mělo být zadáno přímo na řádku objednávky, řádek nebude zpracován běžnou logikou správy skladu.
+    > Zadáte-li číslo dávky přímo do řádku prodejní objednávky, systém se bude chovat, jako byste zadali konkrétní hodnotu dávky pro položku, na kterou se vztahuje zásada rezervace *Batch-below\[location\]*. Po uložení řádku se zobrazí varovná zpráva. Pokud potvrdíte, že číslo dávky by mělo být zadáno přímo na řádku objednávky, řádek nebude zpracován běžnou logikou správy skladu.
     >
-    > Pokud rezervujete množství na stránce **Rezervace**, žádná specifická dávka nebude rezervována a provedení skladových operací pro tento řádek bude následovat pravidla aplikovatelná pod zásadami rezervace Batch-below\[location\].
+    > Pokud rezervujete množství na stránce **Rezervace**, žádná specifická dávka nebude rezervována a provedení skladových operací pro tento řádek bude následovat pravidla aplikovatelná pod zásadami rezervace *Batch-below\[location\]*.
 
-    Tato stránka obecně funguje a je v interakci stejným způsobem, jako pracuje a je závislá na položkách, které mají přidruženou hierarchii rezervací typu Batch-above\[location\]. Platí však následující výjimky:
+    Tato stránka obecně funguje a je v interakci stejným způsobem, jako pracuje a je závislá na položkách, které mají přidruženou hierarchii rezervací typu *Batch-above\[location\]*. Platí však následující výjimky:
 
     - Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** zobrazí čísla dávek, která jsou vyhrazena pro řádek objednávky. Hodnoty dávky v mřížce se zobrazí v průběhu cyklu realizace řádku objednávky včetně fází zpracování skladu. Naopak na záložce s náhledem **Přehled** je běžná rezervace řádku objednávky (tj. rezervace, která se provádí pro dimenze nad úrovní **skladového místa**), v mřížce zobrazena až do bodu vytvoření skladové práce. Entita práce pak převezme rezervaci řádku a na stránce se již nebude zobrazovat rezervace řádku. Záložka s náhledem **Čísla dávek potvrzená pro řádek zdroje** pomáhá zajistit, že procesor prodejní objednávky může zobrazit čísla dávek, která byla potvrzena do objednávky zákazníka v kterémkoli okamžiku během svého životního cyklu, až do fakturace.
-    - Kromě rezervace konkrétní dávky může uživatel ručně vybrat konkrétní místo dávky a registrační značku namísto toho, aby je systém vybral automaticky. Tato schopnost souvisí s návrhem mechanismu rezervace dávky potvrzené objednávkou. Jak bylo zmíněno dříve, chcete-li povolit rezervaci určitého čísla dávky pro položku pod zásadami rezervace Batch-below\[location\], musí systém rezervovat všechny dimenze v rámci skladového místa. Skladová práce proto bude mít stejné dimenze uskladnění, které byly rezervovány uživateli, kteří pracovali s objednávkami, a nemusí vždy představovat umístění úložiště položek, které je pro operace výdeje vhodné nebo dokonce možné. Pokud zpracovatelé objednávek vědí o omezeních skladu, mohou chtít ručně vybrat určitá skladová místa a registrační značky při rezervaci dávky. V takovém případě musí uživatel použít funkci **Zobrazit dimenze** v záhlaví stránky a přidat umístění a registrační značku do mřížky na záložce s náhledem **Přehled**.
+    - Kromě rezervace konkrétní dávky může uživatel ručně vybrat konkrétní místo dávky a registrační značku namísto toho, aby je systém vybral automaticky. Tato schopnost souvisí s návrhem mechanismu rezervace dávky potvrzené objednávkou. Jak bylo zmíněno dříve, chcete-li povolit rezervaci určitého čísla dávky pro položku pod zásadami rezervace *Batch-below\[location\]*, musí systém rezervovat všechny dimenze v rámci skladového místa. Skladová práce proto bude mít stejné dimenze uskladnění, které byly rezervovány uživateli, kteří pracovali s objednávkami, a nemusí vždy představovat umístění úložiště položek, které je pro operace výdeje vhodné nebo dokonce možné. Pokud zpracovatelé objednávek vědí o omezeních skladu, mohou chtít ručně vybrat určitá skladová místa a registrační značky při rezervaci dávky. V takovém případě musí uživatel použít funkci **Zobrazit dimenze** v záhlaví stránky a přidat umístění a registrační značku do mřížky na záložce s náhledem **Přehled**.
 
 6. Na stránce **Rezervace dávky** vyberte řádek pro dávku **B11** a pak vyberte **Řádek rezervace**. V průběhu automatické rezervace není určena žádná logika pro přiřazování skladových míst a registračních značek. Množství lze ručně zadat do pole **Rezervace**. Všimněte si, že na záložce s náhledem **Čísla dávek potvrzená pro řádek zdroje** se zobrazí dávka **B11** jako **Potvrzená**.
 
@@ -172,7 +170,7 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
     Práce, která zpracovává operaci výdeje pro množství dávky potvrzené v řádku prodejní objednávky, má následující charakteristiky:
 
     - Chcete-li vytvořit práci, systém použije šablony práce, ale ne směrnice skladového místa. Chcete-li určit, kdy má být vytvořena nová práce, bude použito standardní nastavení definované pro šablony práce, jako je například maximální počet řádků výdeje nebo určitá měrná jednotka. Pravidla, která jsou spojena se směrnicemi skladových míst pro určení skladových místa výdeje, však nejsou zvažována, protože rezervace potvrzená objednávkou již určuje všechny dimenze zásob. Tyto dimenze zásob obsahují dimenze na úrovni skladového místa. Tato práce tedy tyto dimenze zdědí bez nutnosti konzultovat směrnice skladového místa.
-    - Číslo dávky není zobrazeno na řádku výdeje (jako je například případ pro řádek práce vytvořený pro položku, která má přidruženou hierarchii rezervace Batch-above\[location\].) Místo toho se v poli "od" číslo dávky a všechny ostatní dimenze uskladnění zobrazí na skladové transakci řádku práce, která je odkazována z přidružených skladových transakcí.
+    - Číslo dávky není zobrazeno na řádku výdeje (jako je například případ pro řádek práce vytvořený pro položku, která má přidruženou hierarchii rezervace *Batch-above\[location\]*). Místo toho se v poli "od" číslo dávky a všechny ostatní dimenze uskladnění zobrazí na skladové transakci řádku práce, která je odkazována z přidružených skladových transakcí.
 
         ![Skladová transakce pro práci, která pochází z rezervace potvrzené objednávkou](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ Rezervace registrační značky můžete v objednávce povolit kdykoli v místě
 
 I když je zaškrtnuto políčko **Povolit rezervaci na objednávku poptávky** pro úroveň **Registrační značka**, je to stále možné *nerezervovat* konkrétní registrační značku na objednávce. V tomto případě se použije výchozí logika operací skladu, která je platná pro hierarchii rezervace.
 
-Chcete-li rezervovat konkrétní registrační značku, musíte použít proces [Otevřený datový protokol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). V aplikaci můžete provést tuto rezervaci přímo z prodejní objednávky pomocí možnosti **Rezervace vázaná na objednávku dle registrační značky** v příkazu **Otevřít v Excelu**. V datech entity, která se otevírají v doplňku Excel, musíte zadat následující data související s rezervací a poté vybrat **Publikovat**, chcete-li poslat data zpět do Supply Chain Management:
+Chcete-li rezervovat konkrétní registrační značku, musíte použít proces [Otevřený datový protokol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). V aplikaci můžete provést tuto rezervaci přímo z prodejní objednávky pomocí možnosti **Rezervace vázaná na objednávku dle registrační značky** příkazu **Otevřít v aplikaci Excel**. V datech entity, která se otevírají v doplňku Excel, musíte zadat následující data související s rezervací a poté vybrat **Publikovat**, chcete-li poslat data zpět do Supply Chain Management:
 
 - Reference (Pouze hodnota *Prodejní objednávka* je podporována.)
 - Číslo objednávky (Hodnota může být odvozena ze šarže.)
@@ -409,7 +407,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v aplikaci skladu při zahájení práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v mobilní aplikaci Řízení skladu při zahájení práce výdeje.</li>
 <li>Vyberte <strong>Navrhnout</strong>.</li>
 <li>Potvrďte nové skladové místo navrhované na základě dostupnosti množství dávky.</li>
 </ol>
@@ -426,7 +424,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v aplikaci skladu při zahájení práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v mobilní aplikaci Řízení skladu při zahájení práce výdeje.</li>
 <li>Zadat ručně místo.</li>
 </ol>
 </td>
@@ -454,7 +452,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Nelze použít</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Úplný</strong> v aplikaci skladu při zpracování práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Úplný</strong> v mobilní aplikaci Řízení skladu při zpracování práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte částečné množství požadovaného výdeje, které označuje plnou kapacitu.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Ano</td>
 <td>
 <ol>
-<li>Zahajte přesun v aplikaci skladu.</li>
+<li>Zahajte přesun v mobilní aplikaci Řízení skladu.</li>
 <li>Zadejte místa z a do.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte <strong>0</strong> (nula).</li>
 <li>Do pole <strong>Důvod</strong> zadejte <strong>Žádné opakované přidělení</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Vyskladněné množství</strong> zadejte <strong>0</strong> (nula).</li>
 <li>Do pole <strong>Důvod</strong> zadejte <strong>Žádné opakované přidělení</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Ano</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 <li>V seznamu vyberte umístění/registrační značku.</li>
@@ -724,7 +722,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 </ol>
@@ -737,7 +735,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Žádný</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s ručním opakovaným přidělením</strong>.</li>
 <li>V seznamu vyberte umístění/registrační značku.</li>
@@ -761,7 +759,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Nelze použít</td>
 <td>
 <ol>
-<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v aplikaci skladu při spuštění práce výdeje.</li>
+<li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
 <li>Do pole <strong>Množství krátkodobého výdeje</strong> zadejte <strong>0</strong> (nula).</li>
 <li>V poli <strong>Důvod</strong> vyberte <strong>Krátkodobý výdej s automaticky opakovaným přidělením</strong>.</li>
 </ol>
@@ -853,6 +851,14 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
     - Převodní příkazy a výdej surovin
 
 - Pravidlo konsolidace kontejneru pro balení podle jednotky předpisu má omezení. V případě rezervací potvrzených objednávkou doporučujeme nepoužívat šablony sestavení kontejnerů, kde je povoleno pole **Zabalit podle jednotky přepisu**. V aktuálním návrhu nejsou při vytvoření skladové práce použity směrnice skladového místa. Z tohoto důvodu je při kroku vlny vytváření kontejnerů použita pouze nejnižší jednotka ve skupině klasifikace jednotek (skladová jednotka).
+
+## <a name="see-also"></a>Viz také
+
+- [Čísla dávek v Řízení skladu](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Rezervace stejné dávky pro prodejní objednávku](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Vyskladnění nejstarší dávky na mobilním zařízení](pick-oldest-batch.md)
+- [Potvrzení dávky a poznávací značky](batch-and-license-plate-confirmation.md)
+- [Řešení potíží s rezervacemi v řízení skladu](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

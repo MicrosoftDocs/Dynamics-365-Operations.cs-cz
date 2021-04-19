@@ -2,11 +2,9 @@
 title: Poradce při potížích s výdejem a balením
 description: Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při výdeji a balení v Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 01e33b63e09a035f5243bd57faf53b522737c987
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a54fa9dc21fb1691d74905a1215f4dfea31f136
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223235"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828123"
 ---
 # <a name="troubleshoot-picking-and-packing"></a>Poradce při potížích s výdejem a balením
 
@@ -44,7 +42,7 @@ Pole **Výchozí skladové místo příjmu** je prázdné pro tranzitní sklad z
 
 ### <a name="issue-description"></a>Popis problému
 
-Tato chybová zpráva se zobrazí v aplikaci skladu při skenování ID registrační značky.
+Tato chybová zpráva se zobrazí v mobilní aplikaci Řízení skladu při skenování ID registrační značky.
 
 ### <a name="issue-resolution"></a>Řešení problému
 
@@ -68,7 +66,7 @@ Tato chybová zpráva se zobrazí, když se pokusíte provést a *rozdělený v�
 
 ### <a name="issue-resolution"></a>Řešení problému
 
-Pracovník skladu musí používat proces *Krátkodobé vyskladnění* v aplikaci skladu. Pokud se snažíte o výdej více dávek ze stejného místa, můžete také použít možnost **Úplný** v aplikaci skladu.
+Pracovník skladu musí používat proces *Krátkodobé vyskladnění* v mobilní aplikaci Řízení skladu. Pokud se snažíte o výdej více dávek ze stejného místa, můžete také použít možnost **Úplný** v aplikaci.
 
 ## <a name="i-cant-move-inventory-to-a-location-that-is-license-platecontrolled"></a>Nemohu přesunout inventář na místo, kde se kontrolují registrační značky.
 
