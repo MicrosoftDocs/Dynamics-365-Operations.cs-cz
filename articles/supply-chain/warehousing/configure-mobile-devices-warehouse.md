@@ -2,11 +2,9 @@
 title: Nastavení mobilních zařízení pro práci ve skladu
 description: Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232976"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808791"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -64,7 +62,7 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé**, mů�
 | Vymazat mezipaměť číselných řad | Odstraňte čísla z číselné řady z mezipaměti pro pořadová čísla. Tuto aktivitu většinou provádí správce systému a řeší tak potíže při ukládání do mezipaměti během používání mobilních zařízení. |
 | Změnit dispozici dávky | Pracovníkovi povolte zadat dispoziční kód dávky pro položky a dávky. Tato volba aktualizuje dispoziční kód, který je určen pro dávku. |
 | Zobrazit otevřený seznam úkolů | Zobrazení seznamu dostupných prací pro určitého uživatele. Uživatel může vybrat práci, která se má provést, a bude do ní směrován. Tento seznam je určen pro tablety velikost obrazovky 7 palců nebo vyšší. Když vyberete tuto možnost, položky nabídky **Upravit dotaz** a **Seznam polí** budou povoleny. Stránka **Upravit dotaz** vám umožňuje nastavit kritéria pro práci, která se zobrazí v seznamu. Na stránce **Seznam polí** můžete vybrat pole, které se zobrazí v pracovním seznamu. Můžete například snížit počet polí, které jsou zobrazeny a urychlit tak uživateli výběr nejvhodnější pracovní položky. Na pevné záložce **Obecné** v poli **Záznamy na stránku** můžete také vybrat, kolik pracovních záznamů na stránce se zobrazí. Pokud je vybrána možnost **Povolit uživatelům filtrovat práci podle typu transakce**, bude pracovní seznam zahrnovat ovládací prvek **Filtr práce**, který uživatel může použít pro filtrování podle typu transakce. Uživateli se zobrazí jen práce v pracovním seznamu, u které mají oprávnění k přístupu. Je nutné zkontrolovat, zda mají oprávnění pro jednu nebo více uživatelem směrovaných položek v nabídce, které podporují konkrétní typy pracovních tříd, ke kterým by měli mít přístup. Oprávnění se také ověřují při pokusu uživatele o provedení práce ze seznamu.|
-| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z aplikace skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
+| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z mobilní aplikace Řízení skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurace položek nastavení k vytvoření práce pro jiného pracovníka nebo proces

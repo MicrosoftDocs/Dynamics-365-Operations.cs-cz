@@ -2,11 +2,9 @@
 title: Moduly a stránky správy obchodního vztahu
 description: Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206624"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796287"
 ---
 # <a name="account-management-pages-and-modules"></a>Moduly a stránky správy obchodního vztahu
 
@@ -51,9 +49,9 @@ Stránka historie objednávek využívá modul historie objednávek k zobrazení
 
 Stránka podrobností objednávky poskytuje podrobné informace pro každou objednávku a je přístupná ze stránky historie objednávek. Používá modul podrobností objednávek, který vyžaduje ID prodeje nebo ID transakce k načtení podrobností objednávky.
 
-### <a name="user-profile-page"></a>Stránka profilu uživatele
+### <a name="my-profile-page"></a>Stránka profilu
 
-Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá podrobnosti profilu uživatele a moduly úprav profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit. Stránka profilu uživatele také zobrazuje uživatelské předvolby, které umožňují uživateli přihlásit nebo odhlásit odběr některých funkcí, jako je přizpůsobení seznamů doporučení. 
+Stránka Můj profil zobrazuje podrobnosti profilu účtu uživatele pomocí modulu profilu účtu. Tato stránka zobrazuje e-mailovou adresu přidruženou k účtu uživatele a preference nastavené pro tento účet. Pokud nastavujete vlastní atributy zákazníka, zobrazí tyto atributy také část „Další informace“. Uživatelé mohou upravovat své jméno, preference nebo další informace (jsou-li k dispozici).
 
 ### <a name="user-address-page"></a>Stránka adresy uživatele
 

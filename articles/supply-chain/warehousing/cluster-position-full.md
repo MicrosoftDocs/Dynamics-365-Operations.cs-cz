@@ -2,11 +2,9 @@
 title: Plná pozice seskupení
 description: Tohle téma obsahuje informace o funkci Plná pozice seskupení. Tato funkce nabízí alternativu k přísnějšímu vynucování pravidel pracovní přestávky při použití výdejů v seskupení, protože umožňuje větší toleranci chyb ve volumetrických omezeních kontejnerů nebo břemen.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233000"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808839"
 ---
 # <a name="cluster-position-full"></a>Plná pozice seskupení
 
@@ -213,7 +211,7 @@ Měla by být vytvořena dvě ID práce, z nichž každé má dva řádky výdej
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Spuštění toku mobilního zařízení – nastavení potvrzení práce pro produkt
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*.
 1. Jděte na **Odchozí \> Vytvoření výdeje v seskupení**.
 
     Zobrazí se stránka **ÚKOL: Přiřadit práci seskupení**.

@@ -2,11 +2,9 @@
 title: Práce se soubory přepisu CSS
 description: Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef96070fe77b46622667301c7c7c402909ee7dfc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207792"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799486"
 ---
 # <a name="work-with-css-override-files"></a>Práce s CSS soubory přepisující výchozí styl
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Trvalé styly webu by obvykle měly být zpracovávány prostřednictvím motivu webu. Motivy poskytují základní nastavení šablon CSS a stylu pro moduly na libovolné stránce webu. Motivy jsou vytvářeny pomocí sady SDK Dynamics 365 Commerce (Software Development Kit) online a jsou nasazeny na vaše weby prostřednictvím aplikace Microsoft Dynamics Lifecycle Services (LCS). Možnosti ladění motivu a konfigurace rozhraní modulu v sadě SDK usnadňují vývojářům webu vytváření upravitelných a kohezivních balíčků návrhu webu. Pokud jsou tyto balíčky návrhu nasazeny na web, mohou se autoři webu zaměřit na vytváření, úpravy a publikování obsahu namísto vývoje webu.
 

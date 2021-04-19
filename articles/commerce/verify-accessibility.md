@@ -2,11 +2,9 @@
 title: Ověření přístupnosti obsahu stránky
 description: Toto téma popisuje, jak ověřit přístupnost obsahu stránky v Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 186044fc7a360f227cecffb39bad0e225245dd4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 885696c13b0e5353e6dbd9dc21cf075d5e301786
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210964"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791624"
 ---
 # <a name="verify-page-content-accessibility"></a>Ověření přístupnosti obsahu stránky
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak ověřit přístupnost obsahu stránky v Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Po dokončení změn stránky byste měli zajistit, aby byl obsah přístupný všem uživatelům na webu. V nástrojích pro vytváření obchodních společností můžete snadno ověřit přístupnost obsahu stránky pomocí integrované služby [Microsoft Accessibility Insights](https://accessibilityinsights.io/). Tato služba ověřuje obsah stránky podle nejnovějších pokynů pro usnadnění přístupu [konsorcia W3C (World Wide Web Consortium)](https://www.w3.org/standards/webdesign/accessibility).
 

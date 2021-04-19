@@ -2,11 +2,9 @@
 title: Vytvoření URL adresy stránky
 description: V tomto tématu jsou popsány základní koncepce a postupy pro vytvoření adresy URL stránky na webu.
 author: bicyclingfool
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e221bd975fd984379724b751f6c026acfda7b07
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98743d8948669f32d3c74e1915c7ed53db81141c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207888"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795684"
 ---
 # <a name="create-a-page-url"></a>Vytvoření URL adresy stránky
-
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu jsou popsány základní koncepce a postupy pro vytvoření adresy URL stránky na webu.
-
-## <a name="overview"></a>Přehled
 
 Úplná nebo absolutní adresa URL, která odkazuje na stránku na webu, se skládá z různých částí. Například adresa URL `https://www.contoso.com/en-us/contactus` má následující části:
 

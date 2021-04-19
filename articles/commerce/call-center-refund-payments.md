@@ -2,11 +2,9 @@
 title: Zpracování refundace platby v kontaktních střediscích
 description: Toto téma vysvětluje, jak se refundace plateb generují prostřednictvím call center, když se vytvářejí vrácené položky nebo když se ruší objednávky nebo řádky objednávek.
 author: hhainesms
-manager: annbe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fd49835a24dc6ec429ac4b01f363f1be937628ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214715"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799582"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Zpracování refundace platby v kontaktních střediscích
 

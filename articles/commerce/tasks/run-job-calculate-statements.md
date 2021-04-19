@@ -2,11 +2,9 @@
 title: Konfigurace a spuštění úlohy pro výpočet výkazů
 description: Tento postup vás provede konfigurací a spuštěním opakovaných dávkových úloh pro tvorbu a výpočet výkazů pro vybraný obchod nebo skupinu obchodů.
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8366bfff16bac8ef8f7b15cb97417d474b52f59c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 11acedb719286cc6c9c79e22e8d0ceca2368baee
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232754"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802592"
 ---
 # <a name="configure-and-run-job-to-calculate-statements"></a>Konfigurace a spuštění úlohy pro výpočet výkazů
 

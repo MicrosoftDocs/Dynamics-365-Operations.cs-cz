@@ -2,11 +2,9 @@
 title: Konfigurace několika klientů typu B2C v prostředí obchodu
 description: Toto téma popisuje, kdy a jak nastavit vícen klientů typu business-to-consumer (B2C) Microsoft Azure Active Directory (Azure AD) na kanál pro ověření uživatele ve vyhrazeném prostředí Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477749"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796092"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurace několika klientů typu B2C v prostředí obchodu
 
@@ -55,10 +53,6 @@ Následující ilustrace znázorňuje několik B2C klientů v prostředí obchod
 
 Pokud se rozhodnete, že váš podnik vyžaduje jedinečné B2C klienty na kanál ve stejném Commerce prostředí, požádejte o tuto funkci postupy uvedené v následujících oddílech.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Požadavek, aby byl ve vašem prostředí povolen B2C pro kanál
-
-V případě, že chcete, aby byl k dispozici samostatný B2C klient na kanál ve stejném Commerce Environment, musíte odeslat žádost Dynamics 365 Commerce. Další informace naleznete v tématech [Získání podpory pro Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) nebo diskutujte o vašem problému s kontaktem pro Commerce.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>Konfigurovat klienty B2C ve vašem prostředí
 
 Chcete-li konfigurovat klienta typu B2C ve vašem prostředí, proveďte příslušné postupy v této části.
@@ -79,11 +73,11 @@ Chcete-li do prostředí přidat klienta B2C Azure AD, postupujte podle následu
     - **GUID klienta**: zadejte ID klienta B2C Azure AD tak, jak se objevuje na portálu Azure (ne v ID aplikace pro klienta B2C).
     - **ID zásad úprav profilu**: Zadejte ID zásad (název zásady na portálu Azure).
 
-1. Až tyto informace dokončíte, výběrem **OK** uložte provedené změny.
+1. Až tyto informace dokončíte, výběrem **OK** uložte provedené změny. Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **Spravovat aplikace B2C**.
 
 > [!NOTE]
 > Pole **Rozsah**, **ID neinteraktivních zásad**, **ID neinteraktivních klientů**, **Vlastní doména přihlašování** a **ID zásad registrace** ponechte prázdná, pokud vám tým Dynamics 365 Commerce neřekne, abyste je nastavili.
-Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **Spravovat aplikace B2C**.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Správa nebo odstranění klienta B2C Azure AD
 
@@ -97,6 +91,7 @@ Váš nový klient B2C Azure AD by se nyní měl objevit v seznamu v části **S
 > Pokud je klient B2C nakonfigurován pro aktivní nebo publikovaný web, mohou se uživatelé přihlásili pomocí účtů, které jsou k dispozici v klientovi. Odstraníte-li nakonfigurovaného klienta v nabídce **Nastavení klienta \> Klient B2C**, odeberte přidružení tohoto klienta B2C z webů, které jsou přidruženy ke všem kanálům klienta. V takovém případě se může stát, že uživatelé již nebudou schopni přihlásit se ke svým účtům. Proto při odstraňování nakonfigurovaného klienta buďte velmi opatrní.
 >
 > Po odstranění nakonfigurovaného klienta budou i nadále udržovat klienta B2C a záznamy, ale konfigurace systému Commerce pro daného klienta bude změněna nebo odebrána. Uživatelé, kteří se pokusí zaregistrovat nebo se přihlásit k webu, vytvoří nový záznam účtu ve výchozím nebo nově přidruženém klientovi B2C, který je nakonfigurován pro kanál webu.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Nakonfigurujte kanál pomocí klienta B2C
 
 1. Přihlaste se ke konfigurátoru webů Commerce pro vaše prostředí jako správce systému. Chcete-li konfigurovat klienta B2C Azure AD, musíte být správcem systému pro prostředí Commerce.

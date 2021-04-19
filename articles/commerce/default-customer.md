@@ -2,11 +2,9 @@
 title: Vytvoření výchozího odběratele
 description: V tomto tématu je popsán postup při vytvoření výchozího odběratele, který se použije při vytváření kanálu v aplikaci Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477893"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799172"
 ---
 # <a name="create-a-default-customer"></a>Vytvoření výchozího odběratele
 
@@ -67,14 +65,14 @@ Následující obrázek znázorňuje příklad adreáře.
 
 ![Adresář](media/address-book.png)
 
-## <a name="create-a-default-customer"></a>Vytvoření výchozího odběratele
+## <a name="create-a-default-customer&quot;></a>Vytvoření výchozího odběratele
 
 Pokud chcete vytvořit výchozího odběratele, postupujte takto.
 
 1. V navigačním podokně přejděte na **Moduly \> Retail and commerce \> Zákazníci \> Všichni odběratelé**.
 1. V podokně akcí zvolte **Nový**.
-1. V rozevíracím seznamu **Typ** vyberte "Osoba".
-1. V rozevíracím seznamu **účet odběratele** vyberte nebo zadejte číslo účtu (například "100001").
+1. V rozevíracím seznamu **Typ** vyberte &quot;Osoba&quot;.
+1. V rozevíracím seznamu **účet odběratele** vyberte nebo zadejte číslo účtu (například &quot;100001").
 1. V rozevíracím seznamu **Křestní jméno** vyberte nebo zadejte název (například "výchozí").
 1. V rozevíracím seznamu **Prostřední jméno** vyberte nebo zadejte název (například "Retail").
 1. V rozevíracím seznamu **Příjmení** vyberte nebo zadejte název (například "Zákazník").

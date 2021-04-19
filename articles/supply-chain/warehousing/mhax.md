@@ -2,7 +2,6 @@
 title: Rozhraní vybavení manipulace s materiálem (MHAX)
 description: Toto téma popisuje, jak nastavit rozhraní zařízení pro manipulaci s materiálem (MHAX), abyste se mohli připojit k externím systémům pro manipulaci s materiálem (MH).
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571835"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810503"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Rozhraní vybavení manipulace s materiálem (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Můžete použít *rozhraní zařízení pro práci s materiálem* (MHAX) pro připojení externích systémů pro práci s fyzickým materiálem (MH) do skladu, který je spravován pomocí pokročilé správy skladu (WMS) v Microsoft Dynamics 365 Supply Chain Management. Rozhraní mezi systémy WMS a MH se skládá ze dvou front: jedné pro odchozí události (WMS na MH) a jedné pro příchozí události (MH na WMS). Systém WMS generuje odchozí události na základě řádků práce, které jsou vytvořeny během různých procesů vytváření a provádění prací. Systém MH poté pravidelně dotazuje systém WMS na nové události a zpracovává odpovědi. Poté, co systém MH dokončí zpracování událostí v souladu s pracovními pokyny, odešle příchozí události, jako je dokončení řádků práce a krátké vyzvednutí.
 

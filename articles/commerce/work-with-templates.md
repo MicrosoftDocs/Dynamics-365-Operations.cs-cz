@@ -2,11 +2,9 @@
 title: Práce se šablonami
 description: Toto téma popisuje, jak pracovat s šablonami v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dfbb85c13b24bf09fd23022d11ec017899835671
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 96a8cbfd208095833514f374c060bb2d43781913
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252503"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793842"
 ---
 # <a name="work-with-templates"></a>Práce se šablonami
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak pracovat s šablonami v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Jak bylo uvedeno v [Přehledu šablon a rozvržení](templates-layouts-overview.md), šablony definují sadu možností, které jsou k dispozici pro navazující autory. Šablony jsou užitečné pro tým pro vytváření webů v podniku z několika důvodů a dobře strukturované šablony vám mohou pomoci se všemi následujícími cíli:
 

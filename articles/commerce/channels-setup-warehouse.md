@@ -2,11 +2,9 @@
 title: Nastavit sklad
 description: Toto téma popisuje, jak nastavit sklad, který má být použit s novým kanálem v Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477627"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800488"
 ---
 # <a name="warehouse-set-up"></a>Nastavit sklad
 
@@ -49,7 +47,7 @@ Následující obrázek znázorňuje příklad místa skladu.
 
 ![Příklad místa skladu](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a>Nastavit sklad
+## <a name="set-up-a-warehouse&quot;></a>Nastavit sklad
 
 Chcete-li nastavit sklad, postupujte následujícím způsobem.
 
@@ -63,14 +61,14 @@ Chcete-li nastavit sklad, postupujte následujícím způsobem.
     - Chcete-li nastavit **Tranzitní sklad**, je nejprve nutné provést následující kroky a vytvořit další sklad, v němž je **Typ** nastaven na **Tranzitní**.
 1. V podokně akcí vyberte **Uložit**.
 
-## <a name="set-up-inventory-aisles"></a>Nastavit skladové uličky
+## <a name=&quot;set-up-inventory-aisles&quot;></a>Nastavit skladové uličky
 
 Chcete-li nastavit skladové uličky, postupujte následujícím způsobem.
 
 1. V navigačním podokně přejděte na **Moduly \> Retail and commerce \> Nastavení kanálu \> Nastavení umístění \> Skladové uličky**.
 1. V podokně akcí zvolte **Nový**.
 1. V rozevíracím seznamu **Sklad** vyberte místo skladu, které bylo vytvořeno dříve.
-1. Do pole **Ulička** zadejte název (například "def").
+1. Do pole **Ulička** zadejte název (například &quot;def").
 1. Do pole **Název** zadejte název (například "Výchozí ulička").
 1. V podokně akcí vyberte **Uložit**.
 

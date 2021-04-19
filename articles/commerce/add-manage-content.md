@@ -2,11 +2,9 @@
 title: Způsoby přidání obsahu
 description: V tomto tématu je uveden přehled a výběr odkazů pro umístění a způsob zahájení správy obsahu pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208056"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797568"
 ---
 # <a name="ways-to-add-content"></a>Způsoby přidání obsahu
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je uveden přehled a odkazy na dokumentaci o tom, jak spravovat obsah pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
-
-## <a name="overview"></a>Přehled
 
 Existuje mnoho způsobů, jak změnit vzhled, atmosféru a obsah vašeho webu. V závislosti na požadované úrovni vlastního nastavení mohou mnohé z těchto změn implementovat nevývojáři v rámci programu Site Builder, který je součástí sady nástrojů pro vytváření webových stránek aplikace Dynamics 365 Commerce. Nástroj Site Builder umožňuje vytvářet šablony, vybírat motivy a vybírat a konfigurovat moduly bez nutnosti psaní jakéhokoliv kódu. Oproti tomu jsou potřebné vývojové dovednosti pro vytvoření nového motivu nebo modulu, protože musí být použit pracovní postup pro nasazení sady SDK (Software Development Kit) pro elektronické obchodování a řešení Microsoft Dynamics Lifecycle Services (LCS).
 
