@@ -2,7 +2,6 @@
 title: Transakce nad/pod
 description: Toto téma poskytuje informace, které vám pomohou nastavit podrobnosti zásad pro transakce nadměrného nebo nedostatečného množství, takže systém může určit, jak spravovat nadměrné zpracování a nedostatečné zpracování zboží v době přijetí.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500975"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833730"
 ---
 # <a name="overunder-transactions"></a>Transakce nad/pod
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Když jsou zpracovány objednávky na cestě, systém očekává, že množství zboží, které je přijato do konečného cílového skladu pro spotřebu, odpovídá množství uvedenému na řádcích nákupní objednávky, které jsou spojeny s cestou. Protože však přesné množství na řádcích nákupní objednávky není vždy přijato do skladu, modul **Náklady za doručení** definuje sadu pravidel, která se používají pro příjem většího a menšího množství nákladu. Tato pravidla jsou obzvláště důležitá, protože původní objednávka byla fakturována a již ji nelze upravovat. Nastavením podrobností zásad pro transakce s příjmem nadměrného nebo nedostatečného množství může systém určit, jak spravovat nadměrné zpracování a nedostatečné zpracování zboží v době přijetí. Můžete také ručně spravovat nadměrné nebo nedostatečné množství pomocí stránky **Transakce nadměrného nebo nedostatečného množství**.
 

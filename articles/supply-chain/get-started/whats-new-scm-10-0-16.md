@@ -2,11 +2,9 @@
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236068"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829973"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 
@@ -35,11 +33,13 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
 - [Přizpůsobitelné realizační rozhraní dílny](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Další informace viz [Nastavení zařízení pro spuštění provádění výrobního provozu](../production-control/production-floor-execution-setup.md).
 
 - [Doplněk viditelnosti zásob pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Další informace viz [Doplněk viditelnosti zásob](../inventory/inventory-visibility.md)
+
+- Sjednocená číselná řady pro ID úloh<br> - Další informace viz [Sjednocená číselná řada pro ID úloh](../production-control/unified-job-ids.md).
 
 - [Ověřte registrační značky na řádcích zdrojových dokumentů](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Další informace viz [Přehled konfigurace skladu](../warehousing/warehouse-configuration.md).
 
@@ -74,8 +74,8 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 - [Odstraňování problémů s rezervacemi v řízení skladu](../warehousing/troubleshoot-warehouse-reservations.md)
 - [Řešení problémů s prodejními objednávkami](../sales-marketing/troubleshooting-sales.md)
 - [Řešení problémů s prodejními nabídkami](../sales-marketing/troubleshooting-salesquotation.md)
-- [Odstraňování problémů s upgradem a migrací na pokročilou správu skladu](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Řešení problémů s připojením aplikace skladu](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Řešení potíží s upgradem a migrací na pokročilou správu skladů](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
+- [Odstraňování problémů s připojením mobilní aplikace Řízení skladu](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Ostraňování potíží s konfigurací skladu](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Odstraňování problémů s doplňováním skladu](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Odstraňování problémů s nastavením skladu](../warehousing/troubleshoot-warehouse-setup.md)

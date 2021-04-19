@@ -2,11 +2,9 @@
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.12. (srpen 2020)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258964"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832195"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.12. (srpen 2020)
 
@@ -47,9 +45,9 @@ Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další 
 
 - [Přehledy jádra inteligence IoT](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Další informace naleznete v tématu [Domovská stránka inteligence IoT](../iot/iot-intelligence-home-page.md).
 
-- [Vylepšení přijetí registrační značky pro aplikaci skladu (pokračování)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Další informace naleznete v části [Příjem registrační značky prostřednictvím aplikace skladu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Vylepšení přijetí registrační značky pro aplikaci skladu (pokračování)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Další informace naleznete v části [Příjem registrační značky prostřednictvím mobilní aplikace Řízení skladu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Hromadné nasazení Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Další informace naleznete v části [Instalace a konfigurace přehledu aplikace skladu](../warehousing/install-configure-warehousing-app.md).
+- [Hromadné nasazení Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Další informace naleznete v části [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Další informace naleznete v části [Úloha vyčištění položek zásob na skladě v řízení skladu](../warehousing/onhand-cleanup.md).
 

@@ -2,13 +2,11 @@
 title: Přehled výjimek materiálu
 description: Toto téma popisuje, jak získat lepší přehled výjimek surovin pro výrobní zakázky a dávkové objednávky.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246158"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831979"
 ---
 # <a name="visibility-into-material-exceptions"></a>Přehled výjimek materiálu
 
@@ -59,7 +57,11 @@ Vyberete-li tuto dlaždici, otevře se stránka **Uvolnit do skladu**. Tato str�
 
 Pokud byl uvolněn řádek kusovníku nebo receptury, je přidán do nové vlny výroby nebo do stávající otevřené vlny, v závislosti na konfiguraci šablony vlny výroby. Při konfiguraci šablony vlny je lze také nastavit vlnu tak, aby se automaticky zpracovala při uvolnění řádku kusovníku nebo receptury. Při zpracování vlny se vytvoří skladová práce vyskladnění surovin. Pokud je šablona vlny nakonfigurována tak, aby nebyly vlny zpracovány v době uvolnění, vlna zůstává v nezpracovaném stavu. Dlaždice **Nezpracované vlny vyžadující pozornost** zobrazuje počet řádků kusovníku a receptury, které byly uvolněny do skladu na nezpracovaných vlnách a které mají datum surovin dřívější nebo stejné jako datum pracovního prostoru. Řádky musí být spotřebovány provozním prostředkem, který se použije na filtrování pracovního prostoru.
 
-Když vyberete tuto dlaždici, otevře se stránka **Všechny vlny výroby**. Tato stránka je filtrována podle počtu otevřených vln, které obsahují řádky z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice. Ze stránky **Všechny vlny výroby** můžete vlnu zpracovat ručně.
+Když vyberete tuto dlaždici, otevře se stránka **Všechny vlny výroby**. Tato stránka je filtrována podle počtu otevřených vln, které obsahují řádky z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice.
+
+### <a name="manually-maintain-production-waves"></a>Ruční udržování vln výroby
+
+Na stránce **Všechny vlny výroby** můžete použít tlačítka na kartě **Vlna** podokna akcí pro ruční **Zpracování** a **Uvolnění** vlny. Můžete také použít možnost **Spravovat výroby** k prohlížení a údržbě dat **Fond kusovníku výroby**, která se používají ke zpracování procesu vln.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Otevřená skladová práce vyžadující pozornost
 

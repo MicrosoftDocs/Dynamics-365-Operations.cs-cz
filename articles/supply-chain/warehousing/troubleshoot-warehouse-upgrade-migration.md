@@ -2,11 +2,9 @@
 title: Odstraňování problémů s upgradem a migrací na pokročilou správu skladu
 description: Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setkat při práci s upgradem a migrací na pokročilou správu skladu.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208080"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826388"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Odstraňování problémů s upgradem a migrací na pokročilou správu skladu
 
@@ -34,11 +32,11 @@ Toto téma popisuje, jak vyřešit běžné problémy, s nimiž se můžete setk
 
 ### <a name="issue-description"></a>Popis problému
 
-Tato chybová zpráva se zobrazí v aplikaci skladu, protože certifikáty podepsané svým držitelem nejsou důvěryhodné v Android 8+ v místních prostředích.
+Tato chybová zpráva se zobrazí v mobilní aplikaci Řízení skladu, protože certifikáty podepsané svým držitelem nejsou důvěryhodné v Android 8+ v místních prostředích.
 
 ### <a name="issue-resolution"></a>Řešení problému
 
-Použijte externí (veřejný) certifikační autoritu (CA). Oprava tohoto problému je k dispozici ve verzi 1.9.0.0 aplikace skladu. Další informace o tomto problému a jeho řešení najdete v tématu [Odstraňování problémů s připojením aplikace skladu](troubleshoot-warehouse-app-connection.md).
+Použijte externí (veřejný) certifikační autoritu (CA). Oprava tohoto problému je k dispozici ve verzi 1.9.0.0 aplikace skladu. Další informace o tomto problému a jeho řešení najdete v tématu [Odstraňování problémů s připojením mobilní aplikace Řízení skladu](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Jaký je schválený proces přechodu od základního skladování k pokročilému skladování?
 

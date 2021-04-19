@@ -2,10 +2,8 @@
 title: Opakovaný tisk a anulování vlnových štítků
 description: Toto téma vysvětluje, jak zrušit a znovu vytisknout stávající vlnové štítky.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228362"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817358"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Opakovaný tisk a anulování vlnových štítků
 
@@ -218,5 +216,8 @@ Výjimky z práce řídí chování rychlého výběru. Chcete-li nastavit praco
 1. Vyberte kód pracovní výjimky, který jste vytvořili pro tento scénář.
 1. Pokud jste vybrali správnou výjimku, mělo by být k dispozici zaškrtávací políčko **Zrušit a znovu vytisknout**. Zaškrtněte toto políčko a potvrďte. Po potvrzení je pořadí rolí štítků určené polem **ID sestavení štítku** přepočteno na základě změněných množství pracovní linky. Poté se znovu vytiskne na určené tiskárně.
 
+## <a name="additional-resources"></a>Další prostředky
+
+- [Tisk štítků vlny](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

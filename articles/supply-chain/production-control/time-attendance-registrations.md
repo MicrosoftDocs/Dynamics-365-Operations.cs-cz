@@ -2,11 +2,9 @@
 title: Přehled registrace času a docházky
 description: Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr, JmgRegistrationSetup, JmgStampTrans, JmgStampJournalTrans
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22ad53e333e6c85f8e55f04c27c6573c5738ec84
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ed7a596ef0c8a17cdc2e8b943d3f73d00340f26e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226682"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840814"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Přehled registrace času a docházky
 
