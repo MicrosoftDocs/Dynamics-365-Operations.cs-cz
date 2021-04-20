@@ -932,8 +932,10 @@
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Definování finančních dimenzí
                   href: general-ledger/tasks/define-financial-dimensions.md
-                - name: Udržování výchozích šablon finančních dimenzí
+                - name: Udržování výchozích šablon finanční dimenze
                   href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Sady finančních dimenzí
+                  href: general-ledger/financial-dimension-sets.md
                 - name: Vytvoření účetních struktur
                   href: general-ledger/tasks/create-account-structures.md
                 - name: Finanční dimenze a zaúčtování
@@ -1414,38 +1416,66 @@
           items:
             - name: Zdroje globalizace
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+            - name: Globalizační služby
+              items:
+                - name: Přehled globalizačních služeb
+                  href: localizations/globalization-services-overview.md
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Přehled Regulatory Configuration Service
+                      href: localizations/rcs-overview.md
+                    - name: Regulatory Configuration Service - Globalizační funkce
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
+                      href: localizations/rcs-global-repo-upload.md
+                - name: Elektronická fakturace
+                  items:
+                    - name: Přehled elektronické fakturace
+                      href: localizations/e-invoicing-service-overview.md
+                    - name: Součásti pro správu elektronické fakturace
+                      href: localizations/e-invoicing-service-administration.md
+                    - name: Konfigurace elektronické fakturace v Regulatory Configuration Services (RCS)
+                      href: localizations/e-invoicing-configuration-rcs.md
+                    - name: Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                    - name: Vytvoření účtu úložiště Azure a Key Vault
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                    - name: Začínáme
+                      items:
+                        - name: Začněte se správou služby elektronické fakturace
+                          href: localizations/e-invoicing-get-started-service-administration.md
+                        - name: Začněte s elektronickou fakturací
+                          href: localizations/e-invoicing-get-started.md
+                        - name: Začněte s elektronickou fakturací pro Brazílii
+                          href: localizations/e-invoicing-bra-get-started.md
+                        - name: Začněte s elektronickou fakturací pro Egypt
+                          href: localizations/e-invoicing-eg-get-started.md
+                        - name: Začněte s elektronickou fakturací pro Itálii
+                          href: localizations/e-invoicing-ita-get-started.md
+                        - name: Začněte s elektronickou fakturací pro Mexiko
+                          href: localizations/e-invoicing-mex-get-started.md
+                        - name: Nastavení elektronické fakturace
+                          href: localizations/e-invoicing-setup.md
+                    - name: Nejčastější dotazy k elektronické fakturaci
+                      href: localizations/e-invoicing-faq.md
+                - name: Výpočet daně
+                  items:
+                    - name: Přehled výpočtu daně
+                      href: localizations/global-tax-calcuation-service-overview.md
+                    - name: Začněte s výpočtem daně
+                      href: localizations/global-get-started-with-tax-calculation-service.md
+                    - name: Podpora daňových funkcí u převodních příkazů
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                    - name: Přidání datových polí v daňových konfiguracích
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                    - name: Přidání datových polí do daňové integrace pomocí rozšíření
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                    - name: Více registračních čísel pro DPH
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Nastavení prostředí pro vyhledávání hlavních dat
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
             - name: Povinné aktualizace
               href: localizations/regulatory-updates.md
-            - name: Elektronická fakturace
-              items:
-                - name: Přehled elektronické fakturace
-                  href: localizations/e-invoicing-service-overview.md
-                - name: Součásti pro správu elektronické fakturace
-                  href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurace elektronické fakturace v Regulatory Configuration Services (RCS)
-                  href: localizations/e-invoicing-configuration-rcs.md
-                - name: Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management
-                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-                - name: Vytvoření účtu úložiště Azure a Key Vault
-                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Začínáme
-                  items:
-                    - name: Začněte se správou služby elektronické fakturace
-                      href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Začněte s elektronickou fakturací
-                      href: localizations/e-invoicing-get-started.md
-                    - name: Začněte s elektronickou fakturací pro Brazílii
-                      href: localizations/e-invoicing-bra-get-started.md
-                    - name: Začněte s elektronickou fakturací pro Egypt
-                      href: localizations/e-invoicing-eg-get-started.md
-                    - name: Začněte s elektronickou fakturací pro Itálii
-                      href: localizations/e-invoicing-ita-get-started.md
-                    - name: Začněte s elektronickou fakturací pro Mexiko
-                      href: localizations/e-invoicing-mex-get-started.md
-                    - name: Nastavení elektronické fakturace
-                      href: localizations/e-invoicing-setup.md
-                - name: Nejčastější dotazy k elektronické fakturaci
-                  href: localizations/e-invoicing-faq.md
             - name: Austrálie
               items:
                 - name: Austrálie - přehled
@@ -1468,6 +1498,8 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Výkaz DPH
                   href: localizations/emea-aut-vat-statement-details.md
+                - name: Sestava zahraničních služeb
+                  href: localizations/emea-aut-cross-border-services-report.md
             - name: Bahrajn
               items:
                 - name: Bahrajn - přehled
@@ -1492,6 +1524,8 @@
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Sestavy odsouhlasení
                   href: localizations/emea-bel-reconciliation-reports.md
+                - name: Sestavy deníku
+                  href: localizations/emea-bel-journal-reports.md
                 - name: Nastavení vykazování zůstatku platby
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Vytvoření a údržba PRODCOM
@@ -1692,7 +1726,7 @@
               items:
                 - name: Čína - přehled
                   href: localizations/china.md
-                - name: Finance and Operations provozovaná společností 21Vianet v Číně
+                - name: Finance and Operations provozované společností 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Porovnání kusovníků
                   href: localizations/apac-chn-bom-comparison.md
@@ -2118,32 +2152,6 @@
                       href: localizations/ind-news-letter-10-0-13.md
                     - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
-                - name: Dlouhodobý majetek
-                  items:
-                    - name: Přehled dlouhodobého majetku pro Indii
-                      href: localizations/apac-ind-fixed-assets.md
-                    - name: Připojení kalendáře podle dní ke knize dlouhodobého majetku
-                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Vypočítat posuv odpisů
-                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Vytvoření skupiny skladových modelů pro kapitálové položky
-                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Vytvoření a zaúčtování odpisů
-                      href: localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku
-                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Stornování transakcí dlouhodobého majetku
-                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Výpočet posuvu odpisů
-                      href: localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Nastavení fiskálního kalendáře podle dne
-                      href: localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Nastavení parametrů pro výpočet odpisů
-                      href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Nastavení odpisu skupiny majetku pro knihy odpisů
-                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Převod kapitálových položek do dlouhodobého majetku
-                      href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Nepřímé daně
                   items:
                     - name: Indická daň GST
@@ -2300,6 +2308,10 @@
                                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                                 - name: Refundace platby odběratele
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Transakce správy projektu
+                              items:
+                                - name: Transakce projektu daně ze zboží a služeb (GST)
+                                  href: localizations/apac-ind-gst-project-transactions.md
                             - name: Úprava daně
                               items:
                                 - name: Úprava částky daně
@@ -2336,6 +2348,32 @@
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: TCS při prodeji zboží
                           href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                - name: Dlouhodobý majetek
+                  items:
+                    - name: Přehled dlouhodobého majetku pro Indii
+                      href: localizations/apac-ind-fixed-assets.md
+                    - name: Připojení kalendáře podle dní ke knize dlouhodobého majetku
+                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+                    - name: Vypočítat posuv odpisů
+                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+                    - name: Vytvoření skupiny skladových modelů pro kapitálové položky
+                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
+                    - name: Vytvoření a zaúčtování odpisů
+                      href: localizations/apac-ind-calculate-post-depreciation.md
+                    - name: Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku
+                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
+                    - name: Stornování transakcí dlouhodobého majetku
+                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+                    - name: Výpočet posuvu odpisů
+                      href: localizations/apac-ind-calculation-shift-depreciation.md
+                    - name: Nastavení fiskálního kalendáře podle dne
+                      href: localizations/tasks/apac-ind-day-based-calendar.md
+                    - name: Nastavení parametrů pro výpočet odpisů
+                      href: localizations/tasks/apac-ind-set-up-depreciation.md
+                    - name: Nastavení odpisu skupiny majetku pro knihy odpisů
+                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                    - name: Převod kapitálových položek do dlouhodobého majetku
+                      href: localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Itálie
               items:
                 - name: Itálie - přehled
@@ -2958,6 +2996,8 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Registry jmenovitých hodnot výdajů
                       href: localizations/rus-rated-expenses-registers.md
+                    - name: Daňové registry dluhů závazků a odpisy dluhů
+                      href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
             - name: Saúdská Arábie
               items:
                 - name: Saúdská Arábie - přehled
@@ -3034,14 +3074,20 @@
                   href: localizations/thailand.md
                 - name: Sestavy karet zásob
                   href: localizations/apac-tha-stock-card-reports.md
+                - name: Daňové faktury
+                  href: localizations/apac-tha-tax-invoices.md
                 - name: Nahrazení nebo úprava daňové faktury
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Neuplatněná DPH
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Průměrná DPH pro nákupní transakce
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Dimenze prodejní DPH
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Sestava DPH z prodeje
                   href: localizations/apac-tha-sales-vat-report.md
+                - name: Průměrná DPH pro nákupní transakce
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Srážková daň
                   href: localizations/apac-tha-withholding-tax.md
             - name: Spojené arabské emiráty (UAE)
@@ -3869,10 +3915,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Ladění zdrojů dat
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Použití BARCODE ke generování obrázků čárových kódů
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurace zdrojů dat VYHLEDÁVÁNÍ pro použití parametrů specifických pro aplikace elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Ladění zdrojů dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace mapování modelu
                   items:
                     - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
