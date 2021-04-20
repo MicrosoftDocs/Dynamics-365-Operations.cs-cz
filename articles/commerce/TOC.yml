@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurace a instalace Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
-                - name: Hromadné nasazení samoobslužných komponent
+                - name: Hromadné nasazení starších samoobslužných komponent
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Události komponent Commerce pro diagnostiku a řešení potíží
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1056,6 +1056,16 @@
                       href: author-header-module.md
                     - name: Modul zápatí
                       href: author-footer-module.md
+                - name: 'Moduly stránky, metadat a skriptu'
+                  items:
+                    - name: Výchozí modul stránky
+                      href: default-page-module.md
+                    - name: Moduly shrnutí stránky
+                      href: page-summary-module.md
+                    - name: Modul metaznaček
+                      href: metatags-module.md
+                    - name: Externí a vložené moduly skriptů
+                      href: script-module.md
                 - name: Moduly stránky s podrobnostmi produktu
                   items:
                     - name: Modul buy boxu

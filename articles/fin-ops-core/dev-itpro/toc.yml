@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Používání Power Portal s datovým modelem strany
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Upgrade na model strany a globálního adresáře
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Integrace poznámek
                               href: data-entities/dual-write/notes-integration.md
                             - name: Odkaz na mapování
@@ -714,6 +716,8 @@
               items:
                 - name: X++ a funkce ladicího programu
                   href: dev-tools/new-x-debugger-features.md
+                - name: Visual Studio 2017 požadavky pro X++
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: Ladění kódu X++
                   href: dev-tools/debug-xpp.md
                 - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Platnost od
               href: dev-tools/date-effectivity.md
-            - name: Licencování nezávislých výrobců softwaru
-              href: dev-tools/isv-licensing.md
-            - name: Licencování nezávislých výrobců pro nasazení on-premises
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Vývoj pro nezávislé dodavatele softwaru
+              items:
+                - name: Propojení modulů X++ s balíčky pomocí ISV Studio
+                  href: dev-tools/isv-studio-solutions.md
+                - name: Licencování nezávislých výrobců softwaru
+                  href: dev-tools/isv-licensing.md
+                - name: Licencování nezávislých výrobců pro místní nasazení
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: Obecné nařízení o ochraně osobních údajů (GDPR)
           items:
             - name: Přehled obecného nařízení o ochraně osobních údajů (GDPR)
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integrace Microsoft Power Platform
           items:
+            - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
+              href: power-platform/overview.md
             - name: Virtuální entity
               items:
-                - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
-                  href: power-platform/overview.md
                 - name: Modelování entit
                   href: power-platform/entity-modeling.md
                 - name: Správa životního cyklu aplikace
@@ -1454,6 +1462,8 @@
               href: lifecycle-services/support-experience.md
             - name: Správa zkušeností s podporou pro aplikace Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Podpora a monitorování výroby
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Správa systému
           items:
             - name: Domovská stránka Správa systému
