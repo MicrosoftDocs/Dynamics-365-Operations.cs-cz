@@ -16,29 +16,29 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b0a3efffaac5158f8dcdbc424139046a3fbc2f07
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c232955873706bcceb6c685527a0dd92b129e543
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793650"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893417"
 ---
-# <a name="custom-fields"></a><span data-ttu-id="f3eee-103">Vlastní pole</span><span class="sxs-lookup"><span data-stu-id="f3eee-103">Custom fields</span></span>
+# <a name="custom-fields"></a><span data-ttu-id="3340f-103">Vlastní pole</span><span class="sxs-lookup"><span data-stu-id="3340f-103">Custom fields</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="f3eee-104">Na stránky v Dynamics 365 Human Resources můžete přidat vlastní pole.</span><span class="sxs-lookup"><span data-stu-id="f3eee-104">You can add custom fields to pages in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="f3eee-105">Další informace o vytváření vlastních polí naleznete v tématu [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).</span><span class="sxs-lookup"><span data-stu-id="f3eee-105">For more information about creating custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).</span></span>
+<span data-ttu-id="3340f-104">Na stránky v Dynamics 365 Human Resources můžete přidat vlastní pole.</span><span class="sxs-lookup"><span data-stu-id="3340f-104">You can add custom fields to pages in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="3340f-105">Další informace o vytváření vlastních polí naleznete v tématu [Vytvoření vlastních polí a práce s nimi](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).</span><span class="sxs-lookup"><span data-stu-id="3340f-105">For more information about creating custom fields, see [Create and work with custom fields](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).</span></span>
 
-<span data-ttu-id="f3eee-106">Většina tabulek Dataverse podporují vlastní pole.</span><span class="sxs-lookup"><span data-stu-id="f3eee-106">Most Dataverse tables support custom fields.</span></span> <span data-ttu-id="f3eee-107">Úplný seznam tabulek Dataverse naleznete v tématu [Tabulky Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).</span><span class="sxs-lookup"><span data-stu-id="f3eee-107">For a full list of Dataverse tables, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).</span></span> 
+<span data-ttu-id="3340f-106">Většina tabulek Dataverse podporují vlastní pole.</span><span class="sxs-lookup"><span data-stu-id="3340f-106">Most Dataverse tables support custom fields.</span></span> <span data-ttu-id="3340f-107">Úplný seznam tabulek Dataverse naleznete v tématu [Tabulky Dataverse](./hr-developer-entities.md).</span><span class="sxs-lookup"><span data-stu-id="3340f-107">For a full list of Dataverse tables, see [Dataverse tables](./hr-developer-entities.md).</span></span> 
 
-<span data-ttu-id="f3eee-108">Nezapomeňte povolit všechna vlastní pole, která jste vytvořili, abyste je mohli použít v aplikaci Dataverse.</span><span class="sxs-lookup"><span data-stu-id="f3eee-108">Be sure to enable any custom fields that you create so you can use them in Dataverse.</span></span> <span data-ttu-id="f3eee-109">Další informace naleznete v tématu [Vystavení vlastních polí pro datové entity](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).</span><span class="sxs-lookup"><span data-stu-id="f3eee-109">For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).</span></span>
+<span data-ttu-id="3340f-108">Nezapomeňte povolit všechna vlastní pole, která jste vytvořili, abyste je mohli použít v aplikaci Dataverse.</span><span class="sxs-lookup"><span data-stu-id="3340f-108">Be sure to enable any custom fields that you create so you can use them in Dataverse.</span></span> <span data-ttu-id="3340f-109">Další informace naleznete v tématu [Vystavení vlastních polí pro datové entity](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).</span><span class="sxs-lookup"><span data-stu-id="3340f-109">For more information, see [Exposing custom fields on data entities](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f3eee-110">Viz také</span><span class="sxs-lookup"><span data-stu-id="f3eee-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3340f-110">Viz také</span><span class="sxs-lookup"><span data-stu-id="3340f-110">See also</span></span>
 
-[<span data-ttu-id="f3eee-111">Tabulky Dataverse</span><span class="sxs-lookup"><span data-stu-id="f3eee-111">Dataverse tables</span></span>](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
-[<span data-ttu-id="f3eee-112">Vytvoření vlastních polí a práce s nimi</span><span class="sxs-lookup"><span data-stu-id="f3eee-112">Create and work with custom fields</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
-[<span data-ttu-id="f3eee-113">Vystavení vlastních polí na datových entitách</span><span class="sxs-lookup"><span data-stu-id="f3eee-113">Exposing custom fields on data entities</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+[<span data-ttu-id="3340f-111">Tabulky Dataverse</span><span class="sxs-lookup"><span data-stu-id="3340f-111">Dataverse tables</span></span>](./hr-developer-entities.md)</br>
+[<span data-ttu-id="3340f-112">Vytvoření vlastních polí a práce s nimi</span><span class="sxs-lookup"><span data-stu-id="3340f-112">Create and work with custom fields</span></span>](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[<span data-ttu-id="3340f-113">Vystavení vlastních polí na datových entitách</span><span class="sxs-lookup"><span data-stu-id="3340f-113">Exposing custom fields on data entities</span></span>](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
