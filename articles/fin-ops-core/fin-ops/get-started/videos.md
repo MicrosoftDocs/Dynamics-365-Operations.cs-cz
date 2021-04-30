@@ -2,7 +2,7 @@
 title: Videa
 description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: sericks007
-ms.date: 02/11/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: eae8e95d39a5b9ade24e7fe9c9407d29e67a8727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754697"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881729"
 ---
 # <a name="videos"></a>Videa 
 
@@ -84,6 +84,9 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videa pro Dynamics 365 Finance
 
+### <a name="business-document-management"></a>Správa obchodních dokumentů
+- [Vytvoření nového obchodního dokumentu pomocí Správy obchodních dokumentů](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>Přizpůsobení aplikace
 - [Přidat vlastní pole](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Vložení Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -112,6 +115,9 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videa pro Dynamics 365 Supply Chain Management
+
+### <a name="business-document-management"></a>Správa obchodních dokumentů
+- [Vytvoření nového obchodního dokumentu pomocí Správy obchodních dokumentů](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Náklady
 - [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)

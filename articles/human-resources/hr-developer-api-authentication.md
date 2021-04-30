@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dffe1db98ba39fde2229e69bc70bdbf113ff6ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793674"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893441"
 ---
 # <a name="authentication"></a>Ověřování
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - U webových aplikací je to základní adresa URL aplikace. Například `http://localhost:31544` může být adresa URL webové aplikace, která je spuštěna v místním počítači. Uživatelé se pak pomocí této adresy URL přihlásí do aplikace webového klienta.
         - Pro veřejné klientské aplikace zadejte identifikátor URI, který Azure AD používá k vrácení odpovědí na tokeny. Zadejte hodnotu, která je specifická pro vaši aplikaci, například `myapp://auth`.
 
-        Chcete-li zobrazit konkrétní příklady webových aplikací nebo nativních aplikací, přejděte na [platformu Microsoft Identity (dříve Azure Active Directory pro vývojáře)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Chcete-li zobrazit konkrétní příklady webových aplikací nebo nativních aplikací, přejděte na [platformu Microsoft Identity (dříve Azure Active Directory pro vývojáře)](/azure/active-directory/develop/#quickstarts).
 
 5. V části **Oprávnění API** vyberte **Přidat oprávnění**. Pak na kartě **Rozhraní API používaná mojí organizací** vyhledejte **Dynamics 365 Human Resources** a přidejte do aplikace oprávnění **user\_impersonation**. ID aplikace Human Resources je f9be0c49-aa22-4ec6-911a-c5da515226ff. Pomocí tohoto ID můžete zajistit, že jste zvolili správnou aplikaci.
 

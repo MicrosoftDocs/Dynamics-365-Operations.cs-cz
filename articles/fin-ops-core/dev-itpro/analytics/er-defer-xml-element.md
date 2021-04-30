@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 84c8c782b917850267c34696f3b2afa607118d84
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753611"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894045"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Odložení provádění prvků XML ve formátech elektronického výkaznictví
 
@@ -44,7 +44,7 @@ Možnost **odloženého provedení** není podporována u prvků XML, které se 
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Příklad: Odložení provádění prvku XML ve formátu elektronického výkaznictví
 
-Následující postup vysvětluje, jak může uživatel v [roli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) správce systému nebo funkčního konzultanta elektronického výkaznictví konfigurovat formát elektronického výkaznictví, který obsahuje prvek XML, kde se pořadí provádění liší od pořadí v hierarchii formátu.
+Následující postup vysvětluje, jak může uživatel v [roli](../sysadmin/tasks/assign-users-security-roles.md) správce systému nebo funkčního konzultanta elektronického výkaznictví konfigurovat formát elektronického výkaznictví, který obsahuje prvek XML, kde se pořadí provádění liší od pořadí v hierarchii formátu.
 
 Tyto kroky lze provést ve společnosti **USMF** v aplikaci Microsoft Dynamics 365 Finance.
 

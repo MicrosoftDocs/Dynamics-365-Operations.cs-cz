@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838387"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911289"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -44,8 +44,8 @@ Než budete moci vytvořit směrnici o umístění, musíte se ujistit, že jsou
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
 1. Vytvoření skladu.
 1. Na záložce **Sklady** nastavte možnost **Použít procesy správy skladu** na *Ano*.
-1. Vytvoření skladových míst, typů skladových míst, profilů skladových míst a formátů skladového místa. Další informace viz [Konfigurace umístění ve skladu podporujícím WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Vytvoření pracovišť, zón a skupin zón. Další informace viz [Nastavení skladu](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) a [Konfigurace umístění ve skladu podporujícím WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Vytvoření skladových míst, typů skladových míst, profilů skladových míst a formátů skladového místa. Další informace viz [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Vytvoření pracovišť, zón a skupin zón. Další informace viz [Nastavení skladu](../../commerce/channels-setup-warehouse.md) a [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Typy pracovních příkazů pro směrnice skladového místa
 
@@ -143,7 +143,7 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
 - **Kód směrnice** – Vyberte kód směrnice, který se má přidružit k šabloně práce nebo šabloně doplnění. Na stránce **Směrnice** můžete vytvořit nové kódy, které lze použít k připojení pracovních šablon nebo šablon doplnění ke směrnicím skladového místa. Kódy směrnice lze také použít k vytvoření spojení mezi jakýmkoliv řádkem šablony práce a směrnicí skladového místa (jako je například nákladová brána nebo skladové místo fáze).
 
     > [!TIP]
-    > Pokud je nastaven kód směrnice, systém nebude hledat směrnice skladového místa podle pořadového čísla, když musí být generovaná práce. Místo toho bude vyhledávat podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu šablony skladového místa pro konkrétní krok v šabloně práce, jako je například krok pro fázování materiálů.
+    > Pokud je nastaven kód směrnice, systém nebude hledat směrnice skladového místa podle pořadového čísla, když musí být generovaná práce. Místo toho bude vyhledávat podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu směrnice skladového místa pro konkrétní krok v šabloně práce, jako je například krok pro fázování materiálů.
 
 - **Více SKU** – Nastavte tuto možnost na *Ano*, chcete-li povolit použití více skladových jednotek (SKU) v jednom skladovém místě. Například pro umístění křídlových dveří musí být povoleno více SKU. Pokud povolíte více SKU, bude vaše skladové místo pro vložení uvedeno v práci dle očekávání. Skladové místo však bude schopno zpracovat pouze vložení více položek (pokud práce zahrnuje různé SKU, které je třeba vybrat a umístit). Nezvládne vložení jedné SKU. Pokud nastavíte tuto možnost na *Ne*, skladové místo bude specifikováno pouze v případě, že vložení má pouze jeden druh SKU.
 
@@ -249,7 +249,7 @@ Pro tento scénář musíte definovat dvě akce směrnice skladového místa. Pr
 
 ## <a name="next-step"></a>Další krok
 
-Po vytvoření směrnic skladového místa můžete přiřadit každý kód směrnice ke kódu šablony práce pro vytvoření práce. Další informace naleznete v tématu [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Po vytvoření směrnic skladového místa můžete přiřadit každý kód směrnice ke kódu šablony práce pro vytvoření práce. Další informace naleznete v tématu [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 

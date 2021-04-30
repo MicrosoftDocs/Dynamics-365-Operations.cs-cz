@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803482"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891047"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Nastavení komponent práce
 
@@ -86,7 +86,7 @@ Pracovní úkoly udržujte pomocí stránky **Pracovní úkoly**. Zadejte název
 Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. Například pro práci s názvem „Účetní“ může být oblast zodpovědnosti „Finanční výkaznictví za výrobek A“. Udržujte oblasti odpovědnosti pomocí stránky **Oblasti odpovědnosti**, kterou lze vyhledat pomocí funkce vyhledávání. Zadejte název a stručný popis odpovědnosti na stránce **Oblasti odpovědnosti**. Do pole **Poznámka** můžete volitelně zadat další informace. Poznámky mohou být aktualizovány pro konkrétní práci beze změny poznámek, které jste v tomto poli zadali.
 
 ## <a name="steps-for-creating-a-job"></a>Postup při vytváření práce
-Ohledně podrobného postupu pro vytvoření nové práce nahlédněte do článku [Definování nových prací](../fin-and-ops/hr/tasks/define-new-jobs.md). 
+Ohledně podrobného postupu pro vytvoření nové práce nahlédněte do článku [Definování nových prací](./hr-personnel-define-jobs.md). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

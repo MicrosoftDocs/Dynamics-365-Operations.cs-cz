@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751225"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893571"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
@@ -60,7 +60,7 @@ Pokud vyberete typ dokumentu **Žádný**, je automaticky vybrána **Auto detekc
     - Když je za běhu poskytnuta akce **Odeslat**, použije se cíl ER **E-mail**.
     - Když je za běhu poskytnuta akce **Tisk**, použije se cíl ER **Tiskárna**.
 
-Můžete například použít formát ER **volná textová faktura (Excel)**, pokud chcete vytisknout [volnou textovou fakturu](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) při zaúčtování. Chcete-li směrovat vygenerovaný dokument, musíte nakonfigurovat cíle ER pro tento formát ER. Možná budete muset nakonfigurovat tyto cíle ER, aby na generovaném dokumentu provedly následující:
+Můžete například použít formát ER **volná textová faktura (Excel)**, pokud chcete vytisknout [volnou textovou fakturu](../../../finance/accounts-receivable/create-free-text-invoice-new.md) při zaúčtování. Chcete-li směrovat vygenerovaný dokument, musíte nakonfigurovat cíle ER pro tento formát ER. Možná budete muset nakonfigurovat tyto cíle ER, aby na generovaném dokumentu provedly následující:
 
 - Archivujte dokument, pokud je spuštěn formát ER, ale není poskytnut žádný kód akce (například když je dokument odeslán elektronicky).
 - Náhled dokumentu ve webovém prohlížeči, když uživatel provede akci **Zobrazení** .
@@ -82,7 +82,7 @@ Následující obrázek ukazuje, jak můžete dosáhnout stejné alternativní k
 
 Při spuštění formátu ER, pokud byly akce uživatelů zřízeny uživateli, kteří mají příslušné [oprávnění](electronic-reporting-destinations.md#security-considerations), chcete-li změnit nakonfigurované nastavení cíle za běhu, zobrazí se dialogové okno s možností změnit nakonfigurované nastavení cíle. Toto dialogové okno je volitelné a jeho vzhled závisí na tom, jak bylo implementováno volání ER rámce pro spuštění formátu ER. Pokud se zobrazí toto dialogové okno, budou cíle ER v něm povoleny podle poskytované akce uživatele.
 
-Následující obrázek ukazuje příklad dialogového okna **Cíle formátu elektronického výkaznictví**, které se zobrazí při [zaúčtování](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) volné textové faktury a je spuštěn formát ER **Volná textová faktura (Excel)** ke generování tohoto dokumentu, pokud byla zřízena akce **Tiskárna** a cíle ER byly pro tento formát nakonfigurovány, jak je uvedeno dříve v tomto tématu.
+Následující obrázek ukazuje příklad dialogového okna **Cíle formátu elektronického výkaznictví**, které se zobrazí při [zaúčtování](../../../finance/accounts-receivable/create-free-text-invoice-new.md) volné textové faktury a je spuštěn formát ER **Volná textová faktura (Excel)** ke generování tohoto dokumentu, pokud byla zřízena akce **Tiskárna** a cíle ER byly pro tento formát nakonfigurovány, jak je uvedeno dříve v tomto tématu.
 
 ![Dialogové okno, které umožňuje změnit původně nakonfigurované cíle ER pro spuštěný formát ER](./media/er-destination-action-dependent-02.gif)
 

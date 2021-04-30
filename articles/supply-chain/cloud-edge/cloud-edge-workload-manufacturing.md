@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809775"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899088"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže spuštění výroby pro cloudové a hraniční jednotky škálování
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Úloha provádění výroby je v tomto okamžiku k dispozici v preview.
 > Některé obchodní funkce nejsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže.
 
-Při provádění výroby poskytují cloudové a okrajové jednotky škálování následující funkce, i když hraniční jednotky nejsou připojeny k centru:
+Při provádění výroby poskytují jednotky škálování následující funkce:
 
 - Obsluha strojů a vedoucí výroby mají přístup k operačnímu výrobnímu plánu.
 - Operátoři strojů mohou udržovat aktuální plán spuštěním samostatných a procesních výrobních úloh.
@@ -108,5 +109,6 @@ Chcete-li zkontrolovat historii výrobních úloh, které byly zpracovány na je
 
 Úloha _Výrobní centrum pro procesor zpráv jednotky škálování_ zpracovává data z centra do jednotky škálování. Tato úloha se automaticky spustí, když je nasazena úloha provedení. Můžete jej však kdykoli spustit ručně tak, že přejdete na **Kontrola výroby \> Pravidelné úkoly \> Správa úlohy backoffice \> Výrobní centrum pro škálování procesorů zpráv jednotky**.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

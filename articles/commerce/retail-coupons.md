@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792018"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906642"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
@@ -38,6 +38,8 @@ Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spoj�
 
 > [!NOTE]
 > Po propojení kupónu se slevou začne být několik polí na stránce slevy v aplikaci Commerce jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
+> 
+> Při používání kupónu v kanálu call centra musíte vybrat tlačítko **Přepočítat** **(Karta Prodat > Vypočítat > Přepočítat)**, aby byla uplatněna sleva spojená s kupónem. Tento další krok bude v budoucím vydání odebrán.
 
 ### <a name="limited-use-coupons"></a>Kupóny s omezeným použitím
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5c9ab724034a9bb40cfe155b748a0c7e25978add
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833346"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907636"
 ---
 # <a name="intercompany-planning"></a>Mezipodnikové plánování
 
@@ -45,8 +45,8 @@ Pokud spustíte hlavní plánování z hlavního plánu, který zahrnuje plánov
 
 Chcete-li použít mezipodnikové plánování, musíte svůj systém připravit následujícím způsobem:
 
-1. Příslušné produkty musí být uvolněny ve všech příslušných společnostech. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
-1. Následná poptávka musí být pokryta nákupy od dodavatele, který má mezipodnikový vztah k předcházející společnosti a relevantní výchozí dimenze zásob (pracoviště a sklad) na zákazníkovi. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
+1. Příslušné produkty musí být uvolněny ve všech příslušných společnostech. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
+1. Následná poptávka musí být pokryta nákupy od dodavatele, který má mezipodnikový vztah k předcházející společnosti a relevantní výchozí dimenze zásob (pracoviště a sklad) na zákazníkovi. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
 1. Hlavní plán v předcházející společnosti musí zahrnovat plánovanou následnou poptávku a příslušná společnost a hlavní plán musí být specifikovány v následných plánech.
 
 ## <a name="include-planned-downstream-demand"></a>Zahrnout podřízenou plánovanou poptávku

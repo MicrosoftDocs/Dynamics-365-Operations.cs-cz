@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839953"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891154"
 ---
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
@@ -114,7 +114,7 @@ Při importu konfigurace formátu z LCS importujete celý stromu konfigurace, co
  - **Pain.002** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor pain.002 do deníku převodů plateb dodavatele
  - **Camt.054** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor camt.054 do deníku převodů plateb dodavatele Stejná konfigurace formátu se použije ve funkci importu plateb odběratelů, ale použije se odlišné mapování konfiguraci mapování modelu platby ISO20022 do cílového umístění.
 
-Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md).
+Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Další zdroje
 - [Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

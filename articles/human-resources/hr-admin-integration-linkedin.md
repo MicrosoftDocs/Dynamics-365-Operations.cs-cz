@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: efcac2bd82956015eb822c6a493b8625a35cd194
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 208998b5c09416407612352da7a8ef5dd9491914
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805051"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889973"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrace s LinkedIn Talent Hub
 
@@ -130,7 +130,7 @@ Po uložení a zavření nového uživatele aplikace v předchozí části jste 
 ### <a name="create-the-table-in-dataverse"></a>Vytvoření tabulky v Dataverse
 
 > [!IMPORTANT]
-> Integrace s LinkedIn Talent Hub závisí na virtuálních tabulkách v Dataverse pro Human Resources. Jako předpoklad pro tento krok musíte v nastavení nakonfigurovat virtuální tabulky. Informace o konfiguraci virtuálních tabulke najdete v tématu [Konfigurace virtuálních tabulek Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> Integrace s LinkedIn Talent Hub závisí na virtuálních tabulkách v Dataverse pro Human Resources. Jako předpoklad pro tento krok musíte v nastavení nakonfigurovat virtuální tabulky. Informace o konfiguraci virtuálních tabulke najdete v tématu [Konfigurace virtuálních tabulek Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 1. V Human Resources otevřete stránku **Integrace Dataverse**.
 
@@ -189,7 +189,7 @@ Následující údaje se importují a zahrnou do nového záznamu zaměstnance:
 ## <a name="see-also"></a>Viz také
 
 [Konfigurace virtuálních tabulek Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[Co je Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

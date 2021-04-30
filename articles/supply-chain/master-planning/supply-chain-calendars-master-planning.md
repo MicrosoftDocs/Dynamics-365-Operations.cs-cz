@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841760"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908364"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
@@ -90,7 +90,7 @@ K označení dat, kdy může odběratel přijímat dodávky, můžete odběratel
 
 Všimněte si, že je možné zahrnout pouze jeden kalendář na odběratele. Pokud potřebujete zahrnout kalendář pro každou jinou adresu pro odběratele, můžete vytvořit jednoho odběratele na adresu a přiřadit jeho odpovídající kalendář. 
 
-Požadované datum příjmu v řádcích prodejní objednávky je ovlivněno kalendářem odběratele a způsobem kontroly data doručení. Více informací o výpočtu nejstaršího data doručení získáte v části [Příslib objednávky.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Požadované datum příjmu v řádcích prodejní objednávky je ovlivněno kalendářem odběratele a způsobem kontroly data doručení. Více informací o výpočtu nejstaršího data doručení získáte v části [Příslib objednávky.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Kalendář expedice pro právnickou osobu
 Pokud chcete označit data, ve kterých může právnická osoba expedovat zboží, můžete nastavit kalendář expedice v části **Správa organizace > Organizace > Právnické osoby**. Vyberte právnickou osobu a přidejte kalendář na kartě **Zahraniční obchod a logistika** v poli **Expediční kalendář**. Expediční kalendář bude sloužit jako zdroj výchozích hodnot pro všechny kalendáře skladu v právnické osobě. 

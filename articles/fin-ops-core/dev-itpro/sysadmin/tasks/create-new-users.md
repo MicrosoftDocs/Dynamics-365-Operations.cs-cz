@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745830"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907904"
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
@@ -29,10 +29,10 @@ Než budete mít přístup do aplikací Finance and Operations, musíte být nej
 Informace o tom, jak nakupovat a licencovat pro aplikace Finance and Operations, najdete v části [Průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Přiřazení licence uživateli
-Správci systému mohou [přiřazovat licence uživatelům](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) v [centru správy Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Správci systému mohou [přiřazovat licence uživatelům](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) v [centru správy Microsoft 365](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Přidání externího uživatele do Azure AD a přiřazení licence 
-Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na aplikace Finance and Operations je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na aplikace Finance and Operations je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Import nových uživatelů ze služby Azure AD 
 1. Přejděte do nabídky **Správa systému** \> **Uživatel** \> **Uživatelé**.
@@ -57,7 +57,7 @@ Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure A
 7. V poli **Společnost** vyberte výchozí spouštěcí společnost pro uživatele. 
 8. Zvolte **Uložit**.
 
-Hodnoty pro poskytovatele identity a telemetrické ID budou aktualizovány na základě volání [Microsoft graf](https://docs.microsoft.com/graph/overview), když je záznam uživatele uložen. ID telemetrie je založeno na uživatelském ID objektu / identifikátoru zabezpečení (SID) v Azure AD.
+Hodnoty pro poskytovatele identity a telemetrické ID budou aktualizovány na základě volání [Microsoft graf](/graph/overview), když je záznam uživatele uložen. ID telemetrie je založeno na uživatelském ID objektu / identifikátoru zabezpečení (SID) v Azure AD.
 
 > [!NOTE]
 > Po přidání uživatele musíte podle potřeby přiřadit role a organizace. Další informace viz [Přiřadit uživatelům role zabezpečení](assign-users-security-roles.md). Podmíněně může být také požadováno přidružení uživatele k **Osobě** a aktualizovat **možnosti uživatele**, například jazyk.

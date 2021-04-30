@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801160"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889949"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurace integrace s aplikací Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801160"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Chcete-li integrovat Dynamics 365 Human Resources s Dynamics 365 Finance, můžete použít šablonu Human Resources do Finance v [Integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator). Šablona Human Resources do Finance umožňuje tok dat pro úlohy, pozice a pracovníky. Šablona umožňuje tok dat z Human Resources do Finance, ale neumožňuje data tok z Finance do Human Resources.
+Chcete-li integrovat Dynamics 365 Human Resources s Dynamics 365 Finance, můžete použít šablonu Human Resources do Finance v [Integrátoru dat](/powerapps/administrator/data-integrator). Šablona Human Resources do Finance umožňuje tok dat pro úlohy, pozice a pracovníky. Šablona umožňuje tok dat z Human Resources do Finance, ale neumožňuje data tok z Finance do Human Resources.
 
 ![Tok integrace z Human Resources do Finance](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Integrace dat z Human Resources do Finance se pokusí spárovat záznamy na zák
 
 Problém může nastat u **Pracovníka**, který používá **Osobní číslo** k provedení párování, a **Pozic**. Práce nepoužívají číselné řady. V důsledku toho, pokud stejné ID práce existuje jak v Human Resources, tak ve Finance, informace z Human Resources tyto informace Dynamics 365 Finance přepíší. 
 
-Chcete-li zabránit problémům s duplicitními ID, můžete buď přidat předponu k [číselné řadě](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), nebo nastavit počáteční číslo pro číselnou řadu, která je nad rozsahem jiného systému. 
+Chcete-li zabránit problémům s duplicitními ID, můžete buď přidat předponu k [číselné řadě](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), nebo nastavit počáteční číslo pro číselnou řadu, která je nad rozsahem jiného systému. 
 
 ID místa použité pro adresu pracovníka není součástí číselné řady. Je-li adresa pracovníka integrována z Human Resources do Finance, může být vytvořen duplicitní záznam adresy v modulu Finance. 
 

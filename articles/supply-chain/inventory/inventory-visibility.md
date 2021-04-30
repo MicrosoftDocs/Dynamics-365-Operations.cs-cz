@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821122"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910418"
 ---
 # <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
@@ -39,7 +39,7 @@ Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zás
 
 Musíte nainstalovat doplněk Viditelnost zásob pomocí Microsoft Dynamics Lifecycle Services (LCS). LCS je portál pro spolupráci, který poskytuje prostředí a sadu pravidelně aktualizovaných služeb, které vám pomohou spravovat životní cyklus aplikace vašich aplikací Dynamics 365 Finance and Operations.
 
-Další informace naleznete v tématu [Zdroje Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+Další informace naleznete v tématu [Zdroje Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="prerequisites"></a>Předpoklady
 
@@ -48,10 +48,13 @@ Před instalací doplňku Viditelnost zásob musíte provést následující:
 - Získejte implementační projekt LCS s alespoň jedním nasazeným prostředím.
 - Ujistěte se, že předpoklady pro nastavení doplňků uvedené v [Přehledu doplňků](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) byly dokončeny. Viditelnost zásob nevyžaduje propojení duálního zápisu.
 - Kontaktujte tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a vyžádejte si následující tři požadované soubory:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (pokud je spuštěná verze Supply Chain Management starší než verze 10.0.18)
+- Postupujte podle pokynů v části [Rychlý start: Registrace aplikace na platformě identity Microsoft](/azure/active-directory/develop/quickstart-register-app) k registraci aplikace a přidání klientského tajného klíče do AAD v rámci vašeho předplatného Azure.
+    - [Registrace aplikace](/azure/active-directory/develop/quickstart-register-app)
+    - [Přidání tajného klíče klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - **ID aplikace (klient)**, **Tajný klíč klienta** a **ID nájemce** bude použito v následujících krocích.
 
 > [!NOTE]
 > Mezi aktuálně podporované země a oblasti patří Kanada, Spojené státy a Evropská unie (EU).
@@ -64,7 +67,7 @@ Při nastavení Dataverse postupujte následujícím způsobem.
 
 1. Přidejte svému klientu princip služby:
 
-    1. Nainstalujte Azure AD PowerShell Module v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Nainstalujte Azure AD PowerShell Module v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
     1. Spusťte následující příkaz PowerShellu:
 
         ```powershell
@@ -80,7 +83,12 @@ Při nastavení Dataverse postupujte následujícím způsobem.
     1. Zvolte **Nové**. Nastavte ID aplikace na *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (ID objektu se automaticky načte, když uložíte změny.) Název můžete upravit. Můžete jej například změnit na *Viditelnost zásob*. Po dokončení zvolte **Uložit**.
     1. Vyberte příkaz **Přiřadit roli** a potom vyberte **Správce systému**. Pokud existuje role, která je pojmenována **Uživatel Common Data Service**, vyberte ji také.
 
-    Další informace naleznete v tématu [Vytvoření uživatele aplikace](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    Další informace naleznete v tématu [Vytvoření uživatele aplikace](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Pokud výchozí jazyk vašeho Dataverse není **angličtina**:
+
+    1. Přejděte do **Pokročilé nastavení \> Správa \> Jazyky**.
+    1. Vyberte **Angličtina (LanguageCode = 1033)** a vyberte **Použít**.
 
 1. Importujte soubor `Inventory Visibility Dataverse Solution.zip`, který obsahuje entity související s konfigurací Dataverse a Power Apps:
 
@@ -158,12 +166,12 @@ Zkontrolujte, zda jsou ve vašem prostředí Supply Chain Management zapnuty ná
 
     Najděte oblast Azure prostředí LCS a zadejte adresu URL. Adresa URL má následující tvar:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     Pokud jste například v Evropě, vaše prostředí bude mít jednu z následujících adres URL:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     Nyní jsou k dispozici následující oblasti:
 
@@ -212,13 +220,13 @@ Token služby zabezpečení získáte takto:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -255,6 +263,43 @@ Token služby zabezpečení získáte takto:
         "expires_in": 1200
     }
     ```
+
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Ukázkový požadavek
+
+Pro vaši informaci je zde ukázka požadavku http, k odeslání tohoto požadavku můžete použít jakékoli nástroje nebo kódovací jazyk, například ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurace rozhraní API doplňku Viditelnost zásob
 
@@ -338,7 +383,7 @@ Zde je ukázkový dotaz na produkt s kombinací barev a velikostí.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -350,6 +395,8 @@ Zde je ukázkový dotaz na produkt s kombinací barev a velikostí.
     "returnNegative": true
 }
 ```
+
+Pro pole `filters` aktuálně pouze `ProductId` podporuje více hodnot. Pokud je `ProductId` prázdné pole, budou dotazovány všechny produkty.
 
 #### <a name="custom-measurement"></a>Vlastní měrné systémy
 

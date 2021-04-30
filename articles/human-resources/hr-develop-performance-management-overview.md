@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789629"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890740"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
 
@@ -93,7 +93,7 @@ Můžete také využít část **Kompetence**, ve které můžete diskutovat o k
 
 Můžete vytvářet nová přezkoumání vycházející ze šablon, které jste vytvořili. Můžete mít například šablonu pro setkání „jeden na jednoho“, plány rozvoje nebo pravidelná přezkoumání. Šablonu můžete vybrat při vytváření nového přezkoumání.
 
-Chcete-li vytisknout recenze, vyberte tlačítko **Tisk recenze**. Pokud se tlačítko na stránce **Recenze** nezobrazí, ujistěte se, že jste povolili tuto funkci v pracovním prostoru **Správa funkcí**. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Chcete-li vytisknout recenze, vyberte tlačítko **Tisk recenze**. Pokud se tlačítko na stránce **Recenze** nezobrazí, ujistěte se, že jste povolili tuto funkci v pracovním prostoru **Správa funkcí**. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Schopnost tisknout recenze výkonu je k dispozici pouze v Human Resources. Není k dispozici v Dynamics 365 Finance.

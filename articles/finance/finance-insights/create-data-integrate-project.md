@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818673"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867440"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Vytvoření projektu integrátoru dat (Preview)
 
@@ -59,6 +59,7 @@ Toto téma vysvětluje, jak vytvořit projekt integrátoru dat.
     1. Vytvořte projekty integrace dat pro následující šablony pomocí sady připojení, kterou jste právě vytvořili:
 
         - Výsledky přehledu plateb zákazníka (CDS do Fin and Ops)
+            - Pokud používáte verzi 10.0.17 nebo novější, musíte použít šablonu s názvem Výsledek platebních údajů zákazníka (CDS to Fin a Ops 10.0.17 +).
         - Výsledky časové řady cashflow (CDS do Fin and Ops)
         - Výsledky časové řady rozpočtu (CDS do Fin and Ops)
 

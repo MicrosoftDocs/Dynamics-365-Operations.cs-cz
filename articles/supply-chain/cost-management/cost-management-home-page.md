@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839360"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908775"
 ---
 # <a name="cost-management-home-page"></a>Domovská stránka správy nákladů
 
@@ -43,7 +43,7 @@ Ke skladovému účetnictví a účetnictví pro výrobu můžete přistupovat z
 
 Účetnictví pro výrobu vám umožní zpracovávat [výpočet nákladů výrobních příkazů](production-order-cost-analysis.md) ve výrobních zakázkách a dávkových objednávkách, a také [zpětné účtování nákladů](backflush-costing.md) v lean manufacturing.
 
-[Obsah Správy nákladů v Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) poskytuje manažerský přehled o zásobách a nedokončené výrobě a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
+[Obsah Správy nákladů v Power BI](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) poskytuje manažerský přehled o zásobách a nedokončené výrobě a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
 ### <a name="additional-resources"></a>Další prostředky
 
@@ -57,7 +57,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a další informace o správě nákladů naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Správa nákladů, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Názory, novinky a další informace o správě nákladů naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](/archive/blogs/axmfg/) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Správa nákladů, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 

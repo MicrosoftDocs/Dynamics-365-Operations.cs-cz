@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ce06a0ce4f2a308e1917ac2c7cbc66f0494a2ec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811503"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897325"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odkazy na původní faktury v dobropisech
 
@@ -30,7 +30,7 @@ V některých zemích a regionech existuje zákonný požadavek, aby tištěné 
 
 ## <a name="prerequisites"></a>Předpoklady
 
-- V pracovním prostoru **Správa funkcí** zapněte funkci **Rozvržení opravné fakturace v sestavách faktur dodavatele**. Další informace naleznete v tématu [Přehled správy funkcí](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- V pracovním prostoru **Správa funkcí** zapněte funkci **Rozvržení opravné fakturace v sestavách faktur dodavatele**. Další informace naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Tiskové formáty požadovaných dokumentů musí být nakonfigurovány ve správě tisku.
 
 Funkce popsané v tomto tématu platí pro následující dokumenty:

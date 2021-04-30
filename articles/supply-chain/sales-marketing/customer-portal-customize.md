@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 16d5c13c0fbff8c5033b0d1e9dd0d07851521126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840766"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908993"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
@@ -33,14 +33,14 @@ Zákaznický portál nabízí ihned několik webových stránek a akcí. Násled
 
 Následující témata vám pomohou naučit se základy Power Apps portálů a jak můžete portály přizpůsobit:
 
-- [Práce se šablonami](https://docs.microsoft.com/powerapps/maker/portals/work-with-templates) - Toto téma poskytuje obecný přehled o tom, jak Power Apps portály fungují a jak můžete provádět jednoduché přizpůsobení portálů.
-- [Správa obsahu portálu](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) - Toto téma vysvětluje, jak můžete spravovat a přizpůsobovat obsah, který se objeví na vašem portálu.
-- [Upravit CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) - Toto téma vám pomůže provádět složitější úpravy uživatelského rozhraní (UI) vašeho portálu.
-- [Vytvořte téma pro svůj portál](https://docs.microsoft.com/dynamics365/portals/create-theme) - Toto téma vám pomůže vytvořit motiv uživatelského rozhraní pro váš portál.
-- [Vytvářejte a exponujte obsah portálu snadno](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) - Toto téma vám pomůže spravovat základní data a tabulky, které používáte pro svůj portál.
-- [Nakonfigurujte kontakt pro použití na portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) - Toto téma vysvětluje, jak vytvářet a přizpůsobovat uživatelské role a jak funguje zabezpečení a ověřování Power Apps portálů.
-- [Nakonfigurujte poznámky pro formuláře tabulky a webové formuláře na portálech](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) - Toto téma vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
-- [Chyba při manipulaci s webovým portálem](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) - Toto téma vysvětluje, jak zobrazit protokoly chyb portálu a uložit je do vašeho účtu úložiště blob Microsoft Azure.
+- [Práce se šablonami](/powerapps/maker/portals/work-with-templates) - Toto téma poskytuje obecný přehled o tom, jak Power Apps portály fungují a jak můžete provádět jednoduché přizpůsobení portálů.
+- [Správa obsahu portálu](/dynamics365/portals/manage-portal-content) - Toto téma vysvětluje, jak můžete spravovat a přizpůsobovat obsah, který se objeví na vašem portálu.
+- [Upravit CSS](/powerapps/maker/portals/edit-css) - Toto téma vám pomůže provádět složitější úpravy uživatelského rozhraní (UI) vašeho portálu.
+- [Vytvořte téma pro svůj portál](/dynamics365/portals/create-theme) - Toto téma vám pomůže vytvořit motiv uživatelského rozhraní pro váš portál.
+- [Vytvářejte a exponujte obsah portálu snadno](/dynamics365/portals/create-expose-portal-content) - Toto téma vám pomůže spravovat základní data a tabulky, které používáte pro svůj portál.
+- [Nakonfigurujte kontakt pro použití na portálu](/powerapps/maker/portals/configure/configure-contacts) - Toto téma vysvětluje, jak vytvářet a přizpůsobovat uživatelské role a jak funguje zabezpečení a ověřování Power Apps portálů.
+- [Nakonfigurujte poznámky pro formuláře tabulky a webové formuláře na portálech](/powerapps/maker/portals/configure-notes) - Toto téma vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
+- [Chyba při manipulaci s webovým portálem](/powerapps/maker/portals/admin/view-portal-error-log) - Toto téma vysvětluje, jak zobrazit protokoly chyb portálu a uložit je do vašeho účtu úložiště blob Microsoft Azure.
 
 ## <a name="customize-the-order-creation-process"></a>Přizpůsobte proces vytváření objednávek
 
@@ -88,7 +88,7 @@ Zde jsou standardní kroky pro odeslání objednávky ze zákaznického portálu
 
 Aby byl zajištěn hladký uživatelský dojem, portál pro zákazníky automaticky vyplňuje hodnoty pro několik požadovaných polí. Tyto hodnoty vycházejí z informací v kontaktním záznamu zákazníka, který zadává objednávku.
 
-Pro každý [záznam řádku](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) patřící zákazníkovi, který bude používat zákaznický portál k zadávání objednávek, je nutné zadat hodnoty pro následující povinná pole. Jinak dojde k chybám.
+Pro každý [záznam řádku](/powerapps/maker/portals/configure/configure-contacts) patřící zákazníkovi, který bude používat zákaznický portál k zadávání objednávek, je nutné zadat hodnoty pro následující povinná pole. Jinak dojde k chybám.
 
 - **Společnost** – Právnická osoba, které náleží objednávka
 - **Potenciální zákazník** - Účet odběratele přidružený k objednávce
@@ -134,16 +134,16 @@ U položek jsou požadovány následující sloupce:
 
 Musíte se ujistit, že váš zákaznický portál nějak předá hodnoty pro všechny tyto sloupce.
 
-Chcete-li na stránku přidat sloupce nebo je odstranit, viz [Vytvářejte nebo upravujte rychle vytvářené formuláře pro efektivnější zadávání dat](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Chcete-li na stránku přidat sloupce nebo je odstranit, viz [Vytvářejte nebo upravujte rychle vytvářené formuláře pro efektivnější zadávání dat](/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
 Pokud chcete změnit, jak jsou sloupce přednastaveny a jak jsou hodnoty nastaveny při uložení stránky, podívejte se na následující informace v dokumentaci portálů Power Apps:
 
-- [Předem vyplněné pole](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
-- [Nastavit hodnotu při uložení](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
+- [Předem vyplněné pole](/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
+- [Nastavit hodnotu při uložení](/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
 
 ## <a name="customize-the-home-page"></a>Přizpůsobte domovskou stránku
 
-Všechny ovládací prvky v zákaznickém portálu jsou vestavěné ovládací prvky portálů Power Apps. Můžete je upravit podle kroků v článku [Vytvořte stránku](https://docs.microsoft.com/powerapps/maker/portals/compose-page) v dokumentaci portálů Power Apps.
+Všechny ovládací prvky v zákaznickém portálu jsou vestavěné ovládací prvky portálů Power Apps. Můžete je upravit podle kroků v článku [Vytvořte stránku](/powerapps/maker/portals/compose-page) v dokumentaci portálů Power Apps.
 
 Jediný vlastní ovládací prvek, který je součástí šablony zákaznického portálu, se používá k vytvoření dlaždic na domovské stránce.
 
@@ -151,7 +151,7 @@ Jediný vlastní ovládací prvek, který je součástí šablony zákaznického
 
 Chcete-li upravit dlaždice, postupujte takto.
 
-1. Otevřete [Aplikaci pro správu portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
+1. Otevřete [Aplikaci pro správu portálu](/powerapps/maker/portals/configure/configure-portal).
 1. V navigačním podokně nalevo vyberte položku **Šablony stránky**.
 
     ![Navigační podokno správy portálu](media/customer-portal-nav.png "Navigační podokno správy portálu")
@@ -167,11 +167,11 @@ Chcete-li upravit dlaždice, postupujte takto.
 
 Další informace o tom, jak můžete nastavit a přizpůsobit zákaznický portál, naleznete v následujících zdrojích:
 
-- [Dokumentace portálů Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Dokumentace portálů Power Apps](/powerapps/maker/portals/overview)
 - [Dokumentace dvojitého zápisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
-- [O životním cyklu portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Upgradujte portál](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrace konfigurace portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [O životním cyklu portálu](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Upgradujte portál](/powerapps/maker/portals/admin/upgrade-portal)
+- [Migrace konfigurace portálu](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Správa životního cyklu řešení: aplikace Dynamics 365 for Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840093"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894770"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Začínáme s Elektronickou fakturací pro Itálii
 
@@ -201,7 +201,7 @@ Po zapnutí funkce **Konfigurovatelná integrace Elektronické fakturace** a akt
 Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty elektronické faktury.
 
 > [!NOTE]
-> Než budete pokračovat, ověřte, že bylo dokončeno nastavení požadované pro italské elektronické faktury. Další informace naleznete v tématu [Zákaznické elektronické faktury](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Uvědomte si, že některé kroky nastavení popsané v tomto tématu nemusí být k dispozici z důvodu aktivace Elektronické fakturace.
+> Než budete pokračovat, ověřte, že bylo dokončeno nastavení požadované pro italské elektronické faktury. Další informace naleznete v tématu [Zákaznické elektronické faktury](./emea-ita-e-invoices.md). Uvědomte si, že některé kroky nastavení popsané v tomto tématu nemusí být k dispozici z důvodu aktivace Elektronické fakturace.
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.

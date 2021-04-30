@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837626"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910370"
 ---
 # <a name="modeling-a-lean-organization"></a>Modelování úsporné organizace
 
@@ -51,7 +51,7 @@ Hodnotový proud budoucího stavu může být modelován v aplikaci Dynamics AX 
 
 Samotný hodnotový proud je modelován jako provozní jednotka. Proto lze hodnotový proud použít jako finanční dimenzi.
 
-Další informace o provozních jednotkách naleznete v tématu [Vytvoření provozní jednotky](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Další informace o provozních jednotkách naleznete v tématu [Vytvoření provozní jednotky](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Výpočet nákladů pro lean manufacturing podle výrobního toku
 Periodická konsolidace nákladů pro výrobní tok vyrovnává související účet NV a umožňuje určení odchylky pro produkty poskytnuté výrobním tokem.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 728984678d78cf626e2b30222f1d1e603e05d117
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ab4cd4a390782936a74977ac2aef3790aa8ac1af
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755051"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891688"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Opětovné použití konfigurace ER se šablonami aplikace Excel ke generování zpráv ve formátu Word
 
@@ -90,7 +90,7 @@ V současné době se používá dokument Excel jako šablona pro generování v
 
 Nyní můžete namapovat prvky vybrané vlastní části XML **Sestava** a ovládacích prvků obsahu dokumentu aplikace Word.
 
-okud jste obeznámeni s dokumenty Word, které lze navrhovat jako formuláře obsahující [ovládací prvky obsahu](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) namapované na prvky [vlastních částí XML](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), proveďte všechny kroky dalšího dílčího úkolu pro vytvoření takového dokumentu. Další informace naleznete v tématu [Vytvoření formulářů, které uživatelé dokončí nebo vytisknou v aplikaci Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Jinak následující postup přeskočte.
+okud jste obeznámeni s dokumenty Word, které lze navrhovat jako formuláře obsahující [ovládací prvky obsahu](/office/client-developer/word/content-controls-in-word) namapované na prvky [vlastních částí XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), proveďte všechny kroky dalšího dílčího úkolu pro vytvoření takového dokumentu. Další informace naleznete v tématu [Vytvoření formulářů, které uživatelé dokončí nebo vytisknou v aplikaci Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Jinak následující postup přeskočte.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Získání dokumentu Word, který má vlastní část XML, a mapování dat
 

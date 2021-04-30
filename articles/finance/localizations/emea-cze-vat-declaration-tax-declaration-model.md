@@ -14,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c6e105b462fe48e68c3676d80773ca2bdcecd2dd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 43ce65f98fd64e2e6a04406d26d03485fe1890b1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839854"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890343"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -319,7 +319,7 @@ Chcete-li začít pracovat s přiznáním k DPH, měli byste si stáhnout formá
 - **Přiznání k DPH pro Excel (CZ)** – Tuto konfiguraci lze použít k náhledu částek přiznání k DPH v Microsoft Excel. Šablona aplikace Excel je k dispozici pouze v angličtině. Pokud musí být zpráva vytištěna v jiném jazyce, musíte provést malé přizpůsobení překladu šablony aplikace Excel do jiného jazyka a toto přizpůsobení musíte připojit k odvozené konfiguraci.
 - **Kontrolní hlášení DPH (CZ)** – Tato konfigurace je ve formátu XML DPHKH1.
 
-Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## <a name="set-up-application-specific-parameters-for-formats"></a>Nastavení parametrů specifických pro přihlášení pro dané formáty
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d43b96176c51d12c35383da75bf65a1ad92f84c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1efdf095e379b73d553ca3525abbeee8ca35bcbb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815277"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897497"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Převod dílčí hlavní knihy do hlavní knihy
 
@@ -28,7 +28,7 @@ ms.locfileid: "5815277"
 
 V tomto tématu jsou popsány funkce Microsoft Dynamics 365 Finance, které se vztahují k pravidlům převodu dávek položek dílčí hlavní knihy.
 
-Ve verzi 8.1 byly provedeny změny za účelem umožnění přenosu pravidel, na jejichž základě je **synchronní** možnost odepsána. Další informace naleznete v části [Odstraněné nebo zastaralé funkce pro Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20).
+Ve verzi 8.1 byly provedeny změny za účelem umožnění přenosu pravidel, na jejichž základě je **synchronní** možnost odepsána. Další informace naleznete v části [Odstraněné nebo zastaralé funkce pro Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 
 Pro převod dávek dílčí hlavní knihy jsou k dispozici následující možnosti. 
 

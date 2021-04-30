@@ -2,7 +2,7 @@
 title: Přehled správy obchodních dokumentů
 description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749530"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891298"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -45,9 +45,9 @@ Chcete-li použít správu obchodních dokumentů pro úpravy šablon ve formát
 
 ## <a name="business-document-availability"></a>Dostupnost obchodních dokumentů
 
-Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 najdete v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 najdete v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-Úplný seznam všech sestav plánovaných pro vydání v říjnu 2020 najdete v části [Konfigurovatelné vykazování obchodních dokumentů - šablony Word](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2020 najdete v části [Konfigurovatelné vykazování obchodních dokumentů - šablony Word](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Další sestavy budou k dispozici v budoucích verzích. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. Informace o tom, jak zkontrolovat seznam aktuálně dostupných sestav, najdete v části [Seznam konfigurací ER, které byly vydány v aplikaci Finance na podporu konfigurovatelných obchodních dokumentů](#list-of-configurations-cbd) níže.
 
@@ -272,7 +272,23 @@ Pro vybranou šablonu je k dispozici možnost **Upravit šablonu**. Tato možnos
 
 ![Potvrzení začátku procesu úprav a k vytvoření nové šablony](./media/BDM-Overview-EditingTemplate4.png)
 
+Pokud neexistuje žádný poskytovatel, bude nabídnuto vytvoření. Pokud neexistuje žádný aktivní poskytovatel, bude nabídnuta možnost jeho aktivace.
+
+Chcete-li vytvořit poskytovatele, změňte název poskytovatele v poli **Název**, aktualizujte internetovou adresu nového poskytovatele v poli **Internetová adresa** a vyberte **OK** k potvrzení.
+
+   ![Vytvoření nového poskytovatele v BDM](./media/bdm_create_provider.png)
+
+Chcete-li aktivovat stávajícího poskytovatele, vyberte jeho jméno v poli **Poskytovatel konfigurace** a vyberte **OK** k nastavení poskytovatele jako aktivního.
+
+   ![Aktivace poskytovatele v BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Každá šablona BDM bude odkazovat na zprostředkovatele jako na autora konfigurace. Proto je pro šablonu vyžadován aktivní poskytovatel.
+
+
 Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytovanou aktuálním a jiným poskytovatelem (v tomto případě Microsoft), který nemá žádnou revizi. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
+
+
 
 ### <a name="start-editing-a-template"></a>Zahájení úpravy šablony
 
@@ -419,7 +435,7 @@ Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně A
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Seznam konfigurací ER, které byly vydány v aplikaci Finance na podporu konfigurovatelných obchodních dokumentů
 
-[Seznam](general-electronic-reporting.md#list-of-configurations) konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globální úložiště](er-download-configurations-global-repo.md) ke kontrole seznamu konfigurací ER, které jsou aktuálně podporovány. Můžete [filtrovat](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) globální úložiště pro kontrolu seznamu konfigurací ER, které se používají k podpoře konfigurovatelných obchodních dokumentů.
+[Seznam](general-electronic-reporting.md#list-of-configurations) konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globální úložiště](er-download-configurations-global-repo.md) ke kontrole seznamu konfigurací ER, které jsou aktuálně podporovány. Můžete [filtrovat](../../../finance/localizations/enhanced-filtering-global-repo.md) globální úložiště pro kontrolu seznamu konfigurací ER, které se používají k podpoře konfigurovatelných obchodních dokumentů.
 
 ![Filtrování obsahu globálního úložiště na stránce úložiště konfigurace](./media/bdm-overview-filterglobalrepo.gif)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8310def6f33b807f7f749e659432e482245d007
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dc723728801909c67cb823a043a2ae3e7eaf9f05
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803866"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892196"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 
@@ -38,7 +38,7 @@ Toto chování je záměrné.
 
 **Řešení**
 
-Bohužel uživatelé nemohou snadno změnit velikost textu. Můžete však exportovat hierarchii pozic mimo aplikaci Human Resources a potom ji importovat do aplikace Microsoft Visio. Ačkoli je následující článek určen pro aplikaci Microsoft Dynamics AX 2012, proces platí i pro Human Resources: [Exportovat hierarchii pozic do aplikace Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Bohužel uživatelé nemohou snadno změnit velikost textu. Můžete však exportovat hierarchii pozic mimo aplikaci Human Resources a potom ji importovat do aplikace Microsoft Visio. Ačkoli je následující článek určen pro aplikaci Microsoft Dynamics AX 2012, proces platí i pro Human Resources: [Exportovat hierarchii pozic do aplikace Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Tento postup slouží k exportu do aplikace Visio.
 

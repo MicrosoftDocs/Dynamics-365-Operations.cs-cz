@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791526"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892268"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
@@ -39,7 +39,7 @@ Aktualizace jsou vydávány v pravidelných intervalech pro všechna prostředí
 
 Aktualizace aplikace Human Resources se automaticky použijí na všechna prostředí. Aplikace Human Resources poskytuje dva typy vydání:
 
-- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Čtrnáctidenní intervaly aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o čtrnáctidenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Čtrnáctidenní intervaly aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o čtrnáctidenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Všechna podporovaná datacentra se aktualizují každé dva týdny, není-li uvedeno jinak. Do čtrnáctidenních aktualizací jsou zahrnuty USA, Austrálie, Evropa, Spojené království, Asie a Kanada. 
 
@@ -71,11 +71,11 @@ Zde uvádíme, co bylo provedeno v případě aplikace Human Resources a co js
 
 - [Dynamics 365 Human Resources plán](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Plány vydání Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Plány vydání Dynamics 365](/dynamics365/release-plans/)
 
 - [Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Hledání problémů ve službě Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (pouze chyby týkající se platformy)
+- [Hledání problémů ve službě Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (pouze chyby týkající se platformy)
 
 - [Blog aplikace Human Resources](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ Zde uvádíme, co bylo provedeno v případě aplikace Human Resources a co js
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Ověření předběžných verzí funkcí v izolovaném testovacím prostředí (sandbox)
 
-Předběžnou verzi funkcí můžete ověřit v izolovaném testovacím prostředí předtím, než ji povolíte ve svém produkčním prostředí. Další informace o povolování funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Předběžnou verzi funkcí můžete ověřit v izolovaném testovacím prostředí předtím, než ji povolíte ve svém produkčním prostředí. Další informace o povolování funkcí naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Všechny nové funkce zůstanou v náhledu nejméně 30 dnů a obvykle jsou zde 30-60 dní. Hlavní funkce jsou obvykle k dispozici v říjnu a dubnu každého roku po období náhledu. Jakmile se v pracovním prostoru Správa funkcí zobrazí nové funkce, můžete je zapnout. Některé funkce mohou být ve výchozím nastavení zapnuty.
 
@@ -101,9 +101,9 @@ Při testování předběžných verzí funkcí nebo při zkoušení nových fun
 
 ## <a name="see-also"></a>Viz také
 
-[Služba Dynamics 365 a plány vydání Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Služba Dynamics 365 a plány vydání Power Platform](/dynamics365/release-plans)</br>
 [Co je nového nebo co se změnilo v aplikaci Human Resource služby Dynamics 365](hr-admin-whats-new.md)</br>
-[Zásady životního cyklu softwaru](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Zásady životního cyklu softwaru](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

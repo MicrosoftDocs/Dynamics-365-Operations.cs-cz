@@ -2,7 +2,7 @@
 title: Systém nápovědy
 description: Toto téma poskytuje přehled o systému nápovědy pro aplikace Finance and Operations.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46168dd9001921471114c219c57856b7bedf6465
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749821"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897809"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -161,7 +161,7 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Tento web hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/) | Tento web hostuje blogy, fóra a videa. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Tento web obsahuje hodnocení a informace o prodeji. |
-| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Tento web hostuje zdroje školení, sestavy ke stažení a dokumenty whitepaper, a je primárním webem podpory pro držitele plánu služeb. Přístup k některým zdrojům na tomto webu může vyžadovat plán služeb. |
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

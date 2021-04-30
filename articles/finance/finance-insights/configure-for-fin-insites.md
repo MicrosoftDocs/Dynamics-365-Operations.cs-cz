@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818789"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908823"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfigurace finančních přehledů (Preview)
 
@@ -69,7 +69,7 @@ Můžete provést následující kroky ruční konfigurace nebo můžete zrychli
     13. Vyberte **Prostředky \> Všechna starší nastavení**.
     14. Na horním navigačním panelu vyberte **Nastavení** a potom vyberte **Vlastní nastavení**.
     15. Vyberte **Vývojářské prostředky**.
-    16. Nastavte pole **ID referenčních informací o instanci** na hodnotu ID organizace Dataverse, kterou jste si dříve poznamenali.
+    16. Zkopírujte hodnotu **ID organizace Dataverse**.
     17. V adresním řádku prohlížeče si poznamenejte URL pro organizaci Dataverse. Adresa URL může být například `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Pokud plánujete použít funkci prognóz cashflow nebo rozpočtu, postupujte podle těchto kroků a aktualizujte limit anotací pro vaši organizaci na nejméně 50 megabajtů (MB):
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Použití skriptu prostředí Windows PowerShell](#tab/use-a-powershell-script)
 
-Byl poskytnut skript prostředí Windows PowerShell, takže můžete snadno nastavit prostředky Azure, které jsou popsány v části [Konfigurace exportu do Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). Pokud dáváte přednost ručnímu nastavení, tento postup přeskočte a pokračujte postupem v sekci [Ruční nastavení](#manual-setup).
+Byl poskytnut skript prostředí Windows PowerShell, takže můžete snadno nastavit prostředky Azure, které jsou popsány v části [Konfigurace exportu do Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Pokud dáváte přednost ručnímu nastavení, tento postup přeskočte a pokračujte postupem v sekci [Ruční nastavení](#manual-setup).
 
 > [!NOTE]
 > Podle následujících pokynů spusťte skript prostředí PowerShell. Možnost „Try it“ (vyzkoušet) Azure CLI nebo spuštění skriptu na vašem počítači nemusí fungovat.
 
-Podle těchto pokynů nakonfigurujte Azure pomocí skriptu Windows PowerShell. Musíte mít práva k vytvoření skupiny prostředků Azure, prostředků Azure a aplikace Azure AD. Informace o požadovaných oprávněních najdete v části [Kontrola oprávnění Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Podle těchto pokynů nakonfigurujte Azure pomocí skriptu Windows PowerShell. Musíte mít práva k vytvoření skupiny prostředků Azure, prostředků Azure a aplikace Azure AD. Informace o požadovaných oprávněních najdete v části [Kontrola oprávnění Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. V [portálu Azure](https://portal.azure.com) přejděte na své cílové předplatné Azure. Vyberte tlačítko **Cloud Shell** napravo od pole **Vyhledávání**.
 2. Vyberte **PowerShell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Konfigurace úložiště entit
 
-Pomocí těchto kroků nastavíte úložiště entit ve vašem prostředí Finance.
-
-1. Přejděte do nabídky **Správa systému \> Nastavení \> Systémové parametry \> Datová připojení**.
-2. Nastavte možnost **Povolit integraci s Data Lake** na **Ano**.
-3. Nastavte následující pole Key Vault:
-
-    - **ID aplikace (klienta)** – Zadejte ID klienta aplikace, které jste vytvořili dříve.
-    - **Tajný klíč aplikace** – Zadejte tajný klíč, které jste uložili pro aplikaci, kterou jste vytvořili dříve.
-    - **Název DNS** – Název systému DNS (Domain Name System) najdete na stránce s podrobnostmi o aplikaci, kterou jste vytvořili dříve.
-    - **Název tajného klíče** – Zadejte **storage-account-connection-string**.
 
 ## <a name="configure-the-data-lake"></a>Konfigurace datového jezera
 
@@ -992,7 +981,20 @@ Doplněk bude nainstalován během několika minut.
     | Zadejte ID objektu uživatele, který má roli správce systému | ID objektu uživatele Azure AD v Dataverse. Tento uživatel musí být správcem systému instance Dataverse. Tuto hodnotu najdete otevřením [portálu Azure](https://portal.azure.com), otevřením nabídky **Azure Active Directory \> Uživatelé**, výběrem uživatele a poté v sekci **Identita** zkopírováním hodnoty **ID objektu**. |
     | Je toto výchozí prostředí CDS pro klienta?      | Pokud instance Dataverse byla první produkční instance, která byla vytvořena, zaškrtněte toto políčko. Pokud instance Dataverse byla vytvořena ručně, zrušte zaškrtnutí tohoto políčka. |
 
-## <a name="feedback-and-support"></a>Názory a podpora
+## <a name="configure-the-entity-store"></a>Konfigurace úložiště entit
+
+Pomocí těchto kroků nastavíte úložiště entit ve vašem prostředí Finance.
+
+1. Přejděte do nabídky **Správa systému \> Nastavení \> Systémové parametry \> Datová připojení**.
+2. Nastavte možnost **Povolit integraci s Data Lake** na **Ano**.
+3. Nastavte následující pole trezoru klíčů:
+
+    - **ID aplikace (klienta)** – Zadejte ID klienta aplikace, které jste vytvořili dříve.
+    - **Tajný klíč aplikace** – Zadejte tajný klíč, které jste uložili pro aplikaci, kterou jste vytvořili dříve.
+    - **Název DNS** – Název systému DNS (Domain Name System) najdete na stránce s podrobnostmi o aplikaci, kterou jste vytvořili dříve.
+    - **Název tajného klíče** – Zadejte **storage-account-connection-string**.
+
+## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 
 Zašlete prosím e-mail na [Přehledy plateb zákazníka (Preview)](mailto:fiap@microsoft.com), pokud máte zájem o poskytnutí názoru nebo potřebujete podporu.
 

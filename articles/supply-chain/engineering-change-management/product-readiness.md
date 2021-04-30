@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842002"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909712"
 ---
 # <a name="product-readiness"></a>Připravenost produktu
 
@@ -142,7 +142,7 @@ Pro každý řádek, který přidáte, nastavte následující pole.
 | Společnost | Pokud nastavíte pole **Provést v** na *Jedna společnost*, vyberte společnost. |
 | Typ vlastníka | Vyberte, zda kontroly připravenosti, které řádek generuje, by měly být přiřazeny osobě nebo týmu. |
 | Vlastník | Vyberte osobu nebo tým, kterým mají být přiřazeny kontroly připravenosti generované řádkem. |
-| Dotazník | Vyberte dotazník, který se má použít pro kontrolní seznam. Kontrolní seznam je místní kontrolní seznam ve společnosti, kde se provádí kontrola připravenosti. Systém musí být schopen vyhodnotit, zda je kontrolní seznam správně zodpovězen. Proto musí být kontrolní seznam nastaven tak, aby bylo hodnocení provedeno na základě správných odpovědí. Další informace o tom, jak vytvářet dotazníky, najdete v části [Použití dotazníků](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) a souvisejících tématech. |
+| Dotazník | Vyberte dotazník, který se má použít pro kontrolní seznam. Kontrolní seznam je místní kontrolní seznam ve společnosti, kde se provádí kontrola připravenosti. Systém musí být schopen vyhodnotit, zda je kontrolní seznam správně zodpovězen. Proto musí být kontrolní seznam nastaven tak, aby bylo hodnocení provedeno na základě správných odpovědí. Další informace o tom, jak vytvářet dotazníky, najdete v části [Použití dotazníků](/dynamicsax-2012/appuser-itpro/using-questionnaires) a souvisejících tématech. |
 | Automatické schválení | Záznamy o kontrole připravenosti zahrnují zaškrtávací políčko **Schváleno** označující stav schválení. Vyberte zaškrtávací políčko **Automatické schválení** pro kontroly, které by měly být nastaveny na schválené ihned poté, co je přidělený uživatel dokončí. Zrušte zaškrtnutí tohoto políčka, chcete-li jako další krok vyžadovat výslovné schválení. |
 | Povinné | Toto políčko zaškrtněte u kontrol, které musí přiřazený uživatel dokončit. Povinné kontroly nelze přeskočit. |
 

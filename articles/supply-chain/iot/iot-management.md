@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 94665b3646456b689a8e65e94b098e86e467d5e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86e20b9e60e890833c0eb8573e92c0fbb27f8c9a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813068"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908412"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>Monitorování a správa IoT Intelligence
 
@@ -56,9 +56,9 @@ Když je spuštěn scénář, tyto změny jsou zakázané:
 
 Můžete simulovat signály výrobního stroje. Další informace naleznete v tématech:
 
-+ [Připojení IoT DevKit AZ3166 k centru Azure IoT](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [Připojení online simulátoru Raspberry Pi k centru Azure IoT (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [Přehled akcelerátoru řešení simulace zařízení](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
++ [Připojení IoT DevKit AZ3166 k centru Azure IoT](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [Připojení online simulátoru Raspberry Pi k centru Azure IoT (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [Přehled akcelerátoru řešení simulace zařízení](/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

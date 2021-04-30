@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829973"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909912"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 
@@ -33,17 +33,17 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-- [Přizpůsobitelné realizační rozhraní dílny](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Další informace viz [Nastavení zařízení pro spuštění provádění výrobního provozu](../production-control/production-floor-execution-setup.md).
+- [Přizpůsobitelné realizační rozhraní dílny](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Další informace viz [Nastavení zařízení pro spuštění provádění výrobního provozu](../production-control/production-floor-execution-setup.md).
 
-- [Doplněk viditelnosti zásob pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Další informace viz [Doplněk viditelnosti zásob](../inventory/inventory-visibility.md)
+- [Doplněk viditelnosti zásob pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Další informace viz [Doplněk viditelnosti zásob](../inventory/inventory-visibility.md)
 
 - Sjednocená číselná řady pro ID úloh<br> - Další informace viz [Sjednocená číselná řada pro ID úloh](../production-control/unified-job-ids.md).
 
-- [Ověřte registrační značky na řádcích zdrojových dokumentů](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Další informace viz [Přehled konfigurace skladu](../warehousing/warehouse-configuration.md).
+- [Ověřte registrační značky na řádcích zdrojových dokumentů](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Další informace viz [Přehled konfigurace skladu](../warehousing/warehouse-configuration.md).
 
-- [Vizualizace odchozí pracovní zátěže správy skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Další informace viz [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md)
+- [Vizualizace odchozí pracovní zátěže správy skladu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Další informace viz [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md)
 
 Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
@@ -99,7 +99,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizací
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 

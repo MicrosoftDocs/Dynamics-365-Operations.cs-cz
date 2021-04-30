@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
 author: roschlom
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
+ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836906"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5898280"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -31,7 +31,20 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.20
+
+### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Konfigurace formátu požadavku na data faktur dotazu RTIR (HU)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Vyloučeno ze zpracování elektronických zpráv o spolupráci s maďarským online fakturačním systémem |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 15. dubna 2022 plánujeme, že již nebudeme podporovat konfiguraci formátu „požadavek na data faktur dotazu RTIR (HU)“. |
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.17
 

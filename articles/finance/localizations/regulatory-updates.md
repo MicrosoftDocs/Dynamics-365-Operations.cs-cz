@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c5e8f4e7b27cdffe97d73e67d33f023155b60ef0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822750"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890769"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -25,7 +25,7 @@ ms.locfileid: "5822750"
 
 V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v podporovaných lokalizacích Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace viz [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
+Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft se snaží implementovat nové legislativní požadavky co nejdříve. Skutečný termín dodání závisí na datu oznámení zákona, dostupnosti podrobností o požadavcích od místních úřadů, dostupnosti validačních nástrojů a na velikosti a složitosti změny.
 

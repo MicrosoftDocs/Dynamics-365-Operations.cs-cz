@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818553"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898053"
 ---
 # <a name="finance-insights-home-page-preview"></a>Domovská stránka Finanční přehledy (náhled)
 
@@ -31,7 +31,7 @@ Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, kter
 
 Náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
 
-Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -43,7 +43,7 @@ Chcete-li požádat o program náhledu, vyplňte [Náhled finančních přehled�
 
 ### <a name="system-requirements"></a>Systémové požadavky
 
-Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí sandbox úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí sandbox úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Požadavky verzí
 
@@ -79,7 +79,7 @@ Budete muset vytvořit projekt integrátoru dat, aby do něj mohla proudit data,
 Po dokončení konfiguračních kroků a nastavení demo dat musíte zapnout a nastavit všechny funkce, které plánujete použít: předpovědi plateb zákazníků, prognózy peněžních toků a návrhy rozpočtu.
 
 ### <a name="enable-customer-payment-predictions"></a>Povolit předpovědi plateb od zákazníka
-Pokud používáte demo data k testování předpovědí plateb zákazníků, možná budete muset importovat další demo data, abyste mohli úspěšně vytvořit svůj model AI. Konkrétní kroky pro import ukázkových dat najdete v části [Nastavit ukázková data pro předpovědi plateb](set-up-demo-data.md).
+Pokud používáte demo data k testování předpovědí plateb zákazníků, možná budete muset importovat další demo data, abyste mohli úspěšně vytvořit svůj model AI. 
 
 Chcete-li povolit předpovědi plateb od zákazníka, musíte dokončit sadu kroků k vytvoření modelu strojového učení, který využívá data vaší organizace k vygenerování předpovědí o tom, kdy zákazníci pravděpodobně zaplatí neuhrazené faktury a kdy budou pravděpodobně zaplaceny konkrétní faktury. Další informace a konkrétní kroky k dokončení najdete v části [Povolit předpovědi plateb od zákazníka](enable-cust-paymnt-prediction.md). 
 

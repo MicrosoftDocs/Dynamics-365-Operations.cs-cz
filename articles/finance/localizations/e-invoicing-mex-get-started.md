@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840045"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894876"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Začínáme s Elektronickou fakturací pro Mexiko
 
@@ -86,7 +86,7 @@ Můžete vytvořit novou verzi, pokud je třeba například aktualizovat adresy 
 
     ![Otevření stránky Návrhář formátu](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Použijte stránku **Návrhář formátů**, chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Použijte stránku **Návrhář formátů**, chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Stránka návrháře formátu](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Chcete-li nastavit Elektronickou fakturaci v aplikaci Finance, proveďte tyto ú
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importujte datový model ER, mapování datového modelu ER a kontextové konfigurace pro e-faktury CFDI.
 
 1. Přihlášení do aplikace Finance.
-2. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**. Ujistěte se, že je tento poskytovatel konfigurace nastaven na **Aktivní**. Další informace o tom, jak nastavit poskytovatele jako **Aktivní** naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**. Ujistěte se, že je tento poskytovatel konfigurace nastaven na **Aktivní**. Další informace o tom, jak nastavit poskytovatele jako **Aktivní** naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Vyberte **Úložiště**.
 4. Vyberte **Globální prostředek \> Otevřít**.
 5. Importujte **Model faktury**, **Mapování modelu faktury**, **Formát faktury CFDI (MX)**, **Formát žádosti o zrušení faktury CFDI (MX)** a **Formát zrušení faktury CFDI (MX)**.
@@ -215,7 +215,7 @@ Během zpracování CFDI faktur ve Finance prostřednictvím Elektronické faktu
 Po zapnutí funkce **Konfigurovatelná integrace Elektronické fakturace** již nelze používat postup pro **Export/import elektronické faktury** pro odesílání faktur CFDI (**Pohledávky \> Faktury \> Elektronické faktury)**. Je nahrazen novým procesem, který je pojmenován **Odesílejte elektronické dokumenty**.
 
 > [!NOTE]
-> Před použitím nového procesu **Odeslat elektronické dokumenty** ověřte, že bylo dokončeno nastavení požadované pro mexické e-faktury. Další informace naleznete v tématu [Rozložení CFDI verze 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Před použitím nového procesu **Odeslat elektronické dokumenty** ověřte, že bylo dokončeno nastavení požadované pro mexické e-faktury. Další informace naleznete v tématu [Rozložení CFDI verze 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
 2. Pro první odeslání jakéhokoli dokumentu vždy nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.

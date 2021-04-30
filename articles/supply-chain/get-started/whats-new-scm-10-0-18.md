@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832123"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909346"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.18 (květen 2021)
 
@@ -35,15 +35,15 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-- Automatické vydávání objednávek (vylepšení pro [Realizace skladu s jednotkami škálování v cloudu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatické vydávání objednávek (vylepšení pro [Realizace skladu s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Vylepšení výkonu a archivace v podnikovém měřítku](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Další informace viz [Archivace skladových transakcí](../inventory/archive-inventory-transactions.md)
+- [Vylepšení výkonu a archivace v podnikovém měřítku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Další informace viz [Archivace skladových transakcí](../inventory/archive-inventory-transactions.md)
 
-- [Správa rabatu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md)
+- [Správa rabatu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md)
 
-- Zjednodušené rozhraní pouze pro označení příchodu do práce a odchodu z práce (vylepšení pro [Vylepšené rozhraní pro provádění výrobního provozu pro výrobu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
+- Zjednodušené rozhraní pouze pro označení příchodu do práce a odchodu z práce (vylepšení pro [Vylepšené rozhraní pro provádění výrobního provozu pro výrobu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
 
 Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. 
 
@@ -70,7 +70,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizac�
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 1. vlny vydání v r. 2021](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 1. vlny vydání v r. 2021](/dynamics365-release-plan/2021wave1/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 

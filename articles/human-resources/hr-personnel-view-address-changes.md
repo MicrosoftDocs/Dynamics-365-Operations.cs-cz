@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eca902ee7df7eb6835caf6f64b17f3f004b0776
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802448"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892122"
 ---
 # <a name="view-and-manage-address-changes"></a>Zobrazení a správa změn adres
 
@@ -125,9 +125,9 @@ Pracovníci HR si mohou prohlížet a sledovat změny adres z pracovního prosto
 Když vyberete **Změny adresy** na nové stránce se zobrazí podrobnosti o všech změnách adresy. Můžete si vybrat **Zahrnout budoucí změny adresy** v pravém horním rohu pro zobrazení změn adresy s budoucím datem.
 
 > [!NOTE]
-> Pokud chcete dostávat upozornění nebo e-maily o těchto změnách adresy, můžete vytvořit nové pravidlo upozornění na kartě **Možnosti** v podokně akcí. Další informace o tom, jak vytvářet pravidla upozornění, naleznete v tématu [Vytvoření nových pravidel upozornění](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Pokud chcete dostávat upozornění nebo e-maily o těchto změnách adresy, můžete vytvořit nové pravidlo upozornění na kartě **Možnosti** v podokně akcí. Další informace o tom, jak vytvářet pravidla upozornění, naleznete v tématu [Vytvoření nových pravidel upozornění](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Pokud chcete nakonfigurovat pracovní postup pro změny adresy, můžete vybrat pravidlo **Odeslat externě** v pravidlu upozornění a poté použít Power Automate ke spuštění obchodní události a konfigurace pracovního postupu. Další informace naleznete v tématu [Upozornění jako obchodní události](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Pokud chcete nakonfigurovat pracovní postup pro změny adresy, můžete vybrat pravidlo **Odeslat externě** v pravidlu upozornění a poté použít Power Automate ke spuštění obchodní události a konfigurace pracovního postupu. Další informace naleznete v tématu [Upozornění jako obchodní události](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

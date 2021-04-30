@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d7fc01906a017d4214d4794097a11b4a3416b95
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b117f408b8ac8baabf7e8af3b383526f404441a4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801112"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889853"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Vytvoření aplikace pro export opakujících se dat
 
@@ -43,12 +43,12 @@ Tento výukový kurz používá následující technologie:
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Hlavní zdroj dat pro pracovníky, kteří budou exportováni.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – technologie, která poskytuje orchestraci a plánování opakovaného exportu.
 
-    - **[Konektory](https://docs.microsoft.com/azure/connectors/apis-list)** – technologie, která se používá k propojení logic app s požadovanými koncovými body.
+    - **[Konektory](/azure/connectors/apis-list)** – technologie, která se používá k propojení logic app s požadovanými koncovými body.
 
-        - Konektor [HTTP s Azure AD](https://docs.microsoft.com/connectors/webcontents/)
-        - Konektor [OneDrive pro firmy](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness)
+        - Konektor [HTTP s Azure AD](/connectors/webcontents/)
+        - Konektor [OneDrive pro firmy](/azure/connectors/connectors-create-api-onedriveforbusiness)
 
-- **[Rozhraní REST API balíčku DMF](../dev-itpro/data-entities/data-management-api.md)** – technologie, která slouží k aktivaci exportu a sledování jejího průběhu.
+- **[Rozhraní REST API balíčku DMF](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – technologie, která slouží k aktivaci exportu a sledování jejího průběhu.
 - **[OneDrive pro firmy](https://onedrive.live.com/about/business/)** – cíl pro exportované pracovníky.
 
 ## <a name="prerequisites"></a>Předpoklady
@@ -84,11 +84,11 @@ Sada cvičení zahrnuje vytvoření logic app.
     ![Stránka vytvoření logic app](media/integration-logic-app-creation-1.png)
 
 2. V aplikaci Logic Apps Designer začněte s prázdnou logic app.
-3. Přidejte [aktivační událost plánu opakování](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) pro spuštění logic app každých 24 hodin (nebo podle zvoleného plánu).
+3. Přidejte [aktivační událost plánu opakování](/azure/connectors/connectors-native-recurrence) pro spuštění logic app každých 24 hodin (nebo podle zvoleného plánu).
 
     ![Dialogové okno opakování](media/integration-logic-app-recurrence-step.png)
 
-4. Volejte [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API pro naplánování exportu vašeho datového balíčku.
+4. Volejte [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API pro naplánování exportu vašeho datového balíčku.
 
     1. Použijte akci **Vyvolat požadavek HTTP** z HTTP s konektorem Azure AD.
 
@@ -122,13 +122,13 @@ Sada cvičení zahrnuje vytvoření logic app.
     > [!TIP]
     > Můžete chtít přejmenovat každý krok tak, aby byl výstižnější než výchozí název, **Vyvolat požadavek HTTP**. Tento krok můžete například přejmenovat na **ExportToPackage**.
 
-5. [Inicializujte proměnnou](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) pro uložení stavu spuštění požadavku **ExportToPackage**.
+5. [Inicializujte proměnnou](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) pro uložení stavu spuštění požadavku **ExportToPackage**.
 
     ![Akce inicializace proměnné](media/integration-logic-app-initialize-variable-step.png)
 
 6. Počkejte, než bude stav spuštění exportu dat **Úspěšný**.
 
-    1. Přidejte [do smyčky](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop), což se opakuje, než bude hodnota proměnné **ExecutionStatus** **Úspěšné**.
+    1. Přidejte [do smyčky](/azure/logic-apps/logic-apps-control-flow-loops#until-loop), což se opakuje, než bude hodnota proměnné **ExecutionStatus** **Úspěšné**.
     2. Přidejte akci **zpoždění**, která počká pět sekund předtím, než se dotazuje na stav aktuálního spuštění exportu.
 
         ![Kontejner do smyčky](media/integration-logic-app-until-loop-step.png)
@@ -136,9 +136,9 @@ Sada cvičení zahrnuje vytvoření logic app.
         > [!NOTE]
         > Nastavte počet limitů na **15** a počkejte na dokončení exportu maximálně 75 sekund (15 iterací x 5 sekund). Pokud export trvá déle, upravte podle potřeby počet limitů.        
 
-    3. Přidejte akci **Vyvolat požadavek HTTP** pro volání [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API a nastavte proměnnou **ExecutionStatus** na výsledek odpovědi **GetExecutionSummaryStatus**.
+    3. Přidejte akci **Vyvolat požadavek HTTP** pro volání [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API a nastavte proměnnou **ExecutionStatus** na výsledek odpovědi **GetExecutionSummaryStatus**.
 
-        > Tato ukázka neprovádí kontrolu chyb. Rozhraní API **GetExecutionSummaryStatus** může vracet neúspěšné stavy terminálu (ostatní stavy, než **úspěšné**). Další informace naleznete v [dokumentaci k rozhraní API](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+        > Tato ukázka neprovádí kontrolu chyb. Rozhraní API **GetExecutionSummaryStatus** může vracet neúspěšné stavy terminálu (ostatní stavy, než **úspěšné**). Další informace naleznete v [dokumentaci k rozhraní API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Metoda:** POST
         - **URL adresa požadavku:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,7 +156,7 @@ Sada cvičení zahrnuje vytvoření logic app.
 
 7. Získejte URL adresu stažení exportovaného balíčku.
 
-    - Přidejte akci **Vyvolat požadavek HTTP** pro volání [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
+    - Přidejte akci **Vyvolat požadavek HTTP** pro volání [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Metoda:** POST
         - **URL adresa požadavku:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -166,7 +166,7 @@ Sada cvičení zahrnuje vytvoření logic app.
 
 8. Stáhněte exportovaný balíček.
 
-    - Přidejte požadavek HTTP **GET** (vestavěnou [akci konektoru HTTP](https://docs.microsoft.com/azure/connectors/connectors-native-http)) a stáhněte balíček z URL adresy, která se vrátila v předchozím kroku.
+    - Přidejte požadavek HTTP **GET** (vestavěnou [akci konektoru HTTP](/azure/connectors/connectors-native-http)) a stáhněte balíček z URL adresy, která se vrátila v předchozím kroku.
 
         - **Metoda:** GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -179,9 +179,9 @@ Sada cvičení zahrnuje vytvoření logic app.
         > [!NOTE]
         > Tento požadavek nevyžaduje žádné další ověření, protože adresa URL, kterou vrací **GetExportedPackageUrl** API, zahrnuje token podpisů sdílených přístupů, který uděluje přístup ke stažení souboru.
 
-9. Uložte stažený balíček pomocí konektoru [OneDrive pro firmy](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness).
+9. Uložte stažený balíček pomocí konektoru [OneDrive pro firmy](/azure/connectors/connectors-create-api-onedriveforbusiness).
 
-    - Přidejteakci [vytvoření souboru](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file)  OneDrive pro firmy.
+    - Přidejteakci [vytvoření souboru](/connectors/onedriveforbusinessconnector/#create-file)  OneDrive pro firmy.
     - Podle potřeby se připojte ke svému účtu OneDrive pro firmy.
 
         - **Cesta ke složce**: složka podle vašeho výběru

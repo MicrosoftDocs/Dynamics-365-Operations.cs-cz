@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805099"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890045"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources je virtuální zdroj dat v Microsoft Dataverse. Pos
 Pro povolení operací CRUD v entitách Human Resources z Dataverse musíte entity zpřístupnit jako virtuální tabulky v Dataverse. To vám umožní provádět operace CRUD z Dataverse a Microsoft Power Platform na datech v Human Resources. Operace také podporují úplné ověření obchodní logiky Human Resources, aby byla zajištěna integrita dat při jejich zápisu do entit.
 
 > [!NOTE]
-> Entity Human Resources odpovídají Dataverse tabulkám. Pro více informací o Dataverse (dříve Common Data Service) a aktualizacích terminologie, viz [Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Entity Human Resources odpovídají Dataverse tabulkám. Pro více informací o Dataverse (dříve Common Data Service) a aktualizacích terminologie, viz [Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Dostupné virtuální tabulky pro Human Resources
 
@@ -51,7 +51,7 @@ Virtuální tabulky pro Human Resources nejsou totéž jako nativni tabulky Data
 Nativní tabulky pro Human Resources jsou generovány samostatně a udržovány v řešení HCM Common v Dataverse. U nativních tabulek jsou data uložena v Dataverse a vyžaduje synchronizaci s databází aplikace Human Resources.
 
 > [!NOTE]
-> Seznam nativních tabulek Dataverse pro Human Resources viz [Tabulky Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Seznam nativních tabulek Dataverse pro Human Resources viz [Tabulky Dataverse](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Nastavení
 
@@ -71,7 +71,7 @@ Další informace o povolení a zákazu funkcí naleznete v tématu [Správa fun
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrace aplikace v Microsoft Azure
 
-Musíte registrovat instanci Human Resources v portálu Azure, aby platforma identit od Microsoftu mohla poskytovat ověřovací a autorizační služby pro tuto aplikaci a uživatele. Další informace o registraci aplikací v Azure najdete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Musíte registrovat instanci Human Resources v portálu Azure, aby platforma identit od Microsoftu mohla poskytovat ověřovací a autorizační služby pro tuto aplikaci a uživatele. Další informace o registraci aplikací v Azure najdete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 1. Otevřete [Microsoft Azure Portal](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Musíte registrovat instanci Human Resources v portálu Azure, aby platforma ide
 
 10. Zadejte popis, vyberte dobu trvání a vyberte **Přidat**.
 
-11. Zaznamenejte hodnotu tajného klíče. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních tabulek](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Zaznamenejte hodnotu tajného klíče z vlastnosti **Hodnota** tabulky. Tyto informace zadáte, až budete [konfigurovat zdroj dat virtuálních tabulek](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > V tuto chvíli si nezapomeňte hodnotu tajného klíče poznamenat. Po opuštění této stránky se tajný klíč už nikdy nezobrazí.
@@ -215,12 +215,11 @@ V posuvném podokně se zobrazují nejnovější výsledky provádění procesu.
 
 ## <a name="see-also"></a>Viz také
 
-[Co je Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Tabulky v Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Přehled vztahů mezi tabulkami](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Vytváření a úpravy virtuálních tabulek, které obsahují data z externího zdroje dat](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Co jsou portály Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Přehled vytváření aplikací v Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
+[Co je Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tabulky v Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
+[Přehled vztahů mezi tabulkami](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Vytváření a úpravy virtuálních tabulek, které obsahují data z externího zdroje dat](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Co jsou portály Power Apps?](/powerapps/maker/portals/overview)<br>
+[Přehled vytváření aplikací v Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

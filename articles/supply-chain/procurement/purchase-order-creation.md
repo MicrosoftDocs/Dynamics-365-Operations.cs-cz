@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825391"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909149"
 ---
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
@@ -65,7 +65,7 @@ V některých případech můžete chtít rozdělit objednané množství tak, a
 Poplatky lze automaticky přidán k řádkům nákupní objednávky, pokud byly nastaveny automatické náklady pro dodavatele nebo skupinu nákladů dodavatele a pro položku nebo skupinu nákladů na položku. Nicméně více obvyklé je ruční přidání poplatků na úrovni řádku objednávky. Chcete-li přidat poplatek, otevřete stránku **Udržovat náklady** pomocí akce **Udržovat náklady** v nabídce **Finance** v zobrazení **Řádky**. Výhodou přidání poplatků přímo na úrovni řádku objednávky je to, že poplatek může být přidělen jako náklady skladu. Chcete-li nastavit kódy poplatků pro zaúčtování ceny produktu, použijte debetní možnost **Položka**. Tyto typy nákladů musí být přiděleny ze záhlaví nákupní objednávky k řádkům předtím, než může být objednávka potvrzena. Můžete například přidělit náklady na základě množství na každém řádku. Kategorie nákladů také ovlivňuje to, jak jsou poplatky účtovány. Například pevné náklady určují pevnou částku a procentuální náklady se vypočítají jako procento z čisté částky na řádku objednávky. Nákupní objednávky lze přiřadit k vytížení a vytížení může obsahovat odhad očekávaných výdajů za náklady na dopravu. Tyto náklady lze přidělit z vytížení zpět na řádky nákupní objednávky.
 
 ## <a name="purchase-order-actions"></a>Akce nákupní objednávky
-Po přidání záhlaví a řádků do nákupní objednávky musíte často dokončit další kroky ještě předtím, než je objednávka připravena pro potvrzení. Vzhledem k tomu, že je k dispozici mnoho možností, může pro vás užitečné použít [Akci hledání](../../fin-and-ops/get-started/action-search.md) a najít s její pomocí odpovídající položku.  
+Po přidání záhlaví a řádků do nákupní objednávky musíte často dokončit další kroky ještě předtím, než je objednávka připravena pro potvrzení. Vzhledem k tomu, že je k dispozici mnoho možností, může pro vás užitečné použít [Akci hledání](../../fin-ops-core/fin-ops/get-started/action-search.md) a najít s její pomocí odpovídající položku.  
 
 Produkty lze nastavit na objednávce tak, že mají doplňkové položky. Doplňkové položky jsou výrobky, které musí nebo mohou být nakoupeny společně s jinými přípravky. Doplňkové produkty mohou být přidány zdarma nebo za poplatek jako doprovodné produkty, nebo je možné se rozhodnout, zda je chcete přidat do objednávky, nebo nikoliv. Po přidání každého řádku objednávky můžete zkontrolovat doplňkové položky. Nicméně pravděpodobně je vhodnější zkontrolovat a přidat příslušné doplňkové položky pro všechny řádky na stránce **Doplňkové položky**, kterou lze otevřít z podokna akcí.  
 

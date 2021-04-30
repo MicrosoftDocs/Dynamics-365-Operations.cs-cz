@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f67bb8e218c98c6f227f5e1f05f9ba7b35da37c7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 356cdf0fc6bc2dbc086ff186805a97755d98e49e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832147"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909518"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.14. (listopad 2020)
 
@@ -33,7 +33,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Toto vydání obsahuje aktualizovanou platformu a obecná vylepšení, ale neobsahuje žádné nové funkce specifické pro Supply Chain Management. Další informace o připravovaných funkcích najdete na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/).
+Toto vydání obsahuje aktualizovanou platformu a obecná vylepšení, ale neobsahuje žádné nové funkce specifické pro Supply Chain Management. Další informace o připravovaných funkcích najdete na webu [Plány vydání](/dynamics365/release-plans/).
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -49,7 +49,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizac�
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 

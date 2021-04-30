@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753809"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894165"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimujte velké dokumenty generované v elektronickém výkaznictví 
 
 [!include [banner](../includes/banner.md)]
 
-Můžete použít [Rámec elektronického výkaznictví (ER)](general-electronic-reporting.md) a nakonfigurovat řešení, které načte transakční data, aby vygeneroval odchozí dokument. Tento vygenerovaný dokument může být docela velký. Při generování tohoto typu dokumentu se používá paměť [Server aplikačních objektů (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) k jeho uložení. V určitém okamžiku musí být dokument poté stažen z vaší aplikace Microsoft Dynamics 365 Finance. V současné době je maximální velikost jednoho dokumentu generovaného v ER omezena na 2 gigabajty (GB). Navíc v současné době Finance [omezuje](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) velikost staženého souboru na 1 GB. Proto musíte nakonfigurovat řešení ER, které snižuje pravděpodobnost překročení těchto omezení a obdržíte výjimku **Stream byl příliš dlouhý** nebo **Přetečení nebo podtečení v aritmetické operaci**.
+Můžete použít [Rámec elektronického výkaznictví (ER)](general-electronic-reporting.md) a nakonfigurovat řešení, které načte transakční data, aby vygeneroval odchozí dokument. Tento vygenerovaný dokument může být docela velký. Při generování tohoto typu dokumentu se používá paměť [Server aplikačních objektů (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) k jeho uložení. V určitém okamžiku musí být dokument poté stažen z vaší aplikace Microsoft Dynamics 365 Finance. V současné době je maximální velikost jednoho dokumentu generovaného v ER omezena na 2 gigabajty (GB). Navíc v současné době Finance [omezuje](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) velikost staženého souboru na 1 GB. Proto musíte nakonfigurovat řešení ER, které snižuje pravděpodobnost překročení těchto omezení a obdržíte výjimku **Stream byl příliš dlouhý** nebo **Přetečení nebo podtečení v aritmetické operaci**.
 
 Při konfiguraci řešení můžete upravit formát ER v návrháři operací přidáním kořenového prvku **Složka** pro kompresi obsahu, který je generován některým z vnořených prvků. Komprese funguje „včas“, takže lze snížit maximální využití paměti a velikost staženého souboru.
 

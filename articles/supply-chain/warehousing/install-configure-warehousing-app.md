@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835553"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909372"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalace a připojení aplikace skladu
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835553"
 > Toto téma popisuje, jak nakonfigurovat starou aplikaci skladu (která je nyní zastaralá). Pokud hledáte informace o tom, jak konfigurovat novou mobilní aplikaci Řízení skladu, pročtěte si téma [Instalace a připojení mobilní aplikace Řízení skladu](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Toto téma popisuje způsob konfigurace skladové aplikace pro nasazení v cloudu. Postup konfigurace skladové aplikace pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Toto téma popisuje způsob konfigurace skladové aplikace pro nasazení v cloudu. Postup konfigurace skladové aplikace pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Aplikace skladu je k dispozici v obchodech Google Play a Microsoft Store. Poskytuje se jako samostatná komponenta. Proto ji musíte stáhnout do každého zařízení a poté ji nakonfigurovat pro připojení k prostředí Microsoft Dynamics 365 Supply Chain Management.
 
@@ -54,7 +54,7 @@ Ke stažení aplikace použijte jeden z následujících odkazů:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Sklady v obchodě Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Sklady - Dynamics 365 v obchodě Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-U menších nasazení můžete chtít nainstalovat aplikaci z příslušného úložiště na každém zařízení a poté ručně nakonfigurovat připojení k prostředím, která používáte. Ve verzi 1.7.0.0 a novější aplikace skladu však můžete také automatizovat nasazení anebo konfiguraci aplikace. Tento přístup může být vhodný, pokud spravujete mnoho zařízení a používáte řešení pro správu mobilních zařízení a správu mobilních aplikací, například [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+U menších nasazení můžete chtít nainstalovat aplikaci z příslušného úložiště na každém zařízení a poté ručně nakonfigurovat připojení k prostředím, která používáte. Ve verzi 1.7.0.0 a novější aplikace skladu však můžete také automatizovat nasazení anebo konfiguraci aplikace. Tento přístup může být vhodný, pokud spravujete mnoho zařízení a používáte řešení pro správu mobilních zařízení a správu mobilních aplikací, například [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Vytvoření aplikace webové služby v Azure Active Directory
 
@@ -89,11 +89,11 @@ Pokud chcete povolit interakci aplikace skladu s konkrétním serverem Supply C
 
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
-- Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících tématech:
 
-    - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
+    - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
 
@@ -121,7 +121,7 @@ Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilní
 
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je aplikace skladu nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 
-Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte aplikaci skladu. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte aplikaci skladu. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurace aplikace importem nastavení připojení
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791940"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857266"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -142,6 +142,9 @@ UWP se v případě periferních zařízení vztahuje na podporu systému Window
 ### <a name="keyboard-wedge"></a>Převodník na signál klávesnice
 
 Zařízení typu převodníku na signál klávesnice odesílá data do počítače, jako by tato data byla zadána na klávesnici. Proto ve výchozím nastavení obdrží pole, které je aktivní v POS, data z výsledku skenování nebo protahování proužku. V některých případech může toto chování způsobit načtení nesprávného typu dat do nesprávného pole. Například může být čárový kód naskenován do pole, které je určeno k zadání údajů platební karty. V mnoha případech je v POS logika, která určuje, zda data z výsledku skenování nebo protahování proužku jsou čárovým kódm nebo výsledkem protažení karty. Proto jsou pak data zpracována správně. Avšak jsou-li zařízení nastavena jako OPOS a ne jako zařízení typu převodníku na signál klávesnice, existuje větší možnost kontroly nad tím, jak budou data z těchto zařízení využívána, protože je více „známo“ o zařízení, z nějž data pocházejí. Například data ze čtečky čárových kódů budou automaticky rozpoznána jako čárový kód a příslušný záznam v databázi bude nalezen mnohem snadněji a rychleji, než při použití obecného vyhledávacího řetězce, jako je tomu v případě zařízení typu převodníků na signál klávesnice.
+
+> [!NOTE]
+> Pokud se v POS používají ruční skenery klávesnice, musí být naprogramovány tak, aby odesílaly návrat vozíku nebo událost **Enter** událost po posledním naskenovaném znaku. Pokud tato konfigurace není provedena, nebudou ruční skenery klávesnice fungovat správně. Podrobnosti o tom, jak připojit událost návratu vozíku, najdete v dokumentaci poskytnuté výrobcem zařízení.  
 
 ### <a name="native-printer"></a>Nativní tiskárna
 

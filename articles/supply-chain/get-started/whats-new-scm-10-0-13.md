@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f405fba2b28ccae6b3aadbcf683d050040587cde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f491cebacad1e289e6b004d573916eaf8ec0e110
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832171"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909542"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.13 (říjen 2020)
 
@@ -33,23 +33,23 @@ Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci, která je v současnosti k dispozici pro danou funkci. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
+Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci, která je v současnosti k dispozici pro danou funkci. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
-- [Změňte terminologii „zrušení uzavření zásob“ na „obrácení uzavření zásob“](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Další informace naleznete v tématu [Uzávěrka zásob](../cost-management/inventory-close.md).
+- [Změňte terminologii „zrušení uzavření zásob“ na „obrácení uzavření zásob“](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Další informace naleznete v tématu [Uzávěrka zásob](../cost-management/inventory-close.md).
 
-- [Potvrdit odchozí dodávky z dávkových úloh](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Další informace viz [Potvrdit odchozí dodávky z dávkových úloh](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Potvrdit odchozí dodávky z dávkových úloh](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Další informace viz [Potvrdit odchozí dodávky z dávkových úloh](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegování více nákupních pracovních položek](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Další informace viz [Delegujte pracovní položky v pracovním postupu](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Delegování více nákupních pracovních položek](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Další informace viz [Delegujte pracovní položky v pracovním postupu](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Zadejte sériová čísla při vykazování za dokončené v zařízení úkolového lístku](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Další informace získáte v části [Ohlášení jako dokončené ze zařízení úkolového lístku](../production-control/report-finished-job-device.md)
+- [Zadejte sériová čísla při vykazování za dokončené v zařízení úkolového lístku](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Další informace získáte v části [Ohlášení jako dokončené ze zařízení úkolového lístku](../production-control/report-finished-job-device.md)
 
-- [Nové dimenze zásob pro sledování verze produktu a vylepšenou rozšiřitelnost](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Další informace naleznete v tématu [Dimenze produktu](../pim/product-dimensions.md).
+- [Nové dimenze zásob pro sledování verze produktu a vylepšenou rozšiřitelnost](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Další informace naleznete v tématu [Dimenze produktu](../pim/product-dimensions.md).
 
-- [Rezervace potvrzená objednávkou na základě registračních značek](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Další informace naleznete v tématu [Flexibilní rezervace registrační značky](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Rezervace potvrzená objednávkou na základě registračních značek](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Další informace naleznete v tématu [Flexibilní rezervace registrační značky](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Přehled řádku výdeje práce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Přehled řádku výdeje práce](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Vylepšení zásad práce pro příchozí práci](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Další informace viz [Zásady skladu](../warehousing/warehouse-work-policies.md).
+- [Vylepšení zásad práce pro příchozí práci](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Další informace viz [Zásady skladu](../warehousing/warehouse-work-policies.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -65,7 +65,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizac�
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823450"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907684"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrace na optimalizaci plánování pro hlavní plánování
 
@@ -63,8 +63,12 @@ V současné době jsou výjimky pro migraci optimalizace plánování relevantn
 
 Poté, co budou k dispozici požadované funkce, poskytne Microsoft období odkladu do vypršení platnosti výjimky. Správce prostředí bude informován, až budou k dispozici požadované funkce a začne období odkladu.
 
+Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Vývojový diagram výjimek](media/exception-diagram.png "Vývojový diagram výjimek")
+
 > [!NOTE]
-> Výjimku můžete požadovat pouze pro produkční prostředí, nikoli pro sandboxová prostředí. Pokud potřebujete zakázat chybu výjimky optimalizace plánování v sandboxovém prostředí infrastruktury jako služby (IaaS), spusťte dotaz SQL uvedený v části [Sandboxová prostředí](#faq-sandbox).
+> Výjimku můžete požadovat pouze pro klienty, kteří aktuálně zahrnují nebo budou zahrnovat provozní prostředí, nikoli pouze pro klienty s izolovanými prostředími. Pokud potřebujete zakázat chybu výjimky optimalizace plánování v sandboxovém prostředí infrastruktury jako služby (IaaS), spusťte dotaz SQL uvedený v části [Sandboxová prostředí](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 

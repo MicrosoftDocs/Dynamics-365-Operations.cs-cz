@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 41cddcdad5043ec314a94dda67f4f2e9de406cac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ba1a6c5542c10306d4b7494d33e7ff04504fa95
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840165"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893771"
 ---
 # <a name="electronic-invoicing-faq"></a>Elektronická fakturace – Často kladené otázky
 
@@ -55,7 +55,7 @@ Aktuální platforma neumožňuje použití místní verze a neexistují žádn�
 
 ## <a name="does-electronic-invoicing-interface-with-the-vendor-import-automation-feature"></a>Má elektronická fakturace rozhraní s funkcí automatizace importu od dodavatele?
 
-Ne. Existují plány doplnit toto rozhraní, ale není určen žádný termín implementace. Po naplánování budou datumy oznámeny v [Plánech vydání](https://docs.microsoft.com/dynamics365/release-plans/).
+Ne. Existují plány doplnit toto rozhraní, ale není určen žádný termín implementace. Po naplánování budou datumy oznámeny v [Plánech vydání](/dynamics365/release-plans/).
 
 ## <a name="how-does-electronic-invoicing-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>Jak elektronická fakturace zpracovává souborové přílohy k elektronické faktuře? Je při vkládání souborů PDF do souboru XML potřeba server SharePoint?
 

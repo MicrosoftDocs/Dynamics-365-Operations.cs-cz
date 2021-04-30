@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6c28d0dc76195cc0aedc132f348a229af0421c43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8109826df93f9916914a2db3876ee0f9107985f9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790421"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890951"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (18. února 2020)
 
@@ -33,7 +33,7 @@ Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dy
 
 ## <a name="platform-update-32"></a>Aktualizace platformy 32 
 
-Nyní je k dispozici aktualizace platformy 32. Další informace naleznete v tématu [Co je nového nebo změněné v aktualizaci Platform update 32 pro Finance and Operations (únor 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Nyní je k dispozici aktualizace platformy 32. Další informace naleznete v tématu [Co je nového nebo změněné v aktualizaci Platform update 32 pro Finance and Operations (únor 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>Vyhledávací hodnoty se pamatují při změně možností zobrazení ve zjednodušeném formuláři zaměstnanců (383833)
 
@@ -81,7 +81,7 @@ Nové řešení Dataverse bude brzy k dispozici po provedení následujících z
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
 

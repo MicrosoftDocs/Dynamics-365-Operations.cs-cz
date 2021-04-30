@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795134"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892746"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Příprava pro ostré nasazení Human Resources
 
@@ -43,7 +43,7 @@ V následující tabulce jsou uvedeny všechny kroky v procesu, očekávané trv
 | 2 | Vyplňte a odešlete kontrolní seznam | Po doknčení uživatelského akceptačního testování (UAT) | Partner / zákazník | Postupujte podle pokynů uvedených v [Vyhodnocení funkce FastTrack naživo](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Hodnocení projektu (FastTrack) | FastTrack Architect * | Architekt poskytuje posouzení po obdržení kontrolního seznamu a pokračuje v kontrole, dokud nejsou vyjasněny otázky a pokud nejsou k dispozici zmírnění. |
 | 4 | Projektový workshop (FastTrack) | FastTrack Architect * | |
-| 5 | Import datového balíčku | Závisí na projektu | Partner / zákazník | Postupujte podle pokynů v [Přehledu správy dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Import datového balíčku | Závisí na projektu | Partner / zákazník | Postupujte podle pokynů v [Přehledu správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Připraveno na produkci | Po dokončení všech předchozích kroků | Partner / zákazník | Partner / zákazník může převzít kontrolu nad produkčním prostředím.|
 | 7 | Činnosti přechodu | Závisí na projektu | Partner / zákazník | |
 | 8 | Přechod do ostrého nasazení | Závisí na projektu | Odběratel | |
@@ -66,7 +66,7 @@ Během fáze UAT musíte otestovat všechny obchodní procesy, které jste imple
 
 - Doporučujeme, aby váš proces UAT začínal čistým a čerstvým prostředím, kde jsou data z vaší konfigurace GOLD zkopírována do prostředí před spuštěním procesu UAT. Jako prostředí GOLD doporučujeme používat provozní prostředí, dokud nebude v ostrém provozu, kdy se prostředí stává provozním.
 - Testovací případy pokrývají celý rozsah požadavků. 
-- Otestujte pomocí migrovaných dat. Tato data by měla zahrnovat kmenová data, jako jsou pracovníci, úlohy a pozice. Zahrňte také počáteční zůstatky, jako je nahromadění dovolené a absence. Nakonec zahrňte otevřené transakce, jako jsou aktuální registrace výhod. Kompletní testování se všemi typy dat, i když datová sada není dokončena. 
+- Otestujte pomocí migrovaných dat. Ta by měla zahrnovat data, jako jsou pracovníci, úlohy a pozice. Zahrňte také počáteční zůstatky, jako je nahromadění dovolené a absence. Nakonec zahrňte otevřené transakce, jako jsou aktuální registrace výhod. Kompletní testování se všemi typy dat, i když datová sada není dokončena. 
 - Testujte pomocí správných rolí zabezpečení (výchozí role a vlastní role), které jsou přiřazeny uživatelům. 
 - Ujistěte se, že řešení splňuje veškeré regulační požadavky specifické pro společnost a odvětví. 
 - Zdokumentujte všechny funkce a získejte souhlas a potvrzení od zákazníka. 
@@ -86,7 +86,7 @@ Před uvedením do ostrého provozu musíte provést napodobení ostrého provoz
 
 ## <a name="fasttrack-go-live-assessment"></a>Test naživo FastTrack
 
-Zákazníci, kteří mají kvalifikaci pro FastTrack a jsou zapojeni do FastTrack Solution Architect, dokončí hodnocení přechodu do ostrého provozu s Microsoft FastTrack. Další informace viz  [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Zákazníci, kteří mají kvalifikaci pro FastTrack a jsou zapojeni do FastTrack Solution Architect, dokončí hodnocení přechodu do ostrého provozu s Microsoft FastTrack. Další informace viz  [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Asi osm týdnů před uvedením do provozu vás tým FastTrack požádá o vyplnění [Kontrolního seznamu pro přechod od ostrého provozu](https://go.microsoft.com/fwlink/?linkid=2146013).
 

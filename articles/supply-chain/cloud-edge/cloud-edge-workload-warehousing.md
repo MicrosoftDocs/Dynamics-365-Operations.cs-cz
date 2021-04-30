@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832387"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899160"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832387"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Spuštění skladu v jednotkách škálování
 
-Tato funkce umožňuje jednotkám škálování spouštět vybrané procesy z možností správy skladu. Cloudové jednotky škálování spouští svá pracovní zatížení v cloudu pomocí vyhrazené kapacity zpracování ve vašem vybraném regionu Microsoft Azure. U hraničních jednotek škálování můžete spouštět některé úlohy nezávisle v prostorách, i když jsou jednotky škálování dočasně odpojené od cloudu.
+Tato funkce umožňuje jednotkám škálování spouštět vybrané procesy z možností správy skladu.
 
 V tomto tématu jsou spouštění správy skladu ve skladu, který je definován jako jednotka škálování, označovány jako *Systém spuštění skladu* (*WES*).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Musíte mít centrum Dynamics 365 Supply Chain Management hub a jednotku škálování, která byla nasazena s úlohou správy skladu. Další informace o architektuře a procesu nasazení naleznete v části [Cloudové a hraniční jednotky škálování pro úlohy výroby a správy skladu](cloud-edge-landing-page.md).
+Musíte mít centrum Dynamics 365 Supply Chain Management hub a jednotku škálování, která byla nasazena s úlohou správy skladu. Další informace o architektuře a procesu nasazení naleznete v části [Použití jednotek škálování ke zvýšení odolnosti pro úlohy Supply Chain Management](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Jak funguje pracovní zátěž WES na jednotkách škálování
 
@@ -297,6 +297,8 @@ V úloze v jednotkách škálování můžete spravovat následující dávkové
 - Zpracování záznamů tabulky vln
 - Zpracovatel zprávy z centra skladu do jednotky škálování
 - Zpracovat požadavky na aktualizaci množství pro řádky objednávky skladu
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
