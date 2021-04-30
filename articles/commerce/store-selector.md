@@ -2,7 +2,8 @@
 title: Modul volby obchodu
 description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798626"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853410"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
@@ -32,11 +33,32 @@ Zákazníci mohou pomocí modulu pro výběr obchodu vyzvednout produkt ve vybra
 
 Modul pro výběr obchodu umožňuje uživatelům zadat umístění (město, stát, adresu atd.), aby vyhledávali obchody v okruhu hledání. Když je modul poprvé otevřen, použije k vyhledání obchodů umístění prohlížeče zákazníka (pokud je poskytnut souhlas).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Použití modulu volby obchodu v e-Commerce
+## <a name="store-selector-module-usage"></a>Použití modulu volby obchodu
 
 - Modul pro výběr obchodu lze použít na stránce s podrobnostmi o produktu (PDP) k výběru obchodu pro vyzvednutí.
 - Modul pro výběr obchodu lze použít na stránce s košíkem k výběru obchodu pro vyzvednutí.
 - Modul pro výběr obchodu lze použít na samostatné stránce, která zobrazuje všechny dostupné obchody.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Nastavení skupin plnění v centrále Commerce
+
+Aby modul pro výběr obchodu zobrazil dostupné obchody, musí být v centrále Commerce nastavena skupina plnění. Další informace naleznete v tématu [Nastavení skupin plnění](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Kromě toho musí být pro každý obchod ve skupině plnění definována zeměpisná šířka a délka umístění úložiště v centrále.
+
+Pro zadání hodnot zeměpisné šířky a délky umístění obchodu v centrále Commerce postupujte následovně.
+
+1. Přejděte do části **Řízení zásob \> Nastavení \> Rozdělení zásob**.
+1. V levém podokně vyberte umístění skladu.
+1. Na rychlé kartě **Adresy** vyberte **Pokročilý**.
+
+    ![Příklad podrobností obchodu v ústředí](./media/Store-address.png)
+
+1. V podokně akcí vyberte **Upravit**.
+1. Na rychlé kartě **Všeobecné** zadejte hodnoty pro **Zeměpisná šířka** a **Zeměpisná délka**.
+
+    ![Příklad nastavení zeměpisné šířky a délky pro obchod v centrále](./media/Store-latitude-longitude.png)
+
+1. V podokně akcí vyberte **Uložit**. 
 
 ## <a name="bing-maps-integration"></a>Integrace Bing Maps
 
@@ -48,6 +70,7 @@ U rozhraní AUTOSuggest REST API musíte zajistit, aby byly povoleny následují
 - Do směrnice **img-src** přidejte **&#42;.virtualearth.net**.
 - Do směrnice **script-src** **přidejte &#42;.bing.com, &#42;.virtualearth.net**.
 - Do směrnice **script-src** přidejte **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>Režim Vyzvednutí v obchodě
 

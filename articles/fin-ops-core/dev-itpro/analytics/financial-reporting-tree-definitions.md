@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819931"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866295"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definice organizačního stromu ve finančních sestavách
 
@@ -52,9 +52,7 @@ Definice stromu výkaznictví obsahuje sloupce popsané v následující tabulce
 | Popis jednotky      | Název jednotky výkaznictví se zobrazí v záhlaví nebo zápatí sestavy, když zadáte hodnotu **UnitDesc** jako kód na kartě **Záhlaví a zápatí** v definici sestavy. Nadpis se zobrazí v sestavě v řádku popisu, pokud zadáte hodnotu **UnitDesc** do buňky **Popis** v definici řádku. |
 | Dimenze            | Jednotka výkaznictví, která získává informace přímo z finančních dat. Definuje logické umístění a délky pro účet a související segmenty. Každý řádek sestavy musí mít uveden rozměr v tomto sloupci. Dimenzi můžete vložit také do řádku Souhrn jednotky (například pro výdaje, které přímo souvisejí s touto jednotkou). Zadáte-li dimenzi v řádku jednotky souhrnu, účty, které se používají v nadřazených jednotkách nepoužívejte v podřízených jednotkách. Jinak může docházet ke zdvojování částek. |
 | Definice řádku       | Název definice řádku pro jednotku výkaznictví. Stejná definice řádků se používá pro všechny jednotky organizačního stromu. Při generování sestavy se tato definice řádků použije pro jednotlivé organizační jednotky. Definice řádků může obsahovat více odkazů na finanční dimenze. Pokud je v organizačním stromu zadána definice řádků, zaškrtněte políčko **Používat definici řádků z organizačního stromu** na kartě **Sestava** definice sestavy. |
-| Odkaz na řádek              | Odkaz na řádek, který chcete použít pro organizační jednotku. Odkazy na řádky definované pro definici řádků umožňují identifikovat finanční dimenze, se kterými se mají propojit. |
-| Externí odkaz         | Odkaz na řádek, který chcete použít pro tuto organizační jednotku. Odkazy řádků jsou definovány pro definici řádku k identifikaci sestavy k propojení. |
-| Externí soubor         | Cesta k souboru na listu finančního vykazování, ze kterého se budou získávat data. |
+| Propojení finančních dimenzí| Propojení finančních dimenzí, které se používá pro jednotku vykazování. Propojení finančních dimenzí jsou definovaná pro definici řádků umožňují identifikovat finanční dimenze, se kterými se mají propojit. |
 | Možnosti stránky          | Tento sloupec určuje, zda jsou potlačeny informace zpravodajské jednotky při zobrazení nebo tisku sestavy. |
 | % shrnutí              | Procento jednotky výkaznictví, které má být přiděleno nadřazené jednotce. Procento, které zadáte v tomto sloupci, se vztahuje na každý řádek definice řádku před přidáním hodnoty řádku do nadřazené sestavy. Například pokud má být podřízená jednotka rozdělena rovnoměrně mezi dvě oddělení, částky na každém řádku budou vynásobeny 50 procenty před přidáním hodnoty do sestavy oddělení. Jedna jednotka výkaznictví nemůže mít dvě nadřazené jednotky. Přidělit částky z jednotky výkaznictví do dvou nadřazených jednotek můžete vytvořením jiné jednotky výkaznictví se stejnou dimenzí k zahrnutí dalších 50 procent. Zadejte celá procenta bez desetinného místa. Například **25** představuje 25procentní přidělení k nadřazené jednotce. Pokud přidáte desetinnou čárku (**.25**), k nadřazené jednotce je přiděleno 0,25 %. K použití hodnoty menší než jedno procento použijte možnost **Povolit shrnutí &lt;1%** v definici sestavy. Tato možnost se nachází na kartě **Další možnosti** v dialogovém okně **Nastavení sestavy**. Přístup k tomuto dialogovému oknu nabízí tlačítko **Jiné** na kartě **Nastavení** v definici sestavy. |
 | Zabezpečení jednotky         | Omezuje přístup uživatelů a skupin k informacím pro jednotku výkaznictví. |
@@ -113,10 +111,10 @@ Každá definice stromu vykazování se zobrazí v jedinečném zobrazení. K di
 
 Ve finančním výkaznictví se používají následující typy jednotek výkaznictví:
 
-- Jednotka podrobností získává informace přímo z finančních dat, z tabulky aplikace Excel nebo z jiného listu pro finanční výkaznictví.
+- Jednotka detailu získává informace přímo z finančních dat.
 - Jednotka souhrnu obsahuje souhrn dat z jednotek nižší úrovně.
 
-Nadřazená jednotka výkaznictví je jednotka souhrnu, která agreguje souhrnné informace z jednotky podrobností. Jednotka souhrnu může být zároveň jednotkou podrobností i jednotkou souhrnu. To znamená, že jednotka souhrnu může získávat informace z jednotky nižší úrovně, finančních dat nebo tabulky aplikace Excel. Nadřazená jednotka může být podřízenou jednotkou vyšší nadřazené jednotky. Podřízená jednotka výkaznictví může být jednotkou podrobností, která získává informace přímo z finančních dat nebo tabulky aplikace Excel. Podřízená jednotka vykazování může být také zprostředkující jednotkou souhrnu. Jinými slovy může být nadřazená jednotka jednotky nižší úrovně, ale také podřízená jednotka souhrnné jednotky na vyšší úrovni. Nejběžnější scénář pro jednotky výkaznictví je použití nadřazených jednotek s prázdnou buňkou ve sloupci **Dimenze** a podřízených jednotek s odkazy na konkrétní nebo zástupné kombinace dimenzí.
+Nadřazená jednotka výkaznictví je jednotka souhrnu, která agreguje souhrnné informace z jednotky podrobností. Jednotka souhrnu může být zároveň jednotkou podrobností i jednotkou souhrnu. To znamená, že jednotka souhrnu může získávat informace z jednotky nižší úrovně nebo finančních dat. Nadřazená jednotka může být podřízenou jednotkou vyšší nadřazené jednotky. Podřízená jednotka výkaznictví může být jednotkou podrobností, která získává informace přímo z finančních dat. Podřízená jednotka vykazování může být také zprostředkující jednotkou souhrnu. Jinými slovy může být nadřazená jednotka jednotky nižší úrovně, ale také podřízená jednotka souhrnné jednotky na vyšší úrovni. Nejběžnější scénář pro jednotky výkaznictví je použití nadřazených jednotek s prázdnou buňkou ve sloupci **Dimenze** a podřízených jednotek s odkazy na konkrétní nebo zástupné kombinace dimenzí.
 
 ### <a name="organize-reporting-units"></a> Uspořádání jednotek výkaznictví
 
@@ -160,38 +158,25 @@ Můžete zabránit určitým uživatelům a skupinám v přístupu k jednotkám 
 1. V Návrháři sestav otevřete definici stromu výkaznictví k úpravě.
 2. Klikněte dvakrát na buňku **Zabezpečení jednotky** pro řádek jednotky výkaznictví, jejíž přístup chcete odebrat.
 3. V dialogovém okně **Zabezpečení jednotky** zvolte název a klikněte na tlačítko **Odebrat**.
-4. Klepněte na tlačítko **OK**.
-
-### <a name="link-to-reports"></a>Odkaz na sestavy
-
-Po vytvoření sloupce **Sestava** v definici řádku a určení sestavy k zahrnutí v sestavě musíte aktualizovat stromu výkaznictví pomocí propojeného sloupce a informací o sestavě. Sestavu lze importovat do jakékoli jednotky ve stromu výkaznictví.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identifikace sestavy ve stromu výkaznictví
-
-1. V Návrháři sestav otevřete definici stromu výkaznictví k úpravě.
-2. Buňky ve sloupci **Definice řádku** zobrazují informace na základě informací vybraného řádku, protože stejná definice řádku musí být použita ve všech jednotkách stromu výkaznictví. Klikněte dvakrát na buňku **Definice řádku** a poté vyberte definici řádku, která obsahuje informace o sestavě.
-3. V buňce **Odkaz listu** pro jednotku výkaznictví, vyberte název odkazu, který odpovídá sestavě.
-4. V buňce **Cesta sešitu nebo sestavy** pro jednotku výkaznictví zadejte název sestavy nebo vyhledejte a vyberte sestavu.
-5. Chcete-li určit list v sestavě, zadejte název listu do buňky **Název listu**.
-6. Zopakujte kroky 3 až 5 pro každou jednotku výkaznictví, která má získat data ze sestavy. Abyste zabránili zobrazení nesprávných dat v sestavě, ujistěte se, že se správné názvy sestav zobrazují v odpovídající jednotce stromu výkaznictví.
+4. Klikněte na tlačítko **OK**.
 
 ## <a name="examples"></a>Příklad
 ### <a name="reporting-unit-structure--example-1"></a>Struktura jednotky výkaznictví – příklad 1
 
 V následujícím stromu výkaznictví je uvedena struktura jednotek výkaznictví:
 
-- Jednotka výkaznictví Japonska Contoso je nadřazená jednotka podřízené jednotky Prodej Contoso Japonsko a Konzultace Contoso Japonsko.
-- Jednotka divize Prodej Contoso Japonsko je zároveň podřízená jednotce Contoso Japonsko a nadřazená jednotkám Domácí prodej a Automatický prodej.
+- Jednotka výkaznictví Contoso Japan je nadřazená jednotka podřízené jednotky Contoso Japan Sales a Contoso Japan Consulting.
+- Jednotka divize Contoso Japan Sales je zároveň podřízená jednotce Contoso Japan a nadřazená jednotkám Home Sales a Auto Sales.
 - Jednotky výkaznictví podrobností na nejnižší úrovni (Domovní prodej, Automatický prodej, Klientské služby a Provoz) představují oddělení ve finančních datech. Tyto jednotky výkaznictví jsou v šedé oblasti diagramu.
 - Jednotky souhrnu na vyšší úrovni shrnují informace z jednotek podrobností.
 
-[![Struktura souhrnné zprávy Contoso - příklad 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktura souhrnné zprávy Contoso – příklad 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktura jednotky výkaznictví – příklad 2
 
 Následující diagram znázorňuje strom výkaznictví zobrazující organizační strukturu, která je rozdělena podle firemní funkce.
 
-[![Struktura souhrnné zprávy Contoso - příklad 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktura souhrnné zprávy Contoso – příklad 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Příklad dialogového okna Vložit jednotky výkaznictví z dimenzí
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753689"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894141"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Určení vlastních umístění úložišť pro vygenerované dokumenty
 
@@ -27,7 +27,7 @@ Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictv�
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Nasaďte topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Také musí mít přístup k této topologii pro jednu z následujících rolí.
+Nasaďte topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Také musí mít přístup k této topologii pro jednu z následujících rolí.
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Upravte existující třídu `AssetRollForwardService` a zapište kód pro nastavení vlastního cílového objektu pro vytváření, určený pro spouštěč sestavy. Všimněte si, že když je vytvořen vlastní cílový objekt pro vytváření, je předán parametr řízený aplikací, který určuje cílovou složku. Tímto způsobem se tato cílová složka používá k ukládání vygenerovaných souborů.
 
     > [!NOTE] 
-    > Zkontrolujte, že zadaná složka (v tomto příkladu **c:\\0**) se nachází v místním souborovém systému serveru, na kterém je spuštěna služba AOS. Jinak bude za běhu vyvolána výjimka [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
+    > Zkontrolujte, že zadaná složka (v tomto příkladu **c:\\0**) se nachází v místním souborovém systému serveru, na kterém je spuštěna služba AOS. Jinak bude za běhu vyvolána výjimka [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

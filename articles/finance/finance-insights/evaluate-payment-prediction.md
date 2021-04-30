@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818608"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897905"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Vyhodnotit počáteční predikční model platby zákazníka (náhled)
 
@@ -41,7 +41,7 @@ Tento odkaz vás přenese do AI Builderu, kde se můžete dozvědět více o akt
 
 Na otevřené stránce se zobrazí následující informace:
 
-- V části **Výkon** poskytuje stupeň výkonu modelu pohled na kvalitu modelu. Další informace o tomto stupni viz [Predikční výkon modelu](https://docs.microsoft.com/ai-builder/prediction-performance) v dokumentaci AI Builderu.
+- V části **Výkon** poskytuje stupeň výkonu modelu pohled na kvalitu modelu. Další informace o tomto stupni viz [Predikční výkon modelu](/ai-builder/prediction-performance) v dokumentaci AI Builderu.
 - Čáset **Nejvlivnější data** ukazuje, jak důležité byly různé typy vstupních dat pro váš model. Tento seznam a odpovídající procenta můžete vyhodnotit, abyste zjistili, zda jsou informace v souladu s informacemi o vašem podnikání a trhu.
 
     [![Výkonové a nejvlivnější datové sekce pro predikční model](./media/models.png)](./media/models.png)

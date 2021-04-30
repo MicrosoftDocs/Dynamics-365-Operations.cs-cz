@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 31bfc203e9db28acee4b5b52b36f64d90dc4f714
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837410"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909248"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -66,7 +66,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 1.  Vytvořte alespoň jeden nový profil skladového místa
 2.  Klikněte na **řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Povolit nastavení skladu**.
 3.  Na stránce **Povolit nastavení skladu** přidejte sklady, které mají být povoleny. Tento krok můžete dokončit přímo na stránce nebo pomocí integrace aplikace Microsoft Office.
-4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](../../dev-itpro/data-entities/data-entities.md).
+4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 5.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 6.  Zpracujte změny.
 
@@ -77,7 +77,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 3.  Na stránce **Hierarchie rezervací** definujte novou hierarchii rezervací podle skupiny skladu a dimenzí sledování.
 4.  Vytvořte jednu nebo více skupin klasifikace jednotek, které obsahují přinejmenším stejné jednotky, jaké se používají pro skladové položky.
 5.  Klikněte na **Řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Změnit skupinu dimenzí úložiště pro položky**.
-6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa data](../../dev-itpro/data-entities/data-entities.md).
+6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa data](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 8.  Zpracujte změny. Aktualizace všech dimenzí zásob může chvíli trvat. Průběh můžete sledovat pomocí úkolů dávkové úlohy můžete sledovat.
 

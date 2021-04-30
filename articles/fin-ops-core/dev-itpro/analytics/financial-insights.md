@@ -2,8 +2,7 @@
 title: Finanční analýza
 description: Finanční analýza používá Microsoft Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572359"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894901"
 ---
 # <a name="financial-analysis"></a>Finanční analýza
 
@@ -65,10 +64,9 @@ Data pro **finanční analýzu** pocházejí z úložiště entit (**Správa sys
 
 Je nutné aktualizovat následující entity pro zobrazení dat v pracovním prostoru **Finanční analýza**:
 
-- BudgetActivityMeasure
 - Data transakce finančního výkaznictví -verze 3 
+- Kredit a inkasa V2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Krychle Nákup
 - Krychle Prodej
@@ -241,9 +239,9 @@ Power BI nenabízí možnost skrytí a zobrazení prázdných řádků. Pokud ř
 
 Informace v následujících zdrojích není vyžadována, aby bylo možné povolit integrované sestavy pro pracovní prostor **Finanční analýza** v produkčním prostředí. Namísto toho jsou užitečné pro vývojářská pole a pokud chcete integrovat sestavy Power BI.
 
-- [Přístup k analytickým pracovním prostorům a sestavám v prostředí s topologií 1-box](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Přístup k analytickým pracovním prostorům a sestavám v prostředí s topologií 1-box](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

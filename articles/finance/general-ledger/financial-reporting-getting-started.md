@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811280"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897029"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
@@ -148,7 +148,7 @@ Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upra
 * V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká**.
 * Zakažte blokování vyskakovacích oken v prohlížeči.
 * K instalaci jsou vyžadovány pracovní stanice Microsoft .NET Framework 4.6.2 nebo vyšší. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte Chrome v režimu incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Další informace o rozšíření ClickOnce pro Chrome naleznete v části [Systémové požadavky pro nasazení cloudu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte Chrome v režimu incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Další informace o rozšíření ClickOnce pro Chrome naleznete v části [Systémové požadavky pro nasazení cloudu](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Pokud používáte Microsoft Edge s prohlížečem Chrome, nemusíte instalovat rozšíření ClickOnce pro Edge Chromium. Musíte však povolit možnost ClickOnce, abyste mohli stáhnout klienta Report Designer. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito.
      1. Otevřete nový prohlížeč v prohlížeči Microsoft Edge.
      2. Zadejte **edge://flags** a vyberte **Enter**.

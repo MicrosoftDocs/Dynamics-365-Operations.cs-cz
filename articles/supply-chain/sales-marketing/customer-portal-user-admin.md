@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840694"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907758"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
@@ -44,26 +44,26 @@ Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapován�
 
 ## <a name="the-invitation-process"></a>Proces pozvání
 
-Chcete-li pozvat stávající kontakt na zákaznický portál, postupujte podle kroků v [Pozvěte kontakty na své portály](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) v dokumentaci portálů Power Apps.
+Chcete-li pozvat stávající kontakt na zákaznický portál, postupujte podle kroků v [Pozvěte kontakty na své portály](/powerapps/maker/portals/configure/invite-contacts) v dokumentaci portálů Power Apps.
 
-Než pozvete zákazníka, aby se připojil k zákaznickému portálu, ujistěte se, že [záznam kontaktu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) zákazníka je k dispozici a nastaven následujícím způsobem:
+Než pozvete zákazníka, aby se připojil k zákaznickému portálu, ujistěte se, že [záznam kontaktu](/powerapps/maker/portals/configure/configure-contacts) zákazníka je k dispozici a nastaven následujícím způsobem:
 
 1. Nastavte pole **Společnost** na právnickou osobu, do které má zázkazník patřit, v aplikaci Supply Chain Management.
 2. Nastavte pole **Číslo účtu** na číslo účtu zákazníka, které má uživatel mít v aplikaci Supply Chain Management.
 
 Po vytvoření kontaktu byste jej měli vidět v Supply Chain Management.
 
-Další informace viz [Nakonfigurujte kontakt pro použití na portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) v dokumentaci portálů Power Apps.
+Další informace viz [Nakonfigurujte kontakt pro použití na portálu](/powerapps/maker/portals/configure/configure-contacts) v dokumentaci portálů Power Apps.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Dodávané webové role a oprávnění tabulky
 
-Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [oprávněními tabulky](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
+Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](/powerapps/maker/portals/configure/create-web-roles) a [oprávněními tabulky](/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
 
 ### <a name="out-of-box-web-roles"></a>Dodávané webové role
 
 Tato část popisuje webové role dodávané se zákaznickým portálem.
 
-Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění tabulky pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
+Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění tabulky pro portály](/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
 
 #### <a name="administrator"></a>Správce
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 74bdf891ffa7a9d875e23cf46aeee1dbaf86db48
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cd66cb4f5ac02407250e15ae134b36f5ccd4d290
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802400"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889925"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurace parametrů Human Resources
 
@@ -92,7 +92,7 @@ Nastavení na kartě **Číselná řada** určuje posloupnosti používané k au
 
 Spravovat odkazy číselných řad a kódy můžete na stránce se seznamem **Číselné řady** (vyberete **Správa organizace > Číselné řady > Číselné řady**).
 
-Další informace naleznete v tématu [Přehled číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/human-resources/toc.json).
+Další informace naleznete v tématu [Přehled číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
 > Počet hodin, které jsou odpracovány nesmí překročit 1 250 a délka zaměstnání nesmí přesáhnout 12 měsíců. Tyto maximální hodnoty jsou v souladu s federálním právem ve Spojených státech amerických.

@@ -1,8 +1,8 @@
 ---
-title: Začínáme s doplňkem pro výpočet daně
-description: Toto téma vysvětluje, jak nastavit doplněk pro výpočet daně.
+title: Začněte s výpočtem daně
+description: Toto téma vysvětluje, jak nastavit výpočet daně.
 author: wangchen
-ms.date: 03/10/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 835ae33fba31d4bccb218969aa9aa61eaa7a3061
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a90455a338067331a6a44cab36b578ed01ed56eb
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832586"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890291"
 ---
-# <a name="get-started-with-the-tax-calculation-add-in-preview"></a>Začínáme s doplňkem pro výpočet daně (Preview)
+# <a name="get-started-with-the-tax-calculation-preview"></a>Začínáme s doplňkem výpočtem daně (preview)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Toto téma poskytuje informace o tom, jak začít pracovat s doplňkem pro výpočet daně. Nejprve vás provede kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Poté představí běžný proces používání doplňku pro výpočet daně v transakcích Finance a Supply Chain Management.
+Toto téma poskytuje informace o tom, jak začít pracovat s výpočtem daně. Nejprve vás provede kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Poté představí běžný proces používání možností výpočtu daně v transakcích Finance a Supply Chain Management.
 
 Nastavení se skládá ze čtyř hlavních kroků:
 
-1. V LCS nainstalujte doplněk pro výpočet daně.
+1. V LCS nainstalujte výpočet daně.
 2. V RCS nastavte funkci výpočtu daně. Toto nastavení není specifické pro určitou právnickou osobu. Lze jej sdílet mezi právnickými osobami v aplikacích Finance a Supply Chain Management.
-3. Ve Finance a Supply Chain Management nastavte parametry doplňku pro výpočet daně podle právnické osoby.
-4. Ve Finance a Supply Chain Management vytvářejte transakce, jako jsou prodejní objednávky, a pomocí doplňku pro výpočet daně určujte a vypočítávejte daně.
+3. Ve Finance a Supply Chain Management nastavte parametry výpočtu daně podle právnické osoby.
+4. Ve Finance a Supply Chain Management vytvářejte transakce, jako jsou prodejní objednávky, a pomocí výpočtu daně určujte a vypočítávejte daně.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -46,7 +46,7 @@ Než budete moci dokončit postupy uvedené v tomto tématu, musí být splněn
 - Máte přístup k vašemu účtu RCS.
 - Kontaktovali jste společnost Microsoft, aby povolila testování ve vašem nasazeném prostředí Finance nebo Supply Chain Management.
 
-## <a name="set-up-the-tax-calculation-add-in-in-lcs"></a>Nastavení doplňku pro výpočet daně v LCS
+## <a name="set-up-tax-calculation-in-lcs"></a>Nastavení výpočtu daně v LCS
 
 1. Přihlaste se do [LCS](https://lcs.dynamics.com)
 2. Dokončete nastavení integrace Microsoft Power Platform. Další informace naleznete v tématu [Přehled doplňků](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
@@ -54,7 +54,7 @@ Než budete moci dokončit postupy uvedené v tomto tématu, musí být splněn
 4. Vyberte možnost **Výpočet daně (preview)**.
 5. Přečtěte si smluvní podmínky, vyjádřete s nimi souhlas a poté vyberte možnost **Instalovat**.
 
-## <a name="set-up-the-tax-calculation-add-in-in-rcs"></a>Nastavení doplňku pro výpočet daně v RCS
+## <a name="set-up-tax-calculation-in-rcs"></a>Nastavení výpočtu daně v RCS
 
 Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postup musíte dokončit pouze jednou a můžete jej dokončit u jakékoli právnické osoby v RCS.
 
@@ -64,7 +64,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 4. Vyberte poskytovatele konfigurace **Microsoft** a poté vyberte **Úložiště**.
 5. V poli **Typ** vyberte **Globální**.
 6. Zvolte **Otevřít**.
-7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní - Evropa**.
+7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
 8. Vyberte nejnovější verzi a poté vyberte **Importovat**.
 9. Vraťte se do pracovního prostoru **Funkce globalizace (Preview)**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
 10. Vyberte jeden z následujících typů funkce:
@@ -79,18 +79,18 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 12. Vyberte konceptovou verzi funkce a poté vyberte příkaz **Upravit**. Stránka **Nastavení výpočtu daně** je vyplněna.
 13. Vyberte **Verze konfigurace**. Měla by se zobrazit verze konfigurace, kterou jste importovali v kroku 8.
 
-    Společnost Microsoft poskytuje výchozí konfiguraci daně pro doplněk výpočtu daně. Tato konfigurace pokrývá většinu požadavků na chování výpočtu daně. Bude aktualizován na základě zpětných vazeb trhu. Pokud musíte rozšířit konfiguraci, aby splňovala konkrétní požadavky, v tématu [Jak vytvořit rozšíření v daňové službě](https://go.microsoft.com/fwlink/?linkid=2138483) najdete informace o tom, jak vygenerovat a vybrat vlastní daňovou konfiguraci.
+    Společnost Microsoft poskytuje výchozí konfiguraci daně pro doplněk výpočtu daně. Tato konfigurace pokrývá většinu požadavků na chování výpočtu daně. Bude aktualizován na základě zpětných vazeb trhu. Pokud musíte rozšířit konfiguraci, aby splňovala konkrétní požadavky, v tématu [Jak vytvořit rozšíření v daňové službě](./tax-service-add-data-fields-tax-integration-by-extension.md) najdete informace o tom, jak vygenerovat a vybrat vlastní daňovou konfiguraci.
 
     Poté, co vyberete **Verzi konfigurace**, objeví se několik dalších karet:
 
-    - **Daňové kódy** – Tato karta je povinná pro službu výpočtu daně. Používá se k udržování kmenových dat pro daňové kódy. Všechny daňové kódy, které jsou vytvořeny na této kartě, se automaticky synchronizují do Finance, když v právnické osobě povolíte aktuální verzi nastavení funkce daně.
-    - **Použitelnost daňových kódů** – Tato karta je u doplňku pro výpočet daně povinná. Používá se k definování matice, která určuje kód daně, daňovou skupinu a daňovou skupinu zboží. Stanovený kód daně se používá k výpočtu částky daně. Hodnoty polí **Kód daně**, **Daňová skupina** a **Daňová skupina zboží** jsou vráceny do Finance.
-    - **Použitelnost DIČ zákazníka** – Tato karta je u doplňku pro výpočet daně volitelná. Pokud máte více daňových registračních čísel pro jednoho zákazníka, může doplněk pro výpočet daně automaticky určit správné daňové registrační číslo. V matici na této kartě definujete pravidla, která doplněk používá k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u prodejních transakcí výchozí daňové registrační číslo na zdanitelných dokladech.
-    - **Použitelnost DIČ dodavatele** – Tato karta je u doplňku pro výpočet daně volitelná. Pokud máte více daňových registračních čísel pro jednoho dodavatele, může doplněk pro výpočet daně automaticky určit správné daňové registrační číslo. V matici na této kartě definujete pravidla, která doplněk používá k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u nákupních transakcí výchozí daňové registrační číslo na zdanitelných dokladech.
-    - **Použitelnost kódů seznamu** – Tato karta je u doplňku pro výpočet daně volitelná. Může pomoci automaticky určit hodnotu pole **Kód seznamu** prostřednictvím flexibilnějších a konfigurovatelnějších pravidel. V matici na této kartě definujete pravidla, která doplněk používá k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u zdanitelných dokladů výchozí kód.
+    - **Daňové kódy** – Tato karta je povinná. Používá se k udržování kmenových dat pro daňové kódy. Všechny daňové kódy, které jsou vytvořeny na této kartě, se automaticky synchronizují do Finance, když v právnické osobě povolíte aktuální verzi nastavení funkce daně.
+    - **Použitelnost daňových kódů** – Tato karta je povinná. Používá se k definování matice, která určuje kód daně, daňovou skupinu a daňovou skupinu zboží. Stanovený kód daně se používá k výpočtu částky daně. Hodnoty polí **Kód daně**, **Daňová skupina** a **Daňová skupina zboží** jsou vráceny do Finance.
+    - **Použitelnost DIČ zákazníka** – Tato karta je volitelná. Pokud máte více daňových registračních čísel pro jednoho zákazníka, může výpočet daně automaticky určit správné daňové registrační číslo. V matici na této kartě definujete pravidla, která se používají k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u prodejních transakcí výchozí daňové registrační číslo na zdanitelných dokladech.
+    - **Použitelnost DIČ dodavatele** – Tato karta je volitelná. Pokud máte více daňových registračních čísel pro jednoho dodavatele, může výpočet daně automaticky určit správné daňové registrační číslo. V matici na této kartě definujete pravidla, která se používají k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u nákupních transakcí výchozí daňové registrační číslo na zdanitelných dokladech.
+    - **Použitelnost kódu seznamu** – Tato karta je volitelná. Může pomoci automaticky určit hodnotu pole **Kód seznamu** prostřednictvím flexibilnějších a konfigurovatelnějších pravidel. V matici na této kartě definujete pravidla, která se používají k určení DIČ. Jinak budou Finance a Supply Chain Management i nadále používat u zdanitelných dokladů výchozí kód.
 
 14. Na kartě **Daňové kódy** vyberte **Přidat** a zadejte daňový kód a popis.
-15. Vyberte možnost **Daňová komponenta**. Daňová komponenta je skupina metod výpočtu daně, která byla definována v předchozí verzi vybrané daňové konfigurace. K dispozici jsou následující daňové komponenty:
+15. Vyberte možnost **Daňová komponenta**. Daňová komponenta je skupina metod, které byly definovány v předchozí verzi vybrané daňové konfigurace. K dispozici jsou následující daňové komponenty:
 
     - Podle čisté částky
     - Podle hrubé částky
@@ -104,13 +104,13 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     - Je osvobozeno od daně
     - Je importní DPH
     - Je přenesení daňové povinnosti
-    - Vyloučit ve výpočtu základní částky
+    - Vyloučit z výpočtu základní částky
 
     Pro scénář importní DPH nastavte jeden daňový kód, který má kladnou sazbu daně, a označte jej jako **Je importní DPH**.
 
     Pro scénář přenesení daňové povinnosti nastavte dva daňové kódy, z nichž jeden má kladnou sazbu daně a druhý má zápornou sazbu daně, ale stejnou hodnotu sazby. Označte záporný daňový kód jako **Je přenesení daňové povinnosti**. Další informace o řešení přenesení daňové povinnosti ve Finance najdete v části [Mechanismus přenesení daňové povinnosti pro režim DPH / GST](emea-reverse-charge.md).
     
-    U některých typů daní, které by měly být vyloučeny při výpočtu částky základu daně u transakcí zahrnujících cenu, jako je celní sazba v některých zemích, vyberte zaškrtávací políčko **Vyloučit ve výpočtu základní částky**.
+    U některých typů daní, které by měly být vyloučeny při výpočtu částky základu daně u transakcí zahrnujících cenu, jako je celní sazba v některých zemích, vyberte zaškrtávací políčko **Vyloučit z výpočtu základní částky**.
 
     Udržujte daňové sazby a limity výše daně pro tento daňový kód.
 
@@ -124,31 +124,31 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 
 ## <a name="dynamics-365-setup"></a>Nastavení Dynamics 365
 
-Po dokončení nastavení v RCS, které je popsané v předchozí části, budete mít publikovanou verzi funkce daně. Pomocí těchto kroků nastavíte doplněk pro výpočet daně ve Finance.
+Po dokončení nastavení v RCS, které je popsané v předchozí části, budete mít publikovanou verzi funkce daně. Pomocí těchto kroků nastavíte výpočet daně ve Finance.
 
-Nastavení v této části provádí právnická osoba. Musíte jej konfigurovat pro každou právnickou osobu, pro kterou chcete ve Finance povolit doplněk pro výpočet daně.
+Nastavení v této části provádí právnická osoba. Musíte jej konfigurovat pro každou právnickou osobu, pro kterou chcete ve Finance aktivovat výpočet daně.
 
-1. Ve Finance přejděte do nabídky **Daň** \> **Nastavení** \> **Daňová konfigurace** \> **Nastavení doplňku pro výpočet daně (preview)**.
+1. Ve Finance přejděte do nabídky **Daň** \> **Nastavení** \> **Daňová konfigurace** \> **Nastavení výpočtu daně (preview)**.
 2. Na kartě **Obecné** natavte následující pole:
 
-    - **Povolit doplněk pro výpočet daně** – Zaškrtnutím tohoto políčka povolíte doplněk pro výpočet daně pro právnickou osobu. Pokud doplněk pro výpočet daně není pro aktuální právnickou osobu povolen, bude právnická osoba i nadále k určení a výpočtu daně používat stávající daňový modul.
+    - **Povolit výpočet daně** – Zaškrtnutím tohoto políčka povolíte výpočet daně pro právnickou osobu. Pokud není pro aktuální právnickou osobu povolen, bude právnická osoba i nadále k určení a výpočtu daně používat stávající daňový modul.
     - **Nastavení funkce** – Vyberte publikované nastavení a verzi daňové funkce pro právnickou osobu. Další informace o tom, jak nastavit a dokončit publikovanou daňovou funkci, najdete v předchozí části tohoto tématu.
-    - **Obchodní proces** – Vyberte obchodní procesy, které budou povoleny v doplňku pro výpočet daně.
+    - **Obchodní proces** – Vyberte obchodní procesy, které chcete povolit.
     - **Povolit úpravu daňového kódu** – Nastavte tuto možnost na **Ano** a povolte tak úpravy daňového kódu na stránce DPH.
 
 3. Na kartě **Výpočet** definujte očekávané pravidlo zaokrouhlování pro právnickou osobu.
-4. Na kartě **Zpracování chyb** definujte očekávanou metodu zpracování chyb pro právnickou osobu. U každého kódu výsledku z doplňku pro výpočet daně jsou k dispozici tři možnosti:
+4. Na kartě **Zpracování chyb** definujte očekávanou metodu zpracování chyb pro právnickou osobu. Pro každý kód výsledku jsou k dispozici tři možnosti:
 
     - Žádný
     - Upozornění
     - Chyba
 
-5. Uložte nastavení doplňku pro výpočet daně.
+5. Uložte nastavení.
 6. Opakujte kroky 1 až 5 pro každou další právnickou osobu.
 
 ## <a name="transaction-processing"></a>Zpracování transakcí
 
-Po dokončení všech postupů nastavení můžete pomocí doplňku pro výpočet daně určit a vypočítat daň ve službě Finance. Kroky při zpracování transakcí zůstávají stejné. Ve službě Finance verze 10.0.18 jsou podporovány následující transakce:
+Po dokončení všech postupů nastavení můžete pomocí výpočtu daně určit a vypočítat daň ve službě Finance. Kroky při zpracování transakcí zůstávají stejné. Ve službě Finance verze 10.0.18 jsou podporovány následující transakce:
 
 - Proces prodeje
 

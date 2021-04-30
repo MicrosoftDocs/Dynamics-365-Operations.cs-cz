@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835599"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908945"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -50,7 +50,7 @@ Než můžete použít aplikaci, musíte ve svém systému zapnout související
 
 U menších nasazení budete obvykle chtít instalovat aplikaci na každém zařízení z příslušného úložiště a poté ručně konfigurovat připojení k prostředím, která používáte.
 
-U větších nasazení můžete automatizovat nasazení anebo konfiguraci, což může být pohodlnější, pokud spravujete mnoho zařízení. Můžete například použít řešení pro správu mobilních zařízení a mobilních aplikací, jako je [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+U větších nasazení můžete automatizovat nasazení anebo konfiguraci, což může být pohodlnější, pokud spravujete mnoho zařízení. Můžete například použít řešení pro správu mobilních zařízení a mobilních aplikací, jako je [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Informace o tom, jak používat Intune k přidávání aplikací, naleznete v části [Přidání aplikací do Microsoft Intune](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Nainstalujte si aplikaci z obchodu s aplikacemi
 
@@ -65,10 +65,10 @@ Nejjednodušší způsob instalace aplikace na jednom zařízení je instalace z
 Jako alternativu k instalaci z obchodu s aplikacemi si místo toho můžete aplikaci stáhnout z Microsoft App Center. App Center poskytuje instalovatelné balíčky, které můžete zkušebně načíst. Kromě aktuální verze vám App Center také umožňuje stáhnout předchozí verze a může poskytnout verze preview s chystanými funkcemi, které si můžete vyzkoušet. Chcete-li stáhnout aktuální, předchozí nebo preview verzi mobilní aplikace Řízení skladu z Microsoft App Center, použijte jeden z následujících odkazů:
 
 - **Windows (UWP):** [Řízení skladu (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Pokyny k instalaci staženého balíčku na zařízení Windows a nastavení požadovaných certifikátů naleznete v tématu [Instalace sestavení z App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    Pokyny k instalaci staženého balíčku na zařízení Windows a nastavení požadovaných certifikátů naleznete v tématu [Instalace sestavení z App Center](/appcenter/distribution/installation).
 
 - **Android:** [Řízení skladu (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Jestliže si stáhnete verzi preview, je k její instalaci zapotřebí několik dalších kroků. Podrobnosti viz [Testování aplikací Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Jestliže si stáhnete verzi preview, je k její instalaci zapotřebí několik dalších kroků. Podrobnosti viz [Testování aplikací Android](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Vytvoření aplikace webové služby v Azure Active Directory
 
@@ -103,11 +103,11 @@ Pokud chcete povolit interakci aplikace Warehouse Management Mobile App s konkr
 
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
-- Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících tématech:
 
-    - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
+    - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
 
@@ -135,7 +135,7 @@ Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilní
 
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je Warehouse Management mobile app nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 
-Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte Warehouse Management mobile app. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte Warehouse Management mobile app. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurace aplikace importem nastavení připojení
 

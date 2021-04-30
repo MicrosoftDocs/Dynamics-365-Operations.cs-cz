@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823781"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897593"
 ---
 # <a name="electronic-messaging"></a>Elektronické zprávy
 
@@ -29,7 +29,7 @@ Nedávno vlády a legislativní orgány různých zemí a regionů na celém sv�
 
 Funkce elektronických zpráv v aplikaci Finance podporuje různé procesy elektronické spolupráce mezi aplikací Finance a systémy, které vlády a legislativní orgány nabízejí pro podávání zpráv, předkládání a přijímání oficiálních informací
 
-Funkce elektronických zpráv je integrována s modulem **Elektronického výkaznictví**. Můžete tedy nastavit formáty elektronického výkaznictví pro elektronické zprávy. Další informace získáte v tématu [Elektronické výkaznictví](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funkce elektronických zpráv je integrována s modulem **Elektronického výkaznictví**. Můžete tedy nastavit formáty elektronického výkaznictví pro elektronické zprávy. Další informace získáte v tématu [Elektronické výkaznictví](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektronické zprávy jsou založeny na následujících entitách:
 
@@ -56,7 +56,7 @@ Funkce elektronických zpráv podporuje následující situace:
 
 ## <a name="set-up-electronic-messaging"></a>Nastavení elektronických zpráv
 
-Elektronické zprávy vám pomohou udržovat různé procesy elektronického výkaznictví pro různé typy dokumentů. V některých komplexních scénářích je elektronická zpráva nastavena tak, aby měla kombinaci mnoha stavů zpráv, stavů položek zpráv, akcí, dalších polí a spustitelných tříd. Pro tyto scénáře jsou k dispozici balíčky datových entit pro import. Pokud použijete tyto balíčky datových entit, měli byste je importovat do právnické osoby pomocí nástroje pro správu dat. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Elektronické zprávy vám pomohou udržovat různé procesy elektronického výkaznictví pro různé typy dokumentů. V některých komplexních scénářích je elektronická zpráva nastavena tak, aby měla kombinaci mnoha stavů zpráv, stavů položek zpráv, akcí, dalších polí a spustitelných tříd. Pro tyto scénáře jsou k dispozici balíčky datových entit pro import. Pokud použijete tyto balíčky datových entit, měli byste je importovat do právnické osoby pomocí nástroje pro správu dat. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Pokud neimportujete balíček datových entit, můžete ručně nastavit funkčnost elektronických zpráv. V takovém případě je třeba nastavit následující prvky:
 

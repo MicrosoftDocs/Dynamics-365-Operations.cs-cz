@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810407"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911241"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -28,19 +28,21 @@ Toto téma popisuje cross docking s rozšířeným plánováním. Cross docking
 
 Cross docking umožňuje pracovníkům přeskočit zaskladnění zásob na vstupu a jejich výdej na výstupu, když jsou již zásoby označeny pro výstupní objednávku. Tím se všude tam, kde je to možné, minimalizuje počet operací se zásobami. Protože se redukuje množství interakce se systémem, lze též dosáhnout dalších časových i prostorových úspor ve skladu.
 
-Před spuštěním cross dockingu musí uživatel nakonfigurovat novou šablonu pro cross docking, jež bude splňovat požadavky na zdroj dodávky a další. Po vytvoření odchozí objednávky musí být řádek označen proti příchozí objednávce obsahující stejnou položku.
+Před spuštěním cross dockingu musíte nakonfigurovat novou šablonu pro cross docking, jež bude splňovat požadavky na zdroj dodávky a další. Po vytvoření odchozí objednávky musí být řádek označen proti příchozí objednávce obsahující stejnou položku. Můžete vybrat pole kódu směrnice v šabloně cross-dockingu, podobně jako u způsobu nastavení objednávek doplňování a nákupu.
 
 V době přijetí příchozí objednávky nastavení cross dockingu automaticky identifikuje potřebu cross dockingu a na základě nastavení směrnice skladového místa vytvoří příslušný pohyb pro požadované množství.
 
 > [!NOTE]
-> U transakcí se zásobami se **neprovede** zrušení registrace, je-li zrušena crossdockingová úloha, a to ani v případě, že je nastavení této funkcionality v parametrech správy skladu zapnuto.
+> U transakcí se zásobami se *neprovede* zrušení registrace, je-li zrušena crossdockingová úloha, a to ani v případě, že je nastavení této funkcionality v parametrech správy skladu zapnuto.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Zapnutí funkcí Cross docking s plánováním
 
 Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapínejte následující funkce v následujícím pořadí:
 
 1. *Plánovaný cross docking*
-2. *Šablony cross dockingu se směrnicemi skladového místa*
+1. *Šablony cross dockingu se směrnicemi skladového místa*
+    > [!NOTE]
+    > Tato funkce umožňuje zadat pole **Kód směrnice** v šabloně cross dockingu, podobně jako při nastavování šablon doplňování. Povolení této funkce vám zabrání v přidání kódu směrnice na řádky pracovní šablony cross dockingu pro finální řádek *Vložit*. Tím je zajištěno, že konečné umístění vložení lze určit během vytváření práce před zvážením pracovních šablon.
 
 ## <a name="setup"></a>Nastavení
 
@@ -88,9 +90,9 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
 
         Tato volba určuje, zda má být dodávka během příjmu znovu ověřena. Pokud je u této možnosti nastavena hodnota *Ano*, proběhne kontrola maximálního časového úseku i počtu dní vypršení platnosti.
 
-    - **Kód směrnice** Toto pole nechte prázdné.
+    - **Kód směrnice:** Toto pole nechte prázdné
 
-        Tato možnost umožňuje systému používat direktivy umístění, aby pomohla určit nejlepší umístění pro přesun zásob cross-docking. Můžete jej nastavit přiřazením kódu direktivy ke každé příslušné šabloně cross-dockingu. Každý kód direktivy označuje jedinečnou direktivu umístění.
+        Tuto možnost povoluje funkce *Šablony cross dockingu se směrnicemi umístění*. Systém využívá směrnice umístění k určování nejlepšího umístění pro přesun zásob cross-docking. Můžete jej nastavit přiřazením kódu direktivy ke každé příslušné šabloně cross-dockingu. Pokud je nastaven kód šablony, systém nebude při generování práce hledat směrnice skladového místa podle kódu směrnice. Tímto způsobem můžete omezit směrnice umístění, které se používají pro konkrétní šablonu cross dockingu.
 
     - **Ověření časového úseku:** *Ano*
 

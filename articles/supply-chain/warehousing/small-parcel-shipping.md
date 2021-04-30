@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831163"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910202"
 ---
 # <a name="small-parcel-shipping"></a>Expedice malých balíků
 
@@ -58,7 +58,7 @@ Chcete-li získat ukázkový výpočet přepravních sazeb, postupujte podle tě
 Informace o tom, jak vytvořit a nasadit funkční výpočty přepravních sazeb, aby je bylo možné použít v produkčním nebo testovacím prostředí, najdete v následujících tématech:
 
 - [Vytvoření nového modulu správy přepravy](../transportation/create-new-transportation-management-engine.md)
-- [Nastavení modulů správy přepravy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Nastavení modulů správy přepravy](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 Další informace o tom, jak vytvořit výpočet přepravních sazeb SPS, najdete v následujícím příspěvku na blogu: [Expedice malých balíků: Jak využít funkce expedice malých balíků v Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 

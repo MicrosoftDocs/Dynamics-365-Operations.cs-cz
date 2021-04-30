@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826683"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897857"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Vytváření konsolidovaných finančních výkazů
 
@@ -34,7 +34,7 @@ Nejjednodušší metodou konsolidace prostřednictvím finančního výkaznictv�
 3. Vytvořte organizační strom, který obsahuje uzel výkaznictví pro každou společnost, kterou používáte v konsolidovaných sestavách.
 
 > [!TIP]
-> Další informace o postupu při vytváření a správě definic řádků, definic sloupců a organizačního stromu naleznete v tématu [Součásti finančních sestav](../../dev-itpro/analytics/financial-report-components.md).
+> Další informace o postupu při vytváření a správě definic řádků, definic sloupců a organizačního stromu naleznete v tématu [Součásti finančních sestav](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Následující obrázek znázorňuje použití definice organizačního stromu ve finančními výkaznictví k identifikaci jednotlivých společností, které budete konsolidovat.
 

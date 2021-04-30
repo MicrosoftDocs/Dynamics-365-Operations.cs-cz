@@ -12,12 +12,12 @@ ms.search.region: Czech Republic
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 58e6fd85fcec04dacfab9b09a80bede821d472f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a47278909d057445819b2182f7ffec19539def3f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840308"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893816"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -87,8 +87,8 @@ Další informace naleznete v tématu [roční uzávěrka pro Českou republiku 
 
 ## <a name="additional-resources"></a>Další prostředky
 - [Portál lokalizace Microsoft Dynamics: Sestava České republiky](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
-- [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

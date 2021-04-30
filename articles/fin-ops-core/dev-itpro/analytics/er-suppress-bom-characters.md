@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743526"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893269"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Návrh konfigurací ER k potlačení znaků kusovníku ve vygenerovaných souborech
 
 [!include [banner](../includes/banner.md)]
 
-Můžete navrhnout [řešení](general-electronic-reporting.md) [pro formát elektronického výkaznictví (ER)](er-quick-start1-new-solution.md) ke generování odchozích dokumentů. Chcete-li generovat dokumenty jako textové nebo XML soubory, musí řešení obsahovat [konfiguraci](general-electronic-reporting.md#Configuration) ER, která obsahuje komponentu [formátu](general-electronic-reporting.md#FormatComponentOutbound) ER. Chcete-li určit [kódování znaků](https://docs.microsoft.com/windows/win32/intl/character-sets), které představuje sadu znaků v generovaných souborech, musí formát ER obsahovat prvek formátu **Běžný\\Soubor**. Chcete-li nakonfigurovat komponentu formátu ER, musíte otevřít [rámcovou](general-electronic-reporting.md#component-versioning) verzi konfigurace ER v návrháři formátu ER a přidat prvek **Vlastní\\Soubor**. V poli **Kódování** zadejte kódování odchozích souborů generovaných za běhu pomocí této komponenty.
+Můžete navrhnout [řešení](general-electronic-reporting.md) [pro formát elektronického výkaznictví (ER)](er-quick-start1-new-solution.md) ke generování odchozích dokumentů. Chcete-li generovat dokumenty jako textové nebo XML soubory, musí řešení obsahovat [konfiguraci](general-electronic-reporting.md#Configuration) ER, která obsahuje komponentu [formátu](general-electronic-reporting.md#FormatComponentOutbound) ER. Chcete-li určit [kódování znaků](/windows/win32/intl/character-sets), které představuje sadu znaků v generovaných souborech, musí formát ER obsahovat prvek formátu **Běžný\\Soubor**. Chcete-li nakonfigurovat komponentu formátu ER, musíte otevřít [rámcovou](general-electronic-reporting.md#component-versioning) verzi konfigurace ER v návrháři formátu ER a přidat prvek **Vlastní\\Soubor**. V poli **Kódování** zadejte kódování odchozích souborů generovaných za běhu pomocí této komponenty.
 
 > [!NOTE]
 > Pokud formát obsahuje nesprávný název kódování, dojde k chybě, když uložíte změny v nastavení formátu.
 
 ![Přidání kořenového prvku a polí na stránce Návrhář formátu](./media/er-suppress-bom-characters-image1.gif)
 
-Pokud jako kódování zadáte **UTF-8**, **UTF-16**, nebo **UTF-32**, zpřístupní se možnost **Potlačit znaky BOM**. Tuto možnost nastavte na **Ano**, pokud chcete potlačit [znaky pořadí bajtů (BOM)](https://docs.microsoft.com/globalization/encoding/byte-order-mark) v odchozích souborech, které jsou generovány za běhu, když je spuštěn upravitelný formát ER.
+Pokud jako kódování zadáte **UTF-8**, **UTF-16**, nebo **UTF-32**, zpřístupní se možnost **Potlačit znaky BOM**. Tuto možnost nastavte na **Ano**, pokud chcete potlačit [znaky pořadí bajtů (BOM)](/globalization/encoding/byte-order-mark) v odchozích souborech, které jsou generovány za běhu, když je spuštěn upravitelný formát ER.
 
 > [!NOTE]
 > Ponecháte-li pole **Kódování** prázdné, použije se výchozí kódování **UTF-8**.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798410"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890118"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Úvod do rozhraní API pro integraci systému sledování žadatelů
 
@@ -45,21 +45,21 @@ Toto rozhraní API je postaveno na Microsoft Dataverse (dříve Common Data Serv
 
 Další obecné informace o webovém rozhraní Microsoft Dataverse Web API viz:
 
-- [Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Použití webového rozhraní Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Průvodce vývojáře Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Použití webového rozhraní Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)
+- [Průvodce vývojáře Microsoft Dataverse](/powerapps/developer/data-platform)
 
-Výše uvedená dokumentace obsahuje podrobnosti a pokyny pro vývojáře ohledně použití webového rozhraní Dataverse Web API, jako je [správa ověřování](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [provádění operací](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [použití platformy Postman s tímto rozhraním API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api) a [použití sledování změn nebo delta tokenů](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) s daným rozhraním API.
+Výše uvedená dokumentace obsahuje podrobnosti a pokyny pro vývojáře ohledně použití webového rozhraní Dataverse Web API, jako je [správa ověřování](/powerapps/developer/data-platform/webapi/authenticate-web-api), [provádění operací](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [použití platformy Postman s tímto rozhraním API](/powerapps/developer/data-platform/webapi/use-postman-web-api) a [použití sledování změn nebo delta tokenů](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) s daným rozhraním API.
 
 ### <a name="option-sets"></a>Sada možností
 
-Datový model rozhraní API pro integraci ATS popsaný v tomto dokumentu obsahuje sady možností, které poskytují výčtové hodnoty přidružené k vlastnostem entity. Podrobnosti o práci se sadami možností v Dataverse Web API viz [Vytváření a aktualizace sad možností pomocí webového rozhraní API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Sady možností jsou definovány pro každé prostředí Dataverse.
+Datový model rozhraní API pro integraci ATS popsaný v tomto dokumentu obsahuje sady možností, které poskytují výčtové hodnoty přidružené k vlastnostem entity. Podrobnosti o práci se sadami možností v Dataverse Web API viz [Vytváření a aktualizace sad možností pomocí webového rozhraní API](/powerapps/developer/data-platform/webapi/create-update-optionsets). Sady možností jsou definovány pro každé prostředí Dataverse.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Virtuální tabulky pro Human Resources v Dataverse
 
 Koncové body rozhraní API pro integraci ATS využívají možnosti platformy virtuálních tabulek Microsoft Dataverse. Ve výchozím nastavení nejsou virtuální tabulky a jejich přidružené koncové body rozhraní API nasazeny pro prostředí Human Resources, což organizacím umožňuje určit, které koncové body OData budou pro dané prostředí k dispozici. Chcete-li použít rozhraní API, musí být pro prostředí vygenerovány virtuální tabulky pro entity Human Resources. 
 
-Informace o generování virtuálních tabulek pro rozhraní API najdete v části [Konfigurace virtuálních tabulek Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Informace o generování virtuálních tabulek pro rozhraní API najdete v části [Konfigurace virtuálních tabulek Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="data-model"></a>Datový model
 
@@ -134,8 +134,8 @@ Sady možností:
 ## <a name="see-also"></a>Viz také
 
 [Nábor uchazečů o práci](hr-personnel-recruit.md)<br>
-[Co je Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Použití webového rozhraní Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Vytváření a aktualizace sad možností pomocí webového rozhraní API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Použití webového rozhraní Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)<br>
+[Vytváření a aktualizace sad možností pomocí webového rozhraní API](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

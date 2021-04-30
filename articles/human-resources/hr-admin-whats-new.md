@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6a7d86e85ef9cff493dcdfab498d107163f381d1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2bbcedfe45801d0892d80d3e18f78be00bdfdc40
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5806011"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892170"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
@@ -39,7 +39,7 @@ Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human R
 
 Další informace o nadcházejících funkcích a procesu aktualizace pro Human Resources naleznete v následujících článcích: 
 
-- [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
 - [Aktualizace procesu](hr-admin-setup-update-process.md)
 
@@ -49,6 +49,7 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících článcích:
 
+[5. dubna 2021](hr-whats-new-2021-04-05.md)</br>
 [22. března 2021](hr-whats-new-2021-03-22.md)</br>
 [8. března 2021](hr-whats-new-2021-03-08.md)</br>
 [22. února 2021](hr-whats-new-2021-02-22.md)</br>
@@ -81,7 +82,7 @@ Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním v
 
 ## <a name="see-also"></a>Viz také
 
-[Přehled produktu Dynamics 365 Human Resources vydání 2020 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2020 vlny 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
 

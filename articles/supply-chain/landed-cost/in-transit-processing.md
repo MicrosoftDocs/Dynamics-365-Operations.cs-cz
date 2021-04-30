@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823402"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909444"
 ---
 # <a name="goods-in-transit-processing"></a>Zpracování přepravovaného zboží
 
@@ -40,7 +40,7 @@ Když povolíte modul **Náklady za doručení**, standardní entita *dodací po
 
 Když je možnost **Správa přepravovaného zboží** je nastavena na *Ano* pro příslušné záznamy dodacích podmínek, je zboží umístěno do tranzitního skladu zboží. Tato akce se aktivuje pouze v případě, že před zpracováním faktury nebude zpracován příjem zásob. Když mají dodací podmínky objednávky nastaveno použití přepravovaného zboží, uživatelé již nemohou zaúčtovat příjemku produktu pro objednávku. Pokud se o to pokusí, dojde k chybě. Chybová zpráva uvádí, že k pokračování je nutné použít funkci přepravovaného zboží.
 
-Chcete-li pracovat s informacemi o dodacích podmínkách pro přepravované zboží, přejděte na uzel **Zásobování a zdroje \> Nastavení \> Rozdělení \> Dodací podmínky**. Následující tabulka popisuje pole, která modul **Náklady za doručení** přidává do stránky **Dodací podmínky** za účelem podpory funkce přepravovaného zboží. Obě pole jsou na záložce **Obecné**. Další informace o dalších polích na této stránce najdete v tématu [Dodací podmínky (formulář)](https://technet.microsoft.com/library/aa575567.aspx).
+Chcete-li pracovat s informacemi o dodacích podmínkách pro přepravované zboží, přejděte na uzel **Zásobování a zdroje \> Nastavení \> Rozdělení \> Dodací podmínky**. Následující tabulka popisuje pole, která modul **Náklady za doručení** přidává do stránky **Dodací podmínky** za účelem podpory funkce přepravovaného zboží. Obě pole jsou na záložce **Obecné**. Další informace o dalších polích na této stránce najdete v tématu [Dodací podmínky (formulář)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Pole | popis |
 |---|---|
@@ -55,7 +55,7 @@ Náklady za doručení přidávají dva nové typy skladu: *přepravované zbož
 
 Typ skladu pro *přepravované zboží* bude přidružen k vašemu tranzitnímu skladu zboží a tento sklad bude použit ke zpracování zboží na objednávkách přepravovaného zboží před jeho přijetím v konečném cílovém skladu. Obecně platí, že pro každé místo postačuje jeden tranzitní sklad zboží, pokud jsou místo a sklad jediné dimenze zásob, které se používají pro správu zásob. Pokud se také používá dimenze Umístění zásob, musí být pro každou kombinaci místa a skladu nastaven tranzitní sklad zboží, aby bylo možné určit také výchozí umístění.
 
-Chcete-li pracovat s nastavením přepravovaného zboží pro vaše sklady, přejděte na uzel **Řízení zásob \> Nastavení \> Rozdělení zásob \> Sklady**. Následující tabulka popisuje pole, která modul **Náklady za doručení** přidává do stránky **Sklady** za účelem podpory funkce přepravovaného zboží. Obě pole se zobrazí na záložce **Obecné**. Chcete-li získat informace o ostatních polích na stránce, přečtěte si téma [Sklady (formulář)](https://technet.microsoft.com/library/aa620570.aspx).
+Chcete-li pracovat s nastavením přepravovaného zboží pro vaše sklady, přejděte na uzel **Řízení zásob \> Nastavení \> Rozdělení zásob \> Sklady**. Následující tabulka popisuje pole, která modul **Náklady za doručení** přidává do stránky **Sklady** za účelem podpory funkce přepravovaného zboží. Obě pole se zobrazí na záložce **Obecné**. Chcete-li získat informace o ostatních polích na stránce, přečtěte si téma [Sklady (formulář)](/dynamicsax-2012//warehouses-form).
 
 | Pole | popis |
 |---|---|
@@ -109,7 +109,7 @@ Zboží můžete také přijímat vytvořením deníku doručení. Deník doruč
     - **Vytvořit z přepravovaného zboží** – Nastavte tuto možnost na *Ano*, chcete-li přebírat množství z vybraných řádků v tranzitu pro vybranou cestu, kontejner nebo folio.
     - **Vytvořit z řádků objednávky** – Nastavte tuto možnost na *Ano*, chcete-li nastavit výchozí množství v deníku doručení z řádků nákupní objednávky. Tímto způsobem lze nastavit výchozí množství v deníku doručení pouze v případě, že množství na řádku nákupní objednávky odpovídá množství na objednávce přepravovaného zboží.
 
-1. Zpracujte deník doručení podle popisu v tématu [Registrace příjmu zboží pomocí deníku doručení zboží](https://technet.microsoft.com/library/aa571129.aspx).
+1. Zpracujte deník doručení podle popisu v tématu [Registrace příjmu zboží pomocí deníku doručení zboží](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Deník doručení se obecně používá v situacích, kdy se používají umístění a sledování dávky/série, ale nepoužívá se řízení skladu.
@@ -131,15 +131,14 @@ Modul Náklady za doručení přidává do položek nabídky mobilního zaříze
 - Příjem položky přepravovaného zboží
 - Příjem a vyskladnění položky přepravovaného zboží
 
-Nastavení konfigurace pro tyto procesy se podobá nastavení [procesů vytváření příjmu a vyskladnění nákupních objednávek](https://technet.microsoft.com/library/dn553216.aspx). Proces *Příjem a vyskladnění položky přepravovaného zboží* však také přidá následující pole.
+Nastavení konfigurace pro tyto procesy se podobá nastavení [procesů vytváření příjmu a vyskladnění nákupních objednávek](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). Proces *Příjem a vyskladnění položky přepravovaného zboží* však také přidá následující pole.
 
 - **Povolit dokončení přepravního kontejneru** – Pokud je tato možnost nastavena na *Ano*, mobilní aplikace Řízení skladu poskytne další možnost s názvem **Přepravní kontejner dokončen**, když je vyskladnění dokončeno. Když je tato možnost vybrána, pracovník bude vyzván k potvrzení, že je kontejner kompletní. V tomto okamžiku budou všechny nedostačující příjmy zpracovány jako transakce nedostatečné dodávky.
 
 ### <a name="location-directives"></a>Směrnice skladového místa
 
-Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Směrnice skladového místa**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [typy pracovních příkazů nákupní objednávky](https://technet.microsoft.com/library/dn553184.aspx).
+Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Směrnice skladového místa**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [typy pracovních příkazů nákupní objednávky](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Šablony práce
 
-Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Šablony práce**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [šablony práce nákupní objednávky](https://technet.microsoft.com/library/dn553184.aspx).
-
+Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Šablony práce**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [šablony práce nákupní objednávky](/dynamicsax-2012/appuser-itpro/create-a-work-template).

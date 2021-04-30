@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794846"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892244"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -50,7 +50,7 @@ Ve výchozím nastavení je integrace Dataverse v nových prostředích, která 
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Je možné vytvořit nové mapování bez použití šablon
 
-Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Lze mapovat finanční dimenze k přenosu mezi aplikacemi Human Resources a Finance?
 
@@ -145,7 +145,7 @@ Integrace s aplikací Finance je proces ve dvou krocích. Nejprve ověřte, že 
 
 Pokud se data v Dataverse nezobrazují požadovaným způsobem, ověřte, že je entita v integraci podporovaná. Pokud chcete zahrnout do Dataverse další data, bude požadována změna na straně společnosti Microsoft.
 
-Pokud je entita podporovaná a data jsou v Dataverse k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Pokud je entita podporovaná a data jsou v Dataverse k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance správné. Co mám dělat?
 
@@ -172,15 +172,15 @@ Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry 
 
 - Integrátor dat (Di): 
 
-  - [Integrace dat do Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrace dat do Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Správa chyb a řešení problémů integrátoru dat](/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Power Apps, Microsoft Power Automate a Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Power Apps, Microsoft Power Automate a Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Správa dat:
 
-  - [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Správa dat](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
