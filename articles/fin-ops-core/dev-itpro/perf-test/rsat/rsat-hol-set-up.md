@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745190"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909027"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Nastavení a instalace kurzu pro nástroj Regression Suite Automation Tool
 
@@ -54,7 +54,7 @@ Toto téma je kurz, který vám pomůže získat instalační program a začít 
 
 ### <a name="user-eligibility"></a>Způsobilost uživatele
 
-Zkontrolujte, zda je uživatel vytvořen v aplikaci Azure DevOps a zda má úroveň předplatného, která poskytuje přístup k plánům testování Azure. Licence Azure DevOps Test Plans je vyžadována pouze v případě, že uživatel vytvoří a spravuje testovací případy (tj. ne všichni uživatelé RSAT musí tuto licenci vlastnit). Informace o licenčních požadavcích naleznete v tématu [Licenční požadavky](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Zkontrolujte, zda je uživatel vytvořen v aplikaci Azure DevOps a zda má úroveň předplatného, která poskytuje přístup k plánům testování Azure. Licence Azure DevOps Test Plans je vyžadována pouze v případě, že uživatel vytvoří a spravuje testovací případy (tj. ne všichni uživatelé RSAT musí tuto licenci vlastnit). Informace o licenčních požadavcích naleznete v tématu [Licenční požadavky](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### <a name="create-a-new-azure-devops-project"></a>Vytvoření nového projektu Azure DevOps
 

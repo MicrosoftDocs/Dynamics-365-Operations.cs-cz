@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825199"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908028"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
@@ -31,7 +31,7 @@ Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se
 - **Potvrzení nákupní objednávky** – sledování nákupních objednávek a odpovídání na ně.
 - **Nabídky dodavatele** – zobrazení požadavků na nabídku a odpovídání na ně zadáním nabídky.
 - **Informace o dodavateli** – zobrazení a aktualizace hlavních dat dodavatele.
-- **Fakturace** – práce s fakturami. Toto téma nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturace** – práce s fakturami. Toto téma nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Dodavatele mohou také monitorovat informace o zásobách dodávky.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94426580d65dc1639de4b2dd1b3f283724a1a9e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825511"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909197"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -83,12 +83,12 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 ## <a name="prices-and-discounts"></a>Ceny a slevy
 -   [Nákupní smlouvy](purchase-agreements.md)
 -   [Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
--   [Rabaty dodavatele](https://docs.microsoft.com/dynamics/s-e/) (dokumentace)
+-   [Rabaty dodavatele](/dynamics/s-e/) (dokumentace)
 
 ## <a name="product-receipt-and-invoicing"></a>Příjem produktu a fakturace
 -   [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
--   [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Účetní profily dodavatele](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Účetní profily dodavatele](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 -   [Přehled zásobování a zdrojů](procurement-sourcing-overview.md)

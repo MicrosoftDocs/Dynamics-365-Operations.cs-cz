@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753329"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893925"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Umožňuje uživatelům nastavit odkaz formátu elektronického výkaznictví s dotazem na formát z globálního úložiště.
 
@@ -30,7 +30,7 @@ Můžete použít rámec [elektronického výkaznictví ](general-electronic-rep
 
 Obvykle je nutné určit, který formát elektronického výkaznictví je nutné použít v určitém obchodním procesu. Chcete-li to provést, vyberte ve vyhledávacím poli, které je nakonfigurováno jako součást specifických parametrů obchodního procesu, jeden formát elektronického výkaznictví. Tato vyhledávací pole jsou obvykle implementována pomocí vhodného rozhraní API rámce elektronického výkaznictví. Další informace naleznete v tématu [Rozhraní API rámce elektronického výkaznictví - kód pro zobrazení vyhledávání mapování formátu](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Pokud například konfigurujete [parametry zahraničního obchodu](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), je nutné nastavit odkazy na jednotlivé formáty elektronického výkaznictví, které budou použity ke generování prohlášení Intrastat a sestavy řízení prohlášení Intrastat. Snímky obrazovky níže ukazují, jak vypadají vyhledávací pole formátů elektronického výkaznictví na stránce **Parametry zahraničního obchodu**.
+Pokud například konfigurujete [parametry zahraničního obchodu](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), je nutné nastavit odkazy na jednotlivé formáty elektronického výkaznictví, které budou použity ke generování prohlášení Intrastat a sestavy řízení prohlášení Intrastat. Snímky obrazovky níže ukazují, jak vypadají vyhledávací pole formátů elektronického výkaznictví na stránce **Parametry zahraničního obchodu**.
 
 Pokud aktuální instance aplikace Finance neobsahuje žádné formáty elektronického výkaznictví související s obchodním procesem systému Intrastat, bude toto vyhledávací pole prázdné.
 

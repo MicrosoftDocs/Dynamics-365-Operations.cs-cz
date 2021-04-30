@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751309"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893597"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -57,7 +57,7 @@ Výchozí chování pro konfiguraci formátu ER závisí na typu provádění, k
 
 Pokud v dialogovém okně **Zpráva Intrastat** na pevné záložce **Spustit na pozadí** nastavíte možnost **Dávkové zpracování** na **Ne**, formát ER se okamžitě spustí v interaktivním režimu. Po úspěšném dokončení tohoto spuštění je generovaný odchozí dokument zpřístupněn ke stažení.
 
-Pokud nastavíte možnost **Dávkové zpracování** na **Ano**, formát ER se spustí v [dávkovém](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) režimu. Příslušná dávková úloha je vytvořena na základě parametrů, které zadáte na kartě **Spustit na pozadí** dialogového okna **Parametry elektronického výkaznictví**.
+Pokud nastavíte možnost **Dávkové zpracování** na **Ano**, formát ER se spustí v [dávkovém](../sysadmin/batch-processing-overview.md) režimu. Příslušná dávková úloha je vytvořena na základě parametrů, které zadáte na kartě **Spustit na pozadí** dialogového okna **Parametry elektronického výkaznictví**.
 
 > [!NOTE]
 > Popis úlohy vás informuje o průběhu mapování formátu elektronického výkaznictví. Zahrnuje také název provedené komponenty ER.
@@ -70,7 +70,7 @@ Informace o této úloze najdete na několika místech:
 - Přejděte na **Organizační správa** \> **Elektronické výkaznictví** \> **Úlohy elektronického výkaznictví** a zkontrolujte stav naplánované úlohy a výsledky provedení u dokončené úlohy. Po úspěšném dokončení úlohy vyberte **Zobrazit soubory** na stránce **Úlohy elektronického výkaznictví** pro získání generovaného odchozího dokumentu.
 
     > [!NOTE]
-    > Tento dokument je uložen jako příloha aktuálního záznamu úlohy a je řízen rámcem [Správa dokumentů](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), který se používá k ukládání artefaktů ER tohoto typu, je nakonfigurován v okně [Parametry ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > Tento dokument je uložen jako příloha aktuálního záznamu úlohy a je řízen rámcem [Správa dokumentů](../../fin-ops/organization-administration/configure-document-management.md). [Typ dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), který se používá k ukládání artefaktů ER tohoto typu, je nakonfigurován v okně [Parametry ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - Na stránce **Úlohy elektronického výkaznictví** vyberte **Zobrazit souboru** k zobrazení seznamu případných chyb a varování generovaných v průběhu provádění úlohy.
 

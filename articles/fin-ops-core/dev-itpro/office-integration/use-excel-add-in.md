@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752959"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908334"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
@@ -45,7 +45,7 @@ Další informace o používání doplňku aplikace Excel se dozvíte v krátké
 2. Zvolte možnost **Otevřít v aplikaci Excel** a otevřete sešit, který je generován. Tento sešit obsahuje závazné informace pro entitu, ukazatel pro vaše prostředí a ukazatel na doplněk aplikace Excel.
 3. V aplikaci Excel zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
-5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
+5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
 
 Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Všimněte si, že v sešitu nebudou žádná data, dokud ho doplněk aplikace Excel nenačte.
 
@@ -60,7 +60,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 
 6. Zvolte **OK** a potom zvolením **Ano** potvrďte změnu. Doplněk aplikace Excel se restartuje a načte metadata.
 
-    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části e [Poradce při potížích](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) tohoto tématu.
+    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části e [Poradce při potížích](../office-integration/use-excel-add-in.md#troubleshooting) tohoto tématu.
 
 7. Zvolte **Návrh**. Doplněk aplikace Excel načte metadata entity.
 8. Zvolte **Přidat tabulku**. Zobrazí se seznam entit. Entity jsou uvedeny ve formátu "Název – popisek".
@@ -138,7 +138,7 @@ Existuje několik problémů, které lze vyřešit pomocí některé jednoduchý
 
 - **Je zobrazeno tlačítko Načíst aplety** – Pokud má doplněk aplikace Excel po přihlášení tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **Dostanete zprávu "Zakázáno"** – Pokud se při načítání metadat doplňkem aplikace Excel zobrazí zpráva "Zakázáno", účet, který je přihlášení k doplňku aplikace Excel, nemá oprávnění používat cílené služby, instance nebo databázi. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
-- **V aplikaci Excel se zobrazí prázdná webová stránka** – Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](https://technet.microsoft.com/library/jj219422.aspx) pro [přesunutí z vyřazeného kanálu do stávajícího](https://technet.microsoft.com/library/mt455210.aspx).
+- **V aplikaci Excel se zobrazí prázdná webová stránka** – Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](/deployoffice/overview-office-deployment-tool) pro [přesunutí z vyřazeného kanálu do stávajícího](/deployoffice/overview-update-channels).
 - **Při publikování změn dat obdržíte časový limit** - Pokud obdržíte zprávy o vypršení časového limitu, když se pokoušíte publikovat změny dat v entitě, zvažte zmenšení velikosti dávky publikování pro ovlivněný sešit. Entity, které aktivují větší množství logiky při změnách záznamu, mohou vyžadovat zasílání aktualizací v menších dávkách, aby se zabránilo vypršení časového limitu.
 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805075"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889997"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
 
@@ -53,8 +53,8 @@ Když je integrace zapnutá, vytvoří se balíček exportu dat a soubory, a nas
 
 Další informace o účtech úložiště Azure a řetězcích připojení úložiště Azure Storage naleznete v následujících článcích o Azure:
 
-- [O účtech úložiště Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurace řetězců připojení Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [O účtech úložiště Azure Storage](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurace řetězců připojení Azure Storage](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technické podrobnosti při povolení integrace mezd
 
@@ -65,6 +65,7 @@ Zapnutí integrace mezd má dva primární efekty:
 
 > [!NOTE]
 > Datový balík převedený na koncový bod SFTP je šifrován pomocí klíče, který je pro daný balík jedinečný. Klíč je v úložišti klíčů Azure, který je přístupný pouze společnosti Ceridian. Není možné dešifrovat a prověřit obsah balíčku dat. Potřebujete-li zkontrolovat obsah balíčku dat, je třeba exportovat datový projekt integrace mezd ručně, stáhnout jej a poté jej otevřít. Ruční export nebude používat šifrování nebo nepřenese balíček.
+> Pro případy, kdy jsou integrační soubory odesílány z prostředí Dynamics 365 Human Resources UAT nebo Sandbox do testovacího prostředí Ceridian Dayforce můžete použít následující adresu URL trezoru klíčů: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurace vašich dat 
 
@@ -124,10 +125,10 @@ Dayforce vytvoří následující srážky, na základě dopadu mzdy, definovan�
 
 Další informace o tom, jak definovat a spravovat program zaměstnaneckých výhod naleznete v následujících článcích:
 
-- [Definování programu zaměstnaneckých výhod](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Vytvořit novou zaměstnaneckou výhodu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definování pravidel a zásad nároků na zaměstnanecké výhody](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrace a odebrání zaměstnaneckých výhod pracovníků](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Definování programu zaměstnaneckých výhod](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Vytvořit novou zaměstnaneckou výhodu](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definování pravidel a zásad nároků na zaměstnanecké výhody](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Registrace a odebrání zaměstnaneckých výhod pracovníků](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompenzace 
 
@@ -137,20 +138,20 @@ Dayforce používá informace o kompenzaci k výpočtu hodinové nebo roční sa
 
 Další informace o plánech kompenzace naleznete v následujících článcích:
 
-- [Vytvoření plánů fixní kompenzace](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Vytvoření plánů variabilní kompenzace](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Vývoj struktury platu/kompenzace a plánů](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Proces kompenzace](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definování procesu kompenzací a výpočet výsledků](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Přihlášení zaměstnance k plánu fixní kompenzace](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Přihlášení zaměstnance k plánu variabilní kompenzace](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Vytvoření plánů fixní kompenzace](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Vytvoření plánů variabilní kompenzace](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Vývoj struktury platu/kompenzace a plánů](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Proces kompenzace](/dynamics365/unified-operations/talent/process-compensation)
+- [Definování procesu kompenzací a výpočet výsledků](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Přihlášení zaměstnance k plánu fixní kompenzace](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Přihlášení zaměstnance k plánu variabilní kompenzace](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Práce 
 
 Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci. Další informace naleznete v následujících článcích:
 
-- [Nastavení komponent práce](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definování nových prací](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Nastavení komponent práce](/dynamics365/unified-operations/talent/create-job)
+- [Definování nových prací](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Pozice
 
@@ -174,8 +175,8 @@ Pokud je více pracovních pozic ve stejném oddělení přidruženo ke stejné 
 
 Další informace naleznete v následujících článcích:
 
-- [Uspořádání zaměstnanců podle oddělení, prací a pozic](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Nastavení pozic](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Uspořádání zaměstnanců podle oddělení, prací a pozic](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Nastavení pozic](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Oddělení
 
@@ -183,8 +184,8 @@ Oddělení je provozní jednotka, která představuje kategorie nebo funkční o
 
 Další informace naleznete v následujících článcích:
 
-- [Vytvoření oddělení a jeho přidružení k hierarchii oddělení](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definování nových oddělení](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Vytvoření oddělení a jeho přidružení k hierarchii oddělení](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definování nových oddělení](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Platební cykly a platební období
 

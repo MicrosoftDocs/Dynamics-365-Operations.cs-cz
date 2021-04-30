@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: dcb952ccc68f5f19119f8b72285667e259b00429
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840718"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907808"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalace, nastavení a aktualizace zákaznického portálu
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840718"
 
 Chcete-li implementovat zákaznický portál, musíte mít následující licence:
 
-- **Portály Power Apps** - Tato licence je nutná k hostování zákaznického portálu. Portály jsou licencovány na základě použití. Pro více informací viz [Licenční požadavky na portály Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Portály Power Apps** - Tato licence je nutná k hostování zákaznického portálu. Portály jsou licencovány na základě použití. Pro více informací viz [Licenční požadavky na portály Power Apps](/power-platform/admin/powerapps-flow-licensing-faq#portals).
 - **Dvojí zápis** - Musíte mít potřebné licence, abyste mohli aktivovat dvojí zápis pro tabulky Supply Chain Management. Další informace naleznete v tématu [Systémové požadavky pro dvojí zápis](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Závislosti na dvojím zápisu a portálech Power Apps
@@ -40,7 +40,7 @@ Na rozdíl od jiných funkcí Supply Chain Management sídlí šablona zákaznic
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Požadované nastavení pro aktivaci zákaznického portálu
 
-Poté, co jste se ujistili, že máte požadované licence, můžete nastavit duální zápis, jak je popsáno v [pokynech pro počáteční synchronizaci s dvojím zápisem](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+Poté, co jste se ujistili, že máte požadované licence, můžete nastavit duální zápis, jak je popsáno v [pokynech pro počáteční synchronizaci s dvojím zápisem](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
 U duálního zápisu nezapomeňte povolit následující mapování tabulek:
 
@@ -74,14 +74,14 @@ Další funkce mohou být přidány do zákaznického portálu později. Jakéko
 
 Chcete-li se dozvědět, jak můžete nastavit a přizpůsobit zákaznický portál, měli byste začít prostudováním následující dokumentace pro základní technologie:
 
-- [Dokumentace portálů Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Dokumentace portálů Power Apps](/powerapps/maker/portals/overview)
 - [Dokumentace dvojitého zápisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 Abyste mohli účinně spravovat své portály, musíte porozumět portálům Power Apps a životním cyklům Microsoft Dataverse. Další informace naleznete v následujících zdrojích:
 
-- [O životním cyklu portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Upgradujte portál](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrace konfigurace portálu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [O životním cyklu portálu](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Upgradujte portál](/powerapps/maker/portals/admin/upgrade-portal)
+- [Migrace konfigurace portálu](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Správa životního cyklu řešení: aplikace Dynamics 365 for Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

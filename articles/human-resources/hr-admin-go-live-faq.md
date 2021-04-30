@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4a06da220fd90de91fb9091c41f35a1fb95442c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e1b4b336953ef6bd74da009b3bb44fbcf2eab5a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804010"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892316"
 ---
 # <a name="go-live-faq"></a>Často kladené dotazy týkající se ostrého nasazení 
 
@@ -48,7 +48,7 @@ Seznam předpokladů najdete v části  [Připravte se na přechod do živého
 
 ## <a name="what-is-a-go-live-assessment"></a>Co je to test naživo?  
 
-Test naživo je součástí  [Programu Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). Během této kontroly architekt řešení posoudí, zda je implementační projekt připraven na úspěšné vyjmutí a spuštění. Tato kontrola je povinná pro každý implementační projekt, než budete moci požádat o uvedení do provozu v produkčním prostředí. 
+Test naživo je součástí  [Programu Microsoft FastTrack](/dynamics365/fasttrack/). Během této kontroly architekt řešení posoudí, zda je implementační projekt připraven na úspěšné vyjmutí a spuštění. Tato kontrola je povinná pro každý implementační projekt, než budete moci požádat o uvedení do provozu v produkčním prostředí. 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>Naše prostředí Sandbox jsou nasazena v datovém centru ve střední USA. Chceme, aby naše produkční prostředí byla nasazena v datovém centru na západě USA. Mohu ve své produkční konfiguraci vybrat jako datové centrum Západ USA? 
 
@@ -56,7 +56,7 @@ LCS vás neomezuje ve výběru jiného datového centra při nasazení prostřed
 
 Pokud chcete, aby se vaše produkční prostředí nacházelo v západoamerickém datovém centru, měli byste nejprve znovu nasadit prostředí sandboxu do západoamerického datového centra, otestovat je a odhlásit se. 
 
-Informace o výběru správného datového centra najdete v části [Síťové požadavky](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
+Informace o výběru správného datového centra najdete v části [Síťové požadavky](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements). 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Jakou úroveň přístupu mám k prostředkům Azure pro mé prostředí lidských zdrojů?  
 
@@ -64,7 +64,7 @@ Přístup do prostředí lidských zdrojů je omezený. Nelze získat přístup 
 
 I když nemůžete získat přístup ke svým prostředkům Azure nebo prostředí Dynamics 365 Human Resources přímo, existují další funkce, které můžete použít pro přístup k vašim datům:
 
-- Můžete nasadit databázi Azure SQL ve vašem vlastním klientovi Azure a k synchronizaci dat použít funkci Bring Your Own Database (BYOD). Další informace viz [Použití vlastní databáze (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+- Můžete nasadit databázi Azure SQL ve vašem vlastním klientovi Azure a k synchronizaci dat použít funkci Bring Your Own Database (BYOD). Další informace viz [Použití vlastní databáze (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
 
 - Můžete použít integraci Dataverse pro synchronizaci vybraných entit s databází Dataverse. Další informace naleznete v části [Tabulky Dataverse](hr-developer-entities.md). 
 
@@ -80,11 +80,11 @@ Databáze jsou chráněny automatickým zálohováním na následujících frekv
 
 Microsoft si ponechává dostatečné zálohy, aby umožnil Point in Time Restore (PITR) během posledních 14 dnů. 
 
-Další informace naleznete v tématu  [Další informace týkající se automatické zálohy databáze SQL](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+Další informace naleznete v tématu  [Další informace týkající se automatické zálohy databáze SQL](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>Mohu požádat o kopii zálohy mé produkční databáze? 
 
-Č. Můžete však odeslat požadavek na aktualizaci databáze, abyste zkopírovali produkční prostředí do prostředí Sandbox. Můžete nasadit databázi Azure SQL ve vašem vlastním klientovi Azure a k synchronizaci dat použít funkci BYOD z vašeho provozního prostředí. Další informace viz [Použití vlastní databáze (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
+Č. Můžete však odeslat požadavek na aktualizaci databáze, abyste zkopírovali produkční prostředí do prostředí Sandbox. Můžete nasadit databázi Azure SQL ve vašem vlastním klientovi Azure a k synchronizaci dat použít funkci BYOD z vašeho provozního prostředí. Další informace viz [Použití vlastní databáze (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>Jak přesunu své prostředí Sandbox do produkce pro spuštění? 
 
@@ -94,7 +94,7 @@ Během celého projektu doporučujeme udržovat jasný seznam entit nakonfigurov
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Co mám dělat, když je moje produkční prostředí nefunkční? 
 
-Chcete-li nahlásit výpadek produkčního prostředí, postupujte podle postupu popsaného v [Nahlásit výpadek produkce](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage). 
+Chcete-li nahlásit výpadek produkčního prostředí, postupujte podle postupu popsaného v [Nahlásit výpadek produkce](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md). 
 
  ## <a name="see-also"></a>Viz také
 

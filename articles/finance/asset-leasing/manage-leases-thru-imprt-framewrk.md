@@ -2,11 +2,11 @@
 title: Správa leasingů prostřednictvím rámce importu leasingu
 description: Toto téma vysvětluje, jak pomocí rámce importu leasingu upravit více leasingů najednou.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 26fb195ff18dc0c86d3546b782265043c2c78bf4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 083adf0a4bb74ac65e6f8b5077f65c74eb3fa337
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819787"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880903"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Správa leasingů prostřednictvím rámce importu leasingu
 
@@ -53,7 +53,7 @@ Funkce porovnání umožňuje porovnat záznam, který importujete, s odpovídaj
 > [!NOTE]
 > Funkce porovnání nefunguje u leasingů, které mají typ zpracování **Přidat záznam**, protože proti tomuto leasingu není co porovnávat.
 >
-> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Porovnat** a vyberte **Porovnat**.
+> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Porovnat**.
 
 U každé entity si můžete prohlédnout rozdíly mezi tím, co je aktuálně v systému, a tím, co je v tabulkách fázování. Pro každou entitu v tabulkách fázování vyberte **Zobrazit rozdíly**. Zobrazí se dialogové okno, které zobrazuje aktuální hodnotu a navrhovanou hodnotu fázování.
 
@@ -62,17 +62,17 @@ Hodnotu fázování můžete také aktualizovat změnou v sloupci **Nová hodnot
 Můžete ověřit leasingy, abyste zajistili, že záznamy lze přenést do systému bez chyb. Před migrací záznamu o leasingu systém spustí několik ověření, aby bylo zajištěno, že bude záznam úspěšně importován. Chcete-li ověřit individuální leasing, vyberte **Ověřit**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Ověřit** a vyberte **Porovnat**.
+> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Ověřit**.
 
 Chcete-li zpracovat individuální leasing, vyberte **Migrace záznamů o lesaingu** na stránce **Importovat záhlaví**. Při migraci leasingu provede systém akci uvedenou v poli **Typ zpracování**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Ověřit** a vyberte **Porovnat**.
+> Chcete-li migrovat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Migrovat**.
 
 Po porovnání leasingu můžete spustit sestavu a zobrazit rozdíly pro každý leasing, který je zahrnut v ID importu. Chcete-li spustit sestavu pro jeden leasing, vyberte tento leasing v datech fázování a poté vyberte **Porovnat a zobrazit sestavu \> Sestava o rozdílech**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Dotazy a sestavy \> Sestava rozdílů** a vyberte **Porovnat**.
+> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Porovnat**. 
 
 ## <a name="set-up-update-fields"></a>Nastavení polí aktualizací
 

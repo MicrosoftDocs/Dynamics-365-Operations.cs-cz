@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807937"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909224"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 
@@ -47,7 +47,7 @@ Následující typy workflowu jsou k dispozici pro modul Zásobování a zdroje.
 | Workflow přihlášky přidání dodavatele | Vytvořte kontrolu a workflow schvalování pro přidání nových dodavatelů prostřednictvím oslovení dodavatele. |
 
 > [!IMPORTANT]
-> Když přidáváte nový pracovní postup, mohou se vám také zobrazit následující zastaralé pracovní postupy uvedené v dialogovém okně **Vytvořit pracovní postup** . Ty se vztahují k funkci *potvrzení o přijetí*, která byla k dispozici v [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), ale která je nyní zastaralá. Tyto pracovní postupy nejsou aktuálně podporovány.
+> Když přidáváte nový pracovní postup, mohou se vám také zobrazit následující zastaralé pracovní postupy uvedené v dialogovém okně **Vytvořit pracovní postup** . Ty se vztahují k funkci *potvrzení o přijetí*, která byla k dispozici v [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), ale která je nyní zastaralá. Tyto pracovní postupy nejsou aktuálně podporovány.
 > 
 > - Workflow oznámení data dodání
 > - Workflow oznámení přijaté faktury

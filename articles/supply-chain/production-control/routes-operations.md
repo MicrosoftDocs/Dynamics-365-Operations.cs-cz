@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819273"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908921"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -79,7 +79,7 @@ Každý postup je před použitím v plánovacím nebo výrobním procesu nutn�
 
 Každý postup lze schválit nebo zamítnout samostatně. Při zamítnutí postupu však budou zamítnuty i všechny související verze postupu. Ve formuláři Parametry modulu Řízení výroby lze určit, zda je možné postupy zamítnout a zda je možné měnit schválené postupy.  
 
-Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](../../fin-and-ops/organization-administration/electronic-signature-overview.md) potvrzovat svou identitu.
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) potvrzovat svou identitu.
 
 ## <a name="operations"></a>Operations
 Operace představuje krok ve výrobním procesu. Každá operace má ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací ze strojní dílny.
@@ -185,7 +185,7 @@ Aktivací verze postupu ji označíte jako výchozí verzi, kterou bude použív
 
 ### <a name="electronic-signatures"></a>Elektronické podpisy
 
-Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé verze postupů schvaluje a aktivuje, můžete si u těchto úkonů vyžádat elektronické podpisy. Uživatelé, kteří schvalují a aktivují verze postupů, pak budou muset potvrzovat svou identitu pomocí [elektronického podpisu](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé verze postupů schvaluje a aktivuje, můžete si u těchto úkonů vyžádat elektronické podpisy. Uživatelé, kteří schvalují a aktivují verze postupů, pak budou muset potvrzovat svou identitu pomocí [elektronického podpisu](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Změna produktu s využitím správy případu
 
@@ -253,7 +253,7 @@ Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa
 
 - [Schopnosti prostředku](resource-capabilities.md)
 
-- [Přehled elektronických podpisů](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Přehled elektronických podpisů](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

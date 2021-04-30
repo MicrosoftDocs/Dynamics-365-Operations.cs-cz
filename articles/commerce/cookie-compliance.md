@@ -2,7 +2,7 @@
 title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796020"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908177"
 ---
 # <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
 
@@ -50,6 +50,57 @@ Následující tabulka ukazuje aktuální referenční seznam souborů cookie, k
 | x-ms-cpim-slice                             | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        |
 | x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. |
+| \_msdyn365___muid_                            | Používá se, pokud je pro prostředí aktivováno experimentování; využíváno jako ID uživatele pro experimentální účely. |
+| \_msdyn365___exp_                             | Používá se, pokud je pro prostředí aktivováno experimentování; slouží k měření vyvažování zatížení výkonu.         |
+
+
+
+Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, soubory cookie v následující tabulce budou sledovány také v jeho prohlížeči.
+
+
+| Doména                      | Cookie               | popis                                                  | Zdroj                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | Synchronizace ID reklam LinkedIn                                      | Značka LinkedIn Feed a Insight                                |
+| .linkedin.com               | li_sugr                  | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
+| .linkedin.com               | BizographicsOptOut       | Určuje stav odhlášení ze sledování třetích stran.              | Ovládací prvky pro hosty LinkedIn a oborová odhlášení           |
+| .linkedin.com               | \_guid                    | Identifikátor prohlížeče pro Google Ads.                            | Kanál LinkedIn                                                |
+| .linkedin.com               | li_oatml                 | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
+| Různé domény první strany | li_fat_id                | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
+| .adsymptotic.com            | U                        | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
+| .linkedin.com                | bcookie                  | Soubor cookie s ID prohlížeče                                            | Žádosti na LinkedIn                                         |
+| .linkedin.com                | bscookie                 | Zabezpečený soubor cookie prohlížeče                                        | Žádosti na LinkedIn                                         |
+| .linkedin.com               | lang                     | Nastaví výchozí národní prostředí a jazyk.                                 | Žádosti na LinkedIn                                         |
+| .linkedin.com                | lidc                     | Používá se pro směrování.                                             | Žádosti na LinkedIn                                         |
+| .linkedin.com               | aam_uuid                 | Soubor cookie správce cílové skupiny Adobe                                                     | Nastaveno pro synchronizaci ID                                              |
+| .linkedin.com               | \_ga                      | Soubor cookie Google Analytics                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Slouží k identifikaci webového prohlížeče, který se používá k připojení k Facebooku nezávisle na přihlášeném uživateli. | Facebook                                                             |
+| .facebook.com               | wd                       | Ukládá rozměry okna prohlížeče a používá ho Facebook k optimalizaci vykreslení stránky. | Facebook                                                             |
+| .facebook.com               | xs                       | Dvouciferné číslo představující číslo relace. Druhá část hodnoty je tajný klíč relace. |  Facebook                                                            |
+| .facebook.com               | fr                       | Obsahuje jedinečné ID prohlížeče a uživatele, které se používají pro cílenou reklamu. |  Facebook                                                            |
+| .facebook.com               | sb                       | Používá se ke zlepšení návrhů přátel Facebook.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Obsahuje ID uživatele a časové razítko, když byl soubor cookie vytvořen. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      | Pinterest                                                             |
+| .pinterest.com              | Místní úložiště            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Servisní pracovníci          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Souhlas uživatele webu se soubory cookie na webu elektronického obchodu 
 

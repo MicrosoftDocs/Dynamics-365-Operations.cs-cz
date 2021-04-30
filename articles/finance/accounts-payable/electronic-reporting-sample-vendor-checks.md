@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a48a20939b346b2d8536128107a730761b13f71c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a405fee368bb1789addbdf4316a007e85616d98d
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820706"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897081"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Ukázkové šeky dodavatele v elektronickém výkaznictví
 
@@ -34,13 +34,13 @@ Microsoft Dynamics 365 Finance zahrnuje ukázkový formát, kde je šek nahoře,
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
 
-- Před tiskem šeků pomocí elektronického výkaznictví je třeba alespoň jednu aktivní konfiguraci šeku importovat do vašich konfigurací elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Před tiskem šeků pomocí elektronického výkaznictví je třeba alespoň jednu aktivní konfiguraci šeku importovat do vašich konfigurací elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - Když konfigurujete šeky pokladny a banky pro bankovní účet, zvolte zaškrtávací políčko **Obecný elektronický formát exportu** a vyberte příslušný formát šeku jako konfiguraci formátu exportu.
 - Také musíte určit počet řádků, které budou vytištěny na části pro vyplacení. Ujistěte se, že nazapomenete při výpočtu řádků na řádky záhlaví. Pro dva ukázkové formáty šeků je doporučený počet řádků 17. Toto číslo se však bude měnit v závislosti na vašich zásobách šeků a ovladačích tiskárny.
 - Doporučujeme, abyste vytiskli zkušební šeku pro ověření rozvržení šeku. Pro tisk zkušebního šeku vyberte možnost **Tisk testu**. Ukázkové formáty šeku jsou nejlepší tehdy, když jsou **Okraje** nastaveny na **Žádné** v rozšířených vlastnostech tiskárny pro aplikaci Microsoft Excel. Po vygenerování zkušebního šeku povolte úpravy výstupu aplikace Excel a nakonfigurujte rozvržení stránky tak, aby byly všechny okraje nastaveny na **0** (nula). Porovnejte zkušební kopii šeků s vašimi zásobami šeků a upravte nastavení tak, abyste byli spokojeni se zarovnáním.
 - Když generujete platby pro nakonfigurovaný bankovní účet v deníku plateb, vytisknou se šeky v zadaném formátu.
 
-Další informace naleznete v tématu [Úprava formátu elektronického výkaznictví](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+Další informace naleznete v tématu [Úprava formátu elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

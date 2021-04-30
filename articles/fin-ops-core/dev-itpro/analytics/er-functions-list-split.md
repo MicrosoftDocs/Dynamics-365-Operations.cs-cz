@@ -2,7 +2,7 @@
 title: Funkce elektronického výkaznictví SPLIT
 description: Toto téma obsahuje obecné informace o použití funkce SPLIT elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745586"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853436"
 ---
 # <a name="split-er-function"></a>Funkce elektronického výkaznictví SPLIT
 
@@ -80,7 +80,15 @@ Pokud je argument `input` prázdný, vrátí se nový prázdný seznam. Pokud ne
 
 `SPLIT ("XAb aBy", "aB")` vrátí nový seznam obsahující tři záznamy s poleem **Value** typu *řetězec*. Pole **Value** v prvním záznamu obsahuje text **"X"**, pole **Value** v druhém záznamu obsahuje text **"&nbsp;"**, a pole **Value** v třetím záznamu obsahuje text **"y"**. 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="example-3"></a>Příklad 3
+
+Můžete použít funkci [INDEX](er-functions-list-index.md) pro přístup k jednotlivým prvkům zadaného vstupního řetězce. Pokud zadáte zdroj dat **MyList** typu **vypočítané pole** a nakonfigurujete pro něj výraz `SPLIT("abc", 1)`, výraz `INDEX(MyList,2).Value` vrátí textovou hodnotu **"b"**.
+
+## <a name="example-4"></a>Příklad 4
+
+Funkce [ENUMERATE](er-functions-list-enumerate.md) vám také může pomoci s přístupem k jednotlivým prvkům zadaného vstupního řetězce. Pokud nejprve zadáte zdroj dat **MyList** typu **Vypočítané pole** a nakonfigurujte pro něj výraz `SPLIT("abc", 1)` a poté zadáte zdroj dat **EnumeratedList** typu **Vypočítané pole** a nakonfigurujte pro něj výraz `ENUMERATE(MyList)`, výraz `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` vrátí textovou hodnotu **"b"**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Funkce seznamu](er-functions-category-list.md)
 

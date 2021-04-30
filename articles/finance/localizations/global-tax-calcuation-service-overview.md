@@ -1,8 +1,8 @@
 ---
-title: Služba výpočtu daně (Preview)
-description: Toto téma vysvětluje celkový rozsah a funkce služby výpočtu daní.
+title: Výpočet daně (Preview)
+description: Toto téma vysvětluje celkový rozsah a funkce výpočtu daně.
 author: wangchen
-ms.date: 03/02/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,59 +16,57 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 518d3fda7b97e55d23beea6a1ba0e50b44a7aa0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3df952e0632807e55f176e63dc2047be5e622ec2
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818217"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892342"
 ---
-# <a name="tax-calculation-service-preview"></a>Služba výpočtu daně (Preview)
+# <a name="tax-calculation-preview"></a>Výpočet daně (Preview)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Služba výpočtu daně je hyperškálovatelná multiklientová služba, která umožňuje globálnímu daňovému modulu automatizovat a zjednodušit proces stanovení a výpočtu daně. Daňový modul je plně konfigurovatelný. Mezi prvky, které lze konfigurovat, patří mimo jiné model zdanitelných dat, daňový kód, matice použitelnosti daně a vzorec výpočtu daně. Daňový modul běží na platformě základních služeb Microsoft Azure a nabízí moderní technologie a exponenciální škálovatelnost.
+Výpočet daně je hyperškálovatelná multiklientová služba, která umožňuje globálnímu daňovému modulu automatizovat a zjednodušit proces stanovení a výpočtu daně. Daňový modul je plně konfigurovatelný. Mezi prvky, které lze konfigurovat, patří mimo jiné model zdanitelných dat, daňový kód, matice použitelnosti daně a vzorec výpočtu daně. Daňový modul běží na platformě základních služeb Microsoft Azure a nabízí moderní technologie a exponenciální škálovatelnost.
 
-Služba výpočtu daní je integrována s Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho se také integruje s Dynamics 365 Project Operations, Dynamics 365 Commerce a dalšími aplikacemi prvních stran a jiných výrobců.
+Výpočet daně je integrován s Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho se také integruje s Dynamics 365 Project Operations, Dynamics 365 Commerce a dalšími aplikacemi prvních stran a jiných výrobců.
 
-Služba výpočtu daně je daňový modul založený na technologiích Microsoftu, který nabízí exponenciální škálovatelnost. Pomůže vám provést následující úlohy:
+Výpočet daně je daňový modul založený na mikroslužbách, který nabízí exponenciální škálovatelnost. Pomůže vám provést následující úlohy:
 
-- Konfigurujte službu výpočtu daně prostřednictvím služby Regulatory Configuration Service (RCS). RCS je vylepšená verze návrháře elektronických zpráv (ER) a je k dispozici jako samostatná služba.
+- Konfigurujte výpočet daně prostřednictvím služby Regulatory Configuration Service (RCS). RCS je vylepšená verze návrháře elektronických zpráv (ER) a je k dispozici jako samostatná služba.
 - Nakonfigurujte daňovou matici tak, aby automaticky určovala daňové kódy a sazby.
 - Nakonfigurujte daňovou matici tak, aby automaticky určovala daňové identifikační číslo (DIČ).
 - Nakonfigurujte návrháře výpočtu daně tak, aby definoval vzorce a podmínky.
 - Sdílejte řešení stanovení a výpočtu daně mezi právnickými osobami.
 
-Chcete-li použít službu výpočtu daně, nainstalujte doplněk služby výpočtu daně ze svého projektu ve službách Microsoft Dynamics Lifecycle Services (LCS). Poté dokončete nastavení v RCS a povolte službu výpočtu daně v aplikacích Finance a Supply Chain Management. Více informací najdete v tématu [Začínáme s daňovou službou](https://go.microsoft.com/fwlink/?linkid=2138482).
+Chcete-li použít službu výpočtu daně, nainstalujte doplněk služby výpočtu daně ze svého projektu ve službách Microsoft Dynamics Lifecycle Services (LCS). Poté dokončete nastavení v RCS a povolte službu výpočtu daně v aplikacích Finance a Supply Chain Management. Více informací najdete v tématu [Začínáme s daňovou službou](./global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Dostupnost
 
-Služba výpočtu daně je k dispozici pouze v prostředích sandbox a pro vybrané zákazníky, a to prostřednictvím programu Public Preview. Nakonec bude obecně k dispozici všem zákazníkům a v produkčních prostředích.
+Výpočet daně je k dispozici pouze v prostředích sandbox a pro vybrané zákazníky, a to prostřednictvím programu Public Preview. Nakonec bude obecně k dispozici všem zákazníkům a v produkčních prostředích.
 
-Nové funkce budou i nadále dodávány ve službě výpočtu daně. Nezapomeňte proto často zkontrolovat nejaktuálnější dokumentaci, abyste se dozvěděli o pokrytí a rozsahu podporovaných funkcí.
+Budou dodávány nové funkce, proto nezapomeňte často zkontrolovat nejaktuálnější dokumentaci, abyste se dozvěděli o pokrytí a rozsahu podporovaných funkcí.
 
-Služba výpočtu daně je nasazena v následujících geografických oblastech Azure. Bude také nasazena do dalších geografických oblastí Azure, a to na základě potřeb zákazníků:
+Výpočet daně je nasazen v následujících geografických oblastech Azure. Bude také nasazena do dalších geografických oblastí Azure, a to na základě potřeb zákazníků:
 
 - Spojené státy americké
 - Evropa
-- Francie
-- Spojené království
 
 > [!NOTE]
-> Služba výpočtu daně nepodporuje místní nasazení Dynamics 365. Nepodporuje také dřívější verze, například Dynamics AX 2012.
+> Výpočet daně nepodporuje místní nasazení Dynamics 365. Nepodporuje také dřívější verze, například Dynamics AX 2012.
 
 ## <a name="feature-highlights"></a>Zvýrazněné funkce
 
 - Konfigurovatelná matice daní, která automaticky určuje a vypočítá daň
-- Podpora více DIČ pro daň z přidané hodnoty (DPH)
+- Podpora více DIČ
 - Podpora převodních příkazů pro stanovení a výpočet daně
-- Podpora převodních příkazů pro určení více DIČ pro DPH
+- Podpora převodních příkazů pro určení více DIČ
 
 ## <a name="supported-transactions"></a>Podporované transakce
 
-Služba výpočtu daně může být povolena podle právnické osoby a transakce. Podporovány jsou následující transakce:
+Výpočet daně může být povolen podle právnické osoby a transakce. Podporovány jsou následující transakce:
 
 - Proces prodeje
 
@@ -107,10 +105,10 @@ Služba výpočtu daně může být povolena podle právnické osoby a transakce
 
 ## <a name="related-resources"></a>Související prostředky
 
-[Začínáme s daňovou službou](https://go.microsoft.com/fwlink/?linkid=2138482)
+[Začínáme s daňovou službou](./global-get-started-with-tax-calculation-service.md)
 
-[Vícenásobné daňové identifikační číslo](https://go.microsoft.com/fwlink/?linkid=2153387)
+[Vícenásobné daňové identifikační číslo](./emea-multiple-vat-registration-numbers.md)
 
-[Podpora daňové funkce u převodního příkazu](https://go.microsoft.com/fwlink/?linkid=2153388)
+[Podpora daňové funkce u převodního příkazu](./tasks/tax-feature-support-for-transfer-order.md)
 
-[Jak vytvořit rozšíření v daňové službě](https://go.microsoft.com/fwlink/?linkid=2138483)
+[Jak vytvořit rozšíření v daňové službě](./tax-service-add-data-fields-tax-integration-by-extension.md)

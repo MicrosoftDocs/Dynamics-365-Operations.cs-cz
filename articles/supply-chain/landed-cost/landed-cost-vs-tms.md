@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833850"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909468"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Náklady za doručení a Správa přepravy
 
@@ -51,8 +51,8 @@ TMS a Náklady za doručení nesdílejí referenční data pro entity, jako je n
 
 Následující sestavy nefungují ve spojení s funkcí přepravovaného zboží, kterou poskytuje modul Náklady za doručení:
 
-- [Sestava Celkové mezipodnikové přepravované zboží](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Sestava Celkové mezipodnikové přepravované zboží](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Sestava Celkové mezipodnikové přepravované zboží](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Sestava Celkové mezipodnikové přepravované zboží](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Tyto sestavy předpokládají, že přeprava zboží je zahájena, jakmile vydáte prodejní dodací list, a že je po přijetí převzato do skladu. Přepravované zboží však není takto zpracováno. Pokud tedy používáte přepravované zboží a mezipodnikové funkce společně, výsledky obou těchto sestav budou nesprávné.
 

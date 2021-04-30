@@ -2,11 +2,11 @@
 title: Úvod k leasingu majetku
 description: Toto téma popisuje schopnost leasingu majteku a prochází jednotlivými kroky pro vytvoření leasingu majetku a zobrazení informací o těchto leasinzích.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814121"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892426"
 ---
 # <a name="asset-leasing-get-started"></a>Úvod k leasingu majetku
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje schopnost leasingu majteku a prochází jednotlivými kroky pro vytvoření leasingu majetku a zobrazení informací o těchto leasinzích. Toto téma také definuje terminologii použitou v uživatelském rozhraní a dokumentaci. Leasing majetku je pokročilou schopností pro správu, sledování a automatizaci finančních transakcí pro pronajaté majetky (aktiva) v Microsoft Dynamics 365 Finance. Leasingu majetku vyhovuje mezinárodním účetním standardům (IFRS 16) a normám US GAAP (ASC 842). Leasing majetku zachycuje a zpracovává informace o leasinzích a pomáhá vygenerovat položky deníku v rámci celého životní cyklu leasingu od počátečního uznání, přes měsíční položky deníku, po snížení hodnoty a ukončení leasingu. Leasing majetku je možné bezproblémově integrovat s dalšími komponentami Dynamics 365 Finance, včetně Dlouhodobého majetku, Závazků a Hlavní knihy.
+
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. V pracovním prostoru **Správa funkcí** vyhledejte a vyberte funkci, která se jmenuje **Leasing majetku** a poté klikněte na tlačítko **Povolit nyní**.
 
 Další informace o účetních standardech naleznete v tématu Standardní dokumentace pro IFRS 16 a US GAAP ASC 842.
 

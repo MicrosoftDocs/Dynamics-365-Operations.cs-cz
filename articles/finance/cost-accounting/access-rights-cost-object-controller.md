@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa8faf0f0f45f901151b3b20a1792b3d8f264fa6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810191"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897617"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Přístupová práva kontrolorů objektu nákladů
 
@@ -62,9 +62,8 @@ Následující příklad ukazuje, jak může vypadat hierarchie dimenzí.
 
 Můžete použít pevnou záložku **Uživatelé** v návrháři hierarchie, abyste vložili jedno nebo více ID uživatele na každém uzlu.
 
-|                                   | Uživatelé            | Rozsahy členu dimenze   |                         |
+|             Uzly                 | Uživatelé            | Z členu dimenze     |   Člen do dimenze   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Uzly**                         | **ID uživatele**      | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Správce                 | Duben            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +94,14 @@ Nastavení pro hierarchii přístupového seznamu se používají ke kontrole da
     - Vizualizace dat Power BI, které jsou vloženy do klienta Dynamics 365 Finance
 
 > [!IMPORTANT]
-> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Toto téma popisuje požadavky, které musí být splněny před použitím pracovního prostoru **Řízení nákladů**.
 
 Další zdroje
 
 - [Pracovní prostor kontroly nákladů](cost-control-workspace.md)
 - [Hierarchie dimenzí](dimension-hierarchy.md)
-- [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

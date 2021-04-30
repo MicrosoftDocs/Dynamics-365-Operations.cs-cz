@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823853"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897301"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
@@ -83,17 +83,17 @@ Výchozí dimenze v hlavičce deníku způsobí, že oddělení 023 se použije 
 
 Nicméně při zaúčtování řádku se použije pevná dimenze a řádek se zaúčtuje do oddělení 022. Následující obrázek znázorňuje zaúčtovaný doklad, kde je použita pevná dimenze pro účet prodeje.
 
-[![Transakce dokladu](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Poukazové transakce s pevnou dimenzí](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Příklad 2
 
 Tento příklad používá stejné nastavení jako první příklad. Přidáme však druhou komponentu a použijeme dimenzi oddělení jako vyrovnávací dimenzi. Na následujícím obrázku je nastaveno **Oddělení** jako vyrovnávací finanční dimenze pro hlavní knihu USMF.
 
-[![Hlavní kniha](./media/ledger.png)](./media/ledger.png)
+[![Ilustrace znázorňující oddělení jako vyrovnávající finanční dimenzi](./media/ledger.png)](./media/ledger.png)
 
 Když se použije stejné nastavení hlavičky deníku a zaúčtuje se stejná transakce, použije se nejdříve pevná dimenze. Poté se použije logika vyrovnání, aby se zajistilo, že má každé oddělení vyrovnanou položku. Následující obrázek znázorňuje transakce dokladu, které zahrnují položku vyrovnání po použití pevné dimenze.
 
-[![Transakce dokladu](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Poukazové transakce po uplatnění vyrovnávacího záznamu](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Příklad 3
 
@@ -119,11 +119,11 @@ Některé z následujících zdrojů se vztahují k předchozí verzi aplikace n
 
 [Plánování účetní osnovy](plan-chart-of-accounts.md) 
 
-[Blog plánování účtové osnovy v aplikaci AX 2012](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Tento odkaz se vztahuje na část 1 řady skládající se ze sedmi částí.
+[Blog plánování účtové osnovy v aplikaci AX 2012](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Tento odkaz se vztahuje na část 1 řady skládající se ze sedmi částí.
 
-[Výchozí nastavení dimenze v rozúčtování](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Výchozí nastavení dimenze v rozúčtování](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimenze výchozí v architektuře dimenzí](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimenze výchozí v architektuře dimenzí](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

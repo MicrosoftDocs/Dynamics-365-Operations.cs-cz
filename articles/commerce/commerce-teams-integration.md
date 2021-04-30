@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3b7872757815d4eec0393e8b1c8c6ff5467e9473
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b9289aca4f53eb2ae8f1fa06d5f80b7ee0bbab8e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842625"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908460"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Přehled integrace Dynamics 365 Commerce a Microsoft Teams
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Toto téma představuje přehled integrace Microsoft Dynamics 365 Commerce a Microsoft Teams.
 

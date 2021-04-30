@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840237"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897713"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 
@@ -50,6 +50,14 @@ Funkce konečně podporují výměnu zpráv s externími webovými službami, kt
 
 Dostupnost funkcí elektronické fakturace závisí na zemi nebo regionu. Ačkoli jsou některé funkce obecně dostupné, jiné jsou v preview.
 
+#### <a name="generally-available-features"></a>Obecně dostupné funkce
+
+V následující tabulce jsou uvedeny funkce elektronické fakturace, které jsou obecně dostupné.
+
+| Země nebo oblast | Název funkce                         | Obchodní dokument |
+|----------------|--------------------------------------|-------------------|
+| Egypt          | Egyptská elektronická faktura (EG) | Prodejní a projektové faktury |
+
 #### <a name="preview-features"></a>Funkce náhledu
 
 V následující tabulce jsou uvedeny funkce elektronické fakturace, které jsou aktuálně v preview.
@@ -61,7 +69,6 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace, které jso
 | Brazílie         | Brazilský NF-e (BR)                  | Fiskální dokument model 55, opravné dopisy, zrušení a vyřazení |
 | Brazílie         | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokumenty služby |
 | Dánsko        | Dánská elektronická faktura (DK)       | Prodejní a projektové faktury |
-| Egypt          | Egyptská elektronická faktura (EG) | Prodejní a projektové faktury |
 | Estonsko        | Estonská elektronická faktura (EE)     | Prodejní a projektové faktury |
 | Finsko        | Finská elektronická faktura (FI)      | Prodejní a projektové faktury |
 | Francie         | Francouzská elektronická faktura (FR)       | Prodejní a projektové faktury |
@@ -202,6 +209,91 @@ V následující tabulce jsou uvedeny dostupné akce a to, zda jsou aktuálně o
 | Volání mexické služby PAC                      | Integrace s mexickou službou PAC pro odesílání CFDI.                      | Náhled           |
 | Odezva procesu                              | Analýza odpovědi přijatou z volání webové služby.                     | Obecně dostupné  |
 | Použití MS Power Automate                         | Integrace s tokem vytvořeným v Microsoft Power Automate.                       | Náhled           |
+
+### <a name="applicability-rules"></a>Pravidla použitelnosti
+
+Pravidla použitelnosti jsou konfigurovatelné klauzule, které jsou definovány na úrovni funkcí elektronické fakturace. Pravidla jsou nakonfigurována tak, aby poskytovala kontext pro provádění funkcí elektronické fakturace prostřednictvím sady funkcí elektronické fakturace.
+
+Když je obchodní dokument z Finance nebo Supply Chain Management odeslán do elektronické fakturace, obchodní dokument nenese výslovný odkaz, který umožňuje sadě funkcí elektronické fakturace volat konkrétní funkci elektronické fakturace ke zpracování odeslání.
+
+Pokud je však správně nakonfigurován, obchodní dokument obsahuje nezbytné prvky, které umožňují elektronické fakturaci vyřešit, která funkce elektronické fakturace musí být vybrána, a poté vygenerovat elektronickou fakturu.
+
+Pravidla použitelnosti umožňují sadě funkcí elektronické fakturace najít přesné funkce elektronické fakturace, které je nutné použít ke zpracování podání. To se provádí porovnáním obsahu odeslaného obchodního dokumentu s klauzulemi z pravidel použitelnosti.
+
+Například dvě funkce elektronické fakturace se souvisejícími pravidly použitelnosti jsou nasazeny do sady funkcí elektronické fakturace.
+
+| Funkce elektronické fakturace | Pravidla použitelnosti        |
+|------------------------------|--------------------------- |
+| A                            | <p>Země = BR</p><p>a</p><p>Právnická osoba = BRMF</p>  |
+| mld.                            | <p>Země = MX</p><p>a</p><p>Právnická osoba = MXMF</p>  |
+
+Pokud je obchodní dokument z Finance nebo Supply Chain Management odeslán do sady funkcí elektronické fakturace, obchodní dokument obsahuje následující atributy vyplněné jako:
+
+- Země = BR
+- Právnická osoba = BRMF
+
+Sada funkcí elektronické fakturace vybere funkci elektronické fakturace **A** ke zpracování podání a vygenerování elektronické faktury.
+
+Stejným způsobem, pokud obchodní dokument obsahuje:
+
+- Země = MX
+- Právnická osoba = MXMF
+
+Funkce elektronické fakturace **B** je vybrána ke generování elektronické faktury.
+
+Konfigurace pravidel použitelnosti nemůže být nejednoznačná. To znamená, že dvě nebo více funkcí elektronické fakturace nemůže mít stejné klauzule, jinak to povede k žádnému výběru. Pokud dojde k duplikaci funkcí elektronické fakturace, použijte další klauzule, abyste umožnili rozlišit mezi dvěma funkcemi elektronické fakturace, aby se předešlo nejednoznačnosti.
+
+Zvažte například funkci elektronické fakturace **C** . Tato funkce je kopií funkce elektronické fakturace **A**.
+
+| Funkce elektronické fakturace | Pravidla použitelnosti        |
+|------------------------------|--------------------------- |
+| A                            | <p>Země = BR</p><p>a</p><p>Právnická osoba = BRMF</p>  |
+| K                            | <p>Země = BR</p><p>a</p><p>Právnická osoba = BRMF</p>  |
+
+V tomto příkladu funkce **C** je před odesláním obchodního dokumentu, který obsahuje následující:
+
+- Země = BR
+- Právnická osoba = BRMF
+
+Funkce elektronické fakturace nedokáže rozlišit, která funkce elektronické fakturace musí být použita ke zpracování podání, protože podání obsahuje přesně stejná ustanovení.
+
+Chcete-li vytvořit rozdíl mezi těmito dvěma funkcemi prostřednictvím pravidel použitelnosti, je třeba k jedné z funkcí přidat novou klauzuli, která umožní nastavení možnosti elektronické fakturace vybrat správnou funkci elektronické fakturace.
+
+| Funkce elektronické fakturace | Pravidla použitelnosti        |
+|------------------------------|--------------------------- |
+| A                            | <p>Země = BR</p><p>a</p><p>Právnická osoba = BRMF</p>  |
+| K                            | <p>Země = BR</p><p>a</p><p>Právnická osoba = BRMF</p><p>a</p><p>Model=55</p>  |
+
+K podpoře vytváření složitějších klauzulí jsou k dispozici následující zdroje:
+
+Logické operátory:
+- A
+- nebo
+
+Typy operátorů:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Větší než nebo rovno
+- Menší než nebo rovno
+- Contains
+- Začíná na
+
+Datové typy:
+- Řetězec
+- Počet
+- Logická
+- Datum
+- UUID
+
+Schopnost seskupovat a oddělovat klauzule.
+Příklad vypadá takto.
+
+| Funkce elektronické fakturace | Pravidla použitelnosti        |
+|------------------------------|--------------------------- |
+| K                            | <p>Země = BR</p><p>a</p><p>(Právnická osoba = BRMF</p><p>nebo</p><p>Model=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Poskytovatelé konfigurace
 

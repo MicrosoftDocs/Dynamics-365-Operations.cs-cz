@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753425"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893997"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Cílové místo tiskárny
 
@@ -30,7 +30,7 @@ Vygenerovaný dokument můžete odeslat přímo do síťové tiskárny pro pří
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Dříve než začnete, je nutné nainstalovat a nakonfigurovat směrovacího agenta dokumentů a poté zaregistrovat síťové tiskárny. Více informací naleznete v části [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Dříve než začnete, je nutné nainstalovat a nakonfigurovat směrovacího agenta dokumentů a poté zaregistrovat síťové tiskárny. Více informací naleznete v části [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](./install-document-routing-agent.md).
 
 ## <a name="make-the-printer-destination-available"></a>Zpřístupnění cíle tiskárny
 

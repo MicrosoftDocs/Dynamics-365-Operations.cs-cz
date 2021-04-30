@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838267"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907980"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rozvržení směrování dokumentu pro popisky poznávací značky
 
@@ -73,7 +73,7 @@ Následující příklady ukazují, jak lze upravit pole pracovní množství (*
 - Chcete-li vždy zobrazit čtyři číslice (pomocí nul jako zástupné symboly), použijte `$Qty:0000$`. Pokud je například množství 10, štítek zobrazí "0010".
 - Chcete-li vždy zobrazit dvě desetinná místa, použijte možnost `$Qty:0.00$`. Pokud je například množství 10, štítek zobrazí "10.00".
 
-Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Formáty vlastních řetězců
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 V tomto příkladu bude datum 30. dubna 2020 vytisknuto jako "30-04-2020".
 
-Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Tisk jednotlivých řádků z víceřádkových dat
 
@@ -109,7 +109,7 @@ Zde `#` je číslo řádku, který chcete vytisknout. (Pro první řádek použi
 
 Váš systém má například pole `AdditionalAddress`, ve kterém je uložena následující víceřádková adresa:
 
-Společnost Contoso-Inc.  
+Contoso Inc.  
 Název ulice 123  
 Některé město, některý stát
 
@@ -117,7 +117,7 @@ Tuto adresu lze po jednotlivých řádcích vytisknout pomocí následujících 
 
 | Kód | Text vytištěný |
 |---|---|
-| `$AdditionalAddress[1]$` | Společnost Contoso-Inc. |
+| `$AdditionalAddress[1]$` | Contoso Inc. |
 | `$AdditionalAddress[2]$` | Název ulice 123 |
 | `$AdditionalAddress[3]$` | Některé město, některý stát |
 

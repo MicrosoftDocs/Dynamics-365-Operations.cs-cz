@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822124"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898203"
 ---
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
@@ -75,7 +75,7 @@ Následující ilustrace ukazuje příklad, kdy vedení společnosti odhaduje z�
 
 Na stránce **Organizační hierarchie** lze určit organizační hierarchii jako hierarchii plánování rozpočtu pro každý procesu plánování rozpočtu. Plánování rozpočtu nemusí odpovídat standardní organizační hierarchii, která se používá pro jiné účely. Vzhledem k tomu, že tuto hierarchii lze použít k agregaci a distribuci dat, můžete jí dát jinou strukturu. V příkladu schématu jsou Prodejní oddělení pod úrovní centrály, která zahrnuje rozpočtové a finanční oddělení. Tato struktura se pravděpodobně liší od struktury, která se používá ke správě operací pro prodejní oddělení. Pouze jednu hierarchii plánování lze přiřadit ke každému procesu plánování rozpočtu.
 
-Další informace viz [Organizace a organizační hierarchie](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Další informace viz [Organizace a organizační hierarchie](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Uživatelské zabezpečení
 
@@ -163,7 +163,7 @@ Kromě sloupce částek rozpočtu můžete definovat sloupce pro pole projekt, n
 
 U ukázkového schématu můžete chtít vytvořit sloupce pro scénáře "prodeje PY", "smlouvy" a "prognóza". (Následující ilustrace ukazuje příslušnou sekci schématu). Můžete pak rozdělit jeden nebo všechny z uvedených scénářů do samostatných sloupců za každé čtvrtletí fiskálního roku, takže správce oddělení prodeje může přesně zadávat prognózy částek pro každé období.
 
-[![Sloupce](./media/columns.png)](./media/columns.png)
+[![Ilustrace sekcí schématu pro přidávání sloupců](./media/columns.png)](./media/columns.png)
 
 Rovněž určujete, zda každý prvek rozvržení (sloupec), lze upravit a zda je k dispozici v kterékoli šabloně listu, která je vytvořená pro toto rozvržení. V příkladovém schématu v rozložení použitém pro fáze "odhadu" lze upravovat sloupce "prognózy", zatímco sloupce "Prodeje PY" a "Smlouvy" jsou jen pro čtení.
 

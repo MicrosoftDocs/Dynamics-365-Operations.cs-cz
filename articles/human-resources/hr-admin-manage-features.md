@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793818"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889829"
 ---
 # <a name="manage-features-in-human-resources"></a>Správa funkcí v modulu Human Resources
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793818"
 
 V rámci našeho průběžného přidávání nových funkcí pro aplikaci Microsoft Dynamics 365 Human Resources chceme, aby zákazníci co nejdříve měli k dispozici nové funkce. Poskytujeme funkce Preview, které jsou téměř připraveny k obecné dostupnosti a prošly rozsáhlým testováním. Právě hledáme další z zpětnou vazbu od zákazníků a ověření před tím, než budou dostupné široké veřejnosti.
 
-Další informace o nových funkcích v Human Resources naleznete v části [Co je nového v Human Resources](hr-admin-whats-new.md) a [plán vydání Dynamics 365 a Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Další informace o nových funkcích v Human Resources naleznete v části [Co je nového v Human Resources](hr-admin-whats-new.md) a [plán vydání Dynamics 365 a Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Pracovní prostor **Správa funkcí** uvádí seznam funkcí dodaných v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Pracovní prostor **Správa funkcí** uvádí seznam funkcí dodaných v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Všechny nové funkce zůstanou v náhledu nejméně 30 dnů a obvykle jsou zde 30-60 dní. Hlavní funkce jsou obvykle k dispozici v říjnu a dubnu každého roku po období náhledu. Jakmile se v pracovním prostoru **Správa funkcí** zobrazí nové funkce, můžete je zapnout. Některé funkce mohou být ve výchozím nastavení zapnuty.
 
@@ -93,6 +93,6 @@ Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje 
 ## <a name="see-also"></a>Viz také
 
 - [Co je nového v Human Resources](hr-admin-whats-new.md)
-- [Plán vydání Dynamics 365 a Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Plán vydání Dynamics 365 a Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

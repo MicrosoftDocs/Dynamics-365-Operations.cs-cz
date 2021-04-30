@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829683"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909420"
 ---
 # <a name="master-planning-setup-wizard"></a>Průvodce nastavením hlavního plánování
 
@@ -45,13 +45,13 @@ Na první stránce průvodce se zobrazí dotaz na konkrétní požadavky vaší 
 
 Pokud počet vypočtených vláken přesahuje 75 % dostupného počtu vláken, je limitován na 75 % počtu vláken, která jsou k dispozici pro každého zákazníka. (Počet dostupných vláken bude určen pro každého zákazníka.)
 
-Více informací naleznete v části [Počet vláken](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Více informací naleznete v části [Počet vláken](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Velikost sady
 
 Velikost svazku bude nastavena na **1**. Tato hodnota je často nejlepší hodnotou, protože pomáhá zlepšit výkon hlavního plánování.
 
-Další informace naleznete v tématu [Počet úkolů v sadě úkolů pomocníka](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Další informace naleznete v tématu [Počet úkolů v sadě úkolů pomocníka](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Velikost potvrzujícího svazku
 
@@ -64,7 +64,7 @@ Výpočet svazku = (počet plánovaných objednávek × (ochranná doba potvrzen
 
 Velikost mezipaměti bude nastavena na **Maximum**. Tato hodnota je často nejlepší hodnotou, protože pomáhá zlepšit výkon hlavního plánování.
 
-Další informace naleznete v tématu [Přidělení času úlohám v sadě úloh](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Další informace naleznete v tématu [Přidělení času úlohám v sadě úloh](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Nastavení výroby
 
@@ -88,7 +88,7 @@ Zbývající otázky na této stránce a jejich odpovědi se řídí stejným sc
 - **Ano, jak je definováno v toto hlavním plánu** – Možnost **Plán prognóz (ochranná doba)** bude nastavena na **Ano**. Počet dnů, které zadáte, bude použit a přepíše hodnoty nastavené ve skupinách disponibility.
 - **Ano, jak je definováno ve skupině disponibility** – Možnost **Plán prognóz (ochranná doba)** bude nastavena na **Ne**.
 
-Další informace naleznete v tématu [Plánování úlohy](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Další informace naleznete v tématu [Plánování úlohy](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Možnosti plánování
 
@@ -99,7 +99,7 @@ Vaše odpověď na první otázku na této stránce („Potřebujete naplánovat
 - **Ano** – Bude použito plánování úlohy.
 - **Ne** – Bude použito plánování operací.
 
-Další informace naleznete v tématech [Plánování operací](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) a [Plánování úlohy](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Další informace naleznete v tématech [Plánování operací](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) a [Plánování úlohy](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Aktualizace poptávky a nabídky
 

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835623"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910008"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
 Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
 
-Pro každý příchozí náklad by váš systém již měl obsahovat související prodejní objednávku a může také obsahovat související specifikaci nákladu a/nebo plán přepravy. Další informace o vytváření a správě příchozích nákladů naleznete v tématu [Obchodní proces: plánování přepravy pro příchozí náklady](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Pro každý příchozí náklad by váš systém již měl obsahovat související prodejní objednávku a může také obsahovat související specifikaci nákladu a/nebo plán přepravy. Další informace o vytváření a správě příchozích nákladů naleznete v tématu [Obchodní proces: plánování přepravy pro příchozí náklady](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Přehled: jak jsou vytvářeny, registrovány a přijímány příchozí náklady
 
@@ -38,11 +38,11 @@ Následující ilustrace znázorňuje typický tok pro zpracování příchozíc
 
 1. **Vytvoří se záznam o příchozím nákladu za účelem plánování doručení a jeho obsahu.**
 
-    Záznam o příchozím nákladu představuje dodávku dodavatele jedné nebo více nákupních objednávek. Je očekáváno, že se náklad dorazí do skladu jako jedna fyzická jednotka přepravy (například nákladní vůz). Záznam o příchozím nákladu se používá pro účely plánování a umožňuje koordinátora logistiky sledovat průběh nákladu od dodavatele. Používá se také k zaznamenání množství řádků objednávky a ke správě postupu prostřednictvím skladových operací, jako je například práce na příchod a zaskladnění. Vytížení lze vytvořit automaticky nebo ručně a mohou být založena buď na nákupní objednávce, nebo na rozšířeném oznámení o dodávce (ASN) od dodavatele. Další informace naleznete v tématu [Vytvoření nebo úprava příchozího nákladu](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Záznam o příchozím nákladu představuje dodávku dodavatele jedné nebo více nákupních objednávek. Je očekáváno, že se náklad dorazí do skladu jako jedna fyzická jednotka přepravy (například nákladní vůz). Záznam o příchozím nákladu se používá pro účely plánování a umožňuje koordinátora logistiky sledovat průběh nákladu od dodavatele. Používá se také k zaznamenání množství řádků objednávky a ke správě postupu prostřednictvím skladových operací, jako je například práce na příchod a zaskladnění. Vytížení lze vytvořit automaticky nebo ručně a mohou být založena buď na nákupní objednávce, nebo na rozšířeném oznámení o dodávce (ASN) od dodavatele. Další informace naleznete v tématu [Vytvoření nebo úprava příchozího nákladu](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Dodavatel potvrdí expedici nákladu.**
 
-    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy**, potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy**, potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **K zaznamenání do skladu a pracovníci registrují množství.**
 

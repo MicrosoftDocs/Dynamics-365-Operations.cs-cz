@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821266"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909640"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Toto téma bude aktualizováno podle nově odebraných nebo zastaralých funkcí
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování.
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.18
 
@@ -39,7 +39,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | S platností od dubna 2021 je aplikace *Dynamics 365 for Finance and Operations – sklady* (aplikace skladu) zastaralá a po dubnu 2022 nebude podporována. Nyní je nahrazena *mobilní aplikací Řízení skladu*, která byla vydán s verzí 10.0.17 aplikace Supply Chain Management. Nová aplikace je úplnou náhradou, ale používá stejný základní rámec, což usnadňuje migraci. V případě potřeby lze tyto dvě aplikace použít vedle sebe, aby si uživatelé postupně zvykli používat novou aplikaci.<br><br>Další informace, jak konfigurovat novou mobilní aplikaci Řízení skladu, viz témata [Mobilní aplikace Řízení skladu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) a [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md). |
+| **Důvod pro zrušení/odstranění** | S platností od dubna 2021 je aplikace *Dynamics 365 for Finance and Operations – sklady* (aplikace skladu) zastaralá a po dubnu 2022 nebude podporována. Nyní je nahrazena *mobilní aplikací Řízení skladu*, která byla vydán s verzí 10.0.17 aplikace Supply Chain Management. Nová aplikace je úplnou náhradou, ale používá stejný základní rámec, což usnadňuje migraci. V případě potřeby lze tyto dvě aplikace použít vedle sebe, aby si uživatelé postupně zvykli používat novou aplikaci.<br><br>Další informace, jak konfigurovat novou mobilní aplikaci Řízení skladu, viz témata [Mobilní aplikace Řízení skladu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) a [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md). |
 | **Nahrazeno jinou funkcí?**   | Ano, nahrazeno novou mobilní aplikací Řízení skladu. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management – aplikace skladu |
 | **Možnost nasazení**              | Cloudové a místní nasazení |
@@ -65,7 +65,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management - hlavní plánování |
 | **Možnost nasazení**              | Pouze cloud. Všimněte si, že optimalizace plánování není podporována u místních nasazení. |
-| **Stav**                         | Zastaralé. Do 1. října 2021 nebudou scénáře výroby dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U výrobních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace naleznete v tématu [Dokumentace optimalizace plánování](https://go.microsoft.com/fwlink/?linkid=2105830). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře výroby po říjnu 2021. Nebudou však poskytována žádná další vylepšení funkcí. |
+| **Stav**                         | Zastaralé. Do 1. dubna 2022 nebudou scénáře výroby dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U výrobních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace naleznete v tématu [Dokumentace optimalizace plánování](../master-planning/planning-optimization/planning-optimization-overview.md). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře výroby po dubnu 2022. Nebudou však poskytována žádná další vylepšení funkcí. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.11
 
@@ -77,7 +77,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management - hlavní plánování |
 | **Možnost nasazení**              | Pouze cloud. Všimněte si, že optimalizace plánování není podporována u místních nasazení. |
-| **Stav**                         | Zastaralé. Do 1 dubna 2021 nebudou scénáře distribuce dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U distribučních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace naleznete v tématu [Dokumentace optimalizace plánování](https://go.microsoft.com/fwlink/?linkid=2105830). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře distribuce po dubnu 2021. Nebudou však poskytována žádná další vylepšení funkcí. |
+| **Stav**                         | Zastaralé. Do 1 dubna 2021 nebudou scénáře distribuce dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U distribučních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace naleznete v tématu [Dokumentace optimalizace plánování](../master-planning/planning-optimization/planning-optimization-overview.md). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře distribuce po dubnu 2021. Nebudou však poskytována žádná další vylepšení funkcí. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 

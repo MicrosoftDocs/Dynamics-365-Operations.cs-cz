@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750051"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893170"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -183,11 +183,11 @@ Všimněte si, že tento typ úložiště je přístupný v následujících pro
 
 Další informace získáte v tématu [Import konfigurací elektronického výkaznictví](./electronic-reporting-import-ger-configurations.md).
 
-Úložiště **RCS** poskytuje přístup k seznamu konfigurací určité instance [Služby konfigurace RCS](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance, abyste je mohli použít v elektronickém výkaznictví.
+Úložiště **RCS** poskytuje přístup k seznamu konfigurací určité instance [Služby konfigurace RCS](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance, abyste je mohli použít v elektronickém výkaznictví.
 
 Další informace získáte v tématu [Import konfigurací elektronického výkaznictví z RCS](./rcs-download-configurations.md).
 
-**Globální úložiště** poskytuje přístup k seznamu konfigurací v globálním úložišti v [Konfigurační službě](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z globálního úložiště můžete importovat poslední verze konfigurace ER do aktuální instance.
+**Globální úložiště** poskytuje přístup k seznamu konfigurací v globálním úložišti v [Konfigurační službě](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z globálního úložiště můžete importovat poslední verze konfigurace ER do aktuální instance.
 
 Další informace získáte v tématu [Import konfigurací elektronického výkaznictví z globálního úložiště konfigurační služby](./er-download-configurations-global-repo.md).
 

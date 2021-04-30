@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753713"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894117"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
@@ -27,7 +27,7 @@ Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictv�
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Je nutné nasadit topologii, která podporuje průběžné sestavování. (Další informace naleznete v tématu [Nasazení topologií podporujících průběžné sestavování a automatizaci testování](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Pro tuto topologii musíte mít přístup do topologie pro jednu z následujících rolí:
+Je nutné nasadit topologii, která podporuje průběžné sestavování. (Další informace naleznete v tématu [Nasazení topologií podporujících průběžné sestavování a automatizaci testování](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Pro tuto topologii musíte mít přístup do topologie pro jednu z následujících rolí:
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -53,7 +53,7 @@ V aktuální topologii [vytvořte nový formát elektronického výkaznictví](t
 
 Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elektronického výkaznictví, musíte nakonfigurovat [místa určení elektronického výkaznictví](electronic-reporting-destinations.md). V každém cílovém umístění elektronického výkaznictví, které je nakonfigurováno pro ukládání generovaných dokumentů jako souborů, musíte zadat typ dokumentu v rámci architektury správy dokumentů. Různé typy dokumentů mohou být použity pro směrování dokumentů, které různé formáty elektronického výkaznictví generují.
 
-1. Přidejte nový [typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
+1. Přidejte nový [typ dokumentu](../../fin-ops/organization-administration/configure-document-management.md) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
 2. Chcete-li tento typ dokumentu odlišit od jiných typů dokumentů, zahrňte do jeho názvu konkrétní klíčové slovo. Například v následujícím příkladu je název **složka (LOCAL)**.
 3. V poli **Třída** určete **Připojit soubor**.
 4. V poli **Skupina** určete **Soubor**.
@@ -117,14 +117,14 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 
 ## <a name="configure-an-er-destination"></a>Konfigurace umístění elektronického výkaznictví
 
-1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Použijte typ dokumentu, který jste přidali dříve pro nakonfigurované umístění. (Například v tomto tématu je typ dokumentu **FileX**.)
 
 ![Dialogové okno nastavení cíle](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Úprava zdrojového kódu
 
-1. Přidejte novou třídu do vašeho projektu Microsoft Visual Studio a napište kód, který se přihlásí k odběru k události **AttachingFile()**, která byla uvedena výše. (Další informace o použitém vzorci rozšiřitelnost naleznete v tématu [Odpověď pomocí EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Například v nové třídě napište kód, který provede následující akce:
+1. Přidejte novou třídu do vašeho projektu Microsoft Visual Studio a napište kód, který se přihlásí k odběru k události **AttachingFile()**, která byla uvedena výše. (Další informace o použitém vzorci rozšiřitelnost naleznete v tématu [Odpověď pomocí EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Například v nové třídě napište kód, který provede následující akce:
 
     1. Uložte generované soubory do složky místního systému souborů serveru, který spouští službu Aplikační objektový server (AOS).
     2. Tyto generované soubory ukládejte pouze tehdy, když se používá nový typ dokumentu (například **FileX**, který má klíčové slovo "(LOCAL)" ve svém názvu), zatímco soubor je připojen k záznamu v protokolu úlohy provedení elektronického výkaznictví.
