@@ -14,12 +14,12 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform Update pro 10.0.19 (červenec 2021)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platform Update pro 10.0.18 (květen 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platform Update pro 10.0.17 (duben 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: Platform Update pro 10.0.16 (únor 2021)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -303,19 +303,19 @@
                         - name: Konfigurace integrace Project Service Automation
                           items:
                             - name: Přehled Project Service Automation
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Parametry integrace Project Service Automation
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: Synchronizace projektových smluv a projektů
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: Synchronizace projektových úloh
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: Synchronizace kategorií výdajů projektu
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: Synchronizace odhadů projektu do prognóz projektu
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: Synchronizace skutečných hodnot projektu do deníku integrace projektu
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Využití externích webových služeb
               href: data-entities/consume-external-web-service.md
             - name: Elektronické zprávy
@@ -691,7 +691,7 @@
                     - name: Přehled vytvoření modelů a prvků datového modelu
                       href: dev-tools/create-data-model-elements.md
                     - name: "Pokyny k\_názvům pro rozšíření"
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: Vypnutí přizpůsobení modelu a neschválení funkce
                       href: dev-tools/lock-models.md
                 - name: Sestava analýz úprav
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Co je nového a co se změnilo v Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Známé problémy
-                  href: lifecycle-services/known-issues.md
                 - name: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Uživatelská příručka Lifecycle Services
@@ -1400,12 +1398,16 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: Použití nástroje Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
+            - name: Udržování testovacích případů v nástroji Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Ověření očekávaných hodnot
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Řetězcové testovací případy
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Odvozené testovací případy
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Upgrade souborů parametrů
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Kurz pro nástroj Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurace uživatelů bez oprávnění správce
@@ -1582,6 +1584,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: Upgrade AX 2012 - Upgrade dat v sandboxových prostředích pomocí procesu dacpac
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Upgrade z AX 2012 - Transakční replikace SQL
+                  href: database/replication-setup.md
                 - name: Upgrade AX 2012 – Upgrade dat v prostředích sandbox
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: Upgrade AX 2012 - místní prostředí

@@ -94,12 +94,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (červenec 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (květen 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (duben 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (únor 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Vložení aplikací plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Vložení aplikací třetích stran
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Změna data pro relaci
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurace a instalace Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
+                - name: Hromadné nasazení zapečetěných samoobslužných komponent Commerce
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Hromadné nasazení starších samoobslužných komponent
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Události komponent Commerce pro diagnostiku a řešení potíží
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: Aktivace zařízení přizpůsobeného Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Povolení ověření Azure Active Directory pro přihlášení do POS
+                    - name: Konfigurace ověření Azure Active Directory pro přihlášení do POS
                       href: aad-pos-logon.md
                     - name: Vyhledávání produktu a zákazníka v POS
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: Přehled slev při dodání
                   href: retail-shipping-discount.md
+                - name: Konfigurace dárku pomocí propagačních akcí k nákupu
+                  href: gift-with-purchase.md
                 - name: Nastavení kupónů
                   href: retail-coupons.md
                 - name: Zobrazení slev v POS
@@ -760,6 +766,8 @@
                   href: notifications-pos.md
                 - name: Prodej programů trvání a zpracování prodejních objednávek
                   href: tasks/use-continuity-program.md
+                - name: Povolení oznámení o přihlášení zákazníka v pokladním místě (POS)
+                  href: enable-customer-check-in.md
             - name: Vrácení
               items:
                 - name: Propojené refundace
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Odhlášení z kolekce událostí webové aktivity
                   href: web-activity-opt-out.md
+                - name: Použití nastavení měrné jednotky
+                  href: unit-of-measure.md
             - name: Správa obsahu vašeho webu
               items:
                 - name: Způsoby přidání obsahu
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Modul informací o vyzvednutí
                       href: pickup-info-module.md
+                    - name: Přihlášení k vyzvednutí modulu
+                      href: check-in-pickup-module.md
                     - name: Modul podrobností objednávky
                       href: order-confirmation-module.md
                     - name: Modul dárkového poukazu
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 'Nastavení analýzy recency, frekvence a peněžního období'
               href: set-up-rfm-analysis.md
+            - name: Nastavení Microsoft Clarity v Dynamics 365 Commerce
+              href: set-up-clarity.md
         - name: Globalizace
           items:
             - name: Přehled fiskální integrace pro kanál Commerce
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Profily certifikátů definované uživatelem pro maloobchodní prodejny
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Přehled Regulatory Configuration Service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service - Globalizační funkce
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Rakousko
               items:
                 - name: Ukázka integrace fiskální služby pro Rakousko
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Soubor props.autogenerated.ts modulu
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Předvolby konfigurace modulu
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Vývoj modulů
                   items:
                     - name: Vytvoření nového modulu
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: Přidání vlastních tlačítek do panelu záhlaví POS
                   href: dev-itpro/pos-header-bar.md
+                - name: SDK pro nezávislé balení POS
+                  items:
+                    - name: Přehled rozšíření POS
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Začínáme s rozšířeními POS
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Vytvoření projektu balíčku rozšíření POS
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Vytvoření souboru appx rozšíření Modern POS
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Ladění rozšíření POS
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Rozšiřitelnost Hardware Station
               items:
                 - name: Hardware Station a rozšiřitelnost

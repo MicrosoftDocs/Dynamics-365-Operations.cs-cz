@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811297"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923018"
 ---
-# <a name="financial-reporting-faq"></a><span data-ttu-id="91907-103">Nejčastější dotazy k finančnímu výkaznictví</span><span class="sxs-lookup"><span data-stu-id="91907-103">Financial reporting FAQ</span></span> 
+# <a name="financial-reporting-faq"></a><span data-ttu-id="8968e-103">Nejčastější dotazy k finančnímu výkaznictví</span><span class="sxs-lookup"><span data-stu-id="8968e-103">Financial reporting FAQ</span></span> 
 
-<span data-ttu-id="91907-104">Toto téma se zabývá dotazy uživatelů ohledně finančního výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="91907-104">This topic lists questions related to financial reporting that other users have had.</span></span> 
+<span data-ttu-id="8968e-104">Toto téma poskytuje odpovědi na nejčastější dotazy týkající se finančního výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="8968e-104">This topic provides answers to frequently asked questions about financial reporting.</span></span> 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="8968e-105">Jak omezím přístup k sestavě pomocí zabezpečení stromu?</span><span class="sxs-lookup"><span data-stu-id="8968e-105">How do I restrict access to a report using tree security?</span></span>
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="91907-105">Jak omezím přístup k sestavě pomocí zabezpečení stromu?</span><span class="sxs-lookup"><span data-stu-id="91907-105">How do I restrict access to a report using Tree security?</span></span>
+<span data-ttu-id="8968e-106">Následující příklad ukazuje, jak omezit přístup k sestavě pomocí zabezpečení stromu.</span><span class="sxs-lookup"><span data-stu-id="8968e-106">The following example shows how to restrict access to a report using tree security.</span></span>
 
-<span data-ttu-id="91907-106">Scénář: Ukázková společnost USMF má sestavu rozvahy, která není určena všem uživatelům finančního výkaznictví v D365.</span><span class="sxs-lookup"><span data-stu-id="91907-106">Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365.</span></span> <span data-ttu-id="91907-107">Řešení: Pomocí zabezpečení stromu můžete omezit přístup některých uživatelů k sestavě.</span><span class="sxs-lookup"><span data-stu-id="91907-107">Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report.</span></span> 
+<span data-ttu-id="8968e-107">Ukázková společnost USMF má sestavu rozvahy, ke které by neměli mít přístup všichni uživatelé finančního výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="8968e-107">The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to.</span></span> <span data-ttu-id="8968e-108">Pro omezení přístupu můžete pomocí zabezpečení stromu omezit přístup některých uživatelů k sestavě.</span><span class="sxs-lookup"><span data-stu-id="8968e-108">To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report.</span></span> <span data-ttu-id="8968e-109">Chcete-li omezit přístup, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="8968e-109">Follow these steps to restrict access:</span></span> 
 
-1.  <span data-ttu-id="91907-108">Přihlášení do návrháře finančních sestav</span><span class="sxs-lookup"><span data-stu-id="91907-108">Log into Financial Reporter Report Designer</span></span>
+1. <span data-ttu-id="8968e-110">Přihlaste se do aplikace Financial Reporter Report Designer.</span><span class="sxs-lookup"><span data-stu-id="8968e-110">Sign in to Financial Reporter Report Designer.</span></span>
+2. <span data-ttu-id="8968e-111">Vytvořte novou definici stromu.</span><span class="sxs-lookup"><span data-stu-id="8968e-111">Create a new tree definition.</span></span> <span data-ttu-id="8968e-112">Přejděte na **Soubor > Nový > Definice stromu**.</span><span class="sxs-lookup"><span data-stu-id="8968e-112">Go to **File > New > Tree Definition**.</span></span>
+3. <span data-ttu-id="8968e-113">Ve sloupci **Zabezpečení jednotky** poklepejte na řádek **Souhrn**.</span><span class="sxs-lookup"><span data-stu-id="8968e-113">Double-click the **Summary** line in the **Unit Security** column.</span></span>
+4. <span data-ttu-id="8968e-114">Zvolte **Uživatelé a skupiny**.</span><span class="sxs-lookup"><span data-stu-id="8968e-114">Select **Users and Groups**.</span></span>  
+5. <span data-ttu-id="8968e-115">Vyberte uživatele nebo skupiny, které mají mít přístup k této sestavě.</span><span class="sxs-lookup"><span data-stu-id="8968e-115">Select the users or groups that need access to this report.</span></span> 
+6. <span data-ttu-id="8968e-116">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="8968e-116">Select **Save**.</span></span>
+7. <span data-ttu-id="8968e-117">V definici sestavy přidejte svou novou definici stromu.</span><span class="sxs-lookup"><span data-stu-id="8968e-117">In the report definition, add your new tree definition.</span></span>
+8. <span data-ttu-id="8968e-118">V definici stromu vyberte **Nastavení**.</span><span class="sxs-lookup"><span data-stu-id="8968e-118">In the tree definition, select **Setting**.</span></span> <span data-ttu-id="8968e-119">V možnosti **Výběr organizační jednotky** vyberte **Zahrnout všechny jednotky**.</span><span class="sxs-lookup"><span data-stu-id="8968e-119">Under **Reporting unit selection**, select **Include all units**.</span></span>
 
-2.  <span data-ttu-id="91907-109">Vytvořte novou definici stromu (Soubor | Nový | Definice stromu). a.</span><span class="sxs-lookup"><span data-stu-id="91907-109">Create a new Tree Definition (File | New | Tree Definition) a.</span></span>    <span data-ttu-id="91907-110">Ve sloupci **Zabezpečení jednotky** poklepejte na řádek **Souhrn**.</span><span class="sxs-lookup"><span data-stu-id="91907-110">Double-click the **Summary** line in the **Unit Security** column.</span></span>
-  <span data-ttu-id="91907-111">i.</span><span class="sxs-lookup"><span data-stu-id="91907-111">i.</span></span>    <span data-ttu-id="91907-112">Klikněte na možnost Uživatelé a skupiny.</span><span class="sxs-lookup"><span data-stu-id="91907-112">Click Users and Groups.</span></span>  
-          <span data-ttu-id="91907-113">1.    Vyberte uživatele nebo skupinu, která má mít přístup k této sestavě.</span><span class="sxs-lookup"><span data-stu-id="91907-113">1.    Select the User(s) or Group that would like to access this report.</span></span> 
-          
-<span data-ttu-id="91907-114">[![obrazovka uživatele](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span><span class="sxs-lookup"><span data-stu-id="91907-114">[![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span></span>
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a><span data-ttu-id="8968e-120">Jak zjistím, které účty neodpovídají mým zůstatkům?</span><span class="sxs-lookup"><span data-stu-id="8968e-120">How do I identify which accounts do not match my balances?</span></span>
 
-<span data-ttu-id="91907-115">[![obrazovka zabezpečení](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span><span class="sxs-lookup"><span data-stu-id="91907-115">[![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span></span>
+<span data-ttu-id="8968e-121">Pokud máte sestavu, který nemá odpovídající zůstatky, je zde několik kroků, které můžete podniknout k identifikaci každého z účtů a odchylek.</span><span class="sxs-lookup"><span data-stu-id="8968e-121">If you have a report that doesn't have matching balances, here are some steps you can take to identify each of the accounts and variances.</span></span> 
 
-  <span data-ttu-id="91907-116">b.</span><span class="sxs-lookup"><span data-stu-id="91907-116">b.</span></span>    <span data-ttu-id="91907-117">Klikněte na tlačítko **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="91907-117">Click **Save**.</span></span>
-  
-<span data-ttu-id="91907-118">[![tlačítko uložit](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span><span class="sxs-lookup"><span data-stu-id="91907-118">[![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span></span>
+<span data-ttu-id="8968e-122">**Financial Reporter Report Designer**</span><span class="sxs-lookup"><span data-stu-id="8968e-122">**Financial Reporter Report Designer**</span></span>
+1. <span data-ttu-id="8968e-123">V aplikaci Financial Reporter Report Designer vytvořte novou definici řádku.</span><span class="sxs-lookup"><span data-stu-id="8968e-123">In Financial Reporter Report Designer, create a new row definition.</span></span> 
+2. <span data-ttu-id="8968e-124">Zvolte **Upravit > Vložit řádky z dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="8968e-124">Select **Edit > Insert Rows from Dimensions**.</span></span>
+3. <span data-ttu-id="8968e-125">Vyberte **Hlavní účet**.</span><span class="sxs-lookup"><span data-stu-id="8968e-125">Select **MainAccount**.</span></span>  
+4. <span data-ttu-id="8968e-126">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="8968e-126">Select **OK**.</span></span>
+5. <span data-ttu-id="8968e-127">Uložte definici řádku.</span><span class="sxs-lookup"><span data-stu-id="8968e-127">Save the row definition.</span></span>
+6. <span data-ttu-id="8968e-128">Vytvoření nové definice sloupce</span><span class="sxs-lookup"><span data-stu-id="8968e-128">Create a new column definition</span></span>
+7. <span data-ttu-id="8968e-129">Vytvořte novou definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="8968e-129">Create a new report definition.</span></span>
+8. <span data-ttu-id="8968e-130">Vyberte **Nastavení** a zrušte označení této možnosti.</span><span class="sxs-lookup"><span data-stu-id="8968e-130">Select **Settings** and unmark this option.</span></span>  
+9. <span data-ttu-id="8968e-131">Vygenerujte sestavu.</span><span class="sxs-lookup"><span data-stu-id="8968e-131">Generate the report.</span></span> 
+10. <span data-ttu-id="8968e-132">Exportujte sestavu do Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="8968e-132">Export the report to Microsoft Excel.</span></span>
 
-3.  <span data-ttu-id="91907-119">Do definice sestavy přidejte novou definici stromu.</span><span class="sxs-lookup"><span data-stu-id="91907-119">In your Report Definition add your new Tree Definition</span></span>
+<span data-ttu-id="8968e-133">**Dynamics 365 Finance**</span><span class="sxs-lookup"><span data-stu-id="8968e-133">**Dynamics 365 Finance**</span></span> 
+1. <span data-ttu-id="8968e-134">V Dynamics 365 Finance, přejděte na **Hlavní kniha > Dotazy a sestavy > Předvaha**.</span><span class="sxs-lookup"><span data-stu-id="8968e-134">In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.</span></span>
+2. <span data-ttu-id="8968e-135">Nastavte následující parametry:</span><span class="sxs-lookup"><span data-stu-id="8968e-135">Set the following parameters:</span></span>
+   - <span data-ttu-id="8968e-136">**Od data** - Zadejte začátek fiskálního roku.</span><span class="sxs-lookup"><span data-stu-id="8968e-136">**From Date** - Enter the start of the fiscal year.</span></span>
+   - <span data-ttu-id="8968e-137">**Do data** - Zadejte datum, pro které generujete sestavu.</span><span class="sxs-lookup"><span data-stu-id="8968e-137">**To Date** - Enter the date you are generating the report for.</span></span>
+   - <span data-ttu-id="8968e-138">**Finanční dimenze** - Nastavte toto pole na **Hlavní účet nastaven**.</span><span class="sxs-lookup"><span data-stu-id="8968e-138">**Financial Dimension** - Set this field to **Main Account set**.</span></span>
+ 3. <span data-ttu-id="8968e-139">Vyberte **Vypočítat**.</span><span class="sxs-lookup"><span data-stu-id="8968e-139">Select **Calculate**.</span></span>
+ 4. <span data-ttu-id="8968e-140">Exportujte sestavu do Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="8968e-140">Export the report to Microsoft Excel.</span></span>
 
-<span data-ttu-id="91907-120">[![formulář definice stromu](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span><span class="sxs-lookup"><span data-stu-id="91907-120">[![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span></span>
-
-<span data-ttu-id="91907-121">A.</span><span class="sxs-lookup"><span data-stu-id="91907-121">A.</span></span>  <span data-ttu-id="91907-122">V definici stromu klikněte na Nastavení a v části „Výběr organizační jednotky“ zaškrtněte „Zahrnout všechny jednotky“.</span><span class="sxs-lookup"><span data-stu-id="91907-122">While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”</span></span>
-
-<span data-ttu-id="91907-123">[![formulář pro výběr organizační jednotky](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span><span class="sxs-lookup"><span data-stu-id="91907-123">[![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span></span>
-
-<span data-ttu-id="91907-124">**Před:** [![před screenshotem](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span><span class="sxs-lookup"><span data-stu-id="91907-124">**Before:** [![before screenshot](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span></span>
-
-<span data-ttu-id="91907-125">**Po:** [![po screenshotu](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span><span class="sxs-lookup"><span data-stu-id="91907-125">**After:** [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span></span>
-
-<span data-ttu-id="91907-126">Poznámka: Výše uvedená zpráva se zobrazila, protože po použití zabezpečení jednotky nemá váš uživatel přístup k této sestavě.</span><span class="sxs-lookup"><span data-stu-id="91907-126">Note: Reason for the above message is my user does not have access to that report after applying Unit Security</span></span>
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a><span data-ttu-id="91907-127">Jak zjistím, které účty neodpovídají mým zůstatkům v D365?</span><span class="sxs-lookup"><span data-stu-id="91907-127">How do I determine which account(s) do not matching my balances in D365?</span></span>
-
-<span data-ttu-id="91907-128">Pokud sestava v D365 neodpovídá vašim očekáváním, zde je několik kroků, kterými můžete identifikovat tyto účty a odchylky.</span><span class="sxs-lookup"><span data-stu-id="91907-128">When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances.</span></span> 
-
-### <a name="in-financial-reporter-report-designer"></a><span data-ttu-id="91907-129">V návrháři finančních sestav:</span><span class="sxs-lookup"><span data-stu-id="91907-129">In Financial Reporter Report Designer</span></span>
-
-1.  <span data-ttu-id="91907-130">Vytvořte novou definici řádků. a.</span><span class="sxs-lookup"><span data-stu-id="91907-130">Create a new Row Definition a.</span></span>    <span data-ttu-id="91907-131">Klikněte na položku Upravit | Vložit řádky z dimenzí. i.</span><span class="sxs-lookup"><span data-stu-id="91907-131">Click Edit | Insert Rows from Dimensions i.</span></span>  <span data-ttu-id="91907-132">Vyberte Hlavní účet [![Výběr hlavní obrazovky](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span><span class="sxs-lookup"><span data-stu-id="91907-132">Select MainAccount [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span></span>
-    
-    <span data-ttu-id="91907-133">ii.</span><span class="sxs-lookup"><span data-stu-id="91907-133">ii.</span></span> <span data-ttu-id="91907-134">Klikněte na tlačítko OK. b.</span><span class="sxs-lookup"><span data-stu-id="91907-134">Click Ok b.</span></span>    <span data-ttu-id="91907-135">Uložte definici řádku.</span><span class="sxs-lookup"><span data-stu-id="91907-135">Save the Row Definition</span></span>
-
-2.  <span data-ttu-id="91907-136">Vytvořte novou definici sloupce.     [![Vytvoření nové definice sloupce](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span><span class="sxs-lookup"><span data-stu-id="91907-136">Create a new Column Definition     [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span></span>
-
-3.  <span data-ttu-id="91907-137">Vytvořte novou definici sestavy. a.</span><span class="sxs-lookup"><span data-stu-id="91907-137">Create a new Report Definition a.</span></span>    <span data-ttu-id="91907-138">Klikněte na Nastavení a zrušte zaškrtnutí. [![Formulář Nastavení](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span><span class="sxs-lookup"><span data-stu-id="91907-138">Click Settings and uncheck [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span></span>
-   
-4.  <span data-ttu-id="91907-139">Vygenerujte sestavu.</span><span class="sxs-lookup"><span data-stu-id="91907-139">Generate the Report.</span></span> 
-
-5.  <span data-ttu-id="91907-140">Exportujte sestavu do aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="91907-140">Export the Report to Excel.</span></span>
-
-### <a name="in-d365"></a><span data-ttu-id="91907-141">V D365:</span><span class="sxs-lookup"><span data-stu-id="91907-141">In D365:</span></span> 
-1.  <span data-ttu-id="91907-142">Klikněte na položky Hlavní kniha | Dotazy a sestavy | Předvaha. a.</span><span class="sxs-lookup"><span data-stu-id="91907-142">Click General Ledger | Inquiries and Reports | Trial Balance a.</span></span>    <span data-ttu-id="91907-143">Parametry: i.</span><span class="sxs-lookup"><span data-stu-id="91907-143">Parameters i.</span></span>  <span data-ttu-id="91907-144">Od data: Začátek fiskálního roku. ii.</span><span class="sxs-lookup"><span data-stu-id="91907-144">From Date: Start of Fiscal Year ii.</span></span> <span data-ttu-id="91907-145">Do data: Datum, pro které jste vygenerovali sestavu. iii.</span><span class="sxs-lookup"><span data-stu-id="91907-145">To Date: Date you generated the report for iii.</span></span>    <span data-ttu-id="91907-146">Sada finančních dimenzí nastavená jako „Sada hlavního účtu“. [![Formulář hlavního účtu](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span><span class="sxs-lookup"><span data-stu-id="91907-146">Financial Dimension Set “Main Account set” [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span></span>
-      
-  <span data-ttu-id="91907-147">b.</span><span class="sxs-lookup"><span data-stu-id="91907-147">b.</span></span>    <span data-ttu-id="91907-148">Klikněte na tlačítko Vypočítat.</span><span class="sxs-lookup"><span data-stu-id="91907-148">Click Calculate</span></span>
-
-2.  <span data-ttu-id="91907-149">Exportujte sestavu do aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="91907-149">Export the report to Excel</span></span>
-
-<span data-ttu-id="91907-150">Nyní byste měli být schopni zkopírovat data ze sestavy finančního výkaznictví Excel a do sestavy předvahy D365 a porovnat sloupce „Konečný zůstatek“.</span><span class="sxs-lookup"><span data-stu-id="91907-150">You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.</span></span>
-
+<span data-ttu-id="8968e-141">Nyní byste měli být schopni zkopírovat data ze sestavy finančního výkaznictví v Excelu a do sestavy předvahy a porovnat sloupce **Konečný zůstatek**.</span><span class="sxs-lookup"><span data-stu-id="8968e-141">You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
