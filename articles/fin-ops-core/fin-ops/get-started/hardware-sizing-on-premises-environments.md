@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748738"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923473"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -134,7 +134,7 @@ Pro všeobecnou dostupnost lze nasadit pouze jeden uzel SSRS. Při testování s
 
 ## <a name="environment-orchestrator"></a>Orchestrátor prostředí
 
-Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace najdete v části [Naplánujte a připravte nasazení svého samostatného clusteru Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace najdete v části [Naplánujte a připravte nasazení svého samostatného clusteru Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualizace a předplatné
 

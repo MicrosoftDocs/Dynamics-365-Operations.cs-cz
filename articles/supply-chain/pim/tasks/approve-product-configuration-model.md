@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4767d5dc3944d2595a5b2a74a6d5c7c0ea0c849a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2c945756997b0580ac7ffb19261f9184e53a1c10
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809439"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920500"
 ---
 # <a name="approve-a-product-configuration-model"></a>Schválení modelu konfigurace produktu
 
@@ -26,25 +26,24 @@ ms.locfileid: "5809439"
 
 Spuštění této procedury vyžaduje, aby nejméně jeden model konfigurace produktu byl k dispozici. Tento postup využívá model špičkového reproduktoru v ukázkové společnosti USMF. Všimněte si, že tento model již byl schválen, ale postup vás provede celým procesem.
 
-1. Klepněte na Definice modelu varianty produktu.
-2. Klepněte na Modely konfigurace produktu.
-3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Modely konfigurace produktu**.
+1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Pro tuto proceduru vyberte model špičkového reproduktoru.  
-4. Klepněte na Verze.
-5. Klikněte na položku Nová.
-6. V poli Číslo produktu zadejte nebo vyberte hodnotu.
+1. Vyberte **Verze**.
+1. Zvolte **Nové**.
+1. V poli **Číslo produktu** zadejte nebo vyberte hodnotu.
     * Odkaz na produkt představuje verzi modelu konfigurace produktu. V seznamu se zobrazí pouze základní produkty, které mají technologii konfigurace založenou na omezeních.  
-7. Zadejte datum do pole Od data.
+1. Do pole **Od data** zadejte datum.
     * Vyberte, kdy bude verze modelu produktu k dispozici.  
-8. Do pole Do data zadejte datum.
+1. Do pole **Do data** zadejte datum.
     * Vyberte koncové datum, kdy této verzi modelu produktu vyprší platnost, nebo vyberte Nikdy.  
-9. Klepnutím na možnost Schválit otevřete dialogové okno.
-10. V poli Schválil(a) zadejte nebo vyberte hodnotu.
+1. Kliknutím na možnost **Schválit** otevřete dialogové okno.
+1. V poli **Schválil(a)** zadejte nebo vyberte hodnotu.
     * Vyberte osobu, která je odpovědná za schválení modelů produktu pro použití v operacích.  
-11. Klikněte na tlačítko OK.
-12. Vyberte možnost v poli Metoda cenových kalkulací.
+1. Vyberte **OK**.
+1. Vyberte možnost v poli **Metoda cenových kalkulací**.
     * Aktivujte verzi modelu výrobku. Pro jeden model produktu je možné současně mít aktivní pouze jeden produkt.  
-13. Zavřete stránku.
+1. Zavřete stránku.
 
 
 

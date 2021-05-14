@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889781"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963208"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -55,6 +55,9 @@ Mezi aspekty pro další prostředí patří mimo jiné následující:
 Pokud chcete použít ke správě svého prostředí aplikace Human Resources službu LCS, musíte nejprve vytvořit LCS projekt.
 
 1. Přihlaste se do [LCS](https://lcs.dynamics.com/Logon/Index) pomocí účtu, který jste použili pro přihlášení se k odběru aplikace Human Resources.
+
+   > [!NOTE]
+   > Aby bylo zajištěno úspěšné zřízení, účet, který používáte k zřízení prostředí Human Resources, musí být přiřazen buď roli **Správce systému**, nebo **Přizpůsobení systému** v prostředí Power Apps spojeném s prostředím Human Resources. Viz [Konfigurace zabezpečení uživatelů na prostředky](https://docs.microsoft.com/power-platform/admin/database-security), kde najdete další informace o přiřazení rolí zabezpečení uživatelům v Power Platform.
 
 2. Vyberte znaménko plus (**+**) a vytvořte projekt.
 
@@ -115,13 +118,30 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
    
     - **Zkušební prostředí** – tato prostředí jsou vytvářena s datem vypršení platnosti. Po vypršení platnosti bude automaticky odebráno vaše prostředí a všechny instance Human Resources, které jsou v něm obsaženy.
    
-    - **Nepodporované oblasti** – Aplikace Human Resources je v současné době podporována pouze v následujících oblastech: Spojené státy, Evropa, Spojené království, Austrálie, Kanada a Asie.
-
-    > [!NOTE]
-    > Prostředí Human Resources je zajišťováno ve stejné oblasti, v níž je prostředí Power Apps zajišťováno. Migrace prostředí Human Resources do jiné oblasti není podporována.
+    - **Nepodporované zeměpisné oblasti** – Prostředí musí být v podporované geografii. Další informace viz [Podporované zeměpisné oblasti](hr-admin-setup-provision.md#supported-geographies).
 
 6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
- 
+
+### <a name="supported-geographies"></a>Podporované zeměpisné oblasti
+
+Human Resources v současné době podporují následující zeměpisné oblasti:
+
+- Spojené státy americké
+- Evropa
+- Spojené království
+- Austrálie
+- Kanada
+- Asie 
+
+Když vytváříte prostředí Human Resources, vyberete prostředí Power Apps ke spojení s prostředím Human Resources. Prostředí Human Resources je poté zřízeno ve stejné geografii Azure jako vybrané prostředí Power Apps. Můžete vybrat, kde se prostředí Human Resources a databáze fyzicky nacházejí, výběrem geografie při vytváření prostředí Power Apps, které bude spojeno s prostředím Human Resources.
+
+Můžete vybrat *zeměpisnou oblast* Azure, ve které je zajištěno prostředí, ale nemůžete vybrat konkrétní *region* Azure. Automatizace určuje konkrétní oblast v geografii, ve které je prostředí vytvořeno, aby optimalizovalo vyvažování zátěže a výkon. Informace o geografických oblastech a oblastech Azure najdete v dokumentaci na [Zeměpisné oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Data pro prostředí Human Resources budou vždy obsažena v geografii Azure, ve které je vytvořena. Nebude však vždy obsažen ve stejné oblasti Azure. Pro účely zotavení po havárii budou data replikována jak v primárním regionu Azure, tak v sekundární oblasti převzetí služeb při selhání v rámci geografie.
+
+ > [!NOTE]
+ > Migrace prostředí Human Resources z jednoho regionu Azure do jiného není podporována.
+
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
 
 Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musíte explicitně udělit přístup. Musíte přidat uživatele a přiřadit jim příslušné role v prostředí Human Resources. Globální správce, který nasadil aplikaci Human Resources, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta. Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu. Další informace naleznete v tématu [Vytvoření nových uživatelů](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

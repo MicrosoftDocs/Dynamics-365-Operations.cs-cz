@@ -1,5 +1,5 @@
 ---
-title: Pracovní prostor pro zadávání faktur dodavatele
+title: Pracovní prostor pro automatizaci faktur dodavatele
 description: Toto téma vysvětluje, jak nastavit pracovní prostor, který souvisí s fakturami dodavatelů a který zobrazuje informace, které jsou k dispozici prostřednictvím Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837243"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954128"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Pracovní prostor pro zadávání faktur dodavatele
+# <a name="vendor-invoice-automation-workspace"></a>Pracovní prostor pro automatizaci faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ Toto téma vysvětluje, jak nastavit pracovní prostor, který souvisí s faktur
 
 ## <a name="overview"></a>Přehled
 
-Pracovní prostor **Záznam faktury dodavatele** zobrazuje informace související se zpracováním faktur dodavatele. Tento pracovní prostor obsahuje zobrazení **Moje práce** a stránku **Analýza – všechny společnosti**. Zobrazení **Moje práce** zobrazuje souhrnné dlaždice, mřížky transakce dodavatele a související informace o dodavateli. Stránka **Analýza – všechny společnosti** používá funkce Power BI k zobrazení vizualizací, které se vztahují k fakturám dodavatelů.
+Pracovní prostor **Automatizace faktur dodavatele** zobrazuje informace související se zpracováním faktur dodavatele. Tento pracovní prostor obsahuje zobrazení **Moje práce** a stránku **Analýza – všechny společnosti**. Zobrazení **Moje práce** zobrazuje souhrnné dlaždice, mřížky transakce dodavatele a související informace o dodavateli. Stránka **Analýza – všechny společnosti** používá funkce Power BI k zobrazení vizualizací, které se vztahují k fakturám dodavatelů.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Nastavení pracovního prostoru, aby zobrazoval obsah Power BI
 
-Toto nastavení musíte provést, než budou moci být zobrazena data ve vizualizacích Power BI v pracovním prostoru **Záznam faktury dodavatele**.
+Toto nastavení musíte provést, než budou moci být zobrazena data ve vizualizacích Power BI v pracovním prostoru **Automatizace faktur dodavatele**.
 
 1. V pracovním prostoru **Správa funkcí** filtrováním seznamu vyhledejte funkci **Automatizace faktur dodavatele**.
 3. Vyberte **Povolit**.
@@ -54,7 +54,7 @@ Chcete-li zobrazit informace, které se zobrazily v pracovním prostoru, musíte
 
 ### <a name="company-selection"></a>Výběr společnosti
 
-Když je zapnutá funkce **Automatizovat faktury dodavatele**, pole **Společnost** se objeví v horní části pracovního prostoru. Výběr pole **Společnost** ovlivňuje všechny informace zobrazené v pracovním prostoru. Ve výchozím nastavení zobrazení obsahuje informace o společnosti, ke které jste se přihlásili. Výběrem jiné společnosti v poli **Společnost** můžete zobrazit informace o této společnosti v pracovním prostoru. Poté můžete vybrat dlaždici v pracovním prostoru a přejít na související stránku ve vybrané společnosti.
+Když je zapnutá funkce **Automatizace faktur dodavatele**, pole **Společnost** se objeví v horní části pracovního prostoru. Výběr pole **Společnost** ovlivňuje všechny informace zobrazené v pracovním prostoru. Ve výchozím nastavení zobrazení obsahuje informace o společnosti, ke které jste se přihlásili. Výběrem jiné společnosti v poli **Společnost** můžete zobrazit informace o této společnosti v pracovním prostoru. Poté můžete vybrat dlaždici v pracovním prostoru a přejít na související stránku ve vybrané společnosti.
 
 ### <a name="summary-tiles"></a>Dlaždice souhrnu
 

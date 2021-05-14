@@ -2,7 +2,7 @@
 title: Požádat o volno
 description: Žádost o volno v Dynamics 365 Human Resources
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790685"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924847"
 ---
 # <a name="request-time-off"></a>Požádat o volno
 
@@ -45,7 +45,7 @@ V aplikaci Dynamics 365 Human Resources Můžete odesílat žádosti volno, zobr
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Přidání přílohy do existující žádosti
 
-Při aktualizaci existujícího požadavku o volno můžete přidat přílohu. Můžete také zobrazit všechny související žádosti o konkrétní datum. 
+Při aktualizaci existujícího požadavku o volno můžete přidat přílohu. Můžete také zobrazit všechny související žádosti o konkrétní datum.
 
 ## <a name="view-leave-balances"></a>Zobrazit zůstatky pracovního volna
 
@@ -58,6 +58,20 @@ Při aktualizaci existujícího požadavku o volno můžete přidat přílohu. M
 1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.
 
 2. Chcete-li zobrazit schválené požadavky na volno, vyberte **Schválené volno**. Chcete-li zobrazit nevyřízené požadavky na volno, vyberte **Žádosti o volno**.
+
+## <a name="cancel-time-off-requests"></a>Zrušení žádostí o volno
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zobrazit volno** v dlaždici **Zůstatky volna**.
+
+2. Na formuláři **Volno** vyberte jednu nebo více žádostí o volno, které chcete zrušit.
+
+3. Zvolte tlačítko **Zrušit**.
+
+4. V podokně **Podrobnosti o zrušení** zadejte komentář a poté vyberte **Odeslat**.
+
+   ![Zrušit žádost o dovolenou](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Viz také
 

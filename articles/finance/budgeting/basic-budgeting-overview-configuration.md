@@ -1,8 +1,8 @@
 ---
 title: Přehled rozpočtování
 description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827451"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960042"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -71,7 +71,7 @@ Funkce, která byla představena v aplikaci Microsoft Dynamics 365 Finance verze
 
 Funkce **Položky registru rozpočtu pro pouze množství** umožňuje zaúčtovat položku registru rozpočtu s částkami pouze množství. Můžete například zaúčtovat položku rozpočtu s množstvím 32 a s nulovou cenou, což vede k nulovému množství. Toto množství pak můžete použít v kontextu finanční sestavy k určení ceny za množství. Všimněte si, že v rámci této funkce nebyly aktualizovány žádné dotazy ani sestavy, funkce pouze umožňuje zaúčtovat nulovou částku.
 
-Funkce **Položky registru rozpočtu pro výchozí typ částky** umožňuje, aby výchozí typ částky v rámci položky registru rozpočtu byl jiný než výdaj. Řádek položky registru rozpočtu bude ve výchozím nastavení vyúčtování výdajů v případě, že typ hlavního účtu je výdaje, výchozí nastavení je výnos, pokud je typem hlavního účtu výdaj a výchozí nastavení výdajů pro všechny ostatní typy účtů.
+Funkce **Položky registru rozpočtu pro výchozí typ částky** umožňuje, aby výchozí typ částky v rámci položky registru rozpočtu byl jiný než výdaj. Řádek položky registru rozpočtu bude ve výchozím nastavení vyúčtování výdajů v případě, že typ hlavního účtu je výdaje, výchozí nastavení je výnos, pokud je typem hlavního účtu výnos a výchozí nastavení výdajů pro všechny ostatní typy účtů.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Použití pracovní plochy a stránek s dotazy ke sledování rozpočtu a skutečných hodnot
 Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním prostoru **Rozpočty hlavní knihy a prognózy**. Karty **Výdaje nad rozpočet** a **Výnosy pod rozpočtem** poskytují rychlý přehled o kombinacích finančních dimenzí, kde cíle rozpočtu nedosáhly nebo se blížily prahové hodnotě. Prahovou procentuální hodnotu rozpočtu a sady finančních dimenzí, které se používají na těchto kartách, můžete přizpůsobit klepnutím na možnost **Konfigurovat můj pracovní prostor**. Můžete klepnout na možnost **Manažeři jednotky** a zobrazíte pracovníky, kteří odpovídají za kombinace specifických finančních dimenzí, které jsou na těchto kartách vybrány. Například pokud vidíte, že rozpočet výdajů oddělení Operace překročí rozpočtový práh, lze snadno najít a kontaktovat správce oddělení operací a problém probrat. 

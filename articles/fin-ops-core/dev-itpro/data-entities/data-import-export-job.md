@@ -2,7 +2,7 @@
 title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750993"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937323"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -161,19 +161,7 @@ Chcete-li urychlit import dat, lze souběžné zpracování importu povolit, pok
     - Do pole **Počet záznamů prahové hodnoty pro import** zadejte počet záznamů prahové hodnoty pro import. Určuje počet záznamů, které mají být zpracovány podprocesem. Má-li soubor 10 000 záznamů, bude počet záznamů 2500 s počtem úkolů 4 znamenat, že v každém podprocesu bude zpracováno 2500 záznamů.
     - Do pole **Počet úkolů importu** zadejte počet úkolů importu. Tato hodnota nesmí přesáhnout maximální počet dávkových podprocesů přidělených pro dávkové zpracování v **Správa systému \> Konfigurace serveru**.
 
-## <a name="clean-up-the-staging-tables"></a>Vyčištění tabulek fázování
-Od aktualizace platformy 29 se tato funkce již nepoužívá. Je nahrazena novou verzí funkce Vyčištění historie úloh, která je vysvětlena níže.
-
-Můžete vyčistit tabulky fázování pomocí funkce **Vyčištění fázování** v pracovním prostoru **Správa dat**. Chcete-li zvolit, jaké záznamy by měly být odstraněny z konkrétní tabulky fázování, můžete použít následující možnosti:
-
-- **Entita** – Pokud je zadaná pouze entita, všechny záznamy z této tabulky fázování se odstraní. Zvolte tuto možnost, abyste vyčistili všechna data z entity napříč všemi datovými projekty a všemi úlohami.
-- **ID úlohy** – Je-li zadáno pouze ID úlohy, všechny záznamy pro všechny entity ve zvolené úloze se odstraní z příslušných tabulek fázování.
-- **Datové projekty** – Pokud je vybrán datový projekt, budou odstraněny všechny záznamy pro všechny entity a napříč všemi úlohami pro zvolený datový projekt.
-
-Také můžete kombinovat možnosti pro další omezení sady záznamů, která je odstraněna.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Vyčištění historie úloh (k dispozici v aktualizaci platformy 29 a novější)
-
+## <a name="job-history-clean-up"></a>Čištění historie úloh 
 Funkce vyčištění historie úlohy ve správě dat musí být použita k naplánování pravidelného mazání historie provedení. Tato funkce nahrazuje předchozí funkci Vyčištění pracovní tabulky, která je nyní zastaralá. Následující tabulky budou vyčištěny procesem vyčištění.
 
 -   Všechny tabulky fází

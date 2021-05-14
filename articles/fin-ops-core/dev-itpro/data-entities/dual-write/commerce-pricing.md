@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: shajain
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-11-03
-ms.openlocfilehash: 364cc5adf0358ffa952750149ad31d62cbd35e87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fa93b1262049d80148ff23b3d7223ec0f6c2fe68
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751427"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941159"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Používání cenového modulu Dynamics 365 Commerce s Dynamics 365 Sales
 
@@ -31,7 +31,7 @@ V tomto tématu je popsán způsob použití cenového modulu v aplikaci Microso
 
 Cenový modul Dynamics 365 Commerce podporuje většinu scénářů cen mezi podniky a spotřebiteli (B2C), jako jsou ceny na úrovni obchodů, ceny založené na přidělení a věrnosti, kombinační slevy, množstevní slevy a mezní slevy. Cenový modul používá složitá pravidla k určení nejvhodnější ceny pro danou nabídku nebo objednávku.
 
-Když používáte [duální zápis](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview), máte tři možnosti pro vaše potřeby něco ocenit. Můžete použít statické ceny, které vycházejí z ceníku v Dynamics 365 Sales, cenový modul Dynamics 365 Supply Chain Management nebo cenový modul v Dynamics 365 Commerce. Z těchto možností je pro scénáře B2C nejvhodnější cenový modul Commerce.
+Když používáte [duální zápis](./dual-write-overview.md), máte tři možnosti pro vaše potřeby něco ocenit. Můžete použít statické ceny, které vycházejí z ceníku v Dynamics 365 Sales, cenový modul Dynamics 365 Supply Chain Management nebo cenový modul v Dynamics 365 Commerce. Z těchto možností je pro scénáře B2C nejvhodnější cenový modul Commerce.
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>Používání cenového modulu Commerce v Sales
 
@@ -42,7 +42,7 @@ Když uživatelé iniciují nabídku v Sales, zkopíruje architektura duálního
 
 ## <a name="prerequisites"></a>Předpoklady
 
-- Než budete moci použít cenový modul Commerce v Sales, musíte postupovat podle pokynů v části [Zpeněžení potenciálního zákazníka ve dvojím připisování](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/).
+- Než budete moci použít cenový modul Commerce v Sales, musíte postupovat podle pokynů v části [Zpeněžení potenciálního zákazníka ve dvojím připisování](./dual-write-prospect-to-cash.md).
 - Vyhodnocení obchodní dohody pro ruční zadávání musíte vypnout pomocí následujících kroků:
 
     1. V prostředí Commerce přejděte do nabídky **Pohledávky \> Nastavení \> Parametry pohledávek**.
@@ -50,7 +50,7 @@ Když uživatelé iniciují nabídku v Sales, zkopíruje architektura duálního
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Zpeněžení potenciálního zákazníka ve dvojím připisování](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+[Zpeněžení potenciálního zákazníka ve dvojím připisování](./dual-write-prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

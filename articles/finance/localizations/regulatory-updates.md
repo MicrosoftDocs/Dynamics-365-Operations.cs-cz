@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890769"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941133"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -47,6 +47,7 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      Brazílie         |   2020. říjen      | 10.0.16      |   Prohlášení SC DRCST - SEF 262/2020   |
 |      Brazílie         |   2020. říjen      | 10.0.16      |   SPED Fiskální ICMS / IPI záznam C176   |
 |      Brazílie         |   2020. prosince      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 - Identifikace zprostředkovatele digitální platformy (aktualizace pravidel rozložení a ověření)   |
+|      Brazílie         |   2021. březen         | 10.0.17, 10.0.18, 10.0.19         |    Rozložení SPED REINF 1.5.1
 |      Evropa        |   2021. leden       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Dopad protokolu Severního Irska na hlášení obchodu uvnitř společenství v zemích EU  |
 |      Německo        |   2021. leden       | 10.0.16HF      |   Formát oznámení o zaplacení zálohy DPH ELSTER UstVA byl rozšířen o dva nové rámečky 37,50 pro odepsání nedobytných dluhů  |
 |      Německo        |   2021. leden       | 10.0.17      |   Změny ve struktuře XML ELSTER předběžného oznámení o DPH (UstVA)  |

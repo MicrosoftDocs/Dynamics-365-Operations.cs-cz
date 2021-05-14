@@ -2,7 +2,7 @@
 title: Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
 description: V tomto tématu je vysvětleno, jak odložit provádění prvku posloupnosti ve formátu elektronického výkaznictví.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894093"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944502"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
 
@@ -57,14 +57,14 @@ Pokud jste ještě nedokončili příklad v části [Odložení provádění prv
 
 | Popis obsahu            | Název souboru |
 |--------------------------------|-----------|
-| Konfigurace datového modelu elektronického výkaznictví    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfigurace mapování modelu elektronického výkaznictví | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfigurace datového modelu elektronického výkaznictví    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfigurace mapování modelu elektronického výkaznictví | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Než začnete, musíte také stáhnout a uložit následující konfiguraci ukázkového řešení elektronického výkaznictví.
 
 | Popis obsahu     |Název souboru |
 |-------------------------|----------|
-| Konfigurace formátu elektronického výkaznictví | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfigurace formátu elektronického výkaznictví | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Import ukázkových konfigurací elektronického výkaznictví
 
@@ -169,7 +169,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
 1. Na stránce **Návrhář formátu** zvolte **Spustit**.
 2. Stáhněte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor](./media/ER-DeferredSequence-Run.png)
+    ![Stažený ukázkový soubor zprávy](./media/ER-DeferredSequence-Run.png)
 
 Povšimněte si, že souhrnný řádek 22 představuje součet hodnot daně pro zpracované transakce. Vzhledem k tomu, že formát je konfigurován pro použití vazby **model.Data.Summary.Total** pro vrácení tohoto souhrnu, vypočte se součet voláním agregace **TotalSum** datového zdroje **Seskupený** typu *GroupBy*, který používá mapování modelu. Pro výpočet této agregace prochází mapování modelů všechny transakce, které byly vybrány ve zdroji dat **Filtrované**. Porovnáním dob provádění řádků 21 a 22 můžete určit, že výpočet součtu trval 10 milisekund (ms). Porovnáním dob provádění řádků 2 a 21 můžete určit, že generování všech transakčních řádků trvalo 7 ms. Z tohoto důvodu je nutné celkem 17 ms.
 
@@ -202,7 +202,7 @@ Pokud je objem transakcí mnohem větší než objem v aktuálním příkladu, m
 12. Vyberte **Uložit** a potom **Spustit**.
 13. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor](./media/ER-DeferredSequence-Run1.png)
+    ![Stažený soubor – Souhrnné hodnoty daně](./media/ER-DeferredSequence-Run1.png)
 
     Řádek 21 obsahuje mezisoučet hodnot daně, který se vypočítává pro všechny zpracované transakce s použitím generovaného výstupu jako zdroje dat. Tento zdroj dat začíná od začátku sestavy a pokračuje k poslední daňové transakci. Řádek 22 obsahuje součet hodnot daně ze všech zpracovaných transakcí, které jsou vypočteny v mapování modelu pomocí zdroje dat typu *GroupBy*. Všimněte si, že tyto hodnoty jsou stejné. Z tohoto důvodu lze použít souhrn založený na výstupu namísto **GroupBy**. Porovnáním dob provádění řádků 2 a 21 můžete určit, že generování všech transakčních řádků a sčítání trvalo 9 ms. Proto, pokud jde o generování podrobných řádků a sčítání daňových hodnot, je upravený formát přibližně dvakrát rychlejší než původní formát.
 
@@ -211,7 +211,7 @@ Pokud je objem transakcí mnohem větší než objem v aktuálním příkladu, m
 16. Vyberte **Uložit** a potom **Spustit**.
 17. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor](./media/ER-DeferredSequence-Run2.png)
+    ![Stažený soubor s upraveným vzorcem](./media/ER-DeferredSequence-Run2.png)
 
     Povšimněte si, že mezisoučet daňových hodnot na posledním řádku podrobností transakce se nyní rovná součtu na řádku souhrnu.
 
@@ -224,7 +224,7 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor](./media/ER-DeferredSequence-Run3.png)
+    ![Stažený soubor pro sčítání v záhlaví sestavy](./media/ER-DeferredSequence-Run3.png)
 
     Všimněte si, že součet hodnot daně na souhrnném řádku 2 se nyní rovná 0 (nula), protože tento součet je nyní vypočten na základě generovaného výstupu. Je-li generován řádek 2, vygenerovaný výstup dosud neobsahuje řádky s podrobnostmi transakce. Tento formát lze nakonfigurovat tak, aby odložil provádění prvku posloupnosti **Report\\Lines\\Summary**, dokud prvek posloupnosti **Report\\Lines\\Record** nebyl spuštěn pro všechny daňové transakce.
 
@@ -238,7 +238,7 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor](./media/ER-DeferredSequence-Run4.png)
+    ![Stažený soubor – odložené provedení](./media/ER-DeferredSequence-Run4.png)
 
     Prvek posloupnosti **Report\\Lines\\Summary** je nyní spuštěn pouze po spuštění všech ostatních položek, které jsou vnořeny pod svým nadřazeným prvkem **Report\\Lines**. Proto je spuštěn po spuštění prvku posloupnosti **Report\\Lines\\Record** pro všechny daňové transakce datového zdroje **model.Data.List**. Doba provádění řádků 1, 2 a 3 a posledního řádku, 22, odhalí tuto skutečnost.
 

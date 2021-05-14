@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857363"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941076"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -52,11 +52,11 @@ Jsou zapotřebí následující předpoklady:
 
 2. Přihlásit se k aplikaci [Microsoft Azure](https://portal.azure.com/).
 
-3. Vytvořte [skupinu prostředků](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Vytvořte [skupinu prostředků](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Vytvořte [účet úložiště](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) ve skupině prostředků, kterou jste vytvořili.
+4. Vytvořte [účet úložiště](/azure/storage/common/storage-account-create?tabs=azure-portal) ve skupině prostředků, kterou jste vytvořili.
 
-5. Vytvořte [datovou továrnu](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) ve výše uvedené skupině prostředků, kterou jste vytvořili.
+5. Vytvořte [datovou továrnu](/azure/data-factory/quickstart-create-data-factory-portal) ve výše uvedené skupině prostředků, kterou jste vytvořili.
 
 6. Otevřete datovou továrnu a vyberte dlaždici **Autor a monitor**.
 
@@ -81,7 +81,7 @@ Jsou zapotřebí následující předpoklady:
     Id objektu zabezpečení Service_properties_type Properties_service propojené s FO | Zadejte ID klienta aplikace.
     Dynamics Crm spojené Service_properties_type Properties_username | Uživatelské jméno pro připojení k Dynamics.
 
-    Další informace viz [Ruční propagace šablony Resource Manageru pro každé prostředí](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Vlastnosti propojené služby](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) a [Kopírování dat pomocí Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Další informace viz [Ruční propagace šablony Resource Manageru pro každé prostředí](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Vlastnosti propojené služby](/azure/data-factory/connector-dynamics-ax#linked-service-properties) a [Kopírování dat pomocí Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Po nasazení ověřte datové sady, tok dat a propojenou službu datové továrny.
 
@@ -158,7 +158,7 @@ Jsou zapotřebí následující předpoklady:
 8. Importujte nové záznamy **Strana** v aplikaci Finance and Operations.
 
     + Stáhněte si soubor `FONewParty.csv` z úložiště Azure blob. Cesta je `partybootstrapping/output/FONewParty.csv`.
-    + Převeďte soubor `FONewParty.csv` do souboru Excel a importujte soubor Excel do souboru aplikace Finance and Operations.  Pokud vám csv import vyhovuje, můžete soubor csv importovat přímo. Import může trvat několik hodin, v závislosti na objemu dat. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Převeďte soubor `FONewParty.csv` do souboru Excel a importujte soubor Excel do souboru aplikace Finance and Operations.  Pokud vám csv import vyhovuje, můžete soubor csv importovat přímo. Import může trvat několik hodin, v závislosti na objemu dat. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
 
     ![Importování záznamů strany Datavers](media/data-factory-import-party.png)
 

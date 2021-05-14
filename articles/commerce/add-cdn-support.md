@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797832"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936823"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory sítě pro doručování obsahu (CDN)
 
@@ -47,7 +47,7 @@ Jak bylo uvedeno dříve, vygenerovaný název hostitele nebo koncový bod podpo
 
 Jakoukoli službu CDN lze používat v prostředí Commerce. Zde jsou dva příklady:
 
-- **Microsoft Azure Front Door Service** – řešení Azure CDN. Další informace o řešení Azure Front Door Service naleznete [v dokumentaci k Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – řešení Azure CDN. Další informace o řešení Azure Front Door Service naleznete [v dokumentaci k Azure Front Door Service](/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – další informace viz [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp).
 
 ## <a name="cdn-setup"></a>Nastavení CDN
@@ -62,7 +62,7 @@ Proces nastavení CDN se skládá z následujících obecných kroků:
 
 Je možné použít libovolnou službu CDN, ale v příkladu v tomto tématu se použije služba Azure Front Door Service. 
 
-Informace, jak nastavit službu Azure Front Door Service, naleznete v tématu [Rychlý start: Vytvoření služby Front Door pro vysoce dostoupnou globální webovou aplikaci](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+Informace, jak nastavit službu Azure Front Door Service, naleznete v tématu [Rychlý start: Vytvoření služby Front Door pro vysoce dostoupnou globální webovou aplikaci](/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurace backendového fondu ve službě Azure Front Door Service
 
@@ -115,7 +115,7 @@ Následující ilustrace znázorňuje dialogové okno **HTTPS vlastní domény**
 
 ![Dialogové okno HTTPS vlastní domény](./media/Custom_Domain_HTTPS.png)
 
-Podrobné pokyny pro přidání vlastní domény do vašich Azure Front Door najdete na stránce [Přidejte do Front Door vlastní doménu](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+Podrobné pokyny pro přidání vlastní domény do vašich Azure Front Door najdete na stránce [Přidejte do Front Door vlastní doménu](/azure/frontdoor/front-door-custom-domain).
 
 Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné používat s webem Commerce.
 

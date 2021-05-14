@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8935213c4629de408a48df5e54a2122324e1b3e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823925"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944704"
 ---
 # <a name="reclassify-fixed-assets"></a>Přeřazení dlouhodobého majetku
 
@@ -27,11 +27,25 @@ Chcete-li provést reklasifikaci dlouhodobého majetku, je nutné jej převést 
 
 Když je dlouhodobý majetek reklasifikován:
 
-* Pro nový dlouhodobý majetek budou vytvořeny všechny knihy pro existující dlouhodobý majetek. Veškeré informace nastavené pro původní dlouhodobý majetek se zkopírují do nového dlouhodobého majetku. Stav knih původního dlouhodobého majetku je Zavřeno. 
+- Pro nový dlouhodobý majetek budou vytvořeny všechny knihy pro existující dlouhodobý majetek. Veškeré informace nastavené pro původní dlouhodobý majetek se zkopírují do nového dlouhodobého majetku. Stav knih původního dlouhodobého majetku je Zavřeno. 
 
-* Nové knihy nového dlouhodobého majetku budou mít v poli **Datum pořízení** uvedeno datum reklasifikace. Datum v poli **Datum zahájení odpisu** bude zkopírováno z původních informací o majetku. Pokud již byl zahájen odpis, zobrazí se v poli **Datum posledního odpisu** datum reklasifikace. 
+- Nové knihy nového dlouhodobého majetku budou mít v poli **Datum pořízení** uvedeno datum reklasifikace. Datum v poli **Datum zahájení odpisu** bude zkopírováno z původních informací o majetku. Pokud již byl zahájen odpis, zobrazí se v poli **Datum posledního odpisu** datum reklasifikace. 
 
-* Existující transakce dlouhodobého majetku pro původní dlouhodobý majetek jsou zrušeny a opětovně vytvořeny pro nový dlouhodobý majetek.
+- Existující transakce dlouhodobého majetku pro původní dlouhodobý majetek jsou zrušeny a opětovně vytvořeny pro nový dlouhodobý majetek.
+
+- Když je majetek, který má transakci převodu, překlasifikován, systém zobrazí zprávu v možnosti **Centrum akcí** k označení, že transakce převodu nebyla dokončena během procesu reklasifikace. Je nutné dokončit transakci převodu, abyste přesunuli existující transakce reklasifikace do příslušných finančních dimenzí. 
+
+   Během procesu reklasifikace provede systém následující akce, které reklasifikují zůstatek majetku z původního na nový. 
+   
+   - Proces reklasifikace zkopíruje data z původní knihy dlouhodobého majetku do nové knihy dlouhodobého majetku.
+
+   - Transakce reklasifikace používá informace z původní zaúčtované akvizice, které zahrnují informace o finanční dimenzi, které jsou zahrnuty v transakci pořízení.  
+   
+   - Proces reklasifikace zároveň obrací původní transakci pořízení a transakci převodu majetku. 
+
+Následující diagram a postup poskytují příklad procesu reklasifikace. 
+
+[![Schéma znázorňující proces reklasifikace](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Chcete-li reklasifikovat dlouhodobý majetek, postupujte takto:
 
@@ -42,7 +56,7 @@ Chcete-li reklasifikovat dlouhodobý majetek, postupujte takto:
     * Jestliže je nová skupina dlouhodobého majetku přiřazena k číselné řadě, pole **Nové číslo dlouhodobého majetku** se aktualizuje číslem z číselné řady nové skupiny dlouhodobého majetku. V opačném případě se pole **Nové číslo dlouhodobého majetku** aktualizuje číslem z číselné řady, která je nastavena na stránce **Parametry dlouhodobého majetku**. Pokud na stránce **Parametry dlouhodobého majetku** není nastavena číselná řada, zadejte číslo do pole **Nové číslo dlouhodobého majetku**.  
 5. Do pole **Datum reklasifikace** zadejte datum.
 6. V poli **Číselná řada dokladů** zadejte nebo vyberte hodnotu.
-7. Klikněte na tlačítko **OK**.
+7. Vyberte **OK**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

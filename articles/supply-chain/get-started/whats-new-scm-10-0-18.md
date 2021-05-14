@@ -1,5 +1,5 @@
 ---
-title: Náhled Dynamics 365 Supply Chain Management 10.0.18 (květen 2021)
+title: Co je nového nebo změněného v softwaru Dynamics 365 Supply Chain Management verze 10.0.18 (květen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909346"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934960"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.18 (květen 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Co je nového nebo změněného v softwaru Dynamics 365 Supply Chain Management verze 10.0.18 (květen 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.18. Tato verze má číslo sestavení 10.0.793 a je k dispozici následujícím způsobem:
+Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.18. Tato verze má číslo sestavení 10.0.793 a je k dispozici následujícím způsobem:
 
 - **Náhled verze:** březen 2021
 - **Obecně dostupné vydání (vlastní aktualizace):** duben 2021
@@ -43,9 +42,17 @@ Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vy
 
 - [Správa rabatu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md)
 
+- [Zásady nastavení exportu datové entity prodeje](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrace řádků vratky prodeje s desetinnou přesností se skutečnou hmotností a bez ní](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Potvrzení prodejní objednávky jediným kliknutím](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Zásady odstranění řádku prodejní objednávky propojeného s řádkem nákupní objednávky](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Zjednodušené rozhraní pouze pro označení příchodu do práce a odchodu z práce (vylepšení pro [Vylepšené rozhraní pro provádění výrobního provozu pro výrobu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. 
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 

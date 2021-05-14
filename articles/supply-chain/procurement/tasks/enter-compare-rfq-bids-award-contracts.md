@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811983"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920574"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
@@ -32,7 +32,7 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Zadání odpovědi jako dodavatel
 
-1. Na řídicím panelu vyberte **Nabídky dodavatele**.
+1. Přejděte do **Spolupráce s dodavateli \> Pracovní prostory \> Nabídky dodavatelů**.
 2. V seznamu **Pozvánky k nové nabídce** vyhledejte požadavek na nabídku, který byl právě odeslán. Vyberte požadavek na nabídku, u nějž chcete zkontrolovat, co bylo požadováno.
 3. Vyberte **Přílohy požadavku na nabídku** pro kontrolu všech přidaných příloh.
 4. Chcete-li vytvořit upravitelná pole, vyberte **Nabídka**. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Odběratel aktualizuje**.

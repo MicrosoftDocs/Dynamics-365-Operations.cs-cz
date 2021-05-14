@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d910b89330865b0bcf3f6cd05b761506f339a45f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b51e4b4d00da2babb5128d8c4c22139b0c1853d4
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841664"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920722"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Vytvoření materiálového plánu pro vedlejší produkty
 
@@ -26,88 +26,88 @@ ms.locfileid: "5841664"
 
 Plánovač výroby naplánuje materiálové požadavky na položky, které jsou vedlejšími produkty receptury. K vytvoření tohoto postupu jsou použita ukázková data společnosti USP2.
 
-
 ## <a name="create-requirement-for-a-co-product"></a>Vytvoření požadavku pro vedlejší produkt
-1. Přejděte na výchozí řídicí panel.
-2. Klikněte na Zpracování a dotaz na prodejní objednávku.
-3. Klepněte na možnost Nový.
-4. Klikněte na Prodejní objednávka.
-5. V poli Účet odběratele zadejte hodnotu.
+
+1. Přejděte do **Prodej a marketing \> Pracovní prostory \> Zpracování a poptávka prodejní objednávky**.
+1. Zvolte **Nové**.
+1. Vyberte **Prodejní objednávka**.
+1. V poli **Účet odběratele** zadejte hodnotu.
     * Příklad: US-001  
-6. Klikněte na tlačítko OK.
-7. Zadejte hodnotu do pole Číslo zboží.
+1. Vyberte **OK**.
+1. Zadejte hodnotu do pole **Číslo zboží**.
     * Příklad: P6003  
-8. Zadejte číslo do pole Množství.
+1. Zadejte číslo do pole **Množství**.
     * Příklad: 50000  
-9. Klikněte na položku Uložit.
+1. Zvolte **Uložit**.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Vytvoření materiálového plánu pro vedlejší produkty
+
 1. Zavřete stránku.
-2. Zavřete stránku.
-3. Klikněte na Hlavní plánování.
-4. V poli Plán kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
+1. Zavřete stránku.
+1. Vyberte **Hlavní plánování**.
+1. V poli **Plán** zvolením tlačítka rozevíracího seznamu otevřete vyhledávání.
+1. Vyberte odkaz na vybraném řádku v seznamu.
     * Příklad: MasterPlan  
-6. Klikněte na položku Spustit.
-7. Rozbalte nebo sbalte oddíl Záznamy k zahrnutí.
-8. Klepněte na tlačítko Filtr.
-9. V seznamu vyberte řádek pro pole = číslo položky.
-10. Zadejte hodnotu do pole Kritéria.
+1. Vyberte **Spustit**.
+1. Rozbalte nebo sbalte oddíl **Záznamy k zahrnutí**.
+1. Vyberte **Filtr**.
+1. V seznamu vyberte řádek pro **Pole** = *číslo položky*.
+1. Zadejte hodnotu do pole **Kritéria**.
     * Příklad: P6003  
-11. Klikněte na tlačítko OK.
-12. Klikněte na tlačítko OK.
-13. Klikněte na Plánované objednávky.
-14. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole Číslo položky pomocí hodnoty „P6000“.
+1. Vyberte **OK**.
+1. Vyberte **OK**.
+1. Vyberte **Plánované objednávky**.
+1. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole **Číslo položky** pomocí hodnoty „P6000“.
     * Filtrujte podle položky receptury, která má vedlejší produkt položky, pro kterou jste vytvořili prodejní objednávku.  
-15. Označte v seznamu vybraný řádek.
+1. Označte na seznamu vybraný řádek.
     * Vyberte libovolné řádky vrácené filtrem.  
-16. Klikněte na odkaz na vybraném řádku v seznamu.
-17. Rozbalte nebo sbalte oddíl Doložení.
-18. Klikněte na odkaz na vybraném řádku v seznamu.
+1. Vyberte odkaz na vybraném řádku v seznamu.
+1. Rozbalte sekci **Doložení**.
+1. Vyberte odkaz na vybraném řádku v seznamu.
     * Plánovaná objednávka je doložena v prodejní objednávce pro vedlejší produkt.  
-19. Zavřete stránku.
+1. Zavřete stránku.
 
-## <a name="create-requirement-for-a-co-product"></a>Vytvoření požadavku pro vedlejší produkt
-1. Přejděte na výchozí řídicí panel.
-2. Klikněte na Zpracování a dotaz na prodejní objednávku.
-3. Klepněte na možnost Nový.
-4. Klikněte na Prodejní objednávka.
-5. V poli Účet odběratele zadejte hodnotu.
+## <a name="create-a-second-requirement-for-a-co-product"></a>Vytvoření druhého požadavku pro vedlejší produkt
+
+1. Přejděte do **Prodej a marketing \> Pracovní prostory \> Zpracování a poptávka prodejní objednávky**.
+1. Zvolte **Nové**.
+1. Vyberte **Prodejní objednávka**.
+1. V poli **Účet odběratele** zadejte hodnotu.
     * Příklad: US-001  
-6. Klikněte na tlačítko OK.
-7. Zadejte hodnotu do pole Číslo zboží.
+1. Vyberte **OK**.
+1. Zadejte hodnotu do pole **Číslo zboží**.
     * Příklad: P6003  
-8. Zadejte číslo do pole Množství.
+1. Zadejte číslo do pole **Množství**.
     * Příklad: 50000  
-9. Klikněte na položku Uložit.
+1. Zvolte **Uložit**.
 
-## <a name="create-a-material-plan-for-co-products"></a>Vytvoření materiálového plánu pro vedlejší produkty
-1. V poli Plán kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-2. Klikněte na odkaz na vybraném řádku v seznamu.
+## <a name="create-a-second-material-plan-for-co-products"></a>Vytvoření druhého materiálového plánu pro vedlejší produkty
+
+1. V poli **Plán** zvolením tlačítka rozevíracího seznamu otevřete vyhledávání.
+2. Vyberte odkaz na vybraném řádku v seznamu.
     * Příklad: MasterPlan  
-3. Klikněte na položku Spustit.
-4. Rozbalte nebo sbalte oddíl Záznamy k zahrnutí.
-5. Klepněte na tlačítko Filtr.
-6. V seznamu vyberte řádek pro pole = číslo položky.
-7. Zadejte hodnotu do pole Kritéria.
+3. Vyberte **Spustit**.
+4. Rozbalte nebo sbalte oddíl **Záznamy k zahrnutí**.
+5. Vyberte **Filtr**.
+6. V seznamu vyberte řádek pro **Pole** = *číslo položky*.
+7. Zadejte hodnotu do pole *Kritéria*.
     * Příklad: P6003  
-8. Klikněte na tlačítko OK.
-9. Klikněte na tlačítko OK.
-10. Klikněte na Plánované objednávky.
-11. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole Číslo položky pomocí hodnoty „P6000“.
+8. Vyberte **OK**.
+9. Vyberte **OK**.
+10. Vyberte **Plánované objednávky**.
+11. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole **Číslo položky** pomocí hodnoty „P6000“.
     * Filtrujte podle položky receptury, která má vedlejší produkt položky, pro kterou jste vytvořili prodejní objednávku.  
-12. Označte v seznamu vybraný řádek.
+12. Označte na seznamu vybraný řádek.
     * Vyberte libovolné řádky vrácené filtrem.  
-13. Klikněte na odkaz na vybraném řádku v seznamu.
-14. Rozbalte nebo sbalte oddíl Doložení.
-15. Klikněte na odkaz na vybraném řádku v seznamu.
+13. Vyberte odkaz na vybraném řádku v seznamu.
+14. Rozbalte nebo sbalte oddíl **Doložení**.
+15. Vyberte odkaz na vybraném řádku v seznamu.
     * Plánovaná objednávka je doložena v prodejní objednávce pro vedlejší produkt.  
 16. Zavřete stránku.
-17. Klikněte na Hlavní plánování.
-18. Přejděte na Hlavní plánování > Nastavení > Parametry hlavního plánování.
-19. V poli Zakázat všechny procesy plánování vyberte Ne.
+17. Vyberte **Hlavní plánování**.
+18. Přejděte na **Hlavní plánování \> Nastavení \> Parametry hlavního plánování**.
+19. V poli **Zakázat všechny procesy plánování** vyberte *Ne*.
 20. Zavřete stránku.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

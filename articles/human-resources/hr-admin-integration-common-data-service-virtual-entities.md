@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890045"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935746"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
@@ -102,27 +102,15 @@ Musíte registrovat instanci Human Resources v portálu Azure, aby platforma ide
 
 Nainstalujte si aplikaci Dynamics 365 HR Virtual Table do svého prostředí Power Apps, abyste si nasadili balíček řešení virtuální tabulky do Dataverse.
 
-1. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com).
+1. V Human Resources otevřete stránku **Integrace Microsoft Dataverse**.
 
-2. V seznamu **Prostředí** vyberte prostředí Power Apps spojené s vaší instancí Human Resources.
+2. Vyberte kartu **Virtuální tabulky**.
 
-3. V části **Zdroje** této stránky vyberte **Aplikace Dynamics 365**.
+3. Vyberte **Nainstalovat aplikaci virtuální tabulky**.
 
-4. Vyberte akci **Nainstalovat aplikaci**.
+### <a name="configure-the-virtual-table-data-source"></a>Konfigurace zdroje dat virtuálních tabulek
 
-5. Vyberte **Dynamics 365 HR Virtual Table** a pak **Další**.
-
-6. Přečtěte si podmínky služby a potvrďte svůj souhlas.
-
-7. Vyberte **Instalovat**.
-
-Instalace trvá několik minut. Po jejím dokončení pokračujte dalšími kroky.
-
-![Instalace aplikace Dynamics 365 HR Virtual Table z centra pro správu Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>Konfigurace zdroje dat virtuálních tabulek 
-
-Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Power Apps. 
+Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Power Apps.
 
 1. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -133,6 +121,9 @@ Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Po
 4. V **Centru stavu řešení** vyberte ikonu **Rozšířené hledání** v pravém horním rohu stránky aplikace.
 
 5. Na stránce **Rozšířené hledání** vyberte v rozevíracím seznamu **Hledat** položku **Konfigurace zdrojů virtuálních dat ve Finance and Operations**.
+
+   > [!NOTE]
+   > Instalace aplikace virtuální tabulky z předchozího kroku instalace může trvat několik minut. Pokud **Konfigurace virtuálního datového zdroje Finance and Operations** nejsou k dispozici v seznamu, počkejte minutu a obnovte seznam.
 
 6. Vyberte **Výsledky**
 
@@ -186,7 +177,7 @@ Udělte oprávnění těmto dvěma aplikacím Azure AD v oblasti Human Resources
 
 Po dokončení instalace můžete vybrat virtuální tabulku, které chcete vygenerovat a povolit ve vaší instanci Dataverse.
 
-1. V Human Resources otevřete stránku **Integrace Dataverse**.
+1. V Human Resources otevřete stránku **Integrace Microsoft Dataverse**.
 
 2. Vyberte kartu **Virtuální tabulky**.
 
@@ -197,7 +188,7 @@ Po dokončení instalace můžete vybrat virtuální tabulku, které chcete vyge
 
 4. Vyberte **Generovat/aktualizovat**.
 
-![Integrace Dataverse](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Integrace Dataverse](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Zkontrolujte stav generování tabulky
 

@@ -2,7 +2,8 @@
 title: Nastavení webu elektronického obchodování B2B
 description: Toto téma popisuje, jak nastavit web elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799750"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937499"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Vytvoření webu elektronického obchodu B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Weby elektronického obchodování typu business-to-business (B2B) poskytují některé klíčové funkce, které optimalizují pracovní postup pro uživatele B2B. Toto téma popisuje, jak nastavit web elektronického obchodování typu B2B v Microsoft Dynamics 365 Commerce. Prochází moduly a nastavením webů, které je nutné nakonfigurovat, aby se umožnily scénáře specifické pro B2B.
 
@@ -283,9 +285,35 @@ Chcete-li vytvořit stránku s podrobnostmi o fakturách v nástroji pro tvorbu 
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Publikujte adresu URL stránky.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Přidání modulu rychlého přidání na stránku košíku
+
+Modul rychlého přidání poskytuje způsob, jak rychle přidat více položek do košíku pomocí ID položek (známé také jako ID skladových jednotek \[SKU\]). Modul rychlého přidání je přidán na stránku košíku webu.
+
+Chcete-li přidat modul rychlého přidání na stránku košíku v konfigurátoru webů Commerce, postupujte následujícím způsobem.
+
+1. Přejděte k možnosti **Šablony** a vyberte šablonu stránky košíku na vašem webu.
+1. Vyberte možnost **Upravit**.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Přidat rychlý odkaz** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Přejděte k možnosti **Stránky** a vyberte šablonu stránky košíku na vašem webu.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu **Kontejner** nastavte vlastnost **Šířka** na hodnotu **Vyplnit kontejner**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Přidat rychlý odkaz** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+
+> [!NOTE] 
+> Modul rychlého přidání je k dispozici od verze Commerce 10.0.17. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled knihovny modulů](../starter-kit-overview.md)
+
+[SDK a aktualizace knihovny modulů](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Přehled stránky pro tvorbu](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Chcete-li vytvořit stránku s podrobnostmi o fakturách v nástroji pro tvorbu 
 
 [Modul bloku obsahu](../add-hero-module.md)
 
-[Kolekce produktů](../product-collection-module-overview.md)
+[Modul kolekce produktů](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Nastavení maloobchodního kanálu
 description: Toto téma popisuje, jak vytvořit nový maloobchodní kanál v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800584"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937527"
 ---
 # <a name="set-up-a-retail-channel"></a>Nastavení maloobchodního kanálu
 
@@ -34,7 +34,7 @@ Před vytvořením maloobchodního kanálu se ujistěte, že splňujete [předpo
 ## <a name="create-and-configure-a-new-retail-channel"></a>Vytvořit a konfigurovat nový maloobchodní kanál
 
 1. V navigačním podokně přejděte na **Moduly \> Kanály \> Obchody \> Všechny obchody**.
-1. V podokně akcí zvolte **Nový**.
+1. V podokně akcí zvolte **Nový**.
 1. Do pole **Název** zadejte název nového kanálu.
 1. V poli **Číslo obchodu** zadejte jedinečné číslo obchodu. Číslo může být alfanumerické s maximálně 10 znaky.
 1. V rozevíracím seznamu **Právnícká osoba** zadejte příslušnou právnickou osobu.
@@ -46,7 +46,7 @@ Před vytvořením maloobchodního kanálu se ujistěte, že splňujete [předpo
 1. Do pole **Výchozí odběratel** zadejte platného výchozího odběratele.
 1. V poli **Funkční profil** vyberte funkční profil, pokud je k dispozici.
 1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 V následujícím obrázku je znázorněno vytvoření nového maloobchodního kanálu.
 
@@ -68,7 +68,7 @@ Následující obrázek znázorňuje příklad konfigurace nastavení maloobchod
 
 ## <a name="additional-channel-set-up"></a>Nastavení dodatečného kanálu
 
-Existují další položky, které je třeba nastavit pro kanál, který lze najít v **Podokně akcí** v sekci **Nastavení**.
+Existují další položky, které je třeba nastavit pro kanál, který lze najít v podokně Akce v sekci **Nastavení**.
 
 Další úkoly požadované pro nastavení online kanálu zahrnují nastavení způsobů plateb, výkazu hotovosti, způsobů dodání, účtu příjmů/výdajů a přiřazení skupiny plnění a trezorů.
 
@@ -78,7 +78,7 @@ Následující obrázek ukazuje další možnosti nastavení maloobchodních kan
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
-Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
+Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
 1. V podokně akcí zvolte **Nový**.
@@ -102,7 +102,7 @@ Na následujícím obrázku je znázorněn příklad výkazu hotovosti.
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
-Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
+Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v Podokně akcí.  
 
 Chcete-li změnit nebo přidat způsob dodání, postupujte podle následujících kroků.
 
@@ -119,13 +119,13 @@ Na následujícím obrázku je znázorněn příklad způsobu dodání.
 Chcete-li nastavit účet příjmů/výdajů, postupujte následujícím způsobem.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Účet příjmů/výdajů**.
-1. V podokně akcí zvolte **Nový**.
+1. V podokně akcí zvolte **Nový**.
 1. V položce **Název** zadejte název.
 1. V položce **Vyhledat název** zadejte název pro vyhledání.
 1. V položce **Typ účtu** zadejte typ účtu.
 1. V případě potřeby zadejte text pro **Řádek zprávy 1**, **Řádek zprávy 2**, **Text stvrzenky 1** a **Text stvrzenky 2**.
 1. V položce **Zaúčtování** zadejte informace o zaúčtování.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 Následující obrázek znázorňuje příklad účtu příjmů/výdajů.
 
@@ -136,12 +136,12 @@ Následující obrázek znázorňuje příklad účtu příjmů/výdajů.
 Chcete-li nastavit sekce, postupujte následujícím způsobem.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté klikněte na možnost **Sekce**.
-1. V podokně akcí zvolte **Nový**.
+1. V podokně akcí zvolte **Nový**.
 1. V položce **Číslo sekce** zadejte číslo sekce.
 1. V položce **Popis** zadejte popis.
 1. V položce **Velikost sekce** zadejte velikost sekce.
 1. Konfigurujte další nastavení pro **Obecné** a **Prodejní statistiky** podle potřeby.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Nastavení přiřazení skupiny plnění
 
@@ -150,8 +150,8 @@ Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujíc�
 1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Přiřazení skupiny plnění**.
 1. V podokně akcí zvolte **Nový**.
 1. V rozevíracím seznamu **Skupina plnění** vyberte skupinu plnění.
-1. V rozevíracím sezamu **Popis** zadejte popis.
-1. V podokně akcí vyberte **Uložit**
+1. V rozevíracím sezamu **Popis** zadejte popis.
+1. V podokně akcí vyberte **Uložit**
 
 Následující obrázek znázorňuje příklad nastavení přiřazení skupiny plnění.
 
@@ -162,11 +162,42 @@ Následující obrázek znázorňuje příklad nastavení přiřazení skupiny p
 Chcete-li nastavit trezory, postupujte následujícím způsobem.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté klikněte na možnost **Trezory**.
-1. V podokně akcí zvolte **Nový**.
+1. V podokně akcí zvolte **Nový**.
 1. Zadejte název trezoru.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
-## <a name="additional-resources"></a>Další zdroje
+### <a name="ensure-unique-transaction-ids"></a>Zajištění jedinečných ID transakce
+
+Počínaje verzí Commerce 10.0.18 jsou ID transakcí generovaná pro prodejní místo (POS) sekvenčně a zahrnují následující části:
+
+- Pevná část, což je zřetězení ID obchodu a ID terminálu. 
+- Sekvenční část, což je číselná řada. 
+
+Konkrétně jde o formát *{store}-{terminal}-{numbersequence}*. 
+
+Protože ID transakcí lze generovat v offline a online režimu, došlo k generování duplicitních ID transakcí. Eliminace duplicitních ID transakcí vyžaduje mnoho manuálního opravování dat. 
+
+S verzí Commerce 10.0.19 byl aktualizován formát ID transakce, aby se odstranila sekvenční část, a místo toho se používá 13místné číslo generované výpočtem času v milisekundách od roku 1970. S touto změnou je nový formát ID transakce *{store}-{terminal}-{millisecondsSince1970}*. Tato aktualizace dělá ID transakce nesekvenční a zajišťuje, že ID transakcí jsou vždy jedinečná. 
+
+> [!NOTE]
+> Transakční ID jsou určena pouze pro interní použití systému, takže se nevyžaduje, aby byla sekvenční. Mnoho zemí však vyžaduje, aby identifikační čísla účtenek byla sekvenční.
+
+Novou funkci formátu ID transakce lze povolit z pracovního prostoru **Správa funkcí**. 
+
+Chcete-li povolit použití nových ID transakcí, postupujte takto:
+
+1. V centru Commerce přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
+1. Filtrujte modul „retail a commerce“.
+1. Vyhledejte název funkce **Aktivovat nové ID transakce, aby se zabránilo duplicitním ID transakcí**.
+1. Vyberte funkci a poté v pravém podokně vyberte možnost **Povolit nyní**.  
+1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
+1. Spusťte úlohy **Konfigurace kanálu 1070** a **Záznamník úloh 1170 POS** k synchronizaci povolené funkce s obchody.
+1. Po odeslání změn do obchodů musí být POS terminály uzavřeny a znovu otevřeny, aby bylo možné použít nový formát ID transakce. 
+
+> [!NOTE]
+> Jakmile bude povolena nová funkce formátu ID transakce, nebudete ji moci deaktivovat. Pokud je třeba ji deaktivovat, kontaktujte podporu Commerce.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled kanálů](channels-overview.md)
 

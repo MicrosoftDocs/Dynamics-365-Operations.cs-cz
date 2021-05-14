@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c69dc3f8e70c3b0a760f54d2251757ac997a432
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4bb73854f52525c0722683086d1b4f1dd7173306
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841616"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920650"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu
 
@@ -28,33 +28,33 @@ Toto téma vysvětluje, jak nastavit názvosloví čísel produktu pro předdefi
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Vytvoření názvosloví čísla produktu
-1. Zvolte **Definice modelu varianty produktu**.
-2. Zvolte **Názvosloví produktu**.
-3. Zvolte **Nové**.
-4. V poli **Název** zadejte název názvosloví, který pomáhá identifikovat cílovou skupinu dimenzí produktu, například `ColorSize`.
-5. Zadejte hodnotu do pole **Popis**.
-6. Vyberte **přidat**.
-7. Zvolte **Číslo základního produktu**.
-8. Vyberte **přidat**.
-9. Zvolte **Textová konstanta**.
-10. Zadejte hodnotu do pole **Text**.
-11. Vyberte **přidat**.
-12. Vyberte **Barva**.
-13. Vyberte **přidat**.
-14. Zvolte **Textová konstanta**.
-15. Zadejte hodnotu do pole **Text**.
-16. Vyberte **přidat**.
-17. Vyberte **Velikost**.
-18. Zavřete stránku.
+
+1. Přejděte do nabídky **Řízení informací o produktech \> Nastavení \> Nomenklatura produktu**.
+1. Zvolte **Nové**.
+1. V poli **Název** zadejte název názvosloví, který pomáhá identifikovat cílovou skupinu dimenzí produktu, například `ColorSize`.
+1. Zadejte hodnotu do pole **Popis**.
+1. Vyberte **přidat**.
+1. Zvolte **Číslo základního produktu**.
+1. Vyberte **přidat**.
+1. Zvolte **Textová konstanta**.
+1. Zadejte hodnotu do pole **Text**.
+1. Vyberte **přidat**.
+1. Vyberte **Barva**.
+1. Vyberte **přidat**.
+1. Zvolte **Textová konstanta**.
+1. Zadejte hodnotu do pole **Text**.
+1. Vyberte **přidat**.
+1. Vyberte **Velikost**.
+1. Zavřete stránku.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Přiřazení názvosloví základnímu produktu
+
 1. Vyberte **Skupiny dimenzí produktů**.
 2. Vyberte **skupinu dimenzí produktu SizeCol**.
 3. Vyberte možnost **Upravit**.
 4. Vyberte možnost **Ano** v poli **Použít názvosloví**.
 5. V poli **Názvosloví čísla varianty produktu** zadejte nebo vyberte hodnotu.
 6. Zavřete stránku.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

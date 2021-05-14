@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
+ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820411"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5961698"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
@@ -67,7 +67,7 @@ Poté, co je systém připraven, jak je popsáno v předchozí části, byste m�
 1. Tento postup opakujte pro každý relevantní produkt.
 
 > [!NOTE]
-> Měna na řádku obchodní smlouvy se musí shodovat s měnou vybraného dodavatele. Hlavní plánování bude zahrnovat pouze informace z řádků obchodních smluv, kde se měna shoduje s měnou u dodavatele.
+> Podpora optimalizace plánování pro nákupní obchodní smlouvy ve více měnách. Při hledání obchodní dohody pomocí možnosti **Nejnižší jednotková cena** zváží systém řádky nákup obchodních dohod s různými měnami za předpokladu, že byl definován směnný kurz mezi měnou linií obchodních dohod a účetní měnou právnické osoby. Jinak bude řádek obchodní dohody ignorován a během hlavního plánování uvidíte chybu. Proto hlavní plánování bude zahrnovat informace ze všech příslušných řádků dohod o nákupu a nákupu, kde lze ceny převést na účetní měnu.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Příklady toho, jak Optimalizace plánování vyhledává dodavatele a doby realizace
 

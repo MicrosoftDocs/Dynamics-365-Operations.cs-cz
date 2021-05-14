@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3087ab8853b14308da9496eead7478822cec86b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750733"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941189"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -124,7 +124,7 @@ Dimenze produktu jsou vlastnosti, které identifikují variantu produktu. K defi
 
 Pokud má produkt jiné dimenze produktu (například velikost a barvu základního produktu jako dimenze produktu), je každý jedinečný produkt (tj. každá varianta produktu) definován jako kombinace těchto dimenzí produktů. Například číslo produktu B0001 je velmi malé černé triko a číslo produktu B0002 je malé černé triko. V tomto případě jsou definovány existující kombinace dimenzí produktů. Například tričko z předchozího příkladu může být velmi malé a černé, malé a černé, střední a černé nebo velké a černé, ale nemůže být navíc velmi velké a černé. Jinými slovy se specifikují dimenze produktu, které může základní produkt, a varianty mohou být uvolněny na základě těchto hodnot.
 
-Chcete-li sledovat dimenze produktu, které může mít základní produkt, budou vytvořeny a mapovány následující tabulky v Dataverse pro každou dimenzi produktu. Další informace viz [Přehled informací o produktech](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+Chcete-li sledovat dimenze produktu, které může mít základní produkt, budou vytvořeny a mapovány následující tabulky v Dataverse pro každou dimenzi produktu. Další informace najdete ve člunku [Přehled informací o produktu](../../../supply-chain/pim/product-information.md).
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -138,7 +138,7 @@ Chcete-li sledovat dimenze produktu, které může mít základní produkt, budo
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Výchozí nastavení objednávky a výchozí nastavení objednávky specifické pro produkt
 
-Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Tyto informace budou k dispozici v Dataverse pomocí výchozího nastavení objednávky a výchozí entity nastavení objednávky specifické pro produkt. Další informace o funkci naleznete v tématu [Výchozí nastavení objednávky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Tyto informace budou k dispozici v Dataverse pomocí výchozího nastavení objednávky a výchozí entity nastavení objednávky specifické pro produkt. Další informace o funkci naleznete v tématu [Výchozí nastavení objednávky](../../../../supply-chain/production-control/default-order-settings.md).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 

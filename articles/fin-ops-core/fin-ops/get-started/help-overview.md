@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897809"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923439"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -39,7 +39,7 @@ Ve všech těchto aplikacích získáte přístup k nápovědě pro konkrétní 
 
 ## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
 
-Web docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) je výchozím zdrojem pro produktovou dokumentaci výše uvedených aplikací. Tento web nabízí následující možnosti:
+Web docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) je výchozím zdrojem pro produktovou dokumentaci výše uvedených aplikací. Tento web nabízí následující možnosti:
 
 - **Přístup k nejaktuálnějšímu obsahu** – web poskytuje společnosti Microsoft rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Proto budete mít snadný přístup k aktuálním technickým informacím.
 - **Obsah, který napsali odborníci** - obsah na webu je otevřený příspěvkům členů komunity uvnitř i vně společnosti Microsoft.
@@ -50,7 +50,7 @@ Obsah na docs.microsoft.com najdete pomocí libovolného vyhledávače. Pro dosa
 
 Chcete-li se přihlásit k odběru kanálu RSS (Really Simple Syndication) všech aktualizací obsahu na docs.microsoft.com, použijte následující odkaz:
 
-[Kanál RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[Kanál RSS](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### <a name="leave-us-feedback"></a>Zanechte nám svůj názor
 
@@ -73,7 +73,7 @@ Do dokumentace můžete přispívat a provádět v ní úpravy. Chcete-li začí
 
 Video o tom, [Jak přispět k dokumentaci Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (viz výše), je obsaženo v kanálu Microsoft Dynamics 365 na YouTube.
 
-Více informací najdete v části [Příručka pro přispěvatele k dokumentaci](https://docs.microsoft.com/contribute), kterou publikuje tým, který vytvořil web docs.microsoft.com.
+Více informací najdete v části [Příručka pro přispěvatele k dokumentaci](/contribute), kterou publikuje tým, který vytvořil web docs.microsoft.com.
 
 > [!NOTE]
 > V současnosti přijímáme pouze příspěvky do našeho anglického obsahu.
@@ -155,12 +155,13 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 | Lokalita | popis |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Tento web hostuje nebo odkazuje na veškerou produktovou dokumentaci k Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | Tento web je bezplatný web výuky Microsoft eLearning. |
+| [Microsoft Learn](/learn/) | Tento web je bezplatný web výuky Microsoft eLearning. |
 | [Microsoft DynamicsSlužby  Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Tento web poskytuje cloudový pracovní prostor spolupráce, který mohou použít odběratelé a jejich partneři ke správě projektů z předprodeje k implementaci a operacím. Je užitečný ve všech fázích implementace. |
 | [Blog podpory](https://aka.ms/AXSupportBlog) | Tento web poskytuje tipy a triky publikované týmem podpory. |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Tento web hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/) | Tento web hostuje blogy, fóra a videa. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Tento web obsahuje hodnocení a informace o prodeji. |
+
 
 
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799634"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936875"
 ---
 # <a name="call-center-catalogs"></a>Katalogy kontaktního střediska
 
@@ -39,7 +39,7 @@ Marketingový společnosti zaměřené na odběratele jsou velmi zaměřené na 
 
 Katalog nakonfigurujte použitím položek **Retail and Commerce** \> **Katalogy a sortiment** \> **Všechny katalogy**.
 
-Když vytvoříte nový katalog, je nutné nejprve propojit katalog s jedním nebo více kanály. K tomu se používá pevná záložka **Kanály Commerce** ve formuláři **Nastavení katalogu**. Klikněte na tlačítko **přidat** a vyberte jeden nebo více kanálů. Při vytváření katalogu lze použít pouze položky připojené k vybranému kanálu [sortiment](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments).
+Když vytvoříte nový katalog, je nutné nejprve propojit katalog s jedním nebo více kanály. K tomu se používá pevná záložka **Kanály Commerce** ve formuláři **Nastavení katalogu**. Klikněte na tlačítko **přidat** a vyberte jeden nebo více kanálů. Při vytváření katalogu lze použít pouze položky připojené k vybranému kanálu [sortiment](/dynamics365/unified-operations/retail/assortments).
 
 Pokud chcete přidat produkty do katalogu, musí být vybrána hierarchie navigace. Hierarchie navigace podporuje strukturu kategorie pro katalog. Je třeba vybrat jednu z hierarchie navigace spojenou s maloobchodními kanály vybranými na pevné záložce **Kanály Commerce** stránky **Katalog**. Pokud navigační kanál nebyl spojen s kanálem dříve, přejděte na **Retail and Commerce** \> **Nastavení kanálu** \> **Kategorie a atributy produktů kanálu** pro účely propojení výchozí hodnoty hierarchie navigace s každým z maloobchodních kanálů.
 

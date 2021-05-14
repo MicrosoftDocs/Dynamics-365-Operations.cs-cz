@@ -1,8 +1,8 @@
 ---
 title: Vytvoření a správa blokování zásob
-description: Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace jinými odchozími zdrojovými dokumenty pomocí blokování zásob.
+description: Toto téma popisuje, jak použít blokování zásob k zabránění u fyzických zásob na skladě rezervaci jinými odchozími zdrojovými dokumenty.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833994"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956151"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Vytvoření a správa blokování zásob
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace jinými odchozími zdrojovými dokumenty pomocí blokování zásob. Postup můžete spustit s ukázkovými daty společnosti USMF s ukázkovými hodnotami, které jsou zobrazeny. Před zahájením tohoto postupu je třeba mít k dispozici položku s dostupnými fyzickými zásobami na skladě.
+Toto téma popisuje, jak použít blokování zásob k zabránění u fyzických zásob na skladě rezervaci jinými odchozími zdrojovými dokumenty. Před zahájením tohoto postupu je třeba mít k dispozici položku s dostupnými fyzickými zásobami na skladě.
 
+## <a name="block-inventory"></a>Blokovat zásoby
 
-## <a name="create-an-inventory-blocking"></a>Vytvoření blokování zásob
-1. V **podokně navigace** přejděte na **Moduly > Řízení zásob > Periodické úlohy > Blokování zásob**.
-2. Klepněte na možnost **Nový**.
-3. V poli **Číslo položky** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Ze seznamu vyberte položku, kterou chcete vybrat. Vyberte číslo položky v rámci fyzických zásob na skladě, kterou chcete blokovat. Pokud používáte USMF, můžete vybrat položku M9201.  
-5. Zadejte číslo do pole **Množství**. Používáte-li položku M9201, musíte vybrat číslo menší než 200.
-6. Rozbalte záložku s náhledem **Dimenze zásob**.
-7. V poli **Sklad** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Pokud používáte položku M9201, můžete vybrat sklad 51.  
-9. Klikněte na možnost **Uložit**.
+Chcete-li vytvořit záznam blokování zásob tak, aby byly blokované zásoby, postupujte takto.
+
+1. Přejděte do možnosti **Řízení zásob \> Periodické úkoly \> Blokování zásob**.
+1. V podokně akcí zvolte **Nový**.
+1. V záhlaví nového blokujícího záznamu nastavte pole **Číslo položky** na položku, kterou chcete blokovat, a zadejte popis.
+1. Na pevné záložce **Obecné** v poli **Množství** zadejte počet položek, které mají být zablokovány.
+1. Na rychlé záložce **Dimenze zásob** určete místo a sklad, kde se aktuálně nacházejí položky, které chcete blokovat.
+1. V podokně akcí vyberte **Uložit**.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Aktualizace podmínek pro blokování zásob
-1. Na záložce s náhledem **Obecné** zadejte do pole **Množství** hodnotu. Aktualizujte pole s množstvím zásob podle blokovaného množství.  
-2. V poli **Očekávané datum** zadejte datum. Můžete určit, zda se u blokovaných zásob očekává uvolnění pro rezervaci přiřazením předpokládaného data. Pokud vyberete možnost Očekávané příjmy pro blokování zásob, zobrazí se toto datum na očekávané transakci, protože se jedná o výchozí údaj při ručním vytváření blokování.  
-3. Klikněte na možnost **Uložit**.
 
-## <a name="remove-the-inventory-blocking"></a>Odebrání blokování zásob
-1. V **podokně akcí** klikněte na **Odstranit**.
-2. Klepněte na tlačítko **Ano**.
-3. Zavřete stránku.
+Chcete-li aktualizovat záznam blokování inventáře, postupujte takto.
 
+1. Přejděte do možnosti **Řízení zásob \> Periodické úkoly \> Blokování zásob**.
+1. V podokně seznamu vyberte příslušný záznam blokování.
+1. Podle potřeby záznam upravte. Například můžete chtít změnit hodnotu **Očekávané datum** k určení, že se blokovaných zásob očekává uvolnění pro rezervaci. Pokud je vybrána **Očekávané příjmy**, datum se zobrazí u očekávané transakce. (Možnost **Očekávané příjmy** je při ručním vytvoření blokujícího záznamu vybrána ve výchozím nastavení.)
+1. V podokně akcí vyberte **Uložit**.
 
+## <a name="unblock-inventory"></a>Odblokování zásob
+
+Chcete-li odstranit záznam blokování zásob tak, aby byly zásoby odblokovány, postupujte takto.
+
+1. Přejděte do možnosti **Řízení zásob \> Periodické úkoly \> Blokování zásob**.
+1. V podokně seznamu vyberte příslušný záznam blokování.
+1. V podokně Akce zvolte **Odstranit**.
+1. Budete vyzvání k potvrzení operace. Pokračujte výběrem tlačítka **Ano**.
+1. Zavřete stránku.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

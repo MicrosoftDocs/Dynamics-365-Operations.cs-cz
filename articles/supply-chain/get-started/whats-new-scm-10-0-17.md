@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907956"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935598"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 
@@ -35,7 +35,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 Tato verze obsahuje následující funkce.  Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí mohou být stále ve verzi Preview, ačkoli většina již je obecně dostupná.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 ### <a name="asset-management"></a>Správa majetku
 
@@ -71,13 +71,13 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 - [Funkce správy majetku v rozhraní pro spuštění výrobního provozu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
 
-- Sjednocená číselná řady pro ID úloh<br> - Další informace viz 
+- [Provádění výroby s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Další informace naleznete v části [Pracovní zatížení provádění výroby a jednotky okrajového škálování](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Přepsání výchozího principu rezervace pro materiály ve výrobě](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Další informace získáte v části [Přepis výchozího principu rezervace pro materiály ve výrobě](../production-control/override-default-reservation-principle.md).
 
 - [Uložená zobrazení pro řízení výroby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
 
-- [Provádění výroby s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Další informace naleznete v části [Pracovní zatížení provádění výroby a jednotky okrajového škálování](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Sjednocená číselná řady pro ID úloh<br> - Další informace viz [Sjednocená číselná řada pro ID úloh](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Plánování
 

@@ -2,7 +2,8 @@
 title: Modul galerie médií
 description: Tohle téma se zabývá moduly galerie médií a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802808"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937379"
 ---
 # <a name="media-gallery-module"></a>Modul galerie médií
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly galerie médií a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -49,11 +51,13 @@ V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky p
 |---------------|--------|-------------|
 | Zdroj obrázku | **Kontext stránky** nebo **ID produktu** | Výchozí hodnota je **Kontext stránky**. Pokud je vybrán **Kontext stránky**, modul očekává, že stránka poskytne informace o ID produktu. Je-li vybráno **ID produktu**, musí být jako hodnota názvu produktu uvedeno ID produktu vlastnosti **ID produktu**. Tato funkce je dostupná v Commerce verze 10.0.12. |
 | ID produktu | ID produktu | Tato vlastnost je použitelná, pouze pokud je hodnota vlastnosti **Zdroj obrázku** **ID produktu**. |
-| Zvětšení obrázku | **Vložený** nebo **Kontejner** | Tato vlastnost umožňuje uživateli přibližovat obrázky v modulu galerie médií. Obrázek lze přiblížit buď jako vložený, nebo v samostatném kontejneru vedle obrázku. Tato schopnost je dostupná ve verzi 10.0.12 |
-| Měřítko zoomu | Desetinné číslo | Tato vlastnost určuje faktor měřítka pro zvětšení obrázků. Například pokud je hodnota nastavena na **2,5**, jsou obrázky 2,5krát zvětšeny.|
-| Celá obrazovka | **Pravda** nebo **nepravda** | Tato vlastnost určuje, zda lze obrázky prohlížet v režimu celé obrazovky. V režimu celé obrazovky lze obrázky dále zvětšovat, pokud je zapnuta funkce zoomu. Tato funkce je dostupná v Commerce verze 10.0.13. |
+| Zvětšení obrázku | **Vložený** nebo **Kontejner** | Tato vlastnost umožňuje uživateli přibližovat obrázky v modulu galerie médií. Obrázek lze přiblížit buď jako vložený, nebo v samostatném kontejneru vedle obrázku. Tato schopnost je dostupná ve verzi 10.0.12. |
+| Faktor zvětšení | Desetinné číslo | Tato vlastnost určuje faktor měřítka pro zvětšení obrázků. Například pokud je hodnota nastavena na **2,5**, jsou obrázky 2,5krát zvětšeny. |
+| Celá obrazovka | **Pravda** nebo **nepravda** | Tato vlastnost určuje, zda lze obrázky prohlížet v režimu celé obrazovky. V režimu celé obrazovky lze obrázky dále zvětšovat, pokud je zapnuta funkce zoomu. Tato schopnost je k dispozici v aplikaci Commerce verze 10.0.13. |
+| Kvalita zvětšeného obrázku | Číslo od 1 do 100, které představuje procento a které je vybráno pomocí ovládacího prvku trackbar | Tato vlastnost definuje kvalitu obrazu pro zvětšené obrázky. Lze ji nastavit na 100 procent, aby bylo zajištěno, že zvětšený obrázek vždy používá nejvyšší možné rozlišení. Tato vlastnost není použitelná pro soubory PNG, protože používají bezztrátový formát. Tato schopnost je k dispozici v aplikaci Commerce verze 10.0.19. |
 | Obrázky | Obrázky, které jsou vybrány z knihovny médií Tvůrce stránek | Kromě vykreslení z produktu lze obrázky upravovat také pro modul galerie médií. Tyto obrázky budou připojeny ke všem dostupným obrázkům produktu. Tato funkce je dostupná v Commerce verze 10.0.12. |
 | Orientace miniatury | **Vertikální** nebo **Horizontální** | Tato vlastnost určuje, zda se mají miniatury zobrazovat ve svislém nebo vodorovném pruhu. |
+| Skrýt obrázky hlavních produktů pro variantu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, je-li vybrána varianta, jsou obrázky hlavního produktu skryty, pokud varianta neobsahuje žádné obrázky. Tato vlastnost nemá vliv na produkty, které nemají žádné varianty. |
 
 Následující obrázek ukazuje příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.
 

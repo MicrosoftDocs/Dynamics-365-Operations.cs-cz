@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745256"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921416"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -37,7 +37,7 @@ Toto téma popisuje funkce, které byly odebrány nebo zastaraly z Dynamics 365
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 s aktualizací Platform update 31
 
@@ -147,7 +147,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Zarovnání záhlaví s jinými produkty Dynamics a Office. Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Důvod pro zrušení/odstranění** | Zarovnání záhlaví s jinými produkty Dynamics a Office. Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform Update 24 byl zaveden navigační panel s novým stylem a vyhledáváním. |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
@@ -161,7 +161,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Starší chování výchozích akcí v mřížkách vede k nečekanému sloupci s výchozím odkazem na akci po změně pořadí sloupců mřížky přes přizpůsobení. Tuto akci napravuje nová výchozí akce jedním prstem. Další informace naleznete v tématu [Výchozí akce jedním prstem v mřížce](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Důvod pro zrušení/odstranění** | Starší chování výchozích akcí v mřížkách vede k nečekanému sloupci s výchozím odkazem na akci po změně pořadí sloupců mřížky přes přizpůsobení. Tuto akci napravuje nová výchozí akce jedním prstem. Další informace naleznete v tématu [Výchozí akce jedním prstem v mřížce](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Nahrazeno jinou funkcí?**   | Od aktualizace Platformy 21 byla zavedena funkce výchozích akcí jedním prstem. Tuto funkci lze povolit na stránce **Možnosti výkonu klienta**. |
 | **Ovlivněné oblasti produktu**         | Mřížky ve webovém klientovi |
 | **Možnost nasazení**              | Vše |
@@ -172,7 +172,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Možnost "je jedna" filtrování prošla v aktualizaci Platform 22 změnou, přičemž plán je pravděpodobně možnost filtrování "je jedním z". |
-| **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform update 22 je vylepšená možnost filtrování "je jedním z" k dispozici na stránce **Možnosti výkonu klienta**. Více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform update 22 je vylepšená možnost filtrování "je jedním z" k dispozici na stránce **Možnosti výkonu klienta**. Více informací viz [Optimalizovaná možnost filtrování „je jeden z“](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Od dubna 2020 bude možnost "je jedním z" výchozím chováním bez mechanismu výchozího chování. |
@@ -1333,7 +1333,7 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 
 ### <a name="virtual-company-accounts"></a>Virtuální účty společnosti
 
-Funkce virtuálních společností není aplikací Dynamics AX již podporována. Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností. Popis funkce naleznete zde: [Účty společnosti a virtuální účty společnosti](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností. Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.
+Funkce virtuálních společností není aplikací Dynamics AX již podporována. Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností. Popis funkce naleznete zde: [Účty společnosti a virtuální účty společnosti](../../fin-ops/get-started/ax4-content-retired.md). Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností. Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

@@ -2,7 +2,7 @@
 title: Modul dárkového poukazu
 description: Tohle téma se zabývá moduly dárkového poukazu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a4e4e06ab7032d68fcd36a8e80bc714ebaaac821
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
+ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797664"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5962756"
 ---
 # <a name="gift-card-module"></a>Modul dárkového poukazu
 
@@ -63,6 +63,26 @@ V konfigurátoru webů Commerce v **Nastavení webu \> Rozšíření** existuje 
 
 > [!IMPORTANT]
 > Tato nastavení jsou k dispozici ve vydání Dynamics 365 Commerce 10.0.11 a jsou vyžadována, pouze pokud potřebujete podporu pro dárkové karty SVS nebo Givex. Pokud provádíte aktualizaci ze starší verze Dynamics 365 Commerce, musíte ručně aktualizovat soubor appsettings.json. Pokyny k aktualizaci souboru appsettings.json najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+
+## <a name="extend-internal-gift-cards-for-use-in-e-commerce-storefronts"></a>Rozšíření interních dárkových karet pro použití v elektronických obchodech
+
+Ve výchozím nastavení nejsou interní dárkové karty optimalizovány pro použití v elektronických obchodech. Než tedy povolíte použití interních dárkových karet k platbám, měli byste je nakonfigurovat pomocí rozšíření, která jim pomohou zajistit větší bezpečnost. Tady jsou oblasti dárkových karet, které byste měli rozšířit, než povolíte použití interních dárkových karet ve výrobě:
+
+- **Číslo dárkové karty** – Číselné řady se používají ke generování čísel dárkových karet pro interní dárkové karty. Protože lze snadno předvídat číselné řady, měli byste rozšířit generování čísel dárkových karet tak, aby se pro vydaná čísla dárkových karet používaly náhodné kryptograficky zabezpečené řetězce.
+- **GetBalance** – API **GetBalance** se používá k vyhledávání zůstatků dárkových karet. Ve výchozím nastavení je toto rozhraní API veřejné. Pokud k vyhledání zůstatků dárkových karet není vyžadován PIN, existuje riziko, že by útoky hrubou silou mohly použít API **GetBalance** k pokusu vyhledat čísla dárkových karet, které mají zůstatky. Implementací požadavků na PIN pro interní dárkové karty a omezení API můžete pomoci zmírnit riziko.
+- **PIN** – Ve výchozím nastavení interní dárkové karty nepodporují kódy PIN. Interní dárkové karty byste měli rozšířit tak, aby byl k vyhledání zůstatků vyžadován PIN. Tuto funkci lze také použít k uzamčení dárkových karet po po sobě jdoucích nesprávných pokusech o zadání kódu PIN.
+
+## <a name="enable-gift-card-payments-for-guest-checkout"></a>U pokladny pro hosty povolte platby dárkovou kartou
+
+Ve výchozím nastavení nejsou platby pokladní kartou povoleny pro (anonymní) pokladnu hosta. Pokud je chcete povolit, postupujte následovně.
+
+1. V centru Commerce přejděte na možnost **Retail a Commerce \> Nastavení kanáu \> Nastavení POS \> POS \> Operace POS**.
+1. Vyberte a podržte (nebo klikněte pravým tlačítkem) záhlaví mřížky a poté vyberte **Vložit sloupce**.
+1. V dialogovém okně **Vložit sloupce** zaškrtněte políčko **AllowAnonymousAccess**.
+1. Vyberte **Aktualizovat**.
+1. Pro operace **520** (Zůstatek dárkové karty) a **214**, nastavte hodnotu **AllowAnonymousAccess** na **1**.
+1. Zvolte **Uložit**.
+1. Spusťte úlohu plánovače **1090** k synchronizování změn do databáze kanálů. 
 
 ## <a name="add-a-gift-card-module-to-a-page"></a>Přidání modulu dárkového poukazu na stránku
 

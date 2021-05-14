@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830021"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954638"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -139,13 +139,14 @@ Během kontroly žádosti o změnu v podokně akcí na kartě **Změnit požadav
 
 Jak je popsáno v tématu [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md), údaje o produktu, které můžete upravit, se liší v závislosti na typu právnické osoby, ve které pracujete (strojírenská společnost versus provozní společnost). Pravidla vlastnictví dat se také použijí na objednávky technických změn. Proto můžete v závislosti na právnické osobě, kde vytvoříte objednávku technické změny, provést různé typy změn. Několik příkladů:
 
-- Pro objednávky technických změn v **technické společnosti** můžete provést základní změny technických dat. Můžete například vytvořit nové verze produktu, změnit strukturu produktu pomocí kusovníku a změnit hodnoty technických atributů. U každého ovlivněného produktu vyberte jednu z následujících hodnot v poli **Dopad** :
+- Pro objednávky technických změn v *technické společnosti* můžete provést základní změny technických dat. Můžete například vytvořit nové verze produktu, změnit strukturu produktu pomocí kusovníku a změnit hodnoty technických atributů. U každého ovlivněného produktu vyberte jednu z následujících hodnot v poli **Dopad** :
 
     - **Žádný** - Aktualizujte stávající verzi produktu (aktualizace ve verzi).
     - **Nová verze** - Vytvořte novou verzi založenou na vybrané verzi produktu.
-    - **Nový produkt** - Vytvořte zcela nový produkt nebo variantu produktu, která je založena na vybrané verzi produktu.
+    - **Nový produkt** - Vytvořte zcela nový produkt, která je založena na vybrané verzi produktu.
+    - **Nová varianta** - Vytvořte novou variantu založenou na vybrané verzi produktu. Budou zkopírovány jeho kusovník a informace o trase.
 
-- Pro objednávky technických změn v **provozní společnost** můžete změnit logistická data produktu. Můžete například obohatit stávající kusovník nastavením pro získávání zdrojů, přidat místní trasy nebo místní kusovníky a dokonce obohatit kusovník přidáním nových řádků kusovníku pro místní obalový materiál, mazací kapaliny nebo pokyny v místním jazyce. Obohacení, která uživatelé provádějí v provozní společnosti, budou zachována, když budou zaslány nové aktualizace od technické společnosti. Další informace viz [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md).
+- Pro objednávky technických změn v *provozní společnost* můžete změnit logistická data produktu. Můžete například obohatit stávající kusovník nastavením pro získávání zdrojů, přidat místní trasy nebo místní kusovníky a dokonce obohatit kusovník přidáním nových řádků kusovníku pro místní obalový materiál, mazací kapaliny nebo pokyny v místním jazyce. Obohacení, která uživatelé provádějí v provozní společnosti, budou zachována, když budou zaslány nové aktualizace od technické společnosti. Další informace viz [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md).
 
     Když jsou objednávky technické změny zpracovávány v technické společnosti, produkty jsou vytvářeny a/nebo aktualizovány pouze v technické společnosti. Pokud by se tedy měla aktualizovat také kmenová data produktu, musíte produkty také vydat provozním společnostem.
 

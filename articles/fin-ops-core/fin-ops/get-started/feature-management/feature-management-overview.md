@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754793"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923300"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
@@ -140,7 +140,7 @@ Správa funkcí vám umožňuje ovládat funkce dodávané v jednotlivých verz
 
 ## <a name="new-features-are-optional-for-12-months"></a>Nové funkce jsou po dobu 12 měsíců volitelné
 
-Je-li instalována nová nekritická funkce, bude volitelná po dobu 12 měsíců. To vám a vaší organizaci umožňuje plánovat dopředu, kdy nějakou funkci zavést, a otestovat ji v každodenním provozu. Další informace naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+Je-li instalována nová nekritická funkce, bude volitelná po dobu 12 měsíců. To vám a vaší organizaci umožňuje plánovat dopředu, kdy nějakou funkci zavést, a otestovat ji v každodenním provozu. Další informace naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Použití správy funkcí k zapnutí funkcí ISV nebo vlastních funkcí
 
@@ -161,7 +161,7 @@ Zásadou je, že všechny nové funkce budou k dispozici po dobu 12 měsíců a
 Načasování vydání aktualizace je variabilní, načasování aktualizace prostředí je variabilní a zákazníci si mohou vybrat, že některé aktualizace přeskočí. V důsledku toho je obtížné určit konkrétní data. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Kde je dokumentace pro povinné funkce? 
-Tato dokumentace pochází od aplikačních týmů. Často budou zmiňovány v části [Odebrané nebo zastaralé funkce](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+Tato dokumentace pochází od aplikačních týmů. Často budou zmiňovány v části [Odebrané nebo zastaralé funkce](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Existuje oznámení v rámci produktu nebo signál, že funkce bude povinně povolena? 
 V současné době neexistuje mechanismus oznamování týkající se povinné funkce.

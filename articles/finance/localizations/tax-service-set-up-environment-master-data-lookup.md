@@ -2,7 +2,7 @@
 title: Nastavení prostředí pro vyhledávání hlavních dat
 description: Toto téma vysvětluje, jak nastavit prostředí tak, aby používalo funkci vyhledávání hlavních dat výpočtu daně.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869049"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924147"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Nastavení prostředí pro vyhledávání hlavních dat
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Toto téma vysvětluje, jak nastavit prostředí tak, aby používalo funkci vyhledávání hlavních dat výpočtu daně.
 
 1. Nastavte integraci power platform ve službě Lifecycle Services (LCS). Další informace naleznete v tématu [Integrace Microsoft Power Platform – Přehled doplňků](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Nastavte Dynamics 365 Finance a Microsoft Dataverse. Další informace viz [Získání řešení](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) a [Ověřování a autorizace](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Importujte *Nezbytné řešení virtuální entity pro daňovou službu* z [Virtuální entity daňové služby](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Nastavte následující entity. Další informace viz [Povolení datových entit](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Nastavte Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Vytvořte požadavek na službu pro Microsoft, abyste povolili spuštění následujících funkcí:
 
       - Funkce ERCds
       - TaxServiceCDSFeature
 
-6. Ve Finance přejděte do pracovního prostoru **Správa funkcí** a zapněte následující funkce:
+6. V pracovním prostoru **Správa funkcí** a zapněte následující funkce:
 
       - (Preview) Podpora datových zdrojů Dataverse elektronického vykazování
       - (Preview) Podpora datových zdrojů Dataverse daňové služby

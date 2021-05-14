@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7c1bd8d9cb494cef78fa7c14f6c391821d48749a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799846"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936649"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování
 
@@ -43,7 +43,7 @@ Chcete-li zapnout funkci B2B elektronického obchodování v centrále Commerce,
 
 ## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>Vytvořte číselnou sekvenci a přidejte ji do sdílených parametrů Commerce
 
-Číselné řady v aplikaci slouží ke generování čitelných, jedinečných identifikátorů pro hlavní datové záznamy a záznamy transakcí, které požadují identifikátory. Další informace o číselných řadách naleznete v tématu [Přehled číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Číselné řady v aplikaci slouží ke generování čitelných, jedinečných identifikátorů pro hlavní datové záznamy a záznamy transakcí, které požadují identifikátory. Další informace o číselných řadách naleznete v tématu [Přehled číselných řad](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 Chcete-li vytvořit číselnou sekvenci a přidat ji do sdílených parametrů Commerce v centrále Commerce, postupujte takto.
 
@@ -136,7 +136,7 @@ Chcete-li zapojit obchodní partnery a uživatele do centrály Commerce, postupu
 
 [Nastavte limity množství produktů pro weby B2B elektronického obchodování](quantity-limits.md)
 
-[Přehled číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[Přehled číselných řad](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

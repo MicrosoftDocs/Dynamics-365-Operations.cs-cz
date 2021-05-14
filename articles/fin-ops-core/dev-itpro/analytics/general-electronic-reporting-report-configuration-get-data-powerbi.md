@@ -2,7 +2,7 @@
 title: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 description: Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z vaší instance do služeb Power BI.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750075"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944430"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 
@@ -68,10 +68,10 @@ Pro dokončení příkladu v tomto tématu, musíte mít následující přístu
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Datový model ER můžete použít jako zdroj dat
 Musíte mít datový model ER jako zdroj obchodních dat, která se použijí v sestavách Power BI. Tento datový model se nahrává z úložiště konfigurací ER. Další informace naleznete v tématu [Stáhnout konfigurace elektronického vykazování ze služby Lifecycle Services](download-electronic-reporting-configuration-lcs.md) nebo si přehrajte tutorial **ER Import konfigurace ze služby Lifecycle Services**. Vyberte **Intrastat** jako datový model, který se bude nahrávat z vybraného úložiště konfigurací ER. (V tomto příkladu je použita verze 1 modelu.) Potom můžete přistupovat ke konfiguraci modelu **Intrastat** na stránce **Konfigurace**.
 
-[![Stránka konfigurace](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Konfigurace modelu Intrastat ER na stránce Konfigurace](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Navrhněte ER konfiguraci formátu
-Je nutné vytvořit novou konfiguraci formátu ER, který používá datový model **Intrastat** jako zdroj obchodních dat. Tato konfigurace formátu musí generovat výsledky v podobě elektronických dokumentů formátu OpenXML (soubor aplikace Excel). Pro další důležité informace si přehrajte tutorial **ER vytvoření konfigurace pro sestavy ve formátu OPENXML**. Pojmenujte nové konfigurace **Import / export aktivit**, jak je ukázáno na následujícím obrázku. Použijte soubor v aplikaci Excel [dat ER – podrobnosti importu a exportu](https://go.microsoft.com/fwlink/?linkid=845208) jako šablonu při navrhování ER formátu. (Pro informace o šabloně formátu importu si přehrajte tutorial.)
+Je nutné vytvořit novou konfiguraci formátu ER, který používá datový model **Intrastat** jako zdroj obchodních dat. Tato konfigurace formátu musí generovat výsledky v podobě elektronických dokumentů formátu OpenXML (soubor aplikace Excel). Pro další důležité informace si přehrajte tutorial **ER vytvoření konfigurace pro sestavy ve formátu OPENXML**. Pojmenujte nové konfigurace **Import / export aktivit**, jak je ukázáno na následujícím obrázku. Použijte soubor v aplikaci Excel [dat ER – podrobnosti importu a exportu](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) jako šablonu při navrhování ER formátu. (Pro informace o šabloně formátu importu si přehrajte tutorial.)
 
 [![Konfigurace aktivit import/export](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
 1. Na stránce **Konfigurace** (**Správa organizace** &gt; **Elektronické vykazování** &gt; **Konfigurace**) zaškrtněte ve stromu konfigurace **Aktivity importu / exportu** konfiguraci, kterou jste předtím vytvořili.
 2. Změňte stav verze 1.1 z **Koncept** na **dokončeno**, abyste tento formát zpřístupnili pro používání.
 
-    [![Stránka konfigurace](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Konfigurace aktivit importu/exportu na stránce Konfigurace](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Vyberte dokončenou verzi konfigurace **Aktivity importu / exportu** a poté klepněte na položku **spustit**. Všimněte si, že konfigurovaný cíl se aplikuje na výstupní výsledek vytvořený ve formátu aplikace Excel.
 4. Nastavte možnost **Dávkové zpracování** na **Ano**, čímž spustíte tuto sestavu v bezobslužném režimu.
@@ -187,9 +187,9 @@ Nastavení integrace s modulem Power BI. Další informace naleznete v části [
 2. Vyberte **Podrobnosti Importu a exportu sestavy** Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce.
 3. Kliknutím na položku akce otevřete stránku se sestavami, které jste navrhli v Power BI.
 
-    [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Sestava podrobností o Importu a exportu navržených v Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 

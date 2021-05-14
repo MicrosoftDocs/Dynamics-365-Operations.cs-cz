@@ -2,7 +2,7 @@
 title: Přehled správy obchodních dokumentů
 description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
-ms.date: 04/12/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c691e89a932e683c916eca72f726d9b4fab93181
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891298"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944382"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -67,22 +67,22 @@ V příkladu tohoto postupu jsou použity ukázkové konfigurace ER. Do aktuáln
 
 | Soubor                                      | Obsah |
 |-------------------------------------------|---------|
-| Customer invoicing model.version.2.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Customer FTI report (GER).version.2.3.xml | [Konfigurace formátu elektronického výkaznictví volné faktury](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Customer invoicing model.version.2.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://download.microsoft.com/download/b/f/a/bfa5cb52-e6e2-42bc-a4c0-77014a4c54e6/Customerinvoicingmodel.version.2.xml) |
+| Customer FTI report (GER).version.2.3.xml | [Konfigurace formátu elektronického výkaznictví volné faktury](https://download.microsoft.com/download/3/c/2/3c2e58f2-6e56-43d9-85ea-4c97252a108d/CustomerFTIreportGER.version.2.3.xml) |
 
 **Ukázka řešení platebních šeků elektronického výkaznictví**
 
 | Soubor                                     | Obsah |
 |------------------------------------------|---------|
-| Model for cheques.version.10.xml         | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Cheques printing format.version.10.9.xml | [Konfigurace formátu elektronického výkaznictví platebního šeku](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Model for cheques.version.10.xml         | [Konfigurace datového modelu elektronického výkaznictví](https://download.microsoft.com/download/3/7/6/376cb0f6-181a-4895-a432-390ffca64162/Modelforcheques.version.10.xml) |
+| Cheques printing format.version.10.9.xml | [Konfigurace formátu elektronického výkaznictví platebního šeku](https://download.microsoft.com/download/6/d/6/6d61bfff-3d89-4377-9e34-2e3ee6d6df91/Chequesprintingformat.version.10.9.xml) |
 
 **Ukázka řešení zahraničního obchodu elektronického výkaznictví**
 
 | Soubor                             | Obsah |
 |----------------------------------|---------|
-| Intrastat model.version.1.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat report.version.1.9.xml | [Konfigurace formátu elektronického výkaznictví sestavy řízení systému Intrastat](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat model.version.1.xml    | [Konfigurace datového modelu elektronického výkaznictví](https://download.microsoft.com/download/2/0/0/200d6ed1-eff8-48ec-ab75-175a4acf9714/Intrastatmodel.version.1.xml) |
+| Intrastat report.version.1.9.xml | [Konfigurace formátu elektronického výkaznictví sestavy řízení systému Intrastat](https://download.microsoft.com/download/7/a/2/7a2a27c3-a8a5-42a1-9d04-f0a8e1ec1707/Intrastatreport.version.1.9.xml) |
 
 K importu každého souboru použijte následující postup. Před importem odpovídající *konfigurace* elektronického výkaznictví importujte pro jednotlivá řešení elektronického výkaznictví konfiguraci *datového modelu* elektronického výkaznictví v tabulkách výše.
 

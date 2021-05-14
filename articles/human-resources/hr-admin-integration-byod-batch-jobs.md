@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890069"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951925"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimalizace naplánovaných dávkových úloh BYOD
 
@@ -89,6 +89,12 @@ Funkce BYOD má následující omezení:
 **Problém:** Když dojde k úplnému nabízení pro entitu, uvidíte velkou sadu záznamů v BYOD, když použijete příkaz **select**. Když však provedete přírůstkové nabízení, uvidíte v BYOD jen několik záznamů. Zdá se, jako by přírůstkové nabízení odstranilo všechny záznamy a přidalo pouze změněné záznamy v BYOD.
 
 **Řešení:** Tabulky sledování změn SQL nemusí být v očekávaném stavu. V případech tohoto typu doporučujeme vypnout sledování změn pro entitu a poté ji znovu zapnout. Další informace viz [Povolení sledování změn pro entity](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Pracovní tabulky se nevymazávají
+
+**Problém:** Při použití pracovní fáze pro projekt se pracovní tabulky nevymazávají správně. Data v tabulkách pak dále rostou, což způsobuje problémy s výkonem.
+
+**Řešení:** Sedm dní historie je udržováno v postupných tabulkách. Historická data starší než sedm dní automaticky vymazávají z pracovních tabulek dávkovými úlohami **Importovat vyčištění pracovní fáze exportu**. Pokud se tato úloha zasekne, tabulky se nevymažou správně. Restartování této dávkové úlohy bude pokračovat v procesu, který automaticky vymaže pracovní tabulky.
 
 ## <a name="see-also"></a>Viz také
 

@@ -2,7 +2,7 @@
 title: Vytvořte účet úložiště Azure a trezor klíčů
 description: Toto téma vysvětluje, jak vytvořit účet úložiště Azure a trezor klíčů.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893795"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963232"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Vytvořte účet úložiště Azure a trezor klíčů
 
@@ -80,6 +80,10 @@ V tomto tématu provedete dva hlavní kroky:
 11. Vyberte **Přidat** a potom vyberte **Uložit změny Trezoru klíčů**.
 12. Na stránce **Přehled** zkopírujte hodnotu **Název DNS** pro trezor klíčů. Tato hodnota bude použita během instalace služby v RCS a bude označována jako *identifikátor URI trezoru klíčů*.
 
+> [!NOTE]
+> Pro další zabezpečení účtu úložiště nakonfigurujte Azure Defender pro úložiště.
+> 
+> Další informace viz [Úvod do Azure Defender pro úložiště](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

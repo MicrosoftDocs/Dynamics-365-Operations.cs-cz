@@ -2,7 +2,7 @@
 title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753545"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951978"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
@@ -158,6 +158,31 @@ ER podporuje různé způsoby, jak určit jazyk generované sestavy. V POLI **Ja
 - **Definováno při spuštění** - Generujte sestavu v jazyce, který je určen při spuštění. Pokud vyberete tuto hodnotu, v poli **Jazyk** nakonfigurujte výraz ER, který vrací kód jazyka pro daný jazyk, například jazyk příslušného zákazníka.
 
     ![V návrháři operací ER zadejte jazyk definovaný při spuštění jako jazyk generované zprávy](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Formátování specifické pro kulturu
+
+ER podporuje různé způsoby, jak určit kulturu generované sestavy. Proto lze použít správné formátování specifické pro jazykovou verzi pro datum, čas a číselné hodnoty. Když navrhujete formát ER, na kartě **Formát** v poli **Kulturní preference** můžete vybrat jednu z následujících hodnot pro každou komponentu formátu souboru typu **Běžný\\soubor**, **Soubor\\Excel**, **Soubor\\PDF** nebo **Sloučení\\PDF**:
+
+- **Preference uživatele** – Naformátujte hodnoty podle preferované kultury uživatele. Tato kultura je definována v poli **Formát data, času a čísel** pole na kartě **Předvolby** stránky **Možnosti uživatele**.
+
+    ![Definování preferované kultury uživatele jako kultury generované zprávy v návrháři provozu ER](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Explicitně definováno** – Formátujte hodnoty podle kultury, která je zadána v době návrhu.
+
+    ![Definování preferované kultury, která je zadaná v době návrhu, jako kultury generované zprávy v návrháři provozu ER](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Definováno za běhu** – Formátujte hodnoty podle kultury, která je zadána za běhu. Pokud vyberete tuto hodnotu, na kartě **Mapování** v poli **Formát data, času a čísel** nakonfigurujte výraz ER, který vrací kód jazykové verze pro jazykovou verzi, například jazykovou verzi odpovídajícího zákazníka.
+
+    ![Definování preferované kultury, která je zadaná za běhu, jako kultury generované zprávy v návrháři provozu ER](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> Komponenta ER, pro kterou definujete konkrétní jazykovou verzi, může obsahovat podřízené komponenty ER, které byly nakonfigurovány tak, aby vyplňovaly textovou hodnotu. Ve výchozím nastavení se kultura nadřazené komponenty používá k formátování hodnot těchto komponent. Následující integrované funkce ER můžete použít ke konfiguraci vazeb pro tyto komponenty a použití alternativní kultury pro formátování hodnot:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> Ve verzi 10.0.20 a novější se národní prostředí komponent formátu typů **Běžný\\soubor** a **Soubor\\Excel** používá k formátování hodnot během [Převodu PDF](electronic-reporting-destinations.md#OutputConversionToPDF) generovaného dokumentu.
 
 ## <a name="translation"></a>Převod
 

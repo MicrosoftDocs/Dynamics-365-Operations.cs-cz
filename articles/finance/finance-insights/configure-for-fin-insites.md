@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908823"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941219"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfigurace finančních přehledů (Preview)
 
@@ -42,228 +42,36 @@ Pro nasazení prostředí postupujte takto.
 
 ## <a name="configure-dataverse"></a>Konfigurace služby Dataverse
 
-Můžete provést následující kroky ruční konfigurace nebo můžete zrychlit proces konfigurace pomocí skriptu Windows PowerShell, který je k dispozici. Po provedení skriptu PowerShell získáte hodnoty, které se mají použít ke konfiguraci finančních přehledů. 
+Ke konfiguraci Dataverse pro Finance Insights použijte následující kroky.
 
+1. Otevřete stránku prostředí v LCS a ověřte, že část **Integrace Power Platform** je již nastavena.
+    1. Pokud je již nastavena, název prostředí Dataverse spojený s prostředím Dynamics 365 Finance by mělo být uveden. Zkopírujte název prostředí Dataverse.
+    2. Pokud není nastaveno, postupujte takto:
+        1. Vyberte tlačítko **Nastavení** v části Integrace Power Platform. Nastavení prostředí může trvat až hodinu.
+        2. Pokud je prostředí Dataverse úspěšně nastaveno, název prostředí Dataverse spojený s prostředím Dynamics 365 Finance by mělo být uveden. Zkopírujte název prostředí Dataverse.
 > [!NOTE]
-> V počítači otevřete PowerShell a spusťte skript. Možná budete potřebovat PowerShell verze 5. Možnost „Try it“ (vyzkoušet) Microsoft Azure CLI nemusí fungovat.
+> Po dokončení nastavení prostředí **NEvybírejte** tlačítko **Odkaz na CDS for Apps**. To není nutné pro Finance Insights a zakáže se schopnost dokončit požadované doplňky prostředí v LCS.
 
-# <a name="manual-configuration-steps"></a>[Ruční kroky konfigurace](#tab/configuration-steps)
-
-1. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com/) a podle těchto kroků vytvořte nové prostředí Dataverse ve stejném klientovi Active Directory:
+2. Otevřete [centrum pro správu Power Platform](https://admin.powerplatform.microsoft.com/) a podle těchto kroků vytvořte nové prostředí Dataverse ve stejném klientovi Active Directory:
 
     1. Otevřete stránku **Prostředí**.
 
         [![Stránka Prostředí](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
-    2. Vyberte **Nové prostředí**.
-    3. V poli **Typ** vyberte **Sandbox**.
-    4. Nastavte možnost **Vytvořit databázi** na **Ano**.
-    5. Zvolte **Další**.
-    6. Vyberte jazyk a měnu vaší organizace.
-    7. Potvrďte výchozí hodnoty v ostatních polích.
-    8. Zvolte **Uložit**.
-    9. Aktualizujte stránku **Prostředí**.
-    10. Počkejte, až se hodnota pole **Stav** aktualizuje na **Připraveno**.
-    11. Poznamenejte si ID organizace Dataverse.
-    12. Vyberte prostředí , ke zkopírování a pak vyberte **Nastavení**.
-    13. Vyberte **Prostředky \> Všechna starší nastavení**.
-    14. Na horním navigačním panelu vyberte **Nastavení** a potom vyberte **Vlastní nastavení**.
-    15. Vyberte **Vývojářské prostředky**.
-    16. Zkopírujte hodnotu **ID organizace Dataverse**.
-    17. V adresním řádku prohlížeče si poznamenejte URL pro organizaci Dataverse. Adresa URL může být například `https://org42b2b3d3.crm.dynamics.com`.
+    2. Vyberte výše uvedené prostředí Dataverse ke zkopírování a pak vyberte **Nastavení**.
+    3. Vyberte **Prostředky \> Všechna starší nastavení**.
+    4. Na horním navigačním panelu vyberte **Nastavení** a potom vyberte **Vlastní nastavení**.
+    5. Vyberte **Vývojářské prostředky**.
+    6. Zkopírujte hodnotu **ID organizace Dataverse**.
+    7. V adresním řádku prohlížeče si poznamenejte URL pro organizaci Dataverse. Adresa URL může být například `https://org42b2b3d3.crm.dynamics.com`.
 
-2. Pokud plánujete použít funkci prognóz cashflow nebo rozpočtu, postupujte podle těchto kroků a aktualizujte limit anotací pro vaši organizaci na nejméně 50 megabajtů (MB):
+3. Pokud plánujete použít funkci prognóz cashflow nebo rozpočtu, postupujte podle těchto kroků a aktualizujte limit anotací pro vaši organizaci na nejméně 50 megabajtů (MB):
 
     1. Otevřete [Power Apps Portal](https://make.powerapps.com).
     2. Vyberte prostředí, které jste právě vytvořili, a poté vyberte **Pokročilá nastavení**.
     3. Vyberte **Nastavení \> Konfigurace e-mailu**.
     4. Změňte hodnotu pole **Maximální velikost souboru** na **51200**. (Hodnota je vyjádřena v kilobytech \[kB\].)
     5. Vyberte **OK** a uložte změny.
-
-# <a name="windows-powershell-configuration-script"></a>[Konfigurační skript prostředí Windows PowerShell](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
 
 ## <a name="configure-the-azure-setup"></a>Konfigurace nastavení Azure
 
@@ -295,11 +103,14 @@ Podle těchto pokynů nakonfigurujte Azure pomocí skriptu Windows PowerShell. M
 
 1. V [portálu Azure](https://portal.azure.com) přejděte na své cílové předplatné Azure. Vyberte tlačítko **Cloud Shell** napravo od pole **Vyhledávání**.
 2. Vyberte **PowerShell**.
-3. Pokud se zobrazí výzva, vytvořte úložiště. Potom nahrajte skript prostředí Windows PowerShell do relace.
-4. Spusťte skript.
-5. Podle pokynů spusťte skript.
-6. Použijte informace z výstupu skriptu k instalaci doplňku **Export do Data Lake** v LCS.
-7. Pomocí informací z výstupu skriptu povolte úložiště entit na stránce **Datová připojení** ve Finance (**Správa systému \> Parametry systému \> Datová připojení**).
+3. Pokud se zobrazí výzva, vytvořte úložiště.
+4. Přejděte na kartu **Azure CLI** kartu a vyberte **Kopírovat**.  
+5. Otevřete Poznámkový blok a vložte skript prostředí PowerShell. Uložte soubor jako ConfigureDataLake.ps1.
+6. Nahrajte skript Windows PowerShell do relace pomocí možnosti nabídky pro nahrání v Cloud Shell.
+7. Spusťte skript .\ConfigureDataLake.ps1.
+8. Podle pokynů spusťte skript.
+9. Použijte informace z výstupu skriptu k instalaci doplňku **Export do Data Lake** v LCS.
+10. Pomocí informací z výstupu skriptu povolte úložiště entit na stránce **Datová připojení** ve Finance (**Správa systému \> Parametry systému \> Datová připojení**).
 
 ### <a name="manual-setup"></a>Ruční nastavení
 
@@ -975,24 +786,24 @@ Doplněk bude nainstalován během několika minut.
 
     | Hodnota                                                    | popis |
     |----------------------------------------------------------|-------------|
-    | Adresa URL organizace CDS                                     | Adrsa URL organizace Dataverse instance Dataverse. Tuto hodnotu najdete otevřením [portálu Power Apps](https://make.powerapps.com), výběrem tlačítka **Nastavení** (symbol ozubeného kola) v pravém horním rohu, výběrem možnosti **Pokročilá nastavení** a zkopírováním adresy URL. (Adresa URL končí řetězcem „dynamics.com“.) |
-    | ID org. CDS                                               | ID prostředí instance Dataverse. Tuto hodnotu najdete otevřením [portálu Power Apps](https://make.powerapps.com), výběrem tlačítka **Nastavení** (symbol ozubeného kola) v pravém horním rohu, výběrem možnosti **Vlastní nastavení \> Vývojářské prostředky \> Referenční informace o instanci** a zkopírováním hodnoty **ID**. |
-    | ID klienta CDS (ID adresáře z AAD)               | ID klienta instance Dataverse. Tuto hodnotu najdete otevřením [portálu Azure](https://portal.azure.com), přejděte na **Azure Active Directory** a zkopírujte hodnotu **ID klienta**. |
-    | Zadejte ID objektu uživatele, který má roli správce systému | ID objektu uživatele Azure AD v Dataverse. Tento uživatel musí být správcem systému instance Dataverse. Tuto hodnotu najdete otevřením [portálu Azure](https://portal.azure.com), otevřením nabídky **Azure Active Directory \> Uživatelé**, výběrem uživatele a poté v sekci **Identita** zkopírováním hodnoty **ID objektu**. |
-    | Je toto výchozí prostředí CDS pro klienta?      | Pokud instance Dataverse byla první produkční instance, která byla vytvořena, zaškrtněte toto políčko. Pokud instance Dataverse byla vytvořena ručně, zrušte zaškrtnutí tohoto políčka. |
-
+    | Adresa URL organizace CDS                                     | URL organizace Dataverse zkopírované shora. |
+    | ID org. CDS                                               | ID organizace Dataverse zkopírované shora. |
+5. Aktivujte **Je toto výchozí prostředí pro klienta**.
+    
 ## <a name="configure-the-entity-store"></a>Konfigurace úložiště entit
 
 Pomocí těchto kroků nastavíte úložiště entit ve vašem prostředí Finance.
 
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Systémové parametry \> Datová připojení**.
-2. Nastavte možnost **Povolit integraci s Data Lake** na **Ano**.
-3. Nastavte následující pole trezoru klíčů:
+2. Nastavte následující pole trezoru klíčů:
 
     - **ID aplikace (klienta)** – Zadejte ID klienta aplikace, které jste vytvořili dříve.
     - **Tajný klíč aplikace** – Zadejte tajný klíč, které jste uložili pro aplikaci, kterou jste vytvořili dříve.
     - **Název DNS** – Název systému DNS (Domain Name System) najdete na stránce s podrobnostmi o aplikaci, kterou jste vytvořili dříve.
     - **Název tajného klíče** – Zadejte **storage-account-connection-string**.
+3. Aktivujte **Povolit integraci s Data Lake**.
+4. Vyberte **Otestovat Azure Key Vault** a ověřte, že neexistují žádné chyby.
+5. Vyberte **Otestovat úložiště Azure** a ověřte, že neexistují žádné chyby.
 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 

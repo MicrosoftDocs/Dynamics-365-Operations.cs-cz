@@ -2,7 +2,7 @@
 title: Součásti pro správu Elektronické fakturace
 description: Toto téma poskytuje informace o součástech, které souvisejí se správou Elektronické fakturace.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840021"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963184"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Součásti pro správu Elektronické fakturace
 
@@ -87,10 +87,12 @@ Služba elektronické fakturace je zodpovědná za ukládání všech vašich ob
 - Účet úložiště Azure (úložiště Blob), které bude uchovávat elektronické faktury
 - Trezor klíčů Azure, který bude uchovávat certifikáty a identifikátor URI (Uniform Resource Identifier) účtu úložiště
 
-> [!NOTE]
-> Vyhrazený trezor klíčů a účet úložiště odběratele musí být výslovně přiděleny pro použití s Elektronickou fakturací.
 
-Další informace viz [Vytvoření účtu úložiště a trezoru klíčů Azure](e-invoicing-create-azure-storage-account-key-vault.md).
+Vyhrazený trezor klíčů a účet úložiště odběratele musí být výslovně přiděleny pro použití s Elektronickou fakturací. Další informace viz [Vytvoření účtu úložiště a trezoru klíčů Azure](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Chcete-li sledovat stav vašeho trezoru klíčů a přijímat upozornění, nakonfigurujte Azure Monitor pro trezor klíčů. Povolením protokolování trezoru klíčů můžete sledovat, jak, kdy a kým je k vašim trezorům klíčů přistupováno. Další informace viz [Monitorování a varování pro Azure Key Vault](/azure/key-vault/general/alert) a [Jak povolit protokolování trezoru klíčů](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Osvědčeným postupem je pravidelně střídat tajné klíče. Další informace naleznete v [Dokumentace k tajným klíčům](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Uživatelé
 

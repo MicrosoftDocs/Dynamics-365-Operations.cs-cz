@@ -2,7 +2,7 @@
 title: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
 description: Toto téma obsahuje informace o způsobu použití funkce sledování výkonu v elektronickém výkaznictví pro řešení potíží s výkonem.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754209"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944646"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -47,10 +47,10 @@ Je také nutné stáhnout a lokálně uložit následující soubory.
 
 | Soubor                                  | Obsah                               |
 |---------------------------------------|---------------------------------------|
-| Model sledování výkonu - verze 1     | [Vzorová konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Metadata sledování výkonu - verze 1  | [Vzorová konfigurace metadat elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Mapování sledování výkonu - verze 1.1 | [Vzorová konfigurace mapování elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Formát sledování výkonu - verze 1.1  | [Vzorová konfigurace formátu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Model sledování výkonu - verze 1     | [Vzorová konfigurace datového modelu elektronického výkaznictví](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Metadata sledování výkonu - verze 1  | [Vzorová konfigurace metadat elektronického výkaznictví](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Mapování sledování výkonu - verze 1.1 | [Vzorová konfigurace mapování elektronického výkaznictví](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Formát sledování výkonu - verze 1.1  | [Vzorová konfigurace formátu elektronického výkaznictví](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 
@@ -84,7 +84,7 @@ Aby byl k dispozici ve vyhledávacím poli **Jiné**, musí být typ dokumentu t
 Předpokládejme, že jste začali navrhovat nové řešení elektronického výkaznictví pro generování nové sestavy, která představuje transakce dodavatele. Momentálně můžete najít transakce pro zvoleného dodavatele na stránce **Transakce dodavatele** (přejděte na **Závazky \> Dodavatelé \> Všichni dodavatelé**, zvolte dodavatele a potom v podokně akcí na kartě **Dodavatel** ve skupině **Transakce** zvolte **Transakce**). Chcete však mít všechny transakce dodavatele současně v jednom elektronickém dokumentu ve formátu XML. Toto řešení bude obsahovat několik konfigurací elektronického výkaznictví, které obsahují požadovaný datový model, metadata, mapování modelu a součásti formátu.
 
 1. Přihlaste se k instanci RCS, která byla pro vaši společnost zřízena.
-2. V tomto kurzu vytvoříte a upravíte konfigurace pro vzorovou společnost **Litware, Inc.**. Proto se ujistěte, že tento poskytovatel konfigurace byl přidán do RCS a vybrán jako aktivní. Pokyny naleznete v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. V tomto kurzu vytvoříte a upravíte konfigurace pro vzorovou společnost **Litware, Inc.**. Proto se ujistěte, že tento poskytovatel konfigurace byl přidán do RCS a vybrán jako aktivní. Pokyny naleznete v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. Na stránce **Konfigurace** importujte konfigurace elektronického výkaznictví, které jste stáhli jako nezbytný požadavek do RCS, v následujícím pořadí: datový model, metadata, mapování modelu, formát. Pro každou konfiguraci postupujte takto:
 
@@ -101,7 +101,7 @@ Předpokládejme, že jste dokončili návrh první verze řešení elektronick�
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do Finance and Operations
 
 1. Přihlaste se k instanci aplikace.
-2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](rcs-download-configurations.md).
 3. Pomocí následujícího postupu importujte konfigurace z RCS do aplikace:
 
     1. V pracovním prostoru **Elektronické výkaznictví** na dlaždici pro poskytovatele konfigurace **Litware, Inc** . vyberte **Úložiště**.

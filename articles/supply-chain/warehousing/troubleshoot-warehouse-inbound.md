@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828219"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920980"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Řešení potíží s příchozími skladovými operacemi
 
@@ -56,7 +56,7 @@ Po spuštění periodického úkolu *Aktualizovat příjemky produktů* systém 
 
 ### <a name="issue-resolution"></a>Řešení problému
 
-Nová funkce zpracování příchozího nákladu *Příjem většího množství nákladu* opravuje tento problém. Chcete-li tuto funkci zapnout, přejděte na [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce (v pořadí, v jakém jsou uvedeny):
+Nová funkce zpracování příchozího nákladu *Příjem většího množství nákladu* opravuje tento problém. Chcete-li tuto funkci zapnout, přejděte k pracovnímu prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce (v pořadí, v jakém jsou uvedeny):
 
 1. Přiřadit transakce zásob nákupní objednávky k vytížení
 1. Nadměrné přijetí množství vytížení

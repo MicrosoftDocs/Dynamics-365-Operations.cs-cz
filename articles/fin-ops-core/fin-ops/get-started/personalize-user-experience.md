@@ -2,7 +2,7 @@
 title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744686"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944526"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -98,7 +98,7 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okna vlastnosti pro řídicí panel umožňuje vytvořit nový vlastní pracovní prostor.
 
-### <a name="the-personalization-toolbar"></a>Panel nástrojů individuálních nastavení
+### <a name="personalization-toolbar"></a>Panel nástrojů individuálních nastavení
 
 Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změna uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Individuální nastavení**, proveďte jeden z následujících kroků:
 
@@ -173,7 +173,90 @@ Jedinou jedinečnou možností personalizace, která je k dispozici na řídicí
 
 ## <a name="sharing-personalizations"></a>Sdílení individuálních nastavení
 
-Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Poté můžete požádat ostatní uživatele o import souboru personalizace. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít váš soubor individuálního nastavení na mnoho uživatelů současně pomocí stránky pro správu **Individuální nastavení**.
+Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení různými způsoby sdílet s dalšími uživateli. V následujícím seznamu jsou metody uspořádány v pořadí od nejvíce doporučených po nejméně doporučené.
+
+1. Publikování pohledů uživatelům.
+2. Zkopírujte zobrazení nebo individuální nastavení uživatelům.
+3. Exportujte a importujte pohledy nebo individuální nastavení.
+
+### <a name="publish-views-to-users"></a>Publikování pohledů uživatelům
+
+Pokud je funkce [Uložené pohledy](saved-views.md) zapnutá, a pokud stránka podporuje zobrazení, nejlepším způsobem sdílení personalizace s ostatními uživateli je publikování pohledu uživatelům, kteří mají jednu nebo více rolí zabezpečení. Další informace naleznete v tématu [Publikování zobrazení](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Zkopírujte zobrazení nebo individuální nastavení uživatelům
+
+Pokud je funkce [Uložené pohledy](saved-views.md) vypnutá, nebo pokud stránka nepodporuje zobrazení, doporučeným způsobem sdílení personalizací je jejich kopírování mezi uživateli. Tato metoda je k dispozici pouze privilegovaným uživatelům (například správcům systému). Správci však mohou vyhledat přizpůsobení konkrétního uživatele v systému (včetně osobního zobrazení uživatele, pokud jsou povolena uložená zobrazení) a zkopírovat konfiguraci dalším uživatelům.
+
+Pokud jsou uložená zobrazení povolena, zkopírujte personalizace podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Při kopírování osobních zobrazení postupujte takto:
+
+    1. Vyberte **Osobní pohledy**.
+    2. Vyberte požadované zobrazení v seznamu.
+    3. Vyberte **Kopírovat uživatelům**.
+    4. Vyberte uživatele, kterým chcete distribuovat pohledy.
+
+    Při kopírování přizpůsobení na stránky, které nepodporují zobrazení, postupujte takto:
+
+    1. Vyberte **Nastavení uživatele**.
+    2. Vyberte uživatele, který má personalizaci, kterou chcete distribuovat.
+    3. Vyberte **Správa všech přizpůsobení**.
+    4. Vyberte požadovaná individuální nastavení v seznamu.
+    5. Vyberte **Kopírovat uživatelům**.
+    6. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+
+Pokud jsou uložená zobrazení zakázána, zkopírujte personalizace podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Zvolte **Použít**.
+3. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+4. Vyberte **Vybrat existující přizpůsobení**.
+5. Najděte a vyberte (jednotlivou) personalizaci, která vás zajímá.
+6. Vyberte **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Exportujte a importujte pohledy nebo individuální nastavení
+
+Dalším způsobem, jak sdílet personalizace, je export a import. Jednotliví uživatelé nebo správce, který jedná jejich jménem, mohou pomocí této metody exportovat svá přizpůsobení nebo zobrazení a poté exportovaný soubor předat dalším uživatelům k importu. Alternativně mohou uživatelé dát své exportované individuální nastavení uživateli, který má oprávnění správce, a ten pak může použít stránku pro správu **Personalizace**, kde lze použít soubor individuální nastavení pro více uživatelů současně.
+
+#### <a name="export"></a>Export
+
+Obecně můžete exportovat jeden ze svých vlastních pohledů nebo personalizací otevřením příslušné stránky a otevřením panelu nástrojů **Individuální nastavení** a poté vyberte **Exportovat**. Další informace o panelu nástrojů najdete v části [Panel nástrojů Individuálních nastavení](#personalization-toolbar) dříve v tomto tématu. Alternativně, pokud [uložené pohledy](saved-views.md) jsou povoleny, můžete přejít v **Nastavení \> Možnosti uživatele \> Individuální nastavení** pro zobrazení seznamu všech vašich personalizací v systému. Odtud můžete vybrat zobrazení nebo přizpůsobení, která chcete exportovat, a poté vybrat **Exportovat**.
+
+Správci mohou dále exportovat personalizace ostatních uživatelů podle těchto kroků.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Na kartě **Uživatelé** vyberte uživatelský účet.
+3. Najděte a vyberte zobrazení nebo individuální nastavení, které vás zajímá.
+4. Vyberte **Export**.
+
+#### <a name="import"></a>Import
+
+Chcete-li importovat zobrazení nebo přizpůsobení, stačí otevřít panel nástrojů **Individuální nastavení** a vybrat **Importovat**. Správci mohou navíc importovat soubor a okamžitě jej dát jednomu nebo více uživatelům.
+
+Pokud jsou uložená zobrazení povolena, postupujte podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. V podokně akcí klikněte na možnost **Importovat zobrazení \> zobrazení uživatelů**.
+3. Výběr režimu importu:
+
+    - **Vyberte konkrétní uživatele** - Dát pohled nebo přizpůsobení vybraným uživatelům.
+    - **Importujte v původním stavu** - Importujte zobrazení nebo přizpůsobení stejnému uživateli, který jej exportoval.
+
+4. Vyberte **Procházet** a poté vyhledejte a vyberte individuální nastavení, které chcete importovat.
+5. Zvolte **Další**.
+6. Pokud jste vybrali **Vyberte konkrétní uživatele** v kroku 3, vyberte uživatele, pro které chcete individuální nastavení importovat.
+7. Vyberte **Import**.
+8. Vyřešte konflikty podle potřeby.
+
+Pokud nejsou uložená zobrazení povolena, postupujte podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Zvolte **Použít**.
+3. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+4. Vyberte **Importovat individuální nastavení ze souboru**.
+5. Vyberte **Procházet** a poté vyhledejte a vyberte individuální nastavení, které chcete importovat.
+6. Vyberte **OK**.
 
 ## <a name="administration-of-personalizations"></a>Správa přizpůsobení
 
@@ -184,8 +267,11 @@ Zákazníci, kteří mají zapnutou funkci **Uložená zobrazení**, by si měli
 U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-views.md), má tato stránka čtyři karty:
 
 - **Použít** – můžete importovat nebo zvolit individuální nastavení pro jednoho nebo více uživatelů. Chcete-li použít přizpůsobení pro jednoho nebo více uživatelů, nejprve vyberte roli a uživatele, kteří tuto roli mají. Poté buď vyberte existující personalizaci, která se bude vztahovat na vybrané uživatele, nebo importovat soubor personalizace. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
+
 - **Vymazat** – Můžete vymazat všechna přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejprve vyberte stránku nebo pracovní prostor, aby se zobrazil seznam uživatelů, kteří u nich provedli individuální nastavení. Poté vyberte uživatele, kteří by měli mít individuální nastavení pro tuto stránku nebo pracovní prostor odstraněno, a vyberte **Vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud však byla personalizace uložena pro stránku nebo pracovní prostor, může být tato personalizace znovu importována.
+
 - **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
+
 - **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
 
 ## <a name="personalizing-inventory-dimensions"></a>Individuální nastavení dimenzí zásob

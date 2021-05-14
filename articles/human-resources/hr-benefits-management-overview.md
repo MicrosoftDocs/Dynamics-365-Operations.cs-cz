@@ -2,7 +2,7 @@
 title: Přehled správy zaměstnaneckých výhod
 description: Přehled funkce správy zaměstnaneckých výhod v Dynamics 365 Human Resources. Nabídněte svým zaměstnancům rozšířené možnosti zaměstnaneckých výhod pomocí snadno použitelného online prostředí.
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34b0916e0bf618590bcc56a9a3bc7c61576361cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805771"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924223"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -40,6 +40,10 @@ Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zam
 - Kvalifikované zpracování životních událostí podporuje budoucí žívotní události.
 
 Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolované testovací prostředí (sandbox).
+
+>[!NOTE]
+>Nyní můžete přizpůsobit formuláře pro správu výhod. Nyní můžete přidat vlastní pole související s mírou pokrytí formuláře **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
+>![Vlastních pole správy výhod](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 

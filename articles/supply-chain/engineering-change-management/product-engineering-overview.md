@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947513"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -48,7 +48,7 @@ Než budete moci používat funkci správy technických změn, musíte povolit f
 
 Správci mohou funkce zapnout provedením následujících kroků.
 
-1. Přejděte na [Správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Přejděte do [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Zkontrolovat aktualizace.
 1. Zapněte funkci s názvem **Správa technických změn**.
 1. Chcete-li ji použít, zapněte také funkci s názvem **Verze dimenze produktu**.
@@ -58,8 +58,11 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
 1. Rozbalte uzel **Obchod**.
-1. Zaškrtněte políčko **Správa technických změn**.
-1. Chcete-li jej použít, zaškrtněte také políčko **Dimenze produktu - verze**.
+1. Povolte konfigurační klíč pro hlavní funkci výběrem zaškrtávacího políčka **Správa technických změn**. (Není nutné rozšiřovat uzel, pokud také nechcete deaktivovat jednu nebo obě její dílčí funkce.)
+1. Chcete-li také použít dimenzi verze, zaškrtněte také políčko **Dimenze produktu - verze**. (Toto zaškrtávací políčko je dále v seznamu, není vnořeno pod uzlem **Správa technických změn**.)
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+> [!IMPORTANT]
+> Od dubna 2022 budou licenční klíče pro jak **Správu technických změn**, tak pro **Rozměr produktu - verze** ve výchozím nastavení povoleny pro všechny nové instalace, ale v případě potřeby je stále budete moci deaktivovat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

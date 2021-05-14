@@ -2,7 +2,7 @@
 title: Pracovní zátěže správy skladu pro cloudové a hraniční jednotky škálování
 description: Toto téma poskytuje informace o funkci, která umožňuje jednotkám škálování spouštět vybrané procesy z vaší úlohy správy skladu.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,17 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899160"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944406"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Ne všechny obchodní funkce správy skladu jsou plně podporovány ve skladech, které provozují pracovní zátěž na škálovatelné jednotce. Používáte pouze takové procesy, které toto téma výslovně popisuje jako podporované.
@@ -49,15 +48,16 @@ Jednotka škálování může udržovat pouze data, která vlastní. Koncept vla
 
 Jednotky škálování vlastní následující data:
 
-- **Vlnové zpracování dat** - Vybrané metody zpracování vln jsou zpracovávány v rámci vlnového zpracování jednotky škálování.
-- **Údaje o zpracování práce** - Jsou podporovány následující typy zpracování pracovních příkazů:
+- **Vlnové zpracování dat dodávek** - Vybrané metody zpracování vln jsou zpracovávány v rámci vlnového zpracování jednotky škálování.
+- **Zpracování údajů o práci** – Skladová práce vytvořená na jednotce škálování bude vlastněna touto konkrétní jednotkou škálování. Jsou podporovány následující typy zpracování pracovních příkazů:
 
   - **Pohyby zásob** (ruční pohyb a pohyb podle šablony práce)
+  - **Počítání cyklů** a proces schválení/odmítnutí jako součást operací počítání
   - **Nákupní objednávky** (odložená práce prostřednictvím objednávky ve skladu, když nákupní objednávky nejsou spojeny s nákladem)
   - **Prodejní objednávky** (jednoduchá práce vyzvednutí a vložení)
   - **Objednávky převodu** (pouze odchozí s jednoduchým výběrem a nakládáním)
 
-- **Údaje o přijetí skladové objednávky** - Tato data se používají pouze pro nákupní objednávky, které jsou ručně uvolněny do skladu.
+- **Údaje o přijetí skladové objednávky** - Tato data se používají pouze pro nákupní objednávky, které jsou uvolněny do skladu.
 - **Údaje o registrační značce** - Registrační značky lze vytvářet v centru a jednotce škálování. Bylo poskytnuto vyhrazené řešení konfliktů. Tato data nejsou specifická pro sklad.
 
 ## <a name="outbound-process-flow"></a>Odchozí tok procesu
@@ -72,6 +72,14 @@ Jednotky stupnice vlastní skutečné vlnové zpracování (jako je přidělení
 
 ![Tok zpracování vlny](./media/wes-wave-processing-ga.png "Tok zpracování vlny")
 
+### <a name="process-work-and-ship"></a>Zpracování práce a odeslání
+
+Jakmile konečný pracovní proces umístí zásoby na konečné místo odeslání (dveře doku), jednotka škálování signalizuje centru, aby aktualizovalo transakce zdrojového dokumentu na *Vybráno*. Dokud tento proces nebude spuštěn a nebude synchronizován zpět, zásoby na skladě na úloze jednotky škálování budou fyzicky vyhrazeny na úrovni skladu.
+
+Jakmile centrum aktualizuje transakce na *Vybráno*, může zpracovat potvrzení odchozí zásilky a související dodací list nebo zásilku s převodem objednávky pro náklad.
+
+![Odchozí tok procesu](./media/WES-outbound-processing-19.png "Odchozí tok procesu")
+
 ## <a name="inbound-process-flow"></a>Příchozí tok procesu
 
 Centrum vlastní následující data:
@@ -82,8 +90,8 @@ Centrum vlastní následující data:
 
 > [!NOTE]
 > Tok příchozích objednávek se koncepčně liší od odchozích toků. Stejný sklad můžete provozovat na jednotce škálování nebo v centru v závislosti na tom, zda byla nákupní objednávka uvolněna do skladu nebo ne. Jakmile uvolníte objednávku do skladu, můžete s touto objednávkou pracovat pouze po přihlášení na jednotce škálování.
-
-Pokud používáte proces *Uvolnit do skladu*, vytvoří se [*skladové objednávky*](cloud-edge-warehouse-order.md) a vlastnictví souvisejícího toku přijímání se přiřadí jednotce škálování. Centrum nebude moci zaregistrovat příchozí příjem.
+>
+> Pokud používáte proces *Uvolnit do skladu*, vytvoří se [*skladové objednávky*](cloud-edge-warehouse-order.md) a vlastnictví souvisejícího toku přijímání se přiřadí jednotce škálování. Centrum nebude moci zaregistrovat příchozí příjem.
 
 Abyste mohli použít proces *Uvolnit do skladu*, musíte být přihlášeni v centru. Chcete-li jej spustit nebo naplánovat, přejděte na jednu z následujících stránek:
 
@@ -97,6 +105,10 @@ Pracovník může spustit proces příjmu pomocí mobilní aplikace Řízení sk
 Pokud nepoužíváte proces *vydání do skladu* a tím pádem ani *skladové objednávky*, centrum může zpracovávat příjem skladu a zpracování práce nezávisle na jednotkách škálování.
 
 ![Příchozí tok procesu](./media/wes-inbound-ga.png "Příchozí tok procesu")
+
+Když provádíte příchozí registraci prostřednictvím procesu přijímání aplikace skladu proti objednávce skladové jednotky škálování, úloha jednotky škálování bude signalizovat centru, aby aktualizovalo související transakce řádku nákupní objednávky na *Registrováno*. Jakmile to bude hotové, budete moci spustit příjem produktu z nákupní objednávky na centru.
+
+![Příchozí tok procesu](./media/WES-inbound-processing-19.png "Příchozí tok procesu")
 
 ## <a name="supported-processes-and-roles"></a>Podporované procesy a role
 
@@ -115,10 +127,13 @@ Uživatelům, kteří působí jako správci skladu v centru i na jednotkách š
 Pro pracovní zátěž WES na jednotce škálování lze povolit následující procesy provádění skladu:
 
 - Vybrané metody vln pro prodejní a převodové objednávky (alokace, doplnění poptávky, kontejnerizace, tvorba díla a tisk štítků vln)
-- Zpracování skladových a prodejních zakázek pomocí mobilní aplikace Řízení skladu (včetně doplňovacích prací)
-- Dotaz na zásoby na skladě pomocí mobilní aplikace Řízení skladu
-- Vytváření a spouštění pohybů zásob pomocí mobilní aplikace Řízení skladu
-- Registrace nákupních objednávek a odvedení práce pomocí mobilní aplikace Řízení skladu
+
+- Zpracování skladových a prodejních zakázek pomocí aplikace skladu (včetně doplňovacích prací)
+- Dotaz na zásoby po ruce pomocí aplikace skladu
+- Vytváření a spouštění pohybů zásob pomocí aplikace skladu
+- Vytváření a zpracování cyklu počítání prací pomocí aplikace skladu
+- Provádění úprav zásob na skladě pomocí aplikace skladu
+- Registrace nákupních objednávek a odvedení práce pomocí aplikace skladu
 
 Následující pracovní příkazy jsou aktuálně podporovány pro pracovní zátěže WES na nasazení jednotek škálování:
 
@@ -126,9 +141,10 @@ Následující pracovní příkazy jsou aktuálně podporovány pro pracovní z�
 - Vydání převodního příkazu
 - Doplnění
 - Přesun zásob
+- Cyklická inventura
 - Nákupní objednávky (které jsou propojeny se skladovými objednávkami)
 
-V jednotkách škálování nejsou v současné době podporovány žádné jiné typy zdrojových dokumentů ani skladových prací. Například pro pracovní zátěž WES na jednotce měřítka nemůžete provést proces přijetí objednávky přenosu (potvrzení o převodu) nebo počítat procesní cyklus.
+V jednotkách škálování nejsou v současné době podporovány žádné jiné typy zdrojových dokumentů ani skladových prací. Například pro pracovní zátěž WES na jednotce měřítka nemůžete provést proces přijetí objednávky přenosu (potvrzení o převodu). Musí to být zpracováno instancí centra.
 
 > [!NOTE]
 > Položky nabídky mobilních zařízení a tlačítka pro nepodporované funkce se v _mobilní aplikaci Řízení skladu_ nezobrazí, když je připojena k nasazení jednotky škálování.
@@ -160,7 +176,6 @@ Následující funkce správy skladu nejsou aktuálně podporovány v úlohách 
 - Zpracování s negativními zásobami na skladě
 - Zpracování skladové práce s vlastními typy prací
 - Zpracování skladové práce s dodacími listy
-- Zpracování skladové práce se spuštěním prahové hodnoty pro počítání cyklů
 - Zpracování skladové práce s manipulací s materiálem / automatizací skladu
 - Použití obrazu hlavních dat produktu (například v mobilní aplikaci Řízení skladu)
 
@@ -186,14 +201,14 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Udržování zásilek pro vlnu                                  | Ano | Žádný |
 | Zpracování skladových prací (vč. tisku registrační značky)        | Žádný  | <p>Ano, ale pouze pro výše uvedené podporované funkce. |
 | Výdej seskupení                                              | Žádný  | Ano|
-| Ruční zpracování balení, vč. „Zpracování vychystávání zabaleného kontejneru“                                           | Žádný <P>Některé zpracování lze provést po počátečním procesu vychystávání zpracovaném jednotkou škálování, ale nedoporučuje se to kvůli následujícím blokovaným operacím.</p>  | Žádný  |
-| Odebrat kontejner ze skupiny                        | Žádný  | Žádný                           |
+| Ruční zpracování balení, vč. „Zpracování vychystávání zabaleného kontejneru“ | Žádný <P>Některé zpracování lze provést po počátečním procesu vychystávání zpracovaném jednotkou škálování, ale nedoporučuje se to kvůli následujícím blokovaným operacím.</p>  | Žádný |
+| Odebrat kontejner ze skupiny                                  | Žádný  | Žádný |
 | Zpracování odchozího třídění                                  | Žádný  | Žádný |
 | Tisk dokumentů souvisejících se zátěží                           | Ano | Žádný |
 | Přepravní doklad a generování ASN                            | Ano | Žádný |
-| Potvrzení zásilky                    | Ano  | Žádný |
-| Potvrzení zásilky s příkazem „Potvrdit a převést“                    | Žádný  | Žádný |
-| Zpracování dodacího listu a fakturace                | Ano | Žádný |
+| Potvrzení zásilky                                             | Ano | Žádný |
+| Potvrzení zásilky s příkazem „Potvrdit a převést“            | Žádný  | Žádný |
+| Zpracování dodacího listu a fakturace                        | Ano | Žádný |
 | Krátký výběr (prodejní a převodové objednávky)                    | Žádný  | Žádný |
 | Výběr nadměrného množství (prodejní a převodové objednávky)                     | Žádný  | Žádný |
 | Změna pracovních míst (prodejní a převodní objednávky)         | Žádný  | Ano|
@@ -212,31 +227,31 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 
 | Zpracovat                                                          | Centrum | Pracovní zátěž WES na jednotce škálování<BR>*(Položky označené „Ano“ platí pouze pro skladové objednávky)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Zpracování&nbsp;zdrojového&nbsp;dokumentu                                       | Ano | Žádný |
+| Zpracování&nbsp;zdrojového&nbsp;dokumentu                             | Ano | Žádný |
 | Zpracování správy nakládky a přepravy                    | Ano | Žádný |
-| Potvrzení příchozí dodávky                                            | Ano | Žádný |
+| Potvrzení příchozí dodávky                                    | Ano | Žádný |
 | Uvolnění nákupní objednávky do skladu (zpracování objednávky skladu) | Ano | Žádný |
-| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p>          | Ano | Žádný |
+| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p> | Ano | Žádný |
 | Přijetí zboží nákupní objednávky a odložení                       | <p>Ano,&nbsp;když&nbsp;tam&nbsp;není skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p> |
-| Přijetí řádku nákupní objednávky a odložení                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p></p> |
-| Přijatá a odložená vratka                               | Ano | Žádný |
-| Přijetí a odložení smíšené registrační značky                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Přijetí položky nákladu                                             | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Přijetí a odložení registrační značky                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Přijetí a odložení zboží převodního příkazu                        | Ano | Žádný |
-| Převést řádek nákupní objednávky a odložení                        | Ano | Žádný |
-| Zrušení práce (příchozí)                                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, ale pouze, když možnost <b>Zrušit registraci potvrzení při rušení práce</b> (na stránce <b>Parametry správy skladu</b>) není podporována.</p> |
-| Zpracování příjmu produktu z nákupní objednávky                          | Ano | Žádný |
-| Příjem nákupní objednávky s nedostatečným doručením                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano, ale pouze podáním žádosti o zrušení z centra |
-| Příjem nákupní objednávky s nadměrným doručením                        | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano  |
-| Příjem s vytvořením práce *Cross docking*                   | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
+| Přijetí řádku nákupní objednávky a odložení                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p></p> |
+| Přijatá a odložená vratka                              | Ano | Žádný |
+| Přijetí a odložení smíšené registrační značky                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
+| Přijetí položky nákladu                                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
+| Přijetí a odložení registrační značky                             | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
+| Přijetí a odložení zboží převodního příkazu                       | Ano | Žádný |
+| Převést řádek nákupní objednávky a odložení                       | Ano | Žádný |
+| Zrušení práce (příchozí)                                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, ale pouze, když možnost <b>Zrušit registraci potvrzení při rušení práce</b> (na stránce <b>Parametry správy skladu</b>) není podporována.</p> |
+| Zpracování příjmu produktu z nákupní objednávky                        | Ano | Žádný |
+| Příjem nákupní objednávky s nedostatečným doručením                      | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano, ale pouze podáním žádosti o zrušení z centra |
+| Příjem nákupní objednávky s nadměrným doručením                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano  |
+| Příjem s vytvořením práce *Cross docking*                 | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
 | Příjem s vytvořením práce *Objednávka kvality*                  | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
 | Příjem s vytvořením práce *Vzorek položky kvality*          | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
 | Příjem s vytvořením práce *Kvalita v kontrole kvality*       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
 | Příjem s vytvořením objednávky kvality                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Zpracování práce - Režie *Cluster putaway*                             | Ano | Žádný |
-| Zpracování práce s *Krátký výběr*                                           | Ano | Žádný |
-| Načtení registrační značky                                           | Ano | Žádný |
+| Zpracování práce - Režie *Cluster putaway*                 | Ano | Žádný |
+| Zpracování práce s *Krátký výběr*                               | Ano | Žádný |
+| Načtení registrační značky                                           | Ano | Ano |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Skladové operace a zpracování výjimek
 
@@ -251,10 +266,10 @@ Následující tabulka ukazuje, které funkce skladových operací a zpracován�
 | Přesun                                           | Ano | Ano                          |
 | Pohyb podle šablony                               | Ano | Ano                          |
 | Převod skladu                                 | Ano | Žádný                           |
-| Vytvoření převodního příkazu z mobilní aplikace Řízení skladu           | Ano | Žádný                           |
-| Úprava (příchozí/odchozí)                                | Ano | Žádný                           |
+| Vytvoření převodního příkazu z aplikace skladu           | Ano | Žádný                           |
+| Úprava (příchozí/odchozí)                                | Ano | Ano, ale ne pro scénář úpravy, kdy je třeba rezervaci inventáře odstranit pomocí nastavení **Odebrat rezervace** na typech úprav zásob.</p>                           |
 | Změna stavu zásob                            | Ano | Žádný                           |
-| Zpracování nesrovnalostí cyklické inventury a počítání | Ano | Žádný                           |
+| Zpracování nesrovnalostí cyklické inventury a počítání | Ano | Ano                           |
 | Opakovaný tisk štítku (tisk registrační značky)             | Ano | Ano                          |
 | Sestavení registrační značky vozidla                                | Ano | Žádný                           |
 | Seskupení registračních značek                                | Ano | Žádný                           |
@@ -286,11 +301,9 @@ Několik dávkových úloh spuštěných v jednotce centra i škály.
 
 V nasazení centra můžete dávkové úlohy spravovat ručně. Následující dávkové úlohy můžete spravovat v okně **Vedení skladu \> Pravidelné úkoly \> Správa pracovní zátěže v kanceláři**:
 
-- Zpracovat události aktualizace stavu práce
 - Zpracovatel zprávy jednotky škálování do centra
 - Registrovat příjmy zdrojové objednávky
 - Dokončit skladové objednávky
-- Zpracovat odpovědi na aktualizaci množství pro řádky objednávky skladu
 
 V úloze v jednotkách škálování můžete spravovat následující dávkové úlohy v okně **Správa skladu \> Pravidelné úkoly \> Správa úlohy**:
 
@@ -299,6 +312,5 @@ V úloze v jednotkách škálování můžete spravovat následující dávkové
 - Zpracovat požadavky na aktualizaci množství pro řádky objednávky skladu
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

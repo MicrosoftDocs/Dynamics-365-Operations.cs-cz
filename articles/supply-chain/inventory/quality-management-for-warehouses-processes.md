@@ -2,7 +2,7 @@
 title: Správa kvality pro procesy skladu
 description: V tématu jsou informace týkající se procesu řízení kvality pro funkci procesů skladu. Tato funkce rozšiřuje možnosti správy kvality a umožňuje uživatelům integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí pokročilé správy skladu.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834258"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956075"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Správa kvality pro procesy skladu
 
@@ -620,5 +620,8 @@ Pro sklad 51 jste nastavili data práce a místa, aby se zajistilo, že bude aut
 > [!NOTE]
 > Zvažte přidání položky kvality do položky nabídky mobilního zařízení, kde je zobrazen kód aktivity *Zobrazit otevřený seznam úkolů*. Příklad naleznete v položce nabídky mobilního zařízení s názvem **Pracovní seznam** v ukázkových datech. Nejprve přidejte třídu práce *Objednávka kvality* do uživatelem řízené položky nabídky, protože tato třída práce je požadována pro práci, která se má zobrazit v pracovním seznamu. Poté přidejte pracovní třídu *Objednávka kvality* do položky nabídky **Pracovní seznam**. Uživatelé, kteří mají přístup k pracovnímu seznamu, budou moci vyskladnit a zpracovat práci, která je automaticky generována ověřením objednávky kvality.
 
+## <a name="additional-resources"></a>Další prostředky
+
+- [Přehled správy kvality a neshod](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821001"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936723"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
@@ -42,7 +42,7 @@ Než vyzkoušíte funkci objednávek zákazníků v POS, nezapomeňte provést v
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurace způsobů dodání
 
-Chcete-li používat objednávky zákazníků, musíte nakonfigurovat způsoby dodání, které může kanál obchodu používat. Musíte definovat alespoň jeden způsob dodání, který lze použít, když jsou řádky objednávky odeslány odběrateli z obchodu. Musíte také definovat alespoň jeden způsob vyskladnění dodávky, který lze použít, když jsou řádky objednávky vyzvednuty z obchodu. Způsoby doručení jsou definovány na stránce **Způsoby dodání** v centrále Commerce. Další informace o nastavení způsobů dodání pro kanály Commerce naleznete v tématu [Definování způsobů dodání](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Chcete-li používat objednávky zákazníků, musíte nakonfigurovat způsoby dodání, které může kanál obchodu používat. Musíte definovat alespoň jeden způsob dodání, který lze použít, když jsou řádky objednávky odeslány odběrateli z obchodu. Musíte také definovat alespoň jeden způsob vyskladnění dodávky, který lze použít, když jsou řádky objednávky vyzvednuty z obchodu. Způsoby doručení jsou definovány na stránce **Způsoby dodání** v centrále Commerce. Další informace o nastavení způsobů dodání pro kanály Commerce naleznete v tématu [Definování způsobů dodání](./configure-call-center-delivery.md#define-delivery-modes).
 
 ![Stránka Způsoby dodání](media/customer-order-modes-of-delivery.png)
 
@@ -78,19 +78,19 @@ Než budete vytvářet objednávky zákazníků v POS, musíte nakonfigurovat p�
 - **Procento poplatku za zrušení** – Pokud má být použit poplatek při zrušení objednávky zákazníka, určete výši tohoto poplatku.
 - **Kód poplatku za zrušení** – Určete kód poplatku za pohledávky, který by se měl použít, když je účtován storno poplatek za zrušené objednávky zákazníků prostřednictvím POS. Kód poplatku definuje logiku finančního účtování poplatku za zrušení.
 - **Kód dopravného** – Pokud je možnost **Použít rozšířené automatické náklady** nastavena na **Ano**, toto nastavení parametrů nemá žádný účinek. Pokud je tato možnost nastavena na **Ne**, uživatelé budou při vytváření objednávek zákazníků v POS vyzváni k ručnímu zadání dopravného. Tento parametr použijte k mapování kódu poplatků za pohledávky, který se použije na objednávky, když uživatelé zadají dopravné. Kód poplatku definuje logiku finančního účtování dopravného.
-- **Použít rozšířené automatické náklady** – Nastavte tuto možnost na **Ano**, chcete-li používat systémem počítané automatické poplatky, když jsou objednávky zákazníků vytvořeny v POS. Tyto automatické náklady lze použít k výpočtu dopravného nebo jiných poplatků za konkrétní objednávku nebo položku. Další informace, jak nastavit a používat rozšířené automatické náklady, naleznete v tématu [Omnikanálové rozšířené automatické náklady](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Použít rozšířené automatické náklady** – Nastavte tuto možnost na **Ano**, chcete-li používat systémem počítané automatické poplatky, když jsou objednávky zákazníků vytvořeny v POS. Tyto automatické náklady lze použít k výpočtu dopravného nebo jiných poplatků za konkrétní objednávku nebo položku. Další informace, jak nastavit a používat rozšířené automatické náklady, naleznete v tématu [Omnikanálové rozšířené automatické náklady](./omni-auto-charges.md).
 
 ![Karta Objednávky zákazníka na stránce Parametry Commerce](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualizace rozložení obrazovky transakcí v POS
 
-Ujistěte se, že [rozložení obrazovky](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) POS je nakonfigurováno tak, aby podporovalo vytváření a správu objednávek zákazníků a aby byly nakonfigurovány všechny požadované operace POS. Zde jsou některé z operací POS, které se doporučují ke správné podpoře vytváření a správy objednávek zákazníků:
+Ujistěte se, že [rozložení obrazovky](./pos-screen-layouts.md) POS je nakonfigurováno tak, aby podporovalo vytváření a správu objednávek zákazníků a aby byly nakonfigurovány všechny požadované operace POS. Zde jsou některé z operací POS, které se doporučují ke správné podpoře vytváření a správy objednávek zákazníků:
 - **Expedovat všechny produkty** – Tato operace slouží k zadání, že všechny řádky v košíku transakce budou expedovány do cílového místa.
 - **Expedovat vybrané produkty** – Tato operace slouží k zadání, že vybrané řádky v košíku transakce budou expedovány do cílového místa.
 - **Vyzvednout všechny produkty** – Tato operace slouží k zadání, že všechny řádky v košíku transakce budou vyzvednuty z vybraného umístění obchodu.
 - **Vyzvednout vybrané produkty** – Tato operace slouží k zadání, že vybrané řádky v košíku transakce budou vyzvednuty z vybraného umístění obchodu.
 - **Vyvézt všechny produkty** – Tato operace určuje, že budou vyvezeny všechny řádky v košíku transakce. Pokud je tato operace použita v POS, bude objednávka zákazníka převedena na transakci cash-and-carry.
-- **Vyvézt vybrané produkty** – Tato operace slouží k určení, že vybrané řádky v košíku transakce si odnese zákazník v době nákupu. Tato operace je užitečná pouze u [hybridní objednávky](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders).
+- **Vyvézt vybrané produkty** – Tato operace slouží k určení, že vybrané řádky v košíku transakce si odnese zákazník v době nákupu. Tato operace je užitečná pouze u [hybridní objednávky](./hybrid-customer-orders.md).
 - **Odvolat objednávku** – Tato operace se používá k vyhledání a načtení objednávek zákazníků, aby je uživatelé POS mohli podle potřeby upravovat, rušit nebo provádět operace související s plněním.
 - **Změnit způsob dodání** – Tuto operaci lze použít k rychlé změně režimu dodání u řádků, které jsou již nakonfigurovány pro dodávku, aniž by uživatelé museli znovu projít tokem „expedovat všechny produkty“ nebo „expedovat vybrané produkty“.
 - **Přepsání zálohy** – Tuto operaci lze použít ke změně částky zálohy, kterou zákazník zaplatí za vybranou objednávku zákazníka.
@@ -128,7 +128,7 @@ Ujistěte se, že [rozložení obrazovky](https://docs.microsoft.com/dynamics365
 Maloobchodní objednávky, které jsou vytvořeny v online kanálu nebo kanálu obchodu, lze podle potřeby odvolat a upravit prostřednictvím POS.
 
 > [!IMPORTANT]
-> Ne všechny maloobchodní objednávky lze upravovat prostřednictvím aplikace POS. Objednávky vytvořené v kanálu kontaktního střediska nelze upravovat prostřednictvím POS, pokud je pro kanál kontaktního střediska zapnuto nastavení [Povolit dokončení objednávky](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). Aby bylo zajištěno správné zpracování plateb, musí být objednávky, které pocházejí z kanálu kontaktního střediska a které používají funkci Povolit dokončení objednávky, upraveny prostřednictvím aplikace kontaktního střediska v centrále Commerce.
+> Ne všechny maloobchodní objednávky lze upravovat prostřednictvím aplikace POS. Objednávky vytvořené v kanálu kontaktního střediska nelze upravovat prostřednictvím POS, pokud je pro kanál kontaktního střediska zapnuto nastavení [Povolit dokončení objednávky](./set-up-order-processing-options.md#enable-order-completion). Aby bylo zajištěno správné zpracování plateb, musí být objednávky, které pocházejí z kanálu kontaktního střediska a které používají funkci Povolit dokončení objednávky, upraveny prostřednictvím aplikace kontaktního střediska v centrále Commerce.
 
 Ve verzi 10.0.17 a novější mohou uživatelé upravovat způsobilé objednávky prostřednictvím aplikace POS, i když je objednávka částečně splněna. Objednávky, které jsou plně fakturovány, však stále nelze upravovat prostřednictvím POS. Chcete-li tuto funkci aktivovat, zapněte funkci **Upravit částečně splněné objednávky v pokladním místě** v pracovním prostoru **Správa funkcí**. Pokud tato funkce není povolena nebo pokud používáte verzi 10.0.16 nebo starší, uživatelé budou moci upravovat objednávky zákazníků v POS pouze v případě, že je objednávka plně otevřená. Dále, pokud je funkce povolena, můžete omezit, které obchody mohou upravovat částečně splněné objednávky. Možnost zakázat tuto funkci pro konkrétní obchody lze konfigurovat prostřednictvím **Funkční profil** a pevné kartě **Všeobecné**.
 
@@ -153,7 +153,7 @@ Ve verzi 10.0.17 a novější mohou uživatelé upravovat způsobilé objednáv
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Dokončení dodávky objednávky zákazníka nebo vyskladnění z POS
 
-Po vytvoření objednávky bude zboží vyzvednuto zákazníkem z místa obchodu nebo expedováno v závislosti na konfiguraci objednávky. Další informace o tomto procesu najdete v dokumentaci k [plnění objednávky obchodu](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview).
+Po vytvoření objednávky bude zboží vyzvednuto zákazníkem z místa obchodu nebo expedováno v závislosti na konfiguraci objednávky. Další informace o tomto procesu najdete v dokumentaci k [plnění objednávky obchodu](./order-fulfillment-overview.md).
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynchronní tok transakcí pro objednávky odběratele
 

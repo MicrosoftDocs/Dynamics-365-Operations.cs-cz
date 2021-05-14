@@ -2,7 +2,7 @@
 title: Použití zdrojů dat JOIN v mapování modelu ER k získání dat z více aplikačních tabulek
 description: Toto téma vysvětluje, jak je možné používat datové zdroje JOIN mezi více společnostmi v modulu Elektronické výkaznictví (ER).
 author: NickSelin
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: d42016b914d7992b6f4ae1c573eb8f867ba87e22
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743970"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944696"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Použití zdrojů dat JOIN v mapování modelu elektrického vykazování (ER) k získání dat z více aplikačních tabulek
 
@@ -64,13 +64,13 @@ Chcete-li provést příklady uvedené v tomto tématu, musíte mít přístup k
 
 K provedení těchto kroků musíte také nejprve dokončit jednotlivé kroky v proceduře [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Předem je nutné také stáhnout ze [služby Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000) a místně uložit následující ukázkové konfigurační soubory ER:
+Předem musíte také stáhnout a uložit následující ukázkové konfigurační soubory ER:
 
 | **Popis obsahu**  | **Název souboru**   |
 |--------------------------|-----------------|
-| Ukázkový konfigurační soubor **datového modelu ER**, který se používá jako zdroj dat pro příklady.| [Model k učení se JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Ukázkový konfigurační soubor **mapování modelu ER**, který implementuje model dat ER pro příklady. | [Mapování k učení se JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Ukázkový konfigurační soubor **formátu ER**. V tomto souboru jsou popsána data pro naplnění součásti formátu ER pro příklady. | [Formát k učení se JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Ukázkový konfigurační soubor **datového modelu ER**, který se používá jako zdroj dat pro příklady.| [Model k učení se JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| Ukázkový konfigurační soubor **mapování modelu ER**, který implementuje model dat ER pro příklady. | [Mapování k učení se JOIN data sources.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Ukázkový konfigurační soubor **formátu ER**. V tomto souboru jsou popsána data pro naplnění součásti formátu ER pro příklady. | [Formát k učení se JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivace zprostředkovatele konfigurací
 
@@ -128,13 +128,13 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
     3. Vazba **ConfigurationTitle: String = @.'>Relations'.Solution.Name** označuje, že se název konfigurace ER vybírá z pole **Název** tabulky **ERSolutionTable**, do které se přistupuje pomocí vztahu N:1 (**'>Relations'**) mezi tabulkami **ERSolutionVersionTable** a **ERSolutionTable**. Názvy konfigurací ER pro aktuální instanci aplikace jsou uvedeny ve stromu konfigurací na stránce **Konfigurace**.
     4. Vazba **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** znamená, že se název poskytovatele konfigurace, který vlastní současnou konfiguraci, odvozuje z pole **Název** tabulky **ERVendorTable**, ke které lze získat přístup pomocí vztahu n:1 mezi tabulkami **ERSolutionTable** a **ERVendorTable**. Názvy poskytovatelů konfigurací ER pro každou konfiguraci jsou uvedeny ve stromu konfigurací na stránce **Konfigurace**. Úplný seznam poskytovatelů konfigurace ER lze nalézt na stránce tabulky **Správa organzace \> Elekronické výkaznictví \> Poskytovatel konfigurace**.
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set1Review.PNG)
+    ![Stránka návrháře mapování modelů ER, seznam omezených položek datového modelu](./media/GER-JoinDS-Set1Review.PNG)
 
 6. Ve stromu konfigurací rozbalte položky datového modelu **Set1.Summary**:
 
     1. Vazba **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** označuje, že položka **Set1.Summary.VersionsNumber** je vázaná na souhrnné pole **VersionsNumber** zdroje dat **VersionsSummary** typu **GroupBy**, který byl konfigurován na vracení počtu záznamů tabulky **ERSolutionVersionTable** prostřednictvím zdroje dat **Versions**.
 
-    ![Stránka parametrů zdroje dat GROUPBY](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Upravte stránku s parametry „Seskupit podle“](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Zavřete stránku.
 
@@ -144,11 +144,11 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
 1. Ve stromu konfigurací rozbalte položky datového modelu **Set2** a **Set2. Details**. Vazba **Details: Record list = Details** naznačuje, že je položka **Set2.Details** vázaná na zdroj dat **Details** konfigurovaný jako zdroj dat typu **Join**.
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set2Review.PNG)
+    ![Stránka návrháře mapování modelu ER zobrazující rozbalenou Set2: Záznam položek datového modelu](./media/GER-JoinDS-Set2Review.PNG)
 
     Zdroj dat **Join** lze přidat výběrem zdroje dat **Functions\Join**:
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![Stránka návrháře mapování modelů ER, spojit typ datového zdroje](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Vyberte zdroj dat **Detail** s.
 3. V podokně **Zdroje dat** vyberte **Upravit**.
@@ -196,21 +196,21 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     Tento formát je určen k naplnění vygenerovaného textového souboru s použitím nového řádku pro každou verzi konfigurace ER (sekvence **Verze**). Každý generovaný řádek bude obsahovat název poskytovatele konfigurace, který vlastní aktuální konfiguraci, název konfigurace a verzi konfigurace oddělené středníkem. Poslední řádek generovaného souboru bude obsahovat počet zjištěných verzí konfigurací ER (**souhrnná** sekvence).
 
-    ![Stránka návrháře formátu ER](./media/GER-JoinDS-FormatReview.PNG)
+    ![Stránka návrháře formátu ER, karta Formát](./media/GER-JoinDS-FormatReview.PNG)
 
     Zdroje dat **Data** a **Souhrn** slouží k naplnění podrobností o verzi konfigurace do generovaného souboru:
 
     - Informace z datového modelu **Set1** jsou použity při výběru volby **Ne** pro zdroj dat **Selektor** v době běhu na stránce uživatelského dialogového okna při spuštění formátu ER.
     - Informace z datového modelu **Set2** jsou použity při výběru volby **Ano** pro zdroj dat **Selektor** v době běhu na stránce uživatelského dialogového okna při spuštění formátu ER.
 
-    ![Stránka návrháře formátu ER](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![Stránka návrháře formátu ER, karta Mapování](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Vyberte **Spustit**.
 10. Na stránce dialogového okna vyberte **Ne** v poli **Použít zdroj dat JOIN**.
 11. Vyberte **OK**.
 12. Zkontrolujte vygenerovaný soubor.
 
-    ![Stránka dialogového okna uživatele ER](./media/GER-JoinDS-Set1Run.PNG)
+    ![Soubor generovaný parametry elektronické zprávy nepoužívá zdroj dat JOIN](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analýza sledování spouštění formátu ER
 
@@ -224,7 +224,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
     - **ERSolutionTable** byla volána tolikrát, kolikrát máte v tabulce **ERSolutionVersionTable** záznamy o konfiguraci verze, zatímco počet takových volání může být v některých případech snížen pro zlepšení výkonu.
     - **ERVendorTable** byla volána dvakrát pro každý záznam verze konfigurace, který byl zjištěn v tabulce **ERSolutionVersionTable**, zatímco počet takových volání může být v některých případech rovněž snížen.
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Statistiky vykonávání na stránce návrháře mapování modelu ER](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Zavřete stránku.
 
@@ -236,7 +236,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 4. Vyberte **OK**.
 5. Zkontrolujte vygenerovaný soubor.
 
-    ![Stránka dialogového okna uživatele ER](./media/GER-JoinDS-Set2Run.PNG)
+    ![Soubor generovaný parametry elektronické zprávy používá zdroj dat JOIN](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analýza sledování spouštění formátu ER
 
@@ -249,11 +249,11 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
     - Aplikační databáze byla volána jednou za účelem získání záznamů z tabulek **ERVendorTable**, **ERSolutionTable**, a **ERSolutionVersionTable** pro přístup k požadovaným polím.
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set2Run2.PNG)
+    ![Údaje statistik výkonu na stránce návrháře mapování modelu ER](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Aplikační databáze byla volána jednou za účelem výpočtu počtu konfiguračních verzí pomocí spojení, která byla nakonfigurována ve zdroji dat **Podrobnosti**.
 
-    ![Stránka Návrhář mapování modelu ER](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Stránka návrháře mapování modelů ER zobrazující volání databáze aplikací](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Omezení
 

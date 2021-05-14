@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800440"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937005"
 ---
 # <a name="clienteling-overview"></a>Přehled clientelingu
 
@@ -60,7 +60,7 @@ Zaměstnanci obchodu mohou rovněž používat poznámky k záznamu obecných in
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integrace s aplikací Dynamics 365 Customer Insights
 
-Při použití aplikace Dynamics 365 Customer Insights mohou maloobchodní prodejci agregovat data z různých systémů, které zákazníci používají pro interakci se značkou maloobchodního prodejce. Poté mohou pomocí těchto dat vygenerovat jediné zobrazení zákazníka a odvodit přehledy. Integrace aplikace Customer Insights s aplikací Commerce umožňuje maloobchodním prodejcům vybrat jedno nebo více měřítek, které mají být zobrazeny na kartě zákazníka v klientské knize. Maloobchodníci mohou například použít data v Customer Insights k výpočtu pravděpodobnosti odchodu zákazníka a k definování „další nejlepší akce“. Jsou-li tyto hodnoty definovány jako měřítka, lze je zobrazit na kartě zákazníka a poskytnout důležité informace pro zaměstnance obchodu. Další informace o Customer Insights naleznete v dokumentaci [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview). Další informace o měřítkách naleznete v tématu [Měřítka](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Při použití aplikace Dynamics 365 Customer Insights mohou maloobchodní prodejci agregovat data z různých systémů, které zákazníci používají pro interakci se značkou maloobchodního prodejce. Poté mohou pomocí těchto dat vygenerovat jediné zobrazení zákazníka a odvodit přehledy. Integrace aplikace Customer Insights s aplikací Commerce umožňuje maloobchodním prodejcům vybrat jedno nebo více měřítek, které mají být zobrazeny na kartě zákazníka v klientské knize. Maloobchodníci mohou například použít data v Customer Insights k výpočtu pravděpodobnosti odchodu zákazníka a k definování „další nejlepší akce“. Jsou-li tyto hodnoty definovány jako měřítka, lze je zobrazit na kartě zákazníka a poskytnout důležité informace pro zaměstnance obchodu. Další informace o Customer Insights naleznete v dokumentaci [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview). Další informace o měřítkách naleznete v tématu [Měřítka](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Nastavení clientelingu
 
@@ -73,7 +73,7 @@ Chcete-li ve vašem prostředí zapnout funkci clientelingu, postupujte podle n�
 2. Zapněte funkci **Clienteling** volbou **Povolit nyní**.
 3. Na stránce **Parametry Commerce** na kartě **Číselná řada** vyberte řádek identifikátoru **Identifikátor knihy klienta**. V poli **Kód číselné řady** vyberte číselnou řadu. Systém použije tuto číselnou řadu k přiřazení ID ke klientským knihám.
 4. Zvolte **Uložit**.
-5. Vytvořte novou skupinu atributů obsahující atributy, které chcete zaznamenat pro zákazníky, kteří jsou spravováni v klientských knihách. Pokyny naleznete v tématu [Atributy a skupiny atributů](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Vytvořte novou skupinu atributů obsahující atributy, které chcete zaznamenat pro zákazníky, kteří jsou spravováni v klientských knihách. Pokyny naleznete v tématu [Atributy a skupiny atributů](./attribute-attributegroups-lifecycle.md).
 
     - Definujte požadované atributy jako **Lze upřesnit**. Tento atribut pak mohou zaměstnanci obchodu použít k filtrování knihy klienta.
     - Nastavte pořadí zobrazení těchto atributů. Toto pořadí zobrazení určuje, které atributy mají být zobrazeny na kartě zákazníka v klientské knize. Pořadí zobrazení 1 je považováno za vyšší než pořadí zobrazení 2. Proto atribut, který má pořadí zobrazení 1, bude zobrazen před atributem, který má pořadí zobrazení 2.
@@ -103,18 +103,18 @@ Chcete-li zapnout integraci Customer Insights s aplikací Commerce, musíte se u
 
 Pro nastavení integrace postupujte následujícím způsobem.
 
-1. Na webu Azure Portal zaregistrujte novou aplikaci a poznamenejte si název aplikace, ID aplikace a tajný klíč. Tyto informace budou použity pro autentizaci mezi službami mezi Commerce a Customer Insights. Poznamenejte si tajný kód bezpečně, protože bude nutné jej uložit do trezoru klíčů. V následujícím příkladu použijte CI_Access_name, CI_Access_AppID, CI_Access_Secret jako název aplikace, ID aplikace a tajný kód. Další informace naleznete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. Na webu Azure Portal zaregistrujte novou aplikaci a poznamenejte si název aplikace, ID aplikace a tajný klíč. Tyto informace budou použity pro autentizaci mezi službami mezi Commerce a Customer Insights. Poznamenejte si tajný kód bezpečně, protože bude nutné jej uložit do trezoru klíčů. V následujícím příkladu použijte CI_Access_name, CI_Access_AppID, CI_Access_Secret jako název aplikace, ID aplikace a tajný kód. Další informace naleznete v tématu [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Proveďte kroky, abyste si před vypršením platnosti mohli změnit tajný klíč. V opačném případě dojde k neočekávanému zastavení integrace.
 
 2. Přejděte do instance Customer Insights a vyhledejte název aplikace vytvořené výše (v tomto příkladu „CI_Access_name“).
-3. Vytvořte trezor klíčů Azure a poznamenejte si název a adresu URL (v tomto příkladu „KeyVaultName“, „KeyVaultURL“). Pokyny naleznete v tématu [Rychlý start: nastavení a načtení tajného klíče z Azure Key Vault pomocí portálu Azure](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Vytvořte trezor klíčů Azure a poznamenejte si název a adresu URL (v tomto příkladu „KeyVaultName“, „KeyVaultURL“). Pokyny naleznete v tématu [Rychlý start: nastavení a načtení tajného klíče z Azure Key Vault pomocí portálu Azure](/azure/key-vault/quick-create-portal).
 4. Uložte tajný kód (v tomto příkladu „CI_Access_Secret“) do trezoru. Když je tento tajný kód uložen v trezoru, získá název. Poznamenejte si název tajného kódu (v tomto příkladu „SecretName“).
 5. Chcete-li získat přístup k tajnému kódu z Azure Key Vault, musíte vytvořit jinou aplikaci s ID aplikace a tajným kódem (v tomto příkladu „KeyVault_Access_AppID“ a „KeyVault_Access_Secret“). Poznamenejte si tajemství bezpečně, protože se již nebude znovu zobrazovat.
 6. Dále musíte aplikaci udělit oprávnění pro přístup k trezoru klíčů z Commerce pomocí API. Přejděte na stránku aplikace v portálu Azure. V části **Spravovat** vyberte **Oprávnění API**. Přidejte oprávnění k přístupu **Azure key vault**. U tohoto oprávnění vyberte **Zásady přístupu**. Vyberte šablonu jako **Správa tajného kódu** a vyberte možnost **Získat**, **Seznam**, **Dešifrovat** a **Šifrovat**. 
 5. V programu Commerce Headquarters přejděte do **Správa systému \> Nastavení \> Parametry úložiště klíčů** a zadejte požadované informace o úložišti klíčů. Poté v poli **Klient úložiště klíčů** zadejte ID aplikace, které jste použili v kroku 4, aby aplikace Commerce mohla používat tajné klíče v úložišti klíčů.
-6. Chcete-li přidat aplikaci vytvořenou v kroku 1 do seznamu bezpečných aplikací (někdy označovaných jako bezpečný seznam), přejděte na Customer Insights a vyberte přístup **Zobrazení** k aplikaci. Pokyny naleznete v tématu [Oprávnění](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Chcete-li přidat aplikaci vytvořenou v kroku 1 do seznamu bezpečných aplikací (někdy označovaných jako bezpečný seznam), přejděte na Customer Insights a vyberte přístup **Zobrazení** k aplikaci. Pokyny naleznete v tématu [Oprávnění](/dynamics365/ai/customer-insights/pm-permissions).
 7. Na stránce **Správa systému > Nastavení > Parametry trezoru klíčů** na Commerce HQ upravte pole, jak je popsáno níže: 
 
 - **Key Vault url**: "KeyVaultURL" (z kroku 3 výše).
