@@ -1,74 +1,109 @@
 ---
 title: Vytváření předdefinovaných variant produktů
 description: Tento postup vás provede vytvořením variant produktu pro základní produkt za pomoci kombinací dimenzí produktu.
-author: ShylaThompson
-ms.date: 08/29/2018
+author: t-benebo
+manager: tfehr
+ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8340d295ffd072c95d9b174507ef4203131c8165
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809343"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938195"
 ---
-# <a name="create-predefined-product-variants"></a><span data-ttu-id="d063d-103">Vytváření předdefinovaných variant produktů</span><span class="sxs-lookup"><span data-stu-id="d063d-103">Create predefined product variants</span></span>
+# <a name="predefined-product-variants"></a><span data-ttu-id="89167-103">Předdefinované varianty produktů</span><span class="sxs-lookup"><span data-stu-id="89167-103">Predefined product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d063d-104">Tento postup vás provede vytvořením variant produktu pro základní produkt za pomoci kombinací dimenzí produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-104">This procedure walks through creating product variants for a product master using the combinations of product dimensions.</span></span> <span data-ttu-id="d063d-105">K vytvoření tohoto postupu je použita ukázková společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="d063d-105">The demo company used to create this procedure is USMF.</span></span>
+## <a name="example-scenario-create-predefined-product-variants"></a><span data-ttu-id="89167-104">Příklad scénáře: Vytváření předdefinovaných variant produktů</span><span class="sxs-lookup"><span data-stu-id="89167-104">Example scenario: Create predefined product variants</span></span>
 
+<span data-ttu-id="89167-105">Tento příklad scénáře vám ukáže, jak vytvořit varianty produktu pro základní produkt za pomoci kombinací dimenzí produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-105">This example scenario shows how to create product variants for a product master using a combinations of product dimensions.</span></span>
 
-## <a name="create-a-product-master"></a><span data-ttu-id="d063d-106">Vytvoření základního produktu</span><span class="sxs-lookup"><span data-stu-id="d063d-106">Create a product master</span></span>
-1. <span data-ttu-id="d063d-107">Přejděte do nabídky Řízení informací o produktech > Produkty > Základní produkty.</span><span class="sxs-lookup"><span data-stu-id="d063d-107">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="d063d-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d063d-108">Click New.</span></span>
-3. <span data-ttu-id="d063d-109">Zadejte hodnotu do pole Číslo produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="d063d-110">Ruční zadání čísla produktu je povinné, pouze není-li nastavena číselná řada pro pole čísla produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-110">Entering a product number manually is only required if no number sequence has been set for the product number field.</span></span> <span data-ttu-id="d063d-111">Jinak řečeno tento krok přeskočte, je-li pro dané pole nastavena číselná řada.</span><span class="sxs-lookup"><span data-stu-id="d063d-111">In other words, skip the step if number sequence has been set for the field.</span></span>  
-4. <span data-ttu-id="d063d-112">Do pole Název produktu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-112">In the Product name field, type a value.</span></span>
-5. <span data-ttu-id="d063d-113">V poli Skupina dimenze produktu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-113">In the Product dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="d063d-114">Vyberte skupinu dimenzí produktu SizeCol (velikost a barva).</span><span class="sxs-lookup"><span data-stu-id="d063d-114">Select the product dimension group SizeCol (Size and Color).</span></span>  
-6. <span data-ttu-id="d063d-115">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d063d-115">Click OK.</span></span>
+### <a name="make-demo-data-available"></a><span data-ttu-id="89167-106">Zpřístupnění ukázkových dat</span><span class="sxs-lookup"><span data-stu-id="89167-106">Make demo data available</span></span>
 
-## <a name="add-product-dimensions"></a><span data-ttu-id="d063d-116">Přidání dimenzí produktu</span><span class="sxs-lookup"><span data-stu-id="d063d-116">Add product dimensions</span></span>
-1. <span data-ttu-id="d063d-117">Klikněte na Dimenze produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-117">Click Product dimensions.</span></span>
-    * <span data-ttu-id="d063d-118">Tento příklad ukazuje, jak zadávat dimenze produktu ručně.</span><span class="sxs-lookup"><span data-stu-id="d063d-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="d063d-119">Rovněž je možné vybrat velikost, barvu nebo skupinu stylů, která obsahuje hodnoty dimenze produktu, které chcete použít.</span><span class="sxs-lookup"><span data-stu-id="d063d-119">You can also choose to select a size, color or style group that includes the product dimension values you want to use.</span></span>  
-2. <span data-ttu-id="d063d-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d063d-120">Click New.</span></span>
-3. <span data-ttu-id="d063d-121">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d063d-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="d063d-122">V poli Velikost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-122">In the Size field, enter or select a value.</span></span>
-5. <span data-ttu-id="d063d-123">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d063d-123">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="d063d-124">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="d063d-124">Click New.</span></span>
-7. <span data-ttu-id="d063d-125">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d063d-125">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="d063d-126">V poli Velikost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-126">In the Size field, enter or select a value.</span></span>
-9. <span data-ttu-id="d063d-127">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d063d-127">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="d063d-128">Klikněte na kartu Barvy.</span><span class="sxs-lookup"><span data-stu-id="d063d-128">Click the Colors tab.</span></span>
-11. <span data-ttu-id="d063d-129">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d063d-129">Click New.</span></span>
-12. <span data-ttu-id="d063d-130">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d063d-130">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="d063d-131">V poli Barva zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-131">In the Color field, enter or select a value.</span></span>
-14. <span data-ttu-id="d063d-132">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d063d-132">In the Name field, type a value.</span></span>
-15. <span data-ttu-id="d063d-133">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="d063d-133">Click New.</span></span>
-16. <span data-ttu-id="d063d-134">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d063d-134">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="d063d-135">V poli Barva zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d063d-135">In the Color field, enter or select a value.</span></span>
-18. <span data-ttu-id="d063d-136">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d063d-136">In the Name field, type a value.</span></span>
-19. <span data-ttu-id="d063d-137">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d063d-137">Click Save.</span></span>
-20. <span data-ttu-id="d063d-138">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d063d-138">Close the page.</span></span>
+<span data-ttu-id="89167-107">Pokud chcete provést tento scénář pomocí zde navržených hodnot, musíte mít nainstalována ukázková data a musíte vybrat právnickou osobu *USMF*.</span><span class="sxs-lookup"><span data-stu-id="89167-107">To follow this scenario using the values suggested here, you must have demo data installed, and you must select the *USMF* legal entity.</span></span>
 
-## <a name="generate-product-variants"></a><span data-ttu-id="d063d-139">Vytvoření variant produktů</span><span class="sxs-lookup"><span data-stu-id="d063d-139">Generate product variants</span></span>
-1. <span data-ttu-id="d063d-140">Klikněte na Varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-140">Click Product variants.</span></span>
-2. <span data-ttu-id="d063d-141">Klikněte na Návrhy variant.</span><span class="sxs-lookup"><span data-stu-id="d063d-141">Click Variant suggestions.</span></span>
-3. <span data-ttu-id="d063d-142">Klikněte na Vybrat vše.</span><span class="sxs-lookup"><span data-stu-id="d063d-142">Click Select all.</span></span>
-    * <span data-ttu-id="d063d-143">V tomto příkladu jsou vybrány všechny možné varianty.</span><span class="sxs-lookup"><span data-stu-id="d063d-143">In this example, all possible variants are selected.</span></span> <span data-ttu-id="d063d-144">Pokud se použije pouze podmnožina možných kombinací dimenzí produktu pro vytváření variant, můžete vybrat jednotlivé položky.</span><span class="sxs-lookup"><span data-stu-id="d063d-144">If only a subset of the possible product dimension combinations will be used to create variants, you can select the individual entries.</span></span>  
-4. <span data-ttu-id="d063d-145">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="d063d-145">Click Create.</span></span>
-    * <span data-ttu-id="d063d-146">Popisy je možné generovat pro všechny vaše varianty na základě kombinace hodnot dimenze produktu.</span><span class="sxs-lookup"><span data-stu-id="d063d-146">You can generate descriptions for all your variants based on the combination of product dimension values.</span></span> <span data-ttu-id="d063d-147">Popisy jsou volitelné.</span><span class="sxs-lookup"><span data-stu-id="d063d-147">The descriptions are optional.</span></span>  
-5. <span data-ttu-id="d063d-148">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d063d-148">Click Save.</span></span>
+### <a name="step-1-create-a-product-master"></a><span data-ttu-id="89167-108">Krok 1: Vytvoření základního produktu</span><span class="sxs-lookup"><span data-stu-id="89167-108">Step 1: Create a product master</span></span>
 
+<span data-ttu-id="89167-109">Vytvoření základního produktu:</span><span class="sxs-lookup"><span data-stu-id="89167-109">To create a product master:</span></span>
 
+1. <span data-ttu-id="89167-110">Přejděte do nabídky **Řízení informací o produktech > Produkty > Základní produkty**.</span><span class="sxs-lookup"><span data-stu-id="89167-110">Go to **Product information management > Products > Product masters**.</span></span>
+1. <span data-ttu-id="89167-111">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="89167-111">Select **New**.</span></span>
+1. <span data-ttu-id="89167-112">Pokud pole **Číslo produktu** již nezobrazuje číslo, pak zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="89167-112">If the **Product number** field doesn't already show a number, then enter a value.</span></span> <span data-ttu-id="89167-113">Tento krok je vyžadován, jen pokud nebyla nastavena žádná číselná řada pro toto pole.</span><span class="sxs-lookup"><span data-stu-id="89167-113">This is only required if no number sequence has been set for this field.</span></span>
+1. <span data-ttu-id="89167-114">Do pole **Název produktu** zadejte název.</span><span class="sxs-lookup"><span data-stu-id="89167-114">Enter a name in the **Product name** field.</span></span>
+1. <span data-ttu-id="89167-115">V poli **Skupina dimenzí produktu** vyberte skupinu dimenze produktu *SizeCol* (velikost a barva).</span><span class="sxs-lookup"><span data-stu-id="89167-115">In the **Product dimension group** field, select the product dimension group *SizeCol* (Size and Color).</span></span>
+1. <span data-ttu-id="89167-116">Vyberte **OK** k vytvoření a otevření nového hlavního produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-116">Select **OK** to create and open the new product master.</span></span>
+
+### <a name="step-2-add-product-dimensions"></a><span data-ttu-id="89167-117">Krok 2: Přidání dimenzí produktu</span><span class="sxs-lookup"><span data-stu-id="89167-117">Step 2: Add product dimensions</span></span>
+
+<span data-ttu-id="89167-118">Tento příklad ukazuje, jak zadávat dimenze produktu ručně.</span><span class="sxs-lookup"><span data-stu-id="89167-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="89167-119">Rovněž je možné vybrat velikost, barvu nebo skupinu stylů, která obsahuje hodnoty dimenze produktu, které chcete použít.</span><span class="sxs-lookup"><span data-stu-id="89167-119">You can also choose to select a size, color, or style group that includes the product dimension values you want to use.</span></span>
+
+<span data-ttu-id="89167-120">Přidání dimenzí produktu:</span><span class="sxs-lookup"><span data-stu-id="89167-120">To add product dimensions:</span></span>
+
+1. <span data-ttu-id="89167-121">Když je nový hlavní produkt stále otevřený, vyberte **Rozměry produktu** v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="89167-121">With your new product master still open, select **Product dimensions** on the Action Pane.</span></span>
+1. <span data-ttu-id="89167-122">Otevřete kartu **Velikost** a vyberte **Nový** na panelu nástrojů pro přidání řádku do mřížky.</span><span class="sxs-lookup"><span data-stu-id="89167-122">Open the **Size** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="89167-123">Proveďte následující nastavení pro nový řádek:</span><span class="sxs-lookup"><span data-stu-id="89167-123">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="89167-124">**Velikost:** Vyberte hodnotu velikosti.</span><span class="sxs-lookup"><span data-stu-id="89167-124">**Size:** Select a size value.</span></span>
+    - <span data-ttu-id="89167-125">**Název**: Zadejte název velikosti.</span><span class="sxs-lookup"><span data-stu-id="89167-125">**Name:** Enter a name for the size.</span></span>
+1. <span data-ttu-id="89167-126">Vyberte **Nový** na panelu nástrojů a přidejte do mřížky druhou velikost s novou hodnotou **Velikost** a **Název**.</span><span class="sxs-lookup"><span data-stu-id="89167-126">Select **New** on the toolbar and add a second size to the grid with a new **Size** and **Name**.</span></span>
+1. <span data-ttu-id="89167-127">Otevřete kartu **Barvy** a vyberte **Nový** na panelu nástrojů pro přidání řádku do mřížky.</span><span class="sxs-lookup"><span data-stu-id="89167-127">Open the **Colors** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="89167-128">Proveďte následující nastavení pro nový řádek:</span><span class="sxs-lookup"><span data-stu-id="89167-128">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="89167-129">**Barva:** Vyberte hodnotu barvy.</span><span class="sxs-lookup"><span data-stu-id="89167-129">**Color:** Select a color value.</span></span>
+    - <span data-ttu-id="89167-130">**Název**: Zadejte název barvy.</span><span class="sxs-lookup"><span data-stu-id="89167-130">**Name:** Enter a name for the color.</span></span>
+1. <span data-ttu-id="89167-131">Vyberte **Nový** na panelu nástrojů a přidejte do mřížky druhou barvu s novou hodnotou **Barva** a **Název**.</span><span class="sxs-lookup"><span data-stu-id="89167-131">Select **New** on the toolbar and add a second color to the grid with a new **Color** and **Name**.</span></span>
+1. <span data-ttu-id="89167-132">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="89167-132">Select **Save**.</span></span>
+1. <span data-ttu-id="89167-133">Zavřete stránku a vraťte se k novému hlavnímu produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-133">Close the page to return to your new product master.</span></span>
+
+### <a name="step-3-generate-product-variants"></a><span data-ttu-id="89167-134">Krok 3: Vytvoření variant produktů</span><span class="sxs-lookup"><span data-stu-id="89167-134">Step 3: Generate product variants</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="89167-135">Tato část popisuje, jak generovat varianty produktu, když funkce *Vylepšení stránky s návrhy variant* není povolena.</span><span class="sxs-lookup"><span data-stu-id="89167-135">This section describes how to generate product variants when the *Variant suggestions page improvements* feature isn't enabled.</span></span> <span data-ttu-id="89167-136">V další části najdete podrobnosti o tom, jak generovat varianty produktu, když je tato funkce k dispozici.</span><span class="sxs-lookup"><span data-stu-id="89167-136">See the next section for details about how to generate product variants when that feature is available.</span></span>
+
+<span data-ttu-id="89167-137">Vytvoření variant produktů:</span><span class="sxs-lookup"><span data-stu-id="89167-137">To generate product variants:</span></span>
+
+1. <span data-ttu-id="89167-138">Když je nový hlavní produkt stále otevřený, vyberte **Varianty produktu** v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="89167-138">With your new product master still open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="89167-139">V podokně Akce vyberte možnost **Návrhy variant**.</span><span class="sxs-lookup"><span data-stu-id="89167-139">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="89167-140">Systém generuje seznam všech možných kombinací velikostí a barev, které jste pro produkt definovali.</span><span class="sxs-lookup"><span data-stu-id="89167-140">The system generates a list with all possible combinations of the sizes and colors you defined for the product.</span></span> <span data-ttu-id="89167-141">Vyberte **Vybrat vše** na panelu nástrojů.</span><span class="sxs-lookup"><span data-stu-id="89167-141">Select **Select all** on the toolbar.</span></span>
+    - <span data-ttu-id="89167-142">V tomto příkladu vyberte všechny možné varianty.</span><span class="sxs-lookup"><span data-stu-id="89167-142">In this example, select all of the possible variants.</span></span> <span data-ttu-id="89167-143">Pokud chcete použít pouze podmnožinu možných kombinací dimenzí produktu, zaškrtněte podle potřeby pouze požadovaná zaškrtávací políčka.</span><span class="sxs-lookup"><span data-stu-id="89167-143">If you only want to use a subset of the possible product dimension combinations, select only the required check boxes as needed.</span></span>  
+1. <span data-ttu-id="89167-144">Vyberte **Vytvořit**.</span><span class="sxs-lookup"><span data-stu-id="89167-144">Select **Create**.</span></span>
+1. <span data-ttu-id="89167-145">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="89167-145">Select **Save**.</span></span>
+
+## <a name="improved-variant-suggestions"></a><span data-ttu-id="89167-146">Vylepšené návrhy variant</span><span class="sxs-lookup"><span data-stu-id="89167-146">Improved variant suggestions</span></span>
+
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
+<span data-ttu-id="89167-147">Funkce *Vylepšení stránky s návrhy variant* vylepšuje stránku **Návrhy variant** věnovanou problémům s výkonem a použitelností pro společnosti, které mají vysoký počet kombinací dimenzí produktů.</span><span class="sxs-lookup"><span data-stu-id="89167-147">The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations.</span></span> <span data-ttu-id="89167-148">Vylepšený proces výběru hodnot dimenzí produktu, pro které se generují návrhy variant, umožňuje rychlejší a snazší identifikaci a vydání příslušné sady variant produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-148">The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.</span></span>
+
+<span data-ttu-id="89167-149">Tato funkce přidává následující vylepšení:</span><span class="sxs-lookup"><span data-stu-id="89167-149">The following improvements are added by this feature:</span></span>
+
+- <span data-ttu-id="89167-150">**Odložené generování návrhů variant:** Stránka **Návrhy variant** již nezobrazuje návrhy při prvním otevření.</span><span class="sxs-lookup"><span data-stu-id="89167-150">**Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it.</span></span> <span data-ttu-id="89167-151">Místo toho musíte explicitně zvolit, které hodnoty budete potřebovat, a poté vybrat tlačítko **Navrhnout** pro generování kombinací.</span><span class="sxs-lookup"><span data-stu-id="89167-151">Instead, you must explicitly choose which values you will need and then select the **Suggest** button to generate the combinations.</span></span> <span data-ttu-id="89167-152">Díky tomu je proces viditelnější a interaktivnější.</span><span class="sxs-lookup"><span data-stu-id="89167-152">This makes the process more visible and interactive.</span></span>
+- <span data-ttu-id="89167-153">**Výběr hodnot rozměrů:** Když máte mnoho hodnot dimenzí, obvykle vás zajímá generování návrhů variant, které obsahují jen několik z nich (například při zavádění nové sady barev nebo stylů).</span><span class="sxs-lookup"><span data-stu-id="89167-153">**Selection of dimensions values:** When you have many dimension values, you are typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles).</span></span> <span data-ttu-id="89167-154">Díky vylepšenému designu můžete vybrat hodnoty dimenzí, pro které chcete generovat návrhy variant produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-154">With the improved design, you can select the dimension values for which you want to generate product variant suggestions.</span></span> <span data-ttu-id="89167-155">To značně zvyšuje relevanci navrhovaných variant a zlepšuje výkon systému i produktivitu uživatelů.</span><span class="sxs-lookup"><span data-stu-id="89167-155">This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.</span></span>
+
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a><span data-ttu-id="89167-156">Zapněte funkci vylepšení stránky s návrhy variant</span><span class="sxs-lookup"><span data-stu-id="89167-156">Turn on the Variant suggestions page improvements feature</span></span>
+
+<span data-ttu-id="89167-157">Než můžete použít funkci *Vylepšení stránky s návrhy variant*, musíte ji v systému zapnout.</span><span class="sxs-lookup"><span data-stu-id="89167-157">Before you can use *Variant suggestions page improvements* feature, it must be turned on in your system.</span></span> <span data-ttu-id="89167-158">Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji.</span><span class="sxs-lookup"><span data-stu-id="89167-158">Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.</span></span> <span data-ttu-id="89167-159">V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:</span><span class="sxs-lookup"><span data-stu-id="89167-159">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="89167-160">**Modul**: *Řízení informací o produktech*</span><span class="sxs-lookup"><span data-stu-id="89167-160">**Module:** *Product information management*</span></span>
+- <span data-ttu-id="89167-161">**Název funkce:** *Vylepšení stránky s návrhy variant*</span><span class="sxs-lookup"><span data-stu-id="89167-161">**Feature name:** *Variant suggestions page improvements*</span></span>
+
+### <a name="work-with-the-improved-variant-suggestions"></a><span data-ttu-id="89167-162">Práce s vylepšenými návrhy variant</span><span class="sxs-lookup"><span data-stu-id="89167-162">Work with the improved variant suggestions</span></span>
+
+<span data-ttu-id="89167-163">Vytváření návrhů variant produktu, když je funkce *Vylepšení stránky s návrhy variant* zapnutá:</span><span class="sxs-lookup"><span data-stu-id="89167-163">To generate product variant suggestions when the *Variant suggestions page improvements* feature is enabled:</span></span>
+
+1. <span data-ttu-id="89167-164">Otevřete nebo vytvořte hlavní produkt a přidejte do něj požadované dimenze produktu, jak je popsáno v předchozí části.</span><span class="sxs-lookup"><span data-stu-id="89167-164">Open or create a product master and add the required product dimensions to it, as described in the previous section.</span></span>
+1. <span data-ttu-id="89167-165">Když je hlavní produkt otevřený, vyberte **Varianty produktu** v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="89167-165">With the product master open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="89167-166">V podokně Akce vyberte možnost **Návrhy variant**.</span><span class="sxs-lookup"><span data-stu-id="89167-166">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="89167-167">Vyberte hodnoty, které chcete použít pro každou dimenzi.</span><span class="sxs-lookup"><span data-stu-id="89167-167">Select the values that you want to use for each of the dimensions.</span></span>
+1. <span data-ttu-id="89167-168">Na horním panelu nástrojů vyberte **Navrhnout**.</span><span class="sxs-lookup"><span data-stu-id="89167-168">On the top toolbar, select **Suggest**.</span></span>
+1. <span data-ttu-id="89167-169">Systém generuje seznam všech možných kombinací velikostí a barev, které jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="89167-169">The system generates a list with all possible combinations of the sizes and colors you selected.</span></span> <span data-ttu-id="89167-170">Na rychlé kartě **Navrhované varianty** zaškrtněte políčko pro každou kombinaci dimenze produktu, kterou chcete použít, nebo vyberte **Vybrat vše** na panelu nástrojů a vyberte je všechny.</span><span class="sxs-lookup"><span data-stu-id="89167-170">On the **Suggested variants** FastTab, select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.</span></span>  
+1. <span data-ttu-id="89167-171">Vybrat **Vytvořit** k přidání variant do aktuálního hlavního produktu.</span><span class="sxs-lookup"><span data-stu-id="89167-171">Select **Create** to add the variants to the current product master.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
