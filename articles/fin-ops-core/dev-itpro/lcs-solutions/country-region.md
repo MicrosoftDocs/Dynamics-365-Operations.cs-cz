@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748458"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920850"
 ---
 # <a name="globalization-resources"></a>Zdroje globalizace
 
 ## <a name="local-and-regional-deployments"></a>Místní a oblastní nasazení
 Pokud vaše vládní předpisy vyžadují, aby byla data uložena odlišně nebo servisována jiným způsobem, než je požadováno pro jiné země/oblasti, mohou při nasazení existovat požadavky země/oblasti, které musíte zvážit. Zvažte následující zdroje, které pro vás mohou být relevantní:
 
-[Aplikace Finance and Operations provozované společností 21Vianet v Číně](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Aplikace Finance and Operations provozované společností 21Vianet v Číně](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalizace a funkce týkající se předpisů
 
@@ -60,7 +60,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 -   [Odeslání výstrah o funkcích týkajících se předpisů specifických pro zemi nebo oblast](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Plány vydání verzí Dynamics 365
-[Plány vydání verzí Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
+[Plány vydání verzí Dynamics 365](/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co je nového v aplikacích Finance and Operations
 [Domovská stránka Co je nového nebo co se změnilo v Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních aplikací Finance and Operations.

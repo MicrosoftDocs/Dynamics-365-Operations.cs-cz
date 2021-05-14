@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d82f31212245044f27558c3cdea78fbcf4988afb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e8b92dc975fdae74e134d86169a2b9ceffe63b62
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829949"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909784"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -94,16 +94,16 @@ Následující záznamy technické konference se zabývají funkcemi správy dod
 
 ## <a name="blogs"></a>Blogy
 
-Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg/) a v [blogu tým výzkumu a vývoje Supply Chain Management v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Většina jich je napsána pro předchozí verzi, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné.
+Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](/archive/blogs/axmfg/) a v [blogu tým výzkumu a vývoje Supply Chain Management v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Většina jich je napsána pro předchozí verzi, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné.
 
 ## <a name="white-papers"></a>Dokumenty white paper
 
-- [Lean Manufacturing: příslib na základě ověření dostupné kapacity a plánování kanbanové úlohy](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean Manufacturing: příslib na základě ověření dostupné kapacity a plánování kanbanové úlohy](/dynamics/s-e/)
 - [Výpočet kusovníku pomocí nákladového formuláře](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
-Ohledně online kurzů a školení se podívejte na [Dynamics 365 Supply Chain Management na Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Supply Chain Management na Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

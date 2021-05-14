@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 33c12fc47dc5781867ad6872a8be2a9ae1f28a2d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813452"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890322"
 ---
 # <a name="finance-home-page"></a>Domovská stránka aplikace Finance
 
@@ -38,11 +38,11 @@ Vyberte oblast funkce, o které chcete získat informace.
         - [Nákladové účetnictví](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Správa výdajů](expense-management/expense-management.md)
-        - [Finanční výkaznictví](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Správa výdajů](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Finanční výkaznictví](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Dlouhodobý majetek](fixed-assets/fixed-assets.md)
         - [Hlavní kniha a finanční výkaznictví](general-ledger/general-ledger.md) 
-        - [Řízení projektů a účetnictví](project-management/overview-project-management-accounting.md)
+        - [Řízení projektů a účetnictví](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Veřejný sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 ### <a name="countryregion-functionality"></a>Funkce země nebo oblasti
 
-Předpisy země/oblasti ovlivňují nastavení daní a další oblasti správy financí. Nahlédněte do části [Lokalizace a funkce týkající se předpisů](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) našeho obsahu nápovědy a dozvíte se o funkcích specifických pro zemi/oblast.
+Předpisy země/oblasti ovlivňují nastavení daní a další oblasti správy financí. Nahlédněte do části [Lokalizace a funkce týkající se předpisů](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) našeho obsahu nápovědy a dozvíte se o funkcích specifických pro zemi/oblast.
 
 ### <a name="additional-content"></a>Další obsah
 
@@ -73,6 +73,6 @@ Funkce Supply Chain Management pokrývá části procesu P2P, které zahrnují p
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
-Ohledně online kurzů a školení se podívejte na [Dynamics 365 Finance na Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Finance na Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

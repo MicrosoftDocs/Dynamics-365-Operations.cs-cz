@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5064ea3b9435d0fb9e97c00df6b17a304b8a6a0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827715"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898129"
 ---
 # <a name="accounts-receivable-home-page"></a>Domovská stránka Pohledávky
 
@@ -39,61 +39,45 @@ Můžete vytvořit faktury odběratelů, které jsou založeny na prodejních ob
 
 Modul Pohledávky lze použít při sledování faktur odběratelů a plateb přijatých od odběratelů. Můžete vytvořit skupiny odběratelů, odběratele, účetní profily, oznámení úroků, upomínky, provize, parametry týkající se odběratelů, poplatků, dodání a místa určení, cizí směnky nebo další typy informací o modulu Pohledávky. 
 
-:::row:::
-    :::column:::
-        - [Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [Účetní profily odběratele](customer-posting-profiles.md)
-        - [Nastavení platební karty, autorizace a záznam](credit-card-authorizations.md)
-        - [Vytvoření faktury odběratele](configure-customer-invoices.md)
-        - [Nastavení a zpracování opakovaných faktur](set-up-process-recurring-invoices.md)
-        - [Oprava volné faktury](correct-free-text-invoice.md)
-    :::column-end:::
-    :::column:::
-        - [Nastavení cizích směnek](set-up-bills-exchange.md)
-        - [Nastavení úrokových sazeb pro kód úroku](set-up-interest-rates-interest-code.md)
-        - [Vzdát, obnovit nebo změnit úrokové poplatky](waive-reinstate-reverse-interest-fees.md)
-        - [Přehled přímého inkasa SEPA](sepa-direct-debit-overview.md)
-        - [Nastavení zmocnění přímého inkasa SEPA](sepa-direct-debit-mandate.md)
-        - [Uzavření modulu Pohledávky](close-accounts-receivable.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [Účetní profily odběratele](customer-posting-profiles.md)
+- [Nastavení platební karty, autorizace a záznam](credit-card-authorizations.md)
+- [Vytvoření faktury odběratele](configure-customer-invoices.md)
+- [Nastavení a zpracování opakovaných faktur](set-up-process-recurring-invoices.md)
+- [Oprava volné faktury](correct-free-text-invoice.md)
+- [Nastavení cizích směnek](set-up-bills-exchange.md)
+- [Nastavení úrokových sazeb pro kód úroku](set-up-interest-rates-interest-code.md)
+- [Vzdát, obnovit nebo změnit úrokové poplatky](waive-reinstate-reverse-interest-fees.md)
+- [Přehled přímého inkasa SEPA](sepa-direct-debit-overview.md)
+- [Nastavení zmocnění přímého inkasa SEPA](sepa-direct-debit-mandate.md)
+- [Uzavření modulu Pohledávky](close-accounts-receivable.md)
+    
 ## <a name="set-up-credit-and-collections"></a>Nastavení kreditu a inkas
 
 Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 
-[Úvěr a inkasa v modulu Pohledávky](collections-credit-accounts-receivable.md)
-
-[Konfigurace modulů Pohledávky a Kredit a inkasa](accounts-receivables-set-up-overview.md)
-
-[Nastavení kreditu a inkas](set-up-collections.md)
+- [Úvěr a inkasa v modulu Pohledávky](collections-credit-accounts-receivable.md)
+- [Konfigurace modulů Pohledávky a Kredit a inkasa](accounts-receivables-set-up-overview.md)
+- [Nastavení kreditu a inkas](set-up-collections.md)
 
 ## <a name="set-up-payments-and-settlements"></a>Nastavení plateb a vyrovnání
 
 Přijměte různé typy plateb od odběratelů, jako například cizí směnky, hotovost, šeky, kreditní karty a elektronické platby. 
 
-:::row:::
-    :::column:::
-        - [Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [Centralizované platby pro modul Pohledávky](centralized-payments-accounts-receivable.md)
-        - [Vyrovnání částečné platby odběratele a konečné platby před datem slevy](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-    :::column-end:::
-    :::column:::
-        - [Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [Vyrovnání částečné platby zákazníka, u níž je více období slev](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [Refundace odběratelům](reimburse-customers.md)
-        - [Platby částečných částek zákazníkům](customer-payments-partial-amount.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+- [Centralizované platby pro modul Pohledávky](centralized-payments-accounts-receivable.md)
+- [Vyrovnání částečné platby odběratele a konečné platby před datem slevy](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+- [Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+- [Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele](settle-partial-customer-payment-discounts-credit-notes.md)
+- [Vyrovnání částečné platby zákazníka, u níž je více období slev](settle-partial-customer-payment-multiple-discount-periods.md)
+- [Refundace odběratelům](reimburse-customers.md)
+- [Platby částečných částek zákazníkům](customer-payments-partial-amount.md)
+   
 ### <a name="additional-resources"></a>Další zdroje
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [Přehled Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [Přehled Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 

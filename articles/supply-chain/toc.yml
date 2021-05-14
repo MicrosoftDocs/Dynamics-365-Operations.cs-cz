@@ -72,12 +72,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.19 (červenec 2021)
+                      href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (květen 2021)
                       href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (duben 2021)
                       href: get-started/whats-new-scm-10-0-17.md
-                    - name: Supply Chain Management 10.0.16 (únor 2021)
-                      href: get-started/whats-new-scm-10-0-16.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -164,6 +164,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vložení aplikací plátna z Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vložení aplikací třetích stran
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nalezení informací pomocí vyhledávání
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Změna data pro relaci
@@ -179,7 +181,7 @@
                 - name: Architektura pro aplikace Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
-                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                  href: /dynamics365/fasttrack/
                 - name: Nasazení projektu implementace
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Plánování prostředí
@@ -206,6 +208,64 @@
           items:
             - name: Zdroje globalizace
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globalizační služby
+              items:
+                - name: Přehled globalizačních služeb
+                  href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Přehled Regulatory Configuration Service
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service - Globalizační funkce
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Elektronická fakturace
+                  items:
+                    - name: Přehled elektronické fakturace
+                      href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Součásti pro správu elektronické fakturace
+                      href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace elektronické fakturace v Regulatory Configuration Services (RCS)
+                      href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vystavení elektronických faktur v aplikacích Finance a Supply Chain Management
+                      href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření účtu úložiště Azure a Key Vault
+                      href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Začínáme
+                      items:
+                        - name: Začněte se správou služby elektronické fakturace
+                          href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Začněte s elektronickou fakturací
+                          href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Začněte s elektronickou fakturací pro Brazílii
+                          href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Začněte s elektronickou fakturací pro Egypt
+                          href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Začněte s elektronickou fakturací pro Itálii
+                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Začněte s elektronickou fakturací pro Mexiko
+                          href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Nastavení elektronické fakturace
+                          href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nejčastější dotazy k elektronické fakturaci
+                      href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Výpočet daně
+                  items:
+                    - name: Přehled výpočtu daně
+                      href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Začněte s výpočtem daně
+                      href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Podpora daňových funkcí u převodních příkazů
+                      href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Přidání datových polí v daňových konfiguracích
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Přidání datových polí do daňové integrace pomocí rozšíření
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Více registračních čísel pro DPH
+                      href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nastavení prostředí pro vyhledávání hlavních dat
+                      href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Povinné aktualizace
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indie
@@ -224,12 +284,18 @@
           items:
             - name: Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
               href: cloud-edge/cloud-edge-landing-page.md
+            - name: Nasazení jednotek škálování hraničního zařízení na vlastní hardware pomocí LBD
+              href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-warehousing.md
             - name: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-warehouse-order.md
+            - name: Úprava skladových zásob
+              href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+            - name: Zprávy procesoru zpráv
+              href: cloud-edge/cloud-edge-message-processor-messages.md
         - name: Správa majetku
           items:
             - name: Přehled správy majetku
@@ -1363,24 +1429,46 @@
                   href: inventory/tasks/set-up-item-arrival-overview-profile.md
             - name: Správa kvality
               items:
-                - name: Přehled správy kvality
-                  href: inventory/enable-quality-management.md
-                - name: Procesy správy kvality
+                - name: Přehled správy kvality a neshod
                   href: inventory/quality-management-processes.md
-                - name: Správa kvality pro procesy skladu
-                  href: inventory/quality-management-for-warehouses-processes.md
-                - name: Řízení neshody
-                  href: inventory/enable-nonconformance-management.md
-                - name: Nastavení požadavků pro správu
-                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
-                - name: "Vytvoření a\_zpracování neshody"
-                  href: inventory/tasks/create-process-non-conformance.md
-                - name: Karanténní příkazy
-                  href: inventory/quarantine-orders.md
-                - name: Nastavení objednávek kvality
-                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Povolení a konfigurace správu kvality a neshod
+                  items:
+                    - name: Povolení správy kvality a neshod
+                      href: inventory/enable-quality-management.md
+                    - name: Zkušební nástroje pro správu kvality
+                      href: inventory/quality-test-instruments.md
+                    - name: Testy správy kvality
+                      href: inventory/quality-tests.md
+                    - name: Zkušební proměnné pro správu kvality
+                      href: inventory/quality-test-variables.md
+                    - name: Zkušební skupiny pro správu kvality
+                      href: inventory/quality-test-groups.md
+                    - name: Skupiny položek správy kvality
+                      href: inventory/quality-groups.md
+                    - name: Vzorkování položek správy kvality
+                      href: inventory/quality-item-sampling.md
+                    - name: Přiřazení kvality
+                      href: inventory/quality-associations.md
+                    - name: Pracovníci odpovědní za schvalování neshod
+                      href: inventory/quality-responsible-workers.md
+                    - name: Typy problémů s neshodou
+                      href: inventory/quality-problem-types.md
+                    - name: Karanténní zóny neshody
+                      href: inventory/quality-quarantine-zones.md
+                    - name: Diagnostické typy neshody
+                      href: inventory/quality-diagnostic-types.md
+                    - name: Operace neshody
+                      href: inventory/quality-operations.md
+                    - name: Provozní náklady neshody
+                      href: inventory/quality-charges.md
+                - name: Práce s objednávkami kvality
+                  href: inventory/quality-orders.md
                 - name: Kontrola kvality zboží
                   href: inventory/tasks/inspect-quality-goods.md
+                - name: "Vytvoření a\_zpracování neshody"
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Práce s objednávkami karantény
+                  href: inventory/quarantine-orders.md
                 - name: Blokování zásob
                   href: inventory/inventory-blocking.md
                 - name: "Vytvoření a\_správa blokování zásob"
@@ -1511,8 +1599,8 @@
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Schválení plánovaných objednávek
                   href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Automatické potvrzení s optimalizací plánování
-                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Potvrdit plánované objednávky
+                  href: master-planning/planning-optimization/planned-order-firming.md
                 - name: Plánování se záporným množstvím na skladě
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Zobrazení historie pánů a plánovacích protokolů
@@ -1628,7 +1716,7 @@
                 - name: Řízení nákladů
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Správa výdajů
-                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Zásoby na skladě
                   href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Schválení faktur
@@ -1636,11 +1724,11 @@
                 - name: Můj tým
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Přehled mobilních aplikací projektu
-                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Časový záznam projektu
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Project Timesheet
-                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Schválení nákupní objednávky
                   href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Prodejní objednávky
@@ -1927,8 +2015,14 @@
                   href: procurement/vendor-onboarding.md
                 - name: Dodavatelská spolupráce s externími dodavateli
                   href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Udržování certifikace dodavatele
+                  href: ../finance/public-sector/manage-vendor-certification.md
+                - name: Požadavky na kategorii od dodavatelů
+                  href: procurement/category-requests-from-vendors.md
                 - name: Dodavatelská spolupráce se zákazníky
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Udržování informací o bankovním účtu dodavatele
+                  href: ../finance/accounts-payable/maintain-vendor-bank-info.md
                 - name: Import katalogů dodavatele
                   href: procurement/vendor-catalogs-import.md
                 - name: Nastavení externího katalogu pro funkci PunchOut e-procurement
@@ -1979,6 +2073,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Vytváření předdefinovaných variant produktů
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Správa měrných jednotek
+                  href: pim/tasks/manage-unit-measure.md
                 - name: Převod měrné jednotky pro variantu produktu
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Vytvoření uvolněného produktu pro jednu společnost
@@ -2141,6 +2237,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Uvolnit strukturu produktu
               href: engineering-change-management/release-product-structure.md
+            - name: Nejčastější dotazy ke správě technických změn
+              href: engineering-change-management/change-management-faq.md
         - name: Řízení výroby
           items:
             - name: Přehled výrobního procesu
@@ -2167,11 +2265,9 @@
                       href: production-control/phantom-items.md
                     - name: Výpočty kusovníku
                       href: cost-management/bom-calculations.md
-                    - name: Správa měrných jednotek
-                      href: pim/tasks/manage-unit-measure.md
                     - name: Parametry výroby v modulu Provádění výroby
                       href: production-control/production-parameters-manufacturing-execution.md
-                    - name: Prostředky aplikace Operations
+                    - name: Provozní prostředky
                       href: production-control/operations-resources.md
                     - name: Vytvoření provozního prostředku
                       href: production-control/tasks/create-operations-resource.md
@@ -2849,6 +2945,10 @@
               href: transportation/tasks/load-template.md
             - name: Profily sazeb
               href: transportation/tasks/setup-a-rating-profile.md
+            - name: Třídy LTL
+              href: transportation/ltl-class.md
+            - name: Kódy NMFC
+              href: transportation/nmfc-codes.md
             - name: Nastavení indexu paliva dopravce
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Nastavení úhrady přepravy
@@ -2937,6 +3037,8 @@
                   href: warehousing/location-product-dimension-mixing.md
                 - name: Seskupení vyskladnění
                   href: warehousing/putaway-clusters.md
+                - name: Správa kvality pro procesy skladu
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Kontrola kvality
                   href: warehousing/quality-check.md
                 - name: Řešení potíží s příchozími skladovými operacemi
@@ -3069,6 +3171,8 @@
                       href: warehousing/manage-warehouse-workers.md
                     - name: Odložené zpracování práce skladu
                       href: warehousing/deferred-put.md
+                    - name: Odložené zpracování ruční operace přesunu zásob
+                      href: warehousing/deferred-processing-manual-inventory-movement.md
                 - name: Cross-docking
                   items:
                     - name: Cross-docking z výrobních příkazů na výstupní překladiště
@@ -3237,6 +3341,40 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Rozšíření datových entit zásob na skladě
               href: inventory/extend-on-hand-entities.md
+        - name: Řešení potíží
+          items:
+            - name: Řízení skladu
+              items:
+                - name: Dodávku nemůžete potvrdit kvůli problému s kalendářem
+                  href: troubleshooting/warehousing/load-has-active-appo.md
+                - name: Zásilku nemůžete potvrdit z důvodu nedokončené nebo chybějící práce
+                  href: troubleshooting/warehousing/open-or-no-work-exis.md
+                - name: 'Zásilku nemůžete potvrdit, protože položky nebyly vyzvednuty'
+                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
+                - name: 'Zásilku nemůžete potvrdit, protože má nulové množství'
+                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
+                - name: 'Zásilku nemůžete potvrdit, protože množství přesahuje procento navýšení dodávky'
+                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
+                - name: 'Zásilku nemůžete potvrdit, protože množství přesahuje procento snížení dodávky'
+                  href: troubleshooting/warehousing/quantity-exceeds-und.md
+                - name: Poslední uzavřený řádek práce musí být vložení
+                  href: troubleshooting/warehousing/the-last-closed-work.md
+                - name: Pole hmotnosti na řádcích vytížení neodpovídají polím hmotnosti na vytížení
+                  href: troubleshooting/warehousing/the-weight-fields-on.md
+                - name: Vlna není pro vyčištění způsobilá
+                  href: troubleshooting/warehousing/wave-is-not-eligible.md
+                - name: Hmotnost musí být kladná.
+                  href: troubleshooting/warehousing/weight-must-be-posit.md
+                - name: 'Práci nelze zrušit, protože je blokována'
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
+                - name: Práci nelze zrušit z důvodu stavu
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
+                - name: Práce není blokována
+                  href: troubleshooting/warehousing/work-is-not-blocked.md
+                - name: Práce zůstává blokována
+                  href: troubleshooting/warehousing/work-remains-blocked.md
+                - name: 'Nemůžete zrušit práci, která je na uživateli'
+                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Vývoj a správa aplikací Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

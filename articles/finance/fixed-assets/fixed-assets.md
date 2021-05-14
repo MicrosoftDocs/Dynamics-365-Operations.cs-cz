@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Dlouhodobý majetek
-description: Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost.
+description: Dlouhodobý majetek jsou položky s hodnotou, které vlastní jednotlivec nebo organizace. Položky zahrnují budovy, vozidla, pozemky a vybavení.
 author: ShylaThompson
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1825ee4617d14b421d4a7e6151d645a653a9fcbb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815661"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897981"
 ---
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
 [!include [banner](../includes/banner.md)]
 
-Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost. 
+Dlouhodobý majetek jsou položky s hodnotou, které vlastní jednotlivec nebo organizace. Položky zahrnují budovy, vozidla, pozemky a vybavení. 
 
 Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení. Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
 
@@ -38,7 +38,7 @@ Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a 
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 
