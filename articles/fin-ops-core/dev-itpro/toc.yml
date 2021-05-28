@@ -84,7 +84,7 @@
               href: dev-tools/version-models-build.md
         - name: Integrace dat
           items:
-            - name: Zvolení strategie integrace dat (import/export)
+            - name: "Integrace mezi aplikacemi Finance and Operations a\_službami třetích stran"
               href: data-entities/integration-overview.md
             - name: Omezování na základě priority
               hreF: data-entities/priority-based-throttling.md
@@ -122,200 +122,66 @@
                       href: data-entities/develop-composite-data-entities.md
                     - name: Konfigurace sdílení finančních dat mezi společnostmi
                       href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-                    - name: Vytvoření šablon záznamu pro usnadnění zadávání dat
+                    - name: "Vytvoření šablon záznamu k\_usnadnění zadávání dat"
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: "Vytvoření záznamů s\_použitím šablon záznamu"
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Integrace dat pomocí Dataverse
+                - name: Integrátor dat
                   items:
-                    - name: Přehled integrace dat pomocí Dataverse
-                      href: data-entities/data-integration-cds.md
-                    - name: Integrace dvojitého zápisu
+                    - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
                       items:
-                        - name: Domovská stránka dvojitého zápisu
-                          href: data-entities/dual-write/dual-write-home-page.md
-                        - name: Co je nového a co se změnilo v duálním zápisu
-                          href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Přehled dvojitého zápisu
-                          href: data-entities/dual-write/dual-write-overview.md
-                        - name: Nastavení dvojitého zápisu
-                          items:
-                            - name: Systémové požadavky pro dvojitý zápis
-                              href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Pokyny pro nastavení duálního zápisu
-                              href: data-entities/dual-write/connection-setup.md
-                            - name: Úvahy o počáteční synchronizaci
-                              href: data-entities/dual-write/initial-sync-guidance.md
-                            - name: Nastavení duálního zápisu z Lifecycle Services
-                              href: data-entities/dual-write/lcs-setup.md
-                            - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
-                              items:
-                                - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
-                                  href: data-entities/dual-write/enable-dual-write.md
-                                - name: Systémové požadavky a předpoklady
-                                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                                - name: Jak použít průvodce duálním zápisem k propojení vašeho prostředí
-                                  href: data-entities/dual-write/link-your-environment.md
-                                - name: Povolení mapování entit pro duální zápis
-                                  href: data-entities/dual-write/enable-entity-map.md
-                            - name: Migrace datového typu měny pro duální zápis
-                              href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Nastavení mapování pro pole stavu prodejní objednávky
-                              href: data-entities/dual-write/sales-status-map.md
-                            - name: Filtrování mezipodnikových objednávek pro zabránění synchronizace objednávek a řádků objednávek
-                              href: data-entities/dual-write/filtering-intercompany-orders.md
-                        - name: Správa duálního zápisu
-                          items:
-                            - name: Přizpůsobení mapování entit a polí
-                              href: data-entities/dual-write/customizing-mappings.md
-                            - name: Zpracování více map entit
-                              href: data-entities/dual-write/multiple-entity-maps.md
-                            - name: Úprava právnické osoby po nastavení duálního zápisu
-                              href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Správa chyb a oznámení výstrah
-                              href: data-entities/dual-write/errors-and-alerts.md
-                            - name: Správa životního cyklu aplikace
-                              href: data-entities/dual-write/app-lifecycle-management.md
-                        - name: Mapování konceptů mezi aplikacemi
-                          items:
-                            - name: Integrovaná hlavní data odběratelů
-                              href: data-entities/dual-write/customer-mapping.md
-                            - name: Integrace dodavatele
-                              items:
-                                - name: Integrovaná hlavní data dodavatelů
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Přepínání mezi návrhy dodavatele
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Věrnostní karty a odměny zákazníka
-                              href: data-entities/dual-write/loyalty-mapping.md
-                            - name: Integrace produktu
-                              items:
-                                - name: Sjednocené prostředí produktu
-                                  href: data-entities/dual-write/product-mapping.md
-                                - name: Integrované sklady a pracoviště
-                                  href: data-entities/dual-write/sites-warehouses-mapping.md
-                            - name: Integrace společnosti
-                              items:
-                                - name: Koncept společnosti v Dataverse
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Inicializace firemních dat
-                                  href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Organizační hierarchie v Dataverse
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Finanční a daňové údaje
-                              items:
-                                - name: Přístup k finančním datům a daňovým referenčním datům
-                                  href: data-entities/dual-write/finance-tax-reference.md
-                                - name: Integrovaná hlavní kniha
-                                  href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integrovaná hlavní data daní
-                                  href: data-entities/dual-write/tax-mapping.md
-                            - name: "Integrace zásobování v\_Supply Chain Management s Field Service"
-                              href: data-entities/dual-write/scm-field-service-procurement.md
-                            - name: Synchronizace na vyžádání s cenovým modulem Supply Chain Management
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Zpeněžení potenciálního zákazníka v duálním zápisu
-                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Použití cenového modulu Dynamics 365 Commerce s Dynamics 365 Sales
-                              href: data-entities/dual-write/commerce-pricing.md
-                            - name: Interní majetek pro údržbu
-                              href: data-entities/dual-write/in-house-assets.md
-                            - name: Dostupnost zásob
-                              href: data-entities/dual-write/inventory-availability.md
-                            - name: 'Integrovaný pracovník, práce a pozice'
-                              href: data-entities/dual-write/integrated-hr.md
-                            - name: Strana a globální adresář
-                              href: data-entities/dual-write/party-gab.md
-                            - name: Používání Power Portal s datovým modelem strany
-                              href: data-entities/dual-write/party-gab-portal.md
-                            - name: Upgrade na model strany a globálního adresáře
-                              href: data-entities/dual-write/upgrade-party-gab.md
-                            - name: Integrace poznámek
-                              href: data-entities/dual-write/notes-integration.md
-                            - name: Odkaz na mapování
-                              href: data-entities/dual-write/mapping-reference.md
-                        - name: Podpora duálního zápisu
-                          items:
-                            - name: Podpora řešení Field Service a Project Service Automation
-                              href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Migrace dat zpeněžení potenciálního zákazníka z integrátoru dat do duálního zápisu
-                              href: data-entities/dual-write/migrate-prospect-to-cash.md
-                            - name: Řešení potíží
-                              items:
-                                - name: Ověření konfigurace duálního zápisu v aplikacích Finance and Operations a Dataverse
-                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                                - name: Poradce při potížích s počáteční instalací
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                                - name: Poradce při potížích s počáteční synchronizací
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Poradce při potížích s duálním zápisem v aplikacích Finance and Operations
-                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                                - name: Poradce při potížích se synchronizací v ostrém provozu
-                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                                - name: Poradce při potížích souvisejících s připraveností řešení
-                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Poradce při potížích s upgrady aplikací Finance and Operations
-                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                                - name: Obecné řešení potíží
-                                  href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Časté dotazy k duálnímu zápisu
-                          href: data-entities/dual-write/dual-write-faq.md
-                    - name: Integrace s Power Platform
+                        - name: Zpeněžení potenciálního zákazníka
+                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
+                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
+                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
+                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: "Synchronizace hlaviček a\_řádků prodejních nabídek přímo z\_aplikace Sales do aplikace Finance and Operations"
+                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
+                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
+                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: Konfigurace integrace se službou Field Service
                       items:
-                        - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
-                          items:
-                            - name: Zpeněžení potenciálního zákazníka
-                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
-                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
-                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
-                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                            - name: "Synchronizace hlaviček a\_řádků prodejních nabídek přímo z\_aplikace Sales do aplikace Finance and Operations"
-                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                            - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
-                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
-                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: Konfigurace integrace se službou Field Service
-                          items:
-                            - name: Přehled konfigurace integrace se službou Field Service
-                              href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
-                              href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci\_Finance and Operations"
-                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci\_Finance and Operations"
-                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Synchronizace převodů a úprav zásob ze služby Field Service do Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Synchronizace informací o úrovni zásob z aplikace Finance and Operations do služby Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Synchronizace produktů ve skladové jednotce z aplikace Finance and Operations do služby Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Synchronizace seznamu projektů z aplikace Finance and Operations do služby Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Konfigurace integrace Project Service Automation
-                          items:
-                            - name: Přehled Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-integration
-                            - name: Parametry integrace Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                            - name: Synchronizace projektových smluv a projektů
-                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                            - name: Synchronizace projektových úloh
-                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                            - name: Synchronizace kategorií výdajů projektu
-                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                            - name: Synchronizace odhadů projektu do prognóz projektu
-                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                            - name: Synchronizace skutečných hodnot projektu do deníku integrace projektu
-                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Přehled konfigurace integrace se službou Field Service
+                          href: ../../supply-chain/sales-marketing/field-service.md
+                        - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
+                          href: ../../supply-chain/sales-marketing/field-service-product.md
+                        - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v\_aplikaci Finance and Operations"
+                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v\_aplikaci Finance and Operations"
+                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Synchronizace převodů a úprav zásob ze služby Field Service do Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Synchronizace informací o úrovni zásob z aplikace Finance and Operations do služby Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Synchronizace produktů ve skladové jednotce z aplikace Finance and Operations do služby Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Synchronizace seznamu projektů z aplikace Finance and Operations do služby Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Konfigurace integrace Project Service Automation
+                      items:
+                        - name: Přehled Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-integration
+                        - name: Parametry integrace Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
+                        - name: Synchronizace projektových smluv a projektů
+                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
+                        - name: Synchronizace projektových úloh
+                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
+                        - name: Synchronizace kategorií výdajů projektu
+                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
+                        - name: Synchronizace odhadů projektu do prognóz projektu
+                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
+                        - name: Synchronizace skutečných hodnot projektu do deníku integrace projektu
+                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Využití externích webových služeb
               href: data-entities/consume-external-web-service.md
             - name: Elektronické zprávy
@@ -496,6 +362,8 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: Řešení potíží s prostředím nasazeným pomocí samoobslužného nasazení
                       href: deployment/troubleshoot-newinfrastructure.md
+                    - name: "Plánovaná údržba v\_samoobslužných prostředích – nejčastější dotazy"
+                      href: deployment/plannedmaintenance-selfservice.md
                 - name: Dokončení zprovoznění služby Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute a Finance and Operations
@@ -1150,8 +1018,140 @@
           items:
             - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
               href: power-platform/overview.md
+            - name: Duální zápis
+              items:
+                - name: Domovská stránka duálního zápisu
+                  href: data-entities/dual-write/dual-write-home-page.md
+                - name: Co je nového a co se změnilo v duálním zápisu
+                  href: data-entities/dual-write/whats-new-dual-write.md
+                - name: Přehled duálního zápisu
+                  href: data-entities/dual-write/dual-write-overview.md
+                - name: Nastavení dvojitého zápisu
+                  items:
+                    - name: Systémové požadavky pro dvojitý zápis
+                      href: data-entities/dual-write/dual-write-system-req.md
+                    - name: Pokyny pro nastavení duálního zápisu
+                      href: data-entities/dual-write/connection-setup.md
+                    - name: Úvahy o počáteční synchronizaci
+                      href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Nastavení duálního zápisu z Lifecycle Services
+                      href: data-entities/dual-write/lcs-setup.md
+                    - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                      items:
+                        - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                          href: data-entities/dual-write/enable-dual-write.md
+                        - name: Systémové požadavky a předpoklady
+                          href: data-entities/dual-write/requirements-and-prerequisites.md
+                        - name: Jak použít průvodce duálním zápisem k propojení vašeho prostředí
+                          href: data-entities/dual-write/link-your-environment.md
+                        - name: Povolení mapování entit pro duální zápis
+                          href: data-entities/dual-write/enable-entity-map.md
+                    - name: Migrace datového typu měny pro duální zápis
+                      href: data-entities/dual-write/currrency-decimal-places.md
+                    - name: Nastavení mapování pro pole stavu prodejní objednávky
+                      href: data-entities/dual-write/sales-status-map.md
+                    - name: Filtrování mezipodnikových objednávek pro zabránění synchronizace objednávek a řádků objednávek
+                      href: data-entities/dual-write/filtering-intercompany-orders.md
+                - name: Správa duálního zápisu
+                  items:
+                    - name: Přizpůsobení mapování entit a polí
+                      href: data-entities/dual-write/customizing-mappings.md
+                    - name: Zpracování více map entit
+                      href: data-entities/dual-write/multiple-entity-maps.md
+                    - name: Úprava právnické osoby po nastavení duálního zápisu
+                      href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Správa chyb a oznámení výstrah
+                      href: data-entities/dual-write/errors-and-alerts.md
+                    - name: Správa životního cyklu aplikace
+                      href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Mapování konceptů mezi aplikacemi
+                  items:
+                    - name: Integrovaná hlavní data odběratelů
+                      href: data-entities/dual-write/customer-mapping.md
+                    - name: Integrace dodavatele
+                      items:
+                        - name: Integrovaná hlavní data dodavatelů
+                          href: data-entities/dual-write/vendor-mapping.md
+                        - name: Přepínání mezi návrhy dodavatele
+                          href: data-entities/dual-write/vendor-switch.md
+                    - name: Věrnostní karty a odměny zákazníka
+                      href: data-entities/dual-write/loyalty-mapping.md
+                    - name: Integrace produktu
+                      items:
+                        - name: Sjednocené prostředí produktu
+                          href: data-entities/dual-write/product-mapping.md
+                        - name: Integrované sklady a pracoviště
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
+                    - name: Integrace společnosti
+                      items:
+                        - name: Koncept společnosti v Dataverse
+                          href: data-entities/dual-write/company-data.md
+                        - name: Inicializace firemních dat
+                          href: data-entities/dual-write/bootstrap-company-data.md
+                    - name: Organizační hierarchie v Dataverse
+                      href: data-entities/dual-write/organization-mapping.md
+                    - name: Finanční a daňové údaje
+                      items:
+                        - name: Přístup k finančním datům a daňovým referenčním datům
+                          href: data-entities/dual-write/finance-tax-reference.md
+                        - name: Integrovaná hlavní kniha
+                          href: data-entities/dual-write/ledger-mapping.md
+                        - name: Integrovaná hlavní data daní
+                          href: data-entities/dual-write/tax-mapping.md
+                    - name: "Integrace zásobování v\_Supply Chain Management s Field Service"
+                      href: data-entities/dual-write/scm-field-service-procurement.md
+                    - name: Synchronizace na vyžádání s cenovým modulem Supply Chain Management
+                      href: data-entities/dual-write/pricing-engine.md
+                    - name: Zpeněžení potenciálního zákazníka v duálním zápisu
+                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                    - name: Použití cenového modulu Dynamics 365 Commerce s Dynamics 365 Sales
+                      href: data-entities/dual-write/commerce-pricing.md
+                    - name: Interní majetek pro údržbu
+                      href: data-entities/dual-write/in-house-assets.md
+                    - name: Dostupnost zásob
+                      href: data-entities/dual-write/inventory-availability.md
+                    - name: 'Integrovaný pracovník, práce a pozice'
+                      href: data-entities/dual-write/integrated-hr.md
+                    - name: Strana a globální adresář
+                      href: data-entities/dual-write/party-gab.md
+                    - name: Používání Power Portal s datovým modelem strany
+                      href: data-entities/dual-write/party-gab-portal.md
+                    - name: Upgrade na model strany a globálního adresáře
+                      href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Integrace poznámek
+                      href: data-entities/dual-write/notes-integration.md
+                    - name: Odkaz na mapování
+                      href: data-entities/dual-write/mapping-reference.md
+                - name: Podpora duálního zápisu
+                  items:
+                    - name: Podpora řešení Field Service a Project Service Automation
+                      href: data-entities/dual-write/field-service-project-service-automation.md
+                    - name: Migrace dat zpeněžení potenciálního zákazníka z integrátoru dat do duálního zápisu
+                      href: data-entities/dual-write/migrate-prospect-to-cash.md
+                    - name: Řešení potíží
+                      items:
+                        - name: Ověření konfigurace duálního zápisu v aplikacích Finance and Operations a Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Poradce při potížích s počáteční instalací
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Poradce při potížích s počáteční synchronizací
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Poradce při potížích s duálním zápisem v aplikacích Finance and Operations
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Poradce při potížích se synchronizací v ostrém provozu
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Poradce při potížích souvisejících s připraveností řešení
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Poradce při potížích s upgrady aplikací Finance and Operations
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Obecné řešení potíží
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                - name: "Časté dotazy k\_duálnímu zápisu"
+                  href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuální entity
               items:
+                - name: Přehled virtuálních entit
+                  href: power-platform/virtual-entities-overview.md
                 - name: Modelování entit
                   href: power-platform/entity-modeling.md
                 - name: Správa životního cyklu aplikace

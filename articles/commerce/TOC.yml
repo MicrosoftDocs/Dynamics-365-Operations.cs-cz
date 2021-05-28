@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Vylepšení řízení hotovosti
                       href: cash-mgmt.md
-                    - name: Vyhledávání zásob v POS
-                      href: product-variants-POS.md
                     - name: Pozastavení a obnovení transakcí v POS
                       href: pos-suspend-recall-transactions.md
                     - name: Funkce Offline POS
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Výpočet dostupnosti zásob pro maloobchodní kanály
                       href: calculated-inventory-retail-channels.md
+                    - name: "Operace vyhledávání zásob v\_POS"
+                      href: pos-inventory-lookup-operation.md
                 - name: Nákupní objednávky
                   items:
                     - name: Přehled nákupních objednávek
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Vytvoření projektu balíčku rozšíření POS
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Vytvoření souboru appx rozšíření Modern POS
+                    - name: Vytvoření souboru .appx pro balíček rozšíření Modern POS
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
                     - name: Ladění rozšíření POS
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: "Balení a\_nasazení rozšíření"
+                      items:
+                        - name: Vytvoření balíčku rozšíření Modern POS
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: "Podepisování kódu v\_balíčku rozšíření Modern POS (MSIX)"
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Vytvoření balíčku rozšíření Cloud POS
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Migrace rozšíření POS do modelu nezávislého balení
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Průvodce vývojem rozšíření POS
+                      items:
+                        - name: Základy rozšíření POS
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: "Vytvoření vlastního zobrazení v\_POS"
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: "Používání ovládacích prvků POS v\_rozšířeních"
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Úlohy
+                          items:
+                            - name: "Používání Knockout.js v\_rozšířeních POS"
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Využívání vlastních bezobslužných API Commerce
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Rozšiřitelnost Hardware Station
               items:
                 - name: Hardware Station a rozšiřitelnost
