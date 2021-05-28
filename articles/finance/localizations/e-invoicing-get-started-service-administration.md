@@ -2,7 +2,7 @@
 title: Začínáme se správou služby Elektronické fakturace
 description: Toto téma poskytuje informace, jak začít s Elektronickou fakturací.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840141"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980968"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Začínáme se správou služby Elektronické fakturace
 
@@ -33,10 +33,10 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 - Musíte mít přístup ke svému účtu Microsoft Dynamics Lifecycle Services (LCS).
 - Musíte mít projekt LCS, který obsahuje verzi 10.0.17 nebo novější nástroje Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho musí být tyto aplikace nasazeny v jedné z následujících geografických oblastí Azure:
 
-    - Východní USA
-    - USA – západ
-    - Sever EU
-    - Západ EU
+    - Spojené státy americké
+    - Evropa
+    - Spojené království
+    - Asie
 
 - Musíte mít přístup ke svému účtu Dynamics 365 Regulatory Configuration Services (RCS).
 - Musíte aktivovat funkci Globalizace pro svůj účet RCS v modulu Správa funkcí. Pro více informací viz [Regulatory Configuration Services (RCS) - funkce globalizace](rcs-globalization-feature.md).
@@ -46,11 +46,12 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 1. Přihlaste se k účtu LCS.
 2. Vyberte dlaždici **Náhled správy funkcí**.
-3. V části **Funkce Public Preview** vyberte **služba elektronické fakturace**.
+3. V části **Funkce Public Preview** vyberte **Elektronická fakturace**.
 4. Ujistěte se, zda je možnost **Funkce Preview zapnuta** nastavena na hodnotu **Ano**.
-5. Na řídicím panelu LCS vyberte svůj projekt nasazení LCS. Projekt LCS musí být spuštěný.
-7. Na kartě **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
-8. Vyberte **Služby elektronické fakturace**.
+5. Na řídicím panelu projektu LCS vyberte svůj projekt nasazení LCS.
+6. V projektu LCS vyberte na řídicím panelu prostředí LCS svůj projekt nasazení LCS. Projekt nasazení LCS musí být spuštěný.
+7. Na kartě **Integrace Power Platform** ve skupině polí **Doplňky prostředí** vyberte **Instalovat nový doplněk**.
+8. Vyberte **Nastavení elektronické fakturace**.
 9. V poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Toto je pevná hodnota.
 10. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure.
 11. Zkontrolujte smluvní podmínky a poté zaškrtněte políčko.
@@ -65,10 +66,10 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
     | Geografie datového centra Azure | URI adresa koncového bodu služby                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Východní USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | USA – západ                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Sever EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Západ EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Spojené státy americké              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Evropa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Spojené království             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asie                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Ověřte, zda je pole **Id aplikace** nastaveno na **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tato hodnota je pevná hodnota.
 5. V poli **ID prostředí LCS** zadejte ID prostředí LCS.
@@ -152,12 +153,12 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 1. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
 2. Na kartě **Služba odeslání** v poli **Identifikátor URL koncového bodu služby** zadejte příslušný koncový bod služby pro vaši geografii Azure, jak je znázorněno v následující tabulce.
 
-    | Geografie datového centra Azure | URL adresa koncového bodu služby                                                       |
+    | Geografie datového centra Azure | URI adresa koncového bodu služby                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Východní USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | USA – západ                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Sever EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Západ EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Spojené státy americké              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Evropa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Spojené království             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asie                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. Do pole **Prostředí** zadejte název prostředí služby, které je publikováno v Elektronické fakturaci.
 4. Zvolte **Uložit** a pak zavřete stránku.

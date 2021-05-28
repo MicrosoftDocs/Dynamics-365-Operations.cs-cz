@@ -2,7 +2,7 @@
 title: Kdy resetovat datové tržiště
 description: V tomto tématu jsou uvedeny okolnosti, které mohou být vylepšeny resetováním datového tržiště, a okolnosti, za kterých je nepravděpodobné, že vám resetování datového tržiště pomůže.
 author: jinniew
-ms.date: 12/15/2020
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,46 +12,42 @@ ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jiwo
-ms.search.validFrom: 2020-12-15
+ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c88994a336528650bf8ab6e239c873fa6cd36c46
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bc2c4ee490f3bebd6e7c91609a06f8dfedfcb628
+ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754137"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "5988985"
 ---
 # <a name="when-to-reset-a-data-mart"></a>Kdy resetovat datové tržiště
 
 Resetování datového tržiště může být časově náročné. V závislosti na okolnostech nemusí být tato akce řešením, které je potřeba. V tomto tématu jsou uvedeny okolnosti, které mohou být vylepšeny resetováním datového tržiště, a okolnosti, za kterých je nepravděpodobné, že vám resetování datového tržiště pomůže.  
 
-## <a name="when-do-you-need-to-do-a-data-mart-reset"></a>Kdy potřebujete provést reset datového tržiště?
+## <a name="when-do-i-need-to-do-a-data-mart-reset"></a>Kdy je třeba provést reset datového tržiště?
 Před resetováním datového tržiště zvažte následující otázky. Odpověď ano na jednu nebo více otázek může znamenat, že vaše organizace může mít prospěch z resetování datového tržiště.
 
-- Databáze aplikace byla obnovena, ale nebyla obnovena databáze datového tržiště.
-- Zobrazují se nesprávné údaje za účetní období, které není výsledkem problému s návrhem sestavy.
-- Zobrazují se nesprávné údaje za účetní období a záznamy jsou uvedeny v části Pokusy o integraci na stránce **Stav integrace** v Návrháři sestav (spusťte Návrháře sestav a vyberte **Nástroje> Stav integrace**).
-- Otevřeli jste incident podpory a technik podpory vám nařídil resetovat datové tržiště jako součást kroku odstraňování problémů.
+- Byla obnovena databáze aplikací?
+- Otevřeli jste incident podpory a technik podpory vám dal pokyn resetovat datové tržiště jako součást kroku odstraňování problémů?
  
-## <a name="when-its-not-appropriate-to-reset-a-data-mart"></a>Když není vhodné resetovat datové tržiště?
+## <a name="when-is-it-not-appropriate-to-reset-a-data-mart"></a>Kdy není vhodné resetovat datové tržiště?
 Existují okolnosti, kdy nedoporučujeme resetovat datové tržiště. Mezi ně patří následující. 
 
-- Kdykoli důvod není uveden v tomto tématu.
-- Máte problémy s výkonem spojené se synchronizací dat. Za těchto okolností pravděpodobně obnovení datového tržiště nepomůže.
+- Máte problémy s výkonem spojené se synchronizací dat. 
 - Pokud máte opakující se vzor pro resetování z některého z následujících důvodů: 
-  - **Chybějící data** - Nejprve odstraňte problémy s návrhem sestavy a problémy s časováním synchronizace dat, například zjistíte, že mapa faktů se nespustila, protože byla zveřejněna chybějící data.
-  - **Zaseknutý stav integrace** - Pokud je integrace pomalá nebo se zdá být zaseknutá, je nepravděpodobné, že resetování datového tržiště problém vyřeší.
-  - **Pokusy o resetování byly neúspěšné** - Pokud bylo provedeno několik pokusů o dokončení resetu a byly neúspěšné z důvodu chybějících dat, doporučujeme zahájit incident podpory a spolupracovat s technikem podpory na analýze vaší situace před dalším pokusem o resetování datového trhu.
+  - **Chybějící data** 
+  - **Zaseknutý stav integrace** 
   - **Zastaralé záznamy** - Zastaralé záznamy samy o sobě nutně neospravedlňují resetování datového tržiště. Pokud máte velkou datovou sadu, proces resetování bude nějakou dobu trvat, ale je nepravděpodobné, že by vedl ke zlepšení.
  
-## <a name="what-a-data-mart-reset-does-not-do"></a>Co resetování datového tržiště nedělá  
+## <a name="what-is-a-data-mart-reset"></a>Co je resetování datového tržiště?
 - Reset se spustí až po dokončení stávajících úkolů. Tím je zajištěno, že nebudou vložena stará data. V tomto okamžiku se může zobrazit zpráva jako: „Obnovení datového tržiště nebylo možné zpracovat kvůli aktivní úloze. Prosím zkuste to znovu později."
 - Reset deaktivuje integrační úlohy a vymaže všechna data datového tržiště. Integrace je znovu povolena.
 
-> [!NOTE]
-> Následující body specifikují dvě věci, které resetování datového tržiště *nebude* dělat. <br>
-> - Resetování nevymaže návrhy sestav. <br>
-> - Resetování nevymaže firemní ani uživatelská data, pokud není vybráno.
-
+## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Pokud resetuji datové tržiště, přijdu o sestavy, které jsem již vytvořil? 
+Ne, vaše sestavy jsou uloženy v tabulkách SQL, které nejsou ovlivněny resetem datového tržiště. Pokud se obáváte ztráty jakýchkoli sestav, které jste navrhli, můžete zálohovat návrhy, které nechcete ztratit. Chcete-li je zálohovat, otevřete návrhář sestav a přejděte na **Společnost > Společnosti > Stavební bloky > Export**.
+ 
+## <a name="is-it-necessary-for-all-users-to-exit-the-system-to-reset-the-data-mart"></a>Je nutné, aby všichni uživatelé opustili systém a resetovali datové tržiště?
+Ne, uživatelé mohou pokračovat v práci v systému během resetování datového tržiště. Nebudou však mít přístup k žádným sestavám, které byly vytvořeny pomocí nástroje Financial Reporter, dokud nedojde k dokončení resetu. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

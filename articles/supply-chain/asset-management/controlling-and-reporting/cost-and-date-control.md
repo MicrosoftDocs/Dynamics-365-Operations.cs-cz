@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808657"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016125"
 ---
 # <a name="cost-and-date-control"></a>Kontrola data a nákladů
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-V modulu Správa majetku můžete vypočítat náklady pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady na majetku, funkčních místech a pracovních příkazech. Skutečné náklady jsou založeny na zaúčtovaných transakcích. 
+V modulu Správa majetku můžete vypočítat náklady pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady na majetku, funkčních místech a pracovních příkazech. Skutečné náklady jsou založeny na zaúčtovaných transakcích.
 
 Výpočet data lze provést také v případě, že chcete porovnat plánovaná počáteční a koncová data se skutečným počátečním a koncovým datem na pracovních příkazech.
 
@@ -46,8 +44,8 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
 5. V poli **Úroveň** určete, jak detailní mají být řádky řízení nákladů v případě funkčních míst. 
 
-    Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. 
-    
+    Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni.
+
     Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení nákladů na všech úrovních funkčních míst, ke kterým se vztahují.
 
 6. Chcete-li do výpočtu zahrnout tento sloupec, vyberte Ano na přepínači **Zobrazit otevřené potvrzené náklady**.
@@ -64,7 +62,7 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
 10. Na kartě **Kontrola nákladů majetku** klikněte na tlačítka **Seskupit podle** pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Příklad výsledků výpočtu v řízení nákladů na majetek
 
 Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možnoti **Řízení nákladů majetku**.
 
@@ -76,7 +74,6 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 ![Příklad výsledků výpočtu v řízení nákladů na majetek](media/02-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu nákladů je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení nákladů** na kartě **Obecné**. V dialogovémokně  **Řízení nákladů majetku** je vybraný majetek automaticky vložen do pole **Majetek** na záložce s náhledem **Záznamy k zahrnutí**. Klikněte na **OK** a zobrazí se výpočet nákladů pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
-
 
 ## <a name="work-order-date-control"></a>Řízení data pracovního příkazu
 
@@ -94,7 +91,7 @@ Na této stránce můžete získat přehled o očekávaných počátečních a k
 
 6. Ve skupině **Seskupit podle** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Příklad výsledků výpočtu v řízení pracovních příkazů
 
 Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možnoti **Kontrola data pracovního příkazu**.
 
