@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff16d8e2e75a877e5ca7de604c7915e908473da6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 381d8bb0939f6c4c163477990e49382201487375
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792698"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019900"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Úprava finančních dimenzí pro maloobchodní transakce
 
@@ -34,7 +34,7 @@ Chcete-li upravit finanční dimenze pro maloobchodní transakce v Commerce Head
 
 1. Otevřete stránku **Konfigurace finanční dimenze pro integraci aplikací**.
 1. Vyberte aktivní záznam **Výchozí integrace dimenzí**.
-1. Na záložce s náhledem **Finanční dimenze** se ujistěte, že všechny dimenze, které chcete upravit v listu aplikace Excel, jsou přítomny v seznamu **Vybrané**. Další informace viz [Datové entity](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities).
+1. Na záložce s náhledem **Finanční dimenze** se ujistěte, že všechny dimenze, které chcete upravit v listu aplikace Excel, jsou přítomny v seznamu **Vybrané**. Další informace viz [Datové entity](../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md#data-entities).
 1. Stáhněte a otevřete soubor Excel ze stránky **Výkazy**, stránky **Maloobchodní transakce** nebo dlaždice **Selhání ověření transakcí** v pracovním prostoru **Finance obchodu**.
 1. Chcete-li změnit finanční dimenzi transakce, vyberte **Návrh** a potom vyberte symbol tužky vedle řádku **Transakce (auditovatelná)**.
 1. Najděte a vyberte pole **FinancialDimensionDisplayValue**, vyberte buňku v části záhlaví listu aplikace Excel a poté vyberte **Přidat popisek**.

@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (duben 2021)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Finance 10.0.16 (únor 2021)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -426,11 +424,13 @@
                   href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
                 - name: 'Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele'
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-                - name: 'Vyrovnání částečné platby zákazníka, u níž je více období slev'
+                - name: "Vyrovnání částečné platby odběratele, u\_níž je více období slev"
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+                - name: Zálohy odběratele
+                  href: accounts-receivable/customer-prepayments.md
                 - name: Refundace odběratelům
                   href: accounts-receivable/reimburse-customers.md
-                - name: Platby částečných částek zákazníkům
+                - name: Platby částečných částek odběratelům
                   href: accounts-receivable/customer-payments-partial-amount.md
             - name: Kredit a inkasa
               items:
@@ -482,9 +482,11 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Příklad zpracování upomínek
               href: accounts-receivable/process-collection-letters-example.md
-            - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
+            - name: "Nastavení a\_generování informací sledování splatnosti pohledávek"
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Sestava sledování prodlení odběratele
+            - name: Snímek sledování splatnosti odběratele
+              href: accounts-receivable/customer-aging-snapshot.md
+            - name: Sestava sledování splatnosti odběratele
               href: accounts-receivable/customer-aging.md
             - name: Vytvoření odpisového deníku pro odběratele
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
@@ -510,11 +512,13 @@
               href: budgeting/position-forecasting.md
             - name: Dokumenty odůvodnění plánování rozpočtu
               href: budgeting/budget-planning-justification-docs.md
-            - name: Vytváření rozpočtů z účtů transakcí a souhrnných účtů
+            - name: "Vytvoření rozpočtů z\_účtů transakcí a\_souhrnných účtů"
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Popis plánu rozpočtu
+              href: budgeting/budget-narrative.md
             - name: Šablony plánování rozpočtu pro Excel
               href: budgeting/budget-planning-excel-templates.md
-            - name: Rozšíření rozvržení plánování rozpočtu
+            - name: Rozšíření rozložení plánování rozpočtu
               href: budgeting/extending-budget-planning-layout.md
             - name: Odstraňování problémů s rozpočtováním pozice
               href: budgeting/position-budgeting-set-up-issues.md
@@ -1146,9 +1150,19 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definování zásad auditu pro zdrojové dokumenty
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Řešení potíží
+              items:
+                - name: Změna zúčtovací měny nebo měny vykazování
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: Změna nebo opětovné přiřazení kalendáře hlavní knihy
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: "Nastavení storna deníků a\_řádků"
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: Chybějící počáteční zůstatky roční uzávěrky
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: Finanční výkaznictví
           items:
-            - name: Začínáme s finančním výkaznictvím
+            - name: "Začínáme s\_finančním výkaznictvím"
               href: general-ledger/financial-reporting-getting-started.md
             - name: Přehled finančního výkaznictví
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -1192,13 +1206,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Nejčastější dotazy k finančnímu výkaznictví
               href: general-ledger/financial-reporting-faq.md
-        - name: Finanční přehledy
+        - name: Přehledy Finance
           items:
-            - name: Domovská stránka finančních přehledů
+            - name: Domovská stránka přehledů Finance
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurace a správa
               items:
-                - name: Konfigurace finančních přehledů
+                - name: Konfigurace přehledů Finance
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Povolení předpovědí plateb zákazníka
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1208,7 +1222,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Vytvoření projektu integrátoru dat
                   href: finance-insights/create-data-integrate-project.md
-            - name: Použití finančních přehledů
+            - name: Použití přehledů Finance
               items:
                 - name: Návrhy rozpočtu
                   href: finance-insights/budget-proposals.md
@@ -1644,15 +1658,23 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: NT2020.006 - Zprostředkující prodejní digitální platforma pro NF-e
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
-                    - name: NT2019.001 - Pravidla daňových výhod a výjimek pro NF-e / NFC-e
+                    - name: "NT2019.001 – Pravidla daňových výhod a\_výjimek pro NF-e/NFC-e"
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: Daňový výkaz SPED-Reinf
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: Přehled SPED-Reinf
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: Nastavení elektronických zpráv
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: Nastavení fiskálních knih
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: Události
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: Fiskální rozhodnutí SPED 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
-                - name: Fiskální SPED 2020 - Doplňující informace o ICMS-ST pro fiskální SPED rozvržení č. 014
+                - name: "Fiskální SPED 2020 – Doplňující informace o ICMS-ST pro fiskální rozložení SPED č.\_014"
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: Fiskální SPED – rozložení 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
@@ -1780,8 +1802,10 @@
                   href: localizations/apac-chn-negative-debits-credits.md
                 - name: Protokol uživatelských operací podle čínského pracovního pravidla
                   href: localizations/tasks/user-operation-log-china-working-rule.md
-                - name: Nejčastější dotazy týkající se faktur odběratele s DPH
+                - name: "Časté dotazy týkající se faktur odběratele s\_DPH"
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
+                - name: Export GB/T 24589-2010
+                  href: localizations/apac-chn-gbt-24589-2010.md
             - name: Česká republika
               items:
                 - name: Česká republika
@@ -2038,8 +2062,18 @@
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
                 - name: Chronologické doklady faktur
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Vytvoření soubor standardního auditu pro Francii (FEC)
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: Soubor auditu pro Francii
+                  items:
+                    - name: Přehled souboru auditu pro Francii (FEC)
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: Předpoklady pro generování souboru auditu FEC ve Francii
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: Struktura zdrojů dat Finance pro FEC
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: Příprava prostředí na generování FEC
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: "Generování FEC v\_Dynamics 365 Finance"
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: "Výpisy z\_účtu odběratele a\_dodavatele"
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: "Denní výpočet úroku pro prodlení a\_paušál ve faktuře a\_v\_upomínce"
@@ -2392,11 +2426,89 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Převod kapitálových položek do dlouhodobého majetku
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: Indická daň TDS
+                  items:
+                    - name: "Přehled indické daně sražené u\_zdroje (TDS)"
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: Základní nastavení pro TDS
+                      items:
+                        - name: Nastavení parametrů TDS
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: Nastavení účtů hlavní knihy TDS
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: Nastavení registračních čísel TDS pro právnické osoby
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: Nastavení úřadů srážkové daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Nastavení komponent daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: Nastavení kódů srážkové daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Nastavení období vyrovnání srážkové daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: Nastavení kódů vykazování srážkové daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: Nastavení kódů srážkové daně pro typ daně TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: "Připojení daňových kódů TDS k\_daňovým skupinám TDS a\_definování receptury pro výpočet TDS"
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: Zaznamenání čísel koncesních certifikátů TDS
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: "Nastavení parametrů TDS v\_Závazcích a\_Pohledávkách"
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: "Nastavení platebních kalendářů s\_přidělením TDS"
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: Nastavení platebních poplatků pro platby úřadům TDS
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: "Nastavení informací o skupině TDS, PAN a TAN pro dodavatele a\_odběratele"
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: "Návrhář receptur a\_omezení prahové hodnoty pro výpočet TDS"
+                      items:
+                        - name: Návrhář receptur pro výpočty TDS
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: "Omezení prahové hodnoty a\_omezení prahové hodnoty výjimky"
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: Výpočet TDS na fakturách
+                      items:
+                        - name: Výpočet TDS na fakturách
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: Výpočet TDS na fakturách pomocí deníků
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: "Výpočet faktur TDS pomocí formuláře nákupní objednávky a\_formuláře prodejní objednávky"
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: Výpočet TDS na fakturách ze stránky Volná faktura
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: Funkce rozdělené faktury
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: "Výpočet TDS u\_mezipodnikových transakcí"
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: Proces vyrovnání TDS
+                      items:
+                        - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: "Výpočet TDS u\_mezipodnikových transakcí"
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: Proces vyrovnání TDS
+                          items:
+                            - name: Spuštění pravidelného procesu vyrovnání TDS
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: "Vyrovnání plateb dodavatelům-úřadům TDS a\_generování TDS challan"
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: "Zobrazení zaúčtovaných plateb a\_transakcí TDS za období vyrovnání TDS"
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: "Zaznamenání a\_aktualizace čísel a\_data certifikátů TDS"
+                          items:
+                            - name: Zaznamenání čísel obnovitelných certifikátů TDS
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: "Aktualizace čísel a\_dat certifikátů pro transakce TDS"
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Itálie
               items:
-                - name: Itálie - přehled
+                - name: Itálie – přehled
                   href: localizations/italy.md
-                - name: Podrobnosti výpisů DPH
+                - name: Podrobnosti výkazů DPH
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Čtvrtletní komunikační výkaz DPH
                   href: localizations/emea-ita-quarterly-vat-communication.md
