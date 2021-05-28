@@ -5,7 +5,6 @@ author: qire
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,99 +15,99 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8e3573f9c9971d4a5af33ece08b7e0b43f2e813a
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: a3da8e1b8176eb25fe4e0a320aa3e907c06e09c5
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921158"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021385"
 ---
-# <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a><span data-ttu-id="f4ee2-103">Přidání datových polí do daňové integrace pomocí rozšíření</span><span class="sxs-lookup"><span data-stu-id="f4ee2-103">Add data fields in the tax integration by using extension</span></span>
+# <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a><span data-ttu-id="58383-103">Přidání datových polí do daňové integrace pomocí rozšíření</span><span class="sxs-lookup"><span data-stu-id="58383-103">Add data fields in the tax integration by using extension</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f4ee2-104">Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-104">This topic explains how to use X++ extensions to add data fields in the tax integration.</span></span> <span data-ttu-id="f4ee2-105">Tato pole lze rozšířit na daňový datový model daňové služby a použít k určení daňových kódů.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-105">These fields can be extended to the tax data model of the tax service and used to determine tax codes.</span></span> <span data-ttu-id="f4ee2-106">Další informace najdete v tématu [Přidání datových polí do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).</span><span class="sxs-lookup"><span data-stu-id="f4ee2-106">For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).</span></span>
+<span data-ttu-id="58383-104">Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.</span><span class="sxs-lookup"><span data-stu-id="58383-104">This topic explains how to use X++ extensions to add data fields in the tax integration.</span></span> <span data-ttu-id="58383-105">Tato pole lze rozšířit na daňový datový model daňové služby a použít k určení daňových kódů.</span><span class="sxs-lookup"><span data-stu-id="58383-105">These fields can be extended to the tax data model of the tax service and used to determine tax codes.</span></span> <span data-ttu-id="58383-106">Další informace najdete v tématu [Přidání datových polí do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).</span><span class="sxs-lookup"><span data-stu-id="58383-106">For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).</span></span>
 
-## <a name="data-model"></a><span data-ttu-id="f4ee2-107">Datový model</span><span class="sxs-lookup"><span data-stu-id="f4ee2-107">Data model</span></span>
+## <a name="data-model"></a><span data-ttu-id="58383-107">Datový model</span><span class="sxs-lookup"><span data-stu-id="58383-107">Data model</span></span>
 
-<span data-ttu-id="f4ee2-108">Data v datovém modelu jsou přenášena objekty a implementována třídami.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-108">The data in the data model is carried by objects and implemented by classes.</span></span>
+<span data-ttu-id="58383-108">Data v datovém modelu jsou přenášena objekty a implementována třídami.</span><span class="sxs-lookup"><span data-stu-id="58383-108">The data in the data model is carried by objects and implemented by classes.</span></span>
 
-<span data-ttu-id="f4ee2-109">Zde je seznam hlavních objektů:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-109">Here is a list of the major objects:</span></span>
+<span data-ttu-id="58383-109">Zde je seznam hlavních objektů:</span><span class="sxs-lookup"><span data-stu-id="58383-109">Here is a list of the major objects:</span></span>
 
-* <span data-ttu-id="f4ee2-110">AxClass/TaxIntegration **Document** Object</span><span class="sxs-lookup"><span data-stu-id="f4ee2-110">AxClass/TaxIntegration **Document** Object</span></span>
-* <span data-ttu-id="f4ee2-111">AxClass/TaxIntegration **Line** Object</span><span class="sxs-lookup"><span data-stu-id="f4ee2-111">AxClass/TaxIntegration **Line** Object</span></span>
-* <span data-ttu-id="f4ee2-112">AxClass/TaxIntegration **TaxLine** Object</span><span class="sxs-lookup"><span data-stu-id="f4ee2-112">AxClass/TaxIntegration **TaxLine** Object</span></span>
+* <span data-ttu-id="58383-110">AxClass/TaxIntegration **Document** Object</span><span class="sxs-lookup"><span data-stu-id="58383-110">AxClass/TaxIntegration **Document** Object</span></span>
+* <span data-ttu-id="58383-111">AxClass/TaxIntegration **Line** Object</span><span class="sxs-lookup"><span data-stu-id="58383-111">AxClass/TaxIntegration **Line** Object</span></span>
+* <span data-ttu-id="58383-112">AxClass/TaxIntegration **TaxLine** Object</span><span class="sxs-lookup"><span data-stu-id="58383-112">AxClass/TaxIntegration **TaxLine** Object</span></span>
 
-<span data-ttu-id="f4ee2-113">Následující obrázek ukazuje, jak tyto objekty souvisejí.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-113">The following illustration shows how these objects are related.</span></span>
+<span data-ttu-id="58383-113">Následující obrázek ukazuje, jak tyto objekty souvisejí.</span><span class="sxs-lookup"><span data-stu-id="58383-113">The following illustration shows how these objects are related.</span></span>
 
-<span data-ttu-id="f4ee2-114">[![Vztah objektu datového modelu](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span><span class="sxs-lookup"><span data-stu-id="f4ee2-114">[![Data model object relationship](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span></span>
+<span data-ttu-id="58383-114">[![Vztah objektu datového modelu](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span><span class="sxs-lookup"><span data-stu-id="58383-114">[![Data model object relationship](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span></span>
 
-<span data-ttu-id="f4ee2-115">Objekt **Document** může obsahovat mnoho objektů **Line**.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-115">A **Document** object can contain many **Line** objects.</span></span> <span data-ttu-id="f4ee2-116">Každý objekt obsahuje metadata pro daňovou službu.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-116">Each object contains metadata for the tax service.</span></span>
+<span data-ttu-id="58383-115">Objekt **Document** může obsahovat mnoho objektů **Line**.</span><span class="sxs-lookup"><span data-stu-id="58383-115">A **Document** object can contain many **Line** objects.</span></span> <span data-ttu-id="58383-116">Každý objekt obsahuje metadata pro daňovou službu.</span><span class="sxs-lookup"><span data-stu-id="58383-116">Each object contains metadata for the tax service.</span></span>
 
-- <span data-ttu-id="f4ee2-117">`TaxIntegrationDocumentObject` má metadata `originAddress`, která obsahují informace o zdrojové adrese, a metadata `includingTax`, která označují, zda částka zahrnuje daň z obratu.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-117">`TaxIntegrationDocumentObject` has `originAddress` metadata, which contains information about the source address, and `includingTax` metadata, which indicates whether the line amount includes sales tax.</span></span>
-- <span data-ttu-id="f4ee2-118">`TaxIntegrationLineObject` má metadata `itemId`, `quantity` a `categoryId`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-118">`TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f4ee2-119">`TaxIntegrationLineObject` také implementuje objekty **Charge**.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-119">`TaxIntegrationLineObject` also implements **Charge** objects.</span></span>
-
-## <a name="integration-flow"></a><span data-ttu-id="f4ee2-120">Tok integrace</span><span class="sxs-lookup"><span data-stu-id="f4ee2-120">Integration flow</span></span>
-
-<span data-ttu-id="f4ee2-121">Údaje v toku jsou manipulovány aktivitami.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-121">The data in the flow is manipulated by activities.</span></span>
-
-### <a name="key-activities"></a><span data-ttu-id="f4ee2-122">Klíčové aktivity</span><span class="sxs-lookup"><span data-stu-id="f4ee2-122">Key activities</span></span>
-
-* <span data-ttu-id="f4ee2-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="f4ee2-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span></span>
-* <span data-ttu-id="f4ee2-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="f4ee2-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span></span>
-* <span data-ttu-id="f4ee2-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="f4ee2-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span></span>
-* <span data-ttu-id="f4ee2-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="f4ee2-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span></span>
-* <span data-ttu-id="f4ee2-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="f4ee2-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span></span>
-
-<span data-ttu-id="f4ee2-128">Aktivity probíhají v následujícím pořadí:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-128">Activities are run in the following order:</span></span>
-
-1. <span data-ttu-id="f4ee2-129">Nastavení načítání</span><span class="sxs-lookup"><span data-stu-id="f4ee2-129">Setting Retrieval</span></span>
-2. <span data-ttu-id="f4ee2-130">Načítání dat</span><span class="sxs-lookup"><span data-stu-id="f4ee2-130">Data Retrieval</span></span>
-3. <span data-ttu-id="f4ee2-131">Výpočetní služba</span><span class="sxs-lookup"><span data-stu-id="f4ee2-131">Calculation Service</span></span>
-4. <span data-ttu-id="f4ee2-132">Směnný kurz měny</span><span class="sxs-lookup"><span data-stu-id="f4ee2-132">Currency Exchange</span></span>
-5. <span data-ttu-id="f4ee2-133">Perzistence dat</span><span class="sxs-lookup"><span data-stu-id="f4ee2-133">Data Persistence</span></span>
-
-<span data-ttu-id="f4ee2-134">Rozšiřte například fázi **Načítání dat** před **Výpočetní službu**.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-134">For example, extend **Data Retrieval** before **Calculation Service**.</span></span>
-
-#### <a name="data-retrieval-activities"></a><span data-ttu-id="f4ee2-135">Aktivity načítání dat</span><span class="sxs-lookup"><span data-stu-id="f4ee2-135">Data Retrieval activities</span></span>
-
-<span data-ttu-id="f4ee2-136">Aktivity **Načítání dat** načítají data z databáze.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-136">**Data Retrieval** activities retrieve data from the database.</span></span> <span data-ttu-id="f4ee2-137">K načítání dat z různých transakčních tabulek jsou k dispozici adaptéry pro různé transakce:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-137">Adapters for different transactions are available to retrieve data from different transaction tables:</span></span>
-
-- <span data-ttu-id="f4ee2-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span></span>
-- <span data-ttu-id="f4ee2-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="f4ee2-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span></span>
-
-<span data-ttu-id="f4ee2-145">V těchto aktivitách **Načítání dat** se data zkopírují z databáze do objektů `TaxIntegrationDocumentObject` a `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-145">In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`.</span></span> <span data-ttu-id="f4ee2-146">Protože všechny tyto aktivity rozšiřují stejnou abstraktní třídu šablony, mají společné metody.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-146">Because all these activities extend the same abstract template class, they have common methods.</span></span>
-
-#### <a name="calculation-service-activities"></a><span data-ttu-id="f4ee2-147">Aktivity výpočetní služby</span><span class="sxs-lookup"><span data-stu-id="f4ee2-147">Calculation Service activities</span></span>
-
-<span data-ttu-id="f4ee2-148">Aktivita **Výpočetní služba** je odkazem mezi daňovou službou a daňovou integrací.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-148">The **Calculation Service** activity is the link between the tax service and the tax integration.</span></span> <span data-ttu-id="f4ee2-149">Tato aktivita je zodpovědná za následující funkce:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-149">This activity is responsible for the following functions:</span></span>
-
-1. <span data-ttu-id="f4ee2-150">Sestavení požadavku.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-150">Construct the request.</span></span>
-2. <span data-ttu-id="f4ee2-151">Zaslání požadavku daňové službě.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-151">Post the request to the tax service.</span></span>
-3. <span data-ttu-id="f4ee2-152">Získání odpovědi od daňové služby.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-152">Get the response from the tax service.</span></span>
-4. <span data-ttu-id="f4ee2-153">Syntaktickou analýzu odpovědi.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-153">Parse the response.</span></span>
-
-<span data-ttu-id="f4ee2-154">Datové pole, které přidáte k požadavku, bude zasláno společně s dalšími metadaty.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-154">A data field that you add to the request will be posted together with other metadata.</span></span> 
-
-## <a name="extension-implementation"></a><span data-ttu-id="f4ee2-155">Implementace rozšíření</span><span class="sxs-lookup"><span data-stu-id="f4ee2-155">Extension implementation</span></span>
-
-<span data-ttu-id="f4ee2-156">Tato část poskytuje podrobné kroky, které vysvětlují, jak implementovat rozšíření.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-156">This section provides detailed steps that explain how to implement the extension.</span></span> <span data-ttu-id="f4ee2-157">Jako příklady využívá finanční dimenze **Nákladové středisko** a **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-157">It uses the **Cost center** and **Project** financial dimensions as examples.</span></span>
-
-### <a name="step-1-add-the-data-variable-in-the-object-class"></a><span data-ttu-id="f4ee2-158">Krok 1.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-158">Step 1.</span></span> <span data-ttu-id="f4ee2-159">Přidejte datovou proměnnou do třídy objektu</span><span class="sxs-lookup"><span data-stu-id="f4ee2-159">Add the data variable in the object class</span></span>
-
-<span data-ttu-id="f4ee2-160">Třída objektu obsahuje datovou proměnnou a metody getter/setter pro načítání/zápis dat.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-160">The object class contains the data variable and getter/setter methods for the data.</span></span> <span data-ttu-id="f4ee2-161">Přidejte datové pole buď do objektu `TaxIntegrationDocumentObject`, nebo do objektu `TaxIntegrationLineObject`, v závislosti na úrovni pole.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-161">Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field.</span></span> <span data-ttu-id="f4ee2-162">Následující příklad používá úroveň řádku a název souboru je `TaxIntegrationLineObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-162">The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.</span></span>
+- <span data-ttu-id="58383-117">`TaxIntegrationDocumentObject` má metadata `originAddress`, která obsahují informace o zdrojové adrese, a metadata `includingTax`, která označují, zda částka zahrnuje daň z obratu.</span><span class="sxs-lookup"><span data-stu-id="58383-117">`TaxIntegrationDocumentObject` has `originAddress` metadata, which contains information about the source address, and `includingTax` metadata, which indicates whether the line amount includes sales tax.</span></span>
+- <span data-ttu-id="58383-118">`TaxIntegrationLineObject` má metadata `itemId`, `quantity` a `categoryId`.</span><span class="sxs-lookup"><span data-stu-id="58383-118">`TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f4ee2-163">Pokud je datové pole, které přidáváte, na úrovni dokumentu, změňte název souboru na `TaxIntegrationDocumentObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-163">If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.</span></span>
+> <span data-ttu-id="58383-119">`TaxIntegrationLineObject` také implementuje objekty **Charge**.</span><span class="sxs-lookup"><span data-stu-id="58383-119">`TaxIntegrationLineObject` also implements **Charge** objects.</span></span>
+
+## <a name="integration-flow"></a><span data-ttu-id="58383-120">Tok integrace</span><span class="sxs-lookup"><span data-stu-id="58383-120">Integration flow</span></span>
+
+<span data-ttu-id="58383-121">Údaje v toku jsou manipulovány aktivitami.</span><span class="sxs-lookup"><span data-stu-id="58383-121">The data in the flow is manipulated by activities.</span></span>
+
+### <a name="key-activities"></a><span data-ttu-id="58383-122">Klíčové aktivity</span><span class="sxs-lookup"><span data-stu-id="58383-122">Key activities</span></span>
+
+* <span data-ttu-id="58383-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="58383-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span></span>
+* <span data-ttu-id="58383-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="58383-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span></span>
+* <span data-ttu-id="58383-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="58383-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span></span>
+* <span data-ttu-id="58383-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="58383-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span></span>
+* <span data-ttu-id="58383-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="58383-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span></span>
+
+<span data-ttu-id="58383-128">Aktivity probíhají v následujícím pořadí:</span><span class="sxs-lookup"><span data-stu-id="58383-128">Activities are run in the following order:</span></span>
+
+1. <span data-ttu-id="58383-129">Nastavení načítání</span><span class="sxs-lookup"><span data-stu-id="58383-129">Setting Retrieval</span></span>
+2. <span data-ttu-id="58383-130">Načítání dat</span><span class="sxs-lookup"><span data-stu-id="58383-130">Data Retrieval</span></span>
+3. <span data-ttu-id="58383-131">Výpočetní služba</span><span class="sxs-lookup"><span data-stu-id="58383-131">Calculation Service</span></span>
+4. <span data-ttu-id="58383-132">Směnný kurz měny</span><span class="sxs-lookup"><span data-stu-id="58383-132">Currency Exchange</span></span>
+5. <span data-ttu-id="58383-133">Perzistence dat</span><span class="sxs-lookup"><span data-stu-id="58383-133">Data Persistence</span></span>
+
+<span data-ttu-id="58383-134">Rozšiřte například fázi **Načítání dat** před **Výpočetní službu**.</span><span class="sxs-lookup"><span data-stu-id="58383-134">For example, extend **Data Retrieval** before **Calculation Service**.</span></span>
+
+#### <a name="data-retrieval-activities"></a><span data-ttu-id="58383-135">Aktivity načítání dat</span><span class="sxs-lookup"><span data-stu-id="58383-135">Data Retrieval activities</span></span>
+
+<span data-ttu-id="58383-136">Aktivity **Načítání dat** načítají data z databáze.</span><span class="sxs-lookup"><span data-stu-id="58383-136">**Data Retrieval** activities retrieve data from the database.</span></span> <span data-ttu-id="58383-137">K načítání dat z různých transakčních tabulek jsou k dispozici adaptéry pro různé transakce:</span><span class="sxs-lookup"><span data-stu-id="58383-137">Adapters for different transactions are available to retrieve data from different transaction tables:</span></span>
+
+- <span data-ttu-id="58383-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span></span>
+- <span data-ttu-id="58383-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="58383-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span></span>
+
+<span data-ttu-id="58383-145">V těchto aktivitách **Načítání dat** se data zkopírují z databáze do objektů `TaxIntegrationDocumentObject` a `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="58383-145">In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`.</span></span> <span data-ttu-id="58383-146">Protože všechny tyto aktivity rozšiřují stejnou abstraktní třídu šablony, mají společné metody.</span><span class="sxs-lookup"><span data-stu-id="58383-146">Because all these activities extend the same abstract template class, they have common methods.</span></span>
+
+#### <a name="calculation-service-activities"></a><span data-ttu-id="58383-147">Aktivity výpočetní služby</span><span class="sxs-lookup"><span data-stu-id="58383-147">Calculation Service activities</span></span>
+
+<span data-ttu-id="58383-148">Aktivita **Výpočetní služba** je odkazem mezi daňovou službou a daňovou integrací.</span><span class="sxs-lookup"><span data-stu-id="58383-148">The **Calculation Service** activity is the link between the tax service and the tax integration.</span></span> <span data-ttu-id="58383-149">Tato aktivita je zodpovědná za následující funkce:</span><span class="sxs-lookup"><span data-stu-id="58383-149">This activity is responsible for the following functions:</span></span>
+
+1. <span data-ttu-id="58383-150">Sestavení požadavku.</span><span class="sxs-lookup"><span data-stu-id="58383-150">Construct the request.</span></span>
+2. <span data-ttu-id="58383-151">Zaslání požadavku daňové službě.</span><span class="sxs-lookup"><span data-stu-id="58383-151">Post the request to the tax service.</span></span>
+3. <span data-ttu-id="58383-152">Získání odpovědi od daňové služby.</span><span class="sxs-lookup"><span data-stu-id="58383-152">Get the response from the tax service.</span></span>
+4. <span data-ttu-id="58383-153">Syntaktickou analýzu odpovědi.</span><span class="sxs-lookup"><span data-stu-id="58383-153">Parse the response.</span></span>
+
+<span data-ttu-id="58383-154">Datové pole, které přidáte k požadavku, bude zasláno společně s dalšími metadaty.</span><span class="sxs-lookup"><span data-stu-id="58383-154">A data field that you add to the request will be posted together with other metadata.</span></span> 
+
+## <a name="extension-implementation"></a><span data-ttu-id="58383-155">Implementace rozšíření</span><span class="sxs-lookup"><span data-stu-id="58383-155">Extension implementation</span></span>
+
+<span data-ttu-id="58383-156">Tato část poskytuje podrobné kroky, které vysvětlují, jak implementovat rozšíření.</span><span class="sxs-lookup"><span data-stu-id="58383-156">This section provides detailed steps that explain how to implement the extension.</span></span> <span data-ttu-id="58383-157">Jako příklady využívá finanční dimenze **Nákladové středisko** a **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="58383-157">It uses the **Cost center** and **Project** financial dimensions as examples.</span></span>
+
+### <a name="step-1-add-the-data-variable-in-the-object-class"></a><span data-ttu-id="58383-158">Krok 1.</span><span class="sxs-lookup"><span data-stu-id="58383-158">Step 1.</span></span> <span data-ttu-id="58383-159">Přidejte datovou proměnnou do třídy objektu</span><span class="sxs-lookup"><span data-stu-id="58383-159">Add the data variable in the object class</span></span>
+
+<span data-ttu-id="58383-160">Třída objektu obsahuje datovou proměnnou a metody getter/setter pro načítání/zápis dat.</span><span class="sxs-lookup"><span data-stu-id="58383-160">The object class contains the data variable and getter/setter methods for the data.</span></span> <span data-ttu-id="58383-161">Přidejte datové pole buď do objektu `TaxIntegrationDocumentObject`, nebo do objektu `TaxIntegrationLineObject`, v závislosti na úrovni pole.</span><span class="sxs-lookup"><span data-stu-id="58383-161">Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field.</span></span> <span data-ttu-id="58383-162">Následující příklad používá úroveň řádku a název souboru je `TaxIntegrationLineObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="58383-162">The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="58383-163">Pokud je datové pole, které přidáváte, na úrovni dokumentu, změňte název souboru na `TaxIntegrationDocumentObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="58383-163">If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
@@ -155,18 +154,18 @@ final class TaxIntegrationLineObject_Extension
 }
 ```
 
-<span data-ttu-id="f4ee2-164">**Nákladové středisko** a **Projekt** jsou přidány jako soukromé proměnné.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-164">**Cost center** and **Project** are added as private variables.</span></span> <span data-ttu-id="f4ee2-165">Vytvořte metody getter a setter pro tato datová pole, které zajistí manipulaci s daty.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-165">Create getter and setter methods for these data fields to manipulate the data.</span></span>
+<span data-ttu-id="58383-164">**Nákladové středisko** a **Projekt** jsou přidány jako soukromé proměnné.</span><span class="sxs-lookup"><span data-stu-id="58383-164">**Cost center** and **Project** are added as private variables.</span></span> <span data-ttu-id="58383-165">Vytvořte metody getter a setter pro tato datová pole, které zajistí manipulaci s daty.</span><span class="sxs-lookup"><span data-stu-id="58383-165">Create getter and setter methods for these data fields to manipulate the data.</span></span>
 
-### <a name="step-2-retrieve-data-from-the-database"></a><span data-ttu-id="f4ee2-166">Krok 2.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-166">Step 2.</span></span> <span data-ttu-id="f4ee2-167">Načtěte data z databáze</span><span class="sxs-lookup"><span data-stu-id="f4ee2-167">Retrieve data from the database</span></span>
+### <a name="step-2-retrieve-data-from-the-database"></a><span data-ttu-id="58383-166">Krok 2.</span><span class="sxs-lookup"><span data-stu-id="58383-166">Step 2.</span></span> <span data-ttu-id="58383-167">Načtěte data z databáze</span><span class="sxs-lookup"><span data-stu-id="58383-167">Retrieve data from the database</span></span>
 
-<span data-ttu-id="f4ee2-168">Určete transakci a rozšiřte příslušné třídy adaptérů tak, aby se data načetla.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-168">Specify the transaction, and extend the appropriate adapter classes to retrieve the data.</span></span> <span data-ttu-id="f4ee2-169">Například pokud používáte transakci **Nákupní objednávka**, musíte rozšířit třídy `TaxIntegrationPurchTableDataRetrieval` a `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-169">For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span></span> 
+<span data-ttu-id="58383-168">Určete transakci a rozšiřte příslušné třídy adaptérů tak, aby se data načetla.</span><span class="sxs-lookup"><span data-stu-id="58383-168">Specify the transaction, and extend the appropriate adapter classes to retrieve the data.</span></span> <span data-ttu-id="58383-169">Například pokud používáte transakci **Nákupní objednávka**, musíte rozšířit třídy `TaxIntegrationPurchTableDataRetrieval` a `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="58383-169">For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="f4ee2-170">Třída `TaxIntegrationPurchParmTableDataRetrieval` dědí ze třídy `TaxIntegrationPurchTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-170">`TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`.</span></span> <span data-ttu-id="f4ee2-171">Nemělo by se to měnit, pokud se liší logika tabulek `purchTable` a `purchParmTable`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-171">It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.</span></span>
+> <span data-ttu-id="58383-170">Třída `TaxIntegrationPurchParmTableDataRetrieval` dědí ze třídy `TaxIntegrationPurchTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="58383-170">`TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`.</span></span> <span data-ttu-id="58383-171">Nemělo by se to měnit, pokud se liší logika tabulek `purchTable` a `purchParmTable`.</span><span class="sxs-lookup"><span data-stu-id="58383-171">It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.</span></span>
 
-<span data-ttu-id="f4ee2-172">Pokud má být datové pole přidáno pro všechny transakce, rozšiřte všechny třídy `DataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-172">If the data field should be added for all transactions, extend all `DataRetrieval` classes.</span></span>
+<span data-ttu-id="58383-172">Pokud má být datové pole přidáno pro všechny transakce, rozšiřte všechny třídy `DataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="58383-172">If the data field should be added for all transactions, extend all `DataRetrieval` classes.</span></span>
 
-<span data-ttu-id="f4ee2-173">Protože všechny aktivity **Načítání dat** rozšiřují stejnou třídu šablony, jsou struktury tříd, proměnné a metody podobné.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-173">Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.</span></span>
+<span data-ttu-id="58383-173">Protože všechny aktivity **Načítání dat** rozšiřují stejnou třídu šablony, jsou struktury tříd, proměnné a metody podobné.</span><span class="sxs-lookup"><span data-stu-id="58383-173">Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.</span></span>
 
 ```X++
 protected TaxIntegrationDocumentObject document;
@@ -199,7 +198,7 @@ protected abstract void copyToLine(TaxIntegrationLineObject _line)
 }
 ```
 
-<span data-ttu-id="f4ee2-174">Následující příklad ukazuje základní strukturu, když se používá tabulka `PurchTable`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-174">The following example shows the basic structure when the `PurchTable` table is used.</span></span>
+<span data-ttu-id="58383-174">Následující příklad ukazuje základní strukturu, když se používá tabulka `PurchTable`.</span><span class="sxs-lookup"><span data-stu-id="58383-174">The following example shows the basic structure when the `PurchTable` table is used.</span></span>
 
 ```X++
 public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstractDataRetrievalTemplate
@@ -226,13 +225,13 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
 }
 ```
 
-<span data-ttu-id="f4ee2-175">Když je volána metoda `CopyToDocument`, vyrovnávací paměť `this.purchTable` již existuje.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-175">When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists.</span></span> <span data-ttu-id="f4ee2-176">Účelem této metody je zkopírovat všechna požadovaná data z objektu `this.purchTable` do objektu `document` pomocí metody setter, která byla vytvořena ve třídě `DocumentObject`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-176">The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.</span></span>
+<span data-ttu-id="58383-175">Když je volána metoda `CopyToDocument`, vyrovnávací paměť `this.purchTable` již existuje.</span><span class="sxs-lookup"><span data-stu-id="58383-175">When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists.</span></span> <span data-ttu-id="58383-176">Účelem této metody je zkopírovat všechna požadovaná data z objektu `this.purchTable` do objektu `document` pomocí metody setter, která byla vytvořena ve třídě `DocumentObject`.</span><span class="sxs-lookup"><span data-stu-id="58383-176">The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.</span></span>
 
-<span data-ttu-id="f4ee2-177">Obdobně již existuje vyrovnávací paměť `this.purchLine` v metodě `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-177">Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method.</span></span> <span data-ttu-id="f4ee2-178">Účelem této metody je zkopírovat všechna požadovaná data z objektu `this.purchLine` do objektu `_line` pomocí metody setter, která byla vytvořena ve třídě `LineObject`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-178">The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.</span></span>
+<span data-ttu-id="58383-177">Obdobně již existuje vyrovnávací paměť `this.purchLine` v metodě `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="58383-177">Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method.</span></span> <span data-ttu-id="58383-178">Účelem této metody je zkopírovat všechna požadovaná data z objektu `this.purchLine` do objektu `_line` pomocí metody setter, která byla vytvořena ve třídě `LineObject`.</span><span class="sxs-lookup"><span data-stu-id="58383-178">The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.</span></span>
 
-<span data-ttu-id="f4ee2-179">Nejpřímějším přístupem je rozšíření metod `CopyToDocument` a `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-179">The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods.</span></span> <span data-ttu-id="f4ee2-180">Doporučujeme však vyzkoušet nejprve metody `copyToDocumentFromHeaderTable` a `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-180">However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first.</span></span> <span data-ttu-id="f4ee2-181">Pokud nefungují tak, jak požadujete, implementujte vlastní metodu a volejte ji v metodách `CopyToDocument` a `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-181">If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`.</span></span> <span data-ttu-id="f4ee2-182">Existují tři běžné situace, kdy můžete použít tento přístup:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-182">There are three common situations where you might use this approach:</span></span>
+<span data-ttu-id="58383-179">Nejpřímějším přístupem je rozšíření metod `CopyToDocument` a `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="58383-179">The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods.</span></span> <span data-ttu-id="58383-180">Doporučujeme však vyzkoušet nejprve metody `copyToDocumentFromHeaderTable` a `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="58383-180">However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first.</span></span> <span data-ttu-id="58383-181">Pokud nefungují tak, jak požadujete, implementujte vlastní metodu a volejte ji v metodách `CopyToDocument` a `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="58383-181">If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`.</span></span> <span data-ttu-id="58383-182">Existují tři běžné situace, kdy můžete použít tento přístup:</span><span class="sxs-lookup"><span data-stu-id="58383-182">There are three common situations where you might use this approach:</span></span>
 
-- <span data-ttu-id="f4ee2-183">Povinné pole je ve třídě `PurchTable` nebo `PurchLine`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-183">The required field is in `PurchTable` or `PurchLine`.</span></span> <span data-ttu-id="f4ee2-184">V této situaci můžete rozšířit metody `copyToDocumentFromHeaderTable` a `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-184">In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`.</span></span> <span data-ttu-id="f4ee2-185">Zde je ukázkový kód.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-185">Here is the sample code.</span></span>
+- <span data-ttu-id="58383-183">Povinné pole je ve třídě `PurchTable` nebo `PurchLine`.</span><span class="sxs-lookup"><span data-stu-id="58383-183">The required field is in `PurchTable` or `PurchLine`.</span></span> <span data-ttu-id="58383-184">V této situaci můžete rozšířit metody `copyToDocumentFromHeaderTable` a `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="58383-184">In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`.</span></span> <span data-ttu-id="58383-185">Zde je ukázkový kód.</span><span class="sxs-lookup"><span data-stu-id="58383-185">Here is the sample code.</span></span>
 
     ```X++
     /// <summary>
@@ -247,7 +246,7 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-- <span data-ttu-id="f4ee2-186">Požadovaná data nejsou ve výchozí tabulce transakce.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-186">The required data isn't in the default table of the transaction.</span></span> <span data-ttu-id="f4ee2-187">Existují však některé relace spojení s výchozí tabulkou a toto pole je u většiny řádků povinné.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-187">However, there are some join relationships with the default table, and the field is required on most lines.</span></span> <span data-ttu-id="f4ee2-188">V této situaci nahraďte metody `getDocumentQueryObject` nebo `getLineObject` a dotazujte se v tabulce podle relace spojení.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-188">In this situation, replace `getDocumentQueryObject` or `getLineObject` to query the table by join relationship.</span></span> <span data-ttu-id="f4ee2-189">V následujícím příkladu je pole **Doručit ihned** integrováno s prodejní objednávkou na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-189">In the following example, the **Deliver Now** field is integrated with the sales order at the line level.</span></span>
+- <span data-ttu-id="58383-186">Požadovaná data nejsou ve výchozí tabulce transakce.</span><span class="sxs-lookup"><span data-stu-id="58383-186">The required data isn't in the default table of the transaction.</span></span> <span data-ttu-id="58383-187">Existují však některé relace spojení s výchozí tabulkou a toto pole je u většiny řádků povinné.</span><span class="sxs-lookup"><span data-stu-id="58383-187">However, there are some join relationships with the default table, and the field is required on most lines.</span></span> <span data-ttu-id="58383-188">V této situaci nahraďte metody `getDocumentQueryObject` nebo `getLineObject` a dotazujte se v tabulce podle relace spojení.</span><span class="sxs-lookup"><span data-stu-id="58383-188">In this situation, replace `getDocumentQueryObject` or `getLineObject` to query the table by join relationship.</span></span> <span data-ttu-id="58383-189">V následujícím příkladu je pole **Doručit ihned** integrováno s prodejní objednávkou na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="58383-189">In the following example, the **Deliver Now** field is integrated with the sales order at the line level.</span></span>
 
     ```X++
     public class TaxIntegrationSalesTableDataRetrieval
@@ -270,14 +269,14 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-    <span data-ttu-id="f4ee2-190">V tomto příkladu je deklarována vyrovnávací paměť `mcrSalesLineDropShipment` a dotaz je definován v metodě `getLineQueryObject`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-190">In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`.</span></span> <span data-ttu-id="f4ee2-191">Dotaz používá relaci `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-191">The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span></span> <span data-ttu-id="f4ee2-192">Když v této situaci rozšiřujete třídu, můžete nahradit `getLineQueryObject` vlastním vytvořeným objektem dotazu.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-192">While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object.</span></span> <span data-ttu-id="f4ee2-193">Upozorňujeme však na tyto aspekty:</span><span class="sxs-lookup"><span data-stu-id="f4ee2-193">However, note the following points:</span></span>
+    <span data-ttu-id="58383-190">V tomto příkladu je deklarována vyrovnávací paměť `mcrSalesLineDropShipment` a dotaz je definován v metodě `getLineQueryObject`.</span><span class="sxs-lookup"><span data-stu-id="58383-190">In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`.</span></span> <span data-ttu-id="58383-191">Dotaz používá relaci `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span><span class="sxs-lookup"><span data-stu-id="58383-191">The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span></span> <span data-ttu-id="58383-192">Když v této situaci rozšiřujete třídu, můžete nahradit `getLineQueryObject` vlastním vytvořeným objektem dotazu.</span><span class="sxs-lookup"><span data-stu-id="58383-192">While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object.</span></span> <span data-ttu-id="58383-193">Upozorňujeme však na tyto aspekty:</span><span class="sxs-lookup"><span data-stu-id="58383-193">However, note the following points:</span></span>
 
-    * <span data-ttu-id="f4ee2-194">Protože návratová hodnota metody `getLineQueryObject` je objekt `SysDaQueryObject`, musíte tento objekt sestavit pomocí přístupu SysDa.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-194">Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.</span></span>
-    * <span data-ttu-id="f4ee2-195">Existující tabulku nelze odstranit.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-195">Can't remove existed table.</span></span>
+    * <span data-ttu-id="58383-194">Protože návratová hodnota metody `getLineQueryObject` je objekt `SysDaQueryObject`, musíte tento objekt sestavit pomocí přístupu SysDa.</span><span class="sxs-lookup"><span data-stu-id="58383-194">Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.</span></span>
+    * <span data-ttu-id="58383-195">Existující tabulku nelze odstranit.</span><span class="sxs-lookup"><span data-stu-id="58383-195">Can't remove existed table.</span></span>
 
-- <span data-ttu-id="f4ee2-196">Požadovaná data souvisí s transakční tabulkou komplikovanou relací spojení, nebo relace není jedna ku jedné (1:1), ale jedna k mnoha (1:N).</span><span class="sxs-lookup"><span data-stu-id="f4ee2-196">The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N).</span></span> <span data-ttu-id="f4ee2-197">V tomto případě se věci trochu komplikují.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-197">In this situation, things become a little complicated.</span></span> <span data-ttu-id="f4ee2-198">Tato situace platí pro příklad finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-198">This situation applies to the example of financial dimensions.</span></span> 
+- <span data-ttu-id="58383-196">Požadovaná data souvisí s transakční tabulkou komplikovanou relací spojení, nebo relace není jedna ku jedné (1:1), ale jedna k mnoha (1:N).</span><span class="sxs-lookup"><span data-stu-id="58383-196">The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N).</span></span> <span data-ttu-id="58383-197">V tomto případě se věci trochu komplikují.</span><span class="sxs-lookup"><span data-stu-id="58383-197">In this situation, things become a little complicated.</span></span> <span data-ttu-id="58383-198">Tato situace platí pro příklad finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="58383-198">This situation applies to the example of financial dimensions.</span></span> 
 
-    <span data-ttu-id="f4ee2-199">V tomto případě můžete implementovat vlastní metodu k načtení dat.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-199">In this situation, you can implement your own method to retrieve the data.</span></span> <span data-ttu-id="f4ee2-200">Zde je ukázkový kód v souboru `TaxIntegrationPurchTableDataRetrieval_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-200">Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.</span></span>
+    <span data-ttu-id="58383-199">V tomto případě můžete implementovat vlastní metodu k načtení dat.</span><span class="sxs-lookup"><span data-stu-id="58383-199">In this situation, you can implement your own method to retrieve the data.</span></span> <span data-ttu-id="58383-200">Zde je ukázkový kód v souboru `TaxIntegrationPurchTableDataRetrieval_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="58383-200">Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.</span></span>
 
     ```X++
     [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
@@ -327,9 +326,9 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-### <a name="step-3-add-data-to-the-request"></a><span data-ttu-id="f4ee2-201">Krok 3.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-201">Step 3.</span></span> <span data-ttu-id="f4ee2-202">Přidejte k požadavku data</span><span class="sxs-lookup"><span data-stu-id="f4ee2-202">Add data to the request</span></span>
+### <a name="step-3-add-data-to-the-request"></a><span data-ttu-id="58383-201">Krok 3.</span><span class="sxs-lookup"><span data-stu-id="58383-201">Step 3.</span></span> <span data-ttu-id="58383-202">Přidejte k požadavku data</span><span class="sxs-lookup"><span data-stu-id="58383-202">Add data to the request</span></span>
 
-<span data-ttu-id="f4ee2-203">Rozšiřte metodu `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` nebo `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine`, aby přidávala data k požadavku.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-203">Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request.</span></span> <span data-ttu-id="f4ee2-204">Zde je ukázkový kód v souboru `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-204">Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.</span></span>
+<span data-ttu-id="58383-203">Rozšiřte metodu `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` nebo `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine`, aby přidávala data k požadavku.</span><span class="sxs-lookup"><span data-stu-id="58383-203">Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request.</span></span> <span data-ttu-id="58383-204">Zde je ukázkový kód v souboru `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="58383-204">Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
@@ -354,17 +353,17 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-<span data-ttu-id="f4ee2-205">V tomto kódu je `_destination` objektem obálky, který se používá ke generování zasílaného požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-205">In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.</span></span> 
+<span data-ttu-id="58383-205">V tomto kódu je `_destination` objektem obálky, který se používá ke generování zasílaného požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="58383-205">In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.</span></span> 
 
 > [!NOTE]
-> * <span data-ttu-id="f4ee2-206">Definujte klíč, který se používá ve formuláři žádosti, jako `private const str`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-206">Define the key that is used in the request form as `private const str`.</span></span>
-> * <span data-ttu-id="f4ee2-207">Nastavte pole v metodě `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` pomocí metody `SetField`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-207">Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method.</span></span> <span data-ttu-id="f4ee2-208">Datový typ druhého parametru by měl být `string`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-208">The data type of the second parameter should be `string`.</span></span> <span data-ttu-id="f4ee2-209">Pokud datový typ není `string` převeďte ho na `string`.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-209">If the data type isn't `string`, convert it to `string`.</span></span>
+> * <span data-ttu-id="58383-206">Definujte klíč, který se používá ve formuláři žádosti, jako `private const str`.</span><span class="sxs-lookup"><span data-stu-id="58383-206">Define the key that is used in the request form as `private const str`.</span></span>
+> * <span data-ttu-id="58383-207">Nastavte pole v metodě `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` pomocí metody `SetField`.</span><span class="sxs-lookup"><span data-stu-id="58383-207">Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method.</span></span> <span data-ttu-id="58383-208">Datový typ druhého parametru by měl být `string`.</span><span class="sxs-lookup"><span data-stu-id="58383-208">The data type of the second parameter should be `string`.</span></span> <span data-ttu-id="58383-209">Pokud datový typ není `string` převeďte ho na `string`.</span><span class="sxs-lookup"><span data-stu-id="58383-209">If the data type isn't `string`, convert it to `string`.</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="f4ee2-210">Dodatek</span><span class="sxs-lookup"><span data-stu-id="f4ee2-210">Appendix</span></span>
+## <a name="appendix"></a><span data-ttu-id="58383-210">Dodatek</span><span class="sxs-lookup"><span data-stu-id="58383-210">Appendix</span></span>
 
-<span data-ttu-id="f4ee2-211">Tato příloha ukazuje kompletní ukázkový kód pro integraci finančních dimenzí (**Nákladové středisko** a **Projekt**) na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="f4ee2-211">This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.</span></span>
+<span data-ttu-id="58383-211">Tato příloha ukazuje kompletní ukázkový kód pro integraci finančních dimenzí (**Nákladové středisko** a **Projekt**) na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="58383-211">This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.</span></span>
 
-### <a name="taxintegrationlineobject_extensionxpp"></a><span data-ttu-id="f4ee2-212">TaxIntegrationLineObject_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="f4ee2-212">TaxIntegrationLineObject_Extension.xpp</span></span>
+### <a name="taxintegrationlineobject_extensionxpp"></a><span data-ttu-id="58383-212">TaxIntegrationLineObject_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="58383-212">TaxIntegrationLineObject_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
@@ -411,7 +410,7 @@ final class TaxIntegrationLineObject_Extension
 }
 ```
 
-### <a name="taxintegrationpurchtabledataretrieval_extensionxpp"></a><span data-ttu-id="f4ee2-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="f4ee2-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span></span>
+### <a name="taxintegrationpurchtabledataretrieval_extensionxpp"></a><span data-ttu-id="58383-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="58383-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
@@ -459,7 +458,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 }
 ```
 
-### <a name="taxintegrationcalculationactivityondocument_calculationservice_extensionxpp"></a><span data-ttu-id="f4ee2-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="f4ee2-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span></span>
+### <a name="taxintegrationcalculationactivityondocument_calculationservice_extensionxpp"></a><span data-ttu-id="58383-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="58383-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]

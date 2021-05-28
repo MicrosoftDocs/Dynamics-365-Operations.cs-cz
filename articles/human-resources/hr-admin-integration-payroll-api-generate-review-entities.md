@@ -2,7 +2,6 @@
 title: Generování a kontrola entit mzdy
 description: Toto téma popisuje, jak generovat a kontrolovat mzdové entity.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,24 +14,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e043498d4e36e38575a16c6475a5edfef51fc6
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881943"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021313"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="c4220-103">Generování entit mzdy</span><span class="sxs-lookup"><span data-stu-id="c4220-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="404ca-103">Generování entit mzdy</span><span class="sxs-lookup"><span data-stu-id="404ca-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="c4220-104">Tuto funkci OData použijte ke generování entit potřebných pro integraci mezd.</span><span class="sxs-lookup"><span data-stu-id="c4220-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="c4220-105">Pokud se u těchto entit v lidských zdrojích provedou nějaké změny, například přidání vlastních polí, lze tuto funkci znovu zavolat a aktualizovat metadata každé entity.</span><span class="sxs-lookup"><span data-stu-id="c4220-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="c4220-106">Odpověď obsahuje ID operace, které můžete sledovat, abyste věděli, kdy je proces generování dokončen.</span><span class="sxs-lookup"><span data-stu-id="c4220-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="404ca-104">Tuto funkci OData použijte ke generování entit potřebných pro integraci mezd.</span><span class="sxs-lookup"><span data-stu-id="404ca-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="404ca-105">Pokud se u těchto entit v lidských zdrojích provedou nějaké změny, například přidání vlastních polí, lze tuto funkci znovu zavolat a aktualizovat metadata každé entity.</span><span class="sxs-lookup"><span data-stu-id="404ca-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="404ca-106">Odpověď obsahuje ID operace, které můžete sledovat, abyste věděli, kdy je proces generování dokončen.</span><span class="sxs-lookup"><span data-stu-id="404ca-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="c4220-107">**Žádost**</span><span class="sxs-lookup"><span data-stu-id="c4220-107">**Request**</span></span>
+<span data-ttu-id="404ca-107">**Žádost**</span><span class="sxs-lookup"><span data-stu-id="404ca-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="c4220-108">**tělo**</span><span class="sxs-lookup"><span data-stu-id="c4220-108">**body**</span></span>
+<span data-ttu-id="404ca-108">**tělo**</span><span class="sxs-lookup"><span data-stu-id="404ca-108">**body**</span></span>
 
 ```json
 {
@@ -40,7 +39,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="c4220-109">**Odezva**</span><span class="sxs-lookup"><span data-stu-id="c4220-109">**Response**</span></span>
+<span data-ttu-id="404ca-109">**Odezva**</span><span class="sxs-lookup"><span data-stu-id="404ca-109">**Response**</span></span>
 
 ```json
 {
@@ -48,17 +47,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="c4220-110">Kontrola entit mzdy</span><span class="sxs-lookup"><span data-stu-id="c4220-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="404ca-110">Kontrola entit mzdy</span><span class="sxs-lookup"><span data-stu-id="404ca-110">Review payroll entities</span></span>
 
-<span data-ttu-id="c4220-111">Pomocí tohoto rozhraní API můžete načíst seznam entit, které byly úspěšně vygenerovány a jsou připraveny k použití.</span><span class="sxs-lookup"><span data-stu-id="c4220-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="404ca-111">Pomocí tohoto rozhraní API můžete načíst seznam entit, které byly úspěšně vygenerovány a jsou připraveny k použití.</span><span class="sxs-lookup"><span data-stu-id="404ca-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="c4220-112">**Žádost**</span><span class="sxs-lookup"><span data-stu-id="c4220-112">**Request**</span></span>
+<span data-ttu-id="404ca-112">**Žádost**</span><span class="sxs-lookup"><span data-stu-id="404ca-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="c4220-113">**Odezva**</span><span class="sxs-lookup"><span data-stu-id="c4220-113">**Response**</span></span>
+<span data-ttu-id="404ca-113">**Odezva**</span><span class="sxs-lookup"><span data-stu-id="404ca-113">**Response**</span></span>
 
 ```json
 {
