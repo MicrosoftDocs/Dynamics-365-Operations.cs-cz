@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44042fc43fa3b43358120fb6f8f633abeae7005f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798854"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020306"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profily certifikátů definované uživatelem pro maloobchodní prodejny
 
@@ -79,7 +79,7 @@ Když přidáte nový řádek na stránku **Nastavení profilu certifikátu**, n
 - **Certifikát Key Vault** – Toto pole je povinné, pokud nastavíte pole **Typ umístění** na **Key Vault**. Slouží k určení tajného kódu certifikátu Key Vault.
 
     > [!NOTE]
-    > Před použitím certifikátu Key Vault v profilech certifikátů nahrajte certifikát do úložiště trezoru klíčů a postupujte podle pokynů v článku [Nastavení klienta Azure Key Vault](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
+    > Před použitím certifikátu Key Vault v profilech certifikátů nahrajte certifikát do úložiště trezoru klíčů a postupujte podle pokynů v článku [Nastavení klienta Azure Key Vault](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 - **Název obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího názvu obchodu, který by se měl použít k hledání v místních certifikátech.
 - **Umístění obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího místa obchodu, který by se měl použít k hledání v místních certifikátech.

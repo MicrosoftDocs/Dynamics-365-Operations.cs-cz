@@ -2,7 +2,6 @@
 title: Mzdový plán fixní kompenzace
 description: Toto téma poskytuje informace a ukázkový dotaz pro entitu pevného plánu kompenzace v Dynamics 365 Human Resources.
 author: jcart
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a274cc491041d3d917a50bfb433f667cd8c255
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 85cfce6f626090adab422ea6c60fc0778fd1ac67
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881945"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021289"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Mzdový plán fixní kompenzace
 

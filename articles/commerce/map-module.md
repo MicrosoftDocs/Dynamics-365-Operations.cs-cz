@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b8c3ab0653fd5e3561d0bfbe85624d912756e2be
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 659211f3a74c38389f991cd2385366d175b0c7c0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794180"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020252"
 ---
 # <a name="map-module"></a>Modul mapy
 
@@ -29,7 +29,7 @@ ms.locfileid: "5794180"
 
 Toto téma popisuje moduly mapy a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 
-Modul mapy zobrazuje umístění obchodů na interaktivní mapě, která je vykreslena pomocí [webového ovládacího prvku Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/). Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Moduly mapy poskytují různá zobrazení, jako jsou silniční, anténní a pouliční, které si uživatelé mohou vybrat pro zobrazení polohy na mapě. Umožňují také interakce, jako je přibližování a používání polohy uživatele.
+Modul mapy zobrazuje umístění obchodů na interaktivní mapě, která je vykreslena pomocí [webového ovládacího prvku Bing Maps V8](/bingmaps/v8-web-control/). Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Moduly mapy poskytují různá zobrazení, jako jsou silniční, anténní a pouliční, které si uživatelé mohou vybrat pro zobrazení polohy na mapě. Umožňují také interakce, jako je přibližování a používání polohy uživatele.
 
 Modul mapy pracuje ve spojení s modulem pro výběr obchodů a určuje geografická umístění obchodů, které musí být vykresleny na mapě. Selektor úložiště a moduly mapy spolupracují, když uživatel vybere úložiště v jednom z těchto modulů na stránce webu. Moduly mapy lze rozšířit i na další scénáře, mimo interakci s moduly výběru obchodů. Vyžaduje se však přizpůsobení modulu.
 
@@ -76,7 +76,7 @@ Podrobné informace o konfiguraci modulu mapy na stránce viz [Uložení modulu 
 
 [Správa map Bing pro vaši organizaci](./dev-itpro/manage-bing-maps.md)
 
-[Webový ovládací prvek Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Webový ovládací prvek Bing Maps V8](/bingmaps/v8-web-control/)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

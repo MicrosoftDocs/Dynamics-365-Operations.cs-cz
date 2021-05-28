@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 59d6b298896c92cbc0f6bbae17096ee1f027b922
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799148"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019852"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -39,7 +39,7 @@ Před povolením doporučení musí být v administravě povoleny následující
 2. Zkontrolujte, zda byla aktualizace úložiště entity automatizovaná. Další informace naleznete v tématu [Zajistěte, aby aktualizace úložiště entity byla automatizovaná](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Potvrďte, že konfigurace identity Azure AD obsahuje záznam pro doporučení. Další informace o tom, jak provést tuto akci, je následující.
 
-Dále zkontrolujte, zda byly povoleny ukazatele RetailSale. Další informace o tomto nastavení procesu naleznete v tématu [Práce s opatřeními](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Dále zkontrolujte, zda byly povoleny ukazatele RetailSale. Další informace o tomto nastavení procesu naleznete v tématu [Práce s opatřeními](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="azure-ad-identity-configuration"></a>Konfigurace identity Azure AD
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827331"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028220"
 ---
 # <a name="position-forecasting"></a>Prognóza pozice
 

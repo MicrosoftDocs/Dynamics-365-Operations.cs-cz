@@ -2,7 +2,6 @@
 title: Modul volby obchodu
 description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853410"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021457"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
@@ -62,7 +61,7 @@ Pro zadání hodnot zeměpisné šířky a délky umístění obchodu v centrá
 
 ## <a name="bing-maps-integration"></a>Integrace Bing Maps
 
-Modul pro výběr obchodu je integrován do [Rozhraní pro programování aplikací Bing Maps REST (API)](https://docs.microsoft.com/bingmaps/rest-services/), aby bylo možné používat funkce Geocoding a Autosuggestu společnosti Bing. Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Geocoding API se používá k převodu polohy na hodnoty zeměpisné šířky a délky. Integrace s rozhraním Autosuggest API se používá k zobrazení návrhů vyhledávání, když uživatelé zadají umístění do vyhledávacího pole.
+Modul pro výběr obchodu je integrován do [Rozhraní pro programování aplikací Bing Maps REST (API)](/bingmaps/rest-services/), aby bylo možné používat funkce Geocoding a Autosuggestu společnosti Bing. Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Geocoding API se používá k převodu polohy na hodnoty zeměpisné šířky a délky. Integrace s rozhraním Autosuggest API se používá k zobrazení návrhů vyhledávání, když uživatelé zadají umístění do vyhledávacího pole.
 
 U rozhraní AUTOSuggest REST API musíte zajistit, aby byly povoleny následující adresy URL podle zásad zabezpečení obsahu vašeho webu (CSP). Toto nastavení se provádí v nástroji Commerce site Builder přidáním povolených adres URL do různých směrnic CSP pro web (například **img-src**). Další informace viz [Zásady zabezpečení obsahu](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Modul pro výběr obchodu podporuje a režim **Vyzvednutí v obchodě**, který 
 
 Modul volby obchodu lze přidat do modulu buy boxu na stránce v PDP, aby se zobrazily obchody, ve kterých je produkt k dispozici pro výdej. Lze jej také přidat do modulu košíku. V tomto případě modul pro výběr obchodu zobrazuje možnosti vyzvednutí pro každou položku řádku v košíku. Tento modul lze přidat na jiné stránky nebo do jiných modulů prostřednictvím rozšíření a přizpůsobení.
 
-Aby scénář BOPIS fungoval, měly by být produkty konfigurovány se způsobem dodání **vyzvednutí zákazníkem**. V opačném případě se modul na příslušných stránkách produktu nezobrazí. Další informace o konfiguraci způsobu dodání naleznete v tématu [Nastavení způsobů dodání](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Aby scénář BOPIS fungoval, měly by být produkty konfigurovány se způsobem dodání **vyzvednutí zákazníkem**. V opačném případě se modul na příslušných stránkách produktu nezobrazí. Další informace o konfiguraci způsobu dodání naleznete v tématu [Nastavení způsobů dodání](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Následující obrázek znázorňuje příklad modulu volby obchodu použitého na stránce s podrobnostmi o produktu.
 
 ![Příklad modulu volby obchodu používaného u PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> Ve verzi 10.0.16 a novější lze povolit novou funkci, která organizaci umožňuje definovat více způsobů vyzvednutí zásilky pro zákazníky.  Pokud je tato funkce povolena, bude nástroj pro výběr obchodů a další moduly elektronického obchodování rozšířen, aby umožnil nakupujícímu vybrat si z potenciálně více možností vyzvednutí zásilky, pokud jsou nakonfigurovány.  Další informace o této funkci najdete v [této dokumentaci](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> Ve verzi 10.0.16 a novější lze povolit novou funkci, která organizaci umožňuje definovat více způsobů vyzvednutí zásilky pro zákazníky.  Pokud je tato funkce povolena, bude nástroj pro výběr obchodů a další moduly elektronického obchodování rozšířen, aby umožnil nakupujícímu vybrat si z potenciálně více možností vyzvednutí zásilky, pokud jsou nakonfigurovány.  Další informace o této funkci najdete v [této dokumentaci](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Najít režim obchodů
 
@@ -157,11 +156,11 @@ Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dost
 
 [Rychlá prohlídka košíku a pokladny](quick-tour-cart-checkout.md)
 
-[Nastavit způsoby dodání](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Nastavit způsoby dodání](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Správa map Bing pro vaši organizaci](dev-itpro/manage-bing-maps.md)
 
-[Rozhraní REST API Map Bing](https://docs.microsoft.com/bingmaps/rest-services/)
+[Rozhraní REST API Map Bing](/bingmaps/rest-services/)
 
 [Modul Mapy](map-module.md)
 

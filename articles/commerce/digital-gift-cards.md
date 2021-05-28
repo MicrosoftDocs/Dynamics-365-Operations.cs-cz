@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792864"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019926"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitální dárkové karty elektronického obchodování
 
@@ -51,12 +51,12 @@ Produkty digitální dárkové karty se konfigurují v centrále Commerce. Tento
 
     ![Pole produktu Dárkové karty v ústředí Commerce](./media/PostGiftcard.png)
 
-- Pokud dárková karta musí podporovat více předdefinovaných částek (například $25, $50 a $100), rozměr **Velikost** se použije k nastavení těchto předdefinovaných částek. Každá předdefinovaná částka bude variantou. Další informace naleznete v tématu [Dimenze produktu](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Pokud dárková karta musí podporovat více předdefinovaných částek (například $25, $50 a $100), rozměr **Velikost** se použije k nastavení těchto předdefinovaných částek. Každá předdefinovaná částka bude variantou. Další informace naleznete v tématu [Dimenze produktu](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Pokud zákazníci musí být schopni určit vlastní částku pro dárkovou kartu, nejprve nastavte variantu, která umožňuje vlastní částku. Poté otevřete produkt ze stránky **Vydané produkty v kategorii** a poté na pevné kartě **Commerce** nastavte pole **Zadat cenu** na **Je třeba zadat novou cenu**, jak je znázorněno na následujícím obrázku. Toto nastavení zajišťuje, že zákazníci mohou zadat cenu, když procházejí produkt na PDP.
 
     ![Pole Zadat cenu v ústředí Commerce](./media/KeyInPrice.png)
 
-- Režim doručování digitální dárkové karty musí být nastaven na **Elektronicky**. Na stránce **Způsoby dodání** (**Reatil a Commerce \> Nastavení kanálu \> Způsoby dodání**) vyberte způsob dodání **Elektronicky** v podokně se seznamem a poté přidejte produkt digitální dárkové karty do mřížky na pevné kartě **Produkty**, jak je znázorněno na následujícím obrázku. Další informace naleznete v tématu [Nastavení způsobů doručení](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Režim doručování digitální dárkové karty musí být nastaven na **Elektronicky**. Na stránce **Způsoby dodání** (**Reatil a Commerce \> Nastavení kanálu \> Způsoby dodání**) vyberte způsob dodání **Elektronicky** v podokně se seznamem a poté přidejte produkt digitální dárkové karty do mřížky na pevné kartě **Produkty**, jak je znázorněno na následujícím obrázku. Další informace naleznete v tématu [Nastavení způsobů doručení](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Produkty digitálních dárkových karet na stránce Způsob doručení v ústředí Commerce](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Ke konfiguraci vlastní částky pro digitální dárkovou kartu v nástroji kon
 
 [Vytvoření nového produktu v Commerce](create-new-product-commerce.md)
 
-[Nastavit způsoby dodání](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Nastavit způsoby dodání](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Dimenze produktu](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Dimenze produktu](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [Nastavení profilu oznámení e-mailem](email-notification-profiles.md)
 

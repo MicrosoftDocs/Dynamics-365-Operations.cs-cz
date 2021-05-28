@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 25f02517bf333716bdb7c74ce1decebcd4e30c6d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a1ee19a052c4a64995e6fcaa4afbe04b3e95fa55
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801884"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027545"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
@@ -142,7 +142,7 @@ Maloobchodní prodejci kromě toho mohou definovat maximální limit bodů věrn
     > V současné době vynutí systém po uživateli, aby nastavil číselnou řadu pro "ostatní typy aktivit", ale nebude se jednat o povinný krok v příštích verzích. Chcete-li nastavit číselnou řadu, přejděte na **Sdílené velkoobchodní parametry** \> **Číselné řady** a vyberte číselnou řadu pro **ID typu ostatních věrnostních aktivit**.
 
 - Pokud chcete poskytovat zákaznické služby a efektivně řešit dotazy zákazníků, je důležité, aby měli podkladní přístup k úplnému profilu zákazníka. Ve verzi 10.0 budou pokladní moci zobrazit detaily věrnostní historie spolu s přidruženým věrnostním programem a informacemi o vrstvě v POS.
-- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tato funkce využívá novou funkci rozšířených automatických nákladů. Informace naleznete [v dokumentaci k rozšířeným automatickým nákladům](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Tyto rozšířené automatické náklady musí být povoleny, aby fungovala propagace doručení. Lze je povolit z karty **Objednávky zákazníka** na stránce **Parametry velkoobchodu** a zapnout na konfiguraci „Použít rozšířené automatické náklady“. Navíc vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Přepravní slevy se vztahují pouze k poplatkům za expedici. K určení nákladů jako dopravného přejděte na formulář **Kódy nákladů** přítomný pod možnostmi **Maloobchod a velkoobchod** \> **IT pro maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Náklady** a povolte zaškrtávací políčko Dopravné pro požadované náklady. Nyní můžete přejít na formulář **Dodací mezní sleva** a nastavit slevu.
+- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tato funkce využívá novou funkci rozšířených automatických nákladů. Informace naleznete [v dokumentaci k rozšířeným automatickým nákladům](/dynamics365/unified-operations/retail/omni-auto-charges). Tyto rozšířené automatické náklady musí být povoleny, aby fungovala propagace doručení. Lze je povolit z karty **Objednávky zákazníka** na stránce **Parametry velkoobchodu** a zapnout na konfiguraci „Použít rozšířené automatické náklady“. Navíc vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Přepravní slevy se vztahují pouze k poplatkům za expedici. K určení nákladů jako dopravného přejděte na formulář **Kódy nákladů** přítomný pod možnostmi **Maloobchod a velkoobchod** \> **IT pro maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Náklady** a povolte zaškrtávací políčko Dopravné pro požadované náklady. Nyní můžete přejít na formulář **Dodací mezní sleva** a nastavit slevu.
 
     Stejně jako produktové slevy, tato sleva uznává všechny existující standardní možnosti slevy, jako je například umožnění prodejci omezit tyto slevy na poukazy, aby je získal pouze zákazník s poukazy. Tyto slevy také využívají schopnost cenové skupiny ceny k určení nároku na tyto slevy. Například prodejce může spustit tyto promoakce, pouze v online kanálech nebo napříč kanály pro určité skupiny zákazníků, jako jsou věrní zákazníci. Jakmile řádky objednávky s určeným režimem dodání splní definovanou prahovou hodnotu, použije se sleva za doručení a sníží se poplatek za doručení na základě nastavené slevy. 
 

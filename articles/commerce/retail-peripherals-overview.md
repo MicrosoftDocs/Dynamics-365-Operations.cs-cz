@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857266"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018824"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -158,7 +158,7 @@ Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební 
 
 ### <a name="dedicated"></a>Vyhrazeno
 
-Klienti Modern POS pro Windows Android zahrnují **vyhrazené** nebo vestavěné hardwarové stanice. Tito klienti mohou komunikovat přímo s periferními zařízeními pomocí obchodní logiky, která je vestavěna v aplikacích. Aplikace Android podporuje pouze síťová zařízení. Další informace o podpoře periferních zařízení Android naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Klienti Modern POS pro Windows Android zahrnují **vyhrazené** nebo vestavěné hardwarové stanice. Tito klienti mohou komunikovat přímo s periferními zařízeními pomocí obchodní logiky, která je vestavěna v aplikacích. Aplikace Android podporuje pouze síťová zařízení. Další informace o podpoře periferních zařízení Android naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](./dev-itpro/hybridapp.md).
 
 Chcete-li použít vyhrazenou hardwarovou stanici, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS pro aplikace sytému Windows nebo Android. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Spusťte Modern POS v režimu bez zásuvky a pomocí operace **spravovat hardwarové stanice** zapněte možnosti hardwarové stanice, vyhrazená hardwarová stanice bude standardně aktivní. Poté se znovu přihlaste z Modern POS, potom se přihlaste a otevřete směnu a periferní zařízení konfigurovaná v hardwarovém profilu budou použitelná. 
 
@@ -199,7 +199,7 @@ Informace naleznete v tématu [Konfigurace, instalace a aktivace Moder POS (MPOS
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Nastavení a konfigurace Modern POS pro Android a iOS
 
-Informace naleznete v části [Nastavení hybridní aplikace POS v systému Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Informace naleznete v části [Nastavení hybridní aplikace POS v systému Android a iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
 
@@ -494,7 +494,7 @@ Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS reg
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Android s hardwarovou stanicí IPC (vestavěnou)
 
-**Novinka 10.0.8** - Síťové tiskárny Epson a hotovostní zásuvky připojené k těmto tiskárnám pomocí portu DK jsou nyní podporovány v aplikaci Modern POS pro Android. Podrobné informace naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Novinka 10.0.8** - Síťové tiskárny Epson a hotovostní zásuvky připojené k těmto tiskárnám pomocí portu DK jsou nyní podporovány v aplikaci Modern POS pro Android. Podrobné informace naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Všichni klienti Modern POS, kteří mají potvrzenou, sdílenou hardwarovou stanici IIS
 
@@ -615,9 +615,12 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 | Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
 | HP           | F7M67AA  | OPOS      | Napájené USB             |
 
+> [!NOTE]
+> Tiskárna Star TSP 100 není pro vestavěnou hardwarovou stanici podporována. Integrovaná hardwarová stanice používá 64bitový proces, který není kompatibilní se stávajícími ovladači Star TP 100. 
+
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
-| Výrobce  | Model         | Rozhraní | Poznámky |
+| Výrobce  | Model         | Rozhraní | Komentáře |
 |---------------|---------------|-----------|----------|
 | Motorola      | DS9208        | OPOS      |          |
 | Honeywell     | 1900          | UWP       |          |

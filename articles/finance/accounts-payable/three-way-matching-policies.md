@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814289"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027787"
 ---
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
@@ -39,7 +39,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 -   Ken bude kontrolor pro společnost Fabrikam. Pomáhá osobám v organizaci při identifikaci a nápravě problémů s objednáváním, příjem a placením položek (zboží a služby) od dodavatelů.
 -   Phyllis a April jsou účetní vedoucí v oddělení závazků pro USA divizi společnosti Fabrikam. Mohou vynutit zásady společnosti a ujistit se, že faktury jsou zaplaceny až poté, co jsou faktury porovnávány s nákupní objednávkou a příjmem zboží a služeb (kde je to vhodné).
--   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. On a ostatní výrobní pracovníci mohou zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
+-   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. Spolu s ostatními výrobními pracovníky může zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
 
 ### <a name="prerequisites"></a>Předpoklady
 
@@ -49,9 +49,9 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 -   Ken nastaví zásady párování na úrovni položky pro položku 1500 – zařízení CNC Milicron na třícestné párování. Tato položka je položkou majetku použitou pro výrobu ve společnosti Fabrikam. Faktury pro tuto položku jsou pak spárovány s řádky nákupní objednávky s ohledem na ceny a příjemky produktů na množství.
 -   Tony zadá požadavek pro pět zařízení CNC Milicron. Alicia, úředník pro nákupní objednávky ve společnosti Fabrikam, vystaví nákupní objednávku právnické osobě s názvem Contoso s cílem zadat položky.
 
-    | Číslo zboží                 | Množství | Jednotková cena | Čistá částka | Kód nákladů        | Hodnota nákladů |
+    | Č. položky                 | Množství | Jedn. cena | Čistá částka | Kód nákladů        | Hodnota nákladů |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – zařízení CNC Milicron | 5        | 8 000,00   | 40 000,00  | Expedice a zpracování | 3 000,00      |
+    | 1500 – zařízení CNC Milicron | 5        | 8 000,00   | 40 000,00  | Expedice a zpracování | 3,000.00      |
 
 -   Arnie, úředník pohledávek ve společnosti Contoso, prověří dodávky pro daný týden. Arnie vybere transakce dodávky pro fakturaci společnosti Fabrikam v rámci dodání zařízení CNC Milicron. Arnie zahrne náklady na expedici a zpracování. Společnost Fabrikam zváží přidání poplatků jako součást nákladů na majetek.
 
@@ -66,7 +66,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 Papírová faktura ze společnosti Contoso obsahuje následující informace.
 
-| Položka                        | Množství | Jednotková cena | Čistá částka |
+| Zboží                        | Množství | Jedn. cena | Čistá částka |
 |-----------------------------|----------|------------|------------|
 | 1500 – zařízení CNC Milicron | 5        | 8 100,00   | 40,500.00  |
 | Expedice a zpracování       |          |            | 4,000.00   |
@@ -115,7 +115,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 Papírová faktura ze společnosti Contoso obsahuje následující informace.
 
-| Položka                  | Množství | Jednotková cena | Čistá částka |
+| Zboží                  | Množství | Jedn. cena | Čistá částka |
 |-----------------------|----------|------------|------------|
 | PH2500 – Počítač     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – bezdrátová myš | 2        | 41.00      | 82.00      |

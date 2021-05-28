@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834589"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026198"
 ---
 # <a name="set-up-postdated-checks"></a>Nastavení postdatovaných šeků
 
@@ -51,9 +51,13 @@ Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společn
     * Pole pro protiúčet způsobu platby bude prázdné.  
 17. Zadejte požadované hodnoty do pole Platební účet.
     * Vyberte bankovní účet, který se používá k odečtu částky faktury.  
-18. Klepněte na tlačítko Uložit.
+18. Klikněte na tlačítko Uložit.
 19. Zavřete stránku.
-
-
+> [!NOTE]
+> Abyste mohli odeslat šek po datu splatnosti na bankovní účet, když je datum relace větší nebo rovno datu splatnosti, musíte povolit funkci **Ověření data splatnosti zaúčtování deníku plateb s postdatovanými šeky na bankovní účet**. Tato funkce umožňuje účtovat deníky plateb pro dodavatele nebo zákazníky s postdatovanými šeky, když je datum relace větší nebo rovno datu splatnosti.
+> 
+> Při nastavování **Způsobu platby** (**Závazky> Nastavení platby > Způsoby platby**) nevyplňujte **Překlenovací účet**. V tomto případě je offsetový účet vyplněn bankovním účtem, který je nastaven ve **Způsobu platby**.
+>  
+> Pokud je funkce povolena a datum relace je menší než datum splatnosti, zobrazí se při zaúčtování deníku plateb následující chybová zpráva: „Datum splatnosti musí být menší nebo rovno datu relace, pokud je typ offsetového účtu Banka“. Pokud tato funkce není povolena, můžete zaúčtovat deník plateb s postdatovaným šekem, když je datum relace menší než datum splatnosti.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

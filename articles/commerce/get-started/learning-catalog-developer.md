@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a6db426195d0ed24d8a8ff66ff9b9daa75cc452
-ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
+ms.openlocfilehash: 6001fd7be1e0c6c0cb45f712b6d2d18cf1703e68
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "5634697"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019680"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Výukový katalog pro vývojáře Dynamics 365 Commerce
 
@@ -31,15 +31,15 @@ Pro školení o funkcích sdílených s ostatními aplikacemi Finance and Operat
 
 | Obsah  | popis  | Formát  | Délka    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Tato studijní zkušenost vás povede cestou, která začíná zobrazením způsobu, jakým digitální transformace a výkon obchodních aplikací mohou transformovat vaše podnikání. Popíšeme, jak vám aplikace Dynamics 365 a Power Platform usnadní činit informovaná rozhodnutí založená na potřebách a cílech organizace prostřednictvím čtyř stavebních bloků digitální transformace – moderní, sjednocený, inteligentní a adaptivní.                                                                    | Libovolná online školení vlastním tempem | 6.5 hodin |
-| [Začínáme s aplikací Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Dynamics 365 Commerce umožňuje vytvářet věrnost značce na základě individuálních oslovení zákazníků, zvýšit výnosy s lepší produktivitou zaměstnanců, optimalizovat operace s cílem snížit náklady a zvýšit efektivitu dodavatelského řetězce, a tak dosáhnout lepších obchodních výsledků. | Libovolná online školení vlastním tempem | 2 hodin   |
-| [Začínáme s aplikací Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection je cloudové řešení určené pro elekrtonický obchod, kamenný obchod a omnikanálové obchodníky, kterým pomáhají chránit příjmy a reputaci poskytováním nástrojů a schopností ke snížení podvodů a zneužívání, snížení provozních nákladů a zvýšení míry přijetí, a zároveň chránit uživatelské účty před podvody. | Libovolná online školení vlastním tempem | 35 minut |
+| [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Tato studijní zkušenost vás povede cestou, která začíná zobrazením způsobu, jakým digitální transformace a výkon obchodních aplikací mohou transformovat vaše podnikání. Popíšeme, jak vám aplikace Dynamics 365 a Power Platform usnadní činit informovaná rozhodnutí založená na potřebách a cílech organizace prostřednictvím čtyř stavebních bloků digitální transformace – moderní, sjednocený, inteligentní a adaptivní.                                                                    | Libovolná online školení vlastním tempem | 6.5 hodin |
+| [Začínáme s aplikací Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Dynamics 365 Commerce umožňuje vytvářet věrnost značce na základě individuálních oslovení zákazníků, zvýšit výnosy s lepší produktivitou zaměstnanců, optimalizovat operace s cílem snížit náklady a zvýšit efektivitu dodavatelského řetězce, a tak dosáhnout lepších obchodních výsledků. | Libovolná online školení vlastním tempem | 2 hodin   |
+| [Začínáme s aplikací Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection je cloudové řešení určené pro elekrtonický obchod, kamenný obchod a omnikanálové obchodníky, kterým pomáhají chránit příjmy a reputaci poskytováním nástrojů a schopností ke snížení podvodů a zneužívání, snížení provozních nákladů a zvýšení míry přijetí, a zároveň chránit uživatelské účty před podvody. | Libovolná online školení vlastním tempem | 35 minut |
 
 ## <a name="commerce"></a>Obchod<a name="commerce"></a>
 
 | Obsah  | popis  | Formát  | Délka    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Nasazení a rozšíření Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Tento studijní program popisuje, jak nasadit prostředí Dynamics 365 Commerce a provádět kroky po nasazení, pro úspěšné implementace Commerce pomocí správné topologie pro potřeby každého maloobchodníka. | Libovolná online školení vlastním tempem | 5 hodin |
+| [Nasazení a rozšíření Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | Tento studijní program popisuje, jak nasadit prostředí Dynamics 365 Commerce a provádět kroky po nasazení, pro úspěšné implementace Commerce pomocí správné topologie pro potřeby každého maloobchodníka. | Libovolná online školení vlastním tempem | 5 hodin |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

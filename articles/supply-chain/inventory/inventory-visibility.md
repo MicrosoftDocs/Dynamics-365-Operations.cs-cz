@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910418"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016999"
 ---
 # <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
@@ -41,20 +41,23 @@ Musíte nainstalovat doplněk Viditelnost zásob pomocí Microsoft Dynamics Life
 
 Další informace naleznete v tématu [Zdroje Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Předpoklady
+### <a name="inventory-visibility-add-in-prerequisites"></a>Předpoklady pro doplněk viditelnosti zásob
 
 Před instalací doplňku Viditelnost zásob musíte provést následující:
 
 - Získejte implementační projekt LCS s alespoň jedním nasazeným prostředím.
 - Ujistěte se, že předpoklady pro nastavení doplňků uvedené v [Přehledu doplňků](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) byly dokončeny. Viditelnost zásob nevyžaduje propojení duálního zápisu.
 - Kontaktujte tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a vyžádejte si následující tři požadované soubory:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (pokud je spuštěná verze Supply Chain Management starší než verze 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (pokud je spuštěná verze Supply Chain Management starší než verze 10.0.18)
+- Případně kontaktujte tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) pro získání balíčků programu Package Deployer. Tyto balíčky může používat oficiální nástroj pro nasazení balíčků.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (tento balíček obsahuje všechny změny v balíčku `InventoryServiceBase`, plus další komponenty aplikace uživatelského rozhraní)
 - Postupujte podle pokynů v části [Rychlý start: Registrace aplikace na platformě identity Microsoft](/azure/active-directory/develop/quickstart-register-app) k registraci aplikace a přidání klientského tajného klíče do AAD v rámci vašeho předplatného Azure.
-    - [Registrace aplikace](/azure/active-directory/develop/quickstart-register-app)
-    - [Přidání tajného klíče klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - **ID aplikace (klient)**, **Tajný klíč klienta** a **ID nájemce** bude použito v následujících krocích.
+  - [Registrace aplikace](/azure/active-directory/develop/quickstart-register-app)
+  - [Přidání tajného klíče klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - **ID aplikace (klient)**, **Tajný klíč klienta** a **ID klienta** bude použito v následujících krocích.
 
 > [!NOTE]
 > Mezi aktuálně podporované země a oblasti patří Kanada, Spojené státy a Evropská unie (EU).
@@ -63,18 +66,49 @@ Máte-li jakékoli dotazy týkající se těchto předpokladů, obraťte se na p
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Nastavení Dataverse
 
-Při nastavení Dataverse postupujte následujícím způsobem.
+Pokud chcete nastavit Dataverse pro použití s Inventory Visibility, musíte nejprve připravit předpoklady a poté se rozhodnout, zda nastavit Dataverse buď pomocí nástroje Package Deployer, nebo ručním importem řešení (nemusíte dělat obojí). Pak instalujte doplněk Viditelnost zásob. Následující pododdíly popisují, jak jednotlivé z těchto úkolů provádět.
 
-1. Přidejte svému klientu princip služby:
+#### <a name="prepare-dataverse-prerequisites"></a>Předpoklady pro přípravu Dataverse
 
-    1. Nainstalujte Azure AD PowerShell Module v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-    1. Spusťte následující příkaz PowerShellu:
+Než začnete nastavovat Dataverse, přidejte do svého klienta princip služby následujícím způsobem:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Nainstalujte Azure AD PowerShell Module v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Spusťte následující příkaz PowerShellu:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Nastavte Dataverse pomocí nástroje Package Deployer
+
+Až budete mít předpoklady, použijte následující postup, pokud dáváte přednost nastavení Dataverse pomocí nástroje pro zavádění balíčků. V další části najdete podrobnosti o tom, jak místo toho importovat řešení ručně (nedělejte obojí).
+
+1. Nainstalujte vývojářské nástroje podle popisu v části [Stáhněte si nástroje z NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. Na základě vašich obchodních požadavků vyberte balíček `InventoryServiceBase` nebo `InventoryServiceApplication`.
+
+1. Import řešení:
+    1. Pro balíček `InventoryServiceBase`:
+        - Rozbalte `InventoryServiceBase.PackageDeployer.zip`
+        - Najděte složku `InventoryServiceBase`, soubor `[Content_Types].xml`, soubor `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, soubor `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` a soubor `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Zkopírujte každou z těchto složek a souborů do adresáře `.\Tools\PackageDeployment`, který byl vytvořen při instalaci vývojářských nástrojů.
+    1. Pro balíček `InventoryServiceApplication`:
+        - Rozbalte `InventoryServiceApplication.PackageDeployer.zip`
+        - Najděte složku `InventoryServiceApplication`, soubor `[Content_Types].xml`, soubor `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, soubor `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` a soubor `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Zkopírujte každou z těchto složek a souborů do adresáře `.\Tools\PackageDeployment`, který byl vytvořen při instalaci vývojářských nástrojů.
+    1. Proveďte `.\Tools\PackageDeployment\PackageDeployer.exe`. Podle pokynů na obrazovce importujte řešení.
+
+1. Přiřazení rolí zabezpečení uživateli aplikace.
+    1. Otevřete adresu URL svého prostředí Dataverse.
+    1. Jděte na **Pokročilé nastavení \> Systém \> Zabezpečení \> Uživatelé** a vyhledejte uživatele **# InventoryVisibility**.
+    1. Vyberte příkaz **Přiřadit roli** a potom vyberte **Správce systému**. Pokud existuje role nazvaná **Uživatel Common Data Service**, vyberte ji také.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>Ručně nastavte Dataverse importem řešení
+
+Až budete mít nasazené předpoklady, použijte následující postup, pokud dáváte přednost nastavení Dataverse pomocí ručního importu řešení. V předchozí části najdete podrobnosti o tom, jak místo toho použít nástroj pro nasazení balíčku (nedělejte obojí).
 
 1. Vytvořte uživatele aplikace pro Viditelnost zásob v Dataverse:
 

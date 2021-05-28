@@ -1,6 +1,6 @@
 ---
 title: Přecenění měny pro závazky a pohledávky
-description: Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky.
+description: Toto téma poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df0ae1aa0e75eb8c64d5ca31fcd3605b5112cdd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e9a4bfdad4e69b13d7b0324f4978f13d6d295
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815901"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026150"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Přecenění měny pro závazky a pohledávky
 
 [!include [banner](../includes/banner.md)]
 
-Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky. 
+Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Toto téma poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky. 
 
 Teoretická hodnota nebo účetní hodnota otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Chcete-li aktualizovat hodnotu otevřených transakcí v modulu Závazky a pohledávky, spusťte proces přecenění cizí měny. Přecenění cizí měny lze spustit pro závazky a pohledávky. Proces používá nový směnný kurz pro přecenění otevřených částek nebo nevyrovnaných částek k určitému datu. Rozdíly mezi původními zaúčtovanými částkami a přehodnocenými částkami způsobí nerealizovaný zisk nebo ztrátu každé otevřené transakce. Dílčí knihy pro závazky a pohledávky účty jsou pak aktualizovány, aby odrážely nerealizovaný zisk nebo ztrátu a účetní položka je zaúčtována do hlavní knihy.
 
@@ -55,7 +55,7 @@ Při každém spuštění přecenění cizí měny je vytvořen záznam. Ze záz
     -   **Zaúčtování** – Použije se účetní profil transakce odběratele.
     -   **Vybrat** - Zadejte účetní profil v poli **Účetní profil**.
 -   **Účetní profil** – Je-li v poli **Použít účetní profil z** vybrána možnost **Vybrat**, zadaný účetní profil v tomto poli určuje účetní profil u transakcí zaměřených na přecenění cizí měny.
--   **Finanční dimenze** – finanční dimenze, které jsou zaúčtovány u účetních záznamů v transakcích zaměřených na přecenění cizí měny:
+-   **Finanční dimenze** – finanční dimenze, které jsou zaúčtovány u účetních záznamů v transakcích zaměřených na přecenění cizí měny. Finanční dimenze nejsou ověřeny podle pravidel pro strukturu účtu. Struktura účtu, která byla zavedena v době zaúčtování faktur, nemusí být stejná jako pravidla, která platila po dokončení přeceňování. V procesu přecenění není možné vybrat konkrétní finanční dimenze, proto se ověření struktury účtu přeskočí.  
     -   **Žádná** – nejsou zaúčtovány žádné finanční dimenze. Používáte-li požadovanou finanční dimenzi ve vaší účetní struktuře, proces přecenění stále probíhá a vytvoří účetní položky, které nemají žádné finanční dimenze. Nejprve se zobrazí zpráva s upozorněním, po které můžete zrušit přecenění.
     -   **Tabulka** – finanční dimenze účtu odběratele nebo dodavatele jsou zaúčtovány v transakcích zaměřených na přecenění cizí měny.
     -   **Zaúčtování** – finanční dimenze transakce, která je právě přehodnocena, je zaúčtována v transakcích zaměřených na přecenění cizí měny. Ve výchozím nastavení budou finanční dimenze z účtu hlavní knihy původní transakce pohledávek a závazků použity pro transakce přecenění hlavního účtu pohledávek/závazků a finanční dimenze z účtu hlavní knihy majetku/výdajů/příjmů původní transakce se použijí pro transakce přecenění hlavního účtu nerealizovaného zisku/ztráty.

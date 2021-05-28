@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68ef15fed1841bcbf006929f3c6441d62798fc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56d74b6700b48a8c523d02a1affc421ee370215e
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819907"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027739"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby na úhradu více faktur, které zasahují do více období slevy
 
@@ -66,7 +66,7 @@ Pokud Arnie vytvoří deník plateb a úplně vyrovná faktury do 1. července, 
 | Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Částečné vyrovnání 29. června
-Odběratel 4032 může uhradit částečnou platbu, například polovinu každé faktury. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání. Na každém řádku zadá částku k vyrovnání na základě pokynů uvedených odběratelem. Když Arnie vybere řádek, uvidí částku slevy pro daný řádek a částku platební slevy, která je využita. Vzhledem k tomu, že zákazník platí poloviční fakturu, Arnie uvidí hodnotu v poli **Částka platební slevy** pro fakturu FTI 10042 jako **20,00**, ale hodnota v poli **Přijatá platební sleva** je **10,00**. Částka platby je 1 485,00.
+Odběratel 4032 může uhradit částečnou platbu, například polovinu každé faktury. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání. Na každém řádku zadá částku k vyrovnání na základě pokynů uvedených odběratelem. Když Arnold vybere řádek, uvidí částku slevy pro daný řádek a částku platební slevy, která je využita. Vzhledem k tomu, že zákazník platí poloviční fakturu, Arnie uvidí hodnotu v poli **Částka platební slevy** pro fakturu FTI 10042 jako **20,00**, ale hodnota v poli **Přijatá platební sleva** je **10,00**. Částka platby je 1 485,00.
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|

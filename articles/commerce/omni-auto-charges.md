@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3326f8740874083746c1566063ee7d265ee90faf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804666"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022700"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
@@ -29,9 +29,9 @@ ms.locfileid: "5804666"
 
 Toto téma obsahuje informace o konfiguraci a nasazení funkce rozšířených automatických nákladů, které jsou k dispozici v aplikaci Dynamics 365 for Retail verze 10.0.
 
-Pokud jsou funkce rozšířených automatických nákladů povoleny, objednávky vytvořené v libovolném podporovaném kanálu Commerce (pokladní místo (POS), kontaktní středisko a online) mohou využít konfigurací [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) definovaných v aplikaci ERP pro související náklady záhlaví a úrovně řádku.
+Pokud jsou funkce rozšířených automatických nákladů povoleny, objednávky vytvořené v libovolném podporovaném kanálu Commerce (pokladní místo (POS), kontaktní středisko a online) mohou využít konfigurací [automatických nákladů](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) definovaných v aplikaci ERP pro související náklady záhlaví a úrovně řádku.
 
-Ve verzích aplikace Retail starších než 10.0 bývaly konfigurace [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) přístupné pouze pro objednávky vytvořené v kanálech e-Commerce a kontaktního střediska. Ve verzi 10.0 a novějších mohou objednávky vytvořené v POS využít konfigurace automatických nákladů. Tímto způsobem další vedlejší náklady mohou být systematicky přidány do prodejních transakcí.
+Ve verzích aplikace Retail starších než 10.0 bývaly konfigurace [automatických nákladů](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) přístupné pouze pro objednávky vytvořené v kanálech e-Commerce a kontaktního střediska. Ve verzi 10.0 a novějších mohou objednávky vytvořené v POS použít konfigurace automatických nákladů. Tímto způsobem extra vedlejší náklady mohou být systematicky přidány do prodejních transakcí.
 
 Používáte-li verze starší než je verze 10.0, uživatel POS je vyzván k ručnímu zadání dopravného během vytváření transakcí POS „expedovat vše“ nebo „expedovat vybrané“. Zatímco funkce vedlejších nákladů v aplikaci se používají s ohledem na to, jak jsou náklady zapsány do objednávky, není poskytován systematický výpočet - výpočet se opírá o vstup uživatele, který určuje hodnotu nákladů. Náklady lze přidat pouze jako jeden kód nákladů souvisejících s expedicí a nelze je snadno upravit ani změnit v POS po jejich vytvoření.
 
@@ -39,7 +39,7 @@ Použití ruční výzvy k přidání nákladů na expedici je stále k dispoz
 
 Díky funkci rozšířených automatických nákladů mohou mít uživatelé POS systematické výpočty pro všechny definované vedlejší náklady založené na tabulkách nastavení automatických nákladů. Navíc uživatelé budou mít možnost přidávat nebo upravovat neomezené množství dodatečných nákladů a poplatků do jakékoli prodejní transakci POS na záhlaví nebo na úrovni řádku (pro „cash and carry“ nebo objednávku odběratele).
 
-## <a name="enabling-advanced-auto-charges"></a>Povolení rozšířených automatických nákladů
+## <a name="enable-advanced-auto-charges"></a>Povolení rozšířených automatických nákladů
 
 Na stránce **Maloobchod a velkoobchod \> Nastavení centrály \> Parametry \> Parametry velkoobchodu** přejděte na kartu **Objednávky odběratele**. Na záložce s náhledem **Náklady** nastavte možnost **Použít rozšířené automatické náklady** na **Ano**.
 
@@ -51,9 +51,9 @@ Pokud jsou povoleny rozšířené automatické náklady, existující **Parametr
 
 Než povolíte tuto funkci, ujistěte se, že jste vyzkoušeli a vyškolili své zaměstnance, protože povolená funkce změní tok obchodních procesů výpočtu dopravného a jiných nákladů a přidání do prodejních objednávek POS. Ujistěte se, že rozumíte dopadu toku procesu na vytváření transakcí z POS. Pro objednávky kontaktního střediska a e-Commerce je dopad povolení rozšířených automatických nákladů minimální. Aplikace kontaktního střediska a e-Commerce budou mít nadále stejné chování, které měly v minulosti, v souvislosti s tabulkami automatických nákladů pro výpočet dalších nákladů objednávky. Uživatelé kanálu kontaktního střediska budou nadále mít možnost ručně upravit veškeré automatické náklady vypočítané systémem v záhlaví nebo na úrovni řádku, nebo ručně přidat další vedlejší náklady na záhlaví nebo úrovni řádku.
 
-## <a name="additional-pos-operations"></a>Další operace POS
+## <a name="add-pos-operations"></a>Přidání operací POS
 
-Aby rozšířené automatické náklady fungovaly správně v prostředí vaší aplikace POS, byly přidány nové operace POS. Tyto operace musí být přidány do vašeho [rozvržení obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) a nasazeny na zařízení POS při nasazení rozšířených automatických nákladů. Pokud tyto operace nebudou přidány, uživatelé nebudou schopni spravovat nebo udržovat vedlejší náklady na transakcích POS a nebudou mít žádný způsob, jak upravit nebo změnit hodnoty nákladů, které jsou systematicky vypočítávány na základě konfigurace automatických nákladů. Minimálně navrhujeme nasadit operaci **Spravovat náklady** do vašeho rozvržení POS.
+Aby rozšířené automatické náklady fungovaly správně v prostředí vaší aplikace POS, byly přidány nové operace POS. Tyto operace musí být přidány do vašeho [rozvržení obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts) a nasazeny na zařízení POS při nasazení rozšířených automatických nákladů. Pokud tyto operace nebudou přidány, uživatelé nebudou schopni spravovat nebo udržovat vedlejší náklady na transakcích POS a nebudou mít žádný způsob, jak upravit nebo změnit hodnoty nákladů, které jsou systematicky vypočítávány na základě konfigurace automatických nákladů. Minimálně navrhujeme nasadit operaci **Spravovat náklady** do vašeho rozvržení POS.
 
 Nové operace jsou následující.
 
@@ -142,7 +142,7 @@ Pokud by poplatek měl být považován za náklad související s přepravou p
 
 Odešlete poplatky do databáze Commerce Scale Unit/kanál, aby je mohlo POS použít spuštěním úlohy **1040 plán distribuce**.
 
-Operace **Přidat náklady záhlaví** musí být nakonfigurována ve vašem [rozvržení obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby tlačítko, které je dostupné pro uživatele z POS, mohlo volat tuto operaci (operaci 141). Změny rozvržení obrazovky musí být distribuovány do kanálu, stejně jako prostřednictvím funkce plánu distribuce.
+Operace **Přidat náklady záhlaví** musí být nakonfigurována ve vašem [rozvržení obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby tlačítko, které je dostupné pro uživatele z POS, mohlo volat tuto operaci (operaci 141). Změny rozvržení obrazovky musí být distribuovány do kanálu, stejně jako prostřednictvím funkce plánu distribuce.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Zpracování prodeje ručních nákladů záhlaví
 
@@ -164,7 +164,7 @@ Pokud by poplatek měl být považován za náklad související s přepravou p
 
 Odešlete poplatky do databáze Commerce Scale Unit/kanál, aby je mohlo POS použít spuštěním úlohy **1040 plán distribuce**.
 
-Operace **Přidat náklady řádku** musí být nakonfigurována ve vašem [rozvržení obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby tlačítko, které je dostupné pro uživatele z POS, mohlo volat tuto operaci (operaci 140). Změny rozvržení obrazovky musí být distribuovány do kanálu, stejně jako prostřednictvím funkce plánu distribuce.
+Operace **Přidat náklady řádku** musí být nakonfigurována ve vašem [rozvržení obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby tlačítko, které je dostupné pro uživatele z POS, mohlo volat tuto operaci (operaci 140). Změny rozvržení obrazovky musí být distribuovány do kanálu, stejně jako prostřednictvím funkce plánu distribuce.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Zpracování prodeje ručních nákladů řádku
 
@@ -176,7 +176,7 @@ Stejný proces lze použít v kontaktním středisku pomocí funkce Udržovat n
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Úprava nákladů na prodejní transakci POS
 
-Operace **Správa nákladů** (142) by měla být přidána do [rozvržení obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby uživatel mohl zobrazit a upravit nebo přepsat jakékoli systémem vypočítané nebo ručně vytvořené náklady na úrovni řádku nebo záhlaví. Není-li operace přidána, uživatelé nebudou moci upravit hodnotu nákladů na transakci POS, ani nebudou schopni zobrazit podrobnosti o nákladech, jako je typ kódu nákladů navázaný na náklad.
+Operace **Správa nákladů** (142) by měla být přidána do [rozvržení obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts) tak, aby uživatel mohl zobrazit a upravit nebo přepsat jakékoli systémem vypočítané nebo ručně vytvořené náklady na úrovni řádku nebo záhlaví. Není-li operace přidána, uživatelé nebudou moci upravit hodnotu nákladů na transakci POS, ani nebudou schopni zobrazit podrobnosti o nákladech, jako je typ kódu nákladů navázaný na náklad.
 
 Na stránce **Spravovat náklady** v POS může uživatel zobrazit podrobnosti nákladů na úrovni záhlaví a řádku. Uživatel může použít funkci **Upravit** dostupnou na této stránce pro provedení změn částky účtované na konkrétní řádek nákladů. Jakmile je řádek nákladů ručně přepisován, nebude systematicky přepočítáván, pokud uživatel neinicializuje operaci **Přepočítat náklady**.
 
@@ -197,7 +197,7 @@ Náklady nejsou systematicky refundovány do **vratek** vytvořených v aplikac
 Následující prvky příjemky byly přidány na řádek a zápatí příjemky pro podporu funkce rozšířených automatických nákladů.
 
 - **Náklady expedice řádku** - Tento prvek na úrovni řádku lze použít k souhrnu kódů konkrétních nákladů, které byly použity na řádek prodeje. Pouze kódy nákladů, které byly označeny příznakem jako náklady **Expedice** na stránce **Kód nákladů** se zobrazí na tomto místě.
-- **Jiné náklady řádku** - Tento prvek na úrovni řádku lze použít k souhrnu kódů konkrétních neexpedičních nákladů, které byly použity na řádek prodeje. Jedná se o kódy nákladů, kde příznak **Expedice** na stránce **Kód nákladů** nebyl povolen.
+- **Jiné náklady řádku** - Tento prvek na úrovni řádku lze použít k souhrnu kódů konkrétních neexpedičních nákladů, které byly použity na řádek prodeje. **Ostatní poplatky na řádku** jsou kódy nákladů, kde příznak **Expedice** na stránce **Kód nákladů** nebyl povolen.
 - **Podrobnosti dopravného objednávky** - Tento prvek na úrovni zápatí zobrazí popisy kódů nákladů, které jsou použity na objednávku s příznakem nákladů **Expedice** na stránce nastavení **Kód nákladů**.
 - **Dopravné objednávky** - Tento prvek na úrovni zápatí zobrazuje peněžní hodnotu nákladů souvisejících s expedicí.
 - **Podrobnosti jiných nákladů objednávky** - Tento prvek na úrovni zápatí zobrazí popis kódů nákladů, které jsou použity na objednávku bez příznaku nákladů souvisejících s expedicí.

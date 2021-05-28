@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7bdd1d99ffbc1112226fd2db168cc5fc61615b9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7771dfb9d9aa6dc87ef9eaee078c45ea66a5e143
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798833"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020289"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Zálohové faktury pro Commerce pro východní Evropu
 
@@ -30,7 +30,7 @@ Pro Polsko, Maďarsko a Českou republiku platí, že při přijetí zálohy od 
 
 Po konečném zaúčtování faktury faktury prodejní objednávky by měl konečný doklad obsahovat zálohovou fakturu a měly by být uvedeny všechny zálohy.
 
-Pokud prodejní objednávky generujete z modulu Pohledávky, musíte ručně generovat zálohové faktury pomocí kroků uvedených v části [Zálohové faktury pro východní Evropu](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Pokud generujete prodejní objednávky prostřednictvím POS systém vytvoří a zaúčtuje zálohové faktury za vás.
+Pokud prodejní objednávky generujete z modulu Pohledávky, musíte ručně generovat zálohové faktury pomocí kroků uvedených v části [Zálohové faktury pro východní Evropu](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Pokud generujete prodejní objednávky prostřednictvím POS systém vytvoří a zaúčtuje zálohové faktury za vás.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 

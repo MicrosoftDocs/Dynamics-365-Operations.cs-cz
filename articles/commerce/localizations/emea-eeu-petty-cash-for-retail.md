@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9305e7143bc0a978569d51544a1ae65ee57b3243
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8a24943e69ef285f14d39e6bfd446b0121fc80d8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798815"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020281"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Správa pokladní hotovosti pro Commerce pro východní Evropu
 
@@ -26,7 +26,7 @@ ms.locfileid: "5798815"
 
 Tento článek obsahuje informace o východoevropské lokalizaci specifické pro oblast obchodu.
 
-V souladu s požadavky na účtování ve východní Evropě můžete nastavit operace pro pokladní účty pro automatizaci procesů pro příjemky, pokladní doklady a výpisy hotovosti. Více informací naleznete v části [(EEUR) Nastavení parametrů pro správu hotovosti](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
+V souladu s požadavky na účtování ve východní Evropě můžete nastavit operace pro pokladní účty pro automatizaci procesů pro příjemky, pokladní doklady a výpisy hotovosti. Více informací naleznete v části [(EEUR) Nastavení parametrů pro správu hotovosti](/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet nebo kuponů. V maloobchodním pokladním místě (POS) jsou hotovost, doklady o platbě kartou a ostatní platby zpracovány n pokladně.
 
@@ -36,7 +36,7 @@ Pomocí správy hotovosti v aplikaci Commerce můžete provádět následující
 - Použít deníky hotovosti k zaúčtování hotovostních transakcí a plateb zákazníků přijímaných v Retail POS.
 - Sdružení transakcí v řádku výkazu při zaúčtování výkazu. Můžete sdružovat odvody do trezoru, odvody do banky, transakce dokladu, odebírat transakce odvodu, transakce s plovoucí položkou, příjmové transakce, výdajové transakce, platby odběratelů, prodejní transakce a návratové transakce.
 
-Všechny transakce, které se uskutečňují v POS, jsou zaúčtovány pomocí deníku hlavní knihy. Pokladní deníky plateb, deníky plateb odběratelů a hlavní deníky můžete používat k vytvoření a zaúčtování výkazů. Více informací naleznete v části [Vytvoření, výpočet a zaúčtování výkazů pro maloobchod](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+Všechny transakce, které se uskutečňují v POS, jsou zaúčtovány pomocí deníku hlavní knihy. Pokladní deníky plateb, deníky plateb odběratelů a hlavní deníky můžete používat k vytvoření a zaúčtování výkazů. Více informací naleznete v části [Vytvoření, výpočet a zaúčtování výkazů pro maloobchod](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 Na stránce **Zaúčtované výkazy** v podokně akcí můžete provést následující:
 
@@ -47,7 +47,7 @@ Na stránce **Zaúčtované výkazy** v podokně akcí můžete provést násled
 
 Následující postup nastavení je nutné dokončit před použitím řízení hotovosti:
 
-- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v POS můžete použít různé metody platby. Další informace o metodách platby naleznete v tématu [Metody platby](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v POS můžete použít různé metody platby. Další informace o metodách platby naleznete v tématu [Metody platby](/dynamics365/unified-operations/retail/payment-methods).
 - Nastavení parametrů pro hotovostní operace.
 - Nastavení metody platby pro platby v hotovosti v obchodě.
 

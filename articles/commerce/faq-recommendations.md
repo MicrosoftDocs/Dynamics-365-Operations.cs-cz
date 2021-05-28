@@ -16,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa845f4d41e0bd7725349a216b9e4ee79efee79d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b3db432ae10139bcd8ee400b0bbc1173e33ef206
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792408"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019804"
 ---
 # <a name="product-recommendations-faq"></a>Často kladené dotazy k doporučení produktu
 
@@ -68,7 +68,7 @@ Pokud je nutné blokovat určitou položku v obchodě, aby ji nebylo možné vyh
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>Jak lze přidat seznam na stránku elektronického obchodu?
 
-Informace o tom, jak přidat stránky doporučení produktů na web elektronického obchodování, naleznete v tématu [Přidání seznamů doporučení produktů na stránky](add-reco-list-to-page.md).
+Informace o tom, jak přidat stránky doporučení produktů na web elektronického obchodování, naleznete v tématu [Přidání seznamů doporučení produktů na stránky](./product-recommendations.md).
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Jak lze povolit doporučení v POS?
 

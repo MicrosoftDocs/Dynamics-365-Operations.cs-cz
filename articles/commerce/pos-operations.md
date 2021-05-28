@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804274"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027641"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -64,7 +64,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 642 | Vyvézt všechny produkty | Nastavte způsob dodání pro všechny řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
 | 641 | Vyvézt vybrané produkty | Nastavte způsob dodání pro zvolené řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
 | 647 | Změnit způsob dodávky | Změní způsob dodání pro předem konfigurované řádky prodeje týkající se expedice. | Ano | Ano | Ne | Ne| Ne |
-| 1215 | Změnit heslo | Tato operace umožňuje uživateli POS měnit své heslo. | Ano | Ano | Ano | Ne | Ne |
+| 1215 | Změnit heslo | Tato operace umožňuje uživateli POS změnit heslo. | Ano | Ano | Ano | Žádný | Žádný |
 | 123 | Změnit měrnou jednotku | Změňte měrnou jednotku pro vybranou položku řádku. | Ano | Ano | Ne | Ano | Ne |
 | 639 | Vymazat výchozího prodejního zástupce u transakce | Odstraňte skupinu prodejní provize (obchodního zástupce) z transakce. | Ano | Ano | Ne | Ano | Ne |
 | 106 | Vymazat množství | Resetujte množství na aktuálně vybraném řádku na **1**. | Ano | Ano | Ne | Ano | Ne |

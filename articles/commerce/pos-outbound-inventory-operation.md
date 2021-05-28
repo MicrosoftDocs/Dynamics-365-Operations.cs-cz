@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795638"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022724"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Operace odchozích zásob v POS
 
@@ -71,7 +71,7 @@ Dávkové úlohy, které vytvoříte, budou použity ke zpracování dokumentů,
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Předpoklad: Přidání odchozí operace do rozvržení obrazovky POS
 
-Aby mohla vaše organizace používat funkci odchozí operace, musí v POS konfigurovat **odchozí operaci** v jednom nebo více [rozloženích obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Před nasazením nové operace v provozním prostředí se ujistěte, že jste ji důkladně otestovali a svoje uživatele vyškolili k jejímu používání.
+Aby mohla vaše organizace používat funkci odchozí operace, musí v POS konfigurovat **odchozí operaci** v jednom nebo více [rozloženích obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts). Před nasazením nové operace v provozním prostředí se ujistěte, že jste ji důkladně otestovali a svoje uživatele vyškolili k jejímu používání.
 
 ## <a name="overview"></a>Přehled
 

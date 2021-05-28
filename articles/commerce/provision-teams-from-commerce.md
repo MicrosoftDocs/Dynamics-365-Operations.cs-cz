@@ -2,11 +2,9 @@
 title: Zřízení Microsoft Teams z Dynamics 365 Commerce
 description: Toto téma popisuje, jak zřídit Microsoft Teams pomocí organizačních dat z Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908897"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022439"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Zřízení Microsoft Teams z Dynamics 365 Commerce
 
@@ -75,9 +73,9 @@ Pokud chcete odeslat organizační hierarchii Commerce do Teams, postupujte nás
     
 1. V Commerce Headquarters přejděte na možnost **Retail a Commerce \> Nastavení kanáu \> Konfigurace integrace Microsoft Teams**.
 1. Vyberte **Stáhnout cílovou hierarchii** a potom vyberte **Maloobchody podle regionu** ke stažení souboru hodnot oddělených čárkami (CSV) hierarchie organizace.
-1. Nainstalujte modul Microsoft Teams PowerShell podle pokynů v části [Instalace Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Nainstalujte modul Microsoft Teams PowerShell podle pokynů v části [Instalace Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
 1. Po zobrazení výzvy v okně Teams PowerShell se přihlaste pomocí účtu správce pro svého klienta Azure AD.
-1. Postupujte podle pokynů v části [Nastavení cílové hierarchie týmů](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy) a nahrajte soubor CSV pro cílovou hierarchii.
+1. Postupujte podle pokynů v části [Nastavení cílové hierarchie týmů](/microsoftteams/set-up-your-team-hierarchy) a nahrajte soubor CSV pro cílovou hierarchii.
 
 ## <a name="verify-that-the-organizational-hierarchy-was-uploaded-to-teams"></a>Ověření, že byla do Teams nahrána hierarchie organizace
 

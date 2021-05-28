@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842050"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016949"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stavy životního cyklu produktu a transakce
 
@@ -74,5 +74,24 @@ Následující pole jsou k dispozici pro každý proces, který je uveden na zá
 
 Pokud přidáváte další pravidla stavu životního cyklu jako přizpůsobení, můžete tato pravidla zobrazit v uživatelském rozhraní výběrem možnosti **Obnovit procesy** v horním panelu. Tlačítko **Obnovit procesy** je k dispozici pouze správcům.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Stavy životního cyklu pro vydané produkty a varianty produktů
+
+U produktu, který má varianty (hlavní a varianty), bude mít produkt (hlavní) stav životního cyklu a každá z variant může mít také jiný stav životního cyklu.
+
+U konkrétních procesů, pokud je blokována buď varianta, nebo produkt, bude blokován také proces. Konkrétně pro určení, zda je proces blokován, provede systém následující kontroly:
+
+- Produkty kontrolované techniky:
+  - Pokud je aktuální technická verze blokována, zablokujte proces.
+  - Pokud je aktuální varianta blokována, zablokujte proces.
+  - Pokud je blokován vydaný produkt, zablokujte proces.
+- Pro standardní produkty:
+  - Pokud je aktuální varianta blokována, zablokujte proces.
+  - Pokud je blokován vydaný produkt, zablokujte proces.
+
+Předpokládejme například, že chcete prodat pouze jednu variantu (červenou) daného produktu (tričko) a zatím blokovat prodej všech ostatních variant. Toto můžete implementovat pomocí následujícího nastavení:
+
+- Přiřaďte produktu stav životního cyklu, který umožňuje proces. Například přiřaďte produktu trička stav životního cyklu *Prodejný*, který umožňuje obchodní proces *Zakázka odběratele*.
+- Přiřaďte prodejné variantě stav životního cyklu, který umožňuje proces. Přiřaďte například také červené variantě stav životního cyklu *Prodejný*.
+- Všem ostatním variantám je přiřazen jiný stav životního cyklu, kde je proces blokován. Například přiřaďte bílé variantě (a všem ostatním variantám) stav životního cyklu *Není prodejný*, který blokuje obchodní proces *Zakázka odběratele*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

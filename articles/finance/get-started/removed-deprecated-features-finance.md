@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965303"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980890"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -35,7 +35,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.20
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Konfigurace formátu požadavku na data faktur dotazu RTIR (HU)
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Konfigurace formátu požadavku na data faktur dotazu "RTIR Query Invoice Data Request (HU)"
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Do 15. dubna 2022 plánujeme, že již nebudeme podporovat konfiguraci formátu „požadavek na data faktur dotazu RTIR (HU)“. |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>„Francouzský soubor auditu FEC“ Formát elektronického hlášení (ER) pro Francii ve formátu „Výstup německého souboru auditu“
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým formátem „FEC audit file (FR)“ |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: do 1. května 2022, plánujeme, že již nebudeme podporovat formát „francouzského souboru auditu FEC“ ve formátu elektronického výkaznictví (ER) pro Francii ve formátu „výstup německého souboru auditu“. V části „Model exportu dat“ je místo toho zaveden nový formát souboru auditu FEC (FR). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.17
 

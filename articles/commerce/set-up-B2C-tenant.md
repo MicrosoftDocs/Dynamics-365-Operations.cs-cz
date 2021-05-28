@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793988"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018573"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -30,7 +30,7 @@ Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure 
 Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacích údajů a ověřování uživatele. Uživatel se může registrovat, přihlásit a obnovit své heslo pomocí těchto toků. Azure AD B2C ukládá citlivé informace o ověřování uživatele, například jeho uživatelské jméno a heslo. Záznam uživatele v klientovi B2C uloží buď záznam místního účtu B2C nebo záznam zprostředkovatele sociální identity B2C. Tyto záznamy B2C budou odkazovat zpět na záznam odběratele v prostředí Commerce.
 
 > [!WARNING] 
-> Azure AD B2C vyřadí staré (starší) toky uživatelů od 1. srpna 2021. Proto byste měli naplánovat migraci toků uživatelů do nové doporučené verze. Nová verze poskytuje paritu funkcí a nové funkce. Knihovna modulů pro Commerce verze 10.0.15 nebo vyšší by měla být použita s doporučenými toky uživatelů B2C. Další informace naleznete v tématu [Toky uživatelů v Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C vyřadí staré (starší) toky uživatelů od 1. srpna 2021. Proto byste měli naplánovat migraci toků uživatelů do nové doporučené verze. Nová verze poskytuje paritu funkcí a nové funkce. Knihovna modulů pro Commerce verze 10.0.15 nebo vyšší by měla být použita s doporučenými toky uživatelů B2C. Další informace naleznete v tématu [Toky uživatelů v Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
  
  > [!NOTE]
  > Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure AD B2C pro demonstrační účely. Načtení vlastního klienta Azure AD B2C pomocí níže uvedených kroků není potřeba pro prostředí vyhodnocení.
@@ -88,7 +88,7 @@ Chcete-li vytvořit aplikaci B2C, postupujte následovně.
 1. V sekci **Implicitní udělení oprávnění** vyberte **Přístupové tokeny** a **Tokeny ID**, abyste je povolili pro aplikaci. Zvolte **Uložit**.
 1. Přejděte do nabídky **Přehled** portálu Azure Portal a zkopírujte **ID aplikace (klienta)**. Poznamenejte si toto ID pro pozdější kroky instalace (později zmiňováno jako **GUID klienta**).
 
-Další informace o registraci aplikací v Azure AD B2C viz [Nové prostředí registrace aplikací pro Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide)
+Další informace o registraci aplikací v Azure AD B2C viz [Nové prostředí registrace aplikací pro Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### <a name="reply-urls"></a>Adresy URL pro odpovědi
 
@@ -110,7 +110,7 @@ Azure AD B2C poskytuje tři základní typy toků uživatele:
 
 Můžete zvolit, zda chcete použít výchozí toky uživatelů, které poskytuje Azure AD, čímž se zobrazí stránka hostovaná v AAD B2C. Alternativně můžete vytvořit stránku HTML, která určí vzhled a chování těchto toků uživatelů. 
 
-Chcete-li přizpůsobit stránky zásad uživatelů se stránkami integrovanými v Dynamics 365 Commerce, prostudujte si téma [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md). Další informace naleznete v tématu [Přizpůsobení rozhraní uživatelských prostředí v Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+Chcete-li přizpůsobit stránky zásad uživatelů se stránkami integrovanými v Dynamics 365 Commerce, prostudujte si téma [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md). Další informace naleznete v tématu [Přizpůsobení rozhraní uživatelských prostředí v Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Vytvoření zásady toku uživatele pro registraci a přihlášení
 
@@ -197,15 +197,15 @@ Je-li přidáno ověřování zprostředkovatele sociální identity a uživatel
 
 Před přidáním zprostředkovatele sociální identity pro ověřování je nutné přejít na portál zprostředkovatele identity a nastavit aplikaci zprostředkovatele identity tak, jak je uvedeno v dokumentaci k Azure AD B2C. Níže je uveden seznam odkazů na dokumentaci.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (jeden klient)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Účet Microsoft](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (jeden klient)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Účet Microsoft](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Přidání a nastavení zprostředkovatele sociální identity
 
@@ -346,11 +346,11 @@ Chcete-li přidružit aplikaci B2C k webu a kanálu, postupujte takto.
 
 Pokud uvažujete o migraci záznamů zákazníků z předchozí platformy zprotředkovatele identity, spolupracujte s týmem Dynamics 365 Commerce, abyste zkontrolovali potřeby zákazníka ohledně migrace.
 
-Další dokumentaci Azure AD B2C ohledně migrace zákazníků najdete v tématu [Migrace uživatelů do Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+Další dokumentaci Azure AD B2C ohledně migrace zákazníků najdete v tématu [Migrace uživatelů do Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Vlastní zásady
 
-Další informace o přizpůsobení interakcí a toků zásad Azure AD B2C nad rámec toho, co je nabídnuto standardními zásadami B2C, naleznete v tématu [Vlastní zásady v Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Další informace o přizpůsobení interakcí a toků zásad Azure AD B2C nad rámec toho, co je nabídnuto standardními zásadami B2C, naleznete v tématu [Vlastní zásady v Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Sekundární správce
 

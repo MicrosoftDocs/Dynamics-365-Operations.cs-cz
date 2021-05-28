@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d9c001ba203a1ec06d416ffaee28f2aee3a5a211
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4bbc7303039dbb0911c3dc8cedec48574af4f3ef
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798841"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020299"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -113,7 +113,7 @@ Zadejte také následující nastavení pro Českou republiku. Po dokončení in
 ### <a name="set-up-vat-per-czech-republic"></a>Nastavení DPH pro Českou republiku
 
 
-Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití funkcí DPH získáte v části [Přehled DPH](../../financials/general-ledger/indirect-taxes-overview.md).
+Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití funkcí DPH získáte v části [Přehled DPH](../../finance/general-ledger/indirect-taxes-overview.md).
 
 
 ### <a name="set-up-stores"></a>Nastavení obchodů

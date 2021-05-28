@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795206"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028100"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 
@@ -135,7 +135,7 @@ Text, který zadáte do pole **Poznámky**, se zobrazí *pod* krokem v Průvodci
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Nápověda v Retail Modern POS a Cloud POS
 
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-and-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Commerce, a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání.
+Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-ops-core/fin-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Commerce, a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání.
 
 [![Tlačítko Nápověda](./media/help.jpg)](./media/help.jpg)
 

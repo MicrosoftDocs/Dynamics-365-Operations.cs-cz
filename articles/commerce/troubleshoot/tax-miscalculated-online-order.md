@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f71add679e1d24f80db8ce3990058b591128ec1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7cef533d76bdddfbad2e8c5f84f81ef62bccc38
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801404"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021096"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Daně z online objednávek jsou nesprávně vypočítány
 
@@ -44,7 +43,7 @@ Chcete-li nakonfigurovat DPH pro maloobchod v centrále Commerce, postupujte ná
 1. Na kartě s náhledem **Všeobecné** v části **Prodejní daň** nakonfigurujte informace o DPH pro obchod.
 
 > [!NOTE]
-> U vyzvednutí produktu z obchodu daňová skupina pochází z obchodu, který je vybrán pro vyzvednutí. Další informace naleznete v tématu [Nastavení dalších daňových možností pro obchody](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+> U vyzvednutí produktu z obchodu daňová skupina pochází z obchodu, který je vybrán pro vyzvednutí. Další informace naleznete v tématu [Nastavení dalších daňových možností pro obchody](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ### <a name="configure-the-sales-tax-for-a-customers-address-in-commerce-headquarters"></a>Konfigurace DPH pro adresu zákazníka v centrále Commerce
 
@@ -68,7 +67,7 @@ Chcete-li nakonfigurovat obecné skupiny DPH v centrále Commerce, postupujte n�
 1. Na kartě s náhledem **Maloobchodní daň podle cíle** nakonfigurujte daně pro skupinu DPH.
 
 > [!NOTE]
-> U dopravy, která nezahrnuje DPH na adrese zákazníka, určuje daňovou skupinu dodací adresa řádku a daně podle cíle, které jsou nakonfigurovány pro daňovou skupinu. Další informace viz [Nastavení daní pro online obchody podle cílového místa](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> U dopravy, která nezahrnuje DPH na adrese zákazníka, určuje daňovou skupinu dodací adresa řádku a daně podle cíle, které jsou nakonfigurovány pro daňovou skupinu. Další informace viz [Nastavení daní pro online obchody podle cílového místa](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Další prostředky
 

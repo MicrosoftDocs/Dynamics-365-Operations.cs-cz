@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938431"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015944"
 ---
 # <a name="category-requests-from-vendors"></a>Požadavky kategorií od dodavatelů
 
@@ -36,10 +36,7 @@ Po zapnutí této funkce můžete do účtů dodavatelů stále ručně přidáv
 
 Než může prodejce komunikovat s požadavky na kategorii, musí být nastaven pro spolupráci s dodavatelem.
 
-Dodavatel musí mít alespoň jednoho uživatele spolupráce dodavatele. Pouze uživatelé dodavatelů, kteří mají jednu nebo obě z následujících rolí zabezpečení, mohou vytvářet a odesílat požadavky na kategorie:
-
-- Kontakt dodavatele (externí)
-- Správce dodavatele (externí)
+Dodavatel musí mít alespoň jednoho uživatele spolupráce dodavatele. Pouze uživatelé prodejců s rolí zabezpečení *Správce dodavatele (externí)* může vytvářet a odesílat požadavky na kategorie.
 
 Další informace o naleznete v tématu [Nastavení a správa dodavatelské spolupráce](set-up-maintain-vendor-collaboration.md).
 

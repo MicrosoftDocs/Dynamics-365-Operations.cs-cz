@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920948"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021362"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Podpora daňové funkce u převodních příkazů
 
@@ -41,7 +40,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
 
 1. Na stránce **Daňové funkce** na kartě **Verze** vyberte verzi konceptu funkce a poté vyberte možnost **Upravit**.
 
-    ![Výběr možnosti Upravit](../media/image1.png)
+    ![Výběr možnosti Upravit](../media/tax-feature-support-01.png)
 
 2. Na stránce **Nastavení daňových funkcí** na kartě **Daňové kódy** vyberte příkaz **Přidat** a vytvořte nové daňové kódy. V tomto příkladu jsou vytvořeny tři daňové kódy: **NL-Exempt**, **BE-RC-21** a **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         4. Vyberte příkaz **Přidat** v tabulce **Sazba**.
         5. Přepněte pole **Je osvobozeno** na **Ano** v části **Všeobecné**.
 
-        ![Daňový kód NL-Exempt](../media/image2.png)
+        ![Daňový kód NL-Exempt](../media/tax-feature-support-02.png)
 
     - Když je v belgickém skladu přijat převodní příkaz, použije se mechanismus přenesení daňové povinnosti pomocí daňových kódů **BE-RC-21** a **BE-RC+21**.
         
@@ -67,7 +66,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         6. Přepněte pole **Je přenesení daňové povinnosti** na **Ano** v části **Všeobecné**.
         7. Zvolte **Uložit**.
 
-        ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti](../media/image3.png)
+        ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti](../media/tax-feature-support-03.png)
         
         Vytvořte daňový kód **BE-RC+21**.
         1. Vyberte příkaz **Přidat** a zapište **BE-RC-21** do pole **Daňový kód**.
@@ -77,7 +76,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         5. Zapište **21** do pole **Sazba daně**.
         6. Zvolte **Uložit**.
 
-        ![Daňový kód BE-RC+21 pro přenesení daňové povinnosti](../media/image4.png)
+        ![Daňový kód BE-RC+21 pro přenesení daňové povinnosti](../media/tax-feature-support-04.png)
 
 3. Definujte použitelnost daňových kódů.
 

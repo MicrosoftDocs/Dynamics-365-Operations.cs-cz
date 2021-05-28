@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ccfbab6055b8b64ce0926cda04090583e0d7a6ae
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797173"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020855"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://docs.microsoft.com/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.17
 
@@ -102,7 +102,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano. Je nahrazen dvěma novými operacemi POS: příchozí operace (804) a odchozí operace (805).|
 | **Ovlivněné oblasti produktu**         | Aplikace Pokladní místo (POS) |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Od vydání 10.0.10 již operace vyzvednutí a přijetí nebude mít žádné nové aktualizace funkcí. V budoucích verzích budou pro tuto operaci provedeny pouze kritické opravy chyb. Doporučuje se, aby všichni zákazníci přešli na nové [příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) a [odchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), které budou nadále součástí našeho dlouhodobého přehledu aplikací. |
+| **Stav**                         | Zastaralé: Od vydání 10.0.10 již operace vyzvednutí a přijetí nebude mít žádné nové aktualizace funkcí. V budoucích verzích budou pro tuto operaci provedeny pouze kritické opravy chyb. Doporučuje se, aby všichni zákazníci přešli na nové [příchozí operace](../pos-inbound-inventory-operation.md) a [odchozí operace](../pos-outbound-inventory-operation.md), které budou nadále součástí našeho dlouhodobého přehledu aplikací. |
 
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.7
@@ -113,7 +113,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano: Nahrazuje je rozhraní API GetEstimatedAvailability a GetEstimatedProductWarehouseAvailability. |
 | **Ovlivněné oblasti produktu**         | Sada SDK pro elektronický obchod |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Ukončeno: Od vydání 10.0.7 nebudou investovány žádné technické prostředky do rozhraní API GetProductAvailabilities a GetAvailableInventoryNearby. Organizace, které používají tato API ve svých implementacích elektronického obchodování, by měly přejít na nová rozhraní API GetEstimatedAvailability a GetEstimatedProductWarehouseAvailability a povolit [Funkci pro optimalizaci dostupnosti produktu](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).  |
+| **Stav**                         | Ukončeno: Od vydání 10.0.7 nebudou investovány žádné technické prostředky do rozhraní API GetProductAvailabilities a GetAvailableInventoryNearby. Organizace, které používají tato API ve svých implementacích elektronického obchodování, by měly přejít na nová rozhraní API GetEstimatedAvailability a GetEstimatedProductWarehouseAvailability a povolit [Funkci pro optimalizaci dostupnosti produktu](../calculated-inventory-retail-channels.md).  |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 Další informace o funkcích, které byly v předchozích verzích odebrány nebo zastaraly, naleznete v tématu [Odebrané nebo zastaralé funkce v předchozích verzích](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json).

@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801500"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020725"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Během počátečního nasazení nelze konfigurovat skupinu zabezpečení pro Tvůrce webů Commerce
 
@@ -38,7 +37,7 @@ Když vytvoříte komponenty elektronického obchodování jako součást proces
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Zřízení uživatele webu elektronického obchodu ve správném tenantovi
 
 1. Přejděte na [portál Azure](https://portal.azure.com/).
-1. Pod tenantem, pro který byl zřízen projekt LCS pro váš web elektronického obchodování, postupujte podle pokynů v části [Vytvoření základní skupiny a přidání členů pomocí Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. Pod tenantem, pro který byl zřízen projekt LCS pro váš web elektronického obchodování, postupujte podle pokynů v části [Vytvoření základní skupiny a přidání členů pomocí Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 1. Přejděte do [LCS](https://lcs.dynamics.com/) a přihlaste se pomocí účtu, který sdílí stejného tenanta jako skupina zabezpečení Azure AD, kterou jste právě vytvořili. Účet musí mít přístup k prohlížení skupiny zabezpečení Azure AD.
 1. Proveďte kroky nastavení a nakonfigurujte web elektronického obchodování. Když zřídíte komponenty elektronického obchodování, skupina zabezpečení by se nyní měla zobrazit jako možnost v dialogovém okně.
 
@@ -47,6 +46,6 @@ Když vytvoříte komponenty elektronického obchodování jako součást proces
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Vytvoření základní skupiny a přidání členů pomocí Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Vytvoření základní skupiny a přidání členů pomocí Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Nasazení nového klienta elektronického obchodu](../deploy-ecommerce-site.md)

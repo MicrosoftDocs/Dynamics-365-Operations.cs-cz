@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944406"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980942"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -58,7 +58,10 @@ Jednotky škálování vlastní následující data:
   - **Objednávky převodu** (pouze odchozí s jednoduchým výběrem a nakládáním)
 
 - **Údaje o přijetí skladové objednávky** - Tato data se používají pouze pro nákupní objednávky, které jsou uvolněny do skladu.
-- **Údaje o registrační značce** - Registrační značky lze vytvářet v centru a jednotce škálování. Bylo poskytnuto vyhrazené řešení konfliktů. Tato data nejsou specifická pro sklad.
+- **Údaje o registrační značce** - Registrační značky lze vytvářet v centru i na jednotce škálování. Bylo poskytnuto vyhrazené řešení konfliktů. 
+
+    > [!IMPORTANT]
+    > Data registrační značky nejsou specifická pro sklad. Pokud se během stejného synchronizačního cyklu vytvoří v centru a na jednotce měřítka stejné číslo registrační značky, dojde k další synchronizaci. Pokud k tomu dojde, přejděte na **Správa systému > Dotazy> Dotazy na pracovní zátěž > Duplicitní záznamy**, kde můžete zobrazit a sloučit data.
 
 ## <a name="outbound-process-flow"></a>Odchozí tok procesu
 

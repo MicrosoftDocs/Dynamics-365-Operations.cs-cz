@@ -5,7 +5,6 @@ author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ffb1d8966cb7e41a7032c6d4449b9e332c0e4703
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 24f5ab1e1e321f2d783449a5ba9a1fb1523920ae
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890594"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021072"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources, 5. dubna 2021
 

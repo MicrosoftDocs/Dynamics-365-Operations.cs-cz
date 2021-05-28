@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5ec0e13c8ecfb6003cbb905e66fc102074e7b9b6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 17ed0adefb2c3dd10e5e6020929c877cf5c3b8c9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795518"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022616"
 ---
 # <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
@@ -37,7 +37,7 @@ Uživatelé musí být napojeni na kanál kontaktního střediska, aby mohli pou
 
 Profil oznámení e-mailem lze též nastavit na kanálu kontaktního střediska. Profil definuje sadu šablon e-mailu použitou při odeslání e-mailu odběratelům, kteří provedli objednávku prostřednictvím kanálu kontaktního střediska. Spouštěče e-mailu lze konfigurovat proti systémovým událostem, jako je například odeslání objednávky nebo dodávka objednávky.
 
-Než může být proces zpracován správným způsobem prostřednictvím kanálu kontaktního střediska, musí být pro kanál definovány správné [platební metody](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) a způsoby dodání.
+Než může být proces zpracován správným způsobem prostřednictvím kanálu kontaktního střediska, musí být pro kanál definovány správné [platební metody](/dynamics365/unified-operations/retail/work-with-payments) a způsoby dodání.
 
 Na úrovni kanálu kontaktního střediska můžete definovat další výchozí hodnoty vztahující se na finanční dimenze, které budou napojeny na objednávky vytvořené tímto kanálem.
 
@@ -47,13 +47,13 @@ Tři nastavení konfigurace kontaktního střediska mají hlavní vliv na funkce
 
 ### <a name="enable-order-completion"></a>Povolit dokončení objednávky
 
-Nastavení **Povolit dokončení objednávky** na kanálu kontaktního střediska má důležitý vliv na tok zpracování prodejních objednávek, které jsou zadány pro tento kanál. Pokud je toto nastavení zapnuto, všechny prodejní objednávky musí projít sadou pravidel ověření předtím, než mohou být potvrzeny. Výběrem tlačítka **Dokončit** v podokně akcí stránky prodejní objednávky spustíte tato pravidla. Všechny prodejní objednávky, které jsou vytvořeny při zapnutém nastavení **Povolit dokončení objednávky**, musí projít procesem dokončení objednávky. Tento proces vynucuje zachycení platby a logiku ověřování platby. Kromě vynucení platby může proces odeslání objednávky spustit [zjišťování podvodu](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts) nakonfigurované v systému. Objednávky, u kterých se nezdaří ověření platby nebo podvodu, jsou zablokovány a nelze je uvolnit k dalšímu zpracování (například výdeje nebo expedice), dokud není vyřešen problém, který způsobil zablokování.
+Nastavení **Povolit dokončení objednávky** na kanálu kontaktního střediska má důležitý vliv na tok zpracování prodejních objednávek, které jsou zadány pro tento kanál. Pokud je toto nastavení zapnuto, všechny prodejní objednávky musí projít sadou pravidel ověření předtím, než mohou být potvrzeny. Výběrem tlačítka **Dokončit** v podokně akcí stránky prodejní objednávky spustíte tato pravidla. Všechny prodejní objednávky, které jsou vytvořeny při zapnutém nastavení **Povolit dokončení objednávky**, musí projít procesem dokončení objednávky. Tento proces vynucuje zachycení platby a logiku ověřování platby. Kromě vynucení platby může proces odeslání objednávky spustit [zjišťování podvodu](/dynamics365/unified-operations/retail/set-up-fraud-alerts) nakonfigurované v systému. Objednávky, u kterých se nezdaří ověření platby nebo podvodu, jsou zablokovány a nelze je uvolnit k dalšímu zpracování (například výdeje nebo expedice), dokud není vyřešen problém, který způsobil zablokování.
 
-Když je nastavení **Povolit dokončení objednávky** zapnuté pro kanál kontaktního střediska, položky řádku jsou zadány na prodejní objednávce a uživatel kanálu se pokusí zavřít nebo odejít z formuláře prodejní objednávky, aniž by nejdříve vybral **Dokončit**, systém vynucuje proces dokončení objednávky otevřením stránky shrnutí prodejní objednávky a vyžádáním, aby uživatel správně odesla objednávku. Pokud nelze objednávku správně odeslat společně s platbou, uživatel může použít funkci [blokování objednávky](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) a objednávku zablokovat. Pokud se uživatel pokouší zrušit objednávku, musí ji správně zrušit pomocí funkce Zrušit nebo funkce Odstranit, v závislosti na funkci, kterou umožňuje zabezpečení uživatele.
+Když je nastavení **Povolit dokončení objednávky** zapnuté pro kanál kontaktního střediska, položky řádku jsou zadány na prodejní objednávce a uživatel kanálu se pokusí zavřít nebo odejít z formuláře prodejní objednávky, aniž by nejdříve vybral **Dokončit**, systém vynucuje proces dokončení objednávky otevřením stránky shrnutí prodejní objednávky a vyžádáním, aby uživatel správně odesla objednávku. Pokud nelze objednávku správně odeslat společně s platbou, uživatel může použít funkci [blokování objednávky](/dynamics365/unified-operations/retail/work-with-order-holds) a objednávku zablokovat. Pokud se uživatel pokouší zrušit objednávku, musí ji správně zrušit pomocí funkce Zrušit nebo funkce Odstranit, v závislosti na funkci, kterou umožňuje zabezpečení uživatele.
 
 Pokud je nastavení **Povolit dokončení objednávky** zapnuté pro kanál kontaktního střediska, pole **Stav platby** bude sledováno na objednávce. Systém vypočítá **Stav platby**, když je odeslána prodejní objednávka. K dalším krokům zpracování objednávky, jako je výdej a expedice, mohou se systémem pohybovat pouze objednávky, které mají schválený stav platby. Pokud jsou platby odmítnuté, příznak **nezpracovávat** bude povolen na podrobném stavu objednávky, což objednávku zablokuje do vyřešení problému s platbou.
 
-Kromě toho, pokud je nastavení **Povolit dokončení objednávky** zapnuté, když uživatelé vytváří prodejní objednávky a jsou v režimu zadávání položky řádku, pole **Zdroj** bude k dispozici na hlavním záhlaví prodejní objednávky. Pole **Zdroj** slouží k zachycení [kódu zdroje katalogu](https://docs.microsoft.com/dynamics365/unified-operations/retail/call-center-catalogs) ve scénáři přímého marketingového prodeje. Tento kód pak může řídit zvláštní ceny a promoakce.
+Kromě toho, pokud je nastavení **Povolit dokončení objednávky** zapnuté, když uživatelé vytváří prodejní objednávky a jsou v režimu zadávání položky řádku, pole **Zdroj** bude k dispozici na hlavním záhlaví prodejní objednávky. Pole **Zdroj** slouží k zachycení [kódu zdroje katalogu](/dynamics365/unified-operations/retail/call-center-catalogs) ve scénáři přímého marketingového prodeje. Tento kód pak může řídit zvláštní ceny a promoakce.
 
 I v případě, že je nastavení **Povolit dokončení objednávky** vypnuté, uživatelé mohou i nadále použít zdrojový kód na prodejní objednávku. Je však nutné nejprve otevřít podrobnosti záhlaví prodejní objednávky pro přístup k poli **Zdroj**. Jinými slovy, je zapotřebí několika dalších kliknutí. Stejné chování se vztahuje na funkce, jako je dokončení expedice a urychleně zpracované objednávky. Tyto funkce jsou k dispozici pro všechny objednávky vytvořené v kontaktním středisku. Pokud je však nastavení **Povolit dokončení objednávky** zapnuté, uživatelé mohou nalézt konfiguraci těchto funkcí v záhlaví prodeje, když jsou v zobrazení zadávání řádku. Není nutné přejít k podrobnostem záhlaví prodejní objednávky k nalezení odpovídajících nastavení a polí.
 

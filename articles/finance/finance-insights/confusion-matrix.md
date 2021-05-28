@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818745"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028196"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Výsledky modelů strojového učení (Preview)
 
@@ -63,8 +63,8 @@ Chcete-li se touto otázkou začít zabývat, zvažte správnost naivního odhad
 
 Za zmínku stojí další aspekt. Zvažte scénář, kdy se ke zjištění nemoci u pacienta použije lékařský test. Tento problém je problémem binární klasifikace, kde pozitivní výsledek naznačuje, že pacient má onemocnění. V tomto scénáři musíte přemýšlet o dopadu následujících chyb:
 
-- Falešně pozitivní, kde test říká, že pacient má nemoc, ale ve skutečnosti ji nemá
-- Falešně negativní, kde test říká, že pacient nemá nemoc, ale ve skutečnosti ji má
+- Falešně pozitivní, kde test říká, že pacient má nemoc, ale ve skutečnosti ji nemá.
+- Falešně negativní, kde test říká, že pacient nemá nemoc, ale ve skutečnosti ji má.
 
 Je zřejmé, že oba typy chyb jsou nežádoucí, ale která je horší? Opět to záleží na situaci. V případě život ohrožujícího onemocnění, které vyžaduje rychlou léčbu, má přednost minimalizace falešně negativních chyb (s vyhlídkou dalších testů). V jiných, méně kritických situacích mohou tvůrci modelu místo toho minimalizovat falešně pozitivní chyby. Rozumným závěrem je, že k efektivnímu určení kvality modelu musíte mít více informací, než poskytuje metrika správnosti.
 

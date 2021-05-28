@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791071"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022465"
 ---
 # <a name="e-commerce-site-overview"></a>Přehled webu elektronického obchodu
 
@@ -37,11 +37,11 @@ V aplikaci Dynamics 365 Commerce můžete pomocí kanálu online obchodu vytvoř
 
 Než budete moci začít s Dynamics 365 Commerce, je třeba nastavit jeden kanál online obchodu. Jediný web elektronického obchodování však může poskytnout online prostředí pro více online obchodů. Pokud je například pro podporu různých zeměpisných oblastí nastaveno více online obchodů, lze použít jednu sadu stránek elektronického obchodu k poskytnutí jedinečných prostředí, které jsou definovány jednotlivými obchody. Další informace o konfiguraci webu pro podporu více online obchodů naleznete v tématu [Pidružení online webu ke kanálu](associate-site-online-store.md).
 
-Jakmile je online obchod nastaven, může být přidružen k webu Dynamics 365 Commerce, který bude sloužit jako online výkladní skříň. Další informace o online obchodech a jejich nastavení naleznete v tématu [Vyváření online obchodů](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Jakmile je online obchod nastaven, může být přidružen k webu Dynamics 365 Commerce, který bude sloužit jako online výkladní skříň. Další informace o online obchodech a jejich nastavení naleznete v tématu [Vyváření online obchodů](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
 
-Během inicializace webu elektronického obchodu se zobrazí výzva k zadání názvu domény. Další informace o doménách v Commerce najdete v části [Konfigurace názvu domény](configure-your-domain-name.md) a [Domény v Dynamics 365 Commerce](domains-commerce.md). Nasazení nového klienta elektronického obchodování pomocí [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), postupujte podle pokynů v části [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md). Poté, co je váš klient elektronického obchodu nastaven v LCS, je vytvořen odkaz na konfigurátor webů Commerce. Potom můžete použít konfigurátor webů Commerce k inicializaci a konfiguraci webů elektronického obchodu.
+Během inicializace webu elektronického obchodu se zobrazí výzva k zadání názvu domény. Další informace o doménách v Commerce najdete v části [Konfigurace názvu domény](configure-your-domain-name.md) a [Domény v Dynamics 365 Commerce](domains-commerce.md). Nasazení nového klienta elektronického obchodování pomocí [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), postupujte podle pokynů v části [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md). Poté, co je váš klient elektronického obchodu nastaven v LCS, je vytvořen odkaz na konfigurátor webů Commerce. Potom můžete použít konfigurátor webů Commerce k inicializaci a konfiguraci webů elektronického obchodu.
 
 ## <a name="initialize-your-e-commerce-site"></a>Inicializace webu elektronického obchodu
 
