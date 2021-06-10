@@ -1,8 +1,8 @@
 ---
 title: Finanční sestavy předvah
 description: Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816924"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103651"
 ---
 # <a name="trial-balance-financial-reports"></a>Finanční sestavy předvah
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816924"
 
 Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům. 
 
-<a name="default-trial-balance-reports"></a>Výchozí finanční sestavy předvah
------------------------------
+## <a name="default-trial-balance-reports"></a>Výchozí finanční sestavy předvah
 
 Ve finančním vykazování existují tři sestavy předvah.
 
@@ -47,6 +46,9 @@ Finanční sestavy předvahy používají následující stavební bloky.
 | Podrobná předvaha – výchozí               | Předvaha – výchozí | Podrobná předvaha – výchozí               |
 | Souhrnná předvaha – výchozí                | Předvaha – výchozí | Souhrnná předvaha – výchozí                |
 | Souhrnná roční předvaha – výchozí | Předvaha – výchozí | Souhrnná roční předvaha – výchozí |
+
+> [!NOTE] 
+> Při spuštění sestavy **Zkušební zůstatek** ve Financial Reporting nezapomeňte zaškrtnout políčka pro **Zobrazit řádky bez částek** a **Zobrazit sestavy bez aktivních řádků** na kartě **Nastavení**.
 
 ### <a name="row-definition"></a>Definice řádku
 
@@ -94,10 +96,7 @@ Každá sestavu předvahy používá jinou definici sloupců. Tyto definice slou
     -   **FD** – finanční data, která obsahují pouze položky má dáti pro předchozí rok
     -   **FD** – finanční data, která obsahují pouze položky dal pro předchozí rok
 
-
-
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled finančního výkaznictví](financial-reporting-getting-started.md)
 

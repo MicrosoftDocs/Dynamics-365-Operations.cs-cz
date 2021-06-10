@@ -2,13 +2,12 @@
 title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953405"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097252"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -33,21 +32,13 @@ Aplikace Dynamics 365 Human Resources v aplikaci Microsoft Teams vám umožňuje
 
 Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams.
 
-1. V aplikaci Microsoft Teams zvolte tři tečky.
-
-   ![Tři tečky aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-ellipses.png)
+1. V Microsoft Teams přejděte do seznamu aplikací.
  
 2. Vyhledejte Dynamics 365 Human Resources a poté vyberte dlaždici **Human Resources**.
 
-   ![Dlaždice HR aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Vyberte tlačítko **Přidat** pro instalaci aplikace.
 
-   ![Instalace aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-in-store.png)
-
 Pokud vás aplikace nepřihlásí automaticky, vyberte kartu **Nastavení** pro přihlášení.
-
-![Karta nastavení aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Pokud nevidíte přihlašovací dialogové okno, zkontrolujte nastavení prohlížeče a povolte automaticky otevíraná okna. 
@@ -61,20 +52,24 @@ Pokud máte přístup k více než jedné instanci aplikace Human Resources, mů
 
 Po instalaci aplikace se zobrazí uvítací zpráva, která vás informuje o typech akcí, které může robot provést vaším jménem.
 
-![Uvítací zpráva robota aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Při první interakci s robotem se možná budete muset přihlásit. Pokud nevidíte přihlašovací dialogové okno, zkontrolujte nastavení prohlížeče a povolte automaticky otevíraná okna.
 
 Můžete požádat robota a následující akce:
 
-- Zahájit žádost o volno za vás.
+- Zobrazit aktuální zůstatky dovolené. Například pošlete zprávu s názvem „Zobrazit zůstatky dovolené“.
+
+- Zahájit žádost o volno za vás. Například pošlete zprávu s textem „Vezměte si volno“ nebo „Chci si vzít volno na příští čtvrtek a pátek“, aby bylo konkrétnější požadovat dovolenou u typu dovolené na dovolenou. 
 
   ![Zahájení žádosti o volno v chatu Teams](./media/hr-teams-leave-app-initiate.png)
 
 - Chatovací robot za vás vyplní žádost o volno. Vyberte možnost **Požádat o volno** a upravte podrobnosti své žádosti.
 
-  ![Úprava podrobností žádosti o volno](./media/hr-teams-leave-app-details.png)
+   Pokud chcete odeslat žádosti o dovolenou pro více typů dovolené na stejné datum, vyberte možnost **Rozdělit den s** v nabídce **Více možností**. 
+
+   Pokud vyberete půldenní dovolenou, když je jednotka žádosti o dovolenou ve dnech, můžete určit, zda chcete požádat o volno v první půlden nebo druhý půlden výběrem možnosti **Půldenní definice** v nabídce **Více možností**.
+   
+   ![Půldenní definice](./media/HalfDayDefinitions.png)
 
 - Po dokončení úprav podrobností žádosti o volno vyberte **Odeslat** a předejte žádost ke schválení.
 
@@ -91,42 +86,36 @@ Karta **Volno** umožňuje zobrazit:
 - Žádosti o volno
 
 - Koncept žádostí o volno
-
-![Karta volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Vytvoření nové žádosti
 
 1. Chcete-li vytvořit novou žádost o volno, zvolte **Nová žádost**.
 
-   ![Nová žádost aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Zadejte den nebo dny, na které chcete volno, a poté vyberte **Přidat**.
 
-   ![Přidání volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Přidání volna aplikace pracovního volna Human Resources Teams](./media/TimeOffHours.png)
 
 3. V případě potřeby zadejte kód důvodu. Také zadejte případné komentáře a přidejte všechny přílohy.
 
-4. Až zadáte informace, napište **Odeslat** pro odeslání žádosti ke schválení. Můžete také naspat **Uložit jako koncept** a vrátit se k žádosti později.
+4. Pokud chcete odeslat žádosti o dovolenou pro více typů dovolené na stejné datum, vyberte možnost **Rozdělit den s** v nabídce **Více možností**.
+
+5. Vyberte možnost **Půldenní definice** k určení, zda chcete požádat o první půl dne volna nebo o druhou půl dne volna. Tato možnost je k dispozici, když je jednotka žádosti o dovolenou ve dnech a požadovaná částka je 0,5 dne.
+
+6. Až zadáte informace, zadejte **Odeslat** pro odeslání žádosti ke schválení. Můžete také vložit **Uložit jako koncept** a vrátit se k žádosti později.
 
 ### <a name="manage-draft-requests"></a>Správa konceptů žádostí
 
 1. Zvolte kartu **Koncepty**.
 
-   ![Karta konceptů aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Vyberte symbol tužky, chcete-li žádost upravit, nebo vyberte koš, chcete-li žádost odstranit.
 
 3. Proveďte potřebné změny. Až zadáte informace, napište **Odeslat** pro odeslání žádosti ke schválení. Můžete také zvolit **Uložit jako koncept** a vrátit se k žádosti později.
-
-   ![Úprava konceptu aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Odpovídejte na oznámení týmů
 
 Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li oznámení zobrazit, vyberte jej. Oznámení se také zobrazují v oblasti **Chat**.
 
 Pokud jste schvalovatel, můžete v oznámení zvolit možnosti **Schválit** nebo **Odmítnout**. Můžete také zadat volitelnou zprávu.
-
-![Oznámení o žádosti o pracovní volno v aplikaci Human Resources Teams](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Pošlete nadcházející informace o volném čase vašim spolupracovníkům
 
@@ -138,15 +127,9 @@ Po instalaci aplikace Human Resources pro Teams můžete snadno poslat informace
 
 2. Vyberte žádost o dovolenou, kterou chcete sdílet. Pokud chcete sdílet koncept žádosti o dovolenou, nejprve vyberte **Koncepty**.
 
-   ![Vyberte nadcházející žádost o dovolenou ke sdílení](./media/hr-teams-leave-app-chat-search.png)
-
 Vaše žádost o dovolenou se zobrazí v chatu.
 
-![Karta s žádostí o volno v Human Resources](./media/hr-teams-leave-app-chat-card.png)
-
-Pokud jste sdíleli koncept žádosti, zobrazí se jako koncept:
-
-![Karta s konceptem žádosti o volno v Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
+Pokud jste sdíleli koncept žádosti, zobrazí se jako koncept.
 
 ## <a name="view-your-teams-leave-calendar"></a>Zobrazení kalendáře pracovního volna týmu
 
@@ -155,8 +138,6 @@ Pokud jste manažer s přímými podřízenými, můžete si prohlédnout schvá
 1. V aplikaci Human Resources v Teams vyberte **Volno**.
 
 2. Vyberte **Kalendář týmu**. Kalendář zobrazuje schválené a nevyřízené volno vašich přímých podřízených.
-
-   ![Zobrazení kalendáře v aplikaci Human Resources Teams](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Pokud týmový kalendář nevidíte, požádejte správce o jeho aktivaci. Další informace naleznete v tématu [Instalace a nastavení](hr-admin-teams-leave-app.md#install-and-setup).

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8f80458de69a77846259c9a0707c05098d13e12a
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909712"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115066"
 ---
 # <a name="product-readiness"></a>Připravenost produktu
 
@@ -27,6 +27,8 @@ Kontroly připravenosti můžete použít pro to, abyste zajistili, že pro prod
 
 Zaškrtávací políčko **Aktivní** pro technický produkt, variantu nebo verzi je k dispozici až po zadání a ověření všech požadovaných dat a po zpracování všech kontrol připravenosti. V tomto okamžiku může být produkt, verze nebo varianta uvolněna do jiných společností a použita v transakcích. Můžete vytvořit kontroly připravenosti pro nové produkty, nové varianty a nové technické verze.
 
+Můžete také použít kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.
+
 ## <a name="types-of-readiness-checks"></a>Typy kontrol připravenosti
 
 Existují tři typy kontrol připravenosti:
@@ -35,22 +37,29 @@ Existují tři typy kontrol připravenosti:
 - **Ruční kontrola** - Uživatel ověří, zda je záznam platný. Například kontrola připravenosti může vyžadovat ověření výchozího nastavení objednávky. V některých případech, například když se produkt stále navrhuje, a proto nebude umístěn na skladě, není nutné žádné výchozí nastavení objednávky. Výchozí nastavení objednávky však může být vyžadováno pro jiný produkt stejného typu, protože produkt lze držet na skladě. Uživatel je odpovědný za to, jak správně rozhodnout, když je vyžadována kontrola připravenosti.
 - **Kontrolní seznam** - Uživatel odpovídá na řadu otázek z kontrolního seznamu a systém určuje, zda odpovědi splňují očekávání. Kontrolní seznam může mít jakýkoli předmět. Lze jej například použít k určení, zda jsou dokončeny marketingové materiály nebo dokumentace k produktu.
 
-## <a name="how-readiness-checks-are-created-for-a-new-product-variant-or-version"></a>Jak se vytvářejí kontroly připravenosti pro nový produkt, variantu nebo verzi
+<a name="checks-engineering"></a>
 
-Když vytvoříte nové technický **produkt**, systém určuje, zda byla pro kategorii technických produktů nastavena zásada kontroly připravenosti. (Zásady kontroly připravenosti lze použít na úrovni uvolněného produktu, úrovni uvolněné varianty a na úrovni technické verze.) Pokud byla nastavena zásada, dojde k následujícím událostem:
+## <a name="how-readiness-checks-are-created-for-a-new-engineering-product-variant-or-version"></a>Jak se vytvářejí kontroly připravenosti pro nový technický produkt, variantu nebo verzi
+
+Zásady kontroly připravenosti lze použít na úrovni uvolněného produktu, úrovni uvolněné varianty a na úrovni technické verze.
+
+Když vytvoříte nový *technický produkt*, systém určí, zda se na něho [platí zásady kontroly připravenosti](#assign-policy). Pokud se použijí zásady kontroly připravenosti, dojde k následujícím událostem:
 
 - Pro produkt se podle příslušných zásad vytvářejí kontroly připravenosti.
-- Technická verze je nastavena na neaktivní, aby zablokovala používání produktu. Všechny verze konkrétního produktu, který je součástí, jsou nastaveny na neaktivní.
+- Technická verze je nastavena na neaktivní, aby zablokovala používání produktu. Všechny technické verze produktu jsou nastaveny na neaktivní.
 
-Pokud je vytvořena nová **varianta** pro produkt, systém zkontroluje, zda byly v kategorii technických produktů nastaveny kontroly připravenosti. (Kontroly připravenosti lze použít na úrovni uvolněné varianty a na úrovni technické verze.) Pokud byla nastavena kontrola připravenosti, dojde k následujícím událostem:
+Pokud je vytvořena *varianta* pro produkt, systém zkontroluje, zda se na něj vztahují zásady kontroly připravenosti. (Kontroly připravenosti lze použít na úrovni uvolněné varianty a na úrovni technické verze.) Pokud se vztahují zásady, dojde k následujícím událostem:
 
-- Pro produkt jsou vytvořeny kontroly připravenosti.
+- Pro produkt se podle příslušných zásad vytvářejí kontroly připravenosti.
+- Technická verze a varianta je nastavena na neaktivní, aby zablokovala používání produktu.
+
+Pokud je vytvořena nová technická *verze* pro produkt, systém zkontroluje, zda se na něj vztahují zásady kontroly připravenosti. (Kontroly připravenosti lze použít na úrovni technické verze.) Pokud se vztahují zásady, dojde k následujícím událostem:
+
+- Pro produkt se podle příslušných zásad vytvářejí kontroly připravenosti.
 - Technická verze je nastavena na neaktivní, aby zablokovala používání produktu.
 
-Pokud je vytvořena nová technická **verze** pro produkt, systém zkontroluje, zda byly v kategorii technických produktů nastaveny kontroly připravenosti. (Kontroly připravenosti lze použít na úrovni technické verze.) Pokud byla nastavena kontrola připravenosti, dojde k následujícím událostem:
-
-- Pro produkt jsou vytvořeny kontroly připravenosti.
-- Technická verze je nastavena na neaktivní, aby zablokovala používání produktu.
+> [!NOTE]
+> Můžete také nastavit zásady kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.
 
 ## <a name="view-readiness-checks"></a>Zobrazení kontrol připravenosti
 
@@ -67,7 +76,7 @@ Chcete-li zobrazit otevřené kontroly připravenosti, které jsou vám přiřaz
 - Přejděte na **Správa technických změn \> Společný \> Připravenost produktu \> Moje otevřené kontroly připravenosti**.
 - Přejděte na **Správa informací o produktu \> Pracovní prostory \> Připravenost produktu pro diskrétní výrobu**.
 
-Nastavení, které určuje, komu je přiřazena kontrola připravenosti, se provádí pro kategorii technického produktu. Kontroly připravenosti lze přiřadit osobě nebo týmu. Pokud je kontrola připravenosti přiřazena týmu, je v týmu jedna osoba, která musí kontrolu připravenosti zpracovat. Více informací naleznete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
+Nastavení, které určuje, komu je přiřazena kontrola připravenosti, se provádí pro zásady připravenosti. Kontroly připravenosti lze přiřadit osobě nebo týmu. Pokud je kontrola připravenosti přiřazena týmu, je v týmu jedna osoba, která musí kontrolu připravenosti zpracovat.
 
 ## <a name="process-open-readiness-checks"></a>Zpracování otevřených kontrol připravenosti
 
@@ -92,9 +101,7 @@ Když byly všechny otevřené kontroly připravenosti nového produktu, variant
 
 ## <a name="create-and-manage-product-readiness-policies"></a>Vytváření a správa zásad připravenosti produktu
 
-Pomocí zásad připravenosti produktu můžete spravovat kontroly připravenosti, které se na produkt vztahují. Protože zásadě připravenosti je přiřazena technická kategorie, všechny kontroly v zásadě připravenosti se vztahují na všechny technické produkty, které jsou založeny na technické kategorii. Více informací naleznete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
-
-Každá zásada připravenosti obsahuje sadu kontrol připravenosti. Když je zásadě připravenosti přiřazena kategorie technického produktu, všechny produkty, které jsou vytvořeny z této kategorie technického produktu, budou mít kontroly připravenosti, které jsou uvedeny v zásadě připravenosti.
+Pomocí zásad připravenosti produktu můžete spravovat kontroly připravenosti, které se na produkt vztahují. Každá zásada připravenosti obsahuje sadu kontrol připravenosti. Když je zásadě připravenosti přiřazena kategorie technického produktu nebo sdílený pridukt, všechny produkty, které se vztahují k dané kategorii nebo sdílenému produktu budou mít kontroly připravenosti, které jsou uvedeny v zásadě připravenosti.
 
 Chcete-li pracovat se zásadami připravenosti produktu, přejděte na **Správa technických změn \> Nastavení \> Zásady připravenosti produktu**. Potom proveďte jeden z následujících kroků.
 
@@ -118,7 +125,7 @@ Na záložce s náhledem **Obecné** zásad připravenosti produktu nastavte ná
 | Pole | popis |
 |---|---|
 | Typ produktu | Vyberte, zda se zásada vztahuje na produkty typu *Položka* nebo *Služba*. Po uložení záznamu toto nastavení nemůžete změnit. |
-| Aktivní | Pomocí této možnosti můžete zachovat zásady připravenosti. Nastavte možnost na *Ano* pro všechny zásady připravenosti, které používáte. Nastavte ji na *Ne*, čímž označíte zásadu připravenosti jako neaktivní, když se nepoužívá. Všimněte si, že nemůžete deaktivovat zásadu připravenosti, která je přiřazena kategorii technického produktu, a můžete odstranit pouze neaktivní zásady uvolnění. |
+| Aktivní | Pomocí této možnosti můžete zachovat zásady připravenosti. Nastavte možnost na *Ano* pro všechny zásady připravenosti, které používáte. Nastavte ji na *Ne*, čímž označíte zásadu připravenosti jako neaktivní, když se nepoužívá. Všimněte si, že nemůžete deaktivovat zásadu připravenosti, která je přiřazena kategorii technického produktu nebo sdílenému produktu, a můžete odstranit pouze neaktivní zásady uvolnění. |
 
 ### <a name="readiness-control-fasttab"></a>Záložka s náhledem Kontrola připravenosti
 
@@ -146,5 +153,70 @@ Pro každý řádek, který přidáte, nastavte následující pole.
 | Automatické schválení | Záznamy o kontrole připravenosti zahrnují zaškrtávací políčko **Schváleno** označující stav schválení. Vyberte zaškrtávací políčko **Automatické schválení** pro kontroly, které by měly být nastaveny na schválené ihned poté, co je přidělený uživatel dokončí. Zrušte zaškrtnutí tohoto políčka, chcete-li jako další krok vyžadovat výslovné schválení. |
 | Povinné | Toto políčko zaškrtněte u kontrol, které musí přiřazený uživatel dokončit. Povinné kontroly nelze přeskočit. |
 
+<a name="assign-policy"></a>
+
+## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Přiřaďte zásady připravenosti standardním a strojírenským produktům
+
+Když vytvoříte nový produkt na základě technické kategorie, vytvoříte obojí *uvolněný produkt* a související *sdílený produkt*. Způsob vyřešení zásad připravenosti pro vydaný produkt závisí na tom, zda jste zapnuli funkci *Kontroly připravenosti produktu*. (Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.)
+
+- Když je funkce *Kontroly připravenosti produktu* *vypnuta* ve vašem systému, je zásada připravenosti nastavena a zobrazena pouze v záznamu [technické kategorie](engineering-versions-product-category.md). Chcete-li zjistit, jaké zásady platí pro vydaný produkt, systém zkontroluje pole **Zásady připravenosti produktu** pro související technickou kategorii. Zásadu připravenosti pro existující produkt můžete změnit úpravou související technické kategorie (nikoli sdíleného produktu).
+- Když je funkce *Kontroly připravenosti produktu* *zapnuta*, přidá pole **Zásady připravenosti produktu** na stránku **Produkt** (kde jsou nastaveny sdílené produkty) a na stránku **Uvolněný produkt** (kde je hodnota jen pro čtení a je převzata ze souvisejícího sdíleného produktu). Systém najde zásadu připravenosti na vydaný produkt kontrolou souvisejícího sdíleného produktu. Když k vytvoření nového technického produktu použijete technickou kategorii, systém vytvoří sdílený produkt i uvolněný produkt a zkopíruje libovolné nastavení **Zásady připravenosti produktu** pro technickou kategorii do nového sdíleného produktu. Zásadu připravenosti pro existující produkt můžete potom změnit úpravou souvisejícího sdíleného produktu (nikoli uvolněné technické kategorie).
+
+Pokud chcete ke sdílenému produktu přiřadit zásady připravenosti, postupujte takto.
+
+1. Přejděte na **Informace o produktech \> Produkty \> Produkty**.
+1. Otevřete nebo vytvořte produkt, kterému chcete přiřadit zásadu připravenosti.
+1. Na pevné záložce **Obecné** nastavte pole **Zásady připravenosti produktu** na název zásady, která by se měla vztahovat na produkt.
+
+Pokud chcete k technické kategorii přiřadit zásady připravenosti, postupujte takto.
+
+1. Jděte na **Správa technických změn \> Nastavení \> Podrobnosti kategorie technického produktu**.
+1. Otevřete nebo vytvořte technickou kategorii, kterému chcete přiřadit zásadu připravenosti.
+1. Na pevné záložce **Zásady připravenosti produktu** nastavte pole **Zásady připravenosti produktu** na název zásady, která by se měla vztahovat na technickou kategorii.
+
+<a name="standard-products"></a>
+
+## <a name="readiness-checks-on-standard-products"></a>Kontroly připravenosti standardních produktů
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Můžete povolit kontroly připravenosti produktu pro standardní (jiné než technické) produkty zapnutím funkce *Kontroly připravenosti produktu* ve Správě funkcí. Tato funkce provádí několik malých změn v systému kontroly připravenosti, aby podporovala standardní produkty.
+
+### <a name="enable-readiness-checks-on-standard-products"></a>Povolit kontroly připravenosti standardních produktů
+
+Chcete-li systému umožnit provádět kontroly připravenosti standardních produktů, postupujte takto.
+
+- Povolte správu technických změn ve vašem systému, jak je popsáno v [Přehledu správy technických změn](product-engineering-overview.md).
+- Použijte [Správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí funkce, která je pojmenována *Kontroly připravenosti produktu*.
+
+<!-- KFM: This section requires confirmation before publishing
+
+### How readiness checks are created for standard products
+
+When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
+
+- Readiness checks are created for the released product, according to the applicable policy.
+- The released product is blocked from being used until all checks are marked as completed.
+
+If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
+
+- Readiness checks are created for the released product, according to the applicable policy.
+- The released product is blocked from being used until all checks are marked as completed.
+
+For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
+
+-->
+
+### <a name="create-readiness-policies-for-standard-products"></a>Vytvořte zásady připravenosti pro standardní produkty
+
+Zásady připravenosti pro standardní produkty vytváříte stejně jako pro technické produkty. Viz dřívější informace v tomto tématu.
+
+### <a name="assign-readiness-policies-to-standard-products"></a>Přiřaďte zásady připravenosti pro standardní produkty
+
+Chcete-li přiřadit zásadu připravenosti ke standardnímu produktu, otevřete související sdílený produkt a nastavte pole **Zásady připravenosti produktu** na název zásady, která by měla platit. Další informace viz sekce [Přiřaďte zásady připravenosti standardním a technickým produktům](#assign-policy) dříve v tomto tématu.
+
+### <a name="view-and-process-readiness-checks-on-standard-products"></a>Zobrazit a zpracovat kontroly připravenosti standardních produktů
+
+Když je tato funkce zapnutá, prohlížíte a zpracováváte kontroly připravenosti standardních produktů stejně jako u technických produktů. Viz dřívější informace v tomto tématu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

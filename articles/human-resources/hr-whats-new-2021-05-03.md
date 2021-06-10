@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 944d5794bb535faa18b4f2de8b5382ebfb9bc2ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 4fd0d0d39d19634498f9313aeda4143f9ec81e8f
+ms.sourcegitcommit: f3c28f57d997e824a64485d9a4ce8f198e3bcf23
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022056"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059622"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 3. května 2021
 
@@ -72,7 +71,6 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 | Funkce | Podrobnosti |
 | --- | --- |
-| Dovednosti zadané manažery pro své zaměstnance lze automaticky schválit pomocí pracovního postupu | Již brzy. |
 | Platform update 10.0.18 (42) | Aktualizace platformy 10.0.18 je naplánována na zavedení se servisním vydáním 17. května 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.18 aplikací Finance and Operations (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Podpora vlastních polí v pravidlech nároku ve správě výhod  | [Vlastní podpora pole pro zpracování způsobilosti](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 

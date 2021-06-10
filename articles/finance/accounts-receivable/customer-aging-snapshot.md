@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039920"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123355"
 ---
 # <a name="customer-aging-snapshots"></a>Snímky sledování splatnosti odběratele 
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039920"
 Toto téma obsahuje informace o časových snímcích zákazníka. Snímek sledování splatnosti vypočítá časové zůstatky skupiny zákazníků v jednom bodu v čase. Můžete vytvořit záznamy snímků sledování splatnosti buď pro všechny zákazníky nebo pro zákazníky ve fondu zákazníků.
 
 Informace ze snímku sledování splatnosti se zobrazují na stránce se seznamem **Splatné zůstatky** a na stránce **Inkasa**. Je třeba snímek sledování splatnosti vytvořit před použitím stránky seznamu **Splatné zůstatky**. Na stránce se zobrazují informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti.
+
+Pracovní prostor **Úvěr a kolekce zákazníků** také ukazuje sledování splatnosti zákazníka. Další informace viz [Správa úvěrů a inkas obsahu Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Chcete-li zkrátit čas potřebný k vytvoření snímku sledování splatnosti, zapněte funkci **Vylepšení výkonu sledování splatnosti zákazníků** v pracovním prostoru **Správa funkcí**. Když je tato funkce zapnutá, nepoužívejte fondy zákazníků. Pokud je vybrána skupina zákazníků, funkce nebude fungovat, ale stále můžete vytvořit snímek sledování splatnosti.
@@ -62,4 +64,3 @@ Doporučujeme naplánovat spuštění tohoto procesu v dávce.
 > [!NOTE]
 > Chcete-li pomoci zlepšit dávkový výkon při vytváření snímků sledování splatnosti, zadejte číslo do pole **Maximální počet dávkových úloh** na pevné záložce **Výchozí kolekce** na kartě **Kolekce** stránky **Parametry pohledávek**. V poli **Věkové zůstatky zákazníků** doporučujeme začít s výchozí hodnotou **100** a poté hodnotu upravit tak, aby optimalizovala zpracování pro vaši situaci.
 
-Pracovní prostor **Úvěr a kolekce zákazníků** také ukazuje sledování splatnosti zákazníka. Další informace viz [Správa úvěrů a inkas obsahu Power BI](credit-collections-power-bi.md).

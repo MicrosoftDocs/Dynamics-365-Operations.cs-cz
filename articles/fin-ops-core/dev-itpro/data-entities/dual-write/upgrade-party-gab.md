@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018305"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112666"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -22,28 +22,29 @@ ms.locfileid: "6018305"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[Šablona Azure Data Factory](https://aka.ms/dual-write-gab-adf) vám pomůže upgradovat stávající data tabulek **Účet**, **Kontakt** a **Prodejce** v duálním zápisu na model strany a globálního adresáře. Šablona odsouhlasí data z aplikací Finance and Operations i aplikací pro zapojení zákazníků. Na konci procesu budou pole **Strana** a **Kontakt** záznamy **Strana** vytvořeny a přidruženy k záznamům **Účet**, **Kontakt** a **Prodejce** v aplikacích pro zapojení zákazníků. Soubor CSV (`FONewParty.csv`) je generován k vytvoření nových záznamů **Strana** uvnitř aplikace Finance and Operations. Toto téma obsahuje pokyny k použití šablony Data Factory a upgradu dat.
+[Šablona Microsoft Azure Data Factory](https://aka.ms/dual-write-gab-adf) vám pomůže upgradovat stávající data tabulek **Účet**, **Kontakt** a **Prodejce** v duálním zápisu na model strany a globálního adresáře. Šablona odsouhlasí data z aplikací Finance and Operations i aplikací Customer Engagement. Na konci procesu budou pole **Strana** a **Kontakt** záznamy **Strana** vytvořeny a přidruženy k záznamům **Účet**, **Kontakt** a **Prodejce** v aplikacích pro zapojení zákazníků. Soubor CSV (`FONewParty.csv`) je generován k vytvoření nových záznamů **Strana** uvnitř aplikace Finance and Operations. Toto téma obsahuje pokyny k použití šablony Data Factory a upgradu dat.
 
 Pokud nemáte žádná přizpůsobení, můžete použít šablonu tak, jak je. Pokud máte přizpůsobení pro **Účet**, **Kontakt** a **Prodejce**, pak musíte šablonu upravit pomocí následujících pokynů.
 
-> [!Note]
-> Šablona pomáhá upgradovat pouze data **Strana**. V budoucím vydání budou zahrnuty poštovní a elektronické adresy.
+> [!NOTE]
+> Šablona upgraduje pouze data **Strana**. V budoucím vydání budou zahrnuty poštovní a elektronické adresy.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Jsou zapotřebí následující předpoklady:
+K upgradu na model Strana a Globální adresář jsou vyžadovány následující předpoklady:
 
 + [Předplatné Azure](https://portal.azure.com/)
 + [Přístup k šabloně](https://aka.ms/dual-write-gab-adf)
-+ Jste stávajícím zákazníkem se dvěma zápisy.
++ Musíte být stávajícím zákazníkem se dvěma zápisy.
 
 ## <a name="prepare-for-the-upgrade"></a>Příprava na upgrade
+K přípravě na upgrade jsou potřeba následující aktivity:
 
-+ **Plně synchronizované**: Obě prostředí jsou plně synchronizovaná pro **Účet (zákazník)**, **Kontakt** a **Prodejce**.
++ **Plně synchronizované**: Obě prostředí jsou v plně synchronizovaném stavu pro **Účet (zákazník)**, **Kontakt** a **Prodejce**.
 + **Integrační klíče**: Tabulky **Účet (zákazník)**, **Kontakt** a **Prodejce** v aplikacích pro zapojení zákazníků používají integrační klíče, které byly dodány ihned po vybalení. Pokud jste přizpůsobili integrační klíče, musíte přizpůsobit šablonu.
 + **Číslo strany**: Všechny záznamy **Účet (zákazník)**, **Kontakt** a **Prodejce**, které budou upgradovány, mají číslo **Strana**. Záznamy bez čísla **Strana** budou ignorovány. Chcete-li tyto záznamy upgradovat, přidejte k nim číslo **Strana**, než zahájíte proces upgradu.
-+ **Výpadek systému**: Během procesu upgradu budete muset přepnout prostředí Finance and Operations i prostředí zapojení zákazníků offline.
-+ **Snímek** : Pořiďte snímky aplikací Finance and Operations i zapojení zákazníků. Pokud potřebujete, použijte snímky k obnovení předchozího stavu.
++ **Výpadek systému**: Během procesu upgradu budete muset přepnout prostředí Finance and Operations Customer Engagement offline.
++ **Snímek**: Pořiďte snímky aplikací Finance and Operations i Customer Engagement. Pokud potřebujete, použijte snímky k obnovení předchozího stavu.
 
 ## <a name="deployment"></a>Nasazení
 
@@ -78,15 +79,19 @@ Jsou zapotřebí následující předpoklady:
     Service_properties_type Properties_tenant propojené s FO | Zadejte údaje o klientovi (název domény nebo ID tenanta), pod kterými se vaše aplikace nachází.
     Id prostředku Service_properties_type Properties_aad propojené s FO | `https://sampledynamics.sandboxoperationsdynamics.com`
     Id objektu zabezpečení Service_properties_type Properties_service propojené s FO | Zadejte ID klienta aplikace.
-    Dynamics Crm spojené Service_properties_type Properties_username | Uživatelské jméno pro připojení k Dynamics.
+    Dynamics Crm spojené Service_properties_type Properties_username | Uživatelské jméno pro připojení k Dynamics 365.
 
-    Další informace viz [Ruční propagace šablony Resource Manageru pro každé prostředí](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Vlastnosti propojené služby](/azure/data-factory/connector-dynamics-ax#linked-service-properties) a [Kopírování dat pomocí Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Další informace naleznete v následujících tématech: 
+    
+    - [Ručně propagujte šablonu Resource Manageru pro každé prostředí](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Vlastnosti propojené služby](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Zkopírujte data pomocí Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Po nasazení ověřte datové sady, tok dat a propojenou službu datové továrny.
 
    ![Datové sady, tok dat a propojená služba](media/data-factory-validate.png)
 
-11. Přejděte na **Spravovat**. V části **Připojení** vyberte **Propojená služba**. Vyberte **DynamicsCrmLinkedService**. Ve formuláři **Upravit propojenou službu (Dynamics CRM)** zadejte následující hodnoty:
+11. Přejděte na **Spravovat**. V části **Připojení** vyberte **Propojená služba**. Vyberte **DynamicsCrmLinkedService**. Ve formuláři **Upravit propojenou službu (Dynamics CRM)** zadejte následující hodnoty.
 
     Pole | Hodnota
     ---|---
@@ -102,7 +107,7 @@ Jsou zapotřebí následující předpoklady:
 
 ## <a name="run-the-template"></a>Spusťte šablonu
 
-1. Zastavte následující dvojitý zápis **Účet**, **Kontakt** a **Prodejce** pomocí aplikace Finance and Operations.
+1. Zastavte následující mapy dvojitého zápisu **Účet**, **Kontakt** a **Prodejce** pomocí aplikace Finance and Operations.
 
     + Zákazníci V3 (accounts)
     + Zákazníci V3(kontakty)
@@ -157,7 +162,7 @@ Jsou zapotřebí následující předpoklady:
 8. Importujte nové záznamy **Strana** v aplikaci Finance and Operations.
 
     + Stáhněte si soubor `FONewParty.csv` z úložiště Azure blob. Cesta je `partybootstrapping/output/FONewParty.csv`.
-    + Převeďte soubor `FONewParty.csv` do souboru Excel a importujte soubor Excel do souboru aplikace Finance and Operations.  Pokud vám csv import vyhovuje, můžete soubor csv importovat přímo. Import může trvat několik hodin, v závislosti na objemu dat. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
+    + Převeďte soubor `FONewParty.csv` do souboru Excel a importujte soubor Excel do souboru aplikace Finance and Operations. Pokud vám csv import vyhovuje, můžete soubor csv importovat přímo. Import může trvat několik hodin, v závislosti na objemu dat. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
 
     ![Importování záznamů strany Datavers](media/data-factory-import-party.png)
 
@@ -189,7 +194,7 @@ Jsou zapotřebí následující předpoklady:
 
 ## <a name="troubleshooting"></a>Řešení potíží
 
-1. V procesu selže, spusťte znovu továrnu dat počínaje neúspěšnou aktivitou.
+1. Pokud proces selže, spusťte znovu továrnu dat počínaje neúspěšnou aktivitou.
 2. Některé soubory generuje datová továrna, kterou můžete použít pro účely ověření dat.
 3. Datová továrna běží na základě souborů CSV, které jsou odděleny čárkami. Pokud existuje hodnota pole s čárkou, může to ovlivnit výsledky. Musíte odstranit čárky.
 4. Karta **Monitorování** poskytuje informace o všech krocích a zpracovaných datech. Vyberte konkrétní krok k ladění.
@@ -198,4 +203,4 @@ Jsou zapotřebí následující předpoklady:
 
 ## <a name="learn-more-about-the-template"></a>Další informace o šabloně
 
-Komentáře k šabloně najdete v souboru [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+Další informace o šabloně najdete v [Komentářích k readme šablony Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

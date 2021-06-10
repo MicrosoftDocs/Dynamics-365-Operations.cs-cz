@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d6e5725255c43b808d656a46cbcdeca4d200b768
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 3509763c03ecc0e847c72828d14b172401df75b0
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920150"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115138"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Technické verze a kategorie technických produktů
 
@@ -48,7 +48,8 @@ Když používáte technické produkty, každý produkt má alespoň jednu techn
 - Technická společnost, která produkt vytvořila a vlastní (Další informace viz [Technické společnosti a pravidla vlastnictví dat](engineering-org-data-ownership-rules.md) .)
 - Související technické dokumenty, jako je montážní příručka, uživatelské pokyny, obrázky a odkazy
 - Technické atributy (Další informace viz [Technické atributy a vyhledávání technických atributů](engineering-attributes-and-search.md) .)
-- Technické kusovníky
+- Kusovník (BOM) pro strojírenské výrobky
+- Vzorce pro produkty výrobního procesu
 - Technické postupy
 
 Tato data můžete aktualizovat na existující verzi nebo vytvořit novou verzi pomocí *příkazu k technické změně*. (Další informace viz [Správa změn technických produktů](engineering-change-management.md).) Pokud vytvoříte novou verzi produktu, systém zkopíruje všechna technická data do této nové verze. Poté můžete upravit data pro tuto novou verzi. Tímto způsobem můžete sledovat konkrétní data pro každou následující verzi. Chcete-li porovnat rozdíly mezi po sobě následujícími technickými verzemi, zkontrolujte příkaz k technické změně, který zahrnuje typy změn označují všechny změny.
@@ -110,6 +111,8 @@ Na záložce s náhledem **Podrobnosti** kategorie technického produktu nastavt
 | Pole | popis |
 |---|---|
 | Typ produktu | Vyberte, zda se kategorie vztahuje na produkty nebo služby. |
+| Typ výroby | Toto pole se zobrazí, pouze pokud jste povolili [řízení změn receptur](manage-formula-changes.md) ve vašem systému. Vyberte typ výroby, pro který platí tato kategorie strojírenských produktů:<ul><li>**Položka plánování** - Pomocí této technické kategorie můžete provádět správu změn vzorců pro položky plánování. Položky plánování používají receptury. Podobají se položkám receptur, ale používají se k výrobě pouze souběžných produktů a vedlejších produktů, nikoli hotových produktů. Vzorce se používají při výrobním procesu.</li><li>**Kusovník** - Tuto kategorii strojírenství použijte ke správě strojírenských produktů, které nepoužívají vzorce a obvykle (ale nemusí) zahrnovat kusovníky.</li><li>**Vzorec** - Pomocí této technické kategorie můžete provádět správu změn vzorců pro dokončené produkty. Tyto položky budou mít recepturu, ale nikoli kusovník. Vzorce se používají při výrobním procesu.</li></ul> |
+| Skutečná hmotnost | Tato možnost se zobrazí, pouze pokud jste povolili [řízení změn vzorců](manage-formula-changes.md) ve vašem systému. Je k dispozici pouze v případě, že je pole **Typ výroby** nastaveno na *Položka plánování* nebo *Vzorec*. Tuto možnost nastavte na *Ano*, pokud tuto strojírenskou kategorii použijete ke správě položek, které vyžadují podporu hmotnosti. |
 | Sledování verzí v transakcích | Vyberte, zda má být verze produktu vyznačena u všech transakcí (logistický dopad). Pokud například sledujete verzi v transakcích, každá prodejní objednávka zobrazí, která konkrétní verze produktu byla v dané prodejní objednávce prodána. Pokud nesledujete verzi v transakcích, prodejní objednávky nezobrazí, která konkrétní verze byla prodána. Místo toho vždy zobrazují nejnovější verzi.<ul><li>Pokud je tato možnost nastavena na *Ano*, je pro produkt vytvořen základní produkt a každá verze produktu bude variantou, která používá dimenzi produktu *verze*. Pole **Podtyp produktu** je automaticky nastaveno na *Základní produkt* v poli **Skupina dimenze produktu** a musíte vybrat skupinu dimenzí produktu, kde je dimenze *verze* je aktivní. Zobrazí se pouze skupiny dimenzí produktů, kde *verze* je aktivní dimenzí. Nové skupiny dimenzí produktů můžete vytvořit výběrem tlačítka **Upravit** (symbol tužky).</li><li>Pokud je tato možnost nastavena na *Ne*, dimenze produktu *verze* nebude použita. Poté můžete vybrat, zda chcete vytvořit produkt nebo základní produkt, který používá ostatní dimenze.</li></ul><p>Tato možnost se často používá u produktů, které mají rozdíl nákladů mezi verzemi, nebo u produktů, kde platí různé podmínky ve vztahu k zákazníkovi. Proto je důležité určit, která verze byla použita v každé transakci.</p> |
 | Podtyp produktu | Vyberte, zda bude kategorie obsahovat produkty nebo základní produkty. U hlavních produktů se použijí dimenze produktu.
 | Skupina dimenzí produktů | Nastavení **Sledování verzí v transakcích** vám pomůže vybrat skupinu dimenze produktu. Pokud jste určili, že chcete sledovat verzi v transakcích, zobrazí se skupiny dimenzí produktu, kde *verze* se používá dimenze. V opačném případě se zobrazí pouze skupiny dimenzí produktů, kde dimenze *verze* se nepoužívá. |
@@ -139,7 +142,10 @@ Pro každý řádek, který přidáte do mřížky, nastavte následující pole
 
 ### <a name="readiness-policy-fasttab"></a>Záložka s náhledem Zásady připravenosti
 
-Použijte pole **Zásady připravenosti produktu** a vyberte zásadu připravenosti, která se vztahuje na produkty patřící do této kategorie. Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).
+Použijte pole **Zásady připravenosti produktu** a vyberte zásadu připravenosti, která by se měly vztahovat na produkty, které jsou vytvářeny na základě strojírenské kategorie. Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).
+
+> [!NOTE]
+> Pole **Zásady připravenosti produktu** funguje trochu jinak, pokud jste zapnuli funkci *Kontroly připravenosti produktu* ve vašem systému. (Tato funkce umožňuje použít zásady připravenosti na standardní \[nestrojírenské\] produkty). Další informace viz [Přiřaďte zásady připravenosti standardním a strojírenským produktům](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Záložka s náhledem Zásady uvolnění
 

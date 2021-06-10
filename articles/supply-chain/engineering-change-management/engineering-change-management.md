@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954638"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114992"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -92,9 +92,13 @@ Tento seznam slouží pouze pro informaci. Proto můžete přidat tolik souvisej
 
 Pevná záložka **Zdroj** umožňuje sledovat počáteční bod požadavku na změnu. To je užitečné, pokud například chcete zjistit, zda byl požadavek na změnu vytvořen z prodejní objednávky, kdo ji vytvořil a ve které společnosti byl vytvořen.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Vyhodnoťte obchodní dopad požadavku na změnu
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Vyhodnoťte obchodní dopad požadavku na změnu a odešlete oznámení
 
-Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto způsobem můžete posoudit dopad požadované změny na otevřené transakce, jako jsou prodejní objednávky, výrobní objednávky a okamžité zásoby.
+Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto způsobem můžete posoudit dopad požadované změny na otevřené transakce, jako jsou prodejní objednávky, výrobní objednávky a okamžité zásoby. Při kontrole žádostí o změnu můžete zasílat oznámení lidem, kteří jsou odpovědní za plnění různých typů souvisejících objednávek.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Zkontrolujte ovlivněné transakce, zablokujte vybrané transakce a odešlete oznámení
+
+Chcete-li zkontrolovat ovlivněné transakce, zablokovat vybrané transakce a odeslat oznámení, postupujte následovně.
 
 1. Přejděte na **Správa technických změn \> Společné \> Správa technických změn \> Požadavky na technickou změnu**.
 1. Otevřete existující požadavek na změnu nebo vyberte **Nový** v podokně akcí a vytvořte nový požadavek na změnu.
@@ -103,7 +107,30 @@ Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto 
     - **Vyhledávání** - Naskenuje všechny otevřené transakce a poté otevře dialogové okno **Dopad podnikání na otevřené transakce**, kde je uveden seznam všech transakcí, které budou změnou ovlivněny.
     - **Zobrazit předchozí vyhledávání** - Otevře dialogové okno **Dopad podnikání na otevřené transakce**, ve kterém je uveden seznam předchozích výsledků vyhledávání. (Nové vyhledávání není provedeno.)
 
-1. Pokud se problém, který vyžaduje změnu, považuje za kritický, můžete blokovat otevřené transakce nebo upozornit odpovědného uživatele pomocí tlačítek na panelu nástrojů v dialogovém okně **Dopad podnikání na otevřené transakce**.
+1. Dialogové okno **Obchodní dopad na otevřené transakce** poskytuje sadu karet, z nichž každá zobrazuje seznam ovlivněných transakcí konkrétního typu (**Prodejní objednávky**, **Nákupní objednávky**, **Výrobní zakázky**, **Zásoby** a tak dále). Každá karta také zobrazuje číslo, které udává počet ovlivněných transakcí daného typu. Vyberte kartu pro zobrazení příslušného seznamu.
+1. Chcete-li pracovat s transakcí v seznamu, vyberte ji a poté vyberte jedno z následujících tlačítek na panelu nástrojů:
+
+    - **Zobrazit transakci** - Otevřete záznam vybrané transakce.
+    - **Blokovat objednávku** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej, chcete-li blokovat vybranou prodejní objednávku.
+    - **Blokovat řádek** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej, chcete-li blokovat vybraný řádek nákupní objednávky.
+    - **Upozornit odpovědného** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou zakázku odběratele.
+    - **Upozornit objednavatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako objednavatel vybrané nákupní objednávky.
+    - **Oznámit výrobu** - Toto tlačítko je k dispozici pouze na kartě **Výrobní zakázky**. Na rozdíl od prodejních objednávek a nákupních objednávek nemají výrobní objednávky jediného uživatele, který je nastaven jako odpovědný od začátku do konce. Místo toho obvykle přebírají vlastnictví různí vedoucí nebo plánovači pro konkrétní web nebo pro konkrétní část produkce (například pro konkrétní zdroje nebo skupiny prostředků). Proto když vyberete toto tlačítko, všichni uživatelé, kteří jsou zodpovědní za jakýkoli prostředek, který souvisí s vybranou výrobní zakázkou, obdrží oznámení o změně.
+    - **Upozornit pořizovatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní žádanka**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako pořizovatel vybrané nákupní žádanky.
+    - **Upozornit odpovědného za prodej** - Toto tlačítko je k dispozici pouze na kartě **Nabídky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou nabídku.
+    - **Likvidace** - Toto tlačítko je k dispozici pouze na kartě **Zásoby**. Vyberte jej, chcete-li vybrané zásoby zlikvidovat.
+    - **Zobrazit historii** - Otevřete historii akcí, které byly provedeny u vybrané transakce pomocí dialogového okna **Obchodní dopad na otevřené transakce**. (Například historie ukazuje, zda byla zaslána oznámení nebo byly blokovány transakce.) 
+    - **Zobrazit všechny transakce** - Otevřete úplný seznam všech transakcí, nejen otevřených transakcí.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>Zkontrolujte a zpracovejte oznámení o změně transakcí
+
+Oznámení o změnách, která obdržíte, si můžete přečíst a zpracovat následujícími způsoby:
+
+- S výjimkou případu výrobních zakázek se oznámení změn pro transakce, za které zodpovídáte, zobrazí v centru akcí. Tlačítko **Zobrazit zprávy** (symbol zvonku) na pravé straně navigační lišty označuje, kdy je pro vás k dispozici zpráva z centra akcí. Můžete tlačítkem **Zobrazit zprávy** otevřít centrum akcí a zkontrolovat zprávy.
+- Chcete-li zobrazit všechny výrobní zakázky, pro které bylo zasláno technické oznámení, přejděte na **Výrobní zakázky \> Výrobní zakázky \> Všechny výrobní zakázky**. Poté v podokně akcí na kartě **Výrobní zakázka** ve skupině **Požadavek na technickou změnu** výběrem možnosti **Technická oznámení** otevřete stránku **Technická oznámení**.
+- U výrobních zakázek můžete zkontrolovat pouze oznámení o změně, která se vztahují na produkční prostředky, které spravujete. V pracovním prostoru **Správa výrobního provozu**, v podokně akcí vyberte **Konfigurovat můj pracovní prostor**, chcete-li filtrovat stránku tak, aby zobrazovala pouze informace o výrobních jednotkách, skupinách nebo prostředcích, které spravujete. V sekci **Souhrn** dlaždice s názvem **Výrobní zakázky se změněnými produkty** zobrazuje počet oznámení, která odpovídají vašemu nastavení filtru. Vyberte tuto dlaždici a otevřete stránku **Technická oznámení**, která zobrazuje úplný seznam transakcí, které splňují kritéria vašeho filtru.
+
+Při kontrole oznámení výrobní zakázky na stránce **Technická oznámení** můžete sledovat odkazy na související objednávky změn nebo výrobní zakázky výběrem hodnot sloupců nebo pomocí souvisejících příkazů v podokně akcí. Po dokončení vyhodnocení změny a poté, co jste podle potřeby zrušili nebo upravili výrobní zakázky, můžete označit oznámení jako vyřešené. Vyberte oznámení a poté v podokně akcí vyberte **Vyřešit**. Oznámení je odebráno ze zobrazení všech uživatelů.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Vytvoření změnového příkazu z požadavku na změnu
 

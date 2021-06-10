@@ -2,13 +2,12 @@
 title: Konfigurace pravidel a možností nároků
 description: Nastavte pravidla a možnosti nároků ve správě zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5ad568d2e1dd14acdfb3848cace035abfc0507
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791501"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093913"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace pravidel a možností nároků
 
@@ -39,9 +38,9 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
 
 2. Na kartě **pravidla nároku** vyberte možnost **Nové** a vytvořte pravidlo nároku. Chcete-li zobrazit plány, které jsou přidruženy k pravidlu nároku, vyberte možnost **Připojené plány**.
 
-3. Zadejte hodnoty pro zbývající pole:
+3. Zadejte hodnoty pro zbývající pole.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
    | **Pravidlo způsobilosti** | Jedinečný identifikátor pravidla nároku. |
    | **Popis** | Popis pravidla nároku. |
@@ -57,9 +56,9 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Období registrace** | Časové období, kdy je povolena registrace nově přijatého zaměstnance. Pokud tuto hodnotu nastavíte také v parametrech, nastavení parametrů bude mít přednost před tímto nastavením. |
    | **Použít bývalý stav zaměstnání** | Určuje, zda má být v rámci pravidla nároku na zaměstnanecké výhody použit předchozí stav zaměstnání zaměstnance. Můžete například zadat pravidlo způsobilosti, které odchýlí dobu čekání disponibility pro všechny zaměstnance, kteří přešli ze stavu **Propuštěn** na stav **Zaměstnán** do 90 dnů od jejich předchozího zaměstnání. |
 
-4. V části **Další kritéria** vyberte následující možnosti a podle potřeby přidejte informace:
+4. V části **Další kritéria** vyberte následující možnosti a podle potřeby přidejte informace.
 
-   | Parametr | Popis |
+   | Parametr | popis |
    | --- | --- |
    | **Způsobilý věk** | Určuje rozsah nebo rozsahy, které jsou požadovány pro splnění pravidla způsobilosti. |
    | **Způsobilé oddělení** | Určuje oddělení, v němž musí zaměstnanec být, aby splnil pravidlo způsobilosti. |
@@ -68,7 +67,7 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Způsobilá pracovní funkce** | Určuje pracovní funkci nebo funkce, které splňují pravidlo způsobilosti. Například pracovníci prodeje nebo technici. |
    | **Typ způsobilé práce** | Určuje typ nebo typy úlohy, které splňují pravidlo způsobilosti. Například administrativní nebo vedoucí. |
    | **Způsobilá právnická osoba** | Určuje právnickou osobu nebo právnické osoby, které jsou platné pro pravidlo způsobilosti. Například Contoso Entertainment System USA. |
-   | **Oblast způsobilá ke kompenzaci** | Určuje umístění zaměstnance, které splňuje pravidlo způsobilosti. Například zadejte central US. |
+   | **Způsobilá oblast kompenzace** | Určuje umístění zaměstnance, které splňuje pravidlo způsobilosti. Například zadejte central US. |
    | **Způsobilá pozice** | Určuje pozici nebo pozice, které splňují pravidlo způsobilosti. Například personální asistent nebo manažer HR |
    | **Způsobilý typ pozice** | Určuje typ nebo typy pozice, které splňují pravidlo způsobilosti. Například celý úvazek. |
    | **Způsobilý stav** | Určuje státy nebo provincie, které splňují pravidlo způsobilosti. Například Severní Dakota USA nebo Britská Kolumbie, Kanada. |
@@ -76,17 +75,83 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Způsobilý odbor** | Určuje členství v odborech, která splňují pravidlo způsobilosti. Například řidiči vysokozdvižného vozíku v Americe. </br></br>Použijete-li pravidlo způsobilosti založené na sjednocení, musí se v záznamu sjednocení pracovníka naplnit koncové datum. Nemůžete je nechat prázdné. |
    | **Oprávněné PSČ** | Určuje úlohu nebo úlohy, které splňují pravidlo způsobilosti. Například 58104. |
 
-5. V části **Další podrobnosti** můžete zobrazit následující další podrobnosti:
+5. V části **Další podrobnosti** můžete zobrazit následující další podrobnosti.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
    | **Pole způsobilého uživatele** | Určuje další pravidla způsobilosti založená na polích definovaných odběratelem. |
    | **Typ způsobilosti** | Určuje kategorii kritérií, kterou jste vybrali v části **Další kritéria**. |
    | **Odkaz na způsobilost** | Určuje hodnoty, které jste vybrali v části **Další kritéria**. |
    | **Popis** | Popis, který jste vybrali v části **Další kritéria**. |
 
-6. Zvolte **Uložit**.
+6. Zvolte možnost **Uložit**.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Použití vlastních polí v pravidlech způsobilosti
+
+[Vlastní pole](hr-developer-custom-fields.md) lze vytvořit v rámci Human Resources ke sledování dalších informací. Tato pole lze přidat přímo do uživatelského rozhraní a sloupec se dynamicky přidá do podkladové tabulky.  
+
+V procesu způsobilosti lze použít vlastní pole. Pravidla způsobilosti mohou k určení způsobilosti zaměstnance použít jednu nebo více hodnot vlastních polí.  Chcete-li přidat vlastní pole do existujícího pravidla nebo vytvořit nové pravidlo, přejděte na **Správa zaměstnaneckých výhod > Odkazy > Nastavení > Pravidla způsobilosti > Způsobilost vlastního pole**. Na této stránce můžete vytvořit pravidlo, které používá jedno nebo více vlastních polí, a můžete definovat více hodnot pro každé vlastní pole k určení způsobilosti.
+
+Následující tabulky podporují vlastní pole, která lze použít při zpracování způsobilosti:
+
+- Pracovník (HcmWorker)  
+- Úloha (HcmJob)  
+- Pozice (HcmPosition)  
+- Detail pozice (HcmPositionDetail)  
+- Přiřazení pracovníka k pozici  
+- Zaměstnání (HcmEmployment)  
+- EmploymentDetails (HcmEmploymentDetails)  
+- Podrobnosti úlohy (HcmJobDetails)  
+
+Následující typy vlastních polí jsou podporovány při zpracování způsobilosti:
+
+- Text  
+- Rozevírací seznam  
+- Počet  
+- Des. místo  
+- Zaškrtávací políčko  
+
+V následující tabulce jsou uvedeny informace o poli vlastního formuláře způsobilosti pole.
+
+| Pole  | popis |
+|--------|-------------|
+| Jméno | Název vytvářeného kritéria. |
+| Název tabulky | Název tabulky obsahující vlastní pole, které se používá pro pravidlo nároků. |
+| Název pole | Pole, které bude použito pro pravidlo nároků. |
+| Typ operátora | Zobrazí operátor použitý v konfiguraci nároků vlastního pole. |
+| Hodnota | Zobrazí hodnotu použitou v konfiguraci nároků vlastního pole. |
+
+## <a name="eligibility-logic"></a>Logika nároků
+
+Následující části popisují, jak jsou zpracovány nároky na zaměstnanecké výhody.
+
+### <a name="rules-assigned-to-a-plan"></a>Pravidla přiřazená k plánu 
+Pokud je plánu zaměstnaneckých výhod přiděleno více pravidel nároků, musí zaměstnanec splnit alespoň jedno pravidlo, aby se mohl zaregistrovat do plánu výhod.  V následujícím příkladu musí zaměstnanec splnit požadavky pravidla **Typu práce** nebo pravidla **Aktivní zaměstnanci**.
+
+![Zaměstnanec může splnit požadavky pravidla Typu práce nebo pravidla Aktivní zaměstnanci.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Kritéria v rámci pravidla nároků 
+V pravidle definujete kritéria, která tvoří pravidlo. Ve výše uvedeném příkladu jsou kritéria pro pravidlo **Typ práce** je místo, kde Typ úlohy = Ředitelé. Zaměstnanec proto musí být ředitelem, aby byl způsobilý. Toto je pravidlo, kde je v pravidle pouze jedno kritérium.
+
+Můžete definovat pravidla, která mají více kritérií. Když definujete více kritérií v rámci pravidla nároků, musí zaměstnanec splnit všechna kritéria v rámci pravidla, aby měl nárok na plán výhod. 
+
+Například výše uvedené pravidlo **Aktivní zaměstnanci** se skládá z následujících kritérií. Aby měl zaměstnanec nárok na základě pravidla **Aktivní zaměstnanci**, musí být zaměstnanec zaměstnán v právnické osobě USMF *a* mít typ pozice na plný úvazek.  
+
+![Kritéria v rámci pravidla nároků](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Více podmínek v rámci kritérií
+
+Pravidla lze dále rozšířit tak, aby používala více podmínek v rámci jednoho kritéria. Zaměstnanec musí splňovat alespoň jednu podmínku, aby měl nárok. Chcete-li navázat na výše uvedený příklad, pravidlo **Aktivní zaměstnanci** lze dále rozšířit o zaměstnance, kteří jsou také zaměstnanci na částečný úvazek. Výsledkem je, že zaměstnanec musí být zaměstnancem v USMF *a* zaměstnanec na plný nebo částečný úvazek.  
+
+![Více podmínek v rámci kritérií](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Podmínky nároků v rámci vlastního kritéria pole 
+Podobně jako výše, vlastní pole lze použít při vytváření pravidel nároků a pracovat stejným způsobem. Můžete například nabídnout náhradu za internet zaměstnancům ve Fargu a Kodani, kteří pracují z domova, protože v těchto lokalitách jsou náklady na internet vyšší. Chcete-li to provést, vytvořte dvě vlastní pole: **Umístění kanceláře** (výběr) a **Práce z domova** (zaškrtávací políčko). Poté vytvořte pravidlo s názvem **Zaměstnanci WFH**. Kritériem pravidla je **Umístění kanceláře = Fargo** nebo **Kodaň** *a* **Práce z domova = Ano**.
+
+Je třeba nastavit vlastní pravidla nároků, jak je uvedeno na následujícím obrázku. 
+
+![Podmínky nároků v rámci vlastního kritéria pole](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Konfigurace svazků
 
 Sady jsou sada souvisejících plánů zaměstnaneckých výhod. Sady zaměstnaneckých výhod lze použít k seskupení plánů zaměstnaneckých výhod, které musí zaměstnanec vybrat, aby bylo možné provést registraci v určitých plánech zaměstnaneckých výhod, které mohou být závislé na registraci plánu zaměstnaneckých výhod. Příklady použití svazku:
@@ -99,11 +164,11 @@ Sady jsou sada souvisejících plánů zaměstnaneckých výhod. Sady zaměstnan
 
 2. Na kartě **Svazky** vyberte možnost **Nový** a vytvořte svazek. Chcete-li zobrazit plány, které jsou přidruženy ke svazku, vyberte možnost **Připojené plány**.
 
-3. Zadejte hodnoty pro zbývající pole:
+3. Zadejte hodnoty pro zbývající pole.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
-   | **Sada** | Jedinečný identifikátor svazku. |
+   | **Skupina** | Jedinečný identifikátor svazku. |
    | **Popis** | Popis svazku. |
    | **Mistr** | Určuje, zda musí být jeden z plánů ve svazku označen jako hlavní plán. Hlavní plán musí být vybrán během otevřené registrace jako součást svazku, než může správce zaměstnaneckých výhod potvrdit volby zaměstnaneckých výhod. |
    | **Platnost do data a času** | Datum a čas, od kterého je svazek aktivní. |
@@ -119,9 +184,9 @@ Období definují, kdy jsou zaměstnanecké výhody v platnosti a kdy se mohou z
 
 2. Na kartě **Období** vyberte možnost **Nový** a vytvořte období. Chcete-li spustit proces, který připojí všechny platné plány zaměstnaneckých výhod k období zaměstnanecké výhody, **Připojit plány**. Chcete-li zobrazit plány, které jsou přidruženy ke svazku, vyberte možnost **Připojené plány**. 
 
-3. Zadejte hodnoty pro zbývající pole:
+3. Zadejte hodnoty pro zbývající pole.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
    | **Období** | Jedinečný identifikátor pro období. |
    | **Platnost do data a času** | Počáteční datum a čas, kdy je období zaměstnanecké výhody aktivní. |
@@ -141,9 +206,9 @@ Programy pružného kreditu umožňují registrovat zaměstnance k zaměstnaneck
 
 2. Na kartě **Období** vyberte **Programy flexibilního kreditu**.
 
-3. Vyberte program flexibilního kreditu, který chcete použít. Pole obsahují následující informace:
+3. Vyberte program flexibilního kreditu, který chcete použít. Pole obsahují následující informace.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
    | ID kreditu zaměstnaneckých výhod | Jedinečný identifikátor programu pro pružné kredity |
    | Popis | Popis programu pro pružné kredity. | 
@@ -163,9 +228,9 @@ Programy jsou sadou plánů zaměstnaneckých výhod, které sdílejí společno
 
 2. Na kartě **Programy** vyberte možnost **Nový** a vytvořte program. Chcete-li vytvořit výjimky pro zaměstnance, kteří nesplňují požadavky pravidla způsobilosti, vyberte **Přepis pravidla způsobilosti**. Chcete-li zobrazit plány, které jsou přidruženy k programu, vyberte možnost **Připojené plány**.
 
-3. Zadejte hodnoty pro zbývající pole:
+3. Zadejte hodnoty pro zbývající pole.
 
-   | Pole | Popis |
+   | Pole | popis |
    | --- | --- |
    | **Program** | Jedinečný identifikátor pro program. |
    | **Popis** | Popis programu. | 

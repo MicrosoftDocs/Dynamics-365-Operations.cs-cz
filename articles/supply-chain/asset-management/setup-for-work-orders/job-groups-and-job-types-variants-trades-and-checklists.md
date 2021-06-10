@@ -1,5 +1,5 @@
 ---
-title: Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
+title: Typy úloh údržby, kategorie, varianty, obchody a kontrolní seznamy
 description: Tohle téma popisuje kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby ve Správě majetku.
 author: johanhoffmann
 ms.date: 08/13/2019
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb73fb36ee31d93b2121437d57d959ba6c01a337
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842266"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117076"
 ---
-# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
+# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Typy úloh údržby, kategorie, varianty, obchody a kontrolní seznamy
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Typ majetku je připojen ke každému majetku. Typy majetku definují typy práce údržby (a tudíž i práce údržby), které lze provést na majetku. Při vytvoření pracovního příkazu musíte vybrat typ práce údržby. Můžete vybrat pouze typy prací údržby, které souvisí s nastavením typu majetku použitém pro daný majetek.
 

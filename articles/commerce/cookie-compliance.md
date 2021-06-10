@@ -2,7 +2,7 @@
 title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908177"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088380"
 ---
 # <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
 
@@ -52,8 +52,7 @@ Následující tabulka ukazuje aktuální referenční seznam souborů cookie, k
 | x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. |
 | \_msdyn365___muid_                            | Používá se, pokud je pro prostředí aktivováno experimentování; využíváno jako ID uživatele pro experimentální účely. |
 | \_msdyn365___exp_                             | Používá se, pokud je pro prostředí aktivováno experimentování; slouží k měření vyvažování zatížení výkonu.         |
-
-
+| d365mkt                                       | Používá se, pokud je v nástroji pro tvorbu webu Commerce povolena detekce založená na poloze ke sledování adresy IP uživatele pro návrhy umístění obchodu **Nastavení webu > Obecné > Povolit zjišťování obchodů na základě polohy**.      |
 
 Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, soubory cookie v následující tabulce budou sledovány také v jeho prohlížeči.
 
