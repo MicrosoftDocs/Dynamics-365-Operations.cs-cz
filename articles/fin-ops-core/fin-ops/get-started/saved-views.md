@@ -2,7 +2,7 @@
 title: Uložená zobrazení
 description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744608"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050549"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -126,17 +126,26 @@ Zobrazení publikujete takto.
 5. **Aktualizace 10.0.17 nebo novější:** Pokud je zapnutá funkce **(Náhled) Podpora překladů pro organizační zobrazení**, můžete přidat překlady pro název vašeho zobrazení v tolika jazycích, kolik vyžaduje vaše organizace, výběrem tlačítka **Překlady** vedle pole **Název**. Název zobrazení se poté ukáže uživatelům v jejich aktuálním jazyce. Můžete také nastavit výchozí jazyk a určit překlad, který se zobrazí uživatelům, kteří používají jazyky, pro které není definován žádný překlad.
 5. Volitelné: Zadejte popis zobrazení, aby uživatelé, kteří obdrží toto zobrazení, lépe porozuměli jeho účelu. 
 6. Určete, zda má být zobrazení publikováno jako výchozí zobrazení pro vybrané uživatele. Když zobrazení nastavíte jako výchozí, zobrazí se uživatelům při dalším otevření cílové stránky. Jednotné globální výchozí zobrazení každého cílového uživatele se změní. Po publikování však uživatelé mohou změnit své výchozí zobrazení.
-7. Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno. 
-8. Zjistěte, zda chcete publikovat zobrazení do podřízených rolí každé vybrané role zabezpečení. Pokud tak učiníte, zaškrtněte políčko **Zahrnout podřízené role** v řádku pro příslušné role zabezpečení. Toto políčko není k dispozici pro role, které nemají podřízené role.
-9. Přidejte právnické osoby, pro které má být toto zobrazení k dispozici. 
-10. Zvolte **Publikovat**.
+
+    > [!NOTE]
+    > Při publikování zobrazení jako výchozího zobrazení mějte na paměti následující: 
+    > -  Pokud publikujete zobrazení jako výchozí zobrazení pro všechny nebo některé právnické osoby, změníte jediné, **globální** výchozí zobrazení každého cíleného uživatele. 
+    > -  Pokud má uživatel role, ve kterých je jako výchozí zobrazení publikováno více zobrazení, použije se jako výchozí zobrazení uživatele poslední publikované zobrazení. 
+
+8. Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno. 
+9. Zjistěte, zda chcete publikovat zobrazení do podřízených rolí každé vybrané role zabezpečení. Pokud tak učiníte, zaškrtněte políčko **Zahrnout podřízené role** v řádku pro příslušné role zabezpečení. Toto políčko není k dispozici pro role, které nemají podřízené role.
+10. Přidejte právnické osoby, pro které má být toto zobrazení k dispozici. 
+
+    > [!NOTE]
+    > Při publikování zobrazení právnické osobě mějte na paměti následující očekávání.
+    > 
+    > Pokud publikujete zobrazení na právnickou osobu, ale nezveřejníte ho jako výchozí, zobrazí se uživatelům ve výběrovém zobrazení pouze pro vybrané právnické osoby. Po prvním načtení zobrazení však bude vždy ve výběru uživatele pro danou stránku, bez ohledu na právnickou osobu.
+
+11. Zvolte **Publikovat**.
 
 Všimněte si, že v některých prostředích může tato doba trvat dlouho (až hodinu), než uživatelé uvidí publikované zobrazení.
 
-> [!NOTE]
-> Při publikování zobrazení právnické osobě nebo při publikování zobrazení jako výchozího zobrazení si uvědomte následující očekávání.
-> - Pokud publikujete zobrazení jako výchozí zobrazení pro všechny nebo některé právnické osoby, změníte jediné, globální výchozí zobrazení každého cíleného uživatele. Pokud má uživatel role, ve kterých je jako výchozí zobrazení publikováno více zobrazení, použije se jako výchozí zobrazení uživatele poslední publikované zobrazení. 
-> - Pokud publikujete zobrazení na právnickou osobu, ale nezveřejníte ho jako výchozí, zobrazí se uživatelům ve výběrovém zobrazení pouze pro vybrané právnické osoby. Po prvním načtení zobrazení však bude vždy ve výběru uživatele pro danou stránku, bez ohledu na právnickou osobu. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Úprava publikovaného zobrazení
 

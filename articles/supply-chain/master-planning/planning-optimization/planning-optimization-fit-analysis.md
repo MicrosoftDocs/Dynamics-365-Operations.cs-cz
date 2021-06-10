@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812972"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049429"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -89,13 +89,13 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Výrobní | Plány včetně pořadí: _\#_ | Tato funkce čeká na implementaci. V současnosti je pořadí ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Říjen 2021 - duben 2022 |
 | Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: _\#_ | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | Říjen 2021 - duben 2022 |
 | Výrobní | Zdroje naplánované s omezenou kapacitou: _\#_ | Tato funkce čeká na implementaci. Zdroje, které jsou naplánovány s omezenou kapacitou, jsou aktuálně ignorovány, pokud je povolena optimalizace plánování. Plánování je provedeno na základě výchozí doby realizace produktu. | Nekonečný: červen 2021, konečný: říjen 2021 |
-| Výrobní | Postupy používané při plánování: _\#_ | Tato funkce čeká na implementaci. V současné době jsou postupy ignorovány, pokud je povolena optimalizace plánování. Použije se výchozí doba realizace z produktu. | 2021. června |
+| Výrobní | Postupy používané při plánování: _\#_ | Tato funkce čeká na implementaci. V současné době jsou postupy ignorovány, pokud je povolena optimalizace plánování. Použije se výchozí doba realizace z produktu. | Červenec 2021 |
 | Výrobní | Rezervace řádku prodeje pomocí rozpadu: _\#_ | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | 2021. říjen |
 | Výrobní | Plánování s rozpadem výrobních zakázek: _\#_ | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | 2021. říjen |
 | Požadavek na nabídky | Hlavní plány s povolenými požadavky na nabídku: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou požadavky na nabídku (RFQ) považovány za poptávku v případě, že je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Říjen 2021 - duben 2022 |
 | Žádanky | Hlavní plány s povolenými žádankami: _\#_ | Tato funkce je nyní podporována. Další informace naleznete v tématu [Nákupní žádanky](purchase-requisitions.md) | Podporováno |
-| Pojistné doby | Skupiny disponibility s pojistnou dobou: _\#_ | Tato funkce je nyní částečně podporována. Další informace viz [Pojistné doby](safety-margins.md) | Marže účtenky: Podporováno. Změna pořadí a emisní marže: duben 2021 |
-| Pojistné doby | Hlavní plány s pojistnou dobou: _\#_ | Tato funkce je nyní částečně podporována. Další informace viz [Pojistné doby](safety-margins.md) | Marže účtenky: Podporováno. Změna pořadí a emisní marže: duben 2021 |
+| Pojistné doby | Skupiny disponibility s pojistnou dobou: _\#_ | Tato funkce je nyní částečně podporována. Další informace viz [Pojistné doby](safety-margins.md) | Marže účtenky: Podporováno. Změna pořadí a rezerva výdeje: duben 2021 - říjen 2021 |
+| Pojistné doby | Hlavní plány s pojistnou dobou: _\#_ | Tato funkce je nyní částečně podporována. Další informace viz [Pojistné doby](safety-margins.md) | Marže účtenky: Podporováno. Změna pořadí a rezerva výdeje: duben 2021 - říjen 2021 |
 | Plnění rezervních zásob | Záznamy disponibility položky s hodnotou „splnit minimum“ se liší od „dnešní datum a čas pořízení“: _\#_ | Optimalizace plánování vždy používá *dnešní datum a čas pořízení*. Tato změna je provedena kvůli přípravě na zjednodušené nastavení plánování v budoucnu a k zajištění výsledku s akcemi. Není-li k dispozici doba pořízení pro pojistnou zásobu, plánované objednávky, které jsou vytvořeny pro aktuální nízké zásoby na skladě, budou vždy zpožděny kvůli době realizace. Toto chování může způsobit výrazný nedostatek informací a nežádoucí plánované objednávky. Doporučeným postupem je změna nastavení tak, aby bylo použito *dnešní datum a čas pořízení*. Aktualizujte hlavní data, abyste se vyhnuli varování. | Nevztahuje se |
 | Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Říjen 2021 - duben 2022 |
 | Skladovatelnost | Hlavní plány s povolenou skladovatelností: _\#_ | Tato funkce čeká na implementaci. V současnosti není skladovatelnost brána v potaz, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | 2021. říjen |
