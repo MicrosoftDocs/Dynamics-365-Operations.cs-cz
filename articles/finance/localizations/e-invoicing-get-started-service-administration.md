@@ -2,7 +2,7 @@
 title: Začínáme se správou služby Elektronické fakturace
 description: Toto téma poskytuje informace, jak začít s Elektronickou fakturací.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980968"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092399"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Začínáme se správou služby Elektronické fakturace
 
@@ -44,18 +44,14 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Nainstalujte doplněk pro mikroslužby ve službě Lifecycle Services
 
-1. Přihlaste se k účtu LCS.
-2. Vyberte dlaždici **Náhled správy funkcí**.
-3. V části **Funkce Public Preview** vyberte **Elektronická fakturace**.
-4. Ujistěte se, zda je možnost **Funkce Preview zapnuta** nastavena na hodnotu **Ano**.
-5. Na řídicím panelu projektu LCS vyberte svůj projekt nasazení LCS.
-6. V projektu LCS vyberte na řídicím panelu prostředí LCS svůj projekt nasazení LCS. Projekt nasazení LCS musí být spuštěný.
-7. Na kartě **Integrace Power Platform** ve skupině polí **Doplňky prostředí** vyberte **Instalovat nový doplněk**.
-8. Vyberte **Nastavení elektronické fakturace**.
-9. V poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Toto je pevná hodnota.
-10. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure.
-11. Zkontrolujte smluvní podmínky a poté zaškrtněte políčko.
-12. Vyberte **Instalovat**.
+1. Přihlaste se do svého účtu LCS a na řídicím panelu projektů LCS vyberte projekt LCS.
+2. V projektu vyberte na řídicím panelu prostředí svůj projekt nasazení LCS. Vybraný projekt musí být spuštěn.
+3. Na kartě **Integrace Power Platform** ve skupině polí **Doplňky prostředí** vyberte **Instalovat nový doplněk**.
+4. Vyberte **Nastavení elektronické fakturace**.
+5. V poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Toto je pevná hodnota.
+6. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure.
+7. Zkontrolujte smluvní podmínky a poté zaškrtněte políčko.
+8. Vyberte **Instalovat**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Nastavení parametrů pro integraci RCS s Elektronickou fakturací

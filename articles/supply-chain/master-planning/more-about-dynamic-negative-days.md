@@ -1,27 +1,21 @@
 ---
 title: Záporné dny a dynamické záporné dny
 description: Toto téma obsahuje informace o záporných dnech a dynamických záporných dnech a o tom, jak je lze použít k usnadnění vašeho podnikání.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907734"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097227"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Záporné dny a dynamické záporné dny
 
@@ -45,7 +39,7 @@ Poptávku můžete dostat buď relativně brzy v době realizace položky nebo t
 - Položka DemoProduct má 6denní období realizace.
 - V den nula (1. ledna) je úroveň zásob pro položku DemoProduct 0 (nula).
 - V den nula (1. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
-- V den sedm (7. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
+- V den sedm (8. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
@@ -112,7 +106,7 @@ V průběhu doby realizace položky můžete obdržet poptávku. Zde je příkla
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
-![Grafické zobrazení scénáře 1](./media/negative-days-8.png)
+![Grafické zobrazení scénáře 2](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
@@ -157,7 +151,7 @@ Můžete dostat poptávku po období realizace položky. Zde je příklad tohoto
 - Položka DemoProduct má 6denní období realizace.
 - V den nula (1. ledna) jsou zásoby pro položku DemoProduct 0 (nula).
 - V den sedm (8. ledna), který spadá mimo dobu realizace položky, získáte prodejní objednávku na množství 10 položky DemoProduct.
-- V den 10 (11. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
+- V den deset (11. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
@@ -219,8 +213,8 @@ Záporné dny můžete chtít nastavit na dlouhou ochrannou dobu a poté pracova
 - Položka DemoProduct má 6denní období realizace.
 - V den nula (1. ledna) jsou zásoby pro položku DemoProduct 0 (nula).
 - V den nula (1. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
-- V den 10 (10. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
-- V den 12 (12. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
+- V den devět (10. ledna) dostanete prodejní objednávku na množství 10 položky DemoProduct.
+- V den jedenáct (12. ledna) existuje nákupní objednávka na množství 10 položky DemoProduct.
 - Záporné dny jsou nastaveny na **20**, což je mnohem více, než doba realizace položky.
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane.
@@ -229,7 +223,7 @@ Následující obrázek znázorňuje grafické zobrazení toho, co se stane.
 
 MRP vytváří následující výsledky.
 
-![Výsledky](./media/negative-days-20.png)
+![Příklad výsledků 1](./media/negative-days-20.png)
 
 Na předchozím snímku obrazovky je datum požadavku prodejní objednávky 9. ledna namísto 10. ledna. Vzhledem k tomu, že snímek obrazovky byl pořízený v roce 2015, kdy 10. ledna byla sobota, datum požadavku objednávky by mělo být předchozí pracovní den, což byl pátek 9. ledna.
 
@@ -239,7 +233,7 @@ Výsledky nejsou nesprávné, ale operační doba pro MRP může být delší, p
 
 Pokud snížíte záporné dny na číslo, které je bližší k době realizace položky, a použijete dynamické záporné dny, vytvoří modul MRP následující výsledky.
 
-![Výsledky](./media/negative-days-21.png)
+![Příklad výsledků 2](./media/negative-days-21.png)
 
 MRP vytvoří plánovanou objednávku, která je připojena k první prodejní objednávce. Poté bude podle očekávání druhá prodejní objednávka navázána proti existující nákupní objednávce na základě nastavení záporných dnů. Tento výsledek plánování je také správný a operační doba pro MRP může být kratší. V takovém případě není důležité chápat a vědět, jak pracovat se zprávami akce.
 

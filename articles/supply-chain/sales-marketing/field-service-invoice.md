@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f3066741781bd9058e09d7f577a35df4c9b453d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819201"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102727"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synchronizace smluvních faktur v Field Service na volné textové faktury v Supply Chain Management
 
@@ -100,11 +100,11 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Smluvní faktury (Field Service do Supply Chain Management): záhlaví faktur
 
-[![Mapování šablony v integraci dat](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Mapování šablon v integraci dat pro záhlaví faktur](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Smluvní faktury (Field Service do Supply Chain Management): řádky faktur
 
-[![Mapování šablony v integraci dat](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Mapování šablon v integraci dat pro řádky faktur](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

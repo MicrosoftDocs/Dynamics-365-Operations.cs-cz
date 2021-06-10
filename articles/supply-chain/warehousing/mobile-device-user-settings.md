@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 77b4276cec5e046a19d6d001acf41fc410052fba
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837458"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049285"
 ---
 # <a name="mobile-device-user-settings"></a>Uživatelská nastavení mobilního zařízení
 
@@ -94,3 +94,8 @@ Podle těchto pokynů můžete vytvořit a spravovat značky a modely svých mob
 
     - **ID modelu zařízení** - ID modelu zařízení, například *Surface Book 2*.
     - **Popis** - Můžete zadat popis, který vám pomůže rozlišit ID modelů.
+
+## <a name="additional-resources"></a>Další prostředky
+
+- [Instalace a připojení mobilní aplikace Řízení skladu](install-configure-warehouse-management-app.md)
+- [Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management](step-icons-titles.md)

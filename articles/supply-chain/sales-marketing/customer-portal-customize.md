@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908993"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102680"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
@@ -82,7 +82,7 @@ Zde jsou standardní kroky pro odeslání objednávky ze zákaznického portálu
 1. Po dokončení přidávání položek vyberte **Další** na stránce **Položky**.
 1. Stránka **Informace o objednávce** obsahuje shrnutí objednávky. Zkontrolujte obsah objednávky a podrobnosti o doručení. Pokud vše vypadá správně, vyberte **Odeslat** k odeslání objednávky.
 
-    ![Stránka s informacemi o objednávce](media/customer-portal-order-submit.png "Stránka s informacemi o objednávce")
+    ![Stránka s informacemi o dokončené objednávce](media/customer-portal-order-submit.png "Stránka s informacemi o dokončené objednávce")
 
 ### <a name="standard-data-setup"></a>Standardní nastavení dat
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814819"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102991"
 ---
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
@@ -168,7 +168,7 @@ Chcete-li nakonfigurovat systém tak, aby jasně rozlišoval standardní pracovn
 
 Na stránce **Parametry výpočtu** vyberte **Přesčas** jako typ specifikace profilu a nastavte možnost **Placený čas** na **Ne**, jak je uvedeno v tomto poli.
 
-| Reg. určení | Typ specifikace profilu | Výpočet   |     | Placeno         |     |
+| Reg. určení | Typ specifikace profilu | Výpočet   | Nastavení | Placeno         | Nastavení |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Prac. doba       | Přesčas                   | Standardní čas | Ano | Placený čas     | Žádný  |
 |                    |                            | Placený čas      | Ano | Placený přesčas | Ano |
@@ -559,7 +559,7 @@ Naopak pokud není zaškrtnuto zaškrtávací políčko **Odečíst přesčas** 
 
 Následující příklad ukazuje, jak lze snížit účet pružné pracovní doby pracovníka převodem doby absence na dobu Flex-.
 
-Pracovník označí čas příchodu v 7:00 a čas odchodu v 13:00. Dohodla se se svým vedoucím, že může jít domů na víkend, pokud odečte tyto hodiny ze svého účtu pružné pracovní doby. Když pracovník označí odchod v 13:00, bude vyzván k výběru kódu absence, protože doba absence pro zbývající část pracovního dne, která je ovlivněna, není plánovanou pružnou pracovní dobou Flex-. Pokud chcete převést zbývající část pracovního dne na pružnou pracovní dobu Flex-, pracovník může vybrat kód absence, nastavený ke snížení účtu pružné pracovní doby.
+Pracovník označí čas příchodu v 7:00 a čas odchodu v 13:00. Pracovník má dohodu, že může jít na víkend domů, pokud si tyto hodiny odečte z účtu flex. Když pracovník označí odchod v 13:00, bude vyzván k výběru kódu absence, protože doba absence pro zbývající část pracovního dne, která je ovlivněna, není plánovanou pružnou pracovní dobou Flex-. Pokud chcete převést zbývající část pracovního dne na pružnou pracovní dobu Flex-, pracovník může vybrat kód absence, nastavený ke snížení účtu pružné pracovní doby.
 
 Chcete-li snížit zůstatek pružné pracovní doby pro pracovníky, kteří budou registrovat absenci v pracovní den, vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí** a zvolte zaškrtávací políčko **Snížit pružnou pracovní dobu**.
 

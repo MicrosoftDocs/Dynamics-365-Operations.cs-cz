@@ -2,7 +2,7 @@
 title: Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 description: Toto téma vysvětluje, jak konfigurovat Elektronickou fakturaci v Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897713"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075136"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 
@@ -194,6 +194,8 @@ Následující seznamy ukazují konfigurace formátu ER, které jsou k dispozici
 
 - Prodejní faktura (ES)
 - Projektová faktura (ES)
+
+Kromě konfigurací formátu ER, které jsou k dispozici ihned pro použití ve službě elektronické fakturace, můžete také vytvořit své vlastní konfigurace formátu ER. Konfigurace formátu, které jsou vytvořeny pro použití s funkcemi elektronické fakturace, však nepodporují přímý odkaz na tabulky Finance nebo Supply Chain Management nebo žádným z odpovídajících metadat. Podporovány jsou pouze odkazy na mapování modelu ER.
 
 ### <a name="actions"></a>Akce
 

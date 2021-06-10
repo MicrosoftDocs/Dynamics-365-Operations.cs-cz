@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832963"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088458"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Podpora duální měny pro DPH
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Další informace o duální měně naleznete v [Duální měně](dual-currency.
 V důsledku podpory duálních měn jsou v modulu Správa funkcí k dispozici dvě nové funkce: 
 
 - Převod DPH (novinka ve verzi 10.0.13)
+- Zadejte finanční dimenze do realizovaných účtů zisků / ztrát úpravy měny pro zúčtování DPH (nové ve verzi 10.0.17)
 
-Podpora dvojí měny pro DPH zajišťuje, že daně budou vypočítány přesně v měně daně a že zůstatek vyrovnání DPH je vypočítán přesně v zúčtovací měně i v měně vykazování. 
+Podpora dvojí měny pro DPH zajišťuje, že daně budou vypočítány přesně v měně daně a že zůstatek vyrovnání DPH je vypočítán přesně v zúčtovací měně i v měně vykazování.
 
 ## <a name="sales-tax-conversion"></a>Převod DPH
 
@@ -88,6 +89,10 @@ Tato funkce bude použita pouze pro nové transakce. V případě daňové trans
 
 Chcete-li zabránit předchozímu scénáři, doporučujeme změnit hodnotu tohoto parametru v novém (čistém) období vyrovnání daně, které neobsahuje žádné transakce nevyrovnané daně. Chcete-li tuto hodnotu změnit uprostřed období daňového vyrovnání, spusťte před změnou hodnoty tohoto parametru program "Vyrovnat a zaúčtovat DPH" pro období aktuálního vyrovnání.
 
+Tato funkce přidá účetní položky, které objasňují zisky a ztráty ze směnných kurzů. Záznamy budou provedeny na účtech realizovaných zisků a ztrát s množstvím úprav měny, když se provede přecenění během vyrovnání DPH. Další informace viz [Automatický zůstatek vypořádání daně v měně vykazování](#tax-settlement-auto-balance-in-reporting-currency) dále v tomto tématu.
+
+> [!NOTE]
+> Během vypořádání jsou informace o finančních dimenzích převzaty z účtů DPH, což jsou účty rozvahy, a zadány do účtů zisků a ztrát s množstvím úpravy měny, což jsou účty výkazu zisků a ztrát. Protože omezení hodnoty finančních dimenzí se liší mezi účty rozvahy a účty výkazu zisku a ztráty, může během procesu vypořádání a zaúčtování DPH dojít k chybě. Chcete-li se vyhnout nutnosti upravovat struktury účtů, můžete zapnout funkci „Vyplnit finanční dimenze do realizovaných účtů zisků / ztrát z vyrovnání měny pro zúčtování DPH“. Tato funkce vynutí odvození finančních dimenzí na účty zisků / ztrát s úpravou měny. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Sledovat částku daně v měně vykazování
 
@@ -114,7 +119,7 @@ Chcete-li předvést tuto funkci pomocí předchozího příkladu, Předpokláde
 | Zúčtovací měna             | 100                        | 111                       | 83                       | **83.25**          |
 | Měna pro vykazování              | 100                        | 111                       | 83                       | **83**             |
 
-Při spuštění programu vyrovnání DPH na konci měsíce bude účetní položka vypadat takto:.
+Při spuštění programu vyrovnání DPH na konci měsíce bude účetní položka vypadat takto.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Scénář: převod DPH = "zúčtovací měna"
 
 | Hlavní účet           | Měna transakce (GBP) | Zúčtovací měna (USD) | Měna vykazování (GBP) |

@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82104e401f21c459081f48a5d1f9a0a264288106
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c6e329c2219c57f83ef02f9fa224bcac84fb83fa
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794822"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055453"
 ---
 # <a name="create-a-goal"></a>Vytvoření cíle
 
@@ -29,8 +28,8 @@ Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a
 
 1. Přejděte na Všechny pracovní prostory > Samoobsluha pro zaměstnance.
 2. Klikněte na Zobrazit všechny cíle.
-3. Klikněte na položku Nová.
-4. Do pole Název zadejte Dokončení projektu Contoso.
+3. Klikněte na možnost Nový.
+4. Do pole Název zadejte 'Dokončení projektu Contoso'.
 5. V poli Přehled zadejte "Dokončím projekt Contoso během 30 dnů".
     * Cíle lze použít pro jednotlivce, tým nebo dokonce podnik. Ve výchozím nastavení mají cíle pro zaměstnance hodnotu Samostatné.  
 6. V poli Kategorie cíle zadejte nebo vyberte hodnotu.
