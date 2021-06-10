@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,35 +14,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 26a228229a09e74809a048675a3ff90025f2a26c
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 73c8910900ba6486a8e60a547b07ea0c82a6cb10
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892220"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053340"
 ---
-# <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a><span data-ttu-id="d56a5-103">Nelze vytvořit prostředí v centru pro správu Power Apps</span><span class="sxs-lookup"><span data-stu-id="d56a5-103">Can't create an environment in the Power Apps Admin center</span></span>
+# <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a><span data-ttu-id="373c9-103">Nelze vytvořit prostředí v centru pro správu Power Apps</span><span class="sxs-lookup"><span data-stu-id="373c9-103">Can't create an environment in the Power Apps Admin center</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="d56a5-104">**Vydání**</span><span class="sxs-lookup"><span data-stu-id="d56a5-104">**Issue**</span></span>
+<span data-ttu-id="373c9-104">**Vydání**</span><span class="sxs-lookup"><span data-stu-id="373c9-104">**Issue**</span></span>
 
-- <span data-ttu-id="d56a5-105">Správce klienta/prostředí nemůže vytvořit prostředí v centru pro správu Microsoft Power Apps.</span><span class="sxs-lookup"><span data-stu-id="d56a5-105">The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.</span></span>
-- <span data-ttu-id="d56a5-106">Uživatel nemá licenci, která dává právo vytvářet prostředí.</span><span class="sxs-lookup"><span data-stu-id="d56a5-106">The user doesn't have a license that gives the right to create environments.</span></span>
+- <span data-ttu-id="373c9-105">Správce klienta/prostředí nemůže vytvořit prostředí v centru pro správu Microsoft Power Apps.</span><span class="sxs-lookup"><span data-stu-id="373c9-105">The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.</span></span>
+- <span data-ttu-id="373c9-106">Uživatel nemá licenci, která dává právo vytvářet prostředí.</span><span class="sxs-lookup"><span data-stu-id="373c9-106">The user doesn't have a license that gives the right to create environments.</span></span>
 
-<span data-ttu-id="d56a5-107">**Řešení**</span><span class="sxs-lookup"><span data-stu-id="d56a5-107">**Solution**</span></span>
+<span data-ttu-id="373c9-107">**Řešení**</span><span class="sxs-lookup"><span data-stu-id="373c9-107">**Solution**</span></span>
 
-<span data-ttu-id="d56a5-108">Ujistěte se, že správce tenanta přidělil platnou licenci Power Apps P2 pro uživatele vytvářejícího prostředí.</span><span class="sxs-lookup"><span data-stu-id="d56a5-108">Make sure the tenant admin has assigned a valid Power Apps P2 license to the user creating the environment.</span></span> <span data-ttu-id="d56a5-109">Následující plány služeb Microsoft Dynamics poskytují oprávnění k vytváření prostředí:</span><span class="sxs-lookup"><span data-stu-id="d56a5-109">The following Microsoft Dynamics service plans provide permissions to create environments:</span></span>
+<span data-ttu-id="373c9-108">Ujistěte se, že správce tenanta přidělil platnou licenci Power Apps P2 pro uživatele vytvářejícího prostředí.</span><span class="sxs-lookup"><span data-stu-id="373c9-108">Make sure the tenant admin has assigned a valid Power Apps P2 license to the user creating the environment.</span></span> <span data-ttu-id="373c9-109">Následující plány služeb Microsoft Dynamics poskytují oprávnění k vytváření prostředí:</span><span class="sxs-lookup"><span data-stu-id="373c9-109">The following Microsoft Dynamics service plans provide permissions to create environments:</span></span>
 
-| <span data-ttu-id="d56a5-110">Celkové skladová jednotka zásob produktu (SKU)</span><span class="sxs-lookup"><span data-stu-id="d56a5-110">Overall product stockkeeping unit (SKU)</span></span>       | <span data-ttu-id="d56a5-111">Servisní plán Power Apps P2</span><span class="sxs-lookup"><span data-stu-id="d56a5-111">Power Apps P2 service plan</span></span>  |
+| <span data-ttu-id="373c9-110">Celkové skladová jednotka zásob produktu (SKU)</span><span class="sxs-lookup"><span data-stu-id="373c9-110">Overall product stockkeeping unit (SKU)</span></span>       | <span data-ttu-id="373c9-111">Servisní plán Power Apps P2</span><span class="sxs-lookup"><span data-stu-id="373c9-111">Power Apps P2 service plan</span></span>  |
 |------------------------------------------------|----------------------------|
-| <span data-ttu-id="d56a5-112">Microsoft Dynamics 365 for Operations</span><span class="sxs-lookup"><span data-stu-id="d56a5-112">Microsoft Dynamics 365 for Operations</span></span>          | <span data-ttu-id="d56a5-113">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d56a5-113">Power Apps for Dynamics 365</span></span> |
-| <span data-ttu-id="d56a5-114">Microsoft Dynamics 365 Plan Enterprise Edition</span><span class="sxs-lookup"><span data-stu-id="d56a5-114">Microsoft Dynamics 365 Plan Enterprise Edition</span></span> | <span data-ttu-id="d56a5-115">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d56a5-115">Power Apps for Dynamics 365</span></span> |
+| <span data-ttu-id="373c9-112">Microsoft Dynamics 365 for Operations</span><span class="sxs-lookup"><span data-stu-id="373c9-112">Microsoft Dynamics 365 for Operations</span></span>          | <span data-ttu-id="373c9-113">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="373c9-113">Power Apps for Dynamics 365</span></span> |
+| <span data-ttu-id="373c9-114">Microsoft Dynamics 365 Plan Enterprise Edition</span><span class="sxs-lookup"><span data-stu-id="373c9-114">Microsoft Dynamics 365 Plan Enterprise Edition</span></span> | <span data-ttu-id="373c9-115">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="373c9-115">Power Apps for Dynamics 365</span></span> |
 
-<span data-ttu-id="d56a5-116">Všimněte si, že různé skladové jednotky aplikace Microsoft Office také poskytují toto právo, společně se samostatnými SKU Power Apps plánu 2.</span><span class="sxs-lookup"><span data-stu-id="d56a5-116">Note that various Microsoft Office SKUs also provide the right, together with standalone Power Apps Plan 2 SKUs.</span></span> <span data-ttu-id="d56a5-117">Důležité je, že jedna z těchto skladových jednotek zásob musí být přítomná.</span><span class="sxs-lookup"><span data-stu-id="d56a5-117">The important point is that one of these SKUs must be present.</span></span>
+<span data-ttu-id="373c9-116">Všimněte si, že různé skladové jednotky aplikace Microsoft Office také poskytují toto právo, společně se samostatnými SKU Power Apps plánu 2.</span><span class="sxs-lookup"><span data-stu-id="373c9-116">Note that various Microsoft Office SKUs also provide the right, together with standalone Power Apps Plan 2 SKUs.</span></span> <span data-ttu-id="373c9-117">Důležité je, že jedna z těchto skladových jednotek zásob musí být přítomná.</span><span class="sxs-lookup"><span data-stu-id="373c9-117">The important point is that one of these SKUs must be present.</span></span>
 
-1. <span data-ttu-id="d56a5-118">Přejděte na [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span><span class="sxs-lookup"><span data-stu-id="d56a5-118">Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span></span>
-2. <span data-ttu-id="d56a5-119">Vytvořte prostředí podle pokynů v části [Zřízení Human Resources](/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="d56a5-119">Create the environments by following the instructions in [Provision Human Resources](/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+1. <span data-ttu-id="373c9-118">Přejděte na [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span><span class="sxs-lookup"><span data-stu-id="373c9-118">Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span></span>
+2. <span data-ttu-id="373c9-119">Vytvořte prostředí podle pokynů v části [Zřízení Human Resources](/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="373c9-119">Create the environments by following the instructions in [Provision Human Resources](/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
