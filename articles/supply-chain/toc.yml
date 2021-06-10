@@ -70,9 +70,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Co je nového a co se změnilo v aplikaci Supply Chain Management
                   items:
-                    - name: Domovská stránka Co je nového a co se změnilo v aplikaci Supply Chain Management
+                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (červenec 2021)
+                    - name: Supply Chain Management 10.0.20 (červenec 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (červen 2021)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (květen 2021)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -266,7 +268,7 @@
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Nastavení prostředí pro vyhledávání hlavních dat
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Povinné aktualizace
+            - name: Aktualizace předpisů
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indie
               items:
@@ -387,11 +389,11 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Nastavení pracovních příkazů
               items:
-                - name: 'Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby'
+                - name: "Typy práce údržby, kategorie, varianty, obchody a\_kontrolní seznamy"
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Stavy životního cyklu pracovního příkazu
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
-                - name: Typy pracovních příkazů
+                - name: Typy pracovního příkazu
                   href: asset-management/setup-for-work-orders/work-order-types.md
                 - name: Nastavení projektu pracovního příkazu
                   href: asset-management/setup-for-work-orders/work-order-project-setup.md
@@ -1369,11 +1371,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatické ověření generovaných sestav
                   items:
-                    - name: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+                    - name: "Trasování výsledků vygenerovaných sestav a\_jejich porovnání se základními hodnotami"
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a porovnání se základními hodnotami
+                    - name: Vylepšení trasování výsledků vygenerovaných elektronických sestav pro porovnání se základními hodnotami
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Automatizace testování s elektronickým výkaznictvím
+                    - name: "Automatizace testování s\_elektronickým výkaznictvím"
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatizace obchodních procesů pomocí konfigurací elektronického výkaznictví
                   items:
@@ -2047,7 +2049,7 @@
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: "Odesílání a\_schvalování revizí projektových rozpočtů"
                   href: procurement/tasks/submit-approve-project-budget-revision.md
-        - name: Řízení informací o produktech
+        - name: "Správa informací o\_produktech"
           items:
             - name: Přehled informací o produktech
               href: pim/product-information.md
@@ -2223,11 +2225,13 @@
               href: engineering-change-management/product-owner.md
             - name: Technické atributy a vyhledávání technických atributů
               href: engineering-change-management/engineering-attributes-and-search.md
-            - name: Technické verze a kategorie technických produktů
+            - name: "Technické verze a\_kategorie technických produktů"
               href: engineering-change-management/engineering-versions-product-category.md
-            - name: Povolit správu změn u stávajících produktů
+            - name: "Správa změn v\_recepturách a\_jejich látkách"
+              href: engineering-change-management/manage-formula-changes.md
+            - name: "Povolení správy změn u\_stávajících produktů"
               href: engineering-change-management/change-management-existing-products.md
-            - name: Stav životního cyklu produktu a transakce
+            - name: "Stav životního cyklu produktu a\_transakce"
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Správa změn technických produktů
               href: engineering-change-management/engineering-change-management.md
@@ -2245,8 +2249,10 @@
               href: production-control/mixed-mode-plan.md
             - name: Správa subdodavatelské práce ve výrobě
               href: production-control/manage-subcontract-work-production.md
-            - name: Sjednocená číselná řady pro ID úloh
+            - name: Sjednocená číselná řada pro ID úloh
               href: production-control/unified-job-ids.md
+            - name: "Vyvolání toků automatizace procesů k\_vytvoření objednávek kvality"
+              href: production-control/process-automation-quality-orders.md
             - name: Diskrétní výroba
               items:
                 - name: Správa hlavních dat výroby
@@ -2333,13 +2339,13 @@
                           href: production-control/production-floor-execution-configure.md
                         - name: Návrh rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-tabs.md
-                        - name: Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
+                        - name: Nastavení zařízení ke spuštění rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-setup.md
                         - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-use.md
-                        - name: Styly ovládacích prvků uživatelského rozhraní pro provádění výrobního provozu
+                        - name: Vytvoření rozhraní pro provádění výrobního provozu
                           href: production-control/production-floor-execution-styles.md
-                    - name: Konfigurovat úkolový lístek pro zařízení
+                    - name: Konfigurace úkolového lístku pro zařízení
                       href: production-control/config-job-card-device.md
                     - name: Ohlášení jako dokončené ze zařízení úkolového lístku
                       href: production-control/report-finished-job-device.md
@@ -3139,13 +3145,13 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurace zásad konsolidace dodávek
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: Scénář 1 - Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
+                    - name: "Scénář 1\_–\_Konsolidace dodávek uvolněných do skladu pomocí automatického uvolnění prodejních objednávek"
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: 'Scénář 2 - Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu'
+                    - name: "Scénář 2\_–\_Konsolidace dodávek, když jsou přepsány zásady konsolidace dodávky"
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: Scénář 3 - Konsolidace dodávek pomocí uvolnění do skladu z pracovní plochy plánování vytížení
+                    - name: "Scénář 3\_–\_Konsolidace dodávek uvolněním do skladu z\_pracovní plochy plánování vytížení"
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
-                    - name: Scénář 4 - Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
+                    - name: "Scénář 4\_–\_Konsolidace dodávek pomocí pracovní plochy konsolidace dodávky"
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
                       href: warehousing/consolidate-shipments-manual-form.md
@@ -3297,13 +3303,15 @@
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Skenování čárových kódů pomocí fotoaparátu v mobilní aplikaci Řízení skladu
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurace polí pro mobilní aplikaci Řízení skladu
+                    - name: Konfigurace polí pro mobilní aplikaci Warehouse Management
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: "Přiřazení ikon a\_názvů kroků"
+                      href: warehousing/step-icons-titles.md
                     - name: Zpracování události aplikace skladu
                       href: warehousing/warehouse-app-events.md
-                    - name: Přijetí registrační značky prostřednictvím mobilní aplikace Řízení skladu
+                    - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3345,7 +3353,7 @@
               items:
                 - name: Chybí nastavení pole při kopírování skupin modelů položek do jiné právnické osoby
                   href: troubleshooting/costing/copying-item-model-groups.md
-                - name: Sestava „Nepřímé náklady v procesu“ zahrnuje odstraněné výrobní zakázky
+                - name: "Sestava Nepřímé náklady v\_procesu zahrnuje odstraněné výrobní zakázky"
                   href: troubleshooting/costing/indirect-costs-in-pr.md
                 - name: "Časové rozlišení nákupu zaúčtováno s\_nulovou částkou pro příjemku produktu s\_nulovou hodnotou"
                   href: troubleshooting/costing/posting-to-purchase.md
@@ -3359,37 +3367,41 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Stornování sestavy jako dokončené vytvoří neočekávanou otevřenou transakci
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: "V\_sestavě výdejky nejde zobrazit nové poznámky připojené k\_deníku"
+                - name: "Sestava výdejky nezobrazuje nové poznámky, které jsou připojeny k\_deníku"
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: "Množství se u\_zahájeného karanténního příkazu při rozdělení objednávky neaktualizuje"
                   href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Pole „Datum posledního testu“ se při vytvoření více objednávek kvality neaktualizuje
+                - name: Pole Datum posledního testu se neaktualizuje po vytvoření více objednávek kvality
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: Při rozdělení množství skutečné hmotnosti se použije minimální množství místo nominálního
+                - name: 'Když je rozděleno množství skutečné hmotnosti, použije se minimální množství místo nominálního'
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Hlavní plánování
               items:
-                - name: "Přímo odvozené potvrzené objednávky jsou zpracovávány v\_rámci workflow kontroly"
+                - name: "Přímo odvozené potvrzené objednávky jsou zpracovávány v\_rámci pracovního postupu kontroly"
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Položky hlavního plánování nemůžete filtrovat podle hodnot souvisejících skupin pokrytí
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Hlavní plánování generuje plánované objednávky pro fiktivní produkty
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: "Plánovaná nákupní objednávka se vytvoří, když existuje nákup v\_záporných dnech"
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Nejde nahrát nákladovou cenu do položek prognózy poptávky
+                - name: Při importu záznamů prognózy poptávky nelze aktualizovat předpokládané jednotkové náklady
                   href: troubleshooting/planning/unable-to-upload-the.md
-                - name: "Nejde odebrat dimenzi prognózy poptávky skladu z\_řádků prognózy"
+                - name: "Nelze odebrat dimenzi prognózy poptávky skladu z\_řádků prognózy"
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: "Zobrazí se výzva k\_uložení nastavení pokrytí položky, přestože jste neprovedli žádné změny"
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Zásobování
               items:
-                - name: Nejde fakturovat zákaznickou prodejní objednávku ve společnosti VEL
+                - name: Prodejní objednávku zákazníka nelze fakturovat
                   href: troubleshooting/procurement/not-able-to-invoice-.md
-                - name: "Po žádosti o\_změnu nejde přidat řádek k\_nákupní žádance"
+                - name: "Po žádosti o\_změnu nelze přidat řádek k\_nákupní žádance"
                   href: troubleshooting/procurement/purchase-requisition.md
-            - name: Řízení informací o produktech
+            - name: "Správa informací o\_produktech"
               items:
-                - name: "Nejde použít šablonu k\_vytvoření vydaného produktu"
+                - name: "Nemůžete použít šablonu k\_vytvoření uvolněného produktu"
                   href: troubleshooting/products/apply-template-in-re.md
-                - name: "Nejde importovat položku pomocí entity Uvolněné produkty\_V2"
+                - name: "Nemůžete importovat zboží použitím entity Uvolněné produkty\_V2"
                   href: troubleshooting/products/cannot-import-with-r.md
                 - name: Nákupní objednávky nezobrazují přeložený text produktu
                   href: troubleshooting/products/when-the-customer-ad.md
@@ -3425,11 +3437,11 @@
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: "Stanice balení nezobrazuje poznámky k\_produktu"
                   href: troubleshooting/warehousing/packing-station-not-.md
-                - name: 'Profil skladového místa nepovoluje negativní zásoby, ale negativní zásoby na skladě povoleny jsou'
+                - name: 'Profil umístění nepovoluje negativní zásoby, ale negativní zásoby na skladě jsou povoleny'
                   href: troubleshooting/warehousing/location-profile-set.md
-                - name: Na jedné příjemce se vytiskne pouze jeden štítek pro několik záhlaví práce
+                - name: Na jedné příjemce je vytištěn pouze jeden štítek pro několik záhlaví práce
                   href: troubleshooting/warehousing/when-receipting-prod.md
-                - name: Dodávku nemůžete potvrdit kvůli problému s kalendářem
+                - name: "Nemůžete potvrdit dodávku kvůli problému s\_kalendářem"
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Zásilku nemůžete potvrdit z důvodu nedokončené nebo chybějící práce
                   href: troubleshooting/warehousing/open-or-no-work-exis.md
@@ -3441,17 +3453,17 @@
                   href: troubleshooting/warehousing/quantity-exceeds-ove.md
                 - name: 'Zásilku nemůžete potvrdit, protože množství přesahuje procento snížení dodávky'
                   href: troubleshooting/warehousing/quantity-exceeds-und.md
-                - name: Poslední uzavřený řádek práce musí být vložení
+                - name: Poslední uzavřený řádek práce musí být opce
                   href: troubleshooting/warehousing/the-last-closed-work.md
                 - name: Pole hmotnosti na řádcích vytížení neodpovídají polím hmotnosti na vytížení
                   href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: Vlna není pro vyčištění způsobilá
+                - name: Vlna není způsobilá pro vyčištění
                   href: troubleshooting/warehousing/wave-is-not-eligible.md
-                - name: Hmotnost musí být kladná.
+                - name: Hmotnost musí být kladná
                   href: troubleshooting/warehousing/weight-must-be-posit.md
                 - name: 'Práci nelze zrušit, protože je blokována'
                   href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
-                - name: Práci nelze zrušit z důvodu stavu
+                - name: "Práci nelze zrušit z\_důvodu stavu"
                   href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
                 - name: Práce není blokována
                   href: troubleshooting/warehousing/work-is-not-blocked.md

@@ -68,10 +68,12 @@
               items:
                 - name: Co je nového a co se změnilo v aplikacích Finance and Operations
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Co je nového a co se změnilo v aplikaci Finance
+                - name: "Co je nového a\_co se změnilo v\_aplikaci Finance"
                   items:
-                    - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
+                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (červenec 2021)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (červenec 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (květen 2021)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Chybějící počáteční zůstatky roční uzávěrky
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: "Otevření šablon finančního deníku v\_aplikaci Office"
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Finanční výkaznictví
           items:
             - name: "Začínáme s\_finančním výkaznictvím"
@@ -1498,19 +1502,29 @@
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
                     - name: Podpora daňových funkcí u převodních příkazů
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: Přidání datových polí v daňových konfiguracích
+                    - name: "Přidání datových polí v\_daňových konfiguracích"
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Přidání datových polí do daňové integrace pomocí rozšíření
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Více registračních čísel pro DPH
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Nastavení prostředí pro vyhledávání hlavních dat
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-            - name: Povinné aktualizace
+                    - name: Více registračních čísel pro DPH
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Vykazování pro více registrací DPH
+                      items:
+                        - name: Vykazování pro více registrací DPH
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Vykazování pro Nizozemsko
+                          items:
+                            - name: "Přiznání k\_DPH"
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: Souhrnné hlášení (EU)
+                              href: localizations/emea-nl-eu-sales-list.md
+            - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
             - name: Austrálie
               items:
-                - name: Austrálie - přehled
+                - name: "Austrálie\_–\_přehled"
                   href: localizations/australia.md
                 - name: Výkaz podnikatelské činnosti (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
@@ -2386,13 +2400,27 @@
                               href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
                             - name: Generování dat sestavy GSTR pro vrácení daně
                               href: localizations/apac-ind-GST-tax-returns.md
-                            - name: Povolení hromadné zpracování pro sestavy GSTR
+                            - name: Povolení dávkového zpracování pro sestavy GSTR
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: "Řešení potíží s\_daní GST"
+                          items:
+                            - name: Nesprávná částka daně po výpočtu
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Chyby konfigurace daně
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Daň není vypočítána
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: 'Aktivace pravidel vyrovnání trvá déle, než se očekávalo'
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans nebo doklad není generován
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: ID daňové transakce je nesprávné
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Přímé daně
                   items:
-                    - name: Indická srážková daň
+                    - name: "Srážková daň v\_Indii"
                       items:
-                        - name: Zahrnutí GST při výpočtu daňových srážek
+                        - name: Zahrnutí daně GST při výpočtu daňových srážek
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: Zahrnutí GST při výpočtu daňových výběrů
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
@@ -2842,11 +2870,15 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Soubor auditu (XML Auditfile Financieel, XAF)'
+                - name: Soubor auditu (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: "Přiznání k\_DPH (Nizozemsko)"
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Souhrnné hlášení (EU)
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norsko
               items:
-                - name: Norsko - přehled
+                - name: "Norsko\_–\_přehled"
                   href: localizations/norway.md
                 - name: "Formáty plateb odběratelů a\_dodavatelů"
                   href: localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -3226,7 +3258,7 @@
                   href: localizations/uae-vat-setup-reporting.md
             - name: Spojené království
               items:
-                - name: Velká Británie - přehled
+                - name: "Spojené království\_–\_přehled"
                   href: localizations/united-kingdom.md
                 - name: Schéma pro obor stavebnictví
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
@@ -4121,11 +4153,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Automatické ověření generovaných sestav
                   items:
-                    - name: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+                    - name: "Trasování výsledků vygenerovaných sestav a\_jejich porovnání se základními hodnotami"
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a porovnání se základními hodnotami
+                    - name: Vylepšení trasování výsledků vygenerovaných elektronických sestav pro porovnání se základními hodnotami
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Automatizace testování s elektronickým výkaznictvím
+                    - name: "Automatizace testování s\_elektronickým výkaznictvím"
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
                 - name: Automatizace obchodních procesů pomocí konfigurací elektronického výkaznictví
                   items:
