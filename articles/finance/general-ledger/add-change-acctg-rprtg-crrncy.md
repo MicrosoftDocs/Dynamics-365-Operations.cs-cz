@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017048"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085467"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Změna zúčtovací měny nebo měny vykazování
 
@@ -30,17 +30,17 @@ Toto téma vysvětluje, jak změnit zúčtovací měnu nebo měnu vykazování n
 
 Chcete změnit zúčtovací měnu nebo měnu vykazování nebo přidat měnu vykazování k nastavení hlavní knihy. K tomu obvykle dochází v následujících scénářích:
 
-- Při nastavení právnické osoby byla zadána nesprávná zúčtovací měna nebo měna vykazování. Teď chcete tuto měnu změnit.
-- Při nastavení právnické osoby nebyla zadána žádná měna vykazování. (Měna vykazování je volitelná.) Teď chcete měnu vykazování přidat.
-
-Organizace, která dříve funkci duální měny nevyužívala, ji chce začít používat. K tomuto problému obvykle dochází v následujících scénářích:
-
-- Měna vykazování byla při založení právnické osoby zadána, ale organizace teď chce měnu vykazování odebrat.
+- Při nastavení právnické osoby byla zadána nesprávná zúčtovací měna nebo měna vykazování. Nyní chcete změnit tuto měnu.
+- Při založení právnické osoby byla zadána měna vykazování, ale organizace teď chce měnu vykazování odebrat.
 - Organizace upgraduje nebo migruje na Microsoft Dynamics 365 Finance a chce změnit zúčtovací měnu nebo měnu vykazování.
+
+Organizace, která dosud možnost duální měny nevyužívala, ji chce začít používat. Tento problém se obvykle vyskytuje v následujících případech.
+
+- Během nastavení právnické osoby nebyla zadána žádná měna vykazování. (Měna vykazování je volitelná.) Nyní chcete přidat měnu vykazování.
 
 ## <a name="resolution"></a>Řešení
 
-Nejdůležitější je zjistit, zda byly nějaké transakce (skutečné nebo rozpočtové) právnické osoby pro nastavení hlavní knihy zaúčtovány. **Pokud v právnické osobě byly nějaké transakce (skutečné nebo rozpočtové) zaúčtovány, nemůžete zúčtovací měnu nebo měnu vykazování změnit ani měnu vykazování přidat.** Podle toho, zda byly transakce zaúčtovány, postupujte podle kroků v jedné z následujících částí.
+Nejdůležitějším hlediskem je, zda byly v právnické osobě pro nastavení hlavní knihy zaúčtovány nějaké transakce (skutečné nebo rozpočtové). **Pokud v právnické osobě byly nějaké transakce (skutečné nebo rozpočtové) zaúčtovány, nemůžete zúčtovací měnu nebo měnu vykazování změnit ani měnu vykazování přidat.** Podle toho, zda byly transakce zaúčtovány, postupujte podle kroků v jedné z následujících částí.
 
 ### <a name="no-transactions-have-been-posted"></a>Nebyly zaúčtovány žádné transakce
 

@@ -3,17 +3,19 @@
   items:
     - name: Co je nového
       items:
-        - name: Co je nového a co se změnilo v Human Resources
+        - name: "Co je nového a\_co se změnilo v\_Human Resources"
           href: hr-admin-whats-new.md
-        - name: 3. května 2021
+        - name: "20.\_května\_2021"
+          href: hr-whats-new-2021-05-20.md
+        - name: "3.\_května\_2021"
           href: hr-whats-new-2021-05-03.md
-        - name: 19. dubna 2021
+        - name: "19.\_dubna\_2021"
           href: hr-whats-new-2021-04-19.md
-        - name: 5. dubna 2021
+        - name: "5.\_dubna\_2021"
           href: hr-whats-new-2021-04-05.md
-        - name: 22. března 2021
+        - name: "22.\_března\_2021"
           href: hr-whats-new-2021-03-22.md
-        - name: 8. března 2021
+        - name: "8.\_března\_2021"
           href: hr-whats-new-2021-03-08.md
         - name: 22. února 2021
           href: hr-whats-new-2021-02-22.md
@@ -779,14 +781,20 @@
               href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Nákup a prodej pracovního volna
               href: hr-employee-self-service-buy-sell-leave.md
-        - name: Správa žádostí o dovolenou v aplikaci Teams
+        - name: "Správa žádostí o\_dovolenou v\_aplikaci Teams"
           href: hr-teams-leave-app.md
         - name: Rozvoj zaměstnanců
           items:
             - name: Přehled řízení výkonnosti
               href: hr-develop-performance-management-overview.md
-            - name: Vyrovnání dovedností zaměstnanců
-              href: hr-develop-skills.md
+            - name: Dovednosti
+              items:
+                - name: Konfigurace dovedností
+                  href: hr-develop-skills.md
+                - name: Zadejte dovednosti
+                  href: hr-develop-enter-skills.md
+                - name: Mapování dovedností
+                  href: hr-develop-map-skills.md
             - name: Přidání do deníku výkonnosti
               href: hr-develop-add-performance-journal.md
             - name: Vytvoření cíle
