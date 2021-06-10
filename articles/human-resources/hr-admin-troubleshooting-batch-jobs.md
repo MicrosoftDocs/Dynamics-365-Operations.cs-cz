@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,56 +14,56 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 92dd281ed718be5c7ebd843d015c108ee121f30a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5aeaeb7311d87a154882b7058b6da430900bd56
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794918"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053460"
 ---
-# <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a><span data-ttu-id="ffbc8-103">Optimalizace výkonu plánováním dávkových úloh po pracovní době</span><span class="sxs-lookup"><span data-stu-id="ffbc8-103">Optimize performance by scheduling batch jobs after hours</span></span>
+# <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a><span data-ttu-id="6e095-103">Optimalizace výkonu plánováním dávkových úloh po pracovní době</span><span class="sxs-lookup"><span data-stu-id="6e095-103">Optimize performance by scheduling batch jobs after hours</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## <a name="issue"></a><span data-ttu-id="ffbc8-104">Výdej</span><span class="sxs-lookup"><span data-stu-id="ffbc8-104">Issue</span></span>
+## <a name="issue"></a><span data-ttu-id="6e095-104">Výdej</span><span class="sxs-lookup"><span data-stu-id="6e095-104">Issue</span></span>
 
-<span data-ttu-id="ffbc8-105">Pokud jsou dávkové úlohy, jež běží dlouho, spouštěny během běžné pracovní doby, může mít Microsoft Dynamics 365 Human Resources problémy s výkonem.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-105">Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during typical business hours.</span></span>
+<span data-ttu-id="6e095-105">Pokud jsou dávkové úlohy, jež běží dlouho, spouštěny během běžné pracovní doby, může mít Microsoft Dynamics 365 Human Resources problémy s výkonem.</span><span class="sxs-lookup"><span data-stu-id="6e095-105">Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during typical business hours.</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="ffbc8-106">Rozlišení</span><span class="sxs-lookup"><span data-stu-id="ffbc8-106">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="6e095-106">Rozlišení</span><span class="sxs-lookup"><span data-stu-id="6e095-106">Resolution</span></span>
 
-<span data-ttu-id="ffbc8-107">Následující dávkové úlohy plánujte na dobu po pracovní době.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-107">Schedule the following batch jobs during off hours.</span></span> <span data-ttu-id="ffbc8-108">Doporučujeme také přezkoumat frekvenci dávkových úloh, které se spouští často.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-108">We also recommend reviewing the frequency of batch jobs that run frequently.</span></span> <span data-ttu-id="ffbc8-109">Pokud je to možné, snižte frekvenci opakování dávkové úlohy.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-109">If possible, reduce the recurrence of the batch job.</span></span> <span data-ttu-id="ffbc8-110">V mnoha případech je dostatečná výchozí frekvence.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-110">In many cases, the default frequency is sufficient.</span></span>
+<span data-ttu-id="6e095-107">Následující dávkové úlohy plánujte na dobu po pracovní době.</span><span class="sxs-lookup"><span data-stu-id="6e095-107">Schedule the following batch jobs during off hours.</span></span> <span data-ttu-id="6e095-108">Doporučujeme také přezkoumat frekvenci dávkových úloh, které se spouští často.</span><span class="sxs-lookup"><span data-stu-id="6e095-108">We also recommend reviewing the frequency of batch jobs that run frequently.</span></span> <span data-ttu-id="6e095-109">Pokud je to možné, snižte frekvenci opakování dávkové úlohy.</span><span class="sxs-lookup"><span data-stu-id="6e095-109">If possible, reduce the recurrence of the batch job.</span></span> <span data-ttu-id="6e095-110">V mnoha případech je dostatečná výchozí frekvence.</span><span class="sxs-lookup"><span data-stu-id="6e095-110">In many cases, the default frequency is sufficient.</span></span>
 
-<span data-ttu-id="ffbc8-111">Následující dávkové úlohy by měly být spouštěny v noci nebo po pracovní době.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-111">The following batch jobs should run at night or after hours.</span></span> <span data-ttu-id="ffbc8-112">U těchto opakujících se dávkových úloh zkontrolujte časové pásmo.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-112">Be sure to check the time zone for these recurring batch jobs.</span></span> <span data-ttu-id="ffbc8-113">Některé dávkové úlohy mohou používat tichomořský standardní čas (PST).</span><span class="sxs-lookup"><span data-stu-id="ffbc8-113">Some batch jobs might use Pacific Standard Time (PST).</span></span>
+<span data-ttu-id="6e095-111">Následující dávkové úlohy by měly být spouštěny v noci nebo po pracovní době.</span><span class="sxs-lookup"><span data-stu-id="6e095-111">The following batch jobs should run at night or after hours.</span></span> <span data-ttu-id="6e095-112">U těchto opakujících se dávkových úloh zkontrolujte časové pásmo.</span><span class="sxs-lookup"><span data-stu-id="6e095-112">Be sure to check the time zone for these recurring batch jobs.</span></span> <span data-ttu-id="6e095-113">Některé dávkové úlohy mohou používat tichomořský standardní čas (PST).</span><span class="sxs-lookup"><span data-stu-id="6e095-113">Some batch jobs might use Pacific Standard Time (PST).</span></span>
 
-| <span data-ttu-id="ffbc8-114">Dávková úloha</span><span class="sxs-lookup"><span data-stu-id="ffbc8-114">Batch job</span></span> | <span data-ttu-id="ffbc8-115">Výchozí výskyt</span><span class="sxs-lookup"><span data-stu-id="ffbc8-115">Default occurrence</span></span> |
+| <span data-ttu-id="6e095-114">Dávková úloha</span><span class="sxs-lookup"><span data-stu-id="6e095-114">Batch job</span></span> | <span data-ttu-id="6e095-115">Výchozí výskyt</span><span class="sxs-lookup"><span data-stu-id="6e095-115">Default occurrence</span></span> |
 | --- | --- |
-| <span data-ttu-id="ffbc8-116">Vymazání historie dávkových úloh</span><span class="sxs-lookup"><span data-stu-id="ffbc8-116">Batch job history cleanup</span></span> | <span data-ttu-id="ffbc8-117">1krát za měsíc</span><span class="sxs-lookup"><span data-stu-id="ffbc8-117">1 time per month</span></span> |
-| <span data-ttu-id="ffbc8-118">Exportovat vyčištění fázování</span><span class="sxs-lookup"><span data-stu-id="ffbc8-118">Export staging cleanup</span></span> | <span data-ttu-id="ffbc8-119">1krát denně</span><span class="sxs-lookup"><span data-stu-id="ffbc8-119">1 time per day</span></span> |
-| <span data-ttu-id="ffbc8-120">Synchronizace zmeškaného požadavku integrace Common Data Service</span><span class="sxs-lookup"><span data-stu-id="ffbc8-120">Common Data Service integration missed request sync</span></span> | <span data-ttu-id="ffbc8-121">1krát denně</span><span class="sxs-lookup"><span data-stu-id="ffbc8-121">1 time per day</span></span> |
-| <span data-ttu-id="ffbc8-122">Systémová úloha komprese databáze, jež musí běžet pravidelně mimo pracovní dobu</span><span class="sxs-lookup"><span data-stu-id="ffbc8-122">Database compression system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="ffbc8-123">1krát denně</span><span class="sxs-lookup"><span data-stu-id="ffbc8-123">1 time per day</span></span> |
-| <span data-ttu-id="ffbc8-124">Systémová úloha sestavení nového indexu databáze, jež musí běžet pravidelně mimo pracovní dobu</span><span class="sxs-lookup"><span data-stu-id="ffbc8-124">Database index rebuild system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="ffbc8-125">1krát denně</span><span class="sxs-lookup"><span data-stu-id="ffbc8-125">1 time per day</span></span> |
+| <span data-ttu-id="6e095-116">Vymazání historie dávkových úloh</span><span class="sxs-lookup"><span data-stu-id="6e095-116">Batch job history cleanup</span></span> | <span data-ttu-id="6e095-117">1krát za měsíc</span><span class="sxs-lookup"><span data-stu-id="6e095-117">1 time per month</span></span> |
+| <span data-ttu-id="6e095-118">Exportovat vyčištění fázování</span><span class="sxs-lookup"><span data-stu-id="6e095-118">Export staging cleanup</span></span> | <span data-ttu-id="6e095-119">1krát denně</span><span class="sxs-lookup"><span data-stu-id="6e095-119">1 time per day</span></span> |
+| <span data-ttu-id="6e095-120">Synchronizace zmeškaného požadavku integrace Common Data Service</span><span class="sxs-lookup"><span data-stu-id="6e095-120">Common Data Service integration missed request sync</span></span> | <span data-ttu-id="6e095-121">1krát denně</span><span class="sxs-lookup"><span data-stu-id="6e095-121">1 time per day</span></span> |
+| <span data-ttu-id="6e095-122">Systémová úloha komprese databáze, jež musí běžet pravidelně mimo pracovní dobu</span><span class="sxs-lookup"><span data-stu-id="6e095-122">Database compression system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="6e095-123">1krát denně</span><span class="sxs-lookup"><span data-stu-id="6e095-123">1 time per day</span></span> |
+| <span data-ttu-id="6e095-124">Systémová úloha sestavení nového indexu databáze, jež musí běžet pravidelně mimo pracovní dobu</span><span class="sxs-lookup"><span data-stu-id="6e095-124">Database index rebuild system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="6e095-125">1krát denně</span><span class="sxs-lookup"><span data-stu-id="6e095-125">1 time per day</span></span> |
 
-1. <span data-ttu-id="ffbc8-126">V modulu Human Resources vyberte **Správa systému**.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-126">In Human Resources, select **System administration**.</span></span>
+1. <span data-ttu-id="6e095-126">V modulu Human Resources vyberte **Správa systému**.</span><span class="sxs-lookup"><span data-stu-id="6e095-126">In Human Resources, select **System administration**.</span></span>
 
-2. <span data-ttu-id="ffbc8-127">Pomocí **vyhledávací** lišty vyhledejte jednu z výše uvedených dávkových úloh.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-127">In the **Search** bar, search for one of the above batch jobs.</span></span>
+2. <span data-ttu-id="6e095-127">Pomocí **vyhledávací** lišty vyhledejte jednu z výše uvedených dávkových úloh.</span><span class="sxs-lookup"><span data-stu-id="6e095-127">In the **Search** bar, search for one of the above batch jobs.</span></span>
 
-3. <span data-ttu-id="ffbc8-128">Vyberte možnost **Spustit na pozadí** a vyberte **Opakování**.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-128">Select **Run in the background**, and then select **Recurrence**.</span></span>
+3. <span data-ttu-id="6e095-128">Vyberte možnost **Spustit na pozadí** a vyberte **Opakování**.</span><span class="sxs-lookup"><span data-stu-id="6e095-128">Select **Run in the background**, and then select **Recurrence**.</span></span>
 
    ![Nastavení opakování](media/talent-batch-history-cleanup-recurrence.png)
 
-4. <span data-ttu-id="ffbc8-130">V části **Definovat opakování** nastavte **Počáteční datum** a **Počáteční čas** mimo pracovní dobu nebo víkend.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-130">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off hours or the weekend.</span></span> <span data-ttu-id="ffbc8-131">Vyberte **Bez koncového data**.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-131">Select **No end date**.</span></span> 
+4. <span data-ttu-id="6e095-130">V části **Definovat opakování** nastavte **Počáteční datum** a **Počáteční čas** mimo pracovní dobu nebo víkend.</span><span class="sxs-lookup"><span data-stu-id="6e095-130">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off hours or the weekend.</span></span> <span data-ttu-id="6e095-131">Vyberte **Bez koncového data**.</span><span class="sxs-lookup"><span data-stu-id="6e095-131">Select **No end date**.</span></span> 
 
    ![Definování počátečního data a času opakování](media/talent-batch-history-cleanup-define-recurrence.png)
 
-5. <span data-ttu-id="ffbc8-133">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-133">Select **OK**.</span></span>
+5. <span data-ttu-id="6e095-133">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="6e095-133">Select **OK**.</span></span>
 
-6. <span data-ttu-id="ffbc8-134">V případě potřeby změňte všechny ostatní parametry v podnabídce **Spustit na pozadí** a pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="ffbc8-134">If needed, change any other parameters under **Run in the background**, and then select **OK**.</span></span>
+6. <span data-ttu-id="6e095-134">V případě potřeby změňte všechny ostatní parametry v podnabídce **Spustit na pozadí** a pak vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="6e095-134">If needed, change any other parameters under **Run in the background**, and then select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ffbc8-135">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="ffbc8-135">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="6e095-135">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="6e095-135">Additional resources</span></span>
 
-[<span data-ttu-id="ffbc8-136">Optimalizace výkonu pomocí úloh automatického vyčištění</span><span class="sxs-lookup"><span data-stu-id="ffbc8-136">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
+[<span data-ttu-id="6e095-136">Optimalizace výkonu pomocí úloh automatického vyčištění</span><span class="sxs-lookup"><span data-stu-id="6e095-136">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

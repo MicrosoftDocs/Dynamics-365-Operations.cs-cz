@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,66 +15,66 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
-ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
+ms.openlocfilehash: 8f6edc848e1ed03f97e11cd4eb3fd1aaf4ee0c59
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924847"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056701"
 ---
-# <a name="request-time-off"></a><span data-ttu-id="58e25-103">Požádat o volno</span><span class="sxs-lookup"><span data-stu-id="58e25-103">Request time off</span></span>
+# <a name="request-time-off"></a><span data-ttu-id="ba4c2-103">Požádat o volno</span><span class="sxs-lookup"><span data-stu-id="ba4c2-103">Request time off</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="58e25-104">V aplikaci Dynamics 365 Human Resources Můžete odesílat žádosti volno, zobrazit zůstatky dovolené a pracovního volna nebo prohlížet stav žádostí o dovolenou.</span><span class="sxs-lookup"><span data-stu-id="58e25-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="ba4c2-104">V aplikaci Dynamics 365 Human Resources Můžete odesílat žádosti volno, zobrazit zůstatky dovolené a pracovního volna nebo prohlížet stav žádostí o dovolenou.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
 
-## <a name="request-time-off"></a><span data-ttu-id="58e25-105">Požádat o volno</span><span class="sxs-lookup"><span data-stu-id="58e25-105">Request time off</span></span>
+## <a name="request-time-off"></a><span data-ttu-id="ba4c2-105">Požádat o volno</span><span class="sxs-lookup"><span data-stu-id="ba4c2-105">Request time off</span></span>
 
-1. <span data-ttu-id="58e25-106">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zažádat o volno** v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="58e25-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="ba4c2-106">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zažádat o volno** v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="58e25-107">Zadejte informace o **typu pracovního volna**, **kódu důvodu**, **počátečním datu** a **koncovém datu**.</span><span class="sxs-lookup"><span data-stu-id="58e25-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
+2. <span data-ttu-id="ba4c2-107">Zadejte informace o **typu pracovního volna**, **kódu důvodu**, **počátečním datu** a **koncovém datu**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
 
-3. <span data-ttu-id="58e25-108">V části **data** vyberte data pro žádost o volno.</span><span class="sxs-lookup"><span data-stu-id="58e25-108">Under **Dates**, select the dates for your leave request.</span></span>
+3. <span data-ttu-id="ba4c2-108">V části **data** vyberte data pro žádost o volno.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-108">Under **Dates**, select the dates for your leave request.</span></span>
 
-4. <span data-ttu-id="58e25-109">Potřebujete-li odeslat jakoukoli podpůrnou dokumentaci, vyberte možnost **Odeslat** v části **Přílohy**.</span><span class="sxs-lookup"><span data-stu-id="58e25-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
+4. <span data-ttu-id="ba4c2-109">Potřebujete-li odeslat jakoukoli podpůrnou dokumentaci, vyberte možnost **Odeslat** v části **Přílohy**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
 
-5. <span data-ttu-id="58e25-110">V případě potřeby zadejte informace do pole **Komentáře**.</span><span class="sxs-lookup"><span data-stu-id="58e25-110">Enter information in **Comment**, if needed.</span></span>
+5. <span data-ttu-id="ba4c2-110">V případě potřeby zadejte informace do pole **Komentáře**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-110">Enter information in **Comment**, if needed.</span></span>
 
-6. <span data-ttu-id="58e25-111">Jakmile budete připravení žádost odeslat, vyberte **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="58e25-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="58e25-112">Jinak vyberte **Uložit koncept**.</span><span class="sxs-lookup"><span data-stu-id="58e25-112">Otherwise, select **Save draft**.</span></span>
+6. <span data-ttu-id="ba4c2-111">Jakmile budete připravení žádost odeslat, vyberte **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="ba4c2-112">Jinak vyberte **Uložit koncept**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-112">Otherwise, select **Save draft**.</span></span>
 
-## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="58e25-113">Přidání přílohy do existující žádosti</span><span class="sxs-lookup"><span data-stu-id="58e25-113">Add an attachment to an existing request</span></span>
+## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="ba4c2-113">Přidání přílohy do existující žádosti</span><span class="sxs-lookup"><span data-stu-id="ba4c2-113">Add an attachment to an existing request</span></span>
 
-<span data-ttu-id="58e25-114">Při aktualizaci existujícího požadavku o volno můžete přidat přílohu.</span><span class="sxs-lookup"><span data-stu-id="58e25-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="58e25-115">Můžete také zobrazit všechny související žádosti o konkrétní datum.</span><span class="sxs-lookup"><span data-stu-id="58e25-115">You can also see all of the related requests for a specific date.</span></span>
+<span data-ttu-id="ba4c2-114">Při aktualizaci existujícího požadavku o volno můžete přidat přílohu.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="ba4c2-115">Můžete také zobrazit všechny související žádosti o konkrétní datum.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-115">You can also see all of the related requests for a specific date.</span></span>
 
-## <a name="view-leave-balances"></a><span data-ttu-id="58e25-116">Zobrazit zůstatky pracovního volna</span><span class="sxs-lookup"><span data-stu-id="58e25-116">View leave balances</span></span>
+## <a name="view-leave-balances"></a><span data-ttu-id="ba4c2-116">Zobrazit zůstatky pracovního volna</span><span class="sxs-lookup"><span data-stu-id="ba4c2-116">View leave balances</span></span>
 
-1. <span data-ttu-id="58e25-117">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="58e25-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="ba4c2-117">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="58e25-118">Vyberte **zůstatky**.</span><span class="sxs-lookup"><span data-stu-id="58e25-118">Select **Balances**.</span></span>
+2. <span data-ttu-id="ba4c2-118">Vyberte **zůstatky**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-118">Select **Balances**.</span></span>
 
-## <a name="view-leave-request-status"></a><span data-ttu-id="58e25-119">Zobrazení stavu žádosti o pracovní volno</span><span class="sxs-lookup"><span data-stu-id="58e25-119">View leave request status</span></span>
+## <a name="view-leave-request-status"></a><span data-ttu-id="ba4c2-119">Zobrazení stavu žádosti o pracovní volno</span><span class="sxs-lookup"><span data-stu-id="ba4c2-119">View leave request status</span></span>
 
-1. <span data-ttu-id="58e25-120">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="58e25-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="ba4c2-120">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="58e25-121">Chcete-li zobrazit schválené požadavky na volno, vyberte **Schválené volno**.</span><span class="sxs-lookup"><span data-stu-id="58e25-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="58e25-122">Chcete-li zobrazit nevyřízené požadavky na volno, vyberte **Žádosti o volno**.</span><span class="sxs-lookup"><span data-stu-id="58e25-122">To view your pending time-off requests, select **Time off requests**.</span></span>
+2. <span data-ttu-id="ba4c2-121">Chcete-li zobrazit schválené požadavky na volno, vyberte **Schválené volno**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="ba4c2-122">Chcete-li zobrazit nevyřízené požadavky na volno, vyberte **Žádosti o volno**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-122">To view your pending time-off requests, select **Time off requests**.</span></span>
 
-## <a name="cancel-time-off-requests"></a><span data-ttu-id="58e25-123">Zrušení žádostí o volno</span><span class="sxs-lookup"><span data-stu-id="58e25-123">Cancel time-off requests</span></span>
+## <a name="cancel-time-off-requests"></a><span data-ttu-id="ba4c2-123">Zrušení žádostí o volno</span><span class="sxs-lookup"><span data-stu-id="ba4c2-123">Cancel time-off requests</span></span>
 
 [!include [Preview feature](includes/preview-feature.md)]
 
-1. <span data-ttu-id="58e25-124">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zobrazit volno** v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="58e25-124">In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="ba4c2-124">V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zobrazit volno** v dlaždici **Zůstatky volna**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-124">In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="58e25-125">Na formuláři **Volno** vyberte jednu nebo více žádostí o volno, které chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="58e25-125">On the **Time off** form, select one or more time-off requests to cancel.</span></span>
+2. <span data-ttu-id="ba4c2-125">Na formuláři **Volno** vyberte jednu nebo více žádostí o volno, které chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-125">On the **Time off** form, select one or more time-off requests to cancel.</span></span>
 
-3. <span data-ttu-id="58e25-126">Zvolte tlačítko **Zrušit**.</span><span class="sxs-lookup"><span data-stu-id="58e25-126">Select the **Cancel** button.</span></span>
+3. <span data-ttu-id="ba4c2-126">Zvolte tlačítko **Zrušit**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-126">Select the **Cancel** button.</span></span>
 
-4. <span data-ttu-id="58e25-127">V podokně **Podrobnosti o zrušení** zadejte komentář a poté vyberte **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="58e25-127">In the **Cancellation details** pane, enter a comment and then select **Submit**.</span></span>
+4. <span data-ttu-id="ba4c2-127">V podokně **Podrobnosti o zrušení** zadejte komentář a poté vyberte **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="ba4c2-127">In the **Cancellation details** pane, enter a comment and then select **Submit**.</span></span>
 
    ![Zrušit žádost o dovolenou](media/hr-leave-and-absence-cancel.png)
 
-## <a name="see-also"></a><span data-ttu-id="58e25-129">Viz také</span><span class="sxs-lookup"><span data-stu-id="58e25-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ba4c2-129">Viz také</span><span class="sxs-lookup"><span data-stu-id="ba4c2-129">See also</span></span>
 
-- [<span data-ttu-id="58e25-130">Přehled pracovního volna a absencí</span><span class="sxs-lookup"><span data-stu-id="58e25-130">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="ba4c2-130">Přehled pracovního volna a absencí</span><span class="sxs-lookup"><span data-stu-id="ba4c2-130">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

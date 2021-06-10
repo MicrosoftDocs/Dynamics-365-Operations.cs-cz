@@ -8,51 +8,50 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94df675b02054d7a4761ea5b6edf24c6207e8fc9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: caedd7df4f86abfbf154b367065fb075e6ef081c
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805555"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055477"
 ---
-# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a><span data-ttu-id="e6fa8-103">Přidávání informací do deníku výkonnosti a udělení pochvaly některému z uživatelů</span><span class="sxs-lookup"><span data-stu-id="e6fa8-103">Add to your performance journal and send praise to someone</span></span>
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a><span data-ttu-id="8e131-103">Přidávání informací do deníku výkonnosti a udělení pochvaly některému z uživatelů</span><span class="sxs-lookup"><span data-stu-id="8e131-103">Add to your performance journal and send praise to someone</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="e6fa8-104">Deník výkonnosti obsahuje informace, které se týkají toho, jak jste splnili své cíle nebo jak jste si vedli během období.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-104">The performance journal holds information that relates to how you met your goals or how you performed during a period.</span></span> <span data-ttu-id="e6fa8-105">Můžete také ocenit akce kolegy z deníku.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-105">You can also praise the actions of a co-worker from the journal.</span></span> <span data-ttu-id="e6fa8-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="e6fa8-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="8e131-104">Deník výkonnosti obsahuje informace, které se týkají toho, jak jste splnili své cíle nebo jak jste si vedli během období.</span><span class="sxs-lookup"><span data-stu-id="8e131-104">The performance journal holds information that relates to how you met your goals or how you performed during a period.</span></span> <span data-ttu-id="8e131-105">Můžete také ocenit akce kolegy z deníku.</span><span class="sxs-lookup"><span data-stu-id="8e131-105">You can also praise the actions of a co-worker from the journal.</span></span> <span data-ttu-id="8e131-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="8e131-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8e131-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="8e131-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. <span data-ttu-id="e6fa8-108">Přejděte na Všechny pracovní prostory > Samoobsluha pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-108">Go to All workspaces > Employee self service.</span></span>
-2. <span data-ttu-id="e6fa8-109">Klikněte na Deník výkonnosti.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-109">Click Performance journal.</span></span>
-3. <span data-ttu-id="e6fa8-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-110">Click New.</span></span>
-4. <span data-ttu-id="e6fa8-111">Zadejte hodnotu do pole Titul.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-111">In the Title field, type a value.</span></span>
-5. <span data-ttu-id="e6fa8-112">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-112">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="e6fa8-113">Datum deníku výkonnosti je datum, kdy byl deník vytvořen.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-113">The performance journal date is the date that the journal was created.</span></span>  
-    * <span data-ttu-id="e6fa8-114">Zdroj označuje zdroj, odkud deník výkonnosti pochází.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-114">The source represents where the performance journal came from.</span></span> <span data-ttu-id="e6fa8-115">Když ho vytvoříte, pochází z okna Můj deník.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-115">When you create one, it comes from My journal.</span></span> <span data-ttu-id="e6fa8-116">Když ho vytvoří manažer, pochází z deníku manažera.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-116">If your manager creates one, it comes from the Manager journal.</span></span>  
-    * <span data-ttu-id="e6fa8-117">Tento deník můžete sdílet s manažerem nebo ho nastavit jako viditelný pouze pro sebe.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-117">You can share this journal with your manager or make it only visible to you.</span></span>  
-6. <span data-ttu-id="e6fa8-118">Zadejte datum do pole Počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-118">In the Start date field, enter a date.</span></span>
-7. <span data-ttu-id="e6fa8-119">Do pole Datum dokončení zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-119">In the Date completed field, enter a date.</span></span>
-8. <span data-ttu-id="e6fa8-120">Vyberte možnost Ano v poli Plán rozvoje.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-120">Select Yes in the Development plan field.</span></span>
-9. <span data-ttu-id="e6fa8-121">Zadejte hodnotu do pole Klíčová slova.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-121">In the Keywords field, type a value.</span></span>
-10. <span data-ttu-id="e6fa8-122">Klikněte na Přidat externí odkaz.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-122">Click Add external link.</span></span>
-11. <span data-ttu-id="e6fa8-123">Do pole popis napište 'Envision'.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-123">In the Description field, type 'Envision'.</span></span>
-12. <span data-ttu-id="e6fa8-124">Do pole Internetová adresa zadejte "https://www.microsoft.com/en/envision/default'.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-124">In the Internet address field, type 'https://www.microsoft.com/en/envision/default'.</span></span>
-13. <span data-ttu-id="e6fa8-125">Klepněte na titulek pod tlačítkem Uložit nazvaný "Deník výkonnosti" pro návrat do mřížky.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-125">Click on the caption below the Save button called "Performance journal" to return to the grid.</span></span>
-    * <span data-ttu-id="e6fa8-126">Vybraný deník nebo deníky můžete přidat k cíli tak, aby se zobrazil při otevření cíle.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-126">You can add the selected journal or journals to a goal so that it appears when you open the goal.</span></span> <span data-ttu-id="e6fa8-127">Odkaz bude přidán na pevné záložce Odkazy.   Pokud přidáte deník do cíle a potom přidáte cíl do kontroly, deník se v kontrole zobrazí automaticky.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-127">A link will be added in the Links fast tab.    If you add a journal to a goal and then add the goal to a review, the journal will appear on the review automatically.</span></span>  
-    * <span data-ttu-id="e6fa8-128">Vybraný deník nebo deníky můžete přidat ke kontrole tak, aby se zobrazil při otevření kontroly.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-128">You can add the selected journal or journals to a review so that it appears when you open the review.</span></span>    <span data-ttu-id="e6fa8-129">Odkaz bude přidán na pevné záložce Odkazy.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-129">A link will be added in the Links fast tab.</span></span>  
-14. <span data-ttu-id="e6fa8-130">Klikněte na Přidat rychlý odkaz.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-130">Click Quick add.</span></span>
-15. <span data-ttu-id="e6fa8-131">Zadejte hodnotu do pole Titul.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-131">In the Title field, type a value.</span></span>
-16. <span data-ttu-id="e6fa8-132">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-132">In the Description field, type a value.</span></span>
-17. <span data-ttu-id="e6fa8-133">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-133">Click Save.</span></span>
-18. <span data-ttu-id="e6fa8-134">Klikněte na Udělit pochvalu pro.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-134">Click Send praise.</span></span>
-19. <span data-ttu-id="e6fa8-135">Vyberte některého zaměstnance ze seznamu zaměstnanců společnosti.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-135">Select a person from the list of employees in the company.</span></span>
-20. <span data-ttu-id="e6fa8-136">Do pole Popis zadejte "Děkujeme za veškerou podporu na konferenci!".</span><span class="sxs-lookup"><span data-stu-id="e6fa8-136">In the Description field, enter 'Thanks for all the help at the conference!'.</span></span>
-21. <span data-ttu-id="e6fa8-137">Klepněte na tlačítko Odeslat.</span><span class="sxs-lookup"><span data-stu-id="e6fa8-137">Click Send.</span></span>
+1. <span data-ttu-id="8e131-108">Přejděte na Všechny pracovní prostory > Samoobsluha pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="8e131-108">Go to All workspaces > Employee self service.</span></span>
+2. <span data-ttu-id="8e131-109">Klikněte na Deník výkonnosti.</span><span class="sxs-lookup"><span data-stu-id="8e131-109">Click Performance journal.</span></span>
+3. <span data-ttu-id="8e131-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8e131-110">Click New.</span></span>
+4. <span data-ttu-id="8e131-111">Zadejte hodnotu do pole Titul.</span><span class="sxs-lookup"><span data-stu-id="8e131-111">In the Title field, type a value.</span></span>
+5. <span data-ttu-id="8e131-112">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8e131-112">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="8e131-113">Datum deníku výkonnosti je datum, kdy byl deník vytvořen.</span><span class="sxs-lookup"><span data-stu-id="8e131-113">The performance journal date is the date that the journal was created.</span></span>  
+    * <span data-ttu-id="8e131-114">Zdroj označuje zdroj, odkud deník výkonnosti pochází.</span><span class="sxs-lookup"><span data-stu-id="8e131-114">The source represents where the performance journal came from.</span></span> <span data-ttu-id="8e131-115">Když ho vytvoříte, pochází z okna Můj deník.</span><span class="sxs-lookup"><span data-stu-id="8e131-115">When you create one, it comes from My journal.</span></span> <span data-ttu-id="8e131-116">Když ho vytvoří manažer, pochází z deníku manažera.</span><span class="sxs-lookup"><span data-stu-id="8e131-116">If your manager creates one, it comes from the Manager journal.</span></span>  
+    * <span data-ttu-id="8e131-117">Tento deník můžete sdílet s manažerem nebo ho nastavit jako viditelný pouze pro sebe.</span><span class="sxs-lookup"><span data-stu-id="8e131-117">You can share this journal with your manager or make it only visible to you.</span></span>  
+6. <span data-ttu-id="8e131-118">Zadejte datum do pole Počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="8e131-118">In the Start date field, enter a date.</span></span>
+7. <span data-ttu-id="8e131-119">Do pole Datum dokončení zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="8e131-119">In the Date completed field, enter a date.</span></span>
+8. <span data-ttu-id="8e131-120">Vyberte možnost Ano v poli Plán rozvoje.</span><span class="sxs-lookup"><span data-stu-id="8e131-120">Select Yes in the Development plan field.</span></span>
+9. <span data-ttu-id="8e131-121">Zadejte hodnotu do pole Klíčová slova.</span><span class="sxs-lookup"><span data-stu-id="8e131-121">In the Keywords field, type a value.</span></span>
+10. <span data-ttu-id="8e131-122">Klikněte na Přidat externí odkaz.</span><span class="sxs-lookup"><span data-stu-id="8e131-122">Click Add external link.</span></span>
+11. <span data-ttu-id="8e131-123">Do pole popis napište 'Envision'.</span><span class="sxs-lookup"><span data-stu-id="8e131-123">In the Description field, type 'Envision'.</span></span>
+12. <span data-ttu-id="8e131-124">Do pole Internetová adresa zadejte "https://www.microsoft.com/en/envision/default'.</span><span class="sxs-lookup"><span data-stu-id="8e131-124">In the Internet address field, type 'https://www.microsoft.com/en/envision/default'.</span></span>
+13. <span data-ttu-id="8e131-125">Klepněte na titulek pod tlačítkem Uložit nazvaný "Deník výkonnosti" pro návrat do mřížky.</span><span class="sxs-lookup"><span data-stu-id="8e131-125">Click on the caption below the Save button called "Performance journal" to return to the grid.</span></span>
+    * <span data-ttu-id="8e131-126">Vybraný deník nebo deníky můžete přidat k cíli tak, aby se zobrazil při otevření cíle.</span><span class="sxs-lookup"><span data-stu-id="8e131-126">You can add the selected journal or journals to a goal so that it appears when you open the goal.</span></span> <span data-ttu-id="8e131-127">Odkaz bude přidán na pevné záložce Odkazy.   Pokud přidáte deník do cíle a potom přidáte cíl do kontroly, deník se v kontrole zobrazí automaticky.</span><span class="sxs-lookup"><span data-stu-id="8e131-127">A link will be added in the Links fast tab.    If you add a journal to a goal and then add the goal to a review, the journal will appear on the review automatically.</span></span>  
+    * <span data-ttu-id="8e131-128">Vybraný deník nebo deníky můžete přidat ke kontrole tak, aby se zobrazil při otevření kontroly.</span><span class="sxs-lookup"><span data-stu-id="8e131-128">You can add the selected journal or journals to a review so that it appears when you open the review.</span></span>    <span data-ttu-id="8e131-129">Odkaz bude přidán na pevné záložce Odkazy.</span><span class="sxs-lookup"><span data-stu-id="8e131-129">A link will be added in the Links fast tab.</span></span>  
+14. <span data-ttu-id="8e131-130">Klikněte na Přidat rychlý odkaz.</span><span class="sxs-lookup"><span data-stu-id="8e131-130">Click Quick add.</span></span>
+15. <span data-ttu-id="8e131-131">Zadejte hodnotu do pole Titul.</span><span class="sxs-lookup"><span data-stu-id="8e131-131">In the Title field, type a value.</span></span>
+16. <span data-ttu-id="8e131-132">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8e131-132">In the Description field, type a value.</span></span>
+17. <span data-ttu-id="8e131-133">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="8e131-133">Click Save.</span></span>
+18. <span data-ttu-id="8e131-134">Klikněte na Udělit pochvalu pro.</span><span class="sxs-lookup"><span data-stu-id="8e131-134">Click Send praise.</span></span>
+19. <span data-ttu-id="8e131-135">Vyberte některého zaměstnance ze seznamu zaměstnanců společnosti.</span><span class="sxs-lookup"><span data-stu-id="8e131-135">Select a person from the list of employees in the company.</span></span>
+20. <span data-ttu-id="8e131-136">Do pole Popis zadejte "Děkujeme za veškerou podporu na konferenci!".</span><span class="sxs-lookup"><span data-stu-id="8e131-136">In the Description field, enter 'Thanks for all the help at the conference!'.</span></span>
+21. <span data-ttu-id="8e131-137">Klepněte na tlačítko Odeslat.</span><span class="sxs-lookup"><span data-stu-id="8e131-137">Click Send.</span></span>
 
 
 

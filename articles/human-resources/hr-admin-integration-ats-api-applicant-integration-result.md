@@ -7,41 +7,40 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8e41fe485cc70a668d4610ce6eabba5cd16ac86
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8bef974abff18d7c07ecd679b7e01b31ea1459c4
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795110"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053892"
 ---
-# <a name="applicant-integration-result"></a><span data-ttu-id="13340-103">Výsledek integrace uchazeče</span><span class="sxs-lookup"><span data-stu-id="13340-103">Applicant integration result</span></span>
+# <a name="applicant-integration-result"></a><span data-ttu-id="83f4e-103">Výsledek integrace uchazeče</span><span class="sxs-lookup"><span data-stu-id="83f4e-103">Applicant integration result</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="13340-104">Toto téma popisuje sadu možností výsledku integrace uchazeče pro Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="13340-104">This topic describes the Applicant integration result option set for Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="83f4e-104">Toto téma popisuje sadu možností výsledku integrace uchazeče pro Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="83f4e-104">This topic describes the Applicant integration result option set for Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="13340-105">Fyzický název: mshr_hcmapplicantintegrationresult</span><span class="sxs-lookup"><span data-stu-id="13340-105">Physical name: mshr_hcmapplicantintegrationresult</span></span>
+<span data-ttu-id="83f4e-105">Fyzický název: mshr_hcmapplicantintegrationresult</span><span class="sxs-lookup"><span data-stu-id="83f4e-105">Physical name: mshr_hcmapplicantintegrationresult</span></span>
 
-<span data-ttu-id="13340-106">Tento výčet poskytuje stav záznamu kandidáta.</span><span class="sxs-lookup"><span data-stu-id="13340-106">This enumeration provides status for a candidate record.</span></span>
+<span data-ttu-id="83f4e-106">Tento výčet poskytuje stav záznamu kandidáta.</span><span class="sxs-lookup"><span data-stu-id="83f4e-106">This enumeration provides status for a candidate record.</span></span>
 
-| <span data-ttu-id="13340-107">Hodnota</span><span class="sxs-lookup"><span data-stu-id="13340-107">Value</span></span> | <span data-ttu-id="13340-108">Štítek</span><span class="sxs-lookup"><span data-stu-id="13340-108">Label</span></span> | <span data-ttu-id="13340-109">popis</span><span class="sxs-lookup"><span data-stu-id="13340-109">Description</span></span> |
+| <span data-ttu-id="83f4e-107">Hodnota</span><span class="sxs-lookup"><span data-stu-id="83f4e-107">Value</span></span> | <span data-ttu-id="83f4e-108">Štítek</span><span class="sxs-lookup"><span data-stu-id="83f4e-108">Label</span></span> | <span data-ttu-id="83f4e-109">popis</span><span class="sxs-lookup"><span data-stu-id="83f4e-109">Description</span></span> |
 | --- | --- | --- |
-| <span data-ttu-id="13340-110">200000000</span><span class="sxs-lookup"><span data-stu-id="13340-110">200000000</span></span> | <span data-ttu-id="13340-111">Nezpracováno</span><span class="sxs-lookup"><span data-stu-id="13340-111">Not processed</span></span> | <span data-ttu-id="13340-112">Kandidát stále přichází v úvahu.</span><span class="sxs-lookup"><span data-stu-id="13340-112">Candidate is still under consideration.</span></span> |
-| <span data-ttu-id="13340-113">200000001</span><span class="sxs-lookup"><span data-stu-id="13340-113">200000001</span></span> | <span data-ttu-id="13340-114">Zařazeno</span><span class="sxs-lookup"><span data-stu-id="13340-114">Hired</span></span> | <span data-ttu-id="13340-115">Kandidát byl přijat.</span><span class="sxs-lookup"><span data-stu-id="13340-115">The candidate has been hired.</span></span> |
-| <span data-ttu-id="13340-116">200000002</span><span class="sxs-lookup"><span data-stu-id="13340-116">200000002</span></span> | <span data-ttu-id="13340-117">Nepřijat/a</span><span class="sxs-lookup"><span data-stu-id="13340-117">Not hired</span></span> | <span data-ttu-id="13340-118">Bylo rozhodnuto nezaměstnat kandidáta.</span><span class="sxs-lookup"><span data-stu-id="13340-118">Decision was made to not hire the candidate.</span></span> |
-| <span data-ttu-id="13340-119">200000003</span><span class="sxs-lookup"><span data-stu-id="13340-119">200000003</span></span> | <span data-ttu-id="13340-120">Zamítnuto</span><span class="sxs-lookup"><span data-stu-id="13340-120">Dismissed</span></span> | <span data-ttu-id="13340-121">Kandidát byl vyloučen z úvahy.</span><span class="sxs-lookup"><span data-stu-id="13340-121">The candidate was dismissed from consideration.</span></span> |
+| <span data-ttu-id="83f4e-110">200000000</span><span class="sxs-lookup"><span data-stu-id="83f4e-110">200000000</span></span> | <span data-ttu-id="83f4e-111">Nezpracováno</span><span class="sxs-lookup"><span data-stu-id="83f4e-111">Not processed</span></span> | <span data-ttu-id="83f4e-112">Kandidát stále přichází v úvahu.</span><span class="sxs-lookup"><span data-stu-id="83f4e-112">Candidate is still under consideration.</span></span> |
+| <span data-ttu-id="83f4e-113">200000001</span><span class="sxs-lookup"><span data-stu-id="83f4e-113">200000001</span></span> | <span data-ttu-id="83f4e-114">Zařazeno</span><span class="sxs-lookup"><span data-stu-id="83f4e-114">Hired</span></span> | <span data-ttu-id="83f4e-115">Kandidát byl přijat.</span><span class="sxs-lookup"><span data-stu-id="83f4e-115">The candidate has been hired.</span></span> |
+| <span data-ttu-id="83f4e-116">200000002</span><span class="sxs-lookup"><span data-stu-id="83f4e-116">200000002</span></span> | <span data-ttu-id="83f4e-117">Nepřijat/a</span><span class="sxs-lookup"><span data-stu-id="83f4e-117">Not hired</span></span> | <span data-ttu-id="83f4e-118">Bylo rozhodnuto nezaměstnat kandidáta.</span><span class="sxs-lookup"><span data-stu-id="83f4e-118">Decision was made to not hire the candidate.</span></span> |
+| <span data-ttu-id="83f4e-119">200000003</span><span class="sxs-lookup"><span data-stu-id="83f4e-119">200000003</span></span> | <span data-ttu-id="83f4e-120">Zamítnuto</span><span class="sxs-lookup"><span data-stu-id="83f4e-120">Dismissed</span></span> | <span data-ttu-id="83f4e-121">Kandidát byl vyloučen z úvahy.</span><span class="sxs-lookup"><span data-stu-id="83f4e-121">The candidate was dismissed from consideration.</span></span> |
 
-## <a name="see-also"></a><span data-ttu-id="13340-122">Viz také</span><span class="sxs-lookup"><span data-stu-id="13340-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83f4e-122">Viz také</span><span class="sxs-lookup"><span data-stu-id="83f4e-122">See also</span></span>
 
-[<span data-ttu-id="13340-123">Úvod do rozhraní API pro integraci systému sledování žadatelů</span><span class="sxs-lookup"><span data-stu-id="13340-123">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
-[<span data-ttu-id="13340-124">Příklad dotazu pro entitu Kandidát k přijetí</span><span class="sxs-lookup"><span data-stu-id="13340-124">Example query for Candidate to hire</span></span>](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+[<span data-ttu-id="83f4e-123">Úvod do rozhraní API pro integraci systému sledování žadatelů</span><span class="sxs-lookup"><span data-stu-id="83f4e-123">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="83f4e-124">Příklad dotazu pro entitu Kandidát k přijetí</span><span class="sxs-lookup"><span data-stu-id="83f4e-124">Example query for Candidate to hire</span></span>](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
