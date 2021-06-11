@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811380"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123383"
 ---
 # <a name="cash-position-preview"></a>Pozice hotovosti (Preview)
 
@@ -31,7 +31,7 @@ Pozice hotovosti je projekce cashflow, která se předpovídá na nejbližší o
 
 Když systém predikuje platby zákazníkovi, používá predikce plateb z funkce predikce plateb zákazníka. Bez predikcí plateb se k výpočtu data platby použije průměrná doba potřebná k převodu faktury zákazníka na platbu pro každého zákazníka. U otevřených objednávek zákazníků systém vypočítá datum faktury na základě průměrného počtu dnů pro fakturaci řádků objednávky na zákazníka. Poté použije datum faktury jako vstup pro funkci predikce platby. Funkce predikce plateb zákazníka vypočítá datum platby pro každý řádek objednávky. 
 
-<*Potřebujete text od Jarka nebo Davea o tom, jak se predikce plateb převádějí na datum*> Datum platby neuhrazených faktur je přibližně [*odhadované*] z predikcí plateb výběrem data, které odpovídá padesátému percentilu kumulativní distribuční funkce, která je získána z pravděpodobností predikovaného intervalu.
+Datum platby neuhrazených faktur je přibližně z predikcí plateb výběrem data, které odpovídá padesátému percentilu kumulativní distribuční funkce, která je získána z pravděpodobností predikovaného intervalu.
 
 Podobný přístup se používá k predikci plateb dodavatelům. Pro každého dodavatele systém vypočítá průměrnou dobu potřebnou k převodu faktury dodavatele na platbu. Tento počet dní se poté použije k výpočtu data platby. U otevřených objednávek dodavatelů systém vypočítá datum faktury s přihlédnutím k průměrnému počtu dní, který je vyžadován k převedení řádků objednávky na fakturu pro každého dodavatele. Pro každého dodavatele pak systém vypočítá datum platby pomocí průměrné doby potřebné k převodu faktury dodavatele na platbu.
 

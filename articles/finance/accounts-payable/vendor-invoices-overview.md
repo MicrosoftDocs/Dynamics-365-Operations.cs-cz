@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841254"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111687"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na přijetí platby za produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
@@ -71,7 +73,9 @@ Následuje několik způsobů, jak lze zabránit odeslání faktury do workflowu
 
 - **Faktura obsahuje nepřidělené náklady.** Osoba, která odeslala fakturu, obdrží výstrahu, že faktura obsahuje nepřidělené částky, takže může opravit fakturu před opětovným odesláním do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když existují nepřidělené částky na faktuře dodavatele** na stránce **Správa funkcí**.
 
-- **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží výstrahu, že byla nalezena faktura s duplicitním číslem a tato osoba ji může opravit před opětovným odesláním do workflowu. Tato výstraha se zobrazí, pokud je parametr **Zkontrolovat použité číslo faktury** v závazcích nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.  
+- **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží zprávu s oznámením, že byla nalezena faktura s duplicitním číslem. Duplicitní číslo lze opravit před opětovným odesláním faktury do pracovního postupu. Tato výstraha se zobrazí, pokud je parametr **Zkontrolovat použité číslo faktury** v závazcích nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.
+
+- **Faktura obsahuje řádek, kde je množství faktury menší než shodné množství příjmu produktu.** Osoba, která předloží fakturu nebo se pokusí zaúčtovat, obdrží zprávu, že množství není stejné. Zpráva poskytuje příležitost opravit hodnoty před opětovným odesláním faktury do workflow. Tato funkce je k dispozici, pokud je parametr **Blokovat účtování a odesílání faktur dodavatele do pracovního postupu** na stránce **Správa funkcí** zapnuty a parametr **Blokovat zveřejňování a odesílání do pracovního postupu** na stránce **Parametry závazků** je zapnutý.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Spárování faktur dodavatele s příjemkami produktu
 

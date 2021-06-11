@@ -2,7 +2,7 @@
 title: Místa určení elektronického výkaznictví
 description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893597"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085493"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -199,6 +199,34 @@ Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést 
 > Vybraná orientace stránky se použije pro všechny konfigurace ER, které jsou generovány ve formátu aplikace Excel a následně převedeny do formátu PDF.
 >
 > Pokud je konfigurace ER ve formátu aplikace Word převedena na PDF, bude orientace dokumentu PDF provedena z dokumentu aplikace Word.
+
+## <a name="output-unfolding"></a>Rozbalení výstupu
+
+Když konfigurujete cíl pro komponentu **Složka** vašeho formátu ER, můžete určit, jak je výstup této komponenty doručen do nakonfigurovaného cíle.
+
+### <a name="make-output-unfolding-available"></a>Zpřístupnění výstupu
+
+Chcete-li zpřístupnit možnost rozložení výstupu v aktuální instanci Finance, otevřete praconví prostor **Správa funkcí** a zapněte funkci **Povolte konfiguraci cílů ER k odesílání obsahu složek jako samostatných souborů**.
+
+### <a name="applicability"></a>Použitelnost
+
+Možnost rozložení výstupu lze konfigurovat pouze pro komponenty formátu typu **Složka**. Když začnete konfigurovat komponentu **Složka**, pevná záložka **Všeobecné** bude k dispozici na stránce **Cíl elektronického hlášení**. 
+
+### <a name="use-the-output-unfolding-option"></a>Použijte možnost rozložení výstupu
+
+Na pevné záložce **Všeobecné** v poli **Odeslat složku jako** vyberte jednu z následujících hodnot:
+
+- **ZIP archiv** - Doručit vygenerovaný soubor jako soubor zip.
+- **Oddělit soubory** - Doručit každý soubor vygenerovaného souboru zip jako samostatný soubor.
+
+    > [!NOTE]
+    > Když vyberete **Oddělte soubory**, generovaný výstup se shromažďuje v paměti ve stavu zip. Proto maximální [limit velikosti souboru](er-compress-outbound-files.md) se použije pro výstup ZIP, když skutečná velikost souboru může překročit tento limit. Doporučujeme vybrat tuto hodnotu, pokud očekáváte, že velikost generovaného výstupu bude příliš velká.
+
+[![Konfigurace cíle pro komponentu Formát složky](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Omezení
+
+Pokud nastavíte pole **Odeslat složku jako** na **Jednotlivé soubory** pro komponentu **Složka**, která obsahuje další vnořené komponenty **Složka**, nastavení se rekurzivně nepoužije na vnořené komponenty **Složka**.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 

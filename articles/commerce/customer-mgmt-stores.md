@@ -2,7 +2,7 @@
 title: Správa zákazníků v obchodech
 description: Toto téma vysvětluje, jak mohou maloobchodníci povolit funkce správy zákazníků v místě prodeje (POS) v Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019980"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097201"
 ---
 # <a name="customer-management-in-stores"></a>Správa zákazníků v obchodech
 
@@ -35,7 +35,10 @@ Obchodní spolupracovníci mohou také zaznamenávat sekundární e-mailové adr
 
 ## <a name="default-customer-properties"></a>Výchozí vlastnosti zákazníka
 
-Maloobchodníci mohou použít stránku **Všechny obchody** v ústředí Commerce (**Retail a Commerce \> Kanály \> Obchody**) a přidružit výchozího zákazníka ke každému obchodu. Commerce poté zkopíruje vlastnosti definované pro výchozího zákazníka do všech nových záznamů o zákazníkovi, které jsou vytvořeny. Například dialogové okno **Vytvořit zákazníka** zobrazuje vlastnosti, které jsou zděděny od výchozího zákazníka, který je přidružen k obchodu. Mezi tyto vlastnosti patří typ zákazníka, skupina zákazníků, předvolba účtenky, měna a jazyk. Jakékoli přidružení (seskupení zákazníků) se dědí také od výchozího zákazníka. Finanční dimenze se však dědí ze skupiny zákazníků, která je přidružena k výchozímu zákazníkovi, nikoli od samotného výchozího zákazníka.
+Maloobchodníci mohou použít stránku **Všechny obchody** v ústředí Commerce (**Retail a Commerce \> Kanály \> Obchody**) a přidružit výchozího zákazníka ke každému obchodu. Commerce poté zkopíruje vlastnosti definované pro výchozího zákazníka do všech nových záznamů o zákazníkovi, které jsou vytvořeny. Například dialogové okno **Vytvořit zákazníka** zobrazuje vlastnosti, které jsou zděděny od výchozího zákazníka, který je přidružen k obchodu. Mezi tyto vlastnosti patří **typ zákazníka**, **skupina zákazníků**, **možnost účtenky**, **e-mail příjemce**, **měna** a **jazyk**. Jakékoli **přidružení** (seskupení zákazníků) se dědí také od výchozího zákazníka. **Finanční dimenze** se však dědí ze skupiny zákazníků, která je přidružena k výchozímu zákazníkovi, nikoli od samotného výchozího zákazníka.
+
+> [!NOTE]
+> Hodnota **e-mailu s účtenkou** se zkopíruje z výchozího zákazníka pouze v případě, že pro nově vytvořené zákazníky není poskytnuto ID e-mailu s potvrzením. To znamená, že pokud je ID výchozího e-mailu k dispozici u výchozího zákazníka, pak všichni zákazníci vytvoření z webu elektronického obchodování obdrží stejné ID e-mailové účtenky, protože neexistuje žádné uživatelské rozhraní, které by od zákazníka zachytilo ID e-mailu s účtenkou. Doporučujeme vám ponechat pole **e-mail s účtenkou** prázdné pro výchozího zákazníka obchodu a použít jej pouze v případě, že máte obchodní proces, který závisí na přítomné e-mailové adrese s účtenkou. 
 
 Prodejní spolupracovníci mohou pro zákazníka zachytit více adres. Jméno a telefonní číslo zákazníka se dědí z kontaktních informací, které jsou spojeny s každou adresou. Karta s náhledem **Adresy** záznamu zákazníka obsahuje pole **Účel**, které mohou prodejní spolupracovníci upravit. Pokud je typ zákazníka **Osoba**, výchozí hodnota je **Domov**. Pokud je typ zákazníka **Organizace**, výchozí hodnota je **Sídlo**. Mezi další hodnoty, které toto pole podporuje, patří **Domov**, **Kancelář** a **Poštovní schránka**. Hodnota pole **Země** pro adresu je zděděna z primární adresy, která je uvedena na stránce **Provozní jednotka** stránka v centrále Commerce v nabídce **Správa organizace \> Organizace \> Provozní jednotky**.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841978"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115090"
 ---
 # <a name="release-product-structures"></a>Uvolnění struktur produktu
 
@@ -103,6 +103,7 @@ Na záložce s náhledem **Obecné** zásad uvolnění produktu nastavte násled
 | Pole | popis |
 |---|---|
 | Typ produktu | Vyberte, zda se zásada vztahuje na produkty typu *Položka* nebo *Služba*. Po uložení záznamu toto nastavení nemůžete změnit. |
+| Typ výroby | Toto pole se zobrazí, pouze pokud jste povolili [řízení změn receptur](manage-formula-changes.md) ve vašem systému. Vyberte typ výroby, pro který platí tato zásada vydané verze:<ul><li>**Souběžný produkt** - Pomocí této zásady vydáné verze můžete spravovat souběžné produkty. Souběžné produkty se vyrábějí během procesní výroby a nejedná se o verzované nebo technické produkty. Zásady vydání pro souběžné produkty mohou pomoci zajistit, že důležitá nastavení, jako např **Skupina dimenzí úložiště** a **Sledování skupiny dimenzí** jsou nastaveny pomocí uvolněné šablony produktu před jejich vydáním společnosti.</li><li>**Vedlejší produkt** - Pomocí této zásady vydáné verze můžete spravovat vedlejší produkty. Vedlejší produkty se vyrábějí během procesní výroby a nejedná se o verzované nebo technické produkty. Zásady vydání pro vedlejší produkty mohou pomoci zajistit, že důležitá nastavení, jako např **Skupina dimenzí úložiště** a **Sledování skupiny dimenzí** jsou nastaveny pomocí uvolněné šablony produktu před jejich vydáním společnosti.</li><li>**Žádná** - Tuto zásadu použijte ke správě standardních produktů, které nejsou verzovanými nebo technickými produkty nebo souběžnými produkty či vedlejšími produkty.</li><li>**Položka plánování** - Pomocí této zásady vydání můžete spravovat položky plánování, které se vyrábějí pomocí procesní výroby. Položky plánování používají receptury. Podobají se položkám receptur, ale používají se k výrobě pouze souběžných produktů a vedlejších produktů, nikoli hotových produktů.</li><li>**Kusovník** - Tuto zásadu vydané verze použijte ke správě technických produktů, které nepoužívají vzorce a obvykle (ale nemusí) zahrnovat kusovníky.</li><li>**Receptura** - Pomocí této zásady vydání můžete spravovat dokončené položky, které se vyrábějí pomocí procesní výroby. Tyto položky budou mít recepturu, ale nikoli kusovník.</li></ul> |
 | Použít šablony | Vyberte jednu z následujících možností a určete, zda a jak mají být šablony uvolnění produktu použity, když se použije zásada:<ul><li>**Vždy** - Pro uvolnění musí být vždy použit produkt uvolněný pomocí šablony. Pokud vyberete tuto možnost, použijte záložku s náhledem **Všechny produkty** k určení šablony, která se používá pro každou společnost, do které uvolňujete Pokud nezadáte šablonu pro každou společnost, která je uvedena na záložce s náhledem **Všechny produkty**, při pokusu o uložení této zásady se zobrazí chyba.</li><li>**Volitelné** - Pokud je produkt uvolněný pomocí šablony uveden pro společnost uvedenou na záložce s náhledem **Všechny produkty**, tato šablona bude použita při uvolnění do této společnosti. Jinak nebude použita žádná šablona. Pokud vyberete tuto možnost, můžete zásadu uložit bez přiřazení šablon všem společnostem. (Nezobrazí se žádné varování.)</li><li>**Nikdy** - Pro společnosti, do kterých uvolníte, nebude použit žádný produkt vydaný pomocí šablony, a to ani v případě, že je zadána šablona pro společnosti uvedené na záložce s náhledem **Všechny produkty**. Sloupce šablony nebudou k dispozici.</li></ul> |
 | Aktivní | Pomocí této možnosti můžete zachovat zásady uvolnění. Nastavte možnost na *Ano* pro všechny zásady uvolnění, které používáte. Nastavte ji na *Ne*, čímž označíte zásadu uvolnění jako neaktivní, když se nepoužívá. Všimněte si, že nemůžete deaktivovat zásadu uvolnění, která je přiřazena kategorii technického produktu, a můžete odstranit pouze neaktivní zásady uvolnění. |
 

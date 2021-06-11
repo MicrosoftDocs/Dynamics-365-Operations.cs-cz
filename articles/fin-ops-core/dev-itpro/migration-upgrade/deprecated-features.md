@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921416"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112614"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -104,6 +104,39 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Do 1. října 2020 plánujeme již nepodporovat položku **Sestava domácí daně – odkaz na funkci IT-00003**. |
 
+## <a name="october-2019-deprecation-announcement"></a>Říjen 2019 - oznámení o ukončení podpory
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Vývojové diagramy v modelování podnikových procesů
+
+<table>
+<tbody>
+<tr>
+<td><strong>Důvod pro zrušení/odstranění</strong></td>
+<td>V aplikaci modelování podnikových procesů (BPM) zastaráváme komponentu vývojových diagramů, protože původní návrh způsobil nízké využití.</td>
+</tr>
+<tr>
+<td><strong>Nahrazeno jinou funkcí?</strong></td>
+<td>Ne</td>
+</tr>
+<tr>
+<td><strong>Ovlivněné oblasti</strong></td>
+<td>Modelování podnikových procesů</td>
+</tr>
+<tr>
+<td><strong>Stav</strong></td>
+<td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna během roku 2020. Tyto funkce nebudou dostupné:
+<ul>
+<li>Všechny vývojové diagramy budou pouze pro čtení a nebudou k dispozici pro úpravy. Rovněž nebudou k dispozici vlastnosti tvaru, které jsou spojeny s činnostmi vývojového diagramu. Tyto vývojové diagramy zahrnují jak výchozí vývojové diagramy, které jsou automaticky generovány, a přizpůsobené vývojové diagramy, které jsou upraveny na základě těchto výchozích vývojových diagramů.</li>
+<li>Kroky procesu budou pouze pro čtení a nebudou k dispozici pro úpravy.</li>     
+<li>Tato funkce analýzy přizpůsobení a mezer nebude k dispozici. Proto nebude automaticky vytvořen nebo k dispozici pro export žádný seznam mezer.
+<p><strong>Poznámka:</strong> Tato funkce byla dříve zastaralá a nahrazena integracemi Microsoft Azure DevOps.</p>
+</li>
+<li>Historie verzí vývojového diagramu nebude k dispozici.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 s aktualizací Platform Update 29
 

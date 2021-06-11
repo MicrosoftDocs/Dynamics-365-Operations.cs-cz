@@ -2,7 +2,7 @@
 title: Modul výsledků hledání
 description: Tohle téma se zabývá moduly výsledků hledání a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794108"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117126"
 ---
 # <a name="search-results-module"></a>Modul výsledků hledání
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly výsledků hledání a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -51,9 +52,12 @@ V následující tabulce jsou uvedeny vlastnosti modulů výsledků hledání sp
 | Skrýt zobrazení hierarchie kategorií | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, zobrazení hierarchie kategorií na stránce bude skryto. Tato vlastnost by měla být nastavena na **True**, pokud používáte [modul popisu cesty](add-breadcrumb.md) pro zobrazení hierarchie kategorií.|
 | Zahrnout do výsledků vyhledávání atributy produktu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, budou vráceny atributy produktů ve výsledcích hledání. Ačkoli tyto atributy lze zobrazit na webu Commerce, je nutné rozšíření.|
 | Zobrazit ceny na pobočkách | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, ceny umístění pro produkty se zobrazí ve výsledcích vyhledávání, když přihlášený uživatel prochází stránku. |
+| Aktualizujte panel zpřesnění | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, panel zpřesnění bude aktualizován, jakmile budou vybrána zpřesnění. V tomto režimu se některá zpřesnění s vícenásobným výběrem budou při aktualizaci panelu zpřesnění chovat jako zpřesnění s jedním výběrem. |
 
 > [!IMPORTANT]
-> V Dynamics 365 Commerce verze 10.0.16 a novější lze konfiguraci **Zobrazit ceny umístění** použít k zobrazení cen umístění na stránce.
+> V Commerce verze 10.0.16 a novější lze konfiguraci **Zobrazit ceny umístění** použít k zobrazení cen umístění na stránce.
+>
+> Ve verzi Commerce verze 10.0.20 a novějších lze konfiguraci **Aktualizujte panel zpřesnění** použít k aktualizaci panelu zpřesnění během výběru zpřesnění.
 
 ## <a name="supported-modules"></a>Podporované moduly
 

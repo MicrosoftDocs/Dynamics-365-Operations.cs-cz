@@ -1,5 +1,5 @@
 ---
-title: Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
+title: Konsolidace dodávek při uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
 description: Toto téma představuje scénář, ve kterém je více objednávek uvolněno do skladu ve stejném periodickém postupu automatizovaného uvolnění do skladu.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 82a95ecf196ef7c33831da7f4d03df629b17fa53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c02c8b4cd43e17d6dcf34e1912dbc68c19e60694
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807553"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6116944"
 ---
-# <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
+# <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a>Konsolidace dodávek při uvolnění do skladu pomocí automatického uvolnění prodejních objednávek
 
 [!include [banner](../includes/banner.md)]
 

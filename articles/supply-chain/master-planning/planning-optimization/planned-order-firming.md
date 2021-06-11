@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019487"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103621"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -77,6 +77,7 @@ Chcete-li ručně zpracovat plánované objednávky, vyhledejte a vyberte pláno
 
     - **Seskupit podle dodavatele** - Nastavte tuto možnost na *Ano* pro seskupení plánovaných nákupních objednávek a vytvoření jedné nákupní objednávky na dodavatele během spouštění. Případně lze vytvořit jednu nákupní objednávku s jedním řádkem pro každou plánovanou objednávku.
     - **Seskupit podle skupiny nákupčích** - Tuto možnost nastavte na *Ano*, pokud má skupina plánovaných objednávek tvořit jedinou nákupní objednávku, která slučuje skupinu dodavatele a nákupčího. Pro použití této možnosti je také nutné nastavit možnost **Seskupit podle dodavatele** na *Ano*.
+    - **Seskupit podle kupní smlouvy** - Nastavte tuto možnost na *Ano*, chcete-li seskupit plánované nákupní objednávky, které mají stejného dodavatele jako stávající nákupní smlouvy, a vytvořit jednu nákupní objednávku na každou smlouvu. Tato možnost je automaticky povolena, když je povolena možnost **Seskupit podle dodavatele**. Chcete-li použít **Seskupit podle kupní smlouvy**, možnost **Najděte kupní smlouvu** musí být nastavena na *Ano* na stránce **Hlavní plánovací parametry**.
     - **Seskupit podle období** (v části **Nákupní objednávky**) - Vyberte období, do kterého chcete seskupit plánované nákupní objednávky. Pro použití této možnosti je také nutné vybrat možnost **Seskupit podle dodavatele**.
     - **Seskupit podle období** (v části **Převody**) - Vyberte období, do kterého chcete seskupit plánované převodní příkazy. Objednávky budou seskupeny podle hodnot **Ze skladu** a **Do skladu**.
 

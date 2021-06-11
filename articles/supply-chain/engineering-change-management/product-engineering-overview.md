@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947513"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115042"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -50,15 +50,20 @@ Správci mohou funkce zapnout provedením následujících kroků.
 
 1. Přejděte do [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Zkontrolovat aktualizace.
-1. Zapněte funkci s názvem **Správa technických změn**.
-1. Chcete-li ji použít, zapněte také funkci s názvem **Verze dimenze produktu**.
+1. Zapněte funkci s názvem *Správa technických změn*.
+1. Chcete-li ji použít, zapněte také funkci s názvem *Verze dimenze produktu*.
 
 Správci mohou zapnout konfigurační klíče provedením následujících kroků.
 
 1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
 1. Rozbalte uzel **Obchod**.
-1. Povolte konfigurační klíč pro hlavní funkci výběrem zaškrtávacího políčka **Správa technických změn**. (Není nutné rozšiřovat uzel, pokud také nechcete deaktivovat jednu nebo obě její dílčí funkce.)
+1. Povolte konfigurační klíč pro hlavní funkci výběrem zaškrtávacího políčka **Správa technických změn**.
+1. Rozbalte uzel **Řízení technických změn** a podle potřeby zaškrtněte nebo zrušte zaškrtnutí následujících políček (v závislosti na funkcích, které chcete použít):
+
+    - **Hledání atributů** - Zaškrtnutím tohoto políčka povolíte [funkce vyhledávání atributů](engineering-attributes-and-search.md). Doporučujeme tuto funkci povolit, ale pokud ji nepoužíváte, můžete toto zaškrtávací políčko zrušit.
+    - **Řízení změn pro procesní výrobu** - Toto políčko zaškrtněte, pokud chcete pomocí funkcí správy technických změn spravovat změny ve vzorcích pro procesní výrobu. Pokud vzorce nemusíte spravovat, můžete toto zaškrtávací políčko zrušit. Další informace viz [Spravujte změny v recepturách a jejich látkách](manage-formula-changes.md).
+
 1. Chcete-li také použít dimenzi verze, zaškrtněte také políčko **Dimenze produktu - verze**. (Toto zaškrtávací políčko je dále v seznamu, není vnořeno pod uzlem **Správa technických změn**.)
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 

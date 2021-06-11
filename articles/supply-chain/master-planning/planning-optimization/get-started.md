@@ -2,7 +2,7 @@
 title: Začínáme s optimalizací plánování
 description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907660"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103586"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -40,7 +40,7 @@ Než zapnete optimalizaci plánování, důrazně doporučujeme, abyste vyhodnot
 
 ## <a name="availability"></a>Dostupnost
 
-Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Evropa, Velká Británie, Austrálie a Asie a Tichomoří. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována.
+Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Evropa, Spojené království, Austrálie a Asie a Tichomoří. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována.
 
 Všimněte si, že optimalizace plánování nepodporuje místní nasazení Dynamics 365 Supply Chain Management.
 
@@ -58,7 +58,7 @@ Před instalací doplňku Optimalizace plánování musí být splněny následu
 
 - Musíte používat Supply Chain Management v LCS aktivovaném prostředí s vysokou dostupností, vrstvy 2 nebo vyšší (ne prostředí OneBox) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější. Pokud se pokusíte nainstalovat doplněk v prostředí OneBox, instalace se nedokončí a budete ji muset zrušit.
 
-- Váš systém musí být nastaven na integraci Power Platform. Další informace viz [Předpoklady pro nastavení doplňků](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) a [Nastavení doplňků](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Váš systém musí být nastaven na integraci Power Platform. Další informace naleznete v tématu [Integrace Microsoft Power Platform s aplikacemi Finance and Operations](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Povolení licence Optimalizace plánování
 

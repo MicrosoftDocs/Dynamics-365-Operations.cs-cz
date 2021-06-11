@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923531"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111717"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -31,6 +31,19 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Oznámení o ukončení podpory funkce od května 2021
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Portál globalizace Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Ukončujeme podporu portálu globalizace v LCS, protože tuto funkci nahradily další služby založené na LCS. |
+| **Nahrazeno jinou funkcí?**   | Ano, tato funkce je nahrazena funkcemi LCS [Hledání problému](../lifecycle-services/issue-search-lcs.md) a [Služba odesílání regulačních výstrah Dynamics](../lcs-solutions/submit-localization-alerts.md). |
+| **Ovlivněné oblasti produktu**         | Portál globalizace v LCS|
+| **Možnost nasazení**              | Cloudové nasazení |
+| **Stav**                         | Zastaralé: Plánované datum odstranění v květnu 2022. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funkce odstraněna s účinností od 28. ledna 2021
 
@@ -56,7 +69,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Visual Studio 2017 nahradí Visual Studio 2015 jako nasazená a požadovaná verze. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé. Po aktualizaci budou předchozí nástroje X++ odebrány z Visual Studio 2015 a aktualizované nástroje se nebudou instalovat ve Visual Studio 2015. Na hostovaná sestavení to nemá žádný dopad. U sestavování virtuálních počítačů je nutné ručně aktualizovat kanál sestavení (definice sestavení), aby se změnila závislost z MSBuild 14.0 (Visual Studio 2015) na MSBuild 15.0 (Visual Studio 2017), jak je popsáno v části [Aktualizace staršího kanálu v Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Stav**                         | Zastaralé: Po aktualizaci budou předchozí nástroje X++ odebrány z Visual Studio 2015 a aktualizované nástroje se nebudou instalovat ve Visual Studio 2015. Na hostovaná sestavení to nemá žádný dopad. U sestavování virtuálních počítačů je nutné ručně aktualizovat kanál sestavení (definice sestavení), aby se změnila závislost z MSBuild 14.0 (Visual Studio 2015) na MSBuild 15.0 (Visual Studio 2017), jak je popsáno v části [Aktualizace staršího kanálu v Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Uživatelský avatar 
 
@@ -76,7 +89,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Žádný |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé. Ve vydání z října 2021 je naplánováno odstranění všech kódů EP. |
+| **Stav**                         | Zastaralé: Ve vydání z října 2021 je naplánováno odstranění všech kódů EP. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.15 aplikací Finance and Operations
 
@@ -88,7 +101,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
 | **Ovlivněné oblasti produktu**         | Všechny produkty Dynamics 365 |
 | **Možnost nasazení**              | Vše|
-| **Stav**                         | Zastaralé. Internet Explorer 11 nebude podporován po srpnu 2021.|
+| **Stav**                         | Zastaralé: Internet Explorer 11 nebude podporován po srpnu 2021.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Doplněk sady Visual Studio pro použití oprav hotfix metadat
@@ -181,7 +194,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Další informace získáte v tématu [Konfigurace podmíněného přístupu Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).|
 | **Ovlivněné oblasti produktu**         | Zabezpečení |
 | **Možnost nasazení**              | Cloud |
-| **Stav**                         | **Zastaralé:** Tato funkce je plně zastaralá pro samoobslužná nasazení. |
+| **Stav**                         | Zastaralé: Tato funkce je plně zastaralá pro samoobslužná nasazení. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -201,7 +214,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Tato chyba kompilátoru trvale nahrazuje upozornění kompilátoru.  |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | **Zastaralé:** upozornění kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.11 aplikací Finance and Operations. |
+| **Stav**                         | Zastaralé: upozornění kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.11 aplikací Finance and Operations. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Licence ISV vytvořené pomocí algoritmu hash SHA1
 
@@ -211,7 +224,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Ano. Vytvoření licencí pomocí prostředí Windows PowerShell. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | <strong>Zastaralé:</strong> licence ISV, které byly vytvořeny pomocí algoritmu hash SHA1. Tento algoritmus závisí na certifikátech, které byly vytvořeny pomocí nástroje MakeCert, a tento nástroj se již nepoužívá.<p><strong>Zastaralé:</strong> použití algoritmu SHA1 pro účely zabezpečení nebo vytřídění. Algoritmus SHA1 přestane fungovat v na začátku roku 2021. Proto by již neměl být používán.<p><strong>Odebráno:</strong> podpora pro příchozí nebo odchozí požadavky zabezpečení TLS 1.0 a TLS 1.1. |
+| **Stav**                         | Zastaralé: licence ISV, které byly vytvořeny pomocí algoritmu hash SHA1. Tento algoritmus závisí na certifikátech, které byly vytvořeny pomocí nástroje MakeCert, a tento nástroj se již nepoužívá.<br><br>Zastaralé: použití algoritmu SHA1 pro účely zabezpečení nebo vytřídění. Algoritmus SHA1 přestane fungovat v na začátku roku 2021. Proto by již neměl být používán.<br><br>Odebráno: podpora pro příchozí nebo odchozí požadavky zabezpečení TLS 1.0 a TLS 1.1. |
 
 ## <a name="platform-update-32"></a>Platform update 32
 

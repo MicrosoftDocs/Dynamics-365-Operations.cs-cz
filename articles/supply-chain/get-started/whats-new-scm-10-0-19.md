@@ -1,5 +1,5 @@
 ---
-title: Náhled Dynamics 365 Supply Chain Management 10.0.19 (červenec 2021)
+title: Náhled Dynamics 365 Supply Chain Management 10.0.19 (červen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 8bb4a7c8085b40ab3eca72675dbe7a3be412d8c1
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961674"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114968"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-july-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.19 (červenec 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.19 (červen 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,23 +26,35 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 - **Verze Preview:** duben 2021
 - **Obecně dostupné vydání (vlastní aktualizace):** červen 2021
-- **Obecně dostupné vydání (automatická aktualizace):** červenec 2021
+- **Obecně dostupné vydání (automatická aktualizace):** červen 2021
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje odkazy na související dokumentaci.
+V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci.
 
 Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné.
 
 | Oblast funkce | Funkce | Další informace |
 |---|---|---|
-| Zásoby a logistika | [Optimalizace exportu datové entity kontaktní osoby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | *Není k dispozici.* |
+| Zásoby a logistika | [Optimalizace exportu datové entity kontaktní osoby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Je-li tato funkce povolena, změny odkazovaných dat nezpůsobí zahrnutí souvisejících kontaktů do dalšího přírůstkového exportu. Je-li tato funkce zakázána, změny odkazovaných dat způsobí zahrnutí souvisejících kontaktů do dalšího přírůstkového exportu. |
 | Zásoby a logistika | [Přírůstková vylepšení možností provádění skladu s jednotkami škálování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Zprávy procesoru zpráv](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Úprava skladových zásob](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md) |
-| Zásoby a logistika | [Funkce vyhledávání pro pole Úvod do dokumentu a Závěr dokumentu na stránce Prodejní nabídka](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | *Není k dispozici.* |
+| Zásoby a logistika | [Funkce vyhledávání pro pole Úvod do dokumentu a Závěr dokumentu na stránce Prodejní nabídka](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Funkce přidá funkci vyhledávání pro pole **Úvod do dokumentu** a **Závěr dokumentu** na stránce **Prodejní nabídka**.<br><br>Tato funkce je povolena ve výchozím nastavení. |
 | Zásoby a logistika | [Provádění skladu s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Výroba | [Provádění výroby s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Výroba | [Provádění výroby s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraničního zařízení na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Plánování | [Plánování nekonečné kapacity pro optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Tato funkce umožňuje plánování kapacity s nekonečnou kapacitou pro optimalizaci plánování. Bez této funkce plánované výrobní zakázky získají svůj dodací čas z dodaného času inventáře vydaných produktů bez ohledu na časový rozvrh plánování. |
 | Plánování | Plánované potvrzení objednávek založené na dotazech | [Potvrdit plánované objednávky](../master-planning/planning-optimization/planned-order-firming.md) |
 | Řízení informací o produktech | [Vylepšení stránky návrhů variant](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Vytváření předdefinovaných variant produktů](../pim/tasks/create-predefined-product-variants.md) |
+
+## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze
+
+V následující tabulce je uveden seznam vylepšených funkcí této verze. Každý z nich poskytuje přírůstkové vylepšení stávající funkce. Protože se jedná pouze o vylepšení, nejsou uvedeny v seznamu [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Aby se však zajistilo, že tato vylepšení nebudou v rozporu s vašimi stávajícími přizpůsobeními nebo předvolbami, je každé z nich ve výchozím nastavení vypnuto (pokud není uvedeno jinak). Pokud chcete použít některou z těchto funkcí, musíte ji výslovně povolit ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
+|---|---|---|
+| Prodej a marketing | Vylepšení výkonu čištění historie prodeje | Vyčištění historie prodeje může trvat dlouho, pokud se zřídka spouští v prostředích s velkým objemem aktualizací prodeje. Chcete-li zkrátit dobu trvání a zlepšit spolehlivost, tato funkce rozděluje vyčištění na dávky, které běží po omezenou dobu. Kde je to možné, využijí se možnosti databáze, aby se minimalizovalo zamykání a zabránilo se spojování transakčních tabulek během čištění. |
+| Prodej a marketing | Aktualizovat požadované datum přijetí o datum potvrzení pro mezipodnikové objednávky | Tato funkce vám umožňuje řídit, co se stane s hodnotami pole data prodeje a nákupu při použití mezipodnikového přímého doručení. Můžete si vybrat, zda bude systém požadovaná data aktualizovat, nebo jejich aktualizaci přeskočit. Pokud aktualizaci přeskočíte, budou požadovaná data představovat to, co zákazník požadoval. Pokud povolíte aktualizaci, požadovaná data (při použití kontroly data dodání) představují pouze zpočátku to, co zákazník požadoval. Kontrola data dodání, pokud se liší od *Žádný*, zruší to, co bylo původně požadováno. Tuto možnost můžete nastavit pomocí nového nastavení **Aktualizovat požadované datum přijetí o potvrzené datum** mezipodnikového dodavatele nebo nastavení zákazníka.<br><br>Pokud je funkce deaktivována, systém přepíše požadované datum přijetí u původních prodejních objednávek na základě pravidla kontroly data dodání, ale požadované datum odeslání zůstane tak, jak je. |
+| Řízení skladu | Zaokrouhlit množství dolů na nejbližší prodejní jednotku při uvolnění do skladu | Tato funkce přidává možnost, která může omezit množství objednávek při propuštění do skladu. Pokud je tato možnost povolena, množství objednávek bude zaokrouhleno dolů na nejbližší celou prodejní jednotku a objednávky obsahující množství pro méně než jednu prodejní jednotku budou pro vydání odmítnuty. |
+| Řízení skladu | Metoda vlny „plánované vytvoření práce“ v celé organizaci | Po povolení této funkce bude metoda vlny *Plánování vytvoření práce* přidána a nakonfigurována pro paralelní běh napříč všemi právnickými osobami. Bude také ovlivněno několik dalších nastavení. Úplné informace viz [Plánování vytváření práce během vlny](../warehousing/configure-wave-schedule-work-creation.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
@@ -62,7 +74,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.19 aplikací Finance and Operations (červenec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.19 aplikací Finance and Operations (červen 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

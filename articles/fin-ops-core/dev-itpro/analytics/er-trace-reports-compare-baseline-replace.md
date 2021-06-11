@@ -1,5 +1,5 @@
 ---
-title: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
+title: Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
 description: Toto téma popisuje vylepšení funkce základní úrovně ER v Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019).
 author: NickSelin
 ms.date: 06/19/2019
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 483d3ac7cd3192ffd4c785c4031a168af503f087
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 49ca9a878b9289b02f9bb9346190425197e0ceea
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743598"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117028"
 ---
-# <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
+# <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
 
 [!include[banner](../includes/banner.md)]
 
