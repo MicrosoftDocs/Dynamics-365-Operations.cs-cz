@@ -2,91 +2,69 @@
 title: Nastavení duálního zápisu z Lifecycle Services
 description: Toto téma vysvětluje, jak nastavit připojení pro duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748534"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103562"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a><span data-ttu-id="adc91-103">Nastavení duálního zápisu z Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="adc91-103">Dual-write setup from Lifecycle Services</span></span>
+# <a name="dual-write-setup-from-lifecycle-services"></a><span data-ttu-id="ff4fd-103">Nastavení duálního zápisu z Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="ff4fd-103">Dual-write setup from Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="adc91-104">V tomto tématu je vysvětleno, jak zřídit připojení s dvojím zápisem mezi novým prostředím Finance and Operations a novým prostředím Dataverse z Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="adc91-104">This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Dataverse environment from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="ff4fd-104">Toto téma vysvětluje, jak povolit duální zápis z Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="ff4fd-104">This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="adc91-105">Předpoklady</span><span class="sxs-lookup"><span data-stu-id="adc91-105">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ff4fd-105">Předpoklady</span><span class="sxs-lookup"><span data-stu-id="ff4fd-105">Prerequisites</span></span>
 
-<span data-ttu-id="adc91-106">Připojení s dvojím zápisem může nastavit pouze správce.</span><span class="sxs-lookup"><span data-stu-id="adc91-106">You must be an admin to set up a dual-write connection.</span></span>
+<span data-ttu-id="ff4fd-106">Musíte vyplnit integraci Power Platform, jak je popsáno v následujících tématech:</span><span class="sxs-lookup"><span data-stu-id="ff4fd-106">You must complete the Power Platform integration as described in the following topics:</span></span>
 
-+ <span data-ttu-id="adc91-107">Musíte mít přístup k tomuto klientovi.</span><span class="sxs-lookup"><span data-stu-id="adc91-107">You must have access to the tenant.</span></span>
-+ <span data-ttu-id="adc91-108">Musíte být správce v prostředích Finance and Operations i Dataverse.</span><span class="sxs-lookup"><span data-stu-id="adc91-108">You must be an admin in both Finance and Operations environments and Dataverse environments.</span></span>
++ [<span data-ttu-id="ff4fd-107">Integrace Power Platform - povolit během nasazení prostředí</span><span class="sxs-lookup"><span data-stu-id="ff4fd-107">Power Platform Integration - Enable during environment deployment</span></span>](../../power-platform/overview.md#enable-during-environment-deployment)
++ [<span data-ttu-id="ff4fd-108">Integrace Power Platform - nastavit po nasazení prostředí</span><span class="sxs-lookup"><span data-stu-id="ff4fd-108">Power Platform integration - Set up after environment deployment</span></span>](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a><span data-ttu-id="adc91-109">Nastavení připojení s dvojím zápisem</span><span class="sxs-lookup"><span data-stu-id="adc91-109">Set up a dual-write connection</span></span>
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a><span data-ttu-id="ff4fd-109">Nastavení duálního zápisu pro nová prostředí Dataverse</span><span class="sxs-lookup"><span data-stu-id="ff4fd-109">Set up dual-write for new Dataverse environments</span></span>
 
-<span data-ttu-id="adc91-110">Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="adc91-110">Follow these steps to set up the dual-write connection.</span></span>
+<span data-ttu-id="ff4fd-110">Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o prostředí**:</span><span class="sxs-lookup"><span data-stu-id="ff4fd-110">Follow these steps to set up dual-write from LCS **Environment Details** page:</span></span>
 
-1. <span data-ttu-id="adc91-111">V LCS přejděte na svůj projekt.</span><span class="sxs-lookup"><span data-stu-id="adc91-111">In LCS, go to your project.</span></span>
-2. <span data-ttu-id="adc91-112">Pro nasazení nového prostředí vyberte **Konfigurace**.</span><span class="sxs-lookup"><span data-stu-id="adc91-112">Select **Configure** to deploy a new environment.</span></span>
-3. <span data-ttu-id="adc91-113">Vyberte verzi.</span><span class="sxs-lookup"><span data-stu-id="adc91-113">Select the version.</span></span> 
-4. <span data-ttu-id="adc91-114">Vyberte topologii.</span><span class="sxs-lookup"><span data-stu-id="adc91-114">Select the topology.</span></span> <span data-ttu-id="adc91-115">Je-li k dispozici pouze jedna topologie, bude automaticky vybrána.</span><span class="sxs-lookup"><span data-stu-id="adc91-115">If only one topology is available, it's automatically selected.</span></span>
-5. <span data-ttu-id="adc91-116">Proveďte první kroky v průvodci **Nastavení nasazení**.</span><span class="sxs-lookup"><span data-stu-id="adc91-116">Complete the first steps in the **Deployment settings** wizard.</span></span>
-6. <span data-ttu-id="adc91-117">Na kartě **Dataverse** proveďte jeden z následujících kroků:</span><span class="sxs-lookup"><span data-stu-id="adc91-117">On the **Dataverse** tab, follow one of these steps:</span></span>
+1. <span data-ttu-id="ff4fd-111">Na stránce **Podrobnosti o prostředí** rozbalte sekci **Integrace Power Platform**.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-111">On the **Environment Details** page, expand the **Power Platform Integration** section.</span></span>
 
-    - <span data-ttu-id="adc91-118">Pokud je prostředí Dataverse již pro klienta zřízeno, můžete je vybrat.</span><span class="sxs-lookup"><span data-stu-id="adc91-118">If a Dataverse environment is already provisioned for your tenant, you can select it.</span></span>
+2. <span data-ttu-id="ff4fd-112">Vyberte tlačítko **Aplikace pro dvojí zápis**.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-112">Select the **Dual-write application** button.</span></span>
 
-        1. <span data-ttu-id="adc91-119">Nastavte možnost **Konfigurovat Dataverse** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="adc91-119">Set the **Configure Dataverse** option to **Yes**.</span></span>
-        2. <span data-ttu-id="adc91-120">Ve sloupci **Dostupná prostředí** vyberte prostředí, které chcete integrovat s vašimi daty Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="adc91-120">In the **Available environments** column, select the environment to integrate with your Finance and Operations data.</span></span> <span data-ttu-id="adc91-121">Seznam obsahuje všechna prostředí, v nichž máte oprávnění správce.</span><span class="sxs-lookup"><span data-stu-id="adc91-121">The list includes all environments where you have admin privileges.</span></span>
-        3. <span data-ttu-id="adc91-122">Zaškrtnutím políčka **Souhlasím** dáte najevo, že souhlasíte s podmínkami a ujednáními.</span><span class="sxs-lookup"><span data-stu-id="adc91-122">Select the **Agree** check box to indicate that you agree to the terms and conditions.</span></span>
+    ![Integrace Power Platform](media/powerplat_integration_step2.png)
 
-        ![Karta Dataverse, když už je pro klienta zřízeno prostředí Dataverse](../dual-write/media/lcs_setup_1.png)
+3. <span data-ttu-id="ff4fd-114">Zkontrolujte smluvní podmínky a poté vyberte **Konfigurovat**.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-114">Review the terms and conditions, and then select **Configure**.</span></span>
 
-    - <span data-ttu-id="adc91-124">Pokud váš klient ještě nemá prostředí Dataverse, bude zřízeno nové prostředí.</span><span class="sxs-lookup"><span data-stu-id="adc91-124">If your tenant doesn't already have a Dataverse environment, a new environment will be provisioned.</span></span>
+4. <span data-ttu-id="ff4fd-115">Pokračujte volbou tlačítka **OK**.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-115">Select **OK** to continue.</span></span>
 
-        1. <span data-ttu-id="adc91-125">Nastavte možnost **Konfigurovat Dataverse** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="adc91-125">Set the **Configure Dataverse** option to **Yes**.</span></span>
-        2. <span data-ttu-id="adc91-126">Zadejte název prostředí Dataverse.</span><span class="sxs-lookup"><span data-stu-id="adc91-126">Enter a name for the Dataverse environment.</span></span>
-        3. <span data-ttu-id="adc91-127">Vyberte oblast, ve které má být prostředí nasazeno.</span><span class="sxs-lookup"><span data-stu-id="adc91-127">Select the region to deploy the environment in.</span></span>
-        4. <span data-ttu-id="adc91-128">Vyberte výchozí jazyk a měnu pro prostředí.</span><span class="sxs-lookup"><span data-stu-id="adc91-128">Select the default language and currency for the environment.</span></span>
+5. <span data-ttu-id="ff4fd-116">Pokrok můžete sledovat pravidelným obnovováním stránky s podrobnostmi o prostředí.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-116">You can monitor the progress by periodically refreshing the environment details page.</span></span> <span data-ttu-id="ff4fd-117">Nastavení obvykle trvá 30 minut nebo méně.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-117">Setup typically takes 30 minutes or less.</span></span>  
 
-            > [!NOTE]
-            > <span data-ttu-id="adc91-129">Jazyk a měnu nelze později změnit.</span><span class="sxs-lookup"><span data-stu-id="adc91-129">You can't change the language and currency later.</span></span>
+6. <span data-ttu-id="ff4fd-118">Po dokončení nastavení vás bude informovat zpráva, zda byl proces úspěšný nebo zda došlo k selhání.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-118">When the setup is complete, a message will inform you if the process was successful or if there was a failure.</span></span> <span data-ttu-id="ff4fd-119">Pokud se nastavení nezdařilo, zobrazí se související chybová zpráva.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-119">If the setup failed, then a related error message is displayed.</span></span> <span data-ttu-id="ff4fd-120">Před přechodem k dalšímu kroku musíte opravit všechny chyby.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-120">You must fix any errors before moving to the next step.</span></span>
 
-        5. <span data-ttu-id="adc91-130">Zaškrtnutím políčka **Souhlasím** dáte najevo, že souhlasíte s podmínkami a ujednáními.</span><span class="sxs-lookup"><span data-stu-id="adc91-130">Select the **Agree** check box to indicate that you agree to the terms and conditions.</span></span>
+7. <span data-ttu-id="ff4fd-121">Vyberte **Odkaz na prostředí Power Platform**, chcete-li vytvořit spojení mezi Dataverse a databázemi aktuálního prostředí.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-121">Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases.</span></span> <span data-ttu-id="ff4fd-122">To obvykle trvá méně než 5 minut.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-122">This typically takes less than 5 minutes.</span></span>
 
-        ![Karta Dataverse, pokud váš klient ještě nemá prostředí Dataverse](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Odkaz na prostředí Power Platform":::
 
-7. <span data-ttu-id="adc91-132">Proveďte zbývající kroky v průvodci **Nastavení nasazení**.</span><span class="sxs-lookup"><span data-stu-id="adc91-132">Complete the remaining steps in the **Deployment settings** wizard.</span></span>
-8. <span data-ttu-id="adc91-133">Poté, co má prostředí stav **Nasazeno** otevřete stránku s podrobnostmi o prostředí.</span><span class="sxs-lookup"><span data-stu-id="adc91-133">After the environment has a status of **Deployed**, open the environment details page.</span></span> <span data-ttu-id="adc91-134">V sekci **Integrace prostředí Power Platform** jsou uvedeny názvy prostředí Finance and Operations a Dataverse, která jsou propojena.</span><span class="sxs-lookup"><span data-stu-id="adc91-134">The **Power Platform Integration** section shows the names of the Finance and Operations environment and the Dataverse environment that are linked.</span></span>
+8. <span data-ttu-id="ff4fd-124">Po dokončení propojení se zobrazí hypertextový odkaz.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-124">When the linking is complete, a hyperlink is displayed.</span></span> <span data-ttu-id="ff4fd-125">Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-125">Use the link to sign in to the dual-write administration area in the Finance and Operations environment.</span></span> <span data-ttu-id="ff4fd-126">Odtud můžete nastavit mapování entit.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-126">From there, you can set up entity mappings.</span></span>
 
-    ![Sekce integrace Power Platform](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a><span data-ttu-id="ff4fd-127">Nastavení duálního zápisu pro existující prostředí Dataverse</span><span class="sxs-lookup"><span data-stu-id="ff4fd-127">Set up dual-write for an existing Dataverse environment</span></span>
 
-9. <span data-ttu-id="adc91-136">Správce prostředí Finance and Operations se musí přihlásit k LCS a dokončit propojení výběrem **Odkaz na CDS for Apps**.</span><span class="sxs-lookup"><span data-stu-id="adc91-136">An admin of the Finance and Operations environment must sign in to LCS and select **Link to CDS for Apps** to complete the link.</span></span> <span data-ttu-id="adc91-137">Na stránce s podrobnostmi o prostředí jsou uvedeny kontaktní informace na správce.</span><span class="sxs-lookup"><span data-stu-id="adc91-137">The environment details page shows the admin's contact information.</span></span>
+<span data-ttu-id="ff4fd-128">Chcete-li nastavit duální zápis pro existující prostředí Dataverse, musíte vytvořit [lístek podpory](../../lifecycle-services/lcs-support.md) společnosti Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-128">To set up dual-write for an existing Dataverse environment, you must create a Microsoft [support ticket](../../lifecycle-services/lcs-support.md).</span></span> <span data-ttu-id="ff4fd-129">Lístek musí obsahovat:</span><span class="sxs-lookup"><span data-stu-id="ff4fd-129">The ticket must include:</span></span>
 
-    <span data-ttu-id="adc91-138">Po dokončení propojení se stav aktualizuje na **Propojení prostředí proběhlo úspěšně**.</span><span class="sxs-lookup"><span data-stu-id="adc91-138">After the link is completed, the status is updated to **Environment linking successfully completed**.</span></span>
-
-10. <span data-ttu-id="adc91-139">Chcete-li otevřít pracovní prostor **Integrace dat** v prostředí Finance and Operations a ovládat šablony, které jsou k dispozici, vyberte možnost **Odkaz na CDS for Apps**.</span><span class="sxs-lookup"><span data-stu-id="adc91-139">To open the **Data integration** workspace in the Finance and Operations environment and control the templates that are available, select **Link to CDS for Apps**.</span></span>
-
-    ![Tlačítko Odkaz na CDS for Apps v sekci s informacemi o Power Platform](../dual-write/media/lcs_setup_4.png)
++ <span data-ttu-id="ff4fd-130">ID vašeho prostředí Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-130">Your Finance and Operations environment ID.</span></span>
++ <span data-ttu-id="ff4fd-131">Název vašeho prostředí ze služby Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-131">Your environment name from Lifecycle Services.</span></span>
++ <span data-ttu-id="ff4fd-132">ID organizace Dataverse nebo ID prostředí Power Platform z Centra pro správu Power Platform.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-132">The Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center.</span></span> <span data-ttu-id="ff4fd-133">Ve svém lístku požádejte, aby ID bylo použito jako instance integrace Power Platform.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-133">In your ticket, request that the ID be the instance used for Power Platform integration.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="adc91-141">Nelze zrušit propojení prostředí pomocí LCS.</span><span class="sxs-lookup"><span data-stu-id="adc91-141">You can't unlink environments by using LCS.</span></span> <span data-ttu-id="adc91-142">Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.</span><span class="sxs-lookup"><span data-stu-id="adc91-142">To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.</span></span>
-
-
+> <span data-ttu-id="ff4fd-134">Nelze zrušit propojení prostředí pomocí LCS.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-134">You can't unlink environments by using LCS.</span></span> <span data-ttu-id="ff4fd-135">Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.</span><span class="sxs-lookup"><span data-stu-id="ff4fd-135">To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.</span></span>
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
