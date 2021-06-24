@@ -1,5 +1,5 @@
 ---
-title: Ruční úprava prognózy poptávky
+title: 'Průvodce: Ruční úprava prognózy poptávky'
 description: Toto téma popisuje postup úpravy prognózy pro položku
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889017"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224003"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Ruční úprava prognózy poptávky
+# <a name="guide-modify-a-demand-forecast-manually"></a>Průvodce: Ruční úprava prognózy poptávky
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup popisuje postup úpravy prognózy pro položku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro plánujícího produkce.
+Tento postup popisuje postup úpravy prognózy pro položku. Tento postup je určen pro plánujícího produkce.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Upravení prognózy pro vybranou položku
 
@@ -36,9 +36,9 @@ Upravení prognózy pro vybranou položku:
 1. Podle potřeby vyplňte ostatní pole.
 1. V podokně akcí vyberte **Uložit**.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Úprava prognózy pro jednu nebo více položek Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Úprava prognózy pro jednu nebo více položek v aplikaci Microsoft Excel
 
-Úprava prognózy pro jednu nebo více položek Microsoft Excel:
+Postup úpravy prognózy pro jednu nebo více položek v aplikaci Microsoft Excel:
 
 1. Proveďte některou z následujících akcí:
     - Otevřete stránku **Prognóza poptávky** pro libovolnou položku (nezáleží na tom kterou), jak je popsáno v předchozí části.

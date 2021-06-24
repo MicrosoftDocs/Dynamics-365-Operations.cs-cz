@@ -9,6 +9,7 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
@@ -16,17 +17,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f7ff7ea28f8417d4c35f87e0d8fef46d647f42e4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 51fd8ca2ef7cdc43967ced8251b8377f3eaaf753
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019095"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193665"
 ---
 # <a name="commerce-home-page"></a>Domovská stránka aplikace Commerce
 
 [!include [banner](includes/banner.md)]
-
 
 Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Dynamics 365 Commerce umožňuje vytvářet věrnost značce na základě individuálních oslovení zákazníků, zvýšit výnosy s lepší produktivitou zaměstnanců, optimalizovat operace s cílem snížit náklady a zvýšit efektivitu dodavatelského řetězce, a tak dosáhnout lepších obchodních výsledků.
 
@@ -38,11 +38,12 @@ Tato verze umožňuje vytváření digitálních zážitků pomocí vestavěnýc
 
 - **Flexibilní a inteligentní omnikanálová řešení:** sjednocení fyzického a digitálního obchodu díky konzistentním zážitkům zákazníků napříč vyhledáváním v cloudu a objevováním, recenzemi produktů, seznamy, zásobami, dárkovými poukazy a věrnostními produkty. Umožněte zákazníkům nákup, kdy, jak a kde chtějí, na všech zařízeních – při zachovnání volby moderních způsobů platby a shromažďování nebo dodání produktů.
 
-- **Zjednodušení operací pomocí umělé inteligence v cloudu:** podporujte omnikanálové zážitky a integrované, optimalizované účetní operace s využitím integrovaných, vždy dostupných a kontextových cloudových prostředí. Pomocí pokročilého merchandisingu, řízení zásob, distribuovaného řízení objednávek, cen a propagace můžete provádět inovace a zůstat před konkurencí.Získejte přehledy vizualizací a analýzou komplexních a konzistentních dat ve všech aspektech vašeho podnikání. Pomocí technologií založených na umělé inteligenci můžete poskytovat přístupné webové stránky, chránit vaši firmu před podvody s platbami a účinně moderovat obsah generovaný uživateli, jako jsou hodnocení a recenze. 
+- **Zjednodušení operací pomocí umělé inteligence v cloudu:** podporujte omnikanálové zážitky a integrované, optimalizované účetní operace s využitím integrovaných, vždy dostupných a kontextových cloudových prostředí. Pomocí pokročilého merchandisingu, řízení zásob, distribuovaného řízení objednávek, cen a propagace můžete provádět inovace a zůstat před konkurencí.Získejte přehledy vizualizací a analýzou komplexních a konzistentních dat ve všech aspektech vašeho podnikání. Pomocí technologií založených na umělé inteligenci můžete poskytovat přístupné webové stránky, chránit vaši firmu před podvody s platbami a účinně moderovat obsah generovaný uživateli, jako jsou hodnocení a recenze.
 
 ## <a name="core-concepts-and-tasks"></a>Základní koncepce a úkoly
 
 Vyberte oblast funkce, o které chcete získat informace.
+
 - [Konfigurovat prostředí náhledu Commerce](provisioning-guide.md)
 - [Obchodní architektura](./commerce-architecture.md)
 - [Nastavení kanálů](channels-overview.md)
@@ -52,7 +53,8 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Správa financí](retail-statements.md)
 - [Správa webu s elektronickým obchodováním](online-store-overview.md)
 - [Ochrana proti podvodům](dev-itpro/DFP.md)
-- [Vývoj a rozšiřitelnost obchodu](dev-itpro/dev-retail-home-page.md)
+- [Vývoj a rozšiřitelnost Commerce](dev-itpro/dev-retail-home-page.md)
 
+## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Commerce na Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

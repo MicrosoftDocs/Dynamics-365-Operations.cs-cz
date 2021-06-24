@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792140"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193275"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduly hodnocení a recenzí
 
@@ -54,7 +54,11 @@ Následující obrázek ukazuje, jak dialogové okno **Přidat modul** zobrazuje
 
 Modul pro napsání recenze obsahuje tlačítko **Napsat recenzi**, které uživateli umožňuje přihlásit se, přiřadit hodnocení a napsat recenzi produktu. Tento modul dále umožňuje uživatelům upravit dříve odeslané hodnocení nebo recenzi. Tento modul se obvykle zobrazí nad moduly histogramu hodnocení a seznamu recenzí produktu na stránce s podrobnostmi o produktu.
 Následující ilustrace znázorňuje dialogové okno **Napsat recenzi**, které se zobrazí, když zákazník vybere možnost **Napsat recenzi**. Zákazník může toto dialogové okno použít k odeslání hodnocení a recenze.
-![Dialogové okno Napsat recenzi](media/rnr-eCommerce-write-review-module.png) V následující tabulce je uvedena vlastnost modulu pro napsání recenze, kterou je nutné nakonfigurovat v nástroji pro tvorbu obsahu.
+
+![Dialogové okno Napsat recenzi](media/rnr-eCommerce-write-review-module.png)
+
+V následující tabulce je uvedena vlastnost modulu pro napsání recenze, kterou je nutné nakonfigurovat v nástroji pro tvorbu obsahu.
+
 | Název vlastnosti | Hodnota        | Popis vlastnosti                 |
 |---------------|--------------|--------------------------------------|
 | Název          | Napsat recenzi | Název modulu pro napsání recenze. |

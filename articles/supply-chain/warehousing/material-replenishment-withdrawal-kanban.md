@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7044aa84dc7ea7adc303c250e75ca6fb4a493800
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831235"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189937"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -30,7 +30,6 @@ ms.locfileid: "5831235"
 Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Workflow pro doplnění materiálu používající kanban odběru
--------------------------------------------------------------------
 
 Kanban odběru lze použít k přesunutí kanbanu jedné položky mezi sklady a výrobními lokalitami, kde se spotřebovává materiál. Kanban odběru podporuje řešení založené na vyžádání doplnění materiálu, kdy je požadována signály vyžádání za účelem aktivace dodávky pro konkrétní poptávky. 
 

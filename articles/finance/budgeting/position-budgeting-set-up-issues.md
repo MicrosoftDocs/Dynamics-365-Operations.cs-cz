@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3e3c2f8a69d620bd2babe0d8d55858d01b25436
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ed85e9fd1a953a60483f369e9ac39762e294f6fc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833106"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190254"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Odstraňování problémů s rozpočtováním pozice
 
@@ -28,8 +28,7 @@ ms.locfileid: "5833106"
 
 Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek. 
 
-<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Proč nelze najít stránku s pozicí prognózy v modulu Lidské zdroje?
----------------------------------------------------------------
+## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Proč nelze najít stránku s pozicí prognózy v modulu Lidské zdroje?
 
 Pozice prognózy byly přesunuty do modulu Rozpočtování.
 

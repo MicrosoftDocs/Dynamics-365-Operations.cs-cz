@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c394219bbb58bea187d352c8817ed4c3e2eb883c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814241"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189438"
 ---
 # <a name="collections-in-accounts-receivable"></a>Inkasa v modulu Pohledávky
 
@@ -99,8 +99,7 @@ Transakce odpisu je vytvořena v měně transakce.
 
 Další informace lze najít v části [Vytvoření odpisového deníku pro zákazníka](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
 
 Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inkasa. Klepnutím na toto tlačítko je platba zrušena. Pokud pro zákazníka platí nějaký poplatek NFP, v deníku plateb se vytvoří poplatek za transakci. Výše poplatku závisí na nastavení automatických nákladů. Automatické poplatky, které platí pro platby NFP jsou určeny podle skupiny nákladů, která je vybrána na stránce Bankovní účty pro související bankovní účet.
 

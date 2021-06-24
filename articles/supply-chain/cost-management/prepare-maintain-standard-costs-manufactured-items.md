@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2a82b0a205ac6b7a86b9aca0771303469c6666c1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821506"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187739"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Postup přípravy na správu standardních nákladů pro vyráběné položky
 
@@ -63,8 +63,7 @@ Zásady přiřazené vyráběným položkám mohou mít vliv na výpočty nákla
 
 Pokud chcete použít informace o postupu pro účely nákladů, jsou vyžadovány dodatečné přípravné kroky. Jako příklad lze uvést kategorie nákladů přiřazené k operacím postupu - musí být správné a úplné.
 
-<a name="related-topics"></a>Související témata
---------
+## <a name="related-topics"></a>Související témata
 
 [Amortizace konstantních nákladů na vyráběnou položku](amortize-constant-costs-manufactured-item.md)
 

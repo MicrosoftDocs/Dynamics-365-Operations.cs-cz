@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
+ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838363"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "6164839"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
@@ -330,7 +330,6 @@ Převodní příkazy se vytváří bez použití funkce **Řízení data dodán�
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Můžu použít registrační značku se zápornými fyzickými zásobami na skladě?
 
-Tato funkce podporuje pouze kladná fyzická množství na skladě. Před přiřazením registračních značek k převodnímu příkazu se ujistěte, že máte kladná fyzická množství na skladě ve skladu a v úrovni stavu zásob.
-
+Tato funkce podporuje pouze kladná fyzická množství na skladě na úrovni registrační značky, ale při přiřazování registračních značek k převodním objednávkám můžete mít fyzické záporné množství na skladě na vyšších úrovních skladu a stavu zásob.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

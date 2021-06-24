@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835477"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189486"
 ---
 # <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835477"
 
 Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 
-<a name="vendor-posting-profiles"></a>Účetní profil dodavatele
------------------------
+## <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
 Účetní profily dodavatelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem dodavatelům, skupině dodavatelů nebo jednomu dodavateli. Toto nastavení se použije při vytváření nákupních objednávek, faktur dodavatele a plateb v hotovosti. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. Výchozí účetní profil je definován na záložce s náhledem **Hlavní kniha a DPH** na stránce **Parametry závazků**. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
 

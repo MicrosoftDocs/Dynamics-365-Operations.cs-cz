@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 236743277a95b8a1170ca05f93106575ea1cc8e4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821434"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187595"
 ---
 # <a name="standard-cost-conversion-overview"></a>Přehled převodu standardních nákladů
 
@@ -92,8 +92,7 @@ Hlášení **Výkaz analýzy odchylek** umožňuje analyzovat odchylky přeceně
 -   Analyzujte zpětně datované skladové pohyby. Otevřete sestavu **Skladová hodnota**, ve které jsou zobrazeny zpětně datované skladové pohyby zadané po převodu. Hodnoty Od data i Do data v sestavě by měly odpovídat počátečnímu datu převodu a datu převodu (bez jednoho dne). Kritéria výběru sestavy by měla odpovídat převedeným položkám. V sestavě jsou zobrazeny pohyby skladu provedené za standardní náklady před obdobím převodu.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Předpoklady pro převod standardních nákladů](prerequisites-standard-cost-conversion.md)
 

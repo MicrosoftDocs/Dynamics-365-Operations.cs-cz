@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b8e64264795fe90b52471a82220fe87459ca248
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834997"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188583"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
 
@@ -28,8 +28,7 @@ ms.locfileid: "5834997"
 
 Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Dynamics 365 Finance. Toto téma popisuje proces odsouhlasení.  
 
-<a name="import-an-electronic-bank-statement"></a>Import elektronického bankovního výpisu
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Import elektronického bankovního výpisu
 
 Import bankovních výpisů je možný pomocí akce **Import výpisu** na stránce **Bankovní výpisy**. V bankovním výpisu je bankovní účet identifikován skrze kombinaci hodnot, které jsou nastaveny v údajích o bankovním účtu. Mezi tyto hodnoty patří název banky, číslo bankovního účtu, směrovací číslo, kód SWIFT (Society for Worldwide Interbank Financial Telecommunication) a číslo IBAN (International Bank Account Number). 
 

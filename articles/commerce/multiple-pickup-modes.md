@@ -2,7 +2,7 @@
 title: Povolení více způsobů vyzvednutí/doručení objednávek zákazníků
 description: Toto téma vysvětluje funkci v Microsoft Dynamics 365 Commerce, která umožňuje vytvářet objednávky zákazníků k vyzvednutí v obchodě.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020644"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216760"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Povolení více způsobů vyzvednutí/doručení objednávek zákazníků
 
@@ -38,7 +38,7 @@ Po zapnutí funkce **Podpora více způsobů vyzvednutí/doručení** můžete d
 
 Pole **Způsob doručení vyvezením** a **Elektronický způsob doručení** a možnost **U expedice objednávek zobrazit pouze možnosti způsobu dopravce** byly přemístěny na tuto kartu s náhledem.
 
-Před konfigurací dalších způsobů vyzvednutí/doručení musíte definovat způsoby doručení. Na stránce **Způsoby doručení** v centrále Commerce přidejte způsoby doručení, které by se měly brát v úvahu jako způsoby vyzvednutí/doručení. Ujistěte se, že je veškerá konfigurace dokončena. Například se ujistěte, že způsob doručení je propojen s příslušnými kanály a položkami. Po dokončení spusťte úlohu **Zpracovat způsoby doručení** pro vytvoření vztahů mezi způsobem doručení, kanály a položkami. Po dokončení úlohy otevřete stránku **Plán distribuce** v centrále Commerce a spusťte úlohu distribuce **1120**, aby bylo zajištěno, že příslušné databáze kanálu Commerce budou aktualizovány s vaší novou konfigurací způsobu doručení.
+Před konfigurací dalších způsobů vyzvednutí/doručení musíte definovat způsoby doručení. Na stránce **Způsoby doručení** v centrále Commerce přidejte způsoby doručení, které by se měly brát v úvahu jako způsoby vyzvednutí/doručení. Ujistěte se, že je veškerá konfigurace dokončena. Pokud například nabízíte u určitých obchodů pouliční výdej jako možnost doručení pro online nakupující, musíte pro tento účel vytvořit nový způsob doručení. Tento způsob doručení můžete vytvořit pomocí popisu „pouliční výdej“. Pak bude třeba zajistit, aby byl způsob doručení „pouliční výdej“ namapován na všechny obchodní kanály, které ho mohou nabízet, včetně internetových obchodů s touto možností v nabídce, a kanálů jednotlivých obchodu, které také nabízejí tuto metodu plnění. Způsoby dodání musejí být také propojeny s produkty. V tomto příkladu, pokud existují určité produkty, jejichž plnění nelze zajistit pomocí způsobu „pouliční výdej“, je třeba zajistit, aby tyto položky byly vyloučeny. Až dokončíte přidávání všech nových způsobů doručení, spusťte úlohu **Zpracovat způsoby doručení** a vytvořte tak vztahy mezi způsobem doručení, kanály a položkami. Po dokončení úlohy otevřete stránku **Plán distribuce** v centrále Commerce a spusťte úlohu distribuce **1120**, aby bylo zajištěno, že příslušné databáze kanálu Commerce budou aktualizovány s vaší novou konfigurací způsobu doručení.
 
 ![Příklad konfigurace způsobu doručení pro pouliční vyzvednutí](media/pickupmodes.png)
 

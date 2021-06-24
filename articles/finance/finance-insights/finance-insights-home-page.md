@@ -2,7 +2,7 @@
 title: Domovská stránka Finanční přehledy (náhled)
 description: Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086982"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222503"
 ---
 # <a name="finance-insights-home-page-preview"></a>Domovská stránka Finanční přehledy (náhled)
 
@@ -68,7 +68,9 @@ Znalost procesu vytváření a správy prostředků v Azure, Microsoft Dataverse
 
 ## <a name="configure-finance-insights"></a>Nakonfigurujte Finanční přehledy
 
-Než budete moci používat Finanční přehledy, musíte dokončit některé konfigurační kroky. Pro další informace o tom, jak konfigurovat Finanční přehledy, viz [Konfigurace pro Finanční přehledy](configure-for-fin-insites.md).
+Než budete moci používat Finanční přehledy, musíte dokončit některé konfigurační kroky. Další informace o postupu konfigurace Finance Insights najdete v:
+  - Pro verze do 10.0.19: [Konfigurace pro Finance Insights - verze až 10.0.19](configure-for-fin-insites.md).
+  - Pro verze 10.0.20 a vyšší: [Konfigurace pro Finance Insights (náhled) - verze 10.0.20 a vyšší](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Vytvořte projekt integrátora dat
 
@@ -84,10 +86,7 @@ Pokud používáte demo data k testování předpovědí plateb zákazníků, mo
 Chcete-li povolit předpovědi plateb od zákazníka, musíte dokončit sadu kroků k vytvoření modelu strojového učení, který využívá data vaší organizace k vygenerování předpovědí o tom, kdy zákazníci pravděpodobně zaplatí neuhrazené faktury a kdy budou pravděpodobně zaplaceny konkrétní faktury. Další informace a konkrétní kroky k dokončení najdete v části [Povolit předpovědi plateb od zákazníka](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Povolit prognózu cashflow
-Chcete-li povolit předpovídání peněžních toků, musíte dokončit sadu kroků k vytvoření modelu strojového učení, který využívá údaje vaší organizace k vygenerování předpovědí peněžních toků. Další informace a konkrétní kroky k dokončení najdete v části [Povolit předpovědi cashflow](enable-cash-flow-forecasting.md) 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Nastavte a používejte prognózy peněžních toků
-Další informace o nastavení prognózy a používání předpovědí cashflow naleznete v tématu [Prognóza cashflow](enable-cash-flow-forecasting.md). Další informace o způsobu použití této funkce naleznete v tématu [Prognóza cashflow](cash-flow-forecast-intro.md).
+Chcete-li povolit předpovídání peněžních toků, musíte dokončit sadu kroků k vytvoření modelu strojového učení, který využívá údaje vaší organizace k vygenerování předpovědí peněžních toků. Další informace a konkrétní kroky k dokončení najdete v části [Povolit předpovědi cashflow](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Povolit návrhy rozpočtu
 
@@ -111,14 +110,12 @@ Možnost předpovědi peněžních toků vám pomůže přesněji odhadnout vaš
 
 - Informace o nových funkcích v předpovědích peněžních toků najdete v části [Předpověď peněžních toků](cash-flow-forecast-intro.md).
 - Informace o importu externích dat, která chcete zahrnout do prognózy peněžních toků, naleznete v tématu [V předpovědích peněžních toků použijte externí data](external-data-in-cash-flow.md). 
-- Informace o tom, jak použít model AI k promítnutí dlouhodobých peněžních toků, najdete v části [Přehled prognóz peněžních toků](cash-position.md).
+- Informace o tom, jak použít model AI k promítnutí krátkodobých peněžních toků, najdete v části [Peněžní pozice](cash-position.md).
 - Informace o ukládání pozic peněžních toků a předpovědi peněžních toků jako snímků a porovnání snímku se skutečnými najdete v části [Přehled snímků](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Pomocí návrhu rozpočtu
 
 Informace o urychlení tvorby rozpočtu viz [Návrhy rozpočtu](budget-proposals.md). 
-
-Demo data pro návrh rozpočtu:
 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 

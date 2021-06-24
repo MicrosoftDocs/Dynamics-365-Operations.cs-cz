@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: a7a9fb619ce3488ad4e3e79292af7acc359b83c5
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947537"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193223"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -38,7 +38,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="job-card-device"></a>Zařízení úkolového lístku
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **Důvod pro zrušení/odstranění** | [Zařízení úkolového lístku](../production-control/config-job-card-device.md) je nahrazeno novým [rozhraním pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md). |
 | **Nahrazeno jinou funkcí?**   | Ano, [zařízení úkolového lístku](../production-control/config-job-card-device.md) je nahrazeno novým [rozhraním pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md). |
@@ -50,7 +50,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – sklady (aplikace skladu)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | S platností od dubna 2021 je aplikace *Dynamics 365 for Finance and Operations – sklady* (aplikace skladu) zastaralá a po dubnu 2022 nebude podporována. Nyní je nahrazena *mobilní aplikací Řízení skladu*, která byla vydán s verzí 10.0.17 aplikace Supply Chain Management. Nová aplikace je úplnou náhradou, ale používá stejný základní rámec, což usnadňuje migraci. V případě potřeby lze tyto dvě aplikace použít vedle sebe, aby si uživatelé postupně zvykli používat novou aplikaci.<br><br>Další informace, jak konfigurovat novou mobilní aplikaci Řízení skladu, viz témata [Mobilní aplikace Řízení skladu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) a [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md). |
 | **Nahrazeno jinou funkcí?**   | Ano, nahrazeno novou mobilní aplikací Řízení skladu. |
@@ -62,7 +62,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Podpora aplikace Internet Explorer 11 pro Dynamics 365 je zastaralá
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
@@ -72,7 +72,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-manufacturing-scenarios"></a>Použití integrovaného modulu hlavního plánování Supply Chain Management pro scénáře výroby
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Pro zvýšení výkonu a minimalizaci zatížení databáze SQL během hlavních plánovacích relací je vestavěný hlavní plánovací modul Supply Chain Management nahrazen optimalizací plánování. Optimalizace plánování umožňuje rychlé spouštění plánů, které lze provádět i během úředních hodin. To umožňuje plánovačům okamžitě reagovat na změny poptávky nebo parametrů plánování. |
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |
@@ -84,7 +84,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>Použití integrovaného modulu hlavního plánování Supply Chain Management pro scénáře distribuce
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Pro zvýšení výkonu a minimalizaci zatížení databáze SQL během hlavních plánovacích relací je vestavěný hlavní plánovací modul Supply Chain Management nahrazen optimalizací plánování. Optimalizace plánování umožňuje rychlé spouštění plánů, které lze provádět i během úředních hodin. To umožňuje plánovačům okamžitě reagovat na změny poptávky nebo parametrů plánování. |
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |

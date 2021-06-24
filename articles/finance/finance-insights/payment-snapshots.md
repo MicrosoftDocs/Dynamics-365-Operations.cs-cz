@@ -2,7 +2,7 @@
 title: Přehled snímků (Preview)
 description: Toto téma popisuje funkci snímků, která vám umožní uložit předpověď peněžních toků pro pozdější analýzu nebo srovnání se skutečností. Když generujete prognózu peněžních toků, můžete tuto prognózu uložit jako „snímek“. Tyto snímky pak můžete použít k úpravě účtů, které byly zahrnuty do prognózy, nebo k porovnání prognózy ve snímku se skutečnými údaji.
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07854d47fa2e42ea0d49cde193a2040415acf089
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 593d6fa8efdecf1b64ef802e6861783d6f85489c
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827235"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186583"
 ---
 # <a name="snapshots-overview-preview"></a>Přehled snímků (Preview)
 
@@ -42,9 +42,5 @@ Přírůstky a úbytky hotovosti ve snímcích lze kdykoli upravit. Když je upr
 Chcete-li porovnat více snímků, vyberte **Porovnat snímky**. Můžete porovnat dva snímky najednou. Vyberte dva snímky, které chcete porovnat, a poté vyberte **OK**. Stránka **Porovnat snímek** zobrazí porovnání vybraných snímků. Graf v horní části stránky ukazuje srovnání přírůstků, úbytků a zůstatků v bance v překrývajících se obdobích mezi dvěma snímky. Mřížka v dolní části zobrazuje podrobné srovnání dvou prognóz pro každou částku likvidity. Sloupec **Rozptyl** v mřížce ukazuje rozdíl mezi zůstatky v období.
 
 Chcete-li porovnat skutečné finanční výsledky s prognózou, která byla uložena jako snímek, vyberte **Porovnat se skutečností**. Stránka **Porovnat snímek** zobrazí srovnání skutečných částek a prognózy. Graf v horní části stránky ukazuje srovnání přírůstků, úbytků a zůstatků v bance v překrývajících se obdobích mezi dvěma snímky. Mřížka v dolní části zobrazuje podrobné srovnání skutečných zůstatků v období a prognózu zůstatku pro každou částku likvidity. Sloupec **Rozptyl** v mřížce ukazuje rozdíl mezi skutečným zůstatkem v období a prognózou zůstatku.
-
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

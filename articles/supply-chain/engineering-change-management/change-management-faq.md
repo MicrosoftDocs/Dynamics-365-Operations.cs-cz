@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018678"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187264"
 ---
 # <a name="engineering-change-management-faq"></a>Správa technických změn – časté otázky
 
@@ -46,7 +46,7 @@ Tato možnost je mnohem snazší spravovat, protože pokud chcete přejít z jed
 
 Většina organizací volí tuto možnost, protože poskytuje správu verzí a změn, ale nepřidává další režii sledování verze v každé transakci, v zásobách a během hlavního plánování.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Která pole se zkopírují do vydané šablony položky?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Která pole se zkopírují z vydané šablony položky?
 
 Když technická společnost vytvoří technický produkt, vytvoří se tento produkt jako uvolněný produkt v technické společnosti. Vydaný produkt, který je vytvořen, je založen na vybrané *šabloně vydané položky*. (Šablona vydané položky je sama o sobě existujícím vydaným produktem.) Šablona vydané položky se také používá, když je produkt vydán provozní společnosti. V každém případě šablona vydané položky definuje většinu hodnot polí pro vydaný produkt a tyto hodnoty pocházejí z přidružené stránky **Údaje o vydaném produktu**.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2860ffb028c2d33f84e2e0796b2971e090454c90
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3dbd66d499b5d5f9f8ef21c0ce3752031a5f4672
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840622"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193775"
 ---
 # <a name="delivery-schedules"></a>Plány dodávek
 
@@ -28,11 +28,11 @@ ms.locfileid: "5840622"
 
 Plány dodávek vám umožňují sledovat množství na řádku objednávky, když pracujete s více dodávkami na jedné prodejní objednávce, prodejní nabídce nebo nákupní objednávce.
 
-Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku nabídky musí být dodáno v podobě vícenásobné expedice. Řádky dodávky představují jednotlivé dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze úložiště, jako například pracoviště a sklad.  
+Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku nabídky musí být dodáno v podobě vícenásobné expedice. Řádky dodávky představují jednotlivé dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze uskladnění, jako například pracoviště a sklad.  
 
 **Příklad plánu dodávek**
 
-|                                   |                                          |
+| Zboží                              | Hodnota                                    |
 |-----------------------------------|------------------------------------------|
 | Celková objednávka (původní řádek objednávky) | 600 židlí                               |
 | Plán požadovaných dodávek       | 100 židlí měsíčně                     |

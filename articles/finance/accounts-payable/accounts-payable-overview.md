@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e334c6351814db191731ce94c4a704863679dd85
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0edc2fcbde536e98fa3ce3567c2c8fdf3fc864ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820876"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188775"
 ---
 # <a name="configure-accounts-payable-overview"></a>Přehled konfigurace závazků
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820876"
 
 Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
 
-<a name="prerequisites-for-accounts-payable-setup"></a>Předpoklady k nastavení modulu Závazky
-----------------------------------------
+## <a name="prerequisites-for-accounts-payable-setup"></a>Předpoklady k nastavení modulu Závazky
 
 Před nastavením modulu Závazky je nutné provést tyto úkoly:
 

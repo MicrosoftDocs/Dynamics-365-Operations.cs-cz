@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835261"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188679"
 ---
 # <a name="sepa-direct-debit-overview"></a>přehled inkasa SEPA
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835261"
 
 Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází. Neexistuje žádný rozdíl mezi národní a zahraniční platbou. SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino. SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP). Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaký je cíl přímých debetů SEPA?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaký je cíl přímých debetů SEPA?
 
 Přímý debet SEPA umožňuje příjemci vybírat finanční prostředky z bankovního účtu odběratele, za předpokladu, že bylo odběratelem podepsané zmocnění uděleno příjemci. Odběratel podepisuje zmocnění autorizující příjemce vybírat platbu a vydávat bance odběratele příkaz k vyplacení shromážděných prostředků. 
 

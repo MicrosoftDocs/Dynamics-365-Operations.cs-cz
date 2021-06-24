@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054012"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190225"
 ---
 # <a name="set-up-training-courses"></a>Nastavení školících kurzů
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054012"
 
 Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.
 
- <a name="set-up-prerequisites"></a> Nastavení předpokladů
----------------------
+##  <a name="set-up-prerequisites"></a> Nastavení předpokladů
 
 Před vytvořením kurzů je nutné znát a nastavit následující informace.
 -   **Typy kurzů**
@@ -127,8 +126,7 @@ V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze pro
 ## <a name="course-participants"></a>Účastníci kurzu
 Účastníci kurzu jsou pracovníci, kteří se účastní školicího kurzu nebo události. Účastníky můžete registrovat pouze pro otevřené kurzy. Maximální a minimální počty účastníků, které lze do kurzu registrovat, jsou uvedeny na pevné záložce **Obecné** na stránce **Kurzy**.
 
-<a name="workflow"></a>Workflow
---------
+## <a name="workflow"></a>Workflow
 
 Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro zaměstnance**, může být registrace nasměrována do workflowu pro schválení. Workflow lze přiřadit ke kurzu na pevné záložce **Obecné** na stránce **Kurzy**.
 

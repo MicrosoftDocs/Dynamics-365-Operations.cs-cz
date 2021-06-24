@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9b387be0b28564dd7ae88af33812a8bbf034c0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825415"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188275"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
@@ -83,8 +83,7 @@ Chcete-li zrušit celé množství na řádku NO, zrušte v řádku zbývající
 
 Pokud PO prochází správou změn, každá změna, například zrušení objednávky nebo zůstatek dodávky, musí být před dokončením procesu odeslána do systému workflowu a schválena a skladové transakce mohou být aktualizovány jako zrušené.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 
