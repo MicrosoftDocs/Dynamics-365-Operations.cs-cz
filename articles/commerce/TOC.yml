@@ -92,9 +92,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: "Co je nového a\_co se změnilo v\_aplikaci Commerce"
                   items:
-                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Commerce"
+                    - name: "Domovská stránka Co je nového a\_co se změnilo v Commerce"
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (červenec 2021)
+                    - name: Commerce 10.0.20 (srpen 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (červen 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,7 +244,7 @@
                   href: arch-auth-flow.md
                 - name: Požadavky na verzování komponent Dynamics 365 Commerce
                   href: arch-component-versioning.md
-                - name: Architektura Commerce Scale Unit
+                - name: Bezobslužná architektura obchodního modulu
                   href: dev-itpro/retail-server-architecture.md
                 - name: Výběr topologie v obchodu
                   href: dev-itpro/retail-in-store-topology.md
@@ -258,7 +258,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Architektura Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Architektura publikování online obchodu
+                - name: Publikování kanálu online obchodu
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Obsah Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -546,6 +546,8 @@
                       href: paypal.md
                     - name: Podpora plateb peněženkou
                       href: wallets.md
+                    - name: Rozšířené platby v pokladně obchodu
+                      href: dev-itpro/enhanced-sca.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
                 - name: "E-mail a\_oznámení"
@@ -770,10 +772,14 @@
                   href: notifications-pos.md
                 - name: Prodej programů trvání a zpracování prodejních objednávek
                   href: tasks/use-continuity-program.md
-                - name: Povolení oznámení o přihlášení zákazníka v pokladním místě (POS)
+                - name: Povolení oznámení o přihlášení zákazníka v POS
                   href: enable-customer-check-in.md
-            - name: Vrácení
+            - name: Vrácení a refundace
               items:
+                - name: Vytvoření vrácení v POS
+                  href: POS-returns.md
+                - name: Vrácení produktů řízených sériovým číslem v POS
+                  href: POS-serial-returns.md
                 - name: Propojené refundace
                   href: dev-itpro/linked-refunds.md
                 - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
@@ -1230,6 +1236,8 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Rakousko
               items:
                 - name: Ukázka integrace fiskální služby pro Rakousko
@@ -1238,6 +1246,8 @@
               items:
                 - name: Lokalizace Commerce pro Brazílii
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Nastavení a nasazení lokalizace aplikace Commerce pro Brazílii
+                  href: localizations/latam-bra-deployment.md
             - name: Východní Evropa
               items:
                 - name: Společné
@@ -1962,8 +1972,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Generování tisknutelných formulářů volných faktur
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Návrh efektivních ER řešení
+                  items:
+                    - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Řešení problémů s výkonem v konfiguracích elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Správa obchodních dokumentů (BDM)
                   items:
                     - name: Přehled BDM
@@ -2392,7 +2406,7 @@
                   href: dev-itpro/retail-sdk/sdk-github.md
                 - name: "Časté dotazy k\_Retail SDK"
                   href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: Rozšiřitelnost pokladních míst
+            - name: Rozšiřitelnost pokladních míst (POS)
               items:
                 - name: Rozložení obrazovky POS
                   href: pos-screen-layouts.md

@@ -72,7 +72,7 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (červenec 2021)
+                    - name: Supply Chain Management 10.0.20 (srpen 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (červen 2021)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -222,6 +222,8 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronická fakturace
                   items:
                     - name: Přehled elektronické fakturace
@@ -234,6 +236,8 @@
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Vytvoření účtu úložiště Azure a Key Vault
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Řídicí panel správy využití
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Začínáme
                       items:
                         - name: Začněte se správou služby elektronické fakturace
@@ -1383,8 +1387,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Generování tisknutelných formulářů volných faktur
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Návrh efektivních ER řešení
+                  items:
+                    - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Řešení problémů s výkonem v konfiguracích elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Správa obchodních dokumentů (BDM)
                   items:
                     - name: Přehled BDM
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Prognóza poptávky
+            - name: Prognózování
               items:
-                - name: Přehled prognózy poptávky
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Nastavení prognózy poptávky
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Import historických dat pro prognózy poptávky
-                  href: master-planning/import-historical-data.md
-                - name: Generování statistické základní prognózy
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Ruční úpravy základní prognózy
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Autorizace upravené prognózy
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Monitorování přesnosti prognózy
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Redukční klíče
-                  href: master-planning/reduction-keys.md
-                - name: Vytvoření základní prognózy
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Ruční úprava prognózy poptávky
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognóza poptávky a nabídky
+                  items:
+                    - name: Prognózy zásob
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Průvodce: Ruční úprava prognózy poptávky'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognóza poptávky
+                  items:
+                    - name: Přehled prognózy poptávky
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Nastavení prognózy poptávky
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Generování statistické základní prognózy
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Ruční úpravy základní prognózy
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Autorizace upravené prognózy
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Import historických dat pro prognózy poptávky
+                      href: master-planning/import-historical-data.md
+                    - name: Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Monitorování přesnosti prognózy
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Průvodce: Vytvoření základní prognózy'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Hlavní plánování s prognózou
+                  items:
+                    - name: Redukční klíče prognózy
+                      href: master-planning/reduction-keys.md
             - name: Řešení potíží s hlavním plánováním
               href: master-planning/troubleshoot-masterplanning.md
         - name: Aplikace pro mobilní zařízení
@@ -3425,6 +3441,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: "Prodej a\_marketing"
               items:
+                - name: Množství nelze snížit při zrušení prodejní objednávky
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Správci systému nemohou vymazat blokování objednávky, protože nejsou autorizovaní'
                   href: troubleshooting/sales/system-administrator.md
             - name: Správa přepravy
