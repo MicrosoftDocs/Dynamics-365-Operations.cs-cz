@@ -14,7 +14,7 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aktualizacích Platform Update"
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizace Platform Update pro verzi 10.0.20 (červenec 2021)
+                - name: Aktualizace Platform Update pro verzi 10.0.20 (srpen 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Aktualizace Platform Update pro verzi 10.0.19 (červen 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -850,12 +850,10 @@
               items:
                 - name: Sledování pomocí Trace parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Testování jednoho uživatele se záznamníkem úloh a výkonovým SDK
+                - name: Testování jednoho uživatele pomocí záznamníku úloh a výkonového SDK
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Testování více uživatelů s výkonovým SDK a místním kontrolorem testů
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Testování více uživatelů s výkonovým SDK a Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Testování více uživatelů pomocí výkonového SDK
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: Průvodce řešením potíží při testování s výkonovým SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Výkonové SDK a testování více uživatelů v místních prostředích
@@ -1538,6 +1536,8 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Vytvoření dávkových úloh
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Povolení automatického opakování u dávkových úloh
+                  href: sysadmin/retryable-batch.md
                 - name: Kopírování dávkové úlohy
                   href: sysadmin/copy-batch-job.md
                 - name: Aktivní období dávky
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Upgrade AX 2012 - Kontrolní seznam před upgradem dat
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Upgrade AX 2012 - Upgrade dat v sandboxových prostředích pomocí procesu dacpac
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Upgrade z AX 2012 - Transakční replikace SQL
                   href: database/replication-setup.md
-                - name: Upgrade AX 2012 – Upgrade dat v prostředích sandbox
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Upgrade z AX 2012 - Upgrade dat v samoobslužných prostředích
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: Upgrade AX 2012 - místní prostředí
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: Upgrade AX 2012 – Přechodové testování

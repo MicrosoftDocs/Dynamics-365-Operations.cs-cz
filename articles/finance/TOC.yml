@@ -72,13 +72,11 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.20 (červenec 2021)
+                    - name: Finance 10.0.20 (srpen 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (červenec 2021)
+                    - name: Finance 10.0.19 (červen 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (květen 2021)
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: Finance 10.0.17 (duben 2021)
                       href: get-started/whats-new-changed-10-0-17.md
             - name: Odstraněné nebo zastaralé funkce
               items:
@@ -1216,7 +1214,9 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurace a správa
               items:
-                - name: Konfigurace přehledů Finance
+                - name: Nakonfigurujte Finance Insights pro Public Preview
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: Konfigurace Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Povolení předpovědí plateb zákazníka
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronická fakturace
                   items:
                     - name: Přehled elektronické fakturace
@@ -1476,6 +1478,8 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Vytvoření účtu úložiště Azure a Key Vault
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+                    - name: Řídicí panel správy využití
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Začínáme
                       items:
                         - name: Začněte se správou služby elektronické fakturace
@@ -2416,18 +2420,102 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: ID daňové transakce je nesprávné
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: Nesprávné hodnoty polí v sestavě GSTR
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: Nesprávná hodnota pole v deníku faktury nebo dokladu
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: Nesprávný účet hlavní knihy v dokladu
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: Otevřete návrháře pro aktuální daňovou konfiguraci
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: Záznamy a pole se v sestavě GSTR nezobrazí
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: Chyba pravidla zarovnání při spuštění daňového vyrovnání
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: Přímé daně
                   items:
                     - name: "Srážková daň v\_Indii"
                       items:
-                        - name: Zahrnutí daně GST při výpočtu daňových srážek
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: Zahrnutí GST při výpočtu daňových výběrů
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: Často kladené dotazy týkající se prahových hodnot daní
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: TCS při prodeji zboží
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                        - name: Indická TCS
+                          items:
+                            - name: TCS při prodeji zboží
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: Zahrnutí GST při výpočtu daňových výběrů
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: Indická TDS
+                          items:
+                            - name: "Přehled indické daně sražené u\_zdroje (TDS)"
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: Zahrnutí daně GST při výpočtu daňových srážek
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: Základní nastavení pro TDS
+                              items:
+                                - name: Nastavení parametrů TDS
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: Nastavení účtů hlavní knihy TDS
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: Nastavení registračních čísel TDS pro právnické osoby
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Nastavení úřadů srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Nastavení komponent daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: Nastavení kódů srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Nastavení období vyrovnání srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: Nastavení kódů vykazování srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: Nastavení kódů srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: "Připojení daňových kódů TDS k\_daňovým skupinám TDS a\_definování receptury pro výpočet TDS"
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: Zaznamenání čísel koncesních certifikátů TDS
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: "Nastavení parametrů TDS v\_Závazcích a\_Pohledávkách"
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: "Nastavení platebních kalendářů s\_přidělením TDS"
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: Nastavení platebních poplatků pro platby úřadům TDS
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: "Nastavení informací o skupině TDS, PAN a TAN pro dodavatele a\_odběratele"
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: "Návrhář receptur a\_omezení prahové hodnoty pro výpočet TDS"
+                                  items: null
+                                - name: Návrhář receptur pro výpočty TDS
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: "Omezení prahové hodnoty a\_omezení prahové hodnoty výjimky"
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: Výpočet TDS na fakturách
+                              items:
+                                - name: Výpočet TDS na fakturách
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: Výpočet TDS na fakturách pomocí deníků
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: "Výpočet faktur TDS pomocí formuláře nákupní objednávky a\_formuláře prodejní objednávky"
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: Výpočet TDS na fakturách ze stránky Volná faktura
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: Funkce rozdělené faktury
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: "Výpočet TDS u\_mezipodnikových transakcí"
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: Proces vyrovnání TDS
+                              items:
+                                - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: "Výpočet TDS u\_mezipodnikových transakcí"
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: Spuštění pravidelného procesu vyrovnání TDS
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: "Vyrovnání plateb dodavatelům-úřadům TDS a\_generování TDS challan"
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: "Zobrazení zaúčtovaných plateb a\_transakcí TDS za období vyrovnání TDS"
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
                 - name: Dlouhodobý majetek
                   items:
                     - name: Přehled dlouhodobého majetku pro Indii
@@ -2454,84 +2542,12 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Převod kapitálových položek do dlouhodobého majetku
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indická daň TDS
-                  items:
-                    - name: "Přehled indické daně sražené u\_zdroje (TDS)"
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: Základní nastavení pro TDS
+                    - name: "Zaznamenání a\_aktualizace čísel a\_data certifikátů TDS"
                       items:
-                        - name: Nastavení parametrů TDS
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: Nastavení účtů hlavní knihy TDS
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: Nastavení registračních čísel TDS pro právnické osoby
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: Nastavení úřadů srážkové daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Nastavení komponent daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: Nastavení kódů srážkové daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Nastavení období vyrovnání srážkové daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: Nastavení kódů vykazování srážkové daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: Nastavení kódů srážkové daně pro typ daně TDS
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: "Připojení daňových kódů TDS k\_daňovým skupinám TDS a\_definování receptury pro výpočet TDS"
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: Zaznamenání čísel koncesních certifikátů TDS
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: "Nastavení parametrů TDS v\_Závazcích a\_Pohledávkách"
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: "Nastavení platebních kalendářů s\_přidělením TDS"
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: Nastavení platebních poplatků pro platby úřadům TDS
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: "Nastavení informací o skupině TDS, PAN a TAN pro dodavatele a\_odběratele"
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: "Návrhář receptur a\_omezení prahové hodnoty pro výpočet TDS"
-                      items:
-                        - name: Návrhář receptur pro výpočty TDS
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: "Omezení prahové hodnoty a\_omezení prahové hodnoty výjimky"
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: Výpočet TDS na fakturách
-                      items:
-                        - name: Výpočet TDS na fakturách
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: Výpočet TDS na fakturách pomocí deníků
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: "Výpočet faktur TDS pomocí formuláře nákupní objednávky a\_formuláře prodejní objednávky"
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: Výpočet TDS na fakturách ze stránky Volná faktura
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: Funkce rozdělené faktury
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: "Výpočet TDS u\_mezipodnikových transakcí"
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: Proces vyrovnání TDS
-                      items:
-                        - name: "Výpočet TDS u\_plateb a\_vlastních směnek"
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: "Výpočet TDS u\_mezipodnikových transakcí"
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: Proces vyrovnání TDS
-                          items:
-                            - name: Spuštění pravidelného procesu vyrovnání TDS
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: "Vyrovnání plateb dodavatelům-úřadům TDS a\_generování TDS challan"
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: "Zobrazení zaúčtovaných plateb a\_transakcí TDS za období vyrovnání TDS"
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: "Zaznamenání a\_aktualizace čísel a\_data certifikátů TDS"
-                          items:
-                            - name: Zaznamenání čísel obnovitelných certifikátů TDS
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: "Aktualizace čísel a\_dat certifikátů pro transakce TDS"
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: Zaznamenání čísel obnovitelných certifikátů TDS
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: "Aktualizace čísel a\_dat certifikátů pro transakce TDS"
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Itálie
               items:
                 - name: Itálie – přehled
@@ -4165,8 +4181,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Generování tisknutelných formulářů volných faktur
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh efektivních ER řešení
+                  items:
+                    - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: Řešení problémů s výkonem v konfiguracích elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Správa obchodních dokumentů (BDM)
                   items:
                     - name: Přehled BDM
